@@ -1,0 +1,57 @@
+# Eset Security Management Center
+
+## Solution Information
+
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Eset |
+| **Support Tier** | Partner |
+| **Support Link** | [https://support.eset.com/en](https://support.eset.com/en) |
+| **Categories** | domains |
+| **First Published** | 2022-05-11 |
+| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center) |
+
+## Data Connectors
+
+This solution provides **1 data connector(s)**:
+
+- [Eset Security Management Center](../connectors/esetsmc.md)
+
+## Tables Reference
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`eset_CL`](../tables/eset-cl.md) | [Eset Security Management Center](../connectors/esetsmc.md) | Analytics, Workbooks |
+
+## Content Items
+
+This solution includes **3 content item(s)**:
+
+| Content Type | Count |
+|:-------------|:------|
+| Analytic Rules | 2 |
+| Workbooks | 1 |
+
+### Analytic Rules
+
+| Name | Severity | Tactics | Tables Used |
+|:-----|:---------|:--------|:------------|
+| [Threats detected by Eset](../content/2d8a60aa-c15e-442e-9ce3-ee924889d2a6.md) | Low | Execution, CredentialAccess, PrivilegeEscalation | [`eset_CL`](../tables/eset-cl.md) |
+| [Web sites blocked by Eset](../content/84ad2f8a-b64c-49bc-b669-bdb4fd3071e9.md) | Low | Exfiltration, CommandAndControl, InitialAccess | [`eset_CL`](../tables/eset-cl.md) |
+
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [esetSMCWorkbook](../content/esetsmcworkbook-eset-security-management-center.md) | [`eset_CL`](../tables/eset-cl.md) |
+
+---
+
+**Browse:**
+
+- [← Back to Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)
+- [Content Index](../content-index.md)

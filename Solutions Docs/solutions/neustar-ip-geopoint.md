@@ -1,0 +1,46 @@
+# Neustar IP GeoPoint
+
+## Solution Information
+
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **First Published** | 2022-09-30 |
+| **Last Updated** | 2022-09-30 |
+| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint) |
+
+## Data Connectors
+
+**This solution does not include data connectors.**
+
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+
+## Content Items
+
+This solution includes **5 content item(s)**:
+
+| Content Type | Count |
+|:-------------|:------|
+| Playbooks | 5 |
+
+### Playbooks
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [EnrichIP-GeoInfo-Neustar](../content/enrichip-geoinfo-neustar-neustar-ip-geopoint.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [NeustarIPGeoPoint_FunctionAppConnector](../content/neustaripgeopoint-functionappconnector-neustar-ip-geopoint.md) | - | - |
+| [function](../content/function-neustar-ip-geopoint.md) | - | - |
+| [host](../content/host-neustar-ip-geopoint.md) | - | - |
+| [proxies](../content/proxies-neustar-ip-geopoint.md) | - | - |
+
+---
+
+**Browse:**
+
+- [← Back to Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)
+- [Content Index](../content-index.md)

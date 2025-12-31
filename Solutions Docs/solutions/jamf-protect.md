@@ -1,0 +1,104 @@
+# Jamf Protect
+
+## Solution Information
+
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Jamf Software, LLC |
+| **Support Tier** | Partner |
+| **Support Link** | [https://www.jamf.com/support/](https://www.jamf.com/support/) |
+| **Categories** | domains |
+| **First Published** | 2022-10-10 |
+| **Last Updated** | 2025-09-02 |
+| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect) |
+
+## Data Connectors
+
+This solution provides **1 data connector(s)**:
+
+- [Jamf Protect Push Connector](../connectors/jamfprotectpush.md)
+
+## Tables Reference
+
+This solution uses **5 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`JamfProtect`](../tables/jamfprotect.md) | - | Workbooks |
+| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) | - | Analytics |
+| [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
+| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Workbooks |
+| [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
+
+## Content Items
+
+This solution includes **12 content item(s)**:
+
+| Content Type | Count |
+|:-------------|:------|
+| Parsers | 5 |
+| Analytic Rules | 3 |
+| Playbooks | 3 |
+| Workbooks | 1 |
+
+### Analytic Rules
+
+| Name | Severity | Tactics | Tables Used |
+|:-----|:---------|:--------|:------------|
+| [Jamf Protect - Alerts](../content/6098daa0-f05e-44d5-b5a0-913e63ba3179.md) | High | - | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) |
+| [Jamf Protect - Network Threats](../content/44da53c3-f3b0-4b70-afff-f79275cb9442.md) | Informational | InitialAccess | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) |
+| [Jamf Protect - Unified Logs](../content/9eb2f758-003b-4303-83c6-97aed4c03e41.md) | Informational | - | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) |
+
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [JamfProtectDashboard](../content/jamfprotectdashboard-jamf-protect.md) | [`JamfProtect`](../tables/jamfprotect.md)<br>[`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md)<br>[`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md)<br>[`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) |
+
+### Playbooks
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [Jamf Protect - Remote lock computer with Jamf Pro](../content/jamf-protect---remote-lock-computer-with-jamf-pro-jamf-protect.md) | This Playbook can be used manually or in a Automation Rule to send an remote MDM command with Jamf P... | - |
+| [Jamf Protect - Set Alert to In Progress](../content/jamf-protect---set-alert-to-in-progress-jamf-protect.md) | This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the A... | - |
+| [Jamf Protect - Set Alert to Resolved](../content/jamf-protect---set-alert-to-resolved-jamf-protect.md) | This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the A... | - |
+
+### Parsers
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [JamfProtectAlerts](../content/b1044d58-6384-454e-b51d-5750fda0698c.md) | - | - |
+| [JamfProtectNetworkTraffic](../content/374cd4de-269c-465e-93ac-b9ade4af4f28.md) | - | - |
+| [JamfProtectTelemetry](../content/d941b837-88fa-4c77-a4d8-76af0044cac0.md) | - | - |
+| [JamfProtectThreatEvents](../content/7950cddf-e280-423c-a2cd-a790ec54c085.md) | - | - |
+| [JamfProtectUnifiedLogs](../content/a848f8db-4cf8-4a64-9bbc-58f4183f2bb1.md) | - | - |
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
+|-------------|--------------------------------|---------------------------------------------|
+|3.3.0        | 02-09-2025                     | Adding support for newly added event types in Telemetry, TCC_MODIFY,NETWORK_CONNECT, PTY_GRANT, PTY_CLOSE and some enhancements to mount and process object mapping.
+|3.2.4        | 27-03-2025                     | Resolving issues related to the new Push Connector and the DCE/DCRs. Removing support for Telemetry Legacy in this newer Push Connector. Removing Hunting Queries as they were not relevant anymore. Updated Analytic Rules and Workbooks to work with the updated parsers, the single parser got split up to be more useful to customers that only use certain features. 
+|3.2.1        | 24-02-2025                     | Adding support for the newly released `gatekeeper_user_override` event and removing totalRetentionInDays from the Push Connector.
+| 3.2.0       | 04-02-2025                     | Added new CCP **Data Connector** to the Solution.
+| 3.1.1       | 30-04-2024                     | Repackaged for parser issue fix while reinstall.
+| 3.1.0       | 12-01-2024                     | Improved data normalization in the parser JamfProtect, ParentProcess is better mapped now, productVersion has been added and more. Added new macOS Hunting Queries including recent malware IOCs.
+| 3.0.1       | 05-12-2023                     | Minor tweak to parser related to signerType
+| 3.0.0       | 20-10-2023                     | Added **Parser** for parsing jamfprotect_CL raw logs.
+|             |                                | Modified existing **Analytic Rules** & **Workbooks** to make use of newly added parser in this release.
+|             |                                | Added macOS Threat Hunting **Hunting Queries** for hunting macOS specific threats retrospectivly
+|             |                                | Added **Playbooks** for interacting with the Jamf Protect and Jamf Pro API's, including Remote Locking a computer, and changes Alert statusses based on a Microsoft Sentinel incident. 
+| 2.1.1       | 03-03-2023                     | Updating **Analytic Rules** to include MITRE Tactics and Techniques.
+| 2.1.0       | 10-02-2023                     | Added **Data Connector** for monitoring logs
+|             |                                | Added **Analytics Rules** for automated incident creation within Microsoft Sentinel
+|             |                                | Improved **Workbook** and added Endpoint Telemetry
+| 2.0.0       | 12-10-2022                     | Initial Solution Release |
+
+---
+
+**Browse:**
+
+- [← Back to Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)
+- [Content Index](../content-index.md)
