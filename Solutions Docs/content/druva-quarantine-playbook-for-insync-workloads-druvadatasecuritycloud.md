@@ -12,9 +12,9 @@ This playbook uses Druva-Ransomware-Response capabilities to stop the spread of 
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

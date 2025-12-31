@@ -12,9 +12,9 @@ This playbook uses the SOC Recommended Actions Watchlist to automatically enrich
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to SOC-Process-Framework](../solutions/soc-process-framework.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

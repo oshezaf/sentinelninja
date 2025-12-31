@@ -12,9 +12,9 @@ Given a domain or set of domains associated with an alert return all Iris Enrich
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to DomainTools](../solutions/domaintools.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

@@ -79,4 +79,4 @@ See our playbooks built on Logic Apps (Standard) [here](./Playbooks/README.md).
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

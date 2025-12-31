@@ -51,9 +51,9 @@ This playbook summarizes data for Network Session Essentials and lands it into c
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Network Session Essentials](../solutions/network-session-essentials.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

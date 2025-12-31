@@ -12,9 +12,9 @@ This playbook can be triggered manually from a Domain Entity context to fetch ge
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Shodan](../solutions/shodan.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

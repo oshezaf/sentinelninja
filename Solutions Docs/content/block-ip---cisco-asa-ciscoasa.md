@@ -12,9 +12,9 @@ This playbook allows blocking/allowing of IPs in Cisco ASA, using a Network Obje
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to CiscoASA](../solutions/ciscoasa.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

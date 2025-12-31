@@ -41,4 +41,4 @@ Follow step by step instructions in the [Forcepoint DLP documentation for Micros
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

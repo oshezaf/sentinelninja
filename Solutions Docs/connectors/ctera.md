@@ -50,4 +50,4 @@ Install the Azure Monitor Agent (AMA) on your syslog server to enable data colle
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

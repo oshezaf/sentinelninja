@@ -64,4 +64,4 @@ Follow the instructions below to create and apply a policy to all current and fu
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

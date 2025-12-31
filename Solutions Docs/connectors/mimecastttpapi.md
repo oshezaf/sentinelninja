@@ -152,4 +152,4 @@ Use this method for automated deployment of the Mimecast Targeted Threat Protect
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

@@ -41,4 +41,4 @@ Connect [Dynamics 365 CRM](https://aka.ms/Sentinel/Dynamics365) activity logs to
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

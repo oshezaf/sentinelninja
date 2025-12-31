@@ -40,4 +40,4 @@ The following **1 table(s)** are used internally by this solution's playbooks:
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

@@ -45,4 +45,4 @@ To connect your F5 BIGIP, you have to post a JSON declaration to the system’s 
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

@@ -12,9 +12,9 @@ This playbook will resolve or report false positive to unresolved anomaly and up
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to RubrikSecurityCloud](../solutions/rubriksecuritycloud.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

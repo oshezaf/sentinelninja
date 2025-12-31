@@ -45,4 +45,4 @@ Connect to CYFIRMA Attack Surface to ingest alerts into Microsoft Sentinel. This
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

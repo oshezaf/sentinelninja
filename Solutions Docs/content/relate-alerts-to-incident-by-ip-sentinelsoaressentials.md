@@ -18,9 +18,9 @@ This playbook looks for other alerts with the same IP as the triggered incident.
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

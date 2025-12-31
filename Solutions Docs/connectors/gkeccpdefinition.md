@@ -69,4 +69,4 @@ When you click "Add new collector" in the portal, you'll be prompted to provide:
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

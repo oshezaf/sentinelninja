@@ -50,4 +50,4 @@ At this point, you may configure alerts to be sent to Microsoft Sentinel the sam
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

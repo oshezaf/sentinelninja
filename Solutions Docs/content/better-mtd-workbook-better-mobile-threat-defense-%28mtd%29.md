@@ -19,9 +19,9 @@ This content item queries data from the following tables:
 
 **Browse:**
 
-- [← Back to Workbooks](../workbooks.md)
+- [← Back to Workbooks](workbooks.md)
 - [← Back to BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-%28mtd%29.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

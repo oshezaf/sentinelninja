@@ -10,9 +10,9 @@
 
 **Browse:**
 
-- [← Back to Watchlists](../watchlists.md)
+- [← Back to Watchlists](watchlists.md)
 - [← Back to Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security---exchange-on-premises.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

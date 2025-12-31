@@ -17,4 +17,4 @@ Microsoft Entra ID API requests made to Microsoft Graph API for resources in the
 - [← Back to Tables Index](../tables-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

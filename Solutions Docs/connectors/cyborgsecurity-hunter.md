@@ -64,4 +64,4 @@ Identify a Cyborg Security HUNTER hunt package to deploy and use the **Open In T
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

@@ -9,7 +9,7 @@ Browse all data connectors available in Microsoft Sentinel Solutions.
 - [Solutions](solutions-index.md)
 - [Connectors](connectors-index.md) (this page)
 - [Tables](tables-index.md)
-- [Content](content-index.md)
+- [Content](content/content-index.md)
 
 ---
 

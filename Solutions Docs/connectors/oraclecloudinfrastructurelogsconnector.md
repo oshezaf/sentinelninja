@@ -123,4 +123,4 @@ Follow the documentation to [create Private Key and API Key Configuration File.]
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

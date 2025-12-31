@@ -58,4 +58,4 @@ Follow the steps below to configure your beSECURE solution to send out scan resu
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

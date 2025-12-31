@@ -129,4 +129,4 @@ You can ingest the following type of logs from AWS Route 53 to Microsoft Sentine
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

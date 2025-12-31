@@ -12,9 +12,9 @@ This Playbook will run daily, gets the watchlist data from SpyCloud API and save
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

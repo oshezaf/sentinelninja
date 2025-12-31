@@ -11,9 +11,9 @@
 
 **Browse:**
 
-- [← Back to Parsers](../parsers.md)
+- [← Back to Parsers](parsers.md)
 - [← Back to Team Cymru Scout](../solutions/team-cymru-scout.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

@@ -17,4 +17,4 @@ Certificate information for devices in the organization from Microsoft Defender 
 - [← Back to Tables Index](../tables-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

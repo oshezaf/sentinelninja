@@ -12,9 +12,9 @@ This playbook gets triggered every hour and perform the following actions: 1. Ge
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to NCSC-NL NDN Cyber Threat Intelligence Sharing](../solutions/ncsc-nl-ndn-cyber-threat-intelligence-sharing.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

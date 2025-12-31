@@ -101,4 +101,4 @@ The [Zscaler Private Access (ZPA)](https://help.zscaler.com/zpa/what-zscaler-pri
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

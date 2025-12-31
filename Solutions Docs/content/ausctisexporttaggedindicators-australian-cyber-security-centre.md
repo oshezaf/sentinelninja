@@ -12,9 +12,9 @@ This playbook gets triggered every hour and perform the following actions: 1. Ge
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Australian Cyber Security Centre](../solutions/australian-cyber-security-centre.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

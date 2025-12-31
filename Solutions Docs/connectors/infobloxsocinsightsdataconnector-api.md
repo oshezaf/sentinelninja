@@ -60,4 +60,4 @@ In order to use the playbooks as part of this solution, find your **Workspace ID
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

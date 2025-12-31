@@ -18,9 +18,9 @@ This will alert when a user is added to a privileged group which has been implem
 
 **Browse:**
 
-- [← Back to Analytic Rules](../analytic-rules.md)
+- [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to 1Password](../solutions/1password.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

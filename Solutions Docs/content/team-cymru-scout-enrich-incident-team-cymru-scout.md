@@ -18,9 +18,9 @@ This playbook will fetch and ingest IP or Domain Indicator data based on Entity 
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Team Cymru Scout](../solutions/team-cymru-scout.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

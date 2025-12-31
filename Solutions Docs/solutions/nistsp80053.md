@@ -130,4 +130,4 @@ This solution is designed to augment staffing through automation, machine learni
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

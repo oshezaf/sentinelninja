@@ -176,4 +176,4 @@ To enable logging for your CloudFront distribution and route logs to the S3 buck
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

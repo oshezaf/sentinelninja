@@ -12,9 +12,9 @@ This playbook uses the MDTI Components data to automatically enrich incidents ge
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

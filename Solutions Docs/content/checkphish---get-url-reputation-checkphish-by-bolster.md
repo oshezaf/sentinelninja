@@ -12,9 +12,9 @@ This playbooks will be used to submit URL to CheckPhish and gets the repution of
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to CheckPhish by Bolster](../solutions/checkphish-by-bolster.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

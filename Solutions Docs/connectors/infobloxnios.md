@@ -74,4 +74,4 @@ Update the watchlist 'Sources_by_Source' with the hostname(s) of your Infoblox d
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

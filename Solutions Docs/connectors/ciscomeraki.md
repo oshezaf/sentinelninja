@@ -108,4 +108,4 @@ So we advice to capture the logs into custom table **meraki_CL** using below ins
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

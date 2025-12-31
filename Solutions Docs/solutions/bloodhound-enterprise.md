@@ -176,4 +176,4 @@ This solution includes **108 content item(s)**:
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

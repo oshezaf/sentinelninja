@@ -12,9 +12,9 @@ This Playbook will create JIRA incidents for every Microsoft Sentinel which is c
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to AtlassianJiraAudit](../solutions/atlassianjiraaudit.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

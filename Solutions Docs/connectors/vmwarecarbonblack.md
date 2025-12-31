@@ -124,4 +124,4 @@ Use the following step-by-step instructions to deploy the VMware Carbon Black co
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

@@ -12,9 +12,9 @@ This playbook uses the OKTA connector to prompt the risky user on Teams. User is
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Okta Single Sign-On](../solutions/okta-single-sign-on.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

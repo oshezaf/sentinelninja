@@ -17,4 +17,4 @@ Cloud process events for various cloud platforms protected by the organization's
 - [← Back to Tables Index](../tables-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

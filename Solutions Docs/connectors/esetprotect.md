@@ -75,4 +75,4 @@ Note:- Refer to the [documentation](https://learn.microsoft.com/en-us/azure/sent
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

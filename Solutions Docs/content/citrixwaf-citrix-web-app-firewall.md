@@ -10,9 +10,9 @@
 
 **Browse:**
 
-- [← Back to Workbooks](../workbooks.md)
+- [← Back to Workbooks](workbooks.md)
 - [← Back to Citrix Web App Firewall](../solutions/citrix-web-app-firewall.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

@@ -12,9 +12,9 @@ This playbook will run a antivirus (full) scan on the machine in Microsoft Defen
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

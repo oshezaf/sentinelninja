@@ -158,4 +158,4 @@ The 1Password Solution for Microsoft Sentinel is comprised of following Azure re
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

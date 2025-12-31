@@ -7,7 +7,7 @@ Browse all tables used by Microsoft Sentinel solutions and data connectors.
 - [Solutions](solutions-index.md)
 - [Connectors](connectors-index.md)
 - [Tables](tables-index.md) (this page)
-- [Content](content-index.md)
+- [Content](content/content-index.md)
 
 ---
 

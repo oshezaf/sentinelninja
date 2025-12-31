@@ -38,9 +38,9 @@ This content item queries data from the following tables:
 
 **Browse:**
 
-- [← Back to Workbooks](../workbooks.md)
+- [← Back to Workbooks](workbooks.md)
 - [← Back to CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

@@ -120,4 +120,4 @@ We have published Public Contents for the Microsoft Exchange Security Sentinel S
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

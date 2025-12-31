@@ -12,9 +12,9 @@ This playbook can be run from incident context manually or from automation rule 
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

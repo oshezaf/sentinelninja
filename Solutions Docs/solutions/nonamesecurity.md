@@ -41,4 +41,4 @@ to send alerts via Azure Monitor API POST or Azure Monitor Private Link Services
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

@@ -12,9 +12,9 @@ This playbook will quarantine the host in Carbon Black.
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

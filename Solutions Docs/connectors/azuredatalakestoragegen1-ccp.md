@@ -46,4 +46,4 @@ This connector uses Azure Policy to apply a single Azure Data Lake Storage Gen1 
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

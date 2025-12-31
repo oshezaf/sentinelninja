@@ -15,9 +15,9 @@ This query searches for any Service Accounts Performing Remote PowerShell.
 
 **Browse:**
 
-- [← Back to Hunting Queries](../hunting-queries.md)
+- [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

@@ -49,4 +49,4 @@ The connection necessitates giving Microsoft permissions to access your AWS acco
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

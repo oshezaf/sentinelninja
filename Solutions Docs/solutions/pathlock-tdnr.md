@@ -87,4 +87,4 @@ If the connector is not yet available in the Content Hub, you can deploy it manu
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

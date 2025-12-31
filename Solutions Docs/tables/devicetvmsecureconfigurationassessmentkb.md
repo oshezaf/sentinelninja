@@ -20,4 +20,4 @@ Knowledge base of various security configurations used by Microsoft Defender Vul
 - [← Back to Tables Index](../tables-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

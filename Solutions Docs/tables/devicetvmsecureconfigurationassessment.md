@@ -20,4 +20,4 @@ Microsoft Defender Vulnerability Management assessment events, indicating the st
 - [← Back to Tables Index](../tables-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

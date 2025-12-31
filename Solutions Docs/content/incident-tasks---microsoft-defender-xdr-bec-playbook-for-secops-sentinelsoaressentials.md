@@ -12,9 +12,9 @@ This playbook add Incident Tasks based on Microsoft Defender XDR BEC Playbook fo
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

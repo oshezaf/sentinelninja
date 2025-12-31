@@ -19,9 +19,9 @@ This rule will check if there is an unnormal activity of sites that are deleted 
 
 **Browse:**
 
-- [← Back to Analytic Rules](../analytic-rules.md)
+- [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to LastPass](../solutions/lastpass.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

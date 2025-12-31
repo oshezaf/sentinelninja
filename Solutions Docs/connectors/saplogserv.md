@@ -70,4 +70,4 @@ Learn more from [this blog series](https://community.sap.com/t5/enterprise-resou
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

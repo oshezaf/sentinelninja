@@ -19,9 +19,9 @@ This content item queries data from the following tables:
 
 **Browse:**
 
-- [← Back to Workbooks](../workbooks.md)
+- [← Back to Workbooks](workbooks.md)
 - [← Back to Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

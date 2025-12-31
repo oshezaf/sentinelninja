@@ -25,9 +25,9 @@ This content item queries data from the following tables:
 
 **Browse:**
 
-- [← Back to Analytic Rules](../analytic-rules.md)
+- [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

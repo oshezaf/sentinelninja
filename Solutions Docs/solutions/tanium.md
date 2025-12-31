@@ -99,4 +99,4 @@ See our Tanium Help for [Release Notes](https://help.tanium.com/bundle/microsoft
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

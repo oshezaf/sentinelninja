@@ -73,4 +73,4 @@ Install the agent on the Server where the Ivanti Unified Endpoint Management Ale
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

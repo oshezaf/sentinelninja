@@ -12,9 +12,9 @@ This playbook post a Zscaler Sandbox report for each FileHash found in the incid
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Zscaler Internet Access](../solutions/zscaler-internet-access.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

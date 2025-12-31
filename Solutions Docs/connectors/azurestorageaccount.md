@@ -70,4 +70,4 @@ This connector uses a set of Azure Policies to apply a log-streaming configurati
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

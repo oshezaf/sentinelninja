@@ -12,9 +12,9 @@ This playbook interacts with relevant stakeholders, such incident response team,
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

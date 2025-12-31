@@ -12,9 +12,9 @@ This playbook will open a Jira Issue when a new incident is opened in Microsoft 
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to ZeroTrust(TIC3.0)](../solutions/zerotrust%28tic3.0%29.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

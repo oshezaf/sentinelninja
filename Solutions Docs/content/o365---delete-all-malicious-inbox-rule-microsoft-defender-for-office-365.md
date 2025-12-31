@@ -12,9 +12,9 @@ This Playbook provides the automation on deleting all the suspicious/malicious I
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

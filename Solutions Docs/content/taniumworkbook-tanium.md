@@ -25,9 +25,9 @@ This content item queries data from the following tables:
 
 **Browse:**
 
-- [← Back to Workbooks](../workbooks.md)
+- [← Back to Workbooks](workbooks.md)
 - [← Back to Tanium](../solutions/tanium.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

@@ -158,4 +158,4 @@ Lumen Defender Threat Feed for Microsoft Sentinel offers powerful intelligence c
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

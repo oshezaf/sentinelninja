@@ -12,9 +12,9 @@ This playbook checks if malicious IP address is blocked or unblocked by Cisco Me
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to CiscoMeraki](../solutions/ciscomeraki.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

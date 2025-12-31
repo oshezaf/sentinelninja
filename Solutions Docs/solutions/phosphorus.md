@@ -58,4 +58,4 @@ Input the Phosphorus Instance Domain name, Integration Name, API key , click Con
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

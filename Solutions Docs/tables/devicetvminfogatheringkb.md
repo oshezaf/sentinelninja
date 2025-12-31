@@ -17,4 +17,4 @@ Metadata for assessment events collected in the `DeviceTvmInfogathering` table
 - [← Back to Tables Index](../tables-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

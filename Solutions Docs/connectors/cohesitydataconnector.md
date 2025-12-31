@@ -80,4 +80,4 @@ Click on the "Deploy to Azure" button to deploy the Azure functions. This step d
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

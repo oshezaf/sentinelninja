@@ -50,4 +50,4 @@ Return to Microsoft Sentinel and open the **Cyble Vision Alerts** data connector
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

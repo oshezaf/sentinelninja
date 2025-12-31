@@ -67,4 +67,4 @@ Connecting Microsoft 365 Insider Risk Management will cause your data that is co
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

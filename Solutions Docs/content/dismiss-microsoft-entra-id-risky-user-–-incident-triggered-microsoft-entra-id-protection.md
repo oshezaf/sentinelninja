@@ -12,9 +12,9 @@ This playbook will dismiss the Risky User property in Microsoft Entra ID using M
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

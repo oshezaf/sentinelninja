@@ -83,4 +83,4 @@ The function app installed in Step 6 queries the GreyNoise GNQL API once per day
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

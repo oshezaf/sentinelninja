@@ -47,4 +47,4 @@ Select Connect next to each Subscription whose IoT Hub's alerts you want to stre
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

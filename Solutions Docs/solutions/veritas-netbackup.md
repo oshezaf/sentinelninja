@@ -91,4 +91,4 @@ Veritas NetBackup sends events to SIEM platforms using Microsoft Sentinel as an 
 - [← Back to Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

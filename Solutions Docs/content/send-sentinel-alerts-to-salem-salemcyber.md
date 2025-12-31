@@ -12,9 +12,9 @@ Use this playbook to send Microsoft Sentinel alerts to Salem Virtual Cyber Analy
 
 **Browse:**
 
-- [← Back to Playbooks](../playbooks.md)
+- [← Back to Playbooks](playbooks.md)
 - [← Back to SalemCyber](../solutions/salemcyber.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

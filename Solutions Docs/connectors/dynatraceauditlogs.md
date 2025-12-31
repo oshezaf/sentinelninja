@@ -44,4 +44,4 @@ Enable Dynatrace Audit [Logging](https://docs.dynatrace.com/docs/shortlink/audit
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

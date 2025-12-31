@@ -348,4 +348,4 @@ iii. By clicking on the invocation time, you can see all the logs for that run.
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

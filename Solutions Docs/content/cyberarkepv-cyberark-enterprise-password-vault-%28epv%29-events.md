@@ -16,9 +16,9 @@ This content item queries data from the following tables:
 
 **Browse:**
 
-- [← Back to Workbooks](../workbooks.md)
+- [← Back to Workbooks](workbooks.md)
 - [← Back to CyberArk Enterprise Password Vault (EPV) Events](../solutions/cyberark-enterprise-password-vault-%28epv%29-events.md)
-- [Content Index](../content-index.md)
+- [Content Index](content-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Connectors Index](../connectors-index.md)
 - [Tables Index](../tables-index.md)

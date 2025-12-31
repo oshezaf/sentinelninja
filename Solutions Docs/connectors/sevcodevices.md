@@ -49,4 +49,4 @@ The Sevco Platform can integrate with and export assets directly to Microsoft Se
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

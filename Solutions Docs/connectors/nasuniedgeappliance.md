@@ -68,4 +68,4 @@ Follow the instructions in the [Nasuni Management Console Guide](https://view.hi
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

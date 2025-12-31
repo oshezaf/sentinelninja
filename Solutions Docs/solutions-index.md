@@ -9,7 +9,7 @@ This reference documentation provides detailed information about data connectors
 - [Solutions](solutions-index.md) (this page)
 - [Connectors](connectors-index.md)
 - [Tables](tables-index.md)
-- [Content](content-index.md)
+- [Content](content/content-index.md)
 
 ---
 

@@ -87,4 +87,4 @@ Follow the configuration steps below to get Ubiquiti logs into Microsoft Sentine
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)

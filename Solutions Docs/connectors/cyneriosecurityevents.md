@@ -51,4 +51,4 @@ Cynerio can integrate with and export events directly to Microsoft Sentinel via 
 - [← Back to Connectors Index](../connectors-index.md)
 - [Solutions Index](../solutions-index.md)
 - [Tables Index](../tables-index.md)
-- [Content Index](../content-index.md)
+- [Content Index](../content/content-index.md)
