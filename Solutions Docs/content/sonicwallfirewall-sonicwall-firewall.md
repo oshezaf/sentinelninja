@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [SonicWall Firewall](../solutions/sonicwall-firewall.md) |
+| **Event Vendor** | SonicWall |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall/Workbooks/SonicWallFirewall.json) |
 
 ## Tables Used

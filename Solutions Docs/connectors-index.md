@@ -15,7 +15,7 @@ Browse all data connectors available in Microsoft Sentinel Solutions.
 
 ## Overview
 
-This page lists **524 unique connectors** across all solutions.
+This page lists **512 unique connectors** across all solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -454,22 +454,6 @@ This connector allows you to ingest AWS VPC Flow Logs, collected in AWS S3 bucke
 
 ---
 
-### [Amazon Web Services S3 WAF](connectors/awss3wafccpdefinition.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Amazon Web Services](solutions/amazon-web-services.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `AWSWAF`
-
-This connector allows you to ingest AWS WAF logs, collected in AWS S3 buckets, to Microsoft Sentinel. AWS WAF logs are detailed records of traffic that web access control lists (ACLs) analyze, which are essential for maintaining the security and performance of web applications. These logs contain information such as the time AWS WAF received the request, the specifics of the request, and the action taken by the rule that the request matched.
-
-[→ View full connector details](connectors/awss3wafccpdefinition.md)
-
----
-
 ### [Anvilogic](connectors/anvilogicccfdefinition.md)
 
 **Publisher:** Anvilogic
@@ -862,7 +846,7 @@ Azure Key Vault is a cloud service for securely storing and accessing secrets. A
 
 **Collection Method:** Azure Diagnostics
 
-**Tables (3):** `AzureDiagnostics`, `ContainerInventory`, `KubeEvents`
+**Tables (2):** `AzureDiagnostics`, `ContainerInventory`
 
 Azure Kubernetes Service (AKS) is an open-source, fully-managed container orchestration service that allows you to deploy, scale, and manage Docker containers and container-based applications in a cluster environment. This connector lets you stream your Azure Kubernetes Service (AKS) diagnostics logs into Microsoft Sentinel, allowing you to continuously monitor activity in all your instances. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2219762&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
 
@@ -929,22 +913,6 @@ Azure SQL is a fully managed, Platform-as-a-Service (PaaS) database engine that 
 Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics (in a namespace). This connector lets you stream your Azure Service Bus diagnostics logs into Microsoft Sentinel, allowing you to continuously monitor activity. 
 
 [→ View full connector details](connectors/azureservicebus-ccp.md)
-
----
-
-### [Azure Storage Account](connectors/azurestorageaccount.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Azure Storage](solutions/azure-storage.md)
-
-**Collection Method:** Azure Diagnostics
-
-**Tables (5):** `AzureMetrics`, `StorageBlobLogs`, `StorageFileLogs`, `StorageQueueLogs`, `StorageTableLogs`
-
-Azure Storage account is a cloud solution for modern data storage scenarios. It contains all your data objects: blobs, files, queues, tables, and disks. This connector lets you stream Azure Storage accounts diagnostics logs into your Microsoft Sentinel workspace, allowing you to continuously monitor activity in all your instances, and detect malicious activity in your organization. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2220068&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
-
-[→ View full connector details](connectors/azurestorageaccount.md)
 
 ---
 
@@ -1401,27 +1369,6 @@ The connector fetches data from ETD api for threat analysis
 
 ---
 
-### [Cisco Meraki (using REST API)](connectors/ciscomerakimultirule.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Cisco Meraki Events via REST API](solutions/cisco-meraki-events-via-rest-api.md)
-
-**Collection Method:** CCF
-
-**Tables (3):** `ASimAuditEventLogs`, `ASimNetworkSessionLogs`, `ASimWebSessionLogs`
-
-The [Cisco Meraki](https://aka.ms/ciscomeraki) connector allows you to easily connect your Cisco Meraki organization events (Security events, Configuration Changes and API Requests) to Microsoft Sentinel. The data connector uses the [Cisco Meraki REST API](https://developer.cisco.com/meraki/api-v1/#!get-organization-appliance-security-events) to fetch logs and supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parses the received data and ingests into ASIM and custom tables in your Log Analytics workspace. This data connector benefits from capabilities such as DCR based ingestion-time filtering, data normalization.
-
- **Supported ASIM schema:** 
- 1. Network Session 
- 2. Web Session  
- 3. Audit Event
-
-[→ View full connector details](connectors/ciscomerakimultirule.md)
-
----
-
 ### [Cisco Meraki (using REST API)](connectors/ciscomeraki%28usingrestapi%29.md)
 
 **Publisher:** Microsoft
@@ -1793,7 +1740,7 @@ The Crowdstrike Falcon Data Replicator (S3) connector provides the capability to
 
 **Collection Method:** Azure Function
 
-**Tables (15):** `ASimAuditEventLogs`, `ASimAuthenticationEventLogs`, `ASimAuthenticationEventLogs_CL`, `ASimDnsActivityLogs`, `ASimFileEventLogs`, `ASimFileEventLogs_CL`, `ASimNetworkSessionLogs`, `ASimProcessEventLogs`, `ASimProcessEventLogs_CL`, `ASimRegistryEventLogs`, `ASimRegistryEventLogs_CL`, `ASimUserManagementActivityLogs`, `ASimUserManagementLogs_CL`, `CrowdStrike_Additional_Events_CL`, `CrowdStrike_Secondary_Data_CL`
+**Tables (7):** `ASimAuthenticationEventLogs_CL`, `ASimFileEventLogs_CL`, `ASimProcessEventLogs_CL`, `ASimRegistryEventLogs_CL`, `ASimUserManagementLogs_CL`, `CrowdStrike_Additional_Events_CL`, `CrowdStrike_Secondary_Data_CL`
 
 This connector enables the ingestion of FDR data into Microsoft Sentinel using Azure Functions to support the assessment of potential security risks, analysis of collaboration activities, identification of configuration issues, and other operational insights.<p><span style='color:red; font-weight:bold;'>NOTE:</span></p><div style='margin-left:20px;'><p>1. CrowdStrike FDR license must be available & enabled.</p><p>2. The connector uses a Key & Secret based authentication and is suitable for CrowdStrike Managed buckets.</p><p>3. For environments that use a fully owned AWS S3 bucket, Microsoft recommends using the <strong>CrowdStrike Falcon Data Replicator (AWS S3)</strong> connector.</p></div>
 
@@ -1975,7 +1922,7 @@ The [Cynerio](https://www.cynerio.com/) connector allows you to easily connect y
 
 **Collection Method:** AMA
 
-**Tables (2):** `DnsEvents`, `DnsInventory`
+**Tables (1):** `DnsInventory`
 
 The DNS log connector allows you to easily connect your DNS analytic and audit logs with Microsoft Sentinel, and other related data, to improve investigation.
 
@@ -2037,6 +1984,22 @@ This solution installs the Datalake2Sentinel connector which is built using the 
 Dataminr Pulse Alerts Data Connector brings our AI-powered real-time intelligence into Microsoft Sentinel for faster threat detection and response.
 
 [→ View full connector details](connectors/dataminrpulsealerts.md)
+
+---
+
+### [Datawiza DAP](connectors/datawizadapsolution.md)
+
+**Publisher:** Datawiza
+
+**Solution:** [Datawiza](solutions/datawiza.md)
+
+**Collection Method:** REST API
+
+**Tables (1):** `datawizaserveraccess_CL`
+
+Connects the Datawiza DAP logs to Azure Log Analytics via the REST API interface
+
+[→ View full connector details](connectors/datawizadapsolution.md)
 
 ---
 
@@ -2262,7 +2225,7 @@ The Egress Defend audit connector provides the capability to ingest Egress Defen
 
 **Collection Method:** CCF
 
-**Tables (2):** `DefendAuditData`, `EgressEvents_CL`
+**Tables (1):** `EgressEvents_CL`
 
 The Egress Iris connector will allow you to ingest Egress data into Sentinel.
 
@@ -2546,54 +2509,6 @@ The GCP Cloud SQL data connector provides the capability to ingest Audit logs in
 
 ---
 
-### [GCP Pub/Sub Audit Logs](connectors/gcpauditlogsdefinition.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Google Cloud Platform Audit Logs](solutions/google-cloud-platform-audit-logs.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `GCPAuditLogs`
-
-The Google Cloud Platform (GCP) audit logs, ingested from Microsoft Sentinel's connector, enables you to capture three types of audit logs: admin activity logs, data access logs, and access transparency logs. Google cloud audit logs record a trail that practitioners can use to monitor access and detect potential threats across Google Cloud Platform (GCP) resources.
-
-[→ View full connector details](connectors/gcpauditlogsdefinition.md)
-
----
-
-### [GCP Pub/Sub Audit Logs](connectors/gcppub-subauditlogs.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Google Cloud Platform Audit Logs](solutions/google-cloud-platform-audit-logs.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `GCPAuditLogs`
-
-The Google Cloud Platform (GCP) audit logs, ingested from Sentinel's connector, enable you to capture three types of audit logs: admin activity logs, data access logs, and access transparency logs. Google cloud audit logs record a trail that practitioners can use to monitor access and detect potential threats across Google Cloud Platform (GCP) resources.
-
-[→ View full connector details](connectors/gcppub-subauditlogs.md)
-
----
-
-### [GCP Pub/Sub Firewall Logs](connectors/gcpfirewalllogsccpdefinition.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Google Cloud Platform Firewall Logs](solutions/google-cloud-platform-firewall-logs.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `GCPFirewallLogs`
-
-The Google Cloud Platform (GCP) firewall logs, enable you to capture network inbound and outbound activity to monitor access and detect potential threats across Google Cloud Platform (GCP) resources.
-
-[→ View full connector details](connectors/gcpfirewalllogsccpdefinition.md)
-
----
-
 ### [GCP Pub/Sub Load Balancer Logs (via Codeless Connector Platform).](connectors/gcpfloadbalancerlogsccpdefinition.md)
 
 **Publisher:** Microsoft
@@ -2710,38 +2625,6 @@ The Google ApigeeX data connector provides the capability to ingest Audit logs i
 
 ---
 
-### [Google Cloud Platform CDN (via Codeless Connector Framework)](connectors/gcpcdnlogsccpdefinition.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [GoogleCloudPlatformCDN](solutions/googlecloudplatformcdn.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `GCPCDN`
-
-The Google Cloud Platform CDN data connector provides the capability to ingest Cloud CDN Audit logs and Cloud CDN Traffic logs into Microsoft Sentinel using the Compute Engine API. Refer the [Product overview](https://cloud.google.com/cdn/docs/overview) document for more details.
-
-[→ View full connector details](connectors/gcpcdnlogsccpdefinition.md)
-
----
-
-### [Google Cloud Platform Cloud IDS (via Codeless Connector Framework)](connectors/gcpcloudidslogsccpdefinition.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [GoogleCloudPlatformIDS](solutions/googlecloudplatformids.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `GCPIDS`
-
-The Google Cloud Platform IDS data connector provides the capability to ingest Cloud IDS Traffic logs, Threat logs and Audit logs into Microsoft Sentinel using the Google Cloud IDS API. Refer to [Cloud IDS API](https://cloud.google.com/intrusion-detection-system/docs/audit-logging#google.cloud.ids.v1.IDS) documentation for more information.
-
-[→ View full connector details](connectors/gcpcloudidslogsccpdefinition.md)
-
----
-
 ### [Google Cloud Platform Cloud Monitoring (via Codeless Connector Framework)](connectors/gcpmonitorccpdefinition.md)
 
 **Publisher:** Microsoft
@@ -2774,38 +2657,6 @@ The Google Cloud Platform Compute Engine data connector provides the capability 
 
 ---
 
-### [Google Cloud Platform DNS (via Codeless Connector Framework)](connectors/gcpdnslogsccpdefinition.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [GoogleCloudPlatformDNS](solutions/googlecloudplatformdns.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `GCPDNS`
-
-The Google Cloud Platform DNS data connector provides the capability to ingest Cloud DNS Query logs and Cloud DNS Audit logs into Microsoft Sentinel using the Google Cloud DNS API. Refer to [Cloud DNS API](https://cloud.google.com/dns/docs/reference/rest/v1) documentation for more information.
-
-[→ View full connector details](connectors/gcpdnslogsccpdefinition.md)
-
----
-
-### [Google Cloud Platform IAM (via Codeless Connector Framework)](connectors/gcpiamccpdefinition.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [GoogleCloudPlatformIAM](solutions/googlecloudplatformiam.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `GCPIAM`
-
-The Google Cloud Platform IAM data connector provides the capability to ingest the Audit logs relating to Identity and Access Management (IAM) activities within Google Cloud into Microsoft Sentinel using the Google IAM API. Refer to [GCP IAM API](https://cloud.google.com/iam/docs/reference/rest) documentation for more information.
-
-[→ View full connector details](connectors/gcpiamccpdefinition.md)
-
----
-
 ### [Google Cloud Platform NAT (via Codeless Connector Framework)](connectors/gcpnatlogsccpdefinition.md)
 
 **Publisher:** Microsoft
@@ -2814,7 +2665,7 @@ The Google Cloud Platform IAM data connector provides the capability to ingest t
 
 **Collection Method:** CCF
 
-**Tables (2):** `GCPNAT`, `GCPNATAudit`
+**Tables (1):** `GCPNATAudit`
 
 The Google Cloud Platform NAT data connector provides the capability to ingest Cloud NAT Audit logs and Cloud NAT Traffic logs into Microsoft Sentinel using the Compute Engine API. Refer the [Product overview](https://cloud.google.com/nat/docs/overview) document for more details.
 
@@ -2933,6 +2784,22 @@ HYAS Protect provide logs based on reputation values - Blocked, Malicious, Permi
 Through the API integration, you have the capability to retrieve all the issues related to your HackerView organizations via a RESTful interface.
 
 [→ View full connector details](connectors/hvpollingidazurefunctions.md)
+
+---
+
+### [Halcyon Connector](connectors/halcyonpush.md)
+
+**Publisher:** Halcyon
+
+**Solution:** [Halcyon](solutions/halcyon.md)
+
+**Collection Method:** CCF
+
+**Tables (5):** `HalcyonAuthenticationEvents_CL`, `HalcyonDnsActivity_CL`, `HalcyonFileActivity_CL`, `HalcyonNetworkSession_CL`, `HalcyonProcessEvent_CL`
+
+The [Halcyon](https://www.halcyon.ai) connector provides the capability to send data from Halcyon to Microsoft Sentinel.
+
+[→ View full connector details](connectors/halcyonpush.md)
 
 ---
 
@@ -3658,7 +3525,7 @@ The MailRisk by Secure Practice connector allows you to ingest email threat inte
 
 **Collection Method:** Native
 
-**Tables (4):** `OfficeActivity`, `exchange`, `sharePoint`, `teams`
+**Tables (3):** `OfficeActivity`, `exchange`, `sharePoint`
 
 The Microsoft 365 (formerly, Office 365) activity log connector provides insight into ongoing user activities. You will get details of operations such as file downloads, access requests sent, changes to group events, set-mailbox and details of the user who performed the actions. By connecting Microsoft 365 logs into Microsoft Sentinel you can use this data to view dashboards, create custom alerts, and improve your investigation process. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2219943&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
 
@@ -3750,7 +3617,7 @@ Microsoft Sentinel provides you the capability to import threat intelligence gen
 
 **Collection Method:** Native
 
-**Tables (22):** `AlertEvidence`, `CloudAppEvents`, `DeviceEvents`, `DeviceFileCertificateInfo`, `DeviceFileEvents`, `DeviceImageLoadEvents`, `DeviceInfo`, `DeviceLogonEvents`, `DeviceNetworkEvents`, `DeviceNetworkInfo`, `DeviceProcessEvents`, `DeviceRegistryEvents`, `EmailAttachmentInfo`, `EmailEvents`, `EmailPostDeliveryEvents`, `EmailUrlInfo`, `IdentityDirectoryEvents`, `IdentityLogonEvents`, `IdentityQueryEvents`, `SecurityAlert`, `SecurityIncident`, `UrlClickEvents`
+**Tables (3):** `AlertEvidence`, `SecurityAlert`, `SecurityIncident`
 
 Microsoft Defender XDR is a unified, natively integrated, pre- and post-breach enterprise defense suite that protects endpoint, identity, email, and applications and helps you detect, prevent, investigate, and automatically respond to sophisticated threats.
 
@@ -3889,7 +3756,7 @@ For more information, see the [Microsoft Sentinel documentation](https://go.micr
 
 **Collection Method:** Native
 
-**Tables (22):** `AADManagedIdentitySignInLogs`, `AADNonInteractiveUserSignInLogs`, `AADProvisioningLogs`, `AADRiskyServicePrincipals`, `AADRiskyUsers`, `AADServicePrincipalRiskEvents`, `AADServicePrincipalSignInLogs`, `AADUserRiskEvents`, `ADFSSignInLogs`, `AuditLogs`, `ManagedIdentitySignInLogs`, `NetworkAccessTraffic`, `NetworkAccessTrafficLogs`, `NonInteractiveUserSignInLogs`, `ProvisioningLogs`, `RiskyServicePrincipals`, `RiskyUsers`, `ServicePrincipalRiskEvents`, `ServicePrincipalSignInLogs`, `SignInLogs`, `SigninLogs`, `UserRiskEvents`
+**Tables (5):** `AADRiskyServicePrincipals`, `AADRiskyUsers`, `NetworkAccessTraffic`, `RiskyServicePrincipals`, `RiskyUsers`
 
 Gain insights into Microsoft Entra ID by connecting Audit and Sign-in logs to Microsoft Sentinel to gather insights around Microsoft Entra ID scenarios. You can learn about app usage, conditional access policies, legacy auth relate details using our Sign-in logs. You can get information on your Self Service Password Reset (SSPR) usage, Microsoft Entra ID Management activities like user, group, role, app management using our Audit logs table. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/?linkid=2219715&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
 
@@ -4022,22 +3889,6 @@ Microsoft PowerBI is a collection of software services, apps, and connectors tha
 Microsoft Project (MSP) is a project management software solution. Depending on your plan, Microsoft Project lets you plan projects, assign tasks, manage resources, create reports and more. This connector allows you to stream your Azure Project audit logs into Microsoft Sentinel in order to track your project activities.
 
 [→ View full connector details](connectors/office365project.md)
-
----
-
-### [Microsoft Purview](connectors/microsoftazurepurview.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Microsoft Purview](solutions/microsoft-purview.md)
-
-**Collection Method:** Azure Diagnostics
-
-**Tables (1):** `PurviewDataSensitivityLogs`
-
-Connect to Microsoft Purview to enable data sensitivity enrichment of Microsoft Sentinel. Data classification and sensitivity label logs from Microsoft Purview scans can be ingested and visualized through workbooks, analytical rules, and more. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2224125&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
-
-[→ View full connector details](connectors/microsoftazurepurview.md)
 
 ---
 
@@ -5562,7 +5413,7 @@ The SlackAudit data connector provides the capability to ingest [Slack Audit log
 
 **Collection Method:** Azure Function
 
-**Tables (2):** `AzureDiagnostics`, `AzureMetrics`
+**Tables (1):** `AzureDiagnostics`
 
 The SlashNext function app utilizes python to perform the analysis of the raw logs and returns URLs present in the logs.
 
@@ -6055,7 +5906,7 @@ The [VMware Carbon Black Cloud](https://www.vmware.com/products/carbon-black-clo
 
 **Collection Method:** CCF
 
-**Tables (7):** `ASimAuthenticationEventLogs`, `ASimFileEventLogs`, `ASimNetworkSessionLogs`, `ASimProcessEventLogs`, `ASimRegistryEventLogs`, `CarbonBlack_Alerts_CL`, `CarbonBlack_Watchlist_CL`
+**Tables (2):** `CarbonBlack_Alerts_CL`, `CarbonBlack_Watchlist_CL`
 
 The [VMware Carbon Black Cloud](https://www.vmware.com/products/carbon-black-cloud.html) via AWS S3 data connector provides the capability to ingest watchlist, alerts, auth and endpoints events via AWS S3 and stream them to ASIM normalized tables. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
 
@@ -6205,35 +6056,6 @@ VirtualMetric Director Proxy deploys an Azure Function App to securely bridge Vi
 
 ## W
 
-### [Windows DNS Events via AMA](connectors/asimdnsactivitylogs.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Windows Server DNS](solutions/windows-server-dns.md)
-
-**Collection Method:** AMA
-
-**Tables (1):** `ASimDnsActivityLogs`
-
-The Windows DNS log connector allows you to easily filter and stream all analytics logs from your Windows DNS servers to your Microsoft Sentinel workspace using the Azure Monitoring agent (AMA). Having this data in Microsoft Sentinel helps you identify issues and security threats such as:
-- Trying to resolve malicious domain names.
-- Stale resource records.
-- Frequently queried domain names and talkative DNS clients.
-- Attacks performed on DNS server.
-
-You can get the following insights into your Windows DNS servers from Microsoft Sentinel:
-- All logs centralized in a single place.
-- Request load on DNS servers.
-- Dynamic DNS registration failures.
-
-Windows DNS events are supported by Advanced SIEM Information Model (ASIM) and stream data into the ASimDnsActivityLogs table. [Learn more](https://docs.microsoft.com/azure/sentinel/normalization).
-
-For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2225993&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
-
-[→ View full connector details](connectors/asimdnsactivitylogs.md)
-
----
-
 ### [Windows Firewall](connectors/windowsfirewall.md)
 
 **Publisher:** Microsoft
@@ -6247,28 +6069,6 @@ For more information, see the [Microsoft Sentinel documentation](https://go.micr
 Windows Firewall is a Microsoft Windows application that filters information coming to your system from the Internet and blocking potentially harmful programs. The software blocks most programs from communicating through the firewall. Users simply add a program to the list of allowed programs to allow it to communicate through the firewall. When using a public network, Windows Firewall can also secure the system by blocking all unsolicited attempts to connect to your computer. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2219791&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
 
 [→ View full connector details](connectors/windowsfirewall.md)
-
----
-
-### [Windows Firewall Events via AMA](connectors/windowsfirewallama.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Windows Firewall](solutions/windows-firewall.md)
-
-**Collection Method:** AMA
-
-**Tables (1):** `ASimNetworkSessionLogs`
-
-Windows Firewall is a Microsoft Windows application that filters information coming to your system from the internet and blocking potentially harmful programs. The firewall software blocks most programs from communicating through the firewall. To stream your Windows Firewall application logs collected from your machines, use the Azure Monitor agent (AMA) to stream those logs to the Microsoft Sentinel workspace.
-
-A configured data collection endpoint (DCE) is required to be linked with the data collection rule (DCR) created for the AMA to collect logs. For this connector, a DCE is automatically created in the same region as the workspace. If you already use a DCE stored in the same region, it's possible to change the default created DCE and use your existing one through the API. DCEs can be located in your resources with **SentinelDCE** prefix in the resource name.
-
-For more information, see the following articles:
-- [Data collection endpoints in Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-endpoint-overview?tabs=portal)
-- [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2228623&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci)
-
-[→ View full connector details](connectors/windowsfirewallama.md)
 
 ---
 
@@ -6345,22 +6145,6 @@ For more information visit our website at: [https://www.withsecure.com](https://
 The Wiz connector allows you to easily send Wiz Issues, Vulnerability Findings, and Audit logs to Microsoft Sentinel.
 
 [→ View full connector details](connectors/wiz.md)
-
----
-
-### [Workday User Activity](connectors/workdayccpdefinition.md)
-
-**Publisher:** Microsoft
-
-**Solution:** [Workday](solutions/workday.md)
-
-**Collection Method:** CCF
-
-**Tables (1):** `ASimAuditEventLogs`
-
-The [Workday](https://www.workday.com/) User Activity data connector provides the capability to ingest User Activity Logs from [Workday API](https://community.workday.com/sites/default/files/file-hosting/restapi/index.html#privacy/v1/get-/activityLogging) into Microsoft Sentinel.
-
-[→ View full connector details](connectors/workdayccpdefinition.md)
 
 ---
 
@@ -8007,7 +7791,7 @@ The NGINX HTTP Server data connector provides the capability to ingest [NGINX](h
 
 **Collection Method:** AMA
 
-**Tables (2):** `Nasuni`, `Syslog`
+**Tables (1):** `Syslog`
 
 The [Nasuni](https://www.nasuni.com/) connector allows you to easily connect your Nasuni Edge Appliance Notifications and file system audit logs with Microsoft Sentinel. This gives you more insight into activity within your Nasuni infrastructure and improves your security operation capabilities.
 

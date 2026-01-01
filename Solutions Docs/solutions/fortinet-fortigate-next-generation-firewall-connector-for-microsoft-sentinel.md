@@ -28,11 +28,11 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **5 content item(s)**:
+This solution includes **4 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 4 |
+| Playbooks | 3 |
 | Workbooks | 1 |
 
 ### Workbooks
@@ -45,7 +45,6 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Fortinet-FortiGate-FunctionApp](../content/fortinet-fortigate-functionapp-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | This function app connects to Fortinet service end point and fetch the details of the entities of th... | - |
 | [Fortinet-FortiGate-IPEnrichment](../content/fortinet-fortigate-ipenrichment-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | This playbook enriches the incident with address object and address group. | - |
 | [Fortinet-FortiGate-ResponseOnBlockIP](../content/fortinet-fortigate-responseonblockip-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which i... | - |
 | [Fortinet-FortiGate-ResponseOnBlockURL](../content/fortinet-fortigate-responseonblockurl-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which i... | - |

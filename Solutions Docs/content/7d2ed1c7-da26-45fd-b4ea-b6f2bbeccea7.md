@@ -18,7 +18,6 @@
 
 This content item queries data from the following tables:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
 - [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
 - [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)

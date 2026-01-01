@@ -14,7 +14,6 @@ This content item queries data from the following tables:
 - [`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md)
 - [`Domain_Data_CL`](../tables/domain-data-cl.md)
 - [`InsightsMessageTable`](../tables/insightsmessagetable.md)
-- [`Open_Ports_Data_CL`](../tables/open-ports-data-cl.md)
 - [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md)
 - [`Summary_Details_CL`](../tables/summary-details-cl.md)
 - [`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md)

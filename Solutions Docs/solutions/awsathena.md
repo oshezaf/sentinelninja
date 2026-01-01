@@ -19,25 +19,17 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **9 content item(s)**:
+This solution includes **1 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 9 |
+| Playbooks | 1 |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [AWS Athena - Execute Query and Get Results](../content/aws-athena---execute-query-and-get-results-awsathena.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [AWSAthena_FunctionAppConnector](../content/awsathena-functionappconnector-awsathena.md) | - | - |
-| [function](../content/function-awsathena.md) | - | - |
-| [function](../content/function-awsathena.md) | - | - |
-| [function](../content/function-awsathena.md) | - | - |
-| [function](../content/function-awsathena.md) | - | - |
-| [function](../content/function-awsathena.md) | - | - |
-| [function](../content/function-awsathena.md) | - | - |
-| [host](../content/host-awsathena.md) | - | - |
 
 ## Release Notes
 

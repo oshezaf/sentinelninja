@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Darktrace](../solutions/darktrace.md) |
+| **Event Vendor** | Darktrace |
+| **Event Product** | Darktrace DETECT, Enterprise Immune System |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace/Workbooks/DarktraceWorkbook.json) |
 
 ## Tables Used

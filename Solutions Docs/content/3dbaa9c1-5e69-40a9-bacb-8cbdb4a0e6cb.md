@@ -12,12 +12,6 @@ This query visualises total emails with Phish-Spoof-external domain detections s
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Authentication/Top%20Spoof%20detections%20by%20Sender%20Domain.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`EmailEvents`](../tables/emailevents.md)
-
 ---
 
 **Browse:**

@@ -19,12 +19,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md) | Workbooks |
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) | - | Analytics |
 | [`discoveryLogs`](../tables/discoverylogs.md) | [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md) | - |
 
 ### Internal Tables
@@ -48,7 +47,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Linked Malicious Storage Artifacts](../content/b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d.md) | Medium | CommandAndControl, Exfiltration | [`StorageBlobLogs`](../tables/storagebloblogs.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Linked Malicious Storage Artifacts](../content/b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d.md) | Medium | CommandAndControl, Exfiltration | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Workbooks
 

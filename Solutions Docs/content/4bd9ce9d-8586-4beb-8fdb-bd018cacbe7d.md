@@ -15,12 +15,6 @@ This query searches for alerts related to suspected ransomware and Cobalt Strike
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Analytic%20Rules/Ransomware/PotentialCobaltStrikeRansomwareActivity.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`AlertInfo`](../tables/alertinfo.md)
-
 ---
 
 **Browse:**

@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
+| **Event Vendor** | Infoblox |
+| **Event Product** | Data Connector |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Workbooks/Infoblox_Workbook.json) |
 
 ## Tables Used
@@ -16,7 +18,6 @@ This content item queries data from the following tables:
 - [`IP_Space_Info_CL`](../tables/ip-space-info-cl.md)
 - [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md)
 - [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md)
-- [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md)
 - [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md)
 - [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md)
 - [`Infoblox_Config_Insight_Details_CL`](../tables/infoblox-config-insight-details-cl.md)

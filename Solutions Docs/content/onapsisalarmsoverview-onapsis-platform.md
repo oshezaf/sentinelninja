@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Onapsis Platform](../solutions/onapsis-platform.md) |
+| **Event Vendor** | Onapsis |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Platform/Workbooks/OnapsisAlarmsOverview.json) |
 
 ## Tables Used

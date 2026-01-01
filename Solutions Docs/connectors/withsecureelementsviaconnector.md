@@ -6,6 +6,7 @@
 | **Publisher** | WithSecure |
 | **Used in Solutions** | [WithSecureElementsViaConnector](../solutions/withsecureelementsviaconnector.md) |
 | **Collection Method** | AMA |
+| **Event Vendor** | WithSecure™ |
 | **Connector Definition Files** | [WithSecureElementsViaConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaConnector/Data%20Connectors/WithSecureElementsViaConnector.json) |
 
 WithSecure Elements is a unified cloud-based cyber security platform.
@@ -20,9 +21,9 @@ The Common Event Format (CEF) provides natively search & correlation, alerting a
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| Table | Event Vendor | Event Product | Transformations | Ingestion API |
+|-------|:-------------|:--------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | WithSecure™ | — | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

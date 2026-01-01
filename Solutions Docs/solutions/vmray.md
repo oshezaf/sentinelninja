@@ -27,11 +27,11 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **13 content item(s)**:
+This solution includes **2 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 13 |
+| Playbooks | 2 |
 
 ### Playbooks
 
@@ -39,17 +39,6 @@ This solution includes **13 content item(s)**:
 |:-----|:------------|:------------|
 | [VMRay Email Attachment Analyis](../content/vmray-email-attachment-analyis-vmray.md) | Submits a attachment or set of attachment associated with an office 365 email to VMRay for Analyis. | - |
 | [VMRay URL Analyis](../content/vmray-url-analyis-vmray.md) | Submits a url or set of urls associated with an incident to VMRay for Analyis. | - |
-| [VMRayEnrichment_FunctionAppConnector](../content/vmrayenrichment-functionappconnector-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [function](../content/function-vmray.md) | - | - |
-| [host](../content/host-vmray.md) | - | - |
 
 ## Additional Documentation
 

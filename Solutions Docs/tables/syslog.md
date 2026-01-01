@@ -111,7 +111,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (408)
+## Content Items Using This Table (407)
 
 ### Analytic Rules (263)
 
@@ -596,7 +596,7 @@ This table is ingested by the following connectors:
 - [VMware ESXi - Root logins failures](../content/fc6c0440-1bb6-4661-89e9-4cb2c8f1e5e2.md)
 - [VMware ESXi - VM high resource load](../content/3467bb11-7cbf-49f7-9e71-c3d0da327af5.md)
 
-### Workbooks (29)
+### Workbooks (28)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jPostCompromiseHunting](../content/log4jpostcompromisehunting-apache-log4j-vulnerability-detection.md)
@@ -626,7 +626,6 @@ This table is ingested by the following connectors:
 - [ESETPROTECT](../content/esetprotect-esetprotect.md)
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):**
-- [IllumioFlowData](../content/illumioflowdata-illumiosaas.md)
 - [IllumioOnPremHealth](../content/illumioonpremhealth-illumiosaas.md)
 
 **In solution [Infoblox NIOS](../solutions/infoblox-nios.md):**

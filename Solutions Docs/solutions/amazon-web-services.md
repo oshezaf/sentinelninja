@@ -13,15 +13,14 @@
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Amazon Web Services](../connectors/aws.md)
 - [Amazon Web Services S3](../connectors/awss3.md)
-- [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md)
 
 ## Tables Reference
 
-This solution uses **7 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -29,8 +28,6 @@ This solution uses **7 table(s)**:
 | [`AWSCloudWatch`](../tables/awscloudwatch.md) | [Amazon Web Services S3](../connectors/awss3.md) | - |
 | [`AWSGuardDuty`](../tables/awsguardduty.md) | [Amazon Web Services S3](../connectors/awss3.md) | Analytics |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | [Amazon Web Services S3](../connectors/awss3.md) | - |
-| [`AWSWAF`](../tables/awswaf.md) | [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) | - |
-| [`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) | - | Analytics |
 | [`PutObject`](../tables/putobject.md) | - | Analytics |
 
 ## Content Items
@@ -55,22 +52,22 @@ This solution includes **100 content item(s)**:
 | [Changes to AWS Security Group ingress and egress settings](../content/4f19d4e3-ec5f-4abc-9e61-819eb131758c.md) | Low | Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [Changes to Amazon VPC settings](../content/65360bb0-8986-4ade-a89d-af3cf44d28aa.md) | Low | PrivilegeEscalation, LateralMovement | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [Changes to internet facing AWS RDS Database instances](../content/8c2ef238-67a0-497d-b1dd-5c8a0f533e25.md) | Low | Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
-| [CloudFormation policy created then used for privilege escalation](../content/efdc3cff-f006-426f-97fd-4657862f7b9a.md) | High | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Created CRUD S3 policy and then privilege escalation](../content/467cbe7e-e6d4-4f4e-8e44-84dd01932c32.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
+| [CloudFormation policy created then used for privilege escalation](../content/efdc3cff-f006-426f-97fd-4657862f7b9a.md) | High | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Created CRUD S3 policy and then privilege escalation](../content/467cbe7e-e6d4-4f4e-8e44-84dd01932c32.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [Creating keys with encrypt policy without MFA](../content/454133a7-5427-4a7c-bdc4-0adfa84dda16.md) | Medium | Impact | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [Creation of Access Key for IAM User](../content/9a6554e6-63d9-4f94-9b32-64d1d40628f2.md) | Medium | Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
-| [Creation of CRUD DynamoDB policy and then privilege escalation.](../content/6f675c17-7a61-440c-abd1-c73ef4d748ec.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Creation of CRUD KMS policy and then privilege escalation](../content/8e15998e-1e32-4b6d-abd1-e8482e8f3def.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Creation of CRUD Lambda policy and then privilege escalation](../content/22115d3c-e87c-485a-9130-33797d619124.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Creation of DataPipeline policy and then privilege escalation.](../content/6009c632-94e9-4ffb-a11a-b4b99f457f88.md) | High | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Creation of EC2 policy and then privilege escalation](../content/a694e977-740c-4578-9f8f-5e39029f1d23.md) | High | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Creation of Glue policy and then privilege escalation](../content/56626956-304f-4408-8ea6-7ba5746ce09e.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Creation of Lambda policy and then privilege escalation](../content/796a45ee-220b-42be-8415-c8c933cf3b6d.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Creation of SSM policy and then privilege escalation](../content/aaa2c05e-fdd4-4fa0-9072-6cffe3641b34.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
-| [Creation of new CRUD IAM policy and then privilege escalation.](../content/8a607285-d95c-473d-8aab-59920de63af6.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
+| [Creation of CRUD DynamoDB policy and then privilege escalation.](../content/6f675c17-7a61-440c-abd1-c73ef4d748ec.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Creation of CRUD KMS policy and then privilege escalation](../content/8e15998e-1e32-4b6d-abd1-e8482e8f3def.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Creation of CRUD Lambda policy and then privilege escalation](../content/22115d3c-e87c-485a-9130-33797d619124.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Creation of DataPipeline policy and then privilege escalation.](../content/6009c632-94e9-4ffb-a11a-b4b99f457f88.md) | High | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Creation of EC2 policy and then privilege escalation](../content/a694e977-740c-4578-9f8f-5e39029f1d23.md) | High | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Creation of Glue policy and then privilege escalation](../content/56626956-304f-4408-8ea6-7ba5746ce09e.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Creation of Lambda policy and then privilege escalation](../content/796a45ee-220b-42be-8415-c8c933cf3b6d.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Creation of SSM policy and then privilege escalation](../content/aaa2c05e-fdd4-4fa0-9072-6cffe3641b34.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [Creation of new CRUD IAM policy and then privilege escalation.](../content/8a607285-d95c-473d-8aab-59920de63af6.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [EC2 Startup Shell Script Changed](../content/f8577e4d-8481-437b-a94e-06f615985668.md) | Medium | Execution | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [ECR image scan findings high or critical](../content/f6928301-56da-4d2c-aabe-e1a552bc8892.md) | High | Execution | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
-| [Full Admin policy created and then attached to Roles, Users or Groups](../content/826bb2f8-7894-4785-9a6b-a8a855d8366f.md) | Medium | PrivilegeEscalation, DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`FullAdminPolicyEvents`](../tables/fulladminpolicyevents.md) |
+| [Full Admin policy created and then attached to Roles, Users or Groups](../content/826bb2f8-7894-4785-9a6b-a8a855d8366f.md) | Medium | PrivilegeEscalation, DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [GuardDuty detector disabled or suspended](../content/9da99021-d318-4711-a78a-6dea76129b3a.md) | High | DefenseEvasion | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [Login to AWS Management Console without MFA](../content/d25b1998-a592-4bc5-8a3a-92b39eedb1bc.md) | Low | DefenseEvasion, PrivilegeEscalation, Persistence, InitialAccess | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [Monitor AWS Credential abuse or hijacking](../content/32555639-b639-4c2b-afda-c0ae0abefa55.md) | Low | Discovery | [`AWSCloudTrail`](../tables/awscloudtrail.md) |

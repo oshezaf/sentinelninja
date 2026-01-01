@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [vArmour Application Controller](../solutions/varmour-application-controller.md) |
+| **Event Vendor** | vArmour |
+| **Event Product** | AC |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/vArmour%20Application%20Controller/Workbooks/vArmour_AppContoller_Workbook.json) |
 
 ## Tables Used

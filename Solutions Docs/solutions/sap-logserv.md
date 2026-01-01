@@ -20,12 +20,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | Analytics, Workbooks |
-| [`filteredLogs`](../tables/filteredlogs.md) | - | Workbooks |
 
 ## Content Items
 
@@ -49,7 +48,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SAPLogServObserve](../content/saplogservobserve-sap-logserv.md) | [`SAPLogServ_CL`](../tables/saplogserv-cl.md)<br>[`filteredLogs`](../tables/filteredlogs.md) |
+| [SAPLogServObserve](../content/saplogservobserve-sap-logserv.md) | [`SAPLogServ_CL`](../tables/saplogserv-cl.md) |
 
 ## Release Notes
 

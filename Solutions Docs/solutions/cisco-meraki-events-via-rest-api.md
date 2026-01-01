@@ -13,19 +13,9 @@
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+**This solution does not include data connectors.**
 
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md)
-
-## Tables Reference
-
-This solution uses **3 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | - |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | - |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | - |
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
 ## Release Notes
 

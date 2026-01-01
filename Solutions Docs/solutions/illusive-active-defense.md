@@ -26,8 +26,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Illusive-SentinelIncident-Enrichment](../content/illusive-sentinelincident-enrichment-illusive-active-defense.md) | - | - |
-| [Illusive-SentinelIncident-Response](../content/illusive-sentinelincident-response-illusive-active-defense.md) | - | - |
+| [Illusive-SentinelIncident-Enrichment](../content/illusive-sentinelincident-enrichment-illusive-active-defense.md) | <p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p> | - |
+| [Illusive-SentinelIncident-Response](../content/illusive-sentinelincident-response-illusive-active-defense.md) | <p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p> | - |
 
 ## Additional Documentation
 

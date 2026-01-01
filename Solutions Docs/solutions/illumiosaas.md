@@ -32,13 +32,13 @@ This solution uses **5 table(s)**:
 
 ## Content Items
 
-This solution includes **16 content item(s)**:
+This solution includes **15 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 6 |
 | Workbooks | 4 |
-| Playbooks | 4 |
+| Playbooks | 3 |
 | Parsers | 2 |
 
 ### Analytic Rules
@@ -57,7 +57,7 @@ This solution includes **16 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [IllumioAuditableEvents](../content/illumioauditableevents-illumiosaas.md) | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
-| [IllumioFlowData](../content/illumioflowdata-illumiosaas.md) | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`Syslog`](../tables/syslog.md) |
+| [IllumioFlowData](../content/illumioflowdata-illumiosaas.md) | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) |
 | [IllumioOnPremHealth](../content/illumioonpremhealth-illumiosaas.md) | [`Syslog`](../tables/syslog.md) |
 | [IllumioWorkloadsStats](../content/illumioworkloadsstats-illumiosaas.md) | [`Illumio_Workloads_Summarized_API_CL`](../tables/illumio-workloads-summarized-api-cl.md) |
 
@@ -68,7 +68,6 @@ This solution includes **16 content item(s)**:
 | [Illumio Containment Switch Playbook](../content/illumio-containment-switch-playbook-illumiosaas.md) | This playbook leverages Illumio workloads API to contain and isolate a workload based on user inputs... | - |
 | [Illumio Get Ven Details Playbook](../content/illumio-get-ven-details-playbook-illumiosaas.md) | This playbook leverages Illumio workloads API to enrich IP, Hostname and Labels, found in Microsoft ... | - |
 | [Illumio Workload Quarantine Playbook](../content/illumio-workload-quarantine-playbook-illumiosaas.md) | This playbook leverages Illumio workloads API to quarantine a workload based on user inputs. <img sr... | - |
-| [IllumioSaaS_FunctionAppConnector](../content/illumiosaas-functionappconnector-illumiosaas.md) | - | - |
 
 ### Parsers
 

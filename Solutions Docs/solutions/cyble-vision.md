@@ -71,13 +71,13 @@ This solution uses **45 table(s)**:
 
 ## Content Items
 
-This solution includes **94 content item(s)**:
+This solution includes **93 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Parsers | 45 |
 | Analytic Rules | 44 |
-| Playbooks | 4 |
+| Playbooks | 3 |
 | Workbooks | 1 |
 
 ### Analytic Rules
@@ -139,7 +139,6 @@ This solution includes **94 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Azure_Sentinel_automation_rules](../content/azure-sentinel-automation-rules-cyble-vision.md) | - | - |
 | [Cyble-IOC_Enrichment-Playbook](../content/cyble-ioc-enrichment-playbook-cyble-vision.md) | This playbook leverages the Cyble API to enrich IP, Domain, Url & Hash indicators, found in Microsof... | - |
 | [Cyble-ThreatIntelligence-Ingest-Playbook](../content/cyble-threatintelligence-ingest-playbook-cyble-vision.md) | This playbook imports IoC lists from Cyble and stores them as Threat Intelligence Indicators in Micr... | - |
 | [CybleVisionAlert_Status_Update](../content/cyblevisionalert-status-update-cyble-vision.md) | This Logic App updates Cyble alert status and severity based on Sentinel incident changes. It suppor... | - |

@@ -6,6 +6,7 @@
 | **Publisher** | RidgeSecurity |
 | **Used in Solutions** | [RidgeSecurity](../solutions/ridgesecurity.md) |
 | **Collection Method** | AMA |
+| **Event Vendor** | RidgeSecurity |
 | **Connector Definition Files** | [RidgeSecurity.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity/Data%20Connectors/RidgeSecurity.json) |
 
 The RidgeBot connector lets users connect RidgeBot with Microsoft Sentinel, allowing creation of Dashboards, Workbooks, Notebooks and Alerts.
@@ -14,9 +15,9 @@ The RidgeBot connector lets users connect RidgeBot with Microsoft Sentinel, allo
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| Table | Event Vendor | Event Product | Transformations | Ingestion API |
+|-------|:-------------|:--------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | RidgeSecurity | — | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

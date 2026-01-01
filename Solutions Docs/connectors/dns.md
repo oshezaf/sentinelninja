@@ -34,7 +34,6 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
 | [`DnsInventory`](../tables/dnsinventory.md) | ✓ | ✗ |
 
 ## Permissions

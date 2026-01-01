@@ -6,12 +6,6 @@
 | **Solution** | [ZoomReports](../solutions/zoomreports.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports/Workbooks/ZoomReports.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Zoom_CL`](../tables/zoom-cl.md)
-
 ---
 
 **Browse:**

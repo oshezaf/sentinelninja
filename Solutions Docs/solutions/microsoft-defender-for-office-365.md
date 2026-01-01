@@ -19,14 +19,6 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | - | Workbooks |
-| [`EmailEvents`](../tables/emailevents.md) | - | Workbooks |
-| [`EmailUrlInfo`](../tables/emailurlinfo.md) | - | Workbooks |
-
 ### Internal Tables
 
 The following **1 table(s)** are used internally by this solution's playbooks:
@@ -37,18 +29,18 @@ The following **1 table(s)** are used internally by this solution's playbooks:
 
 ## Content Items
 
-This solution includes **21 content item(s)**:
+This solution includes **6 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 20 |
+| Playbooks | 5 |
 | Workbooks | 1 |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftDefenderForOffice365](../content/microsoftdefenderforoffice365-microsoft-defender-for-office-365.md) | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md) |
+| [MicrosoftDefenderForOffice365](../content/microsoftdefenderforoffice365-microsoft-defender-for-office-365.md) | - |
 
 ### Playbooks
 
@@ -59,21 +51,6 @@ This solution includes **21 content item(s)**:
 | [O365 - Block Spam Domain](../content/o365---block-spam-domain-microsoft-defender-for-office-365.md) | This Playbook Provides the automation on blocking the suspicious/malicious attacker Domains | - |
 | [O365 - Block Suspicious Sender](../content/o365---block-suspicious-sender-microsoft-defender-for-office-365.md) | This Playbook Provides the automation on blocking the suspicious/malicious senders | - |
 | [O365 - Delete All Malicious Inbox Rule](../content/o365---delete-all-malicious-inbox-rule-microsoft-defender-for-office-365.md) | This Playbook provides the automation on deleting all the suspicious/malicious Inbox Rules from Prov... | - |
-| [O365_Defender_FunctionAppConnector](../content/o365-defender-functionappconnector-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [function](../content/function-microsoft-defender-for-office-365.md) | - | - |
-| [host](../content/host-microsoft-defender-for-office-365.md) | - | - |
 
 ## Release Notes
 

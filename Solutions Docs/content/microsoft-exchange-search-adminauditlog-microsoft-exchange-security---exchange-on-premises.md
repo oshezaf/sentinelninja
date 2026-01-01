@@ -6,12 +6,6 @@
 | **Solution** | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security---exchange-on-premises.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Workbooks/Microsoft%20Exchange%20Search%20AdminAuditLog.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`ExchangeConfiguration`](../tables/exchangeconfiguration.md)
-
 ---
 
 **Browse:**

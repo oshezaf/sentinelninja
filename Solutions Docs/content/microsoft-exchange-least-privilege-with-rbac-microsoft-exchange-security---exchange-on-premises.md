@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md)
-- [`ExchangeEnvironmentList`](../tables/exchangeenvironmentlist.md)
 
 ---
 

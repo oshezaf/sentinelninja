@@ -20,12 +20,11 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | - |
-| [`SecurityBridgeLogs`](../tables/securitybridgelogs.md) | - | Analytics, Workbooks |
 | [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) | - |
 
 ## Content Items
@@ -41,13 +40,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SecurityBridge: A critical event occured](../content/8c5c766a-ce9b-4112-b6ed-1b8fe33733b7.md) | Medium | InitialAccess | [`SecurityBridgeLogs`](../tables/securitybridgelogs.md) |
+| [SecurityBridge: A critical event occured](../content/8c5c766a-ce9b-4112-b6ed-1b8fe33733b7.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SecurityBridgeThreatDetectionforSAP](../content/securitybridgethreatdetectionforsap-securitybridge-app.md) | [`SecurityBridgeLogs`](../tables/securitybridgelogs.md) |
+| [SecurityBridgeThreatDetectionforSAP](../content/securitybridgethreatdetectionforsap-securitybridge-app.md) | - |
 
 ## Additional Documentation
 

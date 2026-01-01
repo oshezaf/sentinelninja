@@ -10,10 +10,7 @@
 
 This content item queries data from the following tables:
 
-- [`CategoryData`](../tables/categorydata.md)
 - [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)
-- [`NetworkAccessTrafficData`](../tables/networkaccesstrafficdata.md)
-- [`NetworkData`](../tables/networkdata.md)
 
 ---
 

@@ -6,6 +6,7 @@
 | **Publisher** | ExtraHop Networks |
 | **Used in Solutions** | [ExtraHop Reveal(x)](../solutions/extrahop-reveal%28x%29.md) |
 | **Collection Method** | MMA |
+| **Event Vendor** | ExtraHop |
 | **Connector Definition Files** | [template_ExtraHopNetworks.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29/Data%20Connectors/template_ExtraHopNetworks.json) |
 
 The ExtraHop Reveal(x) data connector enables you to easily connect your Reveal(x) system with Microsoft Sentinel to view dashboards, create custom alerts, and improve investigation. This integration gives you the ability to gain insight into your organization's network and improve your security operation capabilities.
@@ -14,9 +15,9 @@ The ExtraHop Reveal(x) data connector enables you to easily connect your Reveal(
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| Table | Event Vendor | Event Product | Transformations | Ingestion API |
+|-------|:-------------|:--------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ExtraHop | — | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

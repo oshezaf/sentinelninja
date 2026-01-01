@@ -1,5 +1,7 @@
 # parametersFile
 
+Author: Jing Nghik
+
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Playbook |

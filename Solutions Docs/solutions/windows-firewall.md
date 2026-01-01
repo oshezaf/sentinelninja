@@ -13,21 +13,18 @@
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)**:
 
 - [Windows Firewall](../connectors/windowsfirewall.md)
-- [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md)
 
 ## Tables Reference
 
-This solution uses **5 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) | - |
 | [`Heartbeat`](../tables/heartbeat.md) | - | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | - | Workbooks |
-| [`SigninLogs`](../tables/signinlogs.md) | - | Workbooks |
 | [`WindowsFirewall`](../tables/windowsfirewall.md) | [Windows Firewall](../connectors/windowsfirewall.md) | Workbooks |
 
 ## Content Items
@@ -42,7 +39,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WindowsFirewall](../content/windowsfirewall-windows-firewall.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md) |
+| [WindowsFirewall](../content/windowsfirewall-windows-firewall.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md) |
 
 ## Release Notes
 

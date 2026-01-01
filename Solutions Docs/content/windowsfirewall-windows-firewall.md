@@ -12,7 +12,6 @@ This content item queries data from the following tables:
 
 - [`Heartbeat`](../tables/heartbeat.md)
 - [`SecurityEvent`](../tables/securityevent.md)
-- [`SigninLogs`](../tables/signinlogs.md)
 - [`WindowsFirewall`](../tables/windowsfirewall.md)
 
 ---

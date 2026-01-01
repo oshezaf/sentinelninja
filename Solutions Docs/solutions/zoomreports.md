@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Zoom_CL`](../tables/zoom-cl.md) | [Zoom Reports](../connectors/zoom.md) | Workbooks |
+| [`Zoom_CL`](../tables/zoom-cl.md) | [Zoom Reports](../connectors/zoom.md) | - |
 
 ## Content Items
 
@@ -38,7 +38,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZoomReports](../content/zoomreports-zoomreports.md) | [`Zoom_CL`](../tables/zoom-cl.md) |
+| [ZoomReports](../content/zoomreports-zoomreports.md) | - |
 
 ### Parsers
 

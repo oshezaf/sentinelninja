@@ -6,6 +6,8 @@
 | **Publisher** | Infoblox |
 | **Used in Solutions** | [Infoblox](../solutions/infoblox.md), [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) |
 | **Collection Method** | AMA |
+| **Event Vendor** | Infoblox |
+| **Event Product** | Data Connector |
 | **Connector Definition Files** | [template_InfobloxCloudDataConnectorAma.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Data%20Connectors/InfobloxCEFDataConnector/template_InfobloxCloudDataConnectorAma.JSON) |
 
 The Infoblox Cloud Data Connector allows you to easily connect your Infoblox data with Microsoft Sentinel. By connecting your logs to Microsoft Sentinel, you can take advantage of search & correlation, alerting, and threat intelligence enrichment for each log.
@@ -14,9 +16,9 @@ The Infoblox Cloud Data Connector allows you to easily connect your Infoblox dat
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| Table | Event Vendor | Event Product | Transformations | Ingestion API |
+|-------|:-------------|:--------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Infoblox | Data Connector | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

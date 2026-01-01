@@ -75,8 +75,8 @@ This solution includes **29 content item(s)**:
 | [Post Message Slack](../content/post-message-slack-sentinelsoaressentials.md) | This playbook will post a message in a Slack channel when an Incident is created in Microsoft Sentin... | - |
 | [Post Message Teams](../content/post-message-teams-sentinelsoaressentials.md) | This playbook will post a message in a Microsoft Teams channel when an Alert is created in Microsoft... | - |
 | [Post Message Teams](../content/post-message-teams-sentinelsoaressentials.md) | This playbook will post a message in a Microsoft Teams channel when an Incident is created in Micros... | - |
-| [Post-Message-Slack](../content/post-message-slack-sentinelsoaressentials.md) | - | - |
-| [Post-Message-Teams](../content/post-message-teams-sentinelsoaressentials.md) | - | - |
+| [Post-Message-Slack](../content/post-message-slack-sentinelsoaressentials.md) | Author: Yaniv Shasha | - |
+| [Post-Message-Teams](../content/post-message-teams-sentinelsoaressentials.md) | Author: Yaniv Shasha | - |
 | [Relate alerts to incident by IP](../content/relate-alerts-to-incident-by-ip-sentinelsoaressentials.md) | This playbook looks for other alerts with the same IP as the triggered incident. When such an alert ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
 | [Send Teams Adaptive Card on incident creation](../content/send-teams-adaptive-card-on-incident-creation-sentinelsoaressentials.md) | This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to chang... | - |
 | [Send basic email](../content/send-basic-email-sentinelsoaressentials.md) | This playbook will be sending email with basic incidents details (Incident title, severity, tactics,... | - |

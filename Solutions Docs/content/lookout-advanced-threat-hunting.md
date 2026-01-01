@@ -12,12 +12,6 @@ Identifies devices experiencing multiple threat types within a short timeframe, 
 | **Required Connectors** | [LookoutAPI](../connectors/lookoutapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Hunting%20Queries/LookoutAdvancedThreatHunting.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md)
-
 ---
 
 **Browse:**

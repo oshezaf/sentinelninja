@@ -10,9 +10,7 @@
 
 This content item queries data from the following tables:
 
-- [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
 - [`AWSCloudTrail`](../tables/awscloudtrail.md)
-- [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)
@@ -20,8 +18,6 @@ This content item queries data from the following tables:
 - [`ConfigurationChange`](../tables/configurationchange.md)
 - [`Crosswalk`](../tables/crosswalk.md)
 - [`GCP_IAM_CL`](../tables/gcp-iam-cl.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`InformationProtectionEvents`](../tables/informationprotectionevents.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)
 - [`SecureScores`](../tables/securescores.md)
@@ -31,7 +27,6 @@ This content item queries data from the following tables:
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`SecurityRecommendation`](../tables/securityrecommendation.md)
 - [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
-- [`SigninLogs`](../tables/signinlogs.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 - [`Usage`](../tables/usage.md)
 - [`securityresources`](../tables/securityresources.md)

@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [OneIdentity](../solutions/oneidentity.md) |
+| **Event Vendor** | OneIdentity |
+| **Event Product** | SPS |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneIdentity/Workbooks/OneIdentity.json) |
 
 ## Tables Used

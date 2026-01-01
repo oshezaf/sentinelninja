@@ -20,15 +20,10 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **10 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
-| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 | [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | - |
 | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics, Workbooks |
 | [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics |

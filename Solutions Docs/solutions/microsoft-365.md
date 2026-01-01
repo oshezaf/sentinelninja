@@ -19,19 +19,16 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **9 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`OfficeActivity`](../tables/officeactivity.md) | [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) | Analytics, Hunting, Workbooks |
-| [`OperationsData`](../tables/operationsdata.md) | - | Workbooks |
-| [`SigninLogs`](../tables/signinlogs.md) | - | Hunting |
 | [`TeamsAddDel`](../tables/teamsadddel.md) | - | Analytics |
 | [`exchange`](../tables/exchange.md) | [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) | - |
 | [`recentActivity`](../tables/recentactivity.md) | - | Hunting |
 | [`recentUA`](../tables/recentua.md) | - | Hunting |
 | [`sharePoint`](../tables/sharepoint.md) | [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) | - |
-| [`teams`](../tables/teams.md) | [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) | - |
 
 ## Content Items
 
@@ -89,8 +86,8 @@ This solution includes **40 content item(s)**:
 | [PowerShell or non-browser mailbox login activity](../content/49a4f65a-fe18-408e-afec-042fde93d3ce.md) | Execution, Persistence, Collection | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Previously unseen bot or application added to Teams](../content/bf76e508-9282-4cf1-9cc1-5c20c3dea2ee.md) | Persistence, Collection | [`OfficeActivity`](../tables/officeactivity.md) |
 | [SharePointFileOperation via clientIP with previously unseen user agents](../content/e8ae1375-4640-430c-ae8e-2514d09c71eb.md) | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md)<br>[`recentUA`](../tables/recentua.md) |
-| [SharePointFileOperation via devices with previously unseen user agents](../content/f2367171-1514-4c67-88ef-27434b6a1093.md) | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
-| [SharePointFileOperation via previously unseen IPs](../content/e3d24cfd-b2a1-4ba7-8f80-0360892f9d57.md) | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [SharePointFileOperation via devices with previously unseen user agents](../content/f2367171-1514-4c67-88ef-27434b6a1093.md) | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md) |
+| [SharePointFileOperation via previously unseen IPs](../content/e3d24cfd-b2a1-4ba7-8f80-0360892f9d57.md) | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md) |
 | [User added to Teams and immediately uploads file](../content/3d6d0c04-7337-40cf-ace6-c471d442356d.md) | InitialAccess | [`OfficeActivity`](../tables/officeactivity.md) |
 | [User made Owner of multiple teams](../content/558f15dd-3171-4b11-bf24-31c0610a20e0.md) | PrivilegeEscalation | - |
 | [Windows Reserved Filenames staged on Office file services](../content/61c28cd7-3139-4731-8ea7-2cbbeabb4684.md) | CommandAndControl | [`OfficeActivity`](../tables/officeactivity.md) |
@@ -99,7 +96,7 @@ This solution includes **40 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ExchangeOnline](../content/exchangeonline-microsoft-365.md) | [`OfficeActivity`](../tables/officeactivity.md)<br>[`OperationsData`](../tables/operationsdata.md) |
+| [ExchangeOnline](../content/exchangeonline-microsoft-365.md) | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Office365](../content/office365-microsoft-365.md) | [`OfficeActivity`](../tables/officeactivity.md) |
 | [SharePointAndOneDrive](../content/sharepointandonedrive-microsoft-365.md) | [`OfficeActivity`](../tables/officeactivity.md) |
 

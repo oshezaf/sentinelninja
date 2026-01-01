@@ -29,13 +29,13 @@ This solution uses **2 table(s)**:
 
 ## Content Items
 
-This solution includes **13 content item(s)**:
+This solution includes **12 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Hunting Queries | 4 |
-| Playbooks | 4 |
 | Analytic Rules | 3 |
+| Playbooks | 3 |
 | Workbooks | 1 |
 | Parsers | 1 |
 
@@ -69,7 +69,6 @@ This solution includes **13 content item(s)**:
 | [Add Asset to Protection - Zero Networks Segment](../content/add-asset-to-protection---zero-networks-segment-zeronetworks.md) | This playbook takes a host from a Microsoft Sentinel incident and adds it to protection. The playboo... | - |
 | [Add Block Outbound Rule - Zero Networks Acccess Orchestrator](../content/add-block-outbound-rule---zero-networks-acccess-orchestrator-zeronetworks.md) | This playbook allows blocking an IP outbound from protected assets in Zero Networks Segment. | - |
 | [Enrich Incident - Zero Networks Acccess Orchestrator](../content/enrich-incident---zero-networks-acccess-orchestrator-zeronetworks.md) | This playbook will take each Host entity and get its Asset status from Zero Network Segment. The pla... | - |
-| [ZeroNetworks-swagger](../content/zeronetworks-swagger-zeronetworks.md) | - | - |
 
 ### Parsers
 

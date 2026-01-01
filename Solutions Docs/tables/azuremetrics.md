@@ -10,20 +10,6 @@ Reference for AzureMetrics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuremetrics) |
 
-## Solutions (2)
-
-This table is used by the following solutions:
-
-- [Azure Storage](../solutions/azure-storage.md)
-- [SlashNext](../solutions/slashnext.md)
-
-## Connectors (2)
-
-This table is ingested by the following connectors:
-
-- [Azure Storage Account](../connectors/azurestorageaccount.md)
-- [SlashNext Function App](../connectors/slashnextfunctionapp.md)
-
 ---
 
 ## Resource Types

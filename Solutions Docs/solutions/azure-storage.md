@@ -13,21 +13,9 @@
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+**This solution does not include data connectors.**
 
-- [Azure Storage Account](../connectors/azurestorageaccount.md)
-
-## Tables Reference
-
-This solution uses **5 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`AzureMetrics`](../tables/azuremetrics.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) | - |
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) | - |
-| [`StorageFileLogs`](../tables/storagefilelogs.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) | - |
-| [`StorageQueueLogs`](../tables/storagequeuelogs.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) | - |
-| [`StorageTableLogs`](../tables/storagetablelogs.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) | - |
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
 ---
 

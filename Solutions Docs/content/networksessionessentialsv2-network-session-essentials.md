@@ -10,7 +10,6 @@
 
 This content item queries data from the following tables:
 
-- [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)
 - [`AWSVPCFlow`](../tables/awsvpcflow.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
@@ -19,9 +18,7 @@ This content item queries data from the following tables:
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`Corelight_CL`](../tables/corelight-cl.md)
 - [`DefenderIoTRawEvent`](../tables/defenderiotrawevent.md)
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
 - [`Event`](../tables/event.md)
-- [`EventsData`](../tables/eventsdata.md)
 - [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)
 - [`NTANetAnalytics`](../tables/ntanetanalytics.md)
 - [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md)
@@ -34,7 +31,6 @@ This content item queries data from the following tables:
 - [`NetworkSummary_Source_Port_CL`](../tables/networksummary-source-port-cl.md)
 - [`NetworkSummary_Threat_CL`](../tables/networksummary-threat-cl.md)
 - [`NetworkSummary_Threat_IOC_CL`](../tables/networksummary-threat-ioc-cl.md)
-- [`RawNetworkEvents`](../tables/rawnetworkevents.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)
@@ -46,7 +42,6 @@ This content item queries data from the following tables:
 - [`WindowsEvent`](../tables/windowsevent.md)
 - [`barracuda_CL`](../tables/barracuda-cl.md)
 - [`meraki_CL`](../tables/meraki-cl.md)
-- [`parsedData`](../tables/parseddata.md)
 
 ---
 

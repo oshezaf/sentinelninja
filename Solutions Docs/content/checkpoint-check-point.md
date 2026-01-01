@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Check Point](../solutions/check-point.md) |
+| **Event Vendor** | Check Point |
+| **Event Product** | All, Anti Malware |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point/Workbooks/CheckPoint.json) |
 
 ## Tables Used

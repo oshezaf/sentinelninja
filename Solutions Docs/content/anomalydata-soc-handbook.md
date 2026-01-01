@@ -12,7 +12,6 @@ This content item queries data from the following tables:
 
 - [`Anomalies`](../tables/anomalies.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`uniqueIncidentIdList`](../tables/uniqueincidentidlist.md)
 
 ---
 

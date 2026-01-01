@@ -10,18 +10,6 @@ Reference for GCPNAT table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpnat) |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [GoogleCloudPlatformNAT](../solutions/googlecloudplatformnat.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-- [Google Cloud Platform NAT (via Codeless Connector Framework)](../connectors/gcpnatlogsccpdefinition.md)
-
 ---
 
 ---

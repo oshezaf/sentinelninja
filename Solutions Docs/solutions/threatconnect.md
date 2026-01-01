@@ -20,11 +20,10 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **30 table(s)** from its content items:
+This solution queries **24 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | Analytics |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | Analytics |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Analytics |
 | [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | Analytics |
@@ -33,14 +32,10 @@ This solution queries **30 table(s)** from its content items:
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Analytics |
 | [`Corelight_CL`](../tables/corelight-cl.md) | Analytics |
 | [`DefenderIoTRawEvent`](../tables/defenderiotrawevent.md) | Analytics |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Analytics |
-| [`DnsEvents`](../tables/dnsevents.md) | Analytics |
 | [`Event`](../tables/event.md) | Analytics |
-| [`EventsData`](../tables/eventsdata.md) | Analytics |
 | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | Analytics |
 | [`NTANetAnalytics`](../tables/ntanetanalytics.md) | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | Analytics |
-| [`RawNetworkEvents`](../tables/rawnetworkevents.md) | Analytics |
 | [`SecurityEvent`](../tables/securityevent.md) | Analytics |
 | [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | Analytics |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Analytics |
@@ -53,7 +48,6 @@ This solution queries **30 table(s)** from its content items:
 | [`aadFunc`](../tables/aadfunc.md) | Analytics |
 | [`barracuda_CL`](../tables/barracuda-cl.md) | Analytics |
 | [`meraki_CL`](../tables/meraki-cl.md) | Analytics |
-| [`parsedData`](../tables/parseddata.md) | Analytics |
 
 ## Content Items
 
@@ -68,11 +62,11 @@ This solution includes **6 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Threat Connect TI map Domain entity to DnsEvents](../content/f8960f1c-07d2-512b-9c41-952772d40c84.md) | Medium | CommandAndControl | [`DnsEvents`](../tables/dnsevents.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [Threat Connect TI map Domain entity to DnsEvents](../content/f8960f1c-07d2-512b-9c41-952772d40c84.md) | Medium | CommandAndControl | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 | [ThreatConnect TI Map URL Entity to OfficeActivity Data](../content/12c3b31b-66a6-53ff-b6ab-6ae45e56dc92.md) | Medium | CommandAndControl | [`OfficeActivity`](../tables/officeactivity.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 | [ThreatConnect TI map Email entity to OfficeActivity](../content/4f7ade3e-7121-5274-83ea-d7ed22a01fea.md) | Medium | CommandAndControl | [`OfficeActivity`](../tables/officeactivity.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 | [ThreatConnect TI map Email entity to SigninLogs](../content/ecb68ce7-c309-59a7-a8de-07ccf2a0ea4f.md) | Medium | CommandAndControl | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`aadFunc`](../tables/aadfunc.md) |
-| [ThreatConnect TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/ee1fd303-2081-47b7-8f02-e38bfd0868e6.md) | Medium | CommandAndControl | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DefenderIoTRawEvent`](../tables/defenderiotrawevent.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Event`](../tables/event.md)<br>[`EventsData`](../tables/eventsdata.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`RawNetworkEvents`](../tables/rawnetworkevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>[`parsedData`](../tables/parseddata.md) |
+| [ThreatConnect TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/ee1fd303-2081-47b7-8f02-e38bfd0868e6.md) | Medium | CommandAndControl | [`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DefenderIoTRawEvent`](../tables/defenderiotrawevent.md)<br>[`Event`](../tables/event.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md) |
 
 ### Workbooks
 

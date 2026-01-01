@@ -10,15 +10,10 @@
 
 This content item queries data from the following tables:
 
-- [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
-- [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
 - [`Correlate`](../tables/correlate.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
 - [`InitialDataSet`](../tables/initialdataset.md)
-- [`LAQueryLogs`](../tables/laquerylogs.md)
-- [`LogOns`](../tables/logons.md)
 - [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)
 - [`NewUserAddsUser`](../tables/newuseraddsuser.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
@@ -27,12 +22,9 @@ This content item queries data from the following tables:
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`SigninLogs`](../tables/signinlogs.md)
 - [`Uncommon`](../tables/uncommon.md)
 - [`UserAddWithResource`](../tables/useraddwithresource.md)
-- [`Watchlist`](../tables/watchlist.md)
 - [`aadFunc`](../tables/aadfunc.md)
-- [`auditLogEvents`](../tables/auditlogevents.md)
 - [`domainLookback`](../tables/domainlookback.md)
 - [`managedservicesresources`](../tables/managedservicesresources.md)
 - [`recentActivity`](../tables/recentactivity.md)

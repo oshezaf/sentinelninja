@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | [Egress Defend](../connectors/egressdefendpolling.md) | Analytics, Hunting, Workbooks |
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | [Egress Defend](../connectors/egressdefendpolling.md) | Hunting |
 
 ## Content Items
 
@@ -40,8 +40,8 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Egress Defend - Dangerous Attachment Detected](../content/a0e55dd4-8454-4396-91e6-f28fec3d2cab.md) | Medium | Execution, InitialAccess, Persistence, PrivilegeEscalation | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
-| [Egress Defend - Dangerous Link Click](../content/a896123e-03a5-4a4d-a7e3-fd814846dfb2.md) | Medium | Execution | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
+| [Egress Defend - Dangerous Attachment Detected](../content/a0e55dd4-8454-4396-91e6-f28fec3d2cab.md) | Medium | Execution, InitialAccess, Persistence, PrivilegeEscalation | - |
+| [Egress Defend - Dangerous Link Click](../content/a896123e-03a5-4a4d-a7e3-fd814846dfb2.md) | Medium | Execution | - |
 
 ### Hunting Queries
 
@@ -53,7 +53,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DefendMetrics](../content/defendmetrics-egress-defend.md) | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
+| [DefendMetrics](../content/defendmetrics-egress-defend.md) | - |
 
 ### Parsers
 

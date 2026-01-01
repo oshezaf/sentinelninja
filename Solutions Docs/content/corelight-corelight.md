@@ -30,17 +30,6 @@ This content item queries data from the following tables:
 - [`Corelight_v2_vpn_CL`](../tables/corelight-v2-vpn-cl.md)
 - [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md)
 - [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md)
-- [`FilteredDNS`](../tables/filtereddns.md)
-- [`FilteredRDP`](../tables/filteredrdp.md)
-- [`FilteredVPN`](../tables/filteredvpn.md)
-- [`NxdomainResponses`](../tables/nxdomainresponses.md)
-- [`QueryResult`](../tables/queryresult.md)
-- [`QueryResults`](../tables/queryresults.md)
-- [`SSL`](../tables/ssl.md)
-- [`UnencryptedConnection`](../tables/unencryptedconnection.md)
-- [`UnusualQtypes`](../tables/unusualqtypes.md)
-- [`VPNCount`](../tables/vpncount.md)
-- [`X509`](../tables/x509.md)
 
 ---
 

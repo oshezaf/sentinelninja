@@ -14,15 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
-
-### Workbooks (3)
-
-**In solution [Bitwarden](../solutions/bitwarden.md):**
-- [BitwardenEventLogsAuthentication](../content/bitwardeneventlogsauthentication-bitwarden.md)
-- [BitwardenEventLogsOrganization](../content/bitwardeneventlogsorganization-bitwarden.md)
-- [BitwardenEventLogsVaultItems](../content/bitwardeneventlogsvaultitems-bitwarden.md)
-
 ---
 
 **Browse:**

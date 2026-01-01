@@ -10,20 +10,7 @@ Reference for AGWAccessLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agwaccesslogs) |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-%28waf%29.md)
-
 ---
-
-## Content Items Using This Table (1)
-
-### Analytic Rules (1)
-
-**In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-%28waf%29.md):**
-- [A potentially malicious web request was executed against a web server](../content/46ac55ae-47b8-414a-8f94-89ccd1962178.md)
 
 ## Resource Types
 

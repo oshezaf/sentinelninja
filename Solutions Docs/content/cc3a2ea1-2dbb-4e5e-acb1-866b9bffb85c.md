@@ -9,6 +9,7 @@ Detected and blocked ransomware.
 | **ID** | `cc3a2ea1-2dbb-4e5e-acb1-866b9bffb85c` |
 | **Tactics** | Impact |
 | **Techniques** | T1486 |
+| **Event Vendor** | Acronis |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Hunting%20Queries/AcronisEndpointsInfectedByRansomware.yaml) |
 
 ## Tables Used

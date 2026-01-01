@@ -1,6 +1,6 @@
 # Parsers
 
-**508 parsers** across all Microsoft Sentinel solutions.
+**513 parsers** across all Microsoft Sentinel solutions.
 
 **Browse by:**
 
@@ -86,7 +86,12 @@
 | [ArmisAlerts](7783dff3-1e0a-4622-bdd7-74ee371e4dba.md) | [Armis](../solutions/armis.md) |
 | [ArmisDevice](826eac66-f927-4351-ab5d-483457060ae0.md) | [Armis](../solutions/armis.md) |
 | [ArubaClearPass](7dabe04d-66c5-4d47-8e3c-7580e807be88.md) | [Aruba ClearPass](../solutions/aruba-clearpass.md) |
+| [ASimAuthenticationHalcyon](a1b2c3d4-e5f6-7890-1234-567890abcde1.md) | [Halcyon](../solutions/halcyon.md) |
+| [ASimDnsHalcyon](a1b2c3d4-e5f6-7890-1234-567890abcde2.md) | [Halcyon](../solutions/halcyon.md) |
 | [ASimDnsMicrosoftNXLog](274a2fc6-eda0-430d-9e02-7a7c0850eb0e.md) | [NXLogDnsLogs](../solutions/nxlogdnslogs.md) |
+| [ASimFileEventHalcyon](a1b2c3d4-e5f6-7890-1234-567890abcde3.md) | [Halcyon](../solutions/halcyon.md) |
+| [ASimNetworkSessionHalcyon](a1b2c3d4-e5f6-7890-1234-567890abcde4.md) | [Halcyon](../solutions/halcyon.md) |
+| [ASimProcessEventHalcyon](a1b2c3d4-e5f6-7890-1234-567890abcde5.md) | [Halcyon](../solutions/halcyon.md) |
 | [AssignedIPAddress](a06da838-8c56-4eed-ac1a-097bdfab5e9b.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
 | [Auth0](4563059e-9b11-4978-86e7-0bb6e22e23bb.md) | [Auth0](../solutions/auth0.md) |
 | [Auth0AM](a6453489-5e6c-4976-bfc7-f9d234fde3ca.md) | [Auth0](../solutions/auth0.md) |

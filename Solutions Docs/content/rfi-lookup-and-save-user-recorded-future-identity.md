@@ -8,12 +8,6 @@ This playbook gets compromise identity details from Recorded Future Identity Int
 | **Solution** | [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Playbooks/v3.0/RFI-lookup-and-save-user/azuredeploy.json) |
 
-## Tables Used
-
-| Table | Usage |
-|:------|:------|
-| [`null)`](../tables/null%29.md) | write |
-
 ---
 
 **Browse:**

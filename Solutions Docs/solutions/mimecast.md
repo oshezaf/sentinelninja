@@ -31,8 +31,8 @@ This solution uses **11 table(s)**:
 | [`Audit_CL`](../tables/audit-cl.md) | [Mimecast Audit](../connectors/mimecastauditapi.md) | Analytics, Workbooks |
 | [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | - |
 | [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | Workbooks |
-| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | Workbooks |
-| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | Workbooks |
+| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | - |
+| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | - |
 | [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) | [Mimecast Cloud Integrated](../connectors/mimecastciapi.md) | Workbooks |
 | [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | [Mimecast Secure Email Gateway](../connectors/mimecastsegapi.md) | Analytics, Workbooks |
 | [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | [Mimecast Secure Email Gateway](../connectors/mimecastsegapi.md) | Analytics, Workbooks |
@@ -74,7 +74,7 @@ This solution includes **30 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [Mimecast_Audit_Workbook](../content/mimecast-audit-workbook-mimecast.md) | [`Audit_CL`](../tables/audit-cl.md) |
-| [Mimecast_Awareness_Training_Workbook](../content/mimecast-awareness-training-workbook-mimecast.md) | [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md)<br>[`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md)<br>[`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) |
+| [Mimecast_Awareness_Training_Workbook](../content/mimecast-awareness-training-workbook-mimecast.md) | [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) |
 | [Mimecast_Cloud_Integrated_Workbook](../content/mimecast-cloud-integrated-workbook-mimecast.md) | [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) |
 | [Mimecast_SEG_Workbook](../content/mimecast-seg-workbook-mimecast.md) | [`Seg_Cg_CL`](../tables/seg-cg-cl.md)<br>[`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) |
 | [Mimecast_TTP_Workbook](../content/mimecast-ttp-workbook-mimecast.md) | [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md)<br>[`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md)<br>[`Ttp_Url_CL`](../tables/ttp-url-cl.md) |

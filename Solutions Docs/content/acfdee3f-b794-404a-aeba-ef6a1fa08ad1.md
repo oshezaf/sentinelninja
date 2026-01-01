@@ -14,12 +14,6 @@
 | **Techniques** | T1578.002 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Analytic%20Rules/ADOAgentPoolCreatedDeleted.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md)
-
 ---
 
 **Browse:**

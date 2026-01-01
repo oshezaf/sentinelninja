@@ -11,11 +11,8 @@
 This content item queries data from the following tables:
 
 - [`AlldataUnique`](../tables/alldataunique.md)
-- [`AllnotinAfterData`](../tables/allnotinafterdata.md)
 - [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md)
 - [`ExchangeConfiguration`](../tables/exchangeconfiguration.md)
-- [`ExchangeEnvironmentList`](../tables/exchangeenvironmentlist.md)
-- [`Server`](../tables/server.md)
 
 ---
 

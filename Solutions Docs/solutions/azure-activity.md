@@ -19,13 +19,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureActivity`](../tables/azureactivity.md) | [Azure Activity](../connectors/azureactivity.md) | Analytics, Hunting, Workbooks |
 | [`RareCustomScriptExecution`](../tables/rarecustomscriptexecution.md) | - | Hunting |
-| [`RoleAssignedActivitywithRoleDetails`](../tables/roleassignedactivitywithroledetails.md) | - | Analytics |
 
 ## Content Items
 
@@ -53,7 +52,7 @@ This solution includes **31 content item(s)**:
 | [Rare subscription-level operations in Azure](../content/23de46ea-c425-4a77-b456-511ae4855d69.md) | Low | CredentialAccess, Persistence | [`AzureActivity`](../tables/azureactivity.md) |
 | [Subscription moved to another tenant](../content/48c026d8-7f36-4a95-9568-6f1420d66e37.md) | Low | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Suspicious Resource deployment](../content/9fb57e58-3ed8-4b89-afcf-c8e786508b1c.md) | Low | Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Suspicious granting of permissions to an account](../content/b2c15736-b9eb-4dae-8b02-3016b6a45a32.md) | Medium | Persistence, PrivilegeEscalation | [`AzureActivity`](../tables/azureactivity.md)<br>[`RoleAssignedActivitywithRoleDetails`](../tables/roleassignedactivitywithroledetails.md) |
+| [Suspicious granting of permissions to an account](../content/b2c15736-b9eb-4dae-8b02-3016b6a45a32.md) | Medium | Persistence, PrivilegeEscalation | [`AzureActivity`](../tables/azureactivity.md) |
 | [Suspicious number of resource creation or deployment activities](../content/361dd1e3-1c11-491e-82a3-bb2e44ac36ba.md) | Medium | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 
 ### Hunting Queries

@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [CiscoASA](../solutions/ciscoasa.md) |
+| **Event Vendor** | Cisco |
+| **Event Product** | ASA |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Workbooks/Cisco.json) |
 
 ## Tables Used

@@ -20,15 +20,11 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **9 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Combined`](../tables/combined.md) | - | Hunting |
 | [`Event`](../tables/event.md) | - | Analytics, Hunting |
-| [`LogonEvents`](../tables/logonevents.md) | - | Hunting |
-| [`ProcessCreationEvents`](../tables/processcreationevents.md) | - | Hunting |
-| [`SecEvents`](../tables/secevents.md) | - | Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | [Security Events via Legacy Agent](../connectors/securityevents.md), [Windows Security Events via AMA](../connectors/windowssecurityevents.md) | Analytics, Hunting, Workbooks |
 | [`encodedPSScripts`](../tables/encodedpsscripts.md) | - | Hunting |
 | [`normalizedProcessPath`](../tables/normalizedprocesspath.md) | - | Hunting |
@@ -76,11 +72,11 @@ This solution includes **72 content item(s)**:
 | [AD Account Lockout](../content/a308d780-1c39-4fa7-8c21-bb54f174b065.md) | Impact | [`SecurityEvent`](../tables/securityevent.md) |
 | [Commands executed by WMI on new hosts - potential Impacket](../content/9ce755c1-d2e6-4e2f-82d5-7871ec1aef91.md) | Execution, LateralMovement | - |
 | [Crash dump disabled on host](../content/5a3615af-21c9-427e-8bf1-ed2350992bb4.md) | DefenseEvasion | [`SecurityEvent`](../tables/securityevent.md) |
-| [Cscript script daily summary breakdown](../content/36abe031-962d-482e-8e1e-a556ed99d5a3.md) | Execution | [`ProcessCreationEvents`](../tables/processcreationevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [Cscript script daily summary breakdown](../content/36abe031-962d-482e-8e1e-a556ed99d5a3.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Decoy User Account Authentication Attempt](../content/a4dbc292-87eb-11ec-a8a3-0242ac120002.md) | LateralMovement | [`SecurityEvent`](../tables/securityevent.md) |
 | [Discord download invoked from cmd line](../content/e7dd442a-0af8-48eb-8358-9e91f4911849.md) | Execution, CommandAndControl, Exfiltration | [`SecurityEvent`](../tables/securityevent.md) |
 | [Domain controller installation media creation](../content/7e5f3a9a-542c-417a-a429-4ed500c5c4d8.md) | CredentialAccess | - |
-| [Entropy for Processes for a given Host](../content/05208917-82de-46f7-a190-a65739a690f4.md) | Execution | [`Combined`](../tables/combined.md)<br>[`SecEvents`](../tables/secevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [Entropy for Processes for a given Host](../content/05208917-82de-46f7-a190-a65739a690f4.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Enumeration of users and groups](../content/a1e993de-770a-4434-83e9-9e3b47a6e470.md) | Discovery | [`SecurityEvent`](../tables/securityevent.md) |
 | [Establishing internal proxies](../content/ce38c16c-a560-46c0-88d6-7757b88f08e9.md) | CommandandControl | - |
 | [Exchange PowerShell Snapin Added](../content/8afd1086-fc9a-4d26-b3ff-5c794c79a59a.md) | Collection | [`SecurityEvent`](../tables/securityevent.md) |
@@ -88,7 +84,7 @@ This solution includes **72 content item(s)**:
 | [Host Exporting Mailbox and Removing Export](../content/2e2fab4b-83dd-4cf8-b2dd-063d0fd15513.md) | Collection | [`SecurityEvent`](../tables/securityevent.md) |
 | [Hosts Running a Rare Process](../content/82e04ff9-a289-4005-9fcd-f1deec72e3fc.md) | Execution, Persistence, Discovery, LateralMovement, Collection | [`SecurityEvent`](../tables/securityevent.md) |
 | [Hosts Running a Rare Process with Commandline](../content/5550b630-7b8a-444e-a585-ec8c7533c028.md) | Execution, Persistence, Discovery, LateralMovement, Collection | [`SecurityEvent`](../tables/securityevent.md) |
-| [Hosts with new logons](../content/62e2df59-1535-4c8e-ac6c-c91faeed0179.md) | CredentialAccess, LateralMovement | [`LogonEvents`](../tables/logonevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [Hosts with new logons](../content/62e2df59-1535-4c8e-ac6c-c91faeed0179.md) | CredentialAccess, LateralMovement | [`SecurityEvent`](../tables/securityevent.md) |
 | [Invoke-PowerShellTcpOneLine Usage.](../content/a344e28e-095d-47fb-84a8-d06edd31d2cb.md) | Exfiltration | [`SecurityEvent`](../tables/securityevent.md) |
 | [KrbRelayUp Local Privilege Escalation Service Creation](../content/ccbc73a1-d303-4613-aed4-478e996f454e.md) | PrivilegeEscalation | [`Event`](../tables/event.md) |
 | [Least Common Parent And Child Process Pairs](../content/3712595d-6f47-416b-963a-605201ed2764.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
@@ -99,13 +95,13 @@ This solution includes **72 content item(s)**:
 | [Multiple Explicit Credential Usage - 4648 events](../content/9e3fab4b-94dd-4cf9-b2aa-063d0fd25513.md) | Discovery, LateralMovement | [`SecurityEvent`](../tables/securityevent.md) |
 | [New Child Process of W3WP.exe](../content/f885fb16-dfd3-4c90-83d9-7a66b9d9b654.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [New PowerShell scripts encoded on the commandline](../content/4e78daf1-8bba-4b5d-8a8b-c75fe9bbc2d9.md) | Execution, CommandAndControl | [`SecurityEvent`](../tables/securityevent.md)<br>[`encodedPSScripts`](../tables/encodedpsscripts.md) |
-| [New processes observed in last 24 hours](../content/513e3a11-e1bb-4cfc-8af9-451da0407e6b.md) | Execution | [`ProcessCreationEvents`](../tables/processcreationevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [New processes observed in last 24 hours](../content/513e3a11-e1bb-4cfc-8af9-451da0407e6b.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Nishang Reverse TCP Shell in Base64](../content/87c1f90a-f868-4528-a9c1-15520249cae6.md) | Exfiltration | [`SecurityEvent`](../tables/securityevent.md) |
 | [Potential Exploitation of MS-RPRN printer bug](../content/c29a03c6-d074-4934-afae-df1aeb30da70.md) | PrivilegeEscalation | [`SecurityEvent`](../tables/securityevent.md) |
 | [PowerShell downloads](../content/d83f40fc-bbcc-4020-8d45-ad2d82355cb2.md) | Execution, CommandAndControl | [`SecurityEvent`](../tables/securityevent.md) |
 | [Powercat Download](../content/c2112ca3-aae0-4079-9bff-d74c54bb5fe5.md) | Exfiltration | [`SecurityEvent`](../tables/securityevent.md) |
 | [Rare Process Path](../content/0ff22697-dc58-4623-b844-a767629840cd.md) | Execution | [`SecurityEvent`](../tables/securityevent.md)<br>[`normalizedProcessPath`](../tables/normalizedprocesspath.md) |
-| [Rare Processes Run by Service Accounts](../content/af02987c-949d-47d5-b0ae-64d8e1b674e2.md) | Execution | [`ProcessCreationEvents`](../tables/processcreationevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [Rare Processes Run by Service Accounts](../content/af02987c-949d-47d5-b0ae-64d8e1b674e2.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Remote Task Creation/Update using Schtasks Process](../content/1e4a5be3-4a60-4099-b286-2d3642575889.md) | Persistence | [`SecurityEvent`](../tables/securityevent.md) |
 | [Service installation from user writable directory](../content/5a9ccb48-1316-46e1-89d1-aca0355c305e.md) | Execution | [`Event`](../tables/event.md) |
 | [Summary of failed user logons by reason of failure](../content/e7642e6e-cf27-46ec-a4b9-e4475228fead.md) | CredentialAccess, LateralMovement | [`SecurityEvent`](../tables/securityevent.md) |
@@ -115,7 +111,7 @@ This solution includes **72 content item(s)**:
 | [Suspicious Enumeration using Adfind Tool](../content/dd6fb889-43ef-44e1-a01d-093ab4bb12b2.md) | Execution, Discovery, Collection | [`SecurityEvent`](../tables/securityevent.md) |
 | [Suspicious Windows Login Outside Normal Hours](../content/e7bfbc3f-98c7-4aaa-a64c-de9c058b86b2.md) | InitialAccess, LateralMovement | [`SecurityEvent`](../tables/securityevent.md) |
 | [Suspicious command line tokens in LolBins or LolScripts](../content/6cdef739-18f6-4b3a-8fdc-93e9a4302dbf.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
-| [Uncommon processes - bottom 5%](../content/2ff4b10c-7056-4898-83fd-774104189fd5.md) | Execution | [`ProcessCreationEvents`](../tables/processcreationevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [Uncommon processes - bottom 5%](../content/2ff4b10c-7056-4898-83fd-774104189fd5.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [User Account added to Built in Sensitive or Privileged Domain Local or Global Group](../content/8d69a665-074a-443b-aae6-5dd9bdd5cfb1.md) | Persistence, PrivilegeEscalation | [`SecurityEvent`](../tables/securityevent.md) |
 | [User account added or removed from a security group by an unauthorized user](../content/d57f675c-ad6c-44d0-95fb-3bf707e70155.md) | Persistence, PrivilegeEscalation | [`SecurityEvent`](../tables/securityevent.md) |
 | [User created by unauthorized user](../content/42ae9690-89ce-4063-9a90-465badad5395.md) | Persistence, PrivilegeEscalation | [`SecurityEvent`](../tables/securityevent.md) |

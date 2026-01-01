@@ -20,21 +20,17 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **5 content item(s)**:
+This solution includes **1 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 5 |
+| Playbooks | 1 |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [EnrichIP-GeoInfo-Neustar](../content/enrichip-geoinfo-neustar-neustar-ip-geopoint.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [NeustarIPGeoPoint_FunctionAppConnector](../content/neustaripgeopoint-functionappconnector-neustar-ip-geopoint.md) | - | - |
-| [function](../content/function-neustar-ip-geopoint.md) | - | - |
-| [host](../content/host-neustar-ip-geopoint.md) | - | - |
-| [proxies](../content/proxies-neustar-ip-geopoint.md) | - | - |
 
 ---
 

@@ -28,7 +28,7 @@ This solution uses **4 table(s)**:
 |-------|-------------------|----------------|
 | [`OktaNativePoller_CL`](../tables/oktanativepoller-cl.md) | [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) | - |
 | [`OktaV2_CL`](../tables/oktav2-cl.md) | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon(usingazurefunctions).md) | Analytics, Hunting, Workbooks |
-| [`Okta_CL`](../tables/okta-cl.md) | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon(usingazurefunctions).md) | Analytics, Hunting, Workbooks |
+| [`Okta_CL`](../tables/okta-cl.md) | [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon(usingazurefunctions).md) | Analytics, Hunting, Workbooks |
 | [`signIns`](../tables/signins.md) | [Okta Single Sign-On (Preview)](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon(usingazurefunctions).md) | Hunting |
 
 ## Content Items

@@ -10,18 +10,6 @@ Reference for AWSWAF table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awswaf) |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Amazon Web Services](../solutions/amazon-web-services.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-- [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md)
-
 ---
 
 ---

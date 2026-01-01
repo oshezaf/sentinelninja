@@ -23,10 +23,6 @@ This content item queries data from the following tables:
 - [`Corelight_v2_software_CL`](../tables/corelight-v2-software-cl.md)
 - [`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md)
 - [`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md)
-- [`QueryResults`](../tables/queryresults.md)
-- [`TopSubjects`](../tables/topsubjects.md)
-- [`TotalRecords`](../tables/totalrecords.md)
-- [`filter_record`](../tables/filter-record.md)
 
 ---
 

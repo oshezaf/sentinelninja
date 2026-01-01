@@ -19,7 +19,6 @@ This connector ingests data into the following tables:
 | [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
 | [`exchange`](../tables/exchange.md) | — | — |
 | [`sharePoint`](../tables/sharepoint.md) | — | — |
-| [`teams`](../tables/teams.md) | — | — |
 
 ## Permissions
 

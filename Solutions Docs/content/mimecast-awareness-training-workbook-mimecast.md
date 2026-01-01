@@ -11,8 +11,6 @@
 This content item queries data from the following tables:
 
 - [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md)
-- [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md)
-- [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md)
 
 ---
 

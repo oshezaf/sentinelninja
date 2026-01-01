@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
+| **Event Vendor** | Vectra Networks |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Detect/Workbooks/AIVectraDetectWorkbook.json) |
 
 ## Tables Used

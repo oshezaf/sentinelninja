@@ -16,7 +16,6 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
-| [`DefendAuditData`](../tables/defendauditdata.md) | — | — |
 | [`EgressEvents_CL`](../tables/egressevents-cl.md) | — | — |
 
 ## Permissions

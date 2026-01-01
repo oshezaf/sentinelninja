@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [ExtraHop Reveal(x)](../solutions/extrahop-reveal%28x%29.md) |
+| **Event Vendor** | ExtraHop |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29/Workbooks/ExtraHopDetectionSummary.json) |
 
 ## Tables Used

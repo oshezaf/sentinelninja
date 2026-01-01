@@ -6,6 +6,8 @@
 | **Publisher** | Votiro |
 | **Used in Solutions** | [Votiro](../solutions/votiro.md) |
 | **Collection Method** | AMA |
+| **Event Vendor** | Votiro |
+| **Event Product** | Votiro cloud |
 | **Connector Definition Files** | [VotiroEvents.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro/Data%20Connectors/VotiroEvents.json) |
 
 The Votiro data connector allows you to easily connect your Votiro Event logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation.  Using Votiro on Microsoft Sentinel will provide you more insights into the sanitization results of files.
@@ -14,9 +16,9 @@ The Votiro data connector allows you to easily connect your Votiro Event logs wi
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| Table | Event Vendor | Event Product | Transformations | Ingestion API |
+|-------|:-------------|:--------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Votiro | Votiro cloud | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

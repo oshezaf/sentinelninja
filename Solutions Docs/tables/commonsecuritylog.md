@@ -201,6 +201,68 @@ This table is ingested by the following connectors:
 - [[Deprecated] vArmour Application Controller via Legacy Agent](../connectors/varmourac.md)
 - [[Deprecated] vArmour Application Controller via AMA](../connectors/varmouracama.md)
 
+## Vendors and Products (55)
+
+The following DeviceVendor/DeviceProduct values are used by connectors ingesting this table:
+
+| Vendor | Product | Connectors |
+|:-------|:--------|:-----------|
+| * | iSID | [Radiflow iSID via AMA](../connectors/radiflowisid.md) |
+| Akamai | akamai_siem | [[Deprecated] Akamai Security Events via Legacy Agent](../connectors/akamaisecurityevents.md), [[Deprecated] Akamai Security Events via AMA](../connectors/akamaisecurityeventsama.md) |
+| Arista Networks | Awake Security | [[Deprecated] Awake Security via Legacy Agent](../connectors/aristaawakesecurity.md) |
+| Aruba Networks | ClearPass | [[Deprecated] Aruba ClearPass via Legacy Agent](../connectors/arubaclearpass.md), [[Deprecated] Aruba ClearPass via AMA](../connectors/arubaclearpassama.md) |
+| Barracuda | * | [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](../connectors/barracuda.md) |
+| Cisco | * | [Cisco ASA/FTD via AMA](../connectors/ciscoasaama.md) |
+| Cisco | ASA | [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) |
+| Cisco | ESA_CONSOLIDATED_LOG_EVENT | [[Deprecated] Cisco Secure Email Gateway via AMA](../connectors/ciscosegama.md) |
+| Cisco | Firepower | [[Deprecated] Cisco Firepower eStreamer via Legacy Agent](../connectors/ciscofirepowerestreamer.md), [[Deprecated] Cisco Firepower eStreamer via AMA](../connectors/ciscofirepowerestreamerama.md) |
+| Citrix | NetScaler | [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](../connectors/citrixwaf.md), [[Deprecated] Citrix WAF (Web App Firewall) via AMA](../connectors/citrixwafama.md) |
+| Claroty | * | [[Deprecated] Claroty via AMA](../connectors/clarotyama.md) |
+| Contrast Security | * | [[Deprecated] Contrast Protect via Legacy Agent](../connectors/contrastprotect.md), [[Deprecated] Contrast Protect via AMA](../connectors/contrastprotectama.md) |
+| CrowdStrike | FalconHost | [[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent](../connectors/crowdstrikefalconendpointprotection.md), [[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA](../connectors/crowdstrikefalconendpointprotectionama.md) |
+| Cyber-Ark | Vault | [[Deprecated] CyberArk Enterprise Password Vault (EPV) Events via Legacy Agent](../connectors/cyberark.md), [[Deprecated] CyberArk Privilege Access Manager (PAM) Events via AMA](../connectors/cyberarkama.md) |
+| Darktrace | * | [[Deprecated] AI Analyst Darktrace via Legacy Agent](../connectors/darktrace.md), [[Deprecated] AI Analyst Darktrace via AMA](../connectors/darktraceama.md) |
+| Delinea Software | Secret Server | [[Deprecated] Delinea Secret Server via AMA](../connectors/delineasecretserverama.md), [[Deprecated] Delinea Secret Server via Legacy Agent](../connectors/delineasecretserver-cef.md) |
+| ExtraHop | * | [[Deprecated] ExtraHop Reveal(x) via Legacy Agent](../connectors/extrahopnetworks.md), [[Deprecated] ExtraHop Reveal(x) via AMA](../connectors/extrahopnetworksama.md) |
+| F5 | * | [[Deprecated] F5 Networks via Legacy Agent](../connectors/f5.md), [[Deprecated] F5 Networks via AMA](../connectors/f5ama.md) |
+| FireEye | * | [[Deprecated] FireEye Network Security (NX) via AMA](../connectors/fireeyenxama.md) |
+| Forcepoint | NGFW | [[Deprecated] Forcepoint NGFW via Legacy Agent](../connectors/forcepointngfw.md), [[Deprecated] Forcepoint NGFW via AMA](../connectors/forcepointngfwama.md) |
+| Forcepoint CASB | * | [[Deprecated] Forcepoint CASB via Legacy Agent](../connectors/forcepointcasb.md), [[Deprecated] Forcepoint CASB via AMA](../connectors/forcepointcasbama.md) |
+| Forcepoint CSG | Email | [[Deprecated] Forcepoint CSG via Legacy Agent](../connectors/forcepointcsg.md), [[Deprecated] Forcepoint CSG via AMA](../connectors/forcepointcsgama.md) |
+| Forcepoint CSG | Web | [[Deprecated] Forcepoint CSG via Legacy Agent](../connectors/forcepointcsg.md), [[Deprecated] Forcepoint CSG via AMA](../connectors/forcepointcsgama.md) |
+| ForgeRock Inc | * | [[Deprecated] ForgeRock Identity Platform](../connectors/forgerock.md) |
+| Fortinet | * | [[Deprecated] Fortinet via Legacy Agent](../connectors/fortinet.md) |
+| Fortinet | Fortigate | [[Deprecated] Fortinet via AMA](../connectors/fortinetama.md) |
+| Fortinet | Fortiweb | [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](../connectors/fortinetfortiweb.md) |
+| Illumio | * | [[Deprecated] Illumio Core via AMA](../connectors/illumiocoreama.md) |
+| Imperva | WAF Gateway | [Imperva WAF Gateway](../connectors/impervawafgateway.md) |
+| Imperva Inc. | WAF Gateway | [Imperva WAF Gateway](../connectors/impervawafgateway.md) |
+| Infoblox | Data Connector | [[Deprecated] Infoblox Cloud Data Connector via Legacy Agent](../connectors/infobloxclouddataconnector.md), [[Deprecated] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md), [[Recommended] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md), [[Deprecated] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md), [[Recommended] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md), [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md) |
+| IronNet | IronDefense | [IronNet IronDefense](../connectors/ironnetirondefense.md) |
+| IronNet | IronDome | [IronNet IronDefense](../connectors/ironnetirondefense.md) |
+| Netwrix | * | [[Deprecated] Netwrix Auditor via AMA](../connectors/netwrixama.md) |
+| OSSEC | * | [[Deprecated] OSSEC via AMA](../connectors/ossecama.md) |
+| Onapsis | OSP | [[Deprecated] Onapsis Platform](../connectors/onapsisplatform.md) |
+| OneIdentity | SPS | [One Identity Safeguard](../connectors/oneidentity.md) |
+| Palo Alto Networks | * | [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md) |
+| Palo Alto Networks | Cortex XDR | [Palo Alto Networks Cortex XDR](../connectors/paloaltonetworkscortex.md) |
+| Palo Alto Networks | LF | [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via AMA](../connectors/paloaltocdlama.md) |
+| Palo Alto Networks | PAN-OS | [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md) |
+| RidgeSecurity | * | [[Deprecated] RIDGEBOT - data connector for Microsoft Sentinel](../connectors/ridgebotdataconnector.md) |
+| Silverfort | Admin Console | [Silverfort Admin Console](../connectors/silverfortama.md) |
+| SonicWall | * | [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md), [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md) |
+| Symantec | DLP | [[Deprecated] Broadcom Symantec DLP via Legacy Agent](../connectors/broadcomsymantecdlp.md), [[Deprecated] Broadcom Symantec DLP via AMA](../connectors/broadcomsymantecdlpama.md) |
+| Thycotic Software | Secret Server | [[Deprecated] Delinea Secret Server via AMA](../connectors/delineasecretserverama.md), [[Deprecated] Delinea Secret Server via Legacy Agent](../connectors/delineasecretserver-cef.md) |
+| Trend Micro | Apex Central | [[Deprecated] Trend Micro Apex One via AMA](../connectors/trendmicroapexoneama.md) |
+| Vectra Networks | X Series | [[Deprecated] Vectra AI Detect via Legacy Agent](../connectors/aivectradetect.md), [[Deprecated] Vectra AI Detect via AMA](../connectors/aivectradetectama.md) |
+| Votiro | Votiro cloud | [[Deprecated] Votiro Sanitization Engine Logs](../connectors/votiro.md) |
+| WireX | WireX NFP | [[Deprecated] WireX Network Forensics Platform via Legacy Agent](../connectors/wirex-systems-nfp.md), [[Deprecated] WireX Network Forensics Platform via AMA](../connectors/wirex-systems-nfpama.md) |
+| WithSecure™ | * | [[Deprecated] WithSecure Elements via Connector](../connectors/withsecureelementsviaconnector.md) |
+| Zscaler | * | [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md), [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) |
+| iboss | * | [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md), [iboss via AMA](../connectors/ibossama.md) |
+| illusive | illusive | [[Deprecated] Illusive Platform via Legacy Agent](../connectors/illusiveattackmanagementsystem.md), [[Deprecated] Illusive Platform via AMA](../connectors/illusiveattackmanagementsystemama.md) |
+| vArmour | AC | [[Deprecated] vArmour Application Controller via Legacy Agent](../connectors/varmourac.md), [[Deprecated] vArmour Application Controller via AMA](../connectors/varmouracama.md) |
+
 ---
 
 ## Content Items Using This Table (343)

@@ -18,12 +18,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Votiro Sanitization Engine Logs](../connectors/votiro.md) | - |
-| [`VotiroEvents`](../tables/votiroevents.md) | - | Workbooks |
 
 ## Content Items
 
@@ -45,7 +44,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Votiro Monitoring Dashboard](../content/votiro-monitoring-dashboard-votiro.md) | [`VotiroEvents`](../tables/votiroevents.md) |
+| [Votiro Monitoring Dashboard](../content/votiro-monitoring-dashboard-votiro.md) | - |
 
 ## Release Notes
 

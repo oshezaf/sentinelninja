@@ -11,8 +11,6 @@
 This content item queries data from the following tables:
 
 - [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)
-- [`ExchangeAdminAuditLogs`](../tables/exchangeadminauditlogs.md)
-- [`ExchangeEnvironmentList`](../tables/exchangeenvironmentlist.md)
 - [`RolevsCmdlet`](../tables/rolevscmdlet.md)
 
 ---

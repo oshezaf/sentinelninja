@@ -19,11 +19,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **17 content item(s)**:
+This solution includes **4 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 17 |
+| Playbooks | 4 |
 
 ### Playbooks
 
@@ -33,19 +33,6 @@ This solution includes **17 content item(s)**:
 | [AWS IAM - Add tag to user](../content/aws-iam---add-tag-to-user-aws-iam.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 | [AWS IAM - Delete access keys](../content/aws-iam---delete-access-keys-aws-iam.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 | [AWS IAM - Enrich incident with user info](../content/aws-iam---enrich-incident-with-user-info-aws-iam.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [AWS_IAM_FunctionAppConnector](../content/aws-iam-functionappconnector-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [function](../content/function-aws-iam.md) | - | - |
-| [host](../content/host-aws-iam.md) | - | - |
-| [proxies](../content/proxies-aws-iam.md) | - | - |
 
 ---
 

@@ -29,13 +29,13 @@ This solution uses **2 table(s)**:
 
 ## Content Items
 
-This solution includes **30 content item(s)**:
+This solution includes **29 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 10 |
 | Hunting Queries | 10 |
-| Playbooks | 8 |
+| Playbooks | 7 |
 | Workbooks | 1 |
 | Parsers | 1 |
 
@@ -86,7 +86,6 @@ This solution includes **30 content item(s)**:
 | [Sync Jira to Sentinel - Assigned User](../content/sync-jira-to-sentinel---assigned-user-atlassianjiraaudit.md) | This Playbook will sync the assigned user from JIRA to Microsoft Sentinel. | - |
 | [Sync Jira to Sentinel - Status](../content/sync-jira-to-sentinel---status-atlassianjiraaudit.md) | This Playbook will sync the status from JIRA to Microsoft Sentinel. | - |
 | [Sync Jira to Sentinel - public comments](../content/sync-jira-to-sentinel---public-comments-atlassianjiraaudit.md) | This Playbook will sync the public comments from JIRA to Microsoft Sentinel. | - |
-| [Sync-CommentsFunctionApp](../content/sync-commentsfunctionapp-atlassianjiraaudit.md) | - | - |
 
 ### Parsers
 

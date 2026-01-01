@@ -12,12 +12,6 @@ This query visualises the top admins performing false positive submissions
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Submissions/Top%20accounts%20performing%20admin%20submissions%20-%20FP.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CloudAppEvents`](../tables/cloudappevents.md)
-
 ---
 
 **Browse:**

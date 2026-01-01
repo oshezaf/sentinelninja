@@ -11,12 +11,6 @@ This query searches for use of bitsadmin.exe for file transfer, which can be use
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Execution/BitsadminActivity.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-
 ---
 
 **Browse:**

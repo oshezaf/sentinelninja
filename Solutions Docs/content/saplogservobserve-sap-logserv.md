@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`SAPLogServ_CL`](../tables/saplogserv-cl.md)
-- [`filteredLogs`](../tables/filteredlogs.md)
 
 ---
 

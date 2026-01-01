@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
+| **Event Vendor** | {TypeTimeChart} |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Workbooks/CiscoSDWAN.json) |
 
 ## Tables Used

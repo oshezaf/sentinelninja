@@ -1,5 +1,7 @@
 # ZeroNetworks-swagger
 
+1. Overview 1. Actions supported by Zero Networks custom connector 1. Deployment 1. Authentication
+
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Playbook |

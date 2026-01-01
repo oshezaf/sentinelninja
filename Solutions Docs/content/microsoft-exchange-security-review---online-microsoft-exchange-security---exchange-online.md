@@ -12,9 +12,7 @@ This content item queries data from the following tables:
 
 - [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)
 - [`ExchangeConfiguration`](../tables/exchangeconfiguration.md)
-- [`ExchangeEnvironmentList`](../tables/exchangeenvironmentlist.md)
 - [`WhenCreated`](../tables/whencreated.md)
-- [`allDataRange`](../tables/alldatarange.md)
 
 ---
 

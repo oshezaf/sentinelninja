@@ -28,12 +28,11 @@ This solution uses **3 table(s)**:
 
 ## Content Items
 
-This solution includes **7 content item(s)**:
+This solution includes **6 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 6 |
-| Playbooks | 1 |
 
 ### Analytic Rules
 
@@ -45,12 +44,6 @@ This solution includes **7 content item(s)**:
 | [SailPointIdentityNowFailedEvents](../content/c3835197-fd07-447e-a0ac-7540d51a1f64.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md)<br>[`declare`](../tables/declare.md) |
 | [SailPointIdentityNowFailedEventsBasedOnTime](../content/175b79ef-0fc3-4b27-b92a-89b2db6c85c2.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md)<br>[`declare`](../tables/declare.md) |
 | [SailPointIdentityNowUserWithFailedEvent](../content/2a215222-bfc5-4858-a530-6d4088ebfa15.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md)<br>[`declare`](../tables/declare.md) |
-
-### Playbooks
-
-| Name | Description | Tables Used |
-|:-----|:------------|:------------|
-| [SailPointIdentityNow-swagger](../content/sailpointidentitynow-swagger-sailpointidentitynow.md) | - | - |
 
 ## Release Notes
 

@@ -28,12 +28,12 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **12 content item(s)**:
+This solution includes **11 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Workbooks | 4 |
-| Playbooks | 4 |
+| Playbooks | 3 |
 | Analytic Rules | 2 |
 | Parsers | 2 |
 
@@ -59,7 +59,6 @@ This solution includes **12 content item(s)**:
 |:-----|:------------|:------------|
 | [Block URL - Zscaler](../content/block-url---zscaler-zscaler-internet-access.md) | This playbook allows blocks URLs in Zscaler by adding them to categories | - |
 | [FileHash Enrichment - Zscaler](../content/filehash-enrichment---zscaler-zscaler-internet-access.md) | This playbook post a Zscaler Sandbox report for each FileHash found in the incident. | - |
-| [FunctionApp](../content/functionapp-zscaler-internet-access.md) | - | - |
 | [Zscaler API authentication](../content/zscaler-api-authentication-zscaler-internet-access.md) | This playbook generates access token in Zscaler API. Call this playbook as a step in functional Zsca... | - |
 
 ### Parsers

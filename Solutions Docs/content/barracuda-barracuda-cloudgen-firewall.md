@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md) |
+| **Event Vendor** | Barracuda |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20CloudGen%20Firewall/Workbooks/Barracuda.json) |
 
 ## Tables Used

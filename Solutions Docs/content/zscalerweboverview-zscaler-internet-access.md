@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| **Event Vendor** | Zscaler |
+| **Event Product** | NSSWeblog |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Workbooks/ZscalerWebOverview.json) |
 
 ## Tables Used

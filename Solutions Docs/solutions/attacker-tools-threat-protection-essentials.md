@@ -19,11 +19,10 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **1 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Analytics |
 | [`Event`](../tables/event.md) | Analytics |
 
 ## Content Items
@@ -42,7 +41,7 @@ This solution includes **6 content item(s)**:
 | [Credential Dumping Tools - File Artifacts](../content/32ffb19e-8ed8-40ed-87a0-1adb4746b7c4.md) | High | CredentialAccess | [`Event`](../tables/event.md) |
 | [Credential Dumping Tools - Service Installation](../content/4ebbb5c2-8802-11ec-a8a3-0242ac120002.md) | High | CredentialAccess | [`Event`](../tables/event.md) |
 | [Powershell Empire Cmdlets Executed in Command Line](../content/ef88eb96-861c-43a0-ab16-f3835a97c928.md) | Medium | Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Execution, Exfiltration, LateralMovement, Persistence, PrivilegeEscalation | - |
-| [Probable AdFind Recon Tool Usage](../content/c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd.md) | High | Discovery | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
+| [Probable AdFind Recon Tool Usage](../content/c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd.md) | High | Discovery | - |
 
 ### Hunting Queries
 

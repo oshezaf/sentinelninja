@@ -12,7 +12,6 @@ This content item queries data from the following tables:
 
 - [`IP_Data`](../tables/ip-data.md)
 - [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md)
-- [`SigninLogs`](../tables/signinlogs.md)
 
 ---
 

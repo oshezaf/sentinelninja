@@ -1,6 +1,6 @@
 # Playbooks
 
-**709 playbooks** across all Microsoft Sentinel solutions.
+**592 playbooks** across all Microsoft Sentinel solutions.
 
 **Browse by:**
 
@@ -61,20 +61,12 @@
 | [AWS Systems Manager - Stop Managed EC2 Instances](aws-systems-manager---stop-managed-ec2-instances-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
 | [AWS Systems Manager - Stop Managed EC2 Instances Host Entity Trigger](aws-systems-manager---stop-managed-ec2-instances-host-entity-trigger-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
 | [AWS Systems Manager - Stop Managed EC2 Instances IP Entity Trigger](aws-systems-manager---stop-managed-ec2-instances-ip-entity-trigger-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [AWS_IAM_FunctionAppConnector](aws-iam-functionappconnector-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [AWS_SSM_FunctionAppConnector](aws-ssm-functionappconnector-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [AWSAthena_FunctionAppConnector](awsathena-functionappconnector-awsathena.md) | [AWSAthena](../solutions/awsathena.md) |
 | [Azure Firewall - Add IP Address to Threat Intel Allow list](azure-firewall---add-ip-address-to-threat-intel-allow-list-azure-firewall.md) | [Azure Firewall](../solutions/azure-firewall.md) |
-| [Azure_Sentinel_automation_rules](azure-sentinel-automation-rules-cyble-vision.md) | [Cyble Vision](../solutions/cyble-vision.md) |
-| [azureconnectordeploy](azureconnectordeploy-sap.md) | [SAP](../solutions/sap.md) |
-| [azureconnectordeploy](azureconnectordeploy-sap.md) | [SAP](../solutions/sap.md) |
-| [azuredeploy.parameters](azuredeploy.parameters-cyware.md) | [Cyware](../solutions/cyware.md) |
 
 ## B
 
 | Name | Solution |
 |:-----|:---------|
-| [Basic-SAPLockUser-STD](basic-saplockuser-std-sap.md) | [SAP](../solutions/sap.md) |
 | [Block Device Client - Cisco Meraki](block-device-client---cisco-meraki-ciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [Block Entra ID user - Incident](block-entra-id-user---incident-microsoft-entra-id.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Block IP & URL on fortiweb cloud](block-ip-&-url-on-fortiweb-cloud-fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
@@ -103,8 +95,6 @@
 | [checkpoint-add-host-to-group](checkpoint-add-host-to-group-check-point.md) | [Check Point](../solutions/check-point.md) |
 | [Cisco ASA - Create or Inbound Access Rule On Interface](cisco-asa---create-or-inbound-access-rule-on-interface-ciscoasa.md) | [CiscoASA](../solutions/ciscoasa.md) |
 | [Cisco ASA - Create or remove access rules on an interface for IP Addresses](cisco-asa---create-or-remove-access-rules-on-an-interface-for-ip-addresses-ciscoasa.md) | [CiscoASA](../solutions/ciscoasa.md) |
-| [CiscoASA-swagger](ciscoasa-swagger-ciscoasa.md) | [CiscoASA](../solutions/ciscoasa.md) |
-| [CiscoFirepower-swagger](ciscofirepower-swagger-cisco-firepower-estreamer.md) | [Cisco Firepower EStreamer](../solutions/cisco-firepower-estreamer.md) |
 | [CiscoISE-False Positives Clear Policies](ciscoise-false-positives-clear-policies-cisco-ise.md) | [Cisco ISE](../solutions/cisco-ise.md) |
 | [CiscoISE-SuspendGuestUser](ciscoise-suspendguestuser-cisco-ise.md) | [Cisco ISE](../solutions/cisco-ise.md) |
 | [CiscoISE-TakeEndpointActionFromTeams](ciscoise-takeendpointactionfromteams-cisco-ise.md) | [Cisco ISE](../solutions/cisco-ise.md) |
@@ -123,8 +113,6 @@
 | [Commvault Disable User Logic App Playbook](commvault-disable-user-logic-app-playbook-commvault-security-iq.md) | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [Confirm Microsoft Entra ID Risky User - Alert Triggered](confirm-microsoft-entra-id-risky-user---alert-triggered-microsoft-entra-id-protection.md) | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | [Confirm Microsoft Entra ID Risky User - Incident Triggered](confirm-microsoft-entra-id-risky-user---incident-triggered-microsoft-entra-id-protection.md) | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
-| [connections](connections-sap.md) | [SAP](../solutions/sap.md) |
-| [connections](connections-sap.md) | [SAP](../solutions/sap.md) |
 | [Create an Attack Simulator training simulation for users who did not report a phishing attempt](create-an-attack-simulator-training-simulation-for-users-who-did-not-report-a-phishing-attempt-microsoft-defender-xdr.md) | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Create And Update Jira Issue](create-and-update-jira-issue-atlassianjiraaudit.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Create And Update ServiceNow Record](create-and-update-servicenow-record-servicenow.md) | [Servicenow](../solutions/servicenow.md) |
@@ -183,7 +171,6 @@
 | [DomainTools DNSDB Co-Located IP Addresses](domaintools-dnsdb-co-located-ip-addresses-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
 | [DomainTools DNSDB Historical Hosts](domaintools-dnsdb-historical-hosts-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
 | [DomainTools DNSDB Historical IP Addresses](domaintools-dnsdb-historical-ip-addresses-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [DomainTools_FunctionAppConnector](domaintools-functionappconnector-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
 | [Druva Quarantine Playbook for Enterprise Workload](druva-quarantine-playbook-for-enterprise-workload-druvadatasecuritycloud.md) | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | [Druva Quarantine Playbook for inSync Workloads](druva-quarantine-playbook-for-insync-workloads-druvadatasecuritycloud.md) | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | [Druva Quarantine Playbook for Shared Drive](druva-quarantine-playbook-for-shared-drive-druvadatasecuritycloud.md) | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
@@ -234,93 +221,9 @@
 | [FileHash Enrichment - Virus Total Report - Incident Triggered](filehash-enrichment---virus-total-report---incident-triggered-virustotal.md) | [VirusTotal](../solutions/virustotal.md) |
 | [FileHash Enrichment - Zscaler](filehash-enrichment---zscaler-zscaler-internet-access.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Forescout-DNS_Sniff_Event_Playbook](forescout-dns-sniff-event-playbook-forescouthostpropertymonitor.md) | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
-| [Fortinet-FortiGate-FunctionApp](fortinet-fortigate-functionapp-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | [Fortinet-FortiGate-IPEnrichment](fortinet-fortigate-ipenrichment-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | [Fortinet-FortiGate-ResponseOnBlockIP](fortinet-fortigate-responseonblockip-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | [Fortinet-FortiGate-ResponseOnBlockURL](fortinet-fortigate-responseonblockurl-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [function](function-awsathena.md) | [AWSAthena](../solutions/awsathena.md) |
-| [function](function-awsathena.md) | [AWSAthena](../solutions/awsathena.md) |
-| [function](function-awsathena.md) | [AWSAthena](../solutions/awsathena.md) |
-| [function](function-awsathena.md) | [AWSAthena](../solutions/awsathena.md) |
-| [function](function-awsathena.md) | [AWSAthena](../solutions/awsathena.md) |
-| [function](function-awsathena.md) | [AWSAthena](../solutions/awsathena.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [function](function-neustar-ip-geopoint.md) | [Neustar IP GeoPoint](../solutions/neustar-ip-geopoint.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [function](function-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [FunctionApp](functionapp-zscaler-internet-access.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 
 ## G
 
@@ -376,13 +279,6 @@
 
 | Name | Solution |
 |:-----|:---------|
-| [host](host-aws-systems-manager.md) | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
-| [host](host-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [host](host-awsathena.md) | [AWSAthena](../solutions/awsathena.md) |
-| [host](host-domaintools.md) | [DomainTools](../solutions/domaintools.md) |
-| [host](host-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [host](host-neustar-ip-geopoint.md) | [Neustar IP GeoPoint](../solutions/neustar-ip-geopoint.md) |
-| [host](host-vmray.md) | [VMRay](../solutions/vmray.md) |
 | [HTTP Trigger Entity Analyzer](http-trigger-entity-analyzer-sentinelsoaressentials.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [HYASInsight Enrich Incident By C2 Attribution](hyasinsight-enrich-incident-by-c2-attribution-hyas.md) | [HYAS](../solutions/hyas.md) |
 | [HYASInsight Enrich Incident By C2 Attribution](hyasinsight-enrich-incident-by-c2-attribution-hyas.md) | [HYAS](../solutions/hyas.md) |
@@ -418,7 +314,6 @@
 | [Illumio Containment Switch Playbook](illumio-containment-switch-playbook-illumiosaas.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Illumio Get Ven Details Playbook](illumio-get-ven-details-playbook-illumiosaas.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Illumio Workload Quarantine Playbook](illumio-workload-quarantine-playbook-illumiosaas.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
-| [IllumioSaaS_FunctionAppConnector](illumiosaas-functionappconnector-illumiosaas.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Illusive-SentinelIncident-Enrichment](illusive-sentinelincident-enrichment-illusive-active-defense.md) | [Illusive Active Defense](../solutions/illusive-active-defense.md) |
 | [Illusive-SentinelIncident-Response](illusive-sentinelincident-response-illusive-active-defense.md) | [Illusive Active Defense](../solutions/illusive-active-defense.md) |
 | [Incident Assignment Shifts](incident-assignment-shifts-sentinelsoaressentials.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
@@ -519,7 +414,6 @@
 | [Needs-Review-Incident-Email-Notification](needs-review-incident-email-notification-armorblox.md) | [Armorblox](../solutions/armorblox.md) |
 | [NetskopeDataConnectorsTriggerSync](netskopedataconnectorstriggersync-netskopev2.md) | [Netskopev2](../solutions/netskopev2.md) |
 | [NetskopeWebTxErrorEmail](netskopewebtxerroremail-netskopev2.md) | [Netskopev2](../solutions/netskopev2.md) |
-| [NeustarIPGeoPoint_FunctionAppConnector](neustaripgeopoint-functionappconnector-neustar-ip-geopoint.md) | [Neustar IP GeoPoint](../solutions/neustar-ip-geopoint.md) |
 | [Notify Incident Owner in Microsoft Teams](notify-incident-owner-in-microsoft-teams-sentinelsoaressentials.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Notify Sentinel Incident Creation and Update to Torq Webhook](notify-sentinel-incident-creation-and-update-to-torq-webhook-torq.md) | [Torq](../solutions/torq.md) |
 | [Notify When Incident Is Closed](notify-when-incident-is-closed-sentinelsoaressentials.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
@@ -541,7 +435,6 @@
 | [O365 - Block Spam Domain](o365---block-spam-domain-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
 | [O365 - Block Suspicious Sender](o365---block-suspicious-sender-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
 | [O365 - Delete All Malicious Inbox Rule](o365---delete-all-malicious-inbox-rule-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [O365_Defender_FunctionAppConnector](o365-defender-functionappconnector-microsoft-defender-for-office-365.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
 
 ## P
 
@@ -552,7 +445,6 @@
 | [PaloAlto-PAN-OS-BlockURL-EntityTrigger](paloalto-pan-os-blockurl-entitytrigger-paloalto-pan-os.md) | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | [PaloAlto-PAN-OS-GetURLCategoryInfo](paloalto-pan-os-geturlcategoryinfo-paloalto-pan-os.md) | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | [PaloAltoXDR](paloaltoxdr-palo-alto---xdr-%28cortex%29.md) | [Palo Alto - XDR (Cortex)](../solutions/palo-alto---xdr-%28cortex%29.md) |
-| [parametersFile](parametersfile-teams.md) | [Teams](../solutions/teams.md) |
 | [Password Breach Data - SpyCloud Enterprise](password-breach-data---spycloud-enterprise-spycloud-enterprise-protection.md) | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [Post Message Slack](post-message-slack-sentinelsoaressentials.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Post Message Slack](post-message-slack-sentinelsoaressentials.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
@@ -564,8 +456,6 @@
 | [Prompt User - Alert](prompt-user---alert-microsoft-entra-id.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Prompt User - Incident](prompt-user---incident-microsoft-entra-id.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [ProofpointTAP-AddForensicsInfoToIncident](proofpointtap-addforensicsinfotoincident-proofpointtap.md) | [ProofPointTap](../solutions/proofpointtap.md) |
-| [proxies](proxies-aws-iam.md) | [AWS_IAM](../solutions/aws-iam.md) |
-| [proxies](proxies-neustar-ip-geopoint.md) | [Neustar IP GeoPoint](../solutions/neustar-ip-geopoint.md) |
 | [Pure Storage FlashBlade File System Snapshot](pure-storage-flashblade-file-system-snapshot-pure-storage.md) | [Pure Storage](../solutions/pure-storage.md) |
 | [Pure Storage Protection Group Snapshot](pure-storage-protection-group-snapshot-pure-storage.md) | [Pure Storage](../solutions/pure-storage.md) |
 | [Pure Storage User Deletion](pure-storage-user-deletion-pure-storage.md) | [Pure Storage](../solutions/pure-storage.md) |
@@ -695,8 +585,6 @@
 
 | Name | Solution |
 |:-----|:---------|
-| [SailPointIdentityNow-swagger](sailpointidentitynow-swagger-sailpointidentitynow.md) | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
-| [SAPCollectorRemediate-STD](sapcollectorremediate-std-sap.md) | [SAP](../solutions/sap.md) |
 | [Search for Breaches - ShadowByte Aria](search-for-breaches---shadowbyte-aria-shadowbyte-aria.md) | [ShadowByte Aria](../solutions/shadowbyte-aria.md) |
 | [Security workflow: alert verification with workload owners](security-workflow:-alert-verification-with-workload-owners-microsoft-business-applications.md) | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Send basic email](send-basic-email-sentinelsoaressentials.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
@@ -733,7 +621,6 @@
 | [Sync Jira to Sentinel - Assigned User](sync-jira-to-sentinel---assigned-user-atlassianjiraaudit.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Sync Jira to Sentinel - public comments](sync-jira-to-sentinel---public-comments-atlassianjiraaudit.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Sync Jira to Sentinel - Status](sync-jira-to-sentinel---status-atlassianjiraaudit.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
-| [Sync-CommentsFunctionApp](sync-commentsfunctionapp-atlassianjiraaudit.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 
 ## T
 
@@ -820,7 +707,6 @@
 | [Veeam-StartSecurityComplianceAnalyzer](veeam-startsecuritycomplianceanalyzer-veeam.md) | [Veeam](../solutions/veeam.md) |
 | [VMRay Email Attachment Analyis](vmray-email-attachment-analyis-vmray.md) | [VMRay](../solutions/vmray.md) |
 | [VMRay URL Analyis](vmray-url-analyis-vmray.md) | [VMRay](../solutions/vmray.md) |
-| [VMRayEnrichment_FunctionAppConnector](vmrayenrichment-functionappconnector-vmray.md) | [VMRay](../solutions/vmray.md) |
 
 ## W
 
@@ -832,14 +718,11 @@
 | [Watchlists - Inform Subscription Owner](watchlists---inform-subscription-owner-watchlists-utilities.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [workflow](workflow-sap.md) | [SAP](../solutions/sap.md) |
 | [workflow](workflow-sap.md) | [SAP](../solutions/sap.md) |
-| [workflowparameters](workflowparameters-sap.md) | [SAP](../solutions/sap.md) |
-| [workflowparameters](workflowparameters-sap.md) | [SAP](../solutions/sap.md) |
 
 ## Z
 
 | Name | Solution |
 |:-----|:---------|
-| [ZeroNetworks-swagger](zeronetworks-swagger-zeronetworks.md) | [ZeroNetworks](../solutions/zeronetworks.md) |
 | [Zscaler API authentication](zscaler-api-authentication-zscaler-internet-access.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 
 ---

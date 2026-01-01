@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [PingFederate](../solutions/pingfederate.md) |
+| **Event Product** | PingFederate |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingFederate/Workbooks/PingFederate.json) |
 
 ## Tables Used

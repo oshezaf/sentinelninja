@@ -10,7 +10,6 @@
 
 This content item queries data from the following tables:
 
-- [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)
 - [`AZFWDnsQuery`](../tables/azfwdnsquery.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)
@@ -18,7 +17,6 @@ This content item queries data from the following tables:
 - [`Corelight_CL`](../tables/corelight-cl.md)
 - [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md)
 - [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md)
-- [`DnsEvents`](../tables/dnsevents.md)
 - [`Event`](../tables/event.md)
 - [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
 - [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)

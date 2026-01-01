@@ -10,13 +10,8 @@
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
-- [`EmailEvents`](../tables/emailevents.md)
-- [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`UrlClickEvents`](../tables/urlclickevents.md)
-- [`baseQuery`](../tables/basequery.md)
 
 ---
 

@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md)
-- [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md)
 - [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md)
 - [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md)
 

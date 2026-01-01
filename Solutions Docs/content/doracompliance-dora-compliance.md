@@ -10,7 +10,6 @@
 
 This content item queries data from the following tables:
 
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
 - [`Heartbeat`](../tables/heartbeat.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)

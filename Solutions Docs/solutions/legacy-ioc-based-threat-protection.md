@@ -19,23 +19,16 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **18 table(s)** from its content items:
+This solution queries **11 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | Hunting |
 | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | Hunting |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | Hunting |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Hunting |
 | [`Event`](../tables/event.md) | Hunting |
 | [`EventParser`](../tables/eventparser.md) | Hunting |
 | [`OfficeActivity`](../tables/officeactivity.md) | Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | Hunting |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Hunting |
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) | Hunting |
-| [`StorageFileLogs`](../tables/storagefilelogs.md) | Hunting |
-| [`StorageQueueLogs`](../tables/storagequeuelogs.md) | Hunting |
-| [`StorageTableLogs`](../tables/storagetablelogs.md) | Hunting |
 | [`Syslog`](../tables/syslog.md) | Hunting |
 | [`WindowsEvent`](../tables/windowsevent.md) | Hunting |
 | [`WindowsEventParser`](../tables/windowseventparser.md) | Hunting |
@@ -64,10 +57,10 @@ This solution includes **10 content item(s)**:
 |:-----|:--------|:------------|
 | [Connection from external IP to OMI related Ports](../content/767b8f6d-8029-4c92-afe1-282167d9d49a.md) | Reconnaissance, InitialAccess | - |
 | [Dev-0056 Command Line Activity November 2021](../content/e2629949-2043-4421-8064-bca23c8491dd.md) | CommandAndControl | - |
-| [Dev-0322 Command Line Activity November 2021](../content/78fa22f9-0c13-4847-bbe6-6a7aa1b47547.md) | Persistence, LateralMovement, CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
+| [Dev-0322 Command Line Activity November 2021](../content/78fa22f9-0c13-4847-bbe6-6a7aa1b47547.md) | Persistence, LateralMovement, CommandAndControl | - |
 | [Dev-0322 Command Line Activity November 2021 (ASIM Version)](../content/6bfea14f-2122-46b3-8f8b-3947e0fb6d92.md) | Persistence, LateralMovement, CommandAndControl | [`imProcess`](../tables/improcess.md) |
-| [Dev-0322 File Drop Activity November 2021](../content/5bf2d4d8-ea03-4673-aaf8-716a61446022.md) | Persistence, CommandAndControl | [`DeviceFileEvents`](../tables/devicefileevents.md) |
-| [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/9b72769e-6ab1-4736-988b-018d92dc5e62.md) | Persistence, CommandAndControl | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`Event`](../tables/event.md)<br>[`EventParser`](../tables/eventparser.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`StorageFileLogs`](../tables/storagefilelogs.md)<br>[`StorageQueueLogs`](../tables/storagequeuelogs.md)<br>[`StorageTableLogs`](../tables/storagetablelogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`WindowsEventParser`](../tables/windowseventparser.md)<br>[`parseddata`](../tables/parseddata.md) |
+| [Dev-0322 File Drop Activity November 2021](../content/5bf2d4d8-ea03-4673-aaf8-716a61446022.md) | Persistence, CommandAndControl | - |
+| [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/9b72769e-6ab1-4736-988b-018d92dc5e62.md) | Persistence, CommandAndControl | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`Event`](../tables/event.md)<br>[`EventParser`](../tables/eventparser.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`WindowsEventParser`](../tables/windowseventparser.md)<br>[`parseddata`](../tables/parseddata.md) |
 | [Known Nylon Typhoon Registry modifications patterns](../content/f090f8f4a-b986-42d2-b536-e0795c723e25.md) | Persistence | [`SecurityEvent`](../tables/securityevent.md) |
 | [Nylon Typhoon Command Line Activity November 2021](../content/bb30abbc-9af6-4a37-9536-e9207e023989.md) | Collection | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Retrospective hunt for Forest Blizzard IP IOCs](../content/b8b7574f-1cd6-4308-822a-ab07256106f8.md) | CommandAndControl | - |

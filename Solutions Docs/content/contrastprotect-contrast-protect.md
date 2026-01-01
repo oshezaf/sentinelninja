@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Contrast Protect](../solutions/contrast-protect.md) |
+| **Event Vendor** | Contrast Security |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect/Workbooks/ContrastProtect.json) |
 
 ## Tables Used

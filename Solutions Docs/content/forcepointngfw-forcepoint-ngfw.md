@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Forcepoint NGFW](../solutions/forcepoint-ngfw.md) |
+| **Event Vendor** | Forcepoint |
+| **Event Product** | NGFW |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW/Workbooks/ForcepointNGFW.json) |
 
 ## Tables Used

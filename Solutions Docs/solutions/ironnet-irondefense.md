@@ -52,9 +52,9 @@ This solution includes **6 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IronNet_UpdateIronDefenseAlerts](../content/ironnet-updateirondefensealerts-ironnet-irondefense.md) | - | - |
-| [IronNet_UpdateSentinelIncidents](../content/ironnet-updatesentinelincidents-ironnet-irondefense.md) | - | - |
-| [IronNet_Validate_IronNet_API](../content/ironnet-validate-ironnet-api-ironnet-irondefense.md) | - | - |
+| [IronNet_UpdateIronDefenseAlerts](../content/ironnet-updateirondefensealerts-ironnet-irondefense.md) | author: IronNet | - |
+| [IronNet_UpdateSentinelIncidents](../content/ironnet-updatesentinelincidents-ironnet-irondefense.md) | author: IronNet | - |
+| [IronNet_Validate_IronNet_API](../content/ironnet-validate-ironnet-api-ironnet-irondefense.md) | author: IronNet | - |
 
 ---
 

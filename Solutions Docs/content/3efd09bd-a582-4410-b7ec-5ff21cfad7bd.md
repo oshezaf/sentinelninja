@@ -15,12 +15,6 @@ This hunting queries identify an unusual increase of repo deletion activities ad
 | **Required Connectors** | [SyslogAma](../connectors/syslogama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitLab/Analytic%20Rules/GitLab_Repo_Deletion.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`GitLabRepositoryDestroyEvents`](../tables/gitlabrepositorydestroyevents.md)
-
 ---
 
 **Browse:**

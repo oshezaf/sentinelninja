@@ -19,11 +19,10 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`DefendAuditData`](../tables/defendauditdata.md) | [Egress Iris Connector](../connectors/egresssiempolling.md) | - |
 | [`EgressEvents_CL`](../tables/egressevents-cl.md) | [Egress Iris Connector](../connectors/egresssiempolling.md) | Workbooks |
 
 ## Content Items

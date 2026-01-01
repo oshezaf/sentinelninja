@@ -10,18 +10,6 @@ Reference for GCPIAM table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpiam) |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-- [Google Cloud Platform IAM (via Codeless Connector Framework)](../connectors/gcpiamccpdefinition.md)
-
 ---
 
 ---

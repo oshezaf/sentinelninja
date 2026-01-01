@@ -12,12 +12,6 @@ This query helps hunt for external malicious Teams messages sent from internal s
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Microsoft%20Teams%20protection/External%20malicious%20Teams%20messages%20sent%20from%20internal%20senders.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`MessageEvents`](../tables/messageevents.md)
-
 ---
 
 **Browse:**

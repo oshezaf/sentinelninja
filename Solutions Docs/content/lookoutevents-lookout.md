@@ -6,12 +6,6 @@
 | **Solution** | [Lookout](../solutions/lookout.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Workbooks/LookoutEvents.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md)
-
 ---
 
 **Browse:**

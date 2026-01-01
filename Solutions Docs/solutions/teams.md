@@ -19,27 +19,26 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **1 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
-| [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 
 ## Content Items
 
-This solution includes **4 content item(s)**:
+This solution includes **3 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 3 |
+| Playbooks | 2 |
 | Workbooks | 1 |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftTeams](../content/microsoftteams-teams.md) | [`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [MicrosoftTeams](../content/microsoftteams-teams.md) | [`OfficeActivity`](../tables/officeactivity.md) |
 
 ### Playbooks
 
@@ -47,7 +46,6 @@ This solution includes **4 content item(s)**:
 |:-----|:------------|:------------|
 | [Advanced ServiceNow Teams Integration Playbook](../content/advanced-servicenow-teams-integration-playbook-teams.md) | This playbook showcases an example of triggering an incident within a targeted Teams channel and ope... | - |
 | [Send Teams Adaptive Card on incident creation](../content/send-teams-adaptive-card-on-incident-creation-teams.md) | This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to chang... | - |
-| [parametersFile](../content/parametersfile-teams.md) | - | - |
 
 ## Release Notes
 

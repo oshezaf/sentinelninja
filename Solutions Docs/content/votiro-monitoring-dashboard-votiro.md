@@ -6,12 +6,6 @@
 | **Solution** | [Votiro](../solutions/votiro.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro/Workbooks/Votiro%20Monitoring%20Dashboard.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`VotiroEvents`](../tables/votiroevents.md)
-
 ---
 
 **Browse:**

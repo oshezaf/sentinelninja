@@ -15,12 +15,6 @@ This query detects a password spraying attack, where a single machine has perfor
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday/Analytic%20Rules/PasswordSprayingWithMDE.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`DeviceLogonEvents`](../tables/devicelogonevents.md)
-
 ---
 
 **Browse:**

@@ -28,11 +28,11 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **7 content item(s)**:
+This solution includes **6 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 4 |
+| Playbooks | 3 |
 | Analytic Rules | 2 |
 | Workbooks | 1 |
 
@@ -56,7 +56,6 @@ This solution includes **7 content item(s)**:
 | [Block IP - Cisco ASA](../content/block-ip---cisco-asa-ciscoasa.md) | This playbook allows blocking/allowing of IPs in Cisco ASA, using a Network Object Group. The Networ... | - |
 | [Cisco ASA - Create or Inbound Access Rule On Interface](../content/cisco-asa---create-or-inbound-access-rule-on-interface-ciscoasa.md) | This playbook allows blocking/unblocking of IPs in Cisco ASA, using **Access Rules** which will be c... | - |
 | [Cisco ASA - Create or remove access rules on an interface for IP Addresses](../content/cisco-asa---create-or-remove-access-rules-on-an-interface-for-ip-addresses-ciscoasa.md) | This playbook allows blocking/unblocking of IPs in Cisco ASA, using **Access Control Entries** which... | - |
-| [CiscoASA-swagger](../content/ciscoasa-swagger-ciscoasa.md) | - | - |
 
 ## Release Notes
 

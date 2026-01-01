@@ -17,14 +17,6 @@
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
-
-This solution queries **1 table(s)** from its content items:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`test`](../tables/test.md) | Hunting |
-
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -37,7 +29,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [test](../content/afe13b7c-test-11ec-8d3d-0242ac130003.md) | Test | [`test`](../tables/test.md) |
+| [test](../content/afe13b7c-test-11ec-8d3d-0242ac130003.md) | Test | - |
 
 ---
 

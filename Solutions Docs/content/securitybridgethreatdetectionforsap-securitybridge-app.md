@@ -6,12 +6,6 @@
 | **Solution** | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App/Workbooks/SecurityBridgeThreatDetectionforSAP.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`SecurityBridgeLogs`](../tables/securitybridgelogs.md)
-
 ---
 
 **Browse:**

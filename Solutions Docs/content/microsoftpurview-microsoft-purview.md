@@ -6,12 +6,6 @@
 | **Solution** | [Microsoft Purview](../solutions/microsoft-purview.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview/Workbooks/MicrosoftPurview.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)
-
 ---
 
 **Browse:**

@@ -20,11 +20,10 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`FinalSummary`](../tables/finalsummary.md) | - | Hunting |
 | [`Syslog`](../tables/syslog.md) | [Syslog via AMA](../connectors/syslogama.md), [Syslog via Legacy Agent](../connectors/syslog.md) | Analytics, Hunting, Workbooks |
 | [`scx_execve`](../tables/scx-execve.md) | - | Hunting |
 
@@ -56,7 +55,7 @@ This solution includes **18 content item(s)**:
 |:-----|:--------|:------------|
 | [Crypto currency miners EXECVE](../content/1ef1c38f-26dd-4e28-b884-5b3665352648.md) | Persistence, Execution | [`Syslog`](../tables/syslog.md) |
 | [Editing Linux scheduled tasks through Crontab](../content/6f0f1821-5981-408a-930b-8b2ca60e9e6c.md) | Persistence, Execution | [`Syslog`](../tables/syslog.md) |
-| [Linux scheduled task Aggregation](../content/eb09da09-6f6c-4502-bf74-f7b9f1343539.md) | Persistence, Execution | [`FinalSummary`](../tables/finalsummary.md)<br>[`Syslog`](../tables/syslog.md) |
+| [Linux scheduled task Aggregation](../content/eb09da09-6f6c-4502-bf74-f7b9f1343539.md) | Persistence, Execution | [`Syslog`](../tables/syslog.md) |
 | [Rare process running on a Linux host](../content/d0ae35df-0eaf-491f-b23e-8190e4f3ffe9.md) | Execution, Persistence | [`Syslog`](../tables/syslog.md) |
 | [SCX Execute RunAs Providers](../content/0d298a1d-1a08-4f4b-8b28-687bfe0012e8.md) | InitialAccess, Execution | [`Syslog`](../tables/syslog.md)<br>[`scx_execve`](../tables/scx-execve.md) |
 | [Squid commonly abused TLDs](../content/7aaa7675-1580-47d8-a404-039cb7284279.md) | CommandAndControl | [`Syslog`](../tables/syslog.md) |

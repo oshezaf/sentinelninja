@@ -19,14 +19,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **5 table(s)** from its content items:
+This solution queries **2 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`CategoryData`](../tables/categorydata.md) | Workbooks |
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | Analytics, Workbooks |
-| [`NetworkAccessTrafficData`](../tables/networkaccesstrafficdata.md) | Workbooks |
-| [`NetworkData`](../tables/networkdata.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
 
 ## Content Items
@@ -52,7 +49,7 @@ This solution includes **6 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [GSAM365EnrichedEvents](../content/gsam365enrichedevents-global-secure-access.md) | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>[`OfficeActivity`](../tables/officeactivity.md) |
-| [GSANetworkTraffic](../content/gsanetworktraffic-global-secure-access.md) | [`CategoryData`](../tables/categorydata.md)<br>[`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>[`NetworkAccessTrafficData`](../tables/networkaccesstrafficdata.md)<br>[`NetworkData`](../tables/networkdata.md) |
+| [GSANetworkTraffic](../content/gsanetworktraffic-global-secure-access.md) | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) |
 
 ## Release Notes
 

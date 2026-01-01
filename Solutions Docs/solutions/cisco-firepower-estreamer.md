@@ -28,11 +28,11 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **4 content item(s)**:
+This solution includes **3 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 4 |
+| Playbooks | 3 |
 
 ### Playbooks
 
@@ -41,7 +41,6 @@ This solution includes **4 content item(s)**:
 | [Block IP - Cisco Firepower](../content/block-ip---cisco-firepower-cisco-firepower-estreamer.md) | This playbook allows blocking of IPs in Cisco Firepower, using a **Network Group object**. This allo... | - |
 | [Block IP - Take Action from Teams - Cisco Firepower](../content/block-ip---take-action-from-teams---cisco-firepower-cisco-firepower-estreamer.md) | This playbook allows blocking of IPs in Cisco Firepower, using a **Network Group object**. This allo... | - |
 | [Block URL - Cisco Firepower](../content/block-url---cisco-firepower-cisco-firepower-estreamer.md) | This playbook allows blocking of FQDNs in Cisco Firepower, using a **Network Group object**. This al... | - |
-| [CiscoFirepower-swagger](../content/ciscofirepower-swagger-cisco-firepower-estreamer.md) | - | - |
 
 ## Release Notes
 

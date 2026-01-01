@@ -20,11 +20,10 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **1 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`null)`](../tables/null%29.md) | Playbooks (writes) |
 | [`parameters`](../tables/parameters.md) | Playbooks |
 
 ## Content Items
@@ -44,7 +43,7 @@ This solution includes **8 content item(s)**:
 | [RFI-Playbook-Alert-Importer-LAW-Sentinel](../content/rfi-playbook-alert-importer-law-sentinel-recorded-future-identity.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
 | [RFI-add-EntraID-security-group-user](../content/rfi-add-entraid-security-group-user-recorded-future-identity.md) | This playbook adds a compromised user to an EntraID security group. Triage and remediation should be... | - |
 | [RFI-confirm-EntraID-risky-user](../content/rfi-confirm-entraid-risky-user-recorded-future-identity.md) | This playbook confirms compromise of users deemed 'high risk' by EntraID. | - |
-| [RFI-lookup-and-save-user](../content/rfi-lookup-and-save-user-recorded-future-identity.md) | This playbook gets compromise identity details from Recorded Future Identity Intelligence and saves ... | [`null)`](../tables/null%29.md) *(write)* |
+| [RFI-lookup-and-save-user](../content/rfi-lookup-and-save-user-recorded-future-identity.md) | This playbook gets compromise identity details from Recorded Future Identity Intelligence and saves ... | - |
 | [RFI-search-external-user](../content/rfi-search-external-user-recorded-future-identity.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised external (cu... | [`parameters`](../tables/parameters.md) *(read)* |
 | [RFI-search-workforce-user](../content/rfi-search-workforce-user-recorded-future-identity.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised workforce us... | [`parameters`](../tables/parameters.md) *(read)* |
 

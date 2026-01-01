@@ -26,13 +26,13 @@ This solution uses **11 table(s)**:
 |-------|-------------------|----------------|
 | [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics |
 | [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics |
-| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
+| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 | [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
+| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 | [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics, Workbooks |
-| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
-| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics, Workbooks |
+| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
+| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
+| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 | [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 | [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 
@@ -50,10 +50,10 @@ This solution includes **18 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [BitSight - compromised systems detected](../content/d68b758a-b117-4cb8-8e1d-dcab5a4a2f21.md) | Medium | Execution | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) |
-| [BitSight - diligence risk category detected](../content/161ed3ac-b242-4b13-8c6b-58716e5e9972.md) | Medium | Execution, Reconnaissance | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) |
-| [BitSight - drop in company ratings](../content/d8844f11-3a36-4b97-9062-1e6d57c00e37.md) | High | Reconnaissance, CommandAndControl | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) |
-| [BitSight - drop in the headline rating](../content/b11fdc35-6368-4cc0-8128-52cd2e2cdda0.md) | High | Reconnaissance, CommandAndControl | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) |
+| [BitSight - compromised systems detected](../content/d68b758a-b117-4cb8-8e1d-dcab5a4a2f21.md) | Medium | Execution | - |
+| [BitSight - diligence risk category detected](../content/161ed3ac-b242-4b13-8c6b-58716e5e9972.md) | Medium | Execution, Reconnaissance | - |
+| [BitSight - drop in company ratings](../content/d8844f11-3a36-4b97-9062-1e6d57c00e37.md) | High | Reconnaissance, CommandAndControl | - |
+| [BitSight - drop in the headline rating](../content/b11fdc35-6368-4cc0-8128-52cd2e2cdda0.md) | High | Reconnaissance, CommandAndControl | - |
 | [BitSight - new alert found](../content/a1275c5e-0ff4-4d15-a7b7-96018cd979f5.md) | High | Impact, InitialAccess | [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) |
 | [BitSight - new breach found](../content/a5526ba9-5997-47c6-bf2e-60a08b681e9b.md) | Medium | Impact, InitialAccess | [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) |
 
@@ -61,7 +61,7 @@ This solution includes **18 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [BitSightWorkbook](../content/bitsightworkbook-bitsight.md) | [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md)<br>[`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md)<br>[`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md)<br>[`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md)<br>[`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) |
+| [BitSightWorkbook](../content/bitsightworkbook-bitsight.md) | - |
 
 ### Parsers
 

@@ -19,12 +19,6 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | - | Hunting |
-
 ### Internal Tables
 
 The following **1 table(s)** are used internally by this solution's playbooks:
@@ -54,8 +48,8 @@ This solution includes **27 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Probable AdFind Recon Tool Usage](../content/c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd.md) | Discovery | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
-| [SUNBURST suspicious SolarWinds child processes](../content/4a3073ac-7383-48a9-90a8-eb6716183a54.md) | Execution, Persistence | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
+| [Probable AdFind Recon Tool Usage](../content/c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd.md) | Discovery | - |
+| [SUNBURST suspicious SolarWinds child processes](../content/4a3073ac-7383-48a9-90a8-eb6716183a54.md) | Execution, Persistence | - |
 
 ### Playbooks
 

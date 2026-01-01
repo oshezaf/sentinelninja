@@ -1,11 +1,5 @@
 # InfobloxInsightEvents_CL
 
-> **Internal Use Table:** This table is created and used internally by the following solutions: [Infoblox](../solutions/infoblox.md), [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md). It is written to by playbooks for solution-specific data storage.
-
-| Attribute | Value |
-|:----------|:------|
-| **Category** | Internal |
-
 ## Solutions (2)
 
 This table is used by the following solutions:
@@ -15,15 +9,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
-
-### Workbooks (2)
-
-**In solution [Infoblox](../solutions/infoblox.md):**
-- [Infoblox_Workbook](../content/infoblox-workbook-infoblox.md)
-
-**In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
-- [InfobloxSOCInsightsWorkbook](../content/infobloxsocinsightsworkbook-infoblox-soc-insights.md)
+## Content Items Using This Table (2)
 
 ---
 

@@ -20,15 +20,14 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **5 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`JamfProtect`](../tables/jamfprotect.md) | - | Workbooks |
-| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) | - | Analytics |
 | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
 | [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Workbooks |
-| [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
+| [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | - |
 
 ## Content Items
 
@@ -46,14 +45,14 @@ This solution includes **12 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Jamf Protect - Alerts](../content/6098daa0-f05e-44d5-b5a0-913e63ba3179.md) | High | - | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) |
-| [Jamf Protect - Network Threats](../content/44da53c3-f3b0-4b70-afff-f79275cb9442.md) | Informational | InitialAccess | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) |
-| [Jamf Protect - Unified Logs](../content/9eb2f758-003b-4303-83c6-97aed4c03e41.md) | Informational | - | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) |
+| [Jamf Protect - Network Threats](../content/44da53c3-f3b0-4b70-afff-f79275cb9442.md) | Informational | InitialAccess | - |
+| [Jamf Protect - Unified Logs](../content/9eb2f758-003b-4303-83c6-97aed4c03e41.md) | Informational | - | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [JamfProtectDashboard](../content/jamfprotectdashboard-jamf-protect.md) | [`JamfProtect`](../tables/jamfprotect.md)<br>[`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md)<br>[`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md)<br>[`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) |
+| [JamfProtectDashboard](../content/jamfprotectdashboard-jamf-protect.md) | [`JamfProtect`](../tables/jamfprotect.md)<br>[`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md)<br>[`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) |
 
 ### Playbooks
 

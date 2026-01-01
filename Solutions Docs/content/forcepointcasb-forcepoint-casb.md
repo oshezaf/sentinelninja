@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Forcepoint CASB](../solutions/forcepoint-casb.md) |
+| **Event Vendor** | Forcepoint CASB |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CASB/Workbooks/ForcepointCASB.json) |
 
 ## Tables Used

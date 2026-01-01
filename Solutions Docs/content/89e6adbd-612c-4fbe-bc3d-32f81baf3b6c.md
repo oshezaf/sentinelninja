@@ -14,13 +14,6 @@ This detection monitors for additions to projects or project collection administ
 | **Techniques** | T1098 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Analytic%20Rules/AzDOAdminGroupAdditions.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md)
-- [`false`](../tables/false.md)
-
 ---
 
 **Browse:**

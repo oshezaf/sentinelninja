@@ -19,25 +19,19 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **18 table(s)** from its content items:
+This solution queries **12 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md) | Workbooks |
-| [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
-| [`ConfigurationData`](../tables/configurationdata.md) | Workbooks |
 | [`Crosswalk`](../tables/crosswalk.md) | Workbooks |
-| [`DeviceEvents`](../tables/deviceevents.md) | Workbooks |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | Workbooks |
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | Workbooks |
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md) | Workbooks |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | Analytics, Hunting, Workbooks |
-| [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
 | [`managedservicesresources`](../tables/managedservicesresources.md) | Workbooks |
 | [`securityresources`](../tables/securityresources.md) | Workbooks |
@@ -77,7 +71,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation.md) | [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`ConfigurationData`](../tables/configurationdata.md)<br>[`Crosswalk`](../tables/crosswalk.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceLogonEvents`](../tables/devicelogonevents.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`managedservicesresources`](../tables/managedservicesresources.md)<br>[`securityresources`](../tables/securityresources.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation.md) | [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Crosswalk`](../tables/crosswalk.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`managedservicesresources`](../tables/managedservicesresources.md)<br>[`securityresources`](../tables/securityresources.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Additional Documentation
 

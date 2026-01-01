@@ -11,16 +11,12 @@
 This content item queries data from the following tables:
 
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`DnsEvents`](../tables/dnsevents.md)
 - [`HuntingBookmark`](../tables/huntingbookmark.md)
-- [`LogonEvents`](../tables/logonevents.md)
 - [`Network_MetaParser`](../tables/network-metaparser.md)
-- [`ProcessCreationEvents`](../tables/processcreationevents.md)
 - [`ProtectionStatus`](../tables/protectionstatus.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`SigninLogs`](../tables/signinlogs.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 
 ---

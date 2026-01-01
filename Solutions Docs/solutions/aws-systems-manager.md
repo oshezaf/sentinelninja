@@ -18,11 +18,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **23 content item(s)**:
+This solution includes **7 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 23 |
+| Playbooks | 7 |
 
 ### Playbooks
 
@@ -35,22 +35,6 @@ This solution includes **23 content item(s)**:
 | [AWS Systems Manager - Stop Managed EC2 Instances](../content/aws-systems-manager---stop-managed-ec2-instances-aws-systems-manager.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. Thi... | - |
 | [AWS Systems Manager - Stop Managed EC2 Instances Host Entity Trigger](../content/aws-systems-manager---stop-managed-ec2-instances-host-entity-trigger-aws-systems-manager.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The... | - |
 | [AWS Systems Manager - Stop Managed EC2 Instances IP Entity Trigger](../content/aws-systems-manager---stop-managed-ec2-instances-ip-entity-trigger-aws-systems-manager.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The... | - |
-| [AWS_SSM_FunctionAppConnector](../content/aws-ssm-functionappconnector-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [function](../content/function-aws-systems-manager.md) | - | - |
-| [host](../content/host-aws-systems-manager.md) | - | - |
 
 ## Release Notes
 

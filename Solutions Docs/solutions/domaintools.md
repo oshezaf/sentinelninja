@@ -19,11 +19,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **40 content item(s)**:
+This solution includes **9 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 39 |
+| Playbooks | 8 |
 | Parsers | 1 |
 
 ### Playbooks
@@ -37,38 +37,7 @@ This solution includes **40 content item(s)**:
 | [DomainTools DNSDB Co-Located IP Addresses](../content/domaintools-dnsdb-co-located-ip-addresses-domaintools.md) | This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Mi... | - |
 | [DomainTools DNSDB Historical Hosts](../content/domaintools-dnsdb-historical-hosts-domaintools.md) | This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Micros... | - |
 | [DomainTools DNSDB Historical IP Addresses](../content/domaintools-dnsdb-historical-ip-addresses-domaintools.md) | This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Mi... | - |
-| [DomainTools_FunctionAppConnector](../content/domaintools-functionappconnector-domaintools.md) | - | - |
 | [IP Enrichment - DomainTools Parsed Whois](../content/ip-enrichment---domaintools-parsed-whois-domaintools.md) | This playbook uses the DomainTools Parsed Whois API. Given a ip address or set of ip addresses assoc... | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [function](../content/function-domaintools.md) | - | - |
-| [host](../content/host-domaintools.md) | - | - |
 
 ### Parsers
 

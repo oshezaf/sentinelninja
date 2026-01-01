@@ -1,5 +1,7 @@
 # PaloAltoXDR
 
+1. Overview 1. Prerequisites 1. Deploy Palo Alot XDR playbook 1. Deployment Instructions 1. Post-Deployment Instructions 1. References
+
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Playbook |

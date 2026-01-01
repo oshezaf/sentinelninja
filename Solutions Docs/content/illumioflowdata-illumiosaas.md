@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)
-- [`Syslog`](../tables/syslog.md)
 
 ---
 

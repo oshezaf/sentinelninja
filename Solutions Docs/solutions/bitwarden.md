@@ -24,7 +24,7 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | Workbooks |
+| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
 | [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
 | [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
 
@@ -41,9 +41,9 @@ This solution includes **4 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [BitwardenEventLogsAuthentication](../content/bitwardeneventlogsauthentication-bitwarden.md) | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) |
-| [BitwardenEventLogsOrganization](../content/bitwardeneventlogsorganization-bitwarden.md) | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) |
-| [BitwardenEventLogsVaultItems](../content/bitwardeneventlogsvaultitems-bitwarden.md) | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) |
+| [BitwardenEventLogsAuthentication](../content/bitwardeneventlogsauthentication-bitwarden.md) | - |
+| [BitwardenEventLogsOrganization](../content/bitwardeneventlogsorganization-bitwarden.md) | - |
+| [BitwardenEventLogsVaultItems](../content/bitwardeneventlogsvaultitems-bitwarden.md) | - |
 
 ### Parsers
 

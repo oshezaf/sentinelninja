@@ -11,9 +11,7 @@
 This content item queries data from the following tables:
 
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`DeviceInfo`](../tables/deviceinfo.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`SigninLogs`](../tables/signinlogs.md)
 - [`watchlist`](../tables/watchlist.md)
 
 ---

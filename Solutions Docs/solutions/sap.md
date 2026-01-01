@@ -24,26 +24,18 @@ This solution queries **1 table(s)** from its content items:
 
 ## Content Items
 
-This solution includes **10 content item(s)**:
+This solution includes **2 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 10 |
+| Playbooks | 2 |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Basic-SAPLockUser-STD](../content/basic-saplockuser-std-sap.md) | - | - |
-| [SAPCollectorRemediate-STD](../content/sapcollectorremediate-std-sap.md) | - | - |
-| [azureconnectordeploy](../content/azureconnectordeploy-sap.md) | - | - |
-| [azureconnectordeploy](../content/azureconnectordeploy-sap.md) | - | - |
-| [connections](../content/connections-sap.md) | - | - |
-| [connections](../content/connections-sap.md) | - | - |
-| [workflow](../content/workflow-sap.md) | - | [`SAPConnectorHealth`](../tables/sapconnectorhealth.md) *(read)* |
-| [workflow](../content/workflow-sap.md) | - | [`SAPConnectorHealth`](../tables/sapconnectorhealth.md) *(read)* |
-| [workflowparameters](../content/workflowparameters-sap.md) | - | - |
-| [workflowparameters](../content/workflowparameters-sap.md) | - | - |
+| [workflow](../content/workflow-sap.md) | < 🏡home | [`SAPConnectorHealth`](../tables/sapconnectorhealth.md) *(read)* |
+| [workflow](../content/workflow-sap.md) | < 🏡home | [`SAPConnectorHealth`](../tables/sapconnectorhealth.md) *(read)* |
 
 ## Additional Documentation
 

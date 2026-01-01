@@ -20,7 +20,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **23 table(s)**:
+This solution uses **22 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -40,7 +40,6 @@ This solution uses **23 table(s)**:
 | [`Cymru_Scout_IP_Data_x509_CL`](../tables/cymru-scout-ip-data-x509-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
 | [`Domain_Data_CL`](../tables/domain-data-cl.md) | - | Workbooks |
 | [`InsightsMessageTable`](../tables/insightsmessagetable.md) | - | Workbooks |
-| [`Open_Ports_Data_CL`](../tables/open-ports-data-cl.md) | - | Workbooks |
 | [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) | - | Workbooks |
 | [`Summary_Details_CL`](../tables/summary-details-cl.md) | - | Workbooks |
 | [`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md) | - | Workbooks |
@@ -63,7 +62,7 @@ This solution includes **28 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TeamCymruScout](../content/teamcymruscout-team-cymru-scout.md) | [`Cymru_Scout_Account_Usage_Data_CL`](../tables/cymru-scout-account-usage-data-cl.md)<br>[`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md)<br>[`Domain_Data_CL`](../tables/domain-data-cl.md)<br>[`InsightsMessageTable`](../tables/insightsmessagetable.md)<br>[`Open_Ports_Data_CL`](../tables/open-ports-data-cl.md)<br>[`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md)<br>[`Summary_Details_CL`](../tables/summary-details-cl.md)<br>[`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md) |
+| [TeamCymruScout](../content/teamcymruscout-team-cymru-scout.md) | [`Cymru_Scout_Account_Usage_Data_CL`](../tables/cymru-scout-account-usage-data-cl.md)<br>[`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md)<br>[`Domain_Data_CL`](../tables/domain-data-cl.md)<br>[`InsightsMessageTable`](../tables/insightsmessagetable.md)<br>[`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md)<br>[`Summary_Details_CL`](../tables/summary-details-cl.md)<br>[`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md) |
 
 ### Playbooks
 

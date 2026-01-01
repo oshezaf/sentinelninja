@@ -15,45 +15,31 @@ This reference documentation provides detailed information about data connectors
 
 ## Overview
 
-This documentation covers **485 solutions**, of which **384** include data connectors, providing access to **524 unique connectors** and **828 unique tables**.
+This documentation covers **487 solutions**, of which **378** include data connectors, providing access to **512 unique connectors** and **770 unique tables**.
 
 ### Quick Statistics
 
 | Metric | Count |
 |--------|-------|
-| Total Solutions | 485 |
-| Solutions with Connectors | 384 (79%) |
-| Unique Connectors | 524 |
-| Unique Tables | 828 |
-
-### Content Items Statistics
-
-| Content Type | Count |
-|:-------------|:------|
-| Analytic Rules | 2165 |
-| Hunting Queries | 1158 |
-| Playbooks | 709 |
-| Parsers | 508 |
-| Workbooks | 349 |
-| Watchlists | 41 |
-| **Total** | **4930** |
-
-*Content items found in 383 of 485 solutions (78%)*
+| Total Solutions | 487 |
+| Solutions with Connectors | 378 (77%) |
+| Unique Connectors | 512 |
+| Unique Tables | 770 |
 
 ### Collection Methods
 
 | Collection Method | Total Connectors | Active Connectors* | Total Solutions | Active Solutions* |
 |:-----------------|:----------------:|:-----------------:|:---------------:|:----------------:|
-| Azure Function | 129 | 111 | 102 | 102 |
-| CCF | 123 | 122 | 109 | 109 |
-| AMA | 105 | 34 | 99 | 30 |
+| Azure Function | 129 | 111 | 102 | 100 |
+| CCF | 114 | 113 | 101 | 101 |
+| AMA | 103 | 32 | 98 | 29 |
 | Unknown (Custom Log) | 56 | 47 | 54 | 45 |
 | MMA | 52 | 8 | 53 | 15 |
 | Native | 25 | 25 | 20 | 20 |
-| Azure Diagnostics | 17 | 17 | 17 | 17 |
-| REST API | 14 | 14 | 15 | 15 |
+| REST API | 15 | 15 | 16 | 16 |
+| Azure Diagnostics | 15 | 15 | 15 | 15 |
 | Unknown | 3 | 3 | 4 | 4 |
-| **Total** | **524** | **381** | **384** | **300** |
+| **Total** | **512** | **369** | **378** | **292** |
 
 *\*Active excludes connectors and solutions marked as deprecated.*
 
@@ -237,6 +223,7 @@ Browse solutions alphabetically:
 | [Darktrace](solutions/darktrace.md) | 2022-05-02 | Darktrace |
 | [Datalake2Sentinel](solutions/datalake2sentinel.md) | 2024-01-15 | Orange Cyberdefense |
 | [Dataminr Pulse](solutions/dataminr-pulse.md) | 2023-04-12 | Dataminr Support |
+| [Datawiza](solutions/datawiza.md) | 2025-11-10 | Datawiza Technology Inc. |
 | [Delinea Secret Server](solutions/delinea-secret-server.md) | 2022-05-06 | Delinea |
 | [Dev 0270 Detection and Hunting](solutions/dev-0270-detection-and-hunting.md) | 2022-11-29 | Microsoft Corporation |
 | [Digital Guardian Data Loss Prevention](solutions/digital-guardian-data-loss-prevention.md) | 2021-07-23 | Microsoft Corporation |
@@ -334,6 +321,7 @@ Browse solutions alphabetically:
 | [HIPAA Compliance](solutions/hipaa-compliance.md) | 2025-10-08 | Microsoft Corporation |
 | [HYAS](solutions/hyas.md) | 2021-10-20 | HYAS |
 | [HYAS Protect](solutions/hyas-protect.md) | 2023-09-26 | HYAS |
+| [Halcyon](solutions/halcyon.md) | 2025-12-22 | Halcyon |
 | [HolmSecurity](solutions/holmsecurity.md) | 2022-07-18 | Holm Security |
 | [HoneyTokens](solutions/honeytokens.md) |  |  |
 

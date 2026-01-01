@@ -17,14 +17,6 @@
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
-
-This solution queries **1 table(s)** from its content items:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`DeviceInfo`](../tables/deviceinfo.md) | Analytics |
-
 ## Content Items
 
 This solution includes **3 content item(s)**:
@@ -37,7 +29,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [AV detections related to Zinc actors](../content/3705158d-e008-49c9-92dd-e538e1549090.md) | High | Impact | [`DeviceInfo`](../tables/deviceinfo.md) |
+| [AV detections related to Zinc actors](../content/3705158d-e008-49c9-92dd-e538e1549090.md) | High | Impact | - |
 | [Zinc Actor IOCs files - October 2022](../content/9a7f6651-801b-491c-a548-8b454b356eaa.md) | High | Persistence | - |
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/95543d6d-f00d-4193-a63f-4edeefb7ec36.md) | High | Persistence | - |
 

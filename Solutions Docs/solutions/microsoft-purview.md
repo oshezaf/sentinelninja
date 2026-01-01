@@ -13,17 +13,9 @@
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+**This solution does not include data connectors.**
 
-- [Microsoft Purview](../connectors/microsoftazurepurview.md)
-
-## Tables Reference
-
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | [Microsoft Purview](../connectors/microsoftazurepurview.md) | Analytics, Workbooks |
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
 ## Content Items
 
@@ -38,14 +30,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Sensitive Data Discovered in the Last 24 Hours](../content/7ae7e8b0-07e9-43cb-b783-b04082f09060.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
-| [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/79f296d9-e6e4-45dc-9ca7-1770955435fa.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
+| [Sensitive Data Discovered in the Last 24 Hours](../content/7ae7e8b0-07e9-43cb-b783-b04082f09060.md) | Informational | Discovery | - |
+| [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/79f296d9-e6e4-45dc-9ca7-1770955435fa.md) | Informational | Discovery | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftPurview](../content/microsoftpurview-microsoft-purview.md) | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
+| [MicrosoftPurview](../content/microsoftpurview-microsoft-purview.md) | - |
 
 ## Release Notes
 

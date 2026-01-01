@@ -4,6 +4,8 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md) |
+| **Event Vendor** | Darktrace |
+| **Event Product** | AI Analyst, Enterprise Immune System |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace/Workbooks/AIA-Darktrace.json) |
 
 ## Tables Used

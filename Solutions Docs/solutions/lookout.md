@@ -26,7 +26,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Analytics, Hunting, Workbooks |
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Workbooks |
 | [`Lookout_CL`](../tables/lookout-cl.md) | [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | Analytics |
 
 ## Content Items
@@ -44,24 +44,24 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Lookout - Critical Audit and Policy Changes (v2)](../content/6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d.md) | Medium | DefenseEvasion, Persistence, PrivilegeEscalation, Impact | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
-| [Lookout - Critical Smishing and Phishing Alerts (v2)](../content/7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e.md) | High | InitialAccess, CredentialAccess, Collection, Discovery | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
-| [Lookout - Device Compliance and Security Status Changes (v2)](../content/9c5b6d8f-3a02-4e9b-af4c-2d7e9b1f5a8c.md) | Medium | Discovery, DefenseEvasion, Persistence | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
-| [Lookout - High Severity Mobile Threats Detected (v2)](../content/8b4a5c7e-2f91-4d8a-9e3b-1c6f8a2d4e9f.md) | High | Discovery, DefenseEvasion, Persistence, PrivilegeEscalation | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [Lookout - Critical Audit and Policy Changes (v2)](../content/6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d.md) | Medium | DefenseEvasion, Persistence, PrivilegeEscalation, Impact | - |
+| [Lookout - Critical Smishing and Phishing Alerts (v2)](../content/7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e.md) | High | InitialAccess, CredentialAccess, Collection, Discovery | - |
+| [Lookout - Device Compliance and Security Status Changes (v2)](../content/9c5b6d8f-3a02-4e9b-af4c-2d7e9b1f5a8c.md) | Medium | Discovery, DefenseEvasion, Persistence | - |
+| [Lookout - High Severity Mobile Threats Detected (v2)](../content/8b4a5c7e-2f91-4d8a-9e3b-1c6f8a2d4e9f.md) | High | Discovery, DefenseEvasion, Persistence, PrivilegeEscalation | - |
 | [Lookout - New Threat events found.](../content/7593cc60-e294-402d-9202-279fb3c7d55f.md) | High | Discovery | [`Lookout_CL`](../tables/lookout-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Lookout Advanced Threat Hunting - Multi-Vector Attacks](../content/lookout-advanced-threat-hunting.md) | Discovery, Persistence, DefenseEvasion | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [Lookout Advanced Threat Hunting - Multi-Vector Attacks](../content/lookout-advanced-threat-hunting.md) | Discovery, Persistence, DefenseEvasion | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [LookoutEvents](../content/lookoutevents-lookout.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
-| [LookoutEventsV2](../content/lookouteventsv2-lookout.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [LookoutEvents](../content/lookoutevents-lookout.md) | - |
+| [LookoutEventsV2](../content/lookouteventsv2-lookout.md) | - |
 | [LookoutExecutiveDashboard](../content/lookoutexecutivedashboard-lookout.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 | [LookoutIOAInvestigationDashboard](../content/lookoutioainvestigationdashboard-lookout.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 | [LookoutSecurityInvestigationDashboard](../content/lookoutsecurityinvestigationdashboard-lookout.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |

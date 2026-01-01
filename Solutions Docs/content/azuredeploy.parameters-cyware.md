@@ -1,5 +1,7 @@
 # azuredeploy.parameters
 
+This Azure Logic App template is designed to integrate Microsoft Sentinel incidents with Cyware Orchestrate, enabling automated incident response actions. When an Microsoft Sentinel alert triggers, this Logic App automatically sends the incident details to Cyware Orchestrate.
+
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Playbook |

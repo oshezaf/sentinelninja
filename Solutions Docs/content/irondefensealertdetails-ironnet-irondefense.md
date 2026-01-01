@@ -4,6 +4,7 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [IronNet IronDefense](../solutions/ironnet-irondefense.md) |
+| **Event Product** | IronDefense |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/Workbooks/IronDefenseAlertDetails.json) |
 
 ## Tables Used
