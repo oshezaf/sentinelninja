@@ -14,7 +14,7 @@ This playbook gets triggered every hour and perform the following actions: 1. Ge
 
 # NCSC-NL NDN Cyber Threat Intelligence Sharing
 
-<img src="./images/ncsc-nl-header.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing/Playbooks/NCSCNLShareSTIXBundle/images/ncsc-nl-header.png" width="50%"/><br>
 
 ## Summary
 

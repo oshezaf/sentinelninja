@@ -17,7 +17,7 @@ This playbook is triggered manually when a URL entity is selected in a Microsoft
 Activating the 'Deploy' button initiates the deployment of an Azure Logic App integrated with Microsoft Sentinel MCP Actions, utilizing a Microsoft Sentinel entity trigger.
 The Logic App is configured to run manually when a URL entity is selected in a Sentinel incident. This Logic App analyzes suspicious URLs and provides detailed security insights including classification, analysis results, and recommendations.
 
-![Deployment](./images/deployment.png)
+![Deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/deployment.png)
 
 **Important Note:** As of now, this playbook only works when triggered from the **Microsoft Sentinel portal in Azure**. It is not currently supported in the Defender portal.
 
@@ -73,7 +73,7 @@ After successful deployment:
 - The playbook will be available to run manually from incident entities
 - Results will be automatically added as comments to the relevant incidents
 
-![Logic App Designer](./images/logicapp_dis.png)
+![Logic App Designer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/logicapp_dis.png)
 
 ### How to Run the Playbook
 
@@ -87,21 +87,12 @@ To manually trigger the URL Entity Analyzer:
 6. Select **Entity-analyzer-Url-Trigger** from the playbook list
 7. The analysis will run and results will be added as a comment to the incident
 
-![Run Playbook](./images/trigger.png)
+![Run Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/trigger.png)
 
 ### How It Works
 
 1. **Manual Trigger**: The Logic App is manually triggered when a security analyst selects a URL entity in a Sentinel incident and runs the playbook
 2. **Analysis**: The URL is sent to Microsoft Sentinel's MCP Entity Analyzer for comprehensive analysis using the SentinelMCP connector
-3. **Processing**: The analysis results are formatted into a readable table format with emojis and proper formatting
-4. **Output**: A detailed comment is automatically added to the incident containing:
-   - Security classification of the URL
-   - Detailed analysis results
-   - Security recommendations
-   - Data sources used
-   - AI-generated disclaimer
-
-### Sample Output
 
 *[Content truncated...]*
 

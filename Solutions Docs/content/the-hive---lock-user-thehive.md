@@ -21,7 +21,7 @@ When a new sentinel incident created, this playbook gets triggered and performs 
 1. Parse alerts custom details
 2. Locks Users by UserId or UserLogin passed from alert.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Playbooks/TheHive-LockUser/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

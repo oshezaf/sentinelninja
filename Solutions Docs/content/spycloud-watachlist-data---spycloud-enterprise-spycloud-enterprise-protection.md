@@ -14,7 +14,7 @@ This Playbook will run daily, gets the watchlist data from SpyCloud API and save
 
 # SpyCloud Enterprise Monitor Watchlist Data Playbook 
 
-![SpyCloud Enterprise](images/logo.png)
+![SpyCloud Enterprise](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/logo.png)
 
 ## Table of Contents
 
@@ -43,7 +43,7 @@ This playbook gets triggered on a daily basis and performs the following actions
 ## Deployment Instructions
 - Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to the Deploy an ARM Template wizard.
 - Fill in the required parameters for deploying the playbook.
-  ![deployment](images/deployment.png)
+  ![deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/deployment.png)
 - Click "Review + create". Once the validation is successful, click on "Create".
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Monitor-Watchlist-Data%2Fazuredeploy.json)
@@ -54,12 +54,12 @@ This playbook gets triggered on a daily basis and performs the following actions
 ## Post-Deployment Instructions
 ### Provide Custom Log Table Name
 - Open the Logic App in the edit mode, click on "Parameters" and provide the name of the custom log table, for ex:SpycloudWatchlistData and click on close.
-  ![parameters](images/parameters.png)
+  ![parameters](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/parameters.png)
 
 ### Recurrence Trigger Instructions
 - The Logic App will run on an interval set to daily. Please do not change the interval, as it may result in duplication of data.
 - If you do not wish to run the playbook immediately, set the start time.
-  ![recurrence](images/recurrence.png)
+  ![recurrence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/recurrence.png)
 
 ### Authorize connections
 Once deployment is complete, you will need to authorize each connection:

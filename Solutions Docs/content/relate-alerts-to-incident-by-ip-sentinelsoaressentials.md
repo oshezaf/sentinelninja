@@ -75,12 +75,12 @@ Once deployment is complete, authorize each connection.
 ## Screenshots
 
 **Incident Trigger**<br>
-![Incident Trigger](./images/IncidentTriggerDark.png)
-![Incident Trigger light](./images/IncidentTriggerLight.png)
+![Incident Trigger](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/relateAlertsToIncident-basedOnIP/images/IncidentTriggerDark.png)
+![Incident Trigger light](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/relateAlertsToIncident-basedOnIP/images/IncidentTriggerLight.png)
 
 **Comment notification**<br>
-![Comment notification](./images/CommentDark.png) <br/>
-![Comment light](./images/CommentLight.png)
+![Comment notification](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/relateAlertsToIncident-basedOnIP/images/CommentDark.png) <br/>
+![Comment light](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/relateAlertsToIncident-basedOnIP/images/CommentLight.png)
 
 ---
 

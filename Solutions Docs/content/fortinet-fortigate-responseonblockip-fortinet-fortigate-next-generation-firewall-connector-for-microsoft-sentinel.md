@@ -19,16 +19,16 @@ This playbook allows the SOC users to automatically response to Microsoft Sentin
 This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which includes IPs, by adding/removing the IPs to the Microsoft Sentinel IP blocked group.
  [Learn more about Threat Intelligence in Fortinet policy](https://www.fortinet.com/fortiguard/threat-intelligence/threat-research)
 
-![Fortinet](./DesginerIPResponse.png)<br>
+![Fortinet](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnIP/DesginerIPResponse.png)<br>
 
 
 **This is the adaptive card SOC will receive when playbook is triggered for each risky IP for taking actions like block/unblock/ignore:**<br><br>
-![Fortinet](./ResponseOnIPAdaptiveCard.PNG)<br>
+![Fortinet](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnIP/ResponseOnIPAdaptiveCard.PNG)<br>
 
 **This is the consolidate adaptive card about the summary of actions taken on IP and the incident configuration:**<br><br>
-![Consolidated Adaptive Card example](./FortinetSummaryAdaptivecard.PNG)<br>
+![Consolidated Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnIP/FortinetSummaryAdaptivecard.PNG)<br>
 
-![Fortinet](./CommentOnIPIncident.PNG)<br>
+![Fortinet](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnIP/CommentOnIPIncident.PNG)<br>
 
 ### Prerequisites 
 - Sentinel IP block group should create in the VM
@@ -88,24 +88,6 @@ Once deployment is complete, you will need to authorize each connection.
 - Get the list of risky/malicious IPs as entities from the Incident.
 
 ### Initialize variables 
-
--  Action Name (type-String) - To determine the action name to be displayed in the adaptive card such as Block or Unblock IP from predefined address group.
-
--  Adaptive card body(type-Array) - To determine the dynamic adaptive card body 
-   
--  Address group Members(type-Array) - To determine the body of predefined address group
-   
--  IP Address Action(type-Array) - Consolidated actions summary on each IP to display in adaptive card
-
--  Predefined group name(type-String)- You can change the pre-defined address group name here
-
-## Post an adaptive card to the SOC channel
-- Trigger an adaptive card for the SOC with all incident information
-
-## Create an address object      
-- Create an address object of type FQDN  if IP received from sentinel (if it not exist).
-
-## Compose a member collection
 
 
 *[Content truncated...]*

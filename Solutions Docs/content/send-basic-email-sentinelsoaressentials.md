@@ -56,12 +56,12 @@ Once deployment is complete, authorize each connection.
 ## Screenshots
 
 **Playbook**<br>
-![Playbook](./images/LightPlaybook_Send-basic-email.png)
-![Playbook](./images/DarkPlaybook_Send-basic-email.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/images/LightPlaybook_Send-basic-email.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/images/DarkPlaybook_Send-basic-email.png)
 
 **Email**<br>
-![Email](./images/LightEmail_Send-basic-email.png)
-![Email](./images/DarkEmail_Send-basic-email.png)
+![Email](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/images/LightEmail_Send-basic-email.png)
+![Email](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-basic-email/images/DarkEmail_Send-basic-email.png)
 
 ---
 

@@ -19,14 +19,14 @@ This playbook allows the SOC users to automatically response to Microsoft Sentin
 This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which includes URL's, by adding the URLs to the Sentinel URL blocked group.
  [Learn more about Threat Intelligence in Fortinet policy](https://www.fortinet.com/fortiguard/threat-intelligence/threat-research)
 
-![Fortinet](./DesginerResposeOnURL.png)<br>
+![Fortinet](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/DesginerResposeOnURL.png)<br>
 
 
 **This is the adaptive card SOC will receive when playbook is triggered for each risky IP for taking actions like block/unblock/ignore ::**<br><br>
-![Fortinet](./ResponseOnURLAdaptiveCard.PNG)<br>
+![Fortinet](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/ResponseOnURLAdaptiveCard.PNG)<br>
 
 **This is the consolidate adaptive card about the summary of actions taken on IP and the incident configuration ::**<br><br>
-![Consolidated Adaptive Card example](./FortinetSummaryAdaptivecardURL.PNG)<br>
+![Consolidated Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnURL/FortinetSummaryAdaptivecardURL.PNG)<br>
 
 
 ### Prerequisites 
@@ -97,23 +97,6 @@ Once deployment is complete, you will need to authorize each connection.
 -  Predefined group name(type-String)- You can change the pre-defined address group name here
 
 ## Post an adaptive card to the SOC channel
-- Trigger an adaptive card for the SOC with all incident information
-
-## Create an address object      
-- Create an address object of type FQDN if URL received from sentinel (if it not exist).
-
-## Compose an member collection
-
-- Capture all the existing member of address group
-
-## Update an address group 
-
-- Block URL or Unblock URL by adding or removing from address group
-
-## Post a summary adaptive card to the SOC channel
-
-- Trigger an adaptive card for the SOC with incident configuration details and provided option to change the configuration
-
 
 *[Content truncated...]*
 

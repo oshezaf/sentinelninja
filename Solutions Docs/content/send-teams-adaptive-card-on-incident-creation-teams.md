@@ -46,14 +46,14 @@ After deployment, attach this playbook to an **automation rule** so it runs when
 6. Return to your **Automation Rule** and try adding the playbook again – it should now be selectable (no longer grayed out)
 ## Screenshots
 **Incident Trigger**
-![Incident Trigger](./images/incidentTrigger-light.png)
+![Incident Trigger](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/incidentTrigger-light.png)
 
-![Incident Trigger](./images/incidentTrigger-dark.png)
+![Incident Trigger](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/incidentTrigger-dark.png)
 
 **Teams Notification**
-![Teams Notification](./images/Teams_Notification_dark.jpg)
+![Teams Notification](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/Teams_Notification_dark.jpg)
 
-![Teams Notification](./images/Teams_Notification_light.jpg)
+![Teams Notification](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/Teams_Notification_light.jpg)
 
 ---
 

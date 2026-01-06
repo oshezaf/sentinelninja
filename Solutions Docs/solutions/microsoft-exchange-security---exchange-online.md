@@ -66,7 +66,7 @@ This solution includes **10 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Microsoft Exchange Security - Exchange Online/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft Exchange Security - Exchange Online/README.md)*
+> 📄 *Source: [Microsoft Exchange Security - Exchange Online/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/README.md)*
 
 ## Overview
 

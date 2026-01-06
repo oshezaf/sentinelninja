@@ -14,7 +14,7 @@ This playbook generates access token in Zscaler API. Call this playbook as a ste
 
 # Zscaler - Authentication
 
-<img src="../Images/Zscaler.png" width="200"><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Zscaler%20API%20authentication/../Images/Zscaler.png" width="200"><br>
 ## Table of Contents
 
 1. [Summary](#overview)
@@ -31,7 +31,7 @@ This playbook generates access token in Zscaler API. Call this playbook as a ste
 This folder contains 1 playbook: 
 * Zscaler Authentication: Can be used to handle the Zscaler Authentication authentication process. The output is a JSessionID which can be used to do other API actions. The playbook can be embedded in other playbooks. Refer this link for the authentication Process: [Authenticate and create an API session](https://help.zscaler.com/zia/api-getting-started#CreateSession)
 
-![Playbook](../Images/Authentication.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Zscaler%20API%20authentication/../Images/Authentication.png)
 
 <a name="Prerequisites"></a>
 

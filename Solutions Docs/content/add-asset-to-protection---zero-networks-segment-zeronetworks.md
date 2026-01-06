@@ -24,7 +24,7 @@ When a new Microsoft Sentinel incident is created, this playbook gets triggered 
 
 **Playbook overview:**
 
-![playbook overview](./images/designerLight.png)
+![playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Playbooks/ZeroNetworksSegment-AddAssettoProtection/images/designerLight.png)
 
 
 ### Prerequisites

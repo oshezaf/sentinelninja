@@ -41,7 +41,7 @@ This solution includes **8 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [ServiceNow TISC/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow TISC/README.md)*
+> 📄 *Source: [ServiceNow TISC/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow%20TISC/README.md)*
 
 ## Introduction
  

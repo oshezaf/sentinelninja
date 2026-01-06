@@ -12,7 +12,7 @@ Designed to analyze Web Access logs from Web Gateways and Firewalls. Scan your l
 
 > 📄 *Source: [SlashNextWebAccessLogAssessment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextWebAccessLogAssessment/readme.md)*
 
-<img src="../logo/slashnext-logo.png" alt="drawing" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextWebAccessLogAssessment/../logo/slashnext-logo.png" alt="drawing" width="50%"/><br>
 
 ## Overview
 

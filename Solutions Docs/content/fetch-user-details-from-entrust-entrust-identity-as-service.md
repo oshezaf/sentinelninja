@@ -17,9 +17,9 @@ This playbook provides the user essential details in comments section of trigger
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions.
  1. Fetches the user details, user group and roles details from Entrust
  2. Adds a rich comment to the incident with all the collected information
-    ![Comment example](./Images/Entrust-EnrichIncidentWithUserDetails_incident_comment.png)
+    ![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks%5CEntrust-EnrichIncidentWithUserDetails/Images/Entrust-EnrichIncidentWithUserDetails_incident_comment.png)
 
-![Playbook Designer view](./Images/Entrust-EnrichIncidentWithUserDetails_light.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks%5CEntrust-EnrichIncidentWithUserDetails/Images/Entrust-EnrichIncidentWithUserDetails_light.png)<br>
 
 ### Prerequisites 
 1. User should be having an active subscription of product to open the product documentation.

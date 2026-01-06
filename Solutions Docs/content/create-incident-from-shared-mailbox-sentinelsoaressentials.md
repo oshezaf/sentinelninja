@@ -29,13 +29,13 @@ This playbook will create a new Microsoft Incident when a new email arrives in t
 # Post-deployment
 1. Assign Microsoft Sentinel Responder role to the managed identity. To do so, choose Identity blade under Settings of the Logic App.
 2. If notification about successful or unsuccessful incident creation is not needed, please delete the "Condition" step<br>
-![FormsTemplate](./images/DeleteConditionDark.jpg)<br>
+![FormsTemplate](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/DeleteConditionDark.jpg)<br>
 3. Authorize Office 365 Outlook connector and Conversion Service connector (HTML to text)
 4. Utilize the email template to get correct data - https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/NewMicrosoftSentinelIncidentCreationTemplate.oft
 
 # Note for email template changes
 1. The email subject must contain "incident" in the name. If this needs to be changed, please update the trigger:<br>
-![SubjectUpdate](./images/EmailSubjectUpdateDark.jpg)<br><br>
+![SubjectUpdate](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/EmailSubjectUpdateDark.jpg)<br><br>
 2. The email body must be in this order:
     - Incident Title: 
     - Incident Description: 
@@ -47,7 +47,7 @@ This playbook will create a new Microsoft Incident when a new email arrives in t
 3. If the order or value of each or any line is changed, it is necessary to adjust that change to the playbook itself. For example - for the "Title" field in the playbook, we are trimming value from the email body that is between "Incident Title: " and "Incident Description: ". For that we are using expression "trim(first(split(last(split(body('Email_body_to_text'),'Incident Title: ')),'Incident Description: ')))"<br><br>
 If you change the order in email body and move "Incident Title" after "Incident Description" update expression for field Title to "trim(first(split(last(split(body('Email_body_to_text'),'<strong>Incident Title: </strong>')),'<strong>Incident Severity: </strong>')))" and fild "Description" to "trim(first(split(last(split(body('Email_body_to_text'),'<strong>Incident Description: </strong>')),'<strong>Incident Title: </strong>')))"<br><br>
 If you rename any field, an expression update is also needed. If you change line "Incident Title: " to "Title - ", update expressions to "trim(first(split(last(split(body('Email_body_to_text'),',<strong>Title - </strong>')),'Incident Description: ')))"
-![trim example](./images/TrimExampleDark.jpg)<br>
+![trim example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/TrimExampleDark.jpg)<br>
 3. Note that lines "Incident Severity: ", "Incident Status: ", and "Assign Incident: " must have one of the offered values!
 4. Line "Assign Incident to: " must contain Azure AD object ID or UPN value!
 
@@ -61,14 +61,15 @@ When editing, important information is that certain fields accept only certain v
 # Screenshots
 
 **Playbook** <br>
-![playbook screenshot](./images/SharedMailboxPlaybookDark.jpg)<br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/SharedMailboxPlaybookDark.jpg)<br>
 
 **Microsoft Sentinel Incident**<br>
-![SentinelIncident](./images/SentinelIncidentDark.jpg)<br>
+![SentinelIncident](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/SentinelIncidentDark.jpg)<br>
 
 **Email notification**<br>
-![Success](./images/successDark.jpg)<br><br>
-![Failure](./images/UnsuccessDark.jpg)<br>
+![Success](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/images/successDark.jpg)<br><br>
+
+*[Content truncated...]*
 
 ---
 

@@ -17,8 +17,8 @@ This Playbook Provides the automation on blocking the suspicious/malicious sende
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. Fetches the list of earlier blocked Senders .
  2. Fetches the new sender from incidents and compare them with existing one and update the blacklist . 
-<img src="./images/o365-BlockSender-EntityTrigger_light.jpg" width="50%"/><br>
-<img src="./images/o365-BlockSender-EntityTrigger_incidentComment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSender-EntityTrigger/images/o365-BlockSender-EntityTrigger_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSender-EntityTrigger/images/o365-BlockSender-EntityTrigger_incidentComment.jpg" width="50%"/><br>
 
 
 ### Prerequisites 
@@ -53,7 +53,7 @@ Once deployment is complete, you will need to authorize each connection.
 2. Configure the automation rules to trigger this playbook, mapping of account is necessary
 3. Refer to Screenshot below
 
-<img src="./images/o365-BlockSender-EntityTrigger_entitymapping.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSender-EntityTrigger/images/o365-BlockSender-EntityTrigger_entitymapping.jpg" width="50%"/><br>
 #### c. Assign Playbook Microsoft Sentinel Responder Role
 1. Select the Playbook (Logic App) resource
 2. Click on Identity Blade

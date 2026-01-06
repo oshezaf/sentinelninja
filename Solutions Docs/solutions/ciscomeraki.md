@@ -25,8 +25,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
-| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
 
 ## Content Items
 
@@ -66,7 +66,7 @@ This solution includes **7 content item(s)**:
 
 # Cisco Meraki Logic Apps Custom Connector and Playbook Templates
 
-![meraki](./Connector/MerakiConnector/logo.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Connector/MerakiConnector/logo.jpg)
 
 
 ## Table of Contents
@@ -127,7 +127,6 @@ API Key Authentication
 | ------------- | ------------- |
 |**For Playbooks**|                 |
 |**Block Device Client Playbook Name** | Enter the Block Device Client playbook name without spaces |
-|**Block IP Address Playbook Name** | Enter the Block IP Address playbook name without spaces |
 
 *[Content truncated...]*
 

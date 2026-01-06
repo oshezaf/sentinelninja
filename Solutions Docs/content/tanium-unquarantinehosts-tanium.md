@@ -21,7 +21,7 @@ The results of the playbook will be added as comments to the incident:
 2. The quarantine action(s)' deployment status
 3. The results of the quarantine action(s)
  
-![Tanium-UnquarantineHosts screenshot](images/Tanium-UnquarantineHosts.png)
+![Tanium-UnquarantineHosts screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-UnquarantineHosts/images/Tanium-UnquarantineHosts.png)
 
 ## Prerequisites
 - Sentinel incidents with associated hosts running the Tanium client   

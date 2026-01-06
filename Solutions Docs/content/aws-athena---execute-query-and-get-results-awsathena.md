@@ -21,8 +21,8 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 1. It executes the query specified during playbook setup on given database. 
 2. Downloads the query result and adds as a comment to the incident.
 
-<img src="./images/Playbook_AWSAthena.jpg" width="50%"/><br>
-<img src="./images/Incident_Comment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWSAthena/Playbooks/AWSAthenaPlaybooks%5CAWSAthena-GetQueryResults/images/Playbook_AWSAthena.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWSAthena/Playbooks/AWSAthenaPlaybooks%5CAWSAthena-GetQueryResults/images/Incident_Comment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

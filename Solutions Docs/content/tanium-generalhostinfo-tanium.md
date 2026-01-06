@@ -18,7 +18,7 @@ This playbook will use the Tanium API to retrieve a set of general endpoint info
 
 The results of the playbook will be added as a comment to the incident.
 
-![Tanium-GeneralHostInfo screenshot](images/Tanium-GeneralHostInfo.png)
+![Tanium-GeneralHostInfo screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-GeneralHostInfo/images/Tanium-GeneralHostInfo.png)
 
 ## Prerequisites
 

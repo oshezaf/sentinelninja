@@ -12,7 +12,7 @@ This playbook uses the Farsight DNSDB connector to automatically enrich IP Addre
 
 > 📄 *Source: [DomainTools-DNSDB-Historical-Addresses/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Addresses/readme.md)*
 
-![DomainTools DNSDB](images/logo.png)
+![DomainTools DNSDB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Addresses/images/logo.png)
 
 # DomainTools DNSDB Historical Addresses
 This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Microsoft Sentinel incidents. This use case describes the desire to identify all Addresses used as DNS A records for a given Host based on a time window from a starting and stopping point in time. 
@@ -31,7 +31,7 @@ This playbook uses the Farsight DNSDB connector to automatically enrich IP Addre
 - Iterates through each entity, perform logic.
 - Adds the historical addresses for each entity as sentinel comments.
 
-![Incident Comments](images/comments.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Addresses/images/comments.png)
 
 <a name="prerequisites">
 
@@ -55,10 +55,10 @@ This playbook uses the Farsight DNSDB connector to automatically enrich IP Addre
 Once deployment is complete please open the logic app and follow below steps
 - As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to [this document](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204) and provide permissions to the Logic App accordingly.
 - Provide connection details for the Farsight DNSDB Custom Connector.
-![connections one](images/for_each_01.png)
+![connections one](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Addresses/images/for_each_01.png)
 - You could provide time fencing options, please only provide values from the list (1h,6h,12h,24h, 30d, 60d,90d,365d(Default 1h)).
-![incident after](images/results_after.png)
-![incident before](images/results_before.png)
+![incident after](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Addresses/images/results_after.png)
+![incident before](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Addresses/images/results_before.png)
 - Save the Logic App. If the Logic App prompts any missing connections, please update the connections accordingly.
 ### Configurations in Sentinel:
 - Configure the analytic rules->Automated response>Automation rules to trigger this playbook.

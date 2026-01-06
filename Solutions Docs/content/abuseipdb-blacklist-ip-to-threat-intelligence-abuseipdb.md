@@ -17,7 +17,7 @@ By every day reccurence, this playbook gets triggered and performs the following
 By every day reccurence, this playbook gets triggered and performs the following actions:
  1. Gets [list](https://docs.abuseipdb.com/#blacklist-endpoint) of the most reported IP addresses form the Blacklist Endpoint.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-BlacklistIpToThreatIntelligence/playbook_screenshot.png" width="80%"/><br>
 ### Prerequisites 
 1. AbuseIPDB Custom Connector has to be deployed prior to the deployment of this playbook under the same subscription.
 2. To use the Microsoft Graph Security connector actions, Microsoft Entra ID tenant administrator consent needs to be provided. The Microsoft Graph Security connector application ID and name for Microsoft Entra ID in is as follows for Microsoft Entra ID administrator consent: 

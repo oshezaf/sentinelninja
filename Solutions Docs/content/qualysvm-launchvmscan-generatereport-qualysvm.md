@@ -22,8 +22,8 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 4. Download the report and store it to a blob storage.
 5. Add the link of report as a comment to the incident.
 
-<img src="./images/Playbook_QualysVM-LaunchVMScan-GenerateReport.jpg" width="50%"/><br>
-<img src="./images/Playbook_Incident_Comment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks%5CQualysVM-LaunchVMScan-GenerateReport/images/Playbook_QualysVM-LaunchVMScan-GenerateReport.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks%5CQualysVM-LaunchVMScan-GenerateReport/images/Playbook_Incident_Comment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

@@ -24,8 +24,8 @@ This playbook can be run from incident context manually or from automation rule 
 3. Parse the result and format as table.
 3. Add the result as comment to the incident. 
 
-<img src="./images/GCPBigQuery-EnrichEntity-With-BigQueryTableData_light.jpg" width="50%"/><br>
-<img src="./images/GCPBigQuery-EnrichEntity-With-BigQueryTableDataOutput_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks%5CGCPBigQuery-EnrichEntity-With-BigQueryTableData/images/GCPBigQuery-EnrichEntity-With-BigQueryTableData_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks%5CGCPBigQuery-EnrichEntity-With-BigQueryTableData/images/GCPBigQuery-EnrichEntity-With-BigQueryTableDataOutput_light.jpg" width="50%"/><br>
 
 ### Prerequisites
 

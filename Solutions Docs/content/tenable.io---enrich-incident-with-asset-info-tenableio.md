@@ -29,7 +29,7 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 3. Gets assets information.
 4. Adds obtained information as a comment to the incident.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO/Playbooks/Playbooks%5CTenable-EnrichIncidentWithAssetsInfo/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

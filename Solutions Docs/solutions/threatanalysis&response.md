@@ -57,7 +57,7 @@ This solution includes **2 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [ThreatAnalysis&Response/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatAnalysis&Response/README.md)*
+> 📄 *Source: [ThreatAnalysis&Response/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatAnalysis%26Response/README.md)*
 
 # Overview
 ---

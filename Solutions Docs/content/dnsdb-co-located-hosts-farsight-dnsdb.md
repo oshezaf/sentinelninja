@@ -19,7 +19,7 @@ Learn more about the integration via the https://docs.microsoft.com/connectors/f
 
 ## Screenshots
 
-![Incident Comments](./Graphics/co_located_hosts.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_Hosts/Graphics/co_located_hosts.png)
 
 
 ## Links to deploy the DNSDB_Co_Located_Hosts playbook template:

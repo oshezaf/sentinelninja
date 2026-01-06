@@ -17,11 +17,11 @@ This playbook adds new observable in EclecticIQ based on the entities info prese
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. Create or Update (if already exists) observable in EclecticIQ for each entity (Accounts, Host, IP Address, FileHash, URL) that is presented in Sentinel incident
  2. This playbook adds new comment to sentinel incident
-    ![Comment example](./images/EclecticIQ_CA_IncidentComment_DarkTheme.png)
+    ![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks%5CEclecticIQ-CreateObservable/images/EclecticIQ_CA_IncidentComment_DarkTheme.png)
 
 
 
-![Playbook Designer view](./images/EclecticIQ_CA_Workflow_DarkTheme.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks%5CEclecticIQ-CreateObservable/images/EclecticIQ_CA_Workflow_DarkTheme.png)<br>
 
 ### Prerequisites 
 1. EclecticIQ Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.

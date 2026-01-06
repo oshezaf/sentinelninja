@@ -14,7 +14,7 @@ The SpyCloud Enterprise API is able to provide breach data for a domain or set o
 
 # SpyCloud Enterprise Domain Breach Data Playbook 
 
-![SpyCloud Enterprise](images/logo.png)
+![SpyCloud Enterprise](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/logo.png)
 
 ## Table of Contents
 
@@ -32,7 +32,7 @@ The SpyCloud Enterprise API provides breach data for a domain or set of domains 
 - Iterates through the domain objects and fetches the breach data from SpyCloud Enterprise for each domain.
 - All the breach data from SpyCloud Enterprise will be added as incident comments in a tabular format.
 
-![Incident Comments](images/comments.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/comments.png)
 
 <a name="prerequisites">
 
@@ -45,7 +45,7 @@ The SpyCloud Enterprise API provides breach data for a domain or set of domains 
 ## Deployment Instructions
 - Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to the Deploy an ARM Template wizard.
 - Fill in the required parameters for deploying the playbook.
-  ![deployment](images/deployment.png)
+  ![deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/deployment.png)
 - Click "Review + create". Once the validation is successful, click on "Create".
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Get-Domain-Breach-Data-Playbook%2Fazuredeploy.json)
@@ -57,7 +57,7 @@ The SpyCloud Enterprise API provides breach data for a domain or set of domains 
 Once deployment is complete, you will need to authorize each connection:
 - As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to [this document](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204) and provide permissions to the Logic App accordingly.
 - Provide connection details for the SpyCloud Enterprise Custom Connector.
-![for_each](images/for_each.png)
+![for_each](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/for_each.png)
 - Save the Logic App. If the Logic App prompts any missing connections, please update the connections similarly.
 ### Configurations in Sentinel:
 - In Microsoft Sentinel, analytical rules should be configured to trigger an incident with a DNS entity.

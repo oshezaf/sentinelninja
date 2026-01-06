@@ -17,9 +17,9 @@ This playbook provides the user essential details in comments section of inciden
  When a Soc analyst, triggered this playbook over some name entity then Playbook performs below actions
  1. Fetches the user details, user group and roles details from Entrust
  2. Adds a rich comment to the incident associated with entity with all the collected information
-    ![Comment example](./Images/Entrust-EnrichUser-EntityTrigger_incident_comment.png)
+    ![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks%5CEntrust-EnrichUser-EntityTrigger/Images/Entrust-EnrichUser-EntityTrigger_incident_comment.png)
 
-![Playbook Designer view](./Images/Entrust-EnrichUser-EntityTrigger.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks%5CEntrust-EnrichUser-EntityTrigger/Images/Entrust-EnrichUser-EntityTrigger.png)<br>
 
 ### Prerequisites 
 1. User should be having an active subscription of product to open the product documentation.

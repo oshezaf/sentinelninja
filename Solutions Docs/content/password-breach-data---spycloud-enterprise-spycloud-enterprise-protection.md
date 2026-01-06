@@ -14,7 +14,7 @@ The SpyCloud Enterprise API is able to provide breach data for a provided passwo
 
 # SpyCloud Enterprise Password Breach Data Playbook 
 
-![SpyCloud Enterprise](images/logo.png)
+![SpyCloud Enterprise](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Password-Breach-Data-Playbook/images/logo.png)
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@ When this playbook gets triggered, it performs the following actions:
 ## Deployment Instructions
 - Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to deploy an ARM Template wizard.
 - Fill in the required parameters for deploying the playbook.
-  ![deployment](images/deployment.png)
+  ![deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Password-Breach-Data-Playbook/images/deployment.png)
 - Click "Review + create". Once the validation is successful, click on "Create".
   
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Get-Password-Breach-Data-Playbook%2Fazuredeploy.json)
@@ -56,7 +56,7 @@ When this playbook gets triggered, it performs the following actions:
 ### Authorize connections
 Once deployment is complete, you will need to authorize each connection:
 - Provide connection details for the SpyCloud Enterprise Custom Connector.
-![for_each](images/for_each.png)
+![for_each](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Password-Breach-Data-Playbook/images/for_each.png)
 - Save the Logic App. If the Logic App prompts any missing connections, please update the connections similarly.
 
 ---

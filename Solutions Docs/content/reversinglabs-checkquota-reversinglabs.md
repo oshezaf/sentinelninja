@@ -48,7 +48,7 @@ Once deployment is complete, you will need to authorize each connection.
 This template deploys an Azure Key Vault in order to store credentials used by the playbook. The template will also enable a managed identity for the playbook, and assign the managed identity the Key Vault Secrets User role scoped to the deployed Key Vault.
 
 ## Screenshots
-![Playbook overview](./images/playbook.jpg)
+![Playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs/Playbooks/ReversingLabs-CheckQuota/images/playbook.jpg)
 
 ## References
 - [ReversingLabs content pack installation guide](https://reversinglabs-marketplace.azureedge.net/help/ReversingLabsSentinelContentHubInstall.pdf)

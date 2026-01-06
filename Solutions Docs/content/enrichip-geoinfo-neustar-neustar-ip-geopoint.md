@@ -22,8 +22,8 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 2. Gets Geographical location information from Neustart IP GeoPoint API
 3. Summarize the details and add as a comment to the incident.
 
-<img src="./images/Playbook_NeustarGetIPGeoInfo.jpg" width="50%"/><br>
-<img src="./images/Playbook_Incident_Comment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint/Playbooks/Neustar-GetIPGeoInfo/images/Playbook_NeustarGetIPGeoInfo.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint/Playbooks/Neustar-GetIPGeoInfo/images/Playbook_Incident_Comment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

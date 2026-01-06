@@ -24,13 +24,13 @@ When a new Microsoft Sentinel is created,this playbook gets triggered and perfor
 3. Else, incident will get updates with endpoint information and summary of the action taken. 
 4. Update the firewall tags "configuration" as key and "sentinel" as value.
 
-![IP Address to add Threat Intel Allow List](./designerScreenShot.PNG)<br><br>
+![IP Address to add Threat Intel Allow List](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-AddIPtoTIAllowList/designerScreenShot.PNG)<br><br>
 
 **This is the adaptive card SOC will recieve when playbook is triggered:**<br><br>
-![Adaptive Card example](./AdaptiveCard.jpg)
+![Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-AddIPtoTIAllowList/AdaptiveCard.jpg)
 
 **Comment example:**<br><br>
-![Comment example](./Incident_Comment.png)
+![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-AddIPtoTIAllowList/Incident_Comment.png)
 
 ### Prerequisites 
 1. **This playbook template is based on Microsoft Sentinel Incident Trigger which is currently in Private Preview (Automation Rules).** You can change the trigger to the Sentinel Alert trigger in cases you are not part of the Private Preview.
@@ -78,13 +78,6 @@ Once deployment is complete, you will need to authorize each connection.
 
       c. Find the action with the name "Lists all Azure Firewalls in a resource group " , "Gets the specified Firewall Policy", "Creates or updates the specified Firewall Policy" in the workflow.
 
-      d. Click Change connection -- Enter Connection name, ClientId, SecretKey and TenantId captured from Microsoft Entra ID. 
-
-#### b. Configurations in Sentinel
-1. In Microsoft Sentinel analytical rules should be configured to trigger an incident with IP Entity.
-2. Configure the automation rules to trigger this playbook
-
-## Playbook steps explained
 
 *[Content truncated...]*
 

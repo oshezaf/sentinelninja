@@ -19,7 +19,7 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 1. For each Account in the incident suspends user in Cisco ISE by its name.
 2. Adds comment to the incident with information about suspended users.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Playbooks/CiscoISE-SuspendGuestUser/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

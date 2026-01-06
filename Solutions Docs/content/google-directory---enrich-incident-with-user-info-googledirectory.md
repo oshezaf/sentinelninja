@@ -19,7 +19,7 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
  2. [Obtains information about user.](https://developers.google.com/admin-sdk/directory/reference/rest/v1/users/get)
  3. Enriches the incident with the obtained info.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleDirectory/Playbooks/Playbooks%5CGoogle-EnrichIncidentWithUserInfo/playbook_screenshot.png" width="80%"/><br>
 ### Prerequisites 
 1. [Google Directory Custom API Connector](./../../GoogleDirectoryAPIConnector/) has to be deployed prior to the deployment of this playbook under the same subscription.
 2. Google Directory API credentials are required. Refer to [the Google Directory Custom Connector documentation](./../../GoogleDirectoryAPIConnector/).

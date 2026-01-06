@@ -67,11 +67,11 @@ This logic app is designed to trigger on Microsoft Sentinel Incident Creation.
 
 Once the rule is triggered, the logic app begins to restructure the payload  body to enable easy actioning on Cyware Orchestrate.
 
-![Data Reformatting](images/Microsoft%20Sentinel%20-%20Configure%20Data%20Transformations.png "Data Reformatting")
+![Data Reformatting](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware/Playbooks/Send_Incident_To_Cyware_Orchestrate/images/Microsoft%2520Sentinel%2520-%2520Configure%2520Data%2520Transformations.png%20%22Data%20Reformatting%22)
 
 This reformatted payload is forwarded to the Cyware Orchestrate Webhook URL, that is taken from the variable defined
 
-![Send to Cyware Orchestrate](images/Microsoft%20Sentinel%20-%20Send%20Data%20To%20Cyware%20Orcehstrate.png "Send to Cyware Orchestrate")
+![Send to Cyware Orchestrate](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware/Playbooks/Send_Incident_To_Cyware_Orchestrate/images/Microsoft%2520Sentinel%2520-%2520Send%2520Data%2520To%2520Cyware%2520Orcehstrate.png%20%22Send%20to%20Cyware%20Orchestrate%22)
 
 ## Customization
 
@@ -98,9 +98,8 @@ The above copyright notice and this permission notice (including the next paragr
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL CYWARE LABS, INC. OR ITS AFFILIATES BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Contact
 
-For help or additional information, contact the repository maintainer at support@cyware.com or submit an issue in this repository.
+*[Content truncated...]*
 
 ---
 

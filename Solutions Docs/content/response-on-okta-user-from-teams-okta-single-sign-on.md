@@ -20,10 +20,10 @@ When a new sentinal incident is created,this playbook gets triggered and perform
 2.  The SOC is allowed to take action on risky user based on the information provided in the adaptive card.
 
 
-![Playbook Designer view](./Okta-ResponseFromTeams.PNG)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-ResponseFromTeams/Okta-ResponseFromTeams.PNG)<br>
 
 **This is the adaptive card SOC will recieve when playbook is triggered:**<br><br>
-![Adaptive Card example](./images/AdaptiveCardtoSOCuser.PNG)<br><br>
+![Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-ResponseFromTeams/images/AdaptiveCardtoSOCuser.PNG)<br><br>
 
 
 
@@ -88,9 +88,6 @@ Iterates on the accounts found in this incident (probably one) and performs the 
      f. Ignore
 
  4. Update incident to change severity and status according to choice of SOC admin through adaptive card  
- 5. Add a comment to the incident with the below details:
-    * With all the user information collected by "Get User" action from Okta 
-       * User id, User name, User login, User email, User status, User created, User activated, User statusChanged, User lastLogin, User lastUpdated, User passwordChanged
 
 *[Content truncated...]*
 

@@ -12,7 +12,7 @@ Given a domain or set of domains associated with an incident return all Iris Enr
 
 > 📄 *Source: [DomainTools-Iris-Enrich-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Enrich-Playbook/readme.md)*
 
-![DomainTools](images/logo.png)<br>
+![DomainTools](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Enrich-Playbook/images/logo.png)<br>
 ## DomainTools Iris Enrich Domain Playbook
 ## Table of Contents
 
@@ -38,7 +38,7 @@ When a new Azure Sentinel Incident is created, and this playbook is triggered, i
 - All the details from DomainTools Iris Enrich will be added as comments in a tabular format.
 
 
-![Incident Comments](images/enrich_comments.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Enrich-Playbook/images/enrich_comments.png)
 
 <a name="deployplaybook">
 
@@ -63,7 +63,7 @@ Authentication methods this connector supports:
 ### Deployment instructions
 - Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.
 - Fill in the required parameters for deploying the playbook.
-  ![deployment](images/deployment.png)  
+  ![deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Enrich-Playbook/images/deployment.png)  
 - Click "Review + create". Once the validation is successful, click on "Create".
 
 

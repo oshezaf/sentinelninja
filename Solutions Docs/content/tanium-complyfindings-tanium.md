@@ -18,7 +18,7 @@ This playbook will use the Tanium API to retrieve Tanium Comply Findings from ho
 
 The results of the playbook will be added as a comment to the incident.
 
-![Tanium-ComplyFindings screenshot](images/Tanium-ComplyFindings.png)
+![Tanium-ComplyFindings screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-ComplyFindings/images/Tanium-ComplyFindings.png)
 
 ## Prerequisites
 

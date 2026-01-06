@@ -58,11 +58,11 @@ Once deployment is complete, authorize each connection.
 ## Screenshots
 
 **Playbook**<br>
-![Playbook](./images/designerLight.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Post-Message-Teams%5Cincident-trigger/images/designerLight.png)
 
 **Teams Message Example**<br>
-![Teams Message Light](../images/TeamsLight.png)
-![Teams Message Dark](../images/TeamsDark.png)
+![Teams Message Light](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Post-Message-Teams%5Cincident-trigger/../images/TeamsLight.png)
+![Teams Message Dark](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Post-Message-Teams%5Cincident-trigger/../images/TeamsDark.png)
 
 ---
 

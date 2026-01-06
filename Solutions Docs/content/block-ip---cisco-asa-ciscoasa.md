@@ -22,17 +22,17 @@ When a new Sentinel incident is created,this playbook gets triggered and perform
 1. For the IPs we check if the are already a member of the Network Object Group
 2. An adaptive card is sent to a Teams channel with information about the incident and giving the option to ignore an IP, or depdening on it's current status block it by adding it to the Network Object Group or unblock it by removing it from the Network Object Group
 
-    ![Adaptive card](./images/AddIPtoNetworkObjectGroup-AdaptiveCard.png)
+    ![Adaptive card](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-AddIPtoNetworkObjectGroup/images/AddIPtoNetworkObjectGroup-AdaptiveCard.png)
 3. Comment is added to Microsoft Sentinel incident.
-    ![playbook overview](./images/AddIPtoNetworkObjectGroup-AzureSentinel-Comments.png)
+    ![playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-AddIPtoNetworkObjectGroup/images/AddIPtoNetworkObjectGroup-AzureSentinel-Comments.png)
 
 **IP is added to Cisco ASA object group:**
 
-![playbook overview](./images/AddIPtoNetworkObjectGroup-CiscoASAd.png)
+![playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-AddIPtoNetworkObjectGroup/images/AddIPtoNetworkObjectGroup-CiscoASAd.png)
 
 **Playbook overview:**
 
-![playbook overview](./images/AddIPtoNetworkObjectGroup-LogicApp.png)
+![playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-AddIPtoNetworkObjectGroup/images/AddIPtoNetworkObjectGroup-LogicApp.png)
 
 
 

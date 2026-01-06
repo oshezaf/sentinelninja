@@ -19,11 +19,11 @@ Learn more about the integration via the https://docs.microsoft.com/connectors/i
 
 ## Sentinel Incident Comments Screenshot
 
-![Incident Comments](./Graphics/comments.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPQualityScore/Playbooks/Enrich_Sentinel_IPQualityScore_Domain_Reputation/Graphics/comments.png)
 
 ## Reputation Threat Metrix
 
-![Threat Metrix](./Graphics/domain_threat_metrix.png)
+![Threat Metrix](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPQualityScore/Playbooks/Enrich_Sentinel_IPQualityScore_Domain_Reputation/Graphics/domain_threat_metrix.png)
 
 ## Links to deploy the Enrich_Sentinel_IPQualityScore_Domain_Reputation playbook template:
 

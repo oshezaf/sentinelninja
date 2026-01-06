@@ -16,7 +16,7 @@ Maintaining alert hygiene in multiple consoles can be overwhelming. This playboo
 
 This playbook will resolve any associated alerts in Tanium Threat Response associated with a Microsoft Sentinel incident. The result of resolving the alert will be added as a comment on the incident.
 
-![Tanium-ResolveThreatResponseAlert screenshot](images/Tanium-ResolveThreatResponseAlert.png)
+![Tanium-ResolveThreatResponseAlert screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-ResolveThreatResponseAlert/images/Tanium-ResolveThreatResponseAlert.png)
 
 ## Prerequisites
 - Sentinel incidents created using the "Tanium Threat Response Alerts" analytic rule  

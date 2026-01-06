@@ -23,8 +23,8 @@ The playbook can be triggered manually from an IP Entity to get the missing patc
  3. Get the missing patches for the Instance ID.
  4. Add the missing patches to the incident comment.
 
-<img src="./images/AWS-SSM-GetInstancePatches-IPTrigger_light.jpg" width="50%"/><br>
-<img src="./images/AWS-SSM-GetInstancePatches-IPEntityTrigger_IncidentComment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-GetInstancePatches-IPEntityTrigger/images/AWS-SSM-GetInstancePatches-IPTrigger_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-GetInstancePatches-IPEntityTrigger/images/AWS-SSM-GetInstancePatches-IPEntityTrigger_IncidentComment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

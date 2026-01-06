@@ -18,8 +18,8 @@ This Playbook Provides the automation on blocking the suspicious/malicious attac
  1. Fetches the list of earlier blocked upnsuffix/domain .
  2. Fetches the new upnsuffix/domain from incidents and compare them with existing one and update the blacklist .
   
-<img src="./images/o365-BlockSpamDomain_light.jpg" width="50%"/><br>
-<img src="./images/o365-BlockSpamDomain_incidentcomment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSpamDomain/images/o365-BlockSpamDomain_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSpamDomain/images/o365-BlockSpamDomain_incidentcomment.jpg" width="50%"/><br>
 
 ### Prerequisites 
 1. Defender for office 365 function app custom connector needs to be deployed prior to the deployment of this playbook under the same subscription.
@@ -54,7 +54,7 @@ Once deployment is complete, you will need to authorize each connection.
 2. Configure the automation rules to trigger this playbook, mapping of Account is necessary
 3. Refer to Screenshot below
 
-<img src="./images/o365-BlockSpamDomain_entityMapping.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSpamDomain/images/o365-BlockSpamDomain_entityMapping.jpg" width="50%"/><br>
 #### c. Assign Playbook Microsoft Sentinel Responder Role
 1. Select the Playbook (Logic App) resource
 2. Click on Identity Blade

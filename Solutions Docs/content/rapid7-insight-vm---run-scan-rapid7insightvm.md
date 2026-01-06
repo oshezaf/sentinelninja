@@ -23,12 +23,12 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 3. Obtains a list of scan engines.
 4. Sends an adaptive card to the Teams channel where the user can choose an action to be taken.
 
-<img src="./teams_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Playbooks/Playbooks%5CRapid7InsightVM-RunScan/teams_screenshot.png" width="50%"/><br>
 
 5. Runs scans for selected IPs using chosen scan engines.
 6. Add inforamtions about launched scans as a comment to the incident.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Playbooks/Playbooks%5CRapid7InsightVM-RunScan/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

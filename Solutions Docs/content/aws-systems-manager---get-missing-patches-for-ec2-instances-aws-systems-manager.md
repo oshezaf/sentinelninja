@@ -23,8 +23,8 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
  3. Get the missing patches for the Instance IDs.
  4. Add the missing patches to the incident comment.
 
-<img src="./images/AWS-SSM-GetInstancePatches_light.jpg" width="50%"/><br>
-<img src="./images/AWS-SSM-GetInstancePatches_IncidentComment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-GetInstancePatches/images/AWS-SSM-GetInstancePatches_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-GetInstancePatches/images/AWS-SSM-GetInstancePatches_IncidentComment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

@@ -24,8 +24,8 @@ Playbook performs the following actions:
 3. Stop the EC2 instances using the Instance IDs.
 4. Add a comment to the incident with the list of instances that were stopped.
 
-<img src="./images/AWS-SSM-StopManagedInstance_light.jpg" width="50%"/><br>
-<img src="./images/AWS-SSM-StopManagedInstance_IncidentComment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-StopManagedInstance/images/AWS-SSM-StopManagedInstance_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-StopManagedInstance/images/AWS-SSM-StopManagedInstance_IncidentComment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

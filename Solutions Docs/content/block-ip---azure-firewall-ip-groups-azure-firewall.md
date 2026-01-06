@@ -25,13 +25,13 @@ When a new Sentinel incident is created,this playbook gets triggered and perform
 3. Else, incident will get updates with endpoint information and summary of the action taken. 
 4. Update the firewall tags "configuration" as key and "sentinel" as value.
 
-![Add IP Address to IP Groups](./images/designerScreenshotLight.PNG)<br>
+![Add IP Address to IP Groups](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/designerScreenshotLight.PNG)<br>
 
 **This is the adaptive card SOC will recieve when playbook is triggered:**<br><br>
-![Adaptive Card example](./images/IPGroupsAdaptiveCardDark.png)
+![Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/IPGroupsAdaptiveCardDark.png)
 
 **Comment example:**<br><br>
-![Comment example](./images/Incident_Comment.png)
+![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/Incident_Comment.png)
 
 
 ### Prerequisites 
@@ -79,14 +79,6 @@ Once deployment is complete, you will need to authorize each connection.
 
      c. Find the action with the name "Gets all IpGroups in a resource group", "Gets the specified ipGroups","Creates or updates an ipGroups in a specified resource group" in the workflow.
         
-     d. Click Change connection [ Enter Connection name, ClientId, SecretKey and TenantId captured from Microsoft Entra ID. ]
-
-#### b. Configurations in Sentinel
-1. In Microsoft Sentinel analytical rules should be configured to trigger an incident with IP Entity.
-2. Configure the automation rules to trigger this playbook
-
-
-## Playbook steps explained
 
 *[Content truncated...]*
 

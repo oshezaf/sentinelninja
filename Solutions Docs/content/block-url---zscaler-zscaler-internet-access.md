@@ -14,7 +14,7 @@ This playbook allows blocks URLs in Zscaler by adding them to categories
 
 # Zscaler - Add URL to category
 
-<img src="../Add-Url-To-Category/images/Sentinel_Add_URL_To_Category.png" width="200"><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Add-Url-To-Category/../Add-Url-To-Category/images/Sentinel_Add_URL_To_Category.png" width="200"><br>
 ## Table of Contents
 
 1. [Summary](#overview)
@@ -31,11 +31,11 @@ This playbook allows blocks URLs in Zscaler by adding them to categories
 This folder contains 1 playbook: 
 * Add IP to category: Add one or more URLs to an existing Zscaler category
 
-![Playbook](../Add-Url-To-Category/images/designerLight.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Add-Url-To-Category/../Add-Url-To-Category/images/designerLight.png)
 
 The playbook is used to respond to an incident in Azure Sentinel and uses the Zscaler API. The playbook leverages the [authentication playbook](../authentication/readme.md).  The results of the scan are shown in the related Azure Sentinel Incident:
 
-![Sentinel](../Add-Url-To-Category/images/designerDark.png)
+![Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Add-Url-To-Category/../Add-Url-To-Category/images/designerDark.png)
 
 <a name="Prerequisites"></a>
 

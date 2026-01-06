@@ -48,14 +48,14 @@ This solution includes **2 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Check Point/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check Point/README.md)*
+> 📄 *Source: [Check Point/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point/README.md)*
 
 # Check Point Software Technologies Logic Apps Connector and Sentinel Playbook templates
 
 <br>
 <br>
 <p align="center">  
-<img width="800" src="./images/check_point_logo.png"> </a>
+<img width="800" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point/images/check_point_logo.png"> </a>
 </p>
 <br>
 
@@ -76,7 +76,7 @@ This solution includes **2 content item(s)**:
 The Check Point Logic App Connector and Playbooks allows you to automate security operations to all managed Check Point devices. The connector enables you to run Logic App playbooks that utilize Check Point Management API to automate most common security operations tasks. 
 
 <p align="left">  
-<img width="800" src="./images/cp_integration_detail.png"> </a>
+<img width="800" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point/images/cp_integration_detail.png"> </a>
 </p>
 
 
@@ -111,16 +111,13 @@ You can deploy Custom Connector, FunctionApp Proxy and Playbook all together or 
 1. Create an API key from Check Point management console
 
     <p align="left">  
-    <img width="400" src="./images/cp_create_api_key.png"> </a>
+    <img width="400" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point/images/cp_create_api_key.png"> </a>
     </p>
 
 2. Launch the template
 <br>
 
    [![Deploy to Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchkp-jguo%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2FdeployCP.json)
-   [![Deploy to Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchkp-jguo%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2FdeployCPgov.json)
-
-
 
 *[Content truncated...]*
 

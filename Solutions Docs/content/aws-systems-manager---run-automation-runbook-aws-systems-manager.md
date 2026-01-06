@@ -21,8 +21,8 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
  1. It executes the automation runbook with provided parameters.
  2. Adds a comment to the incident with the success/failure status of the runbook execution.
 
-<img src="./images/AWS-SSM-RunAutomationRunbook_light.jpg" width="50%"/><br>
-<img src="./images/AWS-SSM-RunAutomationRunbook_IncidentComment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-RunAutomationRunbook/images/AWS-SSM-RunAutomationRunbook_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-RunAutomationRunbook/images/AWS-SSM-RunAutomationRunbook_IncidentComment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

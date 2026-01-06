@@ -16,16 +16,16 @@ This playbook is used to get Security Information about a particular domain. It 
 
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions
 
-<img src="./Images/playbook_screenshot_new.png" width="30%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-GetDomainInfo/Images/playbook_screenshot_new.png" width="30%"/><br>
 
 1. Get domains from URL entities in the incident.
 2. Enriches incident with security information about domains using [Cisco Cloud Security Investigate API](https://developer.cisco.com/docs/cloud-security/investigate-investigate/#investigate).
 
-<img src="./Images/playbook_screenshot1.png" width="70%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-GetDomainInfo/Images/playbook_screenshot1.png" width="70%"/><br>
 
-<img src="./Images/playbook_screenshot2.png" width="70%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-GetDomainInfo/Images/playbook_screenshot2.png" width="70%"/><br>
 
-<img src="./Images/playbook_screenshot3.png" width="70%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-GetDomainInfo/Images/playbook_screenshot3.png" width="70%"/><br>
 
 ### Prerequisites
 
@@ -86,8 +86,8 @@ Once deployment is complete, authorize each connection.
 
 #  References
  - [Cisco Cloud Security API Documentation](https://developer.cisco.com/docs/cloud-security/authentication/#authentication)
- - [Rest API Request And Response Sample to Get Security Score Information for Domain](https://developer.cisco.com/docs/cloud-security/secure-access-api-guides-request-and-response-samples-investigate-investigate/#get-security-score-information-for-domain)
-  - [Rest API Request And Response Sample to Get Risk Score for Domain](https://developer.cisco.com/docs/cloud-security/secure-access-api-guides-request-and-response-samples-investigate-investigate/#get-risk-score-for-domain)
+
+*[Content truncated...]*
 
 ---
 

@@ -23,7 +23,7 @@ When a new Sentinel incident is created, this playbook gets triggered and perfor
 2. A comment is added to Microsoft Sentinel incident.
 
 **Playbook overview:**
-![playbook overview](./images/designerDark.png)
+![playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Playbooks/ZeroNetworksSegment-AddBlockOutboundRule/images/designerDark.png)
 
 
 ### Prerequisites

@@ -12,7 +12,7 @@ This playbook uses the DomainTools Parsed Whois API. Given a ip address or set o
 
 > 📄 *Source: [DomainTools-IP-Address-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/readme.md)*
 
-![DomainTools](images/logo.png)<br>
+![DomainTools](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/logo.png)<br>
 ## DomainTools IP Address Enrichment Playbook
 ## Table of Contents
 
@@ -38,7 +38,7 @@ When a new Azure Sentinel Incident is created, and this playbook is triggered, i
 - All the details from DomainTools Parsed Whois will be added as comments in a tabular format.
 
 
-![Incident Comments](images/ip_comments.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/ip_comments.png)
 
 <a name="deployplaybook">
 
@@ -63,7 +63,7 @@ Authentication methods this connector supports:
 ### Deployment instructions
 - Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.
 - Fill in the required parameters for deploying the playbook.
-  ![deployment](images/deployment.png)  
+  ![deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/deployment.png)  
 - Click "Review + create". Once the validation is successful, click on "Create".
 
 

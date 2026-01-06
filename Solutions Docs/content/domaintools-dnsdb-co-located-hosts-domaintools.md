@@ -12,7 +12,7 @@ This playbook uses the Farsight DNSDB connector to automatically enrich Domain's
 
 > 📄 *Source: [DomainTools-DNSDB-Co-Located-Hosts/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/readme.md)*
 
-![DomainTools DNSDB](images/logo.png)
+![DomainTools DNSDB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/logo.png)
 
 # DomainTools DNSDB Co-Located Hosts 
 This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Microsoft Sentinel incidents. This use case describes the desire to easily identify Hosts that are co-located (based on Address) based on the input of a domain and a given point in time. The response would be a set of domains that also shared the same IP address as the originating domain name at the given point in time.
@@ -31,7 +31,7 @@ This playbook uses the Farsight DNSDB connector to automatically enrich Domain's
 - Iterates through each entity, perform logic.
 - Adds the co-located hosts for each entity as sentinel comments.
 
-![Incident Comments](images/comments.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/comments.png)
 
 <a name="prerequisites">
 
@@ -55,11 +55,11 @@ This playbook uses the Farsight DNSDB connector to automatically enrich Domain's
 Once deployment is complete please open the logic app and follow below steps
 - As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to [this document](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204) and provide permissions to the Logic App accordingly.
 - Provide connection details for the Farsight DNSDB Custom Connector.
-![connections one](images/for_each_01.png)
-![connections two](images/for_each_02.png)
+![connections one](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/for_each_01.png)
+![connections two](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/for_each_02.png)
 - You could provide time fencing options, please only provide values from the list (1h,6h,12h,24h, 30d, 60d,90d,365d(Default 1h)).
-![incident after](images/results_after.png)
-![incident before](images/results_before.png)
+![incident after](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/results_after.png)
+![incident before](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/results_before.png)
 - Save the Logic App. If the Logic App prompts any missing connections, please update the connections accordingly.
 ### Configurations in Sentinel:
 - Configure the analytic rules->Automated response>Automation rules to trigger this playbook.

@@ -83,19 +83,19 @@ This solution includes **2 content item(s)**:
 
 - Open [https://portal.azure.com/](https://portal.azure.com) and search `Microsoft Entra ID` service.
 
-![01](Images/01.png)
+![01](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/01.png)
 
 - Click `Add->App registration`.
 
-![02a](Images/02a.png)
+![02a](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/02a.png)
 
 - Enter the name of application and select supported account types and click on `Register`.
 
-![02](Images/02.png)
+![02](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/02.png)
 
 - In the application overview you can see `Application Name`, `Application ID` and `Tenant ID`.
  
-![03](Images/03.png)
+![03](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/03.png)
 
 - After creating the application, we need to set API permissions for connector. For this purpose,
   - Click `Manage->API permissions` tab
@@ -103,19 +103,7 @@ This solution includes **2 content item(s)**:
   - Search `indicator` and click on the `ThreatIndicators.ReadWrite.OwnedBy`, click `Add permissions` button below.
   - Click on `Grant admin consent`
 
- ![app_per](Images/app_per.png) 
-
-- We need secrets to access programmatically. For creating secrets
-  - Click `Manage->Certificates & secrets` tab
-  - Click `Client secrets` tab
-  - Click `New client secret` button
-  - Enter description and set expiration date for secret
-
-![10](Images/10.png)
-
-- Use Secret `Value` to configure connector.
-  
- ![11](Images/11.png)
+ ![app_per](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay/Images/app_per.png) 
 
 
 *[Content truncated...]*

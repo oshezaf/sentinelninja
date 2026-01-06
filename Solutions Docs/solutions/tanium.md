@@ -75,7 +75,7 @@ This solution includes **11 content item(s)**:
 
 > 📄 *Source: [Tanium/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/README.md)*
 
-<img src="./images/Tanium.svg" alt="Tanium" width="20%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/images/Tanium.svg" alt="Tanium" width="20%"/><br>
 
 ## Overview
 

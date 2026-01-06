@@ -17,11 +17,11 @@ This playbook search in OpenCTI for indicatoes based on the entities (Account, H
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. For each Entity (Accounts, Host, IP Address, FileHash, URL) available in Sentinel incident, it searches for a match in in OpenCTI indicators list
  2. If it finds the match, this playbook adds a rich comment to the incident with all the collected information
-    ![Comment example](./images/CommentGetIndicatorInfofromOpenCTI.png)
+    ![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks%5COpenCTI-EnrichIncident/images/CommentGetIndicatorInfofromOpenCTI.png)
 
 
 
-![Playbook Designer view](./images/GetIndicatorInfoOpenCTI.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks%5COpenCTI-EnrichIncident/images/GetIndicatorInfoOpenCTI.png)<br>
 
 ### Prerequisites 
 1. OpenCTI Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.

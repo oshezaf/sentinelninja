@@ -18,11 +18,11 @@ This playbook creates an educational Attack Simulator 'How-To Guide' simulation 
 
 This playbook will execute using an incident based trigger and determine which mailboxes received malicious phishing emails, and calculate which users failed to report a message as phishing (e.g. reported as junk, deleted the email, etc.) to the SOC. It will trigger an Attack Simulator 'How-To Guide' simulation to educate these end-users on the correct response when receiving a Phish email in an inbox.
 
-![Run Playbook within MDO Incident](images/run-playbook.png)
+![Run Playbook within MDO Incident](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Playbooks/AttackSimulatorTrainingNonReporters/images/run-playbook.png)
 
-![How-To Guide simulation created in Attack Simulator for non-reporting users](images/ast-simulation.png)
+![How-To Guide simulation created in Attack Simulator for non-reporting users](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Playbooks/AttackSimulatorTrainingNonReporters/images/ast-simulation.png)
 
-![Outlook inbox of the Teaching Guide email](images/teaching-guide-email.png)
+![Outlook inbox of the Teaching Guide email](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Playbooks/AttackSimulatorTrainingNonReporters/images/teaching-guide-email.png)
 
 
 ## Deployment instructions

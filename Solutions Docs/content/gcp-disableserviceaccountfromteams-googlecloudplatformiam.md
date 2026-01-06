@@ -17,13 +17,13 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 
  1. Sends an adaptive card to the Teams channel where the analyst can choose an action to be taken.
 
- <img src="./teams_screenshot.png" width="50%"/><br>
+ <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Playbooks/GCP-DisableServiceAccountFromTeams/teams_screenshot.png" width="50%"/><br>
 
  2. [Disables Service Account](https://cloud.google.com/iam/docs/reference/rest/v1/projects.serviceAccounts/disable) depending on the action chosen in the adaptive card.
  3. Changes incident status and severity depending on the action chosen in the adaptive card.
  4. Adds comment to the incident with information about the actions taken.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Playbooks/GCP-DisableServiceAccountFromTeams/playbook_screenshot.png" width="80%"/><br>
 ### Prerequisites 
 1. Prior to the deployment of this playbook, GoogleCloudPlatformIAM Connector needs to be deployed under the same subscription.
 2. GCP credentials are required. Refer to the GoogleCloudPlatformIAM Custom Connector documentation.

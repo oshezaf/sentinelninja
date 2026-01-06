@@ -14,7 +14,7 @@ This playbook will update incident with action to perform on endpoint
 
 # ForeScout playbook templates
 
-<img src="./forescout-logo.png" alt="drawing" width="20%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor/Playbooks/forescout-logo.png" alt="drawing" width="20%"/><br>
 
 ## Table of Contents
 

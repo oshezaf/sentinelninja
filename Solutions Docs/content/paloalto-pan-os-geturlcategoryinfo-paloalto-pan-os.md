@@ -18,7 +18,7 @@ When a new sentinal incident is created, this playbook gets triggered and perfor
  2. Updates all the collected information in incident
 
 
-![PaloAlto-PAN-OS-GetURLCategoryInfo](./designerscreenshot.PNG)<br>
+![PaloAlto-PAN-OS-GetURLCategoryInfo](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks%5CPaloAlto-PAN-OS-GetURLCategoryInfo/designerscreenshot.PNG)<br>
 ### Prerequisites 
 1. PAN-OS Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.
 2. Generate an API key. [Refer this link on how to generate the API Key](https://docs.paloaltonetworks.com/pan-os/10-1/pan-os-panorama-api/get-started-with-the-pan-os-xml-api/get-your-api-key)

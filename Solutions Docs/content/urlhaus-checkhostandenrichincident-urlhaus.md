@@ -17,7 +17,7 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
  1. [Gets Information](https://urlhaus-api.abuse.ch/#hostinfo) from URLhaus by hosts, provided in the alert custom entities. 
  2. Enriches the incident with the obtained info.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/URLhaus/Playbooks/URLhaus-CheckHostAndEnrichIncident/playbook_screenshot.png" width="80%"/><br>
 ### Prerequisites 
 1. URLhausAPI Custom Connector has to be deployed prior to the deployment of this playbook under the same subscription.
 

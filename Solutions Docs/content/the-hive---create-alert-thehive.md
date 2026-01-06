@@ -22,7 +22,7 @@ When a new sentinel alerts is created, this playbook gets triggered and performs
 2. Parse alert custom details
 3. Creates alert in TheHive with description, source, sourceRef, title and type passed.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Playbooks/TheHive-CreateAlert/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

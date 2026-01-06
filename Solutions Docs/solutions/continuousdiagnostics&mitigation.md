@@ -75,7 +75,7 @@ This solution includes **3 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [ContinuousDiagnostics&Mitigation/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContinuousDiagnostics&Mitigation/README.md)*
+> 📄 *Source: [ContinuousDiagnostics&Mitigation/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContinuousDiagnostics%26Mitigation/README.md)*
 
 # Overview
 ---

@@ -68,7 +68,7 @@ This solution includes **20 content item(s)**:
 
 ## Author: Rin Ure
 
-![SOC Process Framework](./SOCProcessFrameworkSolutionLanding.png)<br>
+![SOC Process Framework](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework/SOCProcessFrameworkSolutionLanding.png)<br>
 
 ## Table of Contents
 
@@ -124,7 +124,6 @@ This playbook uses a managed identity, which must have the Microsoft Sentinel Re
 2. In the left menu, click Identity.
 3. Under Permissions, click Azure role assignments.
 4. Click Add role assignment (Preview).
-5. Use the drop-down lists to select the resource group that your Sentinel Workspace is in. If multiple workspaces are used in different resource groups consider selecting subscription as a scope instead.
 
 *[Content truncated...]*
 

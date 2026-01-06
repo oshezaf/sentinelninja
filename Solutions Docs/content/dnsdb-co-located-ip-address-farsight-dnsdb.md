@@ -19,7 +19,7 @@ Learn more about the integration via the https://docs.microsoft.com/connectors/f
 
 ## Screenshots
 
-![Incident Comments](./Graphics/co_located_ip_addresses.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_IP_Address/Graphics/co_located_ip_addresses.png)
 
 
 ## Links to deploy the DNSDB_Co_Located_IP_Address playbook template:

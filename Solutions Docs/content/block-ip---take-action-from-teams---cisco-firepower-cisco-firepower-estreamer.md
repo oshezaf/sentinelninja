@@ -21,18 +21,18 @@ This playbook allows blocking of IPs in Cisco Firepower, using a **Network Group
 When a new Sentinel incident is created, this playbook gets triggered and performs below actions.
 1. For the IPs we check if they are already selected for the Network Group object
 2. An adaptive card is sent to a Teams channel with information about the incident and giving the option to ignore an IP, or depending on it's current status block it by adding it to the Network Group object or unblock it by removing it from the Network Group object
-    ![Teams Adaptive Card preview](./Images/BlockIP-Teams-AdaptiveCard.png)
+    ![Teams Adaptive Card preview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-AdaptiveCard.png)
 3. The chosen changes are applied to the Network Group object
 4. Comment is added to Microsoft Sentinel incident
-    ![Microsoft Sentinel comment](./Images/BlockIP-Teams-AzureSentinel-Comments.png)
+    ![Microsoft Sentinel comment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-AzureSentinel-Comments.png)
 
 ** IP is added to Cisco Firepower Network Group object:**
 
-![Cisco Firepower Network Group object](./Images/BlockIP-Teams-CiscoFirepowerAdd.png)
+![Cisco Firepower Network Group object](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-CiscoFirepowerAdd.png)
 
 **Playbook overview:**
 
-![Playbook overview](./Images/BlockIP-Teams-LogicApp.png)
+![Playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-LogicApp.png)
 
 
 ### Prerequisites

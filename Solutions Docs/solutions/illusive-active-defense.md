@@ -31,11 +31,11 @@ This solution includes **2 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Illusive Active Defense/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive Active Defense/README.md)*
+> 📄 *Source: [Illusive Active Defense/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/README.md)*
 
 [image](./Images/logo.jpg)
 <p align="left">  
-<img width="300" height="100" src="./Images/logo.jpg"> </a>
+<img width="300" height="100" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Images/logo.jpg"> </a>
 </p>
 
 # Illusive Active Defense Sentinel Solution
@@ -80,8 +80,6 @@ This solution contains the following components:
 
 To use the Illusive Active Defense solution, you must have the following:
 
-- An Azure AD subscription with a configured Sentinel workspace
-- An Illusive ADS (deceptions) license
 
 *[Content truncated...]*
 

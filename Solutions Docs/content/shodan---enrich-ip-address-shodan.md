@@ -23,8 +23,8 @@ The playbook can be triggered manually from an IP Entity context to fetch geo lo
 3. Collect all the details and format as table.
 3. Add the collected details as comment to the incident.
 
-<img src="./images/Shodan-EnrichIP-EntityTrigger_light.jpg" width="50%"/><br>
-<img src="./images/ShodanIPEnrichmentIncidentComment_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichIP-EntityTrigger/images/Shodan-EnrichIP-EntityTrigger_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichIP-EntityTrigger/images/ShodanIPEnrichmentIncidentComment_light.jpg" width="50%"/><br>
 
 ### Prerequisites
 

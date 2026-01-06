@@ -22,7 +22,7 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 2. [Adds tag](https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagUser.html) to users in AWS (tag key and value are defined during the playbook deployment).
 3. Adds information about added tags as a comment to the incident.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWSIAM-AddTagToUser/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

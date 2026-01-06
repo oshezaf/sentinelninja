@@ -16,12 +16,12 @@ This playbook provides an automated way to associate an identity to an existing 
 
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions
 
-<img src="./Images/playbook_screenshot_new.png" width="30%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AssignPolicyToIdentity/Images/playbook_screenshot_new.png" width="30%"/><br>
 
 1. Assigns a new DNS or web policy (*PolicyId* is provided on the playbook deployment step) to an identity (*originId* of the identity provided in the alert custom entities).
 2. Adds comment to the incident with information about the assigned policies.
 
-<img src="./Images/commentOnIncident.png" width="60%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AssignPolicyToIdentity/Images/commentOnIncident.png" width="60%"/><br>
 
 ### Prerequisites
 
@@ -31,7 +31,7 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 
     > **NOTE:** The **ID** and **OrganizationID** values in the screenshot below are for illustration purposes only and are not intended for actual use.
 
-<img src="./Images/orgIdAndPolicyId.png" width="60%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AssignPolicyToIdentity/Images/orgIdAndPolicyId.png" width="60%"/><br>
 
 ### Deployment instructions
 
@@ -78,16 +78,6 @@ Once deployment is complete, authorize each connection.
 10. Click Save (It takes 3-5 minutes to show the added role.)
 
 #### d. Assign access policy on key vault for Playbook to fetch the secret key
-1. Select the Key vault resource where you have stored the secret
-2. Click on Access policies Blade
-3. Click on Create
-4. Under Secret permissions column , Select Get , List from "Secret Management Operations"
-5. Click next to go to Principal tab and choose your deployed playbook name
-6. Click Next leave application tab as it is .
-7. Click Review and create
-8. Click Create
-
-#  References
 
 *[Content truncated...]*
 

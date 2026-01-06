@@ -59,12 +59,12 @@ Once deployment is complete, authorize each connection.
 ## Screenshots
 
 **Playbook**<br>
-![Playbook](./images/LightPlaybook_Send-email-with-formatted-incident-report.png)
-![Playbook](./images/DarkPlaybook_Send-email-with-formatted-incident-report.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-email-with-formatted-incident-report/images/LightPlaybook_Send-email-with-formatted-incident-report.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-email-with-formatted-incident-report/images/DarkPlaybook_Send-email-with-formatted-incident-report.png)
 
 **Email**<br>
-![Email](./images/LightEmail_Send-email-with-formatted-incident-report.png)
-![Email](./images/DarkEmail_Send-email-with-formatted-incident-report.png)
+![Email](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-email-with-formatted-incident-report/images/LightEmail_Send-email-with-formatted-incident-report.png)
+![Email](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-email-with-formatted-incident-report/images/DarkEmail_Send-email-with-formatted-incident-report.png)
 
 ---
 

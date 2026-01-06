@@ -17,7 +17,7 @@ Once a new sentinel incident is created, this playbook gets triggered and perfor
  1. [Gets service Account Information](https://cloud.google.com/iam/docs/reference/rest/v1/projects.serviceAccounts/get) by the *gcp_project_id* and *gcp_service_account*, provided in the alert custom entities. 
  2. Enriches the incident with the obtained info.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Playbooks/GCP-EnrichServiseAccountInfo/playbook_screenshot.png" width="80%"/><br>
 ### Prerequisites 
 1. GoogleCloudPlatformIAM Custom Connector has to be deployed prior to the deployment of this playbook under the same subscription.
 2. GCP credentials are required. Refer to the GoogleCloudPlatformIAM Custom Connector documentation.

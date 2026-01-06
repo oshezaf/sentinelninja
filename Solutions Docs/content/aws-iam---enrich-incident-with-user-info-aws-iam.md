@@ -22,7 +22,7 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 2. Obtains information about users in AWS IAM.
 3. Adds obtained information as a comment to the incident.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWSIAM-EnrichIncidentWithUserInfo/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

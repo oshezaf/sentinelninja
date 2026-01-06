@@ -18,7 +18,7 @@ Once a new sentinal incident is created, this playbook gets triggered and perfor
  1. [Gets Information](https://docs.abuseipdb.com/#check-endpoint) from AbuseIPDB by IP`s, provided in the alert custom entities. 
  2. Enriches the incident with the obtained info.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-EnrichIncidentByIPInfo/playbook_screenshot.png" width="80%"/><br>
 ### Prerequisites 
 1. AbuseIPDBAPI Custom Connector has to be deployed prior to the deployment of this playbook under the same subscription.
 

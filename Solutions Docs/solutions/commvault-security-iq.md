@@ -50,7 +50,7 @@ This solution includes **4 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Commvault Security IQ/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault Security IQ/README.md)*
+> 📄 *Source: [Commvault Security IQ/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/README.md)*
 
 Commvault Cloud - Microsoft Sentinel Integration
 ===============================================

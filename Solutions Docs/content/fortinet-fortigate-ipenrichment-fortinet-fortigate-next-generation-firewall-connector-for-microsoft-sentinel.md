@@ -17,8 +17,8 @@ This playbook enriches the incident with address object and address group.
 ## Summary
 This playbook enriches the incident with address object and address group.
 
-![Fortinet](./Inicdent_Enrichment.PNG)<br>
- ![Fortinet](./Enrichment.PNG)<br>
+![Fortinet](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_IncidentEnrichment/Inicdent_Enrichment.PNG)<br>
+ ![Fortinet](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_IncidentEnrichment/Enrichment.PNG)<br>
 
 When a new Microsoft Sentinel is created, this playbook gets triggered and performs below actions:
 - It fetches details of the address object.
@@ -72,7 +72,7 @@ Iterates on the IPs found in this incident (probably one) and performs the follo
 
 ## Enrich Incident with address object and address groups details look as follows
 
- ![Fortinet](./Inicdent_Enrichment.PNG)<br>
+ ![Fortinet](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_IncidentEnrichment/Inicdent_Enrichment.PNG)<br>
     
 ## Known Issues and Limitations
 - When pre-defined group reaches the max limit user must create the new pre-defined group and change in the play book

@@ -137,29 +137,29 @@ Following are the configuration steps to deploy Function App.
    #### **Get the Function app endpoint**
 1. Follow the below steps to get the endpoint. 
 	 * Go to Azure function Overview page and go to "Functions" and click on "GithubwebhookConnector"      
-         ![](Images/GotoFunction.jpg)
+         ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/GotoFunction.jpg)
 	 * Go to "GetFunctionUrl" highlighted in the below image and copy the function url.
-         ![](Images/functionappcompleteurl.jpg)
+         ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/functionappcompleteurl.jpg)
 	 * You can also generate a new function key as provided in the below image and replace the {code} parameter value in the function app url.
     Ex: https://fngithubwebhookconnector.azurewebsites.net/api/GithubWebhookConnector?code={apikey}
-	    ![](Images/FunctionAppfunctionKey.jpg)
+	    ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/FunctionAppfunctionKey.jpg)
 
    ### **Configure Webhook to Github Organization**        
     *  Go to github and open your account and click on "Your Organizations"
 
-       ![](Images/Githubstep1.JPG)
+       ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/Githubstep1.JPG)
 
     *  Click on Settings
 
-       ![](Images/GithubStep2.jpg)
+       ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/GithubStep2.jpg)
 
     *  Click on "Webhooks" and configure the function app endpoint as shown below. Ensure you choose to GitHub Advanced Security events: `Code scanning alerts`, `Repository vulnerability alerts`, and `Secret scanning alerts` 
 
-       ![](Images/GithubStep3.jpg)
+       ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/GithubStep3.jpg)
 
 4. With that you are done with the github configuration. After the delay of 10 to 20 mins (since LogAnalytics needs sometime to spin up the resources for the first time), you should be able to see all the transactional events from the Github into LogAnalytics workspace table called "githubscanaudit_CL" as shown below.	
 
-    ![](Images/LogAnalyticsdata.jpg)
+    ![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub%5CData%20Connectors%5CGithubWebhook/Images/LogAnalyticsdata.jpg)
 
 ---
 

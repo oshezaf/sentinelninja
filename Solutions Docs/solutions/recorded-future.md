@@ -139,9 +139,9 @@ This solution includes **37 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Recorded Future/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded Future/README.md)*
+> 📄 *Source: [Recorded Future/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/README.md)*
 
-[<img alt="Recorded Future" src="Playbooks/Enrichment/RecordedFuture-IOC_Enrichment/images/RecordedFuture.png"  />](https://www.recordedfuture.com/)
+[<img alt="Recorded Future" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Enrichment/RecordedFuture-IOC_Enrichment/images/RecordedFuture.png"  />](https://www.recordedfuture.com/)
 # Recorded Future Intelligence for Microsoft Sentinel
 
 Instructions how to install and use Recorded Future Solution for Microsoft Sentinel or how to install individual playbooks can be found in the main [readme.md](Playbooks/readme.md) in the Playbook sub directory in this repository.
@@ -178,17 +178,13 @@ Recorded Future for Microsoft Sentinel offers a range of powerful intelligence c
 ## **IOC Detection (Detect)**
 
 The TI-IndicatorImport playbooks pulls risk lists from Recorded Future and writes the contained indicators to the Microsoft Sentinel ThreatIntelligenceIndicator table via the RecordedFuture-ThreatIntelligenceImport playbook. 
-![](Playbooks/Images/2023-04-19-17-08-46.png)\
+![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Images/2023-04-19-17-08-46.png)\
 Microsoft Sentinel analytic rules correlates threat intelligence indicators with logs provided to Microsoft Sentinel and creates alerts/incidents for matches found.\
-![](Playbooks/Images/2023-04-19-17-46-32.png)
+![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Images/2023-04-19-17-46-32.png)
 
 ## **IOC Enrichment (Respond)**
 
 Automation rules triggers on each incident and enriches incidents with Recorded Future intelligence. 
-![](Playbooks/Images/2023-04-19-17-46-13.png)
-
-## **Malware Sandbox Analysis (Sandbox)**
-
 
 *[Content truncated...]*
 

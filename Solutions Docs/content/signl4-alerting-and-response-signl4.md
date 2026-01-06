@@ -38,7 +38,7 @@ After deployment, attach this playbook to an automation rule so it runs when the
 Note: Playbook is disabled by default. Please enable it before assigning to the Automation rule!
 
 ## Screenshot
-![Playbook](./images/SIGNL4-Playbook.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Playbooks/SIGNL4_Alerting_and_Response/images/SIGNL4-Playbook.png)
 
 ---
 

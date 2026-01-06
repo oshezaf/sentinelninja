@@ -20,7 +20,7 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 2. Optionally adds these domains to a customer's domain lists using [Cisco Cloud Security Enforcement API](https://developer.cisco.com/docs/cloud-security/#!enforcement-overview/overview).
 3. Adds comment to incident with information about posted domains.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-BlockDomain/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

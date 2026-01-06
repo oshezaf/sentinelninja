@@ -13,7 +13,7 @@
 > 📄 *Source: [Illusive-SentinelIncident-Enrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/readme.md)*
 
 <p align="left">  
-<img width="300" height="100" src="./Images/logo.jpg"> </a>
+<img width="300" height="100" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/logo.jpg"> </a>
 </p>
 
 # Illusive Incident Enrichment Playbook
@@ -55,18 +55,18 @@ Before deploying the custom template, download the **azuredeploy.json** for the 
 
 1. On the Azure home page, filter for Deploy a custom template.
        <p align="center">  
-          <img src="./Images/deploy-custom-template-search.png"> </a>
+          <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/deploy-custom-template-search.png"> </a>
        </p>
 2. Under **Custom Deployment>Select a template**, click **Build your own template in the editor**.
        <p align="center">  
-          <img src="./Images/deploy-custom-template-page.png"> </a>
+          <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/deploy-custom-template-page.png"> </a>
        </p>
 3. From **Edit template,** click **Load file,** load the **azuredeploy.json** file you downloaded, and click **Save.**
        <p align="center">  
-          <img src="./Images/deploy-custom-template-load-file.png"> </a>
+          <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/deploy-custom-template-load-file.png"> </a>
        </p>
        <p align="center">  
-          <img src="./Images/deploy-custom-template-edit-template-incident-enrichment.png"> </a>
+          <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/Images/deploy-custom-template-edit-template-incident-enrichment.png"> </a>
        </p>
  1. Under **Custom Deployment>Basics:**
     - Specify the **Subscription** that contains the dedicated Azure app that will run the Illusive Sentinel solution 
@@ -96,29 +96,6 @@ Before deploying the custom template, download the **azuredeploy.json** for the 
        </tr>
       </table>
       <p align="center">  
-         <img src="./Images/custom-deployment-basics-incident-enrichment.png"> </a>
-      </p>
-4. When finished entering details, click **Review + Create**.
-      <p align="center">  
-         <img src="./Images/custom-deployment-review-create.png"> </a>
-      </p>
-5. On successful validation, click **Create**.  
-This completes the playbook deployment.
-
-   <p align="center">
-      <img src="./Images/custom-deployment-is-complete.png"> </a>
-   </p>
-
-<a name="API_connection">
-
-## Connect the playbook to Azure Sentinel
-
-Connect the playbook to Azure Sentinel by configuring the playbook's API connection. 
-     <p align="center">  
-       <img src="./Images/api-connection-setup.png"> </a>
-     </p>
-
-  1. From **Your custom deployment is complete**, click **Go to all resources**. 
 
 *[Content truncated...]*
 

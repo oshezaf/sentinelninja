@@ -23,8 +23,8 @@ This playbook can be run from incident context manually or from automation rule 
 3. Create a watchlist with the parsed data.
 3. Add a comment to the incident of success/failure of action. 
 
-<img src="./images/GCPBigQuery-CreateWatchlist-From-BigQueryTable_light.jpg" width="50%"/><br>
-<img src="./images/GCPBigQuery-CreateWatchlist-From-BigQueryTableOutput_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks%5CGCPBigQuery-CreateWatchlist-From-BigQueryTable/images/GCPBigQuery-CreateWatchlist-From-BigQueryTable_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks%5CGCPBigQuery-CreateWatchlist-From-BigQueryTable/images/GCPBigQuery-CreateWatchlist-From-BigQueryTableOutput_light.jpg" width="50%"/><br>
 
 ### Prerequisites
 

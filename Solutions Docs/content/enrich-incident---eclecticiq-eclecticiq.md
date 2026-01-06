@@ -17,11 +17,11 @@ This playbook perform look up into EclecticIQ for the entities (Account, Host, I
  When a new Azure Sentinel incident is created, this playbook gets triggered and performs below actions
  1. For each Entity (Accounts, Host, IP Address, FileHash, URL) available in Sentinel incident, it performs lookup for a match in EclecticIQ
  2. If it finds the match, this playbook adds a rich comment to the incident with all the collected information
-    ![Comment example](./images/EclecticIQ_EI_IncidentComment_DarkTheme.png)
+    ![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks%5CEclecticIQ-EnrichIncident/images/EclecticIQ_EI_IncidentComment_DarkTheme.png)
 
 
 
-![Playbook Designer view](./images/EclecticIQ_EI_Workflow_DarkTheme.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks%5CEclecticIQ-EnrichIncident/images/EclecticIQ_EI_Workflow_DarkTheme.png)<br>
 
 ### Prerequisites 
 1. EclecticIQ Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.

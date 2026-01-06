@@ -22,8 +22,8 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 4. Combine both the results.
 5. Add the info as comment to the incident.
 
-<img src="./images/Playbook_QualysVM-GetAssets-ByOpenPort.jpg" width="50%"/><br>
-<img src="./images/Playbook_Incident_Comment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks%5CQualysVM-GetAssets-ByOpenPort/images/Playbook_QualysVM-GetAssets-ByOpenPort.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks%5CQualysVM-GetAssets-ByOpenPort/images/Playbook_Incident_Comment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

@@ -31,7 +31,7 @@ After deploying the template, you'll want to update the playbook connections wit
 
 ## Screenshots
 
-![Playbook overview](./playbook.jpg)
+![Playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs/Playbooks/SpectraAnalyze-EnrichFileHash/playbook.jpg)
 
 ## References
 

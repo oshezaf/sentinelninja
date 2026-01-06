@@ -23,7 +23,7 @@ We will need following data to make Jira connector:<br>
 1. ServiceNow instance (ex. xyz.service-now.com)
 2. Username
 3. Password
-![ServiceNow connector requirements](./images/ServiceNow-connector-requirementsDark.png)<br>
+![ServiceNow connector requirements](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow/Playbooks/ServiceNow-CreateAndUpdateIncident/images/ServiceNow-connector-requirementsDark.png)<br>
 
 # Quick Deployment
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FServicenow%2FPlaybooks%2FServiceNow-CreateAndUpdateIncident%2Fazuredeploy.json)
@@ -37,24 +37,24 @@ We will need following data to make Jira connector:<br>
 - Trigger = When incident is updated;  
 - Condition = Staus > Changed To > Closed;.<br>
 **Automation Rule Example**<br>
-![Automation Rule Example](./images/AutomationRuleExampleDark.jpg)
+![Automation Rule Example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow/Playbooks/ServiceNow-CreateAndUpdateIncident/images/AutomationRuleExampleDark.jpg)
 **Automation Rule Condition Example**<br>
-![Automation Rule Condition Example](./images/AutomationRuleExample2Dark.jpg)
+![Automation Rule Condition Example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow/Playbooks/ServiceNow-CreateAndUpdateIncident/images/AutomationRuleExample2Dark.jpg)
 
 # Screenshots
 
 **Playbook** <br>
-![playbook screenshot](./images/ServiceNowPlaybookDark.jpg)<br>
-![playbook screenshot](./images/ServiceNowPlaybookLight.jpg)<br><br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow/Playbooks/ServiceNow-CreateAndUpdateIncident/images/ServiceNowPlaybookDark.jpg)<br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow/Playbooks/ServiceNow-CreateAndUpdateIncident/images/ServiceNowPlaybookLight.jpg)<br><br>
 
 **ServiceNow New Incident** <br>
-![ServiceNow screenshot new](./images/ServiceNowNewIncident.jpg)<br><br>
+![ServiceNow screenshot new](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow/Playbooks/ServiceNow-CreateAndUpdateIncident/images/ServiceNowNewIncident.jpg)<br><br>
 
 **ServiceNow Update Incident** <br>
-![ServiceNow screenshot update](./images/ServiceNowTagAdded.jpg)<br>
+![ServiceNow screenshot update](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow/Playbooks/ServiceNow-CreateAndUpdateIncident/images/ServiceNowTagAdded.jpg)<br>
 
 **ServiceNow Incident closed** <br>
-![ServiceNow screenshot closed](./images/ServiceNowIncidentClosed.jpg)<br><br>
+![ServiceNow screenshot closed](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow/Playbooks/ServiceNow-CreateAndUpdateIncident/images/ServiceNowIncidentClosed.jpg)<br><br>
 
 ---
 

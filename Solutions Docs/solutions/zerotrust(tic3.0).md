@@ -79,7 +79,7 @@ This solution includes **5 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [ZeroTrust(TIC3.0)/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroTrust(TIC3.0)/README.md)*
+> 📄 *Source: [ZeroTrust(TIC3.0)/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroTrust%28TIC3.0%29/README.md)*
 
 # Overview
 ---

@@ -20,12 +20,12 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 
 1. Sends an adaptive card to the Teams channel where the analyst can choose an action to be taken.
 
-<img src="./teams_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-ReportIPsAfterUserResponseInMSTeams/teams_screenshot.png" width="50%"/><br>
 
 2. Assigns attack category. At least one category is required, but you may add additional [categories]("https://www.abuseipdb.com/categories")
 3. Adds comment with relative information about the attack.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-ReportIPsAfterUserResponseInMSTeams/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

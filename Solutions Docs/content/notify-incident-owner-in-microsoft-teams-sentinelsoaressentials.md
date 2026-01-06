@@ -34,10 +34,10 @@ Add playbook as an action to the automation rule
 # Screenshots
 
 **Playbook** <br>
-![playbook screenshot](./images/designerLight.png)<br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-Owner/images/designerLight.png)<br>
 
 **Teams message** <br>
-![teams notification](./images/ownerTeamsMessage.png)<br><br>
+![teams notification](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-Owner/images/ownerTeamsMessage.png)<br><br>
 
 ---
 

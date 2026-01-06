@@ -12,7 +12,7 @@ Given a domain or set of domains associated with an incident return all Iris Inv
 
 > 📄 *Source: [DomainTools-Iris-Investigate-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/readme.md)*
 
-![DomainTools](images/logo.png)<br>
+![DomainTools](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/logo.png)<br>
 ## DomainTools Iris Investigate Domain Playbook
 ## Table of Contents
 
@@ -38,7 +38,7 @@ When a new Azure Sentinel Incident is created, and this playbook is triggered, i
 - All the details from DomainTools Iris Investigate will be added as comments in a tabular format.
 - All the response attributes that have count value(Count of connected domains sharing this attribute) greater than 1 and less than "Pivot_Threshold" parameter value in the playbook(default to 200), link the DomainTools Iris Investigate UI for further investigation.
 
-![Incident Comments](images/investigate_comments.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/investigate_comments.png)
 
 <a name="deployplaybook">
 
@@ -63,7 +63,7 @@ Authentication methods this connector supports:
 ### Deployment instructions
 - Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.
 - Fill in the required parameters for deploying the playbook.
-  ![deployment](images/deployment.png)  
+  ![deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/deployment.png)  
 - Click "Review + create". Once the validation is successful, click on "Create".
 	
 
@@ -73,7 +73,7 @@ Authentication methods this connector supports:
 #### a. Playbook parameters: 
 Once deployment is complete, you can change the playbook parameters to get the desired results as explained below.
 - Open the Logic App in the edit mode. click on parameters
-  ![pivots](images/parameters.png)
+  ![pivots](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/parameters.png)
 - If "Fetch_Guided_Pivots_Results" is set to True, It will get the following details for each entity:
   - Reverse Email Domain
   - Reverese IP
@@ -86,16 +86,14 @@ Once deployment is complete, you can change the playbook parameters to get the d
   - Reverse Email
   - Pivot SSL Email
   - Pivot by SSL Hash
-    ![pivots](images/guided_pivot_comments.png)
+    ![pivots](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/guided_pivot_comments.png)
 - If you provide tags in the "Find_Domains_With_Malicious_tags" paramter, if a specified set of tags is observed, the playbook will mark the incident as “severe” in Sentinel and add a comment.
-    ![tags](images/malicious_tags_comments.png)
+    ![tags](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/malicious_tags_comments.png)
 - If "Fetch_Domain Tools_DNSDB_Results" is set to True, It will get the DNSDB Rdata details for each entity:
-    ![rdata](images/dnsdb_rdata_comments.png)
+    ![rdata](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/dnsdb_rdata_comments.png)
 - Save the Logic App.
-- As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to [this document](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204) and provide permissions to the Logic App accordingly.
-#### b. Configurations in Sentinel:
-- In Azure Sentinel, analytical rules should be configured to trigger an incident with risky Domain indicators.
-- Configure the automation rules to trigger the playbook.
+
+*[Content truncated...]*
 
 ---
 

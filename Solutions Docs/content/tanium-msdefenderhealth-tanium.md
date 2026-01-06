@@ -18,7 +18,7 @@ This playbook will use the Tanium API to retrieve the Microsoft Defender health 
 
 The results of the playbook will be added as a comment to the incident.
 
-![Tanium-MSDefenderHealth screenshot](images/Tanium-MSDefenderHealth.png)
+![Tanium-MSDefenderHealth screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-MSDefenderHealth/images/Tanium-MSDefenderHealth.png)
 
 ## Prerequisites
 

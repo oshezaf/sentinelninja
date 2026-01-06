@@ -27,7 +27,7 @@ This solution uses **1 table(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [AWS VPC Flow Logs/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS VPC Flow Logs/README.md)*
+> 📄 *Source: [AWS VPC Flow Logs/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs/README.md)*
 
 ### 1. Polling Configuration Fix
 Due to a bug in CCF (Common Collection Framework), you must set the destination table to null in the polling configuration file:

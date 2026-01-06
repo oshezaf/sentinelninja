@@ -14,7 +14,7 @@ This playbook checks if malicious device client is blocked by Cisco Meraki netwo
 
 # Cisco Meraki Block Device Client Playbook
 
-![meraki](../../Connector/MerakiConnector/logo.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-Device-Client/../../Connector/MerakiConnector/logo.jpg)
 
 ## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
@@ -33,9 +33,9 @@ This playbook checks if malicious device client is blocked by Cisco Meraki netwo
   - For blocked Client - 'TruePositive - SuspiciousActivity' 
 
 
-![Meraki](./Images/PlaybookDesignerLight.png)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-Device-Client/Images/PlaybookDesignerLight.png)
 
-![Meraki](./Images/PlaybookDesignerDark.png)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-Device-Client/Images/PlaybookDesignerDark.png)
 
 
  ## Pre-requisites for deployment
@@ -88,11 +88,6 @@ This playbook checks if malicious device client is blocked by Cisco Meraki netwo
  *  If organization name does not exist, then terminate with the error that organization not found.
 
  ## Check if network exists
-  *  If network name exists in list of networks associated with the organization, then return network associated with the organization. 
-  *  If network name does not exist, then terminate with the error that network not found.
-
-  ## Check if group policy exists
-  *  If group policy name exists in list of group policies associated with the network, then return group policy associated with the network. 
 
 *[Content truncated...]*
 

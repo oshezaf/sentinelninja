@@ -85,7 +85,7 @@ This solution includes **13 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Microsoft Exchange Security - Exchange On-Premises/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft Exchange Security - Exchange On-Premises/README.md)*
+> 📄 *Source: [Microsoft Exchange Security - Exchange On-Premises/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/README.md)*
 
 ## Overview
 

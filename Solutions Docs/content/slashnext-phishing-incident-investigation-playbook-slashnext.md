@@ -12,7 +12,7 @@ Enhance your security with threat hunting and incident investigation using this 
 
 > 📄 *Source: [SlashNextPhishingIncidentInvestigation/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextPhishingIncidentInvestigation/readme.md)*
 
-<img src="../logo/slashnext-logo.png" alt="drawing" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextPhishingIncidentInvestigation/../logo/slashnext-logo.png" alt="drawing" width="50%"/><br>
 
 ## Overview
 

@@ -21,13 +21,13 @@ When a new Microsoft Sentinel incident is created, this playbook gets triggered 
 3. Else, the **user sessions will be cleared** and **reset password link will be sent to user** 
 4. An adaptive card is sent to the SOC Teams channel, providing information about the incident and risky user details. The SOC can investigate further on the user.
 
-![Playbook Designer view](./Okta-PromptUser.PNG)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/Okta-PromptUser.PNG)<br>
 
 **This is the adaptive card user will recieve when playbook is triggered:**<br><br>
-![Adaptive Card example](./images/AdaptivecardtotheEnduser.PNG)<br><br>
+![Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/images/AdaptivecardtotheEnduser.PNG)<br><br>
 
 **This is the adaptive card SOC will recieve if user confirms they didn't to the malicious activity:**<br><br>
-![Adaptive Card example](./images/AdaptivecardtoSOCadminon%20teamschannel.PNG)<br><br>
+![Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/images/AdaptivecardtoSOCadminon%2520teamschannel.PNG)<br><br>
 
 
 ### Prerequisites 
@@ -90,11 +90,8 @@ In this step we post a message in Microsoft Teams to the risky user with Inciden
   d. Add a comment to the incident with the following details:
   
   * User information collected by "Get User" action from Okta such as
-     * User id, User name,User login,User email,User status,User created,User activated,User statusChanged, User lastLogin, User lastUpdated, User passwordChanged  
 
-  * Actions taken on Okta: Cleared the user sessions and reset the password of the user.
-
-  * Actions taken on Sentinel: Informed the SOC admin about the risky user and asked him to investigate further
+*[Content truncated...]*
 
 ---
 

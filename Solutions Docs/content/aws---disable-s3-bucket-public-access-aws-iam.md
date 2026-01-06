@@ -22,9 +22,9 @@ When a new Sentinel incident is created, this playbook gets triggered and perfor
 2. Call the AWS IAM Function App Connector to disable public access of S3 bucket.
 3. Add a comment to the incident with the result of the action.
 
-<img src="./images/AWS-DisableS3BucketPublicAccess_light.png" width="50%"/><br>
-<img src="./images/AWS-DisableS3BucketPublicAccess_dark.png" width="50%"/><br>
-<img src="./images/AWS-DisableS3BucketPublicAccess_IncidentComment.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWS-DisableS3BucketPublicAccess/images/AWS-DisableS3BucketPublicAccess_light.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWS-DisableS3BucketPublicAccess/images/AWS-DisableS3BucketPublicAccess_dark.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks%5CAWS-DisableS3BucketPublicAccess/images/AWS-DisableS3BucketPublicAccess_IncidentComment.png" width="50%"/><br>
 
 ### Prerequisites
 

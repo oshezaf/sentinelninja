@@ -50,7 +50,7 @@ This solution includes **2 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [SecurityBridge App/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge App/README.md)*
+> 📄 *Source: [SecurityBridge App/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App/README.md)*
 
 # Deployment of Sentinel Connector for SecurityBridge Threat Detection for SAP through Content Hub
 This ARM template will deploy a connecter for "SecurityBridge Threat Detection for SAP" with the following elements:

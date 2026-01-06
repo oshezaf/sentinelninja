@@ -38,7 +38,7 @@ Note: Playbook is disabled by default. Please enable it before assigning to the 
 
 ## Screenshots
 ### Playbook screenshot
-![Playbook](./images/Playbook_Send-email-alert.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox/Playbooks/Needs-Review-Incident-Email-Notification/images/Playbook_Send-email-alert.png)
 
 ---
 

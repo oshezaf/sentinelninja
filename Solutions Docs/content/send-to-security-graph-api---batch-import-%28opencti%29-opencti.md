@@ -16,7 +16,7 @@ This playbook sends messages to Security GraphAPI in batches
  ## Summary
  This playbook sends messages to Security GraphAPI in batches
 
-![Playbook Designer view](./images/BatchImportToSentinel.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks%5COpenCTI-ImportToSentinel/images/BatchImportToSentinel.png)<br>
 
 ### Prerequisites 
 1. None
@@ -33,11 +33,11 @@ This playbook sends messages to Security GraphAPI in batches
 
 1. From your Azure portal navigate to "Azure Activity Directory" and identify your tenantId (this is your azure tenant id, that require while running below commands)
 
-![AAD TenantId view](./images/AADTenantId.png)<br>
+![AAD TenantId view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks%5COpenCTI-ImportToSentinel/images/AADTenantId.png)<br>
 
 2. Open Logic app "OpenCTI-ImportToSentinel" and Select "Identity" section and  copy Object (principle) ID  - this is your Logic app system assigned managed identity
 
-![LogicApp System Identity TenantId view](./images/LogicAppSystemIdentity.png)<br>
+![LogicApp System Identity TenantId view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks%5COpenCTI-ImportToSentinel/images/LogicAppSystemIdentity.png)<br>
 
 NOTE: Only Azure Tenant admins have permissions to perform below activity. 
 

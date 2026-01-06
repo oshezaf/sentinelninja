@@ -74,7 +74,7 @@ This solution includes **16 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [VMware SD-WAN and SASE/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware SD-WAN and SASE/README.md)*
+> 📄 *Source: [VMware SD-WAN and SASE/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20SD-WAN%20and%20SASE/README.md)*
 
 VMware SASE and SD-WAN are cloud-native networking and security solutions that offer a comprehensive approach to securing and optimizing branch connectivity for today's distributed enterprises. By integrating VMware SASE and SD-WAN with Microsoft Sentinel, you can gain a unified view of your network and security posture, enabling you to proactively identify and remediate threats, improve application performance, and reduce operational complexity. 
 

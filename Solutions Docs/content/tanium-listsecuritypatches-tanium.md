@@ -20,7 +20,7 @@ This playbook will use the Tanium API to retrieve applicable security patches fo
 
 The results of the playbook will be added as a comment to the incident.
 
-![Tanium-SecurityPatches screenshot](images/Tanium-SecurityPatches.png)
+![Tanium-SecurityPatches screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-SecurityPatches/images/Tanium-SecurityPatches.png)
 
 ## Prerequisites
 

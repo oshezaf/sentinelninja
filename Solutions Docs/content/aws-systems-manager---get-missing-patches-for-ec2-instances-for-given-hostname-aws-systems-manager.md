@@ -23,8 +23,8 @@ The playbook can be triggered manually from a Host Entity to get the missing pat
  3. Get the missing patches for the Instance ID.
  4. Add the missing patches to the incident comment.
 
-<img src="./images/AWS-SSM-GetInstancePatches-HostTrigger_light.jpg" width="50%"/><br>
-<img src="./images/AWS-SSM-GetInstancePatches-HostTrigger_IncidentComment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-GetInstancePatches-HostEntityTrigger/images/AWS-SSM-GetInstancePatches-HostTrigger_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-GetInstancePatches-HostEntityTrigger/images/AWS-SSM-GetInstancePatches-HostTrigger_IncidentComment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

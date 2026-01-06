@@ -14,7 +14,7 @@ This playbook checks if malicious URL is blocked or unblocked by Cisco Meraki ne
 
 # Cisco Meraki URL Enrichment Playbook
 
-![meraki](../../Connector/MerakiConnector/logo.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/../../Connector/MerakiConnector/logo.jpg)
 
 ## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
@@ -24,9 +24,9 @@ This playbook checks if malicious URL is blocked or unblocked by Cisco Meraki ne
   - If URL is blocked by the network, then incident comment is created saying URL is blocked.
   - If URL is not blocked by the network and not part of the network, then incident comment is created saying URL not found in network.
 
-![Meraki](./Images/PlaybookDesignerLight.jpg)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/PlaybookDesignerLight.jpg)
 
-![Meraki](./Images/PlaybookDesignerDark.jpg)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/PlaybookDesignerDark.jpg)
 
 
  ## Pre-requisites for deployment
@@ -82,9 +82,9 @@ Get the list of URLs as entities from the Incident.
  - Add incident Comment from all the cases.
 
 ## Incident Comment 
-![meraki](./Images/IncidentCommentLight.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/IncidentCommentLight.jpg)
 
-![meraki](./Images/IncidentCommentDark.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/IncidentCommentDark.jpg)
 
 ---
 

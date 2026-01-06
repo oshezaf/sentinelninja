@@ -23,7 +23,7 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 If it is in safe list, releases endpoint with this MAC address in Cisco ISE.
 3. Adds comment to the incident with information about the released endpoints.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Playbooks/CiscoISE-FalsePositivesClearPolicies/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

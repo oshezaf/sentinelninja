@@ -17,7 +17,7 @@ Once a new sentinel incident is created, this playbook gets triggered and perfor
  1. [Gets Forensics](https://help.proofpoint.com/Threat_Insight_Dashboard/API_Documentation/Forensics_API) by the *campaignId*, provided in the alert custom entities. 
  2. Enriches the incident with Forensics info.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Playbooks/ProofpointTAP-AddForensicsInfoToIncident/playbook_screenshot.png" width="80%"/><br>
 ### Prerequisites 
 1. ProofpointTAP Custom Connector has to be deployed prior to the deployment of this playbook under the same subscription.
 2. ProofpointTAP API credentials are required. Refer to ProofpointTAP Custom Connector documentation.

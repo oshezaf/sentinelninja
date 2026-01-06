@@ -79,7 +79,7 @@ This solution includes **6 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [CybersecurityMaturityModelCertification(CMMC)2.0/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification(CMMC)2.0/README.md)*
+> 📄 *Source: [CybersecurityMaturityModelCertification(CMMC)2.0/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification%28CMMC%292.0/README.md)*
 
 # Overview
 ---

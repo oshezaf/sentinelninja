@@ -16,7 +16,7 @@ This playbook fetches indicators from OpenCTI and send to Sentinel. Supported ty
  ## Summary
  This playbook fetches indicators from OpenCTI and send to Sentinel. Supported types are Domain, File, IPv4, IPv6, Account, Url.  This runs for every 10 minutes
  
-![Playbook Designer view](./images/ImportToSentinel.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks%5COpenCTI-GetIndicatorsStream/images/ImportToSentinel.png)<br>
 
 ### Prerequisites 
 1. OpenCTI Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.

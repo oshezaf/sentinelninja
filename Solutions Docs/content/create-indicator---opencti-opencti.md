@@ -17,11 +17,11 @@ This playbook adds new indicator in OpenCTI based on the entities info present i
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. Searches for the matching indicator info of Entities (Accounts, Host, IP Address, FileHash, URL) in OpenCTI 
  2. If indicators are not found, this playbook adds the new indicators to OpenCTI databse (Separate indicators for each Accounts, Host, IP Address, FileHash, URL that are presnet in Sentinel incident)
-    ![Comment example](./images/IncidentCommentCreateindicator.png)
+    ![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks%5COpenCTI-CreateIndicator/images/IncidentCommentCreateindicator.png)
 
 
 
-![Playbook Designer view](./images/CreateIndicatorOpenCTIworkflow.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks%5COpenCTI-CreateIndicator/images/CreateIndicatorOpenCTIworkflow.png)<br>
 
 ### Prerequisites 
 1. OpenCTI Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.

@@ -21,9 +21,9 @@ This playbooks will be used to submit URL to CheckPhish and gets the repution of
     2. Enriches the incident with the obtained info.
 
 
-![Incident Comment](./images/CheckPhishEnrichmentComment.png)<br>
+![Incident Comment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks%5CCheckPhsh-Get-URLScanResult/images/CheckPhishEnrichmentComment.png)<br>
 
-![Playbook Designer view](./images/CheckPhishFlow.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks%5CCheckPhsh-Get-URLScanResult/images/CheckPhishFlow.png)<br>
 
 ### Prerequisites 
 1. CheckPhishbyBolsterCustomConnector Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.

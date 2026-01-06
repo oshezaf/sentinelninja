@@ -23,7 +23,7 @@ We will need following data to make Jira connector:<br>
 1. Jira instance (ex. xyz.atlassian.net)<br>
 2. Jira API (create API token on https://id.atlassian.com/manage-profile/security/api-tokens)<br>
 3. User email<br>
-![Jira connector requirements](./images/jira-connector-requirementsDark.png)<br>
+![Jira connector requirements](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Jira-CreateAndUpdateIssue/images/jira-connector-requirementsDark.png)<br>
 
 # Quick Deployment
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAtlassianJiraAudit%2FPlaybooks%2FJira-CreateAndUpdateIssue%2Fazuredeploy.json)
@@ -39,19 +39,19 @@ We will need following data to make Jira connector:<br>
 - Trigger = When incident is updated;  
 - Condition = Staus > Changed To > Closed;.<br>
 **Automation rule example**<br>
-![Automation Rule Example](./images/AutomationRuleExampleDark.jpg)
+![Automation Rule Example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Jira-CreateAndUpdateIssue/images/AutomationRuleExampleDark.jpg)
 
 # Screenshots
 
 **Playbook** <br>
-![playbook screenshot](./images/JiraPlaybookDark.jpg)<br>
-![playbook screenshot](./images/JiraPlaybookLight.jpg)<br><br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Jira-CreateAndUpdateIssue/images/JiraPlaybookDark.jpg)<br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Jira-CreateAndUpdateIssue/images/JiraPlaybookLight.jpg)<br><br>
 
 **Jira New Issue** <br>
-![jira screenshot new](./images/JiraNewIssue.jpg)<br><br>
+![jira screenshot new](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Jira-CreateAndUpdateIssue/images/JiraNewIssue.jpg)<br><br>
 
 **Jira Update Issue** <br>
-![jira screenshot update](./images/JiraUpdateIssue.jpg)<br>
+![jira screenshot update](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Jira-CreateAndUpdateIssue/images/JiraUpdateIssue.jpg)<br>
 
 ---
 

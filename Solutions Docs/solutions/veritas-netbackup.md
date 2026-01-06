@@ -42,7 +42,7 @@ This solution includes **2 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Veritas NetBackup/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas NetBackup/README.md)*
+> 📄 *Source: [Veritas NetBackup/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup/README.md)*
 
 **Veritas NetBackup and Microsoft Sentinel Integration Guide**	
 

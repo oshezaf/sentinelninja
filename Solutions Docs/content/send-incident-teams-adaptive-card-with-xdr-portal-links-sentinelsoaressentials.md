@@ -87,10 +87,10 @@ Write-Host "Assigned permissions to Managed Identity Service Principal."
 ## Screenshots
 
 **Playbook**<br>
-![Playbook](./images/LightPlaybook_SendTeamsCardXDR.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Teams-Adaptive-Card-XDRPortal/images/LightPlaybook_SendTeamsCardXDR.png)
 
 **Email**<br>
-![Email](./images/LightCard_SendTeamsCardXDR.png)
+![Email](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Teams-Adaptive-Card-XDRPortal/images/LightCard_SendTeamsCardXDR.png)
 
 ---
 

@@ -24,8 +24,8 @@ The playbook can be triggered manually or automatically from an Incident context
 3. Collect all the details and format as table.
 3. Add the collected details as comment to the incident.
 
-<img src="./images/Shodan-EnrichIPAndDomain_light.jpg" width="50%"/><br>
-<img src="./images/ShodanEnrichIPAndDomainIncidentComment_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichIPAndDomain/images/Shodan-EnrichIPAndDomain_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichIPAndDomain/images/ShodanEnrichIPAndDomainIncidentComment_light.jpg" width="50%"/><br>
 
 ### Prerequisites
 

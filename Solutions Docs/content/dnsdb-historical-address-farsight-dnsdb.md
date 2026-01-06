@@ -19,7 +19,7 @@ Learn more about the integration via the https://docs.microsoft.com/connectors/f
 
 ## Screenshots
 
-![Incident Comments](./Graphics/historical_address.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Historical_Address/Graphics/historical_address.png)
 
 
 ## Links to deploy the DNSDB_Historical_Address playbook template:

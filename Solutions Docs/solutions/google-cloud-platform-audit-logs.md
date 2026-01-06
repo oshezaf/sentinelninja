@@ -19,7 +19,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Additional Documentation
 
-> 📄 *Source: [Google Cloud Platform Audit Logs/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google Cloud Platform Audit Logs/README.md)*
+> 📄 *Source: [Google Cloud Platform Audit Logs/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Audit%20Logs/README.md)*
 
 # GCP Audit logs configuration
 The following are the steps for GCP Audit logs configuration.

@@ -21,7 +21,7 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 1. Launches scan by scan id provided during the playbook deployment.
 2. Adds information about launched scan as a comment to the incident.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Playbooks/Playbooks%5CTenable-LaunchScan/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 

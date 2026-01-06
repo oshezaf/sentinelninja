@@ -60,8 +60,8 @@ Once deployment is complete, you will need to authorize each connection.
    * Trigger = Incident is Updated
    * Condition = -
 *Automation rule example*
-![](./images/AutomationRuleExampleDark.PNG)
-![](./images/AutomationRuleExampleLight.PNG)
+![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/images/AutomationRuleExampleDark.PNG)
+![](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/images/AutomationRuleExampleLight.PNG)
 
 #### c. Assign Playbook Microsoft Sentinel Responder Role
 1. Select the Playbook (Logic App) resource

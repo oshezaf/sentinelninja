@@ -26,7 +26,7 @@ This playbook updates the Incident with the brach details if an account has been
 * ShadowByte Aria Custom Connector needs to be deployed and configured prior to the deployment of this playbook under the same resource group.
 
 ## screenshots:
-![screenshot1](./images/screenshot.png)
+![screenshot1](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria/Playbooks/ShadowByte_Aria_Search_for_Breaches/images/screenshot.png)
 
 ## deploy to Azure
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FShadowByte%2520Aria%2FPlaybooks%2FShadowByte_Aria_Search_for_Breaches%2Fazuredeploy.json" target="_blank">

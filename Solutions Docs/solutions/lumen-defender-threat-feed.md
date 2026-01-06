@@ -80,9 +80,9 @@ This solution includes **10 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Lumen Defender Threat Feed/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen Defender Threat Feed/README.md)*
+> 📄 *Source: [Lumen Defender Threat Feed/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/README.md)*
 
-[![Lumen](Workbooks/Images/Logo/Lumen.svg)](https://www.lumen.com/)
+[![Lumen](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg)](https://www.lumen.com/)
 
 # Lumen Defender Threat Feed for Microsoft Sentinel
 
@@ -136,7 +136,8 @@ Lumen Defender Threat Feed for Microsoft Sentinel offers powerful intelligence c
 - Microsoft Sentinel configuration: Your Azure admin team
 - Solution content issues: Contact Lumen for assistance
 
-— For release history, see `ReleaseNotes.md`. Solution metadata: `SolutionMetadata.json`.
+
+*[Content truncated...]*
 
 ## Release Notes
 

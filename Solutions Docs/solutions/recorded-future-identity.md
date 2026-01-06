@@ -49,9 +49,9 @@ This solution includes **8 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [Recorded Future Identity/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded Future Identity/README.md)*
+> 📄 *Source: [Recorded Future Identity/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/README.md)*
 
-<img src="./Playbooks/images/logo.png" alt="RecordedFuture logo" width="50%"/>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Playbooks/images/logo.png" alt="RecordedFuture logo" width="50%"/>
 
 Link to [Recorded Future main readme](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/readme.md)
 # Recorded Future Identity Solution

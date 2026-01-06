@@ -13,7 +13,7 @@
 > 📄 *Source: [Illusive-SentinelIncident-Response/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/readme.md)*
 
 <p align="left">  
-<img width="300" height="100" src="./Images/logo.jpg"> </a>
+<img width="300" height="100" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/logo.jpg"> </a>
 </p>
 
 # Illusive Incident Response Playbook
@@ -59,7 +59,7 @@ Use this playbook to quickly stop or slow down ransomware attacks and critical i
    2. Go to **My pending** and verify that this permission is not pending.  
  The result should look like this:
    <p align="center">  
-      <img src="./Images/azure-app-api-incident-response-permissions-admin-consent-granted.png"> </a>
+      <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/azure-app-api-incident-response-permissions-admin-consent-granted.png"> </a>
    </p>
 
 <a name="enable-mde">
@@ -72,33 +72,20 @@ Allow the Illusive Incident Response playbook to stop an attack by triggering an
 
  1. From the Azure Search bar, search for the **Subscription** in which MDE is installed.
      <p align="center">  
-        <img src="./Images/Configure_MDE_1(Subscriptions_MDE_1).png"> </a>
+        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_1%28Subscriptions_MDE_1%29.png"> </a>
      </p>
  2. Click on the existing **Subscription.**
  3. Click **Security** in the Subscription menu.
  4. Ensure Microsoft Defender for Endpoint is **On.**
      <p align="center">  
-        <img src="./Images/Configure_MDE_2(Subscriptions_MDE_2).png"> </a>
+        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_2%28Subscriptions_MDE_2%29.png"> </a>
      </p>
  5. If MDE is off, click **Security Center.**
      <p align="center">  
-        <img src="./Images/Configure_MDE_OFF_(Subscriptions_MDE_2).png"> </a>
+        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_OFF_%28Subscriptions_MDE_2%29.png"> </a>
      </p>
  6. Find the Azure Defender card and click **Enable Azure Defender.**
      <p align="center">  
-        <img src="./Images/Configure_MDE_3(Security_Center)_Enable.png"> </a>
-     </p>
- 7. Select the desired subscription and click **Upgrade.**
-     <p align="center">  
-        <img src="./Images/Configure_MDE_3(Security_Center)_Upgrade.png"> </a>
-     </p>
-
-<a name="create-illusive-playbook">
-
-# Create the Illusive Incident Response playbook
-
-Deploying the Illusive Incident Enrichment playbook requires a custom deployment template.
-
 
 *[Content truncated...]*
 

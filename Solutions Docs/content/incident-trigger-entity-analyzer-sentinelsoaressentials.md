@@ -17,7 +17,7 @@ This playbook is triggered by Microsoft Sentinel incidents and performs automate
 Activating the 'Deploy' button initiates the deployment of an Azure Logic App integrated with Microsoft Sentinel MCP Actions, utilizing a Microsoft Sentinel incident trigger.
 The Logic App is configured to run when a new incident is created in Sentinel. This Logic App automatically analyzes all URL and User entities within the incident and provides detailed security insights including classification, analysis results, and recommendations for each entity type.
 
-![Deployment](./images/deployment.png)
+![Deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/images/deployment.png)
 
 The playbook automatically triggers when:
 - A new incident is created in Microsoft Sentinel
@@ -72,7 +72,7 @@ After successful deployment:
 - **Manual execution**: You can also run this playbook manually from the incident page
 - **Automation Rule**: Consider creating an automation rule to run this playbook automatically on specific incident types
 
-![Logic App Designer](./images/logicapp_dis.png)
+![Logic App Designer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/images/logicapp_dis.png)
 
 ### How It Works
 
@@ -94,20 +94,6 @@ The playbook generates formatted comments in the incident for each entity type:
 ```
 🔗 URL Analysis for: https://example.com
 
-🏷️ Classification
-Malicious/Suspicious/Benign
-
-🔍 Analysis Result
-Detailed security findings and threat intelligence
-
-✅ Recommendation
-Security recommendations and next steps
-
-⚠️ Disclaimer
-🤖 AI-generated analysis notice
-```
-
-**User Analysis Output:**
 
 *[Content truncated...]*
 

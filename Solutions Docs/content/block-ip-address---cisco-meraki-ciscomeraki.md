@@ -14,7 +14,7 @@ This playbook checks if malicious IP address is blocked or unblocked by Cisco Me
 
 # Cisco Meraki Block IP Address Playbook
 
-![meraki](../../Connector/MerakiConnector/logo.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-IP-Address/../../Connector/MerakiConnector/logo.jpg)
 
 ## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
@@ -27,9 +27,9 @@ This playbook checks if malicious IP address is blocked or unblocked by Cisco Me
   - For allowed IP - 'BenignPositive - SuspiciousButExpected'
   - For blocked IP - 'TruePositive - SuspiciousActivity'
 
-![Meraki](./Images/PlaybookDesignerLight.jpg)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-IP-Address/Images/PlaybookDesignerLight.jpg)
 
-![Meraki](./Images/PlaybookDesignerDark.jpg)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-IP-Address/Images/PlaybookDesignerDark.jpg)
 
 
  ## Pre-requisites for deployment
@@ -88,9 +88,6 @@ This action will compose the Cisco Meraki image to add to the incident comments.
 ## For each malicious IP received from the incident
  - Checks if the IP address is part of L3 firewall rule or L7 firewall rule of MX network.
    - If IP address is part of both L3 firewall rule and L7 firewall rule but not blocked by either of the rules, then Incident Comment is created saying IP address allowed by firewall.
-   - If IP address is part of either L3 firewall rule or L7 firewall rule and blocked by the rule, then Incident Comment is created saying IP address is blocked.
-   - If IP address is not part of either L3 firewall rule or L7 firewall rule, then that IP address is blocked by playbook. Incident Comment is created saying IP address blocked by playbook.
- - Add incident Comment from all the cases.
 
 *[Content truncated...]*
 

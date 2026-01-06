@@ -17,7 +17,7 @@ Once a new sentinel incident is created, this playbook gets triggered and perfor
  1. [Disables Service Account Key](https://cloud.google.com/iam/docs/reference/rest/v1/projects.serviceAccounts.keys/disable) by the *gcp_project_id*, *gcp_service_account* and *gcp_service_acc_key*, provided in the alert custom entities. 
  2. Adds comment to the incident.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Playbooks/GCP-DisableServiceAccountKey/playbook_screenshot.png" width="80%"/><br>
 ### Prerequisites 
 1. GoogleCloudPlatformIAM Custom Connector has to be deployed prior to the deployment of this playbook under the same subscription.
 2. GCP credentials are required. Refer to the GoogleCloudPlatformIAM Custom Connector documentation.

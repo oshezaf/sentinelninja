@@ -18,7 +18,7 @@ This playbook will use the Tanium API to retrieve the SCCM Client health from ho
 
 The results of the playbook will be added as a comment to the incident.
 
-![Tanium-SCCMClientHealth screenshot](images/Tanium-SCCMClientHealth.png)
+![Tanium-SCCMClientHealth screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-SCCMClientHealth/images/Tanium-SCCMClientHealth.png)
 
 ## Prerequisites
 

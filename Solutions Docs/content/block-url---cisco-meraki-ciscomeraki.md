@@ -14,7 +14,7 @@ This playbook checks if malicious URL is blocked in Cisco Meraki network.
 
 # Cisco Meraki Block URL Playbook
 
-![meraki](../../Connector/MerakiConnector/logo.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-URL/../../Connector/MerakiConnector/logo.jpg)
 
 ## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
@@ -27,9 +27,9 @@ This playbook checks if malicious URL is blocked in Cisco Meraki network.
   - For allowed URL - 'BenignPositive - SuspiciousButExpected'
   - For blocked URL - 'TruePositive - SuspiciousActivity'
 
-![Meraki](./Images/PlaybookDesignerLight.jpg)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-URL/Images/PlaybookDesignerLight.jpg)
 
-![Meraki](./Images/PlaybookDesignerDark.jpg)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-URL/Images/PlaybookDesignerDark.jpg)
 
 
  ## Pre-requisites for deployment
@@ -95,9 +95,8 @@ This playbook checks if malicious URL is blocked in Cisco Meraki network.
    - For blocked URL - 'TruePositive - SuspiciousActivity'
 
 ## Incident comment 
-![meraki](./Images/IncidentCommentLight.jpg)
 
-![meraki](./Images/IncidentCommentDark.jpg)
+*[Content truncated...]*
 
 ---
 

@@ -18,7 +18,7 @@ Send a webhook request to a Blink workflow trigger whenever a new Incident is cr
 
 This playbook automatically triggers when a **Microsoft Sentinel incident is created or updated**, and sends a structured HTTPS POST request to **Blink**. The integration enables seamless coordination between Sentinel Incident and Blink automation workflows, allowing for rapid incident response, ticketing, notification dispatch, or any custom workflow configured in Blink.
 
-<img src="./playbook_screenshot.png" width="50%"/>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/playbook_screenshot.png" width="50%"/>
 
 ---
 
@@ -27,14 +27,14 @@ This playbook automatically triggers when a **Microsoft Sentinel incident is cre
 Before deploying this playbook, ensure the following prerequisites are completed:
 
 1. Create an **Event-Based Workflow** in [Blink](https://docs.blinkops.com/docs/workflows/building-workflows/triggers/event-based-triggers/webhooks) that is configured to trigger via webhook.
-<img src="./Create_event_based_workflow.png" width="50%"/>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/Create_event_based_workflow.png" width="50%"/>
 
-<img src="./sentinel_webhook.png" width="50%"/>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/sentinel_webhook.png" width="50%"/>
 
 2. Note down the following required value from Blink:
    - **Blink Webhook Full URL** – the full HTTPS endpoint URL to trigger your Blink workflow.
 
-<img src="./Configure_Sentinel_Webhook.png" width="50%"/>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/Configure_Sentinel_Webhook.png" width="50%"/>
 
 ---
 

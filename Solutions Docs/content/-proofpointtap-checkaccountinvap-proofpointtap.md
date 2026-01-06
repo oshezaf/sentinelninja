@@ -18,7 +18,7 @@ Once a new sentinel incident is created, this playbook gets triggered and perfor
  1. Gets [Very Attacked People](https://help.proofpoint.com/Threat_Insight_Dashboard/API_Documentation/People_API#.2Fv2.2Fpeople.2Fvap) for the latest 14 days. 
  2. Enriches the incident with information whether incident's users are in VAP list and changes incident severity.
 
-<img src="./playbook_screenshot.png" width="80%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Playbooks/ProofpointTAP-CheckAccountInVAP/playbook_screenshot.png" width="80%"/><br>
 
 ### Prerequisites 
 1. ProofpointTAP Custom Connector has to be deployed prior to the deployment of this playbook under the same subscription.

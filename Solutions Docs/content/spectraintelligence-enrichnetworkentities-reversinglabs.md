@@ -44,7 +44,7 @@ Once deployment is complete, you will need to authorize each connection.
 
 ## Screenshots
 
-![Playbook overview](./playbook.png)
+![Playbook overview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs/Playbooks/SpectraIntelligence-EnrichNetworkEntities/playbook.png)
 
 ## References
 

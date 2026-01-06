@@ -14,7 +14,7 @@ This playbook post a Zscaler Sandbox report for each FileHash found in the incid
 
 # Zscaler - Get Sandbox Report For Hash
 
-<img src="../Images/Zscaler.png" width="200"><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Get-Sandbox-Report-For-Hash/../Images/Zscaler.png" width="200"><br>
 ## Table of Contents
 
 1. [Summary](#overview)
@@ -31,11 +31,11 @@ This playbook post a Zscaler Sandbox report for each FileHash found in the incid
 This folder contains 1 playbook: 
 * Get Sandbox Report For Hash: Get a summary report for a file hash (if scanned by Zscaler)
 
-![Playbook](../Images/Get-Sandbox-Report.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Get-Sandbox-Report-For-Hash/../Images/Get-Sandbox-Report.png)
 
 The playbook is used to respond to an incident in Azure Sentinel and uses the Zscaler API. The playbook leverages the [authentication playbook](../authentication/readme.md).  The results of the scan are shown in the related Azure Sentinel Incident. 
 
-![Playbook](../Images/Sentinel_Get_Sandbox_Report.png)
+![Playbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Get-Sandbox-Report-For-Hash/../Images/Sentinel_Get_Sandbox_Report.png)
 
 <a name="Prerequisites"></a>
 

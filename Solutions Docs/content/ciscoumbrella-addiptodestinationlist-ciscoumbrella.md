@@ -16,17 +16,17 @@ This playbook creates a team notification and once acted on team notification it
 
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions:
 
-<img src="./Images/playbook_screenshot.png" width="28%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AddIpToDestinationList/Images/playbook_screenshot.png" width="28%"/><br>
 
 1. Sends an adaptive card to the Teams channel where the analyst can choose an action to be taken.
 
-<img src="./Images/teams_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AddIpToDestinationList/Images/teams_screenshot.png" width="50%"/><br>
 
 2. Adds an IP to the destination list chosen in the adaptive card.
 3. Changes incident status and severity depending on the action chosen in the adaptive card.
 4. Adds comment to the incident with information about the actions taken.
 
-<img src="./Images/commentOnIncident.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks%5CCiscoUmbrella-AddIpToDestinationList/Images/commentOnIncident.png" width="50%"/><br>
 
 ### Prerequisites
 
@@ -90,7 +90,8 @@ Once deployment is complete, authorize each connection.
 
 #  References
  - [Cisco Cloud Security API Documentation](https://developer.cisco.com/docs/cloud-security/authentication/#authentication)
- - [Rest API Request And Response Sample](https://developer.cisco.com/docs/cloud-security/destination-lists/#destination-lists)
+
+*[Content truncated...]*
 
 ---
 

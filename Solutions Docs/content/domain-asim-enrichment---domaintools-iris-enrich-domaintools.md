@@ -12,7 +12,7 @@ Given a domain or set of domains associated with an alert return all Iris Enrich
 
 > 📄 *Source: [DomainTools-ASIM-DNS-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-ASIM-DNS-Playbook/readme.md)*
 
-![DomainTools](images/logo.png)<br>
+![DomainTools](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-ASIM-DNS-Playbook/images/logo.png)<br>
 ## DomainTools ASIM DNS Playbook
 ## Table of Contents
 
@@ -38,7 +38,7 @@ When a new Azure Sentinel Incident is created, and this playbook is triggered, i
 - All the details from DomainTools Iris Enrich will be saved in the custom table.
 
 
-![Incident Comments](images/custom_table.png)
+![Incident Comments](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-ASIM-DNS-Playbook/images/custom_table.png)
 
 <a name="deployplaybook">
 
@@ -63,7 +63,7 @@ Authentication methods this connector supports:
 ### Deployment instructions
 - Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.
 - Fill in the required parameters for deploying the playbook.
-  ![deployment](images/deployment.png)
+  ![deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-ASIM-DNS-Playbook/images/deployment.png)
 - Click "Review + create". Once the validation is successful, click on "Create".
 
 
@@ -72,7 +72,7 @@ Authentication methods this connector supports:
 ### Post-Deployment instructions
 Once deployment is complete, you can change the playbook parameters to get the desired results as explained below.
 - Open the Logic App in the edit mode. click on parameters
-  ![pivots](images/parameters.png)
+  ![pivots](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-ASIM-DNS-Playbook/images/parameters.png)
 - You need to provide a "Workspace ID" and "Workspace Key", You can obtain the "Workspace ID" in the overview of your "Log Analytics Workspace" and "Workspace key" from the "Agents> Log Analytics agent instructions" section. You can use either a "Primary key" or a "Secondary key".  
 - Save the Logic App.
 - As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to [this document](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204) and provide permissions to the Logic App accordingly.

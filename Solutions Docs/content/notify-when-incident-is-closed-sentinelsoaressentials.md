@@ -34,22 +34,22 @@ This playbook is utilizing new update trigger to notify person/group on Microsof
 - Trigger = When incident is updated;  
 - Condition = Staus > Changed To > Closed;.<br>
 **Automation rule example**<br>
-![Automation Rule Example](./images/AutomationRuleExampleLight.jpg)
+![Automation Rule Example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-IncidentClosed/images/AutomationRuleExampleLight.jpg)
 4. If you want to receive notifications only on Microsoft Teams or only on Microsoft Office 365 Outlook, please remove unneeded connection. To remove, click on 3 dots on top right side of connector, and choose "Delete".<br><br>
 **Delete connection example**<br>
-![Delete Connection Example](./images/DeleteConnectionExample.jpg)
+![Delete Connection Example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-IncidentClosed/images/DeleteConnectionExample.jpg)
 
 # Screenshots
 
 **Playbook** <br>
-![playbook screenshot](./images/playbookDark.png)<br>
-![playbook screenshot](./images/playbookLight.png)<br><br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-IncidentClosed/images/playbookDark.png)<br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-IncidentClosed/images/playbookLight.png)<br><br>
 
 **Teams** <br>
-![teams notification](./images/TeamsNotificationDark.jpg)<br><br>
+![teams notification](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-IncidentClosed/images/TeamsNotificationDark.jpg)<br><br>
 
 **Outlook** <br>
-![outlook notification](./images/OutlookNotificationDark.png)<br><br>
+![outlook notification](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-IncidentClosed/images/OutlookNotificationDark.png)<br><br>
 
 ---
 

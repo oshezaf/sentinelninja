@@ -23,8 +23,8 @@ The playbook can be triggered manually from a Domain Entity context to fetch geo
 3. Collect all the details and format as table.
 3. Add the collected details as comment to the incident.
 
-<img src="./images/Shodan-EnrichDomain-EntityTrigger_light.jpg" width="50%"/><br>
-<img src="./images/ShodanDomainEnrichmentIncidentComment_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichDomain-EntityTrigger/images/Shodan-EnrichDomain-EntityTrigger_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks%5CShodan-EnrichDomain-EntityTrigger/images/ShodanDomainEnrichmentIncidentComment_light.jpg" width="50%"/><br>
 
 ### Prerequisites
 

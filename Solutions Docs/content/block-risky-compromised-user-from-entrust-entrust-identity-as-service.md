@@ -17,9 +17,9 @@ This playbook Block the risky user and update the status in comments section of 
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. Fetches the user details from Entrust, which needs to be blocked
  2. After blocking the user, Adds a rich comment to the incident with all the collected information
-    ![Comment example](./Images/Entrust-BlockUser_incident_comment.png)
+    ![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks%5CEntrust-BlockUser/Images/Entrust-BlockUser_incident_comment.png)
 
-![Playbook Designer view](./Images/Entrust-BlockUser_light.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks%5CEntrust-BlockUser/Images/Entrust-BlockUser_light.png)<br>
 
 ### Prerequisites 
 1. User should be having an active subscription of product to open the product documentation.

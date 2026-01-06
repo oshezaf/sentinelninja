@@ -56,7 +56,7 @@ This solution includes **10 content item(s)**:
 
 ## Additional Documentation
 
-> 📄 *Source: [SpyCloud Enterprise Protection/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud Enterprise Protection/README.md)*
+> 📄 *Source: [SpyCloud Enterprise Protection/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/README.md)*
 
 ## Table of Contents
 

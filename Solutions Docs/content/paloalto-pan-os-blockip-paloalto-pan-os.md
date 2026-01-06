@@ -23,13 +23,13 @@ When a new Sentinel incident is created, this playbook gets triggered and perfor
 2. The SOC can take action on risky IP based on the information provided in the adaptive card.
 
 
-![PaloAlto-PAN-OS-BlockIP](./designerscreenshot.PNG)<br>
+![PaloAlto-PAN-OS-BlockIP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks%5CPaloAlto-PAN-OS-BlockIP/designerscreenshot.PNG)<br>
 
 **This is the adaptive card SOC will receive when playbook is triggered for each risky IP for taking actions like block/unblock/ignore:**<br><br>
-![Adaptive Card example](./AdaptiveCardtoBlockorUnblock.PNG)<br>
+![Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks%5CPaloAlto-PAN-OS-BlockIP/AdaptiveCardtoBlockorUnblock.PNG)<br>
 
 **This is the consolidate adaptive card about the summary of actions taken on IP and the incident configuration:**<br><br>
-![Consolidated Adaptive Card example](./SummarizedAdaptiveCard.PNG)<br>
+![Consolidated Adaptive Card example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks%5CPaloAlto-PAN-OS-BlockIP/SummarizedAdaptiveCard.PNG)<br>
 
 ### Prerequisites 
 1. PaloAlto connector needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the connector doc page.
@@ -92,16 +92,6 @@ Microsoft Sentinel incident is created. The playbook receives the incident as th
 Get the list of risky/malicious IPs as entities from the Incident.
 
 ### Initialize variables 
-
-   a. Action Name (type-String) - To determine the action name to be displayed in the adaptive card such as Block or Unblock IP from predefined address group.
-
-   b. Adaptive card body(type-Array) - To determine the dynamic adaptive card body 
-   
-   c. Address group Members(type-Array) - To determine the body of predefined address group
-   
-   d. IP Address Action(type-Array) - Consolidated actions summary on each IP to display in adaptive card
-
-### Select alert product names
 
 
 *[Content truncated...]*

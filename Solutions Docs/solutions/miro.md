@@ -30,7 +30,7 @@ This solution uses **2 table(s)**:
 
 > 📄 *Source: [Miro/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/README.md)*
 
-<img src="./Logo/Miro.svg" alt="Miro" width="20%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Logo/Miro.svg" alt="Miro" width="20%"/><br>
 
 ## Overview
 
@@ -92,7 +92,6 @@ This is the simplest option for most users. It automatically creates an OAuth ap
 
 #### For content logs connector
 
-1. Open [Miro company settings](https://miro.com/app/settings/).
 
 *[Content truncated...]*
 

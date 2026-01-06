@@ -14,7 +14,7 @@ This playbook checks if malicious IP address is blocked or unblocked by Cisco Me
 
 # Cisco Meraki IP Address Enrichment Playbook
 
-![meraki](../../Connector/MerakiConnector/logo.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/IP-Address-Enrichment/../../Connector/MerakiConnector/logo.jpg)
 
 ## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
@@ -24,9 +24,9 @@ This playbook checks if malicious IP address is blocked or unblocked by Cisco Me
   - If IP address is part of either L3 firewall rule or L7 firewall rule and blocked by the rule, then Incident Comment is created saying IP address is blocked.
   - If IP address is not part of either L3 firewall rule or L7 firewall rule, then Incident Comment is created saying IP address not found in any rule.
 
-![Meraki](./Images/PlaybookDesignerLight.jpg)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/IP-Address-Enrichment/Images/PlaybookDesignerLight.jpg)
 
-![Meraki](./Images/PlaybookDesignerDark.jpg)
+![Meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/IP-Address-Enrichment/Images/PlaybookDesignerDark.jpg)
 
 
  ## Pre-requisites for deployment
@@ -83,9 +83,9 @@ Get the list of IPs as entities from the Incident.
  - Add incident Comment from all the cases.
 
 ## Incident comment 
-![meraki](./Images/IncidentCommentLight.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/IP-Address-Enrichment/Images/IncidentCommentLight.jpg)
 
-![meraki](./Images/IncidentCommentDark.jpg)
+![meraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/IP-Address-Enrichment/Images/IncidentCommentDark.jpg)
 
 ---
 

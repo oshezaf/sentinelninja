@@ -22,7 +22,7 @@ This playbook gets triggered every day and perform the following actions:
 4. Add Grouping and Identity Objects to indicators.
 5. Export the bundle to provided TAXII server.
 
-<img src="./images/Playbook_AusCtisExportTaggedIndicators_light.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre/Playbooks/AusCtisExportTaggedIndicators/images/Playbook_AusCtisExportTaggedIndicators_light.jpg" width="50%"/><br>
 
 ### Prerequisites
 

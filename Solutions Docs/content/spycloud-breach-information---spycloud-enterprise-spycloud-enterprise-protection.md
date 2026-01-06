@@ -14,7 +14,7 @@ This Playbook will be triggered when an spycloud breach incident is created.
 
 # SpyCloud Enterprise Breach Playbook 
 
-![SpyCloud Enterprise](images/logo.png)
+![SpyCloud Enterprise](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Breach-Playbook/images/logo.png)
 
 ## Table of Contents
 
@@ -47,7 +47,7 @@ This playbook gets triggered when an incident is created from the "SpyCloud Brea
 ## Deployment Instructions
 - Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to the ARM Template Wizard.
 - Fill in the required parameters for deploying the playbook.
-  ![deployment](images/deployment.png)
+  ![deployment](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Breach-Playbook/images/deployment.png)
 - Click "Review + create". Once the validation is successful, click on "Create".
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Breach-Playbook%2Fazuredeploy.json)

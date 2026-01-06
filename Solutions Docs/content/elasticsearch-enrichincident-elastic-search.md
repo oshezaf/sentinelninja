@@ -16,11 +16,11 @@ This playbook search in Elastic Search for based on the entities (Account, Host,
  When a new Azure Sentinel incident is created, this playbook gets triggered and performs below actions
  1. For each Entity (Accounts, Host, IP Address, FileHash, URL) available in Sentinel incident, it searches for a match in Elastic Search
  2. If it finds the match, this playbook adds a rich comment to the incident with all the collected information
-    ![Comment example](./images/CommentElasticSearch_EnrichIncident.png)
+    ![Comment example](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Elastic%20Search/Playbooks/ElasticSearchPlaybooks%5CElasticSearch-EnrichIncident/images/CommentElasticSearch_EnrichIncident.png)
 
 
 
-![Playbook Designer view](./images/EnrichIndicentElasticSearchWorkflow.png)<br>
+![Playbook Designer view](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Elastic%20Search/Playbooks/ElasticSearchPlaybooks%5CElasticSearch-EnrichIncident/images/EnrichIndicentElasticSearchWorkflow.png)<br>
 
 ### Prerequisites 
 1. Elastic Search Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.

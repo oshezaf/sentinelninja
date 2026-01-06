@@ -20,8 +20,8 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 2. Get Asset Details for all IP Addresses.
 3. Add asset details as a comment to the incident.
 
-<img src="./images/Playbook_QualysVM-GetAssetDetails.jpg" width="50%"/><br>
-<img src="./images/Playbook_Incident_Comment.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks%5CQualysVM-GetAssetDetails/images/Playbook_QualysVM-GetAssetDetails.jpg" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks%5CQualysVM-GetAssetDetails/images/Playbook_Incident_Comment.jpg" width="50%"/><br>
 
 ### Prerequisites
 

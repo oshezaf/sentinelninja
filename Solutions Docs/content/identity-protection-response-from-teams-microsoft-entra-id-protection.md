@@ -84,15 +84,9 @@ Ensure you have the necessary permissions to access Microsoft Graph API and Team
 
 ## Screenshots
 ### Overall
-![Overall](./images/ImageLight1.png)
+![Overall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/images/ImageLight1.png)
 
 ### Card Sent by Microsoft Teams Bot
-![Teams Card](./images/TeamsCard.png)
-
-### Response Part
-![Response Part](./images/commmentLight.png)
-
-## Additional Links
 
 *[Content truncated...]*
 

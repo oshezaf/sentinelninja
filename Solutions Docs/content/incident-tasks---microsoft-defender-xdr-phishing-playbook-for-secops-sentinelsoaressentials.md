@@ -27,7 +27,7 @@ This playbook add Incident Tasks based on Microsoft Defender XDR Phishing Playbo
 2. Assign playbook to the automation rule. - https://learn.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook?tabs=LAC<br>
 Conditions<br>
     Incident provider > Equals > Microsoft Defender XDR<br>
-    ![SentinelIncident](./images/automationRuleDark.jpg)<br><br>
+    ![SentinelIncident](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/images/automationRuleDark.jpg)<br><br>
     
 ## Playbook will run if the alert has any of these keywords:<br>
     1. Phish
@@ -38,10 +38,10 @@ Conditions<br>
 # Screenshots
 
 **Playbook** <br>
-![playbook screenshot](./images/playbookDark.jpg)<br>
+![playbook screenshot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/images/playbookDark.jpg)<br>
 
 **Microsoft Sentinel Incident Tasks**<br>
-![SentinelIncident](./images/tasksDark.jpg)
+![SentinelIncident](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/images/tasksDark.jpg)
 
 ---
 

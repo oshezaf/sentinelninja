@@ -15,7 +15,7 @@ This playbook showcases an example of triggering an incident within a targeted T
 # Advanced - ServiceNow & Teams Integration
 **Author:** Jing Nghik
 
-![Alt Text](./Media/animated.gif)
+![Alt Text](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/Media/animated.gif)
 
 This arm template will deploy multiple logic app playbooks and api connectors. 
 - **(Main playbook)** \<playbookName>-workflow-incident
@@ -40,7 +40,7 @@ You can create a dev environment to test with for free at https://developer.serv
 - access/authorization to enable api connectors for Azure resource manager, teams, and Microsoft Sentinel.
 - Teams Group ID, Alert Channel ID, Investigation Response Channel ID 
 The group ID and Channel ID can be obtained by going to Teams and getting the link which has the values you need for the parameters. (Will need to URL decode it if there are special characters). [URL Decoder Link](https://www.urldecoder.org/)
-![Alt Text](./Media/teams.png)
+![Alt Text](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/Media/teams.png)
 
 - Investigation Channel ID can also use the same ID as alert channel if desired. 
 
@@ -56,7 +56,7 @@ The group ID and Channel ID can be obtained by going to Teams and getting the li
 1. Click Deploy to Azure and fill in parameters
 2. Populate the Teams Group and Channel IDs to ensure it messages are generated in the right channel.
 3. Search for API connectors and find the deployment prefix and fix any connectors by authorizing the connection.
-![Alt Text](./Media/apiconnectors.png)
+![Alt Text](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/Media/apiconnectors.png)
 4. Manually trigger an Microsoft Sentinel alert to test. 
 
 ## Deploy the ARM template

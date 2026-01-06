@@ -18,7 +18,7 @@ Sends an HTTPS request to a webhook trigger in Torq everytime a new Incident is 
 
 When a new Sentinel Incident is created or updated, this playbook gets triggered and sends a notification (HTTPS POST Request) to a Microsoft Sentinel Webhook in Torq.
 
-<img src="./playbook_screenshot.png" width="50%"/><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq/Playbooks/Torq-Sentinel-Incident-Trigger/playbook_screenshot.png" width="50%"/><br>
 
 ### Prerequisites
 
