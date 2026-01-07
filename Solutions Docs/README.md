@@ -8,7 +8,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 |:--------------|:------------|
 | [Solutions Index](solutions-index.md) | Browse all 487 solutions |
 | [Connectors Index](connectors-index.md) | Browse all 525 data connectors |
-| [Tables Index](tables-index.md) | Browse all 1683 log tables |
+| [Tables Index](tables-index.md) | Browse all 1680 log tables |
 | [Content Index](content/content-index.md) | Browse all 4828 content items |
 
 ## Documentation Statistics
