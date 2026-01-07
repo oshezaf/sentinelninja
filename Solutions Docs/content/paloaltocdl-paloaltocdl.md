@@ -6,12 +6,6 @@
 | **Solution** | [PaloAltoCDL](../solutions/paloaltocdl.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoCDL/Workbooks/PaloAltoCDL.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-
 ---
 
 **Browse:**

@@ -13,10 +13,11 @@
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **3 data connector(s)**:
 
 - [Amazon Web Services](../connectors/aws.md)
 - [Amazon Web Services S3](../connectors/awss3.md)
+- [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md)
 
 ## Tables Reference
 
@@ -28,7 +29,7 @@ This solution uses **5 table(s)**:
 | [`AWSCloudWatch`](../tables/awscloudwatch.md) | [Amazon Web Services S3](../connectors/awss3.md) | - |
 | [`AWSGuardDuty`](../tables/awsguardduty.md) | [Amazon Web Services S3](../connectors/awss3.md) | Analytics |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | [Amazon Web Services S3](../connectors/awss3.md) | - |
-| [`PutObject`](../tables/putobject.md) | - | Analytics |
+| [`AWSWAF`](../tables/awswaf.md) | [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) | - |
 
 ## Content Items
 
@@ -93,7 +94,7 @@ This solution includes **100 content item(s)**:
 | [S3 bucket access point publicly exposed](../content/b7a44e0d-ae4c-4fb2-be1b-aa0e45f2327b.md) | Medium | Exfiltration | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [S3 bucket exposed via ACL](../content/6b9b4ee6-f4c1-4b86-8c8c-beb0bb59ae44.md) | Medium | Exfiltration | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [S3 bucket exposed via policy](../content/44a5b65e-b0a9-4591-aabc-388fd92a28c4.md) | Medium | Exfiltration | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
-| [S3 bucket suspicious ransomware activity](../content/b442b9e2-5cc4-4129-a85b-a5ef38a9e5f0.md) | High | Impact | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`PutObject`](../tables/putobject.md) |
+| [S3 bucket suspicious ransomware activity](../content/b442b9e2-5cc4-4129-a85b-a5ef38a9e5f0.md) | High | Impact | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [S3 object publicly exposed](../content/09f2a28b-3286-4268-9e2f-33805f104e5d.md) | Medium | Exfiltration | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [SAML update identity provider](../content/bce1dcba-4948-414d-8838-6385afb9d496.md) | High | Persistence | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [SSM document is publicly exposed](../content/75647b58-bcc8-4eb5-9658-46698d3fa153.md) | Medium | Discovery | [`AWSCloudTrail`](../tables/awscloudtrail.md) |

@@ -12,7 +12,6 @@ This content item queries data from the following tables:
 
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`SentinelHealth`](../tables/sentinelhealth.md)
-- [`strcat_array`](../tables/strcat-array.md)
 
 ---
 

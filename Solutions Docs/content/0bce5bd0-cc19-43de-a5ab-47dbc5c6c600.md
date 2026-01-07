@@ -13,12 +13,6 @@ Query searches for unusual sources of authentication.
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingFederate/Hunting%20Queries/PingFederateUnusualSources.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-
 ---
 
 **Browse:**

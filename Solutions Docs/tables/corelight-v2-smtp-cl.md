@@ -14,17 +14,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
-
-### Analytic Rules (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-- [Corelight - SMTP Email containing NON Ascii Characters within the Subject](../content/50c61708-9824-46f3-87cf-22490796fae2.md)
-
-### Hunting Queries (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-- [Corelight - Abnormal Email Subject](../content/e9441d57-39f4-41fb-aaad-d02e47783d1a.md)
+## Content Items Using This Table (1)
 
 ### Workbooks (1)
 

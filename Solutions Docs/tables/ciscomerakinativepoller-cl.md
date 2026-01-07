@@ -16,13 +16,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
-- [CiscoMerakiWorkbook](../content/ciscomerakiworkbook-ciscomeraki.md)
-
 ---
 
 **Browse:**

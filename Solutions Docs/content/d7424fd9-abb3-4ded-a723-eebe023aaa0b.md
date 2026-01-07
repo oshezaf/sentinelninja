@@ -15,6 +15,12 @@ This query will detect instances where a newly invited external user is granted 
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Identity%20Threat%20Protection%20Essentials/Analytic%20Rules/NewExtUserGrantedAdmin.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AuditLogs`](../tables/auditlogs.md)
+
 ---
 
 **Browse:**

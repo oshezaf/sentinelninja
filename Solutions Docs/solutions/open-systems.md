@@ -19,16 +19,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **8 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) | [Open Systems Data Connector](../connectors/opensystems.md) | - |
 | [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) | [Open Systems Data Connector](../connectors/opensystems.md) | - |
-| [`OpenSystemsImAuthentication`](../tables/opensystemsimauthentication.md) | [Open Systems Data Connector](../connectors/opensystems.md) | - |
-| [`OpenSystemsImNetworkSessionFirewall`](../tables/opensystemsimnetworksessionfirewall.md) | [Open Systems Data Connector](../connectors/opensystems.md) | - |
-| [`OpenSystemsImNetworkSessionProxy`](../tables/opensystemsimnetworksessionproxy.md) | [Open Systems Data Connector](../connectors/opensystems.md) | - |
-| [`OpenSystemsImZTNA`](../tables/opensystemsimztna.md) | [Open Systems Data Connector](../connectors/opensystems.md) | - |
 | [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) | [Open Systems Data Connector](../connectors/opensystems.md) | - |
 | [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) | [Open Systems Data Connector](../connectors/opensystems.md) | - |
 

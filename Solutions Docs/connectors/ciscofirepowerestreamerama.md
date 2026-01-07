@@ -90,6 +90,10 @@ Make sure to configure the machine's security according to your organization's s
 
 [Learn more >](https://aka.ms/SecureCEF)
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Cisco Firepower Threat Defense Syslog Messages](https://www.cisco.com/c/en/us/td/docs/security/firepower/Syslogs/b_fptd_syslog_guide.html) - Firepower syslog message reference
+
 ---
 
 **Browse:**

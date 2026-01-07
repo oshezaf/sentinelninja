@@ -15,12 +15,6 @@ Triggers when monitored websites show new or suspicious content referencing know
 | **Required Connectors** | [CybleVisionAlerts](../connectors/cyblevisionalerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Analytic%20Rules/Alerts_Defacement_Content.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Alerts_defacement_content`](../tables/alerts-defacement-content.md)
-
 ---
 
 **Browse:**

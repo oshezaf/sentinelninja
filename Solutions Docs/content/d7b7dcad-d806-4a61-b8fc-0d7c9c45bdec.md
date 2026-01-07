@@ -12,6 +12,12 @@ Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Campaigns/JudgementPandaExfilActivity.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+
 ---
 
 **Browse:**

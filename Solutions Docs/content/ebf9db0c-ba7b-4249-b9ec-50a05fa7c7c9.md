@@ -15,12 +15,6 @@ Detects multiple connection errors to resource from risky category.
 | **Required Connectors** | [SyslogAma](../connectors/syslogama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoWSA/Analytic%20Rules/CiscoWSAMultipleErrorsToUnwantedCategory.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

@@ -13,12 +13,6 @@ Query searches for new custom roles created for the last 24 hours.
 | **Required Connectors** | [GCPIAMDataConnector](../connectors/gcpiamdataconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Hunting%20Queries/GCPIAMNewCustomRoles.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`GCP_IAM_CL`](../tables/gcp-iam-cl.md)
-
 ---
 
 **Browse:**

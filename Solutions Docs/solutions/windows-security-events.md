@@ -20,15 +20,12 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **5 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Event`](../tables/event.md) | - | Analytics, Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | [Security Events via Legacy Agent](../connectors/securityevents.md), [Windows Security Events via AMA](../connectors/windowssecurityevents.md) | Analytics, Hunting, Workbooks |
-| [`encodedPSScripts`](../tables/encodedpsscripts.md) | - | Hunting |
-| [`normalizedProcessPath`](../tables/normalizedprocesspath.md) | - | Hunting |
-| [`userEnable`](../tables/userenable.md) | - | Analytics |
 
 ## Content Items
 
@@ -46,7 +43,7 @@ This solution includes **72 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [AD FS Remote Auth Sync Connection](../content/2f4165a6-c4fb-4e94-861e-37f1b4d6c0e6.md) | Medium | Collection | [`SecurityEvent`](../tables/securityevent.md) |
 | [AD FS Remote HTTP Network Connection](../content/d57c33a9-76b9-40e0-9dfa-ff0404546410.md) | Medium | Collection | [`Event`](../tables/event.md) |
-| [AD user enabled and password not set within 48 hours](../content/62085097-d113-459f-9ea7-30216f2ee6af.md) | Low | Persistence | [`userEnable`](../tables/userenable.md) |
+| [AD user enabled and password not set within 48 hours](../content/62085097-d113-459f-9ea7-30216f2ee6af.md) | Low | Persistence | - |
 | [ADFS Database Named Pipe Connection](../content/dcdf9bfc-c239-4764-a9f9-3612e6dff49c.md) | Medium | Collection | [`Event`](../tables/event.md) |
 | [Excessive Windows Logon Failures](../content/2391ce61-8c8d-41ac-9723-d945b2e90720.md) | Low | CredentialAccess | [`SecurityEvent`](../tables/securityevent.md) |
 | [Exchange OAB Virtual Directory Attribute Containing Potential Webshell](../content/faf1a6ff-53b5-4f92-8c55-4b20e9957594.md) | High | InitialAccess | [`SecurityEvent`](../tables/securityevent.md) |
@@ -94,13 +91,13 @@ This solution includes **72 content item(s)**:
 | [Masquerading files](../content/60304ebf-ebdd-4869-a702-e0216d90ab46.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Multiple Explicit Credential Usage - 4648 events](../content/9e3fab4b-94dd-4cf9-b2aa-063d0fd25513.md) | Discovery, LateralMovement | [`SecurityEvent`](../tables/securityevent.md) |
 | [New Child Process of W3WP.exe](../content/f885fb16-dfd3-4c90-83d9-7a66b9d9b654.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
-| [New PowerShell scripts encoded on the commandline](../content/4e78daf1-8bba-4b5d-8a8b-c75fe9bbc2d9.md) | Execution, CommandAndControl | [`SecurityEvent`](../tables/securityevent.md)<br>[`encodedPSScripts`](../tables/encodedpsscripts.md) |
+| [New PowerShell scripts encoded on the commandline](../content/4e78daf1-8bba-4b5d-8a8b-c75fe9bbc2d9.md) | Execution, CommandAndControl | [`SecurityEvent`](../tables/securityevent.md) |
 | [New processes observed in last 24 hours](../content/513e3a11-e1bb-4cfc-8af9-451da0407e6b.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Nishang Reverse TCP Shell in Base64](../content/87c1f90a-f868-4528-a9c1-15520249cae6.md) | Exfiltration | [`SecurityEvent`](../tables/securityevent.md) |
 | [Potential Exploitation of MS-RPRN printer bug](../content/c29a03c6-d074-4934-afae-df1aeb30da70.md) | PrivilegeEscalation | [`SecurityEvent`](../tables/securityevent.md) |
 | [PowerShell downloads](../content/d83f40fc-bbcc-4020-8d45-ad2d82355cb2.md) | Execution, CommandAndControl | [`SecurityEvent`](../tables/securityevent.md) |
 | [Powercat Download](../content/c2112ca3-aae0-4079-9bff-d74c54bb5fe5.md) | Exfiltration | [`SecurityEvent`](../tables/securityevent.md) |
-| [Rare Process Path](../content/0ff22697-dc58-4623-b844-a767629840cd.md) | Execution | [`SecurityEvent`](../tables/securityevent.md)<br>[`normalizedProcessPath`](../tables/normalizedprocesspath.md) |
+| [Rare Process Path](../content/0ff22697-dc58-4623-b844-a767629840cd.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Rare Processes Run by Service Accounts](../content/af02987c-949d-47d5-b0ae-64d8e1b674e2.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Remote Task Creation/Update using Schtasks Process](../content/1e4a5be3-4a60-4099-b286-2d3642575889.md) | Persistence | [`SecurityEvent`](../tables/securityevent.md) |
 | [Service installation from user writable directory](../content/5a9ccb48-1316-46e1-89d1-aca0355c305e.md) | Execution | [`Event`](../tables/event.md) |

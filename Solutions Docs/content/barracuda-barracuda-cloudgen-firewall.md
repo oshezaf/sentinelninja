@@ -12,7 +12,6 @@
 This content item queries data from the following tables:
 
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`Syslog`](../tables/syslog.md)
 
 ---
 

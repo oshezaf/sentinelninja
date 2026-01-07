@@ -20,12 +20,11 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Syslog`](../tables/syslog.md) | [Syslog via AMA](../connectors/syslogama.md), [Syslog via Legacy Agent](../connectors/syslog.md) | Analytics, Hunting, Workbooks |
-| [`scx_execve`](../tables/scx-execve.md) | - | Hunting |
 
 ## Content Items
 
@@ -57,7 +56,7 @@ This solution includes **18 content item(s)**:
 | [Editing Linux scheduled tasks through Crontab](../content/6f0f1821-5981-408a-930b-8b2ca60e9e6c.md) | Persistence, Execution | [`Syslog`](../tables/syslog.md) |
 | [Linux scheduled task Aggregation](../content/eb09da09-6f6c-4502-bf74-f7b9f1343539.md) | Persistence, Execution | [`Syslog`](../tables/syslog.md) |
 | [Rare process running on a Linux host](../content/d0ae35df-0eaf-491f-b23e-8190e4f3ffe9.md) | Execution, Persistence | [`Syslog`](../tables/syslog.md) |
-| [SCX Execute RunAs Providers](../content/0d298a1d-1a08-4f4b-8b28-687bfe0012e8.md) | InitialAccess, Execution | [`Syslog`](../tables/syslog.md)<br>[`scx_execve`](../tables/scx-execve.md) |
+| [SCX Execute RunAs Providers](../content/0d298a1d-1a08-4f4b-8b28-687bfe0012e8.md) | InitialAccess, Execution | [`Syslog`](../tables/syslog.md) |
 | [Squid commonly abused TLDs](../content/7aaa7675-1580-47d8-a404-039cb7284279.md) | CommandAndControl | [`Syslog`](../tables/syslog.md) |
 | [Squid data volume timeseries anomalies](../content/e472c490-4792-4f12-8b6b-6ab3e0404d35.md) | CommandAndControl, Exfiltration | [`Syslog`](../tables/syslog.md) |
 | [Squid malformed requests](../content/edbeec9f-86b9-475d-8a42-cc7b95ad2baa.md) | Discovery | [`Syslog`](../tables/syslog.md) |

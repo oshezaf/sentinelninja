@@ -6,12 +6,6 @@
 | **Solution** | [Tomcat](../solutions/tomcat.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tomcat/Workbooks/Tomcat.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Tomcat_CL`](../tables/tomcat-cl.md)
-
 ---
 
 **Browse:**

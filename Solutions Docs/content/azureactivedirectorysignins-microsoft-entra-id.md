@@ -6,6 +6,13 @@
 | **Solution** | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/Workbooks/AzureActiveDirectorySignins.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`SigninLogs`](../tables/signinlogs.md)
+
 ---
 
 **Browse:**

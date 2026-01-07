@@ -19,12 +19,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Onapsis Platform](../connectors/onapsisplatform.md) | Workbooks |
-| [`incident_lookup`](../tables/incident-lookup.md) | - | Workbooks |
 
 ## Content Items
 
@@ -39,7 +38,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [OnapsisAlarmsOverview](../content/onapsisalarmsoverview-onapsis-platform.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`incident_lookup`](../tables/incident-lookup.md) |
+| [OnapsisAlarmsOverview](../content/onapsisalarmsoverview-onapsis-platform.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Parsers
 

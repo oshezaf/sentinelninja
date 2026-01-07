@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Sophos XG Firewall](../connectors/sophosxgfirewall.md) | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Sophos XG Firewall](../connectors/sophosxgfirewall.md) | - |
 
 ## Content Items
 
@@ -39,14 +39,14 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive Amount of Denied Connections from a Single Source](../content/3d645a88-2724-41a7-adea-db74c439cf79.md) | Medium | Impact | [`Syslog`](../tables/syslog.md) |
-| [Port Scan Detected](../content/427e4c9e-8cf4-4094-a684-a2d060dbca38.md) | Medium | Discovery | [`Syslog`](../tables/syslog.md) |
+| [Excessive Amount of Denied Connections from a Single Source](../content/3d645a88-2724-41a7-adea-db74c439cf79.md) | Medium | Impact | - |
+| [Port Scan Detected](../content/427e4c9e-8cf4-4094-a684-a2d060dbca38.md) | Medium | Discovery | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SophosXGFirewall](../content/sophosxgfirewall-sophos-xg-firewall.md) | [`Syslog`](../tables/syslog.md) |
+| [SophosXGFirewall](../content/sophosxgfirewall-sophos-xg-firewall.md) | - |
 
 ### Parsers
 

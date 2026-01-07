@@ -24,12 +24,12 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics, Workbooks |
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
 | [`Entities_Data_CL`](../tables/entities-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics |
-| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
-| [`Health_Data_CL`](../tables/health-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
+| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
+| [`Health_Data_CL`](../tables/health-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
 
 ### Internal Tables
 
@@ -57,8 +57,8 @@ This solution includes **33 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Defender Alert Evidence](../content/8138863e-e55f-4f02-ac94-72796e203d27.md) | High | Persistence | *Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
-| [Vectra Create Detection Alert for Accounts](../content/e796701f-6b39-4c54-bf8a-1d543a990784.md) | Medium | Persistence | [`Detections_Data_CL`](../tables/detections-data-cl.md) |
-| [Vectra Create Detection Alert for Hosts](../content/fb861539-da19-4266-831f-99459b8e7605.md) | Medium | Persistence | [`Detections_Data_CL`](../tables/detections-data-cl.md) |
+| [Vectra Create Detection Alert for Accounts](../content/e796701f-6b39-4c54-bf8a-1d543a990784.md) | Medium | Persistence | - |
+| [Vectra Create Detection Alert for Hosts](../content/fb861539-da19-4266-831f-99459b8e7605.md) | Medium | Persistence | - |
 | [Vectra Create Incident Based on Priority for Accounts](../content/af6f2812-0187-4cc9-822a-952f8b5b6b7e.md) | Medium | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
 | [Vectra Create Incident Based on Priority for Hosts](../content/9b51b0fb-0419-4450-9ea0-0a48751c4902.md) | Medium | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
 | [Vectra Create Incident Based on Tag for Accounts](../content/87325835-dd8c-41e7-b686-fd5adbbd0aee.md) | High | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
@@ -68,7 +68,7 @@ This solution includes **33 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VectraXDR](../content/vectraxdr-vectra-xdr.md) | [`Audits_Data_CL`](../tables/audits-data-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md)<br>[`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md)<br>[`Health_Data_CL`](../tables/health-data-cl.md)<br>[`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) |
+| [VectraXDR](../content/vectraxdr-vectra-xdr.md) | - |
 
 ### Playbooks
 

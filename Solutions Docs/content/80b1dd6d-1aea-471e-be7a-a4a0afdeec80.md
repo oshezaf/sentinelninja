@@ -15,12 +15,6 @@ Detects when user connects to a database from IP address which is not present in
 | **Required Connectors** | [SyslogAma](../connectors/syslogama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit/Analytic%20Rules/OracleDBAuditForbiddenSrcIpAddr.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

@@ -11,7 +11,6 @@
 
 This content item queries data from the following tables:
 
-- [`All_DeviceProduct_Table`](../tables/all-deviceproduct-table.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 
 ---

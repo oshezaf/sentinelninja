@@ -19,11 +19,10 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberArkAudit`](../tables/cyberarkaudit.md) | [CyberArkAudit](../connectors/cyberarkaudit.md) | - |
 | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | [CyberArkAudit](../connectors/cyberarkaudit.md) | Analytics |
 
 ## Content Items

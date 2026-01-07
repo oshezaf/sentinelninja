@@ -16,19 +16,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
-
-### Analytic Rules (2)
-
-**In solution [VMware vCenter](../solutions/vmware-vcenter.md):**
-- [VMware vCenter - Root login](../content/03e8a895-b5ba-49a0-aed3-f9a997d92fbe.md)
-- [vCenter - Root impersonation](../content/f1fcb22c-b459-42f2-a7ee-7276b5f1309c.md)
-
-### Workbooks (1)
-
-**In solution [VMware vCenter](../solutions/vmware-vcenter.md):**
-- [vCenter](../content/vcenter-vmware-vcenter.md)
-
 ---
 
 **Browse:**

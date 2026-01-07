@@ -19,12 +19,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Key Vault](../connectors/azurekeyvault.md) | Analytics, Workbooks |
-| [`securityresources`](../tables/securityresources.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -57,7 +56,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzureKeyVaultWorkbook](../content/azurekeyvaultworkbook-azure-key-vault.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`securityresources`](../tables/securityresources.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AzureKeyVaultWorkbook](../content/azurekeyvaultworkbook-azure-key-vault.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Release Notes
 

@@ -8,12 +8,6 @@ This playbook allows us to get a threat PCAP for a given PCAP ID.
 | **Solution** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/azuredeploy.json) |
 
-## Tables Used
-
-| Table | Usage |
-|:------|:------|
-| [`triggerBody`](../tables/triggerbody.md) | read |
-
 ## Additional Documentation
 
 > 📄 *Source: [PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/readme.md)*

@@ -6,12 +6,6 @@
 | **Solution** | [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20XG%20Firewall/Workbooks/SophosXGFirewall.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

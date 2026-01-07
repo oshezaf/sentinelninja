@@ -1,5 +1,9 @@
 # AzureNetworkAnalytics_CL
 
+## Additional Information
+
+📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) - NSG flow log schema and data aggregation
+
 ## Solutions (10)
 
 This table is used by the following solutions:

@@ -20,11 +20,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) | Analytics, Hunting, Workbooks |
+| [`SigninLogs`](../tables/signinlogs.md) | - | Hunting, Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 
 ## Content Items
@@ -53,14 +54,14 @@ This solution includes **10 content item(s)**:
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
 | [Failed sign-ins into LastPass due to MFA.](../content/b43fc364-69fc-4d3e-8834-6743ab5725e9.md) | InitialAccess | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
-| [Login into LastPass from a previously unknown IP.](../content/d292d770-69a4-4399-9272-6e86c4e53e58.md) | InitialAccess | - |
+| [Login into LastPass from a previously unknown IP.](../content/d292d770-69a4-4399-9272-6e86c4e53e58.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md) |
 | [Password moved to shared folders](../content/e70f1b22-acd1-493f-bba5-b28bea988940.md) | Collection | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [LastPassWorkbook](../content/lastpassworkbook-lastpass.md) | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
+| [LastPassWorkbook](../content/lastpassworkbook-lastpass.md) | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ### Watchlists
 

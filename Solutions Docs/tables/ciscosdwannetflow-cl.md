@@ -14,13 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Cisco SD-WAN](../solutions/cisco-sd-wan.md):**
-- [CiscoSDWAN](../content/ciscosdwan-cisco-sd-wan.md)
-
 ---
 
 **Browse:**

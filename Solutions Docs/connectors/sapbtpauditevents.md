@@ -35,7 +35,7 @@ This connector ingests data into the following tables:
 
 Follow the steps provided by SAP [see Audit Log Retrieval API for Global Accounts in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-retrieval-api-for-global-accounts-in-cloud-foundry-environment/). Take a note of the **url** (Audit Retrieval API URL), **uaa.url** (User Account and Authentication Server url) and the associated **uaa.clientid**.
 
->**NOTE:** You can onboard one or more BTP subaccounts by following the steps provided by SAP [see Audit Log Retrieval API Usage for Subaccounts in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-retrieval-api-usage-for-subaccounts-in-cloud-foundry-environment/). Add a connection for each subaccount.
+>**NOTE:** You can mass onboard BTP subaccounts by using [provided tools](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/SAP%20BTP/Tools).
 
 **2. Connect events from SAP BTP to Microsoft Sentinel**
 
@@ -51,6 +51,10 @@ When you click the "Add account" button in the portal, a configuration form will
 - **SAP BTP Client Secret** (optional): Client Secret
 - **Authorization server URL (UAA server)** (optional): https://your-tenant.authentication.region.hana.ondemand.com
 - **Audit Retrieval API URL** (optional): https://auditlog-management.cfapps.region.hana.ondemand.com
+*Advanced*
+
+- **Polling Frequency (minutes, 1-15)** (optional): 1
+- **Log Ingest Delay (minutes, 1-120)** (optional): 20
 
 > 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 

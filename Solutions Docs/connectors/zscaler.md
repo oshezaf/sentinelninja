@@ -76,6 +76,10 @@ Make sure to configure the machine's security according to your organization's s
 
 [Learn more >](https://aka.ms/SecureCEF)
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Zscaler and Microsoft Sentinel Deployment Guide](https://help.zscaler.com/zscaler-technology-partners/zscaler-and-microsoft-sentinel-deployment-guide)
+
 ---
 
 **Browse:**

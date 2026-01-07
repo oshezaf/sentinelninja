@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Digital Guardian Data Loss Prevention](../connectors/digitalguardiandlp.md) | Analytics, Hunting, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Digital Guardian Data Loss Prevention](../connectors/digitalguardiandlp.md) | - |
 
 ## Content Items
 
@@ -40,37 +40,37 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Digital Guardian - Bulk exfiltration to external domain](../content/5f75a873-b524-4ba5-a3b8-2c20db517148.md) | Medium | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Exfiltration to external domain](../content/a19885c8-1e44-47e3-81df-d1d109f5c92d.md) | Medium | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Exfiltration to online fileshare](../content/f7b6ddef-c1e9-46f0-8539-dbba7fb8a5b8.md) | High | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Exfiltration to private email](../content/edead9b5-243a-466b-ae78-2dae32ab1117.md) | High | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Exfiltration using DNS protocol](../content/39e25deb-49bb-4cdb-89c1-c466d596e2bd.md) | High | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Incident with not blocked action](../content/07bca129-e7d6-4421-b489-32abade0b6a7.md) | High | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Multiple incidents from user](../content/e8901dac-2549-4948-b793-5197a5ed697a.md) | High | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Possible SMTP protocol abuse](../content/a374a933-f6c4-4200-8682-70402a9054dd.md) | High | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Sensitive data transfer over insecure channel](../content/b52cda18-c1af-40e5-91f3-1fcbf9fa267e.md) | Medium | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Unexpected protocol](../content/a14f2f95-bbd2-4036-ad59-e3aff132b296.md) | High | Exfiltration | [`Syslog`](../tables/syslog.md) |
+| [Digital Guardian - Bulk exfiltration to external domain](../content/5f75a873-b524-4ba5-a3b8-2c20db517148.md) | Medium | Exfiltration | - |
+| [Digital Guardian - Exfiltration to external domain](../content/a19885c8-1e44-47e3-81df-d1d109f5c92d.md) | Medium | Exfiltration | - |
+| [Digital Guardian - Exfiltration to online fileshare](../content/f7b6ddef-c1e9-46f0-8539-dbba7fb8a5b8.md) | High | Exfiltration | - |
+| [Digital Guardian - Exfiltration to private email](../content/edead9b5-243a-466b-ae78-2dae32ab1117.md) | High | Exfiltration | - |
+| [Digital Guardian - Exfiltration using DNS protocol](../content/39e25deb-49bb-4cdb-89c1-c466d596e2bd.md) | High | Exfiltration | - |
+| [Digital Guardian - Incident with not blocked action](../content/07bca129-e7d6-4421-b489-32abade0b6a7.md) | High | Exfiltration | - |
+| [Digital Guardian - Multiple incidents from user](../content/e8901dac-2549-4948-b793-5197a5ed697a.md) | High | Exfiltration | - |
+| [Digital Guardian - Possible SMTP protocol abuse](../content/a374a933-f6c4-4200-8682-70402a9054dd.md) | High | Exfiltration | - |
+| [Digital Guardian - Sensitive data transfer over insecure channel](../content/b52cda18-c1af-40e5-91f3-1fcbf9fa267e.md) | Medium | Exfiltration | - |
+| [Digital Guardian - Unexpected protocol](../content/a14f2f95-bbd2-4036-ad59-e3aff132b296.md) | High | Exfiltration | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Digital Guardian - Files sent by users](../content/66dd7ab7-bbc0-48b7-a3b9-4e71e610df48.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Incident domains](../content/444c91d4-e4b8-4adc-9b05-61fe908441b8.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Insecure file transfer sources](../content/196930a4-bd79-4800-b2bb-582a8f1c8dd4.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Inspected files](../content/e459b709-55f7-48b6-8afc-0ae1062d3584.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - New incidents](../content/ae482a2c-b4e7-46fc-aeb7-744f7aad27ea.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Rare Urls](../content/b9a69da9-1ca0-4e09-a24f-5d88d57e0402.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Rare destination ports](../content/82cba92e-fe2f-4bba-9b46-647040b24090.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Rare network protocols](../content/8ab2f0db-baa1-495c-a8dd-718b81d0b8c7.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Urls used](../content/310433ca-67aa-406d-bbdf-c167a474b0a0.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
-| [Digital Guardian - Users' incidents](../content/83d5652c-025c-4cee-9f33-3bc114648859.md) | Exfiltration | [`Syslog`](../tables/syslog.md) |
+| [Digital Guardian - Files sent by users](../content/66dd7ab7-bbc0-48b7-a3b9-4e71e610df48.md) | Exfiltration | - |
+| [Digital Guardian - Incident domains](../content/444c91d4-e4b8-4adc-9b05-61fe908441b8.md) | Exfiltration | - |
+| [Digital Guardian - Insecure file transfer sources](../content/196930a4-bd79-4800-b2bb-582a8f1c8dd4.md) | Exfiltration | - |
+| [Digital Guardian - Inspected files](../content/e459b709-55f7-48b6-8afc-0ae1062d3584.md) | Exfiltration | - |
+| [Digital Guardian - New incidents](../content/ae482a2c-b4e7-46fc-aeb7-744f7aad27ea.md) | Exfiltration | - |
+| [Digital Guardian - Rare Urls](../content/b9a69da9-1ca0-4e09-a24f-5d88d57e0402.md) | Exfiltration | - |
+| [Digital Guardian - Rare destination ports](../content/82cba92e-fe2f-4bba-9b46-647040b24090.md) | Exfiltration | - |
+| [Digital Guardian - Rare network protocols](../content/8ab2f0db-baa1-495c-a8dd-718b81d0b8c7.md) | Exfiltration | - |
+| [Digital Guardian - Urls used](../content/310433ca-67aa-406d-bbdf-c167a474b0a0.md) | Exfiltration | - |
+| [Digital Guardian - Users' incidents](../content/83d5652c-025c-4cee-9f33-3bc114648859.md) | Exfiltration | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DigitalGuardian](../content/digitalguardian-digital-guardian-data-loss-prevention.md) | [`Syslog`](../tables/syslog.md) |
+| [DigitalGuardian](../content/digitalguardian-digital-guardian-data-loss-prevention.md) | - |
 
 ### Parsers
 

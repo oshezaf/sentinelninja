@@ -10,6 +10,18 @@ Reference for GCPDNS table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpdns) |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [Google Cloud Platform DNS (via Codeless Connector Framework)](../connectors/gcpdnslogsccpdefinition.md)
+
 ---
 
 ---

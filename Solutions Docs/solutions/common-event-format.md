@@ -20,11 +20,10 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`All_DeviceProduct_Table`](../tables/all-deviceproduct-table.md) | - | Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Common Event Format (CEF)](../connectors/cef.md), [Common Event Format (CEF) via AMA](../connectors/cefama.md) | Workbooks |
 
 ## Content Items
@@ -39,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CEFOverviewWorkbook](../content/cefoverviewworkbook-common-event-format.md) | [`All_DeviceProduct_Table`](../tables/all-deviceproduct-table.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [CEFOverviewWorkbook](../content/cefoverviewworkbook-common-event-format.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

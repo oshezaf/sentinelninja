@@ -13,12 +13,6 @@ Detects when application group settings are updated in Veeam Backup & Replicatio
 | **Required Connectors** | [Syslog](../connectors/syslog.md), [SyslogAma](../connectors/syslogama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Analytic%20Rules/Application_Group_Settings_Updated.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

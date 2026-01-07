@@ -19,11 +19,13 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **1 table(s)** from its content items:
+This solution queries **3 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
+| [`DeviceInfo`](../tables/deviceinfo.md) | Workbooks |
+| [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 
 ### Internal Tables
 
@@ -46,7 +48,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [HIPAACompliance](../content/hipaacompliance-hipaa-compliance.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`watchlist`](../tables/watchlist.md) |
+| [HIPAACompliance](../content/hipaacompliance-hipaa-compliance.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`watchlist`](../tables/watchlist.md) |
 
 ## Release Notes
 

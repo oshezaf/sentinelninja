@@ -24,14 +24,14 @@ This solution uses **9 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md) | - | Workbooks |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | - | Analytics |
 | [`AzureActivity`](../tables/azureactivity.md) | - | Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics, Hunting, Workbooks |
-| [`CuratedTables`](../tables/curatedtables.md) | - | Workbooks |
-| [`IncidentsWithLumen`](../tables/incidentswithlumen.md) | - | Workbooks |
+| [`DeviceEvents`](../tables/deviceevents.md) | - | Analytics |
+| [`DnsEvents`](../tables/dnsevents.md) | - | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics |
 | [`SecurityEvent`](../tables/securityevent.md) | - | Analytics |
-| [`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md) | - | Workbooks |
+| [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
 | [`WindowsEvent`](../tables/windowsevent.md) | - | Analytics |
 
 ### Internal Tables
@@ -58,13 +58,13 @@ This solution includes **10 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Lumen TI IPAddress in CommonSecurityLog](../content/bc8a262a-5db3-4ac1-8757-519ed36ed929.md) | Medium | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Lumen TI IPAddress in DeviceEvents](../content/fa566691-42a2-4136-6a8b-ffa3ea510000.md) | Medium | CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Lumen TI IPAddress in IdentityLogonEvents](../content/a7cd18cd-1503-47ec-8dca-65d750540637.md) | Medium | CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [Lumen TI IPAddress in DeviceEvents](../content/fa566691-42a2-4136-6a8b-ffa3ea510000.md) | Medium | CommandAndControl | [`DeviceEvents`](../tables/deviceevents.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [Lumen TI IPAddress in IdentityLogonEvents](../content/a7cd18cd-1503-47ec-8dca-65d750540637.md) | Medium | CommandAndControl | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Lumen TI IPAddress in OfficeActivity](../content/0e96c419-68eb-4235-947e-7e86e136cda0.md) | Medium | CommandAndControl | [`OfficeActivity`](../tables/officeactivity.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Lumen TI IPAddress in SecurityEvents](../content/140a2cb5-4b4a-485c-aab3-2415c24d37e6.md) | Medium | CommandAndControl | [`SecurityEvent`](../tables/securityevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Lumen TI IPAddress in SigninLogs](../content/1425aea5-a9e5-4288-886e-934b90664a91.md) | Medium | CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [Lumen TI IPAddress in SigninLogs](../content/1425aea5-a9e5-4288-886e-934b90664a91.md) | Medium | CommandAndControl | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Lumen TI IPAddress in WindowsEvents](../content/4776281c-6c49-46ac-8444-4dd8ba2f4565.md) | Medium | CommandAndControl | [`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Lumen TI domain in DnsEvents](../content/29bf5bcd-6795-4c79-a91f-aaef5a618bab.md) | Medium | CommandAndControl | *Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [Lumen TI domain in DnsEvents](../content/29bf5bcd-6795-4c79-a91f-aaef5a618bab.md) | Medium | CommandAndControl | [`DnsEvents`](../tables/dnsevents.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Hunting Queries
 
@@ -76,7 +76,7 @@ This solution includes **10 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Lumen-Threat-Feed-Overview](../content/lumen-threat-feed-overview-lumen-defender-threat-feed.md) | [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`CuratedTables`](../tables/curatedtables.md)<br>[`IncidentsWithLumen`](../tables/incidentswithlumen.md)<br>[`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [Lumen-Threat-Feed-Overview](../content/lumen-threat-feed-overview-lumen-defender-threat-feed.md) | [`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Additional Documentation
 

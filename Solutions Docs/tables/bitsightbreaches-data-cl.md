@@ -14,13 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Analytic Rules (1)
-
-**In solution [BitSight](../solutions/bitsight.md):**
-- [BitSight - new breach found](../content/a5526ba9-5997-47c6-bf2e-60a08b681e9b.md)
-
 ---
 
 **Browse:**

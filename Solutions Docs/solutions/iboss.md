@@ -24,7 +24,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md), [iboss via AMA](../connectors/ibossama.md) | Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md), [iboss via AMA](../connectors/ibossama.md) | - |
 
 ## Content Items
 
@@ -39,8 +39,8 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ibossMalwareAndC2](../content/ibossmalwareandc2-iboss.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ibossWebUsage](../content/ibosswebusage-iboss.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ibossMalwareAndC2](../content/ibossmalwareandc2-iboss.md) | - |
+| [ibossWebUsage](../content/ibosswebusage-iboss.md) | - |
 
 ### Parsers
 

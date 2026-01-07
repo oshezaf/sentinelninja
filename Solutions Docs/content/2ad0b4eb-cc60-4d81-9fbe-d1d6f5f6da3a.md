@@ -13,12 +13,6 @@ Query shows list of unaccounted internal DNS servers.
 | **Required Connectors** | [CustomLogsAma](../connectors/customlogsama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ubiquiti%20UniFi/Hunting%20Queries/UbiquitiInternalDnsServer.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Ubiquiti_CL`](../tables/ubiquiti-cl.md)
-
 ---
 
 **Browse:**

@@ -8,12 +8,6 @@ This playbook will fetch and ingest IP or Domain Indicator data based on Entity 
 | **Solution** | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutEnrichIncident/azuredeploy.json) |
 
-## Tables Used
-
-| Table | Usage |
-|:------|:------|
-| [`pdns_table_name`](../tables/pdns-table-name.md) | read |
-
 ## Additional Documentation
 
 > 📄 *Source: [TeamCymruScoutEnrichIncident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutEnrichIncident/readme.md)*

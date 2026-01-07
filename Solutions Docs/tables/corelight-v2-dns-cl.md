@@ -14,18 +14,11 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (1)
 
-### Hunting Queries (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-- [Corelight - Repetitive DNS Failures](../content/1ea3a384-77a4-4b0d-8e42-74d26b38ab5b.md)
-
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight](../content/corelight-corelight.md)
-- [Corelight_Data_Explorer](../content/corelight-data-explorer-corelight.md)
 - [Corelight_Security_Workflow](../content/corelight-security-workflow-corelight.md)
 
 ---

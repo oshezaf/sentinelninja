@@ -26,14 +26,6 @@ This solution uses **1 table(s)**:
 |-------|-------------------|----------------|
 | [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) | - |
 
-### Internal Tables
-
-The following **1 table(s)** are used internally by this solution's playbooks:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`SecurityAlert`](../tables/securityalert.md) | - | Analytics |
-
 ## Content Items
 
 This solution includes **5 content item(s)**:
@@ -47,7 +39,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dragos Notifications](../content/9a74fe72-4c21-4ac5-80d9-37434e809721.md) | Medium | - | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Dragos Notifications](../content/9a74fe72-4c21-4ac5-80d9-37434e809721.md) | Medium | - | - |
 
 ### Parsers
 

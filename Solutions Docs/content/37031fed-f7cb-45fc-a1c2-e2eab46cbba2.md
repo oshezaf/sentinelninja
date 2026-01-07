@@ -13,12 +13,6 @@ Query shows rare process vendors.
 | **Required Connectors** | [CyberArkEPM](../connectors/cyberarkepm.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Hunting%20Queries/CyberArkEPMRareProcVendors.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md)
-
 ---
 
 **Browse:**

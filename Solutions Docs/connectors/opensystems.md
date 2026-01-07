@@ -18,10 +18,6 @@ This connector ingests data into the following tables:
 |-------|:------------------------:|:-----------------------:|
 | [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) | — | — |
 | [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) | — | — |
-| [`OpenSystemsImAuthentication`](../tables/opensystemsimauthentication.md) | — | — |
-| [`OpenSystemsImNetworkSessionFirewall`](../tables/opensystemsimnetworksessionfirewall.md) | — | — |
-| [`OpenSystemsImNetworkSessionProxy`](../tables/opensystemsimnetworksessionproxy.md) | — | — |
-| [`OpenSystemsImZTNA`](../tables/opensystemsimztna.md) | — | — |
 | [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) | — | — |
 | [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) | — | — |
 

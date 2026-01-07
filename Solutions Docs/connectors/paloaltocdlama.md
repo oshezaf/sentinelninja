@@ -77,6 +77,11 @@ Make sure to configure the machine's security according to your organization's s
 
 [Learn more >](https://aka.ms/SecureCEF)
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Palo Alto Common Event Format (CEF) Configuration Guides](https://docs.paloaltonetworks.com/resources/cef),
+Connector,Fortinet,additional_information,📖 **Vendor Documentation:** [FortiGate Log Message Fields](https://docs.fortinet.com/document/fortigate/7.4.0/fortios-log-message-reference/357866/log-message-fields) - Complete log field reference with examples"
+
 ---
 
 **Browse:**

@@ -19,11 +19,10 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **1 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
 
 ### Internal Tables
@@ -47,7 +46,7 @@ This solution includes **8 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftThreatIntelligence](../content/microsoftthreatintelligence-microsoft-defender-threat-intelligence.md) | [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [MicrosoftThreatIntelligence](../content/microsoftthreatintelligence-microsoft-defender-threat-intelligence.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

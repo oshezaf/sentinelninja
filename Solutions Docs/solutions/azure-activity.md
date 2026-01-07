@@ -19,12 +19,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureActivity`](../tables/azureactivity.md) | [Azure Activity](../connectors/azureactivity.md) | Analytics, Hunting, Workbooks |
-| [`RareCustomScriptExecution`](../tables/rarecustomscriptexecution.md) | - | Hunting |
 
 ## Content Items
 
@@ -73,7 +72,7 @@ This solution includes **31 content item(s)**:
 | [Microsoft Sentinel Connectors Administrative Operations](../content/17201aa8-0916-4078-a020-7ea3a9262889.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Microsoft Sentinel Workbooks Administrative Operations](../content/5a1f9655-c893-4091-8dc0-7f11d7676506.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Port opened for an Azure Resource](../content/9e146876-e303-49af-b847-b029d1a66852.md) | CommandAndControl, Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Rare Custom Script Extension](../content/81fd68a2-9ad6-4a1c-7bd7-18efe5c99081.md) | Execution | [`AzureActivity`](../tables/azureactivity.md)<br>[`RareCustomScriptExecution`](../tables/rarecustomscriptexecution.md) |
+| [Rare Custom Script Extension](../content/81fd68a2-9ad6-4a1c-7bd7-18efe5c99081.md) | Execution | [`AzureActivity`](../tables/azureactivity.md) |
 
 ### Workbooks
 

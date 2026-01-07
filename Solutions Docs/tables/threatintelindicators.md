@@ -33,7 +33,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (74)
+## Content Items Using This Table (73)
 
 ### Analytic Rules (54)
 
@@ -123,7 +123,7 @@ This table is ingested by the following connectors:
 - [TI Map File Entity to VMConnection Event](../content/f231cbcd-66d9-45be-a6a3-4a915e53d46c.md)
 - [TI Map File Entity to WireData Event](../content/d2fd7661-de21-47ab-a9f9-e6ded983fabe.md)
 
-### Workbooks (6)
+### Workbooks (5)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 - [DORACompliance](../content/doracompliance-dora-compliance.md)
@@ -133,9 +133,6 @@ This table is ingested by the following connectors:
 - [RecordedFutureHashCorrelation](../content/recordedfuturehashcorrelation-recorded-future.md)
 - [RecordedFutureIPCorrelation](../content/recordedfutureipcorrelation-recorded-future.md)
 - [RecordedFutureURLCorrelation](../content/recordedfutureurlcorrelation-recorded-future.md)
-
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-%28new%29.md):**
-- [ThreatIntelligenceNew](../content/threatintelligencenew-threat-intelligence-%28new%29.md)
 
 ## Resource Types
 

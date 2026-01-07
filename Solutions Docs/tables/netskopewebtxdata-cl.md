@@ -14,13 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Netskopev2](../solutions/netskopev2.md):**
-- [NetskopeDashboard](../content/netskopedashboard-netskopev2.md)
-
 ---
 
 **Browse:**

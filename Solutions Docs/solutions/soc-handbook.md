@@ -19,23 +19,19 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **13 table(s)** from its content items:
+This solution queries **9 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`DeviceEvents`](../tables/deviceevents.md) | Workbooks |
+| [`DnsEvents`](../tables/dnsevents.md) | Workbooks |
 | [`HuntingBookmark`](../tables/huntingbookmark.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
-| [`MITRE_DEF_TABLE`](../tables/mitre-def-table.md) | Workbooks |
-| [`MSFTBuiltinAlerts`](../tables/msftbuiltinalerts.md) | Workbooks |
-| [`Network_MetaParser`](../tables/network-metaparser.md) | Workbooks |
 | [`ProtectionStatus`](../tables/protectionstatus.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
-| [`SentinelGithub`](../tables/sentinelgithub.md) | Workbooks |
+| [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
 | [`Usage`](../tables/usage.md) | Workbooks |
-| [`alertEntity`](../tables/alertentity.md) | Workbooks |
-| [`getAmountOfIncedentForRuleId`](../tables/getamountofincedentforruleid.md) | Workbooks |
-| [`getAmountOfIncidentForRuleId`](../tables/getamountofincidentforruleid.md) | Workbooks |
 
 ### Internal Tables
 
@@ -60,16 +56,16 @@ This solution includes **13 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AnalyticsEfficiency](../content/analyticsefficiency-soc-handbook.md) | [`MITRE_DEF_TABLE`](../tables/mitre-def-table.md)<br>[`getAmountOfIncedentForRuleId`](../tables/getamountofincedentforruleid.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AnalyticsEfficiency](../content/analyticsefficiency-soc-handbook.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [AnomaliesVisualization](../content/anomaliesvisualization-soc-handbook.md) | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [AnomalyData](../content/anomalydata-soc-handbook.md) | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [AttackSurfaceReduction](../content/attacksurfacereduction-soc-handbook.md) | - |
+| [AttackSurfaceReduction](../content/attacksurfacereduction-soc-handbook.md) | [`DeviceEvents`](../tables/deviceevents.md) |
 | [AzureSentinelCost](../content/azuresentinelcost-soc-handbook.md) | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`Usage`](../tables/usage.md) |
 | [AzureSentinelSecurityAlerts](../content/azuresentinelsecurityalerts-soc-handbook.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [IncidentOverview](../content/incidentoverview-soc-handbook.md) | [`getAmountOfIncidentForRuleId`](../tables/getamountofincidentforruleid.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [IntsightsIOCWorkbook](../content/intsightsiocworkbook-soc-handbook.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`alertEntity`](../tables/alertentity.md) |
-| [InvestigationInsights](../content/investigationinsights-soc-handbook.md) | [`HuntingBookmark`](../tables/huntingbookmark.md)<br>[`Network_MetaParser`](../tables/network-metaparser.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [MITREAttack](../content/mitreattack-soc-handbook.md) | [`MSFTBuiltinAlerts`](../tables/msftbuiltinalerts.md)<br>[`SentinelGithub`](../tables/sentinelgithub.md)<br>[`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [IncidentOverview](../content/incidentoverview-soc-handbook.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [IntsightsIOCWorkbook](../content/intsightsiocworkbook-soc-handbook.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [InvestigationInsights](../content/investigationinsights-soc-handbook.md) | [`DnsEvents`](../tables/dnsevents.md)<br>[`HuntingBookmark`](../tables/huntingbookmark.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [MITREAttack](../content/mitreattack-soc-handbook.md) | [`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [SecurityOperationsEfficiency](../content/securityoperationsefficiency-soc-handbook.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [SecurityStatus](../content/securitystatus-soc-handbook.md) | [`SecurityEvent`](../tables/securityevent.md) |
 | [SentinelCentral](../content/sentinelcentral-soc-handbook.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |

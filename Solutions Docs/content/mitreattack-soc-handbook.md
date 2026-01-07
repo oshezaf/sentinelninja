@@ -10,9 +10,7 @@
 
 This content item queries data from the following tables:
 
-- [`MSFTBuiltinAlerts`](../tables/msftbuiltinalerts.md)
 - [`SecurityAlert`](../tables/securityalert.md)
-- [`SentinelGithub`](../tables/sentinelgithub.md)
 - [`Usage`](../tables/usage.md)
 
 ---

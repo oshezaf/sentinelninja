@@ -12,6 +12,12 @@ Graph of MDO detections trended over time
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/General/Total%20number%20of%20detections%20by%20MDO%20over%20time.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`EmailEvents`](../tables/emailevents.md)
+
 ---
 
 **Browse:**

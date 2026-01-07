@@ -25,8 +25,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`IP_Data`](../tables/ip-data.md) | - | Workbooks |
 | [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | [1Password](../connectors/1password.md), [1Password (Serverless)](../connectors/1password(serverless).md), [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | Analytics, Workbooks |
+| [`SigninLogs`](../tables/signinlogs.md) | - | Workbooks |
 
 ## Content Items
 
@@ -64,7 +64,7 @@ This solution includes **19 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [1Password](../content/1password-1password.md) | [`IP_Data`](../tables/ip-data.md)<br>[`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) |
+| [1Password](../content/1password-1password.md) | [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ## Additional Documentation
 

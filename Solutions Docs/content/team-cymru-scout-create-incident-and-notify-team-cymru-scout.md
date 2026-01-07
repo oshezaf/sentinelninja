@@ -8,12 +8,6 @@ This playbook will create an incident for suspicious or malicious ip and notify 
 | **Solution** | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutCreateIncidentAndNotify/azuredeploy.json) |
 
-## Tables Used
-
-| Table | Usage |
-|:------|:------|
-| [`insights_table_name`](../tables/insights-table-name.md) | read |
-
 ## Additional Documentation
 
 > 📄 *Source: [TeamCymruScoutCreateIncidentAndNotify/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutCreateIncidentAndNotify/readme.md)*

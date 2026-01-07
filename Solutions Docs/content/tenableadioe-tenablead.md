@@ -6,12 +6,6 @@
 | **Solution** | [TenableAD](../solutions/tenablead.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD/Workbooks/TenableAdIoE.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Tenable_ad_CL`](../tables/tenable-ad-cl.md)
-
 ---
 
 **Browse:**

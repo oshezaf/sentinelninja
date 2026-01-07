@@ -1,6 +1,6 @@
 # SentinelOne_CL
 
-## Solutions (14)
+## Solutions (13)
 
 This table is used by the following solutions:
 
@@ -8,7 +8,6 @@ This table is used by the following solutions:
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
-- [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
@@ -27,9 +26,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (101)
+## Content Items Using This Table (76)
 
-### Analytic Rules (51)
+### Analytic Rules (39)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)](../content/cf687598-5a2c-46f8-81c8-06b15ed489b1.md)
@@ -75,21 +74,7 @@ This table is ingested by the following connectors:
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting Domain All Actors](../content/acbf7ef6-f964-44c3-9031-7834ec68175f.md)
-- [RecordedFuture Threat Hunting Hash All Actors](../content/6db6a8e6-2959-440b-ba57-a505875fcb37.md)
 - [RecordedFuture Threat Hunting IP All Actors](../content/e31bc14e-2b4c-42a4-af34-5bfd7d768aea.md)
-
-**In solution [SentinelOne](../solutions/sentinelone.md):**
-- [Sentinel One - Admin login from new location](../content/382f37b3-b49a-492f-b436-a4717c8c5c3e.md)
-- [Sentinel One - Agent uninstalled from multiple hosts](../content/4ad87e4a-d045-4c6b-9652-c9de27fcb442.md)
-- [Sentinel One - Alert from custom rule](../content/5f37de91-ff2b-45fb-9eda-49e9f76a3942.md)
-- [Sentinel One - Blacklist hash deleted](../content/de339761-2298-4b37-8f1b-80ebd4f0b5f6.md)
-- [Sentinel One - Exclusion added](../content/4224409f-a7bf-45eb-a931-922d79575a05.md)
-- [Sentinel One - Multiple alerts on host](../content/47e427e6-61bc-4e24-8d16-a12871b9f939.md)
-- [Sentinel One - New admin created](../content/e73d293d-966c-47ec-b8e0-95255755f12c.md)
-- [Sentinel One - Rule deleted](../content/e171b587-22bd-46ec-b96c-7c99024847a7.md)
-- [Sentinel One - Rule disabled](../content/84e210dd-8982-4398-b6f3-264fd72d036c.md)
-- [Sentinel One - Same custom rule triggered on different hosts](../content/5586d378-1bce-4d9b-9ac8-e7271c9d5a9a.md)
-- [Sentinel One - User viewed agent's passphrase](../content/51999097-60f4-42c0-bee8-fa28160e5583.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map Domain entity to Dns Events (ASIM DNS Schema)](../content/999e9f5d-db4a-4b07-a206-29c4e667b7e8.md)
@@ -104,7 +89,7 @@ This table is ingested by the following connectors:
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
 - [ThreatConnect TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/ee1fd303-2081-47b7-8f02-e38bfd0868e6.md)
 
-### Hunting Queries (42)
+### Hunting Queries (30)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [CVE-2020-1350 (SIGRED) exploitation pattern (ASIM DNS Solution)](../content/0a8f5777-f38a-4c37-b531-411bdecef976.md)
@@ -127,9 +112,6 @@ This table is ingested by the following connectors:
 - [Google Threat Intelligence - Threat Hunting Hash](../content/0051a0d9-684f-4317-abbd-c1e5c24b39cb.md)
 - [Google Threat Intelligence - Threat Hunting IP](../content/faa83502-2763-49ae-9216-e576fa1fdccb.md)
 
-**In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
-- [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/9b72769e-6ab1-4736-988b-018d92dc5e62.md)
-
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [Detect File Creation in Startup Folder](../content/64e199a8-b26c-462f-a65c-09ed9b53a47b.md)
 - [Detect Files with Ramsomware Extensions](../content/595aea5c-74c7-415b-8b12-10af1a338cdf.md)
@@ -149,22 +131,9 @@ This table is ingested by the following connectors:
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting Domain All Actors](../content/d641a534-ead8-41aa-a7c8-2b35e6b64c9f.md)
-- [RecordedFuture Threat Hunting Hash All Actors](../content/905da21a-c7d2-4f5b-b8fc-c8321da3ee83.md)
 - [RecordedFuture Threat Hunting IP All Actors](../content/7b5eb44d-3533-440e-9774-73a4d99bc2b2.md)
 
-**In solution [SentinelOne](../solutions/sentinelone.md):**
-- [Sentinel One - Agent not updated](../content/7fc83c11-1d80-4d1e-9d4b-4f48bbf77abe.md)
-- [Sentinel One - Agent status](../content/4b2ed4b6-10bf-4b2c-b31e-ae51b575dfd4.md)
-- [Sentinel One - Alert triggers (files, processes, strings)](../content/660e92b5-1ef6-471f-b753-44a34af82c41.md)
-- [Sentinel One - Deleted rules](../content/8d1ca735-e29a-4bea-a2ec-93162790b686.md)
-- [Sentinel One - Hosts not scanned recently](../content/e45ff570-e8a6-4f8e-9c08-7ee92ef86060.md)
-- [Sentinel One - New rules](../content/9c3a38e4-0975-4f96-82ee-90ce68bec76a.md)
-- [Sentinel One - Scanned hosts](../content/17c77743-8bdb-4d29-a3cb-a7a08676122f.md)
-- [Sentinel One - Sources by alert count](../content/acd0a127-461e-48c8-96fa-27d14595abe0.md)
-- [Sentinel One - Uninstalled agents](../content/f3a7cedd-6fc3-4661-a0ad-c1738e531917.md)
-- [Sentinel One - Users by alert count](../content/56500e23-4e64-45a5-a444-98a1acb2f700.md)
-
-### Workbooks (6)
+### Workbooks (5)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [DNSSolutionWorkbook](../content/dnssolutionworkbook-dns-essentials.md)
@@ -178,9 +147,6 @@ This table is ingested by the following connectors:
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
 - [NetworkSessionEssentials](../content/networksessionessentials-network-session-essentials.md)
 - [NetworkSessionEssentialsV2](../content/networksessionessentialsv2-network-session-essentials.md)
-
-**In solution [SentinelOne](../solutions/sentinelone.md):**
-- [SentinelOne](../content/sentinelone-sentinelone.md)
 
 ---
 

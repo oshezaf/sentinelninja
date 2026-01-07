@@ -19,6 +19,14 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
+This solution uses **3 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | - | Workbooks |
+| [`EmailEvents`](../tables/emailevents.md) | - | Workbooks |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | - | Workbooks |
+
 ### Internal Tables
 
 The following **1 table(s)** are used internally by this solution's playbooks:
@@ -40,7 +48,7 @@ This solution includes **6 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftDefenderForOffice365](../content/microsoftdefenderforoffice365-microsoft-defender-for-office-365.md) | - |
+| [MicrosoftDefenderForOffice365](../content/microsoftdefenderforoffice365-microsoft-defender-for-office-365.md) | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md) |
 
 ### Playbooks
 

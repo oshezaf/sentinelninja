@@ -19,6 +19,7 @@
 
 This content item queries data from the following tables:
 
+- [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)
 - [`AWSVPCFlow`](../tables/awsvpcflow.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
@@ -26,7 +27,7 @@ This content item queries data from the following tables:
 - [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`Corelight_CL`](../tables/corelight-cl.md)
-- [`DefenderIoTRawEvent`](../tables/defenderiotrawevent.md)
+- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
 - [`Event`](../tables/event.md)
 - [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)
 - [`NTANetAnalytics`](../tables/ntanetanalytics.md)
@@ -40,7 +41,6 @@ This content item queries data from the following tables:
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)
 - [`WindowsEvent`](../tables/windowsevent.md)
 - [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`findVolumneBasedAnomaly`](../tables/findvolumnebasedanomaly.md)
 - [`meraki_CL`](../tables/meraki-cl.md)
 
 ---

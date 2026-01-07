@@ -19,14 +19,12 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **4 table(s)** from its content items:
+This solution queries **2 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
 | [`SentinelHealth`](../tables/sentinelhealth.md) | Workbooks |
-| [`getAmountOfIncidentForRuleId`](../tables/getamountofincidentforruleid.md) | Workbooks |
-| [`strcat_array`](../tables/strcat-array.md) | Workbooks |
 
 ### Internal Tables
 
@@ -50,8 +48,8 @@ This solution includes **29 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AutomationHealth](../content/automationhealth-sentinelsoaressentials.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SentinelHealth`](../tables/sentinelhealth.md)<br>[`strcat_array`](../tables/strcat-array.md) |
-| [IncidentOverview](../content/incidentoverview-sentinelsoaressentials.md) | [`getAmountOfIncidentForRuleId`](../tables/getamountofincidentforruleid.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AutomationHealth](../content/automationhealth-sentinelsoaressentials.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SentinelHealth`](../tables/sentinelhealth.md) |
+| [IncidentOverview](../content/incidentoverview-sentinelsoaressentials.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [IncidentTasksWorkbook](../content/incidenttasksworkbook-sentinelsoaressentials.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [SecurityOperationsEfficiency](../content/securityoperationsefficiency-sentinelsoaressentials.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 

@@ -19,15 +19,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **5 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) | Workbooks |
-| [`ExchangeConfiguration`](../tables/exchangeconfiguration.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
-| [`RolevsCmdlet`](../tables/rolevscmdlet.md) | - | Workbooks |
-| [`WhenCreated`](../tables/whencreated.md) | - | Workbooks |
 
 ## Content Items
 
@@ -44,9 +41,9 @@ This solution includes **10 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-admin-activity---online-microsoft-exchange-security---exchange-online.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-least-privilege-with-rbac---online-microsoft-exchange-security---exchange-online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)<br>[`RolevsCmdlet`](../tables/rolevscmdlet.md) |
+| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-least-privilege-with-rbac---online-microsoft-exchange-security---exchange-online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
 | [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-search-adminauditlog---online-microsoft-exchange-security---exchange-online.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-review---online-microsoft-exchange-security---exchange-online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)<br>[`ExchangeConfiguration`](../tables/exchangeconfiguration.md)<br>[`WhenCreated`](../tables/whencreated.md) |
+| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-review---online-microsoft-exchange-security---exchange-online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
 
 ### Parsers
 

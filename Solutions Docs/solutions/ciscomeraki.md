@@ -25,8 +25,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
-| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
+| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
 
 ## Content Items
 
@@ -42,7 +42,7 @@ This solution includes **7 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoMerakiWorkbook](../content/ciscomerakiworkbook-ciscomeraki.md) | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md) |
+| [CiscoMerakiWorkbook](../content/ciscomerakiworkbook-ciscomeraki.md) | - |
 
 ### Playbooks
 
@@ -59,6 +59,10 @@ This solution includes **7 content item(s)**:
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [CiscoMeraki](../content/f3811ff1-231c-453f-bd2c-cda06e7c3e1f.md) | - | - |
+
+## Additional Information
+
+📖 **Vendor Documentation:** [Cisco Meraki Syslog Events](https://documentation.meraki.com/General_Administration/Monitoring_and_Reporting/Syslog_Event_Types_and_Log_Samples) - Syslog event types and log samples
 
 ## Additional Documentation
 

@@ -6,14 +6,6 @@
 | **Solution** | [Netskopev2](../solutions/netskopev2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Workbooks/NetskopeCEDashboard.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md)
-- [`Netskope_Events_CL`](../tables/netskope-events-cl.md)
-- [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md)
-
 ---
 
 **Browse:**

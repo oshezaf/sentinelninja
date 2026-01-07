@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`Heartbeat`](../tables/heartbeat.md)
-- [`OracleDatabaseAuditEvent`](../tables/oracledatabaseauditevent.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 
 ---

@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`Report_links_data_CL`](../tables/report-links-data-cl.md)
-- [`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md)
 
 ---
 

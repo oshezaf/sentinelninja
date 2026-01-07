@@ -10,6 +10,18 @@ Reference for KubeEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/kubeevents) |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Azure kubernetes Service](../solutions/azure-kubernetes-service.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md)
+
 ---
 
 ## Resource Types

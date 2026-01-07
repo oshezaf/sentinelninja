@@ -10,7 +10,6 @@
 
 This content item queries data from the following tables:
 
-- [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 
 ---

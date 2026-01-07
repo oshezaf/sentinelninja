@@ -13,13 +13,13 @@ Browse all content items (analytic rules, hunting queries, playbooks, workbooks,
 
 ## Overview
 
-This index provides access to **4818 content items** across all Microsoft Sentinel solutions.
+This index provides access to **4828 content items** across all Microsoft Sentinel solutions.
 
 Content is organized by type. Click on a content type below to browse all items of that type.
 
 | Content Type | Count | Description |
 |:-------------|------:|:------------|
-| [Analytic Rules](analytic-rules.md) | 2165 | Detection rules for identifying security threats |
+| [Analytic Rules](analytic-rules.md) | 2175 | Detection rules for identifying security threats |
 | [Hunting Queries](hunting-queries.md) | 1158 | Proactive threat hunting queries |
 | [Playbooks](playbooks.md) | 592 | Automated response and remediation workflows |
 | [Workbooks](workbooks.md) | 349 | Interactive dashboards and reports |
@@ -30,7 +30,7 @@ Content is organized by type. Click on a content type below to browse all items 
 
 | Metric | Value |
 |:-------|------:|
-| Total Content Items | 4818 |
+| Total Content Items | 4828 |
 | Content Types | 6 |
 | Solutions with Content | 384 |
 
@@ -38,13 +38,13 @@ Content is organized by type. Click on a content type below to browse all items 
 
 | Content Type | Count |
 |:-------------|------:|
-| [Analytic Rules](analytic-rules.md) | 2165 |
+| [Analytic Rules](analytic-rules.md) | 2175 |
 | [Hunting Queries](hunting-queries.md) | 1158 |
 | [Playbooks](playbooks.md) | 592 |
 | [Parsers](parsers.md) | 513 |
 | [Workbooks](workbooks.md) | 349 |
 | [Watchlists](watchlists.md) | 41 |
-| **Total** | **4818** |
+| **Total** | **4828** |
 
 ---
 

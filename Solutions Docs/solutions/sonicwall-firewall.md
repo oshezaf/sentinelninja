@@ -20,12 +20,11 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md), [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md) | Analytics, Hunting, Workbooks |
-| [`HighRiskPorts`](../tables/highriskports.md) | - | Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md), [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -41,20 +40,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/27f1a570-5f20-496b-88f6-a9aa2c5c9534.md) | Medium | InitialAccess, Execution, Persistence, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/27f1a570-5f20-496b-88f6-a9aa2c5c9534.md) | Medium | InitialAccess, Execution, Persistence, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, Impact | - |
 | [SonicWall - Capture ATP Malicious File Detection](../content/3db9f99e-a459-41e0-8e02-8b332f5fcb2c.md) | Medium | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Outbound SSH/SCP Connections](../content/dedb8fb9-3caa-4b00-ae88-1898eed78917.md) | Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Outbound SSH/SCP Connections](../content/dedb8fb9-3caa-4b00-ae88-1898eed78917.md) | Exfiltration | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SonicWallFirewall](../content/sonicwallfirewall-sonicwall-firewall.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`HighRiskPorts`](../tables/highriskports.md) |
+| [SonicWallFirewall](../content/sonicwallfirewall-sonicwall-firewall.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

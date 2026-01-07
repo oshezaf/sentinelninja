@@ -27,10 +27,10 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | [Dynatrace Attacks](../connectors/dynatraceattacks.md) | Analytics, Workbooks |
+| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | [Dynatrace Attacks](../connectors/dynatraceattacks.md) | - |
 | [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | [Dynatrace Audit Logs](../connectors/dynatraceauditlogs.md) | - |
-| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | [Dynatrace Problems](../connectors/dynatraceproblems.md) | Analytics, Workbooks |
-| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | [Dynatrace Runtime Vulnerabilities](../connectors/dynatraceruntimevulnerabilities.md) | Analytics, Workbooks |
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | [Dynatrace Problems](../connectors/dynatraceproblems.md) | - |
+| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | [Dynatrace Runtime Vulnerabilities](../connectors/dynatraceruntimevulnerabilities.md) | - |
 
 ### Internal Tables
 
@@ -55,17 +55,17 @@ This solution includes **16 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dynatrace - Problem detection](../content/415978ff-074e-4203-824a-b06153d77bf7.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) |
-| [Dynatrace Application Security - Attack detection](../content/1b0b2065-8bac-5a00-83c4-1b58f69ac212.md) | High | Execution, Impact, InitialAccess, PrivilegeEscalation | [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) |
-| [Dynatrace Application Security - Code-Level runtime vulnerability detection](../content/305093b4-0fa2-57bc-bced-caea782a6e9c.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
-| [Dynatrace Application Security - Non-critical runtime vulnerability detection](../content/ff0af873-a2f2-4233-8412-0ef4e00b0156.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
-| [Dynatrace Application Security - Third-Party runtime vulnerability detection](../content/af99b078-124b-543a-9a50-66ef87c09f6a.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
+| [Dynatrace - Problem detection](../content/415978ff-074e-4203-824a-b06153d77bf7.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
+| [Dynatrace Application Security - Attack detection](../content/1b0b2065-8bac-5a00-83c4-1b58f69ac212.md) | High | Execution, Impact, InitialAccess, PrivilegeEscalation | - |
+| [Dynatrace Application Security - Code-Level runtime vulnerability detection](../content/305093b4-0fa2-57bc-bced-caea782a6e9c.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
+| [Dynatrace Application Security - Non-critical runtime vulnerability detection](../content/ff0af873-a2f2-4233-8412-0ef4e00b0156.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
+| [Dynatrace Application Security - Third-Party runtime vulnerability detection](../content/af99b078-124b-543a-9a50-66ef87c09f6a.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Dynatrace](../content/dynatrace-dynatrace.md) | [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md)<br>[`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md)<br>[`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) |
+| [Dynatrace](../content/dynatrace-dynatrace.md) | - |
 
 ### Playbooks
 

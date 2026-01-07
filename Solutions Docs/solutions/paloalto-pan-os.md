@@ -21,13 +21,11 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md), [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md) | Analytics, Hunting, Workbooks |
-| [`covidIndicators`](../tables/covidindicators.md) | - | Analytics |
-| [`triggerBody`](../tables/triggerbody.md) | - | Playbooks |
 
 ## Content Items
 
@@ -44,7 +42,7 @@ This solution includes **16 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Microsoft COVID-19 file hash indicator matches](../content/2be4ef67-a93f-4d8a-981a-88158cb73abd.md) | Medium | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`covidIndicators`](../tables/covidindicators.md) |
+| [Microsoft COVID-19 file hash indicator matches](../content/2be4ef67-a93f-4d8a-981a-88158cb73abd.md) | Medium | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Palo Alto - possible internal to external port scanning](../content/5b72f527-e3f6-4a00-9908-8e4fee14da9f.md) | Low | Discovery | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`fluentbit_CL`](../tables/fluentbit-cl.md) |
 | [Palo Alto - possible nmap scan on with top 100 option](../content/4d61bb9a-7f6d-45b1-ac0e-517e2a92f6fd.md) | Medium | Reconnaissance | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Palo Alto - potential beaconing detected](../content/f0be259a-34ac-4946-aa15-ca2b115d5feb.md) | Low | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`fluentbit_CL`](../tables/fluentbit-cl.md) |
@@ -70,7 +68,7 @@ This solution includes **16 content item(s)**:
 |:-----|:------------|:------------|
 | [Block IP - Palo Alto PAN-OS - Entity trigger](../content/block-ip---palo-alto-pan-os---entity-trigger-paloalto-pan-os.md) | This playbook interacts with relevant stakeholders, such incident response team, to approve blocking... | - |
 | [Get System Info - Palo Alto PAN-OS XML API](../content/get-system-info---palo-alto-pan-os-xml-api-paloalto-pan-os.md) | This playbook allows us to get System Info of a Palo Alto device for a Microsoft Sentinel alert. | - |
-| [Get Threat PCAP - Palo Alto PAN-OS XML API](../content/get-threat-pcap---palo-alto-pan-os-xml-api-paloalto-pan-os.md) | This playbook allows us to get a threat PCAP for a given PCAP ID. | [`triggerBody`](../tables/triggerbody.md) *(read)* |
+| [Get Threat PCAP - Palo Alto PAN-OS XML API](../content/get-threat-pcap---palo-alto-pan-os-xml-api-paloalto-pan-os.md) | This playbook allows us to get a threat PCAP for a given PCAP ID. | - |
 | [PaloAlto-PAN-OS-BlockIP](../content/paloalto-pan-os-blockip-paloalto-pan-os.md) | This playbook allows blocking/unblocking IPs in PaloAlto, using **Address Object Groups**. This allo... | - |
 | [PaloAlto-PAN-OS-BlockURL](../content/paloalto-pan-os-blockurl-paloalto-pan-os.md) | This playbook allows blocking/unblocking URLs in PaloAlto, using **predefined address group**. This ... | - |
 | [PaloAlto-PAN-OS-BlockURL-EntityTrigger](../content/paloalto-pan-os-blockurl-entitytrigger-paloalto-pan-os.md) | This playbook allows blocking/unblocking URLs in PaloAlto, using **predefined address group**. This ... | - |

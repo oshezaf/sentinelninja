@@ -20,11 +20,12 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Forcepoint NGFW via AMA](../connectors/forcepointngfwama.md), [[Deprecated] Forcepoint NGFW via Legacy Agent](../connectors/forcepointngfw.md) | Workbooks |
+| [`Perf`](../tables/perf.md) | - | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Workbooks |
 
 ## Content Items
@@ -40,7 +41,7 @@ This solution includes **2 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [ForcepointNGFW](../content/forcepointngfw-forcepoint-ngfw.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ForcepointNGFWAdvanced](../content/forcepointngfwadvanced-forcepoint-ngfw.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [ForcepointNGFWAdvanced](../content/forcepointngfwadvanced-forcepoint-ngfw.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Perf`](../tables/perf.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 
 ## Release Notes
 

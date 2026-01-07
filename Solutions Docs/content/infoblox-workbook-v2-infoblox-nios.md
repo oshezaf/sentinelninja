@@ -6,14 +6,6 @@
 | **Solution** | [Infoblox NIOS](../solutions/infoblox-nios.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS/Workbooks/Infoblox-Workbook-V2.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Infoblox_dhcp_consolidated`](../tables/infoblox-dhcp-consolidated.md)
-- [`Infoblox_dns_consolidated`](../tables/infoblox-dns-consolidated.md)
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

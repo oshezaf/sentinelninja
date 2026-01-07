@@ -6,12 +6,6 @@
 | **Solution** | [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection/Workbooks/SymantecEndpointProtection.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

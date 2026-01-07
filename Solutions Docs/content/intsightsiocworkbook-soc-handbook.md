@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
-- [`alertEntity`](../tables/alertentity.md)
 
 ---
 

@@ -24,7 +24,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) | [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | Analytics, Workbooks |
+| [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) | [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | - |
 
 ## Content Items
 
@@ -42,13 +42,13 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dataminr - urgent alerts detected](../content/64a46029-3236-4d03-b5df-207366a623f1.md) | Medium | Persistence | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) |
+| [Dataminr - urgent alerts detected](../content/64a46029-3236-4d03-b5df-207366a623f1.md) | Medium | Persistence | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DataminrPulseAlerts](../content/dataminrpulsealerts-dataminr-pulse.md) | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) |
+| [DataminrPulseAlerts](../content/dataminrpulsealerts-dataminr-pulse.md) | - |
 
 ### Playbooks
 

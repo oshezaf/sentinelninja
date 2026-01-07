@@ -6,12 +6,6 @@
 | **Solution** | [Netskopev2](../solutions/netskopev2.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Workbooks/NetskopeCCFWebtxDashboard.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`NetskopeWebTransactions_CL`](../tables/netskopewebtransactions-cl.md)
-
 ---
 
 **Browse:**

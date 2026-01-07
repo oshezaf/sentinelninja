@@ -10,6 +10,10 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntanetanalytics) |
 
+## Additional Information
+
+📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) - NSG and VNet flow log schema and data aggregation
+
 ## Solutions (9)
 
 This table is used by the following solutions:

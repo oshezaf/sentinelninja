@@ -14,13 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-- [Corelight_Security_Workflow](../content/corelight-security-workflow-corelight.md)
-
 ---
 
 **Browse:**

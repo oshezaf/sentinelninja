@@ -10,9 +10,10 @@
 
 This content item queries data from the following tables:
 
-- [`FileCreation`](../tables/filecreation.md)
-- [`avDetections`](../tables/avdetections.md)
-- [`usbDetections`](../tables/usbdetections.md)
+- [`DeviceEvents`](../tables/deviceevents.md)
+- [`DeviceFileEvents`](../tables/devicefileevents.md)
+- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
+- [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)
 
 ---
 

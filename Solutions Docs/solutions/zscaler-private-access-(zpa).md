@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ZPA_CL`](../tables/zpa-cl.md) | [[Deprecated] Zscaler Private Access](../connectors/zscalerprivateaccess.md) | Analytics, Hunting, Workbooks |
+| [`ZPA_CL`](../tables/zpa-cl.md) | [[Deprecated] Zscaler Private Access](../connectors/zscalerprivateaccess.md) | - |
 
 ## Content Items
 
@@ -40,37 +40,37 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Zscaler - Connections by dormant user](../content/66bc77ee-3e45-11ec-9bbc-0242ac130002.md) | High | Persistence | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Forbidden countries](../content/b3d112b4-3e1e-11ec-9bbc-0242ac130002.md) | High | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Shared ZPA session](../content/40a98355-0e52-479f-8c91-4ab659cba878.md) | High | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Unexpected ZPA session duration](../content/e07846e0-43ad-11ec-81d3-0242ac130003.md) | Medium | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Unexpected event count of rejects by policy](../content/593e3e2a-43ce-11ec-81d3-0242ac130003.md) | High | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Unexpected update operation](../content/672e2846-4226-11ec-81d3-0242ac130003.md) | Medium | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - ZPA connections by new user](../content/236a7ec1-0120-40f2-a157-c1a72dde8bcb.md) | Medium | Persistence | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - ZPA connections from new IP](../content/24f0779d-3927-403a-aac1-cc8791653606.md) | Medium | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - ZPA connections from new country](../content/c4902121-7a7e-44d1-810b-88d26db622ff.md) | Medium | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - ZPA connections outside operational hours](../content/2859ad22-46c8-4cc7-ad7b-80ce0cba0af3.md) | Medium | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
+| [Zscaler - Connections by dormant user](../content/66bc77ee-3e45-11ec-9bbc-0242ac130002.md) | High | Persistence | - |
+| [Zscaler - Forbidden countries](../content/b3d112b4-3e1e-11ec-9bbc-0242ac130002.md) | High | InitialAccess | - |
+| [Zscaler - Shared ZPA session](../content/40a98355-0e52-479f-8c91-4ab659cba878.md) | High | InitialAccess | - |
+| [Zscaler - Unexpected ZPA session duration](../content/e07846e0-43ad-11ec-81d3-0242ac130003.md) | Medium | InitialAccess | - |
+| [Zscaler - Unexpected event count of rejects by policy](../content/593e3e2a-43ce-11ec-81d3-0242ac130003.md) | High | InitialAccess | - |
+| [Zscaler - Unexpected update operation](../content/672e2846-4226-11ec-81d3-0242ac130003.md) | Medium | InitialAccess | - |
+| [Zscaler - ZPA connections by new user](../content/236a7ec1-0120-40f2-a157-c1a72dde8bcb.md) | Medium | Persistence | - |
+| [Zscaler - ZPA connections from new IP](../content/24f0779d-3927-403a-aac1-cc8791653606.md) | Medium | InitialAccess | - |
+| [Zscaler - ZPA connections from new country](../content/c4902121-7a7e-44d1-810b-88d26db622ff.md) | Medium | InitialAccess | - |
+| [Zscaler - ZPA connections outside operational hours](../content/2859ad22-46c8-4cc7-ad7b-80ce0cba0af3.md) | Medium | InitialAccess | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
 | [Zscaler - Abnormal total bytes size](../content/181dc982-4631-11ec-81d3-0242ac130003.md) | Exfiltration, Collection | - |
-| [Zscaler - Applications using by accounts](../content/6ae7b9e0-462a-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Connection close reasons](../content/5467efc0-422c-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Destination ports by IP](../content/20733e72-4231-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Rare urlhostname requests](../content/d311eb1e-4231-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Server error by user](../content/22545900-422d-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Top connectors](../content/26d5244a-462f-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Top source IP](../content/baf67720-4623-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Users access groups](../content/018e11f4-4627-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
-| [Zscaler - Users by source location countries](../content/bf8ce3e8-422a-11ec-81d3-0242ac130003.md) | InitialAccess | [`ZPA_CL`](../tables/zpa-cl.md) |
+| [Zscaler - Applications using by accounts](../content/6ae7b9e0-462a-11ec-81d3-0242ac130003.md) | InitialAccess | - |
+| [Zscaler - Connection close reasons](../content/5467efc0-422c-11ec-81d3-0242ac130003.md) | InitialAccess | - |
+| [Zscaler - Destination ports by IP](../content/20733e72-4231-11ec-81d3-0242ac130003.md) | InitialAccess | - |
+| [Zscaler - Rare urlhostname requests](../content/d311eb1e-4231-11ec-81d3-0242ac130003.md) | InitialAccess | - |
+| [Zscaler - Server error by user](../content/22545900-422d-11ec-81d3-0242ac130003.md) | InitialAccess | - |
+| [Zscaler - Top connectors](../content/26d5244a-462f-11ec-81d3-0242ac130003.md) | InitialAccess | - |
+| [Zscaler - Top source IP](../content/baf67720-4623-11ec-81d3-0242ac130003.md) | InitialAccess | - |
+| [Zscaler - Users access groups](../content/018e11f4-4627-11ec-81d3-0242ac130003.md) | InitialAccess | - |
+| [Zscaler - Users by source location countries](../content/bf8ce3e8-422a-11ec-81d3-0242ac130003.md) | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZscalerZPA](../content/zscalerzpa-zscaler-private-access-%28zpa%29.md) | [`ZPA_CL`](../tables/zpa-cl.md) |
+| [ZscalerZPA](../content/zscalerzpa-zscaler-private-access-%28zpa%29.md) | - |
 
 ### Parsers
 

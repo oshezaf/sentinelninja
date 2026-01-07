@@ -25,7 +25,7 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | [Tenable Identity Exposure](../connectors/tenableie.md) | Analytics, Workbooks |
+| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | [Tenable Identity Exposure](../connectors/tenableie.md) | - |
 | [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | [Tenable Vulnerability Management](../connectors/tenablevm.md) | Playbooks |
 | [`Tenable_VM_Compliance_CL`](../tables/tenable-vm-compliance-cl.md) | [Tenable Vulnerability Management](../connectors/tenablevm.md) | - |
 | [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | [Tenable Vulnerability Management](../connectors/tenablevm.md) | Playbooks |
@@ -47,25 +47,25 @@ This solution includes **20 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [TIE Active Directory attacks pathways](../content/de549a62-f595-4810-88bd-621338186588.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE DCShadow](../content/874e3530-552e-437b-ba2e-227979e7e43c.md) | High | DefenseEvasion | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE DCSync](../content/19d1f964-ddcf-437b-92ce-b9c1c14d24f1.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE Golden Ticket](../content/216e12dd-165a-4537-b241-32e1bd3330c7.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE Indicators of Attack](../content/6c75f0d2-2973-4188-bb05-ec7bc8696120.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE Indicators of Exposures](../content/f6ae2eb2-97c9-4e0f-ae73-7420ef80d99d.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE LSASS Memory](../content/7851f57c-98b6-43c6-9747-9bb7cf11f21c.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE Password Guessing](../content/d1416c25-5a56-4a88-8d7c-568e6551a307.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE Password Spraying](../content/f47eb8cb-4acb-4ee4-887d-0247c6d73a72.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE Password issues](../content/87af910a-e9c0-4c96-8045-f778ba405251.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE privileged accounts issues](../content/5c170c73-75ba-48ea-8dfc-e4e2d4f23979.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TIE user accounts issues](../content/c4562ef3-d821-4089-b6c0-120d95c855e6.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
+| [TIE Active Directory attacks pathways](../content/de549a62-f595-4810-88bd-621338186588.md) | Low | CredentialAccess | - |
+| [TIE DCShadow](../content/874e3530-552e-437b-ba2e-227979e7e43c.md) | High | DefenseEvasion | - |
+| [TIE DCSync](../content/19d1f964-ddcf-437b-92ce-b9c1c14d24f1.md) | High | CredentialAccess | - |
+| [TIE Golden Ticket](../content/216e12dd-165a-4537-b241-32e1bd3330c7.md) | High | CredentialAccess | - |
+| [TIE Indicators of Attack](../content/6c75f0d2-2973-4188-bb05-ec7bc8696120.md) | Low | CredentialAccess | - |
+| [TIE Indicators of Exposures](../content/f6ae2eb2-97c9-4e0f-ae73-7420ef80d99d.md) | Low | CredentialAccess | - |
+| [TIE LSASS Memory](../content/7851f57c-98b6-43c6-9747-9bb7cf11f21c.md) | High | CredentialAccess | - |
+| [TIE Password Guessing](../content/d1416c25-5a56-4a88-8d7c-568e6551a307.md) | High | CredentialAccess | - |
+| [TIE Password Spraying](../content/f47eb8cb-4acb-4ee4-887d-0247c6d73a72.md) | High | CredentialAccess | - |
+| [TIE Password issues](../content/87af910a-e9c0-4c96-8045-f778ba405251.md) | Low | CredentialAccess | - |
+| [TIE privileged accounts issues](../content/5c170c73-75ba-48ea-8dfc-e4e2d4f23979.md) | Low | CredentialAccess | - |
+| [TIE user accounts issues](../content/c4562ef3-d821-4089-b6c0-120d95c855e6.md) | Low | CredentialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TenableIEIoA](../content/tenableieioa-tenable-app.md) | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
-| [TenableIEIoE](../content/tenableieioe-tenable-app.md) | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) |
+| [TenableIEIoA](../content/tenableieioa-tenable-app.md) | - |
+| [TenableIEIoE](../content/tenableieioe-tenable-app.md) | - |
 
 ### Playbooks
 

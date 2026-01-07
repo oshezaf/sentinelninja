@@ -20,13 +20,12 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
-| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
-| [`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md) | - | Workbooks |
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | - |
+| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | - |
 
 ## Content Items
 
@@ -42,15 +41,15 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Brute force attack against user credentials](../content/5a6ce089-e756-40fb-b022-c8e8864a973a.md) | Medium | CredentialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
-| [Potential Password Spray Attack](../content/64d16e62-1a17-4a35-9ea7-2b9fe6f07118.md) | Medium | CredentialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
-| [User Sign in from different countries](../content/3094e036-e5ae-4d6e-8626-b0f86ebc71f2.md) | Medium | InitialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
+| [Brute force attack against user credentials](../content/5a6ce089-e756-40fb-b022-c8e8864a973a.md) | Medium | CredentialAccess | - |
+| [Potential Password Spray Attack](../content/64d16e62-1a17-4a35-9ea7-2b9fe6f07118.md) | Medium | CredentialAccess | - |
+| [User Sign in from different countries](../content/3094e036-e5ae-4d6e-8626-b0f86ebc71f2.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SalesforceServiceCloud](../content/salesforceservicecloud-salesforce-service-cloud.md) | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md)<br>[`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md) |
+| [SalesforceServiceCloud](../content/salesforceservicecloud-salesforce-service-cloud.md) | - |
 
 ### Parsers
 

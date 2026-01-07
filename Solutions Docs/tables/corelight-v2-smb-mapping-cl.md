@@ -14,13 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Hunting Queries (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-- [Corelight - Multiple Remote SMB Connections from single client](../content/69736969-6ae0-48cd-a05a-743f7372ee84.md)
-
 ---
 
 **Browse:**

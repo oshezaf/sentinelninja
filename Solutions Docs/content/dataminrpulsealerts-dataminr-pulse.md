@@ -6,12 +6,6 @@
 | **Solution** | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse/Workbooks/DataminrPulseAlerts.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)
-
 ---
 
 **Browse:**

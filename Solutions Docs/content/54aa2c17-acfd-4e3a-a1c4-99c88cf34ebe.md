@@ -15,12 +15,6 @@ Detects when connection to database is from external IP source.
 | **Required Connectors** | [SyslogAma](../connectors/syslogama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit/Analytic%20Rules/OracleDBAuditConnectFromExternalIp.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

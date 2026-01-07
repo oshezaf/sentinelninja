@@ -12,6 +12,7 @@ The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session lo
 
 | Table | Usage |
 |:------|:------|
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | read |
 | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | read |
 | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | read |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | read |

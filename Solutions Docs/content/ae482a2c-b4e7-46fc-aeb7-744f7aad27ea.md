@@ -13,12 +13,6 @@ Query searches for new incidents.
 | **Required Connectors** | [SyslogAma](../connectors/syslogama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention/Hunting%20Queries/DigitalGuardianNewIncidents.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

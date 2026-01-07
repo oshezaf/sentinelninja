@@ -5,7 +5,7 @@
 | **Connector ID** | `ForgeRock` |
 | **Publisher** | ForgeRock Inc |
 | **Used in Solutions** | [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) |
-| **Collection Method** | AMA |
+| **Collection Method** | MMA |
 | **Event Vendor** | ForgeRock Inc |
 | **Connector Definition Files** | [ForgeRock_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForgeRock%20Common%20Audit%20for%20CEF/Data%20Connectors/ForgeRock_CEF.json) |
 

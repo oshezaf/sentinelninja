@@ -12,6 +12,12 @@ This query helps hunt for Teams users clicking on suspicious URL domains.
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Microsoft%20Teams%20protection/Teams%20users%20clicking%20on%20suspicious%20URL%20domains.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`MessageUrlInfo`](../tables/messageurlinfo.md)
+
 ---
 
 **Browse:**

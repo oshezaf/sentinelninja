@@ -20,9 +20,9 @@ Currently, I'm a **Principal Product Manager** working on **Microsoft Sentinel**
 Comprehensive reference documentation for Microsoft Sentinel Solutions, automatically generated from the [Azure-Sentinel](https://github.com/Azure/Azure-Sentinel) repository using the **[Solutions Analyzer](https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Solutions%20Analyzer)** tool – which I also developed and maintain as part of the Azure-Sentinel repository.
 
 **Includes:**
-- **[Solutions Index](Solutions%20Docs/solutions-index.md)** – 485 solutions organized alphabetically
-- **[Connectors Index](Solutions%20Docs/connectors-index.md)** – 524 data connectors with metadata
-- **[Tables Index](Solutions%20Docs/tables-index.md)** – 1,927 tables with schema and usage
+- **[Solutions Index](Solutions%20Docs/solutions-index.md)**
+- **[Connectors Index](Solutions%20Docs/connectors-index.md)**
+- **[Tables Index](Solutions%20Docs/tables-index.md)** 
 - **[Content Index](Solutions%20Docs/content/content-index.md)** – Overview of all content types including:
   - Analytic Rules
   - Hunting Queries

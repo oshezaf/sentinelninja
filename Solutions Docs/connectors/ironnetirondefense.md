@@ -5,7 +5,7 @@
 | **Connector ID** | `IronNetIronDefense` |
 | **Publisher** | IronNet |
 | **Used in Solutions** | [IronNet IronDefense](../solutions/ironnet-irondefense.md) |
-| **Collection Method** | AMA |
+| **Collection Method** | MMA |
 | **Event Vendor** | IronNet |
 | **Event Product** | IronDefense, IronDome |
 | **Connector Definition Files** | [IronNetIronDefense.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/Data%20Connectors/IronNetIronDefense.json) |

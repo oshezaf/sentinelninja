@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Pulse Connect Secure](../connectors/pulseconnectsecure.md) | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Pulse Connect Secure](../connectors/pulseconnectsecure.md) | - |
 
 ## Content Items
 
@@ -39,14 +39,14 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/1fa1528e-f746-4794-8a41-14827f4cb798.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
-| [PulseConnectSecure - Potential Brute Force Attempts](../content/34663177-8abf-4db1-b0a4-5683ab273f44.md) | Low | CredentialAccess | [`Syslog`](../tables/syslog.md) |
+| [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/1fa1528e-f746-4794-8a41-14827f4cb798.md) | Medium | CredentialAccess | - |
+| [PulseConnectSecure - Potential Brute Force Attempts](../content/34663177-8abf-4db1-b0a4-5683ab273f44.md) | Low | CredentialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PulseConnectSecure](../content/pulseconnectsecure-pulse-connect-secure.md) | [`Syslog`](../tables/syslog.md) |
+| [PulseConnectSecure](../content/pulseconnectsecure-pulse-connect-secure.md) | - |
 
 ### Parsers
 

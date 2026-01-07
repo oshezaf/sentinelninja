@@ -15,12 +15,6 @@ Detects stolen credentials, financial information, stealer logs, and related pay
 | **Required Connectors** | [CybleVisionAlerts](../connectors/cyblevisionalerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Analytic%20Rules/Alerts_Darkweb_Marketplace.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Alerts_darkweb_marketplaces`](../tables/alerts-darkweb-marketplaces.md)
-
 ---
 
 **Browse:**

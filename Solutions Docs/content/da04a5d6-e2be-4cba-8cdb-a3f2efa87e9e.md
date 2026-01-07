@@ -14,12 +14,6 @@ Detects multiple errors to same domain.
 | **Required Connectors** | [GCPDNSDataConnector](../connectors/gcpdnsdataconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformDNS/Analytic%20Rules/GCPDNSMultipleErrorsQuery.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
-
 ---
 
 **Browse:**

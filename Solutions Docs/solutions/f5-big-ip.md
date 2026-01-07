@@ -43,6 +43,10 @@ This solution includes **2 content item(s)**:
 | [F5BIGIPSystemMetrics](../content/f5bigipsystemmetrics-f5-big-ip.md) | [`F5Telemetry_AVR_CL`](../tables/f5telemetry-avr-cl.md)<br>[`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) |
 | [F5Networks](../content/f5networks-f5-big-ip.md) | [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md)<br>[`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md)<br>[`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) |
 
+## Additional Information
+
+📖 **Vendor Documentation:** [F5 BIG-IP Event Messages](https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-external-monitoring-implementations-13-0-0/3.html) - Event messages and attack types
+
 ---
 
 **Browse:**

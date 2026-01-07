@@ -10,10 +10,13 @@
 
 This content item queries data from the following tables:
 
+- [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`Heartbeat`](../tables/heartbeat.md)
+- [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`SecurityEvent`](../tables/securityevent.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

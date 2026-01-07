@@ -10,11 +10,12 @@
 
 This content item queries data from the following tables:
 
+- [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
+- [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`Crosswalk`](../tables/crosswalk.md)
 - [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`ProtectionStatus`](../tables/protectionstatus.md)
@@ -22,7 +23,7 @@ This content item queries data from the following tables:
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)
 - [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
-- [`securityresources`](../tables/securityresources.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 
 ---
 

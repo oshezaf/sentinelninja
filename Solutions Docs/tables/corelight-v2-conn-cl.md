@@ -14,19 +14,11 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (1)
 
-### Hunting Queries (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-- [Corelight - External Facing Services](../content/3e42a796-9a4c-4ebf-a0e0-5282947986b5.md)
-
-### Workbooks (4)
+### Workbooks (1)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight](../content/corelight-corelight.md)
-- [Corelight_Alert_Aggregations](../content/corelight-alert-aggregations-corelight.md)
-- [Corelight_Data_Explorer](../content/corelight-data-explorer-corelight.md)
 - [Corelight_Security_Workflow](../content/corelight-security-workflow-corelight.md)
 
 ---

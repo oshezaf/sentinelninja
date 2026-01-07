@@ -24,7 +24,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Fortinet FortiWeb Web Application Firewall via AMA](../connectors/fortinetfortiwebama.md), [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](../connectors/fortinetfortiweb.md) | Analytics, Hunting, Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Fortinet FortiWeb Web Application Firewall via AMA](../connectors/fortinetfortiwebama.md), [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](../connectors/fortinetfortiweb.md) | - |
 
 ## Content Items
 
@@ -42,20 +42,20 @@ This solution includes **7 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Fortiweb - WAF Allowed threat](../content/86e9409f-b9ea-4e9a-8b72-5132ba43bcae.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Fortiweb - WAF Allowed threat](../content/86e9409f-b9ea-4e9a-8b72-5132ba43bcae.md) | High | InitialAccess | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Fortiweb - Unexpected countries](../content/9fc7d945-0e82-4664-aca0-dc121a7rt5nt.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Fortiweb - identify owasp10 vulnerabilities](../content/3rg4d567-0e82-4664-aca0-dc121a7th3ht.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Fortiweb - Unexpected countries](../content/9fc7d945-0e82-4664-aca0-dc121a7rt5nt.md) | InitialAccess | - |
+| [Fortiweb - identify owasp10 vulnerabilities](../content/3rg4d567-0e82-4664-aca0-dc121a7th3ht.md) | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Fortiweb-workbook](../content/fortiweb-workbook-fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Fortiweb-workbook](../content/fortiweb-workbook-fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) | - |
 
 ### Playbooks
 

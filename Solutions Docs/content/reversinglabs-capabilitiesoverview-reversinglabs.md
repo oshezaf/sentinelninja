@@ -10,11 +10,9 @@
 
 This content item queries data from the following tables:
 
-- [`DomainQuery`](../tables/domainquery.md)
 - [`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md)
 
 ---
 

@@ -20,12 +20,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **22 table(s)**:
+This solution uses **16 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Cymru_Scout_Account_Usage_Data_CL`](../tables/cymru-scout-account-usage-data-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | Workbooks |
-| [`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | Workbooks |
+| [`Cymru_Scout_Account_Usage_Data_CL`](../tables/cymru-scout-account-usage-data-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
+| [`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
 | [`Cymru_Scout_IP_Data_Communications_CL`](../tables/cymru-scout-ip-data-communications-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
 | [`Cymru_Scout_IP_Data_Details_CL`](../tables/cymru-scout-ip-data-details-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
 | [`Cymru_Scout_IP_Data_Fingerprints_CL`](../tables/cymru-scout-ip-data-fingerprints-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
@@ -39,13 +39,7 @@ This solution uses **22 table(s)**:
 | [`Cymru_Scout_IP_Data_Summary_PDNS_CL`](../tables/cymru-scout-ip-data-summary-pdns-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
 | [`Cymru_Scout_IP_Data_x509_CL`](../tables/cymru-scout-ip-data-x509-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
 | [`Domain_Data_CL`](../tables/domain-data-cl.md) | - | Workbooks |
-| [`InsightsMessageTable`](../tables/insightsmessagetable.md) | - | Workbooks |
-| [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) | - | Workbooks |
 | [`Summary_Details_CL`](../tables/summary-details-cl.md) | - | Workbooks |
-| [`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md) | - | Workbooks |
-| [`insights_table_name`](../tables/insights-table-name.md) | - | Playbooks |
-| [`ip_indicators_table_name`](../tables/ip-indicators-table-name.md) | - | Playbooks |
-| [`pdns_table_name`](../tables/pdns-table-name.md) | - | Playbooks |
 
 ## Content Items
 
@@ -62,15 +56,15 @@ This solution includes **28 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TeamCymruScout](../content/teamcymruscout-team-cymru-scout.md) | [`Cymru_Scout_Account_Usage_Data_CL`](../tables/cymru-scout-account-usage-data-cl.md)<br>[`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md)<br>[`Domain_Data_CL`](../tables/domain-data-cl.md)<br>[`InsightsMessageTable`](../tables/insightsmessagetable.md)<br>[`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md)<br>[`Summary_Details_CL`](../tables/summary-details-cl.md)<br>[`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md) |
+| [TeamCymruScout](../content/teamcymruscout-team-cymru-scout.md) | [`Domain_Data_CL`](../tables/domain-data-cl.md)<br>[`Summary_Details_CL`](../tables/summary-details-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Team Cymru Scout Create Incident And Notify](../content/team-cymru-scout-create-incident-and-notify-team-cymru-scout.md) | This playbook will create an incident for suspicious or malicious ip and notify to pre-defined or us... | [`insights_table_name`](../tables/insights-table-name.md) *(read)* |
-| [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-enrich-incident-team-cymru-scout.md) | This playbook will fetch and ingest IP or Domain Indicator data based on Entity mapped in Microsoft ... | [`pdns_table_name`](../tables/pdns-table-name.md) *(read)* |
-| [Team Cymru Scout Live Investigation](../content/team-cymru-scout-live-investigation-team-cymru-scout.md) | This playbook will fetch and ingest IP or Domain Indicator data based on input parameters given in t... | [`ip_indicators_table_name`](../tables/ip-indicators-table-name.md) *(read)* |
+| [Team Cymru Scout Create Incident And Notify](../content/team-cymru-scout-create-incident-and-notify-team-cymru-scout.md) | This playbook will create an incident for suspicious or malicious ip and notify to pre-defined or us... | - |
+| [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-enrich-incident-team-cymru-scout.md) | This playbook will fetch and ingest IP or Domain Indicator data based on Entity mapped in Microsoft ... | - |
+| [Team Cymru Scout Live Investigation](../content/team-cymru-scout-live-investigation-team-cymru-scout.md) | This playbook will fetch and ingest IP or Domain Indicator data based on input parameters given in t... | - |
 
 ### Parsers
 

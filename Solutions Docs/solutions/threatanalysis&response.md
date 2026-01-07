@@ -19,17 +19,14 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **7 table(s)** from its content items:
+This solution queries **4 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
-| [`MSFTBuiltinAlerts`](../tables/msftbuiltinalerts.md) | Workbooks |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | Workbooks |
-| [`SentinelGithub`](../tables/sentinelgithub.md) | Workbooks |
 | [`Usage`](../tables/usage.md) | Workbooks |
-| [`securityresources`](../tables/securityresources.md) | Workbooks |
 
 ### Internal Tables
 
@@ -52,8 +49,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DynamicThreatModeling&Response](../content/dynamicthreatmodeling&response-threatanalysis&response.md) | [`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`securityresources`](../tables/securityresources.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [ThreatAnalysis&Response](../content/threatanalysis&response-threatanalysis&response.md) | [`MSFTBuiltinAlerts`](../tables/msftbuiltinalerts.md)<br>[`SentinelGithub`](../tables/sentinelgithub.md)<br>[`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [DynamicThreatModeling&Response](../content/dynamicthreatmodeling&response-threatanalysis&response.md) | [`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [ThreatAnalysis&Response](../content/threatanalysis&response-threatanalysis&response.md) | [`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ## Additional Documentation
 

@@ -26,14 +26,12 @@ This solution provides **8 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **8 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AlldataUnique`](../tables/alldataunique.md) | - | Workbooks |
 | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) | Workbooks |
 | [`Event`](../tables/event.md) | [Microsoft Exchange Admin Audit Logs by Event Logs](../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md), [Microsoft Exchange Logs and Events](../connectors/esi-opt2exchangeserverseventlogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
-| [`ExchangeConfiguration`](../tables/exchangeconfiguration.md) | - | Workbooks |
 | [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
 | [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
 | [`SecurityEvent`](../tables/securityevent.md) | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
@@ -64,7 +62,7 @@ This solution includes **13 content item(s)**:
 | [Microsoft Exchange Admin Activity](../content/microsoft-exchange-admin-activity-microsoft-exchange-security---exchange-on-premises.md) | - |
 | [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-least-privilege-with-rbac-microsoft-exchange-security---exchange-on-premises.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
 | [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-search-adminauditlog-microsoft-exchange-security---exchange-on-premises.md) | - |
-| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-review-microsoft-exchange-security---exchange-on-premises.md) | [`AlldataUnique`](../tables/alldataunique.md)<br>[`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md)<br>[`ExchangeConfiguration`](../tables/exchangeconfiguration.md) |
+| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-review-microsoft-exchange-security---exchange-on-premises.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
 
 ### Parsers
 

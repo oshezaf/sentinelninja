@@ -89,6 +89,10 @@ Make sure to configure the machine's security according to your organization's s
 
 [Learn more >](https://aka.ms/SecureCEF)
 
+## Additional Information
+
+📖 **Vendor Documentation:** [NetScaler WAF CEF Logging](https://docs.netscaler.com/en-us/citrix-adc/current-release/application-firewall/logs.html) - CEF logging support in Application Firewall
+
 ---
 
 **Browse:**

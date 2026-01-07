@@ -6,12 +6,6 @@
 | **Solution** | [ESETPROTECT](../solutions/esetprotect.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESETPROTECT/Workbooks/ESETPROTECT.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

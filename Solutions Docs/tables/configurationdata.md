@@ -10,7 +10,24 @@ Reference for ConfigurationData table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/configurationdata) |
 
+## Solutions (2)
+
+This table is used by the following solutions:
+
+- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
+- [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+
 ---
+
+## Content Items Using This Table (2)
+
+### Workbooks (2)
+
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation.md)
+
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagement-m2131-maturitymodelforeventlogmanagementm2131.md)
 
 ## Resource Types
 

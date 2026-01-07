@@ -12,21 +12,15 @@
 
 This content item queries data from the following tables:
 
-- [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`Host_Name_Info_CL`](../tables/host-name-info-cl.md)
 - [`IP_Space_Info_CL`](../tables/ip-space-info-cl.md)
-- [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md)
-- [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md)
-- [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md)
-- [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md)
 - [`Infoblox_Config_Insight_Details_CL`](../tables/infoblox-config-insight-details-cl.md)
 - [`Infoblox_Config_Insights_CL`](../tables/infoblox-config-insights-cl.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`Service_Name_Info_CL`](../tables/service-name-info-cl.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
-- [`incidents`](../tables/incidents.md)
 
 ---
 

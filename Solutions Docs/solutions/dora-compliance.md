@@ -19,10 +19,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **1 table(s)** from its content items:
+This solution queries **2 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
 
 ### Internal Tables
@@ -46,7 +47,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DORACompliance](../content/doracompliance-dora-compliance.md) | [`Heartbeat`](../tables/heartbeat.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [DORACompliance](../content/doracompliance-dora-compliance.md) | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ## Release Notes
 

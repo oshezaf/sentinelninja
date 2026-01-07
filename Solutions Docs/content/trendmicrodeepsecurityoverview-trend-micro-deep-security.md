@@ -6,12 +6,6 @@
 | **Solution** | [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security/Workbooks/TrendMicroDeepSecurityOverview.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-
 ---
 
 **Browse:**

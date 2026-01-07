@@ -14,12 +14,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
-
-### Analytic Rules (1)
-
-**In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast Targeted Threat Protection - URL Protect](../content/952faed4-c6a6-4873-aeb9-b348e9ce5aba.md)
+## Content Items Using This Table (1)
 
 ### Workbooks (1)
 

@@ -19,7 +19,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **12 table(s)**:
+This solution uses **10 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -32,8 +32,6 @@ This solution uses **12 table(s)**:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | [Azure Firewall](../connectors/azurefirewall.md) | - |
-| [`AlertTimeSrcIpToDstIpPort`](../tables/alerttimesrciptodstipport.md) | - | Hunting |
-| [`AlertTimeSrcIpToPort`](../tables/alerttimesrciptoport.md) | - | Hunting |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
 
 ## Content Items
@@ -62,11 +60,11 @@ This solution includes **20 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [First Time Source IP to Destination](../content/f055e82b-5ef6-4395-bc9e-99f7e451343a.md) | Exfiltration, CommandAndControl | [`AlertTimeSrcIpToDstIpPort`](../tables/alerttimesrciptodstipport.md) |
-| [First Time Source IP to Destination Using Port](../content/932fe71a-7a8c-4f35-bf88-321ab68ff562.md) | Exfiltration, CommandAndControl | [`AlertTimeSrcIpToDstIpPort`](../tables/alerttimesrciptodstipport.md) |
+| [First Time Source IP to Destination](../content/f055e82b-5ef6-4395-bc9e-99f7e451343a.md) | Exfiltration, CommandAndControl | - |
+| [First Time Source IP to Destination Using Port](../content/932fe71a-7a8c-4f35-bf88-321ab68ff562.md) | Exfiltration, CommandAndControl | - |
 | [Source IP Abnormally Connects to Multiple Destinations](../content/d006f4f8-86bb-4c9d-9826-837762ddad6b.md) | Execution, LateralMovement | - |
-| [Uncommon Port for Organization](../content/8812a547-13e6-4d0c-b38d-476fb7351c52.md) | Defense Evasion, Exfiltration, CommandAndControl | [`AlertTimeSrcIpToPort`](../tables/alerttimesrciptoport.md) |
-| [Uncommon Port to IP](../content/3d93fa57-53e5-4d5e-96d4-ad734a8df3a4.md) | Exfiltration, CommandAndControl | [`AlertTimeSrcIpToPort`](../tables/alerttimesrciptoport.md) |
+| [Uncommon Port for Organization](../content/8812a547-13e6-4d0c-b38d-476fb7351c52.md) | Defense Evasion, Exfiltration, CommandAndControl | - |
+| [Uncommon Port to IP](../content/3d93fa57-53e5-4d5e-96d4-ad734a8df3a4.md) | Exfiltration, CommandAndControl | - |
 
 ### Workbooks
 

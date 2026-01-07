@@ -19,12 +19,6 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`iotsecurityresources`](../tables/iotsecurityresources.md) | - | Workbooks |
-
 ### Internal Tables
 
 The following **2 table(s)** are used internally by this solution's playbooks:
@@ -68,7 +62,7 @@ This solution includes **24 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IoTOTThreatMonitoringwithDefenderforIoT](../content/iototthreatmonitoringwithdefenderforiot-iototthreatmonitoringwithdefenderforiot.md) | [`iotsecurityresources`](../tables/iotsecurityresources.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [IoTOTThreatMonitoringwithDefenderforIoT](../content/iototthreatmonitoringwithdefenderforiot-iototthreatmonitoringwithdefenderforiot.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

@@ -52,6 +52,10 @@ The Barracuda Web Application Firewall can integrate with and export logs direct
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Open Syslog settings**
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Barracuda WAF Export Logs](https://campus.barracuda.com/product/webapplicationfirewall/doc/168300161/how-to-export-logs-from-the-barracuda-web-application-firewall) - How to configure syslog and log settings
+
 ---
 
 **Browse:**

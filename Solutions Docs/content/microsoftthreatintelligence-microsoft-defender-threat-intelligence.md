@@ -10,7 +10,6 @@
 
 This content item queries data from the following tables:
 
-- [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 

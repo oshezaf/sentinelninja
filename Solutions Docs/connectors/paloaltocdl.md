@@ -75,6 +75,11 @@ Make sure to configure the machine's security according to your organization's s
 
 [Learn more >](https://aka.ms/SecureCEF)
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Palo Alto Common Event Format (CEF) Configuration Guides](https://docs.paloaltonetworks.com/resources/cef),
+Connector,PaloAltoCDLAma,additional_information,📖 **Vendor Documentation:** [PAN-OS Syslog Field Descriptions](https://docs.paloaltonetworks.com/pan-os/11-1/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions) - Traffic
+
 ---
 
 **Browse:**

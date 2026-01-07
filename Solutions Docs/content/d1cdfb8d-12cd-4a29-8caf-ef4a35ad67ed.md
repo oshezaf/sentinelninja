@@ -15,12 +15,6 @@ Triggers when I2P content is detected related to monitored keywords. Useful for 
 | **Required Connectors** | [CybleVisionAlerts](../connectors/cyblevisionalerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Analytic%20Rules/Alerts_i2p_rule.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Alerts_i2p`](../tables/alerts-i2p.md)
-
 ---
 
 **Browse:**

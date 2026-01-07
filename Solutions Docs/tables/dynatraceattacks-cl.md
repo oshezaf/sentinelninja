@@ -14,18 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
-
-### Analytic Rules (1)
-
-**In solution [Dynatrace](../solutions/dynatrace.md):**
-- [Dynatrace Application Security - Attack detection](../content/1b0b2065-8bac-5a00-83c4-1b58f69ac212.md)
-
-### Workbooks (1)
-
-**In solution [Dynatrace](../solutions/dynatrace.md):**
-- [Dynatrace](../content/dynatrace-dynatrace.md)
-
 ---
 
 **Browse:**

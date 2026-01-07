@@ -12,6 +12,7 @@ This playbook summarizes data for DNS Essentials Solution and ingests into custo
 
 | Table | Usage |
 |:------|:------|
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | read |
 | [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | read |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | read |
 | [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) | read |
@@ -19,6 +20,7 @@ This playbook summarizes data for DNS Essentials Solution and ingests into custo
 | [`Corelight_CL`](../tables/corelight-cl.md) | read |
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) | read/write |
 | [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) | write |
+| [`DnsEvents`](../tables/dnsevents.md) | read |
 | [`Event`](../tables/event.md) | read |
 | [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | read |
 | [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | read |

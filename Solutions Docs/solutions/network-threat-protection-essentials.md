@@ -19,12 +19,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **1 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Hunting |
-| [`UserAgentAll`](../tables/useragentall.md) | Analytics |
 
 ## Content Items
 
@@ -40,7 +39,7 @@ This solution includes **5 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Network endpoint to host executable correlation](../content/01f64465-b1ef-41ea-a7f5-31553a11ad43.md) | Medium | Execution | - |
-| [New UserAgent observed in last 24 hours](../content/b725d62c-eb77-42ff-96f6-bdc6745fc6e0.md) | Low | InitialAccess, CommandAndControl, Execution | [`UserAgentAll`](../tables/useragentall.md) |
+| [New UserAgent observed in last 24 hours](../content/b725d62c-eb77-42ff-96f6-bdc6745fc6e0.md) | Low | InitialAccess, CommandAndControl, Execution | - |
 
 ### Hunting Queries
 

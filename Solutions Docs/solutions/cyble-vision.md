@@ -19,54 +19,10 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **45 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Alerts_advisory`](../tables/alerts-advisory.md) | - | Analytics |
-| [`Alerts_assets`](../tables/alerts-assets.md) | - | Analytics |
-| [`Alerts_bit_bucket`](../tables/alerts-bit-bucket.md) | - | Analytics |
-| [`Alerts_cloud_storage`](../tables/alerts-cloud-storage.md) | - | Analytics |
-| [`Alerts_compromised_endpoints_cookies`](../tables/alerts-compromised-endpoints-cookies.md) | - | Analytics |
-| [`Alerts_compromised_files`](../tables/alerts-compromised-files.md) | - | Analytics |
-| [`Alerts_cyber_crime_forums`](../tables/alerts-cyber-crime-forums.md) | - | Analytics |
-| [`Alerts_darkweb_data_breaches`](../tables/alerts-darkweb-data-breaches.md) | - | Analytics |
-| [`Alerts_darkweb_marketplaces`](../tables/alerts-darkweb-marketplaces.md) | - | Analytics |
-| [`Alerts_darkweb_ransomware`](../tables/alerts-darkweb-ransomware.md) | - | Analytics |
-| [`Alerts_defacement_content`](../tables/alerts-defacement-content.md) | - | Analytics |
-| [`Alerts_defacement_keyword`](../tables/alerts-defacement-keyword.md) | - | Analytics |
-| [`Alerts_defacement_url`](../tables/alerts-defacement-url.md) | - | Analytics |
-| [`Alerts_discord`](../tables/alerts-discord.md) | - | Analytics |
-| [`Alerts_docker`](../tables/alerts-docker.md) | - | Analytics |
-| [`Alerts_domain_expiry`](../tables/alerts-domain-expiry.md) | - | Analytics |
-| [`Alerts_domain_watchlist`](../tables/alerts-domain-watchlist.md) | - | Analytics |
-| [`Alerts_flash_report`](../tables/alerts-flash-report.md) | - | Analytics |
-| [`Alerts_github`](../tables/alerts-github.md) | - | Analytics |
-| [`Alerts_hacktivism`](../tables/alerts-hacktivism.md) | - | Analytics |
-| [`Alerts_i2p`](../tables/alerts-i2p.md) | - | Analytics |
-| [`Alerts_iocs`](../tables/alerts-iocs.md) | - | Analytics |
-| [`Alerts_ip_risk_score`](../tables/alerts-ip-risk-score.md) | - | Analytics |
-| [`Alerts_leaked_credentials`](../tables/alerts-leaked-credentials.md) | - | Analytics |
-| [`Alerts_malicious_ads`](../tables/alerts-malicious-ads.md) | - | Analytics |
-| [`Alerts_mobile_apps`](../tables/alerts-mobile-apps.md) | - | Analytics |
-| [`Alerts_new_vulnerability`](../tables/alerts-new-vulnerability.md) | - | Analytics |
-| [`Alerts_news_feed`](../tables/alerts-news-feed.md) | - | Analytics |
-| [`Alerts_osint`](../tables/alerts-osint.md) | - | Analytics |
-| [`Alerts_ot_ics`](../tables/alerts-ot-ics.md) | - | Analytics |
-| [`Alerts_pastebin`](../tables/alerts-pastebin.md) | - | Analytics |
-| [`Alerts_phishing`](../tables/alerts-phishing.md) | - | Analytics |
-| [`Alerts_physical_threats`](../tables/alerts-physical-threats.md) | - | Analytics |
-| [`Alerts_postman`](../tables/alerts-postman.md) | - | Analytics |
-| [`Alerts_product_vulnerability`](../tables/alerts-product-vulnerability.md) | - | Analytics |
-| [`Alerts_social_media_monitoring`](../tables/alerts-social-media-monitoring.md) | - | Analytics |
-| [`Alerts_ssl_expiry`](../tables/alerts-ssl-expiry.md) | - | Analytics |
-| [`Alerts_stealer_logs`](../tables/alerts-stealer-logs.md) | - | Analytics |
-| [`Alerts_subdomains`](../tables/alerts-subdomains.md) | - | Analytics |
-| [`Alerts_suspicious_domains`](../tables/alerts-suspicious-domains.md) | - | Analytics |
-| [`Alerts_telegram_mentions`](../tables/alerts-telegram-mentions.md) | - | Analytics |
-| [`Alerts_tor_links`](../tables/alerts-tor-links.md) | - | Analytics |
-| [`Alerts_vulnerability`](../tables/alerts-vulnerability.md) | - | Analytics |
-| [`Alerts_web_applications`](../tables/alerts-web-applications.md) | - | Analytics |
 | [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | [Cyble Vision Alerts](../connectors/cyblevisionalerts.md) | Workbooks |
 
 ## Content Items
@@ -84,50 +40,50 @@ This solution includes **93 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cyble Advisory Alerts Advisory](../content/1932dcfd-a32e-49f9-a212-5bcd084fbd78.md) | Low | Reconnaissance, ResourceDevelopment | [`Alerts_advisory`](../tables/alerts-advisory.md) |
-| [Cyble Vision Alerts Assets](../content/0012714c-c595-4dcd-8949-4a5c1d49aaa8.md) | Low | Reconnaissance | [`Alerts_assets`](../tables/alerts-assets.md) |
-| [Cyble Vision Alerts Bitbucket](../content/f3c25011-4509-41c8-be27-35d891531c39.md) | Low | CredentialAccess, Exfiltration, Discovery | [`Alerts_bit_bucket`](../tables/alerts-bit-bucket.md) |
-| [Cyble Vision Alerts Cloud Storage](../content/db417cee-529c-4eac-b7b9-36eb0166800a.md) | Low | Exfiltration, Discovery | [`Alerts_cloud_storage`](../tables/alerts-cloud-storage.md) |
-| [Cyble Vision Alerts Compromised Endpoint Cookies](../content/33b07eaa-f451-4c38-ac9f-8af3f7e99f0e.md) | Low | CredentialAccess, DefenseEvasion | [`Alerts_compromised_endpoints_cookies`](../tables/alerts-compromised-endpoints-cookies.md) |
-| [Cyble Vision Alerts Compromised Files](../content/0f6a8287-09ee-4f82-b8c3-e35c4ac6212e.md) | Low | CredentialAccess, Exfiltration | [`Alerts_compromised_files`](../tables/alerts-compromised-files.md) |
-| [Cyble Vision Alerts Cyble Web Applications](../content/359ddb25-eab1-4ef5-8303-ed3a9b680690.md) | Low | Reconnaissance | [`Alerts_web_applications`](../tables/alerts-web-applications.md) |
-| [Cyble Vision Alerts Darkweb Data Breaches](../content/588a2ee5-978a-43f7-9c10-6d76d82026ef.md) | Low | Reconnaissance, InitialAccess, Exfiltration, Collection | [`Alerts_darkweb_data_breaches`](../tables/alerts-darkweb-data-breaches.md) |
-| [Cyble Vision Alerts Darkweb Ransomware Leak](../content/6deaf986-a25b-47b4-afbe-667901aa313b.md) | Low | Impact, Exfiltration, Reconnaissance | [`Alerts_darkweb_ransomware`](../tables/alerts-darkweb-ransomware.md) |
-| [Cyble Vision Alerts Discord Keyword](../content/601a5859-0dc2-452d-8d1e-66dc651c16d5.md) | Low | Reconnaissance, InitialAccess | [`Alerts_discord`](../tables/alerts-discord.md) |
-| [Cyble Vision Alerts Discovered Subdomain](../content/7a0f79cc-8d28-44b5-ac1e-6176565bb7b8.md) | Low | Reconnaissance | [`Alerts_subdomains`](../tables/alerts-subdomains.md) |
-| [Cyble Vision Alerts Docker](../content/47dee28d-fa74-49cd-b5fb-397b047a73c0.md) | Low | Exfiltration, Execution, Discovery | [`Alerts_docker`](../tables/alerts-docker.md) |
-| [Cyble Vision Alerts Domain Expiry Alert](../content/81404e99-ce27-45aa-aa19-a276a3d4c645.md) | Low | Impact | [`Alerts_domain_expiry`](../tables/alerts-domain-expiry.md) |
-| [Cyble Vision Alerts Domain Watchlist](../content/0a54dc90-9a9d-4300-af21-feb5136e81da.md) | Low | ResourceDevelopment | [`Alerts_domain_watchlist`](../tables/alerts-domain-watchlist.md) |
-| [Cyble Vision Alerts Flash Report](../content/2c86652a-bbbe-4a32-8b1c-4b53aad0750e.md) | Low | Reconnaissance | [`Alerts_flash_report`](../tables/alerts-flash-report.md) |
-| [Cyble Vision Alerts Github](../content/117e8f7c-8f44-4061-bcc2-b444b98a3838.md) | Low | Collection, CredentialAccess | [`Alerts_github`](../tables/alerts-github.md) |
-| [Cyble Vision Alerts Hacktivism](../content/6649e5a0-0365-452f-84b3-448a0aec7a59.md) | Low | Reconnaissance, Impact, ResourceDevelopment | [`Alerts_hacktivism`](../tables/alerts-hacktivism.md) |
-| [Cyble Vision Alerts I2P Monitoring](../content/d1cdfb8d-12cd-4a29-8caf-ef4a35ad67ed.md) | Low | ResourceDevelopment | [`Alerts_i2p`](../tables/alerts-i2p.md) |
-| [Cyble Vision Alerts IOC'S](../content/c8cf42d5-8684-435f-9c4d-9dd0cc47eaec.md) | Low | Reconnaissance, InitialAccess, Discovery, CommandAndControl, Impact | [`Alerts_iocs`](../tables/alerts-iocs.md) |
-| [Cyble Vision Alerts IP Risk Score](../content/1e7c8d9f-1d42-42b3-b6ce-12a637e05f16.md) | Low | Reconnaissance | [`Alerts_ip_risk_score`](../tables/alerts-ip-risk-score.md) |
-| [Cyble Vision Alerts Leaked Credentials](../content/224a63ae-e278-4a11-b7c2-02ec3e17b56c.md) | Low | CredentialAccess, Discovery, Reconnaissance | [`Alerts_leaked_credentials`](../tables/alerts-leaked-credentials.md) |
-| [Cyble Vision Alerts Malicious Ads Detected](../content/cf0a9691-5716-42e0-bfa1-49b35d3a7892.md) | Low | InitialAccess, Execution | [`Alerts_malicious_ads`](../tables/alerts-malicious-ads.md) |
-| [Cyble Vision Alerts New Vulnerability Detected](../content/e52f36dd-7d4f-4aa8-a095-3b6fa2b28b8d.md) | Low | InitialAccess | [`Alerts_new_vulnerability`](../tables/alerts-new-vulnerability.md) |
-| [Cyble Vision Alerts News Feed Alert](../content/d205a93f-b2e3-4708-a359-5e0c88ee3e59.md) | Low | Reconnaissance | [`Alerts_news_feed`](../tables/alerts-news-feed.md) |
-| [Cyble Vision Alerts OSINT Mention Detected](../content/9ff985d8-57a8-4302-a8e6-34fa96c3c505.md) | Low | Reconnaissance, ResourceDevelopment | [`Alerts_osint`](../tables/alerts-osint.md) |
-| [Cyble Vision Alerts OT/ICS Threat Activity Detected](../content/c1ebc79d-7f46-429e-bf2c-8bb0b75ba6b2.md) | Low | Discovery, Collection | [`Alerts_ot_ics`](../tables/alerts-ot-ics.md) |
-| [Cyble Vision Alerts Pastebin](../content/dd37e041-3973-482a-aa8c-f484b4178940.md) | Low | Reconnaissance | [`Alerts_pastebin`](../tables/alerts-pastebin.md) |
-| [Cyble Vision Alerts Phishing Domain Detected](../content/eb1d45fe-1b19-4b54-b146-971f282a6fd9.md) | Low | Reconnaissance | [`Alerts_phishing`](../tables/alerts-phishing.md) |
-| [Cyble Vision Alerts Physical Threat Alert](../content/88db8505-1889-46aa-a4e2-4e866262dcb9.md) | Low | Impact | [`Alerts_physical_threats`](../tables/alerts-physical-threats.md) |
-| [Cyble Vision Alerts Postman API Exposure Detection](../content/99ca8956-5aad-4542-9fbc-8254182b424d.md) | Low | Reconnaissance, CredentialAccess, Exfiltration | [`Alerts_postman`](../tables/alerts-postman.md) |
-| [Cyble Vision Alerts Product Vulnerability Detected](../content/c360341e-6ba6-472a-ae00-7be85967e240.md) | Low | InitialAccess, ResourceDevelopment | [`Alerts_product_vulnerability`](../tables/alerts-product-vulnerability.md) |
-| [Cyble Vision Alerts SSL Certificate Expiry](../content/a667d635-d2a7-47e7-8827-8fb243af2afd.md) | Low | InitialAccess, Impact | [`Alerts_ssl_expiry`](../tables/alerts-ssl-expiry.md) |
-| [Cyble Vision Alerts Social Media Monitoring](../content/231c2c16-3742-4cfb-a8e1-c1a7d09f080a.md) | Low | Reconnaissance, ResourceDevelopment | [`Alerts_social_media_monitoring`](../tables/alerts-social-media-monitoring.md) |
-| [Cyble Vision Alerts Suspicious Domain](../content/c56fcb78-b708-4a92-bad4-d50b1e15c42c.md) | Low | Reconnaissance | [`Alerts_suspicious_domains`](../tables/alerts-suspicious-domains.md) |
-| [Cyble Vision Alerts TOR Links](../content/b9df1ec4-a572-4448-8da1-1bc4b7e1687f.md) | Low | ResourceDevelopment, Reconnaissance | [`Alerts_tor_links`](../tables/alerts-tor-links.md) |
-| [Cyble Vision Alerts Vulnerability](../content/0e0cdda9-4536-4cc9-91cf-736e8957ed26.md) | Low | Reconnaissance, Execution, Discovery | [`Alerts_vulnerability`](../tables/alerts-vulnerability.md) |
-| [Cyble Vision Alerts Website Defacement Content](../content/91a00e4f-3edb-49e9-ba6f-cec87a5bd2f8.md) | Low | Impact | [`Alerts_defacement_content`](../tables/alerts-defacement-content.md) |
-| [Cyble Vision Alerts Website Defacement Keyword](../content/754dbb50-8dc2-4b8b-86d8-a890a020ddc3.md) | Low | Impact, Reconnaissance | [`Alerts_defacement_keyword`](../tables/alerts-defacement-keyword.md) |
-| [Cyble Vision Alerts Website Defacement URL](../content/1dabe566-a0f1-4c27-8307-aea5a79eb5e9.md) | Low | Impact | [`Alerts_defacement_url`](../tables/alerts-defacement-url.md) |
-| [CybleVision Alerts Cyber Crime Forum Alerts](../content/b78c4641-cc16-48e0-9d05-c9b36a55d214.md) | Low | Reconnaissance, ResourceDevelopment, Exfiltration | [`Alerts_cyber_crime_forums`](../tables/alerts-cyber-crime-forums.md) |
-| [CybleVision Alerts Darkweb Marketplace Alerts](../content/e80eedb4-cbae-45cc-b1be-a2a8dc31af3b.md) | Low | CredentialAccess, Collection, Exfiltration, Reconnaissance | [`Alerts_darkweb_marketplaces`](../tables/alerts-darkweb-marketplaces.md) |
-| [CybleVision Alerts Mobile Apps](../content/6d55fefc-b334-4b79-b11c-667746b5bdde.md) | Low | Reconnaissance, ResourceDevelopment, InitialAccess | [`Alerts_mobile_apps`](../tables/alerts-mobile-apps.md) |
-| [CybleVision Alerts Stealer Logs](../content/e0bf55c2-35ef-47ab-8846-5087618ae805.md) | Low | CredentialAccess, Collection, Exfiltration, Reconnaissance, InitialAccess | [`Alerts_stealer_logs`](../tables/alerts-stealer-logs.md) |
-| [CybleVision Alerts Telegram Mentions](../content/4238f545-8b6f-4f7c-80b5-14cca2cebc99.md) | Low | Reconnaissance, ResourceDevelopment, InitialAccess, CommandAndControl | [`Alerts_telegram_mentions`](../tables/alerts-telegram-mentions.md) |
+| [Cyble Advisory Alerts Advisory](../content/1932dcfd-a32e-49f9-a212-5bcd084fbd78.md) | Low | Reconnaissance, ResourceDevelopment | - |
+| [Cyble Vision Alerts Assets](../content/0012714c-c595-4dcd-8949-4a5c1d49aaa8.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts Bitbucket](../content/f3c25011-4509-41c8-be27-35d891531c39.md) | Low | CredentialAccess, Exfiltration, Discovery | - |
+| [Cyble Vision Alerts Cloud Storage](../content/db417cee-529c-4eac-b7b9-36eb0166800a.md) | Low | Exfiltration, Discovery | - |
+| [Cyble Vision Alerts Compromised Endpoint Cookies](../content/33b07eaa-f451-4c38-ac9f-8af3f7e99f0e.md) | Low | CredentialAccess, DefenseEvasion | - |
+| [Cyble Vision Alerts Compromised Files](../content/0f6a8287-09ee-4f82-b8c3-e35c4ac6212e.md) | Low | CredentialAccess, Exfiltration | - |
+| [Cyble Vision Alerts Cyble Web Applications](../content/359ddb25-eab1-4ef5-8303-ed3a9b680690.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts Darkweb Data Breaches](../content/588a2ee5-978a-43f7-9c10-6d76d82026ef.md) | Low | Reconnaissance, InitialAccess, Exfiltration, Collection | - |
+| [Cyble Vision Alerts Darkweb Ransomware Leak](../content/6deaf986-a25b-47b4-afbe-667901aa313b.md) | Low | Impact, Exfiltration, Reconnaissance | - |
+| [Cyble Vision Alerts Discord Keyword](../content/601a5859-0dc2-452d-8d1e-66dc651c16d5.md) | Low | Reconnaissance, InitialAccess | - |
+| [Cyble Vision Alerts Discovered Subdomain](../content/7a0f79cc-8d28-44b5-ac1e-6176565bb7b8.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts Docker](../content/47dee28d-fa74-49cd-b5fb-397b047a73c0.md) | Low | Exfiltration, Execution, Discovery | - |
+| [Cyble Vision Alerts Domain Expiry Alert](../content/81404e99-ce27-45aa-aa19-a276a3d4c645.md) | Low | Impact | - |
+| [Cyble Vision Alerts Domain Watchlist](../content/0a54dc90-9a9d-4300-af21-feb5136e81da.md) | Low | ResourceDevelopment | - |
+| [Cyble Vision Alerts Flash Report](../content/2c86652a-bbbe-4a32-8b1c-4b53aad0750e.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts Github](../content/117e8f7c-8f44-4061-bcc2-b444b98a3838.md) | Low | Collection, CredentialAccess | - |
+| [Cyble Vision Alerts Hacktivism](../content/6649e5a0-0365-452f-84b3-448a0aec7a59.md) | Low | Reconnaissance, Impact, ResourceDevelopment | - |
+| [Cyble Vision Alerts I2P Monitoring](../content/d1cdfb8d-12cd-4a29-8caf-ef4a35ad67ed.md) | Low | ResourceDevelopment | - |
+| [Cyble Vision Alerts IOC'S](../content/c8cf42d5-8684-435f-9c4d-9dd0cc47eaec.md) | Low | Reconnaissance, InitialAccess, Discovery, CommandAndControl, Impact | - |
+| [Cyble Vision Alerts IP Risk Score](../content/1e7c8d9f-1d42-42b3-b6ce-12a637e05f16.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts Leaked Credentials](../content/224a63ae-e278-4a11-b7c2-02ec3e17b56c.md) | Low | CredentialAccess, Discovery, Reconnaissance | - |
+| [Cyble Vision Alerts Malicious Ads Detected](../content/cf0a9691-5716-42e0-bfa1-49b35d3a7892.md) | Low | InitialAccess, Execution | - |
+| [Cyble Vision Alerts New Vulnerability Detected](../content/e52f36dd-7d4f-4aa8-a095-3b6fa2b28b8d.md) | Low | InitialAccess | - |
+| [Cyble Vision Alerts News Feed Alert](../content/d205a93f-b2e3-4708-a359-5e0c88ee3e59.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts OSINT Mention Detected](../content/9ff985d8-57a8-4302-a8e6-34fa96c3c505.md) | Low | Reconnaissance, ResourceDevelopment | - |
+| [Cyble Vision Alerts OT/ICS Threat Activity Detected](../content/c1ebc79d-7f46-429e-bf2c-8bb0b75ba6b2.md) | Low | Discovery, Collection | - |
+| [Cyble Vision Alerts Pastebin](../content/dd37e041-3973-482a-aa8c-f484b4178940.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts Phishing Domain Detected](../content/eb1d45fe-1b19-4b54-b146-971f282a6fd9.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts Physical Threat Alert](../content/88db8505-1889-46aa-a4e2-4e866262dcb9.md) | Low | Impact | - |
+| [Cyble Vision Alerts Postman API Exposure Detection](../content/99ca8956-5aad-4542-9fbc-8254182b424d.md) | Low | Reconnaissance, CredentialAccess, Exfiltration | - |
+| [Cyble Vision Alerts Product Vulnerability Detected](../content/c360341e-6ba6-472a-ae00-7be85967e240.md) | Low | InitialAccess, ResourceDevelopment | - |
+| [Cyble Vision Alerts SSL Certificate Expiry](../content/a667d635-d2a7-47e7-8827-8fb243af2afd.md) | Low | InitialAccess, Impact | - |
+| [Cyble Vision Alerts Social Media Monitoring](../content/231c2c16-3742-4cfb-a8e1-c1a7d09f080a.md) | Low | Reconnaissance, ResourceDevelopment | - |
+| [Cyble Vision Alerts Suspicious Domain](../content/c56fcb78-b708-4a92-bad4-d50b1e15c42c.md) | Low | Reconnaissance | - |
+| [Cyble Vision Alerts TOR Links](../content/b9df1ec4-a572-4448-8da1-1bc4b7e1687f.md) | Low | ResourceDevelopment, Reconnaissance | - |
+| [Cyble Vision Alerts Vulnerability](../content/0e0cdda9-4536-4cc9-91cf-736e8957ed26.md) | Low | Reconnaissance, Execution, Discovery | - |
+| [Cyble Vision Alerts Website Defacement Content](../content/91a00e4f-3edb-49e9-ba6f-cec87a5bd2f8.md) | Low | Impact | - |
+| [Cyble Vision Alerts Website Defacement Keyword](../content/754dbb50-8dc2-4b8b-86d8-a890a020ddc3.md) | Low | Impact, Reconnaissance | - |
+| [Cyble Vision Alerts Website Defacement URL](../content/1dabe566-a0f1-4c27-8307-aea5a79eb5e9.md) | Low | Impact | - |
+| [CybleVision Alerts Cyber Crime Forum Alerts](../content/b78c4641-cc16-48e0-9d05-c9b36a55d214.md) | Low | Reconnaissance, ResourceDevelopment, Exfiltration | - |
+| [CybleVision Alerts Darkweb Marketplace Alerts](../content/e80eedb4-cbae-45cc-b1be-a2a8dc31af3b.md) | Low | CredentialAccess, Collection, Exfiltration, Reconnaissance | - |
+| [CybleVision Alerts Mobile Apps](../content/6d55fefc-b334-4b79-b11c-667746b5bdde.md) | Low | Reconnaissance, ResourceDevelopment, InitialAccess | - |
+| [CybleVision Alerts Stealer Logs](../content/e0bf55c2-35ef-47ab-8846-5087618ae805.md) | Low | CredentialAccess, Collection, Exfiltration, Reconnaissance, InitialAccess | - |
+| [CybleVision Alerts Telegram Mentions](../content/4238f545-8b6f-4f7c-80b5-14cca2cebc99.md) | Low | Reconnaissance, ResourceDevelopment, InitialAccess, CommandAndControl | - |
 
 ### Workbooks
 

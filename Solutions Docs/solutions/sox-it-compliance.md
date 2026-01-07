@@ -19,14 +19,17 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **5 table(s)** from its content items:
+This solution queries **8 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
+| [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`Syslog`](../tables/syslog.md) | Workbooks |
 
 ## Content Items
@@ -41,7 +44,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SOXITCompliance](../content/soxitcompliance-sox-it-compliance.md) | [`AzureActivity`](../tables/azureactivity.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`Syslog`](../tables/syslog.md) |
+| [SOXITCompliance](../content/soxitcompliance-sox-it-compliance.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md) |
 
 ## Release Notes
 

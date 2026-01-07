@@ -14,18 +14,11 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (1)
 
-### Hunting Queries (1)
-
-**In solution [Corelight](../solutions/corelight.md):**
-- [Corelight - Files in logs](../content/0c3ad86f-6b92-4ff5-8d41-86ff7e01d518.md)
-
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight](../content/corelight-corelight.md)
-- [Corelight_Data_Explorer](../content/corelight-data-explorer-corelight.md)
 - [Corelight_Security_Workflow](../content/corelight-security-workflow-corelight.md)
 
 ---

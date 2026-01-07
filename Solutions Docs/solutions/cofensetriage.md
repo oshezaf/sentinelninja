@@ -20,13 +20,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **4 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Cofense_Triage_failed_indicators_CL`](../tables/cofense-triage-failed-indicators-cl.md) | [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) | - |
 | [`Report_links_data_CL`](../tables/report-links-data-cl.md) | [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) | Workbooks |
-| [`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md) | - | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) | - |
 
 ## Content Items
@@ -41,7 +40,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CofenseTriageThreatIndicators](../content/cofensetriagethreatindicators-cofensetriage.md) | [`Report_links_data_CL`](../tables/report-links-data-cl.md)<br>[`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md) |
+| [CofenseTriageThreatIndicators](../content/cofensetriagethreatindicators-cofensetriage.md) | [`Report_links_data_CL`](../tables/report-links-data-cl.md) |
 
 ## Release Notes
 

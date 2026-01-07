@@ -14,18 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
-
-### Analytic Rules (1)
-
-**In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast Audit - Logon Authentication Failed](../content/f00197ab-491f-41e7-9e22-a7003a4c1e54.md)
-
-### Workbooks (1)
-
-**In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast_Audit_Workbook](../content/mimecast-audit-workbook-mimecast.md)
-
 ---
 
 **Browse:**

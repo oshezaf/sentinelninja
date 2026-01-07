@@ -21,10 +21,11 @@ This solution provides **1 data connector(s)**:
 
 ### Internal Tables
 
-The following **1 table(s)** are used internally by this solution's playbooks:
+The following **2 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`IdentityInfo`](../tables/identityinfo.md) | - | Analytics |
 | [`SecurityAlert`](../tables/securityalert.md) | [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) | Analytics |
 
 ## Content Items
@@ -40,7 +41,7 @@ This solution includes **6 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Correlate Unfamiliar sign-in properties & atypical travel alerts](../content/a3df4a32-4805-4c6d-8699-f3c888af2f67.md) | High | InitialAccess | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Correlate Unfamiliar sign-in properties & atypical travel alerts](../content/a3df4a32-4805-4c6d-8699-f3c888af2f67.md) | High | InitialAccess | *Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Playbooks
 

@@ -12,6 +12,7 @@ This playbook summarizes data for Network Session Essentials and lands it into c
 
 | Table | Usage |
 |:------|:------|
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | read |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | read |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | read |
 | [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | read |
@@ -19,7 +20,7 @@ This playbook summarizes data for Network Session Essentials and lands it into c
 | [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | read |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | read |
 | [`Corelight_CL`](../tables/corelight-cl.md) | read |
-| [`DefenderIoTRawEvent`](../tables/defenderiotrawevent.md) | read |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | read |
 | [`Event`](../tables/event.md) | read |
 | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | read |
 | [`NTANetAnalytics`](../tables/ntanetanalytics.md) | read |

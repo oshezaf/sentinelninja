@@ -13,17 +13,9 @@
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+**This solution does not include data connectors.**
 
-- [Microsoft Copilot](../connectors/microsoftcopilot.md)
-
-## Tables Reference
-
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`CopilotActivity`](../tables/copilotactivity.md) | [Microsoft Copilot](../connectors/microsoftcopilot.md) | - |
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
 ## Release Notes
 

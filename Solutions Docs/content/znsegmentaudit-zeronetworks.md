@@ -6,13 +6,6 @@
 | **Solution** | [ZeroNetworks](../solutions/zeronetworks.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Workbooks/ZNSegmentAudit.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)
-- [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md)
-
 ---
 
 **Browse:**

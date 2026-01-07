@@ -21,16 +21,12 @@ This solution provides **3 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **7 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GitHubActorLogin`](../tables/githubactorlogin.md) | - | Hunting |
-| [`GitHubAudit`](../tables/githubaudit.md) | - | Analytics |
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | - |
 | [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | [GitHub Enterprise Audit Log (via Codeless Connector Framework) (Preview)](../connectors/githubauditdefinitionv2.md), [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | - |
-| [`GitHubRepo`](../tables/githubrepo.md) | - | Analytics |
-| [`GitHubUser`](../tables/githubuser.md) | - | Hunting |
 | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
 
 ## Content Items
@@ -59,9 +55,9 @@ This solution includes **28 content item(s)**:
 | [(Preview) GitHub - pull request was created](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c7.md) | Medium | InitialAccess | - |
 | [(Preview) GitHub - pull request was merged](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c6.md) | Medium | InitialAccess | - |
 | [GitHub Activites from a New Country](../content/f041e01d-840d-43da-95c8-4188f6cef546.md) | Medium | InitialAccess | - |
-| [GitHub Security Vulnerability in Repository](../content/5436f471-b03d-41cb-b333-65891f887c43.md) | Informational | InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | [`GitHubRepo`](../tables/githubrepo.md) |
+| [GitHub Security Vulnerability in Repository](../content/5436f471-b03d-41cb-b333-65891f887c43.md) | Informational | InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | - |
 | [GitHub Two Factor Auth Disable](../content/3ff0fffb-d963-40c0-b235-3404f915add7.md) | Medium | DefenseEvasion | - |
-| [NRT GitHub Two Factor Auth Disable](../content/594c653d-719a-4c23-b028-36e3413e632e.md) | Medium | DefenseEvasion | [`GitHubAudit`](../tables/githubaudit.md) |
+| [NRT GitHub Two Factor Auth Disable](../content/594c653d-719a-4c23-b028-36e3413e632e.md) | Medium | DefenseEvasion | - |
 
 ### Hunting Queries
 
@@ -69,7 +65,7 @@ This solution includes **28 content item(s)**:
 |:-----|:--------|:------------|
 | [GitHub First Time Invite Member and Add Member to Repo](../content/f0d30d3c-e6ad-480a-90e8-1bd7cc84881b.md) | Persistence | - |
 | [GitHub First Time Repo Delete](../content/c3237d88-fdc4-4dee-8b90-118ded2c507c.md) | Impact | - |
-| [GitHub Inactive or New Account Access or Usage](../content/b8508e24-47a6-4f8e-9066-3cc937197e7f.md) | Persistence | [`GitHubActorLogin`](../tables/githubactorlogin.md)<br>[`GitHubUser`](../tables/githubuser.md) |
+| [GitHub Inactive or New Account Access or Usage](../content/b8508e24-47a6-4f8e-9066-3cc937197e7f.md) | Persistence | - |
 | [GitHub Mass Deletion of repos or projects](../content/67da5c4e-49f2-476d-96ff-2dbe4b855a48.md) | Impact | - |
 | [GitHub OAuth App Restrictions Disabled](../content/667e6a70-adc9-49b7-9cf3-f21927c71959.md) | Persistence, DefenseEvasion | - |
 | [GitHub Repo switched from private to public](../content/a6e2afd3-559c-4e88-a693-39c1f6789ef1.md) | Collection | - |

@@ -14,14 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
-
-### Workbooks (2)
-
-**In solution [Corelight](../solutions/corelight.md):**
-- [Corelight](../content/corelight-corelight.md)
-- [Corelight_Data_Explorer](../content/corelight-data-explorer-corelight.md)
-
 ---
 
 **Browse:**

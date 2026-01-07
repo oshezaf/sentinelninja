@@ -6,12 +6,6 @@
 | **Solution** | [ApacheHTTPServer](../solutions/apachehttpserver.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ApacheHTTPServer/Workbooks/ApacheHTTPServer.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-
 ---
 
 **Browse:**

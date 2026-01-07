@@ -11,8 +11,6 @@
 This content item queries data from the following tables:
 
 - [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)
-- [`ExchangeConfiguration`](../tables/exchangeconfiguration.md)
-- [`WhenCreated`](../tables/whencreated.md)
 
 ---
 

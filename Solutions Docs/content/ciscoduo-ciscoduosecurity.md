@@ -6,12 +6,6 @@
 | **Solution** | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity/Workbooks/CiscoDuo.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CiscoDuo_CL`](../tables/ciscoduo-cl.md)
-
 ---
 
 **Browse:**

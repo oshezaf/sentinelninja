@@ -25,7 +25,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Trend Micro Apex One via AMA](../connectors/trendmicroapexoneama.md), [[Deprecated] Trend Micro Apex One via Legacy Agent](../connectors/trendmicroapexone.md) | Analytics, Hunting, Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Trend Micro Apex One via AMA](../connectors/trendmicroapexoneama.md), [[Deprecated] Trend Micro Apex One via Legacy Agent](../connectors/trendmicroapexone.md) | - |
 
 ## Content Items
 
@@ -42,37 +42,37 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ApexOne - Attack Discovery Detection](../content/7a3193b8-67b7-11ec-90d6-0242ac120003.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - C&C callback events](../content/1a87cd10-67b7-11ec-90d6-0242ac120003.md) | High | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Commands in Url](../content/4a9a5900-67b7-11ec-90d6-0242ac120003.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Device access permissions was changed](../content/b463b952-67b8-11ec-90d6-0242ac120003.md) | Medium | PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Inbound remote access connection](../content/6303235a-ee70-42a4-b969-43e7b969b916.md) | High | LateralMovement | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Multiple deny or terminate actions on single IP](../content/cd94e078-67b7-11ec-90d6-0242ac120003.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Possible exploit or execute operation](../content/e289d762-6cc2-11ec-90d6-0242ac120003.md) | High | PrivilegeEscalation, Persistence | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Spyware with failed response](../content/c92d9fe4-67b6-11ec-90d6-0242ac120003.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Suspicious commandline arguments](../content/4d7199b2-67b8-11ec-90d6-0242ac120003.md) | High | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Suspicious connections](../content/9e3dc038-67b7-11ec-90d6-0242ac120003.md) | High | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Attack Discovery Detection](../content/7a3193b8-67b7-11ec-90d6-0242ac120003.md) | High | InitialAccess | - |
+| [ApexOne - C&C callback events](../content/1a87cd10-67b7-11ec-90d6-0242ac120003.md) | High | CommandAndControl | - |
+| [ApexOne - Commands in Url](../content/4a9a5900-67b7-11ec-90d6-0242ac120003.md) | High | InitialAccess | - |
+| [ApexOne - Device access permissions was changed](../content/b463b952-67b8-11ec-90d6-0242ac120003.md) | Medium | PrivilegeEscalation | - |
+| [ApexOne - Inbound remote access connection](../content/6303235a-ee70-42a4-b969-43e7b969b916.md) | High | LateralMovement | - |
+| [ApexOne - Multiple deny or terminate actions on single IP](../content/cd94e078-67b7-11ec-90d6-0242ac120003.md) | High | InitialAccess | - |
+| [ApexOne - Possible exploit or execute operation](../content/e289d762-6cc2-11ec-90d6-0242ac120003.md) | High | PrivilegeEscalation, Persistence | - |
+| [ApexOne - Spyware with failed response](../content/c92d9fe4-67b6-11ec-90d6-0242ac120003.md) | High | InitialAccess | - |
+| [ApexOne - Suspicious commandline arguments](../content/4d7199b2-67b8-11ec-90d6-0242ac120003.md) | High | Execution | - |
+| [ApexOne - Suspicious connections](../content/9e3dc038-67b7-11ec-90d6-0242ac120003.md) | High | CommandAndControl | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [ApexOne - Behavior monitoring actions by files](../content/96451e96-67b5-11ec-90d6-0242ac120003.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Behavior monitoring event types by users](../content/433ccdb0-67b6-11ec-90d6-0242ac120003.md) | Privilege Escalation, Persistence | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Behavior monitoring operations by users](../content/0caa3472-67b6-11ec-90d6-0242ac120003.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Behavior monitoring triggered policy by command line](../content/14a4a824-67b6-11ec-90d6-0242ac120003.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Channel type by users](../content/40d8ad3e-67b4-11ec-90d6-0242ac120003.md) | CommandandControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Data loss prevention action by IP](../content/6c7f9bfe-67b5-11ec-90d6-0242ac120003.md) | Collection | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Rare application protocols by Ip address](../content/be89944e-4e75-4d0a-b2d6-ae757d22ed43.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Spyware detection](../content/506955be-648f-11ec-90d6-0242ac120003.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Suspicious files events](../content/7bf0f260-61a0-11ec-90d6-0242ac120003.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ApexOne - Top sources with alerts](../content/8bb86556-67b4-11ec-90d6-0242ac120003.md) | Execution, InitialAccess, PrivilegeEscalation, DefenseEvasion, CommandAndControl, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Behavior monitoring actions by files](../content/96451e96-67b5-11ec-90d6-0242ac120003.md) | Execution | - |
+| [ApexOne - Behavior monitoring event types by users](../content/433ccdb0-67b6-11ec-90d6-0242ac120003.md) | Privilege Escalation, Persistence | - |
+| [ApexOne - Behavior monitoring operations by users](../content/0caa3472-67b6-11ec-90d6-0242ac120003.md) | Execution | - |
+| [ApexOne - Behavior monitoring triggered policy by command line](../content/14a4a824-67b6-11ec-90d6-0242ac120003.md) | Execution | - |
+| [ApexOne - Channel type by users](../content/40d8ad3e-67b4-11ec-90d6-0242ac120003.md) | CommandandControl | - |
+| [ApexOne - Data loss prevention action by IP](../content/6c7f9bfe-67b5-11ec-90d6-0242ac120003.md) | Collection | - |
+| [ApexOne - Rare application protocols by Ip address](../content/be89944e-4e75-4d0a-b2d6-ae757d22ed43.md) | InitialAccess | - |
+| [ApexOne - Spyware detection](../content/506955be-648f-11ec-90d6-0242ac120003.md) | Execution | - |
+| [ApexOne - Suspicious files events](../content/7bf0f260-61a0-11ec-90d6-0242ac120003.md) | Execution | - |
+| [ApexOne - Top sources with alerts](../content/8bb86556-67b4-11ec-90d6-0242ac120003.md) | Execution, InitialAccess, PrivilegeEscalation, DefenseEvasion, CommandAndControl, Exfiltration | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TrendMicroApexOne](../content/trendmicroapexone-trend-micro-apex-one.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [TrendMicroApexOne](../content/trendmicroapexone-trend-micro-apex-one.md) | - |
 
 ### Parsers
 

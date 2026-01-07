@@ -10,13 +10,9 @@
 
 This content item queries data from the following tables:
 
-- [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`CuratedTables`](../tables/curatedtables.md)
-- [`IncidentsWithLumen`](../tables/incidentswithlumen.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md)
 
 ---
 

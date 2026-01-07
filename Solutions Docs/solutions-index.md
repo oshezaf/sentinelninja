@@ -15,31 +15,33 @@ This reference documentation provides detailed information about data connectors
 
 ## Overview
 
-This documentation covers **487 solutions**, of which **378** include data connectors, providing access to **512 unique connectors** and **770 unique tables**.
+This documentation covers **487 solutions**, of which **385** include data connectors, providing access to **525 unique connectors** and **811 unique tables**.
 
 ### Quick Statistics
 
 | Metric | Count |
 |--------|-------|
 | Total Solutions | 487 |
-| Solutions with Connectors | 378 (77%) |
-| Unique Connectors | 512 |
-| Unique Tables | 770 |
+| Solutions with Connectors | 385 (79%) |
+| Unique Connectors | 525 |
+| Unique Tables | 811 |
+| Content Items | 4828 |
+| Solutions with Content | 384 (78%) |
 
 ### Collection Methods
 
 | Collection Method | Total Connectors | Active Connectors* | Total Solutions | Active Solutions* |
 |:-----------------|:----------------:|:-----------------:|:---------------:|:----------------:|
-| Azure Function | 129 | 111 | 102 | 100 |
-| CCF | 114 | 113 | 101 | 101 |
-| AMA | 103 | 32 | 98 | 29 |
-| Unknown (Custom Log) | 56 | 47 | 54 | 45 |
-| MMA | 52 | 8 | 53 | 15 |
+| Azure Function | 129 | 111 | 102 | 102 |
+| CCF | 123 | 122 | 109 | 109 |
+| MMA | 110 | 20 | 111 | 28 |
+| AMA | 59 | 25 | 56 | 23 |
+| Unknown (Custom Log) | 44 | 44 | 42 | 42 |
 | Native | 25 | 25 | 20 | 20 |
+| Azure Diagnostics | 17 | 17 | 17 | 17 |
 | REST API | 15 | 15 | 16 | 16 |
-| Azure Diagnostics | 15 | 15 | 15 | 15 |
 | Unknown | 3 | 3 | 4 | 4 |
-| **Total** | **512** | **369** | **378** | **292** |
+| **Total** | **525** | **382** | **385** | **301** |
 
 *\*Active excludes connectors and solutions marked as deprecated.*
 

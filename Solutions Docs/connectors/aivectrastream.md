@@ -16,7 +16,6 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
-| [`VectraStream`](../tables/vectrastream.md) | — | — |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) | — | — |
 
 ## Permissions

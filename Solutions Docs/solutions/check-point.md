@@ -46,6 +46,10 @@ This solution includes **2 content item(s)**:
 |:-----|:------------|:------------|
 | [checkpoint-add-host-to-group](../content/checkpoint-add-host-to-group-check-point.md) | This playbook will create Check Point objects and add to block group | - |
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Check Point Log Fields Description](https://support.checkpoint.com/results/sk/sk144192) - Log field definitions and descriptions
+
 ## Additional Documentation
 
 > 📄 *Source: [Check Point/README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point/README.md)*

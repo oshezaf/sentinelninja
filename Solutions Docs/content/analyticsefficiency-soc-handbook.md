@@ -10,10 +10,8 @@
 
 This content item queries data from the following tables:
 
-- [`MITRE_DEF_TABLE`](../tables/mitre-def-table.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`getAmountOfIncedentForRuleId`](../tables/getamountofincedentforruleid.md)
 
 ---
 

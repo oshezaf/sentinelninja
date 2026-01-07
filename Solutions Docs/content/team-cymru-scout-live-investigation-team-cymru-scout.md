@@ -8,12 +8,6 @@ This playbook will fetch and ingest IP or Domain Indicator data based on input p
 | **Solution** | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutLiveInvestigation/azuredeploy.json) |
 
-## Tables Used
-
-| Table | Usage |
-|:------|:------|
-| [`ip_indicators_table_name`](../tables/ip-indicators-table-name.md) | read |
-
 ## Additional Documentation
 
 > 📄 *Source: [TeamCymruScoutLiveInvestigation/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutLiveInvestigation/readme.md)*

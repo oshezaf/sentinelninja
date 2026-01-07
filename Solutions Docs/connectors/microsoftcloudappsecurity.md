@@ -34,7 +34,6 @@ This connector ingests data into the following tables:
 |-------|:------------------------:|:-----------------------:|
 | [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`discoveryLogs`](../tables/discoverylogs.md) | — | — |
 
 ## Permissions
 

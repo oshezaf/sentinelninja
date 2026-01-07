@@ -25,7 +25,7 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) | Hunting |
 | [`ContainerInventory`](../tables/containerinventory.md) | [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) | - |
-| [`securityresources`](../tables/securityresources.md) | - | Workbooks |
+| [`KubeEvents`](../tables/kubeevents.md) | [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) | - |
 
 ### Internal Tables
 
@@ -55,7 +55,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AksSecurity](../content/akssecurity-azure-kubernetes-service.md) | [`securityresources`](../tables/securityresources.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [AksSecurity](../content/akssecurity-azure-kubernetes-service.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ---
 

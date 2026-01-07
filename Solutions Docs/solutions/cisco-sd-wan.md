@@ -20,16 +20,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **6 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Workbooks |
-| [`NetflowFlowFieldSGT`](../tables/netflowflowfieldsgt.md) | - | Workbooks |
-| [`NetflowFwPolicy`](../tables/netflowfwpolicy.md) | - | Workbooks |
-| [`Syslog`](../tables/syslog.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
-| [`external_data`](../tables/external-data.md) | - | Workbooks |
-| [`todynamic`](../tables/todynamic.md) | - | Workbooks |
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | - |
+| [`Syslog`](../tables/syslog.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | - |
 
 ## Content Items
 
@@ -46,16 +42,16 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cisco SDWAN - IPS Event Threshold](../content/dc3627c3-f9de-4f17-bfd3-ba99b64a0a67.md) | High | InitialAccess | [`Syslog`](../tables/syslog.md) |
-| [Cisco SDWAN - Intrusion Events](../content/232a1c75-63fc-4c81-8b18-b4a739fccba8.md) | High | InitialAccess | [`Syslog`](../tables/syslog.md) |
-| [Cisco SDWAN - Maleware Events](../content/cb14defd-3415-4420-a2e4-2dd0f3e07a86.md) | High | ResourceDevelopment | [`Syslog`](../tables/syslog.md) |
-| [Cisco SDWAN - Monitor Critical IPs](../content/a62a207e-62be-4a74-acab-4466d5b3854f.md) | High | CommandAndControl | [`Syslog`](../tables/syslog.md) |
+| [Cisco SDWAN - IPS Event Threshold](../content/dc3627c3-f9de-4f17-bfd3-ba99b64a0a67.md) | High | InitialAccess | - |
+| [Cisco SDWAN - Intrusion Events](../content/232a1c75-63fc-4c81-8b18-b4a739fccba8.md) | High | InitialAccess | - |
+| [Cisco SDWAN - Maleware Events](../content/cb14defd-3415-4420-a2e4-2dd0f3e07a86.md) | High | ResourceDevelopment | - |
+| [Cisco SDWAN - Monitor Critical IPs](../content/a62a207e-62be-4a74-acab-4466d5b3854f.md) | High | CommandAndControl | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoSDWAN](../content/ciscosdwan-cisco-sd-wan.md) | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md)<br>[`NetflowFlowFieldSGT`](../tables/netflowflowfieldsgt.md)<br>[`NetflowFwPolicy`](../tables/netflowfwpolicy.md)<br>[`Syslog`](../tables/syslog.md)<br>[`external_data`](../tables/external-data.md)<br>[`todynamic`](../tables/todynamic.md) |
+| [CiscoSDWAN](../content/ciscosdwan-cisco-sd-wan.md) | - |
 
 ### Playbooks
 

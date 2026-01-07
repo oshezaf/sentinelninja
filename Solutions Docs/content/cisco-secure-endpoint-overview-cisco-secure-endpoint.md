@@ -6,14 +6,6 @@
 | **Solution** | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Workbooks/Cisco%20Secure%20Endpoint%20Overview.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CiscoSecureEndpointAuditLogsV2_CL`](../tables/ciscosecureendpointauditlogsv2-cl.md)
-- [`CiscoSecureEndpointEventsV2_CL`](../tables/ciscosecureendpointeventsv2-cl.md)
-- [`CiscoSecureEndpoint_CL`](../tables/ciscosecureendpoint-cl.md)
-
 ---
 
 **Browse:**

@@ -14,18 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
-
-### Analytic Rules (1)
-
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [Dataminr - urgent alerts detected](../content/64a46029-3236-4d03-b5df-207366a623f1.md)
-
-### Workbooks (1)
-
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminrpulsealerts-dataminr-pulse.md)
-
 ---
 
 **Browse:**

@@ -20,13 +20,6 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`DomainQuery`](../tables/domainquery.md) | Workbooks |
-| [`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md) | Workbooks |
-
 ### Internal Tables
 
 The following **3 table(s)** are used internally by this solution's playbooks:
@@ -50,7 +43,7 @@ This solution includes **6 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-capabilitiesoverview-reversinglabs.md) | [`DomainQuery`](../tables/domainquery.md)<br>[`ThreatIntelIndicatorsv2`](../tables/threatintelindicatorsv2.md)<br>*Internal use:*<br>[`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-capabilitiesoverview-reversinglabs.md) | *Internal use:*<br>[`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

@@ -6,12 +6,6 @@
 | **Solution** | [SentinelOne](../solutions/sentinelone.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Workbooks/SentinelOne.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`SentinelOne_CL`](../tables/sentinelone-cl.md)
-
 ---
 
 **Browse:**

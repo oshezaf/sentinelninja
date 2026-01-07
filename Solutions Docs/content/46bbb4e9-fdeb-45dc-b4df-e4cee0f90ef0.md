@@ -12,12 +12,6 @@ Query searches for user accounts and their privileges.
 | **Required Connectors** | [SyslogAma](../connectors/syslogama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit/Hunting%20Queries/OracleDBAuditUsersPrivilegesReview.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Syslog`](../tables/syslog.md)
-
 ---
 
 **Browse:**

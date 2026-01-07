@@ -8,12 +8,6 @@ This playbook searches the Recorded Future Identity Intelligence Module for comp
 | **Solution** | [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Playbooks/v3.0/RFI-search-workforce-user/azuredeploy.json) |
 
-## Tables Used
-
-| Table | Usage |
-|:------|:------|
-| [`parameters`](../tables/parameters.md) | read |
-
 ---
 
 **Browse:**

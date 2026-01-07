@@ -19,11 +19,10 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SenservaProUnionQuery`](../tables/senservaprounionquery.md) | - | Workbooks |
 | [`SenservaPro_CL`](../tables/senservapro-cl.md) | [SenservaPro (Preview)](../connectors/senservapro.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
@@ -81,7 +80,7 @@ This solution includes **33 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [SenservaProAnalyticsWorkbook](../content/senservaproanalyticsworkbook-senservapro.md) | [`SenservaPro_CL`](../tables/senservapro-cl.md) |
-| [SenservaProMultipleWorkspaceWorkbook](../content/senservapromultipleworkspaceworkbook-senservapro.md) | [`SenservaProUnionQuery`](../tables/senservaprounionquery.md)<br>[`SenservaPro_CL`](../tables/senservapro-cl.md) |
+| [SenservaProMultipleWorkspaceWorkbook](../content/senservapromultipleworkspaceworkbook-senservapro.md) | [`SenservaPro_CL`](../tables/senservapro-cl.md) |
 | [SenservaProSecureScoreMultiTenantWorkbook](../content/senservaprosecurescoremultitenantworkbook-senservapro.md) | [`SenservaPro_CL`](../tables/senservapro-cl.md) |
 
 ## Release Notes

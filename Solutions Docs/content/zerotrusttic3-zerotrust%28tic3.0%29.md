@@ -10,12 +10,16 @@
 
 This content item queries data from the following tables:
 
+- [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
 - [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)
-- [`Crosswalk`](../tables/crosswalk.md)
+- [`DeviceRegistryEvents`](../tables/deviceregistryevents.md)
+- [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)
+- [`EmailEvents`](../tables/emailevents.md)
 - [`GCP_IAM_CL`](../tables/gcp-iam-cl.md)
+- [`IdentityInfo`](../tables/identityinfo.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)
@@ -23,6 +27,7 @@ This content item queries data from the following tables:
 - [`SecurityBaseline`](../tables/securitybaseline.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`SecurityRecommendation`](../tables/securityrecommendation.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 - [`Usage`](../tables/usage.md)
 - [`VMConnection`](../tables/vmconnection.md)

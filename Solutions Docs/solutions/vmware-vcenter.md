@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`vcenter_CL`](../tables/vcenter-cl.md) | [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) | Analytics, Workbooks |
+| [`vcenter_CL`](../tables/vcenter-cl.md) | [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) | - |
 
 ## Content Items
 
@@ -39,14 +39,14 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [VMware vCenter - Root login](../content/03e8a895-b5ba-49a0-aed3-f9a997d92fbe.md) | High | InitialAccess, PrivilegeEscalation | [`vcenter_CL`](../tables/vcenter-cl.md) |
-| [vCenter - Root impersonation](../content/f1fcb22c-b459-42f2-a7ee-7276b5f1309c.md) | Medium | PrivilegeEscalation | [`vcenter_CL`](../tables/vcenter-cl.md) |
+| [VMware vCenter - Root login](../content/03e8a895-b5ba-49a0-aed3-f9a997d92fbe.md) | High | InitialAccess, PrivilegeEscalation | - |
+| [vCenter - Root impersonation](../content/f1fcb22c-b459-42f2-a7ee-7276b5f1309c.md) | Medium | PrivilegeEscalation | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [vCenter](../content/vcenter-vmware-vcenter.md) | [`vcenter_CL`](../tables/vcenter-cl.md) |
+| [vCenter](../content/vcenter-vmware-vcenter.md) | - |
 
 ### Parsers
 

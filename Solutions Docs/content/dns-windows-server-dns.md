@@ -10,6 +10,7 @@
 
 This content item queries data from the following tables:
 
+- [`DnsEvents`](../tables/dnsevents.md)
 - [`DnsInventory`](../tables/dnsinventory.md)
 
 ---

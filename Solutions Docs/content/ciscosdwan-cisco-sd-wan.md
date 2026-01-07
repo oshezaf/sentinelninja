@@ -7,17 +7,6 @@
 | **Event Vendor** | {TypeTimeChart} |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Workbooks/CiscoSDWAN.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md)
-- [`NetflowFlowFieldSGT`](../tables/netflowflowfieldsgt.md)
-- [`NetflowFwPolicy`](../tables/netflowfwpolicy.md)
-- [`Syslog`](../tables/syslog.md)
-- [`external_data`](../tables/external-data.md)
-- [`todynamic`](../tables/todynamic.md)
-
 ---
 
 **Browse:**

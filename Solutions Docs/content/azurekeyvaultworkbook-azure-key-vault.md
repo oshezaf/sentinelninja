@@ -13,7 +13,6 @@ This content item queries data from the following tables:
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`securityresources`](../tables/securityresources.md)
 
 ---
 

@@ -10,10 +10,13 @@
 
 This content item queries data from the following tables:
 
-- [`AlertsWithTiObservables`](../tables/alertswithtiobservables.md)
+- [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`Crosswalk`](../tables/crosswalk.md)
+- [`ConfigurationData`](../tables/configurationdata.md)
+- [`DeviceEvents`](../tables/deviceevents.md)
+- [`DeviceFileEvents`](../tables/devicefileevents.md)
+- [`DeviceLogonEvents`](../tables/devicelogonevents.md)
 - [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`SecurityAlert`](../tables/securityalert.md)
@@ -21,9 +24,8 @@ This content item queries data from the following tables:
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)
 - [`SecurityRecommendation`](../tables/securityrecommendation.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
-- [`managedservicesresources`](../tables/managedservicesresources.md)
-- [`securityresources`](../tables/securityresources.md)
 
 ---
 

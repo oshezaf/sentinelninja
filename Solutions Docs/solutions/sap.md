@@ -14,14 +14,6 @@
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
-
-This solution queries **1 table(s)** from its content items:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`SAPConnectorHealth`](../tables/sapconnectorhealth.md) | Playbooks |
-
 ## Content Items
 
 This solution includes **2 content item(s)**:
@@ -34,8 +26,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [workflow](../content/workflow-sap.md) | < 🏡home | [`SAPConnectorHealth`](../tables/sapconnectorhealth.md) *(read)* |
-| [workflow](../content/workflow-sap.md) | < 🏡home | [`SAPConnectorHealth`](../tables/sapconnectorhealth.md) *(read)* |
+| [workflow](../content/workflow-sap.md) | < 🏡home | - |
+| [workflow](../content/workflow-sap.md) | < 🏡home | - |
 
 ## Additional Documentation
 

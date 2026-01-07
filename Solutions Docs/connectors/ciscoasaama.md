@@ -41,6 +41,10 @@ This connector ingests data into the following tables:
 
 **2. Run the following command to install and apply the Cisco ASA/FTD collector:**
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Cisco ASA Syslog Messages](https://www.cisco.com/c/en/us/td/docs/security/asa/syslog/b_syslog.html) - Complete ASA syslog message reference
+
 ---
 
 **Browse:**

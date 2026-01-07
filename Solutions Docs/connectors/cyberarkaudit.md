@@ -16,7 +16,6 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
-| [`CyberArkAudit`](../tables/cyberarkaudit.md) | — | — |
 | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | — | — |
 
 ## Permissions

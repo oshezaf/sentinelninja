@@ -6,12 +6,6 @@
 | **Solution** | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector/Workbooks/SemperisDSPWorkbook.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`SecurityEvent`](../tables/securityevent.md)
-
 ---
 
 **Browse:**

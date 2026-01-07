@@ -19,14 +19,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **4 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Infoblox`](../tables/infoblox.md) | - | Analytics |
-| [`Infoblox_dhcp_consolidated`](../tables/infoblox-dhcp-consolidated.md) | - | Workbooks |
-| [`Infoblox_dns_consolidated`](../tables/infoblox-dns-consolidated.md) | - | Workbooks |
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Infoblox NIOS](../connectors/infobloxnios.md) | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Infoblox NIOS](../connectors/infobloxnios.md) | - |
 
 ## Content Items
 
@@ -42,14 +39,14 @@ This solution includes **26 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive NXDOMAIN DNS Queries](../content/b8266f81-2715-41a6-9062-42486cbc9c73.md) | Medium | CommandAndControl | [`Syslog`](../tables/syslog.md) |
-| [Potential DHCP Starvation Attack](../content/57e56fc9-417a-4f41-a579-5475aea7b8ce.md) | Medium | InitialAccess | [`Infoblox`](../tables/infoblox.md) |
+| [Excessive NXDOMAIN DNS Queries](../content/b8266f81-2715-41a6-9062-42486cbc9c73.md) | Medium | CommandAndControl | - |
+| [Potential DHCP Starvation Attack](../content/57e56fc9-417a-4f41-a579-5475aea7b8ce.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Infoblox-Workbook-V2](../content/infoblox-workbook-v2-infoblox-nios.md) | [`Infoblox_dhcp_consolidated`](../tables/infoblox-dhcp-consolidated.md)<br>[`Infoblox_dns_consolidated`](../tables/infoblox-dns-consolidated.md)<br>[`Syslog`](../tables/syslog.md) |
+| [Infoblox-Workbook-V2](../content/infoblox-workbook-v2-infoblox-nios.md) | - |
 | [Sources_by_SourceType](../content/sources-by-sourcetype-infoblox-nios.md) | - |
 
 ### Parsers

@@ -20,12 +20,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) | Analytics, Hunting, Workbooks |
-| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) | - | Analytics, Hunting, Workbooks |
+| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) | - |
 
 ## Content Items
 
@@ -43,24 +42,24 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Zero Networks Segement - Machine Removed from protection](../content/a4ce12ca-d01d-460a-b15e-6c74ef328b82.md) | High | DefenseEvasion | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)<br>[`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) |
-| [Zero Networks Segment - New API Token created](../content/603a6b18-b54a-43b7-bb61-d2b0b47d224a.md) | Low | CredentialAccess | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)<br>[`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) |
-| [Zero Networks Segment - Rare JIT Rule Creation](../content/58688058-68b2-4b39-8009-ac6dc4d81ea1.md) | Medium | LateralMovement | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)<br>[`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) |
+| [Zero Networks Segement - Machine Removed from protection](../content/a4ce12ca-d01d-460a-b15e-6c74ef328b82.md) | High | DefenseEvasion | - |
+| [Zero Networks Segment - New API Token created](../content/603a6b18-b54a-43b7-bb61-d2b0b47d224a.md) | Low | CredentialAccess | - |
+| [Zero Networks Segment - Rare JIT Rule Creation](../content/58688058-68b2-4b39-8009-ac6dc4d81ea1.md) | Medium | LateralMovement | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Zero Networks Segment - Excessive access by user](../content/3dd14edf-788d-4f42-868f-28f3208b92a9.md) | LateralMovement | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)<br>[`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) |
-| [Zero Networks Segment - Excessive access to a built-in group by user](../content/0e68d210-a8ec-4e13-9f46-61011c020b87.md) | LateralMovement | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)<br>[`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) |
-| [Zero Networks Segment - Inbound Block Rules Deleted](../content/fcbbd670-d4e6-4f3a-9008-d8905e84cf79.md) | DefenseEvasion | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)<br>[`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) |
-| [Zero Networks Segment - Outbound Block Rules Deleted](../content/d8945c8f-bba4-4e02-ad09-228b067ebcf2.md) | DefenseEvasion | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)<br>[`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) |
+| [Zero Networks Segment - Excessive access by user](../content/3dd14edf-788d-4f42-868f-28f3208b92a9.md) | LateralMovement | - |
+| [Zero Networks Segment - Excessive access to a built-in group by user](../content/0e68d210-a8ec-4e13-9f46-61011c020b87.md) | LateralMovement | - |
+| [Zero Networks Segment - Inbound Block Rules Deleted](../content/fcbbd670-d4e6-4f3a-9008-d8905e84cf79.md) | DefenseEvasion | - |
+| [Zero Networks Segment - Outbound Block Rules Deleted](../content/d8945c8f-bba4-4e02-ad09-228b067ebcf2.md) | DefenseEvasion | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZNSegmentAudit](../content/znsegmentaudit-zeronetworks.md) | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md)<br>[`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) |
+| [ZNSegmentAudit](../content/znsegmentaudit-zeronetworks.md) | - |
 
 ### Playbooks
 

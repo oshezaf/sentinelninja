@@ -6,12 +6,6 @@
 | **Solution** | [Mimecast](../solutions/mimecast.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast/Workbooks/Mimecast_Cloud_Integrated_Workbook.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md)
-
 ---
 
 **Browse:**

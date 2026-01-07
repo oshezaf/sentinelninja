@@ -10,25 +10,19 @@
 
 This content item queries data from the following tables:
 
+- [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
+- [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`Correlate`](../tables/correlate.md)
-- [`InitialDataSet`](../tables/initialdataset.md)
+- [`IdentityInfo`](../tables/identityinfo.md)
+- [`LAQueryLogs`](../tables/laquerylogs.md)
 - [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)
-- [`NewUserAddsUser`](../tables/newuseraddsuser.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
-- [`PasswordResetMultiDataSource`](../tables/passwordresetmultidatasource.md)
-- [`RareAudits`](../tables/rareaudits.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`Uncommon`](../tables/uncommon.md)
-- [`UserAddWithResource`](../tables/useraddwithresource.md)
-- [`aadFunc`](../tables/aadfunc.md)
-- [`domainLookback`](../tables/domainlookback.md)
-- [`managedservicesresources`](../tables/managedservicesresources.md)
-- [`recentActivity`](../tables/recentactivity.md)
-- [`signIns`](../tables/signins.md)
+- [`SigninLogs`](../tables/signinlogs.md)
+- [`Watchlist`](../tables/watchlist.md)
 
 ---
 

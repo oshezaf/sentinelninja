@@ -10,9 +10,7 @@
 
 This content item queries data from the following tables:
 
-- [`AlldataUnique`](../tables/alldataunique.md)
 - [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md)
-- [`ExchangeConfiguration`](../tables/exchangeconfiguration.md)
 
 ---
 

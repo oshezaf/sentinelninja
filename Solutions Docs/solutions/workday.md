@@ -13,9 +13,17 @@
 
 ## Data Connectors
 
-**This solution does not include data connectors.**
+This solution provides **1 data connector(s)**:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Workday User Activity](../connectors/workdayccpdefinition.md)
+
+## Tables Reference
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | [Workday User Activity](../connectors/workdayccpdefinition.md) | - |
 
 ## Release Notes
 

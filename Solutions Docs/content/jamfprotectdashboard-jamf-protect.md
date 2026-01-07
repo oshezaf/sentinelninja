@@ -11,9 +11,7 @@
 
 This content item queries data from the following tables:
 
-- [`JamfProtect`](../tables/jamfprotect.md)
 - [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md)
-- [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md)
 
 ---
 

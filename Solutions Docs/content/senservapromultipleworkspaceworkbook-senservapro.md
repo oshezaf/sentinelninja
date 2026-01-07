@@ -10,7 +10,6 @@
 
 This content item queries data from the following tables:
 
-- [`SenservaProUnionQuery`](../tables/senservaprounionquery.md)
 - [`SenservaPro_CL`](../tables/senservapro-cl.md)
 
 ---

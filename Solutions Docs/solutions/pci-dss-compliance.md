@@ -19,12 +19,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **3 table(s)** from its content items:
+This solution queries **2 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
-| [`OracleDatabaseAuditEvent`](../tables/oracledatabaseauditevent.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 
 ## Content Items
@@ -39,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PCIDSSCompliance](../content/pcidsscompliance-pci-dss-compliance.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`OracleDatabaseAuditEvent`](../tables/oracledatabaseauditevent.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [PCIDSSCompliance](../content/pcidsscompliance-pci-dss-compliance.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 
 ## Release Notes
 

@@ -27,6 +27,10 @@ This solution uses **3 table(s)**:
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](../connectors/barracuda.md) | - |
 | [`barracuda_CL`](../tables/barracuda-cl.md) | [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](../connectors/barracuda.md) | - |
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Barracuda WAF Export Logs](https://campus.barracuda.com/product/webapplicationfirewall/doc/168300161/how-to-export-logs-from-the-barracuda-web-application-firewall) - How to configure syslog and log settings
+
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                             |

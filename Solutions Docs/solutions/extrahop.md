@@ -24,7 +24,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | Analytics, Workbooks |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | - |
 
 ### Internal Tables
 
@@ -48,13 +48,13 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Generate alerts based on ExtraHop detections recommended for triage](../content/cd65aebc-7e85-4cbb-9f91-ff0376c5d37d.md) | Medium | Persistence | [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) |
+| [Generate alerts based on ExtraHop detections recommended for triage](../content/cd65aebc-7e85-4cbb-9f91-ff0376c5d37d.md) | Medium | Persistence | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ExtraHopDetectionsOverview](../content/extrahopdetectionsoverview-extrahop.md) | [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [ExtraHopDetectionsOverview](../content/extrahopdetectionsoverview-extrahop.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Parsers
 

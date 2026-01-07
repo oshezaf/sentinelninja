@@ -14,13 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Vectra XDR](../solutions/vectra-xdr.md):**
-- [VectraXDR](../content/vectraxdr-vectra-xdr.md)
-
 ---
 
 **Browse:**

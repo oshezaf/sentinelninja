@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`iotsecurityresources`](../tables/iotsecurityresources.md)
 
 ---
 

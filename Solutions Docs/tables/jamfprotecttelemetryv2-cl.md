@@ -14,13 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Jamf Protect](../solutions/jamf-protect.md):**
-- [JamfProtectDashboard](../content/jamfprotectdashboard-jamf-protect.md)
-
 ---
 
 **Browse:**

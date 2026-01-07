@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Symantec ProxySG](../connectors/symantecproxysg.md) | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Symantec ProxySG](../connectors/symantecproxysg.md) | - |
 
 ## Content Items
 
@@ -39,14 +39,14 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive Denied Proxy Traffic](../content/7a58b253-0ef2-4248-b4e5-c350f15a8346.md) | Low | DefenseEvasion, CommandAndControl | [`Syslog`](../tables/syslog.md) |
-| [User Accessed Suspicious URL Categories](../content/fb0f4a93-d8ad-4b54-9931-85bdb7550f90.md) | Medium | InitialAccess, CommandAndControl | [`Syslog`](../tables/syslog.md) |
+| [Excessive Denied Proxy Traffic](../content/7a58b253-0ef2-4248-b4e5-c350f15a8346.md) | Low | DefenseEvasion, CommandAndControl | - |
+| [User Accessed Suspicious URL Categories](../content/fb0f4a93-d8ad-4b54-9931-85bdb7550f90.md) | Medium | InitialAccess, CommandAndControl | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SymantecProxySG](../content/symantecproxysg-symantecproxysg.md) | [`Syslog`](../tables/syslog.md) |
+| [SymantecProxySG](../content/symantecproxysg-symantecproxysg.md) | - |
 
 ### Parsers
 

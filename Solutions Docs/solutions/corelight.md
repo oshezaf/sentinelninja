@@ -19,7 +19,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **113 table(s)**:
+This solution uses **108 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -27,15 +27,10 @@ This solution uses **113 table(s)**:
 | [`Corelight_v2_bacnet_CL`](../tables/corelight-v2-bacnet-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_capture_loss_CL`](../tables/corelight-v2-capture-loss-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_cip_CL`](../tables/corelight-v2-cip-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Hunting, Workbooks |
-| [`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Hunting, Workbooks |
-| [`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Hunting, Workbooks |
+| [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
 | [`Corelight_v2_corelight_burst_CL`](../tables/corelight-v2-corelight-burst-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_corelight_metrics_disk_CL`](../tables/corelight-v2-corelight-metrics-disk-cl.md) | - | Workbooks |
-| [`Corelight_v2_corelight_metrics_iface_CL`](../tables/corelight-v2-corelight-metrics-iface-cl.md) | - | Workbooks |
-| [`Corelight_v2_corelight_metrics_memory_CL`](../tables/corelight-v2-corelight-metrics-memory-cl.md) | - | Workbooks |
-| [`Corelight_v2_corelight_metrics_system_CL`](../tables/corelight-v2-corelight-metrics-system-cl.md) | - | Workbooks |
-| [`Corelight_v2_corelight_metrics_zeek_doctor_CL`](../tables/corelight-v2-corelight-metrics-zeek-doctor-cl.md) | - | Workbooks |
 | [`Corelight_v2_corelight_overall_capture_loss_CL`](../tables/corelight-v2-corelight-overall-capture-loss-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_corelight_profiling_CL`](../tables/corelight-v2-corelight-profiling-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_datared_CL`](../tables/corelight-v2-datared-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
@@ -43,24 +38,24 @@ This solution uses **113 table(s)**:
 | [`Corelight_v2_dga_CL`](../tables/corelight-v2-dga-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_dhcp_CL`](../tables/corelight-v2-dhcp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_dnp3_CL`](../tables/corelight-v2-dnp3-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Hunting, Workbooks |
-| [`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Hunting, Workbooks |
+| [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
 | [`Corelight_v2_dpd_CL`](../tables/corelight-v2-dpd-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_encrypted_dns_CL`](../tables/corelight-v2-encrypted-dns-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_enip_CL`](../tables/corelight-v2-enip-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_enip_debug_CL`](../tables/corelight-v2-enip-debug-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_enip_list_identity_CL`](../tables/corelight-v2-enip-list-identity-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_etc_viz_CL`](../tables/corelight-v2-etc-viz-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
-| [`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Hunting, Workbooks |
-| [`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Hunting, Workbooks |
-| [`Corelight_v2_ftp_CL`](../tables/corelight-v2-ftp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_etc_viz_CL`](../tables/corelight-v2-etc-viz-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
+| [`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_ftp_CL`](../tables/corelight-v2-ftp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_generic_dns_tunnels_CL`](../tables/corelight-v2-generic-dns-tunnels-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_generic_icmp_tunnels_CL`](../tables/corelight-v2-generic-icmp-tunnels-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Analytics, Hunting, Workbooks |
-| [`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Analytics, Hunting, Workbooks |
-| [`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Analytics, Hunting, Workbooks |
+| [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
 | [`Corelight_v2_icmp_specific_tunnels_CL`](../tables/corelight-v2-icmp-specific-tunnels-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_intel_CL`](../tables/corelight-v2-intel-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_intel_CL`](../tables/corelight-v2-intel-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_ipsec_CL`](../tables/corelight-v2-ipsec-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_irc_CL`](../tables/corelight-v2-irc-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_iso_cotp_CL`](../tables/corelight-v2-iso-cotp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
@@ -82,7 +77,7 @@ This solution uses **113 table(s)**:
 | [`Corelight_v2_mqtt_publish_CL`](../tables/corelight-v2-mqtt-publish-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_mqtt_subscribe_CL`](../tables/corelight-v2-mqtt-subscribe-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_mysql_CL`](../tables/corelight-v2-mysql-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_notice_CL`](../tables/corelight-v2-notice-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_notice_CL`](../tables/corelight-v2-notice-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_ntlm_CL`](../tables/corelight-v2-ntlm-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_ntp_CL`](../tables/corelight-v2-ntp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_ocsp_CL`](../tables/corelight-v2-ocsp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
@@ -93,7 +88,7 @@ This solution uses **113 table(s)**:
 | [`Corelight_v2_profinet_dce_rpc_CL`](../tables/corelight-v2-profinet-dce-rpc-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_profinet_debug_CL`](../tables/corelight-v2-profinet-debug-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_radius_CL`](../tables/corelight-v2-radius-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_rdp_CL`](../tables/corelight-v2-rdp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_rdp_CL`](../tables/corelight-v2-rdp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_reporter_CL`](../tables/corelight-v2-reporter-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_rfb_CL`](../tables/corelight-v2-rfb-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_s7comm_CL`](../tables/corelight-v2-s7comm-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
@@ -101,22 +96,22 @@ This solution uses **113 table(s)**:
 | [`Corelight_v2_sip_CL`](../tables/corelight-v2-sip-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_smartpcap_CL`](../tables/corelight-v2-smartpcap-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_smartpcap_stats_CL`](../tables/corelight-v2-smartpcap-stats-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_smb_files_CL`](../tables/corelight-v2-smb-files-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
-| [`Corelight_v2_smb_mapping_CL`](../tables/corelight-v2-smb-mapping-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Hunting |
-| [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Analytics, Hunting, Workbooks |
+| [`Corelight_v2_smb_files_CL`](../tables/corelight-v2-smb-files-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
+| [`Corelight_v2_smb_mapping_CL`](../tables/corelight-v2-smb-mapping-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
+| [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
 | [`Corelight_v2_smtp_links_CL`](../tables/corelight-v2-smtp-links-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_snmp_CL`](../tables/corelight-v2-snmp-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_socks_CL`](../tables/corelight-v2-socks-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_software_CL`](../tables/corelight-v2-software-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_software_CL`](../tables/corelight-v2-software-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_specific_dns_tunnels_CL`](../tables/corelight-v2-specific-dns-tunnels-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_ssh_CL`](../tables/corelight-v2-ssh-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_ssh_CL`](../tables/corelight-v2-ssh-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
 | [`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
 | [`Corelight_v2_stats_CL`](../tables/corelight-v2-stats-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_stepping_CL`](../tables/corelight-v2-stepping-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_stun_CL`](../tables/corelight-v2-stun-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_stun_nat_CL`](../tables/corelight-v2-stun-nat-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_suricata_corelight_CL`](../tables/corelight-v2-suricata-corelight-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_suricata_corelight_CL`](../tables/corelight-v2-suricata-corelight-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_suricata_eve_CL`](../tables/corelight-v2-suricata-eve-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_suricata_stats_CL`](../tables/corelight-v2-suricata-stats-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_suricata_zeek_stats_CL`](../tables/corelight-v2-suricata-zeek-stats-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
@@ -128,13 +123,13 @@ This solution uses **113 table(s)**:
 | [`Corelight_v2_tunnel_CL`](../tables/corelight-v2-tunnel-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_unknown_smartpcap_CL`](../tables/corelight-v2-unknown-smartpcap-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_util_stats_CL`](../tables/corelight-v2-util-stats-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_vpn_CL`](../tables/corelight-v2-vpn-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_vpn_CL`](../tables/corelight-v2-vpn-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_weird_CL`](../tables/corelight-v2-weird-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_weird_red_CL`](../tables/corelight-v2-weird-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_weird_stats_CL`](../tables/corelight-v2-weird-stats-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_wireguard_CL`](../tables/corelight-v2-wireguard-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
-| [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
-| [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | Workbooks |
+| [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
+| [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_zeek_doctor_CL`](../tables/corelight-v2-zeek-doctor-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 
 ## Content Items
@@ -154,40 +149,40 @@ This solution includes **151 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Corelight - C2 DGA Detected Via Repetitive Failures](../content/8eaa2268-74ee-492c-b869-450eff707fef.md) | Medium | CommandAndControl | - |
-| [Corelight - External Proxy Detected](../content/05850746-9ae4-412f-838b-844f0903f4a9.md) | Low | DefenseEvasion, CommandAndControl | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
+| [Corelight - External Proxy Detected](../content/05850746-9ae4-412f-838b-844f0903f4a9.md) | Low | DefenseEvasion, CommandAndControl | - |
 | [Corelight - Forced External Outbound SMB](../content/73f23aa2-5cc4-4507-940b-75c9092e9e01.md) | Medium | CredentialAccess | - |
-| [Corelight - Multiple Compressed Files Transferred over HTTP](../content/4e55e306-3022-43a1-870a-41c4d5116079.md) | Medium | Exfiltration | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
-| [Corelight - Multiple files sent over HTTP with abnormal requests](../content/7226d37b-50ee-4e3b-9f80-5b74080d8f2c.md) | Medium | Exfiltration | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
+| [Corelight - Multiple Compressed Files Transferred over HTTP](../content/4e55e306-3022-43a1-870a-41c4d5116079.md) | Medium | Exfiltration | - |
+| [Corelight - Multiple files sent over HTTP with abnormal requests](../content/7226d37b-50ee-4e3b-9f80-5b74080d8f2c.md) | Medium | Exfiltration | - |
 | [Corelight - Network Service Scanning Multiple IP Addresses](../content/599570d4-06f8-4939-8e29-95cd003f1abd.md) | Medium | InitialAccess | - |
-| [Corelight - Possible Typo Squatting or Punycode Phishing HTTP Request](../content/6b579e98-abc9-4e7a-9efc-2f3408ba16c9.md) | Medium | InitialAccess | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
-| [Corelight - Possible Webshell](../content/f3245aa1-1ca1-471c-a0b7-97ea6b791d5d.md) | Medium | Persistence | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
-| [Corelight - Possible Webshell (Rare PUT or POST)](../content/db662e49-6e34-4d10-9d3c-5d04b5479658.md) | Medium | Persistence | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
-| [Corelight - SMTP Email containing NON Ascii Characters within the Subject](../content/50c61708-9824-46f3-87cf-22490796fae2.md) | Low | InitialAccess | [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) |
+| [Corelight - Possible Typo Squatting or Punycode Phishing HTTP Request](../content/6b579e98-abc9-4e7a-9efc-2f3408ba16c9.md) | Medium | InitialAccess | - |
+| [Corelight - Possible Webshell](../content/f3245aa1-1ca1-471c-a0b7-97ea6b791d5d.md) | Medium | Persistence | - |
+| [Corelight - Possible Webshell (Rare PUT or POST)](../content/db662e49-6e34-4d10-9d3c-5d04b5479658.md) | Medium | Persistence | - |
+| [Corelight - SMTP Email containing NON Ascii Characters within the Subject](../content/50c61708-9824-46f3-87cf-22490796fae2.md) | Low | InitialAccess | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Corelight - Abnormal Email Subject](../content/e9441d57-39f4-41fb-aaad-d02e47783d1a.md) | InitialAccess | [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) |
-| [Corelight - Compressed Files Transferred over HTTP](../content/f37e076e-69f6-4fcf-81dc-ca2bc5929eb5.md) | Exfiltration | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
-| [Corelight - External Facing Services](../content/3e42a796-9a4c-4ebf-a0e0-5282947986b5.md) | InitialAccess | [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md)<br>[`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md)<br>[`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md) |
-| [Corelight - File uploads by source](../content/887e648f-32d7-4803-8cd4-2ceef7995872.md) | Exfiltration | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
-| [Corelight - Files in logs](../content/0c3ad86f-6b92-4ff5-8d41-86ff7e01d518.md) | InitialAccess, Exfiltration | [`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md)<br>[`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md) |
-| [Corelight - Multiple Remote SMB Connections from single client](../content/69736969-6ae0-48cd-a05a-743f7372ee84.md) | Discovery | [`Corelight_v2_smb_mapping_CL`](../tables/corelight-v2-smb-mapping-cl.md) |
-| [Corelight - Obfuscated binary filenames](../content/a518ea0c-f87a-4a79-8f45-2b5b6f44bd7f.md) | InitialAccess | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
-| [Corelight - Rare PUT or POST](../content/9aab6aac-6dad-4749-b8cf-46840b6d978f.md) | Persistence | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
-| [Corelight - Repetitive DNS Failures](../content/1ea3a384-77a4-4b0d-8e42-74d26b38ab5b.md) | CommandAndControl | [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md)<br>[`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md) |
-| [Corelight - Top sources of data transferred](../content/c5f3974b-f411-4a06-a3f8-ee14fcadd0e1.md) | Exfiltration | [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) |
+| [Corelight - Abnormal Email Subject](../content/e9441d57-39f4-41fb-aaad-d02e47783d1a.md) | InitialAccess | - |
+| [Corelight - Compressed Files Transferred over HTTP](../content/f37e076e-69f6-4fcf-81dc-ca2bc5929eb5.md) | Exfiltration | - |
+| [Corelight - External Facing Services](../content/3e42a796-9a4c-4ebf-a0e0-5282947986b5.md) | InitialAccess | - |
+| [Corelight - File uploads by source](../content/887e648f-32d7-4803-8cd4-2ceef7995872.md) | Exfiltration | - |
+| [Corelight - Files in logs](../content/0c3ad86f-6b92-4ff5-8d41-86ff7e01d518.md) | InitialAccess, Exfiltration | - |
+| [Corelight - Multiple Remote SMB Connections from single client](../content/69736969-6ae0-48cd-a05a-743f7372ee84.md) | Discovery | - |
+| [Corelight - Obfuscated binary filenames](../content/a518ea0c-f87a-4a79-8f45-2b5b6f44bd7f.md) | InitialAccess | - |
+| [Corelight - Rare PUT or POST](../content/9aab6aac-6dad-4749-b8cf-46840b6d978f.md) | Persistence | - |
+| [Corelight - Repetitive DNS Failures](../content/1ea3a384-77a4-4b0d-8e42-74d26b38ab5b.md) | CommandAndControl | - |
+| [Corelight - Top sources of data transferred](../content/c5f3974b-f411-4a06-a3f8-ee14fcadd0e1.md) | Exfiltration | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Corelight](../content/corelight-corelight.md) | [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md)<br>[`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md)<br>[`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md)<br>[`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md)<br>[`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md)<br>[`Corelight_v2_etc_viz_CL`](../tables/corelight-v2-etc-viz-cl.md)<br>[`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md)<br>[`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md)<br>[`Corelight_v2_ftp_CL`](../tables/corelight-v2-ftp-cl.md)<br>[`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md)<br>[`Corelight_v2_notice_CL`](../tables/corelight-v2-notice-cl.md)<br>[`Corelight_v2_rdp_CL`](../tables/corelight-v2-rdp-cl.md)<br>[`Corelight_v2_software_CL`](../tables/corelight-v2-software-cl.md)<br>[`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md)<br>[`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md)<br>[`Corelight_v2_vpn_CL`](../tables/corelight-v2-vpn-cl.md)<br>[`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md)<br>[`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) |
-| [Corelight_Alert_Aggregations](../content/corelight-alert-aggregations-corelight.md) | [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md)<br>[`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md)<br>[`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md)<br>[`Corelight_v2_suricata_corelight_CL`](../tables/corelight-v2-suricata-corelight-cl.md) |
-| [Corelight_Data_Explorer](../content/corelight-data-explorer-corelight.md) | [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md)<br>[`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md)<br>[`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md)<br>[`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md)<br>[`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md)<br>[`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md)<br>[`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md)<br>[`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md)<br>[`Corelight_v2_software_CL`](../tables/corelight-v2-software-cl.md)<br>[`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md)<br>[`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) |
-| [Corelight_Security_Workflow](../content/corelight-security-workflow-corelight.md) | [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md)<br>[`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md)<br>[`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md)<br>[`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md)<br>[`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md)<br>[`Corelight_v2_etc_viz_CL`](../tables/corelight-v2-etc-viz-cl.md)<br>[`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md)<br>[`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md)<br>[`Corelight_v2_ftp_CL`](../tables/corelight-v2-ftp-cl.md)<br>[`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md)<br>[`Corelight_v2_intel_CL`](../tables/corelight-v2-intel-cl.md)<br>[`Corelight_v2_notice_CL`](../tables/corelight-v2-notice-cl.md)<br>[`Corelight_v2_rdp_CL`](../tables/corelight-v2-rdp-cl.md)<br>[`Corelight_v2_smb_files_CL`](../tables/corelight-v2-smb-files-cl.md)<br>[`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md)<br>[`Corelight_v2_ssh_CL`](../tables/corelight-v2-ssh-cl.md)<br>[`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md)<br>[`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md)<br>[`Corelight_v2_suricata_corelight_CL`](../tables/corelight-v2-suricata-corelight-cl.md)<br>[`Corelight_v2_vpn_CL`](../tables/corelight-v2-vpn-cl.md)<br>[`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md)<br>[`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) |
-| [Corelight_Sensor_Overview](../content/corelight-sensor-overview-corelight.md) | [`Corelight_v2_corelight_metrics_disk_CL`](../tables/corelight-v2-corelight-metrics-disk-cl.md)<br>[`Corelight_v2_corelight_metrics_iface_CL`](../tables/corelight-v2-corelight-metrics-iface-cl.md)<br>[`Corelight_v2_corelight_metrics_memory_CL`](../tables/corelight-v2-corelight-metrics-memory-cl.md)<br>[`Corelight_v2_corelight_metrics_system_CL`](../tables/corelight-v2-corelight-metrics-system-cl.md)<br>[`Corelight_v2_corelight_metrics_zeek_doctor_CL`](../tables/corelight-v2-corelight-metrics-zeek-doctor-cl.md) |
+| [Corelight](../content/corelight-corelight.md) | - |
+| [Corelight_Alert_Aggregations](../content/corelight-alert-aggregations-corelight.md) | - |
+| [Corelight_Data_Explorer](../content/corelight-data-explorer-corelight.md) | - |
+| [Corelight_Security_Workflow](../content/corelight-security-workflow-corelight.md) | [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md)<br>[`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md)<br>[`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md)<br>[`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md)<br>[`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md)<br>[`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md)<br>[`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md)<br>[`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md)<br>[`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md)<br>[`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md)<br>[`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) |
+| [Corelight_Sensor_Overview](../content/corelight-sensor-overview-corelight.md) | - |
 
 ### Parsers
 

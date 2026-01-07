@@ -31,7 +31,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (67)
+## Content Items Using This Table (66)
 
 ### Analytic Rules (39)
 
@@ -126,10 +126,7 @@ This table is ingested by the following connectors:
 - [Potential beaconing detected - Similar sent bytes (ASIM Web Session)](../content/75929222-fee5-4f97-a2cc-cb6f29444385.md)
 - [Request from bots and crawlers (ASIM Web Session)](../content/b653c2e0-ae0f-490b-9b2e-836858d28976.md)
 
-### Workbooks (6)
-
-**In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
-- [CiscoMerakiWorkbook](../content/ciscomerakiworkbook-ciscomeraki.md)
+### Workbooks (5)
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdprcomplianceanddatasecurity-gdpr-compliance-&-data-security.md)

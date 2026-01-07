@@ -19,19 +19,22 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **4 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | Analytics |
 | [`AWSGuardDuty`](../tables/awsguardduty.md) | Analytics |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | Analytics |
+| [`SigninLogs`](../tables/signinlogs.md) | Analytics |
 
 ### Internal Tables
 
-The following **1 table(s)** are used internally by this solution's playbooks:
+The following **2 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`IdentityInfo`](../tables/identityinfo.md) | Analytics |
 | [`SecurityAlert`](../tables/securityalert.md) | Analytics |
 
 ## Content Items
@@ -46,13 +49,13 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cross-Cloud Password Spray detection](../content/1f40ed57-f54b-462f-906a-ac3a89cc90d4.md) | Medium | CredentialAccess | - |
-| [Cross-Cloud Suspicious Compute resource creation in GCP](../content/5c847e47-0a07-4c01-ab99-5817ad6cb11e.md) | Low | InitialAccess, Execution, Persistence, PrivilegeEscalation, CredentialAccess, Discovery, LateralMovement | [`AWSGuardDuty`](../tables/awsguardduty.md) |
-| [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7.md) | Medium | InitialAccess, Execution, Persistence, PrivilegeEscalation, CredentialAccess, Discovery | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login](../content/122fbc6a-57ab-4aa7-b9a9-51ac4970cac1.md) | Medium | CredentialAccess, InitialAccess | [`AWSGuardDuty`](../tables/awsguardduty.md) |
-| [High-Risk Cross-Cloud User Impersonation](../content/f4a28082-2808-4783-9736-33c1ae117475.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
-| [Successful AWS Console Login from IP Address Observed Conducting Password Spray](../content/188db479-d50a-4a9c-a041-644bae347d1f.md) | Medium | InitialAccess, CredentialAccess | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Suspicious AWS console logins by credential access alerts](../content/b51fe620-62ad-4ed2-9d40-5c97c0a8231f.md) | Medium | InitialAccess, CredentialAccess | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Cross-Cloud Password Spray detection](../content/1f40ed57-f54b-462f-906a-ac3a89cc90d4.md) | Medium | CredentialAccess | [`SigninLogs`](../tables/signinlogs.md) |
+| [Cross-Cloud Suspicious Compute resource creation in GCP](../content/5c847e47-0a07-4c01-ab99-5817ad6cb11e.md) | Low | InitialAccess, Execution, Persistence, PrivilegeEscalation, CredentialAccess, Discovery, LateralMovement | [`AWSGuardDuty`](../tables/awsguardduty.md)<br>[`GCPAuditLogs`](../tables/gcpauditlogs.md) |
+| [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7.md) | Medium | InitialAccess, Execution, Persistence, PrivilegeEscalation, CredentialAccess, Discovery | [`GCPAuditLogs`](../tables/gcpauditlogs.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login](../content/122fbc6a-57ab-4aa7-b9a9-51ac4970cac1.md) | Medium | CredentialAccess, InitialAccess | [`AWSGuardDuty`](../tables/awsguardduty.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [High-Risk Cross-Cloud User Impersonation](../content/f4a28082-2808-4783-9736-33c1ae117475.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [Successful AWS Console Login from IP Address Observed Conducting Password Spray](../content/188db479-d50a-4a9c-a041-644bae347d1f.md) | Medium | InitialAccess, CredentialAccess | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Suspicious AWS console logins by credential access alerts](../content/b51fe620-62ad-4ed2-9d40-5c97c0a8231f.md) | Medium | InitialAccess, CredentialAccess | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Unauthorized user access across AWS and Azure](../content/60f31001-018a-42bf-8045-a92e1f361b7b.md) | Medium | CredentialAccess, Exfiltration, Discovery | [`AWSGuardDuty`](../tables/awsguardduty.md) |
 | [User impersonation by Identity Protection alerts](../content/11c3d541-5fa5-49df-8218-d1c98584473b.md) | Medium | PrivilegeEscalation | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 

@@ -20,11 +20,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | [SlashNext Function App](../connectors/slashnextfunctionapp.md) | - |
+| [`AzureMetrics`](../tables/azuremetrics.md) | [SlashNext Function App](../connectors/slashnextfunctionapp.md) | - |
 
 ## Content Items
 

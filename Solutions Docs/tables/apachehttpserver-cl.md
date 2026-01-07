@@ -24,24 +24,12 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (58)
+## Content Items Using This Table (37)
 
-### Analytic Rules (33)
+### Analytic Rules (23)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [User agent search for log4j exploitation attempt](../content/29283b22-a1c0-4d16-b0a9-3460b655a46a.md)
-
-**In solution [ApacheHTTPServer](../solutions/apachehttpserver.md):**
-- [Apache - Apache 2.4.49 flaw CVE-2021-41773](../content/767f9dc4-3b01-11ec-8d3d-0242ac130003.md)
-- [Apache - Command in URI](../content/54da6a42-3b00-11ec-8d3d-0242ac130003.md)
-- [Apache - Known malicious user agent](../content/e9edfe1c-3afd-11ec-8d3d-0242ac130003.md)
-- [Apache - Multiple client errors from single IP](../content/15f5a956-3af9-11ec-8d3d-0242ac130003.md)
-- [Apache - Multiple server errors from single IP](../content/1bf246a2-3af9-11ec-8d3d-0242ac130003.md)
-- [Apache - Private IP in URL](../content/db5f16f0-3afe-11ec-8d3d-0242ac130003.md)
-- [Apache - Put suspicious file](../content/c5d69e46-3b00-11ec-8d3d-0242ac130003.md)
-- [Apache - Request from private IP](../content/a0077556-3aff-11ec-8d3d-0242ac130003.md)
-- [Apache - Request to sensitive files](../content/d1c52578-3afc-11ec-8d3d-0242ac130003.md)
-- [Apache - Requests to rare files](../content/14d7e15e-3afb-11ec-8d3d-0242ac130003.md)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 - [Google Threat Intelligence - Threat Hunting Url](../content/89290690-54c4-4196-91c5-d32b1df5d873.md)
@@ -77,19 +65,7 @@ This table is ingested by the following connectors:
 - [Identify instances where a single source is observed using multiple user agents (ASIM Web Session)](../content/813ccf3b-0321-4622-b0bc-63518fd14454.md)
 - [The download of potentially risky files from the Discord Content Delivery Network (CDN) (ASIM Web Session)](../content/b7fe8f27-7010-404b-aec5-6e5245cea580.md)
 
-### Hunting Queries (21)
-
-**In solution [ApacheHTTPServer](../solutions/apachehttpserver.md):**
-- [Apache - Rare URLs requested](../content/4c1a164e-3ae9-11ec-8d3d-0242ac130003.md)
-- [Apache - Rare files requested](../content/ae48a600-3ae9-11ec-8d3d-0242ac130003.md)
-- [Apache - Rare user agents](../content/d2e85f1a-3ae8-11ec-8d3d-0242ac130003.md)
-- [Apache - Rare user agents with client errors](../content/5ce3f2ed-0c81-407f-ae12-6ea00a6d9873.md)
-- [Apache - Requests to unexisting files](../content/017d1bee-3aea-11ec-8d3d-0242ac130003.md)
-- [Apache - Top Top files requested](../content/456ab502-38b8-11ec-8d3d-0242ac130003.md)
-- [Apache - Top URLs with client errors](../content/28961fc8-3892-11ec-8d3d-0242ac130003.md)
-- [Apache - Top URLs with server errors](../content/ccdd22c6-3896-11ec-8d3d-0242ac130003.md)
-- [Apache - Top files requested with errors](../content/afe13b7c-38b8-11ec-8d3d-0242ac130003.md)
-- [Apache - Unexpected Post Requests](../content/c21ea046-3ae7-11ec-8d3d-0242ac130003.md)
+### Hunting Queries (11)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 - [Google Threat Intelligence - Threat Hunting Url](../content/a1705fa5-c904-4f1b-9e2d-a4ccb30377a2.md)
@@ -108,10 +84,7 @@ This table is ingested by the following connectors:
 - [Potential beaconing detected - Similar sent bytes (ASIM Web Session)](../content/75929222-fee5-4f97-a2cc-cb6f29444385.md)
 - [Request from bots and crawlers (ASIM Web Session)](../content/b653c2e0-ae0f-490b-9b2e-836858d28976.md)
 
-### Workbooks (3)
-
-**In solution [ApacheHTTPServer](../solutions/apachehttpserver.md):**
-- [ApacheHTTPServer](../content/apachehttpserver-apachehttpserver.md)
+### Workbooks (2)
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdprcomplianceanddatasecurity-gdpr-compliance-&-data-security.md)

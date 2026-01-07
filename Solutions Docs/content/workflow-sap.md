@@ -8,12 +8,6 @@
 | **Solution** | [SAP](../solutions/sap.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/SAPCollectorRemediate-STD/workflow.json) |
 
-## Tables Used
-
-| Table | Usage |
-|:------|:------|
-| [`SAPConnectorHealth`](../tables/sapconnectorhealth.md) | read |
-
 ## Additional Documentation
 
 > 📄 *Source: [SAPCollectorRemediate-STD/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/SAPCollectorRemediate-STD/readme.md)*

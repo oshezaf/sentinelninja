@@ -11,7 +11,6 @@
 This content item queries data from the following tables:
 
 - [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)
-- [`user_account_changes`](../tables/user-account-changes.md)
 
 ---
 

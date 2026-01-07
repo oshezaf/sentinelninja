@@ -20,13 +20,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **4 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`JamfProtect`](../tables/jamfprotect.md) | - | Workbooks |
 | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
-| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Workbooks |
+| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | - |
 | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | - |
 
 ## Content Items
@@ -52,7 +51,7 @@ This solution includes **12 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [JamfProtectDashboard](../content/jamfprotectdashboard-jamf-protect.md) | [`JamfProtect`](../tables/jamfprotect.md)<br>[`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md)<br>[`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) |
+| [JamfProtectDashboard](../content/jamfprotectdashboard-jamf-protect.md) | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) |
 
 ### Playbooks
 

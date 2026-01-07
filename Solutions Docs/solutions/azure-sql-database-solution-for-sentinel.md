@@ -19,14 +19,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **4 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure SQL Databases](../connectors/azuresql.md) | Analytics, Hunting, Workbooks |
-| [`anomalyData`](../tables/anomalydata.md) | - | Hunting |
-| [`queryData`](../tables/querydata.md) | - | Hunting |
-| [`securityresources`](../tables/securityresources.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -69,8 +66,8 @@ This solution includes **19 content item(s)**:
 | [Affected rows stateful anomaly on database - hunting query](../content/9670ac84-e035-47f5-8eb5-9d863a8a7893.md) | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Anomalous Query Execution Time](../content/724c7010-0afe-4d46-95ab-32f6737e658b.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Anomalous Query Execution Time](../content/af55d5b0-6b4a-4874-8299-9d845bf7c1fd.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [Boolean Blind SQL Injection](../content/4cda0673-37f9-4765-af1f-556de2295cd7.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`queryData`](../tables/querydata.md) |
-| [Prevalence Based SQL Query Size Anomaly](../content/2a21303e-be48-404f-a6f6-883a6acfe5ad.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`anomalyData`](../tables/anomalydata.md) |
+| [Boolean Blind SQL Injection](../content/4cda0673-37f9-4765-af1f-556de2295cd7.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Prevalence Based SQL Query Size Anomaly](../content/2a21303e-be48-404f-a6f6-883a6acfe5ad.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Response rows stateful anomaly on database - hunting query](../content/137tyi7c-7225-434b-8bfc-fea28v95ebd8.md) | Exfiltration | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Suspicious SQL Stored Procedures](../content/db5b0a77-1b1d-4a31-8ebb-c508ebc3bb38.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Time Based SQL Query Size Anomaly](../content/e0944dec-3c92-4b2d-8e81-a950afeaba69.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
@@ -79,7 +76,7 @@ This solution includes **19 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Workbook-AzureSQLSecurity](../content/workbook-azuresqlsecurity-azure-sql-database-solution-for-sentinel.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`securityresources`](../tables/securityresources.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [Workbook-AzureSQLSecurity](../content/workbook-azuresqlsecurity-azure-sql-database-solution-for-sentinel.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Release Notes
 

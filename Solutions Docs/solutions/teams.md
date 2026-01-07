@@ -19,11 +19,12 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **1 table(s)** from its content items:
+This solution queries **2 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
+| [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 
 ## Content Items
 
@@ -38,7 +39,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftTeams](../content/microsoftteams-teams.md) | [`OfficeActivity`](../tables/officeactivity.md) |
+| [MicrosoftTeams](../content/microsoftteams-teams.md) | [`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ### Playbooks
 

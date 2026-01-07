@@ -5,7 +5,7 @@
 | **Connector ID** | `MongoDB` |
 | **Publisher** | MongoDB |
 | **Used in Solutions** | [MongoDBAudit](../solutions/mongodbaudit.md) |
-| **Collection Method** | Unknown (Custom Log) |
+| **Collection Method** | MMA |
 | **Connector Definition Files** | [Connector_MongoDBAudit.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAudit/Data%20Connectors/Connector_MongoDBAudit.json) |
 
 MongoDB data connector provides the capability to ingest [MongoDBAudit](https://www.mongodb.com/) into Microsoft Sentinel. Refer to [MongoDB documentation](https://www.mongodb.com/docs/manual/tutorial/getting-started/) for more information.

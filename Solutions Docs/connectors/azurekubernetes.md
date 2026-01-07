@@ -18,6 +18,7 @@ This connector ingests data into the following tables:
 |-------|:------------------------:|:-----------------------:|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 | [`ContainerInventory`](../tables/containerinventory.md) | ✓ | ✗ |
+| [`KubeEvents`](../tables/kubeevents.md) | ✓ | ✗ |
 
 ## Permissions
 

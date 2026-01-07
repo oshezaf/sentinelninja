@@ -5,7 +5,7 @@
 | **Connector ID** | `OnapsisPlatform` |
 | **Publisher** | Onapsis |
 | **Used in Solutions** | [Onapsis Platform](../solutions/onapsis-platform.md) |
-| **Collection Method** | AMA |
+| **Collection Method** | MMA |
 | **Event Vendor** | Onapsis |
 | **Event Product** | OSP |
 | **Connector Definition Files** | [OnapsisPlatform.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Platform/Data%20Connectors/OnapsisPlatform.json) |

@@ -24,7 +24,7 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md) | - |
 
 ## Content Items
 
@@ -39,7 +39,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Barracuda](../content/barracuda-barracuda-cloudgen-firewall.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Syslog`](../tables/syslog.md) |
+| [Barracuda](../content/barracuda-barracuda-cloudgen-firewall.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Parsers
 

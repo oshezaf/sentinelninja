@@ -37,6 +37,10 @@ Requires GlobalAdmin, SecurityAdmin on the workspace's tenant
 
 **1. Connect Microsoft Purview Information Protection audit logs to Microsoft Sentinel**
 
+## Additional Information
+
+📖 **Related Documentation:** [Microsoft Purview Information Protection connector reference](https://learn.microsoft.com/azure/sentinel/microsoft-purview-record-types-activities) - Supported audit log record types and activities
+
 ---
 
 **Browse:**

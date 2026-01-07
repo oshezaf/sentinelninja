@@ -10,27 +10,25 @@
 
 This content item queries data from the following tables:
 
+- [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
+- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
 - [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
 - [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
+- [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`Correlate`](../tables/correlate.md)
-- [`IncidentNumber`](../tables/incidentnumber.md)
-- [`InitialDataSet`](../tables/initialdataset.md)
+- [`LAQueryLogs`](../tables/laquerylogs.md)
 - [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
-- [`RareAudits`](../tables/rareaudits.md)
+- [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 - [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Uncommon`](../tables/uncommon.md)
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)
 - [`W3CIISLog`](../tables/w3ciislog.md)
-- [`aadFunc`](../tables/aadfunc.md)
 - [`barracuda_CL`](../tables/barracuda-cl.md)
 - [`meraki_CL`](../tables/meraki-cl.md)
-- [`recentActivity`](../tables/recentactivity.md)
-- [`signIns`](../tables/signins.md)
 
 ---
 

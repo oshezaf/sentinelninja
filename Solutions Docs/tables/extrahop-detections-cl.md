@@ -14,18 +14,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
-
-### Analytic Rules (1)
-
-**In solution [ExtraHop](../solutions/extrahop.md):**
-- [Generate alerts based on ExtraHop detections recommended for triage](../content/cd65aebc-7e85-4cbb-9f91-ff0376c5d37d.md)
-
-### Workbooks (1)
-
-**In solution [ExtraHop](../solutions/extrahop.md):**
-- [ExtraHopDetectionsOverview](../content/extrahopdetectionsoverview-extrahop.md)
-
 ---
 
 **Browse:**

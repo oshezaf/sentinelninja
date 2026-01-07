@@ -21,11 +21,10 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **19 table(s)**:
+This solution uses **18 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`VectraStream`](../tables/vectrastream.md) | [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) | - |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) | [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) | - |
 | [`vectra_beacon_CL`](../tables/vectra-beacon-cl.md) | [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) | - |
 | [`vectra_dcerpc_CL`](../tables/vectra-dcerpc-cl.md) | [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) | - |

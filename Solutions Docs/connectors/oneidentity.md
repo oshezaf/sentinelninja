@@ -5,7 +5,7 @@
 | **Connector ID** | `OneIdentity` |
 | **Publisher** | One Identity LLC. |
 | **Used in Solutions** | [OneIdentity](../solutions/oneidentity.md) |
-| **Collection Method** | AMA |
+| **Collection Method** | MMA |
 | **Event Vendor** | OneIdentity |
 | **Event Product** | SPS |
 | **Connector Definition Files** | [OneIdentity.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneIdentity/Data%20Connectors/OneIdentity.JSON) |

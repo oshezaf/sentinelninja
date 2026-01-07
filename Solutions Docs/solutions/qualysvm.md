@@ -25,9 +25,9 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Analytics, Workbooks |
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md) | Analytics, Workbooks |
-| [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Analytics, Workbooks |
+| [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | - |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md) | - |
+| [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | - |
 
 ## Content Items
 
@@ -44,14 +44,14 @@ This solution includes **8 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [High Number of Urgent Vulnerabilities Detected](../content/3edb7215-250b-40c0-8b46-79093949242d.md) | Medium | InitialAccess | [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) |
-| [New High Severity Vulnerability Detected Across Multiple Hosts](../content/6116dc19-475a-4148-84b2-efe89c073e27.md) | Medium | InitialAccess | [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) |
+| [High Number of Urgent Vulnerabilities Detected](../content/3edb7215-250b-40c0-8b46-79093949242d.md) | Medium | InitialAccess | - |
+| [New High Severity Vulnerability Detected Across Multiple Hosts](../content/6116dc19-475a-4148-84b2-efe89c073e27.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [QualysVMv2](../content/qualysvmv2-qualysvm.md) | [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) |
+| [QualysVMv2](../content/qualysvmv2-qualysvm.md) | - |
 
 ### Playbooks
 

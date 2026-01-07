@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] ESET PROTECT](../connectors/esetprotect.md) | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] ESET PROTECT](../connectors/esetprotect.md) | - |
 
 ## Content Items
 
@@ -39,14 +39,14 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Threats detected by ESET](../content/64badfab-1dd8-4491-927b-3ca206fa9a17.md) | Low | Execution | [`Syslog`](../tables/syslog.md) |
-| [Website blocked by ESET](../content/7b84fc5b-9ffb-4e9b-945b-5d480e330b3f.md) | Low | Exfiltration, CommandAndControl, InitialAccess | [`Syslog`](../tables/syslog.md) |
+| [Threats detected by ESET](../content/64badfab-1dd8-4491-927b-3ca206fa9a17.md) | Low | Execution | - |
+| [Website blocked by ESET](../content/7b84fc5b-9ffb-4e9b-945b-5d480e330b3f.md) | Low | Exfiltration, CommandAndControl, InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ESETPROTECT](../content/esetprotect-esetprotect.md) | [`Syslog`](../tables/syslog.md) |
+| [ESETPROTECT](../content/esetprotect-esetprotect.md) | - |
 
 ### Parsers
 

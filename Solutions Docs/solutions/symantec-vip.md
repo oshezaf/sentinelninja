@@ -23,7 +23,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Symantec VIP](../connectors/symantecvip.md) | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Symantec VIP](../connectors/symantecvip.md) | - |
 
 ## Content Items
 
@@ -39,14 +39,14 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ClientDeniedAccess](../content/a9956d3a-07a9-44a6-a279-081a85020cae.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
-| [Excessive Failed Authentication from Invalid Inputs](../content/c775a46b-21b1-46d7-afa6-37e3e577a27b.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
+| [ClientDeniedAccess](../content/a9956d3a-07a9-44a6-a279-081a85020cae.md) | Medium | CredentialAccess | - |
+| [Excessive Failed Authentication from Invalid Inputs](../content/c775a46b-21b1-46d7-afa6-37e3e577a27b.md) | Medium | CredentialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SymantecVIP](../content/symantecvip-symantec-vip.md) | [`Syslog`](../tables/syslog.md) |
+| [SymantecVIP](../content/symantecvip-symantec-vip.md) | - |
 
 ### Parsers
 

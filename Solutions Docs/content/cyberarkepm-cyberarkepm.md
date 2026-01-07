@@ -6,12 +6,6 @@
 | **Solution** | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Workbooks/CyberArkEPM.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md)
-
 ---
 
 **Browse:**

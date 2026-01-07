@@ -6,14 +6,6 @@
 | **Solution** | [Dynatrace](../solutions/dynatrace.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Workbooks/Dynatrace.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md)
-- [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md)
-- [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md)
-
 ---
 
 **Browse:**

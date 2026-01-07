@@ -10,6 +10,18 @@ Reference for AADProvisioningLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadprovisioninglogs) |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [Microsoft Entra ID](../connectors/azureactivedirectory.md)
+
 ---
 
 ---

@@ -5,7 +5,7 @@
 | **Connector ID** | `Votiro` |
 | **Publisher** | Votiro |
 | **Used in Solutions** | [Votiro](../solutions/votiro.md) |
-| **Collection Method** | AMA |
+| **Collection Method** | MMA |
 | **Event Vendor** | Votiro |
 | **Event Product** | Votiro cloud |
 | **Connector Definition Files** | [VotiroEvents.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro/Data%20Connectors/VotiroEvents.json) |
