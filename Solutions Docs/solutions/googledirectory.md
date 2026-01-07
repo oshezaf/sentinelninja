@@ -26,9 +26,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Google Directory - Enrich Incident With User Info](../content/google-directory---enrich-incident-with-user-info-googledirectory.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [Google Directory - Sign Out User](../content/google-directory---sign-out-user-googledirectory.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [Google Directory - Suspend User](../content/google-directory---suspend-user-googledirectory.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Google Directory - Enrich Incident With User Info](../content/googledirectory-google-directory---enrich-incident-with-user-info.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Google Directory - Sign Out User](../content/googledirectory-google-directory---sign-out-user.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Google Directory - Suspend User](../content/googledirectory-google-directory---suspend-user.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 
 ---
 

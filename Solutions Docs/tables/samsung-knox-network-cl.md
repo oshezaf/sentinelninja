@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
-- [SamsungKnoxAssetIntelligence](../content/samsungknoxassetintelligence-samsung-knox-asset-intelligence.md)
+- [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence.md)
 
 ---
 

@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Valence Security Alerts](../content/d944d564-b6fa-470d-b5ab-a1a141878c5e.md) | High | - | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
+| [Valence Security Alerts](../content/valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e.md) | High | - | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ValenceAlertsWorkbook](../content/valencealertsworkbook-valence-security.md) | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
+| [ValenceAlertsWorkbook](../content/valence-security-valencealertsworkbook.md) | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
 
 ## Release Notes
 

@@ -41,13 +41,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [NetskopeEvents](../content/netskopeevents-netskope.md) | [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md)<br>[`Netskope_Events_CL`](../tables/netskope-events-cl.md)<br>[`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) |
+| [NetskopeEvents](../content/netskope-netskopeevents.md) | [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md)<br>[`Netskope_Events_CL`](../tables/netskope-events-cl.md)<br>[`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Netskope](../content/9b3be3d9-99e1-43fa-8d82-3e90f8df7f42.md) | - | - |
+| [Netskope](../content/netskope-netskope-9b3be3d9-99e1-43fa-8d82-3e90f8df7f42.md) | - | - |
 
 ---
 

@@ -31,17 +31,17 @@ This table is ingested by the following connectors:
 ### Analytic Rules (4)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
-- [AWS Guard Duty Alert](../content/bf0cde21-0c41-48f6-a40c-6b5bd71fa106.md)
+- [AWS Guard Duty Alert](../content/amazon-web-services-aws-guard-duty-alert-bf0cde21-0c41-48f6-a40c-6b5bd71fa106.md)
 
 **In solution [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials---resource-abuse.md):**
-- [Cross-Cloud Suspicious Compute resource creation in GCP](../content/5c847e47-0a07-4c01-ab99-5817ad6cb11e.md)
-- [Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login](../content/122fbc6a-57ab-4aa7-b9a9-51ac4970cac1.md)
-- [Unauthorized user access across AWS and Azure](../content/60f31001-018a-42bf-8045-a92e1f361b7b.md)
+- [Cross-Cloud Suspicious Compute resource creation in GCP](../content/multi-cloud-attack-coverage-essentials---resource-abuse-cross-cloud-suspicious-compute-resource-creation-in-gcp-5c847e47-0a07-4c01-ab99-5817ad6cb11e.md)
+- [Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login](../content/multi-cloud-attack-coverage-essentials---resource-abuse-cross-cloud-unauthorized-credential-access-detection-from-aws-rds-login-122fbc6a-57ab-4aa7-b9a9-51ac4970cac1.md)
+- [Unauthorized user access across AWS and Azure](../content/multi-cloud-attack-coverage-essentials---resource-abuse-unauthorized-user-access-across-aws-and-azure-60f31001-018a-42bf-8045-a92e1f361b7b.md)
 
 ### Workbooks (1)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagement-m2131-maturitymodelforeventlogmanagementm2131.md)
+- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131.md)
 
 ---
 

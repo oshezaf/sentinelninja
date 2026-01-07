@@ -48,19 +48,19 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Generate alerts based on ExtraHop detections recommended for triage](../content/cd65aebc-7e85-4cbb-9f91-ff0376c5d37d.md) | Medium | Persistence | - |
+| [Generate alerts based on ExtraHop detections recommended for triage](../content/extrahop-generate-alerts-based-on-extrahop-detections-recommended-for-triage-cd65aebc-7e85-4cbb-9f91-ff0376c5d37d.md) | Medium | Persistence | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ExtraHopDetectionsOverview](../content/extrahopdetectionsoverview-extrahop.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExtraHopDetections](../content/a4fddd3e-9993-4c86-b5e8-8e36d8ce1197.md) | - | - |
+| [ExtraHopDetections](../content/extrahop-extrahopdetections-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197.md) | - | - |
 
 ## Release Notes
 

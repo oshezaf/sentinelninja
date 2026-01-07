@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Forcepoint DLP](../solutions/forcepoint-dlp.md):**
-- [ForcepointDLP](../content/forcepointdlp-forcepoint-dlp.md)
+- [ForcepointDLP](../content/forcepoint-dlp-forcepointdlp.md)
 
 ---
 

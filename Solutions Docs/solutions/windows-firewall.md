@@ -42,7 +42,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WindowsFirewall](../content/windowsfirewall-windows-firewall.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md) |
+| [WindowsFirewall](../content/windows-firewall-windowsfirewall.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md) |
 
 ## Release Notes
 

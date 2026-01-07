@@ -38,10 +38,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Caramel Tsunami Actor IOC - July 2021](../content/066395ac-ef91-4993-8bf6-25c61ab0ca5a.md) | High | Persistence | [`WindowsEvent`](../tables/windowsevent.md) |
-| [Chia_Crypto_Mining IOC - June 2021](../content/4d173248-439b-4741-8b37-f63ad0c896ae.md) | Low | Impact | [`WindowsEvent`](../tables/windowsevent.md) |
-| [Progress MOVEIt File transfer above threshold](../content/9bd18b63-f1ca-4375-95db-39fda00bfe20.md) | Medium | Exfiltration | [`Event`](../tables/event.md) |
-| [Progress MOVEIt File transfer folder count above threshold](../content/26a993ca-0a96-45a0-8405-05a210fb98f8.md) | Medium | Exfiltration | [`Event`](../tables/event.md) |
+| [Caramel Tsunami Actor IOC - July 2021](../content/windows-forwarded-events-caramel-tsunami-actor-ioc---july-2021-066395ac-ef91-4993-8bf6-25c61ab0ca5a.md) | High | Persistence | [`WindowsEvent`](../tables/windowsevent.md) |
+| [Chia_Crypto_Mining IOC - June 2021](../content/windows-forwarded-events-chia-crypto-mining-ioc---june-2021-4d173248-439b-4741-8b37-f63ad0c896ae.md) | Low | Impact | [`WindowsEvent`](../tables/windowsevent.md) |
+| [Progress MOVEIt File transfer above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-above-threshold-9bd18b63-f1ca-4375-95db-39fda00bfe20.md) | Medium | Exfiltration | [`Event`](../tables/event.md) |
+| [Progress MOVEIt File transfer folder count above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-folder-count-above-threshold-26a993ca-0a96-45a0-8405-05a210fb98f8.md) | Medium | Exfiltration | [`Event`](../tables/event.md) |
 
 ## Release Notes
 

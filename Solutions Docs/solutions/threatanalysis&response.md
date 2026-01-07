@@ -49,7 +49,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DynamicThreatModeling&Response](../content/dynamicthreatmodeling&response-threatanalysis&response.md) | [`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response.md) | [`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [ThreatAnalysis&Response](../content/threatanalysis&response-threatanalysis&response.md) | [`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ## Additional Documentation

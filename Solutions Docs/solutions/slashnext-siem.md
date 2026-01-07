@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SlashNext Security Events for Microsoft Sentinel - Get customer incidents and log](../content/slashnext-security-events-for-microsoft-sentinel---get-customer-incidents-and-log-slashnext-siem.md) | The playbook will run after every 3 mintues to get list of events occured to a customer in that time... | [`SlashNext_CL`](../tables/slashnext-cl.md) *(write)* |
+| [SlashNext Security Events for Microsoft Sentinel - Get customer incidents and log](../content/slashnext-siem-slashnext-security-events-for-microsoft-sentinel---get-customer-incidents-and-log.md) | The playbook will run after every 3 mintues to get list of events occured to a customer in that time... | [`SlashNext_CL`](../tables/slashnext-cl.md) *(write)* |
 
 ## Release Notes
 

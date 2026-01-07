@@ -66,21 +66,21 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ZeroTrust(TIC3.0) Control Assessment Posture Change](../content/4942992d-a4d3-44b0-9cf4-b5a23811d82d.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
+| [ZeroTrust(TIC3.0) Control Assessment Posture Change](../content/zerotrust%28tic3.0%29-zerotrust%28tic3.0%29-control-assessment-posture-change-4942992d-a4d3-44b0-9cf4-b5a23811d82d.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZeroTrustTIC3](../content/zerotrusttic3-zerotrust%28tic3.0%29.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`DeviceRegistryEvents`](../tables/deviceregistryevents.md)<br>[`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Usage`](../tables/usage.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [ZeroTrustTIC3](../content/zerotrust%28tic3.0%29-zerotrusttic3.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`DeviceRegistryEvents`](../tables/deviceregistryevents.md)<br>[`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Usage`](../tables/usage.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Jira Issue](../content/create-jira-issue-zerotrust%28tic3.0%29.md) | This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel. | - |
-| [Create-AzureDevOpsTask](../content/create-azuredevopstask-zerotrust%28tic3.0%29.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
-| [Notify-GovernanceComplianceTeam](../content/notify-governancecomplianceteam-zerotrust%28tic3.0%29.md) | This Security Orchestration, Automation, & Response (SOAR) capability is designed for configuration ... | - |
+| [Create Jira Issue](../content/zerotrust%28tic3.0%29-create-jira-issue.md) | This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel. | - |
+| [Create-AzureDevOpsTask](../content/zerotrust%28tic3.0%29-create-azuredevopstask.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
+| [Notify-GovernanceComplianceTeam](../content/zerotrust%28tic3.0%29-notify-governancecomplianceteam.md) | This Security Orchestration, Automation, & Response (SOAR) capability is designed for configuration ... | - |
 
 ## Additional Documentation
 

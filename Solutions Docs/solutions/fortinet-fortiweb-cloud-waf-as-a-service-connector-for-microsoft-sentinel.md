@@ -42,33 +42,33 @@ This solution includes **7 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Fortiweb - WAF Allowed threat](../content/86e9409f-b9ea-4e9a-8b72-5132ba43bcae.md) | High | InitialAccess | - |
+| [Fortiweb - WAF Allowed threat](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb---waf-allowed-threat-86e9409f-b9ea-4e9a-8b72-5132ba43bcae.md) | High | InitialAccess | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Fortiweb - Unexpected countries](../content/9fc7d945-0e82-4664-aca0-dc121a7rt5nt.md) | InitialAccess | - |
-| [Fortiweb - identify owasp10 vulnerabilities](../content/3rg4d567-0e82-4664-aca0-dc121a7th3ht.md) | InitialAccess | - |
+| [Fortiweb - Unexpected countries](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb---unexpected-countries-9fc7d945-0e82-4664-aca0-dc121a7rt5nt.md) | InitialAccess | - |
+| [Fortiweb - identify owasp10 vulnerabilities](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb---identify-owasp10-vulnerabilities-3rg4d567-0e82-4664-aca0-dc121a7th3ht.md) | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Fortiweb-workbook](../content/fortiweb-workbook-fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) | - |
+| [Fortiweb-workbook](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-workbook.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Block IP & URL on fortiweb cloud](../content/block-ip-&-url-on-fortiweb-cloud-fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) | This Playbook Provides the automation on blocking the suspicious/malicious IP and URL on fortiweb cl... | - |
-| [Fetch Threat Intel from fortiwebcloud](../content/fetch-threat-intel-from-fortiwebcloud-fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) | This playbook provides/updates the threat intel and essential details in comments section of trigger... | - |
+| [Block IP & URL on fortiweb cloud](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-block-ip-&-url-on-fortiweb-cloud.md) | This Playbook Provides the automation on blocking the suspicious/malicious IP and URL on fortiweb cl... | - |
+| [Fetch Threat Intel from fortiwebcloud](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fetch-threat-intel-from-fortiwebcloud.md) | This playbook provides/updates the threat intel and essential details in comments section of trigger... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Fortiweb](../content/b24da091-25e9-40ee-a6da-091eef3517e8.md) | - | - |
+| [Fortiweb](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-b24da091-25e9-40ee-a6da-091eef3517e8.md) | - | - |
 
 ## Release Notes
 

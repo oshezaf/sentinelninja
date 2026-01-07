@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [SAP ETD Cloud](../solutions/sap-etd-cloud.md):**
-- [SAP ETD - Synch investigations](../content/5096db53-fad3-4844-a264-246f7b7e6e06.md)
+- [SAP ETD - Synch investigations](../content/sap-etd-cloud-sap-etd---synch-investigations-5096db53-fad3-4844-a264-246f7b7e6e06.md)
 
 ---
 

@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Anvilogic](../solutions/anvilogic.md):**
-- [Anvilogic Alert](../content/6ccc187a-42ee-4635-8bcc-3b299f8570df.md)
+- [Anvilogic Alert](../content/anvilogic-anvilogic-alert-6ccc187a-42ee-4635-8bcc-3b299f8570df.md)
 
 ---
 

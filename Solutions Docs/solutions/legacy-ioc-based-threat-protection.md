@@ -47,16 +47,16 @@ This solution includes **10 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Connection from external IP to OMI related Ports](../content/767b8f6d-8029-4c92-afe1-282167d9d49a.md) | Reconnaissance, InitialAccess | - |
-| [Dev-0056 Command Line Activity November 2021](../content/e2629949-2043-4421-8064-bca23c8491dd.md) | CommandAndControl | - |
-| [Dev-0322 Command Line Activity November 2021](../content/78fa22f9-0c13-4847-bbe6-6a7aa1b47547.md) | Persistence, LateralMovement, CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
-| [Dev-0322 Command Line Activity November 2021 (ASIM Version)](../content/6bfea14f-2122-46b3-8f8b-3947e0fb6d92.md) | Persistence, LateralMovement, CommandAndControl | - |
-| [Dev-0322 File Drop Activity November 2021](../content/5bf2d4d8-ea03-4673-aaf8-716a61446022.md) | Persistence, CommandAndControl | [`DeviceFileEvents`](../tables/devicefileevents.md) |
-| [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/9b72769e-6ab1-4736-988b-018d92dc5e62.md) | Persistence, CommandAndControl | - |
-| [Known Nylon Typhoon Registry modifications patterns](../content/f090f8f4a-b986-42d2-b536-e0795c723e25.md) | Persistence | [`SecurityEvent`](../tables/securityevent.md) |
-| [Nylon Typhoon Command Line Activity November 2021](../content/bb30abbc-9af6-4a37-9536-e9207e023989.md) | Collection | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Retrospective hunt for Forest Blizzard IP IOCs](../content/b8b7574f-1cd6-4308-822a-ab07256106f8.md) | CommandAndControl | - |
-| [SolarWinds Inventory](../content/278592b5-612b-48a4-bb38-4c01ff8ee2a5.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
+| [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a.md) | Reconnaissance, InitialAccess | - |
+| [Dev-0056 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0056-command-line-activity-november-2021-e2629949-2043-4421-8064-bca23c8491dd.md) | CommandAndControl | - |
+| [Dev-0322 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-78fa22f9-0c13-4847-bbe6-6a7aa1b47547.md) | Persistence, LateralMovement, CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
+| [Dev-0322 Command Line Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-%28asim-version%29-6bfea14f-2122-46b3-8f8b-3947e0fb6d92.md) | Persistence, LateralMovement, CommandAndControl | - |
+| [Dev-0322 File Drop Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022.md) | Persistence, CommandAndControl | [`DeviceFileEvents`](../tables/devicefileevents.md) |
+| [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-%28asim-version%29-9b72769e-6ab1-4736-988b-018d92dc5e62.md) | Persistence, CommandAndControl | - |
+| [Known Nylon Typhoon Registry modifications patterns](../content/legacy-ioc-based-threat-protection-known-nylon-typhoon-registry-modifications-patterns-f090f8f4a-b986-42d2-b536-e0795c723e25.md) | Persistence | [`SecurityEvent`](../tables/securityevent.md) |
+| [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989.md) | Collection | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Retrospective hunt for Forest Blizzard IP IOCs](../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8.md) | CommandAndControl | - |
+| [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 
 ## Release Notes
 

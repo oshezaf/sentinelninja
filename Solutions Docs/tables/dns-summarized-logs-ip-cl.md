@@ -19,20 +19,20 @@ This table is used by the following solutions:
 ### Analytic Rules (3)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
-- [Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)](../content/cf687598-5a2c-46f8-81c8-06b15ed489b1.md)
-- [Detect excessive NXDOMAIN DNS queries - Anomaly based (ASIM DNS Solution)](../content/02f23312-1a33-4390-8b80-f7cd4df4dea0.md)
-- [Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Anomaly based (ASIM DNS Solution)](../content/01191239-274e-43c9-b154-3a042692af06.md)
+- [Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)](../content/dns-essentials-detect-dns-queries-reporting-multiple-errors-from-different-clients---anomaly-based-%28asim-dns-solution%29-cf687598-5a2c-46f8-81c8-06b15ed489b1.md)
+- [Detect excessive NXDOMAIN DNS queries - Anomaly based (ASIM DNS Solution)](../content/dns-essentials-detect-excessive-nxdomain-dns-queries---anomaly-based-%28asim-dns-solution%29-02f23312-1a33-4390-8b80-f7cd4df4dea0.md)
+- [Potential DGA(Domain Generation Algorithm) detected via Repetitive Failures - Anomaly based (ASIM DNS Solution)](../content/dns-essentials-potential-dga%28domain-generation-algorithm%29-detected-via-repetitive-failures---anomaly-based-%28asim-dns-solution%29-01191239-274e-43c9-b154-3a042692af06.md)
 
 ### Hunting Queries (2)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
-- [Connection to Unpopular Website Detected (ASIM DNS Solution)](../content/83e70a34-d96f-419d-815b-43d1499e88ed.md)
-- [[Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)](../content/50f0cdfb-8b01-4eca-823d-2bbe6b8a5b95.md)
+- [Connection to Unpopular Website Detected (ASIM DNS Solution)](../content/dns-essentials-connection-to-unpopular-website-detected-%28asim-dns-solution%29-83e70a34-d96f-419d-815b-43d1499e88ed.md)
+- [[Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)](../content/dns-essentials-[anomaly]-anomalous-increase-in-dns-activity-by-clients-%28asim-dns-solution%29-50f0cdfb-8b01-4eca-823d-2bbe6b8a5b95.md)
 
 ### Workbooks (1)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
-- [DNSSolutionWorkbook](../content/dnssolutionworkbook-dns-essentials.md)
+- [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook.md)
 
 ---
 

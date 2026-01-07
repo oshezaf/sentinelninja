@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AIA-Darktrace](../content/aia-darktrace-ai-analyst-darktrace.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [AIA-Darktrace](../content/ai-analyst-darktrace-aia-darktrace.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

@@ -41,23 +41,23 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [GitLab - Abnormal number of repositories deleted](../content/3efd09bd-a582-4410-b7ec-5ff21cfad7bd.md) | Medium | Impact | - |
-| [GitLab - Brute-force Attempts](../content/2238d13a-cf05-4973-a83f-d12a25dbb153.md) | Medium | CredentialAccess | - |
-| [GitLab - External User Added to GitLab](../content/c1544d8f-cbbd-4e35-8d32-5b9312279833.md) | Medium | Persistence | - |
-| [GitLab - Local Auth - No MFA](../content/e0b45487-5c79-482d-8ac0-695de8c031af.md) | Medium | CredentialAccess | - |
-| [GitLab - Personal Access Tokens creation over time](../content/4d6d8b0e-6d9a-4857-a141-f5d89393cddb.md) | Medium | Collection | - |
-| [GitLab - Repository visibility to Public](../content/8b291c3d-90ba-4ebf-af2c-0283192d430e.md) | Medium | Persistence, DefenseEvasion, CredentialAccess | - |
-| [GitLab - SSO - Sign-Ins Burst](../content/57b1634b-531d-4eab-a456-8b855887428f.md) | Medium | CredentialAccess | [`SigninLogs`](../tables/signinlogs.md) |
-| [GitLab - TI - Connection from Malicious IP](../content/7241740a-5280-4b74-820a-862312d721a8.md) | Medium | InitialAccess | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [GitLab - User Impersonation](../content/0f4f16a2-b464-4c10-9a42-993da3e15a40.md) | Medium | Persistence | - |
+| [GitLab - Abnormal number of repositories deleted](../content/gitlab-gitlab---abnormal-number-of-repositories-deleted-3efd09bd-a582-4410-b7ec-5ff21cfad7bd.md) | Medium | Impact | - |
+| [GitLab - Brute-force Attempts](../content/gitlab-gitlab---brute-force-attempts-2238d13a-cf05-4973-a83f-d12a25dbb153.md) | Medium | CredentialAccess | - |
+| [GitLab - External User Added to GitLab](../content/gitlab-gitlab---external-user-added-to-gitlab-c1544d8f-cbbd-4e35-8d32-5b9312279833.md) | Medium | Persistence | - |
+| [GitLab - Local Auth - No MFA](../content/gitlab-gitlab---local-auth---no-mfa-e0b45487-5c79-482d-8ac0-695de8c031af.md) | Medium | CredentialAccess | - |
+| [GitLab - Personal Access Tokens creation over time](../content/gitlab-gitlab---personal-access-tokens-creation-over-time-4d6d8b0e-6d9a-4857-a141-f5d89393cddb.md) | Medium | Collection | - |
+| [GitLab - Repository visibility to Public](../content/gitlab-gitlab---repository-visibility-to-public-8b291c3d-90ba-4ebf-af2c-0283192d430e.md) | Medium | Persistence, DefenseEvasion, CredentialAccess | - |
+| [GitLab - SSO - Sign-Ins Burst](../content/gitlab-gitlab---sso---sign-ins-burst-57b1634b-531d-4eab-a456-8b855887428f.md) | Medium | CredentialAccess | [`SigninLogs`](../tables/signinlogs.md) |
+| [GitLab - TI - Connection from Malicious IP](../content/gitlab-gitlab---ti---connection-from-malicious-ip-7241740a-5280-4b74-820a-862312d721a8.md) | Medium | InitialAccess | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [GitLab - User Impersonation](../content/gitlab-gitlab---user-impersonation-0f4f16a2-b464-4c10-9a42-993da3e15a40.md) | Medium | Persistence | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GitLabAccess](../content/4ddd33c3-87a5-430f-9241-3736853aa5fb.md) | - | - |
-| [GitLabApp](../content/ccc66347-5850-4549-aa31-c621499d26d8.md) | - | - |
-| [GitLabAudit](../content/a0ea016a-471a-4e49-a938-fecc9180d148.md) | - | - |
+| [GitLabAccess](../content/gitlab-gitlabaccess-4ddd33c3-87a5-430f-9241-3736853aa5fb.md) | - | - |
+| [GitLabApp](../content/gitlab-gitlabapp-ccc66347-5850-4549-aa31-c621499d26d8.md) | - | - |
+| [GitLabAudit](../content/gitlab-gitlabaudit-a0ea016a-471a-4e49-a938-fecc9180d148.md) | - | - |
 
 ## Release Notes
 

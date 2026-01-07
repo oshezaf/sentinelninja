@@ -38,14 +38,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [DDoS Attack IP Addresses - PPS Threshold](../content/6e76fd9d-8104-41eb-bad3-26054a3ad5f0.md) | Medium | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [DDoS Attack IP Addresses - Percent Threshold](../content/402a42ad-f31c-48d1-8f80-0200846b7f25.md) | Medium | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [DDoS Attack IP Addresses - PPS Threshold](../content/azure-ddos-protection-ddos-attack-ip-addresses---pps-threshold-6e76fd9d-8104-41eb-bad3-26054a3ad5f0.md) | Medium | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [DDoS Attack IP Addresses - Percent Threshold](../content/azure-ddos-protection-ddos-attack-ip-addresses---percent-threshold-402a42ad-f31c-48d1-8f80-0200846b7f25.md) | Medium | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzDDoSStandardWorkbook](../content/azddosstandardworkbook-azure-ddos-protection.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [AzDDoSStandardWorkbook](../content/azure-ddos-protection-azddosstandardworkbook.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 
 ---
 

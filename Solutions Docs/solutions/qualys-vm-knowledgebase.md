@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [QualysKB](../content/d2cf5018-d863-4bc5-90f9-5c6ccde08e7d.md) | - | - |
+| [QualysKB](../content/qualys-vm-knowledgebase-qualyskb-d2cf5018-d863-4bc5-90f9-5c6ccde08e7d.md) | - | - |
 
 ## Release Notes
 

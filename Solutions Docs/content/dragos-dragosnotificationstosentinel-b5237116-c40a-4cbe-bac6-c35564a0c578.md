@@ -1,0 +1,19 @@
+# DragosNotificationsToSentinel
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Parser |
+| **Solution** | [Dragos](../solutions/dragos.md) |
+| **ID** | `b5237116-c40a-4cbe-bac6-c35564a0c578` |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos/Parsers/DragosNotificationsToSentinel.yaml) |
+
+---
+
+**Browse:**
+
+- [← Back to Parsers](parsers.md)
+- [← Back to Dragos](../solutions/dragos.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

@@ -40,21 +40,21 @@ This solution includes **5 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Cybersixgill Actionable alerts](../content/532133dd-a8ed-4062-bf0d-f04dc97bb71a.md) | - | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
+| [Cybersixgill Actionable alerts](../content/cybersixgill-actionable-alerts-cybersixgill-actionable-alerts-532133dd-a8ed-4062-bf0d-f04dc97bb71a.md) | - | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ActionableAlertsDashboard](../content/actionablealertsdashboard-cybersixgill-actionable-alerts.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
-| [ActionableAlertsList](../content/actionablealertslist-cybersixgill-actionable-alerts.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
+| [ActionableAlertsDashboard](../content/cybersixgill-actionable-alerts-actionablealertsdashboard.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
+| [ActionableAlertsList](../content/cybersixgill-actionable-alerts-actionablealertslist.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Cybersixgill-Alert-Status-Update](../content/cybersixgill-alert-status-update-cybersixgill-actionable-alerts.md) | This playbook will update status of Cybersixgill Alerts when respective incident status is updated i... | - |
-| [Delete-Cybersixgill-Alert](../content/delete-cybersixgill-alert-cybersixgill-actionable-alerts.md) | This playbook will delete Alert on Cybersixgill portal when resective Incident is deleted in Microso... | - |
+| [Cybersixgill-Alert-Status-Update](../content/cybersixgill-actionable-alerts-cybersixgill-alert-status-update.md) | This playbook will update status of Cybersixgill Alerts when respective incident status is updated i... | - |
+| [Delete-Cybersixgill-Alert](../content/cybersixgill-actionable-alerts-delete-cybersixgill-alert.md) | This playbook will delete Alert on Cybersixgill portal when resective Incident is deleted in Microso... | - |
 
 ## Release Notes
 

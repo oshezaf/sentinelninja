@@ -38,15 +38,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Awake Security - High Match Counts By Device](../content/90b7ac11-dd6c-4ba1-a99b-737061873859.md) | Medium | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Awake Security - High Severity Matches By Device](../content/d5e012c2-29ba-4a02-a813-37b928aafe2d.md) | Medium | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Awake Security - Model With Multiple Destinations](../content/dfa3ec92-bdae-410f-b675-fe1814e4d43e.md) | Medium | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Awake Security - High Match Counts By Device](../content/aristaawakesecurity-awake-security---high-match-counts-by-device-90b7ac11-dd6c-4ba1-a99b-737061873859.md) | Medium | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Awake Security - High Severity Matches By Device](../content/aristaawakesecurity-awake-security---high-severity-matches-by-device-d5e012c2-29ba-4a02-a813-37b928aafe2d.md) | Medium | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Awake Security - Model With Multiple Destinations](../content/aristaawakesecurity-awake-security---model-with-multiple-destinations-dfa3ec92-bdae-410f-b675-fe1814e4d43e.md) | Medium | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AristaAwakeSecurityWorkbook](../content/aristaawakesecurityworkbook-aristaawakesecurity.md) | - |
+| [AristaAwakeSecurityWorkbook](../content/aristaawakesecurity-aristaawakesecurityworkbook.md) | - |
 
 ## Release Notes
 

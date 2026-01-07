@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Gigamon Connector](../solutions/gigamon-connector.md):**
-- [Gigamon](../content/gigamon-gigamon-connector.md)
+- [Gigamon](../content/gigamon-connector-gigamon.md)
 
 ---
 

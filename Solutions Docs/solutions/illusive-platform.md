@@ -39,14 +39,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Illusive Incidents Analytic Rule](../content/1a7dbcf6-21a2-4255-84b2-c8dbbdca4630.md) | Medium | Persistence, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Illusive Incidents Analytic Rule](../content/illusive-platform-illusive-incidents-analytic-rule-1a7dbcf6-21a2-4255-84b2-c8dbbdca4630.md) | Medium | Persistence, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IllusiveADS](../content/illusiveads-illusive-platform.md) | - |
-| [IllusiveASM](../content/illusiveasm-illusive-platform.md) | - |
+| [IllusiveADS](../content/illusive-platform-illusiveads.md) | - |
+| [IllusiveASM](../content/illusive-platform-illusiveasm.md) | - |
 
 ## Release Notes
 

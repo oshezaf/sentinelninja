@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Workplace_Facebook](../content/77fb2f63-7160-426b-8842-67520c4eddfd.md) | - | - |
+| [Workplace_Facebook](../content/workplace-from-facebook-workplace-facebook-77fb2f63-7160-426b-8842-67520c4eddfd.md) | - | - |
 
 ## Release Notes
 

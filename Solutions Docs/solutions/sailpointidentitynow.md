@@ -37,12 +37,12 @@ This solution includes **6 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SailPointIdentityNowAlertForTriggers](../content/08330c3d-487e-4f5e-a539-1e7d06dea786.md) | Informational | InitialAccess, Collection | [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) |
-| [SailPointIdentityNowEventType](../content/48bb92e2-bad4-4fd4-9684-26cb188299b7.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
-| [SailPointIdentityNowEventTypeTechnicalName](../content/2151e8ea-4838-4c74-be12-4d6a950dde7a.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
-| [SailPointIdentityNowFailedEvents](../content/c3835197-fd07-447e-a0ac-7540d51a1f64.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
-| [SailPointIdentityNowFailedEventsBasedOnTime](../content/175b79ef-0fc3-4b27-b92a-89b2db6c85c2.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
-| [SailPointIdentityNowUserWithFailedEvent](../content/2a215222-bfc5-4858-a530-6d4088ebfa15.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
+| [SailPointIdentityNowAlertForTriggers](../content/sailpointidentitynow-sailpointidentitynowalertfortriggers-08330c3d-487e-4f5e-a539-1e7d06dea786.md) | Informational | InitialAccess, Collection | [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) |
+| [SailPointIdentityNowEventType](../content/sailpointidentitynow-sailpointidentitynoweventtype-48bb92e2-bad4-4fd4-9684-26cb188299b7.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
+| [SailPointIdentityNowEventTypeTechnicalName](../content/sailpointidentitynow-sailpointidentitynoweventtypetechnicalname-2151e8ea-4838-4c74-be12-4d6a950dde7a.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
+| [SailPointIdentityNowFailedEvents](../content/sailpointidentitynow-sailpointidentitynowfailedevents-c3835197-fd07-447e-a0ac-7540d51a1f64.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
+| [SailPointIdentityNowFailedEventsBasedOnTime](../content/sailpointidentitynow-sailpointidentitynowfailedeventsbasedontime-175b79ef-0fc3-4b27-b92a-89b2db6c85c2.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
+| [SailPointIdentityNowUserWithFailedEvent](../content/sailpointidentitynow-sailpointidentitynowuserwithfailedevent-2a215222-bfc5-4858-a530-6d4088ebfa15.md) | High | InitialAccess | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) |
 
 ## Release Notes
 

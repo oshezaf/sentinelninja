@@ -37,9 +37,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [AV detections related to Zinc actors](../content/3705158d-e008-49c9-92dd-e538e1549090.md) | High | Impact | [`DeviceInfo`](../tables/deviceinfo.md) |
-| [Zinc Actor IOCs files - October 2022](../content/9a7f6651-801b-491c-a548-8b454b356eaa.md) | High | Persistence | - |
-| [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/95543d6d-f00d-4193-a63f-4edeefb7ec36.md) | High | Persistence | - |
+| [AV detections related to Zinc actors](../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090.md) | High | Impact | [`DeviceInfo`](../tables/deviceinfo.md) |
+| [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files---october-2022-9a7f6651-801b-491c-a548-8b454b356eaa.md) | High | Persistence | - |
+| [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]---zinc-actor-iocs-domains-hashes-ips-and-useragent---october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36.md) | High | Persistence | - |
 
 ## Release Notes
 

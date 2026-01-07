@@ -19,7 +19,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
-- [RecordedFutureThreatActorHunting](../content/recordedfuturethreatactorhunting-recorded-future.md)
+- [RecordedFutureThreatActorHunting](../content/recorded-future-recordedfuturethreatactorhunting.md)
 
 ---
 

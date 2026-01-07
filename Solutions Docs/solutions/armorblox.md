@@ -39,19 +39,19 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Armorblox Needs Review Alert](../content/322d4765-be6b-4868-9e3f-138a4f339dd6.md) | Medium | - | [`Armorblox_CL`](../tables/armorblox-cl.md) |
+| [Armorblox Needs Review Alert](../content/armorblox-armorblox-needs-review-alert-322d4765-be6b-4868-9e3f-138a4f339dd6.md) | Medium | - | [`Armorblox_CL`](../tables/armorblox-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ArmorbloxOverview](../content/armorbloxoverview-armorblox.md) | [`Armorblox_CL`](../tables/armorblox-cl.md) |
+| [ArmorbloxOverview](../content/armorblox-armorbloxoverview.md) | [`Armorblox_CL`](../tables/armorblox-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Needs-Review-Incident-Email-Notification](../content/needs-review-incident-email-notification-armorblox.md) | This playbook will send an email notification when a new incident is created in Microsoft Sentinel. | - |
+| [Needs-Review-Incident-Email-Notification](../content/armorblox-needs-review-incident-email-notification.md) | This playbook will send an email notification when a new incident is created in Microsoft Sentinel. | - |
 
 ## Release Notes
 

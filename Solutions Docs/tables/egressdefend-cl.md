@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Hunting Queries (1)
 
 **In solution [Egress Defend](../solutions/egress-defend.md):**
-- [Dangerous emails with links clicked](../content/57ada8d5-7a26-4440-97fd-32c5c3fd0421.md)
+- [Dangerous emails with links clicked](../content/egress-defend-dangerous-emails-with-links-clicked-57ada8d5-7a26-4440-97fd-32c5c3fd0421.md)
 
 ---
 

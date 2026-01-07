@@ -45,36 +45,36 @@ This solution includes **15 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Illumio Enforcement Change Analytic Rule](../content/599fdc92-eb6d-4b54-8d79-2a3f740a846a.md) | Medium | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
-| [Illumio Firewall Tampering Analytic Rule](../content/e9e4e466-3970-4165-bc8d-7721c6ef34a6.md) | Medium | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
-| [Illumio VEN Clone Detection Rule](../content/b3c4b8f4-c12c-471e-9999-023c05852276.md) | High | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
-| [Illumio VEN Deactivated Detection Rule](../content/c18bd8c2-50f0-4aa2-8122-d449243627d7.md) | High | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
-| [Illumio VEN Offline Detection Rule](../content/ec07fcd3-724f-426d-9f53-041801ca5f6c.md) | High | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
-| [Illumio VEN Suspend Detection Rule](../content/7379f752-18a2-43ca-8b74-70747dd792f8.md) | High | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
+| [Illumio Enforcement Change Analytic Rule](../content/illumiosaas-illumio-enforcement-change-analytic-rule-599fdc92-eb6d-4b54-8d79-2a3f740a846a.md) | Medium | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
+| [Illumio Firewall Tampering Analytic Rule](../content/illumiosaas-illumio-firewall-tampering-analytic-rule-e9e4e466-3970-4165-bc8d-7721c6ef34a6.md) | Medium | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
+| [Illumio VEN Clone Detection Rule](../content/illumiosaas-illumio-ven-clone-detection-rule-b3c4b8f4-c12c-471e-9999-023c05852276.md) | High | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
+| [Illumio VEN Deactivated Detection Rule](../content/illumiosaas-illumio-ven-deactivated-detection-rule-c18bd8c2-50f0-4aa2-8122-d449243627d7.md) | High | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
+| [Illumio VEN Offline Detection Rule](../content/illumiosaas-illumio-ven-offline-detection-rule-ec07fcd3-724f-426d-9f53-041801ca5f6c.md) | High | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
+| [Illumio VEN Suspend Detection Rule](../content/illumiosaas-illumio-ven-suspend-detection-rule-7379f752-18a2-43ca-8b74-70747dd792f8.md) | High | DefenseEvasion | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IllumioAuditableEvents](../content/illumioauditableevents-illumiosaas.md) | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
-| [IllumioFlowData](../content/illumioflowdata-illumiosaas.md) | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) |
-| [IllumioOnPremHealth](../content/illumioonpremhealth-illumiosaas.md) | [`Syslog`](../tables/syslog.md) |
-| [IllumioWorkloadsStats](../content/illumioworkloadsstats-illumiosaas.md) | [`Illumio_Workloads_Summarized_API_CL`](../tables/illumio-workloads-summarized-api-cl.md) |
+| [IllumioAuditableEvents](../content/illumiosaas-illumioauditableevents.md) | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |
+| [IllumioFlowData](../content/illumiosaas-illumioflowdata.md) | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) |
+| [IllumioOnPremHealth](../content/illumiosaas-illumioonpremhealth.md) | [`Syslog`](../tables/syslog.md) |
+| [IllumioWorkloadsStats](../content/illumiosaas-illumioworkloadsstats.md) | [`Illumio_Workloads_Summarized_API_CL`](../tables/illumio-workloads-summarized-api-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Illumio Containment Switch Playbook](../content/illumio-containment-switch-playbook-illumiosaas.md) | This playbook leverages Illumio workloads API to contain and isolate a workload based on user inputs... | - |
-| [Illumio Get Ven Details Playbook](../content/illumio-get-ven-details-playbook-illumiosaas.md) | This playbook leverages Illumio workloads API to enrich IP, Hostname and Labels, found in Microsoft ... | - |
-| [Illumio Workload Quarantine Playbook](../content/illumio-workload-quarantine-playbook-illumiosaas.md) | This playbook leverages Illumio workloads API to quarantine a workload based on user inputs. <img sr... | - |
+| [Illumio Containment Switch Playbook](../content/illumiosaas-illumio-containment-switch-playbook.md) | This playbook leverages Illumio workloads API to contain and isolate a workload based on user inputs... | - |
+| [Illumio Get Ven Details Playbook](../content/illumiosaas-illumio-get-ven-details-playbook.md) | This playbook leverages Illumio workloads API to enrich IP, Hostname and Labels, found in Microsoft ... | - |
+| [Illumio Workload Quarantine Playbook](../content/illumiosaas-illumio-workload-quarantine-playbook.md) | This playbook leverages Illumio workloads API to quarantine a workload based on user inputs. <img sr... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IllumioSyslogAuditEvents](../content/b455e6af-bf95-4712-bd4c-d40090e82105.md) | - | - |
-| [IllumioSyslogNetworkTrafficEvents](../content/a1569c0d-0826-4f87-b139-0853203f6b9c.md) | - | - |
+| [IllumioSyslogAuditEvents](../content/illumiosaas-illumiosyslogauditevents-b455e6af-bf95-4712-bd4c-d40090e82105.md) | - | - |
+| [IllumioSyslogNetworkTrafficEvents](../content/illumiosaas-illumiosyslognetworktrafficevents-a1569c0d-0826-4f87-b139-0853203f6b9c.md) | - | - |
 
 ## Release Notes
 

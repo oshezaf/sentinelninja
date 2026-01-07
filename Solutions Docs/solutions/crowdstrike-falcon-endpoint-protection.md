@@ -74,31 +74,31 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Critical Severity Detection](../content/f7d298b2-726c-42a5-bbac-0d7f9950f527.md) | High | - | - |
-| [Critical or High Severity Detections by User](../content/4465ebde-b381-45f7-ad08-7d818070a11c.md) | High | - | - |
+| [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527.md) | High | - | - |
+| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c.md) | High | - | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CrowdStrikeFalconEndpointProtection](../content/crowdstrikefalconendpointprotection-crowdstrike-falcon-endpoint-protection.md) | - |
+| [CrowdStrikeFalconEndpointProtection](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconendpointprotection.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Crowdstrike API authentication](../content/crowdstrike-api-authentication-crowdstrike-falcon-endpoint-protection.md) | This is Crowdstrike base template which is used to generate access token and this is used in actual ... | - |
-| [Endpoint enrichment - Crowdstrike](../content/endpoint-enrichment---crowdstrike-crowdstrike-falcon-endpoint-protection.md) | When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below a... | - |
-| [Isolate endpoint - Crowdstrike](../content/isolate-endpoint---crowdstrike-crowdstrike-falcon-endpoint-protection.md) | When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below a... | - |
+| [Crowdstrike API authentication](../content/crowdstrike-falcon-endpoint-protection-crowdstrike-api-authentication.md) | This is Crowdstrike base template which is used to generate access token and this is used in actual ... | - |
+| [Endpoint enrichment - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-endpoint-enrichment---crowdstrike.md) | When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below a... | - |
+| [Isolate endpoint - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-isolate-endpoint---crowdstrike.md) | When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below a... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CrowdStrikeFalconEventStream](../content/d2db8f31-eb69-4784-b165-b19fc163e1dc.md) | - | - |
-| [CrowdStrikeReplicator](../content/5fbb24dd-7089-43fd-ba32-27e944e8c6aa.md) | - | - |
-| [CrowdStrikeReplicatorV2](../content/b52d934f-469b-4908-997f-fc097b17442a.md) | - | - |
-| [CrowdStrikeReplicator_future](../content/5fbb24dd-7089-43fd-ba32-27e944e8c6aa.md) | - | - |
+| [CrowdStrikeFalconEventStream](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconeventstream-d2db8f31-eb69-4784-b165-b19fc163e1dc.md) | - | - |
+| [CrowdStrikeReplicator](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-5fbb24dd-7089-43fd-ba32-27e944e8c6aa.md) | - | - |
+| [CrowdStrikeReplicatorV2](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicatorv2-b52d934f-469b-4908-997f-fc097b17442a.md) | - | - |
+| [CrowdStrikeReplicator_future](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-future-5fbb24dd-7089-43fd-ba32-27e944e8c6aa.md) | - | - |
 
 ## Release Notes
 

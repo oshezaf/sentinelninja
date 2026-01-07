@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AkamaiSIEMEvent](../content/9db78fa7-e565-45ee-8478-e562630b084a.md) | - | - |
+| [AkamaiSIEMEvent](../content/akamai-security-events-akamaisiemevent-9db78fa7-e565-45ee-8478-e562630b084a.md) | - | - |
 
 ## Release Notes
 

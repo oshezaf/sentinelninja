@@ -39,8 +39,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Auth0](../content/4563059e-9b11-4978-86e7-0bb6e22e23bb.md) | - | - |
-| [Auth0AM](../content/a6453489-5e6c-4976-bfc7-f9d234fde3ca.md) | - | - |
+| [Auth0](../content/auth0-auth0-4563059e-9b11-4978-86e7-0bb6e22e23bb.md) | - | - |
+| [Auth0AM](../content/auth0-auth0am-a6453489-5e6c-4976-bfc7-f9d234fde3ca.md) | - | - |
 
 ## Additional Documentation
 

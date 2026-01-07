@@ -41,15 +41,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Mimecast Targeted Threat Protection - Attachment Protect](../content/aa75944c-a663-4901-969e-7b55bfa49a73.md) | High | InitialAccess, Discovery | [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) |
-| [Mimecast Targeted Threat Protection - Impersonation Protect](../content/d8e7eca6-4b59-4069-a31e-a022b2a12ea4.md) | High | Exfiltration, Collection, Discovery | [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) |
-| [Mimecast Targeted Threat Protection - URL Protect](../content/9d5545bd-1450-4086-935c-62f15fc4a4c9.md) | High | InitialAccess, Discovery | [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) |
+| [Mimecast Targeted Threat Protection - Attachment Protect](../content/mimecastttp-mimecast-targeted-threat-protection---attachment-protect-aa75944c-a663-4901-969e-7b55bfa49a73.md) | High | InitialAccess, Discovery | [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) |
+| [Mimecast Targeted Threat Protection - Impersonation Protect](../content/mimecastttp-mimecast-targeted-threat-protection---impersonation-protect-d8e7eca6-4b59-4069-a31e-a022b2a12ea4.md) | High | Exfiltration, Collection, Discovery | [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) |
+| [Mimecast Targeted Threat Protection - URL Protect](../content/mimecastttp-mimecast-targeted-threat-protection---url-protect-9d5545bd-1450-4086-935c-62f15fc4a4c9.md) | High | InitialAccess, Discovery | [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MimecastTTPWorkbook](../content/mimecastttpworkbook-mimecastttp.md) | [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md)<br>[`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md)<br>[`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) |
+| [MimecastTTPWorkbook](../content/mimecastttp-mimecastttpworkbook.md) | [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md)<br>[`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md)<br>[`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) |
 
 ## Release Notes
 

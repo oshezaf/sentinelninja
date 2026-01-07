@@ -19,7 +19,7 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
-- [Insider Risk_Sensitive Data Access Outside Organizational Geo-location](../content/b81ed294-28cf-48c3-bac8-ac60dcef293b.md)
+- [Insider Risk_Sensitive Data Access Outside Organizational Geo-location](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sensitive-data-access-outside-organizational-geo-location-b81ed294-28cf-48c3-bac8-ac60dcef293b.md)
 
 ### Workbooks (6)
 
@@ -30,16 +30,16 @@ This table is used by the following solutions:
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation.md)
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md):**
-- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmcv2-cybersecuritymaturitymodelcertification%28cmmc%292.0.md)
+- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification%28cmmc%292.0-cybersecuritymaturitymodelcertification-cmmcv2.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagement-m2131-maturitymodelforeventlogmanagementm2131.md)
+- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/azuresentinelcost-soc-handbook.md)
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust%28tic3.0%29.md):**
-- [ZeroTrustTIC3](../content/zerotrusttic3-zerotrust%28tic3.0%29.md)
+- [ZeroTrustTIC3](../content/zerotrust%28tic3.0%29-zerotrusttic3.md)
 
 ---
 

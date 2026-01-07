@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TalonInsights](../content/taloninsights-talon.md) | [`Talon_CL`](../tables/talon-cl.md) |
+| [TalonInsights](../content/talon-taloninsights.md) | [`Talon_CL`](../tables/talon-cl.md) |
 
 ---
 

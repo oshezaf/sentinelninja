@@ -48,40 +48,40 @@ This solution includes **29 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AutomationHealth](../content/automationhealth-sentinelsoaressentials.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SentinelHealth`](../tables/sentinelhealth.md) |
-| [IncidentOverview](../content/incidentoverview-sentinelsoaressentials.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [IncidentTasksWorkbook](../content/incidenttasksworkbook-sentinelsoaressentials.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [SecurityOperationsEfficiency](../content/securityoperationsefficiency-sentinelsoaressentials.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AutomationHealth](../content/sentinelsoaressentials-automationhealth.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SentinelHealth`](../tables/sentinelhealth.md) |
+| [IncidentOverview](../content/sentinelsoaressentials-incidentoverview.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [IncidentTasksWorkbook](../content/sentinelsoaressentials-incidenttasksworkbook.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [SecurityOperationsEfficiency](../content/sentinelsoaressentials-securityoperationsefficiency.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Incident From Microsoft Forms Response](../content/create-incident-from-microsoft-forms-response-sentinelsoaressentials.md) | This playbook will create a new Microsoft Sentinel incident when Microsoft Forms response is submitt... | - |
-| [Create Incident From Shared Mailbox](../content/create-incident-from-shared-mailbox-sentinelsoaressentials.md) | This playbook will create a new Microsoft Sentinel incident when new email arrives to shared mailbox... | - |
-| [HTTP Trigger Entity Analyzer](../content/http-trigger-entity-analyzer-sentinelsoaressentials.md) | This playbook is triggered by HTTP POST requests with entity information and performs automated inve... | - |
-| [Incident Assignment Shifts](../content/incident-assignment-shifts-sentinelsoaressentials.md) | This playbook will assign an Incident to an owner based on the Shifts schedule in Microsoft Teams. W... | - |
-| [Incident Trigger Entity Analyzer](../content/incident-trigger-entity-analyzer-sentinelsoaressentials.md) | This playbook is triggered by Microsoft Sentinel incidents and performs automated investigation and ... | - |
-| [Incident tasks - Microsoft Defender XDR BEC Playbook for SecOps](../content/incident-tasks---microsoft-defender-xdr-bec-playbook-for-secops-sentinelsoaressentials.md) | This playbook add Incident Tasks based on Microsoft Defender XDR BEC Playbook for SecOps. This playb... | - |
-| [Incident tasks - Microsoft Defender XDR Phishing Playbook for SecOps](../content/incident-tasks---microsoft-defender-xdr-phishing-playbook-for-secops-sentinelsoaressentials.md) | This playbook add Incident Tasks based on Microsoft Defender XDR Phishing Playbook for SecOps. This ... | - |
-| [Incident tasks - Microsoft Defender XDR Ransomware Playbook for SecOps](../content/incident-tasks---microsoft-defender-xdr-ransomware-playbook-for-secops-sentinelsoaressentials.md) | This playbook add Incident Tasks based on Microsoft Defender XDR Ransomware Playbook for SecOps. Thi... | - |
-| [Notify Incident Owner in Microsoft Teams](../content/notify-incident-owner-in-microsoft-teams-sentinelsoaressentials.md) | This playbook sends a Teams message to the new incident owner. | - |
-| [Notify When Incident Is Closed](../content/notify-when-incident-is-closed-sentinelsoaressentials.md) | This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when... | - |
-| [Notify When Incident Is Reopened](../content/notify-when-incident-is-reopened-sentinelsoaressentials.md) | This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when... | - |
-| [Notify When Incident Severity Changed](../content/notify-when-incident-severity-changed-sentinelsoaressentials.md) | This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when... | - |
-| [Post Message Slack](../content/post-message-slack-sentinelsoaressentials.md) | This playbook will post a message in a Slack channel when an alert is created in Microsoft Sentinel | - |
-| [Post Message Slack](../content/post-message-slack-sentinelsoaressentials.md) | This playbook will post a message in a Slack channel when an Incident is created in Microsoft Sentin... | - |
-| [Post Message Teams](../content/post-message-teams-sentinelsoaressentials.md) | This playbook will post a message in a Microsoft Teams channel when an Alert is created in Microsoft... | - |
-| [Post Message Teams](../content/post-message-teams-sentinelsoaressentials.md) | This playbook will post a message in a Microsoft Teams channel when an Incident is created in Micros... | - |
-| [Post-Message-Slack](../content/post-message-slack-sentinelsoaressentials.md) | Author: Yaniv Shasha | - |
-| [Post-Message-Teams](../content/post-message-teams-sentinelsoaressentials.md) | Author: Yaniv Shasha | - |
-| [Relate alerts to incident by IP](../content/relate-alerts-to-incident-by-ip-sentinelsoaressentials.md) | This playbook looks for other alerts with the same IP as the triggered incident. When such an alert ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
-| [Send Teams Adaptive Card on incident creation](../content/send-teams-adaptive-card-on-incident-creation-sentinelsoaressentials.md) | This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to chang... | - |
-| [Send basic email](../content/send-basic-email-sentinelsoaressentials.md) | This playbook will be sending email with basic incidents details (Incident title, severity, tactics,... | - |
-| [Send email with formatted incident report](../content/send-email-with-formatted-incident-report-sentinelsoaressentials.md) | This playbook will be sending email with formated incidents report (Incident title, severity, tactic... | - |
-| [Send incident Teams Adaptive Card with XDR Portal links](../content/send-incident-teams-adaptive-card-with-xdr-portal-links-sentinelsoaressentials.md) | This playbook will send a Teams adaptive card with incident and entity information with all links po... | - |
-| [Send incident email with XDR Portal links](../content/send-incident-email-with-xdr-portal-links-sentinelsoaressentials.md) | This playbook will send an email with incident and entity information with all links pointing to the... | - |
-| [URL Trigger Entity Analyzer](../content/url-trigger-entity-analyzer-sentinelsoaressentials.md) | This playbook is triggered manually when a URL entity is selected in a Microsoft Sentinel incident a... | - |
+| [Create Incident From Microsoft Forms Response](../content/sentinelsoaressentials-create-incident-from-microsoft-forms-response.md) | This playbook will create a new Microsoft Sentinel incident when Microsoft Forms response is submitt... | - |
+| [Create Incident From Shared Mailbox](../content/sentinelsoaressentials-create-incident-from-shared-mailbox.md) | This playbook will create a new Microsoft Sentinel incident when new email arrives to shared mailbox... | - |
+| [HTTP Trigger Entity Analyzer](../content/sentinelsoaressentials-http-trigger-entity-analyzer.md) | This playbook is triggered by HTTP POST requests with entity information and performs automated inve... | - |
+| [Incident Assignment Shifts](../content/sentinelsoaressentials-incident-assignment-shifts.md) | This playbook will assign an Incident to an owner based on the Shifts schedule in Microsoft Teams. W... | - |
+| [Incident Trigger Entity Analyzer](../content/sentinelsoaressentials-incident-trigger-entity-analyzer.md) | This playbook is triggered by Microsoft Sentinel incidents and performs automated investigation and ... | - |
+| [Incident tasks - Microsoft Defender XDR BEC Playbook for SecOps](../content/sentinelsoaressentials-incident-tasks---microsoft-defender-xdr-bec-playbook-for-secops.md) | This playbook add Incident Tasks based on Microsoft Defender XDR BEC Playbook for SecOps. This playb... | - |
+| [Incident tasks - Microsoft Defender XDR Phishing Playbook for SecOps](../content/sentinelsoaressentials-incident-tasks---microsoft-defender-xdr-phishing-playbook-for-secops.md) | This playbook add Incident Tasks based on Microsoft Defender XDR Phishing Playbook for SecOps. This ... | - |
+| [Incident tasks - Microsoft Defender XDR Ransomware Playbook for SecOps](../content/sentinelsoaressentials-incident-tasks---microsoft-defender-xdr-ransomware-playbook-for-secops.md) | This playbook add Incident Tasks based on Microsoft Defender XDR Ransomware Playbook for SecOps. Thi... | - |
+| [Notify Incident Owner in Microsoft Teams](../content/sentinelsoaressentials-notify-incident-owner-in-microsoft-teams.md) | This playbook sends a Teams message to the new incident owner. | - |
+| [Notify When Incident Is Closed](../content/sentinelsoaressentials-notify-when-incident-is-closed.md) | This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when... | - |
+| [Notify When Incident Is Reopened](../content/sentinelsoaressentials-notify-when-incident-is-reopened.md) | This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when... | - |
+| [Notify When Incident Severity Changed](../content/sentinelsoaressentials-notify-when-incident-severity-changed.md) | This playbook is utilizing new update trigger to notify person/group on Microsoft Teams/Outlook when... | - |
+| [Post Message Slack](../content/sentinelsoaressentials-post-message-slack.md) | This playbook will post a message in a Slack channel when an alert is created in Microsoft Sentinel | - |
+| [Post Message Slack](../content/sentinelsoaressentials-post-message-slack.md) | This playbook will post a message in a Slack channel when an Incident is created in Microsoft Sentin... | - |
+| [Post Message Teams](../content/sentinelsoaressentials-post-message-teams.md) | This playbook will post a message in a Microsoft Teams channel when an Alert is created in Microsoft... | - |
+| [Post Message Teams](../content/sentinelsoaressentials-post-message-teams.md) | This playbook will post a message in a Microsoft Teams channel when an Incident is created in Micros... | - |
+| [Post-Message-Slack](../content/sentinelsoaressentials-post-message-slack.md) | Author: Yaniv Shasha | - |
+| [Post-Message-Teams](../content/sentinelsoaressentials-post-message-teams.md) | Author: Yaniv Shasha | - |
+| [Relate alerts to incident by IP](../content/sentinelsoaressentials-relate-alerts-to-incident-by-ip.md) | This playbook looks for other alerts with the same IP as the triggered incident. When such an alert ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
+| [Send Teams Adaptive Card on incident creation](../content/sentinelsoaressentials-send-teams-adaptive-card-on-incident-creation.md) | This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to chang... | - |
+| [Send basic email](../content/sentinelsoaressentials-send-basic-email.md) | This playbook will be sending email with basic incidents details (Incident title, severity, tactics,... | - |
+| [Send email with formatted incident report](../content/sentinelsoaressentials-send-email-with-formatted-incident-report.md) | This playbook will be sending email with formated incidents report (Incident title, severity, tactic... | - |
+| [Send incident Teams Adaptive Card with XDR Portal links](../content/sentinelsoaressentials-send-incident-teams-adaptive-card-with-xdr-portal-links.md) | This playbook will send a Teams adaptive card with incident and entity information with all links po... | - |
+| [Send incident email with XDR Portal links](../content/sentinelsoaressentials-send-incident-email-with-xdr-portal-links.md) | This playbook will send an email with incident and entity information with all links pointing to the... | - |
+| [URL Trigger Entity Analyzer](../content/sentinelsoaressentials-url-trigger-entity-analyzer.md) | This playbook is triggered manually when a URL entity is selected in a Microsoft Sentinel incident a... | - |
 
 ## Release Notes
 

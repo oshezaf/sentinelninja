@@ -38,14 +38,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Threats detected by Eset](../content/2d8a60aa-c15e-442e-9ce3-ee924889d2a6.md) | Low | Execution, CredentialAccess, PrivilegeEscalation | [`eset_CL`](../tables/eset-cl.md) |
-| [Web sites blocked by Eset](../content/84ad2f8a-b64c-49bc-b669-bdb4fd3071e9.md) | Low | Exfiltration, CommandAndControl, InitialAccess | [`eset_CL`](../tables/eset-cl.md) |
+| [Threats detected by Eset](../content/eset-security-management-center-threats-detected-by-eset-2d8a60aa-c15e-442e-9ce3-ee924889d2a6.md) | Low | Execution, CredentialAccess, PrivilegeEscalation | [`eset_CL`](../tables/eset-cl.md) |
+| [Web sites blocked by Eset](../content/eset-security-management-center-web-sites-blocked-by-eset-84ad2f8a-b64c-49bc-b669-bdb4fd3071e9.md) | Low | Exfiltration, CommandAndControl, InitialAccess | [`eset_CL`](../tables/eset-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [esetSMCWorkbook](../content/esetsmcworkbook-eset-security-management-center.md) | [`eset_CL`](../tables/eset-cl.md) |
+| [esetSMCWorkbook](../content/eset-security-management-center-esetsmcworkbook.md) | [`eset_CL`](../tables/eset-cl.md) |
 
 ---
 

@@ -31,36 +31,36 @@ This solution includes **20 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Building_a_SOCLargeStaff](../content/building-a-soclargestaff-soc-process-framework.md) | - |
-| [Building_a_SOCMediumStaff](../content/building-a-socmediumstaff-soc-process-framework.md) | - |
-| [Building_a_SOCPartTimeStaff](../content/building-a-socparttimestaff-soc-process-framework.md) | - |
-| [Building_a_SOCSmallStaff](../content/building-a-socsmallstaff-soc-process-framework.md) | - |
-| [SOCIRPlanning](../content/socirplanning-soc-process-framework.md) | - |
-| [SOCProcessFramework](../content/socprocessframework-soc-process-framework.md) | - |
-| [UpdateSOCMaturityScore](../content/updatesocmaturityscore-soc-process-framework.md) | - |
+| [Building_a_SOCLargeStaff](../content/soc-process-framework-building-a-soclargestaff.md) | - |
+| [Building_a_SOCMediumStaff](../content/soc-process-framework-building-a-socmediumstaff.md) | - |
+| [Building_a_SOCPartTimeStaff](../content/soc-process-framework-building-a-socparttimestaff.md) | - |
+| [Building_a_SOCSmallStaff](../content/soc-process-framework-building-a-socsmallstaff.md) | - |
+| [SOCIRPlanning](../content/soc-process-framework-socirplanning.md) | - |
+| [SOCProcessFramework](../content/soc-process-framework-socprocessframework.md) | - |
+| [UpdateSOCMaturityScore](../content/soc-process-framework-updatesocmaturityscore.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Get-SOC-Actions](../content/get-soc-actions-soc-process-framework.md) | This playbook uses the SOC Recommended Actions Watchlist to automatically enrich incidents generated... | - |
+| [Get-SOC-Actions](../content/soc-process-framework-get-soc-actions.md) | This playbook uses the SOC Recommended Actions Watchlist to automatically enrich incidents generated... | - |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SOCDepartmental](../content/socdepartmental-soc-process-framework.md) | - | - |
-| [SOCEmailDistribution](../content/socemaildistribution-soc-process-framework.md) | - | - |
-| [SOCExternalContacts](../content/socexternalcontacts-soc-process-framework.md) | - | - |
-| [SOCIRP](../content/socirp-soc-process-framework.md) | - | - |
-| [SOCInternalContacts](../content/socinternalcontacts-soc-process-framework.md) | - | - |
-| [SOCMA](../content/socma-soc-process-framework.md) | - | - |
-| [SOCPager](../content/socpager-soc-process-framework.md) | - | - |
-| [SOCUseCase](../content/socusecase-soc-process-framework.md) | - | - |
-| [SOCcontacts](../content/soccontacts-soc-process-framework.md) | - | - |
-| [SOCgeneralIT](../content/socgeneralit-soc-process-framework.md) | - | - |
-| [SOCworkstations](../content/socworkstations-soc-process-framework.md) | - | - |
-| [SocRA](../content/socra-soc-process-framework.md) | - | - |
+| [SOCDepartmental](../content/soc-process-framework-socdepartmental.md) | - | - |
+| [SOCEmailDistribution](../content/soc-process-framework-socemaildistribution.md) | - | - |
+| [SOCExternalContacts](../content/soc-process-framework-socexternalcontacts.md) | - | - |
+| [SOCIRP](../content/soc-process-framework-socirp.md) | - | - |
+| [SOCInternalContacts](../content/soc-process-framework-socinternalcontacts.md) | - | - |
+| [SOCMA](../content/soc-process-framework-socma.md) | - | - |
+| [SOCPager](../content/soc-process-framework-socpager.md) | - | - |
+| [SOCUseCase](../content/soc-process-framework-socusecase.md) | - | - |
+| [SOCcontacts](../content/soc-process-framework-soccontacts.md) | - | - |
+| [SOCgeneralIT](../content/soc-process-framework-socgeneralit.md) | - | - |
+| [SOCworkstations](../content/soc-process-framework-socworkstations.md) | - | - |
+| [SocRA](../content/soc-process-framework-socra.md) | - | - |
 
 ## Additional Documentation
 

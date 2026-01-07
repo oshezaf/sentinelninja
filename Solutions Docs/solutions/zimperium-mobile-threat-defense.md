@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZimperiumWorkbooks](../content/zimperiumworkbooks-zimperium-mobile-threat-defense.md) | [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) |
+| [ZimperiumWorkbooks](../content/zimperium-mobile-threat-defense-zimperiumworkbooks.md) | [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) |
 
 ---
 

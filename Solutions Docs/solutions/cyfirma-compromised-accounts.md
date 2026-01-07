@@ -37,9 +37,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [CYFIRMA - Compromised Employees Detection Rule](../content/72d3fb86-d1eb-44d6-9352-170c6bb45bb7.md) | High | CredentialAccess, InitialAccess, Persistence | [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md) |
-| [CYFIRMA - Customer Accounts Leaks Detection Rule](../content/ebd1bf8d-aa18-4e66-9cad-555b71a290f1.md) | High | CredentialAccess, InitialAccess | [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md) |
-| [CYFIRMA - Public Accounts Leaks Detection Rule](../content/57602938-e95a-4fc3-9352-8d473ed256e1.md) | High | CredentialAccess, InitialAccess, Discovery | [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md) |
+| [CYFIRMA - Compromised Employees Detection Rule](../content/cyfirma-compromised-accounts-cyfirma---compromised-employees-detection-rule-72d3fb86-d1eb-44d6-9352-170c6bb45bb7.md) | High | CredentialAccess, InitialAccess, Persistence | [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md) |
+| [CYFIRMA - Customer Accounts Leaks Detection Rule](../content/cyfirma-compromised-accounts-cyfirma---customer-accounts-leaks-detection-rule-ebd1bf8d-aa18-4e66-9cad-555b71a290f1.md) | High | CredentialAccess, InitialAccess | [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md) |
+| [CYFIRMA - Public Accounts Leaks Detection Rule](../content/cyfirma-compromised-accounts-cyfirma---public-accounts-leaks-detection-rule-57602938-e95a-4fc3-9352-8d473ed256e1.md) | High | CredentialAccess, InitialAccess, Discovery | [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md) |
 
 ## Release Notes
 

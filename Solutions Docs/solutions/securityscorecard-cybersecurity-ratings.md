@@ -42,7 +42,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SecurityScorecardWorkbook](../content/securityscorecardworkbook-securityscorecard-cybersecurity-ratings.md) | [`SecurityScorecardFactor_CL`](../tables/securityscorecardfactor-cl.md)<br>[`SecurityScorecardIssues_CL`](../tables/securityscorecardissues-cl.md)<br>[`SecurityScorecardRatings_CL`](../tables/securityscorecardratings-cl.md) |
+| [SecurityScorecardWorkbook](../content/securityscorecard-cybersecurity-ratings-securityscorecardworkbook.md) | [`SecurityScorecardFactor_CL`](../tables/securityscorecardfactor-cl.md)<br>[`SecurityScorecardIssues_CL`](../tables/securityscorecardissues-cl.md)<br>[`SecurityScorecardRatings_CL`](../tables/securityscorecardratings-cl.md) |
 
 ---
 

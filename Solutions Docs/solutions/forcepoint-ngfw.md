@@ -40,8 +40,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ForcepointNGFW](../content/forcepointngfw-forcepoint-ngfw.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ForcepointNGFWAdvanced](../content/forcepointngfwadvanced-forcepoint-ngfw.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Perf`](../tables/perf.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [ForcepointNGFW](../content/forcepoint-ngfw-forcepointngfw.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Perf`](../tables/perf.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 
 ## Release Notes
 

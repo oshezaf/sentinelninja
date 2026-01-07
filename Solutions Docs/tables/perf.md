@@ -23,7 +23,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Forcepoint NGFW](../solutions/forcepoint-ngfw.md):**
-- [ForcepointNGFWAdvanced](../content/forcepointngfwadvanced-forcepoint-ngfw.md)
+- [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced.md)
 
 ## Resource Types
 

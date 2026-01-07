@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CyberArkEPV](../content/cyberarkepv-cyberark-enterprise-password-vault-%28epv%29-events.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [CyberArkEPV](../content/cyberark-enterprise-password-vault-%28epv%29-events-cyberarkepv.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

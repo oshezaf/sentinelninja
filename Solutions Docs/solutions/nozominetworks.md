@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [NozomiNetworksEvents](../content/a058c0dd-449b-4083-bbd7-4d34f0510592.md) | - | - |
+| [NozomiNetworksEvents](../content/nozominetworks-nozominetworksevents-a058c0dd-449b-4083-bbd7-4d34f0510592.md) | - | - |
 
 ## Release Notes
 

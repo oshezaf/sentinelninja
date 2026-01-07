@@ -49,22 +49,22 @@ This solution includes **6 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Critical Threat Detected](../content/2ca4e7fc-c61a-49e5-9736-5da8035c47e0.md) | Medium | LateralMovement | [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) |
-| [Known Malware Detected](../content/9f86885f-f31f-4e66-a39d-352771ee789e.md) | Medium | Execution | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) |
+| [Critical Threat Detected](../content/vmware-carbon-black-cloud-critical-threat-detected-2ca4e7fc-c61a-49e5-9736-5da8035c47e0.md) | Medium | LateralMovement | [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) |
+| [Known Malware Detected](../content/vmware-carbon-black-cloud-known-malware-detected-9f86885f-f31f-4e66-a39d-352771ee789e.md) | Medium | Execution | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VMwareCarbonBlack](../content/vmwarecarbonblack-vmware-carbon-black-cloud.md) | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) |
+| [VMwareCarbonBlack](../content/vmware-carbon-black-cloud-vmwarecarbonblack.md) | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Endpoint enrichment - Carbon Black](../content/endpoint-enrichment---carbon-black-vmware-carbon-black-cloud.md) | This playbook will collect device information from Carbon Black and post a report on the incident. | - |
-| [Endpoint take action from Teams - Carbon Black](../content/endpoint-take-action-from-teams---carbon-black-vmware-carbon-black-cloud.md) | This playbook sends an adaptive card to the SOC Teams channel, lets the analyst decide on action: Qu... | - |
-| [Isolate endpoint - Carbon Black](../content/isolate-endpoint---carbon-black-vmware-carbon-black-cloud.md) | This playbook will quarantine the host in Carbon Black. | - |
+| [Endpoint enrichment - Carbon Black](../content/vmware-carbon-black-cloud-endpoint-enrichment---carbon-black.md) | This playbook will collect device information from Carbon Black and post a report on the incident. | - |
+| [Endpoint take action from Teams - Carbon Black](../content/vmware-carbon-black-cloud-endpoint-take-action-from-teams---carbon-black.md) | This playbook sends an adaptive card to the SOC Teams channel, lets the analyst decide on action: Qu... | - |
+| [Isolate endpoint - Carbon Black](../content/vmware-carbon-black-cloud-isolate-endpoint---carbon-black.md) | This playbook will quarantine the host in Carbon Black. | - |
 
 ## Release Notes
 

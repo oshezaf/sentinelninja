@@ -42,30 +42,30 @@ This solution includes **19 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Rubrik Critical Anomaly](../content/54c70d21-696f-4f03-9238-9d7118d079fe.md) | Medium | Persistence | [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) |
-| [Rubrik Threat Monitoring](../content/0083cbc4-776e-42ca-8694-6950fd605df9.md) | Medium | Persistence | [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) |
+| [Rubrik Critical Anomaly](../content/rubriksecuritycloud-rubrik-critical-anomaly-54c70d21-696f-4f03-9238-9d7118d079fe.md) | Medium | Persistence | [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) |
+| [Rubrik Threat Monitoring](../content/rubriksecuritycloud-rubrik-threat-monitoring-0083cbc4-776e-42ca-8694-6950fd605df9.md) | Medium | Persistence | [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Rubrik Advanced Threat Hunt](../content/rubrik-advanced-threat-hunt-rubriksecuritycloud.md) | This playbook fetches the object mapped with incident and starts advance threat hunt. | - |
-| [Rubrik Anomaly Analysis](../content/rubrik-anomaly-analysis-rubriksecuritycloud.md) | This playbook queries Rubrik Security Cloud to enrich the Anomaly event with additional information ... | - |
-| [Rubrik Anomaly Generate Downloadable Link](../content/rubrik-anomaly-generate-downloadable-link-rubriksecuritycloud.md) | This playbook will generate downloadable links according to objectType (VMware, Fileset or VolumeGro... | - |
-| [Rubrik Anomaly Incident Response](../content/rubrik-anomaly-incident-response-rubriksecuritycloud.md) | This playbook provides an end to end example of the collection of Ransomware Anomaly information fro... | - |
-| [Rubrik Data Object Discovery](../content/rubrik-data-object-discovery-rubriksecuritycloud.md) | This playbook queries Rubrik Security Cloud to enrich the incoming event with additional information... | - |
-| [Rubrik File Object Context Analysis](../content/rubrik-file-object-context-analysis-rubriksecuritycloud.md) | This playbook will retrieve policy hits from Rubrik Security Cloud for a given object, for a particu... | - |
-| [Rubrik Fileset Ransomware Discovery](../content/rubrik-fileset-ransomware-discovery-rubriksecuritycloud.md) | This playbook queries Rubrik Security Cloud to enrich the incoming event with additional information... | - |
-| [Rubrik IOC Scan](../content/rubrik-ioc-scan-rubriksecuritycloud.md) | This playbook interacts with Rubrik Security Cloud to scan backups for specified IOCs. This playbook... | - |
-| [Rubrik Poll Async Result](../content/rubrik-poll-async-result-rubriksecuritycloud.md) | This playbook is used by other playbooks to poll for results from some of the asynchronous API calls... | - |
-| [Rubrik Ransomware Discovery and File Recovery](../content/rubrik-ransomware-discovery-and-file-recovery-rubriksecuritycloud.md) | This playbook interacts with Rubrik Security Cloud to (1) optionally preserve evidence by creating a... | - |
-| [Rubrik Ransomware Discovery and VM Recovery](../content/rubrik-ransomware-discovery-and-vm-recovery-rubriksecuritycloud.md) | This playbook interacts with Rubrik Security Cloud to (1) optionally preserve evidence by creating a... | - |
-| [Rubrik Retrieve User Intelligence Information](../content/rubrik-retrieve-user-intelligence-information-rubriksecuritycloud.md) | This playbook queries Rubrik Security Cloud to get risk detail and policy hits details for a usernam... | - |
-| [Rubrik Turbo Threat Hunt](../content/rubrik-turbo-threat-hunt-rubriksecuritycloud.md) | This playbook fetches the object mapped with incident and starts turbo threat hunt. | - |
-| [Rubrik Update Anomaly Status](../content/rubrik-update-anomaly-status-rubriksecuritycloud.md) | This playbook will resolve or report false positive to unresolved anomaly and update status as resol... | - |
-| [Rubrik Update Anomaly Status Via Incident](../content/rubrik-update-anomaly-status-via-incident-rubriksecuritycloud.md) | This playbook queries Rubrik Security Cloud to enrich the Anomaly event with additional information ... | - |
-| [Rubrik User Intelligence Analysis](../content/rubrik-user-intelligence-analysis-rubriksecuritycloud.md) | This playbook queries Rubrik Security Cloud to get user sensitive data and update severity of incide... | - |
-| [RubrikWorkloadAnalysis](../content/rubrikworkloadanalysis-rubriksecuritycloud.md) | This playbook retrieves sensitive IP and Host data to enrich the incident details, and adjusts the i... | - |
+| [Rubrik Advanced Threat Hunt](../content/rubriksecuritycloud-rubrik-advanced-threat-hunt.md) | This playbook fetches the object mapped with incident and starts advance threat hunt. | - |
+| [Rubrik Anomaly Analysis](../content/rubriksecuritycloud-rubrik-anomaly-analysis.md) | This playbook queries Rubrik Security Cloud to enrich the Anomaly event with additional information ... | - |
+| [Rubrik Anomaly Generate Downloadable Link](../content/rubriksecuritycloud-rubrik-anomaly-generate-downloadable-link.md) | This playbook will generate downloadable links according to objectType (VMware, Fileset or VolumeGro... | - |
+| [Rubrik Anomaly Incident Response](../content/rubriksecuritycloud-rubrik-anomaly-incident-response.md) | This playbook provides an end to end example of the collection of Ransomware Anomaly information fro... | - |
+| [Rubrik Data Object Discovery](../content/rubriksecuritycloud-rubrik-data-object-discovery.md) | This playbook queries Rubrik Security Cloud to enrich the incoming event with additional information... | - |
+| [Rubrik File Object Context Analysis](../content/rubriksecuritycloud-rubrik-file-object-context-analysis.md) | This playbook will retrieve policy hits from Rubrik Security Cloud for a given object, for a particu... | - |
+| [Rubrik Fileset Ransomware Discovery](../content/rubriksecuritycloud-rubrik-fileset-ransomware-discovery.md) | This playbook queries Rubrik Security Cloud to enrich the incoming event with additional information... | - |
+| [Rubrik IOC Scan](../content/rubriksecuritycloud-rubrik-ioc-scan.md) | This playbook interacts with Rubrik Security Cloud to scan backups for specified IOCs. This playbook... | - |
+| [Rubrik Poll Async Result](../content/rubriksecuritycloud-rubrik-poll-async-result.md) | This playbook is used by other playbooks to poll for results from some of the asynchronous API calls... | - |
+| [Rubrik Ransomware Discovery and File Recovery](../content/rubriksecuritycloud-rubrik-ransomware-discovery-and-file-recovery.md) | This playbook interacts with Rubrik Security Cloud to (1) optionally preserve evidence by creating a... | - |
+| [Rubrik Ransomware Discovery and VM Recovery](../content/rubriksecuritycloud-rubrik-ransomware-discovery-and-vm-recovery.md) | This playbook interacts with Rubrik Security Cloud to (1) optionally preserve evidence by creating a... | - |
+| [Rubrik Retrieve User Intelligence Information](../content/rubriksecuritycloud-rubrik-retrieve-user-intelligence-information.md) | This playbook queries Rubrik Security Cloud to get risk detail and policy hits details for a usernam... | - |
+| [Rubrik Turbo Threat Hunt](../content/rubriksecuritycloud-rubrik-turbo-threat-hunt.md) | This playbook fetches the object mapped with incident and starts turbo threat hunt. | - |
+| [Rubrik Update Anomaly Status](../content/rubriksecuritycloud-rubrik-update-anomaly-status.md) | This playbook will resolve or report false positive to unresolved anomaly and update status as resol... | - |
+| [Rubrik Update Anomaly Status Via Incident](../content/rubriksecuritycloud-rubrik-update-anomaly-status-via-incident.md) | This playbook queries Rubrik Security Cloud to enrich the Anomaly event with additional information ... | - |
+| [Rubrik User Intelligence Analysis](../content/rubriksecuritycloud-rubrik-user-intelligence-analysis.md) | This playbook queries Rubrik Security Cloud to get user sensitive data and update severity of incide... | - |
+| [RubrikWorkloadAnalysis](../content/rubriksecuritycloud-rubrikworkloadanalysis.md) | This playbook retrieves sensitive IP and Host data to enrich the incident details, and adjusts the i... | - |
 
 ## Release Notes
 

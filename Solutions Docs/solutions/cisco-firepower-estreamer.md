@@ -38,9 +38,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Block IP - Cisco Firepower](../content/block-ip---cisco-firepower-cisco-firepower-estreamer.md) | This playbook allows blocking of IPs in Cisco Firepower, using a **Network Group object**. This allo... | - |
-| [Block IP - Take Action from Teams - Cisco Firepower](../content/block-ip---take-action-from-teams---cisco-firepower-cisco-firepower-estreamer.md) | This playbook allows blocking of IPs in Cisco Firepower, using a **Network Group object**. This allo... | - |
-| [Block URL - Cisco Firepower](../content/block-url---cisco-firepower-cisco-firepower-estreamer.md) | This playbook allows blocking of FQDNs in Cisco Firepower, using a **Network Group object**. This al... | - |
+| [Block IP - Cisco Firepower](../content/cisco-firepower-estreamer-block-ip---cisco-firepower.md) | This playbook allows blocking of IPs in Cisco Firepower, using a **Network Group object**. This allo... | - |
+| [Block IP - Take Action from Teams - Cisco Firepower](../content/cisco-firepower-estreamer-block-ip---take-action-from-teams---cisco-firepower.md) | This playbook allows blocking of IPs in Cisco Firepower, using a **Network Group object**. This allo... | - |
+| [Block URL - Cisco Firepower](../content/cisco-firepower-estreamer-block-url---cisco-firepower.md) | This playbook allows blocking of FQDNs in Cisco Firepower, using a **Network Group object**. This al... | - |
 
 ## Release Notes
 

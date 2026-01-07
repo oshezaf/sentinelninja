@@ -30,14 +30,14 @@ This solution includes **8 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Export Domain Entity to TISC](../content/export-domain-entity-to-tisc-servicenow-tisc.md) | This playbook leverages the ServiceNow TISC API to export Domain indicators found in Microsoft Senti... | - |
-| [Export Hash Entity to TISC](../content/export-hash-entity-to-tisc-servicenow-tisc.md) | This playbook leverages the ServiceNow TISC API to export Hash indicators found in Microsoft Sentine... | - |
-| [Export IP Entity to TISC](../content/export-ip-entity-to-tisc-servicenow-tisc.md) | This playbook leverages the ServiceNow TISC API to export IP indicators found in Microsoft Sentinel ... | - |
-| [Export URL Entity to TISC](../content/export-url-entity-to-tisc-servicenow-tisc.md) | This playbook leverages the ServiceNow TISC API to export URL indicators found in Microsoft Sentinel... | - |
-| [Export all Incident Entities to TISC](../content/export-all-incident-entities-to-tisc-servicenow-tisc.md) | This playbook leverages the ServiceNow TISC API to export IP, Domain, URL, and Hash indicators found... | - |
-| [ServiceNow TISC Batch Indicator Uploader](../content/servicenow-tisc-batch-indicator-uploader-servicenow-tisc.md) | This playbook will write indicators in batch to ThreatIntelligenceIndicator log analytics table. Thi... | - |
-| [ServiceNow TISC Import Observables from TISC](../content/servicenow-tisc-import-observables-from-tisc-servicenow-tisc.md) | This playbook leverages the ServiceNow TISC API to import IP, Domain, URL, and Hash observables from... | - |
-| [ServiceNow TISC Incident Enrichment](../content/servicenow-tisc-incident-enrichment-servicenow-tisc.md) | This playbook leverages the ServiceNow TISC API to enrich IP, Domain, URL, and Hash indicators found... | - |
+| [Export Domain Entity to TISC](../content/servicenow-tisc-export-domain-entity-to-tisc.md) | This playbook leverages the ServiceNow TISC API to export Domain indicators found in Microsoft Senti... | - |
+| [Export Hash Entity to TISC](../content/servicenow-tisc-export-hash-entity-to-tisc.md) | This playbook leverages the ServiceNow TISC API to export Hash indicators found in Microsoft Sentine... | - |
+| [Export IP Entity to TISC](../content/servicenow-tisc-export-ip-entity-to-tisc.md) | This playbook leverages the ServiceNow TISC API to export IP indicators found in Microsoft Sentinel ... | - |
+| [Export URL Entity to TISC](../content/servicenow-tisc-export-url-entity-to-tisc.md) | This playbook leverages the ServiceNow TISC API to export URL indicators found in Microsoft Sentinel... | - |
+| [Export all Incident Entities to TISC](../content/servicenow-tisc-export-all-incident-entities-to-tisc.md) | This playbook leverages the ServiceNow TISC API to export IP, Domain, URL, and Hash indicators found... | - |
+| [ServiceNow TISC Batch Indicator Uploader](../content/servicenow-tisc-servicenow-tisc-batch-indicator-uploader.md) | This playbook will write indicators in batch to ThreatIntelligenceIndicator log analytics table. Thi... | - |
+| [ServiceNow TISC Import Observables from TISC](../content/servicenow-tisc-servicenow-tisc-import-observables-from-tisc.md) | This playbook leverages the ServiceNow TISC API to import IP, Domain, URL, and Hash observables from... | - |
+| [ServiceNow TISC Incident Enrichment](../content/servicenow-tisc-servicenow-tisc-incident-enrichment.md) | This playbook leverages the ServiceNow TISC API to enrich IP, Domain, URL, and Hash indicators found... | - |
 
 ## Additional Documentation
 

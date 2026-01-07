@@ -38,20 +38,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Digital Shadows Incident Creation for exclude-app](../content/f7abe9c1-1e6c-4317-b907-25769e7764c5.md) | Medium | - | - |
-| [Digital Shadows Incident Creation for include-app](../content/ede3071d-9317-45f9-b36c-6a6effee5294.md) | Medium | - | - |
+| [Digital Shadows Incident Creation for exclude-app](../content/digital-shadows-digital-shadows-incident-creation-for-exclude-app-f7abe9c1-1e6c-4317-b907-25769e7764c5.md) | Medium | - | - |
+| [Digital Shadows Incident Creation for include-app](../content/digital-shadows-digital-shadows-incident-creation-for-include-app-ede3071d-9317-45f9-b36c-6a6effee5294.md) | Medium | - | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DigitalShadows](../content/digitalshadows-digital-shadows.md) | [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) |
+| [DigitalShadows](../content/digital-shadows-digitalshadows.md) | [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Digital Shadows Playbook to Update Incident Status](../content/digital-shadows-playbook-to-update-incident-status-digital-shadows.md) | This playbook will update the status of Microsoft Sentinel incidents to match the status of the aler... | - |
+| [Digital Shadows Playbook to Update Incident Status](../content/digital-shadows-digital-shadows-playbook-to-update-incident-status.md) | This playbook will update the status of Microsoft Sentinel incidents to match the status of the aler... | - |
 
 ## Release Notes
 

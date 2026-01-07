@@ -39,20 +39,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [VMware vCenter - Root login](../content/03e8a895-b5ba-49a0-aed3-f9a997d92fbe.md) | High | InitialAccess, PrivilegeEscalation | - |
-| [vCenter - Root impersonation](../content/f1fcb22c-b459-42f2-a7ee-7276b5f1309c.md) | Medium | PrivilegeEscalation | - |
+| [VMware vCenter - Root login](../content/vmware-vcenter-vmware-vcenter---root-login-03e8a895-b5ba-49a0-aed3-f9a997d92fbe.md) | High | InitialAccess, PrivilegeEscalation | - |
+| [vCenter - Root impersonation](../content/vmware-vcenter-vcenter---root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c.md) | Medium | PrivilegeEscalation | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [vCenter](../content/vcenter-vmware-vcenter.md) | - |
+| [vCenter](../content/vmware-vcenter-vcenter.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [vCenter](../content/a466d02c-cfe0-4377-9ae0-fdfc8dd79e78.md) | - | - |
+| [vCenter](../content/vmware-vcenter-vcenter-a466d02c-cfe0-4377-9ae0-fdfc8dd79e78.md) | - | - |
 
 ## Release Notes
 

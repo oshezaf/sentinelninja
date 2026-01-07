@@ -40,13 +40,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [FortinetFortiNdrCloudWorkbook](../content/fortinetfortindrcloudworkbook-fortinet-fortindr-cloud.md) | [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md)<br>[`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md)<br>[`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) |
+| [FortinetFortiNdrCloudWorkbook](../content/fortinet-fortindr-cloud-fortinetfortindrcloudworkbook.md) | [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md)<br>[`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md)<br>[`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Fortinet_FortiNDR_Cloud](../content/4c846775-c295-421f-9275-ded657b190d6.md) | - | - |
+| [Fortinet_FortiNDR_Cloud](../content/fortinet-fortindr-cloud-fortinet-fortindr-cloud-4c846775-c295-421f-9275-ded657b190d6.md) | - | - |
 
 ## Release Notes
 

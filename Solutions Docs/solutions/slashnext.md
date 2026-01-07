@@ -39,8 +39,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SlashNext Phishing Incident Investigation Playbook](../content/slashnext-phishing-incident-investigation-playbook-slashnext.md) | Enhance your security with threat hunting and incident investigation using this playbook. Scan with ... | - |
-| [SlashNext Web Access Log Assessment](../content/slashnext-web-access-log-assessment-slashnext.md) | Designed to analyze Web Access logs from Web Gateways and Firewalls. Scan your logs for continuous d... | - |
+| [SlashNext Phishing Incident Investigation Playbook](../content/slashnext-slashnext-phishing-incident-investigation-playbook.md) | Enhance your security with threat hunting and incident investigation using this playbook. Scan with ... | - |
+| [SlashNext Web Access Log Assessment](../content/slashnext-slashnext-web-access-log-assessment.md) | Designed to analyze Web Access logs from Web Gateways and Firewalls. Scan your logs for continuous d... | - |
 
 ## Release Notes
 

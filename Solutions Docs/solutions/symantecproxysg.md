@@ -39,8 +39,8 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive Denied Proxy Traffic](../content/7a58b253-0ef2-4248-b4e5-c350f15a8346.md) | Low | DefenseEvasion, CommandAndControl | - |
-| [User Accessed Suspicious URL Categories](../content/fb0f4a93-d8ad-4b54-9931-85bdb7550f90.md) | Medium | InitialAccess, CommandAndControl | - |
+| [Excessive Denied Proxy Traffic](../content/symantecproxysg-excessive-denied-proxy-traffic-7a58b253-0ef2-4248-b4e5-c350f15a8346.md) | Low | DefenseEvasion, CommandAndControl | - |
+| [User Accessed Suspicious URL Categories](../content/symantecproxysg-user-accessed-suspicious-url-categories-fb0f4a93-d8ad-4b54-9931-85bdb7550f90.md) | Medium | InitialAccess, CommandAndControl | - |
 
 ### Workbooks
 
@@ -52,7 +52,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecProxySG](../content/58b3074c-519b-4812-b784-e8bd7712089a.md) | - | - |
+| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-58b3074c-519b-4812-b784-e8bd7712089a.md) | - | - |
 
 ## Release Notes
 

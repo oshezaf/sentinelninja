@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Cyble Vision](../solutions/cyble-vision.md):**
-- [CybleVisionAlertsWorkbook](../content/cyblevisionalertsworkbook-cyble-vision.md)
+- [CybleVisionAlertsWorkbook](../content/cyble-vision-cyblevisionalertsworkbook.md)
 
 ---
 

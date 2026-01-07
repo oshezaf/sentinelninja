@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [NetwrixAuditor](../content/674547ea-1823-4a88-b2fc-b5ac53b3ccdd.md) | - | - |
+| [NetwrixAuditor](../content/netwrix-auditor-netwrixauditor-674547ea-1823-4a88-b2fc-b5ac53b3ccdd.md) | - | - |
 
 ## Release Notes
 

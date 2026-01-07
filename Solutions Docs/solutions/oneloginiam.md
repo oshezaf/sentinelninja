@@ -40,7 +40,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OneLogin](../content/cd80d5ce-6c89-4d23-9f98-77066a599982.md) | - | - |
+| [OneLogin](../content/oneloginiam-onelogin-cd80d5ce-6c89-4d23-9f98-77066a599982.md) | - | - |
 
 ## Release Notes
 

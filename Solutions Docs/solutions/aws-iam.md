@@ -29,10 +29,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AWS - Disable S3 Bucket Public Access](../content/aws---disable-s3-bucket-public-access-aws-iam.md) | This playbook disables public access AWS S3 bucket. It is triggered by an incident in Microsoft Sent... | - |
-| [AWS IAM - Add tag to user](../content/aws-iam---add-tag-to-user-aws-iam.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [AWS IAM - Delete access keys](../content/aws-iam---delete-access-keys-aws-iam.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [AWS IAM - Enrich incident with user info](../content/aws-iam---enrich-incident-with-user-info-aws-iam.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [AWS - Disable S3 Bucket Public Access](../content/aws-iam-aws---disable-s3-bucket-public-access.md) | This playbook disables public access AWS S3 bucket. It is triggered by an incident in Microsoft Sent... | - |
+| [AWS IAM - Add tag to user](../content/aws-iam-aws-iam---add-tag-to-user.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [AWS IAM - Delete access keys](../content/aws-iam-aws-iam---delete-access-keys.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [AWS IAM - Enrich incident with user info](../content/aws-iam-aws-iam---enrich-incident-with-user-info.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 
 ---
 

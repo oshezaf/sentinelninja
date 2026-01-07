@@ -19,8 +19,8 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security---exchange-online.md):**
-- [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-least-privilege-with-rbac---online-microsoft-exchange-security---exchange-online.md)
-- [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-review---online-microsoft-exchange-security---exchange-online.md)
+- [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-least-privilege-with-rbac---online.md)
+- [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-security-review---online.md)
 
 ---
 

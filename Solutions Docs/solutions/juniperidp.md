@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [JuniperIDP](../content/68bdf4f9-77cb-42f0-b620-70a69858ddf3.md) | - | - |
+| [JuniperIDP](../content/juniperidp-juniperidp-68bdf4f9-77cb-42f0-b620-70a69858ddf3.md) | - | - |
 
 ## Release Notes
 

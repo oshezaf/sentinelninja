@@ -39,8 +39,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Azure Key Vault Access Policy Manipulation](../content/8eff7055-9138-4edc-b8f0-48ea27e23c3c.md) | CredentialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [Azure Resources Assigned Public IP Addresses](../content/8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75.md) | Impact | [`AzureActivity`](../tables/azureactivity.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) |
+| [Azure Key Vault Access Policy Manipulation](../content/cloud-service-threat-protection-essentials-azure-key-vault-access-policy-manipulation-8eff7055-9138-4edc-b8f0-48ea27e23c3c.md) | CredentialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75.md) | Impact | [`AzureActivity`](../tables/azureactivity.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) |
 
 ## Release Notes
 

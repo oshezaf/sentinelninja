@@ -43,15 +43,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cortex XDR Incident - High](../content/f96728eb-9802-4522-b715-47fb66c2ecf5.md) | High | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
-| [Cortex XDR Incident - Low](../content/1426bbcf-a9ae-4aa5-9da6-abbf48f04115.md) | Low | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
-| [Cortex XDR Incident - Medium](../content/2b05823b-ee15-4b92-a642-b13170e37c35.md) | Medium | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
+| [Cortex XDR Incident - High](../content/cortex-xdr-cortex-xdr-incident---high-f96728eb-9802-4522-b715-47fb66c2ecf5.md) | High | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
+| [Cortex XDR Incident - Low](../content/cortex-xdr-cortex-xdr-incident---low-1426bbcf-a9ae-4aa5-9da6-abbf48f04115.md) | Low | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
+| [Cortex XDR Incident - Medium](../content/cortex-xdr-cortex-xdr-incident---medium-2b05823b-ee15-4b92-a642-b13170e37c35.md) | Medium | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PaloAltoCortexXDR](../content/d846f2f3-f691-4baf-a19f-82ce22e9c366.md) | - | - |
+| [PaloAltoCortexXDR](../content/cortex-xdr-paloaltocortexxdr-d846f2f3-f691-4baf-a19f-82ce22e9c366.md) | - | - |
 
 ## Release Notes
 

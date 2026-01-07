@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Cisco ETD](../solutions/cisco-etd.md):**
-- [CiscoETD](../content/ciscoetd-cisco-etd.md)
+- [CiscoETD](../content/cisco-etd-ciscoetd.md)
 
 ---
 

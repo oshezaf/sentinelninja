@@ -48,21 +48,21 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Multi-Factor Authentication Disabled for a User](../content/65c78944-930b-4cae-bd79-c3664ae30ba7.md) | Medium | CredentialAccess, Persistence | - |
-| [New External User Granted Admin Role](../content/d7424fd9-abb3-4ded-a723-eebe023aaa0b.md) | Medium | Persistence | [`AuditLogs`](../tables/auditlogs.md) |
+| [Multi-Factor Authentication Disabled for a User](../content/cloud-identity-threat-protection-essentials-multi-factor-authentication-disabled-for-a-user-65c78944-930b-4cae-bd79-c3664ae30ba7.md) | Medium | CredentialAccess, Persistence | - |
+| [New External User Granted Admin Role](../content/cloud-identity-threat-protection-essentials-new-external-user-granted-admin-role-d7424fd9-abb3-4ded-a723-eebe023aaa0b.md) | Medium | Persistence | [`AuditLogs`](../tables/auditlogs.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Application Granted EWS Permissions](../content/c7941212-4ff9-4d2d-b38d-54d78fa087cc.md) | Collection, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
-| [Detect Disabled Account Sign-in Attempts by Account Name](../content/b00f127c-46fa-40bd-9ab6-b266974d29cc.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
-| [Detect Disabled Account Sign-in Attempts by IP Address](../content/0cd51b2e-d3b2-4001-8e3f-5cbb604f69b2.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md) |
-| [Interactive STS refresh token modifications](../content/4696e072-aca8-4a4f-bf05-89fddc5ac3c9.md) | CredentialAccess | [`AuditLogs`](../tables/auditlogs.md) |
-| [Sign-ins From VPS Providers](../content/86490334-5371-40a2-971a-3749c2654954.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
-| [Sign-ins from Nord VPN Providers](../content/cdc9b092-8a16-4559-9e5e-831877e8209a.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
-| [Suspicious Sign-ins to Privileged Account](../content/a73c52f2-b3a5-4fe4-be7d-4d59b8558590.md) | InitialAccess | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
-| [User Granted Access and Grants Access to Other Users](../content/2b6a3882-d601-4298-983b-880f6dc7acdb.md) | Persistence, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
+| [Application Granted EWS Permissions](../content/cloud-identity-threat-protection-essentials-application-granted-ews-permissions-c7941212-4ff9-4d2d-b38d-54d78fa087cc.md) | Collection, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
+| [Detect Disabled Account Sign-in Attempts by Account Name](../content/cloud-identity-threat-protection-essentials-detect-disabled-account-sign-in-attempts-by-account-name-b00f127c-46fa-40bd-9ab6-b266974d29cc.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
+| [Detect Disabled Account Sign-in Attempts by IP Address](../content/cloud-identity-threat-protection-essentials-detect-disabled-account-sign-in-attempts-by-ip-address-0cd51b2e-d3b2-4001-8e3f-5cbb604f69b2.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md) |
+| [Interactive STS refresh token modifications](../content/cloud-identity-threat-protection-essentials-interactive-sts-refresh-token-modifications-4696e072-aca8-4a4f-bf05-89fddc5ac3c9.md) | CredentialAccess | [`AuditLogs`](../tables/auditlogs.md) |
+| [Sign-ins From VPS Providers](../content/cloud-identity-threat-protection-essentials-sign-ins-from-vps-providers-86490334-5371-40a2-971a-3749c2654954.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
+| [Sign-ins from Nord VPN Providers](../content/cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
+| [Suspicious Sign-ins to Privileged Account](../content/cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590.md) | InitialAccess | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
+| [User Granted Access and Grants Access to Other Users](../content/cloud-identity-threat-protection-essentials-user-granted-access-and-grants-access-to-other-users-2b6a3882-d601-4298-983b-880f6dc7acdb.md) | Persistence, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 
 ## Release Notes
 

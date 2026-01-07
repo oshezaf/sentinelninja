@@ -40,7 +40,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CofenseTriageThreatIndicators](../content/cofensetriagethreatindicators-cofensetriage.md) | [`Report_links_data_CL`](../tables/report-links-data-cl.md) |
+| [CofenseTriageThreatIndicators](../content/cofensetriage-cofensetriagethreatindicators.md) | [`Report_links_data_CL`](../tables/report-links-data-cl.md) |
 
 ## Release Notes
 

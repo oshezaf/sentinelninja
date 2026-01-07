@@ -43,31 +43,31 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Employee account deleted](../content/8a2cc466-342d-4ebb-8871-f9e1d83a24a5.md) | Medium | Impact | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
-| [Failed sign-ins into LastPass due to MFA](../content/760b8467-e6cc-4006-9149-5696845c1a54.md) | Low | InitialAccess | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
-| [Highly Sensitive Password Accessed](../content/b39e6482-ab7e-4817-813d-ec910b64b26e.md) | Medium | CredentialAccess, Discovery | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
-| [TI map IP entity to LastPass data](../content/2a723664-22c2-4d3e-bbec-5843b90166f3.md) | Medium | Impact | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [Unusual Volume of Password Updated or Removed](../content/a3bbdf60-0a6d-4cc2-b1d1-dd70aca184ce.md) | Low | Impact | - |
+| [Employee account deleted](../content/lastpass-employee-account-deleted-8a2cc466-342d-4ebb-8871-f9e1d83a24a5.md) | Medium | Impact | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
+| [Failed sign-ins into LastPass due to MFA](../content/lastpass-failed-sign-ins-into-lastpass-due-to-mfa-760b8467-e6cc-4006-9149-5696845c1a54.md) | Low | InitialAccess | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
+| [Highly Sensitive Password Accessed](../content/lastpass-highly-sensitive-password-accessed-b39e6482-ab7e-4817-813d-ec910b64b26e.md) | Medium | CredentialAccess, Discovery | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
+| [TI map IP entity to LastPass data](../content/lastpass-ti-map-ip-entity-to-lastpass-data-2a723664-22c2-4d3e-bbec-5843b90166f3.md) | Medium | Impact | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [Unusual Volume of Password Updated or Removed](../content/lastpass-unusual-volume-of-password-updated-or-removed-a3bbdf60-0a6d-4cc2-b1d1-dd70aca184ce.md) | Low | Impact | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Failed sign-ins into LastPass due to MFA.](../content/b43fc364-69fc-4d3e-8834-6743ab5725e9.md) | InitialAccess | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
-| [Login into LastPass from a previously unknown IP.](../content/d292d770-69a4-4399-9272-6e86c4e53e58.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md) |
-| [Password moved to shared folders](../content/e70f1b22-acd1-493f-bba5-b28bea988940.md) | Collection | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
+| [Failed sign-ins into LastPass due to MFA.](../content/lastpass-failed-sign-ins-into-lastpass-due-to-mfa.-b43fc364-69fc-4d3e-8834-6743ab5725e9.md) | InitialAccess | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
+| [Login into LastPass from a previously unknown IP.](../content/lastpass-login-into-lastpass-from-a-previously-unknown-ip.-d292d770-69a4-4399-9272-6e86c4e53e58.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md) |
+| [Password moved to shared folders](../content/lastpass-password-moved-to-shared-folders-e70f1b22-acd1-493f-bba5-b28bea988940.md) | Collection | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [LastPassWorkbook](../content/lastpassworkbook-lastpass.md) | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [LastPassWorkbook](../content/lastpass-lastpassworkbook.md) | [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [HighlySensitivePasswords](../content/highlysensitivepasswords-lastpass.md) | - | - |
+| [HighlySensitivePasswords](../content/lastpass-highlysensitivepasswords.md) | - | - |
 
 ## Additional Documentation
 

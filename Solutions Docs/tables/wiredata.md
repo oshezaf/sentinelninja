@@ -23,7 +23,7 @@ This table is used by the following solutions:
 ### Hunting Queries (1)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
-- [TI Map File Entity to WireData Event](../content/689a9475-440b-4e69-8ab1-a5e241685f39.md)
+- [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39.md)
 
 ## Resource Types
 

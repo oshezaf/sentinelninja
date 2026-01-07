@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [CofenseTriage](../solutions/cofensetriage.md):**
-- [CofenseTriageThreatIndicators](../content/cofensetriagethreatindicators-cofensetriage.md)
+- [CofenseTriageThreatIndicators](../content/cofensetriage-cofensetriagethreatindicators.md)
 
 ---
 

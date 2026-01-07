@@ -27,7 +27,7 @@ This table is used by the following solutions:
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [InvestigationInsights](../content/investigationinsights-soc-handbook.md)
+- [InvestigationInsights](../content/soc-handbook-investigationinsights.md)
 
 ## Resource Types
 

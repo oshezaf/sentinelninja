@@ -39,16 +39,16 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dragos Notifications](../content/9a74fe72-4c21-4ac5-80d9-37434e809721.md) | Medium | - | - |
+| [Dragos Notifications](../content/dragos-dragos-notifications-9a74fe72-4c21-4ac5-80d9-37434e809721.md) | Medium | - | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DragosNotificationsToSentinel](../content/b5237116-c40a-4cbe-bac6-c35564a0c578.md) | - | - |
-| [DragosPullNotificationsToSentinel](../content/b5237116-c40a-4cbe-bac6-c35564a0c578.md) | - | - |
-| [DragosPushNotificationsToSentinel](../content/90305294-242b-4568-8878-8fc65204f47a.md) | - | - |
-| [DragosSeverityToSentinelSeverity](../content/0a51be06-1211-4d3b-8683-a4e44f069b7d.md) | - | - |
+| [DragosNotificationsToSentinel](../content/dragos-dragosnotificationstosentinel-b5237116-c40a-4cbe-bac6-c35564a0c578.md) | - | - |
+| [DragosPullNotificationsToSentinel](../content/dragos-dragospullnotificationstosentinel-b5237116-c40a-4cbe-bac6-c35564a0c578.md) | - | - |
+| [DragosPushNotificationsToSentinel](../content/dragos-dragospushnotificationstosentinel-90305294-242b-4568-8878-8fc65204f47a.md) | - | - |
+| [DragosSeverityToSentinelSeverity](../content/dragos-dragosseveritytosentinelseverity-0a51be06-1211-4d3b-8683-a4e44f069b7d.md) | - | - |
 
 ## Release Notes
 

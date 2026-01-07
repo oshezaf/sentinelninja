@@ -45,32 +45,32 @@ This solution includes **16 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [VMware Cloud Web Security - Data Loss Prevention Violation](../content/d811ef72-66b9-43a3-ba29-cd9e4bf75b74.md) | Medium | - | [`VMware_CWS_DLPLogs_CL`](../tables/vmware-cws-dlplogs-cl.md) |
-| [VMware Cloud Web Security - Policy Change Detected](../content/3efebd49-c985-431b-9da8-d7d397092d18.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
-| [VMware Cloud Web Security - Policy Publish Event](../content/b26a7d97-6b6e-43ab-870e-eb18460ae602.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
-| [VMware Cloud Web Security - Web Access Policy Violation](../content/b84a1f62-ad30-4ae1-8b21-3d304d8aa818.md) | Medium | - | [`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md) |
-| [VMware Edge Cloud Orchestrator - New LAN-Side Client Device Detected](../content/69c0644f-4ad5-41b6-9e09-a94c072ab80e.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
-| [VMware SD-WAN - Orchestrator Audit Event](../content/50c86f92-86b0-4ae3-bb94-698da076ca9e.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
-| [VMware SD-WAN Edge - All Cloud Security Service Tunnels DOWN](../content/8d05cc90-d337-41f5-b5fa-614cbfe1a879.md) | Medium | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
-| [VMware SD-WAN Edge - Device Congestion Alert - Packet Drops](../content/a88ead0a-f022-48d6-8f53-e5a164c4c72e.md) | Medium | Impact | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
-| [VMware SD-WAN Edge - IDS/IPS Alert triggered (Search API)](../content/44f78dbf-9f29-4ec0-aaca-ab5bf0b559af.md) | High | LateralMovement | [`VMware_SDWAN_FirewallLogs_CL`](../tables/vmware-sdwan-firewalllogs-cl.md) |
-| [VMware SD-WAN Edge - IDS/IPS Alert triggered (Syslog)](../content/a8e2bfd2-5d9c-4acc-aa55-30029e50d574.md) | High | LateralMovement | [`Syslog`](../tables/syslog.md) |
-| [VMware SD-WAN Edge - IDS/IPS Signature Update Failed](../content/27553108-4aaf-4a3e-8ecd-5439d820d474.md) | High | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
-| [VMware SD-WAN Edge - IDS/IPS Signature Update Succeeded](../content/6364be84-9f13-4fd8-8b4a-8ccb43a89376.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
-| [VMware SD-WAN Edge - Network Anomaly Detection - Potential Fragmentation Attack](../content/ce207901-ed7b-49ae-ada7-033e1fbb1240.md) | Low | Impact, DefenseEvasion | [`Syslog`](../tables/syslog.md) |
-| [VMware SD-WAN Edge - Network Anomaly Detection - RPF Check Failure](../content/840b050f-842b-4264-8973-d4f9b65facb5.md) | Low | Impact | [`Syslog`](../tables/syslog.md) |
+| [VMware Cloud Web Security - Data Loss Prevention Violation](../content/vmware-sd-wan-and-sase-vmware-cloud-web-security---data-loss-prevention-violation-d811ef72-66b9-43a3-ba29-cd9e4bf75b74.md) | Medium | - | [`VMware_CWS_DLPLogs_CL`](../tables/vmware-cws-dlplogs-cl.md) |
+| [VMware Cloud Web Security - Policy Change Detected](../content/vmware-sd-wan-and-sase-vmware-cloud-web-security---policy-change-detected-3efebd49-c985-431b-9da8-d7d397092d18.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMware Cloud Web Security - Policy Publish Event](../content/vmware-sd-wan-and-sase-vmware-cloud-web-security---policy-publish-event-b26a7d97-6b6e-43ab-870e-eb18460ae602.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMware Cloud Web Security - Web Access Policy Violation](../content/vmware-sd-wan-and-sase-vmware-cloud-web-security---web-access-policy-violation-b84a1f62-ad30-4ae1-8b21-3d304d8aa818.md) | Medium | - | [`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md) |
+| [VMware Edge Cloud Orchestrator - New LAN-Side Client Device Detected](../content/vmware-sd-wan-and-sase-vmware-edge-cloud-orchestrator---new-lan-side-client-device-detected-69c0644f-4ad5-41b6-9e09-a94c072ab80e.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMware SD-WAN - Orchestrator Audit Event](../content/vmware-sd-wan-and-sase-vmware-sd-wan---orchestrator-audit-event-50c86f92-86b0-4ae3-bb94-698da076ca9e.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMware SD-WAN Edge - All Cloud Security Service Tunnels DOWN](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---all-cloud-security-service-tunnels-down-8d05cc90-d337-41f5-b5fa-614cbfe1a879.md) | Medium | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMware SD-WAN Edge - Device Congestion Alert - Packet Drops](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---device-congestion-alert---packet-drops-a88ead0a-f022-48d6-8f53-e5a164c4c72e.md) | Medium | Impact | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMware SD-WAN Edge - IDS/IPS Alert triggered (Search API)](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---ids-ips-alert-triggered-%28search-api%29-44f78dbf-9f29-4ec0-aaca-ab5bf0b559af.md) | High | LateralMovement | [`VMware_SDWAN_FirewallLogs_CL`](../tables/vmware-sdwan-firewalllogs-cl.md) |
+| [VMware SD-WAN Edge - IDS/IPS Alert triggered (Syslog)](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---ids-ips-alert-triggered-%28syslog%29-a8e2bfd2-5d9c-4acc-aa55-30029e50d574.md) | High | LateralMovement | [`Syslog`](../tables/syslog.md) |
+| [VMware SD-WAN Edge - IDS/IPS Signature Update Failed](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---ids-ips-signature-update-failed-27553108-4aaf-4a3e-8ecd-5439d820d474.md) | High | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMware SD-WAN Edge - IDS/IPS Signature Update Succeeded](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---ids-ips-signature-update-succeeded-6364be84-9f13-4fd8-8b4a-8ccb43a89376.md) | Informational | - | [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMware SD-WAN Edge - Network Anomaly Detection - Potential Fragmentation Attack](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---network-anomaly-detection---potential-fragmentation-attack-ce207901-ed7b-49ae-ada7-033e1fbb1240.md) | Low | Impact, DefenseEvasion | [`Syslog`](../tables/syslog.md) |
+| [VMware SD-WAN Edge - Network Anomaly Detection - RPF Check Failure](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---network-anomaly-detection---rpf-check-failure-840b050f-842b-4264-8973-d4f9b65facb5.md) | Low | Impact | [`Syslog`](../tables/syslog.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [VMware Edge Cloud Orchestrator - High number of login failures from a source IP address](../content/c514ecc9-fa74-4977-976b-847895ee7e71.md) | CredentialAccess, InitialAccess | - |
+| [VMware Edge Cloud Orchestrator - High number of login failures from a source IP address](../content/vmware-sd-wan-and-sase-vmware-edge-cloud-orchestrator---high-number-of-login-failures-from-a-source-ip-address-c514ecc9-fa74-4977-976b-847895ee7e71.md) | CredentialAccess, InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VMwareSASESOCDashboard](../content/vmwaresasesocdashboard-vmware-sd-wan-and-sase.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VMware_CWS_Health_CL`](../tables/vmware-cws-health-cl.md)<br>[`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md)<br>[`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
+| [VMwareSASESOCDashboard](../content/vmware-sd-wan-and-sase-vmwaresasesocdashboard.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VMware_CWS_Health_CL`](../tables/vmware-cws-health-cl.md)<br>[`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md)<br>[`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |
 
 ## Additional Documentation
 

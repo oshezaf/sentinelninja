@@ -24,7 +24,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md), [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) | - |
 | [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
 
 ## Content Items
@@ -42,43 +42,43 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Imperva - Abnormal protocol usage](../content/363307f6-09ba-4926-ad52-03aadfd24b5e.md) | Medium | InitialAccess | - |
-| [Imperva - Critical severity event not blocked](../content/4d365217-f96a-437c-9c57-53594fa261c3.md) | High | InitialAccess | - |
-| [Imperva - Forbidden HTTP request method in request](../content/7ebc9e24-319c-4786-9151-c898240463bc.md) | Medium | InitialAccess | - |
-| [Imperva - Malicious Client](../content/2ff35ed4-b26a-4cad-93a6-f67adb00e919.md) | High | InitialAccess | - |
-| [Imperva - Malicious user agent](../content/905794a9-bc46-42b9-974d-5a2dd58110c5.md) | High | InitialAccess | - |
-| [Imperva - Multiple user agents from same source](../content/4e8032eb-f04d-4a30-85d3-b74bf2c8f204.md) | Medium | InitialAccess | - |
-| [Imperva - Possible command injection](../content/6214f187-5840-4cf7-a174-0cf9a72bfd29.md) | High | InitialAccess | - |
-| [Imperva - Request from unexpected IP address to admin panel](../content/427c025d-c068-4844-8205-66879e89bcfa.md) | High | InitialAccess | - |
-| [Imperva - Request from unexpected countries](../content/58300723-22e0-4096-b33a-aa9b992c3564.md) | High | InitialAccess | - |
-| [Imperva - Request to unexpected destination port](../content/0ba78922-033c-468c-82de-2974d7b1797d.md) | High | InitialAccess | - |
+| [Imperva - Abnormal protocol usage](../content/impervacloudwaf-imperva---abnormal-protocol-usage-363307f6-09ba-4926-ad52-03aadfd24b5e.md) | Medium | InitialAccess | - |
+| [Imperva - Critical severity event not blocked](../content/impervacloudwaf-imperva---critical-severity-event-not-blocked-4d365217-f96a-437c-9c57-53594fa261c3.md) | High | InitialAccess | - |
+| [Imperva - Forbidden HTTP request method in request](../content/impervacloudwaf-imperva---forbidden-http-request-method-in-request-7ebc9e24-319c-4786-9151-c898240463bc.md) | Medium | InitialAccess | - |
+| [Imperva - Malicious Client](../content/impervacloudwaf-imperva---malicious-client-2ff35ed4-b26a-4cad-93a6-f67adb00e919.md) | High | InitialAccess | - |
+| [Imperva - Malicious user agent](../content/impervacloudwaf-imperva---malicious-user-agent-905794a9-bc46-42b9-974d-5a2dd58110c5.md) | High | InitialAccess | - |
+| [Imperva - Multiple user agents from same source](../content/impervacloudwaf-imperva---multiple-user-agents-from-same-source-4e8032eb-f04d-4a30-85d3-b74bf2c8f204.md) | Medium | InitialAccess | - |
+| [Imperva - Possible command injection](../content/impervacloudwaf-imperva---possible-command-injection-6214f187-5840-4cf7-a174-0cf9a72bfd29.md) | High | InitialAccess | - |
+| [Imperva - Request from unexpected IP address to admin panel](../content/impervacloudwaf-imperva---request-from-unexpected-ip-address-to-admin-panel-427c025d-c068-4844-8205-66879e89bcfa.md) | High | InitialAccess | - |
+| [Imperva - Request from unexpected countries](../content/impervacloudwaf-imperva---request-from-unexpected-countries-58300723-22e0-4096-b33a-aa9b992c3564.md) | High | InitialAccess | - |
+| [Imperva - Request to unexpected destination port](../content/impervacloudwaf-imperva---request-to-unexpected-destination-port-0ba78922-033c-468c-82de-2974d7b1797d.md) | High | InitialAccess | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Imperva - Applications with insecure web protocol version](../content/4cf72a93-537a-4c1f-83a3-0a5b743fe93e.md) | InitialAccess | - |
-| [Imperva - Non HTTP/HTTPs applications](../content/1f99e54f-0e75-474e-8232-90963207f02b.md) | InitialAccess | - |
-| [Imperva - Rare applications](../content/426a8b59-41ad-4022-bb01-cf914fd5687a.md) | InitialAccess | - |
-| [Imperva - Rare client applications](../content/4a8a88af-4f40-40bd-aca8-e016dd6960de.md) | InitialAccess | - |
-| [Imperva - Rare destination ports](../content/e68c3b84-7895-41d5-a9af-4ef776e82408.md) | InitialAccess | - |
-| [Imperva - Top applications with error requests](../content/934f19a5-f4bc-47eb-a213-db918b097434.md) | InitialAccess | - |
-| [Imperva - Top destinations with blocked requests](../content/e360c980-b515-4c27-921c-19d411bd059d.md) | InitialAccess, Impact | - |
-| [Imperva - Top sources with blocked requests](../content/ec5b9eb6-f43a-40fc-ae65-2af9ae1e77ae.md) | InitialAccess, Impact | - |
-| [Imperva - Top sources with error requests](../content/c359e40f-3a56-4e75-8dbb-41e5057bba64.md) | InitialAccess | - |
-| [Imperva - request from known bots](../content/4cb3088c-445a-4a99-a90f-d583fe253a7d.md) | InitialAccess | - |
+| [Imperva - Applications with insecure web protocol version](../content/impervacloudwaf-imperva---applications-with-insecure-web-protocol-version-4cf72a93-537a-4c1f-83a3-0a5b743fe93e.md) | InitialAccess | - |
+| [Imperva - Non HTTP/HTTPs applications](../content/impervacloudwaf-imperva---non-http-https-applications-1f99e54f-0e75-474e-8232-90963207f02b.md) | InitialAccess | - |
+| [Imperva - Rare applications](../content/impervacloudwaf-imperva---rare-applications-426a8b59-41ad-4022-bb01-cf914fd5687a.md) | InitialAccess | - |
+| [Imperva - Rare client applications](../content/impervacloudwaf-imperva---rare-client-applications-4a8a88af-4f40-40bd-aca8-e016dd6960de.md) | InitialAccess | - |
+| [Imperva - Rare destination ports](../content/impervacloudwaf-imperva---rare-destination-ports-e68c3b84-7895-41d5-a9af-4ef776e82408.md) | InitialAccess | - |
+| [Imperva - Top applications with error requests](../content/impervacloudwaf-imperva---top-applications-with-error-requests-934f19a5-f4bc-47eb-a213-db918b097434.md) | InitialAccess | - |
+| [Imperva - Top destinations with blocked requests](../content/impervacloudwaf-imperva---top-destinations-with-blocked-requests-e360c980-b515-4c27-921c-19d411bd059d.md) | InitialAccess, Impact | - |
+| [Imperva - Top sources with blocked requests](../content/impervacloudwaf-imperva---top-sources-with-blocked-requests-ec5b9eb6-f43a-40fc-ae65-2af9ae1e77ae.md) | InitialAccess, Impact | - |
+| [Imperva - Top sources with error requests](../content/impervacloudwaf-imperva---top-sources-with-error-requests-c359e40f-3a56-4e75-8dbb-41e5057bba64.md) | InitialAccess | - |
+| [Imperva - request from known bots](../content/impervacloudwaf-imperva---request-from-known-bots-4cb3088c-445a-4a99-a90f-d583fe253a7d.md) | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Imperva WAF Cloud Overview](../content/imperva-waf-cloud-overview-impervacloudwaf.md) | - |
+| [Imperva WAF Cloud Overview](../content/impervacloudwaf-imperva-waf-cloud-overview.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ImpervaWAFCloud](../content/ebd38cc1-5c07-4d25-8ae5-7b40cdc6fa6e.md) | - | - |
+| [ImpervaWAFCloud](../content/impervacloudwaf-impervawafcloud-ebd38cc1-5c07-4d25-8ae5-7b40cdc6fa6e.md) | - | - |
 
 ## Release Notes
 

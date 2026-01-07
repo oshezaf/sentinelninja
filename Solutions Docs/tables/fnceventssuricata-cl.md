@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md):**
-- [FortinetFortiNdrCloudWorkbook](../content/fortinetfortindrcloudworkbook-fortinet-fortindr-cloud.md)
+- [FortinetFortiNdrCloudWorkbook](../content/fortinet-fortindr-cloud-fortinetfortindrcloudworkbook.md)
 
 ---
 

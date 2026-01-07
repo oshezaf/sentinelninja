@@ -60,7 +60,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Azure Security Benchmark Posture Changed](../content/0610e72f-ceaf-42d1-879e-952a1bd8d07a.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
+| [Azure Security Benchmark Posture Changed](../content/azuresecuritybenchmark-azure-security-benchmark-posture-changed-0610e72f-ceaf-42d1-879e-952a1bd8d07a.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
 
 ### Workbooks
 
@@ -72,9 +72,9 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Jira Issue](../content/create-jira-issue-azuresecuritybenchmark.md) | This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel. | - |
-| [Create-AzureDevOpsTask](../content/create-azuredevopstask-azuresecuritybenchmark.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
-| [Notify-GovernanceComplianceTeam](../content/notify-governancecomplianceteam-azuresecuritybenchmark.md) | This Security Orchestration, Automation, & Response (SOAR) capability is designed for configuration ... | - |
+| [Create Jira Issue](../content/azuresecuritybenchmark-create-jira-issue.md) | This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel. | - |
+| [Create-AzureDevOpsTask](../content/azuresecuritybenchmark-create-azuredevopstask.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
+| [Notify-GovernanceComplianceTeam](../content/azuresecuritybenchmark-notify-governancecomplianceteam.md) | This Security Orchestration, Automation, & Response (SOAR) capability is designed for configuration ... | - |
 
 ## Additional Documentation
 

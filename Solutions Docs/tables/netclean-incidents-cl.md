@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [NetClean ProActive](../solutions/netclean-proactive.md):**
-- [NetClean ProActive Incidents](../content/77548170-5c60-42e5-bdac-b0360d0779bb.md)
+- [NetClean ProActive Incidents](../content/netclean-proactive-netclean-proactive-incidents-77548170-5c60-42e5-bdac-b0360d0779bb.md)
 
 ### Workbooks (1)
 
 **In solution [NetClean ProActive](../solutions/netclean-proactive.md):**
-- [NetCleanProActiveWorkbook](../content/netcleanproactiveworkbook-netclean-proactive.md)
+- [NetCleanProActiveWorkbook](../content/netclean-proactive-netcleanproactiveworkbook.md)
 
 ---
 

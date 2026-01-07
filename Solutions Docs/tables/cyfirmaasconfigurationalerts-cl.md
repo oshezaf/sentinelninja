@@ -19,8 +19,8 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Cyfirma Attack Surface](../solutions/cyfirma-attack-surface.md):**
-- [CYFIRMA - Attack Surface - Configuration High Rule](../content/30206b45-75d2-4c6a-87c5-f0861c1f2870.md)
-- [CYFIRMA - Attack Surface - Configuration Medium Rule](../content/e1f88d08-5c32-4d35-a8ce-2f21cdb4b6de.md)
+- [CYFIRMA - Attack Surface - Configuration High Rule](../content/cyfirma-attack-surface-cyfirma---attack-surface---configuration-high-rule-30206b45-75d2-4c6a-87c5-f0861c1f2870.md)
+- [CYFIRMA - Attack Surface - Configuration Medium Rule](../content/cyfirma-attack-surface-cyfirma---attack-surface---configuration-medium-rule-e1f88d08-5c32-4d35-a8ce-2f21cdb4b6de.md)
 
 ---
 

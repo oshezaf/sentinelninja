@@ -39,20 +39,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive Amount of Denied Connections from a Single Source](../content/3d645a88-2724-41a7-adea-db74c439cf79.md) | Medium | Impact | - |
-| [Port Scan Detected](../content/427e4c9e-8cf4-4094-a684-a2d060dbca38.md) | Medium | Discovery | - |
+| [Excessive Amount of Denied Connections from a Single Source](../content/sophos-xg-firewall-excessive-amount-of-denied-connections-from-a-single-source-3d645a88-2724-41a7-adea-db74c439cf79.md) | Medium | Impact | - |
+| [Port Scan Detected](../content/sophos-xg-firewall-port-scan-detected-427e4c9e-8cf4-4094-a684-a2d060dbca38.md) | Medium | Discovery | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SophosXGFirewall](../content/sophosxgfirewall-sophos-xg-firewall.md) | - |
+| [SophosXGFirewall](../content/sophos-xg-firewall-sophosxgfirewall.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SophosXGFirewall](../content/8fa865c8-c62e-49f3-bc9a-6c6aeb8db133.md) | - | - |
+| [SophosXGFirewall](../content/sophos-xg-firewall-sophosxgfirewall-8fa865c8-c62e-49f3-bc9a-6c6aeb8db133.md) | - | - |
 
 ## Release Notes
 

@@ -47,7 +47,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DORACompliance](../content/doracompliance-dora-compliance.md) | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [DORACompliance](../content/dora-compliance-doracompliance.md) | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ## Release Notes
 

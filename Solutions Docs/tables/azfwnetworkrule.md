@@ -29,7 +29,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
-- [AzureFirewallWorkbook-StructuredLogs](../content/azurefirewallworkbook-structuredlogs-azure-firewall.md)
+- [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs.md)
 
 ## Resource Types
 

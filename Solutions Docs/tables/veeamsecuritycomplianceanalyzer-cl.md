@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Veeam](../solutions/veeam.md):**
-- [Best Practice Compliance Check Not Passed](../content/f920ac64-dfd0-4dea-9b7c-acecf1ea2b28.md)
+- [Best Practice Compliance Check Not Passed](../content/veeam-best-practice-compliance-check-not-passed-f920ac64-dfd0-4dea-9b7c-acecf1ea2b28.md)
 
 ### Workbooks (1)
 
 **In solution [Veeam](../solutions/veeam.md):**
-- [VeeamSecurityActivities](../content/veeamsecurityactivities-veeam.md)
+- [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities.md)
 
 ---
 

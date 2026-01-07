@@ -29,7 +29,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md):**
-- [MicrosoftCloudAppSecurity](../content/microsoftcloudappsecurity-microsoft-defender-for-cloud-apps.md)
+- [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity.md)
 
 ---
 

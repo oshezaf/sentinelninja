@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoACIEvent](../content/e89d588d-799f-486d-9632-b5dd3476cb6f.md) | - | - |
+| [CiscoACIEvent](../content/cisco-aci-ciscoacievent-e89d588d-799f-486d-9632-b5dd3476cb6f.md) | - | - |
 
 ## Release Notes
 

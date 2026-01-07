@@ -31,8 +31,8 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials---resource-abuse.md):**
-- [Cross-Cloud Suspicious Compute resource creation in GCP](../content/5c847e47-0a07-4c01-ab99-5817ad6cb11e.md)
-- [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7.md)
+- [Cross-Cloud Suspicious Compute resource creation in GCP](../content/multi-cloud-attack-coverage-essentials---resource-abuse-cross-cloud-suspicious-compute-resource-creation-in-gcp-5c847e47-0a07-4c01-ab99-5817ad6cb11e.md)
+- [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/multi-cloud-attack-coverage-essentials---resource-abuse-cross-cloud-suspicious-user-activity-observed-in-gcp-envourment-58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7.md)
 
 ---
 

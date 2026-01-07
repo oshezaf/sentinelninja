@@ -19,7 +19,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
-- [WebSessionEssentials](../content/websessionessentials-web-session-essentials.md)
+- [WebSessionEssentials](../content/web-session-essentials-websessionessentials.md)
 
 ---
 

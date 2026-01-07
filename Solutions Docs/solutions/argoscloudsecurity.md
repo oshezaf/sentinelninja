@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ARGOS Cloud Security - Exploitable Cloud Resources](../content/a9bf1b8c-c761-4840-b9a8-7535ca68ca28.md) | High | InitialAccess | [`ARGOS_CL`](../tables/argos-cl.md) |
+| [ARGOS Cloud Security - Exploitable Cloud Resources](../content/argoscloudsecurity-argos-cloud-security---exploitable-cloud-resources-a9bf1b8c-c761-4840-b9a8-7535ca68ca28.md) | High | InitialAccess | [`ARGOS_CL`](../tables/argos-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ARGOSCloudSecurityWorkbook](../content/argoscloudsecurityworkbook-argoscloudsecurity.md) | [`ARGOS_CL`](../tables/argos-cl.md) |
+| [ARGOSCloudSecurityWorkbook](../content/argoscloudsecurity-argoscloudsecurityworkbook.md) | [`ARGOS_CL`](../tables/argos-cl.md) |
 
 ---
 

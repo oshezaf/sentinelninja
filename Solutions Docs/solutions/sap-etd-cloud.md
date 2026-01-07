@@ -39,10 +39,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SAP ETD - Execution of Sensitive Function Module](../content/c6111e06-11e2-45eb-86ef-28313a06db35.md) | Medium | Discovery | - |
-| [SAP ETD - Login from unexpected network](../content/5dd72ebe-03ac-43ac-851b-68cfe5106e4f.md) | Medium | Discovery | [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) |
-| [SAP ETD - Synch alerts](../content/7a830484-e349-4527-85f6-7850c468c238.md) | Medium | - | [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) |
-| [SAP ETD - Synch investigations](../content/5096db53-fad3-4844-a264-246f7b7e6e06.md) | High | - | [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) |
+| [SAP ETD - Execution of Sensitive Function Module](../content/sap-etd-cloud-sap-etd---execution-of-sensitive-function-module-c6111e06-11e2-45eb-86ef-28313a06db35.md) | Medium | Discovery | - |
+| [SAP ETD - Login from unexpected network](../content/sap-etd-cloud-sap-etd---login-from-unexpected-network-5dd72ebe-03ac-43ac-851b-68cfe5106e4f.md) | Medium | Discovery | [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) |
+| [SAP ETD - Synch alerts](../content/sap-etd-cloud-sap-etd---synch-alerts-7a830484-e349-4527-85f6-7850c468c238.md) | Medium | - | [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) |
+| [SAP ETD - Synch investigations](../content/sap-etd-cloud-sap-etd---synch-investigations-5096db53-fad3-4844-a264-246f7b7e6e06.md) | High | - | [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) |
 
 ## Release Notes
 

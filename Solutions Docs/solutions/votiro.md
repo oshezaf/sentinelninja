@@ -37,14 +37,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Votiro - File Blocked from Connector](../content/17bf3780-ae0d-4cd9-a884-5df8b687f3f5.md) | Low | DefenseEvasion, Discovery, Impact | - |
-| [Votiro - File Blocked in Email](../content/0b8b91de-c63e-4bc2-b5f4-b15d3b379ec9.md) | Low | CommandAndControl, DefenseEvasion, Impact, InitialAccess | - |
+| [Votiro - File Blocked from Connector](../content/votiro-votiro---file-blocked-from-connector-17bf3780-ae0d-4cd9-a884-5df8b687f3f5.md) | Low | DefenseEvasion, Discovery, Impact | - |
+| [Votiro - File Blocked in Email](../content/votiro-votiro---file-blocked-in-email-0b8b91de-c63e-4bc2-b5f4-b15d3b379ec9.md) | Low | CommandAndControl, DefenseEvasion, Impact, InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Votiro Monitoring Dashboard](../content/votiro-monitoring-dashboard-votiro.md) | - |
+| [Votiro Monitoring Dashboard](../content/votiro-votiro-monitoring-dashboard.md) | - |
 
 ## Release Notes
 

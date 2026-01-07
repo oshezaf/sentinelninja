@@ -19,9 +19,9 @@ This table is ingested by the following connectors:
 ### Analytic Rules (3)
 
 **In solution [Morphisec](../solutions/morphisec.md):**
-- [Critical Severity Incident](../content/4f1c9e6e-8b6b-4d2a-9f3e-123456789abc.md)
-- [Device Alert Surge](../content/5c8e1f2e-9d6b-4f4a-8f3e-123456789abc.md)
-- [Process-Level Anomaly](../content/3fa85f64-5717-4562-b3fc-2c963f66afa6.md)
+- [Critical Severity Incident](../content/morphisec-critical-severity-incident-4f1c9e6e-8b6b-4d2a-9f3e-123456789abc.md)
+- [Device Alert Surge](../content/morphisec-device-alert-surge-5c8e1f2e-9d6b-4f4a-8f3e-123456789abc.md)
+- [Process-Level Anomaly](../content/morphisec-process-level-anomaly-3fa85f64-5717-4562-b3fc-2c963f66afa6.md)
 
 ---
 

@@ -38,15 +38,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Commvault Cloud Alert](../content/317e757e-c320-448e-8837-fc61a70fe609.md) | Medium | DefenseEvasion, Impact | [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) |
+| [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609.md) | Medium | DefenseEvasion, Impact | [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Commvault Disable Data Aging Logic App Playbook](../content/commvault-disable-data-aging-logic-app-playbook-commvault-security-iq.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
-| [Commvault Disable SAML Provider Logic App Playbook](../content/commvault-disable-saml-provider-logic-app-playbook-commvault-security-iq.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
-| [Commvault Disable User Logic App Playbook](../content/commvault-disable-user-logic-app-playbook-commvault-security-iq.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
+| [Commvault Disable Data Aging Logic App Playbook](../content/commvault-security-iq-commvault-disable-data-aging-logic-app-playbook.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
+| [Commvault Disable SAML Provider Logic App Playbook](../content/commvault-security-iq-commvault-disable-saml-provider-logic-app-playbook.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
+| [Commvault Disable User Logic App Playbook](../content/commvault-security-iq-commvault-disable-user-logic-app-playbook.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
 
 ## Additional Documentation
 

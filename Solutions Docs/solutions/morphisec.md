@@ -38,15 +38,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Critical Severity Incident](../content/4f1c9e6e-8b6b-4d2a-9f3e-123456789abc.md) | High | Execution, DefenseEvasion | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) |
-| [Device Alert Surge](../content/5c8e1f2e-9d6b-4f4a-8f3e-123456789abc.md) | High | Execution, DefenseEvasion | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) |
-| [Process-Level Anomaly](../content/3fa85f64-5717-4562-b3fc-2c963f66afa6.md) | Medium | Execution, DefenseEvasion | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) |
+| [Critical Severity Incident](../content/morphisec-critical-severity-incident-4f1c9e6e-8b6b-4d2a-9f3e-123456789abc.md) | High | Execution, DefenseEvasion | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) |
+| [Device Alert Surge](../content/morphisec-device-alert-surge-5c8e1f2e-9d6b-4f4a-8f3e-123456789abc.md) | High | Execution, DefenseEvasion | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) |
+| [Process-Level Anomaly](../content/morphisec-process-level-anomaly-3fa85f64-5717-4562-b3fc-2c963f66afa6.md) | Medium | Execution, DefenseEvasion | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Morphisec](../content/a68a352c-7f90-49ca-b5a0-36178788f43c.md) | - | - |
+| [Morphisec](../content/morphisec-morphisec-a68a352c-7f90-49ca-b5a0-36178788f43c.md) | - | - |
 
 ## Release Notes
 

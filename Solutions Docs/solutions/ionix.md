@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [High Urgency IONIX Action Items](../content/8e0403b1-07f8-4865-b2e9-74d1e83200a4.md) | High | InitialAccess | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) |
+| [High Urgency IONIX Action Items](../content/ionix-high-urgency-ionix-action-items-8e0403b1-07f8-4865-b2e9-74d1e83200a4.md) | High | InitialAccess | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IONIXOverviewWorkbook](../content/ionixoverviewworkbook-ionix.md) | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) |
+| [IONIXOverviewWorkbook](../content/ionix-ionixoverviewworkbook.md) | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) |
 
 ## Release Notes
 

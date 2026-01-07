@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ForescoutEvent](../content/ee50cfb3-9d10-4705-931e-77f8c4db8678.md) | - | - |
+| [ForescoutEvent](../content/forescout-%28legacy%29-forescoutevent-ee50cfb3-9d10-4705-931e-77f8c4db8678.md) | - | - |
 
 ## Release Notes
 

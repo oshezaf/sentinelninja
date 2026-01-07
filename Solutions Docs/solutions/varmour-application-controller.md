@@ -39,13 +39,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [vArmour AppController - SMB Realm Traversal](../content/a36de6c3-3198-4d37-92ae-e19e36712c2e.md) | Medium | Discovery, LateralMovement | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [vArmour AppController - SMB Realm Traversal](../content/varmour-application-controller-varmour-appcontroller---smb-realm-traversal-a36de6c3-3198-4d37-92ae-e19e36712c2e.md) | Medium | Discovery, LateralMovement | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [vArmour_AppContoller_Workbook](../content/varmour-appcontoller-workbook-varmour-application-controller.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [vArmour_AppContoller_Workbook](../content/varmour-application-controller-varmour-appcontoller-workbook.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [StealthwatchEvent](../content/faa3e37d-abb7-402b-b00c-9ded95d3bd13.md) | - | - |
+| [StealthwatchEvent](../content/cisco-secure-cloud-analytics-stealthwatchevent-faa3e37d-abb7-402b-b00c-9ded95d3bd13.md) | - | - |
 
 ## Release Notes
 

@@ -19,8 +19,8 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [SAP ETD Cloud](../solutions/sap-etd-cloud.md):**
-- [SAP ETD - Login from unexpected network](../content/5dd72ebe-03ac-43ac-851b-68cfe5106e4f.md)
-- [SAP ETD - Synch alerts](../content/7a830484-e349-4527-85f6-7850c468c238.md)
+- [SAP ETD - Login from unexpected network](../content/sap-etd-cloud-sap-etd---login-from-unexpected-network-5dd72ebe-03ac-43ac-851b-68cfe5106e4f.md)
+- [SAP ETD - Synch alerts](../content/sap-etd-cloud-sap-etd---synch-alerts-7a830484-e349-4527-85f6-7850c468c238.md)
 
 ---
 

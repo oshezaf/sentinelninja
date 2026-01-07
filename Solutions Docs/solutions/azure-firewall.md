@@ -49,41 +49,41 @@ This solution includes **20 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Abnormal Deny Rate for Source IP](../content/d36bb1e3-5abc-4037-ad9a-24ba3469819e.md) | Medium | InitialAccess, Exfiltration, CommandAndControl | - |
-| [Abnormal Port to Protocol](../content/826f930c-2f25-4508-8e75-a95b809a4e15.md) | Medium | Exfiltration, CommandAndControl | - |
-| [Multiple Sources Affected by the Same TI Destination](../content/4644baf7-3464-45dd-bd9d-e07687e25f81.md) | Medium | Exfiltration, CommandAndControl | - |
-| [Port Scan](../content/b2c5907b-1040-4692-9802-9946031017e8.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
-| [Port Sweep](../content/720335f4-ee8c-4270-9424-d0859222168c.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
-| [Several deny actions registered](../content/f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e.md) | Medium | Discovery, LateralMovement, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
+| [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e.md) | Medium | InitialAccess, Exfiltration, CommandAndControl | - |
+| [Abnormal Port to Protocol](../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15.md) | Medium | Exfiltration, CommandAndControl | - |
+| [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81.md) | Medium | Exfiltration, CommandAndControl | - |
+| [Port Scan](../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
+| [Port Sweep](../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
+| [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e.md) | Medium | Discovery, LateralMovement, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [First Time Source IP to Destination](../content/f055e82b-5ef6-4395-bc9e-99f7e451343a.md) | Exfiltration, CommandAndControl | - |
-| [First Time Source IP to Destination Using Port](../content/932fe71a-7a8c-4f35-bf88-321ab68ff562.md) | Exfiltration, CommandAndControl | - |
-| [Source IP Abnormally Connects to Multiple Destinations](../content/d006f4f8-86bb-4c9d-9826-837762ddad6b.md) | Execution, LateralMovement | - |
-| [Uncommon Port for Organization](../content/8812a547-13e6-4d0c-b38d-476fb7351c52.md) | Defense Evasion, Exfiltration, CommandAndControl | - |
-| [Uncommon Port to IP](../content/3d93fa57-53e5-4d5e-96d4-ad734a8df3a4.md) | Exfiltration, CommandAndControl | - |
+| [First Time Source IP to Destination](../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a.md) | Exfiltration, CommandAndControl | - |
+| [First Time Source IP to Destination Using Port](../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562.md) | Exfiltration, CommandAndControl | - |
+| [Source IP Abnormally Connects to Multiple Destinations](../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b.md) | Execution, LateralMovement | - |
+| [Uncommon Port for Organization](../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52.md) | Defense Evasion, Exfiltration, CommandAndControl | - |
+| [Uncommon Port to IP](../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4.md) | Exfiltration, CommandAndControl | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Azure Firewall Workbook - Deployment Template](../content/azure-firewall-workbook---deployment-template-azure-firewall.md) | - |
-| [Azure Firewall Workbook - Structured Logs - Deployment Template](../content/azure-firewall-workbook---structured-logs---deployment-template-azure-firewall.md) | - |
-| [AzureFirewallWorkbook](../content/azurefirewallworkbook-azure-firewall.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [AzureFirewallWorkbook-StructuredLogs](../content/azurefirewallworkbook-structuredlogs-azure-firewall.md) | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |
+| [Azure Firewall Workbook - Deployment Template](../content/azure-firewall-azure-firewall-workbook---deployment-template.md) | - |
+| [Azure Firewall Workbook - Structured Logs - Deployment Template](../content/azure-firewall-azure-firewall-workbook---structured-logs---deployment-template.md) | - |
+| [AzureFirewallWorkbook](../content/azure-firewall-azurefirewallworkbook.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs.md) | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Azure Firewall - Add IP Address to Threat Intel Allow list](../content/azure-firewall---add-ip-address-to-threat-intel-allow-list-azure-firewall.md) | This playbook allows the SOC to automatically response to Microsoft Sentinel incidents which include... | - |
-| [Block IP - Azure Firewall IP groups](../content/block-ip---azure-firewall-ip-groups-azure-firewall.md) | This playbook allows blocking/allowing IPs in Azure Firewall. It allows to make changes on IP groups... | - |
-| [Block IP - Azure Firewall IP groups - Entity trigger](../content/block-ip---azure-firewall-ip-groups---entity-trigger-azure-firewall.md) | This playbook interacts with relevant stackholders, such incident response team, to approve blocking... | - |
-| [BlockIP-Azure Firewall New Rule](../content/blockip-azure-firewall-new-rule-azure-firewall.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
-| [BlockIP-Azure Firewall New Rule - Entity trigger](../content/blockip-azure-firewall-new-rule---entity-trigger-azure-firewall.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
+| [Azure Firewall - Add IP Address to Threat Intel Allow list](../content/azure-firewall-azure-firewall---add-ip-address-to-threat-intel-allow-list.md) | This playbook allows the SOC to automatically response to Microsoft Sentinel incidents which include... | - |
+| [Block IP - Azure Firewall IP groups](../content/azure-firewall-block-ip---azure-firewall-ip-groups.md) | This playbook allows blocking/allowing IPs in Azure Firewall. It allows to make changes on IP groups... | - |
+| [Block IP - Azure Firewall IP groups - Entity trigger](../content/azure-firewall-block-ip---azure-firewall-ip-groups---entity-trigger.md) | This playbook interacts with relevant stackholders, such incident response team, to approve blocking... | - |
+| [BlockIP-Azure Firewall New Rule](../content/azure-firewall-blockip-azure-firewall-new-rule.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
+| [BlockIP-Azure Firewall New Rule - Entity trigger](../content/azure-firewall-blockip-azure-firewall-new-rule---entity-trigger.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
 
 ## Release Notes
 

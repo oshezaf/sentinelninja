@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AliCloud](../content/e310f050-75af-4059-b0ff-0ae7c7db8120.md) | - | - |
+| [AliCloud](../content/alibaba-cloud-alicloud-e310f050-75af-4059-b0ff-0ae7c7db8120.md) | - | - |
 
 ## Release Notes
 

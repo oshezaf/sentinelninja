@@ -30,10 +30,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Indicator - OpenCTI](../content/create-indicator---opencti-opencti.md) | This playbook adds new indicator in OpenCTI based on the entities info present in Sentinel incident.... | - |
-| [Entity (IP, URL, FileHash, Account, Host) Enrichment - OpenCTI](../content/entity-%28ip,-url,-filehash,-account,-host%29-enrichment---opencti-opencti.md) | This playbook search in OpenCTI for indicatoes based on the entities (Account, Host, IP, FileHash, U... | - |
-| [Read Stream- OpenCTI Indicators](../content/read-stream--opencti-indicators-opencti.md) | This playbook fetches indicators from OpenCTI and send to Sentinel. Supported types are Domain, File... | - |
-| [Send to Security Graph API - Batch Import (OpenCTI)](../content/send-to-security-graph-api---batch-import-%28opencti%29-opencti.md) | This playbook sends messages to Security GraphAPI in batches | - |
+| [Create Indicator - OpenCTI](../content/opencti-create-indicator---opencti.md) | This playbook adds new indicator in OpenCTI based on the entities info present in Sentinel incident.... | - |
+| [Entity (IP, URL, FileHash, Account, Host) Enrichment - OpenCTI](../content/opencti-entity-%28ip,-url,-filehash,-account,-host%29-enrichment---opencti.md) | This playbook search in OpenCTI for indicatoes based on the entities (Account, Host, IP, FileHash, U... | - |
+| [Read Stream- OpenCTI Indicators](../content/opencti-read-stream--opencti-indicators.md) | This playbook fetches indicators from OpenCTI and send to Sentinel. Supported types are Domain, File... | - |
+| [Send to Security Graph API - Batch Import (OpenCTI)](../content/opencti-send-to-security-graph-api---batch-import-%28opencti%29.md) | This playbook sends messages to Security GraphAPI in batches | - |
 
 ---
 

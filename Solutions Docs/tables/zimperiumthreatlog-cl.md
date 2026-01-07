@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md):**
-- [ZimperiumWorkbooks](../content/zimperiumworkbooks-zimperium-mobile-threat-defense.md)
+- [ZimperiumWorkbooks](../content/zimperium-mobile-threat-defense-zimperiumworkbooks.md)
 
 ---
 

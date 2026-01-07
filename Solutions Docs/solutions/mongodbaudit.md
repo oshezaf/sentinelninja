@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [MongoDBAudit](../content/e697d888-20c8-47ae-888f-6f1e9fd9a4ba.md) | - | - |
+| [MongoDBAudit](../content/mongodbaudit-mongodbaudit-e697d888-20c8-47ae-888f-6f1e9fd9a4ba.md) | - | - |
 
 ## Release Notes
 

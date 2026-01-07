@@ -39,14 +39,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftTeams](../content/microsoftteams-teams.md) | [`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [MicrosoftTeams](../content/teams-microsoftteams.md) | [`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Advanced ServiceNow Teams Integration Playbook](../content/advanced-servicenow-teams-integration-playbook-teams.md) | This playbook showcases an example of triggering an incident within a targeted Teams channel and ope... | - |
-| [Send Teams Adaptive Card on incident creation](../content/send-teams-adaptive-card-on-incident-creation-teams.md) | This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to chang... | - |
+| [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook.md) | This playbook showcases an example of triggering an incident within a targeted Teams channel and ope... | - |
+| [Send Teams Adaptive Card on incident creation](../content/teams-send-teams-adaptive-card-on-incident-creation.md) | This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to chang... | - |
 
 ## Release Notes
 

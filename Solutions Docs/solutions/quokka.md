@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Quokka - Malicious Results Detected](../content/97ad71ed-e4c0-4f7a-b1a2-683108bece4f.md) | Medium | InitialAccess, Execution, Persistence, PrivilegeEscalation, DefenseEvasion, CredentialAccess, Discovery, Collection, CommandAndControl, Impact | [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) |
+| [Quokka - Malicious Results Detected](../content/quokka-quokka---malicious-results-detected-97ad71ed-e4c0-4f7a-b1a2-683108bece4f.md) | Medium | InitialAccess, Execution, Persistence, PrivilegeEscalation, DefenseEvasion, CredentialAccess, Discovery, Collection, CommandAndControl, Impact | [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [QscoutDashboards](../content/qscoutdashboards-quokka.md) | [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) |
+| [QscoutDashboards](../content/quokka-qscoutdashboards.md) | [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) |
 
 ## Release Notes
 

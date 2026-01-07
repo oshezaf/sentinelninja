@@ -38,14 +38,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Sensitive Data Discovered in the Last 24 Hours](../content/7ae7e8b0-07e9-43cb-b783-b04082f09060.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
-| [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/79f296d9-e6e4-45dc-9ca7-1770955435fa.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
+| [Sensitive Data Discovered in the Last 24 Hours](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-7ae7e8b0-07e9-43cb-b783-b04082f09060.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
+| [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours---customized-79f296d9-e6e4-45dc-9ca7-1770955435fa.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftPurview](../content/microsoftpurview-microsoft-purview.md) | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
+| [MicrosoftPurview](../content/microsoft-purview-microsoftpurview.md) | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
 
 ## Release Notes
 

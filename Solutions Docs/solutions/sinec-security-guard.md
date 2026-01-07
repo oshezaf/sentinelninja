@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SSG_Security_Incidents](../content/d41fa731-45a2-4b23-bb1d-29896fbc5298.md) | HIGH | Impact | [`SINECSecurityGuard_CL`](../tables/sinecsecurityguard-cl.md) |
+| [SSG_Security_Incidents](../content/sinec-security-guard-ssg-security-incidents-d41fa731-45a2-4b23-bb1d-29896fbc5298.md) | HIGH | Impact | [`SINECSecurityGuard_CL`](../tables/sinecsecurityguard-cl.md) |
 
 ## Release Notes
 

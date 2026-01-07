@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md):**
-- [WithSecureTopComputersByInfections](../content/withsecuretopcomputersbyinfections-withsecureelementsviafunction.md)
+- [WithSecureTopComputersByInfections](../content/withsecureelementsviafunction-withsecuretopcomputersbyinfections.md)
 
 ---
 

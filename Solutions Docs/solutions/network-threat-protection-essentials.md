@@ -38,16 +38,16 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Network endpoint to host executable correlation](../content/01f64465-b1ef-41ea-a7f5-31553a11ad43.md) | Medium | Execution | - |
-| [New UserAgent observed in last 24 hours](../content/b725d62c-eb77-42ff-96f6-bdc6745fc6e0.md) | Low | InitialAccess, CommandAndControl, Execution | - |
+| [Network endpoint to host executable correlation](../content/network-threat-protection-essentials-network-endpoint-to-host-executable-correlation-01f64465-b1ef-41ea-a7f5-31553a11ad43.md) | Medium | Execution | - |
+| [New UserAgent observed in last 24 hours](../content/network-threat-protection-essentials-new-useragent-observed-in-last-24-hours-b725d62c-eb77-42ff-96f6-bdc6745fc6e0.md) | Low | InitialAccess, CommandAndControl, Execution | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Base64 encoded IPv4 address in request url](../content/39156a1d-c9e3-439e-967b-be7dcba918d9.md) | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Exploit and Pentest Framework User Agent](../content/df75ac6c-7b0b-40d2-82e4-191c012f1a07.md) | InitialAccess, CommandAndControl, Execution | - |
-| [Risky base64 encoded command in URL](../content/c46eeb45-c324-4a84-9df1-248c6d1507bb.md) | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Base64 encoded IPv4 address in request url](../content/network-threat-protection-essentials-base64-encoded-ipv4-address-in-request-url-39156a1d-c9e3-439e-967b-be7dcba918d9.md) | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07.md) | InitialAccess, CommandAndControl, Execution | - |
+| [Risky base64 encoded command in URL](../content/network-threat-protection-essentials-risky-base64-encoded-command-in-url-c46eeb45-c324-4a84-9df1-248c6d1507bb.md) | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

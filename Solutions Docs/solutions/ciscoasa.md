@@ -40,22 +40,22 @@ This solution includes **6 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cisco ASA - average attack detection rate increase](../content/79f29feb-6a9d-4cdf-baaa-2daf480a5da1.md) | Low | Discovery, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Cisco ASA - threat detection message fired](../content/795edf2d-cf3e-45b5-8452-fe6c9e6a582e.md) | Medium | Discovery, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco ASA - average attack detection rate increase](../content/ciscoasa-cisco-asa---average-attack-detection-rate-increase-79f29feb-6a9d-4cdf-baaa-2daf480a5da1.md) | Low | Discovery, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco ASA - threat detection message fired](../content/ciscoasa-cisco-asa---threat-detection-message-fired-795edf2d-cf3e-45b5-8452-fe6c9e6a582e.md) | Medium | Discovery, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Cisco](../content/cisco-ciscoasa.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco](../content/ciscoasa-cisco.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Block IP - Cisco ASA](../content/block-ip---cisco-asa-ciscoasa.md) | This playbook allows blocking/allowing of IPs in Cisco ASA, using a Network Object Group. The Networ... | - |
-| [Cisco ASA - Create or Inbound Access Rule On Interface](../content/cisco-asa---create-or-inbound-access-rule-on-interface-ciscoasa.md) | This playbook allows blocking/unblocking of IPs in Cisco ASA, using **Access Rules** which will be c... | - |
-| [Cisco ASA - Create or remove access rules on an interface for IP Addresses](../content/cisco-asa---create-or-remove-access-rules-on-an-interface-for-ip-addresses-ciscoasa.md) | This playbook allows blocking/unblocking of IPs in Cisco ASA, using **Access Control Entries** which... | - |
+| [Block IP - Cisco ASA](../content/ciscoasa-block-ip---cisco-asa.md) | This playbook allows blocking/allowing of IPs in Cisco ASA, using a Network Object Group. The Networ... | - |
+| [Cisco ASA - Create or Inbound Access Rule On Interface](../content/ciscoasa-cisco-asa---create-or-inbound-access-rule-on-interface.md) | This playbook allows blocking/unblocking of IPs in Cisco ASA, using **Access Rules** which will be c... | - |
+| [Cisco ASA - Create or remove access rules on an interface for IP Addresses](../content/ciscoasa-cisco-asa---create-or-remove-access-rules-on-an-interface-for-ip-addresses.md) | This playbook allows blocking/unblocking of IPs in Cisco ASA, using **Access Control Entries** which... | - |
 
 ## Release Notes
 

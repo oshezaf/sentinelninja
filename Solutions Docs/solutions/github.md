@@ -44,49 +44,49 @@ This solution includes **28 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [(Preview) GitHub - A payment method was removed](../content/6bb50582-caac-4a9b-9afb-3fee766ebbf7.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - Oauth application - a client secret was removed](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c5.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - Repository was created](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c2.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - Repository was destroyed](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c3.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - User visibility Was changed](../content/0b85a077-8ba5-4cb5-90f7-1e882afe20c9.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - User was added to the organization](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c4.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - User was blocked](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c8.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - User was invited to the repository](../content/0b85a077-8ba5-4cb5-90f7-1e882afe40c9.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - pull request was created](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c7.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - pull request was merged](../content/0b85a077-8ba5-4cb5-90f7-1e882afe10c6.md) | Medium | InitialAccess | - |
-| [GitHub Activites from a New Country](../content/f041e01d-840d-43da-95c8-4188f6cef546.md) | Medium | InitialAccess | - |
-| [GitHub Security Vulnerability in Repository](../content/5436f471-b03d-41cb-b333-65891f887c43.md) | Informational | InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | - |
-| [GitHub Two Factor Auth Disable](../content/3ff0fffb-d963-40c0-b235-3404f915add7.md) | Medium | DefenseEvasion | - |
-| [NRT GitHub Two Factor Auth Disable](../content/594c653d-719a-4c23-b028-36e3413e632e.md) | Medium | DefenseEvasion | - |
+| [(Preview) GitHub - A payment method was removed](../content/github-%28preview%29-github---a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - Oauth application - a client secret was removed](../content/github-%28preview%29-github---oauth-application---a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - Repository was created](../content/github-%28preview%29-github---repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - Repository was destroyed](../content/github-%28preview%29-github---repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - User visibility Was changed](../content/github-%28preview%29-github---user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - User was added to the organization](../content/github-%28preview%29-github---user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - User was blocked](../content/github-%28preview%29-github---user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - User was invited to the repository](../content/github-%28preview%29-github---user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - pull request was created](../content/github-%28preview%29-github---pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7.md) | Medium | InitialAccess | - |
+| [(Preview) GitHub - pull request was merged](../content/github-%28preview%29-github---pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6.md) | Medium | InitialAccess | - |
+| [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546.md) | Medium | InitialAccess | - |
+| [GitHub Security Vulnerability in Repository](../content/github-github-security-vulnerability-in-repository-5436f471-b03d-41cb-b333-65891f887c43.md) | Informational | InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | - |
+| [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7.md) | Medium | DefenseEvasion | - |
+| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e.md) | Medium | DefenseEvasion | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [GitHub First Time Invite Member and Add Member to Repo](../content/f0d30d3c-e6ad-480a-90e8-1bd7cc84881b.md) | Persistence | - |
-| [GitHub First Time Repo Delete](../content/c3237d88-fdc4-4dee-8b90-118ded2c507c.md) | Impact | - |
-| [GitHub Inactive or New Account Access or Usage](../content/b8508e24-47a6-4f8e-9066-3cc937197e7f.md) | Persistence | - |
-| [GitHub Mass Deletion of repos or projects](../content/67da5c4e-49f2-476d-96ff-2dbe4b855a48.md) | Impact | - |
-| [GitHub OAuth App Restrictions Disabled](../content/667e6a70-adc9-49b7-9cf3-f21927c71959.md) | Persistence, DefenseEvasion | - |
-| [GitHub Repo switched from private to public](../content/a6e2afd3-559c-4e88-a693-39c1f6789ef1.md) | Collection | - |
-| [GitHub Update Permissions](../content/ec986fb7-34ed-4528-a5f3-a496e61d8860.md) | Persistence, DefenseEvasion | - |
-| [GitHub User Grants Access and Other User Grants Access](../content/f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a.md) | Persistence, PrivilegeEscalation | - |
+| [GitHub First Time Invite Member and Add Member to Repo](../content/github-github-first-time-invite-member-and-add-member-to-repo-f0d30d3c-e6ad-480a-90e8-1bd7cc84881b.md) | Persistence | - |
+| [GitHub First Time Repo Delete](../content/github-github-first-time-repo-delete-c3237d88-fdc4-4dee-8b90-118ded2c507c.md) | Impact | - |
+| [GitHub Inactive or New Account Access or Usage](../content/github-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f.md) | Persistence | - |
+| [GitHub Mass Deletion of repos or projects](../content/github-github-mass-deletion-of-repos-or-projects-67da5c4e-49f2-476d-96ff-2dbe4b855a48.md) | Impact | - |
+| [GitHub OAuth App Restrictions Disabled](../content/github-github-oauth-app-restrictions-disabled-667e6a70-adc9-49b7-9cf3-f21927c71959.md) | Persistence, DefenseEvasion | - |
+| [GitHub Repo switched from private to public](../content/github-github-repo-switched-from-private-to-public-a6e2afd3-559c-4e88-a693-39c1f6789ef1.md) | Collection | - |
+| [GitHub Update Permissions](../content/github-github-update-permissions-ec986fb7-34ed-4528-a5f3-a496e61d8860.md) | Persistence, DefenseEvasion | - |
+| [GitHub User Grants Access and Other User Grants Access](../content/github-github-user-grants-access-and-other-user-grants-access-f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a.md) | Persistence, PrivilegeEscalation | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
 | [GitHub](../content/github-github.md) | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) |
-| [GitHubAdvancedSecurity](../content/githubadvancedsecurity-github.md) | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) |
+| [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity.md) | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GitHubAuditData](../content/32d7c900-875f-43d6-9e48-987fd5df3762.md) | - | - |
-| [GitHubCodeScanningData](../content/090a125e-1e28-4f56-96be-bf9a2e51042b.md) | - | - |
-| [GitHubDependabotData](../content/96de3515-a65e-4edc-8b1a-90c780221bb2.md) | - | - |
-| [GitHubSecretScanningData](../content/2bcbf832-074f-4bd3-b043-f2c7873f5630.md) | - | - |
+| [GitHubAuditData](../content/github-githubauditdata-32d7c900-875f-43d6-9e48-987fd5df3762.md) | - | - |
+| [GitHubCodeScanningData](../content/github-githubcodescanningdata-090a125e-1e28-4f56-96be-bf9a2e51042b.md) | - | - |
+| [GitHubDependabotData](../content/github-githubdependabotdata-96de3515-a65e-4edc-8b1a-90c780221bb2.md) | - | - |
+| [GitHubSecretScanningData](../content/github-githubsecretscanningdata-2bcbf832-074f-4bd3-b043-f2c7873f5630.md) | - | - |
 
 ## Release Notes
 

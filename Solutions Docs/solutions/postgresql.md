@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PostgreSQLEvent](../content/5c5c1f7e-ec64-46b1-9d50-3cea65a6edce.md) | - | - |
+| [PostgreSQLEvent](../content/postgresql-postgresqlevent-5c5c1f7e-ec64-46b1-9d50-3cea65a6edce.md) | - | - |
 
 ## Release Notes
 

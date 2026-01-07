@@ -61,13 +61,13 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [CDM_ContinuousDiagnostics&Mitigation_PostureChanged](../content/fd950af9-d9db-4879-a60a-7267cc041beb.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
+| [CDM_ContinuousDiagnostics&Mitigation_PostureChanged](../content/continuousdiagnostics&mitigation-cdm-continuousdiagnostics&mitigation-posturechanged-fd950af9-d9db-4879-a60a-7267cc041beb.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [CDM_ContinuousDiagnostics&Mitigation_Posture](../content/e15944a8-4172-4208-a928-631e01920d9c.md) | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
+| [CDM_ContinuousDiagnostics&Mitigation_Posture](../content/continuousdiagnostics&mitigation-cdm-continuousdiagnostics&mitigation-posture-e15944a8-4172-4208-a928-631e01920d9c.md) | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
 
 ### Workbooks
 

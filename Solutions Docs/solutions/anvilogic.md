@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Anvilogic Alert](../content/6ccc187a-42ee-4635-8bcc-3b299f8570df.md) | Medium | - | [`Anvilogic_Alerts_CL`](../tables/anvilogic-alerts-cl.md) |
+| [Anvilogic Alert](../content/anvilogic-anvilogic-alert-6ccc187a-42ee-4635-8bcc-3b299f8570df.md) | Medium | - | [`Anvilogic_Alerts_CL`](../tables/anvilogic-alerts-cl.md) |
 
 ## Release Notes
 

@@ -37,8 +37,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CitrixADCEvent](../content/42894dea-1da9-4e98-b934-3fd97924dc8a.md) | - | - |
-| [CitrixADCEventOld](../content/1c9a0c69-efc6-4fe6-ac53-baf6fe77b833.md) | - | - |
+| [CitrixADCEvent](../content/citrix-adc-citrixadcevent-42894dea-1da9-4e98-b934-3fd97924dc8a.md) | - | - |
+| [CitrixADCEventOld](../content/citrix-adc-citrixadceventold-1c9a0c69-efc6-4fe6-ac53-baf6fe77b833.md) | - | - |
 
 ## Release Notes
 

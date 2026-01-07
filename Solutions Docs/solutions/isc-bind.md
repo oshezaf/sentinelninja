@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ISCBind](../content/9b39b1e9-4136-4e8c-b792-3e5cf19caaf8.md) | - | - |
+| [ISCBind](../content/isc-bind-iscbind-9b39b1e9-4136-4e8c-b792-3e5cf19caaf8.md) | - | - |
 
 ## Release Notes
 

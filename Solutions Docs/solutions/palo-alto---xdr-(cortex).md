@@ -35,13 +35,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PaloAltoXDR](../content/paloaltoxdr-palo-alto---xdr-%28cortex%29.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [PaloAltoXDR](../content/palo-alto---xdr-%28cortex%29-paloaltoxdr.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PaloAltoXDR](../content/paloaltoxdr-palo-alto---xdr-%28cortex%29.md) | 1. Overview 1. Prerequisites 1. Deploy Palo Alot XDR playbook 1. Deployment Instructions 1. Post-Dep... | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [PaloAltoXDR](../content/palo-alto---xdr-%28cortex%29-paloaltoxdr.md) | 1. Overview 1. Prerequisites 1. Deploy Palo Alot XDR playbook 1. Deployment Instructions 1. Post-Dep... | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ---
 

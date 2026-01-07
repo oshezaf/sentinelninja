@@ -39,25 +39,25 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [External Fabric Module XFM1 is unhealthy](../content/a8130dcc-3617-41c0-a7ac-5f352bcfffaf.md) | High | Execution | [`Syslog`](../tables/syslog.md) |
-| [Pure Controller Failed](../content/c317b007-84e7-4449-93f4-4444f6638fd0.md) | High | Execution | [`Syslog`](../tables/syslog.md) |
-| [Pure Failed Login](../content/ed32b115-5001-43a7-a2bb-f53026db4d97.md) | High | CredentialAccess | [`Syslog`](../tables/syslog.md) |
+| [External Fabric Module XFM1 is unhealthy](../content/pure-storage-external-fabric-module-xfm1-is-unhealthy-a8130dcc-3617-41c0-a7ac-5f352bcfffaf.md) | High | Execution | [`Syslog`](../tables/syslog.md) |
+| [Pure Controller Failed](../content/pure-storage-pure-controller-failed-c317b007-84e7-4449-93f4-4444f6638fd0.md) | High | Execution | [`Syslog`](../tables/syslog.md) |
+| [Pure Failed Login](../content/pure-storage-pure-failed-login-ed32b115-5001-43a7-a2bb-f53026db4d97.md) | High | CredentialAccess | [`Syslog`](../tables/syslog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Pure Storage FlashBlade File System Snapshot](../content/pure-storage-flashblade-file-system-snapshot-pure-storage.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
-| [Pure Storage Protection Group Snapshot](../content/pure-storage-protection-group-snapshot-pure-storage.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
-| [Pure Storage User Deletion](../content/pure-storage-user-deletion-pure-storage.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious user activity... | - |
-| [Pure Storage Volume Snapshot](../content/pure-storage-volume-snapshot-pure-storage.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
+| [Pure Storage FlashBlade File System Snapshot](../content/pure-storage-pure-storage-flashblade-file-system-snapshot.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
+| [Pure Storage Protection Group Snapshot](../content/pure-storage-pure-storage-protection-group-snapshot.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
+| [Pure Storage User Deletion](../content/pure-storage-pure-storage-user-deletion.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious user activity... | - |
+| [Pure Storage Volume Snapshot](../content/pure-storage-pure-storage-volume-snapshot.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PureStorageFlashArrayParser](../content/008b25eb-aeec-4751-9a42-3a0102e9774b.md) | - | - |
-| [PureStorageFlashBladeParser](../content/c76dff08-ca13-467d-a143-c33cc226585c.md) | - | - |
+| [PureStorageFlashArrayParser](../content/pure-storage-purestorageflasharrayparser-008b25eb-aeec-4751-9a42-3a0102e9774b.md) | - | - |
+| [PureStorageFlashBladeParser](../content/pure-storage-purestorageflashbladeparser-c76dff08-ca13-467d-a143-c33cc226585c.md) | - | - |
 
 ## Release Notes
 

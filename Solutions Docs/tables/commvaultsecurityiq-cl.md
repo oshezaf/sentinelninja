@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Commvault Security IQ](../solutions/commvault-security-iq.md):**
-- [Commvault Cloud Alert](../content/317e757e-c320-448e-8837-fc61a70fe609.md)
+- [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609.md)
 
 ---
 

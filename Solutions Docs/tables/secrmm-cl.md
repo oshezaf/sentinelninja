@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md):**
-- [Removable storage ONLINE event from secRMM](../content/a22b2ecf-1478-4400-877e-07a32e53a897.md)
+- [Removable storage ONLINE event from secRMM](../content/squadra-technologies-secrmm-removable-storage-online-event-from-secrmm-a22b2ecf-1478-4400-877e-07a32e53a897.md)
 
 ### Workbooks (1)
 
 **In solution [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md):**
-- [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/azuresentinelworkbookforremovablestoragesecurityevents-squadra-technologies-secrmm.md)
+- [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/squadra-technologies-secrmm-azuresentinelworkbookforremovablestoragesecurityevents.md)
 
 ---
 

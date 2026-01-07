@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Valence Security](../solutions/valence-security.md):**
-- [Valence Security Alerts](../content/d944d564-b6fa-470d-b5ab-a1a141878c5e.md)
+- [Valence Security Alerts](../content/valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e.md)
 
 ### Workbooks (1)
 
 **In solution [Valence Security](../solutions/valence-security.md):**
-- [ValenceAlertsWorkbook](../content/valencealertsworkbook-valence-security.md)
+- [ValenceAlertsWorkbook](../content/valence-security-valencealertsworkbook.md)
 
 ---
 

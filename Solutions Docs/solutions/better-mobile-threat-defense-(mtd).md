@@ -40,7 +40,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [BETTER_MTD_Workbook](../content/better-mtd-workbook-better-mobile-threat-defense-%28mtd%29.md) | [`BetterMTDAppLog_CL`](../tables/bettermtdapplog-cl.md)<br>[`BetterMTDDeviceLog_CL`](../tables/bettermtddevicelog-cl.md)<br>[`BetterMTDIncidentLog_CL`](../tables/bettermtdincidentlog-cl.md)<br>[`BetterMTDNetflowLog_CL`](../tables/bettermtdnetflowlog-cl.md) |
+| [BETTER_MTD_Workbook](../content/better-mobile-threat-defense-%28mtd%29-better-mtd-workbook.md) | [`BetterMTDAppLog_CL`](../tables/bettermtdapplog-cl.md)<br>[`BetterMTDDeviceLog_CL`](../tables/bettermtddevicelog-cl.md)<br>[`BetterMTDIncidentLog_CL`](../tables/bettermtdincidentlog-cl.md)<br>[`BetterMTDNetflowLog_CL`](../tables/bettermtdnetflowlog-cl.md) |
 
 ---
 

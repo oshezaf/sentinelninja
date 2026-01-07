@@ -42,13 +42,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Create Incident for XDR Alerts](../content/0febd8cc-1b8d-45ed-87b3-e1e8a57d14cd.md) | High | - | [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) |
+| [Create Incident for XDR Alerts](../content/trend-micro-vision-one-create-incident-for-xdr-alerts-0febd8cc-1b8d-45ed-87b3-e1e8a57d14cd.md) | High | - | [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TrendMicroXDROverview](../content/trendmicroxdroverview-trend-micro-vision-one.md) | [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) |
+| [TrendMicroXDROverview](../content/trend-micro-vision-one-trendmicroxdroverview.md) | [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) |
 
 ## Release Notes
 

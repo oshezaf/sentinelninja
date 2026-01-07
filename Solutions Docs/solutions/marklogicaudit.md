@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [MarkLogicAudit](../content/f2b2c4e3-a65b-44ba-81e9-03a79fa0fa84.md) | - | - |
+| [MarkLogicAudit](../content/marklogicaudit-marklogicaudit-f2b2c4e3-a65b-44ba-81e9-03a79fa0fa84.md) | - | - |
 
 ## Release Notes
 

@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ForcepointCASB](../content/forcepointcasb-forcepoint-casb.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ForcepointCASB](../content/forcepoint-casb-forcepointcasb.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

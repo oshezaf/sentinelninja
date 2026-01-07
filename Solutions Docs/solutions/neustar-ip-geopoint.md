@@ -30,7 +30,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [EnrichIP-GeoInfo-Neustar](../content/enrichip-geoinfo-neustar-neustar-ip-geopoint.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [EnrichIP-GeoInfo-Neustar](../content/neustar-ip-geopoint-enrichip-geoinfo-neustar.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ---
 

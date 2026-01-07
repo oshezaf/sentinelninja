@@ -39,14 +39,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Keeper Security - Password Changed](../content/f031fbbc-37d8-4667-b795-d386bf2b5ab2.md) | Informational | Persistence | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
-| [Keeper Security - User MFA Changed](../content/75ffc8a4-86db-4f48-8506-cb4c049be484.md) | Informational | Persistence | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
+| [Keeper Security - Password Changed](../content/keeper-security-keeper-security---password-changed-f031fbbc-37d8-4667-b795-d386bf2b5ab2.md) | Informational | Persistence | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
+| [Keeper Security - User MFA Changed](../content/keeper-security-keeper-security---user-mfa-changed-75ffc8a4-86db-4f48-8506-cb4c049be484.md) | Informational | Persistence | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [KeeperSecurityDashboard](../content/keepersecuritydashboard-keeper-security.md) | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
+| [KeeperSecurityDashboard](../content/keeper-security-keepersecuritydashboard.md) | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
 
 ## Release Notes
 

@@ -84,48 +84,48 @@ This solution includes **27 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Infoblox - SOC Insight Detected - API Source](../content/a5e2df87-f0c9-4540-8715-96e71b608986.md) | Medium | Impact | - |
-| [Infoblox - SOC Insight Detected - CDC Source](../content/d04f1963-df27-4127-b1ec-3d37148d65be.md) | Medium | Impact | - |
+| [Infoblox - SOC Insight Detected - API Source](../content/infoblox-infoblox---soc-insight-detected---api-source-a5e2df87-f0c9-4540-8715-96e71b608986.md) | Medium | Impact | - |
+| [Infoblox - SOC Insight Detected - CDC Source](../content/infoblox-infoblox---soc-insight-detected---cdc-source-d04f1963-df27-4127-b1ec-3d37148d65be.md) | Medium | Impact | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Infoblox_Lookup_Workbook](../content/infoblox-lookup-workbook-infoblox.md) | [`dossier_atp_CL`](../tables/dossier-atp-cl.md)<br>[`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md)<br>[`dossier_dns_CL`](../tables/dossier-dns-cl.md)<br>[`dossier_geo_CL`](../tables/dossier-geo-cl.md)<br>[`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md)<br>[`dossier_inforank_CL`](../tables/dossier-inforank-cl.md)<br>[`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md)<br>[`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md)<br>[`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md)<br>[`dossier_ptr_CL`](../tables/dossier-ptr-cl.md)<br>[`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md)<br>[`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md)<br>[`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md)<br>[`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md)<br>[`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md)<br>[`dossier_whois_CL`](../tables/dossier-whois-cl.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) |
-| [Infoblox_Workbook](../content/infoblox-workbook-infoblox.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Host_Name_Info_CL`](../tables/host-name-info-cl.md)<br>[`IP_Space_Info_CL`](../tables/ip-space-info-cl.md)<br>[`Infoblox_Config_Insight_Details_CL`](../tables/infoblox-config-insight-details-cl.md)<br>[`Infoblox_Config_Insights_CL`](../tables/infoblox-config-insights-cl.md)<br>[`Service_Name_Info_CL`](../tables/service-name-info-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook.md) | [`dossier_atp_CL`](../tables/dossier-atp-cl.md)<br>[`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md)<br>[`dossier_dns_CL`](../tables/dossier-dns-cl.md)<br>[`dossier_geo_CL`](../tables/dossier-geo-cl.md)<br>[`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md)<br>[`dossier_inforank_CL`](../tables/dossier-inforank-cl.md)<br>[`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md)<br>[`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md)<br>[`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md)<br>[`dossier_ptr_CL`](../tables/dossier-ptr-cl.md)<br>[`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md)<br>[`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md)<br>[`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md)<br>[`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md)<br>[`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md)<br>[`dossier_whois_CL`](../tables/dossier-whois-cl.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) |
+| [Infoblox_Workbook](../content/infoblox-infoblox-workbook.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Host_Name_Info_CL`](../tables/host-name-info-cl.md)<br>[`IP_Space_Info_CL`](../tables/ip-space-info-cl.md)<br>[`Infoblox_Config_Insight_Details_CL`](../tables/infoblox-config-insight-details-cl.md)<br>[`Infoblox_Config_Insights_CL`](../tables/infoblox-config-insights-cl.md)<br>[`Service_Name_Info_CL`](../tables/service-name-info-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Infoblox-Block-Allow-IP-Domain](../content/infoblox-block-allow-ip-domain-infoblox.md) | The playbook will add/remove IP or Domain value in Named List of Infoblox. | - |
-| [Infoblox-Block-Allow-IP-Domain-Incident-Based](../content/infoblox-block-allow-ip-domain-incident-based-infoblox.md) | The playbook will add / remove IP or Domain values in Named List that available in incidents of Info... | - |
-| [Infoblox-Config-Insight-Details](../content/infoblox-config-insight-details-infoblox.md) | The playbook retrieves Config Insight Details Data and ingests it into a custom table within the Log... | - |
-| [Infoblox-Config-Insights](../content/infoblox-config-insights-infoblox.md) | The playbook retrieves Config Insight Data and ingests it into a custom table within the Log Analyti... | - |
-| [Infoblox-DHCP-Lookup](../content/infoblox-dhcp-lookup-infoblox.md) | The playbook will retrieve IP entities from an incident, search for related DHCP data in a table, an... | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
-| [Infoblox-Data-Connector-Trigger-Sync](../content/infoblox-data-connector-trigger-sync-infoblox.md) | Playbook to sync timer trigger of all Infoblox data connectors. | - |
-| [Infoblox-Get-Host-Name](../content/infoblox-get-host-name-infoblox.md) | The playbook will fetch the data from 'Hosts' API and ingest it into custom table | - |
-| [Infoblox-Get-IP-Space-Data](../content/infoblox-get-ip-space-data-infoblox.md) | The playbook will fetch the data from 'IP Space' API and ingest it into custom table | - |
-| [Infoblox-Get-Service-Name](../content/infoblox-get-service-name-infoblox.md) | This playbook will fetch the data from 'Services' API and ingest it into custom table | - |
-| [Infoblox-IPAM-Lookup](../content/infoblox-ipam-lookup-infoblox.md) | The playbook will retrieve IP entities from an incident, call an API to obtain IPAM lookup data, and... | - |
-| [Infoblox-SOC-Get-Insight-Details](../content/infoblox-soc-get-insight-details-infoblox.md) | Leverages the Infoblox SOC Insights API to enrich a Microsoft Sentinel Incident triggered by an Info... | [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) *(write)*<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) *(write)*<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) *(write)*<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) *(write)*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(write)* |
-| [Infoblox-SOC-Get-Open-Insights-API](../content/infoblox-soc-get-open-insights-api-infoblox.md) | Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into t... | [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(write)* |
-| [Infoblox-SOC-Import-Indicators-TI](../content/infoblox-soc-import-indicators-ti-infoblox.md) | Imports each Indicator of a Microsoft Sentinel Incident triggered by an Infoblox SOC Insight into th... | - |
-| [Infoblox-TIDE-Lookup](../content/infoblox-tide-lookup-infoblox.md) | The playbook fetches TIDE lookup data for the provided entity type and value. | *Internal use:*<br>[`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) *(read/write)* |
-| [Infoblox-TIDE-Lookup-Comment-Enrichment](../content/infoblox-tide-lookup-comment-enrichment-infoblox.md) | The playbook enrich an incident by adding TIDE Lookup information as comment on an incident. | - |
-| [Infoblox-TIDE-Lookup-Via-Incident](../content/infoblox-tide-lookup-via-incident-infoblox.md) | The playbook takes entity type and value from incident available in Workbook and ingests TIDE Lookup... | - |
-| [Infoblox-TimeRangeBased-DHCP-Lookup](../content/infoblox-timerangebased-dhcp-lookup-infoblox.md) | The playbook will retrieve IP entities from an incident, search for related DHCP data in a table for... | - |
+| [Infoblox-Block-Allow-IP-Domain](../content/infoblox-infoblox-block-allow-ip-domain.md) | The playbook will add/remove IP or Domain value in Named List of Infoblox. | - |
+| [Infoblox-Block-Allow-IP-Domain-Incident-Based](../content/infoblox-infoblox-block-allow-ip-domain-incident-based.md) | The playbook will add / remove IP or Domain values in Named List that available in incidents of Info... | - |
+| [Infoblox-Config-Insight-Details](../content/infoblox-infoblox-config-insight-details.md) | The playbook retrieves Config Insight Details Data and ingests it into a custom table within the Log... | - |
+| [Infoblox-Config-Insights](../content/infoblox-infoblox-config-insights.md) | The playbook retrieves Config Insight Data and ingests it into a custom table within the Log Analyti... | - |
+| [Infoblox-DHCP-Lookup](../content/infoblox-infoblox-dhcp-lookup.md) | The playbook will retrieve IP entities from an incident, search for related DHCP data in a table, an... | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [Infoblox-Data-Connector-Trigger-Sync](../content/infoblox-infoblox-data-connector-trigger-sync.md) | Playbook to sync timer trigger of all Infoblox data connectors. | - |
+| [Infoblox-Get-Host-Name](../content/infoblox-infoblox-get-host-name.md) | The playbook will fetch the data from 'Hosts' API and ingest it into custom table | - |
+| [Infoblox-Get-IP-Space-Data](../content/infoblox-infoblox-get-ip-space-data.md) | The playbook will fetch the data from 'IP Space' API and ingest it into custom table | - |
+| [Infoblox-Get-Service-Name](../content/infoblox-infoblox-get-service-name.md) | This playbook will fetch the data from 'Services' API and ingest it into custom table | - |
+| [Infoblox-IPAM-Lookup](../content/infoblox-infoblox-ipam-lookup.md) | The playbook will retrieve IP entities from an incident, call an API to obtain IPAM lookup data, and... | - |
+| [Infoblox-SOC-Get-Insight-Details](../content/infoblox-infoblox-soc-get-insight-details.md) | Leverages the Infoblox SOC Insights API to enrich a Microsoft Sentinel Incident triggered by an Info... | [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) *(write)*<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) *(write)*<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) *(write)*<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) *(write)*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(write)* |
+| [Infoblox-SOC-Get-Open-Insights-API](../content/infoblox-infoblox-soc-get-open-insights-api.md) | Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into t... | [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(write)* |
+| [Infoblox-SOC-Import-Indicators-TI](../content/infoblox-infoblox-soc-import-indicators-ti.md) | Imports each Indicator of a Microsoft Sentinel Incident triggered by an Infoblox SOC Insight into th... | - |
+| [Infoblox-TIDE-Lookup](../content/infoblox-infoblox-tide-lookup.md) | The playbook fetches TIDE lookup data for the provided entity type and value. | *Internal use:*<br>[`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) *(read/write)* |
+| [Infoblox-TIDE-Lookup-Comment-Enrichment](../content/infoblox-infoblox-tide-lookup-comment-enrichment.md) | The playbook enrich an incident by adding TIDE Lookup information as comment on an incident. | - |
+| [Infoblox-TIDE-Lookup-Via-Incident](../content/infoblox-infoblox-tide-lookup-via-incident.md) | The playbook takes entity type and value from incident available in Workbook and ingests TIDE Lookup... | - |
+| [Infoblox-TimeRangeBased-DHCP-Lookup](../content/infoblox-infoblox-timerangebased-dhcp-lookup.md) | The playbook will retrieve IP entities from an incident, search for related DHCP data in a table for... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [InfobloxCDC_SOCInsights](../content/f18321d5-f146-4df5-81c3-f0ba660efc48.md) | - | - |
-| [InfobloxInsight](../content/4d8838cb-cdf6-4a38-b30f-fdd2fd50b50b.md) | - | - |
-| [InfobloxInsightAssets](../content/30f0087f-6c91-48ce-89a4-fd59b1dde95a.md) | - | - |
-| [InfobloxInsightComments](../content/e62fa1e8-d157-4ee5-bb43-4fe6ea504f2d.md) | - | - |
-| [InfobloxInsightEvents](../content/3bf27a0c-7335-42d5-bc41-330456b4eec2.md) | - | - |
-| [InfobloxInsightIndicators](../content/f58f77a5-c803-444a-a836-fae65880ec5e.md) | - | - |
+| [InfobloxCDC_SOCInsights](../content/infoblox-infobloxcdc-socinsights-f18321d5-f146-4df5-81c3-f0ba660efc48.md) | - | - |
+| [InfobloxInsight](../content/infoblox-infobloxinsight-4d8838cb-cdf6-4a38-b30f-fdd2fd50b50b.md) | - | - |
+| [InfobloxInsightAssets](../content/infoblox-infobloxinsightassets-30f0087f-6c91-48ce-89a4-fd59b1dde95a.md) | - | - |
+| [InfobloxInsightComments](../content/infoblox-infobloxinsightcomments-e62fa1e8-d157-4ee5-bb43-4fe6ea504f2d.md) | - | - |
+| [InfobloxInsightEvents](../content/infoblox-infobloxinsightevents-3bf27a0c-7335-42d5-bc41-330456b4eec2.md) | - | - |
+| [InfobloxInsightIndicators](../content/infoblox-infobloxinsightindicators-f58f77a5-c803-444a-a836-fae65880ec5e.md) | - | - |
 
 ## Release Notes
 

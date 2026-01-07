@@ -40,31 +40,31 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [CyberArkEPM - Attack attempt not blocked](../content/8e8978a2-9188-4187-8909-5ea00507bf16.md) | High | Execution | - |
-| [CyberArkEPM - MSBuild usage as LOLBin](../content/a11bf869-458e-49fd-be03-58021b14be15.md) | Medium | DefenseEvasion | - |
-| [CyberArkEPM - Multiple attack types](../content/c02f96b4-057b-4e63-87af-6376ef7a081b.md) | High | Execution | - |
-| [CyberArkEPM - Possible execution of Powershell Empire](../content/eddfd1fd-71df-4cc3-b050-287643bee398.md) | High | Execution | - |
-| [CyberArkEPM - Process started from different locations](../content/0d4e62da-0a64-4532-b93e-28cd2940c300.md) | Medium | Execution, DefenseEvasion | - |
-| [CyberArkEPM - Renamed Windows binary](../content/9281b7cc-8f05-45a9-bf10-17fb29492a84.md) | High | Execution, DefenseEvasion | - |
-| [CyberArkEPM - Uncommon Windows process started from System folder](../content/16b940d2-aaf8-4eaa-a5e1-05df5f5c3d43.md) | Medium | Execution, DefenseEvasion | - |
-| [CyberArkEPM - Uncommon process Internet access](../content/9d0d44ab-54dc-472a-9931-53521e888932.md) | High | Execution, DefenseEvasion, CommandAndControl | - |
-| [CyberArkEPM - Unexpected executable extension](../content/911d5b75-a1ce-4f13-a839-9c2474768696.md) | Medium | Execution, DefenseEvasion | - |
-| [CyberArkEPM - Unexpected executable location](../content/c1fcbbd7-74f8-4f32-8116-0a533ebd3878.md) | Medium | Execution, DefenseEvasion | - |
+| [CyberArkEPM - Attack attempt not blocked](../content/cyberarkepm-cyberarkepm---attack-attempt-not-blocked-8e8978a2-9188-4187-8909-5ea00507bf16.md) | High | Execution | - |
+| [CyberArkEPM - MSBuild usage as LOLBin](../content/cyberarkepm-cyberarkepm---msbuild-usage-as-lolbin-a11bf869-458e-49fd-be03-58021b14be15.md) | Medium | DefenseEvasion | - |
+| [CyberArkEPM - Multiple attack types](../content/cyberarkepm-cyberarkepm---multiple-attack-types-c02f96b4-057b-4e63-87af-6376ef7a081b.md) | High | Execution | - |
+| [CyberArkEPM - Possible execution of Powershell Empire](../content/cyberarkepm-cyberarkepm---possible-execution-of-powershell-empire-eddfd1fd-71df-4cc3-b050-287643bee398.md) | High | Execution | - |
+| [CyberArkEPM - Process started from different locations](../content/cyberarkepm-cyberarkepm---process-started-from-different-locations-0d4e62da-0a64-4532-b93e-28cd2940c300.md) | Medium | Execution, DefenseEvasion | - |
+| [CyberArkEPM - Renamed Windows binary](../content/cyberarkepm-cyberarkepm---renamed-windows-binary-9281b7cc-8f05-45a9-bf10-17fb29492a84.md) | High | Execution, DefenseEvasion | - |
+| [CyberArkEPM - Uncommon Windows process started from System folder](../content/cyberarkepm-cyberarkepm---uncommon-windows-process-started-from-system-folder-16b940d2-aaf8-4eaa-a5e1-05df5f5c3d43.md) | Medium | Execution, DefenseEvasion | - |
+| [CyberArkEPM - Uncommon process Internet access](../content/cyberarkepm-cyberarkepm---uncommon-process-internet-access-9d0d44ab-54dc-472a-9931-53521e888932.md) | High | Execution, DefenseEvasion, CommandAndControl | - |
+| [CyberArkEPM - Unexpected executable extension](../content/cyberarkepm-cyberarkepm---unexpected-executable-extension-911d5b75-a1ce-4f13-a839-9c2474768696.md) | Medium | Execution, DefenseEvasion | - |
+| [CyberArkEPM - Unexpected executable location](../content/cyberarkepm-cyberarkepm---unexpected-executable-location-c1fcbbd7-74f8-4f32-8116-0a533ebd3878.md) | Medium | Execution, DefenseEvasion | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [CyberArkEPM - Elevation requests](../content/20fc7ee2-5387-4c4c-8819-77fb7bfb8d2a.md) | Execution, PrivilegeEscalation | - |
-| [CyberArkEPM - Powershell downloads](../content/576cac40-d6f5-4ef9-9c3d-013b94656bea.md) | Execution | - |
-| [CyberArkEPM - Powershell scripts execution parameters](../content/f1490e77-2a5e-4f07-afd9-c2bb20e26d30.md) | Execution | - |
-| [CyberArkEPM - Process hash changed](../content/8d72be65-d837-4e86-bca8-4a30e6834a22.md) | DefenseEvasion | - |
-| [CyberArkEPM - Processes run as admin](../content/e96de960-f4d7-49a3-8de7-4f5b7e8537cf.md) | Execution, PrivilegeEscalation | - |
-| [CyberArkEPM - Processes with Internet access attempts](../content/cff4d318-eaec-43c9-8c3e-84f74c789b98.md) | CommandAndControl | - |
-| [CyberArkEPM - Rare process run by users](../content/9cf63647-4e05-47cc-90ac-4a17cfd06a05.md) | Execution | - |
-| [CyberArkEPM - Rare process vendors](../content/37031fed-f7cb-45fc-a1c2-e2eab46cbba2.md) | Execution | - |
-| [CyberArkEPM - Scripts executed on hosts](../content/bd8511dd-ee8f-4c76-a9c8-b8f263ec7355.md) | Execution | - |
-| [CyberArkEPM - Suspicious activity attempts](../content/e60cf50c-3ae0-44ac-9de1-ea13886973b8.md) | Execution | - |
+| [CyberArkEPM - Elevation requests](../content/cyberarkepm-cyberarkepm---elevation-requests-20fc7ee2-5387-4c4c-8819-77fb7bfb8d2a.md) | Execution, PrivilegeEscalation | - |
+| [CyberArkEPM - Powershell downloads](../content/cyberarkepm-cyberarkepm---powershell-downloads-576cac40-d6f5-4ef9-9c3d-013b94656bea.md) | Execution | - |
+| [CyberArkEPM - Powershell scripts execution parameters](../content/cyberarkepm-cyberarkepm---powershell-scripts-execution-parameters-f1490e77-2a5e-4f07-afd9-c2bb20e26d30.md) | Execution | - |
+| [CyberArkEPM - Process hash changed](../content/cyberarkepm-cyberarkepm---process-hash-changed-8d72be65-d837-4e86-bca8-4a30e6834a22.md) | DefenseEvasion | - |
+| [CyberArkEPM - Processes run as admin](../content/cyberarkepm-cyberarkepm---processes-run-as-admin-e96de960-f4d7-49a3-8de7-4f5b7e8537cf.md) | Execution, PrivilegeEscalation | - |
+| [CyberArkEPM - Processes with Internet access attempts](../content/cyberarkepm-cyberarkepm---processes-with-internet-access-attempts-cff4d318-eaec-43c9-8c3e-84f74c789b98.md) | CommandAndControl | - |
+| [CyberArkEPM - Rare process run by users](../content/cyberarkepm-cyberarkepm---rare-process-run-by-users-9cf63647-4e05-47cc-90ac-4a17cfd06a05.md) | Execution | - |
+| [CyberArkEPM - Rare process vendors](../content/cyberarkepm-cyberarkepm---rare-process-vendors-37031fed-f7cb-45fc-a1c2-e2eab46cbba2.md) | Execution | - |
+| [CyberArkEPM - Scripts executed on hosts](../content/cyberarkepm-cyberarkepm---scripts-executed-on-hosts-bd8511dd-ee8f-4c76-a9c8-b8f263ec7355.md) | Execution | - |
+| [CyberArkEPM - Suspicious activity attempts](../content/cyberarkepm-cyberarkepm---suspicious-activity-attempts-e60cf50c-3ae0-44ac-9de1-ea13886973b8.md) | Execution | - |
 
 ### Workbooks
 
@@ -76,7 +76,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CyberArkEPM](../content/40a61269-9d21-41ac-b5ae-d741e4a4ecde.md) | - | - |
+| [CyberArkEPM](../content/cyberarkepm-cyberarkepm-40a61269-9d21-41ac-b5ae-d741e4a4ecde.md) | - | - |
 
 ## Release Notes
 

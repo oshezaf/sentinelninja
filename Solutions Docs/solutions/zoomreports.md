@@ -44,7 +44,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Zoom](../content/249f522d-995b-439f-910a-12741f7c0d8b.md) | - | - |
+| [Zoom](../content/zoomreports-zoom-249f522d-995b-439f-910a-12741f7c0d8b.md) | - | - |
 
 ## Additional Documentation
 

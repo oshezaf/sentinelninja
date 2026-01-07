@@ -41,33 +41,33 @@ This solution includes **17 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Contrast ADR - DLP SQL Injection Correlation](../content/1aac7737-d52f-483d-b225-6a27c1b29a9e.md) | High | InitialAccess, CredentialAccess, Collection, Exfiltration, CommandAndControl, Reconnaissance, CredentialAccess, LateralMovement, Discovery | [`ContrastADR_CL`](../tables/contrastadr-cl.md) |
-| [Contrast ADR - EDR Alert Correlation](../content/c1c6ba64-134e-403b-b9a6-1bebc90809a4.md) | Medium | Execution, DefenseEvasion, InitialAccess, CommandAndControl | [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) |
-| [Contrast ADR - Exploited Attack Event](../content/ae4f67a6-0713-4a26-ae61-284e67b408c1.md) | High | InitialAccess, Execution, DefenseEvasion, LateralMovement, CommandAndControl | [`ContrastADR_CL`](../tables/contrastadr-cl.md) |
-| [Contrast ADR - Exploited Attack in Production](../content/31417149-f3a2-4db4-9e5f-85e0a464f6a1.md) | High | InitialAccess, Execution, DefenseEvasion, LateralMovement, CommandAndControl | [`ContrastADR_CL`](../tables/contrastadr-cl.md) |
-| [Contrast ADR - Security Incident Alert](../content/7ce5956f-48f2-42f5-8e2e-c254e7643c11.md) | Medium | InitialAccess, DefenseEvasion, Discovery, CommandAndControl | [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) |
-| [Contrast ADR - WAF Alert Correlation](../content/93641436-afb3-4921-8828-ceab0d15aaab.md) | Medium | InitialAccess, DefenseEvasion, CommandAndControl | [`ContrastADR_CL`](../tables/contrastadr-cl.md) |
+| [Contrast ADR - DLP SQL Injection Correlation](../content/contrastadr-contrast-adr---dlp-sql-injection-correlation-1aac7737-d52f-483d-b225-6a27c1b29a9e.md) | High | InitialAccess, CredentialAccess, Collection, Exfiltration, CommandAndControl, Reconnaissance, CredentialAccess, LateralMovement, Discovery | [`ContrastADR_CL`](../tables/contrastadr-cl.md) |
+| [Contrast ADR - EDR Alert Correlation](../content/contrastadr-contrast-adr---edr-alert-correlation-c1c6ba64-134e-403b-b9a6-1bebc90809a4.md) | Medium | Execution, DefenseEvasion, InitialAccess, CommandAndControl | [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) |
+| [Contrast ADR - Exploited Attack Event](../content/contrastadr-contrast-adr---exploited-attack-event-ae4f67a6-0713-4a26-ae61-284e67b408c1.md) | High | InitialAccess, Execution, DefenseEvasion, LateralMovement, CommandAndControl | [`ContrastADR_CL`](../tables/contrastadr-cl.md) |
+| [Contrast ADR - Exploited Attack in Production](../content/contrastadr-contrast-adr---exploited-attack-in-production-31417149-f3a2-4db4-9e5f-85e0a464f6a1.md) | High | InitialAccess, Execution, DefenseEvasion, LateralMovement, CommandAndControl | [`ContrastADR_CL`](../tables/contrastadr-cl.md) |
+| [Contrast ADR - Security Incident Alert](../content/contrastadr-contrast-adr---security-incident-alert-7ce5956f-48f2-42f5-8e2e-c254e7643c11.md) | Medium | InitialAccess, DefenseEvasion, Discovery, CommandAndControl | [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) |
+| [Contrast ADR - WAF Alert Correlation](../content/contrastadr-contrast-adr---waf-alert-correlation-93641436-afb3-4921-8828-ceab0d15aaab.md) | Medium | InitialAccess, DefenseEvasion, CommandAndControl | [`ContrastADR_CL`](../tables/contrastadr-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ContrastADR_Command_Injection_Workbook](../content/contrastadr-command-injection-workbook-contrastadr.md) | - |
-| [ContrastADR_Cross_Site_Scripting_Workbook](../content/contrastadr-cross-site-scripting-workbook-contrastadr.md) | - |
-| [ContrastADR_Expression_Language_Injection_Workbook](../content/contrastadr-expression-language-injection-workbook-contrastadr.md) | - |
-| [ContrastADR_HTTP_Method_Tampering_Workbook](../content/contrastadr-http-method-tampering-workbook-contrastadr.md) | - |
-| [ContrastADR_JNDI_Injection_Workbook](../content/contrastadr-jndi-injection-workbook-contrastadr.md) | - |
-| [ContrastADR_Path_Traversal_Workbook](../content/contrastadr-path-traversal-workbook-contrastadr.md) | - |
-| [ContrastADR_SQL_Injection_Workbook](../content/contrastadr-sql-injection-workbook-contrastadr.md) | - |
-| [ContrastADR_Untrusted_Deserialization_Workbook](../content/contrastadr-untrusted-deserialization-workbook-contrastadr.md) | - |
-| [ContrastADR_XML External_Entity_Injection_Injection_Workbook](../content/contrastadr-xml-external-entity-injection-injection-workbook-contrastadr.md) | - |
+| [ContrastADR_Command_Injection_Workbook](../content/contrastadr-contrastadr-command-injection-workbook.md) | - |
+| [ContrastADR_Cross_Site_Scripting_Workbook](../content/contrastadr-contrastadr-cross-site-scripting-workbook.md) | - |
+| [ContrastADR_Expression_Language_Injection_Workbook](../content/contrastadr-contrastadr-expression-language-injection-workbook.md) | - |
+| [ContrastADR_HTTP_Method_Tampering_Workbook](../content/contrastadr-contrastadr-http-method-tampering-workbook.md) | - |
+| [ContrastADR_JNDI_Injection_Workbook](../content/contrastadr-contrastadr-jndi-injection-workbook.md) | - |
+| [ContrastADR_Path_Traversal_Workbook](../content/contrastadr-contrastadr-path-traversal-workbook.md) | - |
+| [ContrastADR_SQL_Injection_Workbook](../content/contrastadr-contrastadr-sql-injection-workbook.md) | - |
+| [ContrastADR_Untrusted_Deserialization_Workbook](../content/contrastadr-contrastadr-untrusted-deserialization-workbook.md) | - |
+| [ContrastADR_XML External_Entity_Injection_Injection_Workbook](../content/contrastadr-contrastadr-xml-external-entity-injection-injection-workbook.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Contrast_alert_event_parser](../content/ca3c0ec6-eceb-4db0-8ca9-b12eea4f491c.md) | - | - |
-| [Contrast_incident_parser](../content/ca3c0ec6-eceb-4db0-8ca9-b12eea4f491c.md) | - | - |
+| [Contrast_alert_event_parser](../content/contrastadr-contrast-alert-event-parser-ca3c0ec6-eceb-4db0-8ca9-b12eea4f491c.md) | - | - |
+| [Contrast_incident_parser](../content/contrastadr-contrast-incident-parser-ca3c0ec6-eceb-4db0-8ca9-b12eea4f491c.md) | - | - |
 
 ## Release Notes
 

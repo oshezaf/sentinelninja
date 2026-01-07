@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Veeam](../solutions/veeam.md):**
-- [Configuration Backup Failed](../content/259ef474-836d-4662-86ef-70cb7a38e765.md)
+- [Configuration Backup Failed](../content/veeam-configuration-backup-failed-259ef474-836d-4662-86ef-70cb7a38e765.md)
 
 ---
 

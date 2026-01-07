@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [NucleusCyber_NCProtect_Workbook](../content/nucleuscyber-ncprotect-workbook-archtis.md) | [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md) |
+| [NucleusCyber_NCProtect_Workbook](../content/archtis-nucleuscyber-ncprotect-workbook.md) | [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md) |
 
 ---
 

@@ -29,8 +29,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AdvancedKQL](../content/advancedkql-kql-training.md) | - |
-| [IntrotoKQL](../content/introtokql-kql-training.md) | - |
+| [AdvancedKQL](../content/kql-training-advancedkql.md) | - |
+| [IntrotoKQL](../content/kql-training-introtokql.md) | - |
 
 ## Release Notes
 

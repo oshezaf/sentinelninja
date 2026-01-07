@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [EatonForeseer - Unauthorized Logins](../content/5a7fccb8-3ed0-44f2-8477-540af3ef4d92.md) | High | InitialAccess | [`SecurityEvent`](../tables/securityevent.md) |
+| [EatonForeseer - Unauthorized Logins](../content/eatonforeseer-eatonforeseer---unauthorized-logins-5a7fccb8-3ed0-44f2-8477-540af3ef4d92.md) | High | InitialAccess | [`SecurityEvent`](../tables/securityevent.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [EatonForeseerHealthAndAccess](../content/eatonforeseerhealthandaccess-eatonforeseer.md) | [`SecurityEvent`](../tables/securityevent.md) |
+| [EatonForeseerHealthAndAccess](../content/eatonforeseer-eatonforeseerhealthandaccess.md) | [`SecurityEvent`](../tables/securityevent.md) |
 
 ---
 

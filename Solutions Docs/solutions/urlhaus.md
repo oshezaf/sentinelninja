@@ -29,9 +29,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [URLhaus-CheckHashAndEnrichIncident](../content/urlhaus-checkhashandenrichincident-urlhaus.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [URLhaus-CheckHostAndEnrichIncident](../content/urlhaus-checkhostandenrichincident-urlhaus.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [URLhaus-CheckURLAndEnrichIncident](../content/urlhaus-checkurlandenrichincident-urlhaus.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [URLhaus-CheckHashAndEnrichIncident](../content/urlhaus-urlhaus-checkhashandenrichincident.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [URLhaus-CheckHostAndEnrichIncident](../content/urlhaus-urlhaus-checkhostandenrichincident.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [URLhaus-CheckURLAndEnrichIncident](../content/urlhaus-urlhaus-checkurlandenrichincident.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 
 ---
 

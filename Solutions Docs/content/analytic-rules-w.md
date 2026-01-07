@@ -16,13 +16,13 @@
 
 | Name | Severity | Solution |
 |:-----|:---------|:---------|
-| [WAN Accelerator Deleted](5b19f19b-d92c-486f-be98-ba2c5945e240.md) | Informational | [Veeam](../solutions/veeam.md) |
-| [WAN Accelerator Settings Updated](2e4fe360-ce67-433b-930e-42f83058dfd0.md) | Informational | [Veeam](../solutions/veeam.md) |
-| [WDigest downgrade attack](f6502545-ae3a-4232-a8b0-79d87e5c98d7.md) | Medium | [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
-| [Web sites blocked by Eset](84ad2f8a-b64c-49bc-b669-bdb4fd3071e9.md) | Low | [Eset Security Management Center](../solutions/eset-security-management-center.md) |
-| [Website blocked by ESET](7b84fc5b-9ffb-4e9b-945b-5d480e330b3f.md) | Low | [ESETPROTECT](../solutions/esetprotect.md) |
-| [Windows Binaries Executed from Non-Default Directory](15049017-527f-4d3b-b011-b0e99e68ef45.md) | Medium | [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
-| [Windows Binaries Lolbins Renamed](cbf6ad48-fa5c-4bf7-b205-28dbadb91255.md) | Medium | [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
+| [WAN Accelerator Deleted](veeam-wan-accelerator-deleted-5b19f19b-d92c-486f-be98-ba2c5945e240.md) | Informational | [Veeam](../solutions/veeam.md) |
+| [WAN Accelerator Settings Updated](veeam-wan-accelerator-settings-updated-2e4fe360-ce67-433b-930e-42f83058dfd0.md) | Informational | [Veeam](../solutions/veeam.md) |
+| [WDigest downgrade attack](endpoint-threat-protection-essentials-wdigest-downgrade-attack-f6502545-ae3a-4232-a8b0-79d87e5c98d7.md) | Medium | [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
+| [Web sites blocked by Eset](eset-security-management-center-web-sites-blocked-by-eset-84ad2f8a-b64c-49bc-b669-bdb4fd3071e9.md) | Low | [Eset Security Management Center](../solutions/eset-security-management-center.md) |
+| [Website blocked by ESET](esetprotect-website-blocked-by-eset-7b84fc5b-9ffb-4e9b-945b-5d480e330b3f.md) | Low | [ESETPROTECT](../solutions/esetprotect.md) |
+| [Windows Binaries Executed from Non-Default Directory](endpoint-threat-protection-essentials-windows-binaries-executed-from-non-default-directory-15049017-527f-4d3b-b011-b0e99e68ef45.md) | Medium | [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
+| [Windows Binaries Lolbins Renamed](endpoint-threat-protection-essentials-windows-binaries-lolbins-renamed-cbf6ad48-fa5c-4bf7-b205-28dbadb91255.md) | Medium | [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 
 ---
 

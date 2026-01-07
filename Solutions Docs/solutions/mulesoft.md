@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [MuleSoftCloudhub](../content/b2b66a07-3c23-458b-89bc-f004848e2b10.md) | - | - |
+| [MuleSoftCloudhub](../content/mulesoft-mulesoftcloudhub-b2b66a07-3c23-458b-89bc-f004848e2b10.md) | - | - |
 
 ## Release Notes
 

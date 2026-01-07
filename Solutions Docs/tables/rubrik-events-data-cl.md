@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md):**
-- [Rubrik Threat Monitoring](../content/0083cbc4-776e-42ca-8694-6950fd605df9.md)
+- [Rubrik Threat Monitoring](../content/rubriksecuritycloud-rubrik-threat-monitoring-0083cbc4-776e-42ca-8694-6950fd605df9.md)
 
 ---
 

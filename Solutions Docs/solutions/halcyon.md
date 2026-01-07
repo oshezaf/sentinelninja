@@ -42,11 +42,11 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ASimAuthenticationHalcyon](../content/a1b2c3d4-e5f6-7890-1234-567890abcde1.md) | - | - |
-| [ASimDnsHalcyon](../content/a1b2c3d4-e5f6-7890-1234-567890abcde2.md) | - | - |
-| [ASimFileEventHalcyon](../content/a1b2c3d4-e5f6-7890-1234-567890abcde3.md) | - | - |
-| [ASimNetworkSessionHalcyon](../content/a1b2c3d4-e5f6-7890-1234-567890abcde4.md) | - | - |
-| [ASimProcessEventHalcyon](../content/a1b2c3d4-e5f6-7890-1234-567890abcde5.md) | - | - |
+| [ASimAuthenticationHalcyon](../content/halcyon-asimauthenticationhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde1.md) | - | - |
+| [ASimDnsHalcyon](../content/halcyon-asimdnshalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde2.md) | - | - |
+| [ASimFileEventHalcyon](../content/halcyon-asimfileeventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde3.md) | - | - |
+| [ASimNetworkSessionHalcyon](../content/halcyon-asimnetworksessionhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde4.md) | - | - |
+| [ASimProcessEventHalcyon](../content/halcyon-asimprocesseventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde5.md) | - | - |
 
 ## Release Notes
 

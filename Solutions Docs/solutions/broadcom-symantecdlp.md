@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecDLP](../content/bea87dea-1c01-461b-9649-6619dc2d989c.md) | - | - |
+| [SymantecDLP](../content/broadcom-symantecdlp-symantecdlp-bea87dea-1c01-461b-9649-6619dc2d989c.md) | - | - |
 
 ## Release Notes
 

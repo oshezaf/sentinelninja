@@ -37,8 +37,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CylancePROTECT](../content/87392258-fb9d-448d-94a4-cdf356fcce5c.md) | - | - |
-| [CylancePROTECT-old](../content/84b956cf-1546-41b5-8984-9aa9f7bab4f3.md) | - | - |
+| [CylancePROTECT](../content/blackberry-cylanceprotect-cylanceprotect-87392258-fb9d-448d-94a4-cdf356fcce5c.md) | - | - |
+| [CylancePROTECT-old](../content/blackberry-cylanceprotect-cylanceprotect-old-84b956cf-1546-41b5-8984-9aa9f7bab4f3.md) | - | - |
 
 ## Release Notes
 

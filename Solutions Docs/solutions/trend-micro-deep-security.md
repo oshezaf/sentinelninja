@@ -38,14 +38,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TrendMicroDeepSecurityAttackActivity](../content/trendmicrodeepsecurityattackactivity-trend-micro-deep-security.md) | - |
-| [TrendMicroDeepSecurityOverview](../content/trendmicrodeepsecurityoverview-trend-micro-deep-security.md) | - |
+| [TrendMicroDeepSecurityAttackActivity](../content/trend-micro-deep-security-trendmicrodeepsecurityattackactivity.md) | - |
+| [TrendMicroDeepSecurityOverview](../content/trend-micro-deep-security-trendmicrodeepsecurityoverview.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TrendMicroDeepSecurity](../content/b376272c-ca00-435d-9879-e7d64da7dd24.md) | - | - |
+| [TrendMicroDeepSecurity](../content/trend-micro-deep-security-trendmicrodeepsecurity-b376272c-ca00-435d-9879-e7d64da7dd24.md) | - | - |
 
 ## Release Notes
 

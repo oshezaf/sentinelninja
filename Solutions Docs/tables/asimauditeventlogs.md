@@ -35,10 +35,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
-- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/a924d317-03d2-4420-a71f-4d347bda4bd8.md)
+- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-ti-map-ip-entity-to-workday%28asimauditeventlogs%29-a924d317-03d2-4420-a71f-4d347bda4bd8.md)
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-%28new%29.md):**
-- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/92e8e945-6e99-4e4b-bef8-468b4c19fc3a.md)
+- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-%28new%29-ti-map-ip-entity-to-workday%28asimauditeventlogs%29-92e8e945-6e99-4e4b-bef8-468b4c19fc3a.md)
 
 ## Resource Types
 

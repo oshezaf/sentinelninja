@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [OnapsisAlarmsOverview](../content/onapsisalarmsoverview-onapsis-platform.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [OnapsisAlarmsOverview](../content/onapsis-platform-onapsisalarmsoverview.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OnapsisLookup](../content/ef14e847-84c7-4f8a-8bb4-a26ec3b09af8.md) | - | - |
+| [OnapsisLookup](../content/onapsis-platform-onapsislookup-ef14e847-84c7-4f8a-8bb4-a26ec3b09af8.md) | - | - |
 
 ## Release Notes
 

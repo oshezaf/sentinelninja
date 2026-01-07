@@ -29,11 +29,11 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Enrich-Sentinel-IPQualityScore-Email-Address-Reputation](../content/enrich-sentinel-ipqualityscore-email-address-reputation-ipqualityscore.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich Email Addresses... | - |
-| [Enrich-Sentinel-IPQualityScore-IP-Address-Reputation](../content/enrich-sentinel-ipqualityscore-ip-address-reputation-ipqualityscore.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich IP Addresses fo... | - |
-| [Enrich-Sentinel-IPQualityScore-Phone-Number-Reputation](../content/enrich-sentinel-ipqualityscore-phone-number-reputation-ipqualityscore.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich Phone Numbers f... | - |
-| [Enrich-Sentinel-IPQualityScore-URL-Reputation](../content/enrich-sentinel-ipqualityscore-url-reputation-ipqualityscore.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich URL's found in ... | - |
-| [Enrich_Sentinel_IPQualityScore_Domain_Reputation](../content/enrich-sentinel-ipqualityscore-domain-reputation-ipqualityscore.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich Domain's found ... | - |
+| [Enrich-Sentinel-IPQualityScore-Email-Address-Reputation](../content/ipqualityscore-enrich-sentinel-ipqualityscore-email-address-reputation.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich Email Addresses... | - |
+| [Enrich-Sentinel-IPQualityScore-IP-Address-Reputation](../content/ipqualityscore-enrich-sentinel-ipqualityscore-ip-address-reputation.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich IP Addresses fo... | - |
+| [Enrich-Sentinel-IPQualityScore-Phone-Number-Reputation](../content/ipqualityscore-enrich-sentinel-ipqualityscore-phone-number-reputation.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich Phone Numbers f... | - |
+| [Enrich-Sentinel-IPQualityScore-URL-Reputation](../content/ipqualityscore-enrich-sentinel-ipqualityscore-url-reputation.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich URL's found in ... | - |
+| [Enrich_Sentinel_IPQualityScore_Domain_Reputation](../content/ipqualityscore-enrich-sentinel-ipqualityscore-domain-reputation.md) | This playbook uses the IPQS Fraud and Risk Scoring connector to automatically enrich Domain's found ... | - |
 
 ---
 

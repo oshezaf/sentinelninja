@@ -39,22 +39,22 @@ This solution includes **6 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Create Incidents from IronDefense](../content/3cf46cb9-99d5-42ee-a43c-7bd88ea394a1.md) | Medium | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Create Incidents from IronDefense](../content/ironnet-irondefense-create-incidents-from-irondefense-3cf46cb9-99d5-42ee-a43c-7bd88ea394a1.md) | Medium | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IronDefenseAlertDashboard](../content/irondefensealertdashboard-ironnet-irondefense.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [IronDefenseAlertDetails](../content/irondefensealertdetails-ironnet-irondefense.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [IronDefenseAlertDashboard](../content/ironnet-irondefense-irondefensealertdashboard.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [IronDefenseAlertDetails](../content/ironnet-irondefense-irondefensealertdetails.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IronNet_UpdateIronDefenseAlerts](../content/ironnet-updateirondefensealerts-ironnet-irondefense.md) | author: IronNet | - |
-| [IronNet_UpdateSentinelIncidents](../content/ironnet-updatesentinelincidents-ironnet-irondefense.md) | author: IronNet | - |
-| [IronNet_Validate_IronNet_API](../content/ironnet-validate-ironnet-api-ironnet-irondefense.md) | author: IronNet | - |
+| [IronNet_UpdateIronDefenseAlerts](../content/ironnet-irondefense-ironnet-updateirondefensealerts.md) | author: IronNet | - |
+| [IronNet_UpdateSentinelIncidents](../content/ironnet-irondefense-ironnet-updatesentinelincidents.md) | author: IronNet | - |
+| [IronNet_Validate_IronNet_API](../content/ironnet-irondefense-ironnet-validate-ironnet-api.md) | author: IronNet | - |
 
 ---
 

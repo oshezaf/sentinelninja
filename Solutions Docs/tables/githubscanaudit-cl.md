@@ -20,7 +20,7 @@ This table is ingested by the following connectors:
 
 **In solution [GitHub](../solutions/github.md):**
 - [GitHub](../content/github-github.md)
-- [GitHubAdvancedSecurity](../content/githubadvancedsecurity-github.md)
+- [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity.md)
 
 ---
 

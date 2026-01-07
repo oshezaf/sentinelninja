@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Digital Shadows](../solutions/digital-shadows.md):**
-- [DigitalShadows](../content/digitalshadows-digital-shadows.md)
+- [DigitalShadows](../content/digital-shadows-digitalshadows.md)
 
 ---
 

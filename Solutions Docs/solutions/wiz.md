@@ -42,7 +42,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WizFindings](../content/wizfindings-wiz.md) | [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md)<br>[`WizIssues_CL`](../tables/wizissues-cl.md) |
+| [WizFindings](../content/wiz-wizfindings.md) | [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md)<br>[`WizIssues_CL`](../tables/wizissues-cl.md) |
 
 ## Release Notes
 

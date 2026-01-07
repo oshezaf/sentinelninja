@@ -60,33 +60,33 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Insider Risk_High User Security Alert Correlations](../content/a4fb4255-f55b-4c24-b396-976ee075d406.md) | Medium | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Insider Risk_High User Security Incidents Correlation](../content/28a75d10-9b75-4192-9863-e452c3ad24db.md) | High | Execution | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [Insider Risk_Microsoft Purview Insider Risk Management Alert Observed](../content/69660e65-0e5c-4700-8b99-5caf59786606.md) | High | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Insider Risk_Risky User Access By Application](../content/15386bba-dc70-463f-a09f-d392e7731c63.md) | Medium | Execution | [`SigninLogs`](../tables/signinlogs.md) |
-| [Insider Risk_Sensitive Data Access Outside Organizational Geo-location](../content/b81ed294-28cf-48c3-bac8-ac60dcef293b.md) | High | Exfiltration | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |
+| [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406.md) | Medium | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db.md) | High | Execution | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [Insider Risk_Microsoft Purview Insider Risk Management Alert Observed](../content/microsoftpurviewinsiderriskmanagement-insider-risk-microsoft-purview-insider-risk-management-alert-observed-69660e65-0e5c-4700-8b99-5caf59786606.md) | High | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_Risky User Access By Application](../content/microsoftpurviewinsiderriskmanagement-insider-risk-risky-user-access-by-application-15386bba-dc70-463f-a09f-d392e7731c63.md) | Medium | Execution | [`SigninLogs`](../tables/signinlogs.md) |
+| [Insider Risk_Sensitive Data Access Outside Organizational Geo-location](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sensitive-data-access-outside-organizational-geo-location-b81ed294-28cf-48c3-bac8-ac60dcef293b.md) | High | Exfiltration | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Insider Risk_Entity Anomaly Followed by IRM Alert](../content/ea5d043f-80ef-452c-a31a-b584e485b2be.md) | PrivilegeEscalation | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Insider Risk_ISP Anomaly to Exfil](../content/12b6582f-b715-4f91-98e1-1582ebad348a.md) | Exfiltration | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Insider Risk_Multiple Entity-Based Anomalies](../content/3bc01058-ce23-45ba-a7e9-409d844b12dc.md) | PrivilegeEscalation | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
-| [Insider Risk_Possible Sabotage](../content/3201b17a-06e1-4a8d-8157-c69345baa808.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Insider Risk_Sign In Risk Followed By Sensitive Data Access](../content/45ec52c2-99e1-4de1-9adc-bae0f79d4e23.md) | Exfiltration | [`SigninLogs`](../tables/signinlogs.md) |
+| [Insider Risk_Entity Anomaly Followed by IRM Alert](../content/microsoftpurviewinsiderriskmanagement-insider-risk-entity-anomaly-followed-by-irm-alert-ea5d043f-80ef-452c-a31a-b584e485b2be.md) | PrivilegeEscalation | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a.md) | Exfiltration | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_Multiple Entity-Based Anomalies](../content/microsoftpurviewinsiderriskmanagement-insider-risk-multiple-entity-based-anomalies-3bc01058-ce23-45ba-a7e9-409d844b12dc.md) | PrivilegeEscalation | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
+| [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
+| [Insider Risk_Sign In Risk Followed By Sensitive Data Access](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sign-in-risk-followed-by-sensitive-data-access-45ec52c2-99e1-4de1-9adc-bae0f79d4e23.md) | Exfiltration | [`SigninLogs`](../tables/signinlogs.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InsiderRiskManagement](../content/insiderriskmanagement-microsoftpurviewinsiderriskmanagement.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md) |
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Notify-InsiderRiskTeam](../content/notify-insiderriskteam-microsoftpurviewinsiderriskmanagement.md) | This playbook should be configured as an automation action with the Insider Risk Management Analytic... | - |
+| [Notify-InsiderRiskTeam](../content/microsoftpurviewinsiderriskmanagement-notify-insiderriskteam.md) | This playbook should be configured as an automation action with the Insider Risk Management Analytic... | - |
 
 ## Additional Documentation
 

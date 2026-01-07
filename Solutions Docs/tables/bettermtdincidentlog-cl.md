@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-%28mtd%29.md):**
-- [BETTER_MTD_Workbook](../content/better-mtd-workbook-better-mobile-threat-defense-%28mtd%29.md)
+- [BETTER_MTD_Workbook](../content/better-mobile-threat-defense-%28mtd%29-better-mtd-workbook.md)
 
 ---
 

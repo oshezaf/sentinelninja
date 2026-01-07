@@ -47,16 +47,16 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Azure Key Vault access TimeSeries anomaly](../content/0914adab-90b5-47a3-a79f-7cdcac843aa7.md) | Low | CredentialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [Mass secret retrieval from Azure Key Vault](../content/24f8c234-d1ff-40ec-8b73-96b17a3a9c1c.md) | Low | CredentialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [NRT Sensitive Azure Key Vault operations](../content/884ead54-cb3f-4676-a1eb-b26532d6cbfd.md) | Low | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [Sensitive Azure Key Vault operations](../content/d6491be0-ab2d-439d-95d6-ad8ea39277c5.md) | Low | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Azure Key Vault access TimeSeries anomaly](../content/azure-key-vault-azure-key-vault-access-timeseries-anomaly-0914adab-90b5-47a3-a79f-7cdcac843aa7.md) | Low | CredentialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Mass secret retrieval from Azure Key Vault](../content/azure-key-vault-mass-secret-retrieval-from-azure-key-vault-24f8c234-d1ff-40ec-8b73-96b17a3a9c1c.md) | Low | CredentialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [NRT Sensitive Azure Key Vault operations](../content/azure-key-vault-nrt-sensitive-azure-key-vault-operations-884ead54-cb3f-4676-a1eb-b26532d6cbfd.md) | Low | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Sensitive Azure Key Vault operations](../content/azure-key-vault-sensitive-azure-key-vault-operations-d6491be0-ab2d-439d-95d6-ad8ea39277c5.md) | Low | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzureKeyVaultWorkbook](../content/azurekeyvaultworkbook-azure-key-vault.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AzureKeyVaultWorkbook](../content/azure-key-vault-azurekeyvaultworkbook.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Release Notes
 

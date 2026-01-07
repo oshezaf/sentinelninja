@@ -40,7 +40,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SophosEPEvent](../content/4ed36a9b-accd-491d-b22b-2454c137d90d.md) | - | - |
+| [SophosEPEvent](../content/sophos-endpoint-protection-sophosepevent-4ed36a9b-accd-491d-b22b-2454c137d90d.md) | - | - |
 
 ## Release Notes
 

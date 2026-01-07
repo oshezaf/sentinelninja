@@ -29,7 +29,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CheckPhish - Get URL reputation](../content/checkphish---get-url-reputation-checkphish-by-bolster.md) | This playbooks will be used to submit URL to CheckPhish and gets the repution of URL (Scan result) | - |
+| [CheckPhish - Get URL reputation](../content/checkphish-by-bolster-checkphish---get-url-reputation.md) | This playbooks will be used to submit URL to CheckPhish and gets the repution of URL (Scan result) | - |
 
 ---
 

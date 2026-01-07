@@ -29,9 +29,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Google Cloud Platform BigQuery - Create Wtchlist with BigQuery Table Data](../content/google-cloud-platform-bigquery---create-wtchlist-with-bigquery-table-data-google-cloud-platform-bigquery.md) | This playbook can be run from incident context manually or from automation rule to create a watchlis... | - |
-| [Google Cloud Platform BigQuery - Enrich Incident with BigQuery Table Data](../content/google-cloud-platform-bigquery---enrich-incident-with-bigquery-table-data-google-cloud-platform-bigquery.md) | This playbook can be run from incident context manually or from automation rule to query the GCP Big... | - |
-| [Google Cloud Platform BigQuery - Query BigQuery Table](../content/google-cloud-platform-bigquery---query-bigquery-table-google-cloud-platform-bigquery.md) | This playbook can be run from incident context manually or from automation rule to query the GCP Big... | - |
+| [Google Cloud Platform BigQuery - Create Wtchlist with BigQuery Table Data](../content/google-cloud-platform-bigquery-google-cloud-platform-bigquery---create-wtchlist-with-bigquery-table-data.md) | This playbook can be run from incident context manually or from automation rule to create a watchlis... | - |
+| [Google Cloud Platform BigQuery - Enrich Incident with BigQuery Table Data](../content/google-cloud-platform-bigquery-google-cloud-platform-bigquery---enrich-incident-with-bigquery-table-data.md) | This playbook can be run from incident context manually or from automation rule to query the GCP Big... | - |
+| [Google Cloud Platform BigQuery - Query BigQuery Table](../content/google-cloud-platform-bigquery-google-cloud-platform-bigquery---query-bigquery-table.md) | This playbook can be run from incident context manually or from automation rule to query the GCP Big... | - |
 
 ---
 

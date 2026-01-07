@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [OrcaAlerts](../content/orcaalerts-orca-security-alerts.md) | [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) |
+| [OrcaAlerts](../content/orca-security-alerts-orcaalerts.md) | [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) |
 
 ---
 

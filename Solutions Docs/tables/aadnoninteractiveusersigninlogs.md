@@ -31,18 +31,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (3)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/6e575295-a7e6-464c-8192-3e1d8fd6a990.md)
+- [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990.md)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
-- [Lumen TI IPAddress in IdentityLogonEvents](../content/a7cd18cd-1503-47ec-8dca-65d750540637.md)
+- [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637.md)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
-- [Password spray attack against Microsoft Entra ID Seamless SSO](../content/fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba.md)
+- [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba.md)
 
 ### Workbooks (1)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
-- [AzureActiveDirectorySignins](../content/azureactivedirectorysignins-microsoft-entra-id.md)
+- [AzureActiveDirectorySignins](../content/microsoft-entra-id-azureactivedirectorysignins.md)
 
 ---
 

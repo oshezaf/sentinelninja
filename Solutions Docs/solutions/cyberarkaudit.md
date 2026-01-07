@@ -37,9 +37,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [CyberArk - High-Risk Actions Outside Business Hours](../content/cyberark---high-risk-actions-outside-business-hours-cyberarkaudit.md) | High | DefenseEvasion | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) |
-| [CyberArk - Multiple Failed Actions Followed by Success (15m)](../content/cyberark---multiple-failed-actions-followed-by-success-%2815m%29-cyberarkaudit.md) | Medium | CredentialAccess | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) |
-| [CyberArk - Sensitive Safe/Permission/Entitlement Changes (with customData)](../content/cyberark---sensitive-safe-permission-entitlement-changes-%28with-customdata%29-cyberarkaudit.md) | Low | PrivilegeEscalation | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) |
+| [CyberArk - High-Risk Actions Outside Business Hours](../content/cyberarkaudit-cyberark---high-risk-actions-outside-business-hours.md) | High | DefenseEvasion | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) |
+| [CyberArk - Multiple Failed Actions Followed by Success (15m)](../content/cyberarkaudit-cyberark---multiple-failed-actions-followed-by-success-%2815m%29.md) | Medium | CredentialAccess | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) |
+| [CyberArk - Sensitive Safe/Permission/Entitlement Changes (with customData)](../content/cyberarkaudit-cyberark---sensitive-safe-permission-entitlement-changes-%28with-customdata%29.md) | Low | PrivilegeEscalation | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) |
 
 ## Release Notes
 

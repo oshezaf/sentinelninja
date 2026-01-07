@@ -26,8 +26,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [workflow](../content/workflow-sap.md) | < 🏡home | - |
-| [workflow](../content/workflow-sap.md) | < 🏡home | - |
+| [workflow](../content/sap-workflow.md) | < 🏡home | - |
+| [workflow](../content/sap-workflow.md) | < 🏡home | - |
 
 ## Additional Documentation
 

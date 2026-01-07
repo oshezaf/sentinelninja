@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CitrixWAF](../content/citrixwaf-citrix-web-app-firewall.md) | - |
+| [CitrixWAF](../content/citrix-web-app-firewall-citrixwaf.md) | - |
 
 ## Release Notes
 

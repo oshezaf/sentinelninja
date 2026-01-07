@@ -28,13 +28,13 @@ This solution includes **7 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AWS Systems Manager - Get Missing Patches for EC2 Instances](../content/aws-systems-manager---get-missing-patches-for-ec2-instances-aws-systems-manager.md) | When an incident is created in Microsoft Sentinel, this playbook gets triggered and perform the foll... | - |
-| [AWS Systems Manager - Get Missing Patches for EC2 Instances for given Hostname](../content/aws-systems-manager---get-missing-patches-for-ec2-instances-for-given-hostname-aws-systems-manager.md) | The playbook can be triggered manually from a Host Entity to get the missing patches on a managed EC... | - |
-| [AWS Systems Manager - Get Missing Patches for EC2 Instances for given Private IP](../content/aws-systems-manager---get-missing-patches-for-ec2-instances-for-given-private-ip-aws-systems-manager.md) | The playbook can be triggered manually from an IP Entity to get the missing patches on a managed EC2... | - |
-| [AWS Systems Manager - Run Automation Runbook](../content/aws-systems-manager---run-automation-runbook-aws-systems-manager.md) | When a new sentinel incident is created, this playbook gets triggered and runs the specified AWS Sys... | - |
-| [AWS Systems Manager - Stop Managed EC2 Instances](../content/aws-systems-manager---stop-managed-ec2-instances-aws-systems-manager.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. Thi... | - |
-| [AWS Systems Manager - Stop Managed EC2 Instances Host Entity Trigger](../content/aws-systems-manager---stop-managed-ec2-instances-host-entity-trigger-aws-systems-manager.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The... | - |
-| [AWS Systems Manager - Stop Managed EC2 Instances IP Entity Trigger](../content/aws-systems-manager---stop-managed-ec2-instances-ip-entity-trigger-aws-systems-manager.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The... | - |
+| [AWS Systems Manager - Get Missing Patches for EC2 Instances](../content/aws-systems-manager-aws-systems-manager---get-missing-patches-for-ec2-instances.md) | When an incident is created in Microsoft Sentinel, this playbook gets triggered and perform the foll... | - |
+| [AWS Systems Manager - Get Missing Patches for EC2 Instances for given Hostname](../content/aws-systems-manager-aws-systems-manager---get-missing-patches-for-ec2-instances-for-given-hostname.md) | The playbook can be triggered manually from a Host Entity to get the missing patches on a managed EC... | - |
+| [AWS Systems Manager - Get Missing Patches for EC2 Instances for given Private IP](../content/aws-systems-manager-aws-systems-manager---get-missing-patches-for-ec2-instances-for-given-private-ip.md) | The playbook can be triggered manually from an IP Entity to get the missing patches on a managed EC2... | - |
+| [AWS Systems Manager - Run Automation Runbook](../content/aws-systems-manager-aws-systems-manager---run-automation-runbook.md) | When a new sentinel incident is created, this playbook gets triggered and runs the specified AWS Sys... | - |
+| [AWS Systems Manager - Stop Managed EC2 Instances](../content/aws-systems-manager-aws-systems-manager---stop-managed-ec2-instances.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. Thi... | - |
+| [AWS Systems Manager - Stop Managed EC2 Instances Host Entity Trigger](../content/aws-systems-manager-aws-systems-manager---stop-managed-ec2-instances-host-entity-trigger.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The... | - |
+| [AWS Systems Manager - Stop Managed EC2 Instances IP Entity Trigger](../content/aws-systems-manager-aws-systems-manager---stop-managed-ec2-instances-ip-entity-trigger.md) | This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The... | - |
 
 ## Release Notes
 

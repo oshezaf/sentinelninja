@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DelineaWorkbook](../content/delineaworkbook-delinea-secret-server.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [DelineaWorkbook](../content/delinea-secret-server-delineaworkbook.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

@@ -42,36 +42,36 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dataminr - urgent alerts detected](../content/64a46029-3236-4d03-b5df-207366a623f1.md) | Medium | Persistence | - |
+| [Dataminr - urgent alerts detected](../content/dataminr-pulse-dataminr---urgent-alerts-detected-64a46029-3236-4d03-b5df-207366a623f1.md) | Medium | Persistence | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DataminrPulseAlerts](../content/dataminrpulsealerts-dataminr-pulse.md) | - |
+| [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DataminrPulseAlertEnrichment](../content/dataminrpulsealertenrichment-dataminr-pulse.md) | This playbook provides an end-to-end example of how alert enrichment works. This will extract the IP... | - |
+| [DataminrPulseAlertEnrichment](../content/dataminr-pulse-dataminrpulsealertenrichment.md) | This playbook provides an end-to-end example of how alert enrichment works. This will extract the IP... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DataminrPulseAlerts](../content/a4fddd3e-9993-4c86-b5e8-8e36d8ce1197.md) | - | - |
-| [DataminrPulseCyberAlerts](../content/922c64bb-819b-4e3f-811a-0dfbff8eb667.md) | - | - |
+| [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197.md) | - | - |
+| [DataminrPulseCyberAlerts](../content/dataminr-pulse-dataminrpulsecyberalerts-922c64bb-819b-4e3f-811a-0dfbff8eb667.md) | - | - |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DataminrPulseAsset](../content/dataminrpulseasset-dataminr-pulse.md) | - | - |
-| [DataminrPulseVulnerableDomain](../content/dataminrpulsevulnerabledomain-dataminr-pulse.md) | - | - |
-| [DataminrPulseVulnerableHash](../content/dataminrpulsevulnerablehash-dataminr-pulse.md) | - | - |
-| [DataminrPulseVulnerableIp](../content/dataminrpulsevulnerableip-dataminr-pulse.md) | - | - |
-| [DataminrPulseVulnerableMalware](../content/dataminrpulsevulnerablemalware-dataminr-pulse.md) | - | - |
+| [DataminrPulseAsset](../content/dataminr-pulse-dataminrpulseasset.md) | - | - |
+| [DataminrPulseVulnerableDomain](../content/dataminr-pulse-dataminrpulsevulnerabledomain.md) | - | - |
+| [DataminrPulseVulnerableHash](../content/dataminr-pulse-dataminrpulsevulnerablehash.md) | - | - |
+| [DataminrPulseVulnerableIp](../content/dataminr-pulse-dataminrpulsevulnerableip.md) | - | - |
+| [DataminrPulseVulnerableMalware](../content/dataminr-pulse-dataminrpulsevulnerablemalware.md) | - | - |
 
 ## Release Notes
 

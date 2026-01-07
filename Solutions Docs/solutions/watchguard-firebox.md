@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [WatchGuardFirebox](../content/b9b4ad6b-a7bf-4555-a56a-c37e382730f8.md) | - | - |
+| [WatchGuardFirebox](../content/watchguard-firebox-watchguardfirebox-b9b4ad6b-a7bf-4555-a56a-c37e382730f8.md) | - | - |
 
 ## Release Notes
 

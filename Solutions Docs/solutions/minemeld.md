@@ -29,8 +29,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Indicator - Minemeld](../content/create-indicator---minemeld-minemeld.md) | This playbook search for indicators in Minemeld related to the entities(IP, filehash, URL) gathered ... | - |
-| [Entity (IP, URL, FileHash) Enrichment - Minemeld](../content/entity-%28ip,-url,-filehash%29-enrichment---minemeld-minemeld.md) | This playbook search for indicators in Minemeld related to the entities(IP, filehash, URL) gathered ... | - |
+| [Create Indicator - Minemeld](../content/minemeld-create-indicator---minemeld.md) | This playbook search for indicators in Minemeld related to the entities(IP, filehash, URL) gathered ... | - |
+| [Entity (IP, URL, FileHash) Enrichment - Minemeld](../content/minemeld-entity-%28ip,-url,-filehash%29-enrichment---minemeld.md) | This playbook search for indicators in Minemeld related to the entities(IP, filehash, URL) gathered ... | - |
 
 ## Release Notes
 

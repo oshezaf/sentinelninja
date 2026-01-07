@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CEFOverviewWorkbook](../content/cefoverviewworkbook-common-event-format.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [CEFOverviewWorkbook](../content/common-event-format-cefoverviewworkbook.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

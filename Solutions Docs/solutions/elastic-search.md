@@ -29,7 +29,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ElasticSearch-EnrichIncident](../content/elasticsearch-enrichincident-elastic-search.md) | This playbook search in Elastic Search for based on the entities (Account, Host, IP, FileHash, URL) ... | - |
+| [ElasticSearch-EnrichIncident](../content/elastic-search-elasticsearch-enrichincident.md) | This playbook search in Elastic Search for based on the entities (Account, Host, IP, FileHash, URL) ... | - |
 
 ---
 

@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SquidProxy](../content/db566028-abef-4941-b659-0a560a4dd7ac.md) | - | - |
+| [SquidProxy](../content/squidproxy-squidproxy-db566028-abef-4941-b659-0a560a4dd7ac.md) | - | - |
 
 ## Release Notes
 

@@ -37,8 +37,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Alarming number of anomalies generated in NetBackup](../content/2e0efcd4-56d2-41df-9098-d6898a58c62b.md) | Medium | Discovery, CredentialAccess | [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) |
-| [Multiple failed attempts of NetBackup login](../content/d39f0c47-2e85-49b9-a686-388c2eb7062c.md) | Medium | CredentialAccess, Discovery | [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) |
+| [Alarming number of anomalies generated in NetBackup](../content/veritas-netbackup-alarming-number-of-anomalies-generated-in-netbackup-2e0efcd4-56d2-41df-9098-d6898a58c62b.md) | Medium | Discovery, CredentialAccess | [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) |
+| [Multiple failed attempts of NetBackup login](../content/veritas-netbackup-multiple-failed-attempts-of-netbackup-login-d39f0c47-2e85-49b9-a686-388c2eb7062c.md) | Medium | CredentialAccess, Discovery | [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) |
 
 ## Additional Documentation
 

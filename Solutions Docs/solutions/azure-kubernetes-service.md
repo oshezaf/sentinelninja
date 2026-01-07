@@ -48,14 +48,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Azure RBAC AKS created role details](../content/765dce51-689a-44b5-9b38-c9ae9441c7fc.md) | Persistence | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [Determine users with cluster admin role](../content/c3ac03d5-dbf2-49ab-a2de-83396a20a5fb.md) | Persistence | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Azure RBAC AKS created role details](../content/azure-kubernetes-service-azure-rbac-aks-created-role-details-765dce51-689a-44b5-9b38-c9ae9441c7fc.md) | Persistence | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Determine users with cluster admin role](../content/azure-kubernetes-service-determine-users-with-cluster-admin-role-c3ac03d5-dbf2-49ab-a2de-83396a20a5fb.md) | Persistence | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AksSecurity](../content/akssecurity-azure-kubernetes-service.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [AksSecurity](../content/azure-kubernetes-service-akssecurity.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ---
 

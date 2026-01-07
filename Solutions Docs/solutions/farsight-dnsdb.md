@@ -26,10 +26,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DNSDB_Co_Located_Hosts](../content/dnsdb-co-located-hosts-farsight-dnsdb.md) | author: Henry Stern, Farsight Security, Inc. | - |
-| [DNSDB_Co_Located_IP_Address](../content/dnsdb-co-located-ip-address-farsight-dnsdb.md) | author: Henry Stern, Farsight Security, Inc. | - |
-| [DNSDB_Historical_Address](../content/dnsdb-historical-address-farsight-dnsdb.md) | author: Henry Stern, Farsight Security, Inc. | - |
-| [DNSDB_Historical_Hosts](../content/dnsdb-historical-hosts-farsight-dnsdb.md) | author: Henry Stern, Farsight Security, Inc. | - |
+| [DNSDB_Co_Located_Hosts](../content/farsight-dnsdb-dnsdb-co-located-hosts.md) | author: Henry Stern, Farsight Security, Inc. | - |
+| [DNSDB_Co_Located_IP_Address](../content/farsight-dnsdb-dnsdb-co-located-ip-address.md) | author: Henry Stern, Farsight Security, Inc. | - |
+| [DNSDB_Historical_Address](../content/farsight-dnsdb-dnsdb-historical-address.md) | author: Henry Stern, Farsight Security, Inc. | - |
+| [DNSDB_Historical_Hosts](../content/farsight-dnsdb-dnsdb-historical-hosts.md) | author: Henry Stern, Farsight Security, Inc. | - |
 
 ---
 

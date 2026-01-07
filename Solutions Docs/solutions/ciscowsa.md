@@ -40,32 +40,32 @@ This solution includes **23 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cisco WSA - Access to unwanted site](../content/38029e86-030c-46c4-8a91-a2be7c74d74c.md) | High | InitialAccess | - |
-| [Cisco WSA - Internet access from public IP](../content/4250b050-e1c6-4926-af04-9484bbd7e94f.md) | Medium | InitialAccess | - |
-| [Cisco WSA - Multiple attempts to download unwanted file](../content/46b6c6fc-2c1a-4270-be10-9d444d83f027.md) | Medium | InitialAccess | - |
-| [Cisco WSA - Multiple errors to URL](../content/1db49647-435c-41ad-bf8c-7130ba75429d.md) | Medium | CommandAndControl | - |
-| [Cisco WSA - Multiple errors to resource from risky category](../content/ebf9db0c-ba7b-4249-b9ec-50a05fa7c7c9.md) | Medium | InitialAccess, CommandAndControl | - |
-| [Cisco WSA - Multiple infected files](../content/93186e3d-5dc2-4a00-a993-fa1448db8734.md) | High | InitialAccess | - |
-| [Cisco WSA - Suspected protocol abuse](../content/6f756792-4888-48a5-97cf-40d9430dc932.md) | Medium | Exfiltration | - |
-| [Cisco WSA - Unexpected URL](../content/010644fd-2830-4451-9e0e-606cc192f2e7.md) | Medium | CommandAndControl | - |
-| [Cisco WSA - Unexpected file type](../content/8e9d1f70-d529-4598-9d3e-5dd5164d1d02.md) | Medium | InitialAccess | - |
-| [Cisco WSA - Unexpected uploads](../content/32c460ad-2d40-43e9-8ead-5cdd1d7a3163.md) | High | Exfiltration | - |
-| [Cisco WSA - Unscannable file or scan error](../content/9b61a945-ebcb-4245-b6e4-51f3addb5248.md) | Medium | InitialAccess | - |
+| [Cisco WSA - Access to unwanted site](../content/ciscowsa-cisco-wsa---access-to-unwanted-site-38029e86-030c-46c4-8a91-a2be7c74d74c.md) | High | InitialAccess | - |
+| [Cisco WSA - Internet access from public IP](../content/ciscowsa-cisco-wsa---internet-access-from-public-ip-4250b050-e1c6-4926-af04-9484bbd7e94f.md) | Medium | InitialAccess | - |
+| [Cisco WSA - Multiple attempts to download unwanted file](../content/ciscowsa-cisco-wsa---multiple-attempts-to-download-unwanted-file-46b6c6fc-2c1a-4270-be10-9d444d83f027.md) | Medium | InitialAccess | - |
+| [Cisco WSA - Multiple errors to URL](../content/ciscowsa-cisco-wsa---multiple-errors-to-url-1db49647-435c-41ad-bf8c-7130ba75429d.md) | Medium | CommandAndControl | - |
+| [Cisco WSA - Multiple errors to resource from risky category](../content/ciscowsa-cisco-wsa---multiple-errors-to-resource-from-risky-category-ebf9db0c-ba7b-4249-b9ec-50a05fa7c7c9.md) | Medium | InitialAccess, CommandAndControl | - |
+| [Cisco WSA - Multiple infected files](../content/ciscowsa-cisco-wsa---multiple-infected-files-93186e3d-5dc2-4a00-a993-fa1448db8734.md) | High | InitialAccess | - |
+| [Cisco WSA - Suspected protocol abuse](../content/ciscowsa-cisco-wsa---suspected-protocol-abuse-6f756792-4888-48a5-97cf-40d9430dc932.md) | Medium | Exfiltration | - |
+| [Cisco WSA - Unexpected URL](../content/ciscowsa-cisco-wsa---unexpected-url-010644fd-2830-4451-9e0e-606cc192f2e7.md) | Medium | CommandAndControl | - |
+| [Cisco WSA - Unexpected file type](../content/ciscowsa-cisco-wsa---unexpected-file-type-8e9d1f70-d529-4598-9d3e-5dd5164d1d02.md) | Medium | InitialAccess | - |
+| [Cisco WSA - Unexpected uploads](../content/ciscowsa-cisco-wsa---unexpected-uploads-32c460ad-2d40-43e9-8ead-5cdd1d7a3163.md) | High | Exfiltration | - |
+| [Cisco WSA - Unscannable file or scan error](../content/ciscowsa-cisco-wsa---unscannable-file-or-scan-error-9b61a945-ebcb-4245-b6e4-51f3addb5248.md) | Medium | InitialAccess | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Cisco WSA - Blocked files](../content/ebbd2b87-44c6-481a-8e4f-eaf5aa76e017.md) | InitialAccess | - |
-| [Cisco WSA - Potentially risky resources](../content/8c35faed-a8cf-4d8d-8c67-f14f2ff6e7e9.md) | InitialAccess | - |
-| [Cisco WSA - Rare URL with error](../content/88edb5d8-3ad9-4004-aefa-43c289483935.md) | InitialAccess, CommandAndControl | - |
-| [Cisco WSA - Rare aplications](../content/686ec2d3-fdbb-4fa2-b834-ff1d0f2486fb.md) | CommandAndControl, Exfiltration | - |
-| [Cisco WSA - Top URLs](../content/aaf6ba04-7a00-401e-a650-06e213f3bfbc.md) | InitialAccess | - |
-| [Cisco WSA - Top aplications](../content/6d4d7689-5e1d-4687-b1fc-eb0b7340c9a3.md) | InitialAccess | - |
-| [Cisco WSA - URL shorteners](../content/04582ef2-42be-4371-9ecf-635337c92ddb.md) | InitialAccess | - |
-| [Cisco WSA - Uncategorized URLs](../content/deddf5e8-8fee-4ec5-9121-415eb954c34d.md) | InitialAccess | - |
-| [Cisco WSA - Uploaded files](../content/9d08418d-e21e-4fd6-b9bc-d80ce786d2da.md) | InitialAccess | - |
-| [Cisco WSA - User errors](../content/77ec347d-db28-4556-8a5a-dbc2ec7c9461.md) | InitialAccess, CommandAndControl | - |
+| [Cisco WSA - Blocked files](../content/ciscowsa-cisco-wsa---blocked-files-ebbd2b87-44c6-481a-8e4f-eaf5aa76e017.md) | InitialAccess | - |
+| [Cisco WSA - Potentially risky resources](../content/ciscowsa-cisco-wsa---potentially-risky-resources-8c35faed-a8cf-4d8d-8c67-f14f2ff6e7e9.md) | InitialAccess | - |
+| [Cisco WSA - Rare URL with error](../content/ciscowsa-cisco-wsa---rare-url-with-error-88edb5d8-3ad9-4004-aefa-43c289483935.md) | InitialAccess, CommandAndControl | - |
+| [Cisco WSA - Rare aplications](../content/ciscowsa-cisco-wsa---rare-aplications-686ec2d3-fdbb-4fa2-b834-ff1d0f2486fb.md) | CommandAndControl, Exfiltration | - |
+| [Cisco WSA - Top URLs](../content/ciscowsa-cisco-wsa---top-urls-aaf6ba04-7a00-401e-a650-06e213f3bfbc.md) | InitialAccess | - |
+| [Cisco WSA - Top aplications](../content/ciscowsa-cisco-wsa---top-aplications-6d4d7689-5e1d-4687-b1fc-eb0b7340c9a3.md) | InitialAccess | - |
+| [Cisco WSA - URL shorteners](../content/ciscowsa-cisco-wsa---url-shorteners-04582ef2-42be-4371-9ecf-635337c92ddb.md) | InitialAccess | - |
+| [Cisco WSA - Uncategorized URLs](../content/ciscowsa-cisco-wsa---uncategorized-urls-deddf5e8-8fee-4ec5-9121-415eb954c34d.md) | InitialAccess | - |
+| [Cisco WSA - Uploaded files](../content/ciscowsa-cisco-wsa---uploaded-files-9d08418d-e21e-4fd6-b9bc-d80ce786d2da.md) | InitialAccess | - |
+| [Cisco WSA - User errors](../content/ciscowsa-cisco-wsa---user-errors-77ec347d-db28-4556-8a5a-dbc2ec7c9461.md) | InitialAccess, CommandAndControl | - |
 
 ### Workbooks
 
@@ -77,7 +77,7 @@ This solution includes **23 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoWSAEvent](../content/32aa549f-5c46-4bd0-acd1-81f0d862da32.md) | - | - |
+| [CiscoWSAEvent](../content/ciscowsa-ciscowsaevent-32aa549f-5c46-4bd0-acd1-81f0d862da32.md) | - | - |
 
 ## Release Notes
 

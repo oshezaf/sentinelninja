@@ -19,7 +19,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Infoblox](../solutions/infoblox.md):**
-- [Infoblox_Lookup_Workbook](../content/infoblox-lookup-workbook-infoblox.md)
+- [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook.md)
 
 ---
 

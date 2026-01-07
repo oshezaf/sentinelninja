@@ -39,16 +39,16 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Rapid7 Insight VM - Enrich incident with asset info](../content/rapid7-insight-vm---enrich-incident-with-asset-info-rapid7insightvm.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [Rapid7 Insight VM - Enrich vulnerability info](../content/rapid7-insight-vm---enrich-vulnerability-info-rapid7insightvm.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [Rapid7 Insight VM - Run scan](../content/rapid7-insight-vm---run-scan-rapid7insightvm.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Rapid7 Insight VM - Enrich incident with asset info](../content/rapid7insightvm-rapid7-insight-vm---enrich-incident-with-asset-info.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Rapid7 Insight VM - Enrich vulnerability info](../content/rapid7insightvm-rapid7-insight-vm---enrich-vulnerability-info.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Rapid7 Insight VM - Run scan](../content/rapid7insightvm-rapid7-insight-vm---run-scan.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [InsightVMAssets](../content/67ba9c29-ac0c-48c6-9569-ecd554fc4e65.md) | - | - |
-| [InsightVMVulnerabilities](../content/3cc071bd-caeb-40fd-87b9-cdde61d872cb.md) | - | - |
+| [InsightVMAssets](../content/rapid7insightvm-insightvmassets-67ba9c29-ac0c-48c6-9569-ecd554fc4e65.md) | - | - |
+| [InsightVMVulnerabilities](../content/rapid7insightvm-insightvmvulnerabilities-3cc071bd-caeb-40fd-87b9-cdde61d872cb.md) | - | - |
 
 ## Release Notes
 

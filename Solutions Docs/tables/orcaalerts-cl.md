@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Orca Security Alerts](../solutions/orca-security-alerts.md):**
-- [OrcaAlerts](../content/orcaalerts-orca-security-alerts.md)
+- [OrcaAlerts](../content/orca-security-alerts-orcaalerts.md)
 
 ---
 

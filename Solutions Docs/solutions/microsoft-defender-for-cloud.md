@@ -46,7 +46,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Detect CoreBackUp Deletion Activity from related Security Alerts](../content/011c84d8-85f0-4370-b864-24c13455aa94.md) | Medium | Impact | [`CoreAzureBackup`](../tables/coreazurebackup.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Detect CoreBackUp Deletion Activity from related Security Alerts](../content/microsoft-defender-for-cloud-detect-corebackup-deletion-activity-from-related-security-alerts-011c84d8-85f0-4370-b864-24c13455aa94.md) | Medium | Impact | [`CoreAzureBackup`](../tables/coreazurebackup.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ## Release Notes
 

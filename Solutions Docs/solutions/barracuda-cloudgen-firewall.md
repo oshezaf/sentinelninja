@@ -39,13 +39,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Barracuda](../content/barracuda-barracuda-cloudgen-firewall.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Barracuda](../content/barracuda-cloudgen-firewall-barracuda.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CGFWFirewallActivity](../content/07ff282b-3a46-43a4-80e8-27ea5dcd3192.md) | - | - |
+| [CGFWFirewallActivity](../content/barracuda-cloudgen-firewall-cgfwfirewallactivity-07ff282b-3a46-43a4-80e8-27ea5dcd3192.md) | - | - |
 
 ## Release Notes
 

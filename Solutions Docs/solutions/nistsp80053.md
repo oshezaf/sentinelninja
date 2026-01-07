@@ -67,7 +67,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [NIST SP 800-53 Posture Changed](../content/dd834c97-4638-4bb3-a4e3-807e8b0580dc.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
+| [NIST SP 800-53 Posture Changed](../content/nistsp80053-nist-sp-800-53-posture-changed-dd834c97-4638-4bb3-a4e3-807e8b0580dc.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
 
 ### Workbooks
 
@@ -79,9 +79,9 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Jira Issue](../content/create-jira-issue-nistsp80053.md) | This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel. | - |
-| [Create-AzureDevOpsTask](../content/create-azuredevopstask-nistsp80053.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
-| [Notify_GovernanceComplianceTeam](../content/notify-governancecomplianceteam-nistsp80053.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
+| [Create Jira Issue](../content/nistsp80053-create-jira-issue.md) | This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel. | - |
+| [Create-AzureDevOpsTask](../content/nistsp80053-create-azuredevopstask.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
+| [Notify_GovernanceComplianceTeam](../content/nistsp80053-notify-governancecomplianceteam.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
 
 ## Additional Documentation
 

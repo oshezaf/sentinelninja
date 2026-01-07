@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [MimecastAudit](../solutions/mimecastaudit.md):**
-- [Mimecast Audit - Logon Authentication Failed](../content/9c5dcd76-9f6d-42a3-b984-314b52678f20.md)
+- [Mimecast Audit - Logon Authentication Failed](../content/mimecastaudit-mimecast-audit---logon-authentication-failed-9c5dcd76-9f6d-42a3-b984-314b52678f20.md)
 
 ### Workbooks (1)
 

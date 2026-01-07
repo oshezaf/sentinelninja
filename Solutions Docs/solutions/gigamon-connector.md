@@ -36,7 +36,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Gigamon](../content/gigamon-gigamon-connector.md) | [`Gigamon_CL`](../tables/gigamon-cl.md) |
+| [Gigamon](../content/gigamon-connector-gigamon.md) | [`Gigamon_CL`](../tables/gigamon-cl.md) |
 
 ## Release Notes
 

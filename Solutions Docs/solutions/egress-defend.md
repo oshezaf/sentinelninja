@@ -40,26 +40,26 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Egress Defend - Dangerous Attachment Detected](../content/a0e55dd4-8454-4396-91e6-f28fec3d2cab.md) | Medium | Execution, InitialAccess, Persistence, PrivilegeEscalation | - |
-| [Egress Defend - Dangerous Link Click](../content/a896123e-03a5-4a4d-a7e3-fd814846dfb2.md) | Medium | Execution | - |
+| [Egress Defend - Dangerous Attachment Detected](../content/egress-defend-egress-defend---dangerous-attachment-detected-a0e55dd4-8454-4396-91e6-f28fec3d2cab.md) | Medium | Execution, InitialAccess, Persistence, PrivilegeEscalation | - |
+| [Egress Defend - Dangerous Link Click](../content/egress-defend-egress-defend---dangerous-link-click-a896123e-03a5-4a4d-a7e3-fd814846dfb2.md) | Medium | Execution | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Dangerous emails with links clicked](../content/57ada8d5-7a26-4440-97fd-32c5c3fd0421.md) | Collection | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
+| [Dangerous emails with links clicked](../content/egress-defend-dangerous-emails-with-links-clicked-57ada8d5-7a26-4440-97fd-32c5c3fd0421.md) | Collection | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DefendMetrics](../content/defendmetrics-egress-defend.md) | - |
+| [DefendMetrics](../content/egress-defend-defendmetrics.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DefendAuditData](../content/0d23aae5-6f59-47d8-902e-ba136b64a094.md) | - | - |
+| [DefendAuditData](../content/egress-defend-defendauditdata-0d23aae5-6f59-47d8-902e-ba136b64a094.md) | - | - |
 
 ## Release Notes
 

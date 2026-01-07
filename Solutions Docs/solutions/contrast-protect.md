@@ -39,16 +39,16 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Contrast Blocks](../content/4396f8c3-d114-4154-9f4c-048ba522ed04.md) | Low | InitialAccess, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Contrast Exploits](../content/e1abb6ed-be18-40fd-be58-3d3d84041daf.md) | High | InitialAccess, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Contrast Probes](../content/297596de-d9ae-4fb8-b6ff-00fc01c9462d.md) | Informational | InitialAccess, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Contrast Suspicious](../content/f713404e-805c-4e0c-91fa-2c149f76a07d.md) | Medium | InitialAccess, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Contrast Blocks](../content/contrast-protect-contrast-blocks-4396f8c3-d114-4154-9f4c-048ba522ed04.md) | Low | InitialAccess, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Contrast Exploits](../content/contrast-protect-contrast-exploits-e1abb6ed-be18-40fd-be58-3d3d84041daf.md) | High | InitialAccess, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Contrast Probes](../content/contrast-protect-contrast-probes-297596de-d9ae-4fb8-b6ff-00fc01c9462d.md) | Informational | InitialAccess, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Contrast Suspicious](../content/contrast-protect-contrast-suspicious-f713404e-805c-4e0c-91fa-2c149f76a07d.md) | Medium | InitialAccess, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ContrastProtect](../content/contrastprotect-contrast-protect.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ContrastProtect](../content/contrast-protect-contrastprotect.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

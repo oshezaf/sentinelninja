@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):**
-- [IllumioWorkloadsStats](../content/illumioworkloadsstats-illumiosaas.md)
+- [IllumioWorkloadsStats](../content/illumiosaas-illumioworkloadsstats.md)
 
 ---
 

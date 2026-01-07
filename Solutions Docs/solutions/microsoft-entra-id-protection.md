@@ -41,17 +41,17 @@ This solution includes **6 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Correlate Unfamiliar sign-in properties & atypical travel alerts](../content/a3df4a32-4805-4c6d-8699-f3c888af2f67.md) | High | InitialAccess | *Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Correlate Unfamiliar sign-in properties & atypical travel alerts](../content/microsoft-entra-id-protection-correlate-unfamiliar-sign-in-properties-&-atypical-travel-alerts-a3df4a32-4805-4c6d-8699-f3c888af2f67.md) | High | InitialAccess | *Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Confirm Microsoft Entra ID Risky User - Alert Triggered](../content/confirm-microsoft-entra-id-risky-user---alert-triggered-microsoft-entra-id-protection.md) | This playbook will set the Risky User property in Microsoft Entra ID using Graph API. | - |
-| [Confirm Microsoft Entra ID Risky User - Incident Triggered](../content/confirm-microsoft-entra-id-risky-user---incident-triggered-microsoft-entra-id-protection.md) | For each account entity included in the incident, this playbook will set the Risky User property in ... | - |
-| [Dismiss Microsoft Entra ID Risky User - Alert Triggered](../content/dismiss-microsoft-entra-id-risky-user---alert-triggered-microsoft-entra-id-protection.md) | This playbook will dismiss the Risky User property in Microsoft Entra ID using Microsoft Entra ID Co... | - |
-| [Dismiss Microsoft Entra ID Risky User – Incident Triggered](../content/dismiss-microsoft-entra-id-risky-user-–-incident-triggered-microsoft-entra-id-protection.md) | This playbook will dismiss the Risky User property in Microsoft Entra ID using Microsoft Entra ID Co... | - |
-| [Identity Protection response from Teams](../content/identity-protection-response-from-teams-microsoft-entra-id-protection.md) | Run this playbook on incidents which contains suspicious Microsoft Entra ID identities. For each acc... | - |
+| [Confirm Microsoft Entra ID Risky User - Alert Triggered](../content/microsoft-entra-id-protection-confirm-microsoft-entra-id-risky-user---alert-triggered.md) | This playbook will set the Risky User property in Microsoft Entra ID using Graph API. | - |
+| [Confirm Microsoft Entra ID Risky User - Incident Triggered](../content/microsoft-entra-id-protection-confirm-microsoft-entra-id-risky-user---incident-triggered.md) | For each account entity included in the incident, this playbook will set the Risky User property in ... | - |
+| [Dismiss Microsoft Entra ID Risky User - Alert Triggered](../content/microsoft-entra-id-protection-dismiss-microsoft-entra-id-risky-user---alert-triggered.md) | This playbook will dismiss the Risky User property in Microsoft Entra ID using Microsoft Entra ID Co... | - |
+| [Dismiss Microsoft Entra ID Risky User – Incident Triggered](../content/microsoft-entra-id-protection-dismiss-microsoft-entra-id-risky-user-–-incident-triggered.md) | This playbook will dismiss the Risky User property in Microsoft Entra ID using Microsoft Entra ID Co... | - |
+| [Identity Protection response from Teams](../content/microsoft-entra-id-protection-identity-protection-response-from-teams.md) | Run this playbook on incidents which contains suspicious Microsoft Entra ID identities. For each acc... | - |
 
 ## Release Notes
 

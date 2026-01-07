@@ -41,21 +41,21 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Brute force attack against user credentials](../content/5a6ce089-e756-40fb-b022-c8e8864a973a.md) | Medium | CredentialAccess | - |
-| [Potential Password Spray Attack](../content/64d16e62-1a17-4a35-9ea7-2b9fe6f07118.md) | Medium | CredentialAccess | - |
-| [User Sign in from different countries](../content/3094e036-e5ae-4d6e-8626-b0f86ebc71f2.md) | Medium | InitialAccess | - |
+| [Brute force attack against user credentials](../content/salesforce-service-cloud-brute-force-attack-against-user-credentials-5a6ce089-e756-40fb-b022-c8e8864a973a.md) | Medium | CredentialAccess | - |
+| [Potential Password Spray Attack](../content/salesforce-service-cloud-potential-password-spray-attack-64d16e62-1a17-4a35-9ea7-2b9fe6f07118.md) | Medium | CredentialAccess | - |
+| [User Sign in from different countries](../content/salesforce-service-cloud-user-sign-in-from-different-countries-3094e036-e5ae-4d6e-8626-b0f86ebc71f2.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SalesforceServiceCloud](../content/salesforceservicecloud-salesforce-service-cloud.md) | - |
+| [SalesforceServiceCloud](../content/salesforce-service-cloud-salesforceservicecloud.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SalesforceServiceCloud](../content/0e8b5f17-c0a3-4b5e-af4d-f55231283fff.md) | - | - |
+| [SalesforceServiceCloud](../content/salesforce-service-cloud-salesforceservicecloud-0e8b5f17-c0a3-4b5e-af4d-f55231283fff.md) | - | - |
 
 ## Release Notes
 

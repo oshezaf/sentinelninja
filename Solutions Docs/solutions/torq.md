@@ -29,7 +29,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Notify Sentinel Incident Creation and Update to Torq Webhook](../content/notify-sentinel-incident-creation-and-update-to-torq-webhook-torq.md) | Sends an HTTPS request to a webhook trigger in Torq everytime a new Incident is created or updated i... | - |
+| [Notify Sentinel Incident Creation and Update to Torq Webhook](../content/torq-notify-sentinel-incident-creation-and-update-to-torq-webhook.md) | Sends an HTTPS request to a webhook trigger in Torq everytime a new Incident is created or updated i... | - |
 
 ## Release Notes
 

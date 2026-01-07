@@ -40,26 +40,26 @@ This solution includes **10 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-admin-activity---online-microsoft-exchange-security---exchange-online.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-least-privilege-with-rbac---online-microsoft-exchange-security---exchange-online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
-| [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-search-adminauditlog---online-microsoft-exchange-security---exchange-online.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-review---online-microsoft-exchange-security---exchange-online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
+| [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-admin-activity---online.md) | [`OfficeActivity`](../tables/officeactivity.md) |
+| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-least-privilege-with-rbac---online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
+| [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-search-adminauditlog---online.md) | [`OfficeActivity`](../tables/officeactivity.md) |
+| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-security-review---online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeConfiguration](../content/f2ae482d-999c-452e-b108-31880aa99620.md) | - | - |
-| [ExchangeEnvironmentList](../content/fa748dc3-00ee-41cb-b54e-8acd56041b2a.md) | - | - |
-| [MESCheckOnlineVIP](../content/9b864a03-5db6-4cf0-aef1-17ac0cc34195.md) | - | - |
-| [MESCompareDataMRA](../content/39f51672-8c63-4600-882a-5db8275f798f.md) | - | - |
-| [MESOfficeActivityLogs](../content/2be516a9-f8fd-4357-a839-cafcb5a6d73a.md) | - | - |
+| [ExchangeConfiguration](../content/microsoft-exchange-security---exchange-online-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620.md) | - | - |
+| [ExchangeEnvironmentList](../content/microsoft-exchange-security---exchange-online-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a.md) | - | - |
+| [MESCheckOnlineVIP](../content/microsoft-exchange-security---exchange-online-mescheckonlinevip-9b864a03-5db6-4cf0-aef1-17ac0cc34195.md) | - | - |
+| [MESCompareDataMRA](../content/microsoft-exchange-security---exchange-online-mescomparedatamra-39f51672-8c63-4600-882a-5db8275f798f.md) | - | - |
+| [MESOfficeActivityLogs](../content/microsoft-exchange-security---exchange-online-mesofficeactivitylogs-2be516a9-f8fd-4357-a839-cafcb5a6d73a.md) | - | - |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchOnlineVIP](../content/exchonlinevip-microsoft-exchange-security---exchange-online.md) | - | - |
+| [ExchOnlineVIP](../content/microsoft-exchange-security---exchange-online-exchonlinevip.md) | - | - |
 
 ## Additional Documentation
 

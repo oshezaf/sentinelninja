@@ -39,20 +39,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ClientDeniedAccess](../content/a9956d3a-07a9-44a6-a279-081a85020cae.md) | Medium | CredentialAccess | - |
-| [Excessive Failed Authentication from Invalid Inputs](../content/c775a46b-21b1-46d7-afa6-37e3e577a27b.md) | Medium | CredentialAccess | - |
+| [ClientDeniedAccess](../content/symantec-vip-clientdeniedaccess-a9956d3a-07a9-44a6-a279-081a85020cae.md) | Medium | CredentialAccess | - |
+| [Excessive Failed Authentication from Invalid Inputs](../content/symantec-vip-excessive-failed-authentication-from-invalid-inputs-c775a46b-21b1-46d7-afa6-37e3e577a27b.md) | Medium | CredentialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SymantecVIP](../content/symantecvip-symantec-vip.md) | - |
+| [SymantecVIP](../content/symantec-vip-symantecvip.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecVIP](../content/ed8a116c-07b4-441c-b74b-395937c264a1.md) | - | - |
+| [SymantecVIP](../content/symantec-vip-symantecvip-ed8a116c-07b4-441c-b74b-395937c264a1.md) | - | - |
 
 ## Release Notes
 

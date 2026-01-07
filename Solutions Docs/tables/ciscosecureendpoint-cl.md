@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md):**
-- [Cisco SE High Events Last Hour](../content/4683ebce-07ad-4089-89e3-39d8fe83c011.md)
+- [Cisco SE High Events Last Hour](../content/cisco-secure-endpoint-cisco-se-high-events-last-hour-4683ebce-07ad-4089-89e3-39d8fe83c011.md)
 
 ---
 

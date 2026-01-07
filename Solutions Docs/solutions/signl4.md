@@ -46,7 +46,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SIGNL4 Alerting and Response](../content/signl4-alerting-and-response-signl4.md) | This playbook will be sending alerts with basic incidents to SIGNL4 teams when an incident is create... | - |
+| [SIGNL4 Alerting and Response](../content/signl4-signl4-alerting-and-response.md) | This playbook will be sending alerts with basic incidents to SIGNL4 teams when an incident is create... | - |
 
 ## Release Notes
 

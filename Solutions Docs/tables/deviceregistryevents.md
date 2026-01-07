@@ -33,29 +33,29 @@ This table is ingested by the following connectors:
 ### Analytic Rules (6)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
-- [Component Object Model Hijacking - Vault7 trick](../content/1aaff41f-4e18-45b1-bb34-de6eb4943cf2.md)
+- [Component Object Model Hijacking - Vault7 trick](../content/falconfriday-component-object-model-hijacking---vault7-trick-1aaff41f-4e18-45b1-bb34-de6eb4943cf2.md)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
-- [Detect Print Processors Registry Driver Key Creation/Modification](../content/7edde3d4-9859-4a00-b93c-b19ddda55320.md)
-- [Detect Registry Run Key Creation/Modification](../content/dd041e4e-1ee2-41ec-ba4e-82a71d628260.md)
-- [Detect Windows Allow Firewall Rule Addition/Modification](../content/056593d4-ca3b-47a7-be9d-d1d0884a1d36.md)
-- [Detect Windows Update Disabled from Registry](../content/f1443a87-78d5-40c3-b051-f468f0f2def0.md)
+- [Detect Print Processors Registry Driver Key Creation/Modification](../content/malware-protection-essentials-detect-print-processors-registry-driver-key-creation-modification-7edde3d4-9859-4a00-b93c-b19ddda55320.md)
+- [Detect Registry Run Key Creation/Modification](../content/malware-protection-essentials-detect-registry-run-key-creation-modification-dd041e4e-1ee2-41ec-ba4e-82a71d628260.md)
+- [Detect Windows Allow Firewall Rule Addition/Modification](../content/malware-protection-essentials-detect-windows-allow-firewall-rule-addition-modification-056593d4-ca3b-47a7-be9d-d1d0884a1d36.md)
+- [Detect Windows Update Disabled from Registry](../content/malware-protection-essentials-detect-windows-update-disabled-from-registry-f1443a87-78d5-40c3-b051-f468f0f2def0.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [MosaicLoader](../content/506f4d6b-3864-4bb1-8f75-a13fb066f97a.md)
+- [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-506f4d6b-3864-4bb1-8f75-a13fb066f97a.md)
 
 ### Hunting Queries (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [MosaicLoader](../content/0efbcea0-1dc0-4844-8a9c-3a1d98fc1697.md)
+- [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-0efbcea0-1dc0-4844-8a9c-3a1d98fc1697.md)
 
 ### Workbooks (2)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
-- [MalwareProtectionEssentialsWorkbook](../content/malwareprotectionessentialsworkbook-malware-protection-essentials.md)
+- [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust%28tic3.0%29.md):**
-- [ZeroTrustTIC3](../content/zerotrusttic3-zerotrust%28tic3.0%29.md)
+- [ZeroTrustTIC3](../content/zerotrust%28tic3.0%29-zerotrusttic3.md)
 
 ---
 

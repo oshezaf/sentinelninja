@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [FireEyeNXEvent](../content/742dcaba-a8fc-428c-b9f9-1ad2cf5c7b20.md) | - | - |
+| [FireEyeNXEvent](../content/fireeye-network-security-fireeyenxevent-742dcaba-a8fc-428c-b9f9-1ad2cf5c7b20.md) | - | - |
 
 ## Release Notes
 

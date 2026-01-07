@@ -19,13 +19,13 @@ This table is ingested by the following connectors:
 ### Hunting Queries (1)
 
 **In solution [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md):**
-- [Cybersixgill Actionable alerts](../content/532133dd-a8ed-4062-bf0d-f04dc97bb71a.md)
+- [Cybersixgill Actionable alerts](../content/cybersixgill-actionable-alerts-cybersixgill-actionable-alerts-532133dd-a8ed-4062-bf0d-f04dc97bb71a.md)
 
 ### Workbooks (2)
 
 **In solution [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md):**
-- [ActionableAlertsDashboard](../content/actionablealertsdashboard-cybersixgill-actionable-alerts.md)
-- [ActionableAlertsList](../content/actionablealertslist-cybersixgill-actionable-alerts.md)
+- [ActionableAlertsDashboard](../content/cybersixgill-actionable-alerts-actionablealertsdashboard.md)
+- [ActionableAlertsList](../content/cybersixgill-actionable-alerts-actionablealertslist.md)
 
 ---
 

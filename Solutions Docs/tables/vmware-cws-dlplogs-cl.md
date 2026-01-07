@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [VMware SD-WAN and SASE](../solutions/vmware-sd-wan-and-sase.md):**
-- [VMware Cloud Web Security - Data Loss Prevention Violation](../content/d811ef72-66b9-43a3-ba29-cd9e4bf75b74.md)
+- [VMware Cloud Web Security - Data Loss Prevention Violation](../content/vmware-sd-wan-and-sase-vmware-cloud-web-security---data-loss-prevention-violation-d811ef72-66b9-43a3-ba29-cd9e4bf75b74.md)
 
 ---
 

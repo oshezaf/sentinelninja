@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Egress Iris](../solutions/egress-iris.md):**
-- [PreventWorkbook](../content/preventworkbook-egress-iris.md)
+- [PreventWorkbook](../content/egress-iris-preventworkbook.md)
 
 ---
 

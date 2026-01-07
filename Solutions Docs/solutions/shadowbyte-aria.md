@@ -37,8 +37,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Enrich Incidents - ShadowByte Aria](../content/enrich-incidents---shadowbyte-aria-shadowbyte-aria.md) | This playbook updates the Incident with the brach details if an account has been compromised. | - |
-| [Search for Breaches - ShadowByte Aria](../content/search-for-breaches---shadowbyte-aria-shadowbyte-aria.md) | This playbook updates the Incident with the brach details if an account has been compromised. | [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) *(write)* |
+| [Enrich Incidents - ShadowByte Aria](../content/shadowbyte-aria-enrich-incidents---shadowbyte-aria.md) | This playbook updates the Incident with the brach details if an account has been compromised. | - |
+| [Search for Breaches - ShadowByte Aria](../content/shadowbyte-aria-search-for-breaches---shadowbyte-aria.md) | This playbook updates the Incident with the brach details if an account has been compromised. | [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) *(write)* |
 
 ---
 

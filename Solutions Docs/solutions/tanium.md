@@ -49,27 +49,27 @@ This solution includes **11 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Tanium Threat Response Alerts](../content/dd9aa0ff-7ac1-4448-879c-e1a18d5890b4.md) | High | - | [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) |
+| [Tanium Threat Response Alerts](../content/tanium-tanium-threat-response-alerts-dd9aa0ff-7ac1-4448-879c-e1a18d5890b4.md) | High | - | [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TaniumWorkbook](../content/taniumworkbook-tanium.md) | [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md)<br>[`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md)<br>[`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md)<br>[`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md)<br>[`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md)<br>[`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md)<br>[`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md)<br>[`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md)<br>[`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md)<br>[`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) |
-| [connect-module-connections](../content/connect-module-connections-tanium.md) | - |
+| [TaniumWorkbook](../content/tanium-taniumworkbook.md) | [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md)<br>[`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md)<br>[`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md)<br>[`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md)<br>[`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md)<br>[`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md)<br>[`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md)<br>[`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md)<br>[`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md)<br>[`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) |
+| [connect-module-connections](../content/tanium-connect-module-connections.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Tanium-ComplyFindings](../content/tanium-complyfindings-tanium.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
-| [Tanium-GeneralHostInfo](../content/tanium-generalhostinfo-tanium.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
-| [Tanium-ListSecurityPatches](../content/tanium-listsecuritypatches-tanium.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
-| [Tanium-MSDefenderHealth](../content/tanium-msdefenderhealth-tanium.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
-| [Tanium-QuarantineHosts](../content/tanium-quarantinehosts-tanium.md) | During an investigation, it may be critical to isolate endpoints quickly if a compromise is detected... | - |
-| [Tanium-ResolveThreatResponseAlert](../content/tanium-resolvethreatresponsealert-tanium.md) | Maintaining alert hygiene in multiple consoles can be overwhelming. This playbook helps teams keep T... | - |
-| [Tanium-SCCMClientHealth](../content/tanium-sccmclienthealth-tanium.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
-| [Tanium-UnquarantineHosts](../content/tanium-unquarantinehosts-tanium.md) | This playbook starts with a Microsoft Sentinel incident, gets the hosts associated with that inciden... | - |
+| [Tanium-ComplyFindings](../content/tanium-tanium-complyfindings.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
+| [Tanium-GeneralHostInfo](../content/tanium-tanium-generalhostinfo.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
+| [Tanium-ListSecurityPatches](../content/tanium-tanium-listsecuritypatches.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
+| [Tanium-MSDefenderHealth](../content/tanium-tanium-msdefenderhealth.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
+| [Tanium-QuarantineHosts](../content/tanium-tanium-quarantinehosts.md) | During an investigation, it may be critical to isolate endpoints quickly if a compromise is detected... | - |
+| [Tanium-ResolveThreatResponseAlert](../content/tanium-tanium-resolvethreatresponsealert.md) | Maintaining alert hygiene in multiple consoles can be overwhelming. This playbook helps teams keep T... | - |
+| [Tanium-SCCMClientHealth](../content/tanium-tanium-sccmclienthealth.md) | Tanium's real-time data can speed up investigations by providing important context for analysts, suc... | - |
+| [Tanium-UnquarantineHosts](../content/tanium-tanium-unquarantinehosts.md) | This playbook starts with a Microsoft Sentinel incident, gets the hosts associated with that inciden... | - |
 
 ## Additional Documentation
 

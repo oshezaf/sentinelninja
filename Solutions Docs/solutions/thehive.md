@@ -38,15 +38,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [The Hive - Create alert](../content/the-hive---create-alert-thehive.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [The Hive - Create case](../content/the-hive---create-case-thehive.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [The Hive - Lock user](../content/the-hive---lock-user-thehive.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [The Hive - Create alert](../content/thehive-the-hive---create-alert.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [The Hive - Create case](../content/thehive-the-hive---create-case.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [The Hive - Lock user](../content/thehive-the-hive---lock-user.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TheHive](../content/407fa318-596b-4d69-b154-46a56d2117a0.md) | - | - |
+| [TheHive](../content/thehive-thehive-407fa318-596b-4d69-b154-46a56d2117a0.md) | - | - |
 
 ## Release Notes
 

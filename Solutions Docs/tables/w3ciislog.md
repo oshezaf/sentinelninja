@@ -39,79 +39,79 @@ This table is ingested by the following connectors:
 ### Analytic Rules (28)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/6e575295-a7e6-464c-8192-3e1d8fd6a990.md)
-- [User agent search for log4j exploitation attempt](../content/29283b22-a1c0-4d16-b0a9-3460b655a46a.md)
+- [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990.md)
+- [User agent search for log4j exploitation attempt](../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a.md)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
-- [Google Threat Intelligence - Threat Hunting Url](../content/89290690-54c4-4196-91c5-d32b1df5d873.md)
+- [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence---threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873.md)
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
-- [RecordedFuture Threat Hunting Url All Actors](../content/3f6f0d1a-f2f9-4e01-881a-c55a4a71905b.md)
+- [RecordedFuture Threat Hunting Url All Actors](../content/recorded-future-recordedfuture-threat-hunting-url-all-actors-3f6f0d1a-f2f9-4e01-881a-c55a4a71905b.md)
 
 **In solution [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md):**
-- [Possible AiTM Phishing Attempt Against Microsoft Entra ID](../content/16daa67c-b137-48dc-8eb7-76598a44791a.md)
+- [Possible AiTM Phishing Attempt Against Microsoft Entra ID](../content/securitythreatessentialsolution-possible-aitm-phishing-attempt-against-microsoft-entra-id-16daa67c-b137-48dc-8eb7-76598a44791a.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
-- [TI Map IP Entity to W3CIISLog](../content/5e45930c-09b1-4430-b2d1-cc75ada0dc0f.md)
-- [TI map Domain entity to Web Session Events (ASIM Web Session schema)](../content/b1832f60-6c3d-4722-a0a5-3d564ee61a63.md)
-- [TI map IP entity to Web Session Events (ASIM Web Session schema)](../content/e2559891-383c-4caf-ae67-55a008b9f89e.md)
+- [TI Map IP Entity to W3CIISLog](../content/threat-intelligence-ti-map-ip-entity-to-w3ciislog-5e45930c-09b1-4430-b2d1-cc75ada0dc0f.md)
+- [TI map Domain entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-ti-map-domain-entity-to-web-session-events-%28asim-web-session-schema%29-b1832f60-6c3d-4722-a0a5-3d564ee61a63.md)
+- [TI map IP entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-ti-map-ip-entity-to-web-session-events-%28asim-web-session-schema%29-e2559891-383c-4caf-ae67-55a008b9f89e.md)
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-%28new%29.md):**
-- [TI Map IP Entity to W3CIISLog](../content/888c4736-e604-48eb-b2c7-3462356d9510.md)
-- [TI map Domain entity to Web Session Events (ASIM Web Session schema)](../content/afa4cb9e-6fec-4742-a17f-f494b54c01e7.md)
-- [TI map IP entity to Web Session Events (ASIM Web Session schema)](../content/0548be6c-135e-4eb6-b9ff-14a09df62c77.md)
+- [TI Map IP Entity to W3CIISLog](../content/threat-intelligence-%28new%29-ti-map-ip-entity-to-w3ciislog-888c4736-e604-48eb-b2c7-3462356d9510.md)
+- [TI map Domain entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-%28new%29-ti-map-domain-entity-to-web-session-events-%28asim-web-session-schema%29-afa4cb9e-6fec-4742-a17f-f494b54c01e7.md)
+- [TI map IP entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-%28new%29-ti-map-ip-entity-to-web-session-events-%28asim-web-session-schema%29-0548be6c-135e-4eb6-b9ff-14a09df62c77.md)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
-- [Detect Local File Inclusion(LFI) in web requests (ASIM Web Session)](../content/7bb55d05-ef39-4a40-8079-0bc3c05e7881.md)
-- [Detect URLs containing known malicious keywords or commands (ASIM Web Session)](../content/32c08696-2e37-4730-86f8-97d9c8b184c9.md)
-- [Detect instances of multiple client errors occurring within a brief period of time (ASIM Web Session)](../content/faa40333-1e8b-40cc-a003-51ae41fa886f.md)
-- [Detect instances of multiple server errors occurring within a brief period of time (ASIM Web Session)](../content/a59ba76c-0205-4966-948e-3d5640140688.md)
-- [Detect known risky user agents (ASIM Web Session)](../content/6a4dbcf8-f5e2-4b33-b34f-2db6487613f0.md)
-- [Detect potential file enumeration activity (ASIM Web Session)](../content/b3731ce1-1f04-47c4-95c2-9827408c4375.md)
-- [Detect potential presence of a malicious file with a double extension (ASIM Web Session)](../content/6a71687f-00cf-44d3-93fc-8cbacc7b5615.md)
-- [Detect presence of private IP addresses in URLs (ASIM Web Session)](../content/e3a7722a-e099-45a9-9afb-6618e8f05405.md)
-- [Detect presence of uncommon user agents in web requests (ASIM Web Session)](../content/2d50d937-d7f2-4c05-b151-9af7f9ec747e.md)
-- [Detect requests for an uncommon resources on the web (ASIM Web Session)](../content/c99cf650-c53b-4c4c-9671-7d7500191a10.md)
-- [Detect threat information in web requests (ASIM Web Session)](../content/7d2ed1c7-da26-45fd-b4ea-b6f2bbeccea7.md)
-- [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/5965d3e7-8ed0-477c-9b42-e75d9237fab0.md)
-- [Detect web requests to potentially harmful files (ASIM Web Session)](../content/c6608467-3678-45fe-b038-b590ce6d00fb.md)
-- [Identify instances where a single source is observed using multiple user agents (ASIM Web Session)](../content/813ccf3b-0321-4622-b0bc-63518fd14454.md)
-- [The download of potentially risky files from the Discord Content Delivery Network (CDN) (ASIM Web Session)](../content/b7fe8f27-7010-404b-aec5-6e5245cea580.md)
+- [Detect Local File Inclusion(LFI) in web requests (ASIM Web Session)](../content/web-session-essentials-detect-local-file-inclusion%28lfi%29-in-web-requests-%28asim-web-session%29-7bb55d05-ef39-4a40-8079-0bc3c05e7881.md)
+- [Detect URLs containing known malicious keywords or commands (ASIM Web Session)](../content/web-session-essentials-detect-urls-containing-known-malicious-keywords-or-commands-%28asim-web-session%29-32c08696-2e37-4730-86f8-97d9c8b184c9.md)
+- [Detect instances of multiple client errors occurring within a brief period of time (ASIM Web Session)](../content/web-session-essentials-detect-instances-of-multiple-client-errors-occurring-within-a-brief-period-of-time-%28asim-web-session%29-faa40333-1e8b-40cc-a003-51ae41fa886f.md)
+- [Detect instances of multiple server errors occurring within a brief period of time (ASIM Web Session)](../content/web-session-essentials-detect-instances-of-multiple-server-errors-occurring-within-a-brief-period-of-time-%28asim-web-session%29-a59ba76c-0205-4966-948e-3d5640140688.md)
+- [Detect known risky user agents (ASIM Web Session)](../content/web-session-essentials-detect-known-risky-user-agents-%28asim-web-session%29-6a4dbcf8-f5e2-4b33-b34f-2db6487613f0.md)
+- [Detect potential file enumeration activity (ASIM Web Session)](../content/web-session-essentials-detect-potential-file-enumeration-activity-%28asim-web-session%29-b3731ce1-1f04-47c4-95c2-9827408c4375.md)
+- [Detect potential presence of a malicious file with a double extension (ASIM Web Session)](../content/web-session-essentials-detect-potential-presence-of-a-malicious-file-with-a-double-extension-%28asim-web-session%29-6a71687f-00cf-44d3-93fc-8cbacc7b5615.md)
+- [Detect presence of private IP addresses in URLs (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-private-ip-addresses-in-urls-%28asim-web-session%29-e3a7722a-e099-45a9-9afb-6618e8f05405.md)
+- [Detect presence of uncommon user agents in web requests (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-uncommon-user-agents-in-web-requests-%28asim-web-session%29-2d50d937-d7f2-4c05-b151-9af7f9ec747e.md)
+- [Detect requests for an uncommon resources on the web (ASIM Web Session)](../content/web-session-essentials-detect-requests-for-an-uncommon-resources-on-the-web-%28asim-web-session%29-c99cf650-c53b-4c4c-9671-7d7500191a10.md)
+- [Detect threat information in web requests (ASIM Web Session)](../content/web-session-essentials-detect-threat-information-in-web-requests-%28asim-web-session%29-7d2ed1c7-da26-45fd-b4ea-b6f2bbeccea7.md)
+- [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-%28asim-web-session%29-5965d3e7-8ed0-477c-9b42-e75d9237fab0.md)
+- [Detect web requests to potentially harmful files (ASIM Web Session)](../content/web-session-essentials-detect-web-requests-to-potentially-harmful-files-%28asim-web-session%29-c6608467-3678-45fe-b038-b590ce6d00fb.md)
+- [Identify instances where a single source is observed using multiple user agents (ASIM Web Session)](../content/web-session-essentials-identify-instances-where-a-single-source-is-observed-using-multiple-user-agents-%28asim-web-session%29-813ccf3b-0321-4622-b0bc-63518fd14454.md)
+- [The download of potentially risky files from the Discord Content Delivery Network (CDN) (ASIM Web Session)](../content/web-session-essentials-the-download-of-potentially-risky-files-from-the-discord-content-delivery-network-%28cdn%29-%28asim-web-session%29-b7fe8f27-7010-404b-aec5-6e5245cea580.md)
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
-- [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](../content/fbfbf530-506b-49a4-81ad-4030885a195c.md)
-- [SUPERNOVA webshell](../content/2acc91c3-17c2-4388-938e-4eac2d5894e8.md)
+- [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpoint-%28formerly-microsoft-defender-atp%29-alerts-fbfbf530-506b-49a4-81ad-4030885a195c.md)
+- [SUPERNOVA webshell](../content/web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8.md)
 
 ### Hunting Queries (13)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
-- [Google Threat Intelligence - Threat Hunting Url](../content/a1705fa5-c904-4f1b-9e2d-a4ccb30377a2.md)
+- [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence---threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2.md)
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
-- [RecordedFuture Threat Hunting URL All Actors](../content/dbc2438a-0d16-4890-aaae-cbe0dc433b08.md)
+- [RecordedFuture Threat Hunting URL All Actors](../content/recorded-future-recordedfuture-threat-hunting-url-all-actors-dbc2438a-0d16-4890-aaae-cbe0dc433b08.md)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
-- [Beaconing traffic based on common user agents visiting limited number of domains (ASIM Web Session)](../content/8ece8108-7bf7-4571-8f32-ebfd92a6b1ad.md)
-- [Detect IPAddress in the requested URL (ASIM Web Session)](../content/e8adb0d9-c4fa-4557-97d0-cb9e221a63b2.md)
-- [Detect Kali Linux UserAgent (ASIM Web Session)](../content/05f5cccd-ee93-4293-b7ad-05820aaa54a4.md)
-- [Detect threat information in web requests (ASIM Web Session)](../content/6e813653-df72-4b14-954e-5619d1b6d586.md)
-- [Empty User Agent Detected (ASIM Web Session)](../content/69e53015-a309-4a8f-a94d-df61a9217e2f.md)
-- [Excessive number of forbidden requests detected (ASIM Web Session)](../content/43c2832e-6c01-4dc1-bd9e-bc3f330c2b31.md)
-- [Potential beaconing detected (ASIM Web Session)](../content/6338ca43-ae7c-4a91-9fe4-0f1ad4edf4a5.md)
-- [Potential beaconing detected - Similar sent bytes (ASIM Web Session)](../content/75929222-fee5-4f97-a2cc-cb6f29444385.md)
-- [Request from bots and crawlers (ASIM Web Session)](../content/b653c2e0-ae0f-490b-9b2e-836858d28976.md)
+- [Beaconing traffic based on common user agents visiting limited number of domains (ASIM Web Session)](../content/web-session-essentials-beaconing-traffic-based-on-common-user-agents-visiting-limited-number-of-domains-%28asim-web-session%29-8ece8108-7bf7-4571-8f32-ebfd92a6b1ad.md)
+- [Detect IPAddress in the requested URL (ASIM Web Session)](../content/web-session-essentials-detect-ipaddress-in-the-requested-url-%28asim-web-session%29-e8adb0d9-c4fa-4557-97d0-cb9e221a63b2.md)
+- [Detect Kali Linux UserAgent (ASIM Web Session)](../content/web-session-essentials-detect-kali-linux-useragent-%28asim-web-session%29-05f5cccd-ee93-4293-b7ad-05820aaa54a4.md)
+- [Detect threat information in web requests (ASIM Web Session)](../content/web-session-essentials-detect-threat-information-in-web-requests-%28asim-web-session%29-6e813653-df72-4b14-954e-5619d1b6d586.md)
+- [Empty User Agent Detected (ASIM Web Session)](../content/web-session-essentials-empty-user-agent-detected-%28asim-web-session%29-69e53015-a309-4a8f-a94d-df61a9217e2f.md)
+- [Excessive number of forbidden requests detected (ASIM Web Session)](../content/web-session-essentials-excessive-number-of-forbidden-requests-detected-%28asim-web-session%29-43c2832e-6c01-4dc1-bd9e-bc3f330c2b31.md)
+- [Potential beaconing detected (ASIM Web Session)](../content/web-session-essentials-potential-beaconing-detected-%28asim-web-session%29-6338ca43-ae7c-4a91-9fe4-0f1ad4edf4a5.md)
+- [Potential beaconing detected - Similar sent bytes (ASIM Web Session)](../content/web-session-essentials-potential-beaconing-detected---similar-sent-bytes-%28asim-web-session%29-75929222-fee5-4f97-a2cc-cb6f29444385.md)
+- [Request from bots and crawlers (ASIM Web Session)](../content/web-session-essentials-request-from-bots-and-crawlers-%28asim-web-session%29-b653c2e0-ae0f-490b-9b2e-836858d28976.md)
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
-- [Web Shell Activity](../content/e0c947c3-fe83-46ff-bbda-a43224a785fd.md)
-- [Webshell Detection](../content/cc087e7c-4db0-4bf9-9e48-287a9c9c3fbc.md)
+- [Web Shell Activity](../content/web-shells-threat-protection-web-shell-activity-e0c947c3-fe83-46ff-bbda-a43224a785fd.md)
+- [Webshell Detection](../content/web-shells-threat-protection-webshell-detection-cc087e7c-4db0-4bf9-9e48-287a9c9c3fbc.md)
 
 ### Workbooks (2)
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
-- [GDPRComplianceAndDataSecurity](../content/gdprcomplianceanddatasecurity-gdpr-compliance-&-data-security.md)
+- [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity.md)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
-- [WebSessionEssentials](../content/websessionessentials-web-session-essentials.md)
+- [WebSessionEssentials](../content/web-session-essentials-websessionessentials.md)
 
 ## Resource Types
 

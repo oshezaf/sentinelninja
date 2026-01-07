@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ForcepointCloudSecuirtyGateway](../content/forcepointcloudsecuirtygateway-forcepoint-csg.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ForcepointCloudSecuirtyGateway](../content/forcepoint-csg-forcepointcloudsecuirtygateway.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

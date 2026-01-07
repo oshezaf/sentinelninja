@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Veeam](../solutions/veeam.md):**
-- [VeeamSecurityActivities](../content/veeamsecurityactivities-veeam.md)
+- [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities.md)
 
 ---
 

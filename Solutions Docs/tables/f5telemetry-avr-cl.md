@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [F5 BIG-IP](../solutions/f5-big-ip.md):**
-- [F5BIGIPSystemMetrics](../content/f5bigipsystemmetrics-f5-big-ip.md)
+- [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics.md)
 
 ---
 

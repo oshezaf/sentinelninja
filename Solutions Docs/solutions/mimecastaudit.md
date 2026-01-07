@@ -39,7 +39,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Mimecast Audit - Logon Authentication Failed](../content/9c5dcd76-9f6d-42a3-b984-314b52678f20.md) | High | Discovery, InitialAccess, CredentialAccess | [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) |
+| [Mimecast Audit - Logon Authentication Failed](../content/mimecastaudit-mimecast-audit---logon-authentication-failed-9c5dcd76-9f6d-42a3-b984-314b52678f20.md) | High | Discovery, InitialAccess, CredentialAccess | [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) |
 
 ### Workbooks
 

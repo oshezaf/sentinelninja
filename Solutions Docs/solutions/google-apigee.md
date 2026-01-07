@@ -39,9 +39,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ApigeeX](../content/d597b0df-ea3d-479f-97ea-8c90922437a1.md) | - | - |
-| [ApigeeXV2](../content/f44281ae-62a7-4043-b27a-aa6e438f3e1a.md) | - | - |
-| [Unified_ApigeeX](../content/6eae941d-8cdb-45c7-9896-aab2a6082dfb.md) | - | - |
+| [ApigeeX](../content/google-apigee-apigeex-d597b0df-ea3d-479f-97ea-8c90922437a1.md) | - | - |
+| [ApigeeXV2](../content/google-apigee-apigeexv2-f44281ae-62a7-4043-b27a-aa6e438f3e1a.md) | - | - |
+| [Unified_ApigeeX](../content/google-apigee-unified-apigeex-6eae941d-8cdb-45c7-9896-aab2a6082dfb.md) | - | - |
 
 ## Release Notes
 

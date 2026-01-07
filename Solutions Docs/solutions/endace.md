@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Endace - Pivot-to-Vision](../content/b70b02bd-fe1f-4466-8c4d-64d42adc59b3.md) | ResourceDevelopment, InitialAccess, Discovery, LateralMovement, CommandandControl, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Endace - Pivot-to-Vision](../content/endace-endace---pivot-to-vision-b70b02bd-fe1f-4466-8c4d-64d42adc59b3.md) | ResourceDevelopment, InitialAccess, Discovery, LateralMovement, CommandandControl, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

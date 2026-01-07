@@ -39,13 +39,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SalemDashboard](../content/salemdashboard-salemcyber.md) | [`SalemAlerts_CL`](../tables/salemalerts-cl.md) |
+| [SalemDashboard](../content/salemcyber-salemdashboard.md) | [`SalemAlerts_CL`](../tables/salemalerts-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Send-Sentinel-Alerts-to-Salem](../content/send-sentinel-alerts-to-salem-salemcyber.md) | Use this playbook to send Microsoft Sentinel alerts to Salem Virtual Cyber Analyst | - |
+| [Send-Sentinel-Alerts-to-Salem](../content/salemcyber-send-sentinel-alerts-to-salem.md) | Use this playbook to send Microsoft Sentinel alerts to Salem Virtual Cyber Analyst | - |
 
 ## Release Notes
 

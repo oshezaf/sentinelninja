@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Armorblox](../solutions/armorblox.md):**
-- [Armorblox Needs Review Alert](../content/322d4765-be6b-4868-9e3f-138a4f339dd6.md)
+- [Armorblox Needs Review Alert](../content/armorblox-armorblox-needs-review-alert-322d4765-be6b-4868-9e3f-138a4f339dd6.md)
 
 ### Workbooks (1)
 
 **In solution [Armorblox](../solutions/armorblox.md):**
-- [ArmorbloxOverview](../content/armorbloxoverview-armorblox.md)
+- [ArmorbloxOverview](../content/armorblox-armorbloxoverview.md)
 
 ---
 

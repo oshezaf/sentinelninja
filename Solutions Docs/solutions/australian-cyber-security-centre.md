@@ -29,7 +29,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AusCtisExportTaggedIndicators](../content/ausctisexporttaggedindicators-australian-cyber-security-centre.md) | This playbook gets triggered every hour and perform the following actions: 1. Get all the threat int... | - |
+| [AusCtisExportTaggedIndicators](../content/australian-cyber-security-centre-ausctisexporttaggedindicators.md) | This playbook gets triggered every hour and perform the following actions: 1. Get all the threat int... | - |
 
 ## Release Notes
 

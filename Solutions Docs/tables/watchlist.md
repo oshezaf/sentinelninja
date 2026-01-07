@@ -1,14 +1,20 @@
-# watchlist
+# Watchlist
+
+Reference for Watchlist table in Azure Monitor Logs.
 
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
+| **Basic Logs Eligible** | ✗ No |
+| **Supports Transformations** | ✓ Yes |
+| **Ingestion API Supported** | ✗ No |
+| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/watchlist) |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
-- [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 
 ---
 
@@ -16,8 +22,8 @@ This table is used by the following solutions:
 
 ### Workbooks (1)
 
-**In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
-- [HIPAACompliance](../content/hipaacompliance-hipaa-compliance.md)
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
+- [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement.md)
 
 ---
 

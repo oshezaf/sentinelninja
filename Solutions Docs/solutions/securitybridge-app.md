@@ -40,13 +40,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SecurityBridge: A critical event occured](../content/8c5c766a-ce9b-4112-b6ed-1b8fe33733b7.md) | Medium | InitialAccess | - |
+| [SecurityBridge: A critical event occured](../content/securitybridge-app-securitybridge--a-critical-event-occured-8c5c766a-ce9b-4112-b6ed-1b8fe33733b7.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SecurityBridgeThreatDetectionforSAP](../content/securitybridgethreatdetectionforsap-securitybridge-app.md) | - |
+| [SecurityBridgeThreatDetectionforSAP](../content/securitybridge-app-securitybridgethreatdetectionforsap.md) | - |
 
 ## Additional Documentation
 

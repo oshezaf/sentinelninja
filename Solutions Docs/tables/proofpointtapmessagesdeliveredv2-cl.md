@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [ProofPointTap](../solutions/proofpointtap.md):**
-- [Malware attachment delivered](../content/0558155e-4556-447e-9a22-828f2a7de06b.md)
+- [Malware attachment delivered](../content/proofpointtap-malware-attachment-delivered-0558155e-4556-447e-9a22-828f2a7de06b.md)
 
 ### Workbooks (1)
 

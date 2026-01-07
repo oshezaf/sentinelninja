@@ -29,11 +29,11 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Block Risky/Compromised User From Entrust](../content/block-risky-compromised-user-from-entrust-entrust-identity-as-service.md) | This playbook Block the risky user and update the status in comments section of triggered incident s... | - |
-| [Fetch IP Details From Entrust](../content/fetch-ip-details-from-entrust-entrust-identity-as-service.md) | This playbook provides the IP details in comments section of triggered incident so that SOC analysts... | - |
-| [Fetch IP Details From Entrust - Entity](../content/fetch-ip-details-from-entrust---entity-entrust-identity-as-service.md) | This playbook provides the IP details of user authentication and management activity in comments sec... | - |
-| [Fetch User Details From Entrust](../content/fetch-user-details-from-entrust-entrust-identity-as-service.md) | This playbook provides the user essential details in comments section of triggered incident so that ... | - |
-| [Fetch User Details From Entrust - Entity](../content/fetch-user-details-from-entrust---entity-entrust-identity-as-service.md) | This playbook provides the user essential details in comments section of incident so that SOC analys... | - |
+| [Block Risky/Compromised User From Entrust](../content/entrust-identity-as-service-block-risky-compromised-user-from-entrust.md) | This playbook Block the risky user and update the status in comments section of triggered incident s... | - |
+| [Fetch IP Details From Entrust](../content/entrust-identity-as-service-fetch-ip-details-from-entrust.md) | This playbook provides the IP details in comments section of triggered incident so that SOC analysts... | - |
+| [Fetch IP Details From Entrust - Entity](../content/entrust-identity-as-service-fetch-ip-details-from-entrust---entity.md) | This playbook provides the IP details of user authentication and management activity in comments sec... | - |
+| [Fetch User Details From Entrust](../content/entrust-identity-as-service-fetch-user-details-from-entrust.md) | This playbook provides the user essential details in comments section of triggered incident so that ... | - |
+| [Fetch User Details From Entrust - Entity](../content/entrust-identity-as-service-fetch-user-details-from-entrust---entity.md) | This playbook provides the user essential details in comments section of incident so that SOC analys... | - |
 
 ---
 

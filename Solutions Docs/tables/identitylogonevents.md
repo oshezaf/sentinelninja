@@ -30,17 +30,17 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Detect Potential Kerberoast Activities](../content/12134de5-361b-427c-a1a0-d43f40a593c4.md)
+- [Detect Potential Kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-12134de5-361b-427c-a1a0-d43f40a593c4.md)
 
 ### Hunting Queries (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Detect Potential kerberoast Activities](../content/35ca729c-04b4-4f6c-b383-caed1b85226e.md)
+- [Detect Potential kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-35ca729c-04b4-4f6c-b383-caed1b85226e.md)
 
 ### Workbooks (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [MicrosoftDefenderForIdentity](../content/microsoftdefenderforidentity-microsoft-defender-xdr.md)
+- [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity.md)
 
 ---
 

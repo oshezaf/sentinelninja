@@ -49,8 +49,8 @@ This solution includes **7 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Malware Link Clicked](../content/8675dd7a-795e-4d56-a79c-fc848c5ee61c.md) | Medium | InitialAccess | [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) |
-| [Malware attachment delivered](../content/0558155e-4556-447e-9a22-828f2a7de06b.md) | Medium | InitialAccess | [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) |
+| [Malware Link Clicked](../content/proofpointtap-malware-link-clicked-8675dd7a-795e-4d56-a79c-fc848c5ee61c.md) | Medium | InitialAccess | [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) |
+| [Malware attachment delivered](../content/proofpointtap-malware-attachment-delivered-0558155e-4556-447e-9a22-828f2a7de06b.md) | Medium | InitialAccess | [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) |
 
 ### Workbooks
 
@@ -62,15 +62,15 @@ This solution includes **7 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ ProofpointTAP-CheckAccountInVAP](../content/-proofpointtap-checkaccountinvap-proofpointtap.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [Get-ProofpointTapEvents](../content/get-proofpointtapevents-proofpointtap.md) | This playbook ingests events from ProofPoint TAP to Log Analytics/MicroSoft Sentinel. | [`ProofPointData_CL`](../tables/proofpointdata-cl.md) *(write)* |
-| [ProofpointTAP-AddForensicsInfoToIncident](../content/proofpointtap-addforensicsinfotoincident-proofpointtap.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [ ProofpointTAP-CheckAccountInVAP](../content/proofpointtap--proofpointtap-checkaccountinvap.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [Get-ProofpointTapEvents](../content/proofpointtap-get-proofpointtapevents.md) | This playbook ingests events from ProofPoint TAP to Log Analytics/MicroSoft Sentinel. | [`ProofPointData_CL`](../tables/proofpointdata-cl.md) *(write)* |
+| [ProofpointTAP-AddForensicsInfoToIncident](../content/proofpointtap-proofpointtap-addforensicsinfotoincident.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ProofpointTAPEvent](../content/6cdd2169-833b-4545-ab58-8456b8ccc11a.md) | - | - |
+| [ProofpointTAPEvent](../content/proofpointtap-proofpointtapevent-6cdd2169-833b-4545-ab58-8456b8ccc11a.md) | - | - |
 
 ## Release Notes
 

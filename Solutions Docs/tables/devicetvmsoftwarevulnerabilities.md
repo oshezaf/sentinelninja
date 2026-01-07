@@ -24,7 +24,7 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Execution of software vulnerable to webp buffer overflow of CVE-2023-4863](../content/26e81021-2de6-4442-a74a-a77885e96911.md)
+- [Execution of software vulnerable to webp buffer overflow of CVE-2023-4863](../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911.md)
 
 ---
 

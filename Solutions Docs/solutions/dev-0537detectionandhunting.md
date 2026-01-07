@@ -29,7 +29,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [test](../content/afe13b7c-test-11ec-8d3d-0242ac130003.md) | Test | - |
+| [test](../content/dev-0537detectionandhunting-test-afe13b7c-test-11ec-8d3d-0242ac130003.md) | Test | - |
 
 ---
 

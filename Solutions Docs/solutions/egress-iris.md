@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PreventWorkbook](../content/preventworkbook-egress-iris.md) | [`EgressEvents_CL`](../tables/egressevents-cl.md) |
+| [PreventWorkbook](../content/egress-iris-preventworkbook.md) | [`EgressEvents_CL`](../tables/egressevents-cl.md) |
 
 ## Release Notes
 

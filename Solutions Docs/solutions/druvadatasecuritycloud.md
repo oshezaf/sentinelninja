@@ -39,11 +39,11 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Druva Quarantine Playbook for Enterprise Workload](../content/druva-quarantine-playbook-for-enterprise-workload-druvadatasecuritycloud.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
-| [Druva Quarantine Playbook for Shared Drive](../content/druva-quarantine-playbook-for-shared-drive-druvadatasecuritycloud.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
-| [Druva Quarantine Playbook for Sharepoint](../content/druva-quarantine-playbook-for-sharepoint-druvadatasecuritycloud.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
-| [Druva Quarantine Playbook for inSync Workloads](../content/druva-quarantine-playbook-for-insync-workloads-druvadatasecuritycloud.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
-| [Druva Quarantine Using Resource id](../content/druva-quarantine-using-resource-id-druvadatasecuritycloud.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
+| [Druva Quarantine Playbook for Enterprise Workload](../content/druvadatasecuritycloud-druva-quarantine-playbook-for-enterprise-workload.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
+| [Druva Quarantine Playbook for Shared Drive](../content/druvadatasecuritycloud-druva-quarantine-playbook-for-shared-drive.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
+| [Druva Quarantine Playbook for Sharepoint](../content/druvadatasecuritycloud-druva-quarantine-playbook-for-sharepoint.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
+| [Druva Quarantine Playbook for inSync Workloads](../content/druvadatasecuritycloud-druva-quarantine-playbook-for-insync-workloads.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
+| [Druva Quarantine Using Resource id](../content/druvadatasecuritycloud-druva-quarantine-using-resource-id.md) | This playbook uses Druva-Ransomware-Response capabilities to stop the spread of ransomware and avoid... | - |
 
 ## Release Notes
 

@@ -44,29 +44,29 @@ This solution includes **8 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [High Number of Urgent Vulnerabilities Detected](../content/3edb7215-250b-40c0-8b46-79093949242d.md) | Medium | InitialAccess | - |
-| [New High Severity Vulnerability Detected Across Multiple Hosts](../content/6116dc19-475a-4148-84b2-efe89c073e27.md) | Medium | InitialAccess | - |
+| [High Number of Urgent Vulnerabilities Detected](../content/qualysvm-high-number-of-urgent-vulnerabilities-detected-3edb7215-250b-40c0-8b46-79093949242d.md) | Medium | InitialAccess | - |
+| [New High Severity Vulnerability Detected Across Multiple Hosts](../content/qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [QualysVMv2](../content/qualysvmv2-qualysvm.md) | - |
+| [QualysVMv2](../content/qualysvm-qualysvmv2.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [QualysVM-GetAssetDetails](../content/qualysvm-getassetdetails-qualysvm.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [QualysVM-GetAssets-ByCVEID](../content/qualysvm-getassets-bycveid-qualysvm.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [QualysVM-GetAssets-ByOpenPort](../content/qualysvm-getassets-byopenport-qualysvm.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [QualysVM-LaunchVMScan-GenerateReport](../content/qualysvm-launchvmscan-generatereport-qualysvm.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [QualysVM-GetAssetDetails](../content/qualysvm-qualysvm-getassetdetails.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [QualysVM-GetAssets-ByCVEID](../content/qualysvm-qualysvm-getassets-bycveid.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [QualysVM-GetAssets-ByOpenPort](../content/qualysvm-qualysvm-getassets-byopenport.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [QualysVM-LaunchVMScan-GenerateReport](../content/qualysvm-qualysvm-launchvmscan-generatereport.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [QualysHostDetection](../content/7162903e-e07f-426b-9b07-63b8c7eb77b1.md) | - | - |
+| [QualysHostDetection](../content/qualysvm-qualyshostdetection-7162903e-e07f-426b-9b07-63b8c7eb77b1.md) | - | - |
 
 ## Release Notes
 

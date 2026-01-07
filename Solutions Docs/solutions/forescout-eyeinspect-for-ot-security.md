@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [eyeInspectOTSecurityWorkbook](../content/eyeinspectotsecurityworkbook-forescout-eyeinspect-for-ot-security.md) | [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md)<br>[`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) |
+| [eyeInspectOTSecurityWorkbook](../content/forescout-eyeinspect-for-ot-security-eyeinspectotsecurityworkbook.md) | [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md)<br>[`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) |
 
 ## Release Notes
 

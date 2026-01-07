@@ -15,7 +15,7 @@ This reference documentation provides detailed information about data connectors
 
 ## Overview
 
-This documentation covers **487 solutions**, of which **385** include data connectors, providing access to **525 unique connectors** and **811 unique tables**.
+This documentation covers **487 solutions**, of which **385** include data connectors, providing access to **525 unique connectors** and **811 tables**.
 
 ### Quick Statistics
 
@@ -24,9 +24,11 @@ This documentation covers **487 solutions**, of which **385** include data conne
 | Total Solutions | 487 |
 | Solutions with Connectors | 385 (79%) |
 | Unique Connectors | 525 |
-| Unique Tables | 811 |
+| Tables Used by Solutions | 811 |
 | Content Items | 4828 |
 | Solutions with Content | 384 (78%) |
+
+*Note: 1683 total tables are documented, including 872 additional tables referenced by content items or from the Azure Monitor reference.*
 
 ### Collection Methods
 

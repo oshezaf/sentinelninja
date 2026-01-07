@@ -19,10 +19,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (4)
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
-- [F&O - Bank account change following network alias reassignment](../content/dccbdb5b-2ce7-4931-bfbe-f1ad6523ee64.md)
-- [F&O - Mass update or deletion of user records](../content/5ab00fbb-ba2c-44dc-b02e-f119639b9a11.md)
-- [F&O - Non-interactive account mapped to self or sensitive privileged user](../content/5b7cc7f9-fe54-4138-9fb0-d650807345d3.md)
-- [F&O - Reverted bank account number modifications](../content/44b1021c-d517-4b7a-9ba6-a91eab94e632.md)
+- [F&O - Bank account change following network alias reassignment](../content/microsoft-business-applications-f&o---bank-account-change-following-network-alias-reassignment-dccbdb5b-2ce7-4931-bfbe-f1ad6523ee64.md)
+- [F&O - Mass update or deletion of user records](../content/microsoft-business-applications-f&o---mass-update-or-deletion-of-user-records-5ab00fbb-ba2c-44dc-b02e-f119639b9a11.md)
+- [F&O - Non-interactive account mapped to self or sensitive privileged user](../content/microsoft-business-applications-f&o---non-interactive-account-mapped-to-self-or-sensitive-privileged-user-5b7cc7f9-fe54-4138-9fb0-d650807345d3.md)
+- [F&O - Reverted bank account number modifications](../content/microsoft-business-applications-f&o---reverted-bank-account-number-modifications-44b1021c-d517-4b7a-9ba6-a91eab94e632.md)
 
 ---
 

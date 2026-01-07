@@ -36,7 +36,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InfoSecGlobal](../content/infosecglobal-agilesec-analytics-connector.md) | [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) |
+| [InfoSecGlobal](../content/agilesec-analytics-connector-infosecglobal.md) | [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) |
 
 ---
 

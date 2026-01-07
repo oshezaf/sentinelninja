@@ -20,12 +20,12 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Vulnerable Machines related to log4j CVE-2021-44228](../content/3d71fc38-f249-454e-8479-0a358382ef9a.md)
+- [Vulnerable Machines related to log4j CVE-2021-44228](../content/apache-log4j-vulnerability-detection-vulnerable-machines-related-to-log4j-cve-2021-44228-3d71fc38-f249-454e-8479-0a358382ef9a.md)
 
 ### Workbooks (3)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Log4jPostCompromiseHunting](../content/log4jpostcompromisehunting-apache-log4j-vulnerability-detection.md)
+- [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark.md)

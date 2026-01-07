@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OpenVpnEvent](../content/f9d1ce4b-4c49-47f7-8902-6458106de1c0.md) | - | - |
+| [OpenVpnEvent](../content/openvpn-openvpnevent-f9d1ce4b-4c49-47f7-8902-6458106de1c0.md) | - | - |
 
 ## Release Notes
 

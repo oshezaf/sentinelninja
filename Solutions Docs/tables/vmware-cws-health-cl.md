@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [VMware SD-WAN and SASE](../solutions/vmware-sd-wan-and-sase.md):**
-- [VMwareSASESOCDashboard](../content/vmwaresasesocdashboard-vmware-sd-wan-and-sase.md)
+- [VMwareSASESOCDashboard](../content/vmware-sd-wan-and-sase-vmwaresasesocdashboard.md)
 
 ---
 

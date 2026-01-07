@@ -29,7 +29,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [NCSCNLShareSTIXBundle](../content/ncscnlsharestixbundle-ncsc-nl-ndn-cyber-threat-intelligence-sharing.md) | This playbook gets triggered every hour and perform the following actions: 1. Get all the threat int... | - |
+| [NCSCNLShareSTIXBundle](../content/ncsc-nl-ndn-cyber-threat-intelligence-sharing-ncscnlsharestixbundle.md) | This playbook gets triggered every hour and perform the following actions: 1. Get all the threat int... | - |
 
 ## Additional Documentation
 

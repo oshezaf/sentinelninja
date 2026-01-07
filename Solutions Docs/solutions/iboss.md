@@ -39,14 +39,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ibossMalwareAndC2](../content/ibossmalwareandc2-iboss.md) | - |
-| [ibossWebUsage](../content/ibosswebusage-iboss.md) | - |
+| [ibossMalwareAndC2](../content/iboss-ibossmalwareandc2.md) | - |
+| [ibossWebUsage](../content/iboss-ibosswebusage.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ibossUrlEvent](../content/0902cd9b-3b2b-4ad4-a480-e5e960b6a77d.md) | - | - |
+| [ibossUrlEvent](../content/iboss-ibossurlevent-0902cd9b-3b2b-4ad4-a480-e5e960b6a77d.md) | - | - |
 
 ## Release Notes
 

@@ -40,8 +40,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IslandAdminAuditOverview](../content/islandadminauditoverview-island.md) | [`Island_Admin_CL`](../tables/island-admin-cl.md) |
-| [IslandUserActivityOverview](../content/islanduseractivityoverview-island.md) | [`Island_User_CL`](../tables/island-user-cl.md) |
+| [IslandAdminAuditOverview](../content/island-islandadminauditoverview.md) | [`Island_Admin_CL`](../tables/island-admin-cl.md) |
+| [IslandUserActivityOverview](../content/island-islanduseractivityoverview.md) | [`Island_User_CL`](../tables/island-user-cl.md) |
 
 ## Release Notes
 

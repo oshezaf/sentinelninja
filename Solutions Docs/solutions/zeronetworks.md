@@ -42,38 +42,38 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Zero Networks Segement - Machine Removed from protection](../content/a4ce12ca-d01d-460a-b15e-6c74ef328b82.md) | High | DefenseEvasion | - |
-| [Zero Networks Segment - New API Token created](../content/603a6b18-b54a-43b7-bb61-d2b0b47d224a.md) | Low | CredentialAccess | - |
-| [Zero Networks Segment - Rare JIT Rule Creation](../content/58688058-68b2-4b39-8009-ac6dc4d81ea1.md) | Medium | LateralMovement | - |
+| [Zero Networks Segement - Machine Removed from protection](../content/zeronetworks-zero-networks-segement---machine-removed-from-protection-a4ce12ca-d01d-460a-b15e-6c74ef328b82.md) | High | DefenseEvasion | - |
+| [Zero Networks Segment - New API Token created](../content/zeronetworks-zero-networks-segment---new-api-token-created-603a6b18-b54a-43b7-bb61-d2b0b47d224a.md) | Low | CredentialAccess | - |
+| [Zero Networks Segment - Rare JIT Rule Creation](../content/zeronetworks-zero-networks-segment---rare-jit-rule-creation-58688058-68b2-4b39-8009-ac6dc4d81ea1.md) | Medium | LateralMovement | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Zero Networks Segment - Excessive access by user](../content/3dd14edf-788d-4f42-868f-28f3208b92a9.md) | LateralMovement | - |
-| [Zero Networks Segment - Excessive access to a built-in group by user](../content/0e68d210-a8ec-4e13-9f46-61011c020b87.md) | LateralMovement | - |
-| [Zero Networks Segment - Inbound Block Rules Deleted](../content/fcbbd670-d4e6-4f3a-9008-d8905e84cf79.md) | DefenseEvasion | - |
-| [Zero Networks Segment - Outbound Block Rules Deleted](../content/d8945c8f-bba4-4e02-ad09-228b067ebcf2.md) | DefenseEvasion | - |
+| [Zero Networks Segment - Excessive access by user](../content/zeronetworks-zero-networks-segment---excessive-access-by-user-3dd14edf-788d-4f42-868f-28f3208b92a9.md) | LateralMovement | - |
+| [Zero Networks Segment - Excessive access to a built-in group by user](../content/zeronetworks-zero-networks-segment---excessive-access-to-a-built-in-group-by-user-0e68d210-a8ec-4e13-9f46-61011c020b87.md) | LateralMovement | - |
+| [Zero Networks Segment - Inbound Block Rules Deleted](../content/zeronetworks-zero-networks-segment---inbound-block-rules-deleted-fcbbd670-d4e6-4f3a-9008-d8905e84cf79.md) | DefenseEvasion | - |
+| [Zero Networks Segment - Outbound Block Rules Deleted](../content/zeronetworks-zero-networks-segment---outbound-block-rules-deleted-d8945c8f-bba4-4e02-ad09-228b067ebcf2.md) | DefenseEvasion | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZNSegmentAudit](../content/znsegmentaudit-zeronetworks.md) | - |
+| [ZNSegmentAudit](../content/zeronetworks-znsegmentaudit.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Add Asset to Protection - Zero Networks Segment](../content/add-asset-to-protection---zero-networks-segment-zeronetworks.md) | This playbook takes a host from a Microsoft Sentinel incident and adds it to protection. The playboo... | - |
-| [Add Block Outbound Rule - Zero Networks Acccess Orchestrator](../content/add-block-outbound-rule---zero-networks-acccess-orchestrator-zeronetworks.md) | This playbook allows blocking an IP outbound from protected assets in Zero Networks Segment. | - |
-| [Enrich Incident - Zero Networks Acccess Orchestrator](../content/enrich-incident---zero-networks-acccess-orchestrator-zeronetworks.md) | This playbook will take each Host entity and get its Asset status from Zero Network Segment. The pla... | - |
+| [Add Asset to Protection - Zero Networks Segment](../content/zeronetworks-add-asset-to-protection---zero-networks-segment.md) | This playbook takes a host from a Microsoft Sentinel incident and adds it to protection. The playboo... | - |
+| [Add Block Outbound Rule - Zero Networks Acccess Orchestrator](../content/zeronetworks-add-block-outbound-rule---zero-networks-acccess-orchestrator.md) | This playbook allows blocking an IP outbound from protected assets in Zero Networks Segment. | - |
+| [Enrich Incident - Zero Networks Acccess Orchestrator](../content/zeronetworks-enrich-incident---zero-networks-acccess-orchestrator.md) | This playbook will take each Host entity and get its Asset status from Zero Network Segment. The pla... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ZNSegmentAudit](../content/4677df99-9bff-4b87-a7b9-575091361d82.md) | - | - |
+| [ZNSegmentAudit](../content/zeronetworks-znsegmentaudit-4677df99-9bff-4b87-a7b9-575091361d82.md) | - | - |
 
 ## Release Notes
 

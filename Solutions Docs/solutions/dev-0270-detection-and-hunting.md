@@ -29,10 +29,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [DEV-0270 New User Creation](../content/7965f0be-c039-4d18-8ee8-9a6add8aecf3.md) | High | Persistence | - |
-| [Dev-0270 Malicious Powershell usage](../content/422ca2bf-598b-4872-82bb-5f7e8fa731e7.md) | High | Exfiltration, DefenseEvasion | - |
-| [Dev-0270 Registry IOC - September 2022](../content/2566e99f-ad0f-472a-b9ac-d3899c9283e6.md) | High | Impact | - |
-| [Dev-0270 WMIC  Discovery](../content/6b652b4f-9810-4eec-9027-7aa88ce4db23.md) | High | Discovery | - |
+| [DEV-0270 New User Creation](../content/dev-0270-detection-and-hunting-dev-0270-new-user-creation-7965f0be-c039-4d18-8ee8-9a6add8aecf3.md) | High | Persistence | - |
+| [Dev-0270 Malicious Powershell usage](../content/dev-0270-detection-and-hunting-dev-0270-malicious-powershell-usage-422ca2bf-598b-4872-82bb-5f7e8fa731e7.md) | High | Exfiltration, DefenseEvasion | - |
+| [Dev-0270 Registry IOC - September 2022](../content/dev-0270-detection-and-hunting-dev-0270-registry-ioc---september-2022-2566e99f-ad0f-472a-b9ac-d3899c9283e6.md) | High | Impact | - |
+| [Dev-0270 WMIC  Discovery](../content/dev-0270-detection-and-hunting-dev-0270-wmic--discovery-6b652b4f-9810-4eec-9027-7aa88ce4db23.md) | High | Discovery | - |
 
 ## Release Notes
 

@@ -29,9 +29,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AbuseIPDB Blacklist Ip To Threat Intelligence](../content/abuseipdb-blacklist-ip-to-threat-intelligence-abuseipdb.md) | By every day reccurence, this playbook gets triggered and performs the following actions: 1. Gets [l... | - |
-| [AbuseIPDB Enrich Incident By IP Info](../content/abuseipdb-enrich-incident-by-ip-info-abuseipdb.md) | Once a new sentinal incident is created, this playbook gets triggered and performs the following act... | - |
-| [AbuseIPDB Report IPs To AbuseIPDB After User Response In MSTeams](../content/abuseipdb-report-ips-to-abuseipdb-after-user-response-in-msteams-abuseipdb.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [AbuseIPDB Blacklist Ip To Threat Intelligence](../content/abuseipdb-abuseipdb-blacklist-ip-to-threat-intelligence.md) | By every day reccurence, this playbook gets triggered and performs the following actions: 1. Gets [l... | - |
+| [AbuseIPDB Enrich Incident By IP Info](../content/abuseipdb-abuseipdb-enrich-incident-by-ip-info.md) | Once a new sentinal incident is created, this playbook gets triggered and performs the following act... | - |
+| [AbuseIPDB Report IPs To AbuseIPDB After User Response In MSTeams](../content/abuseipdb-abuseipdb-report-ips-to-abuseipdb-after-user-response-in-msteams.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ## Release Notes
 

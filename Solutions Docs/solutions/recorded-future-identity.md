@@ -30,14 +30,14 @@ This solution includes **8 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [RFI-Playbook-Alert-Importer](../content/rfi-playbook-alert-importer-recorded-future-identity.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
-| [RFI-Playbook-Alert-Importer-LAW](../content/rfi-playbook-alert-importer-law-recorded-future-identity.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
-| [RFI-Playbook-Alert-Importer-LAW-Sentinel](../content/rfi-playbook-alert-importer-law-sentinel-recorded-future-identity.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
-| [RFI-add-EntraID-security-group-user](../content/rfi-add-entraid-security-group-user-recorded-future-identity.md) | This playbook adds a compromised user to an EntraID security group. Triage and remediation should be... | - |
-| [RFI-confirm-EntraID-risky-user](../content/rfi-confirm-entraid-risky-user-recorded-future-identity.md) | This playbook confirms compromise of users deemed 'high risk' by EntraID. | - |
-| [RFI-lookup-and-save-user](../content/rfi-lookup-and-save-user-recorded-future-identity.md) | This playbook gets compromise identity details from Recorded Future Identity Intelligence and saves ... | - |
-| [RFI-search-external-user](../content/rfi-search-external-user-recorded-future-identity.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised external (cu... | - |
-| [RFI-search-workforce-user](../content/rfi-search-workforce-user-recorded-future-identity.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised workforce us... | - |
+| [RFI-Playbook-Alert-Importer](../content/recorded-future-identity-rfi-playbook-alert-importer.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
+| [RFI-Playbook-Alert-Importer-LAW](../content/recorded-future-identity-rfi-playbook-alert-importer-law.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
+| [RFI-Playbook-Alert-Importer-LAW-Sentinel](../content/recorded-future-identity-rfi-playbook-alert-importer-law-sentinel.md) | This playbook fetches identity compromises from Recorded Future, places users in a security group an... | - |
+| [RFI-add-EntraID-security-group-user](../content/recorded-future-identity-rfi-add-entraid-security-group-user.md) | This playbook adds a compromised user to an EntraID security group. Triage and remediation should be... | - |
+| [RFI-confirm-EntraID-risky-user](../content/recorded-future-identity-rfi-confirm-entraid-risky-user.md) | This playbook confirms compromise of users deemed 'high risk' by EntraID. | - |
+| [RFI-lookup-and-save-user](../content/recorded-future-identity-rfi-lookup-and-save-user.md) | This playbook gets compromise identity details from Recorded Future Identity Intelligence and saves ... | - |
+| [RFI-search-external-user](../content/recorded-future-identity-rfi-search-external-user.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised external (cu... | - |
+| [RFI-search-workforce-user](../content/recorded-future-identity-rfi-search-workforce-user.md) | This playbook searches the Recorded Future Identity Intelligence Module for compromised workforce us... | - |
 
 ## Additional Documentation
 

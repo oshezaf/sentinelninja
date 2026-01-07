@@ -40,15 +40,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Detecting Suspicious PowerShell Command Executions](../content/47559078-dc4c-4de3-96fe-270d4ca95446.md) | Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
-| [Detecting Suspicious PowerShell Command Executions](../content/deb99c6f-1903-455b-bb2c-0036614110bc.md) | CommandAndControl | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |
-| [Match Cyware Intel Watchlist Items With Common Logs](../content/61c99147-b749-4164-80b1-c4bfa4efa704.md) | CommandAndControl, Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Detecting Suspicious PowerShell Command Executions](../content/cyware-detecting-suspicious-powershell-command-executions-47559078-dc4c-4de3-96fe-270d4ca95446.md) | Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
+| [Detecting Suspicious PowerShell Command Executions](../content/cyware-detecting-suspicious-powershell-command-executions-deb99c6f-1903-455b-bb2c-0036614110bc.md) | CommandAndControl | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |
+| [Match Cyware Intel Watchlist Items With Common Logs](../content/cyware-match-cyware-intel-watchlist-items-with-common-logs-61c99147-b749-4164-80b1-c4bfa4efa704.md) | CommandAndControl, Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Send Microsoft Sentinel Incident To Cyware Orchestrate](../content/send-microsoft-sentinel-incident-to-cyware-orchestrate-cyware.md) | Send Microsoft Sentinel Incident To Cyware Orchestrate | - |
+| [Send Microsoft Sentinel Incident To Cyware Orchestrate](../content/cyware-send-microsoft-sentinel-incident-to-cyware-orchestrate.md) | Send Microsoft Sentinel Incident To Cyware Orchestrate | - |
 
 ## Release Notes
 

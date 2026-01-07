@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ExtraHopDetectionSummary](../content/extrahopdetectionsummary-extrahop-reveal%28x%29.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ExtraHopDetectionSummary](../content/extrahop-reveal%28x%29-extrahopdetectionsummary.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

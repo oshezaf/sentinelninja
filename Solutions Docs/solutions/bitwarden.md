@@ -41,15 +41,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [BitwardenEventLogsAuthentication](../content/bitwardeneventlogsauthentication-bitwarden.md) | - |
-| [BitwardenEventLogsOrganization](../content/bitwardeneventlogsorganization-bitwarden.md) | - |
-| [BitwardenEventLogsVaultItems](../content/bitwardeneventlogsvaultitems-bitwarden.md) | - |
+| [BitwardenEventLogsAuthentication](../content/bitwarden-bitwardeneventlogsauthentication.md) | - |
+| [BitwardenEventLogsOrganization](../content/bitwarden-bitwardeneventlogsorganization.md) | - |
+| [BitwardenEventLogsVaultItems](../content/bitwarden-bitwardeneventlogsvaultitems.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [BitwardenEventLogs](../content/515d95cb-90f9-49b6-9056-327b2df08d37.md) | - | - |
+| [BitwardenEventLogs](../content/bitwarden-bitwardeneventlogs-515d95cb-90f9-49b6-9056-327b2df08d37.md) | - | - |
 
 ## Release Notes
 

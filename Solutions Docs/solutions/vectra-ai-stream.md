@@ -56,26 +56,26 @@ This solution includes **20 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [VectraStream_function](../content/f2c0db50-9693-4fe8-82ff-1015accc577d.md) | - | - |
-| [vectra_beacon](../content/d711b31f-2180-40d6-b473-cf12c38f7e10.md) | - | - |
-| [vectra_dcerpc](../content/327ba113-41fb-43b0-a932-c34b7c5c1f6a.md) | - | - |
-| [vectra_dhcp](../content/4c50bfe2-c615-46ac-96a1-8c36c0c259bf.md) | - | - |
-| [vectra_dns](../content/548ba0c7-8cd1-4054-be46-f65d51bf30aa.md) | - | - |
-| [vectra_http](../content/258fa2fe-5713-4619-a0ec-44eda332e2f8.md) | - | - |
-| [vectra_isession](../content/d5bc8fb4-6cc5-40ba-8842-3cd7f13a1bfc.md) | - | - |
-| [vectra_kerberos](../content/db366eb7-a17d-46c6-b511-478fc0d4050c.md) | - | - |
-| [vectra_ldap](../content/bdf387ea-b6a6-4aa6-a4aa-616631b71f66.md) | - | - |
-| [vectra_match](../content/7ba35238-0db6-4f32-bb69-9b47c3050b0e.md) | - | - |
-| [vectra_ntlm](../content/64127761-7282-4782-ac74-3761cf5f901f.md) | - | - |
-| [vectra_radius](../content/f97cac86-be42-4581-9ab4-ceb3c968e239.md) | - | - |
-| [vectra_rdp](../content/b33808da-c0a4-4523-adef-b7e32d68c64d.md) | - | - |
-| [vectra_smbfiles](../content/271ca6ef-4879-4217-a87e-94d442c65715.md) | - | - |
-| [vectra_smbmapping](../content/2fbb7c48-675e-49a7-bf9a-0f1b768f4dcf.md) | - | - |
-| [vectra_smtp](../content/48924199-4c7f-4765-ba24-1fe239f5111d.md) | - | - |
-| [vectra_ssh](../content/97e852ee-4bd0-49c2-9245-79f375e4c20a.md) | - | - |
-| [vectra_ssl](../content/8c36ca21-0b89-4d84-9742-dcddd41d7249.md) | - | - |
-| [vectra_stream](../content/6f157121-0831-4d7b-9c2f-32cbc17cb8e0.md) | - | - |
-| [vectra_x509](../content/79b9527e-9b14-4f92-a478-6e677532ae82.md) | - | - |
+| [VectraStream_function](../content/vectra-ai-stream-vectrastream-function-f2c0db50-9693-4fe8-82ff-1015accc577d.md) | - | - |
+| [vectra_beacon](../content/vectra-ai-stream-vectra-beacon-d711b31f-2180-40d6-b473-cf12c38f7e10.md) | - | - |
+| [vectra_dcerpc](../content/vectra-ai-stream-vectra-dcerpc-327ba113-41fb-43b0-a932-c34b7c5c1f6a.md) | - | - |
+| [vectra_dhcp](../content/vectra-ai-stream-vectra-dhcp-4c50bfe2-c615-46ac-96a1-8c36c0c259bf.md) | - | - |
+| [vectra_dns](../content/vectra-ai-stream-vectra-dns-548ba0c7-8cd1-4054-be46-f65d51bf30aa.md) | - | - |
+| [vectra_http](../content/vectra-ai-stream-vectra-http-258fa2fe-5713-4619-a0ec-44eda332e2f8.md) | - | - |
+| [vectra_isession](../content/vectra-ai-stream-vectra-isession-d5bc8fb4-6cc5-40ba-8842-3cd7f13a1bfc.md) | - | - |
+| [vectra_kerberos](../content/vectra-ai-stream-vectra-kerberos-db366eb7-a17d-46c6-b511-478fc0d4050c.md) | - | - |
+| [vectra_ldap](../content/vectra-ai-stream-vectra-ldap-bdf387ea-b6a6-4aa6-a4aa-616631b71f66.md) | - | - |
+| [vectra_match](../content/vectra-ai-stream-vectra-match-7ba35238-0db6-4f32-bb69-9b47c3050b0e.md) | - | - |
+| [vectra_ntlm](../content/vectra-ai-stream-vectra-ntlm-64127761-7282-4782-ac74-3761cf5f901f.md) | - | - |
+| [vectra_radius](../content/vectra-ai-stream-vectra-radius-f97cac86-be42-4581-9ab4-ceb3c968e239.md) | - | - |
+| [vectra_rdp](../content/vectra-ai-stream-vectra-rdp-b33808da-c0a4-4523-adef-b7e32d68c64d.md) | - | - |
+| [vectra_smbfiles](../content/vectra-ai-stream-vectra-smbfiles-271ca6ef-4879-4217-a87e-94d442c65715.md) | - | - |
+| [vectra_smbmapping](../content/vectra-ai-stream-vectra-smbmapping-2fbb7c48-675e-49a7-bf9a-0f1b768f4dcf.md) | - | - |
+| [vectra_smtp](../content/vectra-ai-stream-vectra-smtp-48924199-4c7f-4765-ba24-1fe239f5111d.md) | - | - |
+| [vectra_ssh](../content/vectra-ai-stream-vectra-ssh-97e852ee-4bd0-49c2-9245-79f375e4c20a.md) | - | - |
+| [vectra_ssl](../content/vectra-ai-stream-vectra-ssl-8c36ca21-0b89-4d84-9742-dcddd41d7249.md) | - | - |
+| [vectra_stream](../content/vectra-ai-stream-vectra-stream-6f157121-0831-4d7b-9c2f-32cbc17cb8e0.md) | - | - |
+| [vectra_x509](../content/vectra-ai-stream-vectra-x509-79b9527e-9b14-4f92-a478-6e677532ae82.md) | - | - |
 
 ## Release Notes
 

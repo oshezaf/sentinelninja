@@ -19,8 +19,8 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security---exchange-on-premises.md):**
-- [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-least-privilege-with-rbac-microsoft-exchange-security---exchange-on-premises.md)
-- [Microsoft Exchange Security Review](../content/microsoft-exchange-security-review-microsoft-exchange-security---exchange-on-premises.md)
+- [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-least-privilege-with-rbac.md)
+- [Microsoft Exchange Security Review](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-security-review.md)
 
 ---
 

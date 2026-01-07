@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PCIDSSCompliance](../content/pcidsscompliance-pci-dss-compliance.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 
 ## Release Notes
 

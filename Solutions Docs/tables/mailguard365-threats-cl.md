@@ -19,14 +19,14 @@ This table is ingested by the following connectors:
 ### Hunting Queries (3)
 
 **In solution [MailGuard 365](../solutions/mailguard-365.md):**
-- [MailGuard 365 - High Confidence Threats](../content/5e3aa1a5-5b69-421e-a3ac-32b04cb10353.md)
-- [MailGuard 365 - Malware Threats](../content/daaae6ad-1fd0-4efa-b571-116689e67a20.md)
-- [MailGuard 365 - Phishing Threats](../content/ee15ed10-d355-474e-b8ad-a8bbb76f6d38.md)
+- [MailGuard 365 - High Confidence Threats](../content/mailguard-365-mailguard-365---high-confidence-threats-5e3aa1a5-5b69-421e-a3ac-32b04cb10353.md)
+- [MailGuard 365 - Malware Threats](../content/mailguard-365-mailguard-365---malware-threats-daaae6ad-1fd0-4efa-b571-116689e67a20.md)
+- [MailGuard 365 - Phishing Threats](../content/mailguard-365-mailguard-365---phishing-threats-ee15ed10-d355-474e-b8ad-a8bbb76f6d38.md)
 
 ### Workbooks (1)
 
 **In solution [MailGuard 365](../solutions/mailguard-365.md):**
-- [MailGuard365Dashboard](../content/mailguard365dashboard-mailguard-365.md)
+- [MailGuard365Dashboard](../content/mailguard-365-mailguard365dashboard.md)
 
 ---
 

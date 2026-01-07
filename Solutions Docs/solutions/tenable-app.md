@@ -47,41 +47,41 @@ This solution includes **20 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [TIE Active Directory attacks pathways](../content/de549a62-f595-4810-88bd-621338186588.md) | Low | CredentialAccess | - |
-| [TIE DCShadow](../content/874e3530-552e-437b-ba2e-227979e7e43c.md) | High | DefenseEvasion | - |
-| [TIE DCSync](../content/19d1f964-ddcf-437b-92ce-b9c1c14d24f1.md) | High | CredentialAccess | - |
-| [TIE Golden Ticket](../content/216e12dd-165a-4537-b241-32e1bd3330c7.md) | High | CredentialAccess | - |
-| [TIE Indicators of Attack](../content/6c75f0d2-2973-4188-bb05-ec7bc8696120.md) | Low | CredentialAccess | - |
-| [TIE Indicators of Exposures](../content/f6ae2eb2-97c9-4e0f-ae73-7420ef80d99d.md) | Low | CredentialAccess | - |
-| [TIE LSASS Memory](../content/7851f57c-98b6-43c6-9747-9bb7cf11f21c.md) | High | CredentialAccess | - |
-| [TIE Password Guessing](../content/d1416c25-5a56-4a88-8d7c-568e6551a307.md) | High | CredentialAccess | - |
-| [TIE Password Spraying](../content/f47eb8cb-4acb-4ee4-887d-0247c6d73a72.md) | High | CredentialAccess | - |
-| [TIE Password issues](../content/87af910a-e9c0-4c96-8045-f778ba405251.md) | Low | CredentialAccess | - |
-| [TIE privileged accounts issues](../content/5c170c73-75ba-48ea-8dfc-e4e2d4f23979.md) | Low | CredentialAccess | - |
-| [TIE user accounts issues](../content/c4562ef3-d821-4089-b6c0-120d95c855e6.md) | Low | CredentialAccess | - |
+| [TIE Active Directory attacks pathways](../content/tenable-app-tie-active-directory-attacks-pathways-de549a62-f595-4810-88bd-621338186588.md) | Low | CredentialAccess | - |
+| [TIE DCShadow](../content/tenable-app-tie-dcshadow-874e3530-552e-437b-ba2e-227979e7e43c.md) | High | DefenseEvasion | - |
+| [TIE DCSync](../content/tenable-app-tie-dcsync-19d1f964-ddcf-437b-92ce-b9c1c14d24f1.md) | High | CredentialAccess | - |
+| [TIE Golden Ticket](../content/tenable-app-tie-golden-ticket-216e12dd-165a-4537-b241-32e1bd3330c7.md) | High | CredentialAccess | - |
+| [TIE Indicators of Attack](../content/tenable-app-tie-indicators-of-attack-6c75f0d2-2973-4188-bb05-ec7bc8696120.md) | Low | CredentialAccess | - |
+| [TIE Indicators of Exposures](../content/tenable-app-tie-indicators-of-exposures-f6ae2eb2-97c9-4e0f-ae73-7420ef80d99d.md) | Low | CredentialAccess | - |
+| [TIE LSASS Memory](../content/tenable-app-tie-lsass-memory-7851f57c-98b6-43c6-9747-9bb7cf11f21c.md) | High | CredentialAccess | - |
+| [TIE Password Guessing](../content/tenable-app-tie-password-guessing-d1416c25-5a56-4a88-8d7c-568e6551a307.md) | High | CredentialAccess | - |
+| [TIE Password Spraying](../content/tenable-app-tie-password-spraying-f47eb8cb-4acb-4ee4-887d-0247c6d73a72.md) | High | CredentialAccess | - |
+| [TIE Password issues](../content/tenable-app-tie-password-issues-87af910a-e9c0-4c96-8045-f778ba405251.md) | Low | CredentialAccess | - |
+| [TIE privileged accounts issues](../content/tenable-app-tie-privileged-accounts-issues-5c170c73-75ba-48ea-8dfc-e4e2d4f23979.md) | Low | CredentialAccess | - |
+| [TIE user accounts issues](../content/tenable-app-tie-user-accounts-issues-c4562ef3-d821-4089-b6c0-120d95c855e6.md) | Low | CredentialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TenableIEIoA](../content/tenableieioa-tenable-app.md) | - |
-| [TenableIEIoE](../content/tenableieioe-tenable-app.md) | - |
+| [TenableIEIoA](../content/tenable-app-tenableieioa.md) | - |
+| [TenableIEIoE](../content/tenable-app-tenableieioe.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Tenable VM - Enrich incident with asset info](../content/tenable-vm---enrich-incident-with-asset-info-tenable-app.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) *(read)* |
-| [Tenable VM - Enrich incident with vulnerability info](../content/tenable-vm---enrich-incident-with-vulnerability-info-tenable-app.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) *(read)* |
-| [Tenable VM - Launch Scan](../content/tenable-vm---launch-scan-tenable-app.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Tenable VM - Enrich incident with asset info](../content/tenable-app-tenable-vm---enrich-incident-with-asset-info.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) *(read)* |
+| [Tenable VM - Enrich incident with vulnerability info](../content/tenable-app-tenable-vm---enrich-incident-with-vulnerability-info.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) *(read)* |
+| [Tenable VM - Launch Scan](../content/tenable-app-tenable-vm---launch-scan.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TenableVMAssets](../content/3b381d0c-a650-4f74-b7c6-13c731f3ea48.md) | - | - |
-| [TenableVMVulnerabilities](../content/0c75ae72-bca4-4b53-a4f5-7c6d34e8b9cb.md) | - | - |
-| [afad_parser](../content/612975c5-4856-4ca0-a36e-64dbb7b70d18.md) | - | - |
+| [TenableVMAssets](../content/tenable-app-tenablevmassets-3b381d0c-a650-4f74-b7c6-13c731f3ea48.md) | - | - |
+| [TenableVMVulnerabilities](../content/tenable-app-tenablevmvulnerabilities-0c75ae72-bca4-4b53-a4f5-7c6d34e8b9cb.md) | - | - |
+| [afad_parser](../content/tenable-app-afad-parser-612975c5-4856-4ca0-a36e-64dbb7b70d18.md) | - | - |
 
 ## Release Notes
 

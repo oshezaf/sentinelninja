@@ -38,20 +38,20 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Radiflow - Exploit Detected](../content/6c028ebd-03ca-41cb-bce7-5727ddb43731.md) | High | InitialAccess, PrivilegeEscalation, LateralMovement | - |
-| [Radiflow - Network Scanning Detected](../content/cde00cc5-5841-4aa9-96c5-dd836f9e3f26.md) | High | Discovery | - |
-| [Radiflow - New Activity Detected](../content/8177ecff-30a1-4d4f-9a82-7fbb69019504.md) | Medium | InitialAccess | - |
-| [Radiflow - Platform Alert](../content/ff0c781a-b30f-4acf-9cf1-75d7383d66d1.md) | Medium | PrivilegeEscalation, Execution, CommandAndControl, Exfiltration, LateralMovement, ImpairProcessControl, InhibitResponseFunction, InitialAccess | - |
-| [Radiflow - Policy Violation Detected](../content/a3f4cc3e-2403-4570-8d21-1dedd5632958.md) | Medium | LateralMovement, ImpairProcessControl, Execution, Collection, Persistence | - |
-| [Radiflow - Suspicious Malicious Activity Detected](../content/ecac26b8-147d-478a-9d50-99be4bf14019.md) | High | DefenseEvasion, InhibitResponseFunction | - |
-| [Radiflow - Unauthorized Command in Operational Device](../content/4d90d485-6d47-417e-80ea-9cf956c1a671.md) | Medium | Execution, LateralMovement, InhibitResponseFunction, ImpairProcessControl | - |
-| [Radiflow - Unauthorized Internet Access](../content/cc33e1a9-e167-460b-93e6-f14af652dbd3.md) | Medium | InitialAccess, Impact | - |
+| [Radiflow - Exploit Detected](../content/radiflow-radiflow---exploit-detected-6c028ebd-03ca-41cb-bce7-5727ddb43731.md) | High | InitialAccess, PrivilegeEscalation, LateralMovement | - |
+| [Radiflow - Network Scanning Detected](../content/radiflow-radiflow---network-scanning-detected-cde00cc5-5841-4aa9-96c5-dd836f9e3f26.md) | High | Discovery | - |
+| [Radiflow - New Activity Detected](../content/radiflow-radiflow---new-activity-detected-8177ecff-30a1-4d4f-9a82-7fbb69019504.md) | Medium | InitialAccess | - |
+| [Radiflow - Platform Alert](../content/radiflow-radiflow---platform-alert-ff0c781a-b30f-4acf-9cf1-75d7383d66d1.md) | Medium | PrivilegeEscalation, Execution, CommandAndControl, Exfiltration, LateralMovement, ImpairProcessControl, InhibitResponseFunction, InitialAccess | - |
+| [Radiflow - Policy Violation Detected](../content/radiflow-radiflow---policy-violation-detected-a3f4cc3e-2403-4570-8d21-1dedd5632958.md) | Medium | LateralMovement, ImpairProcessControl, Execution, Collection, Persistence | - |
+| [Radiflow - Suspicious Malicious Activity Detected](../content/radiflow-radiflow---suspicious-malicious-activity-detected-ecac26b8-147d-478a-9d50-99be4bf14019.md) | High | DefenseEvasion, InhibitResponseFunction | - |
+| [Radiflow - Unauthorized Command in Operational Device](../content/radiflow-radiflow---unauthorized-command-in-operational-device-4d90d485-6d47-417e-80ea-9cf956c1a671.md) | Medium | Execution, LateralMovement, InhibitResponseFunction, ImpairProcessControl | - |
+| [Radiflow - Unauthorized Internet Access](../content/radiflow-radiflow---unauthorized-internet-access-cc33e1a9-e167-460b-93e6-f14af652dbd3.md) | Medium | InitialAccess, Impact | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [RadiflowEvent](../content/7594ae30-cfd5-42c5-894d-2c6196857a4c.md) | - | - |
+| [RadiflowEvent](../content/radiflow-radiflowevent-7594ae30-cfd5-42c5-894d-2c6196857a4c.md) | - | - |
 
 ## Release Notes
 

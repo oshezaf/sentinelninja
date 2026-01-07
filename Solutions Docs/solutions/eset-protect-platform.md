@@ -39,7 +39,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ESETProtectPlatform](../content/b0f36d45-4e08-4764-9200-4c5f7d706bb2.md) | - | - |
+| [ESETProtectPlatform](../content/eset-protect-platform-esetprotectplatform-b0f36d45-4e08-4764-9200-4c5f7d706bb2.md) | - | - |
 
 ## Release Notes
 

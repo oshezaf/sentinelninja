@@ -40,7 +40,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Citrix](../content/citrix-citrix-analytics-for-security.md) | [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md)<br>[`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md)<br>[`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md)<br>[`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) |
+| [Citrix](../content/citrix-analytics-for-security-citrix.md) | [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md)<br>[`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md)<br>[`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md)<br>[`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) |
 
 ---
 

@@ -29,8 +29,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Observable - EclecticIQ](../content/create-observable---eclecticiq-eclecticiq.md) | This playbook adds new observable in EclecticIQ based on the entities info present in Sentinel incid... | - |
-| [Enrich Incident - EclecticIQ](../content/enrich-incident---eclecticiq-eclecticiq.md) | This playbook perform look up into EclecticIQ for the entities (Account, Host, IP, FileHash, URL) pr... | - |
+| [Create Observable - EclecticIQ](../content/eclecticiq-create-observable---eclecticiq.md) | This playbook adds new observable in EclecticIQ based on the entities info present in Sentinel incid... | - |
+| [Enrich Incident - EclecticIQ](../content/eclecticiq-enrich-incident---eclecticiq.md) | This playbook perform look up into EclecticIQ for the entities (Account, Host, IP, FileHash, URL) pr... | - |
 
 ---
 

@@ -29,7 +29,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
-- [Password spray attack against ADFSSignInLogs](../content/5533fe80-905e-49d5-889a-df27d2c3976d.md)
+- [Password spray attack against ADFSSignInLogs](../content/microsoft-entra-id-password-spray-attack-against-adfssigninlogs-5533fe80-905e-49d5-889a-df27d2c3976d.md)
 
 ---
 

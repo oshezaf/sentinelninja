@@ -70,58 +70,58 @@ This solution includes **37 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Netskope - WebTransaction Error Detection](../content/66c4cd4c-d391-47e8-b4e6-93e55d86ca9f.md) | Medium | Execution | [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) |
+| [Netskope - WebTransaction Error Detection](../content/netskopev2-netskope---webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f.md) | Medium | Execution | [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [NetskopeCCFWebtxDashboard](../content/netskopeccfwebtxdashboard-netskopev2.md) | - |
-| [NetskopeCCPDashboard](../content/netskopeccpdashboard-netskopev2.md) | - |
-| [NetskopeCEDashboard](../content/netskopecedashboard-netskopev2.md) | - |
-| [NetskopeDashboard](../content/netskopedashboard-netskopev2.md) | - |
+| [NetskopeCCFWebtxDashboard](../content/netskopev2-netskopeccfwebtxdashboard.md) | - |
+| [NetskopeCCPDashboard](../content/netskopev2-netskopeccpdashboard.md) | - |
+| [NetskopeCEDashboard](../content/netskopev2-netskopecedashboard.md) | - |
+| [NetskopeDashboard](../content/netskopev2-netskopedashboard.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [NetskopeDataConnectorsTriggerSync](../content/netskopedataconnectorstriggersync-netskopev2.md) | Playbook to sync timer trigger of all Netskope data connectors. | - |
-| [NetskopeWebTxErrorEmail](../content/netskopewebtxerroremail-netskopev2.md) | This playbook sends email when Netskope Web Transaction data connector error is detected. | - |
+| [NetskopeDataConnectorsTriggerSync](../content/netskopev2-netskopedataconnectorstriggersync.md) | Playbook to sync timer trigger of all Netskope data connectors. | - |
+| [NetskopeWebTxErrorEmail](../content/netskopev2-netskopewebtxerroremail.md) | This playbook sends email when Netskope Web Transaction data connector error is detected. | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AlertsCompromisedCredential](../content/47794680-196f-4a19-a958-36f4f80794df.md) | - | - |
-| [AlertsCtep](../content/692b3a9d-ddd1-46f8-a44e-f830fb485ad5.md) | - | - |
-| [AlertsDLP](../content/6b84879b-285e-4e00-b28f-61907ad7e1ef.md) | - | - |
-| [AlertsMalsite](../content/a839f340-221e-4894-9a1c-e24d397cd508.md) | - | - |
-| [AlertsMalware](../content/44db348f-92f4-4f81-96b9-7d38d9fe2254.md) | - | - |
-| [AlertsPolicy](../content/f5604faf-5b55-40ff-b8c2-caa207124664.md) | - | - |
-| [AlertsQuarantine](../content/7b72ab0b-8629-42fd-aacc-601f79e5f89d.md) | - | - |
-| [AlertsRemediation](../content/7ac7ac9a-4020-46a0-9ab0-5d14de8a149c.md) | - | - |
-| [AlertsSecurityAssessment](../content/1c41c3ba-678f-4b7b-9f98-b1e0377bc993.md) | - | - |
-| [AlertsUba](../content/1038c863-722b-4ce2-88d7-3ffc0fc40043.md) | - | - |
-| [EventIncident](../content/08956ab9-e6b5-4db3-919e-5c4d8e2d0e81.md) | - | - |
-| [EventsApplication](../content/84d4ecf3-64e0-4c38-9dab-9dafda4c576d.md) | - | - |
-| [EventsAudit](../content/8c73041c-7ffa-4c9c-bd7a-e266c9dd7338.md) | - | - |
-| [EventsConnection](../content/669e29da-9d79-4d40-b4f4-c051a5652b30.md) | - | - |
-| [EventsNetwork](../content/0b360eb0-224d-4d99-af9b-43b1909ec0f9.md) | - | - |
-| [EventsPage](../content/10cd00e3-4488-4762-b86d-800ef7b2d9ae.md) | - | - |
-| [NetskopeAlerts](../content/983ea97a-fdf8-4efd-8b64-86f1e04ea684.md) | - | - |
-| [NetskopeCCFWebTransactions](../content/46fcd585-a713-4efd-9bbb-4701a3de1da3.md) | - | - |
-| [NetskopeCEAlerts](../content/77fd11ed-d55b-4c71-901f-85033e98c81e.md) | - | - |
-| [NetskopeCEEventsApplication](../content/a41404e1-dd05-4f1c-b5d8-07bc76de31aa.md) | - | - |
-| [NetskopeCEWebTransactions](../content/d15ed296-a3e1-437a-b2c8-a86c7c8d2077.md) | - | - |
-| [NetskopeEventsApplication](../content/57820420-5afe-49e6-8fdc-0a6b09e87f4a.md) | - | - |
-| [NetskopeEventsAudit](../content/a4dcd633-595c-477d-83ff-0c409e27068fy.md) | - | - |
-| [NetskopeEventsConnection](../content/319ce7ff-31c8-4435-bea3-7adbb5e33281.md) | - | - |
-| [NetskopeEventsDLP](../content/319ce7ff-31c8-4435-bea3-7adbb5e33281.md) | - | - |
-| [NetskopeEventsEndpoint](../content/3376eafb-8fb4-485e-9db3-f0fac52a13f1.md) | - | - |
-| [NetskopeEventsInfrastructure](../content/6db0062d-f243-40db-95b5-ffc288866199.md) | - | - |
-| [NetskopeEventsNetwork](../content/e754a796-f684-43c0-847f-2435a9ffc13d.md) | - | - |
-| [NetskopeEventsPage](../content/3577b943-641b-439b-95ef-d640a4f7a58b.md) | - | - |
-| [NetskopeWebTransactions](../content/47794680-196f-4a19-a958-36f4f80794df.md) | - | - |
+| [AlertsCompromisedCredential](../content/netskopev2-alertscompromisedcredential-47794680-196f-4a19-a958-36f4f80794df.md) | - | - |
+| [AlertsCtep](../content/netskopev2-alertsctep-692b3a9d-ddd1-46f8-a44e-f830fb485ad5.md) | - | - |
+| [AlertsDLP](../content/netskopev2-alertsdlp-6b84879b-285e-4e00-b28f-61907ad7e1ef.md) | - | - |
+| [AlertsMalsite](../content/netskopev2-alertsmalsite-a839f340-221e-4894-9a1c-e24d397cd508.md) | - | - |
+| [AlertsMalware](../content/netskopev2-alertsmalware-44db348f-92f4-4f81-96b9-7d38d9fe2254.md) | - | - |
+| [AlertsPolicy](../content/netskopev2-alertspolicy-f5604faf-5b55-40ff-b8c2-caa207124664.md) | - | - |
+| [AlertsQuarantine](../content/netskopev2-alertsquarantine-7b72ab0b-8629-42fd-aacc-601f79e5f89d.md) | - | - |
+| [AlertsRemediation](../content/netskopev2-alertsremediation-7ac7ac9a-4020-46a0-9ab0-5d14de8a149c.md) | - | - |
+| [AlertsSecurityAssessment](../content/netskopev2-alertssecurityassessment-1c41c3ba-678f-4b7b-9f98-b1e0377bc993.md) | - | - |
+| [AlertsUba](../content/netskopev2-alertsuba-1038c863-722b-4ce2-88d7-3ffc0fc40043.md) | - | - |
+| [EventIncident](../content/netskopev2-eventincident-08956ab9-e6b5-4db3-919e-5c4d8e2d0e81.md) | - | - |
+| [EventsApplication](../content/netskopev2-eventsapplication-84d4ecf3-64e0-4c38-9dab-9dafda4c576d.md) | - | - |
+| [EventsAudit](../content/netskopev2-eventsaudit-8c73041c-7ffa-4c9c-bd7a-e266c9dd7338.md) | - | - |
+| [EventsConnection](../content/netskopev2-eventsconnection-669e29da-9d79-4d40-b4f4-c051a5652b30.md) | - | - |
+| [EventsNetwork](../content/netskopev2-eventsnetwork-0b360eb0-224d-4d99-af9b-43b1909ec0f9.md) | - | - |
+| [EventsPage](../content/netskopev2-eventspage-10cd00e3-4488-4762-b86d-800ef7b2d9ae.md) | - | - |
+| [NetskopeAlerts](../content/netskopev2-netskopealerts-983ea97a-fdf8-4efd-8b64-86f1e04ea684.md) | - | - |
+| [NetskopeCCFWebTransactions](../content/netskopev2-netskopeccfwebtransactions-46fcd585-a713-4efd-9bbb-4701a3de1da3.md) | - | - |
+| [NetskopeCEAlerts](../content/netskopev2-netskopecealerts-77fd11ed-d55b-4c71-901f-85033e98c81e.md) | - | - |
+| [NetskopeCEEventsApplication](../content/netskopev2-netskopeceeventsapplication-a41404e1-dd05-4f1c-b5d8-07bc76de31aa.md) | - | - |
+| [NetskopeCEWebTransactions](../content/netskopev2-netskopecewebtransactions-d15ed296-a3e1-437a-b2c8-a86c7c8d2077.md) | - | - |
+| [NetskopeEventsApplication](../content/netskopev2-netskopeeventsapplication-57820420-5afe-49e6-8fdc-0a6b09e87f4a.md) | - | - |
+| [NetskopeEventsAudit](../content/netskopev2-netskopeeventsaudit-a4dcd633-595c-477d-83ff-0c409e27068fy.md) | - | - |
+| [NetskopeEventsConnection](../content/netskopev2-netskopeeventsconnection-319ce7ff-31c8-4435-bea3-7adbb5e33281.md) | - | - |
+| [NetskopeEventsDLP](../content/netskopev2-netskopeeventsdlp-319ce7ff-31c8-4435-bea3-7adbb5e33281.md) | - | - |
+| [NetskopeEventsEndpoint](../content/netskopev2-netskopeeventsendpoint-3376eafb-8fb4-485e-9db3-f0fac52a13f1.md) | - | - |
+| [NetskopeEventsInfrastructure](../content/netskopev2-netskopeeventsinfrastructure-6db0062d-f243-40db-95b5-ffc288866199.md) | - | - |
+| [NetskopeEventsNetwork](../content/netskopev2-netskopeeventsnetwork-e754a796-f684-43c0-847f-2435a9ffc13d.md) | - | - |
+| [NetskopeEventsPage](../content/netskopev2-netskopeeventspage-3577b943-641b-439b-95ef-d640a4f7a58b.md) | - | - |
+| [NetskopeWebTransactions](../content/netskopev2-netskopewebtransactions-47794680-196f-4a19-a958-36f4f80794df.md) | - | - |
 
 ## Additional Documentation
 

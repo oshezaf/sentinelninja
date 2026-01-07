@@ -21,7 +21,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Okta Single Sign-On](../solutions/okta-single-sign-on.md):**
-- [User Session Impersonation(Okta)](../content/35846296-4052-4de2-8098-beb6bb5f2203.md)
+- [User Session Impersonation(Okta)](../content/okta-single-sign-on-user-session-impersonation%28okta%29-35846296-4052-4de2-8098-beb6bb5f2203.md)
 
 ---
 

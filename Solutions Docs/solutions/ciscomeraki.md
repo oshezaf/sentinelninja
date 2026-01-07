@@ -42,23 +42,23 @@ This solution includes **7 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoMerakiWorkbook](../content/ciscomerakiworkbook-ciscomeraki.md) | - |
+| [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Block Device Client - Cisco Meraki](../content/block-device-client---cisco-meraki-ciscomeraki.md) | This playbook checks if malicious device client is blocked by Cisco Meraki network. | - |
-| [Block IP Address - Cisco Meraki](../content/block-ip-address---cisco-meraki-ciscomeraki.md) | This playbook checks if malicious IP address is blocked or unblocked by Cisco Meraki MX network. | - |
-| [Block URL - Cisco Meraki](../content/block-url---cisco-meraki-ciscomeraki.md) | This playbook checks if malicious URL is blocked in Cisco Meraki network. | - |
-| [IP Address Enrichment - Cisco Meraki](../content/ip-address-enrichment---cisco-meraki-ciscomeraki.md) | This playbook checks if malicious IP address is blocked or unblocked by Cisco Meraki MX network. | - |
-| [URL Enrichment - Cisco Meraki](../content/url-enrichment---cisco-meraki-ciscomeraki.md) | This playbook checks if malicious URL is blocked or unblocked by Cisco Meraki network. | - |
+| [Block Device Client - Cisco Meraki](../content/ciscomeraki-block-device-client---cisco-meraki.md) | This playbook checks if malicious device client is blocked by Cisco Meraki network. | - |
+| [Block IP Address - Cisco Meraki](../content/ciscomeraki-block-ip-address---cisco-meraki.md) | This playbook checks if malicious IP address is blocked or unblocked by Cisco Meraki MX network. | - |
+| [Block URL - Cisco Meraki](../content/ciscomeraki-block-url---cisco-meraki.md) | This playbook checks if malicious URL is blocked in Cisco Meraki network. | - |
+| [IP Address Enrichment - Cisco Meraki](../content/ciscomeraki-ip-address-enrichment---cisco-meraki.md) | This playbook checks if malicious IP address is blocked or unblocked by Cisco Meraki MX network. | - |
+| [URL Enrichment - Cisco Meraki](../content/ciscomeraki-url-enrichment---cisco-meraki.md) | This playbook checks if malicious URL is blocked or unblocked by Cisco Meraki network. | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoMeraki](../content/f3811ff1-231c-453f-bd2c-cda06e7c3e1f.md) | - | - |
+| [CiscoMeraki](../content/ciscomeraki-ciscomeraki-f3811ff1-231c-453f-bd2c-cda06e7c3e1f.md) | - | - |
 
 ## Additional Information
 

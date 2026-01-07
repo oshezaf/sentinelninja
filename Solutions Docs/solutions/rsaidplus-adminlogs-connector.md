@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [RSA ID Plus - Locked Administrator Account Detected](../content/488c759d-a82e-44cd-91bb-d766573918d7.md) | Medium | Impact, CredentialAccess | [`RSAIDPlus_AdminLogs_CL`](../tables/rsaidplus-adminlogs-cl.md) |
+| [RSA ID Plus - Locked Administrator Account Detected](../content/rsaidplus-adminlogs-connector-rsa-id-plus---locked-administrator-account-detected-488c759d-a82e-44cd-91bb-d766573918d7.md) | Medium | Impact, CredentialAccess | [`RSAIDPlus_AdminLogs_CL`](../tables/rsaidplus-adminlogs-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SendEmailonRSAIDPlusAlert](../content/sendemailonrsaidplusalert-rsaidplus-adminlogs-connector.md) | Sends an email notification when an RSA ID Plus analytic rule triggers. This playbook can be linked ... | - |
+| [SendEmailonRSAIDPlusAlert](../content/rsaidplus-adminlogs-connector-sendemailonrsaidplusalert.md) | Sends an email notification when an RSA ID Plus analytic rule triggers. This playbook can be linked ... | - |
 
 ## Additional Documentation
 

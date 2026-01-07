@@ -30,8 +30,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Block IP & URL on ThreatX-WAF cloud](../content/block-ip-&-url-on-threatx-waf-cloud-threatxcloud.md) | This Playbook Provides the automation on blocking the suspicious/malicious IP and URL on ThreatX clo... | - |
-| [Fetch Threat Intel from ThreatX](../content/fetch-threat-intel-from-threatx-threatxcloud.md) | This playbook provides/updates the threat intel and essential details in comments section of trigger... | - |
+| [Block IP & URL on ThreatX-WAF cloud](../content/threatxcloud-block-ip-&-url-on-threatx-waf-cloud.md) | This Playbook Provides the automation on blocking the suspicious/malicious IP and URL on ThreatX clo... | - |
+| [Fetch Threat Intel from ThreatX](../content/threatxcloud-fetch-threat-intel-from-threatx.md) | This playbook provides/updates the threat intel and essential details in comments section of trigger... | - |
 
 ---
 

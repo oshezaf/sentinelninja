@@ -31,10 +31,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Possible Phishing with CSL and Network Sessions](../content/6c3a1258-bcdd-4fcd-b753-1a9bc826ce12.md)
+- [Possible Phishing with CSL and Network Sessions](../content/microsoft-defender-xdr-possible-phishing-with-csl-and-network-sessions-6c3a1258-bcdd-4fcd-b753-1a9bc826ce12.md)
 
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
-- [Defender Alert Evidence](../content/8138863e-e55f-4f02-ac94-72796e203d27.md)
+- [Defender Alert Evidence](../content/vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27.md)
 
 ---
 

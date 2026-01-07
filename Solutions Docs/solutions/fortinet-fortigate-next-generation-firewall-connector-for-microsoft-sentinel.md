@@ -39,15 +39,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Fortigate](../content/fortigate-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Fortigate](../content/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortigate.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Fortinet-FortiGate-IPEnrichment](../content/fortinet-fortigate-ipenrichment-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | This playbook enriches the incident with address object and address group. | - |
-| [Fortinet-FortiGate-ResponseOnBlockIP](../content/fortinet-fortigate-responseonblockip-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which i... | - |
-| [Fortinet-FortiGate-ResponseOnBlockURL](../content/fortinet-fortigate-responseonblockurl-fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which i... | - |
+| [Fortinet-FortiGate-IPEnrichment](../content/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-ipenrichment.md) | This playbook enriches the incident with address object and address group. | - |
+| [Fortinet-FortiGate-ResponseOnBlockIP](../content/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-responseonblockip.md) | This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which i... | - |
+| [Fortinet-FortiGate-ResponseOnBlockURL](../content/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-responseonblockurl.md) | This playbook allows the SOC users to automatically response to Microsoft Sentinel incidents which i... | - |
 
 ## Release Notes
 

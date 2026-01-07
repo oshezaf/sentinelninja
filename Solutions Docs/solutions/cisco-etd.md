@@ -36,7 +36,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoETD](../content/ciscoetd-cisco-etd.md) | [`CiscoETD_CL`](../tables/ciscoetd-cl.md) |
+| [CiscoETD](../content/cisco-etd-ciscoetd.md) | [`CiscoETD_CL`](../tables/ciscoetd-cl.md) |
 
 ## Release Notes
 

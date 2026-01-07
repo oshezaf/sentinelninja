@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Removable storage ONLINE event from secRMM](../content/a22b2ecf-1478-4400-877e-07a32e53a897.md) | High | Collection | [`secRMM_CL`](../tables/secrmm-cl.md) |
+| [Removable storage ONLINE event from secRMM](../content/squadra-technologies-secrmm-removable-storage-online-event-from-secrmm-a22b2ecf-1478-4400-877e-07a32e53a897.md) | High | Collection | [`secRMM_CL`](../tables/secrmm-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/azuresentinelworkbookforremovablestoragesecurityevents-squadra-technologies-secrmm.md) | [`secRMM_CL`](../tables/secrmm-cl.md) |
+| [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/squadra-technologies-secrmm-azuresentinelworkbookforremovablestoragesecurityevents.md) | [`secRMM_CL`](../tables/secrmm-cl.md) |
 
 ## Release Notes
 

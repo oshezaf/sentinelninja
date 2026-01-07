@@ -55,11 +55,11 @@ This solution includes **16 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dynatrace - Problem detection](../content/415978ff-074e-4203-824a-b06153d77bf7.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
-| [Dynatrace Application Security - Attack detection](../content/1b0b2065-8bac-5a00-83c4-1b58f69ac212.md) | High | Execution, Impact, InitialAccess, PrivilegeEscalation | - |
-| [Dynatrace Application Security - Code-Level runtime vulnerability detection](../content/305093b4-0fa2-57bc-bced-caea782a6e9c.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
-| [Dynatrace Application Security - Non-critical runtime vulnerability detection](../content/ff0af873-a2f2-4233-8412-0ef4e00b0156.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
-| [Dynatrace Application Security - Third-Party runtime vulnerability detection](../content/af99b078-124b-543a-9a50-66ef87c09f6a.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
+| [Dynatrace - Problem detection](../content/dynatrace-dynatrace---problem-detection-415978ff-074e-4203-824a-b06153d77bf7.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
+| [Dynatrace Application Security - Attack detection](../content/dynatrace-dynatrace-application-security---attack-detection-1b0b2065-8bac-5a00-83c4-1b58f69ac212.md) | High | Execution, Impact, InitialAccess, PrivilegeEscalation | - |
+| [Dynatrace Application Security - Code-Level runtime vulnerability detection](../content/dynatrace-dynatrace-application-security---code-level-runtime-vulnerability-detection-305093b4-0fa2-57bc-bced-caea782a6e9c.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
+| [Dynatrace Application Security - Non-critical runtime vulnerability detection](../content/dynatrace-dynatrace-application-security---non-critical-runtime-vulnerability-detection-ff0af873-a2f2-4233-8412-0ef4e00b0156.md) | Informational | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
+| [Dynatrace Application Security - Third-Party runtime vulnerability detection](../content/dynatrace-dynatrace-application-security---third-party-runtime-vulnerability-detection-af99b078-124b-543a-9a50-66ef87c09f6a.md) | Medium | DefenseEvasion, Execution, Impact, InitialAccess, LateralMovement, Persistence, PrivilegeEscalation | - |
 
 ### Workbooks
 
@@ -71,21 +71,21 @@ This solution includes **16 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-dynatrace.md) | This playbook will add an attackers source ip to Threat Intelligence when a new incident is opened i... | - |
-| [Enrich Dynatrace Application Security Attack Incident](../content/enrich-dynatrace-application-security-attack-incident-dynatrace.md) | This playbook will enriche Dynatrace Application Security Attack Incidents with additional informati... | - |
-| [Enrich Dynatrace Application Security Attack with related Microsoft Defender XDR insights](../content/enrich-dynatrace-application-security-attack-with-related-microsoft-defender-xdr-insights-dynatrace.md) | This playbook will enrich Dynatrace Application Security Attack with related Microsoft Defender XDR ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
-| [Enrich Dynatrace Application Security Attack with related Microsoft Sentinel Security Alerts](../content/enrich-dynatrace-application-security-attack-with-related-microsoft-sentinel-security-alerts-dynatrace.md) | This playbook will enrich Dynatrace Application Security Attack with related Microsoft Sentinel Secu... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
-| [Ingest Microsoft Defender XDR insights into Dynatrace](../content/ingest-microsoft-defender-xdr-insights-into-dynatrace-dynatrace.md) | This playbook will ingest Microsoft Defender XDR insights into Dynatrace. | - |
-| [Ingest Microsoft Sentinel Security Alerts into Dynatrace](../content/ingest-microsoft-sentinel-security-alerts-into-dynatrace-dynatrace.md) | This playbook will ingest Microsoft Sentinel Security Alerts into Dynatrace. | - |
+| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence.md) | This playbook will add an attackers source ip to Threat Intelligence when a new incident is opened i... | - |
+| [Enrich Dynatrace Application Security Attack Incident](../content/dynatrace-enrich-dynatrace-application-security-attack-incident.md) | This playbook will enriche Dynatrace Application Security Attack Incidents with additional informati... | - |
+| [Enrich Dynatrace Application Security Attack with related Microsoft Defender XDR insights](../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-defender-xdr-insights.md) | This playbook will enrich Dynatrace Application Security Attack with related Microsoft Defender XDR ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
+| [Enrich Dynatrace Application Security Attack with related Microsoft Sentinel Security Alerts](../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-sentinel-security-alerts.md) | This playbook will enrich Dynatrace Application Security Attack with related Microsoft Sentinel Secu... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
+| [Ingest Microsoft Defender XDR insights into Dynatrace](../content/dynatrace-ingest-microsoft-defender-xdr-insights-into-dynatrace.md) | This playbook will ingest Microsoft Defender XDR insights into Dynatrace. | - |
+| [Ingest Microsoft Sentinel Security Alerts into Dynatrace](../content/dynatrace-ingest-microsoft-sentinel-security-alerts-into-dynatrace.md) | This playbook will ingest Microsoft Sentinel Security Alerts into Dynatrace. | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DynatraceAttacks](../content/fc6d1ab7-a088-4b9e-8ea1-b95584172c33.md) | - | - |
-| [DynatraceAuditLogs](../content/b157a58b-39ce-44c2-8a2f-7f2a8eff104a.md) | - | - |
-| [DynatraceProblems](../content/ca4646fe-4278-4dcb-9be7-f0e2d53bbaa1.md) | - | - |
-| [DynatraceSecurityProblems](../content/09c9ae71-329c-4343-815d-b755206d9f32.md) | - | - |
+| [DynatraceAttacks](../content/dynatrace-dynatraceattacks-fc6d1ab7-a088-4b9e-8ea1-b95584172c33.md) | - | - |
+| [DynatraceAuditLogs](../content/dynatrace-dynatraceauditlogs-b157a58b-39ce-44c2-8a2f-7f2a8eff104a.md) | - | - |
+| [DynatraceProblems](../content/dynatrace-dynatraceproblems-ca4646fe-4278-4dcb-9be7-f0e2d53bbaa1.md) | - | - |
+| [DynatraceSecurityProblems](../content/dynatrace-dynatracesecurityproblems-09c9ae71-329c-4343-815d-b755206d9f32.md) | - | - |
 
 ## Release Notes
 

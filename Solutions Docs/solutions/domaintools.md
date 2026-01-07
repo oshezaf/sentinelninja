@@ -30,20 +30,20 @@ This solution includes **9 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Domain ASIM Enrichment - DomainTools Iris Enrich](../content/domain-asim-enrichment---domaintools-iris-enrich-domaintools.md) | Given a domain or set of domains associated with an alert return all Iris Enrich data for those doma... | - |
-| [Domain Enrichment - DomainTools Iris Enrich](../content/domain-enrichment---domaintools-iris-enrich-domaintools.md) | Given a domain or set of domains associated with an incident return all Iris Enrich data for those d... | - |
-| [Domain Enrichment - DomainTools Iris Investigate](../content/domain-enrichment---domaintools-iris-investigate-domaintools.md) | Given a domain or set of domains associated with an incident return all Iris Investigate data for th... | - |
-| [DomainTools DNSDB Co-Located Hosts](../content/domaintools-dnsdb-co-located-hosts-domaintools.md) | This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Micros... | - |
-| [DomainTools DNSDB Co-Located IP Addresses](../content/domaintools-dnsdb-co-located-ip-addresses-domaintools.md) | This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Mi... | - |
-| [DomainTools DNSDB Historical Hosts](../content/domaintools-dnsdb-historical-hosts-domaintools.md) | This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Micros... | - |
-| [DomainTools DNSDB Historical IP Addresses](../content/domaintools-dnsdb-historical-ip-addresses-domaintools.md) | This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Mi... | - |
-| [IP Enrichment - DomainTools Parsed Whois](../content/ip-enrichment---domaintools-parsed-whois-domaintools.md) | This playbook uses the DomainTools Parsed Whois API. Given a ip address or set of ip addresses assoc... | - |
+| [Domain ASIM Enrichment - DomainTools Iris Enrich](../content/domaintools-domain-asim-enrichment---domaintools-iris-enrich.md) | Given a domain or set of domains associated with an alert return all Iris Enrich data for those doma... | - |
+| [Domain Enrichment - DomainTools Iris Enrich](../content/domaintools-domain-enrichment---domaintools-iris-enrich.md) | Given a domain or set of domains associated with an incident return all Iris Enrich data for those d... | - |
+| [Domain Enrichment - DomainTools Iris Investigate](../content/domaintools-domain-enrichment---domaintools-iris-investigate.md) | Given a domain or set of domains associated with an incident return all Iris Investigate data for th... | - |
+| [DomainTools DNSDB Co-Located Hosts](../content/domaintools-domaintools-dnsdb-co-located-hosts.md) | This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Micros... | - |
+| [DomainTools DNSDB Co-Located IP Addresses](../content/domaintools-domaintools-dnsdb-co-located-ip-addresses.md) | This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Mi... | - |
+| [DomainTools DNSDB Historical Hosts](../content/domaintools-domaintools-dnsdb-historical-hosts.md) | This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Micros... | - |
+| [DomainTools DNSDB Historical IP Addresses](../content/domaintools-domaintools-dnsdb-historical-ip-addresses.md) | This playbook uses the Farsight DNSDB connector to automatically enrich IP Addresses found in the Mi... | - |
+| [IP Enrichment - DomainTools Parsed Whois](../content/domaintools-ip-enrichment---domaintools-parsed-whois.md) | This playbook uses the DomainTools Parsed Whois API. Given a ip address or set of ip addresses assoc... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DomainToolsDNS](../content/fe76a307-f652-4590-b60d-b4a86a483c8c.md) | - | - |
+| [DomainToolsDNS](../content/domaintools-domaintoolsdns-fe76a307-f652-4590-b60d-b4a86a483c8c.md) | - | - |
 
 ## Release Notes
 

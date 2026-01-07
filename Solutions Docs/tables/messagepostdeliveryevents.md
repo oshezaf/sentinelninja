@@ -21,13 +21,13 @@ This table is used by the following solutions:
 ### Hunting Queries (7)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Potentially malicious URL click in Teams](../content/8d25156b-2ac4-4528-b1b1-f8427267f9f2.md)
-- [Teams Malware ZAP](../content/4684afc7-3d05-4ec1-8fb0-342707d0ac5d.md)
-- [Teams Phish ZAP](../content/abd7e757-7737-4c9f-af7a-92e87172ff4f.md)
-- [Teams Spam ZAP](../content/008ff55b-0588-4d39-af03-c08f1bb519d7.md)
-- [Teams message ZAPed with the same URL in Email](../content/8b7a84e9-5831-4e90-9b98-bd57493c6cc9.md)
-- [Teams post delivery events daily trend](../content/fea3f03b-0723-4f3e-9f6a-c8a6a67fbde0.md)
-- [URL click on URLs in ZAP-d Teams messages](../content/2ae448b1-b27d-4043-a92f-ef10202cdb7a.md)
+- [Potentially malicious URL click in Teams](../content/microsoft-defender-xdr-potentially-malicious-url-click-in-teams-8d25156b-2ac4-4528-b1b1-f8427267f9f2.md)
+- [Teams Malware ZAP](../content/microsoft-defender-xdr-teams-malware-zap-4684afc7-3d05-4ec1-8fb0-342707d0ac5d.md)
+- [Teams Phish ZAP](../content/microsoft-defender-xdr-teams-phish-zap-abd7e757-7737-4c9f-af7a-92e87172ff4f.md)
+- [Teams Spam ZAP](../content/microsoft-defender-xdr-teams-spam-zap-008ff55b-0588-4d39-af03-c08f1bb519d7.md)
+- [Teams message ZAPed with the same URL in Email](../content/microsoft-defender-xdr-teams-message-zaped-with-the-same-url-in-email-8b7a84e9-5831-4e90-9b98-bd57493c6cc9.md)
+- [Teams post delivery events daily trend](../content/microsoft-defender-xdr-teams-post-delivery-events-daily-trend-fea3f03b-0723-4f3e-9f6a-c8a6a67fbde0.md)
+- [URL click on URLs in ZAP-d Teams messages](../content/microsoft-defender-xdr-url-click-on-urls-in-zap-d-teams-messages-2ae448b1-b27d-4043-a92f-ef10202cdb7a.md)
 
 ---
 

@@ -41,10 +41,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CriblAccess](../content/eb7323cf-8cad-42bd-921b-5e18b907002a.md) | - | - |
-| [CriblAudit](../content/f5e93f79-9e3c-4505-a52e-e634988a8bdb.md) | - | - |
-| [CriblInternal](../content/b934592c-d6b6-48f3-949e-415658687c8e.md) | - | - |
-| [CriblUIAccess](../content/8bc08089-197d-452e-bb5b-3bdf4b8a95b0.md) | - | - |
+| [CriblAccess](../content/cribl-criblaccess-eb7323cf-8cad-42bd-921b-5e18b907002a.md) | - | - |
+| [CriblAudit](../content/cribl-criblaudit-f5e93f79-9e3c-4505-a52e-e634988a8bdb.md) | - | - |
+| [CriblInternal](../content/cribl-criblinternal-b934592c-d6b6-48f3-949e-415658687c8e.md) | - | - |
+| [CriblUIAccess](../content/cribl-cribluiaccess-8bc08089-197d-452e-bb5b-3bdf4b8a95b0.md) | - | - |
 
 ## Release Notes
 

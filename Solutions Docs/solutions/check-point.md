@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CheckPoint](../content/checkpoint-check-point.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [CheckPoint](../content/check-point-checkpoint.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [checkpoint-add-host-to-group](../content/checkpoint-add-host-to-group-check-point.md) | This playbook will create Check Point objects and add to block group | - |
+| [checkpoint-add-host-to-group](../content/check-point-checkpoint-add-host-to-group.md) | This playbook will create Check Point objects and add to block group | - |
 
 ## Additional Information
 

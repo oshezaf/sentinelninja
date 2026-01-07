@@ -29,7 +29,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AWS Athena - Execute Query and Get Results](../content/aws-athena---execute-query-and-get-results-awsathena.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [AWS Athena - Execute Query and Get Results](../content/awsathena-aws-athena---execute-query-and-get-results.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ## Release Notes
 

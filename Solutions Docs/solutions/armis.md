@@ -44,15 +44,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Armis Update Alert Status](../content/armis-update-alert-status-armis.md) | Armis Update Alert Status playbook would be responsible to update the Alert status from the sentinel... | - |
+| [Armis Update Alert Status](../content/armis-armis-update-alert-status.md) | Armis Update Alert Status playbook would be responsible to update the Alert status from the sentinel... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ArmisActivities](../content/fb6c861f-c438-4a5d-ae97-59dfc7af607a.md) | - | - |
-| [ArmisAlerts](../content/7783dff3-1e0a-4622-bdd7-74ee371e4dba.md) | - | - |
-| [ArmisDevice](../content/826eac66-f927-4351-ab5d-483457060ae0.md) | - | - |
+| [ArmisActivities](../content/armis-armisactivities-fb6c861f-c438-4a5d-ae97-59dfc7af607a.md) | - | - |
+| [ArmisAlerts](../content/armis-armisalerts-7783dff3-1e0a-4622-bdd7-74ee371e4dba.md) | - | - |
+| [ArmisDevice](../content/armis-armisdevice-826eac66-f927-4351-ab5d-483457060ae0.md) | - | - |
 
 ## Release Notes
 

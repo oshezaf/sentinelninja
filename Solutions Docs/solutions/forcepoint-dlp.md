@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ForcepointDLP](../content/forcepointdlp-forcepoint-dlp.md) | [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) |
+| [ForcepointDLP](../content/forcepoint-dlp-forcepointdlp.md) | [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) |
 
 ---
 

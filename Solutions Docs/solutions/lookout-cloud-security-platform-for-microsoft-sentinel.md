@@ -37,9 +37,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [LookoutCSActivities](../content/ecaf0d02-9547-4e2d-b4fd-48112442430e.md) | - | - |
-| [LookoutCSAnomalies](../content/411d9caf-088b-42d7-b1d0-7db898efc1b4.md) | - | - |
-| [LookoutCSViolations](../content/3394b060-0e55-4ecc-828e-a5671e3275cd.md) | - | - |
+| [LookoutCSActivities](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsactivities-ecaf0d02-9547-4e2d-b4fd-48112442430e.md) | - | - |
+| [LookoutCSAnomalies](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsanomalies-411d9caf-088b-42d7-b1d0-7db898efc1b4.md) | - | - |
+| [LookoutCSViolations](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsviolations-3394b060-0e55-4ecc-828e-a5671e3275cd.md) | - | - |
 
 ## Release Notes
 

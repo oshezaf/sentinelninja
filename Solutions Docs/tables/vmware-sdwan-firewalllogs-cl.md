@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [VMware SD-WAN and SASE](../solutions/vmware-sd-wan-and-sase.md):**
-- [VMware SD-WAN Edge - IDS/IPS Alert triggered (Search API)](../content/44f78dbf-9f29-4ec0-aaca-ab5bf0b559af.md)
+- [VMware SD-WAN Edge - IDS/IPS Alert triggered (Search API)](../content/vmware-sd-wan-and-sase-vmware-sd-wan-edge---ids-ips-alert-triggered-%28search-api%29-44f78dbf-9f29-4ec0-aaca-ab5bf0b559af.md)
 
 ---
 

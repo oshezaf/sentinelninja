@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ASimDnsMicrosoftNXLog](../content/274a2fc6-eda0-430d-9e02-7a7c0850eb0e.md) | - | - |
+| [ASimDnsMicrosoftNXLog](../content/nxlogdnslogs-asimdnsmicrosoftnxlog-274a2fc6-eda0-430d-9e02-7a7c0850eb0e.md) | - | - |
 
 ---
 

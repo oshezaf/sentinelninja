@@ -41,7 +41,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ConfluenceAudit](../content/91a64f79-c926-4b7f-a77e-b202f79fe4bf.md) | - | - |
+| [ConfluenceAudit](../content/atlassianconfluenceaudit-confluenceaudit-91a64f79-c926-4b7f-a77e-b202f79fe4bf.md) | - | - |
 
 ## Release Notes
 

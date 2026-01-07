@@ -38,13 +38,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [NetClean ProActive Incidents](../content/77548170-5c60-42e5-bdac-b0360d0779bb.md) | High | Discovery | [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) |
+| [NetClean ProActive Incidents](../content/netclean-proactive-netclean-proactive-incidents-77548170-5c60-42e5-bdac-b0360d0779bb.md) | High | Discovery | [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [NetCleanProActiveWorkbook](../content/netcleanproactiveworkbook-netclean-proactive.md) | [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) |
+| [NetCleanProActiveWorkbook](../content/netclean-proactive-netcleanproactiveworkbook.md) | [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) |
 
 ## Release Notes
 

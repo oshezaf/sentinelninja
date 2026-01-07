@@ -50,18 +50,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
-- [Insider Risk_High User Security Incidents Correlation](../content/28a75d10-9b75-4192-9863-e452c3ad24db.md)
+- [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db.md)
 
 ### Workbooks (32)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Log4jImpactAssessment](../content/log4jimpactassessment-apache-log4j-vulnerability-detection.md)
+- [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment.md)
 
 **In solution [Azure Key Vault](../solutions/azure-key-vault.md):**
-- [AzureKeyVaultWorkbook](../content/azurekeyvaultworkbook-azure-key-vault.md)
+- [AzureKeyVaultWorkbook](../content/azure-key-vault-azurekeyvaultworkbook.md)
 
 **In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
-- [Workbook-AzureSQLSecurity](../content/workbook-azuresqlsecurity-azure-sql-database-solution-for-sentinel.md)
+- [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark.md)
@@ -70,67 +70,67 @@ This table is ingested by the following connectors:
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation.md)
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md):**
-- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmcv2-cybersecuritymaturitymodelcertification%28cmmc%292.0.md)
+- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification%28cmmc%292.0-cybersecuritymaturitymodelcertification-cmmcv2.md)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
-- [HIPAACompliance](../content/hipaacompliance-hipaa-compliance.md)
+- [HIPAACompliance](../content/hipaa-compliance-hipaacompliance.md)
 
 **In solution [Infoblox](../solutions/infoblox.md):**
-- [Infoblox_Lookup_Workbook](../content/infoblox-lookup-workbook-infoblox.md)
-- [Infoblox_Workbook](../content/infoblox-workbook-infoblox.md)
+- [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook.md)
+- [Infoblox_Workbook](../content/infoblox-infoblox-workbook.md)
 
 **In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
-- [InfobloxSOCInsightsWorkbook](../content/infobloxsocinsightsworkbook-infoblox-soc-insights.md)
+- [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook.md)
 
 **In solution [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md):**
 - [IoTOTThreatMonitoringwithDefenderforIoT](../content/iototthreatmonitoringwithdefenderforiot-iototthreatmonitoringwithdefenderforiot.md)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
-- [Lumen-Threat-Feed-Overview](../content/lumen-threat-feed-overview-lumen-defender-threat-feed.md)
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagement-m2131-maturitymodelforeventlogmanagementm2131.md)
+- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131.md)
 
 **In solution [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md):**
-- [MicrosoftThreatIntelligence](../content/microsoftthreatintelligence-microsoft-defender-threat-intelligence.md)
+- [MicrosoftThreatIntelligence](../content/microsoft-defender-threat-intelligence-microsoftthreatintelligence.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoftdefenderforoffice365detectionsandinsights-microsoft-defender-xdr.md)
+- [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights.md)
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
-- [InsiderRiskManagement](../content/insiderriskmanagement-microsoftpurviewinsiderriskmanagement.md)
+- [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement.md)
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053.md)
 
 **In solution [ReversingLabs](../solutions/reversinglabs.md):**
-- [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-capabilitiesoverview-reversinglabs.md)
+- [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-reversinglabs-capabilitiesoverview.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AnalyticsEfficiency](../content/analyticsefficiency-soc-handbook.md)
-- [AnomaliesVisualization](../content/anomaliesvisualization-soc-handbook.md)
-- [AnomalyData](../content/anomalydata-soc-handbook.md)
-- [IncidentOverview](../content/incidentoverview-soc-handbook.md)
-- [InvestigationInsights](../content/investigationinsights-soc-handbook.md)
-- [SecurityOperationsEfficiency](../content/securityoperationsefficiency-soc-handbook.md)
-- [SentinelCentral](../content/sentinelcentral-soc-handbook.md)
+- [AnalyticsEfficiency](../content/soc-handbook-analyticsefficiency.md)
+- [AnomaliesVisualization](../content/soc-handbook-anomaliesvisualization.md)
+- [AnomalyData](../content/soc-handbook-anomalydata.md)
+- [IncidentOverview](../content/soc-handbook-incidentoverview.md)
+- [InvestigationInsights](../content/soc-handbook-investigationinsights.md)
+- [SecurityOperationsEfficiency](../content/soc-handbook-securityoperationsefficiency.md)
+- [SentinelCentral](../content/soc-handbook-sentinelcentral.md)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
-- [IncidentOverview](../content/incidentoverview-sentinelsoaressentials.md)
-- [IncidentTasksWorkbook](../content/incidenttasksworkbook-sentinelsoaressentials.md)
-- [SecurityOperationsEfficiency](../content/securityoperationsefficiency-sentinelsoaressentials.md)
+- [IncidentOverview](../content/sentinelsoaressentials-incidentoverview.md)
+- [IncidentTasksWorkbook](../content/sentinelsoaressentials-incidenttasksworkbook.md)
+- [SecurityOperationsEfficiency](../content/sentinelsoaressentials-securityoperationsefficiency.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
-- [ThreatIntelligence](../content/threatintelligence-threat-intelligence.md)
+- [ThreatIntelligence](../content/threat-intelligence-threatintelligence.md)
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-%28new%29.md):**
-- [ThreatIntelligenceNew](../content/threatintelligencenew-threat-intelligence-%28new%29.md)
+- [ThreatIntelligenceNew](../content/threat-intelligence-%28new%29-threatintelligencenew.md)
 
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
-- [DynamicThreatModeling&Response](../content/dynamicthreatmodeling&response-threatanalysis&response.md)
+- [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust%28tic3.0%29.md):**
-- [ZeroTrustTIC3](../content/zerotrusttic3-zerotrust%28tic3.0%29.md)
+- [ZeroTrustTIC3](../content/zerotrust%28tic3.0%29-zerotrusttic3.md)
 
 ---
 

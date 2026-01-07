@@ -52,34 +52,34 @@ This solution includes **13 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Server Oriented Cmdlet And User Oriented Cmdlet used](../content/7bce901b-9bc8-4948-8dfc-8f68878092d5.md) | High | Exfiltration, Persistence, Collection | - |
-| [VIP Mailbox manipulation](../content/5170c3c4-b8c9-485c-910d-a21d965ee181.md) | Medium | Exfiltration, Persistence, Collection | - |
+| [Server Oriented Cmdlet And User Oriented Cmdlet used](../content/microsoft-exchange-security---exchange-on-premises-server-oriented-cmdlet-and-user-oriented-cmdlet-used-7bce901b-9bc8-4948-8dfc-8f68878092d5.md) | High | Exfiltration, Persistence, Collection | - |
+| [VIP Mailbox manipulation](../content/microsoft-exchange-security---exchange-on-premises-vip-mailbox-manipulation-5170c3c4-b8c9-485c-910d-a21d965ee181.md) | Medium | Exfiltration, Persistence, Collection | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Microsoft Exchange Admin Activity](../content/microsoft-exchange-admin-activity-microsoft-exchange-security---exchange-on-premises.md) | - |
-| [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-least-privilege-with-rbac-microsoft-exchange-security---exchange-on-premises.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
-| [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-search-adminauditlog-microsoft-exchange-security---exchange-on-premises.md) | - |
-| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-review-microsoft-exchange-security---exchange-on-premises.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
+| [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-admin-activity.md) | - |
+| [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-least-privilege-with-rbac.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
+| [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-search-adminauditlog.md) | - |
+| [Microsoft Exchange Security Review](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-security-review.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeAdminAuditLogs](../content/f79a3a19-bb9f-4f06-a109-3e3ac2001be9.md) | - | - |
-| [ExchangeConfiguration](../content/f2ae482d-999c-452e-b108-31880aa99620.md) | - | - |
-| [ExchangeEnvironmentList](../content/fa748dc3-00ee-41cb-b54e-8acd56041b2a.md) | - | - |
-| [MESCheckVIP](../content/9f0e2122-f511-4e51-83a0-51fbd86d3121.md) | - | - |
-| [MESCompareDataOnPMRA](../content/0a0f4ea0-6b94-4420-892e-41ca985f2f01.md) | - | - |
+| [ExchangeAdminAuditLogs](../content/microsoft-exchange-security---exchange-on-premises-exchangeadminauditlogs-f79a3a19-bb9f-4f06-a109-3e3ac2001be9.md) | - | - |
+| [ExchangeConfiguration](../content/microsoft-exchange-security---exchange-on-premises-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620.md) | - | - |
+| [ExchangeEnvironmentList](../content/microsoft-exchange-security---exchange-on-premises-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a.md) | - | - |
+| [MESCheckVIP](../content/microsoft-exchange-security---exchange-on-premises-mescheckvip-9f0e2122-f511-4e51-83a0-51fbd86d3121.md) | - | - |
+| [MESCompareDataOnPMRA](../content/microsoft-exchange-security---exchange-on-premises-mescomparedataonpmra-0a0f4ea0-6b94-4420-892e-41ca985f2f01.md) | - | - |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeServicesMonitoring](../content/exchangeservicesmonitoring-microsoft-exchange-security---exchange-on-premises.md) | - | - |
-| [ExchangeVIP](../content/exchangevip-microsoft-exchange-security---exchange-on-premises.md) | - | - |
+| [ExchangeServicesMonitoring](../content/microsoft-exchange-security---exchange-on-premises-exchangeservicesmonitoring.md) | - | - |
+| [ExchangeVIP](../content/microsoft-exchange-security---exchange-on-premises-exchangevip.md) | - | - |
 
 ## Additional Documentation
 

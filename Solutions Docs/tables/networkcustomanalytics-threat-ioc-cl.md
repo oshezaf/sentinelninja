@@ -19,8 +19,8 @@ This table is used by the following solutions:
 ### Workbooks (2)
 
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
-- [NetworkSessionEssentials](../content/networksessionessentials-network-session-essentials.md)
-- [NetworkSessionEssentialsV2](../content/networksessionessentialsv2-network-session-essentials.md)
+- [NetworkSessionEssentials](../content/network-session-essentials-networksessionessentials.md)
+- [NetworkSessionEssentialsV2](../content/network-session-essentials-networksessionessentialsv2.md)
 
 ---
 

@@ -48,7 +48,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [HIPAACompliance](../content/hipaacompliance-hipaa-compliance.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`watchlist`](../tables/watchlist.md) |
+| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`watchlist`](../tables/watchlist.md) |
 
 ## Release Notes
 

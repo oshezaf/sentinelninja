@@ -24,17 +24,17 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Potential Ransomware activity related to Cobalt Strike](../content/4bd9ce9d-8586-4beb-8fdb-bd018cacbe7d.md)
+- [Potential Ransomware activity related to Cobalt Strike](../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-4bd9ce9d-8586-4beb-8fdb-bd018cacbe7d.md)
 
 ### Hunting Queries (6)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Alerts Related to Log4j Vulnerability](../content/e7791695-c103-4d20-a75a-53e90788616b.md)
-- [Devices with Log4j vulnerability alerts and additional other alert related context](../content/8fe88892-3a55-4220-9141-939a8e7a15c5.md)
-- [Microsoft Teams chat initiated by a suspicious external user](../content/b8eb3e2e-0f95-458e-b6d1-fe36a0ee8310.md)
-- [Potential Ransomware activity related to Cobalt Strike](../content/74cc0176-3900-440e-b179-45d6a957145a.md)
-- [URL click on ZAP email](../content/efe27064-6d35-4720-b7f5-e0326695613d.md)
-- [URLClick details based on malicious URL click alert](../content/03e61096-20d0-46eb-b8e0-a507dd00a19f.md)
+- [Alerts Related to Log4j Vulnerability](../content/microsoft-defender-xdr-alerts-related-to-log4j-vulnerability-e7791695-c103-4d20-a75a-53e90788616b.md)
+- [Devices with Log4j vulnerability alerts and additional other alert related context](../content/microsoft-defender-xdr-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-context-8fe88892-3a55-4220-9141-939a8e7a15c5.md)
+- [Microsoft Teams chat initiated by a suspicious external user](../content/microsoft-defender-xdr-microsoft-teams-chat-initiated-by-a-suspicious-external-user-b8eb3e2e-0f95-458e-b6d1-fe36a0ee8310.md)
+- [Potential Ransomware activity related to Cobalt Strike](../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-74cc0176-3900-440e-b179-45d6a957145a.md)
+- [URL click on ZAP email](../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d.md)
+- [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f.md)
 
 ---
 

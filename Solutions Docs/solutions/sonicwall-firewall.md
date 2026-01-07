@@ -40,20 +40,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/27f1a570-5f20-496b-88f6-a9aa2c5c9534.md) | Medium | InitialAccess, Execution, Persistence, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, Impact | - |
-| [SonicWall - Capture ATP Malicious File Detection](../content/3db9f99e-a459-41e0-8e02-8b332f5fcb2c.md) | Medium | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall---allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534.md) | Medium | InitialAccess, Execution, Persistence, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, Impact | - |
+| [SonicWall - Capture ATP Malicious File Detection](../content/sonicwall-firewall-sonicwall---capture-atp-malicious-file-detection-3db9f99e-a459-41e0-8e02-8b332f5fcb2c.md) | Medium | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Outbound SSH/SCP Connections](../content/dedb8fb9-3caa-4b00-ae88-1898eed78917.md) | Exfiltration | - |
+| [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917.md) | Exfiltration | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SonicWallFirewall](../content/sonicwallfirewall-sonicwall-firewall.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

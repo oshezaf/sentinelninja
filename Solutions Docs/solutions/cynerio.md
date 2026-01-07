@@ -40,24 +40,24 @@ This solution includes **8 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cynerio - Exploitation Attempt of IoT device](../content/3d853a88-92d2-4aec-a680-2bf7bb560c56.md) | High | LateralMovement | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
-| [Cynerio - IoT - Default password](../content/84e0ea1f-766d-4775-836a-c0c9cca05085.md) | High | CredentialAccess | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
-| [Cynerio - IoT - Weak password](../content/65db1346-6435-4079-bbf4-9a7113c98054.md) | High | CredentialAccess | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
-| [Cynerio - Medical device scanning](../content/211e9f49-3fca-4598-bc6e-e2c28d86e72c.md) | Medium | LateralMovement | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
-| [Cynerio - Suspicious Connection to External Address](../content/c0756978-baa6-4239-9174-bac1b1ca1a6a.md) | High | LateralMovement | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
+| [Cynerio - Exploitation Attempt of IoT device](../content/cynerio-cynerio---exploitation-attempt-of-iot-device-3d853a88-92d2-4aec-a680-2bf7bb560c56.md) | High | LateralMovement | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
+| [Cynerio - IoT - Default password](../content/cynerio-cynerio---iot---default-password-84e0ea1f-766d-4775-836a-c0c9cca05085.md) | High | CredentialAccess | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
+| [Cynerio - IoT - Weak password](../content/cynerio-cynerio---iot---weak-password-65db1346-6435-4079-bbf4-9a7113c98054.md) | High | CredentialAccess | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
+| [Cynerio - Medical device scanning](../content/cynerio-cynerio---medical-device-scanning-211e9f49-3fca-4598-bc6e-e2c28d86e72c.md) | Medium | LateralMovement | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
+| [Cynerio - Suspicious Connection to External Address](../content/cynerio-cynerio---suspicious-connection-to-external-address-c0756978-baa6-4239-9174-bac1b1ca1a6a.md) | High | LateralMovement | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CynerioOverviewWorkbook](../content/cyneriooverviewworkbook-cynerio.md) | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
+| [CynerioOverviewWorkbook](../content/cynerio-cyneriooverviewworkbook.md) | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CynerioEvent_Authentication](../content/fcd546b8-7f59-45d6-bcc8-2f705f97f5c6.md) | - | - |
-| [CynerioEvent_NetworkSession](../content/7e7530f5-00e7-4663-90c3-7965937e0ce5.md) | - | - |
+| [CynerioEvent_Authentication](../content/cynerio-cynerioevent-authentication-fcd546b8-7f59-45d6-bcc8-2f705f97f5c6.md) | - | - |
+| [CynerioEvent_NetworkSession](../content/cynerio-cynerioevent-networksession-7e7530f5-00e7-4663-90c3-7965937e0ce5.md) | - | - |
 
 ## Release Notes
 

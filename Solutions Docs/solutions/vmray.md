@@ -37,8 +37,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [VMRay Email Attachment Analyis](../content/vmray-email-attachment-analyis-vmray.md) | Submits a attachment or set of attachment associated with an office 365 email to VMRay for Analyis. | - |
-| [VMRay URL Analyis](../content/vmray-url-analyis-vmray.md) | Submits a url or set of urls associated with an incident to VMRay for Analyis. | - |
+| [VMRay Email Attachment Analyis](../content/vmray-vmray-email-attachment-analyis.md) | Submits a attachment or set of attachment associated with an office 365 email to VMRay for Analyis. | - |
+| [VMRay URL Analyis](../content/vmray-vmray-url-analyis.md) | Submits a url or set of urls associated with an incident to VMRay for Analyis. | - |
 
 ## Additional Documentation
 

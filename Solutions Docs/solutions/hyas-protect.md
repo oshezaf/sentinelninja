@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [HYASProtectDNS](../content/6e70b2c1-202d-4805-bddc-f0e08ef0fc4d.md) | - | - |
+| [HYASProtectDNS](../content/hyas-protect-hyasprotectdns-6e70b2c1-202d-4805-bddc-f0e08ef0fc4d.md) | - | - |
 
 ## Release Notes
 

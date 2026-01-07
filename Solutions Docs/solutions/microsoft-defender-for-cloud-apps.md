@@ -47,13 +47,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Linked Malicious Storage Artifacts](../content/b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d.md) | Medium | CommandAndControl, Exfiltration | [`StorageBlobLogs`](../tables/storagebloblogs.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Linked Malicious Storage Artifacts](../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d.md) | Medium | CommandAndControl, Exfiltration | [`StorageBlobLogs`](../tables/storagebloblogs.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftCloudAppSecurity](../content/microsoftcloudappsecurity-microsoft-defender-for-cloud-apps.md) | [`McasShadowItReporting`](../tables/mcasshadowitreporting.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity.md) | [`McasShadowItReporting`](../tables/mcasshadowitreporting.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ## Release Notes
 

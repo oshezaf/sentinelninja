@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ElasticAgentEvent](../content/abc32ce9-079e-49d6-a216-c17775f2aa4b.md) | - | - |
+| [ElasticAgentEvent](../content/elasticagent-elasticagentevent-abc32ce9-079e-49d6-a216-c17775f2aa4b.md) | - | - |
 
 ---
 

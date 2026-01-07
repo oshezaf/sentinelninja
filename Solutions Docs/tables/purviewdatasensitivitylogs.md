@@ -30,16 +30,16 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Microsoft Purview](../solutions/microsoft-purview.md):**
-- [Sensitive Data Discovered in the Last 24 Hours](../content/7ae7e8b0-07e9-43cb-b783-b04082f09060.md)
-- [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/79f296d9-e6e4-45dc-9ca7-1770955435fa.md)
+- [Sensitive Data Discovered in the Last 24 Hours](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-7ae7e8b0-07e9-43cb-b783-b04082f09060.md)
+- [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours---customized-79f296d9-e6e4-45dc-9ca7-1770955435fa.md)
 
 ### Workbooks (2)
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
-- [GDPRComplianceAndDataSecurity](../content/gdprcomplianceanddatasecurity-gdpr-compliance-&-data-security.md)
+- [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity.md)
 
 **In solution [Microsoft Purview](../solutions/microsoft-purview.md):**
-- [MicrosoftPurview](../content/microsoftpurview-microsoft-purview.md)
+- [MicrosoftPurview](../content/microsoft-purview-microsoftpurview.md)
 
 ## Resource Types
 

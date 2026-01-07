@@ -29,8 +29,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Intel 471 Malware Intelligence to Sentinel](../content/intel-471-malware-intelligence-to-sentinel-intel471.md) | This playbook ingests malware indicators from Intel 471's Titan or Verity API into Microsoft Sentine... | - |
-| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/[deprecated]-intel-471-malware-intelligence-to-graph-security-intel471.md) | This playbook ingests malware indicators from Intel 471's Titan API into Microsoft Graph Security as... | - |
+| [Intel 471 Malware Intelligence to Sentinel](../content/intel471-intel-471-malware-intelligence-to-sentinel.md) | This playbook ingests malware indicators from Intel 471's Titan or Verity API into Microsoft Sentine... | - |
+| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security.md) | This playbook ingests malware indicators from Intel 471's Titan API into Microsoft Graph Security as... | - |
 
 ## Release Notes
 

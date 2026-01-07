@@ -42,31 +42,31 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cloudflare - Bad client IP](../content/a7ce6135-9d55-4f14-b058-adc2e920a4fa.md) | Medium | InitialAccess | - |
-| [Cloudflare - Client request from country in blocklist](../content/40554544-6e4a-4413-8d14-bf2de939c5d9.md) | Medium | InitialAccess | - |
-| [Cloudflare - Empty user agent](../content/729c6d21-fad9-4a6a-9c7f-482393c95957.md) | Medium | InitialAccess | - |
-| [Cloudflare - Multiple error requests from single source](../content/ef877d68-755f-4cf1-ac1d-f336e395667c.md) | Low | InitialAccess | - |
-| [Cloudflare - Multiple user agents for single source](../content/fc50076a-0275-43d5-b9dd-38346c061f67.md) | Medium | InitialAccess | - |
-| [Cloudflare - Unexpected POST requests](../content/7313352a-09f6-4a84-88bd-6f17f1cbeb8f.md) | Medium | Persistence, CommandAndControl | - |
-| [Cloudflare - Unexpected URI](../content/dcb797cd-a4cd-4306-897b-7991f71d7e27.md) | Medium | InitialAccess | - |
-| [Cloudflare - Unexpected client request](../content/f32142b1-4bcb-45c0-92e4-2ddc18768522.md) | Medium | InitialAccess | - |
-| [Cloudflare - WAF Allowed threat](../content/f53fe2a9-96b5-454c-827e-cf1764a67fb0.md) | High | InitialAccess | - |
-| [Cloudflare - XSS probing pattern in request](../content/4d9d00b9-31a6-49e4-88c1-9e68277053ac.md) | Medium | InitialAccess | - |
+| [Cloudflare - Bad client IP](../content/cloudflare-cloudflare---bad-client-ip-a7ce6135-9d55-4f14-b058-adc2e920a4fa.md) | Medium | InitialAccess | - |
+| [Cloudflare - Client request from country in blocklist](../content/cloudflare-cloudflare---client-request-from-country-in-blocklist-40554544-6e4a-4413-8d14-bf2de939c5d9.md) | Medium | InitialAccess | - |
+| [Cloudflare - Empty user agent](../content/cloudflare-cloudflare---empty-user-agent-729c6d21-fad9-4a6a-9c7f-482393c95957.md) | Medium | InitialAccess | - |
+| [Cloudflare - Multiple error requests from single source](../content/cloudflare-cloudflare---multiple-error-requests-from-single-source-ef877d68-755f-4cf1-ac1d-f336e395667c.md) | Low | InitialAccess | - |
+| [Cloudflare - Multiple user agents for single source](../content/cloudflare-cloudflare---multiple-user-agents-for-single-source-fc50076a-0275-43d5-b9dd-38346c061f67.md) | Medium | InitialAccess | - |
+| [Cloudflare - Unexpected POST requests](../content/cloudflare-cloudflare---unexpected-post-requests-7313352a-09f6-4a84-88bd-6f17f1cbeb8f.md) | Medium | Persistence, CommandAndControl | - |
+| [Cloudflare - Unexpected URI](../content/cloudflare-cloudflare---unexpected-uri-dcb797cd-a4cd-4306-897b-7991f71d7e27.md) | Medium | InitialAccess | - |
+| [Cloudflare - Unexpected client request](../content/cloudflare-cloudflare---unexpected-client-request-f32142b1-4bcb-45c0-92e4-2ddc18768522.md) | Medium | InitialAccess | - |
+| [Cloudflare - WAF Allowed threat](../content/cloudflare-cloudflare---waf-allowed-threat-f53fe2a9-96b5-454c-827e-cf1764a67fb0.md) | High | InitialAccess | - |
+| [Cloudflare - XSS probing pattern in request](../content/cloudflare-cloudflare---xss-probing-pattern-in-request-4d9d00b9-31a6-49e4-88c1-9e68277053ac.md) | Medium | InitialAccess | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Cloudflare - Client TLS errors](../content/20ef3865-fd1f-44a4-ac8f-8d026cf954e0.md) | InitialAccess, Impact | - |
-| [Cloudflare - Client errors](../content/5d72f483-929a-498a-b840-dff7deed2116.md) | InitialAccess, Impact | - |
-| [Cloudflare - Files requested](../content/d72d0055-ae52-43b5-859e-db72e5ef183a.md) | InitialAccess | - |
-| [Cloudflare - Rare user agents](../content/a6f1938f-2f87-446c-83ac-624c277cfd32.md) | InitialAccess | - |
-| [Cloudflare - Server TLS errors](../content/e1a9febc-6b37-47e6-b5a7-0eec7638ba82.md) | InitialAccess, Impact | - |
-| [Cloudflare - Server errors](../content/7c8f0bed-b25c-4d48-9afa-c505e141bf4b.md) | InitialAccess, Impact | - |
-| [Cloudflare - Top Network rules](../content/eb7b88ab-47b1-483f-95b3-2b315d98d465.md) | InitialAccess | - |
-| [Cloudflare - Top WAF rules](../content/8a72cdb0-97d9-4547-9eca-1bdea2ccd796.md) | InitialAccess | - |
-| [Cloudflare - Unexpected countries](../content/9fc7d945-0e82-4664-aca0-dc121a5cd7be.md) | InitialAccess | - |
-| [Cloudflare - Unexpected edge response](../content/0be3ddc1-99db-4153-ba3c-2c1e5c82560d.md) | InitialAccess | - |
+| [Cloudflare - Client TLS errors](../content/cloudflare-cloudflare---client-tls-errors-20ef3865-fd1f-44a4-ac8f-8d026cf954e0.md) | InitialAccess, Impact | - |
+| [Cloudflare - Client errors](../content/cloudflare-cloudflare---client-errors-5d72f483-929a-498a-b840-dff7deed2116.md) | InitialAccess, Impact | - |
+| [Cloudflare - Files requested](../content/cloudflare-cloudflare---files-requested-d72d0055-ae52-43b5-859e-db72e5ef183a.md) | InitialAccess | - |
+| [Cloudflare - Rare user agents](../content/cloudflare-cloudflare---rare-user-agents-a6f1938f-2f87-446c-83ac-624c277cfd32.md) | InitialAccess | - |
+| [Cloudflare - Server TLS errors](../content/cloudflare-cloudflare---server-tls-errors-e1a9febc-6b37-47e6-b5a7-0eec7638ba82.md) | InitialAccess, Impact | - |
+| [Cloudflare - Server errors](../content/cloudflare-cloudflare---server-errors-7c8f0bed-b25c-4d48-9afa-c505e141bf4b.md) | InitialAccess, Impact | - |
+| [Cloudflare - Top Network rules](../content/cloudflare-cloudflare---top-network-rules-eb7b88ab-47b1-483f-95b3-2b315d98d465.md) | InitialAccess | - |
+| [Cloudflare - Top WAF rules](../content/cloudflare-cloudflare---top-waf-rules-8a72cdb0-97d9-4547-9eca-1bdea2ccd796.md) | InitialAccess | - |
+| [Cloudflare - Unexpected countries](../content/cloudflare-cloudflare---unexpected-countries-9fc7d945-0e82-4664-aca0-dc121a5cd7be.md) | InitialAccess | - |
+| [Cloudflare - Unexpected edge response](../content/cloudflare-cloudflare---unexpected-edge-response-0be3ddc1-99db-4153-ba3c-2c1e5c82560d.md) | InitialAccess | - |
 
 ### Workbooks
 
@@ -78,7 +78,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Cloudflare](../content/fa3baaab-10b6-452c-9d07-76aa3f1c592e.md) | - | - |
+| [Cloudflare](../content/cloudflare-cloudflare-fa3baaab-10b6-452c-9d07-76aa3f1c592e.md) | - | - |
 
 ## Release Notes
 

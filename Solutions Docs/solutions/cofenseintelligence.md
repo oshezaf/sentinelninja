@@ -39,7 +39,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CofenseIntelligenceThreatIndicators](../content/cofenseintelligencethreatindicators-cofenseintelligence.md) | [`Malware_Data_CL`](../tables/malware-data-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [CofenseIntelligenceThreatIndicators](../content/cofenseintelligence-cofenseintelligencethreatindicators.md) | [`Malware_Data_CL`](../tables/malware-data-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 
 ## Release Notes
 

@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Log4jImpactAssessment](../content/log4jimpactassessment-apache-log4j-vulnerability-detection.md)
+- [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment.md)
 
 ---
 

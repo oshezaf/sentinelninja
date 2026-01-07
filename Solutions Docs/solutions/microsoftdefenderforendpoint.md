@@ -48,48 +48,48 @@ This solution includes **27 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Aqua Blizzard AV hits - Feb 2022](../content/18dbdc22-b69f-4109-9e39-723d9465f45f.md) | High | Persistence | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Aqua Blizzard AV hits - Feb 2022](../content/microsoftdefenderforendpoint-aqua-blizzard-av-hits---feb-2022-18dbdc22-b69f-4109-9e39-723d9465f45f.md) | High | Persistence | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Probable AdFind Recon Tool Usage](../content/c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd.md) | Discovery | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
-| [SUNBURST suspicious SolarWinds child processes](../content/4a3073ac-7383-48a9-90a8-eb6716183a54.md) | Execution, Persistence | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
+| [Probable AdFind Recon Tool Usage](../content/microsoftdefenderforendpoint-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd.md) | Discovery | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
+| [SUNBURST suspicious SolarWinds child processes](../content/microsoftdefenderforendpoint-sunburst-suspicious-solarwinds-child-processes-4a3073ac-7383-48a9-90a8-eb6716183a54.md) | Execution, Persistence | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Isolate MDE Machine - Alert Triggered](../content/isolate-mde-machine---alert-triggered-microsoftdefenderforendpoint.md) | This playbook will isolate (full) the machine in Microsoft Defender for Endpoint. It is triggered by... | - |
-| [Isolate MDE Machine using entity trigger](../content/isolate-mde-machine-using-entity-trigger-microsoftdefenderforendpoint.md) | This playbook will isolate Microsoft Defender for Endpoint MDE device using entity trigger. It will ... | - |
-| [Isolate endpoint - MDE - Incident Triggered](../content/isolate-endpoint---mde---incident-triggered-microsoftdefenderforendpoint.md) | This playbook will isolate (full) the machine in Microsoft Defender for Endpoint. It is triggered by... | - |
-| [Restrict MDE App Execution - Alert Triggered](../content/restrict-mde-app-execution---alert-triggered-microsoftdefenderforendpoint.md) | This playbook will restrict app execution on the machine in Microsoft Defender for Endpoint. | - |
-| [Restrict MDE App Execution - Incident Triggered](../content/restrict-mde-app-execution---incident-triggered-microsoftdefenderforendpoint.md) | This playbook will restrict app execution on the machine in Microsoft Defender for Endpoint. | - |
-| [Restrict MDE Domain - Alert Triggered](../content/restrict-mde-domain---alert-triggered-microsoftdefenderforendpoint.md) | This play book will take DNS entities and generate alert and block threat indicators for each domain... | - |
-| [Restrict MDE Domain - Entity Triggered](../content/restrict-mde-domain---entity-triggered-microsoftdefenderforendpoint.md) | This playbook will take the triggering entity and generate an alert and block threat indicator for t... | - |
-| [Restrict MDE Domain - Incident Triggered](../content/restrict-mde-domain---incident-triggered-microsoftdefenderforendpoint.md) | This play book will take DNS entities and generate alert and block threat indicators for each domain... | - |
-| [Restrict MDE FileHash - Alert Triggered](../content/restrict-mde-filehash---alert-triggered-microsoftdefenderforendpoint.md) | This playbook will take FileHash entities and generate alert and block threat indicators for each fi... | - |
-| [Restrict MDE FileHash - Entity Triggered](../content/restrict-mde-filehash---entity-triggered-microsoftdefenderforendpoint.md) | This playbook will take the triggering FileHash entity and generate an alert and block threat indica... | - |
-| [Restrict MDE FileHash - Incident Triggered](../content/restrict-mde-filehash---incident-triggered-microsoftdefenderforendpoint.md) | This playbook will take FileHash entities and generate alert and block threat indicators for each fi... | - |
-| [Restrict MDE Ip Address - Alert Triggered](../content/restrict-mde-ip-address---alert-triggered-microsoftdefenderforendpoint.md) | This playbook will take IP entities and generate alert and block threat indicators for each IP in MD... | - |
-| [Restrict MDE Ip Address - Entity Triggered](../content/restrict-mde-ip-address---entity-triggered-microsoftdefenderforendpoint.md) | This playbook will and generate alert and block threat indicators for the IP entity in MDE for 90 da... | - |
-| [Restrict MDE Ip Address - Incident Triggered](../content/restrict-mde-ip-address---incident-triggered-microsoftdefenderforendpoint.md) | This playbook will take IP entities and generate alert and block threat indicators for each IP in MD... | - |
-| [Restrict MDE URL - Entity Triggered](../content/restrict-mde-url---entity-triggered-microsoftdefenderforendpoint.md) | This playbook will take the triggering entity and generate an alert and block threat indicator for t... | - |
-| [Restrict MDE Url - Alert Triggered](../content/restrict-mde-url---alert-triggered-microsoftdefenderforendpoint.md) | This playbook will take Url entities and generate alert and block threat indicators for each IP in M... | - |
-| [Restrict MDE Url - Incident Triggered](../content/restrict-mde-url---incident-triggered-microsoftdefenderforendpoint.md) | This playbook will take Url entities and generate alert and block threat indicators for each IP in M... | - |
-| [Run MDE Antivirus - Alert Triggered](../content/run-mde-antivirus---alert-triggered-microsoftdefenderforendpoint.md) | This playbook will run a antivirus (full) scan on the machine in Microsoft Defender for Endpoint. It... | - |
-| [Run MDE Antivirus - Incident Triggered](../content/run-mde-antivirus---incident-triggered-microsoftdefenderforendpoint.md) | This playbook will run a antivirus (full) scan on the machine in Microsoft Defender for Endpoint. It... | - |
-| [Unisolate MDE Machine - Alert Triggered](../content/unisolate-mde-machine---alert-triggered-microsoftdefenderforendpoint.md) | This playbook will release a machine from isolation in Microsoft Defender for Endpoint. It is trigge... | - |
-| [Unisolate MDE Machine - Incident Triggered](../content/unisolate-mde-machine---incident-triggered-microsoftdefenderforendpoint.md) | This playbook will release a machine from isolation in Microsoft Defender for Endpoint. It is trigge... | - |
-| [Unisolate MDE Machine using entity trigger](../content/unisolate-mde-machine-using-entity-trigger-microsoftdefenderforendpoint.md) | This playbook will unisolate Microsoft Defender for Endpoint (MDE) device using entity trigger. | - |
+| [Isolate MDE Machine - Alert Triggered](../content/microsoftdefenderforendpoint-isolate-mde-machine---alert-triggered.md) | This playbook will isolate (full) the machine in Microsoft Defender for Endpoint. It is triggered by... | - |
+| [Isolate MDE Machine using entity trigger](../content/microsoftdefenderforendpoint-isolate-mde-machine-using-entity-trigger.md) | This playbook will isolate Microsoft Defender for Endpoint MDE device using entity trigger. It will ... | - |
+| [Isolate endpoint - MDE - Incident Triggered](../content/microsoftdefenderforendpoint-isolate-endpoint---mde---incident-triggered.md) | This playbook will isolate (full) the machine in Microsoft Defender for Endpoint. It is triggered by... | - |
+| [Restrict MDE App Execution - Alert Triggered](../content/microsoftdefenderforendpoint-restrict-mde-app-execution---alert-triggered.md) | This playbook will restrict app execution on the machine in Microsoft Defender for Endpoint. | - |
+| [Restrict MDE App Execution - Incident Triggered](../content/microsoftdefenderforendpoint-restrict-mde-app-execution---incident-triggered.md) | This playbook will restrict app execution on the machine in Microsoft Defender for Endpoint. | - |
+| [Restrict MDE Domain - Alert Triggered](../content/microsoftdefenderforendpoint-restrict-mde-domain---alert-triggered.md) | This play book will take DNS entities and generate alert and block threat indicators for each domain... | - |
+| [Restrict MDE Domain - Entity Triggered](../content/microsoftdefenderforendpoint-restrict-mde-domain---entity-triggered.md) | This playbook will take the triggering entity and generate an alert and block threat indicator for t... | - |
+| [Restrict MDE Domain - Incident Triggered](../content/microsoftdefenderforendpoint-restrict-mde-domain---incident-triggered.md) | This play book will take DNS entities and generate alert and block threat indicators for each domain... | - |
+| [Restrict MDE FileHash - Alert Triggered](../content/microsoftdefenderforendpoint-restrict-mde-filehash---alert-triggered.md) | This playbook will take FileHash entities and generate alert and block threat indicators for each fi... | - |
+| [Restrict MDE FileHash - Entity Triggered](../content/microsoftdefenderforendpoint-restrict-mde-filehash---entity-triggered.md) | This playbook will take the triggering FileHash entity and generate an alert and block threat indica... | - |
+| [Restrict MDE FileHash - Incident Triggered](../content/microsoftdefenderforendpoint-restrict-mde-filehash---incident-triggered.md) | This playbook will take FileHash entities and generate alert and block threat indicators for each fi... | - |
+| [Restrict MDE Ip Address - Alert Triggered](../content/microsoftdefenderforendpoint-restrict-mde-ip-address---alert-triggered.md) | This playbook will take IP entities and generate alert and block threat indicators for each IP in MD... | - |
+| [Restrict MDE Ip Address - Entity Triggered](../content/microsoftdefenderforendpoint-restrict-mde-ip-address---entity-triggered.md) | This playbook will and generate alert and block threat indicators for the IP entity in MDE for 90 da... | - |
+| [Restrict MDE Ip Address - Incident Triggered](../content/microsoftdefenderforendpoint-restrict-mde-ip-address---incident-triggered.md) | This playbook will take IP entities and generate alert and block threat indicators for each IP in MD... | - |
+| [Restrict MDE URL - Entity Triggered](../content/microsoftdefenderforendpoint-restrict-mde-url---entity-triggered.md) | This playbook will take the triggering entity and generate an alert and block threat indicator for t... | - |
+| [Restrict MDE Url - Alert Triggered](../content/microsoftdefenderforendpoint-restrict-mde-url---alert-triggered.md) | This playbook will take Url entities and generate alert and block threat indicators for each IP in M... | - |
+| [Restrict MDE Url - Incident Triggered](../content/microsoftdefenderforendpoint-restrict-mde-url---incident-triggered.md) | This playbook will take Url entities and generate alert and block threat indicators for each IP in M... | - |
+| [Run MDE Antivirus - Alert Triggered](../content/microsoftdefenderforendpoint-run-mde-antivirus---alert-triggered.md) | This playbook will run a antivirus (full) scan on the machine in Microsoft Defender for Endpoint. It... | - |
+| [Run MDE Antivirus - Incident Triggered](../content/microsoftdefenderforendpoint-run-mde-antivirus---incident-triggered.md) | This playbook will run a antivirus (full) scan on the machine in Microsoft Defender for Endpoint. It... | - |
+| [Unisolate MDE Machine - Alert Triggered](../content/microsoftdefenderforendpoint-unisolate-mde-machine---alert-triggered.md) | This playbook will release a machine from isolation in Microsoft Defender for Endpoint. It is trigge... | - |
+| [Unisolate MDE Machine - Incident Triggered](../content/microsoftdefenderforendpoint-unisolate-mde-machine---incident-triggered.md) | This playbook will release a machine from isolation in Microsoft Defender for Endpoint. It is trigge... | - |
+| [Unisolate MDE Machine using entity trigger](../content/microsoftdefenderforendpoint-unisolate-mde-machine-using-entity-trigger.md) | This playbook will unisolate Microsoft Defender for Endpoint (MDE) device using entity trigger. | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AssignedIPAddress](../content/a06da838-8c56-4eed-ac1a-097bdfab5e9b.md) | - | - |
-| [Devicefromip](../content/788c6182-85d9-4747-8096-6a971f0e9476.md) | - | - |
+| [AssignedIPAddress](../content/microsoftdefenderforendpoint-assignedipaddress-a06da838-8c56-4eed-ac1a-097bdfab5e9b.md) | - | - |
+| [Devicefromip](../content/microsoftdefenderforendpoint-devicefromip-788c6182-85d9-4747-8096-6a971f0e9476.md) | - | - |
 
 ## Release Notes
 

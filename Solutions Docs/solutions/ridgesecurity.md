@@ -38,8 +38,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Critical Risks](../content/1eebfaf3-40e1-4bc2-9f42-049b7b8ceb60.md) | High | Execution, InitialAccess, PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Vulerabilities](../content/d096643d-6789-4c74-8893-dd3fc8a94069.md) | High | Execution, InitialAccess, PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Critical Risks](../content/ridgesecurity-critical-risks-1eebfaf3-40e1-4bc2-9f42-049b7b8ceb60.md) | High | Execution, InitialAccess, PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Vulerabilities](../content/ridgesecurity-vulerabilities-d096643d-6789-4c74-8893-dd3fc8a94069.md) | High | Execution, InitialAccess, PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

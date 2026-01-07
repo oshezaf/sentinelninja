@@ -44,7 +44,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OneIdentity_Safeguard](../content/e1818ade-7a4e-4bdb-9bf6-f0e980c6eb77.md) | - | - |
+| [OneIdentity_Safeguard](../content/oneidentity-oneidentity-safeguard-e1818ade-7a4e-4bdb-9bf6-f0e980c6eb77.md) | - | - |
 
 ---
 

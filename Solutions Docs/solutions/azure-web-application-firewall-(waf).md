@@ -40,25 +40,25 @@ This solution includes **14 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [A potentially malicious web request was executed against a web server](../content/46ac55ae-47b8-414a-8f94-89ccd1962178.md) | Medium | InitialAccess | [`AGWAccessLogs`](../tables/agwaccesslogs.md)<br>[`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
-| [AFD WAF - Code Injection](../content/ded8168e-c806-4772-af30-10576e0a7529.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [AFD WAF - Path Traversal Attack](../content/a4d99328-e4e6-493d-b0d5-57e6f9ddae77.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation, Discovery | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [App GW WAF - Code Injection](../content/912a18fc-6165-446b-8740-81ae6c3f75ee.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
-| [App GW WAF - Path Traversal Attack](../content/b6c3a8a6-d22c-4882-9c57-abc01690938b.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation, Discovery | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
-| [App Gateway WAF - SQLi Detection](../content/bdb2cd63-99f2-472e-b1b9-acba473b6744.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
-| [App Gateway WAF - Scanner Detection](../content/9b8dd8fd-f192-42eb-84f6-541920400a7a.md) | High | DefenseEvasion, Execution, InitialAccess, Reconnaissance, Discovery | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
-| [App Gateway WAF - XSS Detection](../content/1c7ff502-2ad4-4970-9d29-9210c6753138.md) | High | InitialAccess, Execution | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
-| [Front Door Premium WAF - SQLi Detection](../content/16da3a2a-af29-48a0-8606-d467c180fe18.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [Front Door Premium WAF - XSS Detection](../content/b7643904-5081-4920-917e-a559ddc3448f.md) | High | InitialAccess, Execution | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [A potentially malicious web request was executed against a web server](../content/azure-web-application-firewall-%28waf%29-a-potentially-malicious-web-request-was-executed-against-a-web-server-46ac55ae-47b8-414a-8f94-89ccd1962178.md) | Medium | InitialAccess | [`AGWAccessLogs`](../tables/agwaccesslogs.md)<br>[`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
+| [AFD WAF - Code Injection](../content/azure-web-application-firewall-%28waf%29-afd-waf---code-injection-ded8168e-c806-4772-af30-10576e0a7529.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [AFD WAF - Path Traversal Attack](../content/azure-web-application-firewall-%28waf%29-afd-waf---path-traversal-attack-a4d99328-e4e6-493d-b0d5-57e6f9ddae77.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation, Discovery | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [App GW WAF - Code Injection](../content/azure-web-application-firewall-%28waf%29-app-gw-waf---code-injection-912a18fc-6165-446b-8740-81ae6c3f75ee.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
+| [App GW WAF - Path Traversal Attack](../content/azure-web-application-firewall-%28waf%29-app-gw-waf---path-traversal-attack-b6c3a8a6-d22c-4882-9c57-abc01690938b.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation, Discovery | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
+| [App Gateway WAF - SQLi Detection](../content/azure-web-application-firewall-%28waf%29-app-gateway-waf---sqli-detection-bdb2cd63-99f2-472e-b1b9-acba473b6744.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
+| [App Gateway WAF - Scanner Detection](../content/azure-web-application-firewall-%28waf%29-app-gateway-waf---scanner-detection-9b8dd8fd-f192-42eb-84f6-541920400a7a.md) | High | DefenseEvasion, Execution, InitialAccess, Reconnaissance, Discovery | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
+| [App Gateway WAF - XSS Detection](../content/azure-web-application-firewall-%28waf%29-app-gateway-waf---xss-detection-1c7ff502-2ad4-4970-9d29-9210c6753138.md) | High | InitialAccess, Execution | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) |
+| [Front Door Premium WAF - SQLi Detection](../content/azure-web-application-firewall-%28waf%29-front-door-premium-waf---sqli-detection-16da3a2a-af29-48a0-8606-d467c180fe18.md) | High | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Front Door Premium WAF - XSS Detection](../content/azure-web-application-firewall-%28waf%29-front-door-premium-waf---xss-detection-b7643904-5081-4920-917e-a559ddc3448f.md) | High | InitialAccess, Execution | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WebApplicationFirewallFirewallEvents](../content/webapplicationfirewallfirewallevents-azure-web-application-firewall-%28waf%29.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [WebApplicationFirewallGatewayAccessEvents](../content/webapplicationfirewallgatewayaccessevents-azure-web-application-firewall-%28waf%29.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [WebApplicationFirewallOverview](../content/webapplicationfirewalloverview-azure-web-application-firewall-%28waf%29.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [WebApplicationFirewallWAFTypeEvents](../content/webapplicationfirewallwaftypeevents-azure-web-application-firewall-%28waf%29.md) | - |
+| [WebApplicationFirewallFirewallEvents](../content/azure-web-application-firewall-%28waf%29-webapplicationfirewallfirewallevents.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [WebApplicationFirewallGatewayAccessEvents](../content/azure-web-application-firewall-%28waf%29-webapplicationfirewallgatewayaccessevents.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [WebApplicationFirewallOverview](../content/azure-web-application-firewall-%28waf%29-webapplicationfirewalloverview.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [WebApplicationFirewallWAFTypeEvents](../content/azure-web-application-firewall-%28waf%29-webapplicationfirewallwaftypeevents.md) | - |
 
 ## Release Notes
 

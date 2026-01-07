@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [McAfeeNSPEvent](../content/4f808c27-859d-44d2-a3ed-33fe6e8c18e6.md) | - | - |
+| [McAfeeNSPEvent](../content/mcafee-network-security-platform-mcafeenspevent-4f808c27-859d-44d2-a3ed-33fe6e8c18e6.md) | - | - |
 
 ## Release Notes
 

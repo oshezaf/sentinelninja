@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IvantiUEMEvent](../content/0a1bef4b-5f78-4b1a-927d-e4383e0f741e.md) | - | - |
+| [IvantiUEMEvent](../content/ivanti-unified-endpoint-management-ivantiuemevent-0a1bef4b-5f78-4b1a-927d-e4383e0f741e.md) | - | - |
 
 ## Release Notes
 

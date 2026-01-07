@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [NXLog_parsed_AIX_Audit_view](../content/1bae8e14-6819-4d26-b91d-019b078a80a9.md) | - | - |
+| [NXLog_parsed_AIX_Audit_view](../content/nxlogaixaudit-nxlog-parsed-aix-audit-view-1bae8e14-6819-4d26-b91d-019b078a80a9.md) | - | - |
 
 ---
 

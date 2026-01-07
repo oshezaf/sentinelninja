@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [archTIS](../solutions/archtis.md):**
-- [NucleusCyber_NCProtect_Workbook](../content/nucleuscyber-ncprotect-workbook-archtis.md)
+- [NucleusCyber_NCProtect_Workbook](../content/archtis-nucleuscyber-ncprotect-workbook.md)
 
 ---
 

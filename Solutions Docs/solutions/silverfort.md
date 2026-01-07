@@ -38,16 +38,16 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Silverfort - Certifried Incident](../content/9ae540c9-c926-4100-8f07-1eac22596292.md) | High | PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Silverfort - Log4Shell Incident](../content/d6abed70-4043-46da-9304-a98f3446fa5f.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Silverfort - NoPacBreach Incident](../content/bdfd2c45-10a0-44e7-a90a-ba7b6bdd9ff2.md) | High | PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Silverfort - UserBruteForce Incident](../content/46ff357b-9e98-465b-9e45-cd52fa4a7522.md) | High | CredentialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Silverfort - Certifried Incident](../content/silverfort-silverfort---certifried-incident-9ae540c9-c926-4100-8f07-1eac22596292.md) | High | PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Silverfort - Log4Shell Incident](../content/silverfort-silverfort---log4shell-incident-d6abed70-4043-46da-9304-a98f3446fa5f.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Silverfort - NoPacBreach Incident](../content/silverfort-silverfort---nopacbreach-incident-bdfd2c45-10a0-44e7-a90a-ba7b6bdd9ff2.md) | High | PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Silverfort - UserBruteForce Incident](../content/silverfort-silverfort---userbruteforce-incident-46ff357b-9e98-465b-9e45-cd52fa4a7522.md) | High | CredentialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SilverfortWorkbook](../content/silverfortworkbook-silverfort.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [SilverfortWorkbook](../content/silverfort-silverfortworkbook.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

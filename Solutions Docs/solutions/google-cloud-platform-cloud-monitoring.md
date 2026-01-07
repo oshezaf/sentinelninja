@@ -39,7 +39,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GCP_MONITOR](../content/d2972be4-978f-41fb-88e7-e0c10569a49f.md) | - | - |
+| [GCP_MONITOR](../content/google-cloud-platform-cloud-monitoring-gcp-monitor-d2972be4-978f-41fb-88e7-e0c10569a49f.md) | - | - |
 
 ## Release Notes
 

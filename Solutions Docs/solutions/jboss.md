@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [JBossEvent](../content/a79c1549-b5d7-434e-8e6c-da5357e2f439.md) | - | - |
+| [JBossEvent](../content/jboss-jbossevent-a79c1549-b5d7-434e-8e6c-da5357e2f439.md) | - | - |
 
 ## Release Notes
 

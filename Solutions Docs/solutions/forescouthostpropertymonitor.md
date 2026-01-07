@@ -41,19 +41,19 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Forescout-DNS_Sniff_Event_Monitor](../content/d272e277-f285-4dbc-ae2d-7f65ba64a79e.md) | Medium | - | [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) |
+| [Forescout-DNS_Sniff_Event_Monitor](../content/forescouthostpropertymonitor-forescout-dns-sniff-event-monitor-d272e277-f285-4dbc-ae2d-7f65ba64a79e.md) | Medium | - | [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ForescoutHostPropertyMonitorWorkbook](../content/forescouthostpropertymonitorworkbook-forescouthostpropertymonitor.md) | [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md)<br>[`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md)<br>[`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) |
+| [ForescoutHostPropertyMonitorWorkbook](../content/forescouthostpropertymonitor-forescouthostpropertymonitorworkbook.md) | [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md)<br>[`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md)<br>[`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Forescout-DNS_Sniff_Event_Playbook](../content/forescout-dns-sniff-event-playbook-forescouthostpropertymonitor.md) | This playbook will update incident with action to perform on endpoint | - |
+| [Forescout-DNS_Sniff_Event_Playbook](../content/forescouthostpropertymonitor-forescout-dns-sniff-event-playbook.md) | This playbook will update incident with action to perform on endpoint | - |
 
 ## Release Notes
 

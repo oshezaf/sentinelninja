@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WithSecureTopComputersByInfections](../content/withsecuretopcomputersbyinfections-withsecureelementsviafunction.md) | [`WsSecurityEvents_CL`](../tables/wssecurityevents-cl.md) |
+| [WithSecureTopComputersByInfections](../content/withsecureelementsviafunction-withsecuretopcomputersbyinfections.md) | [`WsSecurityEvents_CL`](../tables/wssecurityevents-cl.md) |
 
 ## Release Notes
 

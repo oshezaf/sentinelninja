@@ -19,13 +19,13 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Eset Security Management Center](../solutions/eset-security-management-center.md):**
-- [Threats detected by Eset](../content/2d8a60aa-c15e-442e-9ce3-ee924889d2a6.md)
-- [Web sites blocked by Eset](../content/84ad2f8a-b64c-49bc-b669-bdb4fd3071e9.md)
+- [Threats detected by Eset](../content/eset-security-management-center-threats-detected-by-eset-2d8a60aa-c15e-442e-9ce3-ee924889d2a6.md)
+- [Web sites blocked by Eset](../content/eset-security-management-center-web-sites-blocked-by-eset-84ad2f8a-b64c-49bc-b669-bdb4fd3071e9.md)
 
 ### Workbooks (1)
 
 **In solution [Eset Security Management Center](../solutions/eset-security-management-center.md):**
-- [esetSMCWorkbook](../content/esetsmcworkbook-eset-security-management-center.md)
+- [esetSMCWorkbook](../content/eset-security-management-center-esetsmcworkbook.md)
 
 ---
 

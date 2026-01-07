@@ -38,7 +38,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OSSECEvent](../content/3a6b3b0a-ae18-457c-8426-f7f0b3af8a43.md) | - | - |
+| [OSSECEvent](../content/ossec-ossecevent-3a6b3b0a-ae18-457c-8426-f7f0b3af8a43.md) | - | - |
 
 ## Release Notes
 

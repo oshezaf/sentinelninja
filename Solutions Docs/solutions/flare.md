@@ -39,27 +39,27 @@ This solution includes **11 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Flare Cloud bucket result](../content/9cb7c337-f172-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
-| [Flare Darkweb result](../content/9cb7c337-f173-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
-| [Flare Google Dork result found](../content/9cb7c337-f174-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
-| [Flare Host result](../content/9cb7c337-f175-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
-| [Flare Infected Device](../content/9cb7c337-f176-4af6-b0e8-b6b7552d762d.md) | Medium | CredentialAccess | [`Firework_CL`](../tables/firework-cl.md) |
-| [Flare Leaked Credentials](../content/9cb7c337-f170-4af6-b0e8-b6b7552d762d.md) | Medium | CredentialAccess | [`Firework_CL`](../tables/firework-cl.md) |
-| [Flare Paste result](../content/9cb7c337-f177-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
-| [Flare SSL Certificate result](../content/9cb7c337-f179-4af6-b0e8-b6b7552d762d.md) | Medium | ResourceDevelopment | [`Firework_CL`](../tables/firework-cl.md) |
-| [Flare Source Code found](../content/9cb7c337-f178-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare Cloud bucket result](../content/flare-flare-cloud-bucket-result-9cb7c337-f172-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare Darkweb result](../content/flare-flare-darkweb-result-9cb7c337-f173-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare Google Dork result found](../content/flare-flare-google-dork-result-found-9cb7c337-f174-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare Host result](../content/flare-flare-host-result-9cb7c337-f175-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare Infected Device](../content/flare-flare-infected-device-9cb7c337-f176-4af6-b0e8-b6b7552d762d.md) | Medium | CredentialAccess | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare Leaked Credentials](../content/flare-flare-leaked-credentials-9cb7c337-f170-4af6-b0e8-b6b7552d762d.md) | Medium | CredentialAccess | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare Paste result](../content/flare-flare-paste-result-9cb7c337-f177-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare SSL Certificate result](../content/flare-flare-ssl-certificate-result-9cb7c337-f179-4af6-b0e8-b6b7552d762d.md) | Medium | ResourceDevelopment | [`Firework_CL`](../tables/firework-cl.md) |
+| [Flare Source Code found](../content/flare-flare-source-code-found-9cb7c337-f178-4af6-b0e8-b6b7552d762d.md) | Medium | Reconnaissance | [`Firework_CL`](../tables/firework-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [FlareSystemsFireworkOverview](../content/flaresystemsfireworkoverview-flare.md) | [`Firework_CL`](../tables/firework-cl.md) |
+| [FlareSystemsFireworkOverview](../content/flare-flaresystemsfireworkoverview.md) | [`Firework_CL`](../tables/firework-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [credential-warning](../content/credential-warning-flare.md) | This playbook monitors all data received from Firework looking for leaked credentials (email:passwor... | - |
+| [credential-warning](../content/flare-credential-warning.md) | This playbook monitors all data received from Firework looking for leaked credentials (email:passwor... | - |
 
 ---
 

@@ -29,9 +29,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create And Update ServiceNow Record](../content/create-and-update-servicenow-record-servicenow.md) | This playbook will create or update incident in ServiceNow. When incident is created, playbook will ... | - |
-| [Create ServiceNow record - Alert trigger](../content/create-servicenow-record---alert-trigger-servicenow.md) | This playbook will open a Service Now incident when a new incident is opened in Microsoft Sentinel. | - |
-| [Create ServiceNow record - Incident trigger](../content/create-servicenow-record---incident-trigger-servicenow.md) | This playbook will open a Service Now incident when a new incident is opened in Microsoft Sentinel. | - |
+| [Create And Update ServiceNow Record](../content/servicenow-create-and-update-servicenow-record.md) | This playbook will create or update incident in ServiceNow. When incident is created, playbook will ... | - |
+| [Create ServiceNow record - Alert trigger](../content/servicenow-create-servicenow-record---alert-trigger.md) | This playbook will open a Service Now incident when a new incident is opened in Microsoft Sentinel. | - |
+| [Create ServiceNow record - Incident trigger](../content/servicenow-create-servicenow-record---incident-trigger.md) | This playbook will open a Service Now incident when a new incident is opened in Microsoft Sentinel. | - |
 
 ---
 

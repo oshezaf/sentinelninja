@@ -37,7 +37,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftPowerBIActivityWorkbook](../content/microsoftpowerbiactivityworkbook-microsoft-powerbi.md) | [`PowerBIActivity`](../tables/powerbiactivity.md) |
+| [MicrosoftPowerBIActivityWorkbook](../content/microsoft-powerbi-microsoftpowerbiactivityworkbook.md) | [`PowerBIActivity`](../tables/powerbiactivity.md) |
 
 ---
 

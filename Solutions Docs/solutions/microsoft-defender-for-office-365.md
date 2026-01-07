@@ -48,17 +48,17 @@ This solution includes **6 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftDefenderForOffice365](../content/microsoftdefenderforoffice365-microsoft-defender-for-office-365.md) | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md) |
+| [MicrosoftDefenderForOffice365](../content/microsoft-defender-for-office-365-microsoftdefenderforoffice365.md) | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [O365 - Block Malware file extensions](../content/o365---block-malware-file-extensions-microsoft-defender-for-office-365.md) | This Playbook Provides the automation on blocking the suspicious/malicious file attachment on mails | - |
-| [O365 - Block Sender Entity Trigger](../content/o365---block-sender-entity-trigger-microsoft-defender-for-office-365.md) | This Playbook Provides the automation on blocking the suspicious/malicious sender | - |
-| [O365 - Block Spam Domain](../content/o365---block-spam-domain-microsoft-defender-for-office-365.md) | This Playbook Provides the automation on blocking the suspicious/malicious attacker Domains | - |
-| [O365 - Block Suspicious Sender](../content/o365---block-suspicious-sender-microsoft-defender-for-office-365.md) | This Playbook Provides the automation on blocking the suspicious/malicious senders | - |
-| [O365 - Delete All Malicious Inbox Rule](../content/o365---delete-all-malicious-inbox-rule-microsoft-defender-for-office-365.md) | This Playbook provides the automation on deleting all the suspicious/malicious Inbox Rules from Prov... | - |
+| [O365 - Block Malware file extensions](../content/microsoft-defender-for-office-365-o365---block-malware-file-extensions.md) | This Playbook Provides the automation on blocking the suspicious/malicious file attachment on mails | - |
+| [O365 - Block Sender Entity Trigger](../content/microsoft-defender-for-office-365-o365---block-sender-entity-trigger.md) | This Playbook Provides the automation on blocking the suspicious/malicious sender | - |
+| [O365 - Block Spam Domain](../content/microsoft-defender-for-office-365-o365---block-spam-domain.md) | This Playbook Provides the automation on blocking the suspicious/malicious attacker Domains | - |
+| [O365 - Block Suspicious Sender](../content/microsoft-defender-for-office-365-o365---block-suspicious-sender.md) | This Playbook Provides the automation on blocking the suspicious/malicious senders | - |
+| [O365 - Delete All Malicious Inbox Rule](../content/microsoft-defender-for-office-365-o365---delete-all-malicious-inbox-rule.md) | This Playbook provides the automation on deleting all the suspicious/malicious Inbox Rules from Prov... | - |
 
 ## Release Notes
 

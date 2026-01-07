@@ -29,8 +29,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Retrieve Alert from Microsoft Sentinel and Trigger a Blink Workflow via Webhook](../content/retrieve-alert-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook-blinkops.md) | Send a webhook request to a Blink workflow trigger whenever a new alert is created in Microsoft Sent... | - |
-| [Retrieve Incident from Microsoft Sentinel and Trigger a Blink Workflow via Webhook](../content/retrieve-incident-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook-blinkops.md) | Send a webhook request to a Blink workflow trigger whenever a new Incident is created in Microsoft S... | - |
+| [Retrieve Alert from Microsoft Sentinel and Trigger a Blink Workflow via Webhook](../content/blinkops-retrieve-alert-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook.md) | Send a webhook request to a Blink workflow trigger whenever a new alert is created in Microsoft Sent... | - |
+| [Retrieve Incident from Microsoft Sentinel and Trigger a Blink Workflow via Webhook](../content/blinkops-retrieve-incident-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook.md) | Send a webhook request to a Blink workflow trigger whenever a new Incident is created in Microsoft S... | - |
 
 ## Release Notes
 
