@@ -10,7 +10,11 @@ Reference for SecurityAlert table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityalert) |
 
-## Solutions (39)
+## Additional Information
+
+📖 **Related Documentation:** [Security alert schema reference](https://learn.microsoft.com/en-us/azure/sentinel/security-alert-schema) - Describes the SecurityAlert table schema and field definitions
+
+## Solutions (38)
 
 This table is used by the following solutions:
 
@@ -23,7 +27,6 @@ This table is used by the following solutions:
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
-- [Dragos](../solutions/dragos.md)
 - [Dynatrace](../solutions/dynatrace.md)
 - [ExtraHop](../solutions/extrahop.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
@@ -71,15 +74,12 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (81)
+## Content Items Using This Table (80)
 
-### Analytic Rules (34)
+### Analytic Rules (33)
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 - [Azure DevOps Pipeline modified by a new user](../content/155e9134-d5ad-4a6f-88f3-99c220040b66.md)
-
-**In solution [Dragos](../solutions/dragos.md):**
-- [Dragos Notifications](../content/9a74fe72-4c21-4ac5-80d9-37434e809721.md)
 
 **In solution [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md):**
 - [Denial of Service (Microsoft Defender for IoT)](../content/e068187a-01f5-4737-bc13-25db4027b7ea.md)

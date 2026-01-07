@@ -1,0 +1,43 @@
+# SecurityNestedRecommendation
+
+| Attribute | Value |
+|:----------|:------|
+| **Supports Transformations** | ✓ Yes |
+| **Ingestion API Supported** | ✗ No |
+
+## Solutions (3)
+
+This table is used by the following solutions:
+
+- [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
+- [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
+- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
+
+---
+
+## Content Items Using This Table (4)
+
+### Analytic Rules (1)
+
+**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
+- [Vulnerable Machines related to log4j CVE-2021-44228](../content/3d71fc38-f249-454e-8479-0a358382ef9a.md)
+
+### Workbooks (3)
+
+**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
+- [Log4jPostCompromiseHunting](../content/log4jpostcompromisehunting-apache-log4j-vulnerability-detection.md)
+
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark.md)
+
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation.md)
+
+---
+
+**Browse:**
+
+- [← Back to Tables Index](../tables-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Content Index](../content/content-index.md)

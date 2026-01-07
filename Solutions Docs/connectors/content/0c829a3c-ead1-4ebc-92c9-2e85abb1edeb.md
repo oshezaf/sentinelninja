@@ -1,0 +1,24 @@
+# Top External Sender domains - Spam
+
+Top External Sender domains sending Teams message with Spam threats
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| **ID** | `0c829a3c-ead1-4ebc-92c9-2e85abb1edeb` |
+| **Tactics** | InitialAccess |
+| **Techniques** | T1566 |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Microsoft%20Teams%20protection/Top%20External%20Sender%20domains%20-%20Spam.yaml) |
+
+---
+
+**Browse:**
+
+- [← Back to Hunting Queries](hunting-queries.md)
+- [← Back to Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

@@ -10,7 +10,7 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity) |
 
-## Solutions (24)
+## Solutions (22)
 
 This table is used by the following solutions:
 
@@ -21,7 +21,6 @@ This table is used by the following solutions:
 - [Global Secure Access](../solutions/global-secure-access.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
-- [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -30,7 +29,6 @@ This table is used by the following solutions:
 - [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security---exchange-online.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [Recorded Future](../solutions/recorded-future.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Teams](../solutions/teams.md)
@@ -47,9 +45,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (76)
+## Content Items Using This Table (73)
 
-### Analytic Rules (30)
+### Analytic Rules (29)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/6e575295-a7e6-464c-8192-3e1d8fd6a990.md)
@@ -89,9 +87,6 @@ This table is ingested by the following connectors:
 - [Dataverse - Mass download from SharePoint document management](../content/95e02f1b-5886-4043-8f0e-a42e6e23330f.md)
 - [Dataverse - New user agent type that was not used with Office 365](../content/094b3c0a-1f63-42f7-9535-c8c7b7198328.md)
 
-**In solution [Recorded Future](../solutions/recorded-future.md):**
-- [RecordedFuture Threat Hunting Hash All Actors](../content/6db6a8e6-2959-440b-ba57-a505875fcb37.md)
-
 **In solution [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md):**
 - [Threat Essentials - Mail redirect via ExO transport rule](../content/d7c575b2-84f5-48cb-92c5-70d7e8246284.md)
 
@@ -105,16 +100,13 @@ This table is ingested by the following connectors:
 - [ThreatConnect TI Map URL Entity to OfficeActivity Data](../content/12c3b31b-66a6-53ff-b6ab-6ae45e56dc92.md)
 - [ThreatConnect TI map Email entity to OfficeActivity](../content/4f7ade3e-7121-5274-83ea-d7ed22a01fea.md)
 
-### Hunting Queries (31)
+### Hunting Queries (29)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise---financial-fraud.md):**
 - [Office Mail Rule Creation with suspicious archive mail move activity](../content/f50a26d7-ffdb-4471-90b9-3be78c60e4f2.md)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 - [Google Threat Intelligence - Threat Hunting Hash](../content/0051a0d9-684f-4317-abbd-c1e5c24b39cb.md)
-
-**In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
-- [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/9b72769e-6ab1-4736-988b-018d92dc5e62.md)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [Detect File Creation in Startup Folder](../content/64e199a8-b26c-462f-a65c-09ed9b53a47b.md)
@@ -144,9 +136,6 @@ This table is ingested by the following connectors:
 - [SharePointFileOperation via previously unseen IPs](../content/e3d24cfd-b2a1-4ba7-8f80-0360892f9d57.md)
 - [User added to Teams and immediately uploads file](../content/3d6d0c04-7337-40cf-ace6-c471d442356d.md)
 - [Windows Reserved Filenames staged on Office file services](../content/61c28cd7-3139-4731-8ea7-2cbbeabb4684.md)
-
-**In solution [Recorded Future](../solutions/recorded-future.md):**
-- [RecordedFuture Threat Hunting Hash All Actors](../content/905da21a-c7d2-4f5b-b8fc-c8321da3ee83.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map File Entity to OfficeActivity Event](../content/410da56d-4a63-4d22-b68c-9fb1a303be6d.md)

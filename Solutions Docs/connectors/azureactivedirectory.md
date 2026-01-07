@@ -16,11 +16,19 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | ✓ | ✗ |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ |
+| [`AADProvisioningLogs`](../tables/aadprovisioninglogs.md) | ✓ | ✗ |
 | [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md) | ✓ | ✗ |
 | [`AADRiskyUsers`](../tables/aadriskyusers.md) | ✓ | ✗ |
+| [`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md) | ✓ | ✗ |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | ✓ | ✗ |
+| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) | ✓ | ✗ |
+| [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | ✓ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ |
-| [`RiskyServicePrincipals`](../tables/riskyserviceprincipals.md) | — | — |
-| [`RiskyUsers`](../tables/riskyusers.md) | — | — |
+| [`SignInLogs`](../tables/signinlogs.md) | — | — |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ## Permissions
 

@@ -1,0 +1,33 @@
+# Corelight_v2_ssl_CL
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Corelight](../solutions/corelight.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md)
+
+---
+
+## Content Items Using This Table (3)
+
+### Workbooks (3)
+
+**In solution [Corelight](../solutions/corelight.md):**
+- [Corelight](../content/corelight-corelight.md)
+- [Corelight_Data_Explorer](../content/corelight-data-explorer-corelight.md)
+- [Corelight_Security_Workflow](../content/corelight-security-workflow-corelight.md)
+
+---
+
+**Browse:**
+
+- [← Back to Tables Index](../tables-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Content Index](../content/content-index.md)

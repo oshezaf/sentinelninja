@@ -55,9 +55,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (163)
+## Content Items Using This Table (153)
 
-### Analytic Rules (59)
+### Analytic Rules (53)
 
 **In solution [EatonForeseer](../solutions/eatonforeseer.md):**
 - [EatonForeseer - Unauthorized Logins](../content/5a7fccb8-3ed0-44f2-8477-540af3ef4d92.md)
@@ -106,18 +106,12 @@ This table is ingested by the following connectors:
 - [Remote Desktop Network Brute force (ASIM Network Session schema)](../content/b7dc801e-1e79-48bb-91e8-2229a8e6d40b.md)
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
-- [RecordedFuture Threat Hunting Hash All Actors](../content/6db6a8e6-2959-440b-ba57-a505875fcb37.md)
 - [RecordedFuture Threat Hunting IP All Actors](../content/e31bc14e-2b4c-42a4-af34-5bfd7d768aea.md)
 
 **In solution [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md):**
 - [Semperis DSP Failed Logons](../content/0e105444-fe13-4ce6-9239-21880076a3f9.md)
-- [Semperis DSP Kerberos krbtgt account with old password](../content/9ff3b26b-7636-412e-ac46-072b084b94cb.md)
-- [Semperis DSP Mimikatz's DCShadow Alert](../content/1a6d0a49-64b3-4ca1-96c3-f154c16c218c.md)
 - [Semperis DSP Operations Critical Notifications](../content/8f471e21-3bb2-466f-9bc2-0a0326a60788.md)
 - [Semperis DSP RBAC Changes](../content/e5edf3f3-de53-45e6-b0d7-1ce1c048df4a.md)
-- [Semperis DSP Recent sIDHistory changes on AD objects](../content/64796da3-6383-4de2-9c97-866c83c459ae.md)
-- [Semperis DSP Well-known privileged SIDs in sIDHistory](../content/ddd75d93-5b8b-4349-babe-c4e15343c5a3.md)
-- [Semperis DSP Zerologon vulnerability](../content/85c1f9e4-6f14-46bf-82d5-dbe495b92aab.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/e2399891-383c-4caf-ae67-68a008b9f89e.md)
@@ -150,7 +144,7 @@ This table is ingested by the following connectors:
 - [SecurityEvent - Multiple authentication failures followed by a success](../content/cf3ede88-a429-493b-9108-3e46d3c741f7.md)
 - [Starting or Stopping HealthService to Avoid Detection](../content/2bc7b4ae-eeaa-4538-ba15-ef298ec1ffae.md)
 
-### Hunting Queries (84)
+### Hunting Queries (82)
 
 **In solution [Cyborg Security HUNTER](../solutions/cyborg-security-hunter.md):**
 - [Attempted VBScript Stored in Non-Run CurrentVersion Registry Key Value](../content/d7233f14-4705-403e-9db9-e0d677c9506b.md)
@@ -179,7 +173,6 @@ This table is ingested by the following connectors:
 - [Google Threat Intelligence - Threat Hunting IP](../content/faa83502-2763-49ae-9216-e576fa1fdccb.md)
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
-- [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/9b72769e-6ab1-4736-988b-018d92dc5e62.md)
 - [Known Nylon Typhoon Registry modifications patterns](../content/f090f8f4a-b986-42d2-b536-e0795c723e25.md)
 - [SolarWinds Inventory](../content/278592b5-612b-48a4-bb38-4c01ff8ee2a5.md)
 
@@ -201,7 +194,6 @@ This table is ingested by the following connectors:
 - [Remote Desktop Network Traffic(ASIM Network Session schema)](../content/6fd69768-fdf1-4cfd-805f-b243be3f0c6d.md)
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
-- [RecordedFuture Threat Hunting Hash All Actors](../content/905da21a-c7d2-4f5b-b8fc-c8321da3ee83.md)
 - [RecordedFuture Threat Hunting IP All Actors](../content/7b5eb44d-3533-440e-9774-73a4d99bc2b2.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
@@ -256,7 +248,7 @@ This table is ingested by the following connectors:
 - [VIP account more than 6 failed logons in 10](../content/e8d36582-c403-4466-bd44-ebede5b6fa6e.md)
 - [Windows System Time changed on hosts](../content/9fd6f61d-2cc3-48de-acf5-7194e78d6ea1.md)
 
-### Workbooks (19)
+### Workbooks (17)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation.md)
@@ -293,8 +285,6 @@ This table is ingested by the following connectors:
 **In solution [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md):**
 - [SemperisDSPNotifications](../content/semperisdspnotifications-semperis-directory-services-protector.md)
 - [SemperisDSPQuickviewDashboard](../content/semperisdspquickviewdashboard-semperis-directory-services-protector.md)
-- [SemperisDSPSecurityIndicators](../content/semperisdspsecurityindicators-semperis-directory-services-protector.md)
-- [SemperisDSPWorkbook](../content/semperisdspworkbook-semperis-directory-services-protector.md)
 
 **In solution [Windows Firewall](../solutions/windows-firewall.md):**
 - [WindowsFirewall](../content/windowsfirewall-windows-firewall.md)

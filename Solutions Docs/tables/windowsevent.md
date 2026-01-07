@@ -10,7 +10,7 @@ Reference for WindowsEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent) |
 
-## Solutions (15)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -18,7 +18,6 @@ This table is used by the following solutions:
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
-- [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -38,9 +37,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (82)
+## Content Items Using This Table (79)
 
-### Analytic Rules (43)
+### Analytic Rules (42)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)](../content/cf687598-5a2c-46f8-81c8-06b15ed489b1.md)
@@ -89,7 +88,6 @@ This table is ingested by the following connectors:
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting Domain All Actors](../content/acbf7ef6-f964-44c3-9031-7834ec68175f.md)
-- [RecordedFuture Threat Hunting Hash All Actors](../content/6db6a8e6-2959-440b-ba57-a505875fcb37.md)
 - [RecordedFuture Threat Hunting IP All Actors](../content/e31bc14e-2b4c-42a4-af34-5bfd7d768aea.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
@@ -109,7 +107,7 @@ This table is ingested by the following connectors:
 - [Caramel Tsunami Actor IOC - July 2021](../content/066395ac-ef91-4993-8bf6-25c61ab0ca5a.md)
 - [Chia_Crypto_Mining IOC - June 2021](../content/4d173248-439b-4741-8b37-f63ad0c896ae.md)
 
-### Hunting Queries (32)
+### Hunting Queries (30)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [CVE-2020-1350 (SIGRED) exploitation pattern (ASIM DNS Solution)](../content/0a8f5777-f38a-4c37-b531-411bdecef976.md)
@@ -132,9 +130,6 @@ This table is ingested by the following connectors:
 - [Google Threat Intelligence - Threat Hunting Hash](../content/0051a0d9-684f-4317-abbd-c1e5c24b39cb.md)
 - [Google Threat Intelligence - Threat Hunting IP](../content/faa83502-2763-49ae-9216-e576fa1fdccb.md)
 
-**In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
-- [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/9b72769e-6ab1-4736-988b-018d92dc5e62.md)
-
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [Detect File Creation in Startup Folder](../content/64e199a8-b26c-462f-a65c-09ed9b53a47b.md)
 - [Detect Files with Ramsomware Extensions](../content/595aea5c-74c7-415b-8b12-10af1a338cdf.md)
@@ -154,7 +149,6 @@ This table is ingested by the following connectors:
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting Domain All Actors](../content/d641a534-ead8-41aa-a7c8-2b35e6b64c9f.md)
-- [RecordedFuture Threat Hunting Hash All Actors](../content/905da21a-c7d2-4f5b-b8fc-c8321da3ee83.md)
 - [RecordedFuture Threat Hunting IP All Actors](../content/7b5eb44d-3533-440e-9774-73a4d99bc2b2.md)
 
 ### Workbooks (5)

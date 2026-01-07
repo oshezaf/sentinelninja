@@ -17,8 +17,6 @@ This connector ingests data into the following tables:
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
 | [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
-| [`exchange`](../tables/exchange.md) | — | — |
-| [`sharePoint`](../tables/sharepoint.md) | — | — |
 
 ## Permissions
 

@@ -1,0 +1,128 @@
+# Analytic Rules - G
+
+**100 analytic rules** starting with 'G'.
+
+**Browse by:**
+
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](content-index.md)
+- [All Analytic Rules](analytic-rules.md)
+
+---
+
+**Jump to letter:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | **G** | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
+
+| Name | Severity | Solution |
+|:-----|:---------|:---------|
+| [Gain Code Execution on ADFS Server via SMB + Remote Service or Scheduled Task](12dcea64-bec2-41c9-9df2-9f28461b1295.md) | Medium | [Windows Security Events](../solutions/windows-security-events.md) |
+| [GCP IAM - Disable Data Access Logging](2530a631-9605-404d-ae58-58ef1f91b17c.md) | Medium | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - Empty user agent](9e0d8632-d33d-4075-979e-c972674f77b3.md) | Medium | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - High privileged role added to service account](86112c4b-2535-4178-aa0e-ed9e32e3f054.md) | High | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - New Authentication Token for Service Account](80e4db30-5636-4fbd-8816-24c3ded8d243.md) | Medium | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - New Service Account](a768aa52-453e-4e3e-80c2-62928d2e2f56.md) | Low | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - New Service Account Key](fc135860-8773-4ead-b5be-9789af1ff8ff.md) | Low | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - Privileges Enumeration](52d88912-fa8b-4db2-b247-ee9225e41e8f.md) | Low | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - Publicly exposed storage bucket](4a433846-4b05-4a27-99d7-92093feded79.md) | Medium | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - Service Account Enumeration](50e0437e-912d-4cd0-ac19-fef0aebdd3d7.md) | Low | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP IAM - Service Account Keys Enumeration](7ad3cfed-18c0-44af-9e9d-9fb5472a2321.md) | Low | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
+| [GCP Security Command Center - Detect DNSSEC disabled for DNS zones](a9c7a4be-b7e7-4045-8028-0d1ffaa049af.md) | Medium | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
+| [GCP Security Command Center - Detect Firewall rules allowing unrestricted high-risk ports](f4f92ca4-6ebe-4f2a-90e5-b0d04b709651.md) | High | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
+| [GCP Security Command Center - Detect Open/Unrestricted API Keys](d8e30113-373a-4f49-a0ad-1a5d8b95b729.md) | Medium | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
+| [GCP Security Command Center - Detect projects with API Keys present](395f3ced-3923-4b83-b05d-8d077fd48c1e.md) | Medium | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
+| [GCP Security Command Center - Detect Resources with Logging Disabled](d1fe8d30-4852-463a-b6ee-3b459788b75d.md) | Medium | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
+| [General Settings Updated](14003a45-da0b-47dc-8e20-9711ba7b5112.md) | Informational | [Veeam](../solutions/veeam.md) |
+| [Generate alerts based on ExtraHop detections recommended for triage](cd65aebc-7e85-4cbb-9f91-ff0376c5d37d.md) | Medium | [ExtraHop](../solutions/extrahop.md) |
+| [GitHub Activites from a New Country](f041e01d-840d-43da-95c8-4188f6cef546.md) | Medium | [GitHub](../solutions/github.md) |
+| [GitHub Security Vulnerability in Repository](5436f471-b03d-41cb-b333-65891f887c43.md) | Informational | [GitHub](../solutions/github.md) |
+| [GitHub Signin Burst from Multiple Locations](d3980830-dd9d-40a5-911f-76b44dfdce16.md) | Medium | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+| [GitHub Two Factor Auth Disable](3ff0fffb-d963-40c0-b235-3404f915add7.md) | Medium | [GitHub](../solutions/github.md) |
+| [GitLab - Abnormal number of repositories deleted](3efd09bd-a582-4410-b7ec-5ff21cfad7bd.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [GitLab - Brute-force Attempts](2238d13a-cf05-4973-a83f-d12a25dbb153.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [GitLab - External User Added to GitLab](c1544d8f-cbbd-4e35-8d32-5b9312279833.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [GitLab - Local Auth - No MFA](e0b45487-5c79-482d-8ac0-695de8c031af.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [GitLab - Personal Access Tokens creation over time](4d6d8b0e-6d9a-4857-a141-f5d89393cddb.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [GitLab - Repository visibility to Public](8b291c3d-90ba-4ebf-af2c-0283192d430e.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [GitLab - SSO - Sign-Ins Burst](57b1634b-531d-4eab-a456-8b855887428f.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [GitLab - TI - Connection from Malicious IP](7241740a-5280-4b74-820a-862312d721a8.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [GitLab - User Impersonation](0f4f16a2-b464-4c10-9a42-993da3e15a40.md) | Medium | [GitLab](../solutions/gitlab.md) |
+| [Global Network Traffic Rules Deleted](0995ccd8-16d4-4764-83b2-511235ca4e4b.md) | Low | [Veeam](../solutions/veeam.md) |
+| [Global VM Exclusions Added](c9faf1ee-57dd-4f54-8cd1-fcf35a1aa424.md) | High | [Veeam](../solutions/veeam.md) |
+| [Global VM Exclusions Changed](2034c441-2850-4167-80ed-b4438155836d.md) | High | [Veeam](../solutions/veeam.md) |
+| [Global VM Exclusions Deleted](141d7e3c-a72b-49f7-9e64-57f60c2fa927.md) | Low | [Veeam](../solutions/veeam.md) |
+| [Google DNS - CVE-2020-1350 (SIGRED) exploitation pattern](1267d53d-f5fd-418b-b8da-34453a5994c2.md) | High | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - CVE-2021-34527 (PrintNightmare) external exploit](e632e73a-06c4-47f6-8bed-b2498aa6e30f.md) | High | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - CVE-2021-40444 exploitation](6758c671-e9ee-495d-b6b0-92ffd08a8c3b.md) | High | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - Exchange online autodiscover abuse](424c2aca-5367-4247-917a-5d0f7035e40e.md) | Medium | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - IP check activity](35221a58-cacb-4174-9bb4-ee777784fbce.md) | Medium | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - Malicous Python packages](75491db8-eaf7-40bb-a46a-279872cc82f5.md) | High | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - Multiple errors for source](7e81a935-5e91-45a5-92fd-3b58c180513b.md) | Medium | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - Multiple errors to same domain](da04a5d6-e2be-4cba-8cdb-a3f2efa87e9e.md) | Medium | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - Possible data exfiltration](705bed63-668f-4508-9d2d-26faf4010700.md) | High | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - Request to dynamic DNS service](09fc03e0-daec-4b22-8afa-4bba30d7e909.md) | Medium | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google DNS - UNC2452 (Nobelium) APT Group activity](22a613ea-c338-4f91-bbd3-3be97b00ebf9.md) | High | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google Threat Intelligence - Threat Hunting Domain](d9e1646c-dc17-4150-ac85-581f5c9cb41f.md) | Medium | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - Threat Hunting Hash](8f9cd0e5-b4ab-4821-95e2-1082fcd784c7.md) | Medium | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - Threat Hunting IP](7edb2abb-7ef7-4685-92eb-a628703ccf9f.md) | Medium | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [Google Threat Intelligence - Threat Hunting Url](89290690-54c4-4196-91c5-d32b1df5d873.md) | Medium | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
+| [GreyNoise TI Map IP Entity to CommonSecurityLog](e50657d7-8bca-43ff-a647-d407fae440d6.md) | Medium | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
+| [GreyNoise TI Map IP Entity to DnsEvents](ddf47b6f-870c-5712-a296-1383acb13c82.md) | Medium | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
+| [GreyNoise TI map IP entity to Network Session Events (ASIM Network Session schema)](536e8e5c-ce0e-575e-bcc9-aba8e7bf9316.md) | Medium | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
+| [GreyNoise TI map IP entity to OfficeActivity](c51628fe-999c-5150-9fd7-660fc4f58ed2.md) | Medium | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
+| [GreyNoise TI Map IP Entity to SigninLogs](f6c76cc9-218c-5b76-9b82-8607f09ea1b4.md) | Medium | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
+| [GSA - Detect Abnormal Deny Rate for Source to Destination IP](e3b6a9e7-4c3a-45e6-8baf-1d3bfa8e0c2b.md) | Medium | [Global Secure Access](../solutions/global-secure-access.md) |
+| [GSA - Detect Connections Outside Operational Hours](4c9f0a9e-44d7-4c9b-b7f0-f6a6e0d8f8fa.md) | High | [Global Secure Access](../solutions/global-secure-access.md) |
+| [GSA - Detect Protocol Changes for Destination Ports](f6a8d6a5-3e9f-47c8-a8d5-1b2b9d3b7d6a.md) | Medium | [Global Secure Access](../solutions/global-secure-access.md) |
+| [GSA - Detect Source IP Scanning Multiple Open Ports](82cfa6b9-5f7e-4b8b-8b2f-a63f21b7a7d1.md) | Medium | [Global Secure Access](../solutions/global-secure-access.md) |
+| [GuardDuty detector disabled or suspended](9da99021-d318-4711-a78a-6dea76129b3a.md) | High | [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [Guardian- Additional check JSON Policy Violation Detection](9ff28525-3c6f-47ba-806b-ffd913406989.md) | Informational | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Ban Topic Policy Violation Detection](97a76b2d-02ea-4ae5-b0c4-79e834036481.md) | Medium | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- BII Detection Policy Violation Detection](e7493b80-88d0-44fb-b11d-40a0467cc497.md) | High | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Block Competitor Policy Violation Detection](e5d9eea1-3250-49ba-9e39-b5678ec7496b.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Blocks specific strings of text Policy Violation Detection](9c63e0b5-bb83-4873-947a-4385386a6c21.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Code Detection Policy Violation Detection](90f50a0b-6903-4ddc-adcc-c13ebb77ffa7.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Content Access Control Allowed List Policy Violation Detection](aa88a190-d4d8-4f32-b533-3aa097c9ce3d.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Content Access Control Blocked List Policy Violation Detection](4c7f0b49-d972-4d26-81ab-36cbe43ac437.md) | Medium | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Content Safety Profanity Policy Violation Detection](de3ce72f-7826-4be1-ab1a-87a8299c54f6.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Content Safety Toxicity Policy Violation Detection.](378e5160-70cf-4f1a-b3c8-3bc2f0c884ad.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Gender Bias Policy Violation Detection](cae24b9e-a614-4213-b382-00698e89b037.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Input Output Relevance Policy Violation Detection](76fd5899-0dd1-4336-9519-3c2c0d5d6ecb.md) | Informational | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Input Rate Limiter Policy Violation Detection](5d736bd5-b8ff-493c-bfbb-19674903fced.md) | Informational | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Invisible Text Policy Violation Detection](1e31a465-e25d-4810-881b-8a79e0de9379.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Language Detection Policy Violation Detection](e65938c4-1379-4f7a-bd22-78f670a239c3.md) | Informational | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Malicious URL Policy Violation Detection](8644d9e0-b810-4b55-889b-b8a9b3795b5d.md) | Medium | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- No LLM Output Policy Violation Detection](c0598d69-221e-4235-a1e4-bfd57ada8ce5.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Not Safe For Work Policy Violation Detection](f472bd5e-ffb3-4c8e-8abd-97aaa8ebcdff.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Privacy Protection PII Policy Violation Detection](d5065600-617b-4a16-b58a-4a46da9c1afd.md) | High | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Racial Bias Policy Violation Detection](46103101-43d9-4c09-b8c8-898dcafe73c0.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Regex Policy Violation Detection](d9ad323f-6115-4f19-9e81-feabceeb6730.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Same Input/Output Language Detection Policy Violation Detection](b2841802-c53c-4667-be8a-9ea8771c944a.md) | Informational | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Secrets Policy Violation Detection](1cd8baa8-b8b4-436e-9f3f-4328f52a8e14.md) | Medium | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Security Integrity Checks Prompt Injection Policy Violation Detection](d6b3372a-0fc4-40ec-9630-b96efb527fba.md) | High | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Sentiment Policy Violation Detection](24538989-9dea-4cc7-aa78-0969ca116051.md) | Low | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Special PII Detection Policy Violation Detection](7e37bf0f-1a10-4a71-8207-19615ee75894.md) | High | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- Token Limit Policy Violation Detection](b7798389-6823-4af0-94e6-6135c4f8264e.md) | Informational | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- URL Detection Policy Violation Detection](de6f4636-a51a-411d-95d8-4f9099865990.md) | Informational | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guardian- URL Reachability Policy Violation Detection](93a56919-105a-4ffe-9a8c-4ef6d0b101ac.md) | Informational | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [Guest accounts added in Entra ID Groups other than the ones specified](6ab1f7b2-61b8-442f-bc81-96afe7ad8c53.md) | High | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+| [GWorkspace - Admin permissions granted](03f25156-6172-11ec-90d6-0242ac120003.md) | High | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - Alert events](e369d246-5da8-11ec-bf63-0242ac130002.md) | High | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - An Outbound Relay has been added to a G Suite Domain](ead87cd6-5da7-11ec-bf63-0242ac130002.md) | Medium | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - API Access Granted](c45a9804-5da8-11ec-bf63-0242ac130002.md) | Medium | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - Multiple user agents for single source](6ff0e16e-5999-11ec-bf63-0242ac130002.md) | Medium | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - Possible brute force attack](8f6cd9a4-5e57-11ec-bf63-0242ac130002.md) | Medium | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - Possible maldoc file name in Google drive](d80d02a8-5da6-11ec-bf63-0242ac130002.md) | Medium | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - Two-step authentification disabled for a user](c8cc02d0-5da6-11ec-bf63-0242ac130002.md) | Medium | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - Unexpected OS update](c02b0c8e-5da6-11ec-bf63-0242ac130002.md) | Medium | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+| [GWorkspace - User access has been changed](92fae638-5da8-11ec-bf63-0242ac130002.md) | Low | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
+
+---
+
+**Browse:**
+
+- [← Back to Content Index](content-index.md)
+- [← Back to Analytic Rules](analytic-rules.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

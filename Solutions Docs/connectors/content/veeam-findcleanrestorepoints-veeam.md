@@ -1,0 +1,20 @@
+# Veeam-FindCleanRestorePoints
+
+A Microsoft Sentinel playbook with the incident trigger, that finds the last clean restore point for VM, specified in the incident by VbrHostName and MachineDisplayName. If finds a clean restore point, adds its date as incident's comment, and if a clean restore point is not found, adds a comment indicating that.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Playbook |
+| **Solution** | [Veeam](../solutions/veeam.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Playbooks/Veeam-FindCleanRestorePoints/FindCleanRestorePoints.json) |
+
+---
+
+**Browse:**
+
+- [← Back to Playbooks](playbooks.md)
+- [← Back to Veeam](../solutions/veeam.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

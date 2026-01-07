@@ -1,0 +1,24 @@
+# Teams users clicking on suspicious URL domains
+
+This query helps hunt for Teams users clicking on suspicious URL domains.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| **ID** | `b1fa5bb7-9c4e-4d4f-826a-afc1fbe8c2cf` |
+| **Tactics** | InitialAccess |
+| **Techniques** | T1566 |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Microsoft%20Teams%20protection/Teams%20users%20clicking%20on%20suspicious%20URL%20domains.yaml) |
+
+---
+
+**Browse:**
+
+- [← Back to Hunting Queries](hunting-queries.md)
+- [← Back to Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

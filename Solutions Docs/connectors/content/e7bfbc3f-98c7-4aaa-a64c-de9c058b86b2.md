@@ -1,0 +1,30 @@
+# Suspicious Windows Login Outside Normal Hours
+
+Query identifies unusual logon events outside a user's normal hours by comparing with the last 14 days' logon activity, flagging anomalies based on historical patterns.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [Windows Security Events](../solutions/windows-security-events.md) |
+| **ID** | `e7bfbc3f-98c7-4aaa-a64c-de9c058b86b2` |
+| **Tactics** | InitialAccess, LateralMovement |
+| **Techniques** | T1078 |
+| **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events/Hunting%20Queries/Suspicious_Windows_Login_outside_normal_hours.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityEvent`](../tables/securityevent.md)
+
+---
+
+**Browse:**
+
+- [← Back to Hunting Queries](hunting-queries.md)
+- [← Back to Windows Security Events](../solutions/windows-security-events.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

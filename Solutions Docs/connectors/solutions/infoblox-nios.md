@@ -1,0 +1,101 @@
+# Infoblox NIOS
+
+## Solution Information
+
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **First Published** | 2022-04-01 |
+| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS) |
+
+## Data Connectors
+
+This solution provides **1 data connector(s)**:
+
+- [[Deprecated] Infoblox NIOS](../connectors/infobloxnios.md)
+
+## Tables Reference
+
+This solution uses **4 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`Infoblox`](../tables/infoblox.md) | - | Analytics |
+| [`Infoblox_dhcp_consolidated`](../tables/infoblox-dhcp-consolidated.md) | - | Workbooks |
+| [`Infoblox_dns_consolidated`](../tables/infoblox-dns-consolidated.md) | - | Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Infoblox NIOS](../connectors/infobloxnios.md) | Analytics, Workbooks |
+
+## Content Items
+
+This solution includes **26 content item(s)**:
+
+| Content Type | Count |
+|:-------------|:------|
+| Parsers | 22 |
+| Analytic Rules | 2 |
+| Workbooks | 2 |
+
+### Analytic Rules
+
+| Name | Severity | Tactics | Tables Used |
+|:-----|:---------|:--------|:------------|
+| [Excessive NXDOMAIN DNS Queries](../content/b8266f81-2715-41a6-9062-42486cbc9c73.md) | Medium | CommandAndControl | [`Syslog`](../tables/syslog.md) |
+| [Potential DHCP Starvation Attack](../content/57e56fc9-417a-4f41-a579-5475aea7b8ce.md) | Medium | InitialAccess | [`Infoblox`](../tables/infoblox.md) |
+
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [Infoblox-Workbook-V2](../content/infoblox-workbook-v2-infoblox-nios.md) | [`Infoblox_dhcp_consolidated`](../tables/infoblox-dhcp-consolidated.md)<br>[`Infoblox_dns_consolidated`](../tables/infoblox-dns-consolidated.md)<br>[`Syslog`](../tables/syslog.md) |
+| [Sources_by_SourceType](../content/sources-by-sourcetype-infoblox-nios.md) | - |
+
+### Parsers
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [Infoblox](../content/5591631b-4fcc-4dfb-8e90-10acb12b9494.md) | - | - |
+| [Infoblox_allotherdhcpdTypes](../content/0902417a-288a-481e-ae22-8c60167087af.md) | - | - |
+| [Infoblox_allotherdnsTypes](../content/583065b6-c47d-489e-a609-9f97573c9334.md) | - | - |
+| [Infoblox_allotherlogTypes](../content/8d12dd0a-f8df-47f1-938b-d5bdcd9656ba.md) | - | - |
+| [Infoblox_dhcp_consolidated](../content/2d665230-5f9a-4399-a582-dfb7cc2f3971.md) | - | - |
+| [Infoblox_dhcpack](../content/47b5ec12-dada-4091-ae3f-ffee22e9a47a.md) | - | - |
+| [Infoblox_dhcpadded](../content/dda93e6b-8a80-4348-a9ee-7c9208cbe410.md) | - | - |
+| [Infoblox_dhcpbindupdate](../content/7e5e4d85-1a84-4d9f-8788-7d928a658c2c.md) | - | - |
+| [Infoblox_dhcpdiscover](../content/890db700-1f1e-4ad1-9d67-2d8752d74f2f.md) | - | - |
+| [Infoblox_dhcpexpire](../content/eb996257-6d13-4c24-ade0-b19be55bab73.md) | - | - |
+| [Infoblox_dhcpinform](../content/664e7bbd-fba2-41a6-be63-85376f516f4c.md) | - | - |
+| [Infoblox_dhcpoffer](../content/2ae93e20-8b92-4cd5-8bf7-e815ce472d0d.md) | - | - |
+| [Infoblox_dhcpoption](../content/ae269e0c-3c8c-4b80-bc54-03442ce97a99.md) | - | - |
+| [Infoblox_dhcpother](../content/50ce0953-5f2e-4dce-b711-91bae0e00a20.md) | - | - |
+| [Infoblox_dhcprelease](../content/abe2e8ba-5c4c-450e-af7d-f12658d3d7d0.md) | - | - |
+| [Infoblox_dhcpremoved](../content/85d45bae-f3f6-4077-8bca-5d7d93348858.md) | - | - |
+| [Infoblox_dhcprequest](../content/e3fbab01-ddf8-4ab2-b663-3c33e92f55b3.md) | - | - |
+| [Infoblox_dhcpsession](../content/ce7e152d-8e0e-4e6e-8d3d-d60af96fe6e2.md) | - | - |
+| [Infoblox_dns_consolidated](../content/b548eacc-66d0-4ef1-b2ff-4688b1d609bc.md) | - | - |
+| [Infoblox_dnsclient](../content/16f093d4-c9a8-4426-89ab-855c3e3be243.md) | - | - |
+| [Infoblox_dnsgss](../content/bcdea229-bb66-4071-b5f8-e9628079f834.md) | - | - |
+| [Infoblox_dnszone](../content/6b88ad86-5ecb-4918-b41e-a463fc4a36f3.md) | - | - |
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                   |
+|-------------|--------------------------------|----------------------------------------------------------------------|
+| 3.0.5       | 07-10-2025                     |Expanded exclusion lists in Infoblox_allotherdhcpdTypes and Infoblox_dhcpother parsers to filter additional log types.                   |
+| 3.0.4       | 17-12-2024                     |Removed Deprecated **Data connectors**                                |
+| 3.0.3       | 01-08-2024                     |Update **Parser** as part of Syslog migration                         |
+|             |                                |Deprecating data connectors                                           |
+| 3.0.2       | 16-08-2023                     |Updated the solution to include a default value for watchlist1-id     |
+| 3.0.1       | 24-07-2023                     |Updated ApiVersion for Watchlist                                      |
+| 3.0.0       | 11-07-2023                     |Updated support information for this solution                         |
+
+---
+
+**Browse:**
+
+- [← Back to Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)
+- [Content Index](../content/content-index.md)
