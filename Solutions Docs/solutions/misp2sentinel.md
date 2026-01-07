@@ -1,5 +1,11 @@
 # MISP2Sentinel
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/misp-logo.svg" alt="MISP2Sentinel Logo" width="75" height="75">
+
+The MISP2Sentinel solution allows you to automatically push threat indicators from [MISP](https://www.misp-project.org/) to Microsoft Sentinel via the Upload Indicators REST API.
+
+
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +14,8 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/cudeso/misp2sentinel](https://github.com/cudeso/misp2sentinel) |
 | **Categories** | domains,verticals |
+| **Version** | 3.0.0 |
+| **Author** | MISP project & cudeso.be - info@cudeso.be |
 | **First Published** | 2023-07-29 |
 | **Last Updated** | 2023-07-29 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel) |

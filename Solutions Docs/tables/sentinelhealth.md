@@ -23,7 +23,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
-- [AutomationHealth](../content/sentinelsoaressentials-automationhealth.md)
+- [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md)
 
 ---
 

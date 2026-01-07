@@ -1,5 +1,13 @@
 # F5 Networks
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="F5 Networks Logo" width="75" height="75">
+
+The [F5 Networks](https://www.f5.com/) solution for Microsoft Sentinel enables you to ingest F5 Network firewall logs into Microsoft Sentinel, using the Common Event Format (CEF) for Security Monitoring.
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.f5.com/services/support](https://www.f5.com/services/support) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | F5 |
 | **First Published** | 2022-05-12 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks) |
 

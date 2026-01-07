@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [MimecastTTP](../solutions/mimecastttp.md):**
-- [Mimecast Targeted Threat Protection - Impersonation Protect](../content/mimecastttp-mimecast-targeted-threat-protection---impersonation-protect-d8e7eca6-4b59-4069-a31e-a022b2a12ea4.md)
+- [Mimecast Targeted Threat Protection - Impersonation Protect](../content/mimecastttp-mimecast-targeted-threat-protection-impersonation-protect-d8e7eca6-4b59-4069-a31e-a022b2a12ea4-d8d320d6.md)
 
 ### Workbooks (1)
 
 **In solution [MimecastTTP](../solutions/mimecastttp.md):**
-- [MimecastTTPWorkbook](../content/mimecastttp-mimecastttpworkbook.md)
+- [MimecastTTPWorkbook](../content/mimecastttp-mimecastttpworkbook-22b40acb.md)
 
 ---
 

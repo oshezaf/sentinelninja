@@ -1,5 +1,9 @@
 # Obsidian Datasharing
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/obsidian_security_logo.svg" alt="Obsidian Datasharing Logo" width="75" height="75">
+
+The Obsidian Datasharing solution for Microsoft Sentinel enables you to ingest Obsidian events into your Microsoft Sentinel Analytics Workspace.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://obsidiansecurity.com/contact](https://obsidiansecurity.com/contact) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Timothy Zhou - tzhou@obsidiansecurity.com |
 | **First Published** | 2024-01-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing) |
 

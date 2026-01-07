@@ -26,8 +26,10 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Illusive-SentinelIncident-Enrichment](../content/illusive-active-defense-illusive-sentinelincident-enrichment.md) | <p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p> | - |
-| [Illusive-SentinelIncident-Response](../content/illusive-active-defense-illusive-sentinelincident-response.md) | <p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p> | - |
+| [Illusive-SentinelIncident-Enrichment](../content/illusive-active-defense-illusive-sentinelincident-enrichment-dde1bbd9.md) ⚠️ | <p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p> | - |
+| [Illusive-SentinelIncident-Response](../content/illusive-active-defense-illusive-sentinelincident-response-793f8fd5.md) ⚠️ | <p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p> | - |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Additional Documentation
 

@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [SalemCyber](../solutions/salemcyber.md):**
-- [SalemDashboard](../content/salemcyber-salemdashboard.md)
+- [SalemDashboard](../content/salemcyber-salemdashboard-e693bdd8.md)
 
 ---
 

@@ -1,5 +1,9 @@
 # CybersecurityMaturityModelCertification(CMMC)2.0
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="CybersecurityMaturityModelCertification(CMMC)2.0 Logo" width="75" height="75">
+
+The Microsoft Sentinel Cybersecurity Maturity Model Certification (CMMC) 2.0 solution provides a mechanism for viewing log queries aligned to CMMC 2.0 requirements across the Microsoft portfolio. This solution enables governance and compliance teams to design, build, monitor, and respond to CMMC 2.0 requirements across 25+ Microsoft products. While only Microsoft Sentinel is required to get started, the solution is enhanced with numerous Microsoft offerings. This solution enables Security Architects, Engineers, SecOps Analysts, Managers, and IT Pros to gain situational awareness visibility for the security posture of cloud workloads. There are also recommendations for selecting, designing, deploying, and configuring Microsoft offerings for alignment with respective security best practice.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.1.0 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification%28CMMC%292.0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification%28CMMC%292.0) |
 
@@ -64,22 +70,22 @@ This solution includes **6 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [CMMC 2.0 Level 1 (Foundational) Readiness Posture](../content/cybersecuritymaturitymodelcertification%28cmmc%292.0-cmmc-2.0-level-1-%28foundational%29-readiness-posture-fb127436-e5c4-4e31-85a8-d3507128dd09.md) | Medium | Discovery | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |
-| [CMMC 2.0 Level 2 (Advanced) Readiness Posture](../content/cybersecuritymaturitymodelcertification%28cmmc%292.0-cmmc-2.0-level-2-%28advanced%29-readiness-posture-7bfe573b-3069-4e81-98fe-9a4cffbcbc24.md) | Medium | Discovery | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |
+| [CMMC 2.0 Level 1 (Foundational) Readiness Posture](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cmmc-2.0-level-1-foundational-readiness-posture-fb127436-e5c4-4e31-85a8-d3507128dd09-3a67e6df.md) | Medium | Discovery | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |
+| [CMMC 2.0 Level 2 (Advanced) Readiness Posture](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cmmc-2.0-level-2-advanced-readiness-posture-7bfe573b-3069-4e81-98fe-9a4cffbcbc24-0a9527c7.md) | Medium | Discovery | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification%28cmmc%292.0-cybersecuritymaturitymodelcertification-cmmcv2.md) | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`Event`](../tables/event.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`Event`](../tables/event.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Jira Issue](../content/cybersecuritymaturitymodelcertification%28cmmc%292.0-create-jira-issue.md) | This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel. | - |
-| [Create-AzureDevOpsTask](../content/cybersecuritymaturitymodelcertification%28cmmc%292.0-create-azuredevopstask.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
-| [Notify_GovernanceComplianceTeam](../content/cybersecuritymaturitymodelcertification%28cmmc%292.0-notify-governancecomplianceteam.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
+| [Create Jira Issue](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-create-jira-issue-7e686c2d.md) | This playbook will open a Jira Issue when a new incident is opened in Microsoft Sentinel. | - |
+| [Create-AzureDevOpsTask](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-create-azuredevopstask-4301bcc7.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
+| [Notify_GovernanceComplianceTeam](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-notify-governancecomplianceteam-16ba9fc1.md) | This playbook will create the Azure DevOps task filled with the Microsoft Sentinel incident details. | - |
 
 ## Additional Documentation
 

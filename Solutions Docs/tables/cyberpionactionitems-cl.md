@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [IONIX](../solutions/ionix.md):**
-- [High Urgency IONIX Action Items](../content/ionix-high-urgency-ionix-action-items-8e0403b1-07f8-4865-b2e9-74d1e83200a4.md)
+- [High Urgency IONIX Action Items](../content/ionix-high-urgency-ionix-action-items-8e0403b1-07f8-4865-b2e9-74d1e83200a4-39544ba2.md)
 
 ### Workbooks (1)
 
 **In solution [IONIX](../solutions/ionix.md):**
-- [IONIXOverviewWorkbook](../content/ionix-ionixoverviewworkbook.md)
+- [IONIXOverviewWorkbook](../content/ionix-ionixoverviewworkbook-5e96257f.md)
 
 ---
 

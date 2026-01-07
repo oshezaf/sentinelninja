@@ -1,5 +1,14 @@
 # Trend Micro Deep Security
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Trend_Micro_Logo.svg" alt="Trend Micro Deep Security Logo" width="75" height="75">
+
+The [Trend Micro Deep Security](https://www.trendmicro.com/en_us/business/products/hybrid-cloud/deep-security.html) solution for Microsoft Sentinel enables you to ingest Deep Security logs into Microsoft Sentinel, using the Common Event Format (CEF) for Security Monitoring.
+ 
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +17,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://success.trendmicro.com/dcx/s/?language=en_US](https://success.trendmicro.com/dcx/s/?language=en_US) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Trend Micro |
 | **First Published** | 2022-05-10 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security) |
 
@@ -38,14 +49,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TrendMicroDeepSecurityAttackActivity](../content/trend-micro-deep-security-trendmicrodeepsecurityattackactivity.md) | - |
-| [TrendMicroDeepSecurityOverview](../content/trend-micro-deep-security-trendmicrodeepsecurityoverview.md) | - |
+| [TrendMicroDeepSecurityAttackActivity](../content/trend-micro-deep-security-trendmicrodeepsecurityattackactivity-4ac1a0a6.md) | - |
+| [TrendMicroDeepSecurityOverview](../content/trend-micro-deep-security-trendmicrodeepsecurityoverview-abad9508.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TrendMicroDeepSecurity](../content/trend-micro-deep-security-trendmicrodeepsecurity-b376272c-ca00-435d-9879-e7d64da7dd24.md) | - | - |
+| [TrendMicroDeepSecurity](../content/trend-micro-deep-security-trendmicrodeepsecurity-b376272c-ca00-435d-9879-e7d64da7dd24-d7d017c5.md) | - | - |
 
 ## Release Notes
 

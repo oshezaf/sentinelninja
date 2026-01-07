@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Island](../solutions/island.md):**
-- [IslandUserActivityOverview](../content/island-islanduseractivityoverview.md)
+- [IslandUserActivityOverview](../content/island-islanduseractivityoverview-2db014e3.md)
 
 ---
 

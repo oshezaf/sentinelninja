@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Tanium](../solutions/tanium.md):**
-- [TaniumWorkbook](../content/tanium-taniumworkbook.md)
+- [TaniumWorkbook](../content/tanium-taniumworkbook-97052723.md)
 
 ---
 

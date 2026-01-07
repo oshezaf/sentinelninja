@@ -21,10 +21,10 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
-- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark.md)
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
-- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation.md)
+- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
 
 ---
 

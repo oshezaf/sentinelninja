@@ -1,5 +1,9 @@
 # SlashNext
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/slashnext-logo.svg" alt="SlashNext Logo" width="75" height="75">
+
+SlashNext URL Investigation Connector is based upon its Real-time Phishing Defense (RPD) APIs which are connected to SlashNext real-time threat intelligence database, continuously updated with the latest phishing threats. SlashNext RPD APIs are designed to be very fast and give accurate binary verdict on each enrichment request to ease its integration in any phishing Incident Response (IR) or SOAR environment.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support@slashnext.com](https://support@slashnext.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | SlashNext - support@slashnext.com |
 | **First Published** | 2022-08-12 |
 | **Last Updated** | 2022-08-12 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext) |
@@ -39,8 +45,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SlashNext Phishing Incident Investigation Playbook](../content/slashnext-slashnext-phishing-incident-investigation-playbook.md) | Enhance your security with threat hunting and incident investigation using this playbook. Scan with ... | - |
-| [SlashNext Web Access Log Assessment](../content/slashnext-slashnext-web-access-log-assessment.md) | Designed to analyze Web Access logs from Web Gateways and Firewalls. Scan your logs for continuous d... | - |
+| [SlashNext Phishing Incident Investigation Playbook](../content/slashnext-slashnext-phishing-incident-investigation-playbook-ad170d4d.md) | Enhance your security with threat hunting and incident investigation using this playbook. Scan with ... | - |
+| [SlashNext Web Access Log Assessment](../content/slashnext-slashnext-web-access-log-assessment-6996dff4.md) | Designed to analyze Web Access logs from Web Gateways and Firewalls. Scan your logs for continuous d... | - |
 
 ## Release Notes
 

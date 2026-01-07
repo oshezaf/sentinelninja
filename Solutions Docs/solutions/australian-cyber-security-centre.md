@@ -1,5 +1,9 @@
 # Australian Cyber Security Centre
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ACSClogo.svg" alt="Australian Cyber Security Centre Logo" width="75" height="75">
+
+This solution allows customers to share threat intelligence with the Australian Cyber Security Centre (ACSC) through the Cyber Threat Intelligence Sharing (CTIS) program. This solution contains a playbook that can be used to get indicators from Microsoft Sentinel and convert them into STIX bundles to be posted to the CTIS TAXII 2.1 server as a Contributing Partner. This solution is only available to deeded ACSC partners that have completed onboarding to the CTIS program. Credentials will be provided during the onboarding process. For more information please contact community@ctis-au.org or visit the [ACSC Partner Portal](https://partners.cyber.gov.au/login?ec=302&startURL=%2Fs%2F).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.2 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre) |
 
@@ -29,7 +35,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AusCtisExportTaggedIndicators](../content/australian-cyber-security-centre-ausctisexporttaggedindicators.md) | This playbook gets triggered every hour and perform the following actions: 1. Get all the threat int... | - |
+| [AusCtisExportTaggedIndicators](../content/australian-cyber-security-centre-ausctisexporttaggedindicators-3aa6557f.md) | This playbook gets triggered every hour and perform the following actions: 1. Get all the threat int... | - |
 
 ## Release Notes
 

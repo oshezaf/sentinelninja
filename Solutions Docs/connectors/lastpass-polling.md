@@ -4,7 +4,7 @@
 |:----------|:------|
 | **Connector ID** | `LastPass_Polling` |
 | **Publisher** | The Collective Consulting BV |
-| **Used in Solutions** | [LastPass](../solutions/lastpass.md) |
+| **Used in Solutions** | [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
 | **Collection Method** | CCF |
 | **Connector Definition Files** | [LastPassAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/LastPass/Data%20Connectors/LastPassAPIConnector.json) |
 

@@ -1,5 +1,9 @@
 # Bitwarden
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Bitwarden.svg" alt="Bitwarden Logo" width="75" height="75">
+
+This application provides insight into activity of your Bitwarden organization such as user's activity (logged in, changed password, 2fa, etc.), cipher activity (created, updated, deleted, shared, etc.), collection activity, organization activity, and more.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://bitwarden.com](https://bitwarden.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Bitwarden - hello@bitwarden.com |
 | **First Published** | 2024-05-12 |
 | **Last Updated** | 2024-10-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitwarden](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitwarden) |
@@ -41,15 +47,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [BitwardenEventLogsAuthentication](../content/bitwarden-bitwardeneventlogsauthentication.md) | - |
-| [BitwardenEventLogsOrganization](../content/bitwarden-bitwardeneventlogsorganization.md) | - |
-| [BitwardenEventLogsVaultItems](../content/bitwarden-bitwardeneventlogsvaultitems.md) | - |
+| [BitwardenEventLogsAuthentication](../content/bitwarden-bitwardeneventlogsauthentication-7af40b22.md) | - |
+| [BitwardenEventLogsOrganization](../content/bitwarden-bitwardeneventlogsorganization-9dd85e37.md) | - |
+| [BitwardenEventLogsVaultItems](../content/bitwarden-bitwardeneventlogsvaultitems-df3fce0f.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [BitwardenEventLogs](../content/bitwarden-bitwardeneventlogs-515d95cb-90f9-49b6-9056-327b2df08d37.md) | - | - |
+| [BitwardenEventLogs](../content/bitwarden-bitwardeneventlogs-515d95cb-90f9-49b6-9056-327b2df08d37-830fa29f.md) | - | - |
 
 ## Release Notes
 

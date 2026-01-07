@@ -1,5 +1,9 @@
 # Cortex XDR
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CortexXDR_Logo.svg" alt="Cortex XDR Logo" width="75" height="75">
+
+The [Palo Alto Networks](https://www.paloaltonetworks.com/) Cortex XDR Microsoft Sentinel Solution pulls log directly from the Cortex XDR platform via API. The solution is configured to pull the Incidents from the Cortex XDR platform every 5 minutes and ingest them into Microsoft Sentinel. The solution is dependent on the Cortex XDR API Key and API Key ID. The API Key ID is used as the polling key path and the API Key is used as the header for the API request. The solution also includes 3 analytics rules to detect the creation of incidents based on the severities (High, Medium, Low).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Microsoft |
 | **First Published** | 2023-07-12 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR) |
 
@@ -43,15 +49,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cortex XDR Incident - High](../content/cortex-xdr-cortex-xdr-incident---high-f96728eb-9802-4522-b715-47fb66c2ecf5.md) | High | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
-| [Cortex XDR Incident - Low](../content/cortex-xdr-cortex-xdr-incident---low-1426bbcf-a9ae-4aa5-9da6-abbf48f04115.md) | Low | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
-| [Cortex XDR Incident - Medium](../content/cortex-xdr-cortex-xdr-incident---medium-2b05823b-ee15-4b92-a642-b13170e37c35.md) | Medium | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
+| [Cortex XDR Incident - High](../content/cortex-xdr-cortex-xdr-incident-high-f96728eb-9802-4522-b715-47fb66c2ecf5-bb6320e4.md) | High | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
+| [Cortex XDR Incident - Low](../content/cortex-xdr-cortex-xdr-incident-low-1426bbcf-a9ae-4aa5-9da6-abbf48f04115-5efdbb9e.md) | Low | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
+| [Cortex XDR Incident - Medium](../content/cortex-xdr-cortex-xdr-incident-medium-2b05823b-ee15-4b92-a642-b13170e37c35-674c5fb1.md) | Medium | - | [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PaloAltoCortexXDR](../content/cortex-xdr-paloaltocortexxdr-d846f2f3-f691-4baf-a19f-82ce22e9c366.md) | - | - |
+| [PaloAltoCortexXDR](../content/cortex-xdr-paloaltocortexxdr-d846f2f3-f691-4baf-a19f-82ce22e9c366-807e5792.md) | - | - |
 
 ## Release Notes
 

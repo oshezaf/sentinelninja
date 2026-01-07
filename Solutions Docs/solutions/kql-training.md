@@ -1,5 +1,11 @@
 # KQL Training
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="KQL Training Logo" width="75" height="75">
+
+The KQL Training solution for Microsoft Sentinel contains resources that can help up – skill on understanding the fundamentals and using KQL in advanced scenarios like authoring effective and optimized queries used in Microsoft Sentinel Analytics, Hunting Queries, Workbooks, etc. 
+
+All content packaged in this solution is built and supported by the Microsoft Sentinel community. For any support, please create an [issue](https://github.com/Azure/Azure-Sentinel/issues) on the Microsoft Sentinel GitHub repository.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +14,8 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Community |
 | **First Published** | 2022-11-30 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/KQL%20Training](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/KQL%20Training) |
 
@@ -29,8 +37,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AdvancedKQL](../content/kql-training-advancedkql.md) | - |
-| [IntrotoKQL](../content/kql-training-introtokql.md) | - |
+| [AdvancedKQL](../content/kql-training-advancedkql-659581ac.md) | - |
+| [IntrotoKQL](../content/kql-training-introtokql-c4e57aaa.md) | - |
 
 ## Release Notes
 

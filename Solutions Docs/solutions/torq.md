@@ -1,5 +1,9 @@
 # Torq
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Torq.svg" alt="Torq Logo" width="75" height="75">
+
+[Torq](https://www.recordedfuture.com/) is the AI-Driven Hyperautomation Platform that helps security teams automate more faster
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.torq.io](https://support.torq.io) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Torq - support@torq.io |
 | **First Published** | 2024-12-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq) |
 
@@ -29,7 +35,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Notify Sentinel Incident Creation and Update to Torq Webhook](../content/torq-notify-sentinel-incident-creation-and-update-to-torq-webhook.md) | Sends an HTTPS request to a webhook trigger in Torq everytime a new Incident is created or updated i... | - |
+| [Notify Sentinel Incident Creation and Update to Torq Webhook](../content/torq-notify-sentinel-incident-creation-and-update-to-torq-webhook-11841fc6.md) | Sends an HTTPS request to a webhook trigger in Torq everytime a new Incident is created or updated i... | - |
 
 ## Release Notes
 

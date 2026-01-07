@@ -1,5 +1,11 @@
 # Google Cloud Platform VPC Flow Logs
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="Google Cloud Platform VPC Flow Logs Logo" width="75" height="75">
+
+The Google Cloud Platform (GCP) VPC Flow Logs enable you to capture network traffic activity at the VPC level, allowing you to monitor access patterns, analyze network performance, and detect potential threats across GCP resources.
+
+
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +14,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-02-12 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20VPC%20Flow%20Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20VPC%20Flow%20Logs) |
 

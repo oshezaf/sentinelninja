@@ -1,5 +1,7 @@
 # BlinkOps
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/blinkops.svg" alt="BlinkOps Logo" width="75" height="75">
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +10,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.blinkops.com](https://support.blinkops.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | BlinkOps - support@blinkops.com |
 | **First Published** | 2025-05-05 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps) |
 
@@ -29,8 +33,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Retrieve Alert from Microsoft Sentinel and Trigger a Blink Workflow via Webhook](../content/blinkops-retrieve-alert-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook.md) | Send a webhook request to a Blink workflow trigger whenever a new alert is created in Microsoft Sent... | - |
-| [Retrieve Incident from Microsoft Sentinel and Trigger a Blink Workflow via Webhook](../content/blinkops-retrieve-incident-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook.md) | Send a webhook request to a Blink workflow trigger whenever a new Incident is created in Microsoft S... | - |
+| [Retrieve Alert from Microsoft Sentinel and Trigger a Blink Workflow via Webhook](../content/blinkops-retrieve-alert-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook-ad4c28c2.md) | Send a webhook request to a Blink workflow trigger whenever a new alert is created in Microsoft Sent... | - |
+| [Retrieve Incident from Microsoft Sentinel and Trigger a Blink Workflow via Webhook](../content/blinkops-retrieve-incident-from-microsoft-sentinel-and-trigger-a-blink-workflow-via-webhook-dd423042.md) | Send a webhook request to a Blink workflow trigger whenever a new Incident is created in Microsoft S... | - |
 
 ## Release Notes
 

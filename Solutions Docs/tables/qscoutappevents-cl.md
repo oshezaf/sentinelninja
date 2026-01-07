@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Quokka](../solutions/quokka.md):**
-- [Quokka - Malicious Results Detected](../content/quokka-quokka---malicious-results-detected-97ad71ed-e4c0-4f7a-b1a2-683108bece4f.md)
+- [Quokka - Malicious Results Detected](../content/quokka-quokka-malicious-results-detected-97ad71ed-e4c0-4f7a-b1a2-683108bece4f-1210d06b.md)
 
 ### Workbooks (1)
 
 **In solution [Quokka](../solutions/quokka.md):**
-- [QscoutDashboards](../content/quokka-qscoutdashboards.md)
+- [QscoutDashboards](../content/quokka-qscoutdashboards-03cf0a2b.md)
 
 ---
 

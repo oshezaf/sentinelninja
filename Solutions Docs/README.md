@@ -6,29 +6,29 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 
 | Documentation | Description |
 |:--------------|:------------|
-| [Solutions Index](solutions-index.md) | Browse all 487 solutions |
+| [Solutions Index](solutions-index.md) | Browse all 484 solutions |
 | [Connectors Index](connectors-index.md) | Browse all 525 data connectors |
-| [Tables Index](tables-index.md) | Browse all 1680 log tables |
-| [Content Index](content/content-index.md) | Browse all 4828 content items |
+| [Tables Index](tables-index.md) | Browse all 1700 log tables |
+| [Content Index](content/content-index.md) | Browse all 4868 content items |
 
 ## Documentation Statistics
 
 | Category | Count |
 |:---------|------:|
-| Solutions | 487 |
+| Solutions | 484 |
 | Data Connectors | 525 |
-| Log Tables | 1,683 |
-| Content Items | 4,828 |
+| Log Tables | 1,700 |
+| Content Items | 4,868 |
 
 ### Content Items by Type
 
 | Type | Count |
 |:-----|------:|
-| Analytic Rules | 2,175 |
-| Hunting Queries | 1,158 |
+| Analytic Rules | 2,185 |
+| Hunting Queries | 1,168 |
 | Playbooks | 592 |
-| Workbooks | 349 |
-| Parsers | 513 |
+| Workbooks | 350 |
+| Parsers | 514 |
 | Watchlists | 41 |
 
 ## Directory Structure

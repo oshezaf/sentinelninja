@@ -1,0 +1,33 @@
+# AFD WAF - Path Traversal Attack
+
+Identifies a match for a Path Traversal based attack in the AFD WAF logs. The threshold value in the query can be changed as per your infrastructure's requirements. References: https://owasp.org/www-community/attacks/Path_Traversal
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
+| **ID** | `a4d99328-e4e6-493d-b0d5-57e6f9ddae77` |
+| **Severity** | High |
+| **Status** | Available |
+| **Kind** | Scheduled |
+| **Tactics** | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation, Discovery |
+| **Techniques** | T1548, T1203, T1190, T1548, T1087 |
+| **Required Connectors** | [WAF](../connectors/waf.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Web%20Application%20Firewall%20%28WAF%29/Analytic%20Rules/AFD-WAF-Path-Traversal-Attack.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+
+---
+
+**Browse:**
+
+- [← Back to Analytic Rules](analytic-rules.md)
+- [← Back to Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

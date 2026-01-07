@@ -1,5 +1,9 @@
 # Island
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/island.svg" alt="Island Logo" width="75" height="75">
+
+The [Island Enterprise Browser](https://www.island.io/) solution for Microsoft Sentinel enables you to ingest events for both User Activity and Admin Audit via API using Microsoft Sentinel CCP Data Connectors.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.island.io](https://www.island.io) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Island - support@island.io |
 | **First Published** | 2023-05-02 |
 | **Last Updated** | 2023-07-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island) |
@@ -40,8 +46,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IslandAdminAuditOverview](../content/island-islandadminauditoverview.md) | [`Island_Admin_CL`](../tables/island-admin-cl.md) |
-| [IslandUserActivityOverview](../content/island-islanduseractivityoverview.md) | [`Island_User_CL`](../tables/island-user-cl.md) |
+| [IslandAdminAuditOverview](../content/island-islandadminauditoverview-f64c0889.md) | [`Island_Admin_CL`](../tables/island-admin-cl.md) |
+| [IslandUserActivityOverview](../content/island-islanduseractivityoverview-2db014e3.md) | [`Island_User_CL`](../tables/island-user-cl.md) |
 
 ## Release Notes
 

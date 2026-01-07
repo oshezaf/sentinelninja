@@ -1,5 +1,15 @@
 # SlackAudit
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlackAudit/Data%20Connectors/Logo/slacklogo.svg" alt="SlackAudit Logo" width="75" height="75">
+
+The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capability to ingest [Slack Audit Records](https://api.slack.com/admins/audit-logs) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://api.slack.com/admins/audit-logs-call) for more information.
+ 
+ **Underlying Microsoft Technologies used:** 
+ 
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+ 
+  • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-03-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit) |
 
@@ -44,42 +56,42 @@ This solution includes **21 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SlackAudit - Empty User Agent](../content/slackaudit-slackaudit---empty-user-agent-04528635-a5f1-438b-ab74-21ca7bc3aa32.md) | Low | InitialAccess | - |
-| [SlackAudit - Multiple archived files uploaded in short period of time](../content/slackaudit-slackaudit---multiple-archived-files-uploaded-in-short-period-of-time-3db0cb83-5fa4-4310-a8a0-d8d66183f0bd.md) | Low | Exfiltration | - |
-| [SlackAudit - Multiple failed logins for user](../content/slackaudit-slackaudit---multiple-failed-logins-for-user-93a91c37-032c-4380-847c-957c001957ad.md) | Medium | CredentialAccess | - |
-| [SlackAudit - Public link created for file which can contain sensitive information.](../content/slackaudit-slackaudit---public-link-created-for-file-which-can-contain-sensitive-information.-279316e8-8965-47d2-9788-b94dc352c853.md) | Medium | Exfiltration | - |
-| [SlackAudit - Suspicious file downloaded.](../content/slackaudit-slackaudit---suspicious-file-downloaded.-132b98a5-07e9-401a-9b6f-453e52a53979.md) | Medium | InitialAccess | - |
-| [SlackAudit - Unknown User Agent](../content/slackaudit-slackaudit---unknown-user-agent-3b11f06e-4afd-4ae6-8477-c61136619ac8.md) | Low | CommandAndControl | - |
-| [SlackAudit - User email linked to account changed.](../content/slackaudit-slackaudit---user-email-linked-to-account-changed.-9d85feb3-7f54-4181-b143-68abb1a86823.md) | Medium | InitialAccess | - |
-| [SlackAudit - User login after deactivated.](../content/slackaudit-slackaudit---user-login-after-deactivated.-e6e99dcb-4dff-48d2-8012-206ca166b36b.md) | Medium | InitialAccess, Persistence, PrivilegeEscalation | - |
-| [SlackAudit - User role changed to admin or owner](../content/slackaudit-slackaudit---user-role-changed-to-admin-or-owner-be6c5fc9-2ac3-43e6-8fb0-cb139e04e43e.md) | Low | Persistence, PrivilegeEscalation | - |
+| [SlackAudit - Empty User Agent](../content/slackaudit-slackaudit-empty-user-agent-04528635-a5f1-438b-ab74-21ca7bc3aa32-dc53a71b.md) | Low | InitialAccess | - |
+| [SlackAudit - Multiple archived files uploaded in short period of time](../content/slackaudit-slackaudit-multiple-archived-files-uploaded-in-short-period-of-time-3db0cb83-5fa4-4310-a8a0-d8d66183f0bd-21e5a2f1.md) | Low | Exfiltration | - |
+| [SlackAudit - Multiple failed logins for user](../content/slackaudit-slackaudit-multiple-failed-logins-for-user-93a91c37-032c-4380-847c-957c001957ad-b5073227.md) | Medium | CredentialAccess | - |
+| [SlackAudit - Public link created for file which can contain sensitive information.](../content/slackaudit-slackaudit-public-link-created-for-file-which-can-contain-sensitive-information.-279316e8-8965-47d2-9788-b94dc352c853-de99164f.md) | Medium | Exfiltration | - |
+| [SlackAudit - Suspicious file downloaded.](../content/slackaudit-slackaudit-suspicious-file-downloaded.-132b98a5-07e9-401a-9b6f-453e52a53979-c4dde0cb.md) | Medium | InitialAccess | - |
+| [SlackAudit - Unknown User Agent](../content/slackaudit-slackaudit-unknown-user-agent-3b11f06e-4afd-4ae6-8477-c61136619ac8-6974a0f1.md) | Low | CommandAndControl | - |
+| [SlackAudit - User email linked to account changed.](../content/slackaudit-slackaudit-user-email-linked-to-account-changed.-9d85feb3-7f54-4181-b143-68abb1a86823-d563d143.md) | Medium | InitialAccess | - |
+| [SlackAudit - User login after deactivated.](../content/slackaudit-slackaudit-user-login-after-deactivated.-e6e99dcb-4dff-48d2-8012-206ca166b36b-e5724d2b.md) | Medium | InitialAccess, Persistence, PrivilegeEscalation | - |
+| [SlackAudit - User role changed to admin or owner](../content/slackaudit-slackaudit-user-role-changed-to-admin-or-owner-be6c5fc9-2ac3-43e6-8fb0-cb139e04e43e-2ec5dec7.md) | Low | Persistence, PrivilegeEscalation | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [SlackAudit - Applications installed](../content/slackaudit-slackaudit---applications-installed-cefd7f18-9359-4a99-bd18-965983bb724d.md) | InitialAccess | - |
-| [SlackAudit - Deactivated users](../content/slackaudit-slackaudit---deactivated-users-f2b2cd0d-6190-44aa-8e0e-265de45ee379.md) | Impact | - |
-| [SlackAudit - Downloaded files stats](../content/slackaudit-slackaudit---downloaded-files-stats-7865b00c-26c8-46db-9422-bb9e4ee696ac.md) | InitialAccess | - |
-| [SlackAudit - Failed logins with unknown username](../content/slackaudit-slackaudit---failed-logins-with-unknown-username-b62b5a97-41e5-47cb-9b90-aa079f65f0c0.md) | CredentialAccess | - |
-| [SlackAudit - New User created](../content/slackaudit-slackaudit---new-user-created-d65400c2-50a3-46cc-b3e6-1cb72b953e72.md) | Persistence | - |
-| [SlackAudit - Suspicious files downloaded](../content/slackaudit-slackaudit---suspicious-files-downloaded-31e54776-f2db-4465-b951-410880e009ad.md) | InitialAccess | - |
-| [SlackAudit - Uploaded files stats](../content/slackaudit-slackaudit---uploaded-files-stats-aa9bc100-012a-4348-820d-06606fc11299.md) | Exfiltration | - |
-| [SlackAudit - User Permission Changed](../content/slackaudit-slackaudit---user-permission-changed-7adbe474-debf-47c2-9d76-49efd4d2953b.md) | PrivilegeEscalation | - |
-| [SlackAudit - User logins by IP](../content/slackaudit-slackaudit---user-logins-by-ip-85850974-acbf-47bd-a635-4e3511b553c0.md) | InitialAccess, Persistence | - |
-| [SlackAudit - Users joined channels without invites](../content/slackaudit-slackaudit---users-joined-channels-without-invites-ef815b70-e6f6-427b-ac9f-56d73472c4c3.md) | InitialAccess, Persistence | - |
+| [SlackAudit - Applications installed](../content/slackaudit-slackaudit-applications-installed-cefd7f18-9359-4a99-bd18-965983bb724d-453a5c0c.md) | InitialAccess | - |
+| [SlackAudit - Deactivated users](../content/slackaudit-slackaudit-deactivated-users-f2b2cd0d-6190-44aa-8e0e-265de45ee379-fbc0a693.md) | Impact | - |
+| [SlackAudit - Downloaded files stats](../content/slackaudit-slackaudit-downloaded-files-stats-7865b00c-26c8-46db-9422-bb9e4ee696ac-6f7c397c.md) | InitialAccess | - |
+| [SlackAudit - Failed logins with unknown username](../content/slackaudit-slackaudit-failed-logins-with-unknown-username-b62b5a97-41e5-47cb-9b90-aa079f65f0c0-6f1116d0.md) | CredentialAccess | - |
+| [SlackAudit - New User created](../content/slackaudit-slackaudit-new-user-created-d65400c2-50a3-46cc-b3e6-1cb72b953e72-63039815.md) | Persistence | - |
+| [SlackAudit - Suspicious files downloaded](../content/slackaudit-slackaudit-suspicious-files-downloaded-31e54776-f2db-4465-b951-410880e009ad-6895491d.md) | InitialAccess | - |
+| [SlackAudit - Uploaded files stats](../content/slackaudit-slackaudit-uploaded-files-stats-aa9bc100-012a-4348-820d-06606fc11299-ca14633c.md) | Exfiltration | - |
+| [SlackAudit - User Permission Changed](../content/slackaudit-slackaudit-user-permission-changed-7adbe474-debf-47c2-9d76-49efd4d2953b-dd08ba0e.md) | PrivilegeEscalation | - |
+| [SlackAudit - User logins by IP](../content/slackaudit-slackaudit-user-logins-by-ip-85850974-acbf-47bd-a635-4e3511b553c0-d29da94a.md) | InitialAccess, Persistence | - |
+| [SlackAudit - Users joined channels without invites](../content/slackaudit-slackaudit-users-joined-channels-without-invites-ef815b70-e6f6-427b-ac9f-56d73472c4c3-40b271cd.md) | InitialAccess, Persistence | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SlackAudit](../content/slackaudit-slackaudit.md) | - |
+| [SlackAudit](../content/slackaudit-slackaudit-1483bfeb.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SlackAudit](../content/slackaudit-slackaudit-fb5aaeb6-14fa-45e8-bb4a-6d4c642a710e.md) | - | - |
+| [SlackAudit](../content/slackaudit-slackaudit-fb5aaeb6-14fa-45e8-bb4a-6d4c642a710e-da9ec765.md) | - | - |
 
 ## Release Notes
 

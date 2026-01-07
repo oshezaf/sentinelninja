@@ -1,5 +1,13 @@
 # Delinea Secret Server
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DelineaLogo.svg" alt="Delinea Secret Server Logo" width="75" height="75">
+
+The [Delinea](https://delinea.com/) Secret Server Microsoft Sentinel Data Solution enables delivery of Delinea Secret Server log messages to your Microsoft Sentinel Workspace.
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://delinea.com/support/](https://delinea.com/support/) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Delinea |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server) |
 
@@ -38,7 +48,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DelineaWorkbook](../content/delinea-secret-server-delineaworkbook.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [DelineaWorkbook](../content/delinea-secret-server-delineaworkbook-819c816c.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

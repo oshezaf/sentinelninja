@@ -4,7 +4,7 @@
 
 This table is used by the following solutions:
 
-- [LastPass](../solutions/lastpass.md)
+- [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md)
 
 ## Connectors (1)
 
@@ -18,22 +18,22 @@ This table is ingested by the following connectors:
 
 ### Analytic Rules (4)
 
-**In solution [LastPass](../solutions/lastpass.md):**
-- [Employee account deleted](../content/lastpass-employee-account-deleted-8a2cc466-342d-4ebb-8871-f9e1d83a24a5.md)
-- [Failed sign-ins into LastPass due to MFA](../content/lastpass-failed-sign-ins-into-lastpass-due-to-mfa-760b8467-e6cc-4006-9149-5696845c1a54.md)
-- [Highly Sensitive Password Accessed](../content/lastpass-highly-sensitive-password-accessed-b39e6482-ab7e-4817-813d-ec910b64b26e.md)
-- [TI map IP entity to LastPass data](../content/lastpass-ti-map-ip-entity-to-lastpass-data-2a723664-22c2-4d3e-bbec-5843b90166f3.md)
+**In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
+- [Employee account deleted](../content/lastpass-enterprise-activity-monitoring-employee-account-deleted-8a2cc466-342d-4ebb-8871-f9e1d83a24a5-b66df220.md)
+- [Failed sign-ins into LastPass due to MFA](../content/lastpass-enterprise-activity-monitoring-failed-sign-ins-into-lastpass-due-to-mfa-760b8467-e6cc-4006-9149-5696845c1a54-fcbe15ea.md)
+- [Highly Sensitive Password Accessed](../content/lastpass-enterprise-activity-monitoring-highly-sensitive-password-accessed-b39e6482-ab7e-4817-813d-ec910b64b26e-7f4d83e0.md)
+- [TI map IP entity to LastPass data](../content/lastpass-enterprise-activity-monitoring-ti-map-ip-entity-to-lastpass-data-2a723664-22c2-4d3e-bbec-5843b90166f3-0a2d4dc2.md)
 
 ### Hunting Queries (2)
 
-**In solution [LastPass](../solutions/lastpass.md):**
-- [Failed sign-ins into LastPass due to MFA.](../content/lastpass-failed-sign-ins-into-lastpass-due-to-mfa.-b43fc364-69fc-4d3e-8834-6743ab5725e9.md)
-- [Password moved to shared folders](../content/lastpass-password-moved-to-shared-folders-e70f1b22-acd1-493f-bba5-b28bea988940.md)
+**In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
+- [Failed sign-ins into LastPass due to MFA.](../content/lastpass-enterprise-activity-monitoring-failed-sign-ins-into-lastpass-due-to-mfa.-b43fc364-69fc-4d3e-8834-6743ab5725e9-ed093fc6.md)
+- [Password moved to shared folders](../content/lastpass-enterprise-activity-monitoring-password-moved-to-shared-folders-e70f1b22-acd1-493f-bba5-b28bea988940-a97b85fb.md)
 
 ### Workbooks (1)
 
-**In solution [LastPass](../solutions/lastpass.md):**
-- [LastPassWorkbook](../content/lastpass-lastpassworkbook.md)
+**In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
+- [LastPassWorkbook](../content/lastpass-enterprise-activity-monitoring-lastpassworkbook-a0d8c4ef.md)
 
 ---
 

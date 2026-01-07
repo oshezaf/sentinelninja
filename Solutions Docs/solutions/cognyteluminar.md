@@ -1,5 +1,9 @@
 # CognyteLuminar
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CognyteLuminar.svg" alt="CognyteLuminar Logo" width="75" height="75">
+
+Luminar IOCs and Leaked Credentials connector allows integration of intelligence-based IOC data and customer-related leaked records identified by Luminar.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cognyte.com/contact/](https://www.cognyte.com/contact/) |
 | **Categories** | domains |
+| **Version** | 3.0.2 |
+| **Author** | Cognyte |
 | **First Published** | 2023-09-15 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar) |
 

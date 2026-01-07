@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md):**
-- [InfoSecGlobal](../content/agilesec-analytics-connector-infosecglobal.md)
+- [InfoSecGlobal](../content/agilesec-analytics-connector-infosecglobal-f1e4d51f.md)
 
 ---
 

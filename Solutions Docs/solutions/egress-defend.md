@@ -1,5 +1,9 @@
 # Egress Defend
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="Egress Defend Logo" width="75" height="75">
+
+Egress Defend for Microsoft Sentinel provides details of processed emails, including the type of phishing attack, payload type and information to show if the user interacted with the email in a positive (clicking on banners or submitting the phish sample) or negative (clicking on an unsafe URL) manner.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.egress.com/s/](https://support.egress.com/s/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Egress - support@egress.com |
 | **First Published** | 2023-07-27 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend) |
 
@@ -40,26 +46,28 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Egress Defend - Dangerous Attachment Detected](../content/egress-defend-egress-defend---dangerous-attachment-detected-a0e55dd4-8454-4396-91e6-f28fec3d2cab.md) | Medium | Execution, InitialAccess, Persistence, PrivilegeEscalation | - |
-| [Egress Defend - Dangerous Link Click](../content/egress-defend-egress-defend---dangerous-link-click-a896123e-03a5-4a4d-a7e3-fd814846dfb2.md) | Medium | Execution | - |
+| [Egress Defend - Dangerous Attachment Detected](../content/egress-defend-egress-defend-dangerous-attachment-detected-a0e55dd4-8454-4396-91e6-f28fec3d2cab-f2c1e438.md) | Medium | Execution, InitialAccess, Persistence, PrivilegeEscalation | - |
+| [Egress Defend - Dangerous Link Click](../content/egress-defend-egress-defend-dangerous-link-click-a896123e-03a5-4a4d-a7e3-fd814846dfb2-cd7508b8.md) | Medium | Execution | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Dangerous emails with links clicked](../content/egress-defend-dangerous-emails-with-links-clicked-57ada8d5-7a26-4440-97fd-32c5c3fd0421.md) | Collection | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
+| [Dangerous emails with links clicked](../content/egress-defend-dangerous-emails-with-links-clicked-57ada8d5-7a26-4440-97fd-32c5c3fd0421-6c714e87.md) | Collection | [`EgressDefend_CL`](../tables/egressdefend-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DefendMetrics](../content/egress-defend-defendmetrics.md) | - |
+| [DefendMetrics](../content/egress-defend-defendmetrics-35b2f8e1.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DefendAuditData](../content/egress-defend-defendauditdata-0d23aae5-6f59-47d8-902e-ba136b64a094.md) | - | - |
+| [DefendAuditData](../content/egress-defend-defendauditdata-0d23aae5-6f59-47d8-902e-ba136b64a094-882acf80.md) ⚠️ | - | - |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 

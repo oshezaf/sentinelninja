@@ -1,4 +1,14 @@
-# NXLogDnsLogs
+# NXLogDNSLogs
+
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="NXLogDNSLogs Logo" width="75" height="75">
+
+The [NXLog DNSLogs](https://docs.nxlog.co/refman/current/im/etw.html) solution for Microsoft Sentinel enables you to ingest DNS server events. NXLog DNSLogs uses Event Tracing for Windows [(ETW)](https://docs.microsoft.com/windows/apps/trace-processing/overview?WT.mc_id=Portal-fx) for collecting both Audit and Analytical DNS server events.[The NXLog im_etw module](https://docs.nxlog.co/refman/current/im/etw.html) reads event tracing data directly for maximum efficiency, without the need to capture the event trace into an .etl file. 
+ 
+ **Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
 
 ## Solution Information
 
@@ -8,6 +18,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://nxlog.co/support-tickets/add/support-ticket](https://nxlog.co/support-tickets/add/support-ticket) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | NXLog |
 | **First Published** | 2022-05-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLogDnsLogs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLogDnsLogs) |
 
@@ -37,7 +49,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ASimDnsMicrosoftNXLog](../content/nxlogdnslogs-asimdnsmicrosoftnxlog-274a2fc6-eda0-430d-9e02-7a7c0850eb0e.md) | - | - |
+| [ASimDnsMicrosoftNXLog](../content/nxlogdnslogs-asimdnsmicrosoftnxlog-274a2fc6-eda0-430d-9e02-7a7c0850eb0e-d0a2aace.md) | - | - |
 
 ---
 

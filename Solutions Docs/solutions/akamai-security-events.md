@@ -1,5 +1,13 @@
 # Akamai Security Events
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/akamai.svg" alt="Akamai Security Events Logo" width="75" height="75">
+
+The Akamai Security Solution for Microsoft Sentinel enables ingestion of [Akamai Security Solutions](https://www.akamai.com/solutions/security) events using the Common Event Format (CEF) into Microsoft Sentinel for Security Monitoring. 
+
+This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.2 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-03-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Security%20Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Security%20Events) |
 
@@ -38,7 +48,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AkamaiSIEMEvent](../content/akamai-security-events-akamaisiemevent-9db78fa7-e565-45ee-8478-e562630b084a.md) | - | - |
+| [AkamaiSIEMEvent](../content/akamai-security-events-akamaisiemevent-9db78fa7-e565-45ee-8478-e562630b084a-c8d28ae9.md) | - | - |
 
 ## Release Notes
 

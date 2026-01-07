@@ -29,7 +29,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
-- [Dns](../content/windows-server-dns-dns.md)
+- [Dns](../content/windows-server-dns-dns-ed7f9abb.md)
 
 ## Resource Types
 

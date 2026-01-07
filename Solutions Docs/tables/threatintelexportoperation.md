@@ -14,7 +14,7 @@ Reference for ThreatIntelExportOperation table in Azure Monitor Logs.
 
 This table is used by the following solutions:
 
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-%28new%29.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ## Connectors (1)
 

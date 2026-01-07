@@ -1,5 +1,9 @@
 # SlashNext SIEM
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlashNext%20SIEM/Playbook/logo/slashnext-logo.svg" alt="SlashNext SIEM Logo" width="75" height="75">
+
+The Slashnext SIEM logic app retrieves incidents associated with a customer from various sources such as SMS, mobile devices, web extensions, and emails. These incidents are then presented and recorded within the Log Analytic Workspace.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://slashnext.com/support](https://slashnext.com/support) |
 | **Categories** | domains |
+| **Version** | 3.1.0 |
+| **Author** | SlashNext - support@slashnext.net |
 | **First Published** | 2023-05-26 |
 | **Last Updated** | 2023-06-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext%20SIEM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext%20SIEM) |
@@ -38,7 +44,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SlashNext Security Events for Microsoft Sentinel - Get customer incidents and log](../content/slashnext-siem-slashnext-security-events-for-microsoft-sentinel---get-customer-incidents-and-log.md) | The playbook will run after every 3 mintues to get list of events occured to a customer in that time... | [`SlashNext_CL`](../tables/slashnext-cl.md) *(write)* |
+| [SlashNext Security Events for Microsoft Sentinel - Get customer incidents and log](../content/slashnext-siem-slashnext-security-events-for-microsoft-sentinel-get-customer-incidents-and-log-a81ddf6c.md) | The playbook will run after every 3 mintues to get list of events occured to a customer in that time... | [`SlashNext_CL`](../tables/slashnext-cl.md) *(write)* |
 
 ## Release Notes
 

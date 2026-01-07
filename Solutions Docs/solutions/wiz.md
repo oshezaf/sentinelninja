@@ -1,5 +1,17 @@
 # Wiz
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Wiz.svg" alt="Wiz Logo" width="75" height="75">
+
+The [Wiz](https://wiz.io/) solution for Microsoft Sentinel enables you to ingest [Wiz Issues](https://docs.wiz.io/wiz-docs/docs/issues), [Wiz Vulnerability Findings](https://docs.wiz.io/wiz-docs/docs/vulnerability-findings), and [Wiz Audit Logs](https://docs.wiz.io/wiz-docs/docs/audit-log-settings) into Microsoft Sentinel using the Wiz REST API.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+b. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/#overview) 
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.wiz.io/](https://support.wiz.io/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Wiz - support@wiz.io |
 | **First Published** | 2023-06-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz) |
 
@@ -42,7 +56,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WizFindings](../content/wiz-wizfindings.md) | [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md)<br>[`WizIssues_CL`](../tables/wizissues-cl.md) |
+| [WizFindings](../content/wiz-wizfindings-78285767.md) | [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md)<br>[`WizIssues_CL`](../tables/wizissues-cl.md) |
 
 ## Release Notes
 

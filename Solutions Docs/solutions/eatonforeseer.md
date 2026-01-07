@@ -1,5 +1,9 @@
 # EatonForeseer
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="EatonForeseer Logo" width="75" height="75">
+
+[Eaton Foreseer](https://www.eaton.com/in/en-us/catalog/services/foreseer.html) OT application generates logs into Microsoft Sentinel using MMA or AMA, use the Analytics template for creating Analytic Rules on unauthorized login attempts into the application and gain insights into login activity using the provided workbooks.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 2.0.0 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EatonForeseer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EatonForeseer) |
 
@@ -38,13 +44,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [EatonForeseer - Unauthorized Logins](../content/eatonforeseer-eatonforeseer---unauthorized-logins-5a7fccb8-3ed0-44f2-8477-540af3ef4d92.md) | High | InitialAccess | [`SecurityEvent`](../tables/securityevent.md) |
+| [EatonForeseer - Unauthorized Logins](../content/eatonforeseer-eatonforeseer-unauthorized-logins-5a7fccb8-3ed0-44f2-8477-540af3ef4d92-5a9d46ba.md) | High | InitialAccess | [`SecurityEvent`](../tables/securityevent.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [EatonForeseerHealthAndAccess](../content/eatonforeseer-eatonforeseerhealthandaccess.md) | [`SecurityEvent`](../tables/securityevent.md) |
+| [EatonForeseerHealthAndAccess](../content/eatonforeseer-eatonforeseerhealthandaccess-aeaee6f8.md) | [`SecurityEvent`](../tables/securityevent.md) |
 
 ---
 

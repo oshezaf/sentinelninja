@@ -1,5 +1,17 @@
 # Netskope
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Netskope Logo" width="75" height="75">
+
+The [Netskope Cloud Security Platform](https://www.netskope.com/platform) solution for Microsoft Sentinel enables you to ingest Netskope logs and events into Microsoft Sentinel. The connector provides visibility into Netskope Platform Events and Alerts in Microsoft Sentinel to improve monitoring and investigation capabilities.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+- [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+- [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netskope.com/services#support](https://www.netskope.com/services#support) |
 | **Categories** | domains |
+| **Version** | 2.0.3 |
+| **Author** | Netskope |
 | **First Published** | 2022-05-05 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskope](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskope) |
 
@@ -41,13 +55,15 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [NetskopeEvents](../content/netskope-netskopeevents.md) | [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md)<br>[`Netskope_Events_CL`](../tables/netskope-events-cl.md)<br>[`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) |
+| [NetskopeEvents](../content/netskope-netskopeevents-8c0bf08d.md) | [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md)<br>[`Netskope_Events_CL`](../tables/netskope-events-cl.md)<br>[`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Netskope](../content/netskope-netskope-9b3be3d9-99e1-43fa-8d82-3e90f8df7f42.md) | - | - |
+| [Netskope](../content/netskope-netskope-9b3be3d9-99e1-43fa-8d82-3e90f8df7f42-9393ce81.md) ⚠️ | - | - |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ---
 

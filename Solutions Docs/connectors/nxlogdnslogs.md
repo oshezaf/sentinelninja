@@ -4,7 +4,7 @@
 |:----------|:------|
 | **Connector ID** | `NXLogDNSLogs` |
 | **Publisher** | NXLog |
-| **Used in Solutions** | [NXLogDnsLogs](../solutions/nxlogdnslogs.md) |
+| **Used in Solutions** | [NXLogDNSLogs](../solutions/nxlogdnslogs.md) |
 | **Collection Method** | REST API |
 | **Connector Definition Files** | [NXLogDnsLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLogDnsLogs/Data%20Connectors/NXLogDnsLogs.json) |
 

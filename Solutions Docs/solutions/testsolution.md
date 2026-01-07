@@ -7,6 +7,7 @@
 | **Publisher** |  |
 | **Support Tier** |  |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TestSolution](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TestSolution) |
 
 ## Data Connectors

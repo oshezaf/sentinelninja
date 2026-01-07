@@ -1,5 +1,19 @@
 # ESET Protect Platform
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/eset-logo.svg" alt="ESET Protect Platform Logo" width="75" height="75">
+
+ESET Protect Platform solution for Microsoft Sentinel ingests detections from [ESET Protect Platform](https://www.eset.com/int/business/protect-platform/) using the provided [Integration REST API](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform/Data%20Connectors). 
+
+**Underlying Microsoft Technologies used:**
+
+The ESET Protect Platform solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Logs Ingestion API in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview)
+
+b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +22,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://help.eset.com/eset_connect/en-US/integrations.html](https://help.eset.com/eset_connect/en-US/integrations.html) |
 | **Categories** | domains |
+| **Version** | 3.2.0 |
+| **Author** | ESET |
 | **First Published** | 2024-10-29 |
 | **Last Updated** | 2025-06-17 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform) |
@@ -39,7 +55,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ESETProtectPlatform](../content/eset-protect-platform-esetprotectplatform-b0f36d45-4e08-4764-9200-4c5f7d706bb2.md) | - | - |
+| [ESETProtectPlatform](../content/eset-protect-platform-esetprotectplatform-b0f36d45-4e08-4764-9200-4c5f7d706bb2-e015d3d0.md) | - | - |
 
 ## Release Notes
 

@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Wiz](../solutions/wiz.md):**
-- [WizFindings](../content/wiz-wizfindings.md)
+- [WizFindings](../content/wiz-wizfindings-78285767.md)
 
 ---
 

@@ -1,5 +1,9 @@
 # AbuseIPDB
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="AbuseIPDB Logo" width="75" height="75">
+
+The [AbuseIPDB](https://www.abuseipdb.com/about) solution for Microsoft Sentinel allows you to check the reputation of IP addresses in log data and perform automated actions like enriching a Microsoft Sentinel incident by IP reputation information, add blacklisted IP addresses to ThreatIntelligenceIndicator table and reporting IPs to Abuse IPDB based on a user response in Teams.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.2 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB) |
 
@@ -29,9 +35,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AbuseIPDB Blacklist Ip To Threat Intelligence](../content/abuseipdb-abuseipdb-blacklist-ip-to-threat-intelligence.md) | By every day reccurence, this playbook gets triggered and performs the following actions: 1. Gets [l... | - |
-| [AbuseIPDB Enrich Incident By IP Info](../content/abuseipdb-abuseipdb-enrich-incident-by-ip-info.md) | Once a new sentinal incident is created, this playbook gets triggered and performs the following act... | - |
-| [AbuseIPDB Report IPs To AbuseIPDB After User Response In MSTeams](../content/abuseipdb-abuseipdb-report-ips-to-abuseipdb-after-user-response-in-msteams.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [AbuseIPDB Blacklist Ip To Threat Intelligence](../content/abuseipdb-abuseipdb-blacklist-ip-to-threat-intelligence-f3279435.md) | By every day reccurence, this playbook gets triggered and performs the following actions: 1. Gets [l... | - |
+| [AbuseIPDB Enrich Incident By IP Info](../content/abuseipdb-abuseipdb-enrich-incident-by-ip-info-ec814639.md) | Once a new sentinal incident is created, this playbook gets triggered and performs the following act... | - |
+| [AbuseIPDB Report IPs To AbuseIPDB After User Response In MSTeams](../content/abuseipdb-abuseipdb-report-ips-to-abuseipdb-after-user-response-in-msteams-1d81545b.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ## Release Notes
 

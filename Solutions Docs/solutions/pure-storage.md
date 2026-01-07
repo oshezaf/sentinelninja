@@ -1,5 +1,9 @@
 # Pure Storage
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/purestorage_logo.svg" alt="Pure Storage Logo" width="75" height="75">
+
+Solution for Microsoft Sentinel to ingest logs from PureStorage arrays
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.purestorage.com](https://support.purestorage.com) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Pure Storage - support@purestorage.com |
 | **First Published** | 2024-02-05 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage) |
 
@@ -39,25 +45,25 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [External Fabric Module XFM1 is unhealthy](../content/pure-storage-external-fabric-module-xfm1-is-unhealthy-a8130dcc-3617-41c0-a7ac-5f352bcfffaf.md) | High | Execution | [`Syslog`](../tables/syslog.md) |
-| [Pure Controller Failed](../content/pure-storage-pure-controller-failed-c317b007-84e7-4449-93f4-4444f6638fd0.md) | High | Execution | [`Syslog`](../tables/syslog.md) |
-| [Pure Failed Login](../content/pure-storage-pure-failed-login-ed32b115-5001-43a7-a2bb-f53026db4d97.md) | High | CredentialAccess | [`Syslog`](../tables/syslog.md) |
+| [External Fabric Module XFM1 is unhealthy](../content/pure-storage-external-fabric-module-xfm1-is-unhealthy-a8130dcc-3617-41c0-a7ac-5f352bcfffaf-9171f737.md) | High | Execution | [`Syslog`](../tables/syslog.md) |
+| [Pure Controller Failed](../content/pure-storage-pure-controller-failed-c317b007-84e7-4449-93f4-4444f6638fd0-857a505b.md) | High | Execution | [`Syslog`](../tables/syslog.md) |
+| [Pure Failed Login](../content/pure-storage-pure-failed-login-ed32b115-5001-43a7-a2bb-f53026db4d97-7948e1d0.md) | High | CredentialAccess | [`Syslog`](../tables/syslog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Pure Storage FlashBlade File System Snapshot](../content/pure-storage-pure-storage-flashblade-file-system-snapshot.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
-| [Pure Storage Protection Group Snapshot](../content/pure-storage-pure-storage-protection-group-snapshot.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
-| [Pure Storage User Deletion](../content/pure-storage-pure-storage-user-deletion.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious user activity... | - |
-| [Pure Storage Volume Snapshot](../content/pure-storage-pure-storage-volume-snapshot.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
+| [Pure Storage FlashBlade File System Snapshot](../content/pure-storage-pure-storage-flashblade-file-system-snapshot-2cf3736e.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
+| [Pure Storage Protection Group Snapshot](../content/pure-storage-pure-storage-protection-group-snapshot-9fcd6aff.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
+| [Pure Storage User Deletion](../content/pure-storage-pure-storage-user-deletion-9d7757a4.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious user activity... | - |
+| [Pure Storage Volume Snapshot](../content/pure-storage-pure-storage-volume-snapshot-5248fe1a.md) | This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and ... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PureStorageFlashArrayParser](../content/pure-storage-purestorageflasharrayparser-008b25eb-aeec-4751-9a42-3a0102e9774b.md) | - | - |
-| [PureStorageFlashBladeParser](../content/pure-storage-purestorageflashbladeparser-c76dff08-ca13-467d-a143-c33cc226585c.md) | - | - |
+| [PureStorageFlashArrayParser](../content/pure-storage-purestorageflasharrayparser-008b25eb-aeec-4751-9a42-3a0102e9774b-1902bf2e.md) | - | - |
+| [PureStorageFlashBladeParser](../content/pure-storage-purestorageflashbladeparser-c76dff08-ca13-467d-a143-c33cc226585c-0bf3302c.md) | - | - |
 
 ## Release Notes
 

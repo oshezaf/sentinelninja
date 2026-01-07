@@ -1,5 +1,19 @@
 # Auth0
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Auth0.svg" alt="Auth0 Logo" width="75" height="75">
+
+The [Auth0 Access Management](https://auth0.com/access-management) solution for Microsoft Sentinel provides the capability to ingest [Auth0 log events](https://auth0.com/docs/api/management/v2/#!/Logs/get_logs) into your Microsoft Sentinel workspace.
+  
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +22,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.1.1 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0) |
 
@@ -39,8 +55,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Auth0](../content/auth0-auth0-4563059e-9b11-4978-86e7-0bb6e22e23bb.md) | - | - |
-| [Auth0AM](../content/auth0-auth0am-a6453489-5e6c-4976-bfc7-f9d234fde3ca.md) | - | - |
+| [Auth0](../content/auth0-auth0-4563059e-9b11-4978-86e7-0bb6e22e23bb-96f2be7e.md) | - | - |
+| [Auth0AM](../content/auth0-auth0am-a6453489-5e6c-4976-bfc7-f9d234fde3ca-b3c9858a.md) | - | - |
 
 ## Additional Documentation
 

@@ -4,7 +4,7 @@
 
 This table is used by the following solutions:
 
-- [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security---exchange-on-premises.md)
+- [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 ## Connectors (1)
 
@@ -18,9 +18,9 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security---exchange-on-premises.md):**
-- [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-least-privilege-with-rbac.md)
-- [Microsoft Exchange Security Review](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-security-review.md)
+**In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):**
+- [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-least-privilege-with-rbac-b2849cd8.md)
+- [Microsoft Exchange Security Review](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md)
 
 ---
 

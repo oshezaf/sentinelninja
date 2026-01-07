@@ -19,8 +19,8 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [GitHub](../solutions/github.md):**
-- [GitHub](../content/github-github.md)
-- [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity.md)
+- [GitHub](../content/github-github-87916f66.md)
+- [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md)
 
 ---
 

@@ -1,5 +1,22 @@
 # Common Event Format
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Common Event Format Logo" width="75" height="75">
+
+The Common Event Format (CEF) solution for Microsoft Sentinel allows you to ingest logs from any product and/or appliance that can send logs in the [Common Event Format (CEF) over Syslog messages](https://docs.microsoft.com/azure/sentinel/connect-common-event-format). 
+
+Installing this solution will deploy two data connectors,
+
+1. Common Event Format via AMA - This data connector helps in ingesting CEF formatted logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). Microsoft recommends using this Data Connector
+2. Common Event Format via Legacy Agent - This data connector helps in ingesting CEF formatted logs into your Log Analytics Workspace using the legacy Log Analytics agent.
+
+<P style="color:red">**NOTE**: Microsoft recommends Installation of Common Event Format via AMA. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.</p>
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Agent-based log collection (CEF over Syslog)](https://docs.microsoft.com/azure/sentinel/connect-common-event-format)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +25,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-30 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Common%20Event%20Format](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Common%20Event%20Format) |
 
@@ -38,7 +57,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CEFOverviewWorkbook](../content/common-event-format-cefoverviewworkbook.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [CEFOverviewWorkbook](../content/common-event-format-cefoverviewworkbook-a335b98c.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

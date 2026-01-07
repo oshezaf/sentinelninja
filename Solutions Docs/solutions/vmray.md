@@ -1,5 +1,9 @@
 # VMRay
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vmray.svg" alt="VMRay Logo" width="75" height="75">
+
+ The VMRay Connector for Microsoft Sentinel enhances security operations by providing enriched threat intelligence, enabling faster and more informed responses to security incidents. The integration has two main parts: first, URL detonation and enrichment, which provides detailed insights into suspicious URLs. Second, it automatically generates and feeds threat intelligence for all submissions to VMRay, improving threat detection and incident response in Sentinel. This seamless integration empowers teams to proactively address emerging threats.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.vmray.com/contact/customer-support/](https://www.vmray.com/contact/customer-support/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | VMRay |
 | **First Published** | 2025-07-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay) |
 
@@ -37,8 +43,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [VMRay Email Attachment Analyis](../content/vmray-vmray-email-attachment-analyis.md) | Submits a attachment or set of attachment associated with an office 365 email to VMRay for Analyis. | - |
-| [VMRay URL Analyis](../content/vmray-vmray-url-analyis.md) | Submits a url or set of urls associated with an incident to VMRay for Analyis. | - |
+| [VMRay Email Attachment Analyis](../content/vmray-vmray-email-attachment-analyis-2ae966ed.md) | Submits a attachment or set of attachment associated with an office 365 email to VMRay for Analyis. | - |
+| [VMRay URL Analyis](../content/vmray-vmray-url-analyis-9fed46b1.md) | Submits a url or set of urls associated with an incident to VMRay for Analyis. | - |
 
 ## Additional Documentation
 

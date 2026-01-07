@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
-- [NetworkSessionEssentialsV2](../content/network-session-essentials-networksessionessentialsv2.md)
+- [NetworkSessionEssentialsV2](../content/network-session-essentials-networksessionessentialsv2-9408ac84.md)
 
 ---
 

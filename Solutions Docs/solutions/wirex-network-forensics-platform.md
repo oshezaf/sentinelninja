@@ -1,5 +1,13 @@
 # WireX Network Forensics Platform
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/wirex-systems_logo.svg" alt="WireX Network Forensics Platform Logo" width="75" height="75">
+
+The [WireX Systems](https://wirexsystems.com/) solution allows custom dashboards and workflows during forensic investigation integrated with Microsoft Sentinel.
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://wirexsystems.com/contact-us/](https://wirexsystems.com/contact-us/) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | WireX Systems - info@wirexsystems.com |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform) |
 

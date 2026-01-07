@@ -1,5 +1,17 @@
 # Alibaba Cloud
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Alibaba Cloud Logo" width="75" height="75">
+
+The [Alibaba Cloud](https://www.alibabacloud.com/product/log-service) solution provides the capability to retrieve logs from cloud applications using the Cloud API and more events into Microsoft Sentinel through the [REST API](https://aliyun-log-python-sdk.readthedocs.io/api.html). 
+ 
+ **Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+ 
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+ 
+ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud) |
 
@@ -37,7 +51,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AliCloud](../content/alibaba-cloud-alicloud-e310f050-75af-4059-b0ff-0ae7c7db8120.md) | - | - |
+| [AliCloud](../content/alibaba-cloud-alicloud-e310f050-75af-4059-b0ff-0ae7c7db8120-fb2ca7da.md) | - | - |
 
 ## Release Notes
 

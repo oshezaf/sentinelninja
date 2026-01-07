@@ -23,7 +23,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [InvestigationInsights](../content/soc-handbook-investigationinsights.md)
+- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 ---
 

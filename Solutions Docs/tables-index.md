@@ -13,9 +13,31 @@ Browse all tables used by Microsoft Sentinel solutions and data connectors.
 
 ## Overview
 
-This page lists **1683 unique tables** (811 ingested by connectors, 872 referenced by content only).
+This page lists **1700 unique tables** (811 ingested by connectors, 889 referenced by content only).
 
-**Jump to:** [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
+**Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
+
+## #
+
+| Table | Solutions | Connectors |
+|-------|-----------|------------|
+| [`_Im_NetworkSession_AWSVPCV03`](tables/im-networksession-awsvpcv03.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_AppGateSDPV02`](tables/im-networksession-appgatesdpv02.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_CheckPointFirewallV11`](tables/im-networksession-checkpointfirewallv11.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_CiscoASAV10`](tables/im-networksession-ciscoasav10.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_CiscoFirepowerV01`](tables/im-networksession-ciscofirepowerv01.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_CiscoISEV11`](tables/im-networksession-ciscoisev11.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_ForcePointFirewallV01`](tables/im-networksession-forcepointfirewallv01.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_FortinetFortiGateV04`](tables/im-networksession-fortinetfortigatev04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_LinuxSysmonV04`](tables/im-networksession-linuxsysmonv04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_Microsoft365DefenderV04`](tables/im-networksession-microsoft365defenderv04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_MicrosoftWindowsEventFirewallV04`](tables/im-networksession-microsoftwindowseventfirewallv04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_NativeV03`](tables/im-networksession-nativev03.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_PaloAltoCEFV07`](tables/im-networksession-paloaltocefv07.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_SonicWallFirewallV01`](tables/im-networksession-sonicwallfirewallv01.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_VMConnectionV02`](tables/im-networksession-vmconnectionv02.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_WatchGuardFirewareOSV01`](tables/im-networksession-watchguardfirewareosv01.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+| [`_Im_NetworkSession_ZscalerZIAV04`](tables/im-networksession-zscalerziav04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
 
 ## A
 
@@ -36,13 +58,13 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`AADDomainServicesSystemSecurity`](tables/aaddomainservicessystemsecurity.md) |  |  |
 | [`AADFirstPartyToFirstPartySignInLogs`](tables/aadfirstpartytofirstpartysigninlogs.md) |  |  |
 | [`AADGraphActivityLogs`](tables/aadgraphactivitylogs.md) |  |  |
-| [`AADManagedIdentitySignInLogs`](tables/aadmanagedidentitysigninlogs.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
+| [`AADManagedIdentitySignInLogs`](tables/aadmanagedidentitysigninlogs.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
 | [`AADNonInteractiveUserSignInLogs`](tables/aadnoninteractiveusersigninlogs.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[Lumen Defender Threat Feed](solutions/lumen-defender-threat-feed.md)<br>[Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
 | [`AADProvisioningLogs`](tables/aadprovisioninglogs.md) | [Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
 | [`AADRiskyServicePrincipals`](tables/aadriskyserviceprincipals.md) | [Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
 | [`AADRiskyUsers`](tables/aadriskyusers.md) | [Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
 | [`AADServicePrincipalRiskEvents`](tables/aadserviceprincipalriskevents.md) | [Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
-| [`AADServicePrincipalSignInLogs`](tables/aadserviceprincipalsigninlogs.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
+| [`AADServicePrincipalSignInLogs`](tables/aadserviceprincipalsigninlogs.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[Microsoft Entra ID](solutions/microsoft-entra-id.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
 | [`AADSignInEventsBeta`](tables/aadsignineventsbeta.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) |  |
 | [`AADSpnSignInEventsBeta`](tables/aadspnsignineventsbeta.md) |  |  |
 | [`AADUserRiskEvents`](tables/aaduserriskevents.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[GDPR Compliance & Data Security](solutions/gdpr-compliance-&-data-security.md)<br>[Microsoft Entra ID](solutions/microsoft-entra-id.md)<br>[+2 more](tables/aaduserriskevents.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
@@ -133,8 +155,8 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`AGCFirewallLogs`](tables/agcfirewalllogs.md) |  |  |
 | [`AGSGrafanaLoginEvents`](tables/agsgrafanaloginevents.md) |  |  |
 | [`AGSGrafanaUsageInsightsEvents`](tables/agsgrafanausageinsightsevents.md) |  |  |
-| [`AGWAccessLogs`](tables/agwaccesslogs.md) | [Azure Web Application Firewall (WAF)](solutions/azure-web-application-firewall-%28waf%29.md) |  |
-| [`AGWFirewallLogs`](tables/agwfirewalllogs.md) | [Azure Web Application Firewall (WAF)](solutions/azure-web-application-firewall-%28waf%29.md) |  |
+| [`AGWAccessLogs`](tables/agwaccesslogs.md) | [Azure Web Application Firewall (WAF)](solutions/azure-web-application-firewall-waf.md) |  |
+| [`AGWFirewallLogs`](tables/agwfirewalllogs.md) | [Azure Web Application Firewall (WAF)](solutions/azure-web-application-firewall-waf.md) |  |
 | [`AGWPerformanceLogs`](tables/agwperformancelogs.md) |  |  |
 | [`AHCIDiagnosticLogs`](tables/ahcidiagnosticlogs.md) |  |  |
 | [`AHDSDeidAuditLogs`](tables/ahdsdeidauditlogs.md) |  |  |
@@ -205,7 +227,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`AWSCloudTrailCCP`](tables/awscloudtrailccp.md) |  |  |
 | [`AWSCloudWatch`](tables/awscloudwatch.md) | [Amazon Web Services](solutions/amazon-web-services.md) | [Amazon Web Services S3](connectors/awss3.md) |
 | [`AWSCloudWatchCCP`](tables/awscloudwatchccp.md) |  |  |
-| [`AWSGuardDuty`](tables/awsguardduty.md) | [Amazon Web Services](solutions/amazon-web-services.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[Multi Cloud Attack Coverage Essentials - Resource Abuse](solutions/multi-cloud-attack-coverage-essentials---resource-abuse.md) | [Amazon Web Services S3](connectors/awss3.md) |
+| [`AWSGuardDuty`](tables/awsguardduty.md) | [Amazon Web Services](solutions/amazon-web-services.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[Multi Cloud Attack Coverage Essentials - Resource Abuse](solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) | [Amazon Web Services S3](connectors/awss3.md) |
 | [`AWSGuardDutyCCP`](tables/awsguarddutyccp.md) |  |  |
 | [`AWSNLBAccessLogs`](tables/awsnlbaccesslogs.md) |  |  |
 | [`AWSNetworkFirewallAlert`](tables/awsnetworkfirewallalert.md) | [Amazon Web Services NetworkFirewall](solutions/amazon-web-services-networkfirewall.md) | [Amazon Web Services NetworkFirewall (via Codeless Connector Framework)](connectors/awsnetworkfirewallccpdefinition.md) |
@@ -322,7 +344,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`AppServiceConsoleLogs`](tables/appserviceconsolelogs.md) |  |  |
 | [`AppServiceEnvironmentPlatformLogs`](tables/appserviceenvironmentplatformlogs.md) |  |  |
 | [`AppServiceFileAuditLogs`](tables/appservicefileauditlogs.md) |  |  |
-| [`AppServiceHTTPLogs`](tables/appservicehttplogs.md) | [Threat Intelligence](solutions/threat-intelligence.md)<br>[Threat Intelligence (NEW)](solutions/threat-intelligence-%28new%29.md) |  |
+| [`AppServiceHTTPLogs`](tables/appservicehttplogs.md) | [Threat Intelligence](solutions/threat-intelligence.md)<br>[Threat Intelligence (NEW)](solutions/threat-intelligence-new.md) |  |
 | [`AppServiceIPSecAuditLogs`](tables/appserviceipsecauditlogs.md) |  |  |
 | [`AppServicePlatformLogs`](tables/appserviceplatformlogs.md) |  |  |
 | [`AppServiceServerlessSecurityPluginData`](tables/appserviceserverlesssecurityplugindata.md) |  |  |
@@ -336,7 +358,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`Armis_Devices_CL`](tables/armis-devices-cl.md) | [Armis](solutions/armis.md) | [Armis Devices](connectors/armisdevices.md) |
 | [`Armorblox_CL`](tables/armorblox-cl.md) | [Armorblox](solutions/armorblox.md) | [Armorblox](connectors/armorblox.md) |
 | [`AtlassianConfluenceNativePoller_CL`](tables/atlassianconfluencenativepoller-cl.md) | [AtlassianConfluenceAudit](solutions/atlassianconfluenceaudit.md) | [Atlassian Confluence](connectors/atlassianconfluence.md) |
-| [`AuditLogs`](tables/auditlogs.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[Business Email Compromise - Financial Fraud](solutions/business-email-compromise---financial-fraud.md)<br>[Cloud Identity Threat Protection Essentials](solutions/cloud-identity-threat-protection-essentials.md)<br>[+12 more](tables/auditlogs.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
+| [`AuditLogs`](tables/auditlogs.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md)<br>[Cloud Identity Threat Protection Essentials](solutions/cloud-identity-threat-protection-essentials.md)<br>[+12 more](tables/auditlogs.md) | [Microsoft Entra ID](connectors/azureactivedirectory.md) |
 | [`Audit_CL`](tables/audit-cl.md) | [Mimecast](solutions/mimecast.md) | [Mimecast Audit](connectors/mimecastauditapi.md) |
 | [`Audits_Data_CL`](tables/audits-data-cl.md) | [Vectra XDR](solutions/vectra-xdr.md) | [Vectra XDR](connectors/vectraxdr.md) |
 | [`Auth0AM_CL`](tables/auth0am-cl.md) | [Auth0](solutions/auth0.md) | [Auth0 Access Management](connectors/auth0.md) |
@@ -348,7 +370,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`Awareness_SafeScore_Details_CL`](tables/awareness-safescore-details-cl.md) | [Mimecast](solutions/mimecast.md) | [Mimecast Awareness Training](connectors/mimecastatapi.md) |
 | [`Awareness_User_Data_CL`](tables/awareness-user-data-cl.md) | [Mimecast](solutions/mimecast.md) | [Mimecast Awareness Training](connectors/mimecastatapi.md) |
 | [`Awareness_Watchlist_Details_CL`](tables/awareness-watchlist-details-cl.md) | [Mimecast](solutions/mimecast.md) | [Mimecast Awareness Training](connectors/mimecastatapi.md) |
-| [`AwsBucketAPILogs_CL`](tables/awsbucketapilogs-cl.md) | [Business Email Compromise - Financial Fraud](solutions/business-email-compromise---financial-fraud.md) |  |
+| [`AwsBucketAPILogs_CL`](tables/awsbucketapilogs-cl.md) | [Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md) |  |
 | [`AzureActivity`](tables/azureactivity.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[Azure Activity](solutions/azure-activity.md)<br>[AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[+12 more](tables/azureactivity.md) | [Azure Activity](connectors/azureactivity.md) |
 | [`AzureAssessmentRecommendation`](tables/azureassessmentrecommendation.md) |  |  |
 | [`AzureAttestationDiagnostics`](tables/azureattestationdiagnostics.md) |  |  |
@@ -389,13 +411,13 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`BHETierZeroAssetsData_CL`](tables/bhetierzeroassetsdata-cl.md) | [BloodHound Enterprise](solutions/bloodhound-enterprise.md) |  |
 | [`BSMmacOS_CL`](tables/bsmmacos-cl.md) | [NXLog BSM macOS](solutions/nxlog-bsm-macos.md) | [NXLog BSM macOS](connectors/nxlogbsmmacos.md) |
 | [`Barracuda_CL`](tables/barracuda-cl.md) | [Barracuda WAF](solutions/barracuda-waf.md) | [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](connectors/barracuda.md) |
-| [`BehaviorAnalytics`](tables/behavioranalytics.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[Business Email Compromise - Financial Fraud](solutions/business-email-compromise---financial-fraud.md)<br>[Cloud Identity Threat Protection Essentials](solutions/cloud-identity-threat-protection-essentials.md)<br>[+8 more](tables/behavioranalytics.md) |  |
+| [`BehaviorAnalytics`](tables/behavioranalytics.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md)<br>[Cloud Identity Threat Protection Essentials](solutions/cloud-identity-threat-protection-essentials.md)<br>[+8 more](tables/behavioranalytics.md) |  |
 | [`BehaviorEntities`](tables/behaviorentities.md) |  |  |
 | [`BehaviorInfo`](tables/behaviorinfo.md) |  |  |
-| [`BetterMTDAppLog_CL`](tables/bettermtdapplog-cl.md) | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-%28mtd%29.md) | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) |
-| [`BetterMTDDeviceLog_CL`](tables/bettermtddevicelog-cl.md) | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-%28mtd%29.md) | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) |
-| [`BetterMTDIncidentLog_CL`](tables/bettermtdincidentlog-cl.md) | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-%28mtd%29.md) | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) |
-| [`BetterMTDNetflowLog_CL`](tables/bettermtdnetflowlog-cl.md) | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-%28mtd%29.md) | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) |
+| [`BetterMTDAppLog_CL`](tables/bettermtdapplog-cl.md) | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-mtd.md) | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) |
+| [`BetterMTDDeviceLog_CL`](tables/bettermtddevicelog-cl.md) | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-mtd.md) | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) |
+| [`BetterMTDIncidentLog_CL`](tables/bettermtdincidentlog-cl.md) | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-mtd.md) | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) |
+| [`BetterMTDNetflowLog_CL`](tables/bettermtdnetflowlog-cl.md) | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-mtd.md) | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) |
 | [`BigIDDSPMCatalog_CL`](tables/bigiddspmcatalog-cl.md) | [BigID](solutions/bigid.md) | [BigID DSPM connector](connectors/bigiddspmlogsconnectordefinition.md) |
 | [`BitglassLogs_CL`](tables/bitglasslogs-cl.md) | [Bitglass](solutions/bitglass.md) | [Bitglass](connectors/bitglass.md) |
 | [`BitsightAlerts_data_CL`](tables/bitsightalerts-data-cl.md) | [BitSight](solutions/bitsight.md) | [Bitsight data connector](connectors/bitsight.md) |
@@ -452,7 +474,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`ChaosStudioExperimentEventLogs`](tables/chaosstudioexperimenteventlogs.md) |  |  |
 | [`CiscoDuo_CL`](tables/ciscoduo-cl.md) | [CiscoDuoSecurity](solutions/ciscoduosecurity.md) | [Cisco Duo Security](connectors/ciscoduosecurity.md) |
 | [`CiscoETD_CL`](tables/ciscoetd-cl.md) | [Cisco ETD](solutions/cisco-etd.md) | [Cisco ETD](connectors/ciscoetd.md) |
-| [`CiscoMerakiNativePoller_CL`](tables/ciscomerakinativepoller-cl.md) | [CiscoMeraki](solutions/ciscomeraki.md) | [[Deprecated] Cisco Meraki](connectors/ciscomeraki.md)<br>[Cisco Meraki (using REST API)](connectors/ciscomeraki%28usingrestapi%29.md)<br>[Cisco Meraki (using REST API)](connectors/ciscomerakinativepoller.md) |
+| [`CiscoMerakiNativePoller_CL`](tables/ciscomerakinativepoller-cl.md) | [CiscoMeraki](solutions/ciscomeraki.md) | [[Deprecated] Cisco Meraki](connectors/ciscomeraki.md)<br>[Cisco Meraki (using REST API)](connectors/ciscomeraki-usingrestapi.md)<br>[Cisco Meraki (using REST API)](connectors/ciscomerakinativepoller.md) |
 | [`CiscoSDWANNetflow_CL`](tables/ciscosdwannetflow-cl.md) | [Cisco SD-WAN](solutions/cisco-sd-wan.md) | [Cisco Software Defined WAN](connectors/ciscosdwan.md) |
 | [`CiscoSecureEndpointAuditLogsV2_CL`](tables/ciscosecureendpointauditlogsv2-cl.md) | [Cisco Secure Endpoint](solutions/cisco-secure-endpoint.md) | [Cisco Secure Endpoint (via Codeless Connector Framework)](connectors/ciscosecureendpointlogsccpdefinition.md) |
 | [`CiscoSecureEndpointEventsV2_CL`](tables/ciscosecureendpointeventsv2-cl.md) | [Cisco Secure Endpoint](solutions/cisco-secure-endpoint.md) | [Cisco Secure Endpoint (via Codeless Connector Framework)](connectors/ciscosecureendpointlogsccpdefinition.md) |
@@ -490,7 +512,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`CommvaultSecurityIQ_CL`](tables/commvaultsecurityiq-cl.md) | [Commvault Security IQ](solutions/commvault-security-iq.md) | [CommvaultSecurityIQ](connectors/commvaultsecurityiq-cl.md) |
 | [`ComputerGroup`](tables/computergroup.md) |  |  |
 | [`ConfidentialWatchlist`](tables/confidentialwatchlist.md) |  |  |
-| [`ConfigurationChange`](tables/configurationchange.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[NISTSP80053](solutions/nistsp80053.md) |  |
+| [`ConfigurationChange`](tables/configurationchange.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[NISTSP80053](solutions/nistsp80053.md) |  |
 | [`ConfigurationData`](tables/configurationdata.md) | [ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md) |  |
 | [`ConfluenceAuditLogs_CL`](tables/confluenceauditlogs-cl.md) | [AtlassianConfluenceAudit](solutions/atlassianconfluenceaudit.md) | [ Atlassian Confluence Audit (via Codeless Connector Framework)](connectors/confluenceauditccpdefinition.md) |
 | [`Confluence_Audit_CL`](tables/confluence-audit-cl.md) | [AtlassianConfluenceAudit](solutions/atlassianconfluenceaudit.md) | [[Deprecated] Atlassian Confluence Audit](connectors/confluenceauditapi.md) |
@@ -783,7 +805,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`DeviceCustomProcessEvents`](tables/devicecustomprocessevents.md) |  |  |
 | [`DeviceCustomScriptEvents`](tables/devicecustomscriptevents.md) |  |  |
 | [`DeviceEtw`](tables/deviceetw.md) |  |  |
-| [`DeviceEvents`](tables/deviceevents.md) | [ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[Endpoint Threat Protection Essentials](solutions/endpoint-threat-protection-essentials.md)<br>[+4 more](tables/deviceevents.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
+| [`DeviceEvents`](tables/deviceevents.md) | [ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[Endpoint Threat Protection Essentials](solutions/endpoint-threat-protection-essentials.md)<br>[+4 more](tables/deviceevents.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`DeviceFileCertificateInfo`](tables/devicefilecertificateinfo.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`DeviceFileEvents`](tables/devicefileevents.md) | [ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md)<br>[FalconFriday](solutions/falconfriday.md)<br>[Google Threat Intelligence](solutions/google-threat-intelligence.md)<br>[+4 more](tables/devicefileevents.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`DeviceHardwareHealth`](tables/devicehardwarehealth.md) |  |  |
@@ -822,7 +844,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`DruvaPlatformEvents_CL`](tables/druvaplatformevents-cl.md) | [DruvaDataSecurityCloud](solutions/druvadatasecuritycloud.md) | [Druva Events Connector](connectors/druvaeventccpdefinition.md) |
 | [`DruvaSecurityEvents_CL`](tables/druvasecurityevents-cl.md) | [DruvaDataSecurityCloud](solutions/druvadatasecuritycloud.md) | [Druva Events Connector](connectors/druvaeventccpdefinition.md) |
 | [`DummyHydrationFact`](tables/dummyhydrationfact.md) |  |  |
-| [`DuoSecurityAuthentication_CL`](tables/duosecurityauthentication-cl.md) | [Threat Intelligence](solutions/threat-intelligence.md)<br>[Threat Intelligence (NEW)](solutions/threat-intelligence-%28new%29.md) |  |
+| [`DuoSecurityAuthentication_CL`](tables/duosecurityauthentication-cl.md) | [Threat Intelligence](solutions/threat-intelligence.md)<br>[Threat Intelligence (NEW)](solutions/threat-intelligence-new.md) |  |
 | [`DurableTaskSchedulerLogs`](tables/durabletaskschedulerlogs.md) |  |  |
 | [`DynamicEventCollection`](tables/dynamiceventcollection.md) |  |  |
 | [`Dynamics365Activity`](tables/dynamics365activity.md) | [Dynamics 365](solutions/dynamics-365.md) | [Dynamics 365](connectors/dynamics365.md) |
@@ -861,15 +883,15 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`EGNSuccessfulHttpDataPlaneOperations`](tables/egnsuccessfulhttpdataplaneoperations.md) |  |  |
 | [`EGNSuccessfulMqttConnections`](tables/egnsuccessfulmqttconnections.md) |  |  |
 | [`ESETInspect_CL`](tables/esetinspect-cl.md) | [ESET Inspect](solutions/eset-inspect.md) | [ESET Inspect](connectors/esetinspect.md) |
-| [`ESIExchangeConfig_CL`](tables/esiexchangeconfig-cl.md) | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md) | [Exchange Security Insights On-Premises Collector](connectors/esi-exchangeonpremisescollector.md) |
-| [`ESIExchangeOnlineConfig_CL`](tables/esiexchangeonlineconfig-cl.md) | [Microsoft Exchange Security - Exchange Online](solutions/microsoft-exchange-security---exchange-online.md) | [Exchange Security Insights Online Collector](connectors/esi-exchangeonlinecollector.md) |
+| [`ESIExchangeConfig_CL`](tables/esiexchangeconfig-cl.md) | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) | [Exchange Security Insights On-Premises Collector](connectors/esi-exchangeonpremisescollector.md) |
+| [`ESIExchangeOnlineConfig_CL`](tables/esiexchangeonlineconfig-cl.md) | [Microsoft Exchange Security - Exchange Online](solutions/microsoft-exchange-security-exchange-online.md) | [Exchange Security Insights Online Collector](connectors/esi-exchangeonlinecollector.md) |
 | [`ETWEvent`](tables/etwevent.md) |  |  |
 | [`EdgeActionConsoleLog`](tables/edgeactionconsolelog.md) |  |  |
 | [`EgressDefend_CL`](tables/egressdefend-cl.md) | [Egress Defend](solutions/egress-defend.md) | [Egress Defend](connectors/egressdefendpolling.md) |
 | [`EgressEvents_CL`](tables/egressevents-cl.md) | [Egress Iris](solutions/egress-iris.md) | [Egress Iris Connector](connectors/egresssiempolling.md) |
 | [`ElasticAgentLogs_CL`](tables/elasticagentlogs-cl.md) | [ElasticAgent](solutions/elasticagent.md) | [Elastic Agent](connectors/elasticagent.md) |
-| [`EmailAttachmentInfo`](tables/emailattachmentinfo.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md)<br>[Microsoft Defender for Office 365](solutions/microsoft-defender-for-office-365.md)<br>[ZeroTrust(TIC3.0)](solutions/zerotrust%28tic3.0%29.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
-| [`EmailEvents`](tables/emailevents.md) | [Business Email Compromise - Financial Fraud](solutions/business-email-compromise---financial-fraud.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[Microsoft Business Applications](solutions/microsoft-business-applications.md)<br>[+3 more](tables/emailevents.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
+| [`EmailAttachmentInfo`](tables/emailattachmentinfo.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md)<br>[Microsoft Defender for Office 365](solutions/microsoft-defender-for-office-365.md)<br>[ZeroTrust(TIC3.0)](solutions/zerotrust-tic3.0.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
+| [`EmailEvents`](tables/emailevents.md) | [Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[Microsoft Business Applications](solutions/microsoft-business-applications.md)<br>[+3 more](tables/emailevents.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`EmailPostDeliveryEvents`](tables/emailpostdeliveryevents.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`EmailUrlInfo`](tables/emailurlinfo.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md)<br>[Microsoft Defender for Office 365](solutions/microsoft-defender-for-office-365.md)<br>[Threat Intelligence](solutions/threat-intelligence.md)<br>[+1 more](tables/emailurlinfo.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`EnrichedMicrosoft365AuditLogs`](tables/enrichedmicrosoft365auditlogs.md) |  |  |
@@ -880,7 +902,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`ErmesBrowserSecurityEvents_CL`](tables/ermesbrowsersecurityevents-cl.md) | [Ermes Browser Security](solutions/ermes-browser-security.md) | [Ermes Browser Security Events](connectors/ermesbrowsersecurityevents.md) |
 | [`Event`](tables/event.md) | [ALC-WebCTRL](solutions/alc-webctrl.md)<br>[Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[Attacker Tools Threat Protection Essentials](solutions/attacker-tools-threat-protection-essentials.md)<br>[+17 more](tables/event.md) | [Automated Logic WebCTRL ](connectors/automatedlogicwebctrl.md)<br>[[Deprecated] Microsoft Exchange Logs and Events](connectors/esi-exchangeadminauditlogevents.md)<br>[Microsoft Exchange Admin Audit Logs by Event Logs](connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md)<br>[Microsoft Exchange Logs and Events](connectors/esi-opt2exchangeserverseventlogs.md)<br>[Mimecast Intelligence for Microsoft - Microsoft Sentinel](connectors/mimecasttiregionalconnectorazurefunctions.md) |
 | [`ExchangeAssessmentRecommendation`](tables/exchangeassessmentrecommendation.md) |  |  |
-| [`ExchangeHttpProxy_CL`](tables/exchangehttpproxy-cl.md) | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md) | [[Deprecated] Microsoft Exchange Logs and Events](connectors/esi-exchangeadminauditlogevents.md)<br>[Microsoft Exchange HTTP Proxy Logs](connectors/esi-opt7exchangehttpproxylogs.md) |
+| [`ExchangeHttpProxy_CL`](tables/exchangehttpproxy-cl.md) | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) | [[Deprecated] Microsoft Exchange Logs and Events](connectors/esi-exchangeadminauditlogevents.md)<br>[Microsoft Exchange HTTP Proxy Logs](connectors/esi-opt7exchangehttpproxylogs.md) |
 | [`ExchangeOnlineAssessmentRecommendation`](tables/exchangeonlineassessmentrecommendation.md) |  |  |
 | [`ExposureGraphEdges`](tables/exposuregraphedges.md) |  |  |
 | [`ExposureGraphNodes`](tables/exposuregraphnodes.md) |  |  |
@@ -897,10 +919,10 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 
 | Table | Solutions | Connectors |
 |-------|-----------|------------|
-| [`F5Telemetry_ASM_CL`](tables/f5telemetry-asm-cl.md) | [F5 BIG-IP](solutions/f5-big-ip.md) | [F5 BIG-IP](connectors/f5bigip.md) |
-| [`F5Telemetry_AVR_CL`](tables/f5telemetry-avr-cl.md) | [F5 BIG-IP](solutions/f5-big-ip.md) |  |
-| [`F5Telemetry_LTM_CL`](tables/f5telemetry-ltm-cl.md) | [F5 BIG-IP](solutions/f5-big-ip.md) | [F5 BIG-IP](connectors/f5bigip.md) |
-| [`F5Telemetry_system_CL`](tables/f5telemetry-system-cl.md) | [F5 BIG-IP](solutions/f5-big-ip.md) | [F5 BIG-IP](connectors/f5bigip.md) |
+| [`F5Telemetry_ASM_CL`](tables/f5telemetry-asm-cl.md) | [F5 Big-IP](solutions/f5-big-ip.md) | [F5 BIG-IP](connectors/f5bigip.md) |
+| [`F5Telemetry_AVR_CL`](tables/f5telemetry-avr-cl.md) | [F5 Big-IP](solutions/f5-big-ip.md) |  |
+| [`F5Telemetry_LTM_CL`](tables/f5telemetry-ltm-cl.md) | [F5 Big-IP](solutions/f5-big-ip.md) | [F5 BIG-IP](connectors/f5bigip.md) |
+| [`F5Telemetry_system_CL`](tables/f5telemetry-system-cl.md) | [F5 Big-IP](solutions/f5-big-ip.md) | [F5 BIG-IP](connectors/f5bigip.md) |
 | [`FSPGPGBouncer`](tables/fspgpgbouncer.md) |  |  |
 | [`FailedIngestion`](tables/failedingestion.md) |  |  |
 | [`Failed_Range_To_Ingest_CL`](tables/failed-range-to-ingest-cl.md) | [Infoblox](solutions/infoblox.md) | [Infoblox Data Connector via REST API](connectors/infobloxdataconnector.md) |
@@ -918,14 +940,14 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`ForescoutPolicyStatus_CL`](tables/forescoutpolicystatus-cl.md) | [ForescoutHostPropertyMonitor](solutions/forescouthostpropertymonitor.md) | [Forescout Host Property Monitor](connectors/forescouthostpropertymonitor.md) |
 | [`FunctionAppLogs`](tables/functionapplogs.md) |  |  |
 | [`feedly_indicators_CL`](tables/feedly-indicators-cl.md) | [Feedly](solutions/feedly.md) | [Feedly](connectors/feedly.md) |
-| [`fluentbit_CL`](tables/fluentbit-cl.md) | [Azure Cloud NGFW by Palo Alto Networks](solutions/azure-cloud-ngfw-by-palo-alto-networks.md) | [Azure CloudNGFW By Palo Alto Networks](connectors/azurecloudngfwbypaloaltonetworks.md) |
+| [`fluentbit_CL`](tables/fluentbit-cl.md) | [Azure Cloud NGFW By Palo Alto Networks](solutions/azure-cloud-ngfw-by-palo-alto-networks.md) | [Azure CloudNGFW By Palo Alto Networks](connectors/azurecloudngfwbypaloaltonetworks.md) |
 
 ## G
 
 | Table | Solutions | Connectors |
 |-------|-----------|------------|
 | [`GCPApigee`](tables/gcpapigee.md) | [Google Apigee](solutions/google-apigee.md) | [Google ApigeeX (via Codeless Connector Framework)](connectors/googleapigeexlogsccpdefinition.md) |
-| [`GCPAuditLogs`](tables/gcpauditlogs.md) | [Google Cloud Platform Audit Logs](solutions/google-cloud-platform-audit-logs.md)<br>[Multi Cloud Attack Coverage Essentials - Resource Abuse](solutions/multi-cloud-attack-coverage-essentials---resource-abuse.md) | [GCP Pub/Sub Audit Logs](connectors/gcpauditlogsdefinition.md)<br>[GCP Pub/Sub Audit Logs](connectors/gcppub-subauditlogs.md) |
+| [`GCPAuditLogs`](tables/gcpauditlogs.md) | [Google Cloud Platform Audit Logs](solutions/google-cloud-platform-audit-logs.md)<br>[Multi Cloud Attack Coverage Essentials - Resource Abuse](solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) | [GCP Pub/Sub Audit Logs](connectors/gcpauditlogsdefinition.md)<br>[GCP Pub/Sub Audit Logs](connectors/gcppub-subauditlogs.md) |
 | [`GCPCDN`](tables/gcpcdn.md) | [GoogleCloudPlatformCDN](solutions/googlecloudplatformcdn.md) | [Google Cloud Platform CDN (via Codeless Connector Framework)](connectors/gcpcdnlogsccpdefinition.md) |
 | [`GCPCloudRun`](tables/gcpcloudrun.md) | [Google Cloud Platform Cloud Run](solutions/google-cloud-platform-cloud-run.md) | [GCP Cloud Run (via Codeless Connector Framework)](connectors/gcpcloudrunlogs-connectordefinition.md) |
 | [`GCPCloudSQL`](tables/gcpcloudsql.md) | [GoogleCloudPlatformSQL](solutions/googlecloudplatformsql.md) | [GCP Cloud SQL (via Codeless Connector Framework)](connectors/gcpcloudsqlccfdefinition.md) |
@@ -1058,7 +1080,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`IdentityAccountInfo`](tables/identityaccountinfo.md) |  |  |
 | [`IdentityDirectoryEvents`](tables/identitydirectoryevents.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md)<br>[SOX IT Compliance](solutions/sox-it-compliance.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`IdentityEvents`](tables/identityevents.md) |  |  |
-| [`IdentityInfo`](tables/identityinfo.md) | [Business Email Compromise - Financial Fraud](solutions/business-email-compromise---financial-fraud.md)<br>[Cloud Identity Threat Protection Essentials](solutions/cloud-identity-threat-protection-essentials.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[+10 more](tables/identityinfo.md) |  |
+| [`IdentityInfo`](tables/identityinfo.md) | [Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md)<br>[Cloud Identity Threat Protection Essentials](solutions/cloud-identity-threat-protection-essentials.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[+10 more](tables/identityinfo.md) |  |
 | [`IdentityLogonEvents`](tables/identitylogonevents.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`IdentityQueryEvents`](tables/identityqueryevents.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`IllumioFlowEventsV2_CL`](tables/illumiofloweventsv2-cl.md) | [IllumioSaaS](solutions/illumiosaas.md) | [Illumio Saas](connectors/illumiosaasccfdefinition.md) |
@@ -1079,7 +1101,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`Infoblox_Config_Insight_Details_CL`](tables/infoblox-config-insight-details-cl.md) | [Infoblox](solutions/infoblox.md) |  |
 | [`Infoblox_Config_Insights_CL`](tables/infoblox-config-insights-cl.md) | [Infoblox](solutions/infoblox.md) |  |
 | [`Infoblox_Failed_Indicators_CL`](tables/infoblox-failed-indicators-cl.md) | [Infoblox](solutions/infoblox.md) | [Infoblox Data Connector via REST API](connectors/infobloxdataconnector.md) |
-| [`InformationProtectionLogs_CL`](tables/informationprotectionlogs-cl.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[+4 more](tables/informationprotectionlogs-cl.md) |  |
+| [`InformationProtectionLogs_CL`](tables/informationprotectionlogs-cl.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[+4 more](tables/informationprotectionlogs-cl.md) |  |
 | [`InsightsMetrics`](tables/insightsmetrics.md) |  |  |
 | [`IntegrationTableIncidents_CL`](tables/integrationtableincidents-cl.md) | [ESET Protect Platform](solutions/eset-protect-platform.md) | [ESET Protect Platform](connectors/esetprotectplatform.md) |
 | [`IntegrationTable_CL`](tables/integrationtable-cl.md) | [ESET Protect Platform](solutions/eset-protect-platform.md) | [ESET Protect Platform](connectors/esetprotectplatform.md) |
@@ -1144,7 +1166,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`LASummaryLogs`](tables/lasummarylogs.md) |  |  |
 | [`LIATrackingEvents`](tables/liatrackingevents.md) |  |  |
 | [`LLMActivity`](tables/llmactivity.md) |  |  |
-| [`LastPassNativePoller_CL`](tables/lastpassnativepoller-cl.md) | [LastPass](solutions/lastpass.md) | [LastPass Enterprise - Reporting (Polling CCP)](connectors/lastpass-polling.md) |
+| [`LastPassNativePoller_CL`](tables/lastpassnativepoller-cl.md) | [Lastpass Enterprise Activity Monitoring](solutions/lastpass-enterprise-activity-monitoring.md) | [LastPass Enterprise - Reporting (Polling CCP)](connectors/lastpass-polling.md) |
 | [`LinuxAuditLog`](tables/linuxauditlog.md) |  |  |
 | [`LinuxAudit_CL`](tables/linuxaudit-cl.md) | [NXLog LinuxAudit](solutions/nxlog-linuxaudit.md) | [NXLog LinuxAudit](connectors/nxloglinuxaudit.md) |
 | [`Lockdown_Data_CL`](tables/lockdown-data-cl.md) | [Vectra XDR](solutions/vectra-xdr.md) | [Vectra XDR](connectors/vectraxdr.md) |
@@ -1214,7 +1236,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`MeshControlPlane`](tables/meshcontrolplane.md) |  |  |
 | [`MessageEvents`](tables/messageevents.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) |  |
 | [`MessagePostDeliveryEvents`](tables/messagepostdeliveryevents.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) |  |
-| [`MessageTrackingLog_CL`](tables/messagetrackinglog-cl.md) | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md) | [[Deprecated] Microsoft Exchange Logs and Events](connectors/esi-exchangeadminauditlogevents.md)<br>[Microsoft Exchange Message Tracking Logs](connectors/esi-opt6exchangemessagetrackinglogs.md) |
+| [`MessageTrackingLog_CL`](tables/messagetrackinglog-cl.md) | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) | [[Deprecated] Microsoft Exchange Logs and Events](connectors/esi-exchangeadminauditlogevents.md)<br>[Microsoft Exchange Message Tracking Logs](connectors/esi-opt6exchangemessagetrackinglogs.md) |
 | [`MessageUrlInfo`](tables/messageurlinfo.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) |  |
 | [`MicrosoftAzureBastionAuditLogs`](tables/microsoftazurebastionauditlogs.md) |  |  |
 | [`MicrosoftDataShareReceivedSnapshotLog`](tables/microsoftdatasharereceivedsnapshotlog.md) |  |  |
@@ -1237,9 +1259,9 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`MySqlAuditLogs`](tables/mysqlauditlogs.md) |  |  |
 | [`MySqlErrorLogs`](tables/mysqlerrorlogs.md) |  |  |
 | [`MySqlSlowLogs`](tables/mysqlslowlogs.md) |  |  |
-| [`maillog_CL`](tables/maillog-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand%28pod%29-email-security.md) | [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
-| [`meraki_CL`](tables/meraki-cl.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[CiscoMeraki](solutions/ciscomeraki.md)<br>[CustomLogsAma](solutions/customlogsama.md)<br>[+12 more](tables/meraki-cl.md) | [[Deprecated] Cisco Meraki](connectors/ciscomeraki.md)<br>[Cisco Meraki (using REST API)](connectors/ciscomeraki%28usingrestapi%29.md)<br>[Cisco Meraki (using REST API)](connectors/ciscomerakinativepoller.md)<br>[Custom logs via AMA](connectors/customlogsviaama.md) |
-| [`message_CL`](tables/message-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand%28pod%29-email-security.md) | [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
+| [`maillog_CL`](tables/maillog-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) | [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
+| [`meraki_CL`](tables/meraki-cl.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[CiscoMeraki](solutions/ciscomeraki.md)<br>[CustomLogsAma](solutions/customlogsama.md)<br>[+12 more](tables/meraki-cl.md) | [[Deprecated] Cisco Meraki](connectors/ciscomeraki.md)<br>[Cisco Meraki (using REST API)](connectors/ciscomeraki-usingrestapi.md)<br>[Cisco Meraki (using REST API)](connectors/ciscomerakinativepoller.md)<br>[Custom logs via AMA](connectors/customlogsviaama.md) |
+| [`message_CL`](tables/message-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) | [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
 
 ## N
 
@@ -1254,7 +1276,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`NCCPlatformOperationsLogs`](tables/nccplatformoperationslogs.md) |  |  |
 | [`NCCVMOrchestrationLogs`](tables/nccvmorchestrationlogs.md) |  |  |
 | [`NCMClusterOperationsLogs`](tables/ncmclusteroperationslogs.md) |  |  |
-| [`NCProtectUAL_CL`](tables/ncprotectual-cl.md) | [archTIS](solutions/archtis.md) | [NC Protect](connectors/nucleuscyberncprotect.md) |
+| [`NCProtectUAL_CL`](tables/ncprotectual-cl.md) | [NC Protect Data Connector](solutions/nc-protect-data-connector.md) | [NC Protect](connectors/nucleuscyberncprotect.md) |
 | [`NCSStorageAlerts`](tables/ncsstoragealerts.md) |  |  |
 | [`NCSStorageAudits`](tables/ncsstorageaudits.md) |  |  |
 | [`NCSStorageLogs`](tables/ncsstoragelogs.md) |  |  |
@@ -1317,7 +1339,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`NexposeInsightVMCloud_assets_CL`](tables/nexposeinsightvmcloud-assets-cl.md) | [Rapid7InsightVM](solutions/rapid7insightvm.md) | [Rapid7 Insight Platform Vulnerability Management Reports](connectors/insightvmcloudapi.md) |
 | [`NexposeInsightVMCloud_vulnerabilities_CL`](tables/nexposeinsightvmcloud-vulnerabilities-cl.md) | [Rapid7InsightVM](solutions/rapid7insightvm.md) | [Rapid7 Insight Platform Vulnerability Management Reports](connectors/insightvmcloudapi.md) |
 | [`NginxUpstreamUpdateLogs`](tables/nginxupstreamupdatelogs.md) |  |  |
-| [`NonameAPISecurityAlert_CL`](tables/nonameapisecurityalert-cl.md) | [NonameSecurity](solutions/nonamesecurity.md) | [Noname Security for Microsoft Sentinel](connectors/nonamesecuritymicrosoftsentinel.md) |
+| [`NonameAPISecurityAlert_CL`](tables/nonameapisecurityalert-cl.md) | [Noname API Security Solution for Microsoft Sentinel](solutions/noname-api-security-solution-for-microsoft-sentinel.md) | [Noname Security for Microsoft Sentinel](connectors/nonamesecuritymicrosoftsentinel.md) |
 | [`NordPassEventLogs_CL`](tables/nordpasseventlogs-cl.md) | [NordPass](solutions/nordpass.md) | [NordPass](connectors/nordpass.md) |
 | [`net_assets_CL`](tables/net-assets-cl.md) | [HolmSecurity](solutions/holmsecurity.md) | [Holm Security Asset Data](connectors/holmsecurityassets.md) |
 
@@ -1348,16 +1370,16 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`OTelTracesAgent`](tables/oteltracesagent.md) |  |  |
 | [`ObsidianActivity_CL`](tables/obsidianactivity-cl.md) | [Obsidian Datasharing](solutions/obsidian-datasharing.md) | [Obsidian Datasharing Connector](connectors/obsidiandatasharing.md) |
 | [`ObsidianThreat_CL`](tables/obsidianthreat-cl.md) | [Obsidian Datasharing](solutions/obsidian-datasharing.md) | [Obsidian Datasharing Connector](connectors/obsidiandatasharing.md) |
-| [`OfficeActivity`](tables/officeactivity.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[Business Email Compromise - Financial Fraud](solutions/business-email-compromise---financial-fraud.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[+19 more](tables/officeactivity.md) | [Microsoft 365 (formerly, Office 365)](connectors/office365.md) |
+| [`OfficeActivity`](tables/officeactivity.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[+19 more](tables/officeactivity.md) | [Microsoft 365 (formerly, Office 365)](connectors/office365.md) |
 | [`OktaNativePoller_CL`](tables/oktanativepoller-cl.md) | [Okta Single Sign-On](solutions/okta-single-sign-on.md) | [Okta Single Sign-On (Polling CCP)](connectors/oktasso-polling.md) |
 | [`OktaSystemLogs`](tables/oktasystemlogs.md) |  |  |
-| [`OktaV2_CL`](tables/oktav2-cl.md) | [Okta Single Sign-On](solutions/okta-single-sign-on.md) | [Okta Single Sign-On](connectors/oktassov2.md)<br>[Okta Single Sign-On (using Azure Functions)](connectors/oktasinglesignon%28usingazurefunctions%29.md) |
-| [`Okta_CL`](tables/okta-cl.md) | [Okta Single Sign-On](solutions/okta-single-sign-on.md) | [Okta Single Sign-On](connectors/oktasso.md)<br>[Okta Single Sign-On](connectors/oktassov2.md)<br>[Okta Single Sign-On (using Azure Functions)](connectors/oktasinglesignon%28usingazurefunctions%29.md) |
+| [`OktaV2_CL`](tables/oktav2-cl.md) | [Okta Single Sign-On](solutions/okta-single-sign-on.md) | [Okta Single Sign-On](connectors/oktassov2.md)<br>[Okta Single Sign-On (using Azure Functions)](connectors/oktasinglesignon-usingazurefunctions.md) |
+| [`Okta_CL`](tables/okta-cl.md) | [Okta Single Sign-On](solutions/okta-single-sign-on.md) | [Okta Single Sign-On](connectors/oktasso.md)<br>[Okta Single Sign-On](connectors/oktassov2.md)<br>[Okta Single Sign-On (using Azure Functions)](connectors/oktasinglesignon-usingazurefunctions.md) |
 | [`Onapsis_Defend_CL`](tables/onapsis-defend-cl.md) | [Onapsis Defend](solutions/onapsis-defend.md) | [Onapsis Defend Integration](connectors/onapsis.md)<br>[Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](connectors/onapsis.md) |
 | [`OneLoginEventsV2_CL`](tables/onelogineventsv2-cl.md) | [OneLoginIAM](solutions/oneloginiam.md) | [[DEPRECATED] OneLogin IAM Platform](connectors/onelogin.md)<br>[OneLogin IAM Platform (via Codeless Connector Framework)](connectors/oneloginiamlogsccpdefinition.md) |
 | [`OneLoginUsersV2_CL`](tables/oneloginusersv2-cl.md) | [OneLoginIAM](solutions/oneloginiam.md) | [[DEPRECATED] OneLogin IAM Platform](connectors/onelogin.md)<br>[OneLogin IAM Platform (via Codeless Connector Framework)](connectors/oneloginiamlogsccpdefinition.md) |
 | [`OneLogin_CL`](tables/onelogin-cl.md) | [OneLoginIAM](solutions/oneloginiam.md) | [[DEPRECATED] OneLogin IAM Platform](connectors/onelogin.md) |
-| [`OnePasswordEventLogs_CL`](tables/onepasswordeventlogs-cl.md) | [1Password](solutions/1password.md) | [1Password](connectors/1password.md)<br>[1Password (Serverless)](connectors/1password%28serverless%29.md)<br>[1Password (Serverless)](connectors/1passwordccpdefinition.md) |
+| [`OnePasswordEventLogs_CL`](tables/onepasswordeventlogs-cl.md) | [1Password](solutions/1password.md) | [1Password](connectors/1password.md)<br>[1Password (Serverless)](connectors/1password-serverless.md)<br>[1Password (Serverless)](connectors/1passwordccpdefinition.md) |
 | [`OneTrustMetadataV3_CL`](tables/onetrustmetadatav3-cl.md) | [OneTrust](solutions/onetrust.md) | [OneTrust](connectors/onetrustpush.md) |
 | [`OpenSystemsAuthenticationLogs_CL`](tables/opensystemsauthenticationlogs-cl.md) | [Open Systems](solutions/open-systems.md) | [Open Systems Data Connector](connectors/opensystems.md) |
 | [`OpenSystemsFirewallLogs_CL`](tables/opensystemsfirewalllogs-cl.md) | [Open Systems](solutions/open-systems.md) | [Open Systems Data Connector](connectors/opensystems.md) |
@@ -1422,10 +1444,10 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`ProofPointTAPMessagesBlocked_CL`](tables/proofpointtapmessagesblocked-cl.md) | [ProofPointTap](solutions/proofpointtap.md) | [[Deprecated] Proofpoint TAP](connectors/proofpointtap.md) |
 | [`ProofPointTAPMessagesDeliveredV2_CL`](tables/proofpointtapmessagesdeliveredv2-cl.md) | [ProofPointTap](solutions/proofpointtap.md) | [Proofpoint TAP (via Codeless Connector Platform)](connectors/proofpointtapv2.md) |
 | [`ProofPointTAPMessagesDelivered_CL`](tables/proofpointtapmessagesdelivered-cl.md) | [ProofPointTap](solutions/proofpointtap.md) | [[Deprecated] Proofpoint TAP](connectors/proofpointtap.md) |
-| [`ProofpointPODMailLog_CL`](tables/proofpointpodmaillog-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand%28pod%29-email-security.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](connectors/proofpointccpdefinition.md)<br>[[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
-| [`ProofpointPODMessage_CL`](tables/proofpointpodmessage-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand%28pod%29-email-security.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](connectors/proofpointccpdefinition.md)<br>[[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
-| [`ProofpointPOD_maillog_CL`](tables/proofpointpod-maillog-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand%28pod%29-email-security.md) | [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
-| [`ProofpointPOD_message_CL`](tables/proofpointpod-message-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand%28pod%29-email-security.md) | [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
+| [`ProofpointPODMailLog_CL`](tables/proofpointpodmaillog-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](connectors/proofpointccpdefinition.md)<br>[[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
+| [`ProofpointPODMessage_CL`](tables/proofpointpodmessage-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](connectors/proofpointccpdefinition.md)<br>[[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
+| [`ProofpointPOD_maillog_CL`](tables/proofpointpod-maillog-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) | [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
+| [`ProofpointPOD_message_CL`](tables/proofpointpod-message-cl.md) | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) | [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) |
 | [`ProtectionStatus`](tables/protectionstatus.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[SOC Handbook](solutions/soc-handbook.md) |  |
 | [`PurviewDataSensitivityLogs`](tables/purviewdatasensitivitylogs.md) | [GDPR Compliance & Data Security](solutions/gdpr-compliance-&-data-security.md)<br>[Microsoft Purview](solutions/microsoft-purview.md) | [Microsoft Purview](connectors/microsoftazurepurview.md) |
 | [`PurviewScanStatusLogs`](tables/purviewscanstatuslogs.md) |  |  |
@@ -1499,7 +1521,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`SecureScores`](tables/securescores.md) | [NISTSP80053](solutions/nistsp80053.md) |  |
 | [`SecurityAlert`](tables/securityalert.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[Azure Key Vault](solutions/azure-key-vault.md)<br>[Azure SQL Database solution for sentinel](solutions/azure-sql-database-solution-for-sentinel.md)<br>[+35 more](tables/securityalert.md) | [Microsoft Entra ID Protection](connectors/azureactivedirectoryidentityprotection.md)<br>[Microsoft Defender for Identity](connectors/azureadvancedthreatprotection.md)<br>[Subscription-based Microsoft Defender for Cloud (Legacy)](connectors/azuresecuritycenter.md)<br>[Microsoft Defender for IoT](connectors/iot.md)<br>[Microsoft Defender for Cloud Apps](connectors/microsoftcloudappsecurity.md)<br>[+5 more](tables/securityalert.md) |
 | [`SecurityAttackPathData`](tables/securityattackpathdata.md) |  |  |
-| [`SecurityBaseline`](tables/securitybaseline.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[NISTSP80053](solutions/nistsp80053.md)<br>[ZeroTrust(TIC3.0)](solutions/zerotrust%28tic3.0%29.md) |  |
+| [`SecurityBaseline`](tables/securitybaseline.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[NISTSP80053](solutions/nistsp80053.md)<br>[ZeroTrust(TIC3.0)](solutions/zerotrust-tic3.0.md) |  |
 | [`SecurityBaselineSummary`](tables/securitybaselinesummary.md) |  |  |
 | [`SecurityBridgeLogs_CL`](tables/securitybridgelogs-cl.md) | [CustomLogsAma](solutions/customlogsama.md)<br>[SecurityBridge App](solutions/securitybridge-app.md) | [Custom logs via AMA](connectors/customlogsviaama.md)<br>[SecurityBridge Threat Detection for SAP](connectors/securitybridgesap.md) |
 | [`SecurityDetection`](tables/securitydetection.md) |  |  |
@@ -1507,8 +1529,8 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`SecurityIncident`](tables/securityincident.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[Azure Key Vault](solutions/azure-key-vault.md)<br>[Azure SQL Database solution for sentinel](solutions/azure-sql-database-solution-for-sentinel.md)<br>[+22 more](tables/securityincident.md) | [Derdack SIGNL4](connectors/derdacksignl4.md)<br>[Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
 | [`SecurityIoTRawEvent`](tables/securityiotrawevent.md) | [Endpoint Threat Protection Essentials](solutions/endpoint-threat-protection-essentials.md)<br>[Google Threat Intelligence](solutions/google-threat-intelligence.md)<br>[GreyNoiseThreatIntelligence](solutions/greynoisethreatintelligence.md)<br>[+8 more](tables/securityiotrawevent.md) |  |
 | [`SecurityNestedRecommendation`](tables/securitynestedrecommendation.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md) |  |
-| [`SecurityRecommendation`](tables/securityrecommendation.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[+3 more](tables/securityrecommendation.md) |  |
-| [`SecurityRegulatoryCompliance`](tables/securityregulatorycompliance.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[NISTSP80053](solutions/nistsp80053.md)<br>[+1 more](tables/securityregulatorycompliance.md) |  |
+| [`SecurityRecommendation`](tables/securityrecommendation.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[ContinuousDiagnostics&Mitigation](solutions/continuousdiagnostics&mitigation.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[+3 more](tables/securityrecommendation.md) |  |
+| [`SecurityRegulatoryCompliance`](tables/securityregulatorycompliance.md) | [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md)<br>[CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[NISTSP80053](solutions/nistsp80053.md)<br>[+1 more](tables/securityregulatorycompliance.md) |  |
 | [`SecurityScorecardFactor_CL`](tables/securityscorecardfactor-cl.md) | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) | [SecurityScorecard Factor](connectors/securityscorecardfactorazurefunctions.md) |
 | [`SecurityScorecardIssues_CL`](tables/securityscorecardissues-cl.md) | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) | [SecurityScorecard Issue](connectors/securityscorecardissueazurefunctions.md) |
 | [`SecurityScorecardRatings_CL`](tables/securityscorecardratings-cl.md) | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) | [SecurityScorecard Cybersecurity Ratings](connectors/securityscorecardratingsazurefunctions.md) |
@@ -1639,9 +1661,9 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`Tenable_ad_CL`](tables/tenable-ad-cl.md) | [TenableAD](solutions/tenablead.md) | [Tenable.ad](connectors/tenable.ad.md) |
 | [`TheHive_CL`](tables/thehive-cl.md) | [TheHive](solutions/thehive.md) | [TheHive Project - TheHive](connectors/thehiveprojectthehive.md) |
 | [`TheomAlerts_CL`](tables/theomalerts-cl.md) | [Theom](solutions/theom.md) | [Theom](connectors/theom.md) |
-| [`ThreatIntelExportOperation`](tables/threatintelexportoperation.md) | [Threat Intelligence (NEW)](solutions/threat-intelligence-%28new%29.md) | [Threat intelligence - TAXII Export (Preview)](connectors/threatintelligencetaxiiexport.md) |
+| [`ThreatIntelExportOperation`](tables/threatintelexportoperation.md) | [Threat Intelligence (NEW)](solutions/threat-intelligence-new.md) | [Threat intelligence - TAXII Export (Preview)](connectors/threatintelligencetaxiiexport.md) |
 | [`ThreatIntelIndicators`](tables/threatintelindicators.md) | [DORA Compliance](solutions/dora-compliance.md)<br>[Google Threat Intelligence](solutions/google-threat-intelligence.md)<br>[Lumen Defender Threat Feed](solutions/lumen-defender-threat-feed.md)<br>[+2 more](tables/threatintelindicators.md) | [Lumen Defender Threat Feed Data Connector](connectors/lumenthreatfeedconnector.md)<br>[Microsoft Defender Threat Intelligence](connectors/microsoftdefenderthreatintelligence.md)<br>[Premium Microsoft Defender Threat Intelligence](connectors/premiummicrosoftdefenderforthreatintelligence.md)<br>[Threat Intelligence Platforms](connectors/threatintelligence.md)<br>[Threat intelligence - TAXII](connectors/threatintelligencetaxii.md)<br>[+1 more](tables/threatintelindicators.md) |
-| [`ThreatIntelObjects`](tables/threatintelobjects.md) | [Threat Intelligence (NEW)](solutions/threat-intelligence-%28new%29.md) | [Microsoft Defender Threat Intelligence](connectors/microsoftdefenderthreatintelligence.md)<br>[Premium Microsoft Defender Threat Intelligence](connectors/premiummicrosoftdefenderforthreatintelligence.md)<br>[Threat Intelligence Platforms](connectors/threatintelligence.md)<br>[Threat intelligence - TAXII](connectors/threatintelligencetaxii.md)<br>[Threat Intelligence Upload API (Preview)](connectors/threatintelligenceuploadindicatorsapi.md) |
+| [`ThreatIntelObjects`](tables/threatintelobjects.md) | [Threat Intelligence (NEW)](solutions/threat-intelligence-new.md) | [Microsoft Defender Threat Intelligence](connectors/microsoftdefenderthreatintelligence.md)<br>[Premium Microsoft Defender Threat Intelligence](connectors/premiummicrosoftdefenderforthreatintelligence.md)<br>[Threat Intelligence Platforms](connectors/threatintelligence.md)<br>[Threat intelligence - TAXII](connectors/threatintelligencetaxii.md)<br>[Threat Intelligence Upload API (Preview)](connectors/threatintelligenceuploadindicatorsapi.md) |
 | [`ThreatIntelligenceIndicator`](tables/threatintelligenceindicator.md) | [CofenseIntelligence](solutions/cofenseintelligence.md)<br>[CofenseTriage](solutions/cofensetriage.md)<br>[CognyteLuminar](solutions/cognyteluminar.md)<br>[+24 more](tables/threatintelligenceindicator.md) | [Cofense Intelligence Threat Indicators Ingestion](connectors/cofenseintelligence.md)<br>[Cofense Triage Threat Indicators Ingestion](connectors/cofensetriage.md)<br>[Luminar IOCs and Leaked Credentials](connectors/cognyteluminar.md)<br>[CrowdStrike Falcon Adversary Intelligence ](connectors/crowdstrikefalconadversaryintelligence.md)<br>[Datalake2Sentinel](connectors/datalake2sentinelconnector.md)<br>[+9 more](tables/threatintelligenceindicator.md) |
 | [`Tomcat_CL`](tables/tomcat-cl.md) | [CustomLogsAma](solutions/customlogsama.md)<br>[Tomcat](solutions/tomcat.md) | [[Deprecated] Apache Tomcat](connectors/apachetomcat.md)<br>[Custom logs via AMA](connectors/customlogsviaama.md) |
 | [`TransmitSecurityActivity_CL`](tables/transmitsecurityactivity-cl.md) | [TransmitSecurity](solutions/transmitsecurity.md) | [Transmit Security Connector](connectors/transmitsecurity.md) |
@@ -1683,7 +1705,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`UpdateRunProgress`](tables/updaterunprogress.md) |  |  |
 | [`UpdateSummary`](tables/updatesummary.md) |  |  |
 | [`UrlClickEvents`](tables/urlclickevents.md) | [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) | [Microsoft Defender XDR](connectors/microsoftthreatprotection.md) |
-| [`Usage`](tables/usage.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification%28cmmc%292.0.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[NISTSP80053](solutions/nistsp80053.md)<br>[+3 more](tables/usage.md) |  |
+| [`Usage`](tables/usage.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)<br>[MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md)<br>[NISTSP80053](solutions/nistsp80053.md)<br>[+3 more](tables/usage.md) |  |
 | [`UserAccessAnalytics`](tables/useraccessanalytics.md) |  |  |
 | [`UserPeerAnalytics`](tables/userpeeranalytics.md) |  |  |
 
@@ -1698,11 +1720,11 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | [`VMComputer`](tables/vmcomputer.md) |  |  |
 | [`VMConnection`](tables/vmconnection.md) | [Apache Log4j Vulnerability Detection](solutions/apache-log4j-vulnerability-detection.md)<br>[Google Threat Intelligence](solutions/google-threat-intelligence.md)<br>[GreyNoiseThreatIntelligence](solutions/greynoisethreatintelligence.md)<br>[+9 more](tables/vmconnection.md) |  |
 | [`VMProcess`](tables/vmprocess.md) | [MaturityModelForEventLogManagementM2131](solutions/maturitymodelforeventlogmanagementm2131.md) |  |
-| [`VMware_CWS_DLPLogs_CL`](tables/vmware-cws-dlplogs-cl.md) | [VMware SD-WAN and SASE](solutions/vmware-sd-wan-and-sase.md) | [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) |
-| [`VMware_CWS_Health_CL`](tables/vmware-cws-health-cl.md) | [VMware SD-WAN and SASE](solutions/vmware-sd-wan-and-sase.md) | [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) |
-| [`VMware_CWS_Weblogs_CL`](tables/vmware-cws-weblogs-cl.md) | [VMware SD-WAN and SASE](solutions/vmware-sd-wan-and-sase.md) | [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) |
-| [`VMware_SDWAN_FirewallLogs_CL`](tables/vmware-sdwan-firewalllogs-cl.md) | [VMware SD-WAN and SASE](solutions/vmware-sd-wan-and-sase.md) |  |
-| [`VMware_VECO_EventLogs_CL`](tables/vmware-veco-eventlogs-cl.md) | [VMware SD-WAN and SASE](solutions/vmware-sd-wan-and-sase.md) | [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) |
+| [`VMware_CWS_DLPLogs_CL`](tables/vmware-cws-dlplogs-cl.md) | [VMware SASE](solutions/vmware-sase.md) | [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) |
+| [`VMware_CWS_Health_CL`](tables/vmware-cws-health-cl.md) | [VMware SASE](solutions/vmware-sase.md) | [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) |
+| [`VMware_CWS_Weblogs_CL`](tables/vmware-cws-weblogs-cl.md) | [VMware SASE](solutions/vmware-sase.md) | [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) |
+| [`VMware_SDWAN_FirewallLogs_CL`](tables/vmware-sdwan-firewalllogs-cl.md) | [VMware SASE](solutions/vmware-sase.md) |  |
+| [`VMware_VECO_EventLogs_CL`](tables/vmware-veco-eventlogs-cl.md) | [VMware SASE](solutions/vmware-sase.md) | [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) |
 | [`VTDomainReport_CL`](tables/vtdomainreport-cl.md) | [VirusTotal](solutions/virustotal.md) |  |
 | [`VTFileReport_CL`](tables/vtfilereport-cl.md) | [VirusTotal](solutions/virustotal.md) |  |
 | [`VTIPReport_CL`](tables/vtipreport-cl.md) | [VirusTotal](solutions/virustotal.md) |  |
@@ -1793,7 +1815,7 @@ This page lists **1683 unique tables** (811 ingested by connectors, 872 referenc
 | Table | Solutions | Connectors |
 |-------|-----------|------------|
 | [`ZNSegmentAuditNativePoller_CL`](tables/znsegmentauditnativepoller-cl.md) | [ZeroNetworks](solutions/zeronetworks.md) | [Zero Networks Segment Audit](connectors/zeronetworkssegmentauditnativepoller.md) |
-| [`ZPA_CL`](tables/zpa-cl.md) | [CustomLogsAma](solutions/customlogsama.md)<br>[Zscaler Private Access (ZPA)](solutions/zscaler-private-access-%28zpa%29.md) | [Custom logs via AMA](connectors/customlogsviaama.md)<br>[[Deprecated] Zscaler Private Access](connectors/zscalerprivateaccess.md) |
+| [`ZPA_CL`](tables/zpa-cl.md) | [CustomLogsAma](solutions/customlogsama.md)<br>[Zscaler Private Access (ZPA)](solutions/zscaler-private-access-zpa.md) | [Custom logs via AMA](connectors/customlogsviaama.md)<br>[[Deprecated] Zscaler Private Access](connectors/zscalerprivateaccess.md) |
 | [`ZTSRequest`](tables/ztsrequest.md) |  |  |
 | [`ZeroFoxAlertPoller_CL`](tables/zerofoxalertpoller-cl.md) | [ZeroFox](solutions/zerofox.md) | [ZeroFox Enterprise - Alerts (Polling CCF)](connectors/zerofoxalertsdefinition.md) |
 | [`ZeroFox_CTI_C2_CL`](tables/zerofox-cti-c2-cl.md) | [ZeroFox](solutions/zerofox.md) | [ZeroFox CTI](connectors/zerofoxctidataconnector.md) |

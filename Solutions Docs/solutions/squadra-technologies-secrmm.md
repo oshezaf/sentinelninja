@@ -1,5 +1,9 @@
 # Squadra Technologies SecRmm
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SquadraTechnologiesLogo.svg" alt="Squadra Technologies SecRmm Logo" width="75" height="75">
+
+The [Squadra Technologies SecRMM](https://www.squadratechnologies.com/Products/secRMM/secRMMOverview.aspx) solution for Microsoft Sentinel enables you to ingest USB security event data into Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.squadratechnologies.com/Contact.aspx](https://www.squadratechnologies.com/Contact.aspx) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Squadra Technologies |
 | **First Published** | 2022-05-09 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Squadra%20Technologies%20SecRmm](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Squadra%20Technologies%20SecRmm) |
 
@@ -38,13 +44,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Removable storage ONLINE event from secRMM](../content/squadra-technologies-secrmm-removable-storage-online-event-from-secrmm-a22b2ecf-1478-4400-877e-07a32e53a897.md) | High | Collection | [`secRMM_CL`](../tables/secrmm-cl.md) |
+| [Removable storage ONLINE event from secRMM](../content/squadra-technologies-secrmm-removable-storage-online-event-from-secrmm-a22b2ecf-1478-4400-877e-07a32e53a897-c1870014.md) | High | Collection | [`secRMM_CL`](../tables/secrmm-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/squadra-technologies-secrmm-azuresentinelworkbookforremovablestoragesecurityevents.md) | [`secRMM_CL`](../tables/secrmm-cl.md) |
+| [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/squadra-technologies-secrmm-azuresentinelworkbookforremovablestoragesecurityevents-c1ab5ac4.md) | [`secRMM_CL`](../tables/secrmm-cl.md) |
 
 ## Release Notes
 

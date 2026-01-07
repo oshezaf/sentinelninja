@@ -1,5 +1,11 @@
 # EclecticIQ
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="EclecticIQ Logo" width="75" height="75">
+
+[EclecticIQ](https://eclecticiq.com/) is a global provider of threat intelligence, hunting and response technology and services. This solution includes SOAR Connector and Playbooks which leverage EclecticIQ Observables data to not only enrich Microsoft Sentinel incidents but also add indicators to EclecticIQ.
+
+
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +14,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 2.0.0 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-30 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ) |
 
@@ -29,8 +37,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Create Observable - EclecticIQ](../content/eclecticiq-create-observable---eclecticiq.md) | This playbook adds new observable in EclecticIQ based on the entities info present in Sentinel incid... | - |
-| [Enrich Incident - EclecticIQ](../content/eclecticiq-enrich-incident---eclecticiq.md) | This playbook perform look up into EclecticIQ for the entities (Account, Host, IP, FileHash, URL) pr... | - |
+| [Create Observable - EclecticIQ](../content/eclecticiq-create-observable-eclecticiq-1f70e497.md) | This playbook adds new observable in EclecticIQ based on the entities info present in Sentinel incid... | - |
+| [Enrich Incident - EclecticIQ](../content/eclecticiq-enrich-incident-eclecticiq-aa2623a9.md) | This playbook perform look up into EclecticIQ for the entities (Account, Host, IP, FileHash, URL) pr... | - |
 
 ---
 

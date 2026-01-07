@@ -1,5 +1,9 @@
 # Varonis Purview
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VaronisLogo.svg" alt="Varonis Purview Logo" width="75" height="75">
+
+Varonis Data Security SaaS Platform: Automatically find your critical data, remediate risk, and stop threats — before your data can be compromised.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.varonis.com/resources/support](https://www.varonis.com/resources/support) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Varonis |
 | **First Published** | 2025-10-27 |
 | **Last Updated** | 2025-10-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview) |

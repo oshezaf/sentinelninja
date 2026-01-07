@@ -1,5 +1,11 @@
 # Datalake2Sentinel
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OrangeCyberdefenseLogo.svg" alt="Datalake2Sentinel Logo" width="75" height="75">
+
+The Datalake2Sentinel solution is a Microsoft Sentinel data connector, that allows you to ingest threat indicators from Orange Cyberdefense Threat Intelligence platform's Datalake into Microsoft Sentinel via the Upload Indicators REST API.
+
+
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +14,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.orangecyberdefense.com/global/contact](https://www.orangecyberdefense.com/global/contact) |
 | **Categories** | domains,verticals |
+| **Version** | 3.0.0 |
+| **Author** | OrangeCyberdefense |
 | **First Published** | 2024-01-15 |
 | **Last Updated** | 2024-01-15 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel) |

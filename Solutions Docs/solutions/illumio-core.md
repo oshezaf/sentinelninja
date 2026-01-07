@@ -1,5 +1,13 @@
 # Illumio Core
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="Illumio Core Logo" width="75" height="75">
+
+The [Illumio Core](https://www.illumio.com/products/) solution allows you to ingest Illumio Core logs into Microsoft Sentinel. 
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Microsoft |
 | **First Published** | 2022-05-26 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Core](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Core) |
 
@@ -38,7 +48,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IllumioCoreEvent](../content/illumio-core-illumiocoreevent-1c0eafd3-9b95-4bad-bf1c-28a0d0145e42.md) | - | - |
+| [IllumioCoreEvent](../content/illumio-core-illumiocoreevent-1c0eafd3-9b95-4bad-bf1c-28a0d0145e42-e6b88baf.md) | - | - |
 
 ## Release Notes
 

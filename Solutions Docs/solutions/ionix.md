@@ -1,5 +1,15 @@
 # IONIX
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ionix-logo.svg" alt="IONIX Logo" width="75" height="75">
+
+The [IONIX](https://ionix.io/) solution for Microsoft Sentinel enables you to ingest vulnerability logs from the IONIX platform into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution is dependent on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Codeless Connector Platform/Native Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.ionix.io/contact-us/](https://www.ionix.io/contact-us/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | IONIX |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX) |
 
@@ -38,13 +50,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [High Urgency IONIX Action Items](../content/ionix-high-urgency-ionix-action-items-8e0403b1-07f8-4865-b2e9-74d1e83200a4.md) | High | InitialAccess | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) |
+| [High Urgency IONIX Action Items](../content/ionix-high-urgency-ionix-action-items-8e0403b1-07f8-4865-b2e9-74d1e83200a4-39544ba2.md) | High | InitialAccess | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IONIXOverviewWorkbook](../content/ionix-ionixoverviewworkbook.md) | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) |
+| [IONIXOverviewWorkbook](../content/ionix-ionixoverviewworkbook-5e96257f.md) | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) |
 
 ## Release Notes
 

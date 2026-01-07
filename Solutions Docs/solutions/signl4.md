@@ -1,5 +1,17 @@
 # SIGNL4
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/signl4.svg" alt="SIGNL4 Logo" width="75" height="75">
+
+The SIGNL4 Mobile Alerting solution provides the capability to read security alerts into Microsoft Sentinel using the Microsoft Graph Security API. It adds real-time mobile alerting to your services, systems, and processes in no time. SIGNL4 notifies through persistent mobile push, SMS text and voice calls with acknowledgement, tracking and escalation. Refer to [SIGNL4 documentation](https://www.signl4.com/) for more information. 
+
+ ** Underlying Microsoft Technologies used: ** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor HTTP Data Collector](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+
+ b. [API Microsoft Security Graph API](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.signl4.com](https://www.signl4.com) |
 | **Categories** | domains |
+| **Version** | 2.0.3 |
+| **Author** | Ronald Czachara - ron@signl4.com |
 | **First Published** | 2021-12-10 |
 | **Last Updated** | 2021-12-10 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4) |
@@ -46,7 +60,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SIGNL4 Alerting and Response](../content/signl4-signl4-alerting-and-response.md) | This playbook will be sending alerts with basic incidents to SIGNL4 teams when an incident is create... | - |
+| [SIGNL4 Alerting and Response](../content/signl4-signl4-alerting-and-response-4fa73700.md) | This playbook will be sending alerts with basic incidents to SIGNL4 teams when an incident is create... | - |
 
 ## Release Notes
 

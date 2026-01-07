@@ -1,5 +1,9 @@
 # Armis
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Armis.svg" alt="Armis Logo" width="75" height="75">
+
+The [Armis](https://www.armis.com/) Solution gives the capability to ingest Armis Devices, Alerts and device Activities into Microsoft Sentinel through the Armis REST API.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.armis.com/](https://support.armis.com/) |
 | **Categories** | domains |
+| **Version** | 3.2.0 |
+| **Author** | {Armis - support@armis.com} |
 | **First Published** | 2022-08-02 |
 | **Last Updated** | 2024-08-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis) |
@@ -44,15 +50,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Armis Update Alert Status](../content/armis-armis-update-alert-status.md) | Armis Update Alert Status playbook would be responsible to update the Alert status from the sentinel... | - |
+| [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | Armis Update Alert Status playbook would be responsible to update the Alert status from the sentinel... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ArmisActivities](../content/armis-armisactivities-fb6c861f-c438-4a5d-ae97-59dfc7af607a.md) | - | - |
-| [ArmisAlerts](../content/armis-armisalerts-7783dff3-1e0a-4622-bdd7-74ee371e4dba.md) | - | - |
-| [ArmisDevice](../content/armis-armisdevice-826eac66-f927-4351-ab5d-483457060ae0.md) | - | - |
+| [ArmisActivities](../content/armis-armisactivities-fb6c861f-c438-4a5d-ae97-59dfc7af607a-31c0218c.md) | - | - |
+| [ArmisAlerts](../content/armis-armisalerts-7783dff3-1e0a-4622-bdd7-74ee371e4dba-58784ae6.md) | - | - |
+| [ArmisDevice](../content/armis-armisdevice-826eac66-f927-4351-ab5d-483457060ae0-b0cace5e.md) | - | - |
 
 ## Release Notes
 

@@ -1,5 +1,13 @@
 # Aruba ClearPass
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ArubaClearPass.svg" alt="Aruba ClearPass Logo" width="75" height="75">
+
+The [Aruba ClearPass](https://www.arubanetworks.com/products/security/network-access-control/secure-access/) solution allows you to easily connect your Aruba ClearPass with Microsoft Sentinel. 
+
+This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024**.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Aruba Networks |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass) |
 
@@ -38,7 +48,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ArubaClearPass](../content/aruba-clearpass-arubaclearpass-7dabe04d-66c5-4d47-8e3c-7580e807be88.md) | - | - |
+| [ArubaClearPass](../content/aruba-clearpass-arubaclearpass-7dabe04d-66c5-4d47-8e3c-7580e807be88-f108a393.md) | - | - |
 
 ## Release Notes
 

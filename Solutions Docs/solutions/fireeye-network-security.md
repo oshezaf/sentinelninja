@@ -1,5 +1,13 @@
 # FireEye Network Security
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="FireEye Network Security Logo" width="75" height="75">
+
+The [FireEye Network Security (NX)](https://www.fireeye.com/products/network-security.html) solution provides the capability to ingest FireEye Network Security logs into Microsoft Sentinel.
+
+This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.2 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FireEye%20Network%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FireEye%20Network%20Security) |
 
@@ -38,7 +48,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [FireEyeNXEvent](../content/fireeye-network-security-fireeyenxevent-742dcaba-a8fc-428c-b9f9-1ad2cf5c7b20.md) | - | - |
+| [FireEyeNXEvent](../content/fireeye-network-security-fireeyenxevent-742dcaba-a8fc-428c-b9f9-1ad2cf5c7b20-cedc5103.md) | - | - |
 
 ## Release Notes
 

@@ -13,12 +13,12 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [Tanium](../solutions/tanium.md):**
-- [Tanium Threat Response Alerts](../content/tanium-tanium-threat-response-alerts-dd9aa0ff-7ac1-4448-879c-e1a18d5890b4.md)
+- [Tanium Threat Response Alerts](../content/tanium-tanium-threat-response-alerts-dd9aa0ff-7ac1-4448-879c-e1a18d5890b4-94582d48.md)
 
 ### Workbooks (1)
 
 **In solution [Tanium](../solutions/tanium.md):**
-- [TaniumWorkbook](../content/tanium-taniumworkbook.md)
+- [TaniumWorkbook](../content/tanium-taniumworkbook-97052723.md)
 
 ---
 

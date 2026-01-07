@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Cloudflare](../solutions/cloudflare.md):**
-- [Cloudflare](../content/cloudflare-cloudflare.md)
+- [Cloudflare](../content/cloudflare-cloudflare-8543aee9.md)
 
 ---
 

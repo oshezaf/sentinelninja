@@ -1,5 +1,9 @@
 # Cisco ETD
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="Cisco ETD Logo" width="75" height="75">
+
+Cisco ETD Solution for Microsoft Microsoft Sentinel makes it easy to connect cisco email threat data to the Microsoft Sentinel, improving visibility into email threats.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -7,6 +11,8 @@
 | **Publisher** | Cisco Systems |
 | **Support Tier** | Partner |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Cisco |
 | **First Published** | 2024-03-04 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD) |
 
@@ -36,7 +42,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoETD](../content/cisco-etd-ciscoetd.md) | [`CiscoETD_CL`](../tables/ciscoetd-cl.md) |
+| [CiscoETD](../content/cisco-etd-ciscoetd-5508b27c.md) | [`CiscoETD_CL`](../tables/ciscoetd-cl.md) |
 
 ## Release Notes
 

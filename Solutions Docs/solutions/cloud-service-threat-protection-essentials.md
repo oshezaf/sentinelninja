@@ -1,5 +1,21 @@
 # Cloud Service Threat Protection Essentials
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Cloud Service Threat Protection Essentials Logo" width="75" height="75">
+
+As cloud services increase in popularity, the volume of attacks against them is also increasing. Broad visibility, context and timely detection of these attacks are important for organization as they move more workloads to the cloud. The **Cloud Service Threat Protection Essentials** contains security content that is relevant for detection of attacks against various cloud services like key vault, storage, compute etc.
+ 
+**Pre-requisites:**
+ 
+This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution.
+ 
+ 1.Microsoft 365
+ 
+ 2.Azure Activity
+ 
+ 3.Azure Key Vault
+ 
+**Keywords:** Storage, Key Vault, Compute, Office, Mail tampering, Azure, resources
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +24,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials) |
 
@@ -39,8 +57,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Azure Key Vault Access Policy Manipulation](../content/cloud-service-threat-protection-essentials-azure-key-vault-access-policy-manipulation-8eff7055-9138-4edc-b8f0-48ea27e23c3c.md) | CredentialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75.md) | Impact | [`AzureActivity`](../tables/azureactivity.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) |
+| [Azure Key Vault Access Policy Manipulation](../content/cloud-service-threat-protection-essentials-azure-key-vault-access-policy-manipulation-8eff7055-9138-4edc-b8f0-48ea27e23c3c-8858b5d6.md) | CredentialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.md) | Impact | [`AzureActivity`](../tables/azureactivity.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) |
 
 ## Release Notes
 

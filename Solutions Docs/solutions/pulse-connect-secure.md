@@ -1,5 +1,13 @@
 # Pulse Connect Secure
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Pulse Connect Secure Logo" width="75" height="75">
+
+The [Pulse Connect Secure](https://www.ivanti.com/products/connect-secure-vpn?psredirect) solution for Microsoft Sentinel enables you to ingest Pulse Connect Secure logs into Microsoft Sentinel.
+
+This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. 
+
+ **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.4 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pulse%20Connect%20Secure](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pulse%20Connect%20Secure) |
 
@@ -39,20 +49,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/pulse-connect-secure-pulseconnectsecure---large-number-of-distinct-failed-user-logins-1fa1528e-f746-4794-8a41-14827f4cb798.md) | Medium | CredentialAccess | - |
-| [PulseConnectSecure - Potential Brute Force Attempts](../content/pulse-connect-secure-pulseconnectsecure---potential-brute-force-attempts-34663177-8abf-4db1-b0a4-5683ab273f44.md) | Low | CredentialAccess | - |
+| [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/pulse-connect-secure-pulseconnectsecure-large-number-of-distinct-failed-user-logins-1fa1528e-f746-4794-8a41-14827f4cb798-146dc800.md) | Medium | CredentialAccess | - |
+| [PulseConnectSecure - Potential Brute Force Attempts](../content/pulse-connect-secure-pulseconnectsecure-potential-brute-force-attempts-34663177-8abf-4db1-b0a4-5683ab273f44-3cb9ad66.md) | Low | CredentialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure.md) | - |
+| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-56477077.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-7a608d43-10b5-4113-8d74-6478f05f2595.md) | - | - |
+| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-7a608d43-10b5-4113-8d74-6478f05f2595-233f88ba.md) | - | - |
 
 ## Release Notes
 

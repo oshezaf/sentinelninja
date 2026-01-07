@@ -1,5 +1,17 @@
 # Integration for Atlassian Beacon
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Integration for Atlassian Beacon Logo" width="75" height="75">
+
+The [Atlassian Beacon](https://www.atlassian.com/software/beacon) solution provides the capability to ingest Atlassian Beacon Alerts into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Azure Logic Apps](https://azure.microsoft.com/products/logic-apps/#overview)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.defend.co.nz/](https://www.defend.co.nz/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | DEFEND Ltd. |
 | **First Published** | 2023-09-22 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Integration%20for%20Atlassian%20Beacon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Integration%20for%20Atlassian%20Beacon) |
 
@@ -40,13 +54,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Atlassian Beacon Alert](../content/integration-for-atlassian-beacon-atlassian-beacon-alert-83fbf6a2-f227-48f4-8e7b-0b0ecac2381b.md) | High | - | *Internal use:*<br>[`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) |
+| [Atlassian Beacon Alert](../content/integration-for-atlassian-beacon-atlassian-beacon-alert-83fbf6a2-f227-48f4-8e7b-0b0ecac2381b-93237405.md) | High | - | *Internal use:*<br>[`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Atlassian Beacon Integration](../content/integration-for-atlassian-beacon-atlassian-beacon-integration.md) | This Logic App recieves a webhook from Atlassian Beacon and ingest the payload into Microsoft Sentin... | *Internal use:*<br>[`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) *(write)* |
+| [Atlassian Beacon Integration](../content/integration-for-atlassian-beacon-atlassian-beacon-integration-638ff69e.md) | This Logic App recieves a webhook from Atlassian Beacon and ingest the payload into Microsoft Sentin... | *Internal use:*<br>[`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) *(write)* |
 
 ## Release Notes
 

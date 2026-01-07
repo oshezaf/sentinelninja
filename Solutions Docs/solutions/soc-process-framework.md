@@ -1,5 +1,9 @@
 # SOC-Process-Framework
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SOC-Process-Framework Logo" width="75" height="75">
+
+The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboard SOC Actions for their Analysts to follow that snap to the SOC Process Framework Workbook.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Rin Ure - rin.ure@microsoft.com |
 | **First Published** | 2022-04-08 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework) |
 
@@ -31,36 +37,36 @@ This solution includes **20 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Building_a_SOCLargeStaff](../content/soc-process-framework-building-a-soclargestaff.md) | - |
-| [Building_a_SOCMediumStaff](../content/soc-process-framework-building-a-socmediumstaff.md) | - |
-| [Building_a_SOCPartTimeStaff](../content/soc-process-framework-building-a-socparttimestaff.md) | - |
-| [Building_a_SOCSmallStaff](../content/soc-process-framework-building-a-socsmallstaff.md) | - |
-| [SOCIRPlanning](../content/soc-process-framework-socirplanning.md) | - |
-| [SOCProcessFramework](../content/soc-process-framework-socprocessframework.md) | - |
-| [UpdateSOCMaturityScore](../content/soc-process-framework-updatesocmaturityscore.md) | - |
+| [Building_a_SOCLargeStaff](../content/soc-process-framework-building-a-soclargestaff-48143514.md) | - |
+| [Building_a_SOCMediumStaff](../content/soc-process-framework-building-a-socmediumstaff-8a8cc226.md) | - |
+| [Building_a_SOCPartTimeStaff](../content/soc-process-framework-building-a-socparttimestaff-8ef82164.md) | - |
+| [Building_a_SOCSmallStaff](../content/soc-process-framework-building-a-socsmallstaff-4a5be90f.md) | - |
+| [SOCIRPlanning](../content/soc-process-framework-socirplanning-18961eff.md) | - |
+| [SOCProcessFramework](../content/soc-process-framework-socprocessframework-5c770df0.md) | - |
+| [UpdateSOCMaturityScore](../content/soc-process-framework-updatesocmaturityscore-d96c410d.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Get-SOC-Actions](../content/soc-process-framework-get-soc-actions.md) | This playbook uses the SOC Recommended Actions Watchlist to automatically enrich incidents generated... | - |
+| [Get-SOC-Actions](../content/soc-process-framework-get-soc-actions-287c5e40.md) | This playbook uses the SOC Recommended Actions Watchlist to automatically enrich incidents generated... | - |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SOCDepartmental](../content/soc-process-framework-socdepartmental.md) | - | - |
-| [SOCEmailDistribution](../content/soc-process-framework-socemaildistribution.md) | - | - |
-| [SOCExternalContacts](../content/soc-process-framework-socexternalcontacts.md) | - | - |
-| [SOCIRP](../content/soc-process-framework-socirp.md) | - | - |
-| [SOCInternalContacts](../content/soc-process-framework-socinternalcontacts.md) | - | - |
-| [SOCMA](../content/soc-process-framework-socma.md) | - | - |
-| [SOCPager](../content/soc-process-framework-socpager.md) | - | - |
-| [SOCUseCase](../content/soc-process-framework-socusecase.md) | - | - |
-| [SOCcontacts](../content/soc-process-framework-soccontacts.md) | - | - |
-| [SOCgeneralIT](../content/soc-process-framework-socgeneralit.md) | - | - |
-| [SOCworkstations](../content/soc-process-framework-socworkstations.md) | - | - |
-| [SocRA](../content/soc-process-framework-socra.md) | - | - |
+| [SOCDepartmental](../content/soc-process-framework-socdepartmental-0a699ff5.md) | - | - |
+| [SOCEmailDistribution](../content/soc-process-framework-socemaildistribution-892eac6a.md) | - | - |
+| [SOCExternalContacts](../content/soc-process-framework-socexternalcontacts-4a1a005e.md) | - | - |
+| [SOCIRP](../content/soc-process-framework-socirp-aea3fd1d.md) | - | - |
+| [SOCInternalContacts](../content/soc-process-framework-socinternalcontacts-72a64dc4.md) | - | - |
+| [SOCMA](../content/soc-process-framework-socma-16c2d66a.md) | - | - |
+| [SOCPager](../content/soc-process-framework-socpager-7c674671.md) | - | - |
+| [SOCUseCase](../content/soc-process-framework-socusecase-0978b37d.md) | - | - |
+| [SOCcontacts](../content/soc-process-framework-soccontacts-3893f7fa.md) | - | - |
+| [SOCgeneralIT](../content/soc-process-framework-socgeneralit-cfa7937a.md) | - | - |
+| [SOCworkstations](../content/soc-process-framework-socworkstations-b5789743.md) | - | - |
+| [SocRA](../content/soc-process-framework-socra-406f9217.md) | - | - |
 
 ## Additional Documentation
 

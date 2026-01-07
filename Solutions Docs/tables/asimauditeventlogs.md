@@ -17,7 +17,7 @@ This table is used by the following solutions:
 - [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-%28new%29.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Workday](../solutions/workday.md)
 
 ## Connectors (3)
@@ -35,10 +35,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
-- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-ti-map-ip-entity-to-workday%28asimauditeventlogs%29-a924d317-03d2-4420-a71f-4d347bda4bd8.md)
+- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-ti-map-ip-entity-to-workday-asimauditeventlogs-a924d317-03d2-4420-a71f-4d347bda4bd8-7032e2e7.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-%28new%29.md):**
-- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-%28new%29-ti-map-ip-entity-to-workday%28asimauditeventlogs%29-92e8e945-6e99-4e4b-bef8-468b4c19fc3a.md)
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-7773b67f.md)
 
 ## Resource Types
 

@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [RSAIDPlus_AdminLogs_Connector](../solutions/rsaidplus-adminlogs-connector.md):**
-- [RSA ID Plus - Locked Administrator Account Detected](../content/rsaidplus-adminlogs-connector-rsa-id-plus---locked-administrator-account-detected-488c759d-a82e-44cd-91bb-d766573918d7.md)
+- [RSA ID Plus - Locked Administrator Account Detected](../content/rsaidplus-adminlogs-connector-rsa-id-plus-locked-administrator-account-detected-488c759d-a82e-44cd-91bb-d766573918d7-9266bd29.md)
 
 ---
 

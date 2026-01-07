@@ -1,5 +1,9 @@
 # Cybersixgill-Actionable-Alerts
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cybersixgill.svg" alt="Cybersixgill-Actionable-Alerts Logo" width="75" height="75">
+
+Cybersixgill Actionable Alerts provides a premium automated customized threat intelligence feed from the deep and dark web. Monitor activity in the underground regarding your key assets (Names, IP Address, Domains, CVEs, Third party suppliers ) relevant to their brand, industry, and geolocation and receive real time alert notifications on incoming threats on your organization including: Contextual data, assessments and recommendations
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cybersixgill.com/](https://www.cybersixgill.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Cybersixgill |
 | **First Published** | 2023-02-27 |
 | **Last Updated** | 2024-09-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts) |
@@ -40,21 +46,21 @@ This solution includes **5 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Cybersixgill Actionable alerts](../content/cybersixgill-actionable-alerts-cybersixgill-actionable-alerts-532133dd-a8ed-4062-bf0d-f04dc97bb71a.md) | - | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
+| [Cybersixgill Actionable alerts](../content/cybersixgill-actionable-alerts-cybersixgill-actionable-alerts-532133dd-a8ed-4062-bf0d-f04dc97bb71a-f87f4c92.md) | - | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ActionableAlertsDashboard](../content/cybersixgill-actionable-alerts-actionablealertsdashboard.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
-| [ActionableAlertsList](../content/cybersixgill-actionable-alerts-actionablealertslist.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
+| [ActionableAlertsDashboard](../content/cybersixgill-actionable-alerts-actionablealertsdashboard-9c629610.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
+| [ActionableAlertsList](../content/cybersixgill-actionable-alerts-actionablealertslist-16388c4a.md) | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Cybersixgill-Alert-Status-Update](../content/cybersixgill-actionable-alerts-cybersixgill-alert-status-update.md) | This playbook will update status of Cybersixgill Alerts when respective incident status is updated i... | - |
-| [Delete-Cybersixgill-Alert](../content/cybersixgill-actionable-alerts-delete-cybersixgill-alert.md) | This playbook will delete Alert on Cybersixgill portal when resective Incident is deleted in Microso... | - |
+| [Cybersixgill-Alert-Status-Update](../content/cybersixgill-actionable-alerts-cybersixgill-alert-status-update-4e8681e6.md) | This playbook will update status of Cybersixgill Alerts when respective incident status is updated i... | - |
+| [Delete-Cybersixgill-Alert](../content/cybersixgill-actionable-alerts-delete-cybersixgill-alert-dcb0070c.md) | This playbook will delete Alert on Cybersixgill portal when resective Incident is deleted in Microso... | - |
 
 ## Release Notes
 

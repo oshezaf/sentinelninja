@@ -1,5 +1,9 @@
 # Datawiza
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/datawiza_logo.svg" alt="Datawiza Logo" width="75" height="75">
+
+Send Datawiza Access Proxy access and MFA logs to Microsoft Sentinel for real-time security insights and analytics. Improve visibility, accelerate investigations, and meet audit/compliance requirements.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.datawiza.com/contact-us/](https://www.datawiza.com/contact-us/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Datawiza Technology Inc. - support@datawiza.com |
 | **First Published** | 2025-11-10 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza) |
 

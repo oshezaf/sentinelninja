@@ -1,0 +1,33 @@
+# Hunt for Admin email access
+
+This query helps report on email access by administrators
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| **ID** | `e55e178e-48ba-4313-918a-2d3e16a95441` |
+| **Tactics** | PrivilegeEscalation |
+| **Techniques** | T1078 |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
+| **Solution JSON** | ⚠️ Not listed |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/General/Hunt%20for%20Admin%20email%20access.yaml) |
+
+> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`CloudAppEvents`](../tables/cloudappevents.md)
+
+---
+
+**Browse:**
+
+- [← Back to Hunting Queries](hunting-queries.md)
+- [← Back to Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

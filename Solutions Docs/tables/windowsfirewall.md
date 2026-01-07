@@ -29,7 +29,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Windows Firewall](../solutions/windows-firewall.md):**
-- [WindowsFirewall](../content/windows-firewall-windowsfirewall.md)
+- [WindowsFirewall](../content/windows-firewall-windowsfirewall-6cfebfa8.md)
 
 ## Resource Types
 

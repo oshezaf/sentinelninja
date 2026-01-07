@@ -13,38 +13,40 @@ Browse all content items (analytic rules, hunting queries, playbooks, workbooks,
 
 ## Overview
 
-This index provides access to **4828 content items** across all Microsoft Sentinel solutions.
+This index provides access to **4868 content items** across all Microsoft Sentinel solutions.
 
 Content is organized by type. Click on a content type below to browse all items of that type.
 
 | Content Type | Count | Description |
 |:-------------|------:|:------------|
-| [Analytic Rules](analytic-rules.md) | 2175 | Detection rules for identifying security threats |
-| [Hunting Queries](hunting-queries.md) | 1158 | Proactive threat hunting queries |
+| [Analytic Rules](analytic-rules.md) | 2185 | Detection rules for identifying security threats |
+| [Hunting Queries](hunting-queries.md) | 1168 | Proactive threat hunting queries |
 | [Playbooks](playbooks.md) | 592 | Automated response and remediation workflows |
-| [Workbooks](workbooks.md) | 349 | Interactive dashboards and reports |
-| [Parsers](parsers.md) | 513 | Data normalization and transformation functions |
+| [Workbooks](workbooks.md) | 350 | Interactive dashboards and reports |
+| [Parsers](parsers.md) | 514 | Data normalization and transformation functions |
 | [Watchlists](watchlists.md) | 41 | Reference data lists for enrichment and filtering |
+| Summary Rule | 18 | |
 
 ## Statistics
 
 | Metric | Value |
 |:-------|------:|
-| Total Content Items | 4828 |
-| Content Types | 6 |
-| Solutions with Content | 384 |
+| Total Content Items | 4868 |
+| Content Types | 7 |
+| Solutions with Content | 385 |
 
 ### Content by Type
 
 | Content Type | Count |
 |:-------------|------:|
-| [Analytic Rules](analytic-rules.md) | 2175 |
-| [Hunting Queries](hunting-queries.md) | 1158 |
+| [Analytic Rules](analytic-rules.md) | 2185 |
+| [Hunting Queries](hunting-queries.md) | 1168 |
 | [Playbooks](playbooks.md) | 592 |
-| [Parsers](parsers.md) | 513 |
-| [Workbooks](workbooks.md) | 349 |
+| [Parsers](parsers.md) | 514 |
+| [Workbooks](workbooks.md) | 350 |
 | [Watchlists](watchlists.md) | 41 |
-| **Total** | **4828** |
+| [Summary Rule](summary-rules.md) | 18 |
+| **Total** | **4868** |
 
 ---
 

@@ -1,5 +1,9 @@
 # Halcyon
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/halcyon.svg" alt="Halcyon Logo" width="75" height="75">
+
+The [Halcyon](https://www.halcyon.ai) solution for Microsoft Sentinel enables you to ingest Halcyon Events and Alerts into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.halcyon.ai](https://www.halcyon.ai) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Halcyon |
 | **First Published** | 2025-12-22 |
 | **Last Updated** | 2025-12-22 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon) |
@@ -42,11 +48,11 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ASimAuthenticationHalcyon](../content/halcyon-asimauthenticationhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde1.md) | - | - |
-| [ASimDnsHalcyon](../content/halcyon-asimdnshalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde2.md) | - | - |
-| [ASimFileEventHalcyon](../content/halcyon-asimfileeventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde3.md) | - | - |
-| [ASimNetworkSessionHalcyon](../content/halcyon-asimnetworksessionhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde4.md) | - | - |
-| [ASimProcessEventHalcyon](../content/halcyon-asimprocesseventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde5.md) | - | - |
+| [ASimAuthenticationHalcyon](../content/halcyon-asimauthenticationhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde1-12c13dee.md) | - | - |
+| [ASimDnsHalcyon](../content/halcyon-asimdnshalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde2-5abc0b5e.md) | - | - |
+| [ASimFileEventHalcyon](../content/halcyon-asimfileeventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde3-432f7dbb.md) | - | - |
+| [ASimNetworkSessionHalcyon](../content/halcyon-asimnetworksessionhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde4-20ce998d.md) | - | - |
+| [ASimProcessEventHalcyon](../content/halcyon-asimprocesseventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde5-a5e3e8be.md) | - | - |
 
 ## Release Notes
 

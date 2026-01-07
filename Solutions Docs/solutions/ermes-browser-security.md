@@ -1,5 +1,9 @@
 # Ermes Browser Security
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Ermes_Browser_Security_Logo.svg" alt="Ermes Browser Security Logo" width="75" height="75">
+
+The [Ermes Browser Security](https://www.ermes.company) Solution for Microsoft Sentinel provides a simple way to ingest Security and Audit events from Ermes into Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.ermes.company](https://www.ermes.company) |
 | **Categories** | domains |
+| **Version** | 3.1.0 |
+| **Author** | dev@ermes.company |
 | **First Published** | 2023-09-29 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security) |
 

@@ -1,5 +1,13 @@
 # VMware vCenter
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="VMware vCenter Logo" width="75" height="75">
+
+The [VMware vCenter Server](https://www.vmware.com/products/vcenter-server.html) solution allows you ingest logs from your vCenter platform using Syslog into Microsoft Sentinel.
+
+ This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation.
+
+ **NOTE**: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter) |
 
@@ -39,20 +49,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [VMware vCenter - Root login](../content/vmware-vcenter-vmware-vcenter---root-login-03e8a895-b5ba-49a0-aed3-f9a997d92fbe.md) | High | InitialAccess, PrivilegeEscalation | - |
-| [vCenter - Root impersonation](../content/vmware-vcenter-vcenter---root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c.md) | Medium | PrivilegeEscalation | - |
+| [VMware vCenter - Root login](../content/vmware-vcenter-vmware-vcenter-root-login-03e8a895-b5ba-49a0-aed3-f9a997d92fbe-e2c012c8.md) | High | InitialAccess, PrivilegeEscalation | - |
+| [vCenter - Root impersonation](../content/vmware-vcenter-vcenter-root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c-9fa02551.md) | Medium | PrivilegeEscalation | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [vCenter](../content/vmware-vcenter-vcenter.md) | - |
+| [vCenter](../content/vmware-vcenter-vcenter-167665a0.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [vCenter](../content/vmware-vcenter-vcenter-a466d02c-cfe0-4377-9ae0-fdfc8dd79e78.md) | - | - |
+| [vCenter](../content/vmware-vcenter-vcenter-a466d02c-cfe0-4377-9ae0-fdfc8dd79e78-a463614c.md) | - | - |
 
 ## Release Notes
 

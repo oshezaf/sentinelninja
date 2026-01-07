@@ -1,5 +1,9 @@
 # RSAIDPlus_AdminLogs_Connector
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RSA_IDPlus.svg" alt="RSAIDPlus_AdminLogs_Connector Logo" width="75" height="75">
+
+The RSA ID Plus Admin Logs Data Connector enables seamless integration between RSA ID Plus and Microsoft Sentinel. This connector ingests Admin Events logs from RSA ID Plus Cloud Administration Console using the RSA Admin API and stores them securely in your Azure Log Analytics (ALA) workspace. These logs can then be used for monitoring, analysis, and threat detection within Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://community.rsa.com/](https://community.rsa.com/) |
 | **Categories** | domains,verticals |
+| **Version** | 3.0.1 |
+| **Author** | RSA Security |
 | **First Published** | 2025-10-14 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector) |
 
@@ -38,13 +44,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [RSA ID Plus - Locked Administrator Account Detected](../content/rsaidplus-adminlogs-connector-rsa-id-plus---locked-administrator-account-detected-488c759d-a82e-44cd-91bb-d766573918d7.md) | Medium | Impact, CredentialAccess | [`RSAIDPlus_AdminLogs_CL`](../tables/rsaidplus-adminlogs-cl.md) |
+| [RSA ID Plus - Locked Administrator Account Detected](../content/rsaidplus-adminlogs-connector-rsa-id-plus-locked-administrator-account-detected-488c759d-a82e-44cd-91bb-d766573918d7-9266bd29.md) | Medium | Impact, CredentialAccess | [`RSAIDPlus_AdminLogs_CL`](../tables/rsaidplus-adminlogs-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SendEmailonRSAIDPlusAlert](../content/rsaidplus-adminlogs-connector-sendemailonrsaidplusalert.md) | Sends an email notification when an RSA ID Plus analytic rule triggers. This playbook can be linked ... | - |
+| [SendEmailonRSAIDPlusAlert](../content/rsaidplus-adminlogs-connector-sendemailonrsaidplusalert-520ce6b8.md) | Sends an email notification when an RSA ID Plus analytic rule triggers. This playbook can be linked ... | - |
 
 ## Additional Documentation
 

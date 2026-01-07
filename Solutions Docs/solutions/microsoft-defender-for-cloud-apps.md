@@ -1,5 +1,9 @@
 # Microsoft Defender for Cloud Apps
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Defender for Cloud Apps Logo" width="75" height="75">
+
+The [Microsoft Defender for Cloud Apps](https://docs.microsoft.com/defender-cloud-apps/) solution for Microsoft Sentinel enables you to ingest security alerts and discovery logs from the Defender for Cloud Apps platform, providing visibility into threats in your cloud app environment, including coverage for shadow IT, impossible travel, ransomware, and data exfiltration use cases.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 2.0.2 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud%20Apps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud%20Apps) |
 
@@ -47,13 +53,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Linked Malicious Storage Artifacts](../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d.md) | Medium | CommandAndControl, Exfiltration | [`StorageBlobLogs`](../tables/storagebloblogs.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Linked Malicious Storage Artifacts](../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d-6de5b72c.md) | Medium | CommandAndControl, Exfiltration | [`StorageBlobLogs`](../tables/storagebloblogs.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity.md) | [`McasShadowItReporting`](../tables/mcasshadowitreporting.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md) | [`McasShadowItReporting`](../tables/mcasshadowitreporting.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ## Release Notes
 

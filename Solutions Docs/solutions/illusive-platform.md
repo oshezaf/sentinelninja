@@ -1,5 +1,13 @@
 # Illusive Platform
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/illusiveAttackManagementSystem.svg" alt="Illusive Platform Logo" width="75" height="75">
+
+The Illusive Platform solution for Microsoft Sentinel enables you to ingest Illusive Platform’s attack surface analysis data and incident logs into Microsoft Sentinel and view this information in dedicated dashboards that offer insight into your organization's attack surface risk (ASM Dashboard) and track unauthorized lateral movement in your organization's network (ADS Dashboard).
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://illusive.com/support](https://illusive.com/support) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Illusive Networks |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform) |
 
@@ -39,14 +49,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Illusive Incidents Analytic Rule](../content/illusive-platform-illusive-incidents-analytic-rule-1a7dbcf6-21a2-4255-84b2-c8dbbdca4630.md) | Medium | Persistence, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Illusive Incidents Analytic Rule](../content/illusive-platform-illusive-incidents-analytic-rule-1a7dbcf6-21a2-4255-84b2-c8dbbdca4630-7fa2b740.md) | Medium | Persistence, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IllusiveADS](../content/illusive-platform-illusiveads.md) | - |
-| [IllusiveASM](../content/illusive-platform-illusiveasm.md) | - |
+| [IllusiveADS](../content/illusive-platform-illusiveads-5d29048c.md) | - |
+| [IllusiveASM](../content/illusive-platform-illusiveasm-bca1238e.md) | - |
 
 ## Release Notes
 

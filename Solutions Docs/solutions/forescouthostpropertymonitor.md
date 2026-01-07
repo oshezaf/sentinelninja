@@ -1,5 +1,9 @@
 # ForescoutHostPropertyMonitor
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/forescout-logo.svg" alt="ForescoutHostPropertyMonitor Logo" width="75" height="75">
+
+Forescout Host Property Monitor offers host property analysis, incident generation and action dispatching for hosts managed by Forescout Continuum platform.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.forescout.com/support](https://www.forescout.com/support) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Julian Wang - julian.wang@forescout.com |
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor) |
 
@@ -41,19 +47,19 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Forescout-DNS_Sniff_Event_Monitor](../content/forescouthostpropertymonitor-forescout-dns-sniff-event-monitor-d272e277-f285-4dbc-ae2d-7f65ba64a79e.md) | Medium | - | [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) |
+| [Forescout-DNS_Sniff_Event_Monitor](../content/forescouthostpropertymonitor-forescout-dns-sniff-event-monitor-d272e277-f285-4dbc-ae2d-7f65ba64a79e-39ee6063.md) | Medium | - | [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ForescoutHostPropertyMonitorWorkbook](../content/forescouthostpropertymonitor-forescouthostpropertymonitorworkbook.md) | [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md)<br>[`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md)<br>[`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) |
+| [ForescoutHostPropertyMonitorWorkbook](../content/forescouthostpropertymonitor-forescouthostpropertymonitorworkbook-cbfbbf6d.md) | [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md)<br>[`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md)<br>[`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Forescout-DNS_Sniff_Event_Playbook](../content/forescouthostpropertymonitor-forescout-dns-sniff-event-playbook.md) | This playbook will update incident with action to perform on endpoint | - |
+| [Forescout-DNS_Sniff_Event_Playbook](../content/forescouthostpropertymonitor-forescout-dns-sniff-event-playbook-171772ed.md) | This playbook will update incident with action to perform on endpoint | - |
 
 ## Release Notes
 

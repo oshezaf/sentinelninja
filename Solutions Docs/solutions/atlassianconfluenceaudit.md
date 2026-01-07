@@ -1,5 +1,15 @@
 # AtlassianConfluenceAudit
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="AtlassianConfluenceAudit Logo" width="75" height="75">
+
+The [Atlassian Confluence Audit](https://www.atlassian.com/software/confluence) solution provides the capability to ingest [Confluence Audit Records](https://support.atlassian.com/confluence-cloud/docs/view-the-audit-log/) into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit) |
 
@@ -41,7 +53,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ConfluenceAudit](../content/atlassianconfluenceaudit-confluenceaudit-91a64f79-c926-4b7f-a77e-b202f79fe4bf.md) | - | - |
+| [ConfluenceAudit](../content/atlassianconfluenceaudit-confluenceaudit-91a64f79-c926-4b7f-a77e-b202f79fe4bf-d342acac.md) | - | - |
 
 ## Release Notes
 

@@ -1,5 +1,13 @@
 # SymantecProxySG
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="SymantecProxySG Logo" width="75" height="75">
+
+The [Symantec ProxySG](https://www.broadcom.com/products/cyber-security/network/web-protection#our-swg-solution) solution for Microsoft Sentinel enables you to ingest Symantec ProxySG’s network proxy traffic logs into Microsoft Sentinel.
+
+This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. 
+
+ **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-05-25 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SymantecProxySG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SymantecProxySG) |
 
@@ -39,20 +49,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive Denied Proxy Traffic](../content/symantecproxysg-excessive-denied-proxy-traffic-7a58b253-0ef2-4248-b4e5-c350f15a8346.md) | Low | DefenseEvasion, CommandAndControl | - |
-| [User Accessed Suspicious URL Categories](../content/symantecproxysg-user-accessed-suspicious-url-categories-fb0f4a93-d8ad-4b54-9931-85bdb7550f90.md) | Medium | InitialAccess, CommandAndControl | - |
+| [Excessive Denied Proxy Traffic](../content/symantecproxysg-excessive-denied-proxy-traffic-7a58b253-0ef2-4248-b4e5-c350f15a8346-3c74e5a4.md) | Low | DefenseEvasion, CommandAndControl | - |
+| [User Accessed Suspicious URL Categories](../content/symantecproxysg-user-accessed-suspicious-url-categories-fb0f4a93-d8ad-4b54-9931-85bdb7550f90-b9a254cd.md) | Medium | InitialAccess, CommandAndControl | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SymantecProxySG](../content/symantecproxysg-symantecproxysg.md) | - |
+| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-dd9ed98f.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-58b3074c-519b-4812-b784-e8bd7712089a.md) | - | - |
+| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-58b3074c-519b-4812-b784-e8bd7712089a-5c90419b.md) | - | - |
 
 ## Release Notes
 

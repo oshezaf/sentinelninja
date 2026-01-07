@@ -1,5 +1,9 @@
 # VaronisSaaS
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VaronisLogo.svg" alt="VaronisSaaS Logo" width="75" height="75">
+
+The Varonis SaaS integration allows you to retrieve Varonis DatAlert alerts, create incident and pull activities related to the alerts for conducting investigations.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.varonis.com/resources/support](https://www.varonis.com/resources/support) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Varonis |
 | **First Published** | 2023-11-10 |
 | **Last Updated** | 2023-11-10 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS) |
@@ -38,7 +44,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VaronisSaaS](../content/varonissaas-varonissaas.md) | [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) |
+| [VaronisSaaS](../content/varonissaas-varonissaas-5667e619.md) | [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) |
 
 ## Additional Documentation
 

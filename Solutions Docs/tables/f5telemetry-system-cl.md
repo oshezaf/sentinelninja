@@ -4,7 +4,7 @@
 
 This table is used by the following solutions:
 
-- [F5 BIG-IP](../solutions/f5-big-ip.md)
+- [F5 Big-IP](../solutions/f5-big-ip.md)
 
 ## Connectors (1)
 
@@ -18,9 +18,9 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [F5 BIG-IP](../solutions/f5-big-ip.md):**
-- [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics.md)
-- [F5Networks](../content/f5-big-ip-f5networks.md)
+**In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
+- [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md)
+- [F5Networks](../content/f5-big-ip-f5networks-56be211d.md)
 
 ---
 

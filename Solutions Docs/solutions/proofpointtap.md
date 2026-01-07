@@ -1,5 +1,15 @@
 # ProofPointTap
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PFPTLogo.svg" alt="ProofPointTap Logo" width="75" height="75">
+
+The [Proofpoint TAP](https://www.proofpoint.com/us/products/advanced-threat-protection/targeted-attack-protection) solution for Microsoft Sentinel enables you to ingest Proofpoint TAP logs into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://proofpoint.my.site.com/community/s/](https://proofpoint.my.site.com/community/s/) |
 | **Categories** | domains |
+| **Version** | 3.1.1 |
+| **Author** | Proofpoint, Inc. - azure-support@proofpoint.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap) |
 
@@ -49,28 +61,28 @@ This solution includes **7 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Malware Link Clicked](../content/proofpointtap-malware-link-clicked-8675dd7a-795e-4d56-a79c-fc848c5ee61c.md) | Medium | InitialAccess | [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) |
-| [Malware attachment delivered](../content/proofpointtap-malware-attachment-delivered-0558155e-4556-447e-9a22-828f2a7de06b.md) | Medium | InitialAccess | [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) |
+| [Malware Link Clicked](../content/proofpointtap-malware-link-clicked-8675dd7a-795e-4d56-a79c-fc848c5ee61c-ca159715.md) | Medium | InitialAccess | [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) |
+| [Malware attachment delivered](../content/proofpointtap-malware-attachment-delivered-0558155e-4556-447e-9a22-828f2a7de06b-eaec71b9.md) | Medium | InitialAccess | [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ProofpointTAP](../content/proofpointtap-proofpointtap.md) | [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md)<br>[`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md)<br>[`ProofPointTAPMessagesBlockedV2_CL`](../tables/proofpointtapmessagesblockedv2-cl.md)<br>[`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) |
+| [ProofpointTAP](../content/proofpointtap-proofpointtap-d0be2a01.md) | [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md)<br>[`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md)<br>[`ProofPointTAPMessagesBlockedV2_CL`](../tables/proofpointtapmessagesblockedv2-cl.md)<br>[`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ ProofpointTAP-CheckAccountInVAP](../content/proofpointtap--proofpointtap-checkaccountinvap.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [Get-ProofpointTapEvents](../content/proofpointtap-get-proofpointtapevents.md) | This playbook ingests events from ProofPoint TAP to Log Analytics/MicroSoft Sentinel. | [`ProofPointData_CL`](../tables/proofpointdata-cl.md) *(write)* |
-| [ProofpointTAP-AddForensicsInfoToIncident](../content/proofpointtap-proofpointtap-addforensicsinfotoincident.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [ ProofpointTAP-CheckAccountInVAP](../content/proofpointtap-proofpointtap-checkaccountinvap-58ea7ed4.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [Get-ProofpointTapEvents](../content/proofpointtap-get-proofpointtapevents-ac19b8c3.md) | This playbook ingests events from ProofPoint TAP to Log Analytics/MicroSoft Sentinel. | [`ProofPointData_CL`](../tables/proofpointdata-cl.md) *(write)* |
+| [ProofpointTAP-AddForensicsInfoToIncident](../content/proofpointtap-proofpointtap-addforensicsinfotoincident-f05bb435.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ProofpointTAPEvent](../content/proofpointtap-proofpointtapevent-6cdd2169-833b-4545-ab58-8456b8ccc11a.md) | - | - |
+| [ProofpointTAPEvent](../content/proofpointtap-proofpointtapevent-6cdd2169-833b-4545-ab58-8456b8ccc11a-0c79a6d5.md) | - | - |
 
 ## Release Notes
 

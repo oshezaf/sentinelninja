@@ -1,5 +1,17 @@
 # Microsoft Exchange Security - Exchange On-Premises
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Exchange Security - Exchange On-Premises Logo" width="75" height="75">
+
+The Exchange Security Audit and Configuration Insight solution analyze Exchange On-Premises configuration and logs from a security lens to provide insights and alerts.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Windows Event logs collection, including MS Exchange Management Event logs](https://learn.microsoft.com/azure/azure-monitor/agents/data-sources-windows-events)
+
+b. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-collector-api?tabs=powershell)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | domains |
+| **Version** | 3.3.2 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-21 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises) |
 
@@ -52,34 +66,34 @@ This solution includes **13 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Server Oriented Cmdlet And User Oriented Cmdlet used](../content/microsoft-exchange-security---exchange-on-premises-server-oriented-cmdlet-and-user-oriented-cmdlet-used-7bce901b-9bc8-4948-8dfc-8f68878092d5.md) | High | Exfiltration, Persistence, Collection | - |
-| [VIP Mailbox manipulation](../content/microsoft-exchange-security---exchange-on-premises-vip-mailbox-manipulation-5170c3c4-b8c9-485c-910d-a21d965ee181.md) | Medium | Exfiltration, Persistence, Collection | - |
+| [Server Oriented Cmdlet And User Oriented Cmdlet used](../content/microsoft-exchange-security-exchange-on-premises-server-oriented-cmdlet-and-user-oriented-cmdlet-used-7bce901b-9bc8-4948-8dfc-8f68878092d5-0bb5de2e.md) | High | Exfiltration, Persistence, Collection | - |
+| [VIP Mailbox manipulation](../content/microsoft-exchange-security-exchange-on-premises-vip-mailbox-manipulation-5170c3c4-b8c9-485c-910d-a21d965ee181-521c4b8b.md) | Medium | Exfiltration, Persistence, Collection | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-admin-activity.md) | - |
-| [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-least-privilege-with-rbac.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
-| [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-search-adminauditlog.md) | - |
-| [Microsoft Exchange Security Review](../content/microsoft-exchange-security---exchange-on-premises-microsoft-exchange-security-review.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
+| [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.md) | - |
+| [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-least-privilege-with-rbac-b2849cd8.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
+| [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-search-adminauditlog-fcf38c03.md) | - |
+| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeAdminAuditLogs](../content/microsoft-exchange-security---exchange-on-premises-exchangeadminauditlogs-f79a3a19-bb9f-4f06-a109-3e3ac2001be9.md) | - | - |
-| [ExchangeConfiguration](../content/microsoft-exchange-security---exchange-on-premises-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620.md) | - | - |
-| [ExchangeEnvironmentList](../content/microsoft-exchange-security---exchange-on-premises-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a.md) | - | - |
-| [MESCheckVIP](../content/microsoft-exchange-security---exchange-on-premises-mescheckvip-9f0e2122-f511-4e51-83a0-51fbd86d3121.md) | - | - |
-| [MESCompareDataOnPMRA](../content/microsoft-exchange-security---exchange-on-premises-mescomparedataonpmra-0a0f4ea0-6b94-4420-892e-41ca985f2f01.md) | - | - |
+| [ExchangeAdminAuditLogs](../content/microsoft-exchange-security-exchange-on-premises-exchangeadminauditlogs-f79a3a19-bb9f-4f06-a109-3e3ac2001be9-f57cf0cf.md) | - | - |
+| [ExchangeConfiguration](../content/microsoft-exchange-security-exchange-on-premises-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620-9b72b1b2.md) | - | - |
+| [ExchangeEnvironmentList](../content/microsoft-exchange-security-exchange-on-premises-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a-9abc248f.md) | - | - |
+| [MESCheckVIP](../content/microsoft-exchange-security-exchange-on-premises-mescheckvip-9f0e2122-f511-4e51-83a0-51fbd86d3121-9828634d.md) | - | - |
+| [MESCompareDataOnPMRA](../content/microsoft-exchange-security-exchange-on-premises-mescomparedataonpmra-0a0f4ea0-6b94-4420-892e-41ca985f2f01-77766893.md) | - | - |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeServicesMonitoring](../content/microsoft-exchange-security---exchange-on-premises-exchangeservicesmonitoring.md) | - | - |
-| [ExchangeVIP](../content/microsoft-exchange-security---exchange-on-premises-exchangevip.md) | - | - |
+| [ExchangeServicesMonitoring](../content/microsoft-exchange-security-exchange-on-premises-exchangeservicesmonitoring-0009df44.md) | - | - |
+| [ExchangeVIP](../content/microsoft-exchange-security-exchange-on-premises-exchangevip-ea783afe.md) | - | - |
 
 ## Additional Documentation
 

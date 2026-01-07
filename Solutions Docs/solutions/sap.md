@@ -26,8 +26,10 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [workflow](../content/sap-workflow.md) | < 🏡home | - |
-| [workflow](../content/sap-workflow.md) | < 🏡home | - |
+| [workflow](../content/sap-workflow-3298b428.md) ⚠️ | < 🏡home | - |
+| [workflow](../content/sap-workflow-20a8ae88.md) ⚠️ | < 🏡home | - |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Additional Documentation
 

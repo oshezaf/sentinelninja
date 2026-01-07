@@ -1,5 +1,11 @@
 # CrowdStrike Falcon Endpoint Protection
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="CrowdStrike Falcon Endpoint Protection Logo" width="75" height="75">
+
+The [CrowdStrike Falcon Endpoint Protection](https://www.crowdstrike.com/products/) solution allows you to easily onboard CrowdStrike Falcon Endpoint Protection to Microsoft Sentinel. The data collected can be used to create custom dashboards, alerts, and improve investigation. This gives you more insight into your organization's endpoints and improves your security operation capabilities. 
+
+This solution contains multiple Data Connectors that help ingest Falcon Data Replicator logs, Adversary Intelligence & other more specific data from CrowdStrike. Carefully review the capabilities of each connector and configure/enable the most relevant connector based on specific requirements.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +14,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.1.8 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection) |
 
@@ -74,31 +82,33 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527.md) | High | - | - |
-| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c.md) | High | - | - |
+| [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md) | High | - | - |
+| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | - | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CrowdStrikeFalconEndpointProtection](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconendpointprotection.md) | - |
+| [CrowdStrikeFalconEndpointProtection](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconendpointprotection-b9a8efc3.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Crowdstrike API authentication](../content/crowdstrike-falcon-endpoint-protection-crowdstrike-api-authentication.md) | This is Crowdstrike base template which is used to generate access token and this is used in actual ... | - |
-| [Endpoint enrichment - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-endpoint-enrichment---crowdstrike.md) | When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below a... | - |
-| [Isolate endpoint - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-isolate-endpoint---crowdstrike.md) | When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below a... | - |
+| [Crowdstrike API authentication](../content/crowdstrike-falcon-endpoint-protection-crowdstrike-api-authentication-f93025fb.md) | This is Crowdstrike base template which is used to generate access token and this is used in actual ... | - |
+| [Endpoint enrichment - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-endpoint-enrichment-crowdstrike-9fdce9cc.md) | When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below a... | - |
+| [Isolate endpoint - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-isolate-endpoint-crowdstrike-8e772c42.md) | When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below a... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CrowdStrikeFalconEventStream](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconeventstream-d2db8f31-eb69-4784-b165-b19fc163e1dc.md) | - | - |
-| [CrowdStrikeReplicator](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-5fbb24dd-7089-43fd-ba32-27e944e8c6aa.md) | - | - |
-| [CrowdStrikeReplicatorV2](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicatorv2-b52d934f-469b-4908-997f-fc097b17442a.md) | - | - |
-| [CrowdStrikeReplicator_future](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-future-5fbb24dd-7089-43fd-ba32-27e944e8c6aa.md) | - | - |
+| [CrowdStrikeFalconEventStream](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconeventstream-d2db8f31-eb69-4784-b165-b19fc163e1dc-dd1401e4.md) | - | - |
+| [CrowdStrikeReplicator](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-5fbb24dd-7089-43fd-ba32-27e944e8c6aa-04120f36.md) | - | - |
+| [CrowdStrikeReplicatorV2](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicatorv2-b52d934f-469b-4908-997f-fc097b17442a-0f0f5d92.md) | - | - |
+| [CrowdStrikeReplicator_future](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-future-5fbb24dd-7089-43fd-ba32-27e944e8c6aa-f62533ef.md) ⚠️ | - | - |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 

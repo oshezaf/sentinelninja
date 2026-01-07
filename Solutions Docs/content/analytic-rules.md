@@ -1,6 +1,6 @@
 # Analytic Rules
 
-**2175 analytic rules** across all Microsoft Sentinel solutions.
+**2185 analytic rules** across all Microsoft Sentinel solutions.
 
 **Browse by:**
 
@@ -18,7 +18,7 @@
 | [#](analytic-rules-other.md) | 30 |
 | [A](analytic-rules-a.md) | 165 |
 | [B](analytic-rules-b.md) | 176 |
-| [C](analytic-rules-c.md) | 367 |
+| [C](analytic-rules-c.md) | 377 |
 | [D](analytic-rules-d.md) | 136 |
 | [E](analytic-rules-e.md) | 61 |
 | [F](analytic-rules-f.md) | 46 |

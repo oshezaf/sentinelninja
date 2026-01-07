@@ -19,7 +19,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
-- [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook.md)
+- [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md)
 
 ---
 

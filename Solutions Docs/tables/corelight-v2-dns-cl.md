@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow.md)
+- [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md)
 
 ---
 

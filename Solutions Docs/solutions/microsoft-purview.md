@@ -1,5 +1,9 @@
 # Microsoft Purview
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Microsoft%20Purview/Data%20Connectors/Logo/MicrosoftPurview.svg" alt="Microsoft Purview Logo" width="75" height="75">
+
+The [Microsoft Purview](https://learn.microsoft.com/purview/purview) Solution enables data sensitivity enrichment of Microsoft Sentinel. Data classification and sensitivity label logs from Microsoft Purview scans are ingested and visualized through workbooks, analytical rules, and more.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview) |
 
@@ -38,14 +44,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Sensitive Data Discovered in the Last 24 Hours](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-7ae7e8b0-07e9-43cb-b783-b04082f09060.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
-| [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours---customized-79f296d9-e6e4-45dc-9ca7-1770955435fa.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
+| [Sensitive Data Discovered in the Last 24 Hours](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-7ae7e8b0-07e9-43cb-b783-b04082f09060-60c3db5f.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
+| [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-customized-79f296d9-e6e4-45dc-9ca7-1770955435fa-d7061393.md) | Informational | Discovery | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftPurview](../content/microsoft-purview-microsoftpurview.md) | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
+| [MicrosoftPurview](../content/microsoft-purview-microsoftpurview-c44ab5ce.md) | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |
 
 ## Release Notes
 

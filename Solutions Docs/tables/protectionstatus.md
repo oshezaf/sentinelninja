@@ -24,10 +24,10 @@ This table is used by the following solutions:
 ### Workbooks (2)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
-- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark.md)
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [InvestigationInsights](../content/soc-handbook-investigationinsights.md)
+- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 ## Resource Types
 

@@ -1,5 +1,9 @@
 # Amazon Web Services Route 53
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="Amazon Web Services Route 53 Logo" width="75" height="75">
+
+Amazon Web Services Route 53 Solution for Microsoft Sentinel provides data connector to ingest AWS Route 53 DNS logs into Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Microsoft |
 | **First Published** | 2025-03-21 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053) |
 

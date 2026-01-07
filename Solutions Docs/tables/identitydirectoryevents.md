@@ -31,15 +31,15 @@ This table is ingested by the following connectors:
 ### Hunting Queries (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [SAM Name Change CVE-2021-42278](../content/microsoft-defender-xdr-sam-name-change-cve-2021-42278-1299962c-804e-459a-8d3d-41d68bc45ba2.md)
+- [SAM Name Change CVE-2021-42278](../content/microsoft-defender-xdr-sam-name-change-cve-2021-42278-1299962c-804e-459a-8d3d-41d68bc45ba2-fdacc34d.md)
 
 ### Workbooks (2)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity.md)
+- [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
-- [SOXITCompliance](../content/sox-it-compliance-soxitcompliance.md)
+- [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)
 
 ---
 

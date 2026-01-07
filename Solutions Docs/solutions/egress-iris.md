@@ -1,5 +1,9 @@
 # Egress Iris
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="Egress Iris Logo" width="75" height="75">
+
+Egress SIEM Connector for Microsoft Sentinel
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.egress.com](https://support.egress.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Egress - support@egress.com |
 | **First Published** | 2024-03-11 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Iris](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Iris) |
 
@@ -37,7 +43,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PreventWorkbook](../content/egress-iris-preventworkbook.md) | [`EgressEvents_CL`](../tables/egressevents-cl.md) |
+| [PreventWorkbook](../content/egress-iris-preventworkbook-e3444c6a.md) | [`EgressEvents_CL`](../tables/egressevents-cl.md) |
 
 ## Release Notes
 

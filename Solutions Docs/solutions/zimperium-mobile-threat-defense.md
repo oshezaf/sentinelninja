@@ -1,5 +1,15 @@
 # Zimperium Mobile Threat Defense
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZIMPERIUM-logo_square2.svg" alt="Zimperium Mobile Threat Defense Logo" width="75" height="75">
+
+The [Zimperium](https://www.zimperium.com/) Mobile Threat Defense solution gives you the ability to connect the [Zimperium Mobile Threat Defense](https://www.zimperium.com/mtd-maturity-model/) log with Microsoft Sentinel to view dashboards, create custom alerts, and improve investigation.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zimperium.com/support/](https://www.zimperium.com/support/) |
 | **Categories** | domains |
+| **Version** | 2.0.1 |
+| **Author** | Zimperium |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense) |
 
@@ -38,7 +50,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZimperiumWorkbooks](../content/zimperium-mobile-threat-defense-zimperiumworkbooks.md) | [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) |
+| [ZimperiumWorkbooks](../content/zimperium-mobile-threat-defense-zimperiumworkbooks-53cb70da.md) | [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) |
 
 ---
 

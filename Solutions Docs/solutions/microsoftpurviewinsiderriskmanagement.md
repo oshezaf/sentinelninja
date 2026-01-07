@@ -1,5 +1,26 @@
 # MicrosoftPurviewInsiderRiskManagement
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="MicrosoftPurviewInsiderRiskManagement Logo" width="75" height="75">
+
+This solution enables insider risk management teams to investigate risk-based behavior across 25+ Microsoft products. This solution is a better-together story between Microsoft Sentinel and Microsoft Purview Insider Risk Management. The solution includes the Insider Risk Management Workbook, (5) Hunting Queries, (1) Data Connector, (5) Analytics Rules, (1) Playbook automation and the Microsoft Purview Insider Risk Management connector. While only Microsoft Sentinel is required to get started, the solution is enhanced with numerous Microsoft offerings, including, but not limited to:
+
+- [Microsoft Purview Insider Risk Management](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-solution-overview?view=o365-worldwide)
+- [Microsoft Purview Communications Compliance](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-solution-overview?view=o365-worldwide)
+- [Microsoft Purview Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/ediscovery?view=o365-worldwide)
+- [Microsoft Purview Defender](https://www.microsoft.com/security/business/threat-protection/microsoft-365-defender?rtc=1)
+- [Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/information-protection?view=o365-worldwide)
+- [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/)
+- [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/)
+- [Microsoft Sentinel Notebooks](https://docs.microsoft.com/azure/sentinel/notebooks) [(Bring Your Own Machine Learning)](https://docs.microsoft.com/azure/sentinel/bring-your-own-ml)
+- [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/threat-protection/endpoint-defender?rtc=1)
+- [Microsoft Defender for Identity](https://www.microsoft.com/security/business/threat-protection/identity-defender?rtc=1)
+- [Microsoft Defender for Cloud Apps](https://www.microsoft.com/security/business/cloud-apps-defender?rtc=1)
+- [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender?rtc=1)
+
+Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sentinel content like data connectors, workbooks, analytics, and automations in your workspace with a single deployment step.
+
+[Learn more about Microsoft Sentinel](https://aka.ms/azuresentinel) | [Learn more about Solutions](https://aka.ms/azuresentinelsolutionsdoc)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +29,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement) |
 
@@ -60,33 +83,33 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406.md) | Medium | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db.md) | High | Execution | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [Insider Risk_Microsoft Purview Insider Risk Management Alert Observed](../content/microsoftpurviewinsiderriskmanagement-insider-risk-microsoft-purview-insider-risk-management-alert-observed-69660e65-0e5c-4700-8b99-5caf59786606.md) | High | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Insider Risk_Risky User Access By Application](../content/microsoftpurviewinsiderriskmanagement-insider-risk-risky-user-access-by-application-15386bba-dc70-463f-a09f-d392e7731c63.md) | Medium | Execution | [`SigninLogs`](../tables/signinlogs.md) |
-| [Insider Risk_Sensitive Data Access Outside Organizational Geo-location](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sensitive-data-access-outside-organizational-geo-location-b81ed294-28cf-48c3-bac8-ac60dcef293b.md) | High | Exfiltration | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |
+| [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md) | Medium | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db-6bbae8c7.md) | High | Execution | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [Insider Risk_Microsoft Purview Insider Risk Management Alert Observed](../content/microsoftpurviewinsiderriskmanagement-insider-risk-microsoft-purview-insider-risk-management-alert-obser-69660e65-0e5c-4700-8b99-5caf59786606-3217bb57.md) | High | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_Risky User Access By Application](../content/microsoftpurviewinsiderriskmanagement-insider-risk-risky-user-access-by-application-15386bba-dc70-463f-a09f-d392e7731c63-dfb68560.md) | Medium | Execution | [`SigninLogs`](../tables/signinlogs.md) |
+| [Insider Risk_Sensitive Data Access Outside Organizational Geo-location](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sensitive-data-access-outside-organizational-geo-loca-b81ed294-28cf-48c3-bac8-ac60dcef293b-93531af5.md) | High | Exfiltration | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Insider Risk_Entity Anomaly Followed by IRM Alert](../content/microsoftpurviewinsiderriskmanagement-insider-risk-entity-anomaly-followed-by-irm-alert-ea5d043f-80ef-452c-a31a-b584e485b2be.md) | PrivilegeEscalation | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a.md) | Exfiltration | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Insider Risk_Multiple Entity-Based Anomalies](../content/microsoftpurviewinsiderriskmanagement-insider-risk-multiple-entity-based-anomalies-3bc01058-ce23-45ba-a7e9-409d844b12dc.md) | PrivilegeEscalation | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
-| [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Insider Risk_Sign In Risk Followed By Sensitive Data Access](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sign-in-risk-followed-by-sensitive-data-access-45ec52c2-99e1-4de1-9adc-bae0f79d4e23.md) | Exfiltration | [`SigninLogs`](../tables/signinlogs.md) |
+| [Insider Risk_Entity Anomaly Followed by IRM Alert](../content/microsoftpurviewinsiderriskmanagement-insider-risk-entity-anomaly-followed-by-irm-alert-ea5d043f-80ef-452c-a31a-b584e485b2be-9c9a3b63.md) | PrivilegeEscalation | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md) | Exfiltration | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_Multiple Entity-Based Anomalies](../content/microsoftpurviewinsiderriskmanagement-insider-risk-multiple-entity-based-anomalies-3bc01058-ce23-45ba-a7e9-409d844b12dc-2bc6a4d7.md) | PrivilegeEscalation | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
+| [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
+| [Insider Risk_Sign In Risk Followed By Sensitive Data Access](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sign-in-risk-followed-by-sensitive-data-access-45ec52c2-99e1-4de1-9adc-bae0f79d4e23-f2037089.md) | Exfiltration | [`SigninLogs`](../tables/signinlogs.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md) |
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Notify-InsiderRiskTeam](../content/microsoftpurviewinsiderriskmanagement-notify-insiderriskteam.md) | This playbook should be configured as an automation action with the Insider Risk Management Analytic... | - |
+| [Notify-InsiderRiskTeam](../content/microsoftpurviewinsiderriskmanagement-notify-insiderriskteam-e199601a.md) | This playbook should be configured as an automation action with the Insider Risk Management Analytic... | - |
 
 ## Additional Documentation
 

@@ -1,5 +1,13 @@
 # CiscoMeraki
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CiscoMeraki/Connector/MerakiConnector/logo.jpg" alt="CiscoMeraki Logo" width="75" height="75">
+
+The Cisco Meraki solution allows you to easily connect your Cisco Meraki (MX/MR/MS) logs with Microsoft Sentinel. This gives you more insight into your organization's network and improves your security operation capabilities.
+
+ This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation.
+
+ **NOTE**: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-08 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki) |
 
@@ -16,7 +26,7 @@
 This solution provides **3 data connector(s)**:
 
 - [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomeraki%28usingrestapi%29.md)
+- [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md)
 - [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md)
 
 ## Tables Reference
@@ -25,8 +35,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
-| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
+| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
 
 ## Content Items
 
@@ -42,23 +52,23 @@ This solution includes **7 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook.md) | - |
+| [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook-efe4feca.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Block Device Client - Cisco Meraki](../content/ciscomeraki-block-device-client---cisco-meraki.md) | This playbook checks if malicious device client is blocked by Cisco Meraki network. | - |
-| [Block IP Address - Cisco Meraki](../content/ciscomeraki-block-ip-address---cisco-meraki.md) | This playbook checks if malicious IP address is blocked or unblocked by Cisco Meraki MX network. | - |
-| [Block URL - Cisco Meraki](../content/ciscomeraki-block-url---cisco-meraki.md) | This playbook checks if malicious URL is blocked in Cisco Meraki network. | - |
-| [IP Address Enrichment - Cisco Meraki](../content/ciscomeraki-ip-address-enrichment---cisco-meraki.md) | This playbook checks if malicious IP address is blocked or unblocked by Cisco Meraki MX network. | - |
-| [URL Enrichment - Cisco Meraki](../content/ciscomeraki-url-enrichment---cisco-meraki.md) | This playbook checks if malicious URL is blocked or unblocked by Cisco Meraki network. | - |
+| [Block Device Client - Cisco Meraki](../content/ciscomeraki-block-device-client-cisco-meraki-fea770b6.md) | This playbook checks if malicious device client is blocked by Cisco Meraki network. | - |
+| [Block IP Address - Cisco Meraki](../content/ciscomeraki-block-ip-address-cisco-meraki-3665b3f6.md) | This playbook checks if malicious IP address is blocked or unblocked by Cisco Meraki MX network. | - |
+| [Block URL - Cisco Meraki](../content/ciscomeraki-block-url-cisco-meraki-cdb1ce6f.md) | This playbook checks if malicious URL is blocked in Cisco Meraki network. | - |
+| [IP Address Enrichment - Cisco Meraki](../content/ciscomeraki-ip-address-enrichment-cisco-meraki-af9705f2.md) | This playbook checks if malicious IP address is blocked or unblocked by Cisco Meraki MX network. | - |
+| [URL Enrichment - Cisco Meraki](../content/ciscomeraki-url-enrichment-cisco-meraki-b58e2089.md) | This playbook checks if malicious URL is blocked or unblocked by Cisco Meraki network. | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoMeraki](../content/ciscomeraki-ciscomeraki-f3811ff1-231c-453f-bd2c-cda06e7c3e1f.md) | - | - |
+| [CiscoMeraki](../content/ciscomeraki-ciscomeraki-f3811ff1-231c-453f-bd2c-cda06e7c3e1f-119643da.md) | - | - |
 
 ## Additional Information
 

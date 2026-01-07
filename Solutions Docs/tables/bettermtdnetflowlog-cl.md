@@ -4,7 +4,7 @@
 
 This table is used by the following solutions:
 
-- [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-%28mtd%29.md)
+- [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md)
 
 ## Connectors (1)
 
@@ -18,8 +18,8 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-%28mtd%29.md):**
-- [BETTER_MTD_Workbook](../content/better-mobile-threat-defense-%28mtd%29-better-mtd-workbook.md)
+**In solution [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md):**
+- [BETTER_MTD_Workbook](../content/better-mobile-threat-defense-mtd-better-mtd-workbook-e3655f79.md)
 
 ---
 

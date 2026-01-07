@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Netskopev2](../solutions/netskopev2.md):**
-- [Netskope - WebTransaction Error Detection](../content/netskopev2-netskope---webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f.md)
+- [Netskope - WebTransaction Error Detection](../content/netskopev2-netskope-webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f-9bf88cfb.md)
 
 ---
 

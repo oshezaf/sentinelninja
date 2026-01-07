@@ -19,9 +19,9 @@ This table is ingested by the following connectors:
 ### Workbooks (3)
 
 **In solution [Lookout](../solutions/lookout.md):**
-- [LookoutExecutiveDashboard](../content/lookout-lookoutexecutivedashboard.md)
-- [LookoutIOAInvestigationDashboard](../content/lookout-lookoutioainvestigationdashboard.md)
-- [LookoutSecurityInvestigationDashboard](../content/lookout-lookoutsecurityinvestigationdashboard.md)
+- [LookoutExecutiveDashboard](../content/lookout-lookoutexecutivedashboard-f8721bde.md)
+- [LookoutIOAInvestigationDashboard](../content/lookout-lookoutioainvestigationdashboard-3c024d7b.md)
+- [LookoutSecurityInvestigationDashboard](../content/lookout-lookoutsecurityinvestigationdashboard-1578bafc.md)
 
 ---
 

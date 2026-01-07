@@ -1,5 +1,13 @@
 # Infoblox NIOS
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="Infoblox NIOS Logo" width="75" height="75">
+
+The [Infoblox Network Identity Operating System (NIOS)](https://www.infoblox.com/glossary/network-identity-operating-system-nios/) solution for Microsoft Sentinel enables you to easily connect your Infoblox NIOS logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
+
+ This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog solution will be installed as part of this solution installation.
+
+ **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.4 |
+| **Author** | Infoblox |
 | **First Published** | 2022-04-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS) |
 
@@ -39,42 +49,44 @@ This solution includes **26 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive NXDOMAIN DNS Queries](../content/infoblox-nios-excessive-nxdomain-dns-queries-b8266f81-2715-41a6-9062-42486cbc9c73.md) | Medium | CommandAndControl | - |
-| [Potential DHCP Starvation Attack](../content/infoblox-nios-potential-dhcp-starvation-attack-57e56fc9-417a-4f41-a579-5475aea7b8ce.md) | Medium | InitialAccess | - |
+| [Excessive NXDOMAIN DNS Queries](../content/infoblox-nios-excessive-nxdomain-dns-queries-b8266f81-2715-41a6-9062-42486cbc9c73-d5682e5d.md) | Medium | CommandAndControl | - |
+| [Potential DHCP Starvation Attack](../content/infoblox-nios-potential-dhcp-starvation-attack-57e56fc9-417a-4f41-a579-5475aea7b8ce-acc426ab.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Infoblox-Workbook-V2](../content/infoblox-nios-infoblox-workbook-v2.md) | - |
-| [Sources_by_SourceType](../content/infoblox-nios-sources-by-sourcetype.md) | - |
+| [Infoblox-Workbook-V2](../content/infoblox-nios-infoblox-workbook-v2-a1f70727.md) | - |
+| [Sources_by_SourceType](../content/infoblox-nios-sources-by-sourcetype-0fcdc27f.md) ⚠️ | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Infoblox](../content/infoblox-nios-infoblox-5591631b-4fcc-4dfb-8e90-10acb12b9494.md) | - | - |
-| [Infoblox_allotherdhcpdTypes](../content/infoblox-nios-infoblox-allotherdhcpdtypes-0902417a-288a-481e-ae22-8c60167087af.md) | - | - |
-| [Infoblox_allotherdnsTypes](../content/infoblox-nios-infoblox-allotherdnstypes-583065b6-c47d-489e-a609-9f97573c9334.md) | - | - |
-| [Infoblox_allotherlogTypes](../content/infoblox-nios-infoblox-allotherlogtypes-8d12dd0a-f8df-47f1-938b-d5bdcd9656ba.md) | - | - |
-| [Infoblox_dhcp_consolidated](../content/infoblox-nios-infoblox-dhcp-consolidated-2d665230-5f9a-4399-a582-dfb7cc2f3971.md) | - | - |
-| [Infoblox_dhcpack](../content/infoblox-nios-infoblox-dhcpack-47b5ec12-dada-4091-ae3f-ffee22e9a47a.md) | - | - |
-| [Infoblox_dhcpadded](../content/infoblox-nios-infoblox-dhcpadded-dda93e6b-8a80-4348-a9ee-7c9208cbe410.md) | - | - |
-| [Infoblox_dhcpbindupdate](../content/infoblox-nios-infoblox-dhcpbindupdate-7e5e4d85-1a84-4d9f-8788-7d928a658c2c.md) | - | - |
-| [Infoblox_dhcpdiscover](../content/infoblox-nios-infoblox-dhcpdiscover-890db700-1f1e-4ad1-9d67-2d8752d74f2f.md) | - | - |
-| [Infoblox_dhcpexpire](../content/infoblox-nios-infoblox-dhcpexpire-eb996257-6d13-4c24-ade0-b19be55bab73.md) | - | - |
-| [Infoblox_dhcpinform](../content/infoblox-nios-infoblox-dhcpinform-664e7bbd-fba2-41a6-be63-85376f516f4c.md) | - | - |
-| [Infoblox_dhcpoffer](../content/infoblox-nios-infoblox-dhcpoffer-2ae93e20-8b92-4cd5-8bf7-e815ce472d0d.md) | - | - |
-| [Infoblox_dhcpoption](../content/infoblox-nios-infoblox-dhcpoption-ae269e0c-3c8c-4b80-bc54-03442ce97a99.md) | - | - |
-| [Infoblox_dhcpother](../content/infoblox-nios-infoblox-dhcpother-50ce0953-5f2e-4dce-b711-91bae0e00a20.md) | - | - |
-| [Infoblox_dhcprelease](../content/infoblox-nios-infoblox-dhcprelease-abe2e8ba-5c4c-450e-af7d-f12658d3d7d0.md) | - | - |
-| [Infoblox_dhcpremoved](../content/infoblox-nios-infoblox-dhcpremoved-85d45bae-f3f6-4077-8bca-5d7d93348858.md) | - | - |
-| [Infoblox_dhcprequest](../content/infoblox-nios-infoblox-dhcprequest-e3fbab01-ddf8-4ab2-b663-3c33e92f55b3.md) | - | - |
-| [Infoblox_dhcpsession](../content/infoblox-nios-infoblox-dhcpsession-ce7e152d-8e0e-4e6e-8d3d-d60af96fe6e2.md) | - | - |
-| [Infoblox_dns_consolidated](../content/infoblox-nios-infoblox-dns-consolidated-b548eacc-66d0-4ef1-b2ff-4688b1d609bc.md) | - | - |
-| [Infoblox_dnsclient](../content/infoblox-nios-infoblox-dnsclient-16f093d4-c9a8-4426-89ab-855c3e3be243.md) | - | - |
-| [Infoblox_dnsgss](../content/infoblox-nios-infoblox-dnsgss-bcdea229-bb66-4071-b5f8-e9628079f834.md) | - | - |
-| [Infoblox_dnszone](../content/infoblox-nios-infoblox-dnszone-6b88ad86-5ecb-4918-b41e-a463fc4a36f3.md) | - | - |
+| [Infoblox](../content/infoblox-nios-infoblox-5591631b-4fcc-4dfb-8e90-10acb12b9494-0defcaad.md) | - | - |
+| [Infoblox_allotherdhcpdTypes](../content/infoblox-nios-infoblox-allotherdhcpdtypes-0902417a-288a-481e-ae22-8c60167087af-a9751d2e.md) | - | - |
+| [Infoblox_allotherdnsTypes](../content/infoblox-nios-infoblox-allotherdnstypes-583065b6-c47d-489e-a609-9f97573c9334-1ef8a825.md) | - | - |
+| [Infoblox_allotherlogTypes](../content/infoblox-nios-infoblox-allotherlogtypes-8d12dd0a-f8df-47f1-938b-d5bdcd9656ba-8edad920.md) | - | - |
+| [Infoblox_dhcp_consolidated](../content/infoblox-nios-infoblox-dhcp-consolidated-2d665230-5f9a-4399-a582-dfb7cc2f3971-0db3c303.md) | - | - |
+| [Infoblox_dhcpack](../content/infoblox-nios-infoblox-dhcpack-47b5ec12-dada-4091-ae3f-ffee22e9a47a-9e8d79cf.md) | - | - |
+| [Infoblox_dhcpadded](../content/infoblox-nios-infoblox-dhcpadded-dda93e6b-8a80-4348-a9ee-7c9208cbe410-41309e3a.md) | - | - |
+| [Infoblox_dhcpbindupdate](../content/infoblox-nios-infoblox-dhcpbindupdate-7e5e4d85-1a84-4d9f-8788-7d928a658c2c-825f0340.md) | - | - |
+| [Infoblox_dhcpdiscover](../content/infoblox-nios-infoblox-dhcpdiscover-890db700-1f1e-4ad1-9d67-2d8752d74f2f-39ad26a0.md) | - | - |
+| [Infoblox_dhcpexpire](../content/infoblox-nios-infoblox-dhcpexpire-eb996257-6d13-4c24-ade0-b19be55bab73-a576aeb4.md) | - | - |
+| [Infoblox_dhcpinform](../content/infoblox-nios-infoblox-dhcpinform-664e7bbd-fba2-41a6-be63-85376f516f4c-a3b5778b.md) | - | - |
+| [Infoblox_dhcpoffer](../content/infoblox-nios-infoblox-dhcpoffer-2ae93e20-8b92-4cd5-8bf7-e815ce472d0d-5d70babf.md) | - | - |
+| [Infoblox_dhcpoption](../content/infoblox-nios-infoblox-dhcpoption-ae269e0c-3c8c-4b80-bc54-03442ce97a99-6d51624c.md) | - | - |
+| [Infoblox_dhcpother](../content/infoblox-nios-infoblox-dhcpother-50ce0953-5f2e-4dce-b711-91bae0e00a20-18460cb3.md) | - | - |
+| [Infoblox_dhcprelease](../content/infoblox-nios-infoblox-dhcprelease-abe2e8ba-5c4c-450e-af7d-f12658d3d7d0-1634bf48.md) | - | - |
+| [Infoblox_dhcpremoved](../content/infoblox-nios-infoblox-dhcpremoved-85d45bae-f3f6-4077-8bca-5d7d93348858-05391c1b.md) | - | - |
+| [Infoblox_dhcprequest](../content/infoblox-nios-infoblox-dhcprequest-e3fbab01-ddf8-4ab2-b663-3c33e92f55b3-79588514.md) | - | - |
+| [Infoblox_dhcpsession](../content/infoblox-nios-infoblox-dhcpsession-ce7e152d-8e0e-4e6e-8d3d-d60af96fe6e2-9da5bd35.md) | - | - |
+| [Infoblox_dns_consolidated](../content/infoblox-nios-infoblox-dns-consolidated-b548eacc-66d0-4ef1-b2ff-4688b1d609bc-eb271743.md) | - | - |
+| [Infoblox_dnsclient](../content/infoblox-nios-infoblox-dnsclient-16f093d4-c9a8-4426-89ab-855c3e3be243-d7556135.md) | - | - |
+| [Infoblox_dnsgss](../content/infoblox-nios-infoblox-dnsgss-bcdea229-bb66-4071-b5f8-e9628079f834-ee6db49a.md) | - | - |
+| [Infoblox_dnszone](../content/infoblox-nios-infoblox-dnszone-6b88ad86-5ecb-4918-b41e-a463fc4a36f3-66224728.md) | - | - |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 

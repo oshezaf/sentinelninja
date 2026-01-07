@@ -1,5 +1,9 @@
 # SeraphicSecurity
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/LogoSeraphicSecurity.svg" alt="SeraphicSecurity Logo" width="75" height="75">
+
+The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://seraphicsecurity.com](https://seraphicsecurity.com) |
 | **Categories** | domains |
+| **Version** | 2.0.0 |
+| **Author** | Seraphic Security - support@seraphicsecurity.con |
 | **First Published** | 2023-07-31 |
 | **Last Updated** | 2023-07-31 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity) |

@@ -57,7 +57,7 @@ The [Dragos Platform](https://www.dragos.com/) is the leading Industrial Cyber S
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md)
+**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 **Collection Method:** AMA
 
@@ -91,7 +91,7 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ---
 
-### [1Password (Serverless)](connectors/1password%28serverless%29.md)
+### [1Password (Serverless)](connectors/1password-serverless.md)
 
 **Publisher:** Unknown (ARM variable)
 
@@ -103,7 +103,7 @@ This solution takes a dependency on the following technologies, and some of thes
 
 The 1Password CCP connector allows the user to ingest 1Password Audit, Signin & ItemUsage events into Microsoft Sentinel.
 
-[→ View full connector details](connectors/1password%28serverless%29.md)
+[→ View full connector details](connectors/1password-serverless.md)
 
 ---
 
@@ -730,7 +730,7 @@ Azure Batch Account is a uniquely identified entity within the Batch service. Mo
 
 **Publisher:** Palo Alto Networks
 
-**Solution:** [Azure Cloud NGFW by Palo Alto Networks](solutions/azure-cloud-ngfw-by-palo-alto-networks.md)
+**Solution:** [Azure Cloud NGFW By Palo Alto Networks](solutions/azure-cloud-ngfw-by-palo-alto-networks.md)
 
 **Collection Method:** Unknown (Custom Log)
 
@@ -968,7 +968,7 @@ Azure Stream Analytics is a real-time analytics and complex event-processing eng
 
 **Publisher:** Microsoft
 
-**Solution:** [Azure Web Application Firewall (WAF)](solutions/azure-web-application-firewall-%28waf%29.md)
+**Solution:** [Azure Web Application Firewall (WAF)](solutions/azure-web-application-firewall-waf.md)
 
 **Collection Method:** Azure Diagnostics
 
@@ -986,7 +986,7 @@ Connect to the Azure Web Application Firewall (WAF) for Application Gateway, Fro
 
 **Publisher:** BETTER Mobile
 
-**Solution:** [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-%28mtd%29.md)
+**Solution:** [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-mtd.md)
 
 **Collection Method:** Unknown (Custom Log)
 
@@ -1422,7 +1422,7 @@ The [Cisco Meraki](https://aka.ms/ciscomeraki) connector allows you to easily co
 
 ---
 
-### [Cisco Meraki (using REST API)](connectors/ciscomeraki%28usingrestapi%29.md)
+### [Cisco Meraki (using REST API)](connectors/ciscomeraki-usingrestapi.md)
 
 **Publisher:** Microsoft
 
@@ -1437,7 +1437,7 @@ The [Cisco Meraki](https://aka.ms/ciscomeraki) connector allows you to easily co
  **Supported ASIM schema:** 
  1. Network Session
 
-[→ View full connector details](connectors/ciscomeraki%28usingrestapi%29.md)
+[→ View full connector details](connectors/ciscomeraki-usingrestapi.md)
 
 ---
 
@@ -2338,7 +2338,7 @@ Connector for [Eset SMC](https://help.eset.com/esmc_admin/72/en-US/) threat even
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md)
+**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 **Collection Method:** Unknown (Custom Log)
 
@@ -2354,7 +2354,7 @@ Connector used to push Exchange On-Premises Security configuration for Microsoft
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange Online](solutions/microsoft-exchange-security---exchange-online.md)
+**Solution:** [Microsoft Exchange Security - Exchange Online](solutions/microsoft-exchange-security-exchange-online.md)
 
 **Collection Method:** Azure Function
 
@@ -2388,7 +2388,7 @@ The [ExtraHop](https://extrahop.com/) Detections Data Connector enables you to i
 
 **Publisher:** F5 Networks
 
-**Solution:** [F5 BIG-IP](solutions/f5-big-ip.md)
+**Solution:** [F5 Big-IP](solutions/f5-big-ip.md)
 
 **Collection Method:** Unknown (Custom Log)
 
@@ -2452,7 +2452,7 @@ The Forcepoint DLP (Data Loss Prevention) connector allows you to automatically 
 
 **Publisher:** Forescout
 
-**Solution:** [Forescout (Legacy)](solutions/forescout-%28legacy%29.md)
+**Solution:** [Forescout (Legacy)](solutions/forescout-legacy.md)
 
 **Collection Method:** MMA
 
@@ -2990,7 +2990,7 @@ The connector provides the capability to poll data from Holm Security Center int
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md)
+**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 **Collection Method:** AMA
 
@@ -3556,7 +3556,7 @@ The [Keeper Security](https://keepersecurity.com) connector provides the capabil
 
 **Publisher:** The Collective Consulting BV
 
-**Solution:** [LastPass](solutions/lastpass.md)
+**Solution:** [Lastpass Enterprise Activity Monitoring](solutions/lastpass-enterprise-activity-monitoring.md)
 
 **Collection Method:** CCF
 
@@ -3827,7 +3827,7 @@ Microsoft Defender for Endpoint is a security platform designed to prevent, dete
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Defender For Identity](solutions/microsoft-defender-for-identity.md)
+**Solution:** [Microsoft Defender for Identity](solutions/microsoft-defender-for-identity.md)
 
 **Collection Method:** Native
 
@@ -3949,7 +3949,7 @@ Microsoft Entra ID Protection provides a consolidated view at risk users, risk e
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md)
+**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 **Collection Method:** AMA
 
@@ -3965,7 +3965,7 @@ Microsoft Entra ID Protection provides a consolidated view at risk users, risk e
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md)
+**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 **Collection Method:** Unknown (Custom Log)
 
@@ -3981,7 +3981,7 @@ Microsoft Entra ID Protection provides a consolidated view at risk users, risk e
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md)
+**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 **Collection Method:** AMA
 
@@ -3997,7 +3997,7 @@ Microsoft Entra ID Protection provides a consolidated view at risk users, risk e
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md)
+**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 **Collection Method:** Unknown (Custom Log)
 
@@ -4335,7 +4335,7 @@ The [MuleSoft Cloudhub](https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cl
 
 **Publisher:** archTIS
 
-**Solution:** [archTIS](solutions/archtis.md)
+**Solution:** [NC Protect Data Connector](solutions/nc-protect-data-connector.md)
 
 **Collection Method:** Unknown (Custom Log)
 
@@ -4383,7 +4383,7 @@ The [NXLog BSM](https://docs.nxlog.co/refman/current/im/bsm.html) macOS data con
 
 **Publisher:** NXLog
 
-**Solution:** [NXLogDnsLogs](solutions/nxlogdnslogs.md)
+**Solution:** [NXLogDNSLogs](solutions/nxlogdnslogs.md)
 
 **Collection Method:** REST API
 
@@ -4556,7 +4556,7 @@ This connector lets you stream your NSG diagnostics logs into Microsoft Sentinel
 
 **Publisher:** Noname Security
 
-**Solution:** [NonameSecurity](solutions/nonamesecurity.md)
+**Solution:** [Noname API Security Solution for Microsoft Sentinel](solutions/noname-api-security-solution-for-microsoft-sentinel.md)
 
 **Collection Method:** REST API
 
@@ -4650,7 +4650,7 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on/) c
 
 ---
 
-### [Okta Single Sign-On (using Azure Functions)](connectors/oktasinglesignon%28usingazurefunctions%29.md)
+### [Okta Single Sign-On (using Azure Functions)](connectors/oktasinglesignon-usingazurefunctions.md)
 
 **Publisher:** Okta
 
@@ -4662,7 +4662,7 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on/) c
 
 The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on/) connector provides the capability to ingest audit and event logs from the Okta API into Microsoft Sentinel. The connector provides visibility into these log types in Microsoft Sentinel to view dashboards, create custom alerts, and to improve monitoring and investigation capabilities.
 
-[→ View full connector details](connectors/oktasinglesignon%28usingazurefunctions%29.md)
+[→ View full connector details](connectors/oktasinglesignon-usingazurefunctions.md)
 
 ---
 
@@ -4832,7 +4832,7 @@ The Palo Alto Cortex Xpanse data connector ingests alerts data into Microsoft Se
 
 **Publisher:** Palo Alto Networks
 
-**Solution:** [Palo Alto - XDR (Cortex)](solutions/palo-alto---xdr-%28cortex%29.md)
+**Solution:** [Palo Alto - XDR (Cortex)](solutions/palo-alto-xdr-cortex.md)
 
 **Collection Method:** MMA
 
@@ -4998,7 +4998,7 @@ Microsoft Sentinel provides you the capability to import threat intelligence gen
 
 **Publisher:** Proofpoint
 
-**Solution:** [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand%28pod%29-email-security.md)
+**Solution:** [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md)
 
 **Collection Method:** CCF
 
@@ -5967,7 +5967,7 @@ Microsoft Sentinel integrates with TAXII 2.0 and 2.1 data sources to enable moni
 
 **Publisher:** Microsoft
 
-**Solution:** [Threat Intelligence (NEW)](solutions/threat-intelligence-%28new%29.md)
+**Solution:** [Threat Intelligence (NEW)](solutions/threat-intelligence-new.md)
 
 **Collection Method:** Native
 
@@ -6083,7 +6083,7 @@ The [VMware Carbon Black Cloud](https://www.vmware.com/products/carbon-black-clo
 
 **Publisher:** VMware by Broadcom
 
-**Solution:** [VMware SD-WAN and SASE](solutions/vmware-sd-wan-and-sase.md)
+**Solution:** [VMware SASE](solutions/vmware-sase.md)
 
 **Collection Method:** Azure Function
 
@@ -7304,7 +7304,7 @@ The [CrowdStrike Falcon Endpoint Protection](https://www.crowdstrike.com/endpoin
 
 **Publisher:** Cyber-Ark
 
-**Solution:** [CyberArk Enterprise Password Vault (EPV) Events](solutions/cyberark-enterprise-password-vault-%28epv%29-events.md)
+**Solution:** [CyberArk Privilege Access Manager (PAM) Events](solutions/cyberark-privilege-access-manager-pam-events.md)
 
 **Collection Method:** MMA
 
@@ -7320,7 +7320,7 @@ CyberArk Enterprise Password Vault generates an xml Syslog message for every act
 
 **Publisher:** Cyber-Ark
 
-**Solution:** [CyberArk Enterprise Password Vault (EPV) Events](solutions/cyberark-enterprise-password-vault-%28epv%29-events.md)
+**Solution:** [CyberArk Privilege Access Manager (PAM) Events](solutions/cyberark-privilege-access-manager-pam-events.md)
 
 **Collection Method:** AMA
 
@@ -7416,7 +7416,7 @@ The [Exabeam Advanced Analytics](https://www.exabeam.com/ueba/advanced-analytics
 
 **Publisher:** ExtraHop Networks
 
-**Solution:** [ExtraHop Reveal(x)](solutions/extrahop-reveal%28x%29.md)
+**Solution:** [ExtraHop Reveal(x)](solutions/extrahop-reveal-x.md)
 
 **Collection Method:** AMA
 
@@ -7432,7 +7432,7 @@ The ExtraHop Reveal(x) data connector enables you to easily connect your Reveal(
 
 **Publisher:** ExtraHop Networks
 
-**Solution:** [ExtraHop Reveal(x)](solutions/extrahop-reveal%28x%29.md)
+**Solution:** [ExtraHop Reveal(x)](solutions/extrahop-reveal-x.md)
 
 **Collection Method:** MMA
 
@@ -7954,7 +7954,7 @@ The McAfee ePolicy Orchestrator data connector provides the capability to ingest
 
 **Publisher:** Microsoft
 
-**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security---exchange-on-premises.md)
+**Solution:** [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 **Collection Method:** MMA
 
@@ -8307,7 +8307,7 @@ PostgreSQL data connector provides the capability to ingest [PostgreSQL](https:/
 
 **Publisher:** Proofpoint
 
-**Solution:** [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand%28pod%29-email-security.md)
+**Solution:** [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md)
 
 **Collection Method:** Azure Function
 
@@ -8726,7 +8726,7 @@ The Common Event Format (CEF) provides natively search & correlation, alerting a
 
 **Publisher:** Zscaler
 
-**Solution:** [Zscaler Private Access (ZPA)](solutions/zscaler-private-access-%28zpa%29.md)
+**Solution:** [Zscaler Private Access (ZPA)](solutions/zscaler-private-access-zpa.md)
 
 **Collection Method:** MMA
 

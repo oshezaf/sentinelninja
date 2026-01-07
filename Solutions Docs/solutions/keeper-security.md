@@ -1,5 +1,9 @@
 # Keeper Security
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/keeper_security.svg" alt="Keeper Security Logo" width="75" height="75">
+
+The [Keeper Security](https://keepersecurity.com/) solution for Microsoft Sentinel enables you to ingest [Keeper Security](https://keepersecurity.com/) forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.keepersecurity.com](https://www.keepersecurity.com) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Joao Paulo Oliveira Santos - jsantos@keepersecurity.com |
 | **First Published** | 2025-06-03 |
 | **Last Updated** | 2025-06-03 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security) |
@@ -39,14 +45,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Keeper Security - Password Changed](../content/keeper-security-keeper-security---password-changed-f031fbbc-37d8-4667-b795-d386bf2b5ab2.md) | Informational | Persistence | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
-| [Keeper Security - User MFA Changed](../content/keeper-security-keeper-security---user-mfa-changed-75ffc8a4-86db-4f48-8506-cb4c049be484.md) | Informational | Persistence | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
+| [Keeper Security - Password Changed](../content/keeper-security-keeper-security-password-changed-f031fbbc-37d8-4667-b795-d386bf2b5ab2-b3c2c3bc.md) | Informational | Persistence | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
+| [Keeper Security - User MFA Changed](../content/keeper-security-keeper-security-user-mfa-changed-75ffc8a4-86db-4f48-8506-cb4c049be484-da722465.md) | Informational | Persistence | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [KeeperSecurityDashboard](../content/keeper-security-keepersecuritydashboard.md) | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
+| [KeeperSecurityDashboard](../content/keeper-security-keepersecuritydashboard-f36797d1.md) | [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) |
 
 ## Release Notes
 

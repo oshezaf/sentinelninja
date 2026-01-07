@@ -23,8 +23,8 @@ This table is used by the following solutions:
 ### Analytic Rules (2)
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
-- [Power Automate - Departing employee flow activity](../content/microsoft-business-applications-power-automate---departing-employee-flow-activity-b1e11b8c-545a-4dea-a912-0008e160d183.md)
-- [Power Automate - Unusual bulk deletion of flow resources](../content/microsoft-business-applications-power-automate---unusual-bulk-deletion-of-flow-resources-56cb646e-56a0-4f0e-8866-9bc1dd15da78.md)
+- [Power Automate - Departing employee flow activity](../content/microsoft-business-applications-power-automate-departing-employee-flow-activity-b1e11b8c-545a-4dea-a912-0008e160d183-ecbb18b0.md)
+- [Power Automate - Unusual bulk deletion of flow resources](../content/microsoft-business-applications-power-automate-unusual-bulk-deletion-of-flow-resources-56cb646e-56a0-4f0e-8866-9bc1dd15da78-eb6e5a2f.md)
 
 ---
 

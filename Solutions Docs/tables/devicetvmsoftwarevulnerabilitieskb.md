@@ -24,7 +24,7 @@ This table is used by the following solutions:
 ### Hunting Queries (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Detect CISA Alert (AA22-117A) 2021 Top Routinely Exploited Vulnerabilities](../content/microsoft-defender-xdr-detect-cisa-alert-%28aa22-117a%29-2021-top-routinely-exploited-vulnerabilities-180bacfd-18de-450a-8e0c-7d2fa399ca49.md)
+- [Detect CISA Alert (AA22-117A) 2021 Top Routinely Exploited Vulnerabilities](../content/microsoft-defender-xdr-detect-cisa-alert-aa22-117a-2021-top-routinely-exploited-vulnerabilities-180bacfd-18de-450a-8e0c-7d2fa399ca49-875b2843.md)
 
 ---
 

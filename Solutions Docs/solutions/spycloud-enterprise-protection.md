@@ -1,5 +1,9 @@
 # SpyCloud Enterprise Protection
 
+<img src="raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SpyCloud_Enterprise_Protection.svg" alt="SpyCloud Enterprise Protection Logo" width="75" height="75">
+
+Cybercriminals continue to utilize stolen corporate credentials as the number one technique for account takeover (ATO). In fact, the FBI estimated that this resulted in estimated losses totaling more than $2.7 billion in 2022. SpyCloud helps prevent account takeover and ransomware attacks by identifying exposed credentials related to a company’s domains, IP addresses and emails. Through this integration, breach and malware data from SpyCloud can be loaded into Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://portal.spycloud.com](https://portal.spycloud.com) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | SpyCloud |
 | **First Published** | 2023-09-09 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection) |
 
@@ -38,21 +44,21 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SpyCloud Enterprise Breach Detection](../content/spycloud-enterprise-protection-spycloud-enterprise-breach-detection-cb410ad5-6e9d-4278-b963-1e3af205d680.md) | High | CredentialAccess | [`SpyCloudBreachDataWatchlist_CL`](../tables/spycloudbreachdatawatchlist-cl.md) |
-| [SpyCloud Enterprise Malware Detection](../content/spycloud-enterprise-protection-spycloud-enterprise-malware-detection-7ba50f9e-2f94-462b-a54b-8642b8c041f5.md) | High | CredentialAccess | [`SpyCloudBreachDataWatchlist_CL`](../tables/spycloudbreachdatawatchlist-cl.md) |
+| [SpyCloud Enterprise Breach Detection](../content/spycloud-enterprise-protection-spycloud-enterprise-breach-detection-cb410ad5-6e9d-4278-b963-1e3af205d680-3a6c6446.md) | High | CredentialAccess | [`SpyCloudBreachDataWatchlist_CL`](../tables/spycloudbreachdatawatchlist-cl.md) |
+| [SpyCloud Enterprise Malware Detection](../content/spycloud-enterprise-protection-spycloud-enterprise-malware-detection-7ba50f9e-2f94-462b-a54b-8642b8c041f5-a8afd941.md) | High | CredentialAccess | [`SpyCloudBreachDataWatchlist_CL`](../tables/spycloudbreachdatawatchlist-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Domain Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-domain-breach-data---spycloud-enterprise.md) | The SpyCloud Enterprise API is able to provide breach data for a domain or set of domains associated... | - |
-| [Email Address Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-email-address-breach-data---spycloud-enterprise.md) | The SpyCloud Enterprise API is able to provide breach data for a Email address or set of Email addre... | - |
-| [IP Address Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-ip-address-breach-data---spycloud-enterprise.md) | The SpyCloud Enterprise API is able to provide breach data for a IP address or set of IP addresses a... | - |
-| [Password Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-password-breach-data---spycloud-enterprise.md) | The SpyCloud Enterprise API is able to provide breach data for a provided password. | - |
-| [SpyCloud Breach Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-breach-information---spycloud-enterprise.md) | This Playbook will be triggered when an spycloud breach incident is created. | - |
-| [SpyCloud Malware Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-malware-information---spycloud-enterprise.md) | This Playbook will be triggered when an spycloud malware incident is created. | - |
-| [SpyCloud Watachlist data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-watachlist-data---spycloud-enterprise.md) | This Playbook will run daily, gets the watchlist data from SpyCloud API and saved it into the custom... | - |
-| [Username Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-username-breach-data---spycloud-enterprise.md) | The SpyCloud Enterprise API is able to provide breach data for a username or set of usernames associ... | - |
+| [Domain Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-domain-breach-data-spycloud-enterprise-e52acdca.md) | The SpyCloud Enterprise API is able to provide breach data for a domain or set of domains associated... | - |
+| [Email Address Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-email-address-breach-data-spycloud-enterprise-8946e9ed.md) | The SpyCloud Enterprise API is able to provide breach data for a Email address or set of Email addre... | - |
+| [IP Address Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-ip-address-breach-data-spycloud-enterprise-4dc87c3d.md) | The SpyCloud Enterprise API is able to provide breach data for a IP address or set of IP addresses a... | - |
+| [Password Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-password-breach-data-spycloud-enterprise-31619212.md) | The SpyCloud Enterprise API is able to provide breach data for a provided password. | - |
+| [SpyCloud Breach Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-breach-information-spycloud-enterprise-e2c67842.md) | This Playbook will be triggered when an spycloud breach incident is created. | - |
+| [SpyCloud Malware Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-malware-information-spycloud-enterprise-d542701e.md) | This Playbook will be triggered when an spycloud malware incident is created. | - |
+| [SpyCloud Watachlist data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-watachlist-data-spycloud-enterprise-6050708e.md) | This Playbook will run daily, gets the watchlist data from SpyCloud API and saved it into the custom... | - |
+| [Username Breach Data - SpyCloud Enterprise](../content/spycloud-enterprise-protection-username-breach-data-spycloud-enterprise-78b06e33.md) | The SpyCloud Enterprise API is able to provide breach data for a username or set of usernames associ... | - |
 
 ## Additional Documentation
 

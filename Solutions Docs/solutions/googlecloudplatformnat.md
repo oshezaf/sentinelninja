@@ -1,5 +1,15 @@
 # GoogleCloudPlatformNAT
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="GoogleCloudPlatformNAT Logo" width="75" height="75">
+
+The Google Cloud Platform NAT solution provides the capability to ingest [Cloud NAT traffic logs](https://cloud.google.com/nat/docs/monitoring) and [Cloud NAT Audit logs](https://cloud.google.com/nat/docs/audit-logging) into Microsoft Sentinel using the GCP Compute Engine API and GCP Logging API. 
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
+
+ • [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-05-29 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformNAT](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformNAT) |
 

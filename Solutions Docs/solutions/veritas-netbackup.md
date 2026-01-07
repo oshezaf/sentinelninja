@@ -1,5 +1,9 @@
 # Veritas NetBackup
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Veritas NetBackup Logo" width="75" height="75">
+
+The [Veritas](https://www.veritas.com/) solution for Microsoft Sentinel allows you to analyze NetBackup audit events. The solution uses analytics rules to automatically generate incidents when an abnormal user activity is detected in NetBackup.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.veritas.com/content/support/en_US/contact-us](https://www.veritas.com/content/support/en_US/contact-us) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-09-25 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup) |
 
@@ -37,8 +43,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Alarming number of anomalies generated in NetBackup](../content/veritas-netbackup-alarming-number-of-anomalies-generated-in-netbackup-2e0efcd4-56d2-41df-9098-d6898a58c62b.md) | Medium | Discovery, CredentialAccess | [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) |
-| [Multiple failed attempts of NetBackup login](../content/veritas-netbackup-multiple-failed-attempts-of-netbackup-login-d39f0c47-2e85-49b9-a686-388c2eb7062c.md) | Medium | CredentialAccess, Discovery | [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) |
+| [Alarming number of anomalies generated in NetBackup](../content/veritas-netbackup-alarming-number-of-anomalies-generated-in-netbackup-2e0efcd4-56d2-41df-9098-d6898a58c62b-8fe77028.md) | Medium | Discovery, CredentialAccess | [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) |
+| [Multiple failed attempts of NetBackup login](../content/veritas-netbackup-multiple-failed-attempts-of-netbackup-login-d39f0c47-2e85-49b9-a686-388c2eb7062c-027f832e.md) | Medium | CredentialAccess, Discovery | [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) |
 
 ## Additional Documentation
 

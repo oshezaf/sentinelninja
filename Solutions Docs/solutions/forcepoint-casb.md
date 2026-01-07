@@ -1,5 +1,15 @@
 # Forcepoint CASB
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Forcepoint CASB Logo" width="75" height="75">
+
+The [Forcepoint CASB](https://www.forcepoint.com/product/casb-cloud-access-security-broker) (Cloud Access Security Broker) Solution for Microsoft Sentinel allows you to automatically export CASB logs and events into Microsoft Sentinel in real-time. This enriches visibility into user activities across locations and cloud applications, enables further correlation with data from Azure workloads and other feeds, and improves monitoring capability with Workbooks inside Microsoft Sentinel. 
+
+For more details about this solution refer to [integration documentation](https://forcepoint.github.io/docs/casb_and_azure_sentinel/). 
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | domains |
+| **Version** | 3.0.2 |
+| **Author** | Forcepoint |
 | **First Published** | 2022-05-19 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CASB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CASB) |
 
@@ -38,7 +50,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ForcepointCASB](../content/forcepoint-casb-forcepointcasb.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ForcepointCASB](../content/forcepoint-casb-forcepointcasb-d5d7df21.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

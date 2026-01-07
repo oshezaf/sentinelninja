@@ -1,5 +1,13 @@
 # MongoDBAudit
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="MongoDBAudit Logo" width="75" height="75">
+
+The [MongoDBAudit](https://www.mongodb.com/) solution allows you to ingest Mongo DB audit information into Microsoft Sentinel. Refer to [MongoDB documentation](https://www.mongodb.com/docs/manual/tutorial/getting-started/) for more information.
+
+ This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation.
+
+ **NOTE**: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAudit) |
 
@@ -37,7 +47,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [MongoDBAudit](../content/mongodbaudit-mongodbaudit-e697d888-20c8-47ae-888f-6f1e9fd9a4ba.md) | - | - |
+| [MongoDBAudit](../content/mongodbaudit-mongodbaudit-e697d888-20c8-47ae-888f-6f1e9fd9a4ba-1e4b49e7.md) | - | - |
 
 ## Release Notes
 

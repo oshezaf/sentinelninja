@@ -1,5 +1,21 @@
 # Lookout
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lookout/Workbooks/Images/Logo/lookout.svg" alt="Lookout Logo" width="75" height="75">
+
+The [Lookout](https://lookout.com) solution provides the capability to ingest [Lookout events](https://enterprise.support.lookout.com/hc/articles/115002741773-Mobile-Risk-API-Guide#commoneventfields) into Microsoft Sentinel through the Mobile Risk API. It can get events which helps to examine potential security risks and more. Refer to [API documentation](https://enterprise.support.lookout.com/hc/articles/115002741773-Mobile-Risk-API-Guide) for more information .
+  
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+
+   b. [Microsoft Sentinel Codeless Connector Platform](https://aka.ms/Sentinel-CCP_Platform)
+
+<p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of "LookoutStreaming_Definition" (via Codeless Connector Framework). This connector is build on the Codeless Connector Framework (CCF), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://aka.ms/Sentinel-Logs_migration' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCF-based data connectors also support <a href='https://aka.ms/Sentinel-DCR_Overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p>
+
+<p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data..</p>
+
 ## Solution Information
 
 | Attribute | Value |
@@ -9,6 +25,7 @@
 | **Support Link** | [https://www.lookout.com/support](https://www.lookout.com/support) |
 | **Categories** | domains |
 | **Version** | 3.0.1 |
+| **Author** | Lookout |
 | **First Published** | 2021-10-18 |
 | **Last Updated** | 2025-11-07 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
@@ -44,33 +61,33 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Lookout - Critical Audit and Policy Changes (v2)](../content/lookout-lookout---critical-audit-and-policy-changes-%28v2%29-6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d.md) | Medium | DefenseEvasion, Persistence, PrivilegeEscalation, Impact | - |
-| [Lookout - Critical Smishing and Phishing Alerts (v2)](../content/lookout-lookout---critical-smishing-and-phishing-alerts-%28v2%29-7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e.md) | High | InitialAccess, CredentialAccess, Collection, Discovery | - |
-| [Lookout - Device Compliance and Security Status Changes (v2)](../content/lookout-lookout---device-compliance-and-security-status-changes-%28v2%29-9c5b6d8f-3a02-4e9b-af4c-2d7e9b1f5a8c.md) | Medium | Discovery, DefenseEvasion, Persistence | - |
-| [Lookout - High Severity Mobile Threats Detected (v2)](../content/lookout-lookout---high-severity-mobile-threats-detected-%28v2%29-8b4a5c7e-2f91-4d8a-9e3b-1c6f8a2d4e9f.md) | High | Discovery, DefenseEvasion, Persistence, PrivilegeEscalation | - |
-| [Lookout - New Threat events found.](../content/lookout-lookout---new-threat-events-found.-7593cc60-e294-402d-9202-279fb3c7d55f.md) | High | Discovery | [`Lookout_CL`](../tables/lookout-cl.md) |
+| [Lookout - Critical Audit and Policy Changes (v2)](../content/lookout-lookout-critical-audit-and-policy-changes-v2-6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d-c2a4c32f.md) | Medium | DefenseEvasion, Persistence, PrivilegeEscalation, Impact | - |
+| [Lookout - Critical Smishing and Phishing Alerts (v2)](../content/lookout-lookout-critical-smishing-and-phishing-alerts-v2-7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e-766d3a1e.md) | High | InitialAccess, CredentialAccess, Collection, Discovery | - |
+| [Lookout - Device Compliance and Security Status Changes (v2)](../content/lookout-lookout-device-compliance-and-security-status-changes-v2-9c5b6d8f-3a02-4e9b-af4c-2d7e9b1f5a8c-f6dcf4b4.md) | Medium | Discovery, DefenseEvasion, Persistence | - |
+| [Lookout - High Severity Mobile Threats Detected (v2)](../content/lookout-lookout-high-severity-mobile-threats-detected-v2-8b4a5c7e-2f91-4d8a-9e3b-1c6f8a2d4e9f-6f91a43d.md) | High | Discovery, DefenseEvasion, Persistence, PrivilegeEscalation | - |
+| [Lookout - New Threat events found.](../content/lookout-lookout-new-threat-events-found.-7593cc60-e294-402d-9202-279fb3c7d55f-4c60e079.md) | High | Discovery | [`Lookout_CL`](../tables/lookout-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Lookout Advanced Threat Hunting - Multi-Vector Attacks](../content/lookout-lookout-advanced-threat-hunting---multi-vector-attacks-lookout-advanced-threat-hunting.md) | Discovery, Persistence, DefenseEvasion | - |
+| [Lookout Advanced Threat Hunting - Multi-Vector Attacks](../content/lookout-lookout-advanced-threat-hunting-multi-vector-attacks-lookout-advanced-threat-hunting-4973d03a.md) | Discovery, Persistence, DefenseEvasion | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [LookoutEvents](../content/lookout-lookoutevents.md) | - |
-| [LookoutEventsV2](../content/lookout-lookouteventsv2.md) | - |
-| [LookoutExecutiveDashboard](../content/lookout-lookoutexecutivedashboard.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
-| [LookoutIOAInvestigationDashboard](../content/lookout-lookoutioainvestigationdashboard.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
-| [LookoutSecurityInvestigationDashboard](../content/lookout-lookoutsecurityinvestigationdashboard.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [LookoutEvents](../content/lookout-lookoutevents-591b9350.md) | - |
+| [LookoutEventsV2](../content/lookout-lookouteventsv2-865167af.md) | - |
+| [LookoutExecutiveDashboard](../content/lookout-lookoutexecutivedashboard-f8721bde.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [LookoutIOAInvestigationDashboard](../content/lookout-lookoutioainvestigationdashboard-3c024d7b.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [LookoutSecurityInvestigationDashboard](../content/lookout-lookoutsecurityinvestigationdashboard-1578bafc.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [LookoutEvents](../content/lookout-lookoutevents-37da203d-4edd-429e-83cd-fccf11e60c20.md) | - | - |
+| [LookoutEvents](../content/lookout-lookoutevents-37da203d-4edd-429e-83cd-fccf11e60c20-a972c8fc.md) | - | - |
 
 ## Additional Documentation
 

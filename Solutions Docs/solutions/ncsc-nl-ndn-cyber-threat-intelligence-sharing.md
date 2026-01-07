@@ -1,5 +1,9 @@
 # NCSC-NL NDN Cyber Threat Intelligence Sharing
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NCSC-NL_logo.svg" alt="NCSC-NL NDN Cyber Threat Intelligence Sharing Logo" width="75" height="75">
+
+This solution allows affiliated organizations to share cyber threat intelligence with the Dutch National Cyber Security Center (NCSC-NL) through the National Detection Network (NDN). This solution contains a playbook that can be used to get indicators or sightings from Microsoft Sentinel and convert them into STIX bundles to be posted to the NDN TAXII 2.1 server as a collaborating party. This solution is only available to organizations that participate in the NDN community, for which credentials can be requested through the MijnNCSC serviceportaal. If you like to know more about connecting and collaborating with the NCSC by exchanging threat intelligence, please consult [Aansluiten bij het NDN ](https://www.ncsc.nl/aansluiten-en-samenwerken/aansluiting-bij-het-ndn). For more information, please contact info@ncsc.nl or consult [Aansluiten en samenwerken ](https://www.ncsc.nl/aansluiten-en-samenwerken).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | NCSC-NL - info@ncsc.nl |
 | **First Published** | 2025-05-19 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing) |
 
@@ -29,7 +35,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [NCSCNLShareSTIXBundle](../content/ncsc-nl-ndn-cyber-threat-intelligence-sharing-ncscnlsharestixbundle.md) | This playbook gets triggered every hour and perform the following actions: 1. Get all the threat int... | - |
+| [NCSCNLShareSTIXBundle](../content/ncsc-nl-ndn-cyber-threat-intelligence-sharing-ncscnlsharestixbundle-5c475981.md) | This playbook gets triggered every hour and perform the following actions: 1. Get all the threat int... | - |
 
 ## Additional Documentation
 

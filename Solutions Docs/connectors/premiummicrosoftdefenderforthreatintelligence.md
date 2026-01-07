@@ -4,7 +4,7 @@
 |:----------|:------|
 | **Connector ID** | `PremiumMicrosoftDefenderForThreatIntelligence` |
 | **Publisher** | Microsoft |
-| **Used in Solutions** | [Threat Intelligence](../solutions/threat-intelligence.md), [Threat Intelligence (NEW)](../solutions/threat-intelligence-%28new%29.md) |
+| **Used in Solutions** | [Threat Intelligence](../solutions/threat-intelligence.md), [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | **Collection Method** | Native |
 | **Connector Definition Files** | [template_PremiumMicrosoftDefenderThreatIntelligence.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Data%20Connectors/template_PremiumMicrosoftDefenderThreatIntelligence.json) |
 

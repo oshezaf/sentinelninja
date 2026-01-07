@@ -1,5 +1,15 @@
 # Sophos Cloud Optix
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="Sophos Cloud Optix Logo" width="75" height="75">
+
+The [Sophos](https://www.sophos.com) Cloud Optix solution allows you to easily connect your [Sophos Cloud Optix](https://www.sophos.com/en-us/products/cloud-optix) logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. 
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.sophos.com/en-us/support](https://www.sophos.com/en-us/support) |
 | **Categories** | domains |
+| **Version** | 2.0.1 |
+| **Author** | Sophos |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Cloud%20Optix](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Cloud%20Optix) |
 

@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md):**
-- [Citrix](../content/citrix-analytics-for-security-citrix.md)
+- [Citrix](../content/citrix-analytics-for-security-citrix-7f228429.md)
 
 ---
 

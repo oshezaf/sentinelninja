@@ -1,5 +1,9 @@
 # Valence Security
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ValenceSecurityLogo.svg" alt="Valence Security Logo" width="75" height="75">
+
+[Valence Security](https://valencesecurity.com/) SaaS security platform: Valence is the first SaaS security company to combine SSPM and advanced remediation with business user collaboration to find and fix SaaS security risks. SaaS applications are becoming decentrally managed and more complex, which is introducing misconfiguration, identity, data, and SaaS-to-SaaS integration risks. The Valence SaaS Security Platform provides visibility and remediation capabilities for business-critical SaaS applications such as Microsoft 365, Google Workspace, Salesforce, GitHub and Slack. With Valence, security teams can empower their business to securely adopt SaaS.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.valencesecurity.com/](https://www.valencesecurity.com/) |
 | **Categories** | domains |
+| **Version** | 1.0.0 |
+| **Author** | Valence Security - info@valencesecurity.com |
 | **First Published** | 2023-11-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security) |
 
@@ -38,13 +44,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Valence Security Alerts](../content/valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e.md) | High | - | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
+| [Valence Security Alerts](../content/valence-security-valence-security-alerts-d944d564-b6fa-470d-b5ab-a1a141878c5e-f39d1559.md) | High | - | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ValenceAlertsWorkbook](../content/valence-security-valencealertsworkbook.md) | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
+| [ValenceAlertsWorkbook](../content/valence-security-valencealertsworkbook-fae392cb.md) | [`ValenceAlert_CL`](../tables/valencealert-cl.md) |
 
 ## Release Notes
 

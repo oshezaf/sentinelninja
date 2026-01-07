@@ -19,12 +19,12 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
-- [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-%28asim-web-session%29-5965d3e7-8ed0-477c-9b42-e75d9237fab0.md)
+- [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.md)
 
 ### Workbooks (1)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
-- [WebSessionEssentials](../content/web-session-essentials-websessionessentials.md)
+- [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md)
 
 ---
 

@@ -39,15 +39,17 @@ This solution includes **4 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [MailGuard 365 - High Confidence Threats](../content/mailguard-365-mailguard-365---high-confidence-threats-5e3aa1a5-5b69-421e-a3ac-32b04cb10353.md) | Reconnaissance | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) |
-| [MailGuard 365 - Malware Threats](../content/mailguard-365-mailguard-365---malware-threats-daaae6ad-1fd0-4efa-b571-116689e67a20.md) | InitialAccess, Reconnaissance | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) |
-| [MailGuard 365 - Phishing Threats](../content/mailguard-365-mailguard-365---phishing-threats-ee15ed10-d355-474e-b8ad-a8bbb76f6d38.md) | InitialAccess, Reconnaissance, Credential Access | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) |
+| [MailGuard 365 - High Confidence Threats](../content/mailguard-365-mailguard-365-high-confidence-threats-5e3aa1a5-5b69-421e-a3ac-32b04cb10353-07810d8b.md) ⚠️ | Reconnaissance | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) |
+| [MailGuard 365 - Malware Threats](../content/mailguard-365-mailguard-365-malware-threats-daaae6ad-1fd0-4efa-b571-116689e67a20-d7393225.md) ⚠️ | InitialAccess, Reconnaissance | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) |
+| [MailGuard 365 - Phishing Threats](../content/mailguard-365-mailguard-365-phishing-threats-ee15ed10-d355-474e-b8ad-a8bbb76f6d38-26ed447a.md) ⚠️ | InitialAccess, Reconnaissance, Credential Access | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MailGuard365Dashboard](../content/mailguard-365-mailguard365dashboard.md) | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) |
+| [MailGuard365Dashboard](../content/mailguard-365-mailguard365dashboard-efc0fa81.md) ⚠️ | [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 

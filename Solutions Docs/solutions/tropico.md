@@ -1,5 +1,9 @@
 # Tropico
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tropico.svg" alt="Tropico Logo" width="75" height="75">
+
+The [Tropico](https://www.tropicosecurity.com/) solution for Microsoft Sentinel enables you to ingest Tropico Security Events, Alerts and Incidents to the Microsoft Sentinel platform.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://tropicosecurity.com/](https://tropicosecurity.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Tropico Security - dev@tropicosecurity.com |
 | **First Published** | 2025-12-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico) |
 

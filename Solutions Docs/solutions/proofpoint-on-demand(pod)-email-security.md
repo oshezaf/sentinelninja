@@ -1,5 +1,15 @@
 # Proofpoint On demand(POD) Email Security
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PFPTLogo.svg" alt="Proofpoint On demand(POD) Email Security Logo" width="75" height="75">
+
+The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products/email-security-and-protection/email-protection) solution for Microsoft Sentinel enables you to ingest Proofpoint on Demand Email Protection data and activity logs for monitoring email activity, events and threats in your organization.
+  
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://proofpoint.my.site.com/community/s/](https://proofpoint.my.site.com/community/s/) |
 | **Categories** | domains |
+| **Version** | 3.1.2 |
+| **Author** | Proofpoint, Inc. - azure-support@proofpoint.com |
 | **First Published** | 2021-03-31 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security) |
 
@@ -47,43 +59,43 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ProofpointPOD - Binary file in attachment](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---binary-file-in-attachment-eb68b129-5f17-4f56-bf6d-dde48d5e615a.md) | Medium | InitialAccess | - |
-| [ProofpointPOD - Email sender IP in TI list](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---email-sender-ip-in-ti-list-78979d32-e63f-4740-b206-cfb300c735e0.md) | Medium | Exfiltration, InitialAccess | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [ProofpointPOD - Email sender in TI list](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---email-sender-in-ti-list-35a0792a-1269-431e-ac93-7ae2980d4dde.md) | Medium | Exfiltration, InitialAccess | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [ProofpointPOD - High risk message not discarded](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---high-risk-message-not-discarded-c7cd6073-6d2c-4284-a5c8-da27605bdfde.md) | Low | InitialAccess | - |
-| [ProofpointPOD - Multiple archived attachments to the same recipient](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---multiple-archived-attachments-to-the-same-recipient-bda5a2bd-979b-4828-a91f-27c2a5048f7f.md) | Medium | Exfiltration | - |
-| [ProofpointPOD - Multiple large emails to the same recipient](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---multiple-large-emails-to-the-same-recipient-d1aba9a3-5ab1-45ef-8ed4-da57dc3c0d32.md) | Medium | Exfiltration | - |
-| [ProofpointPOD - Multiple protected emails to unknown recipient](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---multiple-protected-emails-to-unknown-recipient-f8127962-7739-4211-a4a9-390a7a00e91f.md) | Medium | Exfiltration | - |
-| [ProofpointPOD - Possible data exfiltration to private email](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---possible-data-exfiltration-to-private-email-aedc5b33-2d7c-42cb-a692-f25ef637cbb1.md) | Medium | InitialAccess | - |
-| [ProofpointPOD - Suspicious attachment](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---suspicious-attachment-f6a51e2c-2d6a-4f92-a090-cfb002ca611f.md) | Medium | InitialAccess | - |
-| [ProofpointPOD - Weak ciphers](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---weak-ciphers-56b0a0cd-894e-4b38-a0a1-c41d9f96649a.md) | Low | CommandAndControl | - |
+| [ProofpointPOD - Binary file in attachment](../content/proofpoint-on-demand-pod-email-security-proofpointpod-binary-file-in-attachment-eb68b129-5f17-4f56-bf6d-dde48d5e615a-ae200d61.md) | Medium | InitialAccess | - |
+| [ProofpointPOD - Email sender IP in TI list](../content/proofpoint-on-demand-pod-email-security-proofpointpod-email-sender-ip-in-ti-list-78979d32-e63f-4740-b206-cfb300c735e0-63420dc8.md) | Medium | Exfiltration, InitialAccess | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [ProofpointPOD - Email sender in TI list](../content/proofpoint-on-demand-pod-email-security-proofpointpod-email-sender-in-ti-list-35a0792a-1269-431e-ac93-7ae2980d4dde-f2f02f35.md) | Medium | Exfiltration, InitialAccess | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [ProofpointPOD - High risk message not discarded](../content/proofpoint-on-demand-pod-email-security-proofpointpod-high-risk-message-not-discarded-c7cd6073-6d2c-4284-a5c8-da27605bdfde-62212676.md) | Low | InitialAccess | - |
+| [ProofpointPOD - Multiple archived attachments to the same recipient](../content/proofpoint-on-demand-pod-email-security-proofpointpod-multiple-archived-attachments-to-the-same-recipien-bda5a2bd-979b-4828-a91f-27c2a5048f7f-0539879e.md) | Medium | Exfiltration | - |
+| [ProofpointPOD - Multiple large emails to the same recipient](../content/proofpoint-on-demand-pod-email-security-proofpointpod-multiple-large-emails-to-the-same-recipient-d1aba9a3-5ab1-45ef-8ed4-da57dc3c0d32-75b9c537.md) | Medium | Exfiltration | - |
+| [ProofpointPOD - Multiple protected emails to unknown recipient](../content/proofpoint-on-demand-pod-email-security-proofpointpod-multiple-protected-emails-to-unknown-recipient-f8127962-7739-4211-a4a9-390a7a00e91f-2fbc9011.md) | Medium | Exfiltration | - |
+| [ProofpointPOD - Possible data exfiltration to private email](../content/proofpoint-on-demand-pod-email-security-proofpointpod-possible-data-exfiltration-to-private-email-aedc5b33-2d7c-42cb-a692-f25ef637cbb1-618ec629.md) | Medium | InitialAccess | - |
+| [ProofpointPOD - Suspicious attachment](../content/proofpoint-on-demand-pod-email-security-proofpointpod-suspicious-attachment-f6a51e2c-2d6a-4f92-a090-cfb002ca611f-2cc6d3d5.md) | Medium | InitialAccess | - |
+| [ProofpointPOD - Weak ciphers](../content/proofpoint-on-demand-pod-email-security-proofpointpod-weak-ciphers-56b0a0cd-894e-4b38-a0a1-c41d9f96649a-f36413c2.md) | Low | CommandAndControl | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [ProofpointPOD - Emails with high score of 'adult' filter classifier value](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---emails-with-high-score-of-'adult'-filter-classifier-value-0794a162-8635-43fd-81ed-2cf2604575b1.md) | InitialAccess | - |
-| [ProofpointPOD - Emails with high score of 'malware' filter classifier value](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---emails-with-high-score-of-'malware'-filter-classifier-value-eb74aaab-ebf4-4763-9b03-b1a33fe48600.md) | InitialAccess | - |
-| [ProofpointPOD - Emails with high score of 'phish' filter classifier value](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---emails-with-high-score-of-'phish'-filter-classifier-value-a0d56fcd-edb3-46f1-aaa3-12d606a48ff1.md) | InitialAccess | - |
-| [ProofpointPOD - Emails with high score of 'spam' filter classifier value](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---emails-with-high-score-of-'spam'-filter-classifier-value-c9ff3690-b754-4c91-b866-4d07098da074.md) | InitialAccess | - |
-| [ProofpointPOD - Emails with high score of 'suspect' filter classifier value](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---emails-with-high-score-of-'suspect'-filter-classifier-value-bc619ce8-0807-4b13-93ea-0d7b79c7ee68.md) | InitialAccess | - |
-| [ProofpointPOD - Large size outbound emails](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---large-size-outbound-emails-dd9674cf-898b-4c80-96f1-f70bec66e6fc.md) | Exfiltration | - |
-| [ProofpointPOD - Recipients with high number of discarded or rejected emails](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---recipients-with-high-number-of-discarded-or-rejected-emails-d324e435-31d3-4aa3-907c-76f4917820a9.md) | InitialAccess | - |
-| [ProofpointPOD - Recipients with large number of corrupted emails](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---recipients-with-large-number-of-corrupted-emails-c334e1e8-a7da-4c23-a9c0-fdda26b07606.md) | InitialAccess | - |
-| [ProofpointPOD - Senders with large number of corrupted messages](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---senders-with-large-number-of-corrupted-messages-af7f133a-5fed-4ebf-8272-4330c884c7ca.md) | InitialAccess | - |
-| [ProofpointPOD - Suspicious file types in attachments](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod---suspicious-file-types-in-attachments-7b281f4a-6a9a-439f-8b4f-f08eb24f2fb7.md) | InitialAccess | - |
+| [ProofpointPOD - Emails with high score of 'adult' filter classifier value](../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'adult'-filter-classifie-0794a162-8635-43fd-81ed-2cf2604575b1-5d25de5e.md) | InitialAccess | - |
+| [ProofpointPOD - Emails with high score of 'malware' filter classifier value](../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'malware'-filter-classif-eb74aaab-ebf4-4763-9b03-b1a33fe48600-0cf4c124.md) | InitialAccess | - |
+| [ProofpointPOD - Emails with high score of 'phish' filter classifier value](../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'phish'-filter-classifie-a0d56fcd-edb3-46f1-aaa3-12d606a48ff1-80ac3b4d.md) | InitialAccess | - |
+| [ProofpointPOD - Emails with high score of 'spam' filter classifier value](../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'spam'-filter-classifier-c9ff3690-b754-4c91-b866-4d07098da074-968bb165.md) | InitialAccess | - |
+| [ProofpointPOD - Emails with high score of 'suspect' filter classifier value](../content/proofpoint-on-demand-pod-email-security-proofpointpod-emails-with-high-score-of-'suspect'-filter-classif-bc619ce8-0807-4b13-93ea-0d7b79c7ee68-5027a04d.md) | InitialAccess | - |
+| [ProofpointPOD - Large size outbound emails](../content/proofpoint-on-demand-pod-email-security-proofpointpod-large-size-outbound-emails-dd9674cf-898b-4c80-96f1-f70bec66e6fc-4ee9c6c0.md) | Exfiltration | - |
+| [ProofpointPOD - Recipients with high number of discarded or rejected emails](../content/proofpoint-on-demand-pod-email-security-proofpointpod-recipients-with-high-number-of-discarded-or-reject-d324e435-31d3-4aa3-907c-76f4917820a9-4eec2939.md) | InitialAccess | - |
+| [ProofpointPOD - Recipients with large number of corrupted emails](../content/proofpoint-on-demand-pod-email-security-proofpointpod-recipients-with-large-number-of-corrupted-emails-c334e1e8-a7da-4c23-a9c0-fdda26b07606-fcc5ff05.md) | InitialAccess | - |
+| [ProofpointPOD - Senders with large number of corrupted messages](../content/proofpoint-on-demand-pod-email-security-proofpointpod-senders-with-large-number-of-corrupted-messages-af7f133a-5fed-4ebf-8272-4330c884c7ca-4e6469ff.md) | InitialAccess | - |
+| [ProofpointPOD - Suspicious file types in attachments](../content/proofpoint-on-demand-pod-email-security-proofpointpod-suspicious-file-types-in-attachments-7b281f4a-6a9a-439f-8b4f-f08eb24f2fb7-e9c4582c.md) | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ProofpointPOD](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod.md) | - |
+| [ProofpointPOD](../content/proofpoint-on-demand-pod-email-security-proofpointpod-14c159d7.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ProofpointPOD](../content/proofpoint-on-demand%28pod%29-email-security-proofpointpod-634600b4-d931-4a58-a21f-1de3dd35df23.md) | - | - |
+| [ProofpointPOD](../content/proofpoint-on-demand-pod-email-security-proofpointpod-634600b4-d931-4a58-a21f-1de3dd35df23-5e33a3b3.md) | - | - |
 
 ## Release Notes
 

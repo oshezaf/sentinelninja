@@ -1,5 +1,9 @@
 # Styx Intelligence
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/styx-logo-black.svg" alt="Styx Intelligence Logo" width="75" height="75">
+
+The [StyxView Alerts](https://styxintel.com/) data connector provides the capability to ingest StyxView alerts into Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.styxintel.com/contact-us/](https://www.styxintel.com/contact-us/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Styx Intelligence - support.team@styxintel.com |
 | **First Published** | 2025-02-07 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence) |
 

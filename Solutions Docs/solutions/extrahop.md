@@ -1,5 +1,9 @@
 # ExtraHop
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ExtraHop.svg" alt="ExtraHop Logo" width="75" height="75">
+
+Configure the ExtraHop Detection Data Connector to send ExtraHop detection data to the Microsoft Sentinel. An ExtraHop workbook and analytic rules available from the Microsoft Sentinel Workspace enable you to gain insight into detections and generate detection alerts.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.extrahop.com/customer-support](https://www.extrahop.com/customer-support) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Shwetha Somashekar - shwethas@extrahop.com |
 | **First Published** | 2025-02-11 |
 | **Last Updated** | 2025-06-04 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop) |
@@ -48,19 +54,19 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Generate alerts based on ExtraHop detections recommended for triage](../content/extrahop-generate-alerts-based-on-extrahop-detections-recommended-for-triage-cd65aebc-7e85-4cbb-9f91-ff0376c5d37d.md) | Medium | Persistence | - |
+| [Generate alerts based on ExtraHop detections recommended for triage](../content/extrahop-generate-alerts-based-on-extrahop-detections-recommended-for-triage-cd65aebc-7e85-4cbb-9f91-ff0376c5d37d-c70bea70.md) | Medium | Persistence | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview-b10f683c.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExtraHopDetections](../content/extrahop-extrahopdetections-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197.md) | - | - |
+| [ExtraHopDetections](../content/extrahop-extrahopdetections-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197-29a8546c.md) | - | - |
 
 ## Release Notes
 

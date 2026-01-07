@@ -1,5 +1,13 @@
 # SonicWall Firewall
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sonicwall_logo.svg" alt="SonicWall Firewall Logo" width="75" height="75">
+
+The [SonicWall Firewall](https://www.sonicwall.com/products/firewalls/) solution for Microsoft Sentinel enables ingestion of events using the Common Event Format (CEF) into Microsoft Sentinel for [SonicWall Firewalls](https://www.sonicwall.com/support/technical-documentation/?q=CEF&language=English).
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.sonicwall.com/support/](https://www.sonicwall.com/support/) |
 | **Categories** | domains |
+| **Version** | 3.1.2 |
+| **Author** | SonicWall |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall) |
 
@@ -40,20 +50,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall---allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534.md) | Medium | InitialAccess, Execution, Persistence, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, Impact | - |
-| [SonicWall - Capture ATP Malicious File Detection](../content/sonicwall-firewall-sonicwall---capture-atp-malicious-file-detection-3db9f99e-a459-41e0-8e02-8b332f5fcb2c.md) | Medium | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md) | Medium | InitialAccess, Execution, Persistence, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, Impact | - |
+| [SonicWall - Capture ATP Malicious File Detection](../content/sonicwall-firewall-sonicwall-capture-atp-malicious-file-detection-3db9f99e-a459-41e0-8e02-8b332f5fcb2c-219e6d5b.md) | Medium | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917.md) | Exfiltration | - |
+| [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md) | Exfiltration | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

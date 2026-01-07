@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [BloodHound Enterprise](../solutions/bloodhound-enterprise.md):**
-- [BloodHoundEnterpriseTierZeroSearch](../content/bloodhound-enterprise-bloodhoundenterprisetierzerosearch.md)
+- [BloodHoundEnterpriseTierZeroSearch](../content/bloodhound-enterprise-bloodhoundenterprisetierzerosearch-7e86d13a.md)
 
 ---
 

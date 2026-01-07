@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [VaronisSaaS](../solutions/varonissaas.md):**
-- [VaronisSaaS](../content/varonissaas-varonissaas.md)
+- [VaronisSaaS](../content/varonissaas-varonissaas-5667e619.md)
 
 ---
 

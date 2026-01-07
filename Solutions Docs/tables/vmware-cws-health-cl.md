@@ -4,7 +4,7 @@
 
 This table is used by the following solutions:
 
-- [VMware SD-WAN and SASE](../solutions/vmware-sd-wan-and-sase.md)
+- [VMware SASE](../solutions/vmware-sase.md)
 
 ## Connectors (1)
 
@@ -18,8 +18,8 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [VMware SD-WAN and SASE](../solutions/vmware-sd-wan-and-sase.md):**
-- [VMwareSASESOCDashboard](../content/vmware-sd-wan-and-sase-vmwaresasesocdashboard.md)
+**In solution [VMware SASE](../solutions/vmware-sase.md):**
+- [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md)
 
 ---
 

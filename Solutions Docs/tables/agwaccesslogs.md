@@ -14,7 +14,7 @@ Reference for AGWAccessLogs table in Azure Monitor Logs.
 
 This table is used by the following solutions:
 
-- [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-%28waf%29.md)
+- [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md)
 
 ---
 
@@ -22,8 +22,8 @@ This table is used by the following solutions:
 
 ### Analytic Rules (1)
 
-**In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-%28waf%29.md):**
-- [A potentially malicious web request was executed against a web server](../content/azure-web-application-firewall-%28waf%29-a-potentially-malicious-web-request-was-executed-against-a-web-server-46ac55ae-47b8-414a-8f94-89ccd1962178.md)
+**In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md):**
+- [A potentially malicious web request was executed against a web server](../content/azure-web-application-firewall-waf-a-potentially-malicious-web-request-was-executed-against-a-web-server-46ac55ae-47b8-414a-8f94-89ccd1962178-ef0d4240.md)
 
 ## Resource Types
 

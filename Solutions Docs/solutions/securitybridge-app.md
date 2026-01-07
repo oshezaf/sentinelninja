@@ -1,5 +1,13 @@
 # SecurityBridge App
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SecurityBridgeLogo-Vector-TM_75x75.svg" alt="SecurityBridge App Logo" width="75" height="75">
+
+The [SecurityBridge App](https://securitybridge.com/) solution provides the capability to ingest SecurityBridge Threat Detection events from all on-premise and cloud based SAP instances into Microsoft Sentinel.
+
+This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation. 
+
+ **NOTE**: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/azure/sentinel/ama-migrate?WT.mc_id=Portal-fx).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://securitybridge.com/contact/](https://securitybridge.com/contact/) |
 | **Categories** | domains,verticals |
+| **Version** | 3.2.1 |
+| **Author** | SecurityBridge - support@securitybridge.com |
 | **First Published** | 2022-02-17 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App) |
 
@@ -40,13 +50,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SecurityBridge: A critical event occured](../content/securitybridge-app-securitybridge--a-critical-event-occured-8c5c766a-ce9b-4112-b6ed-1b8fe33733b7.md) | Medium | InitialAccess | - |
+| [SecurityBridge: A critical event occured](../content/securitybridge-app-securitybridge-a-critical-event-occured-8c5c766a-ce9b-4112-b6ed-1b8fe33733b7-ee97d2e0.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SecurityBridgeThreatDetectionforSAP](../content/securitybridge-app-securitybridgethreatdetectionforsap.md) | - |
+| [SecurityBridgeThreatDetectionforSAP](../content/securitybridge-app-securitybridgethreatdetectionforsap-245dc7ef.md) | - |
 
 ## Additional Documentation
 

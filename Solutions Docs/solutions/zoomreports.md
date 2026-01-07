@@ -1,5 +1,17 @@
 # ZoomReports
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="ZoomReports Logo" width="75" height="75">
+
+The [Zoom](https://zoom.us/) Reports solution enables you to ingest Zoom Reports' events into Microsoft Sentinel through the [Zoom Report REST API](https://developers.zoom.us/docs/api/)
+  
+  **Underlying Microsoft Technologies used:**
+
+  This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+  a.	 [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+  b.	 [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports) |
 
@@ -38,13 +52,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZoomReports](../content/zoomreports-zoomreports.md) | - |
+| [ZoomReports](../content/zoomreports-zoomreports-c76868a1.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Zoom](../content/zoomreports-zoom-249f522d-995b-439f-910a-12741f7c0d8b.md) | - | - |
+| [Zoom](../content/zoomreports-zoom-249f522d-995b-439f-910a-12741f7c0d8b-88c20063.md) | - | - |
 
 ## Additional Documentation
 

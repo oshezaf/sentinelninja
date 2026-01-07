@@ -4,7 +4,7 @@
 |:----------|:------|
 | **Connector ID** | `F5BigIp` |
 | **Publisher** | F5 Networks |
-| **Used in Solutions** | [F5 BIG-IP](../solutions/f5-big-ip.md) |
+| **Used in Solutions** | [F5 Big-IP](../solutions/f5-big-ip.md) |
 | **Collection Method** | Unknown (Custom Log) |
 | **Connector Definition Files** | [F5BigIp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20BIG-IP/Data%20Connectors/F5BigIp.json) |
 

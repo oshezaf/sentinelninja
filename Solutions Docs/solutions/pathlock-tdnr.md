@@ -1,5 +1,19 @@
 # Pathlock_TDnR
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/pathlock_logo.svg" alt="Pathlock_TDnR Logo" width="75" height="75">
+
+The [Pathlock TD&R](https://pathlock.com/products/cybersecurity-application-controls/) integration enables organizations to seamlessly forward Pathlock Threat Detection and Response (TD&R) events from both on-premise and cloud-based SAP systems into Microsoft Sentinel Solution for SAP for unified security visibility and incident correlation across the enterprise.
+
+Built on Pathlock’s Cybersecurity Application Controls (CAC) platform, this connector utilizes the Common Connector Platform (CCP) framework to securely transmit log and event data while maintaining data integrity and governance. The Custom Logs solution is automatically deployed during installation, ensuring a quick and reliable setup without manual configuration steps.
+
+With this integration, SOC and SAP security teams can:
+- Consolidate SAP-specific threat intelligence and correlate it with enterprise events in Microsoft Sentinel.
+- Leverage 4500+ Pathlock detection signatures and 75+ SAP log sources for comprehensive SAP monitoring.
+- Automate alerting and response workflows in Microsoft Sentinel for faster mean-time-to-detect (MTTD) and mean-time-to-respond (MTTR).
+- Maintain audit readiness by demonstrating end-to-end visibility of SAP threat activity.
+
+This out-of-the-box connector simplifies secure event forwarding from SAP to Microsoft Sentinel—enabling centralized analysis, compliance reporting, and proactive response within your existing security ecosystem.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +22,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://pathlock.com/support/](https://pathlock.com/support/) |
 | **Categories** | domains,verticals |
+| **Version** | 3.0.0 |
+| **Author** | Pathlock Inc. - support@pathlock.com |
 | **First Published** | 2022-02-17 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR) |
 

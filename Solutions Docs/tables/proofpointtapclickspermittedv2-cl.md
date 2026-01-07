@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [ProofPointTap](../solutions/proofpointtap.md):**
-- [Malware Link Clicked](../content/proofpointtap-malware-link-clicked-8675dd7a-795e-4d56-a79c-fc848c5ee61c.md)
+- [Malware Link Clicked](../content/proofpointtap-malware-link-clicked-8675dd7a-795e-4d56-a79c-fc848c5ee61c-ca159715.md)
 
 ### Workbooks (1)
 
 **In solution [ProofPointTap](../solutions/proofpointtap.md):**
-- [ProofpointTAP](../content/proofpointtap-proofpointtap.md)
+- [ProofpointTAP](../content/proofpointtap-proofpointtap-d0be2a01.md)
 
 ---
 

@@ -16,9 +16,9 @@
 
 | Name | Severity | Solution |
 |:-----|:---------|:---------|
-| [Qakbot Campaign Self Deletion](microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6.md) | Medium | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| [Qakbot Discovery Activies](microsoft-defender-xdr-qakbot-discovery-activies-ba9db6b2-3d05-42ae-8aee-3a15bbe29f27.md) | Medium | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| [Quokka - Malicious Results Detected](quokka-quokka---malicious-results-detected-97ad71ed-e4c0-4f7a-b1a2-683108bece4f.md) | Medium | [Quokka](../solutions/quokka.md) |
+| [Qakbot Campaign Self Deletion](microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6-a7a7167c.md) | Medium | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Qakbot Discovery Activies](microsoft-defender-xdr-qakbot-discovery-activies-ba9db6b2-3d05-42ae-8aee-3a15bbe29f27-5676e3c6.md) | Medium | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Quokka - Malicious Results Detected](quokka-quokka-malicious-results-detected-97ad71ed-e4c0-4f7a-b1a2-683108bece4f-1210d06b.md) | Medium | [Quokka](../solutions/quokka.md) |
 
 ---
 

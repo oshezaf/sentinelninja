@@ -1,5 +1,13 @@
 # Nasuni
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Nasuni/Data%20Connectors/Logo/Nasuni.svg" alt="Nasuni Logo" width="75" height="75">
+
+The [Nasuni](https://www.nasuni.com) solution for Microsoft Sentinel allows you to analyze Nasuni audit events and Notifications collected via Syslog. It includes analytics rules to automatically generate Incidents when a ransomware attack is detected and perform appropriate entity mapping. 
+
+ This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. 
+
+ **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://github.com/nasuni-labs/Azure-Sentinel](https://github.com/nasuni-labs/Azure-Sentinel) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Nasuni - support@nasuni.com |
 | **First Published** | 2023-07-07 |
 | **Last Updated** | 2023-07-07 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Nasuni](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Nasuni) |
@@ -39,14 +49,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Ransomware Attack Detected](../content/nasuni-ransomware-attack-detected-6c8770fb-c854-403e-a64d-0293ba344d5f.md) | High | Impact | [`Syslog`](../tables/syslog.md) |
-| [Ransomware Client Blocked](../content/nasuni-ransomware-client-blocked-0c96a5a2-d60d-427d-8399-8df7fe8e6536.md) | High | Impact | [`Syslog`](../tables/syslog.md) |
+| [Ransomware Attack Detected](../content/nasuni-ransomware-attack-detected-6c8770fb-c854-403e-a64d-0293ba344d5f-009250d8.md) | High | Impact | [`Syslog`](../tables/syslog.md) |
+| [Ransomware Client Blocked](../content/nasuni-ransomware-client-blocked-0c96a5a2-d60d-427d-8399-8df7fe8e6536-b5c61929.md) | High | Impact | [`Syslog`](../tables/syslog.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Nasuni File Delete Activity](../content/nasuni-nasuni-file-delete-activity-64a3477e-d06f-4491-86a5-6f99702e267f.md) | Impact | [`Syslog`](../tables/syslog.md) |
+| [Nasuni File Delete Activity](../content/nasuni-nasuni-file-delete-activity-64a3477e-d06f-4491-86a5-6f99702e267f-9caf20b1.md) | Impact | [`Syslog`](../tables/syslog.md) |
 
 ## Release Notes
 

@@ -1,5 +1,9 @@
 # Intel471
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/intel471_logo.svg" alt="Intel471 Logo" width="75" height="75">
+
+Intel 471 Threat Intelligence integration ingests malware indicators into Log Analytics workspace.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://intel471.com/company/contact](https://intel471.com/company/contact) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Intel 471 Inc. |
 | **First Published** | 2023-06-21 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Intel471](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Intel471) |
 
@@ -29,8 +35,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Intel 471 Malware Intelligence to Sentinel](../content/intel471-intel-471-malware-intelligence-to-sentinel.md) | This playbook ingests malware indicators from Intel 471's Titan or Verity API into Microsoft Sentine... | - |
-| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security.md) | This playbook ingests malware indicators from Intel 471's Titan API into Microsoft Graph Security as... | - |
+| [Intel 471 Malware Intelligence to Sentinel](../content/intel471-intel-471-malware-intelligence-to-sentinel-ba1ab213.md) | This playbook ingests malware indicators from Intel 471's Titan or Verity API into Microsoft Sentine... | - |
+| [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | This playbook ingests malware indicators from Intel 471's Titan API into Microsoft Graph Security as... | - |
 
 ## Release Notes
 

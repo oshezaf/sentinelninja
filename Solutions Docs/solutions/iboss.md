@@ -1,5 +1,13 @@
 # iboss
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/iboss/Workbooks/Images/Logo/iboss_full-logo_2020_vector_black.svg" alt="iboss Logo" width="75" height="75">
+
+The iboss Solution provides means to connect your Threat Console to Microsoft Sentinel and enrich your instance with iboss URL event logs. Our logs are forwarded in Common Event Format (CEF) over Syslog and the configuration required can be completed on the iboss platform without the use of a proxy. Take advantage of our connector to garner critical data points and gain insight into security threats.
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.**
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +16,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.iboss.com/contact-us/](https://www.iboss.com/contact-us/) |
 | **Categories** | domains |
+| **Version** | 3.1.2 |
+| **Author** | iboss |
 | **First Published** | 2022-02-15 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss) |
 
@@ -39,14 +49,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ibossMalwareAndC2](../content/iboss-ibossmalwareandc2.md) | - |
-| [ibossWebUsage](../content/iboss-ibosswebusage.md) | - |
+| [ibossMalwareAndC2](../content/iboss-ibossmalwareandc2-0213a927.md) | - |
+| [ibossWebUsage](../content/iboss-ibosswebusage-5b4fbb25.md) | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ibossUrlEvent](../content/iboss-ibossurlevent-0902cd9b-3b2b-4ad4-a480-e5e960b6a77d.md) | - | - |
+| [ibossUrlEvent](../content/iboss-ibossurlevent-0902cd9b-3b2b-4ad4-a480-e5e960b6a77d-2c14b8b6.md) | - | - |
 
 ## Release Notes
 

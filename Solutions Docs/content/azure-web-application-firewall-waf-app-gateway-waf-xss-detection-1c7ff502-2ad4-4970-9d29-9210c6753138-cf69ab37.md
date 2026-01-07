@@ -1,0 +1,33 @@
+# App Gateway WAF - XSS Detection
+
+Identifies a match for an XSS attack in the App Gateway WAF logs. The threshold value in the query can be changed as per your infrastructure's requirements.  References: https://owasp.org/www-community/attacks/xss/
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
+| **ID** | `1c7ff502-2ad4-4970-9d29-9210c6753138` |
+| **Severity** | High |
+| **Status** | Available |
+| **Kind** | Scheduled |
+| **Tactics** | InitialAccess, Execution |
+| **Techniques** | T1189, T1203, T0853 |
+| **Required Connectors** | [WAF](../connectors/waf.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Web%20Application%20Firewall%20%28WAF%29/Analytic%20Rules/App-GW-WAF-XSSDetection.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AGWFirewallLogs`](../tables/agwfirewalllogs.md)
+
+---
+
+**Browse:**
+
+- [← Back to Analytic Rules](analytic-rules.md)
+- [← Back to Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

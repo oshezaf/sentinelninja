@@ -1,5 +1,9 @@
 # ReversingLabs
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/reversinglabs.svg" alt="ReversingLabs Logo" width="75" height="75">
+
+The ReversingLabs Content Pack solution for Microsoft Sentinel includes a number of Microsoft Sentinel resources designed to automate your security operations using the power of Spectra Intelligence (formerly TitaniumCloud) and Spectra Analyze (formerly A1000) APIs.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.reversinglabs.com/hc/en-us](https://support.reversinglabs.com/hc/en-us) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | ReversingLabs - support@reversinglabs.com |
 | **First Published** | 2022-08-08 |
 | **Last Updated** | 2024-07-17 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs) |
@@ -43,17 +49,17 @@ This solution includes **6 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-reversinglabs-capabilitiesoverview.md) | *Internal use:*<br>[`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-reversinglabs-capabilitiesoverview-cf6695da.md) | *Internal use:*<br>[`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ReversingLabs-CheckQuota](../content/reversinglabs-reversinglabs-checkquota.md) | This playbook will check your ReversingLabs TitaniumCloud API quota and provide usage details. To be... | *Internal use:*<br>[`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md) *(write)* |
-| [SpectraAnalyze-EnrichFileHash](../content/reversinglabs-spectraanalyze-enrichfilehash.md) | This playbook will enrich a Microsoft Sentinel incident with file hash information from a Spectra An... | - |
-| [SpectraAnalyze-EnrichNetworkEntities](../content/reversinglabs-spectraanalyze-enrichnetworkentities.md) | This playbook will enrich a network entities (IP addresses, URLs, and domain names) with information... | - |
-| [SpectraIntelligence-EnrichFileHash](../content/reversinglabs-spectraintelligence-enrichfilehash.md) | This playbook will enrich a Microsoft Sentinel Incident with file hash information from ReversingLab... | - |
-| [SpectraIntelligence-EnrichNetworkEntities](../content/reversinglabs-spectraintelligence-enrichnetworkentities.md) | This playbook will enrich a Microsoft Sentinel Incident with information about network entities (IP ... | - |
+| [ReversingLabs-CheckQuota](../content/reversinglabs-reversinglabs-checkquota-9c8101f9.md) | This playbook will check your ReversingLabs TitaniumCloud API quota and provide usage details. To be... | *Internal use:*<br>[`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md) *(write)* |
+| [SpectraAnalyze-EnrichFileHash](../content/reversinglabs-spectraanalyze-enrichfilehash-21eafc26.md) | This playbook will enrich a Microsoft Sentinel incident with file hash information from a Spectra An... | - |
+| [SpectraAnalyze-EnrichNetworkEntities](../content/reversinglabs-spectraanalyze-enrichnetworkentities-e8e8b530.md) | This playbook will enrich a network entities (IP addresses, URLs, and domain names) with information... | - |
+| [SpectraIntelligence-EnrichFileHash](../content/reversinglabs-spectraintelligence-enrichfilehash-dbcd2082.md) | This playbook will enrich a Microsoft Sentinel Incident with file hash information from ReversingLab... | - |
+| [SpectraIntelligence-EnrichNetworkEntities](../content/reversinglabs-spectraintelligence-enrichnetworkentities-d024cb1e.md) | This playbook will enrich a Microsoft Sentinel Incident with information about network entities (IP ... | - |
 
 ## Release Notes
 

@@ -4,7 +4,7 @@
 
 This table is used by the following solutions:
 
-- [archTIS](../solutions/archtis.md)
+- [NC Protect Data Connector](../solutions/nc-protect-data-connector.md)
 
 ## Connectors (1)
 
@@ -18,8 +18,8 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [archTIS](../solutions/archtis.md):**
-- [NucleusCyber_NCProtect_Workbook](../content/archtis-nucleuscyber-ncprotect-workbook.md)
+**In solution [NC Protect Data Connector](../solutions/nc-protect-data-connector.md):**
+- [NucleusCyber_NCProtect_Workbook](../content/nc-protect-data-connector-nucleuscyber-ncprotect-workbook-14169a8f.md)
 
 ---
 

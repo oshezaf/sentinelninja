@@ -1,5 +1,9 @@
 # Cribl
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cribl-Logo.svg" alt="Cribl Logo" width="75" height="75">
+
+Cribl is a vendor neutral, purpose-built processing engine for data security and IT operations focused on centralized parsing and processing of event data.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cribl.io/support/](https://www.cribl.io/support/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Cribl - tap@cribl.io |
 | **First Published** | 2024-08-01 |
 | **Last Updated** | 2024-09-05 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cribl](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cribl) |
@@ -41,10 +47,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CriblAccess](../content/cribl-criblaccess-eb7323cf-8cad-42bd-921b-5e18b907002a.md) | - | - |
-| [CriblAudit](../content/cribl-criblaudit-f5e93f79-9e3c-4505-a52e-e634988a8bdb.md) | - | - |
-| [CriblInternal](../content/cribl-criblinternal-b934592c-d6b6-48f3-949e-415658687c8e.md) | - | - |
-| [CriblUIAccess](../content/cribl-cribluiaccess-8bc08089-197d-452e-bb5b-3bdf4b8a95b0.md) | - | - |
+| [CriblAccess](../content/cribl-criblaccess-eb7323cf-8cad-42bd-921b-5e18b907002a-f8b653a0.md) | - | - |
+| [CriblAudit](../content/cribl-criblaudit-f5e93f79-9e3c-4505-a52e-e634988a8bdb-13f30e88.md) | - | - |
+| [CriblInternal](../content/cribl-criblinternal-b934592c-d6b6-48f3-949e-415658687c8e-3430f139.md) | - | - |
+| [CriblUIAccess](../content/cribl-cribluiaccess-8bc08089-197d-452e-bb5b-3bdf4b8a95b0-aadb1b5a.md) | - | - |
 
 ## Release Notes
 

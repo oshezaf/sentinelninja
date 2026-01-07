@@ -1,5 +1,9 @@
 # NXLog FIM
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="NXLog FIM Logo" width="75" height="75">
+
+The [NXLog FIM](https://docs.nxlog.co/refman/current/im/fim.html) module allows for the scanning of files and directories, reporting detected additions, changes, renames and deletions on the designated paths through calculated checksums during successive scans. This REST API connector can efficiently export the configured FIM events to Microsoft Sentinel in real time.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://nxlog.co/support-tickets/add/support-ticket](https://nxlog.co/support-tickets/add/support-ticket) |
 | **Categories** | domains |
+| **Version** | 2.0.1 |
+| **Author** | NXLog - support@nxlog.org |
 | **First Published** | 2022-08-15 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20FIM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20FIM) |
 

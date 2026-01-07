@@ -1,5 +1,17 @@
 # ZeroFox
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/foxy-mark.svg" alt="ZeroFox Logo" width="75" height="75">
+
+The [ZeroFox](https://www.zerofox.com/) solution for Microsoft Sentinel enables you to ingest [ZeroFox Alerts](https://www.zerofox.com/platform/) and [ZeroFox CTI events](https://www.zerofox.com/threat-intelligence/) into Microsoft Sentinel using the ZeroFox API. 
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zerofox.com/contact-us/](https://www.zerofox.com/contact-us/) |
 | **Categories** | domains |
+| **Version** | 3.2.2 |
+| **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2023-07-28 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox) |
 
@@ -58,10 +72,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ZeroFox Alerts - High Severity Alerts](../content/zerofox-zerofox-alerts---high-severity-alerts-deb45e6d-892f-40bf-9118-e2a6f26b788d.md) | High | ResourceDevelopment, InitialAccess | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) |
-| [ZeroFox Alerts - Informational Severity Alerts](../content/zerofox-zerofox-alerts---informational-severity-alerts-6f7a7413-b72f-4361-84ee-897baeb9c6d4.md) | Informational | ResourceDevelopment, InitialAccess | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) |
-| [ZeroFox Alerts - Low Severity Alerts](../content/zerofox-zerofox-alerts---low-severity-alerts-e0c7a91a-7aa1-498a-9c20-cd6c721f9345.md) | Low | ResourceDevelopment, InitialAccess | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) |
-| [ZeroFox Alerts - Medium Severity Alerts](../content/zerofox-zerofox-alerts---medium-severity-alerts-a6496de5-911b-4199-b7db-d34ac9d70df3.md) | Medium | ResourceDevelopment, InitialAccess | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) |
+| [ZeroFox Alerts - High Severity Alerts](../content/zerofox-zerofox-alerts-high-severity-alerts-deb45e6d-892f-40bf-9118-e2a6f26b788d-c9abb77d.md) | High | ResourceDevelopment, InitialAccess | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) |
+| [ZeroFox Alerts - Informational Severity Alerts](../content/zerofox-zerofox-alerts-informational-severity-alerts-6f7a7413-b72f-4361-84ee-897baeb9c6d4-18c9cec2.md) | Informational | ResourceDevelopment, InitialAccess | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) |
+| [ZeroFox Alerts - Low Severity Alerts](../content/zerofox-zerofox-alerts-low-severity-alerts-e0c7a91a-7aa1-498a-9c20-cd6c721f9345-7087702f.md) | Low | ResourceDevelopment, InitialAccess | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) |
+| [ZeroFox Alerts - Medium Severity Alerts](../content/zerofox-zerofox-alerts-medium-severity-alerts-a6496de5-911b-4199-b7db-d34ac9d70df3-2805ff18.md) | Medium | ResourceDevelopment, InitialAccess | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) |
 
 ## Release Notes
 

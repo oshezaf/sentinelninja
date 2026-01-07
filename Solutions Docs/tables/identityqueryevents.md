@@ -30,7 +30,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity.md)
+- [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md)
 
 ---
 

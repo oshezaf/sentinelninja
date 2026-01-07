@@ -4,7 +4,7 @@
 
 This table is used by the following solutions:
 
-- [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security---exchange-on-premises.md)
+- [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
 
 ## Connectors (2)
 

@@ -1,5 +1,17 @@
 # GoogleCloudPlatformIAM
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="GoogleCloudPlatformIAM Logo" width="75" height="75">
+
+The Google Cloud Platform Identity and Access Management (IAM) solution provides the capability to ingest [GCP IAM logs](https://cloud.google.com/iam/docs/audit-logging) into Microsoft Sentinel using the GCP Logging API. Refer to [GCP Logging API documentation](https://cloud.google.com/logging/docs/api) for more information.
+  
+  **Underlying Microsoft Technologies used:** 
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-30 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM) |
 
@@ -43,51 +57,51 @@ This solution includes **25 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [GCP IAM - Disable Data Access Logging](../content/googlecloudplatformiam-gcp-iam---disable-data-access-logging-2530a631-9605-404d-ae58-58ef1f91b17c.md) | Medium | DefenseEvasion | - |
-| [GCP IAM - Empty user agent](../content/googlecloudplatformiam-gcp-iam---empty-user-agent-9e0d8632-d33d-4075-979e-c972674f77b3.md) | Medium | DefenseEvasion | - |
-| [GCP IAM - High privileged role added to service account](../content/googlecloudplatformiam-gcp-iam---high-privileged-role-added-to-service-account-86112c4b-2535-4178-aa0e-ed9e32e3f054.md) | High | PrivilegeEscalation | - |
-| [GCP IAM - New Authentication Token for Service Account](../content/googlecloudplatformiam-gcp-iam---new-authentication-token-for-service-account-80e4db30-5636-4fbd-8816-24c3ded8d243.md) | Medium | LateralMovement | - |
-| [GCP IAM - New Service Account](../content/googlecloudplatformiam-gcp-iam---new-service-account-a768aa52-453e-4e3e-80c2-62928d2e2f56.md) | Low | Persistence | - |
-| [GCP IAM - New Service Account Key](../content/googlecloudplatformiam-gcp-iam---new-service-account-key-fc135860-8773-4ead-b5be-9789af1ff8ff.md) | Low | LateralMovement | - |
-| [GCP IAM - Privileges Enumeration](../content/googlecloudplatformiam-gcp-iam---privileges-enumeration-52d88912-fa8b-4db2-b247-ee9225e41e8f.md) | Low | Discovery | - |
-| [GCP IAM - Publicly exposed storage bucket](../content/googlecloudplatformiam-gcp-iam---publicly-exposed-storage-bucket-4a433846-4b05-4a27-99d7-92093feded79.md) | Medium | Discovery | - |
-| [GCP IAM - Service Account Enumeration](../content/googlecloudplatformiam-gcp-iam---service-account-enumeration-50e0437e-912d-4cd0-ac19-fef0aebdd3d7.md) | Low | Discovery | - |
-| [GCP IAM - Service Account Keys Enumeration](../content/googlecloudplatformiam-gcp-iam---service-account-keys-enumeration-7ad3cfed-18c0-44af-9e9d-9fb5472a2321.md) | Low | Discovery | - |
+| [GCP IAM - Disable Data Access Logging](../content/googlecloudplatformiam-gcp-iam-disable-data-access-logging-2530a631-9605-404d-ae58-58ef1f91b17c-b5c24a62.md) | Medium | DefenseEvasion | - |
+| [GCP IAM - Empty user agent](../content/googlecloudplatformiam-gcp-iam-empty-user-agent-9e0d8632-d33d-4075-979e-c972674f77b3-a16b7078.md) | Medium | DefenseEvasion | - |
+| [GCP IAM - High privileged role added to service account](../content/googlecloudplatformiam-gcp-iam-high-privileged-role-added-to-service-account-86112c4b-2535-4178-aa0e-ed9e32e3f054-e62bc201.md) | High | PrivilegeEscalation | - |
+| [GCP IAM - New Authentication Token for Service Account](../content/googlecloudplatformiam-gcp-iam-new-authentication-token-for-service-account-80e4db30-5636-4fbd-8816-24c3ded8d243-45af187b.md) | Medium | LateralMovement | - |
+| [GCP IAM - New Service Account](../content/googlecloudplatformiam-gcp-iam-new-service-account-a768aa52-453e-4e3e-80c2-62928d2e2f56-903c98c3.md) | Low | Persistence | - |
+| [GCP IAM - New Service Account Key](../content/googlecloudplatformiam-gcp-iam-new-service-account-key-fc135860-8773-4ead-b5be-9789af1ff8ff-ddbcaf48.md) | Low | LateralMovement | - |
+| [GCP IAM - Privileges Enumeration](../content/googlecloudplatformiam-gcp-iam-privileges-enumeration-52d88912-fa8b-4db2-b247-ee9225e41e8f-7998e5d2.md) | Low | Discovery | - |
+| [GCP IAM - Publicly exposed storage bucket](../content/googlecloudplatformiam-gcp-iam-publicly-exposed-storage-bucket-4a433846-4b05-4a27-99d7-92093feded79-7f5ffaae.md) | Medium | Discovery | - |
+| [GCP IAM - Service Account Enumeration](../content/googlecloudplatformiam-gcp-iam-service-account-enumeration-50e0437e-912d-4cd0-ac19-fef0aebdd3d7-5d27b7f1.md) | Low | Discovery | - |
+| [GCP IAM - Service Account Keys Enumeration](../content/googlecloudplatformiam-gcp-iam-service-account-keys-enumeration-7ad3cfed-18c0-44af-9e9d-9fb5472a2321-1e046e4f.md) | Low | Discovery | - |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [GCP IAM - Changed roles](../content/googlecloudplatformiam-gcp-iam---changed-roles-0ab42aac-2c86-443c-80fa-ef8cdd0d997e.md) | PrivilegeEscalation | - |
-| [GCP IAM - Deleted service accounts](../content/googlecloudplatformiam-gcp-iam---deleted-service-accounts-b758750b-18e8-4aec-a831-c9a1a312d314.md) | Impact | - |
-| [GCP IAM - Disabled service accounts](../content/googlecloudplatformiam-gcp-iam---disabled-service-accounts-f228b2ca-3604-475a-8bd1-33b6c5dbcd3d.md) | Impact | - |
-| [GCP IAM - New custom roles](../content/googlecloudplatformiam-gcp-iam---new-custom-roles-e9accd25-ecff-4076-b2da-3102bf95bec5.md) | PrivilegeEscalation | - |
-| [GCP IAM - New service account keys](../content/googlecloudplatformiam-gcp-iam---new-service-account-keys-33bf838b-a85e-4051-8646-07f4e47ee4ea.md) | LateralMovement | - |
-| [GCP IAM - New service accounts](../content/googlecloudplatformiam-gcp-iam---new-service-accounts-52518413-437b-4f79-86d3-28c8c1fafb66.md) | Persistence | - |
-| [GCP IAM - Rare IAM actions](../content/googlecloudplatformiam-gcp-iam---rare-iam-actions-85e64fe8-aeed-4021-85de-fdf539917ca1.md) | InitialAccess | - |
-| [GCP IAM - Rare user agent](../content/googlecloudplatformiam-gcp-iam---rare-user-agent-ee96562f-cb40-42fd-80d6-dce38cb38f5c.md) | DefenseEvasion | - |
-| [GCP IAM - Top service accounts by failed actions](../content/googlecloudplatformiam-gcp-iam---top-service-accounts-by-failed-actions-27234847-8d3f-4d33-a3ef-5d3ec2575154.md) | Discovery | - |
-| [GCP IAM - Top source IP addresses with failed actions](../content/googlecloudplatformiam-gcp-iam---top-source-ip-addresses-with-failed-actions-2f906618-68e1-49ae-a961-8483cb7b6523.md) | Discovery | - |
+| [GCP IAM - Changed roles](../content/googlecloudplatformiam-gcp-iam-changed-roles-0ab42aac-2c86-443c-80fa-ef8cdd0d997e-d2250be5.md) | PrivilegeEscalation | - |
+| [GCP IAM - Deleted service accounts](../content/googlecloudplatformiam-gcp-iam-deleted-service-accounts-b758750b-18e8-4aec-a831-c9a1a312d314-9ce24ba0.md) | Impact | - |
+| [GCP IAM - Disabled service accounts](../content/googlecloudplatformiam-gcp-iam-disabled-service-accounts-f228b2ca-3604-475a-8bd1-33b6c5dbcd3d-71041e65.md) | Impact | - |
+| [GCP IAM - New custom roles](../content/googlecloudplatformiam-gcp-iam-new-custom-roles-e9accd25-ecff-4076-b2da-3102bf95bec5-1b828f0f.md) | PrivilegeEscalation | - |
+| [GCP IAM - New service account keys](../content/googlecloudplatformiam-gcp-iam-new-service-account-keys-33bf838b-a85e-4051-8646-07f4e47ee4ea-d2e0206e.md) | LateralMovement | - |
+| [GCP IAM - New service accounts](../content/googlecloudplatformiam-gcp-iam-new-service-accounts-52518413-437b-4f79-86d3-28c8c1fafb66-85c410bc.md) | Persistence | - |
+| [GCP IAM - Rare IAM actions](../content/googlecloudplatformiam-gcp-iam-rare-iam-actions-85e64fe8-aeed-4021-85de-fdf539917ca1-dee16ec6.md) | InitialAccess | - |
+| [GCP IAM - Rare user agent](../content/googlecloudplatformiam-gcp-iam-rare-user-agent-ee96562f-cb40-42fd-80d6-dce38cb38f5c-c76775d3.md) | DefenseEvasion | - |
+| [GCP IAM - Top service accounts by failed actions](../content/googlecloudplatformiam-gcp-iam-top-service-accounts-by-failed-actions-27234847-8d3f-4d33-a3ef-5d3ec2575154-690da1f5.md) | Discovery | - |
+| [GCP IAM - Top source IP addresses with failed actions](../content/googlecloudplatformiam-gcp-iam-top-source-ip-addresses-with-failed-actions-2f906618-68e1-49ae-a961-8483cb7b6523-0c683ae9.md) | Discovery | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [GCP_IAM](../content/googlecloudplatformiam-gcp-iam.md) | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |
+| [GCP_IAM](../content/googlecloudplatformiam-gcp-iam-59739972.md) | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GCP-DisableServiceAccountFromTeams](../content/googlecloudplatformiam-gcp-disableserviceaccountfromteams.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [GCP-DisableServiceAccountKey](../content/googlecloudplatformiam-gcp-disableserviceaccountkey.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [GCP-EnrichServiseAccountInfo](../content/googlecloudplatformiam-gcp-enrichserviseaccountinfo.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [GCP-DisableServiceAccountFromTeams](../content/googlecloudplatformiam-gcp-disableserviceaccountfromteams-0b9edb6a.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [GCP-DisableServiceAccountKey](../content/googlecloudplatformiam-gcp-disableserviceaccountkey-d3d8482c.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [GCP-EnrichServiseAccountInfo](../content/googlecloudplatformiam-gcp-enrichserviseaccountinfo-4a930a19.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GCP_IAM](../content/googlecloudplatformiam-gcp-iam-0a77da75-0ce2-4d55-8d7d-b26e2b3d9f9a.md) | - | - |
+| [GCP_IAM](../content/googlecloudplatformiam-gcp-iam-0a77da75-0ce2-4d55-8d7d-b26e2b3d9f9a-47e266eb.md) | - | - |
 
 ## Release Notes
 

@@ -1,5 +1,9 @@
 # Commvault Security IQ
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Commvault-Logo.svg" alt="Commvault Security IQ Logo" width="75" height="75">
+
+This Microsoft Sentinel integration enables Commvault users to ingest alerts and other data into their Microsoft Sentinel instance. With Analytic Rules, Microsoft Sentinel can automatically create Microsoft Sentinel incidents.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.commvault.com/support](https://www.commvault.com/support) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | svc.cv-securityiq@commvault.com |
 | **First Published** | 2023-08-17 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ) |
 
@@ -38,15 +44,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609.md) | Medium | DefenseEvasion, Impact | [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) |
+| [Commvault Cloud Alert](../content/commvault-security-iq-commvault-cloud-alert-317e757e-c320-448e-8837-fc61a70fe609-276de419.md) | Medium | DefenseEvasion, Impact | [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Commvault Disable Data Aging Logic App Playbook](../content/commvault-security-iq-commvault-disable-data-aging-logic-app-playbook.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
-| [Commvault Disable SAML Provider Logic App Playbook](../content/commvault-security-iq-commvault-disable-saml-provider-logic-app-playbook.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
-| [Commvault Disable User Logic App Playbook](../content/commvault-security-iq-commvault-disable-user-logic-app-playbook.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
+| [Commvault Disable Data Aging Logic App Playbook](../content/commvault-security-iq-commvault-disable-data-aging-logic-app-playbook-e8d97851.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
+| [Commvault Disable SAML Provider Logic App Playbook](../content/commvault-security-iq-commvault-disable-saml-provider-logic-app-playbook-68418a37.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
+| [Commvault Disable User Logic App Playbook](../content/commvault-security-iq-commvault-disable-user-logic-app-playbook-0e60fa8a.md) | This Logic App executes when called upon by an Automation Rule. Accessing the KeyVault to retrieve v... | - |
 
 ## Additional Documentation
 

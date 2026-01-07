@@ -1,5 +1,15 @@
 # Check Point
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Check%20Point/Logo/Check_Point.svg" alt="Check Point Logo" width="75" height="75">
+
+The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-firewall/) for Microsoft Sentinel enables you to ingest [Check Point firewall logs](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk122323) into Microsoft Sentinel.  
+
+ ** Underlying Microsoft Technologies used:  ** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:  
+
+ a. [Agent-based log collection (CEF over Syslog)](https://learn.microsoft.com/azure/sentinel/connect-common-event-format)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.checkpoint.com/support-services/contact-support/](https://www.checkpoint.com/support-services/contact-support/) |
 | **Categories** | domains |
+| **Version** | 2.0.2 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-08-13 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point) |
 
@@ -38,13 +50,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CheckPoint](../content/check-point-checkpoint.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [CheckPoint](../content/check-point-checkpoint-2a6f42ae.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [checkpoint-add-host-to-group](../content/check-point-checkpoint-add-host-to-group.md) | This playbook will create Check Point objects and add to block group | - |
+| [checkpoint-add-host-to-group](../content/check-point-checkpoint-add-host-to-group-1a66c770.md) | This playbook will create Check Point objects and add to block group | - |
 
 ## Additional Information
 

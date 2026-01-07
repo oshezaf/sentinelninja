@@ -29,7 +29,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Microsoft PowerBI](../solutions/microsoft-powerbi.md):**
-- [MicrosoftPowerBIActivityWorkbook](../content/microsoft-powerbi-microsoftpowerbiactivityworkbook.md)
+- [MicrosoftPowerBIActivityWorkbook](../content/microsoft-powerbi-microsoftpowerbiactivityworkbook-657a784e.md)
 
 ---
 

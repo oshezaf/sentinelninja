@@ -19,8 +19,8 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Cyfirma Brand Intelligence](../solutions/cyfirma-brand-intelligence.md):**
-- [CYFIRMA - Brand Intelligence - Product/Solution High Rule](../content/cyfirma-brand-intelligence-cyfirma---brand-intelligence---product-solution-high-rule-3a9a81bc-2f41-4d68-9cd1-7788326c92b1.md)
-- [CYFIRMA - Brand Intelligence - Product/Solution Medium Rule](../content/cyfirma-brand-intelligence-cyfirma---brand-intelligence---product-solution-medium-rule-458d964f-d039-4ce0-9741-0b6245ba3374.md)
+- [CYFIRMA - Brand Intelligence - Product/Solution High Rule](../content/cyfirma-brand-intelligence-cyfirma-brand-intelligence-product-solution-high-rule-3a9a81bc-2f41-4d68-9cd1-7788326c92b1-e4a333af.md)
+- [CYFIRMA - Brand Intelligence - Product/Solution Medium Rule](../content/cyfirma-brand-intelligence-cyfirma-brand-intelligence-product-solution-medium-rule-458d964f-d039-4ce0-9741-0b6245ba3374-e519caf4.md)
 
 ---
 

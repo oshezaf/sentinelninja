@@ -1,5 +1,9 @@
 # CofenseTriage
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CofenseTriage.svg" alt="CofenseTriage Logo" width="75" height="75">
+
+Cofense Triage for Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://cofense.com/contact-support/](https://cofense.com/contact-support/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Cofense - support@cofense.com |
 | **First Published** | 2023-03-24 |
 | **Last Updated** | 2023-03-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseTriage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseTriage) |
@@ -40,7 +46,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CofenseTriageThreatIndicators](../content/cofensetriage-cofensetriagethreatindicators.md) | [`Report_links_data_CL`](../tables/report-links-data-cl.md) |
+| [CofenseTriageThreatIndicators](../content/cofensetriage-cofensetriagethreatindicators-b9ec5acc.md) | [`Report_links_data_CL`](../tables/report-links-data-cl.md) |
 
 ## Release Notes
 

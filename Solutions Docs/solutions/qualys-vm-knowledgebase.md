@@ -1,5 +1,9 @@
 # Qualys VM Knowledgebase
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qualys_logo.svg" alt="Qualys VM Knowledgebase Logo" width="75" height="75">
+
+The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management/) KB solution for Microsoft Sentinel enables you to ingest Qualys VM KB logs into Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-17 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase) |
 
@@ -37,7 +43,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [QualysKB](../content/qualys-vm-knowledgebase-qualyskb-d2cf5018-d863-4bc5-90f9-5c6ccde08e7d.md) | - | - |
+| [QualysKB](../content/qualys-vm-knowledgebase-qualyskb-d2cf5018-d863-4bc5-90f9-5c6ccde08e7d-6f2521e6.md) | - | - |
 
 ## Release Notes
 

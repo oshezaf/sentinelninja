@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Infoblox](../solutions/infoblox.md):**
-- [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook.md)
+- [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook-5d6a67bf.md)
 
 ---
 

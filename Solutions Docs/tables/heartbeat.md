@@ -18,7 +18,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
-- [VMware SD-WAN and SASE](../solutions/vmware-sd-wan-and-sase.md)
+- [VMware SASE](../solutions/vmware-sase.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
 
 ---
@@ -28,24 +28,24 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [M2131_AssetStoppedLogging](../content/maturitymodelforeventlogmanagementm2131-m2131-assetstoppedlogging-4be5b645-1d08-49e4-b58d-07294ff19223.md)
+- [M2131_AssetStoppedLogging](../content/maturitymodelforeventlogmanagementm2131-m2131-assetstoppedlogging-4be5b645-1d08-49e4-b58d-07294ff19223-416aad3a.md)
 
 ### Workbooks (5)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
-- [DORACompliance](../content/dora-compliance-doracompliance.md)
+- [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)
 
 **In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
-- [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance.md)
+- [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
-- [SOXITCompliance](../content/sox-it-compliance-soxitcompliance.md)
+- [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)
 
-**In solution [VMware SD-WAN and SASE](../solutions/vmware-sd-wan-and-sase.md):**
-- [VMwareSASESOCDashboard](../content/vmware-sd-wan-and-sase-vmwaresasesocdashboard.md)
+**In solution [VMware SASE](../solutions/vmware-sase.md):**
+- [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md)
 
 **In solution [Windows Firewall](../solutions/windows-firewall.md):**
-- [WindowsFirewall](../content/windows-firewall-windowsfirewall.md)
+- [WindowsFirewall](../content/windows-firewall-windowsfirewall-6cfebfa8.md)
 
 ## Resource Types
 

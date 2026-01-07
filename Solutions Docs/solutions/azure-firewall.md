@@ -1,5 +1,15 @@
 # Azure Firewall
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzFirewalls.svg" alt="Azure Firewall Logo" width="75" height="75">
+
+The [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) solution for Microsoft Sentinel enables ingestion of DNS Proxy, Application Rule and Network Rule [logs](https://docs.microsoft.com/azure/firewall/logs-and-metrics) from Azure Firewalls.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall) |
 
@@ -49,41 +61,43 @@ This solution includes **20 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e.md) | Medium | InitialAccess, Exfiltration, CommandAndControl | - |
-| [Abnormal Port to Protocol](../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15.md) | Medium | Exfiltration, CommandAndControl | - |
-| [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81.md) | Medium | Exfiltration, CommandAndControl | - |
-| [Port Scan](../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
-| [Port Sweep](../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
-| [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e.md) | Medium | Discovery, LateralMovement, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
+| [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md) | Medium | InitialAccess, Exfiltration, CommandAndControl | - |
+| [Abnormal Port to Protocol](../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.md) | Medium | Exfiltration, CommandAndControl | - |
+| [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md) | Medium | Exfiltration, CommandAndControl | - |
+| [Port Scan](../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
+| [Port Sweep](../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
+| [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.md) | Medium | Discovery, LateralMovement, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [First Time Source IP to Destination](../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a.md) | Exfiltration, CommandAndControl | - |
-| [First Time Source IP to Destination Using Port](../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562.md) | Exfiltration, CommandAndControl | - |
-| [Source IP Abnormally Connects to Multiple Destinations](../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b.md) | Execution, LateralMovement | - |
-| [Uncommon Port for Organization](../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52.md) | Defense Evasion, Exfiltration, CommandAndControl | - |
-| [Uncommon Port to IP](../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4.md) | Exfiltration, CommandAndControl | - |
+| [First Time Source IP to Destination](../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a-b6cf8086.md) | Exfiltration, CommandAndControl | - |
+| [First Time Source IP to Destination Using Port](../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562-850b4356.md) | Exfiltration, CommandAndControl | - |
+| [Source IP Abnormally Connects to Multiple Destinations](../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.md) | Execution, LateralMovement | - |
+| [Uncommon Port for Organization](../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.md) | Defense Evasion, Exfiltration, CommandAndControl | - |
+| [Uncommon Port to IP](../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.md) | Exfiltration, CommandAndControl | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Azure Firewall Workbook - Deployment Template](../content/azure-firewall-azure-firewall-workbook---deployment-template.md) | - |
-| [Azure Firewall Workbook - Structured Logs - Deployment Template](../content/azure-firewall-azure-firewall-workbook---structured-logs---deployment-template.md) | - |
-| [AzureFirewallWorkbook](../content/azure-firewall-azurefirewallworkbook.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs.md) | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |
+| [Azure Firewall Workbook - Deployment Template](../content/azure-firewall-azure-firewall-workbook-deployment-template-132a7d78.md) ⚠️ | - |
+| [Azure Firewall Workbook - Structured Logs - Deployment Template](../content/azure-firewall-azure-firewall-workbook-structured-logs-deployment-template-21048f9f.md) ⚠️ | - |
+| [AzureFirewallWorkbook](../content/azure-firewall-azurefirewallworkbook-b4bb528f.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md) | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Azure Firewall - Add IP Address to Threat Intel Allow list](../content/azure-firewall-azure-firewall---add-ip-address-to-threat-intel-allow-list.md) | This playbook allows the SOC to automatically response to Microsoft Sentinel incidents which include... | - |
-| [Block IP - Azure Firewall IP groups](../content/azure-firewall-block-ip---azure-firewall-ip-groups.md) | This playbook allows blocking/allowing IPs in Azure Firewall. It allows to make changes on IP groups... | - |
-| [Block IP - Azure Firewall IP groups - Entity trigger](../content/azure-firewall-block-ip---azure-firewall-ip-groups---entity-trigger.md) | This playbook interacts with relevant stackholders, such incident response team, to approve blocking... | - |
-| [BlockIP-Azure Firewall New Rule](../content/azure-firewall-blockip-azure-firewall-new-rule.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
-| [BlockIP-Azure Firewall New Rule - Entity trigger](../content/azure-firewall-blockip-azure-firewall-new-rule---entity-trigger.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
+| [Azure Firewall - Add IP Address to Threat Intel Allow list](../content/azure-firewall-azure-firewall-add-ip-address-to-threat-intel-allow-list-a9c677b4.md) | This playbook allows the SOC to automatically response to Microsoft Sentinel incidents which include... | - |
+| [Block IP - Azure Firewall IP groups](../content/azure-firewall-block-ip-azure-firewall-ip-groups-bcd5c52e.md) | This playbook allows blocking/allowing IPs in Azure Firewall. It allows to make changes on IP groups... | - |
+| [Block IP - Azure Firewall IP groups - Entity trigger](../content/azure-firewall-block-ip-azure-firewall-ip-groups-entity-trigger-d467f8a0.md) | This playbook interacts with relevant stackholders, such incident response team, to approve blocking... | - |
+| [BlockIP-Azure Firewall New Rule](../content/azure-firewall-blockip-azure-firewall-new-rule-92066640.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
+| [BlockIP-Azure Firewall New Rule - Entity trigger](../content/azure-firewall-blockip-azure-firewall-new-rule-entity-trigger-d87d91b7.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 

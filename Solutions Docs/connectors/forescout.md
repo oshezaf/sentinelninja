@@ -4,7 +4,7 @@
 |:----------|:------|
 | **Connector ID** | `Forescout` |
 | **Publisher** | Forescout |
-| **Used in Solutions** | [Forescout (Legacy)](../solutions/forescout-%28legacy%29.md) |
+| **Used in Solutions** | [Forescout (Legacy)](../solutions/forescout-legacy.md) |
 | **Collection Method** | MMA |
 | **Connector Definition Files** | [Forescout_syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20%28Legacy%29/Data%20Connectors/Forescout_syslog.json) |
 

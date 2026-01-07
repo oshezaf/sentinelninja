@@ -4,7 +4,7 @@
 |:----------|:------|
 | **Connector ID** | `VMwareSDWAN` |
 | **Publisher** | VMware by Broadcom |
-| **Used in Solutions** | [VMware SD-WAN and SASE](../solutions/vmware-sd-wan-and-sase.md) |
+| **Used in Solutions** | [VMware SASE](../solutions/vmware-sase.md) |
 | **Collection Method** | Azure Function |
 | **Connector Definition Files** | [VMwareSASE_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20SD-WAN%20and%20SASE/Data%20Connectors/Function%20App%20Connector/VMwareSASE_API_FunctionApp.json) |
 

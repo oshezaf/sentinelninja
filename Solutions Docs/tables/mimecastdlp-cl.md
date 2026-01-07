@@ -19,8 +19,8 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [MimecastSEG](../solutions/mimecastseg.md):**
-- [Mimecast Data Leak Prevention - Hold](../content/mimecastseg-mimecast-data-leak-prevention---hold-3e12b7b1-75e5-497c-ba01-b6cb30b60d7f.md)
-- [Mimecast Data Leak Prevention - Notifications](../content/mimecastseg-mimecast-data-leak-prevention---notifications-1818aeaa-4cc8-426b-ba54-539de896d299.md)
+- [Mimecast Data Leak Prevention - Hold](../content/mimecastseg-mimecast-data-leak-prevention-hold-3e12b7b1-75e5-497c-ba01-b6cb30b60d7f-ff090522.md)
+- [Mimecast Data Leak Prevention - Notifications](../content/mimecastseg-mimecast-data-leak-prevention-notifications-1818aeaa-4cc8-426b-ba54-539de896d299-b39fc5bc.md)
 
 ---
 

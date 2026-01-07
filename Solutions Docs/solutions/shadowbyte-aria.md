@@ -1,5 +1,9 @@
 # ShadowByte Aria
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/aria-logo.svg" alt="ShadowByte Aria Logo" width="75" height="75">
+
+The [Shadowbytes ARIA Threat Intelligence](https://shadowbyte.com/products/aria/) solution allows you to easily connect your Shadowbytes ARIA Threat Intelligence logs with Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://shadowbyte.com/products/aria/](https://shadowbyte.com/products/aria/) |
 | **Categories** | domains |
+| **Version** | 2.0.0 |
+| **Author** | Shadowbyte |
 | **First Published** | 2021-12-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria) |
 
@@ -37,8 +43,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Enrich Incidents - ShadowByte Aria](../content/shadowbyte-aria-enrich-incidents---shadowbyte-aria.md) | This playbook updates the Incident with the brach details if an account has been compromised. | - |
-| [Search for Breaches - ShadowByte Aria](../content/shadowbyte-aria-search-for-breaches---shadowbyte-aria.md) | This playbook updates the Incident with the brach details if an account has been compromised. | [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) *(write)* |
+| [Enrich Incidents - ShadowByte Aria](../content/shadowbyte-aria-enrich-incidents-shadowbyte-aria-8de6b88b.md) | This playbook updates the Incident with the brach details if an account has been compromised. | - |
+| [Search for Breaches - ShadowByte Aria](../content/shadowbyte-aria-search-for-breaches-shadowbyte-aria-1984dbe7.md) | This playbook updates the Incident with the brach details if an account has been compromised. | [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) *(write)* |
 
 ---
 

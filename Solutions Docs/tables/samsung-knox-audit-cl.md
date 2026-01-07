@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
-- [Samsung Knox - Security Log Full Events](../content/samsung-knox-asset-intelligence-samsung-knox---security-log-full-events-bf9be360-7f08-48b2-8e9d-ca240c48b404.md)
+- [Samsung Knox - Security Log Full Events](../content/samsung-knox-asset-intelligence-samsung-knox-security-log-full-events-bf9be360-7f08-48b2-8e9d-ca240c48b404-349fe6fb.md)
 
 ### Workbooks (1)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
-- [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence.md)
+- [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence-db535420.md)
 
 ---
 

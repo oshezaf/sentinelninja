@@ -4,7 +4,7 @@
 
 This table is used by the following solutions:
 
-- [NonameSecurity](../solutions/nonamesecurity.md)
+- [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md)
 
 ## Connectors (1)
 

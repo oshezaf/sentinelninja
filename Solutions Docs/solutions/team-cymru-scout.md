@@ -1,5 +1,9 @@
 # Team Cymru Scout
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/TeamCymruScout.svg" alt="Team Cymru Scout Logo" width="75" height="75">
+
+Team Cymru Scout brings the most advanced AI-powered real-time intelligence into Microsoft Sentinel. The Microsoft Sentinel Integration allows you to perform LiveInvestigation on Indicators like IP, Domain and perform Correlation of Team Cymru Scout Data with Other Sources. It also leverage the capability to generate incident and notify when malicious ip found. 
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [http://team-cymru.com](http://team-cymru.com) |
 | **Categories** | domains |
+| **Version** | 3.1.1 |
+| **Author** | Team Cymru - support@cymru.com |
 | **First Published** | 2024-07-16 |
 | **Last Updated** | 2025-05-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout) |
@@ -56,49 +62,49 @@ This solution includes **28 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout.md) | [`Domain_Data_CL`](../tables/domain-data-cl.md)<br>[`Summary_Details_CL`](../tables/summary-details-cl.md) |
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) | [`Domain_Data_CL`](../tables/domain-data-cl.md)<br>[`Summary_Details_CL`](../tables/summary-details-cl.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Team Cymru Scout Create Incident And Notify](../content/team-cymru-scout-team-cymru-scout-create-incident-and-notify.md) | This playbook will create an incident for suspicious or malicious ip and notify to pre-defined or us... | - |
-| [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-team-cymru-scout-enrich-incident.md) | This playbook will fetch and ingest IP or Domain Indicator data based on Entity mapped in Microsoft ... | - |
-| [Team Cymru Scout Live Investigation](../content/team-cymru-scout-team-cymru-scout-live-investigation.md) | This playbook will fetch and ingest IP or Domain Indicator data based on input parameters given in t... | - |
+| [Team Cymru Scout Create Incident And Notify](../content/team-cymru-scout-team-cymru-scout-create-incident-and-notify-42341b2c.md) | This playbook will create an incident for suspicious or malicious ip and notify to pre-defined or us... | - |
+| [Team Cymru Scout Enrich Incident](../content/team-cymru-scout-team-cymru-scout-enrich-incident-e6d90c68.md) | This playbook will fetch and ingest IP or Domain Indicator data based on Entity mapped in Microsoft ... | - |
+| [Team Cymru Scout Live Investigation](../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.md) | This playbook will fetch and ingest IP or Domain Indicator data based on input parameters given in t... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CymruScoutAccountUsage](../content/team-cymru-scout-cymruscoutaccountusage-de724888-764f-4cfb-9882-804269dea40b.md) | - | - |
-| [CymruScoutCommunicationsData](../content/team-cymru-scout-cymruscoutcommunicationsdata-8154d22b-f208-49ce-b9b6-277ace05d53c.md) | - | - |
-| [CymruScoutCorrelate](../content/team-cymru-scout-cymruscoutcorrelate-8ba897dc-dd9f-4d0a-85d6-188b283977e5.md) | - | - |
-| [CymruScoutDomain](../content/team-cymru-scout-cymruscoutdomain-a2997f81-3d9e-4940-b6c8-7a9d6446c037.md) | - | - |
-| [CymruScoutDomainData](../content/team-cymru-scout-cymruscoutdomaindata-485531cb-8f2a-47b0-9448-2120c90ac4ee.md) | - | - |
-| [CymruScoutFingerprintsData](../content/team-cymru-scout-cymruscoutfingerprintsdata-0b1f65a2-a886-45f6-beeb-6cb58c86ef69.md) | - | - |
-| [CymruScoutIP](../content/team-cymru-scout-cymruscoutip-ba3b1d75-544c-43ff-9969-9ff753e3e3dc.md) | - | - |
-| [CymruScoutIdentity](../content/team-cymru-scout-cymruscoutidentity-ba3b1d75-544c-43ff-9969-9ff753e3e3db.md) | - | - |
-| [CymruScoutOpenPortsData](../content/team-cymru-scout-cymruscoutopenportsdata-d7bf5cbf-b9a9-40fa-ba1f-101f70d7e3ba.md) | - | - |
-| [CymruScoutPdnsData](../content/team-cymru-scout-cymruscoutpdnsdata-a5abd926-e56e-4ac8-a9b5-22658e6a9876.md) | - | - |
-| [CymruScoutProtoByIP](../content/team-cymru-scout-cymruscoutprotobyip-ba3b1d75-544c-43ff-9969-9ff753e3e3dw.md) | - | - |
-| [CymruScoutSummary](../content/team-cymru-scout-cymruscoutsummary-de724888-764f-4cfb-9882-804269dea78b.md) | - | - |
-| [CymruScoutSummaryTopCerts](../content/team-cymru-scout-cymruscoutsummarytopcerts-de724888-764f-4cfb-9882-804269asa40b.md) | - | - |
-| [CymruScoutSummaryTopFingerprints](../content/team-cymru-scout-cymruscoutsummarytopfingerprints-de724888-764f-4cfb-9882-804269aba40b.md) | - | - |
-| [CymruScoutSummaryTopOpenPorts](../content/team-cymru-scout-cymruscoutsummarytopopenports-de724888-764f-4cfb-9882-804269dea40q.md) | - | - |
-| [CymruScoutSummaryTopPdns](../content/team-cymru-scout-cymruscoutsummarytoppdns-de724888-764f-4cfb-9882-804269dea30b.md) | - | - |
-| [CymruScoutTopAsnsByIP](../content/team-cymru-scout-cymruscouttopasnsbyip-de724888-764f-4cfb-9882-804269dea50b.md) | - | - |
-| [CymruScoutTopCountryCodesByIP](../content/team-cymru-scout-cymruscouttopcountrycodesbyip-de724888-764f-4cfb-1234-804269dea40b.md) | - | - |
-| [CymruScoutTopServicesByIP](../content/team-cymru-scout-cymruscouttopservicesbyip-de724888-764f-4cfb-9882-804269dea40r.md) | - | - |
-| [CymruScoutTopTagsByIP](../content/team-cymru-scout-cymruscouttoptagsbyip-ae724888-764f-4cfb-9882-804269dea40b.md) | - | - |
-| [CymruScoutWhois](../content/team-cymru-scout-cymruscoutwhois-de724888-764f-4cfb-9882-804269deb40b.md) | - | - |
-| [CymruScoutX509Data](../content/team-cymru-scout-cymruscoutx509data-651666db-1368-4c42-a72c-f3307e45b67c.md) | - | - |
+| [CymruScoutAccountUsage](../content/team-cymru-scout-cymruscoutaccountusage-de724888-764f-4cfb-9882-804269dea40b-3161c5fb.md) | - | - |
+| [CymruScoutCommunicationsData](../content/team-cymru-scout-cymruscoutcommunicationsdata-8154d22b-f208-49ce-b9b6-277ace05d53c-d5b1141e.md) | - | - |
+| [CymruScoutCorrelate](../content/team-cymru-scout-cymruscoutcorrelate-8ba897dc-dd9f-4d0a-85d6-188b283977e5-cf92c865.md) | - | - |
+| [CymruScoutDomain](../content/team-cymru-scout-cymruscoutdomain-a2997f81-3d9e-4940-b6c8-7a9d6446c037-283db180.md) | - | - |
+| [CymruScoutDomainData](../content/team-cymru-scout-cymruscoutdomaindata-485531cb-8f2a-47b0-9448-2120c90ac4ee-e6d23619.md) | - | - |
+| [CymruScoutFingerprintsData](../content/team-cymru-scout-cymruscoutfingerprintsdata-0b1f65a2-a886-45f6-beeb-6cb58c86ef69-c0bb4b71.md) | - | - |
+| [CymruScoutIP](../content/team-cymru-scout-cymruscoutip-ba3b1d75-544c-43ff-9969-9ff753e3e3dc-898e13c6.md) | - | - |
+| [CymruScoutIdentity](../content/team-cymru-scout-cymruscoutidentity-ba3b1d75-544c-43ff-9969-9ff753e3e3db-c81ceb44.md) | - | - |
+| [CymruScoutOpenPortsData](../content/team-cymru-scout-cymruscoutopenportsdata-d7bf5cbf-b9a9-40fa-ba1f-101f70d7e3ba-dfd3f63a.md) | - | - |
+| [CymruScoutPdnsData](../content/team-cymru-scout-cymruscoutpdnsdata-a5abd926-e56e-4ac8-a9b5-22658e6a9876-8008046b.md) | - | - |
+| [CymruScoutProtoByIP](../content/team-cymru-scout-cymruscoutprotobyip-ba3b1d75-544c-43ff-9969-9ff753e3e3dw-3d5e7618.md) | - | - |
+| [CymruScoutSummary](../content/team-cymru-scout-cymruscoutsummary-de724888-764f-4cfb-9882-804269dea78b-952ecb1c.md) | - | - |
+| [CymruScoutSummaryTopCerts](../content/team-cymru-scout-cymruscoutsummarytopcerts-de724888-764f-4cfb-9882-804269asa40b-5dc9a03b.md) | - | - |
+| [CymruScoutSummaryTopFingerprints](../content/team-cymru-scout-cymruscoutsummarytopfingerprints-de724888-764f-4cfb-9882-804269aba40b-d3a4acb1.md) | - | - |
+| [CymruScoutSummaryTopOpenPorts](../content/team-cymru-scout-cymruscoutsummarytopopenports-de724888-764f-4cfb-9882-804269dea40q-74eda9df.md) | - | - |
+| [CymruScoutSummaryTopPdns](../content/team-cymru-scout-cymruscoutsummarytoppdns-de724888-764f-4cfb-9882-804269dea30b-e47c82f1.md) | - | - |
+| [CymruScoutTopAsnsByIP](../content/team-cymru-scout-cymruscouttopasnsbyip-de724888-764f-4cfb-9882-804269dea50b-f34ca2d6.md) | - | - |
+| [CymruScoutTopCountryCodesByIP](../content/team-cymru-scout-cymruscouttopcountrycodesbyip-de724888-764f-4cfb-1234-804269dea40b-fdc6b1c6.md) | - | - |
+| [CymruScoutTopServicesByIP](../content/team-cymru-scout-cymruscouttopservicesbyip-de724888-764f-4cfb-9882-804269dea40r-97fd1843.md) | - | - |
+| [CymruScoutTopTagsByIP](../content/team-cymru-scout-cymruscouttoptagsbyip-ae724888-764f-4cfb-9882-804269dea40b-a7939aae.md) | - | - |
+| [CymruScoutWhois](../content/team-cymru-scout-cymruscoutwhois-de724888-764f-4cfb-9882-804269deb40b-275f0f2b.md) | - | - |
+| [CymruScoutX509Data](../content/team-cymru-scout-cymruscoutx509data-651666db-1368-4c42-a72c-f3307e45b67c-d92c0e46.md) | - | - |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TeamCymruScoutDomainData](../content/team-cymru-scout-teamcymruscoutdomaindata.md) | - | - |
-| [TeamCymruScoutIPData](../content/team-cymru-scout-teamcymruscoutipdata.md) | - | - |
+| [TeamCymruScoutDomainData](../content/team-cymru-scout-teamcymruscoutdomaindata-17b10d52.md) | - | - |
+| [TeamCymruScoutIPData](../content/team-cymru-scout-teamcymruscoutipdata-71f47feb.md) | - | - |
 
 ## Release Notes
 

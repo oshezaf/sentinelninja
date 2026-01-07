@@ -1,5 +1,11 @@
 # SOC Handbook
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SOC Handbook Logo" width="75" height="75">
+
+The SOC Handbook solution for Microsoft Sentinel provides a collection of resources that enable and empower SOC Analysts to get better visibility and understanding of point-in-time security posture of organizational resources.
+
+ All content packaged in this solution is built and supported by the Microsoft Sentinel community. For any support, please create an [issue](https://github.com/Azure/Azure-Sentinel/issues) on the Microsoft Sentinel GitHub repository.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +14,8 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Community |
 | **First Published** | 2022-11-30 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Handbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Handbook) |
 
@@ -56,19 +64,19 @@ This solution includes **13 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AnalyticsEfficiency](../content/soc-handbook-analyticsefficiency.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [AnomaliesVisualization](../content/soc-handbook-anomaliesvisualization.md) | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [AnomalyData](../content/soc-handbook-anomalydata.md) | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [AttackSurfaceReduction](../content/soc-handbook-attacksurfacereduction.md) | [`DeviceEvents`](../tables/deviceevents.md) |
-| [AzureSentinelCost](../content/soc-handbook-azuresentinelcost.md) | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`Usage`](../tables/usage.md) |
-| [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [IncidentOverview](../content/soc-handbook-incidentoverview.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [InvestigationInsights](../content/soc-handbook-investigationinsights.md) | [`DnsEvents`](../tables/dnsevents.md)<br>[`HuntingBookmark`](../tables/huntingbookmark.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [MITREAttack](../content/soc-handbook-mitreattack.md) | [`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [SecurityOperationsEfficiency](../content/soc-handbook-securityoperationsefficiency.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [SecurityStatus](../content/soc-handbook-securitystatus.md) | [`SecurityEvent`](../tables/securityevent.md) |
-| [SentinelCentral](../content/soc-handbook-sentinelcentral.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AnalyticsEfficiency](../content/soc-handbook-analyticsefficiency-ba1ee629.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AnomaliesVisualization](../content/soc-handbook-anomaliesvisualization-8cb75567.md) | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md) | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AttackSurfaceReduction](../content/soc-handbook-attacksurfacereduction-52743d4b.md) | [`DeviceEvents`](../tables/deviceevents.md) |
+| [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md) | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`Usage`](../tables/usage.md) |
+| [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts-8f5f1c6c.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) | [`DnsEvents`](../tables/dnsevents.md)<br>[`HuntingBookmark`](../tables/huntingbookmark.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md) | [`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [SecurityOperationsEfficiency](../content/soc-handbook-securityoperationsefficiency-d083776e.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) | [`SecurityEvent`](../tables/securityevent.md) |
+| [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Release Notes
 

@@ -1,5 +1,15 @@
 # Microsoft Exchange Security - Exchange Online
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Exchange Security - Exchange Online Logo" width="75" height="75">
+
+The Exchange Security Audit and Configuration Insight solution analyze Exchange Online configuration and logs from a security lens to provide insights and alerts.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-collector-api?tabs=powershell)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
 | **Categories** | domains |
+| **Version** | 3.1.7 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-21 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online) |
 
@@ -40,26 +52,26 @@ This solution includes **10 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-admin-activity---online.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-least-privilege-with-rbac---online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
-| [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-search-adminauditlog---online.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security---exchange-online-microsoft-exchange-security-review---online.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
+| [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-admin-activity-online-c51be957.md) | [`OfficeActivity`](../tables/officeactivity.md) |
+| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
+| [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-search-adminauditlog-online-11d0bde2.md) | [`OfficeActivity`](../tables/officeactivity.md) |
+| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeConfiguration](../content/microsoft-exchange-security---exchange-online-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620.md) | - | - |
-| [ExchangeEnvironmentList](../content/microsoft-exchange-security---exchange-online-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a.md) | - | - |
-| [MESCheckOnlineVIP](../content/microsoft-exchange-security---exchange-online-mescheckonlinevip-9b864a03-5db6-4cf0-aef1-17ac0cc34195.md) | - | - |
-| [MESCompareDataMRA](../content/microsoft-exchange-security---exchange-online-mescomparedatamra-39f51672-8c63-4600-882a-5db8275f798f.md) | - | - |
-| [MESOfficeActivityLogs](../content/microsoft-exchange-security---exchange-online-mesofficeactivitylogs-2be516a9-f8fd-4357-a839-cafcb5a6d73a.md) | - | - |
+| [ExchangeConfiguration](../content/microsoft-exchange-security-exchange-online-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620-0563d5d5.md) | - | - |
+| [ExchangeEnvironmentList](../content/microsoft-exchange-security-exchange-online-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a-852d1447.md) | - | - |
+| [MESCheckOnlineVIP](../content/microsoft-exchange-security-exchange-online-mescheckonlinevip-9b864a03-5db6-4cf0-aef1-17ac0cc34195-78b91c0a.md) | - | - |
+| [MESCompareDataMRA](../content/microsoft-exchange-security-exchange-online-mescomparedatamra-39f51672-8c63-4600-882a-5db8275f798f-41c76693.md) | - | - |
+| [MESOfficeActivityLogs](../content/microsoft-exchange-security-exchange-online-mesofficeactivitylogs-2be516a9-f8fd-4357-a839-cafcb5a6d73a-a47fdf2d.md) | - | - |
 
 ### Watchlists
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchOnlineVIP](../content/microsoft-exchange-security---exchange-online-exchonlinevip.md) | - | - |
+| [ExchOnlineVIP](../content/microsoft-exchange-security-exchange-online-exchonlinevip-20613a40.md) | - | - |
 
 ## Additional Documentation
 

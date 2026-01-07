@@ -13,7 +13,7 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Netskope](../solutions/netskope.md):**
-- [NetskopeEvents](../content/netskope-netskopeevents.md)
+- [NetskopeEvents](../content/netskope-netskopeevents-8c0bf08d.md)
 
 ---
 

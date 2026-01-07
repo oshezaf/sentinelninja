@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md):**
-- [ARGOS Cloud Security - Exploitable Cloud Resources](../content/argoscloudsecurity-argos-cloud-security---exploitable-cloud-resources-a9bf1b8c-c761-4840-b9a8-7535ca68ca28.md)
+- [ARGOS Cloud Security - Exploitable Cloud Resources](../content/argoscloudsecurity-argos-cloud-security-exploitable-cloud-resources-a9bf1b8c-c761-4840-b9a8-7535ca68ca28-4146438c.md)
 
 ### Workbooks (1)
 
 **In solution [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md):**
-- [ARGOSCloudSecurityWorkbook](../content/argoscloudsecurity-argoscloudsecurityworkbook.md)
+- [ARGOSCloudSecurityWorkbook](../content/argoscloudsecurity-argoscloudsecurityworkbook-313e9d94.md)
 
 ---
 

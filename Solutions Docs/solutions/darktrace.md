@@ -1,5 +1,17 @@
 # Darktrace
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Darktrace.svg" alt="Darktrace Logo" width="75" height="75">
+
+The [Darktrace](https://darktrace.com/) Sentinel Solution lets users connect Darktrace AI-based alerting in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. Microsoft Sentinel's enhanced visibility into Darktrace logs enables monitoring and mitigation of security threats. 
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+a. [Microsoft Sentinel Data Collector API](https://docs.microsoft.com/azure/sentinel/connect-rest-api-template)
+
+ For more details about this solution refer to https://www.darktrace.com/microsoft/sentinel/
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +20,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.darktrace.com/en/contact/](https://www.darktrace.com/en/contact/) |
 | **Categories** | domains |
+| **Version** | 2.0.1 |
+| **Author** | Darktrace |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace) |
 
@@ -38,15 +52,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Darktrace AI Analyst](../content/darktrace-darktrace-ai-analyst-ffa2977f-3077-4bba-b1bf-f3417699cbb0.md) | High | - | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
-| [Darktrace Model Breach](../content/darktrace-darktrace-model-breach-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9.md) | Medium | - | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
-| [Darktrace System Status](../content/darktrace-darktrace-system-status-2e629769-60eb-4a14-8bfc-bde9be66ebeb.md) | Informational | - | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
+| [Darktrace AI Analyst](../content/darktrace-darktrace-ai-analyst-ffa2977f-3077-4bba-b1bf-f3417699cbb0-c8c73532.md) | High | - | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
+| [Darktrace Model Breach](../content/darktrace-darktrace-model-breach-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-0057eb81.md) | Medium | - | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
+| [Darktrace System Status](../content/darktrace-darktrace-system-status-2e629769-60eb-4a14-8bfc-bde9be66ebeb-cc05125a.md) | Informational | - | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DarktraceWorkbook](../content/darktrace-darktraceworkbook.md) | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
+| [DarktraceWorkbook](../content/darktrace-darktraceworkbook-b6b8de88.md) | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
 
 ---
 

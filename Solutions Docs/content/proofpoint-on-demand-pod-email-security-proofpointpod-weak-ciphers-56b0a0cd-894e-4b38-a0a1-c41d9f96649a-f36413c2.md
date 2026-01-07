@@ -1,0 +1,27 @@
+# ProofpointPOD - Weak ciphers
+
+Detects when weak TLS ciphers are used.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
+| **ID** | `56b0a0cd-894e-4b38-a0a1-c41d9f96649a` |
+| **Severity** | Low |
+| **Status** | Available |
+| **Kind** | Scheduled |
+| **Tactics** | CommandAndControl |
+| **Techniques** | T1573 |
+| **Required Connectors** | [ProofpointPOD](../connectors/proofpointpod.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security/Analytic%20Rules/ProofpointPODWeakCiphers.yaml) |
+
+---
+
+**Browse:**
+
+- [← Back to Analytic Rules](analytic-rules.md)
+- [← Back to Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md)
+- [Content Index](content-index.md)
+- [Solutions Index](../solutions-index.md)
+- [Connectors Index](../connectors-index.md)
+- [Tables Index](../tables-index.md)

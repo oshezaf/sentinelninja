@@ -1,5 +1,15 @@
 # Google Apigee
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Google%20Apigee/logo/Google-Cloud-Branding.png" alt="Google Apigee Logo" width="75" height="75">
+
+The [Google ApigeeX](https://cloud.google.com/apigee/docs) solution provides the capability to ingest ApigeeX audit logs into Microsoft Sentinel using the GCP Logging API or PubSub architecture. Refer to [GCP Logging API documentation](https://cloud.google.com/logging/docs/reference/v2/rest) for more information on the Azure Function connector and the [Microsoft Sentinel documentation](https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs) for the basics on PubSub based ingestion.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.1.1 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-28 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Apigee](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Apigee) |
 
@@ -39,9 +51,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ApigeeX](../content/google-apigee-apigeex-d597b0df-ea3d-479f-97ea-8c90922437a1.md) | - | - |
-| [ApigeeXV2](../content/google-apigee-apigeexv2-f44281ae-62a7-4043-b27a-aa6e438f3e1a.md) | - | - |
-| [Unified_ApigeeX](../content/google-apigee-unified-apigeex-6eae941d-8cdb-45c7-9896-aab2a6082dfb.md) | - | - |
+| [ApigeeX](../content/google-apigee-apigeex-d597b0df-ea3d-479f-97ea-8c90922437a1-7eaf19c0.md) | - | - |
+| [ApigeeXV2](../content/google-apigee-apigeexv2-f44281ae-62a7-4043-b27a-aa6e438f3e1a-6924bb32.md) | - | - |
+| [Unified_ApigeeX](../content/google-apigee-unified-apigeex-6eae941d-8cdb-45c7-9896-aab2a6082dfb-96a25c59.md) | - | - |
 
 ## Release Notes
 

@@ -1,5 +1,9 @@
 # Feedly
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Feedly.svg" alt="Feedly Logo" width="75" height="75">
+
+The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Microsoft Sentinel provides a simple way to ingest Indicators of Compromise from your Feedly streams into Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://feedly.com/i/support/contactUs](https://feedly.com/i/support/contactUs) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Feedly ml@feedly.com |
 | **First Published** | 2023-08-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly) |
 

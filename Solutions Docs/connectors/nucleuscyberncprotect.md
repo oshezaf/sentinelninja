@@ -4,7 +4,7 @@
 |:----------|:------|
 | **Connector ID** | `NucleusCyberNCProtect` |
 | **Publisher** | archTIS |
-| **Used in Solutions** | [archTIS](../solutions/archtis.md) |
+| **Used in Solutions** | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
 | **Collection Method** | Unknown (Custom Log) |
 | **Connector Definition Files** | [NucleusCyberNCProtect.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/archTIS/Data%20Connectors/NucleusCyberNCProtect.json) |
 

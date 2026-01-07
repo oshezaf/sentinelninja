@@ -19,13 +19,13 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
-- [Samsung Knox - Password Lockout Events](../content/samsung-knox-asset-intelligence-samsung-knox---password-lockout-events-fbff0a97-1972-4df8-a78c-254ccb9879ef.md)
-- [Samsung Knox - Suspicious URL Accessed Events](../content/samsung-knox-asset-intelligence-samsung-knox---suspicious-url-accessed-events-18d4d4f3-6605-4fd2-968c-82c171409c1c.md)
+- [Samsung Knox - Password Lockout Events](../content/samsung-knox-asset-intelligence-samsung-knox-password-lockout-events-fbff0a97-1972-4df8-a78c-254ccb9879ef-066202c7.md)
+- [Samsung Knox - Suspicious URL Accessed Events](../content/samsung-knox-asset-intelligence-samsung-knox-suspicious-url-accessed-events-18d4d4f3-6605-4fd2-968c-82c171409c1c-1eff2715.md)
 
 ### Workbooks (1)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
-- [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence.md)
+- [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence-db535420.md)
 
 ---
 

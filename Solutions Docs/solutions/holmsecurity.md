@@ -1,5 +1,19 @@
 # HolmSecurity
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="HolmSecurity Logo" width="75" height="75">
+
+The [Holm Security](https://www.holmsecurity.com/) solution provides the capability to poll data from Holm Security Center into Microsoft Sentinel.
+  
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +22,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.holmsecurity.com/](https://support.holmsecurity.com/) |
 | **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Holm Security |
 | **First Published** | 2022-07-18 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity) |
 

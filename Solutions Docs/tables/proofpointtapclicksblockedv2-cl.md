@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [ProofPointTap](../solutions/proofpointtap.md):**
-- [ProofpointTAP](../content/proofpointtap-proofpointtap.md)
+- [ProofpointTAP](../content/proofpointtap-proofpointtap-d0be2a01.md)
 
 ---
 

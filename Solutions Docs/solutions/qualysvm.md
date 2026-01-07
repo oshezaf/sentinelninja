@@ -1,5 +1,15 @@
 # QualysVM
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qualys_logo.svg" alt="QualysVM Logo" width="75" height="75">
+
+The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management-detection-response/) solution for Microsoft Sentinel enables you to ingest host vulnerability detection data into Microsoft Sentinel.
+
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +18,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.7 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2020-12-14 |
 | **Last Updated** | 2025-11-18 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM) |
@@ -44,29 +56,29 @@ This solution includes **8 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [High Number of Urgent Vulnerabilities Detected](../content/qualysvm-high-number-of-urgent-vulnerabilities-detected-3edb7215-250b-40c0-8b46-79093949242d.md) | Medium | InitialAccess | - |
-| [New High Severity Vulnerability Detected Across Multiple Hosts](../content/qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27.md) | Medium | InitialAccess | - |
+| [High Number of Urgent Vulnerabilities Detected](../content/qualysvm-high-number-of-urgent-vulnerabilities-detected-3edb7215-250b-40c0-8b46-79093949242d-7adbb1bc.md) | Medium | InitialAccess | - |
+| [New High Severity Vulnerability Detected Across Multiple Hosts](../content/qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27-fbfde951.md) | Medium | InitialAccess | - |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [QualysVMv2](../content/qualysvm-qualysvmv2.md) | - |
+| [QualysVMv2](../content/qualysvm-qualysvmv2-0981091b.md) | - |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [QualysVM-GetAssetDetails](../content/qualysvm-qualysvm-getassetdetails.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [QualysVM-GetAssets-ByCVEID](../content/qualysvm-qualysvm-getassets-bycveid.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [QualysVM-GetAssets-ByOpenPort](../content/qualysvm-qualysvm-getassets-byopenport.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [QualysVM-LaunchVMScan-GenerateReport](../content/qualysvm-qualysvm-launchvmscan-generatereport.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [QualysVM-GetAssetDetails](../content/qualysvm-qualysvm-getassetdetails-0f1ab8e4.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [QualysVM-GetAssets-ByCVEID](../content/qualysvm-qualysvm-getassets-bycveid-c760c473.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [QualysVM-GetAssets-ByOpenPort](../content/qualysvm-qualysvm-getassets-byopenport-f3f9bb94.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
+| [QualysVM-LaunchVMScan-GenerateReport](../content/qualysvm-qualysvm-launchvmscan-generatereport-a0439575.md) | When a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [QualysHostDetection](../content/qualysvm-qualyshostdetection-7162903e-e07f-426b-9b07-63b8c7eb77b1.md) | - | - |
+| [QualysHostDetection](../content/qualysvm-qualyshostdetection-7162903e-e07f-426b-9b07-63b8c7eb77b1-391bdc43.md) | - | - |
 
 ## Release Notes
 

@@ -1,5 +1,23 @@
 # CofenseIntelligence
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CofenseTriage.svg" alt="CofenseIntelligence Logo" width="75" height="75">
+
+The Cofense-Intelligence solution provides the capability to ingest Threat Indicators from the Cofense Intelligence platform to Threat Intelligence Indicators in Microsoft Sentinel and Cofense Intelligence Threat Intelligence Indicators from Microsoft Sentinel Threat Intelligence to Microsoft Defender for Endpoints. 
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in 
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a.[Azure Monitor HTTP Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b.[Azure Functions](https://azure.microsoft.com/products/functions/#overview)
+
+c.[Microsoft Threat Intelligence Indicator API](https://learn.microsoft.com/en-us/rest/api/securityinsights/preview/threat-intelligence-indicator)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +26,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://cofense.com/contact-support/](https://cofense.com/contact-support/) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Cofense - support@cofense.com |
 | **First Published** | 2023-05-26 |
 | **Last Updated** | 2024-05-26 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence) |
@@ -39,7 +59,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CofenseIntelligenceThreatIndicators](../content/cofenseintelligence-cofenseintelligencethreatindicators.md) | [`Malware_Data_CL`](../tables/malware-data-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [CofenseIntelligenceThreatIndicators](../content/cofenseintelligence-cofenseintelligencethreatindicators-d6be930b.md) | [`Malware_Data_CL`](../tables/malware-data-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 
 ## Release Notes
 

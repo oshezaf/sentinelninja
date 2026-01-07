@@ -1,5 +1,22 @@
 # Windows Firewall
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Windows Firewall Logo" width="75" height="75">
+
+The Windows Firewall solution for Microsoft Sentinel allows you to ingest Windows Firewall Events into Microsoft Sentinel using the Log Analytics agent for Windows.
+
+Installing this solution will deploy two data connectors,
+
+1. Windows Firewall Events via AMA - This data connector helps in ingesting Windows Firewall Events into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). Microsoft recommends using this Data Connector
+2. Windows Firewall - This solution installs the data connector to ingest Windows Firewall events using the Windows Firewall solution for Azure. After installing the solution, configure and enable this data connector by following guidance in Manage solution view.
+
+<P style="color:red">**NOTE**: Microsoft recommends Installation of Windows Firewall via AMA. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.</p>
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Agent based logs collection from Windows and Linux machines](https://learn.microsoft.com/azure/azure-monitor/agents/data-sources-custom-logs?WT.mc_id=Portal-fx)
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +25,8 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Firewall) |
 
@@ -42,7 +61,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WindowsFirewall](../content/windows-firewall-windowsfirewall.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md) |
+| [WindowsFirewall](../content/windows-firewall-windowsfirewall-6cfebfa8.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md) |
 
 ## Release Notes
 

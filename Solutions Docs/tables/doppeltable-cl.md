@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Doppel](../solutions/doppel.md):**
-- [Doppel](../content/doppel-doppel.md)
+- [Doppel](../content/doppel-doppel-0def4b82.md)
 
 ---
 

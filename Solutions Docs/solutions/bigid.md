@@ -1,5 +1,9 @@
 # BigID
 
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/bigid.svg" alt="BigID Logo" width="75" height="75">
+
+The BigID solution for Microsoft Sentinel enables you to ingest BigID DSPM cases and affected objects into Microsoft Sentinel.
+
 ## Solution Information
 
 | Attribute | Value |
@@ -8,6 +12,8 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.bigid.com/support](https://www.bigid.com/support) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | BigID - mhebrard@bigid.com |
 | **First Published** | 2025-10-07 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID) |
 

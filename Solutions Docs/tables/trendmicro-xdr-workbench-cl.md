@@ -19,12 +19,12 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Trend Micro Vision One](../solutions/trend-micro-vision-one.md):**
-- [Create Incident for XDR Alerts](../content/trend-micro-vision-one-create-incident-for-xdr-alerts-0febd8cc-1b8d-45ed-87b3-e1e8a57d14cd.md)
+- [Create Incident for XDR Alerts](../content/trend-micro-vision-one-create-incident-for-xdr-alerts-0febd8cc-1b8d-45ed-87b3-e1e8a57d14cd-cbe34215.md)
 
 ### Workbooks (1)
 
 **In solution [Trend Micro Vision One](../solutions/trend-micro-vision-one.md):**
-- [TrendMicroXDROverview](../content/trend-micro-vision-one-trendmicroxdroverview.md)
+- [TrendMicroXDROverview](../content/trend-micro-vision-one-trendmicroxdroverview-d7791cc7.md)
 
 ---
 

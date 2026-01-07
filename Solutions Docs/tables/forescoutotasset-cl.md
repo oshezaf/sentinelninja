@@ -19,7 +19,7 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md):**
-- [eyeInspectOTSecurityWorkbook](../content/forescout-eyeinspect-for-ot-security-eyeinspectotsecurityworkbook.md)
+- [eyeInspectOTSecurityWorkbook](../content/forescout-eyeinspect-for-ot-security-eyeinspectotsecurityworkbook-bab522c8.md)
 
 ---
 

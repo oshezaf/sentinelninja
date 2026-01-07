@@ -4,7 +4,7 @@
 |:----------|:------|
 | **Connector ID** | `ExtraHopNetworks` |
 | **Publisher** | ExtraHop Networks |
-| **Used in Solutions** | [ExtraHop Reveal(x)](../solutions/extrahop-reveal%28x%29.md) |
+| **Used in Solutions** | [ExtraHop Reveal(x)](../solutions/extrahop-reveal-x.md) |
 | **Collection Method** | MMA |
 | **Event Vendor** | ExtraHop |
 | **Connector Definition Files** | [template_ExtraHopNetworks.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29/Data%20Connectors/template_ExtraHopNetworks.json) |
