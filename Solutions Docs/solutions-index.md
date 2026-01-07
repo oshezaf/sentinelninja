@@ -28,7 +28,7 @@ This documentation covers **487 solutions**, of which **385** include data conne
 | Content Items | 4828 |
 | Solutions with Content | 384 (78%) |
 
-*Note: 1683 total tables are documented, including 872 additional tables referenced by content items or from the Azure Monitor reference.*
+*Note: 1680 total tables are documented, including 869 additional tables referenced by content items or from the Azure Monitor reference.*
 
 ### Collection Methods
 
