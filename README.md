@@ -15,7 +15,7 @@ Currently, I'm a **Principal Product Manager** working on **Microsoft Sentinel**
 
 ## Projects
 
-### 📚 [Solutions Docs](Solutions%20Docs/)
+### 📚 [Solutions Docs](Solutions%20Docs/README.md)
 
 Comprehensive reference documentation for Microsoft Sentinel Solutions, automatically generated from the [Azure-Sentinel](https://github.com/Azure/Azure-Sentinel) repository using the **[Solutions Analyzer](https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Solutions%20Analyzer)** tool – which I also developed and maintain as part of the Azure-Sentinel repository.
 
