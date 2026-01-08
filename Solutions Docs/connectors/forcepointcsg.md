@@ -10,6 +10,8 @@
 | **Event Product** | Email, Web |
 | **Connector Definition Files** | [ForcepointCloudSecurityGateway.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CSG/Data%20Connectors/ForcepointCloudSecurityGateway.json) |
 
+> ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 Forcepoint Cloud Security Gateway is a converged cloud security service that provides visibility, control, and threat protection for users and data, wherever they are. For more information visit: https://www.forcepoint.com/product/cloud-security-gateway
 
 ## Tables Ingested

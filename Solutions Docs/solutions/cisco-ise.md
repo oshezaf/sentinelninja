@@ -23,9 +23,11 @@ The [Cisco ISE](https://www.cisco.com/c/en_in/products/security/identity-service
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Cisco Identity Services Engine](../connectors/ciscoise.md)
+- [[Deprecated] Cisco Identity Services Engine](../connectors/ciscoise.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

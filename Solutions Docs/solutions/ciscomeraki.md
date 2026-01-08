@@ -23,11 +23,13 @@ The Cisco Meraki solution allows you to easily connect your Cisco Meraki (MX/MR/
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)**:
+This solution has **3 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md)
+- [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) ⚠️
+- [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) ⚠️
+- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

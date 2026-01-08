@@ -23,9 +23,11 @@ The [Ubiquiti UniFi](https://www.ui.com/) solution provides the capability to in
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Ubiquiti UniFi](../connectors/ubiquitiunifi.md)
+- [[Deprecated] Ubiquiti UniFi](../connectors/ubiquitiunifi.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

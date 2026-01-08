@@ -13,9 +13,11 @@
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Azure Data Lake Storage Gen1](../connectors/azuredatalakestoragegen1-ccp.md)
+- [Azure Data Lake Storage Gen1](../connectors/azuredatalakestoragegen1-ccp.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

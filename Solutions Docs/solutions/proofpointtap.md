@@ -25,10 +25,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md)
+- [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) ⚠️
 - [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

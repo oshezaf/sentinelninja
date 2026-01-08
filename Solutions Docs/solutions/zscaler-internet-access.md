@@ -25,10 +25,12 @@ The [Zscaler Internet Access](https://www.zscaler.com/products/zscaler-internet-
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md)
-- [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md)
+- [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md) ⚠️
+- [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

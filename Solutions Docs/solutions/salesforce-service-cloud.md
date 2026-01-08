@@ -25,10 +25,12 @@ The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cl
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md)
+- [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) ⚠️
 - [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

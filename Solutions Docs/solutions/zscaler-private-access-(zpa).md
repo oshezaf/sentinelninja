@@ -23,9 +23,11 @@ The [Zscaler Private Access (ZPA)](https://www.zscaler.com/) solution provides t
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Zscaler Private Access](../connectors/zscalerprivateaccess.md)
+- [[Deprecated] Zscaler Private Access](../connectors/zscalerprivateaccess.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

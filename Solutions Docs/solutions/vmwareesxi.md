@@ -23,9 +23,11 @@ The VMware ESXi solution for Microsoft Sentinel enables you to ingest VMWare ESX
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] VMware ESXi](../connectors/vmwareesxi.md)
+- [[Deprecated] VMware ESXi](../connectors/vmwareesxi.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

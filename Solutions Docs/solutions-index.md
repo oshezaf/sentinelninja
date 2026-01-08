@@ -15,37 +15,7 @@ This reference documentation provides detailed information about data connectors
 
 ## Overview
 
-This documentation covers **484 solutions**, of which **385** include data connectors, providing access to **525 unique connectors** and **811 tables**.
-
-### Quick Statistics
-
-| Metric | Count |
-|--------|-------|
-| Total Solutions | 484 |
-| Solutions with Connectors | 385 (79%) |
-| Unique Connectors | 525 |
-| Tables Used by Solutions | 811 |
-| Content Items | 4868 |
-| Solutions with Content | 385 (79%) |
-
-*Note: 1700 total tables are documented, including 889 additional tables referenced by content items or from the Azure Monitor reference.*
-
-### Collection Methods
-
-| Collection Method | Total Connectors | Active Connectors* | Total Solutions | Active Solutions* |
-|:-----------------|:----------------:|:-----------------:|:---------------:|:----------------:|
-| Azure Function | 129 | 111 | 102 | 102 |
-| CCF | 123 | 122 | 109 | 109 |
-| MMA | 110 | 20 | 111 | 28 |
-| AMA | 59 | 25 | 56 | 23 |
-| Unknown (Custom Log) | 44 | 44 | 42 | 42 |
-| Native | 25 | 25 | 20 | 20 |
-| Azure Diagnostics | 17 | 17 | 17 | 17 |
-| REST API | 15 | 15 | 16 | 16 |
-| Unknown | 3 | 3 | 4 | 4 |
-| **Total** | **525** | **382** | **385** | **301** |
-
-*\*Active excludes connectors and solutions marked as deprecated.*
+This documentation covers **484 solutions**, of which **303** include data connectors, providing access to **378 unique connectors** and **811 tables**.
 
 ## How This Documentation is Organized
 

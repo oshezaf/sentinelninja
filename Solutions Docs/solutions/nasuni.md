@@ -24,9 +24,11 @@ The [Nasuni](https://www.nasuni.com) solution for Microsoft Sentinel allows you 
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Nasuni Edge Appliance](../connectors/nasuniedgeappliance.md)
+- [[Deprecated] Nasuni Edge Appliance](../connectors/nasuniedgeappliance.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

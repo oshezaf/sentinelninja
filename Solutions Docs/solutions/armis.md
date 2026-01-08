@@ -20,12 +20,14 @@ The [Armis](https://www.armis.com/) Solution gives the capability to ingest Armi
 
 ## Data Connectors
 
-This solution provides **4 data connector(s)**:
+This solution provides **2 data connector(s)** (plus 2 discovered⚠️):
 
-- [Armis Activities](../connectors/armisactivities.md)
-- [Armis Alerts](../connectors/armisalerts.md)
+- [Armis Activities](../connectors/armisactivities.md) ⚠️
+- [Armis Alerts](../connectors/armisalerts.md) ⚠️
 - [Armis Alerts Activities](../connectors/armisalertsactivities.md)
 - [Armis Devices](../connectors/armisdevices.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

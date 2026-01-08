@@ -28,10 +28,12 @@ The [Palo Alto Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud) CSPM
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Palo Alto Prisma Cloud CSPM](../connectors/paloaltoprismacloud.md)
+- [[DEPRECATED] Palo Alto Prisma Cloud CSPM](../connectors/paloaltoprismacloud.md) ⚠️
 - [Palo Alto Prisma Cloud CSPM (via Codeless Connector Framework)](../connectors/paloaltoprismacloudcspmccpdefinition.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

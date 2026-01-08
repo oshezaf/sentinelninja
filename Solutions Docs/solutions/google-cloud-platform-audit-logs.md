@@ -19,10 +19,12 @@ The Google Cloud Platform (GCP) audit logs, ingested from Microsoft Sentinel's c
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md)
-- [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md)
+- [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

@@ -24,10 +24,12 @@ The [Vectra AI Detect](https://www.vectra.ai/products/platform%22%20/t%20%22_bla
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Vectra AI Detect via Legacy Agent](../connectors/aivectradetect.md)
-- [[Deprecated] Vectra AI Detect via AMA](../connectors/aivectradetectama.md)
+- [[Deprecated] Vectra AI Detect via Legacy Agent](../connectors/aivectradetect.md) ⚠️
+- [[Deprecated] Vectra AI Detect via AMA](../connectors/aivectradetectama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

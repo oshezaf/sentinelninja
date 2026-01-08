@@ -23,10 +23,12 @@ This solution is dependent on the Common Event Format solution containing the CE
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Broadcom Symantec DLP via Legacy Agent](../connectors/broadcomsymantecdlp.md)
-- [[Deprecated] Broadcom Symantec DLP via AMA](../connectors/broadcomsymantecdlpama.md)
+- [[Deprecated] Broadcom Symantec DLP via Legacy Agent](../connectors/broadcomsymantecdlp.md) ⚠️
+- [[Deprecated] Broadcom Symantec DLP via AMA](../connectors/broadcomsymantecdlpama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

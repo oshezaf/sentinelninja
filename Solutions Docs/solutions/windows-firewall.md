@@ -32,10 +32,12 @@ a. [Agent based logs collection from Windows and Linux machines](https://learn.m
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [Windows Firewall](../connectors/windowsfirewall.md)
+- [Windows Firewall](../connectors/windowsfirewall.md) ⚠️
 - [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

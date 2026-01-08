@@ -23,10 +23,12 @@ This solution is dependent on the Common Event Format solution containing the CE
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Aruba ClearPass via Legacy Agent](../connectors/arubaclearpass.md)
-- [[Deprecated] Aruba ClearPass via AMA](../connectors/arubaclearpassama.md)
+- [[Deprecated] Aruba ClearPass via Legacy Agent](../connectors/arubaclearpass.md) ⚠️
+- [[Deprecated] Aruba ClearPass via AMA](../connectors/arubaclearpassama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

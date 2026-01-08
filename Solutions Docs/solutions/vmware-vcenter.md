@@ -23,9 +23,11 @@ The [VMware vCenter Server](https://www.vmware.com/products/vcenter-server.html)
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md)
+- [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

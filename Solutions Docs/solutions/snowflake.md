@@ -25,10 +25,12 @@ The Snowflake CCF data connector provides the capability to ingest Snowflake [Lo
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md)
+- [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) ⚠️
 - [Snowflake (via Codeless Connector Framework)](../connectors/snowflakelogsccpdefinition.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

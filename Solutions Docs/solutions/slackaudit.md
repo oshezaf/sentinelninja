@@ -25,11 +25,13 @@ The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capabilit
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
-- [Slack](../connectors/slackaudit.md)
-- [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md)
+- [Slack](../connectors/slackaudit.md) ⚠️
+- [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) ⚠️
 - [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

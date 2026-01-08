@@ -8,6 +8,8 @@
 | **Collection Method** | CCF |
 | **Connector Definition Files** | [Onapsis.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend/Data%20Connectors/Onapsis.json) |
 
+> ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 Onapsis Defend Integration is aimed at forwarding alerts and logs collected and detected by Onapsis Platform into Microsoft Sentinel SIEM
 
 ## Tables Ingested

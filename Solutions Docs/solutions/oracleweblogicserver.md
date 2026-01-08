@@ -23,9 +23,11 @@ The [Oracle](https://www.oracle.com/index.html) WebLogic Server solution for Mic
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Oracle WebLogic Server](../connectors/oracleweblogicserver.md)
+- [[Deprecated] Oracle WebLogic Server](../connectors/oracleweblogicserver.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

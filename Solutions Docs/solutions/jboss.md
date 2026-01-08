@@ -23,9 +23,11 @@ The JBoss Enterprise Application Platform data connector provides the capability
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] JBoss Enterprise Application Platform](../connectors/jbosseap.md)
+- [[Deprecated] JBoss Enterprise Application Platform](../connectors/jbosseap.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

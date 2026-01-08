@@ -23,9 +23,11 @@ The [Squid Proxy](http://www.squid-cache.org/) solution for Microsoft Sentinel e
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Squid Proxy](../connectors/squidproxy.md)
+- [[Deprecated] Squid Proxy](../connectors/squidproxy.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

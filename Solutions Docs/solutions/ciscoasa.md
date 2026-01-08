@@ -29,10 +29,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md)
+- [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) ⚠️
 - [Cisco ASA/FTD via AMA](../connectors/ciscoasaama.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

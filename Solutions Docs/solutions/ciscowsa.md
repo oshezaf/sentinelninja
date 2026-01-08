@@ -23,9 +23,11 @@ The [Cisco Web Security Appliance (WSA)](https://www.cisco.com/c/en/us/products/
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Cisco Web Security Appliance](../connectors/ciscowsa.md)
+- [[Deprecated] Cisco Web Security Appliance](../connectors/ciscowsa.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

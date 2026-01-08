@@ -23,10 +23,12 @@ This solution is dependent on the Common Event Format solution containing the CE
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Claroty via Legacy Agent](../connectors/claroty.md)
-- [[Deprecated] Claroty via AMA](../connectors/clarotyama.md)
+- [[Deprecated] Claroty via Legacy Agent](../connectors/claroty.md) ⚠️
+- [[Deprecated] Claroty via AMA](../connectors/clarotyama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

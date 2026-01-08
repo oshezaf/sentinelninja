@@ -32,10 +32,12 @@ Installing this solution will deploy two data connectors,
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [Common Event Format (CEF)](../connectors/cef.md)
-- [Common Event Format (CEF) via AMA](../connectors/cefama.md)
+- [Common Event Format (CEF) via AMA](../connectors/cefama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

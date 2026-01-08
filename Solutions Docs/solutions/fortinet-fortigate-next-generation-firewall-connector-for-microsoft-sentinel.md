@@ -27,10 +27,12 @@ Gain insight into your organization's network and improve your security operatio
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Fortinet via Legacy Agent](../connectors/fortinet.md)
-- [[Deprecated] Fortinet via AMA](../connectors/fortinetama.md)
+- [[Deprecated] Fortinet via Legacy Agent](../connectors/fortinet.md) ⚠️
+- [[Deprecated] Fortinet via AMA](../connectors/fortinetama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

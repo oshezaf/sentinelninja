@@ -19,13 +19,15 @@ The Threat Intelligence solution contains data connectors for import of supporte
 
 ## Data Connectors
 
-This solution provides **5 data connector(s)**:
+This solution provides **4 data connector(s)** (plus 1 discovered⚠️):
 
 - [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md)
 - [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md)
 - [Threat Intelligence Platforms](../connectors/threatintelligence.md)
 - [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md)
-- [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md)
+- [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

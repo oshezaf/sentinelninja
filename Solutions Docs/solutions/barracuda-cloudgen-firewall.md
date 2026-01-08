@@ -23,9 +23,11 @@ The [Barracuda CloudGen Firewall ](https://www.barracuda.com/products/cloudgenfi
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md)
+- [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

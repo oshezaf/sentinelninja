@@ -23,9 +23,11 @@ The [Awake Security Arista Networks solution](https://awakesecurity.com/) for Mi
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Awake Security via Legacy Agent](../connectors/aristaawakesecurity.md)
+- [[Deprecated] Awake Security via Legacy Agent](../connectors/aristaawakesecurity.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

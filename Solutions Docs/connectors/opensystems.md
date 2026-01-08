@@ -8,6 +8,8 @@
 | **Collection Method** | Azure Function |
 | **Connector Definition Files** | [OpenSystems.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems/Data%20Connectors/OpenSystems.json) |
 
+> ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 The Open Systems Logs API Microsoft Sentinel Connector provides the capability to ingest Open Systems logs into Microsoft Sentinel using Open Systems Logs API.
 
 ## Tables Ingested

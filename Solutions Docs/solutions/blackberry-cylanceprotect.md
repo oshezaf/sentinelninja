@@ -23,9 +23,11 @@ The [Blackberry CylancePROTECT](https://www.blackberry.com/us/en/products/cylanc
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md)
+- [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

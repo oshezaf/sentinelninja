@@ -23,9 +23,11 @@ The [Infoblox Network Identity Operating System (NIOS)](https://www.infoblox.com
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Infoblox NIOS](../connectors/infobloxnios.md)
+- [[Deprecated] Infoblox NIOS](../connectors/infobloxnios.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

@@ -24,9 +24,11 @@ The [Trend Micro Deep Security](https://www.trendmicro.com/en_us/business/produc
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Trend Micro Deep Security via Legacy](../connectors/trendmicro.md)
+- [[Deprecated] Trend Micro Deep Security via Legacy](../connectors/trendmicro.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

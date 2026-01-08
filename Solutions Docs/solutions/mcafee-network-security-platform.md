@@ -23,9 +23,11 @@ The [McAfee Network Security Platform](https://www.trellix.com/en-us/products/in
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] McAfee Network Security Platform](../connectors/mcafeensp.md)
+- [[Deprecated] McAfee Network Security Platform](../connectors/mcafeensp.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

@@ -25,10 +25,12 @@ The [Fortinet FortiWeb Cloud WAF-as-a-Service connector](https://www.fortinet.co
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](../connectors/fortinetfortiweb.md)
+- [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](../connectors/fortinetfortiweb.md) ⚠️
 - [Fortinet FortiWeb Web Application Firewall via AMA](../connectors/fortinetfortiwebama.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

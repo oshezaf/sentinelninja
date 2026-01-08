@@ -23,9 +23,11 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] ISC Bind](../connectors/iscbind.md)
+- [[Deprecated] ISC Bind](../connectors/iscbind.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

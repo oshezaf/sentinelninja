@@ -23,10 +23,12 @@ This solution is dependent on the Common Event Format solution containing the CE
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] OSSEC via Legacy Agent](../connectors/ossec.md)
-- [[Deprecated] OSSEC via AMA](../connectors/ossecama.md)
+- [[Deprecated] OSSEC via Legacy Agent](../connectors/ossec.md) ⚠️
+- [[Deprecated] OSSEC via AMA](../connectors/ossecama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

@@ -23,10 +23,12 @@ The [WireX Systems](https://wirexsystems.com/) solution allows custom dashboards
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[Deprecated] WireX Network Forensics Platform via Legacy Agent](../connectors/wirex-systems-nfp.md)
+- [[Deprecated] WireX Network Forensics Platform via Legacy Agent](../connectors/wirex-systems-nfp.md) ⚠️
 - [[Deprecated] WireX Network Forensics Platform via AMA](../connectors/wirex-systems-nfpama.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

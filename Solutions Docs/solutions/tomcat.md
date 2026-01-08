@@ -23,9 +23,11 @@ The Apache Tomcat solution provides the capability to ingest [Apache Tomcat](htt
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Apache Tomcat](../connectors/apachetomcat.md)
+- [[Deprecated] Apache Tomcat](../connectors/apachetomcat.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

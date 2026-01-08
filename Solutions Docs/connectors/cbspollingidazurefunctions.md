@@ -8,6 +8,8 @@
 | **Collection Method** | Azure Function |
 | **Connector Definition Files** | [CTM360_CBS_API_functionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CBS/CTM360_CBS_API_functionApp.json) |
 
+> ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 Through the API integration, you have the capability to retrieve all the issues related to your CBS organizations via a RESTful interface.
 
 ## Tables Ingested

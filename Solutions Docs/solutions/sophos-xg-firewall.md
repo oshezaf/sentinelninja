@@ -23,9 +23,11 @@ The [Sophos XG Firewall](https://www.sophos.com/products/next-gen-firewall) solu
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Sophos XG Firewall](../connectors/sophosxgfirewall.md)
+- [[Deprecated] Sophos XG Firewall](../connectors/sophosxgfirewall.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

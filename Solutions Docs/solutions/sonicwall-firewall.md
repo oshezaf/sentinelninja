@@ -23,10 +23,12 @@ The [SonicWall Firewall](https://www.sonicwall.com/products/firewalls/) solution
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md)
-- [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md)
+- [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md) ⚠️
+- [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

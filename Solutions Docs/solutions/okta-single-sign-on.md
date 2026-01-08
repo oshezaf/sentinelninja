@@ -33,12 +33,14 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) so
 
 ## Data Connectors
 
-This solution provides **4 data connector(s)**:
+This solution provides **2 data connector(s)** (plus 2 discovered⚠️):
 
 - [Okta Single Sign-On](../connectors/oktasso.md)
-- [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md)
+- [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) ⚠️
 - [Okta Single Sign-On](../connectors/oktassov2.md)
-- [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md)
+- [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

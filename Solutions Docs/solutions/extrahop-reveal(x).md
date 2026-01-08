@@ -23,10 +23,12 @@ The [ExtraHop Reveal(x)](https://www.extrahop.com/products/security/) Solution f
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [[Deprecated] ExtraHop Reveal(x) via Legacy Agent](../connectors/extrahopnetworks.md)
-- [[Deprecated] ExtraHop Reveal(x) via AMA](../connectors/extrahopnetworksama.md)
+- [[Deprecated] ExtraHop Reveal(x) via AMA](../connectors/extrahopnetworksama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

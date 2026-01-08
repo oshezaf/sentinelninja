@@ -25,11 +25,13 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **3 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
-- [Atlassian Confluence](../connectors/atlassianconfluence.md)
-- [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md)
+- [Atlassian Confluence](../connectors/atlassianconfluence.md) ⚠️
+- [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) ⚠️
 - [ Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/confluenceauditccpdefinition.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

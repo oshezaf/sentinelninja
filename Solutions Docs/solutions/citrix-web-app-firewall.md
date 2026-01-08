@@ -23,10 +23,12 @@
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](../connectors/citrixwaf.md)
-- [[Deprecated] Citrix WAF (Web App Firewall) via AMA](../connectors/citrixwafama.md)
+- [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](../connectors/citrixwaf.md) ⚠️
+- [[Deprecated] Citrix WAF (Web App Firewall) via AMA](../connectors/citrixwafama.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

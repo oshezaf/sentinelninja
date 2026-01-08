@@ -25,10 +25,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md)
+- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) ⚠️
 - [Google ApigeeX (via Codeless Connector Framework)](../connectors/googleapigeexlogsccpdefinition.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

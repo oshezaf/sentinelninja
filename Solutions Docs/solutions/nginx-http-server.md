@@ -23,9 +23,11 @@ The [NGINX](https://nginx.org/) HTTP Server data connector provides the capabili
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] NGINX HTTP Server](../connectors/nginxhttpserver.md)
+- [[Deprecated] NGINX HTTP Server](../connectors/nginxhttpserver.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

@@ -23,10 +23,12 @@ This solution is dependent on the Custom logs via AMA connector to collect the l
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [SecurityBridge Solution for SAP](../connectors/securitybridge.md)
-- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md)
+- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

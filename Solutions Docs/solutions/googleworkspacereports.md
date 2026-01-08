@@ -27,10 +27,12 @@ The [Google Workspace](https://workspace.google.com/) solution for Microsoft Sen
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [Google Workspace Activities (via Codeless Connector Framework)](../connectors/googleworkspaceccpdefinition.md)
-- [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md)
+- [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

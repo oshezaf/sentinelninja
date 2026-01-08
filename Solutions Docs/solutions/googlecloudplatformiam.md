@@ -27,10 +27,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [Google Cloud Platform IAM (via Codeless Connector Framework)](../connectors/gcpiamccpdefinition.md)
-- [[DEPRECATED] Google Cloud Platform IAM](../connectors/gcpiamdataconnector.md)
+- [[DEPRECATED] Google Cloud Platform IAM](../connectors/gcpiamdataconnector.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

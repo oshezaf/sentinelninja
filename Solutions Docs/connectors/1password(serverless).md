@@ -8,6 +8,8 @@
 | **Collection Method** | CCF |
 | **Connector Definition Files** | [azuredeploy_1Password_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password/Data%20Connectors/1Password_ccpv2/azuredeploy_1Password_poller_connector.json) |
 
+> ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 The 1Password CCP connector allows the user to ingest 1Password Audit, Signin & ItemUsage events into Microsoft Sentinel.
 
 ## Tables Ingested

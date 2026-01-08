@@ -25,10 +25,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md)
+- [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) ⚠️
 - [Google Cloud Platform DNS (via Codeless Connector Framework)](../connectors/gcpdnslogsccpdefinition.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

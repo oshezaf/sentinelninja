@@ -23,10 +23,12 @@ The iboss Solution provides means to connect your Threat Console to Microsoft Se
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md)
+- [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md) ⚠️
 - [iboss via AMA](../connectors/ibossama.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

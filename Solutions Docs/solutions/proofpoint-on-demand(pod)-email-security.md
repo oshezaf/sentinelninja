@@ -25,10 +25,12 @@ The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md)
-- [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md)
+- [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

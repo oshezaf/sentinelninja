@@ -25,9 +25,11 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md)
+- [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 

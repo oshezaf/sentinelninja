@@ -23,10 +23,12 @@ The Illusive Platform solution for Microsoft Sentinel enables you to ingest Illu
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[Deprecated] Illusive Platform via Legacy Agent](../connectors/illusiveattackmanagementsystem.md)
+- [[Deprecated] Illusive Platform via Legacy Agent](../connectors/illusiveattackmanagementsystem.md) ⚠️
 - [[Deprecated] Illusive Platform via AMA](../connectors/illusiveattackmanagementsystemama.md)
+
+*⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
 ## Tables Reference
 
