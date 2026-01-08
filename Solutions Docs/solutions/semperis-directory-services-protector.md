@@ -31,12 +31,14 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
+| [`Operation`](../tables/operation.md) | - | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | [Semperis Directory Services Protector](../connectors/semperisdsp.md) | Analytics, Workbooks |
+| [`alert`](../tables/alert.md) | - | Workbooks |
 
 ## Content Items
 
@@ -66,9 +68,9 @@ This solution includes **15 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [SemperisDSPADChanges](../content/semperis-directory-services-protector-semperisdspadchanges-b1c49b5b.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [SemperisDSPNotifications](../content/semperis-directory-services-protector-semperisdspnotifications-fcd6b926.md) | [`SecurityEvent`](../tables/securityevent.md) |
-| [SemperisDSPQuickviewDashboard](../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
-| [SemperisDSPSecurityIndicators](../content/semperis-directory-services-protector-semperisdspsecurityindicators-a942a3d9.md) | - |
+| [SemperisDSPNotifications](../content/semperis-directory-services-protector-semperisdspnotifications-fcd6b926.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`alert`](../tables/alert.md) |
+| [SemperisDSPQuickviewDashboard](../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`alert`](../tables/alert.md) |
+| [SemperisDSPSecurityIndicators](../content/semperis-directory-services-protector-semperisdspsecurityindicators-a942a3d9.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [SemperisDSPWorkbook](../content/semperis-directory-services-protector-semperisdspworkbook-523d6926.md) ⚠️ | - |
 | [workbooksMetadata](../content/semperis-directory-services-protector-workbooksmetadata-8e76a455.md) ⚠️ | - |
 

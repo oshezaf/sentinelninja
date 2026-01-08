@@ -26,26 +26,40 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **9 table(s)**:
+This solution uses **22 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | - | Analytics |
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | - | Analytics |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | - | Analytics |
+| [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | - | Analytics |
+| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | - | Workbooks |
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | - | Workbooks |
+| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | - | Workbooks |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | - | Workbooks |
+| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | - | Workbooks |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | - | Workbooks |
+| [`AuditLogs`](../tables/auditlogs.md) | - | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | - | Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics, Hunting, Workbooks |
 | [`DeviceEvents`](../tables/deviceevents.md) | - | Analytics |
-| [`DnsEvents`](../tables/dnsevents.md) | - | Analytics |
-| [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | - | Workbooks |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | - | Workbooks |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | - | Workbooks |
+| [`DnsEvents`](../tables/dnsevents.md) | - | Analytics, Workbooks |
+| [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics, Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | - | Analytics |
-| [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
+| [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Workbooks |
 | [`WindowsEvent`](../tables/windowsevent.md) | - | Analytics |
 
 ### Internal Tables
 
-The following **2 table(s)** are used internally by this solution's playbooks:
+The following **3 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Lumen Defender Threat Feed Data Connector](../connectors/lumenthreatfeedconnector.md) | Analytics, Hunting |
 
@@ -65,7 +79,7 @@ This solution includes **10 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [Lumen TI IPAddress in CommonSecurityLog](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-commonsecuritylog-bc8a262a-5db3-4ac1-8757-519ed36ed929-6c2a7f14.md) | Medium | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Lumen TI IPAddress in DeviceEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-deviceevents-fa566691-42a2-4136-6a8b-ffa3ea510000-675847d2.md) | Medium | CommandAndControl | [`DeviceEvents`](../tables/deviceevents.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) | Medium | CommandAndControl | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) | Medium | CommandAndControl | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`ADFSSignInLogs`](../tables/adfssigninlogs.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Lumen TI IPAddress in OfficeActivity](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-officeactivity-0e96c419-68eb-4235-947e-7e86e136cda0-3117094c.md) | Medium | CommandAndControl | [`OfficeActivity`](../tables/officeactivity.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Lumen TI IPAddress in SecurityEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-securityevents-140a2cb5-4b4a-485c-aab3-2415c24d37e6-27374577.md) | Medium | CommandAndControl | [`SecurityEvent`](../tables/securityevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 | [Lumen TI IPAddress in SigninLogs](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-signinlogs-1425aea5-a9e5-4288-886e-934b90664a91-470061c8.md) | Medium | CommandAndControl | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
@@ -82,7 +96,7 @@ This solution includes **10 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) | [`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md)<br>[`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)<br>[`ASimFileEventLogs`](../tables/asimfileeventlogs.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md)<br>[`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Additional Documentation
 

@@ -10,30 +10,48 @@ Reference for Heartbeat table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/heartbeat) |
 
-## Solutions (6)
+## Solutions (9)
 
 This table is used by the following solutions:
 
+- [CiscoASA](../solutions/ciscoasa.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
+- [Forcepoint NGFW](../solutions/forcepoint-ngfw.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+- [NISTSP80053](../solutions/nistsp80053.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [VMware SASE](../solutions/vmware-sase.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
 
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [Cisco ASA/FTD via AMA](../connectors/ciscoasaama.md)
+
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (9)
 
 ### Analytic Rules (1)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [M2131_AssetStoppedLogging](../content/maturitymodelforeventlogmanagementm2131-m2131-assetstoppedlogging-4be5b645-1d08-49e4-b58d-07294ff19223-416aad3a.md)
 
-### Workbooks (5)
+### Workbooks (8)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 - [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)
+
+**In solution [Forcepoint NGFW](../solutions/forcepoint-ngfw.md):**
+- [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md)
+
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
 **In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
 - [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md)

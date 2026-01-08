@@ -20,6 +20,7 @@ The [Cisco UCS](https://www.cisco.com/c/en/us/products/servers-unified-computing
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20UCS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20UCS) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 
@@ -31,10 +32,11 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`EVENT`](../tables/event.md) | [[Deprecated] Cisco UCS](../connectors/ciscoucs.md) | - |
 | [`Syslog`](../tables/syslog.md) | [[Deprecated] Cisco UCS](../connectors/ciscoucs.md) | - |
 
 ## Content Items

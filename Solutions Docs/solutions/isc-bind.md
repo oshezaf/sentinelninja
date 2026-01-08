@@ -20,6 +20,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ISC%20Bind](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ISC%20Bind) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

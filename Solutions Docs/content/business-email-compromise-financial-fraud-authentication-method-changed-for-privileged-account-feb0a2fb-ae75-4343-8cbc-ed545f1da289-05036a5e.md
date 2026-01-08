@@ -14,6 +14,12 @@ Identifies authentication methods being changed for a privileged account. This c
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md), [BehaviorAnalytics](../connectors/behavioranalytics.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud/Analytic%20Rules/AuthenticationMethodChangedforPrivilegedAccount.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`IdentityInfo`](../tables/identityinfo.md)
+
 ---
 
 **Browse:**

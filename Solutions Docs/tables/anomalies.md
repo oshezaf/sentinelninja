@@ -10,16 +10,24 @@ Reference for Anomalies table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/anomalies) |
 
-## Solutions (2)
+## Solutions (4)
 
 This table is used by the following solutions:
 
+- [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
+- [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (11)
+
+### Analytic Rules (2)
+
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
+- [Anomalous sign-in location by user account and authenticating application](../content/microsoft-entra-id-anomalous-sign-in-location-by-user-account-and-authenticating-application-7cb8f77d-c52f-4e46-b82f-3cf2e106224a-c5368fb1.md)
+- [Brute Force Attack against GitHub Account](../content/microsoft-entra-id-brute-force-attack-against-github-account-97ad74c4-fdd9-4a3f-b6bf-5e28f4f71e06-409b9696.md)
 
 ### Hunting Queries (6)
 
@@ -31,7 +39,10 @@ This table is used by the following solutions:
 - [UEBA Multi-Source Anomalous Activity Overview](../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.md)
 - [User-Centric Anomaly Investigation](../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.md)
 
-### Workbooks (2)
+### Workbooks (3)
+
+**In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
+- [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AnomaliesVisualization](../content/soc-handbook-anomaliesvisualization-8cb75567.md)

@@ -20,6 +20,7 @@ The Endace (https://www.endace.com) solution for Microsoft Sentinel enables you 
 | **Author** | Endace - support@endace.com |
 | **First Published** | 2025-03-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endace) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

@@ -10,6 +10,7 @@
 
 This content item queries data from the following tables:
 
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
 - [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
 - [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
 - [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
@@ -21,12 +22,19 @@ This content item queries data from the following tables:
 - [`LAQueryLogs`](../tables/laquerylogs.md)
 - [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
+- [`Operation`](../tables/operation.md)
 - [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)
+- [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md)
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+- [`SecurityIncident`](../tables/securityincident.md)
 - [`SigninLogs`](../tables/signinlogs.md)
 - [`SquidProxy_CL`](../tables/squidproxy-cl.md)
+- [`Syslog`](../tables/syslog.md)
+- [`Update`](../tables/update.md)
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)
 - [`W3CIISLog`](../tables/w3ciislog.md)
+- [`anomalies`](../tables/anomalies.md)
 - [`barracuda_CL`](../tables/barracuda-cl.md)
 - [`meraki_CL`](../tables/meraki-cl.md)
 

@@ -6,7 +6,7 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 
-## Solutions (25)
+## Solutions (29)
 
 This table is used by the following solutions:
 
@@ -16,6 +16,8 @@ This table is used by the following solutions:
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
+- [DORA Compliance](../solutions/dora-compliance.md)
+- [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
 - [Infoblox](../solutions/infoblox.md)
 - [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
@@ -29,10 +31,12 @@ This table is used by the following solutions:
 - [ReversingLabs](../solutions/reversinglabs.md)
 - [SIGNL4](../solutions/signl4.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [SOC-Process-Framework](../solutions/soc-process-framework.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
+- [ThreatConnect](../solutions/threatconnect.md)
 - [Vectra XDR](../solutions/vectra-xdr.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
@@ -45,14 +49,14 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (34)
+## Content Items Using This Table (39)
 
 ### Analytic Rules (1)
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db-6bbae8c7.md)
 
-### Workbooks (32)
+### Workbooks (36)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)
@@ -71,6 +75,12 @@ This table is ingested by the following connectors:
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 - [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
+
+**In solution [DORA Compliance](../solutions/dora-compliance.md):**
+- [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)
+
+**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
+- [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 - [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md)
@@ -115,6 +125,9 @@ This table is ingested by the following connectors:
 - [SecurityOperationsEfficiency](../content/soc-handbook-securityoperationsefficiency-d083776e.md)
 - [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md)
 
+**In solution [SOC-Process-Framework](../solutions/soc-process-framework.md):**
+- [SOCProcessFramework](../content/soc-process-framework-socprocessframework-5c770df0.md)
+
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
 - [IncidentOverview](../content/sentinelsoaressentials-incidentoverview-c5ea1b65.md)
 - [IncidentTasksWorkbook](../content/sentinelsoaressentials-incidenttasksworkbook-37a89581.md)
@@ -128,6 +141,9 @@ This table is ingested by the following connectors:
 
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
 - [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md)
+
+**In solution [ThreatConnect](../solutions/threatconnect.md):**
+- [ThreatConnectOverview](../content/threatconnect-threatconnectoverview-c70716b8.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)

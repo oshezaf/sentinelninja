@@ -1,6 +1,6 @@
 # SquidProxy_CL
 
-## Solutions (10)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -8,6 +8,7 @@ This table is used by the following solutions:
 - [CustomLogsAma](../solutions/customlogsama.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
+- [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Recorded Future](../solutions/recorded-future.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [SquidProxy](../solutions/squidproxy.md)
@@ -24,15 +25,18 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (37)
+## Content Items Using This Table (38)
 
-### Analytic Rules (23)
+### Analytic Rules (24)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [User agent search for log4j exploitation attempt](../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.md)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 - [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.md)
+
+**In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
+- [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md)
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting Url All Actors](../content/recorded-future-recordedfuture-threat-hunting-url-all-actors-3f6f0d1a-f2f9-4e01-881a-c55a4a71905b-8b23fa82.md)

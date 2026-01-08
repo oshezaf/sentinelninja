@@ -25,11 +25,20 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureActivity`](../tables/azureactivity.md) | [Azure Activity](../connectors/azureactivity.md) | Analytics, Hunting, Workbooks |
+| [`Update`](../tables/update.md) | - | Hunting |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's playbooks:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`IdentityInfo`](../tables/identityinfo.md) | - | Analytics |
 
 ## Content Items
 
@@ -57,7 +66,7 @@ This solution includes **31 content item(s)**:
 | [Rare subscription-level operations in Azure](../content/azure-activity-rare-subscription-level-operations-in-azure-23de46ea-c425-4a77-b456-511ae4855d69-121f6490.md) | Low | CredentialAccess, Persistence | [`AzureActivity`](../tables/azureactivity.md) |
 | [Subscription moved to another tenant](../content/azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.md) | Low | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Suspicious Resource deployment](../content/azure-activity-suspicious-resource-deployment-9fb57e58-3ed8-4b89-afcf-c8e786508b1c-a84aefba.md) | Low | Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Suspicious granting of permissions to an account](../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.md) | Medium | Persistence, PrivilegeEscalation | [`AzureActivity`](../tables/azureactivity.md) |
+| [Suspicious granting of permissions to an account](../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.md) | Medium | Persistence, PrivilegeEscalation | [`AzureActivity`](../tables/azureactivity.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [Suspicious number of resource creation or deployment activities](../content/azure-activity-suspicious-number-of-resource-creation-or-deployment-activities-361dd1e3-1c11-491e-82a3-bb2e44ac36ba-812975d5.md) | Medium | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 
 ### Hunting Queries
@@ -78,7 +87,7 @@ This solution includes **31 content item(s)**:
 | [Microsoft Sentinel Connectors Administrative Operations](../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Microsoft Sentinel Workbooks Administrative Operations](../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Port opened for an Azure Resource](../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.md) | CommandAndControl, Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Rare Custom Script Extension](../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.md) | Execution | [`AzureActivity`](../tables/azureactivity.md) |
+| [Rare Custom Script Extension](../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.md) | Execution | [`AzureActivity`](../tables/azureactivity.md)<br>[`Update`](../tables/update.md) |
 
 ### Workbooks
 

@@ -20,6 +20,8 @@
 This content item queries data from the following tables:
 
 - [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
+- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
+- [`AzureDiagnostics`](../tables/azurediagnostics.md)
 
 ---
 

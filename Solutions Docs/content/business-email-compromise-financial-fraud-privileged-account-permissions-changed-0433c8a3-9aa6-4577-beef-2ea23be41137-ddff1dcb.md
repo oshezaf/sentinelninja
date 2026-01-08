@@ -14,6 +14,12 @@ Detects changes to permissions assigned to admin users. Threat actors may try an
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md), [BehaviorAnalytics](../connectors/behavioranalytics.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud/Analytic%20Rules/PrivilegedAccountPermissionsChanged.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`IdentityInfo`](../tables/identityinfo.md)
+
 ---
 
 **Browse:**

@@ -20,6 +20,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-06-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoSEG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoSEG) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

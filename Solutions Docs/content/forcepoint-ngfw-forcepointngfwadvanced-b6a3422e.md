@@ -12,7 +12,9 @@
 
 This content item queries data from the following tables:
 
+- [`Alert`](../tables/alert.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+- [`Heartbeat`](../tables/heartbeat.md)
 - [`Perf`](../tables/perf.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 

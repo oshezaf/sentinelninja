@@ -14,13 +14,14 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [ASIM normalized DNS schema](https://learn.microsoft.com/en-us/azure/sentinel/dns-ama-fields#asim-normalized-dns-schema) - describes the mapping of Windows DNS server fields into the normalized field names as they appear in the [DNS normalization schema](https://learn.microsoft.com/azure/sentinel/normalization-schema-dns#schema-details)
 
-## Solutions (8)
+## Solutions (9)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
+- [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Recorded Future](../solutions/recorded-future.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -44,7 +45,7 @@ The following EventVendor/EventProduct values are used by connectors ingesting t
 
 ---
 
-## Content Items Using This Table (30)
+## Content Items Using This Table (31)
 
 ### Analytic Rules (15)
 
@@ -93,10 +94,13 @@ The following EventVendor/EventProduct values are used by connectors ingesting t
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting Domain All Actors](../content/recorded-future-recordedfuture-threat-hunting-domain-all-actors-d641a534-ead8-41aa-a7c8-2b35e6b64c9f-095de712.md)
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md)
+
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)

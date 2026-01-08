@@ -10,7 +10,7 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity) |
 
-## Solutions (22)
+## Solutions (25)
 
 This table is used by the following solutions:
 
@@ -29,6 +29,8 @@ This table is used by the following solutions:
 - [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
+- [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Teams](../solutions/teams.md)
@@ -36,6 +38,7 @@ This table is used by the following solutions:
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
+- [Zinc Open Source](../solutions/zinc-open-source.md)
 
 ## Connectors (1)
 
@@ -45,12 +48,13 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (73)
+## Content Items Using This Table (84)
 
-### Analytic Rules (29)
+### Analytic Rules (34)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
+- [User agent search for log4j exploitation attempt](../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.md)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 - [Malicious BEC Inbox Rule](../content/business-email-compromise-financial-fraud-malicious-bec-inbox-rule-8ac77493-3cae-4840-8634-15fb23f8fb68-ae4ecd95.md)
@@ -87,22 +91,31 @@ This table is ingested by the following connectors:
 - [Dataverse - Mass download from SharePoint document management](../content/microsoft-business-applications-dataverse-mass-download-from-sharepoint-document-management-95e02f1b-5886-4043-8f0e-a42e6e23330f-26e23cc8.md)
 - [Dataverse - New user agent type that was not used with Office 365](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-with-office-365-094b3c0a-1f63-42f7-9535-c8c7b7198328-ba0f47d1.md)
 
+**In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
+- [New UserAgent observed in last 24 hours](../content/network-threat-protection-essentials-new-useragent-observed-in-last-24-hours-b725d62c-eb77-42ff-96f6-bdc6745fc6e0-a94f1913.md)
+
 **In solution [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md):**
 - [Threat Essentials - Mail redirect via ExO transport rule](../content/securitythreatessentialsolution-threat-essentials-mail-redirect-via-exo-transport-rule-d7c575b2-84f5-48cb-92c5-70d7e8246284-30414fca.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map Email entity to OfficeActivity](../content/threat-intelligence-ti-map-email-entity-to-officeactivity-4a3f5ed7-8da5-4ce2-af6f-c9ada45060f2-5a438de0.md)
+- [TI map IP entity to OfficeActivity](../content/threat-intelligence-ti-map-ip-entity-to-officeactivity-f15370f4-c6fa-42c5-9be4-1d308f40284e-72906e4b.md)
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 - [TI map Email entity to OfficeActivity](../content/threat-intelligence-new-ti-map-email-entity-to-officeactivity-795d43a3-6edc-4c99-971f-00d05841e5ac-5834b2a5.md)
+- [TI map IP entity to OfficeActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-officeactivity-f50280e5-5eb1-4e95-99fd-9d584a987bdd-0c3d2238.md)
 
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
 - [ThreatConnect TI Map URL Entity to OfficeActivity Data](../content/threatconnect-threatconnect-ti-map-url-entity-to-officeactivity-data-12c3b31b-66a6-53ff-b6ab-6ae45e56dc92-426bca4a.md)
 - [ThreatConnect TI map Email entity to OfficeActivity](../content/threatconnect-threatconnect-ti-map-email-entity-to-officeactivity-4f7ade3e-7121-5274-83ea-d7ed22a01fea-d74546e3.md)
 
-### Hunting Queries (29)
+**In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
+- [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
+
+### Hunting Queries (32)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
+- [Email Forwarding Configuration with SAP download](../content/business-email-compromise-financial-fraud-email-forwarding-configuration-with-sap-download-0576750e-6b61-4545-845f-f5b8f29a0cc4-0b297ea9.md)
 - [Office Mail Rule Creation with suspicious archive mail move activity](../content/business-email-compromise-financial-fraud-office-mail-rule-creation-with-suspicious-archive-mail-move-ac-f50a26d7-ffdb-4471-90b9-3be78c60e4f2-4287ee6e.md)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
@@ -135,7 +148,11 @@ This table is ingested by the following connectors:
 - [SharePointFileOperation via devices with previously unseen user agents](../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-f2367171-1514-4c67-88ef-27434b6a1093-8d3d8113.md)
 - [SharePointFileOperation via previously unseen IPs](../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-e3d24cfd-b2a1-4ba7-8f80-0360892f9d57-bf177f44.md)
 - [User added to Teams and immediately uploads file](../content/microsoft-365-user-added-to-teams-and-immediately-uploads-file-3d6d0c04-7337-40cf-ace6-c471d442356d-ae882f16.md)
+- [User made Owner of multiple teams](../content/microsoft-365-user-made-owner-of-multiple-teams-558f15dd-3171-4b11-bf24-31c0610a20e0-775b29b2.md)
 - [Windows Reserved Filenames staged on Office file services](../content/microsoft-365-windows-reserved-filenames-staged-on-office-file-services-61c28cd7-3139-4731-8ea7-2cbbeabb4684-b20eb95c.md)
+
+**In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
+- [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map File Entity to OfficeActivity Event](../content/threat-intelligence-ti-map-file-entity-to-officeactivity-event-410da56d-4a63-4d22-b68c-9fb1a303be6d-69933815.md)
@@ -143,7 +160,10 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 - [TI Map File Entity to OfficeActivity Event](../content/threat-intelligence-new-ti-map-file-entity-to-officeactivity-event-bbdb951c-9aba-4d66-85df-f564a1f86881-bfe1f81a.md)
 
-### Workbooks (15)
+### Workbooks (18)
+
+**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
+- [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md)
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 - [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
@@ -153,6 +173,9 @@ This table is ingested by the following connectors:
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 - [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md)
+
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)
@@ -174,6 +197,9 @@ This table is ingested by the following connectors:
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 - [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)

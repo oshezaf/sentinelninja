@@ -32,6 +32,7 @@ The Web Shells Threat Protection solution contains security content that helps p
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-22 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-microsoft365defender, azuresentinel.azure-sentinel-solution-securityevents, azuresentinel.azure-sentinel-solution-azurewebapplicationfirewal |
 
 ## Data Connectors
 
@@ -46,9 +47,17 @@ This solution queries **4 table(s)** from its content items:
 | Table | Used By Content |
 |-------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Hunting |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | Hunting |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | Analytics, Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | Analytics |
 | [`W3CIISLog`](../tables/w3ciislog.md) | Analytics, Hunting |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's playbooks:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`SecurityAlert`](../tables/securityalert.md) | Analytics |
 
 ## Content Items
 
@@ -63,8 +72,8 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Identify SysAid Server web shell creation](../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md) | High | InitialAccess | [`SecurityEvent`](../tables/securityevent.md) |
-| [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.md) | Medium | Persistence | [`W3CIISLog`](../tables/w3ciislog.md) |
+| [Identify SysAid Server web shell creation](../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md) | High | InitialAccess | [`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.md) | Medium | Persistence | [`W3CIISLog`](../tables/w3ciislog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [SUPERNOVA webshell](../content/web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8-79d870d5.md) | High | Persistence, CommandAndControl | [`W3CIISLog`](../tables/w3ciislog.md) |
 
 ### Hunting Queries

@@ -25,7 +25,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **14 table(s)**:
+This solution uses **16 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -34,24 +34,28 @@ This solution uses **14 table(s)**:
 | [`AADProvisioningLogs`](../tables/aadprovisioninglogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | - |
 | [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | Workbooks |
 | [`AADRiskyUsers`](../tables/aadriskyusers.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | - |
-| [`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | - |
+| [`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | Workbooks |
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | Workbooks |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | - |
 | [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | Analytics |
 | [`AuditLogs`](../tables/auditlogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | Analytics, Workbooks |
 | [`DeviceInfo`](../tables/deviceinfo.md) | - | Analytics |
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | - |
+| [`Operation`](../tables/operation.md) | - | Workbooks |
 | [`SignInLogs`](../tables/signinlogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | - |
 | [`SigninLogs`](../tables/signinlogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | Analytics, Workbooks |
+| [`Update`](../tables/update.md) | - | Workbooks |
 
 ### Internal Tables
 
-The following **2 table(s)** are used internally by this solution's playbooks:
+The following **4 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`Anomalies`](../tables/anomalies.md) | - | Analytics |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | - | Analytics |
 | [`IdentityInfo`](../tables/identityinfo.md) | - | Analytics |
+| [`anomalies`](../tables/anomalies.md) | - | Analytics |
 
 ## Content Items
 
@@ -70,14 +74,14 @@ This solution includes **87 content item(s)**:
 | [Account Created and Deleted in Short Timeframe](../content/microsoft-entra-id-account-created-and-deleted-in-short-timeframe-bb616d82-108f-47d3-9dec-9652ea0d3bf6-8d7ac424.md) | High | InitialAccess | [`AuditLogs`](../tables/auditlogs.md) |
 | [Account created or deleted by non-approved user](../content/microsoft-entra-id-account-created-or-deleted-by-non-approved-user-6d63efa6-7c25-4bd4-a486-aa6bf50fde8a-141ffd02.md) | Medium | InitialAccess | [`AuditLogs`](../tables/auditlogs.md) |
 | [Admin promotion after Role Management Application Permission Grant](../content/microsoft-entra-id-admin-promotion-after-role-management-application-permission-grant-f80d951a-eddc-4171-b9d0-d616bb83efdc-dd72791a.md) | High | PrivilegeEscalation, Persistence | [`AuditLogs`](../tables/auditlogs.md) |
-| [Anomalous sign-in location by user account and authenticating application](../content/microsoft-entra-id-anomalous-sign-in-location-by-user-account-and-authenticating-application-7cb8f77d-c52f-4e46-b82f-3cf2e106224a-c5368fb1.md) | Medium | InitialAccess | - |
-| [Attempt to bypass conditional access rule in Microsoft Entra ID](../content/microsoft-entra-id-attempt-to-bypass-conditional-access-rule-in-microsoft-entra-id-3af9285d-bb98-4a35-ad29-5ea39ba0c628-6f5f2339.md) | Low | InitialAccess, Persistence | - |
-| [Attempts to sign in to disabled accounts](../content/microsoft-entra-id-attempts-to-sign-in-to-disabled-accounts-75ea5c39-93e5-489b-b1e1-68fa6c9d2d04-3d398bd3.md) | Medium | InitialAccess | - |
+| [Anomalous sign-in location by user account and authenticating application](../content/microsoft-entra-id-anomalous-sign-in-location-by-user-account-and-authenticating-application-7cb8f77d-c52f-4e46-b82f-3cf2e106224a-c5368fb1.md) | Medium | InitialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md) |
+| [Attempt to bypass conditional access rule in Microsoft Entra ID](../content/microsoft-entra-id-attempt-to-bypass-conditional-access-rule-in-microsoft-entra-id-3af9285d-bb98-4a35-ad29-5ea39ba0c628-6f5f2339.md) | Low | InitialAccess, Persistence | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [Attempts to sign in to disabled accounts](../content/microsoft-entra-id-attempts-to-sign-in-to-disabled-accounts-75ea5c39-93e5-489b-b1e1-68fa6c9d2d04-3d398bd3.md) | Medium | InitialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Authentication Methods Changed for Privileged Account](../content/microsoft-entra-id-authentication-methods-changed-for-privileged-account-694c91ee-d606-4ba9-928e-405a2dd0ff0f-513c9e02.md) | High | Persistence | *Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [Azure Portal sign in from another Azure Tenant](../content/microsoft-entra-id-azure-portal-sign-in-from-another-azure-tenant-87210ca1-49a4-4a7d-bb4a-4988752f978c-d9307cff.md) | Medium | InitialAccess | - |
 | [Azure RBAC (Elevate Access)](../content/microsoft-entra-id-azure-rbac-elevate-access-132fdff4-c044-4855-a390-c1b71e0f833b-647564ba.md) | High | PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
-| [Brute Force Attack against GitHub Account](../content/microsoft-entra-id-brute-force-attack-against-github-account-97ad74c4-fdd9-4a3f-b6bf-5e28f4f71e06-409b9696.md) | Medium | CredentialAccess | - |
-| [Brute force attack against Azure Portal](../content/microsoft-entra-id-brute-force-attack-against-azure-portal-28b42356-45af-40a6-a0b4-a554cdfd5d8a-5dc74411.md) | Medium | CredentialAccess | - |
+| [Brute Force Attack against GitHub Account](../content/microsoft-entra-id-brute-force-attack-against-github-account-97ad74c4-fdd9-4a3f-b6bf-5e28f4f71e06-409b9696.md) | Medium | CredentialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md) |
+| [Brute force attack against Azure Portal](../content/microsoft-entra-id-brute-force-attack-against-azure-portal-28b42356-45af-40a6-a0b4-a554cdfd5d8a-5dc74411.md) | Medium | CredentialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Brute force attack against a Cloud PC](../content/microsoft-entra-id-brute-force-attack-against-a-cloud-pc-3fbc20a4-04c4-464e-8fcb-6667f53e4987-a1e86b1d.md) | Medium | CredentialAccess | [`SigninLogs`](../tables/signinlogs.md) |
 | [Bulk Changes to Privileged Account Permissions](../content/microsoft-entra-id-bulk-changes-to-privileged-account-permissions-218f60de-c269-457a-b882-9966632b9dc6-1b16393e.md) | High | PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 | [Conditional Access - A Conditional Access Device platforms condition has changed (the Device platforms condition can be spoofed)](../content/microsoft-entra-id-conditional-access-a-conditional-access-device-platforms-condition-has-changed-the-de-e3368079-a2c0-4f1c-9fb7-287e907393ef-136313dd.md) | Low | DefenseEvasion | [`AuditLogs`](../tables/auditlogs.md) |
@@ -97,15 +101,15 @@ This solution includes **87 content item(s)**:
 | [Cross-tenant Access Settings Organization Outbound Collaboration Settings Changed](../content/microsoft-entra-id-cross-tenant-access-settings-organization-outbound-collaboration-settings-changed-229f71ba-d83b-42a5-b83b-11a641049ed1-42360945.md) | Medium | InitialAccess, Persistence, Discovery | [`AuditLogs`](../tables/auditlogs.md) |
 | [Cross-tenant Access Settings Organization Outbound Direct Settings Changed](../content/microsoft-entra-id-cross-tenant-access-settings-organization-outbound-direct-settings-changed-0101e08d-99cd-4a97-a9e0-27649c4369ad-74ca33b7.md) | Medium | InitialAccess, Persistence, Discovery | [`AuditLogs`](../tables/auditlogs.md) |
 | [Distributed Password cracking attempts in Microsoft Entra ID](../content/microsoft-entra-id-distributed-password-cracking-attempts-in-microsoft-entra-id-bfb1c90f-8006-4325-98be-c7fffbc254d6-6613a279.md) | Medium | CredentialAccess | - |
-| [External guest invitation followed by Microsoft Entra ID PowerShell signin](../content/microsoft-entra-id-external-guest-invitation-followed-by-microsoft-entra-id-powershell-signin-acc4c247-aaf7-494b-b5da-17f18863878a-4c59ca84.md) | Medium | InitialAccess, Persistence, Discovery | [`AuditLogs`](../tables/auditlogs.md) |
-| [Failed login attempts to Azure Portal](../content/microsoft-entra-id-failed-login-attempts-to-azure-portal-223db5c1-1bf8-47d8-8806-bed401b356a4-7bb79ab2.md) | Low | CredentialAccess | - |
+| [External guest invitation followed by Microsoft Entra ID PowerShell signin](../content/microsoft-entra-id-external-guest-invitation-followed-by-microsoft-entra-id-powershell-signin-acc4c247-aaf7-494b-b5da-17f18863878a-4c59ca84.md) | Medium | InitialAccess, Persistence, Discovery | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [Failed login attempts to Azure Portal](../content/microsoft-entra-id-failed-login-attempts-to-azure-portal-223db5c1-1bf8-47d8-8806-bed401b356a4-7bb79ab2.md) | Low | CredentialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [First access credential added to Application or Service Principal where no credential was present](../content/microsoft-entra-id-first-access-credential-added-to-application-or-service-principal-where-no-credential-2cfc3c6e-f424-4b88-9cc9-c89f482d016a-ec11980a.md) | High | DefenseEvasion | [`AuditLogs`](../tables/auditlogs.md) |
-| [GitHub Signin Burst from Multiple Locations](../content/microsoft-entra-id-github-signin-burst-from-multiple-locations-d3980830-dd9d-40a5-911f-76b44dfdce16-ec9e6001.md) | Medium | CredentialAccess | - |
+| [GitHub Signin Burst from Multiple Locations](../content/microsoft-entra-id-github-signin-burst-from-multiple-locations-d3980830-dd9d-40a5-911f-76b44dfdce16-ec9e6001.md) | Medium | CredentialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Guest accounts added in Entra ID Groups other than the ones specified](../content/microsoft-entra-id-guest-accounts-added-in-entra-id-groups-other-than-the-ones-specified-6ab1f7b2-61b8-442f-bc81-96afe7ad8c53-a7fe96f3.md) | High | InitialAccess, Persistence, Discovery | [`AuditLogs`](../tables/auditlogs.md) |
 | [MFA Rejected by User](../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.md) | Medium | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [MFA Spamming followed by Successful login](../content/microsoft-entra-id-mfa-spamming-followed-by-successful-login-a8cc6d5c-4e7e-4b48-b4ac-d8a116c62a8b-5935aa09.md) | High | CredentialAccess | [`SigninLogs`](../tables/signinlogs.md) |
 | [Mail.Read Permissions Granted to Application](../content/microsoft-entra-id-mail.read-permissions-granted-to-application-2560515c-07d1-434e-87fb-ebe3af267760-50b99956.md) | Medium | Persistence | [`AuditLogs`](../tables/auditlogs.md) |
-| [Microsoft Entra ID PowerShell accessing non-Entra ID resources](../content/microsoft-entra-id-microsoft-entra-id-powershell-accessing-non-entra-id-resources-50574fac-f8d1-4395-81c7-78a463ff0c52-6172797f.md) | Low | InitialAccess | - |
+| [Microsoft Entra ID PowerShell accessing non-Entra ID resources](../content/microsoft-entra-id-microsoft-entra-id-powershell-accessing-non-entra-id-resources-50574fac-f8d1-4395-81c7-78a463ff0c52-6172797f.md) | Low | InitialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Microsoft Entra ID Role Management Permission Grant](../content/microsoft-entra-id-microsoft-entra-id-role-management-permission-grant-1ff56009-db01-4615-8211-d4fda21da02d-2754d79c.md) | High | Persistence, Impact | [`AuditLogs`](../tables/auditlogs.md) |
 | [Modified domain federation trust settings](../content/microsoft-entra-id-modified-domain-federation-trust-settings-95dc4ae3-e0f2-48bd-b996-cdd22b90f9af-cb9684ef.md) | High | CredentialAccess, Persistence, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 | [Multiple admin membership removals from newly created admin.](../content/microsoft-entra-id-multiple-admin-membership-removals-from-newly-created-admin.-cda5928c-2c1e-4575-9dfa-07568bc27a4f-ebb84fce.md) | Medium | Impact | [`AuditLogs`](../tables/auditlogs.md) |
@@ -121,21 +125,21 @@ This solution includes **87 content item(s)**:
 | [New onmicrosoft domain added to tenant](../content/microsoft-entra-id-new-onmicrosoft-domain-added-to-tenant-4f42b94f-b210-42d1-a023-7fa1c51d969f-9b50862e.md) | Medium | ResourceDevelopment | [`AuditLogs`](../tables/auditlogs.md) |
 | [PIM Elevation Request Rejected](../content/microsoft-entra-id-pim-elevation-request-rejected-7d7e20f8-3384-4b71-811c-f5e950e8306c-aad39230.md) | High | Persistence | [`AuditLogs`](../tables/auditlogs.md) |
 | [Password spray attack against ADFSSignInLogs](../content/microsoft-entra-id-password-spray-attack-against-adfssigninlogs-5533fe80-905e-49d5-889a-df27d2c3976d-bc003e0d.md) | Medium | CredentialAccess | [`ADFSSignInLogs`](../tables/adfssigninlogs.md) |
-| [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) | Medium | CredentialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |
-| [Password spray attack against Microsoft Entra ID application](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-application-48607a29-a26a-4abf-8078-a06dbdd174a4-abc69084.md) | Medium | CredentialAccess | - |
+| [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) | Medium | CredentialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [Password spray attack against Microsoft Entra ID application](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-application-48607a29-a26a-4abf-8078-a06dbdd174a4-abc69084.md) | Medium | CredentialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) | Medium | Persistence | [`AuditLogs`](../tables/auditlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
-| [Privileged Accounts - Sign in Failure Spikes](../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.md) | High | InitialAccess | *Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
+| [Privileged Accounts - Sign in Failure Spikes](../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.md) | High | InitialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`anomalies`](../tables/anomalies.md) |
 | [Privileged Role Assigned Outside PIM](../content/microsoft-entra-id-privileged-role-assigned-outside-pim-269435e3-1db8-4423-9dfc-9bf59997da1c-d87cbe19.md) | Low | PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 | [Rare application consent](../content/microsoft-entra-id-rare-application-consent-83ba3057-9ea3-4759-bf6a-933f2e5bc7ee-a30dee09.md) | Medium | Persistence, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 | [Sign-ins from IPs that attempt sign-ins to disabled accounts](../content/microsoft-entra-id-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-500c103a-0319-4d56-8e99-3cec8d860757-7cb25dd6.md) | Medium | InitialAccess, Persistence | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
 | [Successful logon from IP and failure from a different IP](../content/microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.md) | Medium | CredentialAccess, InitialAccess | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [Suspicious Entra ID Joined Device Update](../content/microsoft-entra-id-suspicious-entra-id-joined-device-update-3a3c6835-0086-40ca-b033-a93bf26d878f-b40b663f.md) | Medium | CredentialAccess | [`AuditLogs`](../tables/auditlogs.md) |
 | [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) | Low | CredentialAccess, PrivilegeEscalation, InitialAccess | [`AuditLogs`](../tables/auditlogs.md) |
-| [Suspicious Sign In Followed by MFA Modification](../content/microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.md) | Medium | InitialAccess, DefenseEvasion | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
+| [Suspicious Sign In Followed by MFA Modification](../content/microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.md) | Medium | InitialAccess, DefenseEvasion | [`AuditLogs`](../tables/auditlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
 | [Suspicious application consent for offline access](../content/microsoft-entra-id-suspicious-application-consent-for-offline-access-3533f74c-9207-4047-96e2-0eb9383be587-fa7e45f8.md) | Low | CredentialAccess | [`AuditLogs`](../tables/auditlogs.md) |
 | [Suspicious application consent similar to O365 Attack Toolkit](../content/microsoft-entra-id-suspicious-application-consent-similar-to-o365-attack-toolkit-f948a32f-226c-4116-bddd-d95e91d97eb9-f8a2446b.md) | High | CredentialAccess, DefenseEvasion | [`AuditLogs`](../tables/auditlogs.md) |
 | [Suspicious application consent similar to PwnAuth](../content/microsoft-entra-id-suspicious-application-consent-similar-to-pwnauth-39198934-62a0-4781-8416-a81265c03fd6-18583afd.md) | Medium | CredentialAccess, DefenseEvasion | [`AuditLogs`](../tables/auditlogs.md) |
-| [User Accounts - Sign in Failure due to CA Spikes](../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.md) | Medium | InitialAccess | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
+| [User Accounts - Sign in Failure due to CA Spikes](../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.md) | Medium | InitialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`anomalies`](../tables/anomalies.md) |
 | [User Assigned New Privileged Role](../content/microsoft-entra-id-user-assigned-new-privileged-role-746ddb63-f51b-4563-b449-a8b13cf302ec-dac38182.md) | High | Persistence | [`AuditLogs`](../tables/auditlogs.md) |
 | [User added to Microsoft Entra ID Privileged Groups](../content/microsoft-entra-id-user-added-to-microsoft-entra-id-privileged-groups-4d94d4a9-dc96-410a-8dea-4d4d4584188b-6ad398a6.md) | Medium | Persistence, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 | [[Deprecated] Explicit MFA Deny](../content/microsoft-entra-id-[deprecated]-explicit-mfa-deny-a22740ec-fc1e-4c91-8de6-c29c6450ad00-04320464.md) | Medium | CredentialAccess | [`DeviceInfo`](../tables/deviceinfo.md) |
@@ -145,9 +149,9 @@ This solution includes **87 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzureActiveDirectoryAuditLogs](../content/microsoft-entra-id-azureactivedirectoryauditlogs-03b0be29.md) | [`AuditLogs`](../tables/auditlogs.md) |
+| [AzureActiveDirectoryAuditLogs](../content/microsoft-entra-id-azureactivedirectoryauditlogs-03b0be29.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`Operation`](../tables/operation.md) |
 | [AzureActiveDirectorySignins](../content/microsoft-entra-id-azureactivedirectorysignins-97204667.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
-| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) ⚠️ | [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) ⚠️ | [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md)<br>[`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Update`](../tables/update.md) |
 
 ### Playbooks
 

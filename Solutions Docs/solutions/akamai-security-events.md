@@ -20,6 +20,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-03-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Security%20Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Security%20Events) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

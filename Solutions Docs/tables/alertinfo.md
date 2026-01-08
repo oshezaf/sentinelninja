@@ -11,11 +11,18 @@ Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, 
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertinfo-table) |
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [SentinelOne](../solutions/sentinelone.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [SentinelOne](../connectors/sentinelone.md)
 
 ---
 

@@ -20,6 +20,7 @@ The [Juniper](https://www.juniper.net/) IDP solution provides the capability to 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-03-31 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JuniperIDP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JuniperIDP) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-customlogsviaama |
 
 ## Data Connectors
 

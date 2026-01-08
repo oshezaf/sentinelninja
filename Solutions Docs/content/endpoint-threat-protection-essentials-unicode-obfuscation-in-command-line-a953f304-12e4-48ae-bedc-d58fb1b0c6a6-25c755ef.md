@@ -12,6 +12,13 @@ The query looks for Command Lines that contain non ASCII characaters. Insertion 
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials/Hunting%20Queries/UnicodeObfuscationInCommandLine.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+
 ---
 
 **Browse:**

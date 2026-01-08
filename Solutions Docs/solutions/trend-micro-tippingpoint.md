@@ -20,6 +20,7 @@ The [Trend Micro](https://www.trendmicro.com/en_in/business.html) TippingPoint M
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20TippingPoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20TippingPoint) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

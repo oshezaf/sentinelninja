@@ -43,10 +43,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **7 table(s)**:
+This solution uses **9 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`Event`](../tables/event.md) | - | Workbooks |
+| [`Operation`](../tables/operation.md) | - | Workbooks |
 | [`Syslog`](../tables/syslog.md) | - | Workbooks |
 | [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Workbooks |
 | [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Workbooks |
@@ -54,6 +56,14 @@ This solution uses **7 table(s)**:
 | [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
 | [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
 | [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's playbooks:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`watchlist`](../tables/watchlist.md) | - | Workbooks |
 
 ## Content Items
 
@@ -209,7 +219,7 @@ This solution includes **164 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [VeeamDataPlatformMonitoring](../content/veeam-veeamdataplatformmonitoring-a61e8871.md) | - |
-| [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | [`Syslog`](../tables/syslog.md)<br>[`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md)<br>[`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md)<br>[`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md)<br>[`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md)<br>[`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) |
+| [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | [`Event`](../tables/event.md)<br>[`Operation`](../tables/operation.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md)<br>[`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md)<br>[`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md)<br>[`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md)<br>[`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md)<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) |
 
 ### Playbooks
 

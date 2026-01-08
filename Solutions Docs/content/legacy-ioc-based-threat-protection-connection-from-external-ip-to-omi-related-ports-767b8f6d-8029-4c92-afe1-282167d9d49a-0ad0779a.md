@@ -12,6 +12,14 @@ This query detects attempts to exploit OMI vulnerability (CVE-2021-38647) by ide
 | **Required Connectors** | [AzureNetworkWatcher](../connectors/azurenetworkwatcher.md), [AzureMonitor(VMInsights)](../connectors/azuremonitor-vminsights.md), [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection/Hunting%20Queries/NetworkConnectiontoOMIPorts.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+- [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
+- [`VMConnection`](../tables/vmconnection.md)
+
 ---
 
 **Browse:**

@@ -16,6 +16,7 @@ This query detects the use of the built-in "Dynamics 365 Example Application" to
 
 This content item queries data from the following tables:
 
+- [`DataverseActivity`](../tables/dataverseactivity.md)
 - [`SigninLogs`](../tables/signinlogs.md)
 
 ---

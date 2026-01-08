@@ -15,6 +15,13 @@ The query below identifies dllhost.exe using WMIC to discover additional hosts a
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dev%200270%20Detection%20and%20Hunting/Analytic%20Rules/Dev-0270WMICDiscoverySep2022.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+
 ---
 
 **Browse:**

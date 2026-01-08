@@ -15,6 +15,16 @@
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Analytic%20Rules/Azure%20Firewall%20-%20Abnormal%20Deny%20Rate%20for%20Source%20IP.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
+- [`AZFWFlowTrace`](../tables/azfwflowtrace.md)
+- [`AZFWIdpsSignature`](../tables/azfwidpssignature.md)
+- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
+- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+
 ---
 
 **Browse:**

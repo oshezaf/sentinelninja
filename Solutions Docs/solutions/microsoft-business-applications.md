@@ -35,19 +35,34 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **9 table(s)**:
+This solution uses **24 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AuditLogs`](../tables/auditlogs.md) | - | Analytics |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | - | Analytics |
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | - | Analytics |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | - | Analytics |
+| [`AuditLogs`](../tables/auditlogs.md) | - | Analytics, Hunting |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics |
 | [`DataverseActivity`](../tables/dataverseactivity.md) | - | Analytics, Hunting, Workbooks |
+| [`DeviceEvents`](../tables/deviceevents.md) | - | Analytics, Hunting |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | - | Analytics |
+| [`DeviceInfo`](../tables/deviceinfo.md) | - | Analytics, Hunting |
 | [`EmailEvents`](../tables/emailevents.md) | - | Analytics |
 | [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md) | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics |
 | [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | - | Analytics |
 | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | - | Analytics, Hunting |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
+| [`SquidProxy_CL`](../tables/squidproxy-cl.md) | - | Analytics |
+| [`Syslog`](../tables/syslog.md) | - | Analytics |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
+| [`Update`](../tables/update.md) | - | Analytics |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | - | Analytics |
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) | - | Analytics |
+| [`W3CIISLog`](../tables/w3ciislog.md) | - | Analytics |
+| [`barracuda_CL`](../tables/barracuda-cl.md) | - | Analytics |
+| [`meraki_CL`](../tables/meraki-cl.md) | - | Analytics |
 
 ### Internal Tables
 
@@ -80,13 +95,13 @@ This solution includes **72 content item(s)**:
 | [Dataverse - Audit logging disabled](../content/microsoft-business-applications-dataverse-audit-logging-disabled-ea07523b-e6b8-469b-9e25-cdef1ae6fb45-1a78c3d9.md) | Low | DefenseEvasion | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Bulk record ownership re-assignment or sharing](../content/microsoft-business-applications-dataverse-bulk-record-ownership-re-assignment-or-sharing-6e480329-84bc-409a-b97b-22e8102af3ca-962cb9c9.md) | Medium | PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Executable uploaded to SharePoint document management site](../content/microsoft-business-applications-dataverse-executable-uploaded-to-sharepoint-document-management-site-ba5e608f-7879-4927-8b0d-a9948b4fe6f3-a46cc5a8.md) | Low | Execution, Persistence | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Dataverse - Export activity from terminated or notified employee](../content/microsoft-business-applications-dataverse-export-activity-from-terminated-or-notified-employee-0881b209-62c9-4b15-9f9a-e0c1d1b1eb7b-d925cc5f.md) | Medium | Exfiltration | - |
+| [Dataverse - Export activity from terminated or notified employee](../content/microsoft-business-applications-dataverse-export-activity-from-terminated-or-notified-employee-0881b209-62c9-4b15-9f9a-e0c1d1b1eb7b-d925cc5f.md) | Medium | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Guest user exfiltration following Power Platform defense impairment](../content/microsoft-business-applications-dataverse-guest-user-exfiltration-following-power-platform-defense-impai-39efbf4b-b347-4cc7-895e-99a868bf29ea-f29caf4d.md) | High | DefenseEvasion, Exfiltration | [`AuditLogs`](../tables/auditlogs.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
-| [Dataverse - Hierarchy security manipulation](../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.md) | Medium | PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
+| [Dataverse - Hierarchy security manipulation](../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.md) | Medium | PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`Update`](../tables/update.md) |
 | [Dataverse - Honeypot instance activity](../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.md) | Medium | Discovery, Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
-| [Dataverse - Login by a sensitive privileged user](../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.md) | High | InitialAccess, CredentialAccess, PrivilegeEscalation | - |
+| [Dataverse - Login by a sensitive privileged user](../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.md) | High | InitialAccess, CredentialAccess, PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Login from IP in the block list](../content/microsoft-business-applications-dataverse-login-from-ip-in-the-block-list-666fef96-1bb8-4abf-ad72-e5cb49561381-2bf699c4.md) | High | InitialAccess | - |
-| [Dataverse - Login from IP not in the allow list](../content/microsoft-business-applications-dataverse-login-from-ip-not-in-the-allow-list-81c693fe-f6c4-4352-bc10-3526f6e22637-6a1a9333.md) | High | InitialAccess | - |
+| [Dataverse - Login from IP not in the allow list](../content/microsoft-business-applications-dataverse-login-from-ip-not-in-the-allow-list-81c693fe-f6c4-4352-bc10-3526f6e22637-6a1a9333.md) | High | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Malware found in SharePoint document management site](../content/microsoft-business-applications-dataverse-malware-found-in-sharepoint-document-management-site-2e3878bb-d519-43aa-9992-ea069df099e4-82c1f402.md) | Medium | Execution | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Dataverse - Mass deletion of records](../content/microsoft-business-applications-dataverse-mass-deletion-of-records-716cf6d4-97ad-407b-923e-6790083acb58-2ea9461e.md) | Medium | Impact | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Mass download from SharePoint document management](../content/microsoft-business-applications-dataverse-mass-download-from-sharepoint-document-management-95e02f1b-5886-4043-8f0e-a42e6e23330f-26e23cc8.md) | Low | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md) |
@@ -106,7 +121,7 @@ This solution includes **72 content item(s)**:
 | [Dataverse - TI map IP to DataverseActivity](../content/microsoft-business-applications-dataverse-ti-map-ip-to-dataverseactivity-56d5aa0c-d871-4167-ba13-61c2f0fd17bf-cc32474f.md) | Medium | InitialAccess, LateralMovement, Discovery | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 | [Dataverse - TI map URL to DataverseActivity](../content/microsoft-business-applications-dataverse-ti-map-url-to-dataverseactivity-d88a0e22-3b6a-40c2-af28-c064b44d03b7-bcfd5ea3.md) | Medium | InitialAccess, Execution, Persistence | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 | [Dataverse - Terminated employee exfiltration over email](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-over-email-de039242-47e0-43fa-84d7-b6be24305349-d5733918.md) | High | Exfiltration | [`EmailEvents`](../tables/emailevents.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Dataverse - Terminated employee exfiltration to USB drive](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.md) | High | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
+| [Dataverse - Terminated employee exfiltration to USB drive](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.md) | High | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md) |
 | [Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection](../content/microsoft-business-applications-dataverse-unusual-sign-in-following-disabled-ip-address-based-cookie-bin-d7c9549c-7246-4555-8e53-d7b0db546764-05625607.md) | Medium | DefenseEvasion | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - User bulk retrieval outside normal activity](../content/microsoft-business-applications-dataverse-user-bulk-retrieval-outside-normal-activity-08cb7ffc-59c6-4e7d-88e0-327371c9431b-d673ce2b.md) | Low | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [F&O - Bank account change following network alias reassignment](../content/microsoft-business-applications-f&o-bank-account-change-following-network-alias-reassignment-dccbdb5b-2ce7-4931-bfbe-f1ad6523ee64-3345fbe4.md) | Low | CredentialAccess, LateralMovement, PrivilegeEscalation | [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) |
@@ -117,7 +132,7 @@ This solution includes **72 content item(s)**:
 | [Power Apps - App activity from unauthorized geo](../content/microsoft-business-applications-power-apps-app-activity-from-unauthorized-geo-7ec1e61d-f3b7-4f40-bb1a-357a63913c23-0cf6ffb9.md) | Low | InitialAccess | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Power Apps - Bulk sharing of Power Apps to newly created guest users](../content/microsoft-business-applications-power-apps-bulk-sharing-of-power-apps-to-newly-created-guest-users-943acfa0-9285-4eb0-a9c0-42e36177ef19-41b30b81.md) | Medium | ResourceDevelopment, InitialAccess, LateralMovement | [`AuditLogs`](../tables/auditlogs.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
 | [Power Apps - Multiple apps deleted](../content/microsoft-business-applications-power-apps-multiple-apps-deleted-ed88638d-8627-4c20-ba08-67c13807a9b1-10499cb8.md) | Medium | Impact | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
-| [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md) | High | InitialAccess | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
+| [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md) | High | InitialAccess | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`UrlClickEvents`](../tables/urlclickevents.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Power Automate - Departing employee flow activity](../content/microsoft-business-applications-power-automate-departing-employee-flow-activity-b1e11b8c-545a-4dea-a912-0008e160d183-ecbb18b0.md) | High | Exfiltration, Impact | [`PowerAutomateActivity`](../tables/powerautomateactivity.md) |
 | [Power Automate - Unusual bulk deletion of flow resources](../content/microsoft-business-applications-power-automate-unusual-bulk-deletion-of-flow-resources-56cb646e-56a0-4f0e-8866-9bc1dd15da78-eb6e5a2f.md) | Medium | Impact, DefenseEvasion | [`PowerAutomateActivity`](../tables/powerautomateactivity.md) |
 | [Power Platform - Account added to privileged Microsoft Entra roles](../content/microsoft-business-applications-power-platform-account-added-to-privileged-microsoft-entra-roles-71d829d6-eb50-4a17-8a64-655fae8d71e1-b0e60b31.md) | Low | PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
@@ -129,14 +144,14 @@ This solution includes **72 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Dataverse - Activity after Microsoft Entra alerts](../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.md) | InitialAccess | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Dataverse - Activity after Microsoft Entra alerts](../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.md) | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Dataverse - Activity after failed logons](../content/microsoft-business-applications-dataverse-activity-after-failed-logons-dafcc598-2987-4aa0-947e-7d0449677689-8b8942dc.md) | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Dataverse - Cross-environment data export activity](../content/microsoft-business-applications-dataverse-cross-environment-data-export-activity-74a48db8-dc1d-414e-9709-39fa3f8a2246-f5b62c63.md) | Exfiltration, Collection | [`DataverseActivity`](../tables/dataverseactivity.md) |
-| [Dataverse - Dataverse export copied to USB devices](../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.md) | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
-| [Dataverse - Generic client app used to access production environments](../content/microsoft-business-applications-dataverse-generic-client-app-used-to-access-production-environments-90bcbd4e-e8b5-4a5d-9fe6-d0f9f0220b4a-72c7ad56.md) | Execution | [`SigninLogs`](../tables/signinlogs.md) |
-| [Dataverse - Identity management activity outside of privileged directory role membership](../content/microsoft-business-applications-dataverse-identity-management-activity-outside-of-privileged-directory-r-c7e6e48a-0514-4989-bc90-4a3c9207ede1-5ce4101d.md) | PrivilegeEscalation | *Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
-| [Dataverse - Identity management changes without MFA](../content/microsoft-business-applications-dataverse-identity-management-changes-without-mfa-385234b7-d96c-4dc3-9c0e-ceb46048d487-58611350.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md) |
-| [Power Apps - Anomalous bulk sharing of Power App to newly created guest users](../content/microsoft-business-applications-power-apps-anomalous-bulk-sharing-of-power-app-to-newly-created-guest-us-169428be-5ed0-4230-9103-c83df89c789a-0624080a.md) | InitialAccess, LateralMovement, ResourceDevelopment | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
+| [Dataverse - Dataverse export copied to USB devices](../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.md) | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md) |
+| [Dataverse - Generic client app used to access production environments](../content/microsoft-business-applications-dataverse-generic-client-app-used-to-access-production-environments-90bcbd4e-e8b5-4a5d-9fe6-d0f9f0220b4a-72c7ad56.md) | Execution | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [Dataverse - Identity management activity outside of privileged directory role membership](../content/microsoft-business-applications-dataverse-identity-management-activity-outside-of-privileged-directory-r-c7e6e48a-0514-4989-bc90-4a3c9207ede1-5ce4101d.md) | PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
+| [Dataverse - Identity management changes without MFA](../content/microsoft-business-applications-dataverse-identity-management-changes-without-mfa-385234b7-d96c-4dc3-9c0e-ceb46048d487-58611350.md) | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [Power Apps - Anomalous bulk sharing of Power App to newly created guest users](../content/microsoft-business-applications-power-apps-anomalous-bulk-sharing-of-power-app-to-newly-created-guest-us-169428be-5ed0-4230-9103-c83df89c789a-0624080a.md) | InitialAccess, LateralMovement, ResourceDevelopment | [`AuditLogs`](../tables/auditlogs.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
 
 ### Workbooks
 

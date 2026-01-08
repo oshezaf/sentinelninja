@@ -27,6 +27,7 @@ The **Attacker Tools Threat Protection Essentials** solution contains security c
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-securityevents, azuresentinel.azure-sentinel-solution-dns, azuresentinel.azure-sentinel-solution-windowsforwardedevents, azuresentinel.azure-sentinel-solution-azureactivedirectory |
 
 ## Data Connectors
 
@@ -36,12 +37,16 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **6 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Analytics |
+| [`DnsEvents`](../tables/dnsevents.md) | Hunting |
 | [`Event`](../tables/event.md) | Analytics |
+| [`SecurityEvent`](../tables/securityevent.md) | Analytics, Hunting |
+| [`VMConnection`](../tables/vmconnection.md) | Hunting |
+| [`WindowsEvent`](../tables/windowsevent.md) | Analytics, Hunting |
 
 ## Content Items
 
@@ -58,15 +63,15 @@ This solution includes **6 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [Credential Dumping Tools - File Artifacts](../content/attacker-tools-threat-protection-essentials-credential-dumping-tools-file-artifacts-32ffb19e-8ed8-40ed-87a0-1adb4746b7c4-38277ddb.md) | High | CredentialAccess | [`Event`](../tables/event.md) |
 | [Credential Dumping Tools - Service Installation](../content/attacker-tools-threat-protection-essentials-credential-dumping-tools-service-installation-4ebbb5c2-8802-11ec-a8a3-0242ac120002-507654df.md) | High | CredentialAccess | [`Event`](../tables/event.md) |
-| [Powershell Empire Cmdlets Executed in Command Line](../content/attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.md) | Medium | Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Execution, Exfiltration, LateralMovement, Persistence, PrivilegeEscalation | - |
+| [Powershell Empire Cmdlets Executed in Command Line](../content/attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.md) | Medium | Collection, CommandAndControl, CredentialAccess, DefenseEvasion, Discovery, Execution, Exfiltration, LateralMovement, Persistence, PrivilegeEscalation | [`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 | [Probable AdFind Recon Tool Usage](../content/attacker-tools-threat-protection-essentials-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd-3713de66.md) | High | Discovery | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Cobalt Strike DNS Beaconing](../content/attacker-tools-threat-protection-essentials-cobalt-strike-dns-beaconing-dde206fc-3f0b-4175-bb5d-42d2aae9d4c9-35f15bcd.md) | CommandAndControl | - |
-| [Potential Impacket Execution](../content/attacker-tools-threat-protection-essentials-potential-impacket-execution-24ae555c-5e33-4b5d-827a-44206e39f6b4-04d0f42f.md) | CredentialAccess | - |
+| [Cobalt Strike DNS Beaconing](../content/attacker-tools-threat-protection-essentials-cobalt-strike-dns-beaconing-dde206fc-3f0b-4175-bb5d-42d2aae9d4c9-35f15bcd.md) | CommandAndControl | [`DnsEvents`](../tables/dnsevents.md)<br>[`VMConnection`](../tables/vmconnection.md) |
+| [Potential Impacket Execution](../content/attacker-tools-threat-protection-essentials-potential-impacket-execution-24ae555c-5e33-4b5d-827a-44206e39f6b4-04d0f42f.md) | CredentialAccess | [`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 
 ## Release Notes
 

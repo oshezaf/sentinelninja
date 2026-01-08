@@ -11,6 +11,14 @@ Identifies abnormal ports used in the organization based on learning period acti
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Hunting%20Queries/Azure%20Firewall%20-%20Uncommon%20Port%20for%20Organization.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
+- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
+- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+
 ---
 
 **Browse:**

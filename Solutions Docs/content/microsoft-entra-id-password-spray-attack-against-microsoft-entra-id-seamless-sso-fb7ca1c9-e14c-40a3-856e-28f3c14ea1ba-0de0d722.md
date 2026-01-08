@@ -20,6 +20,7 @@ This query detects when there is a spike in Microsoft Entra ID Seamless SSO erro
 This content item queries data from the following tables:
 
 - [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 
 ---
 

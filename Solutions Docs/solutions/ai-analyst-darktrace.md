@@ -20,6 +20,7 @@ The [AI Analyst Darktrace](https://www.darktrace.com/en/cyber-ai-analyst/) Solut
 | **Author** | Darktrace |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

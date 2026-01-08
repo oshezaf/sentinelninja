@@ -18,6 +18,7 @@ This content item queries data from the following tables:
 - [`DeviceFileEvents`](../tables/devicefileevents.md)
 - [`DeviceLogonEvents`](../tables/devicelogonevents.md)
 - [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
+- [`IdentityInfo`](../tables/identityinfo.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityEvent`](../tables/securityevent.md)

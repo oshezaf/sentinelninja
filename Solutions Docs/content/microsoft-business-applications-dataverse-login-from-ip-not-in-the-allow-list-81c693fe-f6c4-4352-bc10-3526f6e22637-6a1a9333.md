@@ -15,6 +15,12 @@ Identifies logons from IPv4 addresses not matching IPv4 subnets maintained on an
 | **Required Connectors** | [Dataverse](../connectors/dataverse.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Analytic%20Rules/Dataverse%20-%20Login%20from%20IP%20not%20in%20the%20allow%20list.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DataverseActivity`](../tables/dataverseactivity.md)
+
 ---
 
 **Browse:**

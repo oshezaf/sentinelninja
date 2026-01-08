@@ -16,7 +16,10 @@ This query hunts for Nylon Typhoon-related activity, specifically data collectio
 
 This content item queries data from the following tables:
 
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 

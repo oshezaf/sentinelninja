@@ -1,9 +1,10 @@
 # CarbonBlackEvents_CL
 
-## Solutions (12)
+## Solutions (13)
 
 This table is used by the following solutions:
 
+- [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
@@ -25,7 +26,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (49)
+## Content Items Using This Table (50)
 
 ### Analytic Rules (25)
 
@@ -104,7 +105,10 @@ This table is ingested by the following connectors:
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting IP All Actors](../content/recorded-future-recordedfuture-threat-hunting-ip-all-actors-7b5eb44d-3533-440e-9774-73a4d99bc2b2-0bac2271.md)
 
-### Workbooks (5)
+### Workbooks (6)
+
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)

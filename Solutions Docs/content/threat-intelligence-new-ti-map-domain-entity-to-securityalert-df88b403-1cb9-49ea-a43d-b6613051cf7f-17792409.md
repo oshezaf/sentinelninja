@@ -19,6 +19,7 @@ Identifies a match in SecurityAlert table from any Domain IOC from TI
 This content item queries data from the following tables:
 
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
 
 ---
 

@@ -20,6 +20,7 @@ The VMware ESXi solution for Microsoft Sentinel enables you to ingest VMWare ESX
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-12 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMWareESXi](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMWareESXi) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

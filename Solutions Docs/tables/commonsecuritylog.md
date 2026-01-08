@@ -14,7 +14,7 @@ Reference for CommonSecurityLog table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [CEF and CommonSecurityLog field mapping](https://learn.microsoft.com/en-us/azure/sentinel/cef-name-mapping) - Maps CEF field names to CommonSecurityLog column names | [CEF collection best practices](https://techcommunity.microsoft.com/blog/microsoftsentinelblog/best-practices-for-common-event-format-cef-collection-in-azure-sentinel/969990) - Performance tuning and collection recommendations | 📚 **Vendor CEF Guides:** [Palo Alto PAN-OS](https://docs.paloaltonetworks.com/pan-os/11-1/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions) • [Fortinet](https://docs.fortinet.com/document/fortigate/7.4.0/fortios-log-message-reference/357866/log-message-fields) • [Cisco ASA](https://www.cisco.com/c/en/us/td/docs/security/asa/syslog/b_syslog.html) • [Check Point](https://support.checkpoint.com/results/sk/sk144192) • [Barracuda WAF](https://campus.barracuda.com/product/webapplicationfirewall/doc/168300161/how-to-export-logs-from-the-barracuda-web-application-firewall) • [Citrix/NetScaler WAF](https://docs.netscaler.com/en-us/citrix-adc/current-release/application-firewall/logs.html) • [Symantec EP](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Monitoring-Reporting-and-Enforcing-Compliance/viewing-logs-v7522439-d37e464/about-the-types-of-logs-v8156418-d37e6.html)
 
-## Solutions (81)
+## Solutions (88)
 
 This table is used by the following solutions:
 
@@ -24,6 +24,7 @@ This table is used by the following solutions:
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
 - [AristaAwakeSecurity](../solutions/aristaawakesecurity.md)
 - [Aruba ClearPass](../solutions/aruba-clearpass.md)
+- [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md)
 - [Barracuda WAF](../solutions/barracuda-waf.md)
 - [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md)
@@ -62,8 +63,10 @@ This table is used by the following solutions:
 - [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md)
 - [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
 - [IronNet IronDefense](../solutions/ironnet-irondefense.md)
+- [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+- [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Session Essentials](../solutions/network-session-essentials.md)
@@ -80,6 +83,8 @@ This table is used by the following solutions:
 - [Radiflow](../solutions/radiflow.md)
 - [Recorded Future](../solutions/recorded-future.md)
 - [RidgeSecurity](../solutions/ridgesecurity.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
+- [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
 - [Silverfort](../solutions/silverfort.md)
@@ -96,6 +101,8 @@ This table is used by the following solutions:
 - [Web Session Essentials](../solutions/web-session-essentials.md)
 - [WireX Network Forensics Platform](../solutions/wirex-network-forensics-platform.md)
 - [WithSecureElementsViaConnector](../solutions/withsecureelementsviaconnector.md)
+- [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
+- [Zinc Open Source](../solutions/zinc-open-source.md)
 - [Zscaler Internet Access](../solutions/zscaler-internet-access.md)
 - [iboss](../solutions/iboss.md)
 - [vArmour Application Controller](../solutions/varmour-application-controller.md)
@@ -269,9 +276,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 ---
 
-## Content Items Using This Table (207)
+## Content Items Using This Table (222)
 
-### Analytic Rules (109)
+### Analytic Rules (112)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 - [Acronis - Login from Abnormal IP - Low Occurrence](../content/acronis-cyber-protect-cloud-acronis-login-from-abnormal-ip-low-occurrence-84037130-a623-46c2-9144-0c0955ac4112-5d101d22.md)
@@ -333,6 +340,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen TI IPAddress in CommonSecurityLog](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-commonsecuritylog-bc8a262a-5db3-4ac1-8757-519ed36ed929-6c2a7f14.md)
 
+**In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
+- [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md)
+
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Possible Phishing with CSL and Network Sessions](../content/microsoft-defender-xdr-possible-phishing-with-csl-and-network-sessions-6c3a1258-bcdd-4fcd-b753-1a9bc826ce12-631549a4.md)
 
@@ -346,6 +356,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Port scan detected  (ASIM Network Session schema)](../content/network-session-essentials-port-scan-detected-asim-network-session-schema-1da9853f-3dea-4ea9-b7e5-26730da3d537-7c6a0649.md)
 - [Potential beaconing activity (ASIM Network Session schema)](../content/network-session-essentials-potential-beaconing-activity-asim-network-session-schema-fcb9d75c-c3c1-4910-8697-f136bfef2363-a9186e67.md)
 - [Remote Desktop Network Brute force (ASIM Network Session schema)](../content/network-session-essentials-remote-desktop-network-brute-force-asim-network-session-schema-b7dc801e-1e79-48bb-91e8-2229a8e6d40b-c413aad1.md)
+
+**In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
+- [Network endpoint to host executable correlation](../content/network-threat-protection-essentials-network-endpoint-to-host-executable-correlation-01f64465-b1ef-41ea-a7f5-31553a11ad43-f4ed06da.md)
 
 **In solution [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md):**
 - [Microsoft COVID-19 file hash indicator matches](../content/paloalto-pan-os-microsoft-covid-19-file-hash-indicator-matches-2be4ef67-a93f-4d8a-981a-88158cb73abd-3ed74bda.md)
@@ -431,6 +444,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Identify instances where a single source is observed using multiple user agents (ASIM Web Session)](../content/web-session-essentials-identify-instances-where-a-single-source-is-observed-using-multiple-user-agents-a-813ccf3b-0321-4622-b0bc-63518fd14454-4eaea7cb.md)
 - [The download of potentially risky files from the Discord Content Delivery Network (CDN) (ASIM Web Session)](../content/web-session-essentials-the-download-of-potentially-risky-files-from-the-discord-content-delivery-network-b7fe8f27-7010-404b-aec5-6e5245cea580-7bb8623e.md)
 
+**In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
+- [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
+
 **In solution [Zscaler Internet Access](../solutions/zscaler-internet-access.md):**
 - [Discord CDN Risky File Download](../content/zscaler-internet-access-discord-cdn-risky-file-download-010bd98c-a6be-498c-bdcd-502308c0fdae-581fe083.md)
 - [Request for single resource on domain](../content/zscaler-internet-access-request-for-single-resource-on-domain-4d500e6d-c984-43a3-9f39-7edec8dcc04d-7778e224.md)
@@ -438,7 +454,7 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [vArmour Application Controller](../solutions/varmour-application-controller.md):**
 - [vArmour AppController - SMB Realm Traversal](../content/varmour-application-controller-varmour-appcontroller-smb-realm-traversal-a36de6c3-3198-4d37-92ae-e19e36712c2e-f56ac1bb.md)
 
-### Hunting Queries (53)
+### Hunting Queries (54)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 - [Acronis - ASZ defence: Unauthorized operation is detected and blocked](../content/acronis-cyber-protect-cloud-acronis-asz-defence-unauthorized-operation-is-detected-and-blocked-39310cb8-53bc-47c1-86c4-2ff9f0d3cc5f-bcc0c583.md)
@@ -481,6 +497,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.md)
 - [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.md)
 
+**In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
+- [Retrospective hunt for Forest Blizzard IP IOCs](../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.md)
+
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen TI IPAddress indicator in CommonSecurityLog](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-indicator-in-commonsecuritylog-4e329d3a-9fc0-4be7-9000-e092e7f68011-8e375221.md)
 
@@ -517,10 +536,16 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Potential beaconing detected - Similar sent bytes (ASIM Web Session)](../content/web-session-essentials-potential-beaconing-detected-similar-sent-bytes-asim-web-session-75929222-fee5-4f97-a2cc-cb6f29444385-cd842e58.md)
 - [Request from bots and crawlers (ASIM Web Session)](../content/web-session-essentials-request-from-bots-and-crawlers-asim-web-session-b653c2e0-ae0f-490b-9b2e-836858d28976-9673d4d5.md)
 
-### Workbooks (41)
+### Workbooks (52)
 
 **In solution [AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md):**
 - [AIA-Darktrace](../content/ai-analyst-darktrace-aia-darktrace-c99f20ad.md)
+
+**In solution [AristaAwakeSecurity](../solutions/aristaawakesecurity.md):**
+- [AristaAwakeSecurityWorkbook](../content/aristaawakesecurity-aristaawakesecurityworkbook-9b7c92d9.md)
+
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):**
 - [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md)
@@ -530,6 +555,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 **In solution [CiscoASA](../solutions/ciscoasa.md):**
 - [Cisco](../content/ciscoasa-cisco-87e00b58.md)
+
+**In solution [Citrix Web App Firewall](../solutions/citrix-web-app-firewall.md):**
+- [CitrixWAF](../content/citrix-web-app-firewall-citrixwaf-f26995f5.md)
 
 **In solution [Common Event Format](../solutions/common-event-format.md):**
 - [CEFOverviewWorkbook](../content/common-event-format-cefoverviewworkbook-a335b98c.md)
@@ -564,6 +592,10 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
+
+**In solution [Illusive Platform](../solutions/illusive-platform.md):**
+- [IllusiveADS](../content/illusive-platform-illusiveads-5d29048c.md)
+- [IllusiveASM](../content/illusive-platform-illusiveasm-bca1238e.md)
 
 **In solution [Infoblox](../solutions/infoblox.md):**
 - [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md)
@@ -601,9 +633,18 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [PingFederate](../solutions/pingfederate.md):**
 - [PingFederate](../content/pingfederate-pingfederate-c26986d3.md)
 
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
+- [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
+
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
+- [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)
+
 **In solution [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md):**
 - [SemperisDSPADChanges](../content/semperis-directory-services-protector-semperisdspadchanges-b1c49b5b.md)
+- [SemperisDSPNotifications](../content/semperis-directory-services-protector-semperisdspnotifications-fcd6b926.md)
 - [SemperisDSPQuickviewDashboard](../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.md)
+- [SemperisDSPSecurityIndicators](../content/semperis-directory-services-protector-semperisdspsecurityindicators-a942a3d9.md)
 
 **In solution [Silverfort](../solutions/silverfort.md):**
 - [SilverfortWorkbook](../content/silverfort-silverfortworkbook-63b31322.md)
@@ -616,6 +657,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
 - [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md)
+
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
 **In solution [Zscaler Internet Access](../solutions/zscaler-internet-access.md):**
 - [ZscalerFirewall](../content/zscaler-internet-access-zscalerfirewall-bc68adf2.md)

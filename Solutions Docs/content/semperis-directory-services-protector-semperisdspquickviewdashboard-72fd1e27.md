@@ -12,7 +12,9 @@
 This content item queries data from the following tables:
 
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+- [`Operation`](../tables/operation.md)
 - [`SecurityEvent`](../tables/securityevent.md)
+- [`alert`](../tables/alert.md)
 
 ---
 

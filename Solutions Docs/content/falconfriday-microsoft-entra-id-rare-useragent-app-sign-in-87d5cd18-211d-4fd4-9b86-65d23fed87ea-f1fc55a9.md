@@ -15,6 +15,13 @@ This query establishes a baseline of the type of UserAgent (i.e. browser, office
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday/Analytic%20Rules/AzureADRareUserAgentAppSignin.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`SigninLogs`](../tables/signinlogs.md)
+
 ---
 
 **Browse:**

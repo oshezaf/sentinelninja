@@ -21,6 +21,7 @@ The [Nasuni](https://www.nasuni.com) solution for Microsoft Sentinel allows you 
 | **First Published** | 2023-07-07 |
 | **Last Updated** | 2023-07-07 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Nasuni](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Nasuni) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

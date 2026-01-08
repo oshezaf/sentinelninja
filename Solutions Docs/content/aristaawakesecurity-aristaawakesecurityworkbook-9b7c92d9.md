@@ -8,6 +8,12 @@
 | **Event Product** | Awake Security |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity/Workbooks/AristaAwakeSecurityWorkbook.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+
 ---
 
 **Browse:**

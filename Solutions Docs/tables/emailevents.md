@@ -11,7 +11,7 @@ Microsoft 365 email events, including email delivery and blocking events
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailevents-table) |
 
-## Solutions (6)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -20,6 +20,11 @@ This table is used by the following solutions:
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md)
+- [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
+- [NISTSP80053](../solutions/nistsp80053.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
+- [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (1)
@@ -30,19 +35,30 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (128)
+## Content Items Using This Table (141)
 
-### Analytic Rules (1)
+### Analytic Rules (7)
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 - [Dataverse - Terminated employee exfiltration over email](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-over-email-de039242-47e0-43fa-84d7-b6be24305349-d5733918.md)
 
-### Hunting Queries (123)
+**In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
+- [TI Map URL Entity to EmailUrlInfo](../content/threat-intelligence-ti-map-url-entity-to-emailurlinfo-a0038239-72f4-4f7b-90ff-37f89f7881e0-2ee2a116.md)
+- [TI map Domain entity to EmailEvents](../content/threat-intelligence-ti-map-domain-entity-to-emailevents-96307710-8bb9-4b45-8363-a90c72ebf86f-5727bb74.md)
+- [TI map Email entity to EmailEvents](../content/threat-intelligence-ti-map-email-entity-to-emailevents-11f7c6e3-f066-4b3c-9a81-b487ec0a6873-db576d3c.md)
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+- [TI Map URL Entity to EmailUrlInfo](../content/threat-intelligence-new-ti-map-url-entity-to-emailurlinfo-9e32e545-e60c-47de-9941-f9ca1ada0a42-4894c77c.md)
+- [TI map Domain entity to EmailEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-emailevents-bc3bb047-70b8-4a4b-ac21-e3b1172881a4-c3b01d85.md)
+- [TI map Email entity to EmailEvents](../content/threat-intelligence-new-ti-map-email-entity-to-emailevents-18b61c3f-55fa-4eb9-8721-72dabd1eb3cb-33ee20f1.md)
+
+### Hunting Queries (127)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 - [Email Forwarding Configuration with SAP download](../content/business-email-compromise-financial-fraud-email-forwarding-configuration-with-sap-download-0576750e-6b61-4545-845f-f5b8f29a0cc4-0b297ea9.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+- [Attacked more than x times average](../content/microsoft-defender-xdr-attacked-more-than-x-times-average-de480ca4-4095-4fef-b3e7-2a3f17f24e78-ec4cee0f.md)
 - [Authentication failures by time and authentication type](../content/microsoft-defender-xdr-authentication-failures-by-time-and-authentication-type-7fbf7687-5ded-4c39-9fe9-f4f6aa6fc422-a410ff8f.md)
 - [Automated email notifications and suspicious sign-in activity](../content/microsoft-defender-xdr-automated-email-notifications-and-suspicious-sign-in-activity-0955f477-6471-468a-9b13-fc5fa96d7db2-7722bd78.md)
 - [Bad email percentage of Inbound emails](../content/microsoft-defender-xdr-bad-email-percentage-of-inbound-emails-242561f3-568a-4864-be15-fbc85b2e77f9-3b521ce0.md)
@@ -84,6 +100,7 @@ This table is ingested by the following connectors:
 - [Listing Email Remediation Actions via Explorer](../content/microsoft-defender-xdr-listing-email-remediation-actions-via-explorer-99713387-9d61-49eb-8edc-f51153d8bb01-83aba0f4.md)
 - [Local time to UTC time conversion](../content/microsoft-defender-xdr-local-time-to-utc-time-conversion-712ffdd8-ddce-4372-85dd-063029b418cf-7ff7492c.md)
 - [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md)
+- [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md)
 - [MDO_CountOfRecipientsEmailaddressbySubject](../content/microsoft-defender-xdr-mdo-countofrecipientsemailaddressbysubject-430a9c0d-f3ce-46a3-a994-92b3ada0d1b2-813e0447.md)
 - [MDO_CountOfSendersEmailaddressbySubject](../content/microsoft-defender-xdr-mdo-countofsendersemailaddressbysubject-b95994d1-1008-4c42-a74f-9f2967e39ed6-c65932d4.md)
 - [MDO_Countofrecipientsemailaddressesbysubject](../content/microsoft-defender-xdr-mdo-countofrecipientsemailaddressesbysubject-f840db5b-87c9-43c8-a8c3-5b6b83838cd4-bb7d95e8.md)
@@ -112,6 +129,7 @@ This table is ingested by the following connectors:
 - [Quarantine Release Email Details](../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.md)
 - [Quarantine Spam Reason](../content/microsoft-defender-xdr-quarantine-spam-reason-bde9d9fc-e166-4628-91f7-fb86ace93af0-47e9e0b8.md)
 - [Quarantine Spam Reason trend](../content/microsoft-defender-xdr-quarantine-spam-reason-trend-32a981ad-cd5a-4d80-8c6c-d59b9893c019-af7b470d.md)
+- [Quarantine releases by Detection Types](../content/microsoft-defender-xdr-quarantine-releases-by-detection-types-23e6d66b-511a-43fd-9863-6924da60319a-0411faf3.md)
 - [SPF Failure Trend](../content/microsoft-defender-xdr-spf-failure-trend-79755078-7be8-4f13-a8e7-1ce87cb7d5c0-c89e8f51.md)
 - [Safe Attachments detections](../content/microsoft-defender-xdr-safe-attachments-detections-16eda414-1550-4cdc-8512-0769901d3f05-5b330159.md)
 - [SafeLinks URL detections](../content/microsoft-defender-xdr-safelinks-url-detections-492f1ea1-37c3-410a-a2f2-4e4eae2ff7f9-bb043a0c.md)
@@ -140,6 +158,7 @@ This table is ingested by the following connectors:
 - [Top 10 Targeted Users (Malware+Phish+Spam)](../content/microsoft-defender-xdr-top-10-targeted-users-malware+phish+spam-b8330f6e-fc47-40ce-b225-5d3b055c6446-7217646a.md)
 - [Top 10 URL domains attacking organization](../content/microsoft-defender-xdr-top-10-url-domains-attacking-organization-27ee28e7-423b-48c9-a410-cbc6c8e21d25-23e12672.md)
 - [Top 10 domains sending Bulk email](../content/microsoft-defender-xdr-top-10-domains-sending-bulk-email-147131b3-8b57-4c50-b981-5a951ed82272-a450386e.md)
+- [Top 10% of most attacked users](../content/microsoft-defender-xdr-top-10-of-most-attacked-users-e3b7b5c1-0e50-4dfb-b73a-c226636eaf58-d90b786a.md)
 - [Top 100 malicious email senders](../content/microsoft-defender-xdr-top-100-malicious-email-senders-12225f50-9d41-4b78-8269-cc127d98654c-68a99898.md)
 - [Top 100 senders](../content/microsoft-defender-xdr-top-100-senders-cadf6e78-2a9a-4fb5-b788-30a592d699d3-c5aa90ea.md)
 - [Top Domains Outbound with Emails with Threats Inbound (Partner BEC)](../content/microsoft-defender-xdr-top-domains-outbound-with-emails-with-threats-inbound-partner-bec-f9442d20-eff8-4751-9a75-6451aeace687-a1d5fba8.md)
@@ -166,7 +185,7 @@ This table is ingested by the following connectors:
 - [Zero-day Phish Detections Trend](../content/microsoft-defender-xdr-zero-day-phish-detections-trend-80f357a6-6bb4-4b2b-a88c-265fccafc794-6ffd9b22.md)
 - [referral-phish-emails](../content/microsoft-defender-xdr-referral-phish-emails-cdc4da1c-64a1-4941-be59-1f5cc85481ab-d35aa01d.md)
 
-### Workbooks (4)
+### Workbooks (7)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
@@ -176,6 +195,15 @@ This table is ingested by the following connectors:
 
 **In solution [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md):**
 - [MicrosoftDefenderForOffice365](../content/microsoft-defender-for-office-365-microsoftdefenderforoffice365-cc793056.md)
+
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
+- [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md)
+
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)

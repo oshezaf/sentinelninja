@@ -15,6 +15,14 @@
 | **Required Connectors** | [AWS](../connectors/aws.md), [Office365](../connectors/office365.md), [AzureMonitor(IIS)](../connectors/azuremonitor-iis.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials/Analytic%20Rules/NewUserAgentLast24h.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+- [`OfficeActivity`](../tables/officeactivity.md)
+- [`W3CIISLog`](../tables/w3ciislog.md)
+
 ---
 
 **Browse:**

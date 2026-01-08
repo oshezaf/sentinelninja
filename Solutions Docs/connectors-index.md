@@ -110,14 +110,14 @@ This page lists **525 unique connectors** across all solutions.
 | [Check Point Cyberint Alerts Connector (via Codeless Connector Platform)](connectors/checkpointcyberintalerts.md) | Checkpoint Cyberint | CCF | 1 | [Check Point Cyberint Alerts](solutions/check-point-cyberint-alerts.md) |
 | [Check Point Cyberint IOC Connector](connectors/checkpointcyberintioc.md) | Checkpoint Cyberint | CCF | 1 | [Check Point Cyberint IOC](solutions/check-point-cyberint-ioc.md) |
 | [Cisco ASA via Legacy Agent](connectors/ciscoasa.md) | Cisco | MMA | 1 | [CiscoASA](solutions/ciscoasa.md) |
-| [Cisco ASA/FTD via AMA](connectors/ciscoasaama.md) | Microsoft | AMA | 1 | [CiscoASA](solutions/ciscoasa.md) |
+| [Cisco ASA/FTD via AMA](connectors/ciscoasaama.md) | Microsoft | AMA | 2 | [CiscoASA](solutions/ciscoasa.md) |
 | [Cisco Cloud Security](connectors/ciscoumbrelladataconnector.md) | Cisco | Azure Function | 12 | [CiscoUmbrella](solutions/ciscoumbrella.md) |
 | [Cisco Cloud Security (using elastic premium plan)](connectors/ciscoumbrelladataconnectorelasticpremium.md) | Cisco | Azure Function | 12 | [CiscoUmbrella](solutions/ciscoumbrella.md) |
 | [Cisco Duo Security](connectors/ciscoduosecurity.md) | Cisco | Azure Function | 1 | [CiscoDuoSecurity](solutions/ciscoduosecurity.md) |
 | [Cisco ETD](connectors/ciscoetd.md) | Cisco | Azure Function | 1 | [Cisco ETD](solutions/cisco-etd.md) |
 | [Cisco Meraki (using REST API)](connectors/ciscomerakimultirule.md) | Microsoft | CCF | 3 | [Cisco Meraki Events via REST API](solutions/cisco-meraki-events-via-rest-api.md) |
-| [Cisco Meraki (using REST API)](connectors/ciscomeraki-usingrestapi.md) | Microsoft | CCF | 2 | [CiscoMeraki](solutions/ciscomeraki.md) |
-| [Cisco Meraki (using REST API)](connectors/ciscomerakinativepoller.md) | Microsoft | CCF | 2 | [CiscoMeraki](solutions/ciscomeraki.md) |
+| [Cisco Meraki (using REST API)](connectors/ciscomeraki-usingrestapi.md) | Microsoft | CCF | 3 | [CiscoMeraki](solutions/ciscomeraki.md) |
+| [Cisco Meraki (using REST API)](connectors/ciscomerakinativepoller.md) | Microsoft | CCF | 3 | [CiscoMeraki](solutions/ciscomeraki.md) |
 | [Cisco Secure Endpoint (via Codeless Connector Framework)](connectors/ciscosecureendpointlogsccpdefinition.md) | Microsoft | CCF | 2 | [Cisco Secure Endpoint](solutions/cisco-secure-endpoint.md) |
 | [Cisco Software Defined WAN](connectors/ciscosdwan.md) | Cisco | AMA | 2 | [Cisco SD-WAN](solutions/cisco-sd-wan.md) |
 | [CITRIX SECURITY ANALYTICS](connectors/citrix.md) | CITRIX | Unknown (Custom Log) | 4 | [Citrix Analytics for Security](solutions/citrix-analytics-for-security.md) |
@@ -438,7 +438,7 @@ This page lists **525 unique connectors** across all solutions.
 | [SecurityScorecard Issue](connectors/securityscorecardissueazurefunctions.md) | SecurityScorecard | Azure Function | 1 | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) |
 | [Semperis Directory Services Protector](connectors/semperisdsp.md) | SEMPERIS | MMA | 1 | [Semperis Directory Services Protector](solutions/semperis-directory-services-protector.md) |
 | [SenservaPro (Preview)](connectors/senservapro.md) | Senserva | Unknown (Custom Log) | 1 | [SenservaPro](solutions/senservapro.md) |
-| [SentinelOne](connectors/sentinelone.md) | SentinelOne | Azure Function | 1 | [SentinelOne](solutions/sentinelone.md) |
+| [SentinelOne](connectors/sentinelone.md) | SentinelOne | Azure Function | 2 | [SentinelOne](solutions/sentinelone.md) |
 | [SentinelOne](connectors/sentineloneccp.md) | Microsoft | CCF | 5 | [SentinelOne](solutions/sentinelone.md) |
 | [Seraphic Web Security](connectors/seraphicwebsecurity.md) | Seraphic | CCF | 1 | [SeraphicSecurity](solutions/seraphicsecurity.md) |
 | [Sevco Platform - Devices](connectors/sevcodevices.md) | Sevco Security | Unknown (Custom Log) | 1 | [SevcoSecurity](solutions/sevcosecurity.md) |
@@ -539,19 +539,19 @@ The following **143 connector(s)** are deprecated:
 | [[Deprecated] Awake Security via Legacy Agent](connectors/aristaawakesecurity.md) | Arista Networks | MMA | 1 | [AristaAwakeSecurity](solutions/aristaawakesecurity.md) |
 | [[Deprecated] Barracuda CloudGen Firewall](connectors/barracudacloudfirewall.md) | Barracuda | MMA | 1 | [Barracuda CloudGen Firewall](solutions/barracuda-cloudgen-firewall.md) |
 | [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](connectors/barracuda.md) | Barracuda | MMA | 3 | [Barracuda WAF](solutions/barracuda-waf.md) |
-| [[Deprecated] Blackberry CylancePROTECT](connectors/blackberrycylanceprotect.md) | Blackberry | MMA | 1 | [Blackberry CylancePROTECT](solutions/blackberry-cylanceprotect.md) |
+| [[Deprecated] Blackberry CylancePROTECT](connectors/blackberrycylanceprotect.md) | Blackberry | MMA | 3 | [Blackberry CylancePROTECT](solutions/blackberry-cylanceprotect.md) |
 | [[Deprecated] Broadcom Symantec DLP via AMA](connectors/broadcomsymantecdlpama.md) | Broadcom | AMA | 1 | [Broadcom SymantecDLP](solutions/broadcom-symantecdlp.md) |
 | [[Deprecated] Broadcom Symantec DLP via Legacy Agent](connectors/broadcomsymantecdlp.md) | Broadcom | MMA | 1 | [Broadcom SymantecDLP](solutions/broadcom-symantecdlp.md) |
 | [[Deprecated] Cisco Application Centric Infrastructure](connectors/ciscoaci.md) | Cisco | MMA | 1 | [Cisco ACI](solutions/cisco-aci.md) |
 | [[Deprecated] Cisco Firepower eStreamer via AMA](connectors/ciscofirepowerestreamerama.md) | Cisco | AMA | 1 | [Cisco Firepower EStreamer](solutions/cisco-firepower-estreamer.md) |
 | [[Deprecated] Cisco Firepower eStreamer via Legacy Agent](connectors/ciscofirepowerestreamer.md) | Cisco | MMA | 1 | [Cisco Firepower EStreamer](solutions/cisco-firepower-estreamer.md) |
 | [[Deprecated] Cisco Identity Services Engine](connectors/ciscoise.md) | Cisco | MMA | 1 | [Cisco ISE](solutions/cisco-ise.md) |
-| [[Deprecated] Cisco Meraki](connectors/ciscomeraki.md) | Cisco | MMA | 2 | [CiscoMeraki](solutions/ciscomeraki.md) |
+| [[Deprecated] Cisco Meraki](connectors/ciscomeraki.md) | Cisco | MMA | 3 | [CiscoMeraki](solutions/ciscomeraki.md) |
 | [[Deprecated] Cisco Secure Cloud Analytics](connectors/stealthwatch.md) | Cisco | MMA | 1 | [Cisco Secure Cloud Analytics](solutions/cisco-secure-cloud-analytics.md) |
 | [[Deprecated] Cisco Secure Email Gateway via AMA](connectors/ciscosegama.md) | Cisco | AMA | 1 | [CiscoSEG](solutions/ciscoseg.md) |
 | [[Deprecated] Cisco Secure Email Gateway via Legacy Agent](connectors/ciscoseg.md) | Cisco | MMA | 1 | [CiscoSEG](solutions/ciscoseg.md) |
 | [[DEPRECATED] Cisco Secure Endpoint (AMP)](connectors/ciscosecureendpoint.md) | Cisco | Azure Function | 1 | [Cisco Secure Endpoint](solutions/cisco-secure-endpoint.md) |
-| [[Deprecated] Cisco UCS](connectors/ciscoucs.md) | Cisco | MMA | 1 | [Cisco UCS](solutions/cisco-ucs.md) |
+| [[Deprecated] Cisco UCS](connectors/ciscoucs.md) | Cisco | MMA | 2 | [Cisco UCS](solutions/cisco-ucs.md) |
 | [[Deprecated] Cisco Web Security Appliance](connectors/ciscowsa.md) | Cisco | MMA | 1 | [CiscoWSA](solutions/ciscowsa.md) |
 | [[Deprecated] Citrix ADC (former NetScaler)](connectors/citrixadc.md) | Citrix | MMA | 1 | [Citrix ADC](solutions/citrix-adc.md) |
 | [[Deprecated] Citrix WAF (Web App Firewall) via AMA](connectors/citrixwafama.md) | Citrix Systems Inc. | AMA | 1 | [Citrix Web App Firewall](solutions/citrix-web-app-firewall.md) |

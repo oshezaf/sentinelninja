@@ -15,6 +15,13 @@ Multi-Factor Authentication (MFA) helps prevent credential compromise. This aler
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AWS](../connectors/aws.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Identity%20Threat%20Protection%20Essentials/Analytic%20Rules/MFADisable.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+- [`AuditLogs`](../tables/auditlogs.md)
+
 ---
 
 **Browse:**

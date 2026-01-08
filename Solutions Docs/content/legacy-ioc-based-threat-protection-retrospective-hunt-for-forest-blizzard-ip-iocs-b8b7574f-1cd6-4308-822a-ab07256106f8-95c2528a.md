@@ -13,6 +13,13 @@ Matches domain name IOCs related to Forest Blizzard group activity with CommonSe
 | **Required Connectors** | [CiscoASA](../connectors/ciscoasa.md), [CiscoAsaAma](../connectors/ciscoasaama.md), [PaloAltoNetworks](../connectors/paloaltonetworks.md), [AzureSecurityCenter](../connectors/azuresecuritycenter.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection/Hunting%20Queries/ForestBlizzard_IOC_RetroHunt.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+- [`SecurityAlert`](../tables/securityalert.md)
+
 ---
 
 **Browse:**

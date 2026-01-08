@@ -17,12 +17,13 @@ The 'SummarizeWebSessionData' Playbook helps with summarizing the Web Session lo
 | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | read |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | read |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) | read |
+| [`Syslog`](../tables/syslog.md) | read |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) | read |
 | [`W3CIISLog`](../tables/w3ciislog.md) | read |
 | [`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) | read/write |
-| [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) | write |
-| [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) | write |
-| [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) | write |
+| [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) | read/write |
+| [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) | read/write |
+| [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) | read/write |
 | [`barracuda_CL`](../tables/barracuda-cl.md) | read |
 | [`meraki_CL`](../tables/meraki-cl.md) | read |
 

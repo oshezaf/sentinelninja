@@ -20,6 +20,7 @@ The Oracle Database Audit solution provides the capability to ingest [Oracle Dat
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-05 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

@@ -12,8 +12,13 @@ This playbook summarizes data for Network Session Essentials and lands it into c
 
 | Table | Usage |
 |:------|:------|
+| [`ALERT`](../tables/alert.md) | read |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | read |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | read |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | read |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) | read |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | read |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | read |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | read |
 | [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | read |
 | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | read |
@@ -24,19 +29,20 @@ This playbook summarizes data for Network Session Essentials and lands it into c
 | [`Event`](../tables/event.md) | read |
 | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | read |
 | [`NTANetAnalytics`](../tables/ntanetanalytics.md) | read |
-| [`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) | write |
-| [`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) | write |
+| [`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) | read/write |
+| [`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) | read/write |
 | [`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md) | read/write |
 | [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) | read/write |
-| [`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md) | write |
-| [`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md) | write |
-| [`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) | write |
-| [`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) | write |
-| [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) | write |
+| [`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md) | read/write |
+| [`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md) | read/write |
+| [`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) | read/write |
+| [`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) | read/write |
+| [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) | read/write |
 | [`SecurityEvent`](../tables/securityevent.md) | read |
 | [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | read |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | read |
 | [`Syslog`](../tables/syslog.md) | read |
+| [`Update`](../tables/update.md) | read |
 | [`VMConnection`](../tables/vmconnection.md) | read |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) | read |
 | [`WindowsEvent`](../tables/windowsevent.md) | read |

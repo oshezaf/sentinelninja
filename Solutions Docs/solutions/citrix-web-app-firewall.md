@@ -20,6 +20,7 @@
 | **Author** | Citrix Systems |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 
@@ -36,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Citrix WAF (Web App Firewall) via AMA](../connectors/citrixwafama.md), [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](../connectors/citrixwaf.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Citrix WAF (Web App Firewall) via AMA](../connectors/citrixwafama.md), [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](../connectors/citrixwaf.md) | Workbooks |
 
 ## Content Items
 
@@ -50,7 +51,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CitrixWAF](../content/citrix-web-app-firewall-citrixwaf-f26995f5.md) | - |
+| [CitrixWAF](../content/citrix-web-app-firewall-citrixwaf-f26995f5.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

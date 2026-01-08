@@ -6,6 +6,14 @@
 | **Solution** | [SOC-Process-Framework](../solutions/soc-process-framework.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework/Workbooks/SOCProcessFramework.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityIncident`](../tables/securityincident.md)
+- [`Update`](../tables/update.md)
+- [`Usage`](../tables/usage.md)
+
 ---
 
 **Browse:**

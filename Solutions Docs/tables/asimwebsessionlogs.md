@@ -10,7 +10,7 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimwebsessionlogs) |
 
-## Solutions (9)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -18,6 +18,8 @@ This table is used by the following solutions:
 - [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
+- [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Recorded Future](../solutions/recorded-future.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -32,15 +34,18 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (37)
+## Content Items Using This Table (39)
 
-### Analytic Rules (23)
+### Analytic Rules (24)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [User agent search for log4j exploitation attempt](../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.md)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 - [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.md)
+
+**In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
+- [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md)
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting Url All Actors](../content/recorded-future-recordedfuture-threat-hunting-url-all-actors-3f6f0d1a-f2f9-4e01-881a-c55a4a71905b-8b23fa82.md)
@@ -92,10 +97,13 @@ This table is ingested by the following connectors:
 - [Potential beaconing detected - Similar sent bytes (ASIM Web Session)](../content/web-session-essentials-potential-beaconing-detected-similar-sent-bytes-asim-web-session-75929222-fee5-4f97-a2cc-cb6f29444385-cd842e58.md)
 - [Request from bots and crawlers (ASIM Web Session)](../content/web-session-essentials-request-from-bots-and-crawlers-asim-web-session-b653c2e0-ae0f-490b-9b2e-836858d28976-9673d4d5.md)
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
+
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
 - [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md)

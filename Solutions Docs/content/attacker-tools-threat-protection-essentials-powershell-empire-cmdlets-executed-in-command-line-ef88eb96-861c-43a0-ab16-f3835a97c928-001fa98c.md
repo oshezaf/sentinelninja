@@ -15,6 +15,13 @@ This query identifies use of PowerShell Empire's cmdlets within the command line
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsForwardedEvents](../connectors/windowsforwardedevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials/Analytic%20Rules/powershell_empire.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
+
 ---
 
 **Browse:**

@@ -30,6 +30,7 @@ This content item queries data from the following tables:
 - [`Syslog`](../tables/syslog.md)
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)
 - [`WindowsEvent`](../tables/windowsevent.md)
+- [`anomalies`](../tables/anomalies.md)
 
 ---
 

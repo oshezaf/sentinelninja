@@ -20,6 +20,7 @@ The PostgreSQL solution provides the capability to ingest [PostgreSQL](https://w
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PostgreSQL](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PostgreSQL) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-customlogsviaama |
 
 ## Data Connectors
 

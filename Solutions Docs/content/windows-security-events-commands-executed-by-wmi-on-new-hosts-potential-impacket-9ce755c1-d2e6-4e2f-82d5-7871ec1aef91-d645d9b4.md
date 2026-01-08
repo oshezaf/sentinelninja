@@ -12,6 +12,12 @@ Query identifies hosts with WMI command runs, absent in last 7 days and filters 
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events/Hunting%20Queries/CommandsexecutedbyWMIonnewhosts-potentialImpacket.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityEvent`](../tables/securityevent.md)
+
 ---
 
 **Browse:**

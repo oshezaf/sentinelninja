@@ -20,6 +20,7 @@ The [Infoblox](https://www.infoblox.com/) SOC Insights solution allows you to ea
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-03-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

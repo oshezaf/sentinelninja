@@ -16,6 +16,7 @@ This hunting query looks for users conducting Dataverse/Dynamics 365 activity sh
 
 This content item queries data from the following tables:
 
+- [`DataverseActivity`](../tables/dataverseactivity.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 
 ---

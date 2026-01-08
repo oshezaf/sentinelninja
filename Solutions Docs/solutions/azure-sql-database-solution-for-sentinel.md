@@ -31,11 +31,15 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`Alert`](../tables/alert.md) | - | Workbooks |
+| [`AzureActivity`](../tables/azureactivity.md) | - | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure SQL Databases](../connectors/azuresql.md) | Analytics, Hunting, Workbooks |
+| [`Operation`](../tables/operation.md) | - | Workbooks |
+| [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md) | - | Hunting, Workbooks |
 
 ### Internal Tables
 
@@ -78,7 +82,7 @@ This solution includes **19 content item(s)**:
 | [Affected rows stateful anomaly on database - hunting query](../content/azure-sql-database-solution-for-sentinel-affected-rows-stateful-anomaly-on-database-hunting-query-9670ac84-e035-47f5-8eb5-9d863a8a7893-66ffcc6c.md) | Impact | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Anomalous Query Execution Time](../content/azure-sql-database-solution-for-sentinel-anomalous-query-execution-time-724c7010-0afe-4d46-95ab-32f6737e658b-6f211c62.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Anomalous Query Execution Time](../content/azure-sql-database-solution-for-sentinel-anomalous-query-execution-time-af55d5b0-6b4a-4874-8299-9d845bf7c1fd-21c7b493.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [Boolean Blind SQL Injection](../content/azure-sql-database-solution-for-sentinel-boolean-blind-sql-injection-4cda0673-37f9-4765-af1f-556de2295cd7-513f1aae.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Boolean Blind SQL Injection](../content/azure-sql-database-solution-for-sentinel-boolean-blind-sql-injection-4cda0673-37f9-4765-af1f-556de2295cd7-513f1aae.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md) |
 | [Prevalence Based SQL Query Size Anomaly](../content/azure-sql-database-solution-for-sentinel-prevalence-based-sql-query-size-anomaly-2a21303e-be48-404f-a6f6-883a6acfe5ad-c554d854.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Response rows stateful anomaly on database - hunting query](../content/azure-sql-database-solution-for-sentinel-response-rows-stateful-anomaly-on-database-hunting-query-137tyi7c-7225-434b-8bfc-fea28v95ebd8-78e08eb9.md) | Exfiltration | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [Suspicious SQL Stored Procedures](../content/azure-sql-database-solution-for-sentinel-suspicious-sql-stored-procedures-db5b0a77-1b1d-4a31-8ebb-c508ebc3bb38-4ec8f8ae.md) | InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
@@ -88,7 +92,7 @@ This solution includes **19 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) | [`Alert`](../tables/alert.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Operation`](../tables/operation.md)<br>[`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Release Notes
 

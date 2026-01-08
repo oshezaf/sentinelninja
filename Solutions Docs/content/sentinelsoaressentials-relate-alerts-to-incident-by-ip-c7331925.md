@@ -13,6 +13,7 @@ This playbook looks for other alerts with the same IP as the triggered incident.
 | Table | Usage |
 |:------|:------|
 | [`SecurityAlert`](../tables/securityalert.md) | read |
+| [`SecurityIncident`](../tables/securityincident.md) | read |
 
 ## Additional Documentation
 

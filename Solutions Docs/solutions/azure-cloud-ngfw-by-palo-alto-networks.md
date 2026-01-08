@@ -32,10 +32,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`alert`](../tables/alert.md) | - | Workbooks |
 | [`fluentbit_CL`](../tables/fluentbit-cl.md) | [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
@@ -68,7 +69,7 @@ This solution includes **7 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [CloudNGFW-NetworkThreat](../content/azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-networkthreat-c20fa626.md) | [`fluentbit_CL`](../tables/fluentbit-cl.md) |
-| [CloudNGFW-Overview](../content/azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-overview-244e5c2e.md) | [`fluentbit_CL`](../tables/fluentbit-cl.md) |
+| [CloudNGFW-Overview](../content/azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-overview-244e5c2e.md) | [`alert`](../tables/alert.md)<br>[`fluentbit_CL`](../tables/fluentbit-cl.md) |
 
 ## Release Notes
 

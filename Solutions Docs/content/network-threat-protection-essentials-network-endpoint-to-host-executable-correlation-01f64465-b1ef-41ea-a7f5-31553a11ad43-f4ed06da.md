@@ -16,6 +16,14 @@
 | **Event Vendor** | Trend Micro |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials/Analytic%20Rules/NetworkEndpointCorrelation.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
+
 ---
 
 **Browse:**

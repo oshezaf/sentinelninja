@@ -12,6 +12,12 @@ This query provides insights on users who clicked on a suspicious URL
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/URL%20Click/User%20clicks%20on%20malicious%20inbound%20emails.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`UrlClickEvents`](../tables/urlclickevents.md)
+
 ---
 
 **Browse:**

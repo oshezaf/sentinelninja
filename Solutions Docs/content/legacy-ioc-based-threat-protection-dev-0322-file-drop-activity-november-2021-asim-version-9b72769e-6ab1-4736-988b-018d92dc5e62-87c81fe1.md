@@ -12,6 +12,12 @@ This query hunts for file creation events linked to Dev-0322's compromise of ZOH
 | **Required Connectors** | [MicrosoftDefenderAdvancedThreatProtection](../connectors/microsoftdefenderadvancedthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection/Hunting%20Queries/Dev-0322FileDropActivityNovember2021%28ASIMVersion%29.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityAlert`](../tables/securityalert.md)
+
 ---
 
 **Browse:**

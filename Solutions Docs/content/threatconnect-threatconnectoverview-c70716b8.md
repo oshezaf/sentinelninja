@@ -6,6 +6,13 @@
 | **Solution** | [ThreatConnect](../solutions/threatconnect.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatConnect/Workbooks/ThreatConnectOverview.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityAlert`](../tables/securityalert.md)
+- [`SecurityIncident`](../tables/securityincident.md)
+
 ---
 
 **Browse:**

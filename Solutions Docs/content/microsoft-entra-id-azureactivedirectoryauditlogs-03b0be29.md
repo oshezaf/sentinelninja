@@ -11,6 +11,7 @@
 This content item queries data from the following tables:
 
 - [`AuditLogs`](../tables/auditlogs.md)
+- [`Operation`](../tables/operation.md)
 
 ---
 

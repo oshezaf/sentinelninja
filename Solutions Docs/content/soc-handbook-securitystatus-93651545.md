@@ -10,7 +10,13 @@
 
 This content item queries data from the following tables:
 
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+- [`DnsEvents`](../tables/dnsevents.md)
 - [`SecurityEvent`](../tables/securityevent.md)
+- [`VMConnection`](../tables/vmconnection.md)
+- [`W3CIISLog`](../tables/w3ciislog.md)
+- [`WindowsFirewall`](../tables/windowsfirewall.md)
+- [`WireData`](../tables/wiredata.md)
 
 ---
 

@@ -18,6 +18,7 @@ This solution contains multiple Data Connectors that help ingest Falcon Data Rep
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

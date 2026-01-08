@@ -12,6 +12,13 @@
 | **Required Connectors** | [DNS](../connectors/dns.md), [ASimDnsActivityLogs](../connectors/asimdnsactivitylogs.md), [AzureMonitor(VMInsights)](../connectors/azuremonitor-vminsights.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials/Hunting%20Queries/CobaltDNSBeacon.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DnsEvents`](../tables/dnsevents.md)
+- [`VMConnection`](../tables/vmconnection.md)
+
 ---
 
 **Browse:**

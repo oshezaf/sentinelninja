@@ -1,40 +1,23 @@
-# Update
+# UPDATE
 
-Reference for Update table in Azure Monitor Logs.
-
-| Attribute | Value |
-|:----------|:------|
-| **Category** | IT & Management Tools, Security |
-| **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✓ Yes |
-| **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update) |
-
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
-- [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+- [Infoblox](../solutions/infoblox.md)
+- [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md)
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+**In solution [Infoblox](../solutions/infoblox.md):**
+- [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md)
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.compute/virtualmachines`
-- `microsoft.conenctedvmwarevsphere/virtualmachines`
-- `microsoft.azurestackhci/virtualmachines`
-- `microsoft.scvmm/virtualmachines`
-- `microsoft.compute/virtualmachinescalesets`
-- `microsoft.automation/automationaccounts`
+**In solution [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md):**
+- [InfobloxCDCB1TDWorkbook](../content/infoblox-cloud-data-connector-infobloxcdcb1tdworkbook-a058ef8d.md)
 
 ---
 

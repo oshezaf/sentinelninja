@@ -10,13 +10,14 @@ Reference for StorageTableLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagetablelogs) |
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [Azure Storage](../solutions/azure-storage.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
+- [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (1)
 
@@ -26,7 +27,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (9)
 
 ### Analytic Rules (1)
 
@@ -45,10 +46,13 @@ This table is ingested by the following connectors:
 - [Detect New Scheduled Task Entry Creations](../content/malware-protection-essentials-detect-new-scheduled-task-entry-creations-4dc0aae4-6375-4670-b138-8c42490ba206-84bcf125.md)
 - [Executable Files Created in Uncommon Locations](../content/malware-protection-essentials-executable-files-created-in-uncommon-locations-ab8ddb26-050c-40aa-aaf0-bfb7e3eeb05f-1af678b6.md)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)
+
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
 ## Resource Types
 

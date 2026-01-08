@@ -18,6 +18,8 @@ This query maps any GreyNoise IP indicators of compromise (IOCs) from threat int
 
 This content item queries data from the following tables:
 
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 
 ---

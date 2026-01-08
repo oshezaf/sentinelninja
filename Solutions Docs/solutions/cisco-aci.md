@@ -20,6 +20,7 @@ The [Cisco Application Centric Infrastructure (ACI)](https://www.cisco.com/c/en/
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-03 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ACI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ACI) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

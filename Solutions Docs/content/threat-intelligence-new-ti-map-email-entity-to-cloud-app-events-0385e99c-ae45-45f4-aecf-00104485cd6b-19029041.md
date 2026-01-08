@@ -18,6 +18,7 @@ Identifies compromises and attacks and detect malicious activities in one's emai
 
 This content item queries data from the following tables:
 
+- [`CloudAppEvents`](../tables/cloudappevents.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
 
 ---

@@ -17,6 +17,7 @@ The [Dragos Platform](https://www.dragos.com/) is the leading Industrial Cyber S
 | **First Published** | 2025-01-23 |
 | **Last Updated** | 2025-01-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

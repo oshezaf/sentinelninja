@@ -28,7 +28,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (43)
+## Content Items Using This Table (44)
 
 ### Analytic Rules (5)
 
@@ -39,7 +39,7 @@ This table is used by the following solutions:
 - [Suspicious Sign In Followed by MFA Modification](../content/microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.md)
 - [User Accounts - Sign in Failure due to CA Spikes](../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.md)
 
-### Hunting Queries (31)
+### Hunting Queries (32)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 - [Login attempts using Legacy Auth](../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.md)
@@ -76,6 +76,7 @@ This table is used by the following solutions:
 - [Anomalous Resource Access](../content/ueba-essentials-anomalous-resource-access-782f3bad-31f7-468f-8f58-3b74fc931914-129885e1.md)
 - [Anomalous Sign-in by New or Dormant Account](../content/ueba-essentials-anomalous-sign-in-by-new-or-dormant-account-bb3bb9da-9598-4d1f-af78-7cc2fd413b0b-02e8af9c.md)
 - [Anomalous action performed in tenant by privileged user](../content/ueba-essentials-anomalous-action-performed-in-tenant-by-privileged-user-9ba2b304-7767-4d54-b03c-b0161ae87cc7-f2b7cf70.md)
+- [Anomalous connection from highly privileged user](../content/ueba-essentials-anomalous-connection-from-highly-privileged-user-741fdf32-e002-4577-ac9b-839fb49f128e-22b5a707.md)
 - [Anomalous login activity originated from Botnet, Tor proxy or C2](../content/ueba-essentials-anomalous-login-activity-originated-from-botnet,-tor-proxy-or-c2-c3b09dd3-ee50-41ae-b863-8603620e5f48-79aee61c.md)
 - [Dormant Local Admin Logon](../content/ueba-essentials-dormant-local-admin-logon-2e20ec77-8d50-4959-a70d-79c341ee2c37-d3f55f49.md)
 - [Dormant account activity from uncommon country](../content/ueba-essentials-dormant-account-activity-from-uncommon-country-7c303408-f913-42f8-8d7b-9eb64a229c4d-510c1ff6.md)

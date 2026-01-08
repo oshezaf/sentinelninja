@@ -14,6 +14,12 @@ This query identifies any URL indicators of compromise (IOCs) from threat intell
 | **Required Connectors** | [MicrosoftCloudAppSecurity](../connectors/microsoftcloudappsecurity.md), [AzureSecurityCenter](../connectors/azuresecuritycenter.md), [ThreatIntelligence](../connectors/threatintelligence.md), [ThreatIntelligenceTaxii](../connectors/threatintelligencetaxii.md), [MicrosoftDefenderThreatIntelligence](../connectors/microsoftdefenderthreatintelligence.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Analytic%20Rules/URLEntity_SecurityAlerts.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityAlert`](../tables/securityalert.md)
+
 ---
 
 **Browse:**

@@ -20,6 +20,7 @@ The [Cisco Secure Cloud Analytics](https://www.cisco.com/c/en/us/products/securi
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Cloud%20Analytics](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Cloud%20Analytics) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

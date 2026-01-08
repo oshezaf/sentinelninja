@@ -20,6 +20,7 @@ The [ForgeRock Common Audit](https://www.forgerock.com/platform/common-services/
 | **Author** | ForgeRock - isv@email.com |
 | **First Published** | 2022-05-04 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForgeRock%20Common%20Audit%20for%20CEF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForgeRock%20Common%20Audit%20for%20CEF) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

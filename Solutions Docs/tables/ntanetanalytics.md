@@ -14,10 +14,11 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) - NSG and VNet flow log schema and data aggregation
 
-## Solutions (9)
+## Solutions (10)
 
 This table is used by the following solutions:
 
+- [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -30,7 +31,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (29)
+## Content Items Using This Table (30)
 
 ### Analytic Rules (16)
 
@@ -83,7 +84,10 @@ This table is used by the following solutions:
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting IP All Actors](../content/recorded-future-recordedfuture-threat-hunting-ip-all-actors-7b5eb44d-3533-440e-9774-73a4d99bc2b2-0bac2271.md)
 
-### Workbooks (3)
+### Workbooks (4)
+
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)

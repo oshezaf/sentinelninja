@@ -15,6 +15,13 @@ This query extracts the operating system from the UserAgent header and compares 
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday/Analytic%20Rules/AzureADUserAgentOSmissmatch.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`SigninLogs`](../tables/signinlogs.md)
+
 ---
 
 **Browse:**

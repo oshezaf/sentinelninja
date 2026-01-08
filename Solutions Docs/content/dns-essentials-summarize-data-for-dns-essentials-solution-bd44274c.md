@@ -19,7 +19,7 @@ This playbook summarizes data for DNS Essentials Solution and ingests into custo
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | read |
 | [`Corelight_CL`](../tables/corelight-cl.md) | read |
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) | read/write |
-| [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) | write |
+| [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) | read/write |
 | [`DnsEvents`](../tables/dnsevents.md) | read |
 | [`Event`](../tables/event.md) | read |
 | [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | read |

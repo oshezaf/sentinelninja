@@ -19,6 +19,7 @@ This detection looks for cases of close-time proximity between incoming network 
 
 This content item queries data from the following tables:
 
+- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
 - [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
 
 ---

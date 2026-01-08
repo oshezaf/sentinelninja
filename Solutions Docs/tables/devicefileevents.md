@@ -11,17 +11,26 @@ File creation, modification, and other file system events
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table) |
 
-## Solutions (7)
+## Solutions (16)
 
 This table is used by the following solutions:
 
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
+- [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
+- [DORA Compliance](../solutions/dora-compliance.md)
 - [FalconFriday](../solutions/falconfriday.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
+- [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
+- [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [NISTSP80053](../solutions/nistsp80053.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
+- [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
+- [Zinc Open Source](../solutions/zinc-open-source.md)
 
 ## Connectors (1)
 
@@ -31,22 +40,39 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (28)
+## Content Items Using This Table (40)
 
-### Analytic Rules (7)
+### Analytic Rules (14)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 - [ASR Bypassing Writing Executable Content](../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.md)
 - [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md)
+- [Ingress Tool Transfer - Certutil](../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.md)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 - [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.md)
+
+**In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
+- [Dataverse - Terminated employee exfiltration to USB drive](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md)
 - [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md)
 - [Remote File Creation with PsExec](../content/microsoft-defender-xdr-remote-file-creation-with-psexec-35ab0d58-baab-4154-87ed-fa2f69797e9e-384e377c.md)
 - [SUNBURST and SUPERNOVA backdoor hashes](../content/microsoft-defender-xdr-sunburst-and-supernova-backdoor-hashes-a3c144f9-8051-47d4-ac29-ffb0c312c910-6f0d9998.md)
+
+**In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
+- [TI map File Hash to DeviceFileEvents Event](../content/threat-intelligence-ti-map-file-hash-to-devicefileevents-event-bc0eca2e-db50-44e6-8fa3-b85f91ff5ee7-89fca104.md)
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+- [TI map File Hash to DeviceFileEvents Event](../content/threat-intelligence-new-ti-map-file-hash-to-devicefileevents-event-d6f04915-4471-4cb3-b163-a8b72997cf72-94f54e22.md)
+
+**In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
+- [Identify SysAid Server web shell creation](../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md)
+
+**In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
+- [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
+- [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
 
 ### Hunting Queries (18)
 
@@ -78,16 +104,31 @@ This table is ingested by the following connectors:
 - [Possible webshell drop](../content/web-shells-threat-protection-possible-webshell-drop-8f2a256f-c9f1-4f0a-941a-a5a131d4bf3b-5ddc946f.md)
 - [UMWorkerProcess Creating Webshell](../content/web-shells-threat-protection-umworkerprocess-creating-webshell-60d15bd4-1fad-4a70-bc3b-094dc1c5e554-5e3339db.md)
 
-### Workbooks (3)
+### Workbooks (8)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
+
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
+- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
+
+**In solution [DORA Compliance](../solutions/dora-compliance.md):**
+- [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)
+
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
+
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 ---
 

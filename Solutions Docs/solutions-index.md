@@ -15,7 +15,7 @@ This reference documentation provides detailed information about data connectors
 
 ## Overview
 
-This documentation covers **484 solutions**, of which **303** include data connectors, providing access to **378 unique connectors** and **811 tables**.
+This documentation covers **484 solutions**, of which **303** include data connectors, providing access to **378 unique connectors** and **815 tables**.
 
 ## How This Documentation is Organized
 

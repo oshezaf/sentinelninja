@@ -19,6 +19,7 @@
 This content item queries data from the following tables:
 
 - [`AWSGuardDuty`](../tables/awsguardduty.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 
 ---
 

@@ -12,6 +12,12 @@ This hunting query identifies users who have been made Owner of multiple Teams.
 | **Required Connectors** | [Office365](../connectors/office365.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365/Hunting%20Queries/MultiTeamOwner.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`OfficeActivity`](../tables/officeactivity.md)
+
 ---
 
 **Browse:**

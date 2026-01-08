@@ -10,20 +10,26 @@ Reference for WireData table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wiredata) |
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
 ### Hunting Queries (1)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md)
+
+### Workbooks (1)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
 
 ## Resource Types
 

@@ -18,7 +18,9 @@ Identifies a match in SecurityEvent table from any Email IOC from TI
 
 This content item queries data from the following tables:
 
+- [`SecurityEvent`](../tables/securityevent.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 

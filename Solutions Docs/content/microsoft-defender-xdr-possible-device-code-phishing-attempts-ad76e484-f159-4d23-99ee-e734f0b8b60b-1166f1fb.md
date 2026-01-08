@@ -14,6 +14,13 @@ This query helps hunting for possible device code Phishing attempts
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)
+- [`UrlClickEvents`](../tables/urlclickevents.md)
+
 ---
 
 **Browse:**

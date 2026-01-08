@@ -6,6 +6,12 @@
 | **Solution** | [Corelight](../solutions/corelight.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight/Workbooks/Corelight.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`Alert`](../tables/alert.md)
+
 ---
 
 **Browse:**

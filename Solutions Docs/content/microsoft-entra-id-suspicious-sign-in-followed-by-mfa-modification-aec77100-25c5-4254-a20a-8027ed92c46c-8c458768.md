@@ -19,6 +19,7 @@ This query looks uses Microsoft Sentinel's UEBA features to look for suspicious 
 
 This content item queries data from the following tables:
 
+- [`AuditLogs`](../tables/auditlogs.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
 
 ---

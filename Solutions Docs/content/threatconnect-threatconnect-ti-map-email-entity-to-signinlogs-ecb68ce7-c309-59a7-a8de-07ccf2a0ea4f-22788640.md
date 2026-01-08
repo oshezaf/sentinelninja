@@ -18,6 +18,8 @@ Identifies a match in SigninLogs table from any Email IOC from ThreatConnect TI
 
 This content item queries data from the following tables:
 
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 
 ---

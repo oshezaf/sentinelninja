@@ -12,6 +12,12 @@ This query helps hunt for emails with malicious attachments based on SH256 hash 
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Hunting/Hunt%20for%20malicious%20attachments%20using%20external%20IOC%20source.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)
+
 ---
 
 **Browse:**

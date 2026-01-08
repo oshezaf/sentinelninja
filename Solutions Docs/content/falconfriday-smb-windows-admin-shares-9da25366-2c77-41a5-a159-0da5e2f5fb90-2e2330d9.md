@@ -15,6 +15,13 @@ This query is based on detecting incoming RPC/TCP on the SCM, followed by the st
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday/Analytic%20Rules/SMBWindowsAdminShares.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+
 ---
 
 **Browse:**

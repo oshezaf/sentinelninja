@@ -21,6 +21,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **First Published** | 2021-07-06 |
 | **Last Updated** | 2022-03-24 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Apex%20One](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Apex%20One) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

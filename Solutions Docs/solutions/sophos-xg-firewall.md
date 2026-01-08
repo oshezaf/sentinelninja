@@ -20,6 +20,7 @@ The [Sophos XG Firewall](https://www.sophos.com/products/next-gen-firewall) solu
 | **Author** | SophosXGFirewall |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20XG%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20XG%20Firewall) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

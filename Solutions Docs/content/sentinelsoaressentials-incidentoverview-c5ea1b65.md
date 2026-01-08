@@ -10,8 +10,10 @@
 
 This content item queries data from the following tables:
 
+- [`Alert`](../tables/alert.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
+- [`alert`](../tables/alert.md)
 
 ---
 

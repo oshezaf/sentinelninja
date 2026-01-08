@@ -14,15 +14,16 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (8)
 
-### Analytic Rules (4)
+### Analytic Rules (5)
 
 **In solution [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md):**
 - [Employee account deleted](../content/lastpass-enterprise-activity-monitoring-employee-account-deleted-8a2cc466-342d-4ebb-8871-f9e1d83a24a5-b66df220.md)
 - [Failed sign-ins into LastPass due to MFA](../content/lastpass-enterprise-activity-monitoring-failed-sign-ins-into-lastpass-due-to-mfa-760b8467-e6cc-4006-9149-5696845c1a54-fcbe15ea.md)
 - [Highly Sensitive Password Accessed](../content/lastpass-enterprise-activity-monitoring-highly-sensitive-password-accessed-b39e6482-ab7e-4817-813d-ec910b64b26e-7f4d83e0.md)
 - [TI map IP entity to LastPass data](../content/lastpass-enterprise-activity-monitoring-ti-map-ip-entity-to-lastpass-data-2a723664-22c2-4d3e-bbec-5843b90166f3-0a2d4dc2.md)
+- [Unusual Volume of Password Updated or Removed](../content/lastpass-enterprise-activity-monitoring-unusual-volume-of-password-updated-or-removed-a3bbdf60-0a6d-4cc2-b1d1-dd70aca184ce-bcbcf9a8.md)
 
 ### Hunting Queries (2)
 

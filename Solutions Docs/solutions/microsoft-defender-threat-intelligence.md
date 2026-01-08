@@ -33,10 +33,11 @@ This solution queries **1 table(s)** from its content items:
 
 ### Internal Tables
 
-The following **1 table(s)** are used internally by this solution's playbooks:
+The following **2 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
 
 ## Content Items
@@ -52,7 +53,7 @@ This solution includes **8 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MicrosoftThreatIntelligence](../content/microsoft-defender-threat-intelligence-microsoftthreatintelligence-e224017f.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [MicrosoftThreatIntelligence](../content/microsoft-defender-threat-intelligence-microsoftthreatintelligence-e224017f.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

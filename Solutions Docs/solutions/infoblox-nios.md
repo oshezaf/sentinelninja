@@ -20,6 +20,7 @@ The [Infoblox Network Identity Operating System (NIOS)](https://www.infoblox.com
 | **Author** | Infoblox |
 | **First Published** | 2022-04-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

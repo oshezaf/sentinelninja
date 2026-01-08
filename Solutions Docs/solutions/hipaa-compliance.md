@@ -35,11 +35,12 @@ This solution queries **3 table(s)** from its content items:
 
 ### Internal Tables
 
-The following **2 table(s)** are used internally by this solution's playbooks:
+The following **3 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | Workbooks |
 | [`watchlist`](../tables/watchlist.md) | Workbooks |
 
 ## Content Items
@@ -54,7 +55,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`watchlist`](../tables/watchlist.md) |
+| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md)<br>[`watchlist`](../tables/watchlist.md) |
 
 ## Release Notes
 

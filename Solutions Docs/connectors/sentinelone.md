@@ -16,6 +16,7 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
+| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | — |
 
 ## Permissions

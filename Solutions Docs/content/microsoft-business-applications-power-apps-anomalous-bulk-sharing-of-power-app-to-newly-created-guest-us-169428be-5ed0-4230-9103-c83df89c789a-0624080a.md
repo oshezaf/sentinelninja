@@ -16,6 +16,7 @@ The query detects anomalous attempts to perform bulk sharing of Power App to new
 
 This content item queries data from the following tables:
 
+- [`AuditLogs`](../tables/auditlogs.md)
 - [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)
 
 ---

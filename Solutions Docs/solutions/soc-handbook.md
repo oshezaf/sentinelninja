@@ -27,28 +27,73 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **9 table(s)** from its content items:
+This solution queries **52 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | Workbooks |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | Workbooks |
+| [`AADProvisioningLogs`](../tables/aadprovisioninglogs.md) | Workbooks |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | Workbooks |
+| [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | Workbooks |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | Workbooks |
+| [`Alert`](../tables/alert.md) | Workbooks |
+| [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
+| [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Workbooks |
 | [`DeviceEvents`](../tables/deviceevents.md) | Workbooks |
+| [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) | Workbooks |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | Workbooks |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | Workbooks |
+| [`DeviceInfo`](../tables/deviceinfo.md) | Workbooks |
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | Workbooks |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
+| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | Workbooks |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Workbooks |
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | Workbooks |
 | [`DnsEvents`](../tables/dnsevents.md) | Workbooks |
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | Workbooks |
+| [`EmailEvents`](../tables/emailevents.md) | Workbooks |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | Workbooks |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | Workbooks |
 | [`HuntingBookmark`](../tables/huntingbookmark.md) | Workbooks |
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | Workbooks |
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | Workbooks |
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
+| [`MDCFileIntegrityMonitoringEvents`](../tables/mdcfileintegritymonitoringevents.md) | Workbooks |
+| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | Workbooks |
+| [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
+| [`Operation`](../tables/operation.md) | Workbooks |
 | [`ProtectionStatus`](../tables/protectionstatus.md) | Workbooks |
+| [`SecurityBaseline`](../tables/securitybaseline.md) | Workbooks |
+| [`SecurityBaselineSummary`](../tables/securitybaselinesummary.md) | Workbooks |
+| [`SecurityDetection`](../tables/securitydetection.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
+| [`Update`](../tables/update.md) | Workbooks |
+| [`UpdateSummary`](../tables/updatesummary.md) | Workbooks |
 | [`Usage`](../tables/usage.md) | Workbooks |
+| [`VMConnection`](../tables/vmconnection.md) | Workbooks |
+| [`W3CIISLog`](../tables/w3ciislog.md) | Workbooks |
+| [`WindowsFirewall`](../tables/windowsfirewall.md) | Workbooks |
+| [`WireData`](../tables/wiredata.md) | Workbooks |
+| [`alert`](../tables/alert.md) | Workbooks |
 
 ### Internal Tables
 
-The following **4 table(s)** are used internally by this solution's playbooks:
+The following **6 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AlertEvidence`](../tables/alertevidence.md) | Workbooks |
 | [`Anomalies`](../tables/anomalies.md) | Workbooks |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | Workbooks |
+| [`IdentityInfo`](../tables/identityinfo.md) | Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
 
@@ -68,14 +113,14 @@ This solution includes **13 content item(s)**:
 | [AnomaliesVisualization](../content/soc-handbook-anomaliesvisualization-8cb75567.md) | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md) | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [AttackSurfaceReduction](../content/soc-handbook-attacksurfacereduction-52743d4b.md) | [`DeviceEvents`](../tables/deviceevents.md) |
-| [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md) | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`Usage`](../tables/usage.md) |
+| [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md) | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADProvisioningLogs`](../tables/aadprovisioninglogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`ADFSSignInLogs`](../tables/adfssigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CloudAppEvents`](../tables/cloudappevents.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`DeviceLogonEvents`](../tables/devicelogonevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DeviceRegistryEvents`](../tables/deviceregistryevents.md)<br>[`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`IdentityLogonEvents`](../tables/identitylogonevents.md)<br>[`IdentityQueryEvents`](../tables/identityqueryevents.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`MDCFileIntegrityMonitoringEvents`](../tables/mdcfileintegritymonitoringevents.md)<br>[`McasShadowItReporting`](../tables/mcasshadowitreporting.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityBaselineSummary`](../tables/securitybaselinesummary.md)<br>[`SecurityDetection`](../tables/securitydetection.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Usage`](../tables/usage.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts-8f5f1c6c.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) | [`Alert`](../tables/alert.md)<br>[`alert`](../tables/alert.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) | [`DnsEvents`](../tables/dnsevents.md)<br>[`HuntingBookmark`](../tables/huntingbookmark.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`DeviceLogonEvents`](../tables/devicelogonevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`HuntingBookmark`](../tables/huntingbookmark.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityBaselineSummary`](../tables/securitybaselinesummary.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Update`](../tables/update.md)<br>[`UpdateSummary`](../tables/updatesummary.md)<br>[`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md) | [`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [SecurityOperationsEfficiency](../content/soc-handbook-securityoperationsefficiency-d083776e.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
-| [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) | [`SecurityEvent`](../tables/securityevent.md) |
+| [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`WireData`](../tables/wiredata.md) |
 | [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Release Notes

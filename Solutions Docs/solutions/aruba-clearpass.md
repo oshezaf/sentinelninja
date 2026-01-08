@@ -20,6 +20,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Author** | Aruba Networks |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

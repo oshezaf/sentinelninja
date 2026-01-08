@@ -15,6 +15,14 @@
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/Analytic%20Rules/AnomalousUserAppSigninLocationIncrease-detection.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`Anomalies`](../tables/anomalies.md)
+- [`SigninLogs`](../tables/signinlogs.md)
+
 ---
 
 **Browse:**

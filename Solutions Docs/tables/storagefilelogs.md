@@ -10,7 +10,7 @@ Reference for StorageFileLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagefilelogs) |
 
-## Solutions (4)
+## Solutions (5)
 
 This table is used by the following solutions:
 
@@ -18,6 +18,7 @@ This table is used by the following solutions:
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+- [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md)
 
 ## Connectors (1)
 
@@ -27,12 +28,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (9)
+## Content Items Using This Table (10)
 
-### Analytic Rules (1)
+### Analytic Rules (2)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 - [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.md)
+
+**In solution [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md):**
+- [Linked Malicious Storage Artifacts](../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d-6de5b72c.md)
 
 ### Hunting Queries (6)
 

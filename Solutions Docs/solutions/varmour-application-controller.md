@@ -21,6 +21,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Author** | vArmour |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/vArmour%20Application%20Controller](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/vArmour%20Application%20Controller) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

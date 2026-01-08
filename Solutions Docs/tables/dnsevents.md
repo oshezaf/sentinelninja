@@ -10,22 +10,26 @@ Reference for DnsEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsevents) |
 
-## Solutions (12)
+## Solutions (16)
 
 This table is used by the following solutions:
 
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
+- [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md)
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+- [NISTSP80053](../solutions/nistsp80053.md)
 - [Recorded Future](../solutions/recorded-future.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
 - [Windows Server DNS](../solutions/windows-server-dns.md)
+- [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
+- [Zinc Open Source](../solutions/zinc-open-source.md)
 
 ## Connectors (1)
 
@@ -35,9 +39,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (53)
+## Content Items Using This Table (59)
 
-### Analytic Rules (28)
+### Analytic Rules (29)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
@@ -87,7 +91,13 @@ This table is ingested by the following connectors:
 - [Potential DGA detected](../content/windows-server-dns-potential-dga-detected-a0907abe-6925-4d90-af2b-c7e89dc201a6-678f161d.md)
 - [Rare client observed with high reverse DNS lookup count](../content/windows-server-dns-rare-client-observed-with-high-reverse-dns-lookup-count-15ae38a2-2e29-48f7-883f-863fb25a5a06-e3f85e2d.md)
 
-### Hunting Queries (20)
+**In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
+- [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
+
+### Hunting Queries (21)
+
+**In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
+- [Cobalt Strike DNS Beaconing](../content/attacker-tools-threat-protection-essentials-cobalt-strike-dns-beaconing-dde206fc-3f0b-4175-bb5d-42d2aae9d4c9-35f15bcd.md)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [CVE-2020-1350 (SIGRED) exploitation pattern (ASIM DNS Solution)](../content/dns-essentials-cve-2020-1350-sigred-exploitation-pattern-asim-dns-solution-0a8f5777-f38a-4c37-b531-411bdecef976-beaf980e.md)
@@ -117,19 +127,29 @@ This table is ingested by the following connectors:
 - [Potential DGA detected](../content/windows-server-dns-potential-dga-detected-543e1ec6-ee5e-4368-aaa6-405f0551ba5c-d483d155.md)
 - [Solorigate DNS Pattern](../content/windows-server-dns-solorigate-dns-pattern-0fb54a5c-5599-4ff9-80a2-f788c3ed285e-42e0ed66.md)
 
-### Workbooks (4)
+### Workbooks (8)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md)
 
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
+
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
 
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
+- [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
 - [Dns](../content/windows-server-dns-dns-ed7f9abb.md)
+
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
 ## Resource Types
 

@@ -14,7 +14,7 @@ Reference for SecurityAlert table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [Security alert schema reference](https://learn.microsoft.com/en-us/azure/sentinel/security-alert-schema) - Describes the SecurityAlert table schema and field definitions
 
-## Solutions (38)
+## Solutions (45)
 
 This table is used by the following solutions:
 
@@ -24,8 +24,10 @@ This table is used by the following solutions:
 - [Azure kubernetes Service](../solutions/azure-kubernetes-service.md)
 - [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
+- [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
+- [DNS Essentials](../solutions/dns-essentials.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
 - [Dynatrace](../solutions/dynatrace.md)
 - [ExtraHop](../solutions/extrahop.md)
@@ -34,8 +36,10 @@ This table is used by the following solutions:
 - [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
 - [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
+- [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
+- [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md)
 - [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md)
@@ -53,9 +57,12 @@ This table is used by the following solutions:
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
+- [ThreatConnect](../solutions/threatconnect.md)
 - [Vectra XDR](../solutions/vectra-xdr.md)
 - [Web Session Essentials](../solutions/web-session-essentials.md)
+- [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
+- [Zinc Open Source](../solutions/zinc-open-source.md)
 
 ## Connectors (10)
 
@@ -74,9 +81,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (80)
+## Content Items Using This Table (101)
 
-### Analytic Rules (33)
+### Analytic Rules (40)
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 - [Azure DevOps Pipeline modified by a new user](../content/azuredevopsauditing-azure-devops-pipeline-modified-by-a-new-user-155e9134-d5ad-4a6f-88f3-99c220040b66-1f2f0f72.md)
@@ -101,8 +108,11 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 - [Dataverse - Suspicious use of TDS endpoint](../content/microsoft-business-applications-dataverse-suspicious-use-of-tds-endpoint-d875af10-6bb9-4d6a-a6e4-78439a98bf4b-79440ea8.md)
 - [Dataverse - Terminated employee exfiltration over email](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-over-email-de039242-47e0-43fa-84d7-b6be24305349-d5733918.md)
+- [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+- [AV detections related to SpringShell Vulnerability](../content/microsoft-defender-xdr-av-detections-related-to-springshell-vulnerability-3bd33158-3f0b-47e3-a50f-7c20a1b88038-091061ce.md)
+- [AV detections related to Tarrask malware](../content/microsoft-defender-xdr-av-detections-related-to-tarrask-malware-1785d372-b9fe-4283-96a6-3a1d83cabfd1-8b612d87.md)
 - [AV detections related to Ukraine threats](../content/microsoft-defender-xdr-av-detections-related-to-ukraine-threats-b6685757-3ed1-4b05-a5bd-2cacadc86c2a-396e651e.md)
 
 **In solution [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md):**
@@ -128,21 +138,38 @@ This table is ingested by the following connectors:
 - [User impersonation by Identity Protection alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
+- [TI Map URL Entity to SecurityAlert Data](../content/threat-intelligence-ti-map-url-entity-to-securityalert-data-f30a47c1-65fb-42b1-a7f4-00941c12550b-d5b8e27a.md)
 - [TI map Domain entity to SecurityAlert](../content/threat-intelligence-ti-map-domain-entity-to-securityalert-87890d78-3e05-43ec-9ab9-ba32f4e01250-cbcbd86c.md)
 - [TI map Email entity to SecurityAlert](../content/threat-intelligence-ti-map-email-entity-to-securityalert-a2e36ce0-da4d-4b6e-88c6-4e40161c5bfc-2cc60265.md)
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+- [TI Map URL Entity to SecurityAlert Data](../content/threat-intelligence-new-ti-map-url-entity-to-securityalert-data-3b6bdb38-93c5-452f-ab3a-97a3d1320d16-46a3b027.md)
 - [TI map Domain entity to SecurityAlert](../content/threat-intelligence-new-ti-map-domain-entity-to-securityalert-df88b403-1cb9-49ea-a43d-b6613051cf7f-17792409.md)
 - [TI map Email entity to SecurityAlert](../content/threat-intelligence-new-ti-map-email-entity-to-securityalert-4b451ade-ed28-48e2-8fe7-60ae83ab2fa5-53e6c566.md)
 
-### Hunting Queries (6)
+**In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
+- [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.md)
+
+**In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
+- [AV detections related to Zinc actors](../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090-62580aab.md)
+
+### Hunting Queries (13)
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 - [Azure DevOps - New Package Feed Created](../content/azuredevopsauditing-azure-devops-new-package-feed-created-3d1aa540-b4c7-4789-8c4c-4174b3c2371f-bf70da4e.md)
 - [Azure DevOps - New Release Pipeline Created](../content/azuredevopsauditing-azure-devops-new-release-pipeline-created-2dfa9c23-1590-4589-995a-d1486be66028-f51a2902.md)
 
+**In solution [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md):**
+- [Application Granted EWS Permissions](../content/cloud-identity-threat-protection-essentials-application-granted-ews-permissions-c7941212-4ff9-4d2d-b38d-54d78fa087cc-2ba49c1b.md)
+
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
+- [Dev-0056 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0056-command-line-activity-november-2021-e2629949-2043-4421-8064-bca23c8491dd-1cdb73c2.md)
+- [Dev-0322 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-78fa22f9-0c13-4847-bbe6-6a7aa1b47547-84856956.md)
+- [Dev-0322 Command Line Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-asim-version-6bfea14f-2122-46b3-8f8b-3947e0fb6d92-de921320.md)
+- [Dev-0322 File Drop Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022-414e8f6c.md)
+- [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-asim-version-9b72769e-6ab1-4736-988b-018d92dc5e62-87c81fe1.md)
 - [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.md)
+- [Retrospective hunt for Forest Blizzard IP IOCs](../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.md)
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 - [Dataverse - Activity after Microsoft Entra alerts](../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.md)
@@ -151,7 +178,7 @@ This table is ingested by the following connectors:
 - [Insider Risk_Entity Anomaly Followed by IRM Alert](../content/microsoftpurviewinsiderriskmanagement-insider-risk-entity-anomaly-followed-by-irm-alert-ea5d043f-80ef-452c-a31a-b584e485b2be-9c9a3b63.md)
 - [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md)
 
-### Workbooks (33)
+### Workbooks (40)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)
@@ -174,6 +201,9 @@ This table is ingested by the following connectors:
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 - [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
 
+**In solution [DNS Essentials](../solutions/dns-essentials.md):**
+- [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md)
+
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 - [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)
 
@@ -190,8 +220,14 @@ This table is ingested by the following connectors:
 **In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
 - [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md)
 
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
+
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+**In solution [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md):**
+- [MicrosoftThreatIntelligence](../content/microsoft-defender-threat-intelligence-microsoftthreatintelligence-e224017f.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md)
@@ -215,6 +251,7 @@ This table is ingested by the following connectors:
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AnalyticsEfficiency](../content/soc-handbook-analyticsefficiency-ba1ee629.md)
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts-8f5f1c6c.md)
 - [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md)
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
@@ -224,9 +261,18 @@ This table is ingested by the following connectors:
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
 - [IncidentOverview](../content/sentinelsoaressentials-incidentoverview-c5ea1b65.md)
 
+**In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
+- [ThreatIntelligence](../content/threat-intelligence-threatintelligence-3dd5d2b4.md)
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+- [ThreatIntelligenceNew](../content/threat-intelligence-new-threatintelligencenew-535206c7.md)
+
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
 - [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md)
 - [ThreatAnalysis&Response](../content/threatanalysis&response-threatanalysis&response-56e66291.md)
+
+**In solution [ThreatConnect](../solutions/threatconnect.md):**
+- [ThreatConnectOverview](../content/threatconnect-threatconnectoverview-c70716b8.md)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
 - [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md)

@@ -21,6 +21,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **First Published** | 2022-04-27 |
 | **Last Updated** | 2022-06-27 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitLab](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitLab) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

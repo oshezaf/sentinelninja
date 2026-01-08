@@ -23,6 +23,23 @@ The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboa
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
+## Tables Reference
+
+This solution queries **2 table(s)** from its content items:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`Update`](../tables/update.md) | Workbooks |
+| [`Usage`](../tables/usage.md) | Workbooks |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's playbooks:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
+
 ## Content Items
 
 This solution includes **20 content item(s)**:
@@ -42,7 +59,7 @@ This solution includes **20 content item(s)**:
 | [Building_a_SOCPartTimeStaff](../content/soc-process-framework-building-a-socparttimestaff-8ef82164.md) | - |
 | [Building_a_SOCSmallStaff](../content/soc-process-framework-building-a-socsmallstaff-4a5be90f.md) | - |
 | [SOCIRPlanning](../content/soc-process-framework-socirplanning-18961eff.md) | - |
-| [SOCProcessFramework](../content/soc-process-framework-socprocessframework-5c770df0.md) | - |
+| [SOCProcessFramework](../content/soc-process-framework-socprocessframework-5c770df0.md) | [`Update`](../tables/update.md)<br>[`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [UpdateSOCMaturityScore](../content/soc-process-framework-updatesocmaturityscore-d96c410d.md) | - |
 
 ### Playbooks

@@ -20,6 +20,7 @@ The [Awake Security Arista Networks solution](https://awakesecurity.com/) for Mi
 | **Author** | Arista Networks - support-security@arista.com |
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 
@@ -35,7 +36,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Awake Security via Legacy Agent](../connectors/aristaawakesecurity.md) | Analytics |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Awake Security via Legacy Agent](../connectors/aristaawakesecurity.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -58,7 +59,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AristaAwakeSecurityWorkbook](../content/aristaawakesecurity-aristaawakesecurityworkbook-9b7c92d9.md) | - |
+| [AristaAwakeSecurityWorkbook](../content/aristaawakesecurity-aristaawakesecurityworkbook-9b7c92d9.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

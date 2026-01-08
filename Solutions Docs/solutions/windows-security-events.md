@@ -32,12 +32,13 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Event`](../tables/event.md) | - | Analytics, Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | [Security Events via Legacy Agent](../connectors/securityevents.md), [Windows Security Events via AMA](../connectors/windowssecurityevents.md) | Analytics, Hunting, Workbooks |
+| [`WindowsEvent`](../tables/windowsevent.md) | - | Hunting |
 
 ## Content Items
 
@@ -55,7 +56,7 @@ This solution includes **72 content item(s)**:
 |:-----|:---------|:--------|:------------|
 | [AD FS Remote Auth Sync Connection](../content/windows-security-events-ad-fs-remote-auth-sync-connection-2f4165a6-c4fb-4e94-861e-37f1b4d6c0e6-a47c2516.md) | Medium | Collection | [`SecurityEvent`](../tables/securityevent.md) |
 | [AD FS Remote HTTP Network Connection](../content/windows-security-events-ad-fs-remote-http-network-connection-d57c33a9-76b9-40e0-9dfa-ff0404546410-3555cd57.md) | Medium | Collection | [`Event`](../tables/event.md) |
-| [AD user enabled and password not set within 48 hours](../content/windows-security-events-ad-user-enabled-and-password-not-set-within-48-hours-62085097-d113-459f-9ea7-30216f2ee6af-03184bd5.md) | Low | Persistence | - |
+| [AD user enabled and password not set within 48 hours](../content/windows-security-events-ad-user-enabled-and-password-not-set-within-48-hours-62085097-d113-459f-9ea7-30216f2ee6af-03184bd5.md) | Low | Persistence | [`SecurityEvent`](../tables/securityevent.md) |
 | [ADFS Database Named Pipe Connection](../content/windows-security-events-adfs-database-named-pipe-connection-dcdf9bfc-c239-4764-a9f9-3612e6dff49c-29ef627a.md) | Medium | Collection | [`Event`](../tables/event.md) |
 | [Excessive Windows Logon Failures](../content/windows-security-events-excessive-windows-logon-failures-2391ce61-8c8d-41ac-9723-d945b2e90720-36e38369.md) | Low | CredentialAccess | [`SecurityEvent`](../tables/securityevent.md) |
 | [Exchange OAB Virtual Directory Attribute Containing Potential Webshell](../content/windows-security-events-exchange-oab-virtual-directory-attribute-containing-potential-webshell-faf1a6ff-53b5-4f92-8c55-4b20e9957594-0a1c5425.md) | High | InitialAccess | [`SecurityEvent`](../tables/securityevent.md) |
@@ -79,15 +80,15 @@ This solution includes **72 content item(s)**:
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
 | [AD Account Lockout](../content/windows-security-events-ad-account-lockout-a308d780-1c39-4fa7-8c21-bb54f174b065-798b810f.md) | Impact | [`SecurityEvent`](../tables/securityevent.md) |
-| [Commands executed by WMI on new hosts - potential Impacket](../content/windows-security-events-commands-executed-by-wmi-on-new-hosts-potential-impacket-9ce755c1-d2e6-4e2f-82d5-7871ec1aef91-d645d9b4.md) | Execution, LateralMovement | - |
+| [Commands executed by WMI on new hosts - potential Impacket](../content/windows-security-events-commands-executed-by-wmi-on-new-hosts-potential-impacket-9ce755c1-d2e6-4e2f-82d5-7871ec1aef91-d645d9b4.md) | Execution, LateralMovement | [`SecurityEvent`](../tables/securityevent.md) |
 | [Crash dump disabled on host](../content/windows-security-events-crash-dump-disabled-on-host-5a3615af-21c9-427e-8bf1-ed2350992bb4-8623f73e.md) | DefenseEvasion | [`SecurityEvent`](../tables/securityevent.md) |
 | [Cscript script daily summary breakdown](../content/windows-security-events-cscript-script-daily-summary-breakdown-36abe031-962d-482e-8e1e-a556ed99d5a3-056955b7.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Decoy User Account Authentication Attempt](../content/windows-security-events-decoy-user-account-authentication-attempt-a4dbc292-87eb-11ec-a8a3-0242ac120002-38f94fe7.md) | LateralMovement | [`SecurityEvent`](../tables/securityevent.md) |
 | [Discord download invoked from cmd line](../content/windows-security-events-discord-download-invoked-from-cmd-line-e7dd442a-0af8-48eb-8358-9e91f4911849-404b8911.md) | Execution, CommandAndControl, Exfiltration | [`SecurityEvent`](../tables/securityevent.md) |
-| [Domain controller installation media creation](../content/windows-security-events-domain-controller-installation-media-creation-7e5f3a9a-542c-417a-a429-4ed500c5c4d8-fec25b2e.md) | CredentialAccess | - |
+| [Domain controller installation media creation](../content/windows-security-events-domain-controller-installation-media-creation-7e5f3a9a-542c-417a-a429-4ed500c5c4d8-fec25b2e.md) | CredentialAccess | [`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 | [Entropy for Processes for a given Host](../content/windows-security-events-entropy-for-processes-for-a-given-host-05208917-82de-46f7-a190-a65739a690f4-59ba7296.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Enumeration of users and groups](../content/windows-security-events-enumeration-of-users-and-groups-a1e993de-770a-4434-83e9-9e3b47a6e470-31ff9f63.md) | Discovery | [`SecurityEvent`](../tables/securityevent.md) |
-| [Establishing internal proxies](../content/windows-security-events-establishing-internal-proxies-ce38c16c-a560-46c0-88d6-7757b88f08e9-e3cde3e0.md) | CommandandControl | - |
+| [Establishing internal proxies](../content/windows-security-events-establishing-internal-proxies-ce38c16c-a560-46c0-88d6-7757b88f08e9-e3cde3e0.md) | CommandandControl | [`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 | [Exchange PowerShell Snapin Added](../content/windows-security-events-exchange-powershell-snapin-added-8afd1086-fc9a-4d26-b3ff-5c794c79a59a-8e25d87f.md) | Collection | [`SecurityEvent`](../tables/securityevent.md) |
 | [Group added to Built in Domain Local or Global Group](../content/windows-security-events-group-added-to-built-in-domain-local-or-global-group-cb47a115-2616-4d56-890d-b28c14bc83e4-cbcd997b.md) | Persistence, PrivilegeEscalation | [`SecurityEvent`](../tables/securityevent.md) |
 | [Host Exporting Mailbox and Removing Export](../content/windows-security-events-host-exporting-mailbox-and-removing-export-2e2fab4b-83dd-4cf8-b2dd-063d0fd15513-f6188024.md) | Collection | [`SecurityEvent`](../tables/securityevent.md) |

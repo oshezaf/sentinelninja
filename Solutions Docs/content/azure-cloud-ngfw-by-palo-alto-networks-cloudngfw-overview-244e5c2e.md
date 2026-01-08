@@ -10,6 +10,7 @@
 
 This content item queries data from the following tables:
 
+- [`alert`](../tables/alert.md)
 - [`fluentbit_CL`](../tables/fluentbit-cl.md)
 
 ---

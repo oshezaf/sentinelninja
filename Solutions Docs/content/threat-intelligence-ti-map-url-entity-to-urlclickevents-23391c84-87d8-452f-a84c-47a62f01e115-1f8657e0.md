@@ -14,6 +14,13 @@ This query identifies any URL indicators of compromise (IOCs) from threat intell
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md), [ThreatIntelligence](../connectors/threatintelligence.md), [ThreatIntelligenceTaxii](../connectors/threatintelligencetaxii.md), [MicrosoftDefenderThreatIntelligence](../connectors/microsoftdefenderthreatintelligence.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Analytic%20Rules/URLEntity_UrlClickEvents.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+- [`UrlClickEvents`](../tables/urlclickevents.md)
+
 ---
 
 **Browse:**

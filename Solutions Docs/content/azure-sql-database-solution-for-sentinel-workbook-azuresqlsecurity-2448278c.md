@@ -10,7 +10,11 @@
 
 This content item queries data from the following tables:
 
+- [`Alert`](../tables/alert.md)
+- [`AzureActivity`](../tables/azureactivity.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
+- [`Operation`](../tables/operation.md)
+- [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 

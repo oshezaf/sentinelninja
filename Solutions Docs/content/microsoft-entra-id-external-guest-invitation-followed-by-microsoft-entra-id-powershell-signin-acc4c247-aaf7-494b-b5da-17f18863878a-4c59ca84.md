@@ -19,7 +19,9 @@ By default guests have capability to invite more external guest users, guests al
 
 This content item queries data from the following tables:
 
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
 - [`AuditLogs`](../tables/auditlogs.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 
 ---
 

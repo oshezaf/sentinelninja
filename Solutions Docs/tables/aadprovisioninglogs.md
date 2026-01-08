@@ -10,11 +10,12 @@ Reference for AADProvisioningLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadprovisioninglogs) |
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 
 ## Connectors (1)
 
@@ -23,6 +24,13 @@ This table is ingested by the following connectors:
 - [Microsoft Entra ID](../connectors/azureactivedirectory.md)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 ---
 

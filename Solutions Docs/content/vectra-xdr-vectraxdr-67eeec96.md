@@ -6,6 +6,13 @@
 | **Solution** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Workbooks/VectraXDR.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`Event`](../tables/event.md)
+- [`Usage`](../tables/usage.md)
+
 ---
 
 **Browse:**

@@ -15,6 +15,13 @@ DEV-0270 heavily uses powershell to achieve their objective at various stages of
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dev%200270%20Detection%20and%20Hunting/Analytic%20Rules/Dev-0270PowershellSep2022.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+
 ---
 
 **Browse:**

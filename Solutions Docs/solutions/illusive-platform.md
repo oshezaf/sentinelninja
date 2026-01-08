@@ -20,6 +20,7 @@ The Illusive Platform solution for Microsoft Sentinel enables you to ingest Illu
 | **Author** | Illusive Networks |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 
@@ -36,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Illusive Platform via AMA](../connectors/illusiveattackmanagementsystemama.md), [[Deprecated] Illusive Platform via Legacy Agent](../connectors/illusiveattackmanagementsystem.md) | Analytics |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Illusive Platform via AMA](../connectors/illusiveattackmanagementsystemama.md), [[Deprecated] Illusive Platform via Legacy Agent](../connectors/illusiveattackmanagementsystem.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -57,8 +58,8 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [IllusiveADS](../content/illusive-platform-illusiveads-5d29048c.md) | - |
-| [IllusiveASM](../content/illusive-platform-illusiveasm-bca1238e.md) | - |
+| [IllusiveADS](../content/illusive-platform-illusiveads-5d29048c.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [IllusiveASM](../content/illusive-platform-illusiveasm-bca1238e.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

@@ -15,6 +15,13 @@ Encoding malicious software is a technique used to obfuscate files from detectio
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsForwardedEvents](../connectors/windowsforwardedevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials/Analytic%20Rules/execute_base64_decodedpayload.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
+
 ---
 
 **Browse:**

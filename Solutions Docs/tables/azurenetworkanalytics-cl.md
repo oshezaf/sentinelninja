@@ -4,13 +4,15 @@
 
 📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) - NSG flow log schema and data aggregation
 
-## Solutions (10)
+## Solutions (12)
 
 This table is used by the following solutions:
 
+- [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
+- [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Network Session Essentials](../solutions/network-session-essentials.md)
@@ -21,7 +23,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (32)
+## Content Items Using This Table (34)
 
 ### Analytic Rules (18)
 
@@ -59,13 +61,16 @@ This table is used by the following solutions:
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
 - [ThreatConnect TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/threatconnect-threatconnect-ti-map-ip-entity-to-network-session-events-asim-network-session-schema-ee1fd303-2081-47b7-8f02-e38bfd0868e6-1359f109.md)
 
-### Hunting Queries (10)
+### Hunting Queries (11)
 
 **In solution [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md):**
 - [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.md)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 - [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.md)
+
+**In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
+- [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md)
 
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
 - [Detect Outbound LDAP Traffic(ASIM Network Session schema)](../content/network-session-essentials-detect-outbound-ldap-traffic-asim-network-session-schema-5dca6047-24ed-4eb7-b44e-ec7f1bf42621-c96df1ab.md)
@@ -79,7 +84,10 @@ This table is used by the following solutions:
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting IP All Actors](../content/recorded-future-recordedfuture-threat-hunting-ip-all-actors-7b5eb44d-3533-440e-9774-73a4d99bc2b2-0bac2271.md)
 
-### Workbooks (3)
+### Workbooks (4)
+
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)

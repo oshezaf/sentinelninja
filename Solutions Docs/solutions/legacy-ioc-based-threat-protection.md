@@ -68,6 +68,7 @@ This is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-19 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-squidproxy, azuresentinel.azure-sentinel-solution-dns, azuresentinel.azure-sentinel-solution-ciscoasa, azuresentinel.azure-sentinel-solution-paloaltopanos, azuresentinel.azure-sentinel-solution-microsoft365defender, sentinel4azurefirewall.sentinel4azurefirewall, zscaler1579058425289.zscaler_internet_access_mss, azuresentinel.azure-sentinel-solution-infobloxnios, azuresentinel.azure-sentinel-solution-gcpdns, nxlogltd1589381969261.nxlog_dns_logs, azuresentinel.azure-sentinel-solution-ciscoumbrella, corelightinc1584998267292.corelight-for-azure-sentinel, azuresentinel.azure-sentinel-solution-amazonwebservices, azuresentinel.azure-sentinel-solution-windowsforwardedevents, azuresentinel.azure-sentinel-solution-sysmonforlinux, azuresentinel.azure-sentinel-solution-office365, azuresentinel.azure-sentinel-solution-securityevents, azuresentinel.azure-sentinel-solution-azureactivedirectory, azuresentinel.azure-sentinel-solution-azureactivity, f5-networks.f5_bigip_mss, azuresentinel.azure-sentinel-solution-fortinetfortigate, checkpoint.checkpoint-sentinel-solutions, azuresentinel.azure-sentinel-solution-commoneventformat, azuresentinel.azure-sentinel-solution-windowsfirewall |
 
 ## Data Connectors
 
@@ -77,13 +78,19 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **3 table(s)** from its content items:
+This solution queries **9 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | Hunting |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | Hunting |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Hunting |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | Hunting |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Hunting |
+| [`Event`](../tables/event.md) | Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | Hunting |
+| [`VMConnection`](../tables/vmconnection.md) | Hunting |
+| [`WindowsEvent`](../tables/windowsevent.md) | Hunting |
 
 ### Internal Tables
 
@@ -105,16 +112,16 @@ This solution includes **10 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md) | Reconnaissance, InitialAccess | - |
-| [Dev-0056 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0056-command-line-activity-november-2021-e2629949-2043-4421-8064-bca23c8491dd-1cdb73c2.md) | CommandAndControl | - |
-| [Dev-0322 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-78fa22f9-0c13-4847-bbe6-6a7aa1b47547-84856956.md) | Persistence, LateralMovement, CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
-| [Dev-0322 Command Line Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-asim-version-6bfea14f-2122-46b3-8f8b-3947e0fb6d92-de921320.md) | Persistence, LateralMovement, CommandAndControl | - |
-| [Dev-0322 File Drop Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022-414e8f6c.md) | Persistence, CommandAndControl | [`DeviceFileEvents`](../tables/devicefileevents.md) |
-| [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-asim-version-9b72769e-6ab1-4736-988b-018d92dc5e62-87c81fe1.md) | Persistence, CommandAndControl | - |
-| [Known Nylon Typhoon Registry modifications patterns](../content/legacy-ioc-based-threat-protection-known-nylon-typhoon-registry-modifications-patterns-f090f8f4a-b986-42d2-b536-e0795c723e25-f442d105.md) | Persistence | [`SecurityEvent`](../tables/securityevent.md) |
-| [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.md) | Collection | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Retrospective hunt for Forest Blizzard IP IOCs](../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.md) | CommandAndControl | - |
-| [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
+| [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md) | Reconnaissance, InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`VMConnection`](../tables/vmconnection.md) |
+| [Dev-0056 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0056-command-line-activity-november-2021-e2629949-2043-4421-8064-bca23c8491dd-1cdb73c2.md) | CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Dev-0322 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-78fa22f9-0c13-4847-bbe6-6a7aa1b47547-84856956.md) | Persistence, LateralMovement, CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Dev-0322 Command Line Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-asim-version-6bfea14f-2122-46b3-8f8b-3947e0fb6d92-de921320.md) | Persistence, LateralMovement, CommandAndControl | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Dev-0322 File Drop Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022-414e8f6c.md) | Persistence, CommandAndControl | [`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-asim-version-9b72769e-6ab1-4736-988b-018d92dc5e62-87c81fe1.md) | Persistence, CommandAndControl | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Known Nylon Typhoon Registry modifications patterns](../content/legacy-ioc-based-threat-protection-known-nylon-typhoon-registry-modifications-patterns-f090f8f4a-b986-42d2-b536-e0795c723e25-f442d105.md) | Persistence | [`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
+| [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.md) | Collection | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Retrospective hunt for Forest Blizzard IP IOCs](../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.md) | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md) | Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 
 ## Release Notes
 

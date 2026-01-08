@@ -25,18 +25,23 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **56 table(s)** from its content items:
+This solution queries **70 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | Workbooks |
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | Workbooks |
+| [`ALERT`](../tables/alert.md) | Workbooks |
 | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | Workbooks |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | Workbooks |
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | Workbooks |
 | [`AWSGuardDuty`](../tables/awsguardduty.md) | Workbooks |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | Workbooks |
 | [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | Workbooks |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | Workbooks |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) | Workbooks |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | Workbooks |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Analytics, Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
@@ -54,23 +59,30 @@ This solution queries **56 table(s)** from its content items:
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | Workbooks |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Workbooks |
 | [`DnsEvents`](../tables/dnsevents.md) | Workbooks |
+| [`Dynamics365Activity`](../tables/dynamics365activity.md) | Workbooks |
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | Workbooks |
 | [`EmailEvents`](../tables/emailevents.md) | Workbooks |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | Workbooks |
 | [`Event`](../tables/event.md) | Workbooks |
 | [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | Workbooks |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | Workbooks |
-| [`Heartbeat`](../tables/heartbeat.md) | Analytics |
+| [`Heartbeat`](../tables/heartbeat.md) | Analytics, Workbooks |
 | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
+| [`InsightsMetrics`](../tables/insightsmetrics.md) | Workbooks |
 | [`IntuneAuditLogs`](../tables/intuneauditlogs.md) | Workbooks |
+| [`IntuneDevices`](../tables/intunedevices.md) | Workbooks |
 | [`IntuneOperationalLogs`](../tables/intuneoperationallogs.md) | Workbooks |
 | [`KubeEvents_CL`](../tables/kubeevents-cl.md) | Workbooks |
 | [`NTANetAnalytics`](../tables/ntanetanalytics.md) | Workbooks |
 | [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
+| [`Operation`](../tables/operation.md) | Workbooks |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | Workbooks |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | Analytics, Workbooks |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | Workbooks |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) | Workbooks |
@@ -78,20 +90,23 @@ This solution queries **56 table(s)** from its content items:
 | [`Syslog`](../tables/syslog.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
 | [`Update`](../tables/update.md) | Workbooks |
-| [`Usage`](../tables/usage.md) | Analytics, Hunting |
+| [`Usage`](../tables/usage.md) | Analytics, Hunting, Workbooks |
 | [`VMConnection`](../tables/vmconnection.md) | Workbooks |
 | [`VMProcess`](../tables/vmprocess.md) | Workbooks |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) | Workbooks |
 | [`WindowsEvent`](../tables/windowsevent.md) | Workbooks |
+| [`WindowsFirewall`](../tables/windowsfirewall.md) | Workbooks |
 | [`barracuda_CL`](../tables/barracuda-cl.md) | Workbooks |
 | [`meraki_CL`](../tables/meraki-cl.md) | Workbooks |
+| [`update`](../tables/update.md) | Workbooks |
 
 ### Internal Tables
 
-The following **4 table(s)** are used internally by this solution's playbooks:
+The following **5 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AlertEvidence`](../tables/alertevidence.md) | Workbooks |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | Workbooks |
 | [`IdentityInfo`](../tables/identityinfo.md) | Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
@@ -134,7 +149,7 @@ This solution includes **16 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSGuardDuty`](../tables/awsguardduty.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)<br>[`CloudAppEvents`](../tables/cloudappevents.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`ConfigurationData`](../tables/configurationdata.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`Event`](../tables/event.md)<br>[`GCP_DNS_CL`](../tables/gcp-dns-cl.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`IntuneAuditLogs`](../tables/intuneauditlogs.md)<br>[`IntuneOperationalLogs`](../tables/intuneoperationallogs.md)<br>[`KubeEvents_CL`](../tables/kubeevents-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`StorageFileLogs`](../tables/storagefilelogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Update`](../tables/update.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VMProcess`](../tables/vmprocess.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`ALERT`](../tables/alert.md)<br>[`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSGuardDuty`](../tables/awsguardduty.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)<br>[`CloudAppEvents`](../tables/cloudappevents.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`ConfigurationData`](../tables/configurationdata.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`Event`](../tables/event.md)<br>[`GCP_DNS_CL`](../tables/gcp-dns-cl.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`InsightsMetrics`](../tables/insightsmetrics.md)<br>[`IntuneAuditLogs`](../tables/intuneauditlogs.md)<br>[`IntuneDevices`](../tables/intunedevices.md)<br>[`IntuneOperationalLogs`](../tables/intuneoperationallogs.md)<br>[`KubeEvents_CL`](../tables/kubeevents-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`StorageFileLogs`](../tables/storagefilelogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Update`](../tables/update.md)<br>[`Usage`](../tables/usage.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VMProcess`](../tables/vmprocess.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

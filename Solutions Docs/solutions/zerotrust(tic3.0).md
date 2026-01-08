@@ -27,34 +27,48 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **17 table(s)** from its content items:
+This solution queries **30 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | Workbooks |
+| [`AWSVPCFlow`](../tables/awsvpcflow.md) | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) | Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Workbooks |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | Workbooks |
+| [`DnsEvents`](../tables/dnsevents.md) | Workbooks |
+| [`Dynamics365Activity`](../tables/dynamics365activity.md) | Workbooks |
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | Workbooks |
 | [`EmailEvents`](../tables/emailevents.md) | Workbooks |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | Workbooks |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
+| [`Operation`](../tables/operation.md) | Workbooks |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | Workbooks |
 | [`SecurityBaseline`](../tables/securitybaseline.md) | Workbooks |
+| [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | Analytics, Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
+| [`StorageTableLogs`](../tables/storagetablelogs.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
+| [`Update`](../tables/update.md) | Workbooks |
 | [`Usage`](../tables/usage.md) | Workbooks |
 | [`VMConnection`](../tables/vmconnection.md) | Workbooks |
+| [`WindowsFirewall`](../tables/windowsfirewall.md) | Workbooks |
+| [`update`](../tables/update.md) | Workbooks |
 
 ### Internal Tables
 
-The following **4 table(s)** are used internally by this solution's playbooks:
+The following **5 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AlertEvidence`](../tables/alertevidence.md) | Workbooks |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | Workbooks |
 | [`IdentityInfo`](../tables/identityinfo.md) | Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
@@ -80,7 +94,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`DeviceRegistryEvents`](../tables/deviceregistryevents.md)<br>[`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Usage`](../tables/usage.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`DeviceRegistryEvents`](../tables/deviceregistryevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageTableLogs`](../tables/storagetablelogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Update`](../tables/update.md)<br>[`Usage`](../tables/usage.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

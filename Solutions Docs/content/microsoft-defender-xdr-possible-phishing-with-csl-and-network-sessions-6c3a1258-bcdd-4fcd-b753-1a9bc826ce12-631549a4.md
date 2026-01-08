@@ -19,8 +19,13 @@ This query looks for malicious URL clicks in phishing email recognized by MDO in
 
 This content item queries data from the following tables:
 
+- [`ALERT`](../tables/alert.md)
 - [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)
 - [`AWSVPCFlow`](../tables/awsvpcflow.md)
+- [`AZFWIdpsSignature`](../tables/azfwidpssignature.md)
+- [`AZFWNatRule`](../tables/azfwnatrule.md)
+- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
+- [`AZFWThreatIntel`](../tables/azfwthreatintel.md)
 - [`AlertEvidence`](../tables/alertevidence.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
@@ -28,6 +33,7 @@ This content item queries data from the following tables:
 - [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`Corelight_CL`](../tables/corelight-cl.md)
+- [`DeviceEvents`](../tables/deviceevents.md)
 - [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
 - [`Event`](../tables/event.md)
 - [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)
@@ -36,6 +42,7 @@ This content item queries data from the following tables:
 - [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)
 - [`SentinelOne_CL`](../tables/sentinelone-cl.md)
 - [`Syslog`](../tables/syslog.md)
+- [`Update`](../tables/update.md)
 - [`VMConnection`](../tables/vmconnection.md)
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)
 - [`WindowsEvent`](../tables/windowsevent.md)

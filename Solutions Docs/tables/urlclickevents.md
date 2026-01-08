@@ -11,11 +11,14 @@ Safe Links clicks from email messages, Teams, and Office 365 apps
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/urlclickevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-urlclickevents-table) |
 
-## Solutions (1)
+## Solutions (4)
 
 This table is used by the following solutions:
 
+- [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ## Connectors (1)
 
@@ -25,9 +28,20 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (21)
+## Content Items Using This Table (26)
 
-### Hunting Queries (20)
+### Analytic Rules (3)
+
+**In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
+- [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md)
+
+**In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
+- [TI Map URL Entity to UrlClickEvents](../content/threat-intelligence-ti-map-url-entity-to-urlclickevents-23391c84-87d8-452f-a84c-47a62f01e115-1f8657e0.md)
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+- [TI Map URL Entity to UrlClickEvents](../content/threat-intelligence-new-ti-map-url-entity-to-urlclickevents-ad4fa1f2-2189-459c-9458-f77d2039d2f5-105aa351.md)
+
+### Hunting Queries (22)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Blocked Clicks Trend](../content/microsoft-defender-xdr-blocked-clicks-trend-ac738108-451b-4341-ba38-021a00665415-f9fdc910.md)
@@ -35,6 +49,7 @@ This table is ingested by the following connectors:
 - [MDO_URLClickedinEmail](../content/microsoft-defender-xdr-mdo-urlclickedinemail-2c6e7f75-d83c-4344-afdc-83335fe550e6-75ab3207.md)
 - [Malicious Clicks allowed (click-through)](../content/microsoft-defender-xdr-malicious-clicks-allowed-click-through-ba4f7e56-a2f8-4a30-b848-200fdc7fc3a2-d64cdc32.md)
 - [Malicious URL Clicks by workload](../content/microsoft-defender-xdr-malicious-url-clicks-by-workload-c2b4ef3a-216d-4506-8b35-6a1b0f2a3bf7-d5719131.md)
+- [Possible device code phishing attempts](../content/microsoft-defender-xdr-possible-device-code-phishing-attempts-ad76e484-f159-4d23-99ee-e734f0b8b60b-1166f1fb.md)
 - [Teams URL clicks actions summarized by URLs clicked on](../content/microsoft-defender-xdr-teams-url-clicks-actions-summarized-by-urls-clicked-on-161b163c-0805-46fd-abda-2fe5f0a5185e-7bcc6c0b.md)
 - [Teams URL clicks through actions on Phish or Malware URLs summarized by URLs](../content/microsoft-defender-xdr-teams-url-clicks-through-actions-on-phish-or-malware-urls-summarized-by-urls-68aaf2af-83ac-4f9e-9680-4050700b93f9-071f451c.md)
 - [Teams blocked URL clicks daily trend](../content/microsoft-defender-xdr-teams-blocked-url-clicks-daily-trend-71117505-5a71-431e-8605-8896960affe5-fa61dd17.md)
@@ -49,6 +64,7 @@ This table is ingested by the following connectors:
 - [URL click count by click action](../content/microsoft-defender-xdr-url-click-count-by-click-action-3f007cdc-86bf-4657-9015-05101a3e54f5-9ff7257a.md)
 - [URL clicks actions by URL](../content/microsoft-defender-xdr-url-clicks-actions-by-url-bc46e331-3cb0-483d-9c90-989d2a59457f-bd855644.md)
 - [User clicked through events](../content/microsoft-defender-xdr-user-clicked-through-events-f075d4c4-cf76-4e5d-9c2d-9ed524286316-66cc46a9.md)
+- [User clicks on malicious inbound emails](../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.md)
 - [User clicks on phishing URLs in emails](../content/microsoft-defender-xdr-user-clicks-on-phishing-urls-in-emails-d823da0e-1334-4a66-8ff4-2c2c40d26295-36e1eb38.md)
 
 ### Workbooks (1)

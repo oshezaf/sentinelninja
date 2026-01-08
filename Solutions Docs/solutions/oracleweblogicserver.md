@@ -20,6 +20,7 @@ The [Oracle](https://www.oracle.com/index.html) WebLogic Server solution for Mic
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleWebLogicServer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleWebLogicServer) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-customlogsviaama |
 
 ## Data Connectors
 

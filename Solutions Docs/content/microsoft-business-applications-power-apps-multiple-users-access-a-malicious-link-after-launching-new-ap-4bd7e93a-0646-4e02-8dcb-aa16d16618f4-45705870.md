@@ -19,7 +19,20 @@ Identifies a chain of events, where a new Power App is created, followed by muli
 
 This content item queries data from the following tables:
 
+- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
+- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
+- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)
+- [`SecurityAlert`](../tables/securityalert.md)
+- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
+- [`Syslog`](../tables/syslog.md)
+- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+- [`UrlClickEvents`](../tables/urlclickevents.md)
+- [`VectraStream_CL`](../tables/vectrastream-cl.md)
+- [`W3CIISLog`](../tables/w3ciislog.md)
+- [`barracuda_CL`](../tables/barracuda-cl.md)
+- [`meraki_CL`](../tables/meraki-cl.md)
 
 ---
 

@@ -20,6 +20,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-27 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Sysmon%20For%20Linux](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Sysmon%20For%20Linux) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

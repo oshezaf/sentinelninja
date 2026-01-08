@@ -10,7 +10,20 @@ Reference for InsightsMetrics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/insightsmetrics) |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
 
 ## Resource Types
 

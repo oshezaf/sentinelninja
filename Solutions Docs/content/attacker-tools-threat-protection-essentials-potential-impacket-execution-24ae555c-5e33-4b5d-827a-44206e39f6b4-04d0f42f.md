@@ -12,6 +12,13 @@ This hunting query identifies execution of Impacket tool. Impacket is a popular 
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials/Hunting%20Queries/PotentialImpacketExecution.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
+
 ---
 
 **Browse:**

@@ -10,21 +10,24 @@ Reference for AWSVPCFlow table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsvpcflow) |
 
-## Solutions (11)
+## Solutions (14)
 
 This table is used by the following solutions:
 
 - [AWS VPC Flow Logs](../solutions/aws-vpc-flow-logs.md)
 - [Amazon Web Services](../solutions/amazon-web-services.md)
+- [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Session Essentials](../solutions/network-session-essentials.md)
 - [Recorded Future](../solutions/recorded-future.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
+- [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (2)
 
@@ -35,7 +38,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (29)
+## Content Items Using This Table (32)
 
 ### Analytic Rules (16)
 
@@ -88,14 +91,23 @@ This table is ingested by the following connectors:
 **In solution [Recorded Future](../solutions/recorded-future.md):**
 - [RecordedFuture Threat Hunting IP All Actors](../content/recorded-future-recordedfuture-threat-hunting-ip-all-actors-7b5eb44d-3533-440e-9774-73a4d99bc2b2-0bac2271.md)
 
-### Workbooks (3)
+### Workbooks (6)
+
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
 
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
 - [NetworkSessionEssentials](../content/network-session-essentials-networksessionessentials-5de17c97.md)
 - [NetworkSessionEssentialsV2](../content/network-session-essentials-networksessionessentialsv2-9408ac84.md)
+
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
 ---
 

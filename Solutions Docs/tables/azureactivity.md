@@ -10,12 +10,13 @@ Reference for AzureActivity table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity) |
 
-## Solutions (15)
+## Solutions (17)
 
 This table is used by the following solutions:
 
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
 - [Azure Activity](../solutions/azure-activity.md)
+- [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md)
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
@@ -23,6 +24,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -38,7 +40,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (48)
+## Content Items Using This Table (50)
 
 ### Analytic Rules (21)
 
@@ -99,11 +101,14 @@ This table is ingested by the following connectors:
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md)
 
-### Workbooks (11)
+### Workbooks (13)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 - [AzureActivity](../content/azure-activity-azureactivity-dc7bc453.md)
 - [AzureServiceHealthWorkbook](../content/azure-activity-azureservicehealthworkbook-d3085bda.md)
+
+**In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
+- [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
@@ -122,6 +127,9 @@ This table is ingested by the following connectors:
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 - [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)

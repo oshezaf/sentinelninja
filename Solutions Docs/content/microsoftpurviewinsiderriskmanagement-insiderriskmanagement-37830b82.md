@@ -10,19 +10,26 @@
 
 This content item queries data from the following tables:
 
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
 - [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
 - [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
+- [`EmailEvents`](../tables/emailevents.md)
 - [`IdentityInfo`](../tables/identityinfo.md)
 - [`LAQueryLogs`](../tables/laquerylogs.md)
 - [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
+- [`Operation`](../tables/operation.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`SigninLogs`](../tables/signinlogs.md)
+- [`Syslog`](../tables/syslog.md)
+- [`Update`](../tables/update.md)
 - [`Watchlist`](../tables/watchlist.md)
+- [`anomalies`](../tables/anomalies.md)
+- [`operation`](../tables/operation.md)
 
 ---
 

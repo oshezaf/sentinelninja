@@ -20,6 +20,7 @@ The [VMware vCenter Server](https://www.vmware.com/products/vcenter-server.html)
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-customlogsviaama |
 
 ## Data Connectors
 

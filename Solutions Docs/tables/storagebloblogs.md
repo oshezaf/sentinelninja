@@ -10,7 +10,7 @@ Reference for StorageBlobLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagebloblogs) |
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -19,6 +19,7 @@ This table is used by the following solutions:
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md)
+- [NISTSP80053](../solutions/nistsp80053.md)
 
 ## Connectors (1)
 
@@ -28,7 +29,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (10)
+## Content Items Using This Table (11)
 
 ### Analytic Rules (2)
 
@@ -50,13 +51,16 @@ This table is ingested by the following connectors:
 - [Detect New Scheduled Task Entry Creations](../content/malware-protection-essentials-detect-new-scheduled-task-entry-creations-4dc0aae4-6375-4670-b138-8c42490ba206-84bcf125.md)
 - [Executable Files Created in Uncommon Locations](../content/malware-protection-essentials-executable-files-created-in-uncommon-locations-ab8ddb26-050c-40aa-aaf0-bfb7e3eeb05f-1af678b6.md)
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
 ## Resource Types
 

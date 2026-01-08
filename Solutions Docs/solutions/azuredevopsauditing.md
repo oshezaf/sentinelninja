@@ -25,11 +25,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | [Azure DevOps Audit Logs (via Codeless Connector Platform)](../connectors/azuredevopsauditlogs.md) | - |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | - | Analytics |
 
 ### Internal Tables
 
@@ -70,7 +71,7 @@ This solution includes **37 content item(s)**:
 | [Azure DevOps Variable Secret Not Secured](../content/azuredevopsauditing-azure-devops-variable-secret-not-secured-4ca74dc0-8352-4ac5-893c-73571cc78331-e2ef7633.md) | Medium | CredentialAccess | - |
 | [External Upstream Source Added to Azure DevOps Feed](../content/azuredevopsauditing-external-upstream-source-added-to-azure-devops-feed-adc32a33-1cd6-46f5-8801-e3ed8337885f-aa72d512.md) | Medium | InitialAccess | - |
 | [NRT Azure DevOps Audit Stream Disabled](../content/azuredevopsauditing-nrt-azure-devops-audit-stream-disabled-74ed028d-e392-40b7-baef-e69627bf89d1-cfc3503c.md) | High | DefenseEvasion | - |
-| [New Agent Added to Pool by New User or Added to a New OS Type](../content/azuredevopsauditing-new-agent-added-to-pool-by-new-user-or-added-to-a-new-os-type-4ce177b3-56b1-4f0e-b83e-27eed4cb0b16-f73a36a1.md) | Medium | Execution | - |
+| [New Agent Added to Pool by New User or Added to a New OS Type](../content/azuredevopsauditing-new-agent-added-to-pool-by-new-user-or-added-to-a-new-os-type-4ce177b3-56b1-4f0e-b83e-27eed4cb0b16-f73a36a1.md) | Medium | Execution | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |
 | [New PA, PCA, or PCAS added to Azure DevOps](../content/azuredevopsauditing-new-pa,-pca,-or-pcas-added-to-azure-devops-35ce9aff-1708-45b8-a295-5e9a307f5f17-639b0632.md) | Medium | InitialAccess | - |
 
 ### Hunting Queries

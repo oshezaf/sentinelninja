@@ -20,6 +20,7 @@ The [SonicWall Firewall](https://www.sonicwall.com/products/firewalls/) solution
 | **Author** | SonicWall |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

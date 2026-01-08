@@ -24,6 +24,13 @@ This table is ingested by the following connectors:
 
 ---
 
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
+- [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md)
+
 ---
 
 **Browse:**

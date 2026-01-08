@@ -12,12 +12,19 @@ This content item queries data from the following tables:
 
 - [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+- [`ConfigurationChange`](../tables/configurationchange.md)
 - [`Heartbeat`](../tables/heartbeat.md)
 - [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
+- [`Operation`](../tables/operation.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`SigninLogs`](../tables/signinlogs.md)
 - [`Syslog`](../tables/syslog.md)
+- [`Update`](../tables/update.md)
+- [`heartbeat`](../tables/heartbeat.md)
+- [`syslog`](../tables/syslog.md)
+- [`update`](../tables/update.md)
 
 ---
 

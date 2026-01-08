@@ -15,6 +15,12 @@
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events/Analytic%20Rules/password_not_set.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SecurityEvent`](../tables/securityevent.md)
+
 ---
 
 **Browse:**

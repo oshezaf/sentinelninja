@@ -14,6 +14,12 @@
 | **Required Connectors** | [AWS](../connectors/aws.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud/Analytic%20Rules/SuspiciousAccessOfBECRelatedDocumentsInAWSS3Buckets.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+
 ---
 
 **Browse:**

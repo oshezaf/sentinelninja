@@ -30,7 +30,7 @@ This solution provides **5 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **11 table(s)**:
+This solution uses **12 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -40,6 +40,7 @@ This solution uses **11 table(s)**:
 | [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | - |
 | [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | - |
 | [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) | [Mimecast Cloud Integrated](../connectors/mimecastciapi.md) | - |
+| [`Event`](../tables/event.md) | - | Workbooks |
 | [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | [Mimecast Secure Email Gateway](../connectors/mimecastsegapi.md) | - |
 | [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | [Mimecast Secure Email Gateway](../connectors/mimecastsegapi.md) | - |
 | [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Workbooks |
@@ -83,7 +84,7 @@ This solution includes **30 content item(s)**:
 | [Mimecast_Awareness_Training_Workbook](../content/mimecast-mimecast-awareness-training-workbook-daf0a27a.md) | - |
 | [Mimecast_Cloud_Integrated_Workbook](../content/mimecast-mimecast-cloud-integrated-workbook-5bb9e2b3.md) | - |
 | [Mimecast_SEG_Workbook](../content/mimecast-mimecast-seg-workbook-c2026bf1.md) | - |
-| [Mimecast_TTP_Workbook](../content/mimecast-mimecast-ttp-workbook-c40cabd0.md) | [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md)<br>[`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md)<br>[`Ttp_Url_CL`](../tables/ttp-url-cl.md) |
+| [Mimecast_TTP_Workbook](../content/mimecast-mimecast-ttp-workbook-c40cabd0.md) | [`Event`](../tables/event.md)<br>[`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md)<br>[`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md)<br>[`Ttp_Url_CL`](../tables/ttp-url-cl.md) |
 
 ### Playbooks
 

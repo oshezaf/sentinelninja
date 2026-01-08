@@ -31,11 +31,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`OfficeActivity`](../tables/officeactivity.md) | [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) | Analytics, Hunting, Workbooks |
+| [`Operation`](../tables/operation.md) | - | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Hunting |
 
 ## Content Items
@@ -97,16 +98,16 @@ This solution includes **40 content item(s)**:
 | [SharePointFileOperation via devices with previously unseen user agents](../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-f2367171-1514-4c67-88ef-27434b6a1093-8d3d8113.md) | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [SharePointFileOperation via previously unseen IPs](../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-e3d24cfd-b2a1-4ba7-8f80-0360892f9d57-bf177f44.md) | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [User added to Teams and immediately uploads file](../content/microsoft-365-user-added-to-teams-and-immediately-uploads-file-3d6d0c04-7337-40cf-ace6-c471d442356d-ae882f16.md) | InitialAccess | [`OfficeActivity`](../tables/officeactivity.md) |
-| [User made Owner of multiple teams](../content/microsoft-365-user-made-owner-of-multiple-teams-558f15dd-3171-4b11-bf24-31c0610a20e0-775b29b2.md) | PrivilegeEscalation | - |
+| [User made Owner of multiple teams](../content/microsoft-365-user-made-owner-of-multiple-teams-558f15dd-3171-4b11-bf24-31c0610a20e0-775b29b2.md) | PrivilegeEscalation | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Windows Reserved Filenames staged on Office file services](../content/microsoft-365-windows-reserved-filenames-staged-on-office-file-services-61c28cd7-3139-4731-8ea7-2cbbeabb4684-b20eb95c.md) | CommandAndControl | [`OfficeActivity`](../tables/officeactivity.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ExchangeOnline](../content/microsoft-365-exchangeonline-c35f597f.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Office365](../content/microsoft-365-office365-0c09583c.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [SharePointAndOneDrive](../content/microsoft-365-sharepointandonedrive-f8028d14.md) | [`OfficeActivity`](../tables/officeactivity.md) |
+| [ExchangeOnline](../content/microsoft-365-exchangeonline-c35f597f.md) | [`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md) |
+| [Office365](../content/microsoft-365-office365-0c09583c.md) | [`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md) |
+| [SharePointAndOneDrive](../content/microsoft-365-sharepointandonedrive-f8028d14.md) | [`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md) |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

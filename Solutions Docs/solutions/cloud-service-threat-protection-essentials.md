@@ -28,6 +28,7 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-office365, azuresentinel.azure-sentinel-solution-azureactivity, azuresentinel.azure-sentinel-solution-azurekeyvault |
 
 ## Data Connectors
 

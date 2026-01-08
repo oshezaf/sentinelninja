@@ -25,12 +25,14 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **4 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`Alert`](../tables/alert.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
 | [`SentinelHealth`](../tables/sentinelhealth.md) | Workbooks |
+| [`alert`](../tables/alert.md) | Workbooks |
 
 ### Internal Tables
 
@@ -39,7 +41,7 @@ The following **2 table(s)** are used internally by this solution's playbooks:
 | Table | Used By Content |
 |-------|----------------|
 | [`SecurityAlert`](../tables/securityalert.md) | Playbooks, Workbooks |
-| [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
+| [`SecurityIncident`](../tables/securityincident.md) | Playbooks, Workbooks |
 
 ## Content Items
 
@@ -55,7 +57,7 @@ This solution includes **29 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SentinelHealth`](../tables/sentinelhealth.md) |
-| [IncidentOverview](../content/sentinelsoaressentials-incidentoverview-c5ea1b65.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [IncidentOverview](../content/sentinelsoaressentials-incidentoverview-c5ea1b65.md) | [`Alert`](../tables/alert.md)<br>[`alert`](../tables/alert.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [IncidentTasksWorkbook](../content/sentinelsoaressentials-incidenttasksworkbook-37a89581.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [SecurityOperationsEfficiency](../content/sentinelsoaressentials-securityoperationsefficiency-4e91f3d3.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 
@@ -81,7 +83,7 @@ This solution includes **29 content item(s)**:
 | [Post Message Teams](../content/sentinelsoaressentials-post-message-teams-80596e03.md) | This playbook will post a message in a Microsoft Teams channel when an Incident is created in Micros... | - |
 | [Post-Message-Slack](../content/sentinelsoaressentials-post-message-slack-8c72ad08.md) | Author: Yaniv Shasha | - |
 | [Post-Message-Teams](../content/sentinelsoaressentials-post-message-teams-e5dff2d7.md) | Author: Yaniv Shasha | - |
-| [Relate alerts to incident by IP](../content/sentinelsoaressentials-relate-alerts-to-incident-by-ip-c7331925.md) | This playbook looks for other alerts with the same IP as the triggered incident. When such an alert ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
+| [Relate alerts to incident by IP](../content/sentinelsoaressentials-relate-alerts-to-incident-by-ip-c7331925.md) | This playbook looks for other alerts with the same IP as the triggered incident. When such an alert ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)*<br>[`SecurityIncident`](../tables/securityincident.md) *(read)* |
 | [Send Teams Adaptive Card on incident creation](../content/sentinelsoaressentials-send-teams-adaptive-card-on-incident-creation-903fb520.md) | This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to chang... | - |
 | [Send basic email](../content/sentinelsoaressentials-send-basic-email-449e76ec.md) | This playbook will be sending email with basic incidents details (Incident title, severity, tactics,... | - |
 | [Send email with formatted incident report](../content/sentinelsoaressentials-send-email-with-formatted-incident-report-9dcecb5c.md) | This playbook will be sending email with formated incidents report (Incident title, severity, tactic... | - |

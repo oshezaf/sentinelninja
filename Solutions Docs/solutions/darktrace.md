@@ -33,10 +33,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`Alert`](../tables/alert.md) | - | Workbooks |
 | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) | Analytics, Workbooks |
 
 ## Content Items
@@ -60,7 +61,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DarktraceWorkbook](../content/darktrace-darktraceworkbook-b6b8de88.md) | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
+| [DarktraceWorkbook](../content/darktrace-darktraceworkbook-b6b8de88.md) | [`Alert`](../tables/alert.md)<br>[`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
 
 ---
 

@@ -12,6 +12,12 @@ This query helps reviewing count of users attacked more than x times average.
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Top%20Attacks/Attacked%20more%20than%20x%20times%20average.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`EmailEvents`](../tables/emailevents.md)
+
 ---
 
 **Browse:**

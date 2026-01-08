@@ -1,9 +1,10 @@
 # SentinelOne_CL
 
-## Solutions (13)
+## Solutions (14)
 
 This table is used by the following solutions:
 
+- [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
@@ -26,7 +27,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (76)
+## Content Items Using This Table (77)
 
 ### Analytic Rules (39)
 
@@ -133,7 +134,10 @@ This table is ingested by the following connectors:
 - [RecordedFuture Threat Hunting Domain All Actors](../content/recorded-future-recordedfuture-threat-hunting-domain-all-actors-d641a534-ead8-41aa-a7c8-2b35e6b64c9f-095de712.md)
 - [RecordedFuture Threat Hunting IP All Actors](../content/recorded-future-recordedfuture-threat-hunting-ip-all-actors-7b5eb44d-3533-440e-9774-73a4d99bc2b2-0bac2271.md)
 
-### Workbooks (5)
+### Workbooks (6)
+
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 - [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md)

@@ -16,6 +16,7 @@ In this query, we are looking for Url clicks on emails which get actioned by Zer
 
 This content item queries data from the following tables:
 
+- [`AlertEvidence`](../tables/alertevidence.md)
 - [`AlertInfo`](../tables/alertinfo.md)
 
 ---

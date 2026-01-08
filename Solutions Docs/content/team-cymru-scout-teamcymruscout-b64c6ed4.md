@@ -11,6 +11,7 @@
 This content item queries data from the following tables:
 
 - [`Domain_Data_CL`](../tables/domain-data-cl.md)
+- [`Event`](../tables/event.md)
 - [`Summary_Details_CL`](../tables/summary-details-cl.md)
 
 ---

@@ -16,7 +16,9 @@ Identifies users whose single Factor Auth Events in scenarios where it has not b
 
 This content item queries data from the following tables:
 
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
+- [`SigninLogs`](../tables/signinlogs.md)
 
 ---
 

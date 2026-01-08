@@ -13,9 +13,11 @@
 This content item queries data from the following tables:
 
 - [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md)
+- [`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md)
 - [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
 - [`AuditLogs`](../tables/auditlogs.md)
 - [`SigninLogs`](../tables/signinlogs.md)
+- [`Update`](../tables/update.md)
 
 ---
 

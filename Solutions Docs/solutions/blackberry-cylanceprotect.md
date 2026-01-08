@@ -20,6 +20,7 @@ The [Blackberry CylancePROTECT](https://www.blackberry.com/us/en/products/cylanc
 | **Author** | Microsoft |
 | **First Published** | 2022-05-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blackberry%20CylancePROTECT](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blackberry%20CylancePROTECT) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 
@@ -31,11 +32,13 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`DeviceEvents`](../tables/deviceevents.md) | [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | - |
 | [`Syslog`](../tables/syslog.md) | [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | - |
+| [`syslog`](../tables/syslog.md) | [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | - |
 
 ## Content Items
 

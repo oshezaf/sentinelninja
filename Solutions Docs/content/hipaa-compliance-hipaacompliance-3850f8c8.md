@@ -14,6 +14,7 @@ This content item queries data from the following tables:
 - [`DeviceInfo`](../tables/deviceinfo.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`SigninLogs`](../tables/signinlogs.md)
+- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
 - [`watchlist`](../tables/watchlist.md)
 
 ---

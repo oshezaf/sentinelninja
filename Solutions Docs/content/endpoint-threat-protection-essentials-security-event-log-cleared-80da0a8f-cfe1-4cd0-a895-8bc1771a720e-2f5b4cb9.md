@@ -20,6 +20,7 @@ Checks for event id 1102 which indicates the security event log was cleared. It 
 This content item queries data from the following tables:
 
 - [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 

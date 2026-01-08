@@ -15,6 +15,17 @@ Identifies a match across filename and commandline IOC's related to an actor tra
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md), [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zinc%20Open%20Source/Analytic%20Rules/ZincOctober2022_Filename_Commandline_IOC.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceEvents`](../tables/deviceevents.md)
+- [`DeviceFileEvents`](../tables/devicefileevents.md)
+- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+- [`Event`](../tables/event.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+
 ---
 
 **Browse:**

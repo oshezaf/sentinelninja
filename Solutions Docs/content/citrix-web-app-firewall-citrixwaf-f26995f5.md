@@ -8,6 +8,12 @@
 | **Event Product** | NetScaler |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall/Workbooks/CitrixWAF.json) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+
 ---
 
 **Browse:**

@@ -26,7 +26,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **16 table(s)**:
+This solution uses **17 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -45,6 +45,7 @@ This solution uses **16 table(s)**:
 | [`Cymru_Scout_IP_Data_Summary_PDNS_CL`](../tables/cymru-scout-ip-data-summary-pdns-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
 | [`Cymru_Scout_IP_Data_x509_CL`](../tables/cymru-scout-ip-data-x509-cl.md) | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | - |
 | [`Domain_Data_CL`](../tables/domain-data-cl.md) | - | Workbooks |
+| [`Event`](../tables/event.md) | - | Workbooks |
 | [`Summary_Details_CL`](../tables/summary-details-cl.md) | - | Workbooks |
 
 ## Content Items
@@ -62,7 +63,7 @@ This solution includes **28 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) | [`Domain_Data_CL`](../tables/domain-data-cl.md)<br>[`Summary_Details_CL`](../tables/summary-details-cl.md) |
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) | [`Domain_Data_CL`](../tables/domain-data-cl.md)<br>[`Event`](../tables/event.md)<br>[`Summary_Details_CL`](../tables/summary-details-cl.md) |
 
 ### Playbooks
 

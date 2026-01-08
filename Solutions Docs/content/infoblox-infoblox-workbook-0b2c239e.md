@@ -21,6 +21,7 @@ This content item queries data from the following tables:
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`Service_Name_Info_CL`](../tables/service-name-info-cl.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+- [`UPDATE`](../tables/update.md)
 
 ---
 

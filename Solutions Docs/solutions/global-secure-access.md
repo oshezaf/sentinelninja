@@ -36,12 +36,14 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **4 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md) | Workbooks |
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | Analytics, Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
+| [`Operation`](../tables/operation.md) | Workbooks |
 
 ## Content Items
 
@@ -65,7 +67,7 @@ This solution includes **6 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>[`OfficeActivity`](../tables/officeactivity.md) |
+| [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) | [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md)<br>[`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md) |
 | [GSANetworkTraffic](../content/global-secure-access-gsanetworktraffic-b1c45294.md) | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) |
 
 ## Release Notes

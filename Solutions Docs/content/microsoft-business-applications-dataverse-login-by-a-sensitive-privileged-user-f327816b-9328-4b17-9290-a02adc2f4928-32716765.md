@@ -15,6 +15,12 @@ Identifies Dataverse and Dynamics 365 logons by sensitive users.
 | **Required Connectors** | [Dataverse](../connectors/dataverse.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Analytic%20Rules/Dataverse%20-%20Login%20by%20a%20sensitive%20privileged%20user.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DataverseActivity`](../tables/dataverseactivity.md)
+
 ---
 
 **Browse:**

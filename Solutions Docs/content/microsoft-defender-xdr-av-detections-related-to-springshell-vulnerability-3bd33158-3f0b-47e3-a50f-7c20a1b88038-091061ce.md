@@ -20,6 +20,7 @@
 This content item queries data from the following tables:
 
 - [`DeviceInfo`](../tables/deviceinfo.md)
+- [`SecurityAlert`](../tables/securityalert.md)
 
 ---
 

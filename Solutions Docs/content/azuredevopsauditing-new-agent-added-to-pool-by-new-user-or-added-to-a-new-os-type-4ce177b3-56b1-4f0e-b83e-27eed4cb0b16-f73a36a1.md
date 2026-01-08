@@ -14,6 +14,12 @@
 | **Techniques** | T1053 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Analytic%20Rules/NewAgentAddedToPoolbyNewUserorofNewOS.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
+
 ---
 
 **Browse:**

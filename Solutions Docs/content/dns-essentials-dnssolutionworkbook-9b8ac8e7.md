@@ -22,6 +22,7 @@ This content item queries data from the following tables:
 - [`Event`](../tables/event.md)
 - [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
 - [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)
+- [`SecurityAlert`](../tables/securityalert.md)
 - [`SentinelOne_CL`](../tables/sentinelone-cl.md)
 - [`Syslog`](../tables/syslog.md)
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)

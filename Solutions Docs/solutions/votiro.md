@@ -19,6 +19,7 @@ Threat related information will be sent from Votiro Sanitization Engine to Micro
 | **Version** | 3.0.1 |
 | **Author** | Votiro - support@votiro.com |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

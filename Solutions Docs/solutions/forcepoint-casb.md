@@ -22,6 +22,7 @@ For more details about this solution refer to [integration documentation](https:
 | **Author** | Forcepoint |
 | **First Published** | 2022-05-19 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CASB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CASB) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

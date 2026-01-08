@@ -15,6 +15,12 @@ This rule will check if there is an unnormal activity of sites that are deleted 
 | **Required Connectors** | [LastPass](../connectors/lastpass.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/LastPass/Analytic%20Rules/UnusualVolumeOfPasswordsUpdatedOrRemoved.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)
+
 ---
 
 **Browse:**

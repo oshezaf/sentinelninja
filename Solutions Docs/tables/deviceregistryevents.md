@@ -11,13 +11,14 @@ Creation and modification of registry entries
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceregistryevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceregistryevents-table) |
 
-## Solutions (4)
+## Solutions (5)
 
 This table is used by the following solutions:
 
 - [FalconFriday](../solutions/falconfriday.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (1)
@@ -28,7 +29,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (9)
+## Content Items Using This Table (11)
 
 ### Analytic Rules (6)
 
@@ -49,10 +50,16 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-0efbcea0-1dc0-4844-8a9c-3a1d98fc1697-1d4d4510.md)
 
-### Workbooks (2)
+### Workbooks (4)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)
+
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+- [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)

@@ -20,6 +20,7 @@ Identifies IPs from which users grant access to other users on Azure resources a
 This content item queries data from the following tables:
 
 - [`AzureActivity`](../tables/azureactivity.md)
+- [`IdentityInfo`](../tables/identityinfo.md)
 
 ---
 

@@ -12,6 +12,15 @@ This hunting query looks for process command line activity related to activity o
 | **Required Connectors** | [MicrosoftDefenderAdvancedThreatProtection](../connectors/microsoftdefenderadvancedthreatprotection.md), [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsForwardedEvents](../connectors/windowsforwardedevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection/Hunting%20Queries/Dev-0056CommandLineActivityNovember2021.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+- [`SecurityAlert`](../tables/securityalert.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
+
 ---
 
 **Browse:**

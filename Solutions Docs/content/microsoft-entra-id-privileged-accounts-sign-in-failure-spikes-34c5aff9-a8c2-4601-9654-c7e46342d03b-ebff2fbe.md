@@ -19,7 +19,10 @@
 
 This content item queries data from the following tables:
 
+- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
 - [`IdentityInfo`](../tables/identityinfo.md)
+- [`SigninLogs`](../tables/signinlogs.md)
+- [`anomalies`](../tables/anomalies.md)
 
 ---
 

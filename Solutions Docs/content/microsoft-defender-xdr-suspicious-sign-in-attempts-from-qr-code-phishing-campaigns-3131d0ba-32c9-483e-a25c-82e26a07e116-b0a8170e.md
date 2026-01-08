@@ -16,6 +16,7 @@ This detection approach correlates a user accessing an email with image/document
 
 This content item queries data from the following tables:
 
+- [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)
 - [`CloudAppEvents`](../tables/cloudappevents.md)
 
 ---

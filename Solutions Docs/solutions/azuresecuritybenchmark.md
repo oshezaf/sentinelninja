@@ -25,22 +25,52 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **12 table(s)** from its content items:
+This solution queries **42 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | Workbooks |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | Workbooks |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) | Workbooks |
+| [`ALERT`](../tables/alert.md) | Workbooks |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | Workbooks |
+| [`AWSVPCFlow`](../tables/awsvpcflow.md) | Workbooks |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | Workbooks |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) | Workbooks |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | Workbooks |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | Workbooks |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | Workbooks |
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Workbooks |
+| [`Corelight_CL`](../tables/corelight-cl.md) | Workbooks |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
+| [`Event`](../tables/event.md) | Workbooks |
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | Workbooks |
+| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
+| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | Workbooks |
 | [`ProtectionStatus`](../tables/protectionstatus.md) | Workbooks |
+| [`SecurityBaseline`](../tables/securitybaseline.md) | Workbooks |
+| [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
+| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | Workbooks |
 | [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md) | Workbooks |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | Analytics |
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | Workbooks |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | Analytics, Workbooks |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | Workbooks |
+| [`Update`](../tables/update.md) | Workbooks |
+| [`VMConnection`](../tables/vmconnection.md) | Workbooks |
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) | Workbooks |
+| [`WindowsEvent`](../tables/windowsevent.md) | Workbooks |
+| [`barracuda_CL`](../tables/barracuda-cl.md) | Workbooks |
+| [`meraki_CL`](../tables/meraki-cl.md) | Workbooks |
+| [`update`](../tables/update.md) | Workbooks |
 
 ### Internal Tables
 
@@ -66,13 +96,13 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Azure Security Benchmark Posture Changed](../content/azuresecuritybenchmark-azure-security-benchmark-posture-changed-0610e72f-ceaf-42d1-879e-952a1bd8d07a-131c2b8a.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md) |
+| [Azure Security Benchmark Posture Changed](../content/azuresecuritybenchmark-azure-security-benchmark-posture-changed-0610e72f-ceaf-42d1-879e-952a1bd8d07a-131c2b8a.md) | Medium | Discovery | [`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`ALERT`](../tables/alert.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Event`](../tables/event.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

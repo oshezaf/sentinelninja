@@ -18,6 +18,7 @@ This detection focuses on identifying potential cross-cloud brute force / Passwo
 
 This content item queries data from the following tables:
 
+- [`AWSCloudTrail`](../tables/awscloudtrail.md)
 - [`SigninLogs`](../tables/signinlogs.md)
 
 ---

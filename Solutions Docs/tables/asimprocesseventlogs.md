@@ -10,12 +10,13 @@ Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimprocesseventlogs) |
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
+- [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
@@ -29,7 +30,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (8)
 
 ### Analytic Rules (3)
 
@@ -49,7 +50,10 @@ This table is ingested by the following connectors:
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [Detect New Scheduled Task Creation that Run Executables From Non-Standard Location](../content/malware-protection-essentials-detect-new-scheduled-task-creation-that-run-executables-from-non-standard--b43394b9-fa91-4d98-b331-619926a933bb-d0df99aa.md)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)

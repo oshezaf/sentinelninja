@@ -20,6 +20,7 @@ The [Cisco Web Security Appliance (WSA)](https://www.cisco.com/c/en/us/products/
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-06-29 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoWSA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoWSA) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

@@ -14,6 +14,12 @@ This query helps hunt for Teams messages with malicious URLs based on external T
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`MessageUrlInfo`](../tables/messageurlinfo.md)
+
 ---
 
 **Browse:**

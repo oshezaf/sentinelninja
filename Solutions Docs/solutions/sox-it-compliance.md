@@ -16,6 +16,7 @@ This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Cont
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-12-11 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-azureactivedirectory, azuresentinel.azure-sentinel-solution-microsoft365defender, azuresentinel.azure-sentinel-solution-microsoft365, azuresentinel.azure-sentinel-solution-azureactivity, azuresentinel.sentinel4sql, azuresentinel.azure-sentinel-solution-windowssecurityevents, azuresentinel.azure-sentinel-solution-userentitybehavioranalytics |
 
 ## Data Connectors
 
@@ -25,18 +26,25 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **8 table(s)** from its content items:
+This solution queries **15 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Workbooks |
+| [`ConfigurationChange`](../tables/configurationchange.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
 | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
+| [`Operation`](../tables/operation.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`Syslog`](../tables/syslog.md) | Workbooks |
+| [`Update`](../tables/update.md) | Workbooks |
+| [`heartbeat`](../tables/heartbeat.md) | Workbooks |
+| [`syslog`](../tables/syslog.md) | Workbooks |
+| [`update`](../tables/update.md) | Workbooks |
 
 ## Content Items
 
@@ -50,7 +58,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md) |
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`heartbeat`](../tables/heartbeat.md)<br>[`syslog`](../tables/syslog.md)<br>[`update`](../tables/update.md) |
 
 ## Release Notes
 

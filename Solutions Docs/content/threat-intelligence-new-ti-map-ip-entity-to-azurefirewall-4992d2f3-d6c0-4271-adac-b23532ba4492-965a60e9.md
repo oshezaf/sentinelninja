@@ -18,6 +18,9 @@ Identifies a match in AzureFirewall (NetworkRule & ApplicationRule Logs) from an
 
 This content item queries data from the following tables:
 
+- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
+- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
+- [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
 
 ---

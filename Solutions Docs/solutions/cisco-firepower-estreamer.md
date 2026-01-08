@@ -21,6 +21,7 @@ The [Cisco Firepower](https://www.cisco.com/site/in/en/products/security/firewal
 | **Author** | Cisco |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

@@ -20,6 +20,7 @@ Correlates Contrast ADR incidents with specific high-risk attack patterns includ
 This content item queries data from the following tables:
 
 - [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md)
+- [`ContrastADR_CL`](../tables/contrastadr-cl.md)
 
 ---
 

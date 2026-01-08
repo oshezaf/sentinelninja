@@ -20,6 +20,7 @@ The [MongoDBAudit](https://www.mongodb.com/) solution allows you to ingest Mongo
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAudit) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-customlogsviaama |
 
 ## Data Connectors
 

@@ -16,7 +16,10 @@ This query identifies potential tampering related to Microsoft security related 
 
 This content item queries data from the following tables:
 
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+- [`Event`](../tables/event.md)
 - [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 

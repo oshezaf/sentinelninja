@@ -11,6 +11,14 @@ Identifies source IP that abnormally connects to multiple destinations according
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Hunting%20Queries/Azure%20Firewall%20-%20Source%20IP%20Abnormally%20Connects%20to%20Multiple%20Destinations.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
+- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
+- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+
 ---
 
 **Browse:**

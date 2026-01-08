@@ -21,6 +21,7 @@ The [Vectra AI Detect](https://www.vectra.ai/products/platform%22%20/t%20%22_bla
 | **First Published** | 2022-05-24 |
 | **Last Updated** | 2023-04-17 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Detect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Detect) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

@@ -19,6 +19,7 @@ This content item queries data from the following tables:
 - [`_Im_NetworkSession_CiscoASAV10`](../tables/im-networksession-ciscoasav10.md)
 - [`_Im_NetworkSession_CiscoFirepowerV01`](../tables/im-networksession-ciscofirepowerv01.md)
 - [`_Im_NetworkSession_CiscoISEV11`](../tables/im-networksession-ciscoisev11.md)
+- [`_Im_NetworkSession_EmptyV03`](../tables/im-networksession-emptyv03.md)
 - [`_Im_NetworkSession_ForcePointFirewallV01`](../tables/im-networksession-forcepointfirewallv01.md)
 - [`_Im_NetworkSession_FortinetFortiGateV04`](../tables/im-networksession-fortinetfortigatev04.md)
 - [`_Im_NetworkSession_LinuxSysmonV04`](../tables/im-networksession-linuxsysmonv04.md)

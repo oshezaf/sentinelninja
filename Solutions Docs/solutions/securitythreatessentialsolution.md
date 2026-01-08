@@ -30,6 +30,7 @@ This solution leverages the following tables:
 | **Author** | Microsoft Corporation - support@microsoft.com |
 | **First Published** | 2022-03-30 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityThreatEssentialSolution](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityThreatEssentialSolution) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-azureactivedirectory, azuresentinel.azure-sentinel-solution-office365, azuresentinel.azure-sentinel-solution-azureactivity, azuresentinel.azure-sentinel-solution-ciscoasa, azuresentinel.azure-sentinel-solution-paloaltopanos, zscaler1579058425289.zscaler_internet_access_mss |
 
 ## Data Connectors
 
@@ -39,7 +40,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **14 table(s)** from its content items:
+This solution queries **15 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -50,13 +51,22 @@ This solution queries **14 table(s)** from its content items:
 | [`AzureActivity`](../tables/azureactivity.md) | Analytics |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | Analytics |
-| [`SigninLogs`](../tables/signinlogs.md) | Hunting |
+| [`SigninLogs`](../tables/signinlogs.md) | Analytics, Hunting |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) | Analytics |
+| [`Syslog`](../tables/syslog.md) | Analytics |
 | [`VMConnection`](../tables/vmconnection.md) | Analytics |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) | Analytics |
 | [`W3CIISLog`](../tables/w3ciislog.md) | Analytics |
 | [`barracuda_CL`](../tables/barracuda-cl.md) | Analytics |
 | [`meraki_CL`](../tables/meraki-cl.md) | Analytics |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's playbooks:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`anomalies`](../tables/anomalies.md) | Analytics |
 
 ## Content Items
 
@@ -71,12 +81,12 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Possible AiTM Phishing Attempt Against Microsoft Entra ID](../content/securitythreatessentialsolution-possible-aitm-phishing-attempt-against-microsoft-entra-id-16daa67c-b137-48dc-8eb7-76598a44791a-98f6165b.md) | Medium | InitialAccess, DefenseEvasion, CredentialAccess | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md) |
+| [Possible AiTM Phishing Attempt Against Microsoft Entra ID](../content/securitythreatessentialsolution-possible-aitm-phishing-attempt-against-microsoft-entra-id-16daa67c-b137-48dc-8eb7-76598a44791a-98f6165b.md) | Medium | InitialAccess, DefenseEvasion, CredentialAccess | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md) |
 | [Threat Essentials - Mail redirect via ExO transport rule](../content/securitythreatessentialsolution-threat-essentials-mail-redirect-via-exo-transport-rule-d7c575b2-84f5-48cb-92c5-70d7e8246284-30414fca.md) | Medium | Collection, Exfiltration | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Threat Essentials - Mass Cloud resource deletions Time Series Anomaly](../content/securitythreatessentialsolution-threat-essentials-mass-cloud-resource-deletions-time-series-anomaly-fa2658fe-3714-4c55-bb12-2b7275c628e8-119af452.md) | Medium | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Threat Essentials - Multiple admin membership removals from newly created admin.](../content/securitythreatessentialsolution-threat-essentials-multiple-admin-membership-removals-from-newly-created--199978c5-cd6d-4194-b505-8ef5800739df-5a0ad1e1.md) | Medium | Impact | [`AuditLogs`](../tables/auditlogs.md) |
 | [Threat Essentials - NRT User added to Microsoft Entra ID Privileged Groups](../content/securitythreatessentialsolution-threat-essentials-nrt-user-added-to-microsoft-entra-id-privileged-groups-0a627f29-f0dd-4924-be92-c3d6dac84367-54eec993.md) | Medium | Persistence, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
-| [Threat Essentials - Time series anomaly for data size transferred to public internet](../content/securitythreatessentialsolution-threat-essentials-time-series-anomaly-for-data-size-transferred-to-publi-b49a1093-cbf6-4973-89ac-2eef98f533c6-bc9cced1.md) | Medium | Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`VMConnection`](../tables/vmconnection.md) |
+| [Threat Essentials - Time series anomaly for data size transferred to public internet](../content/securitythreatessentialsolution-threat-essentials-time-series-anomaly-for-data-size-transferred-to-publi-b49a1093-cbf6-4973-89ac-2eef98f533c6-bc9cced1.md) | Medium | Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>*Internal use:*<br>[`anomalies`](../tables/anomalies.md) |
 | [Threat Essentials - User Assigned Privileged Role](../content/securitythreatessentialsolution-threat-essentials-user-assigned-privileged-role-b09795c9-8dce-47ab-8f75-5a4afb78ef0c-6f988146.md) | High | Persistence | [`AuditLogs`](../tables/auditlogs.md) |
 
 ### Hunting Queries

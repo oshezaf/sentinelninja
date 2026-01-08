@@ -12,6 +12,7 @@
 
 This content item queries data from the following tables:
 
+- [`Alert`](../tables/alert.md)
 - [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md)
 
 ---

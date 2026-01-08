@@ -19,14 +19,15 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 ## Resource Types

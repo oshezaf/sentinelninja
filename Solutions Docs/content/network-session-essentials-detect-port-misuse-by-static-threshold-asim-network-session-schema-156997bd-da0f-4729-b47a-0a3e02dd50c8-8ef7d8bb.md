@@ -19,8 +19,13 @@
 
 This content item queries data from the following tables:
 
+- [`ALERT`](../tables/alert.md)
 - [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)
 - [`AWSVPCFlow`](../tables/awsvpcflow.md)
+- [`AZFWIdpsSignature`](../tables/azfwidpssignature.md)
+- [`AZFWNatRule`](../tables/azfwnatrule.md)
+- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
+- [`AZFWThreatIntel`](../tables/azfwthreatintel.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
 - [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)
@@ -37,6 +42,7 @@ This content item queries data from the following tables:
 - [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)
 - [`SentinelOne_CL`](../tables/sentinelone-cl.md)
 - [`Syslog`](../tables/syslog.md)
+- [`Update`](../tables/update.md)
 - [`VMConnection`](../tables/vmconnection.md)
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)
 - [`WindowsEvent`](../tables/windowsevent.md)

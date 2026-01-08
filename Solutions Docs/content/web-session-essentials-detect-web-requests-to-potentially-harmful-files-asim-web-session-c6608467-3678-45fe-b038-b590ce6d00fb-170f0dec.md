@@ -23,8 +23,10 @@ This content item queries data from the following tables:
 - [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`SquidProxy_CL`](../tables/squidproxy-cl.md)
+- [`Syslog`](../tables/syslog.md)
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)
 - [`W3CIISLog`](../tables/w3ciislog.md)
+- [`Watchlist`](../tables/watchlist.md)
 - [`barracuda_CL`](../tables/barracuda-cl.md)
 - [`meraki_CL`](../tables/meraki-cl.md)
 

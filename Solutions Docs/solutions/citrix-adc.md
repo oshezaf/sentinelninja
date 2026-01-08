@@ -20,6 +20,7 @@ The [Citrix ADC](https://www.citrix.com/products/citrix-adc/) (formerly NetScale
 | **Author** | Microsoft-support@microsoft.com |
 | **First Published** | 2022-06-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

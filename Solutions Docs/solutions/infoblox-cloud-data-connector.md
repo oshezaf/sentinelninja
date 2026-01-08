@@ -20,6 +20,7 @@ The [Infoblox](https://www.infoblox.com/) Cloud solution allows you to easily co
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20Cloud%20Data%20Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20Cloud%20Data%20Connector) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 
@@ -32,13 +33,14 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md), [[Deprecated] Infoblox Cloud Data Connector via Legacy Agent](../connectors/infobloxclouddataconnector.md) | Analytics |
 | [`Syslog`](../tables/syslog.md) | - | Analytics |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
+| [`UPDATE`](../tables/update.md) | - | Workbooks |
 
 ## Content Items
 
@@ -68,7 +70,7 @@ This solution includes **21 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InfobloxCDCB1TDWorkbook](../content/infoblox-cloud-data-connector-infobloxcdcb1tdworkbook-a058ef8d.md) | - |
+| [InfobloxCDCB1TDWorkbook](../content/infoblox-cloud-data-connector-infobloxcdcb1tdworkbook-a058ef8d.md) | [`UPDATE`](../tables/update.md) |
 
 ### Playbooks
 

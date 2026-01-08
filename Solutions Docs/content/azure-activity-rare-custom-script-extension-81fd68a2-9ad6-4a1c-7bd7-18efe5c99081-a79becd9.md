@@ -17,6 +17,7 @@ The Custom Script Extension in Azure executes scripts on VMs, useful for post-de
 This content item queries data from the following tables:
 
 - [`AzureActivity`](../tables/azureactivity.md)
+- [`Update`](../tables/update.md)
 
 ---
 

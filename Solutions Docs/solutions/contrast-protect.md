@@ -20,6 +20,7 @@ The [Contrast Protect](https://www.contrastsecurity.com/contrast-protect) soluti
 | **Author** | Contrast Security - support@contrastsecurity.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

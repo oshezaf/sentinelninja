@@ -18,17 +18,20 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (29)
+## Content Items Using This Table (36)
 
-### Analytic Rules (25)
+### Analytic Rules (28)
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 - [Dataverse - Anomalous application user activity](../content/microsoft-business-applications-dataverse-anomalous-application-user-activity-0820da12-e895-417f-9175-7c256fcfb33e-25e83157.md)
 - [Dataverse - Audit log data deletion](../content/microsoft-business-applications-dataverse-audit-log-data-deletion-f1634822-b7e9-44f5-95ac-fa4a04f14513-cd7a11d3.md)
 - [Dataverse - Audit logging disabled](../content/microsoft-business-applications-dataverse-audit-logging-disabled-ea07523b-e6b8-469b-9e25-cdef1ae6fb45-1a78c3d9.md)
 - [Dataverse - Bulk record ownership re-assignment or sharing](../content/microsoft-business-applications-dataverse-bulk-record-ownership-re-assignment-or-sharing-6e480329-84bc-409a-b97b-22e8102af3ca-962cb9c9.md)
+- [Dataverse - Export activity from terminated or notified employee](../content/microsoft-business-applications-dataverse-export-activity-from-terminated-or-notified-employee-0881b209-62c9-4b15-9f9a-e0c1d1b1eb7b-d925cc5f.md)
 - [Dataverse - Hierarchy security manipulation](../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.md)
 - [Dataverse - Honeypot instance activity](../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.md)
+- [Dataverse - Login by a sensitive privileged user](../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.md)
+- [Dataverse - Login from IP not in the allow list](../content/microsoft-business-applications-dataverse-login-from-ip-not-in-the-allow-list-81c693fe-f6c4-4352-bc10-3526f6e22637-6a1a9333.md)
 - [Dataverse - Mass deletion of records](../content/microsoft-business-applications-dataverse-mass-deletion-of-records-716cf6d4-97ad-407b-923e-6790083acb58-2ea9461e.md)
 - [Dataverse - Mass export of records to Excel](../content/microsoft-business-applications-dataverse-mass-export-of-records-to-excel-57000f0d-ff5d-4166-94b6-aa5fb62b16ec-17a490af.md)
 - [Dataverse - Mass record updates](../content/microsoft-business-applications-dataverse-mass-record-updates-df577f0f-1d8a-4420-9057-a07f0edb15c8-7ce89bac.md)
@@ -49,12 +52,16 @@ This table is used by the following solutions:
 - [Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection](../content/microsoft-business-applications-dataverse-unusual-sign-in-following-disabled-ip-address-based-cookie-bin-d7c9549c-7246-4555-8e53-d7b0db546764-05625607.md)
 - [Dataverse - User bulk retrieval outside normal activity](../content/microsoft-business-applications-dataverse-user-bulk-retrieval-outside-normal-activity-08cb7ffc-59c6-4e7d-88e0-327371c9431b-d673ce2b.md)
 
-### Hunting Queries (3)
+### Hunting Queries (7)
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
+- [Dataverse - Activity after Microsoft Entra alerts](../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.md)
 - [Dataverse - Activity after failed logons](../content/microsoft-business-applications-dataverse-activity-after-failed-logons-dafcc598-2987-4aa0-947e-7d0449677689-8b8942dc.md)
 - [Dataverse - Cross-environment data export activity](../content/microsoft-business-applications-dataverse-cross-environment-data-export-activity-74a48db8-dc1d-414e-9709-39fa3f8a2246-f5b62c63.md)
 - [Dataverse - Dataverse export copied to USB devices](../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.md)
+- [Dataverse - Generic client app used to access production environments](../content/microsoft-business-applications-dataverse-generic-client-app-used-to-access-production-environments-90bcbd4e-e8b5-4a5d-9fe6-d0f9f0220b4a-72c7ad56.md)
+- [Dataverse - Identity management activity outside of privileged directory role membership](../content/microsoft-business-applications-dataverse-identity-management-activity-outside-of-privileged-directory-r-c7e6e48a-0514-4989-bc90-4a3c9207ede1-5ce4101d.md)
+- [Dataverse - Identity management changes without MFA](../content/microsoft-business-applications-dataverse-identity-management-changes-without-mfa-385234b7-d96c-4dc3-9c0e-ceb46048d487-58611350.md)
 
 ### Workbooks (1)
 

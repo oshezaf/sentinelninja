@@ -20,6 +20,7 @@ The [Delinea](https://delinea.com/) Secret Server Microsoft Sentinel Data Soluti
 | **Author** | Delinea |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 

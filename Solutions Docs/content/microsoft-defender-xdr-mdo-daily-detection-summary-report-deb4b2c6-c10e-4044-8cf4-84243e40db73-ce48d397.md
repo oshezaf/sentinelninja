@@ -16,7 +16,10 @@ This query helps report daily on total number of emails, total number of emails 
 
 This content item queries data from the following tables:
 
+- [`AlertEvidence`](../tables/alertevidence.md)
 - [`CloudAppEvents`](../tables/cloudappevents.md)
+- [`EmailEvents`](../tables/emailevents.md)
+- [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)
 
 ---
 

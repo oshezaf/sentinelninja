@@ -10,17 +10,22 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail) |
 
-## Solutions (7)
+## Solutions (12)
 
 This table is used by the following solutions:
 
 - [Amazon Web Services](../solutions/amazon-web-services.md)
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
+- [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md)
+- [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
+- [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
+- [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (2)
 
@@ -31,9 +36,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (108)
+## Content Items Using This Table (117)
 
-### Analytic Rules (68)
+### Analytic Rules (73)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [AWS Config Service Resource Deletion Attempts](../content/amazon-web-services-aws-config-service-resource-deletion-attempts-093fe75e-44f1-4d3e-94dc-6d258a6dd2d2-c24c7483.md)
@@ -100,12 +105,23 @@ This table is ingested by the following connectors:
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
+- [User agent search for log4j exploitation attempt](../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.md)
+
+**In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
+- [Suspicious access of BEC related documents in AWS S3 buckets](../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-in-aws-s3-buckets-f3e2d35f-1202-4215-995c-4654ef07d1d8-5612c5c0.md)
+
+**In solution [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md):**
+- [Multi-Factor Authentication Disabled for a User](../content/cloud-identity-threat-protection-essentials-multi-factor-authentication-disabled-for-a-user-65c78944-930b-4cae-bd79-c3664ae30ba7-478ef443.md)
 
 **In solution [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md):**
+- [Cross-Cloud Password Spray detection](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-password-spray-detection-1f40ed57-f54b-462f-906a-ac3a89cc90d4-5128b308.md)
 - [High-Risk Cross-Cloud User Impersonation](../content/multi-cloud-attack-coverage-essentials-resource-abuse-high-risk-cross-cloud-user-impersonation-f4a28082-2808-4783-9736-33c1ae117475-11195fd6.md)
 - [Successful AWS Console Login from IP Address Observed Conducting Password Spray](../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.md)
 - [Suspicious AWS console logins by credential access alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.md)
 - [User impersonation by Identity Protection alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.md)
+
+**In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
+- [New UserAgent observed in last 24 hours](../content/network-threat-protection-essentials-new-useragent-observed-in-last-24-hours-b725d62c-eb77-42ff-96f6-bdc6745fc6e0-a94f1913.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-ti-map-ip-entity-to-awscloudtrail-f110287e-1358-490d-8147-ed804b328514-010bee9c.md)
@@ -113,7 +129,7 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 - [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md)
 
-### Hunting Queries (36)
+### Hunting Queries (37)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [Bucket versioning suspended](../content/amazon-web-services-bucket-versioning-suspended-48c49b1d-2aa0-442b-96e3-cae6ad1251cd-9e746ab9.md)
@@ -153,17 +169,29 @@ This table is ingested by the following connectors:
 - [Suspicious credential token access of valid IAM Roles](../content/amazon-web-services-suspicious-credential-token-access-of-valid-iam-roles-5b6ee21d-da53-46eb-827c-eab2a9ba3d2f-ed892985.md)
 - [Unused or Unsupported Cloud Regions](../content/amazon-web-services-unused-or-unsupported-cloud-regions-e0d57543-acbd-428b-bb96-24a67506f84d-bfc3cdb8.md)
 
-### Workbooks (4)
+**In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
+- [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md)
+
+### Workbooks (7)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md)
 - [AmazonWebServicesUserActivities](../content/amazon-web-services-amazonwebservicesuseractivities-9c51ee6e.md)
+
+**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
+- [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
+
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
 ---
 

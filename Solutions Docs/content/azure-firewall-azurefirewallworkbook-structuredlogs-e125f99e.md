@@ -15,6 +15,7 @@ This content item queries data from the following tables:
 - [`AZFWIdpsSignature`](../tables/azfwidpssignature.md)
 - [`AZFWNatRule`](../tables/azfwnatrule.md)
 - [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
+- [`AZFWThreatIntel`](../tables/azfwthreatintel.md)
 
 ---
 

@@ -11,6 +11,7 @@
 This content item queries data from the following tables:
 
 - [`OfficeActivity`](../tables/officeactivity.md)
+- [`Operation`](../tables/operation.md)
 
 ---
 

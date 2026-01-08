@@ -53,6 +53,14 @@ This solution uses **6 table(s)**:
 | [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) | - |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | [SentinelOne](../connectors/sentinelone.md) | - |
 
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's playbooks:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`AlertInfo`](../tables/alertinfo.md) | [SentinelOne](../connectors/sentinelone.md) | - |
+
 ## Content Items
 
 This solution includes **23 content item(s)**:

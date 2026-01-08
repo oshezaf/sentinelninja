@@ -18,6 +18,7 @@ This alert is designed to monitor Azure policies aligned with the Azure Security
 This content item queries data from the following tables:
 
 - [`SecurityRecommendation`](../tables/securityrecommendation.md)
+- [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
 
 ---
 

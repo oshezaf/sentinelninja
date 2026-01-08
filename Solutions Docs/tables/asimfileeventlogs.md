@@ -10,12 +10,13 @@ Reference for ASimFileEventLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimfileeventlogs) |
 
-## Solutions (4)
+## Solutions (5)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
+- [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 
@@ -28,7 +29,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (9)
 
 ### Analytic Rules (1)
 
@@ -47,7 +48,10 @@ This table is ingested by the following connectors:
 - [Detect New Scheduled Task Entry Creations](../content/malware-protection-essentials-detect-new-scheduled-task-entry-creations-4dc0aae4-6375-4670-b138-8c42490ba206-84bcf125.md)
 - [Executable Files Created in Uncommon Locations](../content/malware-protection-essentials-executable-files-created-in-uncommon-locations-ab8ddb26-050c-40aa-aaf0-bfb7e3eeb05f-1af678b6.md)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
 **In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
 - [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)

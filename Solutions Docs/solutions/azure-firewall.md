@@ -35,16 +35,16 @@ This solution uses **10 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Workbooks |
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
 | [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
 | [`AZFWFatFlow`](../tables/azfwfatflow.md) | [Azure Firewall](../connectors/azurefirewall.md) | - |
-| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) | [Azure Firewall](../connectors/azurefirewall.md) | - |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
+| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Workbooks |
 | [`AZFWInternalFqdnResolutionFailure`](../tables/azfwinternalfqdnresolutionfailure.md) | [Azure Firewall](../connectors/azurefirewall.md) | - |
 | [`AZFWNatRule`](../tables/azfwnatrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | [Azure Firewall](../connectors/azurefirewall.md) | - |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -61,22 +61,22 @@ This solution includes **20 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md) | Medium | InitialAccess, Exfiltration, CommandAndControl | - |
-| [Abnormal Port to Protocol](../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.md) | Medium | Exfiltration, CommandAndControl | - |
-| [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md) | Medium | Exfiltration, CommandAndControl | - |
-| [Port Scan](../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
-| [Port Sweep](../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
-| [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.md) | Medium | Discovery, LateralMovement, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |
+| [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md) | Medium | InitialAccess, Exfiltration, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWFlowTrace`](../tables/azfwflowtrace.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Abnormal Port to Protocol](../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.md) | Medium | Exfiltration, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md) | Medium | Exfiltration, CommandAndControl | [`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Port Scan](../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Port Sweep](../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.md) | Medium | Discovery | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.md) | Medium | Discovery, LateralMovement, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWFlowTrace`](../tables/azfwflowtrace.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [First Time Source IP to Destination](../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a-b6cf8086.md) | Exfiltration, CommandAndControl | - |
-| [First Time Source IP to Destination Using Port](../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562-850b4356.md) | Exfiltration, CommandAndControl | - |
-| [Source IP Abnormally Connects to Multiple Destinations](../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.md) | Execution, LateralMovement | - |
-| [Uncommon Port for Organization](../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.md) | Defense Evasion, Exfiltration, CommandAndControl | - |
-| [Uncommon Port to IP](../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.md) | Exfiltration, CommandAndControl | - |
+| [First Time Source IP to Destination](../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a-b6cf8086.md) | Exfiltration, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [First Time Source IP to Destination Using Port](../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562-850b4356.md) | Exfiltration, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Source IP Abnormally Connects to Multiple Destinations](../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.md) | Execution, LateralMovement | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Uncommon Port for Organization](../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.md) | Defense Evasion, Exfiltration, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
+| [Uncommon Port to IP](../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.md) | Exfiltration, CommandAndControl | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md) |
 
 ### Workbooks
 
@@ -85,7 +85,7 @@ This solution includes **20 content item(s)**:
 | [Azure Firewall Workbook - Deployment Template](../content/azure-firewall-azure-firewall-workbook-deployment-template-132a7d78.md) ⚠️ | - |
 | [Azure Firewall Workbook - Structured Logs - Deployment Template](../content/azure-firewall-azure-firewall-workbook-structured-logs-deployment-template-21048f9f.md) ⚠️ | - |
 | [AzureFirewallWorkbook](../content/azure-firewall-azurefirewallworkbook-b4bb528f.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md) | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |
+| [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md) | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md) |
 
 ### Playbooks
 

@@ -17,7 +17,9 @@ This query detects frequent creation and deletion of IFEO registry keys in a sho
 
 This content item queries data from the following tables:
 
+- [`Event`](../tables/event.md)
 - [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 

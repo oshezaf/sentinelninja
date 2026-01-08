@@ -17,7 +17,9 @@ This query identifies instances where malware intentionally configures the brows
 
 This content item queries data from the following tables:
 
+- [`Event`](../tables/event.md)
 - [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 

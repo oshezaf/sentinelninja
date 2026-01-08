@@ -20,6 +20,7 @@ The [Barracuda CloudGen Firewall ](https://www.barracuda.com/products/cloudgenfi
 | **Author** | Barracuda |
 | **First Published** | 2021-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20CloudGen%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20CloudGen%20Firewall) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
 
 ## Data Connectors
 

@@ -16,6 +16,7 @@ This workbook helps you track, visualize and monitor GDPR related requirements a
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-10-08 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GDPR%20Compliance%20%26%20Data%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GDPR%20Compliance%20%26%20Data%20Security) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-microsoft365defender, azuresentinel.azure-sentinel-solution-azurepurview, azuresentinel.azure-sentinel-solution-mip, azuresentinel.sentinel4sql, azuresentinel.azure-sentinel-solution-office365, azuresentinel.azure-sentinel-solution-azureactivedirectory |
 
 ## Data Connectors
 
@@ -25,10 +26,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **17 table(s)** from its content items:
+This solution queries **23 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | Workbooks |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) | Workbooks |
 | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | Workbooks |
 | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | Workbooks |
@@ -39,9 +41,14 @@ This solution queries **17 table(s)** from its content items:
 | [`LAQueryLogs`](../tables/laquerylogs.md) | Workbooks |
 | [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
+| [`Operation`](../tables/operation.md) | Workbooks |
 | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | Workbooks |
+| [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md) | Workbooks |
+| [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | Workbooks |
+| [`Update`](../tables/update.md) | Workbooks |
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) | Workbooks |
 | [`W3CIISLog`](../tables/w3ciislog.md) | Workbooks |
 | [`barracuda_CL`](../tables/barracuda-cl.md) | Workbooks |
@@ -49,12 +56,14 @@ This solution queries **17 table(s)** from its content items:
 
 ### Internal Tables
 
-The following **2 table(s)** are used internally by this solution's playbooks:
+The following **4 table(s)** are used internally by this solution's playbooks:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
+| [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
+| [`anomalies`](../tables/anomalies.md) | Workbooks |
 
 ## Content Items
 
@@ -68,7 +77,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)<br>[`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`anomalies`](../tables/anomalies.md) |
 
 ## Release Notes
 

@@ -16,7 +16,10 @@ Beyond your internal software management systems, it is possible you may not hav
 
 This content item queries data from the following tables:
 
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+- [`Event`](../tables/event.md)
 - [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 

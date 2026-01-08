@@ -8,7 +8,7 @@ Reference for AzureDiagnostics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics) |
 
-## Solutions (37)
+## Solutions (41)
 
 This table is used by the following solutions:
 
@@ -36,11 +36,14 @@ This table is used by the following solutions:
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Session Essentials](../solutions/network-session-essentials.md)
+- [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [Recorded Future](../solutions/recorded-future.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
 - [SlashNext](../solutions/slashnext.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -49,6 +52,7 @@ This table is used by the following solutions:
 - [ThreatConnect](../solutions/threatconnect.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
+- [Zinc Open Source](../solutions/zinc-open-source.md)
 
 ## Connectors (15)
 
@@ -72,17 +76,26 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (114)
+## Content Items Using This Table (133)
 
-### Analytic Rules (58)
+### Analytic Rules (67)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Azure WAF matching for Log4j vuln(CVE-2021-44228)](../content/apache-log4j-vulnerability-detection-azure-waf-matching-for-log4j-vuln-cve-2021-44228-2de8abd6-a613-450e-95ed-08e503369fb3-2f37c37a.md)
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
+- [User agent search for log4j exploitation attempt](../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.md)
 
 **In solution [Azure DDoS Protection](../solutions/azure-ddos-protection.md):**
 - [DDoS Attack IP Addresses - PPS Threshold](../content/azure-ddos-protection-ddos-attack-ip-addresses-pps-threshold-6e76fd9d-8104-41eb-bad3-26054a3ad5f0-19898f82.md)
 - [DDoS Attack IP Addresses - Percent Threshold](../content/azure-ddos-protection-ddos-attack-ip-addresses-percent-threshold-402a42ad-f31c-48d1-8f80-0200846b7f25-45798bda.md)
+
+**In solution [Azure Firewall](../solutions/azure-firewall.md):**
+- [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md)
+- [Abnormal Port to Protocol](../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.md)
+- [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md)
+- [Port Scan](../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.md)
+- [Port Sweep](../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.md)
+- [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.md)
 
 **In solution [Azure Key Vault](../solutions/azure-key-vault.md):**
 - [Azure Key Vault access TimeSeries anomaly](../content/azure-key-vault-azure-key-vault-access-timeseries-anomaly-0914adab-90b5-47a3-a79f-7cdcac843aa7-3cd8ede1.md)
@@ -156,16 +169,27 @@ This table is ingested by the following connectors:
 - [TI Map IP Entity to Azure SQL Security Audit Events](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-sql-security-audit-events-239d987e-ee1b-4c49-b146-e88d682930a4-fb7a1cf3.md)
 - [TI map Domain entity to Dns Events (ASIM DNS Schema)](../content/threat-intelligence-new-ti-map-domain-entity-to-dns-events-asim-dns-schema-7c1ea2e6-6210-412c-92e4-180803a741b4-d24ac70c.md)
 - [TI map IP entity to Azure Key Vault logs](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-key-vault-logs-7c8051a7-3d29-4c0d-a340-893423f7b0a5-565bd210.md)
+- [TI map IP entity to AzureFirewall](../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.md)
 - [TI map IP entity to DNS Events (ASIM DNS schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-dns-events-asim-dns-schema-b306fba8-1a28-449f-aa24-30362e16d4f5-613a3814.md)
 - [TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/threat-intelligence-new-ti-map-ip-entity-to-network-session-events-asim-network-session-schema-54f4ceb4-fd83-4633-b5b0-c0de9feb8890-4e169efc.md)
 
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
 - [ThreatConnect TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/threatconnect-threatconnect-ti-map-ip-entity-to-network-session-events-asim-network-session-schema-ee1fd303-2081-47b7-8f02-e38bfd0868e6-1359f109.md)
 
-### Hunting Queries (34)
+**In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
+- [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
+
+### Hunting Queries (40)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Azure WAF Log4j CVE-2021-44228 hunting](../content/apache-log4j-vulnerability-detection-azure-waf-log4j-cve-2021-44228-hunting-1d4d383e-0ca6-4d3a-a861-8f37aeef18cb-dcfb1bb2.md)
+
+**In solution [Azure Firewall](../solutions/azure-firewall.md):**
+- [First Time Source IP to Destination](../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a-b6cf8086.md)
+- [First Time Source IP to Destination Using Port](../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562-850b4356.md)
+- [Source IP Abnormally Connects to Multiple Destinations](../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.md)
+- [Uncommon Port for Organization](../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.md)
+- [Uncommon Port to IP](../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.md)
 
 **In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
 - [Affected rows stateful anomaly on database - hunting query](../content/azure-sql-database-solution-for-sentinel-affected-rows-stateful-anomaly-on-database-hunting-query-9670ac84-e035-47f5-8eb5-9d863a8a7893-66ffcc6c.md)
@@ -200,6 +224,9 @@ This table is ingested by the following connectors:
 - [Google Threat Intelligence - Threat Hunting Domain](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-34288e97-5194-4f2e-abf2-c2783189f6ae-2dfdacdc.md)
 - [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.md)
 
+**In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
+- [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md)
+
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
 - [Detect Outbound LDAP Traffic(ASIM Network Session schema)](../content/network-session-essentials-detect-outbound-ldap-traffic-asim-network-session-schema-5dca6047-24ed-4eb7-b44e-ec7f1bf42621-c96df1ab.md)
 - [Detect port misuse by anomaly (ASIM Network Session schema)](../content/network-session-essentials-detect-port-misuse-by-anomaly-asim-network-session-schema-906c20c6-b62c-4af7-be91-d7300e3bded2-d8a6fcbc.md)
@@ -216,7 +243,10 @@ This table is ingested by the following connectors:
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 - [Possible Webshell usage attempt related to SpringShell(CVE-2022-22965)](../content/web-shells-threat-protection-possible-webshell-usage-attempt-related-to-springshell-cve-2022-22965-6911d1df-4204-43b2-a64c-3cb102551ddd-8605b97e.md)
 
-### Workbooks (20)
+### Workbooks (24)
+
+**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
+- [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md)
 
 **In solution [Azure DDoS Protection](../solutions/azure-ddos-protection.md):**
 - [AzDDoSStandardWorkbook](../content/azure-ddos-protection-azddosstandardworkbook-5256dfab.md)
@@ -234,6 +264,9 @@ This table is ingested by the following connectors:
 - [WebApplicationFirewallFirewallEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallfirewallevents-fffe3907.md)
 - [WebApplicationFirewallGatewayAccessEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallgatewayaccessevents-3b2791d0.md)
 - [WebApplicationFirewallOverview](../content/azure-web-application-firewall-waf-webapplicationfirewalloverview-724b5122.md)
+
+**In solution [Azure kubernetes Service](../solutions/azure-kubernetes-service.md):**
+- [AksSecurity](../content/azure-kubernetes-service-akssecurity-51e44b54.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
@@ -262,6 +295,12 @@ This table is ingested by the following connectors:
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
 - [NetworkSessionEssentials](../content/network-session-essentials-networksessionessentials-5de17c97.md)
 - [NetworkSessionEssentialsV2](../content/network-session-essentials-networksessionessentialsv2-9408ac84.md)
+
+**In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
+- [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
 - [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md)

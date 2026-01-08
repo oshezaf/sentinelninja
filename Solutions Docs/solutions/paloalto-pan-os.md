@@ -21,6 +21,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **First Published** | 2021-08-09 |
 | **Last Updated** | 2021-09-20 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 
@@ -33,11 +34,12 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Reference
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md), [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md) | Analytics, Hunting, Workbooks |
+| [`alert`](../tables/alert.md) | - | Workbooks |
 
 ## Content Items
 
@@ -72,7 +74,7 @@ This solution includes **16 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [PaloAltoNetworkThreat](../content/paloalto-pan-os-paloaltonetworkthreat-4d4c5438.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [PaloAltoOverview](../content/paloalto-pan-os-paloaltooverview-9f519554.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [PaloAltoOverview](../content/paloalto-pan-os-paloaltooverview-9f519554.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`alert`](../tables/alert.md) |
 
 ### Playbooks
 

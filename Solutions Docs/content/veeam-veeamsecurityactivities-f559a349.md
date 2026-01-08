@@ -10,12 +10,15 @@
 
 This content item queries data from the following tables:
 
+- [`Event`](../tables/event.md)
+- [`Operation`](../tables/operation.md)
 - [`Syslog`](../tables/syslog.md)
 - [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md)
 - [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md)
 - [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md)
 - [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md)
 - [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md)
+- [`watchlist`](../tables/watchlist.md)
 
 ---
 

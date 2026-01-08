@@ -18,7 +18,10 @@ This query maps Lumen IP indicators of compromise (IOCs) from threat intelligenc
 
 This content item queries data from the following tables:
 
+- [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)
 - [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
+- [`ADFSSignInLogs`](../tables/adfssigninlogs.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
 
 ---

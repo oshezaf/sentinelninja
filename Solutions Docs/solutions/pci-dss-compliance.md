@@ -25,12 +25,24 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Reference
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **5 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
+| [`Event`](../tables/event.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | Workbooks |
+
+### Internal Tables
+
+The following **2 table(s)** are used internally by this solution's playbooks:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`Anomalies`](../tables/anomalies.md) | Workbooks |
+| [`watchlist`](../tables/watchlist.md) | Workbooks |
 
 ## Content Items
 
@@ -44,7 +56,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) | [`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Event`](../tables/event.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`watchlist`](../tables/watchlist.md) |
 
 ## Release Notes
 

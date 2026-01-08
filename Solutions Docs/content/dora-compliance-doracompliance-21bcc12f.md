@@ -10,9 +10,11 @@
 
 This content item queries data from the following tables:
 
+- [`DeviceFileEvents`](../tables/devicefileevents.md)
 - [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
 - [`Heartbeat`](../tables/heartbeat.md)
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`SecurityIncident`](../tables/securityincident.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
 
 ---

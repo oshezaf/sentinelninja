@@ -10,11 +10,12 @@ Reference for ASimAuthenticationEventLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimauthenticationeventlogs) |
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
+- [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 
 ## Connectors (2)
@@ -25,6 +26,13 @@ This table is ingested by the following connectors:
 - [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md)
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
 ## Resource Types
 

@@ -31,10 +31,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **108 table(s)**:
+This solution uses **111 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`Alert`](../tables/alert.md) | - | Workbooks |
 | [`Corelight_CL`](../tables/corelight-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_bacnet_CL`](../tables/corelight-v2-bacnet-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_capture_loss_CL`](../tables/corelight-v2-capture-loss-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
@@ -143,6 +144,8 @@ This solution uses **108 table(s)**:
 | [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
 | [`Corelight_v2_zeek_doctor_CL`](../tables/corelight-v2-zeek-doctor-cl.md) | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) | - |
+| [`Usage`](../tables/usage.md) | - | Workbooks |
+| [`usage`](../tables/usage.md) | - | Workbooks |
 
 ## Content Items
 
@@ -190,11 +193,11 @@ This solution includes **151 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Corelight](../content/corelight-corelight-90dad195.md) | - |
+| [Corelight](../content/corelight-corelight-90dad195.md) | [`Alert`](../tables/alert.md) |
 | [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) | - |
-| [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) | - |
+| [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) | [`Alert`](../tables/alert.md) |
 | [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) | [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md)<br>[`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md)<br>[`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md)<br>[`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md)<br>[`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md)<br>[`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md)<br>[`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md)<br>[`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)<br>[`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)<br>[`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md)<br>[`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md)<br>[`Corelight_v2_ssl_CL`](../tables/corelight-v2-ssl-cl.md)<br>[`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) |
-| [Corelight_Sensor_Overview](../content/corelight-corelight-sensor-overview-71e61142.md) | - |
+| [Corelight_Sensor_Overview](../content/corelight-corelight-sensor-overview-71e61142.md) | [`Usage`](../tables/usage.md)<br>[`usage`](../tables/usage.md) |
 
 ### Parsers
 

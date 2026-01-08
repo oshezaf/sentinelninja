@@ -22,6 +22,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Author** | Forcepoint |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW) |
+| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
 
 ## Data Connectors
 
@@ -34,11 +35,13 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Reference
 
-This solution uses **3 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`Alert`](../tables/alert.md) | - | Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Forcepoint NGFW via AMA](../connectors/forcepointngfwama.md), [[Deprecated] Forcepoint NGFW via Legacy Agent](../connectors/forcepointngfw.md) | Workbooks |
+| [`Heartbeat`](../tables/heartbeat.md) | - | Workbooks |
 | [`Perf`](../tables/perf.md) | - | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Workbooks |
 
@@ -55,7 +58,7 @@ This solution includes **2 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [ForcepointNGFW](../content/forcepoint-ngfw-forcepointngfw-6b671d61.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Perf`](../tables/perf.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md) | [`Alert`](../tables/alert.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`Perf`](../tables/perf.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 
 ## Release Notes
 

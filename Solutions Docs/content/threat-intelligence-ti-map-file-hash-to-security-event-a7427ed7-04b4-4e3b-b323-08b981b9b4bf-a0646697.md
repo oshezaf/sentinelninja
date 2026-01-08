@@ -18,7 +18,9 @@ Identifies a match in Security Event data from any File Hash IOC from TI
 
 This content item queries data from the following tables:
 
+- [`SecurityEvent`](../tables/securityevent.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 

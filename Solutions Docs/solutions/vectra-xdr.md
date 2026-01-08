@@ -30,7 +30,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Reference
 
-This solution uses **6 table(s)**:
+This solution uses **8 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -38,8 +38,10 @@ This solution uses **6 table(s)**:
 | [`Detections_Data_CL`](../tables/detections-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
 | [`Entities_Data_CL`](../tables/entities-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics |
 | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
+| [`Event`](../tables/event.md) | - | Workbooks |
 | [`Health_Data_CL`](../tables/health-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
 | [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
+| [`Usage`](../tables/usage.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -78,7 +80,7 @@ This solution includes **33 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) | - |
+| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) | [`Event`](../tables/event.md)<br>[`Usage`](../tables/usage.md) |
 
 ### Playbooks
 
