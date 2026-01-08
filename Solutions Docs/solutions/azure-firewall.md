@@ -48,14 +48,14 @@ This solution uses **10 table(s)**:
 
 ## Content Items
 
-This solution includes **20 content item(s)**:
+This solution includes **18 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 6 |
 | Hunting Queries | 5 |
 | Playbooks | 5 |
-| Workbooks | 4 |
+| Workbooks | 2 |
 
 ### Analytic Rules
 
@@ -82,8 +82,6 @@ This solution includes **20 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Azure Firewall Workbook - Deployment Template](../content/azure-firewall-azure-firewall-workbook-deployment-template-132a7d78.md) ⚠️ | - |
-| [Azure Firewall Workbook - Structured Logs - Deployment Template](../content/azure-firewall-azure-firewall-workbook-structured-logs-deployment-template-21048f9f.md) ⚠️ | - |
 | [AzureFirewallWorkbook](../content/azure-firewall-azurefirewallworkbook-b4bb528f.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md) | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md) |
 
@@ -96,8 +94,6 @@ This solution includes **20 content item(s)**:
 | [Block IP - Azure Firewall IP groups - Entity trigger](../content/azure-firewall-block-ip-azure-firewall-ip-groups-entity-trigger-d467f8a0.md) | This playbook interacts with relevant stackholders, such incident response team, to approve blocking... | - |
 | [BlockIP-Azure Firewall New Rule](../content/azure-firewall-blockip-azure-firewall-new-rule-92066640.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
 | [BlockIP-Azure Firewall New Rule - Entity trigger](../content/azure-firewall-blockip-azure-firewall-new-rule-entity-trigger-d87d91b7.md) | This playbook uses the Azure Firewall connector to add IP Address to the Deny Network Rules collecti... | - |
-
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 

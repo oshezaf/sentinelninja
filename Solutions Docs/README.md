@@ -9,7 +9,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | [Solutions Index](solutions-index.md) | Browse all 484 solutions |
 | [Connectors Index](connectors-index.md) | Browse all 525 data connectors |
 | [Tables Index](tables-index.md) | Browse all 1695 log tables |
-| [Content Index](content/content-index.md) | Browse all 4868 content items |
+| [Content Index](content/content-index.md) | Browse all 4864 content items |
 
 ## Quick Statistics
 
@@ -20,7 +20,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | Unique Connectors | 378 |
 | Discovered Connectors⚠️ | 147 |
 | Tables Used by Solutions | 815 |
-| Content Items | 4868 |
+| Content Items | 4864 |
 | Solutions with Content | 385 (79%) |
 
 *Note: 1695 total tables are documented, including 880 additional tables referenced by content items or from the Azure Monitor reference.*
@@ -51,7 +51,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | Analytic Rules | 2,185 |
 | Hunting Queries | 1,168 |
 | Playbooks | 592 |
-| Workbooks | 350 |
+| Workbooks | 346 |
 | Parsers | 514 |
 | Watchlists | 41 |
 | Summary Rules | 18 |

@@ -40,13 +40,13 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **26 content item(s)**:
+This solution includes **25 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Parsers | 22 |
 | Analytic Rules | 2 |
-| Workbooks | 2 |
+| Workbooks | 1 |
 
 ### Analytic Rules
 
@@ -60,7 +60,6 @@ This solution includes **26 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [Infoblox-Workbook-V2](../content/infoblox-nios-infoblox-workbook-v2-a1f70727.md) | - |
-| [Sources_by_SourceType](../content/infoblox-nios-sources-by-sourcetype-0fcdc27f.md) ⚠️ | - |
 
 ### Parsers
 
@@ -88,8 +87,6 @@ This solution includes **26 content item(s)**:
 | [Infoblox_dnsclient](../content/infoblox-nios-infoblox-dnsclient-16f093d4-c9a8-4426-89ab-855c3e3be243-d7556135.md) | - | - |
 | [Infoblox_dnsgss](../content/infoblox-nios-infoblox-dnsgss-bcdea229-bb66-4071-b5f8-e9628079f834-ee6db49a.md) | - | - |
 | [Infoblox_dnszone](../content/infoblox-nios-infoblox-dnszone-6b88ad86-5ecb-4918-b41e-a463fc4a36f3-66224728.md) | - | - |
-
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 

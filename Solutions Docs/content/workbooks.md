@@ -1,6 +1,6 @@
 # Workbooks
 
-**350 workbooks** across all Microsoft Sentinel solutions.
+**346 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -38,8 +38,6 @@
 | [Authomize](authomize-authomize-0bb90a63.md) | [Authomize](../solutions/authomize.md) |
 | [AutomationHealth](sentinelsoaressentials-automationhealth-09dce6f5.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [AzDDoSStandardWorkbook](azure-ddos-protection-azddosstandardworkbook-5256dfab.md) | [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
-| [Azure Firewall Workbook - Deployment Template](azure-firewall-azure-firewall-workbook-deployment-template-132a7d78.md) ⚠️ | [Azure Firewall](../solutions/azure-firewall.md) |
-| [Azure Firewall Workbook - Structured Logs - Deployment Template](azure-firewall-azure-firewall-workbook-structured-logs-deployment-template-21048f9f.md) ⚠️ | [Azure Firewall](../solutions/azure-firewall.md) |
 | [AzureActiveDirectoryAuditLogs](microsoft-entra-id-azureactivedirectoryauditlogs-03b0be29.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [AzureActiveDirectorySignins](microsoft-entra-id-azureactivedirectorysignins-97204667.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [AzureActivity](azure-activity-azureactivity-dc7bc453.md) | [Azure Activity](../solutions/azure-activity.md) |
@@ -249,7 +247,6 @@
 |:-----|:---------|
 | [LastPassWorkbook](lastpass-enterprise-activity-monitoring-lastpassworkbook-a0d8c4ef.md) | [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
 | [LinuxMachines](syslog-linuxmachines-b765d65a.md) | [Syslog](../solutions/syslog.md) |
-| [Log4j](apache-log4j-vulnerability-detection-log4j-98de8d71.md) ⚠️ | [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [Log4jImpactAssessment](apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md) | [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [Log4jPostCompromiseHunting](apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md) | [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [LookoutEvents](lookout-lookoutevents-591b9350.md) | [Lookout](../solutions/lookout.md) |
@@ -397,7 +394,6 @@
 | [SonicWallFirewall](sonicwall-firewall-sonicwallfirewall-108e460f.md) | [SonicWall Firewall](../solutions/sonicwall-firewall.md) |
 | [Sonrai](sonraisecurity-sonrai-6abc78da.md) | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [SophosXGFirewall](sophos-xg-firewall-sophosxgfirewall-c77fae3a.md) | [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) |
-| [Sources_by_SourceType](infoblox-nios-sources-by-sourcetype-0fcdc27f.md) ⚠️ | [Infoblox NIOS](../solutions/infoblox-nios.md) |
 | [SOXITCompliance](sox-it-compliance-soxitcompliance-6426e0a3.md) | [SOX IT Compliance](../solutions/sox-it-compliance.md) |
 | [SymantecEndpointProtection](symantec-endpoint-protection-symantecendpointprotection-1ac479ae.md) | [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) |
 | [SymantecProxySG](symantecproxysg-symantecproxysg-dd9ed98f.md) | [SymantecProxySG](../solutions/symantecproxysg.md) |
