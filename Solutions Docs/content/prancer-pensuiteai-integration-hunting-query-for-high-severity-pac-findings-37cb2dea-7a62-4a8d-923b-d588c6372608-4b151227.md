@@ -11,7 +11,6 @@ This query pulls in all the high severity Pensuite AI pentest findings into one 
 | **Tactics** | Collection |
 | **Techniques** | T0811 |
 | **Required Connectors** | [PrancerLogData](../connectors/prancerlogdata.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration/Hunting%20Queries/PAC_high_severity_query.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

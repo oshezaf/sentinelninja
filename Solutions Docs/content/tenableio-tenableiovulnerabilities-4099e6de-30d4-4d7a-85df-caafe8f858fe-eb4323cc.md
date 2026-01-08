@@ -5,7 +5,6 @@
 | **Type** | Parser |
 | **Solution** | [TenableIO](../solutions/tenableio.md) |
 | **ID** | `4099e6de-30d4-4d7a-85df-caafe8f858fe` |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO/Parsers/TenableIOVulnerabilities.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

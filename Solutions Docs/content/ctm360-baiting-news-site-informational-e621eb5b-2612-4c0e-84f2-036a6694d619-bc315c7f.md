@@ -13,7 +13,6 @@ New Baiting News Site with severity Informational found
 | **Tactics** | Reconnaissance |
 | **Techniques** | T1589 |
 | **Required Connectors** | [CBSPollingIDAzureFunctions](../connectors/cbspollingidazurefunctions.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Analytic%20Rules/baiting_news_site_informational.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

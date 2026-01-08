@@ -25,28 +25,7 @@ Content is organized by type. Click on a content type below to browse all items 
 | [Workbooks](workbooks.md) | 350 | Interactive dashboards and reports |
 | [Parsers](parsers.md) | 514 | Data normalization and transformation functions |
 | [Watchlists](watchlists.md) | 41 | Reference data lists for enrichment and filtering |
-| Summary Rule | 18 | |
-
-## Statistics
-
-| Metric | Value |
-|:-------|------:|
-| Total Content Items | 4868 |
-| Content Types | 7 |
-| Solutions with Content | 385 |
-
-### Content by Type
-
-| Content Type | Count |
-|:-------------|------:|
-| [Analytic Rules](analytic-rules.md) | 2185 |
-| [Hunting Queries](hunting-queries.md) | 1168 |
-| [Playbooks](playbooks.md) | 592 |
-| [Parsers](parsers.md) | 514 |
-| [Workbooks](workbooks.md) | 350 |
-| [Watchlists](watchlists.md) | 41 |
-| [Summary Rule](summary-rules.md) | 18 |
-| **Total** | **4868** |
+| [Summary Rules](summary-rules.md) | 18 | Rules for aggregating and summarizing data |
 
 ---
 

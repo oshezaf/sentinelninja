@@ -8,7 +8,6 @@
 | **Collection Method** | AMA |
 | **Event Vendor** | ExtraHop |
 | **Connector Definition Files** | [template_ExtraHopReveal%28x%29AMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29/Data%20Connectors/template_ExtraHopReveal%28x%29AMA.json) |
-| **Solution JSON** | ⚠️ Not listed |
 
 > ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 

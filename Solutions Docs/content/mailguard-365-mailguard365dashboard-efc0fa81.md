@@ -4,7 +4,6 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [MailGuard 365](../solutions/mailguard-365.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365/Workbooks/MailGuard365Dashboard.json) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

@@ -10,7 +10,6 @@ Visualises the top 10 users with click attempts on URLs in emails detected as ph
 | **Tactics** | InitialAccess |
 | **Techniques** | T1566 |
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/URL/Top%2010%20Users%20clicking%20on%20Malicious%20URLs%20%28Phish%29.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

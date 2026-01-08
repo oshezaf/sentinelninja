@@ -13,31 +13,9 @@ Browse all tables used by Microsoft Sentinel solutions and data connectors.
 
 ## Overview
 
-This page lists **1700 unique tables** (811 ingested by connectors, 889 referenced by content only).
+This page lists **1683 unique tables** (811 ingested by connectors, 872 referenced by content only).
 
-**Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
-
-## #
-
-| Table | Solutions | Connectors |
-|-------|-----------|------------|
-| [`_Im_NetworkSession_AWSVPCV03`](tables/im-networksession-awsvpcv03.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_AppGateSDPV02`](tables/im-networksession-appgatesdpv02.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_CheckPointFirewallV11`](tables/im-networksession-checkpointfirewallv11.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_CiscoASAV10`](tables/im-networksession-ciscoasav10.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_CiscoFirepowerV01`](tables/im-networksession-ciscofirepowerv01.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_CiscoISEV11`](tables/im-networksession-ciscoisev11.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_ForcePointFirewallV01`](tables/im-networksession-forcepointfirewallv01.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_FortinetFortiGateV04`](tables/im-networksession-fortinetfortigatev04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_LinuxSysmonV04`](tables/im-networksession-linuxsysmonv04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_Microsoft365DefenderV04`](tables/im-networksession-microsoft365defenderv04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_MicrosoftWindowsEventFirewallV04`](tables/im-networksession-microsoftwindowseventfirewallv04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_NativeV03`](tables/im-networksession-nativev03.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_PaloAltoCEFV07`](tables/im-networksession-paloaltocefv07.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_SonicWallFirewallV01`](tables/im-networksession-sonicwallfirewallv01.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_VMConnectionV02`](tables/im-networksession-vmconnectionv02.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_WatchGuardFirewareOSV01`](tables/im-networksession-watchguardfirewareosv01.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
-| [`_Im_NetworkSession_ZscalerZIAV04`](tables/im-networksession-zscalerziav04.md) | [Network Session Essentials](solutions/network-session-essentials.md) |  |
+**Jump to:** [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
 ## A
 

@@ -11,7 +11,6 @@ Query searches for high confidence threats stopped by MailGuard 365.
 | **Tactics** | Reconnaissance |
 | **Techniques** | T1598 |
 | **Required Connectors** | [MailGuard365](../connectors/mailguard365.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365/Hunting%20Queries/MailGuard365HighConfidenceThreats.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

@@ -6,7 +6,6 @@
 | **Solution** | [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) |
 | **Event Vendor** | Palo Alto Networks |
 | **Event Product** | Cortex XDR |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29/Workbook/PaloAltoXDR.json) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

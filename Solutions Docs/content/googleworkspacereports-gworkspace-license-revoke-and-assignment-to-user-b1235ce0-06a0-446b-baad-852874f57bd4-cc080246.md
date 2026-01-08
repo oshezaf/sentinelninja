@@ -11,7 +11,6 @@ This hunting query searches for license revoke and assignment in quick successio
 | **Tactics** | Exfiltration |
 | **Techniques** | T1537 |
 | **Required Connectors** | [GoogleWorkspaceReportsAPI](../connectors/googleworkspacereportsapi.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports/Hunting%20Queries/GWorkspaceLicenseRevokeAndAssignmentToUser.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

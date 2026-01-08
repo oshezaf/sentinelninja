@@ -5,7 +5,6 @@
 | **Type** | Parser |
 | **Solution** | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
 | **ID** | `d68167dc-3161-487f-bccc-981fe71907e1` |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Parsers/CiscoSyslogUTD.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

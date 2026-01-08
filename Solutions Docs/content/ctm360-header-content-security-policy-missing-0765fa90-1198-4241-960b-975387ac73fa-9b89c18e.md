@@ -13,7 +13,6 @@ Header: Content Security Policy Missing
 | **Tactics** | InitialAccess |
 | **Techniques** | T1190, T1566 |
 | **Required Connectors** | [HVPollingIDAzureFunctions](../connectors/hvpollingidazurefunctions.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Analytic%20Rules/HeaderContentSecurityPolicyMissing.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

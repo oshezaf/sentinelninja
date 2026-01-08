@@ -13,7 +13,6 @@ High severity virtual network peerings alerts found by Prancer.
 | **Tactics** | Reconnaissance |
 | **Techniques** | T1595 |
 | **Required Connectors** | [PrancerLogData](../connectors/prancerlogdata.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration/Analytic%20Rules/Virtual_Networks_High_Severity.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

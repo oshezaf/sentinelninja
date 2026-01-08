@@ -2,15 +2,6 @@
 
 **1168 hunting queries** across all Microsoft Sentinel solutions.
 
-**Browse by:**
-
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](content-index.md)
-
----
-
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
 ## #

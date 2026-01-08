@@ -9,7 +9,6 @@ Recorded Future  URL  Threat Actor Hunt.
 | **ID** | `dbc2438a-0d16-4890-aaae-cbe0dc433b08` |
 | **Severity** | Medium |
 | **Required Connectors** | [ThreatIntelligence](../connectors/threatintelligence.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Hunting%20Queries/RecordedFutureUrlThreatActorHunt.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

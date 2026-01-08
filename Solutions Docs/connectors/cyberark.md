@@ -9,7 +9,6 @@
 | **Event Vendor** | Cyber-Ark |
 | **Event Product** | Vault |
 | **Connector Definition Files** | [CyberArk%20Data%20Connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArk%20Enterprise%20Password%20Vault%20%28EPV%29%20Events/Data%20Connectors/CyberArk%20Data%20Connector.json) |
-| **Solution JSON** | ⚠️ Not listed |
 
 > ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 

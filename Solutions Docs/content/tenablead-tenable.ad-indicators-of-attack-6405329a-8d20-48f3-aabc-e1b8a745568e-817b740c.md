@@ -12,7 +12,6 @@ Searches for triggered Indicators of Attack.
 | **Tactics** | CredentialAccess |
 | **Techniques** | T1110 |
 | **Required Connectors** | [Tenable.ad](../connectors/tenable.ad.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD/Analytic%20Rules/TenableAdIndicatorsOfAttack.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

@@ -9,7 +9,6 @@
 | **Event Vendor** | Palo Alto Networks |
 | **Event Product** | Cortex XDR |
 | **Connector Definition Files** | [Connector_PaloAlto_XDR_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29/Data%20Connectors/Connector_PaloAlto_XDR_CEF.json) |
-| **Solution JSON** | ⚠️ Not listed |
 
 > ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 

@@ -6,7 +6,6 @@ This playbook creates an educational Attack Simulator 'How-To Guide' simulation 
 |:----------|:------|
 | **Type** | Playbook |
 | **Solution** | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Playbooks/AttackSimulatorTrainingNonReporters/azuredeploy.json) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

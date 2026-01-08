@@ -13,7 +13,6 @@ Generates Microsoft Sentinel incidents from Cyble Advisory service alerts. Advis
 | **Tactics** | Reconnaissance, ResourceDevelopment |
 | **Techniques** | T1595, T1596, T1587 |
 | **Required Connectors** | [CybleVisionAlerts](../connectors/cyblevisionalerts.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Analytic%20Rules/Alerts_advisory.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.

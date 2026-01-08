@@ -2,15 +2,6 @@
 
 **41 watchlists** across all Microsoft Sentinel solutions.
 
-**Browse by:**
-
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](content-index.md)
-
----
-
 **Jump to:** [A](#a) | [C](#c) | [D](#d) | [E](#e) | [H](#h) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [R](#r) | [S](#s) | [T](#t) | [V](#v)
 
 ## A

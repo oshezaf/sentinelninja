@@ -9,7 +9,6 @@ Recorded Future Threat Hunting IP correlation for all actors.
 | **ID** | `7b5eb44d-3533-440e-9774-73a4d99bc2b2` |
 | **Severity** | Medium |
 | **Required Connectors** | [ThreatIntelligence](../connectors/threatintelligence.md) |
-| **Solution JSON** | ⚠️ Not listed |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Hunting%20Queries/RecordedFutureIPThreatActorHunt.yaml) |
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
