@@ -72,7 +72,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 
 ## Source
 
-This documentation is generated from the [Azure-Sentinel](https://github.com/Azure/Azure-Sentinel) repository using the Solutions Analyzer tool.
+This documentation is generated from the [Azure-Sentinel](https://github.com/Azure/Azure-Sentinel) repository using the [Solutions Analyzer](https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Solutions%20Analyzer) tool.
 
 ### Generating Documentation
 
