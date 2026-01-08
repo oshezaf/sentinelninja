@@ -23,6 +23,10 @@ The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-fir
 | **First Published** | 2021-08-13 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point) |
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Check Point Log Fields Description](https://support.checkpoint.com/results/sk/sk144192) - Log field definitions and descriptions
+
 ## Data Connectors
 
 **This solution does not include data connectors.**
@@ -57,10 +61,6 @@ This solution includes **2 content item(s)**:
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [checkpoint-add-host-to-group](../content/check-point-checkpoint-add-host-to-group-1a66c770.md) | This playbook will create Check Point objects and add to block group | - |
-
-## Additional Information
-
-📖 **Vendor Documentation:** [Check Point Log Fields Description](https://support.checkpoint.com/results/sk/sk144192) - Log field definitions and descriptions
 
 ## Additional Documentation
 

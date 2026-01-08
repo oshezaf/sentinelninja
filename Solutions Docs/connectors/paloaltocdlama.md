@@ -12,6 +12,11 @@
 
 > ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Additional Information
+
+- 📖 **Vendor Documentation:** [PAN-OS Syslog Field Descriptions](https://docs.paloaltonetworks.com/pan-os/11-1/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions) - Traffic, Threat, URL, and other log field definitions
+- 📖 **Vendor Documentation:** [Palo Alto Common Event Format (CEF) Configuration Guides](https://docs.paloaltonetworks.com/resources/cef)
+
 The [Palo Alto Networks CDL](https://www.paloaltonetworks.com/cortex/cortex-data-lake) data connector provides the capability to ingest [CDL logs](https://docs.paloaltonetworks.com/strata-logging-service/log-reference/log-forwarding-schema-overview) into Microsoft Sentinel.
 
 ## Tables Ingested
@@ -78,11 +83,6 @@ Make sure to configure the machine's security according to your organization's s
 
 
 [Learn more >](https://aka.ms/SecureCEF)
-
-## Additional Information
-
-📖 **Vendor Documentation:** [Palo Alto Common Event Format (CEF) Configuration Guides](https://docs.paloaltonetworks.com/resources/cef),
-Connector,Fortinet,additional_information,📖 **Vendor Documentation:** [FortiGate Log Message Fields](https://docs.fortinet.com/document/fortigate/7.4.0/fortios-log-message-reference/357866/log-message-fields) - Complete log field reference with examples"
 
 ---
 

@@ -9,6 +9,10 @@
 | **Event Vendor** | Cisco |
 | **Connector Definition Files** | [template_CiscoAsaAma.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Data%20Connectors/template_CiscoAsaAma.JSON) |
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Cisco ASA Syslog Messages](https://www.cisco.com/c/en/us/td/docs/security/asa/syslog/b_syslog.html) - Complete ASA syslog message reference
+
 The Cisco ASA firewall connector allows you to easily connect your Cisco ASA logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
 
 ## Tables Ingested
@@ -40,10 +44,6 @@ This connector ingests data into the following tables:
 - **Create data collection rule**
 
 **2. Run the following command to install and apply the Cisco ASA/FTD collector:**
-
-## Additional Information
-
-📖 **Vendor Documentation:** [Cisco ASA Syslog Messages](https://www.cisco.com/c/en/us/td/docs/security/asa/syslog/b_syslog.html) - Complete ASA syslog message reference
 
 ---
 

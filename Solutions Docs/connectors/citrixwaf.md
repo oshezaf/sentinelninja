@@ -12,6 +12,10 @@
 
 > ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Additional Information
+
+📖 **Vendor Documentation:** [NetScaler WAF CEF Logging](https://docs.netscaler.com/en-us/citrix-adc/current-release/application-firewall/logs.html) - CEF logging support in Application Firewall
+
  Citrix WAF (Web App Firewall) is an industry leading enterprise-grade WAF solution. Citrix WAF mitigates threats against your public-facing assets, including websites, apps, and APIs. From layer 3 to layer 7, Citrix WAF includes protections such as IP reputation, bot mitigation, defense against the OWASP Top 10 application threats, built-in signatures to protect against application stack vulnerabilities, and more. 
 
 
@@ -86,10 +90,6 @@ Make sure to configure the machine's security according to your organization's s
 
 
 [Learn more >](https://aka.ms/SecureCEF)
-
-## Additional Information
-
-📖 **Vendor Documentation:** [NetScaler WAF CEF Logging](https://docs.netscaler.com/en-us/citrix-adc/current-release/application-firewall/logs.html) - CEF logging support in Application Firewall
 
 ---
 

@@ -8,6 +8,10 @@
 | **Collection Method** | MMA |
 | **Connector Definition Files** | [CEF.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Common%20Event%20Format/Data%20Connectors/CEF.JSON) |
 
+## Additional Information
+
+📖 **Related Documentation:** [CEF and CommonSecurityLog field mapping](https://learn.microsoft.com/en-us/azure/sentinel/cef-name-mapping) - Maps CEF field names to CommonSecurityLog column names
+
 Common Event Format (CEF) is an industry standard format on top of Syslog messages, used by many security vendors to allow event interoperability among different platforms. By connecting your CEF logs to Microsoft Sentinel, you can take advantage of search & correlation, alerting, and threat intelligence enrichment for each log. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2223902&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
 
 ## Tables Ingested
@@ -72,10 +76,6 @@ Make sure to configure the machine's security according to your organization's s
 
 
 [Learn more >](https://aka.ms/SecureCEF)
-
-## Additional Information
-
-📖 **Related Documentation:** [CEF and CommonSecurityLog field mapping](https://learn.microsoft.com/en-us/azure/sentinel/cef-name-mapping) - Maps CEF field names to CommonSecurityLog column names
 
 ---
 

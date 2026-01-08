@@ -17,6 +17,10 @@ The Cisco Cloud Security solution for Microsoft Sentinel enables you to ingest [
 | **First Published** | 2022-04-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella) |
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Cisco Umbrella Log Formats](https://docs.umbrella.com/deployment-umbrella/docs/log-formats-and-versioning) - Log formats and versioning guide
+
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
@@ -105,10 +109,6 @@ This solution includes **26 content item(s)**:
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [Cisco_Umbrella](../content/ciscoumbrella-cisco-umbrella-f90f6fcd-4bb0-4ead-a6b7-7fd6239d01f6-4b1bfdd7.md) | - | - |
-
-## Additional Information
-
-📖 **Vendor Documentation:** [Cisco Umbrella Log Formats](https://docs.umbrella.com/deployment-umbrella/docs/log-formats-and-versioning) - Log formats and versioning guide
 
 ## Release Notes
 

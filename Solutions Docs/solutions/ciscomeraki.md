@@ -21,6 +21,10 @@ The Cisco Meraki solution allows you to easily connect your Cisco Meraki (MX/MR/
 | **First Published** | 2021-09-08 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki) |
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Cisco Meraki Syslog Events](https://documentation.meraki.com/General_Administration/Monitoring_and_Reporting/Syslog_Event_Types_and_Log_Samples) - Syslog event types and log samples
+
 ## Data Connectors
 
 This solution has **3 discovered data connector(s)⚠️** (not in Solution definition):
@@ -37,8 +41,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
-| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
+| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
 
 ## Content Items
 
@@ -71,10 +75,6 @@ This solution includes **7 content item(s)**:
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [CiscoMeraki](../content/ciscomeraki-ciscomeraki-f3811ff1-231c-453f-bd2c-cda06e7c3e1f-119643da.md) | - | - |
-
-## Additional Information
-
-📖 **Vendor Documentation:** [Cisco Meraki Syslog Events](https://documentation.meraki.com/General_Administration/Monitoring_and_Reporting/Syslog_Event_Types_and_Log_Samples) - Syslog event types and log samples
 
 ## Additional Documentation
 

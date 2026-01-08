@@ -21,6 +21,10 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **First Published** | 2022-07-01 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection) |
 
+## Additional Information
+
+📖 **Vendor Documentation:** [Symantec SEPM Log Types](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Monitoring-Reporting-and-Enforcing-Compliance/viewing-logs-v7522439-d37e464/about-the-types-of-logs-v8156418-d37e6.html) - Log types including Risk, Scan, System, Audit, and Application Control
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
@@ -65,10 +69,6 @@ This solution includes **4 content item(s)**:
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [SymantecEndpointProtection](../content/symantec-endpoint-protection-symantecendpointprotection-7da088aa-00de-4804-973e-3304d0840ab2-216a4ffb.md) | - | - |
-
-## Additional Information
-
-📖 **Vendor Documentation:** [Symantec SEPM Log Types](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Monitoring-Reporting-and-Enforcing-Compliance/viewing-logs-v7522439-d37e464/about-the-types-of-logs-v8156418-d37e6.html) - Log types including Risk, Scan, System, Audit, and Application Control
 
 ## Release Notes
 
