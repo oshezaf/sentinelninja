@@ -20,7 +20,7 @@ The [Infoblox](https://www.infoblox.com/) SOC Insights solution allows you to ea
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-03-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20SOC%20Insights) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
+| **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -30,7 +30,7 @@ This solution provides **3 data connector(s)**:
 - [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md)
 - [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **6 table(s)**:
 
@@ -108,6 +108,10 @@ This solution includes **12 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

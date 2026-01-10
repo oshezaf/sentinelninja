@@ -1,4 +1,4 @@
-# [Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> [Anomaly] Anomalous Increase in DNS activity by clients (ASIM DNS Solution)
 
 Checks for an anomalous increase in DNS activity per client in the last 24 hours as compared to the last 14 days. Please note: To enhance performance, this query uses summarized data if available.
 
@@ -11,25 +11,17 @@ Checks for an anomalous increase in DNS activity per client in the last 24 hours
 | **Techniques** | T1568, T1008, T1048 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials/Hunting%20Queries/AnomalousIncreaseInDNSActivityByClients.yaml) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_Dns`](../asim/imdns.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)
-- [`AZFWDnsQuery`](../tables/azfwdnsquery.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`Corelight_CL`](../tables/corelight-cl.md)
 - [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md)
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`Event`](../tables/event.md)
-- [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
-- [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)
-- [`SentinelOne_CL`](../tables/sentinelone-cl.md)
-- [`Syslog`](../tables/syslog.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
 - [`anomalies`](../tables/anomalies.md)
 
 ---
@@ -38,7 +30,10 @@ This content item queries data from the following tables:
 
 - [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to DNS Essentials](../solutions/dns-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

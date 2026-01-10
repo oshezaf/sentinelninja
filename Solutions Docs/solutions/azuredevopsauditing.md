@@ -23,7 +23,7 @@ This solution provides **1 data connector(s)**:
 
 - [Azure DevOps Audit Logs (via Codeless Connector Platform)](../connectors/azuredevopsauditlogs.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **2 table(s)**:
 
@@ -119,6 +119,10 @@ This solution includes **37 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

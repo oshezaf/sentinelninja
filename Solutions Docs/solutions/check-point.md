@@ -33,7 +33,7 @@ The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-fir
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **1 table(s)** from its content items:
 
@@ -142,6 +142,10 @@ You can deploy Custom Connector, FunctionApp Proxy and Playbook all together or 
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

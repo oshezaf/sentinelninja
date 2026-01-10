@@ -20,7 +20,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-03-25 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20ePolicy%20Orchestrator](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20ePolicy%20Orchestrator) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
+| **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors
 
@@ -30,7 +30,7 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -108,6 +108,10 @@ This solution includes **26 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

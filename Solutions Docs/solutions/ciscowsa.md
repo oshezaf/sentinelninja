@@ -20,7 +20,7 @@ The [Cisco Web Security Appliance (WSA)](https://www.cisco.com/c/en/us/products/
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-06-29 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoWSA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoWSA) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
+| **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors
 
@@ -30,7 +30,7 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -105,6 +105,10 @@ This solution includes **23 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

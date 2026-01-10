@@ -20,7 +20,10 @@ An attacker with access to Azure DevOps could create a pipeline to inject artifa
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

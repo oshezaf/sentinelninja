@@ -26,7 +26,7 @@ This solution provides **1 data connector(s)**:
 
 - [MISP2Sentinel](../connectors/misp2sentinelconnector.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -55,6 +55,10 @@ Release notes and versions are at [https://github.com/cudeso/misp2sentinel](http
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

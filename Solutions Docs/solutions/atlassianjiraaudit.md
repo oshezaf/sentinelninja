@@ -34,7 +34,7 @@ This solution provides **2 data connector(s)**:
 - [Atlassian Jira Audit](../connectors/jiraauditapi.md)
 - [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **2 table(s)**:
 
@@ -124,6 +124,10 @@ This solution includes **29 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -18,7 +18,10 @@ Shows all users with more than 1 display name in recent history.  This is to hun
 
 - [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

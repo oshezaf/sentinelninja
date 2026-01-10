@@ -1,4 +1,4 @@
-# SecurityThreatEssentialSolution
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> SecurityThreatEssentialSolution
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SecurityThreatEssentialSolution Logo" width="75" height="75">
 
@@ -30,7 +30,30 @@ This solution leverages the following tables:
 | **Author** | Microsoft Corporation - support@microsoft.com |
 | **First Published** | 2022-03-30 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityThreatEssentialSolution](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityThreatEssentialSolution) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-azureactivedirectory, azuresentinel.azure-sentinel-solution-office365, azuresentinel.azure-sentinel-solution-azureactivity, azuresentinel.azure-sentinel-solution-ciscoasa, azuresentinel.azure-sentinel-solution-paloaltopanos, zscaler1579058425289.zscaler_internet_access_mss |
+| **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [CiscoASA](ciscoasa.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Zscaler Internet Access](zscaler-internet-access.md) |
+
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [Apache HTTP Server](../asim/asim-products-index.md#apache-http-server) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) |
+| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-(asm)) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-(iis)) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto Networks](../asim/asim-products-index.md#palo-alto-networks) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Squid Proxy](../asim/asim-products-index.md#squid-proxy) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [Zscaler ZIA Proxy](../asim/asim-products-index.md#zscaler-zia-proxy) |
 
 ## Data Connectors
 
@@ -38,27 +61,26 @@ This solution leverages the following tables:
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution queries **15 table(s)** from its content items:
+This solution uses **1 ASIM parser(s)** for normalized data:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | Analytics |
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | Analytics |
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | Analytics |
+| [`_Im_WebSession`](../asim/imwebsession.md) | Analytics |
+
+## Tables Used
+
+This solution queries **6 table(s)** from its content items:
+
+| Table | Used By Content |
+|-------|----------------|
 | [`AuditLogs`](../tables/auditlogs.md) | Analytics |
 | [`AzureActivity`](../tables/azureactivity.md) | Analytics |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | Analytics |
 | [`SigninLogs`](../tables/signinlogs.md) | Analytics, Hunting |
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) | Analytics |
-| [`Syslog`](../tables/syslog.md) | Analytics |
 | [`VMConnection`](../tables/vmconnection.md) | Analytics |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | Analytics |
-| [`W3CIISLog`](../tables/w3ciislog.md) | Analytics |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | Analytics |
-| [`meraki_CL`](../tables/meraki-cl.md) | Analytics |
 
 ### Internal Tables
 
@@ -81,7 +103,7 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Possible AiTM Phishing Attempt Against Microsoft Entra ID](../content/securitythreatessentialsolution-possible-aitm-phishing-attempt-against-microsoft-entra-id-16daa67c-b137-48dc-8eb7-76598a44791a-98f6165b.md) | Medium | InitialAccess, DefenseEvasion, CredentialAccess | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Possible AiTM Phishing Attempt Against Microsoft Entra ID](../content/securitythreatessentialsolution-possible-aitm-phishing-attempt-against-microsoft-entra-id-16daa67c-b137-48dc-8eb7-76598a44791a-98f6165b.md) | Medium | InitialAccess, DefenseEvasion, CredentialAccess | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Threat Essentials - Mail redirect via ExO transport rule](../content/securitythreatessentialsolution-threat-essentials-mail-redirect-via-exo-transport-rule-d7c575b2-84f5-48cb-92c5-70d7e8246284-30414fca.md) | Medium | Collection, Exfiltration | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Threat Essentials - Mass Cloud resource deletions Time Series Anomaly](../content/securitythreatessentialsolution-threat-essentials-mass-cloud-resource-deletions-time-series-anomaly-fa2658fe-3714-4c55-bb12-2b7275c628e8-119af452.md) | Medium | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Threat Essentials - Multiple admin membership removals from newly created admin.](../content/securitythreatessentialsolution-threat-essentials-multiple-admin-membership-removals-from-newly-created--199978c5-cd6d-4194-b505-8ef5800739df-5a0ad1e1.md) | Medium | Impact | [`AuditLogs`](../tables/auditlogs.md) |
@@ -110,6 +132,10 @@ This solution includes **9 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -1,5 +1,7 @@
 # Analytic Rules
 
+Analytic rules are the core detection mechanism in Microsoft Sentinel. They run scheduled queries against your data to identify security threats, anomalies, and suspicious activities. When a rule's conditions are met, it generates alerts that can trigger incidents for investigation. [Learn more](https://learn.microsoft.com/azure/sentinel/detect-threats-built-in)
+
 **2185 analytic rules** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [Z](analytic-rules-z.md)
@@ -37,6 +39,10 @@
 **Browse:**
 
 - [← Back to Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

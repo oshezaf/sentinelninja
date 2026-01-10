@@ -1,4 +1,4 @@
-# TI map Domain entity to Web Session Events (ASIM Web Session schema)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> TI map Domain entity to Web Session Events (ASIM Web Session schema)
 
 This rule identifies Web Sessions for which the target URL hostname is a known IoC. This rule uses the [Advanced Security Information Model (ASIM)](https:/aka.ms/AboutASIM) and supports any web session source that complies with ASIM.
 
@@ -14,21 +14,17 @@ This rule identifies Web Sessions for which the target URL hostname is a known I
 | **Required Connectors** | [SquidProxy](../connectors/squidproxy.md), [Zscaler](../connectors/zscaler.md), [ThreatIntelligence](../connectors/threatintelligence.md), [ThreatIntelligenceTaxii](../connectors/threatintelligencetaxii.md), [MicrosoftDefenderThreatIntelligence](../connectors/microsoftdefenderthreatintelligence.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence/Analytic%20Rules/DomainEntity_imWebSession.yaml) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_WebSession`](../asim/imwebsession.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Syslog`](../tables/syslog.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
 
 ---
 
@@ -36,7 +32,10 @@ This content item queries data from the following tables:
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Threat Intelligence](../solutions/threat-intelligence.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

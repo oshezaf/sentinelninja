@@ -21,7 +21,7 @@
 | **First Published** | 2023-10-23 |
 | **Last Updated** | 2023-10-23 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
+| **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -29,7 +29,7 @@ This solution provides **1 data connector(s)**:
 
 - [[Deprecated] RIDGEBOT - data connector for Microsoft Sentinel](../connectors/ridgebotdataconnector.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -64,6 +64,10 @@ This solution includes **2 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

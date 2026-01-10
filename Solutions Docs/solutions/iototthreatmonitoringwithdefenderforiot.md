@@ -29,8 +29,6 @@ This solution provides **1 data connector(s)**:
 
 - [Microsoft Defender for IoT](../connectors/iot.md)
 
-## Tables Reference
-
 ### Internal Tables
 
 The following **2 table(s)** are used internally by this solution's playbooks:
@@ -138,6 +136,10 @@ This alert leverages Defender for IoT to detect excessive login attempts that ma
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

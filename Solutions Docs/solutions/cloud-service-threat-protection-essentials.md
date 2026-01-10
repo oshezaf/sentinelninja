@@ -28,7 +28,7 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-office365, azuresentinel.azure-sentinel-solution-azureactivity, azuresentinel.azure-sentinel-solution-azurekeyvault |
+| **Dependencies** | [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure Key Vault](azure-key-vault.md) |
 
 ## Data Connectors
 
@@ -36,7 +36,7 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **3 table(s)** from its content items:
 
@@ -72,6 +72,10 @@ This solution includes **2 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

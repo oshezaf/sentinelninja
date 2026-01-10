@@ -10,15 +10,12 @@ Reference for ASimProcessEventLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimprocesseventlogs) |
 
-## Solutions (6)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
-- [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
-- [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
-- [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 
 ## Connectors (2)
@@ -30,33 +27,12 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (1)
 
-### Analytic Rules (3)
-
-**In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
-- [Detect Malicious Usage of Recovery Tools to Delete Backup Files](../content/malware-protection-essentials-detect-malicious-usage-of-recovery-tools-to-delete-backup-files-259de2c1-c546-4c6d-a17c-df639722f4d7-f1d64838.md)
-- [Process Creation with Suspicious CommandLine Arguments](../content/malware-protection-essentials-process-creation-with-suspicious-commandline-arguments-fdbcc0eb-44fb-467e-a51d-a91df0780a81-fc1c4a27.md)
-
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Imminent Ransomware](../content/microsoft-defender-xdr-imminent-ransomware-bb46dd86-e642-48a4-975c-44f5ac2b5033-87169ff1.md)
-
-### Hunting Queries (3)
-
-**In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
-- [Certutil (LOLBins and LOLScripts, Normalized Process Events)](../content/endpoint-threat-protection-essentials-certutil-lolbins-and-lolscripts,-normalized-process-events-eb022863-9ae2-41d4-b633-29e4d024b76f-bf894765.md)
-- [Windows System Shutdown/Reboot (Normalized Process Events)](../content/endpoint-threat-protection-essentials-windows-system-shutdown-reboot-normalized-process-events-5db1f6f9-9de9-43a9-b7cc-357486b42fc6-4a6147b7.md)
-
-**In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
-- [Detect New Scheduled Task Creation that Run Executables From Non-Standard Location](../content/malware-protection-essentials-detect-new-scheduled-task-creation-that-run-executables-from-non-standard--b43394b9-fa91-4d98-b331-619926a933bb-d0df99aa.md)
-
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
-
-**In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
-- [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)
 
 ## Resource Types
 
@@ -69,6 +45,10 @@ This table collects data from the following Azure resource types:
 **Browse:**
 
 - [← Back to Tables Index](../tables-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

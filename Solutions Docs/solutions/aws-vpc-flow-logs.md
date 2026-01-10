@@ -23,7 +23,7 @@ This solution provides **1 data connector(s)**:
 
 - [Amazon Web Services S3 VPC Flow Logs](../connectors/awss3vpcflowlogsparquetdefinition.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -69,6 +69,10 @@ After making these changes, ensure you update the solution package (zip file) wi
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

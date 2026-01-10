@@ -34,13 +34,13 @@ This solution provides **2 data connector(s)**:
 - [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md)
 - [Imperva Cloud WAF](../connectors/impervawafcloudapi.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md), [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) | - |
 | [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
 
 ## Content Items
@@ -109,6 +109,10 @@ This solution includes **22 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

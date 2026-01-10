@@ -19,7 +19,10 @@ This analytic rule is retired because IoCs are outdated. It is recommended to us
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Microsoft 365](../solutions/microsoft-365.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -117,7 +117,10 @@ This automation rule has a trigger 'Issue created' and will trigger the Logic Ap
 
 - [← Back to Playbooks](playbooks.md)
 - [← Back to AtlassianJiraAudit](../solutions/atlassianjiraaudit.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

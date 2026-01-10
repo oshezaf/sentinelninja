@@ -1,4 +1,4 @@
-# MaturityModelForEventLogManagementM2131
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> MaturityModelForEventLogManagementM2131
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="MaturityModelForEventLogManagementM2131 Logo" width="75" height="75">
 
@@ -17,44 +17,86 @@ This solution is designed to enable Cloud Architects, Security Engineers, and Go
 | **First Published** | 2021-12-05 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MaturityModelForEventLogManagementM2131](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MaturityModelForEventLogManagementM2131) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
+| [Cisco](../asim/asim-products-index.md#cisco) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
+| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
+| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
+| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
+| [Microsoft](../asim/asim-products-index.md#microsoft) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+
 ## Data Connectors
 
 **This solution does not include data connectors.**
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution queries **70 table(s)** from its content items:
+This solution uses **2 ASIM parser(s)** for normalized data:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`_Im_Dns`](../asim/imdns.md) | Workbooks |
+| [`_Im_NetworkSession`](../asim/imnetworksession.md) | Workbooks |
+
+## Tables Used
+
+This solution queries **45 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | Workbooks |
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | Workbooks |
-| [`ALERT`](../tables/alert.md) | Workbooks |
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | Workbooks |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | Workbooks |
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | Workbooks |
 | [`AWSGuardDuty`](../tables/awsguardduty.md) | Workbooks |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | Workbooks |
-| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | Workbooks |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | Workbooks |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | Workbooks |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | Workbooks |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Analytics, Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | Workbooks |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | Workbooks |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | Workbooks |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) | Workbooks |
-| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) | Workbooks |
 | [`CloudAppEvents`](../tables/cloudappevents.md) | Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Workbooks |
 | [`ConfigurationChange`](../tables/configurationchange.md) | Workbooks |
 | [`ConfigurationData`](../tables/configurationdata.md) | Workbooks |
-| [`Corelight_CL`](../tables/corelight-cl.md) | Workbooks |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | Workbooks |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Workbooks |
@@ -63,27 +105,20 @@ This solution queries **70 table(s)** from its content items:
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | Workbooks |
 | [`EmailEvents`](../tables/emailevents.md) | Workbooks |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) | Workbooks |
-| [`Event`](../tables/event.md) | Workbooks |
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | Workbooks |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Analytics, Workbooks |
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
 | [`InsightsMetrics`](../tables/insightsmetrics.md) | Workbooks |
 | [`IntuneAuditLogs`](../tables/intuneauditlogs.md) | Workbooks |
 | [`IntuneDevices`](../tables/intunedevices.md) | Workbooks |
 | [`IntuneOperationalLogs`](../tables/intuneoperationallogs.md) | Workbooks |
 | [`KubeEvents_CL`](../tables/kubeevents-cl.md) | Workbooks |
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | Workbooks |
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
 | [`Operation`](../tables/operation.md) | Workbooks |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | Workbooks |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | Analytics, Workbooks |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | Workbooks |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) | Workbooks |
 | [`StorageFileLogs`](../tables/storagefilelogs.md) | Workbooks |
@@ -91,13 +126,8 @@ This solution queries **70 table(s)** from its content items:
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
 | [`Update`](../tables/update.md) | Workbooks |
 | [`Usage`](../tables/usage.md) | Analytics, Hunting, Workbooks |
-| [`VMConnection`](../tables/vmconnection.md) | Workbooks |
 | [`VMProcess`](../tables/vmprocess.md) | Workbooks |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | Workbooks |
-| [`WindowsEvent`](../tables/windowsevent.md) | Workbooks |
 | [`WindowsFirewall`](../tables/windowsfirewall.md) | Workbooks |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | Workbooks |
-| [`meraki_CL`](../tables/meraki-cl.md) | Workbooks |
 | [`update`](../tables/update.md) | Workbooks |
 
 ### Internal Tables
@@ -149,7 +179,7 @@ This solution includes **16 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`ALERT`](../tables/alert.md)<br>[`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSGuardDuty`](../tables/awsguardduty.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)<br>[`CloudAppEvents`](../tables/cloudappevents.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`ConfigurationData`](../tables/configurationdata.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`Event`](../tables/event.md)<br>[`GCP_DNS_CL`](../tables/gcp-dns-cl.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`InsightsMetrics`](../tables/insightsmetrics.md)<br>[`IntuneAuditLogs`](../tables/intuneauditlogs.md)<br>[`IntuneDevices`](../tables/intunedevices.md)<br>[`IntuneOperationalLogs`](../tables/intuneoperationallogs.md)<br>[`KubeEvents_CL`](../tables/kubeevents-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`StorageFileLogs`](../tables/storagefilelogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Update`](../tables/update.md)<br>[`Usage`](../tables/usage.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VMProcess`](../tables/vmprocess.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession`](../asim/imnetworksession.md)<br>[`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSGuardDuty`](../tables/awsguardduty.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`CloudAppEvents`](../tables/cloudappevents.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`ConfigurationData`](../tables/configurationdata.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`InsightsMetrics`](../tables/insightsmetrics.md)<br>[`IntuneAuditLogs`](../tables/intuneauditlogs.md)<br>[`IntuneDevices`](../tables/intunedevices.md)<br>[`IntuneOperationalLogs`](../tables/intuneoperationallogs.md)<br>[`KubeEvents_CL`](../tables/kubeevents-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`StorageFileLogs`](../tables/storagefilelogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Update`](../tables/update.md)<br>[`Usage`](../tables/usage.md)<br>[`VMProcess`](../tables/vmprocess.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
@@ -194,6 +224,10 @@ You can deploy the solution by clicking on the buttons below:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

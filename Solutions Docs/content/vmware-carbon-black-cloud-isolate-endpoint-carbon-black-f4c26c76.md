@@ -92,7 +92,10 @@ This action will close the incident if there is no exceptions occurred while qua
 
 - [← Back to Playbooks](playbooks.md)
 - [← Back to VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

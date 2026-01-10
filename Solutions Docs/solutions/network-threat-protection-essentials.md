@@ -40,7 +40,7 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-office365, azuresentinel.azure-sentinel-solution-amazonwebservices, azuresentinel.azure-sentinel-solution-dns, sentinel4azurefirewall.sentinel4azurefirewall, azuresentinel.azure-sentinel-solution-windowsforwardedevents, zscaler1579058425289.zscaler_internet_access_mss, azuresentinel.azure-sentinel-solution-paloaltopanos, azuresentinel.azure-sentinel-solution-fortinetfortigate, checkpoint.checkpoint-sentinel-solutions |
+| **Dependencies** | [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Windows Server DNS](windows-server-dns.md), [Azure Firewall](azure-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md), [Zscaler Internet Access](zscaler-internet-access.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md) |
 
 ## Data Connectors
 
@@ -48,7 +48,7 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **6 table(s)** from its content items:
 
@@ -97,6 +97,10 @@ This solution includes **5 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

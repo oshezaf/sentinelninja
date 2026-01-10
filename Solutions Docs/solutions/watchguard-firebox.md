@@ -20,7 +20,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Author** | WatchGuard |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchguard%20Firebox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchguard%20Firebox) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
+| **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors
 
@@ -28,7 +28,7 @@ This solution provides **1 data connector(s)**:
 
 - [[Deprecated] WatchGuard Firebox](../connectors/watchguardfirebox.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -63,6 +63,10 @@ This solution includes **1 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -1,4 +1,4 @@
-# AzureSecurityBenchmark
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> AzureSecurityBenchmark
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="AzureSecurityBenchmark Logo" width="75" height="75">
 
@@ -17,59 +17,83 @@ The Azure Security Benchmark v3 Solution is designed to enable Cloud Architects,
 | **First Published** | 2022-06-17 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureSecurityBenchmark](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureSecurityBenchmark) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
+| [Microsoft](../asim/asim-products-index.md#microsoft) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+
 ## Data Connectors
 
 **This solution does not include data connectors.**
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution queries **42 table(s)** from its content items:
+This solution uses **1 ASIM parser(s)** for normalized data:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`_Im_NetworkSession`](../asim/imnetworksession.md) | Workbooks |
+
+## Tables Used
+
+This solution queries **19 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | Workbooks |
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | Workbooks |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) | Workbooks |
-| [`ALERT`](../tables/alert.md) | Workbooks |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | Workbooks |
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | Workbooks |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | Workbooks |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | Workbooks |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | Workbooks |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | Workbooks |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | Workbooks |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | Workbooks |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Workbooks |
-| [`Corelight_CL`](../tables/corelight-cl.md) | Workbooks |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
 | [`Event`](../tables/event.md) | Workbooks |
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | Workbooks |
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | Workbooks |
 | [`ProtectionStatus`](../tables/protectionstatus.md) | Workbooks |
 | [`SecurityBaseline`](../tables/securitybaseline.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | Workbooks |
 | [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md) | Workbooks |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | Analytics |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | Analytics, Workbooks |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
-| [`Syslog`](../tables/syslog.md) | Workbooks |
 | [`Update`](../tables/update.md) | Workbooks |
-| [`VMConnection`](../tables/vmconnection.md) | Workbooks |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | Workbooks |
-| [`WindowsEvent`](../tables/windowsevent.md) | Workbooks |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | Workbooks |
-| [`meraki_CL`](../tables/meraki-cl.md) | Workbooks |
 | [`update`](../tables/update.md) | Workbooks |
 
 ### Internal Tables
@@ -102,7 +126,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`ALERT`](../tables/alert.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Event`](../tables/event.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession`](../asim/imnetworksession.md)<br>[`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Event`](../tables/event.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Update`](../tables/update.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
@@ -150,6 +174,10 @@ You can deploy the workbook by clicking on the buttons below:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

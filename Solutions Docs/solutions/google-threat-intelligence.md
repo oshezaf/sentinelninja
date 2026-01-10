@@ -1,4 +1,4 @@
-# Google Threat Intelligence
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Google Threat Intelligence
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GoogleThreatIntelligence.svg" alt="Google Threat Intelligence Logo" width="75" height="75">
 
@@ -18,63 +18,85 @@ This Google Threat Intelligence Solution contains Playbooks that can help enrich
 | **Last Updated** | 2024-10-26 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
+| [Apache HTTP Server](../asim/asim-products-index.md#apache-http-server) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
+| [Cisco](../asim/asim-products-index.md#cisco) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
+| [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
+| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-(asm)) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
+| [Google Workspace](../asim/asim-products-index.md#google-workspace) |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
+| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
+| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) |
+| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-(iis)) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
+| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
+| [Microsoft](../asim/asim-products-index.md#microsoft) |
+| [Microsoft 365 Defender for EndPoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
+| [Microsoft Azure Blob Storage](../asim/asim-products-index.md#microsoft-azure-blob-storage) |
+| [Microsoft Azure File Storage](../asim/asim-products-index.md#microsoft-azure-file-storage) |
+| [Microsoft Azure Queue Storage](../asim/asim-products-index.md#microsoft-azure-queue-storage) |
+| [Microsoft Azure Table Storage](../asim/asim-products-index.md#microsoft-azure-table-storage) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Microsoft Sentinel](../asim/asim-products-index.md#microsoft-sentinel) |
+| [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) |
+| [Microsoft Sysmon for Linux](../asim/asim-products-index.md#microsoft-sysmon-for-linux) |
+| [Microsoft Windows Events](../asim/asim-products-index.md#microsoft-windows-events) |
+| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto Networks](../asim/asim-products-index.md#palo-alto-networks) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Squid Proxy](../asim/asim-products-index.md#squid-proxy) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+| [Zscaler ZIA Proxy](../asim/asim-products-index.md#zscaler-zia-proxy) |
+
 ## Data Connectors
 
 **This solution does not include data connectors.**
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution queries **45 table(s)** from its content items:
+This solution uses **4 ASIM parser(s)** for normalized data:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`ALERT`](../tables/alert.md) | Analytics, Hunting |
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | Analytics, Hunting |
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | Analytics, Hunting |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | Analytics, Hunting |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | Analytics, Hunting |
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | Analytics, Hunting |
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | Analytics, Hunting |
-| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | Analytics, Hunting |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | Analytics, Hunting |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | Analytics, Hunting |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | Analytics, Hunting |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | Analytics, Hunting |
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | Analytics, Hunting |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | Analytics, Hunting |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | Analytics, Hunting |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | Analytics, Hunting |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | Analytics, Hunting |
-| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) | Analytics, Hunting |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Analytics, Hunting |
-| [`Corelight_CL`](../tables/corelight-cl.md) | Analytics, Hunting |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | Analytics, Hunting |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Analytics, Hunting |
-| [`DnsEvents`](../tables/dnsevents.md) | Analytics, Hunting |
-| [`Event`](../tables/event.md) | Analytics, Hunting |
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | Analytics, Hunting |
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | Analytics, Hunting |
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | Analytics, Hunting |
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | Analytics, Hunting |
-| [`OfficeActivity`](../tables/officeactivity.md) | Analytics, Hunting |
-| [`SecurityEvent`](../tables/securityevent.md) | Analytics, Hunting |
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | Analytics, Hunting |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Analytics, Hunting |
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) | Analytics, Hunting |
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) | Analytics, Hunting |
-| [`StorageFileLogs`](../tables/storagefilelogs.md) | Analytics, Hunting |
-| [`StorageQueueLogs`](../tables/storagequeuelogs.md) | Analytics, Hunting |
-| [`StorageTableLogs`](../tables/storagetablelogs.md) | Analytics, Hunting |
-| [`Syslog`](../tables/syslog.md) | Analytics, Hunting |
-| [`Update`](../tables/update.md) | Analytics, Hunting |
-| [`VMConnection`](../tables/vmconnection.md) | Analytics, Hunting |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | Analytics, Hunting |
-| [`W3CIISLog`](../tables/w3ciislog.md) | Analytics, Hunting |
-| [`WindowsEvent`](../tables/windowsevent.md) | Analytics, Hunting |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | Analytics, Hunting |
-| [`meraki_CL`](../tables/meraki-cl.md) | Analytics, Hunting |
+| [`_Im_Dns`](../asim/imdns.md) | Analytics, Hunting |
+| [`_Im_FileEvent`](../asim/imfileevent.md) | Analytics, Hunting |
+| [`_Im_NetworkSession`](../asim/imnetworksession.md) | Analytics, Hunting |
+| [`_Im_WebSession`](../asim/imwebsession.md) | Analytics, Hunting |
 
 ### Internal Tables
 
@@ -98,19 +120,19 @@ This solution includes **16 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Google Threat Intelligence - Threat Hunting Domain](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-d9e1646c-dc17-4150-ac85-581f5c9cb41f-473cd3b4.md) | Medium | CommandAndControl | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Event`](../tables/event.md)<br>[`GCP_DNS_CL`](../tables/gcp-dns-cl.md)<br>[`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.md) | Medium | Execution | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`Event`](../tables/event.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`StorageFileLogs`](../tables/storagefilelogs.md)<br>[`StorageQueueLogs`](../tables/storagequeuelogs.md)<br>[`StorageTableLogs`](../tables/storagetablelogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.md) | Medium | CommandAndControl | [`ALERT`](../tables/alert.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Event`](../tables/event.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.md) | Medium | InitialAccess | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Google Threat Intelligence - Threat Hunting Domain](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-d9e1646c-dc17-4150-ac85-581f5c9cb41f-473cd3b4.md) | Medium | CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.md) | Medium | Execution | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent`](../asim/imfileevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.md) | Medium | CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession`](../asim/imnetworksession.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.md) | Medium | InitialAccess | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Google Threat Intelligence - Threat Hunting Domain](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-34288e97-5194-4f2e-abf2-c2783189f6ae-2dfdacdc.md) | - | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Event`](../tables/event.md)<br>[`GCP_DNS_CL`](../tables/gcp-dns-cl.md)<br>[`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-0051a0d9-684f-4317-abbd-c1e5c24b39cb-5660b61d.md) | - | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`Event`](../tables/event.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`StorageFileLogs`](../tables/storagefilelogs.md)<br>[`StorageQueueLogs`](../tables/storagequeuelogs.md)<br>[`StorageTableLogs`](../tables/storagetablelogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.md) | - | [`ALERT`](../tables/alert.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Event`](../tables/event.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
-| [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.md) | - | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Google Threat Intelligence - Threat Hunting Domain](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-34288e97-5194-4f2e-abf2-c2783189f6ae-2dfdacdc.md) | - | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Google Threat Intelligence - Threat Hunting Hash](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-0051a0d9-684f-4317-abbd-c1e5c24b39cb-5660b61d.md) | - | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent`](../asim/imfileevent.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Google Threat Intelligence - Threat Hunting IP](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.md) | - | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession`](../asim/imnetworksession.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Google Threat Intelligence - Threat Hunting Url](../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.md) | - | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Playbooks
 
@@ -146,6 +168,10 @@ This solution includes **16 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

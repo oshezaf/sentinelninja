@@ -1,0 +1,64 @@
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Process Create Event ASIM parser for WEF Security Events
+
+## Parser Information
+
+| Property | Value |
+|:---------|:------|
+| **Parser Name** | `vimProcessCreateMicrosoftWindowsEvents` |
+| **Built-in Parser** | `_Im_ProcessCreate_MicrosoftWindowsEvents` |
+| **Schema** | ProcessEvent |
+| **Schema Version** | 0.1.0 |
+| **Parser Type** | 🔌 Source (product-specific) |
+| **Product** | Security Events |
+| **Parser Version** | 0.3 |
+| **Last Updated** | May 1st 2023 |
+| **Unifying Parser** | [imProcessCreate](improcesscreate.md), [imProcessEvent](improcessevent.md) |
+| **Source File** | [Parsers\ASimProcessEvent\Parsers\vimProcessCreateMicrosoftWindowsEvents.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/vimProcessCreateMicrosoftWindowsEvents.yaml) |
+
+## Description
+
+This ASIM parser supports filtering and normalizing Windows process create events (event 4688) collected using the WEF connector (WindowsEvent table) to the ASIM Process Event normalized schema.
+
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [WindowsEvent](../tables/windowsevent.md) |
+
+## Parameters
+
+| Name | Type | Default |
+|:-----|:-----|:--------|
+| `starttime` | datetime | datetime(null) |
+| `endtime` | datetime | datetime(null) |
+| `commandline_has_any` | dynamic | dynamic([]) |
+| `commandline_has_all` | dynamic | dynamic([]) |
+| `commandline_has_any_ip_prefix` | dynamic | dynamic([]) |
+| `actingprocess_has_any` | dynamic | dynamic([]) |
+| `targetprocess_has_any` | dynamic | dynamic([]) |
+| `parentprocess_has_any` | dynamic | dynamic([]) |
+| `targetusername_has` | string | * |
+| `dvcipaddr_has_any_prefix` | dynamic | dynamic([]) |
+| `dvchostname_has_any` | dynamic | dynamic([]) |
+| `eventtype` | string | * |
+| `hashes_has_any` | dynamic | dynamic([]) |
+| `disabled` | bool | False |
+
+## References
+
+- [ASIM Process Schema](https://aka.ms/ASimProcessEventDoc)
+- [ASIM](https://aka.ms/AboutASIM)
+
+---
+
+**Browse:**
+
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -26,7 +26,7 @@ This solution provides **3 data connector(s)**:
 - [Netskope Data Connector](../connectors/netskopedataconnector.md)
 - [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **28 table(s)**:
 
@@ -189,6 +189,10 @@ The **Netskope Microsoft Sentinel Solution** integrates Netskope logs (events, a
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

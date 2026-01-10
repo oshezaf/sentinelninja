@@ -1,4 +1,4 @@
-# Possible AiTM Phishing Attempt Against Microsoft Entra ID
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Possible AiTM Phishing Attempt Against Microsoft Entra ID
 
 'Threat actors may attempt to phish users in order to hijack a users sign-in session, and skip the authentication process even if the user had enabled multifactor authentication (MFA) by stealing and replaying stolen credentials and session cookies. This detection looks for successful Microsoft Entra ID sign ins that had a high risk profile, indicating it had suspicious characteristics such as an unusual location, ISP, user agent, or use of anonymizer services. It then looks for a network connec
 
@@ -15,21 +15,17 @@
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md), [Zscaler](../connectors/zscaler.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityThreatEssentialSolution/Analytic%20Rules/PossibleAiTMPhishingAttemptAgainstAAD.yaml) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_WebSession`](../asim/imwebsession.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`SigninLogs`](../tables/signinlogs.md)
-- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Syslog`](../tables/syslog.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
 
 ---
 
@@ -37,7 +33,10 @@ This content item queries data from the following tables:
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

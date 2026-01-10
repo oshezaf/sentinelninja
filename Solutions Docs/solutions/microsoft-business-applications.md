@@ -1,4 +1,4 @@
-# Microsoft Business Applications
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Microsoft Business Applications
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="Microsoft Business Applications Logo" width="75" height="75">
 
@@ -27,23 +27,50 @@ Due to the integration of the Power Platform inventory data, in addition to the 
 | **First Published** | 2023-04-19 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [Apache HTTP Server](../asim/asim-products-index.md#apache-http-server) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) |
+| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-(asm)) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-(iis)) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto Networks](../asim/asim-products-index.md#palo-alto-networks) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Squid Proxy](../asim/asim-products-index.md#squid-proxy) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [Zscaler ZIA Proxy](../asim/asim-products-index.md#zscaler-zia-proxy) |
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
 - [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md)
 
-## Tables Reference
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution uses **24 table(s)**:
+This solution uses **1 ASIM parser(s)** for normalized data:
+
+| Parser | Used By Content |
+|--------|----------------|
+| [`_Im_WebSession`](../asim/imwebsession.md) | Analytics |
+
+## Tables Used
+
+This solution uses **14 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | - | Analytics |
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | - | Analytics |
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | - | Analytics |
 | [`AuditLogs`](../tables/auditlogs.md) | - | Analytics, Hunting |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics |
 | [`DataverseActivity`](../tables/dataverseactivity.md) | - | Analytics, Hunting, Workbooks |
 | [`DeviceEvents`](../tables/deviceevents.md) | - | Analytics, Hunting |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | - | Analytics |
@@ -54,15 +81,9 @@ This solution uses **24 table(s)**:
 | [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | - | Analytics |
 | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | - | Analytics, Hunting |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) | - | Analytics |
-| [`Syslog`](../tables/syslog.md) | - | Analytics |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 | [`Update`](../tables/update.md) | - | Analytics |
 | [`UrlClickEvents`](../tables/urlclickevents.md) | - | Analytics |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | - | Analytics |
-| [`W3CIISLog`](../tables/w3ciislog.md) | - | Analytics |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | - | Analytics |
-| [`meraki_CL`](../tables/meraki-cl.md) | - | Analytics |
 
 ### Internal Tables
 
@@ -132,7 +153,7 @@ This solution includes **72 content item(s)**:
 | [Power Apps - App activity from unauthorized geo](../content/microsoft-business-applications-power-apps-app-activity-from-unauthorized-geo-7ec1e61d-f3b7-4f40-bb1a-357a63913c23-0cf6ffb9.md) | Low | InitialAccess | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Power Apps - Bulk sharing of Power Apps to newly created guest users](../content/microsoft-business-applications-power-apps-bulk-sharing-of-power-apps-to-newly-created-guest-users-943acfa0-9285-4eb0-a9c0-42e36177ef19-41b30b81.md) | Medium | ResourceDevelopment, InitialAccess, LateralMovement | [`AuditLogs`](../tables/auditlogs.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
 | [Power Apps - Multiple apps deleted](../content/microsoft-business-applications-power-apps-multiple-apps-deleted-ed88638d-8627-4c20-ba08-67c13807a9b1-10499cb8.md) | Medium | Impact | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
-| [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md) | High | InitialAccess | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`UrlClickEvents`](../tables/urlclickevents.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md) | High | InitialAccess | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`UrlClickEvents`](../tables/urlclickevents.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Power Automate - Departing employee flow activity](../content/microsoft-business-applications-power-automate-departing-employee-flow-activity-b1e11b8c-545a-4dea-a912-0008e160d183-ecbb18b0.md) | High | Exfiltration, Impact | [`PowerAutomateActivity`](../tables/powerautomateactivity.md) |
 | [Power Automate - Unusual bulk deletion of flow resources](../content/microsoft-business-applications-power-automate-unusual-bulk-deletion-of-flow-resources-56cb646e-56a0-4f0e-8866-9bc1dd15da78-eb6e5a2f.md) | Medium | Impact, DefenseEvasion | [`PowerAutomateActivity`](../tables/powerautomateactivity.md) |
 | [Power Platform - Account added to privileged Microsoft Entra roles](../content/microsoft-business-applications-power-platform-account-added-to-privileged-microsoft-entra-roles-71d829d6-eb50-4a17-8a64-655fae8d71e1-b0e60b31.md) | Low | PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
@@ -202,6 +223,10 @@ This solution includes **72 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

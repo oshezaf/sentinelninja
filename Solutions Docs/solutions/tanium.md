@@ -24,7 +24,7 @@ The [Tanium](https://www.tanium.com/) solution for Microsoft Sentinel enables yo
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **10 table(s)** from its content items:
 
@@ -105,6 +105,10 @@ See our Tanium Help for [Release Notes](https://help.tanium.com/bundle/microsoft
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

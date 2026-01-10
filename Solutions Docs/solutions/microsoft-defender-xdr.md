@@ -1,4 +1,4 @@
-# Microsoft Defender XDR
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Microsoft Defender XDR
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Defender XDR Logo" width="75" height="75">
 
@@ -25,34 +25,74 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
+| [Microsoft](../asim/asim-products-index.md#microsoft) |
+| [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
+| [Security Events](../asim/asim-products-index.md#security-events) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Sysmon](../asim/asim-products-index.md#sysmon) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
+| [Trend Micro Vision One](../asim/asim-products-index.md#trend-micro-vision-one) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
 - [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md)
 
-## Tables Reference
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution uses **54 table(s)**:
+This solution uses **2 ASIM parser(s)** for normalized data:
+
+| Parser | Used By Content |
+|--------|----------------|
+| [`_ASim_ProcessEvent`](../asim/asimprocessevent.md) | Analytics |
+| [`_Im_NetworkSession`](../asim/imnetworksession.md) | Analytics |
+
+## Tables Used
+
+This solution uses **27 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | - | Hunting |
-| [`ALERT`](../tables/alert.md) | - | Analytics |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | - | Analytics |
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | - | Analytics |
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | - | Analytics |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | - | Analytics |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | - | Analytics |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | - | Analytics |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | - | Analytics |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | - | Analytics |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | - | Analytics |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | - | Analytics |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | - | Analytics |
 | [`CloudAppEvents`](../tables/cloudappevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics |
-| [`Corelight_CL`](../tables/corelight-cl.md) | - | Analytics |
 | [`DeviceEvents`](../tables/deviceevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
 | [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Workbooks |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
@@ -69,28 +109,14 @@ This solution uses **54 table(s)**:
 | [`EmailEvents`](../tables/emailevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
 | [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
-| [`Event`](../tables/event.md) | - | Analytics |
 | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
 | [`IdentityLogonEvents`](../tables/identitylogonevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
 | [`IdentityQueryEvents`](../tables/identityqueryevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Workbooks |
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | - | Analytics |
 | [`MessageEvents`](../tables/messageevents.md) | - | Hunting |
 | [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md) | - | Hunting |
 | [`MessageUrlInfo`](../tables/messageurlinfo.md) | - | Hunting |
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | - | Analytics |
-| [`SecurityEvent`](../tables/securityevent.md) | - | Analytics |
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | - | Analytics |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | - | Analytics |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
-| [`Syslog`](../tables/syslog.md) | - | Analytics |
-| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) | - | Analytics |
-| [`Update`](../tables/update.md) | - | Analytics |
 | [`UrlClickEvents`](../tables/urlclickevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
-| [`VMConnection`](../tables/vmconnection.md) | - | Analytics |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | - | Analytics |
-| [`WindowsEvent`](../tables/windowsevent.md) | - | Analytics |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | - | Analytics |
-| [`meraki_CL`](../tables/meraki-cl.md) | - | Analytics |
 
 ### Internal Tables
 
@@ -135,14 +161,14 @@ This solution includes **373 content item(s)**:
 | [DopplePaymer Procdump](../content/microsoft-defender-xdr-dopplepaymer-procdump-1be34fb9-f81b-47ae-84fb-465e6686d76c-cc25e831.md) | High | CredentialAccess | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Execution of software vulnerable to webp buffer overflow of CVE-2023-4863](../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911-15de3ea9.md) | Informational | Execution | [`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DeviceTvmSoftwareVulnerabilities`](../tables/devicetvmsoftwarevulnerabilities.md) |
 | [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) | High | Exfiltration | [`DeviceEvents`](../tables/deviceevents.md) |
-| [Imminent Ransomware](../content/microsoft-defender-xdr-imminent-ransomware-bb46dd86-e642-48a4-975c-44f5ac2b5033-87169ff1.md) | High | DefenseEvasion, Persistence | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Imminent Ransomware](../content/microsoft-defender-xdr-imminent-ransomware-bb46dd86-e642-48a4-975c-44f5ac2b5033-87169ff1.md) | High | DefenseEvasion, Persistence | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_ASim_ProcessEvent`](../asim/asimprocessevent.md) |
 | [Java Executing cmd to run Powershell](../content/microsoft-defender-xdr-java-executing-cmd-to-run-powershell-2c81c0a0-9823-4a14-b21a-2b4acd3335d2-106ea66a.md) | High | Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [LSASS Credential Dumping with Procdump](../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-c332b840-61e4-462e-a201-0e2d69bad45d-36f7eb44.md) | High | CredentialAccess | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [LaZagne Credential Theft](../content/microsoft-defender-xdr-lazagne-credential-theft-7d0d3050-8dac-4b83-bfae-902f7dc0c21c-2a344765.md) | Medium | CredentialAccess | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Local Admin Group Changes](../content/microsoft-defender-xdr-local-admin-group-changes-63aa43c2-e88e-4102-aea5-0432851c541a-92e9a57c.md) | High | Persistence | [`DeviceEvents`](../tables/deviceevents.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-506f4d6b-3864-4bb1-8f75-a13fb066f97a-66639731.md) | High | DefenseEvasion | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |
 | [Office Apps Launching Wscipt](../content/microsoft-defender-xdr-office-apps-launching-wscipt-174de33b-107b-4cd8-a85d-b4025a35453f-49a22465.md) | Medium | Execution, Collection, CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
-| [Possible Phishing with CSL and Network Sessions](../content/microsoft-defender-xdr-possible-phishing-with-csl-and-network-sessions-6c3a1258-bcdd-4fcd-b753-1a9bc826ce12-631549a4.md) | Medium | InitialAccess, CommandAndControl | [`ALERT`](../tables/alert.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Event`](../tables/event.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Possible Phishing with CSL and Network Sessions](../content/microsoft-defender-xdr-possible-phishing-with-csl-and-network-sessions-6c3a1258-bcdd-4fcd-b753-1a9bc826ce12-631549a4.md) | Medium | InitialAccess, CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession`](../asim/imnetworksession.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
 | [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) | Medium | Persistence | [`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Potential Ransomware activity related to Cobalt Strike](../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-4bd9ce9d-8586-4beb-8fdb-bd018cacbe7d-af20888f.md) | High | Execution, Persistence, DefenseEvasion, Impact | *Internal use:*<br>[`AlertInfo`](../tables/alertinfo.md) |
 | [Qakbot Campaign Self Deletion](../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6-a7a7167c.md) | Medium | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
@@ -533,6 +559,10 @@ This solution includes **373 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

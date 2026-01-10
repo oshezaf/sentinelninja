@@ -1,5 +1,7 @@
 # Parsers
 
+Parsers are KQL functions that normalize and transform raw log data into a consistent format. They extract fields, standardize naming conventions, and prepare data for use by analytic rules, hunting queries, and workbooks. [Learn more](https://learn.microsoft.com/azure/sentinel/normalization)
+
 **514 parsers** across all Microsoft Sentinel solutions.
 
 **Jump to:** [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
@@ -640,6 +642,10 @@
 **Browse:**
 
 - [← Back to Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

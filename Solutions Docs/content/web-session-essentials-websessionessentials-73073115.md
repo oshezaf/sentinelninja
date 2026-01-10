@@ -1,4 +1,4 @@
-# WebSessionEssentials
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> WebSessionEssentials
 
 | Attribute | Value |
 |:----------|:------|
@@ -6,26 +6,22 @@
 | **Solution** | [Web Session Essentials](../solutions/web-session-essentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials/Workbooks/WebSessionEssentials.json) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_WebSession`](../asim/imwebsession.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`SecurityAlert`](../tables/securityalert.md)
-- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Syslog`](../tables/syslog.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
 - [`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md)
 - [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md)
 - [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md)
 - [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
 
 ---
 
@@ -33,7 +29,10 @@ This content item queries data from the following tables:
 
 - [← Back to Workbooks](workbooks.md)
 - [← Back to Web Session Essentials](../solutions/web-session-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

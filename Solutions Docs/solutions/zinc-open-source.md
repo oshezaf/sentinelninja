@@ -48,7 +48,7 @@ This is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-10-03 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zinc%20Open%20Source](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zinc%20Open%20Source) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-securityevents, azuresentinel.azure-sentinel-solution-microsoft365defender, azuresentinel.azure-sentinel-solution-dns, f5-networks.f5_bigip_mss, azuresentinel.azure-sentinel-solution-ciscoasa, azuresentinel.azure-sentinel-solution-paloaltopanos, azuresentinel.azure-sentinel-solution-commoneventformat, azuresentinel.azure-sentinel-solution-fortinetfortigate, checkpoint.checkpoint-sentinel-solutions, azuresentinel.azure-sentinel-solution-office365, sentinel4azurefirewall.sentinel4azurefirewall, azuresentinel.azure-sentinel-solution-windowsfirewall, azuresentinel.azure-sentinel-solution-windowsforwardedevents |
+| **Dependencies** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Server DNS](windows-server-dns.md), [F5 Big-IP](f5-big-ip.md), [CiscoASA](ciscoasa.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Common Event Format](common-event-format.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md), [Microsoft 365](microsoft-365.md), [Azure Firewall](azure-firewall.md), [Windows Firewall](windows-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md) |
 
 ## Data Connectors
 
@@ -56,7 +56,7 @@ This is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **12 table(s)** from its content items:
 
@@ -113,6 +113,10 @@ This solution includes **3 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

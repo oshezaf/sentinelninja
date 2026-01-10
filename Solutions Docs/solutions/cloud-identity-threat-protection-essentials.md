@@ -28,7 +28,7 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Identity%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Identity%20Threat%20Protection%20Essentials) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-azureactivedirectory, azuresentinel.azure-sentinel-solution-amazonwebservices, azuresentinel.azure-sentinel-solution-azureactivedirectoryip |
+| **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) |
 
 ## Data Connectors
 
@@ -36,7 +36,7 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **3 table(s)** from its content items:
 
@@ -99,6 +99,10 @@ This solution includes **10 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -40,7 +40,7 @@ This solution provides **1 data connector(s)**:
 
 - [Microsoft 365 Insider Risk Management](../connectors/officeirm.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **15 table(s)**:
 
@@ -152,6 +152,10 @@ You can deploy the solution by clicking on the buttons below:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

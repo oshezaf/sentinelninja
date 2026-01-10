@@ -62,6 +62,10 @@ When you click the "Add organization" button in the portal, a configuration form
 **Browse:**
 
 - [← Back to Connectors Index](../connectors-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

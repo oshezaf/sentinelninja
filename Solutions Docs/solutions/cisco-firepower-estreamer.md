@@ -21,7 +21,7 @@ The [Cisco Firepower](https://www.cisco.com/site/in/en/products/security/firewal
 | **Author** | Cisco |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
+| **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -30,7 +30,7 @@ This solution provides **2 data connector(s)**:
 - [[Deprecated] Cisco Firepower eStreamer via Legacy Agent](../connectors/ciscofirepowerestreamer.md)
 - [[Deprecated] Cisco Firepower eStreamer via AMA](../connectors/ciscofirepowerestreamerama.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -66,6 +66,10 @@ This solution includes **3 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -1,4 +1,4 @@
-# ThreatConnect
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> ThreatConnect
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ThreatConnect.svg" alt="ThreatConnect Logo" width="75" height="75">
 
@@ -18,50 +18,70 @@ The [ThreatConnect Threat Intelligence Platform](https://threatconnect.com/) sol
 | **Last Updated** | 2023-09-11 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatConnect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatConnect) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
+| [Microsoft](../asim/asim-products-index.md#microsoft) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+
 ## Data Connectors
 
 **This solution does not include data connectors.**
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution queries **32 table(s)** from its content items:
+This solution uses **1 ASIM parser(s)** for normalized data:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`_Im_NetworkSession`](../asim/imnetworksession.md) | Analytics |
+
+## Tables Used
+
+This solution queries **5 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | Analytics |
-| [`ALERT`](../tables/alert.md) | Analytics |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | Analytics |
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | Analytics |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | Analytics |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | Analytics |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | Analytics |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | Analytics |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | Analytics |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | Analytics |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | Analytics |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | Analytics |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Analytics |
-| [`Corelight_CL`](../tables/corelight-cl.md) | Analytics |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Analytics |
 | [`DnsEvents`](../tables/dnsevents.md) | Analytics |
-| [`Event`](../tables/event.md) | Analytics |
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | Analytics |
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | Analytics |
-| [`SecurityEvent`](../tables/securityevent.md) | Analytics |
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | Analytics |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Analytics |
 | [`SigninLogs`](../tables/signinlogs.md) | Analytics |
-| [`Syslog`](../tables/syslog.md) | Analytics |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Analytics |
-| [`Update`](../tables/update.md) | Analytics |
-| [`VMConnection`](../tables/vmconnection.md) | Analytics |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | Analytics |
-| [`WindowsEvent`](../tables/windowsevent.md) | Analytics |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | Analytics |
-| [`meraki_CL`](../tables/meraki-cl.md) | Analytics |
 
 ### Internal Tables
 
@@ -89,7 +109,7 @@ This solution includes **6 content item(s)**:
 | [ThreatConnect TI Map URL Entity to OfficeActivity Data](../content/threatconnect-threatconnect-ti-map-url-entity-to-officeactivity-data-12c3b31b-66a6-53ff-b6ab-6ae45e56dc92-426bca4a.md) | Medium | CommandAndControl | [`OfficeActivity`](../tables/officeactivity.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 | [ThreatConnect TI map Email entity to OfficeActivity](../content/threatconnect-threatconnect-ti-map-email-entity-to-officeactivity-4f7ade3e-7121-5274-83ea-d7ed22a01fea-d74546e3.md) | Medium | CommandAndControl | [`OfficeActivity`](../tables/officeactivity.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 | [ThreatConnect TI map Email entity to SigninLogs](../content/threatconnect-threatconnect-ti-map-email-entity-to-signinlogs-ecb68ce7-c309-59a7-a8de-07ccf2a0ea4f-22788640.md) | Medium | CommandAndControl | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [ThreatConnect TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/threatconnect-threatconnect-ti-map-ip-entity-to-network-session-events-asim-network-session-schema-ee1fd303-2081-47b7-8f02-e38bfd0868e6-1359f109.md) | Medium | CommandAndControl | [`ALERT`](../tables/alert.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Event`](../tables/event.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Update`](../tables/update.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [ThreatConnect TI map IP entity to Network Session Events (ASIM Network Session schema)](../content/threatconnect-threatconnect-ti-map-ip-entity-to-network-session-events-asim-network-session-schema-ee1fd303-2081-47b7-8f02-e38bfd0868e6-1359f109.md) | Medium | CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession`](../asim/imnetworksession.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 
 ### Workbooks
 
@@ -110,6 +130,10 @@ This solution includes **6 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

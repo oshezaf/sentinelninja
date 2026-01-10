@@ -21,7 +21,10 @@ The query searches for event 5143, which is triggered when a share is created or
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to FalconFriday](../solutions/falconfriday.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

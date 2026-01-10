@@ -1,4 +1,4 @@
-# Detect presence of uncommon user agents in web requests (ASIM Web Session)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect presence of uncommon user agents in web requests (ASIM Web Session)
 
 This rule assists in detecting rare user agents, which may indicate web browsing activity by an unconventional process different from the usual ones. The rule specifically searches for UserAgent strings that have not been seen in the past 14 days. This query will perform better when run over summarized data
 
@@ -14,21 +14,17 @@ This rule assists in detecting rare user agents, which may indicate web browsing
 | **Techniques** | T1190, T1133 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials/Analytic%20Rules/RareUserAgentDetected.yaml) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_WebSession`](../asim/imwebsession.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Syslog`](../tables/syslog.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
 - [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
 
 ---
 
@@ -36,7 +32,10 @@ This content item queries data from the following tables:
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Web Session Essentials](../solutions/web-session-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

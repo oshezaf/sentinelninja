@@ -21,7 +21,10 @@ Detects threats from impersonation mail under targeted threat protection.
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Mimecast](../solutions/mimecast.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

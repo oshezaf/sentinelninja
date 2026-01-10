@@ -1,4 +1,4 @@
-# RecordedFuture Threat Hunting Domain All Actors
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> RecordedFuture Threat Hunting Domain All Actors
 
 Recorded Future Threat Hunting domain correlation for all actors.
 
@@ -14,25 +14,17 @@ Recorded Future Threat Hunting domain correlation for all actors.
 | **Required Connectors** | [ThreatIntelligenceUploadIndicatorsAPI](../connectors/threatintelligenceuploadindicatorsapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Analytic%20Rules/ThreatHunting/RecordedFutureThreatHuntingDomainAllActors.yaml) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_Dns`](../asim/imdns.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)
-- [`AZFWDnsQuery`](../tables/azfwdnsquery.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`Corelight_CL`](../tables/corelight-cl.md)
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`Event`](../tables/event.md)
-- [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
-- [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)
-- [`SentinelOne_CL`](../tables/sentinelone-cl.md)
-- [`Syslog`](../tables/syslog.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 
@@ -40,7 +32,10 @@ This content item queries data from the following tables:
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Recorded Future](../solutions/recorded-future.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

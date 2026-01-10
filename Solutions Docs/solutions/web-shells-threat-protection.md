@@ -32,7 +32,7 @@ The Web Shells Threat Protection solution contains security content that helps p
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-22 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-microsoft365defender, azuresentinel.azure-sentinel-solution-securityevents, azuresentinel.azure-sentinel-solution-azurewebapplicationfirewal |
+| **Dependencies** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Security Events](windows-security-events.md), [Azure Web Application Firewall (WAF)](azure-web-application-firewall-waf.md) |
 
 ## Data Connectors
 
@@ -40,7 +40,7 @@ The Web Shells Threat Protection solution contains security content that helps p
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **4 table(s)** from its content items:
 
@@ -102,6 +102,10 @@ This solution includes **9 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

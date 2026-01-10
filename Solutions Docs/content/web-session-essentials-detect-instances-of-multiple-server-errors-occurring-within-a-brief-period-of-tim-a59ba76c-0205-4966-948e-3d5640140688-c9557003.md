@@ -1,4 +1,4 @@
-# Detect instances of multiple server errors occurring within a brief period of time (ASIM Web Session)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect instances of multiple server errors occurring within a brief period of time (ASIM Web Session)
 
 This detection mechanism identifies situations where multiple server errors originate from a single source within a limited time frame.
 
@@ -14,20 +14,11 @@ This detection mechanism identifies situations where multiple server errors orig
 | **Techniques** | T1190, T1133, T1498 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials/Analytic%20Rules/MultipleServerErrorsWithinShortTime.yaml) |
 
-## Tables Used
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This content item queries data from the following tables:
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Syslog`](../tables/syslog.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
+- [`_Im_WebSession`](../asim/imwebsession.md)
 
 ---
 
@@ -35,7 +26,10 @@ This content item queries data from the following tables:
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Web Session Essentials](../solutions/web-session-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

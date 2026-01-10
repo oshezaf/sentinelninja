@@ -32,7 +32,7 @@ In order to gain the most comprehensive coverage possible customers should deplo
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-08-04 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-azureactivedirectory, azuresentinel.azure-sentinel-solution-office365, azuresentinel.azure-sentinel-solution-amazonwebservices, azuresentinel.azure-sentinel-solution-microsoft365defender, azuresentinel.azure-sentinel-solution-okta |
+| **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Okta Single Sign-On](okta-single-sign-on.md) |
 
 ## Data Connectors
 
@@ -40,7 +40,7 @@ In order to gain the most comprehensive coverage possible customers should deplo
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **7 table(s)** from its content items:
 
@@ -123,6 +123,10 @@ This solution includes **20 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

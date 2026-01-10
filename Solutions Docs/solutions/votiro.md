@@ -19,7 +19,7 @@ Threat related information will be sent from Votiro Sanitization Engine to Micro
 | **Version** | 3.0.1 |
 | **Author** | Votiro - support@votiro.com |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
+| **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -27,7 +27,7 @@ This solution provides **1 data connector(s)**:
 
 - [[Deprecated] Votiro Sanitization Engine Logs](../connectors/votiro.md)
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -69,6 +69,10 @@ This solution includes **3 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

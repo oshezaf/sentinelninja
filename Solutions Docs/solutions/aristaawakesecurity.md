@@ -20,7 +20,7 @@ The [Awake Security Arista Networks solution](https://awakesecurity.com/) for Mi
 | **Author** | Arista Networks - support-security@arista.com |
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-commoneventformat |
+| **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -30,7 +30,7 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -73,6 +73,10 @@ This solution includes **4 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

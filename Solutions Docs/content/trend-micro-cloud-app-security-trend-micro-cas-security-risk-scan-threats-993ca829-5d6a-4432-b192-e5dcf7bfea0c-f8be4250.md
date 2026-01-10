@@ -19,7 +19,10 @@ Query searches for threats discovered via security risk scans.
 
 - [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

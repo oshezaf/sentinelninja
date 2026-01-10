@@ -1,4 +1,4 @@
-# RecordedFuture Threat Hunting URL All Actors
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> RecordedFuture Threat Hunting URL All Actors
 
 Recorded Future  URL  Threat Actor Hunt.
 
@@ -13,21 +13,17 @@ Recorded Future  URL  Threat Actor Hunt.
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_WebSession`](../asim/imwebsession.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Syslog`](../tables/syslog.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
 
 ---
 
@@ -35,7 +31,10 @@ This content item queries data from the following tables:
 
 - [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to Recorded Future](../solutions/recorded-future.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

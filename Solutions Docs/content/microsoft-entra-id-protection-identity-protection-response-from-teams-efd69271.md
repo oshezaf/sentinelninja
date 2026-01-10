@@ -96,7 +96,10 @@ Ensure you have the necessary permissions to access Microsoft Graph API and Team
 
 - [← Back to Playbooks](playbooks.md)
 - [← Back to Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

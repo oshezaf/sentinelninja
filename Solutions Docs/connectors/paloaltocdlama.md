@@ -27,7 +27,7 @@ This connector ingests data into the following tables:
 |-------|:-------------|:--------------|:---------------:|:-------------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Palo Alto Networks | LF | ✓ | ✓ |
 
-> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 
@@ -89,6 +89,10 @@ Make sure to configure the machine's security according to your organization's s
 **Browse:**
 
 - [← Back to Connectors Index](../connectors-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

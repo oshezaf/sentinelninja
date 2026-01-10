@@ -1,6 +1,6 @@
 # Microsoft Sentinel Connectors Index
 
-Browse all data connectors available in Microsoft Sentinel Solutions.
+Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you to collect security data from various sources into your Log Analytics workspace. Each connector defines how data flows from a source system to Sentinel tables, including the collection method (such as Azure Functions, Diagnostic Settings, or Log Analytics Agent) and the target table schema.
 
 **Browse by:**
 
@@ -8,6 +8,8 @@ Browse all data connectors available in Microsoft Sentinel Solutions.
 - [Connectors](connectors-index.md) (this page)
 - [Tables](tables-index.md)
 - [Content](content/content-index.md)
+- [ASIM Parsers](asim/asim-index.md)
+- [ASIM Products](asim/asim-products-index.md)
 
 ---
 

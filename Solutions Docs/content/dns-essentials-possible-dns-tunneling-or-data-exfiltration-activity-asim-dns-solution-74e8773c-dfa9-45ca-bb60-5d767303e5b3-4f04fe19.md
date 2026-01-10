@@ -1,4 +1,4 @@
-# Possible DNS Tunneling or Data Exfiltration Activity (ASIM DNS Solution)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Possible DNS Tunneling or Data Exfiltration Activity (ASIM DNS Solution)
 
 Typical domain name lengths are short, whereas domain name queries used for data exfiltration or tunneling can often be very large in size. The hunting query looks for DNS queries that are more than 150 characters long.
 
@@ -11,24 +11,11 @@ Typical domain name lengths are short, whereas domain name queries used for data
 | **Techniques** | T1568, T1008, T1048 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials/Hunting%20Queries/PossibleDNSTunnelingOrDataExfiltrationActivity.yaml) |
 
-## Tables Used
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This content item queries data from the following tables:
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
-- [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)
-- [`AZFWDnsQuery`](../tables/azfwdnsquery.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`Corelight_CL`](../tables/corelight-cl.md)
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`Event`](../tables/event.md)
-- [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
-- [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)
-- [`SentinelOne_CL`](../tables/sentinelone-cl.md)
-- [`Syslog`](../tables/syslog.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+- [`_Im_Dns`](../asim/imdns.md)
 
 ---
 
@@ -36,7 +23,10 @@ This content item queries data from the following tables:
 
 - [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to DNS Essentials](../solutions/dns-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

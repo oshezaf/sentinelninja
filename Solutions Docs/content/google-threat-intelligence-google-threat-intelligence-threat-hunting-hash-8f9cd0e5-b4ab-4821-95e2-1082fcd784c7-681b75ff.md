@@ -1,4 +1,4 @@
-# Google Threat Intelligence - Threat Hunting Hash
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Google Threat Intelligence - Threat Hunting Hash
 
 Google Threat Intelligence hash correlation.
 
@@ -14,24 +14,17 @@ Google Threat Intelligence hash correlation.
 | **Required Connectors** | [ThreatIntelligence](../connectors/threatintelligence.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence/Analytic%20Rules/ThreatHunting/ThreatHuntHash.yaml) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_FileEvent`](../asim/imfileevent.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ASimFileEventLogs`](../tables/asimfileeventlogs.md)
-- [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`Event`](../tables/event.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SentinelOne_CL`](../tables/sentinelone-cl.md)
-- [`StorageBlobLogs`](../tables/storagebloblogs.md)
-- [`StorageFileLogs`](../tables/storagefilelogs.md)
-- [`StorageQueueLogs`](../tables/storagequeuelogs.md)
-- [`StorageTableLogs`](../tables/storagetablelogs.md)
-- [`Syslog`](../tables/syslog.md)
 - [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
 
 ---
 
@@ -39,7 +32,10 @@ This content item queries data from the following tables:
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Google Threat Intelligence](../solutions/google-threat-intelligence.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

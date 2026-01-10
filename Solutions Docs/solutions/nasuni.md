@@ -21,7 +21,7 @@ The [Nasuni](https://www.nasuni.com) solution for Microsoft Sentinel allows you 
 | **First Published** | 2023-07-07 |
 | **Last Updated** | 2023-07-07 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Nasuni](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Nasuni) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-syslog |
+| **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors
 
@@ -31,7 +31,7 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-## Tables Reference
+## Tables Used
 
 This solution uses **1 table(s)**:
 
@@ -75,6 +75,10 @@ This solution includes **3 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

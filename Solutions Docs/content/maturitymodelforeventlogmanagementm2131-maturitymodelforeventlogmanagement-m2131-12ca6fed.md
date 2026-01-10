@@ -1,4 +1,4 @@
-# MaturityModelForEventLogManagement_M2131
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> MaturityModelForEventLogManagement_M2131
 
 | Attribute | Value |
 |:----------|:------|
@@ -6,38 +6,32 @@
 | **Solution** | [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MaturityModelForEventLogManagementM2131/Workbooks/MaturityModelForEventLogManagement_M2131.json) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_Dns`](../asim/imdns.md)
+- [`_Im_NetworkSession`](../asim/imnetworksession.md)
+
 ## Tables Used
 
 This content item queries data from the following tables:
 
 - [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)
 - [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
-- [`ALERT`](../tables/alert.md)
-- [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)
-- [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)
 - [`AWSCloudTrail`](../tables/awscloudtrail.md)
 - [`AWSGuardDuty`](../tables/awsguardduty.md)
 - [`AWSVPCFlow`](../tables/awsvpcflow.md)
-- [`AZFWDnsQuery`](../tables/azfwdnsquery.md)
-- [`AZFWIdpsSignature`](../tables/azfwidpssignature.md)
-- [`AZFWNatRule`](../tables/azfwnatrule.md)
-- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
-- [`AZFWThreatIntel`](../tables/azfwthreatintel.md)
 - [`AlertEvidence`](../tables/alertevidence.md)
 - [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)
-- [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)
 - [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)
-- [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)
 - [`CloudAppEvents`](../tables/cloudappevents.md)
 - [`CommonSecurityLog`](../tables/commonsecuritylog.md)
 - [`ConfigurationChange`](../tables/configurationchange.md)
 - [`ConfigurationData`](../tables/configurationdata.md)
-- [`Corelight_CL`](../tables/corelight-cl.md)
 - [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
 - [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)
 - [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
@@ -46,30 +40,23 @@ This content item queries data from the following tables:
 - [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)
 - [`EmailEvents`](../tables/emailevents.md)
 - [`EmailUrlInfo`](../tables/emailurlinfo.md)
-- [`Event`](../tables/event.md)
-- [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
 - [`GCP_IAM_CL`](../tables/gcp-iam-cl.md)
 - [`Heartbeat`](../tables/heartbeat.md)
 - [`IdentityInfo`](../tables/identityinfo.md)
-- [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`InsightsMetrics`](../tables/insightsmetrics.md)
 - [`IntuneAuditLogs`](../tables/intuneauditlogs.md)
 - [`IntuneDevices`](../tables/intunedevices.md)
 - [`IntuneOperationalLogs`](../tables/intuneoperationallogs.md)
 - [`KubeEvents_CL`](../tables/kubeevents-cl.md)
-- [`NTANetAnalytics`](../tables/ntanetanalytics.md)
-- [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`Operation`](../tables/operation.md)
 - [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`SecurityIncident`](../tables/securityincident.md)
-- [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)
 - [`SecurityRecommendation`](../tables/securityrecommendation.md)
 - [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
-- [`SentinelOne_CL`](../tables/sentinelone-cl.md)
 - [`SigninLogs`](../tables/signinlogs.md)
 - [`StorageBlobLogs`](../tables/storagebloblogs.md)
 - [`StorageFileLogs`](../tables/storagefilelogs.md)
@@ -77,13 +64,8 @@ This content item queries data from the following tables:
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 - [`Update`](../tables/update.md)
 - [`Usage`](../tables/usage.md)
-- [`VMConnection`](../tables/vmconnection.md)
 - [`VMProcess`](../tables/vmprocess.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
 - [`WindowsFirewall`](../tables/windowsfirewall.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
 - [`update`](../tables/update.md)
 
 ---
@@ -92,7 +74,10 @@ This content item queries data from the following tables:
 
 - [← Back to Workbooks](workbooks.md)
 - [← Back to MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

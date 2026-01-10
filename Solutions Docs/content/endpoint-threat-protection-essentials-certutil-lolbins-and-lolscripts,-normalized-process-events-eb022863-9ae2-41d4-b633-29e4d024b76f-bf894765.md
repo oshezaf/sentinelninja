@@ -1,4 +1,4 @@
-# Certutil (LOLBins and LOLScripts, Normalized Process Events)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Certutil (LOLBins and LOLScripts, Normalized Process Events)
 
 This detection uses Normalized Process Events to hunt Certutil activities.
 
@@ -11,21 +11,11 @@ This detection uses Normalized Process Events to hunt Certutil activities.
 | **Techniques** | T1105 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials/Hunting%20Queries/ASimProcess_CertutilLoLBins.yaml) |
 
-## Tables Used
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This content item queries data from the following tables:
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
-- [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md)
-- [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)
-- [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`Event`](../tables/event.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)
-- [`SentinelOne_CL`](../tables/sentinelone-cl.md)
-- [`Syslog`](../tables/syslog.md)
-- [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+- [`_ASim_ProcessEvent_Create`](../asim/asimprocesseventcreate.md)
 
 ---
 
@@ -33,7 +23,10 @@ This content item queries data from the following tables:
 
 - [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -27,7 +27,7 @@ The **Attacker Tools Threat Protection Essentials** solution contains security c
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-securityevents, azuresentinel.azure-sentinel-solution-dns, azuresentinel.azure-sentinel-solution-windowsforwardedevents, azuresentinel.azure-sentinel-solution-azureactivedirectory |
+| **Dependencies** | [Windows Security Events](windows-security-events.md), [Windows Server DNS](windows-server-dns.md), [Windows Forwarded Events](windows-forwarded-events.md), [Microsoft Entra ID](microsoft-entra-id.md) |
 
 ## Data Connectors
 
@@ -35,7 +35,7 @@ The **Attacker Tools Threat Protection Essentials** solution contains security c
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **6 table(s)** from its content items:
 
@@ -87,6 +87,10 @@ This solution includes **6 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

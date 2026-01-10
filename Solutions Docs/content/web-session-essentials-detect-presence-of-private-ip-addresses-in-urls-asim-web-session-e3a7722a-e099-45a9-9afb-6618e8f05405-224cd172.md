@@ -1,4 +1,4 @@
-# Detect presence of private IP addresses in URLs (ASIM Web Session)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect presence of private IP addresses in URLs (ASIM Web Session)
 
 This rule identifies requests made to atypical URLs, as malware can exploit IP addresses for communication with command-and-control (C2) servers. The detection identifies network requests that contain either plain text or Base64 encoded IP addresses. Alerts are triggered when a private IP address is observed as plain text or base64 encoded in an outbound web request. This method of concealing the IP address was observed in the utilization of the RunningRAT tool by POLONIUM.
 
@@ -14,20 +14,11 @@ This rule identifies requests made to atypical URLs, as malware can exploit IP a
 | **Techniques** | T1041, T1071.001, T1001 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials/Analytic%20Rules/PrivateIPInURL.yaml) |
 
-## Tables Used
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This content item queries data from the following tables:
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Syslog`](../tables/syslog.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
+- [`_Im_WebSession`](../asim/imwebsession.md)
 
 ---
 
@@ -35,7 +26,10 @@ This content item queries data from the following tables:
 
 - [← Back to Analytic Rules](analytic-rules.md)
 - [← Back to Web Session Essentials](../solutions/web-session-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

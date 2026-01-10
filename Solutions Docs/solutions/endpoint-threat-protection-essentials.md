@@ -1,4 +1,4 @@
-# Endpoint Threat Protection Essentials
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Endpoint Threat Protection Essentials
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Endpoint Threat Protection Essentials Logo" width="75" height="75">
 
@@ -28,7 +28,23 @@ The **Endpoint Threat Protection Essentials** solution provides content to monit
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-securityevents, azuresentinel.azure-sentinel-solution-microsoft365defender, azuresentinel.azure-sentinel-solution-windowsforwardedevents |
+| **Dependencies** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Forwarded Events](windows-forwarded-events.md) |
+
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Security Events](../asim/asim-products-index.md#security-events) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [Sysmon](../asim/asim-products-index.md#sysmon) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
+| [Trend Micro Vision One](../asim/asim-products-index.md#trend-micro-vision-one) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
 
 ## Data Connectors
 
@@ -36,24 +52,25 @@ The **Endpoint Threat Protection Essentials** solution provides content to monit
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution queries **13 table(s)** from its content items:
+This solution uses **1 ASIM parser(s)** for normalized data:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | Hunting |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | Hunting |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | Hunting |
+| [`_ASim_ProcessEvent_Create`](../asim/asimprocesseventcreate.md) | Hunting |
+
+## Tables Used
+
+This solution queries **6 table(s)** from its content items:
+
+| Table | Used By Content |
+|-------|----------------|
 | [`DeviceEvents`](../tables/deviceevents.md) | Analytics, Hunting |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Hunting |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Hunting |
 | [`Event`](../tables/event.md) | Analytics, Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | Analytics, Hunting |
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | Hunting |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | Hunting |
-| [`Syslog`](../tables/syslog.md) | Hunting |
-| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) | Hunting |
 | [`WindowsEvent`](../tables/windowsevent.md) | Analytics, Hunting |
 
 ## Content Items
@@ -89,7 +106,7 @@ This solution includes **29 content item(s)**:
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
 | [Backup Deletion](../content/endpoint-threat-protection-essentials-backup-deletion-56ebae61-89cf-42d9-99f4-3dff8ba33885-e1c87558.md) | Impact | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
-| [Certutil (LOLBins and LOLScripts, Normalized Process Events)](../content/endpoint-threat-protection-essentials-certutil-lolbins-and-lolscripts,-normalized-process-events-eb022863-9ae2-41d4-b633-29e4d024b76f-bf894765.md) | CommandAndControl | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Certutil (LOLBins and LOLScripts, Normalized Process Events)](../content/endpoint-threat-protection-essentials-certutil-lolbins-and-lolscripts,-normalized-process-events-eb022863-9ae2-41d4-b633-29e4d024b76f-bf894765.md) | CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_ASim_ProcessEvent_Create`](../asim/asimprocesseventcreate.md) |
 | [Detect Certutil (LOLBins and LOLScripts) Usage](../content/endpoint-threat-protection-essentials-detect-certutil-lolbins-and-lolscripts-usage-0e429446-2798-49e4-924d-c37338f24e23-bc9b437b.md) | CommandAndControl | [`Event`](../tables/event.md) |
 | [Download of New File Using Curl](../content/endpoint-threat-protection-essentials-download-of-new-file-using-curl-7108c86b-a3ef-42d0-b50b-3e251fb1f84c-09e03acc.md) | CommandAndControl | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [Execution of File with One Character in the Name](../content/endpoint-threat-protection-essentials-execution-of-file-with-one-character-in-the-name-299472c4-8382-4c5b-82d9-718cda193393-14ba3a7f.md) | Execution | [`Event`](../tables/event.md) |
@@ -102,7 +119,7 @@ This solution includes **29 content item(s)**:
 | [Scheduled Task Creation or Update from User Writable Directory](../content/endpoint-threat-protection-essentials-scheduled-task-creation-or-update-from-user-writable-directory-0b827a49-427e-4721-b05e-b151a8af524e-f6c2b013.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
 | [Suspicious Powershell Commandlet Execution](../content/endpoint-threat-protection-essentials-suspicious-powershell-commandlet-execution-8f424a4c-0487-45a3-92b8-00a7a8745b69-41451793.md) | Execution | [`DeviceEvents`](../tables/deviceevents.md) |
 | [Unicode Obfuscation in Command Line](../content/endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.md) | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
-| [Windows System Shutdown/Reboot (Normalized Process Events)](../content/endpoint-threat-protection-essentials-windows-system-shutdown-reboot-normalized-process-events-5db1f6f9-9de9-43a9-b7cc-357486b42fc6-4a6147b7.md) | Impact | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Windows System Shutdown/Reboot (Normalized Process Events)](../content/endpoint-threat-protection-essentials-windows-system-shutdown-reboot-normalized-process-events-5db1f6f9-9de9-43a9-b7cc-357486b42fc6-4a6147b7.md) | Impact | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_ASim_ProcessEvent_Create`](../asim/asimprocesseventcreate.md) |
 
 ## Release Notes
 
@@ -121,6 +138,10 @@ This solution includes **29 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

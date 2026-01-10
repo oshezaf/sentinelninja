@@ -1,4 +1,4 @@
-# Summarize Data for Network Session Essentials
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Summarize Data for Network Session Essentials
 
 This playbook summarizes data for Network Session Essentials and lands it into custom tables.
 
@@ -8,27 +8,16 @@ This playbook summarizes data for Network Session Essentials and lands it into c
 | **Solution** | [Network Session Essentials](../solutions/network-session-essentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Session%20Essentials/Playbooks/SummarizeData_NSE/azuredeploy.json) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_NetworkSession`](../asim/imnetworksession.md)
+
 ## Tables Used
 
 | Table | Usage |
 |:------|:------|
-| [`ALERT`](../tables/alert.md) | read |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | read |
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | read |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | read |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | read |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | read |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | read |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | read |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | read |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | read |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | read |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | read |
-| [`Corelight_CL`](../tables/corelight-cl.md) | read |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | read |
-| [`Event`](../tables/event.md) | read |
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | read |
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | read |
 | [`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) | read/write |
 | [`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) | read/write |
 | [`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md) | read/write |
@@ -38,16 +27,6 @@ This playbook summarizes data for Network Session Essentials and lands it into c
 | [`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) | read/write |
 | [`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) | read/write |
 | [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) | read/write |
-| [`SecurityEvent`](../tables/securityevent.md) | read |
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | read |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | read |
-| [`Syslog`](../tables/syslog.md) | read |
-| [`Update`](../tables/update.md) | read |
-| [`VMConnection`](../tables/vmconnection.md) | read |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | read |
-| [`WindowsEvent`](../tables/windowsevent.md) | read |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | read |
-| [`meraki_CL`](../tables/meraki-cl.md) | read |
 
 ## Additional Documentation
 
@@ -87,7 +66,10 @@ Once deployment is complete, you will need to authorize each connection.
 
 - [← Back to Playbooks](playbooks.md)
 - [← Back to Network Session Essentials](../solutions/network-session-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

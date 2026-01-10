@@ -1,5 +1,7 @@
 # Watchlists
 
+Watchlists are reference data tables that you can import into Microsoft Sentinel and use in queries and analytic rules. They are useful for storing lists of high-value assets, VIP users, known malicious indicators, or approved IP addresses for allowlisting. [Learn more](https://learn.microsoft.com/azure/sentinel/watchlists)
+
 **41 watchlists** across all Microsoft Sentinel solutions.
 
 **Jump to:** [A](#a) | [C](#c) | [D](#d) | [E](#e) | [H](#h) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [R](#r) | [S](#s) | [T](#t) | [V](#v)
@@ -120,6 +122,10 @@
 **Browse:**
 
 - [← Back to Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

@@ -19,7 +19,10 @@ Detects when a single source is connecting to many different SMB or file shares.
 
 - [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to Corelight](../solutions/corelight.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

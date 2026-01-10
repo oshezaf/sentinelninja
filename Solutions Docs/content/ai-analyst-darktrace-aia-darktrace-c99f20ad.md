@@ -20,7 +20,10 @@ This content item queries data from the following tables:
 
 - [← Back to Workbooks](workbooks.md)
 - [← Back to AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

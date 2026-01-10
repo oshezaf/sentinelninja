@@ -12,7 +12,7 @@ Reference for SecurityAlert table in Azure Monitor Logs.
 
 ## Additional Information
 
-📖 **Related Documentation:** [Security alert schema reference](https://learn.microsoft.com/en-us/azure/sentinel/security-alert-schema) - Describes the SecurityAlert table schema and field definitions
+📖 **Related Documentation:** [Security alert schema reference](https://learn.microsoft.com/azure/sentinel/security-alert-schema) - Describes the SecurityAlert table schema and field definitions
 
 ## Solutions (45)
 
@@ -291,6 +291,10 @@ This table collects data from the following Azure resource types:
 **Browse:**
 
 - [← Back to Tables Index](../tables-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

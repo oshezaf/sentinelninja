@@ -1,0 +1,51 @@
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Authentication ASIM parser for Linux su
+
+## Parser Information
+
+| Property | Value |
+|:---------|:------|
+| **Parser Name** | `ASimAuthenticationSu` |
+| **Built-in Parser** | `_ASim_Authentication_Su` |
+| **Schema** | Authentication |
+| **Schema Version** | 0.1.2 |
+| **Parser Type** | 🔌 Source (product-specific) |
+| **Product** | su |
+| **Parser Version** | 0.2.1 |
+| **Last Updated** | 21 Jul 2023 |
+| **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
+| **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationSu.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationSu.yaml) |
+
+## Description
+
+This ASIM parser supports normalizing Linux su elevation commands collected using Syslog to the ASIM Authentication schema.
+
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [Syslog](../tables/syslog.md) |
+
+## Parameters
+
+| Name | Type | Default |
+|:-----|:-----|:--------|
+| `disabled` | bool | False |
+
+## References
+
+- [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)
+- [ASIM](https:/aka.ms/AboutASIM)
+
+---
+
+**Browse:**
+
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

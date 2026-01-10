@@ -11,12 +11,11 @@ Creation and modification of registry entries
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceregistryevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceregistryevents-table) |
 
-## Solutions (5)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [FalconFriday](../solutions/falconfriday.md)
-- [Malware Protection Essentials](../solutions/malware-protection-essentials.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -29,18 +28,12 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (6)
 
-### Analytic Rules (6)
+### Analytic Rules (2)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 - [Component Object Model Hijacking - Vault7 trick](../content/falconfriday-component-object-model-hijacking-vault7-trick-1aaff41f-4e18-45b1-bb34-de6eb4943cf2-23d9ec72.md)
-
-**In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
-- [Detect Print Processors Registry Driver Key Creation/Modification](../content/malware-protection-essentials-detect-print-processors-registry-driver-key-creation-modification-7edde3d4-9859-4a00-b93c-b19ddda55320-f9f0f5d0.md)
-- [Detect Registry Run Key Creation/Modification](../content/malware-protection-essentials-detect-registry-run-key-creation-modification-dd041e4e-1ee2-41ec-ba4e-82a71d628260-bcf60f87.md)
-- [Detect Windows Allow Firewall Rule Addition/Modification](../content/malware-protection-essentials-detect-windows-allow-firewall-rule-addition-modification-056593d4-ca3b-47a7-be9d-d1d0884a1d36-0da604bb.md)
-- [Detect Windows Update Disabled from Registry](../content/malware-protection-essentials-detect-windows-update-disabled-from-registry-f1443a87-78d5-40c3-b051-f468f0f2def0-9957e6e8.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-506f4d6b-3864-4bb1-8f75-a13fb066f97a-66639731.md)
@@ -50,10 +43,7 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-0efbcea0-1dc0-4844-8a9c-3a1d98fc1697-1d4d4510.md)
 
-### Workbooks (4)
-
-**In solution [Malware Protection Essentials](../solutions/malware-protection-essentials.md):**
-- [MalwareProtectionEssentialsWorkbook](../content/malware-protection-essentials-malwareprotectionessentialsworkbook-df9a8a0a.md)
+### Workbooks (3)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
@@ -69,6 +59,10 @@ This table is ingested by the following connectors:
 **Browse:**
 
 - [← Back to Tables Index](../tables-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

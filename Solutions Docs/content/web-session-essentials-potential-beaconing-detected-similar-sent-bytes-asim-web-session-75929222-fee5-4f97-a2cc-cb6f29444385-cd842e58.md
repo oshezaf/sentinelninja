@@ -1,4 +1,4 @@
-# Potential beaconing detected - Similar sent bytes (ASIM Web Session)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Potential beaconing detected - Similar sent bytes (ASIM Web Session)
 
 Calculate the number of SrcBytes (Sent bytes) for each unique combination of SrcIpAddress and DstIpAddress within a 24-hour timeframe. The presence of a high count of repetitive identical SrcBytes could potentially indicate beaconing activity.
 
@@ -11,20 +11,11 @@ Calculate the number of SrcBytes (Sent bytes) for each unique combination of Src
 | **Techniques** | T1071, T1571 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials/Hunting%20Queries/PotentialBeaconingDetected_SimilarSrcBytes.yaml) |
 
-## Tables Used
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This content item queries data from the following tables:
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
-- [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`SquidProxy_CL`](../tables/squidproxy-cl.md)
-- [`Syslog`](../tables/syslog.md)
-- [`VectraStream_CL`](../tables/vectrastream-cl.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
-- [`barracuda_CL`](../tables/barracuda-cl.md)
-- [`meraki_CL`](../tables/meraki-cl.md)
+- [`_Im_WebSession`](../asim/imwebsession.md)
 
 ---
 
@@ -32,7 +23,10 @@ This content item queries data from the following tables:
 
 - [← Back to Hunting Queries](hunting-queries.md)
 - [← Back to Web Session Essentials](../solutions/web-session-essentials.md)
-- [Content Index](content-index.md)
-- [Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+

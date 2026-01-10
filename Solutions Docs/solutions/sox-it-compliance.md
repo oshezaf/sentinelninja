@@ -16,7 +16,7 @@ This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Cont
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-12-11 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance) |
-| **Dependencies** | azuresentinel.azure-sentinel-solution-azureactivedirectory, azuresentinel.azure-sentinel-solution-microsoft365defender, azuresentinel.azure-sentinel-solution-microsoft365, azuresentinel.azure-sentinel-solution-azureactivity, azuresentinel.sentinel4sql, azuresentinel.azure-sentinel-solution-windowssecurityevents, azuresentinel.azure-sentinel-solution-userentitybehavioranalytics |
+| **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Windows Security Events](windows-security-events.md), [UEBA Essentials](ueba-essentials.md) |
 
 ## Data Connectors
 
@@ -24,7 +24,7 @@ This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Cont
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## Tables Reference
+## Tables Used
 
 This solution queries **15 table(s)** from its content items:
 
@@ -71,6 +71,10 @@ This solution includes **1 content item(s)**:
 **Browse:**
 
 - [← Back to Solutions Index](../solutions-index.md)
-- [Connectors Index](../connectors-index.md)
-- [Tables Index](../tables-index.md)
-- [Content Index](../content/content-index.md)
+- [Solutions](../solutions-index.md)
+- [Connectors](../connectors-index.md)
+- [Tables](../tables-index.md)
+- [Content](../content/content-index.md)
+- [ASIM Parsers](../asim/asim-index.md)
+- [ASIM Products](../asim/asim-products-index.md)
+
