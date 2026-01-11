@@ -22,7 +22,7 @@ Comprehensive reference documentation for Microsoft Sentinel Solutions, automati
 **Includes:**
 - **[Solutions Index](Solutions%20Docs/solutions-index.md)**
 - **[Connectors Index](Solutions%20Docs/connectors-index.md)**
-- **[Tables Index](Solutions%20Docs/tables-index.md)** 
+- **[Tables Index](Solutions%20Docs/tables-index.md)**
 - **[Content Index](Solutions%20Docs/content/content-index.md)** – Overview of all content types including:
   - Analytic Rules
   - Hunting Queries
@@ -30,6 +30,17 @@ Comprehensive reference documentation for Microsoft Sentinel Solutions, automati
   - Workbooks
   - Parsers
   - Watchlists
+
+### 📤 [Kusto Uploader](kusto-uploader/README.md)
+
+A utility to upload CSV files to Azure Data Explorer (Kusto) clusters. Can upload any CSV file or download the latest **[Solution Analyzer](https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Solutions%20Analyzer)** data directly from GitHub and upload it to your Kusto cluster for querying.
+
+**Features:**
+- Upload any CSV file to Kusto
+- Download and upload Solution Analyzer data from GitHub with `--solution-analyzer`
+- Automatic schema detection
+- Azure CLI authentication
+- Dry run mode for previewing operations
 
 ## Related Resources
 
