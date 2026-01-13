@@ -38,13 +38,11 @@ This solution has **3 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
-| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | - |
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md) | - |
 
 ## Content Items
 

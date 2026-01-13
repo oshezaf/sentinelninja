@@ -1,4 +1,6 @@
-# SenservaPro
+# ⚠️ SenservaPro
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SenservaPro/Data Connectors/Logo/SenservaPro_logo.svg" alt="SenservaPro Logo" width="75" height="75">
 

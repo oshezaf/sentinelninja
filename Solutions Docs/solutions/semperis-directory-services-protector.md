@@ -1,4 +1,6 @@
-# Semperis Directory Services Protector
+# ⚠️ Semperis Directory Services Protector
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Semperis%20Directory%20Services%20Protector/Workbooks/Images/Logo/Semperis.svg" alt="Semperis Directory Services Protector Logo" width="75" height="75">
 
@@ -37,7 +39,7 @@ This solution uses **4 table(s)**:
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
 | [`Operation`](../tables/operation.md) | - | Workbooks |
-| [`SecurityEvent`](../tables/securityevent.md) | [Semperis Directory Services Protector](../connectors/semperisdsp.md) | Analytics, Workbooks |
+| [`SecurityEvent`](../tables/securityevent.md) | - | Analytics, Workbooks |
 | [`alert`](../tables/alert.md) | - | Workbooks |
 
 ## Content Items

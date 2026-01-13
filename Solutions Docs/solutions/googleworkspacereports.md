@@ -36,33 +36,18 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **23 table(s)**:
+This solution uses **8 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GWorkspace_ReportsAPI_access_transparency_CL`](../tables/gworkspace-reportsapi-access-transparency-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 | [`GWorkspace_ReportsAPI_admin_CL`](../tables/gworkspace-reportsapi-admin-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 | [`GWorkspace_ReportsAPI_calendar_CL`](../tables/gworkspace-reportsapi-calendar-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_chat_CL`](../tables/gworkspace-reportsapi-chat-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_chrome_CL`](../tables/gworkspace-reportsapi-chrome-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_context_aware_access_CL`](../tables/gworkspace-reportsapi-context-aware-access-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_data_studio_CL`](../tables/gworkspace-reportsapi-data-studio-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 | [`GWorkspace_ReportsAPI_drive_CL`](../tables/gworkspace-reportsapi-drive-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_gcp_CL`](../tables/gworkspace-reportsapi-gcp-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_gplus_CL`](../tables/gworkspace-reportsapi-gplus-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_groups_CL`](../tables/gworkspace-reportsapi-groups-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_groups_enterprise_CL`](../tables/gworkspace-reportsapi-groups-enterprise-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_jamboard_CL`](../tables/gworkspace-reportsapi-jamboard-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_keep_CL`](../tables/gworkspace-reportsapi-keep-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 | [`GWorkspace_ReportsAPI_login_CL`](../tables/gworkspace-reportsapi-login-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_meet_CL`](../tables/gworkspace-reportsapi-meet-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 | [`GWorkspace_ReportsAPI_mobile_CL`](../tables/gworkspace-reportsapi-mobile-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_rules_CL`](../tables/gworkspace-reportsapi-rules-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
-| [`GWorkspace_ReportsAPI_saml_CL`](../tables/gworkspace-reportsapi-saml-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 | [`GWorkspace_ReportsAPI_token_CL`](../tables/gworkspace-reportsapi-token-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 | [`GWorkspace_ReportsAPI_user_accounts_CL`](../tables/gworkspace-reportsapi-user-accounts-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 | [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) | [Google Workspace Activities (via Codeless Connector Framework)](../connectors/googleworkspaceccpdefinition.md) | - |
-| [`GoogleWorkspaceReports_CL`](../tables/googleworkspacereports-cl.md) | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | - |
 
 ## Content Items
 

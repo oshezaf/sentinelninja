@@ -37,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Claroty via AMA](../connectors/clarotyama.md), [[Deprecated] Claroty via Legacy Agent](../connectors/claroty.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Claroty via AMA](../connectors/clarotyama.md) | - |
 
 ## Content Items
 

@@ -1,4 +1,6 @@
-# Microsoft 365 Assets
+# ⚠️ Microsoft 365 Assets
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/office365_logo.svg" alt="Microsoft 365 Assets Logo" width="75" height="75">
 

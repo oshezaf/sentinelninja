@@ -19,9 +19,21 @@ The [Tropico](https://www.tropicosecurity.com/) solution for Microsoft Sentinel 
 
 ## Data Connectors
 
-**This solution does not include data connectors.**
+This solution provides **3 data connector(s)**:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Tropico Security - Alerts](../connectors/tropicoalertsdefinition.md)
+- [Tropico Security - Events](../connectors/tropicoeventsdefinition.md)
+- [Tropico Security - Incidents](../connectors/tropicoincidentsdefinition.md)
+
+## Tables Used
+
+This solution uses **3 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`Tropico_Alerts_CL`](../tables/tropico-alerts-cl.md) | [Tropico Security - Alerts](../connectors/tropicoalertsdefinition.md) | - |
+| [`Tropico_Events_CL`](../tables/tropico-events-cl.md) | [Tropico Security - Events](../connectors/tropicoeventsdefinition.md) | - |
+| [`Tropico_Incidents_CL`](../tables/tropico-incidents-cl.md) | [Tropico Security - Incidents](../connectors/tropicoincidentsdefinition.md) | - |
 
 ## Release Notes
 

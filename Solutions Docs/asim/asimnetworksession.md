@@ -60,7 +60,7 @@ This union parser includes parsers for the following products:
 | Vectra AI Streams | [_ASim_NetworkSession_VectraAI](asimnetworksessionvectraai.md) |
 | WatchGuard Fireware OS | [_ASim_NetworkSession_WatchGuardFirewareOS](asimnetworksessionwatchguardfirewareos.md) |
 | Zscaler ZIA Firewall | [_ASim_NetworkSession_ZscalerZIA](asimnetworksessionzscalerzia.md) |
-| Microsoft | [_Im_NetworkSession_Empty](vimnetworksessionempty.md) |
+|  | [_Im_NetworkSession_Empty](im-networksession-empty.md) |
 
 ## Parameters
 

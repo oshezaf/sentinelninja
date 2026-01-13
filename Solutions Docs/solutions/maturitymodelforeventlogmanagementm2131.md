@@ -17,52 +17,6 @@ This solution is designed to enable Cloud Architects, Security Engineers, and Go
 | **First Published** | 2021-12-05 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MaturityModelForEventLogManagementM2131](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MaturityModelForEventLogManagementM2131) |
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
-
-This solution uses ASIM parsers and supports the following products:
-
-| Product |
-|:--------|
-| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
-| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
-| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
-| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
-| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
-| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
-| [Cisco](../asim/asim-products-index.md#cisco) |
-| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
-| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
-| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
-| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
-| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
-| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
-| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
-| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
-| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
-| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
-| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
-| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) |
-| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
-| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
-| [Microsoft](../asim/asim-products-index.md#microsoft) |
-| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
-| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
-| [Native](../asim/asim-products-index.md#native) |
-| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
-| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
-| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
-| [SonicWall](../asim/asim-products-index.md#sonicwall) |
-| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
-| [VMConnection](../asim/asim-products-index.md#vmconnection) |
-| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
-| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
-| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
-| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
-| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
-| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) |
-| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
-
 ## Data Connectors
 
 **This solution does not include data connectors.**

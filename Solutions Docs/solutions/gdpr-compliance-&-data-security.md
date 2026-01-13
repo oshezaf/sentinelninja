@@ -18,29 +18,6 @@ This workbook helps you track, visualize and monitor GDPR related requirements a
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GDPR%20Compliance%20%26%20Data%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GDPR%20Compliance%20%26%20Data%20Security) |
 | **Dependencies** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft Purview](microsoft-purview.md), [Microsoft Purview Information Protection](microsoft-purview-information-protection.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Microsoft 365](microsoft-365.md), [Microsoft Entra ID](microsoft-entra-id.md) |
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
-
-This solution uses ASIM parsers and supports the following products:
-
-| Product |
-|:--------|
-| [Apache HTTP Server](../asim/asim-products-index.md#apache-http-server) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
-| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
-| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
-| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
-| [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) |
-| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-(asm)) |
-| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
-| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-(iis)) |
-| [Native](../asim/asim-products-index.md#native) |
-| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
-| [Palo Alto Networks](../asim/asim-products-index.md#palo-alto-networks) |
-| [SonicWall](../asim/asim-products-index.md#sonicwall) |
-| [Squid Proxy](../asim/asim-products-index.md#squid-proxy) |
-| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
-| [Zscaler ZIA Proxy](../asim/asim-products-index.md#zscaler-zia-proxy) |
-
 ## Data Connectors
 
 **This solution does not include data connectors.**

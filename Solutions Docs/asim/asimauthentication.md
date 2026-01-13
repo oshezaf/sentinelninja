@@ -52,7 +52,7 @@ This union parser includes parsers for the following products:
 | sudo | [_ASim_Authentication_Sudo](asimauthenticationsudo.md) |
 | VMware Carbon Black Cloud | [_ASim_Authentication_VMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) |
 | Vectra | [_ASim_Authentication_VectraXDRAudit](asimauthenticationvectraxdraudit.md) |
-| Microsoft Sentinel | [_Im_Authentication_Empty](vimauthenticationempty.md) |
+|  | [_Im_Authentication_Empty](im-authentication-empty.md) |
 
 ## Parameters
 

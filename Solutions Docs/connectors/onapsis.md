@@ -18,6 +18,7 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
+| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ |
 | [`Onapsis_Defend_CL`](../tables/onapsis-defend-cl.md) | — | — |
 
 ## Permissions

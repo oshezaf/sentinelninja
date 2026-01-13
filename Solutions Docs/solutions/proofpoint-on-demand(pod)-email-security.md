@@ -34,17 +34,15 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **7 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | - |
-| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | - |
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) | - |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) | - |
 | [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | - |
 | [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
-| [`maillog_CL`](../tables/maillog-cl.md) | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | - |
-| [`message_CL`](../tables/message-cl.md) | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | - |
 
 ## Content Items
 

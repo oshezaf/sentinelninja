@@ -1,4 +1,6 @@
-# SecurityScorecard Cybersecurity Ratings
+# ⚠️ SecurityScorecard Cybersecurity Ratings
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SecurityScorecard-Cybersecurity-Ratings.svg" alt="SecurityScorecard Cybersecurity Ratings Logo" width="75" height="75">
 

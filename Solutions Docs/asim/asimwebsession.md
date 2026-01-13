@@ -40,7 +40,7 @@ This union parser includes parsers for the following products:
 | Squid Proxy | [_ASim_WebSession_SquidProxy](asimwebsessionsquidproxy.md) |
 | Vectra AI Streams | [_ASim_WebSession_VectraAI](asimwebsessionvectraai.md) |
 | Zscaler ZIA | [_ASim_WebSession_ZscalerZIA](asimwebsessionzscalerzia.md) |
-| Microsoft | [_Im_WebSession_Empty](vimwebsessionempty.md) |
+|  | [_Im_WebSession_Empty](im-websession-empty.md) |
 
 ## Parameters
 

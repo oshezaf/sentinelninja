@@ -25,14 +25,6 @@ This solution provides **1 data connector(s)**:
 
 - [Forescout](../connectors/forescout.md)
 
-## Tables Used
-
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [Forescout](../connectors/forescout.md) | - |
-
 ## Content Items
 
 This solution includes **1 content item(s)**:

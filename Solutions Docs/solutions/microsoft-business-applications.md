@@ -27,29 +27,6 @@ Due to the integration of the Power Platform inventory data, in addition to the 
 | **First Published** | 2023-04-19 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications) |
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
-
-This solution uses ASIM parsers and supports the following products:
-
-| Product |
-|:--------|
-| [Apache HTTP Server](../asim/asim-products-index.md#apache-http-server) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
-| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
-| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
-| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
-| [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) |
-| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-(asm)) |
-| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
-| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-(iis)) |
-| [Native](../asim/asim-products-index.md#native) |
-| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
-| [Palo Alto Networks](../asim/asim-products-index.md#palo-alto-networks) |
-| [SonicWall](../asim/asim-products-index.md#sonicwall) |
-| [Squid Proxy](../asim/asim-products-index.md#squid-proxy) |
-| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
-| [Zscaler ZIA Proxy](../asim/asim-products-index.md#zscaler-zia-proxy) |
-
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:

@@ -40,7 +40,7 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) | - |
-| [`Pathlock_TDnR_CL`](../tables/pathlock-tdnr-cl.md) | [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) | - |
+| [`Pathlock_TDnR_CL`](../tables/pathlock-tdnr-cl.md) | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md), [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) | - |
 
 ## Additional Documentation
 

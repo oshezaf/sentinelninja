@@ -22,7 +22,7 @@ Reference for CommonSecurityLog table in Azure Monitor Logs.
 - 📚 **Vendor CEF Guide:** [Citrix/NetScaler WAF](https://docs.netscaler.com/en-us/citrix-adc/current-release/application-firewall/logs.html) - Application Firewall logs
 - 📚 **Vendor CEF Guide:** [Symantec Endpoint Protection](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Monitoring-Reporting-and-Enforcing-Compliance/viewing-logs-v7522439-d37e464/about-the-types-of-logs-v8156418-d37e6.html) - Log types reference
 
-## Solutions (79)
+## Solutions (77)
 
 This table is used by the following solutions:
 
@@ -93,8 +93,6 @@ This table is used by the following solutions:
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Trend Micro Apex One](../solutions/trend-micro-apex-one.md)
-- [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md)
-- [Trend Micro TippingPoint](../solutions/trend-micro-tippingpoint.md)
 - [Vectra AI Detect](../solutions/vectra-ai-detect.md)
 - [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)
 - [Votiro](../solutions/votiro.md)
@@ -106,7 +104,7 @@ This table is used by the following solutions:
 - [iboss](../solutions/iboss.md)
 - [vArmour Application Controller](../solutions/varmour-application-controller.md)
 
-## Connectors (100)
+## Connectors (88)
 
 This table is ingested by the following connectors:
 
@@ -126,11 +124,9 @@ This table is ingested by the following connectors:
 - [Cisco ASA/FTD via AMA](../connectors/ciscoasaama.md)
 - [[Deprecated] Cisco Firepower eStreamer via Legacy Agent](../connectors/ciscofirepowerestreamer.md)
 - [[Deprecated] Cisco Firepower eStreamer via AMA](../connectors/ciscofirepowerestreamerama.md)
-- [[Deprecated] Cisco Secure Email Gateway via Legacy Agent](../connectors/ciscoseg.md)
 - [[Deprecated] Cisco Secure Email Gateway via AMA](../connectors/ciscosegama.md)
 - [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](../connectors/citrixwaf.md)
 - [[Deprecated] Citrix WAF (Web App Firewall) via AMA](../connectors/citrixwafama.md)
-- [[Deprecated] Claroty via Legacy Agent](../connectors/claroty.md)
 - [[Deprecated] Claroty via AMA](../connectors/clarotyama.md)
 - [Claroty xDome](../connectors/clarotyxdome.md)
 - [[Deprecated] Contrast Protect via Legacy Agent](../connectors/contrastprotect.md)
@@ -147,7 +143,6 @@ This table is ingested by the following connectors:
 - [[Deprecated] ExtraHop Reveal(x) via AMA](../connectors/extrahopnetworksama.md)
 - [[Deprecated] F5 Networks via Legacy Agent](../connectors/f5.md)
 - [[Deprecated] F5 Networks via AMA](../connectors/f5ama.md)
-- [[Deprecated] FireEye Network Security (NX) via Legacy Agent](../connectors/fireeyenx.md)
 - [[Deprecated] FireEye Network Security (NX) via AMA](../connectors/fireeyenxama.md)
 - [[Deprecated] Forcepoint CSG via Legacy Agent](../connectors/forcepointcsg.md)
 - [[Deprecated] Forcepoint CSG via AMA](../connectors/forcepointcsgama.md)
@@ -160,7 +155,6 @@ This table is ingested by the following connectors:
 - [[Deprecated] Fortinet via AMA](../connectors/fortinetama.md)
 - [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](../connectors/fortinetfortiweb.md)
 - [Fortinet FortiWeb Web Application Firewall via AMA](../connectors/fortinetfortiwebama.md)
-- [[Deprecated] Illumio Core via Legacy Agent](../connectors/illumiocore.md)
 - [[Deprecated] Illumio Core via AMA](../connectors/illumiocoreama.md)
 - [Imperva WAF Gateway](../connectors/impervawafgateway.md)
 - [[Deprecated] Infoblox Cloud Data Connector via Legacy Agent](../connectors/infobloxclouddataconnector.md)
@@ -170,20 +164,15 @@ This table is ingested by the following connectors:
 - [[Recommended] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md)
 - [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md)
 - [IronNet IronDefense](../connectors/ironnetirondefense.md)
-- [[Deprecated] Netwrix Auditor via Legacy Agent](../connectors/netwrix.md)
 - [[Deprecated] Netwrix Auditor via AMA](../connectors/netwrixama.md)
-- [[Deprecated] Nozomi Networks N2OS via Legacy Agent](../connectors/nozominetworksn2os.md)
 - [[Deprecated] Nozomi Networks N2OS via AMA](../connectors/nozominetworksn2osama.md)
-- [[Deprecated] OSSEC via Legacy Agent](../connectors/ossec.md)
 - [[Deprecated] OSSEC via AMA](../connectors/ossecama.md)
 - [[Deprecated] Onapsis Platform](../connectors/onapsisplatform.md)
 - [One Identity Safeguard](../connectors/oneidentity.md)
-- [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via Legacy Agent](../connectors/paloaltocdl.md)
 - [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via AMA](../connectors/paloaltocdlama.md)
 - [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md)
 - [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md)
 - [Palo Alto Networks Cortex XDR](../connectors/paloaltonetworkscortex.md)
-- [[Deprecated] PingFederate via Legacy Agent](../connectors/pingfederate.md)
 - [[Deprecated] PingFederate via AMA](../connectors/pingfederateama.md)
 - [Radiflow iSID via AMA](../connectors/radiflowisid.md)
 - [[Deprecated] RIDGEBOT - data connector for Microsoft Sentinel](../connectors/ridgebotdataconnector.md)
@@ -191,10 +180,7 @@ This table is ingested by the following connectors:
 - [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md)
 - [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md)
 - [Threat Intelligence Platforms](../connectors/threatintelligence.md)
-- [[Deprecated] Trend Micro Deep Security via Legacy](../connectors/trendmicro.md)
-- [[Deprecated] Trend Micro Apex One via Legacy Agent](../connectors/trendmicroapexone.md)
 - [[Deprecated] Trend Micro Apex One via AMA](../connectors/trendmicroapexoneama.md)
-- [[Deprecated] Trend Micro TippingPoint via Legacy](../connectors/trendmicrotippingpoint.md)
 - [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md)
 - [VirtualMetric DataStream for Microsoft Sentinel](../connectors/virtualmetricmssentinelconnector.md)
 - [VirtualMetric DataStream for Microsoft Sentinel data lake](../connectors/virtualmetricmssentineldatalakeconnector.md)

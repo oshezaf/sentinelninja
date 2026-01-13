@@ -1,4 +1,6 @@
-# Imperva WAF Gateway
+# ⚠️ Imperva WAF Gateway
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Imperva_DarkGrey_final_75x75.svg" alt="Imperva WAF Gateway Logo" width="75" height="75">
 

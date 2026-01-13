@@ -23,9 +23,9 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser |
 |:--------|:--------------|
-| Microsoft | [_Im_DhcpEvent_Empty](vimdhcpeventempty.md) |
-| Infoblox BloxOne | [_Im_DhcpEvent_InfobloxBloxOne](vimdhcpeventinfobloxbloxone.md) |
-| Native | [_Im_DhcpEvent_Native](vimdhcpeventnative.md) |
+|  | [_Im_DhcpEvent_Empty](im-dhcpevent-empty.md) |
+|  | [_Im_DhcpEvent_InfobloxBloxOne](im-dhcpevent-infobloxbloxone.md) |
+|  | [_Im_DhcpEvent_Native](im-dhcpevent-native.md) |
 
 ## Parameters
 

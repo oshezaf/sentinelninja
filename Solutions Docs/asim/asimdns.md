@@ -38,7 +38,7 @@ This union parser includes parsers for the following products:
 | SentinelOne | [_ASim_Dns_SentinelOne](asimdnssentinelone.md) |
 | Vectra AI Streams | [_ASim_Dns_VectraAI](asimdnsvectraai.md) |
 | Zscaler ZIA DNS | [_ASim_Dns_ZscalerZIA](asimdnszscalerzia.md) |
-| Microsoft | [_Im_Dns_Empty](vimdnsempty.md) |
+|  | [_Im_Dns_Empty](im-dns-empty.md) |
 
 ## Parameters
 

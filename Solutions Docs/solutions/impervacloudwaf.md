@@ -40,7 +40,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) | - |
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) | - |
 | [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
 
 ## Content Items

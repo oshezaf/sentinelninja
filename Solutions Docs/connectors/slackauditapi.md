@@ -18,8 +18,6 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
-| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | — | — |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | — | — |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) | — | — |
 
 ## Permissions

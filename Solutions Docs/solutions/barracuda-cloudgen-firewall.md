@@ -32,12 +32,11 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md) | - |
 
 ## Content Items
 

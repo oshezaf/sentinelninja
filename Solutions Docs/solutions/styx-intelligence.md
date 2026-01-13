@@ -1,4 +1,6 @@
-# Styx Intelligence
+# ⚠️ Styx Intelligence
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/styx-logo-black.svg" alt="Styx Intelligence Logo" width="75" height="75">
 

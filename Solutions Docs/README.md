@@ -7,59 +7,101 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | Documentation | Description |
 |:--------------|:------------|
 | [Solutions](solutions-index.md) | Browse all 484 solutions |
-| [Connectors](connectors-index.md) | Browse all 525 data connectors |
-| [Tables](tables-index.md) | Browse all 1694 log tables |
+| [Connectors](connectors-index.md) | Browse all 529 data connectors |
+| [Tables](tables-index.md) | Browse all 1662 log tables |
 | [Content](content/content-index.md) | Browse all 4864 content items |
 | [ASIM Parsers](asim/asim-index.md) | Browse ASIM parsers by schema |
 | [ASIM Products](asim/asim-products-index.md) | Browse ASIM parsers by product |
 
-## Quick Statistics
+## Solutions
+
+### Solutions Statistics
+
+| Metric | Total | Published | Unpublished |
+|:-------|------:|----------:|------------:|
+| Solutions | 484 | 402 | 82 |
+| With Connectors | 387 | 323 | 64 |
+| With Content | 385 | 329 | 56 |
+
+## Connectors
+
+### Connectors Statistics
+
+| Metric | Total | Active | Deprecated | Unpublished |
+|:-------|------:|-------:|-----------:|------------:|
+| In Solutions | 382 | 154 | 143 | 85 |
+| Discovered* | 147 | - | - | - |
+| **Total** | **529** | - | - | - |
+
+*\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions. They are not included in the breakdown by status.*
+
+### Collection Methods
+
+| Collection Method | Total | Active | Deprecated | Unpublished |
+|:-----------------|------:|-------:|-----------:|------------:|
+| Azure Function | 129 | 75 | 18 | 36 |
+| CCF | 127 | 118 | 1 | 8 |
+| MMA | 110 | 12 | 90 | 8 |
+| AMA | 59 | 25 | 34 | 0 |
+| Unknown (Custom Log) | 44 | 35 | 0 | 9 |
+| Native | 25 | 24 | 0 | 1 |
+| Azure Diagnostics | 17 | 17 | 0 | 0 |
+| REST API | 15 | 7 | 0 | 8 |
+| Unknown | 3 | 3 | 0 | 0 |
+| **Total** | **529** | **316** | **143** | **70** |
+
+*Active = Published and not deprecated.*
+
+## Tables
+
+### Tables Statistics
 
 | Metric | Count |
-|--------|-------|
-| Total Solutions | 484 |
-| Solutions with Connectors | 385 (79%) |
-| Unique Connectors | 378 |
-| Discovered Connectors⚠️ | 147 |
-| Tables Used by Solutions | 815 |
-| Content Items | 4864 |
-| Solutions with Content | 385 (79%) |
-| ASIM Parser Pairs* | 166 source pairs, 13 union pairs, 11 empty |
+|:-------|------:|
+| Total Tables Documented | 1662 |
+| Tables Used by Solutions | 781 |
+| Additional Reference Tables | 881 |
 
-*Note: 1694 total tables are documented, including 879 additional tables referenced by content items or from the Azure Monitor reference.*
+*Note: Additional reference tables are from content items or the Azure Monitor reference.*
 
-*⚠️ Discovered connectors are found in solution folders but not listed in Solution JSON definitions.*
+## Content Items
 
-*\* Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
+### Content Items Statistics
 
-## Collection Methods
+| Metric | Total | Published | Unpublished |
+|:-------|------:|----------:|------------:|
+| Content Items | 4,864 | 4,402 | 462 |
 
-| Collection Method | Total Connectors | Active Connectors* | Total Solutions | Active Solutions* |
-|:-----------------|:----------------:|:-----------------:|:---------------:|:----------------:|
-| Azure Function | 129 | 111 | 102 | 102 |
-| CCF | 123 | 122 | 109 | 109 |
-| MMA | 110 | 20 | 111 | 28 |
-| AMA | 59 | 25 | 56 | 23 |
-| Unknown (Custom Log) | 44 | 44 | 42 | 42 |
-| Native | 25 | 25 | 20 | 20 |
-| Azure Diagnostics | 17 | 17 | 17 | 17 |
-| REST API | 15 | 15 | 16 | 16 |
-| Unknown | 3 | 3 | 4 | 4 |
-| **Total** | **525** | **382** | **385** | **301** |
+### Content Items by Type
 
-*\*Active excludes connectors and solutions marked as deprecated.*
+| Type | Total | Published | Unpublished |
+|:-----|------:|----------:|------------:|
+| Analytic Rules | 2,185 | 1,921 | 264 |
+| Hunting Queries | 1,168 | 1,112 | 56 |
+| Playbooks | 592 | 532 | 60 |
+| Workbooks | 346 | 296 | 50 |
+| Parsers | 514 | 482 | 32 |
+| Watchlists | 41 | 41 | 0 |
+| Summary Rules | 18 | 18 | 0 |
 
-## Content Items by Type
+## ASIM Parsers
 
-| Type | Count |
-|:-----|------:|
-| Analytic Rules | 2,185 |
-| Hunting Queries | 1,168 |
-| Playbooks | 592 |
-| Workbooks | 346 |
-| Parsers | 514 |
-| Watchlists | 41 |
-| Summary Rules | 18 |
+### ASIM Statistics
+
+| Metric | Count |
+|:-------|------:|
+| Source Parser Pairs | 82 |
+| Union Parser Pairs | 13 |
+
+*Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
+
+---
+
+### Notes
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 ## Directory Structure
 

@@ -37,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Nozomi Networks N2OS via AMA](../connectors/nozominetworksn2osama.md), [[Deprecated] Nozomi Networks N2OS via Legacy Agent](../connectors/nozominetworksn2os.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Nozomi Networks N2OS via AMA](../connectors/nozominetworksn2osama.md) | - |
 
 ## Content Items
 

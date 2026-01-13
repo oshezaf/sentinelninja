@@ -1,4 +1,6 @@
-# AWS VPC Flow Logs
+# ⚠️ AWS VPC Flow Logs
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="AWS VPC Flow Logs Logo" width="75" height="75">
 

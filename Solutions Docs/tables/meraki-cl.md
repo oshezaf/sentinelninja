@@ -1,19 +1,15 @@
 # meraki_CL
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
-- [CiscoMeraki](../solutions/ciscomeraki.md)
 - [CustomLogsAma](../solutions/customlogsama.md)
 
-## Connectors (4)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md)
 - [Custom logs via AMA](../connectors/customlogsviaama.md)
 
 ---

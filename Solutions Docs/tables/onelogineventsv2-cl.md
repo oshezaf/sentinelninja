@@ -6,11 +6,10 @@ This table is used by the following solutions:
 
 - [OneLoginIAM](../solutions/oneloginiam.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
-- [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md)
 - [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md)
 
 ---

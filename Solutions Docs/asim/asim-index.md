@@ -9,25 +9,25 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 | Metric | Count |
 |:-------|------:|
 | **Schemas** | 11 |
-| **Source Parser Pairs*** | 166 |
+| **Source Parser Pairs*** | 82 |
 | **Union Parser Pairs*** | 13 |
-| **Empty Parsers** | 11 |
+| **Empty Parsers** | 0 |
 
 \* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
 
 ## Schemas
 
-- [AlertEvent](#alertevent) (2 source pairs, 1 union pair, 1 empty)
-- [AuditEvent](#auditevent) (17 source pairs, 1 union pair, 1 empty)
-- [Authentication](#authentication) (28 source pairs, 1 union pair, 1 empty)
-- [DhcpEvent](#dhcpevent) (2 source pairs, 1 union pair, 1 empty)
-- [Dns](#dns) (15 source pairs, 1 union pair, 1 empty)
-- [FileEvent](#fileevent) (16 source pairs, 1 union pair, 1 empty)
-- [NetworkSession](#networksession) (36 source pairs, 1 union pair, 1 empty)
-- [ProcessEvent](#processevent) (18 source pairs, 3 union pairs, 1 empty)
-- [RegistryEvent](#registryevent) (9 source pairs, 1 union pair, 1 empty)
-- [UserManagement](#usermanagement) (6 source pairs, 1 union pair, 1 empty)
-- [WebSession](#websession) (17 source pairs, 1 union pair, 1 empty)
+- [AlertEvent](#alertevent) (1 source pairs, 1 union pair)
+- [AuditEvent](#auditevent) (8 source pairs, 1 union pair)
+- [Authentication](#authentication) (14 source pairs, 1 union pair)
+- [DhcpEvent](#dhcpevent) (1 source pairs, 1 union pair)
+- [Dns](#dns) (7 source pairs, 1 union pair)
+- [FileEvent](#fileevent) (8 source pairs, 1 union pair)
+- [NetworkSession](#networksession) (18 source pairs, 1 union pair)
+- [ProcessEvent](#processevent) (8 source pairs, 3 union pairs)
+- [RegistryEvent](#registryevent) (4 source pairs, 1 union pair)
+- [UserManagement](#usermanagement) (3 source pairs, 1 union pair)
+- [WebSession](#websession) (8 source pairs, 1 union pair)
 
 ## AlertEvent
 
@@ -50,17 +50,6 @@ These are the main entry points that combine all source parsers:
 |:-------|:--------|:-------|:--------|
 | [ASimAlertEventMicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR | 1 | 0.1.0 |
 | [ASimAlertEventSentinelOneSingularity](asimalerteventsentinelonesingularity.md) | SentinelOne | 1 | 0.1.0 |
-| [vimAlertEventMicrosoftDefenderXDR](vimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR | 1 | 0.1.0 |
-| [vimAlertEventSentinelOneSingularity](vimalerteventsentinelonesingularity.md) | SentinelOne | 1 | 0.1.0 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimAlertEventEmpty](vimalerteventempty.md) | This function returns an empty ASIM Dhcp Event schema. |
-
-</details>
 
 ## AuditEvent
 
@@ -98,32 +87,6 @@ These are the main entry points that combine all source parsers:
 | [ASimAuditEventSentinelOne](asimauditeventsentinelone.md) | SentinelOne | 3 | 0.1.0 |
 | [ASimAuditEventVMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 3 | 0.2.0 |
 | [ASimAuditEventVectraXDRAudit](asimauditeventvectraxdraudit.md) | Vectra | 1 | 0.1.1 |
-| [vimAuditEventAzureActivity](vimauditeventazureactivity.md) | Microsoft Azure | 1 | 0.2 |
-| [vimAuditEventBarracudaCEF](vimauditeventbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
-| [vimAuditEventBarracudaWAF](vimauditeventbarracudawaf.md) | Barracuda WAF | 2 | 0.2.1 |
-| [vimAuditEventCiscoISE](vimauditeventciscoise.md) | Cisco ISE | 0 | 0.1 |
-| [vimAuditEventCiscoMeraki](vimauditeventciscomeraki.md) | Cisco Meraki | 2 | 0.2.1 |
-| [vimAuditEventCiscoMerakiSyslog](vimauditeventciscomerakisyslog.md) | Cisco Meraki | 2 | 0.2.1 |
-| [vimAuditEventCrowdStrikeFalconHost](vimauditeventcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
-| [vimAuditEventIllumioSaaSCore](vimauditeventillumiosaascore.md) | Illumio Core | 1 | 0.2.1 |
-| [vimAuditEventInfbloxBloxOne](vimauditeventinfbloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
-| [vimAuditEventMicrosoftEvent](vimauditeventmicrosoftevent.md) | Microsoft Windows | 4 | 0.2.1 |
-| [vimAuditEventMicrosoftExchangeAdmin365](vimauditeventmicrosoftexchangeadmin365.md) | Microsoft SharePoint | 1 | 0.2 |
-| [vimAuditEventMicrosoftSecurityEvents](vimauditeventmicrosoftsecurityevents.md) | Microsoft Windows | 5 | 0.2.1 |
-| [vimAuditEventMicrosoftWindowsEvents](vimauditeventmicrosoftwindowsevents.md) | Microsoft Windows | 5 | 0.2.1 |
-| [vimAuditEventNative](vimauditeventnative.md) | Native | 1 | 0.1.0 |
-| [vimAuditEventSentinelOne](vimauditeventsentinelone.md) | SentinelOne | 3 | 0.1.0 |
-| [vimAuditEventVMwareCarbonBlackCloud](vimauditeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 4 | 0.2.0 |
-| [vimAuditEventVectraXDRAudit](vimauditeventvectraxdraudit.md) | Vectra | 1 | 0.1.1 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimAuditEventEmpty](vimauditeventempty.md) | This function returns an empty ASIM Audit Event schema. |
-
-</details>
 
 ## Authentication
 
@@ -172,43 +135,6 @@ These are the main entry points that combine all source parsers:
 | [ASimAuthenticationSudo](asimauthenticationsudo.md) | sudo | 1 | 0.1.2 |
 | [ASimAuthenticationVMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.0 |
 | [ASimAuthenticationVectraXDRAudit](asimauthenticationvectraxdraudit.md) | Vectra | 1 | 0.1 |
-| [vimAuthenticationAADManagedIdentitySignInLogs](vimauthenticationaadmanagedidentitysigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
-| [vimAuthenticationAADNonInteractiveUserSignInLogs](vimauthenticationaadnoninteractiveusersigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
-| [vimAuthenticationAADServicePrincipalSignInLogs](vimauthenticationaadserviceprincipalsigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
-| [vimAuthenticationAWSCloudTrail](vimauthenticationawscloudtrail.md) | AWS | 1 | 0.2.2 |
-| [vimAuthenticationBarracudaWAF](vimauthenticationbarracudawaf.md) | Barracuda WAF | 2 | 0.1.2 |
-| [vimAuthenticationCiscoASA](vimauthenticationciscoasa.md) | Cisco Adaptive Security Appliance (ASA) | 2 | 0.1.1 |
-| [vimAuthenticationCiscoISE](vimauthenticationciscoise.md) | Cisco ISE | 0 | 0.1.1 |
-| [vimAuthenticationCiscoMeraki](vimauthenticationciscomeraki.md) | Cisco Meraki | 1 | 0.2.1 |
-| [vimAuthenticationCiscoMerakiSyslog](vimauthenticationciscomerakisyslog.md) | Cisco Meraki | 1 | 0.2.1 |
-| [vimAuthenticationCrowdStrikeFalconHost](vimauthenticationcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.1 |
-| [vimAuthenticationGoogleWorkspace](vimauthenticationgoogleworkspace.md) | Google Workspace | 0 | 0.1.1 |
-| [vimAuthenticationIllumioSaaSCore](vimauthenticationillumiosaascore.md) | Illumio | 1 | 0.3.0 |
-| [vimAuthenticationM365Defender](vimauthenticationm365defender.md) | M365 Defender for EndPoint | 1 | 0.1.3 |
-| [vimAuthenticationMD4IoT](vimauthenticationmd4iot.md) | Microsoft Defender for IoT | 1 | 0.1.3 |
-| [vimAuthenticationMicrosoftWindowsEvent](vimauthenticationmicrosoftwindowsevent.md) | Windows Security Events | 2 | 0.3.1 |
-| [vimAuthenticationNative](vimauthenticationnative.md) | Native | 1 | 0.1.0 |
-| [vimAuthenticationOktaSSO](vimauthenticationoktasso.md) | Okta | 1 | 0.3.0 |
-| [vimAuthenticationOktaV2](vimauthenticationoktav2.md) | Okta | 1 | 0.3.1 |
-| [vimAuthenticationPaloAltoCortexDataLake](vimauthenticationpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.1 |
-| [vimAuthenticationPostgreSQL](vimauthenticationpostgresql.md) | PostgreSQL | 1 | 0.1.4 |
-| [vimAuthenticationSalesforceSC](vimauthenticationsalesforcesc.md) | Salesforce Service Cloud | 1 | 0.1.1 |
-| [vimAuthenticationSentinelOne](vimauthenticationsentinelone.md) | SentinelOne | 2 | 0.1.1 |
-| [vimAuthenticationSigninLogs](vimauthenticationsigninlogs.md) | Microsoft Entra ID | 1 | 0.3.2 |
-| [vimAuthenticationSshd](vimauthenticationsshd.md) | OpenSSH | 1 | 0.2.4 |
-| [vimAuthenticationSu](vimauthenticationsu.md) | su | 1 | 0.2.2 |
-| [vimAuthenticationSudo](vimauthenticationsudo.md) | sudo | 1 | 0.1.1 |
-| [vimAuthenticationVMwareCarbonBlackCloud](vimauthenticationvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
-| [vimAuthenticationVectraXDRAudit](vimauthenticationvectraxdraudit.md) | Vectra | 1 | 0.1.1 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimAuthenticationEmpty](vimauthenticationempty.md) | This function returns an empty ASIM Authentication schema. |
-
-</details>
 
 ## DhcpEvent
 
@@ -231,17 +157,6 @@ These are the main entry points that combine all source parsers:
 |:-------|:--------|:-------|:--------|
 | [ASimDhcpEventInfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | Infoblox BloxOne | 0 | 0.1.0 |
 | [ASimDhcpEventNative](asimdhcpeventnative.md) | Native | 1 | 0.1.0 |
-| [vimDhcpEventInfobloxBloxOne](vimdhcpeventinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
-| [vimDhcpEventNative](vimdhcpeventnative.md) | Native | 1 | 0.1.0 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimDhcpEventEmpty](vimdhcpeventempty.md) | This function returns an empty ASIM Dhcp Event schema. |
-
-</details>
 
 ## Dns
 
@@ -256,7 +171,7 @@ These are the main entry points that combine all source parsers:
 
 ### Supported Products
 
-[Azure Firewall](asim-products-index.md#azure-firewall), [Cisco](asim-products-index.md#cisco), [Cisco Umbrella](asim-products-index.md#cisco-umbrella), [Corelight Zeek](asim-products-index.md#corelight-zeek), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [GCP Cloud DNS](asim-products-index.md#gcp-cloud-dns), [Infoblox BloxOne](asim-products-index.md#infoblox-bloxone), [Infoblox NIOS](asim-products-index.md#infoblox-nios), [Microsoft Windows Events Sysmon](asim-products-index.md#microsoft-windows-events-sysmon), [MS DNS Events](asim-products-index.md#ms-dns-events), [Native](asim-products-index.md#native), [SentinelOne](asim-products-index.md#sentinelone), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [Zscaler ZIA DNS](asim-products-index.md#zscaler-zia-dns)
+[Azure Firewall](asim-products-index.md#azure-firewall), [Cisco Umbrella](asim-products-index.md#cisco-umbrella), [Corelight Zeek](asim-products-index.md#corelight-zeek), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [GCP Cloud DNS](asim-products-index.md#gcp-cloud-dns), [Infoblox BloxOne](asim-products-index.md#infoblox-bloxone), [Infoblox NIOS](asim-products-index.md#infoblox-nios), [Microsoft Windows Events Sysmon](asim-products-index.md#microsoft-windows-events-sysmon), [MS DNS Events](asim-products-index.md#ms-dns-events), [Native](asim-products-index.md#native), [SentinelOne](asim-products-index.md#sentinelone), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [Zscaler ZIA DNS](asim-products-index.md#zscaler-zia-dns)
 
 ### Source Parsers
 
@@ -277,30 +192,6 @@ These are the main entry points that combine all source parsers:
 | [ASimDnsSentinelOne](asimdnssentinelone.md) | SentinelOne | 1 | 0.1.0 |
 | [ASimDnsVectraAI](asimdnsvectraai.md) | Vectra AI Streams | 1 | 0.1.1 |
 | [ASimDnsZscalerZIA](asimdnszscalerzia.md) | Zscaler ZIA DNS | 1 | 0.6 |
-| [vimDnsAzureFirewall](vimdnsazurefirewall.md) | Azure Firewall | 2 | 0.4.0 |
-| [vimDnsCiscoUmbrella](vimdnsciscoumbrella.md) | Cisco | 1 | 0.3 |
-| [vimDnsCorelightZeek](vimdnscorelightzeek.md) | Corelight Zeek | 1 | 0.5 |
-| [vimDnsFortinetFortiGate](vimdnsfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.1.2 |
-| [vimDnsGcp](vimdnsgcp.md) | GCP Cloud DNS | 1 | 0.4 |
-| [vimDnsInfobloxBloxOne](vimdnsinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
-| [vimDnsInfobloxNIOS](vimdnsinfobloxnios.md) | Infoblox NIOS | 1 | 0.5.1 |
-| [vimDnsMicrosoftNXlog](vimdnsmicrosoftnxlog.md) | MS DNS Events | 1 | 0.5.0 |
-| [vimDnsMicrosoftOMS](vimdnsmicrosoftoms.md) | MS DNS Events | 1 | 0.4 |
-| [vimDnsMicrosoftSysmon](vimdnsmicrosoftsysmon.md) | Microsoft Windows Events Sysmon | 1 | 0.5.1 |
-| [vimDnsMicrosoftSysmonWindowsEvent](vimdnsmicrosoftsysmonwindowsevent.md) | Microsoft Windows Events Sysmon | 1 | 0.5.1 |
-| [vimDnsNative](vimdnsnative.md) | Native | 1 | 0.6.1 |
-| [vimDnsSentinelOne](vimdnssentinelone.md) | SentinelOne | 1 | 0.1.0 |
-| [vimDnsVectraAI](vimdnsvectraai.md) | Vectra AI Streams | 1 | 0.1.1 |
-| [vimDnsZscalerZIA](vimdnszscalerzia.md) | Zscaler ZIA DNS | 1 | 0.4 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimDnsEmpty](vimdnsempty.md) | This function returns an empty ASIM DNS activity schema. |
-
-</details>
 
 ## FileEvent
 
@@ -337,31 +228,6 @@ These are the main entry points that combine all source parsers:
 | [ASimFileEventNative](asimfileeventnative.md) | Native | 1 | 0.1.1 |
 | [ASimFileEventSentinelOne](asimfileeventsentinelone.md) | SentinelOne | 1 | 0.1.0 |
 | [ASimFileEventVMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
-| [vimFileEventAzureBlobStorage](vimfileeventazureblobstorage.md) | Microsoft Azure Blob Storage | 1 | 0.1.1 |
-| [vimFileEventAzureFileStorage](vimfileeventazurefilestorage.md) | Microsoft Azure File Storage | 1 | 0.1.1 |
-| [vimFileEventAzureQueueStorage](vimfileeventazurequeuestorage.md) | Microsoft Azure Queue Storage | 1 | 0.1.1 |
-| [vimFileEventAzureTableStorage](vimfileeventazuretablestorage.md) | Microsoft Azure Table Storage | 1 | 0.1.1 |
-| [vimFileEventGoogleWorkspace](vimfileeventgoogleworkspace.md) | Google Workspace | 0 | 0.1.0 |
-| [vimFileEventLinuxSysmonFileCreated](vimfileeventlinuxsysmonfilecreated.md) | Microsoft Sysmon for Linux | 1 | 0.2.1 |
-| [vimFileEventLinuxSysmonFileDeleted](vimfileeventlinuxsysmonfiledeleted.md) | Microsoft Sysmon for Linux | 1 | 0.2.1 |
-| [vimFileEventMicrosoft365D](vimfileeventmicrosoft365d.md) | Microsoft 365 Defender for EndPoint | 1 | 0.2.1 |
-| [vimFileEventMicrosoftSecurityEvents](vimfileeventmicrosoftsecurityevents.md) | Microsoft Windows Events | 1 | 0.2.0 |
-| [vimFileEventMicrosoftSharePoint](vimfileeventmicrosoftsharepoint.md) | Microsoft SharePoint | 1 | 0.3.1 |
-| [vimFileEventMicrosoftSysmon](vimfileeventmicrosoftsysmon.md) | Windows Sysmon | 1 | 0.5.1 |
-| [vimFileEventMicrosoftSysmonWindowsEvent](vimfileeventmicrosoftsysmonwindowsevent.md) | Windows Sysmon | 1 | 0.5.1 |
-| [vimFileEventMicrosoftWindowsEvents](vimfileeventmicrosoftwindowsevents.md) | Microsoft Windows Events | 1 | 0.2.0 |
-| [vimFileEventNative](vimfileeventnative.md) | Native | 1 | 0.1.1 |
-| [vimFileEventSentinelOne](vimfileeventsentinelone.md) | SentinelOne | 1 | 0.1.1 |
-| [vimFileEventVMwareCarbonBlackCloud](vimfileeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimFileEventEmpty](vimfileeventempty.md) | This function returns an empty ASIM File Event schema. |
-
-</details>
 
 ## NetworkSession
 
@@ -418,51 +284,6 @@ These are the main entry points that combine all source parsers:
 | [ASimNetworkSessionVectraAI](asimnetworksessionvectraai.md) | Vectra AI Streams | 1 | 0.2 |
 | [ASimNetworkSessionWatchGuardFirewareOS](asimnetworksessionwatchguardfirewareos.md) | WatchGuard Fireware OS | 1 | 0.1.4 |
 | [ASimNetworkSessionZscalerZIA](asimnetworksessionzscalerzia.md) | Zscaler ZIA Firewall | 1 | 0.4 |
-| [vimNetworkSessionAWSVPC](vimnetworksessionawsvpc.md) | AWS VPC | 1 | 0.3.1 |
-| [vimNetworkSessionAppGateSDP](vimnetworksessionappgatesdp.md) | AppGate SDP | 1 | 0.2.0 |
-| [vimNetworkSessionAzureFirewall](vimnetworksessionazurefirewall.md) | Azure Firewall | 7 | 0.2.0 |
-| [vimNetworkSessionAzureNSG](vimnetworksessionazurensg.md) | Azure NSG flows | 1 | 0.1.1 |
-| [vimNetworkSessionBarracudaCEF](vimnetworksessionbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
-| [vimNetworkSessionBarracudaWAF](vimnetworksessionbarracudawaf.md) | Barracuda WAF | 1 | 0.2.1 |
-| [vimNetworkSessionCheckPointFirewall](vimnetworksessioncheckpointfirewall.md) | CheckPointFirewall | 1 | 1.2.0 |
-| [vimNetworkSessionCiscoASA](vimnetworksessionciscoasa.md) | CiscoASA | 1 | 1.1.0 |
-| [vimNetworkSessionCiscoFirepower](vimnetworksessionciscofirepower.md) | Cisco Firepower | 1 | 0.1.0 |
-| [vimNetworkSessionCiscoISE](vimnetworksessionciscoise.md) | Cisco ISE | 0 | 1.1.0 |
-| [vimNetworkSessionCiscoMeraki](vimnetworksessionciscomeraki.md) | Cisco Meraki | 2 | 1.2.2 |
-| [vimNetworkSessionCiscoMerakiSyslog](vimnetworksessionciscomerakisyslog.md) | Cisco Meraki | 2 | 1.2.2 |
-| [vimNetworkSessionCorelightZeek](vimnetworksessioncorelightzeek.md) | Corelight Zeek | 1 | 0.2.1 |
-| [vimNetworkSessionCrowdStrikeFalconHost](vimnetworksessioncrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
-| [vimNetworkSessionForcePointFirewall](vimnetworksessionforcepointfirewall.md) | ForcePointFirewall | 1 | 0.1 |
-| [vimNetworkSessionFortinetFortiGate](vimnetworksessionfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.6.0 |
-| [vimNetworkSessionIllumioSaaSCore](vimnetworksessionillumiosaascore.md) | Illumio SaaS Core | 1 | 0.1.0 |
-| [vimNetworkSessionLinuxSysmon](vimnetworksessionlinuxsysmon.md) | Sysmon for Linux | 1 | 0.4 |
-| [vimNetworkSessionMD4IoTAgent](vimnetworksessionmd4iotagent.md) | Microsoft Defender for IoT | 1 | 0.2.1 |
-| [vimNetworkSessionMD4IoTSensor](vimnetworksessionmd4iotsensor.md) | Microsoft Defender for IoT | 0 | 0.2.1 |
-| [vimNetworkSessionMicrosoft365Defender](vimnetworksessionmicrosoft365defender.md) | M365 Defender for Endpoint | 1 | 0.4 |
-| [vimNetworkSessionMicrosoftSecurityEventFirewall](vimnetworksessionmicrosoftsecurityeventfirewall.md) | Windows Firewall | 1 | 0.5.0 |
-| [vimNetworkSessionMicrosoftSysmon](vimnetworksessionmicrosoftsysmon.md) | Windows Sysmon | 1 | 0.1.1 |
-| [vimNetworkSessionMicrosoftSysmonWindowsEvent](vimnetworksessionmicrosoftsysmonwindowsevent.md) | Windows Sysmon | 1 | 0.1.1 |
-| [vimNetworkSessionMicrosoftWindowsEventFirewall](vimnetworksessionmicrosoftwindowseventfirewall.md) | Windows Firewall | 1 | 0.5.0 |
-| [vimNetworkSessionNTANetAnalytics](vimnetworksessionntanetanalytics.md) | Azure NTANetAnalytics | 1 | 0.1.0 |
-| [vimNetworkSessionNative](vimnetworksessionnative.md) | Native | 1 | 0.3 |
-| [vimNetworkSessionPaloAltoCEF](vimnetworksessionpaloaltocef.md) | Palo Alto PanOS | 1 | 0.7.2 |
-| [vimNetworkSessionPaloAltoCortexDataLake](vimnetworksessionpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.1 |
-| [vimNetworkSessionSentinelOne](vimnetworksessionsentinelone.md) | SentinelOne | 1 | 0.1.0 |
-| [vimNetworkSessionSonicWallFirewall](vimnetworksessionsonicwallfirewall.md) | SonicWall | 1 | 0.1.0 |
-| [vimNetworkSessionVMConnection](vimnetworksessionvmconnection.md) | VMConnection | 1 | 0.2.2 |
-| [vimNetworkSessionVMwareCarbonBlackCloud](vimnetworksessionvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 2 | 0.1.1 |
-| [vimNetworkSessionVectraAI](vimnetworksessionvectraai.md) | Vectra AI Streams | 1 | 0.2 |
-| [vimNetworkSessionWatchGuardFirewareOS](vimnetworksessionwatchguardfirewareos.md) | WatchGuard Fireware OS | 1 | 0.1.5 |
-| [vimNetworkSessionZscalerZIA](vimnetworksessionzscalerzia.md) | Zscaler ZIA Firewall | 1 | 0.4 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimNetworkSessionEmpty](vimnetworksessionempty.md) | This function returns an empty ASIM Network Session schema |
-
-</details>
 
 ## ProcessEvent
 
@@ -504,34 +325,6 @@ These are the main entry points that combine all source parsers:
 | [ASimProcessTerminateMicrosoftSecurityEvents](asimprocessterminatemicrosoftsecurityevents.md) | Security Events | 1 | 0.2 |
 | [ASimProcessTerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md) | Security Events | 1 | 0.2 |
 | [ASimProcessTerminateVMwareCarbonBlackCloud](asimprocessterminatevmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.0 |
-| [vimProcessCreateLinuxSysmon](vimprocesscreatelinuxsysmon.md) | Sysmon for Linux | 1 | 0.3.0 |
-| [vimProcessCreateMD4IoT](vimprocesscreatemd4iot.md) | Microsoft Defender for IoT | 1 | 0.1.0 |
-| [vimProcessCreateMicrosoftSecurityEvents](vimprocesscreatemicrosoftsecurityevents.md) | Security Events | 0 | 0.2.0 |
-| [vimProcessCreateMicrosoftWindowsEvents](vimprocesscreatemicrosoftwindowsevents.md) | Security Events | 1 | 0.3 |
-| [vimProcessCreateSentinelOne](vimprocesscreatesentinelone.md) | SentinelOne | 1 | 0.1.0 |
-| [vimProcessCreateTrendMicroVisionOne](vimprocesscreatetrendmicrovisionone.md) | Trend Micro Vision One | 1 | 0.1.0 |
-| [vimProcessCreateVMwareCarbonBlackCloud](vimprocesscreatevmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 2 | 0.1.1 |
-| [vimProcessEventCreateMicrosoftSysmon](vimprocesseventcreatemicrosoftsysmon.md) | Sysmon | 1 | 0.5.1 |
-| [vimProcessEventCreateMicrosoftSysmonWindowsEvent](vimprocesseventcreatemicrosoftsysmonwindowsevent.md) | Sysmon | 1 | 0.5.1 |
-| [vimProcessEventMD4IoT](vimprocesseventmd4iot.md) | Microsoft Defender for IoT | 1 | 0.2.0 |
-| [vimProcessEventMicrosoft365D](vimprocesseventmicrosoft365d.md) | Microsoft 365 Defender for endpoint | 1 | 0.2.0 |
-| [vimProcessEventNative](vimprocesseventnative.md) | Native | 1 | 0.1.0 |
-| [vimProcessEventTerminateMicrosoftSysmon](vimprocesseventterminatemicrosoftsysmon.md) | Microsoft Windows Events Sysmon | 1 | 0.4.1 |
-| [vimProcessEventTerminateMicrosoftSysmonWindowsEvent](vimprocesseventterminatemicrosoftsysmonwindowsevent.md) | Microsoft Windows Events Sysmon | 1 | 0.4.1 |
-| [vimProcessTerminateLinuxSysmon](vimprocessterminatelinuxsysmon.md) | Sysmon for Linux | 1 | 0.2.0 |
-| [vimProcessTerminateMD4IoT](vimprocessterminatemd4iot.md) | Microsoft Defender for IoT | 1 | 0.2.0 |
-| [vimProcessTerminateMicrosoftSecurityEvents](vimprocessterminatemicrosoftsecurityevents.md) | Security Events | 1 | 0.3 |
-| [vimProcessTerminateMicrosoftWindowsEvents](vimprocessterminatemicrosoftwindowsevents.md) | Security Events | 1 | 0.3 |
-| [vimProcessTerminateVMwareCarbonBlackCloud](vimprocessterminatevmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.0 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimProcessEmpty](vimprocessempty.md) | This function returns an empty ASIM Process Event schema |
-
-</details>
 
 ## RegistryEvent
 
@@ -561,24 +354,6 @@ These are the main entry points that combine all source parsers:
 | [ASimRegistryEventSentinelOne](asimregistryeventsentinelone.md) | SentinelOne | 1 | 0.1.0 |
 | [ASimRegistryEventTrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md) | Trend Micro Vision One | 1 | 0.1.0 |
 | [ASimRegistryEventVMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
-| [vimRegistryEventMicrosoft365D](vimregistryeventmicrosoft365d.md) | Microsoft 365 Defender for Endpoint | 1 | 0.1.2 |
-| [vimRegistryEventMicrosoftSecurityEvent](vimregistryeventmicrosoftsecurityevent.md) | Security Events | 1 | 0.3.1 |
-| [vimRegistryEventMicrosoftSysmon](vimregistryeventmicrosoftsysmon.md) | Microsoft Sysmon | 1 | 0.3.1 |
-| [vimRegistryEventMicrosoftSysmonWindowsEvent](vimregistryeventmicrosoftsysmonwindowsevent.md) | Microsoft Sysmon | 1 | 0.3.1 |
-| [vimRegistryEventMicrosoftWindowsEvent](vimregistryeventmicrosoftwindowsevent.md) | Security Events | 1 | 0.3.1 |
-| [vimRegistryEventNative](vimregistryeventnative.md) | Native | 1 | 0.1.0 |
-| [vimRegistryEventSentinelOne](vimregistryeventsentinelone.md) | SentinelOne | 1 | 0.1.1 |
-| [vimRegistryEventTrendMicroVisionOne](vimregistryeventtrendmicrovisionone.md) | Trend Micro Vision One | 1 | 0.1.0 |
-| [vimRegistryEventVMwareCarbonBlackCloud](vimregistryeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimRegistryEventEmpty](vimregistryeventempty.md) | This function returns an empty ASIM Registry Event schema |
-
-</details>
 
 ## UserManagement
 
@@ -605,21 +380,6 @@ These are the main entry points that combine all source parsers:
 | [ASimUserManagementMicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md) | Microsoft Windows Event | 1 | 0.2.1 |
 | [ASimUserManagementNative](asimusermanagementnative.md) | Native | 1 | 0.1.0 |
 | [ASimUserManagementSentinelOne](asimusermanagementsentinelone.md) | SentinelOne | 1 | 0.1.1 |
-| [vimUserManagementCiscoISE](vimusermanagementciscoise.md) | Cisco ISE | 0 | 0.1.2 |
-| [vimUserManagementLinuxAuthpriv](vimusermanagementlinuxauthpriv.md) | Microsoft | 1 | 0.1.1 |
-| [vimUserManagementMicrosoftSecurityEvent](vimusermanagementmicrosoftsecurityevent.md) | Microsoft | 2 | 0.2.0 |
-| [vimUserManagementMicrosoftWindowsEvent](vimusermanagementmicrosoftwindowsevent.md) | Microsoft | 1 | 0.2.0 |
-| [vimUserManagementNative](vimusermanagementnative.md) | Native | 1 | 0.1.0 |
-| [vimUserManagementSentinelOne](vimusermanagementsentinelone.md) | SentinelOne | 1 | 0.1.1 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimUserManagementEmpty](vimusermanagementempty.md) | This function returns an empty ASIM UserManagement schema |
-
-</details>
 
 ## WebSession
 
@@ -634,7 +394,7 @@ These are the main entry points that combine all source parsers:
 
 ### Supported Products
 
-[Apache HTTP Server](asim-products-index.md#apache-http-server), [Azure Firewall](asim-products-index.md#azure-firewall), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Firepower](asim-products-index.md#cisco-firepower), [Cisco Meraki](asim-products-index.md#cisco-meraki), [Citrix NetScaler](asim-products-index.md#citrix-netscaler), [F5 BIG-IP Application Security Manager (ASM)](asim-products-index.md#f5-big-ip-application-security-manager-asm), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [Internet Information Services (IIS)](asim-products-index.md#internet-information-services-iis), [Native](asim-products-index.md#native), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto Networks](asim-products-index.md#palo-alto-networks), [SonicWall](asim-products-index.md#sonicwall), [Squid Proxy](asim-products-index.md#squid-proxy), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [Zscaler ZIA](asim-products-index.md#zscaler-zia), [Zscaler ZIA Proxy](asim-products-index.md#zscaler-zia-proxy)
+[Apache HTTP Server](asim-products-index.md#apache-http-server), [Azure Firewall](asim-products-index.md#azure-firewall), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Firepower](asim-products-index.md#cisco-firepower), [Cisco Meraki](asim-products-index.md#cisco-meraki), [Citrix NetScaler](asim-products-index.md#citrix-netscaler), [F5 BIG-IP Application Security Manager (ASM)](asim-products-index.md#f5-big-ip-application-security-manager-asm), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [Internet Information Services (IIS)](asim-products-index.md#internet-information-services-iis), [Native](asim-products-index.md#native), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto Networks](asim-products-index.md#palo-alto-networks), [SonicWall](asim-products-index.md#sonicwall), [Squid Proxy](asim-products-index.md#squid-proxy), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [Zscaler ZIA](asim-products-index.md#zscaler-zia)
 
 ### Source Parsers
 
@@ -657,32 +417,6 @@ These are the main entry points that combine all source parsers:
 | [ASimWebSessionSquidProxy](asimwebsessionsquidproxy.md) | Squid Proxy | 1 | 0.4.0 |
 | [ASimWebSessionVectraAI](asimwebsessionvectraai.md) | Vectra AI Streams | 1 | 0.2 |
 | [ASimWebSessionZscalerZIA](asimwebsessionzscalerzia.md) | Zscaler ZIA | 1 | 0.4.1 |
-| [vimWebSessionApacheHTTPServer](vimwebsessionapachehttpserver.md) | Apache HTTP Server | 1 | 0.1 |
-| [vimWebSessionAzureFirewall](vimwebsessionazurefirewall.md) | Azure Firewall | 1 | 0.1.0 |
-| [vimWebSessionBarracudaCEF](vimwebsessionbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
-| [vimWebSessionBarracudaWAF](vimwebsessionbarracudawaf.md) | Barracuda WAF | 1 | 0.2.2 |
-| [vimWebSessionCiscoFirepower](vimwebsessionciscofirepower.md) | Cisco Firepower | 1 | 0.1.0 |
-| [vimWebSessionCiscoMeraki](vimwebsessionciscomeraki.md) | Cisco Meraki | 2 | 0.1.1 |
-| [vimWebSessionCitrixNetScaler](vimwebsessioncitrixnetscaler.md) | Citrix NetScaler | 1 | 0.1.1 |
-| [vimWebSessionF5ASM](vimwebsessionf5asm.md) | F5 BIG-IP Application Security Manager (ASM) | 1 | 0.1.0 |
-| [vimWebSessionFortinetFortiGate](vimwebsessionfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.3.0 |
-| [vimWebSessionIIS](vimwebsessioniis.md) | Internet Information Services (IIS) | 1 | 0.1.1 |
-| [vimWebSessionNative](vimwebsessionnative.md) | Native | 1 | 0.1 |
-| [vimWebSessionPaloAltoCEF](vimwebsessionpaloaltocef.md) | Palo Alto Networks | 1 | 0.2.2 |
-| [vimWebSessionPaloAltoCortexDataLake](vimwebsessionpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.1 |
-| [vimWebSessionSonicWallFirewall](vimwebsessionsonicwallfirewall.md) | SonicWall | 1 | 0.1.1 |
-| [vimWebSessionSquidProxy](vimwebsessionsquidproxy.md) | Squid Proxy | 1 | 0.7.0 |
-| [vimWebSessionVectraAI](vimwebsessionvectraai.md) | Vectra AI Streams | 1 | 0.2 |
-| [vimWebSessionZscalerZIA](vimwebsessionzscalerzia.md) | Zscaler ZIA Proxy | 1 | 0.6.1 |
-
-<details>
-<summary>Empty Parsers (1 parser)</summary>
-
-| Parser | Description |
-|:-------|:------------|
-| [vimWebSessionEmpty](vimwebsessionempty.md) | This function returns an empty ASIM Web Session schema |
-
-</details>
 
 ---
 

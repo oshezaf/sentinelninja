@@ -23,9 +23,9 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser |
 |:--------|:--------------|
-| Microsoft | [_Im_AlertEvent_Empty](vimalerteventempty.md) |
-| Microsoft Defender XDR | [_Im_AlertEvent_MicrosoftDefenderXDR](vimalerteventmicrosoftdefenderxdr.md) |
-| SentinelOne | [_Im_AlertEvent_SentinelOneSingularity](vimalerteventsentinelonesingularity.md) |
+|  | [_Im_AlertEvent_Empty](im-alertevent-empty.md) |
+|  | [_Im_AlertEvent_MicrosoftDefenderXDR](im-alertevent-microsoftdefenderxdr.md) |
+|  | [_Im_AlertEvent_SentinelOneSingularity](im-alertevent-sentinelonesingularity.md) |
 
 ## Parameters
 

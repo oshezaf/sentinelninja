@@ -39,7 +39,7 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | - |
-| [`BoxEvents_CL`](../tables/boxevents-cl.md) | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | - |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) | [Box](../connectors/boxdataconnector.md) | - |
 
 ## Content Items
 

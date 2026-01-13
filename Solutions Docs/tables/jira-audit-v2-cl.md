@@ -6,11 +6,10 @@ This table is used by the following solutions:
 
 - [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
-- [Atlassian Jira Audit](../connectors/jiraauditapi.md)
 - [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md)
 
 ---

@@ -37,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] OSSEC via AMA](../connectors/ossecama.md), [[Deprecated] OSSEC via Legacy Agent](../connectors/ossec.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] OSSEC via AMA](../connectors/ossecama.md) | - |
 
 ## Content Items
 

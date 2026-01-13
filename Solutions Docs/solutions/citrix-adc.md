@@ -30,14 +30,6 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-## Tables Used
-
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Citrix ADC (former NetScaler)](../connectors/citrixadc.md) | - |
-
 ## Content Items
 
 This solution includes **2 content item(s)**:

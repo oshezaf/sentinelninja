@@ -12,16 +12,6 @@ Semperis Directory Services Protector data connector allows for the export of it
 
 It provides a data parser to manipulate the Windows event logs more easily. The different workbooks ease your Active Directory security monitoring and provide different ways to visualize the data. The analytic templates allow to automate responses regarding different events, exposures, or attacks.
 
-## Tables Ingested
-
-This connector ingests data into the following tables:
-
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
-
-> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
-
 ## Permissions
 
 **Resource Provider Permissions:**

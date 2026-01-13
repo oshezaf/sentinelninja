@@ -42,7 +42,7 @@ This table is used by the following solutions:
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
-## Connectors (6)
+## Connectors (5)
 
 This table is ingested by the following connectors:
 
@@ -50,7 +50,6 @@ This table is ingested by the following connectors:
 - [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md)
 - [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md)
 - [Security Events via Legacy Agent](../connectors/securityevents.md)
-- [Semperis Directory Services Protector](../connectors/semperisdsp.md)
 - [Windows Security Events via AMA](../connectors/windowssecurityevents.md)
 
 ---

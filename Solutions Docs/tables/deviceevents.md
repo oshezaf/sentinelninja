@@ -11,11 +11,10 @@ Multiple event types, including events triggered by security controls such as Mi
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table) |
 
-## Solutions (10)
+## Solutions (9)
 
 This table is used by the following solutions:
 
-- [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
@@ -26,11 +25,10 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md)
 - [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md)
 
 ---

@@ -17,6 +17,7 @@ This connector ingests data into the following tables:
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ |
+| [`SecurityBridge_CL`](../tables/securitybridge-cl.md) | — | — |
 
 ## Permissions
 

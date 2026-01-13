@@ -30,16 +30,6 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-## Tables Used
-
-This solution uses **3 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`DeviceEvents`](../tables/deviceevents.md) | [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | - |
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | - |
-| [`syslog`](../tables/syslog.md) | [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | - |
-
 ## Content Items
 
 This solution includes **2 content item(s)**:

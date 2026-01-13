@@ -30,15 +30,6 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-## Tables Used
-
-This solution uses **2 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`EVENT`](../tables/event.md) | [[Deprecated] Cisco UCS](../connectors/ciscoucs.md) | - |
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Cisco UCS](../connectors/ciscoucs.md) | - |
-
 ## Content Items
 
 This solution includes **1 content item(s)**:

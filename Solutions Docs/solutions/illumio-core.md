@@ -1,4 +1,6 @@
-# Illumio Core
+# ⚠️ Illumio Core
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="Illumio Core Logo" width="75" height="75">
 
@@ -37,7 +39,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Illumio Core via AMA](../connectors/illumiocoreama.md), [[Deprecated] Illumio Core via Legacy Agent](../connectors/illumiocore.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Illumio Core via AMA](../connectors/illumiocoreama.md) | - |
 
 ## Content Items
 

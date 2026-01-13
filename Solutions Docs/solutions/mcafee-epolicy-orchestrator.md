@@ -1,4 +1,6 @@
-# McAfee ePolicy Orchestrator
+# ⚠️ McAfee ePolicy Orchestrator
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/McAfee%20ePolicy%20Orchestrator/Workbooks/Images/Logo/mcafee_logo.svg" alt="McAfee ePolicy Orchestrator Logo" width="75" height="75">
 
@@ -29,14 +31,6 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 - [[Deprecated] McAfee ePolicy Orchestrator (ePO)](../connectors/mcafeeepo.md) ⚠️
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
-
-## Tables Used
-
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] McAfee ePolicy Orchestrator (ePO)](../connectors/mcafeeepo.md) | - |
 
 ## Content Items
 

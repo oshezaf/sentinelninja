@@ -1,4 +1,6 @@
-# Citrix Analytics for Security
+# ⚠️ Citrix Analytics for Security
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix-logo-circle-black.svg" alt="Citrix Analytics for Security Logo" width="75" height="75">
 

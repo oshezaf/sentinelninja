@@ -33,12 +33,11 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] GitLab](../connectors/gitlab.md) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 
 ## Content Items

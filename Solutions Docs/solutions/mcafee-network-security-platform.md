@@ -1,4 +1,6 @@
-# McAfee Network Security Platform
+# ⚠️ McAfee Network Security Platform
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="McAfee Network Security Platform Logo" width="75" height="75">
 
@@ -29,14 +31,6 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 - [[Deprecated] McAfee Network Security Platform](../connectors/mcafeensp.md) ⚠️
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
-
-## Tables Used
-
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] McAfee Network Security Platform](../connectors/mcafeensp.md) | - |
 
 ## Content Items
 

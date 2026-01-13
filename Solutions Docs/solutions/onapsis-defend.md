@@ -28,10 +28,11 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`ABAPAuditLog`](../tables/abapauditlog.md) | [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md) | - |
 | [`Onapsis_Defend_CL`](../tables/onapsis-defend-cl.md) | [Onapsis Defend Integration](../connectors/onapsis.md), [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md) | - |
 
 ## Release Notes

@@ -30,14 +30,6 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-## Tables Used
-
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Ivanti Unified Endpoint Management](../connectors/ivantiuem.md) | - |
-
 ## Content Items
 
 This solution includes **1 content item(s)**:

@@ -1,4 +1,6 @@
-# Microsoft Copilot
+# ⚠️ Microsoft Copilot
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Copilot_logo.svg" alt="Microsoft Copilot Logo" width="75" height="75">
 
@@ -25,9 +27,17 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-**This solution does not include data connectors.**
+This solution provides **1 data connector(s)**:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Microsoft Copilot](../connectors/microsoftcopilot.md)
+
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`CopilotActivity`](../tables/copilotactivity.md) | [Microsoft Copilot](../connectors/microsoftcopilot.md) | - |
 
 ## Release Notes
 

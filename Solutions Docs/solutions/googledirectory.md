@@ -1,4 +1,6 @@
-# GoogleDirectory
+# ⚠️ GoogleDirectory
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
 
 ## Solution Information
 

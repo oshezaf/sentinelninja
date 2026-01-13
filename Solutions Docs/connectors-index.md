@@ -17,9 +17,13 @@ Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you
 
 ## Overview
 
-This page lists **525 unique connectors** across all solutions.
+This page lists **529 unique connectors** across all solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [V](#v) | [W](#w) | [Z](#z) | [Deprecated](#deprecated-connectors)
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 ## #
 
@@ -33,41 +37,41 @@ This page lists **525 unique connectors** across all solutions.
 | [1Password (Serverless)](connectors/1passwordccpdefinition.md) | 1Password | CCF | 1 | [1Password](solutions/1password.md) |
 | [[Recommended] Infoblox Cloud Data Connector via AMA](connectors/infobloxclouddataconnectorama.md) | Infoblox | AMA | 1 | [Infoblox](solutions/infoblox.md) |
 | [[Recommended] Infoblox SOC Insight Data Connector via AMA](connectors/infobloxsocinsightsdataconnector-ama.md) | Infoblox | AMA | 1 | [Infoblox](solutions/infoblox.md) |
-| [[Recommended] Vectra AI Stream via AMA](connectors/vectrastreamama.md) | Vectra AI | AMA | 17 | [Vectra AI Stream](solutions/vectra-ai-stream.md) |
+| [[Recommended] Vectra AI Stream via AMA](connectors/vectrastreamama.md) | Vectra AI | AMA | 3 | [Vectra AI Stream](solutions/vectra-ai-stream.md) |
 
 ## A
 
 | Connector | Publisher | Collection Method | Tables | Solution |
 |:----------|:----------|:------------------|:------:|:---------|
 | [AbnormalSecurity ](connectors/abnormalsecurity.md) | AbnormalSecurity | Azure Function | 2 | [AbnormalSecurity](solutions/abnormalsecurity.md) |
-| [Agari Phishing Defense and Brand Protection](connectors/agari.md) | Agari | Azure Function | 3 | [Agari](solutions/agari.md) |
+| [Agari Phishing Defense and Brand Protection](connectors/agari.md) ⚠️ | Agari | Azure Function | 3 | [Agari](solutions/agari.md) |
 | [AI Vectra Stream via Legacy Agent](connectors/aivectrastream.md) | Vectra AI | MMA | 1 | [Vectra AI Stream](solutions/vectra-ai-stream.md) |
 | [AIShield](connectors/boschaishield.md) | Bosch | Unknown (Custom Log) | 1 | [AIShield AI Security Monitoring](solutions/aishield-ai-security-monitoring.md) |
 | [Alibaba Cloud ActionTrail (via Codeless Connector Framework)](connectors/alicloudactiontrailccpdefinition.md) | Microsoft | CCF | 1 | [Alibaba Cloud ActionTrail](solutions/alibaba-cloud-actiontrail.md) |
 | [AliCloud](connectors/alicloud.md) | AliCloud | Azure Function | 1 | [Alibaba Cloud](solutions/alibaba-cloud.md) |
-| [Alsid for Active Directory](connectors/alsidforad.md) | Alsid | MMA | 1 | [Alsid For AD](solutions/alsid-for-ad.md) |
+| [Alsid for Active Directory](connectors/alsidforad.md) ⚠️ | Alsid | MMA | 1 | [Alsid For AD](solutions/alsid-for-ad.md) |
 | [Amazon Web Services](connectors/aws.md) | Amazon | Native | 1 | [Amazon Web Services](solutions/amazon-web-services.md) |
 | [Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)](connectors/awscloudfrontccpdefinition.md) | Microsoft | CCF | 1 | [AWS CloudFront](solutions/aws-cloudfront.md) |
 | [Amazon Web Services NetworkFirewall (via Codeless Connector Framework)](connectors/awsnetworkfirewallccpdefinition.md) | Microsoft | CCF | 3 | [Amazon Web Services NetworkFirewall](solutions/amazon-web-services-networkfirewall.md) |
 | [Amazon Web Services S3](connectors/awss3.md) | Amazon | Native | 4 | [Amazon Web Services](solutions/amazon-web-services.md) |
 | [Amazon Web Services S3 DNS Route53 (via Codeless Connector Framework)](connectors/awsroute53resolverccpdefinition.md) | Microsoft | CCF | 1 | [Amazon Web Services Route 53](solutions/amazon-web-services-route-53.md) |
-| [Amazon Web Services S3 VPC Flow Logs](connectors/awss3vpcflowlogsparquetdefinition.md) | Microsoft | CCF | 1 | [AWS VPC Flow Logs](solutions/aws-vpc-flow-logs.md) |
+| [Amazon Web Services S3 VPC Flow Logs](connectors/awss3vpcflowlogsparquetdefinition.md) ⚠️ | Microsoft | CCF | 1 | [AWS VPC Flow Logs](solutions/aws-vpc-flow-logs.md) |
 | [Amazon Web Services S3 WAF](connectors/awss3wafccpdefinition.md) | Microsoft | CCF | 1 | [Amazon Web Services](solutions/amazon-web-services.md) |
 | [Anvilogic](connectors/anvilogicccfdefinition.md) | Anvilogic | CCF | 1 | [Anvilogic](solutions/anvilogic.md) |
-| [API Protection](connectors/42crunchapiprotection.md) | 42Crunch | REST API | 1 | [42Crunch API Protection](solutions/42crunch-api-protection.md) |
+| [API Protection](connectors/42crunchapiprotection.md) ⚠️ | 42Crunch | REST API | 1 | [42Crunch API Protection](solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](connectors/argoscloudsecurity.md) | ARGOS Cloud Security | Unknown (Custom Log) | 1 | [ARGOSCloudSecurity](solutions/argoscloudsecurity.md) |
 | [Armis Activities](connectors/armisactivities.md) | Armis | Azure Function | 1 | [Armis](solutions/armis.md) |
 | [Armis Alerts](connectors/armisalerts.md) | Armis | Azure Function | 1 | [Armis](solutions/armis.md) |
 | [Armis Alerts Activities](connectors/armisalertsactivities.md) | Armis | Azure Function | 2 | [Armis](solutions/armis.md) |
 | [Armis Devices](connectors/armisdevices.md) | Armis | Azure Function | 1 | [Armis](solutions/armis.md) |
-| [Armorblox](connectors/armorblox.md) | Armorblox | Azure Function | 1 | [Armorblox](solutions/armorblox.md) |
+| [Armorblox](connectors/armorblox.md) ⚠️ | Armorblox | Azure Function | 1 | [Armorblox](solutions/armorblox.md) |
 | [Atlassian Beacon Alerts](connectors/atlassianbeaconalerts.md) | DEFEND Ltd. | Unknown (Custom Log) | 1 | [Integration for Atlassian Beacon](solutions/integration-for-atlassian-beacon.md) |
 | [Atlassian Confluence](connectors/atlassianconfluence.md) | Atlassian | CCF | 1 | [AtlassianConfluenceAudit](solutions/atlassianconfluenceaudit.md) |
-| [Atlassian Jira Audit](connectors/jiraauditapi.md) | Atlassian | Azure Function | 2 | [AtlassianJiraAudit](solutions/atlassianjiraaudit.md) |
+| [Atlassian Jira Audit](connectors/jiraauditapi.md) | Atlassian | Azure Function | 1 | [AtlassianJiraAudit](solutions/atlassianjiraaudit.md) |
 | [Atlassian Jira Audit (using REST API)](connectors/jiraauditccpdefinition.md) | Microsoft | CCF | 1 | [AtlassianJiraAudit](solutions/atlassianjiraaudit.md) |
 | [Auth0 Access Management](connectors/auth0.md) | Auth0 | Azure Function | 1 | [Auth0](solutions/auth0.md) |
 | [Auth0 Logs](connectors/auth0connectorccpdefinition.md) | Microsoft | CCF | 1 | [Auth0](solutions/auth0.md) |
-| [Authomize Data Connector](connectors/authomize.md) | Authomize | Unknown (Custom Log) | 1 | [Authomize](solutions/authomize.md) |
+| [Authomize Data Connector](connectors/authomize.md) ⚠️ | Authomize | Unknown (Custom Log) | 1 | [Authomize](solutions/authomize.md) |
 | [Automated Logic WebCTRL ](connectors/automatedlogicwebctrl.md) | AutomatedLogic | AMA | 1 | [ALC-WebCTRL](solutions/alc-webctrl.md) |
 | [AWS S3 Server Access Logs (via Codeless Connector Framework)](connectors/awss3serveraccesslogsdefinition.md) | Microsoft | CCF | 1 | [AWS_AccessLogs](solutions/aws-accesslogs.md) |
 | [AWS Security Hub Findings (via Codeless Connector Framework)](connectors/awssecurityhubfindingsccpdefinition.md) | Microsoft | CCF | 1 | [AWS Security Hub](solutions/aws-security-hub.md) |
@@ -95,14 +99,14 @@ This page lists **525 unique connectors** across all solutions.
 | Connector | Publisher | Collection Method | Tables | Solution |
 |:----------|:----------|:------------------|:------:|:---------|
 | [BETTER Mobile Threat Defense (MTD)](connectors/bettermtd.md) | BETTER Mobile | Unknown (Custom Log) | 4 | [BETTER Mobile Threat Defense (MTD)](solutions/better-mobile-threat-defense-mtd.md) |
-| [Beyond Security beSECURE](connectors/beyondsecuritybesecure.md) | Beyond Security | Unknown (Custom Log) | 3 | [Beyond Security beSECURE](solutions/beyond-security-besecure.md) |
-| [BigID DSPM connector](connectors/bigiddspmlogsconnectordefinition.md) | BigID | CCF | 1 | [BigID](solutions/bigid.md) |
+| [Beyond Security beSECURE](connectors/beyondsecuritybesecure.md) ⚠️ | Beyond Security | Unknown (Custom Log) | 3 | [Beyond Security beSECURE](solutions/beyond-security-besecure.md) |
+| [BigID DSPM connector](connectors/bigiddspmlogsconnectordefinition.md) ⚠️ | BigID | CCF | 1 | [BigID](solutions/bigid.md) |
 | [Bitglass](connectors/bitglass.md) | Bitglass | Azure Function | 1 | [Bitglass](solutions/bitglass.md) |
 | [Bitsight data connector](connectors/bitsight.md) | BitSight Technologies, Inc. | Azure Function | 11 | [BitSight](solutions/bitsight.md) |
 | [Bitwarden Event Logs](connectors/bitwardeneventlogs.md) | Bitwarden Inc | CCF | 3 | [Bitwarden](solutions/bitwarden.md) |
-| [Bloodhound Enterprise](connectors/bloodhoundenterprise.md) | SpecterOps | Azure Function | 1 | [BloodHound Enterprise](solutions/bloodhound-enterprise.md) |
+| [Bloodhound Enterprise](connectors/bloodhoundenterprise.md) ⚠️ | SpecterOps | Azure Function | 1 | [BloodHound Enterprise](solutions/bloodhound-enterprise.md) |
 | [Box](connectors/boxdataconnector.md) | Box | Azure Function | 1 | [Box](solutions/box.md) |
-| [Box Events (CCP)](connectors/boxeventsccpdefinition.md) | Microsoft | CCF | 2 | [Box](solutions/box.md) |
+| [Box Events (CCP)](connectors/boxeventsccpdefinition.md) | Microsoft | CCF | 1 | [Box](solutions/box.md) |
 
 ## C
 
@@ -118,15 +122,15 @@ This page lists **525 unique connectors** across all solutions.
 | [Cisco Duo Security](connectors/ciscoduosecurity.md) | Cisco | Azure Function | 1 | [CiscoDuoSecurity](solutions/ciscoduosecurity.md) |
 | [Cisco ETD](connectors/ciscoetd.md) | Cisco | Azure Function | 1 | [Cisco ETD](solutions/cisco-etd.md) |
 | [Cisco Meraki (using REST API)](connectors/ciscomerakimultirule.md) | Microsoft | CCF | 3 | [Cisco Meraki Events via REST API](solutions/cisco-meraki-events-via-rest-api.md) |
-| [Cisco Meraki (using REST API)](connectors/ciscomeraki-usingrestapi.md) | Microsoft | CCF | 3 | [CiscoMeraki](solutions/ciscomeraki.md) |
-| [Cisco Meraki (using REST API)](connectors/ciscomerakinativepoller.md) | Microsoft | CCF | 3 | [CiscoMeraki](solutions/ciscomeraki.md) |
+| [Cisco Meraki (using REST API)](connectors/ciscomeraki-usingrestapi.md) | Microsoft | CCF | 1 | [CiscoMeraki](solutions/ciscomeraki.md) |
+| [Cisco Meraki (using REST API)](connectors/ciscomerakinativepoller.md) | Microsoft | CCF | 1 | [CiscoMeraki](solutions/ciscomeraki.md) |
 | [Cisco Secure Endpoint (via Codeless Connector Framework)](connectors/ciscosecureendpointlogsccpdefinition.md) | Microsoft | CCF | 2 | [Cisco Secure Endpoint](solutions/cisco-secure-endpoint.md) |
 | [Cisco Software Defined WAN](connectors/ciscosdwan.md) | Cisco | AMA | 2 | [Cisco SD-WAN](solutions/cisco-sd-wan.md) |
-| [CITRIX SECURITY ANALYTICS](connectors/citrix.md) | CITRIX | Unknown (Custom Log) | 4 | [Citrix Analytics for Security](solutions/citrix-analytics-for-security.md) |
+| [CITRIX SECURITY ANALYTICS](connectors/citrix.md) ⚠️ | CITRIX | Unknown (Custom Log) | 4 | [Citrix Analytics for Security](solutions/citrix-analytics-for-security.md) |
 | [Claroty xDome](connectors/clarotyxdome.md) | Claroty | MMA | 1 | [Claroty xDome](solutions/claroty-xdome.md) |
 | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](connectors/cloudflaredefinition.md) | Microsoft | CCF | 1 | [Cloudflare](solutions/cloudflare.md) |
-| [Cofense Intelligence Threat Indicators Ingestion](connectors/cofenseintelligence.md) | Cofense | Azure Function | 2 | [CofenseIntelligence](solutions/cofenseintelligence.md) |
-| [Cofense Triage Threat Indicators Ingestion](connectors/cofensetriage.md) | Cofense | Azure Function | 3 | [CofenseTriage](solutions/cofensetriage.md) |
+| [Cofense Intelligence Threat Indicators Ingestion](connectors/cofenseintelligence.md) ⚠️ | Cofense | Azure Function | 2 | [CofenseIntelligence](solutions/cofenseintelligence.md) |
+| [Cofense Triage Threat Indicators Ingestion](connectors/cofensetriage.md) ⚠️ | Cofense | Azure Function | 3 | [CofenseTriage](solutions/cofensetriage.md) |
 | [Cognni](connectors/cognnisentineldataconnector.md) | Cognni | Unknown (Custom Log) | 1 | [Cognni](solutions/cognni.md) |
 | [Cohesity](connectors/cohesitydataconnector.md) | Cohesity | Azure Function | 1 | [CohesitySecurity](solutions/cohesitysecurity.md) |
 | [Common Event Format (CEF)](connectors/cef.md) | Any | MMA | 1 | [Common Event Format](solutions/common-event-format.md) |
@@ -139,17 +143,17 @@ This page lists **525 unique connectors** across all solutions.
 | [CrowdStrike API Data Connector (via Codeless Connector Framework)](connectors/crowdstrikeapiccpdefinition.md) | Microsoft | CCF | 5 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CrowdStrike Falcon Adversary Intelligence ](connectors/crowdstrikefalconadversaryintelligence.md) | CrowdStrike | Azure Function | 1 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](connectors/crowdstrikefalcons3ccpdefinition.md) | Microsoft | CCF | 10 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](connectors/crowdstrikereplicatorv2.md) | Crowdstrike | Azure Function | 15 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](connectors/crowdstrikereplicatorv2.md) | Crowdstrike | Azure Function | 10 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CTERA Syslog](connectors/ctera.md) | CTERA Networks Ltd | AMA | 1 | [CTERA](solutions/ctera.md) |
 | [Custom logs via AMA](connectors/customlogsviaama.md) | Microsoft | AMA | 16 | [CustomLogsAma](solutions/customlogsama.md) |
 | [Cyber Blind Spot Integration](connectors/cbspollingidazurefunctions.md) | CTM360 | Azure Function | 1 | [CTM360](solutions/ctm360.md) |
 | [CyberArkAudit](connectors/cyberarkaudit.md) | CyberArk | Azure Function | 1 | [CyberArkAudit](solutions/cyberarkaudit.md) |
-| [CyberArkEPM](connectors/cyberarkepm.md) | CyberArk | Azure Function | 1 | [CyberArkEPM](solutions/cyberarkepm.md) |
+| [CyberArkEPM](connectors/cyberarkepm.md) ⚠️ | CyberArk | Azure Function | 1 | [CyberArkEPM](solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts](connectors/cybersixgillactionablealerts.md) | Cybersixgill | Azure Function | 1 | [Cybersixgill-Actionable-Alerts](solutions/cybersixgill-actionable-alerts.md) |
 | [Cyble Vision Alerts](connectors/cyblevisionalerts.md) | Cyble | CCF | 1 | [Cyble Vision](solutions/cyble-vision.md) |
 | [Cyborg Security HUNTER Hunt Packages](connectors/cyborgsecurity-hunter.md) | Cyborg Security | AMA | 1 | [Cyborg Security HUNTER](solutions/cyborg-security-hunter.md) |
-| [Cyera DSPM Azure Functions Microsoft Sentinel Data Connector](connectors/cyerafunctionsconnector.md) | Cyera Inc | Azure Function | 5 | [CyeraDSPM](solutions/cyeradspm.md) |
-| [Cyera DSPM Microsoft Sentinel Data Connector](connectors/cyeradspmccf.md) | Cyera Inc | CCF | 5 | [CyeraDSPM](solutions/cyeradspm.md) |
+| [Cyera DSPM Azure Functions Microsoft Sentinel Data Connector](connectors/cyerafunctionsconnector.md) ⚠️ | Cyera Inc | Azure Function | 5 | [CyeraDSPM](solutions/cyeradspm.md) |
+| [Cyera DSPM Microsoft Sentinel Data Connector](connectors/cyeradspmccf.md) ⚠️ | Cyera Inc | CCF | 5 | [CyeraDSPM](solutions/cyeradspm.md) |
 | [CYFIRMA Attack Surface](connectors/cyfirmaattacksurfacealertsconnector.md) | Microsoft | CCF | 6 | [Cyfirma Attack Surface](solutions/cyfirma-attack-surface.md) |
 | [CYFIRMA Brand Intelligence](connectors/cyfirmabrandintelligencealertsdc.md) | Microsoft | CCF | 5 | [Cyfirma Brand Intelligence](solutions/cyfirma-brand-intelligence.md) |
 | [CYFIRMA Compromised Accounts](connectors/cyfirmacompromisedaccountsdataconnector.md) | Microsoft | CCF | 1 | [Cyfirma Compromised Accounts](solutions/cyfirma-compromised-accounts.md) |
@@ -165,7 +169,7 @@ This page lists **525 unique connectors** across all solutions.
 | [Darktrace Connector for Microsoft Sentinel REST API](connectors/darktracerestconnector.md) | Darktrace | REST API | 1 | [Darktrace](solutions/darktrace.md) |
 | [Datalake2Sentinel](connectors/datalake2sentinelconnector.md) | Orange Cyberdefense | REST API | 1 | [Datalake2Sentinel](solutions/datalake2sentinel.md) |
 | [Dataminr Pulse Alerts Data Connector](connectors/dataminrpulsealerts.md) | Dataminr | Azure Function | 1 | [Dataminr Pulse](solutions/dataminr-pulse.md) |
-| [Datawiza DAP](connectors/datawizadapsolution.md) | Datawiza | REST API | 1 | [Datawiza](solutions/datawiza.md) |
+| [Datawiza DAP](connectors/datawizadapsolution.md) ⚠️ | Datawiza | REST API | 1 | [Datawiza](solutions/datawiza.md) |
 | [Derdack SIGNL4](connectors/derdacksignl4.md) | Derdack | Unknown (Custom Log) | 2 | [SIGNL4](solutions/signl4.md) |
 | [Digital Shadows Searchlight](connectors/digitalshadowssearchlightazurefunctions.md) | Digital Shadows | Azure Function | 1 | [Digital Shadows](solutions/digital-shadows.md) |
 | [DNS](connectors/dns.md) | Microsoft | MMA | 2 | [Windows Server DNS](solutions/windows-server-dns.md) |
@@ -182,13 +186,13 @@ This page lists **525 unique connectors** across all solutions.
 
 | Connector | Publisher | Collection Method | Tables | Solution |
 |:----------|:----------|:------------------|:------:|:---------|
-| [Egress Defend](connectors/egressdefendpolling.md) | Egress Software Technologies | CCF | 1 | [Egress Defend](solutions/egress-defend.md) |
-| [Egress Iris Connector](connectors/egresssiempolling.md) | Egress Software Technologies | CCF | 1 | [Egress Iris](solutions/egress-iris.md) |
+| [Egress Defend](connectors/egressdefendpolling.md) ⚠️ | Egress Software Technologies | CCF | 1 | [Egress Defend](solutions/egress-defend.md) |
+| [Egress Iris Connector](connectors/egresssiempolling.md) ⚠️ | Egress Software Technologies | CCF | 1 | [Egress Iris](solutions/egress-iris.md) |
 | [Elastic Agent](connectors/elasticagent.md) | Elastic | MMA | 1 | [ElasticAgent](solutions/elasticagent.md) |
 | [Ermes Browser Security Events](connectors/ermesbrowsersecurityevents.md) | Ermes Cyber Security S.p.A. | CCF | 1 | [Ermes Browser Security](solutions/ermes-browser-security.md) |
-| [ESET Inspect](connectors/esetinspect.md) | ESET Netherlands | Azure Function | 1 | [ESET Inspect](solutions/eset-inspect.md) |
-| [ESET Protect Platform](connectors/esetprotectplatform.md) | ESET | Azure Function | 2 | [ESET Protect Platform](solutions/eset-protect-platform.md) |
-| [Eset Security Management Center](connectors/esetsmc.md) | Eset | MMA | 1 | [Eset Security Management Center](solutions/eset-security-management-center.md) |
+| [ESET Inspect](connectors/esetinspect.md) ⚠️ | ESET Netherlands | Azure Function | 1 | [ESET Inspect](solutions/eset-inspect.md) |
+| [ESET Protect Platform](connectors/esetprotectplatform.md) ⚠️ | ESET | Azure Function | 2 | [ESET Protect Platform](solutions/eset-protect-platform.md) |
+| [Eset Security Management Center](connectors/esetsmc.md) ⚠️ | Eset | MMA | 1 | [Eset Security Management Center](solutions/eset-security-management-center.md) |
 | [Exchange Security Insights On-Premises Collector](connectors/esi-exchangeonpremisescollector.md) | Microsoft | Unknown (Custom Log) | 1 | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Exchange Security Insights Online Collector](connectors/esi-exchangeonlinecollector.md) | Microsoft | Azure Function | 1 | [Microsoft Exchange Security - Exchange Online](solutions/microsoft-exchange-security-exchange-online.md) |
 | [ExtraHop Detections Data Connector](connectors/extrahop.md) | ExtraHop | Azure Function | 1 | [ExtraHop](solutions/extrahop.md) |
@@ -201,8 +205,8 @@ This page lists **525 unique connectors** across all solutions.
 | [Feedly](connectors/feedly.md) | Feedly | Azure Function | 1 | [Feedly](solutions/feedly.md) |
 | [Flare](connectors/flare.md) | Flare | Unknown (Custom Log) | 1 | [Flare](solutions/flare.md) |
 | [Forcepoint DLP](connectors/forcepoint-dlp.md) | Forcepoint | Unknown (Custom Log) | 1 | [Forcepoint DLP](solutions/forcepoint-dlp.md) |
-| [Forescout](connectors/forescout.md) | Forescout | MMA | 1 | [Forescout (Legacy)](solutions/forescout-legacy.md) |
-| [Forescout eyeInspect for OT Security](connectors/forescout-eyeinspect-for-ot-security.md) | Forescout | Unknown (Custom Log) | 2 | [Forescout eyeInspect for OT Security](solutions/forescout-eyeinspect-for-ot-security.md) |
+| [Forescout](connectors/forescout.md) | Forescout | MMA | — | [Forescout (Legacy)](solutions/forescout-legacy.md) |
+| [Forescout eyeInspect for OT Security](connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ | Forescout | Unknown (Custom Log) | 2 | [Forescout eyeInspect for OT Security](solutions/forescout-eyeinspect-for-ot-security.md) |
 | [Forescout Host Property Monitor](connectors/forescouthostpropertymonitor.md) | Forescout | Unknown (Custom Log) | 3 | [ForescoutHostPropertyMonitor](solutions/forescouthostpropertymonitor.md) |
 | [Fortinet FortiNDR Cloud](connectors/fortinetfortindrclouddataconnector.md) | Fortinet | Azure Function | 3 | [Fortinet FortiNDR Cloud](solutions/fortinet-fortindr-cloud.md) |
 | [Fortinet FortiWeb Web Application Firewall via AMA](connectors/fortinetfortiwebama.md) | Microsoft | AMA | 1 | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
@@ -241,9 +245,9 @@ This page lists **525 unique connectors** across all solutions.
 | Connector | Publisher | Collection Method | Tables | Solution |
 |:----------|:----------|:------------------|:------:|:---------|
 | [HackerView Intergration](connectors/hvpollingidazurefunctions.md) | CTM360 | Azure Function | 1 | [CTM360](solutions/ctm360.md) |
-| [Halcyon Connector](connectors/halcyonpush.md) | Halcyon | CCF | 5 | [Halcyon](solutions/halcyon.md) |
+| [Halcyon Connector](connectors/halcyonpush.md) ⚠️ | Halcyon | CCF | 5 | [Halcyon](solutions/halcyon.md) |
 | [Holm Security Asset Data](connectors/holmsecurityassets.md) | Holm Security | Azure Function | 2 | [HolmSecurity](solutions/holmsecurity.md) |
-| [HYAS Protect](connectors/hyasprotect.md) | HYAS | Azure Function | 1 | [HYAS Protect](solutions/hyas-protect.md) |
+| [HYAS Protect](connectors/hyasprotect.md) ⚠️ | HYAS | Azure Function | 1 | [HYAS Protect](solutions/hyas-protect.md) |
 
 ## I
 
@@ -256,30 +260,30 @@ This page lists **525 unique connectors** across all solutions.
 | [Illumio SaaS](connectors/illumiosaasdataconnector.md) | Illumio | Azure Function | 2 | [IllumioSaaS](solutions/illumiosaas.md) |
 | [Illumio Saas](connectors/illumiosaasccfdefinition.md) | Microsoft | CCF | 1 | [IllumioSaaS](solutions/illumiosaas.md) |
 | [Imperva Cloud WAF](connectors/impervacloudwaflogsccfdefinition.md) | Microsoft | CCF | 1 | [ImpervaCloudWAF](solutions/impervacloudwaf.md) |
-| [Imperva Cloud WAF](connectors/impervawafcloudapi.md) | Imperva | Azure Function | 2 | [ImpervaCloudWAF](solutions/impervacloudwaf.md) |
-| [Imperva WAF Gateway](connectors/impervawafgateway.md) | Imperva | MMA | 1 | [Imperva WAF Gateway](solutions/imperva-waf-gateway.md) |
+| [Imperva Cloud WAF](connectors/impervawafcloudapi.md) | Imperva | Azure Function | 1 | [ImpervaCloudWAF](solutions/impervacloudwaf.md) |
+| [Imperva WAF Gateway](connectors/impervawafgateway.md) ⚠️ | Imperva | MMA | 1 | [Imperva WAF Gateway](solutions/imperva-waf-gateway.md) |
 | [Infoblox Data Connector via REST API](connectors/infobloxdataconnector.md) | Infoblox | Azure Function | 18 | [Infoblox](solutions/infoblox.md) |
 | [Infoblox SOC Insight Data Connector via REST API](connectors/infobloxsocinsightsdataconnector-api.md) | Infoblox | REST API | 1 | [Infoblox](solutions/infoblox.md) |
 | [InfoSecGlobal Data Connector](connectors/infosecdataconnector.md) | InfoSecGlobal | Unknown (Custom Log) | 1 | [AgileSec Analytics Connector](solutions/agilesec-analytics-connector.md) |
 | [IONIX Security Logs](connectors/cyberpionsecuritylogs.md) | IONIX | Unknown (Custom Log) | 1 | [IONIX](solutions/ionix.md) |
-| [IPinfo Abuse Data Connector](connectors/ipinfoabusedataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo ASN Data Connector](connectors/ipinfoasndataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo Carrier Data Connector](connectors/ipinfocarrierdataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo Company Data Connector](connectors/ipinfocompanydataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo Country ASN Data Connector](connectors/ipinfocountrydataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo Domain Data Connector](connectors/ipinfodomaindataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo Iplocation Data Connector](connectors/ipinfoiplocationdataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo Iplocation Extended Data Connector](connectors/ipinfoiplocationextendeddataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo Privacy Data Connector](connectors/ipinfoprivacydataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo Privacy Extended Data Connector](connectors/ipinfoprivacyextendeddataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo RIRWHOIS Data Connector](connectors/ipinforirwhoisdataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo RWHOIS Data Connector](connectors/ipinforwhoisdataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo WHOIS ASN Data Connector](connectors/ipinfowhoisasndataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo WHOIS MNT Data Connector](connectors/ipinfowhoismntdataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo WHOIS NET Data Connector](connectors/ipinfowhoisnetdataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo WHOIS ORG Data Connector](connectors/ipinfowhoisorgdataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IPinfo WHOIS POC Data Connector](connectors/ipinfowhoispocdataconnector.md) | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
-| [IronNet IronDefense](connectors/ironnetirondefense.md) | IronNet | MMA | 1 | [IronNet IronDefense](solutions/ironnet-irondefense.md) |
+| [IPinfo Abuse Data Connector](connectors/ipinfoabusedataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo ASN Data Connector](connectors/ipinfoasndataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo Carrier Data Connector](connectors/ipinfocarrierdataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo Company Data Connector](connectors/ipinfocompanydataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo Country ASN Data Connector](connectors/ipinfocountrydataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo Domain Data Connector](connectors/ipinfodomaindataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo Iplocation Data Connector](connectors/ipinfoiplocationdataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo Iplocation Extended Data Connector](connectors/ipinfoiplocationextendeddataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo Privacy Data Connector](connectors/ipinfoprivacydataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo Privacy Extended Data Connector](connectors/ipinfoprivacyextendeddataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo RIRWHOIS Data Connector](connectors/ipinforirwhoisdataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo RWHOIS Data Connector](connectors/ipinforwhoisdataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo WHOIS ASN Data Connector](connectors/ipinfowhoisasndataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo WHOIS MNT Data Connector](connectors/ipinfowhoismntdataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo WHOIS NET Data Connector](connectors/ipinfowhoisnetdataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo WHOIS ORG Data Connector](connectors/ipinfowhoisorgdataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IPinfo WHOIS POC Data Connector](connectors/ipinfowhoispocdataconnector.md) ⚠️ | IPinfo | Azure Function | 1 | [IPinfo](solutions/ipinfo.md) |
+| [IronNet IronDefense](connectors/ironnetirondefense.md) ⚠️ | IronNet | MMA | 1 | [IronNet IronDefense](solutions/ironnet-irondefense.md) |
 | [Island Enterprise Browser Admin Audit (Polling CCP)](connectors/island-admin-polling.md) | Island | CCF | 1 | [Island](solutions/island.md) |
 | [Island Enterprise Browser User Activity (Polling CCP)](connectors/island-user-polling.md) | Island | CCF | 1 | [Island](solutions/island.md) |
 
@@ -300,9 +304,9 @@ This page lists **525 unique connectors** across all solutions.
 | Connector | Publisher | Collection Method | Tables | Solution |
 |:----------|:----------|:------------------|:------:|:---------|
 | [LastPass Enterprise - Reporting (Polling CCP)](connectors/lastpass-polling.md) | The Collective Consulting BV | CCF | 1 | [Lastpass Enterprise Activity Monitoring](solutions/lastpass-enterprise-activity-monitoring.md) |
-| [Lookout Cloud Security for Microsoft Sentinel](connectors/lookoutcloudsecuritydataconnector.md) | Lookout | Azure Function | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
+| [Lookout Cloud Security for Microsoft Sentinel](connectors/lookoutcloudsecuritydataconnector.md) ⚠️ | Lookout | Azure Function | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
 | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](connectors/lookoutstreaming-definition.md) | Microsoft | CCF | 1 | [Lookout](solutions/lookout.md) |
-| [Lumen Defender Threat Feed Data Connector](connectors/lumenthreatfeedconnector.md) | Lumen Technologies, Inc. | Azure Function | 1 | [Lumen Defender Threat Feed](solutions/lumen-defender-threat-feed.md) |
+| [Lumen Defender Threat Feed Data Connector](connectors/lumenthreatfeedconnector.md) ⚠️ | Lumen Technologies, Inc. | Azure Function | 1 | [Lumen Defender Threat Feed](solutions/lumen-defender-threat-feed.md) |
 | [Luminar IOCs and Leaked Credentials](connectors/cognyteluminar.md) | Cognyte Technologies Israel Ltd | Azure Function | 1 | [CognyteLuminar](solutions/cognyteluminar.md) |
 
 ## M
@@ -312,8 +316,9 @@ This page lists **525 unique connectors** across all solutions.
 | [MailGuard 365](connectors/mailguard365.md) | MailGuard365 | Unknown (Custom Log) | 1 | [MailGuard 365](solutions/mailguard-365.md) |
 | [MailRisk by Secure Practice](connectors/securepracticemailriskconnector.md) | Secure Practice | CCF | 1 | [MailRisk](solutions/mailrisk.md) |
 | [Microsoft 365 (formerly, Office 365)](connectors/office365.md) | Microsoft | Native | 1 | [Microsoft 365](solutions/microsoft-365.md) |
-| [Microsoft 365 Assets (formerly, Office 365)](connectors/m365assets.md) | Microsoft | Native | — | [Microsoft 365 Assets](solutions/microsoft-365-assets.md) |
+| [Microsoft 365 Assets (formerly, Office 365)](connectors/m365assets.md) ⚠️ | Microsoft | Native | — | [Microsoft 365 Assets](solutions/microsoft-365-assets.md) |
 | [Microsoft 365 Insider Risk Management](connectors/officeirm.md) | Microsoft | Native | 1 | [MicrosoftPurviewInsiderRiskManagement](solutions/microsoftpurviewinsiderriskmanagement.md) |
+| [Microsoft Copilot](connectors/microsoftcopilot.md) ⚠️ | Microsoft | CCF | 1 | [Microsoft Copilot](solutions/microsoft-copilot.md) |
 | [Microsoft Defender for Cloud Apps](connectors/microsoftcloudappsecurity.md) | Microsoft | Native | 2 | [Microsoft Defender for Cloud Apps](solutions/microsoft-defender-for-cloud-apps.md) |
 | [Microsoft Defender for Endpoint](connectors/microsoftdefenderadvancedthreatprotection.md) | Microsoft | Native | 1 | [MicrosoftDefenderForEndpoint](solutions/microsoftdefenderforendpoint.md) |
 | [Microsoft Defender for Identity](connectors/azureadvancedthreatprotection.md) | Microsoft | Native | 1 | [Microsoft Defender for Identity](solutions/microsoft-defender-for-identity.md) |
@@ -351,19 +356,19 @@ This page lists **525 unique connectors** across all solutions.
 | Connector | Publisher | Collection Method | Tables | Solution |
 |:----------|:----------|:------------------|:------:|:---------|
 | [NC Protect](connectors/nucleuscyberncprotect.md) | archTIS | Unknown (Custom Log) | 1 | [NC Protect Data Connector](solutions/nc-protect-data-connector.md) |
-| [Netclean ProActive Incidents](connectors/netclean-proactive-incidents.md) | NetClean Technologies | Unknown (Custom Log) | 1 | [NetClean ProActive](solutions/netclean-proactive.md) |
+| [Netclean ProActive Incidents](connectors/netclean-proactive-incidents.md) ⚠️ | NetClean Technologies | Unknown (Custom Log) | 1 | [NetClean ProActive](solutions/netclean-proactive.md) |
 | [Netskope](connectors/netskope.md) | Netskope | Azure Function | 1 | [Netskope](solutions/netskope.md) |
 | [Netskope Alerts and Events](connectors/netskopealertsevents.md) | Netskope | CCF | 9 | [Netskopev2](solutions/netskopev2.md) |
 | [Netskope Data Connector](connectors/netskopedataconnector.md) | Netskope | Azure Function | 17 | [Netskopev2](solutions/netskopev2.md) |
 | [Netskope Web Transactions Data Connector](connectors/netskopewebtransactionsdataconnector.md) | Netskope | Azure Function | 2 | [Netskopev2](solutions/netskopev2.md) |
 | [Network Security Groups](connectors/azurensg.md) | Microsoft | Azure Diagnostics | 1 | [Azure Network Security Groups](solutions/azure-network-security-groups.md) |
-| [Noname Security for Microsoft Sentinel](connectors/nonamesecuritymicrosoftsentinel.md) | Noname Security | REST API | 1 | [Noname API Security Solution for Microsoft Sentinel](solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
+| [Noname Security for Microsoft Sentinel](connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ | Noname Security | REST API | 1 | [Noname API Security Solution for Microsoft Sentinel](solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [NordPass](connectors/nordpass.md) | NordPass | Unknown (Custom Log) | 1 | [NordPass](solutions/nordpass.md) |
-| [NXLog AIX Audit](connectors/nxlogaixaudit.md) | NXLog | REST API | 1 | [NXLogAixAudit](solutions/nxlogaixaudit.md) |
-| [NXLog BSM macOS](connectors/nxlogbsmmacos.md) | NXLog | REST API | 1 | [NXLog BSM macOS](solutions/nxlog-bsm-macos.md) |
-| [NXLog DNS Logs](connectors/nxlogdnslogs.md) | NXLog | REST API | 1 | [NXLogDNSLogs](solutions/nxlogdnslogs.md) |
-| [NXLog FIM](connectors/nxlogfim.md) | NXLog | REST API | 1 | [NXLog FIM](solutions/nxlog-fim.md) |
-| [NXLog LinuxAudit](connectors/nxloglinuxaudit.md) | NXLog | REST API | 1 | [NXLog LinuxAudit](solutions/nxlog-linuxaudit.md) |
+| [NXLog AIX Audit](connectors/nxlogaixaudit.md) ⚠️ | NXLog | REST API | 1 | [NXLogAixAudit](solutions/nxlogaixaudit.md) |
+| [NXLog BSM macOS](connectors/nxlogbsmmacos.md) ⚠️ | NXLog | REST API | 1 | [NXLog BSM macOS](solutions/nxlog-bsm-macos.md) |
+| [NXLog DNS Logs](connectors/nxlogdnslogs.md) ⚠️ | NXLog | REST API | 1 | [NXLogDNSLogs](solutions/nxlogdnslogs.md) |
+| [NXLog FIM](connectors/nxlogfim.md) ⚠️ | NXLog | REST API | 1 | [NXLog FIM](solutions/nxlog-fim.md) |
+| [NXLog LinuxAudit](connectors/nxloglinuxaudit.md) ⚠️ | NXLog | REST API | 1 | [NXLog LinuxAudit](solutions/nxlog-linuxaudit.md) |
 
 ## O
 
@@ -374,8 +379,8 @@ This page lists **525 unique connectors** across all solutions.
 | [Okta Single Sign-On](connectors/oktassov2.md) | Microsoft | CCF | 2 | [Okta Single Sign-On](solutions/okta-single-sign-on.md) |
 | [Okta Single Sign-On (Polling CCP)](connectors/oktasso-polling.md) | Okta | CCF | 1 | [Okta Single Sign-On](solutions/okta-single-sign-on.md) |
 | [Okta Single Sign-On (using Azure Functions)](connectors/oktasinglesignon-usingazurefunctions.md) | Okta | CCF | 2 | [Okta Single Sign-On](solutions/okta-single-sign-on.md) |
-| [Onapsis Defend Integration](connectors/onapsis.md) | Onapsis Platform | CCF | 1 | [Onapsis Defend](solutions/onapsis-defend.md) |
-| [One Identity Safeguard](connectors/oneidentity.md) | One Identity LLC. | MMA | 1 | [OneIdentity](solutions/oneidentity.md) |
+| [Onapsis Defend Integration](connectors/onapsis.md) | Onapsis Platform | CCF | 2 | [Onapsis Defend](solutions/onapsis-defend.md) |
+| [One Identity Safeguard](connectors/oneidentity.md) ⚠️ | One Identity LLC. | MMA | 1 | [OneIdentity](solutions/oneidentity.md) |
 | [OneLogin IAM Platform (via Codeless Connector Framework)](connectors/oneloginiamlogsccpdefinition.md) | Microsoft | CCF | 2 | [OneLoginIAM](solutions/oneloginiam.md) |
 | [OneTrust](connectors/onetrustpush.md) | OneTrust | CCF | 1 | [OneTrust](solutions/onetrust.md) |
 | [Open Systems Data Connector](connectors/opensystems.md) | Open Systems | Azure Function | 4 | [Open Systems](solutions/open-systems.md) |
@@ -388,12 +393,12 @@ This page lists **525 unique connectors** across all solutions.
 |:----------|:----------|:------------------|:------:|:---------|
 | [Palo Alto Cortex XDR](connectors/cortexxdrdataconnector.md) | Microsoft | CCF | 5 | [Cortex XDR](solutions/cortex-xdr.md) |
 | [Palo Alto Cortex Xpanse (via Codeless Connector Framework)](connectors/paloaltoexpanseccpdefinition.md) | Microsoft | CCF | 1 | [Palo Alto Cortex Xpanse CCF](solutions/palo-alto-cortex-xpanse-ccf.md) |
-| [Palo Alto Networks Cortex XDR](connectors/paloaltonetworkscortex.md) | Palo Alto Networks | MMA | 1 | [Palo Alto - XDR (Cortex)](solutions/palo-alto-xdr-cortex.md) |
+| [Palo Alto Networks Cortex XDR](connectors/paloaltonetworkscortex.md) ⚠️ | Palo Alto Networks | MMA | 1 | [Palo Alto - XDR (Cortex)](solutions/palo-alto-xdr-cortex.md) |
 | [Palo Alto Prisma Cloud CSPM (via Codeless Connector Framework)](connectors/paloaltoprismacloudcspmccpdefinition.md) | Microsoft | CCF | 2 | [PaloAltoPrismaCloud](solutions/paloaltoprismacloud.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](connectors/paloaltoprismacloudcwpp.md) | Microsoft | CCF | 1 | [Palo Alto Prisma Cloud CWPP](solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](connectors/prismacloudcomputenativepoller.md) | Microsoft | REST API | 1 | [Palo Alto Prisma Cloud CWPP](solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Pathlock Inc.: Threat Detection and Response for SAP](connectors/pathlock-tdnr.md) | Pathlock Inc. | CCF | 2 | [Pathlock_TDnR](solutions/pathlock-tdnr.md) |
-| [PDNS Block Data Connector](connectors/pdnsblockdataconnector.md) | Nominet | Azure Function | 1 | [PDNS Block Data Connector](solutions/pdns-block-data-connector.md) |
+| [PDNS Block Data Connector](connectors/pdnsblockdataconnector.md) ⚠️ | Nominet | Azure Function | 1 | [PDNS Block Data Connector](solutions/pdns-block-data-connector.md) |
 | [Perimeter 81 Activity Logs](connectors/perimeter81activitylogs.md) | Perimeter 81 | Unknown (Custom Log) | 1 | [Perimeter 81](solutions/perimeter-81.md) |
 | [Phosphorus Devices](connectors/phosphorus-polling.md) | Phosphorus Inc. | CCF | 1 | [Phosphorus](solutions/phosphorus.md) |
 | [Ping One (via Codeless Connector Framework)](connectors/pingoneauditlogsccpdefinition.md) | Microsoft | CCF | 1 | [PingOne](solutions/pingone.md) |
@@ -433,30 +438,30 @@ This page lists **525 unique connectors** across all solutions.
 | [SAP LogServ (RISE), S/4HANA Cloud private edition](connectors/saplogserv.md) | SAP SE | CCF | 1 | [SAP LogServ](solutions/sap-logserv.md) |
 | [SAP S/4HANA Cloud Public Edition](connectors/saps4publicalerts.md) | SAP | CCF | 1 | [SAP S4 Cloud Public Edition](solutions/sap-s4-cloud-public-edition.md) |
 | [Security Events via Legacy Agent](connectors/securityevents.md) | Microsoft | MMA | 1 | [Windows Security Events](solutions/windows-security-events.md) |
-| [SecurityBridge Solution for SAP](connectors/securitybridge.md) | SecurityBridge Group GmbH | CCF | 1 | [SecurityBridge App](solutions/securitybridge-app.md) |
+| [SecurityBridge Solution for SAP](connectors/securitybridge.md) | SecurityBridge Group GmbH | CCF | 2 | [SecurityBridge App](solutions/securitybridge-app.md) |
 | [SecurityBridge Threat Detection for SAP](connectors/securitybridgesap.md) | SecurityBridge | MMA | 1 | [SecurityBridge App](solutions/securitybridge-app.md) |
-| [SecurityScorecard Cybersecurity Ratings](connectors/securityscorecardratingsazurefunctions.md) | SecurityScorecard | Azure Function | 1 | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) |
-| [SecurityScorecard Factor](connectors/securityscorecardfactorazurefunctions.md) | SecurityScorecard | Azure Function | 1 | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) |
-| [SecurityScorecard Issue](connectors/securityscorecardissueazurefunctions.md) | SecurityScorecard | Azure Function | 1 | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) |
-| [Semperis Directory Services Protector](connectors/semperisdsp.md) | SEMPERIS | MMA | 1 | [Semperis Directory Services Protector](solutions/semperis-directory-services-protector.md) |
-| [SenservaPro (Preview)](connectors/senservapro.md) | Senserva | Unknown (Custom Log) | 1 | [SenservaPro](solutions/senservapro.md) |
-| [SentinelOne](connectors/sentinelone.md) | SentinelOne | Azure Function | 2 | [SentinelOne](solutions/sentinelone.md) |
+| [SecurityScorecard Cybersecurity Ratings](connectors/securityscorecardratingsazurefunctions.md) ⚠️ | SecurityScorecard | Azure Function | 1 | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) |
+| [SecurityScorecard Factor](connectors/securityscorecardfactorazurefunctions.md) ⚠️ | SecurityScorecard | Azure Function | 1 | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) |
+| [SecurityScorecard Issue](connectors/securityscorecardissueazurefunctions.md) ⚠️ | SecurityScorecard | Azure Function | 1 | [SecurityScorecard Cybersecurity Ratings](solutions/securityscorecard-cybersecurity-ratings.md) |
+| [Semperis Directory Services Protector](connectors/semperisdsp.md) ⚠️ | SEMPERIS | MMA | — | [Semperis Directory Services Protector](solutions/semperis-directory-services-protector.md) |
+| [SenservaPro (Preview)](connectors/senservapro.md) ⚠️ | Senserva | Unknown (Custom Log) | 1 | [SenservaPro](solutions/senservapro.md) |
+| [SentinelOne](connectors/sentinelone.md) | SentinelOne | Azure Function | 1 | [SentinelOne](solutions/sentinelone.md) |
 | [SentinelOne](connectors/sentineloneccp.md) | Microsoft | CCF | 5 | [SentinelOne](solutions/sentinelone.md) |
 | [Seraphic Web Security](connectors/seraphicwebsecurity.md) | Seraphic | CCF | 1 | [SeraphicSecurity](solutions/seraphicsecurity.md) |
-| [Sevco Platform - Devices](connectors/sevcodevices.md) | Sevco Security | Unknown (Custom Log) | 1 | [SevcoSecurity](solutions/sevcosecurity.md) |
+| [Sevco Platform - Devices](connectors/sevcodevices.md) ⚠️ | Sevco Security | Unknown (Custom Log) | 1 | [SevcoSecurity](solutions/sevcosecurity.md) |
 | [Silverfort Admin Console](connectors/silverfortama.md) | Silverfort | AMA | 1 | [Silverfort](solutions/silverfort.md) |
-| [SINEC Security Guard](connectors/ssg.md) | Siemens AG | Unknown (Custom Log) | 1 | [SINEC Security Guard](solutions/sinec-security-guard.md) |
+| [SINEC Security Guard](connectors/ssg.md) ⚠️ | Siemens AG | Unknown (Custom Log) | 1 | [SINEC Security Guard](solutions/sinec-security-guard.md) |
 | [Slack](connectors/slackaudit.md) | Slack | CCF | 1 | [SlackAudit](solutions/slackaudit.md) |
 | [SlackAudit (via Codeless Connector Framework)](connectors/slackauditlogsccpdefinition.md) | Microsoft | CCF | 1 | [SlackAudit](solutions/slackaudit.md) |
-| [SlashNext Function App](connectors/slashnextfunctionapp.md) | SlashNext | Azure Function | 2 | [SlashNext](solutions/slashnext.md) |
+| [SlashNext Function App](connectors/slashnextfunctionapp.md) ⚠️ | SlashNext | Azure Function | 2 | [SlashNext](solutions/slashnext.md) |
 | [Snowflake (via Codeless Connector Framework)](connectors/snowflakelogsccpdefinition.md) | Microsoft | CCF | 10 | [Snowflake](solutions/snowflake.md) |
 | [SOC Prime Platform Audit Logs Data Connector](connectors/socprimeauditlogsdataconnector.md) | Microsoft | CCF | 1 | [SOC Prime CCF](solutions/soc-prime-ccf.md) |
 | [Sonrai Data Connector](connectors/sonraidataconnector.md) | Sonrai | Unknown (Custom Log) | 1 | [SonraiSecurity](solutions/sonraisecurity.md) |
 | [Sophos Cloud Optix](connectors/sophoscloudoptix.md) | Sophos | Unknown (Custom Log) | 1 | [Sophos Cloud Optix](solutions/sophos-cloud-optix.md) |
 | [Sophos Endpoint Protection](connectors/sophosep.md) | Sophos | Azure Function | 1 | [Sophos Endpoint Protection](solutions/sophos-endpoint-protection.md) |
 | [Sophos Endpoint Protection (using REST API)](connectors/sophosendpointprotectionccpdefinition.md) | Microsoft | CCF | 2 | [Sophos Endpoint Protection](solutions/sophos-endpoint-protection.md) |
-| [Squadra Technologies secRMM](connectors/squadratechnologiessecrmm.md) | Squadra Technologies | Unknown (Custom Log) | 1 | [Squadra Technologies SecRmm](solutions/squadra-technologies-secrmm.md) |
-| [StyxView Alerts (via Codeless Connector Platform)](connectors/styxviewendpointconnectordefinition.md) | Styx Intelligence | CCF | 1 | [Styx Intelligence](solutions/styx-intelligence.md) |
+| [Squadra Technologies secRMM](connectors/squadratechnologiessecrmm.md) ⚠️ | Squadra Technologies | Unknown (Custom Log) | 1 | [Squadra Technologies SecRmm](solutions/squadra-technologies-secrmm.md) |
+| [StyxView Alerts (via Codeless Connector Platform)](connectors/styxviewendpointconnectordefinition.md) ⚠️ | Styx Intelligence | CCF | 1 | [Styx Intelligence](solutions/styx-intelligence.md) |
 | [Subscription-based Microsoft Defender for Cloud (Legacy)](connectors/azuresecuritycenter.md) | Microsoft | Native | 1 | [Microsoft Defender for Cloud](solutions/microsoft-defender-for-cloud.md) |
 | [Symantec Integrated Cyber Defense Exchange](connectors/symantec.md) | Symantec | Unknown (Custom Log) | 1 | [Symantec Integrated Cyber Defense](solutions/symantec-integrated-cyber-defense.md) |
 | [Syslog via AMA](connectors/syslogama.md) | Microsoft | AMA | 1 | [Syslog](solutions/syslog.md) |
@@ -470,7 +475,7 @@ This page lists **525 unique connectors** across all solutions.
 | [Team Cymru Scout Data Connector](connectors/teamcymruscout.md) | Team Cymru Scout | Azure Function | 14 | [Team Cymru Scout](solutions/team-cymru-scout.md) |
 | [Tenable Identity Exposure](connectors/tenableie.md) | Tenable | MMA | 1 | [Tenable App](solutions/tenable-app.md) |
 | [Tenable Vulnerability Management](connectors/tenablevm.md) | Tenable | Azure Function | 5 | [Tenable App](solutions/tenable-app.md) |
-| [Tenable.ad](connectors/tenable.ad.md) | Tenable | MMA | 1 | [TenableAD](solutions/tenablead.md) |
+| [Tenable.ad](connectors/tenable.ad.md) ⚠️ | Tenable | MMA | 1 | [TenableAD](solutions/tenablead.md) |
 | [Tenable.io Vulnerability Management](connectors/tenableioapi.md) | Tenable | Azure Function | 2 | [TenableIO](solutions/tenableio.md) |
 | [Tenant-based Microsoft Defender for Cloud](connectors/microsoftdefenderforcloudtenantbased.md) | Microsoft | Native | 1 | [Microsoft Defender for Cloud](solutions/microsoft-defender-for-cloud.md) |
 | [TheHive Project - TheHive](connectors/thehiveprojectthehive.md) | TheHive Project | Azure Function | 1 | [TheHive](solutions/thehive.md) |
@@ -480,8 +485,11 @@ This page lists **525 unique connectors** across all solutions.
 | [Threat Intelligence Platforms](connectors/threatintelligence.md) | Microsoft | Native | 4 | [Threat Intelligence](solutions/threat-intelligence.md) |
 | [Threat Intelligence Upload API (Preview)](connectors/threatintelligenceuploadindicatorsapi.md) | Microsoft | Unknown | 3 | [Threat Intelligence](solutions/threat-intelligence.md) |
 | [Transmit Security Connector](connectors/transmitsecurity.md) | TransmitSecurity | Azure Function | 1 | [TransmitSecurity](solutions/transmitsecurity.md) |
-| [Trend Micro Cloud App Security](connectors/trendmicrocas.md) | Trend Micro | Azure Function | 1 | [Trend Micro Cloud App Security](solutions/trend-micro-cloud-app-security.md) |
+| [Trend Micro Cloud App Security](connectors/trendmicrocas.md) ⚠️ | Trend Micro | Azure Function | 1 | [Trend Micro Cloud App Security](solutions/trend-micro-cloud-app-security.md) |
 | [Trend Vision One](connectors/trendmicroxdr.md) | Trend Micro | Azure Function | 4 | [Trend Micro Vision One](solutions/trend-micro-vision-one.md) |
+| [Tropico Security - Alerts](connectors/tropicoalertsdefinition.md) | Tropico Security | CCF | 1 | [Tropico](solutions/tropico.md) |
+| [Tropico Security - Events](connectors/tropicoeventsdefinition.md) | Tropico Security | CCF | 1 | [Tropico](solutions/tropico.md) |
+| [Tropico Security - Incidents](connectors/tropicoincidentsdefinition.md) | Tropico Security | CCF | 1 | [Tropico](solutions/tropico.md) |
 
 ## V
 
@@ -497,7 +505,7 @@ This page lists **525 unique connectors** across all solutions.
 | [VMRayThreatIntelligence](connectors/vmray.md) | VMRay | Azure Function | 1 | [VMRay](solutions/vmray.md) |
 | [VMware Carbon Black Cloud](connectors/vmwarecarbonblack.md) | VMware | Azure Function | 3 | [VMware Carbon Black Cloud](solutions/vmware-carbon-black-cloud.md) |
 | [VMware Carbon Black Cloud via AWS S3](connectors/carbonblackawss3.md) | Microsoft | CCF | 7 | [VMware Carbon Black Cloud](solutions/vmware-carbon-black-cloud.md) |
-| [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) | VMware by Broadcom | Azure Function | 4 | [VMware SASE](solutions/vmware-sase.md) |
+| [VMware SD-WAN and SASE Connector](connectors/vmwaresdwan.md) ⚠️ | VMware by Broadcom | Azure Function | 4 | [VMware SASE](solutions/vmware-sase.md) |
 
 ## W
 
@@ -523,153 +531,153 @@ This page lists **525 unique connectors** across all solutions.
 | [Zimperium Mobile Threat Defense](connectors/zimperiummtdalerts.md) | Zimperium | Unknown (Custom Log) | 2 | [Zimperium Mobile Threat Defense](solutions/zimperium-mobile-threat-defense.md) |
 | [Zoom Reports](connectors/zoom.md) | Zoom | Azure Function | 1 | [ZoomReports](solutions/zoomreports.md) |
 
-## Deprecated Connectors
+## 🚫 Deprecated Connectors
 
 The following **143 connector(s)** are deprecated:
 
 | Connector | Publisher | Collection Method | Tables | Solution |
 |:----------|:----------|:------------------|:------:|:---------|
-| [[Deprecated] AI Analyst Darktrace via AMA](connectors/darktraceama.md) | Darktrace | AMA | 1 | [AI Analyst Darktrace](solutions/ai-analyst-darktrace.md) |
-| [[Deprecated] AI Analyst Darktrace via Legacy Agent](connectors/darktrace.md) | Darktrace | MMA | 1 | [AI Analyst Darktrace](solutions/ai-analyst-darktrace.md) |
-| [[Deprecated] Akamai Security Events via AMA](connectors/akamaisecurityeventsama.md) | Akamai | AMA | 1 | [Akamai Security Events](solutions/akamai-security-events.md) |
-| [[Deprecated] Akamai Security Events via Legacy Agent](connectors/akamaisecurityevents.md) | Akamai | MMA | 1 | [Akamai Security Events](solutions/akamai-security-events.md) |
-| [[Deprecated] Apache HTTP Server](connectors/apachehttpserver.md) | Apache | MMA | 1 | [ApacheHTTPServer](solutions/apachehttpserver.md) |
-| [[Deprecated] Apache Tomcat](connectors/apachetomcat.md) | Apache | MMA | 1 | [Tomcat](solutions/tomcat.md) |
-| [[Deprecated] Aruba ClearPass via AMA](connectors/arubaclearpassama.md) | Aruba Networks | AMA | 1 | [Aruba ClearPass](solutions/aruba-clearpass.md) |
-| [[Deprecated] Aruba ClearPass via Legacy Agent](connectors/arubaclearpass.md) | Aruba Networks | MMA | 1 | [Aruba ClearPass](solutions/aruba-clearpass.md) |
-| [[Deprecated] Atlassian Confluence Audit](connectors/confluenceauditapi.md) | Atlassian | Azure Function | 1 | [AtlassianConfluenceAudit](solutions/atlassianconfluenceaudit.md) |
-| [[Deprecated] Awake Security via Legacy Agent](connectors/aristaawakesecurity.md) | Arista Networks | MMA | 1 | [AristaAwakeSecurity](solutions/aristaawakesecurity.md) |
-| [[Deprecated] Barracuda CloudGen Firewall](connectors/barracudacloudfirewall.md) | Barracuda | MMA | 1 | [Barracuda CloudGen Firewall](solutions/barracuda-cloudgen-firewall.md) |
-| [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](connectors/barracuda.md) | Barracuda | MMA | 3 | [Barracuda WAF](solutions/barracuda-waf.md) |
-| [[Deprecated] Blackberry CylancePROTECT](connectors/blackberrycylanceprotect.md) | Blackberry | MMA | 3 | [Blackberry CylancePROTECT](solutions/blackberry-cylanceprotect.md) |
-| [[Deprecated] Broadcom Symantec DLP via AMA](connectors/broadcomsymantecdlpama.md) | Broadcom | AMA | 1 | [Broadcom SymantecDLP](solutions/broadcom-symantecdlp.md) |
-| [[Deprecated] Broadcom Symantec DLP via Legacy Agent](connectors/broadcomsymantecdlp.md) | Broadcom | MMA | 1 | [Broadcom SymantecDLP](solutions/broadcom-symantecdlp.md) |
-| [[Deprecated] Cisco Application Centric Infrastructure](connectors/ciscoaci.md) | Cisco | MMA | 1 | [Cisco ACI](solutions/cisco-aci.md) |
-| [[Deprecated] Cisco Firepower eStreamer via AMA](connectors/ciscofirepowerestreamerama.md) | Cisco | AMA | 1 | [Cisco Firepower EStreamer](solutions/cisco-firepower-estreamer.md) |
-| [[Deprecated] Cisco Firepower eStreamer via Legacy Agent](connectors/ciscofirepowerestreamer.md) | Cisco | MMA | 1 | [Cisco Firepower EStreamer](solutions/cisco-firepower-estreamer.md) |
-| [[Deprecated] Cisco Identity Services Engine](connectors/ciscoise.md) | Cisco | MMA | 1 | [Cisco ISE](solutions/cisco-ise.md) |
-| [[Deprecated] Cisco Meraki](connectors/ciscomeraki.md) | Cisco | MMA | 3 | [CiscoMeraki](solutions/ciscomeraki.md) |
-| [[Deprecated] Cisco Secure Cloud Analytics](connectors/stealthwatch.md) | Cisco | MMA | 1 | [Cisco Secure Cloud Analytics](solutions/cisco-secure-cloud-analytics.md) |
-| [[Deprecated] Cisco Secure Email Gateway via AMA](connectors/ciscosegama.md) | Cisco | AMA | 1 | [CiscoSEG](solutions/ciscoseg.md) |
-| [[Deprecated] Cisco Secure Email Gateway via Legacy Agent](connectors/ciscoseg.md) | Cisco | MMA | 1 | [CiscoSEG](solutions/ciscoseg.md) |
-| [[DEPRECATED] Cisco Secure Endpoint (AMP)](connectors/ciscosecureendpoint.md) | Cisco | Azure Function | 1 | [Cisco Secure Endpoint](solutions/cisco-secure-endpoint.md) |
-| [[Deprecated] Cisco UCS](connectors/ciscoucs.md) | Cisco | MMA | 2 | [Cisco UCS](solutions/cisco-ucs.md) |
-| [[Deprecated] Cisco Web Security Appliance](connectors/ciscowsa.md) | Cisco | MMA | 1 | [CiscoWSA](solutions/ciscowsa.md) |
-| [[Deprecated] Citrix ADC (former NetScaler)](connectors/citrixadc.md) | Citrix | MMA | 1 | [Citrix ADC](solutions/citrix-adc.md) |
-| [[Deprecated] Citrix WAF (Web App Firewall) via AMA](connectors/citrixwafama.md) | Citrix Systems Inc. | AMA | 1 | [Citrix Web App Firewall](solutions/citrix-web-app-firewall.md) |
-| [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](connectors/citrixwaf.md) | Citrix Systems Inc. | MMA | 1 | [Citrix Web App Firewall](solutions/citrix-web-app-firewall.md) |
-| [[Deprecated] Claroty via AMA](connectors/clarotyama.md) | Claroty | AMA | 1 | [Claroty](solutions/claroty.md) |
-| [[Deprecated] Claroty via Legacy Agent](connectors/claroty.md) | Claroty | MMA | 1 | [Claroty](solutions/claroty.md) |
-| [[DEPRECATED] Cloudflare](connectors/cloudflaredataconnector.md) | Cloudflare | Azure Function | 1 | [Cloudflare](solutions/cloudflare.md) |
-| [[Deprecated] Contrast Protect via AMA](connectors/contrastprotectama.md) | Contrast Security | AMA | 1 | [Contrast Protect](solutions/contrast-protect.md) |
-| [[Deprecated] Contrast Protect via Legacy Agent](connectors/contrastprotect.md) | Contrast Security | MMA | 1 | [Contrast Protect](solutions/contrast-protect.md) |
-| [[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA](connectors/crowdstrikefalconendpointprotectionama.md) | CrowdStrike | AMA | 1 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent](connectors/crowdstrikefalconendpointprotection.md) | CrowdStrike | MMA | 1 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [[Deprecated] CyberArk Enterprise Password Vault (EPV) Events via Legacy Agent](connectors/cyberark.md) | Cyber-Ark | MMA | 1 | [CyberArk Privilege Access Manager (PAM) Events](solutions/cyberark-privilege-access-manager-pam-events.md) |
-| [[Deprecated] CyberArk Privilege Access Manager (PAM) Events via AMA](connectors/cyberarkama.md) | Cyber-Ark | AMA | 1 | [CyberArk Privilege Access Manager (PAM) Events](solutions/cyberark-privilege-access-manager-pam-events.md) |
-| [[Deprecated] Delinea Secret Server via AMA](connectors/delineasecretserverama.md) | Delinea, Inc | AMA | 1 | [Delinea Secret Server](solutions/delinea-secret-server.md) |
-| [[Deprecated] Delinea Secret Server via Legacy Agent](connectors/delineasecretserver-cef.md) | Delinea, Inc | MMA | 1 | [Delinea Secret Server](solutions/delinea-secret-server.md) |
-| [[Deprecated] Digital Guardian Data Loss Prevention](connectors/digitalguardiandlp.md) | Digital Guardian | MMA | 1 | [Digital Guardian Data Loss Prevention](solutions/digital-guardian-data-loss-prevention.md) |
-| [[Deprecated] ESET PROTECT](connectors/esetprotect.md) | ESET | MMA | 1 | [ESETPROTECT](solutions/esetprotect.md) |
-| [[Deprecated] Exabeam Advanced Analytics](connectors/exabeam.md) | Exabeam | MMA | 1 | [Exabeam Advanced Analytics](solutions/exabeam-advanced-analytics.md) |
-| [[Deprecated] ExtraHop Reveal(x) via AMA](connectors/extrahopnetworksama.md) | ExtraHop Networks | AMA | 1 | [ExtraHop Reveal(x)](solutions/extrahop-reveal-x.md) |
-| [[Deprecated] ExtraHop Reveal(x) via Legacy Agent](connectors/extrahopnetworks.md) | ExtraHop Networks | MMA | 1 | [ExtraHop Reveal(x)](solutions/extrahop-reveal-x.md) |
-| [[Deprecated] F5 Networks via AMA](connectors/f5ama.md) | F5 Networks | AMA | 1 | [F5 Networks](solutions/f5-networks.md) |
-| [[Deprecated] F5 Networks via Legacy Agent](connectors/f5.md) | F5 Networks | MMA | 1 | [F5 Networks](solutions/f5-networks.md) |
-| [[Deprecated] FireEye Network Security (NX) via AMA](connectors/fireeyenxama.md) | FireEye | AMA | 1 | [FireEye Network Security](solutions/fireeye-network-security.md) |
-| [[Deprecated] FireEye Network Security (NX) via Legacy Agent](connectors/fireeyenx.md) | FireEye | MMA | 1 | [FireEye Network Security](solutions/fireeye-network-security.md) |
-| [[Deprecated] Forcepoint CASB via AMA](connectors/forcepointcasbama.md) | Forcepoint CASB | AMA | 1 | [Forcepoint CASB](solutions/forcepoint-casb.md) |
-| [[Deprecated] Forcepoint CASB via Legacy Agent](connectors/forcepointcasb.md) | Forcepoint CASB | MMA | 1 | [Forcepoint CASB](solutions/forcepoint-casb.md) |
-| [[Deprecated] Forcepoint CSG via AMA](connectors/forcepointcsgama.md) | Forcepoint | AMA | 1 | [Forcepoint CSG](solutions/forcepoint-csg.md) |
-| [[Deprecated] Forcepoint CSG via Legacy Agent](connectors/forcepointcsg.md) | Forcepoint | MMA | 1 | [Forcepoint CSG](solutions/forcepoint-csg.md) |
-| [[Deprecated] Forcepoint NGFW via AMA](connectors/forcepointngfwama.md) | Forcepoint | AMA | 1 | [Forcepoint NGFW](solutions/forcepoint-ngfw.md) |
-| [[Deprecated] Forcepoint NGFW via Legacy Agent](connectors/forcepointngfw.md) | Forcepoint | MMA | 1 | [Forcepoint NGFW](solutions/forcepoint-ngfw.md) |
-| [[Deprecated] ForgeRock Identity Platform](connectors/forgerock.md) | ForgeRock Inc | MMA | 1 | [ForgeRock Common Audit for CEF](solutions/forgerock-common-audit-for-cef.md) |
-| [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](connectors/fortinetfortiweb.md) | Microsoft | MMA | 1 | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
-| [[Deprecated] Fortinet via AMA](connectors/fortinetama.md) | Fortinet | AMA | 1 | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
-| [[Deprecated] Fortinet via Legacy Agent](connectors/fortinet.md) | Fortinet | MMA | 1 | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
-| [[Deprecated] GitHub Enterprise Audit Log](connectors/githubecauditlogpolling.md) | GitHub | CCF | 2 | [GitHub](solutions/github.md) |
-| [[Deprecated] GitLab](connectors/gitlab.md) | Microsoft | MMA | 1 | [GitLab](solutions/gitlab.md) |
-| [[DEPRECATED] Google ApigeeX](connectors/apigeexdataconnector.md) | Google | Azure Function | 1 | [Google Apigee](solutions/google-apigee.md) |
-| [[DEPRECATED] Google Cloud Platform Cloud Monitoring](connectors/gcpmonitordataconnector.md) | Google | Azure Function | 1 | [Google Cloud Platform Cloud Monitoring](solutions/google-cloud-platform-cloud-monitoring.md) |
-| [[DEPRECATED] Google Cloud Platform DNS](connectors/gcpdnsdataconnector.md) | Google | Azure Function | 1 | [GoogleCloudPlatformDNS](solutions/googlecloudplatformdns.md) |
-| [[DEPRECATED] Google Cloud Platform IAM](connectors/gcpiamdataconnector.md) | Google | Azure Function | 1 | [GoogleCloudPlatformIAM](solutions/googlecloudplatformiam.md) |
-| [[DEPRECATED] Google Workspace (G Suite)](connectors/googleworkspacereportsapi.md) | Google | Azure Function | 22 | [GoogleWorkspaceReports](solutions/googleworkspacereports.md) |
-| [[Deprecated] iboss via Legacy Agent](connectors/iboss.md) | iboss | MMA | 1 | [iboss](solutions/iboss.md) |
-| [[Deprecated] Illumio Core via AMA](connectors/illumiocoreama.md) | Illumio | AMA | 1 | [Illumio Core](solutions/illumio-core.md) |
-| [[Deprecated] Illumio Core via Legacy Agent](connectors/illumiocore.md) | Illumio | MMA | 1 | [Illumio Core](solutions/illumio-core.md) |
-| [[Deprecated] Illusive Platform via AMA](connectors/illusiveattackmanagementsystemama.md) | illusive | AMA | 1 | [Illusive Platform](solutions/illusive-platform.md) |
-| [[Deprecated] Illusive Platform via Legacy Agent](connectors/illusiveattackmanagementsystem.md) | illusive | MMA | 1 | [Illusive Platform](solutions/illusive-platform.md) |
-| [[Deprecated] Infoblox Cloud Data Connector via Legacy Agent](connectors/infobloxclouddataconnector.md) | Infoblox | MMA | 1 | [Infoblox Cloud Data Connector](solutions/infoblox-cloud-data-connector.md) |
-| [[Deprecated] Infoblox NIOS](connectors/infobloxnios.md) | Infoblox | MMA | 1 | [Infoblox NIOS](solutions/infoblox-nios.md) |
-| [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](connectors/infobloxsocinsightsdataconnector-legacy.md) | Infoblox | MMA | 1 | [Infoblox](solutions/infoblox.md) |
-| [[Deprecated] ISC Bind](connectors/iscbind.md) | ISC | MMA | 1 | [ISC Bind](solutions/isc-bind.md) |
-| [[Deprecated] Ivanti Unified Endpoint Management](connectors/ivantiuem.md) | Ivanti | MMA | 1 | [Ivanti Unified Endpoint Management](solutions/ivanti-unified-endpoint-management.md) |
-| [[Deprecated] JBoss Enterprise Application Platform](connectors/jbosseap.md) | Red Hat | MMA | 1 | [JBoss](solutions/jboss.md) |
-| [[Deprecated] Juniper IDP](connectors/juniperidp.md) | Juniper | MMA | 1 | [JuniperIDP](solutions/juniperidp.md) |
-| [[Deprecated] Juniper SRX](connectors/junipersrx.md) | Juniper | MMA | 1 | [Juniper SRX](solutions/juniper-srx.md) |
-| [[DEPRECATED] Lookout](connectors/lookoutapi.md) | Lookout | Azure Function | 1 | [Lookout](solutions/lookout.md) |
-| [[Deprecated] MarkLogic Audit](connectors/marklogic.md) | MarkLogic | MMA | 1 | [MarkLogicAudit](solutions/marklogicaudit.md) |
-| [[Deprecated] McAfee ePolicy Orchestrator (ePO)](connectors/mcafeeepo.md) | McAfee | MMA | 1 | [McAfee ePolicy Orchestrator](solutions/mcafee-epolicy-orchestrator.md) |
-| [[Deprecated] McAfee Network Security Platform](connectors/mcafeensp.md) | McAfee | MMA | 1 | [McAfee Network Security Platform](solutions/mcafee-network-security-platform.md) |
-| [[Deprecated] Microsoft Exchange Logs and Events](connectors/esi-exchangeadminauditlogevents.md) | Microsoft | MMA | 5 | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) |
-| [[Deprecated] Microsoft Sysmon For Linux](connectors/microsoftsysmonforlinux.md) | Microsoft | MMA | 1 | [Microsoft Sysmon For Linux](solutions/microsoft-sysmon-for-linux.md) |
-| [[Deprecated] MongoDB Audit](connectors/mongodb.md) | MongoDB | MMA | 1 | [MongoDBAudit](solutions/mongodbaudit.md) |
-| [[Deprecated] Nasuni Edge Appliance](connectors/nasuniedgeappliance.md) | Nasuni | MMA | 1 | [Nasuni](solutions/nasuni.md) |
-| [[Deprecated] Netwrix Auditor via AMA](connectors/netwrixama.md) | Netwrix | AMA | 1 | [Netwrix Auditor](solutions/netwrix-auditor.md) |
-| [[Deprecated] Netwrix Auditor via Legacy Agent](connectors/netwrix.md) | Netwrix | MMA | 1 | [Netwrix Auditor](solutions/netwrix-auditor.md) |
-| [[Deprecated] NGINX HTTP Server](connectors/nginxhttpserver.md) | Nginx | MMA | 1 | [NGINX HTTP Server](solutions/nginx-http-server.md) |
-| [[Deprecated] Nozomi Networks N2OS via AMA](connectors/nozominetworksn2osama.md) | Nozomi Networks | AMA | 1 | [NozomiNetworks](solutions/nozominetworks.md) |
-| [[Deprecated] Nozomi Networks N2OS via Legacy Agent](connectors/nozominetworksn2os.md) | Nozomi Networks | MMA | 1 | [NozomiNetworks](solutions/nozominetworks.md) |
-| [[Deprecated] Onapsis Platform](connectors/onapsisplatform.md) | Onapsis | MMA | 1 | [Onapsis Platform](solutions/onapsis-platform.md) |
-| [[DEPRECATED] OneLogin IAM Platform](connectors/onelogin.md) | OneLogin | Azure Function | 3 | [OneLoginIAM](solutions/oneloginiam.md) |
-| [[Deprecated] OpenVPN Server](connectors/openvpn.md) | OpenVPN | MMA | 1 | [OpenVPN](solutions/openvpn.md) |
-| [[DEPRECATED] Oracle Cloud Infrastructure](connectors/oraclecloudinfrastructurelogsconnector.md) | Oracle | Azure Function | 1 | [Oracle Cloud Infrastructure](solutions/oracle-cloud-infrastructure.md) |
-| [[Deprecated] Oracle Database Audit](connectors/oracledatabaseaudit.md) | Oracle | MMA | 1 | [OracleDatabaseAudit](solutions/oracledatabaseaudit.md) |
-| [[Deprecated] Oracle WebLogic Server](connectors/oracleweblogicserver.md) | Oracle | MMA | 1 | [OracleWebLogicServer](solutions/oracleweblogicserver.md) |
-| [[Deprecated] OSSEC via AMA](connectors/ossecama.md) | OSSEC | AMA | 1 | [OSSEC](solutions/ossec.md) |
-| [[Deprecated] OSSEC via Legacy Agent](connectors/ossec.md) | OSSEC | MMA | 1 | [OSSEC](solutions/ossec.md) |
-| [[Deprecated] Palo Alto Networks (Firewall) via AMA](connectors/paloaltonetworksama.md) | Palo Alto Networks | AMA | 1 | [PaloAlto-PAN-OS](solutions/paloalto-pan-os.md) |
-| [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](connectors/paloaltonetworks.md) | Palo Alto Networks | MMA | 1 | [PaloAlto-PAN-OS](solutions/paloalto-pan-os.md) |
-| [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via AMA](connectors/paloaltocdlama.md) | Palo Alto Networks | AMA | 1 | [PaloAltoCDL](solutions/paloaltocdl.md) |
-| [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via Legacy Agent](connectors/paloaltocdl.md) | Palo Alto Networks | MMA | 1 | [PaloAltoCDL](solutions/paloaltocdl.md) |
-| [[DEPRECATED] Palo Alto Prisma Cloud CSPM](connectors/paloaltoprismacloud.md) | Palo Alto | Azure Function | 2 | [PaloAltoPrismaCloud](solutions/paloaltoprismacloud.md) |
-| [[Deprecated] PingFederate via AMA](connectors/pingfederateama.md) | Ping Identity | AMA | 1 | [PingFederate](solutions/pingfederate.md) |
-| [[Deprecated] PingFederate via Legacy Agent](connectors/pingfederate.md) | Ping Identity | MMA | 1 | [PingFederate](solutions/pingfederate.md) |
-| [[Deprecated] PostgreSQL Events](connectors/postgresql.md) | PostgreSQL | MMA | 1 | [PostgreSQL](solutions/postgresql.md) |
-| [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) | Proofpoint | Azure Function | 6 | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) |
-| [[Deprecated] Proofpoint TAP](connectors/proofpointtap.md) | Proofpoint | Azure Function | 4 | [ProofPointTap](solutions/proofpointtap.md) |
-| [[Deprecated] Pulse Connect Secure](connectors/pulseconnectsecure.md) | Pulse Secure | MMA | 1 | [Pulse Connect Secure](solutions/pulse-connect-secure.md) |
-| [[DEPRECATED] Qualys Vulnerability Management](connectors/qualysvulnerabilitymanagement.md) | Qualys | Azure Function | 2 | [QualysVM](solutions/qualysvm.md) |
-| [[Deprecated] RIDGEBOT - data connector for Microsoft Sentinel](connectors/ridgebotdataconnector.md) | RidgeSecurity | AMA | 1 | [RidgeSecurity](solutions/ridgesecurity.md) |
-| [[Deprecated] RSA® SecurID (Authentication Manager)](connectors/rsasecuridam.md) | RSA | MMA | 1 | [RSA SecurID](solutions/rsa-securid.md) |
-| [[DEPRECATED] Salesforce Service Cloud](connectors/salesforceservicecloud.md) | Salesforce | Azure Function | 2 | [Salesforce Service Cloud](solutions/salesforce-service-cloud.md) |
-| [[DEPRECATED] Slack Audit](connectors/slackauditapi.md) | Slack | Azure Function | 3 | [SlackAudit](solutions/slackaudit.md) |
-| [[DEPRECATED] Snowflake](connectors/snowflakedataconnector.md) | Snowflake | Azure Function | 1 | [Snowflake](solutions/snowflake.md) |
-| [[Deprecated] SonicWall Firewall via AMA](connectors/sonicwallfirewallama.md) | SonicWall | AMA | 1 | [SonicWall Firewall](solutions/sonicwall-firewall.md) |
-| [[Deprecated] SonicWall Firewall via Legacy Agent](connectors/sonicwallfirewall.md) | SonicWall | MMA | 1 | [SonicWall Firewall](solutions/sonicwall-firewall.md) |
-| [[Deprecated] Sophos XG Firewall](connectors/sophosxgfirewall.md) | Sophos | MMA | 1 | [Sophos XG Firewall](solutions/sophos-xg-firewall.md) |
-| [[Deprecated] Squid Proxy](connectors/squidproxy.md) | Squid | MMA | 1 | [SquidProxy](solutions/squidproxy.md) |
-| [[Deprecated] Symantec Endpoint Protection](connectors/symantecendpointprotection.md) | Broadcom | MMA | 1 | [Symantec Endpoint Protection](solutions/symantec-endpoint-protection.md) |
-| [[Deprecated] Symantec ProxySG](connectors/symantecproxysg.md) | Symantec | MMA | 1 | [SymantecProxySG](solutions/symantecproxysg.md) |
-| [[Deprecated] Symantec VIP](connectors/symantecvip.md) | Symantec | MMA | 1 | [Symantec VIP](solutions/symantec-vip.md) |
-| [[Deprecated] Trend Micro Apex One via AMA](connectors/trendmicroapexoneama.md) | Trend Micro | AMA | 1 | [Trend Micro Apex One](solutions/trend-micro-apex-one.md) |
-| [[Deprecated] Trend Micro Apex One via Legacy Agent](connectors/trendmicroapexone.md) | Trend Micro | MMA | 1 | [Trend Micro Apex One](solutions/trend-micro-apex-one.md) |
-| [[Deprecated] Trend Micro Deep Security via Legacy](connectors/trendmicro.md) | Trend Micro | MMA | 1 | [Trend Micro Deep Security](solutions/trend-micro-deep-security.md) |
-| [[Deprecated] Trend Micro TippingPoint via Legacy](connectors/trendmicrotippingpoint.md) | Trend Micro | MMA | 1 | [Trend Micro TippingPoint](solutions/trend-micro-tippingpoint.md) |
-| [[Deprecated] Ubiquiti UniFi](connectors/ubiquitiunifi.md) | Ubiquiti | MMA | 1 | [Ubiquiti UniFi](solutions/ubiquiti-unifi.md) |
-| [[Deprecated] vArmour Application Controller via AMA](connectors/varmouracama.md) | vArmour | AMA | 1 | [vArmour Application Controller](solutions/varmour-application-controller.md) |
-| [[Deprecated] vArmour Application Controller via Legacy Agent](connectors/varmourac.md) | vArmour | MMA | 1 | [vArmour Application Controller](solutions/varmour-application-controller.md) |
-| [[Deprecated] Vectra AI Detect via AMA](connectors/aivectradetectama.md) | Vectra AI | AMA | 1 | [Vectra AI Detect](solutions/vectra-ai-detect.md) |
-| [[Deprecated] Vectra AI Detect via Legacy Agent](connectors/aivectradetect.md) | Vectra AI | MMA | 1 | [Vectra AI Detect](solutions/vectra-ai-detect.md) |
-| [[Deprecated] VMware ESXi](connectors/vmwareesxi.md) | VMWare | MMA | 1 | [VMWareESXi](solutions/vmwareesxi.md) |
-| [[Deprecated] VMware vCenter](connectors/vmwarevcenter.md) | VMware | MMA | 1 | [VMware vCenter](solutions/vmware-vcenter.md) |
-| [[Deprecated] Votiro Sanitization Engine Logs](connectors/votiro.md) | Votiro | MMA | 1 | [Votiro](solutions/votiro.md) |
-| [[Deprecated] WatchGuard Firebox](connectors/watchguardfirebox.md) | WatchGuard Technologies | MMA | 1 | [Watchguard Firebox](solutions/watchguard-firebox.md) |
-| [[Deprecated] WireX Network Forensics Platform via AMA](connectors/wirex-systems-nfpama.md) | WireX_Systems | AMA | 1 | [WireX Network Forensics Platform](solutions/wirex-network-forensics-platform.md) |
-| [[Deprecated] WireX Network Forensics Platform via Legacy Agent](connectors/wirex-systems-nfp.md) | WireX_Systems | MMA | 1 | [WireX Network Forensics Platform](solutions/wirex-network-forensics-platform.md) |
-| [[Deprecated] WithSecure Elements via Connector](connectors/withsecureelementsviaconnector.md) | WithSecure | MMA | 1 | [WithSecureElementsViaConnector](solutions/withsecureelementsviaconnector.md) |
-| [[Deprecated] Zscaler Private Access](connectors/zscalerprivateaccess.md) | Zscaler | MMA | 1 | [Zscaler Private Access (ZPA)](solutions/zscaler-private-access-zpa.md) |
-| [[Deprecated] Zscaler via AMA](connectors/zscalerama.md) | Zscaler | AMA | 1 | [Zscaler Internet Access](solutions/zscaler-internet-access.md) |
-| [[Deprecated] Zscaler via Legacy Agent](connectors/zscaler.md) | Zscaler | MMA | 1 | [Zscaler Internet Access](solutions/zscaler-internet-access.md) |
+| 🚫 [[Deprecated] AI Analyst Darktrace via AMA](connectors/darktraceama.md) ⚠️ | Darktrace | AMA | 1 | [AI Analyst Darktrace](solutions/ai-analyst-darktrace.md) |
+| 🚫 [[Deprecated] AI Analyst Darktrace via Legacy Agent](connectors/darktrace.md) ⚠️ | Darktrace | MMA | 1 | [AI Analyst Darktrace](solutions/ai-analyst-darktrace.md) |
+| 🚫 [[Deprecated] Akamai Security Events via AMA](connectors/akamaisecurityeventsama.md) | Akamai | AMA | 1 | [Akamai Security Events](solutions/akamai-security-events.md) |
+| 🚫 [[Deprecated] Akamai Security Events via Legacy Agent](connectors/akamaisecurityevents.md) | Akamai | MMA | 1 | [Akamai Security Events](solutions/akamai-security-events.md) |
+| 🚫 [[Deprecated] Apache HTTP Server](connectors/apachehttpserver.md) | Apache | MMA | 1 | [ApacheHTTPServer](solutions/apachehttpserver.md) |
+| 🚫 [[Deprecated] Apache Tomcat](connectors/apachetomcat.md) | Apache | MMA | 1 | [Tomcat](solutions/tomcat.md) |
+| 🚫 [[Deprecated] Aruba ClearPass via AMA](connectors/arubaclearpassama.md) | Aruba Networks | AMA | 1 | [Aruba ClearPass](solutions/aruba-clearpass.md) |
+| 🚫 [[Deprecated] Aruba ClearPass via Legacy Agent](connectors/arubaclearpass.md) | Aruba Networks | MMA | 1 | [Aruba ClearPass](solutions/aruba-clearpass.md) |
+| 🚫 [[Deprecated] Atlassian Confluence Audit](connectors/confluenceauditapi.md) | Atlassian | Azure Function | 1 | [AtlassianConfluenceAudit](solutions/atlassianconfluenceaudit.md) |
+| 🚫 [[Deprecated] Awake Security via Legacy Agent](connectors/aristaawakesecurity.md) | Arista Networks | MMA | 1 | [AristaAwakeSecurity](solutions/aristaawakesecurity.md) |
+| 🚫 [[Deprecated] Barracuda CloudGen Firewall](connectors/barracudacloudfirewall.md) | Barracuda | MMA | — | [Barracuda CloudGen Firewall](solutions/barracuda-cloudgen-firewall.md) |
+| 🚫 [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](connectors/barracuda.md) ⚠️ | Barracuda | MMA | 3 | [Barracuda WAF](solutions/barracuda-waf.md) |
+| 🚫 [[Deprecated] Blackberry CylancePROTECT](connectors/blackberrycylanceprotect.md) | Blackberry | MMA | — | [Blackberry CylancePROTECT](solutions/blackberry-cylanceprotect.md) |
+| 🚫 [[Deprecated] Broadcom Symantec DLP via AMA](connectors/broadcomsymantecdlpama.md) | Broadcom | AMA | 1 | [Broadcom SymantecDLP](solutions/broadcom-symantecdlp.md) |
+| 🚫 [[Deprecated] Broadcom Symantec DLP via Legacy Agent](connectors/broadcomsymantecdlp.md) | Broadcom | MMA | 1 | [Broadcom SymantecDLP](solutions/broadcom-symantecdlp.md) |
+| 🚫 [[Deprecated] Cisco Application Centric Infrastructure](connectors/ciscoaci.md) | Cisco | MMA | — | [Cisco ACI](solutions/cisco-aci.md) |
+| 🚫 [[Deprecated] Cisco Firepower eStreamer via AMA](connectors/ciscofirepowerestreamerama.md) | Cisco | AMA | 1 | [Cisco Firepower EStreamer](solutions/cisco-firepower-estreamer.md) |
+| 🚫 [[Deprecated] Cisco Firepower eStreamer via Legacy Agent](connectors/ciscofirepowerestreamer.md) | Cisco | MMA | 1 | [Cisco Firepower EStreamer](solutions/cisco-firepower-estreamer.md) |
+| 🚫 [[Deprecated] Cisco Identity Services Engine](connectors/ciscoise.md) | Cisco | MMA | — | [Cisco ISE](solutions/cisco-ise.md) |
+| 🚫 [[Deprecated] Cisco Meraki](connectors/ciscomeraki.md) | Cisco | MMA | — | [CiscoMeraki](solutions/ciscomeraki.md) |
+| 🚫 [[Deprecated] Cisco Secure Cloud Analytics](connectors/stealthwatch.md) | Cisco | MMA | — | [Cisco Secure Cloud Analytics](solutions/cisco-secure-cloud-analytics.md) |
+| 🚫 [[Deprecated] Cisco Secure Email Gateway via AMA](connectors/ciscosegama.md) | Cisco | AMA | 1 | [CiscoSEG](solutions/ciscoseg.md) |
+| 🚫 [[Deprecated] Cisco Secure Email Gateway via Legacy Agent](connectors/ciscoseg.md) | Cisco | MMA | — | [CiscoSEG](solutions/ciscoseg.md) |
+| 🚫 [[DEPRECATED] Cisco Secure Endpoint (AMP)](connectors/ciscosecureendpoint.md) | Cisco | Azure Function | 1 | [Cisco Secure Endpoint](solutions/cisco-secure-endpoint.md) |
+| 🚫 [[Deprecated] Cisco UCS](connectors/ciscoucs.md) | Cisco | MMA | — | [Cisco UCS](solutions/cisco-ucs.md) |
+| 🚫 [[Deprecated] Cisco Web Security Appliance](connectors/ciscowsa.md) | Cisco | MMA | — | [CiscoWSA](solutions/ciscowsa.md) |
+| 🚫 [[Deprecated] Citrix ADC (former NetScaler)](connectors/citrixadc.md) | Citrix | MMA | — | [Citrix ADC](solutions/citrix-adc.md) |
+| 🚫 [[Deprecated] Citrix WAF (Web App Firewall) via AMA](connectors/citrixwafama.md) | Citrix Systems Inc. | AMA | 1 | [Citrix Web App Firewall](solutions/citrix-web-app-firewall.md) |
+| 🚫 [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](connectors/citrixwaf.md) | Citrix Systems Inc. | MMA | 1 | [Citrix Web App Firewall](solutions/citrix-web-app-firewall.md) |
+| 🚫 [[Deprecated] Claroty via AMA](connectors/clarotyama.md) | Claroty | AMA | 1 | [Claroty](solutions/claroty.md) |
+| 🚫 [[Deprecated] Claroty via Legacy Agent](connectors/claroty.md) | Claroty | MMA | — | [Claroty](solutions/claroty.md) |
+| 🚫 [[DEPRECATED] Cloudflare](connectors/cloudflaredataconnector.md) | Cloudflare | Azure Function | 1 | [Cloudflare](solutions/cloudflare.md) |
+| 🚫 [[Deprecated] Contrast Protect via AMA](connectors/contrastprotectama.md) ⚠️ | Contrast Security | AMA | 1 | [Contrast Protect](solutions/contrast-protect.md) |
+| 🚫 [[Deprecated] Contrast Protect via Legacy Agent](connectors/contrastprotect.md) ⚠️ | Contrast Security | MMA | 1 | [Contrast Protect](solutions/contrast-protect.md) |
+| 🚫 [[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA](connectors/crowdstrikefalconendpointprotectionama.md) | CrowdStrike | AMA | 1 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
+| 🚫 [[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent](connectors/crowdstrikefalconendpointprotection.md) | CrowdStrike | MMA | 1 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
+| 🚫 [[Deprecated] CyberArk Enterprise Password Vault (EPV) Events via Legacy Agent](connectors/cyberark.md) | Cyber-Ark | MMA | 1 | [CyberArk Privilege Access Manager (PAM) Events](solutions/cyberark-privilege-access-manager-pam-events.md) |
+| 🚫 [[Deprecated] CyberArk Privilege Access Manager (PAM) Events via AMA](connectors/cyberarkama.md) | Cyber-Ark | AMA | 1 | [CyberArk Privilege Access Manager (PAM) Events](solutions/cyberark-privilege-access-manager-pam-events.md) |
+| 🚫 [[Deprecated] Delinea Secret Server via AMA](connectors/delineasecretserverama.md) | Delinea, Inc | AMA | 1 | [Delinea Secret Server](solutions/delinea-secret-server.md) |
+| 🚫 [[Deprecated] Delinea Secret Server via Legacy Agent](connectors/delineasecretserver-cef.md) | Delinea, Inc | MMA | 1 | [Delinea Secret Server](solutions/delinea-secret-server.md) |
+| 🚫 [[Deprecated] Digital Guardian Data Loss Prevention](connectors/digitalguardiandlp.md) | Digital Guardian | MMA | — | [Digital Guardian Data Loss Prevention](solutions/digital-guardian-data-loss-prevention.md) |
+| 🚫 [[Deprecated] ESET PROTECT](connectors/esetprotect.md) ⚠️ | ESET | MMA | — | [ESETPROTECT](solutions/esetprotect.md) |
+| 🚫 [[Deprecated] Exabeam Advanced Analytics](connectors/exabeam.md) | Exabeam | MMA | — | [Exabeam Advanced Analytics](solutions/exabeam-advanced-analytics.md) |
+| 🚫 [[Deprecated] ExtraHop Reveal(x) via AMA](connectors/extrahopnetworksama.md) | ExtraHop Networks | AMA | 1 | [ExtraHop Reveal(x)](solutions/extrahop-reveal-x.md) |
+| 🚫 [[Deprecated] ExtraHop Reveal(x) via Legacy Agent](connectors/extrahopnetworks.md) | ExtraHop Networks | MMA | 1 | [ExtraHop Reveal(x)](solutions/extrahop-reveal-x.md) |
+| 🚫 [[Deprecated] F5 Networks via AMA](connectors/f5ama.md) | F5 Networks | AMA | 1 | [F5 Networks](solutions/f5-networks.md) |
+| 🚫 [[Deprecated] F5 Networks via Legacy Agent](connectors/f5.md) | F5 Networks | MMA | 1 | [F5 Networks](solutions/f5-networks.md) |
+| 🚫 [[Deprecated] FireEye Network Security (NX) via AMA](connectors/fireeyenxama.md) | FireEye | AMA | 1 | [FireEye Network Security](solutions/fireeye-network-security.md) |
+| 🚫 [[Deprecated] FireEye Network Security (NX) via Legacy Agent](connectors/fireeyenx.md) | FireEye | MMA | — | [FireEye Network Security](solutions/fireeye-network-security.md) |
+| 🚫 [[Deprecated] Forcepoint CASB via AMA](connectors/forcepointcasbama.md) | Forcepoint CASB | AMA | 1 | [Forcepoint CASB](solutions/forcepoint-casb.md) |
+| 🚫 [[Deprecated] Forcepoint CASB via Legacy Agent](connectors/forcepointcasb.md) | Forcepoint CASB | MMA | 1 | [Forcepoint CASB](solutions/forcepoint-casb.md) |
+| 🚫 [[Deprecated] Forcepoint CSG via AMA](connectors/forcepointcsgama.md) | Forcepoint | AMA | 1 | [Forcepoint CSG](solutions/forcepoint-csg.md) |
+| 🚫 [[Deprecated] Forcepoint CSG via Legacy Agent](connectors/forcepointcsg.md) | Forcepoint | MMA | 1 | [Forcepoint CSG](solutions/forcepoint-csg.md) |
+| 🚫 [[Deprecated] Forcepoint NGFW via AMA](connectors/forcepointngfwama.md) | Forcepoint | AMA | 1 | [Forcepoint NGFW](solutions/forcepoint-ngfw.md) |
+| 🚫 [[Deprecated] Forcepoint NGFW via Legacy Agent](connectors/forcepointngfw.md) | Forcepoint | MMA | 1 | [Forcepoint NGFW](solutions/forcepoint-ngfw.md) |
+| 🚫 [[Deprecated] ForgeRock Identity Platform](connectors/forgerock.md) ⚠️ | ForgeRock Inc | MMA | 1 | [ForgeRock Common Audit for CEF](solutions/forgerock-common-audit-for-cef.md) |
+| 🚫 [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](connectors/fortinetfortiweb.md) | Microsoft | MMA | 1 | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
+| 🚫 [[Deprecated] Fortinet via AMA](connectors/fortinetama.md) | Fortinet | AMA | 1 | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
+| 🚫 [[Deprecated] Fortinet via Legacy Agent](connectors/fortinet.md) | Fortinet | MMA | 1 | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
+| 🚫 [[Deprecated] GitHub Enterprise Audit Log](connectors/githubecauditlogpolling.md) | GitHub | CCF | 1 | [GitHub](solutions/github.md) |
+| 🚫 [[Deprecated] GitLab](connectors/gitlab.md) | Microsoft | MMA | — | [GitLab](solutions/gitlab.md) |
+| 🚫 [[DEPRECATED] Google ApigeeX](connectors/apigeexdataconnector.md) | Google | Azure Function | 1 | [Google Apigee](solutions/google-apigee.md) |
+| 🚫 [[DEPRECATED] Google Cloud Platform Cloud Monitoring](connectors/gcpmonitordataconnector.md) | Google | Azure Function | 1 | [Google Cloud Platform Cloud Monitoring](solutions/google-cloud-platform-cloud-monitoring.md) |
+| 🚫 [[DEPRECATED] Google Cloud Platform DNS](connectors/gcpdnsdataconnector.md) | Google | Azure Function | 1 | [GoogleCloudPlatformDNS](solutions/googlecloudplatformdns.md) |
+| 🚫 [[DEPRECATED] Google Cloud Platform IAM](connectors/gcpiamdataconnector.md) | Google | Azure Function | 1 | [GoogleCloudPlatformIAM](solutions/googlecloudplatformiam.md) |
+| 🚫 [[DEPRECATED] Google Workspace (G Suite)](connectors/googleworkspacereportsapi.md) | Google | Azure Function | 7 | [GoogleWorkspaceReports](solutions/googleworkspacereports.md) |
+| 🚫 [[Deprecated] iboss via Legacy Agent](connectors/iboss.md) | iboss | MMA | 1 | [iboss](solutions/iboss.md) |
+| 🚫 [[Deprecated] Illumio Core via AMA](connectors/illumiocoreama.md) ⚠️ | Illumio | AMA | 1 | [Illumio Core](solutions/illumio-core.md) |
+| 🚫 [[Deprecated] Illumio Core via Legacy Agent](connectors/illumiocore.md) ⚠️ | Illumio | MMA | — | [Illumio Core](solutions/illumio-core.md) |
+| 🚫 [[Deprecated] Illusive Platform via AMA](connectors/illusiveattackmanagementsystemama.md) | illusive | AMA | 1 | [Illusive Platform](solutions/illusive-platform.md) |
+| 🚫 [[Deprecated] Illusive Platform via Legacy Agent](connectors/illusiveattackmanagementsystem.md) | illusive | MMA | 1 | [Illusive Platform](solutions/illusive-platform.md) |
+| 🚫 [[Deprecated] Infoblox Cloud Data Connector via Legacy Agent](connectors/infobloxclouddataconnector.md) ⚠️ | Infoblox | MMA | 1 | [Infoblox Cloud Data Connector](solutions/infoblox-cloud-data-connector.md) |
+| 🚫 [[Deprecated] Infoblox NIOS](connectors/infobloxnios.md) | Infoblox | MMA | — | [Infoblox NIOS](solutions/infoblox-nios.md) |
+| 🚫 [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](connectors/infobloxsocinsightsdataconnector-legacy.md) | Infoblox | MMA | 1 | [Infoblox](solutions/infoblox.md) |
+| 🚫 [[Deprecated] ISC Bind](connectors/iscbind.md) | ISC | MMA | — | [ISC Bind](solutions/isc-bind.md) |
+| 🚫 [[Deprecated] Ivanti Unified Endpoint Management](connectors/ivantiuem.md) | Ivanti | MMA | — | [Ivanti Unified Endpoint Management](solutions/ivanti-unified-endpoint-management.md) |
+| 🚫 [[Deprecated] JBoss Enterprise Application Platform](connectors/jbosseap.md) | Red Hat | MMA | 1 | [JBoss](solutions/jboss.md) |
+| 🚫 [[Deprecated] Juniper IDP](connectors/juniperidp.md) | Juniper | MMA | 1 | [JuniperIDP](solutions/juniperidp.md) |
+| 🚫 [[Deprecated] Juniper SRX](connectors/junipersrx.md) | Juniper | MMA | — | [Juniper SRX](solutions/juniper-srx.md) |
+| 🚫 [[DEPRECATED] Lookout](connectors/lookoutapi.md) | Lookout | Azure Function | 1 | [Lookout](solutions/lookout.md) |
+| 🚫 [[Deprecated] MarkLogic Audit](connectors/marklogic.md) | MarkLogic | MMA | 1 | [MarkLogicAudit](solutions/marklogicaudit.md) |
+| 🚫 [[Deprecated] McAfee ePolicy Orchestrator (ePO)](connectors/mcafeeepo.md) ⚠️ | McAfee | MMA | — | [McAfee ePolicy Orchestrator](solutions/mcafee-epolicy-orchestrator.md) |
+| 🚫 [[Deprecated] McAfee Network Security Platform](connectors/mcafeensp.md) ⚠️ | McAfee | MMA | — | [McAfee Network Security Platform](solutions/mcafee-network-security-platform.md) |
+| 🚫 [[Deprecated] Microsoft Exchange Logs and Events](connectors/esi-exchangeadminauditlogevents.md) | Microsoft | MMA | 5 | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| 🚫 [[Deprecated] Microsoft Sysmon For Linux](connectors/microsoftsysmonforlinux.md) | Microsoft | MMA | 1 | [Microsoft Sysmon For Linux](solutions/microsoft-sysmon-for-linux.md) |
+| 🚫 [[Deprecated] MongoDB Audit](connectors/mongodb.md) | MongoDB | MMA | 1 | [MongoDBAudit](solutions/mongodbaudit.md) |
+| 🚫 [[Deprecated] Nasuni Edge Appliance](connectors/nasuniedgeappliance.md) | Nasuni | MMA | 1 | [Nasuni](solutions/nasuni.md) |
+| 🚫 [[Deprecated] Netwrix Auditor via AMA](connectors/netwrixama.md) | Netwrix | AMA | 1 | [Netwrix Auditor](solutions/netwrix-auditor.md) |
+| 🚫 [[Deprecated] Netwrix Auditor via Legacy Agent](connectors/netwrix.md) | Netwrix | MMA | — | [Netwrix Auditor](solutions/netwrix-auditor.md) |
+| 🚫 [[Deprecated] NGINX HTTP Server](connectors/nginxhttpserver.md) | Nginx | MMA | 1 | [NGINX HTTP Server](solutions/nginx-http-server.md) |
+| 🚫 [[Deprecated] Nozomi Networks N2OS via AMA](connectors/nozominetworksn2osama.md) | Nozomi Networks | AMA | 1 | [NozomiNetworks](solutions/nozominetworks.md) |
+| 🚫 [[Deprecated] Nozomi Networks N2OS via Legacy Agent](connectors/nozominetworksn2os.md) | Nozomi Networks | MMA | — | [NozomiNetworks](solutions/nozominetworks.md) |
+| 🚫 [[Deprecated] Onapsis Platform](connectors/onapsisplatform.md) ⚠️ | Onapsis | MMA | 1 | [Onapsis Platform](solutions/onapsis-platform.md) |
+| 🚫 [[DEPRECATED] OneLogin IAM Platform](connectors/onelogin.md) | OneLogin | Azure Function | 1 | [OneLoginIAM](solutions/oneloginiam.md) |
+| 🚫 [[Deprecated] OpenVPN Server](connectors/openvpn.md) | OpenVPN | MMA | — | [OpenVPN](solutions/openvpn.md) |
+| 🚫 [[DEPRECATED] Oracle Cloud Infrastructure](connectors/oraclecloudinfrastructurelogsconnector.md) | Oracle | Azure Function | 1 | [Oracle Cloud Infrastructure](solutions/oracle-cloud-infrastructure.md) |
+| 🚫 [[Deprecated] Oracle Database Audit](connectors/oracledatabaseaudit.md) | Oracle | MMA | — | [OracleDatabaseAudit](solutions/oracledatabaseaudit.md) |
+| 🚫 [[Deprecated] Oracle WebLogic Server](connectors/oracleweblogicserver.md) | Oracle | MMA | 1 | [OracleWebLogicServer](solutions/oracleweblogicserver.md) |
+| 🚫 [[Deprecated] OSSEC via AMA](connectors/ossecama.md) | OSSEC | AMA | 1 | [OSSEC](solutions/ossec.md) |
+| 🚫 [[Deprecated] OSSEC via Legacy Agent](connectors/ossec.md) | OSSEC | MMA | — | [OSSEC](solutions/ossec.md) |
+| 🚫 [[Deprecated] Palo Alto Networks (Firewall) via AMA](connectors/paloaltonetworksama.md) | Palo Alto Networks | AMA | 1 | [PaloAlto-PAN-OS](solutions/paloalto-pan-os.md) |
+| 🚫 [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](connectors/paloaltonetworks.md) | Palo Alto Networks | MMA | 1 | [PaloAlto-PAN-OS](solutions/paloalto-pan-os.md) |
+| 🚫 [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via AMA](connectors/paloaltocdlama.md) | Palo Alto Networks | AMA | 1 | [PaloAltoCDL](solutions/paloaltocdl.md) |
+| 🚫 [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via Legacy Agent](connectors/paloaltocdl.md) | Palo Alto Networks | MMA | — | [PaloAltoCDL](solutions/paloaltocdl.md) |
+| 🚫 [[DEPRECATED] Palo Alto Prisma Cloud CSPM](connectors/paloaltoprismacloud.md) | Palo Alto | Azure Function | 2 | [PaloAltoPrismaCloud](solutions/paloaltoprismacloud.md) |
+| 🚫 [[Deprecated] PingFederate via AMA](connectors/pingfederateama.md) | Ping Identity | AMA | 1 | [PingFederate](solutions/pingfederate.md) |
+| 🚫 [[Deprecated] PingFederate via Legacy Agent](connectors/pingfederate.md) | Ping Identity | MMA | — | [PingFederate](solutions/pingfederate.md) |
+| 🚫 [[Deprecated] PostgreSQL Events](connectors/postgresql.md) | PostgreSQL | MMA | 1 | [PostgreSQL](solutions/postgresql.md) |
+| 🚫 [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) | Proofpoint | Azure Function | 2 | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) |
+| 🚫 [[Deprecated] Proofpoint TAP](connectors/proofpointtap.md) | Proofpoint | Azure Function | 4 | [ProofPointTap](solutions/proofpointtap.md) |
+| 🚫 [[Deprecated] Pulse Connect Secure](connectors/pulseconnectsecure.md) | Pulse Secure | MMA | — | [Pulse Connect Secure](solutions/pulse-connect-secure.md) |
+| 🚫 [[DEPRECATED] Qualys Vulnerability Management](connectors/qualysvulnerabilitymanagement.md) | Qualys | Azure Function | 2 | [QualysVM](solutions/qualysvm.md) |
+| 🚫 [[Deprecated] RIDGEBOT - data connector for Microsoft Sentinel](connectors/ridgebotdataconnector.md) | RidgeSecurity | AMA | 1 | [RidgeSecurity](solutions/ridgesecurity.md) |
+| 🚫 [[Deprecated] RSA® SecurID (Authentication Manager)](connectors/rsasecuridam.md) | RSA | MMA | — | [RSA SecurID](solutions/rsa-securid.md) |
+| 🚫 [[DEPRECATED] Salesforce Service Cloud](connectors/salesforceservicecloud.md) | Salesforce | Azure Function | 1 | [Salesforce Service Cloud](solutions/salesforce-service-cloud.md) |
+| 🚫 [[DEPRECATED] Slack Audit](connectors/slackauditapi.md) | Slack | Azure Function | 1 | [SlackAudit](solutions/slackaudit.md) |
+| 🚫 [[DEPRECATED] Snowflake](connectors/snowflakedataconnector.md) | Snowflake | Azure Function | 1 | [Snowflake](solutions/snowflake.md) |
+| 🚫 [[Deprecated] SonicWall Firewall via AMA](connectors/sonicwallfirewallama.md) | SonicWall | AMA | 1 | [SonicWall Firewall](solutions/sonicwall-firewall.md) |
+| 🚫 [[Deprecated] SonicWall Firewall via Legacy Agent](connectors/sonicwallfirewall.md) | SonicWall | MMA | 1 | [SonicWall Firewall](solutions/sonicwall-firewall.md) |
+| 🚫 [[Deprecated] Sophos XG Firewall](connectors/sophosxgfirewall.md) | Sophos | MMA | — | [Sophos XG Firewall](solutions/sophos-xg-firewall.md) |
+| 🚫 [[Deprecated] Squid Proxy](connectors/squidproxy.md) | Squid | MMA | 1 | [SquidProxy](solutions/squidproxy.md) |
+| 🚫 [[Deprecated] Symantec Endpoint Protection](connectors/symantecendpointprotection.md) | Broadcom | MMA | — | [Symantec Endpoint Protection](solutions/symantec-endpoint-protection.md) |
+| 🚫 [[Deprecated] Symantec ProxySG](connectors/symantecproxysg.md) | Symantec | MMA | — | [SymantecProxySG](solutions/symantecproxysg.md) |
+| 🚫 [[Deprecated] Symantec VIP](connectors/symantecvip.md) | Symantec | MMA | — | [Symantec VIP](solutions/symantec-vip.md) |
+| 🚫 [[Deprecated] Trend Micro Apex One via AMA](connectors/trendmicroapexoneama.md) | Trend Micro | AMA | 1 | [Trend Micro Apex One](solutions/trend-micro-apex-one.md) |
+| 🚫 [[Deprecated] Trend Micro Apex One via Legacy Agent](connectors/trendmicroapexone.md) | Trend Micro | MMA | — | [Trend Micro Apex One](solutions/trend-micro-apex-one.md) |
+| 🚫 [[Deprecated] Trend Micro Deep Security via Legacy](connectors/trendmicro.md) | Trend Micro | MMA | — | [Trend Micro Deep Security](solutions/trend-micro-deep-security.md) |
+| 🚫 [[Deprecated] Trend Micro TippingPoint via Legacy](connectors/trendmicrotippingpoint.md) | Trend Micro | MMA | — | [Trend Micro TippingPoint](solutions/trend-micro-tippingpoint.md) |
+| 🚫 [[Deprecated] Ubiquiti UniFi](connectors/ubiquitiunifi.md) | Ubiquiti | MMA | 1 | [Ubiquiti UniFi](solutions/ubiquiti-unifi.md) |
+| 🚫 [[Deprecated] vArmour Application Controller via AMA](connectors/varmouracama.md) | vArmour | AMA | 1 | [vArmour Application Controller](solutions/varmour-application-controller.md) |
+| 🚫 [[Deprecated] vArmour Application Controller via Legacy Agent](connectors/varmourac.md) | vArmour | MMA | 1 | [vArmour Application Controller](solutions/varmour-application-controller.md) |
+| 🚫 [[Deprecated] Vectra AI Detect via AMA](connectors/aivectradetectama.md) | Vectra AI | AMA | 1 | [Vectra AI Detect](solutions/vectra-ai-detect.md) |
+| 🚫 [[Deprecated] Vectra AI Detect via Legacy Agent](connectors/aivectradetect.md) | Vectra AI | MMA | 1 | [Vectra AI Detect](solutions/vectra-ai-detect.md) |
+| 🚫 [[Deprecated] VMware ESXi](connectors/vmwareesxi.md) | VMWare | MMA | — | [VMWareESXi](solutions/vmwareesxi.md) |
+| 🚫 [[Deprecated] VMware vCenter](connectors/vmwarevcenter.md) | VMware | MMA | 1 | [VMware vCenter](solutions/vmware-vcenter.md) |
+| 🚫 [[Deprecated] Votiro Sanitization Engine Logs](connectors/votiro.md) ⚠️ | Votiro | MMA | 1 | [Votiro](solutions/votiro.md) |
+| 🚫 [[Deprecated] WatchGuard Firebox](connectors/watchguardfirebox.md) | WatchGuard Technologies | MMA | — | [Watchguard Firebox](solutions/watchguard-firebox.md) |
+| 🚫 [[Deprecated] WireX Network Forensics Platform via AMA](connectors/wirex-systems-nfpama.md) | WireX_Systems | AMA | 1 | [WireX Network Forensics Platform](solutions/wirex-network-forensics-platform.md) |
+| 🚫 [[Deprecated] WireX Network Forensics Platform via Legacy Agent](connectors/wirex-systems-nfp.md) | WireX_Systems | MMA | 1 | [WireX Network Forensics Platform](solutions/wirex-network-forensics-platform.md) |
+| 🚫 [[Deprecated] WithSecure Elements via Connector](connectors/withsecureelementsviaconnector.md) ⚠️ | WithSecure | MMA | 1 | [WithSecureElementsViaConnector](solutions/withsecureelementsviaconnector.md) |
+| 🚫 [[Deprecated] Zscaler Private Access](connectors/zscalerprivateaccess.md) | Zscaler | MMA | 1 | [Zscaler Private Access (ZPA)](solutions/zscaler-private-access-zpa.md) |
+| 🚫 [[Deprecated] Zscaler via AMA](connectors/zscalerama.md) | Zscaler | AMA | 1 | [Zscaler Internet Access](solutions/zscaler-internet-access.md) |
+| 🚫 [[Deprecated] Zscaler via Legacy Agent](connectors/zscaler.md) | Zscaler | MMA | 1 | [Zscaler Internet Access](solutions/zscaler-internet-access.md) |
 
