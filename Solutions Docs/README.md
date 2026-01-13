@@ -30,10 +30,10 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | Metric | Total | Active | Deprecated | Unpublished |
 |:-------|------:|-------:|-----------:|------------:|
 | In Solutions | 382 | 154 | 143 | 85 |
-| Discovered* | 147 | - | - | - |
-| **Total** | **529** | - | - | - |
+| Discovered* | 147 | 27 | 114 | 6 |
+| **Total** | **529** | **181** | **257** | **91** |
 
-*\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions. They are not included in the breakdown by status.*
+*\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions.*
 
 ### Collection Methods
 
