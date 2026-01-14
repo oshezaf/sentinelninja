@@ -53,9 +53,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ApigeeX](../content/google-apigee-apigeex-d597b0df-ea3d-479f-97ea-8c90922437a1-7eaf19c0.md) | - | - |
+| [ApigeeX](../content/google-apigee-apigeex-d597b0df-ea3d-479f-97ea-8c90922437a1-7eaf19c0.md) | - | [`ApigeeX_CL`](../tables/apigeex-cl.md) *(read)*<br>[`GoogleApigeeXV2_CL`](../tables/googleapigeexv2-cl.md) *(read)* |
 | [ApigeeXV2](../content/google-apigee-apigeexv2-f44281ae-62a7-4043-b27a-aa6e438f3e1a-6924bb32.md) | - | - |
-| [Unified_ApigeeX](../content/google-apigee-unified-apigeex-6eae941d-8cdb-45c7-9896-aab2a6082dfb-96a25c59.md) | - | - |
+| [Unified_ApigeeX](../content/google-apigee-unified-apigeex-6eae941d-8cdb-45c7-9896-aab2a6082dfb-96a25c59.md) | - | [`ApigeeXV2_CL`](../tables/apigeexv2-cl.md) *(read)*<br>[`ApigeeX_CL`](../tables/apigeex-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -68,13 +68,7 @@ This solution includes **3 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

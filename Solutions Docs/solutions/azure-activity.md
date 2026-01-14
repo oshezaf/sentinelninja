@@ -34,7 +34,7 @@ This solution uses **2 table(s)**:
 
 ### Internal Tables
 
-The following **1 table(s)** are used internally by this solution's playbooks:
+The following **1 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -76,7 +76,7 @@ This solution includes **31 content item(s)**:
 | [Anomalous Azure Operation Hunting Model](../content/azure-activity-anomalous-azure-operation-hunting-model-43cb0347-bdcc-4e83-af5a-cebbd03971d8-cab991db.md) | LateralMovement, CredentialAccess | [`AzureActivity`](../tables/azureactivity.md) |
 | [Azure Machine Learning Write Operations](../content/azure-activity-azure-machine-learning-write-operations-26d116bd-324b-4bb8-b102-d4a282607ad7-c243c1ab.md) | InitialAccess, Execution, Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Azure Network Security Group NSG Administrative Operations](../content/azure-activity-azure-network-security-group-nsg-administrative-operations-e94d6756-981c-4f02-9a81-d006d80c8b41-633c60f3.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Azure VM Run Command executed from Azure IP address](../content/azure-activity-azure-vm-run-command-executed-from-azure-ip-address-efe843ca-3ce7-4896-9f8b-f2c374ae6527-1a85a75b.md) | LateralMovement, CredentialAccess | - |
+| [Azure VM Run Command executed from Azure IP address](../content/azure-activity-azure-vm-run-command-executed-from-azure-ip-address-efe843ca-3ce7-4896-9f8b-f2c374ae6527-1a85a75b.md) | LateralMovement, CredentialAccess | [`AzureActivity`](../tables/azureactivity.md) |
 | [Azure Virtual Network Subnets Administrative Operations](../content/azure-activity-azure-virtual-network-subnets-administrative-operations-57784ba5-7791-422e-916f-65ef94fe1dbb-9d2f39f9.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Azure storage key enumeration](../content/azure-activity-azure-storage-key-enumeration-5d2399f9-ea5c-4e67-9435-1fba745f3a39-dc9ad5ce.md) | Discovery | [`AzureActivity`](../tables/azureactivity.md) |
 | [AzureActivity Administration From VPS Providers](../content/azure-activity-azureactivity-administration-from-vps-providers-1b8779c9-abf2-444f-a21f-437b8f90ac4a-2a957dc6.md) | InitialAccess | [`AzureActivity`](../tables/azureactivity.md) |
@@ -107,13 +107,7 @@ This solution includes **31 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

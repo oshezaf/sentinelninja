@@ -2,20 +2,44 @@
 
 Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you to collect security data from various sources into your Log Analytics workspace. Each connector defines how data flows from a source system to Sentinel tables, including the collection method (such as Azure Functions, Diagnostic Settings, or Log Analytics Agent) and the target table schema.
 
-**Browse by:**
-
-- [Solutions](solutions-index.md)
-- [Connectors](connectors-index.md) (this page)
-- [Tables](tables-index.md)
-- [Content](content/content-index.md)
-- [ASIM Parsers](asim/asim-index.md)
-- [ASIM Products](asim/asim-products-index.md)
+**Browse:** [🏠](readme.md) · [Solutions](solutions-index.md) · **Connectors** · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md)
 
 ---
 
 > **Note:** This index covers connectors managed through Solutions in the Azure-Sentinel GitHub repository. A small number of connectors (such as Microsoft Dataverse, Microsoft Power Automate, Microsoft Power Platform Admin, and SAP connectors) are not managed via Solutions and are therefore not included here.
 
-## Overview
+## Statistics
+
+### Connectors Overview
+
+| Metric | Total | Active | Deprecated | Unpublished |
+|:-------|------:|-------:|-----------:|------------:|
+| In Solutions | 382 | 279 | 29 | 74 |
+| Discovered* | 147 | 22 | 114 | 11 |
+| **Total** | **529** | **301** | **143** | **85** |
+
+*\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions.*
+
+### Collection Methods
+
+| Collection Method | Total | Active | Deprecated | Unpublished |
+|:-----------------|------:|-------:|-----------:|------------:|
+| Azure Function | 129 | 75 | 18 | 36 |
+| CCF | 127 | 118 | 1 | 8 |
+| MMA | 110 | 12 | 90 | 8 |
+| AMA | 59 | 25 | 34 | 0 |
+| Unknown (Custom Log) | 44 | 35 | 0 | 9 |
+| Native | 25 | 24 | 0 | 1 |
+| Azure Diagnostics | 17 | 17 | 0 | 0 |
+| REST API | 15 | 7 | 0 | 8 |
+| Unknown | 3 | 3 | 0 | 0 |
+| **Total** | **529** | **316** | **143** | **70** |
+
+*Active = Published and not deprecated.*
+
+---
+
+## Connectors Index
 
 This page lists **529 unique connectors** across all solutions.
 
@@ -680,4 +704,8 @@ The following **143 connector(s)** are deprecated:
 | 🚫 [[Deprecated] Zscaler Private Access](connectors/zscalerprivateaccess.md) | Zscaler | MMA | 1 | [Zscaler Private Access (ZPA)](solutions/zscaler-private-access-zpa.md) |
 | 🚫 [[Deprecated] Zscaler via AMA](connectors/zscalerama.md) | Zscaler | AMA | 1 | [Zscaler Internet Access](solutions/zscaler-internet-access.md) |
 | 🚫 [[Deprecated] Zscaler via Legacy Agent](connectors/zscaler.md) | Zscaler | MMA | 1 | [Zscaler Internet Access](solutions/zscaler-internet-access.md) |
+
+---
+
+**Browse:** [🏠](readme.md) · [Solutions](solutions-index.md) · **Connectors** · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md)
 

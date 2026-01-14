@@ -30,6 +30,14 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
+
 ## Content Items
 
 This solution includes **4 content item(s)**:
@@ -44,20 +52,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/pulse-connect-secure-pulseconnectsecure-large-number-of-distinct-failed-user-logins-1fa1528e-f746-4794-8a41-14827f4cb798-146dc800.md) | Medium | CredentialAccess | - |
-| [PulseConnectSecure - Potential Brute Force Attempts](../content/pulse-connect-secure-pulseconnectsecure-potential-brute-force-attempts-34663177-8abf-4db1-b0a4-5683ab273f44-3cb9ad66.md) | Low | CredentialAccess | - |
+| [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/pulse-connect-secure-pulseconnectsecure-large-number-of-distinct-failed-user-logins-1fa1528e-f746-4794-8a41-14827f4cb798-146dc800.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
+| [PulseConnectSecure - Potential Brute Force Attempts](../content/pulse-connect-secure-pulseconnectsecure-potential-brute-force-attempts-34663177-8abf-4db1-b0a4-5683ab273f44-3cb9ad66.md) | Low | CredentialAccess | [`Syslog`](../tables/syslog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-56477077.md) | - |
+| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-56477077.md) | [`Syslog`](../tables/syslog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-7a608d43-10b5-4113-8d74-6478f05f2595-233f88ba.md) | - | - |
+| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-7a608d43-10b5-4113-8d74-6478f05f2595-233f88ba.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -72,13 +80,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

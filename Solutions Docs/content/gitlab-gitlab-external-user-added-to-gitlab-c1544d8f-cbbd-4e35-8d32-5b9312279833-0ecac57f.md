@@ -15,16 +15,15 @@ This queries GitLab Application logs to list external user accounts (i.e.: accou
 | **Required Connectors** | [SyslogAma](../connectors/syslogama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitLab/Analytic%20Rules/GitLab_ExternalUser.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`Syslog`](../tables/syslog.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to GitLab](../solutions/gitlab.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to GitLab](../solutions/gitlab.md)
 

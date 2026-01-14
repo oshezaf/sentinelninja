@@ -15,16 +15,16 @@ Rule helps to detect whenever there is an alert found which has urgent alert-typ
 | **Required Connectors** | [DataminrPulseAlerts](../connectors/dataminrpulsealerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse/Analytic%20Rules/DataminrSentinelAlerts.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)
+- [`watchlist`](../tables/watchlist.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to Dataminr Pulse](../solutions/dataminr-pulse.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Dataminr Pulse](../solutions/dataminr-pulse.md)
 

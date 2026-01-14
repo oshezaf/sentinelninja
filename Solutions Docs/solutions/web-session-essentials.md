@@ -61,7 +61,7 @@ This solution queries **1 table(s)** from its content items:
 
 ### Internal Tables
 
-The following **7 table(s)** are used internally by this solution's playbooks:
+The following **7 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -92,7 +92,7 @@ This solution includes **26 content item(s)**:
 | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Detect URLs containing known malicious keywords or commands (ASIM Web Session)](../content/web-session-essentials-detect-urls-containing-known-malicious-keywords-or-commands-asim-web-session-32c08696-2e37-4730-86f8-97d9c8b184c9-e787b1ad.md) | High | InitialAccess, CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md)<br>*Internal use:*<br>[`Watchlist`](../tables/watchlist.md) |
 | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Detect instances of multiple client errors occurring within a brief period of time (ASIM Web Session)](../content/web-session-essentials-detect-instances-of-multiple-client-errors-occurring-within-a-brief-period-of-tim-faa40333-1e8b-40cc-a003-51ae41fa886f-81de3667.md) | Medium | InitialAccess, CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md) |
 | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Detect instances of multiple server errors occurring within a brief period of time (ASIM Web Session)](../content/web-session-essentials-detect-instances-of-multiple-server-errors-occurring-within-a-brief-period-of-tim-a59ba76c-0205-4966-948e-3d5640140688-c9557003.md) | Medium | InitialAccess, Impact | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md) |
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Detect known risky user agents (ASIM Web Session)](../content/web-session-essentials-detect-known-risky-user-agents-asim-web-session-6a4dbcf8-f5e2-4b33-b34f-2db6487613f0-02ac6657.md) | Medium | InitialAccess, CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Detect known risky user agents (ASIM Web Session)](../content/web-session-essentials-detect-known-risky-user-agents-asim-web-session-6a4dbcf8-f5e2-4b33-b34f-2db6487613f0-02ac6657.md) | Medium | InitialAccess, CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md)<br>*Internal use:*<br>[`Watchlist`](../tables/watchlist.md) |
 | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Detect potential file enumeration activity (ASIM Web Session)](../content/web-session-essentials-detect-potential-file-enumeration-activity-asim-web-session-b3731ce1-1f04-47c4-95c2-9827408c4375-a932da88.md) | Medium | Discovery, CommandAndControl, CredentialAccess | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md) |
 | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Detect potential presence of a malicious file with a double extension (ASIM Web Session)](../content/web-session-essentials-detect-potential-presence-of-a-malicious-file-with-a-double-extension-asim-web-se-6a71687f-00cf-44d3-93fc-8cbacc7b5615-3eb819c9.md) | Medium | DefenseEvasion, Persistence, CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md) |
 | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Detect presence of private IP addresses in URLs (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-private-ip-addresses-in-urls-asim-web-session-e3a7722a-e099-45a9-9afb-6618e8f05405-224cd172.md) | Medium | Exfiltration, CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md) |
@@ -141,13 +141,7 @@ This solution includes **26 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

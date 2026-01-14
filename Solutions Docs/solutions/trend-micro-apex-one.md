@@ -38,7 +38,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Trend Micro Apex One via AMA](../connectors/trendmicroapexoneama.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Trend Micro Apex One via AMA](../connectors/trendmicroapexoneama.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -55,43 +55,43 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ApexOne - Attack Discovery Detection](../content/trend-micro-apex-one-apexone-attack-discovery-detection-7a3193b8-67b7-11ec-90d6-0242ac120003-a72ca676.md) | High | InitialAccess | - |
-| [ApexOne - C&C callback events](../content/trend-micro-apex-one-apexone-c&c-callback-events-1a87cd10-67b7-11ec-90d6-0242ac120003-9344779a.md) | High | CommandAndControl | - |
-| [ApexOne - Commands in Url](../content/trend-micro-apex-one-apexone-commands-in-url-4a9a5900-67b7-11ec-90d6-0242ac120003-d17dff8a.md) | High | InitialAccess | - |
-| [ApexOne - Device access permissions was changed](../content/trend-micro-apex-one-apexone-device-access-permissions-was-changed-b463b952-67b8-11ec-90d6-0242ac120003-865f571b.md) | Medium | PrivilegeEscalation | - |
-| [ApexOne - Inbound remote access connection](../content/trend-micro-apex-one-apexone-inbound-remote-access-connection-6303235a-ee70-42a4-b969-43e7b969b916-992a56b7.md) | High | LateralMovement | - |
-| [ApexOne - Multiple deny or terminate actions on single IP](../content/trend-micro-apex-one-apexone-multiple-deny-or-terminate-actions-on-single-ip-cd94e078-67b7-11ec-90d6-0242ac120003-d82f94a5.md) | High | InitialAccess | - |
-| [ApexOne - Possible exploit or execute operation](../content/trend-micro-apex-one-apexone-possible-exploit-or-execute-operation-e289d762-6cc2-11ec-90d6-0242ac120003-ccf90dbf.md) | High | PrivilegeEscalation, Persistence | - |
-| [ApexOne - Spyware with failed response](../content/trend-micro-apex-one-apexone-spyware-with-failed-response-c92d9fe4-67b6-11ec-90d6-0242ac120003-c437c42d.md) | High | InitialAccess | - |
-| [ApexOne - Suspicious commandline arguments](../content/trend-micro-apex-one-apexone-suspicious-commandline-arguments-4d7199b2-67b8-11ec-90d6-0242ac120003-ad589883.md) | High | Execution | - |
-| [ApexOne - Suspicious connections](../content/trend-micro-apex-one-apexone-suspicious-connections-9e3dc038-67b7-11ec-90d6-0242ac120003-1a074d22.md) | High | CommandAndControl | - |
+| [ApexOne - Attack Discovery Detection](../content/trend-micro-apex-one-apexone-attack-discovery-detection-7a3193b8-67b7-11ec-90d6-0242ac120003-a72ca676.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - C&C callback events](../content/trend-micro-apex-one-apexone-c&c-callback-events-1a87cd10-67b7-11ec-90d6-0242ac120003-9344779a.md) | High | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Commands in Url](../content/trend-micro-apex-one-apexone-commands-in-url-4a9a5900-67b7-11ec-90d6-0242ac120003-d17dff8a.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Device access permissions was changed](../content/trend-micro-apex-one-apexone-device-access-permissions-was-changed-b463b952-67b8-11ec-90d6-0242ac120003-865f571b.md) | Medium | PrivilegeEscalation | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Inbound remote access connection](../content/trend-micro-apex-one-apexone-inbound-remote-access-connection-6303235a-ee70-42a4-b969-43e7b969b916-992a56b7.md) | High | LateralMovement | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Multiple deny or terminate actions on single IP](../content/trend-micro-apex-one-apexone-multiple-deny-or-terminate-actions-on-single-ip-cd94e078-67b7-11ec-90d6-0242ac120003-d82f94a5.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Possible exploit or execute operation](../content/trend-micro-apex-one-apexone-possible-exploit-or-execute-operation-e289d762-6cc2-11ec-90d6-0242ac120003-ccf90dbf.md) | High | PrivilegeEscalation, Persistence | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Spyware with failed response](../content/trend-micro-apex-one-apexone-spyware-with-failed-response-c92d9fe4-67b6-11ec-90d6-0242ac120003-c437c42d.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Suspicious commandline arguments](../content/trend-micro-apex-one-apexone-suspicious-commandline-arguments-4d7199b2-67b8-11ec-90d6-0242ac120003-ad589883.md) | High | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Suspicious connections](../content/trend-micro-apex-one-apexone-suspicious-connections-9e3dc038-67b7-11ec-90d6-0242ac120003-1a074d22.md) | High | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [ApexOne - Behavior monitoring actions by files](../content/trend-micro-apex-one-apexone-behavior-monitoring-actions-by-files-96451e96-67b5-11ec-90d6-0242ac120003-87c1a703.md) | Execution | - |
-| [ApexOne - Behavior monitoring event types by users](../content/trend-micro-apex-one-apexone-behavior-monitoring-event-types-by-users-433ccdb0-67b6-11ec-90d6-0242ac120003-589eed1f.md) | Privilege Escalation, Persistence | - |
-| [ApexOne - Behavior monitoring operations by users](../content/trend-micro-apex-one-apexone-behavior-monitoring-operations-by-users-0caa3472-67b6-11ec-90d6-0242ac120003-1d28776b.md) | Execution | - |
-| [ApexOne - Behavior monitoring triggered policy by command line](../content/trend-micro-apex-one-apexone-behavior-monitoring-triggered-policy-by-command-line-14a4a824-67b6-11ec-90d6-0242ac120003-2c0ff361.md) | Execution | - |
-| [ApexOne - Channel type by users](../content/trend-micro-apex-one-apexone-channel-type-by-users-40d8ad3e-67b4-11ec-90d6-0242ac120003-e82a1272.md) | CommandandControl | - |
-| [ApexOne - Data loss prevention action by IP](../content/trend-micro-apex-one-apexone-data-loss-prevention-action-by-ip-6c7f9bfe-67b5-11ec-90d6-0242ac120003-b9cca4d4.md) | Collection | - |
-| [ApexOne - Rare application protocols by Ip address](../content/trend-micro-apex-one-apexone-rare-application-protocols-by-ip-address-be89944e-4e75-4d0a-b2d6-ae757d22ed43-0e863ded.md) | InitialAccess | - |
-| [ApexOne - Spyware detection](../content/trend-micro-apex-one-apexone-spyware-detection-506955be-648f-11ec-90d6-0242ac120003-42ec9672.md) | Execution | - |
-| [ApexOne - Suspicious files events](../content/trend-micro-apex-one-apexone-suspicious-files-events-7bf0f260-61a0-11ec-90d6-0242ac120003-58b95e02.md) | Execution | - |
-| [ApexOne - Top sources with alerts](../content/trend-micro-apex-one-apexone-top-sources-with-alerts-8bb86556-67b4-11ec-90d6-0242ac120003-9e3076ba.md) | Execution, InitialAccess, PrivilegeEscalation, DefenseEvasion, CommandAndControl, Exfiltration | - |
+| [ApexOne - Behavior monitoring actions by files](../content/trend-micro-apex-one-apexone-behavior-monitoring-actions-by-files-96451e96-67b5-11ec-90d6-0242ac120003-87c1a703.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Behavior monitoring event types by users](../content/trend-micro-apex-one-apexone-behavior-monitoring-event-types-by-users-433ccdb0-67b6-11ec-90d6-0242ac120003-589eed1f.md) | Privilege Escalation, Persistence | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Behavior monitoring operations by users](../content/trend-micro-apex-one-apexone-behavior-monitoring-operations-by-users-0caa3472-67b6-11ec-90d6-0242ac120003-1d28776b.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Behavior monitoring triggered policy by command line](../content/trend-micro-apex-one-apexone-behavior-monitoring-triggered-policy-by-command-line-14a4a824-67b6-11ec-90d6-0242ac120003-2c0ff361.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Channel type by users](../content/trend-micro-apex-one-apexone-channel-type-by-users-40d8ad3e-67b4-11ec-90d6-0242ac120003-e82a1272.md) | CommandandControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Data loss prevention action by IP](../content/trend-micro-apex-one-apexone-data-loss-prevention-action-by-ip-6c7f9bfe-67b5-11ec-90d6-0242ac120003-b9cca4d4.md) | Collection | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Rare application protocols by Ip address](../content/trend-micro-apex-one-apexone-rare-application-protocols-by-ip-address-be89944e-4e75-4d0a-b2d6-ae757d22ed43-0e863ded.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Spyware detection](../content/trend-micro-apex-one-apexone-spyware-detection-506955be-648f-11ec-90d6-0242ac120003-42ec9672.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Suspicious files events](../content/trend-micro-apex-one-apexone-suspicious-files-events-7bf0f260-61a0-11ec-90d6-0242ac120003-58b95e02.md) | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ApexOne - Top sources with alerts](../content/trend-micro-apex-one-apexone-top-sources-with-alerts-8bb86556-67b4-11ec-90d6-0242ac120003-9e3076ba.md) | Execution, InitialAccess, PrivilegeEscalation, DefenseEvasion, CommandAndControl, Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TrendMicroApexOne](../content/trend-micro-apex-one-trendmicroapexone-36972fb3.md) | - |
+| [TrendMicroApexOne](../content/trend-micro-apex-one-trendmicroapexone-36972fb3.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TMApexOneEvent](../content/trend-micro-apex-one-tmapexoneevent-9d6d5723-1769-43e2-8938-f5f0db89ccf7-fd47af22.md) | - | - |
+| [TMApexOneEvent](../content/trend-micro-apex-one-tmapexoneevent-9d6d5723-1769-43e2-8938-f5f0db89ccf7-fd47af22.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 
@@ -104,13 +104,7 @@ This solution includes **22 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

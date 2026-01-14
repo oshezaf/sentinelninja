@@ -14,16 +14,16 @@ This detection builds an allow list of historic service connection use by Builds
 | **Techniques** | T1098, T1496 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Analytic%20Rules/AzDOHistoricServiceConnectionAdds.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md)
+- [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
 

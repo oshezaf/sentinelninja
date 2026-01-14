@@ -37,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Cisco Secure Email Gateway via AMA](../connectors/ciscosegama.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Cisco Secure Email Gateway via AMA](../connectors/ciscosegama.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -54,44 +54,44 @@ This solution includes **23 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cisco SEG - DLP policy violation](../content/ciscoseg-cisco-seg-dlp-policy-violation-df5c34dd-e1e6-4e07-90b1-4309ebfe754c-96f99f96.md) | Medium | Exfiltration | - |
-| [Cisco SEG - Malicious attachment not blocked](../content/ciscoseg-cisco-seg-malicious-attachment-not-blocked-236e872c-31d1-4b45-ac2a-fda3af465c97-7e651da0.md) | High | InitialAccess | - |
-| [Cisco SEG - Multiple large emails sent to external recipient](../content/ciscoseg-cisco-seg-multiple-large-emails-sent-to-external-recipient-1399a9a5-6200-411e-8c34-ca5658754cf7-2d76e97f.md) | Medium | Exfiltration | - |
-| [Cisco SEG - Multiple suspiciuos attachments received](../content/ciscoseg-cisco-seg-multiple-suspiciuos-attachments-received-dfdb9a73-4335-4bb4-b29b-eb713bce61a6-8ef60726.md) | High | InitialAccess | - |
-| [Cisco SEG - Possible outbreak](../content/ciscoseg-cisco-seg-possible-outbreak-53242559-95ea-4d4c-b003-107e8f06304b-e012a15d.md) | Medium | InitialAccess | - |
-| [Cisco SEG - Potential phishing link](../content/ciscoseg-cisco-seg-potential-phishing-link-2e5158e1-9fc2-40ff-a909-c701a13a0405-0b87976a.md) | Medium | InitialAccess | - |
-| [Cisco SEG - Suspicious link](../content/ciscoseg-cisco-seg-suspicious-link-506291dd-8050-4c98-a92f-58e376080a0a-090fa657.md) | High | InitialAccess | - |
-| [Cisco SEG - Suspicious sender domain](../content/ciscoseg-cisco-seg-suspicious-sender-domain-ef0a253c-95b5-48e1-8ebc-dbeb073b9338-8e5c2362.md) | Medium | InitialAccess | - |
-| [Cisco SEG - Unexpected attachment](../content/ciscoseg-cisco-seg-unexpected-attachment-f8ba18c4-81e3-4db0-8f85-4989f2ed2ade-f10c8136.md) | High | InitialAccess | - |
-| [Cisco SEG - Unexpected link](../content/ciscoseg-cisco-seg-unexpected-link-9cb4a02d-3708-42ba-b33b-0fdd360ce4b6-603d8991.md) | Medium | InitialAccess | - |
-| [Cisco SEG - Unscannable attacment](../content/ciscoseg-cisco-seg-unscannable-attacment-c66b8ced-8c76-415b-a0f3-08c7030a857d-d10ee3f4.md) | Medium | InitialAccess | - |
+| [Cisco SEG - DLP policy violation](../content/ciscoseg-cisco-seg-dlp-policy-violation-df5c34dd-e1e6-4e07-90b1-4309ebfe754c-96f99f96.md) | Medium | Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Malicious attachment not blocked](../content/ciscoseg-cisco-seg-malicious-attachment-not-blocked-236e872c-31d1-4b45-ac2a-fda3af465c97-7e651da0.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Multiple large emails sent to external recipient](../content/ciscoseg-cisco-seg-multiple-large-emails-sent-to-external-recipient-1399a9a5-6200-411e-8c34-ca5658754cf7-2d76e97f.md) | Medium | Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Multiple suspiciuos attachments received](../content/ciscoseg-cisco-seg-multiple-suspiciuos-attachments-received-dfdb9a73-4335-4bb4-b29b-eb713bce61a6-8ef60726.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Possible outbreak](../content/ciscoseg-cisco-seg-possible-outbreak-53242559-95ea-4d4c-b003-107e8f06304b-e012a15d.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Potential phishing link](../content/ciscoseg-cisco-seg-potential-phishing-link-2e5158e1-9fc2-40ff-a909-c701a13a0405-0b87976a.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Suspicious link](../content/ciscoseg-cisco-seg-suspicious-link-506291dd-8050-4c98-a92f-58e376080a0a-090fa657.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Suspicious sender domain](../content/ciscoseg-cisco-seg-suspicious-sender-domain-ef0a253c-95b5-48e1-8ebc-dbeb073b9338-8e5c2362.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Unexpected attachment](../content/ciscoseg-cisco-seg-unexpected-attachment-f8ba18c4-81e3-4db0-8f85-4989f2ed2ade-f10c8136.md) | High | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Unexpected link](../content/ciscoseg-cisco-seg-unexpected-link-9cb4a02d-3708-42ba-b33b-0fdd360ce4b6-603d8991.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Unscannable attacment](../content/ciscoseg-cisco-seg-unscannable-attacment-c66b8ced-8c76-415b-a0f3-08c7030a857d-d10ee3f4.md) | Medium | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Cisco SEG - DKIM failures](../content/ciscoseg-cisco-seg-dkim-failures-d7ea4577-1192-49da-96a2-b6d8219c6ac0-0f156528.md) | InitialAccess | - |
-| [Cisco SEG - DMARK failures](../content/ciscoseg-cisco-seg-dmark-failures-8bd157d3-2613-4a36-83e2-ec55332ed7f7-116b51a1.md) | InitialAccess | - |
-| [Cisco SEG - Dropped incoming mails](../content/ciscoseg-cisco-seg-dropped-incoming-mails-efb45608-3955-4915-8a46-ef5d7160cef7-ca1522f6.md) | InitialAccess | - |
-| [Cisco SEG - Dropped outgoing mails](../content/ciscoseg-cisco-seg-dropped-outgoing-mails-805b5625-8a04-4ca5-bab5-7c8cb383b3e3-8e66b7fb.md) | Exfiltration | - |
-| [Cisco SEG - Failed incoming TLS connections](../content/ciscoseg-cisco-seg-failed-incoming-tls-connections-4511f6a0-c174-4ccc-a851-24b14022e217-40bf1781.md) | InitialAccess | - |
-| [Cisco SEG - Failed outgoing TLS connections](../content/ciscoseg-cisco-seg-failed-outgoing-tls-connections-aeb733e3-34e9-4724-97c7-c6ad31ea39e5-b30250d9.md) | Impact | - |
-| [Cisco SEG - Insecure protocol](../content/ciscoseg-cisco-seg-insecure-protocol-2389de0a-f53f-4a11-b01b-1adce5f26287-8a5004c8.md) | Impact | - |
-| [Cisco SEG - SPF failures](../content/ciscoseg-cisco-seg-spf-failures-215a747d-5a5e-4596-b399-85ff5cc572bd-f535331c.md) | InitialAccess | - |
-| [Cisco SEG - Sources of spam mails](../content/ciscoseg-cisco-seg-sources-of-spam-mails-7895ffa5-cd61-43cf-89e5-9630e79685fd-1d6f85cd.md) | InitialAccess | - |
-| [Cisco SEG - Top users receiving spam mails](../content/ciscoseg-cisco-seg-top-users-receiving-spam-mails-064b1051-d8ac-4ef2-a537-30d32b4c27d9-e16d1fea.md) | InitialAccess | - |
+| [Cisco SEG - DKIM failures](../content/ciscoseg-cisco-seg-dkim-failures-d7ea4577-1192-49da-96a2-b6d8219c6ac0-0f156528.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - DMARK failures](../content/ciscoseg-cisco-seg-dmark-failures-8bd157d3-2613-4a36-83e2-ec55332ed7f7-116b51a1.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Dropped incoming mails](../content/ciscoseg-cisco-seg-dropped-incoming-mails-efb45608-3955-4915-8a46-ef5d7160cef7-ca1522f6.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Dropped outgoing mails](../content/ciscoseg-cisco-seg-dropped-outgoing-mails-805b5625-8a04-4ca5-bab5-7c8cb383b3e3-8e66b7fb.md) | Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Failed incoming TLS connections](../content/ciscoseg-cisco-seg-failed-incoming-tls-connections-4511f6a0-c174-4ccc-a851-24b14022e217-40bf1781.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Failed outgoing TLS connections](../content/ciscoseg-cisco-seg-failed-outgoing-tls-connections-aeb733e3-34e9-4724-97c7-c6ad31ea39e5-b30250d9.md) | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Insecure protocol](../content/ciscoseg-cisco-seg-insecure-protocol-2389de0a-f53f-4a11-b01b-1adce5f26287-8a5004c8.md) | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - SPF failures](../content/ciscoseg-cisco-seg-spf-failures-215a747d-5a5e-4596-b399-85ff5cc572bd-f535331c.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Sources of spam mails](../content/ciscoseg-cisco-seg-sources-of-spam-mails-7895ffa5-cd61-43cf-89e5-9630e79685fd-1d6f85cd.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Cisco SEG - Top users receiving spam mails](../content/ciscoseg-cisco-seg-top-users-receiving-spam-mails-064b1051-d8ac-4ef2-a537-30d32b4c27d9-e16d1fea.md) | InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoSEG](../content/ciscoseg-ciscoseg-8d0b6fd3.md) | - |
+| [CiscoSEG](../content/ciscoseg-ciscoseg-8d0b6fd3.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoSEGEvent](../content/ciscoseg-ciscosegevent-90ff11ee-9bb2-410d-a25f-728a889e7ccc-bb048a59.md) | - | - |
+| [CiscoSEGEvent](../content/ciscoseg-ciscosegevent-90ff11ee-9bb2-410d-a25f-728a889e7ccc-bb048a59.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 
@@ -106,13 +106,7 @@ This solution includes **23 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

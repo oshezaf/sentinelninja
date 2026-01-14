@@ -37,12 +37,12 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) | [Wiz](../connectors/wiz.md) | - |
-| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) | [Wiz](../connectors/wiz.md) | - |
+| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
 | [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
 | [`WizIssues_CL`](../tables/wizissues-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) | [Wiz](../connectors/wiz.md) | - |
-| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) | [Wiz](../connectors/wiz.md) | - |
+| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
 
 ## Content Items
 
@@ -56,7 +56,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [WizFindings](../content/wiz-wizfindings-78285767.md) | [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md)<br>[`WizIssues_CL`](../tables/wizissues-cl.md) |
+| [WizFindings](../content/wiz-wizfindings-78285767.md) | [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md)<br>[`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md)<br>[`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md)<br>[`WizIssues_CL`](../tables/wizissues-cl.md)<br>[`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md)<br>[`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) |
 
 ## Release Notes
 
@@ -67,13 +67,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

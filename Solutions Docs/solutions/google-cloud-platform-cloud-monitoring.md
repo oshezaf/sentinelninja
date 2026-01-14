@@ -53,7 +53,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GCP_MONITOR](../content/google-cloud-platform-cloud-monitoring-gcp-monitor-d2972be4-978f-41fb-88e7-e0c10569a49f-419e4a1b.md) | - | - |
+| [GCP_MONITOR](../content/google-cloud-platform-cloud-monitoring-gcp-monitor-d2972be4-978f-41fb-88e7-e0c10569a49f-419e4a1b.md) | - | [`GCP_MONITORINGV2_CL`](../tables/gcp-monitoringv2-cl.md) *(read)*<br>[`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -65,13 +65,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

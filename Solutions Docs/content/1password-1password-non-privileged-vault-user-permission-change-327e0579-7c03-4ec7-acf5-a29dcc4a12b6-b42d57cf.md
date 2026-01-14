@@ -14,16 +14,15 @@ This will alert when user permissions have changed within a non-privileged vault
 | **Required Connectors** | [1Password](../connectors/1password.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password/Analytics%20Rules/1Password%20-%20Non-privileged%20vault%20user%20permission%20change.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to 1Password](../solutions/1password.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to 1Password](../solutions/1password.md)
 

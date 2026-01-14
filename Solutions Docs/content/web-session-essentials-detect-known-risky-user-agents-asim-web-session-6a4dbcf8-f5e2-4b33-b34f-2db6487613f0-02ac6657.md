@@ -20,16 +20,15 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 - [`_Im_WebSession`](../asim/imwebsession.md)
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`Watchlist`](../tables/watchlist.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to Web Session Essentials](../solutions/web-session-essentials.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Web Session Essentials](../solutions/web-session-essentials.md)
 

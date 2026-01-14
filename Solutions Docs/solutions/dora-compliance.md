@@ -27,17 +27,18 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **3 table(s)** from its content items:
+This solution queries **4 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | Workbooks |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
+| [`Event`](../tables/event.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
 
 ### Internal Tables
 
-The following **3 table(s)** are used internally by this solution's playbooks:
+The following **3 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -57,7 +58,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) | [`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) | [`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`Event`](../tables/event.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ## Release Notes
 
@@ -67,13 +68,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

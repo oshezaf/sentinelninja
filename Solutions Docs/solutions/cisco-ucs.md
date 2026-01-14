@@ -42,7 +42,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoUCS](../content/cisco-ucs-ciscoucs-363f8744-f75c-4500-be8d-92e4e5b0c1bf-ec56fe47.md) | - | - |
+| [CiscoUCS](../content/cisco-ucs-ciscoucs-363f8744-f75c-4500-be8d-92e4e5b0c1bf-ec56fe47.md) | - | [`EVENT`](../tables/event.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -54,13 +54,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

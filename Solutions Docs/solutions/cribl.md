@@ -47,10 +47,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CriblAccess](../content/cribl-criblaccess-eb7323cf-8cad-42bd-921b-5e18b907002a-f8b653a0.md) | - | - |
-| [CriblAudit](../content/cribl-criblaudit-f5e93f79-9e3c-4505-a52e-e634988a8bdb-13f30e88.md) | - | - |
-| [CriblInternal](../content/cribl-criblinternal-b934592c-d6b6-48f3-949e-415658687c8e-3430f139.md) | - | - |
-| [CriblUIAccess](../content/cribl-cribluiaccess-8bc08089-197d-452e-bb5b-3bdf4b8a95b0-aadb1b5a.md) | - | - |
+| [CriblAccess](../content/cribl-criblaccess-eb7323cf-8cad-42bd-921b-5e18b907002a-f8b653a0.md) | - | [`CriblAccess_CL`](../tables/criblaccess-cl.md) *(read)* |
+| [CriblAudit](../content/cribl-criblaudit-f5e93f79-9e3c-4505-a52e-e634988a8bdb-13f30e88.md) | - | [`CriblAudit_CL`](../tables/criblaudit-cl.md) *(read)* |
+| [CriblInternal](../content/cribl-criblinternal-b934592c-d6b6-48f3-949e-415658687c8e-3430f139.md) | - | [`CriblInternal_CL`](../tables/criblinternal-cl.md) *(read)* |
+| [CriblUIAccess](../content/cribl-cribluiaccess-8bc08089-197d-452e-bb5b-3bdf4b8a95b0-aadb1b5a.md) | - | [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -61,13 +61,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -15,16 +15,16 @@ Identifies evidence of brute force activity against a user based on multiple aut
 | **Required Connectors** | [SalesforceServiceCloudCCPDefinition](../connectors/salesforceservicecloudccpdefinition.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Analytic%20Rules/Salesforce-BruteForce.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)
+- [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
 

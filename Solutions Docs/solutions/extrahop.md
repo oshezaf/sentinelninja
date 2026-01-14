@@ -30,11 +30,11 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | - |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | Analytics, Workbooks |
 
 ### Internal Tables
 
-The following **1 table(s)** are used internally by this solution's playbooks:
+The following **1 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -54,19 +54,19 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Generate alerts based on ExtraHop detections recommended for triage](../content/extrahop-generate-alerts-based-on-extrahop-detections-recommended-for-triage-cd65aebc-7e85-4cbb-9f91-ff0376c5d37d-c70bea70.md) | Medium | Persistence | - |
+| [Generate alerts based on ExtraHop detections recommended for triage](../content/extrahop-generate-alerts-based-on-extrahop-detections-recommended-for-triage-cd65aebc-7e85-4cbb-9f91-ff0376c5d37d-c70bea70.md) | Medium | Persistence | [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview-b10f683c.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview-b10f683c.md) | [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExtraHopDetections](../content/extrahop-extrahopdetections-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197-29a8546c.md) | - | - |
+| [ExtraHopDetections](../content/extrahop-extrahopdetections-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197-29a8546c.md) | - | [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -77,13 +77,7 @@ This solution includes **3 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

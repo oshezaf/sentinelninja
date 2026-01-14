@@ -22,7 +22,7 @@ Reference for CommonSecurityLog table in Azure Monitor Logs.
 - 📚 **Vendor CEF Guide:** [Citrix/NetScaler WAF](https://docs.netscaler.com/en-us/citrix-adc/current-release/application-firewall/logs.html) - Application Firewall logs
 - 📚 **Vendor CEF Guide:** [Symantec Endpoint Protection](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Monitoring-Reporting-and-Enforcing-Compliance/viewing-logs-v7522439-d37e464/about-the-types-of-logs-v8156418-d37e6.html) - Log types reference
 
-## Solutions (77)
+## Solutions (80)
 
 This table is used by the following solutions:
 
@@ -43,10 +43,12 @@ This table is used by the following solutions:
 - [Claroty](../solutions/claroty.md)
 - [Claroty xDome](../solutions/claroty-xdome.md)
 - [Common Event Format](../solutions/common-event-format.md)
+- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [Contrast Protect](../solutions/contrast-protect.md)
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [CyberArk Privilege Access Manager (PAM) Events](../solutions/cyberark-privilege-access-manager-pam-events.md)
 - [Cyware](../solutions/cyware.md)
+- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Delinea Secret Server](../solutions/delinea-secret-server.md)
 - [Endace](../solutions/endace.md)
 - [ExtraHop Reveal(x)](../solutions/extrahop-reveal-x.md)
@@ -93,6 +95,7 @@ This table is used by the following solutions:
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Trend Micro Apex One](../solutions/trend-micro-apex-one.md)
+- [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md)
 - [Vectra AI Detect](../solutions/vectra-ai-detect.md)
 - [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)
 - [Votiro](../solutions/votiro.md)
@@ -261,9 +264,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 ---
 
-## Content Items Using This Table (127)
+## Content Items Using This Table (269)
 
-### Analytic Rules (58)
+### Analytic Rules (132)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 - [Acronis - Login from Abnormal IP - Low Occurrence](../content/acronis-cyber-protect-cloud-acronis-login-from-abnormal-ip-low-occurrence-84037130-a623-46c2-9144-0c0955ac4112-5d101d22.md)
@@ -283,14 +286,46 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Cisco ASA - average attack detection rate increase](../content/ciscoasa-cisco-asa-average-attack-detection-rate-increase-79f29feb-6a9d-4cdf-baaa-2daf480a5da1-4b63ae5b.md)
 - [Cisco ASA - threat detection message fired](../content/ciscoasa-cisco-asa-threat-detection-message-fired-795edf2d-cf3e-45b5-8452-fe6c9e6a582e-a934f81d.md)
 
+**In solution [CiscoSEG](../solutions/ciscoseg.md):**
+- [Cisco SEG - DLP policy violation](../content/ciscoseg-cisco-seg-dlp-policy-violation-df5c34dd-e1e6-4e07-90b1-4309ebfe754c-96f99f96.md)
+- [Cisco SEG - Malicious attachment not blocked](../content/ciscoseg-cisco-seg-malicious-attachment-not-blocked-236e872c-31d1-4b45-ac2a-fda3af465c97-7e651da0.md)
+- [Cisco SEG - Multiple large emails sent to external recipient](../content/ciscoseg-cisco-seg-multiple-large-emails-sent-to-external-recipient-1399a9a5-6200-411e-8c34-ca5658754cf7-2d76e97f.md)
+- [Cisco SEG - Multiple suspiciuos attachments received](../content/ciscoseg-cisco-seg-multiple-suspiciuos-attachments-received-dfdb9a73-4335-4bb4-b29b-eb713bce61a6-8ef60726.md)
+- [Cisco SEG - Possible outbreak](../content/ciscoseg-cisco-seg-possible-outbreak-53242559-95ea-4d4c-b003-107e8f06304b-e012a15d.md)
+- [Cisco SEG - Potential phishing link](../content/ciscoseg-cisco-seg-potential-phishing-link-2e5158e1-9fc2-40ff-a909-c701a13a0405-0b87976a.md)
+- [Cisco SEG - Suspicious link](../content/ciscoseg-cisco-seg-suspicious-link-506291dd-8050-4c98-a92f-58e376080a0a-090fa657.md)
+- [Cisco SEG - Suspicious sender domain](../content/ciscoseg-cisco-seg-suspicious-sender-domain-ef0a253c-95b5-48e1-8ebc-dbeb073b9338-8e5c2362.md)
+- [Cisco SEG - Unexpected attachment](../content/ciscoseg-cisco-seg-unexpected-attachment-f8ba18c4-81e3-4db0-8f85-4989f2ed2ade-f10c8136.md)
+- [Cisco SEG - Unexpected link](../content/ciscoseg-cisco-seg-unexpected-link-9cb4a02d-3708-42ba-b33b-0fdd360ce4b6-603d8991.md)
+- [Cisco SEG - Unscannable attacment](../content/ciscoseg-cisco-seg-unscannable-attacment-c66b8ced-8c76-415b-a0f3-08c7030a857d-d10ee3f4.md)
+
+**In solution [Claroty](../solutions/claroty.md):**
+- [Claroty - Asset Down](../content/claroty-claroty-asset-down-fd6e3416-0421-4166-adb9-186e555a7008-cba265d2.md)
+- [Claroty - Critical baseline deviation](../content/claroty-claroty-critical-baseline-deviation-9a8b4321-e2be-449b-8227-a78227441b2a-96c7d22a.md)
+- [Claroty - Login to uncommon location](../content/claroty-claroty-login-to-uncommon-location-e7dbcbc3-b18f-4635-b27c-718195c369f1-286dbcdd.md)
+- [Claroty - Multiple failed logins by user](../content/claroty-claroty-multiple-failed-logins-by-user-4b5bb3fc-c690-4f54-9a74-016213d699b4-4fbe665b.md)
+- [Claroty - Multiple failed logins to same destinations](../content/claroty-claroty-multiple-failed-logins-to-same-destinations-1c2310ef-19bf-4caf-b2b0-a4c983932fa5-2c96b616.md)
+- [Claroty - New Asset](../content/claroty-claroty-new-asset-6c29b611-ce69-4016-bf99-eca639fee1f5-83fc6e1d.md)
+- [Claroty - Policy violation](../content/claroty-claroty-policy-violation-3b22ac47-e02c-4599-a37a-57f965de17be-0b548fc4.md)
+- [Claroty - Suspicious activity](../content/claroty-claroty-suspicious-activity-99ad9f3c-304c-44c5-a61f-3a17f8b58218-64471eca.md)
+- [Claroty - Suspicious file transfer](../content/claroty-claroty-suspicious-file-transfer-5cf35bad-677f-4c23-8927-1611e7ff6f28-b144365c.md)
+- [Claroty - Treat detected](../content/claroty-claroty-treat-detected-731e5ac4-7fe1-4b06-9941-532f2e008bb3-e573bc69.md)
+
 **In solution [Contrast Protect](../solutions/contrast-protect.md):**
 - [Contrast Blocks](../content/contrast-protect-contrast-blocks-4396f8c3-d114-4154-9f4c-048ba522ed04-c10d7a5d.md)
 - [Contrast Exploits](../content/contrast-protect-contrast-exploits-e1abb6ed-be18-40fd-be58-3d3d84041daf-470b92cd.md)
 - [Contrast Probes](../content/contrast-protect-contrast-probes-297596de-d9ae-4fb8-b6ff-00fc01c9462d-d1e26597.md)
 - [Contrast Suspicious](../content/contrast-protect-contrast-suspicious-f713404e-805c-4e0c-91fa-2c149f76a07d-f612944c.md)
 
+**In solution [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md):**
+- [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md)
+- [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md)
+
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 - [Beacon Traffic Based on Common User Agents Visiting Limited Number of Domains](../content/falconfriday-beacon-traffic-based-on-common-user-agents-visiting-limited-number-of-domains-6345c923-99eb-4a83-b11d-7af0ffa75577-e0e2298a.md)
+
+**In solution [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md):**
+- [Fortiweb - WAF Allowed threat](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-waf-allowed-threat-86e9409f-b9ea-4e9a-8b72-5132ba43bcae-93ed74f7.md)
 
 **In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
 - [GreyNoise TI Map IP Entity to CommonSecurityLog](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-commonsecuritylog-e50657d7-8bca-43ff-a647-d407fae440d6-31126886.md)
@@ -298,8 +333,20 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [Illusive Platform](../solutions/illusive-platform.md):**
 - [Illusive Incidents Analytic Rule](../content/illusive-platform-illusive-incidents-analytic-rule-1a7dbcf6-21a2-4255-84b2-c8dbbdca4630-7fa2b740.md)
 
+**In solution [Infoblox](../solutions/infoblox.md):**
+- [Infoblox - SOC Insight Detected - CDC Source](../content/infoblox-infoblox-soc-insight-detected-cdc-source-d04f1963-df27-4127-b1ec-3d37148d65be-80d9956d.md)
+
 **In solution [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md):**
+- [Infoblox - Data Exfiltration Attack](../content/infoblox-cloud-data-connector-infoblox-data-exfiltration-attack-8db2b374-0337-49bd-94c9-cfbf8e5d83ad-0a635c49.md)
+- [Infoblox - High Threat Level Query Not Blocked Detected](../content/infoblox-cloud-data-connector-infoblox-high-threat-level-query-not-blocked-detected-dc7af829-d716-4774-9d6f-03d9aa7c27a4-fa962d5e.md)
+- [Infoblox - Many High Threat Level Queries From Single Host Detected](../content/infoblox-cloud-data-connector-infoblox-many-high-threat-level-queries-from-single-host-detected-3822b794-fa89-4420-aad6-0e1a2307f419-c7bc74ac.md)
+- [Infoblox - Many High Threat Level Single Query Detected](../content/infoblox-cloud-data-connector-infoblox-many-high-threat-level-single-query-detected-99278700-79ca-4b0f-b416-bf57ec699e1a-857f6b94.md)
+- [Infoblox - Many NXDOMAIN DNS Responses Detected](../content/infoblox-cloud-data-connector-infoblox-many-nxdomain-dns-responses-detected-b2f34315-9065-488e-88d0-a171d2b0da8e-1198d7a0.md)
 - [Infoblox - TI - CommonSecurityLog Match Found - MalwareC2](../content/infoblox-cloud-data-connector-infoblox-ti-commonsecuritylog-match-found-malwarec2-5b0864a9-4577-4087-b9fa-de3e14a8a999-339e0057.md)
+- [Infoblox - TI - InfobloxCDC Match Found - Lookalike Domains](../content/infoblox-cloud-data-connector-infoblox-ti-infobloxcdc-match-found-lookalike-domains-568730be-b39d-45e3-a392-941e00837d52-07dc8d1e.md)
+
+**In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
+- [Infoblox - SOC Insight Detected - CDC Source](../content/infoblox-soc-insights-infoblox-soc-insight-detected-cdc-source-a4bdd81e-afc8-4410-a3d1-8478fa810537-11c9ff59.md)
 
 **In solution [IronNet IronDefense](../solutions/ironnet-irondefense.md):**
 - [Create Incidents from IronDefense](../content/ironnet-irondefense-create-incidents-from-irondefense-3cf46cb9-99d5-42ee-a43c-7bd88ea394a1-25613242.md)
@@ -320,6 +367,41 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Palo Alto - potential beaconing detected](../content/paloalto-pan-os-palo-alto-potential-beaconing-detected-f0be259a-34ac-4946-aa15-ca2b115d5feb-7815de87.md)
 - [Palo Alto Threat signatures from Unusual IP addresses](../content/paloalto-pan-os-palo-alto-threat-signatures-from-unusual-ip-addresses-89a86f70-615f-4a79-9621-6f68c50f365f-44162468.md)
 
+**In solution [PaloAltoCDL](../solutions/paloaltocdl.md):**
+- [PaloAlto - Dropping or denying session with traffic](../content/paloaltocdl-paloalto-dropping-or-denying-session-with-traffic-ba663b74-51f4-11ec-bf63-0242ac130002-787fad5d.md)
+- [PaloAlto - File type changed](../content/paloaltocdl-paloalto-file-type-changed-9150ad68-51c8-11ec-bf63-0242ac130002-87204344.md)
+- [PaloAlto - Forbidden countries](../content/paloaltocdl-paloalto-forbidden-countries-9fcc7734-4d1b-11ec-81d3-0242ac130003-c36b5bad.md)
+- [PaloAlto - Inbound connection to high risk ports](../content/paloaltocdl-paloalto-inbound-connection-to-high-risk-ports-b2dd2dac-51c9-11ec-bf63-0242ac130002-b7141df6.md)
+- [PaloAlto - MAC address conflict](../content/paloaltocdl-paloalto-mac-address-conflict-976d2eee-51cb-11ec-bf63-0242ac130002-2f4d2b9d.md)
+- [PaloAlto - Possible attack without response](../content/paloaltocdl-paloalto-possible-attack-without-response-b6d54840-51d3-11ec-bf63-0242ac130002-a8b30694.md)
+- [PaloAlto - Possible flooding](../content/paloaltocdl-paloalto-possible-flooding-feb185cc-51f4-11ec-bf63-0242ac130002-88d2e10c.md)
+- [PaloAlto - Possible port scan](../content/paloaltocdl-paloalto-possible-port-scan-3575a9c0-51c9-11ec-bf63-0242ac130002-2090332d.md)
+- [PaloAlto - Put and post method request in high risk file type](../content/paloaltocdl-paloalto-put-and-post-method-request-in-high-risk-file-type-f12e9d10-51ca-11ec-bf63-0242ac130002-6fe08e13.md)
+- [PaloAlto - User privileges was changed](../content/paloaltocdl-paloalto-user-privileges-was-changed-38f9e010-51ca-11ec-bf63-0242ac130002-ec13ffe8.md)
+
+**In solution [PingFederate](../solutions/pingfederate.md):**
+- [Ping Federate - Abnormal password reset attempts](../content/pingfederate-ping-federate-abnormal-password-reset-attempts-e45a7334-2cb4-4690-8156-f02cac73d584-66f0ba30.md)
+- [Ping Federate - Abnormal password resets for user](../content/pingfederate-ping-federate-abnormal-password-resets-for-user-6145efdc-4724-42a6-9756-5bd1ba33982e-032d12ff.md)
+- [Ping Federate - Authentication from new IP.](../content/pingfederate-ping-federate-authentication-from-new-ip.-30583ed4-d13c-43b8-baf2-d75fbe727210-c7473a0b.md)
+- [Ping Federate - Forbidden country](../content/pingfederate-ping-federate-forbidden-country-14042f74-e50b-4c21-8a01-0faf4915ada4-ba3e6874.md)
+- [Ping Federate - New user SSO success login](../content/pingfederate-ping-federate-new-user-sso-success-login-05282c91-7aaf-4d76-9a19-6dc582e6a411-ac2468e0.md)
+- [Ping Federate - OAuth old version](../content/pingfederate-ping-federate-oauth-old-version-85f70197-4865-4635-a4b2-a9c57e8fea1b-a844b284.md)
+- [Ping Federate - Password reset request from unexpected source IP address..](../content/pingfederate-ping-federate-password-reset-request-from-unexpected-source-ip-address..-2d201d21-77b4-4d97-95f3-26b5c6bde09f-1f0eb2b3.md)
+- [Ping Federate - SAML old version](../content/pingfederate-ping-federate-saml-old-version-fddd3840-acd2-41ed-94d9-1474b0a7c8a6-f0a3cb29.md)
+- [Ping Federate - Unexpected authentication URL.](../content/pingfederate-ping-federate-unexpected-authentication-url.-9578ef7f-cbb4-4e9a-bd26-37c15c53b413-2e62ddab.md)
+- [Ping Federate - Unexpected country for user](../content/pingfederate-ping-federate-unexpected-country-for-user-64e65105-c4fc-4c28-a4e9-bb1a3ce7652d-6d3dc524.md)
+- [Ping Federate - Unusual mail domain.](../content/pingfederate-ping-federate-unusual-mail-domain.-dc79de7d-2590-4852-95fb-f8e02b34f4da-2fa89f0f.md)
+
+**In solution [Radiflow](../solutions/radiflow.md):**
+- [Radiflow - Exploit Detected](../content/radiflow-radiflow-exploit-detected-6c028ebd-03ca-41cb-bce7-5727ddb43731-3576efb7.md)
+- [Radiflow - Network Scanning Detected](../content/radiflow-radiflow-network-scanning-detected-cde00cc5-5841-4aa9-96c5-dd836f9e3f26-4b8baf5f.md)
+- [Radiflow - New Activity Detected](../content/radiflow-radiflow-new-activity-detected-8177ecff-30a1-4d4f-9a82-7fbb69019504-9ff3a66e.md)
+- [Radiflow - Platform Alert](../content/radiflow-radiflow-platform-alert-ff0c781a-b30f-4acf-9cf1-75d7383d66d1-a461dd39.md)
+- [Radiflow - Policy Violation Detected](../content/radiflow-radiflow-policy-violation-detected-a3f4cc3e-2403-4570-8d21-1dedd5632958-4e9005dc.md)
+- [Radiflow - Suspicious Malicious Activity Detected](../content/radiflow-radiflow-suspicious-malicious-activity-detected-ecac26b8-147d-478a-9d50-99be4bf14019-5ae248d9.md)
+- [Radiflow - Unauthorized Command in Operational Device](../content/radiflow-radiflow-unauthorized-command-in-operational-device-4d90d485-6d47-417e-80ea-9cf956c1a671-c23a25ae.md)
+- [Radiflow - Unauthorized Internet Access](../content/radiflow-radiflow-unauthorized-internet-access-cc33e1a9-e167-460b-93e6-f14af652dbd3-503d4133.md)
+
 **In solution [RidgeSecurity](../solutions/ridgesecurity.md):**
 - [Critical Risks](../content/ridgesecurity-critical-risks-1eebfaf3-40e1-4bc2-9f42-049b7b8ceb60-11ad44c8.md)
 - [Vulerabilities](../content/ridgesecurity-vulerabilities-d096643d-6789-4c74-8893-dd3fc8a94069-d1a748f6.md)
@@ -334,6 +416,7 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Silverfort - UserBruteForce Incident](../content/silverfort-silverfort-userbruteforce-incident-46ff357b-9e98-465b-9e45-cd52fa4a7522-aec505ad.md)
 
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
+- [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md)
 - [SonicWall - Capture ATP Malicious File Detection](../content/sonicwall-firewall-sonicwall-capture-atp-malicious-file-detection-3db9f99e-a459-41e0-8e02-8b332f5fcb2c-219e6d5b.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
@@ -352,6 +435,18 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [TI map Email entity to PaloAlto CommonSecurityLog](../content/threat-intelligence-new-ti-map-email-entity-to-paloalto-commonsecuritylog-17fe80fe-072f-44d4-b62c-97a5bce56a64-3f51c924.md)
 - [TI map File Hash to CommonSecurityLog Event](../content/threat-intelligence-new-ti-map-file-hash-to-commonsecuritylog-event-432996e9-8a93-4407-985f-13707b318a0b-a4223a3c.md)
 
+**In solution [Trend Micro Apex One](../solutions/trend-micro-apex-one.md):**
+- [ApexOne - Attack Discovery Detection](../content/trend-micro-apex-one-apexone-attack-discovery-detection-7a3193b8-67b7-11ec-90d6-0242ac120003-a72ca676.md)
+- [ApexOne - C&C callback events](../content/trend-micro-apex-one-apexone-c&c-callback-events-1a87cd10-67b7-11ec-90d6-0242ac120003-9344779a.md)
+- [ApexOne - Commands in Url](../content/trend-micro-apex-one-apexone-commands-in-url-4a9a5900-67b7-11ec-90d6-0242ac120003-d17dff8a.md)
+- [ApexOne - Device access permissions was changed](../content/trend-micro-apex-one-apexone-device-access-permissions-was-changed-b463b952-67b8-11ec-90d6-0242ac120003-865f571b.md)
+- [ApexOne - Inbound remote access connection](../content/trend-micro-apex-one-apexone-inbound-remote-access-connection-6303235a-ee70-42a4-b969-43e7b969b916-992a56b7.md)
+- [ApexOne - Multiple deny or terminate actions on single IP](../content/trend-micro-apex-one-apexone-multiple-deny-or-terminate-actions-on-single-ip-cd94e078-67b7-11ec-90d6-0242ac120003-d82f94a5.md)
+- [ApexOne - Possible exploit or execute operation](../content/trend-micro-apex-one-apexone-possible-exploit-or-execute-operation-e289d762-6cc2-11ec-90d6-0242ac120003-ccf90dbf.md)
+- [ApexOne - Spyware with failed response](../content/trend-micro-apex-one-apexone-spyware-with-failed-response-c92d9fe4-67b6-11ec-90d6-0242ac120003-c437c42d.md)
+- [ApexOne - Suspicious commandline arguments](../content/trend-micro-apex-one-apexone-suspicious-commandline-arguments-4d7199b2-67b8-11ec-90d6-0242ac120003-ad589883.md)
+- [ApexOne - Suspicious connections](../content/trend-micro-apex-one-apexone-suspicious-connections-9e3dc038-67b7-11ec-90d6-0242ac120003-1a074d22.md)
+
 **In solution [Vectra AI Detect](../solutions/vectra-ai-detect.md):**
 - [Vectra AI Detect - Detections with High Severity](../content/vectra-ai-detect-vectra-ai-detect-detections-with-high-severity-39e48890-2c02-487e-aa9e-3ba494061798-5f2d3995.md)
 - [Vectra AI Detect - New Campaign Detected](../content/vectra-ai-detect-vectra-ai-detect-new-campaign-detected-a34d0338-eda0-42b5-8b93-32aae0d7a501-d435ce1c.md)
@@ -360,6 +455,10 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Vectra AI Detect - Suspicious Behaviors by Category](../content/vectra-ai-detect-vectra-ai-detect-suspicious-behaviors-by-category-6cb75f65-231f-46c4-a0b3-50ff21ee6ed3-81fb48ba.md)
 - [Vectra Account's Behaviors](../content/vectra-ai-detect-vectra-account's-behaviors-ce54b5d3-4c31-4eaf-a73e-31412270b6ab-45fe2d23.md)
 - [Vectra Host's Behaviors](../content/vectra-ai-detect-vectra-host's-behaviors-33e3b6da-2660-4cd7-9032-11be76db88d2-080b319b.md)
+
+**In solution [Votiro](../solutions/votiro.md):**
+- [Votiro - File Blocked from Connector](../content/votiro-votiro-file-blocked-from-connector-17bf3780-ae0d-4cd9-a884-5df8b687f3f5-13901b84.md)
+- [Votiro - File Blocked in Email](../content/votiro-votiro-file-blocked-in-email-0b8b91de-c63e-4bc2-b5f4-b15d3b379ec9-dd69805e.md)
 
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
@@ -371,7 +470,7 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [vArmour Application Controller](../solutions/varmour-application-controller.md):**
 - [vArmour AppController - SMB Realm Traversal](../content/varmour-application-controller-varmour-appcontroller-smb-realm-traversal-a36de6c3-3198-4d37-92ae-e19e36712c2e-f56ac1bb.md)
 
-### Hunting Queries (22)
+### Hunting Queries (75)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 - [Acronis - ASZ defence: Unauthorized operation is detected and blocked](../content/acronis-cyber-protect-cloud-acronis-asz-defence-unauthorized-operation-is-detected-and-blocked-39310cb8-53bc-47c1-86c4-2ff9f0d3cc5f-bcc0c583.md)
@@ -391,11 +490,39 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Network Connection to New External LDAP Server](../content/apache-log4j-vulnerability-detection-network-connection-to-new-external-ldap-server-bf094505-fd2e-484f-b72a-acd79ee00ce8-d9ed48fd.md)
 
+**In solution [CiscoSEG](../solutions/ciscoseg.md):**
+- [Cisco SEG - DKIM failures](../content/ciscoseg-cisco-seg-dkim-failures-d7ea4577-1192-49da-96a2-b6d8219c6ac0-0f156528.md)
+- [Cisco SEG - DMARK failures](../content/ciscoseg-cisco-seg-dmark-failures-8bd157d3-2613-4a36-83e2-ec55332ed7f7-116b51a1.md)
+- [Cisco SEG - Dropped incoming mails](../content/ciscoseg-cisco-seg-dropped-incoming-mails-efb45608-3955-4915-8a46-ef5d7160cef7-ca1522f6.md)
+- [Cisco SEG - Dropped outgoing mails](../content/ciscoseg-cisco-seg-dropped-outgoing-mails-805b5625-8a04-4ca5-bab5-7c8cb383b3e3-8e66b7fb.md)
+- [Cisco SEG - Failed incoming TLS connections](../content/ciscoseg-cisco-seg-failed-incoming-tls-connections-4511f6a0-c174-4ccc-a851-24b14022e217-40bf1781.md)
+- [Cisco SEG - Failed outgoing TLS connections](../content/ciscoseg-cisco-seg-failed-outgoing-tls-connections-aeb733e3-34e9-4724-97c7-c6ad31ea39e5-b30250d9.md)
+- [Cisco SEG - Insecure protocol](../content/ciscoseg-cisco-seg-insecure-protocol-2389de0a-f53f-4a11-b01b-1adce5f26287-8a5004c8.md)
+- [Cisco SEG - SPF failures](../content/ciscoseg-cisco-seg-spf-failures-215a747d-5a5e-4596-b399-85ff5cc572bd-f535331c.md)
+- [Cisco SEG - Sources of spam mails](../content/ciscoseg-cisco-seg-sources-of-spam-mails-7895ffa5-cd61-43cf-89e5-9630e79685fd-1d6f85cd.md)
+- [Cisco SEG - Top users receiving spam mails](../content/ciscoseg-cisco-seg-top-users-receiving-spam-mails-064b1051-d8ac-4ef2-a537-30d32b4c27d9-e16d1fea.md)
+
+**In solution [Claroty](../solutions/claroty.md):**
+- [Claroty - Baseline deviation](../content/claroty-claroty-baseline-deviation-6b24f3aa-01db-4d26-9d60-538dd9a56391-8531ba45.md)
+- [Claroty - Conflict assets](../content/claroty-claroty-conflict-assets-8038c683-f4dc-481e-94c6-f906d880b0ec-65ea2c65.md)
+- [Claroty - Critical Events](../content/claroty-claroty-critical-events-a81f3a44-049c-409d-8b98-b78aa256dacf-39a2f0b4.md)
+- [Claroty - Network scan sources](../content/claroty-claroty-network-scan-sources-6c43a50e-2e59-48d9-848b-825f50927bbf-07e5f692.md)
+- [Claroty - Network scan targets](../content/claroty-claroty-network-scan-targets-8e70ddf9-32c3-4acd-9cb9-59570344335e-d9fbab3a.md)
+- [Claroty - PLC logins](../content/claroty-claroty-plc-logins-15569b45-4c34-4693-bf99-841e76b5da65-ce51ab47.md)
+- [Claroty - Unapproved access](../content/claroty-claroty-unapproved-access-de0fca32-85f3-45df-872e-41e980e5d8d3-d0ee72f9.md)
+- [Claroty - Unresolved alerts](../content/claroty-claroty-unresolved-alerts-fad6cb81-9a05-4acb-9c5b-a7c62af28034-0c927404.md)
+- [Claroty - User failed logins](../content/claroty-claroty-user-failed-logins-917364b7-2925-4c5d-a27c-64137a3b75b5-050519b3.md)
+- [Claroty - Write and Execute operations](../content/claroty-claroty-write-and-execute-operations-3882ffbf-6228-4e1f-ab8f-8d79a26da0fb-6e35713e.md)
+
 **In solution [Cyware](../solutions/cyware.md):**
 - [Match Cyware Intel Watchlist Items With Common Logs](../content/cyware-match-cyware-intel-watchlist-items-with-common-logs-61c99147-b749-4164-80b1-c4bfa4efa704-8cd42456.md)
 
 **In solution [Endace](../solutions/endace.md):**
 - [Endace - Pivot-to-Vision](../content/endace-endace-pivot-to-vision-b70b02bd-fe1f-4466-8c4d-64d42adc59b3-2f1bf7f0.md)
+
+**In solution [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md):**
+- [Fortiweb - Unexpected countries](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-unexpected-countries-9fc7d945-0e82-4664-aca0-dc121a7rt5nt-5e669605.md)
+- [Fortiweb - identify owasp10 vulnerabilities](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-identify-owasp10-vuln-3rg4d567-0e82-4664-aca0-dc121a7th3ht-b0214951.md)
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
 - [Retrospective hunt for Forest Blizzard IP IOCs](../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.md)
@@ -411,7 +538,46 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Palo Alto - high-risk ports](../content/paloalto-pan-os-palo-alto-high-risk-ports-0a57accf-3548-4e38-a861-99687c958f59-955c29a8.md)
 - [Palo Alto - potential beaconing detected](../content/paloalto-pan-os-palo-alto-potential-beaconing-detected-2f8522fc-7807-4f0a-b53d-458296edab8d-02b916be.md)
 
-### Workbooks (46)
+**In solution [PaloAltoCDL](../solutions/paloaltocdl.md):**
+- [PaloAlto - Agent versions](../content/paloaltocdl-paloalto-agent-versions-555bf415-e171-4ad2-920f-1a4a96a9644c-135ba2b4.md)
+- [PaloAlto - Critical event result](../content/paloaltocdl-paloalto-critical-event-result-97760cb0-511e-11ec-bf63-0242ac130002-764139e8.md)
+- [PaloAlto - Destination ports by IPs](../content/paloaltocdl-paloalto-destination-ports-by-ips-a8887944-4c72-11ec-81d3-0242ac130003-ef950548.md)
+- [PaloAlto - File permission with PUT or POST request](../content/paloaltocdl-paloalto-file-permission-with-put-or-post-request-2af5e154-511f-11ec-bf63-0242ac130002-e4067896.md)
+- [PaloAlto - Incomplete application protocol](../content/paloaltocdl-paloalto-incomplete-application-protocol-7cbd46ce-5121-11ec-bf63-0242ac130002-58301333.md)
+- [PaloAlto - Multiple Deny result by user](../content/paloaltocdl-paloalto-multiple-deny-result-by-user-04456860-5122-11ec-bf63-0242ac130002-a8059a9f.md)
+- [PaloAlto - Outdated config vesions](../content/paloaltocdl-paloalto-outdated-config-vesions-6e4b6758-23a5-409b-a444-9bdef78e9dcc-e81f22ee.md)
+- [PaloAlto - Rare application layer protocols](../content/paloaltocdl-paloalto-rare-application-layer-protocols-0a18756a-5123-11ec-bf63-0242ac130002-c1608dc2.md)
+- [PaloAlto - Rare files observed](../content/paloaltocdl-paloalto-rare-files-observed-93ae5df2-4c74-11ec-81d3-0242ac130003-29632ba9.md)
+- [PaloAlto - Rare ports by user](../content/paloaltocdl-paloalto-rare-ports-by-user-ce9d58ce-51cd-11ec-bf63-0242ac130002-386d6508.md)
+
+**In solution [PingFederate](../solutions/pingfederate.md):**
+- [Ping Federate - Authentication URLs](../content/pingfederate-ping-federate-authentication-urls-e309c774-8f31-41c3-b270-7efc934de96a-d335e82c.md)
+- [Ping Federate - Authentication from unusual sources](../content/pingfederate-ping-federate-authentication-from-unusual-sources-0bce5bd0-cc19-43de-a5ab-47dbc5c6c600-f33ddf03.md)
+- [Ping Federate - Failed Authentication](../content/pingfederate-ping-federate-failed-authentication-b04e339c-942d-439a-bc27-dbee2961927c-cd5d855c.md)
+- [Ping Federate - New users](../content/pingfederate-ping-federate-new-users-a52d874d-dc45-438f-b395-92d1a3ebcf76-851a9fee.md)
+- [Ping Federate - Password reset requests](../content/pingfederate-ping-federate-password-reset-requests-31bb34b4-26f7-4b83-a667-d596e05eb28a-eb5c8e99.md)
+- [Ping Federate - Rare source IP addresses](../content/pingfederate-ping-federate-rare-source-ip-addresses-86c8a38a-96bd-445d-8d12-e35b7290832b-146697e7.md)
+- [Ping Federate - Requests from unusual countries](../content/pingfederate-ping-federate-requests-from-unusual-countries-378e53cd-c28a-46d7-8160-1920240bf09e-936e5397.md)
+- [Ping Federate - SAML subjects](../content/pingfederate-ping-federate-saml-subjects-b0a25cd9-08f4-470d-bd04-47da22810b5f-7ae3da54.md)
+- [Ping Federate - Top source IP addresses](../content/pingfederate-ping-federate-top-source-ip-addresses-ce92624d-ae52-4b8e-ba36-3e5bdb6a793a-39d9e3c4.md)
+- [Ping Federate - Users recently reseted password](../content/pingfederate-ping-federate-users-recently-reseted-password-6698f022-adf4-48a3-a8da-a4052ac999b4-d90c92a1.md)
+
+**In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
+- [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md)
+
+**In solution [Trend Micro Apex One](../solutions/trend-micro-apex-one.md):**
+- [ApexOne - Behavior monitoring actions by files](../content/trend-micro-apex-one-apexone-behavior-monitoring-actions-by-files-96451e96-67b5-11ec-90d6-0242ac120003-87c1a703.md)
+- [ApexOne - Behavior monitoring event types by users](../content/trend-micro-apex-one-apexone-behavior-monitoring-event-types-by-users-433ccdb0-67b6-11ec-90d6-0242ac120003-589eed1f.md)
+- [ApexOne - Behavior monitoring operations by users](../content/trend-micro-apex-one-apexone-behavior-monitoring-operations-by-users-0caa3472-67b6-11ec-90d6-0242ac120003-1d28776b.md)
+- [ApexOne - Behavior monitoring triggered policy by command line](../content/trend-micro-apex-one-apexone-behavior-monitoring-triggered-policy-by-command-line-14a4a824-67b6-11ec-90d6-0242ac120003-2c0ff361.md)
+- [ApexOne - Channel type by users](../content/trend-micro-apex-one-apexone-channel-type-by-users-40d8ad3e-67b4-11ec-90d6-0242ac120003-e82a1272.md)
+- [ApexOne - Data loss prevention action by IP](../content/trend-micro-apex-one-apexone-data-loss-prevention-action-by-ip-6c7f9bfe-67b5-11ec-90d6-0242ac120003-b9cca4d4.md)
+- [ApexOne - Rare application protocols by Ip address](../content/trend-micro-apex-one-apexone-rare-application-protocols-by-ip-address-be89944e-4e75-4d0a-b2d6-ae757d22ed43-0e863ded.md)
+- [ApexOne - Spyware detection](../content/trend-micro-apex-one-apexone-spyware-detection-506955be-648f-11ec-90d6-0242ac120003-42ec9672.md)
+- [ApexOne - Suspicious files events](../content/trend-micro-apex-one-apexone-suspicious-files-events-7bf0f260-61a0-11ec-90d6-0242ac120003-58b95e02.md)
+- [ApexOne - Top sources with alerts](../content/trend-micro-apex-one-apexone-top-sources-with-alerts-8bb86556-67b4-11ec-90d6-0242ac120003-9e3076ba.md)
+
+### Workbooks (61)
 
 **In solution [AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md):**
 - [AIA-Darktrace](../content/ai-analyst-darktrace-aia-darktrace-c99f20ad.md)
@@ -428,17 +594,32 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [CiscoASA](../solutions/ciscoasa.md):**
 - [Cisco](../content/ciscoasa-cisco-87e00b58.md)
 
+**In solution [CiscoSEG](../solutions/ciscoseg.md):**
+- [CiscoSEG](../content/ciscoseg-ciscoseg-8d0b6fd3.md)
+
 **In solution [Citrix Web App Firewall](../solutions/citrix-web-app-firewall.md):**
 - [CitrixWAF](../content/citrix-web-app-firewall-citrixwaf-f26995f5.md)
+
+**In solution [Claroty](../solutions/claroty.md):**
+- [ClarotyOverview](../content/claroty-clarotyoverview-724141ff.md)
 
 **In solution [Common Event Format](../solutions/common-event-format.md):**
 - [CEFOverviewWorkbook](../content/common-event-format-cefoverviewworkbook-a335b98c.md)
 
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
+
 **In solution [Contrast Protect](../solutions/contrast-protect.md):**
 - [ContrastProtect](../content/contrast-protect-contrastprotect-d1bc473e.md)
 
+**In solution [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md):**
+- [CrowdStrikeFalconEndpointProtection](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconendpointprotection-b9a8efc3.md)
+
 **In solution [CyberArk Privilege Access Manager (PAM) Events](../solutions/cyberark-privilege-access-manager-pam-events.md):**
 - [CyberArkEPV](../content/cyberark-privilege-access-manager-pam-events-cyberarkepv-316d29f3.md)
+
+**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
+- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
 
 **In solution [Delinea Secret Server](../solutions/delinea-secret-server.md):**
 - [DelineaWorkbook](../content/delinea-secret-server-delineaworkbook-819c816c.md)
@@ -459,12 +640,18 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md):**
 - [Fortigate](../content/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortigate-2cb10dce.md)
 
+**In solution [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md):**
+- [Fortiweb-workbook](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-workbook-9b70e162.md)
+
 **In solution [Illusive Platform](../solutions/illusive-platform.md):**
 - [IllusiveADS](../content/illusive-platform-illusiveads-5d29048c.md)
 - [IllusiveASM](../content/illusive-platform-illusiveasm-bca1238e.md)
 
 **In solution [Infoblox](../solutions/infoblox.md):**
 - [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md)
+
+**In solution [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md):**
+- [InfobloxCDCB1TDWorkbook](../content/infoblox-cloud-data-connector-infobloxcdcb1tdworkbook-a058ef8d.md)
 
 **In solution [IronNet IronDefense](../solutions/ironnet-irondefense.md):**
 - [IronDefenseAlertDashboard](../content/ironnet-irondefense-irondefensealertdashboard-7226985d.md)
@@ -492,10 +679,14 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [PaloAltoNetworkThreat](../content/paloalto-pan-os-paloaltonetworkthreat-4d4c5438.md)
 - [PaloAltoOverview](../content/paloalto-pan-os-paloaltooverview-9f519554.md)
 
+**In solution [PaloAltoCDL](../solutions/paloaltocdl.md):**
+- [PaloAltoCDL](../content/paloaltocdl-paloaltocdl-00280c2a.md)
+
 **In solution [PingFederate](../solutions/pingfederate.md):**
 - [PingFederate](../content/pingfederate-pingfederate-c26986d3.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
 
@@ -514,8 +705,18 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
 - [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md)
 
+**In solution [Trend Micro Apex One](../solutions/trend-micro-apex-one.md):**
+- [TrendMicroApexOne](../content/trend-micro-apex-one-trendmicroapexone-36972fb3.md)
+
+**In solution [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md):**
+- [TrendMicroDeepSecurityAttackActivity](../content/trend-micro-deep-security-trendmicrodeepsecurityattackactivity-4ac1a0a6.md)
+- [TrendMicroDeepSecurityOverview](../content/trend-micro-deep-security-trendmicrodeepsecurityoverview-abad9508.md)
+
 **In solution [Vectra AI Detect](../solutions/vectra-ai-detect.md):**
 - [AIVectraDetectWorkbook](../content/vectra-ai-detect-aivectradetectworkbook-74fce2d7.md)
+
+**In solution [Votiro](../solutions/votiro.md):**
+- [Votiro Monitoring Dashboard](../content/votiro-votiro-monitoring-dashboard-733f09ff.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
@@ -525,6 +726,10 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [ZscalerOffice365Apps](../content/zscaler-internet-access-zscaleroffice365apps-bcb66bac.md)
 - [ZscalerThreats](../content/zscaler-internet-access-zscalerthreats-c11e0924.md)
 - [ZscalerWebOverview](../content/zscaler-internet-access-zscalerweboverview-7e8374eb.md)
+
+**In solution [iboss](../solutions/iboss.md):**
+- [ibossMalwareAndC2](../content/iboss-ibossmalwareandc2-0213a927.md)
+- [ibossWebUsage](../content/iboss-ibosswebusage-5b4fbb25.md)
 
 **In solution [vArmour Application Controller](../solutions/varmour-application-controller.md):**
 - [vArmour_AppContoller_Workbook](../content/varmour-application-controller-varmour-appcontoller-workbook-89c75f45.md)
@@ -540,15 +745,86 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
+## Parsers Using This Table (63)
+
+### ASIM Parsers (28)
+
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimAuditEventBarracudaCEF](../asim/asimauditeventbarracudacef.md) | AuditEvent |  |
+| [ASimAuditEventCrowdStrikeFalconHost](../asim/asimauditeventcrowdstrikefalconhost.md) | AuditEvent |  |
+| [ASimAuditEventInfobloxBloxOne](../asim/asimauditeventinfobloxbloxone.md) | AuditEvent |  |
+| [ASimAuthenticationCrowdStrikeFalconHost](../asim/asimauthenticationcrowdstrikefalconhost.md) | Authentication |  |
+| [ASimAuthenticationPaloAltoCortexDataLake](../asim/asimauthenticationpaloaltocortexdatalake.md) | Authentication |  |
+| [ASimDhcpEventInfobloxBloxOne](../asim/asimdhcpeventinfobloxbloxone.md) | DhcpEvent |  |
+| [ASimDnsFortinetFortiGate](../asim/asimdnsfortinetfortigate.md) | Dns |  |
+| [ASimDnsInfobloxBloxOne](../asim/asimdnsinfobloxbloxone.md) | Dns |  |
+| [ASimDnsZscalerZIA](../asim/asimdnszscalerzia.md) | Dns |  |
+| [ASimNetworkSessionBarracudaCEF](../asim/asimnetworksessionbarracudacef.md) | NetworkSession |  |
+| [ASimNetworkSessionCheckPointFirewall](../asim/asimnetworksessioncheckpointfirewall.md) | NetworkSession |  |
+| [ASimNetworkSessionCiscoASA](../asim/asimnetworksessionciscoasa.md) | NetworkSession |  |
+| [ASimNetworkSessionCiscoFirepower](../asim/asimnetworksessionciscofirepower.md) | NetworkSession |  |
+| [ASimNetworkSessionForcePointFirewall](../asim/asimnetworksessionforcepointfirewall.md) | NetworkSession |  |
+| [ASimNetworkSessionFortinetFortiGate](../asim/asimnetworksessionfortinetfortigate.md) | NetworkSession |  |
+| [ASimNetworkSessionPaloAltoCEF](../asim/asimnetworksessionpaloaltocef.md) | NetworkSession |  |
+| [ASimNetworkSessionPaloAltoCortexDataLake](../asim/asimnetworksessionpaloaltocortexdatalake.md) | NetworkSession |  |
+| [ASimNetworkSessionSonicWallFirewall](../asim/asimnetworksessionsonicwallfirewall.md) | NetworkSession |  |
+| [ASimNetworkSessionZscalerZIA](../asim/asimnetworksessionzscalerzia.md) | NetworkSession |  |
+| [ASimWebSessionBarracudaCEF](../asim/asimwebsessionbarracudacef.md) | WebSession |  |
+| [ASimWebSessionCiscoFirepower](../asim/asimwebsessionciscofirepower.md) | WebSession |  |
+| [ASimWebSessionCitrixNetScaler](../asim/asimwebsessioncitrixnetscaler.md) | WebSession |  |
+| [ASimWebSessionF5ASM](../asim/asimwebsessionf5asm.md) | WebSession |  |
+| [ASimWebSessionFortinetFortiGate](../asim/asimwebsessionfortinetfortigate.md) | WebSession |  |
+| [ASimWebSessionPaloAltoCEF](../asim/asimwebsessionpaloaltocef.md) | WebSession |  |
+| [ASimWebSessionPaloAltoCortexDataLake](../asim/asimwebsessionpaloaltocortexdatalake.md) | WebSession |  |
+| [ASimWebSessionSonicWallFirewall](../asim/asimwebsessionsonicwallfirewall.md) | WebSession |  |
+| [ASimWebSessionZscalerZIA](../asim/asimwebsessionzscalerzia.md) | WebSession |  |
+
+### Other Parsers (35)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [AkamaiSIEMEvent](../parsers/akamaisiemevent.md) | [Akamai Security Events](../solutions/akamai-security-events.md) | Solution |
+| [ArubaClearPass](../parsers/arubaclearpass.md) | [Aruba ClearPass](../solutions/aruba-clearpass.md) | Solution |
+| [CiscoSEGEvent](../parsers/ciscosegevent.md) | [CiscoSEG](../solutions/ciscoseg.md) | Solution |
+| [CitrixADCEventOld](../parsers/citrixadceventold.md) | [Citrix ADC](../solutions/citrix-adc.md) | Solution ⚠️ |
+| [ClarotyEvent](../parsers/clarotyevent.md) | [Claroty](../solutions/claroty.md) | Solution |
+| [CrowdStrikeFalconEventStream](../parsers/crowdstrikefalconeventstream.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | Solution |
+| [DragosPushNotificationsToSentinel](../parsers/dragospushnotificationstosentinel.md) | [Dragos](../solutions/dragos.md) | Solution |
+| [FireEyeNXEvent](../parsers/fireeyenxevent.md) | [FireEye Network Security](../solutions/fireeye-network-security.md) | Solution |
+| [ForgeRockParser](../parsers/forgerockparser.md) | [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) | Solution |
+| [Fortiweb](../parsers/fortiweb.md) | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) | Solution |
+| [IllumioCoreEvent](../parsers/illumiocoreevent.md) | [Illumio Core](../solutions/illumio-core.md) | Solution |
+| [InfobloxCDC](../parsers/infobloxcdc.md) | [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) | Solution |
+| [InfobloxCDC_SOCInsights](../parsers/infobloxcdc-socinsights.md) | [Infoblox](../solutions/infoblox.md) | Solution |
+| [InfobloxCDC_SOCInsights](../parsers/infobloxcdc-socinsights.md) | [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) | Solution |
+| [McAfee Common Security Log Parser](../parsers/mcafee-common-security-log-parser.md) | *(Legacy)* | Legacy |
+| [NetwrixAuditor](../parsers/netwrixauditor.md) | [Netwrix Auditor](../solutions/netwrix-auditor.md) | Solution |
+| [NozomiNetworksEvents](../parsers/nozominetworksevents.md) | [NozomiNetworks](../solutions/nozominetworks.md) | Solution |
+| [OSSECEvent](../parsers/ossecevent.md) | [OSSEC](../solutions/ossec.md) | Solution |
+| [OneIdentity_Safeguard](../parsers/oneidentity-safeguard.md) | [OneIdentity](../solutions/oneidentity.md) | Solution ⚠️ |
+| [OneIdentity_Safeguard](../parsers/oneidentity-safeguard.md) | [OneIdentity](../solutions/oneidentity.md) | Solution |
+| [PaloAltoCDLEvent](../parsers/paloaltocdlevent.md) | [PaloAltoCDL](../solutions/paloaltocdl.md) | Solution |
+| [PingFederateEvent](../parsers/pingfederateevent.md) | [PingFederate](../solutions/pingfederate.md) | Solution |
+| [RadiflowEvent](../parsers/radiflowevent.md) | [Radiflow](../solutions/radiflow.md) | Solution |
+| [StealthDefend](../parsers/stealthdefend.md) | *(Legacy)* | Legacy |
+| [SymantecDLP](../parsers/symantecdlp.md) | [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md) | Solution |
+| [TMApexOneEvent](../parsers/tmapexoneevent.md) | [Trend Micro Apex One](../solutions/trend-micro-apex-one.md) | Solution |
+| [TrendMicroDeepSecurity](../parsers/trendmicrodeepsecurity.md) | [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md) | Solution |
+| [TrendMicroTippingPoint](../parsers/trendmicrotippingpoint.md) | [Trend Micro TippingPoint](../solutions/trend-micro-tippingpoint.md) | Solution |
+| [VotiroEvents](../parsers/votiroevents.md) | [Votiro](../solutions/votiro.md) | Solution |
+| [ZScalerFW_Parser](../parsers/zscalerfw-parser.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | Solution |
+| [ZScalerWeb_Parser](../parsers/zscalerweb-parser.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | Solution |
+| [getForgeRockUsers](../parsers/getforgerockusers.md) | [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) | Solution ⚠️ |
+| [ibossUrlEvent](../parsers/ibossurlevent.md) | [iboss](../solutions/iboss.md) | Solution |
+| [pfsensefilterlog](../parsers/pfsensefilterlog.md) | *(Legacy)* | Legacy |
+| [pfsensenginx](../parsers/pfsensenginx.md) | *(Legacy)* | Legacy |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

@@ -6,7 +6,7 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 
-## Solutions (29)
+## Solutions (30)
 
 This table is used by the following solutions:
 
@@ -18,6 +18,7 @@ This table is used by the following solutions:
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
+- [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
 - [Infoblox](../solutions/infoblox.md)
 - [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
@@ -49,14 +50,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (39)
+## Content Items Using This Table (41)
 
-### Analytic Rules (1)
+### Analytic Rules (2)
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
+- [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md)
 - [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db-6bbae8c7.md)
 
-### Workbooks (36)
+### Workbooks (37)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)
@@ -81,6 +83,9 @@ This table is ingested by the following connectors:
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
+
+**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
+- [GreyNoiseOverview](../content/greynoisethreatintelligence-greynoiseoverview-879c7a2d.md)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 - [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md)
@@ -150,13 +155,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

@@ -35,7 +35,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Votiro Sanitization Engine Logs](../connectors/votiro.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Votiro Sanitization Engine Logs](../connectors/votiro.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -50,14 +50,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Votiro - File Blocked from Connector](../content/votiro-votiro-file-blocked-from-connector-17bf3780-ae0d-4cd9-a884-5df8b687f3f5-13901b84.md) | Low | DefenseEvasion, Discovery, Impact | - |
-| [Votiro - File Blocked in Email](../content/votiro-votiro-file-blocked-in-email-0b8b91de-c63e-4bc2-b5f4-b15d3b379ec9-dd69805e.md) | Low | CommandAndControl, DefenseEvasion, Impact, InitialAccess | - |
+| [Votiro - File Blocked from Connector](../content/votiro-votiro-file-blocked-from-connector-17bf3780-ae0d-4cd9-a884-5df8b687f3f5-13901b84.md) | Low | DefenseEvasion, Discovery, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Votiro - File Blocked in Email](../content/votiro-votiro-file-blocked-in-email-0b8b91de-c63e-4bc2-b5f4-b15d3b379ec9-dd69805e.md) | Low | CommandAndControl, DefenseEvasion, Impact, InitialAccess | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Votiro Monitoring Dashboard](../content/votiro-votiro-monitoring-dashboard-733f09ff.md) | - |
+| [Votiro Monitoring Dashboard](../content/votiro-votiro-monitoring-dashboard-733f09ff.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 
@@ -68,13 +68,7 @@ This solution includes **3 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

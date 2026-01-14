@@ -2,20 +2,37 @@
 
 Content items are the security artifacts that provide value from the data collected by Microsoft Sentinel. They include analytics rules for detecting threats, hunting queries for proactive investigation, playbooks for automated response and remediation, workbooks for interactive dashboards, and parsers for data normalization.
 
-**Browse by:**
-
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md) (this page)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · **Content** · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
 ---
 
-## Overview
+## Statistics
 
-This index provides access to **4864 content items** across all Microsoft Sentinel solutions.
+### Content Items Summary
+
+| Metric | Total | Published | Unpublished |
+|:-------|------:|----------:|------------:|
+| **Content Items** | **4,864** | **4,402** | **462** |
+
+### Content Items by Type
+
+| Type | Total | Published | Unpublished |
+|:-----|------:|----------:|------------:|
+| Analytic Rules | 2,185 | 1,921 | 264 |
+| Hunting Queries | 1,168 | 1,112 | 56 |
+| Playbooks | 592 | 532 | 60 |
+| Workbooks | 346 | 296 | 50 |
+| Parsers* | 514 | 482 | 32 |
+| Watchlists | 41 | 41 | 0 |
+| Summary Rules | 18 | 18 | 0 |
+
+*\* Parsers from solution content. See [Parsers](../parsers/parsers-index.md) section for all parsers including legacy.*
+
+---
+
+## Content Index
+
+This index provides access to **4,864 content items** across all Microsoft Sentinel solutions.
 
 Content is organized by type. Click on a content type below to browse all items of that type.
 
@@ -31,12 +48,5 @@ Content is organized by type. Click on a content type below to browse all items 
 
 ---
 
-**Browse by:**
-
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md) (this page)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · **Content** · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 

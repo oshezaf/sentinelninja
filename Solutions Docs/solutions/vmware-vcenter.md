@@ -36,7 +36,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`vcenter_CL`](../tables/vcenter-cl.md) | [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) | - |
+| [`vcenter_CL`](../tables/vcenter-cl.md) | [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -52,20 +52,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [VMware vCenter - Root login](../content/vmware-vcenter-vmware-vcenter-root-login-03e8a895-b5ba-49a0-aed3-f9a997d92fbe-e2c012c8.md) | High | InitialAccess, PrivilegeEscalation | - |
-| [vCenter - Root impersonation](../content/vmware-vcenter-vcenter-root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c-9fa02551.md) | Medium | PrivilegeEscalation | - |
+| [VMware vCenter - Root login](../content/vmware-vcenter-vmware-vcenter-root-login-03e8a895-b5ba-49a0-aed3-f9a997d92fbe-e2c012c8.md) | High | InitialAccess, PrivilegeEscalation | [`vcenter_CL`](../tables/vcenter-cl.md) |
+| [vCenter - Root impersonation](../content/vmware-vcenter-vcenter-root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c-9fa02551.md) | Medium | PrivilegeEscalation | [`vcenter_CL`](../tables/vcenter-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [vCenter](../content/vmware-vcenter-vcenter-167665a0.md) | - |
+| [vCenter](../content/vmware-vcenter-vcenter-167665a0.md) | [`vcenter_CL`](../tables/vcenter-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [vCenter](../content/vmware-vcenter-vcenter-a466d02c-cfe0-4377-9ae0-fdfc8dd79e78-a463614c.md) | - | - |
+| [vCenter](../content/vmware-vcenter-vcenter-a466d02c-cfe0-4377-9ae0-fdfc8dd79e78-a463614c.md) | - | [`vcenter_CL`](../tables/vcenter-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -80,13 +80,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

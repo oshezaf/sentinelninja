@@ -15,16 +15,15 @@ Rule helps to detect when there is a drop of 10% or more in BitSight company rat
 | **Required Connectors** | [BitSight](../connectors/bitsight.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Analytic%20Rules/BitSightDropInCompanyRatings.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to BitSight](../solutions/bitsight.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to BitSight](../solutions/bitsight.md)
 

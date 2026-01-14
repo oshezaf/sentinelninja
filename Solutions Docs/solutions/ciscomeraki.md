@@ -38,11 +38,21 @@ This solution has **3 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) | - |
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki(usingrestapi).md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | - | Workbooks |
+| [`meraki_CL`](../tables/meraki-cl.md) | - | Workbooks |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's content items:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | - | Workbooks |
 
 ## Content Items
 
@@ -58,7 +68,7 @@ This solution includes **7 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook-efe4feca.md) | - |
+| [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook-efe4feca.md) | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Playbooks
 
@@ -74,7 +84,7 @@ This solution includes **7 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoMeraki](../content/ciscomeraki-ciscomeraki-f3811ff1-231c-453f-bd2c-cda06e7c3e1f-119643da.md) | - | - |
+| [CiscoMeraki](../content/ciscomeraki-ciscomeraki-f3811ff1-231c-453f-bd2c-cda06e7c3e1f-119643da.md) | - | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)*<br>[`meraki_CL`](../tables/meraki-cl.md) *(read)* |
 
 ## Additional Documentation
 
@@ -158,13 +168,7 @@ API Key Authentication
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

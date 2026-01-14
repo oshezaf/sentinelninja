@@ -54,7 +54,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OneLogin](../content/oneloginiam-onelogin-cd80d5ce-6c89-4d23-9f98-77066a599982-1e3e4c94.md) | - | - |
+| [OneLogin](../content/oneloginiam-onelogin-cd80d5ce-6c89-4d23-9f98-77066a599982-1e3e4c94.md) | - | [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) *(read)*<br>[`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) *(read)*<br>[`OneLogin_CL`](../tables/onelogin-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -68,13 +68,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

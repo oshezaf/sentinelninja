@@ -13,16 +13,15 @@ This alert creates an incident when Image classification AI Model extraction hig
 | **Required Connectors** | [BoschAIShield](../connectors/boschaishield.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AIShield%20AI%20Security%20Monitoring/Analytic%20Rules/ImageClassficationModelExtractionHighSuspiciousVulnDetection.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AIShield_CL`](../tables/aishield-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md)
 

@@ -42,7 +42,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IvantiUEMEvent](../content/ivanti-unified-endpoint-management-ivantiuemevent-0a1bef4b-5f78-4b1a-927d-e4383e0f741e-30b98c5e.md) | - | - |
+| [IvantiUEMEvent](../content/ivanti-unified-endpoint-management-ivantiuemevent-0a1bef4b-5f78-4b1a-927d-e4383e0f741e-30b98c5e.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -53,13 +53,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -55,7 +55,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [MuleSoftCloudhub](../content/mulesoft-mulesoftcloudhub-b2b66a07-3c23-458b-89bc-f004848e2b10-52c26c00.md) | - | - |
+| [MuleSoftCloudhub](../content/mulesoft-mulesoftcloudhub-b2b66a07-3c23-458b-89bc-f004848e2b10-52c26c00.md) | - | [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -66,13 +66,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

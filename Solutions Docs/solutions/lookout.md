@@ -43,7 +43,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Workbooks |
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Analytics, Hunting, Workbooks |
 | [`Lookout_CL`](../tables/lookout-cl.md) | [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | Analytics |
 
 ## Content Items
@@ -61,24 +61,24 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Lookout - Critical Audit and Policy Changes (v2)](../content/lookout-lookout-critical-audit-and-policy-changes-v2-6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d-c2a4c32f.md) | Medium | DefenseEvasion, Persistence, PrivilegeEscalation, Impact | - |
-| [Lookout - Critical Smishing and Phishing Alerts (v2)](../content/lookout-lookout-critical-smishing-and-phishing-alerts-v2-7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e-766d3a1e.md) | High | InitialAccess, CredentialAccess, Collection, Discovery | - |
-| [Lookout - Device Compliance and Security Status Changes (v2)](../content/lookout-lookout-device-compliance-and-security-status-changes-v2-9c5b6d8f-3a02-4e9b-af4c-2d7e9b1f5a8c-f6dcf4b4.md) | Medium | Discovery, DefenseEvasion, Persistence | - |
-| [Lookout - High Severity Mobile Threats Detected (v2)](../content/lookout-lookout-high-severity-mobile-threats-detected-v2-8b4a5c7e-2f91-4d8a-9e3b-1c6f8a2d4e9f-6f91a43d.md) | High | Discovery, DefenseEvasion, Persistence, PrivilegeEscalation | - |
+| [Lookout - Critical Audit and Policy Changes (v2)](../content/lookout-lookout-critical-audit-and-policy-changes-v2-6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d-c2a4c32f.md) | Medium | DefenseEvasion, Persistence, PrivilegeEscalation, Impact | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [Lookout - Critical Smishing and Phishing Alerts (v2)](../content/lookout-lookout-critical-smishing-and-phishing-alerts-v2-7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e-766d3a1e.md) | High | InitialAccess, CredentialAccess, Collection, Discovery | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [Lookout - Device Compliance and Security Status Changes (v2)](../content/lookout-lookout-device-compliance-and-security-status-changes-v2-9c5b6d8f-3a02-4e9b-af4c-2d7e9b1f5a8c-f6dcf4b4.md) | Medium | Discovery, DefenseEvasion, Persistence | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [Lookout - High Severity Mobile Threats Detected (v2)](../content/lookout-lookout-high-severity-mobile-threats-detected-v2-8b4a5c7e-2f91-4d8a-9e3b-1c6f8a2d4e9f-6f91a43d.md) | High | Discovery, DefenseEvasion, Persistence, PrivilegeEscalation | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 | [Lookout - New Threat events found.](../content/lookout-lookout-new-threat-events-found.-7593cc60-e294-402d-9202-279fb3c7d55f-4c60e079.md) | High | Discovery | [`Lookout_CL`](../tables/lookout-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Lookout Advanced Threat Hunting - Multi-Vector Attacks](../content/lookout-lookout-advanced-threat-hunting-multi-vector-attacks-lookout-advanced-threat-hunting-4973d03a.md) | Discovery, Persistence, DefenseEvasion | - |
+| [Lookout Advanced Threat Hunting - Multi-Vector Attacks](../content/lookout-lookout-advanced-threat-hunting-multi-vector-attacks-lookout-advanced-threat-hunting-4973d03a.md) | Discovery, Persistence, DefenseEvasion | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [LookoutEvents](../content/lookout-lookoutevents-591b9350.md) | - |
-| [LookoutEventsV2](../content/lookout-lookouteventsv2-865167af.md) | - |
+| [LookoutEvents](../content/lookout-lookoutevents-591b9350.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+| [LookoutEventsV2](../content/lookout-lookouteventsv2-865167af.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 | [LookoutExecutiveDashboard](../content/lookout-lookoutexecutivedashboard-f8721bde.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 | [LookoutIOAInvestigationDashboard](../content/lookout-lookoutioainvestigationdashboard-3c024d7b.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 | [LookoutSecurityInvestigationDashboard](../content/lookout-lookoutsecurityinvestigationdashboard-1578bafc.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
@@ -87,7 +87,7 @@ This solution includes **12 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [LookoutEvents](../content/lookout-lookoutevents-37da203d-4edd-429e-83cd-fccf11e60c20-a972c8fc.md) | - | - |
+| [LookoutEvents](../content/lookout-lookoutevents-37da203d-4edd-429e-83cd-fccf11e60c20-a972c8fc.md) | - | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) *(read)* |
 
 ## Additional Documentation
 
@@ -165,13 +165,7 @@ Solutions/Lookout/
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -31,11 +31,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) | Workbooks |
+| [`Event`](../tables/event.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
 
 ## Content Items
@@ -53,7 +54,7 @@ This solution includes **10 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-admin-activity-online-c51be957.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
+| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)<br>[`Event`](../tables/event.md) |
 | [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-search-adminauditlog-online-11d0bde2.md) | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
 
@@ -61,11 +62,11 @@ This solution includes **10 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeConfiguration](../content/microsoft-exchange-security-exchange-online-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620-0563d5d5.md) | - | - |
-| [ExchangeEnvironmentList](../content/microsoft-exchange-security-exchange-online-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a-852d1447.md) | - | - |
-| [MESCheckOnlineVIP](../content/microsoft-exchange-security-exchange-online-mescheckonlinevip-9b864a03-5db6-4cf0-aef1-17ac0cc34195-78b91c0a.md) | - | - |
-| [MESCompareDataMRA](../content/microsoft-exchange-security-exchange-online-mescomparedatamra-39f51672-8c63-4600-882a-5db8275f798f-41c76693.md) | - | - |
-| [MESOfficeActivityLogs](../content/microsoft-exchange-security-exchange-online-mesofficeactivitylogs-2be516a9-f8fd-4357-a839-cafcb5a6d73a-a47fdf2d.md) | - | - |
+| [ExchangeConfiguration](../content/microsoft-exchange-security-exchange-online-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620-0563d5d5.md) | The list of section to query. Default is all. | - |
+| [ExchangeEnvironmentList](../content/microsoft-exchange-security-exchange-online-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a-852d1447.md) | The target environment to query. Valid values are "On-Premises" or "Online". Default is "On-Premises... | - |
+| [MESCheckOnlineVIP](../content/microsoft-exchange-security-exchange-online-mescheckonlinevip-9b864a03-5db6-4cf0-aef1-17ac0cc34195-78b91c0a.md) | The user to verifiy if is a VIP or not. Default value is "all". | - |
+| [MESCompareDataMRA](../content/microsoft-exchange-security-exchange-online-mescomparedatamra-39f51672-8c63-4600-882a-5db8275f798f-41c76693.md) | The Section to compare. Default value is "". | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) *(read)* |
+| [MESOfficeActivityLogs](../content/microsoft-exchange-security-exchange-online-mesofficeactivitylogs-2be516a9-f8fd-4357-a839-cafcb5a6d73a-a47fdf2d.md) | - | [`OfficeActivity`](../tables/officeactivity.md) *(read)* |
 
 ### Watchlists
 
@@ -103,13 +104,7 @@ We have published Public Contents for the Microsoft Exchange Security Sentinel S
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

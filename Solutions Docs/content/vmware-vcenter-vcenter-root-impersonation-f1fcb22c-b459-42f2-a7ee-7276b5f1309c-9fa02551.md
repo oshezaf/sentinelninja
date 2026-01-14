@@ -15,16 +15,15 @@ Detects when root impersonation occurs.
 | **Required Connectors** | [CustomLogsAma](../connectors/customlogsama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter/Analytic%20Rules/vCenter-Root%20impersonation.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`vcenter_CL`](../tables/vcenter-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to VMware vCenter](../solutions/vmware-vcenter.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to VMware vCenter](../solutions/vmware-vcenter.md)
 

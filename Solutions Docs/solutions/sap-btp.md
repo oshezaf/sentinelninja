@@ -27,11 +27,20 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | [SAP BTP](../connectors/sapbtpauditevents.md) | Analytics, Workbooks |
+| [`UPDATE`](../tables/update.md) | - | Workbooks |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's content items:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 
 ## Content Items
 
@@ -66,7 +75,7 @@ This solution includes **16 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) | [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) |
+| [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) | [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)<br>[`UPDATE`](../tables/update.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ## Release Notes
 
@@ -86,13 +95,7 @@ This solution includes **16 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

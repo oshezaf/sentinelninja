@@ -42,7 +42,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **15 table(s)**:
+This solution uses **16 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -51,7 +51,7 @@ This solution uses **15 table(s)**:
 | [`AuditLogs`](../tables/auditlogs.md) | - | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | - | Hunting, Workbooks |
 | [`EmailEvents`](../tables/emailevents.md) | - | Workbooks |
-| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | - | Analytics |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | - | Analytics, Hunting |
 | [`LAQueryLogs`](../tables/laquerylogs.md) | - | Workbooks |
 | [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
@@ -60,11 +60,12 @@ This solution uses **15 table(s)**:
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting, Workbooks |
 | [`Syslog`](../tables/syslog.md) | - | Workbooks |
 | [`Update`](../tables/update.md) | - | Workbooks |
+| [`alert`](../tables/alert.md) | - | Workbooks |
 | [`operation`](../tables/operation.md) | - | Workbooks |
 
 ### Internal Tables
 
-The following **6 table(s)** are used internally by this solution's playbooks:
+The following **6 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -90,7 +91,7 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md) | Medium | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md) | Medium | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db-6bbae8c7.md) | High | Execution | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [Insider Risk_Microsoft Purview Insider Risk Management Alert Observed](../content/microsoftpurviewinsiderriskmanagement-insider-risk-microsoft-purview-insider-risk-management-alert-obser-69660e65-0e5c-4700-8b99-5caf59786606-3217bb57.md) | High | Execution | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Insider Risk_Risky User Access By Application](../content/microsoftpurviewinsiderriskmanagement-insider-risk-risky-user-access-by-application-15386bba-dc70-463f-a09f-d392e7731c63-dfb68560.md) | Medium | Execution | [`SigninLogs`](../tables/signinlogs.md) |
@@ -103,14 +104,14 @@ This solution includes **12 content item(s)**:
 | [Insider Risk_Entity Anomaly Followed by IRM Alert](../content/microsoftpurviewinsiderriskmanagement-insider-risk-entity-anomaly-followed-by-irm-alert-ea5d043f-80ef-452c-a31a-b584e485b2be-9c9a3b63.md) | PrivilegeEscalation | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md) | Exfiltration | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Insider Risk_Multiple Entity-Based Anomalies](../content/microsoftpurviewinsiderriskmanagement-insider-risk-multiple-entity-based-anomalies-3bc01058-ce23-45ba-a7e9-409d844b12dc-2bc6a4d7.md) | PrivilegeEscalation | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
-| [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Insider Risk_Sign In Risk Followed By Sensitive Data Access](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sign-in-risk-followed-by-sensitive-data-access-45ec52c2-99e1-4de1-9adc-bae0f79d4e23-f2037089.md) | Exfiltration | [`SigninLogs`](../tables/signinlogs.md) |
+| [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) | Impact | [`AzureActivity`](../tables/azureactivity.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [Insider Risk_Sign In Risk Followed By Sensitive Data Access](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sign-in-risk-followed-by-sensitive-data-access-45ec52c2-99e1-4de1-9adc-bae0f79d4e23-f2037089.md) | Exfiltration | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`operation`](../tables/operation.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md)<br>[`anomalies`](../tables/anomalies.md) |
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`alert`](../tables/alert.md)<br>[`operation`](../tables/operation.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md)<br>[`anomalies`](../tables/anomalies.md) |
 
 ### Playbooks
 
@@ -149,13 +150,7 @@ You can deploy the solution by clicking on the buttons below:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

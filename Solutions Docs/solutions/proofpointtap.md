@@ -84,7 +84,7 @@ This solution includes **7 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ProofpointTAPEvent](../content/proofpointtap-proofpointtapevent-6cdd2169-833b-4545-ab58-8456b8ccc11a-0c79a6d5.md) | - | - |
+| [ProofpointTAPEvent](../content/proofpointtap-proofpointtapevent-6cdd2169-833b-4545-ab58-8456b8ccc11a-0c79a6d5.md) | - | [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md) *(read)*<br>[`ProofPointTAPClicksBlocked_CL`](../tables/proofpointtapclicksblocked-cl.md) *(read)*<br>[`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) *(read)*<br>[`ProofPointTAPClicksPermitted_CL`](../tables/proofpointtapclickspermitted-cl.md) *(read)*<br>[`ProofPointTAPMessagesBlockedV2_CL`](../tables/proofpointtapmessagesblockedv2-cl.md) *(read)*<br>[`ProofPointTAPMessagesBlocked_CL`](../tables/proofpointtapmessagesblocked-cl.md) *(read)*<br>[`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) *(read)*<br>[`ProofPointTAPMessagesDelivered_CL`](../tables/proofpointtapmessagesdelivered-cl.md) *(read)*<br>[`ProofpointTAPNativePoller_CL`](../tables/proofpointtapnativepoller-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -106,13 +106,7 @@ This solution includes **7 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

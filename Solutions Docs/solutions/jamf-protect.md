@@ -26,13 +26,14 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) | - | Analytics |
 | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
-| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | - |
-| [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | - |
+| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Workbooks |
+| [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -50,14 +51,14 @@ This solution includes **12 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Jamf Protect - Alerts](../content/jamf-protect-jamf-protect-alerts-6098daa0-f05e-44d5-b5a0-913e63ba3179-38dbdadd.md) | High | - | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) |
-| [Jamf Protect - Network Threats](../content/jamf-protect-jamf-protect-network-threats-44da53c3-f3b0-4b70-afff-f79275cb9442-34cfd4a7.md) | Informational | InitialAccess | - |
-| [Jamf Protect - Unified Logs](../content/jamf-protect-jamf-protect-unified-logs-9eb2f758-003b-4303-83c6-97aed4c03e41-73a1260b.md) | Informational | - | - |
+| [Jamf Protect - Network Threats](../content/jamf-protect-jamf-protect-network-threats-44da53c3-f3b0-4b70-afff-f79275cb9442-34cfd4a7.md) | Informational | InitialAccess | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) |
+| [Jamf Protect - Unified Logs](../content/jamf-protect-jamf-protect-unified-logs-9eb2f758-003b-4303-83c6-97aed4c03e41-73a1260b.md) | Informational | - | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [JamfProtectDashboard](../content/jamf-protect-jamfprotectdashboard-b0beeadb.md) | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) |
+| [JamfProtectDashboard](../content/jamf-protect-jamfprotectdashboard-b0beeadb.md) | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md)<br>[`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md)<br>[`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) |
 
 ### Playbooks
 
@@ -71,11 +72,11 @@ This solution includes **12 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [JamfProtectAlerts](../content/jamf-protect-jamfprotectalerts-b1044d58-6384-454e-b51d-5750fda0698c-cd2b688f.md) | - | - |
-| [JamfProtectNetworkTraffic](../content/jamf-protect-jamfprotectnetworktraffic-374cd4de-269c-465e-93ac-b9ade4af4f28-b5e90150.md) | - | - |
-| [JamfProtectTelemetry](../content/jamf-protect-jamfprotecttelemetry-d941b837-88fa-4c77-a4d8-76af0044cac0-17d14a57.md) | - | - |
-| [JamfProtectThreatEvents](../content/jamf-protect-jamfprotectthreatevents-7950cddf-e280-423c-a2cd-a790ec54c085-861c2937.md) | - | - |
-| [JamfProtectUnifiedLogs](../content/jamf-protect-jamfprotectunifiedlogs-a848f8db-4cf8-4a64-9bbc-58f4183f2bb1-c9bfd19c.md) | - | - |
+| [JamfProtectAlerts](../content/jamf-protect-jamfprotectalerts-b1044d58-6384-454e-b51d-5750fda0698c-cd2b688f.md) | - | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) *(read)* |
+| [JamfProtectNetworkTraffic](../content/jamf-protect-jamfprotectnetworktraffic-374cd4de-269c-465e-93ac-b9ade4af4f28-b5e90150.md) | - | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) *(read)* |
+| [JamfProtectTelemetry](../content/jamf-protect-jamfprotecttelemetry-d941b837-88fa-4c77-a4d8-76af0044cac0-17d14a57.md) | - | [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) *(read)* |
+| [JamfProtectThreatEvents](../content/jamf-protect-jamfprotectthreatevents-7950cddf-e280-423c-a2cd-a790ec54c085-861c2937.md) | - | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) *(read)* |
+| [JamfProtectUnifiedLogs](../content/jamf-protect-jamfprotectunifiedlogs-a848f8db-4cf8-4a64-9bbc-58f4183f2bb1-c9bfd19c.md) | - | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -100,13 +101,7 @@ This solution includes **12 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

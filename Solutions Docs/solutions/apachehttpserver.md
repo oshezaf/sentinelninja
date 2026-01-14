@@ -36,7 +36,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | [[Deprecated] Apache HTTP Server](../connectors/apachehttpserver.md) | - |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | [[Deprecated] Apache HTTP Server](../connectors/apachehttpserver.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -53,43 +53,43 @@ This solution includes **22 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Apache - Apache 2.4.49 flaw CVE-2021-41773](../content/apachehttpserver-apache-apache-2.4.49-flaw-cve-2021-41773-767f9dc4-3b01-11ec-8d3d-0242ac130003-0ca20cc4.md) | High | InitialAccess, LateralMovement | - |
-| [Apache - Command in URI](../content/apachehttpserver-apache-command-in-uri-54da6a42-3b00-11ec-8d3d-0242ac130003-e8de0502.md) | High | InitialAccess | - |
-| [Apache - Known malicious user agent](../content/apachehttpserver-apache-known-malicious-user-agent-e9edfe1c-3afd-11ec-8d3d-0242ac130003-2c4bafcb.md) | High | InitialAccess | - |
-| [Apache - Multiple client errors from single IP](../content/apachehttpserver-apache-multiple-client-errors-from-single-ip-15f5a956-3af9-11ec-8d3d-0242ac130003-cb481a14.md) | Medium | InitialAccess | - |
-| [Apache - Multiple server errors from single IP](../content/apachehttpserver-apache-multiple-server-errors-from-single-ip-1bf246a2-3af9-11ec-8d3d-0242ac130003-897fd531.md) | Medium | Impact, InitialAccess | - |
-| [Apache - Private IP in URL](../content/apachehttpserver-apache-private-ip-in-url-db5f16f0-3afe-11ec-8d3d-0242ac130003-fe445c48.md) | Medium | InitialAccess | - |
-| [Apache - Put suspicious file](../content/apachehttpserver-apache-put-suspicious-file-c5d69e46-3b00-11ec-8d3d-0242ac130003-6d3641ad.md) | Medium | InitialAccess, Exfiltration | - |
-| [Apache - Request from private IP](../content/apachehttpserver-apache-request-from-private-ip-a0077556-3aff-11ec-8d3d-0242ac130003-aab89050.md) | Medium | Impact, InitialAccess | - |
-| [Apache - Request to sensitive files](../content/apachehttpserver-apache-request-to-sensitive-files-d1c52578-3afc-11ec-8d3d-0242ac130003-bde340ab.md) | Medium | InitialAccess | - |
-| [Apache - Requests to rare files](../content/apachehttpserver-apache-requests-to-rare-files-14d7e15e-3afb-11ec-8d3d-0242ac130003-4ca207f0.md) | Medium | InitialAccess | - |
+| [Apache - Apache 2.4.49 flaw CVE-2021-41773](../content/apachehttpserver-apache-apache-2.4.49-flaw-cve-2021-41773-767f9dc4-3b01-11ec-8d3d-0242ac130003-0ca20cc4.md) | High | InitialAccess, LateralMovement | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Command in URI](../content/apachehttpserver-apache-command-in-uri-54da6a42-3b00-11ec-8d3d-0242ac130003-e8de0502.md) | High | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Known malicious user agent](../content/apachehttpserver-apache-known-malicious-user-agent-e9edfe1c-3afd-11ec-8d3d-0242ac130003-2c4bafcb.md) | High | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Multiple client errors from single IP](../content/apachehttpserver-apache-multiple-client-errors-from-single-ip-15f5a956-3af9-11ec-8d3d-0242ac130003-cb481a14.md) | Medium | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Multiple server errors from single IP](../content/apachehttpserver-apache-multiple-server-errors-from-single-ip-1bf246a2-3af9-11ec-8d3d-0242ac130003-897fd531.md) | Medium | Impact, InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Private IP in URL](../content/apachehttpserver-apache-private-ip-in-url-db5f16f0-3afe-11ec-8d3d-0242ac130003-fe445c48.md) | Medium | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Put suspicious file](../content/apachehttpserver-apache-put-suspicious-file-c5d69e46-3b00-11ec-8d3d-0242ac130003-6d3641ad.md) | Medium | InitialAccess, Exfiltration | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Request from private IP](../content/apachehttpserver-apache-request-from-private-ip-a0077556-3aff-11ec-8d3d-0242ac130003-aab89050.md) | Medium | Impact, InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Request to sensitive files](../content/apachehttpserver-apache-request-to-sensitive-files-d1c52578-3afc-11ec-8d3d-0242ac130003-bde340ab.md) | Medium | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Requests to rare files](../content/apachehttpserver-apache-requests-to-rare-files-14d7e15e-3afb-11ec-8d3d-0242ac130003-4ca207f0.md) | Medium | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Apache - Rare URLs requested](../content/apachehttpserver-apache-rare-urls-requested-4c1a164e-3ae9-11ec-8d3d-0242ac130003-e7e235de.md) | InitialAccess | - |
-| [Apache - Rare files requested](../content/apachehttpserver-apache-rare-files-requested-ae48a600-3ae9-11ec-8d3d-0242ac130003-154f06bb.md) | InitialAccess | - |
-| [Apache - Rare user agents](../content/apachehttpserver-apache-rare-user-agents-d2e85f1a-3ae8-11ec-8d3d-0242ac130003-af20410c.md) | InitialAccess | - |
-| [Apache - Rare user agents with client errors](../content/apachehttpserver-apache-rare-user-agents-with-client-errors-5ce3f2ed-0c81-407f-ae12-6ea00a6d9873-622d3504.md) | InitialAccess | - |
-| [Apache - Requests to unexisting files](../content/apachehttpserver-apache-requests-to-unexisting-files-017d1bee-3aea-11ec-8d3d-0242ac130003-99a9b641.md) | InitialAccess | - |
-| [Apache - Top Top files requested](../content/apachehttpserver-apache-top-top-files-requested-456ab502-38b8-11ec-8d3d-0242ac130003-b6051fd0.md) | InitialAccess | - |
-| [Apache - Top URLs with client errors](../content/apachehttpserver-apache-top-urls-with-client-errors-28961fc8-3892-11ec-8d3d-0242ac130003-c3caf0ed.md) | Impact, InitialAccess | - |
-| [Apache - Top URLs with server errors](../content/apachehttpserver-apache-top-urls-with-server-errors-ccdd22c6-3896-11ec-8d3d-0242ac130003-1ded7119.md) | Impact, InitialAccess | - |
-| [Apache - Top files requested with errors](../content/apachehttpserver-apache-top-files-requested-with-errors-afe13b7c-38b8-11ec-8d3d-0242ac130003-552d4bde.md) | InitialAccess | - |
-| [Apache - Unexpected Post Requests](../content/apachehttpserver-apache-unexpected-post-requests-c21ea046-3ae7-11ec-8d3d-0242ac130003-e7427332.md) | Persistence, CommandAndControl | - |
+| [Apache - Rare URLs requested](../content/apachehttpserver-apache-rare-urls-requested-4c1a164e-3ae9-11ec-8d3d-0242ac130003-e7e235de.md) | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Rare files requested](../content/apachehttpserver-apache-rare-files-requested-ae48a600-3ae9-11ec-8d3d-0242ac130003-154f06bb.md) | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Rare user agents](../content/apachehttpserver-apache-rare-user-agents-d2e85f1a-3ae8-11ec-8d3d-0242ac130003-af20410c.md) | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Rare user agents with client errors](../content/apachehttpserver-apache-rare-user-agents-with-client-errors-5ce3f2ed-0c81-407f-ae12-6ea00a6d9873-622d3504.md) | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Requests to unexisting files](../content/apachehttpserver-apache-requests-to-unexisting-files-017d1bee-3aea-11ec-8d3d-0242ac130003-99a9b641.md) | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Top Top files requested](../content/apachehttpserver-apache-top-top-files-requested-456ab502-38b8-11ec-8d3d-0242ac130003-b6051fd0.md) | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Top URLs with client errors](../content/apachehttpserver-apache-top-urls-with-client-errors-28961fc8-3892-11ec-8d3d-0242ac130003-c3caf0ed.md) | Impact, InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Top URLs with server errors](../content/apachehttpserver-apache-top-urls-with-server-errors-ccdd22c6-3896-11ec-8d3d-0242ac130003-1ded7119.md) | Impact, InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Top files requested with errors](../content/apachehttpserver-apache-top-files-requested-with-errors-afe13b7c-38b8-11ec-8d3d-0242ac130003-552d4bde.md) | InitialAccess | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
+| [Apache - Unexpected Post Requests](../content/apachehttpserver-apache-unexpected-post-requests-c21ea046-3ae7-11ec-8d3d-0242ac130003-e7427332.md) | Persistence, CommandAndControl | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ApacheHTTPServer](../content/apachehttpserver-apachehttpserver-112ebf76.md) | - |
+| [ApacheHTTPServer](../content/apachehttpserver-apachehttpserver-112ebf76.md) | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ApacheHTTPServer](../content/apachehttpserver-apachehttpserver-51034895-bea7-44a9-b7b0-b3cca70253f4-0c9e20c5.md) | - | - |
+| [ApacheHTTPServer](../content/apachehttpserver-apachehttpserver-51034895-bea7-44a9-b7b0-b3cca70253f4-0c9e20c5.md) | - | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -100,13 +100,7 @@ This solution includes **22 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -14,16 +14,16 @@ Detect activities when a repository was destroyed. This query runs every day and
 | **Techniques** | T1078 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Analytic%20Rules/%28Preview%29%20GitHub%20-%20Repository%20was%20destroyed.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
+- [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to GitHub](../solutions/github.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to GitHub](../solutions/github.md)
 

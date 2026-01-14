@@ -19,6 +19,14 @@
 
 This ASIM parser supports normalizing user management activity in the Cisco ISE events to the ASIM User Management schema.
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [Syslog](../tables/syslog.md) |
+
 ## Parameters
 
 | Name | Type | Default |
@@ -33,12 +41,7 @@ This ASIM parser supports normalizing user management activity in the Cisco ISE 
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md)
 
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to ASIM Index](../asim/asim-index.md)
 

@@ -2,6 +2,10 @@
 
 This index organizes ASIM parsers by the product or data source they normalize. Use this view to find ASIM support for a specific product, including which schemas are supported and which tables contain the source data.
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · **ASIM Products**
+
+---
+
 ## Summary
 
 | Metric | Count |
@@ -9,7 +13,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | **Products** | 80 |
 | **Source Parser Pairs*** | 82 |
 | **Schemas Covered** | 11 |
-| **Tables Used** | 74 |
+| **Tables Used** | 75 |
 
 \* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
 
@@ -22,7 +26,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [AWS](#aws) | 0 | 1 | 1 |
 | [AWS VPC](#aws-vpc) | 0 | 1 | 1 |
 | [Azure Firewall](#azure-firewall) | 1 | 3 | 9 |
-| [Azure NSG flows](#azure-nsg-flows) | 0 | 1 | 1 |
+| [Azure NSG flows](#azure-nsg-flows) | 0 | 1 | 2 |
 | [Azure NTANetAnalytics](#azure-ntanetanalytics) | 0 | 1 | 1 |
 | [Barracuda WAF](#barracuda-waf) | 3 | 4 | 2 |
 | [CheckPointFirewall](#checkpointfirewall) | 0 | 1 | 1 |
@@ -34,16 +38,16 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [CiscoASA](#ciscoasa) | 0 | 1 | 1 |
 | [Citrix NetScaler](#citrix-netscaler) | 0 | 1 | 1 |
 | [Corelight Zeek](#corelight-zeek) | 1 | 2 | 1 |
-| [CrowdStrike Falcon Endpoint Protection](#crowdstrike-falcon-endpoint-protection) | 1 | 3 | 1 |
+| [CrowdStrike Falcon Endpoint Protection](#crowdstrike-falcon-endpoint-protection) | 1 | 3 | 2 |
 | [F5 BIG-IP Application Security Manager (ASM)](#f5-big-ip-application-security-manager-asm) | 0 | 1 | 1 |
 | [ForcePointFirewall](#forcepointfirewall) | 0 | 1 | 1 |
 | [Fortinet FortiGate](#fortinet-fortigate) | 1 | 3 | 1 |
 | [GCP Cloud DNS](#gcp-cloud-dns) | 0 | 1 | 1 |
-| [Google Workspace](#google-workspace) | 1 | 2 | 0 |
+| [Google Workspace](#google-workspace) | 1 | 2 | 2 |
 | [Illumio](#illumio) | 0 | 1 | 1 |
 | [Illumio Core](#illumio-core) | 0 | 1 | 1 |
 | [Illumio SaaS Core](#illumio-saas-core) | 0 | 1 | 1 |
-| [Infoblox BloxOne](#infoblox-bloxone) | 1 | 3 | 0 |
+| [Infoblox BloxOne](#infoblox-bloxone) | 1 | 3 | 1 |
 | [Infoblox NIOS](#infoblox-nios) | 0 | 1 | 1 |
 | [Internet Information Services (IIS)](#internet-information-services-iis) | 0 | 1 | 1 |
 | [M365 Defender for EndPoint](#m365-defender-for-endpoint) | 0 | 1 | 1 |
@@ -61,10 +65,10 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Microsoft Defender XDR](#microsoft-defender-xdr) | 0 | 1 | 1 |
 | [Microsoft Entra ID](#microsoft-entra-id) | 2 | 1 | 4 |
 | [Microsoft Security Event](#microsoft-security-event) | 0 | 1 | 1 |
-| [Microsoft SharePoint](#microsoft-sharepoint) | 1 | 2 | 1 |
+| [Microsoft SharePoint](#microsoft-sharepoint) | 1 | 2 | 2 |
 | [Microsoft Sysmon](#microsoft-sysmon) | 1 | 1 | 2 |
 | [Microsoft Sysmon for Linux](#microsoft-sysmon-for-linux) | 1 | 1 | 1 |
-| [Microsoft Windows](#microsoft-windows) | 1 | 1 | 6 |
+| [Microsoft Windows](#microsoft-windows) | 1 | 1 | 5 |
 | [Microsoft Windows Event](#microsoft-windows-event) | 0 | 1 | 1 |
 | [Microsoft Windows Events](#microsoft-windows-events) | 1 | 1 | 2 |
 | [Microsoft Windows Events Sysmon](#microsoft-windows-events-sysmon) | 2 | 2 | 2 |
@@ -91,7 +95,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [VMConnection](#vmconnection) | 0 | 1 | 1 |
 | [VMware Carbon Black Cloud](#vmware-carbon-black-cloud) | 3 | 6 | 5 |
 | [WatchGuard Fireware OS](#watchguard-fireware-os) | 0 | 1 | 1 |
-| [Windows Firewall](#windows-firewall) | 1 | 1 | 2 |
+| [Windows Firewall](#windows-firewall) | 1 | 1 | 3 |
 | [Windows Security Events](#windows-security-events) | 0 | 1 | 2 |
 | [Windows Sysmon](#windows-sysmon) | 2 | 2 | 2 |
 | [Zscaler ZIA](#zscaler-zia) | 0 | 1 | 1 |
@@ -166,13 +170,13 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** NetworkSession
 
-**Tables:** [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md)
+**Tables:** [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md), [Event](../tables/event.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md) | NetworkSession | [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md) | 0.1.1 |
+| [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md) | NetworkSession | [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md), [Event](../tables/event.md) | 0.1.1 |
 
 ## Azure NTANetAnalytics
 
@@ -251,10 +255,10 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| [ASimAuditEventCiscoISE](asimauditeventciscoise.md) | AuditEvent |  | 0.1 |
-| [ASimAuthenticationCiscoISE](asimauthenticationciscoise.md) | Authentication |  | 0.1.0 |
+| [ASimAuditEventCiscoISE](asimauditeventciscoise.md) | AuditEvent | [Syslog](../tables/syslog.md) | 0.1 |
+| [ASimAuthenticationCiscoISE](asimauthenticationciscoise.md) | Authentication | [Syslog](../tables/syslog.md) | 0.1.0 |
 | [ASimNetworkSessionCiscoISE](asimnetworksessionciscoise.md) | NetworkSession | [Syslog](../tables/syslog.md) | 1.1.0 |
-| [ASimUserManagementCiscoISE](asimusermanagementciscoise.md) | UserManagement |  | 0.1.2 |
+| [ASimUserManagementCiscoISE](asimusermanagementciscoise.md) | UserManagement | [Syslog](../tables/syslog.md) | 0.1.2 |
 
 ## Cisco Meraki
 
@@ -327,7 +331,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** AuditEvent, Authentication, NetworkSession
 
-**Tables:** [CommonSecurityLog](../tables/commonsecuritylog.md)
+**Tables:** [CommonSecurityLog](../tables/commonsecuritylog.md), [Event](../tables/event.md)
 
 ### Parsers
 
@@ -335,7 +339,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 |:-------|:-------|:-------|:--------|
 | [ASimAuditEventCrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md) | AuditEvent | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
 | [ASimAuthenticationCrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
-| [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
+| [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md), [Event](../tables/event.md) | 0.1.0 |
 
 ## F5 BIG-IP Application Security Manager (ASM)
 
@@ -391,12 +395,14 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** Authentication, FileEvent
 
+**Tables:** [GWorkspace_ReportsAPI_drive_CL](../tables/gworkspace-reportsapi-drive-cl.md), [GWorkspace_ReportsAPI_login_CL](../tables/gworkspace-reportsapi-login-cl.md)
+
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| [ASimAuthenticationGoogleWorkspace](asimauthenticationgoogleworkspace.md) | Authentication |  | 0.1.0 |
-| [ASimFileEventGoogleWorkspace](asimfileeventgoogleworkspace.md) | FileEvent |  | 0.1.0 |
+| [ASimAuthenticationGoogleWorkspace](asimauthenticationgoogleworkspace.md) | Authentication | [GWorkspace_ReportsAPI_login_CL](../tables/gworkspace-reportsapi-login-cl.md) | 0.1.0 |
+| [ASimFileEventGoogleWorkspace](asimfileeventgoogleworkspace.md) | FileEvent | [GWorkspace_ReportsAPI_drive_CL](../tables/gworkspace-reportsapi-drive-cl.md) | 0.1.0 |
 
 ## Illumio
 
@@ -438,13 +444,15 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** AuditEvent, DhcpEvent, Dns
 
+**Tables:** [CommonSecurityLog](../tables/commonsecuritylog.md)
+
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| [ASimAuditEventInfobloxBloxOne](asimauditeventinfobloxbloxone.md) | AuditEvent |  | 0.1.0 |
-| [ASimDhcpEventInfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | DhcpEvent |  | 0.1.0 |
-| [ASimDnsInfobloxBloxOne](asimdnsinfobloxbloxone.md) | Dns |  | 0.1.0 |
+| [ASimAuditEventInfobloxBloxOne](asimauditeventinfobloxbloxone.md) | AuditEvent | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
+| [ASimDhcpEventInfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | DhcpEvent | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
+| [ASimDnsInfobloxBloxOne](asimdnsinfobloxbloxone.md) | Dns | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
 
 ## Infoblox NIOS
 
@@ -660,14 +668,14 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** AuditEvent, FileEvent
 
-**Tables:** [OfficeActivity](../tables/officeactivity.md)
+**Tables:** [OfficeActivity](../tables/officeactivity.md), [Operation](../tables/operation.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | [ASimAuditEventMicrosoftExchangeAdmin365](asimauditeventmicrosoftexchangeadmin365.md) | AuditEvent | [OfficeActivity](../tables/officeactivity.md) | 0.2 |
-| [ASimFileEventMicrosoftSharePoint](asimfileeventmicrosoftsharepoint.md) | FileEvent | [OfficeActivity](../tables/officeactivity.md) | 0.3.1 |
+| [ASimFileEventMicrosoftSharePoint](asimfileeventmicrosoftsharepoint.md) | FileEvent | [OfficeActivity](../tables/officeactivity.md), [Operation](../tables/operation.md) | 0.3.1 |
 
 ## Microsoft Sysmon
 
@@ -699,15 +707,15 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** AuditEvent
 
-**Tables:** [Event](../tables/event.md), [Operation](../tables/operation.md), [SecurityEvent](../tables/securityevent.md), [Update](../tables/update.md), [WindowsEvent](../tables/windowsevent.md), [WindowsFirewall](../tables/windowsfirewall.md)
+**Tables:** [Event](../tables/event.md), [Operation](../tables/operation.md), [SecurityEvent](../tables/securityevent.md), [Update](../tables/update.md), [WindowsEvent](../tables/windowsevent.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| [ASimAuditEventMicrosoftEvent](asimauditeventmicrosoftevent.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [Update](../tables/update.md), [WindowsFirewall](../tables/windowsfirewall.md) | 0.2.1 |
-| [ASimAuditEventMicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [SecurityEvent](../tables/securityevent.md), [Update](../tables/update.md), [WindowsFirewall](../tables/windowsfirewall.md) | 0.2.1 |
-| [ASimAuditEventMicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [Update](../tables/update.md), [WindowsEvent](../tables/windowsevent.md), [WindowsFirewall](../tables/windowsfirewall.md) | 0.2.1 |
+| [ASimAuditEventMicrosoftEvent](asimauditeventmicrosoftevent.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [Update](../tables/update.md) | 0.2.1 |
+| [ASimAuditEventMicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [SecurityEvent](../tables/securityevent.md), [Update](../tables/update.md) | 0.2.1 |
+| [ASimAuditEventMicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [Update](../tables/update.md), [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
 
 ## Microsoft Windows Event
 
@@ -1069,13 +1077,13 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** NetworkSession
 
-**Tables:** [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md)
+**Tables:** [Event](../tables/event.md), [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| [ASimNetworkSessionMicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md) | NetworkSession | [SecurityEvent](../tables/securityevent.md) | 0.5.0 |
+| [ASimNetworkSessionMicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md) | NetworkSession | [Event](../tables/event.md), [SecurityEvent](../tables/securityevent.md) | 0.5.0 |
 | [ASimNetworkSessionMicrosoftWindowsEventFirewall](asimnetworksessionmicrosoftwindowseventfirewall.md) | NetworkSession | [WindowsEvent](../tables/windowsevent.md) | 0.5.0 |
 
 ## Windows Security Events
@@ -1143,12 +1151,5 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ---
 
-**Browse by:**
-
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md) (this page)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · **ASIM Products**
 

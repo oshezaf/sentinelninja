@@ -40,7 +40,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [WatchGuardFirebox](../content/watchguard-firebox-watchguardfirebox-b9b4ad6b-a7bf-4555-a56a-c37e382730f8-5bfbb367.md) ⚠️ | - | - |
+| [WatchGuardFirebox](../content/watchguard-firebox-watchguardfirebox-b9b4ad6b-a7bf-4555-a56a-c37e382730f8-5bfbb367.md) ⚠️ | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
@@ -52,13 +52,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

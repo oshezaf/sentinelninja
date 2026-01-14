@@ -18,18 +18,10 @@ This content item queries data from the following tables:
 - [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md)
 - [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md)
 - [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md)
-- [`watchlist`](../tables/watchlist.md)
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Workbooks](workbooks.md)
-- [← Back to Veeam](../solutions/veeam.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Workbooks](workbooks.md) · [Back to Veeam](../solutions/veeam.md)
 

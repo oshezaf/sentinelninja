@@ -34,18 +34,18 @@ This solution uses **8 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics, Workbooks |
 | [`Entities_Data_CL`](../tables/entities-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics |
-| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
+| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
 | [`Event`](../tables/event.md) | - | Workbooks |
-| [`Health_Data_CL`](../tables/health-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | - |
+| [`Health_Data_CL`](../tables/health-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
 | [`Usage`](../tables/usage.md) | - | Workbooks |
 
 ### Internal Tables
 
-The following **3 table(s)** are used internally by this solution's playbooks:
+The following **3 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -69,8 +69,8 @@ This solution includes **33 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Defender Alert Evidence](../content/vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md) | High | Persistence | *Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
-| [Vectra Create Detection Alert for Accounts](../content/vectra-xdr-vectra-create-detection-alert-for-accounts-e796701f-6b39-4c54-bf8a-1d543a990784-7d97d787.md) | Medium | Persistence | - |
-| [Vectra Create Detection Alert for Hosts](../content/vectra-xdr-vectra-create-detection-alert-for-hosts-fb861539-da19-4266-831f-99459b8e7605-e79059e2.md) | Medium | Persistence | - |
+| [Vectra Create Detection Alert for Accounts](../content/vectra-xdr-vectra-create-detection-alert-for-accounts-e796701f-6b39-4c54-bf8a-1d543a990784-7d97d787.md) | Medium | Persistence | [`Detections_Data_CL`](../tables/detections-data-cl.md) |
+| [Vectra Create Detection Alert for Hosts](../content/vectra-xdr-vectra-create-detection-alert-for-hosts-fb861539-da19-4266-831f-99459b8e7605-e79059e2.md) | Medium | Persistence | [`Detections_Data_CL`](../tables/detections-data-cl.md) |
 | [Vectra Create Incident Based on Priority for Accounts](../content/vectra-xdr-vectra-create-incident-based-on-priority-for-accounts-af6f2812-0187-4cc9-822a-952f8b5b6b7e-99cb4b20.md) | Medium | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
 | [Vectra Create Incident Based on Priority for Hosts](../content/vectra-xdr-vectra-create-incident-based-on-priority-for-hosts-9b51b0fb-0419-4450-9ea0-0a48751c4902-9d612107.md) | Medium | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
 | [Vectra Create Incident Based on Tag for Accounts](../content/vectra-xdr-vectra-create-incident-based-on-tag-for-accounts-87325835-dd8c-41e7-b686-fd5adbbd0aee-e6d22677.md) | High | Persistence | [`Entities_Data_CL`](../tables/entities-data-cl.md) |
@@ -80,7 +80,7 @@ This solution includes **33 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) | [`Event`](../tables/event.md)<br>[`Usage`](../tables/usage.md) |
+| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) | [`Audits_Data_CL`](../tables/audits-data-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md)<br>[`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md)<br>[`Event`](../tables/event.md)<br>[`Health_Data_CL`](../tables/health-data-cl.md)<br>[`Lockdown_Data_CL`](../tables/lockdown-data-cl.md)<br>[`Usage`](../tables/usage.md) |
 
 ### Playbooks
 
@@ -111,11 +111,11 @@ This solution includes **33 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [VectraAudits](../content/vectra-xdr-vectraaudits-974718ae-c0a5-4d4a-bb42-63a0f394d66f-d9837989.md) | - | - |
-| [VectraDetections](../content/vectra-xdr-vectradetections-de724888-764f-4cfb-9882-804269dea40b-b1463bd6.md) | - | - |
-| [VectraEntityScoring](../content/vectra-xdr-vectraentityscoring-1175ffec-960e-48f8-b646-8292745c9524-023d942a.md) | - | - |
-| [VectraHealth](../content/vectra-xdr-vectrahealth-08da90ff-4a71-48d8-85ca-de273e98b402-b7427062.md) | - | - |
-| [VectraLockdown](../content/vectra-xdr-vectralockdown-128c8f20-4bb8-45b6-a531-82401c0e4f33-456d306a.md) | - | - |
+| [VectraAudits](../content/vectra-xdr-vectraaudits-974718ae-c0a5-4d4a-bb42-63a0f394d66f-d9837989.md) | - | [`Audits_Data_CL`](../tables/audits-data-cl.md) *(read)* |
+| [VectraDetections](../content/vectra-xdr-vectradetections-de724888-764f-4cfb-9882-804269dea40b-b1463bd6.md) | - | [`Detections_Data_CL`](../tables/detections-data-cl.md) *(read)* |
+| [VectraEntityScoring](../content/vectra-xdr-vectraentityscoring-1175ffec-960e-48f8-b646-8292745c9524-023d942a.md) | - | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) *(read)* |
+| [VectraHealth](../content/vectra-xdr-vectrahealth-08da90ff-4a71-48d8-85ca-de273e98b402-b7427062.md) | - | [`Health_Data_CL`](../tables/health-data-cl.md) *(read)* |
+| [VectraLockdown](../content/vectra-xdr-vectralockdown-128c8f20-4bb8-45b6-a531-82401c0e4f33-456d306a.md) | - | [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -131,13 +131,7 @@ This solution includes **33 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

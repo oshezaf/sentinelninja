@@ -57,7 +57,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ESETProtectPlatform](../content/eset-protect-platform-esetprotectplatform-b0f36d45-4e08-4764-9200-4c5f7d706bb2-e015d3d0.md) | - | - |
+| [ESETProtectPlatform](../content/eset-protect-platform-esetprotectplatform-b0f36d45-4e08-4764-9200-4c5f7d706bb2-e015d3d0.md) | - | [`IntegrationTable_CL`](../tables/integrationtable-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -69,13 +69,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

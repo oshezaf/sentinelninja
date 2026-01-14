@@ -19,6 +19,14 @@
 
 This ASIM parser supports normalizing AuditEvent logs from Infoblox BloxOne to the ASIM AuditEvent normalized schema. These events are captured through the Azure Monitor Agent (AMA) which are sent by the Data Connector Service of Infoblox BloxOne.
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+
 ## Parameters
 
 | Name | Type | Default |
@@ -33,12 +41,7 @@ This ASIM parser supports normalizing AuditEvent logs from Infoblox BloxOne to t
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md)
 
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to ASIM Index](../asim/asim-index.md)
 

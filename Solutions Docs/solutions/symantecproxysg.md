@@ -30,6 +30,14 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
+
 ## Content Items
 
 This solution includes **4 content item(s)**:
@@ -44,20 +52,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive Denied Proxy Traffic](../content/symantecproxysg-excessive-denied-proxy-traffic-7a58b253-0ef2-4248-b4e5-c350f15a8346-3c74e5a4.md) | Low | DefenseEvasion, CommandAndControl | - |
-| [User Accessed Suspicious URL Categories](../content/symantecproxysg-user-accessed-suspicious-url-categories-fb0f4a93-d8ad-4b54-9931-85bdb7550f90-b9a254cd.md) | Medium | InitialAccess, CommandAndControl | - |
+| [Excessive Denied Proxy Traffic](../content/symantecproxysg-excessive-denied-proxy-traffic-7a58b253-0ef2-4248-b4e5-c350f15a8346-3c74e5a4.md) | Low | DefenseEvasion, CommandAndControl | [`Syslog`](../tables/syslog.md) |
+| [User Accessed Suspicious URL Categories](../content/symantecproxysg-user-accessed-suspicious-url-categories-fb0f4a93-d8ad-4b54-9931-85bdb7550f90-b9a254cd.md) | Medium | InitialAccess, CommandAndControl | [`Syslog`](../tables/syslog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-dd9ed98f.md) | - |
+| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-dd9ed98f.md) | [`Syslog`](../tables/syslog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-58b3074c-519b-4812-b784-e8bd7712089a-5c90419b.md) | - | - |
+| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-58b3074c-519b-4812-b784-e8bd7712089a-5c90419b.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -71,13 +79,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -1,0 +1,25 @@
+# getForgeRockUsers ⚠️
+
+> ⚠️ **Not listed in Solution JSON:** This parser was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
+## Parser Information
+
+| Attribute | Value |
+|:----------|:------|
+| Location | Solution |
+| Solution | [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) ⚠️ |
+| File Type | .txt |
+| Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForgeRock%20Common%20Audit%20for%20CEF/Parsers/ForgeRockParser.txt) |
+
+## Source Tables
+
+This parser reads from the following tables:
+
+- [CommonSecurityLog](../tables/commonsecuritylog.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Parsers Index](parsers-index.md)
+

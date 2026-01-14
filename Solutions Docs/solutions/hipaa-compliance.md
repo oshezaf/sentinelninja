@@ -25,20 +25,28 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **3 table(s)** from its content items:
+This solution queries **10 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | Workbooks |
 | [`DeviceInfo`](../tables/deviceinfo.md) | Workbooks |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Workbooks |
+| [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
+| [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md) | Workbooks |
+| [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | Workbooks |
 
 ### Internal Tables
 
-The following **3 table(s)** are used internally by this solution's playbooks:
+The following **4 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Content |
 |-------|----------------|
+| [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | Workbooks |
 | [`watchlist`](../tables/watchlist.md) | Workbooks |
@@ -55,7 +63,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md)<br>[`watchlist`](../tables/watchlist.md) |
+| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md)<br>[`watchlist`](../tables/watchlist.md) |
 
 ## Release Notes
 
@@ -65,13 +73,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

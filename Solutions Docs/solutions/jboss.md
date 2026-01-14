@@ -50,7 +50,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [JBossEvent](../content/jboss-jbossevent-a79c1549-b5d7-434e-8e6c-da5357e2f439-c9fb98ff.md) | - | - |
+| [JBossEvent](../content/jboss-jbossevent-a79c1549-b5d7-434e-8e6c-da5357e2f439-c9fb98ff.md) | - | [`JBossLogs_CL`](../tables/jbosslogs-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -61,13 +61,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

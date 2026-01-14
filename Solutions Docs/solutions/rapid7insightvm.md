@@ -59,8 +59,8 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [InsightVMAssets](../content/rapid7insightvm-insightvmassets-67ba9c29-ac0c-48c6-9569-ecd554fc4e65-2cea1ca2.md) | - | - |
-| [InsightVMVulnerabilities](../content/rapid7insightvm-insightvmvulnerabilities-3cc071bd-caeb-40fd-87b9-cdde61d872cb-bf026349.md) | - | - |
+| [InsightVMAssets](../content/rapid7insightvm-insightvmassets-67ba9c29-ac0c-48c6-9569-ecd554fc4e65-2cea1ca2.md) | - | [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) *(read)* |
+| [InsightVMVulnerabilities](../content/rapid7insightvm-insightvmvulnerabilities-3cc071bd-caeb-40fd-87b9-cdde61d872cb-bf026349.md) | - | [`NexposeInsightVMCloud_vulnerabilities_CL`](../tables/nexposeinsightvmcloud-vulnerabilities-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -71,13 +71,7 @@ This solution includes **5 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

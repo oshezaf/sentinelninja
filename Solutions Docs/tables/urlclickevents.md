@@ -11,12 +11,13 @@ Safe Links clicks from email messages, Teams, and Office 365 apps
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/urlclickevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-urlclickevents-table) |
 
-## Solutions (4)
+## Solutions (5)
 
 This table is used by the following solutions:
 
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
@@ -28,7 +29,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (26)
+## Content Items Using This Table (28)
 
 ### Analytic Rules (3)
 
@@ -41,7 +42,7 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 - [TI Map URL Entity to UrlClickEvents](../content/threat-intelligence-new-ti-map-url-entity-to-urlclickevents-ad4fa1f2-2189-459c-9458-f77d2039d2f5-105aa351.md)
 
-### Hunting Queries (22)
+### Hunting Queries (23)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Blocked Clicks Trend](../content/microsoft-defender-xdr-blocked-clicks-trend-ac738108-451b-4341-ba38-021a00665415-f9fdc910.md)
@@ -50,6 +51,7 @@ This table is ingested by the following connectors:
 - [Malicious Clicks allowed (click-through)](../content/microsoft-defender-xdr-malicious-clicks-allowed-click-through-ba4f7e56-a2f8-4a30-b848-200fdc7fc3a2-d64cdc32.md)
 - [Malicious URL Clicks by workload](../content/microsoft-defender-xdr-malicious-url-clicks-by-workload-c2b4ef3a-216d-4506-8b35-6a1b0f2a3bf7-d5719131.md)
 - [Possible device code phishing attempts](../content/microsoft-defender-xdr-possible-device-code-phishing-attempts-ad76e484-f159-4d23-99ee-e734f0b8b60b-1166f1fb.md)
+- [Rare Domains in External Teams Messages](../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.md)
 - [Teams URL clicks actions summarized by URLs clicked on](../content/microsoft-defender-xdr-teams-url-clicks-actions-summarized-by-urls-clicked-on-161b163c-0805-46fd-abda-2fe5f0a5185e-7bcc6c0b.md)
 - [Teams URL clicks through actions on Phish or Malware URLs summarized by URLs](../content/microsoft-defender-xdr-teams-url-clicks-through-actions-on-phish-or-malware-urls-summarized-by-urls-68aaf2af-83ac-4f9e-9680-4050700b93f9-071f451c.md)
 - [Teams blocked URL clicks daily trend](../content/microsoft-defender-xdr-teams-blocked-url-clicks-daily-trend-71117505-5a71-431e-8605-8896960affe5-fa61dd17.md)
@@ -67,20 +69,17 @@ This table is ingested by the following connectors:
 - [User clicks on malicious inbound emails](../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.md)
 - [User clicks on phishing URLs in emails](../content/microsoft-defender-xdr-user-clicks-on-phishing-urls-in-emails-d823da0e-1334-4a66-8ff4-2c2c40d26295-36e1eb38.md)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md)
 
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

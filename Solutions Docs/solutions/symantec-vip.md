@@ -30,6 +30,14 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
+
 ## Content Items
 
 This solution includes **4 content item(s)**:
@@ -44,20 +52,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ClientDeniedAccess](../content/symantec-vip-clientdeniedaccess-a9956d3a-07a9-44a6-a279-081a85020cae-b3aec064.md) | Medium | CredentialAccess | - |
-| [Excessive Failed Authentication from Invalid Inputs](../content/symantec-vip-excessive-failed-authentication-from-invalid-inputs-c775a46b-21b1-46d7-afa6-37e3e577a27b-0e6ce55d.md) | Medium | CredentialAccess | - |
+| [ClientDeniedAccess](../content/symantec-vip-clientdeniedaccess-a9956d3a-07a9-44a6-a279-081a85020cae-b3aec064.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
+| [Excessive Failed Authentication from Invalid Inputs](../content/symantec-vip-excessive-failed-authentication-from-invalid-inputs-c775a46b-21b1-46d7-afa6-37e3e577a27b-0e6ce55d.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SymantecVIP](../content/symantec-vip-symantecvip-eae32760.md) | - |
+| [SymantecVIP](../content/symantec-vip-symantecvip-eae32760.md) | [`Syslog`](../tables/syslog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecVIP](../content/symantec-vip-symantecvip-ed8a116c-07b4-441c-b74b-395937c264a1-ded005b1.md) | - | - |
+| [SymantecVIP](../content/symantec-vip-symantecvip-ed8a116c-07b4-441c-b74b-395937c264a1-ded005b1.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -70,13 +78,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

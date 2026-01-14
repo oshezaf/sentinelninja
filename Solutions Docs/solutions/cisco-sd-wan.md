@@ -36,8 +36,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | - |
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -54,16 +54,16 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Cisco SDWAN - IPS Event Threshold](../content/cisco-sd-wan-cisco-sdwan-ips-event-threshold-dc3627c3-f9de-4f17-bfd3-ba99b64a0a67-de6de6a0.md) | High | InitialAccess | - |
-| [Cisco SDWAN - Intrusion Events](../content/cisco-sd-wan-cisco-sdwan-intrusion-events-232a1c75-63fc-4c81-8b18-b4a739fccba8-806e2f0c.md) | High | InitialAccess | - |
-| [Cisco SDWAN - Maleware Events](../content/cisco-sd-wan-cisco-sdwan-maleware-events-cb14defd-3415-4420-a2e4-2dd0f3e07a86-22961fd0.md) | High | ResourceDevelopment | - |
-| [Cisco SDWAN - Monitor Critical IPs](../content/cisco-sd-wan-cisco-sdwan-monitor-critical-ips-a62a207e-62be-4a74-acab-4466d5b3854f-5ff0b015.md) | High | CommandAndControl | - |
+| [Cisco SDWAN - IPS Event Threshold](../content/cisco-sd-wan-cisco-sdwan-ips-event-threshold-dc3627c3-f9de-4f17-bfd3-ba99b64a0a67-de6de6a0.md) | High | InitialAccess | [`Syslog`](../tables/syslog.md) |
+| [Cisco SDWAN - Intrusion Events](../content/cisco-sd-wan-cisco-sdwan-intrusion-events-232a1c75-63fc-4c81-8b18-b4a739fccba8-806e2f0c.md) | High | InitialAccess | [`Syslog`](../tables/syslog.md) |
+| [Cisco SDWAN - Maleware Events](../content/cisco-sd-wan-cisco-sdwan-maleware-events-cb14defd-3415-4420-a2e4-2dd0f3e07a86-22961fd0.md) | High | ResourceDevelopment | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md)<br>[`Syslog`](../tables/syslog.md) |
+| [Cisco SDWAN - Monitor Critical IPs](../content/cisco-sd-wan-cisco-sdwan-monitor-critical-ips-a62a207e-62be-4a74-acab-4466d5b3854f-5ff0b015.md) | High | CommandAndControl | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md)<br>[`Syslog`](../tables/syslog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoSDWAN](../content/cisco-sd-wan-ciscosdwan-1291f60c.md) | - |
+| [CiscoSDWAN](../content/cisco-sd-wan-ciscosdwan-1291f60c.md) | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md)<br>[`Syslog`](../tables/syslog.md) |
 
 ### Playbooks
 
@@ -77,22 +77,16 @@ This solution includes **12 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoSDWANNetflow](../content/cisco-sd-wan-ciscosdwannetflow-f648b6fb-b2ac-46c9-9df3-21d6e3d68fae-c66b5493.md) ⚠️ | - | - |
-| [CiscoSyslogFW6LogSummary](../content/cisco-sd-wan-ciscosyslogfw6logsummary-73a498e2-9559-403f-9a83-479220e4711b-c50bec1a.md) ⚠️ | - | - |
-| [CiscoSyslogUTD](../content/cisco-sd-wan-ciscosyslogutd-d68167dc-3161-487f-bccc-981fe71907e1-aba55f17.md) ⚠️ | - | - |
+| [CiscoSDWANNetflow](../content/cisco-sd-wan-ciscosdwannetflow-f648b6fb-b2ac-46c9-9df3-21d6e3d68fae-c66b5493.md) ⚠️ | - | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) *(read)* |
+| [CiscoSyslogFW6LogSummary](../content/cisco-sd-wan-ciscosyslogfw6logsummary-73a498e2-9559-403f-9a83-479220e4711b-c50bec1a.md) ⚠️ | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [CiscoSyslogUTD](../content/cisco-sd-wan-ciscosyslogutd-d68167dc-3161-487f-bccc-981fe71907e1-aba55f17.md) ⚠️ | - | [`Syslog`](../tables/syslog.md) *(read)* |
 | [MapNetflowUsername](../content/cisco-sd-wan-mapnetflowusername-24741b08-e357-4d4f-a873-f55afc59786f-bc8c2353.md) ⚠️ | - | - |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

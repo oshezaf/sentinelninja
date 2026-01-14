@@ -29,7 +29,6 @@ This parser reads from the following tables:
 | [Operation](../tables/operation.md) |
 | [SecurityEvent](../tables/securityevent.md) |
 | [Update](../tables/update.md) |
-| [WindowsFirewall](../tables/windowsfirewall.md) |
 
 ## Parameters
 
@@ -45,12 +44,7 @@ This parser reads from the following tables:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md)
 
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to ASIM Index](../asim/asim-index.md)
 

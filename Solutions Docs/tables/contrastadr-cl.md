@@ -25,15 +25,17 @@ This table is ingested by the following connectors:
 - [Contrast ADR - Exploited Attack in Production](../content/contrastadr-contrast-adr-exploited-attack-in-production-31417149-f3a2-4db4-9e5f-85e0a464f6a1-bb999f59.md)
 - [Contrast ADR - WAF Alert Correlation](../content/contrastadr-contrast-adr-waf-alert-correlation-93641436-afb3-4921-8828-ceab0d15aaab-17b466db.md)
 
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [ContrastADR](../parsers/contrastadr.md) | [ContrastADR](../solutions/contrastadr.md) | Solution |
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

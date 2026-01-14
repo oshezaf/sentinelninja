@@ -14,11 +14,12 @@ Reference for ASimDnsActivityLogs table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [ASIM normalized DNS schema](https://learn.microsoft.com/azure/sentinel/dns-ama-fields#asim-normalized-dns-schema) - describes the mapping of Windows DNS server fields into the normalized field names as they appear in the [DNS normalization schema](https://learn.microsoft.com/azure/sentinel/normalization-schema-dns#schema-details)
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
+- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Windows Server DNS](../solutions/windows-server-dns.md)
 
@@ -39,9 +40,12 @@ The following EventVendor/EventProduct values are used by connectors ingesting t
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
+- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
@@ -52,15 +56,23 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/dnsnormalized`
 
+## Parsers Using This Table (2)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimDnsNative](../asim/asimdnsnative.md) | Dns |  |
+
+### Other Parsers (1)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | Solution |
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

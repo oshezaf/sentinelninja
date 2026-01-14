@@ -25,13 +25,14 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AGWAccessLogs`](../tables/agwaccesslogs.md) | - | Analytics |
 | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | - | Analytics |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Web Application Firewall (WAF)](../connectors/waf.md) | Analytics, Workbooks |
+| [`Event`](../tables/event.md) | - | Workbooks |
 
 ## Content Items
 
@@ -64,7 +65,7 @@ This solution includes **14 content item(s)**:
 | [WebApplicationFirewallFirewallEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallfirewallevents-fffe3907.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [WebApplicationFirewallGatewayAccessEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallgatewayaccessevents-3b2791d0.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
 | [WebApplicationFirewallOverview](../content/azure-web-application-firewall-waf-webapplicationfirewalloverview-724b5122.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md) |
-| [WebApplicationFirewallWAFTypeEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallwaftypeevents-bc7c447b.md) | - |
+| [WebApplicationFirewallWAFTypeEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallwaftypeevents-bc7c447b.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Event`](../tables/event.md) |
 
 ## Release Notes
 
@@ -76,13 +77,7 @@ This solution includes **14 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

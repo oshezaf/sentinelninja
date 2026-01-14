@@ -51,7 +51,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AliCloud](../content/alibaba-cloud-alicloud-e310f050-75af-4059-b0ff-0ae7c7db8120-fb2ca7da.md) | - | - |
+| [AliCloud](../content/alibaba-cloud-alicloud-e310f050-75af-4059-b0ff-0ae7c7db8120-fb2ca7da.md) | - | [`AliCloud_CL`](../tables/alicloud-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -62,13 +62,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

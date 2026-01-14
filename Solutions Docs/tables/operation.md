@@ -10,11 +10,12 @@ Reference for Operation table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/operation) |
 
-## Solutions (13)
+## Solutions (14)
 
 This table is used by the following solutions:
 
 - [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md)
+- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [Global Secure Access](../solutions/global-secure-access.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -30,12 +31,15 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (15)
+## Content Items Using This Table (17)
 
-### Workbooks (15)
+### Workbooks (17)
 
 **In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
 - [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md)
+
+**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
+- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
@@ -61,6 +65,7 @@ This table is used by the following solutions:
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
@@ -75,15 +80,17 @@ This table is used by the following solutions:
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [Auth0AM](../parsers/auth0am.md) | [Auth0](../solutions/auth0.md) | Solution |
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

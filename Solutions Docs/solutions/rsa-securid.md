@@ -42,7 +42,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [RSASecurIDAMEvent](../content/rsa-securid-rsasecuridamevent-328fc289-10cf-40dd-84b6-cf136085c30a-7023936c.md) | - | - |
+| [RSASecurIDAMEvent](../content/rsa-securid-rsasecuridamevent-328fc289-10cf-40dd-84b6-cf136085c30a-7023936c.md) | - | [`Event`](../tables/event.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)*<br>[`Update`](../tables/update.md) *(read)*<br>[`alert`](../tables/alert.md) *(read)*<br>[`event`](../tables/event.md) *(read)*<br>[`operation`](../tables/operation.md) *(read)*<br>[`update`](../tables/update.md) *(read)*<br>[`usage`](../tables/usage.md) *(read)* |
 
 ## Release Notes
 
@@ -54,13 +54,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

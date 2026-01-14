@@ -1,99 +1,17 @@
 # Microsoft Sentinel Solutions Documentation
 
-This documentation provides comprehensive information about Microsoft Sentinel Solutions, including data connectors, log tables, content items, and ASIM parsers.
+This documentation provides comprehensive information about Microsoft Sentinel Solutions, including data connectors, log tables, content items, parsers, and ASIM parsers.
 
-## Quick Links
+## Overview
 
-| Documentation | Description |
-|:--------------|:------------|
-| [Solutions](solutions-index.md) | Browse all 484 solutions |
-| [Connectors](connectors-index.md) | Browse all 529 data connectors |
-| [Tables](tables-index.md) | Browse all 1662 log tables |
-| [Content](content/content-index.md) | Browse all 4864 content items |
-| [ASIM Parsers](asim/asim-index.md) | Browse ASIM parsers by schema |
-| [ASIM Products](asim/asim-products-index.md) | Browse ASIM parsers by product |
-
-## Solutions
-
-### Solutions Statistics
-
-| Metric | Total | Published | Unpublished |
-|:-------|------:|----------:|------------:|
-| Solutions | 484 | 402 | 82 |
-| With Connectors | 387 | 323 | 64 |
-| With Content | 385 | 329 | 56 |
-
-## Connectors
-
-### Connectors Statistics
-
-| Metric | Total | Active | Deprecated | Unpublished |
-|:-------|------:|-------:|-----------:|------------:|
-| In Solutions | 382 | 154 | 143 | 85 |
-| Discovered* | 147 | 27 | 114 | 6 |
-| **Total** | **529** | **181** | **257** | **91** |
-
-*\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions.*
-
-### Collection Methods
-
-| Collection Method | Total | Active | Deprecated | Unpublished |
-|:-----------------|------:|-------:|-----------:|------------:|
-| Azure Function | 129 | 75 | 18 | 36 |
-| CCF | 127 | 118 | 1 | 8 |
-| MMA | 110 | 12 | 90 | 8 |
-| AMA | 59 | 25 | 34 | 0 |
-| Unknown (Custom Log) | 44 | 35 | 0 | 9 |
-| Native | 25 | 24 | 0 | 1 |
-| Azure Diagnostics | 17 | 17 | 0 | 0 |
-| REST API | 15 | 7 | 0 | 8 |
-| Unknown | 3 | 3 | 0 | 0 |
-| **Total** | **529** | **316** | **143** | **70** |
-
-*Active = Published and not deprecated.*
-
-## Tables
-
-### Tables Statistics
-
-| Metric | Count |
-|:-------|------:|
-| Total Tables Documented | 1662 |
-| Tables Used by Solutions | 781 |
-| Additional Reference Tables | 881 |
-
-*Note: Additional reference tables are from content items or the Azure Monitor reference.*
-
-## Content Items
-
-### Content Items Statistics
-
-| Metric | Total | Published | Unpublished |
-|:-------|------:|----------:|------------:|
-| Content Items | 4,864 | 4,402 | 462 |
-
-### Content Items by Type
-
-| Type | Total | Published | Unpublished |
-|:-----|------:|----------:|------------:|
-| Analytic Rules | 2,185 | 1,921 | 264 |
-| Hunting Queries | 1,168 | 1,112 | 56 |
-| Playbooks | 592 | 532 | 60 |
-| Workbooks | 346 | 296 | 50 |
-| Parsers | 514 | 482 | 32 |
-| Watchlists | 41 | 41 | 0 |
-| Summary Rules | 18 | 18 | 0 |
-
-## ASIM Parsers
-
-### ASIM Statistics
-
-| Metric | Count |
-|:-------|------:|
-| Source Parser Pairs | 82 |
-| Union Parser Pairs | 13 |
-
-*Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
+| Resource | Count | Details |
+|:---------|------:|:--------|
+| [Solutions](solutions-index.md) | 484 | 387 with connectors, 385 with content |
+| [Connectors](connectors-index.md) | 529 | Data ingestion methods |
+| [Tables](tables-index.md) | 1010 | Log Analytics tables |
+| [Content](content/content-index.md) | 4,864 | Analytics, hunting, playbooks, workbooks |
+| [Parsers](parsers/parsers-index.md) | 538 | Non-ASIM KQL functions |
+| [ASIM Parsers](asim/asim-index.md) | 95 pairs | Normalized schema parsers |
 
 ---
 
@@ -115,6 +33,9 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 ├── content/                # Content item pages
 │   ├── content-index.md    # Content items listing
 │   └── *.md                # Individual content pages
+├── parsers/                # Non-ASIM parser documentation
+│   ├── parsers-index.md    # Parsers listing
+│   └── *.md                # Individual parser pages
 └── asim/                   # ASIM parser documentation
     ├── asim-index.md       # ASIM parsers index by schema
     ├── asim-products-index.md  # ASIM parsers index by product

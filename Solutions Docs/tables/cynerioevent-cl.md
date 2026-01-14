@@ -30,15 +30,22 @@ This table is ingested by the following connectors:
 **In solution [Cynerio](../solutions/cynerio.md):**
 - [CynerioOverviewWorkbook](../content/cynerio-cyneriooverviewworkbook-b4cbafeb.md)
 
+## Parsers Using This Table (4)
+
+### Other Parsers (4)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [CynerioEvent_Authentication](../parsers/cynerioevent-authentication.md) | [Cynerio](../solutions/cynerio.md) | Solution ⚠️ |
+| [CynerioEvent_Authentication](../parsers/cynerioevent-authentication.md) | [Cynerio](../solutions/cynerio.md) | Solution |
+| [CynerioEvent_NetworkSession](../parsers/cynerioevent-networksession.md) | [Cynerio](../solutions/cynerio.md) | Solution ⚠️ |
+| [CynerioEvent_NetworkSession](../parsers/cynerioevent-networksession.md) | [Cynerio](../solutions/cynerio.md) | Solution |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

@@ -64,7 +64,7 @@ This solution uses **27 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | - | Hunting |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics |
 | [`DeviceEvents`](../tables/deviceevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
 | [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Workbooks |
@@ -93,7 +93,7 @@ This solution uses **27 table(s)**:
 
 ### Internal Tables
 
-The following **5 table(s)** are used internally by this solution's playbooks:
+The following **5 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -133,7 +133,7 @@ This solution includes **373 content item(s)**:
 | [Doppelpaymer Stop Services](../content/microsoft-defender-xdr-doppelpaymer-stop-services-5bdc1504-880c-4b30-a39c-7c746535928d-6df3ea36.md) | High | Execution, DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [DopplePaymer Procdump](../content/microsoft-defender-xdr-dopplepaymer-procdump-1be34fb9-f81b-47ae-84fb-465e6686d76c-cc25e831.md) | High | CredentialAccess | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Execution of software vulnerable to webp buffer overflow of CVE-2023-4863](../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911-15de3ea9.md) | Informational | Execution | [`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DeviceTvmSoftwareVulnerabilities`](../tables/devicetvmsoftwarevulnerabilities.md) |
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) | High | Exfiltration | [`DeviceEvents`](../tables/deviceevents.md) |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) | High | Exfiltration | [`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md) |
 | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Imminent Ransomware](../content/microsoft-defender-xdr-imminent-ransomware-bb46dd86-e642-48a4-975c-44f5ac2b5033-87169ff1.md) | High | DefenseEvasion, Persistence | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_ASim_ProcessEvent`](../asim/asimprocessevent.md) |
 | [Java Executing cmd to run Powershell](../content/microsoft-defender-xdr-java-executing-cmd-to-run-powershell-2c81c0a0-9823-4a14-b21a-2b4acd3335d2-106ea66a.md) | High | Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [LSASS Credential Dumping with Procdump](../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-c332b840-61e4-462e-a201-0e2d69bad45d-36f7eb44.md) | High | CredentialAccess | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
@@ -157,7 +157,7 @@ This solution includes **373 content item(s)**:
 | [Shadow Copy Deletions](../content/microsoft-defender-xdr-shadow-copy-deletions-28c63a44-2d35-48b7-831b-3ed24af17c7e-dcc95706.md) | Medium | Impact | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Stopping multiple processes using taskkill](../content/microsoft-defender-xdr-stopping-multiple-processes-using-taskkill-4dd31bd5-11a3-4b9c-a7c5-4927ab4f2a77-6e396de6.md) | Medium | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [TEARDROP memory-only dropper](../content/microsoft-defender-xdr-teardrop-memory-only-dropper-738702fd-0a66-42c7-8586-e30f0583f8fe-9b854574.md) | High | Execution, Persistence, DefenseEvasion | [`DeviceEvents`](../tables/deviceevents.md) |
-| [Unusual Volume of file deletion by users](../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-e5f8e196-3544-4a8b-96a9-17c1b6a49710-7af46276.md) | High | Impact | [`SigninLogs`](../tables/signinlogs.md) |
+| [Unusual Volume of file deletion by users](../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-e5f8e196-3544-4a8b-96a9-17c1b6a49710-7af46276.md) | High | Impact | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ### Hunting Queries
 
@@ -207,7 +207,7 @@ This solution includes **373 content item(s)**:
 | [Deimos Component Execution](../content/microsoft-defender-xdr-deimos-component-execution-fe9edc77-1b6c-4f1e-a223-64b580b50187-8ca8263a.md) | Execution, Collection, Exfiltration, Impact | [`DeviceEvents`](../tables/deviceevents.md) |
 | [Deletion of data on multiple drives using cipher exe](../content/microsoft-defender-xdr-deletion-of-data-on-multiple-drives-using-cipher-exe-cb2fb8f9-89bd-485e-8422-da8cb6c7bc23-f8c40db4.md) | Impact | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Detect CISA Alert (AA22-117A) 2021 Top Routinely Exploited Vulnerabilities](../content/microsoft-defender-xdr-detect-cisa-alert-aa22-117a-2021-top-routinely-exploited-vulnerabilities-180bacfd-18de-450a-8e0c-7d2fa399ca49-875b2843.md) | Execution | [`DeviceTvmSoftwareVulnerabilitiesKB`](../tables/devicetvmsoftwarevulnerabilitieskb.md) |
-| [Detect MaiSniper](../content/microsoft-defender-xdr-detect-maisniper-e17ddfc6-7478-443b-99ff-286f3d09b8aa-ab6dfb83.md) | InitialAccess, CredentialAccess, Collection, Exfiltration | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
+| [Detect MaiSniper](../content/microsoft-defender-xdr-detect-maisniper-e17ddfc6-7478-443b-99ff-286f3d09b8aa-ab6dfb83.md) | InitialAccess, CredentialAccess, Collection, Exfiltration | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Detect Malicious use of MSIExec](../content/microsoft-defender-xdr-detect-malicious-use-of-msiexec-7a5597de-7e99-470d-944f-acb163b9cb14-a76d8af7.md) | Execution, PrivilegeEscalation, CredentialAccess | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Detect Malicious use of Msiexec Mimikatz](../content/microsoft-defender-xdr-detect-malicious-use-of-msiexec-mimikatz-58e6170e-0512-4485-9638-463fdde85b0e-0de34535.md) | Execution, CredentialAccess, PrivilegeEscalation | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Detect Potential kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-35ca729c-04b4-4f6c-b383-caed1b85226e-9755135a.md) | LateralMovement | [`IdentityLogonEvents`](../tables/identitylogonevents.md) |
@@ -244,7 +244,7 @@ This solution includes **373 content item(s)**:
 | [File Malware Detection Trend](../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [File Malware by Top Malware Families (Anti Virus)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-anti-virus-a924de5a-89ce-43c7-8adc-b130e5f1924c-678bcc36.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [File Malware by Top Malware Families (Safe Attachments)](../content/microsoft-defender-xdr-file-malware-by-top-malware-families-safe-attachments-2de2de5d-87a3-4e13-9b97-5f42e44d0954-11fa443b.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
-| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) | Exfiltration | [`DeviceEvents`](../tables/deviceevents.md) |
+| [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) | Exfiltration | [`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md) |
 | [Files share contents and suspicious sign-in activity](../content/microsoft-defender-xdr-files-share-contents-and-suspicious-sign-in-activity-11cc0e3f-9718-4ab5-be7b-d9c036ed6b0a-233ec5bb.md) | InitialAccess | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)<br>[`EmailEvents`](../tables/emailevents.md) |
 | [Good emails from senders with bad patterns](../content/microsoft-defender-xdr-good-emails-from-senders-with-bad-patterns-e6259b03-622e-4e11-9c54-94987dad7c14-7456ce2d.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Group quarantine release](../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
@@ -274,7 +274,7 @@ This solution includes **373 content item(s)**:
 | [Listing Email Remediation Actions via Explorer](../content/microsoft-defender-xdr-listing-email-remediation-actions-via-explorer-99713387-9d61-49eb-8edc-f51153d8bb01-83aba0f4.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Local Admin Group Changes](../content/microsoft-defender-xdr-local-admin-group-changes-63142c12-5d8b-48cf-a0f6-b523c855497c-cbc59b70.md) | Persistence | [`DeviceEvents`](../tables/deviceevents.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [Local time to UTC time conversion](../content/microsoft-defender-xdr-local-time-to-utc-time-conversion-712ffdd8-ddce-4372-85dd-063029b418cf-7ff7492c.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
-| [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
+| [MDO Threat Protection Detections trend over time](../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
 | [MDO_CountOfRecipientsEmailaddressbySubject](../content/microsoft-defender-xdr-mdo-countofrecipientsemailaddressbysubject-430a9c0d-f3ce-46a3-a994-92b3ada0d1b2-813e0447.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [MDO_CountOfSendersEmailaddressbySubject](../content/microsoft-defender-xdr-mdo-countofsendersemailaddressbysubject-b95994d1-1008-4c42-a74f-9f2967e39ed6-c65932d4.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
@@ -341,7 +341,7 @@ This solution includes **373 content item(s)**:
 | [Quarantine Spam Reason trend](../content/microsoft-defender-xdr-quarantine-spam-reason-trend-32a981ad-cd5a-4d80-8c6c-d59b9893c019-af7b470d.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Quarantine release trend](../content/microsoft-defender-xdr-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1547d717.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Quarantine releases by Detection Types](../content/microsoft-defender-xdr-quarantine-releases-by-detection-types-23e6d66b-511a-43fd-9863-6924da60319a-0411faf3.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |
-| [Rare Domains in External Teams Messages](../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.md) ⚠️ | InitialAccess, Execution | [`MessageEvents`](../tables/messageevents.md) |
+| [Rare Domains in External Teams Messages](../content/microsoft-defender-xdr-rare-domains-in-external-teams-messages-b2a36ca5-b6a4-4f27-a7d8-7f044885cccf-6bbf2e28.md) ⚠️ | InitialAccess, Execution | [`MessageEvents`](../tables/messageevents.md)<br>[`MessageUrlInfo`](../tables/messageurlinfo.md)<br>[`UrlClickEvents`](../tables/urlclickevents.md) |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.md) | Persistence | [`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Recon with Rundll](../content/microsoft-defender-xdr-recon-with-rundll-76c14475-9a22-4cc1-922c-437d7f614a36-e593fe5e.md) | Discovery, Collection, CommandAndControl | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |
 | [Regsvr32 Rundll32 Image Loads Abnormal Extension](../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-b1f8aac2-766d-47ec-8787-84bc7692ff77-8be87cf1.md) | DefenseEvasion | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |
@@ -458,7 +458,7 @@ This solution includes **373 content item(s)**:
 | [Total Submissions by Submission Type](../content/microsoft-defender-xdr-total-submissions-by-submission-type-53c58a33-668d-46e1-9714-5892c87650d9-17869076.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Total Submissions by Submission Type](../content/microsoft-defender-xdr-total-submissions-by-submission-type-8cde246b-7ed1-429c-933a-f7d0363dbbc0-38a58290.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [Total number of MDO Teams protection detections daily](../content/microsoft-defender-xdr-total-number-of-mdo-teams-protection-detections-daily-75ade06c-7326-4e0d-9dfb-27e05043525b-3af53022.md) ⚠️ | DefenseEvasion | [`MessageEvents`](../tables/messageevents.md) |
-| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
+| [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |
 | [Turning off services using sc exe](../content/microsoft-defender-xdr-turning-off-services-using-sc-exe-9674f529-f0e9-4305-862d-479ccc9e28f1-0bc91883.md) | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [URL Click attempts by threat type](../content/microsoft-defender-xdr-url-click-attempts-by-threat-type-3eef362d-3aee-4950-9208-4afa6f7afbe9-0804ea5b.md) ⚠️ | InitialAccess | [`UrlClickEvents`](../tables/urlclickevents.md) |
 | [URL Clicks by Action](../content/microsoft-defender-xdr-url-clicks-by-action-4620ece3-dceb-4151-8621-5a56351c97cd-71c178c3.md) ⚠️ | InitialAccess | [`UrlClickEvents`](../tables/urlclickevents.md) |
@@ -468,7 +468,7 @@ This solution includes **373 content item(s)**:
 | [URL clicks actions by URL](../content/microsoft-defender-xdr-url-clicks-actions-by-url-bc46e331-3cb0-483d-9c90-989d2a59457f-bd855644.md) | InitialAccess | [`UrlClickEvents`](../tables/urlclickevents.md) |
 | [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.md) | InitialAccess | *Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`AlertInfo`](../tables/alertinfo.md) |
 | [URLs by location](../content/microsoft-defender-xdr-urls-by-location-ab006655-d723-4844-9d5d-91cb3b020555-d023be7f.md) ⚠️ | InitialAccess | [`EmailUrlInfo`](../tables/emailurlinfo.md) |
-| [Unusual Volume of file deletion by users](../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.md) | Impact | [`SigninLogs`](../tables/signinlogs.md) |
+| [Unusual Volume of file deletion by users](../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.md) | Impact | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [User Email Submission Trend (FN)](../content/microsoft-defender-xdr-user-email-submission-trend-fn-9c4359a1-0bf9-45b3-9a1a-f333c437a061-6ae2a9dd.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [User Email Submissions (FN) - Top Detection Overrides by Admins](../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-admins-58acf93f-27de-4af4-8a5f-d87ee59326f9-fef2e72b.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [User Email Submissions (FN) - Top Detection Overrides by Users](../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-users-0a9385bc-2ef9-4b0e-8834-12f796b08ca8-531a183e.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
@@ -481,7 +481,7 @@ This solution includes **373 content item(s)**:
 | [User Email Submissions accuracy vs Admin review verdict](../content/microsoft-defender-xdr-user-email-submissions-accuracy-vs-admin-review-verdict-d78bad8c-3d94-4a73-bdbe-1c567e3d6d62-56fcb8ae.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [User Email Submissions by Admin review status (Mark and Notify)](../content/microsoft-defender-xdr-user-email-submissions-by-admin-review-status-mark-and-notify-201cb524-b4b4-479a-9637-da35cfa1e30a-695a9a27.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [User clicked through events](../content/microsoft-defender-xdr-user-clicked-through-events-f075d4c4-cf76-4e5d-9c2d-9ed524286316-66cc46a9.md) | InitialAccess | [`UrlClickEvents`](../tables/urlclickevents.md) |
-| [User clicks on malicious inbound emails](../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.md) | InitialAccess | [`UrlClickEvents`](../tables/urlclickevents.md) |
+| [User clicks on malicious inbound emails](../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md)<br>[`UrlClickEvents`](../tables/urlclickevents.md) |
 | [User clicks on phishing URLs in emails](../content/microsoft-defender-xdr-user-clicks-on-phishing-urls-in-emails-d823da0e-1334-4a66-8ff4-2c2c40d26295-36e1eb38.md) | InitialAccess | [`UrlClickEvents`](../tables/urlclickevents.md) |
 | [User email submissions (FN) from Junk Folder](../content/microsoft-defender-xdr-user-email-submissions-fn-from-junk-folder-300b0d05-e99e-4349-ab2b-ec12ff5c2da1-b559b01f.md) ⚠️ | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [User not covered under display name impersonation](../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.md) | InitialAccess | *Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
@@ -529,13 +529,7 @@ This solution includes **373 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -30,15 +30,15 @@ This solution uses **11 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
+| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics |
+| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics |
+| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
 | [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
+| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
 | [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
+| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics, Workbooks |
+| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
+| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics, Workbooks |
 | [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 | [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 
@@ -56,34 +56,34 @@ This solution includes **18 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [BitSight - compromised systems detected](../content/bitsight-bitsight-compromised-systems-detected-d68b758a-b117-4cb8-8e1d-dcab5a4a2f21-a4f59745.md) | Medium | Execution | - |
-| [BitSight - diligence risk category detected](../content/bitsight-bitsight-diligence-risk-category-detected-161ed3ac-b242-4b13-8c6b-58716e5e9972-ffcba42e.md) | Medium | Execution, Reconnaissance | - |
-| [BitSight - drop in company ratings](../content/bitsight-bitsight-drop-in-company-ratings-d8844f11-3a36-4b97-9062-1e6d57c00e37-6dbc0005.md) | High | Reconnaissance, CommandAndControl | - |
-| [BitSight - drop in the headline rating](../content/bitsight-bitsight-drop-in-the-headline-rating-b11fdc35-6368-4cc0-8128-52cd2e2cdda0-d880d206.md) | High | Reconnaissance, CommandAndControl | - |
-| [BitSight - new alert found](../content/bitsight-bitsight-new-alert-found-a1275c5e-0ff4-4d15-a7b7-96018cd979f5-773a55bf.md) | High | Impact, InitialAccess | - |
-| [BitSight - new breach found](../content/bitsight-bitsight-new-breach-found-a5526ba9-5997-47c6-bf2e-60a08b681e9b-ce9a2a1e.md) | Medium | Impact, InitialAccess | - |
+| [BitSight - compromised systems detected](../content/bitsight-bitsight-compromised-systems-detected-d68b758a-b117-4cb8-8e1d-dcab5a4a2f21-a4f59745.md) | Medium | Execution | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) |
+| [BitSight - diligence risk category detected](../content/bitsight-bitsight-diligence-risk-category-detected-161ed3ac-b242-4b13-8c6b-58716e5e9972-ffcba42e.md) | Medium | Execution, Reconnaissance | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) |
+| [BitSight - drop in company ratings](../content/bitsight-bitsight-drop-in-company-ratings-d8844f11-3a36-4b97-9062-1e6d57c00e37-6dbc0005.md) | High | Reconnaissance, CommandAndControl | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) |
+| [BitSight - drop in the headline rating](../content/bitsight-bitsight-drop-in-the-headline-rating-b11fdc35-6368-4cc0-8128-52cd2e2cdda0-d880d206.md) | High | Reconnaissance, CommandAndControl | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) |
+| [BitSight - new alert found](../content/bitsight-bitsight-new-alert-found-a1275c5e-0ff4-4d15-a7b7-96018cd979f5-773a55bf.md) | High | Impact, InitialAccess | [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) |
+| [BitSight - new breach found](../content/bitsight-bitsight-new-breach-found-a5526ba9-5997-47c6-bf2e-60a08b681e9b-ce9a2a1e.md) | Medium | Impact, InitialAccess | [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [BitSightWorkbook](../content/bitsight-bitsightworkbook-85beb528.md) | - |
+| [BitSightWorkbook](../content/bitsight-bitsightworkbook-85beb528.md) | [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md)<br>[`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md)<br>[`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md)<br>[`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md)<br>[`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [BitSightAlerts](../content/bitsight-bitsightalerts-ce09d0fb-6816-496d-822e-198a56187a30-66d8fc5d.md) | - | - |
-| [BitSightBreaches](../content/bitsight-bitsightbreaches-43e914e1-3b7b-4824-bb16-90e5dedad176-6891951c.md) | - | - |
-| [BitSightCompanyDetails](../content/bitsight-bitsightcompanydetails-25fcb934-4665-48c3-a4ce-2dd6c0874beb-30257bc4.md) | - | - |
-| [BitSightCompanyRatings](../content/bitsight-bitsightcompanyratings-1280e2d5-9d9a-4455-8aec-3e340a3ffeb2-6190c9b9.md) | - | - |
-| [BitSightDiligenceHistoricalStatistics](../content/bitsight-bitsightdiligencehistoricalstatistics-a1d7d1c7-5677-4abe-a717-60cdf261e0c7-4dc5717d.md) | - | - |
-| [BitSightDiligenceStatistics](../content/bitsight-bitsightdiligencestatistics-3900f610-56b5-4f8f-84f4-291d9b41dfe2-2d67b4ce.md) | - | - |
-| [BitSightFindingsData](../content/bitsight-bitsightfindingsdata-4bb0ba56-5a8c-4b74-88c5-237037eaa3ee-381bfc2c.md) | - | - |
-| [BitSightFindingsSummary](../content/bitsight-bitsightfindingssummary-39844fcb-d451-4050-ae41-23c8f27b611c-4ea22d67.md) | - | - |
-| [BitSightGraphData](../content/bitsight-bitsightgraphdata-6495f5c6-12ac-4416-8060-94e3cfad695b-e914fabf.md) | - | - |
-| [BitSightIndustrialStatistics](../content/bitsight-bitsightindustrialstatistics-44c51bc8-1c06-46ca-ba25-0422d0af4015-4027f794.md) | - | - |
-| [BitSightObservationStatistics](../content/bitsight-bitsightobservationstatistics-144a9fa0-98a3-40f7-b39e-9c7ff0229290-c33969b2.md) | - | - |
+| [BitSightAlerts](../content/bitsight-bitsightalerts-ce09d0fb-6816-496d-822e-198a56187a30-66d8fc5d.md) | - | [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) *(read)* |
+| [BitSightBreaches](../content/bitsight-bitsightbreaches-43e914e1-3b7b-4824-bb16-90e5dedad176-6891951c.md) | - | [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) *(read)* |
+| [BitSightCompanyDetails](../content/bitsight-bitsightcompanydetails-25fcb934-4665-48c3-a4ce-2dd6c0874beb-30257bc4.md) | - | [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) *(read)* |
+| [BitSightCompanyRatings](../content/bitsight-bitsightcompanyratings-1280e2d5-9d9a-4455-8aec-3e340a3ffeb2-6190c9b9.md) | - | [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) *(read)* |
+| [BitSightDiligenceHistoricalStatistics](../content/bitsight-bitsightdiligencehistoricalstatistics-a1d7d1c7-5677-4abe-a717-60cdf261e0c7-4dc5717d.md) | - | [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) *(read)* |
+| [BitSightDiligenceStatistics](../content/bitsight-bitsightdiligencestatistics-3900f610-56b5-4f8f-84f4-291d9b41dfe2-2d67b4ce.md) | - | [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) *(read)* |
+| [BitSightFindingsData](../content/bitsight-bitsightfindingsdata-4bb0ba56-5a8c-4b74-88c5-237037eaa3ee-381bfc2c.md) | - | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) *(read)* |
+| [BitSightFindingsSummary](../content/bitsight-bitsightfindingssummary-39844fcb-d451-4050-ae41-23c8f27b611c-4ea22d67.md) | - | [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) *(read)* |
+| [BitSightGraphData](../content/bitsight-bitsightgraphdata-6495f5c6-12ac-4416-8060-94e3cfad695b-e914fabf.md) | - | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) *(read)* |
+| [BitSightIndustrialStatistics](../content/bitsight-bitsightindustrialstatistics-44c51bc8-1c06-46ca-ba25-0422d0af4015-4027f794.md) | - | [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) *(read)* |
+| [BitSightObservationStatistics](../content/bitsight-bitsightobservationstatistics-144a9fa0-98a3-40f7-b39e-9c7ff0229290-c33969b2.md) | - | [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -96,13 +96,7 @@ This solution includes **18 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

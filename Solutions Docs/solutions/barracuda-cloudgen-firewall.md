@@ -32,11 +32,13 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
+| [`Perf`](../tables/perf.md) | - | Workbooks |
+| [`Syslog`](../tables/syslog.md) | - | Workbooks |
 
 ## Content Items
 
@@ -51,13 +53,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md) ⚠️ | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md) ⚠️ | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Perf`](../tables/perf.md)<br>[`Syslog`](../tables/syslog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CGFWFirewallActivity](../content/barracuda-cloudgen-firewall-cgfwfirewallactivity-07ff282b-3a46-43a4-80e8-27ea5dcd3192-64ddbe7d.md) | - | - |
+| [CGFWFirewallActivity](../content/barracuda-cloudgen-firewall-cgfwfirewallactivity-07ff282b-3a46-43a4-80e8-27ea5dcd3192-64ddbe7d.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
@@ -71,13 +73,7 @@ This solution includes **2 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

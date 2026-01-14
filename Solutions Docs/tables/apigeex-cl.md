@@ -14,15 +14,18 @@ This table is ingested by the following connectors:
 
 ---
 
+## Parsers Using This Table (2)
+
+### Other Parsers (2)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [ApigeeX](../parsers/apigeex.md) | [Google Apigee](../solutions/google-apigee.md) | Solution |
+| [Unified_ApigeeX](../parsers/unified-apigeex.md) | [Google Apigee](../solutions/google-apigee.md) | Solution |
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

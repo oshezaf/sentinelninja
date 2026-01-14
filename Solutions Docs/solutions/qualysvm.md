@@ -39,9 +39,9 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | - |
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md) | - |
-| [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | - |
+| [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Analytics, Workbooks |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md) | Analytics, Workbooks |
+| [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -58,14 +58,14 @@ This solution includes **8 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [High Number of Urgent Vulnerabilities Detected](../content/qualysvm-high-number-of-urgent-vulnerabilities-detected-3edb7215-250b-40c0-8b46-79093949242d-7adbb1bc.md) | Medium | InitialAccess | - |
-| [New High Severity Vulnerability Detected Across Multiple Hosts](../content/qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27-fbfde951.md) | Medium | InitialAccess | - |
+| [High Number of Urgent Vulnerabilities Detected](../content/qualysvm-high-number-of-urgent-vulnerabilities-detected-3edb7215-250b-40c0-8b46-79093949242d-7adbb1bc.md) | Medium | InitialAccess | [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) |
+| [New High Severity Vulnerability Detected Across Multiple Hosts](../content/qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27-fbfde951.md) | Medium | InitialAccess | [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [QualysVMv2](../content/qualysvm-qualysvmv2-0981091b.md) | - |
+| [QualysVMv2](../content/qualysvm-qualysvmv2-0981091b.md) | [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) |
 
 ### Playbooks
 
@@ -80,7 +80,7 @@ This solution includes **8 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [QualysHostDetection](../content/qualysvm-qualyshostdetection-7162903e-e07f-426b-9b07-63b8c7eb77b1-391bdc43.md) | - | - |
+| [QualysHostDetection](../content/qualysvm-qualyshostdetection-7162903e-e07f-426b-9b07-63b8c7eb77b1-391bdc43.md) | - | [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) *(read)*<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) *(read)*<br>[`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -97,13 +97,7 @@ This solution includes **8 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

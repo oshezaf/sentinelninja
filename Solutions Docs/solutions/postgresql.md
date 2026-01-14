@@ -50,7 +50,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PostgreSQLEvent](../content/postgresql-postgresqlevent-5c5c1f7e-ec64-46b1-9d50-3cea65a6edce-231b8b3f.md) | - | - |
+| [PostgreSQLEvent](../content/postgresql-postgresqlevent-5c5c1f7e-ec64-46b1-9d50-3cea65a6edce-231b8b3f.md) | - | [`PostgreSQL_CL`](../tables/postgresql-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -61,13 +61,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -44,18 +44,12 @@ This content item queries data from the following tables:
 - [`Usage`](../tables/usage.md)
 - [`VMConnection`](../tables/vmconnection.md)
 - [`WindowsFirewall`](../tables/windowsfirewall.md)
+- [`Zoom_CL`](../tables/zoom-cl.md)
 - [`update`](../tables/update.md)
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Workbooks](workbooks.md)
-- [← Back to ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Workbooks](workbooks.md) · [Back to ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 

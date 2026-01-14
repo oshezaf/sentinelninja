@@ -14,15 +14,20 @@ This table is ingested by the following connectors:
 
 ---
 
+## Parsers Using This Table (2)
+
+### Other Parsers (2)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [ASimWebSessionOpenSystemsSecureWebGateway](../parsers/asimwebsessionopensystemssecurewebgateway.md) | [Open Systems](../solutions/open-systems.md) | Solution ⚠️ |
+| [vimWebSessionOpenSystemsProxySecureWebGateway](../parsers/vimwebsessionopensystemsproxysecurewebgateway.md) | [Open Systems](../solutions/open-systems.md) | Solution ⚠️ |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

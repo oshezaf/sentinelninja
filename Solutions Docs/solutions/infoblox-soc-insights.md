@@ -34,23 +34,23 @@ This solution provides **3 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md), [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md) | - |
-| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | - | Playbooks (writes) |
-| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | - | Playbooks (writes) |
-| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | - | Playbooks (writes) |
-| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | - | Playbooks (writes) |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Playbooks (writes) |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md), [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md) | Analytics |
 
 ### Internal Tables
 
-The following **2 table(s)** are used internally by this solution's playbooks:
+The following **7 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Analytics, Playbooks (writes), Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
 
@@ -69,33 +69,33 @@ This solution includes **12 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Infoblox - SOC Insight Detected - API Source](../content/infoblox-soc-insights-infoblox-soc-insight-detected-api-source-cf9847bb-ab46-4050-bb81-75cab3f893dc-6b346252.md) | Medium | Impact | - |
-| [Infoblox - SOC Insight Detected - CDC Source](../content/infoblox-soc-insights-infoblox-soc-insight-detected-cdc-source-a4bdd81e-afc8-4410-a3d1-8478fa810537-11c9ff59.md) | Medium | Impact | - |
+| [Infoblox - SOC Insight Detected - API Source](../content/infoblox-soc-insights-infoblox-soc-insight-detected-api-source-cf9847bb-ab46-4050-bb81-75cab3f893dc-6b346252.md) | Medium | Impact | *Internal use:*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) |
+| [Infoblox - SOC Insight Detected - CDC Source](../content/infoblox-soc-insights-infoblox-soc-insight-detected-cdc-source-a4bdd81e-afc8-4410-a3d1-8478fa810537-11c9ff59.md) | Medium | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md) | *Internal use:*<br>[`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md)<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md)<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md)<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md)<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Infoblox SOC Get Insight Details](../content/infoblox-soc-insights-infoblox-soc-get-insight-details-dd083b36.md) | Leverages the Infoblox SOC Insights API to enrich a Microsoft Sentinel Incident triggered by an Info... | [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) *(write)*<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) *(write)*<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) *(write)*<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) *(write)*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(write)* |
-| [Infoblox SOC Get Open Insights API](../content/infoblox-soc-insights-infoblox-soc-get-open-insights-api-5e5c3c13.md) | Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into t... | [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(write)* |
+| [Infoblox SOC Get Insight Details](../content/infoblox-soc-insights-infoblox-soc-get-insight-details-dd083b36.md) | Leverages the Infoblox SOC Insights API to enrich a Microsoft Sentinel Incident triggered by an Info... | *Internal use:*<br>[`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) *(write)*<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) *(write)*<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) *(write)*<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) *(write)*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(write)* |
+| [Infoblox SOC Get Open Insights API](../content/infoblox-soc-insights-infoblox-soc-get-open-insights-api-5e5c3c13.md) | Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into t... | *Internal use:*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(write)* |
 | [Infoblox SOC Import Indicators TI](../content/infoblox-soc-insights-infoblox-soc-import-indicators-ti-0612a4f4.md) | Imports each Indicator of a Microsoft Sentinel Incident triggered by an Infoblox SOC Insight into th... | - |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [InfobloxCDC_SOCInsights](../content/infoblox-soc-insights-infobloxcdc-socinsights-bf7ad23f-4f9e-4a00-bb1a-363b950405b6-c2df7037.md) | - | - |
-| [InfobloxInsight](../content/infoblox-soc-insights-infobloxinsight-3fa2808e-1d5d-4421-9d24-6b1a948b3f90-de87c83f.md) | - | - |
-| [InfobloxInsightAssets](../content/infoblox-soc-insights-infobloxinsightassets-588bb0e4-16b2-4f80-9f00-c95d9df9fc64-01154fd8.md) | - | - |
-| [InfobloxInsightComments](../content/infoblox-soc-insights-infobloxinsightcomments-b38a195f-55e9-45c4-a7f5-88ba9478e585-2c79c8b8.md) | - | - |
-| [InfobloxInsightEvents](../content/infoblox-soc-insights-infobloxinsightevents-8e8f2f2c-3351-41e8-b883-5b30d92109e9-8cc19e65.md) | - | - |
-| [InfobloxInsightIndicators](../content/infoblox-soc-insights-infobloxinsightindicators-18a21543-f954-4eb4-8601-d1717610a57f-68f51f2d.md) | - | - |
+| [InfobloxCDC_SOCInsights](../content/infoblox-soc-insights-infobloxcdc-socinsights-bf7ad23f-4f9e-4a00-bb1a-363b950405b6-c2df7037.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [InfobloxInsight](../content/infoblox-soc-insights-infobloxinsight-3fa2808e-1d5d-4421-9d24-6b1a948b3f90-de87c83f.md) | - | *Internal use:*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(read)* |
+| [InfobloxInsightAssets](../content/infoblox-soc-insights-infobloxinsightassets-588bb0e4-16b2-4f80-9f00-c95d9df9fc64-01154fd8.md) | - | *Internal use:*<br>[`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) *(read)* |
+| [InfobloxInsightComments](../content/infoblox-soc-insights-infobloxinsightcomments-b38a195f-55e9-45c4-a7f5-88ba9478e585-2c79c8b8.md) | - | *Internal use:*<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) *(read)* |
+| [InfobloxInsightEvents](../content/infoblox-soc-insights-infobloxinsightevents-8e8f2f2c-3351-41e8-b883-5b30d92109e9-8cc19e65.md) | - | *Internal use:*<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) *(read)* |
+| [InfobloxInsightIndicators](../content/infoblox-soc-insights-infobloxinsightindicators-18a21543-f954-4eb4-8601-d1717610a57f-68f51f2d.md) | - | *Internal use:*<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -107,13 +107,7 @@ This solution includes **12 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

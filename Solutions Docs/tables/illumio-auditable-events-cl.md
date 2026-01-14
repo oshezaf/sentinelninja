@@ -1,9 +1,10 @@
 # Illumio_Auditable_Events_CL
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
+- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [IllumioSaaS](../solutions/illumiosaas.md)
 
 ## Connectors (1)
@@ -14,7 +15,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (8)
 
 ### Analytic Rules (6)
 
@@ -26,20 +27,26 @@ This table is ingested by the following connectors:
 - [Illumio VEN Offline Detection Rule](../content/illumiosaas-illumio-ven-offline-detection-rule-ec07fcd3-724f-426d-9f53-041801ca5f6c-43578bfc.md)
 - [Illumio VEN Suspend Detection Rule](../content/illumiosaas-illumio-ven-suspend-detection-rule-7379f752-18a2-43ca-8b74-70747dd792f8-c5108207.md)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
+- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):**
 - [IllumioAuditableEvents](../content/illumiosaas-illumioauditableevents-7d7e85b3.md)
 
+## Parsers Using This Table (2)
+
+### ASIM Parsers (2)
+
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimAuditEventIllumioSaaSCore](../asim/asimauditeventillumiosaascore.md) | AuditEvent |  |
+| [ASimAuthenticationIllumioSaaSCore](../asim/asimauthenticationillumiosaascore.md) | Authentication |  |
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

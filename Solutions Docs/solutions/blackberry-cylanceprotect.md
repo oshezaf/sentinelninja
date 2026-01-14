@@ -42,8 +42,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CylancePROTECT](../content/blackberry-cylanceprotect-cylanceprotect-87392258-fb9d-448d-94a4-cdf356fcce5c-5b9ad08d.md) | - | - |
-| [CylancePROTECT-old](../content/blackberry-cylanceprotect-cylanceprotect-old-84b956cf-1546-41b5-8984-9aa9f7bab4f3-b5306d5c.md) ⚠️ | - | - |
+| [CylancePROTECT](../content/blackberry-cylanceprotect-cylanceprotect-87392258-fb9d-448d-94a4-cdf356fcce5c-5b9ad08d.md) | - | [`Syslog`](../tables/syslog.md) *(read)*<br>[`syslog`](../tables/syslog.md) *(read)* |
+| [CylancePROTECT-old](../content/blackberry-cylanceprotect-cylanceprotect-old-84b956cf-1546-41b5-8984-9aa9f7bab4f3-b5306d5c.md) ⚠️ | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
@@ -56,13 +56,7 @@ This solution includes **2 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

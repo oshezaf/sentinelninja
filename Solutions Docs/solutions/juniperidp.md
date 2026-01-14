@@ -50,7 +50,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [JuniperIDP](../content/juniperidp-juniperidp-68bdf4f9-77cb-42f0-b620-70a69858ddf3-0b7e0251.md) | - | - |
+| [JuniperIDP](../content/juniperidp-juniperidp-68bdf4f9-77cb-42f0-b620-70a69858ddf3-0b7e0251.md) | - | [`JuniperIDP_CL`](../tables/juniperidp-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -61,13 +61,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

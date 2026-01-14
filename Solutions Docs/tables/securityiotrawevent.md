@@ -10,17 +10,38 @@ Reference for SecurityIoTRawEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent) |
 
----
+## Solutions (2)
+
+This table is used by the following solutions:
+
+- [Dataminr Pulse](../solutions/dataminr-pulse.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 
 ---
 
-**Browse:**
+## Content Items Using This Table (2)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+### Workbooks (2)
+
+**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
+- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
+
+## Parsers Using This Table (3)
+
+### ASIM Parsers (3)
+
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimAuthenticationMD4IoT](../asim/asimauthenticationmd4iot.md) | Authentication |  |
+| [ASimNetworkSessionMD4IoTAgent](../asim/asimnetworksessionmd4iotagent.md) | NetworkSession |  |
+| [ASimProcessEventMD4IoT](../asim/asimprocesseventmd4iot.md) | ProcessEvent |  |
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Tables Index](../tables-index.md)
 

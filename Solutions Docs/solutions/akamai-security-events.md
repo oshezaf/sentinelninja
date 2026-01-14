@@ -51,7 +51,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AkamaiSIEMEvent](../content/akamai-security-events-akamaisiemevent-9db78fa7-e565-45ee-8478-e562630b084a-c8d28ae9.md) | - | - |
+| [AkamaiSIEMEvent](../content/akamai-security-events-akamaisiemevent-9db78fa7-e565-45ee-8478-e562630b084a-c8d28ae9.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 
@@ -63,13 +63,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

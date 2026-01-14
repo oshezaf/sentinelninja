@@ -52,7 +52,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Morphisec](../content/morphisec-morphisec-a68a352c-7f90-49ca-b5a0-36178788f43c-0256b13f.md) | - | - |
+| [Morphisec](../content/morphisec-morphisec-a68a352c-7f90-49ca-b5a0-36178788f43c-0256b13f.md) | - | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -64,13 +64,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

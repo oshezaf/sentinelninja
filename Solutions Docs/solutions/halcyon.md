@@ -50,11 +50,11 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ASimAuthenticationHalcyon](../content/halcyon-asimauthenticationhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde1-12c13dee.md) | - | - |
-| [ASimDnsHalcyon](../content/halcyon-asimdnshalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde2-5abc0b5e.md) | - | - |
-| [ASimFileEventHalcyon](../content/halcyon-asimfileeventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde3-432f7dbb.md) | - | - |
-| [ASimNetworkSessionHalcyon](../content/halcyon-asimnetworksessionhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde4-20ce998d.md) | - | - |
-| [ASimProcessEventHalcyon](../content/halcyon-asimprocesseventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde5-a5e3e8be.md) | - | - |
+| [ASimAuthenticationHalcyon](../content/halcyon-asimauthenticationhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde1-12c13dee.md) | - | [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) *(read)* |
+| [ASimDnsHalcyon](../content/halcyon-asimdnshalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde2-5abc0b5e.md) | - | [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) *(read)* |
+| [ASimFileEventHalcyon](../content/halcyon-asimfileeventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde3-432f7dbb.md) | - | [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) *(read)* |
+| [ASimNetworkSessionHalcyon](../content/halcyon-asimnetworksessionhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde4-20ce998d.md) | - | [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) *(read)* |
+| [ASimProcessEventHalcyon](../content/halcyon-asimprocesseventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde5-a5e3e8be.md) | - | [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -64,13 +64,7 @@ This solution includes **5 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -58,19 +58,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OneIdentity_Safeguard](../content/oneidentity-oneidentity-safeguard-e1818ade-7a4e-4bdb-9bf6-f0e980c6eb77-4e74382c.md) ⚠️ | - | - |
+| [OneIdentity_Safeguard](../content/oneidentity-oneidentity-safeguard-e1818ade-7a4e-4bdb-9bf6-f0e980c6eb77-4e74382c.md) ⚠️ | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

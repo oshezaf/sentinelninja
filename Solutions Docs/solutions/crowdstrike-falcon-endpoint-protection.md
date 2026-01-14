@@ -47,7 +47,7 @@ This solution uses **25 table(s)**:
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
 | [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA](../connectors/crowdstrikefalconendpointprotectionama.md), [[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent](../connectors/crowdstrikefalconendpointprotection.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA](../connectors/crowdstrikefalconendpointprotectionama.md), [[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent](../connectors/crowdstrikefalconendpointprotection.md) | Analytics, Workbooks |
 | [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiccpdefinition.md) | - |
 | [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiccpdefinition.md) | - |
 | [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiccpdefinition.md) | - |
@@ -80,14 +80,14 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md) | High | - | - |
-| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | - | - |
+| [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md) | High | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CrowdStrikeFalconEndpointProtection](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconendpointprotection-b9a8efc3.md) | - |
+| [CrowdStrikeFalconEndpointProtection](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconendpointprotection-b9a8efc3.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
@@ -101,9 +101,9 @@ This solution includes **10 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CrowdStrikeFalconEventStream](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconeventstream-d2db8f31-eb69-4784-b165-b19fc163e1dc-dd1401e4.md) | - | - |
-| [CrowdStrikeReplicator](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-5fbb24dd-7089-43fd-ba32-27e944e8c6aa-04120f36.md) | - | - |
-| [CrowdStrikeReplicatorV2](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicatorv2-b52d934f-469b-4908-997f-fc097b17442a-0f0f5d92.md) | - | - |
+| [CrowdStrikeFalconEventStream](../content/crowdstrike-falcon-endpoint-protection-crowdstrikefalconeventstream-d2db8f31-eb69-4784-b165-b19fc163e1dc-dd1401e4.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [CrowdStrikeReplicator](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-5fbb24dd-7089-43fd-ba32-27e944e8c6aa-04120f36.md) | - | [`CrowdstrikeReplicatorLogs_CL`](../tables/crowdstrikereplicatorlogs-cl.md) *(read)* |
+| [CrowdStrikeReplicatorV2](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicatorv2-b52d934f-469b-4908-997f-fc097b17442a-0f0f5d92.md) | - | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) *(read)*<br>[`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) *(read)*<br>[`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) *(read)*<br>[`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) *(read)*<br>[`ASimFileEventLogs`](../tables/asimfileeventlogs.md) *(read)*<br>[`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) *(read)*<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) *(read)*<br>[`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) *(read)*<br>[`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) *(read)*<br>[`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) *(read)*<br>[`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) *(read)*<br>[`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) *(read)*<br>[`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) *(read)*<br>[`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) *(read)*<br>[`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) *(read)* |
 | [CrowdStrikeReplicator_future](../content/crowdstrike-falcon-endpoint-protection-crowdstrikereplicator-future-5fbb24dd-7089-43fd-ba32-27e944e8c6aa-f62533ef.md) ⚠️ | - | - |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
@@ -137,13 +137,7 @@ This solution includes **10 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

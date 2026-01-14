@@ -43,7 +43,7 @@ This solution uses **1 table(s)**:
 
 ### Internal Tables
 
-The following **1 table(s)** are used internally by this solution's playbooks:
+The following **1 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -104,8 +104,8 @@ This solution includes **27 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AssignedIPAddress](../content/microsoftdefenderforendpoint-assignedipaddress-a06da838-8c56-4eed-ac1a-097bdfab5e9b-560dac13.md) | - | - |
-| [Devicefromip](../content/microsoftdefenderforendpoint-devicefromip-788c6182-85d9-4747-8096-6a971f0e9476-ee70820e.md) | - | - |
+| [AssignedIPAddress](../content/microsoftdefenderforendpoint-assignedipaddress-a06da838-8c56-4eed-ac1a-097bdfab5e9b-560dac13.md) | - | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) *(read)* |
+| [Devicefromip](../content/microsoftdefenderforendpoint-devicefromip-788c6182-85d9-4747-8096-6a971f0e9476-ee70820e.md) | - | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) *(read)* |
 
 ## Release Notes
 
@@ -121,13 +121,7 @@ This solution includes **27 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -45,9 +45,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [LookoutCSActivities](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsactivities-ecaf0d02-9547-4e2d-b4fd-48112442430e-1f450e47.md) | - | - |
-| [LookoutCSAnomalies](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsanomalies-411d9caf-088b-42d7-b1d0-7db898efc1b4-e3e9a60c.md) | - | - |
-| [LookoutCSViolations](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsviolations-3394b060-0e55-4ecc-828e-a5671e3275cd-d0207f9f.md) | - | - |
+| [LookoutCSActivities](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsactivities-ecaf0d02-9547-4e2d-b4fd-48112442430e-1f450e47.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
+| [LookoutCSAnomalies](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsanomalies-411d9caf-088b-42d7-b1d0-7db898efc1b4-e3e9a60c.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
+| [LookoutCSViolations](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsviolations-3394b060-0e55-4ecc-828e-a5671e3275cd-d0207f9f.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -59,13 +59,7 @@ This solution includes **3 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

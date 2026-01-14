@@ -19,17 +19,11 @@ This content item queries data from the following tables:
 - [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md)
 - [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md)
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Workbooks](workbooks.md)
-- [← Back to DNS Essentials](../solutions/dns-essentials.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Workbooks](workbooks.md) · [Back to DNS Essentials](../solutions/dns-essentials.md)
 

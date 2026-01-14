@@ -18,7 +18,9 @@ This content item queries data from the following tables:
 
 - [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)
 - [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
+- [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
 - [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
+- [`Alert`](../tables/alert.md)
 - [`AuditLogs`](../tables/auditlogs.md)
 - [`AzureActivity`](../tables/azureactivity.md)
 - [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
@@ -26,6 +28,7 @@ This content item queries data from the following tables:
 - [`BehaviorAnalytics`](../tables/behavioranalytics.md)
 - [`Event`](../tables/event.md)
 - [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
+- [`IdentityInfo`](../tables/identityinfo.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`ProtectionStatus`](../tables/protectionstatus.md)
 - [`SecurityAlert`](../tables/securityalert.md)
@@ -36,18 +39,12 @@ This content item queries data from the following tables:
 - [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
 - [`SigninLogs`](../tables/signinlogs.md)
 - [`Update`](../tables/update.md)
+- [`anomalies`](../tables/anomalies.md)
 - [`update`](../tables/update.md)
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Workbooks](workbooks.md)
-- [← Back to AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Workbooks](workbooks.md) · [Back to AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 

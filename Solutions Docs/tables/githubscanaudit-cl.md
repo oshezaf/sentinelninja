@@ -22,15 +22,19 @@ This table is ingested by the following connectors:
 - [GitHub](../content/github-github-87916f66.md)
 - [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md)
 
+## Parsers Using This Table (3)
+
+### Other Parsers (3)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | [GitHub](../solutions/github.md) | Solution |
+| [GitHubDependabotData](../parsers/githubdependabotdata.md) | [GitHub](../solutions/github.md) | Solution |
+| [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | [GitHub](../solutions/github.md) | Solution |
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

@@ -51,17 +51,11 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ASimDnsMicrosoftNXLog](../content/nxlogdnslogs-asimdnsmicrosoftnxlog-274a2fc6-eda0-430d-9e02-7a7c0850eb0e-d0a2aace.md) | - | - |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [ASimDnsMicrosoftNXLog](../content/nxlogdnslogs-asimdnsmicrosoftnxlog-274a2fc6-eda0-430d-9e02-7a7c0850eb0e-d0a2aace.md) | - | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md) *(read)* |
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

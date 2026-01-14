@@ -10,19 +10,17 @@
 
 This content item queries data from the following tables:
 
+- [`Audits_Data_CL`](../tables/audits-data-cl.md)
+- [`Detections_Data_CL`](../tables/detections-data-cl.md)
+- [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md)
 - [`Event`](../tables/event.md)
+- [`Health_Data_CL`](../tables/health-data-cl.md)
+- [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md)
 - [`Usage`](../tables/usage.md)
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Workbooks](workbooks.md)
-- [← Back to Vectra XDR](../solutions/vectra-xdr.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Workbooks](workbooks.md) · [Back to Vectra XDR](../solutions/vectra-xdr.md)
 

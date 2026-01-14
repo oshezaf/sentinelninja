@@ -15,16 +15,17 @@ This Creates an incident when a host has a high number of Urgent, severity 5, vu
 | **Required Connectors** | [QualysVMLogsCCPDefinition](../connectors/qualysvmlogsccpdefinition.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Analytic%20Rules/HighNumberofVulnDetectedV2.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md)
+- [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)
+- [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to QualysVM](../solutions/qualysvm.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to QualysVM](../solutions/qualysvm.md)
 

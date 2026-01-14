@@ -15,16 +15,15 @@ Infoblox SOC Insight detected in logs sourced via REST API. Customize scheduling
 | **Required Connectors** | [InfobloxSOCInsightsDataConnector_API](../connectors/infobloxsocinsightsdataconnector-api.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Analytic%20Rules/Infoblox-SOCInsight-Detected-APISource.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to Infoblox](../solutions/infoblox.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Infoblox](../solutions/infoblox.md)
 

@@ -62,8 +62,8 @@ This solution includes **8 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CynerioEvent_Authentication](../content/cynerio-cynerioevent-authentication-fcd546b8-7f59-45d6-bcc8-2f705f97f5c6-2062a9e7.md) ⚠️ | - | - |
-| [CynerioEvent_NetworkSession](../content/cynerio-cynerioevent-networksession-7e7530f5-00e7-4663-90c3-7965937e0ce5-e8888e40.md) ⚠️ | - | - |
+| [CynerioEvent_Authentication](../content/cynerio-cynerioevent-authentication-fcd546b8-7f59-45d6-bcc8-2f705f97f5c6-2062a9e7.md) ⚠️ | - | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) *(read)* |
+| [CynerioEvent_NetworkSession](../content/cynerio-cynerioevent-networksession-7e7530f5-00e7-4663-90c3-7965937e0ce5-e8888e40.md) ⚠️ | - | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
@@ -76,13 +76,7 @@ This solution includes **8 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

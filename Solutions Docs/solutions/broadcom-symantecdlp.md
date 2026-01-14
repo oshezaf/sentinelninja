@@ -51,7 +51,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecDLP](../content/broadcom-symantecdlp-symantecdlp-bea87dea-1c01-461b-9649-6619dc2d989c-3ce31b2f.md) | - | - |
+| [SymantecDLP](../content/broadcom-symantecdlp-symantecdlp-bea87dea-1c01-461b-9649-6619dc2d989c-3ce31b2f.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 
@@ -64,13 +64,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

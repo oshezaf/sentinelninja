@@ -14,16 +14,15 @@ Identifies execution of a sensitive ABAP Function Module using the watchlists pr
 | **Required Connectors** | [SAPETDAlerts](../connectors/sapetdalerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20ETD%20Cloud/Analytic%20Rules/SAPETD-ExecutionofSensitiveFunctionModule.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to SAP ETD Cloud](../solutions/sap-etd-cloud.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to SAP ETD Cloud](../solutions/sap-etd-cloud.md)
 

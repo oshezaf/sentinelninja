@@ -50,7 +50,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [MarkLogicAudit](../content/marklogicaudit-marklogicaudit-f2b2c4e3-a65b-44ba-81e9-03a79fa0fa84-280152ff.md) | - | - |
+| [MarkLogicAudit](../content/marklogicaudit-marklogicaudit-f2b2c4e3-a65b-44ba-81e9-03a79fa0fa84-280152ff.md) | - | [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) *(read)*<br>[`event`](../tables/event.md) *(read)* |
 
 ## Release Notes
 
@@ -61,13 +61,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

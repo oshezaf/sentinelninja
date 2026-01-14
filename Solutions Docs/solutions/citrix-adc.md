@@ -42,8 +42,8 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CitrixADCEvent](../content/citrix-adc-citrixadcevent-42894dea-1da9-4e98-b934-3fd97924dc8a-5a0d149b.md) | - | - |
-| [CitrixADCEventOld](../content/citrix-adc-citrixadceventold-1c9a0c69-efc6-4fe6-ac53-baf6fe77b833-1e7dac89.md) ⚠️ | - | - |
+| [CitrixADCEvent](../content/citrix-adc-citrixadcevent-42894dea-1da9-4e98-b934-3fd97924dc8a-5a0d149b.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [CitrixADCEventOld](../content/citrix-adc-citrixadceventold-1c9a0c69-efc6-4fe6-ac53-baf6fe77b833-1e7dac89.md) ⚠️ | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
@@ -60,13 +60,7 @@ This solution includes **2 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

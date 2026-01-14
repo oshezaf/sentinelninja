@@ -30,6 +30,14 @@ This solution provides **1 data connector(s)**:
 
 - [[Deprecated] ESET PROTECT](../connectors/esetprotect.md)
 
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
+
 ## Content Items
 
 This solution includes **4 content item(s)**:
@@ -44,20 +52,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Threats detected by ESET](../content/esetprotect-threats-detected-by-eset-64badfab-1dd8-4491-927b-3ca206fa9a17-6283dd27.md) | Low | Execution | - |
-| [Website blocked by ESET](../content/esetprotect-website-blocked-by-eset-7b84fc5b-9ffb-4e9b-945b-5d480e330b3f-e49e27d2.md) | Low | Exfiltration, CommandAndControl, InitialAccess | - |
+| [Threats detected by ESET](../content/esetprotect-threats-detected-by-eset-64badfab-1dd8-4491-927b-3ca206fa9a17-6283dd27.md) | Low | Execution | [`Syslog`](../tables/syslog.md) |
+| [Website blocked by ESET](../content/esetprotect-website-blocked-by-eset-7b84fc5b-9ffb-4e9b-945b-5d480e330b3f-e49e27d2.md) | Low | Exfiltration, CommandAndControl, InitialAccess | [`Syslog`](../tables/syslog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ESETPROTECT](../content/esetprotect-esetprotect-083ee366.md) | - |
+| [ESETPROTECT](../content/esetprotect-esetprotect-083ee366.md) | [`Syslog`](../tables/syslog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ESETPROTECT](../content/esetprotect-esetprotect-f54b254b-6ec6-4509-be49-e1df76e323c1-61d909fc.md) | - | - |
+| [ESETPROTECT](../content/esetprotect-esetprotect-f54b254b-6ec6-4509-be49-e1df76e323c1-61d909fc.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -67,13 +75,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

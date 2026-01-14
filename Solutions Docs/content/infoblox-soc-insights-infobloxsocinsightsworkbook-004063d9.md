@@ -10,19 +10,17 @@
 
 This content item queries data from the following tables:
 
+- [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md)
+- [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md)
+- [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md)
+- [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md)
+- [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Workbooks](workbooks.md)
-- [← Back to Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Workbooks](workbooks.md) · [Back to Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
 

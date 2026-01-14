@@ -33,6 +33,14 @@ This solution uses **1 table(s)**:
 |-------|-------------------|----------------|
 | [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) | - |
 
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's content items:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`SecurityAlert`](../tables/securityalert.md) | - | Analytics |
+
 ## Content Items
 
 This solution includes **5 content item(s)**:
@@ -46,15 +54,15 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dragos Notifications](../content/dragos-dragos-notifications-9a74fe72-4c21-4ac5-80d9-37434e809721-264e8545.md) | Medium | - | - |
+| [Dragos Notifications](../content/dragos-dragos-notifications-9a74fe72-4c21-4ac5-80d9-37434e809721-264e8545.md) | Medium | - | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DragosNotificationsToSentinel](../content/dragos-dragosnotificationstosentinel-b5237116-c40a-4cbe-bac6-c35564a0c578-13e95999.md) | - | - |
-| [DragosPullNotificationsToSentinel](../content/dragos-dragospullnotificationstosentinel-b5237116-c40a-4cbe-bac6-c35564a0c578-f61550b0.md) | - | - |
-| [DragosPushNotificationsToSentinel](../content/dragos-dragospushnotificationstosentinel-90305294-242b-4568-8878-8fc65204f47a-40779fe8.md) | - | - |
+| [DragosNotificationsToSentinel](../content/dragos-dragosnotificationstosentinel-b5237116-c40a-4cbe-bac6-c35564a0c578-13e95999.md) | - | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
+| [DragosPullNotificationsToSentinel](../content/dragos-dragospullnotificationstosentinel-b5237116-c40a-4cbe-bac6-c35564a0c578-f61550b0.md) | - | [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) *(read)*<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
+| [DragosPushNotificationsToSentinel](../content/dragos-dragospushnotificationstosentinel-90305294-242b-4568-8878-8fc65204f47a-40779fe8.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 | [DragosSeverityToSentinelSeverity](../content/dragos-dragosseveritytosentinelseverity-0a51be06-1211-4d3b-8683-a4e44f069b7d-ff1b8b2f.md) | - | - |
 
 ## Release Notes
@@ -65,13 +73,7 @@ This solution includes **5 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

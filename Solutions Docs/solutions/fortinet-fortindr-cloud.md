@@ -52,7 +52,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Fortinet_FortiNDR_Cloud](../content/fortinet-fortindr-cloud-fortinet-fortindr-cloud-4c846775-c295-421f-9275-ded657b190d6-53498416.md) | - | - |
+| [Fortinet_FortiNDR_Cloud](../content/fortinet-fortindr-cloud-fortinet-fortindr-cloud-4c846775-c295-421f-9275-ded657b190d6-53498416.md) | - | [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) *(read)*<br>[`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) *(read)*<br>[`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -65,13 +65,7 @@ This solution includes **2 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

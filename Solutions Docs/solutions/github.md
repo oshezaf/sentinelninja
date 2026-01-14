@@ -39,12 +39,14 @@ This solution provides **3 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | - |
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | [GitHub Enterprise Audit Log (via Codeless Connector Framework) (Preview)](../connectors/githubauditdefinitionv2.md) | - |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | [GitHub Enterprise Audit Log (via Codeless Connector Framework) (Preview)](../connectors/githubauditdefinitionv2.md) | Analytics, Hunting |
+| [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | - | Analytics |
+| [`GitHub_CL`](../tables/github-cl.md) | - | Analytics |
 | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
 
 ## Content Items
@@ -62,33 +64,33 @@ This solution includes **28 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [(Preview) GitHub - A payment method was removed](../content/github-preview-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-07e36ce6.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - Oauth application - a client secret was removed](../content/github-preview-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-7a8aae1f.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - Repository was created](../content/github-preview-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-8deab692.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - Repository was destroyed](../content/github-preview-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-3aa162c0.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - User visibility Was changed](../content/github-preview-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-626c4b84.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - User was added to the organization](../content/github-preview-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-0ef59510.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - User was blocked](../content/github-preview-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-14f65d41.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - User was invited to the repository](../content/github-preview-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-b2b4b57d.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - pull request was created](../content/github-preview-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-d91061d2.md) | Medium | InitialAccess | - |
-| [(Preview) GitHub - pull request was merged](../content/github-preview-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-a5d2e4b5.md) | Medium | InitialAccess | - |
-| [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-042cd40e.md) | Medium | InitialAccess | - |
-| [GitHub Security Vulnerability in Repository](../content/github-github-security-vulnerability-in-repository-5436f471-b03d-41cb-b333-65891f887c43-30f5673a.md) | Informational | InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | - |
-| [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-df6456ca.md) | Medium | DefenseEvasion | - |
-| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) | Medium | DefenseEvasion | - |
+| [(Preview) GitHub - A payment method was removed](../content/github-preview-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-07e36ce6.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - Oauth application - a client secret was removed](../content/github-preview-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-7a8aae1f.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - Repository was created](../content/github-preview-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-8deab692.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - Repository was destroyed](../content/github-preview-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-3aa162c0.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - User visibility Was changed](../content/github-preview-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-626c4b84.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - User was added to the organization](../content/github-preview-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-0ef59510.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - User was blocked](../content/github-preview-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-14f65d41.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - User was invited to the repository](../content/github-preview-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-b2b4b57d.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - pull request was created](../content/github-preview-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-d91061d2.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [(Preview) GitHub - pull request was merged](../content/github-preview-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-a5d2e4b5.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-042cd40e.md) | Medium | InitialAccess | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub Security Vulnerability in Repository](../content/github-github-security-vulnerability-in-repository-5436f471-b03d-41cb-b333-65891f887c43-30f5673a.md) | Informational | InitialAccess, Execution, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) |
+| [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-df6456ca.md) | Medium | DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [NRT GitHub Two Factor Auth Disable](../content/github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) | Medium | DefenseEvasion | [`GitHub_CL`](../tables/github-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [GitHub First Time Invite Member and Add Member to Repo](../content/github-github-first-time-invite-member-and-add-member-to-repo-f0d30d3c-e6ad-480a-90e8-1bd7cc84881b-0912ca5c.md) | Persistence | - |
-| [GitHub First Time Repo Delete](../content/github-github-first-time-repo-delete-c3237d88-fdc4-4dee-8b90-118ded2c507c-69cfe798.md) | Impact | - |
-| [GitHub Inactive or New Account Access or Usage](../content/github-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f-be1de63d.md) | Persistence | - |
-| [GitHub Mass Deletion of repos or projects](../content/github-github-mass-deletion-of-repos-or-projects-67da5c4e-49f2-476d-96ff-2dbe4b855a48-2f132015.md) | Impact | - |
-| [GitHub OAuth App Restrictions Disabled](../content/github-github-oauth-app-restrictions-disabled-667e6a70-adc9-49b7-9cf3-f21927c71959-0ae7ca34.md) | Persistence, DefenseEvasion | - |
-| [GitHub Repo switched from private to public](../content/github-github-repo-switched-from-private-to-public-a6e2afd3-559c-4e88-a693-39c1f6789ef1-cb2a47a1.md) | Collection | - |
-| [GitHub Update Permissions](../content/github-github-update-permissions-ec986fb7-34ed-4528-a5f3-a496e61d8860-a49819f7.md) | Persistence, DefenseEvasion | - |
-| [GitHub User Grants Access and Other User Grants Access](../content/github-github-user-grants-access-and-other-user-grants-access-f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a-1b34b5bf.md) | Persistence, PrivilegeEscalation | - |
+| [GitHub First Time Invite Member and Add Member to Repo](../content/github-github-first-time-invite-member-and-add-member-to-repo-f0d30d3c-e6ad-480a-90e8-1bd7cc84881b-0912ca5c.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub First Time Repo Delete](../content/github-github-first-time-repo-delete-c3237d88-fdc4-4dee-8b90-118ded2c507c-69cfe798.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub Inactive or New Account Access or Usage](../content/github-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f-be1de63d.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub Mass Deletion of repos or projects](../content/github-github-mass-deletion-of-repos-or-projects-67da5c4e-49f2-476d-96ff-2dbe4b855a48-2f132015.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub OAuth App Restrictions Disabled](../content/github-github-oauth-app-restrictions-disabled-667e6a70-adc9-49b7-9cf3-f21927c71959-0ae7ca34.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub Repo switched from private to public](../content/github-github-repo-switched-from-private-to-public-a6e2afd3-559c-4e88-a693-39c1f6789ef1-cb2a47a1.md) | Collection | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub Update Permissions](../content/github-github-update-permissions-ec986fb7-34ed-4528-a5f3-a496e61d8860-a49819f7.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub User Grants Access and Other User Grants Access](../content/github-github-user-grants-access-and-other-user-grants-access-f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a-1b34b5bf.md) | Persistence, PrivilegeEscalation | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
 
 ### Workbooks
 
@@ -101,10 +103,10 @@ This solution includes **28 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GitHubAuditData](../content/github-githubauditdata-32d7c900-875f-43d6-9e48-987fd5df3762-0a905c13.md) | - | - |
-| [GitHubCodeScanningData](../content/github-githubcodescanningdata-090a125e-1e28-4f56-96be-bf9a2e51042b-5e7bd872.md) | - | - |
-| [GitHubDependabotData](../content/github-githubdependabotdata-96de3515-a65e-4edc-8b1a-90c780221bb2-77adf576.md) | - | - |
-| [GitHubSecretScanningData](../content/github-githubsecretscanningdata-2bcbf832-074f-4bd3-b043-f2c7873f5630-db1aedc9.md) | - | - |
+| [GitHubAuditData](../content/github-githubauditdata-32d7c900-875f-43d6-9e48-987fd5df3762-0a905c13.md) | - | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) *(read)*<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) *(read)* |
+| [GitHubCodeScanningData](../content/github-githubcodescanningdata-090a125e-1e28-4f56-96be-bf9a2e51042b-5e7bd872.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
+| [GitHubDependabotData](../content/github-githubdependabotdata-96de3515-a65e-4edc-8b1a-90c780221bb2-77adf576.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
+| [GitHubSecretScanningData](../content/github-githubsecretscanningdata-2bcbf832-074f-4bd3-b043-f2c7873f5630-db1aedc9.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -126,13 +128,7 @@ This solution includes **28 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

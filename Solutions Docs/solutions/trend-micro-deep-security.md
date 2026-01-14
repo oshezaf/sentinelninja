@@ -31,6 +31,14 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
+
 ## Content Items
 
 This solution includes **3 content item(s)**:
@@ -44,14 +52,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [TrendMicroDeepSecurityAttackActivity](../content/trend-micro-deep-security-trendmicrodeepsecurityattackactivity-4ac1a0a6.md) | - |
-| [TrendMicroDeepSecurityOverview](../content/trend-micro-deep-security-trendmicrodeepsecurityoverview-abad9508.md) | - |
+| [TrendMicroDeepSecurityAttackActivity](../content/trend-micro-deep-security-trendmicrodeepsecurityattackactivity-4ac1a0a6.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [TrendMicroDeepSecurityOverview](../content/trend-micro-deep-security-trendmicrodeepsecurityoverview-abad9508.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TrendMicroDeepSecurity](../content/trend-micro-deep-security-trendmicrodeepsecurity-b376272c-ca00-435d-9879-e7d64da7dd24-d7d017c5.md) | - | - |
+| [TrendMicroDeepSecurity](../content/trend-micro-deep-security-trendmicrodeepsecurity-b376272c-ca00-435d-9879-e7d64da7dd24-d7d017c5.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 
@@ -64,13 +72,7 @@ This solution includes **3 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

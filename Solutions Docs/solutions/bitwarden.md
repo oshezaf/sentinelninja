@@ -30,9 +30,9 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
-| [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
-| [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
+| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | Workbooks |
+| [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | Workbooks |
+| [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | Workbooks |
 
 ## Content Items
 
@@ -47,15 +47,15 @@ This solution includes **4 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [BitwardenEventLogsAuthentication](../content/bitwarden-bitwardeneventlogsauthentication-7af40b22.md) | - |
-| [BitwardenEventLogsOrganization](../content/bitwarden-bitwardeneventlogsorganization-9dd85e37.md) | - |
-| [BitwardenEventLogsVaultItems](../content/bitwarden-bitwardeneventlogsvaultitems-df3fce0f.md) | - |
+| [BitwardenEventLogsAuthentication](../content/bitwarden-bitwardeneventlogsauthentication-7af40b22.md) | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md)<br>[`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md)<br>[`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) |
+| [BitwardenEventLogsOrganization](../content/bitwarden-bitwardeneventlogsorganization-9dd85e37.md) | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md)<br>[`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md)<br>[`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) |
+| [BitwardenEventLogsVaultItems](../content/bitwarden-bitwardeneventlogsvaultitems-df3fce0f.md) | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md)<br>[`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md)<br>[`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [BitwardenEventLogs](../content/bitwarden-bitwardeneventlogs-515d95cb-90f9-49b6-9056-327b2df08d37-830fa29f.md) | - | - |
+| [BitwardenEventLogs](../content/bitwarden-bitwardeneventlogs-515d95cb-90f9-49b6-9056-327b2df08d37-830fa29f.md) | - | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) *(read)*<br>[`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) *(read)*<br>[`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -65,13 +65,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -37,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Zoom_CL`](../tables/zoom-cl.md) | [Zoom Reports](../connectors/zoom.md) | - |
+| [`Zoom_CL`](../tables/zoom-cl.md) | [Zoom Reports](../connectors/zoom.md) | Workbooks |
 
 ## Content Items
 
@@ -52,13 +52,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZoomReports](../content/zoomreports-zoomreports-c76868a1.md) | - |
+| [ZoomReports](../content/zoomreports-zoomreports-c76868a1.md) | [`Zoom_CL`](../tables/zoom-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Zoom](../content/zoomreports-zoom-249f522d-995b-439f-910a-12741f7c0d8b-88c20063.md) | - | - |
+| [Zoom](../content/zoomreports-zoom-249f522d-995b-439f-910a-12741f7c0d8b-88c20063.md) | - | [`Zoom_CL`](../tables/zoom-cl.md) *(read)* |
 
 ## Additional Documentation
 
@@ -96,13 +96,7 @@ If you run into issues while creating for [Server to Server Oauth App](https://d
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -18,9 +18,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (36)
+## Content Items Using This Table (38)
 
-### Analytic Rules (28)
+### Analytic Rules (30)
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 - [Dataverse - Anomalous application user activity](../content/microsoft-business-applications-dataverse-anomalous-application-user-activity-0820da12-e895-417f-9175-7c256fcfb33e-25e83157.md)
@@ -31,7 +31,9 @@ This table is used by the following solutions:
 - [Dataverse - Hierarchy security manipulation](../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.md)
 - [Dataverse - Honeypot instance activity](../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.md)
 - [Dataverse - Login by a sensitive privileged user](../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.md)
+- [Dataverse - Login from IP in the block list](../content/microsoft-business-applications-dataverse-login-from-ip-in-the-block-list-666fef96-1bb8-4abf-ad72-e5cb49561381-2bf699c4.md)
 - [Dataverse - Login from IP not in the allow list](../content/microsoft-business-applications-dataverse-login-from-ip-not-in-the-allow-list-81c693fe-f6c4-4352-bc10-3526f6e22637-6a1a9333.md)
+- [Dataverse - Malware found in SharePoint document management site](../content/microsoft-business-applications-dataverse-malware-found-in-sharepoint-document-management-site-2e3878bb-d519-43aa-9992-ea069df099e4-82c1f402.md)
 - [Dataverse - Mass deletion of records](../content/microsoft-business-applications-dataverse-mass-deletion-of-records-716cf6d4-97ad-407b-923e-6790083acb58-2ea9461e.md)
 - [Dataverse - Mass export of records to Excel](../content/microsoft-business-applications-dataverse-mass-export-of-records-to-excel-57000f0d-ff5d-4166-94b6-aa5fb62b16ec-17a490af.md)
 - [Dataverse - Mass record updates](../content/microsoft-business-applications-dataverse-mass-record-updates-df577f0f-1d8a-4420-9057-a07f0edb15c8-7ce89bac.md)
@@ -70,13 +72,7 @@ This table is used by the following solutions:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

@@ -10,12 +10,13 @@ Reference for NetworkAccessTraffic table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic) |
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [Global Secure Access](../solutions/global-secure-access.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 
 ## Connectors (1)
 
@@ -25,7 +26,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (7)
 
 ### Analytic Rules (4)
 
@@ -35,21 +36,18 @@ This table is ingested by the following connectors:
 - [GSA - Detect Protocol Changes for Destination Ports](../content/global-secure-access-gsa-detect-protocol-changes-for-destination-ports-f6a8d6a5-3e9f-47c8-a8d5-1b2b9d3b7d6a-c17b64bc.md)
 - [GSA - Detect Source IP Scanning Multiple Open Ports](../content/global-secure-access-gsa-detect-source-ip-scanning-multiple-open-ports-82cfa6b9-5f7e-4b8b-8b2f-a63f21b7a7d1-5a266ab8.md)
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 - [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md)
 - [GSANetworkTraffic](../content/global-secure-access-gsanetworktraffic-b1c45294.md)
 
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

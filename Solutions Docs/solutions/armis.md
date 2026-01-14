@@ -58,9 +58,9 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ArmisActivities](../content/armis-armisactivities-fb6c861f-c438-4a5d-ae97-59dfc7af607a-31c0218c.md) | - | - |
-| [ArmisAlerts](../content/armis-armisalerts-7783dff3-1e0a-4622-bdd7-74ee371e4dba-58784ae6.md) | - | - |
-| [ArmisDevice](../content/armis-armisdevice-826eac66-f927-4351-ab5d-483457060ae0-b0cace5e.md) | - | - |
+| [ArmisActivities](../content/armis-armisactivities-fb6c861f-c438-4a5d-ae97-59dfc7af607a-31c0218c.md) | - | [`Armis_Activities_CL`](../tables/armis-activities-cl.md) *(read)* |
+| [ArmisAlerts](../content/armis-armisalerts-7783dff3-1e0a-4622-bdd7-74ee371e4dba-58784ae6.md) | - | [`Armis_Alerts_CL`](../tables/armis-alerts-cl.md) *(read)* |
+| [ArmisDevice](../content/armis-armisdevice-826eac66-f927-4351-ab5d-483457060ae0-b0cace5e.md) | - | [`Armis_Devices_CL`](../tables/armis-devices-cl.md) *(read)* |
 
 ## Release Notes
 
@@ -76,13 +76,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -13,16 +13,15 @@ Query shows file permission with PUT or POST request
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoCDL/Hunting%20Queries/PaloAltoCDLFilePermissionWithPutRequest.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Hunting Queries](hunting-queries.md)
-- [← Back to PaloAltoCDL](../solutions/paloaltocdl.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Hunting Queries](hunting-queries.md) · [Back to PaloAltoCDL](../solutions/paloaltocdl.md)
 

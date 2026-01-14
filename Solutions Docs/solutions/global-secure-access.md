@@ -36,7 +36,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **4 table(s)** from its content items:
+This solution queries **5 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -44,6 +44,7 @@ This solution queries **4 table(s)** from its content items:
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | Analytics, Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
 | [`Operation`](../tables/operation.md) | Workbooks |
+| [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 
 ## Content Items
 
@@ -68,7 +69,7 @@ This solution includes **6 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) | [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md)<br>[`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md) |
-| [GSANetworkTraffic](../content/global-secure-access-gsanetworktraffic-b1c45294.md) | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) |
+| [GSANetworkTraffic](../content/global-secure-access-gsanetworktraffic-b1c45294.md) | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ## Release Notes
 
@@ -79,13 +80,7 @@ This solution includes **6 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

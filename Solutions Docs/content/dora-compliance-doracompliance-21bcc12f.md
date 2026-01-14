@@ -12,6 +12,7 @@ This content item queries data from the following tables:
 
 - [`DeviceFileEvents`](../tables/devicefileevents.md)
 - [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
+- [`Event`](../tables/event.md)
 - [`Heartbeat`](../tables/heartbeat.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
@@ -19,14 +20,7 @@ This content item queries data from the following tables:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Workbooks](workbooks.md)
-- [← Back to DORA Compliance](../solutions/dora-compliance.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Workbooks](workbooks.md) · [Back to DORA Compliance](../solutions/dora-compliance.md)
 

@@ -22,15 +22,17 @@ This table is ingested by the following connectors:
 - [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-least-privilege-with-rbac-b2849cd8.md)
 - [Microsoft Exchange Security Review](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md)
 
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [MESCompareDataOnPMRA](../parsers/mescomparedataonpmra.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | Solution |
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

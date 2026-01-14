@@ -61,13 +61,14 @@ This solution uses **1 ASIM parser(s)** for normalized data:
 
 ### Internal Tables
 
-The following **4 table(s)** are used internally by this solution's playbooks:
+The following **5 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) | Analytics, Hunting, Playbooks (writes), Workbooks |
 | [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) | Playbooks (writes), Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | Workbooks |
 | [`anomalies`](../tables/anomalies.md) | Analytics, Hunting |
 
 ## Content Items
@@ -114,7 +115,7 @@ This solution includes **21 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md)<br>*Internal use:*<br>[`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md)<br>[`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md)<br>*Internal use:*<br>[`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md)<br>[`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Playbooks
 
@@ -134,13 +135,7 @@ This solution includes **21 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

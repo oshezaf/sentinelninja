@@ -14,7 +14,7 @@ Reference for SecurityAlert table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [Security alert schema reference](https://learn.microsoft.com/azure/sentinel/security-alert-schema) - Describes the SecurityAlert table schema and field definitions
 
-## Solutions (45)
+## Solutions (49)
 
 This table is used by the following solutions:
 
@@ -29,9 +29,12 @@ This table is used by the following solutions:
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
+- [Dragos](../solutions/dragos.md)
 - [Dynatrace](../solutions/dynatrace.md)
 - [ExtraHop](../solutions/extrahop.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
+- [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
+- [HIPAA Compliance](../solutions/hipaa-compliance.md)
 - [Infoblox](../solutions/infoblox.md)
 - [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md)
 - [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md)
@@ -52,6 +55,7 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Session Essentials](../solutions/network-session-essentials.md)
 - [ReversingLabs](../solutions/reversinglabs.md)
+- [SAP BTP](../solutions/sap-btp.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -81,12 +85,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (101)
+## Content Items Using This Table (109)
 
-### Analytic Rules (40)
+### Analytic Rules (42)
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 - [Azure DevOps Pipeline modified by a new user](../content/azuredevopsauditing-azure-devops-pipeline-modified-by-a-new-user-155e9134-d5ad-4a6f-88f3-99c220040b66-1f2f0f72.md)
+
+**In solution [Dragos](../solutions/dragos.md):**
+- [Dragos Notifications](../content/dragos-dragos-notifications-9a74fe72-4c21-4ac5-80d9-37434e809721-264e8545.md)
 
 **In solution [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md):**
 - [Denial of Service (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-denial-of-service-microsoft-defender-for-iot-e068187a-01f5-4737-bc13-25db4027b7ea-d30730fd.md)
@@ -106,6 +113,7 @@ This table is ingested by the following connectors:
 - [Unauthorized remote access to the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-remote-access-to-the-network-microsoft-defender-for-1ff4fa3d-150b-4c87-b733-26c289af0d49-1d4743ff.md)
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
+- [Dataverse - Guest user exfiltration following Power Platform defense impairment](../content/microsoft-business-applications-dataverse-guest-user-exfiltration-following-power-platform-defense-impai-39efbf4b-b347-4cc7-895e-99a868bf29ea-f29caf4d.md)
 - [Dataverse - Suspicious use of TDS endpoint](../content/microsoft-business-applications-dataverse-suspicious-use-of-tds-endpoint-d875af10-6bb9-4d6a-a6e4-78439a98bf4b-79440ea8.md)
 - [Dataverse - Terminated employee exfiltration over email](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-over-email-de039242-47e0-43fa-84d7-b6be24305349-d5733918.md)
 - [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md)
@@ -153,7 +161,7 @@ This table is ingested by the following connectors:
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [AV detections related to Zinc actors](../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090-62580aab.md)
 
-### Hunting Queries (13)
+### Hunting Queries (14)
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 - [Azure DevOps - New Package Feed Created](../content/azuredevopsauditing-azure-devops-new-package-feed-created-3d1aa540-b4c7-4789-8c4c-4174b3c2371f-bf70da4e.md)
@@ -177,8 +185,9 @@ This table is ingested by the following connectors:
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [Insider Risk_Entity Anomaly Followed by IRM Alert](../content/microsoftpurviewinsiderriskmanagement-insider-risk-entity-anomaly-followed-by-irm-alert-ea5d043f-80ef-452c-a31a-b584e485b2be-9c9a3b63.md)
 - [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md)
+- [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md)
 
-### Workbooks (40)
+### Workbooks (45)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)
@@ -212,6 +221,12 @@ This table is ingested by the following connectors:
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
+
+**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
+- [GreyNoiseOverview](../content/greynoisethreatintelligence-greynoiseoverview-879c7a2d.md)
+
+**In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
+- [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md)
 
 **In solution [Infoblox](../solutions/infoblox.md):**
 - [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook-5d6a67bf.md)
@@ -249,11 +264,16 @@ This table is ingested by the following connectors:
 **In solution [ReversingLabs](../solutions/reversinglabs.md):**
 - [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-reversinglabs-capabilitiesoverview-cf6695da.md)
 
+**In solution [SAP BTP](../solutions/sap-btp.md):**
+- [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md)
+
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AnalyticsEfficiency](../content/soc-handbook-analyticsefficiency-ba1ee629.md)
+- [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md)
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts-8f5f1c6c.md)
 - [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md)
+- [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md)
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md)
 - [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md)
@@ -286,15 +306,18 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/securityinsights`
 
+## Parsers Using This Table (2)
+
+### Other Parsers (2)
+
+| Parser | Solution | Location |
+|:-------|:---------|:---------|
+| [DragosNotificationsToSentinel](../parsers/dragosnotificationstosentinel.md) | [Dragos](../solutions/dragos.md) | Solution |
+| [DragosPullNotificationsToSentinel](../parsers/dragospullnotificationstosentinel.md) | [Dragos](../solutions/dragos.md) | Solution |
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Tables Index](../tables-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 

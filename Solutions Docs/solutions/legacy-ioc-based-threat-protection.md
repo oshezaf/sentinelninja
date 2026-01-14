@@ -1,4 +1,4 @@
-# Legacy IOC based Threat Protection
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Legacy IOC based Threat Protection
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Legacy IOC based Threat Protection Logo" width="75" height="75">
 
@@ -76,6 +76,84 @@ This is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This solution uses **71 ASIM parser(s)** for normalized data:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`_Im_FileEvent_AzureBlobStorage`](../asim/im-fileevent-azureblobstorage.md) | Hunting |
+| [`_Im_FileEvent_AzureFileStorage`](../asim/im-fileevent-azurefilestorage.md) | Hunting |
+| [`_Im_FileEvent_AzureQueueStorage`](../asim/im-fileevent-azurequeuestorage.md) | Hunting |
+| [`_Im_FileEvent_AzureTableStorage`](../asim/im-fileevent-azuretablestorage.md) | Hunting |
+| [`_Im_FileEvent_GoogleWorkspace`](../asim/im-fileevent-googleworkspace.md) | Hunting |
+| [`_Im_FileEvent_LinuxSysmonFileCreated`](../asim/im-fileevent-linuxsysmonfilecreated.md) | Hunting |
+| [`_Im_FileEvent_LinuxSysmonFileDeleted`](../asim/im-fileevent-linuxsysmonfiledeleted.md) | Hunting |
+| [`_Im_FileEvent_Microsoft365D`](../asim/im-fileevent-microsoft365d.md) | Hunting |
+| [`_Im_FileEvent_MicrosoftSecurityEvents`](../asim/im-fileevent-microsoftsecurityevents.md) | Hunting |
+| [`_Im_FileEvent_MicrosoftSharePoint`](../asim/im-fileevent-microsoftsharepoint.md) | Hunting |
+| [`_Im_FileEvent_MicrosoftSysmon`](../asim/im-fileevent-microsoftsysmon.md) | Hunting |
+| [`_Im_FileEvent_MicrosoftSysmonWindowsEvent`](../asim/im-fileevent-microsoftsysmonwindowsevent.md) | Hunting |
+| [`_Im_FileEvent_MicrosoftWindowsEvents`](../asim/im-fileevent-microsoftwindowsevents.md) | Hunting |
+| [`_Im_FileEvent_Native`](../asim/im-fileevent-native.md) | Hunting |
+| [`_Im_FileEvent_SentinelOne`](../asim/im-fileevent-sentinelone.md) | Hunting |
+| [`_Im_FileEvent_VMwareCarbonBlackCloud`](../asim/im-fileevent-vmwarecarbonblackcloud.md) | Hunting |
+| [`_Im_NetworkSession_AWSVPC`](../asim/im-networksession-awsvpc.md) | Hunting |
+| [`_Im_NetworkSession_AppGateSDP`](../asim/im-networksession-appgatesdp.md) | Hunting |
+| [`_Im_NetworkSession_AzureFirewall`](../asim/im-networksession-azurefirewall.md) | Hunting |
+| [`_Im_NetworkSession_AzureNSG`](../asim/im-networksession-azurensg.md) | Hunting |
+| [`_Im_NetworkSession_BarracudaCEF`](../asim/im-networksession-barracudacef.md) | Hunting |
+| [`_Im_NetworkSession_BarracudaWAF`](../asim/im-networksession-barracudawaf.md) | Hunting |
+| [`_Im_NetworkSession_CheckPointFirewall`](../asim/im-networksession-checkpointfirewall.md) | Hunting |
+| [`_Im_NetworkSession_CiscoASA`](../asim/im-networksession-ciscoasa.md) | Hunting |
+| [`_Im_NetworkSession_CiscoFirepower`](../asim/im-networksession-ciscofirepower.md) | Hunting |
+| [`_Im_NetworkSession_CiscoISE`](../asim/im-networksession-ciscoise.md) | Hunting |
+| [`_Im_NetworkSession_CiscoMeraki`](../asim/im-networksession-ciscomeraki.md) | Hunting |
+| [`_Im_NetworkSession_CiscoMerakiSyslog`](../asim/im-networksession-ciscomerakisyslog.md) | Hunting |
+| [`_Im_NetworkSession_CrowdStrikeFalconHost`](../asim/im-networksession-crowdstrikefalconhost.md) | Hunting |
+| [`_Im_NetworkSession_ForcePointFirewall`](../asim/im-networksession-forcepointfirewall.md) | Hunting |
+| [`_Im_NetworkSession_FortinetFortiGate`](../asim/im-networksession-fortinetfortigate.md) | Hunting |
+| [`_Im_NetworkSession_IllumioSaaSCore`](../asim/im-networksession-illumiosaascore.md) | Hunting |
+| [`_Im_NetworkSession_LinuxSysmon`](../asim/im-networksession-linuxsysmon.md) | Hunting |
+| [`_Im_NetworkSession_MD4IoTAgent`](../asim/im-networksession-md4iotagent.md) | Hunting |
+| [`_Im_NetworkSession_MD4IoTSensor`](../asim/im-networksession-md4iotsensor.md) | Hunting |
+| [`_Im_NetworkSession_Microsoft365Defender`](../asim/im-networksession-microsoft365defender.md) | Hunting |
+| [`_Im_NetworkSession_MicrosoftSecurityEventFirewall`](../asim/im-networksession-microsoftsecurityeventfirewall.md) | Hunting |
+| [`_Im_NetworkSession_MicrosoftSysmon`](../asim/im-networksession-microsoftsysmon.md) | Hunting |
+| [`_Im_NetworkSession_MicrosoftSysmonWindowsEvent`](../asim/im-networksession-microsoftsysmonwindowsevent.md) | Hunting |
+| [`_Im_NetworkSession_MicrosoftWindowsEventFirewall`](../asim/im-networksession-microsoftwindowseventfirewall.md) | Hunting |
+| [`_Im_NetworkSession_NTANetAnalytics`](../asim/im-networksession-ntanetanalytics.md) | Hunting |
+| [`_Im_NetworkSession_Native`](../asim/im-networksession-native.md) | Hunting |
+| [`_Im_NetworkSession_PaloAltoCEF`](../asim/im-networksession-paloaltocef.md) | Hunting |
+| [`_Im_NetworkSession_PaloAltoCortexDataLake`](../asim/im-networksession-paloaltocortexdatalake.md) | Hunting |
+| [`_Im_NetworkSession_SentinelOne`](../asim/im-networksession-sentinelone.md) | Hunting |
+| [`_Im_NetworkSession_SonicWallFirewall`](../asim/im-networksession-sonicwallfirewall.md) | Hunting |
+| [`_Im_NetworkSession_VMConnection`](../asim/im-networksession-vmconnection.md) | Hunting |
+| [`_Im_NetworkSession_VMwareCarbonBlackCloud`](../asim/im-networksession-vmwarecarbonblackcloud.md) | Hunting |
+| [`_Im_NetworkSession_VectraAI`](../asim/im-networksession-vectraai.md) | Hunting |
+| [`_Im_NetworkSession_WatchGuardFirewareOS`](../asim/im-networksession-watchguardfirewareos.md) | Hunting |
+| [`_Im_NetworkSession_ZscalerZIA`](../asim/im-networksession-zscalerzia.md) | Hunting |
+| [`_Im_ProcessCreateTrendMicroVisionOne`](../asim/im-processcreatetrendmicrovisionone.md) | Hunting |
+| [`_Im_ProcessCreate_LinuxSysmon`](../asim/im-processcreate-linuxsysmon.md) | Hunting |
+| [`_Im_ProcessCreate_MD4IoT`](../asim/im-processcreate-md4iot.md) | Hunting |
+| [`_Im_ProcessCreate_MicrosoftSecurityEvents`](../asim/im-processcreate-microsoftsecurityevents.md) | Hunting |
+| [`_Im_ProcessCreate_MicrosoftSysmon`](../asim/im-processcreate-microsoftsysmon.md) | Hunting |
+| [`_Im_ProcessCreate_MicrosoftWindowsEvents`](../asim/im-processcreate-microsoftwindowsevents.md) | Hunting |
+| [`_Im_ProcessCreate_SentinelOne`](../asim/im-processcreate-sentinelone.md) | Hunting |
+| [`_Im_ProcessCreate_VMwareCarbonBlackCloud`](../asim/im-processcreate-vmwarecarbonblackcloud.md) | Hunting |
+| [`_Im_ProcessEvent_Microsoft365D`](../asim/im-processevent-microsoft365d.md) | Hunting |
+| [`_Im_ProcessEvent_Native`](../asim/im-processevent-native.md) | Hunting |
+| [`_Im_RegistryEvent_Microsoft365D`](../asim/im-registryevent-microsoft365d.md) | Hunting |
+| [`_Im_RegistryEvent_MicrosoftSecurityEvent`](../asim/im-registryevent-microsoftsecurityevent.md) | Hunting |
+| [`_Im_RegistryEvent_MicrosoftSysmon`](../asim/im-registryevent-microsoftsysmon.md) | Hunting |
+| [`_Im_RegistryEvent_MicrosoftSysmonWindowsEvent`](../asim/im-registryevent-microsoftsysmonwindowsevent.md) | Hunting |
+| [`_Im_RegistryEvent_MicrosoftWindowsEvent`](../asim/im-registryevent-microsoftwindowsevent.md) | Hunting |
+| [`_Im_RegistryEvent_Native`](../asim/im-registryevent-native.md) | Hunting |
+| [`_Im_RegistryEvent_SentinelOne`](../asim/im-registryevent-sentinelone.md) | Hunting |
+| [`_Im_RegistryEvent_TrendMicroVisionOne`](../asim/im-registryevent-trendmicrovisionone.md) | Hunting |
+| [`_Im_RegistryEvent_VMwareCarbonBlackCloud`](../asim/im-registryevent-vmwarecarbonblackcloud.md) | Hunting |
+| [`_im_NetworkSession_CorelightZeek`](../asim/im-networksession-corelightzeek.md) | Hunting |
+
 ## Tables Used
 
 This solution queries **9 table(s)** from its content items:
@@ -94,7 +172,7 @@ This solution queries **9 table(s)** from its content items:
 
 ### Internal Tables
 
-The following **1 table(s)** are used internally by this solution's playbooks:
+The following **1 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -112,14 +190,14 @@ This solution includes **10 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md) | Reconnaissance, InitialAccess | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`VMConnection`](../tables/vmconnection.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md) | Reconnaissance, InitialAccess | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_AWSVPC`](../asim/im-networksession-awsvpc.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_AppGateSDP`](../asim/im-networksession-appgatesdp.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_AzureFirewall`](../asim/im-networksession-azurefirewall.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_AzureNSG`](../asim/im-networksession-azurensg.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_BarracudaCEF`](../asim/im-networksession-barracudacef.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_BarracudaWAF`](../asim/im-networksession-barracudawaf.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_CheckPointFirewall`](../asim/im-networksession-checkpointfirewall.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_CiscoASA`](../asim/im-networksession-ciscoasa.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_CiscoFirepower`](../asim/im-networksession-ciscofirepower.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_CiscoISE`](../asim/im-networksession-ciscoise.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_CiscoMeraki`](../asim/im-networksession-ciscomeraki.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_CiscoMerakiSyslog`](../asim/im-networksession-ciscomerakisyslog.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_CrowdStrikeFalconHost`](../asim/im-networksession-crowdstrikefalconhost.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_ForcePointFirewall`](../asim/im-networksession-forcepointfirewall.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_FortinetFortiGate`](../asim/im-networksession-fortinetfortigate.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_IllumioSaaSCore`](../asim/im-networksession-illumiosaascore.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_LinuxSysmon`](../asim/im-networksession-linuxsysmon.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_MD4IoTAgent`](../asim/im-networksession-md4iotagent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_MD4IoTSensor`](../asim/im-networksession-md4iotsensor.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_Microsoft365Defender`](../asim/im-networksession-microsoft365defender.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_MicrosoftSecurityEventFirewall`](../asim/im-networksession-microsoftsecurityeventfirewall.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_MicrosoftSysmon`](../asim/im-networksession-microsoftsysmon.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_MicrosoftSysmonWindowsEvent`](../asim/im-networksession-microsoftsysmonwindowsevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_MicrosoftWindowsEventFirewall`](../asim/im-networksession-microsoftwindowseventfirewall.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_NTANetAnalytics`](../asim/im-networksession-ntanetanalytics.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_Native`](../asim/im-networksession-native.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_PaloAltoCEF`](../asim/im-networksession-paloaltocef.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_PaloAltoCortexDataLake`](../asim/im-networksession-paloaltocortexdatalake.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_SentinelOne`](../asim/im-networksession-sentinelone.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_SonicWallFirewall`](../asim/im-networksession-sonicwallfirewall.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_VMConnection`](../asim/im-networksession-vmconnection.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_VMwareCarbonBlackCloud`](../asim/im-networksession-vmwarecarbonblackcloud.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_VectraAI`](../asim/im-networksession-vectraai.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_WatchGuardFirewareOS`](../asim/im-networksession-watchguardfirewareos.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession_ZscalerZIA`](../asim/im-networksession-zscalerzia.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_im_NetworkSession_CorelightZeek`](../asim/im-networksession-corelightzeek.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`VMConnection`](../tables/vmconnection.md) |
 | [Dev-0056 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0056-command-line-activity-november-2021-e2629949-2043-4421-8064-bca23c8491dd-1cdb73c2.md) | CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Dev-0322 Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-78fa22f9-0c13-4847-bbe6-6a7aa1b47547-84856956.md) | Persistence, LateralMovement, CommandAndControl | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Dev-0322 Command Line Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-asim-version-6bfea14f-2122-46b3-8f8b-3947e0fb6d92-de921320.md) | Persistence, LateralMovement, CommandAndControl | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Dev-0322 File Drop Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022-414e8f6c.md) | Persistence, CommandAndControl | [`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-asim-version-9b72769e-6ab1-4736-988b-018d92dc5e62-87c81fe1.md) | Persistence, CommandAndControl | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Known Nylon Typhoon Registry modifications patterns](../content/legacy-ioc-based-threat-protection-known-nylon-typhoon-registry-modifications-patterns-f090f8f4a-b986-42d2-b536-e0795c723e25-f442d105.md) | Persistence | [`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
-| [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.md) | Collection | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-asim-version-9b72769e-6ab1-4736-988b-018d92dc5e62-87c81fe1.md) | Persistence, CommandAndControl | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureBlobStorage`](../asim/im-fileevent-azureblobstorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureFileStorage`](../asim/im-fileevent-azurefilestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureQueueStorage`](../asim/im-fileevent-azurequeuestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureTableStorage`](../asim/im-fileevent-azuretablestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_GoogleWorkspace`](../asim/im-fileevent-googleworkspace.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_LinuxSysmonFileCreated`](../asim/im-fileevent-linuxsysmonfilecreated.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_LinuxSysmonFileDeleted`](../asim/im-fileevent-linuxsysmonfiledeleted.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_Microsoft365D`](../asim/im-fileevent-microsoft365d.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSecurityEvents`](../asim/im-fileevent-microsoftsecurityevents.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSharePoint`](../asim/im-fileevent-microsoftsharepoint.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSysmon`](../asim/im-fileevent-microsoftsysmon.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSysmonWindowsEvent`](../asim/im-fileevent-microsoftsysmonwindowsevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftWindowsEvents`](../asim/im-fileevent-microsoftwindowsevents.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_Native`](../asim/im-fileevent-native.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_SentinelOne`](../asim/im-fileevent-sentinelone.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_VMwareCarbonBlackCloud`](../asim/im-fileevent-vmwarecarbonblackcloud.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Known Nylon Typhoon Registry modifications patterns](../content/legacy-ioc-based-threat-protection-known-nylon-typhoon-registry-modifications-patterns-f090f8f4a-b986-42d2-b536-e0795c723e25-f442d105.md) | Persistence | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_Microsoft365D`](../asim/im-registryevent-microsoft365d.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_MicrosoftSecurityEvent`](../asim/im-registryevent-microsoftsecurityevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_MicrosoftSysmon`](../asim/im-registryevent-microsoftsysmon.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_MicrosoftSysmonWindowsEvent`](../asim/im-registryevent-microsoftsysmonwindowsevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_MicrosoftWindowsEvent`](../asim/im-registryevent-microsoftwindowsevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_Native`](../asim/im-registryevent-native.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_SentinelOne`](../asim/im-registryevent-sentinelone.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_TrendMicroVisionOne`](../asim/im-registryevent-trendmicrovisionone.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_RegistryEvent_VMwareCarbonBlackCloud`](../asim/im-registryevent-vmwarecarbonblackcloud.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.md) | Collection | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessCreateTrendMicroVisionOne`](../asim/im-processcreatetrendmicrovisionone.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessCreate_LinuxSysmon`](../asim/im-processcreate-linuxsysmon.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessCreate_MD4IoT`](../asim/im-processcreate-md4iot.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessCreate_MicrosoftSecurityEvents`](../asim/im-processcreate-microsoftsecurityevents.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessCreate_MicrosoftSysmon`](../asim/im-processcreate-microsoftsysmon.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessCreate_MicrosoftWindowsEvents`](../asim/im-processcreate-microsoftwindowsevents.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessCreate_SentinelOne`](../asim/im-processcreate-sentinelone.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessCreate_VMwareCarbonBlackCloud`](../asim/im-processcreate-vmwarecarbonblackcloud.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessEvent_Microsoft365D`](../asim/im-processevent-microsoft365d.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_ProcessEvent_Native`](../asim/im-processevent-native.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Retrospective hunt for Forest Blizzard IP IOCs](../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.md) | CommandAndControl | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md) | Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 
@@ -136,13 +214,7 @@ This solution includes **10 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

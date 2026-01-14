@@ -15,18 +15,13 @@ This query identifies users who created new package feed to Azure DevOps pipelin
 
 This content item queries data from the following tables:
 
+- [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md)
+- [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Hunting Queries](hunting-queries.md)
-- [← Back to AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Hunting Queries](hunting-queries.md) · [Back to AzureDevOpsAuditing](../solutions/azuredevopsauditing.md)
 

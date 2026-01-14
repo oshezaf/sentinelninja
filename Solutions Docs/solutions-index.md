@@ -6,29 +6,21 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 > **Note:** This index covers connectors managed through Solutions in the Azure-Sentinel GitHub repository. A small number of connectors (such as Microsoft Dataverse, Microsoft Power Automate, Microsoft Power Platform Admin, and SAP connectors) are not managed via Solutions and are therefore not included here.
 
-**Browse by:**
-
-- [Solutions](solutions-index.md) (this page)
-- [Connectors](connectors-index.md)
-- [Tables](tables-index.md)
-- [Content](content/content-index.md)
-- [ASIM Parsers](asim/asim-index.md)
-- [ASIM Products](asim/asim-products-index.md)
+**Browse:** [🏠](readme.md) · **Solutions** · [Connectors](connectors-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md)
 
 ---
 
-## Overview
+## Statistics
 
-This documentation covers **484 solutions**, of which **305** include data connectors, providing access to **382 unique connectors** and **781 tables**.
+| Metric | Total | Published | Unpublished |
+|:-------|------:|----------:|------------:|
+| Solutions | 484 | 402 | 82 |
+| With Connectors | 305 | 250 | 55 |
+| With Content | 385 | 329 | 56 |
+| Unique Connectors | 382 | | |
+| Tables Used | 781 | | |
 
-## How This Documentation is Organized
-
-Each solution has its own page containing:
-
-- **Solution Overview**: Publisher, support information, and categories
-- **Connectors**: List of all connectors in the solution
-- **Tables**: Data tables ingested by the connectors
-- **GitHub Links**: Direct links to connector definition files
+---
 
 ## Solutions Index
 
@@ -37,6 +29,8 @@ Browse solutions alphabetically:
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+
+> <img src="images/asim-logo-small.png" alt="ASIM" height="16"> **Uses ASIM:** This icon indicates the solution uses ASIM parsers for normalized data.
 
 ### #
 
@@ -123,7 +117,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BHE_Logo.svg" alt="" width="32" height="32"> | [BloodHound Enterprise](solutions/bloodhound-enterprise.md) ⚠️ | 2023-05-04 | SpecterOps |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Box/Workbooks/Images/Logo/box.svg" alt="" width="32" height="32"> | [Box](solutions/box.md) | 2022-05-20 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Broadcom SymantecDLP](solutions/broadcom-symantecdlp.md) | 2022-05-02 | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md) | 2023-08-04 | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Business Email Compromise - Financial Fraud](solutions/business-email-compromise-financial-fraud.md) | 2023-08-04 | Microsoft Corporation |
 
 ### C
 
@@ -201,7 +195,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [DORA Compliance](solutions/dora-compliance.md) ⚠️ | 2025-10-08 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Darktrace.svg" alt="" width="32" height="32"> | [Darktrace](solutions/darktrace.md) | 2022-05-02 | Darktrace |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OrangeCyberdefenseLogo.svg" alt="" width="32" height="32"> | [Datalake2Sentinel](solutions/datalake2sentinel.md) | 2024-01-15 | Orange Cyberdefense |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DataminrPulse.svg" alt="" width="32" height="32"> | [Dataminr Pulse](solutions/dataminr-pulse.md) | 2023-04-12 | Dataminr Support |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DataminrPulse.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Dataminr Pulse](solutions/dataminr-pulse.md) | 2023-04-12 | Dataminr Support |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/datawiza_logo.svg" alt="" width="32" height="32"> | [Datawiza](solutions/datawiza.md) ⚠️ | 2025-11-10 | Datawiza Technology Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DelineaLogo.svg" alt="" width="32" height="32"> | [Delinea Secret Server](solutions/delinea-secret-server.md) | 2022-05-06 | Delinea |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Dev 0270 Detection and Hunting](solutions/dev-0270-detection-and-hunting.md) | 2022-11-29 | Microsoft Corporation |
@@ -354,7 +348,7 @@ Browse solutions alphabetically:
 | | Solution | First Published | Publisher |
 |:--:|----------|----------------|----------|
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/LastPass.svg" alt="" width="32" height="32"> | [Lastpass Enterprise Activity Monitoring](solutions/lastpass-enterprise-activity-monitoring.md) | 2021-10-20 | The Collective Consulting |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Legacy IOC based Threat Protection](solutions/legacy-ioc-based-threat-protection.md) | 2022-12-19 | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Legacy IOC based Threat Protection](solutions/legacy-ioc-based-threat-protection.md) | 2022-12-19 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lookout/Workbooks/Images/Logo/lookout.svg" alt="" width="32" height="32"> | [Lookout](solutions/lookout.md) | 2021-10-18 | Lookout |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Lookout Cloud Security Platform for Microsoft Sentinel](solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) ⚠️ | 2023-02-17 | Lookout |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="" width="32" height="32"> | [Lumen Defender Threat Feed](solutions/lumen-defender-threat-feed.md) ⚠️ | 2025-09-12 | Lumen Technologies, Inc. |
@@ -622,7 +616,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/WatchGuard_Logo-SVG_Format.svg" alt="" width="32" height="32"> | [Watchguard Firebox](solutions/watchguard-firebox.md) | 2022-05-06 | WatchGuard |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Watchlists Utilities](solutions/watchlists-utilities.md) | 2022-05-23 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Web Session Essentials](solutions/web-session-essentials.md) | 2023-06-29 | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Web Shells Threat Protection](solutions/web-shells-threat-protection.md) | 2022-05-22 | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Web Shells Threat Protection](solutions/web-shells-threat-protection.md) | 2022-05-22 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Windows Firewall](solutions/windows-firewall.md) | 2022-05-02 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Windows Forwarded Events](solutions/windows-forwarded-events.md) | 2022-05-02 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Windows Security Events](solutions/windows-security-events.md) | 2022-05-23 | Microsoft Corporation |
@@ -646,4 +640,8 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [ZoomReports](solutions/zoomreports.md) | 2022-05-23 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZscalerLogo.svg" alt="" width="32" height="32"> | [Zscaler Internet Access](solutions/zscaler-internet-access.md) | 2022-05-25 | Zscaler |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZscalerLogo.svg" alt="" width="32" height="32"> | [Zscaler Private Access (ZPA)](solutions/zscaler-private-access-zpa.md) | 2022-01-31 | Microsoft Corporation |
+
+---
+
+**Browse:** [🏠](readme.md) · **Solutions** · [Connectors](connectors-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md)
 

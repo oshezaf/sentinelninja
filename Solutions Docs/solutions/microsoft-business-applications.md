@@ -64,7 +64,7 @@ This solution uses **14 table(s)**:
 
 ### Internal Tables
 
-The following **2 table(s)** are used internally by this solution's playbooks:
+The following **2 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -94,19 +94,19 @@ This solution includes **72 content item(s)**:
 | [Dataverse - Bulk record ownership re-assignment or sharing](../content/microsoft-business-applications-dataverse-bulk-record-ownership-re-assignment-or-sharing-6e480329-84bc-409a-b97b-22e8102af3ca-962cb9c9.md) | Medium | PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Executable uploaded to SharePoint document management site](../content/microsoft-business-applications-dataverse-executable-uploaded-to-sharepoint-document-management-site-ba5e608f-7879-4927-8b0d-a9948b4fe6f3-a46cc5a8.md) | Low | Execution, Persistence | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Dataverse - Export activity from terminated or notified employee](../content/microsoft-business-applications-dataverse-export-activity-from-terminated-or-notified-employee-0881b209-62c9-4b15-9f9a-e0c1d1b1eb7b-d925cc5f.md) | Medium | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
-| [Dataverse - Guest user exfiltration following Power Platform defense impairment](../content/microsoft-business-applications-dataverse-guest-user-exfiltration-following-power-platform-defense-impai-39efbf4b-b347-4cc7-895e-99a868bf29ea-f29caf4d.md) | High | DefenseEvasion, Exfiltration | [`AuditLogs`](../tables/auditlogs.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |
+| [Dataverse - Guest user exfiltration following Power Platform defense impairment](../content/microsoft-business-applications-dataverse-guest-user-exfiltration-following-power-platform-defense-impai-39efbf4b-b347-4cc7-895e-99a868bf29ea-f29caf4d.md) | High | DefenseEvasion, Exfiltration | [`AuditLogs`](../tables/auditlogs.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [Dataverse - Hierarchy security manipulation](../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.md) | Medium | PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`Update`](../tables/update.md) |
 | [Dataverse - Honeypot instance activity](../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.md) | Medium | Discovery, Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Login by a sensitive privileged user](../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.md) | High | InitialAccess, CredentialAccess, PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
-| [Dataverse - Login from IP in the block list](../content/microsoft-business-applications-dataverse-login-from-ip-in-the-block-list-666fef96-1bb8-4abf-ad72-e5cb49561381-2bf699c4.md) | High | InitialAccess | - |
+| [Dataverse - Login from IP in the block list](../content/microsoft-business-applications-dataverse-login-from-ip-in-the-block-list-666fef96-1bb8-4abf-ad72-e5cb49561381-2bf699c4.md) | High | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Login from IP not in the allow list](../content/microsoft-business-applications-dataverse-login-from-ip-not-in-the-allow-list-81c693fe-f6c4-4352-bc10-3526f6e22637-6a1a9333.md) | High | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md) |
-| [Dataverse - Malware found in SharePoint document management site](../content/microsoft-business-applications-dataverse-malware-found-in-sharepoint-document-management-site-2e3878bb-d519-43aa-9992-ea069df099e4-82c1f402.md) | Medium | Execution | [`OfficeActivity`](../tables/officeactivity.md) |
+| [Dataverse - Malware found in SharePoint document management site](../content/microsoft-business-applications-dataverse-malware-found-in-sharepoint-document-management-site-2e3878bb-d519-43aa-9992-ea069df099e4-82c1f402.md) | Medium | Execution | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`OfficeActivity`](../tables/officeactivity.md) |
 | [Dataverse - Mass deletion of records](../content/microsoft-business-applications-dataverse-mass-deletion-of-records-716cf6d4-97ad-407b-923e-6790083acb58-2ea9461e.md) | Medium | Impact | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Mass download from SharePoint document management](../content/microsoft-business-applications-dataverse-mass-download-from-sharepoint-document-management-95e02f1b-5886-4043-8f0e-a42e6e23330f-26e23cc8.md) | Low | Exfiltration | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Dataverse - Mass export of records to Excel](../content/microsoft-business-applications-dataverse-mass-export-of-records-to-excel-57000f0d-ff5d-4166-94b6-aa5fb62b16ec-17a490af.md) | Low | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Mass record updates](../content/microsoft-business-applications-dataverse-mass-record-updates-df577f0f-1d8a-4420-9057-a07f0edb15c8-7ce89bac.md) | Medium | Impact | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - New Dataverse application user activity type](../content/microsoft-business-applications-dataverse-new-dataverse-application-user-activity-type-5c768e7d-7e5e-4d57-80d4-3f50c96fbf70-4573a9e7.md) | Medium | CredentialAccess, Execution, PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
-| [Dataverse - New non-interactive identity granted access](../content/microsoft-business-applications-dataverse-new-non-interactive-identity-granted-access-682e230c-e5da-4085-8666-701d1f1be7de-981cd709.md) | Informational | Persistence, LateralMovement, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md)<br>[`DataverseActivity`](../tables/dataverseactivity.md) |
+| [Dataverse - New non-interactive identity granted access](../content/microsoft-business-applications-dataverse-new-non-interactive-identity-granted-access-682e230c-e5da-4085-8666-701d1f1be7de-981cd709.md) | Informational | Persistence, LateralMovement, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md)<br>[`DataverseActivity`](../tables/dataverseactivity.md)<br>[`Update`](../tables/update.md) |
 | [Dataverse - New sign-in from an unauthorized domain](../content/microsoft-business-applications-dataverse-new-sign-in-from-an-unauthorized-domain-4c1c9aee-8e44-4bb9-bd53-f3e7d6761282-361ae9c5.md) | Medium | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - New user agent type that was not used before](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-before-34a5d79b-8f9a-420c-aa64-7f4d262ac29a-99e2d75d.md) | Low | InitialAccess, DefenseEvasion | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - New user agent type that was not used with Office 365](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-with-office-365-094b3c0a-1f63-42f7-9535-c8c7b7198328-ba0f47d1.md) | Low | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`OfficeActivity`](../tables/officeactivity.md) |
@@ -174,11 +174,11 @@ This solution includes **72 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DataverseSharePointSites](../content/microsoft-business-applications-dataversesharepointsites-2a51081a-e31d-4a29-9fd5-cf399b0d3cc1-f7114e58.md) | - | - |
-| [MSBizAppsNetworkAddresses](../content/microsoft-business-applications-msbizappsnetworkaddresses-7c9f20e6-1ba1-4c22-90d1-926c8b9749e2-43b2b295.md) | - | - |
-| [MSBizAppsOrgSettings](../content/microsoft-business-applications-msbizappsorgsettings-ead143d3-a23a-4597-afe3-eb43d1f74828-50f03cf4.md) | - | - |
-| [MSBizAppsTerminatedEmployees](../content/microsoft-business-applications-msbizappsterminatedemployees-55052ba8-de53-4921-bb6d-63a4d6c67373-9b7b3908.md) | - | - |
-| [MSBizAppsVIPUsers](../content/microsoft-business-applications-msbizappsvipusers-82deb196-ecdd-4154-9f7f-ff6989cbd08a-b95e1ad6.md) | - | - |
+| [DataverseSharePointSites](../content/microsoft-business-applications-dataversesharepointsites-2a51081a-e31d-4a29-9fd5-cf399b0d3cc1-f7114e58.md) | DataverseSharePointSites | - |
+| [MSBizAppsNetworkAddresses](../content/microsoft-business-applications-msbizappsnetworkaddresses-7c9f20e6-1ba1-4c22-90d1-926c8b9749e2-43b2b295.md) | MSBizAppsNetworkAddresses | - |
+| [MSBizAppsOrgSettings](../content/microsoft-business-applications-msbizappsorgsettings-ead143d3-a23a-4597-afe3-eb43d1f74828-50f03cf4.md) | MSBizAppsOrgSettings | - |
+| [MSBizAppsTerminatedEmployees](../content/microsoft-business-applications-msbizappsterminatedemployees-55052ba8-de53-4921-bb6d-63a4d6c67373-9b7b3908.md) | MSBizAppsTerminatedEmployees | - |
+| [MSBizAppsVIPUsers](../content/microsoft-business-applications-msbizappsvipusers-82deb196-ecdd-4154-9f7f-ff6989cbd08a-b95e1ad6.md) | MSBizAppsVIPUsers | - |
 
 ### Watchlists
 
@@ -197,13 +197,7 @@ This solution includes **72 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

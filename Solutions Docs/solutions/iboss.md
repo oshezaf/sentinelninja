@@ -37,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md), [iboss via AMA](../connectors/ibossama.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] iboss via Legacy Agent](../connectors/iboss.md), [iboss via AMA](../connectors/ibossama.md) | Workbooks |
 
 ## Content Items
 
@@ -52,14 +52,14 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ibossMalwareAndC2](../content/iboss-ibossmalwareandc2-0213a927.md) | - |
-| [ibossWebUsage](../content/iboss-ibosswebusage-5b4fbb25.md) | - |
+| [ibossMalwareAndC2](../content/iboss-ibossmalwareandc2-0213a927.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [ibossWebUsage](../content/iboss-ibosswebusage-5b4fbb25.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ibossUrlEvent](../content/iboss-ibossurlevent-0902cd9b-3b2b-4ad4-a480-e5e960b6a77d-2c14b8b6.md) | - | - |
+| [ibossUrlEvent](../content/iboss-ibossurlevent-0902cd9b-3b2b-4ad4-a480-e5e960b6a77d-2c14b8b6.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 
@@ -73,13 +73,7 @@ This solution includes **3 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

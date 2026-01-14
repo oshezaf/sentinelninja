@@ -4,6 +4,10 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 
 📚 **Learn more:** [ASIM-based domain solutions for Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md)
+
+---
+
 ## Summary
 
 | Metric | Count |
@@ -73,16 +77,16 @@ These are the main entry points that combine all source parsers:
 | [ASimAuditEventAzureActivity](asimauditeventazureactivity.md) | Microsoft Azure | 1 | 0.2 |
 | [ASimAuditEventBarracudaCEF](asimauditeventbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
 | [ASimAuditEventBarracudaWAF](asimauditeventbarracudawaf.md) | Barracuda WAF | 1 | 0.2.1 |
-| [ASimAuditEventCiscoISE](asimauditeventciscoise.md) | Cisco ISE | 0 | 0.1 |
+| [ASimAuditEventCiscoISE](asimauditeventciscoise.md) | Cisco ISE | 1 | 0.1 |
 | [ASimAuditEventCiscoMeraki](asimauditeventciscomeraki.md) | Cisco Meraki | 2 | 0.2.1 |
 | [ASimAuditEventCiscoMerakiSyslog](asimauditeventciscomerakisyslog.md) | Cisco Meraki | 2 | 0.2.1 |
 | [ASimAuditEventCrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
 | [ASimAuditEventIllumioSaaSCore](asimauditeventillumiosaascore.md) | Illumio Core | 1 | 0.2.1 |
-| [ASimAuditEventInfobloxBloxOne](asimauditeventinfobloxbloxone.md) | Infoblox BloxOne | 0 | 0.1.0 |
-| [ASimAuditEventMicrosoftEvent](asimauditeventmicrosoftevent.md) | Microsoft Windows | 4 | 0.2.1 |
+| [ASimAuditEventInfobloxBloxOne](asimauditeventinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
+| [ASimAuditEventMicrosoftEvent](asimauditeventmicrosoftevent.md) | Microsoft Windows | 3 | 0.2.1 |
 | [ASimAuditEventMicrosoftExchangeAdmin365](asimauditeventmicrosoftexchangeadmin365.md) | Microsoft SharePoint | 1 | 0.2 |
-| [ASimAuditEventMicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) | Microsoft Windows | 5 | 0.2.1 |
-| [ASimAuditEventMicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) | Microsoft Windows | 5 | 0.2.1 |
+| [ASimAuditEventMicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) | Microsoft Windows | 4 | 0.2.1 |
+| [ASimAuditEventMicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) | Microsoft Windows | 4 | 0.2.1 |
 | [ASimAuditEventNative](asimauditeventnative.md) | Native | 1 | 0.1.0 |
 | [ASimAuditEventSentinelOne](asimauditeventsentinelone.md) | SentinelOne | 3 | 0.1.0 |
 | [ASimAuditEventVMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 3 | 0.2.0 |
@@ -113,11 +117,11 @@ These are the main entry points that combine all source parsers:
 | [ASimAuthenticationAWSCloudTrail](asimauthenticationawscloudtrail.md) | AWS | 1 | 0.2.1 |
 | [ASimAuthenticationBarracudaWAF](asimauthenticationbarracudawaf.md) | Barracuda WAF | 2 | 0.1 |
 | [ASimAuthenticationCiscoASA](asimauthenticationciscoasa.md) | Cisco Adaptive Security Appliance (ASA) | 2 | 0.1.1 |
-| [ASimAuthenticationCiscoISE](asimauthenticationciscoise.md) | Cisco ISE | 0 | 0.1.0 |
+| [ASimAuthenticationCiscoISE](asimauthenticationciscoise.md) | Cisco ISE | 1 | 0.1.0 |
 | [ASimAuthenticationCiscoMeraki](asimauthenticationciscomeraki.md) | Cisco Meraki | 1 | 0.2.1 |
 | [ASimAuthenticationCiscoMerakiSyslog](asimauthenticationciscomerakisyslog.md) | Cisco Meraki | 1 | 0.2.1 |
 | [ASimAuthenticationCrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
-| [ASimAuthenticationGoogleWorkspace](asimauthenticationgoogleworkspace.md) | Google Workspace | 0 | 0.1.0 |
+| [ASimAuthenticationGoogleWorkspace](asimauthenticationgoogleworkspace.md) | Google Workspace | 1 | 0.1.0 |
 | [ASimAuthenticationIllumioSaaSCore](asimauthenticationillumiosaascore.md) | Illumio | 1 | 0.3.0 |
 | [ASimAuthenticationM365Defender](asimauthenticationm365defender.md) | M365 Defender for EndPoint | 1 | 0.1.3 |
 | [ASimAuthenticationMD4IoT](asimauthenticationmd4iot.md) | Microsoft Defender for IoT | 1 | 0.1.2 |
@@ -155,7 +159,7 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimDhcpEventInfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | Infoblox BloxOne | 0 | 0.1.0 |
+| [ASimDhcpEventInfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
 | [ASimDhcpEventNative](asimdhcpeventnative.md) | Native | 1 | 0.1.0 |
 
 ## Dns
@@ -182,7 +186,7 @@ These are the main entry points that combine all source parsers:
 | [ASimDnsCorelightZeek](asimdnscorelightzeek.md) | Corelight Zeek | 1 | 0.5 |
 | [ASimDnsFortinetFortiGate](asimdnsfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.1.2 |
 | [ASimDnsGcp](asimdnsgcp.md) | GCP Cloud DNS | 1 | 0.4 |
-| [ASimDnsInfobloxBloxOne](asimdnsinfobloxbloxone.md) | Infoblox BloxOne | 0 | 0.1.0 |
+| [ASimDnsInfobloxBloxOne](asimdnsinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
 | [ASimDnsInfobloxNIOS](asimdnsinfobloxnios.md) | Infoblox NIOS | 1 | 0.6.1 |
 | [ASimDnsMicrosoftNXlog](asimdnsmicrosoftnxlog.md) | MS DNS Events | 1 | 0.5.0 |
 | [ASimDnsMicrosoftOMS](asimdnsmicrosoftoms.md) | MS DNS Events | 1 | 0.4 |
@@ -216,12 +220,12 @@ These are the main entry points that combine all source parsers:
 | [ASimFileEventAzureFileStorage](asimfileeventazurefilestorage.md) | Microsoft Azure File Storage | 1 | 0.1.1 |
 | [ASimFileEventAzureQueueStorage](asimfileeventazurequeuestorage.md) | Microsoft Azure Queue Storage | 1 | 0.1.1 |
 | [ASimFileEventAzureTableStorage](asimfileeventazuretablestorage.md) | Microsoft Azure Table Storage | 1 | 0.1.1 |
-| [ASimFileEventGoogleWorkspace](asimfileeventgoogleworkspace.md) | Google Workspace | 0 | 0.1.0 |
+| [ASimFileEventGoogleWorkspace](asimfileeventgoogleworkspace.md) | Google Workspace | 1 | 0.1.0 |
 | [ASimFileEventLinuxSysmonFileCreated](asimfileeventlinuxsysmonfilecreated.md) | Microsoft Sysmon for Linux | 1 | 0.2.1 |
 | [ASimFileEventLinuxSysmonFileDeleted](asimfileeventlinuxsysmonfiledeleted.md) | Microsoft Sysmon for Linux | 1 | 0.2.1 |
 | [ASimFileEventMicrosoft365D](asimfileeventmicrosoft365d.md) | Microsoft 365 Defender for EndPoint | 1 | 0.2.1 |
 | [ASimFileEventMicrosoftSecurityEvents](asimfileeventmicrosoftsecurityevents.md) | Microsoft Windows Events | 1 | 0.2.0 |
-| [ASimFileEventMicrosoftSharePoint](asimfileeventmicrosoftsharepoint.md) | Microsoft SharePoint | 1 | 0.3.1 |
+| [ASimFileEventMicrosoftSharePoint](asimfileeventmicrosoftsharepoint.md) | Microsoft SharePoint | 2 | 0.3.1 |
 | [ASimFileEventMicrosoftSysmon](asimfileeventmicrosoftsysmon.md) | Windows Sysmon | 1 | 0.5.1 |
 | [ASimFileEventMicrosoftSysmonWindowsEvent](asimfileeventmicrosoftsysmonwindowsevent.md) | Windows Sysmon | 1 | 0.4.1 |
 | [ASimFileEventMicrosoftWindowsEvents](asimfileeventmicrosoftwindowsevents.md) | Microsoft Windows Events | 1 | 0.2.0 |
@@ -251,7 +255,7 @@ These are the main entry points that combine all source parsers:
 | [ASimNetworkSessionAWSVPC](asimnetworksessionawsvpc.md) | AWS VPC | 1 | 0.3 |
 | [ASimNetworkSessionAppGateSDP](asimnetworksessionappgatesdp.md) | AppGate SDP | 1 | 0.2 |
 | [ASimNetworkSessionAzureFirewall](asimnetworksessionazurefirewall.md) | Azure Firewall | 7 | 0.2.0 |
-| [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md) | Azure NSG flows | 1 | 0.1.1 |
+| [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md) | Azure NSG flows | 2 | 0.1.1 |
 | [ASimNetworkSessionBarracudaCEF](asimnetworksessionbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
 | [ASimNetworkSessionBarracudaWAF](asimnetworksessionbarracudawaf.md) | Barracuda WAF | 1 | 0.2.1 |
 | [ASimNetworkSessionCheckPointFirewall](asimnetworksessioncheckpointfirewall.md) | CheckPointFirewall | 1 | 1.2.0 |
@@ -261,7 +265,7 @@ These are the main entry points that combine all source parsers:
 | [ASimNetworkSessionCiscoMeraki](asimnetworksessionciscomeraki.md) | Cisco Meraki | 2 | 1.2.2 |
 | [ASimNetworkSessionCiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md) | Cisco Meraki | 2 | 1.2.2 |
 | [ASimNetworkSessionCorelightZeek](asimnetworksessioncorelightzeek.md) | Corelight Zeek | 1 | 0.2 |
-| [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
+| [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 2 | 0.1.0 |
 | [ASimNetworkSessionForcePointFirewall](asimnetworksessionforcepointfirewall.md) | ForcePointFirewall | 1 | 0.1 |
 | [ASimNetworkSessionFortinetFortiGate](asimnetworksessionfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.6.0 |
 | [ASimNetworkSessionIllumioSaaSCore](asimnetworksessionillumiosaascore.md) | Illumio SaaS Core | 1 | 0.1.0 |
@@ -269,7 +273,7 @@ These are the main entry points that combine all source parsers:
 | [ASimNetworkSessionMD4IoTAgent](asimnetworksessionmd4iotagent.md) | Microsoft Defender for IoT | 1 | 0.2.1 |
 | [ASimNetworkSessionMD4IoTSensor](asimnetworksessionmd4iotsensor.md) | Microsoft Defender for IoT | 0 | 0.1 |
 | [ASimNetworkSessionMicrosoft365Defender](asimnetworksessionmicrosoft365defender.md) | M365 Defender for Endpoint | 1 | 0.4 |
-| [ASimNetworkSessionMicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md) | Windows Firewall | 1 | 0.5.0 |
+| [ASimNetworkSessionMicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md) | Windows Firewall | 2 | 0.5.0 |
 | [ASimNetworkSessionMicrosoftSysmon](asimnetworksessionmicrosoftsysmon.md) | Windows Sysmon | 1 | 0.2.0 |
 | [ASimNetworkSessionMicrosoftSysmonWindowsEvent](asimnetworksessionmicrosoftsysmonwindowsevent.md) | Windows Sysmon | 1 | 0.2.1 |
 | [ASimNetworkSessionMicrosoftWindowsEventFirewall](asimnetworksessionmicrosoftwindowseventfirewall.md) | Windows Firewall | 1 | 0.5.0 |
@@ -374,7 +378,7 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimUserManagementCiscoISE](asimusermanagementciscoise.md) | Cisco ISE | 0 | 0.1.2 |
+| [ASimUserManagementCiscoISE](asimusermanagementciscoise.md) | Cisco ISE | 1 | 0.1.2 |
 | [ASimUserManagementLinuxAuthpriv](asimusermanagementlinuxauthpriv.md) | Microsoft | 1 | 0.1.1 |
 | [ASimUserManagementMicrosoftSecurityEvent](asimusermanagementmicrosoftsecurityevent.md) | Microsoft Security Event | 1 | 0.2.0 |
 | [ASimUserManagementMicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md) | Microsoft Windows Event | 1 | 0.2.1 |
@@ -420,12 +424,5 @@ These are the main entry points that combine all source parsers:
 
 ---
 
-**Browse by:**
-
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md) (this page)
-- [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md)
 

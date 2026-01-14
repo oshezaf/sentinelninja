@@ -61,20 +61,14 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TenableIOAssets](../content/tenableio-tenableioassets-6c5ef8f1-8bb3-4444-921d-2d9ac007f469-b2865919.md) ⚠️ | - | - |
-| [TenableIOVulnerabilities](../content/tenableio-tenableiovulnerabilities-4099e6de-30d4-4d7a-85df-caafe8f858fe-eb4323cc.md) ⚠️ | - | - |
+| [TenableIOAssets](../content/tenableio-tenableioassets-6c5ef8f1-8bb3-4444-921d-2d9ac007f469-b2865919.md) ⚠️ | - | [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) *(read)* |
+| [TenableIOVulnerabilities](../content/tenableio-tenableiovulnerabilities-4099e6de-30d4-4d7a-85df-caafe8f858fe-eb4323cc.md) ⚠️ | - | [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

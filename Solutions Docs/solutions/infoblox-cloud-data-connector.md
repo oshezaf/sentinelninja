@@ -39,7 +39,7 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md), [[Deprecated] Infoblox Cloud Data Connector via Legacy Agent](../connectors/infobloxclouddataconnector.md) | Analytics |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md), [[Deprecated] Infoblox Cloud Data Connector via Legacy Agent](../connectors/infobloxclouddataconnector.md) | Analytics, Workbooks |
 | [`Syslog`](../tables/syslog.md) | - | Analytics |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 | [`UPDATE`](../tables/update.md) | - | Workbooks |
@@ -59,20 +59,20 @@ This solution includes **21 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Infoblox - Data Exfiltration Attack](../content/infoblox-cloud-data-connector-infoblox-data-exfiltration-attack-8db2b374-0337-49bd-94c9-cfbf8e5d83ad-0a635c49.md) | Medium | Impact | - |
-| [Infoblox - High Threat Level Query Not Blocked Detected](../content/infoblox-cloud-data-connector-infoblox-high-threat-level-query-not-blocked-detected-dc7af829-d716-4774-9d6f-03d9aa7c27a4-fa962d5e.md) | Medium | Impact | - |
-| [Infoblox - Many High Threat Level Queries From Single Host Detected](../content/infoblox-cloud-data-connector-infoblox-many-high-threat-level-queries-from-single-host-detected-3822b794-fa89-4420-aad6-0e1a2307f419-c7bc74ac.md) | Medium | Impact | - |
-| [Infoblox - Many High Threat Level Single Query Detected](../content/infoblox-cloud-data-connector-infoblox-many-high-threat-level-single-query-detected-99278700-79ca-4b0f-b416-bf57ec699e1a-857f6b94.md) | Medium | Impact | - |
-| [Infoblox - Many NXDOMAIN DNS Responses Detected](../content/infoblox-cloud-data-connector-infoblox-many-nxdomain-dns-responses-detected-b2f34315-9065-488e-88d0-a171d2b0da8e-1198d7a0.md) | Medium | Impact | - |
+| [Infoblox - Data Exfiltration Attack](../content/infoblox-cloud-data-connector-infoblox-data-exfiltration-attack-8db2b374-0337-49bd-94c9-cfbf8e5d83ad-0a635c49.md) | Medium | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Infoblox - High Threat Level Query Not Blocked Detected](../content/infoblox-cloud-data-connector-infoblox-high-threat-level-query-not-blocked-detected-dc7af829-d716-4774-9d6f-03d9aa7c27a4-fa962d5e.md) | Medium | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Infoblox - Many High Threat Level Queries From Single Host Detected](../content/infoblox-cloud-data-connector-infoblox-many-high-threat-level-queries-from-single-host-detected-3822b794-fa89-4420-aad6-0e1a2307f419-c7bc74ac.md) | Medium | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Infoblox - Many High Threat Level Single Query Detected](../content/infoblox-cloud-data-connector-infoblox-many-high-threat-level-single-query-detected-99278700-79ca-4b0f-b416-bf57ec699e1a-857f6b94.md) | Medium | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Infoblox - Many NXDOMAIN DNS Responses Detected](../content/infoblox-cloud-data-connector-infoblox-many-nxdomain-dns-responses-detected-b2f34315-9065-488e-88d0-a171d2b0da8e-1198d7a0.md) | Medium | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 | [Infoblox - TI - CommonSecurityLog Match Found - MalwareC2](../content/infoblox-cloud-data-connector-infoblox-ti-commonsecuritylog-match-found-malwarec2-5b0864a9-4577-4087-b9fa-de3e14a8a999-339e0057.md) | Medium | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [Infoblox - TI - InfobloxCDC Match Found - Lookalike Domains](../content/infoblox-cloud-data-connector-infoblox-ti-infobloxcdc-match-found-lookalike-domains-568730be-b39d-45e3-a392-941e00837d52-07dc8d1e.md) | Medium | Impact | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [Infoblox - TI - InfobloxCDC Match Found - Lookalike Domains](../content/infoblox-cloud-data-connector-infoblox-ti-infobloxcdc-match-found-lookalike-domains-568730be-b39d-45e3-a392-941e00837d52-07dc8d1e.md) | Medium | Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 | [Infoblox - TI - Syslog Match Found - URL](../content/infoblox-cloud-data-connector-infoblox-ti-syslog-match-found-url-28ee3c2b-eb4b-44de-a71e-e462843fea72-5ddcadfd.md) | Medium | Impact | [`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InfobloxCDCB1TDWorkbook](../content/infoblox-cloud-data-connector-infobloxcdcb1tdworkbook-a058ef8d.md) | [`UPDATE`](../tables/update.md) |
+| [InfobloxCDCB1TDWorkbook](../content/infoblox-cloud-data-connector-infobloxcdcb1tdworkbook-a058ef8d.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`UPDATE`](../tables/update.md) |
 
 ### Playbooks
 
@@ -94,7 +94,7 @@ This solution includes **21 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [InfobloxCDC](../content/infoblox-cloud-data-connector-infobloxcdc-3815f65b-5c24-49ea-ac06-c24b4223a5b6-dbe6720d.md) | - | - |
+| [InfobloxCDC](../content/infoblox-cloud-data-connector-infobloxcdc-3815f65b-5c24-49ea-ac06-c24b4223a5b6-dbe6720d.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 
@@ -111,13 +111,7 @@ This solution includes **21 content item(s)**:
 
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Solutions Index](../solutions-index.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Solutions Index](../solutions-index.md)
 

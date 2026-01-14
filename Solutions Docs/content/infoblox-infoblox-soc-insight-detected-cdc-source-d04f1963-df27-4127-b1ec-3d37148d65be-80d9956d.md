@@ -15,16 +15,15 @@ Infoblox SOC Insight detected in logs sourced via Infoblox CDC. Customize schedu
 | **Required Connectors** | [InfobloxSOCInsightsDataConnector_Legacy](../connectors/infobloxsocinsightsdataconnector-legacy.md), [InfobloxSOCInsightsDataConnector_AMA](../connectors/infobloxsocinsightsdataconnector-ama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Analytic%20Rules/Infoblox-SOCInsight-Detected-CDCSource.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+
 ---
 
-**Browse:**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
-- [← Back to Analytic Rules](analytic-rules.md)
-- [← Back to Infoblox](../solutions/infoblox.md)
-- [Solutions](../solutions-index.md)
-- [Connectors](../connectors-index.md)
-- [Tables](../tables-index.md)
-- [Content](../content/content-index.md)
-- [ASIM Parsers](../asim/asim-index.md)
-- [ASIM Products](../asim/asim-products-index.md)
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Infoblox](../solutions/infoblox.md)
 
