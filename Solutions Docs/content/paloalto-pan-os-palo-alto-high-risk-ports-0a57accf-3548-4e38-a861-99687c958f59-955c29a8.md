@@ -1,5 +1,11 @@
 # Palo Alto - high-risk ports
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies network connections whose ports are frequent targets of attacks and should not cross network boundaries or reach untrusted public networks. Consider updating the firewall policies to block the connections.
 
 | Attribute | Value |

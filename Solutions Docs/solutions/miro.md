@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Miro.svg" alt="Miro Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Miro](https://miro.com/) solution for Microsoft Sentinel provides the capability to ingest audit logs and content activity logs from [Miro REST APIs](https://developers.miro.com/reference) into Microsoft Sentinel using the Codeless Connector Framework (CCF). This connector enables organizations to monitor and analyze activities within their Miro workspaces. For detailed instructions, refer to the [documentation](https://help.miro.com/hc/en-us/articles/31325908249362).
 
 **Underlying Microsoft technology used:**

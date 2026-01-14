@@ -1,5 +1,11 @@
 # Azure DevOps - New Agent Pool Created
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Compromised agent pools in pipelines can allow build process breaches. While creating agent pools isn't inherently malicious, their infrequent creation makes them notable for Azure DevOps monitoring.
 
 | Attribute | Value |

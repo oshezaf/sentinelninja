@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="Cyfirma Cyber Intelligence Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The CYFIRMA Cyber Intelligence solution integrates with Microsoft Sentinel to provide actionable intelligence on IOCs, threat actors, malicious campaigns, and malware. This integration enables security teams to detect, analyze, and respond to emerging threats by correlating external threat data with internal telemetry. By ingesting enriched threat intelligence into Sentinel, organizations gain visibility into malicious activity, track threat actor tactics, and automate defense mechanisms to mitigate risks proactively.
 
 ## Solution Information

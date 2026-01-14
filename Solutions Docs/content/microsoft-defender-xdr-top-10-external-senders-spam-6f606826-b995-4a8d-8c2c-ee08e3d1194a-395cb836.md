@@ -1,5 +1,11 @@
 # Top 10 External Senders (Spam)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies the top 10 external sender addresses delivering inbound emails classified as spam. To exclude your own organization's domains (including subdomains), add a filter after the spam filter, e.g.:   | where SenderFromAddress !contains ".yourdomain.com" (Replace "yourdomain.com" with your actual domain.) Based on Defender for Office 365 workbook: https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/part-2-build-custom-email-security-reports-and-dashboards-with-workbook
 
 | Attribute | Value |

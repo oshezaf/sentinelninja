@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Google%20Apigee/logo/Google-Cloud-Branding.png" alt="Google Apigee Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Google ApigeeX](https://cloud.google.com/apigee/docs) solution provides the capability to ingest ApigeeX audit logs into Microsoft Sentinel using the GCP Logging API or PubSub architecture. Refer to [GCP Logging API documentation](https://cloud.google.com/logging/docs/reference/v2/rest) for more information on the Azure Function connector and the [Microsoft Sentinel documentation](https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs) for the basics on PubSub based ingestion.
 
 **Underlying Microsoft Technologies used:**

@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Nylon Typhoon Command Line Activity November 2021
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query hunts for Nylon Typhoon-related activity, specifically data collection and staging. It looks for use of tools like xcopy and renamed archiving tools on hosts with observed signatures.
 
 | Attribute | Value |

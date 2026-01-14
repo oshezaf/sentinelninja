@@ -1,5 +1,11 @@
 # VMware SD-WAN Edge - All Cloud Security Service Tunnels DOWN
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This analytics rule collects events where an SD-WAN Edge reports that all Cloud Security Service (CSS) tunnels are down. Losing connectivity to a Secure Service Edge (SSE) service can impact security capabilities.
 
 | Attribute | Value |

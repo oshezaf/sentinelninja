@@ -1,5 +1,11 @@
 # Unusual Volume of file deletion by users
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query looks for users performing file deletion activities. Spikes in file deletion observed from risky sign-in sessions are flagged here.
 
 | Attribute | Value |

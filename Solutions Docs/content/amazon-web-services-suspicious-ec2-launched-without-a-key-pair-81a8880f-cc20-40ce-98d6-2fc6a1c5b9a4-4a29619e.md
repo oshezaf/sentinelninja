@@ -1,5 +1,11 @@
 # Suspicious EC2 launched without a key pair
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 An attacker with limited permissions, or a sophisticated attacker disguising his activity, may have launched an EC2 instance without a key pair, allowing him to execute code on the machine using the UserData attribute (for example, by executing a reverse shell).
 
 | Attribute | Value |

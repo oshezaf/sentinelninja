@@ -1,5 +1,11 @@
 # Cyble Vision Alerts SSL Certificate Expiry
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Generates Microsoft Sentinel incidents for SSL certificates nearing expiry as detected by Cyble. These alerts help identify certificate hygiene risks that may lead to service disruption or security issues. Severity is normalized using MappedSeverity for downstream automation.
 
 | Attribute | Value |

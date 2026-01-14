@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/doppel.svg" alt="Doppel Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Doppel Integration for Microsoft Sentinel streamlines the ingestion of Doppel security events and alerts through a custom data connector, converting raw event logs into a compatible format for use in Workbooks. This enhances digital risk visibility by enabling users to monitor threats, analyze alerts by category, and gain actionable insights.
 
 

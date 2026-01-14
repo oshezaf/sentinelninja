@@ -1,5 +1,11 @@
 # Guest accounts added in Entra ID Groups other than the ones specified
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Guest Accounts are added in the Organization Tenants to perform various tasks i.e projects execution, support etc.. This detection notifies when guest users are added to Microsoft Entra ID Groups other than the ones specified and poses a risk to gain access to sensitive apps or data.
 
 | Attribute | Value |

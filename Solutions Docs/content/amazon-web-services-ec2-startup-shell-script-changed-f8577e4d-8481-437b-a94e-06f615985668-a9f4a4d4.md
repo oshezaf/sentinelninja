@@ -1,5 +1,11 @@
 # EC2 Startup Shell Script Changed
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects changes to the EC2 startup script. The shell script will be executed as root/SYSTEM every time the specific instances are booted up. ref : https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/ec2__startup_shell_script/main.py
 
 | Attribute | Value |

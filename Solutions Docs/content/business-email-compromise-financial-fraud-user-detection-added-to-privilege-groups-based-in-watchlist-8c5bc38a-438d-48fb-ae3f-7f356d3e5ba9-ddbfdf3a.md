@@ -1,5 +1,11 @@
 # User detection added to privilege groups based in Watchlist
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Based on a Watchlist Detects when a user has been added to a privileged group/role. We can exclude from the wathclist the users for whom we do not want this alert to be triggered
 
 | Attribute | Value |

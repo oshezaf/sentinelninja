@@ -1,5 +1,11 @@
 # F&O - Non-interactive account mapped to self or sensitive privileged user
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies changes to Microsoft Entra client apps registered for Finance & Operations, specifically when a new client is mapped to a predefined list of sensitive privileged user accounts, or when a user associates a client app with their own account.
 
 | Attribute | Value |

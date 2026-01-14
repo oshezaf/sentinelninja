@@ -12,6 +12,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | [Content](content/content-index.md) | 4,864 | Analytics, hunting, playbooks, workbooks |
 | [Parsers](parsers/parsers-index.md) | 538 | Non-ASIM KQL functions |
 | [ASIM Parsers](asim/asim-index.md) | 95 pairs | Normalized schema parsers |
+| [ASIM Products](asim/asim-products-index.md) | 80 | Products with ASIM support |
 
 ---
 

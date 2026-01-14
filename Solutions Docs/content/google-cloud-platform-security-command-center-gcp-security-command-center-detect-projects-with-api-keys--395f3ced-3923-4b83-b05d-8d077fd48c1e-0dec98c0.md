@@ -1,5 +1,11 @@
 # GCP Security Command Center - Detect projects with API Keys present
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects Google Cloud projects that have API Keys present using Security Command Center API_KEY_EXISTS findings. Projects with API Keys may expose credentials that enable unauthorized access if keys are leaked.
 
 | Attribute | Value |

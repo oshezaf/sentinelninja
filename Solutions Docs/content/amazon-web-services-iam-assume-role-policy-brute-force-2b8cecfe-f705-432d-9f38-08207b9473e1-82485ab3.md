@@ -1,5 +1,11 @@
 # IAM assume role policy brute force
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Several failed "assume role" attempts occurred on existing roles in the account. This could be an attacker trying to escalate privileges and move laterally by assuming roles in a compromised account. Verify with the user identity that the activity is legitimate.
 
 | Attribute | Value |

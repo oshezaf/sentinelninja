@@ -1,4 +1,14 @@
-# Microsoft 365 Assets (formerly, Office 365)
+# ⚠️ Microsoft 365 Assets (formerly, Office 365)
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/office365_logo.svg" alt="" width="75" height="75">
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Connectors Index](../connectors-index.md)
+
+---
 
 | Attribute | Value |
 |:----------|:------|

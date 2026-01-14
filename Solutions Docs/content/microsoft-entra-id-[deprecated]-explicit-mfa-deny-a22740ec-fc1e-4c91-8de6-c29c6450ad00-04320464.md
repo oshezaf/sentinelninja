@@ -1,5 +1,11 @@
 # [Deprecated] Explicit MFA Deny
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 User explicitly denies MFA push, indicating that login was not expected and the account's password may be compromised. This rule is deprecated as of July-2024. Alternative rule with similar logic and contex from more data source  is available at https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/Analytic%20Rules/MFARejectedbyUser.yaml
 
 | Attribute | Value |

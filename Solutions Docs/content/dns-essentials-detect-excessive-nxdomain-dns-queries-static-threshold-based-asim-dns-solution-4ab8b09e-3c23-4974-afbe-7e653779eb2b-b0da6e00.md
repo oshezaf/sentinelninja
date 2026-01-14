@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect excessive NXDOMAIN DNS queries - Static threshold based (ASIM DNS Solution)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule generates an alert when the configured threshold for DNS queries to non-existent domains is breached. This helps in identifying possible C2 communications. It utilizes [ASIM](https://aka.ms/AboutASIM) normalization and is applied to any source that supports the ASIM DNS schema.
 
 | Attribute | Value |

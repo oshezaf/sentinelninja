@@ -1,5 +1,11 @@
 # Vectra Dynamic Resolve Assignment
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When an incident is closed, This playbook will prompt the operator to select an outcome from a predefined list, choose detections to triage from associated detection IDs and name list, provide a resolution note, and label the triaged detections. Based on the provided input playbook will resolve the open assignment.
 
 | Attribute | Value |

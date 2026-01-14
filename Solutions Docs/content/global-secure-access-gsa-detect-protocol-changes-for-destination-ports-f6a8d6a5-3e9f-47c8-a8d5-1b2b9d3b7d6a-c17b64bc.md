@@ -1,5 +1,11 @@
 # GSA - Detect Protocol Changes for Destination Ports
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies changes in the protocol used for specific destination ports, comparing the current runtime with a learned baseline. This can indicate potential protocol misuse or configuration changes. Configurable Parameters: - Learning period: The time range to establish the baseline. Default is set to 7 days. - Run time: The time range for current analysis. Default is set to 1 day.
 
 | Attribute | Value |

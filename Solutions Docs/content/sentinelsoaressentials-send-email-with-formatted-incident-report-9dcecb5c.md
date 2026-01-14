@@ -1,5 +1,11 @@
 # Send email with formatted incident report
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will be sending email with formated incidents report (Incident title, severity, tactics, link,…) when incident is created in Microsoft Sentinel. Email notification is made in HTML.
 
 | Attribute | Value |

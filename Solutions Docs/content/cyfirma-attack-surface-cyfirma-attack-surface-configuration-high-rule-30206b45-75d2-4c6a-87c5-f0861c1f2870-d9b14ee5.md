@@ -1,5 +1,11 @@
 # CYFIRMA - Attack Surface - Configuration High Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This alert is generated when CYFIRMA detects a critical misconfiguration in a public-facing asset or service.  Such misconfigurations may include exposed admin interfaces, default credentials, open directory listings, or insecure protocols, which significantly increase the attack surface."
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # QualysVM-GetAssets-ByCVEID
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Get CVE IDs from incident. 2. Create a Dynamic Search List with CVE IDs as filter criteria. 3. Generate the Vulnerability Report based on Dynamic Search List. 4. Download the report and store it to a blob storage. This report has details about assets which are vulnerable to CVE. 5. Add the link of report as a comment to the incident.
 
 | Attribute | Value |

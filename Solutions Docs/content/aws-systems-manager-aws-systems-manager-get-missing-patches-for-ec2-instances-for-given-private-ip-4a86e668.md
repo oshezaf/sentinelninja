@@ -1,5 +1,11 @@
 # AWS Systems Manager - Get Missing Patches for EC2 Instances for given Private IP
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The playbook can be triggered manually from an IP Entity to get the missing patches on a managed EC2 instance. This playbook performs the following actions: Get the Private IP from the IP Entity. 2. Get the Instance ID from AWS EC2 for given private IP. 3. Get the missing patches for the Instance ID. 4. Add the missing patches to the incident comment.
 
 | Attribute | Value |

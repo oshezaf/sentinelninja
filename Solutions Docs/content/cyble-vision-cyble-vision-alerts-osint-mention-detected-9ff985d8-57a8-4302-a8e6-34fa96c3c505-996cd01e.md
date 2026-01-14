@@ -1,5 +1,11 @@
 # Cyble Vision Alerts OSINT Mention Detected
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Triggers when Cyble detects an OSINT mention related to monitored keywords, entities, or brand identifiers. OSINT findings may indicate data leaks, expose content, targeting activity, impersonation, or discussions that may require investigation.
 
 | Attribute | Value |

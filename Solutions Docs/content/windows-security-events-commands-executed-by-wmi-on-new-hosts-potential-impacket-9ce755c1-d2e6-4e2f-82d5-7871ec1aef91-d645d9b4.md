@@ -1,5 +1,11 @@
 # Commands executed by WMI on new hosts - potential Impacket
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Query identifies hosts with WMI command runs, absent in last 7 days and filters for Impacket wmiexec arguments. Impacket filters can be adjusted for targeted hunting.
 
 | Attribute | Value |

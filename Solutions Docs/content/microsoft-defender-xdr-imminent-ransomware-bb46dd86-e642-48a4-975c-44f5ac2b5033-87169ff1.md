@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Imminent Ransomware
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query checks for a series of commands that are commonly used by attackers to disable security tools and system recovery tools before deploying Macaw ransomware in an organization.
 
 | Attribute | Value |

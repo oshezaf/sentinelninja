@@ -1,5 +1,11 @@
 # GitHub User Grants Access and Other User Grants Access
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query identifies Accounts in GitHub that have granted access to another account which then grants access to yet another account that may be a sign of compromise.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Failed sign-ins into LastPass due to MFA.
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This will check for sign-ins into LastPass which are not confirmed using MFA based on the Sign-in Logs
 
 | Attribute | Value |

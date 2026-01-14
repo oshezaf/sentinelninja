@@ -1,5 +1,11 @@
 # The Hive - Create case
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Creates case in TheHive instance with enriched description and title. 2. Gets Hosts, IPs entities. 3. Creates task and bind it to case. 4. Creates observables with hosts and IPs for created case.
 
 | Attribute | Value |

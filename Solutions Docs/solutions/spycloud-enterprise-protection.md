@@ -2,6 +2,12 @@
 
 <img src="raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SpyCloud_Enterprise_Protection.svg" alt="SpyCloud Enterprise Protection Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Cybercriminals continue to utilize stolen corporate credentials as the number one technique for account takeover (ATO). In fact, the FBI estimated that this resulted in estimated losses totaling more than $2.7 billion in 2022. SpyCloud helps prevent account takeover and ransomware attacks by identifying exposed credentials related to a company’s domains, IP addresses and emails. Through this integration, breach and malware data from SpyCloud can be loaded into Sentinel.
 
 ## Solution Information

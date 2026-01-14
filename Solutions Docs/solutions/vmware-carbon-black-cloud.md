@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="VMware Carbon Black Cloud Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [VMware Carbon Black Cloud](https://www.vmware.com/products/carbon-black-cloud.html) solution for Microsoft Sentinel allows ingesting Carbon Black [Audit](https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#audit-log-events), [Notification](https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#notifications) and [Event](https://developer.carbonblack.com/reference/carbon-black-cloud/platform/deprecated/data-forwarder-config-api/) logs into Microsoft Sentinel.
 
 **Underlying Microsoft Technologies used:**

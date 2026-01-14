@@ -1,5 +1,11 @@
 # External guest invitation followed by Microsoft Entra ID PowerShell signin
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 By default guests have capability to invite more external guest users, guests also can do suspicious Microsoft Entra ID enumeration. This detection look at guest users, who have been invited or have invited recently, who also are logging via various PowerShell CLI. Ref : 'https://danielchronlund.com/2021/11/18/scary-azure-ad-tenant-enumeration-using-regular-b2b-guest-accounts/
 
 | Attribute | Value |

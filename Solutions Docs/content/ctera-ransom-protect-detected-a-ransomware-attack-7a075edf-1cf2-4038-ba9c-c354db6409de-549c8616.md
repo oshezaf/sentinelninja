@@ -1,5 +1,11 @@
 # Ransom Protect Detected a Ransomware Attack
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Monitors CTERA platform to detect potential ransomware attacks detected by CTERA Ransom Protect AI engine.
 
 | Attribute | Value |

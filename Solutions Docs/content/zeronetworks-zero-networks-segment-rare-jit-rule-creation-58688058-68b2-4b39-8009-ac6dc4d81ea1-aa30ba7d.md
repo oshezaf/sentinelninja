@@ -1,5 +1,11 @@
 # Zero Networks Segment - Rare JIT Rule Creation
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies when a JIT Rule connection is new or rare by a given account today based on comparison with the previous 14 days. JIT Rule creations are indicated by the Activity Type Id 20
 
 | Attribute | Value |

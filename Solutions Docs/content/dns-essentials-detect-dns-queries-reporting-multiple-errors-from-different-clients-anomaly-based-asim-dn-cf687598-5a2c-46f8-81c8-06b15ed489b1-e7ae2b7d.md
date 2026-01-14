@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect DNS queries reporting multiple errors from different clients - Anomaly Based (ASIM DNS Solution)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule makes use of the series decompose anomaly method to generate an alert when multiple clients report errors for the same DNS query. This rule monitors DNS traffic over a period of 14 days to detect possible similar C2 communication originating from different clients. It utilizes [ASIM](https://aka.ms/AboutASIM) normalization and is applied to any source that supports the ASIM DNS schema.
 
 | Attribute | Value |

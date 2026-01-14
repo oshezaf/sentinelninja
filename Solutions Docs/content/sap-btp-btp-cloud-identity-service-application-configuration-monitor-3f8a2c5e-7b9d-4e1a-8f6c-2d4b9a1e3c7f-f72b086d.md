@@ -1,5 +1,11 @@
 # BTP - Cloud Identity Service application configuration monitor
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies CRUD operations on Application (SSO Domain/Service Provider) configurations within SAP Cloud Identity Service. This includes both SAML 2.0 and OpenID Connect applications. Unauthorized application creation could indicate an attacker establishing persistent access through a rogue federated application.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Forescout-DNS_Sniff_Event_Monitor
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule creates an incident when more than certain number of Dnsniff events are generated from a host
 
 | Attribute | Value |

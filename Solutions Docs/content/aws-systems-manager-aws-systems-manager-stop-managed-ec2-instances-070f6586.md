@@ -1,5 +1,11 @@
 # AWS Systems Manager - Stop Managed EC2 Instances
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. This playbook uses AWS Systems Manager API to stop the EC2 instances. The playbook can be triggered from an incident in Microsoft Sentinel. The playbook takes the Hostnames and Private IP addresses from the incident entities and stops the EC2 instances using the Instance IDs. The playbook also adds a comment to the incident with the list of instances that were stopped.
 
 | Attribute | Value |

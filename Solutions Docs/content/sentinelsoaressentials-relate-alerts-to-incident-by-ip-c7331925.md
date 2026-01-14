@@ -1,5 +1,11 @@
 # Relate alerts to incident by IP
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook looks for other alerts with the same IP as the triggered incident. When such an alert is found, this playbook will add the alert to the incident (only if it isn't related to another incident).
 
 | Attribute | Value |

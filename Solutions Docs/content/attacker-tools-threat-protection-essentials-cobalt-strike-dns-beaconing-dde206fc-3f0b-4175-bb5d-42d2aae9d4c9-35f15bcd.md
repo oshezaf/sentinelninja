@@ -1,5 +1,11 @@
 # Cobalt Strike DNS Beaconing
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Cobalt Strike is a famous Pen Test tool that is used by pen testers as well as attackers alike To compromise an environment.   The query tries to detect suspicious DNS queries known from Cobalt Strike beacons.
 
 | Attribute | Value |

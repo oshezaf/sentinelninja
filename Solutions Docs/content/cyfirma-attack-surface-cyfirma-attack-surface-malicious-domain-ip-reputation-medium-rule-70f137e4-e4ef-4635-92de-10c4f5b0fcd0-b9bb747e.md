@@ -1,5 +1,11 @@
 # CYFIRMA - Attack Surface - Malicious Domain/IP Reputation Medium Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This alert is raised when CYFIRMA detects a critical reputation score for an IP address linked to your infrastructure.  The IP has been previously associated with hacking activity and web application attacks.  Denied outbound traffic to a foreign country from a known Microsoft data center IP suggests potential misuse or compromise of cloud infrastructure.
 
 | Attribute | Value |

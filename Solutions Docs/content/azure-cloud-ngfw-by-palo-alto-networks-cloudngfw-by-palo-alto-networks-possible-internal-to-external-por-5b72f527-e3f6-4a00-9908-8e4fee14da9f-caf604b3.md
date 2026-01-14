@@ -1,5 +1,11 @@
 # CloudNGFW By Palo Alto Networks - possible internal to external port scanning
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies a list of internal Source IPs (10.x.x.x Hosts) that have triggered 10 or more non-graceful tcp server resets from one or more Destination IPs which results in an "app = incomplete" designation. The server resets coupled with an "Incomplete" app designation can be an indication of internal to external port scanning or probing attack. References: https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClUvCAK https://knowledgebase.paloaltonetworks.com/KCSArticleDetail
 
 | Attribute | Value |

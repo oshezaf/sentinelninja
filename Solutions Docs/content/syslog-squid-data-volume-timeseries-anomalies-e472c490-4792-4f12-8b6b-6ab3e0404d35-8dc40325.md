@@ -1,5 +1,11 @@
 # Squid data volume timeseries anomalies
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Malware or data exfiltration can cause network data volume anomalies. This query detects such anomalies in volume of bytes traversing a squid proxy. Anomalies require further investigation. Assumes default squid log format.
 
 | Attribute | Value |

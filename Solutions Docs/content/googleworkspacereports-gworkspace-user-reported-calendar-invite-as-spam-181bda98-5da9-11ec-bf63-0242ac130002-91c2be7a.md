@@ -1,5 +1,11 @@
 # GWorkspace - User reported calendar invite as spam
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Query searches calendar invites used to deliver spam. This query shows results when user reports a calander invite as spam.
 
 | Attribute | Value |

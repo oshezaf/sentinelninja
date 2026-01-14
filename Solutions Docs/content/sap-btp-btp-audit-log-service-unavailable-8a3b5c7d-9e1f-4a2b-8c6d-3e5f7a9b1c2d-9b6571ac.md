@@ -1,5 +1,11 @@
 # BTP - Audit log service unavailable
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies SAP BTP subaccounts that have not reported audit logs for an unusual period. This could indicate that the audit log service has been disabled or tampered with, potentially by an attacker attempting to hide malicious activity. It may also indicate service key expiry or SAP BTP service availability problems.
 
 | Attribute | Value |

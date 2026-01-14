@@ -1,4 +1,18 @@
-# [Deprecated] Infoblox Cloud Data Connector via Legacy Agent
+# 🚫 ⚠️ 🔍 [Deprecated] Infoblox Cloud Data Connector via Legacy Agent
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="75" height="75">
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Connectors Index](../connectors-index.md)
+
+---
 
 | Attribute | Value |
 |:----------|:------|
@@ -9,8 +23,6 @@
 | **Event Vendor** | Infoblox |
 | **Event Product** | Data Connector |
 | **Connector Definition Files** | [InfobloxCloudDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20Cloud%20Data%20Connector/Data%20Connectors/InfobloxCloudDataConnector.json) |
-
-> ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
 The Infoblox Cloud Data Connector allows you to easily connect your Infoblox BloxOne data with Microsoft Sentinel. By connecting your logs to Microsoft Sentinel, you can take advantage of search & correlation, alerting, and threat intelligence enrichment for each log.
 

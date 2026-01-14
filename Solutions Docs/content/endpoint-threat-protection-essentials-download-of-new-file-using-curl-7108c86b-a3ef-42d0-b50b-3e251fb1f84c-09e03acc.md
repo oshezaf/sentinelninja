@@ -1,5 +1,11 @@
 # Download of New File Using Curl
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Threat actors may use tools such as Curl to download additional files, communicate with C2 infrastructure, or exfiltrate data. This query looks for new files being downloaded using Curl.
 
 | Attribute | Value |

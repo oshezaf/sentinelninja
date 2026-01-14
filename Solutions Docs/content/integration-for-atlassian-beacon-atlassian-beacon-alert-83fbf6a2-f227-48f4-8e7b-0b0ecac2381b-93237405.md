@@ -1,5 +1,11 @@
 # Atlassian Beacon Alert
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The analytic rule creates an incident when an alert is created in Atlassian Beacon. The incident's events contains values such as alert name, alert url, actor name, actor details, worskpace id of the atlassian beacon, etc. Navigate to the alertDetailURL to view more information on recommendations and remediations.
 
 | Attribute | Value |

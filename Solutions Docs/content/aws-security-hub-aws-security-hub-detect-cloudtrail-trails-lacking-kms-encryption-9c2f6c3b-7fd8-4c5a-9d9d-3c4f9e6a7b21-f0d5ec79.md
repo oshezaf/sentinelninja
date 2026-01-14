@@ -1,5 +1,11 @@
 # AWS Security Hub - Detect CloudTrail trails lacking KMS encryption
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects AWS CloudTrail trails that are not configured to use server-side encryption with a customer managed KMS key using AWS Security Hub control CloudTrail.2 findings.  Unencrypted CloudTrail logs increase the risk of unauthorized access to sensitive audit data at rest.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # NRT Creation of expensive computes in Azure
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies the creation of large size or expensive VMs (with GPUs or with a large number of virtual CPUs) in Azure. An adversary may create new or update existing virtual machines to evade defenses or use them for cryptomining purposes. For Windows/Linux Vm Sizes, see https://docs.microsoft.com/azure/virtual-machines/windows/sizes  Azure VM Naming Conventions, see https://docs.microsoft.com/azure/virtual-machines/vm-naming-conventions
 
 | Attribute | Value |

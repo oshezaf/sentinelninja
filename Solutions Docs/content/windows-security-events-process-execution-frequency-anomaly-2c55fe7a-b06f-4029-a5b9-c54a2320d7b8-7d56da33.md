@@ -1,5 +1,11 @@
 # Process Execution Frequency Anomaly
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection identifies anomalous spike in frequency of executions of sensitive processes which are often leveraged as attack vectors. The query leverages KQL's built-in anomaly detection algorithms to find large deviations from baseline patterns. Sudden increases in execution frequency of sensitive processes should be further investigated for malicious activity. Tune the values from 1.5 to 3 in series_decompose_anomalies for further outliers or based on custom threshold values for score.
 
 | Attribute | Value |

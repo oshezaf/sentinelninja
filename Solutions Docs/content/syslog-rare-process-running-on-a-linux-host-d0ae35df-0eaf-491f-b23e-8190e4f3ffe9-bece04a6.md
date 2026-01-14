@@ -1,5 +1,11 @@
 # Rare process running on a Linux host
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Looks for rare processes that are running on Linux hosts. Looks for process seen less than 14 times in last 7 days,  or observed rate is less than 1% of of the average for the environment and fewer than 100.
 
 | Attribute | Value |

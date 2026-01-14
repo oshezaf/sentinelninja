@@ -1,5 +1,11 @@
 # Office Mail Rule Creation with suspicious archive mail move activity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Hunting query to detect new inbox rule creation with activity of mail moved from inbox to archive folder within 12minutes.Though such activities could be legitimate some attackers may use these techniques to perform email diversion attack.
 
 | Attribute | Value |

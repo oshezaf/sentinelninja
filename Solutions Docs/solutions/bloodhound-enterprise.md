@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BHE_Logo.svg" alt="BloodHound Enterprise Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The BloodHound Enterprise Microsoft Sentinel solution ingests your BloodHound Enterprise posture and attack paths into Microsoft Sentinel. Use the dashboards to track the Active Directory and Azure attack paths of your environment. Create alerts to detect when new attack paths emerge or new the exposure increases.
 
 ## Solution Information

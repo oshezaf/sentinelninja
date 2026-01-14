@@ -1,5 +1,11 @@
 # ADFS Database Named Pipe Connection
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection uses Sysmon telemetry to detect suspicious local connections via a named pipe to the AD FS configuration database (Windows Internal Database). In order to use this query you need to be collecting Sysmon EventIdD 18 (Pipe Connected). If you do not have Sysmon data in your workspace this query will raise an error stating: Failed to resolve scalar expression named "[@Name]"
 
 | Attribute | Value |

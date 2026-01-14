@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="MicrosoftPurviewInsiderRiskManagement Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 This solution enables insider risk management teams to investigate risk-based behavior across 25+ Microsoft products. This solution is a better-together story between Microsoft Sentinel and Microsoft Purview Insider Risk Management. The solution includes the Insider Risk Management Workbook, (5) Hunting Queries, (1) Data Connector, (5) Analytics Rules, (1) Playbook automation and the Microsoft Purview Insider Risk Management connector. While only Microsoft Sentinel is required to get started, the solution is enhanced with numerous Microsoft offerings, including, but not limited to:
 
 - [Microsoft Purview Insider Risk Management](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-solution-overview?view=o365-worldwide)

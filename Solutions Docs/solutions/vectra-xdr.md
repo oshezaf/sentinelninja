@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="Vectra XDR Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Vectra AI is the leader in AI-driven threat detection and response for hybrid and multi-cloud enterprises. Vectra AI's cloud-native platform - powered by our patented Attack Signal Intelligence- provide security teams with unified threat visibility, context and control across public cloud, SaaS, identity and data center networks in a prioritized feed. Vectra AI-driven Attack Signal IntelligenceTM, empowers SOC analysts to rapidly prioritize, investigate and respond to the most urgent cyber-attacks in their hybrid cloud environment. Organizations worldwide rely on Vectra AI's cloud-native platform and MDR services to see and stop attacks from becoming breaches. The Vectra AI App enables the security operations team to consume the industry's richest threat signals spanning public cloud, SaaS, identity and data center networks inside of Microsoft Sentinel. For more information, visit www.vectra.ai.
 
  The Vectra XDR App for Microsoft Sentinel contains:

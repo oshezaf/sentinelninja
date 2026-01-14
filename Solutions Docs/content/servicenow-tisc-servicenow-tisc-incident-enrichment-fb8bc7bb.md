@@ -1,5 +1,11 @@
 # ServiceNow TISC Incident Enrichment
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook leverages the ServiceNow TISC API to enrich IP, Domain, URL, and Hash indicators found in Microsoft Sentinel incidents. The enrichment content will be posted as a comment in the Microsoft Sentinel incident.
 
 | Attribute | Value |

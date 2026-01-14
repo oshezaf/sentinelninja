@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/pathlock_logo.svg" alt="Pathlock_TDnR Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Pathlock TD&R](https://pathlock.com/products/cybersecurity-application-controls/) integration enables organizations to seamlessly forward Pathlock Threat Detection and Response (TD&R) events from both on-premise and cloud-based SAP systems into Microsoft Sentinel Solution for SAP for unified security visibility and incident correlation across the enterprise.
 
 Built on Pathlock’s Cybersecurity Application Controls (CAC) platform, this connector utilizes the Common Connector Platform (CCP) framework to securely transmit log and event data while maintaining data integrity and governance. The Custom Logs solution is automatically deployed during installation, ensuring a quick and reliable setup without manual configuration steps.

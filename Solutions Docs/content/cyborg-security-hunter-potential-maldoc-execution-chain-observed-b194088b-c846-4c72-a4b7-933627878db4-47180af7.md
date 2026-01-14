@@ -1,5 +1,11 @@
 # Potential Maldoc Execution Chain Observed
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detect the aftermath of a successfully delivered and executed maldoc (Microsoft Office). Indicates an Office document was opened from an email or download/link, spawned a suspicious execution, and attempted to execute code via common Windows binaries.
 
 | Attribute | Value |

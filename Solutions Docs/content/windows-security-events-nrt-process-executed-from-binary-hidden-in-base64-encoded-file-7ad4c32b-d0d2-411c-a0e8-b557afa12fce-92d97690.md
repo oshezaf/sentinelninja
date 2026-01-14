@@ -1,5 +1,11 @@
 # NRT Process executed from binary hidden in Base64 encoded file
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Encoding malicious software is a technique used to obfuscate files from detection. The first CommandLine component is looking for Python decoding base64. The second CommandLine component is looking for Bash/sh command line base64 decoding. The third one is looking for Ruby decoding base64.
 
 | Attribute | Value |

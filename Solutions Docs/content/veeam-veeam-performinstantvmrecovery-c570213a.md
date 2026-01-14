@@ -1,5 +1,11 @@
 # Veeam-PerformInstantVMRecovery
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This Microsoft Sentinel playbook performs instant VM recovery on the vm specified by MachineDisplayName custom field of Microsoft Sentinel's incident custom fields. The playbook automatically finds the latest clean restore point, initiates the instant recovery monitor for its state and indicates results as incident comments.
 
 | Attribute | Value |

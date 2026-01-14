@@ -1,4 +1,12 @@
-# Red Canary Threat Detection
+# 🔍 Red Canary Threat Detection
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Connectors Index](../connectors-index.md)
+
+---
 
 | Attribute | Value |
 |:----------|:------|
@@ -7,8 +15,6 @@
 | **Used in Solutions** | [Red Canary](../solutions/red-canary.md) |
 | **Collection Method** | REST API |
 | **Connector Definition Files** | [RedCanaryDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary/Data%20Connectors/RedCanaryDataConnector.json) |
-
-> ⚠️ **Not listed in Solution JSON:** This connector was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
 The Red Canary data connector provides the capability to ingest published Detections into Microsoft Sentinel using the Data Collector REST API.
 

@@ -1,5 +1,11 @@
 # Power Automate - Unusual bulk deletion of flow resources
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies bulk deletion of Power Automate flows that exceed a predefined threshold defined in the query and deviate from activity patterns observed in the last 14 days.
 
 | Attribute | Value |

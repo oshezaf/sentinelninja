@@ -1,5 +1,11 @@
 # CYFIRMA - Social and Public Exposure - Source Code Exposure on Public Repositories Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule triggers when CYFIRMA detects source code related to internal or enterprise domains exposed on public platforms like GitHub.  Such exposure may lead to intellectual property leakage or help adversaries understand internal systems, increasing the risk of targeted attacks.
 
 | Attribute | Value |

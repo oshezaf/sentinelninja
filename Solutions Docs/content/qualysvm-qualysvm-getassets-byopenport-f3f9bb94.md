@@ -1,5 +1,11 @@
 # QualysVM-GetAssets-ByOpenPort
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Gets Port from incident. (Only one port) 2. Search the Qualys platform and get the asset count with open port. 3. Search the Qualys platform and get the asset details as well. (Asset details limited to 50 assets, since incident comment has limitaion of 30000 characters.) 4. Combine both the results. 5. Add the info as comment to the incident.
 
 | Attribute | Value |

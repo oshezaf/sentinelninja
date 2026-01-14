@@ -1,5 +1,11 @@
 # Firewall errors stateful anomaly on database
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query batches of distinct SQL queries that failed with error codes that might indicate malicious attempts to gain illegitimate access to the data. When attacker attempts to scan or gain access to server protected by firewall, he will be blocked by firewall and fail with error code 40615. Thus, if we see a large number of logins with such error codes, this could indicate attempts to gain access.
 
 | Attribute | Value |

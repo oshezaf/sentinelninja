@@ -1,5 +1,11 @@
 # Refactor AWS policy based on activities in the last 60 days
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This is a recommended update to IAM policy on AWS. Review the policy and apply it according to change control process. Authomize will have a recommended policy to be downloaded.
 
 | Attribute | Value |

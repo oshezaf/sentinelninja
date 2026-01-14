@@ -1,5 +1,11 @@
 # Rubrik Anomaly Incident Response
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook provides an end to end example of the collection of Ransomware Anomaly information from Rubrik, its enrichment with Data Classification insights (to aid in incident prioritization), and the options to optionally perform various recovery operations. It uses several other playbooks defined in this solution to perform these tasks.
 
 | Attribute | Value |

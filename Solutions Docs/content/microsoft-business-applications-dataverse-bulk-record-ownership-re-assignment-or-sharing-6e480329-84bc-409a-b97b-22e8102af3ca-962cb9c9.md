@@ -1,5 +1,11 @@
 # Dataverse - Bulk record ownership re-assignment or sharing
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies individual record ownership changes including sharing of records with other users/teams or re-assignment of ownership exceeding a pre-defined threshold.
 
 | Attribute | Value |

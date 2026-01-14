@@ -1,5 +1,11 @@
 # credential-warning
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook monitors all data received from Firework looking for leaked credentials (email:password combinations). When found, this playbook will send an email to the email address warning their password has been leaked, recommending appropriate measures if necessary. To learn more about how to connect Firework to Microsoft Sentinel, see the [API documentation](https://docs.flared.io/azure-sentinel-integration).
 
 | Attribute | Value |

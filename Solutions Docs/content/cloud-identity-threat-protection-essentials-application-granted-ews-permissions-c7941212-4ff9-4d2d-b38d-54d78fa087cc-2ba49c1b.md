@@ -1,5 +1,11 @@
 # Application Granted EWS Permissions
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query finds AD applications with EWS permissions to read user mailboxes. Threat actors could misuse these for persistent mailbox access. Ensure these permissions are legitimately granted and necessary.
 
 | Attribute | Value |

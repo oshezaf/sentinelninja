@@ -1,5 +1,11 @@
 # Vectra Assign Dynamic User To Entity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will assign a user selected by user from teams adpative card to an entity in Vectra when the status of an incident changes from 'New' to 'Active'.
 
 | Attribute | Value |

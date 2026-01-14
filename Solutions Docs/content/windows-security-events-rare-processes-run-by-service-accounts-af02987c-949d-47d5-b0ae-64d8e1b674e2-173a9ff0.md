@@ -1,5 +1,11 @@
 # Rare Processes Run by Service Accounts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Service accounts normally are supposed to perform a limited set of tasks in a stable environment. The query collects a list of service account and then joins them with rare processes in an environment to detect anomalous behaviours.
 
 | Attribute | Value |

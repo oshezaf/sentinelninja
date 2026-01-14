@@ -1,5 +1,11 @@
 # CYFIRMA - Medium Severity Attack Surface based Vulnerabilities Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule detects medium severity attack surface-based vulnerabilities from CYFIRMA's vulnerability intelligence data. It identifies vulnerabilities with a confidence score of 50 or higher, excluding those categorized as 'ASSET_VULNERABILITY', and generates alerts for assets that may be at risk.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # AWS Security Hub - Detect IAM Policies allowing full administrative privileges
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects AWS IAM policies that allow full administrative ("*") privileges in violation of AWS Security Hub control IAM.1. Overly permissive policies increase the risk of privilege escalation and unauthorized access.
 
 | Attribute | Value |

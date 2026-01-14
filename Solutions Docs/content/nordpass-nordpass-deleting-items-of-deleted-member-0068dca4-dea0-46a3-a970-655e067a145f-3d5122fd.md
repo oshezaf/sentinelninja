@@ -1,5 +1,11 @@
 # NordPass - Deleting items of deleted member
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This will alert you if the deleted user's items have been removed without being transferred to another active user, as this could result in the loss of access to critical tools or information.
 
 | Attribute | Value |

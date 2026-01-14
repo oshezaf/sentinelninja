@@ -1,5 +1,11 @@
 # Suspected LSASS Dump
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Look for evidence of the LSASS process being dumped either using Procdump or comsvcs.dll. Often used by attackers to access credentials stored on a system.
 
 | Attribute | Value |

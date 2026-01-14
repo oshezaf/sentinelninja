@@ -1,5 +1,11 @@
 # Dropping Payload via certutil
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 BazaCall campaign tricks users into calling a fake customer support center, and download a malicious Excel file which contains a macro to infect users' device with BazaLoader. This query searches for a copy of certutil.exe used by the macro.
 
 | Attribute | Value |

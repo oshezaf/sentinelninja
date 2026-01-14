@@ -1,5 +1,11 @@
 # Multiple users email forwarded to same destination
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies when multiple (more than one) users mailboxes are configured to forward to the same destination.  This could be an attacker-controlled destination mailbox configured to collect mail from multiple compromised user accounts.
 
 | Attribute | Value |

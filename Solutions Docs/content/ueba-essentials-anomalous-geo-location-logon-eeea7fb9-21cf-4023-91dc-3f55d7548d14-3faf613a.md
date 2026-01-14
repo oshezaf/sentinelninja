@@ -1,5 +1,11 @@
 # Anomalous Geo Location Logon
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Adversaries may steal the credentials of a specific user or service account using credential access techniques or capture credentials earlier in their reconnaissance process through social engineering as a means of gaining initial access. APT33, for example, has used valid accounts for initial access. The query below generates an output of a successful sign-in performed by a user from a new geolocation he has never connected to before and none of his peers as well.
 
 | Attribute | Value |

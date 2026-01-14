@@ -1,5 +1,11 @@
 # Detect CoreBackUp Deletion Activity from related Security Alerts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The query identifies any efforts by an attacker to delete backup containers, while also searching for any security alerts that may be linked to the same activity, in order to uncover additional information about the attacker's actions.'  Though such an activity could be legitimate as part of business operation, some ransomware actors may perform such operation to cause interruption to regular business services.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # DNS Full Name anomalous lookup increase
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Checking for a threefold increase or more in Full Name lookups per Client IP for the current day as compared to the daily average for the previous week. This can potentially identify excessive traffic to a given location that could be indicative of data transfer out of your network. This is only for Name lookups, so it would be recommended to review the firewall and web proxy logs in relation to the ClientIP making the interesting requests.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # NordPass - User deletes items in bulk
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This will alert you if a user deletes items in bulk, namely, more than 10 items or in the span of 10 minutes.  If a mix of bulk and one-off deletions were performed, this will group all actions and report the total number of items deleted.
 
 | Attribute | Value |

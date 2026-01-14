@@ -1,5 +1,11 @@
 # SharePointFileOperation via devices with previously unseen user agents
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Tracking via user agent is one way to differentiate between types of connecting device. In homogeneous enterprise environments the user agent associated with an attacker device may stand out as unusual.
 
 | Attribute | Value |

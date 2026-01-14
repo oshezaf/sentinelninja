@@ -1,5 +1,11 @@
 # CYFIRMA - Social and Public Exposure -  Social Media Threats  Activity Detected Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule detects medium-severity social threat alerts from CYFIRMA related to impersonation, fake profiles, or malicious activities on social platforms that may target executives, brands, or employees.  These threats can result in reputational damage, phishing, or social engineering attacks.  Immediate investigation and takedown are recommended to minimize risk.
 
 | Attribute | Value |

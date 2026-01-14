@@ -1,5 +1,11 @@
 # Dataverse - Login from IP in the block list
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies Dataverse sign-in activity from IPv4 addresses which are on a predefined block list. Blocked network ranges are maintained in the NetworkAddresses watchlist template.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Dormant account activity from uncommon country
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Shows dormant accounts (not active in the last 180 days) that connect from a country for the first time and the country is uncommon in the tenant or is the first time the ISP is used.
 
 | Attribute | Value |

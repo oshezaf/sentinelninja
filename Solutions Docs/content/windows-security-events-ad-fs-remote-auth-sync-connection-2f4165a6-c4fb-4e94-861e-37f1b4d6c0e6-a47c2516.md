@@ -1,5 +1,11 @@
 # AD FS Remote Auth Sync Connection
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'This detection uses Security events from the "AD FS Auditing" provider to detect suspicious authentication events on an AD FS server. The results then get correlated with events from the Windows Filtering Platform (WFP) to detect suspicious incoming network traffic on port 80 on the AD FS server. This could be a sign of a threat actor trying to use replication services on the AD FS server to get its configuration settings and extract sensitive information such as AD FS certificates. In order to
 
 | Attribute | Value |

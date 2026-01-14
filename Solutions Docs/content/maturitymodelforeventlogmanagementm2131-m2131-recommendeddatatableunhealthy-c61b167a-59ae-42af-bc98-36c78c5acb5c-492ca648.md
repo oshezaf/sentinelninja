@@ -1,5 +1,11 @@
 # M2131_RecommendedDatatableUnhealthy
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This alert is designed to monitor recommended data tables aligned to the Maturity Model for Event Log Management (M-21-31) standard. The alert triggers when a recommended data table hasn't been observed in over 48 hours.
 
 | Attribute | Value |

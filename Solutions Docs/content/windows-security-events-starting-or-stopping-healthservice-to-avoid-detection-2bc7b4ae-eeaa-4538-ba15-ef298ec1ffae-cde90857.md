@@ -1,5 +1,11 @@
 # Starting or Stopping HealthService to Avoid Detection
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects events where an actor is stopping or starting HealthService to disable telemetry collection/detection from the agent.  The query requires a SACL to audit for access request to the service.
 
 | Attribute | Value |

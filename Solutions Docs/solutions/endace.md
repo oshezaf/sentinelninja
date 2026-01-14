@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/endace_vert_logo_black.svg" alt="Endace Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Endace (https://www.endace.com) solution for Microsoft Sentinel enables you to create Pivot-to-Vision URL links from alerts in your CEF logs.
 
  Pivot-to-Vision links take you directly from an alert to viewing the related packets of interest in EndaceVision, Endace's traffic analysis application. In EndaceVision, you can further analyze the incident and zoom in to inspect decoded, full packet data.

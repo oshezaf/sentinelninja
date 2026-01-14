@@ -1,5 +1,11 @@
 # CreateLoginProfile detected
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 An attacker could use CreateLoginProfile permissions on other users for privilege escalation by creating a password to a victim user without a login profile to use to login to the AWS Console.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # AWS IAM - Add tag to user
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Gets users from the incident. 2. [Adds tag](https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagUser.html) to users in AWS (tag key and value are defined during the playbook deployment). 3. Adds information about added tags as a comment to the incident.
 
 | Attribute | Value |

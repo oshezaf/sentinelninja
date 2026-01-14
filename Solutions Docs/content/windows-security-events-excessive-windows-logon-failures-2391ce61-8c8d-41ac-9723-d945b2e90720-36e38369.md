@@ -1,5 +1,11 @@
 # Excessive Windows Logon Failures
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies user accounts which has over 50 Windows logon failures today and at least 33% of the count of logon failures over the previous 7 days.
 
 | Attribute | Value |

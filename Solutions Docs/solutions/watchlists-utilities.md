@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Watchlists Utilities Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Watchlist Utilities solution for Microsoft Sentinel contains Playbooks that can help automate watchlist usage and integration with incident's management. These include use cases for adding entities (Hosts, IP, URL, User, etc.) to Microsoft Sentinel Watchlists and for incident management.
 
 ## Solution Information

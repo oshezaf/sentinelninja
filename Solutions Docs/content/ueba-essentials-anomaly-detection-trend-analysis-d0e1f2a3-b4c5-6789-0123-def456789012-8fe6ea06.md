@@ -1,5 +1,11 @@
 # Anomaly Detection Trend Analysis
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Visualizes anomaly detection trends over the past 90 days, showing daily counts of triggered anomaly templates. Use this time-series chart to identify patterns, spikes in anomalous behavior, and seasonal trends for baseline establishment and threat hunting prioritization.
 
 | Attribute | Value |

@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="PingOne Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [PingOne](https://www.pingidentity.com/en/platform/solutions.html) solution provides the capability to ingest [PingOne audit activity logs](https://docs.pingidentity.com/pingone/p1_cloud__platform_main_landing_page.html) into Microsoft Sentinel using the PingOne Platform API.
 
 **Underlying Microsoft Technologies used:**

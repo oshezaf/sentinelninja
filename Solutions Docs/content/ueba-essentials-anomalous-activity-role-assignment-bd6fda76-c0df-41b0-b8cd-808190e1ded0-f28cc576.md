@@ -1,5 +1,11 @@
 # Anomalous Activity Role Assignment
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Adversaries may circumvent mechanisms designed to control elevated privileges to gain higher-level permissions. The query below generates an output of all users performing an "action" operation regarding an access elevation, where one or more features of the activity deviate from the user, his peers or the tenant profile.
 
 | Attribute | Value |

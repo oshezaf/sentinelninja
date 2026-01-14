@@ -1,5 +1,11 @@
 # Suspicious command sent to EC2
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 An attacker with the necessary permissions could be executing code remotely on a machine and saving the output to his own S3 bucket. Verify this action with the user identity.
 
 | Attribute | Value |

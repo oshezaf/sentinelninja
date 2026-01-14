@@ -1,5 +1,11 @@
 # Azure Machine Learning Write Operations
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Shows the most prevalent users who perform write operations on Azure Machine Learning resources. List the common source IP address for each of those accounts. If an operation is not from those IP addresses, it may be worthy of investigation.
 
 | Attribute | Value |

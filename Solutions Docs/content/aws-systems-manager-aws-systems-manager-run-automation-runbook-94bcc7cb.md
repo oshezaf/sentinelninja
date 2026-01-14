@@ -1,5 +1,11 @@
 # AWS Systems Manager - Run Automation Runbook
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a new sentinel incident is created, this playbook gets triggered and runs the specified AWS Systems Manager Automation Runbook. The playbook will wait for the runbook execution to complete and then update the incident with the runbook execution status.
 
 | Attribute | Value |

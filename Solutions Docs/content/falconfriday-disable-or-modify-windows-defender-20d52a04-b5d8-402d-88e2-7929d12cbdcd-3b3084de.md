@@ -1,5 +1,11 @@
 # Disable or Modify Windows Defender
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection watches the commandline logs for known commands that are used to disable the Defender AV. This is based on research performed by @olafhartong on a large sample of malware for varying purposes.  Note that this detection is imperfect and is only meant to serve as basis for building a more resilient detection rule. Make the detection more resilient, currently the order of parameters matters. You don't want that for a production rule.  See blogpost (https://medium.com/falconforce/falc
 
 | Attribute | Value |

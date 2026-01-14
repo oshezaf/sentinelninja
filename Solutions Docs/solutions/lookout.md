@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lookout/Workbooks/Images/Logo/lookout.svg" alt="Lookout Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Lookout](https://lookout.com) solution provides the capability to ingest [Lookout events](https://enterprise.support.lookout.com/hc/articles/115002741773-Mobile-Risk-API-Guide#commoneventfields) into Microsoft Sentinel through the Mobile Risk API. It can get events which helps to examine potential security risks and more. Refer to [API documentation](https://enterprise.support.lookout.com/hc/articles/115002741773-Mobile-Risk-API-Guide) for more information .
   
   **Underlying Microsoft Technologies used:** 

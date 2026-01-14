@@ -1,5 +1,11 @@
 # Squid proxy events for ToR proxies
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Check for Squid proxy events associated with common ToR proxies. This query presumes the default squid log format is being used. http://www.squid-cache.org/Doc/config/access_log/
 
 | Attribute | Value |

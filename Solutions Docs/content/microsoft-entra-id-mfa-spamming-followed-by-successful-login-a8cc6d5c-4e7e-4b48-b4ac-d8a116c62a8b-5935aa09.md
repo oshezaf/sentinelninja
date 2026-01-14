@@ -1,5 +1,11 @@
 # MFA Spamming followed by Successful login
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies MFA Spamming followed by Successful logins and by a successful authentication within a given time window. Default Failure count is 10 and 1 successful login with default Time Window is 5 minutes.
 
 | Attribute | Value |

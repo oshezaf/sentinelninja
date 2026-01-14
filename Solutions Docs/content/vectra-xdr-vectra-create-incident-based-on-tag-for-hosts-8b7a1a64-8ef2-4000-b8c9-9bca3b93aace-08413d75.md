@@ -1,5 +1,11 @@
 # Vectra Create Incident Based on Tag for Hosts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Create an incident when the host entity presents a specific tag. If the tag is present, an incident should be created and marked with highest priority.
 
 | Attribute | Value |

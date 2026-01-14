@@ -1,5 +1,11 @@
 # Risky Sign-in with new MFA method
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies new MFA methods added to an account within 6 hours of a medium or high risk sign-in session. It includes UEBA logs IdentityInfo and BehaviorAnalytics for context.
 
 | Attribute | Value |

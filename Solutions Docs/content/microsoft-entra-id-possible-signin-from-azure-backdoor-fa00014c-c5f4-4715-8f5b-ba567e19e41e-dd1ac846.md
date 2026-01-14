@@ -1,5 +1,11 @@
 # Possible SignIn from Azure Backdoor
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies when a user adds an unverified domain as an authentication method, followed by a sign-in from a user the newly added domain. Threat actors may add custom domains to create a backdoor to your tenant. It's important to monitor whenever custom domains are added to the tenant.
 
 | Attribute | Value |

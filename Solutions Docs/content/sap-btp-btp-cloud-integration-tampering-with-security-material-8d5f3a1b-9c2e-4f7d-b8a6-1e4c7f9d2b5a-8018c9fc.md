@@ -1,5 +1,11 @@
 # BTP - Cloud Integration tampering with security material
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies operations on security material (credentials, certificates, and keys) within SAP Cloud Integration. This includes credentials (passwords/secrets), X.509 certificates and key pairs, and PGP keys. Unauthorized manipulation of security material could indicate an attacker attempting to: - Gain access to external systems using stored credentials - Intercept or tamper with encrypted communications - Establish persistence through certificate manipulation - Cover tracks by deleting security a
 
 | Attribute | Value |

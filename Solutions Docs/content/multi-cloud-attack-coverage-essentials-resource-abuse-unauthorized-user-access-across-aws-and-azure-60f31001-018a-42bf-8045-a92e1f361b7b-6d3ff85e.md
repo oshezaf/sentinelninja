@@ -1,5 +1,11 @@
 # Unauthorized user access across AWS and Azure
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'This detection compiles and correlates unauthorized user access alerts originating from AWS GuardDuty with Azure portal sign-in activities. It focuses on AWS GuardDuty alerts related to unauthorized user access, specifically targeting network IP associations tied to activities such as logins from malicious IP addresses or instance credential exfiltration attempts. The ditection leverages these common network IP advisories to detect and pinpoint unauthorized users attempting to access both AWS a
 
 | Attribute | Value |

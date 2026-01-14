@@ -1,5 +1,11 @@
 # Theom - Dev secrets unencrypted
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Creates Sentinel incidents for critical/high Theom risks, associated with ruleId TRIS0001 (Developer secrets have been observed in unencrypted data stores. Encrypt data at rest to comply with this CIS requirement)
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Identity Protection response from Teams
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Run this playbook on incidents which contains suspicious Microsoft Entra ID identities. For each account, this playbook posts an adaptive card in the SOC Microsoft Teams channel, including the potential risky user information given by Microsoft Entra ID Identity Protection. The card offers to confirm the user as compromised or dismiss the compromised user in Microsoft Entra ID Protection. It also allows to configure the Microsoft Sentinel incident. A summary comment will be posted to document th
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # CYFIRMA - Medium severity TOR Node Network Indicators - Block Recommended Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This KQL query identifies network-based indicators from CYFIRMA intelligence that are associated with the role 'TOR'.  These indicators may include IP addresses, domains, and URLs related to Tor network activity.  Threat actors often use Tor for anonymous communication, command and control, data exfiltration, and evasion of network defenses.
 
 | Attribute | Value |

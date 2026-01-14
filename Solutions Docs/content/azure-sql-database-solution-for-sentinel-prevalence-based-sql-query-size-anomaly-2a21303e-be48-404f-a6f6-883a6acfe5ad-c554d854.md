@@ -1,5 +1,11 @@
 # Prevalence Based SQL Query Size Anomaly
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Applications using SQL will generally make repeated similar requests for data as users interact with the application, this hunting query will find instances where an unusual number of tokens have been seen grouped on the client application and username. The query will calculate the prevalence for the token sizes based on historical activity from grouped application and user and show instances where an unusual number of tokens were observed. This query is designed to be run against application a
 
 | Attribute | Value |

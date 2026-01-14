@@ -1,5 +1,11 @@
 # Credential Dumping Tools - File Artifacts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects the creation of credential dumping tools files. Several credential dumping tools export files with hardcoded file names. Ref: https://jpcertcc.github.io/ToolAnalysisResultSheet/
 
 | Attribute | Value |

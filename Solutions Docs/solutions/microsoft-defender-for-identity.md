@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Defender for Identity Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is) solution for Microsoft Sentinel allows you to ingest [security alerts](https://docs.microsoft.com/defender-for-identity/suspicious-activity-guide) reported in the Microsoft Defender for Identity platform to get better insights into the identity posture of your organization’s Active Directory environment.
 
 

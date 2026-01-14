@@ -1,5 +1,11 @@
 # VMware Cloud Web Security - Policy Change Detected
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This Analytics rule provides notifications when a VMware CWS policy has been modified. These alerts serve audit purposes. Policy changes might lower the level of security controls.
 
 | Attribute | Value |

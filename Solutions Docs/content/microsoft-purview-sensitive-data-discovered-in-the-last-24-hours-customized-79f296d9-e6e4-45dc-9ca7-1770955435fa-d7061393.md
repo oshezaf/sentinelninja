@@ -1,5 +1,11 @@
 # Sensitive Data Discovered in the Last 24 Hours - Customized
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Customized query used to identify specific classifications and parameters that have been discovered on assets in the last 24 hours by Microsoft Purview. By default, the query identifies Social Security Numbers detected, but the specific classification monitored along with other data fields can be adjusted. A list of supported Microsoft Purview classifications can be found here: https://docs.microsoft.com/azure/purview/supported-classifications
 
 | Attribute | Value |

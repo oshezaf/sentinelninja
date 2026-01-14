@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Protocols passing authentication in cleartext (ASIM Network Session schema)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query identifies cleartext protocols like telnet, POP3, IMAP, and non-anonymous FTP that could leak sensitive information. These protocols may use SSL, but usually on different ports.
 
 | Attribute | Value |

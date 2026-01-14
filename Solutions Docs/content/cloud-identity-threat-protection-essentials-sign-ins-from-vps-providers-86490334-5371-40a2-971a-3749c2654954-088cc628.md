@@ -1,5 +1,11 @@
 # Sign-ins From VPS Providers
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query finds successful logons from known VPS providers with suspicious token patterns. It's not exhaustive but covers prevalent providers. Now includes UEBA logs IdentityInfo and BehaviorAnalytics for context.
 
 | Attribute | Value |

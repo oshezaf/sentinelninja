@@ -1,5 +1,11 @@
 # Azure secure score user risk policy
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query searches for an active Azure Premium P2 license is required to use and edit this policy.   You will be required to have setup the MFA Policy before activating this policy
 
 | Attribute | Value |

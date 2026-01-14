@@ -1,5 +1,11 @@
 # Veeam-CollectConfigurationBackups
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 A Microsoft Sentinel playbook that automatically runs configuration backup sessions on Veeam Backup & Replication servers on schedule. The playbook gets Veeam Backup & Replication settings from the watchlist, runs the configuration backup session, and collects the session result.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Tenable.io - Launch Scan
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Launches scan by scan id provided during the playbook deployment. 2. Adds information about launched scan as a comment to the incident.
 
 | Attribute | Value |

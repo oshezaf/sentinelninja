@@ -1,5 +1,11 @@
 # Tanium-QuarantineHosts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 During an investigation, it may be critical to isolate endpoints quickly if a compromise is detected. It's also important to track quarantine actions for auditing purposes. This playbook starts with a Microsoft Sentinel incident, gets the hosts associated with that incident, then directs Tanium to quarantine those hosts. The status of the quarantine operation is commented on the Microsoft Sentinel incident. See [Tanium Help](https://help.tanium.com/bundle/ConnectAzureSentinel/page/Integrations/M
 
 | Attribute | Value |

@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/greynoise_logomark_black.svg" alt="GreyNoiseThreatIntelligence Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [GreyNoise Threat Intelligence](https://www.greynoise.io/) solution for Microsoft Sentinel provides context to IP addresses seen in your environment by querying the GreyNoise API. GreyNoise collects, analyzes, and labels data on IPs that scan the internet and saturate security tools with noise. We provides near real time, actionable threat intelligence from our proprietary network of over 3,100 sensors running worldwide. This unique perspective helps analysts spend less time on irrelevant or harmless activity, and more time on targeted and emerging threats. 
  [Learn More about GreyNoise Threat Intelligence](https://www.greynoise.io/) | [GreyNoise Docs](https://docs.greynoise.io)
 

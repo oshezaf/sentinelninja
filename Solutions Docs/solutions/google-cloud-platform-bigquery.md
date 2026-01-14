@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Google Cloud Platform BigQuery Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 [Google Cloud Platform BigQuery](https://cloud.google.com/bigquery/?utm_source=google&utm_medium=cpc&utm_campaign=japac-IN-all-en-dr-BKWS-all-hv-trial-EXA-dr-1605216&utm_content=text-ad-none-none-DEV_c-CRE_634266747298-ADGP_Hybrid%20%7C%20BKWS%20-%20EXA%20%7C%20Txt%20~%20Data%20Analytics_BigQuery_big%20query_main-KWID_43700074201092957-aud-1185880979976%3Akwd-525879649110&userloc_9299054-network_g&utm_term=KW_gcp%20big%20query&gclid=CjwKCAiAr4GgBhBFEiwAgwORrVPpFnGin4naxZq3T9z0wQYW-Ns4thhllwvxkfo5LT4ymZuE8tZVehoCVUkQAvD_BwE&gclsrc=aw.ds) is a completely serverless and cost-effective enterprise data warehouse that works across clouds and scales with your data, with BI, machine learning and AI built in. Integrating it with Microrsoft sentinel will give the ability to enrich incident, create watch list for close monitoring and fetch big query results as part of incident remediation process.
 
 ## Solution Information

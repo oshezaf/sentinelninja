@@ -1,5 +1,11 @@
 # Create API Token (Okta)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Okta API tokens are used to authenticate requests to Okta APIs. This query searches for attempts to create new API Token.  Refrence: https://developer.okta.com/docs/reference/api/event-types/
 
 | Attribute | Value |

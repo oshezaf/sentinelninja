@@ -1,5 +1,11 @@
 # Sensitive Data Discovered in the Last 24 Hours
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies all classifications that have been detected on assets during a scan by Microsoft Purview within the last 24 hours.
 
 | Attribute | Value |

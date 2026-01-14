@@ -1,5 +1,11 @@
 # Stale AWS policy attachment to identity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The policy detects 'AWS policies' attached to IAM users or roles that have not used it during the last X days. It is recommended to remove unused policies from identities to reduce risk.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Pure Storage FlashBlade File System Snapshot
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious activity and it takes files system snapshot of specific file systems listed in key vault
 
 | Attribute | Value |

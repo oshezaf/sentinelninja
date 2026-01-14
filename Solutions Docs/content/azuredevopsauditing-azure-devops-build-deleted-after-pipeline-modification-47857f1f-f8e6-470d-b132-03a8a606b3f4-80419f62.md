@@ -1,5 +1,11 @@
 # Azure DevOps - Build Deleted After Pipeline Modification
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Attackers may delete builds after modifying pipelines to minimize traces. This query spots such deletions within an hour of pipeline changes, aiding in system footprint reduction.
 
 | Attribute | Value |

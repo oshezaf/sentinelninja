@@ -1,5 +1,11 @@
 # Login attempts using Legacy Auth
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies use of legacy authentication in Microsoft Entra ID sign-in activity, which can bypass Azure Conditional Access policies. It includes UEBA logs IdentityInfo and BehaviorAnalytics for context.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Incident Assignment Shifts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will assign an Incident to an owner based on the Shifts schedule in Microsoft Teams. When an incident is assigned, the incident owner will be notified via email. Incidents are assigned to users based on the following criteria:<br> *Only users who have started their shifts during the time the Logic App runs will be considered. *Users who still have at least 1 hours left before going off shift (can be configured in playbook) *User with the least incidents assigned on the current Shif
 
 | Attribute | Value |

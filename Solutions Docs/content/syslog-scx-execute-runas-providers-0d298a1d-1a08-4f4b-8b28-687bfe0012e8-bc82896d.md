@@ -1,5 +1,11 @@
 # SCX Execute RunAs Providers
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query uses AUOMS security events to examine SCX Execute RunAs providers. These providers execute UNIX/Linux commands/scripts from /var/opt/microsoft/scx/tmp. SCXcore is used in various Microsoft products.
 
 | Attribute | Value |

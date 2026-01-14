@@ -1,5 +1,11 @@
 # Credential errors stateful anomaly on database
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query batches of distinct SQL queries that failed with error codes that might indicate malicious attempts to gain illegitimate access to the data. When Brute Force attacks are attempted, majority of logins will use wrong credentials, thus will fail with error code 18456. Thus, if we see a large number of logins with such error codes, this could indicate Brute Force attack.
 
 | Attribute | Value |

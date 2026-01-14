@@ -1,5 +1,11 @@
 # Policy version set to default
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 An attacker with SetDefaultPolicyVersion permissions could escalate privileges through existing policy versions that are not currently in use. More about this API at https://docs.aws.amazon.com/IAM/latest/APIReference/API_SetDefaultPolicyVersion.html 
 
 | Attribute | Value |

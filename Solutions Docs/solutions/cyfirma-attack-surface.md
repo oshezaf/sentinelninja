@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="Cyfirma Attack Surface Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The CYFIRMA Attack Surface solution provides ability to gain continuous visibility into their external digital footprint directly within Microsoft Sentinel. This integration enhances your security posture by identifying exposed assets, misconfigurations, and vulnerabilities across internet-facing infrastructure—enabling faster response to potential threats and reducing the attack surface before adversaries can exploit it. By ingesting enriched attack surface intelligence—covering open ports, vulnerable IPs, cloud misconfigurations, certificate issues, and more—into Microsoft Sentinel, security teams can correlate findings with other threat indicators, automate incident response, and drive proactive defense measures.
 
 ## Solution Information

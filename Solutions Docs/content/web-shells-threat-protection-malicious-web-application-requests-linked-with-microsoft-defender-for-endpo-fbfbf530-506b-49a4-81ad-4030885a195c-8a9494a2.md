@@ -1,5 +1,11 @@
 # Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Takes Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts where web scripts are present in the evidence and correlates with requests made to those scripts in the WCSIISLog to surface new alerts for potentially malicious web request activity. The lookback for alerts is set to 1h and the lookback for W3CIISLogs is set to 7d. A sample set of popular web script extensions has been provided in scriptExtensions that should be tailored to your environment.
 
 | Attribute | Value |

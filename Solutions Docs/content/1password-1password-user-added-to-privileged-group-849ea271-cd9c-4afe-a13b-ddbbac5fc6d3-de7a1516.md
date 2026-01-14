@@ -1,5 +1,11 @@
 # 1Password - User added to privileged group
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This will alert when a user is added to a privileged group which has been implemented by an actor that was not the target user account. Once the analytics rule is triggered it will group all related future alerts for upto 30 minutes when all related entities are the same.  Ref: https://1password.com/ Ref: https://github.com/securehats/
 
 | Attribute | Value |

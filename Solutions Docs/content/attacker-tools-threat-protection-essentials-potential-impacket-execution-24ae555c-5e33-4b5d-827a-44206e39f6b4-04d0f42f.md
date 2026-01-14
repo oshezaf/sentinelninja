@@ -1,5 +1,11 @@
 # Potential Impacket Execution
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query identifies execution of Impacket tool. Impacket is a popular tool used by attackers for remote service execution,     Kerberos   manipulation and Windows credential dumping.
 
 | Attribute | Value |

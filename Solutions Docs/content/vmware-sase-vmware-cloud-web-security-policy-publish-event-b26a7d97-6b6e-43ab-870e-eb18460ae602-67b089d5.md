@@ -1,5 +1,11 @@
 # VMware Cloud Web Security - Policy Publish Event
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This alert is capturing events when VMware CWS policies were published. During publish, the VMware Edge Cloud Orchestrator deploys the CWS policies in SASE POPs, making them effective. All new rules will be enforced. Depending on the contents of the policy, this might create an impact on the CWS Data Plane traffic.
 
 | Attribute | Value |

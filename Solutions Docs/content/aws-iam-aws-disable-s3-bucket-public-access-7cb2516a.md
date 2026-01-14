@@ -1,5 +1,11 @@
 # AWS - Disable S3 Bucket Public Access
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook disables public access AWS S3 bucket. It is triggered by an incident in Microsoft Sentinel and perform the following actions: 1. Get the Bucket Name from incident entities. 2. Call the AWS IAM Function App Connector to disable public access of S3 bucket. 3. Add a comment to the incident with the result of the action.
 
 | Attribute | Value |

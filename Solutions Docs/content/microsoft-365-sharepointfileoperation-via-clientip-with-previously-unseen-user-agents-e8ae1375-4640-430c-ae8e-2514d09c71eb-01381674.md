@@ -1,5 +1,11 @@
 # SharePointFileOperation via clientIP with previously unseen user agents
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 New user agents associated with a clientIP for SharePoint file uploads/downloads.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # ServiceNow TISC Batch Indicator Uploader
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will write indicators in batch to ThreatIntelligenceIndicator log analytics table. This playbook referenced by **ServiceNowTISC-Import_Observables_Batch** playbook -- which calls the ServiceNow TISC API to get observables and then calls this playbook to write them to ThreatIntelligenceIndicator table.
 
 | Attribute | Value |

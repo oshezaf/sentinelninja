@@ -1,5 +1,11 @@
 # Google Directory - Enrich Incident With User Info
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Gets users from the incident. 2. [Obtains information about user.](https://developers.google.com/admin-sdk/directory/reference/rest/v1/users/get) 3. Enriches the incident with the obtained info.
 
 | Attribute | Value |

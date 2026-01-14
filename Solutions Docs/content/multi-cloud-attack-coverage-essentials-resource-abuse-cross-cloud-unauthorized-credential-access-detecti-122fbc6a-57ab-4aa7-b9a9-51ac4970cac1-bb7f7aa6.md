@@ -1,5 +1,11 @@
 # Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection correlates AWS GuardDuty Credential Access alerts related to Amazon Relational Database Service (RDS) activity with Azure portal sign-in activities. It identifies successful and failed logins, anomalous behavior, and malicious IP access. By joining these datasets on network entities and IP addresses, it detects unauthorized credential access attempts across AWS and Azure resources, enhancing cross-cloud security monitoring.
 
 | Attribute | Value |

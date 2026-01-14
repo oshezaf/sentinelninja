@@ -1,5 +1,11 @@
 # Veeam-SetupConnections
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 A Microsoft Sentinel playbook that configures Key Vault secrets and hybrid connections for Veeam servers. The playbook gets server settings and Key Vault secrets from vbr_settings and vone_settings watchlists, creates Key Vault IDs, and sets all collection flags to True if required.
 
 | Attribute | Value |

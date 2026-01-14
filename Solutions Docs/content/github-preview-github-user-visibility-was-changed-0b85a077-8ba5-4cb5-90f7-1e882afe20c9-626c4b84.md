@@ -1,5 +1,11 @@
 # (Preview) GitHub - User visibility Was changed
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detect activities when a user visibility Was changed. This query runs every day and its severity is Medium.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Account created or deleted by non-approved user
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies accounts that were created or deleted by a defined list of non-approved user principal names. Add to this list before running the query for accurate results. Ref : https://docs.microsoft.com/azure/active-directory/fundamentals/security-operations-user-accounts
 
 | Attribute | Value |

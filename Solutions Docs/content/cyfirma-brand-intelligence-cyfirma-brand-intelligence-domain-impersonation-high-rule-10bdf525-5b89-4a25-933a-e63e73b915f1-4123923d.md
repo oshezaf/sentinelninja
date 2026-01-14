@@ -1,5 +1,11 @@
 # CYFIRMA - Brand Intelligence - Domain Impersonation High Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 "This analytics rule detects high-risk domain impersonation activity, where newly registered or existing domains closely resemble the legitimate brand name or organizational assets.  These suspicious domains may use typosquatting, homoglyphs, or brand keywords to mislead users, steal credentials, or host phishing/malicious content.  The domains are identified through CYFIRMA's external threat intelligence feeds and flagged due to potential misuse in impersonation, fraud, or social engineering at
 
 | Attribute | Value |

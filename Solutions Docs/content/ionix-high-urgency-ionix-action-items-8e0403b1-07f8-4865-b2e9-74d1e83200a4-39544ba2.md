@@ -1,5 +1,11 @@
 # High Urgency IONIX Action Items
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query creates an alert for active IONIX Action Items with high urgency (9-10).  Urgency can be altered using the "min_urgency" variable in the query.
 
 | Attribute | Value |

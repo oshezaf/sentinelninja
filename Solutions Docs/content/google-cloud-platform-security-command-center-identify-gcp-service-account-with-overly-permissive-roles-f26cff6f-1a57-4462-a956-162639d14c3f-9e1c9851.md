@@ -1,5 +1,11 @@
 # Identify GCP Service Account with Overly Permissive Roles
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies Google Cloud Platform (GCP) service accounts with admin privileges using findings from the Security Command Center.
 
 | Attribute | Value |

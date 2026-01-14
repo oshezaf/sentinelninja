@@ -1,5 +1,11 @@
 # Account Elevated to New Role
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects an account that is elevated to a new role where that account has not had that role in the last 14 days.   Role elevations are a key mechanism for gaining permissions, monitoring which users have which roles, and for anomalies in those roles is useful for finding suspicious activity.   Ref: https://docs.microsoft.com/azure/active-directory/fundamentals/security-operations-privileged-accounts#changes-to-privileged-accounts
 
 | Attribute | Value |

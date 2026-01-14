@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect presence of private IP addresses in URLs (ASIM Web Session)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule identifies requests made to atypical URLs, as malware can exploit IP addresses for communication with command-and-control (C2) servers. The detection identifies network requests that contain either plain text or Base64 encoded IP addresses. Alerts are triggered when a private IP address is observed as plain text or base64 encoded in an outbound web request. This method of concealing the IP address was observed in the utilization of the RunningRAT tool by POLONIUM.
 
 | Attribute | Value |

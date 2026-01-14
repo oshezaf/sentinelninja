@@ -1,5 +1,11 @@
 # Login profile updated
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 An attacker could use UpdateLoginProfile permissions for privilege escalation by changing the victim user password. More about this API at https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateLoginProfile.html 
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Azure DevOps Personal Access Token (PAT) misuse
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This Alert detects whenever a PAT is used in ways that PATs are not normally used. May require an allow list and baselining. Reference - https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page Use this query for baselining: ADOAuditLogs | distinct OperationName
 
 | Attribute | Value |

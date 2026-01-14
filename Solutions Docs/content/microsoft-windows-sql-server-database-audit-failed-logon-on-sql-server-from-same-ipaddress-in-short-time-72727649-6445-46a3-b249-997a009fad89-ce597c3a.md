@@ -1,5 +1,11 @@
 # Failed Logon on SQL Server from Same IPAddress in Short time Span
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects multiple failed logon attempts from the same IP within a short span of time. It relies on the SQLEvent KQL Parser function.
 
 | Attribute | Value |

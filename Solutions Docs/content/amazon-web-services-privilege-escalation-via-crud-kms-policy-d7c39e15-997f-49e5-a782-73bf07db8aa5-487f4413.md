@@ -1,5 +1,11 @@
 # Privilege escalation via CRUD KMS policy
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detected usage of AttachUserPolicy/AttachGroupPolicy/AttachRolePolicy by CRUD KMS policy. Attackers could use these operations for privilege escalation. Verify these actions with the user.
 
 | Attribute | Value |

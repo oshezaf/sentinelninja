@@ -1,5 +1,11 @@
 # Risky base64 encoded command in URL
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects risky Base64-encoded commands in web requests. It identifies potential C2 server communication and illuminates injected webshells. Note that base64 is case-sensitive, requiring multiple permutations for full coverage.
 
 | Attribute | Value |

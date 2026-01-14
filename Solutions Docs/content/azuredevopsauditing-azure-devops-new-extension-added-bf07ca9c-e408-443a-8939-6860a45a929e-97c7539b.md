@@ -1,5 +1,11 @@
 # Azure DevOps New Extension Added
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Extensions add additional features to Azure DevOps. An attacker could use a malicious extension to conduct malicious activity.  This query looks for new extensions that are not from a configurable list of approved publishers.
 
 | Attribute | Value |

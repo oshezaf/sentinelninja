@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/forescout-logo.svg" alt="Forescout eyeInspect for OT Security Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Forescout eyeInspect is a cybersecurity platform designed for Operational Technology (OT) and Industrial Control Systems (ICS) environments. It provides visibility into network devices, threat detection, and risk management for critical infrastructure like power grids and manufacturing plants. eyeInspect uses deep packet inspection of OT/ICS protocols to establish a baseline of network behavior and identify potential threats and vulnerabilities.  Forescout eyeInspect helps OT/ICS industry customers to achieve end-to-end cyber resiliency of OT/ICS network with a comprehensive asset risk framework and threat detection through deep packet inspection of all industrial network protocols. Forescout eyeInspect defends customers’ most critical infrastructure, with thousands of OT-specific threat indicators and powerful anomaly detection through a platform that enables organizations across the globe to act on identified risks and detect cyber threats before they lead to operational downtime.  This solution integrates Forescout eyeInspect with Microsoft Sentinel. This integration facilitates comprehensive view of OT Asset data and Alerts, and helps with enhanced security analysis with Microsoft Sentinel tools.
 
 ## Solution Information

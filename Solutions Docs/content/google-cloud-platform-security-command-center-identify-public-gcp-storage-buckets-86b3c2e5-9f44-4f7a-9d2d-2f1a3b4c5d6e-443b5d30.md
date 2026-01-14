@@ -1,5 +1,11 @@
 # Identify Public GCP Storage Buckets
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies Google Cloud Storage buckets that are publicly accessible using Security Command Center findings (PUBLIC_BUCKET_ACL).
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # CYFIRMA - Attack Surface - Open Ports High Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule is triggered when CYFIRMA identifies open and publicly accessible ports on internet-facing assets. Exposed services may include SSH, RDP, HTTP, or other potentially sensitive ports, increasing the risk of unauthorized access, exploitation, or reconnaissance by threat actors. Monitoring open ports is critical to reducing the external attack surface and preventing misuse through brute force, service vulnerabilities, or protocol exploitation.
 
 | Attribute | Value |

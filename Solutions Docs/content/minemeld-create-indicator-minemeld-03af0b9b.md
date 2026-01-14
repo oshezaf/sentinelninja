@@ -1,5 +1,11 @@
 # Create Indicator - Minemeld
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook search for indicators in Minemeld related to the entities(IP, filehash, URL) gathered from Sentinel incident. If the search result is positive a comment stating the indicator is already present or it creates a new indicator in Minemeld.
 
 | Attribute | Value |

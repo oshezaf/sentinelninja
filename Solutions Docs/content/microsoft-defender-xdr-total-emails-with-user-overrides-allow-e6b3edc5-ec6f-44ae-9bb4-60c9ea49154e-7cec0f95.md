@@ -1,5 +1,11 @@
 # Total Emails with User Overrides (Allow)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query visualises the amount of emails subject to a user type policy with action of allow, summarizing the data by type of override and threats type found
 
 | Attribute | Value |

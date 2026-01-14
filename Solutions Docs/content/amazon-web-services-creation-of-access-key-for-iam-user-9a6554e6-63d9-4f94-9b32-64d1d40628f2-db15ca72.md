@@ -1,5 +1,11 @@
 # Creation of Access Key for IAM User
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Establishes persistence by creating an access key on an existing IAM user. This type of action should be validated by Account Admin of AWS Account. Ref : https://stratus-red-team.cloud/attack-techniques/AWS/aws.persistence.iam-backdoor-user/
 
 | Attribute | Value |

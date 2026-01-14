@@ -1,5 +1,11 @@
 # Cyble Vision Alerts Compromised Files
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects compromised files containing credential or logon data (stealer logs) related to monitored entities. Uses Alerts_compromised_files parser to expose file paths, log objects, and extracted email identifiers.
 
 | Attribute | Value |

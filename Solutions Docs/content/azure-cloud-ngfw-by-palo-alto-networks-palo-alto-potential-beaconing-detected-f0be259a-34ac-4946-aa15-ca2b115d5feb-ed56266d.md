@@ -1,5 +1,11 @@
 # Palo Alto - potential beaconing detected
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies beaconing patterns from Palo Alto Network traffic logs based on recurrent timedelta patterns. The query leverages various KQL functions to calculate time deltas and then compares it with total events observed in a day to find percentage of beaconing. This outbound beaconing pattern to untrusted public networks should be investigated for any malware callbacks or data exfiltration attempts. Reference Blog: http://www.austintaylor.io/detect/beaconing/intrusion/detection/system/command/c
 
 | Attribute | Value |

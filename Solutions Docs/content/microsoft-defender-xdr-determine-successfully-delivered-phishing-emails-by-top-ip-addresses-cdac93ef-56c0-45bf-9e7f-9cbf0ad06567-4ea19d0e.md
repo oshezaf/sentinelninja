@@ -1,5 +1,11 @@
 # Determine Successfully Delivered Phishing Emails by top IP Addresses
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies phishing emails sent that were successfully delivered, by top IP addressess. cutoff default value is 5, adjust the value as needed.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Linux scheduled task Aggregation
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query aggregates and charts cron job data based on unique user-command pairs. It shows the frequency of commands, the number of computers they've run on, and their percentage of total tenant computers.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Rare client observed with high reverse DNS lookup count
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies clients with a high reverse DNS counts that could be carrying out reconnaissance or discovery activity. Alerts are generated if the IP performing such reverse DNS lookups was not seen doing so in the preceding 7-day period.
 
 | Attribute | Value |

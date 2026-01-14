@@ -1,5 +1,11 @@
 # Unusual Volume of Password Updated or Removed
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule will check if there is an unnormal activity of sites that are deleted or changed per user.  The normal amount of actions is calculated based on the previous 14 days of activity. If there is a significant increase, an incident will be created.
 
 | Attribute | Value |

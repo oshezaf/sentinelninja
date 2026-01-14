@@ -1,5 +1,11 @@
 # EnrichIP-GeoInfo-Neustar
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Gets IP Addresses from incident. 2. Gets Geographical location information from Neustart IP GeoPoint API. 3. Summarize the details and add as a comment to the incident.
 
 | Attribute | Value |

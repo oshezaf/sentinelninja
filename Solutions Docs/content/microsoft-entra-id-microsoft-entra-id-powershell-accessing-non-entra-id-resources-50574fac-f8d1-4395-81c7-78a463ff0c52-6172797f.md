@@ -1,5 +1,11 @@
 # Microsoft Entra ID PowerShell accessing non-Entra ID resources
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'This will alert when a user or application signs in using Microsoft Entra ID PowerShell to access non-Active Directory resources, such as the Azure Key Vault, which may be undesired or unauthorized behavior. For capabilities and expected behavior of the Microsoft Entra ID PowerShell module, see: https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0. For further information on Microsoft Entra ID Signin activity reports, see: https://docs.microsoft.com/azure/active-directory/re
 
 | Attribute | Value |

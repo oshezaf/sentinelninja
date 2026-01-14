@@ -1,5 +1,11 @@
 # Office Mail Forwarding - Hunting Version
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Adversaries often abuse email-forwarding rules to monitor victim activities, steal information, and gain intelligence on the victim or their organization. This query highlights cases where user mail is being forwarded, including to external domains.
 
 | Attribute | Value |

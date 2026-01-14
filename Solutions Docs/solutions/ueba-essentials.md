@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="UEBA Essentials Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Microsoft Sentinel UEBA content package will provide you with various queries based on UEBA tables, that allows you to hunt for tailored threat scenarios. You'll be able to investigate and search for anomalous activities over UEBA's enriched data, and get inspired to customize queries according to your own use-cases.
 
 **Important :** Some of the queries that are part of this solution, make use of [Built-in Watchlist Templates](https://docs.microsoft.com/azure/sentinel/watchlist-schemas) and will not work unless the corresponding watchlist is created. Other queries may requires changes to match your environment details.

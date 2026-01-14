@@ -1,5 +1,11 @@
 # QualysVM-LaunchVMScan-GenerateReport
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Get IP Addresses from incident. 2. Scan IP Addresses with Qualys Scanner. 3. Generate the Scan Report. 4. Download the report and store it to a blob storage. 5. Add the link of report as a comment to the incident.
 
 | Attribute | Value |

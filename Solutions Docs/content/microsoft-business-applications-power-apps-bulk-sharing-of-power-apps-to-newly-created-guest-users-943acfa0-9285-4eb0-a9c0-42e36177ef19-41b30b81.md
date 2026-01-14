@@ -1,5 +1,11 @@
 # Power Apps - Bulk sharing of Power Apps to newly created guest users
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies unusual bulk sharing, based on a predefined threshold in the query, of Power Apps to newly created Microsoft Entra guest users.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # User Accounts - Sign in Failure due to CA Spikes
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
  Identifies spike in failed sign-ins from user accounts due to conditional access policied. Spike is determined based on Time series anomaly which will look at historical baseline values. Ref : https://docs.microsoft.com/azure/active-directory/fundamentals/security-operations-user-accounts#monitoring-for-failed-unusual-sign-ins This query has also been updated to include UEBA logs IdentityInfo and BehaviorAnalytics for contextual information around the results.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Microsoft Entra ID Role Management Permission Grant
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies when the Microsoft Graph RoleManagement.ReadWrite.Directory (Delegated or Application) permission is granted to a service principal. This permission allows an application to read and manage the role-based access control (RBAC) settings for your company's directory. An adversary could use this permission to add an Microsoft Entra ID object to an Admin directory role and escalate privileges. Ref : https://docs.microsoft.com/graph/permissions-reference#role-management-permissions Ref :
 
 | Attribute | Value |

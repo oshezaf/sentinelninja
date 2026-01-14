@@ -1,5 +1,11 @@
 # Remediate assets on prisma cloud
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook provides/updates the compliance security posture details of asset in comments section of triggered incident so that SOC analysts can directly take corrective measure to prevent the attack
 
 | Attribute | Value |

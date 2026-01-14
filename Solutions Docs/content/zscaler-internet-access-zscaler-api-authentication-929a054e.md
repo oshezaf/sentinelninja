@@ -1,5 +1,11 @@
 # Zscaler API authentication
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook generates access token in Zscaler API. Call this playbook as a step in functional Zscaler playbooks. The output is a JSessionID which can be used to do other API actions
 
 | Attribute | Value |

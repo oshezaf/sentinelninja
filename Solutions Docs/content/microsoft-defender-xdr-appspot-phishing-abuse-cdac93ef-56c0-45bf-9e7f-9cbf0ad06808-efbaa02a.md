@@ -1,5 +1,11 @@
 # Appspot Phishing Abuse
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query helps surface phishing campaigns associated with Appspot abuse.These emails frequently contain phishing links that utilize the recipients' own email address as a unique identifier in the URI. This campaign was published on Twitter by @MsftSecIntel at this link: https://twitter.com/MsftSecIntel/status/1374148156301004800 Reference - https://twitter.com/MsftSecIntel/status/1374148156301004800
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Remote Login Performed with WMI
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 It detects authentication attempts performed with WMI. Adversaries may abuse WMI to execute malicious commands and payloads. Ref: https://www.mandiant.com/resources/bypassing-network-restrictions-through-rdp-tunneling
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Windows Binaries Executed from Non-Default Directory
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The query detects Windows binaries, that can be executed from a non-default directory (e.g. C:\Windows\, C:\Windows\System32 etc.).  Ref: https://lolbas-project.github.io/
 
 | Attribute | Value |

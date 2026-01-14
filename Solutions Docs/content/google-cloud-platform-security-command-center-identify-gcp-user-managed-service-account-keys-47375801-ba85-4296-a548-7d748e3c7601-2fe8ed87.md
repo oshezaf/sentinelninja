@@ -1,5 +1,11 @@
 # Identify GCP User-Managed Service Account Keys
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies user-managed service account keys reported by Security Command Center findings (USER_MANAGED_SERVICE_ACCOUNT_KEY).
 
 | Attribute | Value |

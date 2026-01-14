@@ -1,5 +1,11 @@
 # DataminrPulseAlertEnrichment
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook provides an end-to-end example of how alert enrichment works. This will extract the IP, Domain, HostName, URL or Hashes from the generated incident and call the Get alerts API of Dataminr Pulse to get the data associated with that parameter and enrich the incident by adding Dataminr Pulse alerts data as an incident comment.
 
 | Attribute | Value |

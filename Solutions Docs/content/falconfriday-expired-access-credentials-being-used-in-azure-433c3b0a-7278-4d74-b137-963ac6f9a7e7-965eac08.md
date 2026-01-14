@@ -1,5 +1,11 @@
 # Expired access credentials being used in Azure
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query searches for logins with an expired access credential (for example an expired cookie). It then matches the IP address from which the expired credential access occurred with the IP addresses of successful logins. If there are logins with expired credentials, but no successful logins from an IP, this might indicate an attacker has copied the authentication cookie and is re-using it on another machine.
 
 | Attribute | Value |

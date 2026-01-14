@@ -1,5 +1,11 @@
 # BTP - Cloud Integration access policy tampering
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies changes to access policies in SAP Cloud Integration. Access policies control authorization for integration artifacts, defining which users and roles can access specific integration flows and related content.  Unauthorized access policy manipulation could indicate: - Attacker granting themselves access to sensitive integration artifacts - Removal of security controls to enable further malicious activity - Defense evasion by modifying artifact references to hide unauthorized access
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Azure RBAC (Elevate Access)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects when a Global Administrator elevates access to all subscriptions and management groups in a tenant. When a Global Administrator elevates access they are assigned the User Access Administrator role at root scope. This Microsoft Sentinel Analytic Rule monitors who has elevated access in your tenant so that admins can take appropriate action. [Learn more](https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin?tabs=azure-portal)
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Powershell Empire Cmdlets Executed in Command Line
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies use of PowerShell Empire's cmdlets within the command line data of the PowerShell process, indicating potential use of the post-exploitation tool.
 
 | Attribute | Value |

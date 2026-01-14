@@ -1,5 +1,11 @@
 # Admin Submissions by DetectionMethod (Spam FP)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query visualises the original detection technology of emails submitted as spam false positive by admins
 
 | Attribute | Value |

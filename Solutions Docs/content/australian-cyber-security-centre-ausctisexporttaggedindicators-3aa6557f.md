@@ -1,5 +1,11 @@
 # AusCtisExportTaggedIndicators
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook gets triggered every hour and perform the following actions: 1. Get all the threat intelligence indicators from Microsoft Sentinel Workspace with given tag. 2. Filter all the indicators whose export in not completed. 3. Export the indicators to provided TAXII server.
 
 | Attribute | Value |

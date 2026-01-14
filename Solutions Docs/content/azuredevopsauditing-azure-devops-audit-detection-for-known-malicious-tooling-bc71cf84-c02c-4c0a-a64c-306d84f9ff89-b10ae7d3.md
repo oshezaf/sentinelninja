@@ -1,5 +1,11 @@
 # Azure DevOps Audit Detection for known malicious tooling
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Azure DevOps has been targeted over the years with a handful of toolkits.  This detection will look for some common signs known for a few of these tools.
 
 | Attribute | Value |

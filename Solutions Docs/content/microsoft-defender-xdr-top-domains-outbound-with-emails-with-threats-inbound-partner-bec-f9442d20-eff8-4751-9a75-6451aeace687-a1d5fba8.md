@@ -1,5 +1,11 @@
 # Top Domains Outbound with Emails with Threats Inbound (Partner BEC)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query visualises top outbound recipient domains by outbound email volume and shows total number of inbound emails with Threats from the same domains (as inbound senders)
 
 | Attribute | Value |

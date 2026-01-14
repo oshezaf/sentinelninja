@@ -1,5 +1,11 @@
 # Lambda UpdateFunctionCode
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This analytic is designed to detect an IAM user updating AWS lambda code via AWS CLI to gain persistent, further access into your AWS environment and to facilitate panting backdoors. An attacker may upload malicious code/binary to a lambda function which will be executed automatically when the function is triggered.
 
 | Attribute | Value |

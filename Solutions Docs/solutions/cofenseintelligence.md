@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CofenseTriage.svg" alt="CofenseIntelligence Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Cofense-Intelligence solution provides the capability to ingest Threat Indicators from the Cofense Intelligence platform to Threat Intelligence Indicators in Microsoft Sentinel and Cofense Intelligence Threat Intelligence Indicators from Microsoft Sentinel Threat Intelligence to Microsoft Defender for Endpoints. 
 
 **Underlying Microsoft Technologies used:**

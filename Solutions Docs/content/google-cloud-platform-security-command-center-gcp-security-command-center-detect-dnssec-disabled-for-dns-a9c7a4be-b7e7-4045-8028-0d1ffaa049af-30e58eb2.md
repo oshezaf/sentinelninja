@@ -1,5 +1,11 @@
 # GCP Security Command Center - Detect DNSSEC disabled for DNS zones
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects Google Cloud DNS zones where DNSSEC is disabled using Security Command Center findings (DNSSEC_DISABLED). Disabling DNSSEC increases risk of DNS hijacking and man-in-the-middle attacks. This analytic rule alerts on findings where DNSSEC is reported as disabled for a managed zone.
 
 | Attribute | Value |

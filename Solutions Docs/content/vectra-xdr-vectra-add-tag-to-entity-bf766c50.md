@@ -1,5 +1,11 @@
 # Vectra Add Tag To Entity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook extracts tags from incident comments and adds them to the entity if comment found with proper structure, otherwise it prompts the user for tags input to add them to the Vectra Entity.
 
 | Attribute | Value |

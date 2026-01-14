@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Joshua-Cyberiskvision Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 [Joshua Cyberiskvision](https://www.cyberiskvision.com/) enables organizations to define, monitor, analyze, and improve their level of Global Cybersecurity following a predictive and context-aware approach that uses a broad spectrum cyber intelligence-driven logic. The Joshua Solution automates the ingest of Joshua Cyberiskvision threat indicators into the ThreatIntelligenceIndicator table of Microsoft Sentinel workspace.
 
 ## Solution Information

@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyborgsecurity-logo-75px.svg" alt="Cyborg Security HUNTER Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Cyborg Security HUNTER](https://www.cyborgsecurity.com/) solution for Microsoft Sentinel helps analysts to configure the 'Open in Tool' button within the HUNTER platform, allowing the Microsoft Sentinel hunt packages to be deployed in the Microsoft Sentinel Platform
 
 ## Solution Information

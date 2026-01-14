@@ -1,5 +1,11 @@
 # Veeam-PerformConfigurationBackupOnIncident
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 A Microsoft Sentinel playbook that automatically runs configuration backup session when triggered by an incident. The playbook gets Veeam Backup & Replication settings from incident custom fields, runs the configuration backup session, and collects the session result.
 
 | Attribute | Value |

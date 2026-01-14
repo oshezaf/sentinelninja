@@ -1,5 +1,11 @@
 # Dataverse - Anomalous application user activity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies anomalies in activity patterns of Dataverse application (non-interactive) users, based on activity falling outside the normal pattern of use.
 
 | Attribute | Value |

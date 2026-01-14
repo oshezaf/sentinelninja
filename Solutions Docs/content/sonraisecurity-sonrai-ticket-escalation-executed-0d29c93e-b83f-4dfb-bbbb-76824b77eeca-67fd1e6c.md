@@ -1,5 +1,11 @@
 # Sonrai Ticket Escalation Executed
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Checks if Sonrai tickets have had a comment added.  It uses the action type to check if a ticket has had a comment added
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # GCP Security Command Center - Detect Firewall rules allowing unrestricted high-risk ports
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects GCP Firewall rules that allow unrestricted (0.0.0.0/0) ingress to high-risk ports using Google Cloud Security Command Center OPEN_FIREWALL findings. Publicly exposed management, database, and service ports (e.g., RDP 3389, SSH 22, SQL 1433/3306) significantly increase the risk of brute-force attacks, exploitation, and lateral movement.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # VMware SD-WAN Edge - Network Anomaly Detection - Potential Fragmentation Attack
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The VMware SD-WAN Edge appliance received packets potentially part of an IP Fragmentation attack or indicating an MTU mismatch.  An IP fragmentation attack is a cyberattack that exploits how IP packets are fragmented and reassembled. IP fragmentation is a process by which large IP packets are broken down into smaller packets to transmit them over networks with smaller Maximum Transmission Unit (MTU) sizes.  Attackers can exploit IP fragmentation in various ways, for example, Denial-of-service at
 
 | Attribute | Value |

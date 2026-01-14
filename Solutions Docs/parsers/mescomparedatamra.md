@@ -1,5 +1,11 @@
 # MESCompareDataMRA
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Parsers Index](parsers-index.md)
+
+---
+
 The Section to compare. Default value is "".
 
 ## Parser Information

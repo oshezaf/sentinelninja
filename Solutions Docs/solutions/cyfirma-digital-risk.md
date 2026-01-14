@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="Cyfirma Digital Risk Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The CYFIRMA Digital Risk solution integrates with Microsoft Sentinel to provide real-time intelligence on data exposures across dark web forums, ransomware groups, public sources, and code repositories. It enables organizations to detect leaked credentials, internal documents, source code, and PII/CIIs that could be exploited by threat actors. Enriched intelligence is ingested into Microsoft Sentinel, helping security teams correlate external threats with internal activity, detect compromised accounts, and automate incident response.
 
 ## Solution Information

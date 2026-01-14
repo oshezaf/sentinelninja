@@ -1,5 +1,11 @@
 # HTTP Trigger Entity Analyzer
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook is triggered by HTTP POST requests with entity information and performs automated investigation and enrichment of URL and User entities with asynchronous processing.
 
 | Attribute | Value |

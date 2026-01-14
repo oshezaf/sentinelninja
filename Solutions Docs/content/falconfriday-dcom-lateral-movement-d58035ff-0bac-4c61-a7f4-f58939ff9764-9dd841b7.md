@@ -1,5 +1,11 @@
 # DCOM Lateral Movement
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection looks for cases of close-time proximity between incoming network traffic on RPC/TCP, followed by the creation of a DCOM object, followed by the creation of a child process of the DCOM object.  The query first identifies incoming network traffic over RPC/TCP, followed by the creation of a DCOM object (process) within 2 seconds, followed by the creation of a child process of this DCOM object.
 
 | Attribute | Value |

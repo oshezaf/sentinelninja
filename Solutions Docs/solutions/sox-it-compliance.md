@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SOX IT Compliance Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Controls, including access governance, privileged activity, configuration changes, data integrity, and log monitoring. It consolidates data from Microsoft Entra ID, Defender for Identity, Microsoft 365, Azure Activity, SQL auditing, and Windows/Linux system logs.
 
 ## Solution Information

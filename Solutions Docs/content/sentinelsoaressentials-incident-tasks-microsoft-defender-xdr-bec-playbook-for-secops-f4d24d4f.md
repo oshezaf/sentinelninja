@@ -1,5 +1,11 @@
 # Incident tasks - Microsoft Defender XDR BEC Playbook for SecOps
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook add Incident Tasks based on Microsoft Defender XDR BEC Playbook for SecOps. This playbook will walk the analyst through four stages of responding to a BEC incident: containment, investigation, remediation and prevention. The step-by-step instructions will help you take the required remedial action to protect information and minimize further risks.
 
 | Attribute | Value |

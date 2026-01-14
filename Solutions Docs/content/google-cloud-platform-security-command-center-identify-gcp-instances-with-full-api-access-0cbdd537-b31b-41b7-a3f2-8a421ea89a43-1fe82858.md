@@ -1,5 +1,11 @@
 # Identify GCP Instances with Full API Access
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies Google Cloud Platform Compute Engine instances that are configured with the "Allow full access to all Cloud APIs" scope using Security Command Center FULL_API_ACCESS findings.
 
 | Attribute | Value |

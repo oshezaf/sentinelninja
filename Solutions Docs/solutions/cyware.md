@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyware-logo.svg" alt="Cyware Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Cyware solution for Microsoft Sentinel allows users to integrate Cyware and Microsoft Sentinel. Users can send events from Microsoft Sentinel to Cyware for further analysis. This solution also enables users to implement hunting queries that match events that are sent to Microsoft Sentinel from Cyware's Intel Exchange.
 
 ## Solution Information

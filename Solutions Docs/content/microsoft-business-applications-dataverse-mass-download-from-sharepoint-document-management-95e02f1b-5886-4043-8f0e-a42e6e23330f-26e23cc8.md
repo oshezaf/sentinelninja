@@ -1,5 +1,11 @@
 # Dataverse - Mass download from SharePoint document management
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies mass download (in the last hour) of files from SharePoint sites configured for document management in Dynamics 365. This analytics rule utilizes the MSBizApps-Configuration watchlist to identify SharePoint sites used for Document Management.
 
 | Attribute | Value |

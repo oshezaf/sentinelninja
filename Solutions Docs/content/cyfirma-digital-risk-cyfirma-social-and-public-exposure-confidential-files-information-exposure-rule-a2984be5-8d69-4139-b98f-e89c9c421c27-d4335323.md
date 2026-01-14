@@ -1,5 +1,11 @@
 # CYFIRMA - Social and Public Exposure - Confidential Files Information Exposure Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule detects Medium-severity alerts from CYFIRMA regarding exposure of confidential files or forms linked to internal or client-related information, publicly accessible on platforms.  These exposures could lead to data leakage, compliance violations, or targeted attacks.
 
 | Attribute | Value |

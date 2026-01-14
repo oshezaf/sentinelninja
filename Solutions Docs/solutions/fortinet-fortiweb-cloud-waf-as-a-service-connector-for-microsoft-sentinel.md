@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Fortinet FortiWeb Cloud WAF-as-a-Service connector](https://www.fortinet.com/products/web-application-firewall/fortiweb) solution for Microsoft Sentinel provides an automated approach for SecOps analysts to remediate attacks at application level by blocking suspicious IP and URL and also empowers to gather threat intelligence data for malicious IP activity. By leveraging the FortiWeb API, the connector can automate these security operations, tasks using Microsoft Sentinel Playbooks which can dramatically reduce the window that attackers can take advantage of.
 
  For questions about [FortiWeb Cloud](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortinet_waas?tab=Overview), please contact Fortinet at [azuresales@fortinet.com](mailto:azuresales@fortinet.com).

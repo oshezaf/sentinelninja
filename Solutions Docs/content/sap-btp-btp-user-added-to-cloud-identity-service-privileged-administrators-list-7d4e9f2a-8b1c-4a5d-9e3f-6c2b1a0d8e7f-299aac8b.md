@@ -1,5 +1,11 @@
 # BTP - User added to Cloud Identity Service privileged Administrators list
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies when a user is granted privileged administrator permissions in SAP Cloud Identity Service. These permissions include managing Identity Providers, Service Providers, Users, Groups, and Access controls.
 
 | Attribute | Value |

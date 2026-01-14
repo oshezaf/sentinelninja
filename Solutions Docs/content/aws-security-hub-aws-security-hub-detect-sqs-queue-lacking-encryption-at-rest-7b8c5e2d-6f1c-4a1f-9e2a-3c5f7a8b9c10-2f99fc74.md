@@ -1,5 +1,11 @@
 # AWS Security Hub - Detect SQS Queue lacking encryption at rest
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects Amazon SQS queues without server-side encryption at rest enabled, using AWS Security Hub control SQS.1 findings. Lack of encryption for SQS queues can expose sensitive message contents if underlying storage or backups are accessed by unauthorized parties.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> NetworkSummary_Source_Port
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This summary rule aggregates network session data using the ASIM normalized _Im_NetworkSession function. It creates hourly summaries of traffic grouped by source port, network direction, and device action. The output helps identify traffic patterns by port usage and action types over time, enabling efficient detection of unusual behavior or port-based anomalies.
 
 | Attribute | Value |

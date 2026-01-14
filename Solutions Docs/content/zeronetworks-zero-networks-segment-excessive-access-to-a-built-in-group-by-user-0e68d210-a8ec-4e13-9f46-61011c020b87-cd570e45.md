@@ -1,5 +1,11 @@
 # Zero Networks Segment - Excessive access to a built-in group by user
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 A rule was created which granted a user access to a large, built-in, group of assets.
 
 | Attribute | Value |

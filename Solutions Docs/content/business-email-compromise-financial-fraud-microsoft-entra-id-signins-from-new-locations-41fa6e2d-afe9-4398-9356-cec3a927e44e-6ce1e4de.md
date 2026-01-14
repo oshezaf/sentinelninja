@@ -1,5 +1,11 @@
 # Microsoft Entra ID signins from new locations
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies new Microsoft Entra ID sign-in locations compared to historical data, potentially indicating password spraying or brute force attacks. It includes UEBA logs IdentityInfo and BehaviorAnalytics for context.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Critical or High Severity Detections by User
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Creates an incident when a large number of Critical/High severity CrowdStrike Falcon sensor detections is triggered by a single user
 
 | Attribute | Value |

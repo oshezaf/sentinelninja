@@ -1,5 +1,11 @@
 # Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies previously unseen IP and user agents in a Dataverse instance following disabling of cookie binding protection. See https://docs.microsoft.com/power-platform/admin/block-cookie-replay-attack
 
 | Attribute | Value |

@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ForgeRock_Vert_Color_Logo_RGB_R_med.svg" alt="ForgeRock Common Audit for CEF Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [ForgeRock Common Audit](https://www.forgerock.com/platform/common-services/common-audit) for CEF solution for Microsoft Sentinel enables you to ingest data from the [ForgeRock Identity Platform](https://www.forgerock.com/identity-and-access-management-platform) via its common auditing framework. This enables you to extract and aggregate log data across the entire platform with common audit (CAUD) event handlers and unique IDs so that it can be tracked holistically, leveraging audit logging and reporting capabilities for integration with Microsoft Sentinel.
 
  This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 

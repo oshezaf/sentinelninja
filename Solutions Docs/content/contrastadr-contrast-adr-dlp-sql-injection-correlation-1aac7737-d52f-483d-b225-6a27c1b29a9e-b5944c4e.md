@@ -1,5 +1,11 @@
 # Contrast ADR - DLP SQL Injection Correlation
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects successful SQL injection attacks identified by Contrast ADR and correlates them with WAF/DLP logs. This rule identifies critical database security breaches that have bypassed initial defenses and may result in data exfiltration or unauthorized database access.
 
 | Attribute | Value |

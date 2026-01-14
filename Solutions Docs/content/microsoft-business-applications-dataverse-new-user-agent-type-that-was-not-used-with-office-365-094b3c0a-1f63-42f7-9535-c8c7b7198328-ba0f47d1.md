@@ -1,5 +1,11 @@
 # Dataverse - New user agent type that was not used with Office 365
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies users accessing Dynamics with a User Agent that has not been seen in any Office 365 workloads in the last 14 days.
 
 | Attribute | Value |

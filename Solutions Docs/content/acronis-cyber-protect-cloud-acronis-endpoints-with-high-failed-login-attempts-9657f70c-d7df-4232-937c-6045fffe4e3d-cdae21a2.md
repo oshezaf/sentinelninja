@@ -1,5 +1,11 @@
 # Acronis - Endpoints with high failed login attempts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Multiple endpoints with a high number of failed login attempts could indicate a password spraying attack, where an attacker tries different credentials across several machines.
 
 | Attribute | Value |

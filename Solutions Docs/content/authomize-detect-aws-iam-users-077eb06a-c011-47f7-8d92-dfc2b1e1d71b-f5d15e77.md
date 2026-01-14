@@ -1,5 +1,11 @@
 # Detect AWS IAM Users
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The policy detects IAM users across your AWS accounts, a practice that should be kept only for a small number of accounts. This is a default definition by Authomize and can be updated using the edit modal.
 
 | Attribute | Value |

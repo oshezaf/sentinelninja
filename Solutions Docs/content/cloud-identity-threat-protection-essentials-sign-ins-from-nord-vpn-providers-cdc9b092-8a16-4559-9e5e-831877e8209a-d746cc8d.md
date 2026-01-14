@@ -1,5 +1,11 @@
 # Sign-ins from Nord VPN Providers
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query tracks sign-ins via Nord VPN using a daily-updated API. Investigate unfamiliar sign-ins from VPNs unless common in your organization. It now includes UEBA logs IdentityInfo and BehaviorAnalytics for context.
 
 | Attribute | Value |

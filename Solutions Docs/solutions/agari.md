@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="Agari Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Agari Phishing Defense and Brand Protection Solution for Microsoft Azure Sentinel makes it easy to connect Agari email threat data to the Microsoft Sentinel SOAR, improving visibility into email threats, accelerating incident response, and driving SOC efficiency. The Agari Data Connector included in the solution supports every Agari product: [Agari Brand Protection](https://www.agari.com/insights/solution-briefs/agari-brand-protection/), [Agari Phishing Defense](https://www.agari.com/products/phishing-defense/), and [Agari Phishing Response](https://www.agari.com/products/phishing-response/). Leveraging Agari data to enrich and share threat intelligence across multiple applications helps safeguard your entire infrastructure against email threats. For more details about this solution refer to [https://www.agari.com/insights/solution-briefs/microsoft-azure-sentinel-integration/](https://www.agari.com/insights/solution-briefs/microsoft-azure-sentinel-integration/)
 
 **Underlying Microsoft Technologies used:**

@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Entrustlogo.svg" alt="Entrust identity as Service Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Entrust  offers Cloud-based identity and access management (IAM) solution with multi-factor authentication (MFA), credential-based password less access, and single sign-on (SSO). Integrating it with Microsoft Sentinel will give the ability to enrich incidents and mangae user entity access as part of incident remediation process.
 
 ## Solution Information

@@ -1,5 +1,11 @@
 # Multiple Explicit Credential Usage - 4648 events
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Query identifies credential abuse across hosts, using Security Event 4648 to detect multiple account connections to various machines, indicative of Solorigate-like patterns.
 
 | Attribute | Value |

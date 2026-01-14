@@ -1,5 +1,11 @@
 # CYFIRMA - High severity File Hash Indicators with Block Action Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query retrieves file hash indicators marked for blocking, with no assigned role, from the CyfirmaIndicators_CL table.  It extracts MD5, SHA1, and SHA256 hashes and includes threat metadata for use in preventive security controls such as EDRs, threat intel platforms, or automated blocklists.
 
 | Attribute | Value |

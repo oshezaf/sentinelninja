@@ -1,5 +1,11 @@
 # Semperis DSP Mimikatz's DCShadow Alert
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Mimikatz's DCShadow switch allows a user who has compromised an AD domain, to inject arbitrary changes into AD using a "fake" domain controller. These changes bypass the security event log and can't be spotted using normal AD tools. This rule looks for evidence that a machine has been used in this capacity.
 
 | Attribute | Value |

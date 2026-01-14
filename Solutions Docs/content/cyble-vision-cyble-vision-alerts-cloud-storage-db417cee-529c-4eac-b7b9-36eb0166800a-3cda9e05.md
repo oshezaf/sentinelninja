@@ -1,5 +1,11 @@
 # Cyble Vision Alerts Cloud Storage
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects cloud storage objects/paths discovered in ingestion (uses Alerts_cloud_storage parser). Creates incidents for discovered S3/GCS/Azure blob objects, includes bucket/object/url, size and workflow metadata. Mandatory custom details: MappedSeverity, Status, AlertID, Service.
 
 | Attribute | Value |

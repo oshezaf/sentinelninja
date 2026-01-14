@@ -1,5 +1,11 @@
 # URLhaus-CheckHashAndEnrichIncident
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the following actions: 1. [Gets Information](https://urlhaus-api.abuse.ch/#payloadinfo) from URLhaus by hashes, provided in the alert custom entities. 2. Enriches the incident with the obtained info.
 
 | Attribute | Value |

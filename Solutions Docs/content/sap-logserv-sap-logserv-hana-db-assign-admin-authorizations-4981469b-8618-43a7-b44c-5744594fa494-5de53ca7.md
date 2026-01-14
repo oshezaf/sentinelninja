@@ -1,5 +1,11 @@
 # SAP LogServ - HANA DB - Assign Admin Authorizations
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies admin privileges/roles assignment.  Source Action: Assign a user with any Admin role / privileges.  *Data Sources: SAP LogServ - HANA DB (Syslog)*
 
 | Attribute | Value |

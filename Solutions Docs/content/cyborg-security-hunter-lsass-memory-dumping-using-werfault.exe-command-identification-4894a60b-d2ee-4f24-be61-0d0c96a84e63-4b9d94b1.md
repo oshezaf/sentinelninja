@@ -1,5 +1,11 @@
 # LSASS Memory Dumping using WerFault.exe - Command Identification
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies WerFault.exe creating a memory dump of lsass.exe (Local Security Authority Subsystem Service, a process responsible for the enforcement of security policies on Windows systems, which generates and stores credentials in its process memory).
 
 | Attribute | Value |

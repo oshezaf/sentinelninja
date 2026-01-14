@@ -1,5 +1,11 @@
 # Illusive Incidents Analytic Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Create a Microsoft Sentinel incident upon a new Illusive alert (incident) and associate all related Illusive events to the relevant Microsoft Sentinel alert. This is done by filtering and processing Illusive Syslog messages.
 
 | Attribute | Value |

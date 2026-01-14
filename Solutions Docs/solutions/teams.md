@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Teams Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Microsoft Sentinel solution for Teams provides Teams security logs visibility and threat protection for communication and data sharing in the Microsoft 365 Cloud via Microsoft Teams. In order to get the logs, you should connect to the Microsoft 365 connector and choose the Teams application.[Please refer to this guide](https://docs.microsoft.com/microsoftteams/teams-sentinel-guide). By connecting Teams activity logs into Microsoft Sentinel, you can view this data in workbooks, use it to create custom alerts, and improve your investigation process.[This article](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/protecting-your-teams-with-azure-sentinel/ba-p/1265761)focuses on collecting Teams activity logs in Microsoft Sentinel. 
 
 ## Solution Information

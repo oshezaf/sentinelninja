@@ -1,5 +1,11 @@
 # Failed login attempts to Azure Portal
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies failed login attempts in the Microsoft Entra ID SigninLogs to the Azure Portal.  Many failed logon attempts or some failed logon attempts from multiple IPs could indicate a potential brute force attack. The following are excluded due to success and non-failure results: References: https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-sign-ins-error-codes 0 - successful logon 50125 - Sign-in was interrupted due to a password reset or password registration entr
 
 | Attribute | Value |

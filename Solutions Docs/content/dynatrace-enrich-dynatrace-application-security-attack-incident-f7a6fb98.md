@@ -1,5 +1,11 @@
 # Enrich Dynatrace Application Security Attack Incident
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will enriche Dynatrace Application Security Attack Incidents with additional information when new incident is opened.
 
 | Attribute | Value |

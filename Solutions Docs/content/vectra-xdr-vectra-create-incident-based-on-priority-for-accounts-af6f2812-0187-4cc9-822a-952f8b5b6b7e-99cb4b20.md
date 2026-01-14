@@ -1,5 +1,11 @@
 # Vectra Create Incident Based on Priority for Accounts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Create an incident when an identity is suspected to be compromised. Vectra is using AI to prioritize an entity based on multiple factors (attack rating, velocity, breadth, importance.etc.). This layer of aggregation at the entity level provides a greater signal-to-noise ratio and help analyst focus on what matters.
 
 | Attribute | Value |

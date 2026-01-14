@@ -1,5 +1,11 @@
 # Base64 encoded IPv4 address in request url
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects Base64-encoded IPv4 addresses in outbound request URLs. It uses pre-computed base64 offsets for IPv4 sequences, eliminating the need for decoding. After identifying a candidate,the query extracts the plaintext IPv4 address pattern.
 
 | Attribute | Value |

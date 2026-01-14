@@ -1,5 +1,11 @@
 # User added to Teams and immediately uploads file
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting queries identifies users who are added to a Teams Channel or Teams chat and within 1 minute of being added upload a file via the chat. This might be an indicator of suspicious activity.
 
 | Attribute | Value |

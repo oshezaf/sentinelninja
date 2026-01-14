@@ -1,5 +1,11 @@
 # Silverfort - Certifried Incident
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 An Active Directory domain privilege escalation vulnerability that enables a privileged user to access the Domain Controller by abusing Active Directory Certificate Service
 
 | Attribute | Value |

@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Business Email Compromise - Financial Fraud Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 [Business Email Compromise (BEC)](https://www.microsoft.com/en-in/security/business/security-101/what-is-business-email-compromise-bec?rtc=1) attacks often aim to commit financial fraud by locating sensitive payment or invoice details and using these to hijack legitimate transactions. This solution, in combination with other solutions listed below, provide a range of content to help detect and investigate BEC attacks at different stages of the attack cycle, and across multiple data sources including AWS, SAP, Okta, Dynamics 365, Microsoft Entra ID, Microsoft 365 and network logs.
 
 This content covers all stages of the attack chain from an initial phishing attack vector, establishing persistence to an environment, locating and collecting sensitive financial information from data stores, and then perpetrating and hiding their fraud. This range of content complements the coverage [Microsoft Defender XDR provides across Microsoft Defender products](https://learn.microsoft.com/microsoft-365/security/defender/automatic-attack-disruption).

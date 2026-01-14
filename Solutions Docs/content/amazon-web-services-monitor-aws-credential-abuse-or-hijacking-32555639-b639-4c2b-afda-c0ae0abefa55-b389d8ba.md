@@ -1,5 +1,11 @@
 # Monitor AWS Credential abuse or hijacking
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Looking for GetCallerIdentity Events where the UserID Type is AssumedRole An attacker who has assumed the role of a legitimate account can call the GetCallerIdentity function to determine what account they are using. A legitimate user using legitimate credentials would not need to call GetCallerIdentity since they should already know what account they are using. More Information: https://duo.com/decipher/trailblazer-hunts-compromised-credentials-in-aws  AWS STS GetCallerIdentity API: https://do
 
 | Attribute | Value |

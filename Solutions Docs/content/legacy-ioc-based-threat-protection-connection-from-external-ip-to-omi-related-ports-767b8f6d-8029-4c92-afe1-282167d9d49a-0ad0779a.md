@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Connection from external IP to OMI related Ports
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects attempts to exploit OMI vulnerability (CVE-2021-38647) by identifying external IP connections to management ports (5985,5986,1270). It uses the imNetworkSession schema and other logs for this purpose.
 
 | Attribute | Value |

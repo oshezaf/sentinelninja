@@ -1,5 +1,11 @@
 # Vectra Download Pcap File To Storage
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook enables user to download pcap file of any detections associated with a Vectra Entity to default file share of storage account. Users can provide detection ids via MS Teams AdaptiveCard.
 
 | Attribute | Value |

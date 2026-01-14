@@ -1,5 +1,11 @@
 # ASR Bypassing Writing Executable Content
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The query checks for any file which has been created/written by an Office application and shortly after renamed to one of the deny-listed "executable extensions" which are text files. (e.g. ps1, .js, .vbs).
 
 | Attribute | Value |

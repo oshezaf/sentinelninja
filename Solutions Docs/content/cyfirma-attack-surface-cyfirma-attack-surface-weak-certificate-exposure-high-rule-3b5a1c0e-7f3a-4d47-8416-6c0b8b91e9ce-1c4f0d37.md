@@ -1,5 +1,11 @@
 # CYFIRMA - Attack Surface - Weak Certificate Exposure - High Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This alert indicates that a weak or insecure SSL/TLS certificate has been detected on a public-facing asset monitored by Cyfirma.  Such certificates do not meet modern encryption standards and are considered insecure, especially for handling sensitive transactions.  This exposure increases the risk of man-in-the-middle attacks and loss of data integrity or confidentiality.  Immediate remediation is advised by replacing weak certificates with strong, industry-compliant ones.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Anomalous Code Execution on a Virtual Machine
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. APT19, for example, used PowerShell commands to execute payloads. The query below generates an output of all users performing an "action" operation regarding "runCommand" in virtual machines, where one or more features of the activity deviate from the user, his p
 
 | Attribute | Value |

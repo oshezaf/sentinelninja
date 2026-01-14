@@ -1,5 +1,11 @@
 # New PA, PCA, or PCAS added to Azure DevOps
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 In order for an attacker to be able to conduct many potential attacks against Azure DevOps they will need to gain elevated permissions.  This detection looks for users being granted key administrative permissions. If the principal of least privilege is applied, the number of users granted these permissions should be small. Note that permissions can also be granted via Microsoft Entra ID Protection groups and monitoring of these should also be conducted.
 
 | Attribute | Value |

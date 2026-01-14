@@ -1,5 +1,11 @@
 # Dataverse - Suspicious use of Web API
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies sign-in across multiple Dataverse environments, breaching a predefined threshold, originating from a user with IP address that was used to sign-into the well known Microsoft Entra app registration.
 
 | Attribute | Value |

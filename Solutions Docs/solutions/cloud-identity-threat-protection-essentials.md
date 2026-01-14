@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Cloud Identity Threat Protection Essentials Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 As more and more companies move to the cloud - attacks to the cloud identity system are becoming more commonplace. The **Cloud Identity Threat Protection Essentials** solution looks for most common cloud focused identity attacks such as Suspicious Sign-ins, privilege grants, MFA disable etc. Rapid detection of these attacks can enable organizations to respond faster and stop them from progressing further.
  
 **Pre-requisites:**

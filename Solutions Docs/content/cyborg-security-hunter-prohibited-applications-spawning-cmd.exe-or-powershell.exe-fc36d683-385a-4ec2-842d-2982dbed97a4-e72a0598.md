@@ -1,5 +1,11 @@
 # Prohibited Applications Spawning cmd.exe or powershell.exe
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Hunts for commonly utilized Microsoft programs (Word, Excel, Publisher, etc) and other programs known to malicious launch powershell or cmd, such as Internet Explorer, Chrome and Firefox.
 
 | Attribute | Value |

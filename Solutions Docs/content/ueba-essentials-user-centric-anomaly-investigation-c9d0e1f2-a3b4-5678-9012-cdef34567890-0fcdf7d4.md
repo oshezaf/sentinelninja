@@ -1,5 +1,11 @@
 # User-Centric Anomaly Investigation
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Investigates all anomalous activities associated with a specific user account over the past 30 days, including anomaly scores, behavioral insights, source locations, and MITRE ATT&CK mappings. Customize by replacing "myuser@mydomain.com" with the target user principal name for focused threat hunting and incident response.
 
 | Attribute | Value |

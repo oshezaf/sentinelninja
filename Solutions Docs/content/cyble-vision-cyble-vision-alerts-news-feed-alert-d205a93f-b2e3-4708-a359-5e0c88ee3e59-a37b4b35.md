@@ -1,5 +1,11 @@
 # Cyble Vision Alerts News Feed Alert
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Triggers when monitored keywords are found in external news feeds. Helps analysts track relevant cybersecurity news, advisories, or threat intelligence updates tied to monitored entities.
 
 | Attribute | Value |

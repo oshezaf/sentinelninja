@@ -1,5 +1,11 @@
 # Uncommon processes - bottom 5%
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Query highlights uncommon, rare process runs, to flag new potentially unauthorized binaries in stable environments for potential attack detection.
 
 | Attribute | Value |

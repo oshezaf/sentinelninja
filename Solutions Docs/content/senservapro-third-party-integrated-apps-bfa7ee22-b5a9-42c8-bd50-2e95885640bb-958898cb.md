@@ -1,5 +1,11 @@
 # Third party integrated apps
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query searches for your services by regulating the access of third-party integrated apps.   Only allow access to necessary apps that support robust security controls.   Third-party applications are not created by Microsoft, so there is a possibility they could be used for malicious purposes like exfiltrating data from your tenancy.  Attackers can maintain persistent access to your services through these integrated apps, without relying on compromised accounts.
 
 | Attribute | Value |

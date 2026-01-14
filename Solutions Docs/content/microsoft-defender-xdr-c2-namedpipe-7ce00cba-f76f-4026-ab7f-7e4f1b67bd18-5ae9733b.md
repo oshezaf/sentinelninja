@@ -1,5 +1,11 @@
 # C2-NamedPipe
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects the creation of a named pipe used by known APT malware. Reference - https://docs.microsoft.com/openspecs/windows_protocols/ms-wpo/4de75e21-36fd-440a-859b-75accc74487c
 
 | Attribute | Value |

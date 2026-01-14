@@ -1,5 +1,11 @@
 # Azure DevOps Service Connection Abuse
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Flags builds/releases that use a large number of service connections if they aren't manually in the allow list. This is to determine if someone is hijacking a build/release and adding many service connections in order to abuse or dump credentials from service connections.
 
 | Attribute | Value |

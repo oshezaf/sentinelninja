@@ -1,5 +1,11 @@
 # Top Anomalous Source IP Triage
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies the top source IP addresses with multiple distinct anomaly templates over the past 30 days (excluding single noisy hits), then surfaces their most recent (last 24h) high-fidelity anomalous activities for focused investigation, including scores, tactics, techniques, and behavioral insights.
 
 | Attribute | Value |

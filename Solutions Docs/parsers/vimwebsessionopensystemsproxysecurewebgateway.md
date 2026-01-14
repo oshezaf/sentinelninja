@@ -1,6 +1,12 @@
-# vimWebSessionOpenSystemsProxySecureWebGateway ⚠️
+# vimWebSessionOpenSystemsProxySecureWebGateway 🔍
 
-> ⚠️ **Not listed in Solution JSON:** This parser was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Parsers Index](parsers-index.md)
+
+---
 
 ## Parser Information
 

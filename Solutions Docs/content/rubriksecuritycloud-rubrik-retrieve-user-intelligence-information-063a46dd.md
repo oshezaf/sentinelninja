@@ -1,5 +1,11 @@
 # Rubrik Retrieve User Intelligence Information
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook queries Rubrik Security Cloud to get risk detail and policy hits details for a username or email address, and enriches the incident by adding incident comment
 
 | Attribute | Value |

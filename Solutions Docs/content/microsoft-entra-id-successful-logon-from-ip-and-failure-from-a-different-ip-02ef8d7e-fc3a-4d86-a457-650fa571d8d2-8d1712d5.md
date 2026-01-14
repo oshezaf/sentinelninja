@@ -1,5 +1,11 @@
 # Successful logon from IP and failure from a different IP
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies when a user account successfully logs onto an Azure App from one IP and within 10 mins failed to logon to the same App via a different IP (may indicate a malicious attempt at password guessing with known account).  UEBA added for context to gather all asoociated information assocaited with IP addressed initiating Faile Logon and affected user.  Please note, Failed logons from known IP ranges can be benign depending on the conditional access policies. In case of noisy behavior, consid
 
 | Attribute | Value |

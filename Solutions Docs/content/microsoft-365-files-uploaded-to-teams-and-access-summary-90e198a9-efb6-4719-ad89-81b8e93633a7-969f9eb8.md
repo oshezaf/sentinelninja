@@ -1,5 +1,11 @@
 # Files uploaded to teams and access summary
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting queries identifies files uploaded to SharePoint via a Teams chat and summarizes users and IP addresses that have accessed these files. This allows for  identification of anomolous file sharing patterns.
 
 | Attribute | Value |

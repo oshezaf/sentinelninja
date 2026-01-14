@@ -1,5 +1,11 @@
 # Cyble Vision Alerts IOC'S
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects malicious Indicators of Compromise such as IPs, domains, URLs, and hashes. Extracts IOC type, behaviour tags, risk rating, and timestamps using Alerts_IOCs parser. Triggers an incident with mapped entities, severity, and details.
 
 | Attribute | Value |

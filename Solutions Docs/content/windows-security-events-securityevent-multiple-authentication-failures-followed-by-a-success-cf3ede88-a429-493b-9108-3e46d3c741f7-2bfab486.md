@@ -1,5 +1,11 @@
 # SecurityEvent - Multiple authentication failures followed by a success
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies accounts who have failed to logon to the domain multiple times in a row, followed by a successful authentication within a short time frame. Multiple failed attempts followed by a success can be an indication of a brute force attempt or possible mis-configuration of a service account within an environment. The lookback is set to 2h and the authentication window and threshold are set to 1h and 5, meaning we need to see a minimum of 5 failures followed by a success for an account within
 
 | Attribute | Value |

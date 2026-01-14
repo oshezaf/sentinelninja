@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="Cyfirma Brand Intelligence Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The CYFIRMA Brand Intelligence solution integrates with Microsoft Sentinel to provide real-time insights into brand-related threats such as impersonation, fake domains, malicious social media profiles, and fraudulent mobile apps. This integration enables security teams to monitor and respond to digital brand abuse, protecting customers, employees, and reputation. Enriched intelligence is ingested into Microsoft Sentinel for threat correlation, alerting, and automation—helping organizations detect and mitigate brand threats quickly and efficiently.
 
 ## Solution Information

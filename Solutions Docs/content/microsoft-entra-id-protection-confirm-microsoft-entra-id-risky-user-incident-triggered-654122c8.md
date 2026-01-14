@@ -1,5 +1,11 @@
 # Confirm Microsoft Entra ID Risky User - Incident Triggered
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 For each account entity included in the incident, this playbook will set the Risky User property in Microsoft Entra ID using Graph API using a Beta API.
 
 | Attribute | Value |

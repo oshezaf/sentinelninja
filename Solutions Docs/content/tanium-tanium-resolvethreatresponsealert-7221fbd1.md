@@ -1,5 +1,11 @@
 # Tanium-ResolveThreatResponseAlert
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Maintaining alert hygiene in multiple consoles can be overwhelming. This playbook helps teams keep Tanium Threat Response up-to-date when using Microsoft Sentinel to centrally manage alerts. This playbook will resolve any Tanium Threat Response alerts associated with a Microsoft Sentinel incident. See [Tanium Help](https://help.tanium.com/bundle/ConnectAzureSentinel/page/Integrations/MSFT/ConnectAzureSentinel/Overview.htm) for a guide to setting up the Tanium Connector for Sentinel. Don't forget
 
 | Attribute | Value |

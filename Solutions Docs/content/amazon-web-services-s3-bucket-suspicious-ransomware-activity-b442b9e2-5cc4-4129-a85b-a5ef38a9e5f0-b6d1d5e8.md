@@ -1,5 +1,11 @@
 # S3 bucket suspicious ransomware activity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Suspicious S3 bucket activity indicating ransomware was detected. An attacker might download all the objects in a compromised S3 bucket, encrypt them with his own key, then upload them back to the same bucket, overwriting the existing ones.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Judgement Panda Exfil Activity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_judgement_panda_gtr19.yml. Questions via Twitter: @janvonkirchheim.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Defender Alert Evidence
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This analytic rule is looking for new alert evidence from Microsoft Defender for Endpoint. The intent is to create entries in the SecurityAlert table for every new alert evidence attached to an entity of type Device or User monitored by Defender for Endpoint.
 
 | Attribute | Value |

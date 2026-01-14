@@ -1,5 +1,11 @@
 # Anomalous Sign-in by New or Dormant Account
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Adversaries may steal the credentials of a specific user or service account using credential access techniques or capture credentials earlier in their reconnaissance process through social engineering as a means of gaining persistence." Umbreon, for example, creates valid users to provide access to the system. The query below generates an output of successful sign-in with one or more of the following indications:- - performed by new or recently dormant accounts - where one or more features of t
 
 | Attribute | Value |

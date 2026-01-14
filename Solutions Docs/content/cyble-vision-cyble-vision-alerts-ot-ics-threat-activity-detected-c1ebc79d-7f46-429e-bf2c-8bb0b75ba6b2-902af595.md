@@ -1,5 +1,11 @@
 # Cyble Vision Alerts OT/ICS Threat Activity Detected
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This alert indicates detection of OT/ICS-related network activity involving industrial control protocols (e.g., IEC104). May indicate probing, reconnaissance, or attempted access against critical infrastructure assets.
 
 | Attribute | Value |

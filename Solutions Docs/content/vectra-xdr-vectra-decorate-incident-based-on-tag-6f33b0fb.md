@@ -1,5 +1,11 @@
 # Vectra Decorate Incident Based On Tag
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will add pre-defined or user customizable comment to an incident generated based on tags and add pre-defined or user customizable note to associated Vectra Entity.
 
 | Attribute | Value |

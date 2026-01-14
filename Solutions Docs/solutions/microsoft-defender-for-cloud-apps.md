@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Defender for Cloud Apps Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Microsoft Defender for Cloud Apps](https://docs.microsoft.com/defender-cloud-apps/) solution for Microsoft Sentinel enables you to ingest security alerts and discovery logs from the Defender for Cloud Apps platform, providing visibility into threats in your cloud app environment, including coverage for shadow IT, impossible travel, ransomware, and data exfiltration use cases.
 
 ## Solution Information

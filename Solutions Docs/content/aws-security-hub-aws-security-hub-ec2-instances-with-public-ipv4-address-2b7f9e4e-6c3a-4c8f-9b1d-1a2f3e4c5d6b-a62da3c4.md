@@ -1,5 +1,11 @@
 # AWS Security Hub - EC2 instances with public IPv4 address
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query finds EC2 instances that have a public IPv4 address using AWS Security Hub findings (control EC2.9).
 
 | Attribute | Value |

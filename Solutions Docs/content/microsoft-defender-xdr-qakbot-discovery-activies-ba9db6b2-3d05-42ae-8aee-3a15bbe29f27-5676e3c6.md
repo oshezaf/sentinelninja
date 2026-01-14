@@ -1,5 +1,11 @@
 # Qakbot Discovery Activies
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query searches for injected processes launching discovery activity. Qakbot has been observed leading to ransomware in numerous instances. It looks for discovery commands such as net.exe, whoami.exe, nslookup.exe, netstat.exe, arp.exe, and ping.exe.
 
 | Attribute | Value |

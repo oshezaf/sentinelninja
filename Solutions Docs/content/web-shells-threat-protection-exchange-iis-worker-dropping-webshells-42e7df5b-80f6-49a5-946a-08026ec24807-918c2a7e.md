@@ -1,5 +1,11 @@
 # Exchange IIS Worker Dropping Webshells
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query checks for the IIS worker process dropping files that resemble web shells and other artifacts seen in known attacks. Reference: https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server
 
 | Attribute | Value |

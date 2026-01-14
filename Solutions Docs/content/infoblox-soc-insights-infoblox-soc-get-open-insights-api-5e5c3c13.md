@@ -1,5 +1,11 @@
 # Infoblox SOC Get Open Insights API
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into the custom InfobloxInsight table. This playbook is scheduled to run on a daily basis.
 
 | Attribute | Value |

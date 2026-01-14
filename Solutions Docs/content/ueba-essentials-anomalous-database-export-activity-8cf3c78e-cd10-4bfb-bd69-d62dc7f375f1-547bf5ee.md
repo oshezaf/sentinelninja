@@ -1,5 +1,11 @@
 # Anomalous Database Export Activity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Adversaries may attempt to exfiltrate sensitive data by exporting databases. The query identifies users performing an "Export database" operation where one or more behavioral features deviate from the user''s baseline, peer group, or the tenant profile.
 
 | Attribute | Value |

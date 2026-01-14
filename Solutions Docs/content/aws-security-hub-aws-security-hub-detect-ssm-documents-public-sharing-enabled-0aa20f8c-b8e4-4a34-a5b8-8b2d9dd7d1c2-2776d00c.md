@@ -1,5 +1,11 @@
 # AWS Security Hub - Detect SSM documents public sharing enabled
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects AWS accounts where public sharing is enabled, using AWS Security Hub control SSM.7 findings. Allowing public sharing of SSM documents can expose automation content and enable unauthorized execution or tampering.
 
 | Attribute | Value |

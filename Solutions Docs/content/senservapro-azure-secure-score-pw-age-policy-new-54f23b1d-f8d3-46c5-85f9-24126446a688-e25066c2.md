@@ -1,5 +1,11 @@
 # Azure secure score PW age policy new
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query searches for having found that when periodic password resets are enforced,  passwords become less secure. Users tend to pick a weaker password and vary it slightly for each reset.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Proxy VBScript Execution via CurrentVersion Registry Key
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies VBScript proxy execution through a registry key in \Microsoft\Windows\CurrentVersion.
 
 | Attribute | Value |

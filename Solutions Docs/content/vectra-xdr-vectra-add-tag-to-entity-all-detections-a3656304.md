@@ -1,5 +1,11 @@
 # Vectra Add Tag To Entity All Detections
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook enables user to add tags to all detections associated with a Vectra Entity. Tags can be fetched from comments of the associated incident else if no comments found, users can provide comments via MS Teams.
 
 | Attribute | Value |

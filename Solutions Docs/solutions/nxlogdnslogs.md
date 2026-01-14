@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="NXLogDNSLogs Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [NXLog DNSLogs](https://docs.nxlog.co/refman/current/im/etw.html) solution for Microsoft Sentinel enables you to ingest DNS server events. NXLog DNSLogs uses Event Tracing for Windows [(ETW)](https://docs.microsoft.com/windows/apps/trace-processing/overview?WT.mc_id=Portal-fx) for collecting both Audit and Analytical DNS server events.[The NXLog im_etw module](https://docs.nxlog.co/refman/current/im/etw.html) reads event tracing data directly for maximum efficiency, without the need to capture the event trace into an .etl file. 
  
  **Underlying Microsoft Technologies used:**

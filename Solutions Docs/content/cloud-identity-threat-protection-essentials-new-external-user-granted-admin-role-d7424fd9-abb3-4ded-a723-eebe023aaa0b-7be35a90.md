@@ -1,5 +1,11 @@
 # New External User Granted Admin Role
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query will detect instances where a newly invited external user is granted an administrative role. By default this query will alert on any granted administrative role, however this can be modified using the roles variable if false positives occur in your environment. The maximum delta between invite and escalation to admin is 60 minues, this can be configured using the deltaBetweenInviteEscalation variable.
 
 | Attribute | Value |

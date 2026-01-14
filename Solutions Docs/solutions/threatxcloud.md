@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="ThreatXCloud Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [ThreatX](https://www.threatx.com/products/) solution for Microsoft Sentinel provides an automated approach for analysts to remediate the attacks happening at application level by blocking the suspicious ip and url and also empowers them to gather the threat intelligence data for the malicious ip activity. This solution includes SOAR Connector and Playbooks by which the analyst can automate the security operations tasks
 
 ## Solution Information

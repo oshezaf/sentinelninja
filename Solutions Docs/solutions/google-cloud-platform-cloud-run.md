@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="Google Cloud Platform Cloud Run Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The GCP Cloud Run solution provides the capability to ingest [GCP Run logs](https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions) into Microsoft Sentinel using the GCP Logging API. Refer to [GCP Cloud Run API documentation](https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions) for more information.
   
   **Underlying Microsoft Technologies used:** 

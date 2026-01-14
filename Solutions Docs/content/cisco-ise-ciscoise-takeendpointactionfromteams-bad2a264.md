@@ -1,5 +1,11 @@
 # CiscoISE-TakeEndpointActionFromTeams
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Sends an adaptive card to the Teams channel where the analyst can choose an action to be taken. 2. Assigns a policy (policy name is provided during the deployment stage) to an endpoint (*MACAddress* of the endpoint is provided in the alert custom entities) depending on the action chosen in the adaptive card. 3. Changes incident status and severity depending on the action chosen in the ada
 
 | Attribute | Value |

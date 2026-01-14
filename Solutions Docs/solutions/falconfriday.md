@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/falconforce_logo.svg" alt="FalconFriday Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 [FalconFriday](https://github.com/FalconForceTeam/FalconFriday/blob/master/README.md) is a blog post series by FalconForce providing the community with free detection content for various attacks seen and executed in the wild by FalconForce.
 
 ## Solution Information

@@ -1,5 +1,11 @@
 # Infoblox-TimeRangeBased-DHCP-Lookup
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The playbook will retrieve IP entities from an incident, search for related DHCP data in a table for a apecified time range, and if found, add the DHCP lookup data as a comment on the incident.
 
 | Attribute | Value |

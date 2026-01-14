@@ -1,5 +1,11 @@
 # Detect Suspicious Commands Initiated by Webserver Processes
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detect suspicious commands initiated by web server processes used for network discovery and user/owner discovery.
 
 | Attribute | Value |

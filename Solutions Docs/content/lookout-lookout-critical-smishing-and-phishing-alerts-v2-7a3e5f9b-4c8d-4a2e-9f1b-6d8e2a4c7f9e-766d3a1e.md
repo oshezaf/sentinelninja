@@ -1,5 +1,11 @@
 # Lookout - Critical Smishing and Phishing Alerts (v2)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects critical smishing (SMS phishing) and phishing alerts from Lookout Mobile Risk API v2. This rule identifies sophisticated social engineering attacks including CEO fraud, credential harvesting, and malicious link campaigns targeting mobile devices. Leverages enhanced v2 smishing detection capabilities for comprehensive mobile threat protection.
 
 | Attribute | Value |

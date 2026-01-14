@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="Microsoft Business Applications Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Microsoft Power Platform provides a wide range of tools for citizen developers to build, run and manage low-code and no-code applications quickly, simply and at scale. With that, it also introduces a concern around the risk of security vulnerabilities introduced by citizen developers, some of whom may lack the security awareness of traditional pro-dev community. To counter this, early threat detection is crucial and can complement preventative guardrails to enable frictionless productivity while minimizing cyber risk.
 
 The Microsoft Sentinel solution for Microsoft Power Platform allows customers to monitor and detect various suspicious or malicious activities in their Power Platform environments.

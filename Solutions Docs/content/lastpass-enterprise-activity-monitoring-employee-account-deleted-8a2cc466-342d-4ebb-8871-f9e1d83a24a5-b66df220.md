@@ -1,5 +1,11 @@
 # Employee account deleted
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule will monitor for any employee accounts being deleted. Deleting an employee account can have a big potential impact as all of the data for that user will be removed.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Suspicious overly permissive KMS key policy created
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 An overly permissive key policy was created, resulting in KMS keys where the kms:Encrypt action is accessible to everyone (even outside of the organization). This could mean that your account is compromised and that the attacker is using the encryption key to compromise other organizations.
 
 | Attribute | Value |

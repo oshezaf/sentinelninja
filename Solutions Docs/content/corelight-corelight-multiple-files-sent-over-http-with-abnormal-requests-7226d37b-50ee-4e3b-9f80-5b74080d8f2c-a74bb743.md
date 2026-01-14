@@ -1,5 +1,11 @@
 # Corelight - Multiple files sent over HTTP with abnormal requests
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects sources sending multiple compressed files greater than 10MBs sent over HTTP in a short amount of time.
 
 | Attribute | Value |

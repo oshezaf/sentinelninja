@@ -1,5 +1,11 @@
 # Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will add an attackers source ip to Threat Intelligence when a new incident is opened in Microsoft Sentinel.
 
 | Attribute | Value |

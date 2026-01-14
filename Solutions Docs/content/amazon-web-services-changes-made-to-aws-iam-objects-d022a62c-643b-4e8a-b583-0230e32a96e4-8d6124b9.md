@@ -1,5 +1,11 @@
 # Changes made to AWS IAM objects
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identity and Access Management (IAM) securely manages access to AWS services and resources. This query looks for when an API call is made to change an IAM, particularly those related to new objects being created or deleted. If these turn out to be noisy, filter out the most common for your environment.
 
 | Attribute | Value |

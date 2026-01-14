@@ -1,5 +1,11 @@
 # CiscoISE-SuspendGuestUser
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a new sentinel incident is created, this playbook gets triggered and performs the following actions: 1. For each Account in the incident suspends user in Cisco ISE by its name. 2. Adds comment to the incident with information about suspended users.
 
 | Attribute | Value |

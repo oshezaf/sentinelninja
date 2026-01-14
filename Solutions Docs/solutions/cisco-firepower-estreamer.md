@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="Cisco Firepower EStreamer Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Cisco Firepower](https://www.cisco.com/site/in/en/products/security/firewalls/index.html) eStreamer Solution for Microsoft Sentinel works with [Cisco Event Streamer](https://github.com/CiscoSecurity/fp-05-microsoft-sentinel-connector) (also known as eStreamer) and allows you to stream System intrusion, discovery and connection data from Firepower Management Center (FMC) or managed device to Microsoft Sentinel 
  eStreamer is a Client Server API designed for the Cisco Firepower NGFW Solution. The eStreamer client requests detailed event data on behalf of the SIEM or logging solution in the Common Event Format (CEF).
 

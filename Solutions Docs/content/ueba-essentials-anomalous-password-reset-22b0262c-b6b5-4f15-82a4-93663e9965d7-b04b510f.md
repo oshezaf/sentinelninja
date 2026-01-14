@@ -1,5 +1,11 @@
 # Anomalous Password Reset
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Adversaries may interrupt the availability of system and network resources by inhibiting access to accounts utilized by legitimate users. Accounts may be deleted, locked, or manipulated (ex: changed credentials) to remove access to them. LockerGoga, for example, has been observed changing account passwords and logging off current users. The query below generates an output of all users performing Reset User Password where one or more features of the activity deviate from the user, his peers, or
 
 | Attribute | Value |

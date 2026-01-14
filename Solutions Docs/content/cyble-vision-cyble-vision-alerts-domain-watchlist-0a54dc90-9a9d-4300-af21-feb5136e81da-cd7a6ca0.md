@@ -1,5 +1,11 @@
 # Cyble Vision Alerts Domain Watchlist
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Triggers when monitored domain DNS records change (A, NS, MX, TXT, SOA). DNS record changes may indicate misconfiguration, domain takeover attempts, or infrastructure shifts requiring review.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Cisco Cloud Security - Windows PowerShell User-Agent Detected
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Rule helps to detect Powershell user-agent activity by an unusual process other than a web browser.
 
 | Attribute | Value |

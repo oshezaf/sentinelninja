@@ -1,5 +1,11 @@
 # CYFIRMA - Data Breach and Web Monitoring - Ransomware Exposure Detected Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This analytics rule detects high-severity ransomware threats targeting the organization, as reported by CYFIRMA's Dark Web and Data Breach Intelligence feeds.  The alert is generated when threat actors post, claim, or associate ransomware activity with corporate domains, brands, or subsidiaries, indicating a potential data breach, extortion attempt, or unauthorized access.
 
 | Attribute | Value |

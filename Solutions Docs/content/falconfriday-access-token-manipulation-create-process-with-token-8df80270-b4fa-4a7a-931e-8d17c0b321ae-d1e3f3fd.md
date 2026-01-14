@@ -1,5 +1,11 @@
 # Access Token Manipulation - Create Process with Token
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects the use of the 'runas' command and checks whether the account used to elevate privileges isn't the user's own admin account.  Additionally, it will match this event to the logon events - to check whether it has been successful as well as augment the event with the new SID.
 
 | Attribute | Value |

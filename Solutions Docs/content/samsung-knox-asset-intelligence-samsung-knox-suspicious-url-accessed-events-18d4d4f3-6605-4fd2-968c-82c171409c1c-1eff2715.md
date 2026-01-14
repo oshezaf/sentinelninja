@@ -1,5 +1,11 @@
 # Samsung Knox - Suspicious URL Accessed Events
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a Knox device user clicks on URLs or links detected as suspicious (potentially phishing or malicious) with a high degree of confidence.
 
 | Attribute | Value |

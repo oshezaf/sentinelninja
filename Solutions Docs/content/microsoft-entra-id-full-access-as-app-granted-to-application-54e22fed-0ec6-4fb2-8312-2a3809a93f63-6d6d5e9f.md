@@ -1,5 +1,11 @@
 # full_access_as_app Granted To Application
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection looks for the full_access_as_app permission being granted to an OAuth application with Admin Consent. This permission provide access to all Exchange mailboxes via the EWS API can could be exploited to access sensitive data by being added to a compromised application. The application granted this permission should be reviewed to ensure that it is absolutely necessary for the applications function. Ref: https://learn.microsoft.com/graph/auth-limit-mailbox-access
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # SMB/Windows Admin Shares
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query is based on detecting incoming RPC/TCP on the SCM, followed by the start of a child process of services.exe. Remotely interacting with the SCM triggers the RPC/TCP traffic on services.exe, and the creation of the child processes is a result of starting the service.  The query might look intimidating given its size. That's why we've commented the query per logic block to walk you through the details.
 
 | Attribute | Value |

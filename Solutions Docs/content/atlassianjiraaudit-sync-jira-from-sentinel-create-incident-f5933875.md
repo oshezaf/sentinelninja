@@ -1,5 +1,11 @@
 # Sync Jira from Sentinel - Create incident
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This Playbook will create JIRA incidents for every Microsoft Sentinel which is created. It includes additional information such as tactics, affected user etc.
 
 | Attribute | Value |

@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/LastPass.svg" alt="Lastpass Enterprise Activity Monitoring Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 [Lastpass Enterprise Activity Monitoring ](https://www.lastpass.com/en/products/business) is a cloud password manager used by organizations to securely save and share passwords.
 
 **Underlying Microsoft Technologies used:**

@@ -1,5 +1,11 @@
 # Cross-Cloud Suspicious Compute resource creation in GCP
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection  identifies potential suspicious activity across multi-cloud environments by combining AWS GuardDuty findings with GCP Audit Logs. It focuses on AWS activities related to unauthorized access, credential abuse, and unusual behaviors, as well as GCP instances creation with non-Google service account users. The query aims to provide a comprehensive view of cross-cloud security incidents for proactive threat detection and response.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # NRT Squid proxy events related to mining pools
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Checks for Squid proxy events in Syslog associated with common mining pools .This query presumes the default Squid log format is being used.  http://www.squid-cache.org/Doc/config/access_log/
 
 | Attribute | Value |

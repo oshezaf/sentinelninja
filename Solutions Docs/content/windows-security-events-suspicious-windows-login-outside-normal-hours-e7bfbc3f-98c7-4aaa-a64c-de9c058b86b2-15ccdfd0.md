@@ -1,5 +1,11 @@
 # Suspicious Windows Login Outside Normal Hours
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Query identifies unusual logon events outside a user's normal hours by comparing with the last 14 days' logon activity, flagging anomalies based on historical patterns.
 
 | Attribute | Value |

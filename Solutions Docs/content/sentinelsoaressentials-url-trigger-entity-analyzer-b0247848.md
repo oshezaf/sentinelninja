@@ -1,5 +1,11 @@
 # URL Trigger Entity Analyzer
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook is triggered manually when a URL entity is selected in a Microsoft Sentinel incident and provides detailed security insights including classification, analysis results, and recommendations.
 
 | Attribute | Value |

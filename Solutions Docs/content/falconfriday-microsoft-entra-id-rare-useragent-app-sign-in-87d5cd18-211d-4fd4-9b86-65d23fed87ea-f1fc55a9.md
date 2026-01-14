@@ -1,5 +1,11 @@
 # Microsoft Entra ID Rare UserAgent App Sign-in
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query establishes a baseline of the type of UserAgent (i.e. browser, office application, etc) that is typically used for a particular application by looking back for a number of days.  It then searches the current day for any deviations from this pattern, i.e. types of UserAgents not seen before in combination with this application.
 
 | Attribute | Value |

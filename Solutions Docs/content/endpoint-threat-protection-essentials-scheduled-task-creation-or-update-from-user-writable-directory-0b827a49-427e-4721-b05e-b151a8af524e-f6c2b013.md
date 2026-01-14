@@ -1,5 +1,11 @@
 # Scheduled Task Creation or Update from User Writable Directory
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query triggers when a scheduled task is created or updated and it is going to run programs from writable user paths. Ref: https://blog.menasec.net/2019/03/threat-hunting-25-scheduled-tasks-for.html
 
 | Attribute | Value |

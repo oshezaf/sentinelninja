@@ -1,5 +1,11 @@
 # GSA - Detect Connections Outside Operational Hours
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies connections that occur outside of the defined operational hours. It helps in monitoring and flagging any unusual activity that may occur during non-business hours, indicating potential security concerns or policy violations.
 
 | Attribute | Value |

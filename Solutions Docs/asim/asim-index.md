@@ -52,8 +52,8 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimAlertEventMicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR | 1 | 0.1.0 |
-| [ASimAlertEventSentinelOneSingularity](asimalerteventsentinelonesingularity.md) | SentinelOne | 1 | 0.1.0 |
+| ASim: [ASimAlertEventMicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md)<br>vim: [vimAlertEventMicrosoftDefenderXDR](vimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR | 1 | 0.1.0 |
+| ASim: [ASimAlertEventSentinelOneSingularity](asimalerteventsentinelonesingularity.md)<br>vim: [vimAlertEventSentinelOneSingularity](vimalerteventsentinelonesingularity.md) | SentinelOne | 1 | 0.1.0 |
 
 ## AuditEvent
 
@@ -74,23 +74,23 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimAuditEventAzureActivity](asimauditeventazureactivity.md) | Microsoft Azure | 1 | 0.2 |
-| [ASimAuditEventBarracudaCEF](asimauditeventbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
-| [ASimAuditEventBarracudaWAF](asimauditeventbarracudawaf.md) | Barracuda WAF | 1 | 0.2.1 |
-| [ASimAuditEventCiscoISE](asimauditeventciscoise.md) | Cisco ISE | 1 | 0.1 |
-| [ASimAuditEventCiscoMeraki](asimauditeventciscomeraki.md) | Cisco Meraki | 2 | 0.2.1 |
-| [ASimAuditEventCiscoMerakiSyslog](asimauditeventciscomerakisyslog.md) | Cisco Meraki | 2 | 0.2.1 |
-| [ASimAuditEventCrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
-| [ASimAuditEventIllumioSaaSCore](asimauditeventillumiosaascore.md) | Illumio Core | 1 | 0.2.1 |
-| [ASimAuditEventInfobloxBloxOne](asimauditeventinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
-| [ASimAuditEventMicrosoftEvent](asimauditeventmicrosoftevent.md) | Microsoft Windows | 3 | 0.2.1 |
-| [ASimAuditEventMicrosoftExchangeAdmin365](asimauditeventmicrosoftexchangeadmin365.md) | Microsoft SharePoint | 1 | 0.2 |
-| [ASimAuditEventMicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) | Microsoft Windows | 4 | 0.2.1 |
-| [ASimAuditEventMicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) | Microsoft Windows | 4 | 0.2.1 |
-| [ASimAuditEventNative](asimauditeventnative.md) | Native | 1 | 0.1.0 |
-| [ASimAuditEventSentinelOne](asimauditeventsentinelone.md) | SentinelOne | 3 | 0.1.0 |
-| [ASimAuditEventVMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 3 | 0.2.0 |
-| [ASimAuditEventVectraXDRAudit](asimauditeventvectraxdraudit.md) | Vectra | 1 | 0.1.1 |
+| ASim: [ASimAuditEventAzureActivity](asimauditeventazureactivity.md)<br>vim: [vimAuditEventAzureActivity](vimauditeventazureactivity.md) | Microsoft Azure | 1 | 0.2 |
+| ASim: [ASimAuditEventBarracudaCEF](asimauditeventbarracudacef.md)<br>vim: [vimAuditEventBarracudaCEF](vimauditeventbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
+| ASim: [ASimAuditEventBarracudaWAF](asimauditeventbarracudawaf.md)<br>vim: [vimAuditEventBarracudaWAF](vimauditeventbarracudawaf.md) | Barracuda WAF | 1 | 0.2.1 |
+| ASim: [ASimAuditEventCiscoISE](asimauditeventciscoise.md)<br>vim: [vimAuditEventCiscoISE](vimauditeventciscoise.md) | Cisco ISE | 1 | 0.1 |
+| ASim: [ASimAuditEventCiscoMeraki](asimauditeventciscomeraki.md)<br>vim: [vimAuditEventCiscoMeraki](vimauditeventciscomeraki.md) | Cisco Meraki | 2 | 0.2.1 |
+| ASim: [ASimAuditEventCiscoMerakiSyslog](asimauditeventciscomerakisyslog.md)<br>vim: [vimAuditEventCiscoMerakiSyslog](vimauditeventciscomerakisyslog.md) | Cisco Meraki | 2 | 0.2.1 |
+| ASim: [ASimAuditEventCrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md)<br>vim: [vimAuditEventCrowdStrikeFalconHost](vimauditeventcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
+| ASim: [ASimAuditEventIllumioSaaSCore](asimauditeventillumiosaascore.md)<br>vim: [vimAuditEventIllumioSaaSCore](vimauditeventillumiosaascore.md) | Illumio Core | 1 | 0.2.1 |
+| ASim: [ASimAuditEventInfobloxBloxOne](asimauditeventinfobloxbloxone.md)<br>vim: [vimAuditEventInfobloxBloxOne](vimauditeventinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
+| ASim: [ASimAuditEventMicrosoftEvent](asimauditeventmicrosoftevent.md)<br>vim: [vimAuditEventMicrosoftEvent](vimauditeventmicrosoftevent.md) | Microsoft Windows | 3 | 0.2.1 |
+| ASim: [ASimAuditEventMicrosoftExchangeAdmin365](asimauditeventmicrosoftexchangeadmin365.md)<br>vim: [vimAuditEventMicrosoftExchangeAdmin365](vimauditeventmicrosoftexchangeadmin365.md) | Microsoft SharePoint | 1 | 0.2 |
+| ASim: [ASimAuditEventMicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md)<br>vim: [vimAuditEventMicrosoftSecurityEvents](vimauditeventmicrosoftsecurityevents.md) | Microsoft Windows | 4 | 0.2.1 |
+| ASim: [ASimAuditEventMicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md)<br>vim: [vimAuditEventMicrosoftWindowsEvents](vimauditeventmicrosoftwindowsevents.md) | Microsoft Windows | 4 | 0.2.1 |
+| ASim: [ASimAuditEventNative](asimauditeventnative.md)<br>vim: [vimAuditEventNative](vimauditeventnative.md) | Native | 1 | 0.1.0 |
+| ASim: [ASimAuditEventSentinelOne](asimauditeventsentinelone.md)<br>vim: [vimAuditEventSentinelOne](vimauditeventsentinelone.md) | SentinelOne | 3 | 0.1.0 |
+| ASim: [ASimAuditEventVMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md)<br>vim: [vimAuditEventVMwareCarbonBlackCloud](vimauditeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 3 | 0.2.0 |
+| ASim: [ASimAuditEventVectraXDRAudit](asimauditeventvectraxdraudit.md)<br>vim: [vimAuditEventVectraXDRAudit](vimauditeventvectraxdraudit.md) | Vectra | 1 | 0.1.1 |
 
 ## Authentication
 
@@ -111,34 +111,34 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimAuthenticationAADManagedIdentitySignInLogs](asimauthenticationaadmanagedidentitysigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
-| [ASimAuthenticationAADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
-| [ASimAuthenticationAADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
-| [ASimAuthenticationAWSCloudTrail](asimauthenticationawscloudtrail.md) | AWS | 1 | 0.2.1 |
-| [ASimAuthenticationBarracudaWAF](asimauthenticationbarracudawaf.md) | Barracuda WAF | 2 | 0.1 |
-| [ASimAuthenticationCiscoASA](asimauthenticationciscoasa.md) | Cisco Adaptive Security Appliance (ASA) | 2 | 0.1.1 |
-| [ASimAuthenticationCiscoISE](asimauthenticationciscoise.md) | Cisco ISE | 1 | 0.1.0 |
-| [ASimAuthenticationCiscoMeraki](asimauthenticationciscomeraki.md) | Cisco Meraki | 1 | 0.2.1 |
-| [ASimAuthenticationCiscoMerakiSyslog](asimauthenticationciscomerakisyslog.md) | Cisco Meraki | 1 | 0.2.1 |
-| [ASimAuthenticationCrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
-| [ASimAuthenticationGoogleWorkspace](asimauthenticationgoogleworkspace.md) | Google Workspace | 1 | 0.1.0 |
-| [ASimAuthenticationIllumioSaaSCore](asimauthenticationillumiosaascore.md) | Illumio | 1 | 0.3.0 |
-| [ASimAuthenticationM365Defender](asimauthenticationm365defender.md) | M365 Defender for EndPoint | 1 | 0.1.3 |
-| [ASimAuthenticationMD4IoT](asimauthenticationmd4iot.md) | Microsoft Defender for IoT | 1 | 0.1.2 |
-| [ASimAuthenticationMicrosoftWindowsEvent](asimauthenticationmicrosoftwindowsevent.md) | Windows Security Events | 2 | 0.2.1 |
-| [ASimAuthenticationNative](asimauthenticationnative.md) | Native | 1 | 0.1.0 |
-| [ASimAuthenticationOktaSSO](asimauthenticationoktasso.md) | Okta | 1 | 0.3.0 |
-| [ASimAuthenticationOktaV2](asimauthenticationoktav2.md) | Okta | 1 | 0.3.1 |
-| [ASimAuthenticationPaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.0 |
-| [ASimAuthenticationPostgreSQL](asimauthenticationpostgresql.md) | PostgreSQL | 1 | 0.1.4 |
-| [ASimAuthenticationSalesforceSC](asimauthenticationsalesforcesc.md) | Salesforce Service Cloud | 1 | 0.1.0 |
-| [ASimAuthenticationSentinelOne](asimauthenticationsentinelone.md) | SentinelOne | 1 | 0.1.1 |
-| [ASimAuthenticationSigninLogs](asimauthenticationsigninlogs.md) | Microsoft Entra ID | 1 | 0.3.2 |
-| [ASimAuthenticationSshd](asimauthenticationsshd.md) | OpenSSH | 1 | 0.2.4 |
-| [ASimAuthenticationSu](asimauthenticationsu.md) | su | 1 | 0.2.1 |
-| [ASimAuthenticationSudo](asimauthenticationsudo.md) | sudo | 1 | 0.1.2 |
-| [ASimAuthenticationVMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.0 |
-| [ASimAuthenticationVectraXDRAudit](asimauthenticationvectraxdraudit.md) | Vectra | 1 | 0.1 |
+| ASim: [ASimAuthenticationAADManagedIdentitySignInLogs](asimauthenticationaadmanagedidentitysigninlogs.md)<br>vim: [vimAuthenticationAADManagedIdentitySignInLogs](vimauthenticationaadmanagedidentitysigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
+| ASim: [ASimAuthenticationAADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md)<br>vim: [vimAuthenticationAADNonInteractiveUserSignInLogs](vimauthenticationaadnoninteractiveusersigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
+| ASim: [ASimAuthenticationAADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md)<br>vim: [vimAuthenticationAADServicePrincipalSignInLogs](vimauthenticationaadserviceprincipalsigninlogs.md) | Microsoft Entra ID | 1 | 0.2.2 |
+| ASim: [ASimAuthenticationAWSCloudTrail](asimauthenticationawscloudtrail.md)<br>vim: [vimAuthenticationAWSCloudTrail](vimauthenticationawscloudtrail.md) | AWS | 1 | 0.2.1 |
+| ASim: [ASimAuthenticationBarracudaWAF](asimauthenticationbarracudawaf.md)<br>vim: [vimAuthenticationBarracudaWAF](vimauthenticationbarracudawaf.md) | Barracuda WAF | 2 | 0.1 |
+| ASim: [ASimAuthenticationCiscoASA](asimauthenticationciscoasa.md)<br>vim: [vimAuthenticationCiscoASA](vimauthenticationciscoasa.md) | Cisco Adaptive Security Appliance (ASA) | 2 | 0.1.1 |
+| ASim: [ASimAuthenticationCiscoISE](asimauthenticationciscoise.md)<br>vim: [vimAuthenticationCiscoISE](vimauthenticationciscoise.md) | Cisco ISE | 1 | 0.1.0 |
+| ASim: [ASimAuthenticationCiscoMeraki](asimauthenticationciscomeraki.md)<br>vim: [vimAuthenticationCiscoMeraki](vimauthenticationciscomeraki.md) | Cisco Meraki | 1 | 0.2.1 |
+| ASim: [ASimAuthenticationCiscoMerakiSyslog](asimauthenticationciscomerakisyslog.md)<br>vim: [vimAuthenticationCiscoMerakiSyslog](vimauthenticationciscomerakisyslog.md) | Cisco Meraki | 1 | 0.2.1 |
+| ASim: [ASimAuthenticationCrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md)<br>vim: [vimAuthenticationCrowdStrikeFalconHost](vimauthenticationcrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 1 | 0.1.0 |
+| ASim: [ASimAuthenticationGoogleWorkspace](asimauthenticationgoogleworkspace.md)<br>vim: [vimAuthenticationGoogleWorkspace](vimauthenticationgoogleworkspace.md) | Google Workspace | 1 | 0.1.0 |
+| ASim: [ASimAuthenticationIllumioSaaSCore](asimauthenticationillumiosaascore.md)<br>vim: [vimAuthenticationIllumioSaaSCore](vimauthenticationillumiosaascore.md) | Illumio | 1 | 0.3.0 |
+| ASim: [ASimAuthenticationM365Defender](asimauthenticationm365defender.md)<br>vim: [vimAuthenticationM365Defender](vimauthenticationm365defender.md) | M365 Defender for EndPoint | 1 | 0.1.3 |
+| ASim: [ASimAuthenticationMD4IoT](asimauthenticationmd4iot.md)<br>vim: [vimAuthenticationMD4IoT](vimauthenticationmd4iot.md) | Microsoft Defender for IoT | 1 | 0.1.2 |
+| ASim: [ASimAuthenticationMicrosoftWindowsEvent](asimauthenticationmicrosoftwindowsevent.md)<br>vim: [vimAuthenticationMicrosoftWindowsEvent](vimauthenticationmicrosoftwindowsevent.md) | Windows Security Events | 2 | 0.2.1 |
+| ASim: [ASimAuthenticationNative](asimauthenticationnative.md)<br>vim: [vimAuthenticationNative](vimauthenticationnative.md) | Native | 1 | 0.1.0 |
+| ASim: [ASimAuthenticationOktaSSO](asimauthenticationoktasso.md)<br>vim: [vimAuthenticationOktaSSO](vimauthenticationoktasso.md) | Okta | 1 | 0.3.0 |
+| ASim: [ASimAuthenticationOktaV2](asimauthenticationoktav2.md)<br>vim: [vimAuthenticationOktaV2](vimauthenticationoktav2.md) | Okta | 1 | 0.3.1 |
+| ASim: [ASimAuthenticationPaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md)<br>vim: [vimAuthenticationPaloAltoCortexDataLake](vimauthenticationpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.0 |
+| ASim: [ASimAuthenticationPostgreSQL](asimauthenticationpostgresql.md)<br>vim: [vimAuthenticationPostgreSQL](vimauthenticationpostgresql.md) | PostgreSQL | 1 | 0.1.4 |
+| ASim: [ASimAuthenticationSalesforceSC](asimauthenticationsalesforcesc.md)<br>vim: [vimAuthenticationSalesforceSC](vimauthenticationsalesforcesc.md) | Salesforce Service Cloud | 1 | 0.1.0 |
+| ASim: [ASimAuthenticationSentinelOne](asimauthenticationsentinelone.md)<br>vim: [vimAuthenticationSentinelOne](vimauthenticationsentinelone.md) | SentinelOne | 1 | 0.1.1 |
+| ASim: [ASimAuthenticationSigninLogs](asimauthenticationsigninlogs.md)<br>vim: [vimAuthenticationSigninLogs](vimauthenticationsigninlogs.md) | Microsoft Entra ID | 1 | 0.3.2 |
+| ASim: [ASimAuthenticationSshd](asimauthenticationsshd.md)<br>vim: [vimAuthenticationSshd](vimauthenticationsshd.md) | OpenSSH | 1 | 0.2.4 |
+| ASim: [ASimAuthenticationSu](asimauthenticationsu.md)<br>vim: [vimAuthenticationSu](vimauthenticationsu.md) | su | 1 | 0.2.1 |
+| ASim: [ASimAuthenticationSudo](asimauthenticationsudo.md)<br>vim: [vimAuthenticationSudo](vimauthenticationsudo.md) | sudo | 1 | 0.1.2 |
+| ASim: [ASimAuthenticationVMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md)<br>vim: [vimAuthenticationVMwareCarbonBlackCloud](vimauthenticationvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.0 |
+| ASim: [ASimAuthenticationVectraXDRAudit](asimauthenticationvectraxdraudit.md)<br>vim: [vimAuthenticationVectraXDRAudit](vimauthenticationvectraxdraudit.md) | Vectra | 1 | 0.1 |
 
 ## DhcpEvent
 
@@ -159,8 +159,8 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimDhcpEventInfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
-| [ASimDhcpEventNative](asimdhcpeventnative.md) | Native | 1 | 0.1.0 |
+| ASim: [ASimDhcpEventInfobloxBloxOne](asimdhcpeventinfobloxbloxone.md)<br>vim: [vimDhcpEventInfobloxBloxOne](vimdhcpeventinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
+| ASim: [ASimDhcpEventNative](asimdhcpeventnative.md)<br>vim: [vimDhcpEventNative](vimdhcpeventnative.md) | Native | 1 | 0.1.0 |
 
 ## Dns
 
@@ -181,21 +181,21 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimDnsAzureFirewall](asimdnsazurefirewall.md) | Azure Firewall | 2 | 0.4.0 |
-| [ASimDnsCiscoUmbrella](asimdnsciscoumbrella.md) | Cisco Umbrella | 1 | 0.3 |
-| [ASimDnsCorelightZeek](asimdnscorelightzeek.md) | Corelight Zeek | 1 | 0.5 |
-| [ASimDnsFortinetFortiGate](asimdnsfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.1.2 |
-| [ASimDnsGcp](asimdnsgcp.md) | GCP Cloud DNS | 1 | 0.4 |
-| [ASimDnsInfobloxBloxOne](asimdnsinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
-| [ASimDnsInfobloxNIOS](asimdnsinfobloxnios.md) | Infoblox NIOS | 1 | 0.6.1 |
-| [ASimDnsMicrosoftNXlog](asimdnsmicrosoftnxlog.md) | MS DNS Events | 1 | 0.5.0 |
-| [ASimDnsMicrosoftOMS](asimdnsmicrosoftoms.md) | MS DNS Events | 1 | 0.4 |
-| [ASimDnsMicrosoftSysmon](asimdnsmicrosoftsysmon.md) | Microsoft Windows Events Sysmon | 1 | 0.5.1 |
-| [ASimDnsMicrosoftSysmonWindowsEvent](asimdnsmicrosoftsysmonwindowsevent.md) | Microsoft Windows Events Sysmon | 1 | 0.5.1 |
-| [ASimDnsNative](asimdnsnative.md) | Native | 1 | 0.6.1 |
-| [ASimDnsSentinelOne](asimdnssentinelone.md) | SentinelOne | 1 | 0.1.0 |
-| [ASimDnsVectraAI](asimdnsvectraai.md) | Vectra AI Streams | 1 | 0.1.1 |
-| [ASimDnsZscalerZIA](asimdnszscalerzia.md) | Zscaler ZIA DNS | 1 | 0.6 |
+| ASim: [ASimDnsAzureFirewall](asimdnsazurefirewall.md)<br>vim: [vimDnsAzureFirewall](vimdnsazurefirewall.md) | Azure Firewall | 2 | 0.4.0 |
+| ASim: [ASimDnsCiscoUmbrella](asimdnsciscoumbrella.md)<br>vim: [vimDnsCiscoUmbrella](vimdnsciscoumbrella.md) | Cisco Umbrella | 1 | 0.3 |
+| ASim: [ASimDnsCorelightZeek](asimdnscorelightzeek.md)<br>vim: [vimDnsCorelightZeek](vimdnscorelightzeek.md) | Corelight Zeek | 1 | 0.5 |
+| ASim: [ASimDnsFortinetFortiGate](asimdnsfortinetfortigate.md)<br>vim: [vimDnsFortinetFortiGate](vimdnsfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.1.2 |
+| ASim: [ASimDnsGcp](asimdnsgcp.md)<br>vim: [vimDnsGcp](vimdnsgcp.md) | GCP Cloud DNS | 1 | 0.4 |
+| ASim: [ASimDnsInfobloxBloxOne](asimdnsinfobloxbloxone.md)<br>vim: [vimDnsInfobloxBloxOne](vimdnsinfobloxbloxone.md) | Infoblox BloxOne | 1 | 0.1.0 |
+| ASim: [ASimDnsInfobloxNIOS](asimdnsinfobloxnios.md)<br>vim: [vimDnsInfobloxNIOS](vimdnsinfobloxnios.md) | Infoblox NIOS | 1 | 0.6.1 |
+| ASim: [ASimDnsMicrosoftNXlog](asimdnsmicrosoftnxlog.md)<br>vim: [vimDnsMicrosoftNXlog](vimdnsmicrosoftnxlog.md) | MS DNS Events | 1 | 0.5.0 |
+| ASim: [ASimDnsMicrosoftOMS](asimdnsmicrosoftoms.md)<br>vim: [vimDnsMicrosoftOMS](vimdnsmicrosoftoms.md) | MS DNS Events | 1 | 0.4 |
+| ASim: [ASimDnsMicrosoftSysmon](asimdnsmicrosoftsysmon.md)<br>vim: [vimDnsMicrosoftSysmon](vimdnsmicrosoftsysmon.md) | Microsoft Windows Events Sysmon | 1 | 0.5.1 |
+| ASim: [ASimDnsMicrosoftSysmonWindowsEvent](asimdnsmicrosoftsysmonwindowsevent.md)<br>vim: [vimDnsMicrosoftSysmonWindowsEvent](vimdnsmicrosoftsysmonwindowsevent.md) | Microsoft Windows Events Sysmon | 1 | 0.5.1 |
+| ASim: [ASimDnsNative](asimdnsnative.md)<br>vim: [vimDnsNative](vimdnsnative.md) | Native | 1 | 0.6.1 |
+| ASim: [ASimDnsSentinelOne](asimdnssentinelone.md)<br>vim: [vimDnsSentinelOne](vimdnssentinelone.md) | SentinelOne | 1 | 0.1.0 |
+| ASim: [ASimDnsVectraAI](asimdnsvectraai.md)<br>vim: [vimDnsVectraAI](vimdnsvectraai.md) | Vectra AI Streams | 1 | 0.1.1 |
+| ASim: [ASimDnsZscalerZIA](asimdnszscalerzia.md)<br>vim: [vimDnsZscalerZIA](vimdnszscalerzia.md) | Zscaler ZIA DNS | 1 | 0.6 |
 
 ## FileEvent
 
@@ -216,22 +216,22 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimFileEventAzureBlobStorage](asimfileeventazureblobstorage.md) | Microsoft Azure Blob Storage | 1 | 0.1.1 |
-| [ASimFileEventAzureFileStorage](asimfileeventazurefilestorage.md) | Microsoft Azure File Storage | 1 | 0.1.1 |
-| [ASimFileEventAzureQueueStorage](asimfileeventazurequeuestorage.md) | Microsoft Azure Queue Storage | 1 | 0.1.1 |
-| [ASimFileEventAzureTableStorage](asimfileeventazuretablestorage.md) | Microsoft Azure Table Storage | 1 | 0.1.1 |
-| [ASimFileEventGoogleWorkspace](asimfileeventgoogleworkspace.md) | Google Workspace | 1 | 0.1.0 |
-| [ASimFileEventLinuxSysmonFileCreated](asimfileeventlinuxsysmonfilecreated.md) | Microsoft Sysmon for Linux | 1 | 0.2.1 |
-| [ASimFileEventLinuxSysmonFileDeleted](asimfileeventlinuxsysmonfiledeleted.md) | Microsoft Sysmon for Linux | 1 | 0.2.1 |
-| [ASimFileEventMicrosoft365D](asimfileeventmicrosoft365d.md) | Microsoft 365 Defender for EndPoint | 1 | 0.2.1 |
-| [ASimFileEventMicrosoftSecurityEvents](asimfileeventmicrosoftsecurityevents.md) | Microsoft Windows Events | 1 | 0.2.0 |
-| [ASimFileEventMicrosoftSharePoint](asimfileeventmicrosoftsharepoint.md) | Microsoft SharePoint | 2 | 0.3.1 |
-| [ASimFileEventMicrosoftSysmon](asimfileeventmicrosoftsysmon.md) | Windows Sysmon | 1 | 0.5.1 |
-| [ASimFileEventMicrosoftSysmonWindowsEvent](asimfileeventmicrosoftsysmonwindowsevent.md) | Windows Sysmon | 1 | 0.4.1 |
-| [ASimFileEventMicrosoftWindowsEvents](asimfileeventmicrosoftwindowsevents.md) | Microsoft Windows Events | 1 | 0.2.0 |
-| [ASimFileEventNative](asimfileeventnative.md) | Native | 1 | 0.1.1 |
-| [ASimFileEventSentinelOne](asimfileeventsentinelone.md) | SentinelOne | 1 | 0.1.0 |
-| [ASimFileEventVMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
+| ASim: [ASimFileEventAzureBlobStorage](asimfileeventazureblobstorage.md)<br>vim: [vimFileEventAzureBlobStorage](vimfileeventazureblobstorage.md) | Microsoft Azure Blob Storage | 1 | 0.1.1 |
+| ASim: [ASimFileEventAzureFileStorage](asimfileeventazurefilestorage.md)<br>vim: [vimFileEventAzureFileStorage](vimfileeventazurefilestorage.md) | Microsoft Azure File Storage | 1 | 0.1.1 |
+| ASim: [ASimFileEventAzureQueueStorage](asimfileeventazurequeuestorage.md)<br>vim: [vimFileEventAzureQueueStorage](vimfileeventazurequeuestorage.md) | Microsoft Azure Queue Storage | 1 | 0.1.1 |
+| ASim: [ASimFileEventAzureTableStorage](asimfileeventazuretablestorage.md)<br>vim: [vimFileEventAzureTableStorage](vimfileeventazuretablestorage.md) | Microsoft Azure Table Storage | 1 | 0.1.1 |
+| ASim: [ASimFileEventGoogleWorkspace](asimfileeventgoogleworkspace.md)<br>vim: [vimFileEventGoogleWorkspace](vimfileeventgoogleworkspace.md) | Google Workspace | 1 | 0.1.0 |
+| ASim: [ASimFileEventLinuxSysmonFileCreated](asimfileeventlinuxsysmonfilecreated.md)<br>vim: [vimFileEventLinuxSysmonFileCreated](vimfileeventlinuxsysmonfilecreated.md) | Microsoft Sysmon for Linux | 1 | 0.2.1 |
+| ASim: [ASimFileEventLinuxSysmonFileDeleted](asimfileeventlinuxsysmonfiledeleted.md)<br>vim: [vimFileEventLinuxSysmonFileDeleted](vimfileeventlinuxsysmonfiledeleted.md) | Microsoft Sysmon for Linux | 1 | 0.2.1 |
+| ASim: [ASimFileEventMicrosoft365D](asimfileeventmicrosoft365d.md)<br>vim: [vimFileEventMicrosoft365D](vimfileeventmicrosoft365d.md) | Microsoft 365 Defender for EndPoint | 1 | 0.2.1 |
+| ASim: [ASimFileEventMicrosoftSecurityEvents](asimfileeventmicrosoftsecurityevents.md)<br>vim: [vimFileEventMicrosoftSecurityEvents](vimfileeventmicrosoftsecurityevents.md) | Microsoft Windows Events | 1 | 0.2.0 |
+| ASim: [ASimFileEventMicrosoftSharePoint](asimfileeventmicrosoftsharepoint.md)<br>vim: [vimFileEventMicrosoftSharePoint](vimfileeventmicrosoftsharepoint.md) | Microsoft SharePoint | 2 | 0.3.1 |
+| ASim: [ASimFileEventMicrosoftSysmon](asimfileeventmicrosoftsysmon.md)<br>vim: [vimFileEventMicrosoftSysmon](vimfileeventmicrosoftsysmon.md) | Windows Sysmon | 1 | 0.5.1 |
+| ASim: [ASimFileEventMicrosoftSysmonWindowsEvent](asimfileeventmicrosoftsysmonwindowsevent.md)<br>vim: [vimFileEventMicrosoftSysmonWindowsEvent](vimfileeventmicrosoftsysmonwindowsevent.md) | Windows Sysmon | 1 | 0.4.1 |
+| ASim: [ASimFileEventMicrosoftWindowsEvents](asimfileeventmicrosoftwindowsevents.md)<br>vim: [vimFileEventMicrosoftWindowsEvents](vimfileeventmicrosoftwindowsevents.md) | Microsoft Windows Events | 1 | 0.2.0 |
+| ASim: [ASimFileEventNative](asimfileeventnative.md)<br>vim: [vimFileEventNative](vimfileeventnative.md) | Native | 1 | 0.1.1 |
+| ASim: [ASimFileEventSentinelOne](asimfileeventsentinelone.md)<br>vim: [vimFileEventSentinelOne](vimfileeventsentinelone.md) | SentinelOne | 1 | 0.1.0 |
+| ASim: [ASimFileEventVMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md)<br>vim: [vimFileEventVMwareCarbonBlackCloud](vimfileeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
 
 ## NetworkSession
 
@@ -252,42 +252,42 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimNetworkSessionAWSVPC](asimnetworksessionawsvpc.md) | AWS VPC | 1 | 0.3 |
-| [ASimNetworkSessionAppGateSDP](asimnetworksessionappgatesdp.md) | AppGate SDP | 1 | 0.2 |
-| [ASimNetworkSessionAzureFirewall](asimnetworksessionazurefirewall.md) | Azure Firewall | 7 | 0.2.0 |
-| [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md) | Azure NSG flows | 2 | 0.1.1 |
-| [ASimNetworkSessionBarracudaCEF](asimnetworksessionbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
-| [ASimNetworkSessionBarracudaWAF](asimnetworksessionbarracudawaf.md) | Barracuda WAF | 1 | 0.2.1 |
-| [ASimNetworkSessionCheckPointFirewall](asimnetworksessioncheckpointfirewall.md) | CheckPointFirewall | 1 | 1.2.0 |
-| [ASimNetworkSessionCiscoASA](asimnetworksessionciscoasa.md) | CiscoASA | 1 | 1.1.0 |
-| [ASimNetworkSessionCiscoFirepower](asimnetworksessionciscofirepower.md) | Cisco Firepower | 1 | 0.1.0 |
-| [ASimNetworkSessionCiscoISE](asimnetworksessionciscoise.md) | Cisco ISE | 1 | 1.1.0 |
-| [ASimNetworkSessionCiscoMeraki](asimnetworksessionciscomeraki.md) | Cisco Meraki | 2 | 1.2.2 |
-| [ASimNetworkSessionCiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md) | Cisco Meraki | 2 | 1.2.2 |
-| [ASimNetworkSessionCorelightZeek](asimnetworksessioncorelightzeek.md) | Corelight Zeek | 1 | 0.2 |
-| [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 2 | 0.1.0 |
-| [ASimNetworkSessionForcePointFirewall](asimnetworksessionforcepointfirewall.md) | ForcePointFirewall | 1 | 0.1 |
-| [ASimNetworkSessionFortinetFortiGate](asimnetworksessionfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.6.0 |
-| [ASimNetworkSessionIllumioSaaSCore](asimnetworksessionillumiosaascore.md) | Illumio SaaS Core | 1 | 0.1.0 |
-| [ASimNetworkSessionLinuxSysmon](asimnetworksessionlinuxsysmon.md) | Sysmon for Linux | 1 | 0.3.1 |
-| [ASimNetworkSessionMD4IoTAgent](asimnetworksessionmd4iotagent.md) | Microsoft Defender for IoT | 1 | 0.2.1 |
-| [ASimNetworkSessionMD4IoTSensor](asimnetworksessionmd4iotsensor.md) | Microsoft Defender for IoT | 0 | 0.1 |
-| [ASimNetworkSessionMicrosoft365Defender](asimnetworksessionmicrosoft365defender.md) | M365 Defender for Endpoint | 1 | 0.4 |
-| [ASimNetworkSessionMicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md) | Windows Firewall | 2 | 0.5.0 |
-| [ASimNetworkSessionMicrosoftSysmon](asimnetworksessionmicrosoftsysmon.md) | Windows Sysmon | 1 | 0.2.0 |
-| [ASimNetworkSessionMicrosoftSysmonWindowsEvent](asimnetworksessionmicrosoftsysmonwindowsevent.md) | Windows Sysmon | 1 | 0.2.1 |
-| [ASimNetworkSessionMicrosoftWindowsEventFirewall](asimnetworksessionmicrosoftwindowseventfirewall.md) | Windows Firewall | 1 | 0.5.0 |
-| [ASimNetworkSessionNTANetAnalytics](asimnetworksessionntanetanalytics.md) | Azure NTANetAnalytics | 1 | 0.1.0 |
-| [ASimNetworkSessionNative](asimnetworksessionnative.md) | Native | 1 | 0.3 |
-| [ASimNetworkSessionPaloAltoCEF](asimnetworksessionpaloaltocef.md) | Palo Alto PanOS | 1 | 0.7.1 |
-| [ASimNetworkSessionPaloAltoCortexDataLake](asimnetworksessionpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.1 |
-| [ASimNetworkSessionSentinelOne](asimnetworksessionsentinelone.md) | SentinelOne | 1 | 0.1.0 |
-| [ASimNetworkSessionSonicWallFirewall](asimnetworksessionsonicwallfirewall.md) | SonicWall | 1 | 0.1.0 |
-| [ASimNetworkSessionVMConnection](asimnetworksessionvmconnection.md) | VMConnection | 1 | 0.2.1 |
-| [ASimNetworkSessionVMwareCarbonBlackCloud](asimnetworksessionvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 2 | 0.1.1 |
-| [ASimNetworkSessionVectraAI](asimnetworksessionvectraai.md) | Vectra AI Streams | 1 | 0.2 |
-| [ASimNetworkSessionWatchGuardFirewareOS](asimnetworksessionwatchguardfirewareos.md) | WatchGuard Fireware OS | 1 | 0.1.4 |
-| [ASimNetworkSessionZscalerZIA](asimnetworksessionzscalerzia.md) | Zscaler ZIA Firewall | 1 | 0.4 |
+| ASim: [ASimNetworkSessionAWSVPC](asimnetworksessionawsvpc.md)<br>vim: [vimNetworkSessionAWSVPC](vimnetworksessionawsvpc.md) | AWS VPC | 1 | 0.3 |
+| ASim: [ASimNetworkSessionAppGateSDP](asimnetworksessionappgatesdp.md)<br>vim: [vimNetworkSessionAppGateSDP](vimnetworksessionappgatesdp.md) | AppGate SDP | 1 | 0.2 |
+| ASim: [ASimNetworkSessionAzureFirewall](asimnetworksessionazurefirewall.md)<br>vim: [vimNetworkSessionAzureFirewall](vimnetworksessionazurefirewall.md) | Azure Firewall | 7 | 0.2.0 |
+| ASim: [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md)<br>vim: [vimNetworkSessionAzureNSG](vimnetworksessionazurensg.md) | Azure NSG flows | 2 | 0.1.1 |
+| ASim: [ASimNetworkSessionBarracudaCEF](asimnetworksessionbarracudacef.md)<br>vim: [vimNetworkSessionBarracudaCEF](vimnetworksessionbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
+| ASim: [ASimNetworkSessionBarracudaWAF](asimnetworksessionbarracudawaf.md)<br>vim: [vimNetworkSessionBarracudaWAF](vimnetworksessionbarracudawaf.md) | Barracuda WAF | 1 | 0.2.1 |
+| ASim: [ASimNetworkSessionCheckPointFirewall](asimnetworksessioncheckpointfirewall.md)<br>vim: [vimNetworkSessionCheckPointFirewall](vimnetworksessioncheckpointfirewall.md) | CheckPointFirewall | 1 | 1.2.0 |
+| ASim: [ASimNetworkSessionCiscoASA](asimnetworksessionciscoasa.md)<br>vim: [vimNetworkSessionCiscoASA](vimnetworksessionciscoasa.md) | CiscoASA | 1 | 1.1.0 |
+| ASim: [ASimNetworkSessionCiscoFirepower](asimnetworksessionciscofirepower.md)<br>vim: [vimNetworkSessionCiscoFirepower](vimnetworksessionciscofirepower.md) | Cisco Firepower | 1 | 0.1.0 |
+| ASim: [ASimNetworkSessionCiscoISE](asimnetworksessionciscoise.md)<br>vim: [vimNetworkSessionCiscoISE](vimnetworksessionciscoise.md) | Cisco ISE | 1 | 1.1.0 |
+| ASim: [ASimNetworkSessionCiscoMeraki](asimnetworksessionciscomeraki.md)<br>vim: [vimNetworkSessionCiscoMeraki](vimnetworksessionciscomeraki.md) | Cisco Meraki | 2 | 1.2.2 |
+| ASim: [ASimNetworkSessionCiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md)<br>vim: [vimNetworkSessionCiscoMerakiSyslog](vimnetworksessionciscomerakisyslog.md) | Cisco Meraki | 2 | 1.2.2 |
+| ASim: [ASimNetworkSessionCorelightZeek](asimnetworksessioncorelightzeek.md)<br>vim: [vimNetworkSessionCorelightZeek](vimnetworksessioncorelightzeek.md) | Corelight Zeek | 1 | 0.2 |
+| ASim: [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md)<br>vim: [vimNetworkSessionCrowdStrikeFalconHost](vimnetworksessioncrowdstrikefalconhost.md) | CrowdStrike Falcon Endpoint Protection | 2 | 0.1.0 |
+| ASim: [ASimNetworkSessionForcePointFirewall](asimnetworksessionforcepointfirewall.md)<br>vim: [vimNetworkSessionForcePointFirewall](vimnetworksessionforcepointfirewall.md) | ForcePointFirewall | 1 | 0.1 |
+| ASim: [ASimNetworkSessionFortinetFortiGate](asimnetworksessionfortinetfortigate.md)<br>vim: [vimNetworkSessionFortinetFortiGate](vimnetworksessionfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.6.0 |
+| ASim: [ASimNetworkSessionIllumioSaaSCore](asimnetworksessionillumiosaascore.md)<br>vim: [vimNetworkSessionIllumioSaaSCore](vimnetworksessionillumiosaascore.md) | Illumio SaaS Core | 1 | 0.1.0 |
+| ASim: [ASimNetworkSessionLinuxSysmon](asimnetworksessionlinuxsysmon.md)<br>vim: [vimNetworkSessionLinuxSysmon](vimnetworksessionlinuxsysmon.md) | Sysmon for Linux | 1 | 0.3.1 |
+| ASim: [ASimNetworkSessionMD4IoTAgent](asimnetworksessionmd4iotagent.md)<br>vim: [vimNetworkSessionMD4IoTAgent](vimnetworksessionmd4iotagent.md) | Microsoft Defender for IoT | 1 | 0.2.1 |
+| ASim: [ASimNetworkSessionMD4IoTSensor](asimnetworksessionmd4iotsensor.md)<br>vim: [vimNetworkSessionMD4IoTSensor](vimnetworksessionmd4iotsensor.md) | Microsoft Defender for IoT | 0 | 0.1 |
+| ASim: [ASimNetworkSessionMicrosoft365Defender](asimnetworksessionmicrosoft365defender.md)<br>vim: [vimNetworkSessionMicrosoft365Defender](vimnetworksessionmicrosoft365defender.md) | M365 Defender for Endpoint | 1 | 0.4 |
+| ASim: [ASimNetworkSessionMicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md)<br>vim: [vimNetworkSessionMicrosoftSecurityEventFirewall](vimnetworksessionmicrosoftsecurityeventfirewall.md) | Windows Firewall | 2 | 0.5.0 |
+| ASim: [ASimNetworkSessionMicrosoftSysmon](asimnetworksessionmicrosoftsysmon.md)<br>vim: [vimNetworkSessionMicrosoftSysmon](vimnetworksessionmicrosoftsysmon.md) | Windows Sysmon | 1 | 0.2.0 |
+| ASim: [ASimNetworkSessionMicrosoftSysmonWindowsEvent](asimnetworksessionmicrosoftsysmonwindowsevent.md)<br>vim: [vimNetworkSessionMicrosoftSysmonWindowsEvent](vimnetworksessionmicrosoftsysmonwindowsevent.md) | Windows Sysmon | 1 | 0.2.1 |
+| ASim: [ASimNetworkSessionMicrosoftWindowsEventFirewall](asimnetworksessionmicrosoftwindowseventfirewall.md)<br>vim: [vimNetworkSessionMicrosoftWindowsEventFirewall](vimnetworksessionmicrosoftwindowseventfirewall.md) | Windows Firewall | 1 | 0.5.0 |
+| ASim: [ASimNetworkSessionNTANetAnalytics](asimnetworksessionntanetanalytics.md)<br>vim: [vimNetworkSessionNTANetAnalytics](vimnetworksessionntanetanalytics.md) | Azure NTANetAnalytics | 1 | 0.1.0 |
+| ASim: [ASimNetworkSessionNative](asimnetworksessionnative.md)<br>vim: [vimNetworkSessionNative](vimnetworksessionnative.md) | Native | 1 | 0.3 |
+| ASim: [ASimNetworkSessionPaloAltoCEF](asimnetworksessionpaloaltocef.md)<br>vim: [vimNetworkSessionPaloAltoCEF](vimnetworksessionpaloaltocef.md) | Palo Alto PanOS | 1 | 0.7.1 |
+| ASim: [ASimNetworkSessionPaloAltoCortexDataLake](asimnetworksessionpaloaltocortexdatalake.md)<br>vim: [vimNetworkSessionPaloAltoCortexDataLake](vimnetworksessionpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.1 |
+| ASim: [ASimNetworkSessionSentinelOne](asimnetworksessionsentinelone.md)<br>vim: [vimNetworkSessionSentinelOne](vimnetworksessionsentinelone.md) | SentinelOne | 1 | 0.1.0 |
+| ASim: [ASimNetworkSessionSonicWallFirewall](asimnetworksessionsonicwallfirewall.md)<br>vim: [vimNetworkSessionSonicWallFirewall](vimnetworksessionsonicwallfirewall.md) | SonicWall | 1 | 0.1.0 |
+| ASim: [ASimNetworkSessionVMConnection](asimnetworksessionvmconnection.md)<br>vim: [vimNetworkSessionVMConnection](vimnetworksessionvmconnection.md) | VMConnection | 1 | 0.2.1 |
+| ASim: [ASimNetworkSessionVMwareCarbonBlackCloud](asimnetworksessionvmwarecarbonblackcloud.md)<br>vim: [vimNetworkSessionVMwareCarbonBlackCloud](vimnetworksessionvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 2 | 0.1.1 |
+| ASim: [ASimNetworkSessionVectraAI](asimnetworksessionvectraai.md)<br>vim: [vimNetworkSessionVectraAI](vimnetworksessionvectraai.md) | Vectra AI Streams | 1 | 0.2 |
+| ASim: [ASimNetworkSessionWatchGuardFirewareOS](asimnetworksessionwatchguardfirewareos.md)<br>vim: [vimNetworkSessionWatchGuardFirewareOS](vimnetworksessionwatchguardfirewareos.md) | WatchGuard Fireware OS | 1 | 0.1.4 |
+| ASim: [ASimNetworkSessionZscalerZIA](asimnetworksessionzscalerzia.md)<br>vim: [vimNetworkSessionZscalerZIA](vimnetworksessionzscalerzia.md) | Zscaler ZIA Firewall | 1 | 0.4 |
 
 ## ProcessEvent
 
@@ -312,23 +312,23 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimProcessCreateLinuxSysmon](asimprocesscreatelinuxsysmon.md) | Sysmon for Linux | 1 | 0.2.1 |
-| [ASimProcessCreateMicrosoftSecurityEvents](asimprocesscreatemicrosoftsecurityevents.md) | Security Events | 1 | 0.1.1 |
-| [ASimProcessCreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md) | Security Events | 1 | 0.3 |
-| [ASimProcessCreateSentinelOne](asimprocesscreatesentinelone.md) | SentinelOne | 1 | 0.1.0 |
-| [ASimProcessCreateTrendMicroVisionOne](asimprocesscreatetrendmicrovisionone.md) | Trend Micro Vision One | 1 | 0.1.0 |
-| [ASimProcessCreateVMwareCarbonBlackCloud](asimprocesscreatevmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 2 | 0.1.1 |
-| [ASimProcessEventCreateMicrosoftSysmon](asimprocesseventcreatemicrosoftsysmon.md) | Sysmon | 1 | 0.4.1 |
-| [ASimProcessEventCreateMicrosoftSysmonWindowsEvent](asimprocesseventcreatemicrosoftsysmonwindowsevent.md) | Sysmon | 1 | 0.4.1 |
-| [ASimProcessEventMD4IoT](asimprocesseventmd4iot.md) | Microsoft Defender for IoT | 1 | 0.1.1 |
-| [ASimProcessEventMicrosoft365D](asimprocesseventmicrosoft365d.md) | Microsoft 365 Defender for endpoint | 1 | 0.1.2 |
-| [ASimProcessEventNative](asimprocesseventnative.md) | Native | 1 | 0.1.0 |
-| [ASimProcessEventTerminateMicrosoftSysmon](asimprocesseventterminatemicrosoftsysmon.md) | Microsoft Windows Events Sysmon | 1 | 0.3.1 |
-| [ASimProcessEventTerminateMicrosoftSysmonWindowsEvent](asimprocesseventterminatemicrosoftsysmonwindowsevent.md) | Microsoft Windows Events Sysmon | 1 | 0.4.1 |
-| [ASimProcessTerminateLinuxSysmon](asimprocessterminatelinuxsysmon.md) | Sysmon for Linux | 1 | 0.1.1 |
-| [ASimProcessTerminateMicrosoftSecurityEvents](asimprocessterminatemicrosoftsecurityevents.md) | Security Events | 1 | 0.2 |
-| [ASimProcessTerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md) | Security Events | 1 | 0.2 |
-| [ASimProcessTerminateVMwareCarbonBlackCloud](asimprocessterminatevmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.0 |
+| ASim: [ASimProcessCreateLinuxSysmon](asimprocesscreatelinuxsysmon.md)<br>vim: [vimProcessCreateLinuxSysmon](vimprocesscreatelinuxsysmon.md) | Sysmon for Linux | 1 | 0.2.1 |
+| ASim: [ASimProcessCreateMicrosoftSecurityEvents](asimprocesscreatemicrosoftsecurityevents.md)<br>vim: [vimProcessCreateMicrosoftSecurityEvents](vimprocesscreatemicrosoftsecurityevents.md) | Security Events | 1 | 0.1.1 |
+| ASim: [ASimProcessCreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md)<br>vim: [vimProcessCreateMicrosoftWindowsEvents](vimprocesscreatemicrosoftwindowsevents.md) | Security Events | 1 | 0.3 |
+| ASim: [ASimProcessCreateSentinelOne](asimprocesscreatesentinelone.md)<br>vim: [vimProcessCreateSentinelOne](vimprocesscreatesentinelone.md) | SentinelOne | 1 | 0.1.0 |
+| ASim: [ASimProcessCreateTrendMicroVisionOne](asimprocesscreatetrendmicrovisionone.md)<br>vim: [vimProcessCreateTrendMicroVisionOne](vimprocesscreatetrendmicrovisionone.md) | Trend Micro Vision One | 1 | 0.1.0 |
+| ASim: [ASimProcessCreateVMwareCarbonBlackCloud](asimprocesscreatevmwarecarbonblackcloud.md)<br>vim: [vimProcessCreateVMwareCarbonBlackCloud](vimprocesscreatevmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 2 | 0.1.1 |
+| ASim: [ASimProcessEventCreateMicrosoftSysmon](asimprocesseventcreatemicrosoftsysmon.md)<br>vim: [vimProcessEventCreateMicrosoftSysmon](vimprocesseventcreatemicrosoftsysmon.md) | Sysmon | 1 | 0.4.1 |
+| ASim: [ASimProcessEventCreateMicrosoftSysmonWindowsEvent](asimprocesseventcreatemicrosoftsysmonwindowsevent.md)<br>vim: [vimProcessEventCreateMicrosoftSysmonWindowsEvent](vimprocesseventcreatemicrosoftsysmonwindowsevent.md) | Sysmon | 1 | 0.4.1 |
+| ASim: [ASimProcessEventMD4IoT](asimprocesseventmd4iot.md)<br>vim: [vimProcessEventMD4IoT](vimprocesseventmd4iot.md) | Microsoft Defender for IoT | 1 | 0.1.1 |
+| ASim: [ASimProcessEventMicrosoft365D](asimprocesseventmicrosoft365d.md)<br>vim: [vimProcessEventMicrosoft365D](vimprocesseventmicrosoft365d.md) | Microsoft 365 Defender for endpoint | 1 | 0.1.2 |
+| ASim: [ASimProcessEventNative](asimprocesseventnative.md)<br>vim: [vimProcessEventNative](vimprocesseventnative.md) | Native | 1 | 0.1.0 |
+| ASim: [ASimProcessEventTerminateMicrosoftSysmon](asimprocesseventterminatemicrosoftsysmon.md)<br>vim: [vimProcessEventTerminateMicrosoftSysmon](vimprocesseventterminatemicrosoftsysmon.md) | Microsoft Windows Events Sysmon | 1 | 0.3.1 |
+| ASim: [ASimProcessEventTerminateMicrosoftSysmonWindowsEvent](asimprocesseventterminatemicrosoftsysmonwindowsevent.md)<br>vim: [vimProcessEventTerminateMicrosoftSysmonWindowsEvent](vimprocesseventterminatemicrosoftsysmonwindowsevent.md) | Microsoft Windows Events Sysmon | 1 | 0.4.1 |
+| ASim: [ASimProcessTerminateLinuxSysmon](asimprocessterminatelinuxsysmon.md)<br>vim: [vimProcessTerminateLinuxSysmon](vimprocessterminatelinuxsysmon.md) | Sysmon for Linux | 1 | 0.1.1 |
+| ASim: [ASimProcessTerminateMicrosoftSecurityEvents](asimprocessterminatemicrosoftsecurityevents.md)<br>vim: [vimProcessTerminateMicrosoftSecurityEvents](vimprocessterminatemicrosoftsecurityevents.md) | Security Events | 1 | 0.2 |
+| ASim: [ASimProcessTerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md)<br>vim: [vimProcessTerminateMicrosoftWindowsEvents](vimprocessterminatemicrosoftwindowsevents.md) | Security Events | 1 | 0.2 |
+| ASim: [ASimProcessTerminateVMwareCarbonBlackCloud](asimprocessterminatevmwarecarbonblackcloud.md)<br>vim: [vimProcessTerminateVMwareCarbonBlackCloud](vimprocessterminatevmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.0 |
 
 ## RegistryEvent
 
@@ -349,15 +349,15 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimRegistryEventMicrosoft365D](asimregistryeventmicrosoft365d.md) | Microsoft 365 Defender for Endpoint | 1 | 0.1.2 |
-| [ASimRegistryEventMicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md) | Security Events | 1 | 0.3.1 |
-| [ASimRegistryEventMicrosoftSysmon](asimregistryeventmicrosoftsysmon.md) | Microsoft Sysmon | 1 | 0.3.1 |
-| [ASimRegistryEventMicrosoftSysmonWindowsEvent](asimregistryeventmicrosoftsysmonwindowsevent.md) | Microsoft Sysmon | 1 | 0.3.1 |
-| [ASimRegistryEventMicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md) | Security Events | 1 | 0.2.1 |
-| [ASimRegistryEventNative](asimregistryeventnative.md) | Native | 1 | 0.1.0 |
-| [ASimRegistryEventSentinelOne](asimregistryeventsentinelone.md) | SentinelOne | 1 | 0.1.0 |
-| [ASimRegistryEventTrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md) | Trend Micro Vision One | 1 | 0.1.0 |
-| [ASimRegistryEventVMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
+| ASim: [ASimRegistryEventMicrosoft365D](asimregistryeventmicrosoft365d.md)<br>vim: [vimRegistryEventMicrosoft365D](vimregistryeventmicrosoft365d.md) | Microsoft 365 Defender for Endpoint | 1 | 0.1.2 |
+| ASim: [ASimRegistryEventMicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md)<br>vim: [vimRegistryEventMicrosoftSecurityEvent](vimregistryeventmicrosoftsecurityevent.md) | Security Events | 1 | 0.3.1 |
+| ASim: [ASimRegistryEventMicrosoftSysmon](asimregistryeventmicrosoftsysmon.md)<br>vim: [vimRegistryEventMicrosoftSysmon](vimregistryeventmicrosoftsysmon.md) | Microsoft Sysmon | 1 | 0.3.1 |
+| ASim: [ASimRegistryEventMicrosoftSysmonWindowsEvent](asimregistryeventmicrosoftsysmonwindowsevent.md)<br>vim: [vimRegistryEventMicrosoftSysmonWindowsEvent](vimregistryeventmicrosoftsysmonwindowsevent.md) | Microsoft Sysmon | 1 | 0.3.1 |
+| ASim: [ASimRegistryEventMicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md)<br>vim: [vimRegistryEventMicrosoftWindowsEvent](vimregistryeventmicrosoftwindowsevent.md) | Security Events | 1 | 0.2.1 |
+| ASim: [ASimRegistryEventNative](asimregistryeventnative.md)<br>vim: [vimRegistryEventNative](vimregistryeventnative.md) | Native | 1 | 0.1.0 |
+| ASim: [ASimRegistryEventSentinelOne](asimregistryeventsentinelone.md)<br>vim: [vimRegistryEventSentinelOne](vimregistryeventsentinelone.md) | SentinelOne | 1 | 0.1.0 |
+| ASim: [ASimRegistryEventTrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md)<br>vim: [vimRegistryEventTrendMicroVisionOne](vimregistryeventtrendmicrovisionone.md) | Trend Micro Vision One | 1 | 0.1.0 |
+| ASim: [ASimRegistryEventVMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md)<br>vim: [vimRegistryEventVMwareCarbonBlackCloud](vimregistryeventvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | 1 | 0.1.1 |
 
 ## UserManagement
 
@@ -378,12 +378,12 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimUserManagementCiscoISE](asimusermanagementciscoise.md) | Cisco ISE | 1 | 0.1.2 |
-| [ASimUserManagementLinuxAuthpriv](asimusermanagementlinuxauthpriv.md) | Microsoft | 1 | 0.1.1 |
-| [ASimUserManagementMicrosoftSecurityEvent](asimusermanagementmicrosoftsecurityevent.md) | Microsoft Security Event | 1 | 0.2.0 |
-| [ASimUserManagementMicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md) | Microsoft Windows Event | 1 | 0.2.1 |
-| [ASimUserManagementNative](asimusermanagementnative.md) | Native | 1 | 0.1.0 |
-| [ASimUserManagementSentinelOne](asimusermanagementsentinelone.md) | SentinelOne | 1 | 0.1.1 |
+| ASim: [ASimUserManagementCiscoISE](asimusermanagementciscoise.md)<br>vim: [vimUserManagementCiscoISE](vimusermanagementciscoise.md) | Cisco ISE | 1 | 0.1.2 |
+| ASim: [ASimUserManagementLinuxAuthpriv](asimusermanagementlinuxauthpriv.md)<br>vim: [vimUserManagementLinuxAuthpriv](vimusermanagementlinuxauthpriv.md) | Microsoft | 1 | 0.1.1 |
+| ASim: [ASimUserManagementMicrosoftSecurityEvent](asimusermanagementmicrosoftsecurityevent.md)<br>vim: [vimUserManagementMicrosoftSecurityEvent](vimusermanagementmicrosoftsecurityevent.md) | Microsoft Security Event | 1 | 0.2.0 |
+| ASim: [ASimUserManagementMicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md)<br>vim: [vimUserManagementMicrosoftWindowsEvent](vimusermanagementmicrosoftwindowsevent.md) | Microsoft Windows Event | 1 | 0.2.1 |
+| ASim: [ASimUserManagementNative](asimusermanagementnative.md)<br>vim: [vimUserManagementNative](vimusermanagementnative.md) | Native | 1 | 0.1.0 |
+| ASim: [ASimUserManagementSentinelOne](asimusermanagementsentinelone.md)<br>vim: [vimUserManagementSentinelOne](vimusermanagementsentinelone.md) | SentinelOne | 1 | 0.1.1 |
 
 ## WebSession
 
@@ -404,23 +404,23 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Tables | Version |
 |:-------|:--------|:-------|:--------|
-| [ASimWebSessionApacheHTTPServer](asimwebsessionapachehttpserver.md) | Apache HTTP Server | 1 | 0.1 |
-| [ASimWebSessionAzureFirewall](asimwebsessionazurefirewall.md) | Azure Firewall | 1 | 0.1.0 |
-| [ASimWebSessionBarracudaCEF](asimwebsessionbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
-| [ASimWebSessionBarracudaWAF](asimwebsessionbarracudawaf.md) | Barracuda WAF | 1 | 0.2.2 |
-| [ASimWebSessionCiscoFirepower](asimwebsessionciscofirepower.md) | Cisco Firepower | 1 | 0.1.0 |
-| [ASimWebSessionCiscoMeraki](asimwebsessionciscomeraki.md) | Cisco Meraki | 2 | 0.1.1 |
-| [ASimWebSessionCitrixNetScaler](asimwebsessioncitrixnetscaler.md) | Citrix NetScaler | 1 | 0.1.1 |
-| [ASimWebSessionF5ASM](asimwebsessionf5asm.md) | F5 BIG-IP Application Security Manager (ASM) | 1 | 0.1.0 |
-| [ASimWebSessionFortinetFortiGate](asimwebsessionfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.3.0 |
-| [ASimWebSessionIIS](asimwebsessioniis.md) | Internet Information Services (IIS) | 1 | 0.2 |
-| [ASimWebSessionNative](asimwebsessionnative.md) | Native | 1 | 0.1 |
-| [ASimWebSessionPaloAltoCEF](asimwebsessionpaloaltocef.md) | Palo Alto Networks | 1 | 0.2 |
-| [ASimWebSessionPaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.1 |
-| [ASimWebSessionSonicWallFirewall](asimwebsessionsonicwallfirewall.md) | SonicWall | 1 | 0.1.1 |
-| [ASimWebSessionSquidProxy](asimwebsessionsquidproxy.md) | Squid Proxy | 1 | 0.4.0 |
-| [ASimWebSessionVectraAI](asimwebsessionvectraai.md) | Vectra AI Streams | 1 | 0.2 |
-| [ASimWebSessionZscalerZIA](asimwebsessionzscalerzia.md) | Zscaler ZIA | 1 | 0.4.1 |
+| ASim: [ASimWebSessionApacheHTTPServer](asimwebsessionapachehttpserver.md)<br>vim: [vimWebSessionApacheHTTPServer](vimwebsessionapachehttpserver.md) | Apache HTTP Server | 1 | 0.1 |
+| ASim: [ASimWebSessionAzureFirewall](asimwebsessionazurefirewall.md)<br>vim: [vimWebSessionAzureFirewall](vimwebsessionazurefirewall.md) | Azure Firewall | 1 | 0.1.0 |
+| ASim: [ASimWebSessionBarracudaCEF](asimwebsessionbarracudacef.md)<br>vim: [vimWebSessionBarracudaCEF](vimwebsessionbarracudacef.md) | Barracuda WAF | 1 | 0.2.1 |
+| ASim: [ASimWebSessionBarracudaWAF](asimwebsessionbarracudawaf.md)<br>vim: [vimWebSessionBarracudaWAF](vimwebsessionbarracudawaf.md) | Barracuda WAF | 1 | 0.2.2 |
+| ASim: [ASimWebSessionCiscoFirepower](asimwebsessionciscofirepower.md)<br>vim: [vimWebSessionCiscoFirepower](vimwebsessionciscofirepower.md) | Cisco Firepower | 1 | 0.1.0 |
+| ASim: [ASimWebSessionCiscoMeraki](asimwebsessionciscomeraki.md)<br>vim: [vimWebSessionCiscoMeraki](vimwebsessionciscomeraki.md) | Cisco Meraki | 2 | 0.1.1 |
+| ASim: [ASimWebSessionCitrixNetScaler](asimwebsessioncitrixnetscaler.md)<br>vim: [vimWebSessionCitrixNetScaler](vimwebsessioncitrixnetscaler.md) | Citrix NetScaler | 1 | 0.1.1 |
+| ASim: [ASimWebSessionF5ASM](asimwebsessionf5asm.md)<br>vim: [vimWebSessionF5ASM](vimwebsessionf5asm.md) | F5 BIG-IP Application Security Manager (ASM) | 1 | 0.1.0 |
+| ASim: [ASimWebSessionFortinetFortiGate](asimwebsessionfortinetfortigate.md)<br>vim: [vimWebSessionFortinetFortiGate](vimwebsessionfortinetfortigate.md) | Fortinet FortiGate | 1 | 0.3.0 |
+| ASim: [ASimWebSessionIIS](asimwebsessioniis.md)<br>vim: [vimWebSessionIIS](vimwebsessioniis.md) | Internet Information Services (IIS) | 1 | 0.2 |
+| ASim: [ASimWebSessionNative](asimwebsessionnative.md)<br>vim: [vimWebSessionNative](vimwebsessionnative.md) | Native | 1 | 0.1 |
+| ASim: [ASimWebSessionPaloAltoCEF](asimwebsessionpaloaltocef.md)<br>vim: [vimWebSessionPaloAltoCEF](vimwebsessionpaloaltocef.md) | Palo Alto Networks | 1 | 0.2 |
+| ASim: [ASimWebSessionPaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md)<br>vim: [vimWebSessionPaloAltoCortexDataLake](vimwebsessionpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | 1 | 0.1.1 |
+| ASim: [ASimWebSessionSonicWallFirewall](asimwebsessionsonicwallfirewall.md)<br>vim: [vimWebSessionSonicWallFirewall](vimwebsessionsonicwallfirewall.md) | SonicWall | 1 | 0.1.1 |
+| ASim: [ASimWebSessionSquidProxy](asimwebsessionsquidproxy.md)<br>vim: [vimWebSessionSquidProxy](vimwebsessionsquidproxy.md) | Squid Proxy | 1 | 0.4.0 |
+| ASim: [ASimWebSessionVectraAI](asimwebsessionvectraai.md)<br>vim: [vimWebSessionVectraAI](vimwebsessionvectraai.md) | Vectra AI Streams | 1 | 0.2 |
+| ASim: [ASimWebSessionZscalerZIA](asimwebsessionzscalerzia.md)<br>vim: [vimWebSessionZscalerZIA](vimwebsessionzscalerzia.md) | Zscaler ZIA | 1 | 0.4.1 |
 
 ---
 

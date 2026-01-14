@@ -1,5 +1,11 @@
 # Rubrik Critical Anomaly
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Rubrik Critical Anomaly rule matches Severity and if Critical severity found then generate the incident for each object.
 
 | Attribute | Value |

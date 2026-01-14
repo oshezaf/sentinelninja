@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/IronNet%20IronDefense/Workbooks/Images/Logos/IronNet.svg" alt="IronNet IronDefense Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [IronNet Collective Defense](https://www.ironnet.com/what-is-collective-defense) solution enables ingestion of IronDefense alerts, events, and IronDome notifications into Microsoft Sentinel, enabling Microsoft Sentinel to utilize IronDefense's behavioral analytics and the IronDome community to quickly identify threats in your enterprise network.
 
 **Underlying Microsoft Technologies used:**

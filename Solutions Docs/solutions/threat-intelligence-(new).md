@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Threat Intelligence (NEW) Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Microsoft Sentinel has recently improved its threat intelligence hunting experience by incorporating support for STIX objects like Threat Actor, Attack Pattern, Identity, and Relationship. As a result, we have updated our TI Solutions to leverage the new ThreatIntelIndicator table.
 [Work with STIX objects and indicators to enhance threat intelligence and threat hunting in Microsoft Sentinel (Preview) - Microsoft Sentinel | Microsoft Learn](https://learn.microsoft.com/azure/sentinel/work-with-stix-objects-indicators).
 

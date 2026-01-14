@@ -1,5 +1,11 @@
 # Vectra Dynamic Assign Member To Group
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook allows users to filter the group list by providing a group type and a description. From the filtered list, users can choose a group and provide member details to add members to the group dynamically.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Retrospective hunt for Forest Blizzard IP IOCs
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Matches domain name IOCs related to Forest Blizzard group activity with CommonSecurityLog and SecurityAlert dataTypes. The query is scoped in the time window that these IOCs were active.
 
 | Attribute | Value |

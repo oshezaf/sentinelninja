@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NetCleanImpactLogo.svg" alt="NetClean ProActive Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [NetClean](https://www.netclean.com/) ProActive for Microsoft Sentinel solution gives you the ability to connect the [NetClean ProActive](https://www.netclean.com/proactive/) Incident logs with Microsoft Sentinel to view dashboards, create custom alerts, and improve investigation.
 
 **Underlying Microsoft Technologies used:**

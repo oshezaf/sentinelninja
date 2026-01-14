@@ -1,5 +1,11 @@
 # Cross-Cloud Suspicious user activity observed in GCP Envourment
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'This detection query aims to correlate potentially suspicious user activities logged in Google Cloud Platform (GCP) Audit Logs with security alerts originating from Microsoft Security products. This correlation facilitates the identification of potential cross-cloud security incidents. By summarizing these findings, the query provides valuable insights into cross-cloud identity threats and their associated details, enabling organizations to respond promptly and mitigate potential risks effectiv
 
 | Attribute | Value |

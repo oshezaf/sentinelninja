@@ -1,5 +1,11 @@
 # Dataverse - Mass export of records to Excel
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies users exporting a large amount of records from Dynamics 365 to Excel, significantly more records exported than any other recent activity by that user. Large exports from users with no recent activity are identified using a predefined threshold.
 
 | Attribute | Value |

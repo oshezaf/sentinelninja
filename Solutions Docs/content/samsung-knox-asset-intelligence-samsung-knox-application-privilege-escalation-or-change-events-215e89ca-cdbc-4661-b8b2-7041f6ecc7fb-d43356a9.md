@@ -1,5 +1,11 @@
 # Samsung Knox - Application Privilege Escalation or Change Events
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When a Knox mobile app has transitioned from an acceptable uid/esuid/fsuid to a different, non-App id.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Potential DGA detected
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Clients with a high NXDomain count could be indicative of a DGA (cycling through possible C2 domains where most C2s are not live). Based on quartile percent analysis algorithm.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Add Asset to Protection - Zero Networks Segment
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook takes a host from a Microsoft Sentinel incident and adds it to protection. The playbook is configured to add the machine to protection(learning). If you want to have it go straight to protection, remove the protectAt property in the action.
 
 | Attribute | Value |

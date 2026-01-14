@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ACSClogo.svg" alt="Australian Cyber Security Centre Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 This solution allows customers to share threat intelligence with the Australian Cyber Security Centre (ACSC) through the Cyber Threat Intelligence Sharing (CTIS) program. This solution contains a playbook that can be used to get indicators from Microsoft Sentinel and convert them into STIX bundles to be posted to the CTIS TAXII 2.1 server as a Contributing Partner. This solution is only available to deeded ACSC partners that have completed onboarding to the CTIS program. Credentials will be provided during the onboarding process. For more information please contact community@ctis-au.org or visit the [ACSC Partner Portal](https://partners.cyber.gov.au/login?ec=302&startURL=%2Fs%2F).
 
 ## Solution Information

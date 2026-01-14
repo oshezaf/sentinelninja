@@ -1,5 +1,11 @@
 # Jamf Protect - Set Alert to In Progress
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the Alert in Jamf Protect itself, in an automated way you can mirror the state from a Microsoft Sentinel incident back to Jamf Protect.
 
 | Attribute | Value |

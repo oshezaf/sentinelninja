@@ -1,5 +1,11 @@
 # Azure DevOps - New Release Approver
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Release approvals in Azure Pipelines, often user-authorized, can be self-approved by attackers using compromised accounts. This query identifies unusual approvers, aiding in the detection of unauthorized releases.
 
 | Attribute | Value |

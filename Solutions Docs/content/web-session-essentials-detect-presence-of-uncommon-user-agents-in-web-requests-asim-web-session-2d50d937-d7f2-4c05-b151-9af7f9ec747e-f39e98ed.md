@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect presence of uncommon user agents in web requests (ASIM Web Session)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule assists in detecting rare user agents, which may indicate web browsing activity by an unconventional process different from the usual ones. The rule specifically searches for UserAgent strings that have not been seen in the past 14 days. This query will perform better when run over summarized data
 
 | Attribute | Value |

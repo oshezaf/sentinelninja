@@ -1,5 +1,11 @@
 # Dataverse - New non-interactive identity granted access
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies API level access grants, either via the delegated permissions of a Microsoft Entra application or direct assignment within Dataverse as an application user.
 
 | Attribute | Value |

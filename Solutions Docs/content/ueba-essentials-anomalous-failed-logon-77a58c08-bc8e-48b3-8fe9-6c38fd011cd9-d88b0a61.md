@@ -1,5 +1,11 @@
 # Anomalous Failed Logon
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Adversaries with no prior knowledge of legitimate credentials within the system or environment may guess passwords to attempt access to accounts. Emotet, for example, has been observed using a hard-coded list of passwords to brute-force user accounts. The query below generates an output of all users with 'High' BlastRadius that perform failed Sign-in:Invalid username or password.
 
 | Attribute | Value |

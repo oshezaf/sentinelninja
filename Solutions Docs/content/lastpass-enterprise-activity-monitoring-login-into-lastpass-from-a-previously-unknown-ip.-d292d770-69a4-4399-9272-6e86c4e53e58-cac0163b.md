@@ -1,5 +1,11 @@
 # Login into LastPass from a previously unknown IP.
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query will check how many activity there is in LastPass from IPs that are not seen before in the Sign-in Logs
 
 | Attribute | Value |

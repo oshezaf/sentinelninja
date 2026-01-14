@@ -1,5 +1,11 @@
 # Votiro - File Blocked from Connector
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The analytic rule is intended to detect when a file is blocked by Votiro Sanitization Engine due to a specific policy, and notify the appropriate parties so that they can take appropriate action. The alert message will state that a file with a specific name and hash value was blocked by Votiro Sanatization Engine due to a specific policy name, and that more details can be found at a specific incident URL.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # New executable via Office FileUploaded Operation
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies when executable file types are uploaded to Office services such as SharePoint and OneDrive. List currently includes 'exe', 'inf', 'gzip', 'cmd', 'bat' file extensions. Additionally, identifies when a given user is uploading these files to another users workspace. This may be indication of a staging location for malware or other malicious activity.
 
 | Attribute | Value |

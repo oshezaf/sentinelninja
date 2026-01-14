@@ -1,5 +1,11 @@
 # Cisco Cloud Security - Proxy 'Allowed' to unreliable categories.
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Shows allowed requests to URI categories which heavily are used in Initial Access stage by threat actiors and may contain malicious content.
 
 | Attribute | Value |

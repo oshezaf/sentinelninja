@@ -1,5 +1,11 @@
 # New direct access policy was granted against organizational policy
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This policy detects when access was granted directly (not via groups). This policy is defined by default by Authomize to track AWS only. It is possible to edit the existing policy or create more versions to track other apps.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Suspicious SQL Stored Procedures
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query will detect SQL queries where suspicious stored procedures are called. Suspicious procedures included in the query are based on data seen by the MSTIC Deception honeypot.
 
 | Attribute | Value |

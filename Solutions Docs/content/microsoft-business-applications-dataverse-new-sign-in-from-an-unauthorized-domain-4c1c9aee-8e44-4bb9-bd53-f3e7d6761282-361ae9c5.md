@@ -1,5 +1,11 @@
 # Dataverse - New sign-in from an unauthorized domain
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies Dataverse sign-in activity originating from users with UPN suffixes that have not been seen previously in the last 14 days and are not present on a predefined list of authorized domains. Common internal Power Platform system users are excluded by default.
 
 | Attribute | Value |

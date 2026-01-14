@@ -1,5 +1,11 @@
 # Vectra AI Detect - Suspected Compromised Account
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Create an incident when an Account is suspected to be compromised.  The higher the severity level is, the more immediate attention it requires as Vectra AI engine is more confident that this is a real threat.  Level of severity are: Low, Medium, High, Critical). Recommended configuration is to trigger an alert for at least High and Critical.
 
 | Attribute | Value |

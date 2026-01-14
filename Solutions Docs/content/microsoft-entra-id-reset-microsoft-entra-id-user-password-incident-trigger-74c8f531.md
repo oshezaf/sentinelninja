@@ -1,5 +1,11 @@
 # Reset Microsoft Entra ID User Password - Incident Trigger
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will reset the user password using Graph API. It will send the password (which is a random guid substring) to the user's manager. The user will have to reset the password upon login.
 
 | Attribute | Value |

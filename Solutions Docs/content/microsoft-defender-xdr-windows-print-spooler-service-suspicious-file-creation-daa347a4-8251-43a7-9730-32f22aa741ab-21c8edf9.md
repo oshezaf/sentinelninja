@@ -1,5 +1,11 @@
 # Windows Print Spooler Service Suspicious File Creation
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The query digs in Windows print spooler drivers folder for any file creations. This behavior is used from PoC Exploit of CVE-2021-34527, CVE-2021-1675 or CVE-2022-21999.
 
 | Attribute | Value |

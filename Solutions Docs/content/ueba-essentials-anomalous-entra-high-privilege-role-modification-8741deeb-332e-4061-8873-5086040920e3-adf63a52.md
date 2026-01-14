@@ -1,5 +1,11 @@
 # Anomalous Entra High-Privilege Role Modification
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Adversaries may manipulate accounts to maintain access to victim systems. These actions include adding new accounts to high privilleged groups.   Dragonfly 2.0, for example, added newly created accounts to the administrators group to maintain elevated access. The query below generates an   output of all high-privilege users performing "Update user" (name change) to priveleged role, or where one or more features of the activitiy   deviates from the user, his peers or the tenant profile.
 
 | Attribute | Value |

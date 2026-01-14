@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="EatonForeseer Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 [Eaton Foreseer](https://www.eaton.com/in/en-us/catalog/services/foreseer.html) OT application generates logs into Microsoft Sentinel using MMA or AMA, use the Analytics template for creating Analytic Rules on unauthorized login attempts into the application and gain insights into login activity using the provided workbooks.
 
 ## Solution Information

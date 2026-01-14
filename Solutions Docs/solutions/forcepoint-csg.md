@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Forcepoint CSG Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 [Forcepoint Cloud Security Gateway](https://www.forcepoint.com/product/cloud-security-gateway) (CSG) Solution for Microsoft Sentinel exports web and/or email logs so that custom dashboards can be created using Workbooks to visualize events and insights on activities of Forcepoint Cloud Security Gateway.
 
 For more details about this solution refer to [integration documentation](https://forcepoint.github.io/docs/csg_and_sentinel/).

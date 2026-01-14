@@ -1,5 +1,11 @@
 # Changes made to AWS IAM policy
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query looks for when an API call is made to change an IAM, particularly those related to new policies being  attached to users and roles, as well as changes to access methods and changes to account level policies.
 
 | Attribute | Value |

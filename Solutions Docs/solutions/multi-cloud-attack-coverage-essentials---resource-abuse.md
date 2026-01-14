@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Multi Cloud Attack Coverage Essentials - Resource Abuse Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The rise of Multi Cloud Resource Abuse attacks poses a significant threat to the security and integrity of cloud infrastructures. These attacks target the vulnerabilities within AWS, GCP, and Azure cloud environments, aiming to exploit misconfigurations, weak access controls, or compromised credentials to gain unauthorized access, manipulate resources, and extract valuable data across diverse cloud platforms. The Multi Cloud Resource Abuse Attack Solution is designed to fortify the detection and prevention measures against such malicious activities. By integrating detection capabilities across AWS, GCP, and Azure cloud infrastructures, this solution offers a set of detection strategies across various cloud platforms, including AWS, GCP, and Azure, aiming to identify abnormal activities, unauthorized access attempts, resource misuse, and data exfiltration. The solution encompasses log monitoring, anomaly detection, and behaviour analysis to detect and respond to potential breaches or abuses. This solution extends its coverage to include a wide array of cloud-based services such as AWS IAM, Azure AD, GCP IAM, storage services, and more, ensuring a comprehensive approach to identifying, mitigating, and responding to potential threats.
 
  **Pre-requisites:**

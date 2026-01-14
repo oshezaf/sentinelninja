@@ -1,5 +1,11 @@
 # AWS Systems Manager - Stop Managed EC2 Instances IP Entity Trigger
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The playbook can be triggered from an IP entity context in an incident. The playbook takes the private IP and stops the managed EC2 instances using the Instance ID. The playbook also adds a comment to the incident with instance that was stopped.
 
 | Attribute | Value |

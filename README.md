@@ -19,17 +19,14 @@ Currently, I'm a **Principal Product Manager** working on **Microsoft Sentinel**
 
 Comprehensive reference documentation for Microsoft Sentinel Solutions, automatically generated from the [Azure-Sentinel](https://github.com/Azure/Azure-Sentinel) repository using the **[Solutions Analyzer](https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Solutions%20Analyzer)** tool – which I also developed and maintain as part of the Azure-Sentinel repository.
 
-**Includes:**
-- **[Solutions Index](Solutions%20Docs/solutions-index.md)**
-- **[Connectors Index](Solutions%20Docs/connectors-index.md)**
-- **[Tables Index](Solutions%20Docs/tables-index.md)**
-- **[Content Index](Solutions%20Docs/content/content-index.md)** – Overview of all content types including:
-  - Analytic Rules
-  - Hunting Queries
-  - Playbooks
-  - Workbooks
-  - Parsers
-  - Watchlists
+**Browse:**
+- **[Solutions Index](Solutions%20Docs/solutions-index.md)** – 484 solutions
+- **[Connectors Index](Solutions%20Docs/connectors-index.md)** – 529 data connectors
+- **[Tables Index](Solutions%20Docs/tables-index.md)** – 1,010 Log Analytics tables
+- **[Content Index](Solutions%20Docs/content/content-index.md)** – 4,864 content items (analytics, hunting, playbooks, workbooks)
+- **[Parsers Index](Solutions%20Docs/parsers/parsers-index.md)** – 538 non-ASIM parsers
+- **[ASIM Parsers Index](Solutions%20Docs/asim/asim-index.md)** – 95 ASIM parser pairs by schema
+- **[ASIM Products Index](Solutions%20Docs/asim/asim-products-index.md)** – 80 products with ASIM support
 
 ### 📤 [Kusto Uploader](kusto-uploader/README.md)
 

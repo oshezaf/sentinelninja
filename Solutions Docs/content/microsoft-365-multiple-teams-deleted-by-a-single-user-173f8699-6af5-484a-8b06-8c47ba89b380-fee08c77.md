@@ -1,5 +1,11 @@
 # Multiple Teams deleted by a single user
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection flags the occurrences of deleting multiple teams within an hour. This data is a part of Office 365 Connector in Microsoft Sentinel.
 
 | Attribute | Value |

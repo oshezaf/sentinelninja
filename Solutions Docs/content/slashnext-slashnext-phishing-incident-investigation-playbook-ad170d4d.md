@@ -1,5 +1,11 @@
 # SlashNext Phishing Incident Investigation Playbook
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Enhance your security with threat hunting and incident investigation using this playbook. Scan with world’s largest, real-time phishing intelligence database for accurate, definitive binary verdicts on suspicious URLs and download phishing forensics including webpage screenshots, HTML and text. The playbook shall perform the analysis of all URL entities attached to an existing incident using SlashNext Logic Apps Connector and add threat information to each malicious incident.
 
 | Attribute | Value |

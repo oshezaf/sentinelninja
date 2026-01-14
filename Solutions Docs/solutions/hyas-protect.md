@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Hyas.svg" alt="HYAS Protect Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Built on the underpinning technology of HYAS Insight threat intelligence, HYAS Protect is a protective DNS solution that combines authoritative knowledge of attacker infrastructure and unrivaled domain-based intelligence to proactively enforce security and block the command and control (C2) communication used by malware, ransomware, phishing, and other forms of cyber attacks.
 
 ## Solution Information

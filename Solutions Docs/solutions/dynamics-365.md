@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DynamicsLogo.svg" alt="Dynamics 365 Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Dynamics 365](https://dynamics.microsoft.com) continuous Threat Monitoring Solution for Microsoft Sentinel provides you with ability to collect Dynamics 365 CRM logs, gain visibility of activities within Dynamics 365 and analyze them to detect threats and malicious activities. You can view admin, user and support activities, as well as Microsoft Social Engagement logging events data in workbooks, use it to create custom alerts, and improve your investigation process.
 
 **Underlying Microsoft Technologies used:**

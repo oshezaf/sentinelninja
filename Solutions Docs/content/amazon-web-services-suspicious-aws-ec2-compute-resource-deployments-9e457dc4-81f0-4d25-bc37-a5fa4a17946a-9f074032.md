@@ -1,5 +1,11 @@
 # Suspicious AWS EC2 Compute Resource Deployments
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'This detection focused on Suspicious deployment of AWS EC2 resource (virtual machine) scale sets was detected. This behavior might indicate that the threat actor is deploying computing resources for cryptocurrency mining activities.This detection centers around identifying suspicious instances of AWS EC2 resource deployment, particularly scale sets. Such behavior raises concerns of potential threat actor involvement, potentially indicative of efforts to deploy computing resources for the purpos
 
 | Attribute | Value |

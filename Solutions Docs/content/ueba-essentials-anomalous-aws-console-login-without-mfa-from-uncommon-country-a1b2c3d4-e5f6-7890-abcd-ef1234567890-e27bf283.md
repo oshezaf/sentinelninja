@@ -1,5 +1,11 @@
 # Anomalous AWS Console Login Without MFA from Uncommon Country
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detect unusual logon times, MFA fatigue, or service principal misuse across hybrid environments. Get visibility into geo-location of events and Threat Intelligence insights. Here''s an example of how you can easily discover Accounts authenticating without MFA and from uncommonly connected countries using UEBA behaviorAnalytics table:
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # SharePointFileOperation via previously unseen IPs
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Shows SharePoint upload/download volume by IPs with high-risk ASNs. New IPs with volume spikes may be unauthorized and exfiltrating documents.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # RFI-search-external-user
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook searches the Recorded Future Identity Intelligence Module for compromised external (customer) users. This playbook depends on: - RFI-add-EntraID-security-group-user - RFI-confirm-EntraID-risky-user - RFI-lookup-and-save-user Those playbooks need to be installed **manually** before installing current playbook.
 
 | Attribute | Value |

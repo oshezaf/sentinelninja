@@ -1,5 +1,11 @@
 # Azure Secure Score Self Service Password Reset
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query searches for requires you to setup Microsoft Entra ID Connect.   Microsoft Entra ID Connect is free with all Azure Subscriptions
 
 | Attribute | Value |

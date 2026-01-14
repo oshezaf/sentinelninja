@@ -1,5 +1,11 @@
 # Regsvr32 Rundll32 Image Loads Abnormal Extension
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query is looking for regsvr32.exe or rundll32.exe loading DLL images with other extensions than .dll.
 
 | Attribute | Value |

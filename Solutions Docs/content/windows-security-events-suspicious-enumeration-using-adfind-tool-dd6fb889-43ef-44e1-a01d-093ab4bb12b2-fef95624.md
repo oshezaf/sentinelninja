@@ -1,5 +1,11 @@
 # Suspicious Enumeration using Adfind Tool
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Query detects Adfind tool use for domain reconnaissance, regardless of executable name, focusing on DC and ADFS servers, to spot potential adversary activity.
 
 | Attribute | Value |

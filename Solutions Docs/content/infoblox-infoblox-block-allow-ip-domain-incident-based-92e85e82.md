@@ -1,5 +1,11 @@
 # Infoblox-Block-Allow-IP-Domain-Incident-Based
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The playbook will add / remove IP or Domain values in Named List that available in incidents of Infoblox.
 
 | Attribute | Value |

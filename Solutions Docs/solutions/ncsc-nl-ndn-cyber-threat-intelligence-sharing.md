@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NCSC-NL_logo.svg" alt="NCSC-NL NDN Cyber Threat Intelligence Sharing Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 This solution allows affiliated organizations to share cyber threat intelligence with the Dutch National Cyber Security Center (NCSC-NL) through the National Detection Network (NDN). This solution contains a playbook that can be used to get indicators or sightings from Microsoft Sentinel and convert them into STIX bundles to be posted to the NDN TAXII 2.1 server as a collaborating party. This solution is only available to organizations that participate in the NDN community, for which credentials can be requested through the MijnNCSC serviceportaal. If you like to know more about connecting and collaborating with the NCSC by exchanging threat intelligence, please consult [Aansluiten bij het NDN ](https://www.ncsc.nl/aansluiten-en-samenwerken/aansluiting-bij-het-ndn). For more information, please contact info@ncsc.nl or consult [Aansluiten en samenwerken ](https://www.ncsc.nl/aansluiten-en-samenwerken).
 
 ## Solution Information

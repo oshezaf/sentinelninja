@@ -1,5 +1,11 @@
 # 1Password - Secret extraction post vault access change by administrator
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This will alert when a secret extraction has occurred after an administrator has changed their own vault access permissions within that same vault. Ref: https://1password.com/ Ref: https://github.com/securehats/
 
 | Attribute | Value |

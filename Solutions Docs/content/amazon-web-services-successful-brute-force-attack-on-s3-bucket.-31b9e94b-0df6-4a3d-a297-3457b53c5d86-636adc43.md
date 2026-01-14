@@ -1,5 +1,11 @@
 # Successful brute force attack on S3 Bucket.
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 A successful brute force attack on an S3 bucket was detected. Verify these actions, and if needed, remediate the compromise.
 
 | Attribute | Value |

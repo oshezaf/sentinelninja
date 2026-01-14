@@ -1,5 +1,11 @@
 # Cyble-ThreatIntelligence-Ingest-Playbook
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook imports IoC lists from Cyble and stores them as Threat Intelligence Indicators in Microsoft Sentinel, for detection purposes. This playbook depends on Cyble-ThreatIntelligence-Ingest that need to be installed **manually** before installing this playbook.
 
 | Attribute | Value |

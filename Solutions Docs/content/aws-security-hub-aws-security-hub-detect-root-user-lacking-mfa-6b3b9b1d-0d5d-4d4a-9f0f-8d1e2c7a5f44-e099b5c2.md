@@ -1,5 +1,11 @@
 # AWS Security Hub - Detect root user lacking MFA
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects AWS accounts where the root user does not have multi-factor authentication (MFA) enabled, using AWS Security Hub control IAM.9 findings. Lack of MFA on the root user increases the risk of unauthorized access and privilege abuse.
 
 | Attribute | Value |

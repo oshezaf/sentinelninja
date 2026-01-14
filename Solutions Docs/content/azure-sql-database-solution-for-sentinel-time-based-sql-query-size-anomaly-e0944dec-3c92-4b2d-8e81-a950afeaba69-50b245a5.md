@@ -1,5 +1,11 @@
 # Time Based SQL Query Size Anomaly
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query uses series decompose anomaly to identify periods of time where a given user account and application combination is used to send an anomalous number of parameters or SQL query tokens to the server. This query is designed to be run against application and username combinations that are used by SQL applications, such as content management systems (Wordpress, Joomla, TYPO3, etc.).
 
 | Attribute | Value |

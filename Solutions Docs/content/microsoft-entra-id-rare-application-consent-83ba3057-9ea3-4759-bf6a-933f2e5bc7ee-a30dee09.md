@@ -1,5 +1,11 @@
 # Rare application consent
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'This will alert when the "Consent to application" operation occurs by a user that has not done this operation before or rarely does this. This could indicate that permissions to access the listed Azure App were provided to a malicious actor. Consent to application, Add service principal and Add OAuth2PermissionGrant should typically be rare events. This may help detect the Oauth2 attack that can be initiated by this publicly available tool - https://github.com/fireeye/PwnAuth For further inform
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # M2131_RecommendedDatatableNotLogged_EL0
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This alert audits your logging architecture for recommended data tables aligned to Event Logging (EL0) of the Maturity Model for Event Log Management (M-21-31) standard. The alert triggers when recommended data tables in EL0 are not present.
 
 | Attribute | Value |

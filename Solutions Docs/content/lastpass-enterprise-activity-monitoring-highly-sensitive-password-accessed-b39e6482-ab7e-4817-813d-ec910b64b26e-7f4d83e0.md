@@ -1,5 +1,11 @@
 # Highly Sensitive Password Accessed
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule will monitor access to highly sensitive passwords. Within the Watchlist called 'LastPass' define passwords which are deemed highly sensitive (such as password to a high privileged application). When an activity is observed against such password, an incident is created.
 
 | Attribute | Value |

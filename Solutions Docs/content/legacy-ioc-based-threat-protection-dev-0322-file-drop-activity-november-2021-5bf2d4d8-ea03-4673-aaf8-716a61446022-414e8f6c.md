@@ -1,5 +1,11 @@
 # Dev-0322 File Drop Activity November 2021
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query hunts for file creation events linked to Dev-0322's compromise of ZOHO ManageEngine ADSelfService Plus software. It focuses on files dropped during post-exploitation activity. Hosts with higher risk scores should be prioritized.
 
 | Attribute | Value |

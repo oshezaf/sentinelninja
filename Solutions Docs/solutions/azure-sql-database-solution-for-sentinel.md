@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureSQL.svg" alt="Azure SQL Database solution for sentinel Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/) solution for Microsoft Sentinel enables you to stream Azure SQL database audit and diagnostic logs into Microsoft Sentinel, allowing you to continuously monitor activity in all your instances. 
   
   **Underlying Microsoft Technologies used:** 

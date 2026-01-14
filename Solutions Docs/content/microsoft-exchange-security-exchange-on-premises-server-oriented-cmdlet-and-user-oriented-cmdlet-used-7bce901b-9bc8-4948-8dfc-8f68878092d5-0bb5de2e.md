@@ -1,5 +1,11 @@
 # Server Oriented Cmdlet And User Oriented Cmdlet used
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detect if a server oriented cmdlet and a user oriented cmdlet that are monitored are launched by the same user in the same server within a 10 minutes timeframe
 
 | Attribute | Value |

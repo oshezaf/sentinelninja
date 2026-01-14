@@ -1,5 +1,11 @@
 # Powercat Download
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Powercat is a PowerShell implementation of netcat. Whilst it can be used as a legitimate administrative tool it can be abused by attackers to exfiltrate data. This query looks for command line activity downloading PowerCat.
 
 | Attribute | Value |

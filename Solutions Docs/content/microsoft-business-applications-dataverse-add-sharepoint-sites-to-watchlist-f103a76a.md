@@ -1,5 +1,11 @@
 # Dataverse: Add SharePoint sites to watchlist
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook is used to add new or updated SharePoint document management sites into the configuration watchlist. When combined with a scheduled analytics rule monitoring the Dataverse activity log, this Playbook will trigger when a new SharePoint document management site mapping is added. The site will be added to a watchlist to extend monitoring coverage.
 
 | Attribute | Value |

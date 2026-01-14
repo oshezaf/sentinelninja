@@ -1,5 +1,11 @@
 # F&O - Unusual sign-in activity using single factor authentication
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies sucessful sign-in events to Finance & Operations and Lifecycle Services using single factor/password authentication. Sign-in events from tenants not using MFA, coming from a Microsoft Entra trusted network location, or from geolocations seen previously in the last 14 days are excluded.
 
 | Attribute | Value |

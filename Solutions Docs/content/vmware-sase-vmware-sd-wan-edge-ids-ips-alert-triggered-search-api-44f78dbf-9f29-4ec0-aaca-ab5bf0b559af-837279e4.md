@@ -1,5 +1,11 @@
 # VMware SD-WAN Edge - IDS/IPS Alert triggered (Search API)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The VMware SD-WAN Edge appliance captured a potentially malicious traffic flow. Please investigate the IOC information available.  This analytics rule analyses Search API streams. Search API queries report only IDS/IPS Alerts. In case you would also need Network Flood Protection, please enable Syslog collection using AMA.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Excessive execution of discovery events
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Several enumeration API calls were executed by the same identity. This could be an attacker trying to enumerate the compromised user/token permissions. Verify with the user identity that this activity is legitimate.
 
 | Attribute | Value |

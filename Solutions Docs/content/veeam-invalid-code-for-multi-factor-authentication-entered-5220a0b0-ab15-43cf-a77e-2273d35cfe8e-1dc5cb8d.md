@@ -1,5 +1,11 @@
 # Invalid Code for Multi-Factor Authentication Entered
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects failed multi-factor authentication attempts. This might indicate credential stuffing or brute-force attacks.
 
 | Attribute | Value |

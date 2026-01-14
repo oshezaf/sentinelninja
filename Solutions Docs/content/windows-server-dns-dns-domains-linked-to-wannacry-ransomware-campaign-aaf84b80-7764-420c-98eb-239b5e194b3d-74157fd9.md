@@ -1,5 +1,11 @@
 # DNS Domains linked to WannaCry ransomware campaign
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Displays the client DNS request for any of the known domains linked to WannaCry. These results may indicate a Wannacry/Wannacrypt ransomware infection. Reference: Domain listing from https://pastebin.com/cRUii32E
 
 | Attribute | Value |

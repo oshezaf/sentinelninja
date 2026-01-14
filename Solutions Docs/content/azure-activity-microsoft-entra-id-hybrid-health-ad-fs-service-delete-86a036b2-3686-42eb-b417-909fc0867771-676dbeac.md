@@ -1,5 +1,11 @@
 # Microsoft Entra ID Hybrid Health AD FS Service Delete
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection uses AzureActivity logs (Administrative category) to identify the deletion of an Microsoft Entra ID Hybrid Health AD FS service instance in a tenant. A threat actor can create a new AD Health ADFS service and create a fake server to spoof AD FS signing logs. The health AD FS service can then be deleted after it is no longer needed via HTTP requests to Azure. More information is available in this blog https://o365blog.com/post/hybridhealthagent/
 
 | Attribute | Value |

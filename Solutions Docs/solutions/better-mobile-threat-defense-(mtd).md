@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BETTER_MTD_logo.svg" alt="BETTER Mobile Threat Defense (MTD) Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [BETTER Mobile Threat Defense](https://mtd-docs.bmobi.net/) Solution for Microsoft Sentinel allows Enterprises to connect their Better MTD instances with Microsoft Sentinel, to view the [incidents](https://mtd-docs.bmobi.net/incidents/incidents) in Dashboards, create custom alerts, use it to trigger playbooks and expands threat hunting capabilities. This gives users more insight into their organization's mobile devices and ability to quickly analyse current mobile security posture which improves their overall SecOps capabilities.
 
 For more details about this solution refer to [https://mtd-docs.bmobi.net/integrations/azure-sentinel](https://mtd-docs.bmobi.net/integrations/azure-sentinel)

@@ -1,5 +1,11 @@
 # Password spray attack against ADFSSignInLogs
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies evidence of password spray activity against Connect Health for AD FS sign-in events by looking for failures from multiple accounts from the same IP address within a time window. Reference: https://adfshelp.microsoft.com/References/ConnectHealthErrorCodeReference
 
 | Attribute | Value |

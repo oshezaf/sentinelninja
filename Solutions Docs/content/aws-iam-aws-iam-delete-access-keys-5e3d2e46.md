@@ -1,5 +1,11 @@
 # AWS IAM - Delete access keys
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the following actions: 1. Gets users from the incident. 2. [Get list of access keys](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccessKeys.html) from these users. 3. Delete selected access keys. 4. Adds information about deleted user's access keys as a comment to the incident.
 
 | Attribute | Value |

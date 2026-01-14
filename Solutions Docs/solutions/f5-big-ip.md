@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/F5%20BIG-IP/Workbooks/Images/Logo/f5_logo.svg" alt="F5 Big-IP Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [F5 BIG-IP](https://www.f5.com/products/big-ip-services) Solution for Microsoft Sentinel allows you to easily connect your F5 logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
 
 For more details about this solution refer to https://community.f5.com/t5/technical-articles/integrating-the-f5-bigip-with-azure-sentinel/ta-p/282868 

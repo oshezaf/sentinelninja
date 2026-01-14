@@ -1,5 +1,11 @@
 # Dataverse - Login from IP not in the allow list
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies logons from IPv4 addresses not matching IPv4 subnets maintained on an allow list. This analytics rule uses the NetworkAddresses watchlist template.
 
 | Attribute | Value |

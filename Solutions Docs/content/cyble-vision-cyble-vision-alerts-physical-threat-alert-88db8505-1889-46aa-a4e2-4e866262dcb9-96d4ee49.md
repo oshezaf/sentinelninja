@@ -1,5 +1,11 @@
 # Cyble Vision Alerts Physical Threat Alert
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Creates an incident for physical threats identified by Cyble Intelligence such as explosions, safety incidents, riots, or violence. Each alert generates a single incident for SOC evaluation.
 
 | Attribute | Value |

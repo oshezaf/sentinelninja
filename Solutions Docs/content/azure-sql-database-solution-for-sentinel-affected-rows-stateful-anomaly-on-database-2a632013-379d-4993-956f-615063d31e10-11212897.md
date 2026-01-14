@@ -1,5 +1,11 @@
 # Affected rows stateful anomaly on database
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Goal: To detect anomalous data change/deletion. This query detects SQL queries that changed/deleted a large number of rows, which is significantly higher than normal for this database. The detection is calculated inside recent time window (defined by 'detectionWindow' parameter), and the anomaly is calculated based on previous training window (defined by 'trainingWindow' parameter). The user can set the minimal threshold for anomaly by changing the threshold parameters volThresholdZ and volThre
 
 | Attribute | Value |

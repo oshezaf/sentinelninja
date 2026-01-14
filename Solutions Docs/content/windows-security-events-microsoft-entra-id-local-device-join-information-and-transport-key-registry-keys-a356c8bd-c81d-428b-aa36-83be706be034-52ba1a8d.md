@@ -1,5 +1,11 @@
 # Microsoft Entra ID Local Device Join Information and Transport Key Registry Keys Access
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'This detection uses Windows security events to detect suspicious access attempts by the same process to registry keys that provide information about an Microsoft Entra ID joined or registered devices and Transport keys (tkpub / tkpriv).  This information can be used to export the Device Certificate (dkpub / dkpriv) and Transport key (tkpub/tkpriv).  These set of keys can be used to impersonate existing Microsoft Entra ID joined devices.  This detection requires an access control entry (ACE) on
 
 | Attribute | Value |

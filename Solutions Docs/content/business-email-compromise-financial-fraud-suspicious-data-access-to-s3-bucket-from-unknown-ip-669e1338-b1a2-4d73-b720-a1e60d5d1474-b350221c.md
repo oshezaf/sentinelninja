@@ -1,5 +1,11 @@
 # Suspicious Data Access to S3 Bucket from Unknown IP
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query identifies unusual access to cloud storage, particularly from IPs not historically seen accessing the bucket or downloading files. It can be limited to private buckets with sensitive files by setting BucketName values.
 
 | Attribute | Value |

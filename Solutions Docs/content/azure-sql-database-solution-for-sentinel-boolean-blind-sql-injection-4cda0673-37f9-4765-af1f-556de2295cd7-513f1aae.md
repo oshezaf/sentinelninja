@@ -1,5 +1,11 @@
 # Boolean Blind SQL Injection
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query will detect instances where a balanced boolean query, e.g. "true=true", is observed in an SQL query sent to the server. Balanced boolean queries are commonly used by attackers to test of SQL injections vulnerabilities
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Rare Process as a Service
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query is looking for rarely seen processes which are launched as a service. Whiltelisted process list need to be updated based on the environment. Author: Jouni Mikkola More info: https://threathunt.blog/rare-process-launch-as-a-service/
 
 | Attribute | Value |

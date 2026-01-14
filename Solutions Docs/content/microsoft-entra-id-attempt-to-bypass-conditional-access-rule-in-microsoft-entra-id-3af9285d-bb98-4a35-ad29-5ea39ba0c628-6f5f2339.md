@@ -1,5 +1,11 @@
 # Attempt to bypass conditional access rule in Microsoft Entra ID
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies an attempt to Bypass conditional access rule(s) in Microsoft Entra ID. The ConditionalAccessStatus column value details if there was an attempt to bypass Conditional Access or if the Conditional access rule was not satisfied (ConditionalAccessStatus == 1). References: https://docs.microsoft.com/azure/active-directory/conditional-access/overview https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins https://docs.microsoft.com/azure/active-directory/repor
 
 | Attribute | Value |

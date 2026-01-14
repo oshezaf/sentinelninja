@@ -1,5 +1,11 @@
 # Anomalous connection from highly privileged user
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Shows all users from a given department, which have a high impact on the organization, who connected to a resource for the first time and none of their peers accessed it.
 
 | Attribute | Value |

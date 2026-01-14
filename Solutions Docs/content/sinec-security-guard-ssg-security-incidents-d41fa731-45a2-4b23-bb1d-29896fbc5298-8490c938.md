@@ -1,5 +1,11 @@
 # SSG_Security_Incidents
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The security analytic rule is designed to scrutinize network activity involving private IP addresses within an organization's internal network. By filtering log entries to include only those where either the source or the destination IP is private, the rule focuses on internal communications that could indicate unauthorized access, internal threats, or other security anomalies.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Distributed Password cracking attempts in Microsoft Entra ID
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies distributed password cracking attempts from the Microsoft Entra ID SigninLogs. The query looks for unusually high number of failed password attempts coming from multiple locations for a user account. References: https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-sign-ins-error-codes 50053   Account is locked because the user tried to sign in too many times with an incorrect user ID or password. 50055   Invalid password, entered expired password. 50056   In
 
 | Attribute | Value |

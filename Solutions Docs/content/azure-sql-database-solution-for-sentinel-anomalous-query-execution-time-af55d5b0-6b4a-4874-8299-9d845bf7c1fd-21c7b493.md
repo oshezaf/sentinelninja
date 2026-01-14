@@ -1,5 +1,11 @@
 # Anomalous Query Execution Time
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query will detect SQL queries that took an unusually long period of time to execute based on a calculated average execution time. The query groups based on the application and the username, making this query suitable for detecting exploitation of web applications, or other SQL backed applications with predictable behaviour.
 
 | Attribute | Value |

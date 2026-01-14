@@ -1,5 +1,11 @@
 # Dataverse - Suspicious use of TDS endpoint
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies Dataverse TDS (Tabular Data Stream) protocol based queries where the source user or IP address has recent security alerts and the TDS protocol has not been used previously in the target environment.
 
 | Attribute | Value |

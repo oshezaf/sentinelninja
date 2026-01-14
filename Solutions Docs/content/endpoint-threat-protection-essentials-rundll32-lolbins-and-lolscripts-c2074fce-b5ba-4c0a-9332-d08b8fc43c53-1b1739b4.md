@@ -1,5 +1,11 @@
 # Rundll32 (LOLBins and LOLScripts)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection uses Sysmon telemetry to hunt Signed Binary Proxy Execution: Rundll32 activities.
 
 | Attribute | Value |

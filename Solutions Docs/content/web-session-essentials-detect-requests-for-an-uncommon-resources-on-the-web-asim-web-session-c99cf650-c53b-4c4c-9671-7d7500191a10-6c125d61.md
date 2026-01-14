@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Detect requests for an uncommon resources on the web (ASIM Web Session)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection mechanism examines connections made to a domain where only a single file is requested, which is considered unusual since most contemporary web applications require additional resources. Such activity is often associated with malware beaconing or tracking URLs delivered via emails.  The query includes a sample set of popular web script extensions (scriptExtensions), which should be customized to align with the specific requirements of your environment
 
 | Attribute | Value |

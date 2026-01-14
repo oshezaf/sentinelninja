@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="GoogleCloudPlatformCDN Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Google Cloud Platform CDN solution provides the capability to ingest [Cloud CDN Audit logs](https://cloud.google.com/cdn/docs/audit-logging) and [Cloud CDN traffic logs](https://cloud.google.com/cdn/docs/logging) into Microsoft Sentinel using the GCP Compute Engine API and GCP Logging API. 
 
 **Underlying Microsoft Technologies used:**

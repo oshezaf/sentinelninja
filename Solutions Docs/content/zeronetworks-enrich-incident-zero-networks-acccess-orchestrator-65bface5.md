@@ -1,5 +1,11 @@
 # Enrich Incident - Zero Networks Acccess Orchestrator
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will take each Host entity and get its Asset status from Zero Network Segment. The playbook will then write a comment to the Microsoft Sentinel incident with a table of assets and protection statuses.
 
 | Attribute | Value |

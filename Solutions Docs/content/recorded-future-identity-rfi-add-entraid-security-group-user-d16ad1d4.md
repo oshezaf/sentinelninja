@@ -1,5 +1,11 @@
 # RFI-add-EntraID-security-group-user
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook adds a compromised user to an EntraID security group. Triage and remediation should be handled in follow up playbooks or actions.
 
 | Attribute | Value |

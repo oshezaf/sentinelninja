@@ -1,5 +1,11 @@
 # Dataverse - Identity management activity outside of privileged directory role membership
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects identity administration events in Dataverse/Dynamics 365 made by accounts which are not members of privileged directory roles 'Dynamics 365 Admins', 'Power Platform Admins' or 'Global Admins
 
 | Attribute | Value |

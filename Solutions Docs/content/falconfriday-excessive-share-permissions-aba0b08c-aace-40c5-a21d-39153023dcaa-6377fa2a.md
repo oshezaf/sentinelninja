@@ -1,5 +1,11 @@
 # Excessive share permissions
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The query searches for event 5143, which is triggered when a share is created or changed and includes de share permissions. First it checks to see if this is a whitelisted share for the system (e.g. domaincontroller netlogon, printserver print$ etc.). The share permissions are then checked against 'allow' rule (A) for a number of well known overly permissive groups, like all users, guests, authenticated users etc. If these are found, an alert is raised so the share creation may be audited. Note:
 
 | Attribute | Value |

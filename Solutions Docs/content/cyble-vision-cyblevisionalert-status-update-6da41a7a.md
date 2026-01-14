@@ -1,5 +1,11 @@
 # CybleVisionAlert_Status_Update
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This Logic App updates Cyble alert status and severity based on Sentinel incident changes. It supports automatic updates via automation rules and interprets user-applied tags to determine the correct status mapping.
 
 | Attribute | Value |

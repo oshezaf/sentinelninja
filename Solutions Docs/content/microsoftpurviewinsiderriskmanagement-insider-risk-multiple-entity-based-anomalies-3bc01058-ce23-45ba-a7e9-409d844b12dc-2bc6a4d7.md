@@ -1,5 +1,11 @@
 # Insider Risk_Multiple Entity-Based Anomalies
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query returns entity counts by anomaly and user principal name including ranges for start/end time observed (watchlists configurable). For more information, see https://docs.microsoft.com/azure/sentinel/watchlists
 
 | Attribute | Value |

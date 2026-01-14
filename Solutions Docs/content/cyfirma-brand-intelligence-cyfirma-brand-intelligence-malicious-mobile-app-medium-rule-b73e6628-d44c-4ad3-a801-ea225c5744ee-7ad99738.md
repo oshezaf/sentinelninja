@@ -1,5 +1,11 @@
 # CYFIRMA - Brand Intelligence - Malicious Mobile App Medium Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This analytic rule detects instances where malicious or unauthorized mobile applications are discovered mimicking legitimate brand assets.  Such impersonations may be distributed through unofficial app stores or third-party websites, potentially deceiving customers, harvesting sensitive data, or damaging brand reputation.  This alert is triggered when CYFIRMA threat intelligence identifies a suspicious mobile app associated with the organization's brand or product names.
 
 | Attribute | Value |

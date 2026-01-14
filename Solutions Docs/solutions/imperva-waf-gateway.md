@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Imperva_DarkGrey_final_75x75.svg" alt="Imperva WAF Gateway Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Imperva WAF Gateway[https://www.imperva.com/products/web-application-firewall-waf/] solution for Microsoft Sentinel enables you to quickly connect your Imperva WAF Gateway alerts to Microsoft Sentinel. This provides you additional insight into your organization's WAF traffic and improves your security operation capabilities.
 
 ## Solution Information

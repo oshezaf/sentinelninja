@@ -1,5 +1,11 @@
 # CYFIRMA - Data Breach and Web Monitoring - Dark Web High Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects critical alerts from CYFIRMA related to sensitive data or credentials leaked on dark web forums.  These events often indicate unauthorized access or compromise of enterprise systems, cloud environments, or identity platforms.  Immediate investigation is required to assess breach scope and initiate mitigation, including credential resets, access reviews, and threat actor tracking.
 
 | Attribute | Value |

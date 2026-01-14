@@ -1,5 +1,11 @@
 # Vectra Static Resolve Assignment
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook resolves the assignment for an entity in Vectra and adds a note for the assignment when the status of an incident is changed to 'closed', and also it triages all active detections associated with the entity while applying the Microsoft Sentinel incident ID as the triage label.
 
 | Attribute | Value |

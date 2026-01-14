@@ -1,5 +1,11 @@
 # S3 bucket has been deleted
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detected deletion of a S3 bucket. An attacker could delete S3 objects for impact and Denail of service purposes.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Full Admin policy created and then attached to Roles, Users or Groups
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identity and Access Management (IAM) securely manages access to AWS services and resources.  Identifies when a policy is created with Full Administrators Access (Allow-Action:*,Resource:*).  This policy can be attached to role,user or group and may be used by an adversary to escalate a normal user privileges to an adminsitrative level. AWS IAM Policy Grammar: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_grammar.html  and AWS IAM API at https://docs.aws.amazon.com/IAM/late
 
 | Attribute | Value |

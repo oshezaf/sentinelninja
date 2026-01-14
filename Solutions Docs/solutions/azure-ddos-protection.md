@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzDDoS.svg" alt="Azure DDoS Protection Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Solution for Microsoft Sentinel enables you to easily ingest Azure DDoS Protection Standard logs to Microsoft Sentinel. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
 
  To enable automated response to threats detected, consider deploying the [Remediation-IP Playbook](https://github.com/Azure/Azure-Sentinel/tree/master/MasterPlaybooks/Remediation-IP). 

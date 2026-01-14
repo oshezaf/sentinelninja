@@ -1,5 +1,11 @@
 # Samsung Knox - Peripheral Access  Detection with Mic Events
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When microphone access has been detected on a Knox device, even though such access is disabled through an MDM device policy.
 
 | Attribute | Value |

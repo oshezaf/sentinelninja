@@ -1,5 +1,11 @@
 # CYFIRMA - Customer Accounts Leaks Detection Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects recent leaks of customer account credentials based on CYFIRMA's threat intelligence.   This rule surfaces the latest credential exposures, including email, username, and breach metadata.   It enables security teams to quickly identify and investigate leaked customer data from third-party breaches, dark web listings, or public repositories.
 
 | Attribute | Value |

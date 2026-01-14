@@ -1,5 +1,11 @@
 # Vectra Mark Detections As Fixed
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will mark active detection as fixed associated with an entity based on choice of user provided over MS Teams. Also it adds a pre-defined but user customizable comment to an incident and also adds a pre-defined but user customizable note to Vectra Entity.
 
 | Attribute | Value |

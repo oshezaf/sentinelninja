@@ -1,5 +1,11 @@
 # DNS - domain anomalous lookup increase
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Checking for a threefold increase or more of domain lookups per client IP address for the current day compared to the daily average for the previous week. This can potentially identify excessive traffic to a given location that could be indicative of data transfer out of your network to a group of systems based on the same second level domain. For example, if one client is sending requests for test1.badguy.com and another client is sending requests for test2.badguy.com, you may not see a high e
 
 | Attribute | Value |

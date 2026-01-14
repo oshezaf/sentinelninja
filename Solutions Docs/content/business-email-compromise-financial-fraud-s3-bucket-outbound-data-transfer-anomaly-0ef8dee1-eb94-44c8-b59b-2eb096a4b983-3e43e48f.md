@@ -1,5 +1,11 @@
 # S3 Bucket outbound Data transfer anomaly
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies S3 data transfer spikes using GetObject API, BytesTransferredOut, and KQL anomaly detection. Investigate sudden action frequency increases. Adjust scorethreshold to 3+ to reduce noise.
 
 | Attribute | Value |

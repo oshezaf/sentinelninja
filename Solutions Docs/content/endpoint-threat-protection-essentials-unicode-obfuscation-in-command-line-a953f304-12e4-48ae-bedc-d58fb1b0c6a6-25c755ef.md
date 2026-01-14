@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Unicode Obfuscation in Command Line
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The query looks for Command Lines that contain non ASCII characaters. Insertion of these characters could be used to evade detections.  Command lines should be reviewed to determine whether inclusion of non ASCII characters was deliberate or not
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Interactive STS refresh token modifications
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query monitors STS refresh token changes by Service Principals/Applications excluding DirectorySync. It could be due to admins adjusting tokens or for improved login experience. Includes an allowlist. Analyze for unusual operations.
 
 | Attribute | Value |

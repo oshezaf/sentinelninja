@@ -1,5 +1,11 @@
 # Acronis - Audit Log
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Records user and system operations in the management portal and Cyber Protect console, including scripting, quota, and email archiving events.
 
 | Attribute | Value |

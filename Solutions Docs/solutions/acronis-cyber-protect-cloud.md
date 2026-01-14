@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Acronis.svg" alt="Acronis Cyber Protect Cloud Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Acronis Cyber Protect Cloud solution for Microsoft Sentinel enables companies to ingest Acronis alerts, events, and activities into Microsoft Sentinel. The data is initially stored on a device on the company network using the Acronis agent as a writer. [See Acronis SIEM Connector documentation here](https://www.acronis.com/en-us/support/documentation/CyberProtectionService/index.html#siem-plans.html) The integration includes custom Acronis detection rules and hunting queries to help companies proactively hunt for threats.
 
 ## Solution Information

@@ -1,5 +1,11 @@
 # AWS Systems Manager - Get Missing Patches for EC2 Instances
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 When an incident is created in Microsoft Sentinel, this playbook gets triggered and perform the following actions: 1. Get the Hostnames and Private IP addresses from incident entities. 2. Get the Instance IDs from AWS EC2 using the Hostnames and Private IP Addresses. 3. Get the missing patches for the Instance IDs. 4. Add the missing patches to the incident comment.
 
 | Attribute | Value |

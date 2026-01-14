@@ -1,5 +1,11 @@
 # CYFIRMA - Medium severity Malicious Phishing Network Indicators - Monitor Recommended Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 "This analytics rule identifies network-based indicators such as URLs, IP addresses, and domains related to phishing campaigns, as reported by CYFIRMA threat intelligence.  These indicators are flagged with a recommended action to block and are categorized under the 'Phishing' role. Such infrastructure is often used to deliver phishing emails, host fake login portals, or redirect victims to credential-harvesting pages.  monitoring these indicators proactively helps prevent user compromise and da
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Azure secure score block legacy authentication
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query searches for most compromising sign-in attempts come from legacy authentication.   Older office clients such as Office 2010 do not support modern authentication and use legacy protocols such as IMAP, SMTP, and POP3.   Legacy authentication does not support multi-factor authentication (MFA).  Even if an MFA policy is configured in your environment, bad actors can bypass these enforcements through legacy protocols.
 
 | Attribute | Value |

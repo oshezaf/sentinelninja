@@ -1,5 +1,11 @@
 # Anomalous First-Time Device Logon
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies anomalous device logon events from Microsoft Defender for Endpoint (MDE) where a user connects to a device for the first time or a device connects from a new IP address. The query filters high-priority anomalies and provides key details such as timestamp, action type, source IP, location, and associated user, device, and activity insights for investigation.
 
 | Attribute | Value |

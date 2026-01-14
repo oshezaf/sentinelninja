@@ -1,5 +1,11 @@
 # Summary Rules
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](content-index.md)
+
+---
+
 Summary rules aggregate and summarize data over time, creating pre-computed results that improve query performance. They are useful for creating dashboards with historical trends or analyzing large volumes of data efficiently. [Learn more](https://learn.microsoft.com/azure/sentinel/summary-rules)
 
 **18 summary rules** across all Microsoft Sentinel solutions.

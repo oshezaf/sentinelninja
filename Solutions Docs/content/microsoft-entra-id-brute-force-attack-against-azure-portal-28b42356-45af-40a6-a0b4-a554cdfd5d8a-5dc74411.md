@@ -1,5 +1,11 @@
 # Brute force attack against Azure Portal
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects Azure Portal brute force attacks by monitoring for multiple authentication failures and a successful login within a 20-minute window. Default settings: 10 failures, 25 deviations. Ref: https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-sign-ins-error-codes.
 
 | Attribute | Value |

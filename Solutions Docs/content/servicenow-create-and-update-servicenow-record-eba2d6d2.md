@@ -1,5 +1,11 @@
 # Create And Update ServiceNow Record
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This playbook will create or update incident in ServiceNow. When incident is created, playbook will run and create incident in ServiceNow. When incident is updated, playbook will run and add update to comment section. When incident is closed, playbook will run and close incident in ServiceNow.
 
 | Attribute | Value |

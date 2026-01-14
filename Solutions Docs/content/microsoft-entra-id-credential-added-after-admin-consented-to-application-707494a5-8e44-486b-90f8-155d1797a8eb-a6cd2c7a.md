@@ -1,5 +1,11 @@
 # Credential added after admin consented to Application
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'This query will identify instances where Service Principal credentials were added to an application by one user after the application was granted admin consent rights by another user.  If a threat actor obtains access to an account with sufficient privileges and adds the alternate authentication material triggering this event, the threat actor can now authenticate as the Application or Service Principal using this credential.  Additional information on OAuth Credential Grants can be found in RF
 
 | Attribute | Value |

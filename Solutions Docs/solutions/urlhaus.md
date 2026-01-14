@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="URLhaus Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The URLhaus solution for Microsoft  Sentinel allows enriching incidents with additional information about file hashes, Hostname and URL using feeds and lists from URLhaus.Beside the APIs documented on URLhaus that serves various feeds and lists, abuse.ch also offers a dedicated API that allows to gather information on a specific URL, file hash or host from URLhaus through an automated way. It is also possible to retrieve a payload (malware sample) URLhaus has collected from malware URLs it tracks.
 
 ## Solution Information

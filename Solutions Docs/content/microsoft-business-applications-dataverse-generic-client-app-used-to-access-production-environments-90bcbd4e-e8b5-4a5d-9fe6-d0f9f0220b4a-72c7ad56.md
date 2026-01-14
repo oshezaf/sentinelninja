@@ -1,5 +1,11 @@
 # Dataverse - Generic client app used to access production environments
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects the use of the built-in "Dynamics 365 Example Application" to access production environments. This generic app can not be restricted by Azure AD authorization controls and could be abused to gain unauthorized access via Web API.
 
 | Attribute | Value |

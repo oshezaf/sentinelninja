@@ -1,5 +1,11 @@
 # PowerShell Pastebin Download
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects PowerShell commands downloading and execute code hosted on Pastebin and other services. This technique has been used by malicious actors to distribute malware, in particular it has been used by the EvilCorp Ransomware variants such as Sodinokibi.
 
 | Attribute | Value |

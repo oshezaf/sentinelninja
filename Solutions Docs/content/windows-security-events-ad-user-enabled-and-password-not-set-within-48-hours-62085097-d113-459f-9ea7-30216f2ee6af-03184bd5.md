@@ -1,5 +1,11 @@
 # AD user enabled and password not set within 48 hours
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Identifies when an account is enabled with a default password and the password is not set by the user within 48 hours. Effectively, there is an event 4722 indicating an account was enabled and within 48 hours, no event 4723 occurs which indicates there was no attempt by the user to set the password. This will show any attempts (success or fail) that occur after 48 hours, which can indicate too long of a time period in setting the password to something that only the user knows. It is recommended
 
 | Attribute | Value |

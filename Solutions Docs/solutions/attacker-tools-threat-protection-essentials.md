@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Attacker Tools Threat Protection Essentials Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The **Attacker Tools Threat Protection Essentials** solution contains security content that is relevant for detection of tools commonly used by attackers in various campaigns. These tools can be commercial, open-source, built-in or publicly available and have historically been seen used by adversaries in different phases of the ATTACK kill chain.  
  
  **Pre-requisites:** 

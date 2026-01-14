@@ -1,5 +1,11 @@
 # Exchange OAB Virtual Directory Attribute Containing Potential Webshell
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query uses Windows Event ID 5136 in order to detect potential webshell deployment by exploitation of CVE-2021-27065. This query looks for changes to the InternalHostName or ExternalHostName properties of Exchange OAB Virtual Directory objects in AD Directory Services where the new objects contain potential webshell objects.
 
 | Attribute | Value |

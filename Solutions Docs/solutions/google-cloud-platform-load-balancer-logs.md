@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/refs/heads/master/Logos/google_logo.svg" alt="Google Cloud Platform Load Balancer Logs Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Google Cloud Platform Load Balancer solution for Microsoft Sentinel allows you to monitor your GCP Load Balancer in Microsoft Sentinel. This solution includes a data connector and enables ingestion of the GCP Load Balancer Logs into Microsoft Sentinel. The logs ingested also enable monitoring GCP Cloud Armour/GCP WAF logs.
 
 ## Solution Information

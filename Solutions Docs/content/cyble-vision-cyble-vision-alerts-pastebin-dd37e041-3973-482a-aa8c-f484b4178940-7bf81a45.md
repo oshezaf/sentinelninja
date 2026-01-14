@@ -1,5 +1,11 @@
 # Cyble Vision Alerts Pastebin
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Cyble detected a paste containing references to monitored keywords or domains. Pastebin/Gist exposure may indicate data leakage or threat actor activity referencing the organization.
 
 | Attribute | Value |

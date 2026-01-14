@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CortexXDR_Logo.svg" alt="Cortex XDR Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The [Palo Alto Networks](https://www.paloaltonetworks.com/) Cortex XDR Microsoft Sentinel Solution pulls log directly from the Cortex XDR platform via API. The solution is configured to pull the Incidents from the Cortex XDR platform every 5 minutes and ingest them into Microsoft Sentinel. The solution is dependent on the Cortex XDR API Key and API Key ID. The API Key ID is used as the polling key path and the API Key is used as the header for the API request. The solution also includes 3 analytics rules to detect the creation of incidents based on the severities (High, Medium, Low).
 
 ## Solution Information

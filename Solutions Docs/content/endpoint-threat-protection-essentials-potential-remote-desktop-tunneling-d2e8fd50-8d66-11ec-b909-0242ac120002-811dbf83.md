@@ -1,5 +1,11 @@
 # Potential Remote Desktop Tunneling
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects remote desktop authentication attempts with a localhost source address, which can indicate a tunneled login. Ref: https://www.mandiant.com/resources/bypassing-network-restrictions-through-rdp-tunneling
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Vectra AI Detect - Detections with High Severity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Create an incident for high severity malicious behavior detected by Vectra AI (Threat score superior to 7.0).  The Severity is a mapping with the Threat score assigned to a detection. It ranges between 0 and 10.  The severity_threshold variable can be adjusted as desired.
 
 | Attribute | Value |

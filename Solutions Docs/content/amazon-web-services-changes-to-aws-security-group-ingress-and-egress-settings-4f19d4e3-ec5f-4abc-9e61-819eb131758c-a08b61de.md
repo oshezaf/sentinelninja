@@ -1,5 +1,11 @@
 # Changes to AWS Security Group ingress and egress settings
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 A Security Group acts as a virtual firewall of an instance to control inbound and outbound traffic.  Hence, ingress and egress settings changes to AWS Security Group should be monitored as these can expose the enviornment to new attack vectors. More information: https://medium.com/@GorillaStack/the-most-important-aws-cloudtrail-security-events-to-track-a5b9873f8255. 
 
 | Attribute | Value |

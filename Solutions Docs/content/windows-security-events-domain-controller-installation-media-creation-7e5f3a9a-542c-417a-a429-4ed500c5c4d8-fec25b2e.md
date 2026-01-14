@@ -1,5 +1,11 @@
 # Domain controller installation media creation
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query helps to detect attempts to create installation media from domain controllers, either remotely or locally using a commandline tool called ntdsutil. These media are intended to be used in the installation of new domain controllers.
 
 | Attribute | Value |

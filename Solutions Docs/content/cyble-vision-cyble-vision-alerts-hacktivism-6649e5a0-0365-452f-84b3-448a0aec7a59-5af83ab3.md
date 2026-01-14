@@ -1,5 +1,11 @@
 # Cyble Vision Alerts Hacktivism
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects hacktivist activity (Telegram posts, defacements, site takedowns, etc.) using the Alerts_Hacktivism parser. Extracts post content, attacker/team,domains, links, IPs, media and metadata for triage.
 
 | Attribute | Value |

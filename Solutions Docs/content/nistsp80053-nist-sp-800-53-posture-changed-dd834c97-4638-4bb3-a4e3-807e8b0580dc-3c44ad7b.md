@@ -1,5 +1,11 @@
 # NIST SP 800-53 Posture Changed
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This alert is desinged to monitor Azure policies aligned with the NIST SP 800-53 Regulatory Compliance initative. The alert triggers when policy compliance falls below 70% within a 1 week timeframe.
 
 | Attribute | Value |

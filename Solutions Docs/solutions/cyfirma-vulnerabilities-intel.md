@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="Cyfirma Vulnerabilities Intel Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The CYFIRMA Vulnerability Intelligence solution integrates with Microsoft Sentinel to deliver real-time intelligence on exposed and vulnerable assets across internet-facing infrastructure. This includes open ports, outdated software, misconfigurations, and exploitable weaknesses linked to known vulnerabilities (CVEs). By ingesting asset-level vulnerability insights into Sentinel, security teams can prioritize remediation based on risk context, correlate exposures with active threat campaigns, and trigger automated responses using analytics rules and playbooks.
 
 ## Solution Information

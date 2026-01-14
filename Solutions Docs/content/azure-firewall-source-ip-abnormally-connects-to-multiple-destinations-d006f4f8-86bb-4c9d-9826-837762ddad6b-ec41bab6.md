@@ -1,5 +1,11 @@
 # Source IP Abnormally Connects to Multiple Destinations
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies source IP that abnormally connects to multiple destinations according to learning period activity. This can indicate initial access attempts by attackers, trying to jump between different machines in the organization.
 
 | Attribute | Value |

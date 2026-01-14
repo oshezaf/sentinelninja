@@ -1,5 +1,11 @@
 # Anomalous login activity originated from Botnet, Tor proxy or C2
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Shows login activity (successful or failed) originated from botnet, Tor proxy or C2, with at least one 'True' activity insight.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # Azure DevOps Service Connection Addition/Abuse - Historic allow list
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This detection builds an allow list of historic service connection use by Builds and Releases and compares to recent history, flagging growth of service connection use which are not manually included in the allow list and not historically included in the allow list Build/Release runs. This is to determine if someone is hijacking a build/release and adding many service connections in order to abuse or dump credentials from service connections.
 
 | Attribute | Value |

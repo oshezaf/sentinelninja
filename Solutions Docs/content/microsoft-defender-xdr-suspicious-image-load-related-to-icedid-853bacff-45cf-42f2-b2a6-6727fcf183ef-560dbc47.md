@@ -1,5 +1,11 @@
 # Suspicious Image Load related to IcedId
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query searches for suspicious load image events by rundll32.exe or regsvr32.exe, a behavior associated with IcedId, which can lead to IcedId ransomware.
 
 | Attribute | Value |

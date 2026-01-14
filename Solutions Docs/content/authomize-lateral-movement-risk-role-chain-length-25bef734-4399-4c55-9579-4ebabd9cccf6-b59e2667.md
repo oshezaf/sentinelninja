@@ -1,5 +1,11 @@
 # Lateral Movement Risk - Role Chain Length
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 The policy detects chains of more than 3 roles in the account, this is a misconfiguration that can enable lateral movement.
 
 | Attribute | Value |

@@ -1,5 +1,11 @@
 # CYFIRMA - Compromised Employees Detection Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies and alerts on internal employee accounts that have been compromised, based on CYFIRMA's threat intelligence. This rule captures the latest exposure of user credentials, IP addresses, hostnames, operating systems, and pass hashes observed in the threat feed. It supports rapid detection and investigation of phishing, stealer malware, and insider compromise scenarios.
 
 | Attribute | Value |

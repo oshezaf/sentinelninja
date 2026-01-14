@@ -1,5 +1,11 @@
 # CYFIRMA - Social and Public Exposure - Exposure of PII/CII in Public Domain Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 "This analytics rule detects high severity alerts from CYFIRMA indicating exposure of Personally Identifiable Information (PII) or Confidential Information (CII) in public or unsecured sources.  Such leaks may include email addresses, credentials, phone numbers, or other sensitive personal or organizational data.  These exposures can lead to identity theft, phishing, credential compromise, or regulatory non-compliance.  Investigate promptly and initiate remediation steps including user notificat
 
 | Attribute | Value |

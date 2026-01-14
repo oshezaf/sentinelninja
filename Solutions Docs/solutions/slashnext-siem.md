@@ -4,6 +4,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlashNext%20SIEM/Playbook/logo/slashnext-logo.svg" alt="SlashNext SIEM Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 The Slashnext SIEM logic app retrieves incidents associated with a customer from various sources such as SMS, mobile devices, web extensions, and emails. These incidents are then presented and recorded within the Log Analytic Workspace.
 
 ## Solution Information

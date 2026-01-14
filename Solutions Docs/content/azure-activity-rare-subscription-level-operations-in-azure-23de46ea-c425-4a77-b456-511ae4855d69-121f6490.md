@@ -1,5 +1,11 @@
 # Rare subscription-level operations in Azure
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query looks for a few sensitive subscription-level events based on Azure Activity Logs. For example, this monitors for the operation name 'Create or Update Snapshot', which is used for creating backups but could be misused by attackers to dump hashes or extract sensitive information from the disk.
 
 | Attribute | Value |

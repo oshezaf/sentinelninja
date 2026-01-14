@@ -1,5 +1,11 @@
 # Metasploit / Impacket PsExec Process Creation Activity
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Meant to detect process creations containing names consistent with the schema used by Metasploit or Impacket's PsExec tool. Metasploit and Impacket's PsExec tooling is used by malicious actors for lateral movement & performing actions on remote systems.
 
 | Attribute | Value |

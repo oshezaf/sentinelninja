@@ -1,5 +1,11 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Potential beaconing activity (ASIM Network Session schema)
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule identifies beaconing patterns from Network traffic logs based on recurrent frequency patterns.  Such potential outbound beaconing patterns to untrusted public networks should be investigated for any malware callbacks or data exfiltration attempts as discussed in this [Blog](https://medium.com/@HuntOperator/detect-beaconing-with-flare-elastic-stack-and-intrusion-detection-systems-110dc74e0c56). This analytic rule uses [ASIM](https://aka.ms/AboutASIM) and supports any built-in or custom
 
 | Attribute | Value |

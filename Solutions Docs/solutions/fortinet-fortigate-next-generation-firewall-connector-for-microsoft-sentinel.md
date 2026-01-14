@@ -2,6 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel Logo" width="75" height="75">
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Solutions Index](../solutions-index.md)
+
+---
+
 Gain insight into your organization's network and improve your security operation capabilities with the [Fortinet FortiGate Next-generation Firewall](https://www.fortinet.com/products/next-generation-firewall) Solution for Microsoft Sentinel. It allows you to easily connect your FortiGate logs with Microsoft Sentinel. This enables you to view dashboards, create custom alerts, and improve investigation. 
 
  Playbooks are included to help in automated remediation 

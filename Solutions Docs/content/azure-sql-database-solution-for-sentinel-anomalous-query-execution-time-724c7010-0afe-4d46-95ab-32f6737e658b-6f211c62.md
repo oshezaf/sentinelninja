@@ -1,5 +1,11 @@
 # Anomalous Query Execution Time
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This hunting query will detect SQL queries that have affected an unusual number of rows for the given user and application combination. It will calculate the prevalence for each row count impacted to find instances where a large number of rows is anomalously affected. This hunting query is designed to detect SQL mass-deletion and mass-read events.
 
 | Attribute | Value |

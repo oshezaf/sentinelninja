@@ -1,5 +1,11 @@
 # BTP - Build Work Zone unauthorized access and role tampering
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies unauthorized OData access attempts and mass role/user deletions in SAP Build Work Zone  Standard Edition. These events may indicate an attacker accessing restricted resources or  removing access controls to cover their tracks.
 
 | Attribute | Value |

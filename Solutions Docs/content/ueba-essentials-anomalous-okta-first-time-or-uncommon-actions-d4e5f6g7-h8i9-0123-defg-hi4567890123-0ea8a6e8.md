@@ -1,5 +1,11 @@
 # Anomalous Okta First-Time or Uncommon Actions
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects anomalous Okta activities where a user performs an action that is uncommon in the tenant or connects from a country for the first time. The query focuses on high-priority anomalies and provides key details such as timestamp, action type, source IP, location, and associated user and activity insights for investigation.
 
 | Attribute | Value |

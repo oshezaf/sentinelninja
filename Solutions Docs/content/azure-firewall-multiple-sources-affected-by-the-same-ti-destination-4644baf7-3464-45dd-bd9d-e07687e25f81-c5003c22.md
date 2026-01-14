@@ -1,5 +1,11 @@
 # Multiple Sources Affected by the Same TI Destination
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies multiple machines trying to reach out to the same destination blocked by TI in Azure Firewall. This can indicate attack on the organization by the same attack group.  Configurable Parameters:  - Minimum affected threshold - alert only if more than this number of hosts affected. Default is set to 5. - Recommendation is to use the new resource specific logs. If you are using both, the TiTraffic Count will be duplicated.
 
 | Attribute | Value |

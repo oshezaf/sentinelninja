@@ -1,5 +1,11 @@
 # Powershell Encoded Command Execution
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Looks for valid variations of the -EncodedCommand parameter. Commonly used to encode or obfuscate commands, and not all occurrences are malicious.
 
 | Attribute | Value |

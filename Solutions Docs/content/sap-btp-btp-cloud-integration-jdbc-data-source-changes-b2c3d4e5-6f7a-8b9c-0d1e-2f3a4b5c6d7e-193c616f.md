@@ -1,5 +1,11 @@
 # BTP - Cloud Integration JDBC data source changes
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies deployment and undeployment of JDBC data source configurations in SAP Cloud Integration. JDBC data sources contain database connection credentials and configuration that enable integration flows to access backend databases.  Unauthorized JDBC data source manipulation could indicate: - Attacker adding rogue database connections for data exfiltration - Credential theft by accessing stored database passwords - Modification of connection strings to redirect traffic to attacker-controlled
 
 | Attribute | Value |

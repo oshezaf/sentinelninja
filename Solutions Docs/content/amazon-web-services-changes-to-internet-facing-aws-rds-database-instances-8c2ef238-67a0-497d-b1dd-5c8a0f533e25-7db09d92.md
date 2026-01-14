@@ -1,5 +1,11 @@
 # Changes to internet facing AWS RDS Database instances
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 'Amazon Relational Database Service (RDS) is scalable relational database in the cloud. If your organization have one or more AWS RDS Databases running, monitoring changes to especially internet facing AWS RDS (Relational Database Service) Once alerts triggered, validate if changes observed are authorized and adhere to change control policy. More information: https://medium.com/@GorillaStack/the-most-important-aws-cloudtrail-security-events-to-track-a5b9873f8255  and RDS API Reference Docs: http
 
 | Attribute | Value |

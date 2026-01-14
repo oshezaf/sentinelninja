@@ -1,5 +1,11 @@
 # CYFIRMA - Brand Intelligence - Executive/People Impersonation High Rule
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This rule detects potential impersonation of executive or high-profile individuals across digital platforms such as social media.  Such impersonation can be used to mislead stakeholders, perform social engineering attacks, or cause reputational damage to the organization.  Timely detection is crucial to assess risk and take down malicious profiles to protect brand and executive identity.
 
 | Attribute | Value |

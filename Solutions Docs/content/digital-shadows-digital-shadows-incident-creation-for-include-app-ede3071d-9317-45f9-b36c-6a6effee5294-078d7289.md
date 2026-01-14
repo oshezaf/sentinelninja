@@ -1,5 +1,11 @@
 # Digital Shadows Incident Creation for include-app
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Digital Shadows Analytic rule for generating Microsoft Sentinel incidents for the data ingested by app polling for included classifications
 
 | Attribute | Value |

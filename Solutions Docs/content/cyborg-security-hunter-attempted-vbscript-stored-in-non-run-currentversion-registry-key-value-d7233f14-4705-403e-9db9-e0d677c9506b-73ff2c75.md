@@ -1,5 +1,11 @@
 # Attempted VBScript Stored in Non-Run CurrentVersion Registry Key Value
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identify potential new registry key name that is a non-autorun and non-run key in the HKLM\Software\Microsoft\Windows\CurrentVersion\ registry key containing VBScript in the key value value.
 
 | Attribute | Value |

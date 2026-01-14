@@ -1,5 +1,11 @@
 # Password spray attack against Microsoft Entra ID Seamless SSO
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 This query detects when there is a spike in Microsoft Entra ID Seamless SSO errors. They may not be caused by a Password Spray attack, but the cause of the errors might need to be investigated. Microsoft Entra ID only logs the requests that matched existing accounts, thus there might have been unlogged requests for non-existing accounts.
 
 | Attribute | Value |

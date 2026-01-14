@@ -1,5 +1,11 @@
 # AWS Config Service Resource Deletion Attempts
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Detects attempts to remove a part of the AWS Config Service.The Threat Actor may manipulate the Config services decrease the visibility into the security posture of an account and / or its workload instances.
 
 | Attribute | Value |

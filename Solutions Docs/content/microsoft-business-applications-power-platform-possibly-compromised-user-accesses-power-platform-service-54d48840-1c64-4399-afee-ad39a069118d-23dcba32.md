@@ -1,5 +1,11 @@
 # Power Platform - Possibly compromised user accesses Power Platform services
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
 Identifies user accounts flagged at risk in Microsoft Entra Identity Protection and correlates these users with sign-in activity in Power Platform, including Power Apps, Power Automate and Power Platform Admin Center.
 
 | Attribute | Value |
