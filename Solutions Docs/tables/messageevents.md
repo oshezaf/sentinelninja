@@ -6,6 +6,8 @@
 
 ---
 
+> **Defender XDR Only:** This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.
+
 Messages sent and received within your organization at the time of delivery
 
 | Attribute | Value |

@@ -6,6 +6,8 @@
 
 ---
 
+> **Defender XDR Only:** This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.
+
 URLs sent through Microsoft Teams messages in your organization
 
 | Attribute | Value |

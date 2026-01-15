@@ -6,6 +6,8 @@
 
 ---
 
+> **Defender XDR Only:** This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.
+
 Microsoft Entra interactive and non-interactive sign-ins
 
 | Attribute | Value |

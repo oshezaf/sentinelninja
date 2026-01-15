@@ -6,6 +6,8 @@
 
 ---
 
+> **Defender XDR Only:** This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.
+
 Security events that occurred after the delivery of a Microsoft Teams message in your organization
 
 | Attribute | Value |

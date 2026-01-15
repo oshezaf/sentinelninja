@@ -1,5 +1,13 @@
 # DataSecurityEvents
 
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+> **Defender XDR Only:** This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.
+
 Information about user activities that violate user-defined or default policies in the Microsoft Purview suite of solutions
 
 | Attribute | Value |
