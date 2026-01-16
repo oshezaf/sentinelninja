@@ -23,10 +23,10 @@ This table is used by the following solutions:
 - [AWS VPC Flow Logs](../solutions/aws-vpc-flow-logs.md)
 - [Amazon Web Services](../solutions/amazon-web-services.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (2)
@@ -45,9 +45,6 @@ This table is ingested by the following connectors:
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
 
@@ -56,6 +53,9 @@ This table is ingested by the following connectors:
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)

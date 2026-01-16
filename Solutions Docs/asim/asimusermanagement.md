@@ -37,6 +37,20 @@ This union parser includes parsers for the following products:
 | SentinelOne | [_ASim_UserManagement_SentinelOne](asimusermanagementsentinelone.md) |
 |  | [_Im_UserManagement_Empty](im-usermanagement-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+| [ASimUserManagementCiscoISE](../asim/asimusermanagementciscoise.md) |
+| [ASimUserManagementLinuxAuthpriv](../asim/asimusermanagementlinuxauthpriv.md) |
+| [ASimUserManagementMicrosoftSecurityEvent](../asim/asimusermanagementmicrosoftsecurityevent.md) |
+| [ASimUserManagementMicrosoftWindowsEvent](../asim/asimusermanagementmicrosoftwindowsevent.md) |
+| [ASimUserManagementNative](../asim/asimusermanagementnative.md) |
+| [ASimUserManagementSentinelOne](../asim/asimusermanagementsentinelone.md) |
+
 ## Parameters
 
 | Name | Type | Default |

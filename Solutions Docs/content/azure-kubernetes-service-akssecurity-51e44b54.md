@@ -18,6 +18,7 @@ This content item queries data from the following tables:
 
 - [`AzureDiagnostics`](../tables/azurediagnostics.md)
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`image`](../tables/image.md)
 
 ---
 

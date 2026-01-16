@@ -25,7 +25,6 @@ This table is used by the following solutions:
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [Cyware](../solutions/cyware.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [FalconFriday](../solutions/falconfriday.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
@@ -33,6 +32,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
@@ -104,9 +104,6 @@ This table is ingested by the following connectors:
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 - [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 - [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md)
 
@@ -121,6 +118,9 @@ This table is ingested by the following connectors:
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Parsers Using This Table (1)
 

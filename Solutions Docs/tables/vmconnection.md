@@ -22,11 +22,11 @@ This table is used by the following solutions:
 
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
 - [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -72,15 +72,15 @@ This table is used by the following solutions:
 
 ### Workbooks (5)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)

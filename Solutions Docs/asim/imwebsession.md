@@ -48,6 +48,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_WebSession_ZscalerZIA](im-websession-zscalerzia.md) |
 |  | [_Im_WebSesssion_Empty](im-websesssion-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

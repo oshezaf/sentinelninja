@@ -6,12 +6,13 @@
 
 ---
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [GoogleWorkspaceReports](../solutions/googleworkspacereports.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
 
@@ -21,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (26)
+## Content Items Using This Table (27)
 
 ### Analytic Rules (10)
 
@@ -55,13 +56,16 @@ This table is ingested by the following connectors:
 - [GWorkspace - User reported calendar invite as spam](../content/googleworkspacereports-gworkspace-user-reported-calendar-invite-as-spam-181bda98-5da9-11ec-bf63-0242ac130002-91c2be7a.md)
 - [GWorkspace - Users with several devices](../content/googleworkspacereports-gworkspace-users-with-several-devices-1087fb40-5da9-11ec-bf63-0242ac130002-691cd7c6.md)
 
-### Workbooks (2)
+### Workbooks (3)
 
 **In solution [GoogleWorkspaceReports](../solutions/googleworkspacereports.md):**
 - [GoogleWorkspace](../content/googleworkspacereports-googleworkspace-6948e392.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Parsers Using This Table (2)
 

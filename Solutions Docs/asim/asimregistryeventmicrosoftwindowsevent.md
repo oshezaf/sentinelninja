@@ -31,6 +31,8 @@ This parser reads from the following tables:
 
 | Table |
 |:------|
+| [ASIM_GetAccountType](../tables/asim-getaccounttype.md) |
+| [ASIM_ParseWindowsEvents](../tables/asim-parsewindowsevents.md) |
 | [WindowsEvent](../tables/windowsevent.md) |
 
 ## Parameters

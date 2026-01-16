@@ -21,10 +21,10 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 This table is used by the following solutions:
 
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
@@ -73,14 +73,14 @@ This table is ingested by the following connectors:
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):**
 - [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Resource Types
 

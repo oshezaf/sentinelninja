@@ -29,6 +29,7 @@ This content item queries data from the following tables:
 - [`DeviceFileEvents`](../tables/devicefileevents.md)
 - [`Event`](../tables/event.md)
 - [`IdentityInfo`](../tables/identityinfo.md)
+- [`Impact`](../tables/impact.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`SecurityAlert`](../tables/securityalert.md)

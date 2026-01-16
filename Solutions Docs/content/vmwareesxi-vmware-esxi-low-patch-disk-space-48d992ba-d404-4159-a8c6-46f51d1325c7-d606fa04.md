@@ -25,6 +25,7 @@ This rule is triggered when low patch disk store space is detected.
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

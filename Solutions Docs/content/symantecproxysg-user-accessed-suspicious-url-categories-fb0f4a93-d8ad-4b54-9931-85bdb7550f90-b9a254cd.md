@@ -25,6 +25,7 @@ Creates an incident in the event the requested URL accessed by the user has been
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

@@ -23,6 +23,7 @@ This query hunts for command line activity linked to Dev-0322's compromise of ZO
 This content item queries data from the following tables:
 
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`imProcess`](../tables/improcess.md)
 
 ---
 

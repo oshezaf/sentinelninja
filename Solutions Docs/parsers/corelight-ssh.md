@@ -26,6 +26,7 @@ string
 This parser reads from the following tables:
 
 - [Corelight_v2_ssh_CL](../tables/corelight-v2-ssh-cl.md)
+- [improve](../tables/improve.md)
 
 ---
 

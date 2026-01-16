@@ -17,14 +17,13 @@ Process creation and related events
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table) |
 
-## Solutions (15)
+## Solutions (14)
 
 This table is used by the following solutions:
 
 - [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [Cyware](../solutions/cyware.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Dev 0270 Detection and Hunting](../solutions/dev-0270-detection-and-hunting.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [FalconFriday](../solutions/falconfriday.md)
@@ -45,7 +44,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (100)
+## Content Items Using This Table (99)
 
 ### Analytic Rules (41)
 
@@ -164,13 +163,10 @@ This table is ingested by the following connectors:
 - [Probable AdFind Recon Tool Usage](../content/microsoftdefenderforendpoint-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd-d6063f03.md)
 - [SUNBURST suspicious SolarWinds child processes](../content/microsoftdefenderforendpoint-sunburst-suspicious-solarwinds-child-processes-4a3073ac-7383-48a9-90a8-eb6716183a54-27b732fb.md)
 
-### Workbooks (7)
+### Workbooks (6)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
-
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 - [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md)

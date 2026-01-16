@@ -25,6 +25,7 @@ Detects when shared or stolen root account.
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

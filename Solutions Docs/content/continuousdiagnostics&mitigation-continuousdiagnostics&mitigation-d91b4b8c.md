@@ -37,6 +37,7 @@ This content item queries data from the following tables:
 - [`GCP_IAM_CL`](../tables/gcp-iam-cl.md)
 - [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
 - [`IdentityInfo`](../tables/identityinfo.md)
+- [`Improve`](../tables/improve.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)

@@ -10,7 +10,7 @@
 
 This table is used by the following solutions:
 
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ---
 
@@ -18,8 +18,8 @@ This table is used by the following solutions:
 
 ### Workbooks (1)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ---
 

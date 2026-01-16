@@ -48,6 +48,31 @@ This union parser includes parsers for the following products:
 | Zscaler ZIA | [_ASim_WebSession_ZscalerZIA](asimwebsessionzscalerzia.md) |
 |  | [_Im_WebSession_Empty](im-websession-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+| [ASimWebSessionApacheHTTPServer](../asim/asimwebsessionapachehttpserver.md) |
+| [ASimWebSessionAzureFirewall](../asim/asimwebsessionazurefirewall.md) |
+| [ASimWebSessionBarracudaCEF](../asim/asimwebsessionbarracudacef.md) |
+| [ASimWebSessionBarracudaWAF](../asim/asimwebsessionbarracudawaf.md) |
+| [ASimWebSessionCiscoFirepower](../asim/asimwebsessionciscofirepower.md) |
+| [ASimWebSessionCiscoMeraki](../asim/asimwebsessionciscomeraki.md) |
+| [ASimWebSessionCitrixNetScaler](../asim/asimwebsessioncitrixnetscaler.md) |
+| [ASimWebSessionF5ASM](../asim/asimwebsessionf5asm.md) |
+| [ASimWebSessionFortinetFortiGate](../asim/asimwebsessionfortinetfortigate.md) |
+| [ASimWebSessionIIS](../asim/asimwebsessioniis.md) |
+| [ASimWebSessionNative](../asim/asimwebsessionnative.md) |
+| [ASimWebSessionPaloAltoCEF](../asim/asimwebsessionpaloaltocef.md) |
+| [ASimWebSessionPaloAltoCortexDataLake](../asim/asimwebsessionpaloaltocortexdatalake.md) |
+| [ASimWebSessionSonicWallFirewall](../asim/asimwebsessionsonicwallfirewall.md) |
+| [ASimWebSessionSquidProxy](../asim/asimwebsessionsquidproxy.md) |
+| [ASimWebSessionVectraAI](../asim/asimwebsessionvectraai.md) |
+| [ASimWebSessionZscalerZIA](../asim/asimwebsessionzscalerzia.md) |
+
 ## Parameters
 
 | Name | Type | Default |

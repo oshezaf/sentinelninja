@@ -48,6 +48,31 @@ This union parser includes parsers for the following products:
 |  | [_ASim_ProcessEvent_TerminateVMwareCarbonBlackCloud](asim-processevent-terminatevmwarecarbonblackcloud.md) |
 |  | [_Im_Process_Empty](im-process-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+| [ASimProcessCreateLinuxSysmon](../asim/asimprocesscreatelinuxsysmon.md) |
+| [ASimProcessCreateMicrosoftSecurityEvents](../asim/asimprocesscreatemicrosoftsecurityevents.md) |
+| [ASimProcessCreateMicrosoftWindowsEvents](../asim/asimprocesscreatemicrosoftwindowsevents.md) |
+| [ASimProcessCreateSentinelOne](../asim/asimprocesscreatesentinelone.md) |
+| [ASimProcessCreateTrendMicroVisionOne](../asim/asimprocesscreatetrendmicrovisionone.md) |
+| [ASimProcessCreateVMwareCarbonBlackCloud](../asim/asimprocesscreatevmwarecarbonblackcloud.md) |
+| [ASimProcessEventCreateMicrosoftSysmon](../asim/asimprocesseventcreatemicrosoftsysmon.md) |
+| [ASimProcessEventCreateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventcreatemicrosoftsysmonwindowsevent.md) |
+| [ASimProcessEventMD4IoT](../asim/asimprocesseventmd4iot.md) |
+| [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) |
+| [ASimProcessEventNative](../asim/asimprocesseventnative.md) |
+| [ASimProcessEventTerminateMicrosoftSysmon](../asim/asimprocesseventterminatemicrosoftsysmon.md) |
+| [ASimProcessEventTerminateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventterminatemicrosoftsysmonwindowsevent.md) |
+| [ASimProcessTerminateLinuxSysmon](../asim/asimprocessterminatelinuxsysmon.md) |
+| [ASimProcessTerminateMicrosoftSecurityEvents](../asim/asimprocessterminatemicrosoftsecurityevents.md) |
+| [ASimProcessTerminateMicrosoftWindowsEvents](../asim/asimprocessterminatemicrosoftwindowsevents.md) |
+| [ASimProcessTerminateVMwareCarbonBlackCloud](../asim/asimprocessterminatevmwarecarbonblackcloud.md) |
+
 ## References
 
 - [ASIM Process Schema](https://aka.ms/ASimProcessEventDoc)

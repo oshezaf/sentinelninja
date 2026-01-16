@@ -68,6 +68,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_NetworkSession_ZscalerZIA](im-networksession-zscalerzia.md) |
 |  | [_im_NetworkSession_CorelightZeek](im-networksession-corelightzeek.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

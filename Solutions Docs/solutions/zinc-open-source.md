@@ -64,7 +64,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **12 table(s)** from its content items:
+This solution queries **13 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -77,6 +77,7 @@ This solution queries **12 table(s)** from its content items:
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Analytics |
 | [`DnsEvents`](../tables/dnsevents.md) | Analytics |
 | [`Event`](../tables/event.md) | Analytics |
+| [`Image`](../tables/image.md) | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | Analytics |
 | [`SecurityEvent`](../tables/securityevent.md) | Analytics |
 | [`VMConnection`](../tables/vmconnection.md) | Analytics |
@@ -102,7 +103,7 @@ This solution includes **3 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [AV detections related to Zinc actors](../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090-62580aab.md) | High | Impact | [`DeviceInfo`](../tables/deviceinfo.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) | High | Persistence | [`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) | High | Persistence | [`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`Image`](../tables/image.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) | High | Persistence | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Event`](../tables/event.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`VMConnection`](../tables/vmconnection.md) |
 
 ## Release Notes

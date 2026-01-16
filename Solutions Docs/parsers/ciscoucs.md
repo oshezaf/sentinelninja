@@ -23,6 +23,7 @@
 
 This parser reads from the following tables:
 
+- [ASimSourceType](../tables/asimsourcetype.md)
 - [EVENT](../tables/event.md)
 - [Syslog](../tables/syslog.md)
 

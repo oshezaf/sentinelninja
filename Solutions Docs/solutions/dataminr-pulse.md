@@ -24,6 +24,67 @@ Dataminr Pulse brings the most advanced AI-powered real-time intelligence into M
 | **Last Updated** | 2023-04-12 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
+| [Apache HTTP Server](../asim/asim-products-index.md#apache-http-server) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [Cisco Umbrella](../asim/asim-products-index.md#cisco-umbrella) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
+| [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
+| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-(asm)) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
+| [Illumio Core](../asim/asim-products-index.md#illumio-core) |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
+| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
+| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) |
+| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-(iis)) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
+| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
+| [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
+| [Microsoft Azure](../asim/asim-products-index.md#microsoft-azure) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) |
+| [Microsoft Windows](../asim/asim-products-index.md#microsoft-windows) |
+| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto Networks](../asim/asim-products-index.md#palo-alto-networks) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
+| [Security Events](../asim/asim-products-index.md#security-events) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Squid Proxy](../asim/asim-products-index.md#squid-proxy) |
+| [Sysmon](../asim/asim-products-index.md#sysmon) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
+| [Trend Micro Vision One](../asim/asim-products-index.md#trend-micro-vision-one) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+| [Vectra](../asim/asim-products-index.md#vectra) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+| [Zscaler ZIA](../asim/asim-products-index.md#zscaler-zia) |
+| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
@@ -32,84 +93,25 @@ This solution provides **1 data connector(s)**:
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution uses **16 ASIM parser(s)** for normalized data:
+This solution uses **6 ASIM parser(s)** for normalized data:
 
 | Parser | Used By Content |
 |--------|----------------|
-| [`_Im_FileEvent_AzureBlobStorage`](../asim/im-fileevent-azureblobstorage.md) | Workbooks |
-| [`_Im_FileEvent_AzureFileStorage`](../asim/im-fileevent-azurefilestorage.md) | Workbooks |
-| [`_Im_FileEvent_AzureQueueStorage`](../asim/im-fileevent-azurequeuestorage.md) | Workbooks |
-| [`_Im_FileEvent_AzureTableStorage`](../asim/im-fileevent-azuretablestorage.md) | Workbooks |
-| [`_Im_FileEvent_GoogleWorkspace`](../asim/im-fileevent-googleworkspace.md) | Workbooks |
-| [`_Im_FileEvent_LinuxSysmonFileCreated`](../asim/im-fileevent-linuxsysmonfilecreated.md) | Workbooks |
-| [`_Im_FileEvent_LinuxSysmonFileDeleted`](../asim/im-fileevent-linuxsysmonfiledeleted.md) | Workbooks |
-| [`_Im_FileEvent_Microsoft365D`](../asim/im-fileevent-microsoft365d.md) | Workbooks |
-| [`_Im_FileEvent_MicrosoftSecurityEvents`](../asim/im-fileevent-microsoftsecurityevents.md) | Workbooks |
-| [`_Im_FileEvent_MicrosoftSharePoint`](../asim/im-fileevent-microsoftsharepoint.md) | Workbooks |
-| [`_Im_FileEvent_MicrosoftSysmon`](../asim/im-fileevent-microsoftsysmon.md) | Workbooks |
-| [`_Im_FileEvent_MicrosoftSysmonWindowsEvent`](../asim/im-fileevent-microsoftsysmonwindowsevent.md) | Workbooks |
-| [`_Im_FileEvent_MicrosoftWindowsEvents`](../asim/im-fileevent-microsoftwindowsevents.md) | Workbooks |
-| [`_Im_FileEvent_Native`](../asim/im-fileevent-native.md) | Workbooks |
-| [`_Im_FileEvent_SentinelOne`](../asim/im-fileevent-sentinelone.md) | Workbooks |
-| [`_Im_FileEvent_VMwareCarbonBlackCloud`](../asim/im-fileevent-vmwarecarbonblackcloud.md) | Workbooks |
+| [`ASimAuditEvent`](../asim/asimauditevent.md) | Workbooks |
+| [`ASimDns`](../asim/asimdns.md) | Workbooks |
+| [`ASimNetworkSession`](../asim/asimnetworksession.md) | Workbooks |
+| [`ASimProcessEvent`](../asim/asimprocessevent.md) | Workbooks |
+| [`ASimWebSession`](../asim/asimwebsession.md) | Workbooks |
+| [`imFileEvent`](../asim/imfileevent.md) | Workbooks |
 
 ## Tables Used
 
-This solution uses **51 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ALERT`](../tables/alert.md) | - | Workbooks |
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | - | Workbooks |
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | - | Workbooks |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | - | Workbooks |
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | - | Workbooks |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | - | Workbooks |
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | - | Workbooks |
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | - | Workbooks |
-| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | - | Workbooks |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | - | Workbooks |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | - | Workbooks |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | - | Workbooks |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | - | Workbooks |
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | - | Workbooks |
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | - | Workbooks |
-| [`AzureActivity`](../tables/azureactivity.md) | - | Workbooks |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | - | Workbooks |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | - | Workbooks |
-| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) | - | Workbooks |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | - | Workbooks |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | - | Workbooks |
-| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) | - | Workbooks |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
-| [`Corelight_CL`](../tables/corelight-cl.md) | - | Workbooks |
 | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) | [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | Analytics, Workbooks |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | - | Workbooks |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | - | Workbooks |
-| [`DnsEvents`](../tables/dnsevents.md) | - | Workbooks |
-| [`Event`](../tables/event.md) | - | Workbooks |
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | - | Workbooks |
-| [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) | - | Workbooks |
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | - | Workbooks |
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | - | Workbooks |
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | - | Workbooks |
-| [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
-| [`Operation`](../tables/operation.md) | - | Workbooks |
-| [`SecurityEvent`](../tables/securityevent.md) | - | Workbooks |
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | - | Workbooks |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | - | Workbooks |
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) | - | Workbooks |
-| [`Syslog`](../tables/syslog.md) | - | Workbooks |
-| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) | - | Workbooks |
-| [`Update`](../tables/update.md) | - | Workbooks |
-| [`VMConnection`](../tables/vmconnection.md) | - | Workbooks |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | - | Workbooks |
-| [`W3CIISLog`](../tables/w3ciislog.md) | - | Workbooks |
-| [`WindowsEvent`](../tables/windowsevent.md) | - | Workbooks |
-| [`alert`](../tables/alert.md) | - | Workbooks |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | - | Workbooks |
-| [`meraki_CL`](../tables/meraki-cl.md) | - | Workbooks |
-| [`update`](../tables/update.md) | - | Workbooks |
+| [`Impersonation`](../tables/impersonation.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -141,7 +143,7 @@ This solution includes **10 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureBlobStorage`](../asim/im-fileevent-azureblobstorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureFileStorage`](../asim/im-fileevent-azurefilestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureQueueStorage`](../asim/im-fileevent-azurequeuestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureTableStorage`](../asim/im-fileevent-azuretablestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_GoogleWorkspace`](../asim/im-fileevent-googleworkspace.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_LinuxSysmonFileCreated`](../asim/im-fileevent-linuxsysmonfilecreated.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_LinuxSysmonFileDeleted`](../asim/im-fileevent-linuxsysmonfiledeleted.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_Microsoft365D`](../asim/im-fileevent-microsoft365d.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSecurityEvents`](../asim/im-fileevent-microsoftsecurityevents.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSharePoint`](../asim/im-fileevent-microsoftsharepoint.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSysmon`](../asim/im-fileevent-microsoftsysmon.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSysmonWindowsEvent`](../asim/im-fileevent-microsoftsysmonwindowsevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftWindowsEvents`](../asim/im-fileevent-microsoftwindowsevents.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_Native`](../asim/im-fileevent-native.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_SentinelOne`](../asim/im-fileevent-sentinelone.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_VMwareCarbonBlackCloud`](../asim/im-fileevent-vmwarecarbonblackcloud.md)<br>[`ALERT`](../tables/alert.md)<br>[`ASimAuditEventLogs`](../tables/asimauditeventlogs.md)<br>[`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)<br>[`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md)<br>[`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AZFWApplicationRule`](../tables/azfwapplicationrule.md)<br>[`AZFWDnsQuery`](../tables/azfwdnsquery.md)<br>[`AZFWIdpsSignature`](../tables/azfwidpssignature.md)<br>[`AZFWNatRule`](../tables/azfwnatrule.md)<br>[`AZFWNetworkRule`](../tables/azfwnetworkrule.md)<br>[`AZFWThreatIntel`](../tables/azfwthreatintel.md)<br>[`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)<br>[`Audits_Data_CL`](../tables/audits-data-cl.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)<br>[`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md)<br>[`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)<br>[`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md)<br>[`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Corelight_CL`](../tables/corelight-cl.md)<br>[`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Event`](../tables/event.md)<br>[`GCP_DNS_CL`](../tables/gcp-dns-cl.md)<br>[`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md)<br>[`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)<br>[`NTANetAnalytics`](../tables/ntanetanalytics.md)<br>[`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityIoTRawEvent`](../tables/securityiotrawevent.md)<br>[`SentinelOne_CL`](../tables/sentinelone-cl.md)<br>[`SquidProxy_CL`](../tables/squidproxy-cl.md)<br>[`Syslog`](../tables/syslog.md)<br>[`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md)<br>[`Update`](../tables/update.md)<br>[`VMConnection`](../tables/vmconnection.md)<br>[`VectraStream_CL`](../tables/vectrastream-cl.md)<br>[`W3CIISLog`](../tables/w3ciislog.md)<br>[`WindowsEvent`](../tables/windowsevent.md)<br>[`alert`](../tables/alert.md)<br>[`barracuda_CL`](../tables/barracuda-cl.md)<br>[`meraki_CL`](../tables/meraki-cl.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimAuditEvent`](../asim/asimauditevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimDns`](../asim/asimdns.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimNetworkSession`](../asim/asimnetworksession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimProcessEvent`](../asim/asimprocessevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimWebSession`](../asim/asimwebsession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imFileEvent`](../asim/imfileevent.md)<br>[`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)<br>[`Impersonation`](../tables/impersonation.md)<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) |
 
 ### Playbooks
 

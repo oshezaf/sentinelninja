@@ -23,12 +23,12 @@ This table is used by the following solutions:
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
 - [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
@@ -98,9 +98,6 @@ This table is ingested by the following connectors:
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
@@ -114,6 +111,9 @@ This table is ingested by the following connectors:
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
 - [Dns](../content/windows-server-dns-dns-ed7f9abb.md)

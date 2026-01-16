@@ -16,7 +16,7 @@ Reference for AADNonInteractiveUserSignInLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs) |
 
-## Solutions (14)
+## Solutions (15)
 
 This table is used by the following solutions:
 
@@ -31,6 +31,7 @@ This table is used by the following solutions:
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
@@ -43,7 +44,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (36)
+## Content Items Using This Table (37)
 
 ### Analytic Rules (28)
 
@@ -96,7 +97,7 @@ This table is ingested by the following connectors:
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 - [User Accounts - New Single Factor Auth](../content/business-email-compromise-financial-fraud-user-accounts-new-single-factor-auth-8eace93b-f38c-47b7-a21d-739556d31db6-94f60108.md)
 
-### Workbooks (7)
+### Workbooks (8)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md)
@@ -118,6 +119,9 @@ This table is ingested by the following connectors:
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Parsers Using This Table (1)
 

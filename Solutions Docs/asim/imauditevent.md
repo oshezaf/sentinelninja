@@ -48,6 +48,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_AuditEvent_VMwareCarbonBlackCloud](im-auditevent-vmwarecarbonblackcloud.md) |
 |  | [_Im_AuditEvent_VectraXDRAudit](im-auditevent-vectraxdraudit.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

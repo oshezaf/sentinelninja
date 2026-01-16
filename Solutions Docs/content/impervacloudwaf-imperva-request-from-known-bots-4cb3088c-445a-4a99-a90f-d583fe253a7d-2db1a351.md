@@ -23,8 +23,7 @@ Query searches for requests from known bots.
 
 This content item queries data from the following tables:
 
-- [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md)
-- [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md)
+- [`ImpervaWAFCloud`](../tables/impervawafcloud.md)
 
 ---
 

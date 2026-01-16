@@ -59,6 +59,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_Authentication_VMwareCarbonBlackCloud](im-authentication-vmwarecarbonblackcloud.md) |
 |  | [_Im_Authentication_VectraXDRAudit](im-authentication-vectraxdraudit.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

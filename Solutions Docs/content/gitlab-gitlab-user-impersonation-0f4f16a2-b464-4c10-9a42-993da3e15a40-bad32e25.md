@@ -26,6 +26,7 @@ This queries GitLab Audit Logs for user impersonation. A malicious operator or a
 This content item queries data from the following tables:
 
 - [`Syslog`](../tables/syslog.md)
+- [`impersonationStart`](../tables/impersonationstart.md)
 
 ---
 

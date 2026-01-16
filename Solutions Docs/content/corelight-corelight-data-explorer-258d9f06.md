@@ -124,6 +124,10 @@ This content item queries data from the following tables:
 - [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md)
 - [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md)
 - [`Corelight_v2_zeek_doctor_CL`](../tables/corelight-v2-zeek-doctor-cl.md)
+- [`Immediate`](../tables/immediate.md)
+- [`image`](../tables/image.md)
+- [`impacket`](../tables/impacket.md)
+- [`improve`](../tables/improve.md)
 
 ---
 

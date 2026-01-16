@@ -6,11 +6,12 @@
 
 ---
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [Okta Single Sign-On](../solutions/okta-single-sign-on.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (2)
 
@@ -21,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (19)
+## Content Items Using This Table (20)
 
 ### Analytic Rules (8)
 
@@ -49,10 +50,13 @@ This table is ingested by the following connectors:
 - [Sign-ins from Nord VPN Providers](../content/okta-single-sign-on-sign-ins-from-nord-vpn-providers-708c33ec-22a2-4739-b248-c14919500cdd-3c19da48.md)
 - [User password reset(Okta)](../content/okta-single-sign-on-user-password-reset-okta-38da2aa3-4778-4d88-9178-3c5c14758b05-7f425c2c.md)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Okta Single Sign-On](../solutions/okta-single-sign-on.md):**
 - [OktaSingleSignOn](../content/okta-single-sign-on-oktasinglesignon-21c9f54c.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Parsers Using This Table (2)
 

@@ -16,7 +16,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs) |
 
-## Solutions (6)
+## Solutions (7)
 
 This table is used by the following solutions:
 
@@ -26,6 +26,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
 
@@ -35,7 +36,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (8)
 
 ### Analytic Rules (2)
 
@@ -45,7 +46,7 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 - [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md)
 
-### Workbooks (5)
+### Workbooks (6)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
@@ -61,6 +62,9 @@ This table is ingested by the following connectors:
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Parsers Using This Table (1)
 

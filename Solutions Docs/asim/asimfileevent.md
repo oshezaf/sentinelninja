@@ -47,6 +47,30 @@ This union parser includes parsers for the following products:
 | VMware Carbon Black Cloud | [_ASim_FileEvent_VMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md) |
 |  | [_Im_FileEvent_Empty](im-fileevent-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+| [ASimFileEventAzureBlobStorage](../asim/asimfileeventazureblobstorage.md) |
+| [ASimFileEventAzureFileStorage](../asim/asimfileeventazurefilestorage.md) |
+| [ASimFileEventAzureQueueStorage](../asim/asimfileeventazurequeuestorage.md) |
+| [ASimFileEventAzureTableStorage](../asim/asimfileeventazuretablestorage.md) |
+| [ASimFileEventGoogleWorkspace](../asim/asimfileeventgoogleworkspace.md) |
+| [ASimFileEventLinuxSysmonFileCreated](../asim/asimfileeventlinuxsysmonfilecreated.md) |
+| [ASimFileEventLinuxSysmonFileDeleted](../asim/asimfileeventlinuxsysmonfiledeleted.md) |
+| [ASimFileEventMicrosoft365D](../asim/asimfileeventmicrosoft365d.md) |
+| [ASimFileEventMicrosoftSecurityEvents](../asim/asimfileeventmicrosoftsecurityevents.md) |
+| [ASimFileEventMicrosoftSharePoint](../asim/asimfileeventmicrosoftsharepoint.md) |
+| [ASimFileEventMicrosoftSysmon](../asim/asimfileeventmicrosoftsysmon.md) |
+| [ASimFileEventMicrosoftSysmonWindowsEvent](../asim/asimfileeventmicrosoftsysmonwindowsevent.md) |
+| [ASimFileEventMicrosoftWindowsEvents](../asim/asimfileeventmicrosoftwindowsevents.md) |
+| [ASimFileEventNative](../asim/asimfileeventnative.md) |
+| [ASimFileEventSentinelOne](../asim/asimfileeventsentinelone.md) |
+| [ASimFileEventVMwareCarbonBlackCloud](../asim/asimfileeventvmwarecarbonblackcloud.md) |
+
 ## Parameters
 
 | Name | Type | Default |

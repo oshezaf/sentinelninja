@@ -17,6 +17,7 @@
 This content item queries data from the following tables:
 
 - [`Event`](../tables/event.md)
+- [`Impersonation`](../tables/impersonation.md)
 - [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md)
 - [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md)
 - [`Ttp_Url_CL`](../tables/ttp-url-cl.md)

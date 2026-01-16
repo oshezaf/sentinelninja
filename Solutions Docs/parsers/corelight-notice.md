@@ -24,6 +24,7 @@
 This parser reads from the following tables:
 
 - [Corelight_v2_notice_CL](../tables/corelight-v2-notice-cl.md)
+- [Immediate](../tables/immediate.md)
 
 ---
 

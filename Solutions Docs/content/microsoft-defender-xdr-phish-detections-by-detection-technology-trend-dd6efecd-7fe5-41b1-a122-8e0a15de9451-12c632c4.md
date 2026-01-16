@@ -25,6 +25,8 @@ This query visualises total emails with Phish detections over time summarizing t
 This content item queries data from the following tables:
 
 - [`EmailEvents`](../tables/emailevents.md)
+- [`Impersonation`](../tables/impersonation.md)
+- [`impersonation`](../tables/impersonation.md)
 
 ---
 

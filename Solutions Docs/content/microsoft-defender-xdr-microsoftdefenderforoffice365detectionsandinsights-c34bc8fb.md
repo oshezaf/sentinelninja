@@ -21,9 +21,11 @@ This content item queries data from the following tables:
 - [`EmailEvents`](../tables/emailevents.md)
 - [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)
 - [`EmailUrlInfo`](../tables/emailurlinfo.md)
+- [`Impersonation`](../tables/impersonation.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`UrlClickEvents`](../tables/urlclickevents.md)
+- [`impersonation`](../tables/impersonation.md)
 
 ---
 

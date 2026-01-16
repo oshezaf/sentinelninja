@@ -23,7 +23,15 @@
 
 This parser reads from the following tables:
 
+- [ASimAuditEvent](../tables/asimauditevent.md)
+- [ASimAuthentication](../tables/asimauthentication.md)
+- [ASimDhcpEvent](../tables/asimdhcpevent.md)
+- [ASimDns](../tables/asimdns.md)
+- [ASimNetworkSession](../tables/asimnetworksession.md)
+- [ASimWebSession](../tables/asimwebsession.md)
+- [AsimParsersData](../tables/asimparsersdata.md)
 - [ThreatIntelligenceIndicator](../tables/threatintelligenceindicator.md)
+- [asimParsers](../tables/asimparsers.md)
 
 ---
 

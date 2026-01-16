@@ -25,6 +25,7 @@ Identifies a failed ESXi Shell login via SSH in a short TimeFrame. This could be
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

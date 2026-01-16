@@ -1,4 +1,4 @@
-# SonicWall Firewall
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> SonicWall Firewall
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sonicwall_logo.svg" alt="SonicWall Firewall Logo" width="75" height="75">
 
@@ -28,6 +28,14 @@ The [SonicWall Firewall](https://www.sonicwall.com/products/firewalls/) solution
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+
 ## Data Connectors
 
 This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
@@ -37,13 +45,22 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This solution uses **2 ASIM parser(s)** for normalized data:
+
+| Parser | Used By Content |
+|--------|----------------|
+| [`ASimNetworkSessionSonicWallFirewall`](../asim/asimnetworksessionsonicwallfirewall.md) | Analytics, Hunting, Workbooks |
+| [`ASimWebSessionSonicWallFirewall`](../asim/asimwebsessionsonicwallfirewall.md) | Workbooks |
+
 ## Tables Used
 
 This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md), [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md) | Analytics, Hunting, Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md), [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -59,20 +76,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md) | Medium | InitialAccess, Execution, Persistence, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md) | Medium | InitialAccess, Execution, Persistence, CredentialAccess, Discovery, LateralMovement, Collection, Exfiltration, Impact | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimNetworkSessionSonicWallFirewall`](../asim/asimnetworksessionsonicwallfirewall.md) |
 | [SonicWall - Capture ATP Malicious File Detection](../content/sonicwall-firewall-sonicwall-capture-atp-malicious-file-detection-3db9f99e-a459-41e0-8e02-8b332f5fcb2c-219e6d5b.md) | Medium | Execution | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md) | Exfiltration | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md) | Exfiltration | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimNetworkSessionSonicWallFirewall`](../asim/asimnetworksessionsonicwallfirewall.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimNetworkSessionSonicWallFirewall`](../asim/asimnetworksessionsonicwallfirewall.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimWebSessionSonicWallFirewall`](../asim/asimwebsessionsonicwallfirewall.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 

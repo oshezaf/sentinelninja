@@ -40,6 +40,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_RegistryEvent_TrendMicroVisionOne](im-registryevent-trendmicrovisionone.md) |
 |  | [_Im_RegistryEvent_VMwareCarbonBlackCloud](im-registryevent-vmwarecarbonblackcloud.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

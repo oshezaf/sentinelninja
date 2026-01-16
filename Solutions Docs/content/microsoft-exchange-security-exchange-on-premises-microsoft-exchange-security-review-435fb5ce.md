@@ -17,6 +17,9 @@
 This content item queries data from the following tables:
 
 - [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md)
+- [`IMAPSettings`](../tables/imapsettings.md)
+- [`Impersonation`](../tables/impersonation.md)
+- [`Import`](../tables/import.md)
 
 ---
 

@@ -46,6 +46,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_Dns_VectraAI](im-dns-vectraai.md) |
 |  | [_Im_Dns_ZscalerZIA](im-dns-zscalerzia.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

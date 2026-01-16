@@ -47,6 +47,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_FileEvent_SentinelOne](im-fileevent-sentinelone.md) |
 |  | [_Im_FileEvent_VMwareCarbonBlackCloud](im-fileevent-vmwarecarbonblackcloud.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

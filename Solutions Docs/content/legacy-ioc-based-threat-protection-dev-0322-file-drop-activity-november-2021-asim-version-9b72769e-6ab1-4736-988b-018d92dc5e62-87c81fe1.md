@@ -22,28 +22,14 @@ This query hunts for file creation events linked to Dev-0322's compromise of ZOH
 
 This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
-- [`_Im_FileEvent_AzureBlobStorage`](../asim/im-fileevent-azureblobstorage.md)
-- [`_Im_FileEvent_AzureFileStorage`](../asim/im-fileevent-azurefilestorage.md)
-- [`_Im_FileEvent_AzureQueueStorage`](../asim/im-fileevent-azurequeuestorage.md)
-- [`_Im_FileEvent_AzureTableStorage`](../asim/im-fileevent-azuretablestorage.md)
-- [`_Im_FileEvent_GoogleWorkspace`](../asim/im-fileevent-googleworkspace.md)
-- [`_Im_FileEvent_LinuxSysmonFileCreated`](../asim/im-fileevent-linuxsysmonfilecreated.md)
-- [`_Im_FileEvent_LinuxSysmonFileDeleted`](../asim/im-fileevent-linuxsysmonfiledeleted.md)
-- [`_Im_FileEvent_Microsoft365D`](../asim/im-fileevent-microsoft365d.md)
-- [`_Im_FileEvent_MicrosoftSecurityEvents`](../asim/im-fileevent-microsoftsecurityevents.md)
-- [`_Im_FileEvent_MicrosoftSharePoint`](../asim/im-fileevent-microsoftsharepoint.md)
-- [`_Im_FileEvent_MicrosoftSysmon`](../asim/im-fileevent-microsoftsysmon.md)
-- [`_Im_FileEvent_MicrosoftSysmonWindowsEvent`](../asim/im-fileevent-microsoftsysmonwindowsevent.md)
-- [`_Im_FileEvent_MicrosoftWindowsEvents`](../asim/im-fileevent-microsoftwindowsevents.md)
-- [`_Im_FileEvent_Native`](../asim/im-fileevent-native.md)
-- [`_Im_FileEvent_SentinelOne`](../asim/im-fileevent-sentinelone.md)
-- [`_Im_FileEvent_VMwareCarbonBlackCloud`](../asim/im-fileevent-vmwarecarbonblackcloud.md)
+- [`imFileEvent`](../asim/imfileevent.md)
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
 - [`SecurityAlert`](../tables/securityalert.md)
+- [`imProcess`](../tables/improcess.md)
 
 ---
 

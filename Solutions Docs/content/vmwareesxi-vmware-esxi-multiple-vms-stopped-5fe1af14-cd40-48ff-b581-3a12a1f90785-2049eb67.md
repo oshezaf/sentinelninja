@@ -25,6 +25,7 @@ Detects when multiple VMs ware stopped by user.
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

@@ -46,6 +46,8 @@ This content item queries data from the following tables:
 - [`SigninLogs`](../tables/signinlogs.md)
 - [`Update`](../tables/update.md)
 - [`anomalies`](../tables/anomalies.md)
+- [`impersonate`](../tables/impersonate.md)
+- [`implement`](../tables/implement.md)
 - [`update`](../tables/update.md)
 
 ---

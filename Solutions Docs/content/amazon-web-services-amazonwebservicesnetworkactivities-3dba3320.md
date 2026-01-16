@@ -17,6 +17,7 @@
 This content item queries data from the following tables:
 
 - [`AWSCloudTrail`](../tables/awscloudtrail.md)
+- [`Image`](../tables/image.md)
 
 ---
 

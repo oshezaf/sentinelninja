@@ -21,8 +21,8 @@ Reference for AZFWApplicationRule table in Azure Monitor Logs.
 This table is used by the following solutions:
 
 - [Azure Firewall](../solutions/azure-firewall.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ## Connectors (1)
@@ -61,11 +61,11 @@ This table is ingested by the following connectors:
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 - [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Resource Types
 

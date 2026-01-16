@@ -22,16 +22,7 @@ This query hunts for Nylon Typhoon-related activity, specifically data collectio
 
 This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
-- [`_Im_ProcessCreateTrendMicroVisionOne`](../asim/im-processcreatetrendmicrovisionone.md)
-- [`_Im_ProcessCreate_LinuxSysmon`](../asim/im-processcreate-linuxsysmon.md)
-- [`_Im_ProcessCreate_MD4IoT`](../asim/im-processcreate-md4iot.md)
-- [`_Im_ProcessCreate_MicrosoftSecurityEvents`](../asim/im-processcreate-microsoftsecurityevents.md)
-- [`_Im_ProcessCreate_MicrosoftSysmon`](../asim/im-processcreate-microsoftsysmon.md)
-- [`_Im_ProcessCreate_MicrosoftWindowsEvents`](../asim/im-processcreate-microsoftwindowsevents.md)
-- [`_Im_ProcessCreate_SentinelOne`](../asim/im-processcreate-sentinelone.md)
-- [`_Im_ProcessCreate_VMwareCarbonBlackCloud`](../asim/im-processcreate-vmwarecarbonblackcloud.md)
-- [`_Im_ProcessEvent_Microsoft365D`](../asim/im-processevent-microsoft365d.md)
-- [`_Im_ProcessEvent_Native`](../asim/im-processevent-native.md)
+- [`imProcessCreate`](../asim/improcesscreate.md)
 
 ## Tables Used
 

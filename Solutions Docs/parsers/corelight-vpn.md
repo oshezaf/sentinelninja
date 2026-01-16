@@ -26,6 +26,7 @@ string
 This parser reads from the following tables:
 
 - [Corelight_v2_vpn_CL](../tables/corelight-v2-vpn-cl.md)
+- [impacket](../tables/impacket.md)
 
 ---
 

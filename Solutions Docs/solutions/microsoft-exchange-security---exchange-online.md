@@ -37,12 +37,13 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) | Workbooks |
 | [`Event`](../tables/event.md) | - | Workbooks |
+| [`Impersonation`](../tables/impersonation.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
 
 ## Content Items
@@ -62,7 +63,7 @@ This solution includes **10 content item(s)**:
 | [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-admin-activity-online-c51be957.md) | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)<br>[`Event`](../tables/event.md) |
 | [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-search-adminauditlog-online-11d0bde2.md) | [`OfficeActivity`](../tables/officeactivity.md) |
-| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) |
+| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md) | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)<br>[`Impersonation`](../tables/impersonation.md) |
 
 ### Parsers
 

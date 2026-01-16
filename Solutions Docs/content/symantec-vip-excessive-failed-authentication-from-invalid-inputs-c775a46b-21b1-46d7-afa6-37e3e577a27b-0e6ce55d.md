@@ -25,6 +25,7 @@ Creates an incident in the event that a user generates an excessive amount of fa
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

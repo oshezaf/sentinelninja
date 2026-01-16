@@ -25,6 +25,7 @@ This query identifies evidence of potential brute force attack by looking at mul
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

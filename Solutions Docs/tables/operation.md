@@ -21,7 +21,6 @@ Reference for Operation table in Azure Monitor Logs.
 This table is used by the following solutions:
 
 - [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [Global Secure Access](../solutions/global-secure-access.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
@@ -32,6 +31,7 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Veeam](../solutions/veeam.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
@@ -43,9 +43,6 @@ This table is used by the following solutions:
 
 **In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
 - [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md)
-
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
@@ -79,6 +76,9 @@ This table is used by the following solutions:
 
 **In solution [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md):**
 - [SemperisDSPQuickviewDashboard](../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 **In solution [Veeam](../solutions/veeam.md):**
 - [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md)

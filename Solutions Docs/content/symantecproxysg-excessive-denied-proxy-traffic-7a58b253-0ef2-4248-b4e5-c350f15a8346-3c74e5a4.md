@@ -25,6 +25,7 @@ This alert creates an incident when a client generates an excessive amounts of d
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

@@ -39,6 +39,22 @@ This union parser includes parsers for the following products:
 |  | [_ASim_ProcessEvent_TerminateVMwareCarbonBlackCloud](asim-processevent-terminatevmwarecarbonblackcloud.md) |
 |  | [_Im_Process_Empty](im-process-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+| [ASimProcessEventMD4IoT](../asim/asimprocesseventmd4iot.md) |
+| [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) |
+| [ASimProcessEventNative](../asim/asimprocesseventnative.md) |
+| [ASimProcessTerminateLinuxSysmon](../asim/asimprocessterminatelinuxsysmon.md) |
+| [ASimProcessTerminateMicrosoftSecurityEvents](../asim/asimprocessterminatemicrosoftsecurityevents.md) |
+| [ASimProcessTerminateMicrosoftSysmon](../tables/asimprocessterminatemicrosoftsysmon.md) |
+| [ASimProcessTerminateMicrosoftWindowsEvents](../asim/asimprocessterminatemicrosoftwindowsevents.md) |
+| [ASimProcessTerminateVMwareCarbonBlackCloud](../asim/asimprocessterminatevmwarecarbonblackcloud.md) |
+
 ## References
 
 - [ASIM Process Schema](https://aka.ms/ASimProcessEventDoc)

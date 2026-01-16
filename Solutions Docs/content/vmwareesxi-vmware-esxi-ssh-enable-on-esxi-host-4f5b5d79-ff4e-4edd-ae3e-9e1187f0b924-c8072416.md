@@ -25,6 +25,7 @@ Detects when vim-cmd is used to enable SSH on an ESXi host
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

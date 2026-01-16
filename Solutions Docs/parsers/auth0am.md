@@ -27,6 +27,8 @@ This parser reads from the following tables:
 - [Auth0Logs_CL](../tables/auth0logs-cl.md)
 - [Operation](../tables/operation.md)
 - [Update](../tables/update.md)
+- [import](../tables/import.md)
+- [imported](../tables/imported.md)
 - [update](../tables/update.md)
 
 ---

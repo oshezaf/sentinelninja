@@ -65,7 +65,7 @@ This solution uses **2 ASIM parser(s)** for normalized data:
 
 ## Tables Used
 
-This solution uses **27 table(s)**:
+This solution uses **29 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -91,11 +91,13 @@ This solution uses **27 table(s)**:
 | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
 | [`IdentityLogonEvents`](../tables/identitylogonevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
 | [`IdentityQueryEvents`](../tables/identityqueryevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Workbooks |
+| [`Impersonation`](../tables/impersonation.md) | - | Hunting, Workbooks |
 | [`MessageEvents`](../tables/messageevents.md) | - | Hunting |
 | [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md) | - | Hunting |
 | [`MessageUrlInfo`](../tables/messageurlinfo.md) | - | Hunting |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
 | [`UrlClickEvents`](../tables/urlclickevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
+| [`impersonation`](../tables/impersonation.md) | - | Hunting, Workbooks |
 
 ### Internal Tables
 
@@ -267,7 +269,7 @@ This solution includes **373 content item(s)**:
 | [Imminent Ransomware](../content/microsoft-defender-xdr-imminent-ransomware-846bf25e-3d2d-4122-9b60-adfadd2fc616-8ac809d0.md) | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Impersonation Detections Trend](../content/microsoft-defender-xdr-impersonation-detections-trend-416cd270-6327-441a-9304-940c832cf361-79ee8cd4.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Impersonation Detections by Detection Technology](../content/microsoft-defender-xdr-impersonation-detections-by-detection-technology-15a17150-811d-4829-a3d6-489139c9ff5e-b3543837.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
-| [Impersonation Detections by Detection Technology Trend](../content/microsoft-defender-xdr-impersonation-detections-by-detection-technology-trend-418e8859-b22a-4fd4-b273-5433e054cdc7-b6bf2fd7.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
+| [Impersonation Detections by Detection Technology Trend](../content/microsoft-defender-xdr-impersonation-detections-by-detection-technology-trend-418e8859-b22a-4fd4-b273-5433e054cdc7-b6bf2fd7.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md)<br>[`Impersonation`](../tables/impersonation.md)<br>[`impersonation`](../tables/impersonation.md) |
 | [Inbound Teams messages by sender domains](../content/microsoft-defender-xdr-inbound-teams-messages-by-sender-domains-f304b75a-a2a0-45fb-814c-40b6e08211f0-46960408.md) ⚠️ | DefenseEvasion | [`MessageEvents`](../tables/messageevents.md) |
 | [Inbound emails with QR code URLs](../content/microsoft-defender-xdr-inbound-emails-with-qr-code-urls-f6354c94-3a95-4235-8530-414f016a7bf6-b653a9db.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Inbox rule changes which forward-redirect email](../content/microsoft-defender-xdr-inbox-rule-changes-which-forward-redirect-email-54569b06-47fc-41ae-9b00-f7d9b61337b6-8075b72d.md) | Persistence | [`CloudAppEvents`](../tables/cloudappevents.md) |
@@ -320,7 +322,7 @@ This solution includes **373 content item(s)**:
 | [Phish Detections (Normal) by delivery location](../content/microsoft-defender-xdr-phish-detections-normal-by-delivery-location-4d86021c-cad7-489b-a8c8-dddecb87a2ef-ba0f6a21.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Phish Detections Trend](../content/microsoft-defender-xdr-phish-detections-trend-fbe7a9d2-507e-4974-9e9a-d1cba3907f67-9ce7f42d.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Phish Detections by Detection technology](../content/microsoft-defender-xdr-phish-detections-by-detection-technology-4c30fab1-db4f-4a64-b66b-51478e43a477-bb67d7c0.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
-| [Phish Detections by Detection technology Trend](../content/microsoft-defender-xdr-phish-detections-by-detection-technology-trend-dd6efecd-7fe5-41b1-a122-8e0a15de9451-12c632c4.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
+| [Phish Detections by Detection technology Trend](../content/microsoft-defender-xdr-phish-detections-by-detection-technology-trend-dd6efecd-7fe5-41b1-a122-8e0a15de9451-12c632c4.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md)<br>[`Impersonation`](../tables/impersonation.md)<br>[`impersonation`](../tables/impersonation.md) |
 | [Phish Detections by delivery location trend](../content/microsoft-defender-xdr-phish-detections-by-delivery-location-trend-b20e56b8-e335-43d9-b7b3-43c034c43aea-304b06c0.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [PhishingEmailUrlRedirector (1)](../content/microsoft-defender-xdr-phishingemailurlredirector-1-08aff8c6-b983-43a3-be95-68a10c3d35e6-edcd3f18.md) | InitialAccess | [`EmailUrlInfo`](../tables/emailurlinfo.md) |
 | [Possible Teams phishing activity](../content/microsoft-defender-xdr-possible-teams-phishing-activity-01cf63bd-debd-4d03-847c-d19c31844501-3b0f03e4.md) ⚠️ | InitialAccess | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
@@ -341,7 +343,7 @@ This solution includes **373 content item(s)**:
 | [Qakbot Discovery Activies](../content/microsoft-defender-xdr-qakbot-discovery-activies-e18109aa-f252-48ec-b115-1b7c16e1174f-741aed07.md) | DefenseEvasion, Discovery, Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Qakbot Reconnaissance Activities](../content/microsoft-defender-xdr-qakbot-reconnaissance-activities-d6991ef1-b225-4780-b6a6-cfe9b5278f5e-9d2f618d.md) | Discovery | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |
 | [Quarantine Phish Reason](../content/microsoft-defender-xdr-quarantine-phish-reason-36cf7ce5-7264-46d9-9f47-57b59049b44f-2c7a4748.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
-| [Quarantine Phish Reason trend](../content/microsoft-defender-xdr-quarantine-phish-reason-trend-79bed402-09bc-453b-ab92-8b1411e683fa-9b772a7d.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
+| [Quarantine Phish Reason trend](../content/microsoft-defender-xdr-quarantine-phish-reason-trend-79bed402-09bc-453b-ab92-8b1411e683fa-9b772a7d.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md)<br>[`Impersonation`](../tables/impersonation.md)<br>[`impersonation`](../tables/impersonation.md) |
 | [Quarantine Release Email Details](../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md) |
 | [Quarantine Spam Reason](../content/microsoft-defender-xdr-quarantine-spam-reason-bde9d9fc-e166-4628-91f7-fb86ace93af0-47e9e0b8.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Quarantine Spam Reason trend](../content/microsoft-defender-xdr-quarantine-spam-reason-trend-32a981ad-cd5a-4d80-8c6c-d59b9893c019-af7b470d.md) ⚠️ | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
@@ -505,7 +507,7 @@ This solution includes **373 content item(s)**:
 |:-----|:------------|
 | [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) | [`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`DeviceLogonEvents`](../tables/devicelogonevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |
 | [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`IdentityLogonEvents`](../tables/identitylogonevents.md)<br>[`IdentityQueryEvents`](../tables/identityqueryevents.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`UrlClickEvents`](../tables/urlclickevents.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)<br>[`EmailUrlInfo`](../tables/emailurlinfo.md)<br>[`Impersonation`](../tables/impersonation.md)<br>[`UrlClickEvents`](../tables/urlclickevents.md)<br>[`impersonation`](../tables/impersonation.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

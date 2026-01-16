@@ -22,7 +22,7 @@ This table is used by the following solutions:
 
 - [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Workday](../solutions/workday.md)
@@ -49,8 +49,8 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Resource Types
 

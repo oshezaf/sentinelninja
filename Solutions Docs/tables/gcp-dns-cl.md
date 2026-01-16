@@ -14,8 +14,8 @@
 
 This table is used by the following solutions:
 
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
 
@@ -58,11 +58,11 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md):**
 - [GCPDNS](../content/googlecloudplatformdns-gcpdns-15de76e5.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Parsers Using This Table (2)
 

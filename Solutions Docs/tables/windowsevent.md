@@ -21,11 +21,11 @@ Reference for WindowsEvent table in Azure Monitor Logs.
 This table is used by the following solutions:
 
 - [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Windows Forwarded Events](../solutions/windows-forwarded-events.md)
@@ -92,8 +92,8 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Resource Types
 
@@ -101,9 +101,9 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/securityinsights`
 
-## Parsers Using This Table (12)
+## Parsers Using This Table (11)
 
-### ASIM Parsers (12)
+### ASIM Parsers (11)
 
 | Parser | Schema | Product |
 |:-------|:-------|:--------|
@@ -117,7 +117,6 @@ This table collects data from the following Azure resource types:
 | [ASimProcessEventTerminateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventterminatemicrosoftsysmonwindowsevent.md) | ProcessEvent |  |
 | [ASimProcessTerminateMicrosoftWindowsEvents](../asim/asimprocessterminatemicrosoftwindowsevents.md) | ProcessEvent |  |
 | [ASimRegistryEventMicrosoftSysmonWindowsEvent](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | RegistryEvent |  |
-| [ASimRegistryEventMicrosoftWindowsEvent](../asim/asimregistryeventmicrosoftwindowsevent.md) | RegistryEvent |  |
 | [ASimUserManagementMicrosoftWindowsEvent](../asim/asimusermanagementmicrosoftwindowsevent.md) | UserManagement |  |
 
 ---

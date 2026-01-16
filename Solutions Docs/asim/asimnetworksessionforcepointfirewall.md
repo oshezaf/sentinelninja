@@ -32,6 +32,8 @@ This parser reads from the following tables:
 | Table |
 |:------|
 | [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| [IMAP3](../tables/imap3.md) |
+| [IMAPS](../tables/imaps.md) |
 
 ## Parameters
 

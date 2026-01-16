@@ -25,8 +25,7 @@ Searches for DCShadow attacks
 
 This content item queries data from the following tables:
 
-- [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)
-- [`Tenable_ad_CL`](../tables/tenable-ad-cl.md)
+- [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md)
 - [`USAGE`](../tables/usage.md)
 - [`alert`](../tables/alert.md)
 

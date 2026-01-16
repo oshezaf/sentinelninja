@@ -39,11 +39,12 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] AI Analyst Darktrace via AMA](../connectors/darktraceama.md), [[Deprecated] AI Analyst Darktrace via Legacy Agent](../connectors/darktrace.md) | Workbooks |
+| [`Immune`](../tables/immune.md) | - | Workbooks |
 
 ## Content Items
 
@@ -57,7 +58,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AIA-Darktrace](../content/ai-analyst-darktrace-aia-darktrace-c99f20ad.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [AIA-Darktrace](../content/ai-analyst-darktrace-aia-darktrace-c99f20ad.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Immune`](../tables/immune.md) |
 
 ## Release Notes
 

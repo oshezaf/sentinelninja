@@ -48,6 +48,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_ProcessTerminate_VMwareCarbonBlackCloud](im-processterminate-vmwarecarbonblackcloud.md) |
 |  | [_Im_Process_Empty](im-process-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

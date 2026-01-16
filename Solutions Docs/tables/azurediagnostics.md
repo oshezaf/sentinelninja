@@ -37,7 +37,6 @@ This table is used by the following solutions:
 - [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
@@ -47,6 +46,7 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
 - [SlashNext](../solutions/slashnext.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
@@ -204,9 +204,6 @@ This table is ingested by the following connectors:
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 - [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 - [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
 
@@ -227,6 +224,9 @@ This table is ingested by the following connectors:
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
 - [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
 - [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md)

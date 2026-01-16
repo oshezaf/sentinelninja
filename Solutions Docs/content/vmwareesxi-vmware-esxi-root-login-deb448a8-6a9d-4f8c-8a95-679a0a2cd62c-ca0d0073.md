@@ -25,6 +25,7 @@ Detects when root user login from uncommon IP address.
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

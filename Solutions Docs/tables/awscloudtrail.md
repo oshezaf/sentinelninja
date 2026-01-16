@@ -16,7 +16,7 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail) |
 
-## Solutions (13)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -30,6 +30,7 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -43,7 +44,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (119)
+## Content Items Using This Table (120)
 
 ### Analytic Rules (73)
 
@@ -179,7 +180,7 @@ This table is ingested by the following connectors:
 **In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
 - [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md)
 
-### Workbooks (9)
+### Workbooks (10)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md)
@@ -200,6 +201,9 @@ This table is ingested by the following connectors:
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)

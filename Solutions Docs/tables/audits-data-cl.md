@@ -10,7 +10,7 @@
 
 This table is used by the following solutions:
 
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Vectra XDR](../solutions/vectra-xdr.md)
 
 ## Connectors (1)
@@ -25,8 +25,8 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
 - [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md)

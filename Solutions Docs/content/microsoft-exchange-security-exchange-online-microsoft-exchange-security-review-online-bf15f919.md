@@ -17,6 +17,7 @@
 This content item queries data from the following tables:
 
 - [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md)
+- [`Impersonation`](../tables/impersonation.md)
 
 ---
 

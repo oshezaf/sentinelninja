@@ -25,6 +25,7 @@ This creates an incident in the event that a single source IP address generates 
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

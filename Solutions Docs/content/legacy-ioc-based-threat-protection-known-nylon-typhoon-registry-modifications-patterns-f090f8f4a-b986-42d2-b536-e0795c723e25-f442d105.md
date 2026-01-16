@@ -23,15 +23,7 @@ This query identifies instances where malware intentionally configures the brows
 
 This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
-- [`_Im_RegistryEvent_Microsoft365D`](../asim/im-registryevent-microsoft365d.md)
-- [`_Im_RegistryEvent_MicrosoftSecurityEvent`](../asim/im-registryevent-microsoftsecurityevent.md)
-- [`_Im_RegistryEvent_MicrosoftSysmon`](../asim/im-registryevent-microsoftsysmon.md)
-- [`_Im_RegistryEvent_MicrosoftSysmonWindowsEvent`](../asim/im-registryevent-microsoftsysmonwindowsevent.md)
-- [`_Im_RegistryEvent_MicrosoftWindowsEvent`](../asim/im-registryevent-microsoftwindowsevent.md)
-- [`_Im_RegistryEvent_Native`](../asim/im-registryevent-native.md)
-- [`_Im_RegistryEvent_SentinelOne`](../asim/im-registryevent-sentinelone.md)
-- [`_Im_RegistryEvent_TrendMicroVisionOne`](../asim/im-registryevent-trendmicrovisionone.md)
-- [`_Im_RegistryEvent_VMwareCarbonBlackCloud`](../asim/im-registryevent-vmwarecarbonblackcloud.md)
+- [`imRegistry`](../asim/imregistry.md)
 
 ## Tables Used
 

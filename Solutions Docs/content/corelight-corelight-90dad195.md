@@ -39,6 +39,9 @@ This content item queries data from the following tables:
 - [`Corelight_v2_vpn_CL`](../tables/corelight-v2-vpn-cl.md)
 - [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md)
 - [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md)
+- [`Immediate`](../tables/immediate.md)
+- [`impacket`](../tables/impacket.md)
+- [`improve`](../tables/improve.md)
 
 ---
 

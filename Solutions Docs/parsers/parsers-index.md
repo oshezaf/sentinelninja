@@ -163,9 +163,9 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [CiscoSEGEvent](ciscosegevent.md) | [CiscoSEG](../solutions/ciscoseg.md) | CommonSecurityLog |
 | [CiscoSyslogFW6LogSummary](ciscosyslogfw6logsummary.md) ⚠️ | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | Syslog |
 | [CiscoSyslogUTD](ciscosyslogutd.md) ⚠️ | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | Syslog |
-| [CiscoUCS](ciscoucs.md) | [Cisco UCS](../solutions/cisco-ucs.md) | EVENT, Syslog |
+| [CiscoUCS](ciscoucs.md) | [Cisco UCS](../solutions/cisco-ucs.md) | ASimSourceType, EVENT, ... |
 | [CiscoWSAEvent](ciscowsaevent.md) | [CiscoWSA](../solutions/ciscowsa.md) | Syslog |
-| [CitrixADCEvent](citrixadcevent.md) | [Citrix ADC](../solutions/citrix-adc.md) | Syslog |
+| [CitrixADCEvent](citrixadcevent.md) | [Citrix ADC](../solutions/citrix-adc.md) | ASimSourceType, Syslog |
 | [CitrixADCEventOld](citrixadceventold.md) ⚠️ | [Citrix ADC](../solutions/citrix-adc.md) | CommonSecurityLog |
 | [ClarotyEvent](clarotyevent.md) | [Claroty](../solutions/claroty.md) | CommonSecurityLog |
 | [Cloudflare](cloudflare.md) | [Cloudflare](../solutions/cloudflare.md) | CloudflareV2_CL, Cloudflare_CL |
@@ -238,7 +238,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [corelight_mqtt_publish](corelight-mqtt-publish.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_mqtt_publish_CL |
 | [corelight_mqtt_subscribe](corelight-mqtt-subscribe.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_mqtt_subscribe_CL |
 | [corelight_mysql](corelight-mysql.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_mysql_CL |
-| [corelight_notice](corelight-notice.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_notice_CL |
+| [corelight_notice](corelight-notice.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_notice_CL, Immediate |
 | [corelight_ntlm](corelight-ntlm.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_ntlm_CL |
 | [corelight_ntp](corelight-ntp.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_ntp_CL |
 | [corelight_ocsp](corelight-ocsp.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_ocsp_CL |
@@ -265,7 +265,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [corelight_socks](corelight-socks.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_socks_CL |
 | [corelight_software](corelight-software.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_software_CL |
 | [corelight_specific_dns_tunnels](corelight-specific-dns-tunnels.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_specific_dns_tunnels_CL |
-| [corelight_ssh](corelight-ssh.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_ssh_CL |
+| [corelight_ssh](corelight-ssh.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_ssh_CL, improve |
 | [corelight_ssl](corelight-ssl.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_ssl_CL, Corelight_v2_ssl_red_CL |
 | [corelight_ssl_agg](corelight-ssl-agg.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_ssl_agg_CL |
 | [corelight_ssl_red](corelight-ssl-red.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_ssl_red_CL |
@@ -273,8 +273,8 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [corelight_stepping](corelight-stepping.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_stepping_CL |
 | [corelight_stun](corelight-stun.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_stun_CL |
 | [corelight_stun_nat](corelight-stun-nat.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_stun_nat_CL |
-| [corelight_suri_aggregations](corelight-suri-aggregations.md) | [Corelight](../solutions/corelight.md) | — |
-| [corelight_suricata_corelight](corelight-suricata-corelight.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_corelight_CL |
+| [corelight_suri_aggregations](corelight-suri-aggregations.md) | [Corelight](../solutions/corelight.md) | impact_score |
+| [corelight_suricata_corelight](corelight-suricata-corelight.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_corelight_CL, Immediate |
 | [corelight_suricata_eve](corelight-suricata-eve.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_eve_CL |
 | [corelight_suricata_stats](corelight-suricata-stats.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_stats_CL |
 | [corelight_suricata_zeek_stats](corelight-suricata-zeek-stats.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_suricata_zeek_stats_CL |
@@ -286,7 +286,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [corelight_tunnel](corelight-tunnel.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_tunnel_CL |
 | [corelight_unknown_smartpcap](corelight-unknown-smartpcap.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_unknown_smartpcap_CL |
 | [corelight_util_stats](corelight-util-stats.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_util_stats_CL |
-| [corelight_vpn](corelight-vpn.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_vpn_CL |
+| [corelight_vpn](corelight-vpn.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_vpn_CL, impacket |
 | [corelight_weird](corelight-weird.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_weird_CL |
 | [corelight_weird_agg](corelight-weird-agg.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_weird_agg_CL |
 | [corelight_weird_red](corelight-weird-red.md) | [Corelight](../solutions/corelight.md) | Corelight_v2_weird_red_CL |
@@ -309,7 +309,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [CylancePROTECT-old](cylanceprotect-old.md) ⚠️ | [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md) | Syslog |
 | [CymruScoutAccountUsage](cymruscoutaccountusage.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | Cymru_Scout_Account_Usage_Data_CL |
 | [CymruScoutCommunicationsData](cymruscoutcommunicationsdata.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | Communication_Data_CL |
-| [CymruScoutCorrelate](cymruscoutcorrelate.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | ThreatIntelligenceIndicator |
+| [CymruScoutCorrelate](cymruscoutcorrelate.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | ASimAuditEvent, ASimAuthentication, ... |
 | [CymruScoutDomain](cymruscoutdomain.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | Cymru_Scout_Domain_Data_CL |
 | [CymruScoutDomainData](cymruscoutdomaindata.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | Domain_Data_CL |
 | [CymruScoutFingerprintsData](cymruscoutfingerprintsdata.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | Fingerprints_Data_CL |
@@ -400,7 +400,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [GetClassificationList](getclassificationlist.md) | *Legacy* | — |
 | [getForgeRockUsers](getforgerockusers.md) ⚠️ | [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) | CommonSecurityLog |
 | [GitHubAudit](githubaudit.md) | *Legacy* | GitHub_CL |
-| [GitHubAuditData](githubauditdata.md) | [GitHub](../solutions/github.md) | GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL |
+| [GitHubAuditData](githubauditdata.md) | [GitHub](../solutions/github.md) | GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL, ... |
 | [GitHubCodeScanningData](githubcodescanningdata.md) | [GitHub](../solutions/github.md) | githubscanaudit_CL |
 | [GitHubDependabotData](githubdependabotdata.md) | [GitHub](../solutions/github.md) | githubscanaudit_CL |
 | [GitHubRepo](githubrepo.md) | *Legacy* | GitHubRepoLogs_CL |
@@ -479,7 +479,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [JBossEvent](jbossevent.md) | [JBoss](../solutions/jboss.md) | JBossLogs_CL |
 | [JiraAudit](jiraaudit.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) | Jira_Audit_CL, Jira_Audit_v2_CL |
 | [JuniperIDP](juniperidp.md) | [JuniperIDP](../solutions/juniperidp.md) | JuniperIDP_CL |
-| [JuniperSRX](junipersrx.md) | [Juniper SRX](../solutions/juniper-srx.md) | Syslog |
+| [JuniperSRX](junipersrx.md) | [Juniper SRX](../solutions/juniper-srx.md) | ASimSourceType, Syslog |
 
 ## L
 
@@ -573,7 +573,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [PostgreSQLEvent](postgresqlevent.md) | [PostgreSQL](../solutions/postgresql.md) | PostgreSQL_CL |
 | [ProofpointPOD](proofpointpod.md) | [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) | ProofpointPODMailLog_CL, ProofpointPODMessage_CL, ... |
 | [ProofpointTAPEvent](proofpointtapevent.md) | [ProofPointTap](../solutions/proofpointtap.md) | ProofPointTAPClicksBlockedV2_CL, ProofPointTAPClicksBlocked_CL, ... |
-| [PulseConnectSecure](pulseconnectsecure.md) | [Pulse Connect Secure](../solutions/pulse-connect-secure.md) | Syslog |
+| [PulseConnectSecure](pulseconnectsecure.md) | [Pulse Connect Secure](../solutions/pulse-connect-secure.md) | ASimSourceType, Syslog |
 | [PureStorageFlashArrayParserV1](purestorageflasharrayparserv1.md) | [Pure Storage](../solutions/pure-storage.md) | Syslog |
 | [PureStorageFlashBladeParserV1](purestorageflashbladeparserv1.md) | [Pure Storage](../solutions/pure-storage.md) | Syslog |
 
@@ -589,7 +589,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | Parser | Solution | Tables |
 |:-------|:---------|:-------|
 | [RadiflowEvent](radiflowevent.md) | [Radiflow](../solutions/radiflow.md) | CommonSecurityLog |
-| [RSASecurIDAMEvent](rsasecuridamevent.md) | [RSA SecurID](../solutions/rsa-securid.md) | Event, Syslog, ... |
+| [RSASecurIDAMEvent](rsasecuridamevent.md) | [RSA SecurID](../solutions/rsa-securid.md) | ASimSourceType, Event, ... |
 
 ## S
 
@@ -600,16 +600,16 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [SlackAudit](slackaudit.md) | [SlackAudit](../solutions/slackaudit.md) | SlackAuditNativePoller_CL, SlackAuditV2_CL, ... |
 | [Snowflake](snowflake.md) | [Snowflake](../solutions/snowflake.md) | SnowflakeLoad_CL, SnowflakeLogin_CL, ... |
 | [SophosEPEvent](sophosepevent.md) | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) | — |
-| [SophosXGFirewall](sophosxgfirewall.md) | [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) | Syslog |
+| [SophosXGFirewall](sophosxgfirewall.md) | [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) | ASimSourceType, Syslog |
 | [SQLServer_Parser](sqlserver-parser.md) | *Legacy* | Event |
 | [SquidProxy](squidproxy.md) | [SquidProxy](../solutions/squidproxy.md) | SquidProxy_CL |
 | [StealthDefend](stealthdefend.md) | *Legacy* | CommonSecurityLog |
 | [StealthwatchEvent](stealthwatchevent.md) | [Cisco Secure Cloud Analytics](../solutions/cisco-secure-cloud-analytics.md) | Syslog |
 | [SymantecDLP](symantecdlp.md) | [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md) | CommonSecurityLog |
-| [SymantecEndpointProtection](symantecendpointprotection.md) | [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) | Syslog |
+| [SymantecEndpointProtection](symantecendpointprotection.md) | [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) | ASimSourceType, Syslog |
 | [SymantecProxySG](symantecproxysg.md) | *Legacy* | Syslog |
-| [SymantecProxySG](symantecproxysg.md) | [SymantecProxySG](../solutions/symantecproxysg.md) | Syslog |
-| [SymantecVIP](symantecvip.md) | [Symantec VIP](../solutions/symantec-vip.md) | Syslog |
+| [SymantecProxySG](symantecproxysg.md) | [SymantecProxySG](../solutions/symantecproxysg.md) | ASimSourceType, Syslog |
+| [SymantecVIP](symantecvip.md) | [Symantec VIP](../solutions/symantec-vip.md) | ASimSourceType, Syslog |
 | [SyslogEventTypeData](syslogeventtypedata.md) | *Legacy* | Syslog |
 | [SyslogExecve](syslogexecve.md) | *Legacy* | Syslog |
 | [SyslogSyscall](syslogsyscall.md) | *Legacy* | Syslog |
@@ -679,7 +679,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [Veeam_GetVeeamONEAlarms](veeam-getveeamonealarms.md) | [Veeam](../solutions/veeam.md) | Event, Syslog |
 | [vimNetworkSessionOpenSystemsFirewall](vimnetworksessionopensystemsfirewall.md) ⚠️ | [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
 | [vimWebSessionOpenSystemsProxySecureWebGateway](vimwebsessionopensystemsproxysecurewebgateway.md) ⚠️ | [Open Systems](../solutions/open-systems.md) | OpenSystemsProxyLogs_CL |
-| [VMwareESXi](vmwareesxi.md) | [VMWareESXi](../solutions/vmwareesxi.md) | Syslog |
+| [VMwareESXi](vmwareesxi.md) | [VMWareESXi](../solutions/vmwareesxi.md) | ASimSourceType, Syslog |
 | [VotiroEvents](votiroevents.md) | [Votiro](../solutions/votiro.md) | CommonSecurityLog |
 
 ## W

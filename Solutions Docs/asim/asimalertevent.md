@@ -33,6 +33,16 @@ This union parser includes parsers for the following products:
 | SentinelOne | [_ASim_AlertEvent_SentinelOneSingularity](asimalerteventsentinelonesingularity.md) |
 |  | [_Im_AlertEvent_Empty](im-alertevent-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimAlertEventMicrosoftDefenderXDR](../asim/asimalerteventmicrosoftdefenderxdr.md) |
+| [ASimAlertEventSentinelOneSingularity](../asim/asimalerteventsentinelonesingularity.md) |
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

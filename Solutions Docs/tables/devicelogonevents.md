@@ -17,7 +17,7 @@ Sign-ins and other authentication events on devices
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicelogonevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicelogonevents-table) |
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -26,6 +26,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
 
@@ -35,7 +36,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (9)
+## Content Items Using This Table (10)
 
 ### Analytic Rules (3)
 
@@ -49,7 +50,7 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Account Brute Force](../content/microsoft-defender-xdr-account-brute-force-4095e430-d3f4-426f-92c5-aa5c5e137ca0-7ac90fd9.md)
 
-### Workbooks (5)
+### Workbooks (6)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
@@ -63,6 +64,9 @@ This table is ingested by the following connectors:
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Parsers Using This Table (1)
 

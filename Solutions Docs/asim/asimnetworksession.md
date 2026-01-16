@@ -68,6 +68,49 @@ This union parser includes parsers for the following products:
 | Zscaler ZIA Firewall | [_ASim_NetworkSession_ZscalerZIA](asimnetworksessionzscalerzia.md) |
 |  | [_Im_NetworkSession_Empty](im-networksession-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+| [ASimNetworkSessionAWSVPC](../asim/asimnetworksessionawsvpc.md) |
+| [ASimNetworkSessionAppGateSDP](../asim/asimnetworksessionappgatesdp.md) |
+| [ASimNetworkSessionAzureFirewall](../asim/asimnetworksessionazurefirewall.md) |
+| [ASimNetworkSessionAzureNSG](../asim/asimnetworksessionazurensg.md) |
+| [ASimNetworkSessionBarracudaCEF](../asim/asimnetworksessionbarracudacef.md) |
+| [ASimNetworkSessionBarracudaWAF](../asim/asimnetworksessionbarracudawaf.md) |
+| [ASimNetworkSessionCheckPointFirewall](../asim/asimnetworksessioncheckpointfirewall.md) |
+| [ASimNetworkSessionCiscoASA](../asim/asimnetworksessionciscoasa.md) |
+| [ASimNetworkSessionCiscoFirepower](../asim/asimnetworksessionciscofirepower.md) |
+| [ASimNetworkSessionCiscoISE](../asim/asimnetworksessionciscoise.md) |
+| [ASimNetworkSessionCiscoMeraki](../asim/asimnetworksessionciscomeraki.md) |
+| [ASimNetworkSessionCiscoMerakiSyslog](../asim/asimnetworksessionciscomerakisyslog.md) |
+| [ASimNetworkSessionCorelightZeek](../asim/asimnetworksessioncorelightzeek.md) |
+| [ASimNetworkSessionCrowdStrikeFalconHost](../asim/asimnetworksessioncrowdstrikefalconhost.md) |
+| [ASimNetworkSessionForcePointFirewall](../asim/asimnetworksessionforcepointfirewall.md) |
+| [ASimNetworkSessionFortinetFortiGate](../asim/asimnetworksessionfortinetfortigate.md) |
+| [ASimNetworkSessionIllumioSaaSCore](../asim/asimnetworksessionillumiosaascore.md) |
+| [ASimNetworkSessionLinuxSysmon](../asim/asimnetworksessionlinuxsysmon.md) |
+| [ASimNetworkSessionMD4IoTAgent](../asim/asimnetworksessionmd4iotagent.md) |
+| [ASimNetworkSessionMD4IoTSensor](../asim/asimnetworksessionmd4iotsensor.md) |
+| [ASimNetworkSessionMicrosoft365Defender](../asim/asimnetworksessionmicrosoft365defender.md) |
+| [ASimNetworkSessionMicrosoftSecurityEventFirewall](../asim/asimnetworksessionmicrosoftsecurityeventfirewall.md) |
+| [ASimNetworkSessionMicrosoftSysmon](../asim/asimnetworksessionmicrosoftsysmon.md) |
+| [ASimNetworkSessionMicrosoftSysmonWindowsEvent](../asim/asimnetworksessionmicrosoftsysmonwindowsevent.md) |
+| [ASimNetworkSessionMicrosoftWindowsEventFirewall](../asim/asimnetworksessionmicrosoftwindowseventfirewall.md) |
+| [ASimNetworkSessionNTANetAnalytics](../asim/asimnetworksessionntanetanalytics.md) |
+| [ASimNetworkSessionNative](../asim/asimnetworksessionnative.md) |
+| [ASimNetworkSessionPaloAltoCEF](../asim/asimnetworksessionpaloaltocef.md) |
+| [ASimNetworkSessionPaloAltoCortexDataLake](../asim/asimnetworksessionpaloaltocortexdatalake.md) |
+| [ASimNetworkSessionSentinelOne](../asim/asimnetworksessionsentinelone.md) |
+| [ASimNetworkSessionSonicWallFirewall](../asim/asimnetworksessionsonicwallfirewall.md) |
+| [ASimNetworkSessionVMConnection](../asim/asimnetworksessionvmconnection.md) |
+| [ASimNetworkSessionVMwareCarbonBlackCloud](../asim/asimnetworksessionvmwarecarbonblackcloud.md) |
+| [ASimNetworkSessionVectraAI](../asim/asimnetworksessionvectraai.md) |
+| [ASimNetworkSessionWatchGuardFirewareOS](../asim/asimnetworksessionwatchguardfirewareos.md) |
+
 ## Parameters
 
 | Name | Type | Default |

@@ -31,6 +31,8 @@ This parser reads from the following tables:
 
 | Table |
 |:------|
+| [ASIM_GetAccountType](../tables/asim-getaccounttype.md) |
+| [ASIM_ParseSecurityEvents](../tables/asim-parsesecurityevents.md) |
 | [SecurityEvent](../tables/securityevent.md) |
 
 ## Parameters

@@ -11,7 +11,7 @@
 This table is used by the following solutions:
 
 - [CiscoUmbrella](../solutions/ciscoumbrella.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (2)
 
@@ -57,8 +57,8 @@ This table is ingested by the following connectors:
 **In solution [CiscoUmbrella](../solutions/ciscoumbrella.md):**
 - [CiscoUmbrella](../content/ciscoumbrella-ciscoumbrella-dcc07ffb.md)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Parsers Using This Table (2)
 

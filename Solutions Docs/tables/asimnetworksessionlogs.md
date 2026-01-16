@@ -22,8 +22,8 @@ This table is used by the following solutions:
 
 - [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
 
@@ -50,11 +50,11 @@ The following EventVendor/EventProduct values are used by connectors ingesting t
 
 ### Workbooks (2)
 
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
+
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
 ## Resource Types
 

@@ -31,7 +31,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **32 table(s)** from its content items:
+This solution queries **33 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -52,6 +52,7 @@ This solution queries **32 table(s)** from its content items:
 | [`Event`](../tables/event.md) | Workbooks |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
+| [`Impact`](../tables/impact.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
 | [`Operation`](../tables/operation.md) | Workbooks |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | Workbooks |
@@ -99,7 +100,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`Alert`](../tables/alert.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`Event`](../tables/event.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecureScores`](../tables/securescores.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Usage`](../tables/usage.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`alert`](../tables/alert.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`Alert`](../tables/alert.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`Event`](../tables/event.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`Impact`](../tables/impact.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecureScores`](../tables/securescores.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Usage`](../tables/usage.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`alert`](../tables/alert.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 

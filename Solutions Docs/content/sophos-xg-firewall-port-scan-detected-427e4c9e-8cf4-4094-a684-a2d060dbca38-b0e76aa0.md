@@ -25,6 +25,7 @@ This alert creates an incident when a source IP addresses attempt to communicate
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

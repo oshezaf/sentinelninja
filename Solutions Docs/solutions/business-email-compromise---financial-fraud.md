@@ -48,26 +48,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
-This solution uses **16 ASIM parser(s)** for normalized data:
+This solution uses **1 ASIM parser(s)** for normalized data:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`_Im_FileEvent_AzureBlobStorage`](../asim/im-fileevent-azureblobstorage.md) | Analytics |
-| [`_Im_FileEvent_AzureFileStorage`](../asim/im-fileevent-azurefilestorage.md) | Analytics |
-| [`_Im_FileEvent_AzureQueueStorage`](../asim/im-fileevent-azurequeuestorage.md) | Analytics |
-| [`_Im_FileEvent_AzureTableStorage`](../asim/im-fileevent-azuretablestorage.md) | Analytics |
-| [`_Im_FileEvent_GoogleWorkspace`](../asim/im-fileevent-googleworkspace.md) | Analytics |
-| [`_Im_FileEvent_LinuxSysmonFileCreated`](../asim/im-fileevent-linuxsysmonfilecreated.md) | Analytics |
-| [`_Im_FileEvent_LinuxSysmonFileDeleted`](../asim/im-fileevent-linuxsysmonfiledeleted.md) | Analytics |
-| [`_Im_FileEvent_Microsoft365D`](../asim/im-fileevent-microsoft365d.md) | Analytics |
-| [`_Im_FileEvent_MicrosoftSecurityEvents`](../asim/im-fileevent-microsoftsecurityevents.md) | Analytics |
-| [`_Im_FileEvent_MicrosoftSharePoint`](../asim/im-fileevent-microsoftsharepoint.md) | Analytics |
-| [`_Im_FileEvent_MicrosoftSysmon`](../asim/im-fileevent-microsoftsysmon.md) | Analytics |
-| [`_Im_FileEvent_MicrosoftSysmonWindowsEvent`](../asim/im-fileevent-microsoftsysmonwindowsevent.md) | Analytics |
-| [`_Im_FileEvent_MicrosoftWindowsEvents`](../asim/im-fileevent-microsoftwindowsevents.md) | Analytics |
-| [`_Im_FileEvent_Native`](../asim/im-fileevent-native.md) | Analytics |
-| [`_Im_FileEvent_SentinelOne`](../asim/im-fileevent-sentinelone.md) | Analytics |
-| [`_Im_FileEvent_VMwareCarbonBlackCloud`](../asim/im-fileevent-vmwarecarbonblackcloud.md) | Analytics |
+| [`imFileEvent`](../asim/imfileevent.md) | Analytics |
 
 ## Tables Used
 
@@ -109,7 +94,7 @@ This solution includes **20 content item(s)**:
 | [Authentication Method Changed for Privileged Account](../content/business-email-compromise-financial-fraud-authentication-method-changed-for-privileged-account-feb0a2fb-ae75-4343-8cbc-ed545f1da289-05036a5e.md) | High | Persistence | [`AuditLogs`](../tables/auditlogs.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [Malicious BEC Inbox Rule](../content/business-email-compromise-financial-fraud-malicious-bec-inbox-rule-8ac77493-3cae-4840-8634-15fb23f8fb68-ae4ecd95.md) | Medium | Persistence, DefenseEvasion | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Privileged Account Permissions Changed](../content/business-email-compromise-financial-fraud-privileged-account-permissions-changed-0433c8a3-9aa6-4577-beef-2ea23be41137-ddff1dcb.md) | Medium | PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Suspicious access of BEC related documents](../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-cd8d946d-10a4-40a9-bac1-6d0a6c847d65-1afb8e2e.md) | Medium | Collection | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureBlobStorage`](../asim/im-fileevent-azureblobstorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureFileStorage`](../asim/im-fileevent-azurefilestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureQueueStorage`](../asim/im-fileevent-azurequeuestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_AzureTableStorage`](../asim/im-fileevent-azuretablestorage.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_GoogleWorkspace`](../asim/im-fileevent-googleworkspace.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_LinuxSysmonFileCreated`](../asim/im-fileevent-linuxsysmonfilecreated.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_LinuxSysmonFileDeleted`](../asim/im-fileevent-linuxsysmonfiledeleted.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_Microsoft365D`](../asim/im-fileevent-microsoft365d.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSecurityEvents`](../asim/im-fileevent-microsoftsecurityevents.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSharePoint`](../asim/im-fileevent-microsoftsharepoint.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSysmon`](../asim/im-fileevent-microsoftsysmon.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftSysmonWindowsEvent`](../asim/im-fileevent-microsoftsysmonwindowsevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_MicrosoftWindowsEvents`](../asim/im-fileevent-microsoftwindowsevents.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_Native`](../asim/im-fileevent-native.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_SentinelOne`](../asim/im-fileevent-sentinelone.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_FileEvent_VMwareCarbonBlackCloud`](../asim/im-fileevent-vmwarecarbonblackcloud.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Suspicious access of BEC related documents](../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-cd8d946d-10a4-40a9-bac1-6d0a6c847d65-1afb8e2e.md) | Medium | Collection | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imFileEvent`](../asim/imfileevent.md) |
 | [Suspicious access of BEC related documents in AWS S3 buckets](../content/business-email-compromise-financial-fraud-suspicious-access-of-bec-related-documents-in-aws-s3-buckets-f3e2d35f-1202-4215-995c-4654ef07d1d8-5612c5c0.md) | Medium | Collection | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [User Added to Admin Role](../content/business-email-compromise-financial-fraud-user-added-to-admin-role-2a09f8cb-deb7-4c40-b08b-9137667f1c0b-3a4fbb41.md) | Low | PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 

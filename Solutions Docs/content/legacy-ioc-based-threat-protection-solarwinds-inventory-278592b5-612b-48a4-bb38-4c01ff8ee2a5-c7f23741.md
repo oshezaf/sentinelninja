@@ -24,6 +24,7 @@ This content item queries data from the following tables:
 
 - [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
 - [`Event`](../tables/event.md)
+- [`Image`](../tables/image.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`WindowsEvent`](../tables/windowsevent.md)
 

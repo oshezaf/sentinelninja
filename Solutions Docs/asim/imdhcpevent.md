@@ -33,6 +33,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_DhcpEvent_InfobloxBloxOne](im-dhcpevent-infobloxbloxone.md) |
 |  | [_Im_DhcpEvent_Native](im-dhcpevent-native.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

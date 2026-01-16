@@ -25,6 +25,7 @@ This query identifies evidence of failed login attempts from a large number of d
 
 This content item queries data from the following tables:
 
+- [`ASimSourceType`](../tables/asimsourcetype.md)
 - [`Syslog`](../tables/syslog.md)
 
 ---

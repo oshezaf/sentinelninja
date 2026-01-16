@@ -37,6 +37,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_UserManagement_Native](im-usermanagement-native.md) |
 |  | [_Im_UserManagement_SentinelOne](im-usermanagement-sentinelone.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

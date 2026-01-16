@@ -33,6 +33,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_AlertEvent_MicrosoftDefenderXDR](im-alertevent-microsoftdefenderxdr.md) |
 |  | [_Im_AlertEvent_SentinelOneSingularity](im-alertevent-sentinelonesingularity.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |

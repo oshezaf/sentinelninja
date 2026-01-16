@@ -41,6 +41,14 @@ This union parser includes parsers for the following products:
 |  | [_Im_ProcessEvent_Native](im-processevent-native.md) |
 |  | [_Im_Process_Empty](im-process-empty.md) |
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table |
+|:------|
+| [ASimDisabledParsers](../tables/asimdisabledparsers.md) |
+
 ## Parameters
 
 | Name | Type | Default |
