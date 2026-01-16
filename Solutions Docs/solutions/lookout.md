@@ -8,19 +8,19 @@
 
 ---
 
-The [Lookout](https://lookout.com) solution provides the capability to ingest [Lookout events](https://enterprise.support.lookout.com/hc/articles/115002741773-Mobile-Risk-API-Guide#commoneventfields) into Microsoft Sentinel through the Mobile Risk API. It can get events which helps to examine potential security risks and more. Refer to [API documentation](https://enterprise.support.lookout.com/hc/articles/115002741773-Mobile-Risk-API-Guide) for more information .
-  
-  **Underlying Microsoft Technologies used:** 
+The [Lookout](https://lookout.com) solution provides the capability to ingest [Lookout events](https://www.lookout.com/products/mobile-endpoint-security) into Microsoft Sentinel through the Mobile Risk API. It can get events which helps to examine potential security risks and more. Refer to [API documentation](https://www.lookout.com/products/mobile-endpoint-security) for more information.
 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+**Underlying Microsoft Technologies used:**
 
-  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
 
-   b. [Microsoft Sentinel Codeless Connector Platform](https://aka.ms/Sentinel-CCP_Platform)
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Microsoft Sentinel Codeless Connector Platform](https://aka.ms/Sentinel-CCP_Platform)
 
 <p><span style='color:red; font-weight:bold;'>NOTE</span>: Microsoft recommends installation of "LookoutStreaming_Definition" (via Codeless Connector Framework). This connector is build on the Codeless Connector Framework (CCF), which uses the Log Ingestion API, which replaces ingestion via the <a href='https://aka.ms/Sentinel-Logs_migration' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>. CCF-based data connectors also support <a href='https://aka.ms/Sentinel-DCR_Overview' style='color:#1890F1;'>Data Collection Rules</a> (DCRs) offering transformations and enrichment.</p>
 
-<p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data..</p>
+<p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data.</p>
 
 ## Solution Information
 
@@ -33,7 +33,7 @@ The [Lookout](https://lookout.com) solution provides the capability to ingest [L
 | **Version** | 3.0.1 |
 | **Author** | Lookout |
 | **First Published** | 2021-10-18 |
-| **Last Updated** | 2025-11-07 |
+| **Last Updated** | 2025-12-18 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
 
 ## Data Connectors
@@ -166,7 +166,7 @@ Solutions/Lookout/
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
-| 3.0.1       | 12-11-2025                     | **Parser** updates have been implemented, along with the development of comprehensive and executive dashboards. Additionally, **Analytic Rules** have been updated to include MITRE mappings. |
+| 3.0.1       | 18-12-2025                     | **Parser** v3.1.0 with support for Streaming/Polling/REST API field structures. Enhanced workbooks and dashboards. **Analytic Rules** updated with MITRE ATT&CK mobile tactics. Added **Jupyter Notebooks** for threat hunting: Mobile Malware, Smishing, Device Compliance, and Audit/Insider Threat analysis. |
 | 3.0.0       | 07-11-2025                     | New **CCF Connector** added to Solution - *Lookout Mobile Threat Detection Connector*.    |
 
 ---

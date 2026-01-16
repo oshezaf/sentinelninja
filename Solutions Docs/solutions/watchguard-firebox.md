@@ -34,6 +34,14 @@ This solution provides **1 data connector(s)**:
 
 - [[Deprecated] WatchGuard Firebox](../connectors/watchguardfirebox.md)
 
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] WatchGuard Firebox](../connectors/watchguardfirebox.md) | - |
+
 ## Content Items
 
 This solution includes **1 content item(s)**:

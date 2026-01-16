@@ -1,6 +1,6 @@
 # NC Protect
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/archTIS/Data%20Connectors/Logo/NCProtectLogo.svg" alt="" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NCProtectLogo.svg" alt="" width="75" height="75">
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
@@ -14,7 +14,7 @@
 | **Publisher** | archTIS |
 | **Used in Solutions** | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
 | **Collection Method** | Unknown (Custom Log) |
-| **Connector Definition Files** | [NucleusCyberNCProtect.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/archTIS/Data%20Connectors/NucleusCyberNCProtect.json) |
+| **Connector Definition Files** | [NucleusCyberNCProtect.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector/Data%20Connectors/NucleusCyberNCProtect.json) |
 
 [NC Protect Data Connector (archtis.com)](https://info.archtis.com/get-started-with-nc-protect-sentinel-data-connector) provides the capability to ingest user activity logs and events into Microsoft Sentinel. The connector provides visibility into NC Protect user activity logs and events in Microsoft Sentinel to improve monitoring and investigation capabilities
 

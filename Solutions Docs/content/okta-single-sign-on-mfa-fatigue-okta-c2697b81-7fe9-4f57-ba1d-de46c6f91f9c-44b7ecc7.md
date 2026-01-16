@@ -6,7 +6,7 @@
 
 ---
 
-MFA fatigue attack is a cybersecurity threat where attackers exploit user exhaustion from multi-factor authentication prompts to trick them into providing their MFA details thus compromising their own security. The query identifies MFA fatigue attempts in the Okta data.   Ref: https://sec.okta.com/everythingisyes.
+MFA fatigue attack is a cybersecurity threat where attackers exploit user exhaustion from multi-factor authentication prompts to trick them into providing their MFA details thus compromising their own security. The query identifies MFA fatigue attempts in the Okta data.   Ref: https://www.okta.com/blog/identity-security/mfa-fatigue-growing-security-concern/.
 
 | Attribute | Value |
 |:----------|:------|

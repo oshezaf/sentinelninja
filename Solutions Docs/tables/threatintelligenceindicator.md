@@ -16,7 +16,7 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator) |
 
-## Solutions (28)
+## Solutions (27)
 
 This table is used by the following solutions:
 
@@ -24,7 +24,6 @@ This table is used by the following solutions:
 - [CofenseTriage](../solutions/cofensetriage.md)
 - [CognyteLuminar](../solutions/cognyteluminar.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
-- [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Datalake2Sentinel](../solutions/datalake2sentinel.md)
 - [Forcepoint NGFW](../solutions/forcepoint-ngfw.md)
 - [GitLab](../solutions/gitlab.md)
@@ -49,14 +48,13 @@ This table is used by the following solutions:
 - [Web Session Essentials](../solutions/web-session-essentials.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
-## Connectors (14)
+## Connectors (13)
 
 This table is ingested by the following connectors:
 
 - [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md)
 - [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md)
 - [Luminar IOCs and Leaked Credentials](../connectors/cognyteluminar.md)
-- [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md)
 - [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md)
 - [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md)
 - [MISP2Sentinel](../connectors/misp2sentinelconnector.md)

@@ -13,8 +13,8 @@
 | Title | Parser for LookoutEvents |
 | Location | Solution |
 | Solution | [Lookout](../solutions/lookout.md) |
-| Version | 3.0.0 |
-| Last Updated | 2025-11-07 |
+| Version | 3.1.0 |
+| Last Updated | 2025-12-18 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Parsers/LookoutEvents.yaml) |

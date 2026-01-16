@@ -17,7 +17,7 @@ This query detects potential attempts by non-computer accounts (non domain contr
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | CredentialAccess |
-| **Techniques** | T1003 |
+| **Techniques** | T1003.006 |
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events/Analytic%20Rules/NonDCActiveDirectoryReplication.yaml) |
 

@@ -6,7 +6,7 @@
 
 ---
 
-'Identifies beaconing patterns from Palo Alto Network traffic logs based on recurrent timedelta patterns. The query leverages various KQL functions to calculate time deltas and then compares it with total events observed in a day to find percentage of beaconing. This outbound beaconing pattern to untrusted public networks should be investigated for any malware callbacks or data exfiltration attempts. Reference Blog: http://www.austintaylor.io/detect/beaconing/intrusion/detection/system/command/c
+'Identifies beaconing patterns from Palo Alto Network traffic logs based on recurrent timedelta patterns. The query leverages various KQL functions to calculate time deltas and then compares it with total events observed in a day to find percentage of beaconing. This outbound beaconing pattern to untrusted public networks should be investigated for any malware callbacks or data exfiltration attempts. Reference Blog: https://medium.com/@HuntOperator/detect-beaconing-with-flare-elastic-stack-and-i
 
 | Attribute | Value |
 |:----------|:------|

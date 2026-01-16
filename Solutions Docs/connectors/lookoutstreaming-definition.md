@@ -16,7 +16,7 @@
 | **Collection Method** | CCF |
 | **Connector Definition Files** | [LookoutStreaming_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_DataConnectorDefinition.json) |
 
-The [Lookout Mobile Threat Detection](https://lookout.com) data connector provides the capability to ingest events related to mobile security risks into Microsoft Sentinel through the Mobile Risk API. Refer to [API documentation](https://enterprise.support.lookout.com/hc/en-us/articles/115002741773-Mobile-Risk-API-Guide) for more information. This connector helps you examine potential security risks detected in mobile devices.
+The [Lookout Mobile Threat Detection](https://lookout.com) data connector provides the capability to ingest events related to mobile security risks into Microsoft Sentinel through the Mobile Risk API. Refer to [API documentation](https://esupport.lookout.com/s/article/Mobile-Risk-API-V2-Guide) for more information. This connector helps you examine potential security risks detected in mobile devices.
 
 ## Tables Ingested
 
@@ -37,7 +37,7 @@ This connector ingests data into the following tables:
 
 **1. Connect Lookout Mobile Threat Defence connector to Microsoft Sentinel**
 Before connecting to Lookout, ensure the following prerequisites are completed.
-#### 1.  **ApiKey** is required for Mobile Threat Detection API. See the [documentation](https://enterprise.support.lookout.com/hc/en-us/articles/115002741773-Mobile-Risk-API-Guide) to learn more about API. Check all requirements and follow  the [instructions](https://enterprise.support.lookout.com/hc/en-us/articles/115002741773-Mobile-Risk-API-Guide#authenticatingwiththemobileriskapi) for obtaining credentials.
+#### 1.  **ApiKey** is required for Mobile Threat Detection API. See the [documentation](https://esupport.lookout.com/s/article/Mobile-Risk-API-V2-Guide) to learn more about API. Check all requirements and follow  the [instructions](https://esupport.lookout.com/s/article/Mobile-Risk-API-V2-Guide#authenticatingwiththemobileriskapi) for obtaining credentials.
 - **API key**: (password field)
 - Click 'Connect' to establish connection
 

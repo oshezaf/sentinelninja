@@ -43,7 +43,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] FireEye Network Security (NX) via AMA](../connectors/fireeyenxama.md) | - |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] FireEye Network Security (NX) via AMA](../connectors/fireeyenxama.md), [[Deprecated] FireEye Network Security (NX) via Legacy Agent](../connectors/fireeyenx.md) | - |
 
 ## Content Items
 

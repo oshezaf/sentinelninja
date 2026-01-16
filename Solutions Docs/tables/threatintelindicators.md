@@ -16,12 +16,13 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
 
-## Solutions (12)
+## Solutions (13)
 
 This table is used by the following solutions:
 
 - [CiscoMeraki](../solutions/ciscomeraki.md)
 - [CofenseTriage](../solutions/cofensetriage.md)
+- [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
@@ -33,10 +34,11 @@ This table is used by the following solutions:
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
 
-## Connectors (6)
+## Connectors (7)
 
 This table is ingested by the following connectors:
 
+- [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md)
 - [Lumen Defender Threat Feed Data Connector](../connectors/lumenthreatfeedconnector.md)
 - [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md)
 - [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md)

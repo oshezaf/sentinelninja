@@ -42,7 +42,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | - | Analytics, Hunting, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Oracle Database Audit](../connectors/oracledatabaseaudit.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 

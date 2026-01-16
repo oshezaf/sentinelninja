@@ -6,7 +6,7 @@
 
 ---
 
-This Logic App updates Cyble alert status and severity based on Sentinel incident changes. It supports automatic updates via automation rules and interprets user-applied tags to determine the correct status mapping.
+This Logic App updates Cyble alert status and severity based on Microsoft Sentinel incident changes. It supports automatic updates via automation rules and interprets user-applied tags to determine the correct status mapping.
 
 | Attribute | Value |
 |:----------|:------|

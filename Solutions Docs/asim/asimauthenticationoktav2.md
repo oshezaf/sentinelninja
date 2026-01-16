@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Okta |
-| **Parser Version** | 0.3.1 |
-| **Last Updated** | May 20, 2024 |
+| **Parser Version** | 0.4.0 |
+| **Last Updated** | Jan 08, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationOktaV2.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationOktaV2.yaml) |
 

@@ -12,10 +12,11 @@ This table is used by the following solutions:
 
 - [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
+- [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md)
 - [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md)
 
 ---

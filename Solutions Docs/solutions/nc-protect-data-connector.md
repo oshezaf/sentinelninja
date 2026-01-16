@@ -1,6 +1,6 @@
 # NC Protect Data Connector
 
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/archTIS/Data%20Connectors/Logo/NCProtectLogo.svg" alt="NC Protect Data Connector Logo" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NCProtectLogo.svg" alt="NC Protect Data Connector Logo" width="75" height="75">
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
@@ -18,10 +18,10 @@ The [NC Protect Data Connector (archtis.com)](https://info.archtis.com/get-start
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.archtis.com/nc-protect-support/](https://www.archtis.com/nc-protect-support/) |
 | **Categories** | domains |
-| **Version** | 2.0.1 |
+| **Version** | 3.0.0 |
 | **Author** | archTIS |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/archTIS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/archTIS) |
+| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector) |
 
 ## Data Connectors
 

@@ -6,17 +6,19 @@
 
 ---
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [Egress Defend](../solutions/egress-defend.md)
+- [Egress Iris](../solutions/egress-iris.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 - [Egress Defend](../connectors/egressdefendpolling.md)
+- [Egress Iris Connector](../connectors/egresssiempolling.md)
 
 ---
 

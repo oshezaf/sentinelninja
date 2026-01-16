@@ -42,7 +42,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] ESET PROTECT](../connectors/esetprotect.md) | Analytics, Workbooks |
 
 ## Content Items
 

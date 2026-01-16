@@ -38,11 +38,12 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
+| [`ASimSourceType`](../tables/asimsourcetype.md) | [[Deprecated] Pulse Connect Secure](../connectors/pulseconnectsecure.md) | Analytics, Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Pulse Connect Secure](../connectors/pulseconnectsecure.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -58,20 +59,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/pulse-connect-secure-pulseconnectsecure-large-number-of-distinct-failed-user-logins-1fa1528e-f746-4794-8a41-14827f4cb798-146dc800.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
-| [PulseConnectSecure - Potential Brute Force Attempts](../content/pulse-connect-secure-pulseconnectsecure-potential-brute-force-attempts-34663177-8abf-4db1-b0a4-5683ab273f44-3cb9ad66.md) | Low | CredentialAccess | [`Syslog`](../tables/syslog.md) |
+| [PulseConnectSecure - Large Number of Distinct Failed User Logins](../content/pulse-connect-secure-pulseconnectsecure-large-number-of-distinct-failed-user-logins-1fa1528e-f746-4794-8a41-14827f4cb798-146dc800.md) | Medium | CredentialAccess | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
+| [PulseConnectSecure - Potential Brute Force Attempts](../content/pulse-connect-secure-pulseconnectsecure-potential-brute-force-attempts-34663177-8abf-4db1-b0a4-5683ab273f44-3cb9ad66.md) | Low | CredentialAccess | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-56477077.md) | [`Syslog`](../tables/syslog.md) |
+| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-56477077.md) | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-7a608d43-10b5-4113-8d74-6478f05f2595-233f88ba.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-7a608d43-10b5-4113-8d74-6478f05f2595-233f88ba.md) | - | [`ASimSourceType`](../tables/asimsourcetype.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

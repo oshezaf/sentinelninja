@@ -6,7 +6,7 @@
 
 ---
 
-'Amazon Relational Database Service (RDS) is scalable relational database in the cloud. If your organization have one or more AWS RDS Databases running, monitoring changes to especially internet facing AWS RDS (Relational Database Service) Once alerts triggered, validate if changes observed are authorized and adhere to change control policy. More information: https://medium.com/@GorillaStack/the-most-important-aws-cloudtrail-security-events-to-track-a5b9873f8255  and RDS API Reference Docs: http
+Amazon Relational Database Service (RDS) is scalable relational database in the cloud. If your organization have one or more AWS RDS Databases running, monitoring changes to especially internet facing AWS RDS (Relational Database Service) Once alerts triggered, validate if changes observed are authorized and adhere to change control policy. RDS API Reference Docs: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Operations.html
 
 | Attribute | Value |
 |:----------|:------|

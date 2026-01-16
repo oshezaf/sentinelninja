@@ -26,6 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
+| [`BigIDDSPMAssetStore_CL`](../tables/bigiddspmassetstore-cl.md) | — | — |
 | [`BigIDDSPMCatalog_CL`](../tables/bigiddspmcatalog-cl.md) | — | — |
 
 ## Permissions

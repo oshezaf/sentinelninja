@@ -36,6 +36,15 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
+## Tables Used
+
+This solution uses **2 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ASimSourceType`](../tables/asimsourcetype.md) | [[Deprecated] Juniper SRX](../connectors/junipersrx.md) | - |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Juniper SRX](../connectors/junipersrx.md) | - |
+
 ## Content Items
 
 This solution includes **1 content item(s)**:

@@ -52,6 +52,12 @@ This connector ingests data into the following tables:
  8) In Sentinel, in the connector page - provide required Token, Authorization and User Activity Logs Endpoints, along with Client ID and Client Secret from previous step. Then click "Connect". 
  9) A Workday pop up will appear to complete the OAuth2 authentication and authorization of the API client. Here you need to provide credentials for Workday account with "System Auditing" permissions in Workday (can be either Workday account or Integration System User). 
  10) Once that's complete, the message will be displayed to authorize your API client
+- **Query interval (in minutes)** (select)
+  - 5
+  - 10
+  - 15
+  - 20
+  - 30
 - **Token Endpoint**: https://wd2-impl-services1.workday.com/ccx/oauth2/{tenantName}/token
 - **Authorization Endpoint**: https://impl.workday.com/{tenantName}/authorize
 - **User Activity Logs Endpoint, it ends with /activityLogging **: https://wd2-impl-services1.workday.com/ccx/api/privacy/v1/{tenantName}/activityLogging

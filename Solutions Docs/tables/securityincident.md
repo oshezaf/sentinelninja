@@ -56,7 +56,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (41)
+## Content Items Using This Table (40)
 
 ### Analytic Rules (2)
 
@@ -64,7 +64,7 @@ This table is ingested by the following connectors:
 - [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md)
 - [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db-6bbae8c7.md)
 
-### Workbooks (37)
+### Workbooks (36)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)
@@ -140,7 +140,6 @@ This table is ingested by the following connectors:
 - [SOCProcessFramework](../content/soc-process-framework-socprocessframework-5c770df0.md)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
-- [IncidentOverview](../content/sentinelsoaressentials-incidentoverview-c5ea1b65.md)
 - [IncidentTasksWorkbook](../content/sentinelsoaressentials-incidenttasksworkbook-37a89581.md)
 - [SecurityOperationsEfficiency](../content/sentinelsoaressentials-securityoperationsefficiency-4e91f3d3.md)
 

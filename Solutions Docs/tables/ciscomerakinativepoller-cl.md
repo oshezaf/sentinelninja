@@ -12,10 +12,11 @@ This table is used by the following solutions:
 
 - [CiscoMeraki](../solutions/ciscomeraki.md)
 
-## Connectors (2)
+## Connectors (3)
 
 This table is ingested by the following connectors:
 
+- [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md)
 - [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md)
 - [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md)
 

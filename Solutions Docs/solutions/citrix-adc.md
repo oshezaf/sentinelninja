@@ -36,6 +36,15 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
+## Tables Used
+
+This solution uses **2 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ASimSourceType`](../tables/asimsourcetype.md) | [[Deprecated] Citrix ADC (former NetScaler)](../connectors/citrixadc.md) | - |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Citrix ADC (former NetScaler)](../connectors/citrixadc.md) | - |
+
 ## Content Items
 
 This solution includes **2 content item(s)**:
@@ -48,7 +57,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CitrixADCEvent](../content/citrix-adc-citrixadcevent-42894dea-1da9-4e98-b934-3fd97924dc8a-5a0d149b.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [CitrixADCEvent](../content/citrix-adc-citrixadcevent-42894dea-1da9-4e98-b934-3fd97924dc8a-5a0d149b.md) | - | [`ASimSourceType`](../tables/asimsourcetype.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)* |
 | [CitrixADCEventOld](../content/citrix-adc-citrixadceventold-1c9a0c69-efc6-4fe6-ac53-baf6fe77b833-1e7dac89.md) ⚠️ | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.

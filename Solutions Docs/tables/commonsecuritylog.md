@@ -28,7 +28,7 @@ Reference for CommonSecurityLog table in Azure Monitor Logs.
 - 📚 **Vendor CEF Guide:** [Citrix/NetScaler WAF](https://docs.netscaler.com/en-us/citrix-adc/current-release/application-firewall/logs.html) - Application Firewall logs
 - 📚 **Vendor CEF Guide:** [Symantec Endpoint Protection](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Monitoring-Reporting-and-Enforcing-Compliance/viewing-logs-v7522439-d37e464/about-the-types-of-logs-v8156418-d37e6.html) - Log types reference
 
-## Solutions (80)
+## Solutions (81)
 
 This table is used by the following solutions:
 
@@ -54,7 +54,6 @@ This table is used by the following solutions:
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [CyberArk Privilege Access Manager (PAM) Events](../solutions/cyberark-privilege-access-manager-pam-events.md)
 - [Cyware](../solutions/cyware.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Delinea Secret Server](../solutions/delinea-secret-server.md)
 - [Endace](../solutions/endace.md)
 - [ExtraHop Reveal(x)](../solutions/extrahop-reveal-x.md)
@@ -98,10 +97,12 @@ This table is used by the following solutions:
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
 - [Silverfort](../solutions/silverfort.md)
 - [SonicWall Firewall](../solutions/sonicwall-firewall.md)
+- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Trend Micro Apex One](../solutions/trend-micro-apex-one.md)
 - [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md)
+- [Trend Micro TippingPoint](../solutions/trend-micro-tippingpoint.md)
 - [Vectra AI Detect](../solutions/vectra-ai-detect.md)
 - [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)
 - [Votiro](../solutions/votiro.md)
@@ -113,7 +114,7 @@ This table is used by the following solutions:
 - [iboss](../solutions/iboss.md)
 - [vArmour Application Controller](../solutions/varmour-application-controller.md)
 
-## Connectors (88)
+## Connectors (100)
 
 This table is ingested by the following connectors:
 
@@ -133,9 +134,11 @@ This table is ingested by the following connectors:
 - [Cisco ASA/FTD via AMA](../connectors/ciscoasaama.md)
 - [[Deprecated] Cisco Firepower eStreamer via Legacy Agent](../connectors/ciscofirepowerestreamer.md)
 - [[Deprecated] Cisco Firepower eStreamer via AMA](../connectors/ciscofirepowerestreamerama.md)
+- [[Deprecated] Cisco Secure Email Gateway via Legacy Agent](../connectors/ciscoseg.md)
 - [[Deprecated] Cisco Secure Email Gateway via AMA](../connectors/ciscosegama.md)
 - [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](../connectors/citrixwaf.md)
 - [[Deprecated] Citrix WAF (Web App Firewall) via AMA](../connectors/citrixwafama.md)
+- [[Deprecated] Claroty via Legacy Agent](../connectors/claroty.md)
 - [[Deprecated] Claroty via AMA](../connectors/clarotyama.md)
 - [Claroty xDome](../connectors/clarotyxdome.md)
 - [[Deprecated] Contrast Protect via Legacy Agent](../connectors/contrastprotect.md)
@@ -152,6 +155,7 @@ This table is ingested by the following connectors:
 - [[Deprecated] ExtraHop Reveal(x) via AMA](../connectors/extrahopnetworksama.md)
 - [[Deprecated] F5 Networks via Legacy Agent](../connectors/f5.md)
 - [[Deprecated] F5 Networks via AMA](../connectors/f5ama.md)
+- [[Deprecated] FireEye Network Security (NX) via Legacy Agent](../connectors/fireeyenx.md)
 - [[Deprecated] FireEye Network Security (NX) via AMA](../connectors/fireeyenxama.md)
 - [[Deprecated] Forcepoint CSG via Legacy Agent](../connectors/forcepointcsg.md)
 - [[Deprecated] Forcepoint CSG via AMA](../connectors/forcepointcsgama.md)
@@ -164,6 +168,7 @@ This table is ingested by the following connectors:
 - [[Deprecated] Fortinet via AMA](../connectors/fortinetama.md)
 - [[Deprecated] Fortinet FortiWeb Web Application Firewall via Legacy Agent](../connectors/fortinetfortiweb.md)
 - [Fortinet FortiWeb Web Application Firewall via AMA](../connectors/fortinetfortiwebama.md)
+- [[Deprecated] Illumio Core via Legacy Agent](../connectors/illumiocore.md)
 - [[Deprecated] Illumio Core via AMA](../connectors/illumiocoreama.md)
 - [Imperva WAF Gateway](../connectors/impervawafgateway.md)
 - [[Deprecated] Infoblox Cloud Data Connector via Legacy Agent](../connectors/infobloxclouddataconnector.md)
@@ -173,15 +178,20 @@ This table is ingested by the following connectors:
 - [[Recommended] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md)
 - [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md)
 - [IronNet IronDefense](../connectors/ironnetirondefense.md)
+- [[Deprecated] Netwrix Auditor via Legacy Agent](../connectors/netwrix.md)
 - [[Deprecated] Netwrix Auditor via AMA](../connectors/netwrixama.md)
+- [[Deprecated] Nozomi Networks N2OS via Legacy Agent](../connectors/nozominetworksn2os.md)
 - [[Deprecated] Nozomi Networks N2OS via AMA](../connectors/nozominetworksn2osama.md)
+- [[Deprecated] OSSEC via Legacy Agent](../connectors/ossec.md)
 - [[Deprecated] OSSEC via AMA](../connectors/ossecama.md)
 - [[Deprecated] Onapsis Platform](../connectors/onapsisplatform.md)
 - [One Identity Safeguard](../connectors/oneidentity.md)
+- [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via Legacy Agent](../connectors/paloaltocdl.md)
 - [[Deprecated] Palo Alto Networks Cortex Data Lake (CDL) via AMA](../connectors/paloaltocdlama.md)
 - [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md)
 - [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md)
 - [Palo Alto Networks Cortex XDR](../connectors/paloaltonetworkscortex.md)
+- [[Deprecated] PingFederate via Legacy Agent](../connectors/pingfederate.md)
 - [[Deprecated] PingFederate via AMA](../connectors/pingfederateama.md)
 - [Radiflow iSID via AMA](../connectors/radiflowisid.md)
 - [[Deprecated] RIDGEBOT - data connector for Microsoft Sentinel](../connectors/ridgebotdataconnector.md)
@@ -189,7 +199,10 @@ This table is ingested by the following connectors:
 - [[Deprecated] SonicWall Firewall via Legacy Agent](../connectors/sonicwallfirewall.md)
 - [[Deprecated] SonicWall Firewall via AMA](../connectors/sonicwallfirewallama.md)
 - [Threat Intelligence Platforms](../connectors/threatintelligence.md)
+- [[Deprecated] Trend Micro Deep Security via Legacy](../connectors/trendmicro.md)
+- [[Deprecated] Trend Micro Apex One via Legacy Agent](../connectors/trendmicroapexone.md)
 - [[Deprecated] Trend Micro Apex One via AMA](../connectors/trendmicroapexoneama.md)
+- [[Deprecated] Trend Micro TippingPoint via Legacy](../connectors/trendmicrotippingpoint.md)
 - [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md)
 - [VirtualMetric DataStream for Microsoft Sentinel](../connectors/virtualmetricmssentinelconnector.md)
 - [VirtualMetric DataStream for Microsoft Sentinel data lake](../connectors/virtualmetricmssentineldatalakeconnector.md)
@@ -270,9 +283,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 ---
 
-## Content Items Using This Table (269)
+## Content Items Using This Table (267)
 
-### Analytic Rules (132)
+### Analytic Rules (131)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 - [Acronis - Login from Abnormal IP - Low Occurrence](../content/acronis-cyber-protect-cloud-acronis-login-from-abnormal-ip-low-occurrence-84037130-a623-46c2-9144-0c0955ac4112-5d101d22.md)
@@ -422,7 +435,6 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Silverfort - UserBruteForce Incident](../content/silverfort-silverfort-userbruteforce-incident-46ff357b-9e98-465b-9e45-cd52fa4a7522-aec505ad.md)
 
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-- [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md)
 - [SonicWall - Capture ATP Malicious File Detection](../content/sonicwall-firewall-sonicwall-capture-atp-malicious-file-detection-3db9f99e-a459-41e0-8e02-8b332f5fcb2c-219e6d5b.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
@@ -476,7 +488,7 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [vArmour Application Controller](../solutions/varmour-application-controller.md):**
 - [vArmour AppController - SMB Realm Traversal](../content/varmour-application-controller-varmour-appcontroller-smb-realm-traversal-a36de6c3-3198-4d37-92ae-e19e36712c2e-f56ac1bb.md)
 
-### Hunting Queries (75)
+### Hunting Queries (74)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 - [Acronis - ASZ defence: Unauthorized operation is detected and blocked](../content/acronis-cyber-protect-cloud-acronis-asz-defence-unauthorized-operation-is-detected-and-blocked-39310cb8-53bc-47c1-86c4-2ff9f0d3cc5f-bcc0c583.md)
@@ -568,9 +580,6 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Ping Federate - Top source IP addresses](../content/pingfederate-ping-federate-top-source-ip-addresses-ce92624d-ae52-4b8e-ba36-3e5bdb6a793a-39d9e3c4.md)
 - [Ping Federate - Users recently reseted password](../content/pingfederate-ping-federate-users-recently-reseted-password-6698f022-adf4-48a3-a8da-a4052ac999b4-d90c92a1.md)
 
-**In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-- [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md)
-
 **In solution [Trend Micro Apex One](../solutions/trend-micro-apex-one.md):**
 - [ApexOne - Behavior monitoring actions by files](../content/trend-micro-apex-one-apexone-behavior-monitoring-actions-by-files-96451e96-67b5-11ec-90d6-0242ac120003-87c1a703.md)
 - [ApexOne - Behavior monitoring event types by users](../content/trend-micro-apex-one-apexone-behavior-monitoring-event-types-by-users-433ccdb0-67b6-11ec-90d6-0242ac120003-589eed1f.md)
@@ -623,9 +632,6 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 **In solution [CyberArk Privilege Access Manager (PAM) Events](../solutions/cyberark-privilege-access-manager-pam-events.md):**
 - [CyberArkEPV](../content/cyberark-privilege-access-manager-pam-events-cyberarkepv-316d29f3.md)
-
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
 
 **In solution [Delinea Secret Server](../solutions/delinea-secret-server.md):**
 - [DelineaWorkbook](../content/delinea-secret-server-delineaworkbook-819c816c.md)
@@ -711,6 +717,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
 - [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md)
 
+**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
+- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
 **In solution [Trend Micro Apex One](../solutions/trend-micro-apex-one.md):**
 - [TrendMicroApexOne](../content/trend-micro-apex-one-trendmicroapexone-36972fb3.md)
 
@@ -751,9 +760,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Parsers Using This Table (63)
+## Parsers Using This Table (62)
 
-### ASIM Parsers (28)
+### ASIM Parsers (27)
 
 | Parser | Schema | Product |
 |:-------|:-------|:--------|
@@ -770,7 +779,6 @@ This table collects data from the following Azure resource types:
 | [ASimNetworkSessionCheckPointFirewall](../asim/asimnetworksessioncheckpointfirewall.md) | NetworkSession |  |
 | [ASimNetworkSessionCiscoASA](../asim/asimnetworksessionciscoasa.md) | NetworkSession |  |
 | [ASimNetworkSessionCiscoFirepower](../asim/asimnetworksessionciscofirepower.md) | NetworkSession |  |
-| [ASimNetworkSessionForcePointFirewall](../asim/asimnetworksessionforcepointfirewall.md) | NetworkSession |  |
 | [ASimNetworkSessionFortinetFortiGate](../asim/asimnetworksessionfortinetfortigate.md) | NetworkSession |  |
 | [ASimNetworkSessionPaloAltoCEF](../asim/asimnetworksessionpaloaltocef.md) | NetworkSession |  |
 | [ASimNetworkSessionPaloAltoCortexDataLake](../asim/asimnetworksessionpaloaltocortexdatalake.md) | NetworkSession |  |

@@ -34,7 +34,7 @@ The [SentinelOne](https://www.sentinelone.com/) solution provides ability to bri
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-11-26 |
 | **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne) |
@@ -52,11 +52,11 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [SentinelOne](../connectors/sentinelone.md), [SentinelOne](../connectors/sentineloneccp.md) | Analytics, Hunting, Workbooks |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
 
 ### Internal Tables
@@ -65,7 +65,7 @@ The following **1 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AlertInfo`](../tables/alertinfo.md) | - | Analytics, Hunting, Workbooks |
+| [`AlertInfo`](../tables/alertinfo.md) | [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -125,6 +125,7 @@ This solution includes **23 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.7       | 09-01-2026                     | Updated broken URL and bumped the SentinelOne solution version |
 | 3.0.6       | 10-02-2025                     | Advancing CCP **Data Connector** from Public preview to Global Availability.|
 | 3.0.5       | 20-01-2025                     | Updated "Sentinel One - Agent uninstalled from multiple hosts" **Analytic Rule** with  ActivityType  |
 | 3.0.4       | 15-01-2025                     | Added older Function app **Data Connector** again to SOlution until final deprecation of Function app happens  |

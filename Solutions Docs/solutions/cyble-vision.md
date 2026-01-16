@@ -111,7 +111,7 @@ This solution includes **93 content item(s)**:
 |:-----|:------------|:------------|
 | [Cyble-IOC_Enrichment-Playbook](../content/cyble-vision-cyble-ioc-enrichment-playbook-351608f8.md) | This playbook leverages the Cyble API to enrich IP, Domain, Url & Hash indicators, found in Microsof... | - |
 | [Cyble-ThreatIntelligence-Ingest-Playbook](../content/cyble-vision-cyble-threatintelligence-ingest-playbook-63c46da3.md) | This playbook imports IoC lists from Cyble and stores them as Threat Intelligence Indicators in Micr... | - |
-| [CybleVisionAlert_Status_Update](../content/cyble-vision-cyblevisionalert-status-update-6da41a7a.md) | This Logic App updates Cyble alert status and severity based on Sentinel incident changes. It suppor... | - |
+| [CybleVisionAlert_Status_Update](../content/cyble-vision-cyblevisionalert-status-update-6da41a7a.md) | This Logic App updates Cyble alert status and severity based on Microsoft Sentinel incident changes.... | - |
 
 ### Parsers
 
@@ -169,6 +169,7 @@ This solution includes **93 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
 |-------------|--------------------------------|--------------------------------------------------------|
+| 3.0.3       | 12-01-2026                     | Updated API endpoint for **CCF Data Connector**.<br/> Minor descriptive changes to **Analytic Rule** and **Playbook**.Updated **Playbook** API Body. |
 | 3.0.2       | 14-12-2025                     | Added new **CCF data connector**.<br/> Added new **Parsers** to Parse data message of each service.<br/> Added **Analytic Rules** to generate incidents based on Services.                      |
 | 3.0.1       | 10-06-2025                     | *Cyble-ThreatIntelligence-Ingest* **Playbook**, including fixes for de-duplication of IoCs, optimized KQL query load, and pagination support. |
 | 3.0.0       | 20-05-2025                     | Initial Solution Release.                              |

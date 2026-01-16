@@ -28,7 +28,10 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
+| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | — | — |
 | [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | — | — |
+| [`USAGE`](../tables/usage.md) | — | — |
+| [`alert`](../tables/alert.md) | — | — |
 
 ## Permissions
 

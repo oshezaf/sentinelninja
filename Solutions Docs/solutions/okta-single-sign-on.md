@@ -56,7 +56,7 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`OktaNativePoller_CL`](../tables/oktanativepoller-cl.md) | [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) | - |
 | [`OktaV2_CL`](../tables/oktav2-cl.md) | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon(usingazurefunctions).md) | Analytics, Hunting, Workbooks |
-| [`Okta_CL`](../tables/okta-cl.md) | [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On (Preview)](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon(usingazurefunctions).md) | Analytics, Hunting, Workbooks |
+| [`Okta_CL`](../tables/okta-cl.md) | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon(usingazurefunctions).md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
@@ -123,6 +123,8 @@ This solution includes **24 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                            |
 |-------------|--------------------------------|---------------------------------------------------------------|
+| 3.1.4       | 13-01-2026                     | Updated non-functional link from MFA Fatigue (OKTA) **Analytic rule** |
+| 3.1.3       | 05-02-2025                     | Version Update |
 | 3.1.2       | 06-01-2025                     | Removing Custom Entity mappings from **Analytic Rule**                         |
 | 3.1.1       | 08-11-2024                     | Fixed CCP **Data Connector** connection bug                          |
 | 3.1.0       | 27-11-2024                     | Fixed Solution version in Maintemplate and resolved ARM template error                           |

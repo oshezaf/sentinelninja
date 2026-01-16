@@ -24,6 +24,12 @@ This table is used by the following solutions:
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [SentinelOne](../solutions/sentinelone.md)
 
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [SentinelOne](../connectors/sentinelone.md)
+
 ---
 
 ## Content Items Using This Table (29)

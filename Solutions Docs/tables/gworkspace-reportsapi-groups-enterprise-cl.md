@@ -13,6 +13,12 @@ This table is used by the following solutions:
 - [GoogleWorkspaceReports](../solutions/googleworkspacereports.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md)
+
 ---
 
 ## Content Items Using This Table (26)

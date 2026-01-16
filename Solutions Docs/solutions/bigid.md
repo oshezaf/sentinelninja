@@ -33,17 +33,18 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`BigIDDSPMAssetStore_CL`](../tables/bigiddspmassetstore-cl.md) | [BigID DSPM connector](../connectors/bigiddspmlogsconnectordefinition.md) | - |
 | [`BigIDDSPMCatalog_CL`](../tables/bigiddspmcatalog-cl.md) | [BigID DSPM connector](../connectors/bigiddspmlogsconnectordefinition.md) | - |
 
 ## Release Notes
 
 **Version** | **Date Modified (DD-MM-YYYY)**| **ChangeHistory**                                                                         |
 |------------|-------------------------------|-------------------------------------------------------------------------------------------|
-| 3.0.0      | 15-10-2025    | First version of a BigID DSPM CCF Connector. <br/> BigID DSPM CCF Connector now using JWT user token authentication |
+| 3.0.0      | 13-01-2026    | First version of a BigID DSPM CCF Connector. <br/> BigID DSPM CCF Connector now using JWT user token authentication <br/> BigID DSPM Asset expansion and mapping|
 
 ---
 

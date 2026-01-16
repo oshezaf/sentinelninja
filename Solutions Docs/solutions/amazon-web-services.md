@@ -33,7 +33,7 @@ This solution provides **3 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **5 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -42,6 +42,7 @@ This solution uses **5 table(s)**:
 | [`AWSGuardDuty`](../tables/awsguardduty.md) | [Amazon Web Services S3](../connectors/awss3.md) | Analytics |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | [Amazon Web Services S3](../connectors/awss3.md) | - |
 | [`AWSWAF`](../tables/awswaf.md) | [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) | - |
+| [`Image`](../tables/image.md) | - | Workbooks |
 
 ## Content Items
 
@@ -165,13 +166,14 @@ This solution includes **100 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
+| [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`Image`](../tables/image.md) |
 | [AmazonWebServicesUserActivities](../content/amazon-web-services-amazonwebservicesuseractivities-9c51ee6e.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.8       | 13-01-2026                  | Updated non-functional links from **Analytic rules** and **Hunting query** |
 | 3.0.7       | 28-07-2025                     | Fix ChangeToVPC **Analytic Rule** to ensure it excludes changes to API Gateway |
 | 3.0.6       | 13-06-2025                     | Updated Amazon Web Services S3 Data connector to include details for the default output format. |
 | 3.0.5       | 10-02-2025                     | Repackaged to fix ccp grid showing only 1 record and rename of file   |

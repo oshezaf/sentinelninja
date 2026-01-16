@@ -1,4 +1,4 @@
-# Event
+# EVENT
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
 
@@ -6,318 +6,31 @@
 
 ---
 
-Reference for Event table in Azure Monitor Logs.
-
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Windows |
-| **Basic Logs Eligible** | ✗ No |
-| **Supports Transformations** | ✓ Yes |
-| **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event) |
 
-## Solutions (24)
+## Solutions (1)
 
 This table is used by the following solutions:
 
-- [ALC-WebCTRL](../solutions/alc-webctrl.md)
-- [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
-- [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md)
-- [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md)
-- [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
-- [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
-- [DORA Compliance](../solutions/dora-compliance.md)
-- [Dataminr Pulse](../solutions/dataminr-pulse.md)
-- [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
-- [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
-- [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
-- [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
-- [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md)
-- [Mimecast](../solutions/mimecast.md)
-- [MimecastTIRegional](../solutions/mimecasttiregional.md)
-- [NISTSP80053](../solutions/nistsp80053.md)
-- [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
-- [Vectra XDR](../solutions/vectra-xdr.md)
-- [Veeam](../solutions/veeam.md)
-- [Windows Forwarded Events](../solutions/windows-forwarded-events.md)
-- [Windows Security Events](../solutions/windows-security-events.md)
-- [Zinc Open Source](../solutions/zinc-open-source.md)
+- [Cisco UCS](../solutions/cisco-ucs.md)
 
-## Connectors (5)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
-- [Automated Logic WebCTRL ](../connectors/automatedlogicwebctrl.md)
-- [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md)
-- [Microsoft Exchange Admin Audit Logs by Event Logs](../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md)
-- [Microsoft Exchange Logs and Events](../connectors/esi-opt2exchangeserverseventlogs.md)
-- [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md)
+- [[Deprecated] Cisco UCS](../connectors/ciscoucs.md)
 
 ---
 
-## Content Items Using This Table (158)
+## Parsers Using This Table (1)
 
-### Analytic Rules (129)
-
-**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
-
-**In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
-- [Credential Dumping Tools - File Artifacts](../content/attacker-tools-threat-protection-essentials-credential-dumping-tools-file-artifacts-32ffb19e-8ed8-40ed-87a0-1adb4746b7c4-38277ddb.md)
-- [Credential Dumping Tools - Service Installation](../content/attacker-tools-threat-protection-essentials-credential-dumping-tools-service-installation-4ebbb5c2-8802-11ec-a8a3-0242ac120002-507654df.md)
-
-**In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
-- [Detecting Macro Invoking ShellBrowserWindow COM Objects](../content/endpoint-threat-protection-essentials-detecting-macro-invoking-shellbrowserwindow-com-objects-e7470b35-0128-4508-bfc9-e01cfb3c2eb7-54d0e1c8.md)
-- [Dumping LSASS Process Into a File](../content/endpoint-threat-protection-essentials-dumping-lsass-process-into-a-file-a7b9df32-1367-402d-b385-882daf6e3020-8e3af60d.md)
-- [Lateral Movement via DCOM](../content/endpoint-threat-protection-essentials-lateral-movement-via-dcom-50cbf34a-4cdd-45d7-b3f5-8b53a1d0d14f-eb377b6e.md)
-- [Registry Persistence via AppCert DLL Modification](../content/endpoint-threat-protection-essentials-registry-persistence-via-appcert-dll-modification-c61ad0ac-ad68-4ebb-b41a-74296d3e0044-b5180a51.md)
-- [Registry Persistence via AppInit DLLs Modification](../content/endpoint-threat-protection-essentials-registry-persistence-via-appinit-dlls-modification-9367dff0-941d-44e2-8875-cb48570c7add-7d4d4858.md)
-- [WDigest downgrade attack](../content/endpoint-threat-protection-essentials-wdigest-downgrade-attack-f6502545-ae3a-4232-a8b0-79d87e5c98d7-c50de150.md)
-- [Windows Binaries Lolbins Renamed](../content/endpoint-threat-protection-essentials-windows-binaries-lolbins-renamed-cbf6ad48-fa5c-4bf7-b205-28dbadb91255-7714bcc6.md)
-
-**In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):**
-- [Server Oriented Cmdlet And User Oriented Cmdlet used](../content/microsoft-exchange-security-exchange-on-premises-server-oriented-cmdlet-and-user-oriented-cmdlet-used-7bce901b-9bc8-4948-8dfc-8f68878092d5-0bb5de2e.md)
-- [VIP Mailbox manipulation](../content/microsoft-exchange-security-exchange-on-premises-vip-mailbox-manipulation-5170c3c4-b8c9-485c-910d-a21d965ee181-521c4b8b.md)
-
-**In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast Audit - Logon Authentication Failed](../content/mimecast-mimecast-audit-logon-authentication-failed-f00197ab-491f-41e7-9e22-a7003a4c1e54-34f15bb0.md)
-
-**In solution [Veeam](../solutions/veeam.md):**
-- [Adding User or Group Failed](../content/veeam-adding-user-or-group-failed-6d1a5478-e613-44f4-a48f-12cc18568522-f478360e.md)
-- [Application Group Deleted](../content/veeam-application-group-deleted-fa8d692d-5b00-4a6c-99b3-30b4710efa59-e00a6bd6.md)
-- [Application Group Settings Updated](../content/veeam-application-group-settings-updated-ff3ceb7d-bed0-4ed2-8dbf-1feb9047810f-3c6e9177.md)
-- [Archive Repository Deleted](../content/veeam-archive-repository-deleted-6a90f177-dcaa-44ec-b6e6-723ee8408cb2-556b7bd6.md)
-- [Archive Repository Settings Updated](../content/veeam-archive-repository-settings-updated-74c3bda5-cdae-4af3-ab54-daddfbe8bc70-1f51970c.md)
-- [Attempt to Delete Backup Failed](../content/veeam-attempt-to-delete-backup-failed-4595192f-671b-4724-aa62-093a9724c2f3-d054a91c.md)
-- [Attempt to Update Security Object Failed](../content/veeam-attempt-to-update-security-object-failed-54c9a609-60db-47b0-82ee-86895c89bd89-b69be8a9.md)
-- [Backup Proxy Deleted](../content/veeam-backup-proxy-deleted-b8527d36-4cba-49c1-9cab-de9cdc3de879-875a2136.md)
-- [Backup Repository Deleted](../content/veeam-backup-repository-deleted-73b4d1d5-c357-4350-bb58-924684a4792a-02bf2f4c.md)
-- [Backup Repository Settings Updated](../content/veeam-backup-repository-settings-updated-f78e0bb9-2878-4e36-b9c9-6141bff8d3dd-d62dcafd.md)
-- [Cloud Gateway Deleted](../content/veeam-cloud-gateway-deleted-72239d5b-ef96-4f15-896f-6cdcd9c53ca7-b39fbbe7.md)
-- [Cloud Gateway Pool Deleted](../content/veeam-cloud-gateway-pool-deleted-73e1d89b-79a6-4ab0-b3bb-5e564fcf10f1-af99fadf.md)
-- [Cloud Gateway Pool Settings Updated](../content/veeam-cloud-gateway-pool-settings-updated-2b3b59eb-ea7c-45f6-9df8-8dbaed632317-b5a4401b.md)
-- [Cloud Gateway Settings Updated](../content/veeam-cloud-gateway-settings-updated-9f0d4171-9a9f-42e4-acbf-9093dd4203de-c41a8fa0.md)
-- [Cloud Replica Permanent Failover Performed by Tenant](../content/veeam-cloud-replica-permanent-failover-performed-by-tenant-1f1634e5-585e-4187-ac5b-6d0e157bd2ea-210ce11c.md)
-- [Configuration Backup Job Settings Updated](../content/veeam-configuration-backup-job-settings-updated-90039769-0c32-442b-bb12-5b61224a77a0-b9b9d248.md)
-- [Connection to Backup Repository Lost](../content/veeam-connection-to-backup-repository-lost-8777f9e1-db58-4078-a381-4e47a3a2ee01-9b8e30ae.md)
-- [Credential Record Deleted](../content/veeam-credential-record-deleted-1edb50b5-fee1-4826-86f9-abaf0e4ce5a5-6820b7f9.md)
-- [Credential Record Updated](../content/veeam-credential-record-updated-860e201a-deea-4129-8646-fcf8bdd976b0-56a92981.md)
-- [Detaching Backups Started](../content/veeam-detaching-backups-started-e0d937ca-4582-4c3b-b95b-82fff33ed610-4f43902a.md)
-- [Encryption Password Added](../content/veeam-encryption-password-added-cfc967be-0428-4ab0-8c15-06c85649078f-53a7514b.md)
-- [Encryption Password Changed](../content/veeam-encryption-password-changed-58fcb721-35ec-4ea2-9f29-c99acde676b8-4baf2059.md)
-- [Encryption Password Deleted](../content/veeam-encryption-password-deleted-a2c6fe48-0d3d-416b-991c-a750ec50d7eb-cc9c7de8.md)
-- [External Repository Deleted](../content/veeam-external-repository-deleted-cc47b9d6-a10e-4c5e-94a1-c73a68273e2d-0fdc5058.md)
-- [External Repository Settings Updated](../content/veeam-external-repository-settings-updated-d035188d-d856-4a74-8226-f3bdf65033c4-793b5498.md)
-- [Failover Plan Deleted](../content/veeam-failover-plan-deleted-5f6f5a46-42d3-4961-94db-68b6229bc84e-71200f93.md)
-- [Failover Plan Failed](../content/veeam-failover-plan-failed-8f339b13-02f0-400f-be18-491ec0ba71f1-3a4dd3a5.md)
-- [Failover Plan Settings Updated](../content/veeam-failover-plan-settings-updated-a053e7ba-e60c-482a-bbd8-89a25c53d905-f052d77a.md)
-- [Failover Plan Started](../content/veeam-failover-plan-started-e06ec6d7-d9f6-4675-89bf-03fa8a0e0be0-7856ed06.md)
-- [Failover Plan Stopped](../content/veeam-failover-plan-stopped-de4cc05b-2e4e-4104-9559-101b4c41c35e-6d0f15f3.md)
-- [File Server Deleted](../content/veeam-file-server-deleted-d7f23105-6756-43ae-973c-48b7441559d5-ce43c672.md)
-- [File Server Settings Updated](../content/veeam-file-server-settings-updated-62008da4-627e-47fe-b78a-62e1e23b3eb9-ffb6279a.md)
-- [File Share Deleted](../content/veeam-file-share-deleted-7ddaf8ef-b726-408b-b1a7-a7a4f92cbf6d-eddf1816.md)
-- [Four-Eyes Authorization Disabled](../content/veeam-four-eyes-authorization-disabled-57a8ff3a-d4aa-456f-9c13-186026bae52e-b3488fbd.md)
-- [Four-Eyes Authorization Request Created](../content/veeam-four-eyes-authorization-request-created-fe6226cd-fee7-4d0d-88d2-160311207b57-099da71d.md)
-- [Four-Eyes Authorization Request Expired](../content/veeam-four-eyes-authorization-request-expired-a641dbe1-9590-46f8-a6d7-b5f24db6e126-97428269.md)
-- [Four-Eyes Authorization Request Rejected](../content/veeam-four-eyes-authorization-request-rejected-dfd1d756-623d-4951-84a5-ce51f726d322-7d804843.md)
-- [General Settings Updated](../content/veeam-general-settings-updated-14003a45-da0b-47dc-8e20-9711ba7b5112-3bceec94.md)
-- [Global Network Traffic Rules Deleted](../content/veeam-global-network-traffic-rules-deleted-0995ccd8-16d4-4764-83b2-511235ca4e4b-cd5fb1dd.md)
-- [Global VM Exclusions Added](../content/veeam-global-vm-exclusions-added-c9faf1ee-57dd-4f54-8cd1-fcf35a1aa424-a796c694.md)
-- [Global VM Exclusions Changed](../content/veeam-global-vm-exclusions-changed-2034c441-2850-4167-80ed-b4438155836d-8cfc4250.md)
-- [Global VM Exclusions Deleted](../content/veeam-global-vm-exclusions-deleted-141d7e3c-a72b-49f7-9e64-57f60c2fa927-c11061ff.md)
-- [Host Deleted](../content/veeam-host-deleted-5601e894-2d3c-42fd-bc71-f0350b1b0bc6-64bec7a7.md)
-- [Host Settings Updated](../content/veeam-host-settings-updated-ac1a85f1-0e3f-4ae8-9f59-a240fc04b03f-906860a3.md)
-- [Hypervisor Host Deleted](../content/veeam-hypervisor-host-deleted-4e41c85f-d495-4a23-a218-41b938140dce-e8282830.md)
-- [Hypervisor Host Settings Updated](../content/veeam-hypervisor-host-settings-updated-580da4d1-8e39-4420-855d-3d4f653fe127-469cf764.md)
-- [Invalid Code for Multi-Factor Authentication Entered](../content/veeam-invalid-code-for-multi-factor-authentication-entered-5220a0b0-ab15-43cf-a77e-2273d35cfe8e-1dc5cb8d.md)
-- [Job Deleted](../content/veeam-job-deleted-b4ea5da0-77a8-400e-ae2b-3ca8fdb779ef-4d0e2dcf.md)
-- [Job No Longer Used as Second Destination](../content/veeam-job-no-longer-used-as-second-destination-61c576ae-f81a-4151-8524-b08c86f206a8-a2039d6c.md)
-- [KMS Key Rotation Job Finished](../content/veeam-kms-key-rotation-job-finished-f11f245e-f77e-4dc5-95f1-ce602c2a36ba-15ef4e22.md)
-- [KMS Server Deleted](../content/veeam-kms-server-deleted-9b5ab4b6-7cca-4779-9784-761b48a58e78-64f5ddb1.md)
-- [KMS Server Settings Updated](../content/veeam-kms-server-settings-updated-594dafa1-e2d5-4f83-b32e-c629cb629b6f-72774293.md)
-- [License Expired](../content/veeam-license-expired-94724029-6ec3-4bf7-a0e9-c4e4cba0479f-6aee2823.md)
-- [License Expiring](../content/veeam-license-expiring-79adb08a-8218-492d-acf0-f8aa596f3444-e298567b.md)
-- [License Grace Period Started](../content/veeam-license-grace-period-started-e4828d99-bb06-40b3-8f9d-0f68fb61e9ee-8b23941c.md)
-- [License Limit Exceeded](../content/veeam-license-limit-exceeded-31ffa231-72da-49f0-88cd-de08eaf3bc52-b7b7a8e5.md)
-- [License Removed](../content/veeam-license-removed-8e4986ac-7388-4782-b389-0b0288123dbc-121b9733.md)
-- [License Support Expired](../content/veeam-license-support-expired-7a6f7e95-b574-44ab-b215-f5c32a2378d1-e23d9076.md)
-- [License Support Expiring](../content/veeam-license-support-expiring-3caa6e6d-a3e2-4776-be97-15d20e2675ed-84174b96.md)
-- [Malware Activity Detected](../content/veeam-malware-activity-detected-9a7c80ef-8dc2-4b07-834d-b9ca18d603f7-acf84aa0.md)
-- [Malware Detection Exclusions List Updated](../content/veeam-malware-detection-exclusions-list-updated-401e91cb-b53f-41a5-b066-1c028b3b51db-77c32be6.md)
-- [Malware Detection Session Finished](../content/veeam-malware-detection-session-finished-88b9223c-29ff-48a9-a745-c553aa0dbae2-f6332cd2.md)
-- [Malware Detection Settings Updated](../content/veeam-malware-detection-settings-updated-effd8410-3119-41c8-a228-9c0c8ce10d67-78f0ae0b.md)
-- [Multi-Factor Authentication Disabled](../content/veeam-multi-factor-authentication-disabled-6881f4f5-f58e-43d7-a05e-b5d05a4c09f9-2fe15a9f.md)
-- [Multi-Factor Authentication Token Revoked](../content/veeam-multi-factor-authentication-token-revoked-4d8f5244-cb56-4e95-ba65-0a7bec114a13-e6e8c283.md)
-- [Multi-Factor Authentication User Locked](../content/veeam-multi-factor-authentication-user-locked-ebdd9cf8-c41c-460e-95d8-e5bc3cd9763e-0f1eb613.md)
-- [Multi-Factor Authentication for User Disabled](../content/veeam-multi-factor-authentication-for-user-disabled-3fefd6c5-bbe9-49a9-95b2-d4b8a5591d9c-fd96aced.md)
-- [NDMP Server Deleted](../content/veeam-ndmp-server-deleted-e92ba6bb-53ea-4347-b1a6-2e015298bbdc-8a804f44.md)
-- [Object Marked as Clean](../content/veeam-object-marked-as-clean-56d70592-077e-4e7b-9d8a-b5d8b0a6a52b-863766f4.md)
-- [Object Storage Deleted](../content/veeam-object-storage-deleted-6e4d1832-2cf9-410d-a5e2-c12b33c7d9f7-e37c0dcd.md)
-- [Object Storage Settings Updated](../content/veeam-object-storage-settings-updated-1f6897bf-a05a-47b2-a5f9-4ba6fd34f715-2495202c.md)
-- [Objects Added to Malware Detection Exclusions](../content/veeam-objects-added-to-malware-detection-exclusions-a8ebf22b-a050-434c-8095-2267f206257a-fa725b38.md)
-- [Objects Deleted from Malware Detection Exclusions](../content/veeam-objects-deleted-from-malware-detection-exclusions-f4cad1aa-a1e2-46dc-bf09-6cf8dc67f0ca-74c313f4.md)
-- [Objects for Job Deleted](../content/veeam-objects-for-job-deleted-5367e8fc-a150-468f-84f2-90ac1dabef15-bd166779.md)
-- [Objects for Protection Group Changed](../content/veeam-objects-for-protection-group-changed-af97a601-8fac-4628-bdad-5fc0511236b2-2ecd6a78.md)
-- [Objects for Protection Group Deleted](../content/veeam-objects-for-protection-group-deleted-88a61215-b3e6-4c78-8acd-9078d9bcfdc3-48a7356b.md)
-- [Preferred Networks Deleted](../content/veeam-preferred-networks-deleted-e06b913f-7698-4b2c-96e6-d47a9f4f5de8-3b2c2137.md)
-- [Protection Group Deleted](../content/veeam-protection-group-deleted-5fda37e0-d67c-4e8d-b277-90e5eac2172c-601902cf.md)
-- [Protection Group Settings Updated](../content/veeam-protection-group-settings-updated-e9b9efa5-4e19-4716-840b-51ef2feeaad1-719cfef0.md)
-- [Recovery Token Deleted](../content/veeam-recovery-token-deleted-9f37ded4-f27a-4ef6-b5e6-de6430070808-4cb5b9b4.md)
-- [Restore Point Marked as Clean](../content/veeam-restore-point-marked-as-clean-c4c6cb50-9fc3-4ca9-a2df-22d527240309-2e0f7baf.md)
-- [Restore Point Marked as Infected](../content/veeam-restore-point-marked-as-infected-bad9d4b8-41cb-41ba-82c8-e20e771b3440-b2e91d35.md)
-- [SSH Credentials Changed](../content/veeam-ssh-credentials-changed-40b8e739-1077-42d8-9501-b68736c2c4d2-7a80fa5a.md)
-- [Scale-Out Backup Repository Deleted](../content/veeam-scale-out-backup-repository-deleted-4dc85727-573c-4722-8173-026e2a1d20db-db3c6213.md)
-- [Scale-Out Backup Repository Settings Updated](../content/veeam-scale-out-backup-repository-settings-updated-12006091-95a7-4f21-b474-f74b0480a138-3b450059.md)
-- [Service Provider Deleted](../content/veeam-service-provider-deleted-cbe9fcb2-8767-4965-887e-350710145386-0f9a0391.md)
-- [Service Provider Updated](../content/veeam-service-provider-updated-35fb4771-9b8f-47f7-bd5b-3085d584f7ce-ada19297.md)
-- [Storage Deleted](../content/veeam-storage-deleted-7cf8c19b-6cd2-4d0c-814b-45d34e68568b-1589fb76.md)
-- [Storage Settings Updated](../content/veeam-storage-settings-updated-be47e508-e35b-4c63-979b-a75b72102344-eda2a675.md)
-- [Subtenant Deleted](../content/veeam-subtenant-deleted-1c23715c-3a28-4b98-b135-fece6e7dcb8b-220743c9.md)
-- [Subtenant Updated](../content/veeam-subtenant-updated-e1d0d9ce-b7c9-4e28-883d-04429f80d6d7-75b596f8.md)
-- [SureBackup Job Failed](../content/veeam-surebackup-job-failed-b7409bbb-6f0c-43c4-bb63-b20add5eb717-80cf55f4.md)
-- [Tape Erase Job Started](../content/veeam-tape-erase-job-started-06ba509c-606e-4967-baee-21815ae61f8e-409f1252.md)
-- [Tape Library Deleted](../content/veeam-tape-library-deleted-ecf98b4a-3986-4739-879d-dd446e839153-859b6cf4.md)
-- [Tape Media Pool Deleted](../content/veeam-tape-media-pool-deleted-ceb625a3-a8d7-4a42-9ea1-40f01c337ecd-e4f01ed7.md)
-- [Tape Media Vault Deleted](../content/veeam-tape-media-vault-deleted-19ed623e-1b1c-45e0-ac74-c1e629fbf117-183c8886.md)
-- [Tape Medium Deleted](../content/veeam-tape-medium-deleted-d92b2d65-1037-41e2-8d04-c18b8403d895-bcb4c853.md)
-- [Tape Server Deleted](../content/veeam-tape-server-deleted-fda79d00-9e6a-46f8-b7a2-2bdccd5f598e-dd1c29f0.md)
-- [Tenant Password Changed](../content/veeam-tenant-password-changed-afec0070-2b46-4366-a272-e2d9cc8a50f2-b358d996.md)
-- [Tenant Quota Changed](../content/veeam-tenant-quota-changed-da25b390-b97a-4ea4-abe3-5bbd7f90642c-086a7eb8.md)
-- [Tenant Quota Deleted](../content/veeam-tenant-quota-deleted-16183d97-c348-4f72-a943-27e80c9dfbd5-bdfeb6ec.md)
-- [Tenant Replica Started](../content/veeam-tenant-replica-started-c4d891cd-4b22-419c-8f40-7603eb1cc3a3-3fe4373a.md)
-- [Tenant Replica Stopped](../content/veeam-tenant-replica-stopped-ef029652-d004-44e9-a70a-48dd71818aaa-b0a49469.md)
-- [Tenant State Changed](../content/veeam-tenant-state-changed-71711b77-486c-41d0-9de0-dcc411fa7b05-828436c4.md)
-- [User or Group Added](../content/veeam-user-or-group-added-25111c10-44b5-4275-996d-d62f15a7d072-2b624885.md)
-- [User or Group Deleted](../content/veeam-user-or-group-deleted-d297961f-f8a3-4f84-865d-ec3a07641699-ea4feb04.md)
-- [Virtual Lab Deleted](../content/veeam-virtual-lab-deleted-384e92a7-103c-4a47-945d-381ae9653f91-65be69c1.md)
-- [Virtual Lab Settings Updated](../content/veeam-virtual-lab-settings-updated-a21eccd5-0148-4f88-a5d7-a8f86e9e4d8e-be075442.md)
-- [WAN Accelerator Deleted](../content/veeam-wan-accelerator-deleted-5b19f19b-d92c-486f-be98-ba2c5945e240-ad4cbb3c.md)
-- [WAN Accelerator Settings Updated](../content/veeam-wan-accelerator-settings-updated-2e4fe360-ce67-433b-930e-42f83058dfd0-752109e1.md)
-
-**In solution [Windows Forwarded Events](../solutions/windows-forwarded-events.md):**
-- [Progress MOVEIt File transfer above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-above-threshold-9bd18b63-f1ca-4375-95db-39fda00bfe20-ab42fd6b.md)
-- [Progress MOVEIt File transfer folder count above threshold](../content/windows-forwarded-events-progress-moveit-file-transfer-folder-count-above-threshold-26a993ca-0a96-45a0-8405-05a210fb98f8-c970d686.md)
-
-**In solution [Windows Security Events](../solutions/windows-security-events.md):**
-- [AD FS Remote HTTP Network Connection](../content/windows-security-events-ad-fs-remote-http-network-connection-d57c33a9-76b9-40e0-9dfa-ff0404546410-3555cd57.md)
-- [ADFS Database Named Pipe Connection](../content/windows-security-events-adfs-database-named-pipe-connection-dcdf9bfc-c239-4764-a9f9-3612e6dff49c-29ef627a.md)
-
-**In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
-- [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
-- [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
-
-### Hunting Queries (11)
-
-**In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
-- [Detect Certutil (LOLBins and LOLScripts) Usage](../content/endpoint-threat-protection-essentials-detect-certutil-lolbins-and-lolscripts-usage-0e429446-2798-49e4-924d-c37338f24e23-bc9b437b.md)
-- [Execution of File with One Character in the Name](../content/endpoint-threat-protection-essentials-execution-of-file-with-one-character-in-the-name-299472c4-8382-4c5b-82d9-718cda193393-14ba3a7f.md)
-- [Persisting via IFEO Registry Key](../content/endpoint-threat-protection-essentials-persisting-via-ifeo-registry-key-f82c89fa-c969-4d12-832f-04d55d14522c-6020db66.md)
-- [Potential Microsoft Security Services Tampering](../content/endpoint-threat-protection-essentials-potential-microsoft-security-services-tampering-e10e1d2f-265d-4d90-9037-7f3a6ed8a91e-8c1dc76e.md)
-- [Rare Windows Firewall Rule updates using Netsh](../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.md)
-- [Rundll32 (LOLBins and LOLScripts)](../content/endpoint-threat-protection-essentials-rundll32-lolbins-and-lolscripts-c2074fce-b5ba-4c0a-9332-d08b8fc43c53-1b1739b4.md)
-
-**In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
-- [Known Nylon Typhoon Registry modifications patterns](../content/legacy-ioc-based-threat-protection-known-nylon-typhoon-registry-modifications-patterns-f090f8f4a-b986-42d2-b536-e0795c723e25-f442d105.md)
-- [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md)
-
-**In solution [Windows Security Events](../solutions/windows-security-events.md):**
-- [KrbRelayUp Local Privilege Escalation Service Creation](../content/windows-security-events-krbrelayup-local-privilege-escalation-service-creation-ccbc73a1-d303-4613-aed4-478e996f454e-0d6549ff.md)
-- [Service installation from user writable directory](../content/windows-security-events-service-installation-from-user-writable-directory-5a9ccb48-1316-46e1-89d1-aca0355c305e-81f8a107.md)
-- [Windows System Shutdown/Reboot(Sysmon)](../content/windows-security-events-windows-system-shutdown-reboot-sysmon-14fab7a3-cb11-41d6-a19a-b55a4a0ef3b1-e2599fa5.md)
-
-### Workbooks (18)
-
-**In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md):**
-- [WebApplicationFirewallWAFTypeEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallwaftypeevents-bc7c447b.md)
-
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
-- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
-
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
-- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
-
-**In solution [DORA Compliance](../solutions/dora-compliance.md):**
-- [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)
-
-**In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
-
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
-
-**In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):**
-- [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.md)
-- [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-search-adminauditlog-fcf38c03.md)
-
-**In solution [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md):**
-- [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md)
-
-**In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast_Audit_Workbook](../content/mimecast-mimecast-audit-workbook-2c0dd88f.md)
-- [Mimecast_TTP_Workbook](../content/mimecast-mimecast-ttp-workbook-c40cabd0.md)
-
-**In solution [NISTSP80053](../solutions/nistsp80053.md):**
-- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
-
-**In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
-- [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md)
-
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
-
-**In solution [Vectra XDR](../solutions/vectra-xdr.md):**
-- [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md)
-
-**In solution [Veeam](../solutions/veeam.md):**
-- [VeeamDataPlatformMonitoring](../content/veeam-veeamdataplatformmonitoring-a61e8871.md)
-- [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md)
-
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.operationalinsights/workspaces`
-- `microsoft.compute/virtualmachines`
-- `microsoft.conenctedvmwarevsphere/virtualmachines`
-- `microsoft.azurestackhci/virtualmachines`
-- `microsoft.scvmm/virtualmachines`
-- `microsoft.compute/virtualmachinescalesets`
-- `microsoft.azurestackhci/clusters`
-
-## Parsers Using This Table (18)
-
-### ASIM Parsers (6)
-
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimDnsMicrosoftSysmon](../asim/asimdnsmicrosoftsysmon.md) | Dns |  |
-| [ASimFileEventMicrosoftSysmon](../asim/asimfileeventmicrosoftsysmon.md) | FileEvent |  |
-| [ASimNetworkSessionMicrosoftSysmon](../asim/asimnetworksessionmicrosoftsysmon.md) | NetworkSession |  |
-| [ASimProcessEventCreateMicrosoftSysmon](../asim/asimprocesseventcreatemicrosoftsysmon.md) | ProcessEvent |  |
-| [ASimProcessEventTerminateMicrosoftSysmon](../asim/asimprocesseventterminatemicrosoftsysmon.md) | ProcessEvent |  |
-| [ASimRegistryEventMicrosoftSysmon](../asim/asimregistryeventmicrosoftsysmon.md) | RegistryEvent |  |
-
-### Other Parsers (12)
+### Other Parsers (1)
 
 | Parser | Solution | Location |
 |:-------|:---------|:---------|
-| [ExchangeAdminAuditLogs](../parsers/exchangeadminauditlogs.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | Solution |
-| [MimecastAudit](../parsers/mimecastaudit.md) | [Mimecast](../solutions/mimecast.md) | Solution |
-| [RSASecurIDAMEvent](../parsers/rsasecuridamevent.md) | [RSA SecurID](../solutions/rsa-securid.md) | Solution |
-| [SQLServer_Parser](../parsers/sqlserver-parser.md) | *(Legacy)* | Legacy |
-| [Sysmon-AllVersions_Parser](../parsers/sysmon-allversions-parser.md) | *(Legacy)* | Legacy |
-| [Sysmon-v10.42-Parser](../parsers/sysmon-v10.42-parser.md) | *(Legacy)* | Legacy |
-| [Sysmon-v11.0](../parsers/sysmon-v11.0.md) | *(Legacy)* | Legacy |
-| [Sysmon-v12.0](../parsers/sysmon-v12.0.md) | *(Legacy)* | Legacy |
-| [Sysmon-v9.10-Parser](../parsers/sysmon-v9.10-parser.md) | *(Legacy)* | Legacy |
-| [Veeam_GetJobFinished](../parsers/veeam-getjobfinished.md) | [Veeam](../solutions/veeam.md) | Solution |
-| [Veeam_GetSecurityEvents](../parsers/veeam-getsecurityevents.md) | [Veeam](../solutions/veeam.md) | Solution |
-| [Veeam_GetVeeamONEAlarms](../parsers/veeam-getveeamonealarms.md) | [Veeam](../solutions/veeam.md) | Solution |
+| [CiscoUCS](../parsers/ciscoucs.md) | [Cisco UCS](../solutions/cisco-ucs.md) | Solution |
 
 ---
 

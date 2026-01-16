@@ -91,7 +91,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (109)
+## Content Items Using This Table (108)
 
 ### Analytic Rules (42)
 
@@ -193,7 +193,7 @@ This table is ingested by the following connectors:
 - [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md)
 - [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md)
 
-### Workbooks (45)
+### Workbooks (44)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)
@@ -283,9 +283,6 @@ This table is ingested by the following connectors:
 - [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md)
 - [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md)
-
-**In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
-- [IncidentOverview](../content/sentinelsoaressentials-incidentoverview-c5ea1b65.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [ThreatIntelligence](../content/threat-intelligence-threatintelligence-3dd5d2b4.md)

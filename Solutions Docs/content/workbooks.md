@@ -217,7 +217,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [IllusiveADS](illusive-platform-illusiveads-5d29048c.md) | [Illusive Platform](../solutions/illusive-platform.md) |
 | [IllusiveASM](illusive-platform-illusiveasm-bca1238e.md) | [Illusive Platform](../solutions/illusive-platform.md) |
 | [Imperva WAF Cloud Overview](impervacloudwaf-imperva-waf-cloud-overview-84f383d0.md) | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
-| [IncidentOverview](sentinelsoaressentials-incidentoverview-c5ea1b65.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
+| [IncidentOverview](sentinelsoaressentials-incidentoverview-c5ea1b65.md) ⚠️ | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [IncidentOverview](soc-handbook-incidentoverview-c120b199.md) | [SOC Handbook](../solutions/soc-handbook.md) |
 | [IncidentTasksWorkbook](sentinelsoaressentials-incidenttasksworkbook-37a89581.md) | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Infoblox-Workbook-V2](infoblox-nios-infoblox-workbook-v2-a1f70727.md) | [Infoblox NIOS](../solutions/infoblox-nios.md) |

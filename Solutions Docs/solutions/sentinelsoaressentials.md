@@ -31,14 +31,12 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **4 table(s)** from its content items:
+This solution queries **2 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`Alert`](../tables/alert.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
 | [`SentinelHealth`](../tables/sentinelhealth.md) | Workbooks |
-| [`alert`](../tables/alert.md) | Workbooks |
 
 ### Internal Tables
 
@@ -46,7 +44,7 @@ The following **2 table(s)** are used internally by this solution's content item
 
 | Table | Used By Content |
 |-------|----------------|
-| [`SecurityAlert`](../tables/securityalert.md) | Playbooks, Workbooks |
+| [`SecurityAlert`](../tables/securityalert.md) | Playbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | Playbooks, Workbooks |
 
 ## Content Items
@@ -63,7 +61,7 @@ This solution includes **29 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`SentinelHealth`](../tables/sentinelhealth.md) |
-| [IncidentOverview](../content/sentinelsoaressentials-incidentoverview-c5ea1b65.md) | [`Alert`](../tables/alert.md)<br>[`alert`](../tables/alert.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [IncidentOverview](../content/sentinelsoaressentials-incidentoverview-c5ea1b65.md) ⚠️ | - |
 | [IncidentTasksWorkbook](../content/sentinelsoaressentials-incidenttasksworkbook-37a89581.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [SecurityOperationsEfficiency](../content/sentinelsoaressentials-securityoperationsefficiency-4e91f3d3.md) | *Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 
@@ -96,6 +94,8 @@ This solution includes **29 content item(s)**:
 | [Send incident Teams Adaptive Card with XDR Portal links](../content/sentinelsoaressentials-send-incident-teams-adaptive-card-with-xdr-portal-links-67c3f8d5.md) | This playbook will send a Teams adaptive card with incident and entity information with all links po... | - |
 | [Send incident email with XDR Portal links](../content/sentinelsoaressentials-send-incident-email-with-xdr-portal-links-40ad98a3.md) | This playbook will send an email with incident and entity information with all links pointing to the... | - |
 | [URL Trigger Entity Analyzer](../content/sentinelsoaressentials-url-trigger-entity-analyzer-b0247848.md) | This playbook is triggered manually when a URL entity is selected in a Microsoft Sentinel incident a... | - |
+
+> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 
 ## Release Notes
 

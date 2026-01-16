@@ -33,10 +33,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | [Egress Iris Connector](../connectors/egresssiempolling.md) | - |
 | [`EgressEvents_CL`](../tables/egressevents-cl.md) | [Egress Iris Connector](../connectors/egresssiempolling.md) | Workbooks |
 
 ## Content Items

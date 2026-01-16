@@ -45,7 +45,7 @@ This solution uses **4 table(s)**:
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
 | [`Operation`](../tables/operation.md) | - | Workbooks |
-| [`SecurityEvent`](../tables/securityevent.md) | - | Analytics, Workbooks |
+| [`SecurityEvent`](../tables/securityevent.md) | [Semperis Directory Services Protector](../connectors/semperisdsp.md) | Analytics, Workbooks |
 | [`alert`](../tables/alert.md) | - | Workbooks |
 
 ## Content Items

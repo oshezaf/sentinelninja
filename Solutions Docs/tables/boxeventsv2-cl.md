@@ -12,10 +12,11 @@ This table is used by the following solutions:
 
 - [Box](../solutions/box.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
+- [Box](../connectors/boxdataconnector.md)
 - [Box Events (CCP)](../connectors/boxeventsccpdefinition.md)
 
 ---

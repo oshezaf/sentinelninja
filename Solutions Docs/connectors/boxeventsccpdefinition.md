@@ -25,6 +25,7 @@ This connector ingests data into the following tables:
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
 | [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | — | — |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) | — | — |
 
 ## Permissions
 

@@ -44,8 +44,8 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md) | - |
-| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md) | - |
+| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
+| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
 | [`OneLogin_CL`](../tables/onelogin-cl.md) | [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
 
 ## Content Items

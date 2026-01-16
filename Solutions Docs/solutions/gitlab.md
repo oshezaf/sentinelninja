@@ -39,13 +39,14 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
-| [`Syslog`](../tables/syslog.md) | - | Analytics |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] GitLab](../connectors/gitlab.md) | Analytics |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
+| [`impersonationStart`](../tables/impersonationstart.md) | - | Analytics |
 
 ## Content Items
 
@@ -68,7 +69,7 @@ This solution includes **12 content item(s)**:
 | [GitLab - Repository visibility to Public](../content/gitlab-gitlab-repository-visibility-to-public-8b291c3d-90ba-4ebf-af2c-0283192d430e-27c058ed.md) | Medium | Persistence, DefenseEvasion, CredentialAccess | [`Syslog`](../tables/syslog.md) |
 | [GitLab - SSO - Sign-Ins Burst](../content/gitlab-gitlab-sso-sign-ins-burst-57b1634b-531d-4eab-a456-8b855887428f-5a07493b.md) | Medium | CredentialAccess | [`SigninLogs`](../tables/signinlogs.md) |
 | [GitLab - TI - Connection from Malicious IP](../content/gitlab-gitlab-ti-connection-from-malicious-ip-7241740a-5280-4b74-820a-862312d721a8-aca76b78.md) | Medium | InitialAccess | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
-| [GitLab - User Impersonation](../content/gitlab-gitlab-user-impersonation-0f4f16a2-b464-4c10-9a42-993da3e15a40-bad32e25.md) | Medium | Persistence | [`Syslog`](../tables/syslog.md) |
+| [GitLab - User Impersonation](../content/gitlab-gitlab-user-impersonation-0f4f16a2-b464-4c10-9a42-993da3e15a40-bad32e25.md) | Medium | Persistence | [`Syslog`](../tables/syslog.md)<br>[`impersonationStart`](../tables/impersonationstart.md) |
 
 ### Parsers
 

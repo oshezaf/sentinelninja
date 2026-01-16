@@ -14,6 +14,14 @@ This table is used by the following solutions:
 - [Tenable App](../solutions/tenable-app.md)
 - [TenableAD](../solutions/tenablead.md)
 
+## Connectors (3)
+
+This table is ingested by the following connectors:
+
+- [Alsid for Active Directory](../connectors/alsidforad.md)
+- [Tenable.ad](../connectors/tenable.ad.md)
+- [Tenable Identity Exposure](../connectors/tenableie.md)
+
 ---
 
 ## Content Items Using This Table (42)

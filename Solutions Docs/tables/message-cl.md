@@ -12,6 +12,12 @@ This table is used by the following solutions:
 
 - [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md)
 
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+- [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md)
+
 ---
 
 ## Content Items Using This Table (21)

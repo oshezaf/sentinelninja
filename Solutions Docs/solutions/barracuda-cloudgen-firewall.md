@@ -44,7 +44,7 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
 | [`Perf`](../tables/perf.md) | - | Workbooks |
-| [`Syslog`](../tables/syslog.md) | - | Workbooks |
+| [`Syslog`](../tables/syslog.md) | [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md) | Workbooks |
 
 ## Content Items
 

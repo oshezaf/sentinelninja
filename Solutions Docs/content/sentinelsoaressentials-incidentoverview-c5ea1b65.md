@@ -12,14 +12,7 @@
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Workbooks/IncidentOverview.json) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-- [`Alert`](../tables/alert.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityIncident`](../tables/securityincident.md)
-- [`alert`](../tables/alert.md)
+> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
 ---
 

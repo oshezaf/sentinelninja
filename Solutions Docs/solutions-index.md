@@ -14,11 +14,11 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 | Metric | Total | Published | Unpublished |
 |:-------|------:|----------:|------------:|
-| Solutions | 484 | 402 | 82 |
-| With Connectors | 305 | 250 | 55 |
+| Solutions | 486 | 402 | 84 |
+| With Connectors | 306 | 250 | 56 |
 | With Content | 385 | 329 | 56 |
-| Unique Connectors | 382 | | |
-| Tables Used | 781 | | |
+| Unique Connectors | 383 | | |
+| Tables Used | 845 | | |
 
 ---
 
@@ -99,6 +99,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Azure kubernetes Service](solutions/azure-kubernetes-service.md) | 2022-06-01 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureDevOps.svg" alt="" width="32" height="32"> | [AzureDevOpsAuditing](solutions/azuredevopsauditing.md) | 2022-09-20 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md) | 2022-06-17 | Microsoft Corporation |
+|  | [archTIS](solutions/archtis.md) ⚠️ |  |  |
 
 ### B
 
@@ -405,7 +406,7 @@ Browse solutions alphabetically:
 
 | | Solution | First Published | Publisher |
 |:--:|----------|----------------|----------|
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/archTIS/Data%20Connectors/Logo/NCProtectLogo.svg" alt="" width="32" height="32"> | [NC Protect Data Connector](solutions/nc-protect-data-connector.md) | 2021-10-20 | archTIS |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NCProtectLogo.svg" alt="" width="32" height="32"> | [NC Protect Data Connector](solutions/nc-protect-data-connector.md) | 2021-10-20 | archTIS |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NCSC-NL_logo.svg" alt="" width="32" height="32"> | [NCSC-NL NDN Cyber Threat Intelligence Sharing](solutions/ncsc-nl-ndn-cyber-threat-intelligence-sharing.md) | 2025-05-19 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [NGINX HTTP Server](solutions/nginx-http-server.md) | 2021-12-16 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [NISTSP80053](solutions/nistsp80053.md) | 2022-02-24 | Microsoft Corporation |
@@ -533,7 +534,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/slashnext-logo.svg" alt="" width="32" height="32"> | [SlashNext](solutions/slashnext.md) ⚠️ | 2022-08-12 | SlashNext |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlashNext%20SIEM/Playbook/logo/slashnext-logo.svg" alt="" width="32" height="32"> | [SlashNext SIEM](solutions/slashnext-siem.md) ⚠️ | 2023-05-26 | SlashNext |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Snowflake](solutions/snowflake.md) | 2021-10-23 | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sonicwall_logo.svg" alt="" width="32" height="32"> | [SonicWall Firewall](solutions/sonicwall-firewall.md) | 2022-05-06 | SonicWall |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sonicwall_logo.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [SonicWall Firewall](solutions/sonicwall-firewall.md) | 2022-05-06 | SonicWall |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SonraiSecurity/Workbooks/Images/Logo/Sonrai.svg" alt="" width="32" height="32"> | [SonraiSecurity](solutions/sonraisecurity.md) | 2021-10-18 | Sonrai |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="32" height="32"> | [Sophos Cloud Optix](solutions/sophos-cloud-optix.md) | 2022-05-02 | Sophos |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="32" height="32"> | [Sophos Endpoint Protection](solutions/sophos-endpoint-protection.md) | 2021-07-07 | Microsoft Corporation |
@@ -555,7 +556,7 @@ Browse solutions alphabetically:
 |:--:|----------|----------------|----------|
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Talon.svg" alt="" width="32" height="32"> | [Talon](solutions/talon.md) | 2023-01-25 | Talon Security |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tanium.svg" alt="" width="32" height="32"> | [Tanium](solutions/tanium.md) | 2022-05-16 | Tanium Inc. |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/TeamCymruScout.svg" alt="" width="32" height="32"> | [Team Cymru Scout](solutions/team-cymru-scout.md) | 2024-07-16 | Team Cymru |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/TeamCymruScout.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Team Cymru Scout](solutions/team-cymru-scout.md) | 2024-07-16 | Team Cymru |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Teams](solutions/teams.md) | 2022-02-01 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tenable.svg" alt="" width="32" height="32"> | [Tenable App](solutions/tenable-app.md) | 2024-06-06 | Tenable |
 |  | [TenableAD](solutions/tenablead.md) ⚠️ |  |  |
@@ -604,6 +605,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="" width="32" height="32"> | [Vectra XDR](solutions/vectra-xdr.md) | 2023-07-04 | Vectra Support |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VeeamLogo.svg" alt="" width="32" height="32"> | [Veeam](solutions/veeam.md) | 2025-08-26 | Veeam Software |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Veritas NetBackup](solutions/veritas-netbackup.md) | 2023-09-25 | Veritas Technologies LLC |
+| <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Logos/versasec-logo.svg" alt="" width="32" height="32"> | [VersasecCMS](solutions/versaseccms.md) ⚠️ |  | Versasec Support |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/VirtualMetric.svg" alt="" width="32" height="32"> | [VirtualMetric DataStream](solutions/virtualmetric-datastream.md) | 2025-09-15 | VirtualMetric |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [VirusTotal](solutions/virustotal.md) | 2022-07-31 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/votiro.svg" alt="" width="32" height="32"> | [Votiro](solutions/votiro.md) ⚠️ |  | Votiro |

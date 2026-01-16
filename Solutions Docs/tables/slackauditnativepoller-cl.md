@@ -12,11 +12,12 @@ This table is used by the following solutions:
 
 - [SlackAudit](../solutions/slackaudit.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 - [Slack](../connectors/slackaudit.md)
+- [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md)
 
 ---
 
