@@ -28,9 +28,12 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (12)
+## Content Items Using This Table (21)
 
-### Analytic Rules (2)
+### Analytic Rules (3)
+
+**In solution [](../solutions/.md):**
+- [Unusual Anomaly](../content/-unusual-anomaly-d0255b5f-2a3c-4112-8744-e6757af3283a-1178a7eb.md)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 - [Anomalous sign-in location by user account and authenticating application](../content/microsoft-entra-id-anomalous-sign-in-location-by-user-account-and-authenticating-application-7cb8f77d-c52f-4e46-b82f-3cf2e106224a-c5368fb1.md)
@@ -46,7 +49,17 @@ This table is used by the following solutions:
 - [UEBA Multi-Source Anomalous Activity Overview](../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.md)
 - [User-Centric Anomaly Investigation](../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.md)
 
-### Workbooks (4)
+### Workbooks (12)
+
+**In solution [](../solutions/.md):**
+- [AnomaliesVisualization](../content/-anomaliesvisualization-c9f045e6.md)
+- [AnomalyData](../content/-anomalydata-bd57b98e.md)
+- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
+- [DSTIMWorkbook](../content/-dstimworkbook-0a68e0ad.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [UserEntityBehaviorAnalytics](../content/-userentitybehavioranalytics-75272bde.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)

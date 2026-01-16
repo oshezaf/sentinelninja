@@ -1,0 +1,28 @@
+# Send Unhealthy Azure Arc Resource Alert
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Sentinel logic app designed to send an email alert when an unhealthy Azure Arc resource is detected. The logic app is implemented using Azure Logic Apps and utilizes Azure Monitor Logs and Office 365 connectors for its functionality.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Playbook |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Playbooks/Playbooks/Send-UnhealthyAzureArcResourceAlert/azuredeploy.json) |
+
+## Tables Used
+
+| Table | Usage |
+|:------|:------|
+| [`AzureActivity`](../tables/azureactivity.md) | read |
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Playbooks](playbooks.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

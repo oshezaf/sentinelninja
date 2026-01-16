@@ -15,7 +15,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
 ### Analytic Rules (2)
 
@@ -24,6 +24,11 @@ This table is used by the following solutions:
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 - [TI Map IP Entity to Duo Security](../content/threat-intelligence-new-ti-map-ip-entity-to-duo-security-4988c238-a118-442c-80bd-6c689a1b2e97-43e39fdc.md)
+
+### Workbooks (1)
+
+**In solution [](../solutions/.md):**
+- [DuoSecurity](../content/-duosecurity-02042b40.md)
 
 ## Parsers Using This Table (1)
 

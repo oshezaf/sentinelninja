@@ -1,0 +1,37 @@
+# Email access via active sync
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+This query detects attempts to add attacker devices as allowed IDs for active sync using the Set-CASMailbox command. This technique was seen in relation to Solorigate attack but the results can indicate potential malicious activity used in different attacks. - Note that this query can be changed to use the KQL "has_all" operator, which hasn't yet been documented officially, but will be soon.   In short, "has_all" will only match when the referenced field has all strings in the list. - Refer to S
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `2f561e20-d97b-4b13-b02d-18b34af6e87c` |
+| **Severity** | Medium |
+| **Kind** | Scheduled |
+| **Tactics** | PrivilegeEscalation |
+| **Techniques** | T1068, T1078 |
+| **Required Connectors** | [SecurityEvents](../connectors/securityevents.md), [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsForwardedEvents](../connectors/windowsforwardedevents.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/MultipleDataSources/EmailAccessviaActiveSync.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+- [`Event`](../tables/event.md)
+- [`SecurityEvent`](../tables/securityevent.md)
+- [`WindowsEvent`](../tables/windowsevent.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

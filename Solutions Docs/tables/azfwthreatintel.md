@@ -32,14 +32,19 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (7)
 
 ### Analytic Rules (1)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 - [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md)
 
-### Workbooks (3)
+### Workbooks (6)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 - [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md)

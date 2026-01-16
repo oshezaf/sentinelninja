@@ -1,0 +1,34 @@
+# Service Principal Assigned Privileged Role
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Detects a privileged role being added to a Service Principal.   Ensure that any assignment to a Service Principal is valid and appropriate - Service Principals should not be assigned to very highly privileged roles such as Global Admin.   Ref: https://docs.microsoft.com/azure/active-directory/fundamentals/security-operations-privileged-accounts#changes-to-privileged-accounts
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `84cccc86-5c11-4b3a-aca6-7c8f738ed0f7` |
+| **Severity** | Medium |
+| **Kind** | Scheduled |
+| **Tactics** | PrivilegeEscalation |
+| **Techniques** | T1078.004 |
+| **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/AuditLogs/ServicePrincipalAssignedPrivilegedRole.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AuditLogs`](../tables/auditlogs.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

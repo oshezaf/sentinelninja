@@ -20,9 +20,12 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [](../solutions/.md):**
+- [ZimperiumWorkbooks](../content/-zimperiumworkbooks-123202aa.md)
 
 **In solution [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md):**
 - [ZimperiumWorkbooks](../content/zimperium-mobile-threat-defense-zimperiumworkbooks-53cb70da.md)

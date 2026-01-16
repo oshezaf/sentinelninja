@@ -20,6 +20,13 @@ This table is ingested by the following connectors:
 
 ---
 
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [](../solutions/.md):**
+- [CriblWorkbook](../content/-criblworkbook-6abad082.md)
+
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)

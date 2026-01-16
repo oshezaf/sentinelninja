@@ -28,7 +28,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (25)
+## Content Items Using This Table (27)
 
 ### Analytic Rules (10)
 
@@ -58,7 +58,11 @@ This table is ingested by the following connectors:
 - [GCP IAM - Top service accounts by failed actions](../content/googlecloudplatformiam-gcp-iam-top-service-accounts-by-failed-actions-27234847-8d3f-4d33-a3ef-5d3ec2575154-690da1f5.md)
 - [GCP IAM - Top source IP addresses with failed actions](../content/googlecloudplatformiam-gcp-iam-top-source-ip-addresses-with-failed-actions-2f906618-68e1-49ae-a961-8483cb7b6523-0c683ae9.md)
 
-### Workbooks (5)
+### Workbooks (7)
+
+**In solution [](../solutions/.md):**
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)

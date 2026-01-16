@@ -24,9 +24,17 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (11)
 
-### Hunting Queries (5)
+### Hunting Queries (11)
+
+**In solution [](../solutions/.md):**
+- [Hunt for malicious messages using External Threat Intelligence](../content/-hunt-for-malicious-messages-using-external-threat-intelligence-4dcb872f-9b39-4b95-8f30-3664f9f70dc2-caf142b9.md)
+- [Rare Domains in External Teams Messages](../content/-rare-domains-in-external-teams-messages-d4dd8c3f-d62b-4078-9dc7-8520c3adf1d5-21ed0fcd.md)
+- [Teams Message with URL listed on OpenPhish](../content/-teams-message-with-url-listed-on-openphish-0d0a865b-7ed4-4e32-8b57-24cbf6b301b9-70ce5306.md)
+- [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-8254e30e.md)
+- [Teams messages with suspicious URL domains](../content/-teams-messages-with-suspicious-url-domains-3dc84945-5805-4807-80ea-b849d1198e7f-044fe1d9.md)
+- [Teams users clicking on suspicious URL domains](../content/-teams-users-clicking-on-suspicious-url-domains-0d70619d-b6a5-4958-8721-3f4001dc0472-2d3388cf.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Hunt for malicious messages using External Threat Intelligence](../content/microsoft-defender-xdr-hunt-for-malicious-messages-using-external-threat-intelligence-28c79831-120c-4028-8a2b-4e4ae3082148-7fefb5f5.md)

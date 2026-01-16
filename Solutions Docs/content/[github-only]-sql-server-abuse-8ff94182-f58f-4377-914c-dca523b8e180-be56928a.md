@@ -1,0 +1,30 @@
+# sql-server-abuse
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+This query was originally published in the threat analytics report, SQL Server abuse. SQL Server offers a vast array of tools for automating tasks, exporting data, and running scripts. These legitimate tools can be repurposed by attackers. Because there are so many powerful commands an attacker might exploit, hunting for malicious activity involving SQL Server can be complicated. This query detects instances of a SQL Server process launching a shell to run one or more suspicious commands. Refere
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [[GitHub Only]](../solutions/[github-only].md) |
+| **ID** | `8ff94182-f58f-4377-914c-dca523b8e180` |
+| **Tactics** | Execution |
+| **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md) · [Back to [GitHub Only]](../solutions/[github-only].md)
+

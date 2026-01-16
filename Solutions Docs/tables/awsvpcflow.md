@@ -38,9 +38,17 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (12)
 
-### Workbooks (6)
+### Workbooks (12)
+
+**In solution [](../solutions/.md):**
+- [AWSS3](../content/-awss3-8a6199f4.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)

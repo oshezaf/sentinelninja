@@ -18,6 +18,13 @@ Reference for MicrosoftGraphActivityLogs table in Azure Monitor Logs.
 
 ---
 
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [](../solutions/.md):**
+- [MicrosoftGraphActivityLogs](../content/-microsoftgraphactivitylogs-6317b929.md)
+
 ---
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)

@@ -20,7 +20,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (16)
 
 ### Analytic Rules (1)
 
@@ -32,7 +32,17 @@ This table is used by the following solutions:
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [Insider Risk_Sign In Risk Followed By Sensitive Data Access](../content/microsoftpurviewinsiderriskmanagement-insider-risk-sign-in-risk-followed-by-sensitive-data-access-45ec52c2-99e1-4de1-9adc-bae0f79d4e23-f2037089.md)
 
-### Workbooks (6)
+### Workbooks (14)
+
+**In solution [](../solutions/.md):**
+- [AzureInformationProtection](../content/-azureinformationprotection-2ab6fc3c.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)

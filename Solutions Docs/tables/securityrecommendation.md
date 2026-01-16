@@ -30,7 +30,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (16)
+## Content Items Using This Table (23)
 
 ### Analytic Rules (9)
 
@@ -58,7 +58,16 @@ This table is used by the following solutions:
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [CDM_ContinuousDiagnostics&Mitigation_Posture](../content/continuousdiagnostics&mitigation-cdm-continuousdiagnostics&mitigation-posture-e15944a8-4172-4208-a928-631e01920d9c-8130a499.md)
 
-### Workbooks (6)
+### Workbooks (13)
+
+**In solution [](../solutions/.md):**
+- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)

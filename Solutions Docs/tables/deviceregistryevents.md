@@ -17,7 +17,7 @@ Creation and modification of registry entries
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceregistryevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceregistryevents-table) |
 
-## Solutions (6)
+## Solutions (7)
 
 This table is used by the following solutions:
 
@@ -26,6 +26,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (1)
@@ -36,9 +37,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (35)
 
-### Analytic Rules (2)
+### Analytic Rules (3)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 - [Component Object Model Hijacking - Vault7 trick](../content/falconfriday-component-object-model-hijacking-vault7-trick-1aaff41f-4e18-45b1-bb34-de6eb4943cf2-23d9ec72.md)
@@ -46,12 +47,47 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-506f4d6b-3864-4bb1-8f75-a13fb066f97a-66639731.md)
 
-### Hunting Queries (1)
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [COM Registry Key Modified to Point to File in Color Profile Folder](../content/standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.md)
+
+### Hunting Queries (19)
+
+**In solution [](../solutions/.md):**
+- [Accessibility Features](../content/-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-089f8ddf.md)
+- [Baseline Comparison](../content/-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-7679c313.md)
+- [KNOTWEED-COM Registry Key Modified to Point to Color Profile Folder](../content/-knotweed-com-registry-key-modified-to-point-to-color-profile-folder-9c1331df-9bb3-4b52-b7d7-5a6e9e6d97b4-287541c0.md)
+- [MosaicLoader](../content/-mosaicloader-625dce50-2fec-4f49-be92-ad4cab98b313-892ae71f.md)
+- [OceanLotus registry activity](../content/-oceanlotus-registry-activity-3e571521-6f73-423f-9280-aff6170c9d81-af85d2f6.md)
+- [RunMRU with non-ASCII characters](../content/-runmru-with-non-ascii-characters-6e8ee46f-80ee-46f6-be49-49a66f01edce-6b8695ea.md)
+- [Services](../content/-services-dd76f1c0-edc9-45cb-aeae-f5142caf583c-7fde5352.md)
+- [Suspicious Registry Keys](../content/-suspicious-registry-keys-fab0fc37-d74a-43b6-9f13-d517b9cbcb14-3806a247.md)
+- [detect-impacket-atexec](../content/-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-664f3f60.md)
+- [qakbot-campaign-registry-edit](../content/-qakbot-campaign-registry-edit-3f305589-cde2-4509-8204-63cb2a00117c-134960ec.md)
+- [rare_sch_task_with_activity](../content/-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-4e918578.md)
+- [suspicious-base64-encoded-registry-keys](../content/-suspicious-base64-encoded-registry-keys-4751319e-6d20-4c26-893d-baaad90f0747-1fcd4f0f.md)
+- [suspicious-command-interpreters-added-to-registry](../content/-suspicious-command-interpreters-added-to-registry-74dd8aa9-996b-44b1-bf36-9ac9ef6d2c02-79b91a4f.md)
+- [suspicious-keywords-in-registry](../content/-suspicious-keywords-in-registry-749f313e-08b4-48f6-9f9d-ba57c1abbf55-175afb18.md)
+- [wadhrama-credential-dump](../content/-wadhrama-credential-dump-8348d279-c95f-4dbe-b952-65048dc06559-eb0060d1.md)
+- [wdigest-caching](../content/-wdigest-caching-05a01ec8-ecab-4f9a-9aae-8d8cc061fe05-0f99e385.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-0efbcea0-1dc0-4844-8a9c-3a1d98fc1697-1d4d4510.md)
 
-### Workbooks (5)
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [MDE_FindMountedISOandDriveLetters](../content/standalone-content-mde-findmountedisoanddriveletters-19270420-5d36-43df-8bed-c34a47fadc92-9edbea2e.md)
+- [MDE_ProxyChangesViaRegistry](../content/standalone-content-mde-proxychangesviaregistry-7d905049-7e23-451e-bb57-0bfb6dd43f60-5f256293.md)
+
+### Workbooks (13)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [MicrosoftDefenderForEndPoint](../content/-microsoftdefenderforendpoint-f98fcc1e.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)

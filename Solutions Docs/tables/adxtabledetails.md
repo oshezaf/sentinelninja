@@ -18,6 +18,13 @@ Reference for ADXTableDetails table in Azure Monitor Logs.
 
 ---
 
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [](../solutions/.md):**
+- [ADXvsLA](../content/-adxvsla-be03aca4.md)
+
 ## Resource Types
 
 This table collects data from the following Azure resource types:

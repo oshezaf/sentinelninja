@@ -20,9 +20,12 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [](../solutions/.md):**
+- [OrcaAlerts](../content/-orcaalerts-a9f67b99.md)
 
 **In solution [Orca Security Alerts](../solutions/orca-security-alerts.md):**
 - [OrcaAlerts](../content/orca-security-alerts-orcaalerts-8a812d22.md)

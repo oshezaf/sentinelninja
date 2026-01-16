@@ -31,9 +31,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (6)
 
-### Workbooks (2)
+### Workbooks (6)
+
+**In solution [](../solutions/.md):**
+- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 - [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md)

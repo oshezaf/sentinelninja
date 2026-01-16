@@ -20,7 +20,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (20)
+## Content Items Using This Table (21)
 
 ### Analytic Rules (12)
 
@@ -38,7 +38,10 @@ This table is ingested by the following connectors:
 - [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-042cd40e.md)
 - [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-df6456ca.md)
 
-### Hunting Queries (8)
+### Hunting Queries (9)
+
+**In solution [](../solutions/.md):**
+- [GitHub Inactive or New Account Access or Usage](../content/-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f-4c3f7f32.md)
 
 **In solution [GitHub](../solutions/github.md):**
 - [GitHub First Time Invite Member and Add Member to Repo](../content/github-github-first-time-invite-member-and-add-member-to-repo-f0d30d3c-e6ad-480a-90e8-1bd7cc84881b-0912ca5c.md)

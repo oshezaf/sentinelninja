@@ -20,6 +20,13 @@ This table is ingested by the following connectors:
 
 ---
 
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [](../solutions/.md):**
+- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (2)

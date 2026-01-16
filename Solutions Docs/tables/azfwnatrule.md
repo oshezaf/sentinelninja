@@ -32,9 +32,14 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (6)
 
-### Workbooks (3)
+### Workbooks (6)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 - [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md)

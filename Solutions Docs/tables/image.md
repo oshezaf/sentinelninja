@@ -18,14 +18,18 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (12)
 
 ### Analytic Rules (1)
 
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
 
-### Hunting Queries (2)
+### Hunting Queries (4)
+
+**In solution [](../solutions/.md):**
+- [Accessibility Features](../content/-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-089f8ddf.md)
+- [Baseline Comparison](../content/-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-7679c313.md)
 
 **In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
 - [Persisting via IFEO Registry Key](../content/endpoint-threat-protection-essentials-persisting-via-ifeo-registry-key-f82c89fa-c969-4d12-832f-04d55d14522c-6020db66.md)
@@ -33,7 +37,14 @@ This table is used by the following solutions:
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
 - [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md)
 
-### Workbooks (2)
+### Workbooks (7)
+
+**In solution [](../solutions/.md):**
+- [AWSS3](../content/-awss3-8a6199f4.md)
+- [AmazonWebServicesNetworkActivities](../content/-amazonwebservicesnetworkactivities-0863102c.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
+- [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md)

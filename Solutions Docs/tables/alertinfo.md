@@ -32,7 +32,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (29)
+## Content Items Using This Table (57)
 
 ### Analytic Rules (12)
 
@@ -52,7 +52,35 @@ This table is ingested by the following connectors:
 - [Sentinel One - Same custom rule triggered on different hosts](../content/sentinelone-sentinel-one-same-custom-rule-triggered-on-different-hosts-5586d378-1bce-4d9b-9ac8-e7271c9d5a9a-6f74484f.md)
 - [Sentinel One - User viewed agent's passphrase](../content/sentinelone-sentinel-one-user-viewed-agent's-passphrase-51999097-60f4-42c0-bee8-fa28160e5583-1188d485.md)
 
-### Hunting Queries (16)
+### Hunting Queries (42)
+
+**In solution [](../solutions/.md):**
+- [Alerts related to Log4j vulnerability](../content/-alerts-related-to-log4j-vulnerability-ef76733a-86ab-4592-b341-64a4b369f4b7-3ef58ee5.md)
+- [Antivirus detections (1)](../content/-antivirus-detections-1-05250700-5123-45be-826d-dd14c623fade-b1135e2e.md)
+- [Baseline Comparison](../content/-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-7679c313.md)
+- [Cobalt Strike Lateral Movement](../content/-cobalt-strike-lateral-movement-1212ae5c-43cc-4c17-bcbb-d23cf9ad3483-d4d92537.md)
+- [Devices with Log4j vulnerability alerts and additional other alert related context](../content/-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-context-f0f222ae-a6c9-4992-9fdb-4b1601da244c-bed3529e.md)
+- [Distribution from remote location](../content/-distribution-from-remote-location-4e070afe-7a9b-4313-a964-c3168fffc1e2-162d3840.md)
+- [Events surrounding alert (1)](../content/-events-surrounding-alert-1-55a29d46-2cd5-44af-80aa-20d0ac4c86f8-cc21e9aa.md)
+- [Events surrounding alert (3)](../content/-events-surrounding-alert-3-c4955324-02ff-46fa-a642-64952334482d-55825ea1.md)
+- [ExploitGuardBlockOfficeChildProcess (1)](../content/-exploitguardblockofficechildprocess-1-fed32a95-bba6-47a6-8519-8d2a2cee97f9-233e1d8f.md)
+- [ExploitGuardBlockOfficeChildProcess (3)](../content/-exploitguardblockofficechildprocess-3-521f58f9-92b8-407b-9434-798a9f527b3c-8cb7819a.md)
+- [File Backup Deletion Alerts](../content/-file-backup-deletion-alerts-21444f27-9184-45bf-a335-7b7169a56790-206168a5.md)
+- [Gootkit File Delivery](../content/-gootkit-file-delivery-11d725f5-93d8-4b34-a64f-bf8450cdb184-13e213ec.md)
+- [Gootkit-malware](../content/-gootkit-malware-c8796d76-9a84-4cc8-91b5-d01f882869d4-faf18fd1.md)
+- [ImpersonatedUserFootprint](../content/-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-5ce685b6.md)
+- [Microsoft Teams chat initiated by a suspicious external user](../content/-microsoft-teams-chat-initiated-by-a-suspicious-external-user-8b88ecaf-88b3-4d70-814f-a55b96748ff5-0a4e9f9e.md)
+- [Open email link](../content/-open-email-link-67be3fdd-6942-45f8-8663-d825b61d1ab9-d32c53a4.md)
+- [Potential ransomware activity related to Cobalt Strike](../content/-potential-ransomware-activity-related-to-cobalt-strike-95db9b9c-7a12-4c0b-85c8-1c54f67c5ac7-96a9ad1b.md)
+- [Ransomware hits healthcare - Backup deletion](../content/-ransomware-hits-healthcare-backup-deletion-b0188e2d-734d-4d54-8e70-c4157a195bb1-11471ddf.md)
+- [Ransomware hits healthcare - Possible compromised accounts](../content/-ransomware-hits-healthcare-possible-compromised-accounts-f4506828-36f5-4668-8203-de062963be63-144effbf.md)
+- [Sticky Keys](../content/-sticky-keys-3c82774a-df78-44eb-9ab3-13ef37c63ae4-4264c379.md)
+- [SuspiciousUrlClicked](../content/-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-41b2fb21.md)
+- [URL click on ZAP email](../content/-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-5104f190.md)
+- [URLClick details based on malicious URL click alert](../content/-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-a1c0bbf7.md)
+- [backup-deletion](../content/-backup-deletion-1df2054c-5c63-4a2c-943b-0069af45bd38-6848edda.md)
+- [cobalt-strike](../content/-cobalt-strike-0a6e58fa-0689-418e-b05c-758c41664081-4967e91b.md)
+- [identify-accounts-logged-on-to-endpoints-affected-by-cobalt-strike](../content/-identify-accounts-logged-on-to-endpoints-affected-by-cobalt-strike-28558a10-d431-443b-886d-543a5b5d1871-989d28bc.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Alerts Related to Log4j Vulnerability](../content/microsoft-defender-xdr-alerts-related-to-log4j-vulnerability-e7791695-c103-4d20-a75a-53e90788616b-ae157950.md)
@@ -74,7 +102,11 @@ This table is ingested by the following connectors:
 - [Sentinel One - Uninstalled agents](../content/sentinelone-sentinel-one-uninstalled-agents-f3a7cedd-6fc3-4661-a0ad-c1738e531917-9f651695.md)
 - [Sentinel One - Users by alert count](../content/sentinelone-sentinel-one-users-by-alert-count-56500e23-4e64-45a5-a444-98a1acb2f700-01daf4b9.md)
 
-### Workbooks (1)
+### Workbooks (3)
+
+**In solution [](../solutions/.md):**
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [SentinelOne](../solutions/sentinelone.md):**
 - [SentinelOne](../content/sentinelone-sentinelone-8f12ec76.md)

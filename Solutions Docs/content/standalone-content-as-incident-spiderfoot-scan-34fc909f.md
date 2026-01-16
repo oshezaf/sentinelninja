@@ -1,0 +1,22 @@
+# AS-Incident-Spiderfoot-Scan
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+This playbook will pull email addresses from the account entities in a Microsoft Sentinel incident and use them as targets in a Spiderfoot scan. By default, the scan is created using the HaveIBeenPwned module. The resulting report of that scan will be emailed to a recipient specified upon deployment.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Playbook |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Playbooks/Playbooks/AS-Incident-Spiderfoot-Scan/azuredeploy.json) |
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Playbooks](playbooks.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

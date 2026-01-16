@@ -30,9 +30,21 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (18)
 
-### Workbooks (8)
+### Workbooks (18)
+
+**In solution [](../solutions/.md):**
+- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)

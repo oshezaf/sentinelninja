@@ -18,7 +18,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (4)
 
 ### Analytic Rules (1)
 
@@ -30,7 +30,10 @@ This table is used by the following solutions:
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
 - [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [](../solutions/.md):**
+- [SonicWallFirewall](../content/-sonicwallfirewall-a12a2f18.md)
 
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
 - [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md)

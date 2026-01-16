@@ -1,0 +1,32 @@
+# New ServicePrincipal running queries
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+This hunting query looks for new Service Principals running queries that have not previously been seen running queries.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `98e4df23-7bd2-480d-814a-a03f77efc670` |
+| **Tactics** | Collection, Exfiltration |
+| **Techniques** | T1530, T1213, T1020 |
+| **Required Connectors** | [AzureMonitor(Query Audit)](../connectors/azuremonitor-query-audit.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hunting%20Queries/Hunting%20Queries/LAQueryLogs/NewServicePrincipalRunningQueries.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`LAQueryLogs`](../tables/laquerylogs.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

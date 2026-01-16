@@ -1,0 +1,32 @@
+# Failed attempt to access Azure Portal
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Access attempts to Azure Portal from an unauthorized user. Either invalid password or the user account does not exist.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `cf83633e-5dfd-4887-993b-c910452439da` |
+| **Tactics** | InitialAccess |
+| **Techniques** | T1078 |
+| **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hunting%20Queries/Hunting%20Queries/SigninLogs/UnauthUser_AzurePortal.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`SigninLogs`](../tables/signinlogs.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

@@ -14,7 +14,7 @@ Reference for AzureDiagnostics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics) |
 
-## Solutions (35)
+## Solutions (36)
 
 This table is used by the following solutions:
 
@@ -46,6 +46,7 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
 - [SlashNext](../solutions/slashnext.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -76,9 +77,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (78)
+## Content Items Using This Table (109)
 
-### Analytic Rules (36)
+### Analytic Rules (42)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Azure WAF matching for Log4j vuln(CVE-2021-44228)](../content/apache-log4j-vulnerability-detection-azure-waf-matching-for-log4j-vuln-cve-2021-44228-2de8abd6-a613-450e-95ed-08e503369fb3-2f37c37a.md)
@@ -121,6 +122,14 @@ This table is ingested by the following connectors:
 - [Front Door Premium WAF - SQLi Detection](../content/azure-web-application-firewall-waf-front-door-premium-waf-sqli-detection-16da3a2a-af29-48a0-8606-d467c180fe18-3acd0e4e.md)
 - [Front Door Premium WAF - XSS Detection](../content/azure-web-application-firewall-waf-front-door-premium-waf-xss-detection-b7643904-5081-4920-917e-a559ddc3448f-f46a8943.md)
 
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Application Gateway WAF - SQLi Detection](../content/standalone-content-application-gateway-waf-sqli-detection-68c0b6bb-6bd9-4ef4-9011-08998c8ef90f-165d539a.md)
+- [Application Gateway WAF - XSS Detection](../content/standalone-content-application-gateway-waf-xss-detection-d2bc08fa-030a-4eea-931a-762d27c6a042-fddb41a1.md)
+- [Known Forest Blizzard group domains - July 2019](../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.md)
+- [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md)
+- [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md)
+- [Star Blizzard C2 Domains August 2022](../content/standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md)
+
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map IP Entity to Azure SQL Security Audit Events](../content/threat-intelligence-ti-map-ip-entity-to-azure-sql-security-audit-events-d0aa8969-1bbe-4da3-9e76-09e5f67c9d85-cbef7484.md)
 - [TI map IP entity to Azure Key Vault logs](../content/threat-intelligence-ti-map-ip-entity-to-azure-key-vault-logs-57c7e832-64eb-411f-8928-4133f01f4a25-7c3f7a41.md)
@@ -134,7 +143,10 @@ This table is ingested by the following connectors:
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
 
-### Hunting Queries (19)
+### Hunting Queries (21)
+
+**In solution [](../solutions/.md):**
+- [Possible SpringShell Exploitation Attempt (CVE-2022-22965)](../content/-possible-springshell-exploitation-attempt-cve-2022-22965-1bb4a007-7d1d-4506-ada9-222604f54ec6-2e3e0804.md)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Azure WAF Log4j CVE-2021-44228 hunting](../content/apache-log4j-vulnerability-detection-azure-waf-log4j-cve-2021-44228-hunting-1d4d383e-0ca6-4d3a-a861-8f37aeef18cb-dcfb1bb2.md)
@@ -166,10 +178,38 @@ This table is ingested by the following connectors:
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
 - [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md)
 
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Check critical ports opened to the entire internet](../content/standalone-content-check-critical-ports-opened-to-the-entire-internet-66d494c0-233c-438a-9b1b-5fe839790d38-7cf5a163.md)
+
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 - [Possible Webshell usage attempt related to SpringShell(CVE-2022-22965)](../content/web-shells-threat-protection-possible-webshell-usage-attempt-related-to-springshell-cve-2022-22965-6911d1df-4204-43b2-a64c-3cb102551ddd-8605b97e.md)
 
-### Workbooks (23)
+### Workbooks (46)
+
+**In solution [](../solutions/.md):**
+- [AksSecurity](../content/-akssecurity-f7a12d8d.md)
+- [AutomationHealth](../content/-automationhealth-0c1257cf.md)
+- [AzDDoSStandardWorkbook](../content/-azddosstandardworkbook-b70f2b6f.md)
+- [AzureFirewall](../content/-azurefirewall-e0dacc6a.md)
+- [AzureFirewallWorkbook](../content/-azurefirewallworkbook-8b210c26.md)
+- [AzureKeyVaultWorkbook](../content/-azurekeyvaultworkbook-e23dd511.md)
+- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
+- [AzureOpenAIMonitoring](../content/-azureopenaimonitoring-c0670e3e.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
+- [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [PlaybookHealth](../content/-playbookhealth-00abecf8.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [UserMap](../content/-usermap-2bfd459f.md)
+- [WebApplicationFirewallFirewallEvents](../content/-webapplicationfirewallfirewallevents-936d9b2e.md)
+- [WebApplicationFirewallGatewayAccessEvents](../content/-webapplicationfirewallgatewayaccessevents-e34d7fef.md)
+- [WebApplicationFirewallOverview](../content/-webapplicationfirewalloverview-89f11ff1.md)
+- [WebApplicationFirewallWAFTypeEvents](../content/-webapplicationfirewallwaftypeevents-3904f88e.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md)

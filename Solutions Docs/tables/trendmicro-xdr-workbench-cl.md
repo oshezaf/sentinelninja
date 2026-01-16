@@ -20,14 +20,18 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (4)
 
 ### Analytic Rules (1)
 
 **In solution [Trend Micro Vision One](../solutions/trend-micro-vision-one.md):**
 - [Create Incident for XDR Alerts](../content/trend-micro-vision-one-create-incident-for-xdr-alerts-0febd8cc-1b8d-45ed-87b3-e1e8a57d14cd-cbe34215.md)
 
-### Workbooks (1)
+### Workbooks (3)
+
+**In solution [](../solutions/.md):**
+- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+- [TrendMicroXDROverview](../content/-trendmicroxdroverview-9b9318bf.md)
 
 **In solution [Trend Micro Vision One](../solutions/trend-micro-vision-one.md):**
 - [TrendMicroXDROverview](../content/trend-micro-vision-one-trendmicroxdroverview-d7791cc7.md)

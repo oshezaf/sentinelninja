@@ -20,9 +20,13 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (3)
 
-### Workbooks (1)
+### Workbooks (3)
+
+**In solution [](../solutions/.md):**
+- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+- [F5Networks](../content/-f5networks-d5484f34.md)
 
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
 - [F5Networks](../content/f5-big-ip-f5networks-56be211d.md)

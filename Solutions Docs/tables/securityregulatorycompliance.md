@@ -25,7 +25,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (15)
 
 ### Analytic Rules (4)
 
@@ -39,7 +39,13 @@ This table is used by the following solutions:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NIST SP 800-53 Posture Changed](../content/nistsp80053-nist-sp-800-53-posture-changed-dd834c97-4638-4bb3-a4e3-807e8b0580dc-3c44ad7b.md)
 
-### Workbooks (7)
+### Workbooks (11)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)

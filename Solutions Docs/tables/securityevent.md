@@ -16,7 +16,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent) |
 
-## Solutions (29)
+## Solutions (30)
 
 This table is used by the following solutions:
 
@@ -41,6 +41,7 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -63,9 +64,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (146)
+## Content Items Using This Table (225)
 
-### Analytic Rules (50)
+### Analytic Rules (85)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 - [Powershell Empire Cmdlets Executed in Command Line](../content/attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.md)
@@ -109,6 +110,43 @@ This table is ingested by the following connectors:
 - [Semperis DSP Well-known privileged SIDs in sIDHistory](../content/semperis-directory-services-protector-semperis-dsp-well-known-privileged-sids-in-sidhistory-ddd75d93-5b8b-4349-babe-c4e15343c5a3-fe463147.md)
 - [Semperis DSP Zerologon vulnerability](../content/semperis-directory-services-protector-semperis-dsp-zerologon-vulnerability-85c1f9e4-6f14-46bf-82d5-dbe495b92aab-46434387.md)
 
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [AD FS Abnormal EKU object identifier attribute](../content/standalone-content-ad-fs-abnormal-eku-object-identifier-attribute-cfc1ae62-db63-4a3e-b88b-dc04030c2257-02097b85.md)
+- [AD account with Don't Expire Password](../content/standalone-content-ad-account-with-don't-expire-password-6c360107-f3ee-4b91-9f43-f4cfd90441cf-b63ef58d.md)
+- [ADFS DKM Master Key Export](../content/standalone-content-adfs-dkm-master-key-export-18e6a87e-9d06-4a4e-8b59-3469cd49552d-b85786be.md)
+- [Account added and removed from privileged groups](../content/standalone-content-account-added-and-removed-from-privileged-groups-7efc75ce-e2a4-400f-a8b1-283d3b0f2c60-50f0398b.md)
+- [AdminSDHolder Modifications](../content/standalone-content-adminsdholder-modifications-52aec824-96c1-4a03-8e44-bb70532e6cea-5f0a7fb2.md)
+- [Audit policy manipulation using auditpol utility](../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.md)
+- [COM Registry Key Modified to Point to File in Color Profile Folder](../content/standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.md)
+- [Email access via active sync](../content/standalone-content-email-access-via-active-sync-2f561e20-d97b-4b13-b02d-18b34af6e87c-db926024.md)
+- [Failed AzureAD logons but success logon to host](../content/standalone-content-failed-azuread-logons-but-success-logon-to-host-8ee967a2-a645-4832-85f4-72b635bcb3a6-d05c051f.md)
+- [Failed host logons but success logon to AzureAD](../content/standalone-content-failed-host-logons-but-success-logon-to-azuread-1ce5e766-26ab-4616-b7c8-3b33ae321e80-db4ff93a.md)
+- [Failed logon attempts by valid accounts within 10 mins](../content/standalone-content-failed-logon-attempts-by-valid-accounts-within-10-mins-0777f138-e5d8-4eab-bec1-e11ddfbc2be2-127ed234.md)
+- [Fake computer account created](../content/standalone-content-fake-computer-account-created-c1faf5e8-6958-11ec-90d6-0242ac120003-5106eb49.md)
+- [Gain Code Execution on ADFS Server via Remote WMI Execution](../content/standalone-content-gain-code-execution-on-adfs-server-via-remote-wmi-execution-0bd65651-1404-438b-8f63-eecddcec87b4-d7675a11.md)
+- [Group created then added to built in domain local or global group](../content/standalone-content-group-created-then-added-to-built-in-domain-local-or-global-group-a7564d76-ec6b-4519-a66b-fcc80c42332b-1a2e6754.md)
+- [Identify Mango Sandstorm powershell commands](../content/standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.md)
+- [Microsoft Entra ID Health Monitoring Agent Registry Keys Access](../content/standalone-content-microsoft-entra-id-health-monitoring-agent-registry-keys-access-f819c592-c5f9-4d5c-a79f-1e6819863533-9af33463.md)
+- [Microsoft Entra ID Health Service Agents Registry Keys Access](../content/standalone-content-microsoft-entra-id-health-service-agents-registry-keys-access-06bbf969-fcbe-43fa-bac2-b2fa131d113a-b4251aca.md)
+- [Midnight Blizzard - Script payload stored in Registry](../content/standalone-content-midnight-blizzard-script-payload-stored-in-registry-00cb180c-08a8-4e55-a276-63fb1442d5b5-7c2a822d.md)
+- [Midnight Blizzard - suspicious rundll32.exe execution of vbscript](../content/standalone-content-midnight-blizzard-suspicious-rundll32.exe-execution-of-vbscript-d82e1987-4356-4a7b-bc5e-064f29b143c0-e1d64a0c.md)
+- [Multiple Password Reset by user](../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.md)
+- [Multiple RDP connections from Single System](../content/standalone-content-multiple-rdp-connections-from-single-system-78422ef2-62bf-48ca-9bab-72c69818a425-6fdca3be.md)
+- [New user created and added to the built-in administrators group](../content/standalone-content-new-user-created-and-added-to-the-built-in-administrators-group-aa1eff90-29d4-49dc-a3ea-b65199f516db-5300f307.md)
+- [Possible Resource-Based Constrained Delegation Abuse](../content/standalone-content-possible-resource-based-constrained-delegation-abuse-2937bc6b-7cda-4fba-b452-ea43ba8e835f-0940e8da.md)
+- [Potential Build Process Compromise](../content/standalone-content-potential-build-process-compromise-5ef06767-b37c-4818-b035-47de950d0046-3d9f2492.md)
+- [Potential Kerberoasting](../content/standalone-content-potential-kerberoasting-1572e66b-20a7-4012-9ec4-77ec4b101bc8-6d60a025.md)
+- [RDP Nesting](../content/standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.md)
+- [Rare RDP Connections](../content/standalone-content-rare-rdp-connections-45b903c5-6f56-4969-af10-ae62ac709718-9368c501.md)
+- [Security Service Registry ACL Modification](../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md)
+- [Service Principal Name (SPN) Assigned to User Account](../content/standalone-content-service-principal-name-spn-assigned-to-user-account-875d0eb1-883a-4191-bd0e-dbfdeb95a464-6875f39b.md)
+- [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md)
+- [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md)
+- [Unusual identity creation using exchange powershell](../content/standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.md)
+- [User account added to built in domain local or global group](../content/standalone-content-user-account-added-to-built-in-domain-local-or-global-group-a35f2c18-1b97-458f-ad26-e033af18eb99-fb766415.md)
+- [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md)
+- [User account enabled and disabled within 10 mins](../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.md)
+
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map Email entity to SecurityEvent](../content/threat-intelligence-ti-map-email-entity-to-securityevent-2fc5d810-c9cc-491a-b564-841427ae0e50-9cb621b7.md)
 - [TI map File Hash to Security Event](../content/threat-intelligence-ti-map-file-hash-to-security-event-a7427ed7-04b4-4e3b-b323-08b981b9b4bf-a0646697.md)
@@ -143,7 +181,22 @@ This table is ingested by the following connectors:
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
 
-### Hunting Queries (73)
+### Hunting Queries (90)
+
+**In solution [](../solutions/.md):**
+- [AD Account Lockout](../content/-ad-account-lockout-e7642e6e-cf27-46ec-a4b9-e4475228fead-9a1c826c.md)
+- [Critical user management operations followed by disabling of System Restore from admin account](../content/-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-account-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-4efbbcf7.md)
+- [Download of New File Using Curl](../content/-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-4a1c1885.md)
+- [Fake computer account authentication attempt](../content/-fake-computer-account-authentication-attempt-f68084a2-87eb-11ec-a8a3-0242ac120002-004b1952.md)
+- [Large Scale Malware Deployment via GPO Scheduled Task Modification](../content/-large-scale-malware-deployment-via-gpo-scheduled-task-modification-a1a06ba2-87f8-11ec-a8a3-0242ac120002-e77f98f2.md)
+- [Possible command injection attempts against Azure Integration Runtimes](../content/-possible-command-injection-attempts-against-azure-integration-runtimes-2d1a3e86-f1a0-49d0-b88a-55789e1d6660-b11530e7.md)
+- [Potential Process Doppelganging](../content/-potential-process-doppelganging-97ff9459-dade-404a-b90e-d93b9acde1a4-9a4c4735.md)
+- [RID Hijacking](../content/-rid-hijacking-fcdeec10-6948-11ec-90d6-0242ac120003-21c889c4.md)
+- [Rare firewall rule changes using netsh](../content/-rare-firewall-rule-changes-using-netsh-3dc5dc8b-160b-407e-9925-24a91e3599df-b7eb240d.md)
+- [Recon Activity with Interactive Logon Correlation](../content/-recon-activity-with-interactive-logon-correlation-346d36c9-2e79-4d8f-8c14-1eef73d38737-91bf2daf.md)
+- [Remote Task Creation/Update using Schtasks Process](../content/-remote-task-creation-update-using-schtasks-process-9a5f5afa-8d85-11ec-b909-0242ac120002-751b26bb.md)
+- [Suspicious command line tokens in LolBins or LolScripts](../content/-suspicious-command-line-tokens-in-lolbins-or-lolscripts-4a6030de-c11c-4206-b4ea-cd005ebf80a2-73446a9d.md)
+- [Users Opening and Reading the Local Device Identity Key](../content/-users-opening-and-reading-the-local-device-identity-key-9feddda0-6f46-43b4-a54f-5921e2b136b8-73a66973.md)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 - [Potential Impacket Execution](../content/attacker-tools-threat-protection-essentials-potential-impacket-execution-24ae555c-5e33-4b5d-827a-44206e39f6b4-04d0f42f.md)
@@ -176,6 +229,12 @@ This table is ingested by the following connectors:
 - [Known Nylon Typhoon Registry modifications patterns](../content/legacy-ioc-based-threat-protection-known-nylon-typhoon-registry-modifications-patterns-f090f8f4a-b986-42d2-b536-e0795c723e25-f442d105.md)
 - [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.md)
 - [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md)
+
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [External IP address in Command Line](../content/standalone-content-external-ip-address-in-command-line-2f6032ac-bb18-48b0-855a-7b05cf074957-0a0cb851.md)
+- [Failed Login Attempt by Expired account](../content/standalone-content-failed-login-attempt-by-expired-account-562900b1-39c4-4baf-a050-9cad1641db35-d62dcff7.md)
+- [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md)
+- [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map File Entity to Security Event](../content/threat-intelligence-ti-map-file-entity-to-security-event-233441b9-cc92-4c9b-87fa-73b855fcd4b8-14557cf7.md)
@@ -232,7 +291,36 @@ This table is ingested by the following connectors:
 - [VIP account more than 6 failed logons in 10](../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-e8d36582-c403-4466-bd44-ebede5b6fa6e-f9a5b0f7.md)
 - [Windows System Time changed on hosts](../content/windows-security-events-windows-system-time-changed-on-hosts-9fd6f61d-2cc3-48de-acf5-7194e78d6ea1-9fe3fe4a.md)
 
-### Workbooks (23)
+### Workbooks (50)
+
+**In solution [](../solutions/.md):**
+- [AMAmigrationTracker](../content/-amamigrationtracker-044e752e.md)
+- [AdvancedWorkbookConcepts](../content/-advancedworkbookconcepts-fa827ab4.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
+- [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
+- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [EventAnalyzer](../content/-eventanalyzer-b6ad21ea.md)
+- [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
+- [IdentityAndAccess](../content/-identityandaccess-6100dc4e.md)
+- [InsecureProtocols](../content/-insecureprotocols-ae7d5c76.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [LogSourcesAndAnalyticRulesCoverage](../content/-logsourcesandanalyticrulescoverage-a4ef56a6.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [SecurityStatus](../content/-securitystatus-183600b3.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
+- [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
+- [SysmonThreatHunting](../content/-sysmonthreathunting-88bb3312.md)
+- [WindowsAuditChecker](../content/-windowsauditchecker-27eb28a6.md)
+- [WindowsFirewall](../content/-windowsfirewall-39ee633b.md)
+- [WindowsFirewallViaAMA](../content/-windowsfirewallviaama-bfbc801e.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)

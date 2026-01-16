@@ -27,9 +27,20 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (14)
 
-### Workbooks (5)
+### Workbooks (14)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [Barracuda](../content/-barracuda-990015fb.md)
+- [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
+- [ForcepointNGFWAdvanced](../content/-forcepointngfwadvanced-9bfc0ecf.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [SecurityStatus](../content/-securitystatus-183600b3.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
 **In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):**
 - [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md)

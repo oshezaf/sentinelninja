@@ -26,9 +26,19 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (11)
 
-### Workbooks (3)
+### Workbooks (11)
+
+**In solution [](../solutions/.md):**
+- [AutomationHealth](../content/-automationhealth-0c1257cf.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [SentinelHealth](../content/-sentinelhealth-67903eec.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)

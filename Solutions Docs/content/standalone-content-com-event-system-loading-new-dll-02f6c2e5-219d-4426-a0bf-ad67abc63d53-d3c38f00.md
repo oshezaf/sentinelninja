@@ -1,0 +1,34 @@
+# COM Event System Loading New DLL
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+This query uses Sysmon Image Load (Event ID 7) and Process Create (Event ID 1) data to look for COM Event System being used to load a newly seen DLL.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `02f6c2e5-219d-4426-a0bf-ad67abc63d53` |
+| **Severity** | Medium |
+| **Kind** | Scheduled |
+| **Tactics** | PrivilegeEscalation |
+| **Techniques** | T1543 |
+| **Required Connectors** | [SecurityEvents](../connectors/securityevents.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/SecurityEvent/COMEventSystemLoadingNewDLL.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`Event`](../tables/event.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

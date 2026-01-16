@@ -14,9 +14,12 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [](../solutions/.md):**
+- [F5BIGIPSystemMetrics](../content/-f5bigipsystemmetrics-42ca2db1.md)
 
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
 - [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md)

@@ -16,7 +16,7 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail) |
 
-## Solutions (14)
+## Solutions (15)
 
 This table is used by the following solutions:
 
@@ -30,6 +30,7 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -44,9 +45,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (120)
+## Content Items Using This Table (138)
 
-### Analytic Rules (73)
+### Analytic Rules (76)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [AWS Config Service Resource Deletion Attempts](../content/amazon-web-services-aws-config-service-resource-deletion-attempts-093fe75e-44f1-4d3e-94dc-6d258a6dd2d2-c24c7483.md)
@@ -131,13 +132,18 @@ This table is ingested by the following connectors:
 **In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
 - [New UserAgent observed in last 24 hours](../content/network-threat-protection-essentials-new-useragent-observed-in-last-24-hours-b725d62c-eb77-42ff-96f6-bdc6745fc6e0-a94f1913.md)
 
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Failed AWS Console logons but success logon to AzureAD](../content/standalone-content-failed-aws-console-logons-but-success-logon-to-azuread-910124df-913c-47e3-a7cd-29e1643fa55e-c02ad301.md)
+- [Failed AzureAD logons but success logon to AWS Console](../content/standalone-content-failed-azuread-logons-but-success-logon-to-aws-console-643c2025-9604-47c5-833f-7b4b9378a1f5-4ca50ad1.md)
+- [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md)
+
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-ti-map-ip-entity-to-awscloudtrail-f110287e-1358-490d-8147-ed804b328514-010bee9c.md)
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 - [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md)
 
-### Hunting Queries (37)
+### Hunting Queries (38)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [Bucket versioning suspended](../content/amazon-web-services-bucket-versioning-suspended-48c49b1d-2aa0-442b-96e3-cae6ad1251cd-9e746ab9.md)
@@ -180,7 +186,26 @@ This table is ingested by the following connectors:
 **In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
 - [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md)
 
-### Workbooks (10)
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md)
+
+### Workbooks (24)
+
+**In solution [](../solutions/.md):**
+- [AWSS3](../content/-awss3-8a6199f4.md)
+- [AmazonWebServicesNetworkActivities](../content/-amazonwebservicesnetworkactivities-0863102c.md)
+- [AmazonWebServicesUserActivities](../content/-amazonwebservicesuseractivities-7672d3c7.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
+- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md)

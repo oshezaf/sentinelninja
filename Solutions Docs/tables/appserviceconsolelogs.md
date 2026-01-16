@@ -18,6 +18,13 @@ Reference for AppServiceConsoleLogs table in Azure Monitor Logs.
 
 ---
 
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [](../solutions/.md):**
+- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
+
 ## Resource Types
 
 This table collects data from the following Azure resource types:

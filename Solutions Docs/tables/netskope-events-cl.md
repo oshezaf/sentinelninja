@@ -15,9 +15,12 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
-### Workbooks (2)
+### Workbooks (3)
+
+**In solution [](../solutions/.md):**
+- [NetskopeEvents](../content/-netskopeevents-ad85ebb3.md)
 
 **In solution [Netskope](../solutions/netskope.md):**
 - [NetskopeEvents](../content/netskope-netskopeevents-8c0bf08d.md)

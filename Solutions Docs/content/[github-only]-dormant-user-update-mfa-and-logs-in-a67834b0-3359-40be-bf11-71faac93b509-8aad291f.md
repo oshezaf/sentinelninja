@@ -1,0 +1,32 @@
+# Dormant User Update MFA and Logs In
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+This querys look for users accounts that have not been successfully logged into recently, who then have a MFA method added or updated before logging in. Threat actors may look to re-activate dormant accounts and use them for access by adding MFA methods in the hope that changes to such dormant accounts may go un-noticed.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [[GitHub Only]](../solutions/[github-only].md) |
+| **ID** | `a67834b0-3359-40be-bf11-71faac93b509` |
+| **Tactics** | Persistence |
+| **Techniques** | T1098 |
+| **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AuditLogs`](../tables/auditlogs.md)
+- [`SigninLogs`](../tables/signinlogs.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md) · [Back to [GitHub Only]](../solutions/[github-only].md)
+

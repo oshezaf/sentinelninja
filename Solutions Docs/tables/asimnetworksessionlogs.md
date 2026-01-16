@@ -46,9 +46,12 @@ The following EventVendor/EventProduct values are used by connectors ingesting t
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
-### Workbooks (2)
+### Workbooks (3)
+
+**In solution [](../solutions/.md):**
+- [WindowsFirewallViaAMA](../content/-windowsfirewallviaama-bfbc801e.md)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)

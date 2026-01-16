@@ -20,9 +20,13 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (4)
 
-### Workbooks (2)
+### Workbooks (4)
+
+**In solution [](../solutions/.md):**
+- [F5BIGIPSystemMetrics](../content/-f5bigipsystemmetrics-42ca2db1.md)
+- [F5Networks](../content/-f5networks-d5484f34.md)
 
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
 - [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md)

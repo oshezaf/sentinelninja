@@ -25,9 +25,15 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (7)
 
-### Workbooks (3)
+### Workbooks (7)
+
+**In solution [](../solutions/.md):**
+- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)

@@ -31,9 +31,18 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (9)
 
-### Workbooks (2)
+### Workbooks (9)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [M365SecurityPosture](../content/-m365securityposture-5ae85fa7.md)
+- [MicrosoftCloudAppSecurity](../content/-microsoftcloudappsecurity-862f6f68.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 
 **In solution [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md):**
 - [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md)

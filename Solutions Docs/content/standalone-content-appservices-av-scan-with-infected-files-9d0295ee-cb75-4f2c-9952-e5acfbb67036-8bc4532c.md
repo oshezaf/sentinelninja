@@ -1,0 +1,31 @@
+# AppServices AV Scan with Infected Files
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Identifies if an AV scan finds infected files in Azure App Services.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `9d0295ee-cb75-4f2c-9952-e5acfbb67036` |
+| **Severity** | Informational |
+| **Kind** | Scheduled |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/AzureAppServices/AVScan_Infected_Files_Found.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AppServiceAntivirusScanAuditLogs`](../tables/appserviceantivirusscanauditlogs.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

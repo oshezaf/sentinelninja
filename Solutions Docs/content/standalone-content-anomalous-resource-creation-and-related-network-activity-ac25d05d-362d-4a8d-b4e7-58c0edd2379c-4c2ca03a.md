@@ -1,0 +1,33 @@
+# Anomalous Resource Creation and related Network Activity
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Indicates when an anomalous number of resources are created in Azure via AzureActivity log. Resource creation could indicate malicious or spurious use of your Azure Resource allocation.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `ac25d05d-362d-4a8d-b4e7-58c0edd2379c` |
+| **Tactics** | Impact |
+| **Techniques** | T1496 |
+| **Required Connectors** | [AzureActivity](../connectors/azureactivity.md), [AzureNetworkWatcher](../connectors/azurenetworkwatcher.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hunting%20Queries/Hunting%20Queries/MultipleDataSources/AzureResourceCreationWithNetworkActivity.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AzureActivity`](../tables/azureactivity.md)
+- [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

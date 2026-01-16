@@ -16,7 +16,7 @@ Reference for BehaviorAnalytics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behavioranalytics) |
 
-## Solutions (11)
+## Solutions (12)
 
 This table is used by the following solutions:
 
@@ -29,14 +29,15 @@ This table is used by the following solutions:
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ---
 
-## Content Items Using This Table (45)
+## Content Items Using This Table (63)
 
-### Analytic Rules (5)
+### Analytic Rules (7)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 - [MFA Rejected by User](../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.md)
@@ -45,7 +46,15 @@ This table is used by the following solutions:
 - [Suspicious Sign In Followed by MFA Modification](../content/microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.md)
 - [User Accounts - Sign in Failure due to CA Spikes](../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.md)
 
-### Hunting Queries (32)
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Azure VM Run Command operation executed during suspicious login window](../content/standalone-content-azure-vm-run-command-operation-executed-during-suspicious-login-window-11bda520-a965-4654-9a45-d09f372f71aa-f213ee84.md)
+- [Suspicious Sign In by Entra ID Connect Sync Account](../content/standalone-content-suspicious-sign-in-by-entra-id-connect-sync-account-2cd8b3d5-c9e0-4be3-80f7-0469d511c3f6-48c21081.md)
+
+### Hunting Queries (36)
+
+**In solution [](../solutions/.md):**
+- [Dormant User Update MFA and Logs In - UEBA](../content/-dormant-user-update-mfa-and-logs-in-ueba-6adc74fb-37f9-4187-ba7c-84269b09a485-3d6fbbf2.md)
+- [Privileged Account Password Changes](../content/-privileged-account-password-changes-d9cccaf9-d15e-4731-a62a-06d76e9c5e67-2d9261ac.md)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 - [Login attempts using Legacy Auth](../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.md)
@@ -62,6 +71,10 @@ This table is used by the following solutions:
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md)
 - [Insider Risk_Multiple Entity-Based Anomalies](../content/microsoftpurviewinsiderriskmanagement-insider-risk-multiple-entity-based-anomalies-3bc01058-ce23-45ba-a7e9-409d844b12dc-2bc6a4d7.md)
+
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Inactive or new account signins](../content/standalone-content-inactive-or-new-account-signins-847c2652-547d-4d5f-9b71-d2f8d81eac62-a5fd3c40.md)
+- [Login attempt by Blocked MFA user](../content/standalone-content-login-attempt-by-blocked-mfa-user-75fd68a2-9ed4-4a1c-8bd7-18efe4c99081-5904d25a.md)
 
 **In solution [UEBA Essentials](../solutions/ueba-essentials.md):**
 - [Anomalies on users tagged as VIP](../content/ueba-essentials-anomalies-on-users-tagged-as-vip-028ac38c-f5a4-483b-a58a-aa83d500bf27-67c13b87.md)
@@ -87,7 +100,21 @@ This table is used by the following solutions:
 - [Dormant Local Admin Logon](../content/ueba-essentials-dormant-local-admin-logon-2e20ec77-8d50-4959-a70d-79c341ee2c37-d3f55f49.md)
 - [Dormant account activity from uncommon country](../content/ueba-essentials-dormant-account-activity-from-uncommon-country-7c303408-f913-42f8-8d7b-9eb64a229c4d-510c1ff6.md)
 
-### Workbooks (8)
+### Workbooks (20)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
+- [User_Analytics_Workbook](../content/-user-analytics-workbook-4d50c893.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)

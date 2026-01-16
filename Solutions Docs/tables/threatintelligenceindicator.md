@@ -68,7 +68,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (95)
+## Content Items Using This Table (106)
 
 ### Analytic Rules (72)
 
@@ -171,7 +171,20 @@ This table is ingested by the following connectors:
 - [TI Map File Entity to VMConnection Event](../content/threat-intelligence-ti-map-file-entity-to-vmconnection-event-172a321b-c46b-4508-87c6-e2691c778107-debef4d0.md)
 - [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md)
 
-### Workbooks (18)
+### Workbooks (29)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [DSTIMWorkbook](../content/-dstimworkbook-0a68e0ad.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [ForcepointNGFWAdvanced](../content/-forcepointngfwadvanced-9bfc0ecf.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [PhishingAnalysis](../content/-phishinganalysis-5cdced29.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [CofenseIntelligence](../solutions/cofenseintelligence.md):**
 - [CofenseIntelligenceThreatIndicators](../content/cofenseintelligence-cofenseintelligencethreatindicators-d6be930b.md)

@@ -10,10 +10,10 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Metric | Count |
 |:-------|------:|
-| **Total Tables Documented** | **1892** |
-| Tables Ingested by Connectors | 845 |
-| Tables Referenced by Content Only | 347 |
-| Standalone Reference Tables* | 700 |
+| **Total Tables Documented** | **2057** |
+| Tables Ingested by Connectors | 846 |
+| Tables Referenced by Content Only | 402 |
+| Standalone Reference Tables* | 809 |
 | Defender XDR Only Tables | 31 |
 
 *\*Standalone Reference Tables are tables documented in the Azure Monitor or Defender XDR reference that are not currently used by any Sentinel solution, connector, or content item.*
@@ -22,12 +22,27 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 ## Tables Index
 
-**Jump to:** [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [X](#x) | [Z](#z)
+**Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [X](#x) | [Y](#y) | [Z](#z)
+
+## #
+
+| Table | Solutions | Connectors | Content |
+|-------|:---------:|:----------:|:--------|
+| [`'`](tables/'.md) | [1](tables/'.md) | - | Playbooks |
+| [`(`](tables/.md) | [1](tables/.md) | - | Playbooks |
+| [`)`](tables/.md) | [1](tables/.md) | - | Playbooks |
+| [`,`](tables/,.md) | [1](tables/,.md) | - | Playbooks |
+| [`3`](tables/3.md) | [1](tables/3.md) | - | Playbooks |
+| [`5`](tables/5.md) | [1](tables/5.md) | - | Playbooks |
+| [`6`](tables/6.md) | [1](tables/6.md) | - | Playbooks |
+| [`[`](tables/[.md) | [1](tables/[.md) | - | Playbooks |
+| [`]`](tables/].md) | [1](tables/].md) | - | Playbooks |
 
 ## A
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`A`](tables/a.md) | [1](tables/a.md) | - | Playbooks |
 | [`AACAudit`](tables/aacaudit.md) | - | - | - |
 | [`AACHttpRequest`](tables/aachttprequest.md) | - | - | - |
 | [`AADB2CRequestLogs`](tables/aadb2crequestlogs.md) | - | - | - |
@@ -44,12 +59,12 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`AADFirstPartyToFirstPartySignInLogs`](tables/aadfirstpartytofirstpartysigninlogs.md) | - | - | - |
 | [`AADGraphActivityLogs`](tables/aadgraphactivitylogs.md) | - | - | - |
 | [`AADManagedIdentitySignInLogs`](tables/aadmanagedidentitysigninlogs.md) | [7](tables/aadmanagedidentitysigninlogs.md) | [1](tables/aadmanagedidentitysigninlogs.md) | Analytics, Workbooks |
-| [`AADNonInteractiveUserSignInLogs`](tables/aadnoninteractiveusersigninlogs.md) | [15](tables/aadnoninteractiveusersigninlogs.md) | [1](tables/aadnoninteractiveusersigninlogs.md) | Analytics, Hunting, Workbooks |
+| [`AADNonInteractiveUserSignInLogs`](tables/aadnoninteractiveusersigninlogs.md) | [16](tables/aadnoninteractiveusersigninlogs.md) | [1](tables/aadnoninteractiveusersigninlogs.md) | Analytics, Hunting, Workbooks |
 | [`AADProvisioningLogs`](tables/aadprovisioninglogs.md) | [2](tables/aadprovisioninglogs.md) | [1](tables/aadprovisioninglogs.md) | Workbooks |
 | [`AADRiskyServicePrincipals`](tables/aadriskyserviceprincipals.md) | [2](tables/aadriskyserviceprincipals.md) | [1](tables/aadriskyserviceprincipals.md) | Workbooks |
 | [`AADRiskyUsers`](tables/aadriskyusers.md) | [2](tables/aadriskyusers.md) | [1](tables/aadriskyusers.md) | Workbooks |
 | [`AADServicePrincipalRiskEvents`](tables/aadserviceprincipalriskevents.md) | [2](tables/aadserviceprincipalriskevents.md) | [1](tables/aadserviceprincipalriskevents.md) | Workbooks |
-| [`AADServicePrincipalSignInLogs`](tables/aadserviceprincipalsigninlogs.md) | [7](tables/aadserviceprincipalsigninlogs.md) | [1](tables/aadserviceprincipalsigninlogs.md) | Analytics, Workbooks |
+| [`AADServicePrincipalSignInLogs`](tables/aadserviceprincipalsigninlogs.md) | [8](tables/aadserviceprincipalsigninlogs.md) | [1](tables/aadserviceprincipalsigninlogs.md) | Analytics, Workbooks |
 | [`AADSignInEventsBeta`](tables/aadsignineventsbeta.md) | [1](tables/aadsignineventsbeta.md) | - | Hunting |
 | [`AADSpnSignInEventsBeta`](tables/aadspnsignineventsbeta.md) | - | - | - |
 | [`AADUserRiskEvents`](tables/aaduserriskevents.md) | [7](tables/aaduserriskevents.md) | [1](tables/aaduserriskevents.md) | Workbooks |
@@ -198,7 +213,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`ASimProcessEventLogs_CL`](tables/asimprocesseventlogs-cl.md) | [1](tables/asimprocesseventlogs-cl.md) | [1](tables/asimprocesseventlogs-cl.md) | - |
 | [`ASimRegistryEventLogs`](tables/asimregistryeventlogs.md) | [2](tables/asimregistryeventlogs.md) | [2](tables/asimregistryeventlogs.md) | - |
 | [`ASimRegistryEventLogs_CL`](tables/asimregistryeventlogs-cl.md) | [1](tables/asimregistryeventlogs-cl.md) | [1](tables/asimregistryeventlogs-cl.md) | - |
-| [`ASimSourceType`](tables/asimsourcetype.md) | [11](tables/asimsourcetype.md) | [10](tables/asimsourcetype.md) | Analytics, Hunting, Workbooks |
+| [`ASimSourceType`](tables/asimsourcetype.md) | [12](tables/asimsourcetype.md) | [10](tables/asimsourcetype.md) | Analytics, Hunting, Workbooks |
 | [`ASimUserManagementActivityLogs`](tables/asimusermanagementactivitylogs.md) | [1](tables/asimusermanagementactivitylogs.md) | [1](tables/asimusermanagementactivitylogs.md) | - |
 | [`ASimUserManagementLogs_CL`](tables/asimusermanagementlogs-cl.md) | [1](tables/asimusermanagementlogs-cl.md) | [1](tables/asimusermanagementlogs-cl.md) | - |
 | [`ASimWebSession`](asim/asimwebsession.md) | [1](asim/asimwebsession.md) | - | Workbooks |
@@ -219,7 +234,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`AVSVcSyslog`](tables/avsvcsyslog.md) | - | - | - |
 | [`AWSALBAccessLogs`](tables/awsalbaccesslogs.md) | - | - | - |
 | [`AWSCloudFront_AccessLog_CL`](tables/awscloudfront-accesslog-cl.md) | [1](tables/awscloudfront-accesslog-cl.md) | [1](tables/awscloudfront-accesslog-cl.md) | - |
-| [`AWSCloudTrail`](tables/awscloudtrail.md) | [14](tables/awscloudtrail.md) | [2](tables/awscloudtrail.md) | Analytics, Hunting, Workbooks |
+| [`AWSCloudTrail`](tables/awscloudtrail.md) | [15](tables/awscloudtrail.md) | [2](tables/awscloudtrail.md) | Analytics, Hunting, Workbooks |
 | [`AWSCloudTrailCCP`](tables/awscloudtrailccp.md) | - | - | - |
 | [`AWSCloudWatch`](tables/awscloudwatch.md) | [1](tables/awscloudwatch.md) | [1](tables/awscloudwatch.md) | - |
 | [`AWSCloudWatchCCP`](tables/awscloudwatchccp.md) | - | - | - |
@@ -235,17 +250,17 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`AWSVPCFlow`](tables/awsvpcflow.md) | [8](tables/awsvpcflow.md) | [2](tables/awsvpcflow.md) | Workbooks |
 | [`AWSVPCFlowLogsCCP`](tables/awsvpcflowlogsccp.md) | - | - | - |
 | [`AWSWAF`](tables/awswaf.md) | [1](tables/awswaf.md) | [1](tables/awswaf.md) | - |
-| [`AZFWApplicationRule`](tables/azfwapplicationrule.md) | [4](tables/azfwapplicationrule.md) | [1](tables/azfwapplicationrule.md) | Analytics, Hunting, Workbooks |
+| [`AZFWApplicationRule`](tables/azfwapplicationrule.md) | [5](tables/azfwapplicationrule.md) | [1](tables/azfwapplicationrule.md) | Analytics, Hunting, Workbooks |
 | [`AZFWApplicationRuleAggregation`](tables/azfwapplicationruleaggregation.md) | [1](tables/azfwapplicationruleaggregation.md) | - | Workbooks |
 | [`AZFWDnsFlowTrace`](tables/azfwdnsflowtrace.md) | - | - | - |
-| [`AZFWDnsQuery`](tables/azfwdnsquery.md) | [3](tables/azfwdnsquery.md) | [1](tables/azfwdnsquery.md) | Workbooks |
+| [`AZFWDnsQuery`](tables/azfwdnsquery.md) | [4](tables/azfwdnsquery.md) | [1](tables/azfwdnsquery.md) | Analytics, Workbooks |
 | [`AZFWFatFlow`](tables/azfwfatflow.md) | [1](tables/azfwfatflow.md) | [1](tables/azfwfatflow.md) | - |
 | [`AZFWFlowTrace`](tables/azfwflowtrace.md) | [1](tables/azfwflowtrace.md) | [1](tables/azfwflowtrace.md) | Analytics |
 | [`AZFWIdpsSignature`](tables/azfwidpssignature.md) | [3](tables/azfwidpssignature.md) | [1](tables/azfwidpssignature.md) | Analytics, Workbooks |
 | [`AZFWInternalFqdnResolutionFailure`](tables/azfwinternalfqdnresolutionfailure.md) | [1](tables/azfwinternalfqdnresolutionfailure.md) | [1](tables/azfwinternalfqdnresolutionfailure.md) | - |
 | [`AZFWNatRule`](tables/azfwnatrule.md) | [3](tables/azfwnatrule.md) | [1](tables/azfwnatrule.md) | Workbooks |
 | [`AZFWNatRuleAggregation`](tables/azfwnatruleaggregation.md) | [1](tables/azfwnatruleaggregation.md) | - | Workbooks |
-| [`AZFWNetworkRule`](tables/azfwnetworkrule.md) | [4](tables/azfwnetworkrule.md) | [1](tables/azfwnetworkrule.md) | Analytics, Hunting, Workbooks |
+| [`AZFWNetworkRule`](tables/azfwnetworkrule.md) | [5](tables/azfwnetworkrule.md) | [1](tables/azfwnetworkrule.md) | Analytics, Hunting, Workbooks |
 | [`AZFWNetworkRuleAggregation`](tables/azfwnetworkruleaggregation.md) | [1](tables/azfwnetworkruleaggregation.md) | - | Workbooks |
 | [`AZFWThreatIntel`](tables/azfwthreatintel.md) | [3](tables/azfwthreatintel.md) | [1](tables/azfwthreatintel.md) | Analytics, Workbooks |
 | [`AZKVAuditLogs`](tables/azkvauditlogs.md) | - | - | - |
@@ -282,7 +297,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`AgriFoodWeatherLogs`](tables/agrifoodweatherlogs.md) | - | - | - |
 | [`AirflowDagProcessingLogs`](tables/airflowdagprocessinglogs.md) | - | - | - |
 | [`Alert`](tables/alert.md) | [8](tables/alert.md) | - | Workbooks |
-| [`AlertEvidence`](tables/alertevidence.md) | [7](tables/alertevidence.md) | [1](tables/alertevidence.md) | Analytics, Hunting, Workbooks |
+| [`AlertEvidence`](tables/alertevidence.md) | [8](tables/alertevidence.md) | [1](tables/alertevidence.md) | Analytics, Hunting, Workbooks |
 | [`AlertHistory`](tables/alerthistory.md) | - | - | - |
 | [`AlertInfo`](tables/alertinfo.md) | [2](tables/alertinfo.md) | [1](tables/alertinfo.md) | Analytics, Hunting, Workbooks |
 | [`AliCloudActionTrailLogs_CL`](tables/alicloudactiontraillogs-cl.md) | [1](tables/alicloudactiontraillogs-cl.md) | [1](tables/alicloudactiontraillogs-cl.md) | - |
@@ -333,7 +348,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`AppPlatformLogsforSpring`](tables/appplatformlogsforspring.md) | - | - | - |
 | [`AppPlatformSystemLogs`](tables/appplatformsystemlogs.md) | - | - | - |
 | [`AppRequests`](tables/apprequests.md) | - | - | - |
-| [`AppServiceAntivirusScanAuditLogs`](tables/appserviceantivirusscanauditlogs.md) | - | - | - |
+| [`AppServiceAntivirusScanAuditLogs`](tables/appserviceantivirusscanauditlogs.md) | [1](tables/appserviceantivirusscanauditlogs.md) | - | Analytics |
 | [`AppServiceAppLogs`](tables/appserviceapplogs.md) | - | - | - |
 | [`AppServiceAuditLogs`](tables/appserviceauditlogs.md) | - | - | - |
 | [`AppServiceAuthenticationLogs`](tables/appserviceauthenticationlogs.md) | - | - | - |
@@ -355,7 +370,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Armorblox_CL`](tables/armorblox-cl.md) | [1](tables/armorblox-cl.md) | [1](tables/armorblox-cl.md) | Analytics, Workbooks |
 | [`AsimParsersData`](tables/asimparsersdata.md) | [1](tables/asimparsersdata.md) | - | Workbooks |
 | [`AtlassianConfluenceNativePoller_CL`](tables/atlassianconfluencenativepoller-cl.md) | [1](tables/atlassianconfluencenativepoller-cl.md) | [1](tables/atlassianconfluencenativepoller-cl.md) | - |
-| [`AuditLogs`](tables/auditlogs.md) | [19](tables/auditlogs.md) | [1](tables/auditlogs.md) | Analytics, Hunting, Workbooks |
+| [`AuditLogs`](tables/auditlogs.md) | [20](tables/auditlogs.md) | [1](tables/auditlogs.md) | Analytics, Hunting, Workbooks |
 | [`Audit_CL`](tables/audit-cl.md) | [1](tables/audit-cl.md) | [1](tables/audit-cl.md) | Analytics, Workbooks |
 | [`Audits_Data_CL`](tables/audits-data-cl.md) | [2](tables/audits-data-cl.md) | [1](tables/audits-data-cl.md) | Workbooks |
 | [`Auth0AM_CL`](tables/auth0am-cl.md) | [1](tables/auth0am-cl.md) | [1](tables/auth0am-cl.md) | - |
@@ -368,17 +383,18 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Awareness_User_Data_CL`](tables/awareness-user-data-cl.md) | [1](tables/awareness-user-data-cl.md) | [1](tables/awareness-user-data-cl.md) | Workbooks |
 | [`Awareness_Watchlist_Details_CL`](tables/awareness-watchlist-details-cl.md) | [1](tables/awareness-watchlist-details-cl.md) | [1](tables/awareness-watchlist-details-cl.md) | Workbooks |
 | [`AwsBucketAPILogs_CL`](tables/awsbucketapilogs-cl.md) | [1](tables/awsbucketapilogs-cl.md) | - | Hunting |
-| [`AzureActivity`](tables/azureactivity.md) | [19](tables/azureactivity.md) | [1](tables/azureactivity.md) | Analytics, Hunting, Workbooks |
+| [`AzureActivity`](tables/azureactivity.md) | [20](tables/azureactivity.md) | [1](tables/azureactivity.md) | Analytics, Hunting, Playbooks, Workbooks |
 | [`AzureAssessmentRecommendation`](tables/azureassessmentrecommendation.md) | - | - | - |
 | [`AzureAttestationDiagnostics`](tables/azureattestationdiagnostics.md) | - | - | - |
 | [`AzureBackupOperations`](tables/azurebackupoperations.md) | - | - | - |
 | [`AzureDevOpsAuditing`](tables/azuredevopsauditing.md) | [3](tables/azuredevopsauditing.md) | - | Analytics, Hunting, Workbooks |
-| [`AzureDiagnostics`](tables/azurediagnostics.md) | [35](tables/azurediagnostics.md) | [15](tables/azurediagnostics.md) | Analytics, Hunting, Workbooks |
+| [`AzureDiagnostics`](tables/azurediagnostics.md) | [36](tables/azurediagnostics.md) | [15](tables/azurediagnostics.md) | Analytics, Hunting, Workbooks |
 | [`AzureLoadTestingOperation`](tables/azureloadtestingoperation.md) | - | - | - |
 | [`AzureLogAnalyticsIngestionDiagnosticLogs`](tables/azureloganalyticsingestiondiagnosticlogs.md) | - | - | - |
 | [`AzureMetrics`](tables/azuremetrics.md) | [4](tables/azuremetrics.md) | [2](tables/azuremetrics.md) | Workbooks |
 | [`AzureMetricsV2`](tables/azuremetricsv2.md) | - | - | - |
-| [`AzureNetworkAnalytics_CL`](tables/azurenetworkanalytics-cl.md) | [5](tables/azurenetworkanalytics-cl.md) | - | Analytics, Hunting, Workbooks |
+| [`AzureNetworkAnalytics_CL`](tables/azurenetworkanalytics-cl.md) | [6](tables/azurenetworkanalytics-cl.md) | - | Analytics, Hunting, Workbooks |
+| [`a`](tables/a.md) | [1](tables/a.md) | - | Playbooks |
 | [`agari_apdpolicy_log_CL`](tables/agari-apdpolicy-log-cl.md) | [1](tables/agari-apdpolicy-log-cl.md) | [1](tables/agari-apdpolicy-log-cl.md) | - |
 | [`agari_apdtc_log_CL`](tables/agari-apdtc-log-cl.md) | [1](tables/agari-apdtc-log-cl.md) | [1](tables/agari-apdtc-log-cl.md) | - |
 | [`agari_bpalerts_log_CL`](tables/agari-bpalerts-log-cl.md) | [1](tables/agari-bpalerts-log-cl.md) | [1](tables/agari-bpalerts-log-cl.md) | - |
@@ -393,7 +409,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`alertsremediationdata_CL`](tables/alertsremediationdata-cl.md) | [1](tables/alertsremediationdata-cl.md) | [1](tables/alertsremediationdata-cl.md) | Workbooks |
 | [`alertssecurityassessmentdata_CL`](tables/alertssecurityassessmentdata-cl.md) | [1](tables/alertssecurityassessmentdata-cl.md) | [1](tables/alertssecurityassessmentdata-cl.md) | Workbooks |
 | [`alertsubadata_CL`](tables/alertsubadata-cl.md) | [1](tables/alertsubadata-cl.md) | [1](tables/alertsubadata-cl.md) | Workbooks |
-| [`anomalies`](tables/anomalies.md) | [8](tables/anomalies.md) | - | Analytics, Hunting, Workbooks |
+| [`anomalies`](tables/anomalies.md) | [9](tables/anomalies.md) | - | Analytics, Hunting, Workbooks |
 | [`apifirewall_log_1_CL`](tables/apifirewall-log-1-cl.md) | [1](tables/apifirewall-log-1-cl.md) | [1](tables/apifirewall-log-1-cl.md) | Analytics, Workbooks |
 | [`argsentdc_CL`](tables/argsentdc-cl.md) | [1](tables/argsentdc-cl.md) | [1](tables/argsentdc-cl.md) | - |
 | [`asimParsers`](tables/asimparsers.md) | [1](tables/asimparsers.md) | - | Workbooks |
@@ -411,7 +427,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`BHETierZeroAssetsData_CL`](tables/bhetierzeroassetsdata-cl.md) | [1](tables/bhetierzeroassetsdata-cl.md) | - | Workbooks |
 | [`BSMmacOS_CL`](tables/bsmmacos-cl.md) | [1](tables/bsmmacos-cl.md) | [1](tables/bsmmacos-cl.md) | - |
 | [`Barracuda_CL`](tables/barracuda-cl.md) | [1](tables/barracuda-cl.md) | [1](tables/barracuda-cl.md) | - |
-| [`BehaviorAnalytics`](tables/behavioranalytics.md) | [11](tables/behavioranalytics.md) | - | Analytics, Hunting, Workbooks |
+| [`BehaviorAnalytics`](tables/behavioranalytics.md) | [12](tables/behavioranalytics.md) | - | Analytics, Hunting, Workbooks |
 | [`BehaviorEntities`](tables/behaviorentities.md) | - | - | - |
 | [`BehaviorInfo`](tables/behaviorinfo.md) | - | - | - |
 | [`BetterMTDAppLog_CL`](tables/bettermtdapplog-cl.md) | [1](tables/bettermtdapplog-cl.md) | [1](tables/bettermtdapplog-cl.md) | Workbooks |
@@ -439,6 +455,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`BlockchainProxyLog`](tables/blockchainproxylog.md) | - | - | - |
 | [`BoxEventsV2_CL`](tables/boxeventsv2-cl.md) | [1](tables/boxeventsv2-cl.md) | [2](tables/boxeventsv2-cl.md) | Analytics, Hunting, Workbooks |
 | [`BoxEvents_CL`](tables/boxevents-cl.md) | [1](tables/boxevents-cl.md) | [2](tables/boxevents-cl.md) | Analytics, Hunting, Workbooks |
+| [`b`](tables/b.md) | [1](tables/b.md) | - | Playbooks |
 | [`barracuda_CL`](tables/barracuda-cl.md) | [2](tables/barracuda-cl.md) | [1](tables/barracuda-cl.md) | Workbooks |
 | [`beSECURE_Audit_CL`](tables/besecure-audit-cl.md) | [1](tables/besecure-audit-cl.md) | [1](tables/besecure-audit-cl.md) | - |
 | [`beSECURE_ScanEvent_CL`](tables/besecure-scanevent-cl.md) | [1](tables/besecure-scanevent-cl.md) | [1](tables/besecure-scanevent-cl.md) | - |
@@ -448,6 +465,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`C`](tables/c.md) | [1](tables/c.md) | - | Playbooks |
 | [`CBSLog_Azure_1_CL`](tables/cbslog-azure-1-cl.md) | [1](tables/cbslog-azure-1-cl.md) | [1](tables/cbslog-azure-1-cl.md) | Analytics |
 | [`CCFApplicationLogs`](tables/ccfapplicationlogs.md) | - | - | - |
 | [`CDBCassandraRequests`](tables/cdbcassandrarequests.md) | - | - | - |
@@ -496,7 +514,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`CitrixAnalytics_indicatorSummary_CL`](tables/citrixanalytics-indicatorsummary-cl.md) | [1](tables/citrixanalytics-indicatorsummary-cl.md) | [1](tables/citrixanalytics-indicatorsummary-cl.md) | Workbooks |
 | [`CitrixAnalytics_riskScoreChange_CL`](tables/citrixanalytics-riskscorechange-cl.md) | [1](tables/citrixanalytics-riskscorechange-cl.md) | [1](tables/citrixanalytics-riskscorechange-cl.md) | Workbooks |
 | [`CitrixAnalytics_userProfile_CL`](tables/citrixanalytics-userprofile-cl.md) | [1](tables/citrixanalytics-userprofile-cl.md) | [1](tables/citrixanalytics-userprofile-cl.md) | Workbooks |
-| [`CloudAppEvents`](tables/cloudappevents.md) | [5](tables/cloudappevents.md) | [1](tables/cloudappevents.md) | Analytics, Hunting, Workbooks |
+| [`CloudAppEvents`](tables/cloudappevents.md) | [6](tables/cloudappevents.md) | [1](tables/cloudappevents.md) | Analytics, Hunting, Workbooks |
 | [`CloudAuditEvents`](tables/cloudauditevents.md) | - | - | - |
 | [`CloudGuard_SecurityEvents_CL`](tables/cloudguard-securityevents-cl.md) | [1](tables/cloudguard-securityevents-cl.md) | [1](tables/cloudguard-securityevents-cl.md) | - |
 | [`CloudHsmServiceOperationAuditLogs`](tables/cloudhsmserviceoperationauditlogs.md) | - | - | - |
@@ -508,7 +526,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Cofense_Triage_failed_indicators_CL`](tables/cofense-triage-failed-indicators-cl.md) | [1](tables/cofense-triage-failed-indicators-cl.md) | [1](tables/cofense-triage-failed-indicators-cl.md) | - |
 | [`CognniIncidents_CL`](tables/cognniincidents-cl.md) | [1](tables/cognniincidents-cl.md) | [1](tables/cognniincidents-cl.md) | Analytics, Workbooks |
 | [`Cohesity_CL`](tables/cohesity-cl.md) | [1](tables/cohesity-cl.md) | [1](tables/cohesity-cl.md) | - |
-| [`CommonSecurityLog`](tables/commonsecuritylog.md) | [81](tables/commonsecuritylog.md) | [100](tables/commonsecuritylog.md) | Analytics, Hunting, Playbooks, Workbooks |
+| [`CommonSecurityLog`](tables/commonsecuritylog.md) | [82](tables/commonsecuritylog.md) | [100](tables/commonsecuritylog.md) | Analytics (2), Hunting, Playbooks, Workbooks |
 | [`CommunicationComplianceActivity`](tables/communicationcomplianceactivity.md) | - | - | - |
 | [`Communication_Data_CL`](tables/communication-data-cl.md) | [1](tables/communication-data-cl.md) | - | Workbooks |
 | [`CommvaultSecurityIQ_CL`](tables/commvaultsecurityiq-cl.md) | [1](tables/commvaultsecurityiq-cl.md) | [1](tables/commvaultsecurityiq-cl.md) | Analytics |
@@ -720,15 +738,19 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Cymru_Scout_IP_Data_Summary_PDNS_CL`](tables/cymru-scout-ip-data-summary-pdns-cl.md) | [1](tables/cymru-scout-ip-data-summary-pdns-cl.md) | [1](tables/cymru-scout-ip-data-summary-pdns-cl.md) | Workbooks |
 | [`Cymru_Scout_IP_Data_x509_CL`](tables/cymru-scout-ip-data-x509-cl.md) | [1](tables/cymru-scout-ip-data-x509-cl.md) | [1](tables/cymru-scout-ip-data-x509-cl.md) | - |
 | [`CynerioEvent_CL`](tables/cynerioevent-cl.md) | [1](tables/cynerioevent-cl.md) | [1](tables/cynerioevent-cl.md) | Analytics, Workbooks |
+| [`Cyren_Indicators_CL`](tables/cyren-indicators-cl.md) | [1](tables/cyren-indicators-cl.md) | [1](tables/cyren-indicators-cl.md) | Analytics, Workbooks |
+| [`c`](tables/c.md) | [1](tables/c.md) | - | Playbooks |
 
 ## D
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`D`](tables/d.md) | [1](tables/d.md) | - | Playbooks |
 | [`DCPlanBillingEventLogs`](tables/dcplanbillingeventlogs.md) | - | - | - |
 | [`DCRLogErrors`](tables/dcrlogerrors.md) | - | - | - |
 | [`DFPPurchaseLogs`](tables/dfppurchaselogs.md) | - | - | - |
 | [`DHAppReliability`](tables/dhappreliability.md) | - | - | - |
+| [`DHCP_CL`](tables/dhcp-cl.md) | - | - | - |
 | [`DHDriverReliability`](tables/dhdriverreliability.md) | - | - | - |
 | [`DHLogonFailures`](tables/dhlogonfailures.md) | - | - | - |
 | [`DHLogonMetrics`](tables/dhlogonmetrics.md) | - | - | - |
@@ -801,7 +823,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`DevCenterResourceOperationLogs`](tables/devcenterresourceoperationlogs.md) | - | - | - |
 | [`DeviceAppCrash`](tables/deviceappcrash.md) | - | - | - |
 | [`DeviceAppLaunch`](tables/deviceapplaunch.md) | - | - | - |
-| [`DeviceBaselineComplianceAssessment`](tables/devicebaselinecomplianceassessment.md) | - | - | - |
+| [`DeviceBaselineComplianceAssessment`](tables/devicebaselinecomplianceassessment.md) | [1](tables/devicebaselinecomplianceassessment.md) | - | Hunting |
 | [`DeviceBaselineComplianceAssessmentKB`](tables/devicebaselinecomplianceassessmentkb.md) | - | - | - |
 | [`DeviceBaselineComplianceProfiles`](tables/devicebaselinecomplianceprofiles.md) | - | - | - |
 | [`DeviceBehaviorEntities`](tables/devicebehaviorentities.md) | - | - | - |
@@ -815,19 +837,19 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`DeviceCustomProcessEvents`](tables/devicecustomprocessevents.md) | - | - | - |
 | [`DeviceCustomScriptEvents`](tables/devicecustomscriptevents.md) | - | - | - |
 | [`DeviceEtw`](tables/deviceetw.md) | - | - | - |
-| [`DeviceEvents`](tables/deviceevents.md) | [10](tables/deviceevents.md) | [1](tables/deviceevents.md) | Analytics, Hunting, Workbooks |
+| [`DeviceEvents`](tables/deviceevents.md) | [11](tables/deviceevents.md) | [1](tables/deviceevents.md) | Analytics, Hunting, Workbooks |
 | [`DeviceFileCertificateInfo`](tables/devicefilecertificateinfo.md) | [2](tables/devicefilecertificateinfo.md) | [1](tables/devicefilecertificateinfo.md) | Workbooks |
-| [`DeviceFileEvents`](tables/devicefileevents.md) | [16](tables/devicefileevents.md) | [1](tables/devicefileevents.md) | Analytics, Hunting, Workbooks |
+| [`DeviceFileEvents`](tables/devicefileevents.md) | [17](tables/devicefileevents.md) | [1](tables/devicefileevents.md) | Analytics, Hunting, Workbooks |
 | [`DeviceHardwareHealth`](tables/devicehardwarehealth.md) | - | - | - |
 | [`DeviceHealth`](tables/devicehealth.md) | - | - | - |
 | [`DeviceHeartbeat`](tables/deviceheartbeat.md) | - | - | - |
-| [`DeviceImageLoadEvents`](tables/deviceimageloadevents.md) | [3](tables/deviceimageloadevents.md) | [1](tables/deviceimageloadevents.md) | Analytics, Hunting, Workbooks |
-| [`DeviceInfo`](tables/deviceinfo.md) | [6](tables/deviceinfo.md) | [1](tables/deviceinfo.md) | Analytics, Hunting, Workbooks |
-| [`DeviceLogonEvents`](tables/devicelogonevents.md) | [6](tables/devicelogonevents.md) | [1](tables/devicelogonevents.md) | Analytics, Hunting, Workbooks |
-| [`DeviceNetworkEvents`](tables/devicenetworkevents.md) | [15](tables/devicenetworkevents.md) | [1](tables/devicenetworkevents.md) | Analytics, Hunting, Workbooks |
-| [`DeviceNetworkInfo`](tables/devicenetworkinfo.md) | [3](tables/devicenetworkinfo.md) | [1](tables/devicenetworkinfo.md) | Workbooks |
-| [`DeviceProcessEvents`](tables/deviceprocessevents.md) | [14](tables/deviceprocessevents.md) | [1](tables/deviceprocessevents.md) | Analytics, Hunting, Workbooks |
-| [`DeviceRegistryEvents`](tables/deviceregistryevents.md) | [6](tables/deviceregistryevents.md) | [1](tables/deviceregistryevents.md) | Analytics, Hunting, Workbooks |
+| [`DeviceImageLoadEvents`](tables/deviceimageloadevents.md) | [4](tables/deviceimageloadevents.md) | [1](tables/deviceimageloadevents.md) | Analytics, Hunting, Workbooks |
+| [`DeviceInfo`](tables/deviceinfo.md) | [7](tables/deviceinfo.md) | [1](tables/deviceinfo.md) | Analytics, Hunting, Workbooks |
+| [`DeviceLogonEvents`](tables/devicelogonevents.md) | [7](tables/devicelogonevents.md) | [1](tables/devicelogonevents.md) | Analytics, Hunting, Workbooks |
+| [`DeviceNetworkEvents`](tables/devicenetworkevents.md) | [16](tables/devicenetworkevents.md) | [1](tables/devicenetworkevents.md) | Analytics, Hunting, Workbooks |
+| [`DeviceNetworkInfo`](tables/devicenetworkinfo.md) | [4](tables/devicenetworkinfo.md) | [1](tables/devicenetworkinfo.md) | Analytics, Hunting, Workbooks |
+| [`DeviceProcessEvents`](tables/deviceprocessevents.md) | [15](tables/deviceprocessevents.md) | [1](tables/deviceprocessevents.md) | Analytics, Hunting, Workbooks |
+| [`DeviceRegistryEvents`](tables/deviceregistryevents.md) | [7](tables/deviceregistryevents.md) | [1](tables/deviceregistryevents.md) | Analytics, Hunting, Workbooks |
 | [`DeviceSkypeHeartbeat`](tables/deviceskypeheartbeat.md) | - | - | - |
 | [`DeviceSkypeSignIn`](tables/deviceskypesignin.md) | - | - | - |
 | [`DeviceTvmBrowserExtensions`](tables/devicetvmbrowserextensions.md) | - | - | - |
@@ -836,16 +858,16 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`DeviceTvmHardwareFirmware`](tables/devicetvmhardwarefirmware.md) | - | - | - |
 | [`DeviceTvmInfoGathering`](tables/devicetvminfogathering.md) | - | - | - |
 | [`DeviceTvmInfoGatheringKB`](tables/devicetvminfogatheringkb.md) | - | - | - |
-| [`DeviceTvmSecureConfigurationAssessment`](tables/devicetvmsecureconfigurationassessment.md) | [1](tables/devicetvmsecureconfigurationassessment.md) | - | Workbooks |
+| [`DeviceTvmSecureConfigurationAssessment`](tables/devicetvmsecureconfigurationassessment.md) | [2](tables/devicetvmsecureconfigurationassessment.md) | - | Hunting, Workbooks |
 | [`DeviceTvmSecureConfigurationAssessmentKB`](tables/devicetvmsecureconfigurationassessmentkb.md) | - | - | - |
 | [`DeviceTvmSoftwareEvidenceBeta`](tables/devicetvmsoftwareevidencebeta.md) | - | - | - |
-| [`DeviceTvmSoftwareInventory`](tables/devicetvmsoftwareinventory.md) | [1](tables/devicetvmsoftwareinventory.md) | - | Workbooks |
+| [`DeviceTvmSoftwareInventory`](tables/devicetvmsoftwareinventory.md) | [2](tables/devicetvmsoftwareinventory.md) | - | Hunting, Workbooks |
 | [`DeviceTvmSoftwareVulnerabilities`](tables/devicetvmsoftwarevulnerabilities.md) | [2](tables/devicetvmsoftwarevulnerabilities.md) | - | Analytics, Workbooks |
 | [`DeviceTvmSoftwareVulnerabilitiesKB`](tables/devicetvmsoftwarevulnerabilitieskb.md) | [1](tables/devicetvmsoftwarevulnerabilitieskb.md) | - | Hunting |
 | [`DigitalShadows_CL`](tables/digitalshadows-cl.md) | [1](tables/digitalshadows-cl.md) | [1](tables/digitalshadows-cl.md) | Analytics, Workbooks |
 | [`DisruptionAndResponseEvents`](tables/disruptionandresponseevents.md) | - | - | - |
 | [`DnsAuditEvents`](tables/dnsauditevents.md) | - | - | - |
-| [`DnsEvents`](tables/dnsevents.md) | [15](tables/dnsevents.md) | [1](tables/dnsevents.md) | Analytics, Hunting, Workbooks |
+| [`DnsEvents`](tables/dnsevents.md) | [16](tables/dnsevents.md) | [1](tables/dnsevents.md) | Analytics, Hunting, Workbooks |
 | [`DnsInventory`](tables/dnsinventory.md) | [2](tables/dnsinventory.md) | [1](tables/dnsinventory.md) | Workbooks |
 | [`Domain_Data_CL`](tables/domain-data-cl.md) | [1](tables/domain-data-cl.md) | - | Workbooks |
 | [`DoppelTable_CL`](tables/doppeltable-cl.md) | [1](tables/doppeltable-cl.md) | [1](tables/doppeltable-cl.md) | Workbooks |
@@ -854,7 +876,10 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`DruvaPlatformEvents_CL`](tables/druvaplatformevents-cl.md) | [1](tables/druvaplatformevents-cl.md) | [1](tables/druvaplatformevents-cl.md) | - |
 | [`DruvaSecurityEvents_CL`](tables/druvasecurityevents-cl.md) | [1](tables/druvasecurityevents-cl.md) | [1](tables/druvasecurityevents-cl.md) | - |
 | [`DummyHydrationFact`](tables/dummyhydrationfact.md) | - | - | - |
+| [`DuoSecurityAdministrator_CL`](tables/duosecurityadministrator-cl.md) | - | - | - |
 | [`DuoSecurityAuthentication_CL`](tables/duosecurityauthentication-cl.md) | [2](tables/duosecurityauthentication-cl.md) | - | Analytics |
+| [`DuoSecurityTelephony_CL`](tables/duosecuritytelephony-cl.md) | - | - | - |
+| [`DuoSecurityTrustMonitor_CL`](tables/duosecuritytrustmonitor-cl.md) | [1](tables/duosecuritytrustmonitor-cl.md) | - | Analytics |
 | [`DurableTaskSchedulerLogs`](tables/durabletaskschedulerlogs.md) | - | - | - |
 | [`DynamicEventCollection`](tables/dynamiceventcollection.md) | - | - | - |
 | [`Dynamics365Activity`](tables/dynamics365activity.md) | [5](tables/dynamics365activity.md) | [1](tables/dynamics365activity.md) | Workbooks |
@@ -862,6 +887,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`DynatraceAuditLogs_CL`](tables/dynatraceauditlogs-cl.md) | [1](tables/dynatraceauditlogs-cl.md) | [1](tables/dynatraceauditlogs-cl.md) | Workbooks |
 | [`DynatraceProblems_CL`](tables/dynatraceproblems-cl.md) | [1](tables/dynatraceproblems-cl.md) | [1](tables/dynatraceproblems-cl.md) | Analytics, Workbooks |
 | [`DynatraceSecurityProblems_CL`](tables/dynatracesecurityproblems-cl.md) | [1](tables/dynatracesecurityproblems-cl.md) | [1](tables/dynatracesecurityproblems-cl.md) | Analytics, Workbooks |
+| [`d`](tables/d.md) | [1](tables/d.md) | - | Playbooks |
 | [`darktrace_model_alerts_CL`](tables/darktrace-model-alerts-cl.md) | [1](tables/darktrace-model-alerts-cl.md) | [1](tables/darktrace-model-alerts-cl.md) | Analytics, Workbooks |
 | [`datawizaserveraccess_CL`](tables/datawizaserveraccess-cl.md) | [1](tables/datawizaserveraccess-cl.md) | [1](tables/datawizaserveraccess-cl.md) | - |
 | [`dossier_atp_CL`](tables/dossier-atp-cl.md) | [1](tables/dossier-atp-cl.md) | [1](tables/dossier-atp-cl.md) | Workbooks |
@@ -885,6 +911,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`E`](tables/e.md) | [1](tables/e.md) | - | Playbooks |
 | [`EGNFailedHttpDataPlaneOperations`](tables/egnfailedhttpdataplaneoperations.md) | - | - | - |
 | [`EGNFailedMqttConnections`](tables/egnfailedmqttconnections.md) | - | - | - |
 | [`EGNFailedMqttPublishedMessages`](tables/egnfailedmqttpublishedmessages.md) | - | - | - |
@@ -902,24 +929,25 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`EgressEvents_CL`](tables/egressevents-cl.md) | [1](tables/egressevents-cl.md) | [1](tables/egressevents-cl.md) | Workbooks |
 | [`ElasticAgentLogs_CL`](tables/elasticagentlogs-cl.md) | [1](tables/elasticagentlogs-cl.md) | [1](tables/elasticagentlogs-cl.md) | - |
 | [`EmailAttachmentInfo`](tables/emailattachmentinfo.md) | [5](tables/emailattachmentinfo.md) | [1](tables/emailattachmentinfo.md) | Hunting, Workbooks |
-| [`EmailEvents`](tables/emailevents.md) | [11](tables/emailevents.md) | [1](tables/emailevents.md) | Analytics, Hunting, Workbooks |
+| [`EmailEvents`](tables/emailevents.md) | [12](tables/emailevents.md) | [1](tables/emailevents.md) | Analytics, Hunting, Workbooks |
 | [`EmailPostDeliveryEvents`](tables/emailpostdeliveryevents.md) | [2](tables/emailpostdeliveryevents.md) | [1](tables/emailpostdeliveryevents.md) | Hunting, Workbooks |
-| [`EmailUrlInfo`](tables/emailurlinfo.md) | [7](tables/emailurlinfo.md) | [1](tables/emailurlinfo.md) | Analytics, Hunting, Workbooks |
+| [`EmailUrlInfo`](tables/emailurlinfo.md) | [8](tables/emailurlinfo.md) | [1](tables/emailurlinfo.md) | Analytics, Hunting, Workbooks |
 | [`EnrichedMicrosoft365AuditLogs`](tables/enrichedmicrosoft365auditlogs.md) | [1](tables/enrichedmicrosoft365auditlogs.md) | - | Workbooks |
 | [`Entities_Data_CL`](tables/entities-data-cl.md) | [1](tables/entities-data-cl.md) | [1](tables/entities-data-cl.md) | Analytics |
 | [`Entity_Scoring_Data_CL`](tables/entity-scoring-data-cl.md) | [1](tables/entity-scoring-data-cl.md) | [1](tables/entity-scoring-data-cl.md) | Workbooks |
 | [`EntraIdSignInEvents`](tables/entraidsigninevents.md) | - | - | - |
 | [`EntraIdSpnSignInEvents`](tables/entraidspnsigninevents.md) | - | - | - |
 | [`ErmesBrowserSecurityEvents_CL`](tables/ermesbrowsersecurityevents-cl.md) | [1](tables/ermesbrowsersecurityevents-cl.md) | [1](tables/ermesbrowsersecurityevents-cl.md) | - |
-| [`Event`](tables/event.md) | [24](tables/event.md) | [6](tables/event.md) | Analytics, Hunting, Workbooks |
+| [`Event`](tables/event.md) | [25](tables/event.md) | [6](tables/event.md) | Analytics, Hunting, Workbooks |
 | [`ExchangeAssessmentRecommendation`](tables/exchangeassessmentrecommendation.md) | - | - | - |
 | [`ExchangeHttpProxy_CL`](tables/exchangehttpproxy-cl.md) | [1](tables/exchangehttpproxy-cl.md) | [2](tables/exchangehttpproxy-cl.md) | - |
 | [`ExchangeOnlineAssessmentRecommendation`](tables/exchangeonlineassessmentrecommendation.md) | - | - | - |
 | [`ExposureGraphEdges`](tables/exposuregraphedges.md) | - | - | - |
 | [`ExposureGraphNodes`](tables/exposuregraphnodes.md) | - | - | - |
 | [`ExtraHop_Detections_CL`](tables/extrahop-detections-cl.md) | [1](tables/extrahop-detections-cl.md) | [1](tables/extrahop-detections-cl.md) | Analytics, Workbooks |
+| [`e`](tables/e.md) | [1](tables/e.md) | - | Playbooks |
 | [`eset_CL`](tables/eset-cl.md) | [1](tables/eset-cl.md) | [1](tables/eset-cl.md) | Analytics, Workbooks |
-| [`event`](tables/event.md) | [2](tables/event.md) | [1](tables/event.md) | Workbooks |
+| [`event`](tables/event.md) | [3](tables/event.md) | [1](tables/event.md) | Analytics, Workbooks |
 | [`eventsapplicationdata_CL`](tables/eventsapplicationdata-cl.md) | [1](tables/eventsapplicationdata-cl.md) | [1](tables/eventsapplicationdata-cl.md) | Workbooks |
 | [`eventsauditdata_CL`](tables/eventsauditdata-cl.md) | [1](tables/eventsauditdata-cl.md) | [1](tables/eventsauditdata-cl.md) | - |
 | [`eventsconnectiondata_CL`](tables/eventsconnectiondata-cl.md) | [1](tables/eventsconnectiondata-cl.md) | [1](tables/eventsconnectiondata-cl.md) | - |
@@ -931,6 +959,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`F`](tables/f.md) | - | - | - |
 | [`F5Telemetry_ASM_CL`](tables/f5telemetry-asm-cl.md) | [1](tables/f5telemetry-asm-cl.md) | [1](tables/f5telemetry-asm-cl.md) | Workbooks |
 | [`F5Telemetry_AVR_CL`](tables/f5telemetry-avr-cl.md) | [1](tables/f5telemetry-avr-cl.md) | - | Workbooks |
 | [`F5Telemetry_LTM_CL`](tables/f5telemetry-ltm-cl.md) | [1](tables/f5telemetry-ltm-cl.md) | [1](tables/f5telemetry-ltm-cl.md) | Workbooks |
@@ -952,6 +981,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`ForescoutOtAsset_CL`](tables/forescoutotasset-cl.md) | [1](tables/forescoutotasset-cl.md) | [1](tables/forescoutotasset-cl.md) | Workbooks |
 | [`ForescoutPolicyStatus_CL`](tables/forescoutpolicystatus-cl.md) | [1](tables/forescoutpolicystatus-cl.md) | [1](tables/forescoutpolicystatus-cl.md) | Workbooks |
 | [`FunctionAppLogs`](tables/functionapplogs.md) | - | - | - |
+| [`f`](tables/f.md) | [1](tables/f.md) | - | Playbooks |
 | [`feedly_indicators_CL`](tables/feedly-indicators-cl.md) | [1](tables/feedly-indicators-cl.md) | [1](tables/feedly-indicators-cl.md) | - |
 | [`fluentbit_CL`](tables/fluentbit-cl.md) | [1](tables/fluentbit-cl.md) | [1](tables/fluentbit-cl.md) | Analytics, Hunting, Workbooks |
 
@@ -959,6 +989,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`G`](tables/g.md) | [1](tables/g.md) | - | Playbooks |
 | [`GCPApigee`](tables/gcpapigee.md) | [1](tables/gcpapigee.md) | [1](tables/gcpapigee.md) | - |
 | [`GCPAuditLogs`](tables/gcpauditlogs.md) | [2](tables/gcpauditlogs.md) | [2](tables/gcpauditlogs.md) | Analytics |
 | [`GCPCDN`](tables/gcpcdn.md) | [1](tables/gcpcdn.md) | [1](tables/gcpcdn.md) | - |
@@ -1031,13 +1062,14 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Gigamon_CL`](tables/gigamon-cl.md) | [1](tables/gigamon-cl.md) | [1](tables/gigamon-cl.md) | Workbooks |
 | [`GitHubAuditLogPolling_CL`](tables/githubauditlogpolling-cl.md) | [3](tables/githubauditlogpolling-cl.md) | [1](tables/githubauditlogpolling-cl.md) | Analytics, Hunting, Workbooks |
 | [`GitHubAuditLogsV2_CL`](tables/githubauditlogsv2-cl.md) | [1](tables/githubauditlogsv2-cl.md) | [2](tables/githubauditlogsv2-cl.md) | Analytics, Hunting |
-| [`GitHubRepoLogs_CL`](tables/githubrepologs-cl.md) | [1](tables/githubrepologs-cl.md) | - | Analytics |
+| [`GitHubRepoLogs_CL`](tables/githubrepologs-cl.md) | [2](tables/githubrepologs-cl.md) | - | Analytics, Hunting |
 | [`GitHub_CL`](tables/github-cl.md) | [3](tables/github-cl.md) | - | Analytics |
 | [`GoogleCloudSCC`](tables/googlecloudscc.md) | [1](tables/googlecloudscc.md) | [1](tables/googlecloudscc.md) | Analytics, Hunting |
 | [`GoogleWorkspaceReports`](tables/googleworkspacereports.md) | [1](tables/googleworkspacereports.md) | [1](tables/googleworkspacereports.md) | - |
 | [`GoogleWorkspaceReports_CL`](tables/googleworkspacereports-cl.md) | [2](tables/googleworkspacereports-cl.md) | [1](tables/googleworkspacereports-cl.md) | Analytics, Hunting, Workbooks |
 | [`GraphApiAuditEvents`](tables/graphapiauditevents.md) | - | - | - |
 | [`Guardian_CL`](tables/guardian-cl.md) | [1](tables/guardian-cl.md) | - | Analytics |
+| [`g`](tables/g.md) | [1](tables/g.md) | - | Playbooks |
 | [`githubscanaudit_CL`](tables/githubscanaudit-cl.md) | [1](tables/githubscanaudit-cl.md) | [1](tables/githubscanaudit-cl.md) | Workbooks |
 
 ## H
@@ -1084,15 +1116,18 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`HalcyonProcessEvent_CL`](tables/halcyonprocessevent-cl.md) | [1](tables/halcyonprocessevent-cl.md) | [1](tables/halcyonprocessevent-cl.md) | - |
 | [`HealthStateChangeEvent`](tables/healthstatechangeevent.md) | - | - | - |
 | [`Health_Data_CL`](tables/health-data-cl.md) | [1](tables/health-data-cl.md) | [1](tables/health-data-cl.md) | Workbooks |
-| [`Heartbeat`](tables/heartbeat.md) | [10](tables/heartbeat.md) | [1](tables/heartbeat.md) | Analytics, Workbooks |
+| [`Heartbeat`](tables/heartbeat.md) | [11](tables/heartbeat.md) | [1](tables/heartbeat.md) | Analytics, Workbooks |
 | [`Host_Name_Info_CL`](tables/host-name-info-cl.md) | [1](tables/host-name-info-cl.md) | - | Workbooks |
 | [`HuntingBookmark`](tables/huntingbookmark.md) | [1](tables/huntingbookmark.md) | - | Workbooks |
+| [`h`](tables/h.md) | [1](tables/h.md) | - | Playbooks |
 | [`heartbeat`](tables/heartbeat.md) | [1](tables/heartbeat.md) | - | Workbooks |
+| [`http_proxy_oab_CL`](tables/http-proxy-oab-cl.md) | [1](tables/http-proxy-oab-cl.md) | - | Analytics |
 
 ## I
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`I`](tables/i.md) | [1](tables/i.md) | - | Playbooks |
 | [`IMAP3`](tables/imap3.md) | [1](tables/imap3.md) | - | Workbooks |
 | [`IMAPS`](tables/imaps.md) | [1](tables/imaps.md) | - | Workbooks |
 | [`IMAPSettings`](tables/imapsettings.md) | [1](tables/imapsettings.md) | - | Workbooks |
@@ -1107,10 +1142,10 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`IMPORT_USER_FROM_EXPORTED_DATA`](tables/import-user-from-exported-data.md) | [1](tables/import-user-from-exported-data.md) | [1](tables/import-user-from-exported-data.md) | - |
 | [`IP_Space_Info_CL`](tables/ip-space-info-cl.md) | [1](tables/ip-space-info-cl.md) | - | Workbooks |
 | [`IdentityAccountInfo`](tables/identityaccountinfo.md) | - | - | - |
-| [`IdentityDirectoryEvents`](tables/identitydirectoryevents.md) | [3](tables/identitydirectoryevents.md) | [1](tables/identitydirectoryevents.md) | Hunting, Workbooks |
+| [`IdentityDirectoryEvents`](tables/identitydirectoryevents.md) | [4](tables/identitydirectoryevents.md) | [1](tables/identitydirectoryevents.md) | Hunting, Workbooks |
 | [`IdentityEvents`](tables/identityevents.md) | - | - | - |
-| [`IdentityInfo`](tables/identityinfo.md) | [17](tables/identityinfo.md) | - | Analytics, Hunting, Workbooks |
-| [`IdentityLogonEvents`](tables/identitylogonevents.md) | [2](tables/identitylogonevents.md) | [1](tables/identitylogonevents.md) | Analytics, Hunting, Workbooks |
+| [`IdentityInfo`](tables/identityinfo.md) | [18](tables/identityinfo.md) | - | Analytics, Hunting, Workbooks |
+| [`IdentityLogonEvents`](tables/identitylogonevents.md) | [3](tables/identitylogonevents.md) | [1](tables/identitylogonevents.md) | Analytics, Hunting, Workbooks |
 | [`IdentityQueryEvents`](tables/identityqueryevents.md) | [2](tables/identityqueryevents.md) | [1](tables/identityqueryevents.md) | Workbooks |
 | [`Identity_Data_CL`](tables/identity-data-cl.md) | [1](tables/identity-data-cl.md) | - | Workbooks |
 | [`IllumioFlowEventsV2_CL`](tables/illumiofloweventsv2-cl.md) | [1](tables/illumiofloweventsv2-cl.md) | [1](tables/illumiofloweventsv2-cl.md) | - |
@@ -1121,12 +1156,16 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Illumio_Workloads_Summarized_API_CL`](tables/illumio-workloads-summarized-api-cl.md) | [1](tables/illumio-workloads-summarized-api-cl.md) | - | Workbooks |
 | [`IlumioInsights`](tables/ilumioinsights.md) | - | - | - |
 | [`Image`](tables/image.md) | [5](tables/image.md) | - | Analytics, Hunting, Workbooks |
+| [`ImagePath`](tables/imagepath.md) | - | - | - |
 | [`Immediate`](tables/immediate.md) | [1](tables/immediate.md) | [1](tables/immediate.md) | Workbooks |
 | [`Immune`](tables/immune.md) | [1](tables/immune.md) | - | Workbooks |
+| [`Impacket`](tables/impacket.md) | - | - | - |
 | [`Impact`](tables/impact.md) | [2](tables/impact.md) | - | Workbooks |
 | [`ImpactScore`](tables/impactscore.md) | [1](tables/impactscore.md) | - | Workbooks |
 | [`ImpactedUser`](tables/impacteduser.md) | [1](tables/impacteduser.md) | [1](tables/impacteduser.md) | Analytics, Hunting |
+| [`Impair`](tables/impair.md) | - | - | - |
 | [`Impersonation`](tables/impersonation.md) | [5](tables/impersonation.md) | - | Hunting, Workbooks |
+| [`Imperva`](tables/imperva.md) | - | - | - |
 | [`ImpervaWAFCloud`](tables/impervawafcloud.md) | [1](tables/impervawafcloud.md) | - | Analytics, Hunting, Workbooks |
 | [`ImpervaWAFCloudV2_CL`](tables/impervawafcloudv2-cl.md) | [1](tables/impervawafcloudv2-cl.md) | [2](tables/impervawafcloudv2-cl.md) | - |
 | [`ImpervaWAFCloud_CL`](tables/impervawafcloud-cl.md) | [1](tables/impervawafcloud-cl.md) | [1](tables/impervawafcloud-cl.md) | - |
@@ -1185,6 +1224,50 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`ImplementationDateEL3_5`](tables/implementationdateel3-5.md) | [1](tables/implementationdateel3-5.md) | - | Workbooks |
 | [`ImplementationDateEL3_6`](tables/implementationdateel3-6.md) | [1](tables/implementationdateel3-6.md) | - | Workbooks |
 | [`ImplementationDateEL3_7`](tables/implementationdateel3-7.md) | [1](tables/implementationdateel3-7.md) | - | Workbooks |
+| [`ImplementationDateao61`](tables/implementationdateao61.md) | - | - | - |
+| [`ImplementationDateao62`](tables/implementationdateao62.md) | - | - | - |
+| [`ImplementationDateao63`](tables/implementationdateao63.md) | - | - | - |
+| [`ImplementationDateao64`](tables/implementationdateao64.md) | - | - | - |
+| [`ImplementationDateao65`](tables/implementationdateao65.md) | - | - | - |
+| [`ImplementationDateao66`](tables/implementationdateao66.md) | - | - | - |
+| [`ImplementationDateao67`](tables/implementationdateao67.md) | - | - | - |
+| [`ImplementationDateapp31`](tables/implementationdateapp31.md) | - | - | - |
+| [`ImplementationDateapp32`](tables/implementationdateapp32.md) | - | - | - |
+| [`ImplementationDateapp33`](tables/implementationdateapp33.md) | - | - | - |
+| [`ImplementationDateapp34`](tables/implementationdateapp34.md) | - | - | - |
+| [`ImplementationDateapp35`](tables/implementationdateapp35.md) | - | - | - |
+| [`ImplementationDated21`](tables/implementationdated21.md) | - | - | - |
+| [`ImplementationDated22`](tables/implementationdated22.md) | - | - | - |
+| [`ImplementationDated23`](tables/implementationdated23.md) | - | - | - |
+| [`ImplementationDated24`](tables/implementationdated24.md) | - | - | - |
+| [`ImplementationDated25`](tables/implementationdated25.md) | - | - | - |
+| [`ImplementationDated26`](tables/implementationdated26.md) | - | - | - |
+| [`ImplementationDated27`](tables/implementationdated27.md) | - | - | - |
+| [`ImplementationDatedata41`](tables/implementationdatedata41.md) | - | - | - |
+| [`ImplementationDatedata42`](tables/implementationdatedata42.md) | - | - | - |
+| [`ImplementationDatedata43`](tables/implementationdatedata43.md) | - | - | - |
+| [`ImplementationDatedata44`](tables/implementationdatedata44.md) | - | - | - |
+| [`ImplementationDatedata45`](tables/implementationdatedata45.md) | - | - | - |
+| [`ImplementationDatedata46`](tables/implementationdatedata46.md) | - | - | - |
+| [`ImplementationDatedata47`](tables/implementationdatedata47.md) | - | - | - |
+| [`ImplementationDatenet51`](tables/implementationdatenet51.md) | - | - | - |
+| [`ImplementationDatenet52`](tables/implementationdatenet52.md) | - | - | - |
+| [`ImplementationDatenet53`](tables/implementationdatenet53.md) | - | - | - |
+| [`ImplementationDatenet54`](tables/implementationdatenet54.md) | - | - | - |
+| [`ImplementationDateu11`](tables/implementationdateu11.md) | - | - | - |
+| [`ImplementationDateu12`](tables/implementationdateu12.md) | - | - | - |
+| [`ImplementationDateu13`](tables/implementationdateu13.md) | - | - | - |
+| [`ImplementationDateu14`](tables/implementationdateu14.md) | - | - | - |
+| [`ImplementationDateu15`](tables/implementationdateu15.md) | - | - | - |
+| [`ImplementationDateu16`](tables/implementationdateu16.md) | - | - | - |
+| [`ImplementationDateu17`](tables/implementationdateu17.md) | - | - | - |
+| [`ImplementationDateu18`](tables/implementationdateu18.md) | - | - | - |
+| [`ImplementationDateu19`](tables/implementationdateu19.md) | - | - | - |
+| [`ImplementationDateva71`](tables/implementationdateva71.md) | - | - | - |
+| [`ImplementationDateva72`](tables/implementationdateva72.md) | - | - | - |
+| [`ImplementationDateva73`](tables/implementationdateva73.md) | - | - | - |
+| [`ImplementationDateva75`](tables/implementationdateva75.md) | - | - | - |
+| [`ImplementationDateva76`](tables/implementationdateva76.md) | - | - | - |
 | [`ImplementationStatusEL01_20`](tables/implementationstatusel01-20.md) | [1](tables/implementationstatusel01-20.md) | - | Workbooks |
 | [`ImplementationStatusEL0_1`](tables/implementationstatusel0-1.md) | [1](tables/implementationstatusel0-1.md) | - | Workbooks |
 | [`ImplementationStatusEL0_10`](tables/implementationstatusel0-10.md) | [1](tables/implementationstatusel0-10.md) | - | Workbooks |
@@ -1240,6 +1323,52 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`ImplementationStatusEL3_5`](tables/implementationstatusel3-5.md) | [1](tables/implementationstatusel3-5.md) | - | Workbooks |
 | [`ImplementationStatusEL3_6`](tables/implementationstatusel3-6.md) | [1](tables/implementationstatusel3-6.md) | - | Workbooks |
 | [`ImplementationStatusEL3_7`](tables/implementationstatusel3-7.md) | [1](tables/implementationstatusel3-7.md) | - | Workbooks |
+| [`ImplementationStatusao61`](tables/implementationstatusao61.md) | - | - | - |
+| [`ImplementationStatusao62`](tables/implementationstatusao62.md) | - | - | - |
+| [`ImplementationStatusao63`](tables/implementationstatusao63.md) | - | - | - |
+| [`ImplementationStatusao64`](tables/implementationstatusao64.md) | - | - | - |
+| [`ImplementationStatusao65`](tables/implementationstatusao65.md) | - | - | - |
+| [`ImplementationStatusao66`](tables/implementationstatusao66.md) | - | - | - |
+| [`ImplementationStatusao67`](tables/implementationstatusao67.md) | - | - | - |
+| [`ImplementationStatusapp31`](tables/implementationstatusapp31.md) | - | - | - |
+| [`ImplementationStatusapp32`](tables/implementationstatusapp32.md) | - | - | - |
+| [`ImplementationStatusapp33`](tables/implementationstatusapp33.md) | - | - | - |
+| [`ImplementationStatusapp34`](tables/implementationstatusapp34.md) | - | - | - |
+| [`ImplementationStatusapp35`](tables/implementationstatusapp35.md) | - | - | - |
+| [`ImplementationStatusd21`](tables/implementationstatusd21.md) | - | - | - |
+| [`ImplementationStatusd22`](tables/implementationstatusd22.md) | - | - | - |
+| [`ImplementationStatusd23`](tables/implementationstatusd23.md) | - | - | - |
+| [`ImplementationStatusd24`](tables/implementationstatusd24.md) | - | - | - |
+| [`ImplementationStatusd25`](tables/implementationstatusd25.md) | - | - | - |
+| [`ImplementationStatusd26`](tables/implementationstatusd26.md) | - | - | - |
+| [`ImplementationStatusd27`](tables/implementationstatusd27.md) | - | - | - |
+| [`ImplementationStatusdata41`](tables/implementationstatusdata41.md) | - | - | - |
+| [`ImplementationStatusdata42`](tables/implementationstatusdata42.md) | - | - | - |
+| [`ImplementationStatusdata43`](tables/implementationstatusdata43.md) | - | - | - |
+| [`ImplementationStatusdata44`](tables/implementationstatusdata44.md) | - | - | - |
+| [`ImplementationStatusdata45`](tables/implementationstatusdata45.md) | - | - | - |
+| [`ImplementationStatusdata46`](tables/implementationstatusdata46.md) | - | - | - |
+| [`ImplementationStatusdata47`](tables/implementationstatusdata47.md) | - | - | - |
+| [`ImplementationStatusnet51`](tables/implementationstatusnet51.md) | - | - | - |
+| [`ImplementationStatusnet52`](tables/implementationstatusnet52.md) | - | - | - |
+| [`ImplementationStatusnet53`](tables/implementationstatusnet53.md) | - | - | - |
+| [`ImplementationStatusnet54`](tables/implementationstatusnet54.md) | - | - | - |
+| [`ImplementationStatusu11`](tables/implementationstatusu11.md) | - | - | - |
+| [`ImplementationStatusu12`](tables/implementationstatusu12.md) | - | - | - |
+| [`ImplementationStatusu13`](tables/implementationstatusu13.md) | - | - | - |
+| [`ImplementationStatusu14`](tables/implementationstatusu14.md) | - | - | - |
+| [`ImplementationStatusu15`](tables/implementationstatusu15.md) | - | - | - |
+| [`ImplementationStatusu16`](tables/implementationstatusu16.md) | - | - | - |
+| [`ImplementationStatusu17`](tables/implementationstatusu17.md) | - | - | - |
+| [`ImplementationStatusu18`](tables/implementationstatusu18.md) | - | - | - |
+| [`ImplementationStatusu19`](tables/implementationstatusu19.md) | - | - | - |
+| [`ImplementationStatusva71`](tables/implementationstatusva71.md) | - | - | - |
+| [`ImplementationStatusva72`](tables/implementationstatusva72.md) | - | - | - |
+| [`ImplementationStatusva73`](tables/implementationstatusva73.md) | - | - | - |
+| [`ImplementationStatusva74`](tables/implementationstatusva74.md) | - | - | - |
+| [`ImplementationStatusva75`](tables/implementationstatusva75.md) | - | - | - |
+| [`ImplementationStatusva76`](tables/implementationstatusva76.md) | - | - | - |
+| [`ImplementationStatusva77`](tables/implementationstatusva77.md) | - | - | - |
 | [`Import`](tables/import.md) | [2](tables/import.md) | [1](tables/import.md) | Workbooks |
 | [`Improve`](tables/improve.md) | [1](tables/improve.md) | - | Workbooks |
 | [`InfoSecAnalytics_CL`](tables/infosecanalytics-cl.md) | [1](tables/infosecanalytics-cl.md) | [1](tables/infosecanalytics-cl.md) | Workbooks |
@@ -1278,19 +1407,26 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Ipinfo_WHOIS_POC_CL`](tables/ipinfo-whois-poc-cl.md) | [1](tables/ipinfo-whois-poc-cl.md) | [1](tables/ipinfo-whois-poc-cl.md) | - |
 | [`Island_Admin_CL`](tables/island-admin-cl.md) | [1](tables/island-admin-cl.md) | [1](tables/island-admin-cl.md) | Workbooks |
 | [`Island_User_CL`](tables/island-user-cl.md) | [1](tables/island-user-cl.md) | [1](tables/island-user-cl.md) | Workbooks |
-| [`imFileEvent`](asim/imfileevent.md) | [5](asim/imfileevent.md) | - | Analytics, Hunting, Workbooks |
+| [`i`](tables/i.md) | [1](tables/i.md) | - | Playbooks |
+| [`imAuthentication`](asim/imauthentication.md) | [1](asim/imauthentication.md) | - | Analytics |
+| [`imFileEvent`](asim/imfileevent.md) | [6](asim/imfileevent.md) | - | Analytics, Hunting, Workbooks |
 | [`imNetworkSession`](asim/imnetworksession.md) | [2](asim/imnetworksession.md) | - | Hunting, Workbooks |
-| [`imProcess`](tables/improcess.md) | [2](tables/improcess.md) | - | Hunting, Workbooks |
-| [`imProcessCreate`](asim/improcesscreate.md) | [2](asim/improcesscreate.md) | - | Hunting |
-| [`imRegistry`](asim/imregistry.md) | [2](asim/imregistry.md) | - | Hunting |
+| [`imProcess`](tables/improcess.md) | [3](tables/improcess.md) | - | Analytics, Hunting, Workbooks |
+| [`imProcessCreate`](asim/improcesscreate.md) | [3](asim/improcesscreate.md) | - | Analytics, Hunting |
+| [`imRegistry`](asim/imregistry.md) | [3](asim/imregistry.md) | - | Analytics, Hunting |
 | [`imWebSessions`](tables/imwebsessions.md) | [1](tables/imwebsessions.md) | - | Workbooks |
 | [`image`](tables/image.md) | [2](tables/image.md) | - | Workbooks |
+| [`image_load_whitelist`](tables/image-load-whitelist.md) | - | - | - |
 | [`impacket`](tables/impacket.md) | [1](tables/impacket.md) | [1](tables/impacket.md) | Workbooks |
 | [`impact_score`](tables/impact-score.md) | [1](tables/impact-score.md) | - | Workbooks |
+| [`impeded`](tables/impeded.md) | - | - | - |
 | [`impersonate`](tables/impersonate.md) | [1](tables/impersonate.md) | - | Workbooks |
 | [`impersonation`](tables/impersonation.md) | [1](tables/impersonation.md) | - | Hunting, Workbooks |
 | [`impersonationStart`](tables/impersonationstart.md) | [1](tables/impersonationstart.md) | - | Analytics |
 | [`implement`](tables/implement.md) | [1](tables/implement.md) | - | Workbooks |
+| [`implementations.`](tables/implementations..md) | - | - | - |
+| [`imported`](tables/imported.md) | - | - | - |
+| [`improperly`](tables/improperly.md) | - | - | - |
 | [`improve`](tables/improve.md) | [1](tables/improve.md) | [1](tables/improve.md) | Workbooks |
 | [`iocsent_CL`](tables/iocsent-cl.md) | [1](tables/iocsent-cl.md) | [1](tables/iocsent-cl.md) | - |
 
@@ -1321,13 +1457,15 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`KubePVInventory`](tables/kubepvinventory.md) | - | - | - |
 | [`KubePodInventory`](tables/kubepodinventory.md) | - | - | - |
 | [`KubeServices`](tables/kubeservices.md) | - | - | - |
+| [`k`](tables/k.md) | [1](tables/k.md) | - | Playbooks |
 
 ## L
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`L`](tables/l.md) | [1](tables/l.md) | - | Playbooks |
 | [`LAJobLogs`](tables/lajoblogs.md) | - | - | - |
-| [`LAQueryLogs`](tables/laquerylogs.md) | [3](tables/laquerylogs.md) | - | Workbooks |
+| [`LAQueryLogs`](tables/laquerylogs.md) | [4](tables/laquerylogs.md) | - | Analytics, Hunting, Workbooks |
 | [`LASummaryLogs`](tables/lasummarylogs.md) | - | - | - |
 | [`LIATrackingEvents`](tables/liatrackingevents.md) | - | - | - |
 | [`LLMActivity`](tables/llmactivity.md) | - | - | - |
@@ -1339,11 +1477,13 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`LookoutCloudSecurity_CL`](tables/lookoutcloudsecurity-cl.md) | [1](tables/lookoutcloudsecurity-cl.md) | [1](tables/lookoutcloudsecurity-cl.md) | - |
 | [`LookoutMtdV2_CL`](tables/lookoutmtdv2-cl.md) | [1](tables/lookoutmtdv2-cl.md) | [1](tables/lookoutmtdv2-cl.md) | Analytics, Hunting, Workbooks |
 | [`Lookout_CL`](tables/lookout-cl.md) | [1](tables/lookout-cl.md) | [1](tables/lookout-cl.md) | Analytics |
+| [`l`](tables/l.md) | [1](tables/l.md) | - | Playbooks |
 
 ## M
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`M`](tables/m.md) | [1](tables/m.md) | - | Playbooks |
 | [`M365SecureScoreControls_CL`](tables/m365securescorecontrols-cl.md) | [1](tables/m365securescorecontrols-cl.md) | - | Workbooks |
 | [`MAApplication`](tables/maapplication.md) | - | - | - |
 | [`MAApplicationHealth`](tables/maapplicationhealth.md) | - | - | - |
@@ -1398,6 +1538,8 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Malware_Data_CL`](tables/malware-data-cl.md) | [1](tables/malware-data-cl.md) | [1](tables/malware-data-cl.md) | Workbooks |
 | [`MarkLogicAudit_CL`](tables/marklogicaudit-cl.md) | [2](tables/marklogicaudit-cl.md) | [2](tables/marklogicaudit-cl.md) | - |
 | [`McasShadowItReporting`](tables/mcasshadowitreporting.md) | [2](tables/mcasshadowitreporting.md) | [1](tables/mcasshadowitreporting.md) | Workbooks |
+| [`MerakiConfigurationChanges_CL`](tables/merakiconfigurationchanges-cl.md) | - | - | - |
+| [`MerakiSecurityEvents_CL`](tables/merakisecurityevents-cl.md) | - | - | - |
 | [`MeshControlPlane`](tables/meshcontrolplane.md) | - | - | - |
 | [`MessageEvents`](tables/messageevents.md) | [1](tables/messageevents.md) | - | Hunting |
 | [`MessagePostDeliveryEvents`](tables/messagepostdeliveryevents.md) | [1](tables/messagepostdeliveryevents.md) | - | Hunting |
@@ -1424,6 +1566,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`MySqlAuditLogs`](tables/mysqlauditlogs.md) | - | - | - |
 | [`MySqlErrorLogs`](tables/mysqlerrorlogs.md) | - | - | - |
 | [`MySqlSlowLogs`](tables/mysqlslowlogs.md) | - | - | - |
+| [`m`](tables/m.md) | [1](tables/m.md) | - | Playbooks |
 | [`maillog_CL`](tables/maillog-cl.md) | [1](tables/maillog-cl.md) | [1](tables/maillog-cl.md) | Analytics, Hunting, Workbooks |
 | [`meraki_CL`](tables/meraki-cl.md) | [3](tables/meraki-cl.md) | [4](tables/meraki-cl.md) | Workbooks |
 | [`message_CL`](tables/message-cl.md) | [1](tables/message-cl.md) | [1](tables/message-cl.md) | Analytics, Hunting, Workbooks |
@@ -1432,6 +1575,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`N`](tables/n.md) | [1](tables/n.md) | - | Playbooks |
 | [`NCBMBreakGlassAuditLogs`](tables/ncbmbreakglassauditlogs.md) | - | - | - |
 | [`NCBMSecurityDefenderLogs`](tables/ncbmsecuritydefenderlogs.md) | - | - | - |
 | [`NCBMSecurityLogs`](tables/ncbmsecuritylogs.md) | - | - | - |
@@ -1507,12 +1651,16 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`NginxUpstreamUpdateLogs`](tables/nginxupstreamupdatelogs.md) | - | - | - |
 | [`NonameAPISecurityAlert_CL`](tables/nonameapisecurityalert-cl.md) | [1](tables/nonameapisecurityalert-cl.md) | [1](tables/nonameapisecurityalert-cl.md) | - |
 | [`NordPassEventLogs_CL`](tables/nordpasseventlogs-cl.md) | [1](tables/nordpasseventlogs-cl.md) | [1](tables/nordpasseventlogs-cl.md) | Analytics, Workbooks |
+| [`n`](tables/n.md) | [1](tables/n.md) | - | Playbooks |
 | [`net_assets_CL`](tables/net-assets-cl.md) | [1](tables/net-assets-cl.md) | [1](tables/net-assets-cl.md) | - |
+| [`netflow_CL`](tables/netflow-cl.md) | - | - | - |
 
 ## O
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`O`](tables/o.md) | [1](tables/o.md) | - | Playbooks |
+| [`O365API_CL`](tables/o365api-cl.md) | [1](tables/o365api-cl.md) | - | Playbooks |
 | [`OAuthAppInfo`](tables/oauthappinfo.md) | - | - | - |
 | [`OCI_LogsV2_CL`](tables/oci-logsv2-cl.md) | [1](tables/oci-logsv2-cl.md) | [1](tables/oci-logsv2-cl.md) | Analytics, Hunting, Workbooks |
 | [`OCI_Logs_CL`](tables/oci-logs-cl.md) | [1](tables/oci-logs-cl.md) | [1](tables/oci-logs-cl.md) | Analytics, Hunting, Workbooks |
@@ -1536,11 +1684,12 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`OTelTracesAgent`](tables/oteltracesagent.md) | - | - | - |
 | [`ObsidianActivity_CL`](tables/obsidianactivity-cl.md) | [1](tables/obsidianactivity-cl.md) | [1](tables/obsidianactivity-cl.md) | - |
 | [`ObsidianThreat_CL`](tables/obsidianthreat-cl.md) | [1](tables/obsidianthreat-cl.md) | [1](tables/obsidianthreat-cl.md) | - |
-| [`OfficeActivity`](tables/officeactivity.md) | [25](tables/officeactivity.md) | [1](tables/officeactivity.md) | Analytics, Hunting, Workbooks |
+| [`OfficeActivity`](tables/officeactivity.md) | [26](tables/officeactivity.md) | [1](tables/officeactivity.md) | Analytics, Hunting, Workbooks |
 | [`OktaNativePoller_CL`](tables/oktanativepoller-cl.md) | [1](tables/oktanativepoller-cl.md) | [1](tables/oktanativepoller-cl.md) | - |
 | [`OktaSystemLogs`](tables/oktasystemlogs.md) | - | - | - |
 | [`OktaV2_CL`](tables/oktav2-cl.md) | [2](tables/oktav2-cl.md) | [2](tables/oktav2-cl.md) | Analytics, Hunting, Workbooks |
 | [`Okta_CL`](tables/okta-cl.md) | [2](tables/okta-cl.md) | [3](tables/okta-cl.md) | Analytics, Hunting, Workbooks |
+| [`Okta_Events_CL`](tables/okta-events-cl.md) | [1](tables/okta-events-cl.md) | - | Playbooks |
 | [`Onapsis_Defend_CL`](tables/onapsis-defend-cl.md) | [1](tables/onapsis-defend-cl.md) | [2](tables/onapsis-defend-cl.md) | - |
 | [`OneLoginEventsV2_CL`](tables/onelogineventsv2-cl.md) | [1](tables/onelogineventsv2-cl.md) | [2](tables/onelogineventsv2-cl.md) | - |
 | [`OneLoginUsersV2_CL`](tables/oneloginusersv2-cl.md) | [1](tables/oneloginusersv2-cl.md) | [2](tables/oneloginusersv2-cl.md) | - |
@@ -1552,16 +1701,18 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`OpenSystemsProxyLogs_CL`](tables/opensystemsproxylogs-cl.md) | [1](tables/opensystemsproxylogs-cl.md) | [1](tables/opensystemsproxylogs-cl.md) | - |
 | [`OpenSystemsZtnaLogs_CL`](tables/opensystemsztnalogs-cl.md) | [1](tables/opensystemsztnalogs-cl.md) | [1](tables/opensystemsztnalogs-cl.md) | - |
 | [`Open_Ports_Data_CL`](tables/open-ports-data-cl.md) | [1](tables/open-ports-data-cl.md) | - | Workbooks |
-| [`Operation`](tables/operation.md) | [14](tables/operation.md) | - | Workbooks |
+| [`Operation`](tables/operation.md) | [15](tables/operation.md) | - | Analytics, Hunting, Workbooks |
 | [`OracleCloudDatabase`](tables/oracleclouddatabase.md) | - | - | - |
 | [`OracleWebLogicServer_CL`](tables/oracleweblogicserver-cl.md) | [2](tables/oracleweblogicserver-cl.md) | [2](tables/oracleweblogicserver-cl.md) | Analytics, Hunting, Workbooks |
 | [`OrcaAlerts_CL`](tables/orcaalerts-cl.md) | [1](tables/orcaalerts-cl.md) | [1](tables/orcaalerts-cl.md) | Workbooks |
-| [`operation`](tables/operation.md) | [2](tables/operation.md) | [1](tables/operation.md) | Workbooks |
+| [`o`](tables/o.md) | [1](tables/o.md) | - | Playbooks |
+| [`operation`](tables/operation.md) | [3](tables/operation.md) | [1](tables/operation.md) | Analytics, Hunting, Workbooks |
 
 ## P
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`P`](tables/p.md) | [1](tables/p.md) | - | Playbooks |
 | [`PDNSBlockData_CL`](tables/pdnsblockdata-cl.md) | [1](tables/pdnsblockdata-cl.md) | [1](tables/pdnsblockdata-cl.md) | - |
 | [`PDNS_Data_CL`](tables/pdns-data-cl.md) | [1](tables/pdns-data-cl.md) | - | Workbooks |
 | [`PFTitleAuditLogs`](tables/pftitleauditlogs.md) | - | - | - |
@@ -1622,6 +1773,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`PurviewDataSensitivityLogs`](tables/purviewdatasensitivitylogs.md) | [2](tables/purviewdatasensitivitylogs.md) | [1](tables/purviewdatasensitivitylogs.md) | Analytics, Workbooks |
 | [`PurviewScanStatusLogs`](tables/purviewscanstatuslogs.md) | - | - | - |
 | [`PurviewSecurityLogs`](tables/purviewsecuritylogs.md) | - | - | - |
+| [`p`](tables/p.md) | [1](tables/p.md) | - | Playbooks |
 | [`prancer_CL`](tables/prancer-cl.md) | [1](tables/prancer-cl.md) | [1](tables/prancer-cl.md) | Analytics, Hunting, Workbooks |
 
 ## Q
@@ -1638,6 +1790,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`R`](tables/r.md) | [1](tables/r.md) | - | Playbooks |
 | [`REDConnectionEvents`](tables/redconnectionevents.md) | - | - | - |
 | [`RLTiCloudQuotas_CL`](tables/rlticloudquotas-cl.md) | [1](tables/rlticloudquotas-cl.md) | - | Playbooks, Workbooks |
 | [`RSAIDPlus_AdminLogs_CL`](tables/rsaidplus-adminlogs-cl.md) | [1](tables/rsaidplus-adminlogs-cl.md) | [1](tables/rsaidplus-adminlogs-cl.md) | Analytics |
@@ -1655,11 +1808,13 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Rubrik_Events_Data_CL`](tables/rubrik-events-data-cl.md) | [1](tables/rubrik-events-data-cl.md) | [1](tables/rubrik-events-data-cl.md) | Analytics |
 | [`Rubrik_Ransomware_Data_CL`](tables/rubrik-ransomware-data-cl.md) | [1](tables/rubrik-ransomware-data-cl.md) | [1](tables/rubrik-ransomware-data-cl.md) | - |
 | [`Rubrik_ThreatHunt_Data_CL`](tables/rubrik-threathunt-data-cl.md) | [1](tables/rubrik-threathunt-data-cl.md) | [1](tables/rubrik-threathunt-data-cl.md) | - |
+| [`r`](tables/r.md) | [1](tables/r.md) | - | Playbooks |
 
 ## S
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`S`](tables/s.md) | [1](tables/s.md) | - | Playbooks |
 | [`SAPBTPAuditLog_CL`](tables/sapbtpauditlog-cl.md) | [1](tables/sapbtpauditlog-cl.md) | [1](tables/sapbtpauditlog-cl.md) | Analytics, Workbooks |
 | [`SAPETDAlerts_CL`](tables/sapetdalerts-cl.md) | [1](tables/sapetdalerts-cl.md) | [1](tables/sapetdalerts-cl.md) | Analytics |
 | [`SAPETDInvestigations_CL`](tables/sapetdinvestigations-cl.md) | [1](tables/sapetdinvestigations-cl.md) | [1](tables/sapetdinvestigations-cl.md) | Analytics |
@@ -1689,17 +1844,17 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Samsung_Knox_User_CL`](tables/samsung-knox-user-cl.md) | [1](tables/samsung-knox-user-cl.md) | [1](tables/samsung-knox-user-cl.md) | Analytics, Workbooks |
 | [`SecureScoreControls`](tables/securescorecontrols.md) | [1](tables/securescorecontrols.md) | - | Workbooks |
 | [`SecureScores`](tables/securescores.md) | [2](tables/securescores.md) | - | Workbooks |
-| [`SecurityAlert`](tables/securityalert.md) | [49](tables/securityalert.md) | [10](tables/securityalert.md) | Analytics, Hunting, Playbooks, Workbooks |
+| [`SecurityAlert`](tables/securityalert.md) | [50](tables/securityalert.md) | [10](tables/securityalert.md) | Analytics, Hunting, Playbooks, Workbooks |
 | [`SecurityAttackPathData`](tables/securityattackpathdata.md) | - | - | - |
 | [`SecurityBaseline`](tables/securitybaseline.md) | [7](tables/securitybaseline.md) | - | Workbooks |
 | [`SecurityBaselineSummary`](tables/securitybaselinesummary.md) | [1](tables/securitybaselinesummary.md) | - | Workbooks |
 | [`SecurityBridgeLogs_CL`](tables/securitybridgelogs-cl.md) | [2](tables/securitybridgelogs-cl.md) | [2](tables/securitybridgelogs-cl.md) | - |
 | [`SecurityBridge_CL`](tables/securitybridge-cl.md) | [1](tables/securitybridge-cl.md) | [1](tables/securitybridge-cl.md) | - |
 | [`SecurityDetection`](tables/securitydetection.md) | [1](tables/securitydetection.md) | - | Workbooks |
-| [`SecurityEvent`](tables/securityevent.md) | [29](tables/securityevent.md) | [6](tables/securityevent.md) | Analytics, Hunting, Workbooks |
-| [`SecurityIncident`](tables/securityincident.md) | [30](tables/securityincident.md) | [2](tables/securityincident.md) | Analytics, Playbooks, Workbooks |
+| [`SecurityEvent`](tables/securityevent.md) | [30](tables/securityevent.md) | [6](tables/securityevent.md) | Analytics, Hunting, Workbooks |
+| [`SecurityIncident`](tables/securityincident.md) | [31](tables/securityincident.md) | [2](tables/securityincident.md) | Analytics, Playbooks, Workbooks |
 | [`SecurityIoTRawEvent`](tables/securityiotrawevent.md) | [2](tables/securityiotrawevent.md) | - | Workbooks |
-| [`SecurityNestedRecommendation`](tables/securitynestedrecommendation.md) | [5](tables/securitynestedrecommendation.md) | - | Analytics, Workbooks |
+| [`SecurityNestedRecommendation`](tables/securitynestedrecommendation.md) | [6](tables/securitynestedrecommendation.md) | - | Analytics, Workbooks |
 | [`SecurityRecommendation`](tables/securityrecommendation.md) | [7](tables/securityrecommendation.md) | - | Analytics, Hunting, Workbooks |
 | [`SecurityRegulatoryCompliance`](tables/securityregulatorycompliance.md) | [7](tables/securityregulatorycompliance.md) | - | Analytics, Workbooks |
 | [`SecurityScorecardFactor_CL`](tables/securityscorecardfactor-cl.md) | [1](tables/securityscorecardfactor-cl.md) | [1](tables/securityscorecardfactor-cl.md) | Workbooks |
@@ -1731,7 +1886,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`SharePointOnlineAssessmentRecommendation`](tables/sharepointonlineassessmentrecommendation.md) | - | - | - |
 | [`SignInLogs`](tables/signinlogs.md) | [1](tables/signinlogs.md) | [1](tables/signinlogs.md) | - |
 | [`SignalRServiceDiagnosticLogs`](tables/signalrservicediagnosticlogs.md) | - | - | - |
-| [`SigninLogs`](tables/signinlogs.md) | [36](tables/signinlogs.md) | [1](tables/signinlogs.md) | Analytics, Hunting, Workbooks |
+| [`SigninLogs`](tables/signinlogs.md) | [37](tables/signinlogs.md) | [1](tables/signinlogs.md) | Analytics, Hunting, Workbooks |
 | [`SlackAuditNativePoller_CL`](tables/slackauditnativepoller-cl.md) | [1](tables/slackauditnativepoller-cl.md) | [2](tables/slackauditnativepoller-cl.md) | Analytics, Hunting, Workbooks |
 | [`SlackAuditV2_CL`](tables/slackauditv2-cl.md) | [1](tables/slackauditv2-cl.md) | [2](tables/slackauditv2-cl.md) | Analytics, Hunting, Workbooks |
 | [`SlackAudit_CL`](tables/slackaudit-cl.md) | [1](tables/slackaudit-cl.md) | [1](tables/slackaudit-cl.md) | Analytics, Hunting, Workbooks |
@@ -1804,7 +1959,8 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`SynapseSqlPoolRequestSteps`](tables/synapsesqlpoolrequeststeps.md) | - | - | - |
 | [`SynapseSqlPoolSqlRequests`](tables/synapsesqlpoolsqlrequests.md) | - | - | - |
 | [`SynapseSqlPoolWaits`](tables/synapsesqlpoolwaits.md) | - | - | - |
-| [`Syslog`](tables/syslog.md) | [54](tables/syslog.md) | [38](tables/syslog.md) | Analytics, Hunting, Workbooks |
+| [`Syslog`](tables/syslog.md) | [55](tables/syslog.md) | [38](tables/syslog.md) | Analytics, Hunting, Workbooks |
+| [`s`](tables/s.md) | [1](tables/s.md) | - | Playbooks |
 | [`secRMM_CL`](tables/secrmm-cl.md) | [1](tables/secrmm-cl.md) | [1](tables/secrmm-cl.md) | Analytics, Workbooks |
 | [`securescorecontrols`](tables/securescorecontrols.md) | [1](tables/securescorecontrols.md) | - | Workbooks |
 | [`securescores`](tables/securescores.md) | [1](tables/securescores.md) | - | Workbooks |
@@ -1814,6 +1970,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`T`](tables/t.md) | [1](tables/t.md) | - | Playbooks |
 | [`TOUserAudits`](tables/touseraudits.md) | - | - | - |
 | [`TOUserDiagnostics`](tables/touserdiagnostics.md) | - | - | - |
 | [`TSIIngress`](tables/tsiingress.md) | - | - | - |
@@ -1850,7 +2007,9 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Top_Tags_By_IP_Data_CL`](tables/top-tags-by-ip-data-cl.md) | [1](tables/top-tags-by-ip-data-cl.md) | - | Workbooks |
 | [`TransmitSecurityActivity_CL`](tables/transmitsecurityactivity-cl.md) | [1](tables/transmitsecurityactivity-cl.md) | [1](tables/transmitsecurityactivity-cl.md) | - |
 | [`TrendMicroCAS_CL`](tables/trendmicrocas-cl.md) | [1](tables/trendmicrocas-cl.md) | [1](tables/trendmicrocas-cl.md) | Analytics, Hunting, Workbooks |
+| [`TrendMicro_XDR_Health_Check_CL`](tables/trendmicro-xdr-health-check-cl.md) | - | - | - |
 | [`TrendMicro_XDR_OAT_CL`](tables/trendmicro-xdr-oat-cl.md) | [1](tables/trendmicro-xdr-oat-cl.md) | [1](tables/trendmicro-xdr-oat-cl.md) | - |
+| [`TrendMicro_XDR_OAT_Health_Check_CL`](tables/trendmicro-xdr-oat-health-check-cl.md) | - | - | - |
 | [`TrendMicro_XDR_RCA_Result_CL`](tables/trendmicro-xdr-rca-result-cl.md) | [1](tables/trendmicro-xdr-rca-result-cl.md) | [1](tables/trendmicro-xdr-rca-result-cl.md) | - |
 | [`TrendMicro_XDR_RCA_Task_CL`](tables/trendmicro-xdr-rca-task-cl.md) | [1](tables/trendmicro-xdr-rca-task-cl.md) | [1](tables/trendmicro-xdr-rca-task-cl.md) | - |
 | [`TrendMicro_XDR_WORKBENCH_CL`](tables/trendmicro-xdr-workbench-cl.md) | [1](tables/trendmicro-xdr-workbench-cl.md) | [1](tables/trendmicro-xdr-workbench-cl.md) | Analytics, Workbooks |
@@ -1860,12 +2019,15 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Ttp_Attachment_CL`](tables/ttp-attachment-cl.md) | [1](tables/ttp-attachment-cl.md) | [1](tables/ttp-attachment-cl.md) | Analytics, Workbooks |
 | [`Ttp_Impersonation_CL`](tables/ttp-impersonation-cl.md) | [1](tables/ttp-impersonation-cl.md) | [1](tables/ttp-impersonation-cl.md) | Analytics, Workbooks |
 | [`Ttp_Url_CL`](tables/ttp-url-cl.md) | [1](tables/ttp-url-cl.md) | [1](tables/ttp-url-cl.md) | Analytics, Workbooks |
+| [`t`](tables/t.md) | [1](tables/t.md) | - | Playbooks |
+| [`talon_CL`](tables/talon-cl.md) | - | - | - |
 | [`tide_lookup_data_CL`](tables/tide-lookup-data-cl.md) | [1](tables/tide-lookup-data-cl.md) | - | Playbooks, Workbooks |
 
 ## U
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`U`](tables/u.md) | [1](tables/u.md) | - | Playbooks |
 | [`UAApp`](tables/uaapp.md) | - | - | - |
 | [`UAComputer`](tables/uacomputer.md) | - | - | - |
 | [`UAComputerRank`](tables/uacomputerrank.md) | - | - | - |
@@ -1888,13 +2050,14 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`UPDATE`](tables/update.md) | [3](tables/update.md) | - | Workbooks |
 | [`USAGE`](tables/usage.md) | [3](tables/usage.md) | [3](tables/usage.md) | Analytics, Workbooks |
 | [`Ubiquiti_CL`](tables/ubiquiti-cl.md) | [2](tables/ubiquiti-cl.md) | [2](tables/ubiquiti-cl.md) | Analytics, Hunting, Workbooks |
-| [`Update`](tables/update.md) | [14](tables/update.md) | [1](tables/update.md) | Analytics, Hunting, Workbooks |
+| [`Update`](tables/update.md) | [15](tables/update.md) | [1](tables/update.md) | Analytics, Hunting, Workbooks |
 | [`UpdateRunProgress`](tables/updaterunprogress.md) | - | - | - |
 | [`UpdateSummary`](tables/updatesummary.md) | [1](tables/updatesummary.md) | - | Workbooks |
 | [`UrlClickEvents`](tables/urlclickevents.md) | [5](tables/urlclickevents.md) | [1](tables/urlclickevents.md) | Analytics, Hunting, Workbooks |
-| [`Usage`](tables/usage.md) | [9](tables/usage.md) | - | Analytics, Hunting, Workbooks |
+| [`Usage`](tables/usage.md) | [10](tables/usage.md) | - | Analytics, Hunting, Playbooks, Workbooks |
 | [`UserAccessAnalytics`](tables/useraccessanalytics.md) | [1](tables/useraccessanalytics.md) | - | Workbooks |
 | [`UserPeerAnalytics`](tables/userpeeranalytics.md) | [1](tables/userpeeranalytics.md) | - | Workbooks |
+| [`u`](tables/u.md) | [1](tables/u.md) | - | Playbooks |
 | [`update`](tables/update.md) | [7](tables/update.md) | [1](tables/update.md) | Workbooks |
 | [`usage`](tables/usage.md) | [2](tables/usage.md) | [1](tables/usage.md) | Workbooks |
 
@@ -1902,12 +2065,13 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
+| [`V`](tables/v.md) | [1](tables/v.md) | - | Playbooks |
 | [`VCoreMongoRequests`](tables/vcoremongorequests.md) | - | - | - |
 | [`VIAudit`](tables/viaudit.md) | - | - | - |
 | [`VIIndexing`](tables/viindexing.md) | - | - | - |
 | [`VMBoundPort`](tables/vmboundport.md) | [1](tables/vmboundport.md) | - | Workbooks |
 | [`VMComputer`](tables/vmcomputer.md) | [2](tables/vmcomputer.md) | - | Workbooks |
-| [`VMConnection`](tables/vmconnection.md) | [11](tables/vmconnection.md) | - | Analytics, Hunting, Workbooks |
+| [`VMConnection`](tables/vmconnection.md) | [12](tables/vmconnection.md) | - | Analytics, Hunting, Workbooks |
 | [`VMProcess`](tables/vmprocess.md) | [2](tables/vmprocess.md) | - | Workbooks |
 | [`VMware_CWS_DLPLogs_CL`](tables/vmware-cws-dlplogs-cl.md) | [1](tables/vmware-cws-dlplogs-cl.md) | [1](tables/vmware-cws-dlplogs-cl.md) | Analytics |
 | [`VMware_CWS_Health_CL`](tables/vmware-cws-health-cl.md) | [1](tables/vmware-cws-health-cl.md) | [1](tables/vmware-cws-health-cl.md) | Workbooks |
@@ -1929,6 +2093,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`VeeamSessions_CL`](tables/veeamsessions-cl.md) | [1](tables/veeamsessions-cl.md) | [1](tables/veeamsessions-cl.md) | Analytics |
 | [`VersasecCmsErrorLogs_CL`](tables/versaseccmserrorlogs-cl.md) | [1](tables/versaseccmserrorlogs-cl.md) | [1](tables/versaseccmserrorlogs-cl.md) | - |
 | [`VersasecCmsSysLogs_CL`](tables/versaseccmssyslogs-cl.md) | [1](tables/versaseccmssyslogs-cl.md) | [1](tables/versaseccmssyslogs-cl.md) | - |
+| [`v`](tables/v.md) | [1](tables/v.md) | - | Playbooks |
 | [`varonisresources_CL`](tables/varonisresources-cl.md) | [1](tables/varonisresources-cl.md) | [1](tables/varonisresources-cl.md) | - |
 | [`vcenter_CL`](tables/vcenter-cl.md) | [2](tables/vcenter-cl.md) | [2](tables/vcenter-cl.md) | Analytics, Workbooks |
 | [`vectra_beacon_CL`](tables/vectra-beacon-cl.md) | [1](tables/vectra-beacon-cl.md) | [1](tables/vectra-beacon-cl.md) | - |
@@ -1948,12 +2113,13 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`vectra_ssh_CL`](tables/vectra-ssh-cl.md) | [1](tables/vectra-ssh-cl.md) | [1](tables/vectra-ssh-cl.md) | - |
 | [`vectra_ssl_CL`](tables/vectra-ssl-cl.md) | [1](tables/vectra-ssl-cl.md) | [1](tables/vectra-ssl-cl.md) | - |
 | [`vectra_x509_CL`](tables/vectra-x509-cl.md) | [1](tables/vectra-x509-cl.md) | [1](tables/vectra-x509-cl.md) | - |
+| [`vmconnection`](tables/vmconnection.md) | - | - | - |
 
 ## W
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`W3CIISLog`](tables/w3ciislog.md) | [8](tables/w3ciislog.md) | [2](tables/w3ciislog.md) | Analytics, Hunting, Workbooks |
+| [`W3CIISLog`](tables/w3ciislog.md) | [9](tables/w3ciislog.md) | [2](tables/w3ciislog.md) | Analytics, Hunting, Workbooks |
 | [`WDAVStatus`](tables/wdavstatus.md) | - | - | - |
 | [`WDAVThreat`](tables/wdavthreat.md) | - | - | - |
 | [`WOUserAudits`](tables/wouseraudits.md) | - | - | - |
@@ -1985,10 +2151,10 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`Whois_Data_CL`](tables/whois-data-cl.md) | [1](tables/whois-data-cl.md) | - | Workbooks |
 | [`Windows365AuditLogs`](tables/windows365auditlogs.md) | - | - | - |
 | [`WindowsClientAssessmentRecommendation`](tables/windowsclientassessmentrecommendation.md) | - | - | - |
-| [`WindowsEvent`](tables/windowsevent.md) | [10](tables/windowsevent.md) | [1](tables/windowsevent.md) | Analytics, Hunting, Workbooks |
-| [`WindowsFirewall`](tables/windowsfirewall.md) | [7](tables/windowsfirewall.md) | [1](tables/windowsfirewall.md) | Workbooks |
+| [`WindowsEvent`](tables/windowsevent.md) | [11](tables/windowsevent.md) | [1](tables/windowsevent.md) | Analytics, Hunting, Workbooks |
+| [`WindowsFirewall`](tables/windowsfirewall.md) | [8](tables/windowsfirewall.md) | [1](tables/windowsfirewall.md) | Analytics, Workbooks |
 | [`WindowsServerAssessmentRecommendation`](tables/windowsserverassessmentrecommendation.md) | - | - | - |
-| [`WireData`](tables/wiredata.md) | [2](tables/wiredata.md) | - | Hunting, Workbooks |
+| [`WireData`](tables/wiredata.md) | [3](tables/wiredata.md) | - | Hunting, Workbooks |
 | [`WizAuditLogsV2_CL`](tables/wizauditlogsv2-cl.md) | [1](tables/wizauditlogsv2-cl.md) | [1](tables/wizauditlogsv2-cl.md) | Workbooks |
 | [`WizAuditLogs_CL`](tables/wizauditlogs-cl.md) | [1](tables/wizauditlogs-cl.md) | [1](tables/wizauditlogs-cl.md) | Workbooks |
 | [`WizIssuesV2_CL`](tables/wizissuesv2-cl.md) | [1](tables/wizissuesv2-cl.md) | [1](tables/wizissuesv2-cl.md) | Workbooks |
@@ -1999,6 +2165,8 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | [`WorkloadMonitoringPerf`](tables/workloadmonitoringperf.md) | - | - | - |
 | [`Workplace_Facebook_CL`](tables/workplace-facebook-cl.md) | [1](tables/workplace-facebook-cl.md) | [1](tables/workplace-facebook-cl.md) | - |
 | [`WsSecurityEvents_CL`](tables/wssecurityevents-cl.md) | [1](tables/wssecurityevents-cl.md) | [1](tables/wssecurityevents-cl.md) | Workbooks |
+| [`w`](tables/w.md) | [1](tables/w.md) | - | Playbooks |
+| [`watchList`](tables/watchlist.md) | - | - | - |
 | [`watchlist`](tables/watchlist.md) | [3](tables/watchlist.md) | - | Analytics, Workbooks |
 | [`web_assets_CL`](tables/web-assets-cl.md) | [1](tables/web-assets-cl.md) | [1](tables/web-assets-cl.md) | - |
 
@@ -2007,6 +2175,13 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
 | [`X509_Data_CL`](tables/x509-data-cl.md) | [1](tables/x509-data-cl.md) | - | Workbooks |
+| [`x`](tables/x.md) | [1](tables/x.md) | - | Playbooks |
+
+## Y
+
+| Table | Solutions | Connectors | Content |
+|-------|:---------:|:----------:|:--------|
+| [`y`](tables/y.md) | [1](tables/y.md) | - | Playbooks |
 
 ## Z
 

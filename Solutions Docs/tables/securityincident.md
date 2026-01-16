@@ -12,7 +12,7 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 
-## Solutions (30)
+## Solutions (31)
 
 This table is used by the following solutions:
 
@@ -40,6 +40,7 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOC-Process-Framework](../solutions/soc-process-framework.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
@@ -56,7 +57,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (40)
+## Content Items Using This Table (64)
 
 ### Analytic Rules (2)
 
@@ -64,7 +65,29 @@ This table is ingested by the following connectors:
 - [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md)
 - [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db-6bbae8c7.md)
 
-### Workbooks (36)
+### Workbooks (56)
+
+**In solution [](../solutions/.md):**
+- [AMAmigrationTracker](../content/-amamigrationtracker-044e752e.md)
+- [AdvancedWorkbookConcepts](../content/-advancedworkbookconcepts-fa827ab4.md)
+- [AnalyticsEfficiency](../content/-analyticsefficiency-653bfd1b.md)
+- [AnalyticsHealthAudit](../content/-analyticshealthaudit-3b5a2cc3.md)
+- [AnomaliesVisualization](../content/-anomaliesvisualization-c9f045e6.md)
+- [AnomalyData](../content/-anomalydata-bd57b98e.md)
+- [AzureKeyVaultWorkbook](../content/-azurekeyvaultworkbook-e23dd511.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [IncidentTasksWorkbook](../content/-incidenttasksworkbook-1ea1eb20.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [SecurityOperationsEfficiency](../content/-securityoperationsefficiency-4d969d65.md)
+- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
+- [Sentinel_Central](../content/-sentinel-central-fec4c08c.md)
+- [ThreatIntelligence](../content/-threatintelligence-b9c30149.md)
+- [UserEntityBehaviorAnalytics](../content/-userentitybehavioranalytics-75272bde.md)
+- [User_Analytics_Workbook](../content/-user-analytics-workbook-4d50c893.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)

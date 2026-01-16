@@ -16,7 +16,7 @@ Reference for Heartbeat table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/heartbeat) |
 
-## Solutions (10)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -28,6 +28,7 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [VMware SASE](../solutions/vmware-sase.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
 
@@ -39,14 +40,28 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (10)
+## Content Items Using This Table (20)
 
-### Analytic Rules (1)
+### Analytic Rules (3)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [M2131_AssetStoppedLogging](../content/maturitymodelforeventlogmanagementm2131-m2131-assetstoppedlogging-4be5b645-1d08-49e4-b58d-07294ff19223-416aad3a.md)
 
-### Workbooks (9)
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Missing Domain Controller Heartbeat](../content/standalone-content-missing-domain-controller-heartbeat-b8b8ba09-1e89-45a1-8bd7-691cd23bfa32-3caae499.md)
+- [OMI Vulnerability Exploitation](../content/standalone-content-omi-vulnerability-exploitation-3cc5ccd8-b416-4141-bb2d-4eba370e37a5-f90e5eee.md)
+
+### Workbooks (17)
+
+**In solution [](../solutions/.md):**
+- [AMAmigrationTracker](../content/-amamigrationtracker-044e752e.md)
+- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
+- [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
+- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+- [ForcepointNGFWAdvanced](../content/-forcepointngfwadvanced-9bfc0ecf.md)
+- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
+- [WindowsFirewall](../content/-windowsfirewall-39ee633b.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 - [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)

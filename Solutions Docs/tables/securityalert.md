@@ -20,7 +20,7 @@ Reference for SecurityAlert table in Azure Monitor Logs.
 
 📖 **Related Documentation:** [Security alert schema reference](https://learn.microsoft.com/azure/sentinel/security-alert-schema) - Describes the SecurityAlert table schema and field definitions
 
-## Solutions (49)
+## Solutions (50)
 
 This table is used by the following solutions:
 
@@ -64,6 +64,7 @@ This table is used by the following solutions:
 - [SAP BTP](../solutions/sap-btp.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
@@ -91,9 +92,12 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (108)
+## Content Items Using This Table (175)
 
-### Analytic Rules (42)
+### Analytic Rules (56)
+
+**In solution [](../solutions/.md):**
+- [Suspicious VM Instance Creation Activity Detected](../content/-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-f69ca2de.md)
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 - [Azure DevOps Pipeline modified by a new user](../content/azuredevopsauditing-azure-devops-pipeline-modified-by-a-new-user-155e9134-d5ad-4a6f-88f3-99c220040b66-1f2f0f72.md)
@@ -151,6 +155,21 @@ This table is ingested by the following connectors:
 - [Suspicious AWS console logins by credential access alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.md)
 - [User impersonation by Identity Protection alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.md)
 
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [AV detections related to Dev-0530 actors](../content/standalone-content-av-detections-related-to-dev-0530-actors-5f171045-88ab-4634-baae-a7b6509f483b-61a76c5a.md)
+- [AV detections related to Europium actors](../content/standalone-content-av-detections-related-to-europium-actors-186970ee-5001-41c1-8c73-3178f75ce96a-1724290f.md)
+- [AV detections related to Hive Ransomware](../content/standalone-content-av-detections-related-to-hive-ransomware-4e5914a4-2ccd-429d-a845-fa597f0bd8c5-0f4ac020.md)
+- [Detecting Impossible travel with mailbox permission tampering & Privilege Escalation attempt](../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.md)
+- [Dev-0228 File Path Hashes November 2021](../content/standalone-content-dev-0228-file-path-hashes-november-2021-3b443f22-9be9-4c35-ac70-a94757748439-59975a39.md)
+- [Dev-0228 File Path Hashes November 2021 (ASIM Version)](../content/standalone-content-dev-0228-file-path-hashes-november-2021-asim-version-29a29e5d-354e-4f5e-8321-8b39d25047bf-517d1ab6.md)
+- [M365D Alerts Correlation to non-Microsoft Network device network activity involved in successful sign-in Activity](../content/standalone-content-m365d-alerts-correlation-to-non-microsoft-network-device-network-activity-involved-in-779731f7-8ba0-4198-8524-5701b7defddc-15ad9d20.md)
+- [Mass Download & copy to USB device by single user](../content/standalone-content-mass-download-&-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.md)
+- [Microsoft Defender for Endpoint (MDE) signatures for Azure Synapse pipelines and Azure Data Factory](../content/standalone-content-microsoft-defender-for-endpoint-mde-signatures-for-azure-synapse-pipelines-and-azure--a333d8bf-22a3-4c55-a1e9-5f0a135c0253-63a30dd5.md)
+- [Phishing link click observed in Network Traffic](../content/standalone-content-phishing-link-click-observed-in-network-traffic-2fed0668-6d43-4c78-87e6-510f96f12145-72384c6d.md)
+- [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md)
+- [Solorigate Defender Detections](../content/standalone-content-solorigate-defender-detections-e70fa6e0-796a-4e85-9420-98b17b0bb749-ecd5908d.md)
+- [Workspace deletion activity from an infected device](../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.md)
+
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map URL Entity to SecurityAlert Data](../content/threat-intelligence-ti-map-url-entity-to-securityalert-data-f30a47c1-65fb-42b1-a7f4-00941c12550b-d5b8e27a.md)
 - [TI map Domain entity to SecurityAlert](../content/threat-intelligence-ti-map-domain-entity-to-securityalert-87890d78-3e05-43ec-9ab9-ba32f4e01250-cbcbd86c.md)
@@ -167,7 +186,20 @@ This table is ingested by the following connectors:
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [AV detections related to Zinc actors](../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090-62580aab.md)
 
-### Hunting Queries (14)
+### Hunting Queries (31)
+
+**In solution [](../solutions/.md):**
+- [Alerts With This Process](../content/-alerts-with-this-process-635cba46-c077-4959-a2d9-b7eb6fecb854-f56287f7.md)
+- [Alerts related to account](../content/-alerts-related-to-account-3a72ba65-00fa-4bbc-b246-be1ff3f73ce1-b7e321ca.md)
+- [BitLocker Key Retrieval](../content/-bitlocker-key-retrieval-8ea8b2af-f1ce-4464-964c-6763641cc4f6-8757904d.md)
+- [Dev-0056 Command Line Activity November 2021 (ASIM Version)](../content/-dev-0056-command-line-activity-november-2021-asim-version-98fdd28d-9c13-431b-aca9-e6cfbb90a5a9-6063c13c.md)
+- [Exchange Servers and Associated Security Alerts](../content/-exchange-servers-and-associated-security-alerts-84026aa0-7020-45d0-9f85-d526e43de2ab-7371325a.md)
+- [Integrate Purview with Cloud App Events](../content/-integrate-purview-with-cloud-app-events-a1adce9c-5945-4a20-984e-d95b6071a791-0efa8e1a.md)
+- [Recon Activity with Interactive Logon Correlation](../content/-recon-activity-with-interactive-logon-correlation-346d36c9-2e79-4d8f-8c14-1eef73d38737-91bf2daf.md)
+- [SQL Alert Correlation with CommonSecurityLogs and AuditLogs](../content/-sql-alert-correlation-with-commonsecuritylogs-and-auditlogs-dc5adcc9-70ab-4fba-8690-f57767e8ca02-0af628b1.md)
+- [Storage Alert Correlation with CommonSecurityLogs and StorageLogs](../content/-storage-alert-correlation-with-commonsecuritylogs-and-storagelogs-7098cae1-c632-4b40-b715-86d6b07720d7-02f8c87f.md)
+- [Storage Alerts Correlation with CommonSecurityLogs & AuditLogs](../content/-storage-alerts-correlation-with-commonsecuritylogs-&-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-941a4583.md)
+- [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-eafd4526.md)
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 - [Azure DevOps - New Package Feed Created](../content/azuredevopsauditing-azure-devops-new-package-feed-created-3d1aa540-b4c7-4789-8c4c-4174b3c2371f-bf70da4e.md)
@@ -193,7 +225,44 @@ This table is ingested by the following connectors:
 - [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md)
 - [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md)
 
-### Workbooks (44)
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Alerts On Host](../content/standalone-content-alerts-on-host-61a6edc0-e71a-4084-8f3c-05a58e1b9012-01045ee3.md)
+- [Alerts related to File](../content/standalone-content-alerts-related-to-file-11d808a1-32fe-4618-946a-cfd43523347a-23c48a6a.md)
+- [Alerts related to IP](../content/standalone-content-alerts-related-to-ip-0b520385-6a16-4e6f-ba89-c320d857695f-8206f0fa.md)
+- [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md)
+- [Web shell command alert enrichment](../content/standalone-content-web-shell-command-alert-enrichment-d2e6f31b-add1-4f44-b54d-1975a5605c1d-5ffaf047.md)
+- [Web shell file alert enrichment](../content/standalone-content-web-shell-file-alert-enrichment-d0a3cb7b-375e-402d-9827-adafe0ce386d-3eb9e2e3.md)
+
+### Workbooks (71)
+
+**In solution [](../solutions/.md):**
+- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
+- [AdvancedWorkbookConcepts](../content/-advancedworkbookconcepts-fa827ab4.md)
+- [AksSecurity](../content/-akssecurity-f7a12d8d.md)
+- [AnalyticsEfficiency](../content/-analyticsefficiency-653bfd1b.md)
+- [AnomalyData](../content/-anomalydata-bd57b98e.md)
+- [AzureKeyVaultWorkbook](../content/-azurekeyvaultworkbook-e23dd511.md)
+- [AzureSentinelSecurityAlerts](../content/-azuresentinelsecurityalerts-e03bb44f.md)
+- [DSTIMWorkbook](../content/-dstimworkbook-0a68e0ad.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
+- [IOT_Alerts](../content/-iot-alerts-702a6b4c.md)
+- [IntsightsIOCWorkbook](../content/-intsightsiocworkbook-d54a0825.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [MITREAttack](../content/-mitreattack-c9238c4d.md)
+- [MicrosoftCloudAppSecurity](../content/-microsoftcloudappsecurity-862f6f68.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [PhishingAnalysis](../content/-phishinganalysis-5cdced29.md)
+- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
+- [Sentinel_Central](../content/-sentinel-central-fec4c08c.md)
+- [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
+- [ThreatIntelligence](../content/-threatintelligence-b9c30149.md)
+- [UserEntityBehaviorAnalytics](../content/-userentitybehavioranalytics-75272bde.md)
+- [VisualizationDemo](../content/-visualizationdemo-dee8f13c.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
+- [microsoftdefenderforidentity](../content/-microsoftdefenderforidentity-cf95fe77.md)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)

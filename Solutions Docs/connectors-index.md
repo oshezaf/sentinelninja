@@ -14,9 +14,9 @@ Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you
 
 | Metric | Total | Active | Deprecated | Unpublished |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | 383 | 289 | 29 | 65 |
+| In Solutions | 384 | 289 | 29 | 66 |
 | Discovered* | 147 | 27 | 114 | 6 |
-| **Total** | **530** | **316** | **143** | **71** |
+| **Total** | **531** | **316** | **143** | **72** |
 
 *\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions.*
 
@@ -25,7 +25,7 @@ Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you
 | Collection Method | Total | Active | Deprecated | Unpublished |
 |:-----------------|------:|-------:|-----------:|------------:|
 | Azure Function | 129 | 75 | 18 | 36 |
-| CCF | 128 | 118 | 1 | 9 |
+| CCF | 129 | 118 | 1 | 10 |
 | MMA | 110 | 12 | 90 | 8 |
 | AMA | 59 | 25 | 34 | 0 |
 | Unknown (Custom Log) | 44 | 35 | 0 | 9 |
@@ -33,7 +33,7 @@ Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you
 | Azure Diagnostics | 17 | 17 | 0 | 0 |
 | REST API | 15 | 7 | 0 | 8 |
 | Unknown | 3 | 3 | 0 | 0 |
-| **Total** | **530** | **316** | **143** | **71** |
+| **Total** | **531** | **316** | **143** | **72** |
 
 *Active = Published and not deprecated.*
 
@@ -41,7 +41,7 @@ Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you
 
 ## Connectors Index
 
-This page lists **530 unique connectors** across all solutions.
+This page lists **531 unique connectors** across all solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [V](#v) | [W](#w) | [Z](#z) | [Deprecated](#deprecated-connectors)
 
@@ -187,6 +187,7 @@ This page lists **530 unique connectors** across all solutions.
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="" width="32" height="32"> | [CYFIRMA Digital Risk](connectors/cyfirmadigitalriskalertsconnector.md) | Microsoft | CCF | 7 | [Cyfirma Digital Risk](solutions/cyfirma-digital-risk.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="" width="32" height="32"> | [CYFIRMA Vulnerabilities Intelligence](connectors/cyfirmavulnerabilitiesinteldc.md) | Microsoft | CCF | 1 | [Cyfirma Vulnerabilities Intel](solutions/cyfirma-vulnerabilities-intel.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cynerio.svg" alt="" width="32" height="32"> | [Cynerio Security Events](connectors/cyneriosecurityevents.md) | Cynerio | Unknown (Custom Log) | 1 | [Cynerio](solutions/cynerio.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyren_logo.svg" alt="" width="32" height="32"> | [Cyren Threat Intelligence](connectors/cyrenthreatintel.md) ⚠️ | Cyren | CCF | 1 | [CyrenThreatIntelligence](solutions/cyrenthreatintelligence.md) |
 
 ## D
 

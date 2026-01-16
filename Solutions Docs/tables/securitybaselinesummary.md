@@ -24,9 +24,18 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (9)
 
-### Workbooks (2)
+### Workbooks (9)
+
+**In solution [](../solutions/.md):**
+- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)

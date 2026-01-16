@@ -16,7 +16,7 @@ Reference for AzureActivity table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity) |
 
-## Solutions (19)
+## Solutions (20)
 
 This table is used by the following solutions:
 
@@ -34,6 +34,7 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -48,9 +49,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (54)
+## Content Items Using This Table (84)
 
-### Analytic Rules (21)
+### Analytic Rules (25)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
@@ -77,6 +78,12 @@ This table is ingested by the following connectors:
 **In solution [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md):**
 - [Threat Essentials - Mass Cloud resource deletions Time Series Anomaly](../content/securitythreatessentialsolution-threat-essentials-mass-cloud-resource-deletions-time-series-anomaly-fa2658fe-3714-4c55-bb12-2b7275c628e8-119af452.md)
 
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Azure Diagnostic settings removed from a resource](../content/standalone-content-azure-diagnostic-settings-removed-from-a-resource-6e95aef3-a1e0-4063-8e74-cd59aa59f245-652cb0e3.md)
+- [Azure VM Run Command operation executed during suspicious login window](../content/standalone-content-azure-vm-run-command-operation-executed-during-suspicious-login-window-11bda520-a965-4654-9a45-d09f372f71aa-f213ee84.md)
+- [Azure VM Run Command operations executing a unique PowerShell script](../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.md)
+- [Workspace deletion activity from an infected device](../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.md)
+
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map IP Entity to AzureActivity](../content/threat-intelligence-ti-map-ip-entity-to-azureactivity-2441bce9-02e4-407b-8cc7-7d597f38b8b0-eefa9066.md)
 - [TI map Email entity to AzureActivity](../content/threat-intelligence-ti-map-email-entity-to-azureactivity-cca3b4d9-ac39-4109-8b93-65bb284003e6-d3038f92.md)
@@ -85,7 +92,11 @@ This table is ingested by the following connectors:
 - [TI Map IP Entity to AzureActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.md)
 - [TI map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.md)
 
-### Hunting Queries (17)
+### Hunting Queries (22)
+
+**In solution [](../solutions/.md):**
+- [Azure VM Run Command linked with MDE](../content/-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-90306b65.md)
+- [Storage Account Key Enumeration](../content/-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-bb9b5abb.md)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 - [Anomalous Azure Operation Hunting Model](../content/azure-activity-anomalous-azure-operation-hunting-model-43cb0347-bdcc-4e83-af5a-cebbd03971d8-cab991db.md)
@@ -110,7 +121,34 @@ This table is ingested by the following connectors:
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md)
 
-### Workbooks (16)
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md)
+- [Azure CloudShell Usage](../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.md)
+- [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md)
+
+### Workbooks (36)
+
+**In solution [](../solutions/.md):**
+- [AzureActivity](../content/-azureactivity-a2d6e29f.md)
+- [AzureAuditActivityAndSignin](../content/-azureauditactivityandsignin-4b42b4fb.md)
+- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [AzureServiceHealthWorkbook](../content/-azureservicehealthworkbook-cfad1e11.md)
+- [AzureThreatResearchMatrixWorkbook](../content/-azurethreatresearchmatrixworkbook-75e88442.md)
+- [CopilotforSecurityMonitoring](../content/-copilotforsecuritymonitoring-ca4c3a98.md)
+- [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
+- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
+- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [PlaybookHealth](../content/-playbookhealth-00abecf8.md)
+- [SensitiveOperationsinAzureActivityLogReview](../content/-sensitiveoperationsinazureactivitylogreview-7e17c6fd.md)
+- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
+- [WorkspaceAuditing](../content/-workspaceauditing-6e9c344b.md)
+- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
+- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 - [AzureActivity](../content/azure-activity-azureactivity-dc7bc453.md)

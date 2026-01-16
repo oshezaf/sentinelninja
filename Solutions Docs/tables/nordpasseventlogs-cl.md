@@ -20,7 +20,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (10)
+## Content Items Using This Table (11)
 
 ### Analytic Rules (9)
 
@@ -35,7 +35,10 @@ This table is ingested by the following connectors:
 - [NordPass - User fails authentication](../content/nordpass-nordpass-user-fails-authentication-27b261dc-68f3-489a-944f-bc252e0c1960-90f54b58.md)
 - [NordPass - Vault export](../content/nordpass-nordpass-vault-export-c7f14b43-7625-4516-b137-30b7fda65bcf-aff9055e.md)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [](../solutions/.md):**
+- [NordPass](../content/-nordpass-bef73ecf.md)
 
 **In solution [NordPass](../solutions/nordpass.md):**
 - [NordPass](../content/nordpass-nordpass-9080f186.md)

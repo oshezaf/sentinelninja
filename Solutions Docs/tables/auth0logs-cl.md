@@ -20,6 +20,13 @@ This table is ingested by the following connectors:
 
 ---
 
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [](../solutions/.md):**
+- [Auth0Workbook](../content/-auth0workbook-d2933493.md)
+
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)

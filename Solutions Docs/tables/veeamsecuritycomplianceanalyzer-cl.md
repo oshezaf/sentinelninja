@@ -20,14 +20,18 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (4)
 
 ### Analytic Rules (1)
 
 **In solution [Veeam](../solutions/veeam.md):**
 - [Best Practice Compliance Check Not Passed](../content/veeam-best-practice-compliance-check-not-passed-f920ac64-dfd0-4dea-9b7c-acecf1ea2b28-bd3d7387.md)
 
-### Workbooks (1)
+### Workbooks (3)
+
+**In solution [](../solutions/.md):**
+- [VeeamSecurityActivites](../content/-veeamsecurityactivites-1a727f58.md)
+- [VeeamSecurityActivities](../content/-veeamsecurityactivities-088632cd.md)
 
 **In solution [Veeam](../solutions/veeam.md):**
 - [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md)

@@ -20,9 +20,12 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
+
+**In solution [](../solutions/.md):**
+- [Citrix](../content/-citrix-eb8b38f0.md)
 
 **In solution [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md):**
 - [Citrix](../content/citrix-analytics-for-security-citrix-7f228429.md)

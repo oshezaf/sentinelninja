@@ -35,7 +35,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (28)
+## Content Items Using This Table (54)
 
 ### Analytic Rules (3)
 
@@ -48,7 +48,32 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 - [TI Map URL Entity to UrlClickEvents](../content/threat-intelligence-new-ti-map-url-entity-to-urlclickevents-ad4fa1f2-2189-459c-9458-f77d2039d2f5-105aa351.md)
 
-### Hunting Queries (23)
+### Hunting Queries (46)
+
+**In solution [](../solutions/.md):**
+- [Blocked Clicks Trend](../content/-blocked-clicks-trend-ac738108-451b-4341-ba38-021a00665415-3d20e456.md)
+- [End user malicious clicks](../content/-end-user-malicious-clicks-d24e9c4a-b72a-4a85-89cd-83760ae61155-bc45fcbf.md)
+- [MDO_URLClickedinEmail](../content/-mdo-urlclickedinemail-2c6e7f75-d83c-4344-afdc-83335fe550e6-c67ed97d.md)
+- [Malicious Clicks allowed (click-through)](../content/-malicious-clicks-allowed-click-through-ba4f7e56-a2f8-4a30-b848-200fdc7fc3a2-60132aa3.md)
+- [Malicious URL Clicks by workload](../content/-malicious-url-clicks-by-workload-c2b4ef3a-216d-4506-8b35-6a1b0f2a3bf7-ae84d068.md)
+- [Possible device code phishing attempts](../content/-possible-device-code-phishing-attempts-ad76e484-f159-4d23-99ee-e734f0b8b60b-0dc38954.md)
+- [Rare Domains in External Teams Messages](../content/-rare-domains-in-external-teams-messages-d4dd8c3f-d62b-4078-9dc7-8520c3adf1d5-21ed0fcd.md)
+- [Teams URL clicks actions summarized by URLs clicked on](../content/-teams-url-clicks-actions-summarized-by-urls-clicked-on-f2031075-0834-4c87-81fe-1e369ffbc277-c129f4bc.md)
+- [Teams URL clicks through actions on Phish or Malware URLs summarized by URLs](../content/-teams-url-clicks-through-actions-on-phish-or-malware-urls-summarized-by-urls-8ccb7460-16a4-4cff-9ce7-0eaea2c3d480-f042ddb1.md)
+- [Teams blocked URL clicks daily trend](../content/-teams-blocked-url-clicks-daily-trend-6d740b56-08b9-441c-ba12-32621225408d-c6a44494.md)
+- [Top 10 Users clicking on Malicious URLs (Malware)](../content/-top-10-users-clicking-on-malicious-urls-malware-5a84e13a-bb17-4124-9564-d74cdb84c124-97103828.md)
+- [Top 10 Users clicking on Malicious URLs (Malware+Phish+Spam)](../content/-top-10-users-clicking-on-malicious-urls-malware+phish+spam-7d7a3d3f-22db-4cdf-ba67-c57215777a3c-b8360197.md)
+- [Top 10 Users clicking on Malicious URLs (Phish)](../content/-top-10-users-clicking-on-malicious-urls-phish-a937905e-ee5c-406c-ab86-8e2581240112-4743a7ad.md)
+- [Top 10 Users clicking on Malicious URLs (Spam)](../content/-top-10-users-clicking-on-malicious-urls-spam-3a2fdf32-ebe7-4f65-a1c3-fc7faf23ae90-51ab3967.md)
+- [Top 10 Users clicking on malicious URLs in Teams](../content/-top-10-users-clicking-on-malicious-urls-in-teams-2186afac-1cde-441d-9825-0dbfd5f59d05-df86795b.md)
+- [Top malicious URLs clicked by users in Teams](../content/-top-malicious-urls-clicked-by-users-in-teams-1676c486-4f27-4c88-b36f-6110a182d6de-64d06173.md)
+- [URL Click attempts by threat type](../content/-url-click-attempts-by-threat-type-3eef362d-3aee-4950-9208-4afa6f7afbe9-100e8c6e.md)
+- [URL Clicks by Action](../content/-url-clicks-by-action-4620ece3-dceb-4151-8621-5a56351c97cd-001c7f16.md)
+- [URL click count by click action](../content/-url-click-count-by-click-action-3f007cdc-86bf-4657-9015-05101a3e54f5-1359dbbf.md)
+- [URL clicks actions by URL](../content/-url-clicks-actions-by-url-bc46e331-3cb0-483d-9c90-989d2a59457f-f5d5c441.md)
+- [User clicked through events](../content/-user-clicked-through-events-f075d4c4-cf76-4e5d-9c2d-9ed524286316-66363ce5.md)
+- [User clicks on malicious inbound emails](../content/-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-476487e6.md)
+- [User clicks on phishing URLs in emails](../content/-user-clicks-on-phishing-urls-in-emails-d823da0e-1334-4a66-8ff4-2c2c40d26295-a736bcc1.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Blocked Clicks Trend](../content/microsoft-defender-xdr-blocked-clicks-trend-ac738108-451b-4341-ba38-021a00665415-f9fdc910.md)
@@ -75,7 +100,12 @@ This table is ingested by the following connectors:
 - [User clicks on malicious inbound emails](../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.md)
 - [User clicks on phishing URLs in emails](../content/microsoft-defender-xdr-user-clicks-on-phishing-urls-in-emails-d823da0e-1334-4a66-8ff4-2c2c40d26295-36e1eb38.md)
 
-### Workbooks (2)
+### Workbooks (5)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md)

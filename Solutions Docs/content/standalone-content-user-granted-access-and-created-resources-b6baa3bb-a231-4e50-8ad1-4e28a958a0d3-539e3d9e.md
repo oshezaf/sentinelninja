@@ -1,0 +1,34 @@
+# User Granted Access and created resources
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Identifies when a new user is granted access and starts creating resources in Azure.  This can help you identify rogue or malicious user behavior.
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `b6baa3bb-a231-4e50-8ad1-4e28a958a0d3` |
+| **Tactics** | Persistence, PrivilegeEscalation, Impact |
+| **Techniques** | T1098, T1078, T1496 |
+| **Required Connectors** | [AzureActivity](../connectors/azureactivity.md), [AzureActivity](../connectors/azureactivity.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hunting%20Queries/Hunting%20Queries/MultipleDataSources/UserGrantedAccess_CreatesResources.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+- [`AuditLogs`](../tables/auditlogs.md)
+- [`AzureActivity`](../tables/azureactivity.md)
+- [`operation`](../tables/operation.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

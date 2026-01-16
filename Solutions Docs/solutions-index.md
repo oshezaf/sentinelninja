@@ -14,11 +14,11 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 | Metric | Total | Published | Unpublished |
 |:-------|------:|----------:|------------:|
-| Solutions | 486 | 402 | 84 |
-| With Connectors | 306 | 250 | 56 |
-| With Content | 385 | 329 | 56 |
-| Unique Connectors | 383 | | |
-| Tables Used | 845 | | |
+| Solutions | 487 | 402 | 85 |
+| With Connectors | 307 | 250 | 57 |
+| With Content | 386 | 329 | 57 |
+| Unique Connectors | 384 | | |
+| Tables Used | 846 | | |
 
 ---
 
@@ -185,6 +185,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="" width="32" height="32"> | [Cyfirma Digital Risk](solutions/cyfirma-digital-risk.md) | 2025-03-27 | CYFIRMA |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="" width="32" height="32"> | [Cyfirma Vulnerabilities Intel](solutions/cyfirma-vulnerabilities-intel.md) | 2025-05-15 | CYFIRMA |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cynerio.svg" alt="" width="32" height="32"> | [Cynerio](solutions/cynerio.md) | 2023-03-29 | Cynerio |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyren_logo.svg" alt="" width="32" height="32"> | [CyrenThreatIntelligence](solutions/cyrenthreatintelligence.md) ⚠️ | 2025-11-16 | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyware-logo.svg" alt="" width="32" height="32"> | [Cyware](solutions/cyware.md) | 2024-03-18 | Cyware |
 
 ### D

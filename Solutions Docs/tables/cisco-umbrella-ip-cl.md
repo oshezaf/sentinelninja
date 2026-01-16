@@ -21,9 +21,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (21)
+## Content Items Using This Table (31)
 
-### Analytic Rules (10)
+### Analytic Rules (20)
+
+**In solution [](../solutions/.md):**
+- [Cisco Umbrella - Connection to Unpopular Website Detected](../content/-cisco-umbrella-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-f127831c.md)
+- [Cisco Umbrella - Connection to non-corporate private network](../content/-cisco-umbrella-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-b3cccf1c.md)
+- [Cisco Umbrella - Crypto Miner User-Agent Detected](../content/-cisco-umbrella-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-3adaf14a.md)
+- [Cisco Umbrella - Empty User Agent Detected](../content/-cisco-umbrella-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-98ac11ad.md)
+- [Cisco Umbrella - Hack Tool User-Agent Detected](../content/-cisco-umbrella-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-1f68f978.md)
+- [Cisco Umbrella - Rare User Agent Detected](../content/-cisco-umbrella-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-af3cf9ae.md)
+- [Cisco Umbrella - Request Allowed to harmful/malicious URI category](../content/-cisco-umbrella-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-0f2fec9e.md)
+- [Cisco Umbrella - Request to blocklisted file type](../content/-cisco-umbrella-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-3ee819a3.md)
+- [Cisco Umbrella - URI contains IP address](../content/-cisco-umbrella-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-a082ba9f.md)
+- [Cisco Umbrella - Windows PowerShell User-Agent Detected](../content/-cisco-umbrella-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-ed873133.md)
 
 **In solution [CiscoUmbrella](../solutions/ciscoumbrella.md):**
 - [Cisco Cloud Security - Connection to Unpopular Website Detected](../content/ciscoumbrella-cisco-cloud-security-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-c775740f.md)

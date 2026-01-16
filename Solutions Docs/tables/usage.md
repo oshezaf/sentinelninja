@@ -24,7 +24,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (42)
+## Content Items Using This Table (44)
 
 ### Analytic Rules (36)
 
@@ -70,7 +70,11 @@ This table is ingested by the following connectors:
 - [Tenable.ad privileged accounts issues](../content/tenablead-tenable.ad-privileged-accounts-issues-353d6474-d795-4086-a179-ba1db4d8bbcb-6c66bb05.md)
 - [Tenable.ad user accounts issues](../content/tenablead-tenable.ad-user-accounts-issues-4f8ed6f3-8815-437d-9462-f0def9dc70d6-2adebfa6.md)
 
-### Workbooks (6)
+### Workbooks (8)
+
+**In solution [](../solutions/.md):**
+- [AlsidIoA](../content/-alsidioa-1cbd56d9.md)
+- [AlsidIoE](../content/-alsidioe-5eda917e.md)
 
 **In solution [Alsid For AD](../solutions/alsid-for-ad.md):**
 - [AlsidIoA](../content/alsid-for-ad-alsidioa-d26d67ed.md)

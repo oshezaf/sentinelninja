@@ -29,9 +29,17 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (12)
 
-### Workbooks (6)
+### Workbooks (12)
+
+**In solution [](../solutions/.md):**
+- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [Dns](../content/-dns-78eee55f.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 - [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)

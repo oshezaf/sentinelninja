@@ -24,9 +24,32 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (20)
+## Content Items Using This Table (41)
 
-### Hunting Queries (20)
+### Hunting Queries (41)
+
+**In solution [](../solutions/.md):**
+- [Expanding recipients into separate rows](../content/-expanding-recipients-into-separate-rows-70ba5995-866f-4a23-bacc-40b82056893b-19559bbc.md)
+- [External malicious Teams messages sent from internal senders](../content/-external-malicious-teams-messages-sent-from-internal-senders-aee866e2-dc92-4563-a387-b9e5710246c0-84c1e7f4.md)
+- [Inbound Teams messages by sender domains](../content/-inbound-teams-messages-by-sender-domains-15688e35-9957-427f-a8fb-95b7883120b3-cb4dd104.md)
+- [Malicious Teams messages by URL detection methods](../content/-malicious-teams-messages-by-url-detection-methods-97c8d961-add7-4b58-80ef-75cc40d9d919-6e3ecde5.md)
+- [Malicious Teams messages received from external senders](../content/-malicious-teams-messages-received-from-external-senders-ac842e4d-0c7d-4980-b09d-c761f3de0a79-baaa8f34.md)
+- [Possible partner impersonation in external Team messages](../content/-possible-partner-impersonation-in-external-team-messages-39cf1ec6-d460-4760-8a87-7d10577f6205-89a0ea5e.md)
+- [Rare Domains in External Teams Messages](../content/-rare-domains-in-external-teams-messages-d4dd8c3f-d62b-4078-9dc7-8520c3adf1d5-21ed0fcd.md)
+- [Suspicious Teams Display Name](../content/-suspicious-teams-display-name-97e1c837-2cef-4f43-a87f-11f16e33ee8d-dab0464c.md)
+- [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-8254e30e.md)
+- [Teams communication from suspicious external users](../content/-teams-communication-from-suspicious-external-users-1fbd2430-2dfe-421a-82b3-eabec5a0b38e-246059f9.md)
+- [Teams communication to suspicious external users](../content/-teams-communication-to-suspicious-external-users-389ead4a-6dfe-47e1-9236-165eb08f1017-c928357e.md)
+- [Teams messages from a specific sender by ThreadType](../content/-teams-messages-from-a-specific-sender-by-threadtype-0bb4d681-5aa5-414e-b512-42a682ce5117-9c138dec.md)
+- [Top 10 Attacked user by Phish messages](../content/-top-10-attacked-user-by-phish-messages-e6cbca08-b041-4f5d-9f82-f803319ee050-28dc45ff.md)
+- [Top 10 External senders sending Teams phishing messsages](../content/-top-10-external-senders-sending-teams-phishing-messsages-9432f895-763d-4e9b-b9bf-680296ce6c0d-9d68c558.md)
+- [Top 10 external senders sending Teams messages](../content/-top-10-external-senders-sending-teams-messages-f143639b-24d5-4089-af92-be8eeea02822-064dc0d6.md)
+- [Top External Sender domains - Malware](../content/-top-external-sender-domains-malware-37c0d39b-1eb8-4aa0-bded-d0b058082571-d416bc98.md)
+- [Top External Sender domains - Phish](../content/-top-external-sender-domains-phish-e4a64b44-ec9a-4787-9f7a-75ff5394b928-35aedf88.md)
+- [Top External Sender domains - Spam](../content/-top-external-sender-domains-spam-96ea02b2-7db7-4206-bd7f-c3c579d33fcc-bf2fed0c.md)
+- [Top External malicious Senders](../content/-top-external-malicious-senders-164a77d1-3952-451f-ba30-b4a43804fd8a-4fa8a35a.md)
+- [Top domains outbound sending Malicious Teams messages inbound](../content/-top-domains-outbound-sending-malicious-teams-messages-inbound-af2b5dbd-4b66-47b4-9936-abfecb246ba1-559839b4.md)
+- [Total number of MDO Teams protection detections daily](../content/-total-number-of-mdo-teams-protection-detections-daily-c7896b13-ae4e-4164-a0a4-fbd43ae85dd4-3a7e6255.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Expanding recipients into separate rows](../content/microsoft-defender-xdr-expanding-recipients-into-separate-rows-18fee342-8209-4270-9198-711646867e71-6a409deb.md)

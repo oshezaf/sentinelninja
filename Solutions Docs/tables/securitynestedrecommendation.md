@@ -11,7 +11,7 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -20,17 +20,28 @@ This table is used by the following solutions:
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (12)
 
-### Analytic Rules (1)
+### Analytic Rules (2)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Vulnerable Machines related to log4j CVE-2021-44228](../content/apache-log4j-vulnerability-detection-vulnerable-machines-related-to-log4j-cve-2021-44228-3d71fc38-f249-454e-8479-0a358382ef9a-5fca98f8.md)
 
-### Workbooks (5)
+**In solution [Standalone Content](../solutions/standalone-content.md):**
+- [Vulnerable Machines related to OMIGOD CVE-2021-38647](../content/standalone-content-vulnerable-machines-related-to-omigod-cve-2021-38647-4d94d4a9-dc96-450a-9dea-4d4d4594199b-99c76b14.md)
+
+### Workbooks (10)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md)

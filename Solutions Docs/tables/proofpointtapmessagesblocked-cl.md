@@ -20,6 +20,14 @@ This table is ingested by the following connectors:
 
 ---
 
+## Content Items Using This Table (2)
+
+### Workbooks (2)
+
+**In solution [](../solutions/.md):**
+- [ProofPointThreatDashboard](../content/-proofpointthreatdashboard-de722115.md)
+- [ProofpointTAP](../content/-proofpointtap-dc9a889b.md)
+
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)

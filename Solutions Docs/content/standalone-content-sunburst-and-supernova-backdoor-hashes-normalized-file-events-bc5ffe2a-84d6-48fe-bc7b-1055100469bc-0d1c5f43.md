@@ -1,0 +1,33 @@
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> SUNBURST and SUPERNOVA backdoor hashes (Normalized File Events)
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Identifies SolarWinds SUNBURST and SUPERNOVA backdoor file hash IOCs in File Events To use this analytics rule, make sure you have deployed the [ASIM normalization parsers](https://aka.ms/ASimFileEvent) References: - https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html - https://gist.github.com/olafhartong/71ffdd4cab4b6acd5cbcd1a0691ff82f
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Analytic Rule |
+| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **ID** | `bc5ffe2a-84d6-48fe-bc7b-1055100469bc` |
+| **Severity** | High |
+| **Kind** | Scheduled |
+| **Tactics** | Execution, Persistence, InitialAccess |
+| **Techniques** | T1195, T1059, T1546 |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/ASimFileEvent/imFileESolarWindsSunburstSupernova.yaml) |
+
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`imFileEvent`](../asim/imfileevent.md)
+
+---
+
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+
+↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+

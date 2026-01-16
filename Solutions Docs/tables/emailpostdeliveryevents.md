@@ -32,9 +32,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (12)
+## Content Items Using This Table (28)
 
-### Hunting Queries (10)
+### Hunting Queries (20)
+
+**In solution [](../solutions/.md):**
+- [Calculate overall MDO efficacy](../content/-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-9ac7c3ec.md)
+- [Email containing malware accessed on a unmanaged device](../content/-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-cd443084.md)
+- [MDO Threat Protection Detections trend over time](../content/-mdo-threat-protection-detections-trend-over-time-02698387-5bf0-4111-a6ca-0f592a238a8f-2ae91c14.md)
+- [MDO daily detection summary report](../content/-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-c5a92bdb.md)
+- [Post Delivery Events by Admin](../content/-post-delivery-events-by-admin-ee4dc300-5eaa-4cc5-b455-e53cb427e215-24256b49.md)
+- [Post Delivery Events by Location](../content/-post-delivery-events-by-location-9b83fc5e-1271-4a5b-af84-e7ebf5436180-dab13841.md)
+- [Post Delivery Events by ZAP type](../content/-post-delivery-events-by-zap-type-c0efc072-fce7-46c2-83a1-51e8a9e6a1e1-0c4fac18.md)
+- [Post Delivery Events over time](../content/-post-delivery-events-over-time-c10b22a0-6021-46f9-bdaf-05bf2350a554-cdfaaede.md)
+- [Quarantine releases by Detection Types](../content/-quarantine-releases-by-detection-types-87754d3a-0077-4ff9-b46e-6336b8d02287-e5473fcb.md)
+- [Total number of detections by MDO](../content/-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-1e6222e0.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Calculate overall MDO efficacy](../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.md)
@@ -48,7 +60,15 @@ This table is ingested by the following connectors:
 - [Quarantine releases by Detection Types](../content/microsoft-defender-xdr-quarantine-releases-by-detection-types-23e6d66b-511a-43fd-9863-6924da60319a-0411faf3.md)
 - [Total number of detections by MDO](../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.md)
 
-### Workbooks (2)
+### Workbooks (8)
+
+**In solution [](../solutions/.md):**
+- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
+- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
+- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
+- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md)
