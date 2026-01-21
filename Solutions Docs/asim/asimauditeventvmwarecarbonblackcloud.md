@@ -1,6 +1,6 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> Audit Event ASIM parser for VMware Carbon Black Cloud
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to ASIM Index](asim-index.md)
 
@@ -32,8 +32,6 @@ This parser reads from the following tables:
 | Table |
 |:------|
 | [CarbonBlackAuditLogs_CL](../tables/carbonblackauditlogs-cl.md) |
-| [alert](../tables/alert.md) |
-| [update](../tables/update.md) |
 
 ## Parameters
 
@@ -49,7 +47,7 @@ This parser reads from the following tables:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to ASIM Index](asim-index.md)
 

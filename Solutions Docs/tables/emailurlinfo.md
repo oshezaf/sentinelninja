@@ -1,6 +1,6 @@
 # EmailUrlInfo
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,14 +17,13 @@ Information about URLs on emails
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/emailurlinfo) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-emailurlinfo-table) |
 
-## Solutions (8)
+## Solutions (7)
 
 This table is used by the following solutions:
 
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -38,7 +37,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (41)
+## Content Items Using This Table (35)
 
 ### Analytic Rules (5)
 
@@ -83,16 +82,11 @@ This table is ingested by the following connectors:
 - [Potential OAuth phishing email delivered into Inbox](../content/microsoft-defender-xdr-potential-oauth-phishing-email-delivered-into-inbox-08113d6f-3c95-45ba-94df-4fdd7f35d944-29c878e2.md)
 - [URLs by location](../content/microsoft-defender-xdr-urls-by-location-ab006655-d723-4844-9d5d-91cb3b020555-d023be7f.md)
 
-### Workbooks (12)
+### Workbooks (6)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [MicrosoftDefenderForOffice365](../content/-microsoftdefenderforoffice365-38d50434.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
@@ -103,15 +97,12 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md):**
 - [MicrosoftDefenderForOffice365](../content/microsoft-defender-for-office-365-microsoftdefenderforoffice365-cc793056.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

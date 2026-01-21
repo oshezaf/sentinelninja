@@ -1,6 +1,6 @@
 # DeviceInfo
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,7 +17,7 @@ Machine information, including OS information
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table) |
 
-## Solutions (7)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -25,7 +25,6 @@ This table is used by the following solutions:
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
@@ -37,7 +36,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (47)
+## Content Items Using This Table (40)
 
 ### Analytic Rules (10)
 
@@ -91,20 +90,14 @@ This table is ingested by the following connectors:
 - [MDE_FindstatuschangefromExposurelevel](../content/standalone-content-mde-findstatuschangefromexposurelevel-c555a09f-361c-4f77-b06d-14bb139ea5ad-09da3633.md)
 - [MDE_ListAllNotOnboardedEnpoints](../content/standalone-content-mde-listallnotonboardedenpoints-cf984ec4-d67e-4d45-a2e5-0c97fb1b4c22-4f65c0aa.md)
 
-### Workbooks (15)
+### Workbooks (8)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
 - [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
 - [MicrosoftDefenderForEndPoint](../content/-microsoftdefenderforendpoint-f98fcc1e.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
@@ -113,12 +106,9 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

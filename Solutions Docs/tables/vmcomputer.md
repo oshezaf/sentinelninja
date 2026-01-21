@@ -1,6 +1,6 @@
 # VMComputer
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,30 +16,20 @@ Reference for VMComputer table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmcomputer) |
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (1)
 
-### Workbooks (6)
-
-**In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+### Workbooks (1)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
-
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 ## Resource Types
 
@@ -53,7 +43,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

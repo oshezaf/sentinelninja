@@ -1,6 +1,6 @@
 # SecurityRegulatoryCompliance
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -11,21 +11,19 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 
-## Solutions (7)
+## Solutions (5)
 
 This table is used by the following solutions:
 
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
-- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
 
 ---
 
-## Content Items Using This Table (15)
+## Content Items Using This Table (9)
 
 ### Analytic Rules (4)
 
@@ -39,19 +37,10 @@ This table is used by the following solutions:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NIST SP 800-53 Posture Changed](../content/nistsp80053-nist-sp-800-53-posture-changed-dd834c97-4638-4bb3-a4e3-807e8b0580dc-3c44ad7b.md)
 
-### Workbooks (11)
-
-**In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
+### Workbooks (5)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 - [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
-
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
-- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 - [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
@@ -62,15 +51,12 @@ This table is used by the following solutions:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
 - [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

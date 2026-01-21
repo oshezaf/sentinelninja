@@ -1,6 +1,6 @@
 # SecurityRecommendation
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for SecurityRecommendation table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityrecommendation) |
 
-## Solutions (7)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -25,12 +25,11 @@ This table is used by the following solutions:
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ---
 
-## Content Items Using This Table (23)
+## Content Items Using This Table (18)
 
 ### Analytic Rules (9)
 
@@ -58,15 +57,11 @@ This table is used by the following solutions:
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [CDM_ContinuousDiagnostics&Mitigation_Posture](../content/continuousdiagnostics&mitigation-cdm-continuousdiagnostics&mitigation-posture-e15944a8-4172-4208-a928-631e01920d9c-8130a499.md)
 
-### Workbooks (13)
+### Workbooks (8)
 
 **In solution [](../solutions/.md):**
 - [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
@@ -81,15 +76,12 @@ This table is used by the following solutions:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

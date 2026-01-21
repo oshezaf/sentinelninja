@@ -1,8 +1,8 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Web Shells Threat Protection
+# Web Shells Threat Protection
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Web Shells Threat Protection Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -46,14 +46,6 @@ The Web Shells Threat Protection solution contains security content that helps p
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This solution uses **1 ASIM parser(s)** for normalized data:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`imFileEvent`](../asim/imfileevent.md) | Analytics |
-
 ## Tables Used
 
 This solution queries **4 table(s)** from its content items:
@@ -86,7 +78,7 @@ This solution includes **9 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Identify SysAid Server web shell creation](../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md) | High | InitialAccess | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imFileEvent`](../asim/imfileevent.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [Identify SysAid Server web shell creation](../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md) | High | InitialAccess | [`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.md) | Medium | Persistence | [`W3CIISLog`](../tables/w3ciislog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [SUPERNOVA webshell](../content/web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8-79d870d5.md) | High | Persistence, CommandAndControl | [`W3CIISLog`](../tables/w3ciislog.md) |
 
@@ -113,7 +105,7 @@ This solution includes **9 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

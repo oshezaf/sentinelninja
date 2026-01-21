@@ -6,23 +6,13 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 > **Note:** This index covers connectors managed through Solutions in the Azure-Sentinel GitHub repository. A small number of connectors (such as Microsoft Dataverse, Microsoft Power Automate, Microsoft Power Platform Admin, and SAP connectors) are not managed via Solutions and are therefore not included here.
 
-**Browse:** [🏠](readme.md) · **Solutions** · [Connectors](connectors-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md)
+**Browse:** [🏠](readme.md) · **Solutions** · [Connectors](connectors-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
 
 ---
 
-## Statistics
-
-| Metric | Total | Published | Unpublished | Microsoft | Partner | Community |
-|:-------|------:|----------:|------------:|----------:|--------:|----------:|
-| Solutions | **487** | 402 | 85 | 232 | 231 | 11 |
-| With Connectors | **307** | 250 | 57 | 118 | 186 | 3 |
-| With Content | **386** | 329 | 57 | 185 | 184 | 10 |
-| Unique Connectors | **384** | | | | | |
-| Tables Used | **846** | | | | | |
+**487 solutions** with 384 unique connectors and 386 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
-
-## Solutions Index
 
 Browse solutions alphabetically:
 
@@ -566,7 +556,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [TheHive](solutions/thehive.md) | 2021-10-23 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/theom-logo.svg" alt="" width="32" height="32"> | [Theom](solutions/theom.md) | 2022-11-04 | Theom |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Threat Intelligence](solutions/threat-intelligence.md) | 2022-05-18 | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Threat Intelligence (NEW)](solutions/threat-intelligence-new.md) | 2025-04-02 | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Threat Intelligence (NEW)](solutions/threat-intelligence-new.md) | 2025-04-02 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Threat Intelligence Solution for Azure Government](solutions/threat-intelligence-solution-for-azure-government.md) ⚠️ | 2023-03-06 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [ThreatAnalysis&Response](solutions/threatanalysis&response.md) | 2021-10-20 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ThreatConnect.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [ThreatConnect](solutions/threatconnect.md) | 2023-09-11 | ThreatConnect, Inc. |
@@ -619,7 +609,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/WatchGuard_Logo-SVG_Format.svg" alt="" width="32" height="32"> | [Watchguard Firebox](solutions/watchguard-firebox.md) | 2022-05-06 | WatchGuard |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Watchlists Utilities](solutions/watchlists-utilities.md) | 2022-05-23 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Web Session Essentials](solutions/web-session-essentials.md) | 2023-06-29 | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Web Shells Threat Protection](solutions/web-shells-threat-protection.md) | 2022-05-22 | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Web Shells Threat Protection](solutions/web-shells-threat-protection.md) | 2022-05-22 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Windows Firewall](solutions/windows-firewall.md) | 2022-05-02 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Windows Forwarded Events](solutions/windows-forwarded-events.md) | 2022-05-02 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Windows Security Events](solutions/windows-security-events.md) | 2022-05-23 | Microsoft Corporation |
@@ -646,5 +636,5 @@ Browse solutions alphabetically:
 
 ---
 
-**Browse:** [🏠](readme.md) · **Solutions** · [Connectors](connectors-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md)
+**Browse:** [🏠](readme.md) · **Solutions** · [Connectors](connectors-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
 

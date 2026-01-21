@@ -1,6 +1,6 @@
 # BehaviorAnalytics
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for BehaviorAnalytics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behavioranalytics) |
 
-## Solutions (12)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -28,14 +28,13 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ---
 
-## Content Items Using This Table (63)
+## Content Items Using This Table (54)
 
 ### Analytic Rules (7)
 
@@ -100,20 +99,13 @@ This table is used by the following solutions:
 - [Dormant Local Admin Logon](../content/ueba-essentials-dormant-local-admin-logon-2e20ec77-8d50-4959-a70d-79c341ee2c37-d3f55f49.md)
 - [Dormant account activity from uncommon country](../content/ueba-essentials-dormant-account-activity-from-uncommon-country-7c303408-f913-42f8-8d7b-9eb64a229c4d-510c1ff6.md)
 
-### Workbooks (20)
+### Workbooks (11)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
-- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
 - [User_Analytics_Workbook](../content/-user-analytics-workbook-4d50c893.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
@@ -131,16 +123,12 @@ This table is used by the following solutions:
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
-
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

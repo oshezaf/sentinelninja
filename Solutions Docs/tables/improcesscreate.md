@@ -1,6 +1,6 @@
 # imProcessCreate
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,14 +16,13 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (27)
+## Content Items Using This Table (26)
 
-### Analytic Rules (7)
+### Analytic Rules (6)
 
 **In solution [Standalone Content](../solutions/standalone-content.md):**
 - [Base64 encoded Windows process command-lines (Normalized Process Events)](../content/standalone-content-base64-encoded-windows-process-command-lines-normalized-process-events-f8b3c49c-4087-499b-920f-0dcfaff0cbca-c7559dbc.md)
 - [Dev-0228 File Path Hashes November 2021 (ASIM Version)](../content/standalone-content-dev-0228-file-path-hashes-november-2021-asim-version-29a29e5d-354e-4f5e-8321-8b39d25047bf-517d1ab6.md)
-- [Identify Mango Sandstorm powershell commands](../content/standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.md)
 - [Malware in the recycle bin (Normalized Process Events)](../content/standalone-content-malware-in-the-recycle-bin-normalized-process-events-61988db3-0565-49b5-b8e3-747195baac6e-a368d8a1.md)
 - [Midnight Blizzard - suspicious rundll32.exe execution of vbscript (Normalized Process Events)](../content/standalone-content-midnight-blizzard-suspicious-rundll32.exe-execution-of-vbscript-normalized-process-ev-bdf04f58-242b-4729-b376-577c4bdf5d3a-92bf89c5.md)
 - [Probable AdFind Recon Tool Usage (Normalized Process Events)](../content/standalone-content-probable-adfind-recon-tool-usage-normalized-process-events-45076281-35ae-45e0-b443-c32aa0baf965-868a0b5a.md)
@@ -59,7 +58,7 @@ This table is used by the following solutions:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

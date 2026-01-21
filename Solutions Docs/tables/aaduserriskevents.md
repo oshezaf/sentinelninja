@@ -1,6 +1,6 @@
 # AADUserRiskEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for AADUserRiskEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aaduserriskevents) |
 
-## Solutions (7)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -26,7 +26,6 @@ This table is used by the following solutions:
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 
 ## Connectors (1)
 
@@ -36,17 +35,14 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (15)
+## Content Items Using This Table (11)
 
-### Workbooks (15)
+### Workbooks (11)
 
 **In solution [](../solutions/.md):**
 - [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [ConditionalAccessTrendsandChanges](../content/-conditionalaccesstrendsandchanges-31791e3c.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
 - [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
@@ -66,12 +62,9 @@ This table is ingested by the following connectors:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

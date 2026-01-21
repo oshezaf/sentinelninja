@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="AzureSecurityBenchmark Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -39,7 +39,7 @@ This solution uses **1 ASIM parser(s)** for normalized data:
 
 ## Tables Used
 
-This solution queries **23 table(s)** from its content items:
+This solution queries **18 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -47,7 +47,6 @@ This solution queries **23 table(s)** from its content items:
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | Workbooks |
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | Workbooks |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) | Workbooks |
-| [`Alert`](../tables/alert.md) | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | Workbooks |
@@ -62,14 +61,10 @@ This solution queries **23 table(s)** from its content items:
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | Analytics |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | Analytics, Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
-| [`Update`](../tables/update.md) | Workbooks |
-| [`impersonate`](../tables/impersonate.md) | Workbooks |
-| [`implement`](../tables/implement.md) | Workbooks |
-| [`update`](../tables/update.md) | Workbooks |
 
 ### Internal Tables
 
-The following **5 table(s)** are used internally by this solution's content items:
+The following **4 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -77,7 +72,6 @@ The following **5 table(s)** are used internally by this solution's content item
 | [`IdentityInfo`](../tables/identityinfo.md) | Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
-| [`anomalies`](../tables/anomalies.md) | Workbooks |
 
 ## Content Items
 
@@ -99,7 +93,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession`](../asim/imnetworksession.md)<br>[`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`Alert`](../tables/alert.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Event`](../tables/event.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Update`](../tables/update.md)<br>[`impersonate`](../tables/impersonate.md)<br>[`implement`](../tables/implement.md)<br>[`update`](../tables/update.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`anomalies`](../tables/anomalies.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_NetworkSession`](../asim/imnetworksession.md)<br>[`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)<br>[`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Event`](../tables/event.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
@@ -144,7 +138,7 @@ You can deploy the workbook by clicking on the buttons below:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

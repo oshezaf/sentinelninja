@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Exchange Security - Exchange On-Premises Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -46,16 +46,13 @@ This solution provides **8 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **9 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) | Workbooks |
 | [`Event`](../tables/event.md) | [Microsoft Exchange Admin Audit Logs by Event Logs](../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md), [Microsoft Exchange Logs and Events](../connectors/esi-opt2exchangeserverseventlogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | Analytics, Workbooks |
 | [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
-| [`IMAPSettings`](../tables/imapsettings.md) | - | Workbooks |
-| [`Impersonation`](../tables/impersonation.md) | - | Workbooks |
-| [`Import`](../tables/import.md) | - | Workbooks |
 | [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
 | [`SecurityEvent`](../tables/securityevent.md) | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | Workbooks |
 | [`W3CIISLog`](../tables/w3ciislog.md) | [IIS Logs of Microsoft Exchange Servers](../connectors/esi-opt5exchangeiislogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | Workbooks |
@@ -85,7 +82,7 @@ This solution includes **13 content item(s)**:
 | [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.md) | [`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`W3CIISLog`](../tables/w3ciislog.md) |
 | [Microsoft Exchange Least Privilege with RBAC](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-least-privilege-with-rbac-b2849cd8.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
 | [Microsoft Exchange Search AdminAuditLog](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-search-adminauditlog-fcf38c03.md) | [`Event`](../tables/event.md) |
-| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md)<br>[`IMAPSettings`](../tables/imapsettings.md)<br>[`Impersonation`](../tables/impersonation.md)<br>[`Import`](../tables/import.md) |
+| [Microsoft Exchange Security Review](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-security-review-435fb5ce.md) | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) |
 
 ### Parsers
 
@@ -133,7 +130,7 @@ We have published Public Contents for the Microsoft Exchange Security Sentinel S
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

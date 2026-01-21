@@ -2,20 +2,11 @@
 
 This index organizes ASIM parsers by the product or data source they normalize. Use this view to find ASIM support for a specific product, including which schemas are supported and which tables contain the source data.
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · **ASIM Products**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · **ASIM Products** · [📊](../statistics.md)
 
 ---
 
-## Summary
-
-| Metric | Count |
-|:-------|------:|
-| **Products** | 80 |
-| **Source Parser Pairs*** | 82 |
-| **Schemas Covered** | 11 |
-| **Tables Used** | 80 |
-
-\* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
+**80 products** with 82 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 ## Products Overview
 
@@ -25,22 +16,22 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [AppGate SDP](#appgate-sdp) | 1 | 1 | 1 |
 | [AWS](#aws) | 1 | 1 | 1 |
 | [AWS VPC](#aws-vpc) | 1 | 1 | 1 |
-| [Azure Firewall](#azure-firewall) | 3 | 3 | 9 |
-| [Azure NSG flows](#azure-nsg-flows) | 1 | 1 | 2 |
+| [Azure Firewall](#azure-firewall) | 3 | 3 | 8 |
+| [Azure NSG flows](#azure-nsg-flows) | 1 | 1 | 1 |
 | [Azure NTANetAnalytics](#azure-ntanetanalytics) | 1 | 1 | 1 |
 | [Barracuda WAF](#barracuda-waf) | 7 | 4 | 2 |
 | [CheckPointFirewall](#checkpointfirewall) | 1 | 1 | 1 |
 | [Cisco Adaptive Security Appliance (ASA)](#cisco-adaptive-security-appliance-asa) | 1 | 1 | 2 |
 | [Cisco Firepower](#cisco-firepower) | 2 | 2 | 1 |
 | [Cisco ISE](#cisco-ise) | 4 | 4 | 1 |
-| [Cisco Meraki](#cisco-meraki) | 7 | 4 | 4 |
+| [Cisco Meraki](#cisco-meraki) | 7 | 4 | 3 |
 | [Cisco Umbrella](#cisco-umbrella) | 1 | 1 | 1 |
 | [CiscoASA](#ciscoasa) | 1 | 1 | 1 |
 | [Citrix NetScaler](#citrix-netscaler) | 1 | 1 | 1 |
 | [Corelight Zeek](#corelight-zeek) | 2 | 2 | 1 |
-| [CrowdStrike Falcon Endpoint Protection](#crowdstrike-falcon-endpoint-protection) | 3 | 3 | 2 |
+| [CrowdStrike Falcon Endpoint Protection](#crowdstrike-falcon-endpoint-protection) | 3 | 3 | 1 |
 | [F5 BIG-IP Application Security Manager (ASM)](#f5-big-ip-application-security-manager-asm) | 1 | 1 | 1 |
-| [ForcePointFirewall](#forcepointfirewall) | 1 | 1 | 3 |
+| [ForcePointFirewall](#forcepointfirewall) | 1 | 1 | 1 |
 | [Fortinet FortiGate](#fortinet-fortigate) | 3 | 3 | 1 |
 | [GCP Cloud DNS](#gcp-cloud-dns) | 1 | 1 | 1 |
 | [Google Workspace](#google-workspace) | 2 | 2 | 2 |
@@ -68,7 +59,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Microsoft SharePoint](#microsoft-sharepoint) | 2 | 2 | 2 |
 | [Microsoft Sysmon](#microsoft-sysmon) | 2 | 1 | 2 |
 | [Microsoft Sysmon for Linux](#microsoft-sysmon-for-linux) | 2 | 1 | 1 |
-| [Microsoft Windows](#microsoft-windows) | 3 | 1 | 5 |
+| [Microsoft Windows](#microsoft-windows) | 3 | 1 | 4 |
 | [Microsoft Windows Event](#microsoft-windows-event) | 1 | 1 | 1 |
 | [Microsoft Windows Events](#microsoft-windows-events) | 2 | 1 | 2 |
 | [Microsoft Windows Events Sysmon](#microsoft-windows-events-sysmon) | 4 | 2 | 2 |
@@ -81,8 +72,8 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Palo Alto PanOS](#palo-alto-panos) | 1 | 1 | 1 |
 | [PostgreSQL](#postgresql) | 1 | 1 | 1 |
 | [Salesforce Service Cloud](#salesforce-service-cloud) | 1 | 1 | 1 |
-| [Security Events](#security-events) | 6 | 2 | 5 |
-| [SentinelOne](#sentinelone) | 9 | 9 | 3 |
+| [Security Events](#security-events) | 6 | 2 | 2 |
+| [SentinelOne](#sentinelone) | 9 | 9 | 2 |
 | [SonicWall](#sonicwall) | 2 | 2 | 1 |
 | [Squid Proxy](#squid-proxy) | 1 | 1 | 1 |
 | [su](#su) | 1 | 1 | 1 |
@@ -93,10 +84,10 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Vectra](#vectra) | 2 | 2 | 1 |
 | [Vectra AI Streams](#vectra-ai-streams) | 3 | 3 | 1 |
 | [VMConnection](#vmconnection) | 1 | 1 | 1 |
-| [VMware Carbon Black Cloud](#vmware-carbon-black-cloud) | 7 | 6 | 5 |
+| [VMware Carbon Black Cloud](#vmware-carbon-black-cloud) | 7 | 6 | 3 |
 | [WatchGuard Fireware OS](#watchguard-fireware-os) | 1 | 1 | 1 |
 | [Windows Firewall](#windows-firewall) | 2 | 1 | 3 |
-| [Windows Security Events](#windows-security-events) | 1 | 1 | 2 |
+| [Windows Security Events](#windows-security-events) | 1 | 1 | 1 |
 | [Windows Sysmon](#windows-sysmon) | 4 | 2 | 2 |
 | [Zscaler ZIA](#zscaler-zia) | 1 | 1 | 1 |
 | [Zscaler ZIA DNS](#zscaler-zia-dns) | 1 | 1 | 1 |
@@ -154,27 +145,27 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** Dns, NetworkSession, WebSession
 
-**Tables:** [ALERT](../tables/alert.md), [AZFWApplicationRule](../tables/azfwapplicationrule.md), [AZFWDnsQuery](../tables/azfwdnsquery.md), [AZFWIdpsSignature](../tables/azfwidpssignature.md), [AZFWNatRule](../tables/azfwnatrule.md), [AZFWNetworkRule](../tables/azfwnetworkrule.md), [AZFWThreatIntel](../tables/azfwthreatintel.md), [AzureDiagnostics](../tables/azurediagnostics.md), [Event](../tables/event.md)
+**Tables:** [AZFWApplicationRule](../tables/azfwapplicationrule.md), [AZFWDnsQuery](../tables/azfwdnsquery.md), [AZFWIdpsSignature](../tables/azfwidpssignature.md), [AZFWNatRule](../tables/azfwnatrule.md), [AZFWNetworkRule](../tables/azfwnetworkrule.md), [AZFWThreatIntel](../tables/azfwthreatintel.md), [AzureDiagnostics](../tables/azurediagnostics.md), [Event](../tables/event.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimDnsAzureFirewall](asimdnsazurefirewall.md)<br>vim: [vimDnsAzureFirewall](vimdnsazurefirewall.md) | Dns | [AZFWDnsQuery](../tables/azfwdnsquery.md), [AzureDiagnostics](../tables/azurediagnostics.md) | 0.4.0 |
-| ASim: [ASimNetworkSessionAzureFirewall](asimnetworksessionazurefirewall.md)<br>vim: [vimNetworkSessionAzureFirewall](vimnetworksessionazurefirewall.md) | NetworkSession | [ALERT](../tables/alert.md), [AZFWIdpsSignature](../tables/azfwidpssignature.md), [AZFWNatRule](../tables/azfwnatrule.md), [AZFWNetworkRule](../tables/azfwnetworkrule.md), [AZFWThreatIntel](../tables/azfwthreatintel.md), [AzureDiagnostics](../tables/azurediagnostics.md), [Event](../tables/event.md) | 0.2.0 |
+| ASim: [ASimNetworkSessionAzureFirewall](asimnetworksessionazurefirewall.md)<br>vim: [vimNetworkSessionAzureFirewall](vimnetworksessionazurefirewall.md) | NetworkSession | [AZFWIdpsSignature](../tables/azfwidpssignature.md), [AZFWNatRule](../tables/azfwnatrule.md), [AZFWNetworkRule](../tables/azfwnetworkrule.md), [AZFWThreatIntel](../tables/azfwthreatintel.md), [AzureDiagnostics](../tables/azurediagnostics.md), [Event](../tables/event.md) | 0.2.0 |
 | ASim: [ASimWebSessionAzureFirewall](asimwebsessionazurefirewall.md)<br>vim: [vimWebSessionAzureFirewall](vimwebsessionazurefirewall.md) | WebSession | [AZFWApplicationRule](../tables/azfwapplicationrule.md) | 0.1.0 |
 
 ## Azure NSG flows
 
 **Schemas:** NetworkSession
 
-**Tables:** [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md), [Event](../tables/event.md)
+**Tables:** [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md)<br>vim: [vimNetworkSessionAzureNSG](vimnetworksessionazurensg.md) | NetworkSession | [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md), [Event](../tables/event.md) | 0.1.1 |
+| ASim: [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md)<br>vim: [vimNetworkSessionAzureNSG](vimnetworksessionazurensg.md) | NetworkSession | [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md) | 0.1.1 |
 
 ## Azure NTANetAnalytics
 
@@ -262,7 +253,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** AuditEvent, Authentication, NetworkSession, WebSession
 
-**Tables:** [Operation](../tables/operation.md), [Syslog](../tables/syslog.md), [Update](../tables/update.md), [meraki_CL](../tables/meraki-cl.md)
+**Tables:** [Operation](../tables/operation.md), [Syslog](../tables/syslog.md), [meraki_CL](../tables/meraki-cl.md)
 
 ### Parsers
 
@@ -272,8 +263,8 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | ASim: [ASimAuditEventCiscoMerakiSyslog](asimauditeventciscomerakisyslog.md)<br>vim: [vimAuditEventCiscoMerakiSyslog](vimauditeventciscomerakisyslog.md) | AuditEvent | [Operation](../tables/operation.md), [Syslog](../tables/syslog.md) | 0.2.1 |
 | ASim: [ASimAuthenticationCiscoMeraki](asimauthenticationciscomeraki.md)<br>vim: [vimAuthenticationCiscoMeraki](vimauthenticationciscomeraki.md) | Authentication | [meraki_CL](../tables/meraki-cl.md) | 0.2.1 |
 | ASim: [ASimAuthenticationCiscoMerakiSyslog](asimauthenticationciscomerakisyslog.md)<br>vim: [vimAuthenticationCiscoMerakiSyslog](vimauthenticationciscomerakisyslog.md) | Authentication | [Syslog](../tables/syslog.md) | 0.2.1 |
-| ASim: [ASimNetworkSessionCiscoMeraki](asimnetworksessionciscomeraki.md)<br>vim: [vimNetworkSessionCiscoMeraki](vimnetworksessionciscomeraki.md) | NetworkSession | [Update](../tables/update.md), [meraki_CL](../tables/meraki-cl.md) | 1.2.2 |
-| ASim: [ASimNetworkSessionCiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md)<br>vim: [vimNetworkSessionCiscoMerakiSyslog](vimnetworksessionciscomerakisyslog.md) | NetworkSession | [Syslog](../tables/syslog.md), [Update](../tables/update.md) | 1.2.2 |
+| ASim: [ASimNetworkSessionCiscoMeraki](asimnetworksessionciscomeraki.md)<br>vim: [vimNetworkSessionCiscoMeraki](vimnetworksessionciscomeraki.md) | NetworkSession | [meraki_CL](../tables/meraki-cl.md) | 1.2.2 |
+| ASim: [ASimNetworkSessionCiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md)<br>vim: [vimNetworkSessionCiscoMerakiSyslog](vimnetworksessionciscomerakisyslog.md) | NetworkSession | [Syslog](../tables/syslog.md) | 1.2.2 |
 | ASim: [ASimWebSessionCiscoMeraki](asimwebsessionciscomeraki.md)<br>vim: [vimWebSessionCiscoMeraki](vimwebsessionciscomeraki.md) | WebSession | [Syslog](../tables/syslog.md), [meraki_CL](../tables/meraki-cl.md) | 0.1.1 |
 
 ## Cisco Umbrella
@@ -329,7 +320,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** AuditEvent, Authentication, NetworkSession
 
-**Tables:** [CommonSecurityLog](../tables/commonsecuritylog.md), [Event](../tables/event.md)
+**Tables:** [CommonSecurityLog](../tables/commonsecuritylog.md)
 
 ### Parsers
 
@@ -337,7 +328,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimAuditEventCrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md)<br>vim: [vimAuditEventCrowdStrikeFalconHost](vimauditeventcrowdstrikefalconhost.md) | AuditEvent | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
 | ASim: [ASimAuthenticationCrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md)<br>vim: [vimAuthenticationCrowdStrikeFalconHost](vimauthenticationcrowdstrikefalconhost.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
-| ASim: [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md)<br>vim: [vimNetworkSessionCrowdStrikeFalconHost](vimnetworksessioncrowdstrikefalconhost.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md), [Event](../tables/event.md) | 0.1.0 |
+| ASim: [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md)<br>vim: [vimNetworkSessionCrowdStrikeFalconHost](vimnetworksessioncrowdstrikefalconhost.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
 
 ## F5 BIG-IP Application Security Manager (ASM)
 
@@ -355,13 +346,13 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** NetworkSession
 
-**Tables:** [CommonSecurityLog](../tables/commonsecuritylog.md), [IMAP3](../tables/imap3.md), [IMAPS](../tables/imaps.md)
+**Tables:** [CommonSecurityLog](../tables/commonsecuritylog.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimNetworkSessionForcePointFirewall](asimnetworksessionforcepointfirewall.md)<br>vim: [vimNetworkSessionForcePointFirewall](vimnetworksessionforcepointfirewall.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md), [IMAP3](../tables/imap3.md), [IMAPS](../tables/imaps.md) | 0.1 |
+| ASim: [ASimNetworkSessionForcePointFirewall](asimnetworksessionforcepointfirewall.md)<br>vim: [vimNetworkSessionForcePointFirewall](vimnetworksessionforcepointfirewall.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1 |
 
 ## Fortinet FortiGate
 
@@ -705,15 +696,15 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** AuditEvent
 
-**Tables:** [Event](../tables/event.md), [Operation](../tables/operation.md), [SecurityEvent](../tables/securityevent.md), [Update](../tables/update.md), [WindowsEvent](../tables/windowsevent.md)
+**Tables:** [Event](../tables/event.md), [Operation](../tables/operation.md), [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuditEventMicrosoftEvent](asimauditeventmicrosoftevent.md)<br>vim: [vimAuditEventMicrosoftEvent](vimauditeventmicrosoftevent.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [Update](../tables/update.md) | 0.2.1 |
-| ASim: [ASimAuditEventMicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md)<br>vim: [vimAuditEventMicrosoftSecurityEvents](vimauditeventmicrosoftsecurityevents.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [SecurityEvent](../tables/securityevent.md), [Update](../tables/update.md) | 0.2.1 |
-| ASim: [ASimAuditEventMicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md)<br>vim: [vimAuditEventMicrosoftWindowsEvents](vimauditeventmicrosoftwindowsevents.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [Update](../tables/update.md), [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
+| ASim: [ASimAuditEventMicrosoftEvent](asimauditeventmicrosoftevent.md)<br>vim: [vimAuditEventMicrosoftEvent](vimauditeventmicrosoftevent.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md) | 0.2.1 |
+| ASim: [ASimAuditEventMicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md)<br>vim: [vimAuditEventMicrosoftSecurityEvents](vimauditeventmicrosoftsecurityevents.md) | AuditEvent | [Operation](../tables/operation.md), [SecurityEvent](../tables/securityevent.md) | 0.2.1 |
+| ASim: [ASimAuditEventMicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md)<br>vim: [vimAuditEventMicrosoftWindowsEvents](vimauditeventmicrosoftwindowsevents.md) | AuditEvent | [Operation](../tables/operation.md), [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
 
 ## Microsoft Windows Event
 
@@ -880,34 +871,34 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** ProcessEvent, RegistryEvent
 
-**Tables:** [ASIM_GetAccountType](../tables/asim-getaccounttype.md), [ASIM_ParseSecurityEvents](../tables/asim-parsesecurityevents.md), [ASIM_ParseWindowsEvents](../tables/asim-parsewindowsevents.md), [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md)
+**Tables:** [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimProcessCreateMicrosoftSecurityEvents](asimprocesscreatemicrosoftsecurityevents.md)<br>vim: [vimProcessCreateMicrosoftSecurityEvents](vimprocesscreatemicrosoftsecurityevents.md) | ProcessEvent | [SecurityEvent](../tables/securityevent.md) | 0.1.1 |
-| ASim: [ASimProcessCreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md)<br>vim: [vimProcessCreateMicrosoftWindowsEvents](vimprocesscreatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.3 |
+| ASim: [ASimProcessCreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md)<br>vim: [vimProcessCreateMicrosoftWindowsEvents](vimprocesscreatemicrosoftwindowsevents.md) | ProcessEvent |  | 0.3 |
 | ASim: [ASimProcessTerminateMicrosoftSecurityEvents](asimprocessterminatemicrosoftsecurityevents.md)<br>vim: [vimProcessTerminateMicrosoftSecurityEvents](vimprocessterminatemicrosoftsecurityevents.md) | ProcessEvent | [SecurityEvent](../tables/securityevent.md) | 0.2 |
-| ASim: [ASimProcessTerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md)<br>vim: [vimProcessTerminateMicrosoftWindowsEvents](vimprocessterminatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.2 |
-| ASim: [ASimRegistryEventMicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md)<br>vim: [vimRegistryEventMicrosoftSecurityEvent](vimregistryeventmicrosoftsecurityevent.md) | RegistryEvent | [ASIM_GetAccountType](../tables/asim-getaccounttype.md), [ASIM_ParseSecurityEvents](../tables/asim-parsesecurityevents.md), [SecurityEvent](../tables/securityevent.md) | 0.3.1 |
-| ASim: [ASimRegistryEventMicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md)<br>vim: [vimRegistryEventMicrosoftWindowsEvent](vimregistryeventmicrosoftwindowsevent.md) | RegistryEvent | [ASIM_GetAccountType](../tables/asim-getaccounttype.md), [ASIM_ParseWindowsEvents](../tables/asim-parsewindowsevents.md), [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
+| ASim: [ASimProcessTerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md)<br>vim: [vimProcessTerminateMicrosoftWindowsEvents](vimprocessterminatemicrosoftwindowsevents.md) | ProcessEvent |  | 0.2 |
+| ASim: [ASimRegistryEventMicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md)<br>vim: [vimRegistryEventMicrosoftSecurityEvent](vimregistryeventmicrosoftsecurityevent.md) | RegistryEvent | [SecurityEvent](../tables/securityevent.md) | 0.3.1 |
+| ASim: [ASimRegistryEventMicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md)<br>vim: [vimRegistryEventMicrosoftWindowsEvent](vimregistryeventmicrosoftwindowsevent.md) | RegistryEvent | [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
 
 ## SentinelOne
 
 **Schemas:** AlertEvent, AuditEvent, Authentication, Dns, FileEvent, NetworkSession, ProcessEvent, RegistryEvent, UserManagement
 
-**Tables:** [Event](../tables/event.md), [Operation](../tables/operation.md), [SentinelOne_CL](../tables/sentinelone-cl.md)
+**Tables:** [Operation](../tables/operation.md), [SentinelOne_CL](../tables/sentinelone-cl.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimAlertEventSentinelOneSingularity](asimalerteventsentinelonesingularity.md)<br>vim: [vimAlertEventSentinelOneSingularity](vimalerteventsentinelonesingularity.md) | AlertEvent | [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.0 |
-| ASim: [ASimAuditEventSentinelOne](asimauditeventsentinelone.md)<br>vim: [vimAuditEventSentinelOne](vimauditeventsentinelone.md) | AuditEvent | [Event](../tables/event.md), [Operation](../tables/operation.md), [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.0 |
+| ASim: [ASimAuditEventSentinelOne](asimauditeventsentinelone.md)<br>vim: [vimAuditEventSentinelOne](vimauditeventsentinelone.md) | AuditEvent | [Operation](../tables/operation.md), [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.0 |
 | ASim: [ASimAuthenticationSentinelOne](asimauthenticationsentinelone.md)<br>vim: [vimAuthenticationSentinelOne](vimauthenticationsentinelone.md) | Authentication | [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.1 |
 | ASim: [ASimDnsSentinelOne](asimdnssentinelone.md)<br>vim: [vimDnsSentinelOne](vimdnssentinelone.md) | Dns | [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.0 |
-| ASim: [ASimFileEventSentinelOne](asimfileeventsentinelone.md)<br>vim: [vimFileEventSentinelOne](vimfileeventsentinelone.md) | FileEvent | [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.0 |
+| ASim: [ASimFileEventSentinelOne](asimfileeventsentinelone.md)<br>vim: [vimFileEventSentinelOne](vimfileeventsentinelone.md) | FileEvent |  | 0.1.0 |
 | ASim: [ASimNetworkSessionSentinelOne](asimnetworksessionsentinelone.md)<br>vim: [vimNetworkSessionSentinelOne](vimnetworksessionsentinelone.md) | NetworkSession | [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.0 |
 | ASim: [ASimProcessCreateSentinelOne](asimprocesscreatesentinelone.md)<br>vim: [vimProcessCreateSentinelOne](vimprocesscreatesentinelone.md) | ProcessEvent | [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.0 |
 | ASim: [ASimRegistryEventSentinelOne](asimregistryeventsentinelone.md)<br>vim: [vimRegistryEventSentinelOne](vimregistryeventsentinelone.md) | RegistryEvent | [SentinelOne_CL](../tables/sentinelone-cl.md) | 0.1.0 |
@@ -999,7 +990,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimProcessCreateTrendMicroVisionOne](asimprocesscreatetrendmicrovisionone.md)<br>vim: [vimProcessCreateTrendMicroVisionOne](vimprocesscreatetrendmicrovisionone.md) | ProcessEvent | [TrendMicro_XDR_OAT_CL](../tables/trendmicro-xdr-oat-cl.md) | 0.1.0 |
+| ASim: [ASimProcessCreateTrendMicroVisionOne](asimprocesscreatetrendmicrovisionone.md)<br>vim: [vimProcessCreateTrendMicroVisionOne](vimprocesscreatetrendmicrovisionone.md) | ProcessEvent |  | 0.1.0 |
 | ASim: [ASimRegistryEventTrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md)<br>vim: [vimRegistryEventTrendMicroVisionOne](vimregistryeventtrendmicrovisionone.md) | RegistryEvent | [TrendMicro_XDR_OAT_CL](../tables/trendmicro-xdr-oat-cl.md) | 0.1.0 |
 
 ## Vectra
@@ -1045,13 +1036,13 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** AuditEvent, Authentication, FileEvent, NetworkSession, ProcessEvent, RegistryEvent
 
-**Tables:** [CarbonBlackAuditLogs_CL](../tables/carbonblackauditlogs-cl.md), [CarbonBlackEvents_CL](../tables/carbonblackevents-cl.md), [CarbonBlackNotifications_CL](../tables/carbonblacknotifications-cl.md), [alert](../tables/alert.md), [update](../tables/update.md)
+**Tables:** [CarbonBlackAuditLogs_CL](../tables/carbonblackauditlogs-cl.md), [CarbonBlackEvents_CL](../tables/carbonblackevents-cl.md), [CarbonBlackNotifications_CL](../tables/carbonblacknotifications-cl.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuditEventVMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md)<br>vim: [vimAuditEventVMwareCarbonBlackCloud](vimauditeventvmwarecarbonblackcloud.md) | AuditEvent | [CarbonBlackAuditLogs_CL](../tables/carbonblackauditlogs-cl.md), [alert](../tables/alert.md), [update](../tables/update.md) | 0.2.0 |
+| ASim: [ASimAuditEventVMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md)<br>vim: [vimAuditEventVMwareCarbonBlackCloud](vimauditeventvmwarecarbonblackcloud.md) | AuditEvent | [CarbonBlackAuditLogs_CL](../tables/carbonblackauditlogs-cl.md) | 0.2.0 |
 | ASim: [ASimAuthenticationVMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md)<br>vim: [vimAuthenticationVMwareCarbonBlackCloud](vimauthenticationvmwarecarbonblackcloud.md) | Authentication | [CarbonBlackAuditLogs_CL](../tables/carbonblackauditlogs-cl.md) | 0.1.0 |
 | ASim: [ASimFileEventVMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md)<br>vim: [vimFileEventVMwareCarbonBlackCloud](vimfileeventvmwarecarbonblackcloud.md) | FileEvent | [CarbonBlackEvents_CL](../tables/carbonblackevents-cl.md) | 0.1.1 |
 | ASim: [ASimNetworkSessionVMwareCarbonBlackCloud](asimnetworksessionvmwarecarbonblackcloud.md)<br>vim: [vimNetworkSessionVMwareCarbonBlackCloud](vimnetworksessionvmwarecarbonblackcloud.md) | NetworkSession | [CarbonBlackEvents_CL](../tables/carbonblackevents-cl.md), [CarbonBlackNotifications_CL](../tables/carbonblacknotifications-cl.md) | 0.1.1 |
@@ -1088,13 +1079,13 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** Authentication
 
-**Tables:** [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md)
+**Tables:** [WindowsEvent](../tables/windowsevent.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationMicrosoftWindowsEvent](asimauthenticationmicrosoftwindowsevent.md)<br>vim: [vimAuthenticationMicrosoftWindowsEvent](vimauthenticationmicrosoftwindowsevent.md) | Authentication | [SecurityEvent](../tables/securityevent.md), [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
+| ASim: [ASimAuthenticationMicrosoftWindowsEvent](asimauthenticationmicrosoftwindowsevent.md)<br>vim: [vimAuthenticationMicrosoftWindowsEvent](vimauthenticationmicrosoftwindowsevent.md) | Authentication | [WindowsEvent](../tables/windowsevent.md) | 0.2.1 |
 
 ## Windows Sysmon
 
@@ -1149,5 +1140,5 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · **ASIM Products**
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · **ASIM Products** · [📊](../statistics.md)
 

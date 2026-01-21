@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="Vectra XDR Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -36,7 +36,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **8 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -44,10 +44,8 @@ This solution uses **8 table(s)**:
 | [`Detections_Data_CL`](../tables/detections-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics, Workbooks |
 | [`Entities_Data_CL`](../tables/entities-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Analytics |
 | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
-| [`Event`](../tables/event.md) | - | Workbooks |
 | [`Health_Data_CL`](../tables/health-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
 | [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | [Vectra XDR](../connectors/vectraxdr.md) | Workbooks |
-| [`Usage`](../tables/usage.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -86,7 +84,7 @@ This solution includes **33 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) | [`Audits_Data_CL`](../tables/audits-data-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md)<br>[`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md)<br>[`Event`](../tables/event.md)<br>[`Health_Data_CL`](../tables/health-data-cl.md)<br>[`Lockdown_Data_CL`](../tables/lockdown-data-cl.md)<br>[`Usage`](../tables/usage.md) |
+| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) | [`Audits_Data_CL`](../tables/audits-data-cl.md)<br>[`Detections_Data_CL`](../tables/detections-data-cl.md)<br>[`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md)<br>[`Health_Data_CL`](../tables/health-data-cl.md)<br>[`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) |
 
 ### Playbooks
 
@@ -137,7 +135,7 @@ This solution includes **33 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

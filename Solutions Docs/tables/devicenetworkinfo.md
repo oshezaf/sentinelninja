@@ -1,6 +1,6 @@
 # DeviceNetworkInfo
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,13 +17,12 @@ Network properties of devices, including physical adapters, IP and MAC addresses
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkinfo) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkinfo-table) |
 
-## Solutions (4)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 
 ## Connectors (1)
@@ -34,18 +33,17 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (26)
+## Content Items Using This Table (18)
 
 ### Analytic Rules (1)
 
 **In solution [Standalone Content](../solutions/standalone-content.md):**
 - [RDP Nesting](../content/standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.md)
 
-### Hunting Queries (14)
+### Hunting Queries (13)
 
 **In solution [](../solutions/.md):**
 - [Alert Events from Internal IP Address](../content/-alert-events-from-internal-ip-address-f936ddfa-58e3-4db1-834b-fb50e8bd55c5-95390814.md)
-- [Baseline Comparison](../content/-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-7679c313.md)
 - [ConnectedNetworkDeviceDiscovery](../content/-connectednetworkdevicediscovery-c7813a5c-ef11-4ee9-8feb-731402f31259-a3d1ba88.md)
 - [Device Logons from Unknown IPs](../content/-device-logons-from-unknown-ips-a6d76204-efb2-4ccd-a068-d5a9e6876236-51c24d96.md)
 - [Devices In Subnet - IPAddressV4](../content/-devices-in-subnet-ipaddressv4-7f4a9010-4948-4e0c-b668-7a2f603c7dc8-aa4fd6e1.md)
@@ -61,26 +59,17 @@ This table is ingested by the following connectors:
 **In solution [Standalone Content](../solutions/standalone-content.md):**
 - [MDE_DeviceInventory-LastUserLoggedIn](../content/standalone-content-mde-deviceinventory-lastuserloggedin-39226090-3c73-407f-bef8-9a09f98fc668-613b4c17.md)
 
-### Workbooks (11)
+### Workbooks (4)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [MicrosoftDefenderForEndPoint](../content/-microsoftdefenderforendpoint-f98fcc1e.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
-
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 ## Parsers Using This Table (2)
 
@@ -93,7 +82,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

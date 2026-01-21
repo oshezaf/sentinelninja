@@ -4,7 +4,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Darktrace.svg" alt="AI Analyst Darktrace Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -39,12 +39,11 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] AI Analyst Darktrace via AMA](../connectors/darktraceama.md), [[Deprecated] AI Analyst Darktrace via Legacy Agent](../connectors/darktrace.md) | Workbooks |
-| [`Immune`](../tables/immune.md) | - | Workbooks |
 
 ## Content Items
 
@@ -58,7 +57,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AIA-Darktrace](../content/ai-analyst-darktrace-aia-darktrace-c99f20ad.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Immune`](../tables/immune.md) |
+| [AIA-Darktrace](../content/ai-analyst-darktrace-aia-darktrace-c99f20ad.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ## Release Notes
 
@@ -69,7 +68,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

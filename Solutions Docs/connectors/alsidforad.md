@@ -4,7 +4,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Alsid.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -29,8 +29,8 @@ This connector ingests data into the following tables:
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
 | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | — | — |
-| [`USAGE`](../tables/usage.md) | — | — |
-| [`alert`](../tables/alert.md) | — | — |
+| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | — | — |
+| [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | — | — |
 
 ## Permissions
 
@@ -91,7 +91,7 @@ All of these steps are showcased [here](https://www.youtube.com/watch?v=JwV1uZSy
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

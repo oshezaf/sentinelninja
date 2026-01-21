@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Auth0.svg" alt="Auth0 Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -62,7 +62,7 @@ This solution includes **2 content item(s)**:
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [Auth0](../content/auth0-auth0-4563059e-9b11-4978-86e7-0bb6e22e23bb-96f2be7e.md) | - | [`Auth0AM_CL`](../tables/auth0am-cl.md) *(read)*<br>[`Auth0_CL`](../tables/auth0-cl.md) *(read)* |
-| [Auth0AM](../content/auth0-auth0am-a6453489-5e6c-4976-bfc7-f9d234fde3ca-b3c9858a.md) | - | [`Auth0AM_CL`](../tables/auth0am-cl.md) *(read)*<br>[`Auth0Logs_CL`](../tables/auth0logs-cl.md) *(read)*<br>[`Operation`](../tables/operation.md) *(read)*<br>[`Update`](../tables/update.md) *(read)*<br>[`import`](../tables/import.md) *(read)*<br>[`imported`](../tables/imported.md) *(read)*<br>[`update`](../tables/update.md) *(read)* |
+| [Auth0AM](../content/auth0-auth0am-a6453489-5e6c-4976-bfc7-f9d234fde3ca-b3c9858a.md) | - | [`Auth0AM_CL`](../tables/auth0am-cl.md) *(read)*<br>[`Auth0Logs_CL`](../tables/auth0logs-cl.md) *(read)* |
 
 ## Additional Documentation
 
@@ -108,7 +108,7 @@ The following are steps to be followed in Auth0 App.
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

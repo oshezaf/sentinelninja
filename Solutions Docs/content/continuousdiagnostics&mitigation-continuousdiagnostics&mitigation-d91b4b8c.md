@@ -1,6 +1,6 @@
 # ContinuousDiagnostics&Mitigation
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -29,15 +29,11 @@ This content item queries data from the following tables:
 - [`DeviceEvents`](../tables/deviceevents.md)
 - [`DeviceFileEvents`](../tables/devicefileevents.md)
 - [`DeviceLogonEvents`](../tables/devicelogonevents.md)
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`DeviceRegistryEvents`](../tables/deviceregistryevents.md)
 - [`DnsEvents`](../tables/dnsevents.md)
 - [`Dynamics365Activity`](../tables/dynamics365activity.md)
 - [`GCP_IAM_CL`](../tables/gcp-iam-cl.md)
 - [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
 - [`IdentityInfo`](../tables/identityinfo.md)
-- [`Improve`](../tables/improve.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)
@@ -47,17 +43,15 @@ This content item queries data from the following tables:
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)
 - [`SecurityRecommendation`](../tables/securityrecommendation.md)
-- [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
 - [`SigninLogs`](../tables/signinlogs.md)
 - [`StorageBlobLogs`](../tables/storagebloblogs.md)
 - [`Syslog`](../tables/syslog.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
 - [`WindowsFirewall`](../tables/windowsfirewall.md)
-- [`event`](../tables/event.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 

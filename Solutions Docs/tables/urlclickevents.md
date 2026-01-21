@@ -1,6 +1,6 @@
 # UrlClickEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,13 +17,12 @@ Safe Links clicks from email messages, Teams, and Office 365 apps
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/urlclickevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-urlclickevents-table) |
 
-## Solutions (5)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
@@ -35,7 +34,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (54)
+## Content Items Using This Table (50)
 
 ### Analytic Rules (3)
 
@@ -100,22 +99,14 @@ This table is ingested by the following connectors:
 - [User clicks on malicious inbound emails](../content/microsoft-defender-xdr-user-clicks-on-malicious-inbound-emails-891f4865-75e5-4d40-bc24-ebf97da3ca9a-a5ebfb84.md)
 - [User clicks on phishing URLs in emails](../content/microsoft-defender-xdr-user-clicks-on-phishing-urls-in-emails-d823da0e-1334-4a66-8ff4-2c2c40d26295-36e1eb38.md)
 
-### Workbooks (5)
-
-**In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+### Workbooks (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

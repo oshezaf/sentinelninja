@@ -1,6 +1,6 @@
 # Syslog
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for Syslog table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/syslog) |
 
-## Solutions (55)
+## Solutions (54)
 
 This table is used by the following solutions:
 
@@ -69,7 +69,6 @@ This table is used by the following solutions:
 - [Syslog](../solutions/syslog.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [VMWareESXi](../solutions/vmwareesxi.md)
 - [VMware SASE](../solutions/vmware-sase.md)
 - [Veeam](../solutions/veeam.md)
@@ -121,9 +120,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (392)
+## Content Items Using This Table (381)
 
-### Analytic Rules (241)
+### Analytic Rules (239)
 
 **In solution [CTERA](../solutions/ctera.md):**
 - [Antivirus Detected an Infected File](../content/ctera-antivirus-detected-an-infected-file-4f767afa-d666-4ed4-b453-a4f5ad35181b-5bf89171.md)
@@ -280,10 +279,6 @@ This table is ingested by the following connectors:
 - [TI Map URL Entity to Syslog Data](../content/threat-intelligence-ti-map-url-entity-to-syslog-data-b31037ea-6f68-4fbd-bab2-d0d0f44c2fcf-b70131e6.md)
 - [TI map Domain entity to Syslog](../content/threat-intelligence-ti-map-domain-entity-to-syslog-532f62c1-fba6-4baa-bbb6-4a32a4ef32fa-afa2706f.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI Map URL Entity to Syslog Data](../content/threat-intelligence-new-ti-map-url-entity-to-syslog-data-4de24a28-dcd0-4a0d-bf14-96d8483dc05a-607492d9.md)
-- [TI map Domain entity to Syslog](../content/threat-intelligence-new-ti-map-domain-entity-to-syslog-cd19434e-10f2-4e2f-b3c1-ce6f08ac5357-10e0f11d.md)
-
 **In solution [VMWareESXi](../solutions/vmwareesxi.md):**
 - [VMware ESXi - Dormant VM started](../content/vmwareesxi-vmware-esxi-dormant-vm-started-4cdcd5d8-89df-4076-a917-bc50abb9f2ab-af0d35be.md)
 - [VMware ESXi - Low patch disk space](../content/vmwareesxi-vmware-esxi-low-patch-disk-space-48d992ba-d404-4159-a8c6-46f51d1325c7-d606fa04.md)
@@ -418,7 +413,7 @@ This table is ingested by the following connectors:
 - [WAN Accelerator Deleted](../content/veeam-wan-accelerator-deleted-5b19f19b-d92c-486f-be98-ba2c5945e240-ad4cbb3c.md)
 - [WAN Accelerator Settings Updated](../content/veeam-wan-accelerator-settings-updated-2e4fe360-ce67-433b-930e-42f83058dfd0-752109e1.md)
 
-### Hunting Queries (84)
+### Hunting Queries (83)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Linux security related process termination activity detected](../content/apache-log4j-vulnerability-detection-linux-security-related-process-termination-activity-detected-020b05d3-6447-402c-87b6-f8faff7c7e19-e5bfe56c.md)
@@ -515,9 +510,6 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map File Entity to Syslog Event](../content/threat-intelligence-ti-map-file-entity-to-syslog-event-18f7de84-de55-4983-aca3-a18bc846b4e0-26e4aa14.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI Map File Entity to Syslog Event](../content/threat-intelligence-new-ti-map-file-entity-to-syslog-event-f624417d-9e4e-462e-93e7-53ab7686a479-b72d3476.md)
-
 **In solution [VMWareESXi](../solutions/vmwareesxi.md):**
 - [VMware ESXi - Download errors](../content/vmwareesxi-vmware-esxi-download-errors-6702f91d-c764-497b-8d67-1cce8a33b895-040e68b2.md)
 - [VMware ESXi - List of dormant users.](../content/vmwareesxi-vmware-esxi-list-of-dormant-users.-a0f32708-e6fb-427f-94d2-b09cf64acdf8-1dadc601.md)
@@ -530,26 +522,20 @@ This table is ingested by the following connectors:
 - [VMware ESXi - Root logins failures](../content/vmwareesxi-vmware-esxi-root-logins-failures-fc6c0440-1bb6-4661-89e9-4cb2c8f1e5e2-48dd363d.md)
 - [VMware ESXi - VM high resource load](../content/vmwareesxi-vmware-esxi-vm-high-resource-load-3467bb11-7cbf-49f7-9e71-c3d0da327af5-9c6a697a.md)
 
-### Workbooks (67)
+### Workbooks (59)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [Barracuda](../content/-barracuda-990015fb.md)
 - [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
 - [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
 - [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
 - [InfobloxNIOS](../content/-infobloxnios-600a8517.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
 - [LinuxMachines](../content/-linuxmachines-c6ca72c5.md)
 - [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
 - [PulseConnectSecure](../content/-pulseconnectsecure-3810c1d3.md)
 - [SecurityStatus](../content/-securitystatus-183600b3.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
 - [SophosXGFirewall](../content/-sophosxgfirewall-e612dd42.md)
 - [SymantecProxySG](../content/-symantecproxysg-d22da0b4.md)
@@ -629,8 +615,6 @@ This table is ingested by the following connectors:
 - [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-56477077.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
@@ -681,9 +665,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.compute/virtualmachinescalesets`
 - `microsoft.hybridcontainerservice/provisionedclusters`
 
-## Parsers Using This Table (92)
+## Parsers Using This Table (93)
 
-### ASIM Parsers (17)
+### ASIM Parsers (18)
 
 | Parser | Schema | Product |
 |:-------|:-------|:--------|
@@ -698,6 +682,7 @@ This table collects data from the following Azure resource types:
 | [ASimFileEventLinuxSysmonFileDeleted](../asim/asimfileeventlinuxsysmonfiledeleted.md) | FileEvent |  |
 | [ASimNetworkSessionAppGateSDP](../asim/asimnetworksessionappgatesdp.md) | NetworkSession |  |
 | [ASimNetworkSessionCiscoISE](../asim/asimnetworksessionciscoise.md) | NetworkSession |  |
+| [ASimNetworkSessionCiscoMerakiSyslog](../asim/asimnetworksessionciscomerakisyslog.md) | NetworkSession |  |
 | [ASimNetworkSessionLinuxSysmon](../asim/asimnetworksessionlinuxsysmon.md) | NetworkSession |  |
 | [ASimNetworkSessionWatchGuardFirewareOS](../asim/asimnetworksessionwatchguardfirewareos.md) | NetworkSession |  |
 | [ASimProcessCreateLinuxSysmon](../asim/asimprocesscreatelinuxsysmon.md) | ProcessEvent |  |
@@ -789,7 +774,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

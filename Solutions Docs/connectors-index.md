@@ -2,46 +2,17 @@
 
 Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you to collect security data from various sources into your Log Analytics workspace. Each connector defines how data flows from a source system to Sentinel tables, including the collection method (such as Azure Functions, Diagnostic Settings, or Log Analytics Agent) and the target table schema.
 
-**Browse:** [🏠](readme.md) · [Solutions](solutions-index.md) · **Connectors** · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md)
+**Browse:** [🏠](readme.md) · [Solutions](solutions-index.md) · **Connectors** · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
 
 ---
 
 > **Note:** This index covers connectors managed through Solutions in the Azure-Sentinel GitHub repository. A small number of connectors (such as Microsoft Dataverse, Microsoft Power Automate, Microsoft Power Platform Admin, and SAP connectors) are not managed via Solutions and are therefore not included here.
 
-## Statistics
-
-### Connectors Overview
-
-| Metric | Total | Active | Deprecated | Unpublished | Microsoft | Partner | Community |
-|:-------|------:|-------:|-----------:|------------:|----------:|--------:|----------:|
-| In Solutions | **384** | 289 | 29 | 66 | 141 | 233 | 10 |
-| Discovered* | **147** | 27 | 114 | 6 | 99 | 38 | 8 |
-| **Total** | **531** | **316** | **143** | **72** | **240** | **271** | **18** |
-
-*\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions.*
-
-### Collection Methods
-
-| Collection Method | Total | Active | Deprecated | Unpublished | Microsoft | Partner | Community |
-|:-----------------|------:|-------:|-----------:|------------:|----------:|--------:|----------:|
-| Azure Function | **129** | 75 | 18 | 36 | 36 | 92 | 1 |
-| CCF | **129** | 118 | 1 | 10 | 64 | 65 | 0 |
-| MMA | **110** | 12 | 90 | 8 | 66 | 37 | 5 |
-| AMA | **59** | 25 | 34 | 0 | 26 | 26 | 7 |
-| Unknown (Custom Log) | **44** | 35 | 0 | 9 | 2 | 38 | 4 |
-| Native | **25** | 24 | 0 | 1 | 25 | 0 | 0 |
-| Azure Diagnostics | **17** | 17 | 0 | 0 | 17 | 0 | 0 |
-| REST API | **15** | 7 | 0 | 8 | 1 | 13 | 1 |
-| Unknown | **3** | 3 | 0 | 0 | 3 | 0 | 0 |
-| **Total** | **531** | **316** | **143** | **72** | **240** | **271** | **18** |
-
-*Active = Published and not deprecated.*
+**531 unique connectors** (388 active, 143 deprecated). See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
-## Connectors Index
-
-This page lists **531 unique connectors** across all solutions.
+Browse connectors alphabetically:
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [V](#v) | [W](#w) | [Z](#z) | [Deprecated](#deprecated-connectors)
 
@@ -163,7 +134,7 @@ This page lists **531 unique connectors** across all solutions.
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Common Event Format (CEF) via AMA](connectors/cefama.md) 🔍 | Microsoft | AMA | 1 | [Common Event Format](solutions/common-event-format.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Commvault-Logo.svg" alt="" width="32" height="32"> | [CommvaultSecurityIQ](connectors/commvaultsecurityiq-cl.md) | Commvault | Azure Function | 1 | [Commvault Security IQ](solutions/commvault-security-iq.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ContrastADR.svg" alt="" width="32" height="32"> | [ContrastADR](connectors/contrastadr.md) | Contrast Security | Azure Function | 2 | [ContrastADR](solutions/contrastadr.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Corelight/Data%20Connectors/Logo/corelight.svg" alt="" width="32" height="32"> | [Corelight Connector Exporter](connectors/corelightconnectorexporter.md) | Corelight | Unknown (Custom Log) | 111 | [Corelight](solutions/corelight.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Corelight/Data%20Connectors/Logo/corelight.svg" alt="" width="32" height="32"> | [Corelight Connector Exporter](connectors/corelightconnectorexporter.md) | Corelight | Unknown (Custom Log) | 108 | [Corelight](solutions/corelight.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CortexXDR_Logo.svg" alt="" width="32" height="32"> | [Cortex XDR - Incidents](connectors/cortexxdrincidents.md) | DEFEND Ltd. | CCF | 1 | [Cortex XDR](solutions/cortex-xdr.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cribl-Logo.svg" alt="" width="32" height="32"> | [Cribl](connectors/cribl.md) | Cribl | Unknown (Custom Log) | 4 | [Cribl](solutions/cribl.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="32" height="32"> | [CrowdStrike API Data Connector (via Codeless Connector Framework)](connectors/crowdstrikeapiccpdefinition.md) | Microsoft | CCF | 5 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) |
@@ -500,9 +471,9 @@ This page lists **531 unique connectors** across all solutions.
 |:--:|:----------|:----------|:------------------|:------:|:---------|
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Talon.svg" alt="" width="32" height="32"> | [Talon Insights](connectors/talonlogs.md) | Talon Security | Unknown (Custom Log) | 1 | [Talon](solutions/talon.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/TeamCymruScout.svg" alt="" width="32" height="32"> | [Team Cymru Scout Data Connector](connectors/teamcymruscout.md) | Team Cymru Scout | Azure Function | 14 | [Team Cymru Scout](solutions/team-cymru-scout.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tenable.svg" alt="" width="32" height="32"> | [Tenable Identity Exposure](connectors/tenableie.md) | Tenable | MMA | 4 | [Tenable App](solutions/tenable-app.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tenable.svg" alt="" width="32" height="32"> | [Tenable Identity Exposure](connectors/tenableie.md) | Tenable | MMA | 2 | [Tenable App](solutions/tenable-app.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tenable.svg" alt="" width="32" height="32"> | [Tenable Vulnerability Management](connectors/tenablevm.md) | Tenable | Azure Function | 5 | [Tenable App](solutions/tenable-app.md) |
-|  | [Tenable.ad](connectors/tenable.ad.md) ⚠️ 🔍 | Tenable | MMA | 4 | [TenableAD](solutions/tenablead.md) |
+|  | [Tenable.ad](connectors/tenable.ad.md) ⚠️ 🔍 | Tenable | MMA | 2 | [TenableAD](solutions/tenablead.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tenableio_logo.svg" alt="" width="32" height="32"> | [Tenable.io Vulnerability Management](connectors/tenableioapi.md) | Tenable | Azure Function | 2 | [TenableIO](solutions/tenableio.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [Tenant-based Microsoft Defender for Cloud](connectors/microsoftdefenderforcloudtenantbased.md) | Microsoft | Native | 1 | [Microsoft Defender for Cloud](solutions/microsoft-defender-for-cloud.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | [TheHive Project - TheHive](connectors/thehiveprojectthehive.md) | TheHive Project | Azure Function | 1 | [TheHive](solutions/thehive.md) |
@@ -589,9 +560,9 @@ The following **143 connector(s)** are deprecated:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Cisco Secure Email Gateway via AMA](connectors/ciscosegama.md) 🔍 | Cisco | AMA | 1 | [CiscoSEG](solutions/ciscoseg.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Cisco Secure Email Gateway via Legacy Agent](connectors/ciscoseg.md) 🔍 | Cisco | MMA | 1 | [CiscoSEG](solutions/ciscoseg.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="32" height="32"> | 🚫 [[DEPRECATED] Cisco Secure Endpoint (AMP)](connectors/ciscosecureendpoint.md) 🔍 | Cisco | Azure Function | 1 | [Cisco Secure Endpoint](solutions/cisco-secure-endpoint.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Cisco UCS](connectors/ciscoucs.md) 🔍 | Cisco | MMA | 3 | [Cisco UCS](solutions/cisco-ucs.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Cisco UCS](connectors/ciscoucs.md) 🔍 | Cisco | MMA | 1 | [Cisco UCS](solutions/cisco-ucs.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Cisco Web Security Appliance](connectors/ciscowsa.md) 🔍 | Cisco | MMA | 1 | [CiscoWSA](solutions/ciscowsa.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix-logo-circle-black.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Citrix ADC (former NetScaler)](connectors/citrixadc.md) 🔍 | Citrix | MMA | 2 | [Citrix ADC](solutions/citrix-adc.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix-logo-circle-black.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Citrix ADC (former NetScaler)](connectors/citrixadc.md) 🔍 | Citrix | MMA | 1 | [Citrix ADC](solutions/citrix-adc.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix-logo-circle-black.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Citrix WAF (Web App Firewall) via AMA](connectors/citrixwafama.md) 🔍 | Citrix Systems Inc. | AMA | 1 | [Citrix Web App Firewall](solutions/citrix-web-app-firewall.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix-logo-circle-black.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](connectors/citrixwaf.md) 🔍 | Citrix Systems Inc. | MMA | 1 | [Citrix Web App Firewall](solutions/citrix-web-app-firewall.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Claroty via AMA](connectors/clarotyama.md) 🔍 | Claroty | AMA | 1 | [Claroty](solutions/claroty.md) |
@@ -643,7 +614,7 @@ The following **143 connector(s)** are deprecated:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Ivanti Unified Endpoint Management](connectors/ivantiuem.md) 🔍 | Ivanti | MMA | 1 | [Ivanti Unified Endpoint Management](solutions/ivanti-unified-endpoint-management.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] JBoss Enterprise Application Platform](connectors/jbosseap.md) 🔍 | Red Hat | MMA | 1 | [JBoss](solutions/jboss.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Juniper IDP](connectors/juniperidp.md) 🔍 | Juniper | MMA | 1 | [JuniperIDP](solutions/juniperidp.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Juniper SRX](connectors/junipersrx.md) 🔍 | Juniper | MMA | 2 | [Juniper SRX](solutions/juniper-srx.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Juniper SRX](connectors/junipersrx.md) 🔍 | Juniper | MMA | 1 | [Juniper SRX](solutions/juniper-srx.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lookout/Workbooks/Images/Logo/lookout.svg" alt="" width="32" height="32"> | 🚫 [[DEPRECATED] Lookout](connectors/lookoutapi.md) | Lookout | Azure Function | 1 | [Lookout](solutions/lookout.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] MarkLogic Audit](connectors/marklogic.md) 🔍 | MarkLogic | MMA | 1 | [MarkLogicAudit](solutions/marklogicaudit.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/McAfee%20ePolicy%20Orchestrator/Workbooks/Images/Logo/mcafee_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] McAfee ePolicy Orchestrator (ePO)](connectors/mcafeeepo.md) ⚠️ 🔍 | McAfee | MMA | 1 | [McAfee ePolicy Orchestrator](solutions/mcafee-epolicy-orchestrator.md) |
@@ -675,20 +646,20 @@ The following **143 connector(s)** are deprecated:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] PostgreSQL Events](connectors/postgresql.md) 🔍 | PostgreSQL | MMA | 1 | [PostgreSQL](solutions/postgresql.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PFPTLogo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Proofpoint On Demand Email Security](connectors/proofpointpod.md) 🔍 | Proofpoint | Azure Function | 6 | [Proofpoint On demand(POD) Email Security](solutions/proofpoint-on-demand-pod-email-security.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PFPTLogo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Proofpoint TAP](connectors/proofpointtap.md) 🔍 | Proofpoint | Azure Function | 4 | [ProofPointTap](solutions/proofpointtap.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Pulse Connect Secure](connectors/pulseconnectsecure.md) 🔍 | Pulse Secure | MMA | 2 | [Pulse Connect Secure](solutions/pulse-connect-secure.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Pulse Connect Secure](connectors/pulseconnectsecure.md) 🔍 | Pulse Secure | MMA | 1 | [Pulse Connect Secure](solutions/pulse-connect-secure.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/qualys_logo.svg" alt="" width="32" height="32"> | 🚫 [[DEPRECATED] Qualys Vulnerability Management](connectors/qualysvulnerabilitymanagement.md) 🔍 | Qualys | Azure Function | 2 | [QualysVM](solutions/qualysvm.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RidgeSecurity.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] RIDGEBOT - data connector for Microsoft Sentinel](connectors/ridgebotdataconnector.md) | RidgeSecurity | AMA | 1 | [RidgeSecurity](solutions/ridgesecurity.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] RSA® SecurID (Authentication Manager)](connectors/rsasecuridam.md) 🔍 | RSA | MMA | 19 | [RSA SecurID](solutions/rsa-securid.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] RSA® SecurID (Authentication Manager)](connectors/rsasecuridam.md) 🔍 | RSA | MMA | 1 | [RSA SecurID](solutions/rsa-securid.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="32" height="32"> | 🚫 [[DEPRECATED] Salesforce Service Cloud](connectors/salesforceservicecloud.md) 🔍 | Salesforce | Azure Function | 2 | [Salesforce Service Cloud](solutions/salesforce-service-cloud.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlackAudit/Data%20Connectors/Logo/slacklogo.svg" alt="" width="32" height="32"> | 🚫 [[DEPRECATED] Slack Audit](connectors/slackauditapi.md) 🔍 | Slack | Azure Function | 3 | [SlackAudit](solutions/slackaudit.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[DEPRECATED] Snowflake](connectors/snowflakedataconnector.md) 🔍 | Snowflake | Azure Function | 1 | [Snowflake](solutions/snowflake.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sonicwall_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] SonicWall Firewall via AMA](connectors/sonicwallfirewallama.md) 🔍 | SonicWall | AMA | 1 | [SonicWall Firewall](solutions/sonicwall-firewall.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sonicwall_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] SonicWall Firewall via Legacy Agent](connectors/sonicwallfirewall.md) 🔍 | SonicWall | MMA | 1 | [SonicWall Firewall](solutions/sonicwall-firewall.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Sophos XG Firewall](connectors/sophosxgfirewall.md) 🔍 | Sophos | MMA | 2 | [Sophos XG Firewall](solutions/sophos-xg-firewall.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Sophos XG Firewall](connectors/sophosxgfirewall.md) 🔍 | Sophos | MMA | 1 | [Sophos XG Firewall](solutions/sophos-xg-firewall.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Squid Proxy](connectors/squidproxy.md) 🔍 | Squid | MMA | 1 | [SquidProxy](solutions/squidproxy.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Symantec Endpoint Protection](connectors/symantecendpointprotection.md) 🔍 | Broadcom | MMA | 2 | [Symantec Endpoint Protection](solutions/symantec-endpoint-protection.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Symantec ProxySG](connectors/symantecproxysg.md) 🔍 | Symantec | MMA | 2 | [SymantecProxySG](solutions/symantecproxysg.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Symantec VIP](connectors/symantecvip.md) 🔍 | Symantec | MMA | 2 | [Symantec VIP](solutions/symantec-vip.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Symantec Endpoint Protection](connectors/symantecendpointprotection.md) 🔍 | Broadcom | MMA | 1 | [Symantec Endpoint Protection](solutions/symantec-endpoint-protection.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Symantec ProxySG](connectors/symantecproxysg.md) 🔍 | Symantec | MMA | 1 | [SymantecProxySG](solutions/symantecproxysg.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Symantec VIP](connectors/symantecvip.md) 🔍 | Symantec | MMA | 1 | [Symantec VIP](solutions/symantec-vip.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Trend_Micro_Logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Trend Micro Apex One via AMA](connectors/trendmicroapexoneama.md) 🔍 | Trend Micro | AMA | 1 | [Trend Micro Apex One](solutions/trend-micro-apex-one.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Trend_Micro_Logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Trend Micro Apex One via Legacy Agent](connectors/trendmicroapexone.md) 🔍 | Trend Micro | MMA | 1 | [Trend Micro Apex One](solutions/trend-micro-apex-one.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Trend_Micro_Logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Trend Micro Deep Security via Legacy](connectors/trendmicro.md) 🔍 | Trend Micro | MMA | 1 | [Trend Micro Deep Security](solutions/trend-micro-deep-security.md) |
@@ -698,7 +669,7 @@ The following **143 connector(s)** are deprecated:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/vArmour%20Application%20Controller/Data%20Connectors/Logo/varmour-logo.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] vArmour Application Controller via Legacy Agent](connectors/varmourac.md) | vArmour | MMA | 1 | [vArmour Application Controller](solutions/varmour-application-controller.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Vectra AI Detect via AMA](connectors/aivectradetectama.md) 🔍 | Vectra AI | AMA | 1 | [Vectra AI Detect](solutions/vectra-ai-detect.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Vectra AI Detect via Legacy Agent](connectors/aivectradetect.md) 🔍 | Vectra AI | MMA | 1 | [Vectra AI Detect](solutions/vectra-ai-detect.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] VMware ESXi](connectors/vmwareesxi.md) 🔍 | VMWare | MMA | 2 | [VMWareESXi](solutions/vmwareesxi.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] VMware ESXi](connectors/vmwareesxi.md) 🔍 | VMWare | MMA | 1 | [VMWareESXi](solutions/vmwareesxi.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] VMware vCenter](connectors/vmwarevcenter.md) 🔍 | VMware | MMA | 1 | [VMware vCenter](solutions/vmware-vcenter.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/votiro.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] Votiro Sanitization Engine Logs](connectors/votiro.md) ⚠️ | Votiro | MMA | 1 | [Votiro](solutions/votiro.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/WatchGuard_Logo-SVG_Format.svg" alt="" width="32" height="32"> | 🚫 [[Deprecated] WatchGuard Firebox](connectors/watchguardfirebox.md) | WatchGuard Technologies | MMA | 1 | [Watchguard Firebox](solutions/watchguard-firebox.md) |
@@ -711,5 +682,5 @@ The following **143 connector(s)** are deprecated:
 
 ---
 
-**Browse:** [🏠](readme.md) · [Solutions](solutions-index.md) · **Connectors** · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md)
+**Browse:** [🏠](readme.md) · [Solutions](solutions-index.md) · **Connectors** · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
 

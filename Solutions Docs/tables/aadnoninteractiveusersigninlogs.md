@@ -1,6 +1,6 @@
 # AADNonInteractiveUserSignInLogs
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,26 +16,22 @@ Reference for AADNonInteractiveUserSignInLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs) |
 
-## Solutions (16)
+## Solutions (12)
 
 This table is used by the following solutions:
 
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
-- [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [FalconFriday](../solutions/falconfriday.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
-- [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
-- [ThreatConnect](../solutions/threatconnect.md)
 
 ## Connectors (1)
 
@@ -45,9 +41,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (66)
+## Content Items Using This Table (32)
 
-### Analytic Rules (36)
+### Analytic Rules (14)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
@@ -57,39 +53,16 @@ This table is ingested by the following connectors:
 - [Microsoft Entra ID Rare UserAgent App Sign-in](../content/falconfriday-microsoft-entra-id-rare-useragent-app-sign-in-87d5cd18-211d-4fd4-9b86-65d23fed87ea-f1fc55a9.md)
 - [Microsoft Entra ID UserAgent OS Missmatch](../content/falconfriday-microsoft-entra-id-useragent-os-missmatch-6a638d80-f6b2-473b-9087-3cac78a84b40-e6a7d745.md)
 
-**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
-- [GreyNoise TI Map IP Entity to SigninLogs](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-signinlogs-f6c76cc9-218c-5b76-9b82-8607f09ea1b4-318921fb.md)
-
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 - [Anomalous sign-in location by user account and authenticating application](../content/microsoft-entra-id-anomalous-sign-in-location-by-user-account-and-authenticating-application-7cb8f77d-c52f-4e46-b82f-3cf2e106224a-c5368fb1.md)
-- [Attempt to bypass conditional access rule in Microsoft Entra ID](../content/microsoft-entra-id-attempt-to-bypass-conditional-access-rule-in-microsoft-entra-id-3af9285d-bb98-4a35-ad29-5ea39ba0c628-6f5f2339.md)
-- [Attempts to sign in to disabled accounts](../content/microsoft-entra-id-attempts-to-sign-in-to-disabled-accounts-75ea5c39-93e5-489b-b1e1-68fa6c9d2d04-3d398bd3.md)
-- [Brute Force Attack against GitHub Account](../content/microsoft-entra-id-brute-force-attack-against-github-account-97ad74c4-fdd9-4a3f-b6bf-5e28f4f71e06-409b9696.md)
-- [Brute force attack against Azure Portal](../content/microsoft-entra-id-brute-force-attack-against-azure-portal-28b42356-45af-40a6-a0b4-a554cdfd5d8a-5dc74411.md)
-- [Distributed Password cracking attempts in Microsoft Entra ID](../content/microsoft-entra-id-distributed-password-cracking-attempts-in-microsoft-entra-id-bfb1c90f-8006-4325-98be-c7fffbc254d6-6613a279.md)
 - [External guest invitation followed by Microsoft Entra ID PowerShell signin](../content/microsoft-entra-id-external-guest-invitation-followed-by-microsoft-entra-id-powershell-signin-acc4c247-aaf7-494b-b5da-17f18863878a-4c59ca84.md)
-- [Failed login attempts to Azure Portal](../content/microsoft-entra-id-failed-login-attempts-to-azure-portal-223db5c1-1bf8-47d8-8806-bed401b356a4-7bb79ab2.md)
-- [GitHub Signin Burst from Multiple Locations](../content/microsoft-entra-id-github-signin-burst-from-multiple-locations-d3980830-dd9d-40a5-911f-76b44dfdce16-ec9e6001.md)
-- [Microsoft Entra ID PowerShell accessing non-Entra ID resources](../content/microsoft-entra-id-microsoft-entra-id-powershell-accessing-non-entra-id-resources-50574fac-f8d1-4395-81c7-78a463ff0c52-6172797f.md)
 - [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md)
-- [Password spray attack against Microsoft Entra ID application](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-application-48607a29-a26a-4abf-8078-a06dbdd174a4-abc69084.md)
-- [Privileged Accounts - Sign in Failure Spikes](../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.md)
-- [Sign-ins from IPs that attempt sign-ins to disabled accounts](../content/microsoft-entra-id-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-500c103a-0319-4d56-8e99-3cec8d860757-7cb25dd6.md)
-- [Successful logon from IP and failure from a different IP](../content/microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.md)
-- [User Accounts - Sign in Failure due to CA Spikes](../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.md)
-- [[Deprecated] Explicit MFA Deny](../content/microsoft-entra-id-[deprecated]-explicit-mfa-deny-a22740ec-fc1e-4c91-8de6-c29c6450ad00-04320464.md)
 
 **In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Anomalous login followed by Teams action](../content/standalone-content-anomalous-login-followed-by-teams-action-2b701288-b428-4fb8-805e-e4372c574786-2da015d8.md)
 - [Authentication Attempt from New Country](../content/standalone-content-authentication-attempt-from-new-country-ef895ada-e8e8-4cf0-9313-b1ab67fab69f-340ffa85.md)
-- [Cisco - firewall block but success logon to Microsoft Entra ID](../content/standalone-content-cisco-firewall-block-but-success-logon-to-microsoft-entra-id-157c0cfc-d76d-463b-8755-c781608cdc1a-60e5d082.md)
-- [Failed AzureAD logons but success logon to AWS Console](../content/standalone-content-failed-azuread-logons-but-success-logon-to-aws-console-643c2025-9604-47c5-833f-7b4b9378a1f5-4ca50ad1.md)
-- [Failed AzureAD logons but success logon to host](../content/standalone-content-failed-azuread-logons-but-success-logon-to-host-8ee967a2-a645-4832-85f4-72b635bcb3a6-d05c051f.md)
-- [Failed host logons but success logon to AzureAD](../content/standalone-content-failed-host-logons-but-success-logon-to-azuread-1ce5e766-26ab-4616-b7c8-3b33ae321e80-db4ff93a.md)
-- [IP with multiple failed Microsoft Entra ID logins successfully logs in to Palo Alto VPN](../content/standalone-content-ip-with-multiple-failed-microsoft-entra-id-logins-successfully-logs-in-to-palo-alto-v-ba144bf8-75b8-406f-9420-ed74397f9479-e519f696.md)
 - [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
@@ -100,39 +73,19 @@ This table is ingested by the following connectors:
 - [TI Map IP Entity to SigninLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-signinlogs-edfc9d8a-6fb3-49e2-80c9-fea15d941799-78ede5a3.md)
 - [TI map Email entity to SigninLogs](../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-aaf060bd.md)
 
-**In solution [ThreatConnect](../solutions/threatconnect.md):**
-- [ThreatConnect TI map Email entity to SigninLogs](../content/threatconnect-threatconnect-ti-map-email-entity-to-signinlogs-ecb68ce7-c309-59a7-a8de-07ccf2a0ea4f-22788640.md)
-
-### Hunting Queries (5)
-
-**In solution [](../solutions/.md):**
-- [Privileged Accounts - Failed MFA](../content/-privileged-accounts-failed-mfa-d9524fcf-de06-4f95-84b0-1637a30ad595-a2a9d71e.md)
-- [Suspected Brute force attack Investigation](../content/-suspected-brute-force-attack-investigation-056ceb9b-8f07-42b3-853e-ef3779de222e-fab473c0.md)
-- [User Accounts - Blocked Accounts](../content/-user-accounts-blocked-accounts-dbc82bc1-c7df-44e3-838a-5846a313cf35-8a791dca.md)
-- [User Accounts - Successful Sign in Spikes](../content/-user-accounts-successful-sign-in-spikes-3c7fcea1-ec9f-4ea2-a555-156073b2d183-965def25.md)
-
-**In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
-- [User Accounts - New Single Factor Auth](../content/business-email-compromise-financial-fraud-user-accounts-new-single-factor-auth-8eace93b-f38c-47b7-a21d-739556d31db6-94f60108.md)
-
-### Workbooks (25)
+### Workbooks (18)
 
 **In solution [](../solutions/.md):**
 - [AADNonInteractiveUserSignInLogs](../content/-aadnoninteractiveusersigninlogs-fa4f10f8.md)
 - [AzureActiveDirectorySignins](../content/-azureactivedirectorysignins-9b0194a4.md)
 - [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
 - [AzureOpenAIMonitoring](../content/-azureopenaimonitoring-c0670e3e.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [ConditionalAccessTrendsandChanges](../content/-conditionalaccesstrendsandchanges-31791e3c.md)
 - [CopilotforSecurityMonitoring](../content/-copilotforsecuritymonitoring-ca4c3a98.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
 - [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
@@ -153,9 +106,6 @@ This table is ingested by the following connectors:
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 - [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
@@ -169,7 +119,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

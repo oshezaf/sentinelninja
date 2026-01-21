@@ -1,6 +1,6 @@
 # SecurityBaseline
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for SecurityBaseline table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securitybaseline) |
 
-## Solutions (7)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -24,26 +24,18 @@ This table is used by the following solutions:
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ---
 
-## Content Items Using This Table (18)
+## Content Items Using This Table (9)
 
-### Workbooks (18)
+### Workbooks (9)
 
 **In solution [](../solutions/.md):**
 - [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
@@ -57,10 +49,6 @@ This table is used by the following solutions:
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
-
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
 - [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md)
@@ -80,7 +68,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="ContinuousDiagnostics&Mitigation Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -33,7 +33,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **34 table(s)** from its content items:
+This solution queries **28 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -49,14 +49,10 @@ This solution queries **34 table(s)** from its content items:
 | [`DeviceEvents`](../tables/deviceevents.md) | Workbooks |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | Workbooks |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) | Workbooks |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Workbooks |
-| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | Workbooks |
 | [`DnsEvents`](../tables/dnsevents.md) | Workbooks |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) | Workbooks |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | Workbooks |
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | Workbooks |
-| [`Improve`](../tables/improve.md) | Workbooks |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | Workbooks |
@@ -64,13 +60,11 @@ This solution queries **34 table(s)** from its content items:
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md) | Workbooks |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | Analytics, Hunting, Workbooks |
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) | Workbooks |
 | [`Syslog`](../tables/syslog.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
 | [`WindowsFirewall`](../tables/windowsfirewall.md) | Workbooks |
-| [`event`](../tables/event.md) | Workbooks |
 
 ### Internal Tables
 
@@ -109,7 +103,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationData`](../tables/configurationdata.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceLogonEvents`](../tables/devicelogonevents.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`DeviceRegistryEvents`](../tables/deviceregistryevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`Improve`](../tables/improve.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`event`](../tables/event.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationData`](../tables/configurationdata.md)<br>[`DeviceEvents`](../tables/deviceevents.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceLogonEvents`](../tables/devicelogonevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ## Additional Documentation
 
@@ -145,7 +139,7 @@ This Solution enables Compliance Teams, Architects, SecOps Analysts, and Consult
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

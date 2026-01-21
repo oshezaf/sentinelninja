@@ -4,7 +4,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Semperis%20Directory%20Services%20Protector/Workbooks/Images/Logo/Semperis.svg" alt="Semperis Directory Services Protector Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -39,14 +39,12 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **4 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Workbooks |
-| [`Operation`](../tables/operation.md) | - | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | [Semperis Directory Services Protector](../connectors/semperisdsp.md) | Analytics, Workbooks |
-| [`alert`](../tables/alert.md) | - | Workbooks |
 
 ## Content Items
 
@@ -76,8 +74,8 @@ This solution includes **15 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [SemperisDSPADChanges](../content/semperis-directory-services-protector-semperisdspadchanges-b1c49b5b.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [SemperisDSPNotifications](../content/semperis-directory-services-protector-semperisdspnotifications-fcd6b926.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`alert`](../tables/alert.md) |
-| [SemperisDSPQuickviewDashboard](../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`alert`](../tables/alert.md) |
+| [SemperisDSPNotifications](../content/semperis-directory-services-protector-semperisdspnotifications-fcd6b926.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
+| [SemperisDSPQuickviewDashboard](../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [SemperisDSPSecurityIndicators](../content/semperis-directory-services-protector-semperisdspsecurityindicators-a942a3d9.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [SemperisDSPWorkbook](../content/semperis-directory-services-protector-semperisdspworkbook-523d6926.md) ⚠️ | [`SecurityEvent`](../tables/securityevent.md) |
 | [workbooksMetadata](../content/semperis-directory-services-protector-workbooksmetadata-8e76a455.md) ⚠️ | - |
@@ -100,7 +98,7 @@ This solution includes **15 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -1,6 +1,6 @@
 # IdentityDirectoryEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,12 +17,11 @@ Events involving an on-premises domain controller running Active Directory (AD).
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identitydirectoryevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identitydirectoryevents-table) |
 
-## Solutions (4)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Standalone Content](../solutions/standalone-content.md)
 
@@ -34,7 +33,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (19)
+## Content Items Using This Table (13)
 
 ### Hunting Queries (7)
 
@@ -51,31 +50,23 @@ This table is ingested by the following connectors:
 - [MDI_Group_Memebership_Changes](../content/standalone-content-mdi-group-memebership-changes-b66fb322-247a-4472-a231-2533b34ed059-9c3957c4.md)
 - [MDI_Objects_Moving_OUs](../content/standalone-content-mdi-objects-moving-ous-4a6fc14d-5f8e-49fe-8623-c20dd0d826a8-d5857b66.md)
 
-### Workbooks (12)
+### Workbooks (6)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 - [microsoftdefenderforidentity](../content/-microsoftdefenderforidentity-cf95fe77.md)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 - [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

@@ -1,6 +1,6 @@
 # AZFWApplicationRule
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,15 +16,13 @@ Reference for AZFWApplicationRule table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwapplicationrule) |
 
-## Solutions (5)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [Azure Firewall](../solutions/azure-firewall.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ## Connectors (1)
 
@@ -34,9 +32,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (19)
+## Content Items Using This Table (14)
 
-### Analytic Rules (8)
+### Analytic Rules (7)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 - [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md)
@@ -49,9 +47,6 @@ This table is ingested by the following connectors:
 - [Known Forest Blizzard group domains - July 2019](../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.md)
 - [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI map IP entity to AzureFirewall](../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.md)
-
 ### Hunting Queries (5)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
@@ -61,18 +56,10 @@ This table is ingested by the following connectors:
 - [Uncommon Port for Organization](../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.md)
 - [Uncommon Port to IP](../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.md)
 
-### Workbooks (6)
-
-**In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
+### Workbooks (2)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 - [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md)
-
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 - [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
@@ -93,7 +80,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

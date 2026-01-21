@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="CrowdStrike Falcon Endpoint Protection Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -99,7 +99,7 @@ This solution includes **10 content item(s)**:
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
 | [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md) | High | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | - | - |
 
 ### Workbooks
 
@@ -156,7 +156,7 @@ This solution includes **10 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

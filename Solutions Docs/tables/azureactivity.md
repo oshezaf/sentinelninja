@@ -1,6 +1,6 @@
 # AzureActivity
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for AzureActivity table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity) |
 
-## Solutions (20)
+## Solutions (18)
 
 This table is used by the following solutions:
 
@@ -31,13 +31,11 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
@@ -49,9 +47,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (84)
+## Content Items Using This Table (75)
 
-### Analytic Rules (25)
+### Analytic Rules (23)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
@@ -88,10 +86,6 @@ This table is ingested by the following connectors:
 - [TI Map IP Entity to AzureActivity](../content/threat-intelligence-ti-map-ip-entity-to-azureactivity-2441bce9-02e4-407b-8cc7-7d597f38b8b0-eefa9066.md)
 - [TI map Email entity to AzureActivity](../content/threat-intelligence-ti-map-email-entity-to-azureactivity-cca3b4d9-ac39-4109-8b93-65bb284003e6-d3038f92.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI Map IP Entity to AzureActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.md)
-- [TI map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.md)
-
 ### Hunting Queries (22)
 
 **In solution [](../solutions/.md):**
@@ -126,22 +120,17 @@ This table is ingested by the following connectors:
 - [Azure CloudShell Usage](../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.md)
 - [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md)
 
-### Workbooks (36)
+### Workbooks (29)
 
 **In solution [](../solutions/.md):**
 - [AzureActivity](../content/-azureactivity-a2d6e29f.md)
-- [AzureAuditActivityAndSignin](../content/-azureauditactivityandsignin-4b42b4fb.md)
 - [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [AzureServiceHealthWorkbook](../content/-azureservicehealthworkbook-cfad1e11.md)
 - [AzureThreatResearchMatrixWorkbook](../content/-azurethreatresearchmatrixworkbook-75e88442.md)
 - [CopilotforSecurityMonitoring](../content/-copilotforsecuritymonitoring-ca4c3a98.md)
 - [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
 - [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
 - [PlaybookHealth](../content/-playbookhealth-00abecf8.md)
 - [SensitiveOperationsinAzureActivityLogReview](../content/-sensitiveoperationsinazureactivitylogreview-7e17c6fd.md)
@@ -177,10 +166,6 @@ This table is ingested by the following connectors:
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
-
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 - [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)
@@ -336,7 +321,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

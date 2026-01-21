@@ -4,7 +4,7 @@
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -28,10 +28,8 @@ This connector ingests data into the following tables:
 
 | Table | Supports Transformations | Ingestion API Supported |
 |-------|:------------------------:|:-----------------------:|
-| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | — | — |
+| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | — | — |
 | [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | — | — |
-| [`USAGE`](../tables/usage.md) | — | — |
-| [`alert`](../tables/alert.md) | — | — |
 
 ## Permissions
 
@@ -125,7 +123,7 @@ Configure the agent to collect the logs.
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

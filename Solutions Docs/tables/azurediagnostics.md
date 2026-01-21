@@ -1,6 +1,6 @@
 # AzureDiagnostics
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -14,7 +14,7 @@ Reference for AzureDiagnostics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics) |
 
-## Solutions (36)
+## Solutions (35)
 
 This table is used by the following solutions:
 
@@ -49,7 +49,6 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -77,9 +76,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (109)
+## Content Items Using This Table (104)
 
-### Analytic Rules (42)
+### Analytic Rules (39)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Azure WAF matching for Log4j vuln(CVE-2021-44228)](../content/apache-log4j-vulnerability-detection-azure-waf-matching-for-log4j-vuln-cve-2021-44228-2de8abd6-a613-450e-95ed-08e503369fb3-2f37c37a.md)
@@ -135,11 +134,6 @@ This table is ingested by the following connectors:
 - [TI map IP entity to Azure Key Vault logs](../content/threat-intelligence-ti-map-ip-entity-to-azure-key-vault-logs-57c7e832-64eb-411f-8928-4133f01f4a25-7c3f7a41.md)
 - [TI map IP entity to AzureFirewall](../content/threat-intelligence-ti-map-ip-entity-to-azurefirewall-0b904747-1336-4363-8d84-df2710bfe5e7-30fad35b.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI Map IP Entity to Azure SQL Security Audit Events](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-sql-security-audit-events-239d987e-ee1b-4c49-b146-e88d682930a4-fb7a1cf3.md)
-- [TI map IP entity to Azure Key Vault logs](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-key-vault-logs-7c8051a7-3d29-4c0d-a340-893423f7b0a5-565bd210.md)
-- [TI map IP entity to AzureFirewall](../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.md)
-
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
 
@@ -184,7 +178,7 @@ This table is ingested by the following connectors:
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 - [Possible Webshell usage attempt related to SpringShell(CVE-2022-22965)](../content/web-shells-threat-protection-possible-webshell-usage-attempt-related-to-springshell-cve-2022-22965-6911d1df-4204-43b2-a64c-3cb102551ddd-8605b97e.md)
 
-### Workbooks (46)
+### Workbooks (44)
 
 **In solution [](../solutions/.md):**
 - [AksSecurity](../content/-akssecurity-f7a12d8d.md)
@@ -196,14 +190,12 @@ This table is ingested by the following connectors:
 - [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
 - [AzureOpenAIMonitoring](../content/-azureopenaimonitoring-c0670e3e.md)
 - [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
-- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
 - [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
 - [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
 - [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
 - [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [PlaybookHealth](../content/-playbookhealth-00abecf8.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [UserMap](../content/-usermap-2bfd459f.md)
 - [WebApplicationFirewallFirewallEvents](../content/-webapplicationfirewallfirewallevents-936d9b2e.md)
 - [WebApplicationFirewallGatewayAccessEvents](../content/-webapplicationfirewallgatewayaccessevents-e34d7fef.md)
@@ -285,7 +277,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

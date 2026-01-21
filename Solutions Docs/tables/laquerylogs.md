@@ -1,6 +1,6 @@
 # LAQueryLogs
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,18 +16,17 @@ Reference for LAQueryLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs) |
 
-## Solutions (4)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 
 ---
 
-## Content Items Using This Table (24)
+## Content Items Using This Table (19)
 
 ### Analytic Rules (1)
 
@@ -51,16 +50,12 @@ This table is used by the following solutions:
 - [User returning more data than daily average](../content/standalone-content-user-returning-more-data-than-daily-average-8699df3f-f89e-431f-9dea-056c4ce7014a-cb19a4e5.md)
 - [User running multiple queries that fail](../content/standalone-content-user-running-multiple-queries-that-fail-a2fca6ac-1155-4eec-934b-65aa62cdbb09-4fd90040.md)
 
-### Workbooks (12)
+### Workbooks (7)
 
 **In solution [](../solutions/.md):**
 - [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [LogAnalyticsQueryAnalysis](../content/-loganalyticsqueryanalysis-cdccc15a.md)
 - [LogSourcesAndAnalyticRulesCoverage](../content/-logsourcesandanalyticrulescoverage-a4ef56a6.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [WorkspaceAuditing](../content/-workspaceauditing-6e9c344b.md)
 - [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
@@ -70,9 +65,6 @@ This table is used by the following solutions:
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 ## Resource Types
 
 This table collects data from the following Azure resource types:
@@ -81,7 +73,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

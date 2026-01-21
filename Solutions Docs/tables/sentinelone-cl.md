@@ -1,6 +1,6 @@
 # SentinelOne_CL
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -60,16 +60,15 @@ This table is ingested by the following connectors:
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 - [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
-## Parsers Using This Table (10)
+## Parsers Using This Table (9)
 
-### ASIM Parsers (8)
+### ASIM Parsers (7)
 
 | Parser | Schema | Product |
 |:-------|:-------|:--------|
 | [ASimAlertEventSentinelOneSingularity](../asim/asimalerteventsentinelonesingularity.md) | AlertEvent |  |
 | [ASimAuthenticationSentinelOne](../asim/asimauthenticationsentinelone.md) | Authentication |  |
 | [ASimDnsSentinelOne](../asim/asimdnssentinelone.md) | Dns |  |
-| [ASimFileEventSentinelOne](../asim/asimfileeventsentinelone.md) | FileEvent |  |
 | [ASimNetworkSessionSentinelOne](../asim/asimnetworksessionsentinelone.md) | NetworkSession |  |
 | [ASimProcessCreateSentinelOne](../asim/asimprocesscreatesentinelone.md) | ProcessEvent |  |
 | [ASimRegistryEventSentinelOne](../asim/asimregistryeventsentinelone.md) | RegistryEvent |  |
@@ -86,7 +85,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

@@ -2,39 +2,13 @@
 
 Content items are the security artifacts that provide value from the data collected by Microsoft Sentinel. They include analytics rules for detecting threats, hunting queries for proactive investigation, playbooks for automated response and remediation, workbooks for interactive dashboards, and parsers for data normalization.
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · **Content** · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · **Content** · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ---
 
-## Statistics
-
-> **Source Legend:** 📦 Solution (published package) | 📄 Standalone (GitHub with metadata) | 🔗 GitHub Only (no metadata)
-
-### Content Items Summary
-
-| Metric | Total | 📦 Published | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
-|:-------|------:|-------------:|---------------:|--------------:|---------------:|
-| **Content Items** | **6,577** | 4,402 | 466 | 437 | 1,272 |
-
-### Content Items by Type
-
-| Type | Total | 📦 Published | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
-|:-----|------:|-------------:|---------------:|--------------:|---------------:|
-| Analytic Rules | 2,358 | 1,921 | 267 | 158 | 12 |
-| Hunting Queries | 2,285 | 1,112 | 56 | 84 | 1,033 |
-| Playbooks | 816 | 532 | 60 | 188 | 36 |
-| Workbooks | 532 | 296 | 51 | 0 | 185 |
-| Parsers* | 514 | 482 | 32 | 0 | 0 |
-| Watchlists | 47 | 41 | 0 | 0 | 6 |
-| Summary Rules | 25 | 18 | 0 | 7 | 0 |
-
-*\* Parsers from solution content. See [Parsers](../parsers/parsers-index.md) section for all parsers including legacy.*
+**6,577 content items** across all Microsoft Sentinel solutions. See [📊 Statistics](../statistics.md) for detailed breakdowns by type and source.
 
 ---
-
-## Content Index
-
-This index provides access to **6,577 content items** across all Microsoft Sentinel solutions.
 
 Content is organized by type. Click on a content type below to browse all items of that type.
 
@@ -44,11 +18,13 @@ Content is organized by type. Click on a content type below to browse all items 
 | [Hunting Queries](hunting-queries.md) | 2285 | Proactive threat hunting queries. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting) |
 | [Playbooks](playbooks.md) | 816 | Automated response and remediation workflows. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks) |
 | [Workbooks](workbooks.md) | 532 | Interactive dashboards and reports. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data) |
-| [Parsers](parsers.md) | 514 | Data normalization and transformation functions. [Learn more](https://learn.microsoft.com/azure/sentinel/normalization) |
+| [Parsers](../parsers/parsers-index.md) | 514* | Data normalization and transformation functions. [Learn more](https://learn.microsoft.com/azure/sentinel/normalization) |
 | [Watchlists](watchlists.md) | 47 | Reference data lists for enrichment and filtering. [Learn more](https://learn.microsoft.com/azure/sentinel/watchlists) |
 | [Summary Rules](summary-rules.md) | 25 | Rules for aggregating and summarizing data. [Learn more](https://learn.microsoft.com/azure/sentinel/summary-rules) |
 
+\* *Parser count shows solution parsers only. The [Parsers Index](../parsers/parsers-index.md) includes additional legacy and discovered parsers.*
+
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · **Content** · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · **Content** · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 

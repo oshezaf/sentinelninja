@@ -1,6 +1,6 @@
 # DeviceFileEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,7 +17,7 @@ File creation, modification, and other file system events
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table) |
 
-## Solutions (17)
+## Solutions (15)
 
 This table is used by the following solutions:
 
@@ -28,11 +28,9 @@ This table is used by the following solutions:
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
-- [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -47,9 +45,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (132)
+## Content Items Using This Table (121)
 
-### Analytic Rules (21)
+### Analytic Rules (20)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 - [ASR Bypassing Writing Executable Content](../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.md)
@@ -69,7 +67,6 @@ This table is ingested by the following connectors:
 **In solution [Standalone Content](../solutions/standalone-content.md):**
 - [Azure VM Run Command operations executing a unique PowerShell script](../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.md)
 - [Dev-0530 File Extension Rename](../content/standalone-content-dev-0530-file-extension-rename-d82eb796-d1eb-43c8-a813-325ce3417cef-f293cb3e.md)
-- [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md)
 - [Mass Download & copy to USB device by single user](../content/standalone-content-mass-download-&-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.md)
 - [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md)
 - [PE file dropped in Color Profile Folder](../content/standalone-content-pe-file-dropped-in-color-profile-folder-f68a5046-b7eb-4f69-9519-1e99708bb9e0-99c9d950.md)
@@ -88,14 +85,13 @@ This table is ingested by the following connectors:
 - [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
 - [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
 
-### Hunting Queries (92)
+### Hunting Queries (90)
 
 **In solution [](../solutions/.md):**
 - [AV Detections with Source](../content/-av-detections-with-source-52c9e90b-84f4-4e2d-ae3d-eef85e8aa069-8a23349f.md)
 - [Abuse.ch Recent Threat Feed](../content/-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f76c5da5.md)
 - [Abuse.ch Recent Threat Feed (1)](../content/-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d7f2c638.md)
 - [Abusing settingcontent-ms](../content/-abusing-settingcontent-ms-07a17371-bea3-41e5-91d1-99728cd44955-9bb4ba71.md)
-- [Accessibility Features](../content/-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-089f8ddf.md)
 - [AcroRd-Exploits](../content/-acrord-exploits-c87df1a7-fa54-4730-bc90-cbc1f8ac01aa-5bf9fcec.md)
 - [Azure VM Run Command linked with MDE](../content/-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-90306b65.md)
 - [Baseline Comparison](../content/-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-7679c313.md)
@@ -158,7 +154,6 @@ This table is ingested by the following connectors:
 - [python-use-by-ransomware-macos](../content/-python-use-by-ransomware-macos-8d52dce6-6143-44e9-8ff5-a62f2df742b2-1bd4bd76.md)
 - [qakbot-campaign-outlook](../content/-qakbot-campaign-outlook-221ba640-3727-4b48-b30c-f5bb7398be7b-80e39601.md)
 - [ransom-note-creation-macos](../content/-ransom-note-creation-macos-fbe63fdf-142f-4b0a-b73e-8f16aaf46be7-fa12d68d.md)
-- [rare_sch_task_with_activity](../content/-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-4e918578.md)
 - [regsvr32-rundll32-abnormal-image-loads](../content/-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-8b10935a.md)
 - [remote-file-creation-with-psexec](../content/-remote-file-creation-with-psexec-8b1d8f83-08f3-44fb-8328-1229521f109c-7a92202e.md)
 - [reverse-shell-ransomware-macos](../content/-reverse-shell-ransomware-macos-936d985d-f44c-4ec7-81ae-7aa1995f940d-16322802.md)
@@ -192,19 +187,13 @@ This table is ingested by the following connectors:
 - [Possible webshell drop](../content/web-shells-threat-protection-possible-webshell-drop-8f2a256f-c9f1-4f0a-941a-a5a131d4bf3b-5ddc946f.md)
 - [UMWorkerProcess Creating Webshell](../content/web-shells-threat-protection-umworkerprocess-creating-webshell-60d15bd4-1fad-4a70-bc3b-094dc1c5e554-5e3339db.md)
 
-### Workbooks (19)
+### Workbooks (11)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
 - [MicrosoftDefenderForEndPoint](../content/-microsoftdefenderforendpoint-f98fcc1e.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 - [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
@@ -221,17 +210,11 @@ This table is ingested by the following connectors:
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 - [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
-
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
-
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 ## Parsers Using This Table (1)
 
@@ -243,7 +226,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

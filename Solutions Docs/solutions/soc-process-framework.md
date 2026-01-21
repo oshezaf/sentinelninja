@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SOC-Process-Framework Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -31,11 +31,10 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **1 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`Update`](../tables/update.md) | Workbooks |
 | [`Usage`](../tables/usage.md) | Workbooks |
 
 ### Internal Tables
@@ -65,7 +64,7 @@ This solution includes **20 content item(s)**:
 | [Building_a_SOCPartTimeStaff](../content/soc-process-framework-building-a-socparttimestaff-8ef82164.md) | - |
 | [Building_a_SOCSmallStaff](../content/soc-process-framework-building-a-socsmallstaff-4a5be90f.md) | - |
 | [SOCIRPlanning](../content/soc-process-framework-socirplanning-18961eff.md) | - |
-| [SOCProcessFramework](../content/soc-process-framework-socprocessframework-5c770df0.md) | [`Update`](../tables/update.md)<br>[`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [SOCProcessFramework](../content/soc-process-framework-socprocessframework-5c770df0.md) | [`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [UpdateSOCMaturityScore](../content/soc-process-framework-updatesocmaturityscore-d96c410d.md) | - |
 
 ### Playbooks
@@ -166,7 +165,7 @@ This playbook uses a managed identity, which must have the Microsoft Sentinel Re
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

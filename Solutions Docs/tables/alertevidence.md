@@ -1,6 +1,6 @@
 # AlertEvidence
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,7 +17,7 @@ Files, IP addresses, URLs, users, or devices associated with alerts
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table) |
 
-## Solutions (8)
+## Solutions (7)
 
 This table is used by the following solutions:
 
@@ -25,7 +25,6 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Vectra XDR](../solutions/vectra-xdr.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -38,7 +37,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (27)
+## Content Items Using This Table (20)
 
 ### Analytic Rules (2)
 
@@ -48,10 +47,9 @@ This table is ingested by the following connectors:
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
 - [Defender Alert Evidence](../content/vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md)
 
-### Hunting Queries (12)
+### Hunting Queries (11)
 
 **In solution [](../solutions/.md):**
-- [Baseline Comparison](../content/-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-7679c313.md)
 - [Identify Microsoft Defender Antivirus detection related to EUROPIUM](../content/-identify-microsoft-defender-antivirus-detection-related-to-europium-d02275d6-45ba-4ddc-be90-8fa260aebe55-b6f95791.md)
 - [ImpersonatedUserFootprint](../content/-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-5ce685b6.md)
 - [KNOTWEED-AV Detections](../content/-knotweed-av-detections-24b0f252-08fd-4f70-b387-9015bea1b34c-75d308a9.md)
@@ -68,15 +66,10 @@ This table is ingested by the following connectors:
 **In solution [Standalone Content](../solutions/standalone-content.md):**
 - [MDE_Evidenceforasingledevice](../content/standalone-content-mde-evidenceforasingledevice-f173f87f-fa09-4258-8eaf-d95164318e7e-49f4057e.md)
 
-### Workbooks (13)
+### Workbooks (7)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
@@ -91,9 +84,6 @@ This table is ingested by the following connectors:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 - [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
 
@@ -107,7 +97,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

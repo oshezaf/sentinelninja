@@ -1,6 +1,6 @@
 # Anomalies
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,11 +16,10 @@ Reference for Anomalies table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/anomalies) |
 
-## Solutions (5)
+## Solutions (4)
 
 This table is used by the following solutions:
 
-- [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
@@ -28,7 +27,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (21)
+## Content Items Using This Table (16)
 
 ### Analytic Rules (3)
 
@@ -49,20 +48,13 @@ This table is used by the following solutions:
 - [UEBA Multi-Source Anomalous Activity Overview](../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.md)
 - [User-Centric Anomaly Investigation](../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.md)
 
-### Workbooks (12)
+### Workbooks (7)
 
 **In solution [](../solutions/.md):**
 - [AnomaliesVisualization](../content/-anomaliesvisualization-c9f045e6.md)
 - [AnomalyData](../content/-anomalydata-bd57b98e.md)
-- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
 - [DSTIMWorkbook](../content/-dstimworkbook-0a68e0ad.md)
-- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
 - [UserEntityBehaviorAnalytics](../content/-userentitybehavioranalytics-75272bde.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
-- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
-
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
 
 **In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
 - [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md)
@@ -73,7 +65,7 @@ This table is used by the following solutions:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

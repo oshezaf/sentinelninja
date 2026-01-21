@@ -1,6 +1,6 @@
 # DeviceEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,7 +17,7 @@ Multiple event types, including events triggered by security controls such as Mi
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceevents-table) |
 
-## Solutions (11)
+## Solutions (10)
 
 This table is used by the following solutions:
 
@@ -26,7 +26,6 @@ This table is used by the following solutions:
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
 - [FalconFriday](../solutions/falconfriday.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
-- [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
@@ -41,7 +40,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (116)
+## Content Items Using This Table (107)
 
 ### Analytic Rules (21)
 
@@ -80,7 +79,7 @@ This table is ingested by the following connectors:
 - [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
 - [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
 
-### Hunting Queries (76)
+### Hunting Queries (75)
 
 **In solution [](../solutions/.md):**
 - [ARS Ransomware Event triggered](../content/-ars-ransomware-event-triggered-ff9a1b12-e446-44ff-a576-7f53caa32044-50639232.md)
@@ -141,7 +140,6 @@ This table is ingested by the following connectors:
 - [insider-threat-detection-queries (19)](../content/-insider-threat-detection-queries-19-a358a812-0e1b-4cbb-a91c-0bb1dbd3ea13-3cdfce24.md)
 - [insider-threat-detection-queries (4)](../content/-insider-threat-detection-queries-4-1b6d19d5-c1f9-43b0-8db6-1c44c3c965b3-ced26abd.md)
 - [lsass-credential-dumping](../content/-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-e6476487.md)
-- [rare_sch_task_with_activity](../content/-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-4e918578.md)
 - [scheduled task creation](../content/-scheduled-task-creation-34208765-264e-4abe-805b-f645925fbadb-7f019163.md)
 - [snip3-detectsanboxie-function-call](../content/-snip3-detectsanboxie-function-call-32664c67-34d7-4c7a-88cd-c48b55b7ef91-ea21d75d.md)
 
@@ -168,21 +166,15 @@ This table is ingested by the following connectors:
 - [MDE_ShowUSBMountedandfilescopied](../content/standalone-content-mde-showusbmountedandfilescopied-ca4cf47f-6dfd-487a-a759-01d97120bfe2-66f21ec5.md)
 - [MDE_SmartScreenCheck](../content/standalone-content-mde-smartscreencheck-dde77b9b-799c-44c8-adfa-45007f312487-10770797.md)
 
-### Workbooks (19)
+### Workbooks (11)
 
 **In solution [](../solutions/.md):**
 - [AttackSurfaceReduction](../content/-attacksurfacereduction-a9f3af16.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
 - [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
 - [MicrosoftDefenderForEndPoint](../content/-microsoftdefenderforendpoint-f98fcc1e.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
@@ -191,19 +183,15 @@ This table is ingested by the following connectors:
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 - [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
-
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AttackSurfaceReduction](../content/soc-handbook-attacksurfacereduction-52743d4b.md)
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

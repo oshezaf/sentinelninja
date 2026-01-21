@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="Infoblox Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -42,7 +42,7 @@ This solution provides **5 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **26 table(s)**:
+This solution uses **22 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -50,12 +50,8 @@ This solution uses **26 table(s)**:
 | [`Failed_Range_To_Ingest_CL`](../tables/failed-range-to-ingest-cl.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | - |
 | [`Host_Name_Info_CL`](../tables/host-name-info-cl.md) | - | Workbooks |
 | [`IP_Space_Info_CL`](../tables/ip-space-info-cl.md) | - | Workbooks |
-| [`Infoblox_Config_Insight_Details_CL`](../tables/infoblox-config-insight-details-cl.md) | - | Workbooks |
-| [`Infoblox_Config_Insights_CL`](../tables/infoblox-config-insights-cl.md) | - | Workbooks |
 | [`Infoblox_Failed_Indicators_CL`](../tables/infoblox-failed-indicators-cl.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | - |
 | [`Service_Name_Info_CL`](../tables/service-name-info-cl.md) | - | Workbooks |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Workbooks |
-| [`UPDATE`](../tables/update.md) | - | Workbooks |
 | [`dossier_atp_CL`](../tables/dossier-atp-cl.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
 | [`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
 | [`dossier_dns_CL`](../tables/dossier-dns-cl.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
@@ -80,7 +76,7 @@ The following **8 table(s)** are used internally by this solution's content item
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | - | Playbooks (writes) |
 | [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | - | Playbooks (writes), Workbooks |
 | [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | - | Playbooks (writes), Workbooks |
 | [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Analytics, Playbooks (writes), Workbooks |
@@ -111,7 +107,7 @@ This solution includes **27 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook-5d6a67bf.md) | [`dossier_atp_CL`](../tables/dossier-atp-cl.md)<br>[`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md)<br>[`dossier_dns_CL`](../tables/dossier-dns-cl.md)<br>[`dossier_geo_CL`](../tables/dossier-geo-cl.md)<br>[`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md)<br>[`dossier_inforank_CL`](../tables/dossier-inforank-cl.md)<br>[`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md)<br>[`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md)<br>[`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md)<br>[`dossier_ptr_CL`](../tables/dossier-ptr-cl.md)<br>[`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md)<br>[`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md)<br>[`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md)<br>[`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md)<br>[`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md)<br>[`dossier_whois_CL`](../tables/dossier-whois-cl.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) |
-| [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Host_Name_Info_CL`](../tables/host-name-info-cl.md)<br>[`IP_Space_Info_CL`](../tables/ip-space-info-cl.md)<br>[`Infoblox_Config_Insight_Details_CL`](../tables/infoblox-config-insight-details-cl.md)<br>[`Infoblox_Config_Insights_CL`](../tables/infoblox-config-insights-cl.md)<br>[`Service_Name_Info_CL`](../tables/service-name-info-cl.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`UPDATE`](../tables/update.md)<br>*Internal use:*<br>[`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md)<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md)<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md)<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md)<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Host_Name_Info_CL`](../tables/host-name-info-cl.md)<br>[`IP_Space_Info_CL`](../tables/ip-space-info-cl.md)<br>[`Service_Name_Info_CL`](../tables/service-name-info-cl.md)<br>*Internal use:*<br>[`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md)<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md)<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md)<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
@@ -156,7 +152,7 @@ This solution includes **27 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

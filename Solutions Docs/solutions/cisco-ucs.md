@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="Cisco UCS Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -38,12 +38,10 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimSourceType`](../tables/asimsourcetype.md) | [[Deprecated] Cisco UCS](../connectors/ciscoucs.md) | - |
-| [`EVENT`](../tables/event.md) | [[Deprecated] Cisco UCS](../connectors/ciscoucs.md) | - |
 | [`Syslog`](../tables/syslog.md) | [[Deprecated] Cisco UCS](../connectors/ciscoucs.md) | - |
 
 ## Content Items
@@ -58,7 +56,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoUCS](../content/cisco-ucs-ciscoucs-363f8744-f75c-4500-be8d-92e4e5b0c1bf-ec56fe47.md) | - | [`ASimSourceType`](../tables/asimsourcetype.md) *(read)*<br>[`EVENT`](../tables/event.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)* |
+| [CiscoUCS](../content/cisco-ucs-ciscoucs-363f8744-f75c-4500-be8d-92e4e5b0c1bf-ec56fe47.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -70,7 +68,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

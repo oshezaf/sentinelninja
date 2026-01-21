@@ -1,16 +1,15 @@
 # Zoom_CL
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
 ---
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
-- [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 - [ZoomReports](../solutions/zoomreports.md)
 
 ## Connectors (1)
@@ -21,12 +20,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
-
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
-- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
+### Workbooks (1)
 
 **In solution [ZoomReports](../solutions/zoomreports.md):**
 - [ZoomReports](../content/zoomreports-zoomreports-c76868a1.md)
@@ -42,7 +38,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="Sophos XG Firewall Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -38,11 +38,10 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimSourceType`](../tables/asimsourcetype.md) | [[Deprecated] Sophos XG Firewall](../connectors/sophosxgfirewall.md) | Analytics, Workbooks |
 | [`Syslog`](../tables/syslog.md) | [[Deprecated] Sophos XG Firewall](../connectors/sophosxgfirewall.md) | Analytics, Workbooks |
 
 ## Content Items
@@ -59,20 +58,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Excessive Amount of Denied Connections from a Single Source](../content/sophos-xg-firewall-excessive-amount-of-denied-connections-from-a-single-source-3d645a88-2724-41a7-adea-db74c439cf79-2b4e4307.md) | Medium | Impact | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
-| [Port Scan Detected](../content/sophos-xg-firewall-port-scan-detected-427e4c9e-8cf4-4094-a684-a2d060dbca38-b0e76aa0.md) | Medium | Discovery | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
+| [Excessive Amount of Denied Connections from a Single Source](../content/sophos-xg-firewall-excessive-amount-of-denied-connections-from-a-single-source-3d645a88-2724-41a7-adea-db74c439cf79-2b4e4307.md) | Medium | Impact | [`Syslog`](../tables/syslog.md) |
+| [Port Scan Detected](../content/sophos-xg-firewall-port-scan-detected-427e4c9e-8cf4-4094-a684-a2d060dbca38-b0e76aa0.md) | Medium | Discovery | [`Syslog`](../tables/syslog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SophosXGFirewall](../content/sophos-xg-firewall-sophosxgfirewall-c77fae3a.md) | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
+| [SophosXGFirewall](../content/sophos-xg-firewall-sophosxgfirewall-c77fae3a.md) | [`Syslog`](../tables/syslog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SophosXGFirewall](../content/sophos-xg-firewall-sophosxgfirewall-8fa865c8-c62e-49f3-bc9a-6c6aeb8db133-b14d256a.md) | - | [`ASimSourceType`](../tables/asimsourcetype.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)* |
+| [SophosXGFirewall](../content/sophos-xg-firewall-sophosxgfirewall-8fa865c8-c62e-49f3-bc9a-6c6aeb8db133-b14d256a.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -84,7 +83,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

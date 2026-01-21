@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="Amazon Web Services Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -33,7 +33,7 @@ This solution provides **3 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -42,7 +42,6 @@ This solution uses **6 table(s)**:
 | [`AWSGuardDuty`](../tables/awsguardduty.md) | [Amazon Web Services S3](../connectors/awss3.md) | Analytics |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | [Amazon Web Services S3](../connectors/awss3.md) | - |
 | [`AWSWAF`](../tables/awswaf.md) | [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) | - |
-| [`Image`](../tables/image.md) | - | Workbooks |
 
 ## Content Items
 
@@ -166,7 +165,7 @@ This solution includes **100 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`Image`](../tables/image.md) |
+| [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 | [AmazonWebServicesUserActivities](../content/amazon-web-services-amazonwebservicesuseractivities-9c51ee6e.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md) |
 
 ## Release Notes
@@ -185,7 +184,7 @@ This solution includes **100 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

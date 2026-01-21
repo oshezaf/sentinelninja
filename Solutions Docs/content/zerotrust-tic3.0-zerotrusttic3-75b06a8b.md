@@ -1,6 +1,6 @@
 # ZeroTrustTIC3
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -46,16 +46,13 @@ This content item queries data from the following tables:
 - [`StorageTableLogs`](../tables/storagetablelogs.md)
 - [`Syslog`](../tables/syslog.md)
 - [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
-- [`Update`](../tables/update.md)
 - [`Usage`](../tables/usage.md)
 - [`VMConnection`](../tables/vmconnection.md)
 - [`WindowsFirewall`](../tables/windowsfirewall.md)
-- [`Zoom_CL`](../tables/zoom-cl.md)
-- [`update`](../tables/update.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 

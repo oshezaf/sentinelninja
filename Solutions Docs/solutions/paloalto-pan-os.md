@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/PaloAlto-PAN-OS/logo/Palo-alto-logo.png" alt="PaloAlto-PAN-OS Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -40,12 +40,11 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md), [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md) | Analytics, Hunting, Workbooks |
-| [`alert`](../tables/alert.md) | - | Workbooks |
 
 ## Content Items
 
@@ -80,7 +79,7 @@ This solution includes **16 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [PaloAltoNetworkThreat](../content/paloalto-pan-os-paloaltonetworkthreat-4d4c5438.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [PaloAltoOverview](../content/paloalto-pan-os-paloaltooverview-9f519554.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`alert`](../tables/alert.md) |
+| [PaloAltoOverview](../content/paloalto-pan-os-paloaltooverview-9f519554.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
 
 ### Playbooks
 
@@ -114,7 +113,7 @@ This solution includes **16 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

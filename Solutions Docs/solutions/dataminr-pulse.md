@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DataminrPulse.svg" alt="Dataminr Pulse Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -106,12 +106,11 @@ This solution uses **6 ASIM parser(s)** for normalized data:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) | [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | Analytics, Workbooks |
-| [`Impersonation`](../tables/impersonation.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -143,7 +142,7 @@ This solution includes **10 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimAuditEvent`](../asim/asimauditevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimDns`](../asim/asimdns.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimNetworkSession`](../asim/asimnetworksession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimProcessEvent`](../asim/asimprocessevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimWebSession`](../asim/asimwebsession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imFileEvent`](../asim/imfileevent.md)<br>[`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)<br>[`Impersonation`](../tables/impersonation.md)<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimAuditEvent`](../asim/asimauditevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimDns`](../asim/asimdns.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimNetworkSession`](../asim/asimnetworksession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimProcessEvent`](../asim/asimprocessevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimWebSession`](../asim/asimwebsession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imFileEvent`](../asim/imfileevent.md)<br>[`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) |
 
 ### Playbooks
 
@@ -181,7 +180,7 @@ This solution includes **10 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

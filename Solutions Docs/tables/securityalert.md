@@ -1,6 +1,6 @@
 # SecurityAlert
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -92,9 +92,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (175)
+## Content Items Using This Table (170)
 
-### Analytic Rules (56)
+### Analytic Rules (55)
 
 **In solution [](../solutions/.md):**
 - [Suspicious VM Instance Creation Activity Detected](../content/-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-f69ca2de.md)
@@ -178,7 +178,6 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 - [TI Map URL Entity to SecurityAlert Data](../content/threat-intelligence-new-ti-map-url-entity-to-securityalert-data-3b6bdb38-93c5-452f-ab3a-97a3d1320d16-46a3b027.md)
 - [TI map Domain entity to SecurityAlert](../content/threat-intelligence-new-ti-map-domain-entity-to-securityalert-df88b403-1cb9-49ea-a43d-b6613051cf7f-17792409.md)
-- [TI map Email entity to SecurityAlert](../content/threat-intelligence-new-ti-map-email-entity-to-securityalert-4b451ade-ed28-48e2-8fe7-60ae83ab2fa5-53e6c566.md)
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 - [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.md)
@@ -233,7 +232,7 @@ This table is ingested by the following connectors:
 - [Web shell command alert enrichment](../content/standalone-content-web-shell-command-alert-enrichment-d2e6f31b-add1-4f44-b54d-1975a5605c1d-5ffaf047.md)
 - [Web shell file alert enrichment](../content/standalone-content-web-shell-file-alert-enrichment-d0a3cb7b-375e-402d-9827-adafe0ce386d-3eb9e2e3.md)
 
-### Workbooks (71)
+### Workbooks (67)
 
 **In solution [](../solutions/.md):**
 - [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
@@ -248,7 +247,6 @@ This table is ingested by the following connectors:
 - [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
 - [IOT_Alerts](../content/-iot-alerts-702a6b4c.md)
 - [IntsightsIOCWorkbook](../content/-intsightsiocworkbook-d54a0825.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
 - [MITREAttack](../content/-mitreattack-c9238c4d.md)
 - [MicrosoftCloudAppSecurity](../content/-microsoftcloudappsecurity-862f6f68.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
@@ -260,7 +258,6 @@ This table is ingested by the following connectors:
 - [ThreatIntelligence](../content/-threatintelligence-b9c30149.md)
 - [UserEntityBehaviorAnalytics](../content/-userentitybehavioranalytics-75272bde.md)
 - [VisualizationDemo](../content/-visualizationdemo-dee8f13c.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 - [microsoftdefenderforidentity](../content/-microsoftdefenderforidentity-cf95fe77.md)
 
@@ -345,11 +342,9 @@ This table is ingested by the following connectors:
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 - [AnalyticsEfficiency](../content/soc-handbook-analyticsefficiency-ba1ee629.md)
 - [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md)
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts-8f5f1c6c.md)
 - [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md)
 - [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md)
 - [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md)
 
@@ -389,7 +384,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

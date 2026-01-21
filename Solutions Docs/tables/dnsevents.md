@@ -1,6 +1,6 @@
 # DnsEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for DnsEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsevents) |
 
-## Solutions (16)
+## Solutions (15)
 
 This table is used by the following solutions:
 
@@ -31,7 +31,6 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
 - [Windows Server DNS](../solutions/windows-server-dns.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -45,9 +44,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (48)
+## Content Items Using This Table (39)
 
-### Analytic Rules (16)
+### Analytic Rules (14)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
@@ -65,10 +64,6 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map IP Entity to DnsEvents](../content/threat-intelligence-ti-map-ip-entity-to-dnsevents-69b7723c-2889-469f-8b55-a2d355ed9c87-bb4a4c77.md)
 - [TI map Domain entity to DnsEvents](../content/threat-intelligence-ti-map-domain-entity-to-dnsevents-85aca4d1-5d15-4001-abd9-acb86ca1786a-1658942e.md)
-
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI Map IP Entity to DnsEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-dnsevents-6418fd33-92f2-407b-bd61-91c0d4bbcb8a-5cae9331.md)
-- [TI map Domain entity to DnsEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-dnsevents-03a8e294-3fc7-4d65-9da2-cff91fb5b6dc-1b58bbc8.md)
 
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
 - [Threat Connect TI map Domain entity to DnsEvents](../content/threatconnect-threat-connect-ti-map-domain-entity-to-dnsevents-f8960f1c-07d2-512b-9c41-952772d40c84-e3919e52.md)
@@ -101,17 +96,12 @@ This table is ingested by the following connectors:
 - [Potential DGA detected](../content/windows-server-dns-potential-dga-detected-543e1ec6-ee5e-4368-aaa6-405f0551ba5c-d483d155.md)
 - [Solorigate DNS Pattern](../content/windows-server-dns-solorigate-dns-pattern-0fb54a5c-5599-4ff9-80a2-f788c3ed285e-42e0ed66.md)
 
-### Workbooks (22)
+### Workbooks (15)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [Dns](../content/-dns-78eee55f.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [SecurityStatus](../content/-securitystatus-183600b3.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
 - [UserMap](../content/-usermap-2bfd459f.md)
@@ -130,8 +120,6 @@ This table is ingested by the following connectors:
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
@@ -162,7 +150,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

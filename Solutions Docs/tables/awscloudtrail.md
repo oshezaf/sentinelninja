@@ -1,6 +1,6 @@
 # AWSCloudTrail
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail) |
 
-## Solutions (15)
+## Solutions (13)
 
 This table is used by the following solutions:
 
@@ -29,11 +29,9 @@ This table is used by the following solutions:
 - [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (2)
@@ -45,9 +43,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (138)
+## Content Items Using This Table (129)
 
-### Analytic Rules (76)
+### Analytic Rules (75)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 - [AWS Config Service Resource Deletion Attempts](../content/amazon-web-services-aws-config-service-resource-deletion-attempts-093fe75e-44f1-4d3e-94dc-6d258a6dd2d2-c24c7483.md)
@@ -140,9 +138,6 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-ti-map-ip-entity-to-awscloudtrail-f110287e-1358-490d-8147-ed804b328514-010bee9c.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md)
-
 ### Hunting Queries (38)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
@@ -189,22 +184,16 @@ This table is ingested by the following connectors:
 **In solution [Standalone Content](../solutions/standalone-content.md):**
 - [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md)
 
-### Workbooks (24)
+### Workbooks (16)
 
 **In solution [](../solutions/.md):**
 - [AWSS3](../content/-awss3-8a6199f4.md)
 - [AmazonWebServicesNetworkActivities](../content/-amazonwebservicesnetworkactivities-0863102c.md)
 - [AmazonWebServicesUserActivities](../content/-amazonwebservicesuseractivities-7672d3c7.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
 - [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
 - [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
@@ -223,10 +212,6 @@ This table is ingested by the following connectors:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
-
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 - [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
@@ -243,7 +228,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

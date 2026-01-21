@@ -1,6 +1,6 @@
 # AuditLogs
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for AuditLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/auditlogs) |
 
-## Solutions (20)
+## Solutions (19)
 
 This table is used by the following solutions:
 
@@ -32,7 +32,6 @@ This table is used by the following solutions:
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Standalone Content](../solutions/standalone-content.md)
@@ -49,7 +48,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (156)
+## Content Items Using This Table (146)
 
 ### Analytic Rules (89)
 
@@ -207,26 +206,18 @@ This table is ingested by the following connectors:
 - [Anomalous Entra High-Privilege Role Modification](../content/ueba-essentials-anomalous-entra-high-privilege-role-modification-8741deeb-332e-4061-8873-5086040920e3-adf63a52.md)
 - [Anomalous High-Privileged Role Assignment](../content/ueba-essentials-anomalous-high-privileged-role-assignment-5aa5083c-1de6-42bb-a128-2ec2aba1de39-89a0f496.md)
 
-### Workbooks (32)
+### Workbooks (22)
 
 **In solution [](../solutions/.md):**
 - [AzureActiveDirectoryAuditLogs](../content/-azureactivedirectoryauditlogs-2bd3d362.md)
-- [AzureAuditActivityAndSignin](../content/-azureauditactivityandsignin-4b42b4fb.md)
 - [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [AzureThreatResearchMatrixWorkbook](../content/-azurethreatresearchmatrixworkbook-75e88442.md)
 - [ConditionalAccessTrendsandChanges](../content/-conditionalaccesstrendsandchanges-31791e3c.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
 - [User_Analytics_Workbook](../content/-user-analytics-workbook-4d50c893.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
@@ -257,10 +248,6 @@ This table is ingested by the following connectors:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
-
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 - [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)
 
@@ -276,7 +263,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

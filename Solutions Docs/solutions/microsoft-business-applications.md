@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="Microsoft Business Applications Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -49,7 +49,7 @@ This solution uses **1 ASIM parser(s)** for normalized data:
 
 ## Tables Used
 
-This solution uses **14 table(s)**:
+This solution uses **13 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -65,7 +65,6 @@ This solution uses **14 table(s)**:
 | [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | - | Analytics, Hunting |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
-| [`Update`](../tables/update.md) | - | Analytics |
 | [`UrlClickEvents`](../tables/urlclickevents.md) | - | Analytics |
 
 ### Internal Tables
@@ -101,7 +100,7 @@ This solution includes **72 content item(s)**:
 | [Dataverse - Executable uploaded to SharePoint document management site](../content/microsoft-business-applications-dataverse-executable-uploaded-to-sharepoint-document-management-site-ba5e608f-7879-4927-8b0d-a9948b4fe6f3-a46cc5a8.md) | Low | Execution, Persistence | [`OfficeActivity`](../tables/officeactivity.md) |
 | [Dataverse - Export activity from terminated or notified employee](../content/microsoft-business-applications-dataverse-export-activity-from-terminated-or-notified-employee-0881b209-62c9-4b15-9f9a-e0c1d1b1eb7b-d925cc5f.md) | Medium | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Guest user exfiltration following Power Platform defense impairment](../content/microsoft-business-applications-dataverse-guest-user-exfiltration-following-power-platform-defense-impai-39efbf4b-b347-4cc7-895e-99a868bf29ea-f29caf4d.md) | High | DefenseEvasion, Exfiltration | [`AuditLogs`](../tables/auditlogs.md)<br>[`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [Dataverse - Hierarchy security manipulation](../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.md) | Medium | PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`Update`](../tables/update.md) |
+| [Dataverse - Hierarchy security manipulation](../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.md) | Medium | PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Honeypot instance activity](../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.md) | Medium | Discovery, Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Login by a sensitive privileged user](../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.md) | High | InitialAccess, CredentialAccess, PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Login from IP in the block list](../content/microsoft-business-applications-dataverse-login-from-ip-in-the-block-list-666fef96-1bb8-4abf-ad72-e5cb49561381-2bf699c4.md) | High | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md) |
@@ -112,7 +111,7 @@ This solution includes **72 content item(s)**:
 | [Dataverse - Mass export of records to Excel](../content/microsoft-business-applications-dataverse-mass-export-of-records-to-excel-57000f0d-ff5d-4166-94b6-aa5fb62b16ec-17a490af.md) | Low | Exfiltration | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - Mass record updates](../content/microsoft-business-applications-dataverse-mass-record-updates-df577f0f-1d8a-4420-9057-a07f0edb15c8-7ce89bac.md) | Medium | Impact | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - New Dataverse application user activity type](../content/microsoft-business-applications-dataverse-new-dataverse-application-user-activity-type-5c768e7d-7e5e-4d57-80d4-3f50c96fbf70-4573a9e7.md) | Medium | CredentialAccess, Execution, PrivilegeEscalation | [`DataverseActivity`](../tables/dataverseactivity.md) |
-| [Dataverse - New non-interactive identity granted access](../content/microsoft-business-applications-dataverse-new-non-interactive-identity-granted-access-682e230c-e5da-4085-8666-701d1f1be7de-981cd709.md) | Informational | Persistence, LateralMovement, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md)<br>[`DataverseActivity`](../tables/dataverseactivity.md)<br>[`Update`](../tables/update.md) |
+| [Dataverse - New non-interactive identity granted access](../content/microsoft-business-applications-dataverse-new-non-interactive-identity-granted-access-682e230c-e5da-4085-8666-701d1f1be7de-981cd709.md) | Informational | Persistence, LateralMovement, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md)<br>[`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - New sign-in from an unauthorized domain](../content/microsoft-business-applications-dataverse-new-sign-in-from-an-unauthorized-domain-4c1c9aee-8e44-4bb9-bd53-f3e7d6761282-361ae9c5.md) | Medium | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - New user agent type that was not used before](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-before-34a5d79b-8f9a-420c-aa64-7f4d262ac29a-99e2d75d.md) | Low | InitialAccess, DefenseEvasion | [`DataverseActivity`](../tables/dataverseactivity.md) |
 | [Dataverse - New user agent type that was not used with Office 365](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-with-office-365-094b3c0a-1f63-42f7-9535-c8c7b7198328-ba0f47d1.md) | Low | InitialAccess | [`DataverseActivity`](../tables/dataverseactivity.md)<br>[`OfficeActivity`](../tables/officeactivity.md) |
@@ -203,7 +202,7 @@ This solution includes **72 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Forcepoint NGFW Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -41,11 +41,10 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **5 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Alert`](../tables/alert.md) | - | Workbooks |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Forcepoint NGFW via AMA](../connectors/forcepointngfwama.md), [[Deprecated] Forcepoint NGFW via Legacy Agent](../connectors/forcepointngfw.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | - | Workbooks |
 | [`Perf`](../tables/perf.md) | - | Workbooks |
@@ -64,7 +63,7 @@ This solution includes **2 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [ForcepointNGFW](../content/forcepoint-ngfw-forcepointngfw-6b671d61.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md) | [`Alert`](../tables/alert.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`Perf`](../tables/perf.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
+| [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md) | [`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`Perf`](../tables/perf.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |
 
 ## Release Notes
 
@@ -76,7 +75,7 @@ This solution includes **2 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

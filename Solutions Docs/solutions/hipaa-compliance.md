@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="HIPAA Compliance Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -31,7 +31,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **10 table(s)** from its content items:
+This solution queries **9 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -41,7 +41,6 @@ This solution queries **10 table(s)** from its content items:
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Workbooks |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
-| [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md) | Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`Syslog`](../tables/syslog.md) | Workbooks |
@@ -69,7 +68,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md)<br>[`watchlist`](../tables/watchlist.md) |
+| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md)<br>[`watchlist`](../tables/watchlist.md) |
 
 ## Release Notes
 
@@ -79,7 +78,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

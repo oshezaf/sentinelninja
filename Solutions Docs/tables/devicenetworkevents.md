@@ -1,6 +1,6 @@
 # DeviceNetworkEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,12 +17,11 @@ Network connection and related events
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicenetworkevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicenetworkevents-table) |
 
-## Solutions (16)
+## Solutions (14)
 
 This table is used by the following solutions:
 
 - [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
-- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [Cyware](../solutions/cyware.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
@@ -31,7 +30,6 @@ This table is used by the following solutions:
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
@@ -46,9 +44,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (172)
+## Content Items Using This Table (159)
 
-### Analytic Rules (20)
+### Analytic Rules (19)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
@@ -65,7 +63,6 @@ This table is ingested by the following connectors:
 - [SUNBURST network beacons](../content/microsoft-defender-xdr-sunburst-network-beacons-ce1e7025-866c-41f3-9b08-ec170e05e73e-b0c0854f.md)
 
 **In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md)
 - [IP address of Windows host encoded in web request](../content/standalone-content-ip-address-of-windows-host-encoded-in-web-request-a4ce20ae-a2e4-4d50-b40d-d49f1353b6cc-f6bf2fcd.md)
 - [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md)
 - [Star Blizzard C2 Domains August 2022](../content/standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md)
@@ -84,7 +81,7 @@ This table is ingested by the following connectors:
 - [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
 - [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
 
-### Hunting Queries (134)
+### Hunting Queries (130)
 
 **In solution [](../solutions/.md):**
 - [Baseline Comparison](../content/-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-7679c313.md)
@@ -105,7 +102,6 @@ This table is ingested by the following connectors:
 - [Excel file download domain pattern](../content/-excel-file-download-domain-pattern-1dd47f50-d42d-4e2f-9c2b-6e6c22147916-c139e62f.md)
 - [File Copy and Execution](../content/-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-1160ec11.md)
 - [File footprint (1)](../content/-file-footprint-1-1f80f1cf-97e1-4fb8-ad5a-e573fac7b9e3-568790ce.md)
-- [Firewall Policy Design Assistant](../content/-firewall-policy-design-assistant-7323d9ca-ebf9-42da-a57b-015969fbd660-c6711f4d.md)
 - [Flash-CVE-2018-4848](../content/-flash-cve-2018-4848-8e32bc35-72e6-4bc9-b3bb-2ee346c8acf0-8cd54ecf.md)
 - [KNOTWEED-Domain IOCs](../content/-knotweed-domain-iocs-db6fe14a-cbe9-4d01-bbef-60b0f1a6624b-cbe4c953.md)
 - [KNOTWEED-Downloading new file using Curl](../content/-knotweed-downloading-new-file-using-curl-fac7874e-00de-4509-85f2-9aa02ea9887f-61e0f676.md)
@@ -181,14 +177,12 @@ This table is ingested by the following connectors:
 - [SolarWinds -CVE-2021-35211](../content/-solarwinds-cve-2021-35211-ff01fb94-9b27-48b9-a304-2e86108b5ca4-9e1655a3.md)
 - [Star Blizzard-Domain IOCs](../content/-star-blizzard-domain-iocs-4b14590a-a1f0-4756-9f3d-baafa696e051-29de402f.md)
 - [Tor](../content/-tor-a0b19966-3b4d-45de-969c-ee5f1ef8c18a-6767c321.md)
-- [URL Detection](../content/-url-detection-be220c78-843b-43c5-b638-dc9d10100c75-800447c8.md)
 - [c2-bluekeep](../content/-c2-bluekeep-6b2d0b6e-ec4a-4d71-b1cc-dbc470d2b99e-239b16ec.md)
 - [check-for-shadowhammer-activity-download-domain](../content/-check-for-shadowhammer-activity-download-domain-1217e1fd-ebbb-4fdc-8b18-81be69876b3a-d9c2c5df.md)
 - [check-for-shadowhammer-activity-implant](../content/-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-29a3e39e.md)
 - [cve-2019-0808-c2](../content/-cve-2019-0808-c2-0be1295f-b417-477b-95d1-82ce7c43fa03-cc035e0d.md)
 - [detect-bluekeep-exploitation-attempts](../content/-detect-bluekeep-exploitation-attempts-e380a30d-03ff-4d20-b2d5-d0683033d813-c7c3e3a3.md)
 - [detect-cyzfc-activity (1)](../content/-detect-cyzfc-activity-1-c28b23e0-0d6d-45a1-ab81-8268fdff0272-d16feec5.md)
-- [detect-exfiltration-after-termination](../content/-detect-exfiltration-after-termination-69ceaac7-5ea1-4a09-a8ce-b240210b8d2f-4a89f697.md)
 - [detect-impacket-dcomexec](../content/-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-f5eb4d81.md)
 - [detect-impacket-wmiexec](../content/-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-53c6c7a7.md)
 - [detect-impacket-wmiexec](../content/-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-0cb919ef.md)
@@ -202,7 +196,6 @@ This table is ingested by the following connectors:
 - [insider-threat-detection-queries (9)](../content/-insider-threat-detection-queries-9-b2ac5ab0-52b0-4be5-9f3f-9d19b80bcc9e-d7c035d2.md)
 - [oceanlotus-apt32-network](../content/-oceanlotus-apt32-network-8e2c33f5-0c00-4246-b10b-9fb43da56365-d791c1bb.md)
 - [printnightmare-cve-2021-1675 usage detection (1)](../content/-printnightmare-cve-2021-1675-usage-detection-1-ec1e131a-79cb-4f5c-b5e6-3edc5574ac68-c69523cf.md)
-- [rare_sch_task_with_activity](../content/-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-4e918578.md)
 - [recon-with-rundll](../content/-recon-with-rundll-c720f607-7f7b-41c8-bed9-2d9a240d965c-f1a7588a.md)
 - [regsvr32-rundll32-image-loads-abnormal-extension](../content/-regsvr32-rundll32-image-loads-abnormal-extension-f24f6403-cba0-4f3c-9f88-28782b9ea39a-cd0832da.md)
 - [regsvr32-rundll32-with-anomalous-parent-process](../content/-regsvr32-rundll32-with-anomalous-parent-process-bef2bd1b-885a-40f4-b48f-6f5564cd81f3-8effdc09.md)
@@ -232,22 +225,13 @@ This table is ingested by the following connectors:
 - [MDE_Networktrafficgoingtoport-DNS](../content/standalone-content-mde-networktrafficgoingtoport-dns-f678ea38-4b93-4816-a33d-0518164fe01f-0b14dab3.md)
 - [MDE_SmartScreenCheck](../content/standalone-content-mde-smartscreencheck-dde77b9b-799c-44c8-adfa-45007f312487-10770797.md)
 
-### Workbooks (18)
+### Workbooks (10)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
 - [MicrosoftDefenderForEndPoint](../content/-microsoftdefenderforendpoint-f98fcc1e.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
-
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
-- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 - [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md)
@@ -264,9 +248,6 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 - [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
@@ -280,7 +261,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

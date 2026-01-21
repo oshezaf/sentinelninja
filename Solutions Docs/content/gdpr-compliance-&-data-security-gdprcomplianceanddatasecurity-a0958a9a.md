@@ -1,6 +1,6 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> GDPRComplianceAndDataSecurity
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -32,19 +32,16 @@ This content item queries data from the following tables:
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`Operation`](../tables/operation.md)
 - [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)
-- [`SQLSecurityAuditEvents`](../tables/sqlsecurityauditevents.md)
 - [`SecurityAlert`](../tables/securityalert.md)
 - [`SecurityEvent`](../tables/securityevent.md)
 - [`SecurityIncident`](../tables/securityincident.md)
 - [`SigninLogs`](../tables/signinlogs.md)
 - [`Syslog`](../tables/syslog.md)
-- [`Update`](../tables/update.md)
-- [`alert`](../tables/alert.md)
 - [`anomalies`](../tables/anomalies.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 

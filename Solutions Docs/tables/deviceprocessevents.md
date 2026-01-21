@@ -1,6 +1,6 @@
 # DeviceProcessEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,12 +17,11 @@ Process creation and related events
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table) |
 
-## Solutions (15)
+## Solutions (13)
 
 This table is used by the following solutions:
 
 - [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md)
-- [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [Cyware](../solutions/cyware.md)
 - [Dev 0270 Detection and Hunting](../solutions/dev-0270-detection-and-hunting.md)
 - [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md)
@@ -33,7 +32,6 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
@@ -45,16 +43,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (370)
+## Content Items Using This Table (358)
 
-### Analytic Rules (48)
+### Analytic Rules (47)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 - [Probable AdFind Recon Tool Usage](../content/attacker-tools-threat-protection-essentials-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd-3713de66.md)
 
 **In solution [Dev 0270 Detection and Hunting](../solutions/dev-0270-detection-and-hunting.md):**
 - [DEV-0270 New User Creation](../content/dev-0270-detection-and-hunting-dev-0270-new-user-creation-7965f0be-c039-4d18-8ee8-9a6add8aecf3-884bf05d.md)
-- [Dev-0270 Malicious Powershell usage](../content/dev-0270-detection-and-hunting-dev-0270-malicious-powershell-usage-422ca2bf-598b-4872-82bb-5f7e8fa731e7-02bc41bc.md)
 - [Dev-0270 Registry IOC - September 2022](../content/dev-0270-detection-and-hunting-dev-0270-registry-ioc-september-2022-2566e99f-ad0f-472a-b9ac-d3899c9283e6-d97be37a.md)
 - [Dev-0270 WMIC  Discovery](../content/dev-0270-detection-and-hunting-dev-0270-wmic-discovery-6b652b4f-9810-4eec-9027-7aa88ce4db23-8289b5fe.md)
 
@@ -109,7 +106,7 @@ This table is ingested by the following connectors:
 - [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
 - [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
 
-### Hunting Queries (307)
+### Hunting Queries (304)
 
 **In solution [](../solutions/.md):**
 - [7-zip-prep-for-exfiltration](../content/-7-zip-prep-for-exfiltration-66d73c14-f888-4748-a0ae-609577fcb51f-3d921cc7.md)
@@ -117,9 +114,7 @@ This table is ingested by the following connectors:
 - [APT29 thinktanks](../content/-apt29-thinktanks-40446d6e-745d-4689-a477-6b6a43a15755-ba49ef71.md)
 - [Abuse.ch Recent Threat Feed](../content/-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f76c5da5.md)
 - [Abuse.ch Recent Threat Feed (1)](../content/-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d7f2c638.md)
-- [Accessibility Features](../content/-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-089f8ddf.md)
 - [Add malicious user to Admins and RDP users group via PowerShell](../content/-add-malicious-user-to-admins-and-rdp-users-group-via-powershell-44a201c4-502a-4b75-871e-a2dc7f6d2e98-9b903414.md)
-- [AppLocker Policy Design Assistant](../content/-applocker-policy-design-assistant-7ae72c80-c114-43cd-bd99-46dab7c13338-7b1ef073.md)
 - [Backup deletion](../content/-backup-deletion-fc2c12c1-ee93-45c2-9a1f-f8a143ec3eb1-ffac0da4.md)
 - [Base64 Detector and Decoder](../content/-base64-detector-and-decoder-89fc1421-8387-4c2b-9bcb-75ead57ccb2c-4b3ac495.md)
 - [Base64encodePEFile](../content/-base64encodepefile-1174ae5b-8ce9-4321-a4e2-99e5f016beed-e82375e4.md)
@@ -292,7 +287,6 @@ This table is ingested by the following connectors:
 - [detect-cyzfc-activity (3)](../content/-detect-cyzfc-activity-3-5c9c8f5c-01cf-4670-9beb-ee90e0a4ec58-73ea8e3b.md)
 - [detect-doublepulsar-execution](../content/-detect-doublepulsar-execution-10a17179-d143-476d-80cd-c5a6cca66d59-a39545ea.md)
 - [detect-exploitation-of-cve-2018-8653](../content/-detect-exploitation-of-cve-2018-8653-1f541cc3-2c46-4f2a-9b4b-e082f25ec369-bb6dddbe.md)
-- [detect-impacket-atexec](../content/-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-664f3f60.md)
 - [detect-impacket-dcomexec](../content/-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-f5eb4d81.md)
 - [detect-impacket-psexec-module](../content/-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-51290fe0.md)
 - [detect-impacket-wmiexec](../content/-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-53c6c7a7.md)
@@ -432,21 +426,12 @@ This table is ingested by the following connectors:
 - [List all the VScode Extensions which are installed on a user system](../content/standalone-content-list-all-the-vscode-extensions-which-are-installed-on-a-user-system-75830932-794e-4a18-b62f-cc2a010080b5-7d90993c.md)
 - [MDE_FindsPowerShellExecutionEvents](../content/standalone-content-mde-findspowershellexecutionevents-a8767489-6dd5-4173-a49e-7f0365dd6e16-361ac29b.md)
 
-### Workbooks (15)
+### Workbooks (7)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [MicrosoftDefenderForEndPoint](../content/-microsoftdefenderforendpoint-f98fcc1e.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
-
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
-- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 - [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md)
@@ -460,9 +445,6 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -473,7 +455,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

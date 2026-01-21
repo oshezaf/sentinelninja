@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Business Email Compromise - Financial Fraud Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -56,11 +56,10 @@ This solution uses **1 ASIM parser(s)** for normalized data:
 
 ## Tables Used
 
-This solution queries **7 table(s)** from its content items:
+This solution queries **6 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
-| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | Hunting |
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | Analytics |
 | [`AuditLogs`](../tables/auditlogs.md) | Analytics, Hunting |
 | [`AwsBucketAPILogs_CL`](../tables/awsbucketapilogs-cl.md) | Hunting |
@@ -111,7 +110,7 @@ This solution includes **20 content item(s)**:
 | [S3 Bucket outbound Data transfer anomaly](../content/business-email-compromise-financial-fraud-s3-bucket-outbound-data-transfer-anomaly-0ef8dee1-eb94-44c8-b59b-2eb096a4b983-3e43e48f.md) | Exfiltration | [`AwsBucketAPILogs_CL`](../tables/awsbucketapilogs-cl.md) |
 | [Successful Signin From Non-Compliant Device](../content/business-email-compromise-financial-fraud-successful-signin-from-non-compliant-device-99885ff5-00cf-49e8-9452-6de6aba2a5c7-20eaa2d1.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [Suspicious Data Access to S3 Bucket from Unknown IP](../content/business-email-compromise-financial-fraud-suspicious-data-access-to-s3-bucket-from-unknown-ip-669e1338-b1a2-4d73-b720-a1e60d5d1474-b350221c.md) | Collection | - |
-| [User Accounts - New Single Factor Auth](../content/business-email-compromise-financial-fraud-user-accounts-new-single-factor-auth-8eace93b-f38c-47b7-a21d-739556d31db6-94f60108.md) | InitialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
+| [User Accounts - New Single Factor Auth](../content/business-email-compromise-financial-fraud-user-accounts-new-single-factor-auth-8eace93b-f38c-47b7-a21d-739556d31db6-94f60108.md) | InitialAccess | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
 | [User Accounts - Unusual authentications occurring when countries do not conduct normal business operations.](../content/business-email-compromise-financial-fraud-user-accounts-unusual-authentications-occurring-when-countries-f56b2223-0d4d-4347-9de4-822d195624ee-ea198d62.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [User Login IP Address Teleportation](../content/business-email-compromise-financial-fraud-user-login-ip-address-teleportation-09a7c5fc-0649-4f7d-a21b-36a754cef6b6-e3c0bf58.md) | InitialAccess | [`SigninLogs`](../tables/signinlogs.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [User detection added to privilege groups based in Watchlist](../content/business-email-compromise-financial-fraud-user-detection-added-to-privilege-groups-based-in-watchlist-8c5bc38a-438d-48fb-ae3f-7f356d3e5ba9-ddbfdf3a.md) | Reconnaissance, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
@@ -134,7 +133,7 @@ This solution includes **20 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

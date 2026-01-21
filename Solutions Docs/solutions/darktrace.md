@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Darktrace.svg" alt="Darktrace Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -39,11 +39,10 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Alert`](../tables/alert.md) | - | Workbooks |
 | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) | Analytics, Workbooks |
 
 ## Content Items
@@ -67,11 +66,11 @@ This solution includes **4 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [DarktraceWorkbook](../content/darktrace-darktraceworkbook-b6b8de88.md) | [`Alert`](../tables/alert.md)<br>[`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
+| [DarktraceWorkbook](../content/darktrace-darktraceworkbook-b6b8de88.md) | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) |
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

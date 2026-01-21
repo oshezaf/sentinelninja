@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DNS.svg" alt="Windows Server DNS Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -40,12 +40,11 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **5 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | [Windows DNS Events via AMA](../connectors/asimdnsactivitylogs.md) | - |
-| [`ConfigurationChange`](../tables/configurationchange.md) | - | Workbooks |
 | [`DnsEvents`](../tables/dnsevents.md) | [DNS](../connectors/dns.md) | Analytics, Hunting, Workbooks |
 | [`DnsInventory`](../tables/dnsinventory.md) | [DNS](../connectors/dns.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Hunting |
@@ -88,7 +87,7 @@ This solution includes **15 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Dns](../content/windows-server-dns-dns-ed7f9abb.md) | [`ConfigurationChange`](../tables/configurationchange.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`DnsInventory`](../tables/dnsinventory.md) |
+| [Dns](../content/windows-server-dns-dns-ed7f9abb.md) | [`DnsEvents`](../tables/dnsevents.md)<br>[`DnsInventory`](../tables/dnsinventory.md) |
 
 ## Release Notes
 
@@ -99,7 +98,7 @@ This solution includes **15 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

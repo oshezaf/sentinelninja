@@ -1,6 +1,6 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> TeamCymruScout
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -25,12 +25,10 @@ This content item queries data from the following tables:
 - [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)
 - [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
 - [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
-- [`ALERT`](../tables/alert.md)
 - [`ASIMParsers`](../tables/asimparsers.md)
 - [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md)
 - [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md)
 - [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md)
-- [`ASimDisabledParsers`](../tables/asimdisabledparsers.md)
 - [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md)
 - [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md)
 - [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md)
@@ -73,8 +71,6 @@ This content item queries data from the following tables:
 - [`Fingerprints_Data_CL`](../tables/fingerprints-data-cl.md)
 - [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
 - [`GWorkspace_ReportsAPI_login_CL`](../tables/gworkspace-reportsapi-login-cl.md)
-- [`IMAP3`](../tables/imap3.md)
-- [`IMAPS`](../tables/imaps.md)
 - [`Identity_Data_CL`](../tables/identity-data-cl.md)
 - [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md)
 - [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md)
@@ -105,22 +101,19 @@ This content item queries data from the following tables:
 - [`Top_Country_Codes_By_IP_Data_CL`](../tables/top-country-codes-by-ip-data-cl.md)
 - [`Top_Services_By_IP_Data_CL`](../tables/top-services-by-ip-data-cl.md)
 - [`Top_Tags_By_IP_Data_CL`](../tables/top-tags-by-ip-data-cl.md)
-- [`Update`](../tables/update.md)
 - [`VMConnection`](../tables/vmconnection.md)
 - [`VectraStream_CL`](../tables/vectrastream-cl.md)
 - [`W3CIISLog`](../tables/w3ciislog.md)
 - [`Whois_Data_CL`](../tables/whois-data-cl.md)
 - [`WindowsEvent`](../tables/windowsevent.md)
 - [`X509_Data_CL`](../tables/x509-data-cl.md)
-- [`alert`](../tables/alert.md)
 - [`asimParsers`](../tables/asimparsers.md)
 - [`barracuda_CL`](../tables/barracuda-cl.md)
 - [`meraki_CL`](../tables/meraki-cl.md)
-- [`update`](../tables/update.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to Team Cymru Scout](../solutions/team-cymru-scout.md)
 

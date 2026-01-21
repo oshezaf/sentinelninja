@@ -1,6 +1,6 @@
 # AlertInfo
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -32,7 +32,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (57)
+## Content Items Using This Table (56)
 
 ### Analytic Rules (12)
 
@@ -52,12 +52,11 @@ This table is ingested by the following connectors:
 - [Sentinel One - Same custom rule triggered on different hosts](../content/sentinelone-sentinel-one-same-custom-rule-triggered-on-different-hosts-5586d378-1bce-4d9b-9ac8-e7271c9d5a9a-6f74484f.md)
 - [Sentinel One - User viewed agent's passphrase](../content/sentinelone-sentinel-one-user-viewed-agent's-passphrase-51999097-60f4-42c0-bee8-fa28160e5583-1188d485.md)
 
-### Hunting Queries (42)
+### Hunting Queries (41)
 
 **In solution [](../solutions/.md):**
 - [Alerts related to Log4j vulnerability](../content/-alerts-related-to-log4j-vulnerability-ef76733a-86ab-4592-b341-64a4b369f4b7-3ef58ee5.md)
 - [Antivirus detections (1)](../content/-antivirus-detections-1-05250700-5123-45be-826d-dd14c623fade-b1135e2e.md)
-- [Baseline Comparison](../content/-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-7679c313.md)
 - [Cobalt Strike Lateral Movement](../content/-cobalt-strike-lateral-movement-1212ae5c-43cc-4c17-bcbb-d23cf9ad3483-d4d92537.md)
 - [Devices with Log4j vulnerability alerts and additional other alert related context](../content/-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-context-f0f222ae-a6c9-4992-9fdb-4b1601da244c-bed3529e.md)
 - [Distribution from remote location](../content/-distribution-from-remote-location-4e070afe-7a9b-4313-a964-c3168fffc1e2-162d3840.md)
@@ -121,7 +120,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

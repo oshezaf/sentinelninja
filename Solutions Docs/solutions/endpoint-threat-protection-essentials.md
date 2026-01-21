@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Endpoint Threat Protection Essentials Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -70,7 +70,7 @@ This solution uses **3 ASIM parser(s)** for normalized data:
 
 ## Tables Used
 
-This solution queries **7 table(s)** from its content items:
+This solution queries **6 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -78,7 +78,6 @@ This solution queries **7 table(s)** from its content items:
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Hunting |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | Hunting |
 | [`Event`](../tables/event.md) | Analytics, Hunting |
-| [`Image`](../tables/image.md) | Hunting |
 | [`SecurityEvent`](../tables/securityevent.md) | Analytics, Hunting |
 | [`WindowsEvent`](../tables/windowsevent.md) | Analytics, Hunting |
 
@@ -119,7 +118,7 @@ This solution includes **29 content item(s)**:
 | [Detect Certutil (LOLBins and LOLScripts) Usage](../content/endpoint-threat-protection-essentials-detect-certutil-lolbins-and-lolscripts-usage-0e429446-2798-49e4-924d-c37338f24e23-bc9b437b.md) | CommandAndControl | [`Event`](../tables/event.md) |
 | [Download of New File Using Curl](../content/endpoint-threat-protection-essentials-download-of-new-file-using-curl-7108c86b-a3ef-42d0-b50b-3e251fb1f84c-09e03acc.md) | CommandAndControl | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [Execution of File with One Character in the Name](../content/endpoint-threat-protection-essentials-execution-of-file-with-one-character-in-the-name-299472c4-8382-4c5b-82d9-718cda193393-14ba3a7f.md) | Execution | [`Event`](../tables/event.md) |
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Persisting via IFEO Registry Key](../content/endpoint-threat-protection-essentials-persisting-via-ifeo-registry-key-f82c89fa-c969-4d12-832f-04d55d14522c-6020db66.md) | Persistence | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imRegistry`](../asim/imregistry.md)<br>[`Event`](../tables/event.md)<br>[`Image`](../tables/image.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [Persisting via IFEO Registry Key](../content/endpoint-threat-protection-essentials-persisting-via-ifeo-registry-key-f82c89fa-c969-4d12-832f-04d55d14522c-6020db66.md) | Persistence | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imRegistry`](../asim/imregistry.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 | [Potential Microsoft Security Services Tampering](../content/endpoint-threat-protection-essentials-potential-microsoft-security-services-tampering-e10e1d2f-265d-4d90-9037-7f3a6ed8a91e-8c1dc76e.md) | DefenseEvasion | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`WindowsEvent`](../tables/windowsevent.md) |
 | [Rare Windows Firewall Rule updates using Netsh](../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.md) | Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Event`](../tables/event.md)<br>[`SecurityEvent`](../tables/securityevent.md) |
 | [Remote Login Performed with WMI](../content/endpoint-threat-protection-essentials-remote-login-performed-with-wmi-8f658a80-7fa9-4524-a95b-d9ab608e8850-57d50f63.md) | Execution | [`SecurityEvent`](../tables/securityevent.md) |
@@ -144,7 +143,7 @@ This solution includes **29 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

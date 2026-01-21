@@ -1,6 +1,6 @@
 # CloudAppEvents
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -17,16 +17,14 @@ Events involving accounts and objects in Office 365 and other cloud apps and ser
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudappevents-table) |
 
-## Solutions (6)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ## Connectors (1)
 
@@ -36,9 +34,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (185)
+## Content Items Using This Table (174)
 
-### Analytic Rules (10)
+### Analytic Rules (6)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [Unusual Volume of file deletion by users](../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-e5f8e196-3544-4a8b-96a9-17c1b6a49710-7af46276.md)
@@ -52,13 +50,7 @@ This table is ingested by the following connectors:
 - [Preview - TI map IP entity to Cloud App Events](../content/threat-intelligence-preview-ti-map-ip-entity-to-cloud-app-events-4e0a6fc8-697e-4455-be47-831b41ea91ac-e0fcbf3b.md)
 - [Preview - TI map URL entity to Cloud App Events](../content/threat-intelligence-preview-ti-map-url-entity-to-cloud-app-events-e8ae92dd-1d41-4530-8be8-85c5014c7b47-7067e6da.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI map Domain entity to Cloud App Events](../content/threat-intelligence-new-ti-map-domain-entity-to-cloud-app-events-a7d2b1e4-dd9c-40fd-9651-1a136eb8f0df-ec106ba0.md)
-- [TI map Email entity to Cloud App Events](../content/threat-intelligence-new-ti-map-email-entity-to-cloud-app-events-0385e99c-ae45-45f4-aecf-00104485cd6b-19029041.md)
-- [TI map IP entity to Cloud App Events](../content/threat-intelligence-new-ti-map-ip-entity-to-cloud-app-events-16a45aee-5e39-4d1b-b508-40f847c99353-f78512ba.md)
-- [TI map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.md)
-
-### Hunting Queries (163)
+### Hunting Queries (162)
 
 **In solution [](../solutions/.md):**
 - [ADFSDomainTrustMods[Nobelium]](../content/-adfsdomaintrustmods[nobelium]-8b55db72-9ece-4e93-b551-cd7eb7355104-f4890ba6.md)
@@ -86,7 +78,6 @@ This table is ingested by the following connectors:
 - [Calculate overall MDO efficacy](../content/-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-9ac7c3ec.md)
 - [Changes to Blocked Teams Domains](../content/-changes-to-blocked-teams-domains-3fb50170-4048-473e-acc0-af9ae186f4a3-28516c89.md)
 - [Changes to Blocked Teams Domains (NRT)](../content/-changes-to-blocked-teams-domains-nrt-f3ceca1b-8190-4511-beac-06b3368b8360-ce57d3ca.md)
-- [Code Repo Exfiltration](../content/-code-repo-exfiltration-11b8daa5-fe15-4664-b332-8f26d3c0b3a7-e0a8ca42.md)
 - [CredentialsAddAfterAdminConsentedToApp[Nobelium]](../content/-credentialsaddafteradminconsentedtoapp[nobelium]-0d49b34e-ac5a-441f-a79f-672ad045870e-3a9b8d23.md)
 - [Email containing malware accessed on a unmanaged device](../content/-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-cd443084.md)
 - [File Malware Detection Trend](../content/-file-malware-detection-trend-71cdf9cb-39b7-40fe-a81f-2c125efc7d07-0a424daa.md)
@@ -227,17 +218,12 @@ This table is ingested by the following connectors:
 - [User email submissions (FN) from Junk Folder](../content/microsoft-defender-xdr-user-email-submissions-fn-from-junk-folder-300b0d05-e99e-4349-ab2b-ec12ff5c2da1-b559b01f.md)
 - [User reported submissions](../content/microsoft-defender-xdr-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-18ee082b.md)
 
-### Workbooks (12)
+### Workbooks (6)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [CopilotforSecurityMonitoring](../content/-copilotforsecuritymonitoring-ca4c3a98.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
@@ -246,12 +232,9 @@ This table is ingested by the following connectors:
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 - [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

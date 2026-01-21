@@ -1,6 +1,6 @@
 # CommonSecurityLog
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -284,9 +284,9 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 ---
 
-## Content Items Using This Table (350)
+## Content Items Using This Table (336)
 
-### Analytic Rules (151)
+### Analytic Rules (145)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 - [Acronis - Login from Abnormal IP - Low Occurrence](../content/acronis-cyber-protect-cloud-acronis-login-from-abnormal-ip-low-occurrence-84037130-a623-46c2-9144-0c0955ac4112-5d101d22.md)
@@ -339,7 +339,6 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 
 **In solution [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md):**
 - [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md)
-- [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 - [Beacon Traffic Based on Common User Agents Visiting Limited Number of Domains](../content/falconfriday-beacon-traffic-based-on-common-user-agents-visiting-limited-number-of-domains-6345c923-99eb-4a83-b11d-7af0ffa75577-e0e2298a.md)
@@ -469,12 +468,7 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [TI map File Hash to CommonSecurityLog Event](../content/threat-intelligence-ti-map-file-hash-to-commonsecuritylog-event-5d33fc63-b83b-4913-b95e-94d13f0d379f-27089def.md)
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI Map IP Entity to CommonSecurityLog](../content/threat-intelligence-new-ti-map-ip-entity-to-commonsecuritylog-cdd1933b-ef94-48a4-b94a-18d45b902751-8a8093d3.md)
-- [TI Map URL Entity to PaloAlto Data](../content/threat-intelligence-new-ti-map-url-entity-to-paloalto-data-32b437c4-dddb-45b3-9aae-5188e80624b0-bf06198a.md)
-- [TI map Domain entity to PaloAlto](../content/threat-intelligence-new-ti-map-domain-entity-to-paloalto-418192ba-01b8-4be8-89b7-5b5396a9d062-3c5cbaa4.md)
 - [TI map Domain entity to PaloAlto CommonSecurityLog](../content/threat-intelligence-new-ti-map-domain-entity-to-paloalto-commonsecuritylog-094a4e6e-1a0d-4d49-9d64-cfc3b01a0be1-b0f33009.md)
-- [TI map Email entity to PaloAlto CommonSecurityLog](../content/threat-intelligence-new-ti-map-email-entity-to-paloalto-commonsecuritylog-17fe80fe-072f-44d4-b62c-97a5bce56a64-3f51c924.md)
-- [TI map File Hash to CommonSecurityLog Event](../content/threat-intelligence-new-ti-map-file-hash-to-commonsecuritylog-event-432996e9-8a93-4407-985f-13707b318a0b-a4223a3c.md)
 
 **In solution [Trend Micro Apex One](../solutions/trend-micro-apex-one.md):**
 - [ApexOne - Attack Discovery Detection](../content/trend-micro-apex-one-apexone-attack-discovery-detection-7a3193b8-67b7-11ec-90d6-0242ac120003-a72ca676.md)
@@ -625,19 +619,17 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [ApexOne - Suspicious files events](../content/trend-micro-apex-one-apexone-suspicious-files-events-7bf0f260-61a0-11ec-90d6-0242ac120003-58b95e02.md)
 - [ApexOne - Top sources with alerts](../content/trend-micro-apex-one-apexone-top-sources-with-alerts-8bb86556-67b4-11ec-90d6-0242ac120003-9e3076ba.md)
 
-### Workbooks (110)
+### Workbooks (102)
 
 **In solution [](../solutions/.md):**
 - [AIA-Darktrace](../content/-aia-darktrace-9214cc61.md)
 - [AIVectraDetectWorkbook](../content/-aivectradetectworkbook-22f0d0aa.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [Barracuda](../content/-barracuda-990015fb.md)
 - [CheckPoint](../content/-checkpoint-181eacce.md)
 - [Cisco](../content/-cisco-71fc8982.md)
 - [CiscoFirepower](../content/-ciscofirepower-fc64dbd5.md)
 - [CitrixWAF](../content/-citrixwaf-600f64ec.md)
 - [CyberArkEPV](../content/-cyberarkepv-714c9782.md)
-- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
 - [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
 - [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
 - [DelineaWorkbook](../content/-delineaworkbook-2835dd33.md)
@@ -651,10 +643,7 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [Fortigate](../content/-fortigate-7c941526.md)
 - [IllusiveADS](../content/-illusiveads-7cf01e8b.md)
 - [IllusiveASM](../content/-illusiveasm-242937b3.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
 - [IoTAssetDiscovery](../content/-iotassetdiscovery-067aa5b7.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
 - [OnapsisAlarmsOverview](../content/-onapsisalarmsoverview-3c61f718.md)
 - [OneIdentity](../content/-oneidentity-23649d1f.md)
@@ -662,7 +651,6 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [PaloAltoNetworkThreat](../content/-paloaltonetworkthreat-3d8cc62c.md)
 - [PaloAltoOverview](../content/-paloaltooverview-f33e5095.md)
 - [SecurityStatus](../content/-securitystatus-183600b3.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
 - [SonicWallFirewall](../content/-sonicwallfirewall-a12a2f18.md)
@@ -782,8 +770,6 @@ The following DeviceVendor/DeviceProduct values are used by connectors ingesting
 - [PingFederate](../content/pingfederate-pingfederate-c26986d3.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
@@ -844,9 +830,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Parsers Using This Table (62)
+## Parsers Using This Table (64)
 
-### ASIM Parsers (27)
+### ASIM Parsers (29)
 
 | Parser | Schema | Product |
 |:-------|:-------|:--------|
@@ -863,6 +849,8 @@ This table collects data from the following Azure resource types:
 | [ASimNetworkSessionCheckPointFirewall](../asim/asimnetworksessioncheckpointfirewall.md) | NetworkSession |  |
 | [ASimNetworkSessionCiscoASA](../asim/asimnetworksessionciscoasa.md) | NetworkSession |  |
 | [ASimNetworkSessionCiscoFirepower](../asim/asimnetworksessionciscofirepower.md) | NetworkSession |  |
+| [ASimNetworkSessionCrowdStrikeFalconHost](../asim/asimnetworksessioncrowdstrikefalconhost.md) | NetworkSession |  |
+| [ASimNetworkSessionForcePointFirewall](../asim/asimnetworksessionforcepointfirewall.md) | NetworkSession |  |
 | [ASimNetworkSessionFortinetFortiGate](../asim/asimnetworksessionfortinetfortigate.md) | NetworkSession |  |
 | [ASimNetworkSessionPaloAltoCEF](../asim/asimnetworksessionpaloaltocef.md) | NetworkSession |  |
 | [ASimNetworkSessionPaloAltoCortexDataLake](../asim/asimnetworksessionpaloaltocortexdatalake.md) | NetworkSession |  |
@@ -896,7 +884,7 @@ This table collects data from the following Azure resource types:
 | [InfobloxCDC](../parsers/infobloxcdc.md) | [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) | Solution |
 | [InfobloxCDC_SOCInsights](../parsers/infobloxcdc-socinsights.md) | [Infoblox](../solutions/infoblox.md) | Solution |
 | [InfobloxCDC_SOCInsights](../parsers/infobloxcdc-socinsights.md) | [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) | Solution |
-| [McAfee Common Security Log Parser](../parsers/mcafee-common-security-log-parser.md) | *(Legacy)* | Legacy |
+| [McAfeeCommonSecurityLog](../parsers/mcafeecommonsecuritylog.md) | *(Legacy)* | Legacy |
 | [NetwrixAuditor](../parsers/netwrixauditor.md) | [Netwrix Auditor](../solutions/netwrix-auditor.md) | Solution |
 | [NozomiNetworksEvents](../parsers/nozominetworksevents.md) | [NozomiNetworks](../solutions/nozominetworks.md) | Solution |
 | [OSSECEvent](../parsers/ossecevent.md) | [OSSEC](../solutions/ossec.md) | Solution |
@@ -905,7 +893,7 @@ This table collects data from the following Azure resource types:
 | [PaloAltoCDLEvent](../parsers/paloaltocdlevent.md) | [PaloAltoCDL](../solutions/paloaltocdl.md) | Solution |
 | [PingFederateEvent](../parsers/pingfederateevent.md) | [PingFederate](../solutions/pingfederate.md) | Solution |
 | [RadiflowEvent](../parsers/radiflowevent.md) | [Radiflow](../solutions/radiflow.md) | Solution |
-| [StealthDefend](../parsers/stealthdefend.md) | *(Legacy)* | Legacy |
+| [StealthBits StealthDefend Parser](../parsers/stealthbits-stealthdefend-parser.md) | *(Legacy)* | Legacy |
 | [SymantecDLP](../parsers/symantecdlp.md) | [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md) | Solution |
 | [TMApexOneEvent](../parsers/tmapexoneevent.md) | [Trend Micro Apex One](../solutions/trend-micro-apex-one.md) | Solution |
 | [TrendMicroDeepSecurity](../parsers/trendmicrodeepsecurity.md) | [Trend Micro Deep Security](../solutions/trend-micro-deep-security.md) | Solution |
@@ -922,7 +910,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

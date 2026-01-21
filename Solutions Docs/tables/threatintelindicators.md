@@ -1,6 +1,6 @@
 # ThreatIntelIndicators
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -48,7 +48,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (100)
+## Content Items Using This Table (99)
 
 ### Analytic Rules (67)
 
@@ -154,11 +154,10 @@ This table is ingested by the following connectors:
 - [TI Map File Entity to VMConnection Event](../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.md)
 - [TI Map File Entity to WireData Event](../content/threat-intelligence-new-ti-map-file-entity-to-wiredata-event-d2fd7661-de21-47ab-a9f9-e6ded983fabe-9e547c28.md)
 
-### Workbooks (18)
+### Workbooks (17)
 
 **In solution [](../solutions/.md):**
 - [IntsightsIOCWorkbook](../content/-intsightsiocworkbook-d54a0825.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
 - [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
 - [ThreatIntelligence](../content/-threatintelligence-b9c30149.md)
 
@@ -214,7 +213,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

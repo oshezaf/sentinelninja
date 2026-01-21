@@ -1,6 +1,6 @@
 # CybersecurityMaturityModelCertification_CMMCV2
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -29,7 +29,6 @@ This content item queries data from the following tables:
 - [`DeviceFileEvents`](../tables/devicefileevents.md)
 - [`Event`](../tables/event.md)
 - [`IdentityInfo`](../tables/identityinfo.md)
-- [`Impact`](../tables/impact.md)
 - [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
 - [`OfficeActivity`](../tables/officeactivity.md)
 - [`SecurityAlert`](../tables/securityalert.md)
@@ -38,13 +37,11 @@ This content item queries data from the following tables:
 - [`SecurityRecommendation`](../tables/securityrecommendation.md)
 - [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
 - [`SigninLogs`](../tables/signinlogs.md)
-- [`Update`](../tables/update.md)
 - [`Usage`](../tables/usage.md)
-- [`update`](../tables/update.md)
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 

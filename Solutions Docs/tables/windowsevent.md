@@ -1,6 +1,6 @@
 # WindowsEvent
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for WindowsEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent) |
 
-## Solutions (11)
+## Solutions (10)
 
 This table is used by the following solutions:
 
@@ -28,7 +28,6 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Windows Forwarded Events](../solutions/windows-forwarded-events.md)
 - [Windows Security Events](../solutions/windows-security-events.md)
 
@@ -40,9 +39,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (58)
+## Content Items Using This Table (52)
 
-### Analytic Rules (39)
+### Analytic Rules (36)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 - [Powershell Empire Cmdlets Executed in Command Line](../content/attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.md)
@@ -82,7 +81,6 @@ This table is ingested by the following connectors:
 - [Rare RDP Connections](../content/standalone-content-rare-rdp-connections-45b903c5-6f56-4969-af10-ae62ac709718-9368c501.md)
 - [Security Service Registry ACL Modification](../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md)
 - [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md)
-- [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md)
 - [User account added to built in domain local or global group](../content/standalone-content-user-account-added-to-built-in-domain-local-or-global-group-a35f2c18-1b97-458f-ad26-e033af18eb99-fb766415.md)
 - [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md)
 - [User account enabled and disabled within 10 mins](../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.md)
@@ -90,10 +88,6 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map Email entity to SecurityEvent](../content/threat-intelligence-ti-map-email-entity-to-securityevent-2fc5d810-c9cc-491a-b564-841427ae0e50-9cb621b7.md)
 - [TI map File Hash to Security Event](../content/threat-intelligence-ti-map-file-hash-to-security-event-a7427ed7-04b4-4e3b-b323-08b981b9b4bf-a0646697.md)
-
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.md)
-- [TI map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.md)
 
 **In solution [Windows Forwarded Events](../solutions/windows-forwarded-events.md):**
 - [Caramel Tsunami Actor IOC - July 2021](../content/windows-forwarded-events-caramel-tsunami-actor-ioc-july-2021-066395ac-ef91-4993-8bf6-25c61ab0ca5a-e6c825f2.md)
@@ -126,14 +120,11 @@ This table is ingested by the following connectors:
 - [Domain controller installation media creation](../content/windows-security-events-domain-controller-installation-media-creation-7e5f3a9a-542c-417a-a429-4ed500c5c4d8-fec25b2e.md)
 - [Establishing internal proxies](../content/windows-security-events-establishing-internal-proxies-ce38c16c-a560-46c0-88d6-7757b88f08e9-e3cde3e0.md)
 
-### Workbooks (6)
+### Workbooks (3)
 
 **In solution [](../solutions/.md):**
 - [AMAmigrationTracker](../content/-amamigrationtracker-044e752e.md)
-- [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 - [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
@@ -150,21 +141,21 @@ This table collects data from the following Azure resource types:
 
 | Parser | Schema | Product |
 |:-------|:-------|:--------|
+| [ASimAuthenticationMicrosoftWindowsEvent](../asim/asimauthenticationmicrosoftwindowsevent.md) | Authentication |  |
 | [ASimDnsMicrosoftSysmonWindowsEvent](../asim/asimdnsmicrosoftsysmonwindowsevent.md) | Dns |  |
 | [ASimFileEventMicrosoftSysmonWindowsEvent](../asim/asimfileeventmicrosoftsysmonwindowsevent.md) | FileEvent |  |
 | [ASimFileEventMicrosoftWindowsEvents](../asim/asimfileeventmicrosoftwindowsevents.md) | FileEvent |  |
 | [ASimNetworkSessionMicrosoftSysmonWindowsEvent](../asim/asimnetworksessionmicrosoftsysmonwindowsevent.md) | NetworkSession |  |
 | [ASimNetworkSessionMicrosoftWindowsEventFirewall](../asim/asimnetworksessionmicrosoftwindowseventfirewall.md) | NetworkSession |  |
-| [ASimProcessCreateMicrosoftWindowsEvents](../asim/asimprocesscreatemicrosoftwindowsevents.md) | ProcessEvent |  |
 | [ASimProcessEventCreateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventcreatemicrosoftsysmonwindowsevent.md) | ProcessEvent |  |
 | [ASimProcessEventTerminateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventterminatemicrosoftsysmonwindowsevent.md) | ProcessEvent |  |
-| [ASimProcessTerminateMicrosoftWindowsEvents](../asim/asimprocessterminatemicrosoftwindowsevents.md) | ProcessEvent |  |
 | [ASimRegistryEventMicrosoftSysmonWindowsEvent](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | RegistryEvent |  |
+| [ASimRegistryEventMicrosoftWindowsEvent](../asim/asimregistryeventmicrosoftwindowsevent.md) | RegistryEvent |  |
 | [ASimUserManagementMicrosoftWindowsEvent](../asim/asimusermanagementmicrosoftwindowsevent.md) | UserManagement |  |
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

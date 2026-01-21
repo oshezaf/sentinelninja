@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="NISTSP80053 Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -31,14 +31,13 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **33 table(s)** from its content items:
+This solution queries **29 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) | Workbooks |
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | Workbooks |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | Workbooks |
-| [`Alert`](../tables/alert.md) | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
@@ -49,10 +48,8 @@ This solution queries **33 table(s)** from its content items:
 | [`DnsEvents`](../tables/dnsevents.md) | Workbooks |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) | Workbooks |
 | [`EmailEvents`](../tables/emailevents.md) | Workbooks |
-| [`Event`](../tables/event.md) | Workbooks |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | Workbooks |
 | [`Heartbeat`](../tables/heartbeat.md) | Workbooks |
-| [`Impact`](../tables/impact.md) | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
 | [`Operation`](../tables/operation.md) | Workbooks |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | Workbooks |
@@ -67,7 +64,6 @@ This solution queries **33 table(s)** from its content items:
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Workbooks |
 | [`Usage`](../tables/usage.md) | Workbooks |
 | [`WindowsFirewall`](../tables/windowsfirewall.md) | Workbooks |
-| [`alert`](../tables/alert.md) | Workbooks |
 
 ### Internal Tables
 
@@ -100,7 +96,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`Alert`](../tables/alert.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`Event`](../tables/event.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`Impact`](../tables/impact.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecureScores`](../tables/securescores.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Usage`](../tables/usage.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>[`alert`](../tables/alert.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) | [`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AWSVPCFlow`](../tables/awsvpcflow.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`Dynamics365Activity`](../tables/dynamics365activity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`GCP_IAM_CL`](../tables/gcp-iam-cl.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md)<br>[`SecureScores`](../tables/securescores.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SecurityRecommendation`](../tables/securityrecommendation.md)<br>[`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`StorageBlobLogs`](../tables/storagebloblogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Usage`](../tables/usage.md)<br>[`WindowsFirewall`](../tables/windowsfirewall.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 
 ### Playbooks
 
@@ -149,7 +145,7 @@ This solution is designed to augment staffing through automation, machine learni
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

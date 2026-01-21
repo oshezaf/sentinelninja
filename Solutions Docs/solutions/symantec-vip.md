@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="Symantec VIP Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -38,11 +38,10 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ASimSourceType`](../tables/asimsourcetype.md) | [[Deprecated] Symantec VIP](../connectors/symantecvip.md) | Analytics, Workbooks |
 | [`Syslog`](../tables/syslog.md) | [[Deprecated] Symantec VIP](../connectors/symantecvip.md) | Analytics, Workbooks |
 
 ## Content Items
@@ -59,20 +58,20 @@ This solution includes **4 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [ClientDeniedAccess](../content/symantec-vip-clientdeniedaccess-a9956d3a-07a9-44a6-a279-081a85020cae-b3aec064.md) | Medium | CredentialAccess | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
-| [Excessive Failed Authentication from Invalid Inputs](../content/symantec-vip-excessive-failed-authentication-from-invalid-inputs-c775a46b-21b1-46d7-afa6-37e3e577a27b-0e6ce55d.md) | Medium | CredentialAccess | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
+| [ClientDeniedAccess](../content/symantec-vip-clientdeniedaccess-a9956d3a-07a9-44a6-a279-081a85020cae-b3aec064.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
+| [Excessive Failed Authentication from Invalid Inputs](../content/symantec-vip-excessive-failed-authentication-from-invalid-inputs-c775a46b-21b1-46d7-afa6-37e3e577a27b-0e6ce55d.md) | Medium | CredentialAccess | [`Syslog`](../tables/syslog.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SymantecVIP](../content/symantec-vip-symantecvip-eae32760.md) | [`ASimSourceType`](../tables/asimsourcetype.md)<br>[`Syslog`](../tables/syslog.md) |
+| [SymantecVIP](../content/symantec-vip-symantecvip-eae32760.md) | [`Syslog`](../tables/syslog.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecVIP](../content/symantec-vip-symantecvip-ed8a116c-07b4-441c-b74b-395937c264a1-ded005b1.md) | - | [`ASimSourceType`](../tables/asimsourcetype.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)* |
+| [SymantecVIP](../content/symantec-vip-symantecvip-ed8a116c-07b4-441c-b74b-395937c264a1-ded005b1.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 
@@ -85,7 +84,7 @@ This solution includes **4 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

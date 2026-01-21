@@ -1,6 +1,6 @@
 # AzureNetworkAnalytics_CL
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -10,7 +10,7 @@
 
 📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/azure/network-watcher/traffic-analytics-schema) - NSG flow log schema and data aggregation
 
-## Solutions (6)
+## Solutions (5)
 
 This table is used by the following solutions:
 
@@ -19,19 +19,15 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ---
 
-## Content Items Using This Table (10)
+## Content Items Using This Table (7)
 
-### Analytic Rules (2)
+### Analytic Rules (1)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-a4025a76-6490-4e6b-bb69-d02be4b03f07-8964f465.md)
-
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-new-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-929160b7-4449-4307-a3f9-bb742d1b8f01-d566e349.md)
 
 ### Hunting Queries (3)
 
@@ -44,20 +40,26 @@ This table is used by the following solutions:
 **In solution [Standalone Content](../solutions/standalone-content.md):**
 - [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md)
 
-### Workbooks (5)
+### Workbooks (3)
 
 **In solution [](../solutions/.md):**
 - [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
 - [AzureNetworkWatcher](../content/-azurenetworkwatcher-463da189.md)
-- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 - [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
 
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimNetworkSessionAzureNSG](../asim/asimnetworksessionazurensg.md) | NetworkSession |  |
+
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

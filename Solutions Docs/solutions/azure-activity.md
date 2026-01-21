@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/azureactivity_logo.svg" alt="Azure Activity Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -31,12 +31,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureActivity`](../tables/azureactivity.md) | [Azure Activity](../connectors/azureactivity.md) | Analytics, Hunting, Workbooks |
-| [`Update`](../tables/update.md) | - | Hunting |
 
 ### Internal Tables
 
@@ -93,7 +92,7 @@ This solution includes **31 content item(s)**:
 | [Microsoft Sentinel Connectors Administrative Operations](../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Microsoft Sentinel Workbooks Administrative Operations](../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.md) | Impact | [`AzureActivity`](../tables/azureactivity.md) |
 | [Port opened for an Azure Resource](../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.md) | CommandAndControl, Impact | [`AzureActivity`](../tables/azureactivity.md) |
-| [Rare Custom Script Extension](../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.md) | Execution | [`AzureActivity`](../tables/azureactivity.md)<br>[`Update`](../tables/update.md) |
+| [Rare Custom Script Extension](../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.md) | Execution | [`AzureActivity`](../tables/azureactivity.md) |
 
 ### Workbooks
 
@@ -113,7 +112,7 @@ This solution includes **31 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

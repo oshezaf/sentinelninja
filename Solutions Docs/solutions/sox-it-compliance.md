@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SOX IT Compliance Logo" width="75" height="75">
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -32,7 +32,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **15 table(s)** from its content items:
+This solution queries **12 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -47,10 +47,7 @@ This solution queries **15 table(s)** from its content items:
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`Syslog`](../tables/syslog.md) | Workbooks |
-| [`Update`](../tables/update.md) | Workbooks |
 | [`heartbeat`](../tables/heartbeat.md) | Workbooks |
-| [`syslog`](../tables/syslog.md) | Workbooks |
-| [`update`](../tables/update.md) | Workbooks |
 
 ## Content Items
 
@@ -64,7 +61,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`heartbeat`](../tables/heartbeat.md)<br>[`syslog`](../tables/syslog.md)<br>[`update`](../tables/update.md) |
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`heartbeat`](../tables/heartbeat.md) |
 
 ## Release Notes
 
@@ -74,7 +71,7 @@ This solution includes **1 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

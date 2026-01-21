@@ -1,6 +1,6 @@
 # OfficeActivity
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/officeactivity) |
 
-## Solutions (26)
+## Solutions (25)
 
 This table is used by the following solutions:
 
@@ -35,7 +35,6 @@ This table is used by the following solutions:
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Standalone Content](../solutions/standalone-content.md)
@@ -55,9 +54,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (106)
+## Content Items Using This Table (100)
 
-### Analytic Rules (42)
+### Analytic Rules (41)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 - [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md)
@@ -104,7 +103,6 @@ This table is ingested by the following connectors:
 **In solution [Standalone Content](../solutions/standalone-content.md):**
 - [Anomalous login followed by Teams action](../content/standalone-content-anomalous-login-followed-by-teams-action-2b701288-b428-4fb8-805e-e4372c574786-2da015d8.md)
 - [Detecting Impossible travel with mailbox permission tampering & Privilege Escalation attempt](../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.md)
-- [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md)
 - [High risk Office operation conducted by IP Address that recently attempted to log into a disabled account](../content/standalone-content-high-risk-office-operation-conducted-by-ip-address-that-recently-attempted-to-log-int-9adbd1c3-a4be-44ef-ac2f-503fd25692ee-6176c458.md)
 - [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md)
 - [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md)
@@ -127,7 +125,7 @@ This table is ingested by the following connectors:
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md)
 
-### Hunting Queries (31)
+### Hunting Queries (29)
 
 **In solution [](../solutions/.md):**
 - [New Location Sign in with Mail forwarding activity](../content/-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-0e05c2f0.md)
@@ -163,7 +161,6 @@ This table is ingested by the following connectors:
 - [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md)
 
 **In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Permutations on logon attempts by UserPrincipalNames indicating potential brute force](../content/standalone-content-permutations-on-logon-attempts-by-userprincipalnames-indicating-potential-brute-force-472e83d6-ccec-47b8-b1cd-75500f936981-b5d1e233.md)
 - [Rare domains seen in Cloud Logs](../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.md)
 - [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md)
 - [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md)
@@ -171,10 +168,7 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map File Entity to OfficeActivity Event](../content/threat-intelligence-ti-map-file-entity-to-officeactivity-event-410da56d-4a63-4d22-b68c-9fb1a303be6d-69933815.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI Map File Entity to OfficeActivity Event](../content/threat-intelligence-new-ti-map-file-entity-to-officeactivity-event-bbdb951c-9aba-4d66-85df-f564a1f86881-bfe1f81a.md)
-
-### Workbooks (33)
+### Workbooks (30)
 
 **In solution [](../solutions/.md):**
 - [AdvancedWorkbookConcepts](../content/-advancedworkbookconcepts-fa827ab4.md)
@@ -182,14 +176,12 @@ This table is ingested by the following connectors:
 - [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
 - [ExchangeOnline](../content/-exchangeonline-0b58e24a.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
 - [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
 - [MicrosoftTeams](../content/-microsoftteams-636f37ed.md)
 - [Office365](../content/-office365-f81563f5.md)
 - [SharePointAndOneDrive](../content/-sharepointandonedrive-9d478d41.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
-- [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
@@ -228,9 +220,6 @@ This table is ingested by the following connectors:
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 - [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
-
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 - [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)
 
@@ -259,7 +248,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

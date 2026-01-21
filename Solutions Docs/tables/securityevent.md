@@ -1,6 +1,6 @@
 # SecurityEvent
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent) |
 
-## Solutions (30)
+## Solutions (29)
 
 This table is used by the following solutions:
 
@@ -44,7 +44,6 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
-- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
 - [Windows Security Events](../solutions/windows-security-events.md)
@@ -64,9 +63,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (225)
+## Content Items Using This Table (211)
 
-### Analytic Rules (85)
+### Analytic Rules (82)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 - [Powershell Empire Cmdlets Executed in Command Line](../content/attacker-tools-threat-protection-essentials-powershell-empire-cmdlets-executed-in-command-line-ef88eb96-861c-43a0-ab16-f3835a97c928-001fa98c.md)
@@ -141,7 +140,6 @@ This table is ingested by the following connectors:
 - [Security Service Registry ACL Modification](../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md)
 - [Service Principal Name (SPN) Assigned to User Account](../content/standalone-content-service-principal-name-spn-assigned-to-user-account-875d0eb1-883a-4191-bd0e-dbfdeb95a464-6875f39b.md)
 - [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md)
-- [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md)
 - [Unusual identity creation using exchange powershell](../content/standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.md)
 - [User account added to built in domain local or global group](../content/standalone-content-user-account-added-to-built-in-domain-local-or-global-group-a35f2c18-1b97-458f-ad26-e033af18eb99-fb766415.md)
 - [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md)
@@ -150,10 +148,6 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI map Email entity to SecurityEvent](../content/threat-intelligence-ti-map-email-entity-to-securityevent-2fc5d810-c9cc-491a-b564-841427ae0e50-9cb621b7.md)
 - [TI map File Hash to Security Event](../content/threat-intelligence-ti-map-file-hash-to-security-event-a7427ed7-04b4-4e3b-b323-08b981b9b4bf-a0646697.md)
-
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.md)
-- [TI map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.md)
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 - [Identify SysAid Server web shell creation](../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md)
@@ -181,7 +175,7 @@ This table is ingested by the following connectors:
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 - [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md)
 
-### Hunting Queries (90)
+### Hunting Queries (89)
 
 **In solution [](../solutions/.md):**
 - [AD Account Lockout](../content/-ad-account-lockout-e7642e6e-cf27-46ec-a4b9-e4475228fead-9a1c826c.md)
@@ -239,9 +233,6 @@ This table is ingested by the following connectors:
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 - [TI Map File Entity to Security Event](../content/threat-intelligence-ti-map-file-entity-to-security-event-233441b9-cc92-4c9b-87fa-73b855fcd4b8-14557cf7.md)
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
-- [TI Map File Entity to Security Event](../content/threat-intelligence-new-ti-map-file-entity-to-security-event-10f83299-c4e6-4af8-9627-5f9448dee24a-3651af8f.md)
-
 **In solution [Windows Security Events](../solutions/windows-security-events.md):**
 - [AD Account Lockout](../content/windows-security-events-ad-account-lockout-a308d780-1c39-4fa7-8c21-bb54f174b065-798b810f.md)
 - [Commands executed by WMI on new hosts - potential Impacket](../content/windows-security-events-commands-executed-by-wmi-on-new-hosts-potential-impacket-9ce755c1-d2e6-4e2f-82d5-7871ec1aef91-d645d9b4.md)
@@ -291,12 +282,11 @@ This table is ingested by the following connectors:
 - [VIP account more than 6 failed logons in 10](../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-e8d36582-c403-4466-bd44-ebede5b6fa6e-f9a5b0f7.md)
 - [Windows System Time changed on hosts](../content/windows-security-events-windows-system-time-changed-on-hosts-9fd6f61d-2cc3-48de-acf5-7194e78d6ea1-9fe3fe4a.md)
 
-### Workbooks (50)
+### Workbooks (40)
 
 **In solution [](../solutions/.md):**
 - [AMAmigrationTracker](../content/-amamigrationtracker-044e752e.md)
 - [AdvancedWorkbookConcepts](../content/-advancedworkbookconcepts-fa827ab4.md)
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DCR-Toolkit](../content/-dcr-toolkit-b30b4844.md)
 - [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
 - [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
@@ -305,17 +295,10 @@ This table is ingested by the following connectors:
 - [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
 - [IdentityAndAccess](../content/-identityandaccess-6100dc4e.md)
 - [InsecureProtocols](../content/-insecureprotocols-ae7d5c76.md)
-- [InvestigationInsights](../content/-investigationinsights-2251e94c.md)
-- [LogSourcesAndAnalyticRulesCoverage](../content/-logsourcesandanalyticrulescoverage-a4ef56a6.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
 - [SecurityStatus](../content/-securitystatus-183600b3.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
 - [SolarWindsPostCompromiseHunting](../content/-solarwindspostcompromisehunting-ff2e76bc.md)
-- [SysmonThreatHunting](../content/-sysmonthreathunting-88bb3312.md)
 - [WindowsAuditChecker](../content/-windowsauditchecker-27eb28a6.md)
 - [WindowsFirewall](../content/-windowsfirewall-39ee633b.md)
 - [WindowsFirewallViaAMA](../content/-windowsfirewallviaama-bfbc801e.md)
@@ -353,8 +336,6 @@ This table is ingested by the following connectors:
 - [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 - [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
@@ -390,15 +371,16 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Parsers Using This Table (5)
+## Parsers Using This Table (6)
 
-### ASIM Parsers (4)
+### ASIM Parsers (5)
 
 | Parser | Schema | Product |
 |:-------|:-------|:--------|
 | [ASimFileEventMicrosoftSecurityEvents](../asim/asimfileeventmicrosoftsecurityevents.md) | FileEvent |  |
 | [ASimProcessCreateMicrosoftSecurityEvents](../asim/asimprocesscreatemicrosoftsecurityevents.md) | ProcessEvent |  |
 | [ASimProcessTerminateMicrosoftSecurityEvents](../asim/asimprocessterminatemicrosoftsecurityevents.md) | ProcessEvent |  |
+| [ASimRegistryEventMicrosoftSecurityEvent](../asim/asimregistryeventmicrosoftsecurityevent.md) | RegistryEvent |  |
 | [ASimUserManagementMicrosoftSecurityEvent](../asim/asimusermanagementmicrosoftsecurityevent.md) | UserManagement |  |
 
 ### Other Parsers (1)
@@ -409,7 +391,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

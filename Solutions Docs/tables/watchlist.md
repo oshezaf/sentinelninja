@@ -1,6 +1,6 @@
 # Watchlist
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,18 +16,16 @@ Reference for Watchlist table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/watchlist) |
 
-## Solutions (4)
+## Solutions (2)
 
 This table is used by the following solutions:
 
-- [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
 - [Web Session Essentials](../solutions/web-session-essentials.md)
 
 ---
 
-## Content Items Using This Table (13)
+## Content Items Using This Table (7)
 
 ### Analytic Rules (5)
 
@@ -38,27 +36,17 @@ This table is used by the following solutions:
 - [Detect web requests to potentially harmful files (ASIM Web Session)](../content/web-session-essentials-detect-web-requests-to-potentially-harmful-files-asim-web-session-c6608467-3678-45fe-b038-b590ce6d00fb-170f0dec.md)
 - [The download of potentially risky files from the Discord Content Delivery Network (CDN) (ASIM Web Session)](../content/web-session-essentials-the-download-of-potentially-risky-files-from-the-discord-content-delivery-network-b7fe8f27-7010-404b-aec5-6e5245cea580-7bb8623e.md)
 
-### Workbooks (8)
+### Workbooks (2)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
-- [DSTIMWorkbook](../content/-dstimworkbook-0a68e0ad.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-
-**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md)
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 - [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md)
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
-
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

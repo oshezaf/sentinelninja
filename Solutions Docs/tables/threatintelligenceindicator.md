@@ -1,6 +1,6 @@
 # ThreatIntelligenceIndicator
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelligenceindicator) |
 
-## Solutions (27)
+## Solutions (26)
 
 This table is used by the following solutions:
 
@@ -28,7 +28,6 @@ This table is used by the following solutions:
 - [Forcepoint NGFW](../solutions/forcepoint-ngfw.md)
 - [GitLab](../solutions/gitlab.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
-- [Infoblox](../solutions/infoblox.md)
 - [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md)
 - [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md)
 - [MISP2Sentinel](../solutions/misp2sentinel.md)
@@ -68,7 +67,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (106)
+## Content Items Using This Table (99)
 
 ### Analytic Rules (72)
 
@@ -171,18 +170,14 @@ This table is ingested by the following connectors:
 - [TI Map File Entity to VMConnection Event](../content/threat-intelligence-ti-map-file-entity-to-vmconnection-event-172a321b-c46b-4508-87c6-e2691c778107-debef4d0.md)
 - [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md)
 
-### Workbooks (29)
+### Workbooks (22)
 
 **In solution [](../solutions/.md):**
-- [AzureSentinelCost](../content/-azuresentinelcost-75f5c34b.md)
 - [DSTIMWorkbook](../content/-dstimworkbook-0a68e0ad.md)
 - [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
 - [ForcepointNGFWAdvanced](../content/-forcepointngfwadvanced-9bfc0ecf.md)
-- [MicrosoftSentinelCostEUR](../content/-microsoftsentinelcosteur-aa190070.md)
-- [MicrosoftSentinelCostGBP](../content/-microsoftsentinelcostgbp-3469a46b.md)
 - [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
 - [PhishingAnalysis](../content/-phishinganalysis-5cdced29.md)
-- [SentinelCosts](../content/-sentinelcosts-dec2b79d.md)
 - [WorkspaceUsage](../content/-workspaceusage-0da12cea.md)
 - [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
 
@@ -197,9 +192,6 @@ This table is ingested by the following connectors:
 
 **In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
 - [GreyNoiseOverview](../content/greynoisethreatintelligence-greynoiseoverview-879c7a2d.md)
-
-**In solution [Infoblox](../solutions/infoblox.md):**
-- [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 - [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
@@ -218,9 +210,7 @@ This table is ingested by the following connectors:
 - [NetworkSessionEssentialsV2](../content/network-session-essentials-networksessionessentialsv2-9408ac84.md)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md)
 - [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md)
-- [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 - [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
@@ -244,7 +234,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
