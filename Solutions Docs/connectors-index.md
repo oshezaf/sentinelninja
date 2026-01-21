@@ -12,28 +12,28 @@ Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you
 
 ### Connectors Overview
 
-| Metric | Total | Active | Deprecated | Unpublished |
-|:-------|------:|-------:|-----------:|------------:|
-| In Solutions | 384 | 289 | 29 | 66 |
-| Discovered* | 147 | 27 | 114 | 6 |
-| **Total** | **531** | **316** | **143** | **72** |
+| Metric | Total | Active | Deprecated | Unpublished | Microsoft | Partner | Community |
+|:-------|------:|-------:|-----------:|------------:|----------:|--------:|----------:|
+| In Solutions | **384** | 289 | 29 | 66 | 141 | 233 | 10 |
+| Discovered* | **147** | 27 | 114 | 6 | 99 | 38 | 8 |
+| **Total** | **531** | **316** | **143** | **72** | **240** | **271** | **18** |
 
 *\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions.*
 
 ### Collection Methods
 
-| Collection Method | Total | Active | Deprecated | Unpublished |
-|:-----------------|------:|-------:|-----------:|------------:|
-| Azure Function | 129 | 75 | 18 | 36 |
-| CCF | 129 | 118 | 1 | 10 |
-| MMA | 110 | 12 | 90 | 8 |
-| AMA | 59 | 25 | 34 | 0 |
-| Unknown (Custom Log) | 44 | 35 | 0 | 9 |
-| Native | 25 | 24 | 0 | 1 |
-| Azure Diagnostics | 17 | 17 | 0 | 0 |
-| REST API | 15 | 7 | 0 | 8 |
-| Unknown | 3 | 3 | 0 | 0 |
-| **Total** | **531** | **316** | **143** | **72** |
+| Collection Method | Total | Active | Deprecated | Unpublished | Microsoft | Partner | Community |
+|:-----------------|------:|-------:|-----------:|------------:|----------:|--------:|----------:|
+| Azure Function | **129** | 75 | 18 | 36 | 36 | 92 | 1 |
+| CCF | **129** | 118 | 1 | 10 | 64 | 65 | 0 |
+| MMA | **110** | 12 | 90 | 8 | 66 | 37 | 5 |
+| AMA | **59** | 25 | 34 | 0 | 26 | 26 | 7 |
+| Unknown (Custom Log) | **44** | 35 | 0 | 9 | 2 | 38 | 4 |
+| Native | **25** | 24 | 0 | 1 | 25 | 0 | 0 |
+| Azure Diagnostics | **17** | 17 | 0 | 0 | 17 | 0 | 0 |
+| REST API | **15** | 7 | 0 | 8 | 1 | 13 | 1 |
+| Unknown | **3** | 3 | 0 | 0 | 3 | 0 | 0 |
+| **Total** | **531** | **316** | **143** | **72** | **240** | **271** | **18** |
 
 *Active = Published and not deprecated.*
 

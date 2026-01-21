@@ -12,13 +12,13 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 ## Statistics
 
-| Metric | Total | Published | Unpublished |
-|:-------|------:|----------:|------------:|
-| Solutions | 487 | 402 | 85 |
-| With Connectors | 307 | 250 | 57 |
-| With Content | 386 | 329 | 57 |
-| Unique Connectors | 384 | | |
-| Tables Used | 846 | | |
+| Metric | Total | Published | Unpublished | Microsoft | Partner | Community |
+|:-------|------:|----------:|------------:|----------:|--------:|----------:|
+| Solutions | **487** | 402 | 85 | 232 | 231 | 11 |
+| With Connectors | **307** | 250 | 57 | 118 | 186 | 3 |
+| With Content | **386** | 329 | 57 | 185 | 184 | 10 |
+| Unique Connectors | **384** | | | | | |
+| Tables Used | **846** | | | | | |
 
 ---
 
