@@ -31,7 +31,7 @@ The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/p
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-28 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security) |
+| **Solution Folder** | [Trend Micro Cloud App Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security) |
 
 ## Data Connectors
 

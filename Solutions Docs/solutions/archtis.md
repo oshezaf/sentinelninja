@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/archTIS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/archTIS) |
+| **Solution Folder** | [archTIS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/archTIS) |
 
 ## Data Connectors
 

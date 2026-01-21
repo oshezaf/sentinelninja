@@ -23,7 +23,7 @@ Built on the underpinning technology of HYAS Insight threat intelligence, HYAS P
 | **Version** | 3.0.3 |
 | **Author** | Hyas |
 | **First Published** | 2023-09-26 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS%20Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS%20Protect) |
+| **Solution Folder** | [HYAS Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS%20Protect) |
 
 ## Data Connectors
 

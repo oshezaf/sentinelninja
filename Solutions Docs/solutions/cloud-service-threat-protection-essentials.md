@@ -33,7 +33,7 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials) |
+| **Solution Folder** | [Cloud Service Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials) |
 | **Dependencies** | [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure Key Vault](azure-key-vault.md) |
 
 ## Data Connectors

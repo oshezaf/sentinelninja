@@ -22,7 +22,7 @@ The [Island Enterprise Browser](https://www.island.io/) solution for Microsoft S
 | **Author** | Island - support@island.io |
 | **First Published** | 2023-05-02 |
 | **Last Updated** | 2023-07-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island) |
+| **Solution Folder** | [Island](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island) |
 
 ## Data Connectors
 

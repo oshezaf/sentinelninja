@@ -25,7 +25,7 @@ The Sevco Platform - Devices connector allows you to easily connect your Sevco D
 | **Version** | 3.0.0 |
 | **Author** | Sevco Security - support@sevco.io |
 | **First Published** | 2023-05-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SevcoSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SevcoSecurity) |
+| **Solution Folder** | [SevcoSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SevcoSecurity) |
 
 ## Data Connectors
 

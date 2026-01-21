@@ -25,7 +25,7 @@ The [Blackberry CylancePROTECT](https://www.blackberry.com/us/en/products/cylanc
 | **Version** | 3.0.1 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blackberry%20CylancePROTECT](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blackberry%20CylancePROTECT) |
+| **Solution Folder** | [Blackberry CylancePROTECT](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blackberry%20CylancePROTECT) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

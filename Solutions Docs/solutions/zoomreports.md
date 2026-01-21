@@ -29,7 +29,7 @@ The [Zoom](https://zoom.us/) Reports solution enables you to ingest Zoom Reports
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports) |
+| **Solution Folder** | [ZoomReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZoomReports) |
 
 ## Data Connectors
 

@@ -27,7 +27,7 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 | **Version** | 2.0.1 |
 | **Author** | Sophos |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Cloud%20Optix](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Cloud%20Optix) |
+| **Solution Folder** | [Sophos Cloud Optix](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Cloud%20Optix) |
 
 ## Data Connectors
 

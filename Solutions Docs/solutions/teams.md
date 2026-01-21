@@ -21,7 +21,7 @@ Microsoft Sentinel solution for Teams provides Teams security logs visibility an
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-02-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams) |
+| **Solution Folder** | [Teams](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams) |
 
 ## Data Connectors
 

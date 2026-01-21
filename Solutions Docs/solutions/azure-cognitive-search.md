@@ -27,7 +27,7 @@ The [Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-what
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-28 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cognitive%20Search](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cognitive%20Search) |
+| **Solution Folder** | [Azure Cognitive Search](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cognitive%20Search) |
 
 ## Data Connectors
 

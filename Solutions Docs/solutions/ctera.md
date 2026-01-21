@@ -23,7 +23,7 @@ The CTERA solution allows you to ingest and analyze events from CTERA Edge Filer
 | **Version** | 3.0.1 |
 | **Author** | CTERA Networks - support@ctera.com |
 | **First Published** | 2024-07-28 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTERA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTERA) |
+| **Solution Folder** | [CTERA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTERA) |
 
 ## Data Connectors
 

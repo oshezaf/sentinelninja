@@ -27,7 +27,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare) |
+| **Solution Folder** | [Flare](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare) |
 
 ## Data Connectors
 

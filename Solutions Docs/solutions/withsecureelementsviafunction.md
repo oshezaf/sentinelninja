@@ -27,7 +27,7 @@ For more information visit our website at: [https://www.withsecure.com](https://
 | **Author** | WithSecure |
 | **First Published** | 2024-02-22 |
 | **Last Updated** | 2025-04-25 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction) |
+| **Solution Folder** | [WithSecureElementsViaFunction](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction) |
 
 ## Data Connectors
 

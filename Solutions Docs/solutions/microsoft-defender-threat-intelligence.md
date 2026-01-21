@@ -21,7 +21,7 @@ Microsoft centralizes numerous data sets into a single platform, Microsoft Defen
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-03-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence) |
+| **Solution Folder** | [Microsoft Defender Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence) |
 
 ## Data Connectors
 

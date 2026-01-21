@@ -21,7 +21,7 @@ The [Shadowbytes ARIA Threat Intelligence](https://shadowbyte.com/products/aria/
 | **Version** | 2.0.0 |
 | **Author** | Shadowbyte |
 | **First Published** | 2021-12-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria) |
+| **Solution Folder** | [ShadowByte Aria](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria) |
 
 ## Data Connectors
 

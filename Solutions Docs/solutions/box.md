@@ -29,7 +29,7 @@ The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterpri
 | **Version** | 3.1.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box) |
+| **Solution Folder** | [Box](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box) |
 
 ## Data Connectors
 

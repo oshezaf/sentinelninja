@@ -21,7 +21,7 @@ The Amazon Web Services Network Firewall for Microsoft Sentinel allows you to en
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-03-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall) |
+| **Solution Folder** | [Amazon Web Services NetworkFirewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall) |
 
 ## Data Connectors
 

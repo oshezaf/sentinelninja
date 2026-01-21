@@ -25,7 +25,7 @@
 | **Version** | 3.0.3 |
 | **Author** | Cyberark |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArk%20Enterprise%20Password%20Vault%20%28EPV%29%20Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArk%20Enterprise%20Password%20Vault%20%28EPV%29%20Events) |
+| **Solution Folder** | [CyberArk Enterprise Password Vault (EPV) Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArk%20Enterprise%20Password%20Vault%20%28EPV%29%20Events) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

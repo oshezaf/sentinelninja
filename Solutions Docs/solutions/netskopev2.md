@@ -22,7 +22,7 @@ Netskope solution for Microsoft Sentinel enables you to ingest Netskope alerts a
 | **Author** | Netskope |
 | **First Published** | 2024-03-18 |
 | **Last Updated** | 2024-03-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2) |
+| **Solution Folder** | [Netskopev2](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2) |
 
 ## Data Connectors
 

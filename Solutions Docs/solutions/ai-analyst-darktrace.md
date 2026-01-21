@@ -27,7 +27,7 @@ The [AI Analyst Darktrace](https://www.darktrace.com/en/cyber-ai-analyst/) Solut
 | **Version** | 3.0.1 |
 | **Author** | Darktrace |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace) |
+| **Solution Folder** | [AI Analyst Darktrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

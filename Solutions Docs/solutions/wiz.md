@@ -29,7 +29,7 @@ b. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/#overview)
 | **Version** | 3.0.0 |
 | **Author** | Wiz - support@wiz.io |
 | **First Published** | 2023-06-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz) |
+| **Solution Folder** | [Wiz](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz) |
 
 ## Data Connectors
 

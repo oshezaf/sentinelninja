@@ -22,7 +22,7 @@ The Acronis Cyber Protect Cloud solution for Microsoft Sentinel enables companie
 | **Author** | Acronis - support@acronis.com |
 | **First Published** | 2025-10-28 |
 | **Last Updated** | 2025-10-28 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud) |
+| **Solution Folder** | [Acronis Cyber Protect Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud) |
 
 ## Data Connectors
 

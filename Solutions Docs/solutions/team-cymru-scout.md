@@ -22,7 +22,7 @@ Team Cymru Scout brings the most advanced AI-powered real-time intelligence into
 | **Author** | Team Cymru - support@cymru.com |
 | **First Published** | 2024-07-16 |
 | **Last Updated** | 2025-05-16 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout) |
+| **Solution Folder** | [Team Cymru Scout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout) |
 
 ## Data Connectors
 

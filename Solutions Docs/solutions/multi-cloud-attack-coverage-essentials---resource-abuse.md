@@ -39,7 +39,7 @@ This content covers all stages of the attack chain from an initial resource acce
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-11-22 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Multi%20Cloud%20Attack%20Coverage%20Essentials%20-%20Resource%20Abuse](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Multi%20Cloud%20Attack%20Coverage%20Essentials%20-%20Resource%20Abuse) |
+| **Solution Folder** | [Multi Cloud Attack Coverage Essentials - Resource Abuse](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Multi%20Cloud%20Attack%20Coverage%20Essentials%20-%20Resource%20Abuse) |
 | **Dependencies** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [GoogleCloudPlatformIAM](googlecloudplatformiam.md), [Google Cloud Platform Audit Logs](google-cloud-platform-audit-logs.md) |
 
 ## Data Connectors

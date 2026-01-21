@@ -21,7 +21,7 @@ The [Domaintools Iris investigate](https://www.domaintools.com/products/platform
 | **Version** | 3.0.0 |
 | **Author** | DomainTools - memberservices@domaintools.com |
 | **First Published** | 2022-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools) |
+| **Solution Folder** | [DomainTools](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools) |
 
 ## Data Connectors
 

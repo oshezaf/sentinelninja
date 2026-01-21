@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Synack](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Synack) |
+| **Solution Folder** | [Synack](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Synack) |
 
 ## Data Connectors
 

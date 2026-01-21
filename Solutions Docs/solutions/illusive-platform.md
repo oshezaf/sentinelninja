@@ -25,7 +25,7 @@ The Illusive Platform solution for Microsoft Sentinel enables you to ingest Illu
 | **Version** | 3.0.1 |
 | **Author** | Illusive Networks |
 | **First Published** | 2022-05-25 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform) |
+| **Solution Folder** | [Illusive Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

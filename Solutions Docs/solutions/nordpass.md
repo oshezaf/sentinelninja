@@ -21,7 +21,7 @@ NordPass for Microsoft Sentinel enables you to automatically transfer Activity L
 | **Version** | 3.0.1 |
 | **Author** | Nord Security Inc. |
 | **First Published** | 2025-04-22 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass) |
+| **Solution Folder** | [NordPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass) |
 
 ## Data Connectors
 

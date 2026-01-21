@@ -21,7 +21,7 @@ The [Minemeld](https://www.paloaltonetworks.com/products/secure-the-network/subs
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-10-11 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Minemeld](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Minemeld) |
+| **Solution Folder** | [Minemeld](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Minemeld) |
 
 ## Data Connectors
 

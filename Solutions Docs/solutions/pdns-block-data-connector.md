@@ -17,7 +17,7 @@
 | **Support Link** | [https://www.protectivedns.service.ncsc.gov.uk/pdns](https://www.protectivedns.service.ncsc.gov.uk/pdns) |
 | **Categories** | domains |
 | **First Published** | 2023-03-31 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PDNS%20Block%20Data%20Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PDNS%20Block%20Data%20Connector) |
+| **Solution Folder** | [PDNS Block Data Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PDNS%20Block%20Data%20Connector) |
 
 ## Data Connectors
 

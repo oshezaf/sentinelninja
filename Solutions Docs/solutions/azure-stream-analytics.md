@@ -27,7 +27,7 @@ The [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/s
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Stream%20Analytics](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Stream%20Analytics) |
+| **Solution Folder** | [Azure Stream Analytics](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Stream%20Analytics) |
 
 ## Data Connectors
 

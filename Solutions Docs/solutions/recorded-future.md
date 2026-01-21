@@ -29,7 +29,7 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 | **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
 | **First Published** | 2021-11-01 |
 | **Last Updated** | 2023-09-19 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future) |
+| **Solution Folder** | [Recorded Future](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future) |
 
 ## Data Connectors
 

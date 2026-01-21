@@ -25,7 +25,7 @@ The [Squid Proxy](http://www.squid-cache.org/) solution for Microsoft Sentinel e
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SquidProxy](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SquidProxy) |
+| **Solution Folder** | [SquidProxy](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SquidProxy) |
 | **Dependencies** | [CustomLogsAma](customlogsama.md) |
 
 ## Data Connectors

@@ -21,7 +21,7 @@ The [Palo Alto Networks](https://www.paloaltonetworks.com/) Cortex XDR Microsoft
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2023-07-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR) |
+| **Solution Folder** | [Cortex XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cortex%20XDR) |
 
 ## Data Connectors
 

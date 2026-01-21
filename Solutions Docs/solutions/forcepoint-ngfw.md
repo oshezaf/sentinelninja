@@ -27,7 +27,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Version** | 3.0.2 |
 | **Author** | Forcepoint |
 | **First Published** | 2022-05-25 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW) |
+| **Solution Folder** | [Forcepoint NGFW](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

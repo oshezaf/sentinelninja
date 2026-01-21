@@ -21,7 +21,7 @@ MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and 
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatAnalysis%26Response](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatAnalysis%26Response) |
+| **Solution Folder** | [ThreatAnalysis&Response](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatAnalysis%26Response) |
 
 ## Data Connectors
 

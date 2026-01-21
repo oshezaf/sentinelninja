@@ -21,7 +21,7 @@
 | **Version** | 3.0.1 |
 | **Author** | FalconForce - info@falconforce.nl |
 | **First Published** | 2021-10-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday) |
+| **Solution Folder** | [FalconFriday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday) |
 
 ## Data Connectors
 

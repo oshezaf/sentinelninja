@@ -21,7 +21,7 @@ The Qscout CCF data connector ingest app events logs from Quokka Qscout platform
 | **Version** | 1.0.0 |
 | **Author** | Quokka - mvang@quokka.io |
 | **First Published** | 2025-10-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka) |
+| **Solution Folder** | [Quokka](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka) |
 
 ## Data Connectors
 

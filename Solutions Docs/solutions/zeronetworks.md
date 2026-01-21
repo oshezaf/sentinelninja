@@ -30,7 +30,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Nicholas DiCola - nicholas@zeronetworks.com |
 | **First Published** | 2022-06-06 |
 | **Last Updated** | 2025-09-17 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks) |
+| **Solution Folder** | [ZeroNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks) |
 
 ## Data Connectors
 

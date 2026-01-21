@@ -27,7 +27,7 @@ The [ Barracuda WAF](https://www.barracuda.com/products/webapplicationfirewall) 
 | **Version** | 3.0.0 |
 | **Author** | Barracuda |
 | **First Published** | 2022-05-13 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20WAF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20WAF) |
+| **Solution Folder** | [Barracuda WAF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20WAF) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Additional Information

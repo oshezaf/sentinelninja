@@ -27,7 +27,7 @@ The [Contrast Protect](https://www.contrastsecurity.com/contrast-protect) soluti
 | **Version** | 3.0.1 |
 | **Author** | Contrast Security - support@contrastsecurity.com |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect) |
+| **Solution Folder** | [Contrast Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

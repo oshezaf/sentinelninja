@@ -29,7 +29,7 @@ The [Alibaba Cloud](https://www.alibabacloud.com/product/log-service) solution p
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud) |
+| **Solution Folder** | [Alibaba Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud) |
 
 ## Data Connectors
 

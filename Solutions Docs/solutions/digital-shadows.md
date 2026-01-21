@@ -28,7 +28,7 @@ The [Digital Shadows](https://www.digitalshadows.com/) Solution provides ingesti
 | **Categories** | domains |
 | **Version** | 3.0.0 |
 | **Author** | Digital Shadows - support@digitalshadows.com |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows) |
+| **Solution Folder** | [Digital Shadows](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows) |
 
 ## Data Connectors
 

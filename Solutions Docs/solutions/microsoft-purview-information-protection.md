@@ -21,7 +21,7 @@ The [Microsoft Information Protection](https://learn.microsoft.com/microsoft-365
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-01-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview%20Information%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview%20Information%20Protection) |
+| **Solution Folder** | [Microsoft Purview Information Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview%20Information%20Protection) |
 
 ## Data Connectors
 

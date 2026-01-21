@@ -44,7 +44,7 @@ It is highly recommended to use the **Summarize Data for DNS Essentials Solution
 | **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-01-14 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials) |
+| **Solution Folder** | [DNS Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials) |
 
 ## Additional Information
 

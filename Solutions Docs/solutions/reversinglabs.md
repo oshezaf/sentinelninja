@@ -22,7 +22,7 @@ The ReversingLabs Content Pack solution for Microsoft Sentinel includes a number
 | **Author** | ReversingLabs - support@reversinglabs.com |
 | **First Published** | 2022-08-08 |
 | **Last Updated** | 2024-07-17 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs) |
+| **Solution Folder** | [ReversingLabs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs) |
 
 ## Data Connectors
 

@@ -23,7 +23,7 @@ Egress Defend for Microsoft Sentinel provides details of processed emails, inclu
 | **Version** | 3.0.0 |
 | **Author** | Egress - support@egress.com |
 | **First Published** | 2023-07-27 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend) |
+| **Solution Folder** | [Egress Defend](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend) |
 
 ## Data Connectors
 

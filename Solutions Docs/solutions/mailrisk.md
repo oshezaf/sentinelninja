@@ -22,7 +22,7 @@ The [MailRisk by Secure Practice](https://securepractice.co/) solution for Micro
 | **Author** | Secure Practice - support@securepractice.co |
 | **First Published** | 2023-03-16 |
 | **Last Updated** | 2025-10-27 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk) |
+| **Solution Folder** | [MailRisk](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk) |
 
 ## Data Connectors
 

@@ -25,7 +25,7 @@ The [SonicWall Firewall](https://www.sonicwall.com/products/firewalls/) solution
 | **Version** | 3.1.2 |
 | **Author** | SonicWall |
 | **First Published** | 2022-05-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall) |
+| **Solution Folder** | [SonicWall Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products

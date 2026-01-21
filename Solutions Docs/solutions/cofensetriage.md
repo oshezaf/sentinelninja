@@ -24,7 +24,7 @@ Cofense Triage for Microsoft Sentinel.
 | **Author** | Cofense - support@cofense.com |
 | **First Published** | 2023-03-24 |
 | **Last Updated** | 2023-03-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseTriage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseTriage) |
+| **Solution Folder** | [CofenseTriage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseTriage) |
 
 ## Data Connectors
 

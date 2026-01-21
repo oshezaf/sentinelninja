@@ -23,7 +23,7 @@ The SINEC Security Guard solution for Microsoft Sentinel allows you to ingest se
 | **Version** | 3.0.3 |
 | **Author** | Siemens AG |
 | **First Published** | 2024-07-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SINEC%20Security%20Guard](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SINEC%20Security%20Guard) |
+| **Solution Folder** | [SINEC Security Guard](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SINEC%20Security%20Guard) |
 
 ## Data Connectors
 

@@ -21,7 +21,7 @@ The Knox Asset Intelligence for Microsoft Sentinel solution enables enterprise I
 | **Version** | 3.0.3 |
 | **Author** | Samsung - kai.sme@samsung.com |
 | **First Published** | 2025-01-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Samsung%20Knox%20Asset%20Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Samsung%20Knox%20Asset%20Intelligence) |
+| **Solution Folder** | [Samsung Knox Asset Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Samsung%20Knox%20Asset%20Intelligence) |
 
 ## Data Connectors
 

@@ -22,7 +22,7 @@ This application provides insight into activity of your Bitwarden organization s
 | **Author** | Bitwarden - hello@bitwarden.com |
 | **First Published** | 2024-05-12 |
 | **Last Updated** | 2024-10-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitwarden](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitwarden) |
+| **Solution Folder** | [Bitwarden](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitwarden) |
 
 ## Data Connectors
 

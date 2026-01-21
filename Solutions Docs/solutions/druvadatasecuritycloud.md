@@ -21,7 +21,7 @@ The [Druva Event CCP Connector] solution provides the capability to ingest to in
 | **Version** | 3.0.0 |
 | **Author** | Druva - support@druva.com |
 | **First Published** | 2024-12-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud) |
+| **Solution Folder** | [DruvaDataSecurityCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud) |
 
 ## Data Connectors
 

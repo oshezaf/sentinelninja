@@ -15,7 +15,7 @@
 | **Support Link** | [https://www.open-systems.com/support](https://www.open-systems.com/support) |
 | **Categories** | domains |
 | **First Published** | 2025-05-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems) |
+| **Solution Folder** | [Open Systems](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems) |
 
 ## Data Connectors
 

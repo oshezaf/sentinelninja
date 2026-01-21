@@ -34,7 +34,7 @@ b. [Microsoft Sentinel Codeless Connector Platform](https://aka.ms/Sentinel-CCP_
 | **Author** | Lookout |
 | **First Published** | 2021-10-18 |
 | **Last Updated** | 2025-12-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
+| **Solution Folder** | [Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
 
 ## Data Connectors
 

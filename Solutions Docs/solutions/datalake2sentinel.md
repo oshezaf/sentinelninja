@@ -24,7 +24,7 @@ The Datalake2Sentinel solution is a Microsoft Sentinel data connector, that allo
 | **Author** | OrangeCyberdefense |
 | **First Published** | 2024-01-15 |
 | **Last Updated** | 2024-01-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel) |
+| **Solution Folder** | [Datalake2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel) |
 
 ## Data Connectors
 

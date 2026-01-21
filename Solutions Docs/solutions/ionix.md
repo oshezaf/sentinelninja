@@ -27,7 +27,7 @@ a. [Codeless Connector Platform/Native Sentinel Polling](https://docs.microsoft.
 | **Version** | 3.0.0 |
 | **Author** | IONIX |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX) |
+| **Solution Folder** | [IONIX](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX) |
 
 ## Data Connectors
 

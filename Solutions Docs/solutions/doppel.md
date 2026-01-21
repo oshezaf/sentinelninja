@@ -23,7 +23,7 @@ The Doppel Integration for Microsoft Sentinel streamlines the ingestion of Doppe
 | **Version** | 3.0.0 |
 | **Author** | Doppel |
 | **First Published** | 2024-11-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Doppel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Doppel) |
+| **Solution Folder** | [Doppel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Doppel) |
 
 ## Data Connectors
 

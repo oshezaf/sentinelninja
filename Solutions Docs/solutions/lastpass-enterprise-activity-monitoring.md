@@ -28,7 +28,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Thijs Lecomte - thijs.lecomte@thecollective.eu |
 | **First Published** | 2021-10-20 |
 | **Last Updated** | 2022-01-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/LastPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/LastPass) |
+| **Solution Folder** | [LastPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/LastPass) |
 
 ## Data Connectors
 

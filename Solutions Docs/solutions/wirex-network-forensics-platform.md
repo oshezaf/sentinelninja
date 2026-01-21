@@ -25,7 +25,7 @@ The [WireX Systems](https://wirexsystems.com/) solution allows custom dashboards
 | **Version** | 3.0.1 |
 | **Author** | WireX Systems - info@wirexsystems.com |
 | **First Published** | 2022-05-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform) |
+| **Solution Folder** | [WireX Network Forensics Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

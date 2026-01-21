@@ -23,7 +23,7 @@ This Solution provides Playbooks for Cyble Vision Threat Intelligence ingestion 
 | **Version** | 3.0.1 |
 | **Author** | Cyble Inc |
 | **First Published** | 2025-05-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision) |
+| **Solution Folder** | [Cyble Vision](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision) |
 
 ## Data Connectors
 

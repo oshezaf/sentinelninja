@@ -22,7 +22,7 @@ The [OneTrust](https://www.onetrust.com/) solution for Microsoft Sentinel allows
 | **Author** | Support - support@onetrust.com |
 | **First Published** | 2025-10-24 |
 | **Last Updated** | 2025-10-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust) |
+| **Solution Folder** | [OneTrust](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust) |
 
 ## Data Connectors
 

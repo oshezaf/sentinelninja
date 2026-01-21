@@ -25,7 +25,7 @@ The [Zscaler Private Access (ZPA)](https://www.zscaler.com/) solution provides t
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-31 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Private%20Access%20%28ZPA%29](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Private%20Access%20%28ZPA%29) |
+| **Solution Folder** | [Zscaler Private Access (ZPA)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Private%20Access%20%28ZPA%29) |
 | **Dependencies** | [CustomLogsAma](customlogsama.md) |
 
 ## Data Connectors

@@ -23,7 +23,7 @@ Egress SIEM Connector for Microsoft Sentinel
 | **Version** | 3.0.0 |
 | **Author** | Egress - support@egress.com |
 | **First Published** | 2024-03-11 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Iris](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Iris) |
+| **Solution Folder** | [Egress Iris](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Iris) |
 
 ## Data Connectors
 

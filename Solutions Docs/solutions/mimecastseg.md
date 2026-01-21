@@ -29,7 +29,7 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 | **Author** | Mimecast - dlapi@mimecast.com |
 | **First Published** | 2022-02-24 |
 | **Last Updated** | 2022-02-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastSEG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastSEG) |
+| **Solution Folder** | [MimecastSEG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastSEG) |
 
 ## Data Connectors
 

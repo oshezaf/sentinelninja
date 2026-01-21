@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29) |
+| **Solution Folder** | [Palo Alto - XDR (Cortex)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29) |
 
 ## Data Connectors
 

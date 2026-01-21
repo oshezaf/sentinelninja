@@ -24,7 +24,7 @@ The MISP2Sentinel solution allows you to automatically push threat indicators fr
 | **Author** | MISP project & cudeso.be - info@cudeso.be |
 | **First Published** | 2023-07-29 |
 | **Last Updated** | 2023-07-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel) |
+| **Solution Folder** | [MISP2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel) |
 
 ## Data Connectors
 

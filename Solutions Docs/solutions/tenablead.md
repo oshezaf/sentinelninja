@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD) |
+| **Solution Folder** | [TenableAD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD) |
 
 ## Data Connectors
 

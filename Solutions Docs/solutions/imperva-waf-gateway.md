@@ -23,7 +23,7 @@ The Imperva WAF Gateway[https://www.imperva.com/products/web-application-firewal
 | **Version** | 2.0.0 |
 | **Author** | Imperva |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Imperva%20WAF%20Gateway](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Imperva%20WAF%20Gateway) |
+| **Solution Folder** | [Imperva WAF Gateway](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Imperva%20WAF%20Gateway) |
 
 ## Data Connectors
 

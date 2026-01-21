@@ -22,7 +22,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-10 |
 | **Last Updated** | 2022-01-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Joshua-Cyberiskvision](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Joshua-Cyberiskvision) |
+| **Solution Folder** | [Joshua-Cyberiskvision](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Joshua-Cyberiskvision) |
 
 ## Data Connectors
 

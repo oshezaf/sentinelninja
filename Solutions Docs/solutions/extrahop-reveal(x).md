@@ -25,7 +25,7 @@ The [ExtraHop Reveal(x)](https://www.extrahop.com/products/security/) Solution f
 | **Version** | 3.0.1 |
 | **Author** | ExtraHop |
 | **First Published** | 2022-05-19 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29) |
+| **Solution Folder** | [ExtraHop Reveal(x)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop%20Reveal%28x%29) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

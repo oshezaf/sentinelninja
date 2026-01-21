@@ -25,7 +25,7 @@ The [OpenVPN](https://github.com/OpenVPN) solution for Microsoft Sentinel provid
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenVPN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenVPN) |
+| **Solution Folder** | [OpenVPN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenVPN) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

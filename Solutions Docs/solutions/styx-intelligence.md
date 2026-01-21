@@ -23,7 +23,7 @@ The [StyxView Alerts](https://styxintel.com/) data connector provides the capabi
 | **Version** | 3.0.0 |
 | **Author** | Styx Intelligence - support.team@styxintel.com |
 | **First Published** | 2025-02-07 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence) |
+| **Solution Folder** | [Styx Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence) |
 
 ## Data Connectors
 

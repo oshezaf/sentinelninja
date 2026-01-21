@@ -22,7 +22,7 @@ An Azure app to enable Mimecast data to be viewed using analytical tables and ch
 | **Author** | Mimecast - dlapi@mimecast.com |
 | **First Published** | 2024-09-10 |
 | **Last Updated** | 2024-09-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast) |
+| **Solution Folder** | [Mimecast](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast) |
 
 ## Data Connectors
 

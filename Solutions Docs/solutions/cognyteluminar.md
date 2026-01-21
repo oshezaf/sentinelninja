@@ -21,7 +21,7 @@ Luminar IOCs and Leaked Credentials connector allows integration of intelligence
 | **Version** | 3.0.2 |
 | **Author** | Cognyte |
 | **First Published** | 2023-09-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar) |
+| **Solution Folder** | [CognyteLuminar](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar) |
 
 ## Data Connectors
 

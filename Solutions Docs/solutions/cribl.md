@@ -22,7 +22,7 @@ Cribl is a vendor neutral, purpose-built processing engine for data security and
 | **Author** | Cribl - tap@cribl.io |
 | **First Published** | 2024-08-01 |
 | **Last Updated** | 2024-09-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cribl](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cribl) |
+| **Solution Folder** | [Cribl](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cribl) |
 
 ## Data Connectors
 

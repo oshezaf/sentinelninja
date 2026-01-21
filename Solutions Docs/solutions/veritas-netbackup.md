@@ -21,7 +21,7 @@ The [Veritas](https://www.veritas.com/) solution for Microsoft Sentinel allows y
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-09-25 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup) |
+| **Solution Folder** | [Veritas NetBackup](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup) |
 
 ## Data Connectors
 

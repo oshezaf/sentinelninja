@@ -26,7 +26,7 @@ Vectra AI is the leader in AI-driven threat detection and response for hybrid an
 | **Author** | TME - tme@vetcra.ai |
 | **First Published** | 2023-07-04 |
 | **Last Updated** | 2024-08-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR) |
+| **Solution Folder** | [Vectra XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR) |
 
 ## Data Connectors
 

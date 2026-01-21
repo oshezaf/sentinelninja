@@ -28,7 +28,7 @@ a. [Agent-based log collection (CEF over Syslog)](https://docs.microsoft.com/azu
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-11-03 |
 | **Last Updated** | 2023-11-03 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cloud%20NGFW%20by%20Palo%20Alto%20Networks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cloud%20NGFW%20by%20Palo%20Alto%20Networks) |
+| **Solution Folder** | [Azure Cloud NGFW by Palo Alto Networks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cloud%20NGFW%20by%20Palo%20Alto%20Networks) |
 
 ## Data Connectors
 

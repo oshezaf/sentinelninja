@@ -29,7 +29,7 @@ a. [Agent based logs collection from Windows and Linux machines](https://docs.mi
 | **Version** | 3.0.2 |
 | **Author** | Semperis |
 | **First Published** | 2021-10-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector) |
+| **Solution Folder** | [Semperis Directory Services Protector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector) |
 
 ## Data Connectors
 

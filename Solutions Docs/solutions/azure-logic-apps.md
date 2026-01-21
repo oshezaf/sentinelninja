@@ -27,7 +27,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Logic%20Apps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Logic%20Apps) |
+| **Solution Folder** | [Azure Logic Apps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Logic%20Apps) |
 
 ## Data Connectors
 

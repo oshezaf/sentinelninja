@@ -25,7 +25,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.0 |
 | **Author** | Eset |
 | **First Published** | 2022-05-11 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center) |
+| **Solution Folder** | [Eset Security Management Center](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center) |
 
 ## Data Connectors
 

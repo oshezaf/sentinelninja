@@ -28,7 +28,7 @@ a. [Agent-based log collection (Syslog) ](https://learn.microsoft.com/azure/sent
 | **Author** | Cisco Systems - support@cisco.com |
 | **First Published** | 2023-06-01 |
 | **Last Updated** | 2024-06-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN) |
+| **Solution Folder** | [Cisco SD-WAN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN) |
 
 ## Data Connectors
 

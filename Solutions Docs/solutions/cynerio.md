@@ -22,7 +22,7 @@ The [Cynerio](https://www.cynerio.com/) solution for Microsoft Sentinel enables 
 | **Author** | micha@cynerio.co |
 | **First Published** | 2023-03-29 |
 | **Last Updated** | 2023-03-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cynerio](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cynerio) |
+| **Solution Folder** | [Cynerio](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cynerio) |
 
 ## Data Connectors
 

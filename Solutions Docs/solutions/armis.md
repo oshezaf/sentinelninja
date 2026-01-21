@@ -22,7 +22,7 @@ The [Armis](https://www.armis.com/) Solution gives the capability to ingest Armi
 | **Author** | {Armis - support@armis.com} |
 | **First Published** | 2022-08-02 |
 | **Last Updated** | 2024-08-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis) |
+| **Solution Folder** | [Armis](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis) |
 
 ## Data Connectors
 

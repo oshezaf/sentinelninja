@@ -25,7 +25,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-07 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSA%20SecurID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSA%20SecurID) |
+| **Solution Folder** | [RSA SecurID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSA%20SecurID) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

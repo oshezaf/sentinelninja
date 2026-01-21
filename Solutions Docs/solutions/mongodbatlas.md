@@ -25,7 +25,7 @@ This custom data connector uses a Function App to pull MongoDB Atlas log files (
 | **Version** | 3.0.8 |
 | **Author** | steve.lord@improving.com |
 | **First Published** | 2025-08-22 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas) |
+| **Solution Folder** | [MongoDBAtlas](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas) |
 
 ## Data Connectors
 

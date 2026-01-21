@@ -23,7 +23,7 @@ The IPinfo data connectors installs Azure Function app to download different dat
 | **Version** | 3.0.1 |
 | **Author** | IPinfo |
 | **First Published** | 2024-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo) |
+| **Solution Folder** | [IPinfo](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo) |
 
 ## Data Connectors
 

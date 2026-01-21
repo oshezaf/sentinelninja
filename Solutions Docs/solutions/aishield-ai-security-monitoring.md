@@ -28,7 +28,7 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 | **Author** | AIShield - AIShield.Contact@bosch.com |
 | **First Published** | 2022-01-11 |
 | **Last Updated** | 2025-03-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AIShield%20AI%20Security%20Monitoring](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AIShield%20AI%20Security%20Monitoring) |
+| **Solution Folder** | [AIShield AI Security Monitoring](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AIShield%20AI%20Security%20Monitoring) |
 
 ## Data Connectors
 

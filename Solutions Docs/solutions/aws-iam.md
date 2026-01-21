@@ -21,7 +21,7 @@ The [Amazon Web Services (AWS) Identity and Access Management (IAM)](https://aws
 | **Version** | 2.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-28 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM) |
+| **Solution Folder** | [AWS_IAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM) |
 
 ## Data Connectors
 

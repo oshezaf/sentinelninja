@@ -22,7 +22,7 @@ ServiceNow's Threat Intelligence Security Center (TISC) is an advanced security 
 | **Author** | ServiceNow |
 | **First Published** | 2025-01-15 |
 | **Last Updated** | 2025-01-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow%20TISC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow%20TISC) |
+| **Solution Folder** | [ServiceNow TISC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow%20TISC) |
 
 ## Data Connectors
 

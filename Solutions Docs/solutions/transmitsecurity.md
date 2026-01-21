@@ -22,7 +22,7 @@ The [Transmit Security] data connector provides the capability to ingest common 
 | **Author** | Transmit Security |
 | **First Published** | 2024-06-10 |
 | **Last Updated** | 2024-11-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TransmitSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TransmitSecurity) |
+| **Solution Folder** | [TransmitSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TransmitSecurity) |
 
 ## Data Connectors
 

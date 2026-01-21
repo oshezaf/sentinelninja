@@ -29,7 +29,7 @@ The [Google Workspace](https://workspace.google.com/) solution for Microsoft Sen
 | **Version** | 2.0.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports) |
+| **Solution Folder** | [GoogleWorkspaceReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports) |
 
 ## Data Connectors
 

@@ -25,7 +25,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Version** | 3.0.3 |
 | **Author** | Aruba Networks |
 | **First Published** | 2022-05-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass) |
+| **Solution Folder** | [Aruba ClearPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

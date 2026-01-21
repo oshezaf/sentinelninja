@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/InsightVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/InsightVM) |
+| **Solution Folder** | [InsightVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/InsightVM) |
 
 ## Data Connectors
 

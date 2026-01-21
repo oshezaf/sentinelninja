@@ -31,7 +31,7 @@ The [Auth0 Access Management](https://auth0.com/access-management) solution for 
 | **Version** | 3.1.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-08-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0) |
+| **Solution Folder** | [Auth0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0) |
 
 ## Data Connectors
 

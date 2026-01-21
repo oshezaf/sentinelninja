@@ -23,7 +23,7 @@ The SOC Handbook solution for Microsoft Sentinel provides a collection of resour
 | **Version** | 3.0.5 |
 | **Author** | Community |
 | **First Published** | 2022-11-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Handbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Handbook) |
+| **Solution Folder** | [SOC Handbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Handbook) |
 
 ## Data Connectors
 

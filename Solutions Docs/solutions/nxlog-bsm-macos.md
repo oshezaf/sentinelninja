@@ -23,7 +23,7 @@ The [NXLog BSM](https://docs.nxlog.co/refman/current/im/bsm.html) macOS data con
 | **Version** | 2.0.1 |
 | **Author** | NXLog |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20BSM%20macOS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20BSM%20macOS) |
+| **Solution Folder** | [NXLog BSM macOS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20BSM%20macOS) |
 
 ## Data Connectors
 

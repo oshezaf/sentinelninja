@@ -21,7 +21,7 @@ The [NC Protect Data Connector (archtis.com)](https://info.archtis.com/get-start
 | **Version** | 3.0.0 |
 | **Author** | archTIS |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector) |
+| **Solution Folder** | [NC Protect Data Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector) |
 
 ## Data Connectors
 

@@ -29,7 +29,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.1 |
 | **Author** | NXLog |
 | **First Published** | 2022-05-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLogAixAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLogAixAudit) |
+| **Solution Folder** | [NXLogAixAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLogAixAudit) |
 
 ## Data Connectors
 

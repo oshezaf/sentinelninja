@@ -27,7 +27,7 @@
 | **Version** | 3.4.0 |
 | **Author** | app-integrations@illumio.com |
 | **First Published** | 2024-05-13 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS) |
+| **Solution Folder** | [IllumioSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS) |
 
 ## Data Connectors
 

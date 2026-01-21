@@ -24,7 +24,7 @@ The Lumen Defender Threat Feed for Microsoft Sentinel solution delivers high-con
 | **Author** | Matthew Collier - matthew.collier@lumen.com |
 | **First Published** | 2025-09-12 |
 | **Last Updated** | 2025-09-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed) |
+| **Solution Folder** | [Lumen Defender Threat Feed](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed) |
 
 ## Data Connectors
 

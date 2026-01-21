@@ -21,7 +21,7 @@ The [CloudGuard](https://sc1.checkpoint.com/documents/CloudGuard_Dome9/Documenta
 | **Version** | 3.0.0 |
 | **Author** | Checkpoint - support@checkpoint.com |
 | **First Published** | 2024-11-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP) |
+| **Solution Folder** | [Check Point CloudGuard CNAPP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP) |
 
 ## Data Connectors
 

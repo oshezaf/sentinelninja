@@ -29,7 +29,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.1 |
 | **Author** | F5 Networks |
 | **First Published** | 2022-05-25 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20BIG-IP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20BIG-IP) |
+| **Solution Folder** | [F5 BIG-IP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20BIG-IP) |
 
 ## Additional Information
 

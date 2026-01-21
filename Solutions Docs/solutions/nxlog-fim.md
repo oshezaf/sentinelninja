@@ -23,7 +23,7 @@ The [NXLog FIM](https://docs.nxlog.co/refman/current/im/fim.html) module allows 
 | **Version** | 2.0.1 |
 | **Author** | NXLog - support@nxlog.org |
 | **First Published** | 2022-08-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20FIM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20FIM) |
+| **Solution Folder** | [NXLog FIM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20FIM) |
 
 ## Data Connectors
 

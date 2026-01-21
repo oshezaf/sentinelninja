@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HoneyTokens](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HoneyTokens) |
+| **Solution Folder** | [HoneyTokens](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HoneyTokens) |
 
 ## Data Connectors
 

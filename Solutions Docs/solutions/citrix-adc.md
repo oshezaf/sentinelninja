@@ -25,7 +25,7 @@ The [Citrix ADC](https://www.citrix.com/products/citrix-adc/) (formerly NetScale
 | **Version** | 3.0.3 |
 | **Author** | Microsoft-support@microsoft.com |
 | **First Published** | 2022-06-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC) |
+| **Solution Folder** | [Citrix ADC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

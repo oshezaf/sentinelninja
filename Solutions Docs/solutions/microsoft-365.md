@@ -27,7 +27,7 @@ The Microsoft 365 solution for Microsoft Sentinel enables you to ingest operatio
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365) |
+| **Solution Folder** | [Microsoft 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365) |
 
 ## Data Connectors
 

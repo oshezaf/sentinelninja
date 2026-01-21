@@ -39,7 +39,7 @@ Please note that this option doesn't require installation of content hub solutio
 | **Version** | 2.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-19 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow) |
+| **Solution Folder** | [Servicenow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow) |
 
 ## Data Connectors
 

@@ -35,7 +35,7 @@ This solution might take a dependency on the other technologies, and some of the
 | **Version** | 3.0.2 |
 | **Author** | NetClean Technologies AB |
 | **First Published** | 2022-06-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetClean%20ProActive](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetClean%20ProActive) |
+| **Solution Folder** | [NetClean ProActive](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetClean%20ProActive) |
 
 ## Data Connectors
 

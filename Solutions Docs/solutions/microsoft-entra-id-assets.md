@@ -21,7 +21,7 @@ Entra ID assets data connector gives richer insights into activity data by suppl
 | **Version** | 3.0.1 |
 | **Author** | Microsoft |
 | **First Published** | 2025-06-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Assets](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Assets) |
+| **Solution Folder** | [Microsoft Entra ID Assets](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Assets) |
 
 ## Data Connectors
 

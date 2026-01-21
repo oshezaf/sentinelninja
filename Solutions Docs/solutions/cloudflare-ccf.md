@@ -27,7 +27,7 @@ The [Cloudflare](https://www.cloudflare.com/) solution provides the capability t
 | **Version** | 3.0.0 |
 | **Author** | Cloudflare - support@cloudflare.com |
 | **First Published** | 2025-09-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%20CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%20CCF) |
+| **Solution Folder** | [Cloudflare CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%20CCF) |
 
 ## Data Connectors
 

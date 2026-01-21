@@ -29,7 +29,7 @@ b. [Azure Logic Apps](https://azure.microsoft.com/products/logic-apps/#overview)
 | **Version** | 3.0.0 |
 | **Author** | DEFEND Ltd. |
 | **First Published** | 2023-09-22 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Integration%20for%20Atlassian%20Beacon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Integration%20for%20Atlassian%20Beacon) |
+| **Solution Folder** | [Integration for Atlassian Beacon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Integration%20for%20Atlassian%20Beacon) |
 
 ## Data Connectors
 

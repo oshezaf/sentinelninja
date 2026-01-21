@@ -22,7 +22,7 @@ SAP LogServ provides the SAP RISE logs to Microsoft Sentinel, allowing SOC teams
 | **Author** | SAP |
 | **First Published** | 2025-02-17 |
 | **Last Updated** | 2025-07-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ) |
+| **Solution Folder** | [SAP LogServ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ) |
 
 ## Data Connectors
 

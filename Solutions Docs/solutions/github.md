@@ -33,7 +33,7 @@ The [GitHub](https://github.com/) Solution for Microsoft Sentinel enables you to
 | **Version** | 3.1.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub) |
+| **Solution Folder** | [GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub) |
 
 ## Data Connectors
 

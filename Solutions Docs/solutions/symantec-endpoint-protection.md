@@ -25,7 +25,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection) |
+| **Solution Folder** | [Symantec Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Additional Information

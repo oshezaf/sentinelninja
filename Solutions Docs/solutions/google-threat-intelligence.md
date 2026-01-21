@@ -22,7 +22,7 @@ This Google Threat Intelligence Solution contains Playbooks that can help enrich
 | **Author** | Google |
 | **First Published** | 2024-10-26 |
 | **Last Updated** | 2024-10-26 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence) |
+| **Solution Folder** | [Google Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence) |
 
 ## Data Connectors
 

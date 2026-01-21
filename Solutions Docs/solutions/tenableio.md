@@ -29,7 +29,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **Version** | 2.0.2 |
 | **Author** | Tenable - support@tenable.com |
 | **First Published** | 2022-06-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO) |
+| **Solution Folder** | [TenableIO](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO) |
 
 ## Data Connectors
 

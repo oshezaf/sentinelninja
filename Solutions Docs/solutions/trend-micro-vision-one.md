@@ -28,7 +28,7 @@ The [Trend Vision One](https://www.trendmicro.com/en_us/business/products/detect
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-11 |
 | **Last Updated** | 2024-07-16 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Vision%20One](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Vision%20One) |
+| **Solution Folder** | [Trend Micro Vision One](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Vision%20One) |
 
 ## Data Connectors
 

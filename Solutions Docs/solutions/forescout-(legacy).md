@@ -23,7 +23,7 @@ The [Forescout](https://www.forescout.com/) solution provides the capability to 
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20%28Legacy%29](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20%28Legacy%29) |
+| **Solution Folder** | [Forescout (Legacy)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20%28Legacy%29) |
 
 ## Data Connectors
 

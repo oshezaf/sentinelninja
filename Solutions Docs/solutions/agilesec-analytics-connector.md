@@ -26,7 +26,7 @@ The AgileSec Analytics Connector solution provides the capability to ingest Agil
 | **Categories** | domains |
 | **Version** | 2.0.0 |
 | **Author** | InfoSecGlobal |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AgileSec%20Analytics%20Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AgileSec%20Analytics%20Connector) |
+| **Solution Folder** | [AgileSec Analytics Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AgileSec%20Analytics%20Connector) |
 
 ## Data Connectors
 

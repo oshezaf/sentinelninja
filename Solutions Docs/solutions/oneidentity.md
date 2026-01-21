@@ -29,7 +29,7 @@ a. [Agent-based log collection (CEF over Syslog)](https://docs.microsoft.com/azu
 | **Version** | 2.0.1 |
 | **Author** | One Identity |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneIdentity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneIdentity) |
+| **Solution Folder** | [OneIdentity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneIdentity) |
 
 ## Data Connectors
 

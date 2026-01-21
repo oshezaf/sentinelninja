@@ -21,7 +21,7 @@ Cyberint, a Check Point company, provides Microsoft Sentinel integration to stre
 | **Version** | 3.0.1 |
 | **Author** | Cyberint - support@checkpoint.com |
 | **First Published** | 2025-04-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC) |
+| **Solution Folder** | [Check Point Cyberint IOC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC) |
 
 ## Data Connectors
 

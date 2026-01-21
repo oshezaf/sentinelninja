@@ -21,7 +21,7 @@ The [Azure Activity](https://docs.microsoft.com/azure/azure-monitor/essentials/a
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity) |
+| **Solution Folder** | [Azure Activity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity) |
 
 ## Data Connectors
 

@@ -21,7 +21,7 @@ Solution for Microsoft Sentinel to ingest logs from PureStorage arrays
 | **Version** | 3.0.1 |
 | **Author** | Pure Storage - support@purestorage.com |
 | **First Published** | 2024-02-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage) |
+| **Solution Folder** | [Pure Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage) |
 
 ## Data Connectors
 

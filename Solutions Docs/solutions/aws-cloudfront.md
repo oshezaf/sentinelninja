@@ -21,7 +21,7 @@ The Amazon Web Services CloudFront for Microsoft Sentinel allows you to enable S
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-03-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront) |
+| **Solution Folder** | [AWS CloudFront](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront) |
 
 ## Data Connectors
 

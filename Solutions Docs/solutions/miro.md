@@ -26,7 +26,7 @@ This solution is dependent on the following technology and this dependency may b
 | **Categories** | domains |
 | **Version** | 3.0.0 |
 | **Author** | Miro - enterprise_integrations@miro.com |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro) |
+| **Solution Folder** | [Miro](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro) |
 
 ## Data Connectors
 

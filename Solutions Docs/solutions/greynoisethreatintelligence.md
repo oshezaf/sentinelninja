@@ -23,7 +23,7 @@ The [GreyNoise Threat Intelligence](https://www.greynoise.io/) solution for Micr
 | **Author** | JP Bourget jp@bluecycle.net |
 | **First Published** | 2023-09-05 |
 | **Last Updated** | 2025-07-28 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence) |
+| **Solution Folder** | [GreyNoiseThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence) |
 
 ## Data Connectors
 

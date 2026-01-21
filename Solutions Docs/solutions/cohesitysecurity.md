@@ -21,7 +21,7 @@ This product integrates Cohesity Helios with Microsoft Sentinel to stay updated 
 | **Version** | 3.1.3 |
 | **Author** | Cohesity - support@cohesity.com |
 | **First Published** | 2022-10-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity) |
+| **Solution Folder** | [CohesitySecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity) |
 
 ## Data Connectors
 

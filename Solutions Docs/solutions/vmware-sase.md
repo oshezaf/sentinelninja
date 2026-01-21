@@ -39,7 +39,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 1.0.0 |
 | **Author** | VMware by Broadcom |
 | **First Published** | 2023-12-31 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20SD-WAN%20and%20SASE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20SD-WAN%20and%20SASE) |
+| **Solution Folder** | [VMware SD-WAN and SASE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20SD-WAN%20and%20SASE) |
 
 ## Data Connectors
 

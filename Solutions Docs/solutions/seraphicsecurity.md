@@ -22,7 +22,7 @@ The Seraphic Web Security data connector provides the capability to ingest [Sera
 | **Author** | Seraphic Security - support@seraphicsecurity.con |
 | **First Published** | 2023-07-31 |
 | **Last Updated** | 2023-07-31 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity) |
+| **Solution Folder** | [SeraphicSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity) |
 
 ## Data Connectors
 

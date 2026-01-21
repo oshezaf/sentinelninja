@@ -21,7 +21,7 @@ The Obsidian Datasharing solution for Microsoft Sentinel enables you to ingest O
 | **Version** | 3.0.0 |
 | **Author** | Timothy Zhou - tzhou@obsidiansecurity.com |
 | **First Published** | 2024-01-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing) |
+| **Solution Folder** | [Obsidian Datasharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing) |
 
 ## Data Connectors
 

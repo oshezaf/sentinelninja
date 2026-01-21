@@ -21,7 +21,7 @@ The [Morphisec](https://www.morphisec.com/) solution for Microsoft Sentinel enab
 | **Version** | 3.1.0 |
 | **Author** | Morphisec |
 | **First Published** | 2022-05-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec) |
+| **Solution Folder** | [Morphisec](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec) |
 
 ## Data Connectors
 

@@ -29,7 +29,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 3.0.1 |
 | **Author** | Microsoft |
 | **First Published** | 2025-10-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot) |
+| **Solution Folder** | [Microsoft Copilot](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot) |
 
 ## Data Connectors
 

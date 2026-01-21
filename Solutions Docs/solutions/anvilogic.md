@@ -27,7 +27,7 @@ a. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/
 | **Version** | 3.0.0 |
 | **Author** | Anvilogic |
 | **First Published** | 2025-06-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic) |
+| **Solution Folder** | [Anvilogic](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic) |
 
 ## Data Connectors
 

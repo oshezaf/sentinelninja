@@ -21,7 +21,7 @@ The CYFIRMA Cyber Intelligence solution integrates with Microsoft Sentinel to pr
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-05-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence) |
+| **Solution Folder** | [Cyfirma Cyber Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence) |
 
 ## Data Connectors
 

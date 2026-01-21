@@ -23,7 +23,7 @@ Intel 471 Threat Intelligence integration ingests malware indicators into Log An
 | **Version** | 3.0.0 |
 | **Author** | Intel 471 Inc. |
 | **First Published** | 2023-06-21 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Intel471](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Intel471) |
+| **Solution Folder** | [Intel471](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Intel471) |
 
 ## Data Connectors
 

@@ -22,7 +22,7 @@ The [Contrast Security](https://www.contrastsecurity.com/contrast-adr) solution 
 | **Author** | Contrast Security |
 | **First Published** | 2025-01-18 |
 | **Last Updated** | 2025-01-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR) |
+| **Solution Folder** | [ContrastADR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR) |
 
 ## Data Connectors
 

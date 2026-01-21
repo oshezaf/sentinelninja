@@ -22,7 +22,7 @@ Dataminr Pulse brings the most advanced AI-powered real-time intelligence into M
 | **Author** | Dataminr - info@dataminr.com |
 | **First Published** | 2023-04-12 |
 | **Last Updated** | 2023-04-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse) |
+| **Solution Folder** | [Dataminr Pulse](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse) |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

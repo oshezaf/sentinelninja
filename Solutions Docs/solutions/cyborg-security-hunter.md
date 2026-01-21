@@ -22,7 +22,7 @@ The [Cyborg Security HUNTER](https://www.cyborgsecurity.com/) solution for Micro
 | **Author** | Mike Mitchell - mike@cyborgsecurity.com |
 | **First Published** | 2023-07-03 |
 | **Last Updated** | 2023-09-22 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER) |
+| **Solution Folder** | [Cyborg Security HUNTER](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER) |
 
 ## Data Connectors
 

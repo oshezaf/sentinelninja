@@ -27,7 +27,7 @@ a. [Office Management API ](https://docs.microsoft.com/office/office-365-managem
 | **Version** | 2.0.1 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20PowerBI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20PowerBI) |
+| **Solution Folder** | [Microsoft PowerBI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20PowerBI) |
 
 ## Data Connectors
 

@@ -26,7 +26,7 @@
 | **Author** | RidgeSecurity - oliver@ridgesecurity.ai |
 | **First Published** | 2023-10-23 |
 | **Last Updated** | 2023-10-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity) |
+| **Solution Folder** | [RidgeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

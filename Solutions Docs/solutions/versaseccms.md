@@ -22,7 +22,7 @@ Ingests Versasec Cms system logs into Microsoft Sentinel using a REST API poller
 | **Categories** | domains |
 | **Version** | 1.0.0 |
 | **Author** | Versasec AB - info@versasec.com |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS) |
+| **Solution Folder** | [VersasecCMS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS) |
 
 ## Data Connectors
 

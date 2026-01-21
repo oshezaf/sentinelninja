@@ -27,7 +27,7 @@ The [Infoblox](https://www.infoblox.com/) Cloud solution allows you to easily co
 | **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20Cloud%20Data%20Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20Cloud%20Data%20Connector) |
+| **Solution Folder** | [Infoblox Cloud Data Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20Cloud%20Data%20Connector) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

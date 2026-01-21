@@ -22,7 +22,7 @@ Configure the ExtraHop Detection Data Connector to send ExtraHop detection data 
 | **Author** | Shwetha Somashekar - shwethas@extrahop.com |
 | **First Published** | 2025-02-11 |
 | **Last Updated** | 2025-06-04 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop) |
+| **Solution Folder** | [ExtraHop](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop) |
 
 ## Data Connectors
 

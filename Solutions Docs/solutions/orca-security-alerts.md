@@ -23,7 +23,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.1 |
 | **Author** | Orca Security |
 | **First Published** | 2022-05-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts) |
+| **Solution Folder** | [Orca Security Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts) |
 
 ## Data Connectors
 

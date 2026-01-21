@@ -39,7 +39,7 @@ g. [Azure Log Analytics](https://learn.microsoft.com/azure/azure-monitor/logs/lo
 | **Version** | 3.0.1 |
 | **Author** | Veeam Software - microsoftappsupport@veeam.com |
 | **First Published** | 2025-08-26 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam) |
+| **Solution Folder** | [Veeam](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam) |
 
 ## Data Connectors
 

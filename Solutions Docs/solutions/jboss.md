@@ -25,7 +25,7 @@ The JBoss Enterprise Application Platform data connector provides the capability
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JBoss](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JBoss) |
+| **Solution Folder** | [JBoss](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JBoss) |
 | **Dependencies** | [CustomLogsAma](customlogsama.md) |
 
 ## Data Connectors

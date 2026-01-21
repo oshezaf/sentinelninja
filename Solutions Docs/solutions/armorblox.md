@@ -35,7 +35,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 3.0.1 |
 | **Author** | Armorblox - support@armorblox.com |
 | **First Published** | 2021-10-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox) |
+| **Solution Folder** | [Armorblox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox) |
 
 ## Data Connectors
 

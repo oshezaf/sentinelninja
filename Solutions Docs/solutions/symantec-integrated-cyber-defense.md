@@ -27,7 +27,7 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 | **Version** | 2.0.0 |
 | **Author** | Symantec |
 | **First Published** | 2022-06-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Integrated%20Cyber%20Defense](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Integrated%20Cyber%20Defense) |
+| **Solution Folder** | [Symantec Integrated Cyber Defense](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Integrated%20Cyber%20Defense) |
 
 ## Data Connectors
 

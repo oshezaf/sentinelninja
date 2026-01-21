@@ -24,7 +24,7 @@ The [Cyera DSPM](https://api.cyera.io/) data connector allows you to connect to 
 | **Author** | Cyera DSPM OCTO Team - support@cyera.io |
 | **First Published** | 2025-10-15 |
 | **Last Updated** | 2025-10-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM) |
+| **Solution Folder** | [CyeraDSPM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM) |
 
 ## Data Connectors
 

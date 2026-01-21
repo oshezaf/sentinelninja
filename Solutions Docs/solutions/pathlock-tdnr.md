@@ -31,7 +31,7 @@ This out-of-the-box connector simplifies secure event forwarding from SAP to Mic
 | **Version** | 3.0.0 |
 | **Author** | Pathlock Inc. - support@pathlock.com |
 | **First Published** | 2022-02-17 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR) |
+| **Solution Folder** | [Pathlock_TDnR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR) |
 
 ## Data Connectors
 

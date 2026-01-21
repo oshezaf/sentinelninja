@@ -31,7 +31,7 @@ The Common Event Format (CEF) provides natively search & correlation, alerting a
 | **Author** | WithSecure |
 | **First Published** | 2022-11-03 |
 | **Last Updated** | 2022-11-03 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaConnector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaConnector) |
+| **Solution Folder** | [WithSecureElementsViaConnector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaConnector) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

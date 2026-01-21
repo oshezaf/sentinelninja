@@ -21,7 +21,7 @@ Entrust  offers Cloud-based identity and access management (IAM) solution with m
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-05-22 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service) |
+| **Solution Folder** | [Entrust identity as Service](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service) |
 
 ## Data Connectors
 

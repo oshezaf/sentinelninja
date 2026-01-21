@@ -25,7 +25,7 @@ The Apache Tomcat solution provides the capability to ingest [Apache Tomcat](htt
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-31 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tomcat](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tomcat) |
+| **Solution Folder** | [Tomcat](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tomcat) |
 | **Dependencies** | [CustomLogsAma](customlogsama.md) |
 
 ## Data Connectors

@@ -22,7 +22,7 @@ The [Tanium](https://www.tanium.com/) solution for Microsoft Sentinel enables yo
 | **Author** | Tanium - support@tanium.com |
 | **First Published** | 2022-05-16 |
 | **Last Updated** | 2025-07-03 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium) |
+| **Solution Folder** | [Tanium](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium) |
 
 ## Data Connectors
 

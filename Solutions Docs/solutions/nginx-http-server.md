@@ -25,7 +25,7 @@ The [NGINX](https://nginx.org/) HTTP Server data connector provides the capabili
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-12-16 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NGINX%20HTTP%20Server](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NGINX%20HTTP%20Server) |
+| **Solution Folder** | [NGINX HTTP Server](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NGINX%20HTTP%20Server) |
 | **Dependencies** | [CustomLogsAma](customlogsama.md) |
 
 ## Data Connectors

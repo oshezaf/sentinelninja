@@ -23,7 +23,7 @@ The [42Crunch](https://42crunch.com/) API Protection solution protects APIs by i
 | **Version** | 2.0.3 |
 | **Author** | 42Crunch - plugins@42crunch.com |
 | **First Published** | 2022-09-21 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection) |
+| **Solution Folder** | [42Crunch API Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection) |
 
 ## Data Connectors
 

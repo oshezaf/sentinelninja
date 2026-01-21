@@ -28,7 +28,7 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 | **Author** | Infoblox |
 | **First Published** | 2024-07-15 |
 | **Last Updated** | 2024-07-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox) |
+| **Solution Folder** | [Infoblox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox) |
 
 ## Data Connectors
 

@@ -27,7 +27,7 @@ The [Automated Logic WebCTRL](https://www.automatedlogic.com/en/products/webctrl
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ALC-WebCTRL](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ALC-WebCTRL) |
+| **Solution Folder** | [ALC-WebCTRL](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ALC-WebCTRL) |
 
 ## Data Connectors
 

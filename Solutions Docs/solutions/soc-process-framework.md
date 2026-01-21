@@ -21,7 +21,7 @@ The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboa
 | **Version** | 3.0.0 |
 | **Author** | Rin Ure - rin.ure@microsoft.com |
 | **First Published** | 2022-04-08 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework) |
+| **Solution Folder** | [SOC-Process-Framework](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework) |
 
 ## Data Connectors
 

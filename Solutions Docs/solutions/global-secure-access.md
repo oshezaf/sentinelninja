@@ -32,7 +32,7 @@ This solution depends on the following technologies, and some of these dependenc
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-04-08 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Global%20Secure%20Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Global%20Secure%20Access) |
+| **Solution Folder** | [Global Secure Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Global%20Secure%20Access) |
 
 ## Data Connectors
 

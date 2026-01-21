@@ -21,7 +21,7 @@ The [SOC Prime Audit Logs](https://tdm.socprime.com/login) data connector allows
 | **Version** | 3.0.0 |
 | **Author** | SOC Prime - support@socprime.com |
 | **First Published** | 2025-09-25 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF) |
+| **Solution Folder** | [SOC Prime CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF) |
 
 ## Data Connectors
 

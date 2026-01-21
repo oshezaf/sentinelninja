@@ -38,7 +38,7 @@ You can find and install Salem, AI cyber analyst in the [Azure Marketplace](http
 | **Author** | Salem Cyber - support@salemcyber.com |
 | **First Published** | 2023-07-21 |
 | **Last Updated** | 2023-07-21 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber) |
+| **Solution Folder** | [SalemCyber](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber) |
 
 ## Data Connectors
 

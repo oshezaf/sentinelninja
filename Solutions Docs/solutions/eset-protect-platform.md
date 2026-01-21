@@ -34,7 +34,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **Author** | ESET |
 | **First Published** | 2024-10-29 |
 | **Last Updated** | 2025-06-17 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform) |
+| **Solution Folder** | [ESET Protect Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform) |
 
 ## Data Connectors
 

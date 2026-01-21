@@ -29,7 +29,7 @@ The [Bitglass](https://www.forcepoint.com/bitglass) solution provides the capabi
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitglass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitglass) |
+| **Solution Folder** | [Bitglass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitglass) |
 
 ## Data Connectors
 

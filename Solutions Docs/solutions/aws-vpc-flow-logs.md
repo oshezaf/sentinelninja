@@ -23,7 +23,7 @@ Amazon Web Services S3 VPC Flow Logs Solution for Microsoft Sentinel provides da
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-07-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs) |
+| **Solution Folder** | [AWS VPC Flow Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs) |
 
 ## Data Connectors
 

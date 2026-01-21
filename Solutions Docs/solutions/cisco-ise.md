@@ -25,7 +25,7 @@ The [Cisco ISE](https://www.cisco.com/c/en_in/products/security/identity-service
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-03 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE) |
+| **Solution Folder** | [Cisco ISE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

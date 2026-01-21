@@ -25,7 +25,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Version** | 3.0.0 |
 | **Author** | WatchGuard |
 | **First Published** | 2022-05-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchguard%20Firebox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchguard%20Firebox) |
+| **Solution Folder** | [Watchguard Firebox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchguard%20Firebox) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

@@ -21,7 +21,7 @@ The Watchlist Utilities solution for Microsoft Sentinel contains Playbooks that 
 | **Version** | 2.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchlists%20Utilities](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchlists%20Utilities) |
+| **Solution Folder** | [Watchlists Utilities](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchlists%20Utilities) |
 
 ## Data Connectors
 

@@ -21,7 +21,7 @@ This solution allows affiliated organizations to share cyber threat intelligence
 | **Version** | 3.0.1 |
 | **Author** | NCSC-NL - info@ncsc.nl |
 | **First Published** | 2025-05-19 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing) |
+| **Solution Folder** | [NCSC-NL NDN Cyber Threat Intelligence Sharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing) |
 
 ## Data Connectors
 

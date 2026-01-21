@@ -24,7 +24,7 @@ Microsoft Sentinel has recently improved its threat intelligence hunting experie
 | **Version** | 3.0.11 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20%28NEW%29](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20%28NEW%29) |
+| **Solution Folder** | [Threat Intelligence (NEW)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20%28NEW%29) |
 
 ## Data Connectors
 

@@ -23,7 +23,7 @@ The [Authomize Solution](https://authomize.com) integrates Authomize with Micros
 | **Version** | 3.0.0 |
 | **Author** | Authomize - support@authomize.com |
 | **First Published** | 2023-06-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Authomize](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Authomize) |
+| **Solution Folder** | [Authomize](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Authomize) |
 
 ## Data Connectors
 

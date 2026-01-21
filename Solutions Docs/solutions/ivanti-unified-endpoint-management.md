@@ -25,7 +25,7 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ivanti%20Unified%20Endpoint%20Management](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ivanti%20Unified%20Endpoint%20Management) |
+| **Solution Folder** | [Ivanti Unified Endpoint Management](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ivanti%20Unified%20Endpoint%20Management) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

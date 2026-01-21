@@ -21,7 +21,7 @@ The CYFIRMA Compromised Accounts solution integrates with Microsoft Sentinel to 
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-05-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Compromised%20Accounts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Compromised%20Accounts) |
+| **Solution Folder** | [Cyfirma Compromised Accounts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Compromised%20Accounts) |
 
 ## Data Connectors
 

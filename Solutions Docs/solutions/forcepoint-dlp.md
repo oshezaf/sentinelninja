@@ -29,7 +29,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.1 |
 | **Author** | Forcepoint - isv@email.com |
 | **First Published** | 2022-05-09 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20DLP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20DLP) |
+| **Solution Folder** | [Forcepoint DLP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20DLP) |
 
 ## Data Connectors
 

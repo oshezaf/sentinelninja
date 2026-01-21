@@ -28,7 +28,7 @@ Gigamon Application Metadata Intelligence empowers your Observability, Security 
 | **Categories** | domains |
 | **Version** | 3.0.0 |
 | **Author** | Gigamon |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Gigamon%20Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Gigamon%20Connector) |
+| **Solution Folder** | [Gigamon Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Gigamon%20Connector) |
 
 ## Data Connectors
 

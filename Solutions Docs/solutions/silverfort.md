@@ -23,7 +23,7 @@ The [Silverfort](https://silverfort.com) ITDR Admin Console connector solution a
 | **Version** | 1.0.0 |
 | **Author** | Silverfort |
 | **First Published** | 2024-09-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Silverfort](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Silverfort) |
+| **Solution Folder** | [Silverfort](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Silverfort) |
 
 ## Data Connectors
 

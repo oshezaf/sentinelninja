@@ -21,7 +21,7 @@ This Microsoft Sentinel Solution is currently in public preview. This feature is
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-06-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Resource%20Graph](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Resource%20Graph) |
+| **Solution Folder** | [Azure Resource Graph](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Resource%20Graph) |
 
 ## Data Connectors
 

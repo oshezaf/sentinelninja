@@ -23,7 +23,7 @@ The [Radiflow](https://www.radiflow.com/) solution for Microsoft Sentinel enable
 | **Version** | 3.0.0 |
 | **Author** | Radiflow - support@radiflow.com |
 | **First Published** | 2024-06-26 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow) |
+| **Solution Folder** | [Radiflow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow) |
 
 ## Data Connectors
 

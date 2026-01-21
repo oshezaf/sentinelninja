@@ -29,7 +29,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.3 |
 | **Author** | Netskope |
 | **First Published** | 2022-05-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskope](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskope) |
+| **Solution Folder** | [Netskope](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskope) |
 
 ## Data Connectors
 

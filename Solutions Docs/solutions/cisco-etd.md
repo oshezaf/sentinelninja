@@ -20,7 +20,7 @@ Cisco ETD Solution for Microsoft Microsoft Sentinel makes it easy to connect cis
 | **Version** | 3.0.0 |
 | **Author** | Cisco |
 | **First Published** | 2024-03-04 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD) |
+| **Solution Folder** | [Cisco ETD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD) |
 
 ## Data Connectors
 

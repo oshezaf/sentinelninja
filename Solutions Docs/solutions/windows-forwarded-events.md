@@ -27,7 +27,7 @@ a. [Agent based logs collection from Windows and Linux machines](https://docs.mi
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Forwarded%20Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Forwarded%20Events) |
+| **Solution Folder** | [Windows Forwarded Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Forwarded%20Events) |
 
 ## Data Connectors
 

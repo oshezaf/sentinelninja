@@ -25,7 +25,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NozomiNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NozomiNetworks) |
+| **Solution Folder** | [NozomiNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NozomiNetworks) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

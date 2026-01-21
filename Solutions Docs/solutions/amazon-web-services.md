@@ -21,7 +21,7 @@ The Amazon Web Services solution for Microsoft Sentinel allows you to enable Sec
 | **Version** | 3.0.7 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-26 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services) |
+| **Solution Folder** | [Amazon Web Services](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services) |
 
 ## Data Connectors
 

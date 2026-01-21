@@ -15,7 +15,7 @@
 | **Support Link** | [https://www.prancer.io](https://www.prancer.io) |
 | **Categories** | domains |
 | **First Published** | 2023-08-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration) |
+| **Solution Folder** | [Prancer PenSuiteAI Integration](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration) |
 
 ## Data Connectors
 

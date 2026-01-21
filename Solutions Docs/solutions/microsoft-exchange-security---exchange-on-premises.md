@@ -29,7 +29,7 @@ b. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.c
 | **Version** | 3.3.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-21 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises) |
+| **Solution Folder** | [Microsoft Exchange Security - Exchange On-Premises](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises) |
 
 ## Data Connectors
 

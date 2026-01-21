@@ -27,7 +27,7 @@ This connector is in limited private preview.
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-06-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Assets](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Assets) |
+| **Solution Folder** | [Microsoft 365 Assets](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Assets) |
 
 ## Data Connectors
 

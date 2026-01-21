@@ -22,7 +22,7 @@ Empower security teams with deep visibility into unique exploit, zero-day, and t
 | **Author** | Onapsis |
 | **First Published** | 2025-07-17 |
 | **Last Updated** | 2025-07-17 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend) |
+| **Solution Folder** | [Onapsis Defend](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend) |
 
 ## Data Connectors
 

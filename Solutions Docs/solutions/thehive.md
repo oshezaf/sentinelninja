@@ -27,7 +27,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive) |
+| **Solution Folder** | [TheHive](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive) |
 
 ## Data Connectors
 

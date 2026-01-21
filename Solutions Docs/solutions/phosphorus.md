@@ -28,7 +28,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Phosphorus |
 | **First Published** | 2024-08-13 |
 | **Last Updated** | 2024-08-13 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus) |
+| **Solution Folder** | [Phosphorus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus) |
 
 ## Data Connectors
 

@@ -21,7 +21,7 @@
 | **Version** | 1.0.0 |
 | **Author** | Valence Security - info@valencesecurity.com |
 | **First Published** | 2023-11-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security) |
+| **Solution Folder** | [Valence Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security) |
 
 ## Data Connectors
 

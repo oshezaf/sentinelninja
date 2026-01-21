@@ -21,7 +21,7 @@ The [VirusTotal](https://www.virustotal.com/gui/) solution for Microsoft Sentine
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-31 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirusTotal](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirusTotal) |
+| **Solution Folder** | [VirusTotal](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirusTotal) |
 
 ## Data Connectors
 

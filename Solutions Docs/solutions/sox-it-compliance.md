@@ -21,7 +21,7 @@ This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Cont
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-12-11 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance) |
+| **Solution Folder** | [SOX IT Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance) |
 | **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Windows Security Events](windows-security-events.md), [UEBA Essentials](ueba-essentials.md) |
 
 ## Data Connectors

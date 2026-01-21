@@ -27,7 +27,7 @@ a. [Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/s
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-02-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday) |
+| **Solution Folder** | [Workday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday) |
 
 ## Data Connectors
 

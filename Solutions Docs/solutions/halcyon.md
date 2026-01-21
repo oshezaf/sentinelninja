@@ -24,7 +24,7 @@ The [Halcyon](https://www.halcyon.ai) solution for Microsoft Sentinel enables yo
 | **Author** | Halcyon |
 | **First Published** | 2025-12-22 |
 | **Last Updated** | 2025-12-22 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon) |
+| **Solution Folder** | [Halcyon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon) |
 
 ## Data Connectors
 

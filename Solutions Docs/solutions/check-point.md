@@ -27,7 +27,7 @@ The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-fir
 | **Version** | 2.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-08-13 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point) |
+| **Solution Folder** | [Check Point](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point) |
 
 ## Additional Information
 

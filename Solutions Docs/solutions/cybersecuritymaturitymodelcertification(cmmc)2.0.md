@@ -21,7 +21,7 @@ The Microsoft Sentinel Cybersecurity Maturity Model Certification (CMMC) 2.0 sol
 | **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification%28CMMC%292.0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification%28CMMC%292.0) |
+| **Solution Folder** | [CybersecurityMaturityModelCertification(CMMC)2.0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CybersecurityMaturityModelCertification%28CMMC%292.0) |
 
 ## Data Connectors
 

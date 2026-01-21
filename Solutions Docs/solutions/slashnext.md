@@ -24,7 +24,7 @@ SlashNext URL Investigation Connector is based upon its Real-time Phishing Defen
 | **Author** | SlashNext - support@slashnext.com |
 | **First Published** | 2022-08-12 |
 | **Last Updated** | 2022-08-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext) |
+| **Solution Folder** | [SlashNext](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext) |
 
 ## Data Connectors
 

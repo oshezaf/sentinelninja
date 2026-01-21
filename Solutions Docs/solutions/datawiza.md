@@ -23,7 +23,7 @@ Send Datawiza Access Proxy access and MFA logs to Microsoft Sentinel for real-ti
 | **Version** | 3.0.0 |
 | **Author** | Datawiza Technology Inc. - support@datawiza.com |
 | **First Published** | 2025-11-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza) |
+| **Solution Folder** | [Datawiza](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza) |
 
 ## Data Connectors
 

@@ -27,7 +27,7 @@ For more details about this solution refer to [integration documentation](https:
 | **Version** | 3.0.3 |
 | **Author** | Forcepoint |
 | **First Published** | 2022-05-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CSG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CSG) |
+| **Solution Folder** | [Forcepoint CSG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CSG) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

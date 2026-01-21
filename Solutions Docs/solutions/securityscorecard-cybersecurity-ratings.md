@@ -24,7 +24,7 @@ This package includes three data connectors and an associated workbook for the S
 | **Author** | SecurityScorecard - integrations@securityscorecard.io |
 | **First Published** | 2022-10-01 |
 | **Last Updated** | 2022-10-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings) |
+| **Solution Folder** | [SecurityScorecard Cybersecurity Ratings](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityScorecard%20Cybersecurity%20Ratings) |
 
 ## Data Connectors
 

@@ -21,7 +21,7 @@ The [Ermes Browser Security](https://www.ermes.company) Solution for Microsoft S
 | **Version** | 3.1.0 |
 | **Author** | dev@ermes.company |
 | **First Published** | 2023-09-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security) |
+| **Solution Folder** | [Ermes Browser Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security) |
 
 ## Data Connectors
 

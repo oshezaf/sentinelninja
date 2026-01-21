@@ -23,7 +23,7 @@ The [Squadra Technologies SecRMM](https://www.squadratechnologies.com/Products/s
 | **Version** | 3.0.0 |
 | **Author** | Squadra Technologies |
 | **First Published** | 2022-05-09 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Squadra%20Technologies%20SecRmm](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Squadra%20Technologies%20SecRmm) |
+| **Solution Folder** | [Squadra Technologies SecRmm](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Squadra%20Technologies%20SecRmm) |
 
 ## Data Connectors
 

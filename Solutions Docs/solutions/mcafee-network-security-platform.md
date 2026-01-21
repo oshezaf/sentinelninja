@@ -27,7 +27,7 @@ The [McAfee Network Security Platform](https://www.trellix.com/en-us/products/in
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-06-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20Network%20Security%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20Network%20Security%20Platform) |
+| **Solution Folder** | [McAfee Network Security Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20Network%20Security%20Platform) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

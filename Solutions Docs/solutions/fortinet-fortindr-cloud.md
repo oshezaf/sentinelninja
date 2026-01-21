@@ -21,7 +21,7 @@ The [Fortinet FortiNDR Cloud](https://docs.fortinet.com/product/fortindr-cloud) 
 | **Version** | 3.0.3 |
 | **Author** | Fortinet - cs@fortinet.com |
 | **First Published** | 2024-01-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud) |
+| **Solution Folder** | [Fortinet FortiNDR Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud) |
 
 ## Data Connectors
 

@@ -21,7 +21,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Claroty |
 | **First Published** | 2024-02-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty%20xDome](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty%20xDome) |
+| **Solution Folder** | [Claroty xDome](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty%20xDome) |
 
 ## Data Connectors
 

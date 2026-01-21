@@ -30,7 +30,7 @@ The SIGNL4 Mobile Alerting solution provides the capability to read security ale
 | **Author** | Ronald Czachara - ron@signl4.com |
 | **First Published** | 2021-12-10 |
 | **Last Updated** | 2021-12-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4) |
+| **Solution Folder** | [SIGNL4](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4) |
 
 ## Data Connectors
 

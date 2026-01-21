@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB) |
+| **Solution Folder** | [Group-IB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB) |
 
 ## Data Connectors
 

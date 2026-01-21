@@ -24,7 +24,7 @@ The [OpenCTI](https://www.filigran.io/en/products/opencti/) solution for Microso
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-22 |
 | **Last Updated** | 2022-09-22 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI) |
+| **Solution Folder** | [OpenCTI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI) |
 
 ## Data Connectors
 

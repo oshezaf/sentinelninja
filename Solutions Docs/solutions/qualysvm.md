@@ -28,7 +28,7 @@ The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2020-12-14 |
 | **Last Updated** | 2025-11-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM) |
+| **Solution Folder** | [QualysVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM) |
 
 ## Data Connectors
 

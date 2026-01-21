@@ -23,7 +23,7 @@ The BTP Solution for Microsoft Sentinel will collect audits and activity logs fr
 | **Version** | 3.0.10 |
 | **Author** | Microsoft |
 | **First Published** | 2023-04-04 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP) |
+| **Solution Folder** | [SAP BTP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP) |
 
 ## Data Connectors
 

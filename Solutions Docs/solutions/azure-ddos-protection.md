@@ -29,7 +29,7 @@ The [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddo
 | **Version** | 2.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-13 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20DDoS%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20DDoS%20Protection) |
+| **Solution Folder** | [Azure DDoS Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20DDoS%20Protection) |
 
 ## Data Connectors
 

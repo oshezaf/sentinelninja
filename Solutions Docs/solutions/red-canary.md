@@ -16,7 +16,7 @@
 | **Categories** | domains |
 | **First Published** | 2022-03-04 |
 | **Last Updated** | 2022-03-04 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary) |
+| **Solution Folder** | [Red Canary](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary) |
 
 ## Data Connectors
 

@@ -21,7 +21,7 @@ The RSA ID Plus Admin Logs Data Connector enables seamless integration between R
 | **Version** | 3.0.1 |
 | **Author** | RSA Security |
 | **First Published** | 2025-10-14 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector) |
+| **Solution Folder** | [RSAIDPlus_AdminLogs_Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector) |
 
 ## Data Connectors
 

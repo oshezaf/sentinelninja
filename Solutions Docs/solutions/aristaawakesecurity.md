@@ -25,7 +25,7 @@ The [Awake Security Arista Networks solution](https://awakesecurity.com/) for Mi
 | **Version** | 3.0.1 |
 | **Author** | Arista Networks - support-security@arista.com |
 | **First Published** | 2021-10-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity) |
+| **Solution Folder** | [AristaAwakeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

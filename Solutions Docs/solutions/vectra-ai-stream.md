@@ -32,7 +32,7 @@ The [Vectra AI Stream](https://www.vectra.ai/products/platform) solution allows 
 | **Author** | Vectra TME Team - tme@vetcra.ai |
 | **First Published** | 2021-10-18 |
 | **Last Updated** | 2024-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Stream](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Stream) |
+| **Solution Folder** | [Vectra AI Stream](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Stream) |
 
 ## Data Connectors
 

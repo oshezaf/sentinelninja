@@ -26,7 +26,7 @@ The [Trend Micro Deep Security](https://www.trendmicro.com/en_us/business/produc
 | **Version** | 3.0.1 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security) |
+| **Solution Folder** | [Trend Micro Deep Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

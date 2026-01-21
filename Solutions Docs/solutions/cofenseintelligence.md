@@ -38,7 +38,7 @@ c.[Microsoft Threat Intelligence Indicator API](https://learn.microsoft.com/en-u
 | **Author** | Cofense - support@cofense.com |
 | **First Published** | 2023-05-26 |
 | **Last Updated** | 2024-05-26 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence) |
+| **Solution Folder** | [CofenseIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence) |
 
 ## Data Connectors
 

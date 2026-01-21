@@ -27,7 +27,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-01-17 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynamics%20365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynamics%20365) |
+| **Solution Folder** | [Dynamics 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynamics%20365) |
 
 ## Data Connectors
 

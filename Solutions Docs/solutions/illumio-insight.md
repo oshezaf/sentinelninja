@@ -21,7 +21,7 @@ The Illumio Insights data connector allows ingesting logs from the Illumio API i
 | **Version** | 3.3.2 |
 | **Author** | Microsoft |
 | **First Published** | 2025-08-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight) |
+| **Solution Folder** | [Illumio Insight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight) |
 
 ## Data Connectors
 

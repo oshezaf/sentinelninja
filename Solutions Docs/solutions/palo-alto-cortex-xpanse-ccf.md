@@ -21,7 +21,7 @@ The [Palo Alto Cortex Xpanse ](https://www.paloaltonetworks.com/cortex/cortex-xp
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-12-07 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF) |
+| **Solution Folder** | [Palo Alto Cortex Xpanse CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF) |
 
 ## Data Connectors
 

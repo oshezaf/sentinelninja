@@ -25,7 +25,7 @@ Note: [Security Threat Essentials ](https://portal.azure.com/#create/azuresentin
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-07 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DEV-0537DetectionandHunting](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DEV-0537DetectionandHunting) |
+| **Solution Folder** | [DEV-0537DetectionandHunting](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DEV-0537DetectionandHunting) |
 
 ## Data Connectors
 

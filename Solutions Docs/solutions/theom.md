@@ -27,7 +27,7 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-04 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Theom](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Theom) |
+| **Solution Folder** | [Theom](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Theom) |
 
 ## Data Connectors
 

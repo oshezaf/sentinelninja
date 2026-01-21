@@ -24,7 +24,7 @@ The BloodHound Enterprise Microsoft Sentinel solution ingests your BloodHound En
 | **Author** | SpecterOps - support@specterops.io |
 | **First Published** | 2023-05-04 |
 | **Last Updated** | 2021-05-04 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise) |
+| **Solution Folder** | [BloodHound Enterprise](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise) |
 
 ## Data Connectors
 

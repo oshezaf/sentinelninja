@@ -21,7 +21,7 @@ Cybercriminals continue to utilize stolen corporate credentials as the number on
 | **Version** | 3.0.1 |
 | **Author** | SpyCloud |
 | **First Published** | 2023-09-09 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection) |
+| **Solution Folder** | [SpyCloud Enterprise Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection) |
 
 ## Data Connectors
 

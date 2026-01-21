@@ -25,7 +25,7 @@ Looking for alternative authentication mechanisms? See [here](https://github.com
 | **Version** | 3.0.2 |
 | **Author** | SAP |
 | **First Published** | 2025-09-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition) |
+| **Solution Folder** | [SAP S4 Cloud Public Edition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition) |
 
 ## Data Connectors
 

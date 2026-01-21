@@ -22,7 +22,7 @@ AWS Security Hub Solution for Microsoft Sentinel provides data connector to inge
 | **Author** | Microsoft |
 | **First Published** | 2025-03-12 |
 | **Last Updated** | 2025-03-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Security%20Hub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Security%20Hub) |
+| **Solution Folder** | [AWS Security Hub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Security%20Hub) |
 
 ## Data Connectors
 

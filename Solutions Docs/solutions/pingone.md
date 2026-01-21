@@ -28,7 +28,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-20 |
 | **Last Updated** | 2025-04-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne) |
+| **Solution Folder** | [PingOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne) |
 
 ## Data Connectors
 

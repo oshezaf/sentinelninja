@@ -27,7 +27,7 @@ The [Zscaler Internet Access](https://www.zscaler.com/products/zscaler-internet-
 | **Version** | 3.0.3 |
 | **Author** | Zscaler |
 | **First Published** | 2022-05-25 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access) |
+| **Solution Folder** | [Zscaler Internet Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

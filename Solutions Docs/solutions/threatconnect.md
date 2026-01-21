@@ -22,7 +22,7 @@ The [ThreatConnect Threat Intelligence Platform](https://threatconnect.com/) sol
 | **Author** | JP Bourget jp@bluecycle.net |
 | **First Published** | 2023-09-11 |
 | **Last Updated** | 2023-09-11 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatConnect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatConnect) |
+| **Solution Folder** | [ThreatConnect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatConnect) |
 
 ## Data Connectors
 

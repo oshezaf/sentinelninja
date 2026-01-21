@@ -22,7 +22,7 @@ The [Jamf Protect](https://www.jamf.com/solutions/threat-prevention-remediation/
 | **Author** | Thijs Xhaflaire - thijs.xhaflaire@jamf.com |
 | **First Published** | 2022-10-10 |
 | **Last Updated** | 2025-09-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect) |
+| **Solution Folder** | [Jamf Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect) |
 
 ## Data Connectors
 

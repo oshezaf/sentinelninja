@@ -23,7 +23,7 @@ The [Noname Security](https://nonamesecurity.com) solution for Microsoft Sentine
 | **Version** | 2.0.0 |
 | **Author** | Noname Security - support@nonamesecurity.com |
 | **First Published** | 2022-12-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NonameSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NonameSecurity) |
+| **Solution Folder** | [NonameSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NonameSecurity) |
 
 ## Data Connectors
 

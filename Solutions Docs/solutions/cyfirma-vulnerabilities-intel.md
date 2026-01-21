@@ -21,7 +21,7 @@ The CYFIRMA Vulnerability Intelligence solution integrates with Microsoft Sentin
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-05-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Vulnerabilities%20Intel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Vulnerabilities%20Intel) |
+| **Solution Folder** | [Cyfirma Vulnerabilities Intel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Vulnerabilities%20Intel) |
 
 ## Data Connectors
 

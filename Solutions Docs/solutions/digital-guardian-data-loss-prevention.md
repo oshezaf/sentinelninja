@@ -25,7 +25,7 @@ The [Digital Guardian Data Loss Prevention (DLP)](https://digitalguardian.com/pl
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention) |
+| **Solution Folder** | [Digital Guardian Data Loss Prevention](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

@@ -22,7 +22,7 @@ Varonis Data Security SaaS Platform: Automatically find your critical data, reme
 | **Author** | Varonis |
 | **First Published** | 2025-10-27 |
 | **Last Updated** | 2025-10-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview) |
+| **Solution Folder** | [Varonis Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Varonis%20Purview) |
 
 ## Data Connectors
 

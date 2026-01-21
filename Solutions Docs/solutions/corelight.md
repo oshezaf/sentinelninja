@@ -27,7 +27,7 @@ a. [Agent based logs collection from Windows and Linux machines](https://docs.mi
 | **Version** | 3.2.2 |
 | **Author** | Corelight - info@corelight.com |
 | **First Published** | 2022-06-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight) |
+| **Solution Folder** | [Corelight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight) |
 
 ## Data Connectors
 

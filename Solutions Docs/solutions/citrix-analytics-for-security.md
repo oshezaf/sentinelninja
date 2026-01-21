@@ -29,7 +29,7 @@ For more details about this solution refer to https://docs.citrix.com/en-us/secu
 | **Version** | 2.0.1 |
 | **Author** | Citrix Systems |
 | **First Published** | 2022-05-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20for%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20for%20Security) |
+| **Solution Folder** | [Citrix Analytics for Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20for%20Security) |
 
 ## Data Connectors
 

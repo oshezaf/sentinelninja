@@ -21,7 +21,7 @@
 | **Version** | 3.0.1 |
 | **Author** | Torq - support@torq.io |
 | **First Published** | 2024-12-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq) |
+| **Solution Folder** | [Torq](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq) |
 
 ## Data Connectors
 

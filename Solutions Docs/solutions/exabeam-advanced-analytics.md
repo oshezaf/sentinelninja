@@ -25,7 +25,7 @@ The [Exabeam](https://www.exabeam.com/) Advanced Analytics data connector provid
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Exabeam%20Advanced%20Analytics](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Exabeam%20Advanced%20Analytics) |
+| **Solution Folder** | [Exabeam Advanced Analytics](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Exabeam%20Advanced%20Analytics) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

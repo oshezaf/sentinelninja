@@ -23,7 +23,7 @@ The [NXLog LinuxAudit](https://docs.nxlog.co/refman/current/im/linuxaudit.html) 
 | **Version** | 2.0.1 |
 | **Author** | NXLog |
 | **First Published** | 2022-05-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20LinuxAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20LinuxAudit) |
+| **Solution Folder** | [NXLog LinuxAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLog%20LinuxAudit) |
 
 ## Data Connectors
 

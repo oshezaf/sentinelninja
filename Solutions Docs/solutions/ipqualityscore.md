@@ -21,7 +21,7 @@ IPQualityScore (IPQS) provides enterprise grade fraud prevention, risk analysis,
 | **Version** | 2.0.0 |
 | **Author** | IPQualityScore (IPQS) - integrations@ipqualityscore.com |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPQualityScore](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPQualityScore) |
+| **Solution Folder** | [IPQualityScore](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPQualityScore) |
 
 ## Data Connectors
 

@@ -23,7 +23,7 @@ All content packaged in this solution is built and supported by the Microsoft Se
 | **Version** | 3.0.1 |
 | **Author** | Community |
 | **First Published** | 2022-11-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/KQL%20Training](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/KQL%20Training) |
+| **Solution Folder** | [KQL Training](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/KQL%20Training) |
 
 ## Data Connectors
 

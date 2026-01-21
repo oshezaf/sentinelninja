@@ -25,7 +25,7 @@ The [F5 Networks](https://www.f5.com/) solution for Microsoft Sentinel enables y
 | **Version** | 3.0.1 |
 | **Author** | F5 |
 | **First Published** | 2022-05-12 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks) |
+| **Solution Folder** | [F5 Networks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

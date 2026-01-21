@@ -27,7 +27,7 @@ a.  [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **Version** | 3.0.2 |
 | **Author** | Rogier Dijkman (SecureHats) |
 | **First Published** | 2023-12-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password) |
+| **Solution Folder** | [1Password](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password) |
 
 ## Data Connectors
 

@@ -23,7 +23,7 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 | **Version** | 2.0.0 |
 | **Author** | ARGOS Cloud Security - support@argos-security.io |
 | **First Published** | 2022-08-16 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ARGOSCloudSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ARGOSCloudSecurity) |
+| **Solution Folder** | [ARGOSCloudSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ARGOSCloudSecurity) |
 
 ## Data Connectors
 

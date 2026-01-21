@@ -25,7 +25,7 @@ This solution is dependent on the Custom logs via AMA connector to collect the l
 | **Version** | 3.2.1 |
 | **Author** | SecurityBridge - support@securitybridge.com |
 | **First Published** | 2022-02-17 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App) |
+| **Solution Folder** | [SecurityBridge App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App) |
 
 ## Data Connectors
 

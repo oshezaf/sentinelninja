@@ -23,7 +23,7 @@ Alsid for Active Directory connector allows to export Alsid Indicators of Exposu
 | **Version** | 2.0.0 |
 | **Author** | Alsid |
 | **First Published** | 2022-05-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alsid%20For%20AD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alsid%20For%20AD) |
+| **Solution Folder** | [Alsid For AD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alsid%20For%20AD) |
 
 ## Data Connectors
 

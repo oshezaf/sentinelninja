@@ -21,7 +21,7 @@ The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Micro
 | **Version** | 3.0.0 |
 | **Author** | Feedly ml@feedly.com |
 | **First Published** | 2023-08-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly) |
+| **Solution Folder** | [Feedly](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly) |
 
 ## Data Connectors
 

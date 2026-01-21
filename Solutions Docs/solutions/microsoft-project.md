@@ -27,7 +27,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Project](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Project) |
+| **Solution Folder** | [Microsoft Project](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Project) |
 
 ## Data Connectors
 

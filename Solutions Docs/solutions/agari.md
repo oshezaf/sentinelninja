@@ -30,7 +30,7 @@ c. [Microsoft Security Graph API](https://docs.microsoft.com/graph/api/resources
 | **Version** | 2.0.0 |
 | **Author** | Agari |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari) |
+| **Solution Folder** | [Agari](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari) |
 
 ## Data Connectors
 

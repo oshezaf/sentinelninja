@@ -27,7 +27,7 @@ The [Illumio Core](https://www.illumio.com/products/) solution allows you to ing
 | **Version** | 3.0.3 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-26 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Core](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Core) |
+| **Solution Folder** | [Illumio Core](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Core) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

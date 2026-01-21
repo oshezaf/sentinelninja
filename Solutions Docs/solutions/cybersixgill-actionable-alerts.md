@@ -22,7 +22,7 @@ Cybersixgill Actionable Alerts provides a premium automated customized threat i
 | **Author** | Cybersixgill |
 | **First Published** | 2023-02-27 |
 | **Last Updated** | 2024-09-24 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts) |
+| **Solution Folder** | [Cybersixgill-Actionable-Alerts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts) |
 
 ## Data Connectors
 

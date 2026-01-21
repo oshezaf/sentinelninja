@@ -22,7 +22,7 @@ The BitSight solution enables security operations teams to integrate insights fr
 | **Author** | Ariela Silberstein - ariela.silberstein@bitsighttech.com |
 | **First Published** | 2023-02-20 |
 | **Last Updated** | 2024-02-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight) |
+| **Solution Folder** | [BitSight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight) |
 
 ## Data Connectors
 

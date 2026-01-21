@@ -21,7 +21,7 @@
 | **Version** | 3.0.0 |
 | **Author** | VMRay |
 | **First Published** | 2025-07-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay) |
+| **Solution Folder** | [VMRay](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay) |
 
 ## Data Connectors
 

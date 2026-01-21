@@ -22,7 +22,7 @@ The [ThreatX](https://www.threatx.com/products/) solution for Microsoft Sentinel
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-23 |
 | **Last Updated** | 2022-09-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud) |
+| **Solution Folder** | [ThreatXCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud) |
 
 ## Data Connectors
 

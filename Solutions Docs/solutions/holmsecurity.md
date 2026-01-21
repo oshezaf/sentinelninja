@@ -31,7 +31,7 @@ The [Holm Security](https://www.holmsecurity.com/) solution provides the capabil
 | **Version** | 3.0.1 |
 | **Author** | Holm Security |
 | **First Published** | 2022-07-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity) |
+| **Solution Folder** | [HolmSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HolmSecurity) |
 
 ## Data Connectors
 

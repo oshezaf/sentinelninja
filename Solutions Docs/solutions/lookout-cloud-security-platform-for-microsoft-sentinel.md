@@ -23,7 +23,7 @@ The Lookout Cloud Security solution for Microsoft Sentinel enables enterprises t
 | **Version** | 3.0.0 |
 | **Author** | Lookout |
 | **First Published** | 2023-02-17 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout%20Cloud%20Security%20Platform%20for%20Microsoft%20Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout%20Cloud%20Security%20Platform%20for%20Microsoft%20Sentinel) |
+| **Solution Folder** | [Lookout Cloud Security Platform for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout%20Cloud%20Security%20Platform%20for%20Microsoft%20Sentinel) |
 
 ## Data Connectors
 

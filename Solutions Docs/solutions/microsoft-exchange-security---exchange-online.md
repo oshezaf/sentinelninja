@@ -27,7 +27,7 @@ a. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.c
 | **Version** | 3.1.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-21 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online) |
+| **Solution Folder** | [Microsoft Exchange Security - Exchange Online](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online) |
 
 ## Data Connectors
 

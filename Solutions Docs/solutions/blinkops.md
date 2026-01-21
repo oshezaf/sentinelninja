@@ -19,7 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | BlinkOps - support@blinkops.com |
 | **First Published** | 2025-05-05 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps) |
+| **Solution Folder** | [BlinkOps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps) |
 
 ## Data Connectors
 

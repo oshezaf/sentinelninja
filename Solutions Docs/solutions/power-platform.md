@@ -14,7 +14,7 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Power%20Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Power%20Platform) |
+| **Solution Folder** | [Power Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Power%20Platform) |
 
 ## Data Connectors
 

@@ -21,7 +21,7 @@
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RiskIQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RiskIQ) |
+| **Solution Folder** | [RiskIQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RiskIQ) |
 
 ## Data Connectors
 

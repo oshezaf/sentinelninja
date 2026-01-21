@@ -20,7 +20,7 @@
 | **Categories** | domains |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager) |
+| **Solution Folder** | [AWS Systems Manager](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager) |
 
 ## Data Connectors
 

@@ -26,7 +26,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Version** | 3.0.1 |
 | **Author** | vArmour |
 | **First Published** | 2022-06-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/vArmour%20Application%20Controller](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/vArmour%20Application%20Controller) |
+| **Solution Folder** | [vArmour Application Controller](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/vArmour%20Application%20Controller) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

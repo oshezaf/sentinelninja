@@ -23,7 +23,7 @@
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ) |
+| **Solution Folder** | [EclecticIQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ) |
 
 ## Data Connectors
 

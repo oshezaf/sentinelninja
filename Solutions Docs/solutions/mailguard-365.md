@@ -16,7 +16,7 @@
 | **Categories** | domains |
 | **First Published** | 2023-05-09 |
 | **Last Updated** | 2023-06-08 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365) |
+| **Solution Folder** | [MailGuard 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365) |
 
 ## Data Connectors
 

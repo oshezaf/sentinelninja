@@ -21,7 +21,7 @@ The Cyware solution for Microsoft Sentinel allows users to integrate Cyware and 
 | **Author** | Cyware - support@cyware.com |
 | **First Published** | 2024-03-18 |
 | **Last Updated** | 2024-03-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware) |
+| **Solution Folder** | [Cyware](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware) |
 
 ## Data Connectors
 

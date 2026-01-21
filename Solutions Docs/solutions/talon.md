@@ -23,7 +23,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.0 |
 | **Author** | Talon |
 | **First Published** | 2023-01-25 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Talon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Talon) |
+| **Solution Folder** | [Talon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Talon) |
 
 ## Data Connectors
 

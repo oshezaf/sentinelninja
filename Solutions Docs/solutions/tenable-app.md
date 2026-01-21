@@ -30,7 +30,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **Author** | Tenable - support@tenable.com |
 | **First Published** | 2024-06-06 |
 | **Last Updated** | 2025-06-19 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App) |
+| **Solution Folder** | [Tenable App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App) |
 
 ## Data Connectors
 

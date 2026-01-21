@@ -21,7 +21,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS) |
+| **Solution Folder** | [HYAS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS) |
 
 ## Data Connectors
 

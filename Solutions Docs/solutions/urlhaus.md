@@ -21,7 +21,7 @@ The URLhaus solution for Microsoft  Sentinel allows enriching incidents with add
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/URLhaus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/URLhaus) |
+| **Solution Folder** | [URLhaus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/URLhaus) |
 
 ## Data Connectors
 

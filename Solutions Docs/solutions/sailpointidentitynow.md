@@ -28,7 +28,7 @@ The [SailPoint Integration](https://www.sailpoint.com/) solution provides the ca
 | **Version** | 3.0.0 |
 | **Author** | SailPointIdentityNow |
 | **First Published** | 2021-10-26 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow) |
+| **Solution Folder** | [SailPointIdentityNow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow) |
 
 ## Data Connectors
 

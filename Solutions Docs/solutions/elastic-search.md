@@ -24,7 +24,7 @@
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Elastic%20Search](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Elastic%20Search) |
+| **Solution Folder** | [Elastic Search](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Elastic%20Search) |
 
 ## Data Connectors
 

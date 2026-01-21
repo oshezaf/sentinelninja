@@ -31,7 +31,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **Version** | 2.0.0 |
 | **Author** | ESET Netherlands |
 | **First Published** | 2022-06-01 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Inspect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Inspect) |
+| **Solution Folder** | [ESET Inspect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Inspect) |
 
 ## Data Connectors
 

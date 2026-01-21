@@ -21,7 +21,7 @@ The [Garrison ULTRA](https://www.garrison.com/garrison-ultra-cloud-platform) sol
 | **Version** | 3.0.0 |
 | **Author** | Garrison - support.ultra@garrison.com |
 | **First Published** | 2024-10-04 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Garrison%20ULTRA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Garrison%20ULTRA) |
+| **Solution Folder** | [Garrison ULTRA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Garrison%20ULTRA) |
 
 ## Data Connectors
 

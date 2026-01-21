@@ -27,7 +27,7 @@ The [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/s
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Service%20Bus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Service%20Bus) |
+| **Solution Folder** | [Azure Service Bus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Service%20Bus) |
 
 ## Data Connectors
 

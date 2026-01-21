@@ -25,7 +25,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Broadcom%20SymantecDLP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Broadcom%20SymantecDLP) |
+| **Solution Folder** | [Broadcom SymantecDLP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Broadcom%20SymantecDLP) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

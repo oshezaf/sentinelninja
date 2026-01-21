@@ -25,7 +25,7 @@ The iboss Solution provides means to connect your Threat Console to Microsoft Se
 | **Version** | 3.1.2 |
 | **Author** | iboss |
 | **First Published** | 2022-02-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss) |
+| **Solution Folder** | [iboss](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

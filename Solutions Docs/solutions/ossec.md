@@ -25,7 +25,7 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-19 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OSSEC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OSSEC) |
+| **Solution Folder** | [OSSEC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OSSEC) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

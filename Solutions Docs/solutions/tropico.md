@@ -21,7 +21,7 @@ The [Tropico](https://www.tropicosecurity.com/) solution for Microsoft Sentinel 
 | **Version** | 3.0.0 |
 | **Author** | Tropico Security - dev@tropicosecurity.com |
 | **First Published** | 2025-12-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico) |
+| **Solution Folder** | [Tropico](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico) |
 
 ## Data Connectors
 

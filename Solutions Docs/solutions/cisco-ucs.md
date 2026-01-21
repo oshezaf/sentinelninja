@@ -25,7 +25,7 @@ The [Cisco UCS](https://www.cisco.com/c/en/us/products/servers-unified-computing
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20UCS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20UCS) |
+| **Solution Folder** | [Cisco UCS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20UCS) |
 | **Dependencies** | [Syslog](syslog.md) |
 
 ## Data Connectors

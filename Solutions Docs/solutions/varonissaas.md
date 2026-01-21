@@ -22,7 +22,7 @@ The Varonis SaaS integration allows you to retrieve Varonis DatAlert alerts, cre
 | **Author** | Varonis |
 | **First Published** | 2023-11-10 |
 | **Last Updated** | 2023-11-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS) |
+| **Solution Folder** | [VaronisSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VaronisSaaS) |
 
 ## Data Connectors
 

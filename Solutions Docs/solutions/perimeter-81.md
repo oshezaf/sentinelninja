@@ -23,7 +23,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Version** | 2.0.1 |
 | **Author** | Perimeter 81 |
 | **First Published** | 2022-05-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Perimeter%2081](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Perimeter%2081) |
+| **Solution Folder** | [Perimeter 81](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Perimeter%2081) |
 
 ## Data Connectors
 

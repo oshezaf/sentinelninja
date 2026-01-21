@@ -23,7 +23,7 @@ Forescout eyeInspect is a cybersecurity platform designed for Operational Tech
 | **Version** | 3.0.0 |
 | **Author** | Rao Peraka - rao.peraka@forescout.com |
 | **First Published** | 2025-07-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20eyeInspect%20for%20OT%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20eyeInspect%20for%20OT%20Security) |
+| **Solution Folder** | [Forescout eyeInspect for OT Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20eyeInspect%20for%20OT%20Security) |
 
 ## Data Connectors
 

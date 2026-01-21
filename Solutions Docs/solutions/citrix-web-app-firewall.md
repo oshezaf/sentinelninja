@@ -25,7 +25,7 @@
 | **Version** | 3.0.2 |
 | **Author** | Citrix Systems |
 | **First Published** | 2022-05-06 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall) |
+| **Solution Folder** | [Citrix Web App Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
 ## Data Connectors

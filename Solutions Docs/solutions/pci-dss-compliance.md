@@ -21,7 +21,7 @@ This Solution enables Microsoft Sentinel users to harness the power of their SIE
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PCI%20DSS%20Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PCI%20DSS%20Compliance) |
+| **Solution Folder** | [PCI DSS Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PCI%20DSS%20Compliance) |
 
 ## Data Connectors
 

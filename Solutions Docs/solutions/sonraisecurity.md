@@ -26,7 +26,7 @@ The [Sonrai Security](https://sonraisecurity.com/) solution provides the capabil
 | **Version** | 3.0.0 |
 | **Author** | Sonrai - support@sonraisecurity.com |
 | **First Published** | 2021-10-18 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity) |
+| **Solution Folder** | [SonraiSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity) |
 
 ## Data Connectors
 

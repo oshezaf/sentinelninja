@@ -27,7 +27,7 @@ The Snowflake CCF data connector provides the capability to ingest Snowflake [Lo
 | **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-23 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake) |
+| **Solution Folder** | [Snowflake](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake) |
 
 ## Data Connectors
 

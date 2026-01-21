@@ -22,7 +22,7 @@ The [Neustar IP GeoPoint](https://www.home.neustar/fraud-solutions/ip-geopoint) 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-30 |
 | **Last Updated** | 2022-09-30 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint) |
+| **Solution Folder** | [Neustar IP GeoPoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint) |
 
 ## Data Connectors
 

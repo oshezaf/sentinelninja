@@ -29,7 +29,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **Version** | 3.2.2 |
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2023-07-28 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox) |
+| **Solution Folder** | [ZeroFox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox) |
 
 ## Data Connectors
 

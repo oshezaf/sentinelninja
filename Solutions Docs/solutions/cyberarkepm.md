@@ -23,7 +23,7 @@ Endpoint Privilege Manager, a critical and foundational endpoint control address
 | **Version** | 3.0.1 |
 | **Author** | CyberArk Business Development - business_development@cyberark.com |
 | **First Published** | 2022-04-10 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM) |
+| **Solution Folder** | [CyberArkEPM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM) |
 
 ## Data Connectors
 

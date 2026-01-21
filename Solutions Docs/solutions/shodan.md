@@ -21,7 +21,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-02-20 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan) |
+| **Solution Folder** | [Shodan](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan) |
 
 ## Data Connectors
 

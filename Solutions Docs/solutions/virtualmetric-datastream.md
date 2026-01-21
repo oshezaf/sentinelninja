@@ -21,7 +21,7 @@ VirtualMetric DataStream solution provides comprehensive data collection capabil
 | **Version** | 3.0.0 |
 | **Author** | VirtualMetric |
 | **First Published** | 2025-09-15 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirtualMetric%20DataStream](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirtualMetric%20DataStream) |
+| **Solution Folder** | [VirtualMetric DataStream](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirtualMetric%20DataStream) |
 
 ## Data Connectors
 

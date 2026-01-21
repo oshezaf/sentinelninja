@@ -22,7 +22,7 @@ The [Keeper Security](https://keepersecurity.com/) solution for Microsoft Sentin
 | **Author** | Joao Paulo Oliveira Santos - jsantos@keepersecurity.com |
 | **First Published** | 2025-06-03 |
 | **Last Updated** | 2025-06-03 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security) |
+| **Solution Folder** | [Keeper Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security) |
 
 ## Data Connectors
 

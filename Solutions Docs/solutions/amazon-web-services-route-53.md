@@ -21,7 +21,7 @@ Amazon Web Services Route 53 Solution for Microsoft Sentinel provides data conne
 | **Version** | 3.0.1 |
 | **Author** | Microsoft |
 | **First Published** | 2025-03-21 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053) |
+| **Solution Folder** | [Amazon Web Services Route 53](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053) |
 
 ## Data Connectors
 

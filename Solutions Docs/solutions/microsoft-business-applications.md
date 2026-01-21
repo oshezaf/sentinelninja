@@ -31,7 +31,7 @@ Due to the integration of the Power Platform inventory data, in addition to the 
 | **Version** | 3.2.2 |
 | **Author** | Microsoft |
 | **First Published** | 2023-04-19 |
-| **Solution Folder** | [https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications) |
+| **Solution Folder** | [Microsoft Business Applications](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications) |
 
 ## Data Connectors
 
