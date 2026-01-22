@@ -1,6 +1,6 @@
 # Cisco Umbrella - Windows PowerShell User-Agent Detected
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -11,13 +11,13 @@ Rule helps to detect Powershell user-agent activity by an unusual process other 
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `b12b3dab-d973-45af-b07e-e29bb34d8db9` |
 | **Severity** | Medium |
 | **Kind** | Scheduled |
 | **Tactics** | CommandAndControl, DefenseEvasion |
 | **Required Connectors** | [CiscoUmbrellaDataConnector](../connectors/ciscoumbrelladataconnector.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/CiscoUmbrella/CiscoUmbrellaPowershellUserAgentDetected.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/CiscoUmbrella/CiscoUmbrellaPowershellUserAgentDetected.yaml) |
 
 ## Tables Used
 
@@ -37,7 +37,7 @@ This content item queries data from the following tables:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 

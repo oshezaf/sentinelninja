@@ -78,16 +78,16 @@
 | [Cisco SEG - Unexpected attachment](ciscoseg-cisco-seg-unexpected-attachment-f8ba18c4-81e3-4db0-8f85-4989f2ed2ade-f10c8136.md) | High | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
 | [Cisco SEG - Unexpected link](ciscoseg-cisco-seg-unexpected-link-9cb4a02d-3708-42ba-b33b-0fdd360ce4b6-603d8991.md) | Medium | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
 | [Cisco SEG - Unscannable attacment](ciscoseg-cisco-seg-unscannable-attacment-c66b8ced-8c76-415b-a0f3-08c7030a857d-d10ee3f4.md) | Medium | 📦 [CiscoSEG](../solutions/ciscoseg.md) |
-| [Cisco Umbrella - Connection to non-corporate private network](-cisco-umbrella-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-b3cccf1c.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - Connection to Unpopular Website Detected](-cisco-umbrella-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-f127831c.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - Crypto Miner User-Agent Detected](-cisco-umbrella-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-3adaf14a.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - Empty User Agent Detected](-cisco-umbrella-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-98ac11ad.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - Hack Tool User-Agent Detected](-cisco-umbrella-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-1f68f978.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - Rare User Agent Detected](-cisco-umbrella-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-af3cf9ae.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - Request Allowed to harmful/malicious URI category](-cisco-umbrella-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-0f2fec9e.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - Request to blocklisted file type](-cisco-umbrella-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-3ee819a3.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - URI contains IP address](-cisco-umbrella-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-a082ba9f.md) | Medium | 🔗 GitHub Only |
-| [Cisco Umbrella - Windows PowerShell User-Agent Detected](-cisco-umbrella-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-ed873133.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Connection to non-corporate private network](standalone-content-cisco-umbrella-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-4350c054.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Connection to Unpopular Website Detected](standalone-content-cisco-umbrella-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-437a49f8.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Crypto Miner User-Agent Detected](standalone-content-cisco-umbrella-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-870829c7.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Empty User Agent Detected](standalone-content-cisco-umbrella-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-bbe8cb17.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Hack Tool User-Agent Detected](standalone-content-cisco-umbrella-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-fe9c3221.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Rare User Agent Detected](standalone-content-cisco-umbrella-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-8b8b468a.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Request Allowed to harmful/malicious URI category](standalone-content-cisco-umbrella-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-03ded492.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Request to blocklisted file type](standalone-content-cisco-umbrella-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-086b9ad8.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - URI contains IP address](standalone-content-cisco-umbrella-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-8140d3c7.md) | Medium | 🔗 GitHub Only |
+| [Cisco Umbrella - Windows PowerShell User-Agent Detected](standalone-content-cisco-umbrella-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-82c54677.md) | Medium | 🔗 GitHub Only |
 | [Cisco WSA - Access to unwanted site](ciscowsa-cisco-wsa-access-to-unwanted-site-38029e86-030c-46c4-8a91-a2be7c74d74c-3d994899.md) | High | 📦 [CiscoWSA](../solutions/ciscowsa.md) |
 | [Cisco WSA - Internet access from public IP](ciscowsa-cisco-wsa-internet-access-from-public-ip-4250b050-e1c6-4926-af04-9484bbd7e94f-70c85e5f.md) | Medium | 📦 [CiscoWSA](../solutions/ciscowsa.md) |
 | [Cisco WSA - Multiple attempts to download unwanted file](ciscowsa-cisco-wsa-multiple-attempts-to-download-unwanted-file-46b6c6fc-2c1a-4270-be10-9d444d83f027-c3b3d95a.md) | Medium | 📦 [CiscoWSA](../solutions/ciscowsa.md) |

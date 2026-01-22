@@ -1,6 +1,6 @@
 # Exchange Servers and Associated Security Alerts
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -11,12 +11,12 @@ This query will dynamically identify Exchange servers using common web paths use
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Hunting Query |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `84026aa0-7020-45d0-9f85-d526e43de2ab` |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1190 |
 | **Required Connectors** | [AzureMonitor(IIS)](../connectors/azuremonitor-iis.md), [MicrosoftDefenderAdvancedThreatProtection](../connectors/microsoftdefenderadvancedthreatprotection.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hunting%20Queries/Hunting%20Queries/MultipleDataSources/ExchangeServersAssociatedSecurityAlerts.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/MultipleDataSources/ExchangeServersAssociatedSecurityAlerts.yaml) |
 
 ## Tables Used
 
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 ---
 
-**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md)
+**Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Hunting Queries](hunting-queries.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Hunting Queries](hunting-queries.md)
 

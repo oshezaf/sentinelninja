@@ -8,40 +8,67 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 ## Solutions
 
-| Metric | Total | Published | Unpublished | Microsoft | Partner | Community |
-|:-------|------:|----------:|------------:|----------:|--------:|----------:|
-| Solutions | **487** | 402 | 85 | 232 | 231 | 11 |
-| With Connectors | **307** | 250 | 57 | 118 | 186 | 3 |
-| With Content | **386** | 329 | 57 | 185 | 184 | 10 |
-| Unique Connectors | **384** | | | | | |
-| Tables Used | **824** | | | | | |
+### Availability
+
+| Metric | Total | Published | Unpublished |
+|:-------|------:|----------:|------------:|
+| Solutions | **487** | 402 | 85 |
+| With Connectors | **307** | 250 | 57 |
+| With Content | **386** | 329 | 57 |
+
+### Support Ownership
+
+| Support Tier | Total | Published | Unpublished |
+|:-------------|------:|----------:|------------:|
+| Microsoft | **232** | 219 | 13 |
+| Partner | **231** | 172 | 59 |
+| Community | **11** | 11 | 0 |
+| Unknown | **13** | 0 | 13 |
+| **Total** | **487** | **402** | **85** |
+
+### Other Metrics
+
+| Metric | Count |
+|:-------|------:|
+| Unique Connectors | 384 |
+| Tables Used | 824 |
 
 ## Connectors
 
-### Connectors Overview
+### Availability
 
-| Metric | Total | Active | Deprecated | Unpublished | Microsoft | Partner | Community |
-|:-------|------:|-------:|-----------:|------------:|----------:|--------:|----------:|
-| In Solutions | **384** | 289 | 29 | 66 | 141 | 233 | 10 |
-| Discovered* | **147** | 27 | 114 | 6 | 99 | 38 | 8 |
-| **Total** | **531** | **316** | **143** | **72** | **240** | **271** | **18** |
+| Metric | Total | Active | Deprecated | Unpublished |
+|:-------|------:|-------:|-----------:|------------:|
+| In Solutions | **384** | 289 | 29 | 66 |
+| Discovered* | **147** | 27 | 114 | 6 |
+| **Total** | **531** | **316** | **143** | **72** |
 
 *\* Discovered connectors are found in solution folders but not listed in Solution JSON definitions.*
 
+### Support Ownership
+
+| Support Tier | Total | Active | Deprecated | Unpublished |
+|:-------------|------:|-------:|-----------:|------------:|
+| Microsoft | **240** | 146 | 88 | 6 |
+| Partner | **271** | 160 | 47 | 64 |
+| Community | **18** | 10 | 8 | 0 |
+| Unknown | **2** | 0 | 0 | 2 |
+| **Total** | **531** | **316** | **143** | **72** |
+
 ### Collection Methods
 
-| Collection Method | Total | Active | Deprecated | Unpublished | Microsoft | Partner | Community |
-|:-----------------|------:|-------:|-----------:|------------:|----------:|--------:|----------:|
-| Azure Function | **129** | 75 | 18 | 36 | 36 | 92 | 1 |
-| CCF | **129** | 118 | 1 | 10 | 64 | 65 | 0 |
-| MMA | **110** | 12 | 90 | 8 | 66 | 37 | 5 |
-| AMA | **59** | 25 | 34 | 0 | 26 | 26 | 7 |
-| Unknown (Custom Log) | **44** | 35 | 0 | 9 | 2 | 38 | 4 |
-| Native | **25** | 24 | 0 | 1 | 25 | 0 | 0 |
-| Azure Diagnostics | **17** | 17 | 0 | 0 | 17 | 0 | 0 |
-| REST API | **15** | 7 | 0 | 8 | 1 | 13 | 1 |
-| Unknown | **3** | 3 | 0 | 0 | 3 | 0 | 0 |
-| **Total** | **531** | **316** | **143** | **72** | **240** | **271** | **18** |
+| Collection Method | Total | Active | Deprecated | Unpublished |
+|:-----------------|------:|-------:|-----------:|------------:|
+| Azure Function | **129** | 75 | 18 | 36 |
+| CCF | **129** | 118 | 1 | 10 |
+| MMA | **110** | 12 | 90 | 8 |
+| AMA | **59** | 25 | 34 | 0 |
+| Unknown (Custom Log) | **44** | 35 | 0 | 9 |
+| Native | **25** | 24 | 0 | 1 |
+| Azure Diagnostics | **17** | 17 | 0 | 0 |
+| REST API | **15** | 7 | 0 | 8 |
+| Unknown | **3** | 3 | 0 | 0 |
+| **Total** | **531** | **316** | **143** | **72** |
 
 *Active = Published and not deprecated.*
 
@@ -112,6 +139,23 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | **Tables Used** | 71 |
 
 \* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
+
+### Products per Schema
+
+| Schema | Products |
+|:-------|--------:|
+| NetworkSession | 31 |
+| Authentication | 23 |
+| WebSession | 16 |
+| AuditEvent | 13 |
+| Dns | 13 |
+| FileEvent | 13 |
+| ProcessEvent | 10 |
+| RegistryEvent | 7 |
+| UserManagement | 6 |
+| AlertEvent | 2 |
+| DhcpEvent | 2 |
+| **Total** | **80** |
 
 ---
 

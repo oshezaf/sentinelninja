@@ -227,7 +227,7 @@
 | [Suspicious Service Principal creation activity](microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) | Low | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Suspicious Sign In by Entra ID Connect Sync Account](standalone-content-suspicious-sign-in-by-entra-id-connect-sync-account-2cd8b3d5-c9e0-4be3-80f7-0469d511c3f6-48c21081.md) | Medium | 📄 Standalone Content |
 | [Suspicious Sign In Followed by MFA Modification](microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-| [Suspicious VM Instance Creation Activity Detected](-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-f69ca2de.md) | Medium | 🔗 GitHub Only |
+| [Suspicious VM Instance Creation Activity Detected](standalone-content-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-be6698ec.md) | Medium | 🔗 GitHub Only |
 | [Syntax errors stateful anomaly on database](azure-sql-database-solution-for-sentinel-syntax-errors-stateful-anomaly-on-database-c815008d-f4d1-4645-b13b-8b4bc188d5de-75deac2f.md) | Medium | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 
 > ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.

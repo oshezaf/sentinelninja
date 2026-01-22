@@ -6,7 +6,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 
 | Resource | Count | Details |
 |:---------|------:|:--------|
-| [Solutions](solutions-index.md) | 487 | 389 with connectors, 388 with content |
+| [Solutions](solutions-index.md) | 487 | 389 with connectors, 387 with content |
 | [Connectors](connectors-index.md) | 531 | Data ingestion methods |
 | [Tables](tables-index.md) | 1813 | Log Analytics tables |
 | [Content](content/content-index.md) | 6,577 | Analytics, hunting, playbooks, workbooks |
