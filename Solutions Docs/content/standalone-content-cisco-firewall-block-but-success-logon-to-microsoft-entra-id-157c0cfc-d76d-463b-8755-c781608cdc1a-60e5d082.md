@@ -11,7 +11,7 @@ Correlate IPs blocked by a Cisco firewall appliance with successful Microsoft En
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `157c0cfc-d76d-463b-8755-c781608cdc1a` |
 | **Severity** | Medium |
 | **Kind** | Scheduled |
@@ -19,7 +19,7 @@ Correlate IPs blocked by a Cisco firewall appliance with successful Microsoft En
 | **Techniques** | T1078 |
 | **Required Connectors** | [CiscoASA](../connectors/ciscoasa.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Event Vendor** | Cisco |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/MultipleDataSources/SigninFirewallCorrelation.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/MultipleDataSources/SigninFirewallCorrelation.yaml) |
 
 ## Tables Used
 
@@ -31,5 +31,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 

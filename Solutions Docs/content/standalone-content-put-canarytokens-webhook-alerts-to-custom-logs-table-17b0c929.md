@@ -11,8 +11,8 @@ This Logic App connector will act as a Webhook listener, CanaryTokens can then s
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Playbook |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Playbooks/Playbooks/Ingest-CanaryTokens/azuredeploy.json) |
+| **Solution** | Standalone Content |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Ingest-CanaryTokens/azuredeploy.json) |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
@@ -40,5 +40,5 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Playbooks](playbooks.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Playbooks](playbooks.md)
 

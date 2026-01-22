@@ -11,14 +11,14 @@ This query looks for any mass download by a single user with possible file copy 
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `6267ce44-1e9d-471b-9f1e-ae76a6b7aa84` |
 | **Severity** | Medium |
 | **Kind** | Scheduled |
 | **Tactics** | Exfiltration |
 | **Techniques** | T1052 |
 | **Required Connectors** | [MicrosoftCloudAppSecurity](../connectors/microsoftcloudappsecurity.md), [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/SecurityAlert/Massdownload_USBFileCopy.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/SecurityAlert/Massdownload_USBFileCopy.yaml) |
 
 ## Tables Used
 
@@ -33,5 +33,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 

@@ -11,12 +11,12 @@ This alerts when a client IP connects with 1-15 different useragents in less tha
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Hunting Query |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `4edbb420-2df7-4089-9906-c335f065803e` |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1190 |
 | **Required Connectors** | [AzureMonitor(IIS)](../connectors/azuremonitor-iis.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hunting%20Queries/Hunting%20Queries/W3CIISLog/ClientIPwithManyUserAgents.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/W3CIISLog/ClientIPwithManyUserAgents.yaml) |
 
 ## Tables Used
 
@@ -28,5 +28,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Hunting Queries](hunting-queries.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Hunting Queries](hunting-queries.md)
 

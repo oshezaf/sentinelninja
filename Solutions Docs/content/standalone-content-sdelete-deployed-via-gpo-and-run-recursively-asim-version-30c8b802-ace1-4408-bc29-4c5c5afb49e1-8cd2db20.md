@@ -11,13 +11,13 @@ This query looks for the Sdelete process being run recursively after being deplo
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `30c8b802-ace1-4408-bc29-4c5c5afb49e1` |
 | **Severity** | Medium |
 | **Kind** | Scheduled |
 | **Tactics** | Impact |
 | **Techniques** | T1485 |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/ASimProcess/SdeletedeployedviaGPOandrunrecursively%28ASIMVersion%29.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/ASimProcess/SdeletedeployedviaGPOandrunrecursively%28ASIMVersion%29.yaml) |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
 
@@ -29,5 +29,5 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 

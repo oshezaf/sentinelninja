@@ -11,14 +11,14 @@ Identifies when 30 or more ports are used for a given client IP in 10 minutes oc
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `44a555d8-ecee-4a25-95ce-055879b4b14b` |
 | **Severity** | Medium |
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1190 |
 | **Required Connectors** | [AzureMonitor(IIS)](../connectors/azuremonitor-iis.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/W3CIISLog/HighPortCountByClientIP.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/W3CIISLog/HighPortCountByClientIP.yaml) |
 
 ## Tables Used
 
@@ -30,5 +30,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 

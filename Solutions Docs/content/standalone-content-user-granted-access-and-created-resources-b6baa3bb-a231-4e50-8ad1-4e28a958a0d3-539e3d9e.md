@@ -11,12 +11,12 @@ Identifies when a new user is granted access and starts creating resources in Az
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Hunting Query |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `b6baa3bb-a231-4e50-8ad1-4e28a958a0d3` |
 | **Tactics** | Persistence, PrivilegeEscalation, Impact |
 | **Techniques** | T1098, T1078, T1496 |
 | **Required Connectors** | [AzureActivity](../connectors/azureactivity.md), [AzureActivity](../connectors/azureactivity.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Hunting%20Queries/Hunting%20Queries/MultipleDataSources/UserGrantedAccess_CreatesResources.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/MultipleDataSources/UserGrantedAccess_CreatesResources.yaml) |
 
 ## Tables Used
 
@@ -30,5 +30,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Hunting Queries](hunting-queries.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Hunting Queries](hunting-queries.md)
 

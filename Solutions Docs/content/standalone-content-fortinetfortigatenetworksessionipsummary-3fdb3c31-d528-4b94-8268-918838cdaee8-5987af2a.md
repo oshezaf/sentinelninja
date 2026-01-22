@@ -11,10 +11,11 @@ This summary rule aggregates network session logs from Fortinet Fortigate device
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Summary Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `3fdb3c31-d528-4b94-8268-918838cdaee8` |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Event Vendor** | Fortinet |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Summary rules/Network/FortinetFortigateNetworkSessionIPSummary.yaml) |
 
 ## Tables Used
 
@@ -26,5 +27,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Summary Rules](summary-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Summary Rules](summary-rules.md)
 

@@ -11,13 +11,13 @@ This query monitors for users running Log Analytics queries that contain filters
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `f7f4a77e-f68f-4b56-9aaf-a0c9d87d7a8e` |
 | **Severity** | Low |
 | **Kind** | Scheduled |
 | **Tactics** | Collection, Exfiltration |
 | **Techniques** | T1530, T1213, T1020 |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/LAQueryLogs/UserSearchingForVIPUserActivity.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/LAQueryLogs/UserSearchingForVIPUserActivity.yaml) |
 
 ## Tables Used
 
@@ -29,5 +29,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 

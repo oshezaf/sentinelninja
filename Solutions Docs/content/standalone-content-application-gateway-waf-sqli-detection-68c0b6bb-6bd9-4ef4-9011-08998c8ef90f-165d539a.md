@@ -11,14 +11,14 @@ Identifies a match for SQL Injection attack in the Application gateway WAF logs.
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `68c0b6bb-6bd9-4ef4-9011-08998c8ef90f` |
 | **Severity** | High |
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion, Execution, InitialAccess, PrivilegeEscalation |
 | **Techniques** | T1211, T1059, T1190, T0890 |
 | **Required Connectors** | [WAF](../connectors/waf.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/AzureWAF/AppGwWAF-SQLiDetection.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/AzureWAF/AppGwWAF-SQLiDetection.yaml) |
 
 ## Tables Used
 
@@ -30,5 +30,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 

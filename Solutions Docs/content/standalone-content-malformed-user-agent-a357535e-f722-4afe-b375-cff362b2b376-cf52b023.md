@@ -11,14 +11,14 @@ Malware authors will sometimes hardcode user agent string values when writing th
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `a357535e-f722-4afe-b375-cff362b2b376` |
 | **Severity** | Medium |
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess, CommandAndControl, Execution |
 | **Techniques** | T1189, T1071, T1203 |
 | **Required Connectors** | [WAF](../connectors/waf.md), [Office365](../connectors/office365.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AWS](../connectors/aws.md), [AzureMonitor(IIS)](../connectors/azuremonitor-iis.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/MultipleDataSources/MalformedUserAgents.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/MultipleDataSources/MalformedUserAgents.yaml) |
 
 ## Tables Used
 
@@ -35,5 +35,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 

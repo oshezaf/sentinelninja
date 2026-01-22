@@ -11,13 +11,13 @@ This detection looks for command line parameters associated with the use of Sysi
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Analytic Rule |
-| **Solution** | [Standalone Content](../solutions/standalone-content.md) |
+| **Solution** | Standalone Content |
 | **ID** | `5b6ae038-f66e-4f74-9315-df52fd492be4` |
 | **Severity** | Low |
 | **Kind** | Scheduled |
 | **Tactics** | DefenseEvasion, Impact |
 | **Techniques** | T1485, T1036 |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Detections/Analytic%20Rules/ASimProcess/Potentialre-namedsdeleteusage%28ASIMVersion%29.yaml) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/ASimProcess/Potentialre-namedsdeleteusage%28ASIMVersion%29.yaml) |
 
 ## Tables Used
 
@@ -29,5 +29,5 @@ This content item queries data from the following tables:
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Analytic Rules](analytic-rules.md) · [Back to Standalone Content](../solutions/standalone-content.md)
+↑ [Back to Analytic Rules](analytic-rules.md)
 
