@@ -25,7 +25,9 @@ Display incidents in which low sensitive HR information was placed at risk by us
 
 This content item queries data from the following tables:
 
-- [`CognniIncidents_CL`](../tables/cognniincidents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | — | — |
 
 ---
 

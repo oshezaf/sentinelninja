@@ -24,8 +24,10 @@ This query visualises emails released from quarantine and summarizing the result
 
 This content item queries data from the following tables:
 
-- [`EmailEvents`](../tables/emailevents.md)
-- [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | ✓ | ✗ |
 
 ---
 

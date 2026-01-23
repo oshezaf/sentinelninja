@@ -25,7 +25,9 @@ Query searches for high confidence threats stopped by MailGuard 365.
 
 This content item queries data from the following tables:
 
-- [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) | — | — |
 
 ---
 

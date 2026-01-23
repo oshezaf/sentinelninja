@@ -23,7 +23,9 @@ Detects when a single source is connecting to many different SMB or file shares.
 
 This content item queries data from the following tables:
 
-- [`Corelight_v2_smb_mapping_CL`](../tables/corelight-v2-smb-mapping-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_smb_mapping_CL`](../tables/corelight-v2-smb-mapping-cl.md) | — | — |
 
 ---
 

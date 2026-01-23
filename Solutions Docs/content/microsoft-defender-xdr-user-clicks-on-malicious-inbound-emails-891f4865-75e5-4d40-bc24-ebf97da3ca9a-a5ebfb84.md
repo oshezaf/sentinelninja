@@ -22,8 +22,10 @@ This query provides insights on users who clicked on a suspicious URL
 
 This content item queries data from the following tables:
 
-- [`EmailEvents`](../tables/emailevents.md)
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [Event](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_kerberos_CL](../tables/corelight-v2-kerberos-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_kerberos_CL`](../tables/corelight-v2-kerberos-cl.md) | — | — |
 
 ---
 

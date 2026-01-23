@@ -18,10 +18,12 @@ Author: Hesham Saad
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`GIBTIAAPTThreatActor_CL`](../tables/gibtiaaptthreatactor-cl.md) | write |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | read/write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GIBTIAAPTThreatActor_CL`](../tables/gibtiaaptthreatactor-cl.md) | — | — |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — |
 
 ## Additional Documentation
 

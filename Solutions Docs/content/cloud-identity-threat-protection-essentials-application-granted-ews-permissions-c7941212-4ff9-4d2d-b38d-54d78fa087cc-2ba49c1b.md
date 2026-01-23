@@ -22,8 +22,10 @@ This query finds AD applications with EWS permissions to read user mailboxes. Th
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

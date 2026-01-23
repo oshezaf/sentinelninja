@@ -25,7 +25,9 @@ Detects ZPA connections by new user.
 
 This content item queries data from the following tables:
 
-- [`ZPA_CL`](../tables/zpa-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ZPA_CL`](../tables/zpa-cl.md) | — | — |
 
 ---
 

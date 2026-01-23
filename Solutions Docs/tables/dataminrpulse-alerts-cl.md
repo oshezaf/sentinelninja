@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) |  |
 
 ---
 
@@ -25,21 +27,27 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [Dataminr - urgent alerts detected](../content/dataminr-pulse-dataminr-urgent-alerts-detected-64a46029-3236-4d03-b5df-207366a623f1-d65138c6.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dataminr - urgent alerts detected](../content/dataminr-pulse-dataminr-urgent-alerts-detected-64a46029-3236-4d03-b5df-207366a623f1-d65138c6.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [DataminrPulseAlerts](../parsers/dataminrpulsealerts.md) | [Dataminr Pulse](../solutions/dataminr-pulse.md) | Solution |
-| [DataminrPulseCyberAlerts](../parsers/dataminrpulsecyberalerts.md) | [Dataminr Pulse](../solutions/dataminr-pulse.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DataminrPulseAlerts](../parsers/dataminrpulsealerts.md) | [Dataminr Pulse](../solutions/dataminr-pulse.md) |  |
+| [DataminrPulseCyberAlerts](../parsers/dataminrpulsecyberalerts.md) | [Dataminr Pulse](../solutions/dataminr-pulse.md) |  |
 
 ---
 

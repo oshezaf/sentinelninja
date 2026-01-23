@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Syslog sudo sign in logs to the ASIM Authe
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Syslog](../tables/syslog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "sudo"`<br>`SyslogMessage has "COMMAND="`<br>`SyslogMessage has "TTY="`<br>`SyslogMessage has "USER="`<br>`SyslogMessage has "incorrect password attempts"`<br>`SyslogMessage has "session closed for user"`<br>`SyslogMessage has "user NOT in sudoers"` | ✓ | ✓ |
 
 ## Parameters
 

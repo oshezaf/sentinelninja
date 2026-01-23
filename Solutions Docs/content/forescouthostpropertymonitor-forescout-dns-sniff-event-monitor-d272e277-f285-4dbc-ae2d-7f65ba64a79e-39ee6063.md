@@ -21,7 +21,9 @@ This rule creates an incident when more than certain number of Dnsniff events ar
 
 This content item queries data from the following tables:
 
-- [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) | — | — |
 
 ---
 

@@ -25,7 +25,9 @@ Detects remote to local (R2L) SSH connection to internal host.
 
 This content item queries data from the following tables:
 
-- [`Ubiquiti_CL`](../tables/ubiquiti-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | — |
 
 ---
 

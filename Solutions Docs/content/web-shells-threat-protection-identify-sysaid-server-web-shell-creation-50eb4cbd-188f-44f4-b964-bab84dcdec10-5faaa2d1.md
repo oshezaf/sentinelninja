@@ -24,8 +24,10 @@ This query looks for potential webshell creation by the threat actor Mercury aft
 
 This content item queries data from the following tables:
 
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4663,4688"` | ✓ | ✓ |
 
 ---
 

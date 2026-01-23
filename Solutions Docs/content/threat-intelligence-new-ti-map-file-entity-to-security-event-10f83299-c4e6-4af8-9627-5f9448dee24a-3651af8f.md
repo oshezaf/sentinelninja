@@ -21,7 +21,9 @@ This query finds matches in Security Event data for known FileName Indicators of
 
 This content item queries data from the following tables:
 
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ |
 
 ---
 

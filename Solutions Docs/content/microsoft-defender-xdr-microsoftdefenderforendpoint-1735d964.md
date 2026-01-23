@@ -16,16 +16,18 @@
 
 This content item queries data from the following tables:
 
-- [`DeviceEvents`](../tables/deviceevents.md)
-- [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md)
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)
-- [`DeviceInfo`](../tables/deviceinfo.md)
-- [`DeviceLogonEvents`](../tables/devicelogonevents.md)
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`DeviceRegistryEvents`](../tables/deviceregistryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ |
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | ✓ | ✗ |
 
 ---
 

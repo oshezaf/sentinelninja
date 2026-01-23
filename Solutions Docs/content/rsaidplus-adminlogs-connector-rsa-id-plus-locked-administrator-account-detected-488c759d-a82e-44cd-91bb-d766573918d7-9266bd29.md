@@ -24,7 +24,9 @@ Raises an alert when an admin account is locked out of the Admin console (RSAIDP
 
 This content item queries data from the following tables:
 
-- [`RSAIDPlus_AdminLogs_CL`](../tables/rsaidplus-adminlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`RSAIDPlus_AdminLogs_CL`](../tables/rsaidplus-adminlogs-cl.md) | — | — |
 
 ---
 

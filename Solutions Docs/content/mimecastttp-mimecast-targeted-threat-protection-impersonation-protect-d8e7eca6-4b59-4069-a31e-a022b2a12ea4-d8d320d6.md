@@ -24,7 +24,9 @@ Detects a maliciously tagged impersonation
 
 This content item queries data from the following tables:
 
-- [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | — | — |
 
 ---
 

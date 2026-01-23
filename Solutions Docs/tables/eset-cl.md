@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Eset Security Management Center](../connectors/esetsmc.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Eset Security Management Center](../connectors/esetsmc.md) |  |
 
 ---
 
@@ -25,16 +27,25 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Eset Security Management Center](../solutions/eset-security-management-center.md):**
-- [Threats detected by Eset](../content/eset-security-management-center-threats-detected-by-eset-2d8a60aa-c15e-442e-9ce3-ee924889d2a6-602eeb34.md)
-- [Web sites blocked by Eset](../content/eset-security-management-center-web-sites-blocked-by-eset-84ad2f8a-b64c-49bc-b669-bdb4fd3071e9-9515533c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Threats detected by Eset](../content/eset-security-management-center-threats-detected-by-eset-2d8a60aa-c15e-442e-9ce3-ee924889d2a6-602eeb34.md) |  |
+| [Web sites blocked by Eset](../content/eset-security-management-center-web-sites-blocked-by-eset-84ad2f8a-b64c-49bc-b669-bdb4fd3071e9-9515533c.md) |  |
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [esetSMCWorkbook](../content/-esetsmcworkbook-9ed5bd3c.md)
-
 **In solution [Eset Security Management Center](../solutions/eset-security-management-center.md):**
-- [esetSMCWorkbook](../content/eset-security-management-center-esetsmcworkbook-7ed61bc1.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [esetSMCWorkbook](../content/eset-security-management-center-esetsmcworkbook-7ed61bc1.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [esetSMCWorkbook](../content/github-only-esetsmcworkbook-b5480ebc.md) |  |
 
 ---
 

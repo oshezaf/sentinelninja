@@ -22,7 +22,9 @@ detects suspicious sync events that occurred to applications using SCIM for user
 
 This content item queries data from the following tables:
 
-- [`Authomize_v2_CL`](../tables/authomize-v2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — |
 
 ---
 

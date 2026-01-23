@@ -23,7 +23,9 @@ BloodHound Attack Path Finding - Computers Vulnerable to Coercion-Based NTLM Rel
 
 This content item queries data from the following tables:
 
-- [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — |
 
 ---
 

@@ -22,8 +22,8 @@ The [SentinelOne](https://usea1-nessat.sentinelone.net/api-doc/overview) data co
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | — | — |
 | [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | — | — |
 | [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | — | — |

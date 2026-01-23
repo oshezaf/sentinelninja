@@ -25,8 +25,10 @@ Identifies unusual bulk sharing, based on a predefined threshold in the query, o
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Azure Blob Storage events, stored in the S
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [StorageBlobLogs](../tables/storagebloblogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`StorageBlobLogs`](../tables/storagebloblogs.md) | ✓ | ✗ |
 
 ## Parameters
 

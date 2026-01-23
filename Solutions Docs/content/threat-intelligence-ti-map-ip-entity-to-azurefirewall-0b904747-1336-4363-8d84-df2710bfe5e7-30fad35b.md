@@ -24,8 +24,10 @@ Identifies a match in AzureFirewall (NetworkRule & ApplicationRule Logs) from an
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

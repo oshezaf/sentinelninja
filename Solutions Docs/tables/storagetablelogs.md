@@ -27,7 +27,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Azure Storage Account](../connectors/azurestorageaccount.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Azure Storage Account](../connectors/azurestorageaccount.md) |  |
 
 ---
 
@@ -36,7 +38,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
-- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
 ## Resource Types
 
@@ -48,9 +53,9 @@ This table collects data from the following Azure resource types:
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimFileEventAzureTableStorage](../asim/asimfileeventazuretablestorage.md) | FileEvent |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimFileEventAzureTableStorage](../asim/asimfileeventazuretablestorage.md) | FileEvent | Microsoft Azure Table Storage |  |
 
 ---
 

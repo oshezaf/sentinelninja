@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Azure Network Security Groups (NSG) flows 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | — | — |
 
 ## Parameters
 

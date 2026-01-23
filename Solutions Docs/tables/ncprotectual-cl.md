@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [NC Protect](../connectors/nucleuscyberncprotect.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [NC Protect](../connectors/nucleuscyberncprotect.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [NC Protect Data Connector](../solutions/nc-protect-data-connector.md):**
-- [NucleusCyber_NCProtect_Workbook](../content/nc-protect-data-connector-nucleuscyber-ncprotect-workbook-14169a8f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NucleusCyber_NCProtect_Workbook](../content/nc-protect-data-connector-nucleuscyber-ncprotect-workbook-14169a8f.md) |  |
 
 ---
 

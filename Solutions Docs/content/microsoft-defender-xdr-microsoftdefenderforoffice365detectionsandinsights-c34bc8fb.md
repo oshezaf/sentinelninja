@@ -16,14 +16,16 @@
 
 This content item queries data from the following tables:
 
-- [`AlertEvidence`](../tables/alertevidence.md)
-- [`CloudAppEvents`](../tables/cloudappevents.md)
-- [`EmailEvents`](../tables/emailevents.md)
-- [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)
-- [`EmailUrlInfo`](../tables/emailurlinfo.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityIncident`](../tables/securityincident.md)
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | ✓ | ✗ |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

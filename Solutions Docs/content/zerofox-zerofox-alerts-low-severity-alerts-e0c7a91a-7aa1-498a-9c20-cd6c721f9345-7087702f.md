@@ -25,7 +25,9 @@ Detects low severity alerts from ZeroFox
 
 This content item queries data from the following tables:
 
-- [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | — | — |
 
 ---
 

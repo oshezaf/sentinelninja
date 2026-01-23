@@ -34,12 +34,12 @@ For more information, see the [Microsoft Sentinel documentation](https://go.micr
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ |
-| [`AWSCloudWatch`](../tables/awscloudwatch.md) | ✓ | ✓ |
-| [`AWSGuardDuty`](../tables/awsguardduty.md) | ✓ | ✓ |
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "CreateUser"` | ✓ | ✓ |
+| [`AWSCloudWatch`](../tables/awscloudwatch.md) |  | ✓ | ✓ |
+| [`AWSGuardDuty`](../tables/awsguardduty.md) |  | ✓ | ✓ |
+| [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

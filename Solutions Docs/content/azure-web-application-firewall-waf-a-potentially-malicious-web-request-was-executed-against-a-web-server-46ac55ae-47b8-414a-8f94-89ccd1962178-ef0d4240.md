@@ -25,8 +25,10 @@
 
 This content item queries data from the following tables:
 
-- [`AGWAccessLogs`](../tables/agwaccesslogs.md)
-- [`AGWFirewallLogs`](../tables/agwfirewalllogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AGWAccessLogs`](../tables/agwaccesslogs.md) | ✓ | ✗ |
+| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ |
 
 ---
 

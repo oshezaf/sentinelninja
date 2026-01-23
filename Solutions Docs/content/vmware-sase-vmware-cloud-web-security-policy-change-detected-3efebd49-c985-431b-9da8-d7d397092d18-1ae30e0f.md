@@ -22,7 +22,9 @@ This Analytics rule provides notifications when a VMware CWS policy has been mod
 
 This content item queries data from the following tables:
 
-- [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) | — | — |
 
 ---
 

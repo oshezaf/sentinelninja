@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Palo Alto Cortex Data Lake logs to the ASI
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "THREAT"`<br>`DeviceProduct == "LF"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
 
 ## Parameters
 

@@ -24,8 +24,10 @@ Identifies a match in DeviceFileEvents Event data from any FileHash IOC from TI
 
 This content item queries data from the following tables:
 
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md) |  |
 
 ---
 

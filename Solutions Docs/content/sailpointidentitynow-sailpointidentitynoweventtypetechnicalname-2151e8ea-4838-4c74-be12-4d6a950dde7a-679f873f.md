@@ -25,7 +25,9 @@ Created to detect new threat events from the data in SailPointIDN_Events.
 
 This content item queries data from the following tables:
 
-- [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) | — | — |
 
 ---
 

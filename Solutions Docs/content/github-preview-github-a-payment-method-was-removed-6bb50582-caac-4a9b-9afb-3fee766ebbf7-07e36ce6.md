@@ -24,9 +24,11 @@ Detect activities when a payment method was removed. This query runs every day a
 
 This content item queries data from the following tables:
 
-- [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
-- [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)
-- [`ImpactedUser`](../tables/impacteduser.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | — | — |
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | — | — |
+| [`ImpactedUser`](../tables/impacteduser.md) | — | — |
 
 ---
 

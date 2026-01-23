@@ -22,8 +22,8 @@ Microsoft Sentinel integrates with Microsoft Graph Security API data sources to 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 | [`ThreatIntelObjects`](../tables/threatintelobjects.md) | ✓ | ✗ |

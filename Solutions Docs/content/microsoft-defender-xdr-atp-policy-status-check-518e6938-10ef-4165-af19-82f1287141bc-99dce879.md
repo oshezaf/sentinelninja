@@ -22,7 +22,9 @@ This query displays the configuration auditing for 'Safe Attachments for SharePo
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
 
 ---
 

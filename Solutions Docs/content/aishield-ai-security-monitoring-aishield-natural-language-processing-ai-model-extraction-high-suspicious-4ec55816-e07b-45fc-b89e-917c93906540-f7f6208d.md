@@ -23,7 +23,9 @@ This alert creates an incident when Natural language processing AI Model extract
 
 This content item queries data from the following tables:
 
-- [`AIShield_CL`](../tables/aishield-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AIShield_CL`](../tables/aishield-cl.md) | — | — |
 
 ---
 

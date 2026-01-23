@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) |  |
 
 ---
 

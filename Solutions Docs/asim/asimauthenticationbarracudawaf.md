@@ -29,10 +29,10 @@ This ASIM parser supports normalizing the Barracuda WAF logs to the ASIM authent
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
-| [barracuda_CL](../tables/barracuda-cl.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "WAAS,WAF"`<br>`DeviceVendor startswith "Barracuda"` | ✓ | ✓ |
+| [`barracuda_CL`](../tables/barracuda-cl.md) |  | — | — |
 
 ## Parameters
 

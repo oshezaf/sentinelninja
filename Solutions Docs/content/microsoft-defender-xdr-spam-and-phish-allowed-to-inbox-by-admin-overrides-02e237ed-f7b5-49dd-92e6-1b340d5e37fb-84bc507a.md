@@ -24,7 +24,9 @@ This query helps in reviewing malicious emails allowed due to admin overrides
 
 This content item queries data from the following tables:
 
-- [`EmailEvents`](../tables/emailevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
 
 ---
 

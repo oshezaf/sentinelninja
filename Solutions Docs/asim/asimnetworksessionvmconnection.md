@@ -29,9 +29,9 @@ This ASIM parser supports normalizing VM connection logs collected using the Log
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [VMConnection](../tables/vmconnection.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
 
 ## Parameters
 

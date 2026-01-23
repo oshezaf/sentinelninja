@@ -24,7 +24,9 @@ Detects a user's consent to an OAuth application being blocked due to it being t
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
 
 ---
 

@@ -25,7 +25,9 @@ This query will detect instances where a newly invited external user is granted 
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
 
 ---
 

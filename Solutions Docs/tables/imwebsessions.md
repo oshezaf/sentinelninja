@@ -18,11 +18,17 @@ This table is used by the following solutions:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [Log4jPostCompromiseHunting](../content/-log4jpostcompromisehunting-8debb189.md)
-
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
-- [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
 
 ---
 

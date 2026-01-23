@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [vectra_ssh_CL](../tables/vectra-ssh-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vectra_ssh_CL`](../tables/vectra-ssh-cl.md) | — | — |
 
 ---
 

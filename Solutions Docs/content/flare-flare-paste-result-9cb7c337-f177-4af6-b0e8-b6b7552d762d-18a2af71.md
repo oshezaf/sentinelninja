@@ -25,7 +25,9 @@ Result found on code Snippet (paste) sharing platform
 
 This content item queries data from the following tables:
 
-- [`Firework_CL`](../tables/firework-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Firework_CL`](../tables/firework-cl.md) | — | — |
 
 ---
 

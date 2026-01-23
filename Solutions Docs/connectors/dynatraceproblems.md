@@ -22,8 +22,8 @@ This connector uses the [Dynatrace Problem REST API](https://docs.dynatrace.com/
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | — | — |
 
 ## Permissions

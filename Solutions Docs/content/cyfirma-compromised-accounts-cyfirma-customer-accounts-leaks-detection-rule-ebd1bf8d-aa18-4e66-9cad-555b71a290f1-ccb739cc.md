@@ -25,7 +25,9 @@ Detects recent leaks of customer account credentials based on CYFIRMA's threat i
 
 This content item queries data from the following tables:
 
-- [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md) | — | — |
 
 ---
 

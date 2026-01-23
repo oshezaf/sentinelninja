@@ -25,8 +25,10 @@
 
 This content item queries data from the following tables:
 
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`anomalies`](../tables/anomalies.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
 
 ---
 

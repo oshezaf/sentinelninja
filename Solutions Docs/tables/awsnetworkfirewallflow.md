@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Amazon Web Services NetworkFirewall (via Codeless Connector Framework)](../connectors/awsnetworkfirewallccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Amazon Web Services NetworkFirewall (via Codeless Connector Framework)](../connectors/awsnetworkfirewallccpdefinition.md) |  |
 
 ---
 

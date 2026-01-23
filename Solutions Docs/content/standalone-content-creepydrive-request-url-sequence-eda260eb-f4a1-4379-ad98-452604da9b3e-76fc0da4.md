@@ -24,7 +24,9 @@ CreepyDrive uses OneDrive for command and control, however, it makes regular req
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
 
 ---
 

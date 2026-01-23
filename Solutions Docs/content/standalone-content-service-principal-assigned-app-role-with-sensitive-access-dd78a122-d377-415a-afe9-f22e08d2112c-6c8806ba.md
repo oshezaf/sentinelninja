@@ -24,7 +24,9 @@ Detects a Service Principal being assigned an app role that has sensitive access
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
 
 ---
 

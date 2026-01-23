@@ -24,8 +24,10 @@ This query maps any IP indicators of compromise (IOCs) from threat intelligence 
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

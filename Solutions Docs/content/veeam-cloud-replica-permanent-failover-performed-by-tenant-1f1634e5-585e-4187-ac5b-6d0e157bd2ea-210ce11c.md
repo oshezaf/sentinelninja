@@ -23,7 +23,9 @@ Detects permanent failover of a cloud replica initiated by a tenant. This might 
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "instanceId"` | ✓ | ✓ |
 
 ---
 

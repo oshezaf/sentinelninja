@@ -25,7 +25,9 @@ Identifies clients with a high reverse DNS counts that could be carrying out rec
 
 This content item queries data from the following tables:
 
-- [`DnsEvents`](../tables/dnsevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
 
 ---
 

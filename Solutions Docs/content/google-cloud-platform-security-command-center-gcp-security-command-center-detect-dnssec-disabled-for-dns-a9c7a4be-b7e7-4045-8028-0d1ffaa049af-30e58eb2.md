@@ -25,7 +25,9 @@ Detects Google Cloud DNS zones where DNSSEC is disabled using Security Command C
 
 This content item queries data from the following tables:
 
-- [`GoogleCloudSCC`](../tables/googlecloudscc.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ |
 
 ---
 

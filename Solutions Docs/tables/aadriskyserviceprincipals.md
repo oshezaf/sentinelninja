@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Entra ID](../connectors/azureactivedirectory.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Entra ID](../connectors/azureactivedirectory.md) |  |
 
 ---
 
@@ -34,11 +36,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
-- [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ---
 

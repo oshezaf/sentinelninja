@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [vectra_isession_CL](../tables/vectra-isession-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vectra_isession_CL`](../tables/vectra-isession-cl.md) | — | — |
 
 ---
 

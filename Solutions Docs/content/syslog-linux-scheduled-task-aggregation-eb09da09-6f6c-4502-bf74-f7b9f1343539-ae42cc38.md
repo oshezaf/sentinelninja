@@ -22,7 +22,9 @@ This query aggregates and charts cron job data based on unique user-command pair
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "cron"`<br>`ProcessName in "CRON,CROND"`<br>`SyslogMessage contains "CMD"` | ✓ | ✓ |
 
 ---
 

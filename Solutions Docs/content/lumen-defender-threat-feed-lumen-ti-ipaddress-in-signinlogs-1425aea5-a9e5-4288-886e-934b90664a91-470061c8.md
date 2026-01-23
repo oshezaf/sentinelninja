@@ -24,8 +24,10 @@ This query maps Lumen IP indicators of compromise (IOCs) from threat intelligenc
 
 This content item queries data from the following tables:
 
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 
 ---
 

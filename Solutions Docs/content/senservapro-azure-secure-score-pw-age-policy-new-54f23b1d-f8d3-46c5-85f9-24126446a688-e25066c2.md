@@ -22,7 +22,9 @@ This query searches for having found that when periodic password resets are enfo
 
 This content item queries data from the following tables:
 
-- [`SenservaPro_CL`](../tables/senservapro-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
 
 ---
 

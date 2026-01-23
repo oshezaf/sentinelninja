@@ -25,7 +25,9 @@ Rule helps to track error occurred in Netskope WebTransaction Data Connector.
 
 This content item queries data from the following tables:
 
-- [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) | — | — |
 
 ---
 

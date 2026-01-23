@@ -24,7 +24,9 @@ Total Submissions by Submission Type
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
 
 ---
 

@@ -20,7 +20,9 @@ List all PnP Devices that have been allowed or blocked
 
 This content item queries data from the following tables:
 
-- [`DeviceEvents`](../tables/deviceevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
 
 ---
 

@@ -27,7 +27,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Azure Firewall](../connectors/azurefirewall.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Azure Firewall](../connectors/azurefirewall.md) |  |
 
 ---
 
@@ -36,15 +38,24 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
-- [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Multiple Sources Affected by the Same TI Destination](../content/azure-firewall-multiple-sources-affected-by-the-same-ti-destination-4644baf7-3464-45dd-bd9d-e07687e25f81-c5003c22.md) |  |
 
 ### Workbooks (2)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
-- [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Resource Types
 

@@ -19,15 +19,15 @@ This query searches web proxy logs for a specific type of beaconing behavior by 
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1071.001 |
 | **Required Connectors** | [Zscaler](../connectors/zscaler.md) |
-| **Event Vendor** | Zscaler |
-| **Event Product** | NSSWeblog |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday/Analytic%20Rules/RecognizingBeaconingTraffic.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ |
 
 ---
 

@@ -18,8 +18,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
-- [[Deprecated] Squid Proxy](../connectors/squidproxy.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
+| [[Deprecated] Squid Proxy](../connectors/squidproxy.md) |  |
 
 ---
 
@@ -28,21 +30,24 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimWebSessionSquidProxy](../asim/asimwebsessionsquidproxy.md) | WebSession |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimWebSessionSquidProxy](../asim/asimwebsessionsquidproxy.md) | WebSession | Squid Proxy |  |
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [SquidProxy](../parsers/squidproxy.md) | [SquidProxy](../solutions/squidproxy.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [SquidProxy](../parsers/squidproxy.md) | [SquidProxy](../solutions/squidproxy.md) |  |
 
 ---
 

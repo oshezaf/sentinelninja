@@ -22,7 +22,9 @@ This query helps hunting for Inbox rule changes which forward-redirect email
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
 
 ---
 

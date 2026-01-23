@@ -24,8 +24,8 @@ This IPinfo data connector installs an Azure Function app to download standard_c
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Ipinfo_Company_CL`](../tables/ipinfo-company-cl.md) | — | — |
 
 ## Permissions

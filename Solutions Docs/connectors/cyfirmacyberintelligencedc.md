@@ -22,8 +22,8 @@ The CYFIRMA Cyber Intelligence data connector enables seamless log ingestion fro
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CyfirmaCampaigns_CL`](../tables/cyfirmacampaigns-cl.md) | — | — |
 | [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | — | — |
 | [`CyfirmaMalware_CL`](../tables/cyfirmamalware-cl.md) | — | — |

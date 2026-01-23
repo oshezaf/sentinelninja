@@ -15,14 +15,15 @@ Multiple endpoints accessing malicious URLs could indicate an ongoing phishing a
 | **ID** | `29c1b194-50d1-418d-82a9-3db5e3dfc3bf` |
 | **Tactics** | Execution |
 | **Techniques** | T1204 |
-| **Event Vendor** | Acronis |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Hunting%20Queries/AcronisEndpointsAccessingMaliciousURLs.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "MaliciousUrlDetected"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
 
 ---
 

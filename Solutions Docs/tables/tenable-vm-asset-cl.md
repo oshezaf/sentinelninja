@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Tenable Vulnerability Management](../connectors/tenablevm.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tenable Vulnerability Management](../connectors/tenablevm.md) |  |
 
 ---
 
@@ -26,9 +28,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [TenableVMAssets](../parsers/tenablevmassets.md) | [Tenable App](../solutions/tenable-app.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [TenableVMAssets](../parsers/tenablevmassets.md) | [Tenable App](../solutions/tenable-app.md) |  |
 
 ---
 

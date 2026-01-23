@@ -24,8 +24,10 @@ Identifies whenever a user account has the setting "Password Never Expires" in t
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "4738"` | ✓ | ✓ |
 
 ---
 

@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [DragosAlerts_CL](../tables/dragosalerts-cl.md)
-- [SecurityAlert](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | — | — |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [DynatraceProblems_CL](../tables/dynatraceproblems-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | — | — |
 
 ---
 

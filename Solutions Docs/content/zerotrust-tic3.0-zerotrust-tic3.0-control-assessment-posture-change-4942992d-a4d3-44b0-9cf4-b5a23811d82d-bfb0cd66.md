@@ -24,7 +24,9 @@ Zero Trust(TIC3.0) Control Assessments have Deviated from Configured Threshold B
 
 This content item queries data from the following tables:
 
-- [`SecurityRecommendation`](../tables/securityrecommendation.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) | ✓ | ✗ |
 
 ---
 

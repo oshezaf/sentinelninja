@@ -20,7 +20,9 @@ Finds PowerShell execution events that could involve a download.
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
 
 ---
 

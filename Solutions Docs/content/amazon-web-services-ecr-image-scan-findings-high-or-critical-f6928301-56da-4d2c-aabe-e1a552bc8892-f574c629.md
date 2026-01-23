@@ -25,7 +25,9 @@ AWS ECR Image scan detected critical or high-severity vulnerabilities in your co
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "DescribeImageScanFindings"` | ✓ | ✓ |
 
 ---
 

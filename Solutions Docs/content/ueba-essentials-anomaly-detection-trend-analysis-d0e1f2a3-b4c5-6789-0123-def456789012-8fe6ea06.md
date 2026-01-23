@@ -20,7 +20,9 @@ Visualizes anomaly detection trends over the past 90 days, showing daily counts 
 
 This content item queries data from the following tables:
 
-- [`Anomalies`](../tables/anomalies.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
 
 ---
 

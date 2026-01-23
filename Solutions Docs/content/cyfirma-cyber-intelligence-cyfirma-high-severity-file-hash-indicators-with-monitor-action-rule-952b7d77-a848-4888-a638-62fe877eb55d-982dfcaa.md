@@ -24,7 +24,9 @@ This query retrieves file hash indicators marked for Monitoring, with no assigne
 
 This content item queries data from the following tables:
 
-- [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | — | — |
 
 ---
 

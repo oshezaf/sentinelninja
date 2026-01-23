@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the Barracuda WAF logs ingested in 'barrac
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [barracuda_CL](../tables/barracuda-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`barracuda_CL`](../tables/barracuda-cl.md) | — | — |
 
 ## Parameters
 

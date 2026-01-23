@@ -22,7 +22,9 @@ Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
 
 ---
 

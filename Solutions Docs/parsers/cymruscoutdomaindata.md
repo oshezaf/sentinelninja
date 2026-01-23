@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Domain_Data_CL](../tables/domain-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Domain_Data_CL`](../tables/domain-data-cl.md) | — | — |
 
 ---
 

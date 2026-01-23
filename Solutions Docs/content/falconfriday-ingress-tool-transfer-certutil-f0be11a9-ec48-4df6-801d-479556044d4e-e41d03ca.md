@@ -25,8 +25,10 @@ This detection addresses most of the known ways to utilize this binary for malic
 
 This content item queries data from the following tables:
 
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
 
 ---
 

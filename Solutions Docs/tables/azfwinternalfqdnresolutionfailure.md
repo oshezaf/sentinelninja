@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Azure Firewall](../connectors/azurefirewall.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Azure Firewall](../connectors/azurefirewall.md) |  |
 
 ---
 

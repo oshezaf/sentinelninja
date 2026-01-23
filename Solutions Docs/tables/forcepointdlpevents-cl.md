@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Forcepoint DLP](../connectors/forcepoint-dlp.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Forcepoint DLP](../connectors/forcepoint-dlp.md) |  |
 
 ---
 
@@ -24,11 +26,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [ForcepointDLP](../content/-forcepointdlp-82ecf6b9.md)
-
 **In solution [Forcepoint DLP](../solutions/forcepoint-dlp.md):**
-- [ForcepointDLP](../content/forcepoint-dlp-forcepointdlp-aa61cdb9.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ForcepointDLP](../content/forcepoint-dlp-forcepointdlp-aa61cdb9.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ForcepointDLP](../content/github-only-forcepointdlp-897d7584.md) |  |
 
 ---
 

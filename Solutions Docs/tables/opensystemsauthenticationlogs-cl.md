@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Open Systems Data Connector](../connectors/opensystems.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Open Systems Data Connector](../connectors/opensystems.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ASimAuthenticationOpenSystems](../parsers/asimauthenticationopensystems.md) | [Open Systems](../solutions/open-systems.md) | Solution ⚠️ |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ASimAuthenticationOpenSystems](../parsers/asimauthenticationopensystems.md) | [Open Systems](../solutions/open-systems.md) ⚠️ |  |
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 

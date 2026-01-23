@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) | — | — |
 
 ---
 

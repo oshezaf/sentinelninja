@@ -24,7 +24,9 @@ Identifies a match for SQL Injection attack in the Application gateway WAF logs.
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "ApplicationGatewayFirewallLog"` | — | ✗ |
 
 ---
 

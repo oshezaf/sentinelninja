@@ -25,7 +25,9 @@ Identify attempted exfiltration of S3 Bucket objects by an anonymous User
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "GetObject"` | ✓ | ✓ |
 
 ---
 

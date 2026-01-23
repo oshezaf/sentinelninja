@@ -17,8 +17,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
-- [[Deprecated] Juniper IDP](../connectors/juniperidp.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
+| [[Deprecated] Juniper IDP](../connectors/juniperidp.md) |  |
 
 ---
 
@@ -26,9 +28,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [JuniperIDP](../parsers/juniperidp.md) | [JuniperIDP](../solutions/juniperidp.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [JuniperIDP](../parsers/juniperidp.md) | [JuniperIDP](../solutions/juniperidp.md) |  |
 
 ---
 

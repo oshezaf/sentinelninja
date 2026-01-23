@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md)
-- [`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md) | — | — |
+| [`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) | — | — |
 
 ---
 

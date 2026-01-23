@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [OneTrust](../connectors/onetrustpush.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [OneTrust](../connectors/onetrustpush.md) |  |
 
 ---
 

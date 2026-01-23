@@ -22,7 +22,9 @@ Some TLDs, often linked to malware due to ease of obtaining, may be undesirable 
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName contains "squid"` | ✓ | ✓ |
 
 ---
 

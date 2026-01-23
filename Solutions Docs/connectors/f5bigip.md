@@ -22,8 +22,8 @@ The F5 firewall connector allows you to easily connect your F5 logs with Microso
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) | — | — |
 | [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) | — | — |
 | [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | — | — |

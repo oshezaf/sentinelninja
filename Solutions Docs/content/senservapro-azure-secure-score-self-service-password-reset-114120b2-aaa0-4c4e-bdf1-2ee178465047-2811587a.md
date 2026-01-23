@@ -25,7 +25,9 @@ This query searches for requires you to setup Microsoft Entra ID Connect.   Micr
 
 This content item queries data from the following tables:
 
-- [`SenservaPro_CL`](../tables/senservapro-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
 
 ---
 

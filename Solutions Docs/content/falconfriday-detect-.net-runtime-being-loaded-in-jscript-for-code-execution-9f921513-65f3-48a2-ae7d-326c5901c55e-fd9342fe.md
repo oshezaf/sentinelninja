@@ -25,7 +25,9 @@ This query detects .NET being loaded from wscript or cscript to run .NET code, s
 
 This content item queries data from the following tables:
 
-- [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ |
 
 ---
 

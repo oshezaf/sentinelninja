@@ -18,8 +18,6 @@
 | **Publisher** | Cisco |
 | **Used in Solutions** | [CiscoSEG](../solutions/ciscoseg.md) |
 | **Collection Method** | AMA |
-| **Event Vendor** | Cisco |
-| **Event Product** | ESA_CONSOLIDATED_LOG_EVENT |
 | **Connector Definition Files** | [template_CiscoSEGAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoSEG/Data%20Connectors/template_CiscoSEGAMA.json) |
 
 The [Cisco Secure Email Gateway (SEG)](https://www.cisco.com/c/en/us/products/security/email-security/index.html) data connector provides the capability to ingest [Cisco SEG Consolidated Event Logs](https://www.cisco.com/c/en/us/td/docs/security/esa/esa14-0/user_guide/b_ESA_Admin_Guide_14-0/b_ESA_Admin_Guide_12_1_chapter_0100111.html#con_1061902) into Microsoft Sentinel.
@@ -28,9 +26,9 @@ The [Cisco Secure Email Gateway (SEG)](https://www.cisco.com/c/en/us/products/se
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Cisco | ESA_CONSOLIDATED_LOG_EVENT | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "ESA_CONSOLIDATED_LOG_EVENT"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

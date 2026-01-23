@@ -22,9 +22,11 @@ This query finds successful logons from known VPS providers with suspicious toke
 
 This content item queries data from the following tables:
 
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

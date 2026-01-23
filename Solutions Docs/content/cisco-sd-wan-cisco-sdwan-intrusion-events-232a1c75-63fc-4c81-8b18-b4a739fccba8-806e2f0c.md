@@ -25,7 +25,9 @@ This Analytic rule will monitor Intrusion events in Cisco syslog data based on t
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
 
 ---
 

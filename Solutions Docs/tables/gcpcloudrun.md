@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [GCP Cloud Run (via Codeless Connector Framework)](../connectors/gcpcloudrunlogs-connectordefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [GCP Cloud Run (via Codeless Connector Framework)](../connectors/gcpcloudrunlogs-connectordefinition.md) |  |
 
 ---
 

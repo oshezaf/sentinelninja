@@ -24,7 +24,9 @@ This query helps hunt for Teams messages with malicious URLs based on external T
 
 This content item queries data from the following tables:
 
-- [`MessageUrlInfo`](../tables/messageurlinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessageUrlInfo`](../tables/messageurlinfo.md) | — | ✗ |
 
 ---
 

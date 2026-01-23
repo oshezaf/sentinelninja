@@ -22,8 +22,8 @@ The [SentinelOne](https://www.sentinelone.com/) data connector provides the capa
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
 | [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | — | — |
 | [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | — | — |

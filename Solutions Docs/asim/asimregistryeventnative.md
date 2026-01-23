@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Registry Event table (ASimRegis
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimRegistryEventLogs](../tables/asimregistryeventlogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | ✓ | ✓ |
 
 ## Parameters
 

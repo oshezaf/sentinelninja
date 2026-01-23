@@ -23,9 +23,11 @@
 
 This parser reads from the following tables:
 
-- [FncEventsDetections_CL](../tables/fnceventsdetections-cl.md)
-- [FncEventsObservation_CL](../tables/fnceventsobservation-cl.md)
-- [FncEventsSuricata_CL](../tables/fnceventssuricata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) | — | — |
+| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) | — | — |
+| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) | — | — |
 
 ---
 

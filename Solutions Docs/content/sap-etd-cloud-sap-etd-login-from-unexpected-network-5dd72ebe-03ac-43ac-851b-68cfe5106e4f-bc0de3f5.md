@@ -24,7 +24,9 @@ Identifies logons from an unexpected network. Source Action: Logon to the backen
 
 This content item queries data from the following tables:
 
-- [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | — | — |
 
 ---
 

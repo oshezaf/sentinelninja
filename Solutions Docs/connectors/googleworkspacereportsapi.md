@@ -30,8 +30,8 @@ The [Google Workspace](https://workspace.google.com/) data connector provides th
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GWorkspace_ReportsAPI_access_transparency_CL`](../tables/gworkspace-reportsapi-access-transparency-cl.md) | — | — |
 | [`GWorkspace_ReportsAPI_admin_CL`](../tables/gworkspace-reportsapi-admin-cl.md) | — | — |
 | [`GWorkspace_ReportsAPI_calendar_CL`](../tables/gworkspace-reportsapi-calendar-cl.md) | — | — |

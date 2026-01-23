@@ -24,8 +24,10 @@ Credentials used in the build process may be stored as Azure DevOps variables. T
 
 This content item queries data from the following tables:
 
-- [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md)
-- [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | — |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ |
 
 ---
 

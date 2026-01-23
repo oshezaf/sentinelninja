@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md):**
-- [ForescoutHostPropertyMonitorWorkbook](../content/forescouthostpropertymonitor-forescouthostpropertymonitorworkbook-cbfbbf6d.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ForescoutHostPropertyMonitorWorkbook](../content/forescouthostpropertymonitor-forescouthostpropertymonitorworkbook-cbfbbf6d.md) |  |
 
 ---
 

@@ -24,8 +24,10 @@ This query looks for Microsoft Defender AV detections related to Hive Ransomware
 
 This content item queries data from the following tables:
 
-- [`DeviceInfo`](../tables/deviceinfo.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

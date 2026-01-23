@@ -25,7 +25,9 @@ Creates an incident in the event the requested URL accessed by the user has been
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "local0"` | ✓ | ✓ |
 
 ---
 

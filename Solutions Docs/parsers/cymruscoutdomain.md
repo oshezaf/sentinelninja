@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Cymru_Scout_Domain_Data_CL](../tables/cymru-scout-domain-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md) | — | — |
 
 ---
 

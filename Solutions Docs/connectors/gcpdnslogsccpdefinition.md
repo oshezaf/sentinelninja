@@ -22,8 +22,8 @@ The Google Cloud Platform DNS data connector provides the capability to ingest C
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GCPDNS`](../tables/gcpdns.md) | ✓ | ✗ |
 
 ## Permissions

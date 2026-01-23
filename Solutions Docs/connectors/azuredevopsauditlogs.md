@@ -22,8 +22,8 @@ The Azure DevOps Audit Logs data connector allows you to ingest audit events fro
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | — |
 
 ## Permissions

@@ -24,7 +24,9 @@ This query visualises user submissions type compared to admin review verdict
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
 
 ---
 

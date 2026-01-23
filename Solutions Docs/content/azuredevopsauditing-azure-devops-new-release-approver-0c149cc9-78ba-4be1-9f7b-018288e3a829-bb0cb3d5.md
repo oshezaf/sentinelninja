@@ -21,8 +21,10 @@ Release approvals in Azure Pipelines, often user-authorized, can be self-approve
 
 This content item queries data from the following tables:
 
-- [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md)
-- [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | — |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ |
 
 ---
 

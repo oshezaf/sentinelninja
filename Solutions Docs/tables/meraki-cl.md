@@ -18,10 +18,12 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md)
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) |  |
+| [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) |  |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) |  |
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
 
 ---
 
@@ -30,25 +32,31 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
-- [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook-efe4feca.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook-efe4feca.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (3)
 
 ### ASIM Parsers (2)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimAuthenticationCiscoMeraki](../asim/asimauthenticationciscomeraki.md) | Authentication |  |
-| [ASimNetworkSessionCiscoMeraki](../asim/asimnetworksessionciscomeraki.md) | NetworkSession |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuthenticationCiscoMeraki](../asim/asimauthenticationciscomeraki.md) | Authentication | Cisco Meraki |  |
+| [ASimNetworkSessionCiscoMeraki](../asim/asimnetworksessionciscomeraki.md) | NetworkSession | Cisco Meraki |  |
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [CiscoMeraki](../parsers/ciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CiscoMeraki](../parsers/ciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md) |  |
 
 ---
 

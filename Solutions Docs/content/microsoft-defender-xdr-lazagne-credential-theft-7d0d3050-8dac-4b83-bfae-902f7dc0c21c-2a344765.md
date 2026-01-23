@@ -25,7 +25,9 @@ LaZagne is a popular open-source tool used to recover passwords stored on a loca
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
 
 ---
 

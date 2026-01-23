@@ -24,7 +24,9 @@ A Conditional Access Device platforms condition has changed (the Device platform
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
 
 ---
 

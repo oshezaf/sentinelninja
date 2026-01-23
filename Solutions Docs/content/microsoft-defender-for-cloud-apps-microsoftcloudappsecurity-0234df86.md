@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`McasShadowItReporting`](../tables/mcasshadowitreporting.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

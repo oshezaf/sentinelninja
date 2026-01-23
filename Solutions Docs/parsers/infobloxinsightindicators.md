@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [InfobloxInsightIndicators_CL](../tables/infobloxinsightindicators-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | — | — |
 
 ---
 

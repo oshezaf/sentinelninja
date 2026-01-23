@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Check Point Cyberint IOC Connector](../connectors/checkpointcyberintioc.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Check Point Cyberint IOC Connector](../connectors/checkpointcyberintioc.md) |  |
 
 ---
 

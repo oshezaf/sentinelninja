@@ -28,7 +28,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
 
 ---
 
@@ -37,10 +39,16 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
-- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Resource Types
 
@@ -52,9 +60,9 @@ This table collects data from the following Azure resource types:
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimWebSessionNative](../asim/asimwebsessionnative.md) | WebSession |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimWebSessionNative](../asim/asimwebsessionnative.md) | WebSession | Native |  |
 
 ---
 

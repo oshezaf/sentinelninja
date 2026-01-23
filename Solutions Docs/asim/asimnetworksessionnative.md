@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Microsoft Sentinel Network Sess
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimNetworkSessionLogs](../tables/asimnetworksessionlogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ |
 
 ## Parameters
 

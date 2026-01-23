@@ -24,8 +24,10 @@ This query identifies any URL indicators of compromise (IOCs) from threat intell
 
 This content item queries data from the following tables:
 
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

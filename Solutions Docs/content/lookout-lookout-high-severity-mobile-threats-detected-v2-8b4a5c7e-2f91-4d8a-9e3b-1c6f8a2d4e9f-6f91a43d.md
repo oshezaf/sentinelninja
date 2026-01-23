@@ -25,7 +25,9 @@ Detects high severity mobile threats from Lookout Mobile Risk API v2 with enhanc
 
 This content item queries data from the following tables:
 
-- [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | — | — |
 
 ---
 

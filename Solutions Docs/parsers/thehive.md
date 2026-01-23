@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [TheHive_CL](../tables/thehive-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TheHive_CL`](../tables/thehive-cl.md) | — | — |
 
 ---
 

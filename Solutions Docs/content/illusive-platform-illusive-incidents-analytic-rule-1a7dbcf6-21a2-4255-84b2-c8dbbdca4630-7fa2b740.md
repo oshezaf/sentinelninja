@@ -19,14 +19,15 @@ Create a Microsoft Sentinel incident upon a new Illusive alert (incident) and as
 | **Tactics** | Persistence, PrivilegeEscalation, DefenseEvasion, CredentialAccess, LateralMovement |
 | **Techniques** | T1078, T1098, T1548, T1021 |
 | **Required Connectors** | [Illusive](../connectors/illusive.md), [illusiveAttackManagementSystemAma](../connectors/illusiveattackmanagementsystemama.md), [CefAma](../connectors/cefama.md) |
-| **Event Product** | illusive |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Platform/Analytic%20Rules/Illusive_Detection_Query.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "illusive"` | ✓ | ✓ |
 
 ---
 

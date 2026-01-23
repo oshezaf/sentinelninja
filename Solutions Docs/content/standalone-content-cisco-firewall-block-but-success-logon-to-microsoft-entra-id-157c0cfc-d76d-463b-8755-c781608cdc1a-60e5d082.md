@@ -18,14 +18,15 @@ Correlate IPs blocked by a Cisco firewall appliance with successful Microsoft En
 | **Tactics** | InitialAccess |
 | **Techniques** | T1078 |
 | **Required Connectors** | [CiscoASA](../connectors/ciscoasa.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
-| **Event Vendor** | Cisco |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/MultipleDataSources/SigninFirewallCorrelation.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Cisco"` | ✓ | ✓ |
 
 ---
 

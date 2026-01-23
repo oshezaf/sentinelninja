@@ -16,12 +16,14 @@
 
 This content item queries data from the following tables:
 
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`AZFWDnsQuery`](../tables/azfwdnsquery.md)
-- [`AZFWIdpsSignature`](../tables/azfwidpssignature.md)
-- [`AZFWNatRule`](../tables/azfwnatrule.md)
-- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
-- [`AZFWThreatIntel`](../tables/azfwthreatintel.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ |
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | ✓ | ✗ |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | ✓ | ✗ |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) | ✓ | ✗ |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | ✓ | ✗ |
 
 ---
 

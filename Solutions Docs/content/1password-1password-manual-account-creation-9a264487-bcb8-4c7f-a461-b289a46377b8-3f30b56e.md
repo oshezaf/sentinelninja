@@ -24,7 +24,9 @@ This will alert when a new account was created manually within 1Password. This s
 
 This content item queries data from the following tables:
 
-- [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | — | — |
 
 ---
 

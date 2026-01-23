@@ -16,9 +16,11 @@
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID in "1,6"` | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4720,4722,4724,4725,4726,7036"` | ✓ | ✓ |
+| [`W3CIISLog`](../tables/w3ciislog.md) |  | ✓ | ✗ |
 
 ---
 

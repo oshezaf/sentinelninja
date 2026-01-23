@@ -25,7 +25,9 @@ This detection looks at process executions - in some cases with specific command
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
 
 ---
 

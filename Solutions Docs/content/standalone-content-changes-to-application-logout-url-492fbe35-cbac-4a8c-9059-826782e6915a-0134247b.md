@@ -24,7 +24,9 @@ Detects changes to an applications sign out URL.   Look for any modifications to
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
 
 ---
 

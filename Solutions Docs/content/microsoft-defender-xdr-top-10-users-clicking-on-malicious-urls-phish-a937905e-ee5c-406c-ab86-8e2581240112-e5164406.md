@@ -24,7 +24,9 @@ Visualises the top 10 users with click attempts on URLs in emails detected as ph
 
 This content item queries data from the following tables:
 
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

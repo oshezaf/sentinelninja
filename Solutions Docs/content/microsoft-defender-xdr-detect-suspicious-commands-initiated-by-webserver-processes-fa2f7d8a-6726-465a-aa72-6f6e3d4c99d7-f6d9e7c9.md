@@ -21,7 +21,9 @@ Detect suspicious commands initiated by web server processes used for network di
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
 
 ---
 

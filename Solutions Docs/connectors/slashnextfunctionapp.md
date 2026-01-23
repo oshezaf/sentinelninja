@@ -24,8 +24,8 @@ The SlashNext function app utilizes python to perform the analysis of the raw lo
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 | [`AzureMetrics`](../tables/azuremetrics.md) | ✗ | ✗ |
 

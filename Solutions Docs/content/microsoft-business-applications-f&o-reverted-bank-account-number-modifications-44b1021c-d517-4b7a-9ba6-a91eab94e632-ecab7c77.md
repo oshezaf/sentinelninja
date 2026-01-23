@@ -25,7 +25,9 @@ Identifies changes to bank account numbers in Finance & Operations, whereby a ba
 
 This content item queries data from the following tables:
 
-- [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | — | — |
 
 ---
 

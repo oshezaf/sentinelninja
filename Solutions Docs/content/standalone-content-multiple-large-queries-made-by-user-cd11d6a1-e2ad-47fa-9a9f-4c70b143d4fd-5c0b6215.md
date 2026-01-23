@@ -22,7 +22,9 @@ This hunting query looks for users who are running multiple queries that return 
 
 This content item queries data from the following tables:
 
-- [`LAQueryLogs`](../tables/laquerylogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LAQueryLogs`](../tables/laquerylogs.md) | ✓ | ✗ |
 
 ---
 

@@ -18,10 +18,12 @@ Author: Hesham Saad
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`GIBTIASuspiciousIPOpenProxy_CL`](../tables/gibtiasuspiciousipopenproxy-cl.md) | write |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | read/write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GIBTIASuspiciousIPOpenProxy_CL`](../tables/gibtiasuspiciousipopenproxy-cl.md) | — | — |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — |
 
 ## Additional Documentation
 

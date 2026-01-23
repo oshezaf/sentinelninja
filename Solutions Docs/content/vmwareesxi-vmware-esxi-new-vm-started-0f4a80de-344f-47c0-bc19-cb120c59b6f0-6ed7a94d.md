@@ -25,7 +25,9 @@ Detects when new VM was started.
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | ✓ | ✓ |
 
 ---
 

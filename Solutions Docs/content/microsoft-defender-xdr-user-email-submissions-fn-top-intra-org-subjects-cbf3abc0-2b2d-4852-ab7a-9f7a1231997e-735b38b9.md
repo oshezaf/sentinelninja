@@ -24,7 +24,9 @@ This query visualises top 10 subjects of intra-org emails submitted as false neg
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
 
 ---
 

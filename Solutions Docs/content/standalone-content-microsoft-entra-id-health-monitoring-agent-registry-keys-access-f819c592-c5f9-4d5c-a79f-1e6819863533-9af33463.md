@@ -24,8 +24,10 @@ This detection uses Windows security events to detect suspicious access attempts
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4656,4663"` | ✓ | ✓ |
 
 ---
 

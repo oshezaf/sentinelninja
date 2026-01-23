@@ -17,8 +17,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
-- [[Deprecated] MongoDB Audit](../connectors/mongodb.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
+| [[Deprecated] MongoDB Audit](../connectors/mongodb.md) |  |
 
 ---
 
@@ -26,9 +28,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [MongoDBAudit](../parsers/mongodbaudit.md) | [MongoDBAudit](../solutions/mongodbaudit.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [MongoDBAudit](../parsers/mongodbaudit.md) | [MongoDBAudit](../solutions/mongodbaudit.md) |  |
 
 ---
 

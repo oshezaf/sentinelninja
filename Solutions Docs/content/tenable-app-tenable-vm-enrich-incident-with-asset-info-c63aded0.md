@@ -16,9 +16,11 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | — | — |
 
 ## Additional Documentation
 

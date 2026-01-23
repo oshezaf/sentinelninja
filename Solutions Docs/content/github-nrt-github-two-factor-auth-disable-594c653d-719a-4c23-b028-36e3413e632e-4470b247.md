@@ -23,7 +23,9 @@ Two-factor authentication is a process where a user is prompted during the sign-
 
 This content item queries data from the following tables:
 
-- [`GitHub_CL`](../tables/github-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GitHub_CL`](../tables/github-cl.md) | — | — |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Cribl](../connectors/cribl.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Cribl](../connectors/cribl.md) |  |
 
 ---
 
@@ -24,16 +26,19 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [CriblWorkbook](../content/-criblworkbook-6abad082.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CriblWorkbook](../content/github-only-criblworkbook-923de34f.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [CriblAccess](../parsers/criblaccess.md) | [Cribl](../solutions/cribl.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CriblAccess](../parsers/criblaccess.md) | [Cribl](../solutions/cribl.md) |  |
 
 ---
 

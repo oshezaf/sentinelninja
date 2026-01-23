@@ -25,7 +25,9 @@ Identifies SolarWinds SUNBURST domain beacon IOCs in DeviceNetworkEvents Referen
 
 This content item queries data from the following tables:
 
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
 
 ---
 

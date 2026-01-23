@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [JBossLogs_CL](../tables/jbosslogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`JBossLogs_CL`](../tables/jbosslogs-cl.md) | — | — |
 
 ---
 

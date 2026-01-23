@@ -10,15 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [CiscoASA](../solutions/ciscoasa.md) |
-| **Event Vendor** | Cisco |
-| **Event Product** | ASA |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Workbooks/Cisco.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "106100,111008,113012,113015,302010,315011,611102,733100"`<br>`DeviceProduct == "ASA"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ |
 
 ---
 

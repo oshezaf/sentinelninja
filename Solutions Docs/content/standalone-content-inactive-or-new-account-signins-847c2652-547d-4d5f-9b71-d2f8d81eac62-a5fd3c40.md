@@ -22,9 +22,11 @@ Query for new sign-ins from stale/inactive accounts. UEBA filters based on Activ
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

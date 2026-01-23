@@ -18,7 +18,6 @@
 | **Publisher** | iboss |
 | **Used in Solutions** | [iboss](../solutions/iboss.md) |
 | **Collection Method** | MMA |
-| **Event Vendor** | iboss |
 | **Connector Definition Files** | [iboss_cef.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss/Data%20Connectors/iboss_cef.json) |
 
 The [iboss](https://www.iboss.com) data connector enables you to seamlessly connect your Threat Console to Microsoft Sentinel and enrich your instance with iboss URL event logs. Our logs are forwarded in Common Event Format (CEF) over Syslog and the configuration required can be completed on the iboss platform without the use of a proxy. Take advantage of our connector to garner critical data points and gain insight into security threats.
@@ -27,9 +26,9 @@ The [iboss](https://www.iboss.com) data connector enables you to seamlessly conn
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | iboss | — | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "iboss"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

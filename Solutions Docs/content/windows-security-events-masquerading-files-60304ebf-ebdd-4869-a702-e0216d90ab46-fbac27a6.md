@@ -21,7 +21,9 @@ Malware writers often use windows system process names like svchost.exe to hide 
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
 
 ---
 

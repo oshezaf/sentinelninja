@@ -29,9 +29,9 @@ This ASIM parser supports normalizing VMware Carbon Black Cloud logs to the ASIM
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CarbonBlackEvents_CL](../tables/carbonblackevents-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | — | — |
 
 ## Parameters
 

@@ -25,8 +25,10 @@ Identifies a match in LastPass table from any IP IOC from TI
 
 This content item queries data from the following tables:
 
-- [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | — |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

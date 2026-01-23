@@ -24,7 +24,9 @@ Detects when process started from different locations on a host.
 
 This content item queries data from the following tables:
 
-- [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — |
 
 ---
 

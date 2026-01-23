@@ -22,7 +22,9 @@ This query helps reviewing sender IPs sending malicious email of type Malware or
 
 This content item queries data from the following tables:
 
-- [`EmailEvents`](../tables/emailevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
 
 ---
 

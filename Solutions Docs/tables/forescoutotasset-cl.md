@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md):**
-- [eyeInspectOTSecurityWorkbook](../content/forescout-eyeinspect-for-ot-security-eyeinspectotsecurityworkbook-bab522c8.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [eyeInspectOTSecurityWorkbook](../content/forescout-eyeinspect-for-ot-security-eyeinspectotsecurityworkbook-bab522c8.md) |  |
 
 ---
 

@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [Syslog](../tables/syslog.md)
-- [syslog](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | ✓ | ✓ |
+| [`syslog`](../tables/syslog.md) |  | — | — |
 
 ---
 

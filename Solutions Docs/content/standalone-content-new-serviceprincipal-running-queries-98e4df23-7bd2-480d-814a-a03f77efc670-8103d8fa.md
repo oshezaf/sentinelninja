@@ -22,7 +22,9 @@ This hunting query looks for new Service Principals running queries that have no
 
 This content item queries data from the following tables:
 
-- [`LAQueryLogs`](../tables/laquerylogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LAQueryLogs`](../tables/laquerylogs.md) | ✓ | ✗ |
 
 ---
 

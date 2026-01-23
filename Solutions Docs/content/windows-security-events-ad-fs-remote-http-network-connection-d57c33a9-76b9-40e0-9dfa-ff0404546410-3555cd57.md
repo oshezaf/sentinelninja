@@ -25,7 +25,9 @@ This detection uses Sysmon events (NetworkConnect events) to detect incoming net
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID in "18,3"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ---
 

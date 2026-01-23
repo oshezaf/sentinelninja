@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) | — | — |
 
 ---
 

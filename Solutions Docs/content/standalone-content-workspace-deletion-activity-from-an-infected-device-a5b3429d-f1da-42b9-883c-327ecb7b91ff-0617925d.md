@@ -24,9 +24,11 @@ This query will alert on any sign-ins from devices infected with malware in corr
 
 This content item queries data from the following tables:
 
-- [`AzureActivity`](../tables/azureactivity.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

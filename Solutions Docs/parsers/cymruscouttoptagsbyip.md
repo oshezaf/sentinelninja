@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Top_Tags_By_IP_Data_CL](../tables/top-tags-by-ip-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Top_Tags_By_IP_Data_CL`](../tables/top-tags-by-ip-data-cl.md) | — | — |
 
 ---
 

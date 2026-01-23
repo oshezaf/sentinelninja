@@ -26,8 +26,8 @@ Microsoft Defender for Cloud is a security management tool that allows you to de
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ## Permissions

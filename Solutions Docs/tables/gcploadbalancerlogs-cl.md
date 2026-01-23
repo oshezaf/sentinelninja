@@ -20,7 +20,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [GCP Pub/Sub Load Balancer Logs (via Codeless Connector Platform).](../connectors/gcpfloadbalancerlogsccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [GCP Pub/Sub Load Balancer Logs (via Codeless Connector Platform).](../connectors/gcpfloadbalancerlogsccpdefinition.md) |  |
 
 ---
 

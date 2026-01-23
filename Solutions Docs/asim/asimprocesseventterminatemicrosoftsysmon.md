@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Windows Sysmon process terminate
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Event](../tables/event.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID == "5"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ## Parameters
 

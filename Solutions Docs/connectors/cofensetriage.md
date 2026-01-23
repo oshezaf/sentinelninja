@@ -60,8 +60,8 @@ The [Cofense-Triage](https://cofense.com/product-services/cofense-triage/) data 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Cofense_Triage_failed_indicators_CL`](../tables/cofense-triage-failed-indicators-cl.md) | — | — |
 | [`Report_links_data_CL`](../tables/report-links-data-cl.md) | — | — |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |

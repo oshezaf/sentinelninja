@@ -30,9 +30,11 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md)
-- [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md)
-- [Workday User Activity](../connectors/workdayccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [Workday User Activity](../connectors/workdayccpdefinition.md) |  |
 
 ---
 
@@ -40,13 +42,19 @@ This table is ingested by the following connectors:
 
 ### Analytic Rules (1)
 
-**In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
-- [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-ti-map-ip-entity-to-workday-asimauditeventlogs-a924d317-03d2-4420-a71f-4d347bda4bd8-7032e2e7.md)
+**In solution [Threat Intelligence](../solutions/threat-intelligence.md):** `EventVendor == "Workday"`
+
+| Content Item |
+|:-------------|
+| [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-ti-map-ip-entity-to-workday-asimauditeventlogs-a924d317-03d2-4420-a71f-4d347bda4bd8-7032e2e7.md) |
 
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Resource Types
 
@@ -58,15 +66,30 @@ This table collects data from the following Azure resource types:
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimAuditEventNative](../asim/asimauditeventnative.md) | AuditEvent |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventNative](../asim/asimauditeventnative.md) | AuditEvent | Native |  |
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventVendor == "Workday"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### EventProduct / EventVendor
+
+| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+|  | `Workday` | - | 1 | - | - | **1** |
 
 ---
 

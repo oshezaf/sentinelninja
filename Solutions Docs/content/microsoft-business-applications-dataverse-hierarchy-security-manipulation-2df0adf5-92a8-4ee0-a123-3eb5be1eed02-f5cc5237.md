@@ -25,7 +25,9 @@ Identifies suspicious behaviors in hierarchy security including: - Hierarchy sec
 
 This content item queries data from the following tables:
 
-- [`DataverseActivity`](../tables/dataverseactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
 
 ---
 

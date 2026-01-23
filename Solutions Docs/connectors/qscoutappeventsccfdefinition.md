@@ -22,8 +22,8 @@ Ingest Qscout application events into Microsoft Sentinel
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) | — | — |
 
 ## Permissions

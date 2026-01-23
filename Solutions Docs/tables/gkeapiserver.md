@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Google Kubernetes Engine (via Codeless Connector Framework)](../connectors/gkeccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Google Kubernetes Engine (via Codeless Connector Framework)](../connectors/gkeccpdefinition.md) |  |
 
 ---
 

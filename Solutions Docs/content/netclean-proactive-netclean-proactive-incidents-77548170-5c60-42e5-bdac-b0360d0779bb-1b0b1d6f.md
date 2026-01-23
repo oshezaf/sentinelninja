@@ -25,7 +25,9 @@ NetClean Incident
 
 This content item queries data from the following tables:
 
-- [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) | — | — |
 
 ---
 

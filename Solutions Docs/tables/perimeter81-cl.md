@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) |  |
 
 ---
 
@@ -24,11 +26,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [Perimeter81OverviewWorkbook](../content/-perimeter81overviewworkbook-3ff4cae7.md)
-
 **In solution [Perimeter 81](../solutions/perimeter-81.md):**
-- [Perimeter81OverviewWorkbook](../content/perimeter-81-perimeter81overviewworkbook-167f2993.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Perimeter81OverviewWorkbook](../content/perimeter-81-perimeter81overviewworkbook-167f2993.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Perimeter81OverviewWorkbook](../content/github-only-perimeter81overviewworkbook-c7882438.md) |  |
 
 ---
 

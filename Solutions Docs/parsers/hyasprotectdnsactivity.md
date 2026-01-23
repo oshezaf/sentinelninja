@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [HYASProtectDnsSecurityLogs_CL](../tables/hyasprotectdnssecuritylogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`HYASProtectDnsSecurityLogs_CL`](../tables/hyasprotectdnssecuritylogs-cl.md) | — | — |
 
 ---
 

@@ -22,7 +22,9 @@ The query digs in Windows print spooler drivers folder for any file creations. T
 
 This content item queries data from the following tables:
 
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
 
 ---
 

@@ -16,9 +16,11 @@
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`image`](../tables/image.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "kube-audit"` | — | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
+| [`image`](../tables/image.md) |  | — | — |
 
 ---
 

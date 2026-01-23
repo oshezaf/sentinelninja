@@ -22,8 +22,8 @@ Ingest security alerts from Tropico Security Platform in OCSF Security Finding f
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Tropico_Alerts_CL`](../tables/tropico-alerts-cl.md) | — | — |
 
 ## Permissions

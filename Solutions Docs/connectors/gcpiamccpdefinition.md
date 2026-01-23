@@ -22,8 +22,8 @@ The Google Cloud Platform IAM data connector provides the capability to ingest t
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GCPIAM`](../tables/gcpiam.md) | ✓ | ✗ |
 
 ## Permissions

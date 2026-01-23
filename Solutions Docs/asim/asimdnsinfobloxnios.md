@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Infoblox NIOS DNS logs to the ASIM Dns nor
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Syslog](../tables/syslog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "named"`<br>`SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | ✓ | ✓ |
 
 ## Parameters
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [NXLog AIX Audit](../connectors/nxlogaixaudit.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [NXLog AIX Audit](../connectors/nxlogaixaudit.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [NXLog_parsed_AIX_Audit_view](../parsers/nxlog-parsed-aix-audit-view.md) | [NXLogAixAudit](../solutions/nxlogaixaudit.md) | Solution ⚠️ |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [NXLog_parsed_AIX_Audit_view](../parsers/nxlog-parsed-aix-audit-view.md) | [NXLogAixAudit](../solutions/nxlogaixaudit.md) ⚠️ |  |
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 

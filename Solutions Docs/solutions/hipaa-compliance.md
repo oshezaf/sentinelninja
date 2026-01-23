@@ -54,7 +54,7 @@ The following **4 table(s)** are used internally by this solution's content item
 | [`SecurityAlert`](../tables/securityalert.md) | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | Workbooks |
-| [`watchlist`](../tables/watchlist.md) | Workbooks |
+| [`Watchlist`](../tables/watchlist.md) | Workbooks |
 
 ## Content Items
 
@@ -68,7 +68,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md)<br>[`watchlist`](../tables/watchlist.md) |
+| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`DeviceFileEvents`](../tables/devicefileevents.md)<br>[`DeviceInfo`](../tables/deviceinfo.md)<br>[`DeviceNetworkEvents`](../tables/devicenetworkevents.md)<br>[`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md)<br>[`Watchlist`](../tables/watchlist.md) |
 
 ## Release Notes
 

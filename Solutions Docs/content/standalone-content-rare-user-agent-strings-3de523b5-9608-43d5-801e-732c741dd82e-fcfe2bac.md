@@ -23,7 +23,9 @@ This will check for Rare User Agent strings over the last 3 days.  This can indi
 
 This content item queries data from the following tables:
 
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

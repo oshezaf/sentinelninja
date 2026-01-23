@@ -25,8 +25,10 @@ Identifies sign-in across multiple Dataverse environments, breaching a predefine
 
 This content item queries data from the following tables:
 
-- [`DataverseActivity`](../tables/dataverseactivity.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Dynatrace Attacks](../connectors/dynatraceattacks.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Dynatrace Attacks](../connectors/dynatraceattacks.md) |  |
 
 ---
 
@@ -25,20 +27,26 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Dynatrace](../solutions/dynatrace.md):**
-- [Dynatrace Application Security - Attack detection](../content/dynatrace-dynatrace-application-security-attack-detection-1b0b2065-8bac-5a00-83c4-1b58f69ac212-bb12d178.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dynatrace Application Security - Attack detection](../content/dynatrace-dynatrace-application-security-attack-detection-1b0b2065-8bac-5a00-83c4-1b58f69ac212-bb12d178.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Dynatrace](../solutions/dynatrace.md):**
-- [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [DynatraceAttacks](../parsers/dynatraceattacks.md) | [Dynatrace](../solutions/dynatrace.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DynatraceAttacks](../parsers/dynatraceattacks.md) | [Dynatrace](../solutions/dynatrace.md) |  |
 
 ---
 

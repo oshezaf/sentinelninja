@@ -22,7 +22,9 @@ This hunting query looks for users who have run queries that have not previously
 
 This content item queries data from the following tables:
 
-- [`LAQueryLogs`](../tables/laquerylogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LAQueryLogs`](../tables/laquerylogs.md) | ✓ | ✗ |
 
 ---
 

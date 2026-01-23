@@ -24,8 +24,8 @@ The ESET Protect Platform data connector enables users to inject detections data
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`IntegrationTableIncidents_CL`](../tables/integrationtableincidents-cl.md) | — | — |
 | [`IntegrationTable_CL`](../tables/integrationtable-cl.md) | — | — |
 

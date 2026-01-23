@@ -22,8 +22,8 @@ The [ExtraHop](https://extrahop.com/) Detections Data Connector enables you to i
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | — | — |
 
 ## Permissions

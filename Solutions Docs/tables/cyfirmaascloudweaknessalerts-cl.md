@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [CYFIRMA Attack Surface](../connectors/cyfirmaattacksurfacealertsconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [CYFIRMA Attack Surface](../connectors/cyfirmaattacksurfacealertsconnector.md) |  |
 
 ---
 
@@ -25,8 +27,11 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Cyfirma Attack Surface](../solutions/cyfirma-attack-surface.md):**
-- [CYFIRMA - Attack Surface - Cloud Weakness High Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-cloud-weakness-high-rule-87cd8b10-90f6-4967-a4a7-2142e848ec8f-e09f1271.md)
-- [CYFIRMA - Attack Surface - Cloud Weakness Medium Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-cloud-weakness-medium-rule-b8a3c5e2-04d5-4b61-9b62-b4f53a417f74-a425da1f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CYFIRMA - Attack Surface - Cloud Weakness High Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-cloud-weakness-high-rule-87cd8b10-90f6-4967-a4a7-2142e848ec8f-e09f1271.md) |  |
+| [CYFIRMA - Attack Surface - Cloud Weakness Medium Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-cloud-weakness-medium-rule-b8a3c5e2-04d5-4b61-9b62-b4f53a417f74-a425da1f.md) |  |
 
 ---
 

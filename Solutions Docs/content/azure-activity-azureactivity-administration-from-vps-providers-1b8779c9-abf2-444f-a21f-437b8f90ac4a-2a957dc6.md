@@ -22,7 +22,9 @@ Looks for administrative actions in AzureActivity from known VPS provider networ
 
 This content item queries data from the following tables:
 
-- [`AzureActivity`](../tables/azureactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
 
 ---
 

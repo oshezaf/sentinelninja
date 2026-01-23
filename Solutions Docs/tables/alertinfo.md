@@ -28,7 +28,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [SentinelOne](../connectors/sentinelone.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [SentinelOne](../connectors/sentinelone.md) |  |
 
 ---
 
@@ -37,86 +39,107 @@ This table is ingested by the following connectors:
 ### Analytic Rules (12)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Potential Ransomware activity related to Cobalt Strike](../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-4bd9ce9d-8586-4beb-8fdb-bd018cacbe7d-af20888f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Potential Ransomware activity related to Cobalt Strike](../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-4bd9ce9d-8586-4beb-8fdb-bd018cacbe7d-af20888f.md) |  |
 
 **In solution [SentinelOne](../solutions/sentinelone.md):**
-- [Sentinel One - Admin login from new location](../content/sentinelone-sentinel-one-admin-login-from-new-location-382f37b3-b49a-492f-b436-a4717c8c5c3e-e7ec747e.md)
-- [Sentinel One - Agent uninstalled from multiple hosts](../content/sentinelone-sentinel-one-agent-uninstalled-from-multiple-hosts-4ad87e4a-d045-4c6b-9652-c9de27fcb442-10a3603c.md)
-- [Sentinel One - Alert from custom rule](../content/sentinelone-sentinel-one-alert-from-custom-rule-5f37de91-ff2b-45fb-9eda-49e9f76a3942-7cb8d841.md)
-- [Sentinel One - Blacklist hash deleted](../content/sentinelone-sentinel-one-blacklist-hash-deleted-de339761-2298-4b37-8f1b-80ebd4f0b5f6-8fa631c1.md)
-- [Sentinel One - Exclusion added](../content/sentinelone-sentinel-one-exclusion-added-4224409f-a7bf-45eb-a931-922d79575a05-c94db4fe.md)
-- [Sentinel One - Multiple alerts on host](../content/sentinelone-sentinel-one-multiple-alerts-on-host-47e427e6-61bc-4e24-8d16-a12871b9f939-a9644e81.md)
-- [Sentinel One - New admin created](../content/sentinelone-sentinel-one-new-admin-created-e73d293d-966c-47ec-b8e0-95255755f12c-c6c1cb15.md)
-- [Sentinel One - Rule deleted](../content/sentinelone-sentinel-one-rule-deleted-e171b587-22bd-46ec-b96c-7c99024847a7-13809a6c.md)
-- [Sentinel One - Rule disabled](../content/sentinelone-sentinel-one-rule-disabled-84e210dd-8982-4398-b6f3-264fd72d036c-8dd4a965.md)
-- [Sentinel One - Same custom rule triggered on different hosts](../content/sentinelone-sentinel-one-same-custom-rule-triggered-on-different-hosts-5586d378-1bce-4d9b-9ac8-e7271c9d5a9a-6f74484f.md)
-- [Sentinel One - User viewed agent's passphrase](../content/sentinelone-sentinel-one-user-viewed-agent's-passphrase-51999097-60f4-42c0-bee8-fa28160e5583-1188d485.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Sentinel One - Admin login from new location](../content/sentinelone-sentinel-one-admin-login-from-new-location-382f37b3-b49a-492f-b436-a4717c8c5c3e-e7ec747e.md) |  |
+| [Sentinel One - Agent uninstalled from multiple hosts](../content/sentinelone-sentinel-one-agent-uninstalled-from-multiple-hosts-4ad87e4a-d045-4c6b-9652-c9de27fcb442-10a3603c.md) |  |
+| [Sentinel One - Alert from custom rule](../content/sentinelone-sentinel-one-alert-from-custom-rule-5f37de91-ff2b-45fb-9eda-49e9f76a3942-7cb8d841.md) |  |
+| [Sentinel One - Blacklist hash deleted](../content/sentinelone-sentinel-one-blacklist-hash-deleted-de339761-2298-4b37-8f1b-80ebd4f0b5f6-8fa631c1.md) |  |
+| [Sentinel One - Exclusion added](../content/sentinelone-sentinel-one-exclusion-added-4224409f-a7bf-45eb-a931-922d79575a05-c94db4fe.md) |  |
+| [Sentinel One - Multiple alerts on host](../content/sentinelone-sentinel-one-multiple-alerts-on-host-47e427e6-61bc-4e24-8d16-a12871b9f939-a9644e81.md) |  |
+| [Sentinel One - New admin created](../content/sentinelone-sentinel-one-new-admin-created-e73d293d-966c-47ec-b8e0-95255755f12c-c6c1cb15.md) |  |
+| [Sentinel One - Rule deleted](../content/sentinelone-sentinel-one-rule-deleted-e171b587-22bd-46ec-b96c-7c99024847a7-13809a6c.md) |  |
+| [Sentinel One - Rule disabled](../content/sentinelone-sentinel-one-rule-disabled-84e210dd-8982-4398-b6f3-264fd72d036c-8dd4a965.md) |  |
+| [Sentinel One - Same custom rule triggered on different hosts](../content/sentinelone-sentinel-one-same-custom-rule-triggered-on-different-hosts-5586d378-1bce-4d9b-9ac8-e7271c9d5a9a-6f74484f.md) |  |
+| [Sentinel One - User viewed agent's passphrase](../content/sentinelone-sentinel-one-user-viewed-agent's-passphrase-51999097-60f4-42c0-bee8-fa28160e5583-1188d485.md) |  |
 
 ### Hunting Queries (41)
 
-**In solution [](../solutions/.md):**
-- [Alerts related to Log4j vulnerability](../content/-alerts-related-to-log4j-vulnerability-ef76733a-86ab-4592-b341-64a4b369f4b7-3ef58ee5.md)
-- [Antivirus detections (1)](../content/-antivirus-detections-1-05250700-5123-45be-826d-dd14c623fade-b1135e2e.md)
-- [Cobalt Strike Lateral Movement](../content/-cobalt-strike-lateral-movement-1212ae5c-43cc-4c17-bcbb-d23cf9ad3483-d4d92537.md)
-- [Devices with Log4j vulnerability alerts and additional other alert related context](../content/-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-context-f0f222ae-a6c9-4992-9fdb-4b1601da244c-bed3529e.md)
-- [Distribution from remote location](../content/-distribution-from-remote-location-4e070afe-7a9b-4313-a964-c3168fffc1e2-162d3840.md)
-- [Events surrounding alert (1)](../content/-events-surrounding-alert-1-55a29d46-2cd5-44af-80aa-20d0ac4c86f8-cc21e9aa.md)
-- [Events surrounding alert (3)](../content/-events-surrounding-alert-3-c4955324-02ff-46fa-a642-64952334482d-55825ea1.md)
-- [ExploitGuardBlockOfficeChildProcess (1)](../content/-exploitguardblockofficechildprocess-1-fed32a95-bba6-47a6-8519-8d2a2cee97f9-233e1d8f.md)
-- [ExploitGuardBlockOfficeChildProcess (3)](../content/-exploitguardblockofficechildprocess-3-521f58f9-92b8-407b-9434-798a9f527b3c-8cb7819a.md)
-- [File Backup Deletion Alerts](../content/-file-backup-deletion-alerts-21444f27-9184-45bf-a335-7b7169a56790-206168a5.md)
-- [Gootkit File Delivery](../content/-gootkit-file-delivery-11d725f5-93d8-4b34-a64f-bf8450cdb184-13e213ec.md)
-- [Gootkit-malware](../content/-gootkit-malware-c8796d76-9a84-4cc8-91b5-d01f882869d4-faf18fd1.md)
-- [ImpersonatedUserFootprint](../content/-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-5ce685b6.md)
-- [Microsoft Teams chat initiated by a suspicious external user](../content/-microsoft-teams-chat-initiated-by-a-suspicious-external-user-8b88ecaf-88b3-4d70-814f-a55b96748ff5-0a4e9f9e.md)
-- [Open email link](../content/-open-email-link-67be3fdd-6942-45f8-8663-d825b61d1ab9-d32c53a4.md)
-- [Potential ransomware activity related to Cobalt Strike](../content/-potential-ransomware-activity-related-to-cobalt-strike-95db9b9c-7a12-4c0b-85c8-1c54f67c5ac7-96a9ad1b.md)
-- [Ransomware hits healthcare - Backup deletion](../content/-ransomware-hits-healthcare-backup-deletion-b0188e2d-734d-4d54-8e70-c4157a195bb1-11471ddf.md)
-- [Ransomware hits healthcare - Possible compromised accounts](../content/-ransomware-hits-healthcare-possible-compromised-accounts-f4506828-36f5-4668-8203-de062963be63-144effbf.md)
-- [Sticky Keys](../content/-sticky-keys-3c82774a-df78-44eb-9ab3-13ef37c63ae4-4264c379.md)
-- [SuspiciousUrlClicked](../content/-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-41b2fb21.md)
-- [URL click on ZAP email](../content/-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-5104f190.md)
-- [URLClick details based on malicious URL click alert](../content/-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-a1c0bbf7.md)
-- [backup-deletion](../content/-backup-deletion-1df2054c-5c63-4a2c-943b-0069af45bd38-6848edda.md)
-- [cobalt-strike](../content/-cobalt-strike-0a6e58fa-0689-418e-b05c-758c41664081-4967e91b.md)
-- [identify-accounts-logged-on-to-endpoints-affected-by-cobalt-strike](../content/-identify-accounts-logged-on-to-endpoints-affected-by-cobalt-strike-28558a10-d431-443b-886d-543a5b5d1871-989d28bc.md)
-
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Alerts Related to Log4j Vulnerability](../content/microsoft-defender-xdr-alerts-related-to-log4j-vulnerability-e7791695-c103-4d20-a75a-53e90788616b-ae157950.md)
-- [Devices with Log4j vulnerability alerts and additional other alert related context](../content/microsoft-defender-xdr-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-contex-8fe88892-3a55-4220-9141-939a8e7a15c5-0d5237c7.md)
-- [Microsoft Teams chat initiated by a suspicious external user](../content/microsoft-defender-xdr-microsoft-teams-chat-initiated-by-a-suspicious-external-user-b8eb3e2e-0f95-458e-b6d1-fe36a0ee8310-2a289095.md)
-- [Potential Ransomware activity related to Cobalt Strike](../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-74cc0176-3900-440e-b179-45d6a957145a-62723a0f.md)
-- [URL click on ZAP email](../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.md)
-- [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Alerts Related to Log4j Vulnerability](../content/microsoft-defender-xdr-alerts-related-to-log4j-vulnerability-e7791695-c103-4d20-a75a-53e90788616b-ae157950.md) |  |
+| [Devices with Log4j vulnerability alerts and additional other alert related context](../content/microsoft-defender-xdr-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-contex-8fe88892-3a55-4220-9141-939a8e7a15c5-0d5237c7.md) |  |
+| [Microsoft Teams chat initiated by a suspicious external user](../content/microsoft-defender-xdr-microsoft-teams-chat-initiated-by-a-suspicious-external-user-b8eb3e2e-0f95-458e-b6d1-fe36a0ee8310-2a289095.md) |  |
+| [Potential Ransomware activity related to Cobalt Strike](../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-74cc0176-3900-440e-b179-45d6a957145a-62723a0f.md) |  |
 
 **In solution [SentinelOne](../solutions/sentinelone.md):**
-- [Sentinel One - Agent not updated](../content/sentinelone-sentinel-one-agent-not-updated-7fc83c11-1d80-4d1e-9d4b-4f48bbf77abe-d8920f73.md)
-- [Sentinel One - Agent status](../content/sentinelone-sentinel-one-agent-status-4b2ed4b6-10bf-4b2c-b31e-ae51b575dfd4-ecfcfb9d.md)
-- [Sentinel One - Alert triggers (files, processes, strings)](../content/sentinelone-sentinel-one-alert-triggers-files,-processes,-strings-660e92b5-1ef6-471f-b753-44a34af82c41-3e9fb5c4.md)
-- [Sentinel One - Deleted rules](../content/sentinelone-sentinel-one-deleted-rules-8d1ca735-e29a-4bea-a2ec-93162790b686-ccd750bf.md)
-- [Sentinel One - Hosts not scanned recently](../content/sentinelone-sentinel-one-hosts-not-scanned-recently-e45ff570-e8a6-4f8e-9c08-7ee92ef86060-f02435bd.md)
-- [Sentinel One - New rules](../content/sentinelone-sentinel-one-new-rules-9c3a38e4-0975-4f96-82ee-90ce68bec76a-83965701.md)
-- [Sentinel One - Scanned hosts](../content/sentinelone-sentinel-one-scanned-hosts-17c77743-8bdb-4d29-a3cb-a7a08676122f-33d8fd36.md)
-- [Sentinel One - Sources by alert count](../content/sentinelone-sentinel-one-sources-by-alert-count-acd0a127-461e-48c8-96fa-27d14595abe0-e0f215ff.md)
-- [Sentinel One - Uninstalled agents](../content/sentinelone-sentinel-one-uninstalled-agents-f3a7cedd-6fc3-4661-a0ad-c1738e531917-9f651695.md)
-- [Sentinel One - Users by alert count](../content/sentinelone-sentinel-one-users-by-alert-count-56500e23-4e64-45a5-a444-98a1acb2f700-01daf4b9.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Sentinel One - Agent not updated](../content/sentinelone-sentinel-one-agent-not-updated-7fc83c11-1d80-4d1e-9d4b-4f48bbf77abe-d8920f73.md) |  |
+| [Sentinel One - Agent status](../content/sentinelone-sentinel-one-agent-status-4b2ed4b6-10bf-4b2c-b31e-ae51b575dfd4-ecfcfb9d.md) |  |
+| [Sentinel One - Alert triggers (files, processes, strings)](../content/sentinelone-sentinel-one-alert-triggers-files,-processes,-strings-660e92b5-1ef6-471f-b753-44a34af82c41-3e9fb5c4.md) |  |
+| [Sentinel One - Deleted rules](../content/sentinelone-sentinel-one-deleted-rules-8d1ca735-e29a-4bea-a2ec-93162790b686-ccd750bf.md) |  |
+| [Sentinel One - Hosts not scanned recently](../content/sentinelone-sentinel-one-hosts-not-scanned-recently-e45ff570-e8a6-4f8e-9c08-7ee92ef86060-f02435bd.md) |  |
+| [Sentinel One - New rules](../content/sentinelone-sentinel-one-new-rules-9c3a38e4-0975-4f96-82ee-90ce68bec76a-83965701.md) |  |
+| [Sentinel One - Scanned hosts](../content/sentinelone-sentinel-one-scanned-hosts-17c77743-8bdb-4d29-a3cb-a7a08676122f-33d8fd36.md) |  |
+| [Sentinel One - Sources by alert count](../content/sentinelone-sentinel-one-sources-by-alert-count-acd0a127-461e-48c8-96fa-27d14595abe0-e0f215ff.md) |  |
+| [Sentinel One - Uninstalled agents](../content/sentinelone-sentinel-one-uninstalled-agents-f3a7cedd-6fc3-4661-a0ad-c1738e531917-9f651695.md) |  |
+| [Sentinel One - Users by alert count](../content/sentinelone-sentinel-one-users-by-alert-count-56500e23-4e64-45a5-a444-98a1acb2f700-01daf4b9.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Alerts related to Log4j vulnerability](../content/github-only-alerts-related-to-log4j-vulnerability-ef76733a-86ab-4592-b341-64a4b369f4b7-22008ff5.md) |  |
+| [Antivirus detections (1)](../content/github-only-antivirus-detections-1-05250700-5123-45be-826d-dd14c623fade-0bd2622d.md) |  |
+| [Cobalt Strike Lateral Movement](../content/github-only-cobalt-strike-lateral-movement-1212ae5c-43cc-4c17-bcbb-d23cf9ad3483-6573d950.md) |  |
+| [Devices with Log4j vulnerability alerts and additional other alert related context](../content/github-only-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-context-f0f222ae-a6c9-4992-9fdb-4b1601da244c-7e659d00.md) |  |
+| [Distribution from remote location](../content/github-only-distribution-from-remote-location-4e070afe-7a9b-4313-a964-c3168fffc1e2-3a8453c3.md) |  |
+| [Events surrounding alert (1)](../content/github-only-events-surrounding-alert-1-55a29d46-2cd5-44af-80aa-20d0ac4c86f8-fa59386c.md) |  |
+| [Events surrounding alert (3)](../content/github-only-events-surrounding-alert-3-c4955324-02ff-46fa-a642-64952334482d-11006aac.md) |  |
+| [ExploitGuardBlockOfficeChildProcess (1)](../content/github-only-exploitguardblockofficechildprocess-1-fed32a95-bba6-47a6-8519-8d2a2cee97f9-0998c1f7.md) |  |
+| [ExploitGuardBlockOfficeChildProcess (3)](../content/github-only-exploitguardblockofficechildprocess-3-521f58f9-92b8-407b-9434-798a9f527b3c-86c63dc2.md) |  |
+| [File Backup Deletion Alerts](../content/github-only-file-backup-deletion-alerts-21444f27-9184-45bf-a335-7b7169a56790-6fbb279e.md) |  |
+| [Gootkit File Delivery](../content/github-only-gootkit-file-delivery-11d725f5-93d8-4b34-a64f-bf8450cdb184-deb3f803.md) |  |
+| [Gootkit-malware](../content/github-only-gootkit-malware-c8796d76-9a84-4cc8-91b5-d01f882869d4-8f087754.md) |  |
+| [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) |  |
+| [Microsoft Teams chat initiated by a suspicious external user](../content/github-only-microsoft-teams-chat-initiated-by-a-suspicious-external-user-8b88ecaf-88b3-4d70-814f-a55b96748ff5-5307d1cf.md) |  |
+| [Open email link](../content/github-only-open-email-link-67be3fdd-6942-45f8-8663-d825b61d1ab9-581f8253.md) |  |
+| [Potential ransomware activity related to Cobalt Strike](../content/github-only-potential-ransomware-activity-related-to-cobalt-strike-95db9b9c-7a12-4c0b-85c8-1c54f67c5ac7-3e03f975.md) |  |
+| [Ransomware hits healthcare - Backup deletion](../content/github-only-ransomware-hits-healthcare-backup-deletion-b0188e2d-734d-4d54-8e70-c4157a195bb1-839b41cd.md) |  |
+| [Ransomware hits healthcare - Possible compromised accounts](../content/github-only-ransomware-hits-healthcare-possible-compromised-accounts-f4506828-36f5-4668-8203-de062963be63-3aa55254.md) |  |
+| [Sticky Keys](../content/github-only-sticky-keys-3c82774a-df78-44eb-9ab3-13ef37c63ae4-282aa16f.md) |  |
+| [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.md) |  |
+| [URL click on ZAP email](../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.md) |  |
+| [URL click on ZAP email](../content/github-only-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-2bbd70d9.md) |  |
+| [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.md) |  |
+| [URLClick details based on malicious URL click alert](../content/github-only-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-8acf46eb.md) |  |
+| [backup-deletion](../content/github-only-backup-deletion-1df2054c-5c63-4a2c-943b-0069af45bd38-2c1d187c.md) |  |
+| [cobalt-strike](../content/github-only-cobalt-strike-0a6e58fa-0689-418e-b05c-758c41664081-42d4a357.md) |  |
+| [identify-accounts-logged-on-to-endpoints-affected-by-cobalt-strike](../content/github-only-identify-accounts-logged-on-to-endpoints-affected-by-cobalt-strike-28558a10-d431-443b-886d-543a5b5d1871-a8644f1f.md) |  |
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
-
 **In solution [SentinelOne](../solutions/sentinelone.md):**
-- [SentinelOne](../content/sentinelone-sentinelone-8f12ec76.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SentinelOne](../content/sentinelone-sentinelone-8f12ec76.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [SentinelOne](../parsers/sentinelone.md) | [SentinelOne](../solutions/sentinelone.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [SentinelOne](../parsers/sentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |  |
 
 ---
 

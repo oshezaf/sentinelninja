@@ -25,7 +25,9 @@
 
 This content item queries data from the following tables:
 
-- [`ImpervaWAFCloud`](../tables/impervawafcloud.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | — | — |
 
 ---
 

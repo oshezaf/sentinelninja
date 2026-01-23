@@ -18,7 +18,9 @@
 
 This content item queries data from the following tables:
 
-- [`prancer_CL`](../tables/prancer-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`prancer_CL`](../tables/prancer-cl.md) | — | — |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Exchange 365 administrative acti
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [OfficeActivity](../tables/officeactivity.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
 
 ## Parameters
 

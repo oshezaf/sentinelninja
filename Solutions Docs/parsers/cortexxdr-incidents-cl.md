@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [CortexXDR_Incidents_CL](../tables/cortexxdr-incidents-cl.md)
-- [PaloAltoCortexXDR_Incidents_CL](../tables/paloaltocortexxdr-incidents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CortexXDR_Incidents_CL`](../tables/cortexxdr-incidents-cl.md) | — | — |
+| [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) | — | — |
 
 ---
 

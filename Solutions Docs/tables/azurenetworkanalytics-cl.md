@@ -27,35 +27,53 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
-- [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-a4025a76-6490-4e6b-bb69-d02be4b03f07-8964f465.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-a4025a76-6490-4e6b-bb69-d02be4b03f07-8964f465.md) |  |
 
 ### Hunting Queries (3)
 
 **In solution [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md):**
-- [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.md) |  |
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
-- [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md)
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md)
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md) |  |
+
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md) |  |
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-- [AzureNetworkWatcher](../content/-azurenetworkwatcher-463da189.md)
-
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [AzureNetworkWatcher](../content/github-only-azurenetworkwatcher-c62a6efc.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimNetworkSessionAzureNSG](../asim/asimnetworksessionazurensg.md) | NetworkSession |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimNetworkSessionAzureNSG](../asim/asimnetworksessionazurensg.md) | NetworkSession | Azure NSG flows |  |
 
 ---
 

@@ -18,8 +18,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md)
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) |  |
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
 
 ---
 
@@ -28,23 +30,26 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (4)
 
 ### ASIM Parsers (3)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimDnsVectraAI](../asim/asimdnsvectraai.md) | Dns |  |
-| [ASimNetworkSessionVectraAI](../asim/asimnetworksessionvectraai.md) | NetworkSession |  |
-| [ASimWebSessionVectraAI](../asim/asimwebsessionvectraai.md) | WebSession |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimDnsVectraAI](../asim/asimdnsvectraai.md) | Dns | Vectra AI Streams |  |
+| [ASimNetworkSessionVectraAI](../asim/asimnetworksessionvectraai.md) | NetworkSession | Vectra AI Streams |  |
+| [ASimWebSessionVectraAI](../asim/asimwebsessionvectraai.md) | WebSession | Vectra AI Streams |  |
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [VectraStream_function](../parsers/vectrastream-function.md) | [Vectra AI Stream](../solutions/vectra-ai-stream.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [VectraStream_function](../parsers/vectrastream-function.md) | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |  |
 
 ---
 

@@ -24,8 +24,10 @@ Identifies when a recently created Group was added to a privileged built in doma
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4727,4728,4731,4732,4754,4756"` | ✓ | ✓ |
 
 ---
 

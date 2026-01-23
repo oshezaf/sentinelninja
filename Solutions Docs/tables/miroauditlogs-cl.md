@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Miro Audit Logs (Enterprise Plan)](../connectors/miroauditlogsdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Miro Audit Logs (Enterprise Plan)](../connectors/miroauditlogsdataconnector.md) |  |
 
 ---
 

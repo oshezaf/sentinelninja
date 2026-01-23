@@ -23,7 +23,9 @@ Fires Microsoft Sentinel alerts for Dragos Notifcations.
 
 This content item queries data from the following tables:
 
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

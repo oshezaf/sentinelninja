@@ -26,8 +26,8 @@ The Apache Tomcat solution provides the capability to ingest [Apache Tomcat](htt
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Tomcat_CL`](../tables/tomcat-cl.md) | — | — |
 
 ## Permissions

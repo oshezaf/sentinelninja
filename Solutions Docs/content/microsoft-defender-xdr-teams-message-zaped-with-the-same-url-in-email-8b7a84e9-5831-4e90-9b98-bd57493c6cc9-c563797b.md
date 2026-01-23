@@ -24,7 +24,9 @@ This query helps hunt for Teams messages that have been ZAPed with the same URL 
 
 This content item queries data from the following tables:
 
-- [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md) | — | ✗ |
 
 ---
 

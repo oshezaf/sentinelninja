@@ -30,20 +30,32 @@ This table is used by the following solutions:
 
 ### Workbooks (7)
 
-**In solution [](../solutions/.md):**
-- [Barracuda](../content/-barracuda-990015fb.md)
-- [DataCollectionHealthMonitoring](../content/-datacollectionhealthmonitoring-3af3df73.md)
-- [ForcepointNGFWAdvanced](../content/-forcepointngfwadvanced-9bfc0ecf.md)
-- [SecurityStatus](../content/-securitystatus-183600b3.md)
-
 **In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):**
-- [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md) |  |
 
 **In solution [Forcepoint NGFW](../solutions/forcepoint-ngfw.md):**
-- [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md) |  |
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Barracuda](../content/github-only-barracuda-84e65401.md) |  |
+| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
+| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) |  |
+| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 
 ## Resource Types
 

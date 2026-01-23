@@ -26,8 +26,8 @@ The [Cisco Meraki](https://meraki.cisco.com/) connector allows you to easily con
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | — | — |
 | [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
 | [`meraki_CL`](../tables/meraki-cl.md) | — | — |

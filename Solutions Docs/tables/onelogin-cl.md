@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [OneLogin](../parsers/onelogin.md) | [OneLoginIAM](../solutions/oneloginiam.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [OneLogin](../parsers/onelogin.md) | [OneLoginIAM](../solutions/oneloginiam.md) |  |
 
 ---
 

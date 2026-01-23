@@ -25,7 +25,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Dynamics 365](../connectors/dynamics365.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Dynamics 365](../connectors/dynamics365.md) |  |
 
 ---
 
@@ -33,21 +35,36 @@ This table is ingested by the following connectors:
 
 ### Workbooks (6)
 
-**In solution [](../solutions/.md):**
-- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
-
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
-- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
-- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
-- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

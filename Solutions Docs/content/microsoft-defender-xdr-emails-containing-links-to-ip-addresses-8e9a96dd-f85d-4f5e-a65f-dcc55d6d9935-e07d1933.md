@@ -22,7 +22,9 @@ This query helps hunting for Emails containing links to IP addresses
 
 This content item queries data from the following tables:
 
-- [`EmailUrlInfo`](../tables/emailurlinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
 
 ---
 

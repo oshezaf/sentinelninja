@@ -24,7 +24,9 @@ This query visualises total emails with Spoof - SPF fails summarizing the data d
 
 This content item queries data from the following tables:
 
-- [`EmailEvents`](../tables/emailevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
 
 ---
 

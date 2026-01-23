@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [NXLog BSM macOS](../connectors/nxlogbsmmacos.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [NXLog BSM macOS](../connectors/nxlogbsmmacos.md) |  |
 
 ---
 

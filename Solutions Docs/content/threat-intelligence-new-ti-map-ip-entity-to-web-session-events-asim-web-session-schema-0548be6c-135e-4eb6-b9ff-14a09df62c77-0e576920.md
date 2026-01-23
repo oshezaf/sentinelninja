@@ -24,7 +24,9 @@ This rule identifies Web Sessions for which the source IP address is a known IoC
 
 This content item queries data from the following tables:
 
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 
 ---
 

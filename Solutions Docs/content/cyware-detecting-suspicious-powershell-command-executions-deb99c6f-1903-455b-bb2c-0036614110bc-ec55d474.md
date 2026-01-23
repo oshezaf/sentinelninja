@@ -21,7 +21,9 @@ Spot connections to rarely accessed external domains that are present in your wa
 
 This content item queries data from the following tables:
 
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
 
 ---
 

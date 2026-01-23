@@ -12,8 +12,11 @@
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ---
 

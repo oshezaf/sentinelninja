@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | — | — |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

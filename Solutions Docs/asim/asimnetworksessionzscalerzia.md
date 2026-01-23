@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Zscaler ZIA proxy logs produced by the Mic
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "NSSFWlog"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ |
 
 ## Parameters
 

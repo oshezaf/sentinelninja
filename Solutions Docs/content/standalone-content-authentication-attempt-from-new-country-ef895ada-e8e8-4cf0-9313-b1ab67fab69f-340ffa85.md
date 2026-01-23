@@ -24,8 +24,10 @@ Detects when there is a login attempt from a country that has not seen a success
 
 This content item queries data from the following tables:
 
-- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

@@ -25,7 +25,9 @@ The query checks for any file which has been created/written by an Office applic
 
 This content item queries data from the following tables:
 
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
 
 ---
 

@@ -23,7 +23,9 @@ Synch investigations coming in from SAP Enterprise Threat Detection into Microso
 
 This content item queries data from the following tables:
 
-- [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) | — | — |
 
 ---
 

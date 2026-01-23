@@ -18,8 +18,6 @@
 | **Publisher** | CrowdStrike |
 | **Used in Solutions** | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | **Collection Method** | MMA |
-| **Event Vendor** | CrowdStrike |
-| **Event Product** | FalconHost |
 | **Connector Definition Files** | [Connector_Syslog_CrowdStrikeFalconEndpointProtection.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Connector_Syslog_CrowdStrikeFalconEndpointProtection.json) |
 
 The [CrowdStrike Falcon Endpoint Protection](https://www.crowdstrike.com/endpoint-security-products/) connector allows you to easily connect your CrowdStrike Falcon Event Stream with Microsoft Sentinel, to create custom dashboards, alerts, and improve investigation. This gives you more insight into your organization's endpoints and improves your security operation capabilities.<p><span style='color:red; font-weight:bold;'>NOTE:</span> This data connector has been deprecated, consider moving to the CCP data connector available in the solution which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>.</p>
@@ -28,9 +26,9 @@ The [CrowdStrike Falcon Endpoint Protection](https://www.crowdstrike.com/endpoin
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | CrowdStrike | FalconHost | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "FalconHost"`<br>`DeviceVendor == "CrowdStrike"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -28,13 +28,19 @@ This table is used by the following solutions:
 
 ### Workbooks (4)
 
-**In solution [](../solutions/.md):**
-- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [User_Analytics_Workbook](../content/-user-analytics-workbook-4d50c893.md)
-- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
-
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

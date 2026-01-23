@@ -22,7 +22,9 @@ Detect unusual logon times, MFA fatigue, or service principal misuse across hybr
 
 This content item queries data from the following tables:
 
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
 
 ---
 

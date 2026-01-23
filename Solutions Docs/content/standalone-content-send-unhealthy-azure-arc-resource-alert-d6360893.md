@@ -16,9 +16,11 @@ Sentinel logic app designed to send an email alert when an unhealthy Azure Arc r
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`AzureActivity`](../tables/azureactivity.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
 
 ---
 

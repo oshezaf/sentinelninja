@@ -22,7 +22,9 @@ This rule is searching for configuration changes. Configuration changes can over
 
 This content item queries data from the following tables:
 
-- [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) | — | — |
 
 ---
 

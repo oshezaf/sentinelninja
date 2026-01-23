@@ -24,7 +24,9 @@ This query uses Sysmon Image Load (Event ID 7) and Process Create (Event ID 1) d
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID in "1,7"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ---
 

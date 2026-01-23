@@ -18,10 +18,12 @@ Author: Hesham Saad
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`GIBTIACompromisedCard_CL`](../tables/gibtiacompromisedcard-cl.md) | write |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | read/write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GIBTIACompromisedCard_CL`](../tables/gibtiacompromisedcard-cl.md) | — | — |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — |
 
 ## Additional Documentation
 

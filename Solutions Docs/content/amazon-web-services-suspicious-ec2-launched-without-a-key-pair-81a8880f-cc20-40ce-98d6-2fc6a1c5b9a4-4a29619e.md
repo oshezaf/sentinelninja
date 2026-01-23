@@ -23,7 +23,9 @@ An attacker with limited permissions, or a sophisticated attacker disguising his
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "RunInstances"` | ✓ | ✓ |
 
 ---
 

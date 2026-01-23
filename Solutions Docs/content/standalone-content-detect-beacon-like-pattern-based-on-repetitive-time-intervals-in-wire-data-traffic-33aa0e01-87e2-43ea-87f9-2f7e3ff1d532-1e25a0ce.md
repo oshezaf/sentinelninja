@@ -22,7 +22,9 @@ Query identifies beaconing patterns from Wire Data logs. Uses KQL functions to c
 
 This content item queries data from the following tables:
 
-- [`WireData`](../tables/wiredata.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`WireData`](../tables/wiredata.md) | ✓ | ✗ |
 
 ---
 

@@ -19,20 +19,26 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
-- [TI Map IP Entity to Duo Security](../content/threat-intelligence-ti-map-ip-entity-to-duo-security-d23ed927-5be3-4902-a9c1-85f841eb4fa1-cf610585.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map IP Entity to Duo Security](../content/threat-intelligence-ti-map-ip-entity-to-duo-security-d23ed927-5be3-4902-a9c1-85f841eb4fa1-cf610585.md) |  |
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [DuoSecurity](../content/-duosecurity-02042b40.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DuoSecurity](../content/github-only-duosecurity-51a3ff3a.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [DuoSecurityAuthentication](../parsers/duosecurityauthentication.md) | *(Legacy)* | Legacy |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DuoSecurityAuthentication](../parsers/duosecurityauthentication.md) | *(Legacy)* |  |
 
 ---
 

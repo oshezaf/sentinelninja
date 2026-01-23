@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`Gigamon_CL`](../tables/gigamon-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Gigamon_CL`](../tables/gigamon-cl.md) | — | — |
 
 ---
 

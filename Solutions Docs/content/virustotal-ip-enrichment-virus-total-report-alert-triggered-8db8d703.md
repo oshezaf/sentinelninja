@@ -16,9 +16,11 @@ This playbook will take each IP entity and query VirusTotal for IP Address Repor
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`VTIPReport_CL`](../tables/vtipreport-cl.md) | write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VTIPReport_CL`](../tables/vtipreport-cl.md) | — | — |
 
 ---
 

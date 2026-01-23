@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`CiscoETD_CL`](../tables/ciscoetd-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CiscoETD_CL`](../tables/ciscoetd-cl.md) | — | — |
 
 ---
 

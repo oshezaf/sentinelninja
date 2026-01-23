@@ -18,14 +18,15 @@ This query creates a list of IP addresses with the number of failed login attemp
 | **Tactics** | InitialAccess, CredentialAccess |
 | **Techniques** | T1078, T1110 |
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md), [PaloAltoNetworks](../connectors/paloaltonetworks.md) |
-| **Event Vendor** | Palo Alto Networks |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/MultipleDataSources/AAD_PAVPN_Correlation.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "globalprotect"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
 
 ---
 

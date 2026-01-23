@@ -10,15 +10,16 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
-| **Event Vendor** | {TypeTimeChart} |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Workbooks/CiscoSDWAN.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md)
-- [`Syslog`](../tables/syslog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | — | — |
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
 
 ---
 

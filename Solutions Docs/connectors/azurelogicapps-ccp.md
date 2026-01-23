@@ -22,8 +22,8 @@ Azure Logic Apps is a cloud-based platform for creating and running automated wo
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 
 ## Permissions

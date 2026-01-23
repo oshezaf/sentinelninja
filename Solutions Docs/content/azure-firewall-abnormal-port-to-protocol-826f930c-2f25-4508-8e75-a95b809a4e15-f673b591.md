@@ -25,9 +25,11 @@ Identifies communication for well known protocol over a non-standard port based 
 
 This content item queries data from the following tables:
 
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 
 ---
 

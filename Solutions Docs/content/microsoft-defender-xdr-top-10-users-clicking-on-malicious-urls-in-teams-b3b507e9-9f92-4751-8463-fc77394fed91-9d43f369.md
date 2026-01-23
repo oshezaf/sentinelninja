@@ -24,7 +24,9 @@ This query visualizes Top 10 Users clicking on malicious Phish or Malware URLs i
 
 This content item queries data from the following tables:
 
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

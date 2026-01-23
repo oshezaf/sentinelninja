@@ -26,19 +26,25 @@ This table is used by the following solutions:
 ### Workbooks (2)
 
 **In solution [Infoblox](../solutions/infoblox.md):**
-- [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Infoblox_Workbook](../content/infoblox-infoblox-workbook-0b2c239e.md) |  |
 
 **In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
-- [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [InfobloxInsightAssets](../parsers/infobloxinsightassets.md) | [Infoblox](../solutions/infoblox.md) | Solution |
-| [InfobloxInsightAssets](../parsers/infobloxinsightassets.md) | [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [InfobloxInsightAssets](../parsers/infobloxinsightassets.md) | [Infoblox](../solutions/infoblox.md) |  |
+| [InfobloxInsightAssets](../parsers/infobloxinsightassets.md) | [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) |  |
 
 ---
 

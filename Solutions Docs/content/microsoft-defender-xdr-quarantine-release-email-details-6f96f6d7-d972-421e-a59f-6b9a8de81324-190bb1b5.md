@@ -22,8 +22,10 @@ This query shows information about email that has been released from the Quarant
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
-- [`EmailEvents`](../tables/emailevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [DeviceNetworkInfo](../tables/devicenetworkinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | ✓ | ✗ |
 
 ---
 

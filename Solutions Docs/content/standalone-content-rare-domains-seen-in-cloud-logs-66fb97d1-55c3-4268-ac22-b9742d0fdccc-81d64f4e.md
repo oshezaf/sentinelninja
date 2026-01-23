@@ -22,9 +22,11 @@ This script identifies rare domain accounts accessing cloud resources by examini
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

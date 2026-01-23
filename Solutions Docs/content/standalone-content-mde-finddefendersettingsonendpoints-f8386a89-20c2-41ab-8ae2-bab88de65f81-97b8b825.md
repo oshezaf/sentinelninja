@@ -20,7 +20,9 @@ Find Endpoints policies settings via compliance settings in the registry
 
 This content item queries data from the following tables:
 
-- [`DeviceBaselineComplianceAssessment`](../tables/devicebaselinecomplianceassessment.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceBaselineComplianceAssessment`](../tables/devicebaselinecomplianceassessment.md) | — | ✗ |
 
 ---
 

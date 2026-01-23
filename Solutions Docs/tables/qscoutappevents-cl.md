@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [QscoutAppEventsConnector](../connectors/qscoutappeventsccfdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [QscoutAppEventsConnector](../connectors/qscoutappeventsccfdefinition.md) |  |
 
 ---
 
@@ -25,12 +27,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Quokka](../solutions/quokka.md):**
-- [Quokka - Malicious Results Detected](../content/quokka-quokka-malicious-results-detected-97ad71ed-e4c0-4f7a-b1a2-683108bece4f-1210d06b.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Quokka - Malicious Results Detected](../content/quokka-quokka-malicious-results-detected-97ad71ed-e4c0-4f7a-b1a2-683108bece4f-1210d06b.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Quokka](../solutions/quokka.md):**
-- [QscoutDashboards](../content/quokka-qscoutdashboards-03cf0a2b.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [QscoutDashboards](../content/quokka-qscoutdashboards-03cf0a2b.md) |  |
 
 ---
 

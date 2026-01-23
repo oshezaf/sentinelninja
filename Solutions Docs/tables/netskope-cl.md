@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Netskope](../connectors/netskope.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Netskope](../connectors/netskope.md) |  |
 
 ---
 
@@ -24,17 +26,20 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [Netskope](../parsers/netskope.md) | [Netskope](../solutions/netskope.md) | Solution ⚠️ |
-| [Netskope](../parsers/netskope.md) | [Netskope](../solutions/netskope.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [Netskope](../parsers/netskope.md) | [Netskope](../solutions/netskope.md) ⚠️ |  |
+| [Netskope](../parsers/netskope.md) | [Netskope](../solutions/netskope.md) |  |
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 

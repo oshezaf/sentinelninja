@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Seraphic Web Security](../connectors/seraphicwebsecurity.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Seraphic Web Security](../connectors/seraphicwebsecurity.md) |  |
 
 ---
 

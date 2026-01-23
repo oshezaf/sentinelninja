@@ -22,8 +22,8 @@ The Darktrace REST API connector pushes real-time events from Darktrace to Micro
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) | — | — |
 
 ## Permissions

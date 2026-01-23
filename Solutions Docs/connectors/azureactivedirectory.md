@@ -22,8 +22,8 @@ Gain insights into Microsoft Entra ID by connecting Audit and Sign-in logs to Mi
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | ✓ | ✗ |
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ |
 | [`AADProvisioningLogs`](../tables/aadprovisioninglogs.md) | ✓ | ✗ |
@@ -35,7 +35,6 @@ This connector ingests data into the following tables:
 | [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | ✓ | ✗ |
 | [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ |
-| [`SignInLogs`](../tables/signinlogs.md) | — | — |
 | [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ## Permissions

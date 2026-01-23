@@ -12,8 +12,11 @@
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [UnifiSGNetflow](../content/-unifisgnetflow-ca125ff3.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [UnifiSGNetflow](../content/github-only-unifisgnetflow-8a035168.md) |  |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md):**
-- [SecurityScorecardWorkbook](../content/securityscorecard-cybersecurity-ratings-securityscorecardworkbook-305a0f99.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SecurityScorecardWorkbook](../content/securityscorecard-cybersecurity-ratings-securityscorecardworkbook-305a0f99.md) |  |
 
 ---
 

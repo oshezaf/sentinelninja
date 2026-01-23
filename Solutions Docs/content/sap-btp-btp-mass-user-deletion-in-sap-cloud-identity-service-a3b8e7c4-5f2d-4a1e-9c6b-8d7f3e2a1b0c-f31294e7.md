@@ -25,7 +25,9 @@ Identifies mass user deletion activity in SAP Cloud Identity Service where the a
 
 This content item queries data from the following tables:
 
-- [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | — |
 
 ---
 

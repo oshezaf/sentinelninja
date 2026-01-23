@@ -16,9 +16,11 @@ This playbook imports alerts from Recorded Future and stores them in a custom lo
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) | read/write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) | — | — |
 
 ---
 

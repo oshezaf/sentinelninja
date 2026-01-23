@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [IPinfo Privacy Extended Data Connector](../connectors/ipinfoprivacyextendeddataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [IPinfo Privacy Extended Data Connector](../connectors/ipinfoprivacyextendeddataconnector.md) |  |
 
 ---
 

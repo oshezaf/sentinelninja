@@ -22,17 +22,19 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md)
-- [`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md)
-- [`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md)
-- [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md)
-- [`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md)
-- [`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md)
-- [`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md)
-- [`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md)
-- [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) | — | — |
+| [`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) | — | — |
+| [`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md) | — | — |
+| [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) | — | — |
+| [`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md) | — | — |
+| [`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md) | — | — |
+| [`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) | — | — |
+| [`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) | — | — |
+| [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) | — | — |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

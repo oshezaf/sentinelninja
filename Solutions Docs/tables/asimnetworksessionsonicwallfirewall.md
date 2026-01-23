@@ -23,20 +23,32 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-- [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SonicWall - Allowed SSH, Telnet, and RDP Connections](../content/sonicwall-firewall-sonicwall-allowed-ssh,-telnet,-and-rdp-connections-27f1a570-5f20-496b-88f6-a9aa2c5c9534-5e407210.md) |  |
 
 ### Hunting Queries (1)
 
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-- [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md) |  |
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [SonicWallFirewall](../content/-sonicwallfirewall-a12a2f18.md)
-
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-- [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SonicWallFirewall](../content/github-only-sonicwallfirewall-7b4c1651.md) |  |
 
 ---
 

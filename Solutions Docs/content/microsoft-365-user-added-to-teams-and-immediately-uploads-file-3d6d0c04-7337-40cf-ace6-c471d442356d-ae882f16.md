@@ -22,7 +22,9 @@ This hunting queries identifies users who are added to a Teams Channel or Teams 
 
 This content item queries data from the following tables:
 
-- [`OfficeActivity`](../tables/officeactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
 
 ---
 

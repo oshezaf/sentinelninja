@@ -24,7 +24,9 @@ Identifies a match in DNS events from any Domain IOC from TI This analytic rule 
 
 This content item queries data from the following tables:
 
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 
 ---
 

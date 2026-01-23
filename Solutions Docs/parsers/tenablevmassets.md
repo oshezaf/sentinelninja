@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Tenable_VM_Asset_CL](../tables/tenable-vm-asset-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | — | — |
 
 ---
 

@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [DataminrPulse_Alerts_CL](../tables/dataminrpulse-alerts-cl.md)
-- [watchlist](../tables/watchlist.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) | — | — |
+| [`watchlist`](../tables/watchlist.md) | — | — |
 
 ---
 

@@ -25,7 +25,9 @@ Detects unusual traffic masking as HTTP(S).
 
 This content item queries data from the following tables:
 
-- [`Ubiquiti_CL`](../tables/ubiquiti-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | — |
 
 ---
 

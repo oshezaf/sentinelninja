@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) |  |
 
 ---
 
@@ -25,12 +27,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [NetClean ProActive](../solutions/netclean-proactive.md):**
-- [NetClean ProActive Incidents](../content/netclean-proactive-netclean-proactive-incidents-77548170-5c60-42e5-bdac-b0360d0779bb-1b0b1d6f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NetClean ProActive Incidents](../content/netclean-proactive-netclean-proactive-incidents-77548170-5c60-42e5-bdac-b0360d0779bb-1b0b1d6f.md) |  |
 
 ### Workbooks (1)
 
 **In solution [NetClean ProActive](../solutions/netclean-proactive.md):**
-- [NetCleanProActiveWorkbook](../content/netclean-proactive-netcleanproactiveworkbook-47938b1a.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NetCleanProActiveWorkbook](../content/netclean-proactive-netcleanproactiveworkbook-47938b1a.md) |  |
 
 ---
 

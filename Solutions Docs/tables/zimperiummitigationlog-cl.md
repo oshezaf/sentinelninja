@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) |  |
 
 ---
 

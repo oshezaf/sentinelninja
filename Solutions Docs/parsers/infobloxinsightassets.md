@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [InfobloxInsightAssets_CL](../tables/infobloxinsightassets-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | — | — |
 
 ---
 

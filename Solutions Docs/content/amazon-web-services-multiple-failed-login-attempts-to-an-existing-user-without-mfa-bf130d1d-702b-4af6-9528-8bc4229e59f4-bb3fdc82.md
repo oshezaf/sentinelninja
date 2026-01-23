@@ -23,7 +23,9 @@ Failed brute force attempt detected on an existing user without MFA configuratio
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ConsoleLogin"` | ✓ | ✓ |
 
 ---
 

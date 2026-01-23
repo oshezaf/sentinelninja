@@ -21,7 +21,9 @@ This query searches for any scheduled task creation event.
 
 This content item queries data from the following tables:
 
-- [`DeviceEvents`](../tables/deviceevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
 
 ---
 

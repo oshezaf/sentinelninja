@@ -23,7 +23,10 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
-- [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md) |  |
 
 ---
 

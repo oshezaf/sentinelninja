@@ -21,7 +21,9 @@ This query lists Active Directory accounts lockout and unlock events
 
 This content item queries data from the following tables:
 
-- [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | ✓ | ✗ |
 
 ---
 

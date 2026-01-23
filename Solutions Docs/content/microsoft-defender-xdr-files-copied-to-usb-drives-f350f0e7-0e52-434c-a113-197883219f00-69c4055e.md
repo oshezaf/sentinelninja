@@ -21,8 +21,10 @@ This query lists files copied to USB external drives with USB drive information 
 
 This content item queries data from the following tables:
 
-- [`DeviceEvents`](../tables/deviceevents.md)
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
 
 ---
 

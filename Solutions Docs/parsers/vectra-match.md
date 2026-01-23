@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [vectra_match_CL](../tables/vectra-match-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vectra_match_CL`](../tables/vectra-match-cl.md) | — | — |
 
 ---
 

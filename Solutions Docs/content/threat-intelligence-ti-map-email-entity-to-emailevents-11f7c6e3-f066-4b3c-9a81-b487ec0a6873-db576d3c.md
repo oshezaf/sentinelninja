@@ -24,8 +24,10 @@ Identifies a match in EmailEvents table from any Email IOC from TI
 
 This content item queries data from the following tables:
 
-- [`EmailEvents`](../tables/emailevents.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

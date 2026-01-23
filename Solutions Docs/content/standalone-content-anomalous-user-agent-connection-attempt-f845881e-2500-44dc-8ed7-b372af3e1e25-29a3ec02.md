@@ -24,7 +24,9 @@ Identifies connection attempts (success or fail) from clients with very short or
 
 This content item queries data from the following tables:
 
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

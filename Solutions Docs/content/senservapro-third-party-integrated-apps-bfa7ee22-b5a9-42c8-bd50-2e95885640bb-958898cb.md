@@ -25,7 +25,9 @@ This query searches for your services by regulating the access of third-party in
 
 This content item queries data from the following tables:
 
-- [`SenservaPro_CL`](../tables/senservapro-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
 
 ---
 

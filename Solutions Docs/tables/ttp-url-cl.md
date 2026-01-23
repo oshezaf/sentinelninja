@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) |  |
 
 ---
 
@@ -25,20 +27,26 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast Targeted Threat Protection - URL Protect](../content/mimecast-mimecast-targeted-threat-protection-url-protect-952faed4-c6a6-4873-aeb9-b348e9ce5aba-ebe7c38c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast Targeted Threat Protection - URL Protect](../content/mimecast-mimecast-targeted-threat-protection-url-protect-952faed4-c6a6-4873-aeb9-b348e9ce5aba-ebe7c38c.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast_TTP_Workbook](../content/mimecast-mimecast-ttp-workbook-c40cabd0.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast_TTP_Workbook](../content/mimecast-mimecast-ttp-workbook-c40cabd0.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [MimecastTTPUrl](../parsers/mimecastttpurl.md) | [Mimecast](../solutions/mimecast.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [MimecastTTPUrl](../parsers/mimecastttpurl.md) | [Mimecast](../solutions/mimecast.md) |  |
 
 ---
 

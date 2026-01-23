@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [NetskopeAlerts_CL](../tables/netskopealerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | — | — |
 
 ---
 

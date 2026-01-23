@@ -22,7 +22,9 @@ This query identifies external users added to Teams where the user's domain is n
 
 This content item queries data from the following tables:
 
-- [`OfficeActivity`](../tables/officeactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
 
 ---
 

@@ -26,8 +26,8 @@ The [Squid Proxy](http://www.squid-cache.org/) connector allows you to easily co
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) | — | — |
 
 ## Permissions

@@ -10,15 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Check Point](../solutions/check-point.md) |
-| **Event Vendor** | Check Point |
-| **Event Product** | All, Anti Malware |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point/Workbooks/CheckPoint.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "Anti Malware,Anti-Bot,Anti-Virus,Application Control,DDoS Protector,IPS,Threat Emulation,URL Filtering"`<br>`DeviceVendor == "Check Point"` | ✓ | ✓ |
 
 ---
 

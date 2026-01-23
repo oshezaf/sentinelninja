@@ -22,7 +22,9 @@ A summary of failed logons can be used to infer lateral movement with the intent
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4625"` | ✓ | ✓ |
 
 ---
 

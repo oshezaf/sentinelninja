@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Amazon Web Service sign in logs, stored in
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [AWSCloudTrail](../tables/awscloudtrail.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ConsoleLogin"` | ✓ | ✓ |
 
 ## Parameters
 

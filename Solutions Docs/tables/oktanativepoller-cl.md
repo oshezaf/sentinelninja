@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) |  |
 
 ---
 

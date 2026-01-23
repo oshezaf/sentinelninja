@@ -22,8 +22,10 @@ Query finds accounts recorded as disabled by AD in previous time period but stil
 
 This content item queries data from the following tables:
 
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`Syslog`](../tables/syslog.md) | `ProcessName contains "squid"` | ✓ | ✓ |
 
 ---
 

@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`secRMM_CL`](../tables/secrmm-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`secRMM_CL`](../tables/secrmm-cl.md) | — | — |
 
 ---
 

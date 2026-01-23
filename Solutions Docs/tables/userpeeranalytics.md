@@ -22,8 +22,11 @@ Reference for UserPeerAnalytics table in Azure Monitor Logs.
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
 ---
 

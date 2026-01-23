@@ -32,8 +32,8 @@ The Mimecast products included within the connector are:
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | — | — |
 | [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | — | — |
 | [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | — | — |

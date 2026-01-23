@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [CYFIRMA Attack Surface](../connectors/cyfirmaattacksurfacealertsconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [CYFIRMA Attack Surface](../connectors/cyfirmaattacksurfacealertsconnector.md) |  |
 
 ---
 
@@ -25,8 +27,11 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Cyfirma Attack Surface](../solutions/cyfirma-attack-surface.md):**
-- [CYFIRMA - Attack Surface - Open Ports High Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-open-ports-high-rule-87e7eb3f-bb8e-46e5-8807-d3fc63d0f676-40437b75.md)
-- [CYFIRMA - Attack Surface - Open Ports Medium Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-open-ports-medium-rule-9e18b6c3-d172-4bc6-a7d9-cc7b0a03a69e-84f299fd.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CYFIRMA - Attack Surface - Open Ports High Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-open-ports-high-rule-87e7eb3f-bb8e-46e5-8807-d3fc63d0f676-40437b75.md) |  |
+| [CYFIRMA - Attack Surface - Open Ports Medium Rule](../content/cyfirma-attack-surface-cyfirma-attack-surface-open-ports-medium-rule-9e18b6c3-d172-4bc6-a7d9-cc7b0a03a69e-84f299fd.md) |  |
 
 ---
 

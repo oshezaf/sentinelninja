@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_local_subnets_CL](../tables/corelight-v2-local-subnets-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_local_subnets_CL`](../tables/corelight-v2-local-subnets-cl.md) | — | — |
 
 ---
 

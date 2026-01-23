@@ -31,20 +31,35 @@ This table is used by the following solutions:
 
 ### Workbooks (5)
 
-**In solution [](../solutions/.md):**
-- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
-
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
-- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
-- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
-- [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
 
 ## Resource Types
 

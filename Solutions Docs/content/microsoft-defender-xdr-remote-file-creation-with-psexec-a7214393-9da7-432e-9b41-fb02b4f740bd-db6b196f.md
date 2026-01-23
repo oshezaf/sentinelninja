@@ -21,7 +21,9 @@ This query detects remote file creation events that might indicate an active att
 
 This content item queries data from the following tables:
 
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Dynatrace Problems](../connectors/dynatraceproblems.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Dynatrace Problems](../connectors/dynatraceproblems.md) |  |
 
 ---
 
@@ -25,20 +27,26 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Dynatrace](../solutions/dynatrace.md):**
-- [Dynatrace - Problem detection](../content/dynatrace-dynatrace-problem-detection-415978ff-074e-4203-824a-b06153d77bf7-a4be516e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dynatrace - Problem detection](../content/dynatrace-dynatrace-problem-detection-415978ff-074e-4203-824a-b06153d77bf7-a4be516e.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Dynatrace](../solutions/dynatrace.md):**
-- [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [DynatraceProblems](../parsers/dynatraceproblems.md) | [Dynatrace](../solutions/dynatrace.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DynatraceProblems](../parsers/dynatraceproblems.md) | [Dynatrace](../solutions/dynatrace.md) |  |
 
 ---
 

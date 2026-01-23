@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Keeper Security Push Connector](../connectors/keepersecuritypush2.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Keeper Security Push Connector](../connectors/keepersecuritypush2.md) |  |
 
 ---
 
@@ -25,16 +27,25 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Keeper Security](../solutions/keeper-security.md):**
-- [Keeper Security - Password Changed](../content/keeper-security-keeper-security-password-changed-f031fbbc-37d8-4667-b795-d386bf2b5ab2-b3c2c3bc.md)
-- [Keeper Security - User MFA Changed](../content/keeper-security-keeper-security-user-mfa-changed-75ffc8a4-86db-4f48-8506-cb4c049be484-da722465.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Keeper Security - Password Changed](../content/keeper-security-keeper-security-password-changed-f031fbbc-37d8-4667-b795-d386bf2b5ab2-b3c2c3bc.md) |  |
+| [Keeper Security - User MFA Changed](../content/keeper-security-keeper-security-user-mfa-changed-75ffc8a4-86db-4f48-8506-cb4c049be484-da722465.md) |  |
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [KeeperSecurityDashboard](../content/-keepersecuritydashboard-4f8bdf0e.md)
-
 **In solution [Keeper Security](../solutions/keeper-security.md):**
-- [KeeperSecurityDashboard](../content/keeper-security-keepersecuritydashboard-f36797d1.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [KeeperSecurityDashboard](../content/keeper-security-keepersecuritydashboard-f36797d1.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [KeeperSecurityDashboard](../content/github-only-keepersecuritydashboard-16fd45ec.md) |  |
 
 ---
 

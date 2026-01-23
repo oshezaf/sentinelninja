@@ -16,9 +16,11 @@
 
 This content item queries data from the following tables:
 
-- [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md)
-- [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md)
-- [`Ttp_Url_CL`](../tables/ttp-url-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | — | — |
+| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | — | — |
+| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | — | — |
 
 ---
 

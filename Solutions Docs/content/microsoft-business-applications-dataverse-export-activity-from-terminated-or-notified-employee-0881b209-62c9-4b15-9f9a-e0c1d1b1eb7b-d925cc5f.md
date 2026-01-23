@@ -25,7 +25,9 @@ This query identifies Dataverse export activity triggered by terminated, or empl
 
 This content item queries data from the following tables:
 
-- [`DataverseActivity`](../tables/dataverseactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
 
 ---
 

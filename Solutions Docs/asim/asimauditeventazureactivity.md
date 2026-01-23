@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Azure administrative activity in the Azure
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [AzureActivity](../tables/azureactivity.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
 
 ## Parameters
 

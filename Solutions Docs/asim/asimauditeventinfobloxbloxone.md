@@ -29,9 +29,9 @@ This ASIM parser supports normalizing AuditEvent logs from Infoblox BloxOne to t
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID has "AUDIT"`<br>`DeviceVendor == "Infoblox"` | ✓ | ✓ |
 
 ## Parameters
 

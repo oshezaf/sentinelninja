@@ -23,7 +23,9 @@ This query looks for errors that may indicate that an attacker is attempting to 
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `Source startswith "MSExchange"` | ✓ | ✗ |
 
 ---
 

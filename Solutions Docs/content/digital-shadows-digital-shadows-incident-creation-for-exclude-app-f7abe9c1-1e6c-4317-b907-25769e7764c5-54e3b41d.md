@@ -16,15 +16,15 @@ Digital Shadows Analytic rule for generating Microsoft Sentinel incidents for th
 | **Severity** | Medium |
 | **Kind** | Scheduled |
 | **Required Connectors** | [DigitalShadows](../connectors/digitalshadows.md) |
-| **Event Vendor** | Digital Shadows |
-| **Event Product** | SearchLight |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Analytic%20Rules/Digital_Shadows_incident_creation_exclude.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`DigitalShadows_CL`](../tables/digitalshadows-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) | — | — |
 
 ---
 

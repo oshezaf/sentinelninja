@@ -23,7 +23,9 @@ This rule generates an alert for an Armorblox incident where the remediation act
 
 This content item queries data from the following tables:
 
-- [`Armorblox_CL`](../tables/armorblox-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Armorblox_CL`](../tables/armorblox-cl.md) | — | — |
 
 ---
 

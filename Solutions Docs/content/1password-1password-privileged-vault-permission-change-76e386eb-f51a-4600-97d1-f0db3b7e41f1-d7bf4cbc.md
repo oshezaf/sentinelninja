@@ -24,7 +24,9 @@ This will alert when permissions have changed within a privileged vault. Once th
 
 This content item queries data from the following tables:
 
-- [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | — | — |
 
 ---
 

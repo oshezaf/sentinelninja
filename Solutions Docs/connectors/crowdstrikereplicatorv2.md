@@ -22,8 +22,8 @@ This connector enables the ingestion of FDR data into Microsoft Sentinel using A
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ |
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ |
 | [`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) | — | — |

@@ -38,9 +38,9 @@ This connector lets you stream your NSG diagnostics logs into Microsoft Sentinel
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | — | ✗ |
 
 ## Permissions
 

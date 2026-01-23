@@ -29,10 +29,10 @@ This ASIM parser supports normalizing Azure Firewall logs to the ASIM Dns normal
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [AZFWDnsQuery](../tables/azfwdnsquery.md) |
-| [AzureDiagnostics](../tables/azurediagnostics.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) |  | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallDnsProxy"`<br>`ResourceType == "AZUREFIREWALLS"` | — | ✗ |
 
 ## Parameters
 

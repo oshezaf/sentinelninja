@@ -17,14 +17,15 @@ Detects when three or more distinct endpoints report ransomware detections withi
 | **Kind** | Scheduled |
 | **Tactics** | Impact |
 | **Techniques** | T1486 |
-| **Event Vendor** | Acronis |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Analytic%20Rules/AcronisMultipleEndpointsInfectedByRansomware.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "ActiveProtectionBlocksSuspiciousActivity"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
 
 ---
 

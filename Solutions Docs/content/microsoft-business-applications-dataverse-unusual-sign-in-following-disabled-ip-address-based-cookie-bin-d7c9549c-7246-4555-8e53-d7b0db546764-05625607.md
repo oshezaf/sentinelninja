@@ -25,7 +25,9 @@ Identifies previously unseen IP and user agents in a Dataverse instance followin
 
 This content item queries data from the following tables:
 
-- [`DataverseActivity`](../tables/dataverseactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
 
 ---
 

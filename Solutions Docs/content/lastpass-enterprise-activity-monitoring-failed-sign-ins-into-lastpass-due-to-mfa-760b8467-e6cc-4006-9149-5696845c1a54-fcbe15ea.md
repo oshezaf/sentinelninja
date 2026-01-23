@@ -25,8 +25,10 @@ This rule will check if a sign-in failed into LastPass due to MFA. An incident c
 
 This content item queries data from the following tables:
 
-- [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | — |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

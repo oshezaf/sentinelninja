@@ -25,7 +25,9 @@ Identifies Dataverse sign-in activity originating from users with UPN suffixes t
 
 This content item queries data from the following tables:
 
-- [`DataverseActivity`](../tables/dataverseactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
 
 ---
 

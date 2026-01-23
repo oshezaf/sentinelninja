@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Zoom Reports](../connectors/zoom.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Zoom Reports](../connectors/zoom.md) |  |
 
 ---
 
@@ -25,16 +27,19 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [ZoomReports](../solutions/zoomreports.md):**
-- [ZoomReports](../content/zoomreports-zoomreports-c76868a1.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZoomReports](../content/zoomreports-zoomreports-c76868a1.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [Zoom](../parsers/zoom.md) | *(Legacy)* | Legacy |
-| [Zoom](../parsers/zoom.md) | [ZoomReports](../solutions/zoomreports.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [Zoom](../parsers/zoom.md) | *(Legacy)* |  |
+| [Zoom](../parsers/zoom.md) | [ZoomReports](../solutions/zoomreports.md) |  |
 
 ---
 

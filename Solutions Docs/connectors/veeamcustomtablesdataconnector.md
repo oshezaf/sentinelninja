@@ -42,8 +42,8 @@ The connector supports integration with Veeam Backup & Replication, Veeam ONE an
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) | — | — |
 | [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) | — | — |
 | [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) | — | — |

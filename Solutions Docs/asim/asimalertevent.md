@@ -37,10 +37,10 @@ This union parser includes parsers for the following products:
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimAlertEventMicrosoftDefenderXDR](../asim/asimalerteventmicrosoftdefenderxdr.md) |
-| [ASimAlertEventSentinelOneSingularity](../asim/asimalerteventsentinelonesingularity.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimAlertEventMicrosoftDefenderXDR`](../asim/asimalerteventmicrosoftdefenderxdr.md) | — | — |
+| [`ASimAlertEventSentinelOneSingularity`](../asim/asimalerteventsentinelonesingularity.md) | — | — |
 
 ## Parameters
 

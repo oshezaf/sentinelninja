@@ -22,7 +22,9 @@ The Exchange Powershell Snapin was loaded on a host, this allows for a Exchange 
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ |
 
 ---
 

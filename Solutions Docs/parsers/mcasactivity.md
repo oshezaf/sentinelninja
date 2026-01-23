@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [MCASActivity_CL](../tables/mcasactivity-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MCASActivity_CL`](../tables/mcasactivity-cl.md) | — | — |
 
 ---
 

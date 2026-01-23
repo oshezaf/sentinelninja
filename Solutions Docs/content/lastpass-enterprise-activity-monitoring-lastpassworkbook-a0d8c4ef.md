@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | — |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

@@ -22,7 +22,9 @@ This alerts when a client IP connects with 1-15 different useragents in less tha
 
 This content item queries data from the following tables:
 
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

@@ -22,8 +22,8 @@ Netskope Security Alerts and Events
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | — | — |
 | [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | — | — |
 | [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | — | — |

@@ -24,7 +24,9 @@ This query helps reviewing volume of inbound external Teams message by sender do
 
 This content item queries data from the following tables:
 
-- [`MessageEvents`](../tables/messageevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessageEvents`](../tables/messageevents.md) | — | ✗ |
 
 ---
 

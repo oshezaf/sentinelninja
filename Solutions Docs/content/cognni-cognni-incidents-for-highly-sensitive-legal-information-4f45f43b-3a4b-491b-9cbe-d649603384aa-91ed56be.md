@@ -25,7 +25,9 @@ Display incidents in which highly sensitive legal information was placed at risk
 
 This content item queries data from the following tables:
 
-- [`CognniIncidents_CL`](../tables/cognniincidents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | — | — |
 
 ---
 

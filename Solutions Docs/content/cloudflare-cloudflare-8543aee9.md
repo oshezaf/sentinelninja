@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`Cloudflare_CL`](../tables/cloudflare-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | — | — |
 
 ---
 

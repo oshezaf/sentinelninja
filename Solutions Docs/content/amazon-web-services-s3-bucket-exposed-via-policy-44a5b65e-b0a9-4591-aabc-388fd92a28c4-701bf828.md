@@ -25,7 +25,9 @@ Detected S3 bucket publicly exposed via policy, this could lead for sensitive in
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "PutBucketPolicy"` | ✓ | ✓ |
 
 ---
 

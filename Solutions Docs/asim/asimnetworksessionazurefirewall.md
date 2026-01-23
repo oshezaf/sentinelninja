@@ -29,14 +29,14 @@ This ASIM parser supports normalizing Azure Firewall logs to the ASIM Network Se
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [AZFWIdpsSignature](../tables/azfwidpssignature.md) |
-| [AZFWNatRule](../tables/azfwnatrule.md) |
-| [AZFWNetworkRule](../tables/azfwnetworkrule.md) |
-| [AZFWThreatIntel](../tables/azfwthreatintel.md) |
-| [AzureDiagnostics](../tables/azurediagnostics.md) |
-| [Event](../tables/event.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |  | ✓ | ✗ |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallNetworkRule"` | — | ✗ |
+| [`Event`](../tables/event.md) |  | ✓ | ✗ |
 
 ## Parameters
 

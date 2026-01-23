@@ -22,8 +22,8 @@ Connect to Microsoft Purview to enable data sensitivity enrichment of Microsoft 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | ✓ | ✗ |
 
 ## Permissions

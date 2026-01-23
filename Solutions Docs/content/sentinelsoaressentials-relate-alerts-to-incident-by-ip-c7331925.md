@@ -16,10 +16,12 @@ This playbook looks for other alerts with the same IP as the triggered incident.
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`SecurityAlert`](../tables/securityalert.md) | read |
-| [`SecurityIncident`](../tables/securityincident.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
 
 ## Additional Documentation
 

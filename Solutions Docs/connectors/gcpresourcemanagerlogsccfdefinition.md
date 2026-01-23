@@ -22,8 +22,8 @@ The Google Cloud Platform Resource Manager data connector provides the capabilit
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GCPResourceManager`](../tables/gcpresourcemanager.md) | ✓ | ✗ |
 
 ## Permissions

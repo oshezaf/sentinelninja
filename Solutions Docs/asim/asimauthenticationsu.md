@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Linux su elevation commands collected usin
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Syslog](../tables/syslog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "su"`<br>`SyslogMessage has_all "pam_unix(su"`<br>`SyslogMessage startswith "Successful su for"` | ✓ | ✓ |
 
 ## Parameters
 

@@ -23,7 +23,9 @@ An attacker could modify route-table attributes in order to access resources he 
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateRoute,DeleteRoute,ReplaceRoute"` | ✓ | ✓ |
 
 ---
 

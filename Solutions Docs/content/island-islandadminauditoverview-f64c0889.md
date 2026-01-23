@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`Island_Admin_CL`](../tables/island-admin-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Island_Admin_CL`](../tables/island-admin-cl.md) | — | — |
 
 ---
 

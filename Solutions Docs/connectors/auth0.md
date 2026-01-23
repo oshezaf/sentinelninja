@@ -22,8 +22,8 @@ The [Auth0 Access Management](https://auth0.com/access-management) data connecto
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Auth0AM_CL`](../tables/auth0am-cl.md) | — | — |
 
 ## Permissions

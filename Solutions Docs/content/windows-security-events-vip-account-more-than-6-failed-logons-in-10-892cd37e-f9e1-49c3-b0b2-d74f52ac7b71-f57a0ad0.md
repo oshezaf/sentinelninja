@@ -21,7 +21,9 @@ VIP Account with more than 6 failed logon attempts in 10 minutes, include your o
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4625"` | ✓ | ✓ |
 
 ---
 

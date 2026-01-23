@@ -25,8 +25,10 @@ This query is looking for regsvr32.exe or rundll32.exe loading DLL images with o
 
 This content item queries data from the following tables:
 
-- [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
 
 ---
 

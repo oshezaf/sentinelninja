@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [MorphisecAlerts_CL](../tables/morphisecalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | — | — |
 
 ---
 

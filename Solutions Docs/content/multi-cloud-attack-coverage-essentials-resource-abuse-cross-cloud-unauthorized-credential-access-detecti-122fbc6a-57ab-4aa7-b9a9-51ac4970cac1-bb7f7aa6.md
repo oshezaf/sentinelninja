@@ -24,8 +24,10 @@ This detection correlates AWS GuardDuty Credential Access alerts related to Amaz
 
 This content item queries data from the following tables:
 
-- [`AWSGuardDuty`](../tables/awsguardduty.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSGuardDuty`](../tables/awsguardduty.md) | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

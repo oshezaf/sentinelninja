@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [X509_Data_CL](../tables/x509-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`X509_Data_CL`](../tables/x509-data-cl.md) | — | — |
 
 ---
 

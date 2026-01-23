@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [ESET Inspect](../connectors/esetinspect.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [ESET Inspect](../connectors/esetinspect.md) |  |
 
 ---
 

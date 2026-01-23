@@ -22,8 +22,8 @@ The Cognni connector offers a quick and simple integration with Microsoft Sentin
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | — | — |
 
 ## Permissions

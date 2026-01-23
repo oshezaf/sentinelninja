@@ -24,8 +24,10 @@ Detects changes to permissions assigned to admin users. Threat actors may try an
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
 
 ---
 

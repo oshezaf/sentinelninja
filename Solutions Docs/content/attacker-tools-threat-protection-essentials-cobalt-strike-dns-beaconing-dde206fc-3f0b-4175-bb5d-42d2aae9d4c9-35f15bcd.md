@@ -22,8 +22,10 @@
 
 This content item queries data from the following tables:
 
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`VMConnection`](../tables/vmconnection.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
 
 ---
 

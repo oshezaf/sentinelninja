@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`Talon_CL`](../tables/talon-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Talon_CL`](../tables/talon-cl.md) | — | — |
 
 ---
 

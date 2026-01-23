@@ -22,7 +22,9 @@ Some top level domains (TLDs) are more commonly associated with malware for a ra
 
 This content item queries data from the following tables:
 
-- [`DnsEvents`](../tables/dnsevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
 
 ---
 

@@ -20,8 +20,10 @@ Find Mounted ISO files and drive letters
 
 This content item queries data from the following tables:
 
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`DeviceRegistryEvents`](../tables/deviceregistryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | ✓ | ✗ |
 
 ---
 

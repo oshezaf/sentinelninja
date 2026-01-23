@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [LookoutCloudSecurity_CL](../tables/lookoutcloudsecurity-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) | — | — |
 
 ---
 

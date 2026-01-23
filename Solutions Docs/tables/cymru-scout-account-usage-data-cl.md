@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [CymruScoutAccountUsage](../parsers/cymruscoutaccountusage.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CymruScoutAccountUsage](../parsers/cymruscoutaccountusage.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) |  |
 
 ---
 

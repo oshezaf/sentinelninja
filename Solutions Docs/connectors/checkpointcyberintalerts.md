@@ -22,8 +22,8 @@ Cyberint, a Check Point company, provides a Microsoft Sentinel integration to st
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`argsentdc_CL`](../tables/argsentdc-cl.md) | — | — |
 
 ## Permissions

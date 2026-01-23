@@ -25,7 +25,9 @@ Detects when multiple admin 2FA failures occurs.
 
 This content item queries data from the following tables:
 
-- [`CiscoDuo_CL`](../tables/ciscoduo-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) | — | — |
 
 ---
 

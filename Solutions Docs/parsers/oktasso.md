@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [OktaV2_CL](../tables/oktav2-cl.md)
-- [Okta_CL](../tables/okta-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — |
+| [`Okta_CL`](../tables/okta-cl.md) | — | — |
 
 ---
 

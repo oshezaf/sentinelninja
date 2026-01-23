@@ -25,13 +25,15 @@ Detects when new exclusion added.
 
 This content item queries data from the following tables:
 
-- [`AlertInfo`](../tables/alertinfo.md)
-- [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md)
-- [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md)
-- [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md)
-- [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md)
-- [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md)
-- [`SentinelOne_CL`](../tables/sentinelone-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | — | — |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | — | — |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | — | — |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | — | — |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | — | — |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | — |
 
 ---
 

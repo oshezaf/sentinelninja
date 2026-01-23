@@ -25,7 +25,9 @@ Identifies changes in the protocol used for specific destination ports, comparin
 
 This content item queries data from the following tables:
 
-- [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [IPinfo WHOIS ASN Data Connector](../connectors/ipinfowhoisasndataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [IPinfo WHOIS ASN Data Connector](../connectors/ipinfowhoisasndataconnector.md) |  |
 
 ---
 

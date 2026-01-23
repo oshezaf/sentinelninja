@@ -22,7 +22,9 @@ VMware Cloud Web Security reported access events which were violating web access
 
 This content item queries data from the following tables:
 
-- [`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md) | — | — |
 
 ---
 

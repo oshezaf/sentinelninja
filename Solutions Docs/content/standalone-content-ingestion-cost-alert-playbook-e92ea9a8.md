@@ -16,9 +16,11 @@ This playbook sends you an e-mail or Microsoft Teams message alert if a user-def
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`Usage`](../tables/usage.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Usage`](../tables/usage.md) | ✗ | ✗ |
 
 ---
 

@@ -25,7 +25,9 @@ This query detects the creation of credential dumping tools files. Several crede
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID == "11"` | ✓ | ✗ |
 
 ---
 

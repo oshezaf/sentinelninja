@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Mimecast Awareness Training](../connectors/mimecastatapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Mimecast Awareness Training](../connectors/mimecastatapi.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [AwarenessPerformanceDetails](../parsers/awarenessperformancedetails.md) | [Mimecast](../solutions/mimecast.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AwarenessPerformanceDetails](../parsers/awarenessperformancedetails.md) | [Mimecast](../solutions/mimecast.md) |  |
 
 ---
 

@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) | — | — |
 
 ---
 

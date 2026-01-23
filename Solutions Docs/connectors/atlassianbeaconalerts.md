@@ -22,8 +22,8 @@ Atlassian Beacon is a cloud product that is built for Intelligent threat detecti
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) | — | — |
 
 ## Permissions

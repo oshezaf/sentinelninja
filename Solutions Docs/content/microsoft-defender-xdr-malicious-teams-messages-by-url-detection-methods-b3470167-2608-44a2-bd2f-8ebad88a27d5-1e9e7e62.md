@@ -24,7 +24,9 @@ This query helps reviewing malicious Teams message detections by URL detection m
 
 This content item queries data from the following tables:
 
-- [`MessageEvents`](../tables/messageevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessageEvents`](../tables/messageevents.md) | — | ✗ |
 
 ---
 

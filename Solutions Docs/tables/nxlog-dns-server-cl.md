@@ -17,7 +17,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [NXLog DNS Logs](../connectors/nxlogdnslogs.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [NXLog DNS Logs](../connectors/nxlogdnslogs.md) |  |
 
 ---
 
@@ -26,15 +28,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimDnsMicrosoftNXlog](../asim/asimdnsmicrosoftnxlog.md) | Dns |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimDnsMicrosoftNXlog](../asim/asimdnsmicrosoftnxlog.md) | Dns | MS DNS Events |  |
 
 ---
 

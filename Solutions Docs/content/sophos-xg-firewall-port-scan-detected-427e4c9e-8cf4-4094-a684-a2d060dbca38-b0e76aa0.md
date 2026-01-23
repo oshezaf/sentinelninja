@@ -25,7 +25,9 @@ This alert creates an incident when a source IP addresses attempt to communicate
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "local0"` | ✓ | ✓ |
 
 ---
 

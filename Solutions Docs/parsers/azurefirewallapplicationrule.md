@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [AzureDiagnostics](../tables/azurediagnostics.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 
 ---
 

@@ -22,7 +22,9 @@ Sysmon telemetry detects Certutil activities, a tool for cryptographic operation
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ---
 

@@ -29,7 +29,10 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
-- [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) |  |
 
 ---
 

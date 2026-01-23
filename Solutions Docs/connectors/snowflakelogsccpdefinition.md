@@ -22,8 +22,8 @@ The Snowflake data connector provides the capability to ingest Snowflake [Login 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SnowflakeLoad_CL`](../tables/snowflakeload-cl.md) | — | — |
 | [`SnowflakeLogin_CL`](../tables/snowflakelogin-cl.md) | — | — |
 | [`SnowflakeMaterializedView_CL`](../tables/snowflakematerializedview-cl.md) | — | — |

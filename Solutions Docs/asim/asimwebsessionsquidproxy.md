@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Squid Proxy logs produced by the Microsoft
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [SquidProxy_CL](../tables/squidproxy-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SquidProxy_CL`](../tables/squidproxy-cl.md) | — | — |
 
 ## Parameters
 

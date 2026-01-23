@@ -25,8 +25,10 @@
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`fluentbit_CL`](../tables/fluentbit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) | — | — |
 
 ---
 

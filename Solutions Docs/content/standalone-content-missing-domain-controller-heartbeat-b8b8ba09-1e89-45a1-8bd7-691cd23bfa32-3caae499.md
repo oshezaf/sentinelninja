@@ -23,7 +23,9 @@ This detection will go over the heartbeats received from the agents of Domain Co
 
 This content item queries data from the following tables:
 
-- [`Heartbeat`](../tables/heartbeat.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Heartbeat`](../tables/heartbeat.md) | ✗ | ✗ |
 
 ---
 

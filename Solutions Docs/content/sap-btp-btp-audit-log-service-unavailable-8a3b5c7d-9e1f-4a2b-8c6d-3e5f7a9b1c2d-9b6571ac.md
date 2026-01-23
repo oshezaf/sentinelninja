@@ -25,7 +25,9 @@ Identifies SAP BTP subaccounts that have not reported audit logs for an unusual 
 
 This content item queries data from the following tables:
 
-- [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | — |
 
 ---
 

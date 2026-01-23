@@ -25,7 +25,9 @@ When maximum password attempts have been reached, and the Knox device is locked 
 
 This content item queries data from the following tables:
 
-- [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) | — | — |
 
 ---
 

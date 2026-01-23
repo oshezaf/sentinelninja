@@ -32,7 +32,7 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **12 table(s)** from its content items:
+This solution queries **11 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
@@ -47,7 +47,6 @@ This solution queries **12 table(s)** from its content items:
 | [`SecurityEvent`](../tables/securityevent.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 | [`Syslog`](../tables/syslog.md) | Workbooks |
-| [`heartbeat`](../tables/heartbeat.md) | Workbooks |
 
 ## Content Items
 
@@ -61,7 +60,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`heartbeat`](../tables/heartbeat.md) |
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) | [`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`ConfigurationChange`](../tables/configurationchange.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md) |
 
 ## Release Notes
 

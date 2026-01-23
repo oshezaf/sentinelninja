@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Vectra XDR](../connectors/vectraxdr.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Vectra XDR](../connectors/vectraxdr.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
-- [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [VectraLockdown](../parsers/vectralockdown.md) | [Vectra XDR](../solutions/vectra-xdr.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [VectraLockdown](../parsers/vectralockdown.md) | [Vectra XDR](../solutions/vectra-xdr.md) |  |
 
 ---
 

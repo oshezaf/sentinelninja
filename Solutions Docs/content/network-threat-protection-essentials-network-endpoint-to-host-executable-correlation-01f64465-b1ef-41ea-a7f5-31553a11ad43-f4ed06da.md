@@ -19,16 +19,17 @@
 | **Tactics** | Execution |
 | **Techniques** | T1204 |
 | **Required Connectors** | [TrendMicro](../connectors/trendmicro.md), [SecurityEvents](../connectors/securityevents.md), [WindowsSecurityEvents](../connectors/windowssecurityevents.md), [WindowsForwardedEvents](../connectors/windowsforwardedevents.md) |
-| **Event Vendor** | Trend Micro |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials/Analytic%20Rules/NetworkEndpointCorrelation.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Trend Micro"` | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ |
 
 ---
 

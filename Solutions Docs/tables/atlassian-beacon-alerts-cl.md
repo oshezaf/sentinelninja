@@ -22,7 +22,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) |  |
 
 ---
 
@@ -31,7 +33,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md):**
-- [Atlassian Beacon Alert](../content/integration-for-atlassian-beacon-atlassian-beacon-alert-83fbf6a2-f227-48f4-8e7b-0b0ecac2381b-93237405.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Atlassian Beacon Alert](../content/integration-for-atlassian-beacon-atlassian-beacon-alert-83fbf6a2-f227-48f4-8e7b-0b0ecac2381b-93237405.md) |  |
 
 ---
 

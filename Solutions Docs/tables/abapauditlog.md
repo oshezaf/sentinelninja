@@ -29,10 +29,12 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md)
-- [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md)
-- [SAP S/4HANA Cloud Public Edition](../connectors/saps4publicalerts.md)
-- [SecurityBridge Solution for SAP](../connectors/securitybridge.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md) |  |
+| [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) |  |
+| [SAP S/4HANA Cloud Public Edition](../connectors/saps4publicalerts.md) |  |
+| [SecurityBridge Solution for SAP](../connectors/securitybridge.md) |  |
 
 ---
 

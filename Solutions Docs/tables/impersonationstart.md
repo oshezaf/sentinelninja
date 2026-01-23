@@ -19,7 +19,10 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [GitLab](../solutions/gitlab.md):**
-- [GitLab - User Impersonation](../content/gitlab-gitlab-user-impersonation-0f4f16a2-b464-4c10-9a42-993da3e15a40-bad32e25.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [GitLab - User Impersonation](../content/gitlab-gitlab-user-impersonation-0f4f16a2-b464-4c10-9a42-993da3e15a40-bad32e25.md) |  |
 
 ---
 

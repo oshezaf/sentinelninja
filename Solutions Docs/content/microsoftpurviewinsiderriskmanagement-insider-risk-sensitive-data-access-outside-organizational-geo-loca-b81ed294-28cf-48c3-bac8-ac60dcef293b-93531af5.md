@@ -24,7 +24,9 @@
 
 This content item queries data from the following tables:
 
-- [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | — | — |
 
 ---
 

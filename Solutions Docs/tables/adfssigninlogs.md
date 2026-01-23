@@ -27,7 +27,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Entra ID](../connectors/azureactivedirectory.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Entra ID](../connectors/azureactivedirectory.md) |  |
 
 ---
 
@@ -36,17 +38,26 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
-- [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) |  |
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
-- [Password spray attack against ADFSSignInLogs](../content/microsoft-entra-id-password-spray-attack-against-adfssigninlogs-5533fe80-905e-49d5-889a-df27d2c3976d-bc003e0d.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Password spray attack against ADFSSignInLogs](../content/microsoft-entra-id-password-spray-attack-against-adfssigninlogs-5533fe80-905e-49d5-889a-df27d2c3976d-bc003e0d.md) |  |
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ---
 

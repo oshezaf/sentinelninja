@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [CriblAccess_CL](../tables/criblaccess-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CriblAccess_CL`](../tables/criblaccess-cl.md) | — | — |
 
 ---
 

@@ -22,7 +22,9 @@ Looks for users accessing multiple other users' mailboxes or accessing multiple 
 
 This content item queries data from the following tables:
 
-- [`OfficeActivity`](../tables/officeactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
 
 ---
 

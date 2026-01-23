@@ -24,8 +24,10 @@ The query looks for source code files being modified immediately after a build p
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4663,4688"` | ✓ | ✓ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [WithSecure Elements API (Azure Function)](../connectors/withsecureelementsviafunction.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [WithSecure Elements API (Azure Function)](../connectors/withsecureelementsviafunction.md) |  |
 
 ---
 
@@ -24,11 +26,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [WithSecureTopComputersByInfections](../content/-withsecuretopcomputersbyinfections-890867ee.md)
-
 **In solution [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md):**
-- [WithSecureTopComputersByInfections](../content/withsecureelementsviafunction-withsecuretopcomputersbyinfections-63577228.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [WithSecureTopComputersByInfections](../content/withsecureelementsviafunction-withsecuretopcomputersbyinfections-63577228.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [WithSecureTopComputersByInfections](../content/github-only-withsecuretopcomputersbyinfections-b9ae720b.md) |  |
 
 ---
 

@@ -30,7 +30,9 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`Watchlist`](../tables/watchlist.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Watchlist`](../tables/watchlist.md) | ✓ | ✗ |
 
 ---
 

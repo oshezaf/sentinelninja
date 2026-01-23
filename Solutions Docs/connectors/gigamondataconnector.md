@@ -22,8 +22,8 @@ Use this data connector to integrate with Gigamon Application Metadata Exporter 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Gigamon_CL`](../tables/gigamon-cl.md) | — | — |
 
 ## Permissions

@@ -24,8 +24,8 @@ The [BigID DSPM](https://bigid.com/data-security-posture-management/) data conne
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`BigIDDSPMAssetStore_CL`](../tables/bigiddspmassetstore-cl.md) | — | — |
 | [`BigIDDSPMCatalog_CL`](../tables/bigiddspmcatalog-cl.md) | — | — |
 

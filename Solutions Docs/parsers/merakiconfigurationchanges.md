@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [MerakiConfigurationChanges_CL](../tables/merakiconfigurationchanges-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MerakiConfigurationChanges_CL`](../tables/merakiconfigurationchanges-cl.md) | — | — |
 
 ---
 

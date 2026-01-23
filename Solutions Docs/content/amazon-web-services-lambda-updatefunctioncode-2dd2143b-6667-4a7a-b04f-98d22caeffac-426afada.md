@@ -23,7 +23,9 @@ This analytic is designed to detect an IAM user updating AWS lambda code via AWS
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName startswith "UpdateFunctionCode"` | ✓ | ✓ |
 
 ---
 

@@ -22,8 +22,8 @@ The [Tenable.io](https://www.tenable.com/products/tenable-io) data connector pro
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) | — | — |
 | [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) | — | — |
 

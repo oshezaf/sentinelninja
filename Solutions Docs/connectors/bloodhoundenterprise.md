@@ -24,8 +24,8 @@ The solution is designed to test Bloodhound Enterprise package creation process.
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — |
 
 ## Permissions

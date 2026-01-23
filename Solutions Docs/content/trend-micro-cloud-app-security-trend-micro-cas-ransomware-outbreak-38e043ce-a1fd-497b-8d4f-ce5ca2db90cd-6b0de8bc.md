@@ -25,7 +25,9 @@ Triggeres when ransomware was detected on several accounts.
 
 This content item queries data from the following tables:
 
-- [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | — | — |
 
 ---
 

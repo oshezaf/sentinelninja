@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Auth0 Access Management](../connectors/auth0.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Auth0 Access Management](../connectors/auth0.md) |  |
 
 ---
 
@@ -24,10 +26,10 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [Auth0](../parsers/auth0.md) | [Auth0](../solutions/auth0.md) | Solution |
-| [Auth0AM](../parsers/auth0am.md) | [Auth0](../solutions/auth0.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [Auth0](../parsers/auth0.md) | [Auth0](../solutions/auth0.md) |  |
+| [Auth0AM](../parsers/auth0am.md) | [Auth0](../solutions/auth0.md) |  |
 
 ---
 

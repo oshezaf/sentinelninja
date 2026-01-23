@@ -16,9 +16,11 @@
 
 This content item queries data from the following tables:
 
-- [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md)
-- [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md)
-- [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | — | — |
+| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | — | — |
+| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | — | — |
 
 ---
 

@@ -24,10 +24,12 @@
 
 This content item queries data from the following tables:
 
-- [`DeviceEvents`](../tables/deviceevents.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
-- [`event`](../tables/event.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
 
 ---
 

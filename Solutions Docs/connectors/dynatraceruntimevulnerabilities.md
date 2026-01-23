@@ -22,8 +22,8 @@ This connector uses the [Dynatrace Security Problem REST API](https://docs.dynat
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | — | — |
 
 ## Permissions

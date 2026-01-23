@@ -25,7 +25,9 @@ Detects large ICMP packets to external host.
 
 This content item queries data from the following tables:
 
-- [`Ubiquiti_CL`](../tables/ubiquiti-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | — |
 
 ---
 

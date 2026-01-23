@@ -18,8 +18,6 @@
 | **Publisher** | Citrix Systems Inc. |
 | **Used in Solutions** | [Citrix Web App Firewall](../solutions/citrix-web-app-firewall.md) |
 | **Collection Method** | AMA |
-| **Event Vendor** | Citrix |
-| **Event Product** | NetScaler |
 | **Connector Definition Files** | [template_Citrix_WAFAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall/Data%20Connectors/template_Citrix_WAFAMA.json) |
 
 ## Additional Information
@@ -36,9 +34,9 @@ Citrix WAF supports Common Event Format (CEF) which is an industry standard form
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Citrix | NetScaler | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "NetScaler"`<br>`DeviceVendor == "Citrix"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -24,8 +24,10 @@ Identifies a match in Azure Key Vault logs from any IP IOC from TI
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceType == "VAULTS"` | — | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ |
 
 ---
 

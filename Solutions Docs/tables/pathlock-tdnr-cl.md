@@ -16,8 +16,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md)
-- [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) |  |
+| [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) |  |
 
 ---
 

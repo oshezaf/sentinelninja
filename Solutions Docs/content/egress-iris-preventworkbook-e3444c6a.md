@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`EgressEvents_CL`](../tables/egressevents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EgressEvents_CL`](../tables/egressevents-cl.md) | — | — |
 
 ---
 

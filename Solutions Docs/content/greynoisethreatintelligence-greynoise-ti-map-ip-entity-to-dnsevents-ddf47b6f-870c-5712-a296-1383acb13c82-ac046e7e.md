@@ -24,8 +24,10 @@ This query maps any IP indicators of compromise (IOCs) from GreyNoise Threat Int
 
 This content item queries data from the following tables:
 
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

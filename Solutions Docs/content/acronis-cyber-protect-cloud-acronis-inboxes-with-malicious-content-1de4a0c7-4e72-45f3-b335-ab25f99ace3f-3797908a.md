@@ -15,14 +15,15 @@ Many inboxes containing malicious content could indicate a potential ongoing phi
 | **ID** | `1de4a0c7-4e72-45f3-b335-ab25f99ace3f` |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1566 |
-| **Event Vendor** | Acronis |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Hunting%20Queries/AcronisInboxesWithMaliciousContentDetected.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "MaliciousEmailDetectedPerceptionPointWarning,MaliciousURLDetectedInM365MailboxBackup,MalwareDetectedInM365MailboxBackup"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
 
 ---
 

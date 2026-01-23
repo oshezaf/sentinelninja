@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [IPinfo RIRWHOIS Data Connector](../connectors/ipinforirwhoisdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [IPinfo RIRWHOIS Data Connector](../connectors/ipinforirwhoisdataconnector.md) |  |
 
 ---
 

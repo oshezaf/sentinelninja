@@ -25,13 +25,15 @@ Identifies a match across filename and commandline IOC's related to an actor tra
 
 This content item queries data from the following tables:
 
-- [`DeviceEvents`](../tables/deviceevents.md)
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`Event`](../tables/event.md)
-- [`Image`](../tables/image.md)
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✗ |
+| [`Image`](../tables/image.md) | — | — |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
 
 ---
 

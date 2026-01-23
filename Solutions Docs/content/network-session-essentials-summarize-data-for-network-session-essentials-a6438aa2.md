@@ -22,17 +22,19 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) | read/write |
-| [`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) | read/write |
-| [`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md) | read/write |
-| [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) | read/write |
-| [`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md) | read/write |
-| [`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md) | read/write |
-| [`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) | read/write |
-| [`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) | read/write |
-| [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) | read/write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) | — | — |
+| [`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) | — | — |
+| [`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md) | — | — |
+| [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) | — | — |
+| [`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md) | — | — |
+| [`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md) | — | — |
+| [`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) | — | — |
+| [`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) | — | — |
+| [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) | — | — |
 
 ## Additional Documentation
 

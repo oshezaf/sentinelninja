@@ -22,8 +22,8 @@ Actionable alerts provide customized alerts based on configured assets
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) | — | — |
 
 ## Permissions

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Force Point Firewall logs coming from CEF 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "70734,76508,76509"`<br>`DeviceEventClassID != "0"`<br>`DeviceEventClassID !in "70383,70393,70734,71009,71040"`<br>`DeviceProduct == "Firewall"`<br>`DeviceVendor == "FORCEPOINT"` | ✓ | ✓ |
 
 ## Parameters
 

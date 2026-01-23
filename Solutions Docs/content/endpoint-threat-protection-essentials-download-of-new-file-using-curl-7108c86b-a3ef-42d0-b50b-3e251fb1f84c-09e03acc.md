@@ -22,8 +22,10 @@ Threat actors may use tools such as Curl to download additional files, communica
 
 This content item queries data from the following tables:
 
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [HalcyonNetworkSession_CL](../tables/halcyonnetworksession-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | — | — |
 
 ---
 

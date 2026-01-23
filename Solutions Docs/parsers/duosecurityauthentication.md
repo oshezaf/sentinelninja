@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [DuoSecurityAuthentication_CL](../tables/duosecurityauthentication-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md) | — | — |
 
 ---
 

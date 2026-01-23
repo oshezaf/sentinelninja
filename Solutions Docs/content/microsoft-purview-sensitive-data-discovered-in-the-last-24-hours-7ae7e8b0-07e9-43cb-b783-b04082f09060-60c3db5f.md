@@ -24,7 +24,9 @@ Identifies all classifications that have been detected on assets during a scan b
 
 This content item queries data from the following tables:
 
-- [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | ✓ | ✗ |
 
 ---
 

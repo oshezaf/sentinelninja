@@ -12,16 +12,19 @@
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [DuoSecurity](../content/-duosecurity-02042b40.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DuoSecurity](../content/github-only-duosecurity-51a3ff3a.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [DuoSecurityAdministrator](../parsers/duosecurityadministrator.md) | *(Legacy)* | Legacy |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DuoSecurityAdministrator](../parsers/duosecurityadministrator.md) | *(Legacy)* |  |
 
 ---
 

@@ -24,7 +24,9 @@ Identifies a match across various data feeds for named pipe IOCs related to the 
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) |  | ✓ | ✗ |
 
 ---
 

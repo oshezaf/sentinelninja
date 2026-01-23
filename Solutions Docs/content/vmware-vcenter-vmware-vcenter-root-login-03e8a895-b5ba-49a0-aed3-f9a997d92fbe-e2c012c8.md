@@ -25,7 +25,9 @@ Detects when root user login from uncommon IP address.
 
 This content item queries data from the following tables:
 
-- [`vcenter_CL`](../tables/vcenter-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vcenter_CL`](../tables/vcenter-cl.md) | — | — |
 
 ---
 

@@ -25,7 +25,9 @@ Detects when a user logins from new device.
 
 This content item queries data from the following tables:
 
-- [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) | — | — |
 
 ---
 

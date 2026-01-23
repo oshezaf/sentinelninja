@@ -18,7 +18,6 @@
 | **Publisher** | Netwrix |
 | **Used in Solutions** | [Netwrix Auditor](../solutions/netwrix-auditor.md) |
 | **Collection Method** | AMA |
-| **Event Vendor** | Netwrix |
 | **Connector Definition Files** | [template_NetwrixAuditorAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netwrix%20Auditor/Data%20Connectors/template_NetwrixAuditorAMA.json) |
 
 Netwrix Auditor data connector provides the capability to ingest [Netwrix Auditor (formerly Stealthbits Privileged Activity Manager)](https://www.netwrix.com/auditor.html) events into Microsoft Sentinel. Refer to [Netwrix documentation](https://helpcenter.netwrix.com/) for more information.
@@ -27,9 +26,9 @@ Netwrix Auditor data connector provides the capability to ingest [Netwrix Audito
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Netwrix | — | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Netwrix"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

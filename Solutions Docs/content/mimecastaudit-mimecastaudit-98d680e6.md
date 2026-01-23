@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) | — | — |
 
 ---
 

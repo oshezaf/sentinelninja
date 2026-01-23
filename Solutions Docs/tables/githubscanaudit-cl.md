@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [GitHub (using Webhooks)](../connectors/githubwebhook.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [GitHub (using Webhooks)](../connectors/githubwebhook.md) |  |
 
 ---
 
@@ -25,18 +27,21 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [GitHub](../solutions/github.md):**
-- [GitHub](../content/github-github-87916f66.md)
-- [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [GitHub](../content/github-github-87916f66.md) |  |
+| [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md) |  |
 
 ## Parsers Using This Table (3)
 
 ### Other Parsers (3)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | [GitHub](../solutions/github.md) | Solution |
-| [GitHubDependabotData](../parsers/githubdependabotdata.md) | [GitHub](../solutions/github.md) | Solution |
-| [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | [GitHub](../solutions/github.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | [GitHub](../solutions/github.md) |  |
+| [GitHubDependabotData](../parsers/githubdependabotdata.md) | [GitHub](../solutions/github.md) |  |
+| [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | [GitHub](../solutions/github.md) |  |
 
 ---
 

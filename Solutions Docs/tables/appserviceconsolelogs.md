@@ -22,8 +22,11 @@ Reference for AppServiceConsoleLogs table in Azure Monitor Logs.
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ## Resource Types
 

@@ -23,7 +23,9 @@ Query searches threats and helps to identify threats matching owaspTop10 vulnera
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ |
 
 ---
 

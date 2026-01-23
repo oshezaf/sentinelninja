@@ -24,8 +24,8 @@ Connects the 42Crunch API protection to Azure Log Analytics via the REST API int
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) | — | — |
 
 ## Permissions

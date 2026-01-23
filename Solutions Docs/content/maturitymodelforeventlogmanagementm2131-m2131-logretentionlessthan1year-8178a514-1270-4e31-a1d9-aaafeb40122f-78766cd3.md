@@ -24,7 +24,9 @@ This alert is designed to monitor log retention within the Maturity Model for Ev
 
 This content item queries data from the following tables:
 
-- [`SecurityRecommendation`](../tables/securityrecommendation.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) | ✓ | ✗ |
 
 ---
 

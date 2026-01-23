@@ -26,8 +26,8 @@ The Microsoft 365 (formerly, Office 365) activity log connector provides insight
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
 
 ## Permissions

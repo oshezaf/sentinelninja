@@ -22,8 +22,8 @@ The [Varonis Purview](https://www.varonis.com/) connector provides the capabilit
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`varonisresources_CL`](../tables/varonisresources-cl.md) | — | — |
 
 ## Permissions

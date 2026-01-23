@@ -24,7 +24,9 @@ Identifies a match for XSS attack in the Application gateway WAF logs. The Thres
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "ApplicationGatewayFirewallLog"` | — | ✗ |
 
 ---
 

@@ -22,8 +22,8 @@ The [Qualys Vulnerability Management (VM)](https://www.qualys.com/apps/vulnerabi
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | — | — |
 
 ## Permissions

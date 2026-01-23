@@ -15,15 +15,16 @@ Identifies network connections whose ports are frequent targets of attacks and s
 | **ID** | `0a57accf-3548-4e38-a861-99687c958f59` |
 | **Tactics** | InitialAccess, Discovery |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | Palo Alto Networks |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Hunting%20Queries/PaloAlto-HighRiskPorts.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`fluentbit_CL`](../tables/fluentbit-cl.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) |  | — | — |
 
 ---
 

@@ -23,7 +23,9 @@ This rule generates an incident when an alarming number of anomalies are generat
 
 This content item queries data from the following tables:
 
-- [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) | — | — |
 
 ---
 

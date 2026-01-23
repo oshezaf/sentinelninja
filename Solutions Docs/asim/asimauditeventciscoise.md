@@ -29,9 +29,9 @@ This ASIM parser supports normalizing administrative activity in the Cisco ISE e
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Syslog](../tables/syslog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName has_any "CISE,CSCO"` | ✓ | ✓ |
 
 ## Parameters
 

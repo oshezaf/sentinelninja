@@ -24,7 +24,9 @@ Detects malicious scan results and actions which are not allowed
 
 This content item queries data from the following tables:
 
-- [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | — | — |
 
 ---
 

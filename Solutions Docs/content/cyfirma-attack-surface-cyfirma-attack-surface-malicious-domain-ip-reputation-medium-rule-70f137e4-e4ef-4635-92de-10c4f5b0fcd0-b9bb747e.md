@@ -25,7 +25,9 @@ This alert is raised when CYFIRMA detects a critical reputation score for an IP 
 
 This content item queries data from the following tables:
 
-- [`CyfirmaASDomainIPReputationAlerts_CL`](../tables/cyfirmaasdomainipreputationalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaASDomainIPReputationAlerts_CL`](../tables/cyfirmaasdomainipreputationalerts-cl.md) | — | — |
 
 ---
 

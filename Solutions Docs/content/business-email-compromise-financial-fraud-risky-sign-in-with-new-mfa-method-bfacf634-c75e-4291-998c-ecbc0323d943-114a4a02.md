@@ -22,10 +22,12 @@ This query identifies new MFA methods added to an account within 6 hours of a me
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

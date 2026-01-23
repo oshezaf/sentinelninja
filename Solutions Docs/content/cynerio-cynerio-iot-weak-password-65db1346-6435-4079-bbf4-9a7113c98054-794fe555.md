@@ -24,7 +24,9 @@ User signed in using weak credentials
 
 This content item queries data from the following tables:
 
-- [`CynerioEvent_CL`](../tables/cynerioevent-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) | — | — |
 
 ---
 

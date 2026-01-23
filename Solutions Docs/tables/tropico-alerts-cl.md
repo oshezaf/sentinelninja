@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Tropico Security - Alerts](../connectors/tropicoalertsdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tropico Security - Alerts](../connectors/tropicoalertsdefinition.md) |  |
 
 ---
 

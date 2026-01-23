@@ -23,7 +23,9 @@ This query identifies Microsoft-signed Binaries and Scripts that are not system 
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ |
 
 ---
 

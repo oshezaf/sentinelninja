@@ -20,7 +20,9 @@ List all devices that are not onboarded
 
 This content item queries data from the following tables:
 
-- [`DeviceInfo`](../tables/deviceinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
 
 ---
 

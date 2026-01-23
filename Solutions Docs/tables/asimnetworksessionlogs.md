@@ -31,18 +31,12 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md)
-- [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md)
-- [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md)
-- [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md)
-
-## Vendors and Products (1)
-
-The following EventVendor/EventProduct values are used by connectors ingesting this table:
-
-| Vendor | Product | Connectors |
-|:-------|:--------|:-----------|
-| * | Windows Firewall | [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) |
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) | `EventProduct == "Windows Firewall"` |
+| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
 
 ---
 
@@ -50,14 +44,23 @@ The following EventVendor/EventProduct values are used by connectors ingesting t
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [WindowsFirewallViaAMA](../content/-windowsfirewallviaama-bfbc801e.md)
-
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
-- [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
+
+**GitHub Only:** `EventProduct == "Windows Firewall"`
+
+| Content Item |
+|:-------------|
+| [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) |
 
 ## Resource Types
 
@@ -69,15 +72,30 @@ This table collects data from the following Azure resource types:
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimNetworkSessionNative](../asim/asimnetworksessionnative.md) | NetworkSession |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimNetworkSessionNative](../asim/asimnetworksessionnative.md) | NetworkSession | Native |  |
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
+| **Total** | **1** | **0** | **0** | **0** | **1** |
+
+### EventProduct / EventVendor
+
+| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Windows Firewall` |  | 1 | - | - | - | **1** |
 
 ---
 

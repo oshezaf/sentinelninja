@@ -25,7 +25,9 @@ Detects Google Cloud resources where logging is disabled for services like (Clou
 
 This content item queries data from the following tables:
 
-- [`GoogleCloudSCC`](../tables/googlecloudscc.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ |
 
 ---
 

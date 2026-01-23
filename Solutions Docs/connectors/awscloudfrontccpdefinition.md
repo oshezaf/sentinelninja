@@ -22,8 +22,8 @@ This data connector enables the integration of AWS CloudFront logs with Microsof
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AWSCloudFront_AccessLog_CL`](../tables/awscloudfront-accesslog-cl.md) | — | — |
 
 ## Permissions

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Varonis Purview Push Connector](../connectors/varonispurviewpush.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) |  |
 
 ---
 

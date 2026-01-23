@@ -23,7 +23,9 @@ BloodHound Attack Path Finding - Non-Tier Zero Principals With ADCS ESC9 Scenari
 
 This content item queries data from the following tables:
 
-- [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — |
 
 ---
 

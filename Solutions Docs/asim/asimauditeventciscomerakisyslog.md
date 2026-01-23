@@ -29,10 +29,10 @@ This ASIM parser supports normalizing Cisco Meraki logs ingested in 'Syslog' tab
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Operation](../tables/operation.md) |
-| [Syslog](../tables/syslog.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Operation`](../tables/operation.md) | ✗ | ✗ |
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
 
 ## Parameters
 

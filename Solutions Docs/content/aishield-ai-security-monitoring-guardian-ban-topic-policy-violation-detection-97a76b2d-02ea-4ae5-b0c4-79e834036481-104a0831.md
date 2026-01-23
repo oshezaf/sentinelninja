@@ -23,7 +23,9 @@ This alert creates an incident when Ban Topic Policy Violation detected from the
 
 This content item queries data from the following tables:
 
-- [`Guardian_CL`](../tables/guardian-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Guardian_CL`](../tables/guardian-cl.md) | — | — |
 
 ---
 

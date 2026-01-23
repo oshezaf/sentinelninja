@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Dhcp logs from Infoblox BloxOne to the ASI
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID has "DHCP"`<br>`DeviceVendor == "Infoblox"` | ✓ | ✓ |
 
 ## Parameters
 

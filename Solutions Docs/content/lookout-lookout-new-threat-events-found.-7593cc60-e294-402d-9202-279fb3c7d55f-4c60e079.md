@@ -25,7 +25,9 @@ Created to detect new Threat events from the data which is recently synced by Lo
 
 This content item queries data from the following tables:
 
-- [`Lookout_CL`](../tables/lookout-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Lookout_CL`](../tables/lookout-cl.md) | — | — |
 
 ---
 

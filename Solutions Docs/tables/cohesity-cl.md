@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Cohesity](../connectors/cohesitydataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Cohesity](../connectors/cohesitydataconnector.md) |  |
 
 ---
 

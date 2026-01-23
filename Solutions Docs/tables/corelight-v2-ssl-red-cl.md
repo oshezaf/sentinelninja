@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
 
 ---
 
@@ -25,19 +27,22 @@ This table is ingested by the following connectors:
 ### Workbooks (4)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight](../content/corelight-corelight-90dad195.md)
-- [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md)
-- [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md)
-- [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Corelight](../content/corelight-corelight-90dad195.md) |  |
+| [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |
+| [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
+| [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [corelight_ssl](../parsers/corelight-ssl.md) | [Corelight](../solutions/corelight.md) | Solution |
-| [corelight_ssl_red](../parsers/corelight-ssl-red.md) | [Corelight](../solutions/corelight.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [corelight_ssl](../parsers/corelight-ssl.md) | [Corelight](../solutions/corelight.md) |  |
+| [corelight_ssl_red](../parsers/corelight-ssl-red.md) | [Corelight](../solutions/corelight.md) |  |
 
 ---
 

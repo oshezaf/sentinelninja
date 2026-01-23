@@ -22,7 +22,9 @@ Identifies Google Cloud Platform Compute Engine instances that are configured wi
 
 This content item queries data from the following tables:
 
-- [`GoogleCloudSCC`](../tables/googlecloudscc.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ |
 
 ---
 

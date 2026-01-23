@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`ValenceAlert_CL`](../tables/valencealert-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ValenceAlert_CL`](../tables/valencealert-cl.md) | — | — |
 
 ---
 

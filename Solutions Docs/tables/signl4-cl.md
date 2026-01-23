@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Derdack SIGNL4](../connectors/derdacksignl4.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Derdack SIGNL4](../connectors/derdacksignl4.md) |  |
 
 ---
 

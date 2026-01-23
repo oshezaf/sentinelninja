@@ -25,8 +25,10 @@ This analytical rule looks for rundll32.exe or regsvr32.exe being spawned by abn
 
 This content item queries data from the following tables:
 
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
 
 ---
 

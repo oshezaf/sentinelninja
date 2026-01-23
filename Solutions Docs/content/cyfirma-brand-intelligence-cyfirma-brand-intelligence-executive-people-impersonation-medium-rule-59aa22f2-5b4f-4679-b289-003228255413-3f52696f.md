@@ -25,7 +25,9 @@ This rule detects potential impersonation of executive or high-profile individua
 
 This content item queries data from the following tables:
 
-- [`CyfirmaBIExecutivePeopleAlerts_CL`](../tables/cyfirmabiexecutivepeoplealerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaBIExecutivePeopleAlerts_CL`](../tables/cyfirmabiexecutivepeoplealerts-cl.md) | — | — |
 
 ---
 

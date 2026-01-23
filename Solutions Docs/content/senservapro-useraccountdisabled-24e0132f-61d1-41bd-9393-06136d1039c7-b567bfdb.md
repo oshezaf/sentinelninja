@@ -25,7 +25,9 @@ This query searches for account is Disabled. Does not effect score as its easily
 
 This content item queries data from the following tables:
 
-- [`SenservaPro_CL`](../tables/senservapro-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
 
 ---
 

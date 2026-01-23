@@ -29,9 +29,9 @@ This ASIM parser supports normalizing endpoint authentication events, collected 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [DeviceLogonEvents](../tables/devicelogonevents.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ |
 
 ## Parameters
 

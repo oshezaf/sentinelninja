@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [SecurityBridge Solution for SAP](../connectors/securitybridge.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [SecurityBridge Solution for SAP](../connectors/securitybridge.md) |  |
 
 ---
 

@@ -22,8 +22,8 @@ This connector uses the Dynatrace Attacks REST API to ingest detected attacks in
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | — | — |
 
 ## Permissions

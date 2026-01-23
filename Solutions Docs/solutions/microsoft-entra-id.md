@@ -31,7 +31,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **14 table(s)**:
+This solution uses **13 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -47,19 +47,17 @@ This solution uses **14 table(s)**:
 | [`AuditLogs`](../tables/auditlogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | Analytics, Workbooks |
 | [`DeviceInfo`](../tables/deviceinfo.md) | - | Analytics |
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | - |
-| [`SignInLogs`](../tables/signinlogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | - |
 | [`SigninLogs`](../tables/signinlogs.md) | [Microsoft Entra ID](../connectors/azureactivedirectory.md) | Analytics, Workbooks |
 
 ### Internal Tables
 
-The following **4 table(s)** are used internally by this solution's content items:
+The following **3 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Anomalies`](../tables/anomalies.md) | - | Analytics |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | - | Analytics |
 | [`IdentityInfo`](../tables/identityinfo.md) | - | Analytics |
-| [`anomalies`](../tables/anomalies.md) | - | Analytics |
 
 ## Content Items
 
@@ -132,7 +130,7 @@ This solution includes **87 content item(s)**:
 | [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) | Medium | CredentialAccess | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 | [Password spray attack against Microsoft Entra ID application](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-application-48607a29-a26a-4abf-8078-a06dbdd174a4-abc69084.md) | Medium | CredentialAccess | - |
 | [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) | Medium | Persistence | [`AuditLogs`](../tables/auditlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
-| [Privileged Accounts - Sign in Failure Spikes](../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.md) | High | InitialAccess | *Internal use:*<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`anomalies`](../tables/anomalies.md) |
+| [Privileged Accounts - Sign in Failure Spikes](../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.md) | High | InitialAccess | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [Privileged Role Assigned Outside PIM](../content/microsoft-entra-id-privileged-role-assigned-outside-pim-269435e3-1db8-4423-9dfc-9bf59997da1c-d87cbe19.md) | Low | PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 | [Rare application consent](../content/microsoft-entra-id-rare-application-consent-83ba3057-9ea3-4759-bf6a-933f2e5bc7ee-a30dee09.md) | Medium | Persistence, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 | [Sign-ins from IPs that attempt sign-ins to disabled accounts](../content/microsoft-entra-id-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-500c103a-0319-4d56-8e99-3cec8d860757-7cb25dd6.md) | Medium | InitialAccess, Persistence | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
@@ -143,7 +141,7 @@ This solution includes **87 content item(s)**:
 | [Suspicious application consent for offline access](../content/microsoft-entra-id-suspicious-application-consent-for-offline-access-3533f74c-9207-4047-96e2-0eb9383be587-fa7e45f8.md) | Low | CredentialAccess | [`AuditLogs`](../tables/auditlogs.md) |
 | [Suspicious application consent similar to O365 Attack Toolkit](../content/microsoft-entra-id-suspicious-application-consent-similar-to-o365-attack-toolkit-f948a32f-226c-4116-bddd-d95e91d97eb9-f8a2446b.md) | High | CredentialAccess, DefenseEvasion | [`AuditLogs`](../tables/auditlogs.md) |
 | [Suspicious application consent similar to PwnAuth](../content/microsoft-entra-id-suspicious-application-consent-similar-to-pwnauth-39198934-62a0-4781-8416-a81265c03fd6-18583afd.md) | Medium | CredentialAccess, DefenseEvasion | [`AuditLogs`](../tables/auditlogs.md) |
-| [User Accounts - Sign in Failure due to CA Spikes](../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.md) | Medium | InitialAccess | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`anomalies`](../tables/anomalies.md) |
+| [User Accounts - Sign in Failure due to CA Spikes](../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.md) | Medium | InitialAccess | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md) |
 | [User Assigned New Privileged Role](../content/microsoft-entra-id-user-assigned-new-privileged-role-746ddb63-f51b-4563-b449-a8b13cf302ec-dac38182.md) | High | Persistence | [`AuditLogs`](../tables/auditlogs.md) |
 | [User added to Microsoft Entra ID Privileged Groups](../content/microsoft-entra-id-user-added-to-microsoft-entra-id-privileged-groups-4d94d4a9-dc96-410a-8dea-4d4d4584188b-6ad398a6.md) | Medium | Persistence, PrivilegeEscalation | [`AuditLogs`](../tables/auditlogs.md) |
 | [[Deprecated] Explicit MFA Deny](../content/microsoft-entra-id-[deprecated]-explicit-mfa-deny-a22740ec-fc1e-4c91-8de6-c29c6450ad00-04320464.md) | Medium | CredentialAccess | [`DeviceInfo`](../tables/deviceinfo.md) |

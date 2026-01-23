@@ -23,9 +23,11 @@
 
 This parser reads from the following tables:
 
-- [BitwardenEventLogs_CL](../tables/bitwardeneventlogs-cl.md)
-- [BitwardenGroups_CL](../tables/bitwardengroups-cl.md)
-- [BitwardenMembers_CL](../tables/bitwardenmembers-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | — | — |
+| [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | — | — |
+| [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | — | — |
 
 ---
 

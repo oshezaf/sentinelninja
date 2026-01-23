@@ -18,14 +18,15 @@ Identifies a match in Palo Alto data in CommonSecurityLog table from any Domain 
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1071 |
 | **Required Connectors** | [PaloAltoNetworks](../connectors/paloaltonetworks.md), [ThreatIntelligence](../connectors/threatintelligence.md), [ThreatIntelligenceTaxii](../connectors/threatintelligencetaxii.md), [MicrosoftDefenderThreatIntelligence](../connectors/microsoftdefenderthreatintelligence.md) |
-| **Event Vendor** | Palo Alto Networks |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20%28NEW%29/Analytic%20Rules/DomainEntity_PaloAlto.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ |
 
 ---
 

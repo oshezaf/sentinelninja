@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [TheHive](../parsers/thehive.md) | [TheHive](../solutions/thehive.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [TheHive](../parsers/thehive.md) | [TheHive](../solutions/thehive.md) |  |
 
 ---
 

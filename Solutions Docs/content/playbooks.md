@@ -21,14 +21,14 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [ ProofpointTAP-CheckAccountInVAP](proofpointtap-proofpointtap-checkaccountinvap-58ea7ed4.md) | 📦 [ProofPointTap](../solutions/proofpointtap.md) |
 | [2S-MISP-Forwarder](standalone-content-2s-misp-forwarder-5acdf96c.md) | 📄 Standalone Content |
 | [2S-MISP-Orchestrator](standalone-content-2s-misp-orchestrator-036fcfa3.md) | 📄 Standalone Content |
-| [<PlaybookName>](standalone-content-playbookname-dbf4265f.md) | 🔗 GitHub Only |
-| [<PlaybookName>](standalone-content-playbookname-ab744e65.md) | 🔗 GitHub Only |
-| [<PlaybookName>](standalone-content-playbookname-0b682ce6.md) | 🔗 GitHub Only |
-| [<PlaybookName>](standalone-content-playbookname-5f186dbb.md) | 🔗 GitHub Only |
-| [<PlaybookName>](standalone-content-playbookname-1353004c.md) | 🔗 GitHub Only |
-| [<PlaybookName>](standalone-content-playbookname-fc458ce1.md) | 🔗 GitHub Only |
-| [<PlaybookName>](standalone-content-playbookname-c46ce54d.md) | 🔗 GitHub Only |
-| [<PlaybookName>](standalone-content-playbookname-a0db159f.md) | 🔗 GitHub Only |
+| [<PlaybookName>](github-only-playbookname-d6e5bd90.md) | 🔗 GitHub Only |
+| [<PlaybookName>](github-only-playbookname-a98b32ed.md) | 🔗 GitHub Only |
+| [<PlaybookName>](github-only-playbookname-a2821ba6.md) | 🔗 GitHub Only |
+| [<PlaybookName>](github-only-playbookname-934fe008.md) | 🔗 GitHub Only |
+| [<PlaybookName>](github-only-playbookname-a78bca9d.md) | 🔗 GitHub Only |
+| [<PlaybookName>](github-only-playbookname-4f698749.md) | 🔗 GitHub Only |
+| [<PlaybookName>](github-only-playbookname-22eeb63a.md) | 🔗 GitHub Only |
+| [<PlaybookName>](github-only-playbookname-f38224c8.md) | 🔗 GitHub Only |
 | [[Deprecated] Intel 471 Malware Intelligence to Graph Security](intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | 📦 [Intel471](../solutions/intel471.md) |
 
 ## A
@@ -40,13 +40,13 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [AbuseIPDB Report IPs To AbuseIPDB After User Response In MSTeams](abuseipdb-abuseipdb-report-ips-to-abuseipdb-after-user-response-in-msteams-1d81545b.md) | 📦 [AbuseIPDB](../solutions/abuseipdb.md) |
 | [AD4IoT-AutoAlertStatusSync](iototthreatmonitoringwithdefenderforiot-ad4iot-autoalertstatussync-23507deb.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [AD4IoT-AutoCloseIncidents](iototthreatmonitoringwithdefenderforiot-ad4iot-autocloseincidents-6bbdd5ed.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [AD4IoT-AutoCloseIncidents](standalone-content-ad4iot-autocloseincidents-65516594.md) | 🔗 GitHub Only |
+| [AD4IoT-AutoCloseIncidents](github-only-ad4iot-autocloseincidents-58d73052.md) | 🔗 GitHub Only |
 | [AD4IoT-AutoTriageIncident](iototthreatmonitoringwithdefenderforiot-ad4iot-autotriageincident-6060cb26.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [AD4IoT-CVEAutoWorkflow](iototthreatmonitoringwithdefenderforiot-ad4iot-cveautoworkflow-d92bf631.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [AD4IoT-MailByProductionLine](iototthreatmonitoringwithdefenderforiot-ad4iot-mailbyproductionline-4e3b19c4.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [AD4IoT-MailByProductionLine](standalone-content-ad4iot-mailbyproductionline-b27a488f.md) | 🔗 GitHub Only |
+| [AD4IoT-MailByProductionLine](github-only-ad4iot-mailbyproductionline-fdc303b5.md) | 🔗 GitHub Only |
 | [AD4IoT-NewAssetServiceNowTicket](iototthreatmonitoringwithdefenderforiot-ad4iot-newassetservicenowticket-54c08b02.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [AD4IoT-NewAssetServiceNowTicket](standalone-content-ad4iot-newassetservicenowticket-8ef339bd.md) | 🔗 GitHub Only |
+| [AD4IoT-NewAssetServiceNowTicket](github-only-ad4iot-newassetservicenowticket-5781052d.md) | 🔗 GitHub Only |
 | [AD4IoT-SendEmailtoIoTOwner](iototthreatmonitoringwithdefenderforiot-ad4iot-sendemailtoiotowner-726ee92c.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Add Asset to Protection - Zero Networks Segment](zeronetworks-add-asset-to-protection-zero-networks-segment-16e37e2a.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) |
 | [Add Block Outbound Rule - Zero Networks Acccess Orchestrator](zeronetworks-add-block-outbound-rule-zero-networks-acccess-orchestrator-7ca46c7d.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) |
@@ -63,10 +63,10 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Add User To Watchlist - Alert Trigger](watchlists-utilities-add-user-to-watchlist-alert-trigger-b7c20c17.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [Add User To Watchlist - Incident Trigger](watchlists-utilities-add-user-to-watchlist-incident-trigger-d70c4774.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [Advanced ServiceNow Teams Integration Playbook](teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | 📦 [Teams](../solutions/teams.md) |
-| [ADX-health-playbook](standalone-content-adx-health-playbook-d5d2776b.md) | 🔗 GitHub Only |
+| [ADX-health-playbook](github-only-adx-health-playbook-8c510171.md) | 🔗 GitHub Only |
 | [Affected-Key-Credentials-Scanner](standalone-content-affected-key-credentials-scanner-485d372e.md) | 📄 Standalone Content |
 | [aggregate-ServiceNow-tickets](standalone-content-aggregate-servicenow-tickets-d4e8dc05.md) | 📄 Standalone Content |
-| [AI-Commandline-Analysis](standalone-content-ai-commandline-analysis-505b4dc1.md) | 🔗 GitHub Only |
+| [AI-Commandline-Analysis](github-only-ai-commandline-analysis-5d127fc0.md) | 🔗 GitHub Only |
 | [Alert trigger empty playbook](standalone-content-alert-trigger-empty-playbook-3217f7cb.md) | 📄 Standalone Content |
 | [Armis Update Alert Status](armis-armis-update-alert-status-f60ff46e.md) | 📦 [Armis](../solutions/armis.md) |
 | [AS-Add-Azure-AD-User-Job-Title-to-Incident](standalone-content-as-add-azure-ad-user-job-title-to-incident-17fd9655.md) | 📄 Standalone Content |
@@ -182,8 +182,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 
 | Name | Source |
 |:-----|:-------|
-| [C19ImportToSentinel](standalone-content-c19importtosentinel-1c518233.md) | 🔗 GitHub Only |
-| [C19IndicatorProcessor](standalone-content-c19indicatorprocessor-b183275c.md) | 🔗 GitHub Only |
+| [C19ImportToSentinel](github-only-c19importtosentinel-cc38013f.md) | 🔗 GitHub Only |
+| [C19IndicatorProcessor](github-only-c19indicatorprocessor-3c4b6d12.md) | 🔗 GitHub Only |
 | [CDC_Dismiss_Upstream_Events](standalone-content-cdc-dismiss-upstream-events-694a3d2e.md) | 📄 Standalone Content |
 | [Change Incident Severity](standalone-content-change-incident-severity-744a5721.md) | 📄 Standalone Content |
 | [Change-Incident-Severity](standalone-content-change-incident-severity-4b4f6269.md) | 📄 Standalone Content |
@@ -208,15 +208,15 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Close-SentinelIncident-from-ServiceNow](standalone-content-close-sentinelincident-from-servicenow-f9663b3f.md) | 📄 Standalone Content |
 | [Cohesity Create or Update ServiceNow incident](cohesitysecurity-cohesity-create-or-update-servicenow-incident-5275eccc.md) | 📦 [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | [Cohesity Incident Email](cohesitysecurity-cohesity-incident-email-219eeafd.md) | 📦 [CohesitySecurity](../solutions/cohesitysecurity.md) |
-| [Comment-OriginAlertURL](standalone-content-comment-originalerturl-b5251217.md) | 🔗 GitHub Only |
-| [Comment_RemediationSteps](standalone-content-comment-remediationsteps-c061b790.md) | 🔗 GitHub Only |
-| [Comment_RemediationSteps](standalone-content-comment-remediationsteps-9bc72c6e.md) | 🔗 GitHub Only |
+| [Comment-OriginAlertURL](github-only-comment-originalerturl-2a6480b3.md) | 🔗 GitHub Only |
+| [Comment_RemediationSteps](github-only-comment-remediationsteps-e3606e4e.md) | 🔗 GitHub Only |
+| [Comment_RemediationSteps](github-only-comment-remediationsteps-b18cd56f.md) | 🔗 GitHub Only |
 | [Commvault Disable Data Aging Logic App Playbook](commvault-security-iq-commvault-disable-data-aging-logic-app-playbook-e8d97851.md) | 📦 [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [Commvault Disable SAML Provider Logic App Playbook](commvault-security-iq-commvault-disable-saml-provider-logic-app-playbook-68418a37.md) | 📦 [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [Commvault Disable User Logic App Playbook](commvault-security-iq-commvault-disable-user-logic-app-playbook-0e60fa8a.md) | 📦 [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [Confirm Microsoft Entra ID Risky User - Alert Triggered](microsoft-entra-id-protection-confirm-microsoft-entra-id-risky-user-alert-triggered-4ddeaeeb.md) | 📦 [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | [Confirm Microsoft Entra ID Risky User - Incident Triggered](microsoft-entra-id-protection-confirm-microsoft-entra-id-risky-user-incident-triggered-654122c8.md) | 📦 [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
-| [ConnectorHealthApp](standalone-content-connectorhealthapp-909539ac.md) | 🔗 GitHub Only |
+| [ConnectorHealthApp](github-only-connectorhealthapp-c0769e26.md) | 🔗 GitHub Only |
 | [Create an Attack Simulator training simulation for users who did not report a phishing attempt](microsoft-defender-xdr-create-an-attack-simulator-training-simulation-for-users-who-did-not-report-a-phishing-attempt-3caa7964.md) ⚠️ | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Create And Update Jira Issue](atlassianjiraaudit-create-and-update-jira-issue-81d1c927.md) | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Create And Update ServiceNow Record](servicenow-create-and-update-servicenow-record-eba2d6d2.md) | 📦 [Servicenow](../solutions/servicenow.md) |
@@ -327,7 +327,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Export IP Entity to TISC](servicenow-tisc-export-ip-entity-to-tisc-3b5af420.md) | 📦 [ServiceNow TISC](../solutions/servicenow-tisc.md) |
 | [Export URL Entity to TISC](servicenow-tisc-export-url-entity-to-tisc-b2fc0a62.md) | 📦 [ServiceNow TISC](../solutions/servicenow-tisc.md) |
 | [Export-Incidents-With-Comments-Report](standalone-content-export-incidents-with-comments-report-47e2acd9.md) | 📄 Standalone Content |
-| [Export-Report-CSV](standalone-content-export-report-csv-1facf85a.md) | 🔗 GitHub Only |
+| [Export-Report-CSV](github-only-export-report-csv-ec08489b.md) | 🔗 GitHub Only |
 
 ## F
 
@@ -348,9 +348,9 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Fortinet-FortiGate-IPEnrichment](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-ipenrichment-6c7428bc.md) | 📦 [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | [Fortinet-FortiGate-ResponseOnBlockIP](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-responseonblockip-4d2b4811.md) | 📦 [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | [Fortinet-FortiGate-ResponseOnBlockURL](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel-fortinet-fortigate-responseonblockurl-35d12496.md) | 📦 [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
-| [Fortinet_IncidentEnrichment](standalone-content-fortinet-incidentenrichment-a583453e.md) | 🔗 GitHub Only |
-| [Fortinet_ResponseOnIP](standalone-content-fortinet-responseonip-8173d596.md) | 🔗 GitHub Only |
-| [Fortinet_ResponseOnURL](standalone-content-fortinet-responseonurl-1261c38f.md) | 🔗 GitHub Only |
+| [Fortinet_IncidentEnrichment](github-only-fortinet-incidentenrichment-ca985f9f.md) | 🔗 GitHub Only |
+| [Fortinet_ResponseOnIP](github-only-fortinet-responseonip-67a4dec0.md) | 🔗 GitHub Only |
+| [Fortinet_ResponseOnURL](github-only-fortinet-responseonurl-e52c2a3b.md) | 🔗 GitHub Only |
 | [Four Playbook templates - F5BigIP](standalone-content-four-playbook-templates-f5bigip-225fa1ac.md) | 📄 Standalone Content |
 
 ## G
@@ -371,8 +371,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Get-AD4IoTDeviceCVEs - Alert](standalone-content-get-ad4iotdevicecves-alert-065964fb.md) | 📄 Standalone Content |
 | [Get-AD4IoTDeviceCVEs - Incident](iototthreatmonitoringwithdefenderforiot-get-ad4iotdevicecves-incident-60ab2386.md) ⚠️ | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Get-AD4IoTDeviceCVEs - Incident](standalone-content-get-ad4iotdevicecves-incident-10996598.md) | 📄 Standalone Content |
-| [Get-AlertEntitiesEnrichment](standalone-content-get-alertentitiesenrichment-88f93994.md) | 🔗 GitHub Only |
-| [Get-AlienVault_OTX_V2](standalone-content-get-alienvault-otx-v2-4ba65e8c.md) | 🔗 GitHub Only |
+| [Get-AlertEntitiesEnrichment](github-only-get-alertentitiesenrichment-6987da42.md) | 🔗 GitHub Only |
+| [Get-AlienVault_OTX_V2](github-only-get-alienvault-otx-v2-60cfd708.md) | 🔗 GitHub Only |
 | [Get-ASCRecommendations](standalone-content-get-ascrecommendations-2ad2e6b6.md) | 📄 Standalone Content |
 | [Get-ASCRecommendations](standalone-content-get-ascrecommendations-f4474cda.md) | 📄 Standalone Content |
 | [Get-GeoFromIpAndTagIncident](standalone-content-get-geofromipandtagincident-e5f2a00f.md) | 📄 Standalone Content |
@@ -384,10 +384,10 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Get-MDEStatistics](standalone-content-get-mdestatistics-1f9047e2.md) | 📄 Standalone Content |
 | [Get-MerakiData-configurationChanges](standalone-content-get-merakidata-configurationchanges-22d7749c.md) | 📄 Standalone Content |
 | [Get-MerakiData-OrgSecurityEvents](standalone-content-get-merakidata-orgsecurityevents-0138a550.md) | 📄 Standalone Content |
-| [Get-NamedLocations](standalone-content-get-namedlocations-f04238a2.md) | 🔗 GitHub Only |
+| [Get-NamedLocations](github-only-get-namedlocations-55f4a188.md) | 🔗 GitHub Only |
 | [Get-O365Data](standalone-content-get-o365data-4178da9b.md) | 📄 Standalone Content |
 | [Get-ProofpointTapEvents](proofpointtap-get-proofpointtapevents-ac19b8c3.md) | 📦 [ProofPointTap](../solutions/proofpointtap.md) |
-| [Get-SecureScore-Information](standalone-content-get-securescore-information-9404150f.md) | 🔗 GitHub Only |
+| [Get-SecureScore-Information](github-only-get-securescore-information-c908bf74.md) | 🔗 GitHub Only |
 | [Get-SentinelAlertsEvidence](standalone-content-get-sentinelalertsevidence-905ed402.md) | 📄 Standalone Content |
 | [Get-SOC-Actions](soc-process-framework-get-soc-actions-287c5e40.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |
 | [Get-SOCActions](standalone-content-get-socactions-1f82e832.md) | 📄 Standalone Content |
@@ -519,7 +519,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Infoblox-TIDE-Lookup-Comment-Enrichment](infoblox-infoblox-tide-lookup-comment-enrichment-2943be82.md) | 📦 [Infoblox](../solutions/infoblox.md) |
 | [Infoblox-TIDE-Lookup-Via-Incident](infoblox-infoblox-tide-lookup-via-incident-90b154ca.md) | 📦 [Infoblox](../solutions/infoblox.md) |
 | [Infoblox-TimeRangeBased-DHCP-Lookup](infoblox-infoblox-timerangebased-dhcp-lookup-7af6b4a9.md) | 📦 [Infoblox](../solutions/infoblox.md) |
-| [InfrequentCountryTriage](standalone-content-infrequentcountrytriage-3723ca0d.md) | 🔗 GitHub Only |
+| [InfrequentCountryTriage](github-only-infrequentcountrytriage-2941a459.md) | 🔗 GitHub Only |
 | [Ingest Microsoft Defender XDR insights into Dynatrace](dynatrace-ingest-microsoft-defender-xdr-insights-into-dynatrace-d6ce2895.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
 | [Ingest Microsoft Sentinel Security Alerts into Dynatrace](dynatrace-ingest-microsoft-sentinel-security-alerts-into-dynatrace-c03a9bfe.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
 | [Ingest-Prisma](standalone-content-ingest-prisma-05aee65e.md) | 📄 Standalone Content |
@@ -581,7 +581,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [MDTI-Data-WebComponents](microsoft-defender-threat-intelligence-mdti-data-webcomponents-c06d228e.md) | 📦 [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md) |
 | [MDTI-Intel-Reputation](microsoft-defender-threat-intelligence-mdti-intel-reputation-22eefb58.md) | 📦 [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md) |
 | [Mimecast-Data-Connector-Trigger-Sync](mimecast-mimecast-data-connector-trigger-sync-a2cac6ba.md) | 📦 [Mimecast](../solutions/mimecast.md) |
-| [Move-LogAnalytics-to-Storage](standalone-content-move-loganalytics-to-storage-0358d74b.md) | 🔗 GitHub Only |
+| [Move-LogAnalytics-to-Storage](github-only-move-loganalytics-to-storage-0edd3195.md) | 🔗 GitHub Only |
 | [MTI Threat Actor Lookup](standalone-content-mti-threat-actor-lookup-b10467aa.md) | 📄 Standalone Content |
 
 ## N
@@ -629,9 +629,9 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [PaloAlto-PAN-OS-GetURLCategoryInfo](standalone-content-paloalto-pan-os-geturlcategoryinfo-89cce459.md) | 📄 Standalone Content |
 | [PaloAltoXDR](palo-alto-xdr-cortex-paloaltoxdr-ca954375.md) ⚠️ | 📦 [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) |
 | [Password Breach Data - SpyCloud Enterprise](spycloud-enterprise-protection-password-breach-data-spycloud-enterprise-31619212.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
-| [PlaybookName](standalone-content-playbookname-fb3b20c6.md) | 🔗 GitHub Only |
-| [PlaybookName](standalone-content-playbookname-674ed1b0.md) | 🔗 GitHub Only |
-| [PlaybookName](standalone-content-playbookname-87518099.md) | 🔗 GitHub Only |
+| [PlaybookName](github-only-playbookname-02bb67cb.md) | 🔗 GitHub Only |
+| [PlaybookName](github-only-playbookname-be84dc69.md) | 🔗 GitHub Only |
+| [PlaybookName](github-only-playbookname-5513287e.md) | 🔗 GitHub Only |
 | [Post Message Slack](sentinelsoaressentials-post-message-slack-43984c2e.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Post Message Slack](sentinelsoaressentials-post-message-slack-561b5d3a.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [Post Message Slack Via Webhook](standalone-content-post-message-slack-via-webhook-e50cb593.md) | 📄 Standalone Content |
@@ -836,7 +836,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Sync Jira to Sentinel - Assigned User](atlassianjiraaudit-sync-jira-to-sentinel-assigned-user-dcc95a9e.md) | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Sync Jira to Sentinel - public comments](atlassianjiraaudit-sync-jira-to-sentinel-public-comments-69fdd661.md) | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Sync Jira to Sentinel - Status](atlassianjiraaudit-sync-jira-to-sentinel-status-d52a723f.md) | 📦 [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
-| [Sync-Comments-to-M365Defender](standalone-content-sync-comments-to-m365defender-85062353.md) | 🔗 GitHub Only |
+| [Sync-Comments-to-M365Defender](github-only-sync-comments-to-m365defender-c7768f3d.md) | 🔗 GitHub Only |
 
 ## T
 
@@ -863,7 +863,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [The Hive - Create case](thehive-the-hive-create-case-b237f99e.md) | 📦 [TheHive](../solutions/thehive.md) |
 | [The Hive - Lock user](thehive-the-hive-lock-user-7287740c.md) | 📦 [TheHive](../solutions/thehive.md) |
 | [Thinkst Canary Microsoft Sentinel Alert Integration](standalone-content-thinkst-canary-microsoft-sentinel-alert-integration-37f6f36b.md) | 📄 Standalone Content |
-| [TritonPlayook](standalone-content-tritonplayook-0a72d08c.md) | 🔗 GitHub Only |
+| [TritonPlayook](github-only-tritonplayook-82d64ec7.md) | 🔗 GitHub Only |
 
 ## U
 
@@ -875,7 +875,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Update Watchlist - CVE IPs by GreyNoise](standalone-content-update-watchlist-cve-ips-by-greynoise-e22088d6.md) | 📄 Standalone Content |
 | [Update-BulkIncidents](standalone-content-update-bulkincidents-63b9c3de.md) | 📄 Standalone Content |
 | [Update-VIPUsers-Watchlist-from-AzureAD-Group](standalone-content-update-vipusers-watchlist-from-azuread-group-e1b46577.md) | 📄 Standalone Content |
-| [Update-Watchlist-With-NamedLocations](standalone-content-update-watchlist-with-namedlocations-5bc8d042.md) | 🔗 GitHub Only |
+| [Update-Watchlist-With-NamedLocations](github-only-update-watchlist-with-namedlocations-b93db1a5.md) | 🔗 GitHub Only |
 | [URL Enrichment - Cisco Meraki](ciscomeraki-url-enrichment-cisco-meraki-b58e2089.md) | 📦 [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [URL Enrichment - Virus Total Domain Report - Alert Triggered](virustotal-url-enrichment-virus-total-domain-report-alert-triggered-9a5688ac.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
 | [URL Enrichment - Virus Total Domain Report - Incident Triggered](virustotal-url-enrichment-virus-total-domain-report-incident-triggered-54a7a026.md) | 📦 [VirusTotal](../solutions/virustotal.md) |
@@ -886,7 +886,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [URLhaus-CheckHostAndEnrichIncident](urlhaus-urlhaus-checkhostandenrichincident-20c27ae9.md) | 📦 [URLhaus](../solutions/urlhaus.md) |
 | [URLhaus-CheckURLAndEnrichIncident](urlhaus-urlhaus-checkurlandenrichincident-be303913.md) | 📦 [URLhaus](../solutions/urlhaus.md) |
 | [User enrichment - Okta](okta-single-sign-on-user-enrichment-okta-3d8dea7d.md) | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
-| [UserEnrichment.template](standalone-content-userenrichment.template-baf35362.md) | 🔗 GitHub Only |
+| [UserEnrichment.template](github-only-userenrichment.template-384b9ce8.md) | 🔗 GitHub Only |
 | [Username Breach Data - SpyCloud Enterprise](spycloud-enterprise-protection-username-breach-data-spycloud-enterprise-78b06e33.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 
 ## V

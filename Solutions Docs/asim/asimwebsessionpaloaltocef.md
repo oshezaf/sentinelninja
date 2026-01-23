@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Palo Alto PanOS threat event logs delivere
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "url"`<br>`DeviceProduct == "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
 
 ## Parameters
 

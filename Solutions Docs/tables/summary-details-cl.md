@@ -19,15 +19,18 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [CymruScoutSummary](../parsers/cymruscoutsummary.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CymruScoutSummary](../parsers/cymruscoutsummary.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) |  |
 
 ---
 

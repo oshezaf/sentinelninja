@@ -29,9 +29,9 @@ This ASIM parser supports normalizing F5 Big IP ASM(Application Security Manager
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "ASM"`<br>`DeviceVendor == "F5"` | ✓ | ✓ |
 
 ## Parameters
 

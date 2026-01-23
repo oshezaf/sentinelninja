@@ -23,7 +23,9 @@ Detected modification of bucket encryption. An attacker could modify encryption 
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "DeleteBucketEncryption,PutBucketEncryption"` | ✓ | ✓ |
 
 ---
 

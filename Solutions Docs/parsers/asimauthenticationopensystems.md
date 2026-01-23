@@ -25,7 +25,9 @@
 
 This parser reads from the following tables:
 
-- [OpenSystemsAuthenticationLogs_CL](../tables/opensystemsauthenticationlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) | — | — |
 
 ---
 

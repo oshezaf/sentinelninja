@@ -25,7 +25,9 @@ Triggers an incident for every Morphisec alert whose attacks severity is critica
 
 This content item queries data from the following tables:
 
-- [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | — | — |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Netskope Alerts and Events](../connectors/netskopealertsevents.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Netskope Alerts and Events](../connectors/netskopealertsevents.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [NetskopeEventsPage](../parsers/netskopeeventspage.md) | [Netskopev2](../solutions/netskopev2.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [NetskopeEventsPage](../parsers/netskopeeventspage.md) | [Netskopev2](../solutions/netskopev2.md) |  |
 
 ---
 

@@ -24,7 +24,9 @@
 
 This content item queries data from the following tables:
 
-- [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | — | — |
 
 ---
 

@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`BHEFindingTrendsData_CL`](../tables/bhefindingtrendsdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BHEFindingTrendsData_CL`](../tables/bhefindingtrendsdata-cl.md) | — | — |
 
 ---
 

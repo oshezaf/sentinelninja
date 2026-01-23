@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [BitsightDiligence_statistics_CL](../tables/bitsightdiligence-statistics-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | — | — |
 
 ---
 

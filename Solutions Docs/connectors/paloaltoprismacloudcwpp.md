@@ -22,8 +22,8 @@ The [Palo Alto Prisma Cloud CWPP](https://prisma.pan.dev/api/cloud/cwpp/audits/#
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`PrismaCloudCompute_CL`](../tables/prismacloudcompute-cl.md) | — | — |
 
 ## Permissions

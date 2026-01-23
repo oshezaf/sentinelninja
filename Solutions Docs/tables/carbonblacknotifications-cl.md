@@ -17,7 +17,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) |  |
 
 ---
 
@@ -26,12 +28,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md):**
-- [Critical Threat Detected](../content/vmware-carbon-black-cloud-critical-threat-detected-2ca4e7fc-c61a-49e5-9736-5da8035c47e0-a9660dac.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Critical Threat Detected](../content/vmware-carbon-black-cloud-critical-threat-detected-2ca4e7fc-c61a-49e5-9736-5da8035c47e0-a9660dac.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ---
 

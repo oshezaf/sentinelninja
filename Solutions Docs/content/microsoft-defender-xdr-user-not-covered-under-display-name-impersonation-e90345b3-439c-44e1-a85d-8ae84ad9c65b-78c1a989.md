@@ -22,7 +22,9 @@ This query helps to find threats using display name impersonation for users not 
 
 This content item queries data from the following tables:
 
-- [`IdentityInfo`](../tables/identityinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
 
 ---
 

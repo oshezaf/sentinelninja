@@ -23,7 +23,9 @@ BloodHound Attack Path Finding - Tier Zero SMSA Installed on Non-Tier Zero Compu
 
 This content item queries data from the following tables:
 
-- [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — |
 
 ---
 

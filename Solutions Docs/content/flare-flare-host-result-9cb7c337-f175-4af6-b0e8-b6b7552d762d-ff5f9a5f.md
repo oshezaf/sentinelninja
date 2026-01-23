@@ -25,7 +25,9 @@ Results found relating to IP, domain or host
 
 This content item queries data from the following tables:
 
-- [`Firework_CL`](../tables/firework-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Firework_CL`](../tables/firework-cl.md) | — | — |
 
 ---
 

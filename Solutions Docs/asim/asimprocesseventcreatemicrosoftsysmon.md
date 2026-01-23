@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Sysmon process create events (event 1) col
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Event](../tables/event.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ## Parameters
 

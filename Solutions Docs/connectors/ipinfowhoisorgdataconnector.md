@@ -24,8 +24,8 @@ This IPinfo data connector installs an Azure Function app to download WHOIS_ORG 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Ipinfo_WHOIS_ORG_CL`](../tables/ipinfo-whois-org-cl.md) | — | — |
 
 ## Permissions

@@ -20,7 +20,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)](../connectors/awscloudfrontccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)](../connectors/awscloudfrontccpdefinition.md) |  |
 
 ---
 

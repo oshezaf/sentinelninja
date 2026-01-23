@@ -22,7 +22,9 @@ This query searches for application not using a client certificate or secret is 
 
 This content item queries data from the following tables:
 
-- [`SenservaPro_CL`](../tables/senservapro-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
 
 ---
 

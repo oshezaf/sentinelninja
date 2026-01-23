@@ -21,7 +21,9 @@ Identifies if an AV scan finds infected files in Azure App Services.
 
 This content item queries data from the following tables:
 
-- [`AppServiceAntivirusScanAuditLogs`](../tables/appserviceantivirusscanauditlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AppServiceAntivirusScanAuditLogs`](../tables/appserviceantivirusscanauditlogs.md) | ✓ | ✗ |
 
 ---
 

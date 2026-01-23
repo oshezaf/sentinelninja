@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [vectra_ssl_CL](../tables/vectra-ssl-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vectra_ssl_CL`](../tables/vectra-ssl-cl.md) | — | — |
 
 ---
 

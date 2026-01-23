@@ -26,11 +26,13 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md)
-- [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md)
-- [Threat Intelligence Platforms](../connectors/threatintelligence.md)
-- [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md)
-- [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) |  |
+| [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) |  |
+| [Threat Intelligence Platforms](../connectors/threatintelligence.md) |  |
+| [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) |  |
+| [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) |  |
 
 ---
 

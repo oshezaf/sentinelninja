@@ -22,8 +22,8 @@ The [Auth0](https://auth0.com/docs/api/management/v2/logs/get-logs) data connect
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | — | — |
 
 ## Permissions

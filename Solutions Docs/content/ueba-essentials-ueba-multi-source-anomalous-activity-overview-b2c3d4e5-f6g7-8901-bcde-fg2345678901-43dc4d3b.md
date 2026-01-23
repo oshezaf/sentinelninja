@@ -22,7 +22,9 @@ Retrieves and displays anomalous activity detected across multiple identity and 
 
 This content item queries data from the following tables:
 
-- [`Anomalies`](../tables/anomalies.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
 
 ---
 

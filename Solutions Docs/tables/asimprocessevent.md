@@ -23,7 +23,10 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
-- [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) |  |
 
 ---
 

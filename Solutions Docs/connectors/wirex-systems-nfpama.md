@@ -16,8 +16,6 @@
 | **Publisher** | WireX_Systems |
 | **Used in Solutions** | [WireX Network Forensics Platform](../solutions/wirex-network-forensics-platform.md) |
 | **Collection Method** | AMA |
-| **Event Vendor** | WireX |
-| **Event Product** | WireX NFP |
 | **Connector Definition Files** | [template_WireXsystemsNFPAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform/Data%20Connectors/template_WireXsystemsNFPAMA.json) |
 
 The WireX Systems data connector allows security professional to integrate with Microsoft Sentinel to allow you to further enrich your forensics investigations; to not only encompass the contextual content offered by WireX but to analyze data from other sources, and to create custom dashboards to give the most complete picture during a forensic investigation and to create custom workflows.
@@ -26,9 +24,9 @@ The WireX Systems data connector allows security professional to integrate with 
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | WireX | WireX NFP | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "WireX NFP"`<br>`DeviceVendor == "WireX"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

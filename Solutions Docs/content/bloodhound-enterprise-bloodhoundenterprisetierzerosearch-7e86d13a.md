@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`BHETierZeroAssetsData_CL`](../tables/bhetierzeroassetsdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BHETierZeroAssetsData_CL`](../tables/bhetierzeroassetsdata-cl.md) | — | — |
 
 ---
 

@@ -22,9 +22,11 @@ This query uses XDR data from M365 Defender to detect files downloaded from a Da
 
 This content item queries data from the following tables:
 
-- [`DataverseActivity`](../tables/dataverseactivity.md)
-- [`DeviceEvents`](../tables/deviceevents.md)
-- [`DeviceInfo`](../tables/deviceinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
 
 ---
 

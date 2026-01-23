@@ -22,9 +22,11 @@ An account could be blocked if there are too many failed authentication attempts
 
 This content item queries data from the following tables:
 
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

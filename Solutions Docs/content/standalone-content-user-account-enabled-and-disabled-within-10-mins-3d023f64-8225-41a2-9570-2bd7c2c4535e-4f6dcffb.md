@@ -24,8 +24,10 @@ Identifies when a user account is enabled and then disabled within 10 minutes. T
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4722,4725"` | ✓ | ✓ |
 
 ---
 

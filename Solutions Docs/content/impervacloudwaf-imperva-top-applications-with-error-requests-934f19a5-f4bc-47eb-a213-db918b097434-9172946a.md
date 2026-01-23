@@ -23,7 +23,9 @@ Query searches for top applications with protocol or network errors.
 
 This content item queries data from the following tables:
 
-- [`ImpervaWAFCloud`](../tables/impervawafcloud.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | — | — |
 
 ---
 

@@ -22,8 +22,8 @@ The Crowdstrike Falcon Data Replicator (S3) connector provides the capability to
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | — | — |
 | [`CrowdStrike_Audit_Events_CL`](../tables/crowdstrike-audit-events-cl.md) | — | — |
 | [`CrowdStrike_Auth_Events_CL`](../tables/crowdstrike-auth-events-cl.md) | — | — |

@@ -16,9 +16,11 @@ The playbooks automate the SOC workflow by automatically emailing the incident d
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`SecurityAlert`](../tables/securityalert.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ## Additional Documentation
 

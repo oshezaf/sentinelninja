@@ -22,8 +22,8 @@ The Wiz connector allows you to easily send Wiz Issues, Vulnerability Findings, 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) | — | — |
 | [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) | — | — |
 | [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) | — | — |

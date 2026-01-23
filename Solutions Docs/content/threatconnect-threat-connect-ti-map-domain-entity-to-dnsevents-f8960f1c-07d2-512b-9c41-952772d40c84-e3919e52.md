@@ -24,8 +24,10 @@ Identifies a match in DnsEvents from any ThreatConnect Domain IOC from TI
 
 This content item queries data from the following tables:
 
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

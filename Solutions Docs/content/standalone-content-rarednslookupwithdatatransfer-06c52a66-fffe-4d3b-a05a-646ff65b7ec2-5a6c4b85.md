@@ -16,16 +16,17 @@ This query helps identify rare DNS connections and resulting data transfer to/fr
 | **Tactics** | CommandAndControl, Exfiltration |
 | **Techniques** | T1071, T1048 |
 | **Required Connectors** | [DNS](../connectors/dns.md), [PaloAltoNetworks](../connectors/paloaltonetworks.md), [AzureMonitor(WireData)](../connectors/azuremonitor-wiredata.md), [AzureMonitor(VMInsights)](../connectors/azuremonitor-vminsights.md) |
-| **Event Vendor** | Palo Alto Networks |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/MultipleDataSources/RareDNSLookupWithDataTransfer.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`VMConnection`](../tables/vmconnection.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
+| [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ |
+| [`VMConnection`](../tables/vmconnection.md) |  | ✗ | ✗ |
 
 ---
 

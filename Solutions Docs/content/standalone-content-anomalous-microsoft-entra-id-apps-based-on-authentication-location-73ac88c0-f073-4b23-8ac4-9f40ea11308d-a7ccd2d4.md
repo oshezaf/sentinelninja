@@ -22,7 +22,9 @@ This query over Microsoft Entra ID sign-in activity highlights Microsoft Entra I
 
 This content item queries data from the following tables:
 
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [MongoDBAudit_CL](../tables/mongodbaudit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | — | — |
 
 ---
 

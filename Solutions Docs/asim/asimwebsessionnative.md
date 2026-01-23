@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Microsoft Sentinel Web Session 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimWebSessionLogs](../tables/asimwebsessionlogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | ✓ | ✓ |
 
 ## Parameters
 

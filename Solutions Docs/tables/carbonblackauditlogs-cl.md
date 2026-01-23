@@ -17,7 +17,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) |  |
 
 ---
 
@@ -26,16 +28,19 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (2)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimAuditEventVMwareCarbonBlackCloud](../asim/asimauditeventvmwarecarbonblackcloud.md) | AuditEvent |  |
-| [ASimAuthenticationVMwareCarbonBlackCloud](../asim/asimauthenticationvmwarecarbonblackcloud.md) | Authentication |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventVMwareCarbonBlackCloud](../asim/asimauditeventvmwarecarbonblackcloud.md) | AuditEvent | VMware Carbon Black Cloud |  |
+| [ASimAuthenticationVMwareCarbonBlackCloud](../asim/asimauthenticationvmwarecarbonblackcloud.md) | Authentication | VMware Carbon Black Cloud |  |
 
 ---
 

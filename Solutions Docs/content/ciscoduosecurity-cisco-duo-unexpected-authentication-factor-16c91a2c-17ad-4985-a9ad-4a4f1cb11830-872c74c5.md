@@ -25,7 +25,9 @@ Detects when unexpected authentication factor used.
 
 This content item queries data from the following tables:
 
-- [`CiscoDuo_CL`](../tables/ciscoduo-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) | — | — |
 
 ---
 

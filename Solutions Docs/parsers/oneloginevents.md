@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [oneLogin_CL](../tables/onelogin-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`oneLogin_CL`](../tables/onelogin-cl.md) | — | — |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) |  |
 
 ---
 
@@ -25,8 +27,11 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [MimecastSEG](../solutions/mimecastseg.md):**
-- [Mimecast Data Leak Prevention - Hold](../content/mimecastseg-mimecast-data-leak-prevention-hold-3e12b7b1-75e5-497c-ba01-b6cb30b60d7f-ff090522.md)
-- [Mimecast Data Leak Prevention - Notifications](../content/mimecastseg-mimecast-data-leak-prevention-notifications-1818aeaa-4cc8-426b-ba54-539de896d299-b39fc5bc.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast Data Leak Prevention - Hold](../content/mimecastseg-mimecast-data-leak-prevention-hold-3e12b7b1-75e5-497c-ba01-b6cb30b60d7f-ff090522.md) |  |
+| [Mimecast Data Leak Prevention - Notifications](../content/mimecastseg-mimecast-data-leak-prevention-notifications-1818aeaa-4cc8-426b-ba54-539de896d299-b39fc5bc.md) |  |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Armis Devices](../connectors/armisdevices.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Armis Devices](../connectors/armisdevices.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ArmisDevice](../parsers/armisdevice.md) | [Armis](../solutions/armis.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ArmisDevice](../parsers/armisdevice.md) | [Armis](../solutions/armis.md) |  |
 
 ---
 

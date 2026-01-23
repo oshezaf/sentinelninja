@@ -23,7 +23,9 @@ Query shows rare user agents
 
 This content item queries data from the following tables:
 
-- [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | — | — |
 
 ---
 

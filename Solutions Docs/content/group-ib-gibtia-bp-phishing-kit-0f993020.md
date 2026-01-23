@@ -18,10 +18,12 @@ Author: Hesham Saad
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`GIBTIABPPhishingKit_CL`](../tables/gibtiabpphishingkit-cl.md) | write |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | read/write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GIBTIABPPhishingKit_CL`](../tables/gibtiabpphishingkit-cl.md) | — | — |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — |
 
 ## Additional Documentation
 

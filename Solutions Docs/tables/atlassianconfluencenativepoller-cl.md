@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Atlassian Confluence](../connectors/atlassianconfluence.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Atlassian Confluence](../connectors/atlassianconfluence.md) |  |
 
 ---
 

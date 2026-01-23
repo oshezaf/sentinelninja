@@ -22,11 +22,11 @@ Azure Kubernetes Service (AKS) is an open-source, fully-managed container orches
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
-| [`ContainerInventory`](../tables/containerinventory.md) | ✓ | ✗ |
-| [`KubeEvents`](../tables/kubeevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | — | ✗ |
+| [`ContainerInventory`](../tables/containerinventory.md) |  | ✓ | ✗ |
+| [`KubeEvents`](../tables/kubeevents.md) |  | ✓ | ✗ |
 
 ## Permissions
 

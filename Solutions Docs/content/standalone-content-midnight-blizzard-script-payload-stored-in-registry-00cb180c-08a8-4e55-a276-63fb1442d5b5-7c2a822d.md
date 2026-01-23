@@ -24,8 +24,10 @@ This query identifies when a process execution command-line indicates that a reg
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
 
 ---
 

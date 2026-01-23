@@ -25,7 +25,9 @@ The rule detects empty groups with entitlements.
 
 This content item queries data from the following tables:
 
-- [`Authomize_v2_CL`](../tables/authomize-v2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — |
 
 ---
 

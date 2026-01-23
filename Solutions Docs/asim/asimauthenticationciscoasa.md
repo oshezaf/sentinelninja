@@ -29,10 +29,10 @@ This ASIM parser supports normalizing authentication events, collected from Cisc
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Alert](../tables/alert.md) |
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Alert`](../tables/alert.md) |  | ✓ | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "ASA"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ |
 
 ## Parameters
 

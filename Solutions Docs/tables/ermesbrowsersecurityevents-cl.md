@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Ermes Browser Security Events](../connectors/ermesbrowsersecurityevents.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Ermes Browser Security Events](../connectors/ermesbrowsersecurityevents.md) |  |
 
 ---
 

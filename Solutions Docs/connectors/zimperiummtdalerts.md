@@ -24,8 +24,8 @@ Zimperium Mobile Threat Defense connector gives you the ability to connect the Z
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ZimperiumMitigationLog_CL`](../tables/zimperiummitigationlog-cl.md) | — | — |
 | [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) | — | — |
 

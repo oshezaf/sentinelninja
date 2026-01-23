@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Azure Queue Storage events, stored in the 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [StorageQueueLogs](../tables/storagequeuelogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`StorageQueueLogs`](../tables/storagequeuelogs.md) | ✓ | ✗ |
 
 ## Parameters
 

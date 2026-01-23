@@ -38,7 +38,7 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | [SAP BTP](../connectors/sapbtpauditevents.md) | Analytics, Workbooks |
-| [`UPDATE`](../tables/update.md) | - | Workbooks |
+| [`Update`](../tables/update.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -81,7 +81,7 @@ This solution includes **16 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) | [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)<br>[`UPDATE`](../tables/update.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
+| [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) | [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)<br>[`Update`](../tables/update.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 
 ## Release Notes
 

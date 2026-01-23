@@ -25,7 +25,9 @@ This creates an incident in the event a client generates excessive amounts of DN
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | ✓ | ✓ |
 
 ---
 

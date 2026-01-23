@@ -24,8 +24,10 @@ Azure DevOps allow for audit logs to be streamed to external storage solutions s
 
 This content item queries data from the following tables:
 
-- [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md)
-- [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | — |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ |
 
 ---
 

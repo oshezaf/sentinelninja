@@ -23,7 +23,9 @@ This query identifies when a new trust monitor event is detected.
 
 This content item queries data from the following tables:
 
-- [`DuoSecurityTrustMonitor_CL`](../tables/duosecuritytrustmonitor-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DuoSecurityTrustMonitor_CL`](../tables/duosecuritytrustmonitor-cl.md) | — | — |
 
 ---
 

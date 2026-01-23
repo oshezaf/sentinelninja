@@ -25,7 +25,9 @@ Rule helps to detect if headline ratings is drop in BitSight.
 
 This content item queries data from the following tables:
 
-- [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | — | — |
 
 ---
 

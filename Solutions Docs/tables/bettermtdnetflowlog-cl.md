@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) |  |
 
 ---
 
@@ -24,11 +26,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [BETTER_MTD_Workbook](../content/-better-mtd-workbook-916b03c9.md)
-
 **In solution [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md):**
-- [BETTER_MTD_Workbook](../content/better-mobile-threat-defense-mtd-better-mtd-workbook-e3655f79.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BETTER_MTD_Workbook](../content/better-mobile-threat-defense-mtd-better-mtd-workbook-e3655f79.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BETTER_MTD_Workbook](../content/github-only-better-mtd-workbook-59bbe47f.md) |  |
 
 ---
 

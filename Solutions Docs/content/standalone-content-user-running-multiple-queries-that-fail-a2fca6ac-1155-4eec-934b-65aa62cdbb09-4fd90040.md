@@ -22,7 +22,9 @@ This hunting query looks for users who have multiple failed queries in a short s
 
 This content item queries data from the following tables:
 
-- [`LAQueryLogs`](../tables/laquerylogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LAQueryLogs`](../tables/laquerylogs.md) | ✓ | ✗ |
 
 ---
 

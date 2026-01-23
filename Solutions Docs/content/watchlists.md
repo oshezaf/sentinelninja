@@ -19,7 +19,7 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 | Name | Source |
 |:-----|:-------|
 | [action_results_lookup](veeam-action-results-lookup-9b42431b.md) | 📦 [Veeam](../solutions/veeam.md) |
-| [Azure-Public-IPs](standalone-content-azure-public-ips-49e55cf8.md) | 🔗 GitHub Only |
+| [Azure-Public-IPs](github-only-azure-public-ips-f7e1960c.md) | 🔗 GitHub Only |
 
 ## C
 
@@ -41,7 +41,7 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 | [DataminrPulseVulnerableHash](dataminr-pulse-dataminrpulsevulnerablehash-f2bf24a5.md) | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | [DataminrPulseVulnerableIp](dataminr-pulse-dataminrpulsevulnerableip-f24f35ab.md) | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | [DataminrPulseVulnerableMalware](dataminr-pulse-dataminrpulsevulnerablemalware-b2527efd.md) | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) |
-| [DeploymentandMigration](standalone-content-deploymentandmigration-d223e4ac.md) | 🔗 GitHub Only |
+| [DeploymentandMigration](github-only-deploymentandmigration-ca30f51c.md) | 🔗 GitHub Only |
 
 ## E
 
@@ -69,7 +69,7 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 |:-----|:-------|
 | [license_editions_lookup](veeam-license-editions-lookup-f1833a0f.md) | 📦 [Veeam](../solutions/veeam.md) |
 | [license_types_lookup](veeam-license-types-lookup-d29c9f25.md) | 📦 [Veeam](../solutions/veeam.md) |
-| [ListofTCPUDPPorts](standalone-content-listoftcpudpports-5f08fa8b.md) | 🔗 GitHub Only |
+| [ListofTCPUDPPorts](github-only-listoftcpudpports-b5f04ea7.md) | 🔗 GitHub Only |
 
 ## M
 
@@ -82,7 +82,7 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 | Name | Source |
 |:-----|:-------|
 | [NetworkSession_Monitor_Configuration](network-session-essentials-networksession-monitor-configuration-8ce4fe6e.md) | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
-| [NOBELIUM-TI](standalone-content-nobelium-ti-3a2f8eec.md) | 🔗 GitHub Only |
+| [NOBELIUM-TI](github-only-nobelium-ti-ba4ddd90.md) | 🔗 GitHub Only |
 
 ## O
 
@@ -125,8 +125,8 @@ Watchlists are reference data tables that you can import into Microsoft Sentinel
 
 | Name | Source |
 |:-----|:-------|
-| [Update-RiskyUserWatchlist](standalone-content-update-riskyuserwatchlist-630fd31c.md) | 🔗 GitHub Only |
-| [UpdateCloudIPs](standalone-content-updatecloudips-8872e143.md) | 🔗 GitHub Only |
+| [Update-RiskyUserWatchlist](github-only-update-riskyuserwatchlist-dea63e8d.md) | 🔗 GitHub Only |
+| [UpdateCloudIPs](github-only-updatecloudips-09fccbc1.md) | 🔗 GitHub Only |
 
 ## V
 

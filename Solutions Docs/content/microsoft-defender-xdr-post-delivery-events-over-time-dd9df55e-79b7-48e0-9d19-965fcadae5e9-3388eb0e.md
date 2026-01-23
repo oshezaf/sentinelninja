@@ -24,7 +24,9 @@ This query visualises the daily amount of emails that had a post delivery action
 
 This content item queries data from the following tables:
 
-- [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | ✓ | ✗ |
 
 ---
 

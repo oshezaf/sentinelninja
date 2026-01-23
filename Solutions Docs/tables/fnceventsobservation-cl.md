@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md):**
-- [FortinetFortiNdrCloudWorkbook](../content/fortinet-fortindr-cloud-fortinetfortindrcloudworkbook-9c938d85.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [FortinetFortiNdrCloudWorkbook](../content/fortinet-fortindr-cloud-fortinetfortindrcloudworkbook-9c938d85.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [Fortinet_FortiNDR_Cloud](../parsers/fortinet-fortindr-cloud.md) | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [Fortinet_FortiNDR_Cloud](../parsers/fortinet-fortindr-cloud.md) | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |  |
 
 ---
 

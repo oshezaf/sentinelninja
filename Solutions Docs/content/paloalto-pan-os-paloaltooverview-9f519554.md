@@ -10,14 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
-| **Event Vendor** | Palo Alto Networks |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Workbooks/PaloAltoOverview.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "end,file,url,wildfire"`<br>`DeviceProduct has "LF"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
 
 ---
 

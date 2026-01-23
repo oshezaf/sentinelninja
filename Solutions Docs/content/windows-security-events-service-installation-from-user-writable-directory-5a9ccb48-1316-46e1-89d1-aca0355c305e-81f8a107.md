@@ -22,7 +22,9 @@ This query detects a service installation that is originated from a user writabl
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID == "7045"`<br>`Source == "Service Control Manager"` | ✓ | ✗ |
 
 ---
 

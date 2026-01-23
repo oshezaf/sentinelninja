@@ -22,8 +22,8 @@ The [CyberArk Audit](https://docs.cyberark.com/Audit/Latest/en/Content/Resources
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | — | — |
 
 ## Permissions

@@ -18,10 +18,12 @@ Author: Hesham Saad
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`GIBTIAAttacksDDoS_CL`](../tables/gibtiaattacksddos-cl.md) | write |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | read/write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GIBTIAAttacksDDoS_CL`](../tables/gibtiaattacksddos-cl.md) | — | — |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — |
 
 ## Additional Documentation
 

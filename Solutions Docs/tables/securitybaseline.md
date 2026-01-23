@@ -33,28 +33,49 @@ This table is used by the following solutions:
 
 ### Workbooks (9)
 
-**In solution [](../solutions/.md):**
-- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
-- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
-
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
-- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
-- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
-- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
-- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
-- [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md) |  |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
-- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Resource Types
 

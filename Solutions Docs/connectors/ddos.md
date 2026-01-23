@@ -22,9 +22,9 @@ Connect to Azure DDoS Protection Standard logs via Public IP Address Diagnostic 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | — | ✗ |
 
 ## Permissions
 

@@ -25,7 +25,9 @@
 
 This parser reads from the following tables:
 
-- [AIX_Audit_CL](../tables/aix-audit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AIX_Audit_CL`](../tables/aix-audit-cl.md) | — | — |
 
 ---
 

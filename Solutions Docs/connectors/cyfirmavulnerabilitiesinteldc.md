@@ -22,8 +22,8 @@ The CYFIRMA Vulnerabilities Intelligence data connector enables seamless log ing
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CyfirmaVulnerabilities_CL`](../tables/cyfirmavulnerabilities-cl.md) | — | — |
 
 ## Permissions

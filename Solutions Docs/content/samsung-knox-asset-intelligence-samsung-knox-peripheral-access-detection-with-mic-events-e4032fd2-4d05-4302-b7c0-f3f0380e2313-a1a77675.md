@@ -23,7 +23,9 @@ When microphone access has been detected on a Knox device, even though such acce
 
 This content item queries data from the following tables:
 
-- [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) | — | — |
 
 ---
 

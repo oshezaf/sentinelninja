@@ -30,8 +30,8 @@ The Google Cloud Platform Cloud Monitoring data connector provides the capabilit
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) | — | — |
 
 ## Permissions

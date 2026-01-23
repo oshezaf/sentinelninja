@@ -24,7 +24,9 @@ This alert creates an incident when an malware record is detected in the SpyClou
 
 This content item queries data from the following tables:
 
-- [`SpyCloudBreachDataWatchlist_CL`](../tables/spycloudbreachdatawatchlist-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SpyCloudBreachDataWatchlist_CL`](../tables/spycloudbreachdatawatchlist-cl.md) | — | — |
 
 ---
 

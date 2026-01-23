@@ -25,7 +25,9 @@ Identifies CRUD operations on Application (SSO Domain/Service Provider) configur
 
 This content item queries data from the following tables:
 
-- [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | — |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Sysmon for Windows DNS logs (event number 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Event](../tables/event.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID == "22"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ## Parameters
 

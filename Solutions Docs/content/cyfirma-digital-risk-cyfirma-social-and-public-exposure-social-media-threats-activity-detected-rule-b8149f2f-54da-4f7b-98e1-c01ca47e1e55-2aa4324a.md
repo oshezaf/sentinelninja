@@ -25,7 +25,9 @@ This rule detects medium-severity social threat alerts from CYFIRMA related to i
 
 This content item queries data from the following tables:
 
-- [`CyfirmaSPESocialThreatAlerts_CL`](../tables/cyfirmaspesocialthreatalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaSPESocialThreatAlerts_CL`](../tables/cyfirmaspesocialthreatalerts-cl.md) | — | — |
 
 ---
 

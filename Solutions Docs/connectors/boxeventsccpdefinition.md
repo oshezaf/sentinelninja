@@ -22,8 +22,8 @@ The Box data connector provides the capability to ingest [Box enterprise's event
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | — | — |
 | [`BoxEvents_CL`](../tables/boxevents-cl.md) | — | — |
 

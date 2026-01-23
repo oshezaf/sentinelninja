@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Druva Events Connector](../connectors/druvaeventccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Druva Events Connector](../connectors/druvaeventccpdefinition.md) |  |
 
 ---
 

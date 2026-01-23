@@ -25,8 +25,10 @@ The following query tries to detect creation of a new user using a known DEV-027
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
 
 ---
 

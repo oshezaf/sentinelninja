@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Communication_Data_CL](../tables/communication-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Communication_Data_CL`](../tables/communication-data-cl.md) | — | — |
 
 ---
 

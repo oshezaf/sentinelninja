@@ -24,7 +24,9 @@ This query looking for top 10 External senders sending Team phishing messsages.
 
 This content item queries data from the following tables:
 
-- [`MessageEvents`](../tables/messageevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessageEvents`](../tables/messageevents.md) | — | ✗ |
 
 ---
 

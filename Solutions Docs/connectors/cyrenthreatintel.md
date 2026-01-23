@@ -24,8 +24,8 @@ Ingest IP reputation and malware URL indicators from Cyren using the Common Conn
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | — | — |
 
 ## Permissions

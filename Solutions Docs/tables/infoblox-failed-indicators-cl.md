@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) |  |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Jamf Protect Push Connector](../connectors/jamfprotectpush.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Jamf Protect](../solutions/jamf-protect.md):**
-- [JamfProtectDashboard](../content/jamf-protect-jamfprotectdashboard-b0beeadb.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [JamfProtectDashboard](../content/jamf-protect-jamfprotectdashboard-b0beeadb.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [JamfProtectTelemetry](../parsers/jamfprotecttelemetry.md) | [Jamf Protect](../solutions/jamf-protect.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [JamfProtectTelemetry](../parsers/jamfprotecttelemetry.md) | [Jamf Protect](../solutions/jamf-protect.md) |  |
 
 ---
 

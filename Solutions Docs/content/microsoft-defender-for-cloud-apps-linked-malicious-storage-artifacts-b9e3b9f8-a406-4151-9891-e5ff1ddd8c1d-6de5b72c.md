@@ -25,9 +25,11 @@ This query identifies the additional files uploaded by the same IP address which
 
 This content item queries data from the following tables:
 
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`StorageBlobLogs`](../tables/storagebloblogs.md)
-- [`StorageFileLogs`](../tables/storagefilelogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`StorageBlobLogs`](../tables/storagebloblogs.md) | ✓ | ✗ |
+| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ |
 
 ---
 

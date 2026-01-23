@@ -22,27 +22,29 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)
-- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
-- [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
-- [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`AzureActivity`](../tables/azureactivity.md)
-- [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`Event`](../tables/event.md)
-- [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
-- [`ProtectionStatus`](../tables/protectionstatus.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityBaseline`](../tables/securitybaseline.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SecurityIncident`](../tables/securityincident.md)
-- [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md)
-- [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ |
+| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |  | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceType == "AZUREFIREWALLS"` | — | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
+| [`Event`](../tables/event.md) |  | ✓ | ✗ |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | — | — |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | — | — |
+| [`ProtectionStatus`](../tables/protectionstatus.md) |  | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
+| [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "2889,3000,4624,4768,4769,4776"` | ✓ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
+| [`SecurityNestedRecommendation`](../tables/securitynestedrecommendation.md) |  | ✓ | ✗ |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
 
 ---
 

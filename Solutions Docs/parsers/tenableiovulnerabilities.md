@@ -25,7 +25,9 @@
 
 This parser reads from the following tables:
 
-- [Tenable_IO_Vuln_CL](../tables/tenable-io-vuln-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) | — | — |
 
 ---
 

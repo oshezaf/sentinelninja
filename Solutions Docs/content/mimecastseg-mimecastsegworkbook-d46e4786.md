@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) | — | — |
 
 ---
 

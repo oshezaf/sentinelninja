@@ -27,8 +27,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Azure Storage Account](../connectors/azurestorageaccount.md)
-- [SlashNext Function App](../connectors/slashnextfunctionapp.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Azure Storage Account](../connectors/azurestorageaccount.md) |  |
+| [SlashNext Function App](../connectors/slashnextfunctionapp.md) |  |
 
 ---
 

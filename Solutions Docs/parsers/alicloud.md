@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [AliCloud_CL](../tables/alicloud-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AliCloud_CL`](../tables/alicloud-cl.md) | — | — |
 
 ---
 

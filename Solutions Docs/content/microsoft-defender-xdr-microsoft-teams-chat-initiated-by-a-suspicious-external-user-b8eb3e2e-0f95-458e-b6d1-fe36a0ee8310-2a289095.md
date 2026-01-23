@@ -24,7 +24,9 @@ Use AlertInfo and AlertEvidence to collect general information and clickable lin
 
 This content item queries data from the following tables:
 
-- [`AlertInfo`](../tables/alertinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
 
 ---
 

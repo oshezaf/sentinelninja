@@ -25,7 +25,9 @@ This rule will check if there is an unnormal activity of sites that are deleted 
 
 This content item queries data from the following tables:
 
-- [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | — |
 
 ---
 

@@ -16,8 +16,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md)
-- [Imperva Cloud WAF](../connectors/impervawafcloudapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) |  |
+| [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) |  |
 
 ---
 
@@ -25,9 +27,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ImpervaWAFCloud](../parsers/impervawafcloud.md) | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ImpervaWAFCloud](../parsers/impervawafcloud.md) | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |  |
 
 ---
 

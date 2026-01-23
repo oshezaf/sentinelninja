@@ -16,19 +16,21 @@
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`DeviceInfo`](../tables/deviceinfo.md)
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`Heartbeat`](../tables/heartbeat.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SecurityIncident`](../tables/securityincident.md)
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`Syslog`](../tables/syslog.md)
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
-- [`watchlist`](../tables/watchlist.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallNetworkRule"`<br>`Category == "SQLSecurityAuditEvents"` | — | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
+| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
+| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625"` | ✓ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ |
+| [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ |
 
 ---
 

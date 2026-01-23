@@ -23,7 +23,9 @@ This alert creates an incident when Malicious URL Policy Violation detected from
 
 This content item queries data from the following tables:
 
-- [`Guardian_CL`](../tables/guardian-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Guardian_CL`](../tables/guardian-cl.md) | — | — |
 
 ---
 

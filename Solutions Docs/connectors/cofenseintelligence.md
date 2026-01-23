@@ -62,8 +62,8 @@ The [Cofense-Intelligence](https://cofense.com/product-services/phishing-intelli
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Malware_Data_CL`](../tables/malware-data-cl.md) | — | — |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 

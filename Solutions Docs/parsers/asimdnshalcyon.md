@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [HalcyonDnsActivity_CL](../tables/halcyondnsactivity-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | — | — |
 
 ---
 

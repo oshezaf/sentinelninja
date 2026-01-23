@@ -23,7 +23,9 @@
 
 This content item queries data from the following tables:
 
-- [`http_proxy_oab_CL`](../tables/http-proxy-oab-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`http_proxy_oab_CL`](../tables/http-proxy-oab-cl.md) | — | — |
 
 ---
 

@@ -22,7 +22,9 @@ Identifies WerFault.exe creating a memory dump of lsass.exe (Local Security Auth
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
 
 ---
 

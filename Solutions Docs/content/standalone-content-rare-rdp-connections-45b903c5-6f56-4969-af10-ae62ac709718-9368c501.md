@@ -24,8 +24,10 @@ Identifies when an RDP connection is new or rare related to any logon type by a 
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
 
 ---
 

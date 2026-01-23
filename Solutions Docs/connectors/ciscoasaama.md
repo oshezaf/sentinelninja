@@ -14,7 +14,6 @@
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [CiscoASA](../solutions/ciscoasa.md) |
 | **Collection Method** | AMA |
-| **Event Vendor** | Cisco |
 | **Connector Definition Files** | [template_CiscoAsaAma.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Data%20Connectors/template_CiscoAsaAma.JSON) |
 
 ## Additional Information
@@ -27,10 +26,10 @@ The Cisco ASA firewall connector allows you to easily connect your Cisco ASA log
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Cisco | — | ✓ | ✓ |
-| [`Heartbeat`](../tables/heartbeat.md) | — | — | ✗ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "ASA,FTD"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ |
+| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

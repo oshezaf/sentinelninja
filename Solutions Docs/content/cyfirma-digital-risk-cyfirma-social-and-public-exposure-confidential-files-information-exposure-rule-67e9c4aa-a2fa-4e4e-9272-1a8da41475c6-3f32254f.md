@@ -25,7 +25,9 @@ This rule detects high-severity alerts from CYFIRMA regarding exposure of confid
 
 This content item queries data from the following tables:
 
-- [`CyfirmaSPEConfidentialFilesAlerts_CL`](../tables/cyfirmaspeconfidentialfilesalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaSPEConfidentialFilesAlerts_CL`](../tables/cyfirmaspeconfidentialfilesalerts-cl.md) | — | — |
 
 ---
 

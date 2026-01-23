@@ -22,7 +22,9 @@ Identifies when the system time was changed on a Windows host which can indicate
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4616"` | ✓ | ✓ |
 
 ---
 

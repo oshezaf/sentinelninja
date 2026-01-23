@@ -17,14 +17,15 @@ Suspicious login from an IP address observed up to two times in the last two wee
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1078 |
-| **Event Vendor** | Acronis audit |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Analytic%20Rules/AcronisLoginFromAbnormalIPLowOccurrence.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Acronis audit"` | ✓ | ✓ |
 
 ---
 

@@ -22,7 +22,9 @@ Identifies anomalous IAM-related activities in Google Cloud Platform (GCP) Audit
 
 This content item queries data from the following tables:
 
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
 
 ---
 

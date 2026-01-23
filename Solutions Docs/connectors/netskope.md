@@ -22,8 +22,8 @@ The [Netskope Cloud Security Platform](https://www.netskope.com/platform) connec
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Netskope_CL`](../tables/netskope-cl.md) | — | — |
 
 ## Permissions

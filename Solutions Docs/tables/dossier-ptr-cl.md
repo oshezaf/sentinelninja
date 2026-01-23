@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Infoblox](../solutions/infoblox.md):**
-- [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook-5d6a67bf.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Infoblox_Lookup_Workbook](../content/infoblox-infoblox-lookup-workbook-5d6a67bf.md) |  |
 
 ---
 

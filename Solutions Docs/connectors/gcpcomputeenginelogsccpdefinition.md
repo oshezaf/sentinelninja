@@ -22,8 +22,8 @@ The Google Cloud Platform Compute Engine data connector provides the capability 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GCPComputeEngine`](../tables/gcpcomputeengine.md) | ✓ | ✗ |
 
 ## Permissions

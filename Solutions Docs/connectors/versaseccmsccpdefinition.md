@@ -24,8 +24,8 @@ The VersasecCms data connector allows ingesting logs into Microsoft Sentinel.
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`VersasecCmsErrorLogs_CL`](../tables/versaseccmserrorlogs-cl.md) | — | — |
 | [`VersasecCmsSysLogs_CL`](../tables/versaseccmssyslogs-cl.md) | — | — |
 

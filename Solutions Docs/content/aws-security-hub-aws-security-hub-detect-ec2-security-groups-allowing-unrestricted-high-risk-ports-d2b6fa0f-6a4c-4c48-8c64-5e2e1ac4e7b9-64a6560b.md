@@ -25,7 +25,9 @@ This query detects EC2 Security Groups that allow unrestricted (0.0.0.0/0 or ::/
 
 This content item queries data from the following tables:
 
-- [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ |
 
 ---
 

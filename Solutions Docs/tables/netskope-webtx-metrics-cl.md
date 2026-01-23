@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Netskope Data Connector](../connectors/netskopedataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Netskope Data Connector](../connectors/netskopedataconnector.md) |  |
 
 ---
 

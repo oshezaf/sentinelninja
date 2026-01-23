@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [jamfprotecttelemetryv2_CL](../tables/jamfprotecttelemetryv2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | — | — |
 
 ---
 

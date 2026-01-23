@@ -24,8 +24,8 @@ This IPinfo data connector installs an Azure Function app to download RWHOIS dat
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Ipinfo_RWHOIS_CL`](../tables/ipinfo-rwhois-cl.md) | — | — |
 
 ## Permissions

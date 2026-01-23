@@ -24,7 +24,9 @@ This will alert you if a user fails to log in to their NordPass account or SSO a
 
 This content item queries data from the following tables:
 
-- [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | — |
 
 ---
 

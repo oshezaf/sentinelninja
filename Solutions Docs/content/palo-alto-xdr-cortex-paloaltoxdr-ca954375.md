@@ -18,9 +18,11 @@
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
 
 ---
 

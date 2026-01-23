@@ -22,8 +22,8 @@ The [TeamCymruScout](https://scout.cymru.com/) Data Connector allows users to br
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Cymru_Scout_Account_Usage_Data_CL`](../tables/cymru-scout-account-usage-data-cl.md) | — | — |
 | [`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md) | — | — |
 | [`Cymru_Scout_IP_Data_Communications_CL`](../tables/cymru-scout-ip-data-communications-cl.md) | — | — |

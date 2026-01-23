@@ -25,7 +25,9 @@ Checks if Sonrai tickets have been assigned.  It uses the action type to check i
 
 This content item queries data from the following tables:
 
-- [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) | — | — |
 
 ---
 

@@ -25,8 +25,10 @@ Syslog URL match found in your Infoblox TIDE Threat Intelligence. Customize quer
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

@@ -23,7 +23,9 @@ This alert audits your logging architecture for recommended data tables aligned 
 
 This content item queries data from the following tables:
 
-- [`Usage`](../tables/usage.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Usage`](../tables/usage.md) | ✗ | ✗ |
 
 ---
 

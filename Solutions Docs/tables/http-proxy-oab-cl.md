@@ -18,9 +18,12 @@ This table is used by the following solutions:
 
 ### Analytic Rules (2)
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Exchange Server Suspicious File Downloads.](../content/standalone-content-exchange-server-suspicious-file-downloads.-8955c0fb-3408-47b0-a3b9-a1faec41e427-acdc8937.md)
-- [Silk Typhoon Suspicious File Downloads.](../content/standalone-content-silk-typhoon-suspicious-file-downloads.-03e04c97-8cae-48b3-9d2f-4ab262e4ffff-62287297.md)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Exchange Server Suspicious File Downloads.](../content/standalone-content-exchange-server-suspicious-file-downloads.-8955c0fb-3408-47b0-a3b9-a1faec41e427-acdc8937.md) |  |
+| [Silk Typhoon Suspicious File Downloads.](../content/standalone-content-silk-typhoon-suspicious-file-downloads.-03e04c97-8cae-48b3-9d2f-4ab262e4ffff-62287297.md) |  |
 
 ---
 

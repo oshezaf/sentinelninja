@@ -26,8 +26,8 @@ When critical systems fail or security incidents happen, SIGNL4 bridges the ‘l
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SIGNL4_CL`](../tables/signl4-cl.md) | — | — |
 | [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
 

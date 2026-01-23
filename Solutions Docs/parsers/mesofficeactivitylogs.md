@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [OfficeActivity](../tables/officeactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
 
 ---
 

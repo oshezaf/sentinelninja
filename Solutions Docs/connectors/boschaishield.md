@@ -22,8 +22,8 @@
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AIShield_CL`](../tables/aishield-cl.md) | — | — |
 
 ## Permissions

@@ -25,7 +25,9 @@ Triggers when monitored keywords are found in external news feeds. Helps analyst
 
 This content item queries data from the following tables:
 
-- [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | — |
 
 ---
 

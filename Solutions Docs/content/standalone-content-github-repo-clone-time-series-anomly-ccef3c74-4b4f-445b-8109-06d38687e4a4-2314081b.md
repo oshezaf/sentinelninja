@@ -21,7 +21,9 @@ Attacker can exfiltrate data from your GitHub repository by cloning it. This hun
 
 This content item queries data from the following tables:
 
-- [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | — | — |
 
 ---
 

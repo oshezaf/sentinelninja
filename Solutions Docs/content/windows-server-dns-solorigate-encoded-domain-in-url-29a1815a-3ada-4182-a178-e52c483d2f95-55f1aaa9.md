@@ -22,7 +22,9 @@ Looks for a logon domain seen in Azure AD logs appearing in a DNS query encoded 
 
 This content item queries data from the following tables:
 
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

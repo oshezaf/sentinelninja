@@ -22,8 +22,10 @@ This query looks at Account Logon events found through Windows Event Id's as wel
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4625,4769,4776"` | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
 
 ---
 

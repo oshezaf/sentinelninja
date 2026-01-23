@@ -25,9 +25,11 @@ Detects public links for files which potentialy may contain sensitive data such 
 
 This content item queries data from the following tables:
 
-- [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)
-- [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)
-- [`SlackAudit_CL`](../tables/slackaudit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | — | — |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | — | — |
+| [`SlackAudit_CL`](../tables/slackaudit-cl.md) | — | — |
 
 ---
 

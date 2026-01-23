@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Bitsight data connector](../connectors/bitsight.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Bitsight data connector](../connectors/bitsight.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [BitSight](../solutions/bitsight.md):**
-- [BitSight - new alert found](../content/bitsight-bitsight-new-alert-found-a1275c5e-0ff4-4d15-a7b7-96018cd979f5-773a55bf.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BitSight - new alert found](../content/bitsight-bitsight-new-alert-found-a1275c5e-0ff4-4d15-a7b7-96018cd979f5-773a55bf.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [BitSightAlerts](../parsers/bitsightalerts.md) | [BitSight](../solutions/bitsight.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [BitSightAlerts](../parsers/bitsightalerts.md) | [BitSight](../solutions/bitsight.md) |  |
 
 ---
 

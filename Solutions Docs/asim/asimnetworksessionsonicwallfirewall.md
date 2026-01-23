@@ -29,9 +29,9 @@ This ASIM parser supports normalizing SonicWall SonicOS ArcSight-formatted Syslo
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "SonicWall"` | ✓ | ✓ |
 
 ## Parameters
 

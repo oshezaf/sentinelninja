@@ -22,8 +22,10 @@ This query searches for failed attempts to sign-in to disabled accounts summariz
 
 This content item queries data from the following tables:
 
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

@@ -28,14 +28,20 @@ This table is used by the following solutions:
 
 ### Workbooks (5)
 
-**In solution [](../solutions/.md):**
-- [AutomationHealth](../content/-automationhealth-0c1257cf.md)
-- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [OptimizationWorkbook](../content/-optimizationworkbook-0bd24445.md)
-- [SentinelHealth](../content/-sentinelhealth-67903eec.md)
-
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
-- [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AutomationHealth](../content/github-only-automationhealth-5e9d0998.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
+| [SentinelHealth](../content/github-only-sentinelhealth-408e260c.md) |  |
 
 ---
 

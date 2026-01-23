@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [BitsightObservation_statistics_CL](../tables/bitsightobservation-statistics-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | — | — |
 
 ---
 

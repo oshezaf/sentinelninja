@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [SINEC Security Guard](../connectors/ssg.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [SINEC Security Guard](../connectors/ssg.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [SINEC Security Guard](../solutions/sinec-security-guard.md):**
-- [SSG_Security_Incidents](../content/sinec-security-guard-ssg-security-incidents-d41fa731-45a2-4b23-bb1d-29896fbc5298-8490c938.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SSG_Security_Incidents](../content/sinec-security-guard-ssg-security-incidents-d41fa731-45a2-4b23-bb1d-29896fbc5298-8490c938.md) |  |
 
 ---
 

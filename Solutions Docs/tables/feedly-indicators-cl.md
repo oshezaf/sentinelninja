@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Feedly](../connectors/feedly.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Feedly](../connectors/feedly.md) |  |
 
 ---
 

@@ -23,7 +23,9 @@ BloodHound Attack Path Finding - Large Default Groups With Read LAPS Password Pr
 
 This content item queries data from the following tables:
 
-- [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — |
 
 ---
 

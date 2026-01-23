@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) |  |
 
 ---
 

@@ -29,10 +29,10 @@ This ASIM parser supports normalizing SentinelOne logs to the ASIM Audit Event n
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Operation](../tables/operation.md) |
-| [SentinelOne_CL](../tables/sentinelone-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Operation`](../tables/operation.md) | ✗ | ✗ |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | — |
 
 ## Parameters
 

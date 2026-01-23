@@ -22,8 +22,8 @@ Through the API integration, you have the capability to retrieve all the issues 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CBSLog_Azure_1_CL`](../tables/cbslog-azure-1-cl.md) | — | — |
 
 ## Permissions

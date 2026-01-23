@@ -21,7 +21,9 @@ Find accounts that have been added/removed from groups in AD.
 
 This content item queries data from the following tables:
 
-- [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | ✓ | ✗ |
 
 ---
 

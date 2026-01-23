@@ -25,7 +25,9 @@ Detects local to remote (L2R) FTP connections.
 
 This content item queries data from the following tables:
 
-- [`Ubiquiti_CL`](../tables/ubiquiti-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | — |
 
 ---
 

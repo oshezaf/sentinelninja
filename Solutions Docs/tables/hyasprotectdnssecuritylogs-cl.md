@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [HYAS Protect](../connectors/hyasprotect.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [HYAS Protect](../connectors/hyasprotect.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [HYASProtectDNSActivity](../parsers/hyasprotectdnsactivity.md) | [HYAS Protect](../solutions/hyas-protect.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [HYASProtectDNSActivity](../parsers/hyasprotectdnsactivity.md) | [HYAS Protect](../solutions/hyas-protect.md) |  |
 
 ---
 

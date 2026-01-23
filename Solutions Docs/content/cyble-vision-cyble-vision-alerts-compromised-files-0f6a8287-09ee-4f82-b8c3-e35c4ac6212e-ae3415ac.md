@@ -25,7 +25,9 @@ Detects compromised files containing credential or logon data (stealer logs) rel
 
 This content item queries data from the following tables:
 
-- [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | — |
 
 ---
 

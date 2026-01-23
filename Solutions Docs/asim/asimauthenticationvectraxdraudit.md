@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Vectra XDR Audit Logs Event in the Audits_
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Audits_Data_CL](../tables/audits-data-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) | — | — |
 
 ## Parameters
 

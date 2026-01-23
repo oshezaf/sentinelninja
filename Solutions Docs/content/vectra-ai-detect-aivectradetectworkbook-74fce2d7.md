@@ -10,14 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
-| **Event Vendor** | Vectra Networks |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Detect/Workbooks/AIVectraDetectWorkbook.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "asc,audit,campaigns,health,hsc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceVendor == "Vectra Networks"` | ✓ | ✓ |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Armis_Devices_CL](../tables/armis-devices-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Armis_Devices_CL`](../tables/armis-devices-cl.md) | — | — |
 
 ---
 

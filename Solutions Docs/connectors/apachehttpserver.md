@@ -26,8 +26,8 @@ The Apache HTTP Server data connector provides the capability to ingest [Apache 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | — |
 
 ## Permissions

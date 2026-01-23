@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Azure Firewall logs to the ASIM Web Sessio
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [AZFWApplicationRule](../tables/azfwapplicationrule.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ |
 
 ## Parameters
 

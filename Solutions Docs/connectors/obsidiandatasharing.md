@@ -22,8 +22,8 @@ The Obsidian Datasharing connector provides the capability to read raw event dat
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ObsidianActivity_CL`](../tables/obsidianactivity-cl.md) | — | — |
 | [`ObsidianThreat_CL`](../tables/obsidianthreat-cl.md) | — | — |
 

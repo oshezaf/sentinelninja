@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`PowerBIActivity`](../tables/powerbiactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`PowerBIActivity`](../tables/powerbiactivity.md) | ✓ | ✗ |
 
 ---
 

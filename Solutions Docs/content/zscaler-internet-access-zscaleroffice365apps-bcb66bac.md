@@ -10,14 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
-| **Event Vendor** | Zscaler |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Workbooks/ZscalerOffice365Apps.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ |
 
 ---
 

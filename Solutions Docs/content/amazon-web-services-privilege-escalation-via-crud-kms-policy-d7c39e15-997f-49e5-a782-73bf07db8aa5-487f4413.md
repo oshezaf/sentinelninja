@@ -25,7 +25,9 @@ Detected usage of AttachUserPolicy/AttachGroupPolicy/AttachRolePolicy by CRUD KM
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` | ✓ | ✓ |
 
 ---
 

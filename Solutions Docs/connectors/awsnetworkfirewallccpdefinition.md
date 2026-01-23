@@ -22,8 +22,8 @@ This data connector allows you to ingest AWS Network Firewall logs into Microsof
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AWSNetworkFirewallAlert`](../tables/awsnetworkfirewallalert.md) | ✓ | ✗ |
 | [`AWSNetworkFirewallFlow`](../tables/awsnetworkfirewallflow.md) | ✓ | ✗ |
 | [`AWSNetworkFirewallTls`](../tables/awsnetworkfirewalltls.md) | ✓ | ✗ |

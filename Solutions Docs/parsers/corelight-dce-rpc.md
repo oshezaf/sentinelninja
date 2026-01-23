@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_dce_rpc_CL](../tables/corelight-v2-dce-rpc-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_dce_rpc_CL`](../tables/corelight-v2-dce-rpc-cl.md) | — | — |
 
 ---
 

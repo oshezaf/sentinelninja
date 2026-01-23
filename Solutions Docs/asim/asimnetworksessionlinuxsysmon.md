@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Sysmon for Linux event 3 to the ASIM Netwo
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Syslog](../tables/syslog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has_all "<Provider Name="` | ✓ | ✓ |
 
 ## Parameters
 

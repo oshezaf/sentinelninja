@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [IntegrationTable_CL](../tables/integrationtable-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IntegrationTable_CL`](../tables/integrationtable-cl.md) | — | — |
 
 ---
 

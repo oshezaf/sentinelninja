@@ -22,8 +22,10 @@ Looks for users bypassing Update Policies in repos
 
 This content item queries data from the following tables:
 
-- [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md)
-- [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | — |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ |
 
 ---
 

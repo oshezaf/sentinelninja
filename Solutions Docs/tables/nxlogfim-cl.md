@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [NXLog FIM](../connectors/nxlogfim.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [NXLog FIM](../connectors/nxlogfim.md) |  |
 
 ---
 

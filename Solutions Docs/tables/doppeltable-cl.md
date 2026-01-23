@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Doppel Data Connector](../connectors/doppel-dataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Doppel Data Connector](../connectors/doppel-dataconnector.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Doppel](../solutions/doppel.md):**
-- [Doppel](../content/doppel-doppel-0def4b82.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Doppel](../content/doppel-doppel-0def4b82.md) |  |
 
 ---
 

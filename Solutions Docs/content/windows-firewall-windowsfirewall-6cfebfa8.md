@@ -16,10 +16,12 @@
 
 This content item queries data from the following tables:
 
-- [`Heartbeat`](../tables/heartbeat.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`WindowsFirewall`](../tables/windowsfirewall.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625"` | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`WindowsFirewall`](../tables/windowsfirewall.md) |  | ✓ | ✗ |
 
 ---
 

@@ -22,8 +22,8 @@ The Google Kubernetes Engine (GKE) Logs enable you to capture cluster activity, 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GKEAPIServer`](../tables/gkeapiserver.md) | ✓ | ✗ |
 | [`GKEApplication`](../tables/gkeapplication.md) | ✓ | ✗ |
 | [`GKEAudit`](../tables/gkeaudit.md) | ✓ | ✗ |

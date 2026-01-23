@@ -20,8 +20,10 @@ Endpoint Inventory
 
 This content item queries data from the following tables:
 
-- [`DeviceLogonEvents`](../tables/devicelogonevents.md)
-- [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ |
+| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | ✓ | ✗ |
 
 ---
 

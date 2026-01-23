@@ -28,11 +28,17 @@ This table is used by the following solutions:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [AnomalyData](../content/-anomalydata-bd57b98e.md)
-
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
 
 ---
 

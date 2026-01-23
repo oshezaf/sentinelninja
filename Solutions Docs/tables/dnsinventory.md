@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [DNS](../connectors/dns.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [DNS](../connectors/dns.md) |  |
 
 ---
 
@@ -34,11 +36,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [Dns](../content/-dns-78eee55f.md)
-
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
-- [Dns](../content/windows-server-dns-dns-ed7f9abb.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dns](../content/windows-server-dns-dns-ed7f9abb.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dns](../content/github-only-dns-ff664046.md) |  |
 
 ## Resource Types
 

@@ -24,8 +24,8 @@ This connector will ingest detections from [ESET Inspect](https://www.eset.com/i
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ESETInspect_CL`](../tables/esetinspect-cl.md) | — | — |
 
 ## Permissions

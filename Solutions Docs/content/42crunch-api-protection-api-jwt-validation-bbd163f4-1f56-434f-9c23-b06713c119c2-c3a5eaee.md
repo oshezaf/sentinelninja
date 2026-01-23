@@ -25,7 +25,9 @@
 
 This content item queries data from the following tables:
 
-- [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) | — | — |
 
 ---
 

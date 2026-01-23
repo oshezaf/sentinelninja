@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) |  |
 
 ---
 

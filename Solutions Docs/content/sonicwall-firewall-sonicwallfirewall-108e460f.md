@@ -10,7 +10,6 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [SonicWall Firewall](../solutions/sonicwall-firewall.md) |
-| **Event Vendor** | SonicWall |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonicWall%20Firewall/Workbooks/SonicWallFirewall.json) |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
@@ -24,7 +23,9 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "SonicWall"` | ✓ | ✓ |
 
 ---
 

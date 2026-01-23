@@ -16,8 +16,6 @@
 | **Publisher** | Imperva |
 | **Used in Solutions** | [Imperva WAF Gateway](../solutions/imperva-waf-gateway.md) |
 | **Collection Method** | MMA |
-| **Event Vendor** | Imperva, Imperva Inc. |
-| **Event Product** | WAF Gateway |
 | **Connector Definition Files** | [Connector_Imperva_WAF_Gateway.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Imperva%20WAF%20Gateway/Data%20Connectors/Connector_Imperva_WAF_Gateway.json) |
 
 The [Imperva](https://www.imperva.com) connector will allow you to quickly connect your Imperva WAF Gateway alerts to Azure Sentinel. This provides you additional insight into your organization's WAF traffic and improves your security operation capabilities.
@@ -26,9 +24,9 @@ The [Imperva](https://www.imperva.com) connector will allow you to quickly conne
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Imperva, Imperva Inc. | WAF Gateway | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "WAF Gateway"`<br>`DeviceVendor in "Imperva,Imperva Inc."` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

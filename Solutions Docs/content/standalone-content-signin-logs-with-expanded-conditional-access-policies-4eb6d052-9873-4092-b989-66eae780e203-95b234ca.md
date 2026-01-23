@@ -21,7 +21,9 @@ Example query for SigninLogs showing how to break out packed fields.  In this ca
 
 This content item queries data from the following tables:
 
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

@@ -22,8 +22,8 @@
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) | — | — |
 | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | — | — |
 

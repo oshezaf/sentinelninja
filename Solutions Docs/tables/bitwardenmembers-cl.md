@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) |  |
 
 ---
 
@@ -25,17 +27,20 @@ This table is ingested by the following connectors:
 ### Workbooks (3)
 
 **In solution [Bitwarden](../solutions/bitwarden.md):**
-- [BitwardenEventLogsAuthentication](../content/bitwarden-bitwardeneventlogsauthentication-7af40b22.md)
-- [BitwardenEventLogsOrganization](../content/bitwarden-bitwardeneventlogsorganization-9dd85e37.md)
-- [BitwardenEventLogsVaultItems](../content/bitwarden-bitwardeneventlogsvaultitems-df3fce0f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BitwardenEventLogsAuthentication](../content/bitwarden-bitwardeneventlogsauthentication-7af40b22.md) |  |
+| [BitwardenEventLogsOrganization](../content/bitwarden-bitwardeneventlogsorganization-9dd85e37.md) |  |
+| [BitwardenEventLogsVaultItems](../content/bitwarden-bitwardeneventlogsvaultitems-df3fce0f.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [BitwardenEventLogs](../parsers/bitwardeneventlogs.md) | [Bitwarden](../solutions/bitwarden.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [BitwardenEventLogs](../parsers/bitwardeneventlogs.md) | [Bitwarden](../solutions/bitwarden.md) |  |
 
 ---
 

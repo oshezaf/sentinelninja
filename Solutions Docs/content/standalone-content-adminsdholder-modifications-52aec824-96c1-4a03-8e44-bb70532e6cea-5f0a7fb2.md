@@ -24,7 +24,9 @@ This query detects modification in the AdminSDHolder  in the Active Directory wh
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "5136"` | ✓ | ✓ |
 
 ---
 

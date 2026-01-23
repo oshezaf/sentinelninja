@@ -22,8 +22,8 @@ The [Sophos Cloud Optix](https://www.sophos.com/products/cloud-optix.aspx) conne
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SophosCloudOptix_CL`](../tables/sophoscloudoptix-cl.md) | — | — |
 
 ## Permissions

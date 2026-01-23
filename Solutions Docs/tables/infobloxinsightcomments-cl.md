@@ -26,16 +26,19 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md):**
-- [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InfobloxSOCInsightsWorkbook](../content/infoblox-soc-insights-infobloxsocinsightsworkbook-004063d9.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [InfobloxInsightComments](../parsers/infobloxinsightcomments.md) | [Infoblox](../solutions/infoblox.md) | Solution |
-| [InfobloxInsightComments](../parsers/infobloxinsightcomments.md) | [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [InfobloxInsightComments](../parsers/infobloxinsightcomments.md) | [Infoblox](../solutions/infoblox.md) |  |
+| [InfobloxInsightComments](../parsers/infobloxinsightcomments.md) | [Infoblox SOC Insights](../solutions/infoblox-soc-insights.md) |  |
 
 ---
 

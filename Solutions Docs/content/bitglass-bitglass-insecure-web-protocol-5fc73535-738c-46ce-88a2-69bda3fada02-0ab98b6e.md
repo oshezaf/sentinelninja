@@ -23,7 +23,9 @@ Query searches for usage of http protocol.
 
 This content item queries data from the following tables:
 
-- [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) | — | — |
 
 ---
 

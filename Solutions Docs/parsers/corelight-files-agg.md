@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_files_agg_CL](../tables/corelight-v2-files-agg-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_files_agg_CL`](../tables/corelight-v2-files-agg-cl.md) | — | — |
 
 ---
 

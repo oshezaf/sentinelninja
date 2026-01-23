@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Identity_Data_CL](../tables/identity-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Identity_Data_CL`](../tables/identity-data-cl.md) | — | — |
 
 ---
 

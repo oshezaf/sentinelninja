@@ -22,8 +22,8 @@ The BETTER MTD Connector allows Enterprises to connect their Better MTD instance
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`BetterMTDAppLog_CL`](../tables/bettermtdapplog-cl.md) | — | — |
 | [`BetterMTDDeviceLog_CL`](../tables/bettermtddevicelog-cl.md) | — | — |
 | [`BetterMTDIncidentLog_CL`](../tables/bettermtdincidentlog-cl.md) | — | — |

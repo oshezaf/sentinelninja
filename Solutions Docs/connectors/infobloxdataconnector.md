@@ -22,8 +22,8 @@ The Infoblox Data Connector allows you to easily connect your Infoblox TIDE data
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Failed_Range_To_Ingest_CL`](../tables/failed-range-to-ingest-cl.md) | — | — |
 | [`Infoblox_Failed_Indicators_CL`](../tables/infoblox-failed-indicators-cl.md) | — | — |
 | [`dossier_atp_CL`](../tables/dossier-atp-cl.md) | — | — |

@@ -24,7 +24,9 @@ Identifies a match in SecurityAlert table from any Email IOC from TI which will 
 
 This content item queries data from the following tables:
 
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 
 ---
 

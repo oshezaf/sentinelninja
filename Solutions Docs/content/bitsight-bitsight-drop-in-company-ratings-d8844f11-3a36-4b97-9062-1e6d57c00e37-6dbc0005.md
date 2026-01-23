@@ -25,7 +25,9 @@ Rule helps to detect when there is a drop of 10% or more in BitSight company rat
 
 This content item queries data from the following tables:
 
-- [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | — | — |
 
 ---
 

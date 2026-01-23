@@ -22,8 +22,8 @@ This connector allows you to ingest IoCs from Feedly.
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) | — | — |
 
 ## Permissions

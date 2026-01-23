@@ -24,7 +24,9 @@ This query visualizes the daily amount of post delivery events on Teams messages
 
 This content item queries data from the following tables:
 
-- [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md) | — | ✗ |
 
 ---
 

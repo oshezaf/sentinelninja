@@ -25,7 +25,9 @@ This analytic rule detects instances where malicious or unauthorized mobile appl
 
 This content item queries data from the following tables:
 
-- [`CyfirmaBIMaliciousMobileAppsAlerts_CL`](../tables/cyfirmabimaliciousmobileappsalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaBIMaliciousMobileAppsAlerts_CL`](../tables/cyfirmabimaliciousmobileappsalerts-cl.md) | — | — |
 
 ---
 

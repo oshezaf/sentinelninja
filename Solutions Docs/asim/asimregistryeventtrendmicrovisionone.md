@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Trend Micro Vision One logs to the ASIM Re
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [TrendMicro_XDR_OAT_CL](../tables/trendmicro-xdr-oat-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) | — | — |
 
 ## Parameters
 

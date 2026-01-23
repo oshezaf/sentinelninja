@@ -23,7 +23,9 @@ The security analytic rule is designed to scrutinize network activity involving 
 
 This content item queries data from the following tables:
 
-- [`SINECSecurityGuard_CL`](../tables/sinecsecurityguard-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SINECSecurityGuard_CL`](../tables/sinecsecurityguard-cl.md) | — | — |
 
 ---
 

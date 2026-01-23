@@ -24,9 +24,11 @@ Provides a summary of total number of detections
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
-- [`EmailEvents`](../tables/emailevents.md)
-- [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | ✓ | ✗ |
 
 ---
 

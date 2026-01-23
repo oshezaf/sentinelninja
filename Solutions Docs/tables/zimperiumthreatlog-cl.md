@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) |  |
 
 ---
 
@@ -24,11 +26,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [ZimperiumWorkbooks](../content/-zimperiumworkbooks-123202aa.md)
-
 **In solution [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md):**
-- [ZimperiumWorkbooks](../content/zimperium-mobile-threat-defense-zimperiumworkbooks-53cb70da.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZimperiumWorkbooks](../content/zimperium-mobile-threat-defense-zimperiumworkbooks-53cb70da.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZimperiumWorkbooks](../content/github-only-zimperiumworkbooks-4e6ee705.md) |  |
 
 ---
 

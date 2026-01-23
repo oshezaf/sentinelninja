@@ -22,7 +22,9 @@ User account added or removed from a security group by an unauthorized user, pas
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4728,4729,4732,4733,4746,4747,4751,4752,4756,4757,4761,4762"` | ✓ | ✓ |
 
 ---
 

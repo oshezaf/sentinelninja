@@ -24,8 +24,10 @@ Visualises emails containing QR code URLs that have been detected as malicious, 
 
 This content item queries data from the following tables:
 
-- [`EmailEvents`](../tables/emailevents.md)
-- [`EmailUrlInfo`](../tables/emailurlinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
 
 ---
 

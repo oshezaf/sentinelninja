@@ -25,7 +25,9 @@ This analytics rule will generate alerts in Microsoft Sentinel for detections fr
 
 This content item queries data from the following tables:
 
-- [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) | — | — |
 
 ---
 

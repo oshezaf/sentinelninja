@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](../connectors/barracuda.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[Deprecated] Barracuda Web Application Firewall via Legacy Agent](../connectors/barracuda.md) |  |
 
 ---
 

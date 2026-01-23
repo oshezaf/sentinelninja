@@ -25,11 +25,13 @@ Identifies attack pattern when attacker tries to move, or scan, from resource to
 
 This content item queries data from the following tables:
 
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`AZFWFlowTrace`](../tables/azfwflowtrace.md)
-- [`AZFWIdpsSignature`](../tables/azfwidpssignature.md)
-- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ |
+| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) | ✓ | ✗ |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | ✓ | ✗ |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 
 ---
 

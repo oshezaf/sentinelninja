@@ -25,8 +25,10 @@ Detects possible discovery activity.
 
 This content item queries data from the following tables:
 
-- [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md)
-- [`OCI_Logs_CL`](../tables/oci-logs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) | — | — |
+| [`OCI_Logs_CL`](../tables/oci-logs-cl.md) | — | — |
 
 ---
 

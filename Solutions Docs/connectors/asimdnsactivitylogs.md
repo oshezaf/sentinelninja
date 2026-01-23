@@ -14,8 +14,6 @@
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [Windows Server DNS](../solutions/windows-server-dns.md) |
 | **Collection Method** | AMA |
-| **Event Vendor** | Microsoft |
-| **Event Product** | DNS Server |
 | **Connector Definition Files** | [template_ASimDnsActivityLogs.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS/Data%20Connectors/template_ASimDnsActivityLogs.JSON) |
 
 The Windows DNS log connector allows you to easily filter and stream all analytics logs from your Windows DNS servers to your Microsoft Sentinel workspace using the Azure Monitoring agent (AMA). Having this data in Microsoft Sentinel helps you identify issues and security threats such as:
@@ -50,9 +48,9 @@ For more information, see the [Microsoft Sentinel documentation](https://go.micr
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | Microsoft | DNS Server | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | `EventProduct == "DNS Server"`<br>`EventVendor == "Microsoft"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

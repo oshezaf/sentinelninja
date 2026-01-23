@@ -22,8 +22,8 @@ The Open Systems Logs API Microsoft Sentinel Connector provides the capability t
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) | — | — |
 | [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) | — | — |
 | [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) | — | — |

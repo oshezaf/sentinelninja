@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [IPinfo Country ASN Data Connector](../connectors/ipinfocountrydataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [IPinfo Country ASN Data Connector](../connectors/ipinfocountrydataconnector.md) |  |
 
 ---
 

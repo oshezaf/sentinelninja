@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) |  |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [F5 BIG-IP](../connectors/f5bigip.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [F5 BIG-IP](../connectors/f5bigip.md) |  |
 
 ---
 
@@ -24,13 +26,19 @@ This table is ingested by the following connectors:
 
 ### Workbooks (4)
 
-**In solution [](../solutions/.md):**
-- [F5BIGIPSystemMetrics](../content/-f5bigipsystemmetrics-42ca2db1.md)
-- [F5Networks](../content/-f5networks-d5484f34.md)
-
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
-- [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md)
-- [F5Networks](../content/f5-big-ip-f5networks-56be211d.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md) |  |
+| [F5Networks](../content/f5-big-ip-f5networks-56be211d.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [F5BIGIPSystemMetrics](../content/github-only-f5bigipsystemmetrics-f6e795e8.md) |  |
+| [F5Networks](../content/github-only-f5networks-1dca2cd9.md) |  |
 
 ---
 

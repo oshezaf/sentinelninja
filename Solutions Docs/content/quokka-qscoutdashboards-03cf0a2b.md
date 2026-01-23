@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) | — | — |
 
 ---
 

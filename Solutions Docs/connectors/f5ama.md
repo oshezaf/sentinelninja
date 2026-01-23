@@ -16,7 +16,6 @@
 | **Publisher** | F5 Networks |
 | **Used in Solutions** | [F5 Networks](../solutions/f5-networks.md) |
 | **Collection Method** | AMA |
-| **Event Vendor** | F5 |
 | **Connector Definition Files** | [template_F5NetworksAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks/Data%20Connectors/template_F5NetworksAMA.json) |
 
 ## Additional Information
@@ -29,9 +28,9 @@ The F5 firewall connector allows you to easily connect your F5 logs with Microso
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | F5 | — | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "F5"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

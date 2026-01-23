@@ -21,7 +21,9 @@ Detects 3+ failed actions against an account followed by a success in a short wi
 
 This content item queries data from the following tables:
 
-- [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | — | — |
 
 ---
 

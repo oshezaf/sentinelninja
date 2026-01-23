@@ -22,7 +22,9 @@ Identifies anomalous device logon events from Microsoft Defender for Endpoint (M
 
 This content item queries data from the following tables:
 
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
 
 ---
 

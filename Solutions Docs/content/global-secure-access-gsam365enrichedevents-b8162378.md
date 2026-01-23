@@ -16,10 +16,12 @@
 
 This content item queries data from the following tables:
 
-- [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md)
-- [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`Operation`](../tables/operation.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md) | ✓ | ✗ |
+| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| [`Operation`](../tables/operation.md) | ✗ | ✗ |
 
 ---
 

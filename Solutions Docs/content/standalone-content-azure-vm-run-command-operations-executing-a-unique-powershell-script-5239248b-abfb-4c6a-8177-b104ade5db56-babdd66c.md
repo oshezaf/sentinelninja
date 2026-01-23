@@ -24,9 +24,11 @@ Identifies when Azure Run command is used to execute a PowerShell script on a VM
 
 This content item queries data from the following tables:
 
-- [`AzureActivity`](../tables/azureactivity.md)
-- [`DeviceEvents`](../tables/deviceevents.md)
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
 
 ---
 

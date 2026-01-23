@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`Seg_Cg_CL`](../tables/seg-cg-cl.md)
-- [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | — | — |
+| [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | — | — |
 
 ---
 

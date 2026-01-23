@@ -25,7 +25,9 @@ Image Scanning for ECR was disabled, which could lead to missing vulnerable cont
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "PutImageScanningConfiguration"` | ✓ | ✓ |
 
 ---
 

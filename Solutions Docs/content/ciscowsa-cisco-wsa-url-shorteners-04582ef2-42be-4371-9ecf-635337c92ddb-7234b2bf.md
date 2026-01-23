@@ -23,7 +23,9 @@ Query searches connections to Url shorteners resources.
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "cisco_wsa"` | ✓ | ✓ |
 
 ---
 

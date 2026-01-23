@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [BitsightAlerts_data_CL](../tables/bitsightalerts-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | — | — |
 
 ---
 

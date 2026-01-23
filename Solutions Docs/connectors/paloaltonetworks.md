@@ -18,7 +18,6 @@
 | **Publisher** | Palo Alto Networks |
 | **Used in Solutions** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | **Collection Method** | MMA |
-| **Event Vendor** | Palo Alto Networks |
 | **Connector Definition Files** | [PaloAltoNetworks.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Data%20Connectors/PaloAltoNetworks.json) |
 
 ## Additional Information
@@ -32,9 +31,9 @@ The Palo Alto Networks firewall connector allows you to easily connect your Palo
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Palo Alto Networks | — | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

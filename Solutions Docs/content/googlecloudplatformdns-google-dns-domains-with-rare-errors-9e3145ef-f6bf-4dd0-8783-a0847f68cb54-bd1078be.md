@@ -23,8 +23,10 @@ Query searches for Domains with rare errors.
 
 This content item queries data from the following tables:
 
-- [`GCPDNS`](../tables/gcpdns.md)
-- [`GCP_DNS_CL`](../tables/gcp-dns-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GCPDNS`](../tables/gcpdns.md) | ✓ | ✗ |
+| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | — | — |
 
 ---
 

@@ -25,7 +25,9 @@ Detects exposed public-facing account credentials as identified in CYFIRMA's thr
 
 This content item queries data from the following tables:
 
-- [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaCompromisedAccounts_CL`](../tables/cyfirmacompromisedaccounts-cl.md) | — | — |
 
 ---
 

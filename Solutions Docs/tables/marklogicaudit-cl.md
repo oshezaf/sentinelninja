@@ -17,8 +17,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
-- [[Deprecated] MarkLogic Audit](../connectors/marklogic.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
+| [[Deprecated] MarkLogic Audit](../connectors/marklogic.md) |  |
 
 ---
 
@@ -26,10 +28,10 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [MarkLogicAudit](../parsers/marklogicaudit.md) | [MarkLogicAudit](../solutions/marklogicaudit.md) | Solution |
-| [MarkLogicAudit](../parsers/marklogicaudit.md) | [MarkLogicAudit](../solutions/marklogicaudit.md) | Solution ⚠️ |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [MarkLogicAudit](../parsers/marklogicaudit.md) | [MarkLogicAudit](../solutions/marklogicaudit.md) |  |
+| [MarkLogicAudit](../parsers/marklogicaudit.md) | [MarkLogicAudit](../solutions/marklogicaudit.md) ⚠️ |  |
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 

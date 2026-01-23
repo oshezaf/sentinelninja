@@ -24,7 +24,9 @@ This query helps hunt for Teams messages from a specific sender by ThreadType.
 
 This content item queries data from the following tables:
 
-- [`MessageEvents`](../tables/messageevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessageEvents`](../tables/messageevents.md) | — | ✗ |
 
 ---
 

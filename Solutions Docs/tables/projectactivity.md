@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Project](../connectors/office365project.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Project](../connectors/office365project.md) |  |
 
 ---
 

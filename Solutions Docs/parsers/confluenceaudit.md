@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Confluence_Audit_CL](../tables/confluence-audit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) | — | — |
 
 ---
 

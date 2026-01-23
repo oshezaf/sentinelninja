@@ -13,14 +13,15 @@ Endpoints experiencing various backup-related issues.
 | **Type** | Hunting Query |
 | **Solution** | [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md) |
 | **ID** | `51ac84a9-5e82-456a-b398-f2e7b9ea8611` |
-| **Event Vendor** | Acronis |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Hunting%20Queries/AcronisEndpointsWithBackupIssues.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "ArchiveCorrupted,BackupFailed,BackupNotResponding,BackupRecoveryFailed"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
 
 ---
 

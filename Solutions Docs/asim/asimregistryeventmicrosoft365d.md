@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft 365 Defender for endpoint logs, 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [DeviceRegistryEvents](../tables/deviceregistryevents.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | ✓ | ✗ |
 
 ## Parameters
 

@@ -22,7 +22,9 @@ Highlights accounts associated with multiple authentications from different geog
 
 This content item queries data from the following tables:
 
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

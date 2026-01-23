@@ -25,7 +25,9 @@ Identifies a match for a SQL Injection attack in the Front Door Premium WAF logs
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "FrontDoorWebApplicationFirewallLog"` | — | ✗ |
 
 ---
 

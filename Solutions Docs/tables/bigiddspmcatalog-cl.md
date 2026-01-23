@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [BigID DSPM connector](../connectors/bigiddspmlogsconnectordefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [BigID DSPM connector](../connectors/bigiddspmlogsconnectordefinition.md) |  |
 
 ---
 

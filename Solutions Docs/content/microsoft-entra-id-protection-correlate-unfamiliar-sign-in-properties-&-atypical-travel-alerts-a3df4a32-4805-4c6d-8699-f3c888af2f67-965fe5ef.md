@@ -25,8 +25,10 @@ The combination of an Unfamiliar sign-in properties alert and an Atypical travel
 
 This content item queries data from the following tables:
 
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

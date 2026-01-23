@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ConfluenceAudit](../parsers/confluenceaudit.md) | [AtlassianConfluenceAudit](../solutions/atlassianconfluenceaudit.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ConfluenceAudit](../parsers/confluenceaudit.md) | [AtlassianConfluenceAudit](../solutions/atlassianconfluenceaudit.md) |  |
 
 ---
 

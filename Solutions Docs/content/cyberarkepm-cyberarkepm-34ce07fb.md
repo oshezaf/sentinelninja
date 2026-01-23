@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — |
 
 ---
 

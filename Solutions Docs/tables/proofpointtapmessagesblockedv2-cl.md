@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [ProofPointTap](../solutions/proofpointtap.md):**
-- [ProofpointTAP](../content/proofpointtap-proofpointtap-d0be2a01.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ProofpointTAP](../content/proofpointtap-proofpointtap-d0be2a01.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ProofpointTAPEvent](../parsers/proofpointtapevent.md) | [ProofPointTap](../solutions/proofpointtap.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ProofpointTAPEvent](../parsers/proofpointtapevent.md) | [ProofPointTap](../solutions/proofpointtap.md) |  |
 
 ---
 

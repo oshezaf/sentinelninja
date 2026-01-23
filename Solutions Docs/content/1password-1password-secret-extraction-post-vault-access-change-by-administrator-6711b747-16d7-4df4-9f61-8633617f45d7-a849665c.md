@@ -24,7 +24,9 @@ This will alert when a secret extraction has occurred after an administrator has
 
 This content item queries data from the following tables:
 
-- [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | — | — |
 
 ---
 

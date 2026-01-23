@@ -25,7 +25,9 @@
 
 This parser reads from the following tables:
 
-- [ElasticAgentLogs_CL](../tables/elasticagentlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) | — | — |
 
 ---
 

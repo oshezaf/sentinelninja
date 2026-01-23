@@ -10,14 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Forcepoint CASB](../solutions/forcepoint-casb.md) |
-| **Event Vendor** | Forcepoint CASB |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CASB/Workbooks/ForcepointCASB.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "CASB Admin audit log,Cloud Service Monitoring,SaaS Security Gateway"`<br>`DeviceVendor == "Forcepoint CASB"` | ✓ | ✓ |
 
 ---
 

@@ -25,7 +25,9 @@ Detects credential theft and information-stealer malware logs. Extracts stolen c
 
 This content item queries data from the following tables:
 
-- [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | — |
 
 ---
 

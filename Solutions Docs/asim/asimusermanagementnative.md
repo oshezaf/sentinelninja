@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native User Management activity table 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimUserManagementActivityLogs](../tables/asimusermanagementactivitylogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) | ✓ | ✓ |
 
 ## Parameters
 

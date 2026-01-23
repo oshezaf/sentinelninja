@@ -22,8 +22,10 @@ Indicates when an anomalous number of resources are created in Azure via AzureAc
 
 This content item queries data from the following tables:
 
-- [`AzureActivity`](../tables/azureactivity.md)
-- [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | — | — |
 
 ---
 

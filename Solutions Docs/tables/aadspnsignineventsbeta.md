@@ -22,8 +22,11 @@ Microsoft Entra service principal and managed identity sign-ins
 
 ### Hunting Queries (1)
 
-**In solution [](../solutions/.md):**
-- [AddedCredentialFromContryXAndSigninFromCountryY](../content/-addedcredentialfromcontryxandsigninfromcountryy-9644e2ae-07a2-4086-a85a-6ee2bca45f4e-f83472e1.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AddedCredentialFromContryXAndSigninFromCountryY](../content/github-only-addedcredentialfromcontryxandsigninfromcountryy-9644e2ae-07a2-4086-a85a-6ee2bca45f4e-5872c09f.md) |  |
 
 ---
 

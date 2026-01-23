@@ -22,8 +22,8 @@ The [Vectra XDR](https://www.vectra.ai/) connector gives the capability to inges
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Audits_Data_CL`](../tables/audits-data-cl.md) | — | — |
 | [`Detections_Data_CL`](../tables/detections-data-cl.md) | — | — |
 | [`Entities_Data_CL`](../tables/entities-data-cl.md) | — | — |

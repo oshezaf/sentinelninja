@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`DoppelTable_CL`](../tables/doppeltable-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DoppelTable_CL`](../tables/doppeltable-cl.md) | — | — |
 
 ---
 

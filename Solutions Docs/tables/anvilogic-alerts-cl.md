@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Anvilogic](../connectors/anvilogicccfdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Anvilogic](../connectors/anvilogicccfdefinition.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Anvilogic](../solutions/anvilogic.md):**
-- [Anvilogic Alert](../content/anvilogic-anvilogic-alert-6ccc187a-42ee-4635-8bcc-3b299f8570df-47d0e3ed.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Anvilogic Alert](../content/anvilogic-anvilogic-alert-6ccc187a-42ee-4635-8bcc-3b299f8570df-47d0e3ed.md) |  |
 
 ---
 

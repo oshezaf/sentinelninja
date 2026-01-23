@@ -18,15 +18,16 @@ Identifies beaconing patterns from PAN traffic logs based on recurrent timedelta
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1071, T1571 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | Palo Alto Networks |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Hunting%20Queries/Palo%20Alto%20-%20potential%20beaconing%20detected.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`fluentbit_CL`](../tables/fluentbit-cl.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) |  | — | — |
 
 ---
 

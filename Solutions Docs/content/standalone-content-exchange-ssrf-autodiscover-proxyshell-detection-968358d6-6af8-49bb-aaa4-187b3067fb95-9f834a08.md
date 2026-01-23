@@ -24,7 +24,9 @@ This query looks for suspicious request patterns to Exchange servers that fit pa
 
 This content item queries data from the following tables:
 
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

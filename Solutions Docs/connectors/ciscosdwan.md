@@ -22,8 +22,8 @@ The Cisco Software Defined WAN(SD-WAN) data connector provides the capability to
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | — | — |
 | [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
 

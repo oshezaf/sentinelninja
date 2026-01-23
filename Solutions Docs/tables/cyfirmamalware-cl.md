@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [CYFIRMA Cyber Intelligence](../connectors/cyfirmacyberintelligencedc.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [CYFIRMA Cyber Intelligence](../connectors/cyfirmacyberintelligencedc.md) |  |
 
 ---
 

@@ -22,10 +22,12 @@ This hunting query looks for process command line activity related to activity o
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
 
 ---
 

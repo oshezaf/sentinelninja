@@ -19,14 +19,15 @@ Generates an incident when a network scan is detected either by Radiflow's iSID.
 | **Tactics** | Discovery |
 | **Techniques** | T0840, T0846, T0888 |
 | **Required Connectors** | [RadiflowIsid](../connectors/radiflowisid.md) |
-| **Event Product** | iSID |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow/Analytic%20Rules/RadiflowNetworkScanningDetected.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "iSID"`<br>`DeviceVendor == "radiflow"` | ✓ | ✓ |
 
 ---
 

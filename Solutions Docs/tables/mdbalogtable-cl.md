@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [MongoDB Atlas Logs](../connectors/mongodbatlaslogsazurefunctions.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [MongoDB Atlas Logs](../connectors/mongodbatlaslogsazurefunctions.md) |  |
 
 ---
 

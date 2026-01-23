@@ -24,7 +24,9 @@ Identifies changes for HANA DB audit trail policies.  Source Action: Create / up
 
 This content item queries data from the following tables:
 
-- [`SAPLogServ_CL`](../tables/saplogserv-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | — | — |
 
 ---
 

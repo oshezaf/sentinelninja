@@ -22,8 +22,8 @@ Microsoft Sentinel provides you the capability to import threat intelligence gen
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 | [`ThreatIntelObjects`](../tables/threatintelobjects.md) | ✓ | ✗ |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |

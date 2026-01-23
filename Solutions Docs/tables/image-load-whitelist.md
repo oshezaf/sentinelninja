@@ -12,8 +12,11 @@
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [SysmonThreatHunting](../content/-sysmonthreathunting-88bb3312.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SysmonThreatHunting](../content/github-only-sysmonthreathunting-ea4856c6.md) |  |
 
 ---
 

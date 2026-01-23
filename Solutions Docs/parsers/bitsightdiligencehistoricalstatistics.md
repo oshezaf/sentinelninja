@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [BitsightDiligence_historical_statistics_CL](../tables/bitsightdiligence-historical-statistics-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | — | — |
 
 ---
 

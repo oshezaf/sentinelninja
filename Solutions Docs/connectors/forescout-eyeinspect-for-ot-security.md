@@ -26,8 +26,8 @@ Forescout eyeInspect for OT Security connector allows you to connect Asset/Alert
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md) | — | — |
 | [`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) | — | — |
 

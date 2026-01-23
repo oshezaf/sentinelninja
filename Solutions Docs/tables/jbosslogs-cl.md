@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] JBoss Enterprise Application Platform](../connectors/jbosseap.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[Deprecated] JBoss Enterprise Application Platform](../connectors/jbosseap.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [JBossEvent](../parsers/jbossevent.md) | [JBoss](../solutions/jboss.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [JBossEvent](../parsers/jbossevent.md) | [JBoss](../solutions/jboss.md) |  |
 
 ---
 

@@ -24,7 +24,9 @@ This query looks for diagnostic settings that are removed from a resource. This 
 
 This content item queries data from the following tables:
 
-- [`AzureActivity`](../tables/azureactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
 
 ---
 

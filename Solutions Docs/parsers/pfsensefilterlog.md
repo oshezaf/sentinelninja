@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [CommonSecurityLog](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "filterlog"`<br>`DeviceProduct == "pfsense"` | ✓ | ✓ |
 
 ---
 

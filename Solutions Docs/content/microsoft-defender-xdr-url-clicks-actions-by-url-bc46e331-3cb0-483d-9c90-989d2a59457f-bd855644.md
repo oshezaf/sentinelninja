@@ -22,7 +22,9 @@ In this query, we are looking URL click actions by URL in the last 7 days
 
 This content item queries data from the following tables:
 
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

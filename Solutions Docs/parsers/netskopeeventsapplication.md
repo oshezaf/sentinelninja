@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [NetskopeEventsApplication_CL](../tables/netskopeeventsapplication-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | — | — |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Bitsight data connector](../connectors/bitsight.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Bitsight data connector](../connectors/bitsight.md) |  |
 
 ---
 
@@ -25,21 +27,27 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [BitSight](../solutions/bitsight.md):**
-- [BitSight - compromised systems detected](../content/bitsight-bitsight-compromised-systems-detected-d68b758a-b117-4cb8-8e1d-dcab5a4a2f21-a4f59745.md)
-- [BitSight - diligence risk category detected](../content/bitsight-bitsight-diligence-risk-category-detected-161ed3ac-b242-4b13-8c6b-58716e5e9972-ffcba42e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BitSight - compromised systems detected](../content/bitsight-bitsight-compromised-systems-detected-d68b758a-b117-4cb8-8e1d-dcab5a4a2f21-a4f59745.md) |  |
+| [BitSight - diligence risk category detected](../content/bitsight-bitsight-diligence-risk-category-detected-161ed3ac-b242-4b13-8c6b-58716e5e9972-ffcba42e.md) |  |
 
 ### Workbooks (1)
 
 **In solution [BitSight](../solutions/bitsight.md):**
-- [BitSightWorkbook](../content/bitsight-bitsightworkbook-85beb528.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BitSightWorkbook](../content/bitsight-bitsightworkbook-85beb528.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [BitSightFindingsData](../parsers/bitsightfindingsdata.md) | [BitSight](../solutions/bitsight.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [BitSightFindingsData](../parsers/bitsightfindingsdata.md) | [BitSight](../solutions/bitsight.md) |  |
 
 ---
 

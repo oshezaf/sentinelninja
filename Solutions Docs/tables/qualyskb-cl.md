@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Qualys VM KnowledgeBase](../connectors/qualyskb.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Qualys VM KnowledgeBase](../connectors/qualyskb.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [QualysKB](../parsers/qualyskb.md) | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [QualysKB](../parsers/qualyskb.md) | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |  |
 
 ---
 

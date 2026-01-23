@@ -23,7 +23,9 @@ This alert creates an incident when Content Access Control Allowed List Policy V
 
 This content item queries data from the following tables:
 
-- [`Guardian_CL`](../tables/guardian-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Guardian_CL`](../tables/guardian-cl.md) | — | — |
 
 ---
 

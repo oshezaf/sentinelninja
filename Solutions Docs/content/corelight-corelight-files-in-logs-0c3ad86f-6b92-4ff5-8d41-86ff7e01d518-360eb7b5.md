@@ -23,8 +23,10 @@ Query searches for files which where seen in logs over period of time.
 
 This content item queries data from the following tables:
 
-- [`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md)
-- [`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_files_CL`](../tables/corelight-v2-files-cl.md) | — | — |
+| [`Corelight_v2_files_red_CL`](../tables/corelight-v2-files-red-cl.md) | — | — |
 
 ---
 

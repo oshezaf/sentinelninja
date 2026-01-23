@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [impact_score](../tables/impact-score.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`impact_score`](../tables/impact-score.md) | — | — |
 
 ---
 

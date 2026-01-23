@@ -23,7 +23,9 @@ This query uses AUOMS security events to examine SCX Execute RunAs providers. Th
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "AUOMS_EXECVE"` | ✓ | ✓ |
 
 ---
 

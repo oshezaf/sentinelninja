@@ -16,10 +16,12 @@
 
 This content item queries data from the following tables:
 
-- [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md)
-- [`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md)
-- [`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md)
-- [`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md) | — | — |
+| [`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md) | — | — |
+| [`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md) | — | — |
+| [`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) | — | — |
 
 ---
 

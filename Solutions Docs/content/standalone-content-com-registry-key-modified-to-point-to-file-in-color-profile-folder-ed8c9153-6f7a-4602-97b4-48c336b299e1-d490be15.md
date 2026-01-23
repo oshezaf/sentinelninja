@@ -24,8 +24,10 @@ This query looks for changes to COM registry keys to point to files in C:\Window
 
 This content item queries data from the following tables:
 
-- [`DeviceRegistryEvents`](../tables/deviceregistryevents.md)
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4657"` | ✓ | ✓ |
 
 ---
 

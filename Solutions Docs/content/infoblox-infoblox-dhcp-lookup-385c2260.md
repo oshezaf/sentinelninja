@@ -16,9 +16,11 @@ The playbook will retrieve IP entities from an incident, search for related DHCP
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
 
 ## Additional Documentation
 

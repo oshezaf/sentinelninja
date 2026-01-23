@@ -21,8 +21,10 @@ Extracts MDATP Alerts that indicate a command was executed by a web shell. Uses 
 
 This content item queries data from the following tables:
 
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

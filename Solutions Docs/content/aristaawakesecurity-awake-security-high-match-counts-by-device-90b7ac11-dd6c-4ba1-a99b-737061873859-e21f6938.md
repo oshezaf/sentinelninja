@@ -17,15 +17,15 @@ This query searches for devices with unexpectedly large number of activity match
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | Arista Networks |
-| **Event Product** | Awake Security |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity/Analytic%20Rules/HighMatchCountsByDevice.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Awake Security"`<br>`DeviceVendor == "Arista Networks"` | ✓ | ✓ |
 
 ---
 

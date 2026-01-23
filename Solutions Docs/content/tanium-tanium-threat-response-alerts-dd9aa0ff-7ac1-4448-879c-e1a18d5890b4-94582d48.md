@@ -21,7 +21,9 @@ Alerts from Tanium Threat Response (THR) that can be acted upon by Microsoft Sen
 
 This content item queries data from the following tables:
 
-- [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) | — | — |
 
 ---
 

@@ -25,7 +25,9 @@ Detects server errors after multiple requests from same IP address.
 
 This content item queries data from the following tables:
 
-- [`Tomcat_CL`](../tables/tomcat-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Tomcat_CL`](../tables/tomcat-cl.md) | — | — |
 
 ---
 

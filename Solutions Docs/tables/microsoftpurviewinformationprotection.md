@@ -28,7 +28,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Purview Information Protection](../connectors/microsoftpurviewinformationprotection.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Purview Information Protection](../connectors/microsoftpurviewinformationprotection.md) |  |
 
 ---
 
@@ -36,14 +38,23 @@ This table is ingested by the following connectors:
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [MicrosoftPurviewInformationProtection](../content/-microsoftpurviewinformationprotection-3c3c1183.md)
-
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
-- [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
-- [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftPurviewInformationProtection](../content/github-only-microsoftpurviewinformationprotection-87c9682e.md) |  |
 
 ---
 

@@ -17,14 +17,15 @@ Identifies instances where Wazuh logged over 400 '403' Web Errors from one IP Ad
 | **Kind** | Scheduled |
 | **Tactics** | CredentialAccess |
 | **Techniques** | T1110 |
-| **Event Product** | Wazuh |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/CommonSecurityLog/Wazuh-Large_Number_of_Web_errors_from_an_IP.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Wazuh"` | ✓ | ✓ |
 
 ---
 

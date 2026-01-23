@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [QualysKB_CL](../tables/qualyskb-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`QualysKB_CL`](../tables/qualyskb-cl.md) | — | — |
 
 ---
 

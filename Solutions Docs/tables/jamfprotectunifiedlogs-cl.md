@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Jamf Protect Push Connector](../connectors/jamfprotectpush.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) |  |
 
 ---
 
@@ -25,20 +27,26 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Jamf Protect](../solutions/jamf-protect.md):**
-- [Jamf Protect - Unified Logs](../content/jamf-protect-jamf-protect-unified-logs-9eb2f758-003b-4303-83c6-97aed4c03e41-73a1260b.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Jamf Protect - Unified Logs](../content/jamf-protect-jamf-protect-unified-logs-9eb2f758-003b-4303-83c6-97aed4c03e41-73a1260b.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Jamf Protect](../solutions/jamf-protect.md):**
-- [JamfProtectDashboard](../content/jamf-protect-jamfprotectdashboard-b0beeadb.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [JamfProtectDashboard](../content/jamf-protect-jamfprotectdashboard-b0beeadb.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [JamfProtectUnifiedLogs](../parsers/jamfprotectunifiedlogs.md) | [Jamf Protect](../solutions/jamf-protect.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [JamfProtectUnifiedLogs](../parsers/jamfprotectunifiedlogs.md) | [Jamf Protect](../solutions/jamf-protect.md) |  |
 
 ---
 

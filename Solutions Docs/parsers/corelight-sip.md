@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_sip_CL](../tables/corelight-v2-sip-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_sip_CL`](../tables/corelight-v2-sip-cl.md) | — | — |
 
 ---
 

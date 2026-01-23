@@ -24,8 +24,10 @@ Identifies a match in AzureNetworkAnalytics_CL (NSG Flow Logs) from any IP IOC f
 
 This content item queries data from the following tables:
 
-- [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | — | — |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

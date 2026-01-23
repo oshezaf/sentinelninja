@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Wiz](../connectors/wiz.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Wiz](../connectors/wiz.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Wiz](../solutions/wiz.md):**
-- [WizFindings](../content/wiz-wizfindings-78285767.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [WizFindings](../content/wiz-wizfindings-78285767.md) |  |
 
 ---
 

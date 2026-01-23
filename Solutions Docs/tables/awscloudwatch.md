@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Amazon Web Services S3](../connectors/awss3.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Amazon Web Services S3](../connectors/awss3.md) |  |
 
 ---
 
@@ -34,8 +36,11 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ---
 

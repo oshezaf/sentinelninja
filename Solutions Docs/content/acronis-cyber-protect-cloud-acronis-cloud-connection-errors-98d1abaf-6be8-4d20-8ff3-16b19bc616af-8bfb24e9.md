@@ -13,14 +13,15 @@ Various errors related to S3 or Azure cloud connections.
 | **Type** | Hunting Query |
 | **Solution** | [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md) |
 | **ID** | `98d1abaf-6be8-4d20-8ff3-16b19bc616af` |
-| **Event Vendor** | Acronis |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Hunting%20Queries/AcronisCloudConnectionErrors.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "CloudConnectionAzureApplianceConfigurationFailed,CloudConnectionAzureApplianceDeallocationFailed,CloudConnectionAzureApplianceDeletionFailed,CloudConnectionAzureApplianceEOL,CloudConnectionAzureApplianceFailed,CloudConnectionAzureApplianceUpdateFailed,CloudConnectionAzureCloudAccessExpired,CloudConnectionS3CloudAccessExpired"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
 
 ---
 

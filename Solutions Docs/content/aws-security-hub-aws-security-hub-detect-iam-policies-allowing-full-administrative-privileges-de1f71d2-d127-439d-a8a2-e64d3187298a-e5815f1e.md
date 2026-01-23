@@ -25,7 +25,9 @@ This query detects AWS IAM policies that allow full administrative ("*") privile
 
 This content item queries data from the following tables:
 
-- [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ |
 
 ---
 

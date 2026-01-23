@@ -16,8 +16,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Armis Activities](../connectors/armisactivities.md)
-- [Armis Alerts Activities](../connectors/armisalertsactivities.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Armis Activities](../connectors/armisactivities.md) |  |
+| [Armis Alerts Activities](../connectors/armisalertsactivities.md) |  |
 
 ---
 
@@ -25,9 +27,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ArmisActivities](../parsers/armisactivities.md) | [Armis](../solutions/armis.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ArmisActivities](../parsers/armisactivities.md) | [Armis](../solutions/armis.md) |  |
 
 ---
 

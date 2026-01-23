@@ -25,7 +25,9 @@ Identifies when a user creates an Azure CloudShell for the first time. Monitor t
 
 This content item queries data from the following tables:
 
-- [`AzureActivity`](../tables/azureactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
 
 ---
 

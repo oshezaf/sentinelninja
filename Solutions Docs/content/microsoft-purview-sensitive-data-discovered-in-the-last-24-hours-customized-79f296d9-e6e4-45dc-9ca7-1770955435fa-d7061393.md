@@ -24,7 +24,9 @@ Customized query used to identify specific classifications and parameters that h
 
 This content item queries data from the following tables:
 
-- [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | ✓ | ✗ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) |  |
 
 ---
 
@@ -24,10 +26,10 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ApigeeX](../parsers/apigeex.md) | [Google Apigee](../solutions/google-apigee.md) | Solution |
-| [Unified_ApigeeX](../parsers/unified-apigeex.md) | [Google Apigee](../solutions/google-apigee.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ApigeeX](../parsers/apigeex.md) | [Google Apigee](../solutions/google-apigee.md) |  |
+| [Unified_ApigeeX](../parsers/unified-apigeex.md) | [Google Apigee](../solutions/google-apigee.md) |  |
 
 ---
 

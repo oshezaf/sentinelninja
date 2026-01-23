@@ -22,7 +22,9 @@ This identifies failed logon attempts using permutations based on known first an
 
 This content item queries data from the following tables:
 
-- [`Operation`](../tables/operation.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Operation`](../tables/operation.md) | ✗ | ✗ |
 
 ---
 

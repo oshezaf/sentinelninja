@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [NexposeInsightVMCloud_assets_CL](../tables/nexposeinsightvmcloud-assets-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) | — | — |
 
 ---
 

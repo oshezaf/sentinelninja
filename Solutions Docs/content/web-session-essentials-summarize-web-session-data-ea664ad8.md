@@ -22,12 +22,14 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) | read/write |
-| [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) | read/write |
-| [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) | read/write |
-| [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) | read/write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`WebSession_Summarized_DstIP_CL`](../tables/websession-summarized-dstip-cl.md) | — | — |
+| [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) | — | — |
+| [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) | — | — |
+| [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) | — | — |
 
 ## Additional Documentation
 

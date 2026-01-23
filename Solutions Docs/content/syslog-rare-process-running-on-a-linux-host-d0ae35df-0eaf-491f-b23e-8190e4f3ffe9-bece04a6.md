@@ -22,7 +22,9 @@ Looks for rare processes that are running on Linux hosts. Looks for process seen
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
 
 ---
 

@@ -25,7 +25,9 @@ Parser to extract Pure Storage FlashArray related info from log
 
 This parser reads from the following tables:
 
-- [Syslog](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "purity.alert"` | ✓ | ✓ |
 
 ---
 

@@ -22,8 +22,8 @@ The [Armis](https://www.armis.com/) Alerts Activities connector gives the capabi
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Armis_Activities_CL`](../tables/armis-activities-cl.md) | — | — |
 | [`Armis_Alerts_CL`](../tables/armis-alerts-cl.md) | — | — |
 

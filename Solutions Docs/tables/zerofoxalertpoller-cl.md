@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) |  |
 
 ---
 
@@ -25,10 +27,13 @@ This table is ingested by the following connectors:
 ### Analytic Rules (4)
 
 **In solution [ZeroFox](../solutions/zerofox.md):**
-- [ZeroFox Alerts - High Severity Alerts](../content/zerofox-zerofox-alerts-high-severity-alerts-deb45e6d-892f-40bf-9118-e2a6f26b788d-c9abb77d.md)
-- [ZeroFox Alerts - Informational Severity Alerts](../content/zerofox-zerofox-alerts-informational-severity-alerts-6f7a7413-b72f-4361-84ee-897baeb9c6d4-18c9cec2.md)
-- [ZeroFox Alerts - Low Severity Alerts](../content/zerofox-zerofox-alerts-low-severity-alerts-e0c7a91a-7aa1-498a-9c20-cd6c721f9345-7087702f.md)
-- [ZeroFox Alerts - Medium Severity Alerts](../content/zerofox-zerofox-alerts-medium-severity-alerts-a6496de5-911b-4199-b7db-d34ac9d70df3-2805ff18.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroFox Alerts - High Severity Alerts](../content/zerofox-zerofox-alerts-high-severity-alerts-deb45e6d-892f-40bf-9118-e2a6f26b788d-c9abb77d.md) |  |
+| [ZeroFox Alerts - Informational Severity Alerts](../content/zerofox-zerofox-alerts-informational-severity-alerts-6f7a7413-b72f-4361-84ee-897baeb9c6d4-18c9cec2.md) |  |
+| [ZeroFox Alerts - Low Severity Alerts](../content/zerofox-zerofox-alerts-low-severity-alerts-e0c7a91a-7aa1-498a-9c20-cd6c721f9345-7087702f.md) |  |
+| [ZeroFox Alerts - Medium Severity Alerts](../content/zerofox-zerofox-alerts-medium-severity-alerts-a6496de5-911b-4199-b7db-d34ac9d70df3-2805ff18.md) |  |
 
 ---
 

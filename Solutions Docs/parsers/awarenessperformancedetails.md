@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Awareness_Performance_Details_CL](../tables/awareness-performance-details-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | — | — |
 
 ---
 

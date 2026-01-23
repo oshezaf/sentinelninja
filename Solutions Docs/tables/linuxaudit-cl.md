@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md) |  |
 
 ---
 

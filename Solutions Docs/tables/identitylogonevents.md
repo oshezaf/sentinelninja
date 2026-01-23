@@ -28,7 +28,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) |  |
 
 ---
 
@@ -37,30 +39,48 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Detect Potential Kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-12134de5-361b-427c-a1a0-d43f40a593c4-880800c1.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Detect Potential Kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-12134de5-361b-427c-a1a0-d43f40a593c4-880800c1.md) |  |
 
 ### Hunting Queries (6)
 
-**In solution [](../solutions/.md):**
-- [Detect potential kerberoast activities](../content/-detect-potential-kerberoast-activities-ed25a5c7-2051-44f4-be22-b6cd2f0ad2d0-7180e21a.md)
-- [Detect-Not-Active-AD-User-Accounts](../content/-detect-not-active-ad-user-accounts-9131b716-334f-416e-a50f-809927d63b42-f6ca858a.md)
-- [Device Logons from Unknown IPs](../content/-device-logons-from-unknown-ips-a6d76204-efb2-4ccd-a068-d5a9e6876236-51c24d96.md)
-- [logon-attempts-after-malicious-email](../content/-logon-attempts-after-malicious-email-44a5c680-d2ac-4bed-8210-c3aafea47308-32881f53.md)
-
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Detect Potential kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-35ca729c-04b4-4f6c-b383-caed1b85226e-9755135a.md)
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Kerberos AS authentications](../content/standalone-content-kerberos-as-authentications-8abe561f-eecd-45cb-a0a3-152189d2c064-15a22f7a.md)
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Detect Potential kerberoast Activities](../content/microsoft-defender-xdr-detect-potential-kerberoast-activities-35ca729c-04b4-4f6c-b383-caed1b85226e-9755135a.md) |  |
+
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Kerberos AS authentications](../content/standalone-content-kerberos-as-authentications-8abe561f-eecd-45cb-a0a3-152189d2c064-15a22f7a.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Detect potential kerberoast activities](../content/github-only-detect-potential-kerberoast-activities-ed25a5c7-2051-44f4-be22-b6cd2f0ad2d0-77205ebd.md) |  |
+| [Detect-Not-Active-AD-User-Accounts](../content/github-only-detect-not-active-ad-user-accounts-9131b716-334f-416e-a50f-809927d63b42-c58cf5c0.md) |  |
+| [Device Logons from Unknown IPs](../content/github-only-device-logons-from-unknown-ips-a6d76204-efb2-4ccd-a068-d5a9e6876236-62ddb799.md) |  |
+| [logon-attempts-after-malicious-email](../content/github-only-logon-attempts-after-malicious-email-44a5c680-d2ac-4bed-8210-c3aafea47308-4a967afa.md) |  |
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [microsoftdefenderforidentity](../content/-microsoftdefenderforidentity-cf95fe77.md)
-
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) |  |
 
 ---
 

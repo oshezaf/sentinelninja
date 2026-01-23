@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Entra ID Managed Identity sign i
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [AADManagedIdentitySignInLogs](../tables/aadmanagedidentitysigninlogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | ✓ | ✗ |
 
 ## Parameters
 

@@ -43,16 +43,16 @@ This union parser includes parsers for the following products:
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimProcessEventMD4IoT](../asim/asimprocesseventmd4iot.md) |
-| [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) |
-| [ASimProcessEventNative](../asim/asimprocesseventnative.md) |
-| [ASimProcessTerminateLinuxSysmon](../asim/asimprocessterminatelinuxsysmon.md) |
-| [ASimProcessTerminateMicrosoftSecurityEvents](../asim/asimprocessterminatemicrosoftsecurityevents.md) |
-| [ASimProcessTerminateMicrosoftSysmon](../tables/asimprocessterminatemicrosoftsysmon.md) |
-| [ASimProcessTerminateMicrosoftWindowsEvents](../asim/asimprocessterminatemicrosoftwindowsevents.md) |
-| [ASimProcessTerminateVMwareCarbonBlackCloud](../asim/asimprocessterminatevmwarecarbonblackcloud.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimProcessEventMD4IoT`](../asim/asimprocesseventmd4iot.md) | — | — |
+| [`ASimProcessEventMicrosoft365D`](../asim/asimprocesseventmicrosoft365d.md) | — | — |
+| [`ASimProcessEventNative`](../asim/asimprocesseventnative.md) | — | — |
+| [`ASimProcessTerminateLinuxSysmon`](../asim/asimprocessterminatelinuxsysmon.md) | — | — |
+| [`ASimProcessTerminateMicrosoftSecurityEvents`](../asim/asimprocessterminatemicrosoftsecurityevents.md) | — | — |
+| [`ASimProcessTerminateMicrosoftSysmon`](../tables/asimprocessterminatemicrosoftsysmon.md) | — | — |
+| [`ASimProcessTerminateMicrosoftWindowsEvents`](../asim/asimprocessterminatemicrosoftwindowsevents.md) | — | — |
+| [`ASimProcessTerminateVMwareCarbonBlackCloud`](../asim/asimprocessterminatevmwarecarbonblackcloud.md) | — | — |
 
 ## References
 

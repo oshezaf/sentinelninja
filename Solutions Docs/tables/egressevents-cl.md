@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Egress Iris Connector](../connectors/egresssiempolling.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Egress Iris Connector](../connectors/egresssiempolling.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Egress Iris](../solutions/egress-iris.md):**
-- [PreventWorkbook](../content/egress-iris-preventworkbook-e3444c6a.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [PreventWorkbook](../content/egress-iris-preventworkbook-e3444c6a.md) |  |
 
 ---
 

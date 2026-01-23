@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [ZeroFox CTI](../connectors/zerofoxctidataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) |  |
 
 ---
 

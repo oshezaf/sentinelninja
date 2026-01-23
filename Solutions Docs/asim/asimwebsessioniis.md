@@ -29,9 +29,9 @@ This ASIM parser supports normalizing IIS logs produced to the ASIM Web Session 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [W3CIISLog](../tables/w3ciislog.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ## Parameters
 

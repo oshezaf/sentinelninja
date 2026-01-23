@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Dns logs from Infoblox BloxOne to the ASIM
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID has "DNS"`<br>`DeviceVendor == "Infoblox"` | ✓ | ✓ |
 
 ## Parameters
 

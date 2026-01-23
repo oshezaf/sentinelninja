@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Datawiza DAP](../connectors/datawizadapsolution.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Datawiza DAP](../connectors/datawizadapsolution.md) |  |
 
 ---
 

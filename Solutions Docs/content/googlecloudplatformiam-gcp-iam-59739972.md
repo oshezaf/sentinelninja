@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`GCP_IAM_CL`](../tables/gcp-iam-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | — | — |
 
 ---
 

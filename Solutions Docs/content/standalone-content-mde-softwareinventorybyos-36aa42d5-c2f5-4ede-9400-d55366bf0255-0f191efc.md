@@ -20,7 +20,9 @@ Software Inventory by OS
 
 This content item queries data from the following tables:
 
-- [`DeviceTvmSoftwareInventory`](../tables/devicetvmsoftwareinventory.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceTvmSoftwareInventory`](../tables/devicetvmsoftwareinventory.md) | ✓ | ✗ |
 
 ---
 

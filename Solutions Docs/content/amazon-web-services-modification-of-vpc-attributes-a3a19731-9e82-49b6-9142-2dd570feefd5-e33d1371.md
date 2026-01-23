@@ -23,7 +23,9 @@ An attacker could modify vpc attributesin order to access resources he couldn't 
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ModifyVpcAttribute"` | ✓ | ✓ |
 
 ---
 

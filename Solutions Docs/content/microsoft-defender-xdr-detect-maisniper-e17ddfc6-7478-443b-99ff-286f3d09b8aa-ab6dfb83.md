@@ -21,8 +21,10 @@ This query searches for usage of MailSniper Exchange attack tool.
 
 This content item queries data from the following tables:
 
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
 
 ---
 

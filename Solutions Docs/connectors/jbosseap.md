@@ -26,8 +26,8 @@ The JBoss Enterprise Application Platform data connector provides the capability
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`JBossLogs_CL`](../tables/jbosslogs-cl.md) | — | — |
 
 ## Permissions

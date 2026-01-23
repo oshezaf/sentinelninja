@@ -52,25 +52,25 @@ This union parser includes parsers for the following products:
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimAuditEventAzureActivity](../asim/asimauditeventazureactivity.md) |
-| [ASimAuditEventBarracudaCEF](../asim/asimauditeventbarracudacef.md) |
-| [ASimAuditEventBarracudaWAF](../asim/asimauditeventbarracudawaf.md) |
-| [ASimAuditEventCiscoISE](../asim/asimauditeventciscoise.md) |
-| [ASimAuditEventCiscoMeraki](../asim/asimauditeventciscomeraki.md) |
-| [ASimAuditEventCiscoMerakiSyslog](../asim/asimauditeventciscomerakisyslog.md) |
-| [ASimAuditEventCrowdStrikeFalconHost](../asim/asimauditeventcrowdstrikefalconhost.md) |
-| [ASimAuditEventIllumioSaaSCore](../asim/asimauditeventillumiosaascore.md) |
-| [ASimAuditEventInfobloxBloxOne](../asim/asimauditeventinfobloxbloxone.md) |
-| [ASimAuditEventMicrosoftEvent](../asim/asimauditeventmicrosoftevent.md) |
-| [ASimAuditEventMicrosoftExchangeAdmin365](../asim/asimauditeventmicrosoftexchangeadmin365.md) |
-| [ASimAuditEventMicrosoftSecurityEvents](../asim/asimauditeventmicrosoftsecurityevents.md) |
-| [ASimAuditEventMicrosoftWindowsEvents](../asim/asimauditeventmicrosoftwindowsevents.md) |
-| [ASimAuditEventNative](../asim/asimauditeventnative.md) |
-| [ASimAuditEventSentinelOne](../asim/asimauditeventsentinelone.md) |
-| [ASimAuditEventVMwareCarbonBlackCloud](../asim/asimauditeventvmwarecarbonblackcloud.md) |
-| [ASimAuditEventVectraXDRAudit](../asim/asimauditeventvectraxdraudit.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimAuditEventAzureActivity`](../asim/asimauditeventazureactivity.md) | — | — |
+| [`ASimAuditEventBarracudaCEF`](../asim/asimauditeventbarracudacef.md) | — | — |
+| [`ASimAuditEventBarracudaWAF`](../asim/asimauditeventbarracudawaf.md) | — | — |
+| [`ASimAuditEventCiscoISE`](../asim/asimauditeventciscoise.md) | — | — |
+| [`ASimAuditEventCiscoMeraki`](../asim/asimauditeventciscomeraki.md) | — | — |
+| [`ASimAuditEventCiscoMerakiSyslog`](../asim/asimauditeventciscomerakisyslog.md) | — | — |
+| [`ASimAuditEventCrowdStrikeFalconHost`](../asim/asimauditeventcrowdstrikefalconhost.md) | — | — |
+| [`ASimAuditEventIllumioSaaSCore`](../asim/asimauditeventillumiosaascore.md) | — | — |
+| [`ASimAuditEventInfobloxBloxOne`](../asim/asimauditeventinfobloxbloxone.md) | — | — |
+| [`ASimAuditEventMicrosoftEvent`](../asim/asimauditeventmicrosoftevent.md) | — | — |
+| [`ASimAuditEventMicrosoftExchangeAdmin365`](../asim/asimauditeventmicrosoftexchangeadmin365.md) | — | — |
+| [`ASimAuditEventMicrosoftSecurityEvents`](../asim/asimauditeventmicrosoftsecurityevents.md) | — | — |
+| [`ASimAuditEventMicrosoftWindowsEvents`](../asim/asimauditeventmicrosoftwindowsevents.md) | — | — |
+| [`ASimAuditEventNative`](../asim/asimauditeventnative.md) | — | — |
+| [`ASimAuditEventSentinelOne`](../asim/asimauditeventsentinelone.md) | — | — |
+| [`ASimAuditEventVMwareCarbonBlackCloud`](../asim/asimauditeventvmwarecarbonblackcloud.md) | — | — |
+| [`ASimAuditEventVectraXDRAudit`](../asim/asimauditeventvectraxdraudit.md) | — | — |
 
 ## Parameters
 

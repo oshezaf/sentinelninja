@@ -25,7 +25,9 @@ Creates Microsoft Sentinel incidents for critical risk Theom alerts.
 
 This content item queries data from the following tables:
 
-- [`TheomAlerts_CL`](../tables/theomalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) | — | — |
 
 ---
 

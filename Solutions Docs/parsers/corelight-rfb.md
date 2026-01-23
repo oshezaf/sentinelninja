@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_rfb_CL](../tables/corelight-v2-rfb-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_rfb_CL`](../tables/corelight-v2-rfb-cl.md) | — | — |
 
 ---
 

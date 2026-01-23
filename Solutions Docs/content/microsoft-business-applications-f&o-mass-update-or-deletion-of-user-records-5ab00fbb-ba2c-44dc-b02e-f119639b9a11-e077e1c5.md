@@ -25,7 +25,9 @@ Identifies large delete or update operations on Finance & Operations user record
 
 This content item queries data from the following tables:
 
-- [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | — | — |
 
 ---
 

@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [GitHub_CL](../tables/github-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GitHub_CL`](../tables/github-cl.md) | — | — |
 
 ---
 

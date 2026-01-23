@@ -25,7 +25,9 @@ Identifies changes to access policies in SAP Cloud Integration. Access policies 
 
 This content item queries data from the following tables:
 
-- [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | — |
 
 ---
 

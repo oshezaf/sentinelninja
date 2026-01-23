@@ -27,7 +27,9 @@ Header: X-Frame-Options Missing
 
 This content item queries data from the following tables:
 
-- [`HackerViewLog_Azure_1_CL`](../tables/hackerviewlog-azure-1-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`HackerViewLog_Azure_1_CL`](../tables/hackerviewlog-azure-1-cl.md) | — | — |
 
 ---
 

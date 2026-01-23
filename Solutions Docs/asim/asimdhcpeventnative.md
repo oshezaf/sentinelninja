@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Dhcp Event table (ASimDhcpEvent
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimDhcpEventLogs](../tables/asimdhcpeventlogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) | ✓ | ✓ |
 
 ## Parameters
 

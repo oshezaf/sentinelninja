@@ -25,7 +25,9 @@ This alert indicates detection of OT/ICS-related network activity involving indu
 
 This content item queries data from the following tables:
 
-- [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | — |
 
 ---
 

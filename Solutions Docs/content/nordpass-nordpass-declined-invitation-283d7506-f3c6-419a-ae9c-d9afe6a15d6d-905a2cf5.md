@@ -24,7 +24,9 @@ This will alert you when the user declines the invite to the NordPass organizati
 
 This content item queries data from the following tables:
 
-- [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | — |
 
 ---
 

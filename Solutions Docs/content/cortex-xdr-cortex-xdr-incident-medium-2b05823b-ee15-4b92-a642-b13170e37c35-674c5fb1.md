@@ -22,7 +22,9 @@ A new incident was created in the Cortex XDR portal with a severity "Medium". Cl
 
 This content item queries data from the following tables:
 
-- [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) | — | — |
 
 ---
 

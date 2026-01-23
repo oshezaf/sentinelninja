@@ -25,7 +25,9 @@ Alerts when there are critical notifications fired in the DSP system.
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "30001"` | ✓ | ✓ |
 
 ---
 

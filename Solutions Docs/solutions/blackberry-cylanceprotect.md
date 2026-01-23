@@ -38,12 +38,11 @@ This solution has **1 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`Syslog`](../tables/syslog.md) | [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | - |
-| [`syslog`](../tables/syslog.md) | [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | - |
 
 ## Content Items
 

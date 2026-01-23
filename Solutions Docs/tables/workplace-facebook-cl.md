@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Workplace from Facebook](../connectors/workplacefacebook.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Workplace from Facebook](../connectors/workplacefacebook.md) |  |
 
 ---
 
@@ -24,10 +26,10 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (2)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [Workplace_Facebook](../parsers/workplace-facebook.md) | [Workplace from Facebook](../solutions/workplace-from-facebook.md) | Solution ⚠️ |
-| [Workplace_Facebook](../parsers/workplace-facebook.md) | [Workplace from Facebook](../solutions/workplace-from-facebook.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [Workplace_Facebook](../parsers/workplace-facebook.md) | [Workplace from Facebook](../solutions/workplace-from-facebook.md) ⚠️ |  |
+| [Workplace_Facebook](../parsers/workplace-facebook.md) | [Workplace from Facebook](../solutions/workplace-from-facebook.md) |  |
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 

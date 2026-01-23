@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Vectra AI Streams logs produced to the ASI
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [VectraStream_CL](../tables/vectrastream-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) | — | — |
 
 ## Parameters
 

@@ -22,8 +22,8 @@ Use this data connector to integrate with Sonrai Security and get Sonrai tickets
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) | — | — |
 
 ## Permissions

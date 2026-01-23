@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [ZNSegmentAuditNativePoller_CL](../tables/znsegmentauditnativepoller-cl.md)
-- [ZNSegmentAudit_CL](../tables/znsegmentaudit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | — | — |
+| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) | — | — |
 
 ---
 

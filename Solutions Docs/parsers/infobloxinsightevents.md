@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [InfobloxInsightEvents_CL](../tables/infobloxinsightevents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | — | — |
 
 ---
 

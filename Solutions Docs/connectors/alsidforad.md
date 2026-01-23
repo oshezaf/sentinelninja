@@ -26,11 +26,9 @@ It provides a data parser to manipulate the logs more easily. The different work
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | — | — |
-| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | — | — |
-| [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | — | — |
 
 ## Permissions
 

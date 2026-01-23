@@ -22,8 +22,8 @@ The [Bitglass](https://www.bitglass.com/) data connector provides the capability
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) | — | — |
 
 ## Permissions

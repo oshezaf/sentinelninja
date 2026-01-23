@@ -22,7 +22,9 @@ Adversaries may create cloud instances in unused geographic service regions in o
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ |
 
 ---
 

@@ -25,7 +25,9 @@
 
 This parser reads from the following tables:
 
-- [Syslog](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "%FW-6-LOG_SUMMARY:"` | ✓ | ✓ |
 
 ---
 

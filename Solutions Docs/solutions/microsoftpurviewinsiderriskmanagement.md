@@ -48,7 +48,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **15 table(s)**:
+This solution uses **14 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -66,7 +66,6 @@ This solution uses **15 table(s)**:
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting, Workbooks |
 | [`Syslog`](../tables/syslog.md) | - | Workbooks |
 | [`Update`](../tables/update.md) | - | Workbooks |
-| [`operation`](../tables/operation.md) | - | Workbooks |
 
 ### Internal Tables
 
@@ -74,12 +73,12 @@ The following **6 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`Anomalies`](../tables/anomalies.md) | - | Workbooks |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | - | Hunting, Workbooks |
 | [`IdentityInfo`](../tables/identityinfo.md) | - | Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | [Microsoft 365 Insider Risk Management](../connectors/officeirm.md) | Analytics, Hunting, Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Analytics, Workbooks |
 | [`Watchlist`](../tables/watchlist.md) | - | Workbooks |
-| [`anomalies`](../tables/anomalies.md) | - | Workbooks |
 
 ## Content Items
 
@@ -116,7 +115,7 @@ This solution includes **12 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>[`operation`](../tables/operation.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md)<br>[`anomalies`](../tables/anomalies.md) |
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`EmailEvents`](../tables/emailevents.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`Update`](../tables/update.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`Watchlist`](../tables/watchlist.md) |
 
 ### Playbooks
 

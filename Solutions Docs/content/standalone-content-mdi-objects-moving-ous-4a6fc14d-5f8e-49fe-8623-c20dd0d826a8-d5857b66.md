@@ -21,7 +21,9 @@ Find objects that have been added/removed to different OUs in AD.
 
 This content item queries data from the following tables:
 
-- [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | ✓ | ✗ |
 
 ---
 

@@ -19,16 +19,17 @@
 | **Tactics** | Exfiltration |
 | **Techniques** | T1030 |
 | **Required Connectors** | [CiscoASA](../connectors/ciscoasa.md), [CiscoAsaAma](../connectors/ciscoasaama.md), [PaloAltoNetworks](../connectors/paloaltonetworks.md), [AzureMonitor(VMInsights)](../connectors/azuremonitor-vminsights.md) |
-| **Event Vendor** | VMConnection |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityThreatEssentialSolution/Analytic%20Rules/Threat_Essentials_TimeSeriesAnomaly-MultiVendor_DataExfiltration.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`VMConnection`](../tables/vmconnection.md)
-- [`anomalies`](../tables/anomalies.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
 
 ---
 

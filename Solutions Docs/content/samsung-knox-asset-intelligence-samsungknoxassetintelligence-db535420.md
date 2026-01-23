@@ -16,12 +16,14 @@
 
 This content item queries data from the following tables:
 
-- [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md)
-- [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md)
-- [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md)
-- [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md)
-- [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md)
-- [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md) | — | — |
+| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) | — | — |
+| [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md) | — | — |
+| [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) | — | — |
+| [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) | — | — |
+| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) | — | — |
 
 ---
 

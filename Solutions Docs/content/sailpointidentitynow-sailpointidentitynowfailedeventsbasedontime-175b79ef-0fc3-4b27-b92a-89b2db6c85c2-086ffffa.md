@@ -25,7 +25,9 @@ Detects failed events based on created time.
 
 This content item queries data from the following tables:
 
-- [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) | — | — |
 
 ---
 

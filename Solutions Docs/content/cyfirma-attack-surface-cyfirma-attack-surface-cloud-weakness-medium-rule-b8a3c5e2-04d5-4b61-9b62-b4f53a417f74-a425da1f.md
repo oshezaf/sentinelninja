@@ -25,7 +25,9 @@ This rule detects cloud storage buckets (e.g., AWS S3) that are publicly accessi
 
 This content item queries data from the following tables:
 
-- [`CyfirmaASCloudWeaknessAlerts_CL`](../tables/cyfirmaascloudweaknessalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaASCloudWeaknessAlerts_CL`](../tables/cyfirmaascloudweaknessalerts-cl.md) | — | — |
 
 ---
 

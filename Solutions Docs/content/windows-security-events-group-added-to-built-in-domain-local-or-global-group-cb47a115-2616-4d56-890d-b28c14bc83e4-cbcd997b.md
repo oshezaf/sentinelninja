@@ -22,7 +22,9 @@ A Group created in the last 7 days was added to a privileged built in domain loc
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4727,4728,4731,4732,4754,4756"` | ✓ | ✓ |
 
 ---
 

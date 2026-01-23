@@ -22,8 +22,8 @@ The [MuleSoft Cloudhub](https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cl
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) | — | — |
 
 ## Permissions

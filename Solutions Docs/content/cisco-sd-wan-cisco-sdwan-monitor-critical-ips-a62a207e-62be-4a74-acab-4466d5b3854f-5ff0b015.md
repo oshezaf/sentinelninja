@@ -25,8 +25,10 @@ This analytic rule will monitor critical IPs in Syslog and Netflow Data.
 
 This content item queries data from the following tables:
 
-- [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md)
-- [`Syslog`](../tables/syslog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | — | — |
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
 
 ---
 

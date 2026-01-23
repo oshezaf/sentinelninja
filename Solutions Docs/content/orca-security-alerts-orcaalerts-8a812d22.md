@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) | — | — |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [VectraStream_CL](../tables/vectrastream-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) | — | — |
 
 ---
 

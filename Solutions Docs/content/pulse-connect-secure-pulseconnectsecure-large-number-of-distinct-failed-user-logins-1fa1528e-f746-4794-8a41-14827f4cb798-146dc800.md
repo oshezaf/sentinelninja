@@ -25,7 +25,9 @@ This query identifies evidence of failed login attempts from a large number of d
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "local7"` | ✓ | ✓ |
 
 ---
 

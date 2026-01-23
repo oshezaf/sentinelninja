@@ -29,11 +29,17 @@ This table is used by the following solutions:
 
 ### Hunting Queries (2)
 
-**In solution [](../solutions/.md):**
-- [Find Software By Name and Version](../content/-find-software-by-name-and-version-929d1046-11a9-40c1-977e-bd1984b30c31-98f8f6c6.md)
+**Standalone Content:**
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [MDE_SoftwareInventorybyOS](../content/standalone-content-mde-softwareinventorybyos-36aa42d5-c2f5-4ede-9400-d55366bf0255-0f191efc.md)
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MDE_SoftwareInventorybyOS](../content/standalone-content-mde-softwareinventorybyos-36aa42d5-c2f5-4ede-9400-d55366bf0255-0f191efc.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Find Software By Name and Version](../content/github-only-find-software-by-name-and-version-929d1046-11a9-40c1-977e-bd1984b30c31-dd87e6fe.md) |  |
 
 ---
 

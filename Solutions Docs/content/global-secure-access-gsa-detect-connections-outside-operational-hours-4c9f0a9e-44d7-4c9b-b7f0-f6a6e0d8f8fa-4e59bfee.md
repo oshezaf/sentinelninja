@@ -25,7 +25,9 @@ This query identifies connections that occur outside of the defined operational 
 
 This content item queries data from the following tables:
 
-- [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ |
 
 ---
 

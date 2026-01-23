@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [ExtraHop Detections Data Connector](../connectors/extrahop.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [ExtraHop Detections Data Connector](../connectors/extrahop.md) |  |
 
 ---
 
@@ -25,20 +27,26 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [ExtraHop](../solutions/extrahop.md):**
-- [Generate alerts based on ExtraHop detections recommended for triage](../content/extrahop-generate-alerts-based-on-extrahop-detections-recommended-for-triage-cd65aebc-7e85-4cbb-9f91-ff0376c5d37d-c70bea70.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Generate alerts based on ExtraHop detections recommended for triage](../content/extrahop-generate-alerts-based-on-extrahop-detections-recommended-for-triage-cd65aebc-7e85-4cbb-9f91-ff0376c5d37d-c70bea70.md) |  |
 
 ### Workbooks (1)
 
 **In solution [ExtraHop](../solutions/extrahop.md):**
-- [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview-b10f683c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview-b10f683c.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ExtraHopDetections](../parsers/extrahopdetections.md) | [ExtraHop](../solutions/extrahop.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ExtraHopDetections](../parsers/extrahopdetections.md) | [ExtraHop](../solutions/extrahop.md) |  |
 
 ---
 

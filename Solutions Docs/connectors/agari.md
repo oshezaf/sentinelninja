@@ -24,8 +24,8 @@ This connector uses a Agari REST API connection to push data into Azure Sentinel
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`agari_apdpolicy_log_CL`](../tables/agari-apdpolicy-log-cl.md) | — | — |
 | [`agari_apdtc_log_CL`](../tables/agari-apdtc-log-cl.md) | — | — |
 | [`agari_bpalerts_log_CL`](../tables/agari-bpalerts-log-cl.md) | — | — |

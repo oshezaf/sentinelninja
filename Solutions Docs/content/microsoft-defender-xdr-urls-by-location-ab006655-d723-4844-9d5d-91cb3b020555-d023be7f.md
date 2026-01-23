@@ -24,7 +24,9 @@ Visualises where URLs have been identified in emails, summarizing by location (f
 
 This content item queries data from the following tables:
 
-- [`EmailUrlInfo`](../tables/emailurlinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
 
 ---
 

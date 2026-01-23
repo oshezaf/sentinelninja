@@ -22,13 +22,15 @@ This query determines rare activity by a high-value account on a system or servi
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
-- [`Event`](../tables/event.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ |
+| [`Event`](../tables/event.md) |  | ✓ | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625,4720,4726,4728,4732,4756,7045"` | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`W3CIISLog`](../tables/w3ciislog.md) |  | ✓ | ✗ |
 
 ---
 

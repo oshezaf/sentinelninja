@@ -23,8 +23,10 @@ Query searches for client related errors.
 
 This content item queries data from the following tables:
 
-- [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md)
-- [`Cloudflare_CL`](../tables/cloudflare-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | — | — |
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | — | — |
 
 ---
 

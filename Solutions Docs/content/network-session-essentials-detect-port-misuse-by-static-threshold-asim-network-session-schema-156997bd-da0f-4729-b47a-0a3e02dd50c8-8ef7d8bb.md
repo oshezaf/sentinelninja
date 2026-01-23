@@ -31,8 +31,10 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md)
-- [`NetworkSummary_Protocol_CL`](../tables/networksummary-protocol-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) | — | — |
+| [`NetworkSummary_Protocol_CL`](../tables/networksummary-protocol-cl.md) | — | — |
 
 ---
 

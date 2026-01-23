@@ -6,15 +6,16 @@
 
 ---
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
+- [Standalone Content](../solutions/standalone-content.md)
 - [VirusTotal](../solutions/virustotal.md)
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
 ---
 

@@ -22,7 +22,9 @@ This query looks for when an API call is made to change an IAM, particularly tho
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion,DeleteGroupPolicy,DeletePolicy,DeletePolicyVersion,DeleteRolePolicy,DeleteUserPolicy,DetachGroupPolicy,DetachRolePolicy,PutGroupPolicy,PutUserPolicy"` | ✓ | ✓ |
 
 ---
 

@@ -25,7 +25,9 @@
 
 This parser reads from the following tables:
 
-- [OpenSystemsFirewallLogs_CL](../tables/opensystemsfirewalllogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) | — | — |
 
 ---
 

@@ -22,8 +22,8 @@ The Google Cloud Platform IDS data connector provides the capability to ingest C
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GCPIDS`](../tables/gcpids.md) | ✓ | ✗ |
 
 ## Permissions

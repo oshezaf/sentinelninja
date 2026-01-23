@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [VMware SD-WAN and SASE Connector](../connectors/vmwaresdwan.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [VMware SD-WAN and SASE Connector](../connectors/vmwaresdwan.md) |  |
 
 ---
 
@@ -25,12 +27,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
-- [VMware Cloud Web Security - Web Access Policy Violation](../content/vmware-sase-vmware-cloud-web-security-web-access-policy-violation-b84a1f62-ad30-4ae1-8b21-3d304d8aa818-304b8b85.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VMware Cloud Web Security - Web Access Policy Violation](../content/vmware-sase-vmware-cloud-web-security-web-access-policy-violation-b84a1f62-ad30-4ae1-8b21-3d304d8aa818-304b8b85.md) |  |
 
 ### Workbooks (1)
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
-- [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md) |  |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Microsoft Sentinel Audit Event 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimAuditEventLogs](../tables/asimauditeventlogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ |
 
 ## Parameters
 

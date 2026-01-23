@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [vectra_dcerpc_CL](../tables/vectra-dcerpc-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vectra_dcerpc_CL`](../tables/vectra-dcerpc-cl.md) | — | — |
 
 ---
 

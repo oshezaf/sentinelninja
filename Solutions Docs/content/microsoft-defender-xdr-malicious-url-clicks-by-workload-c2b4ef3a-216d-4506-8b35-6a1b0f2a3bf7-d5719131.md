@@ -24,7 +24,9 @@ Visualises click attempts on malicious URLs, grouped by workload (such as Exchan
 
 This content item queries data from the following tables:
 
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Microsoft Sentinel Authenticati
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimAuthenticationEventLogs](../tables/asimauthenticationeventlogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ |
 
 ## Parameters
 

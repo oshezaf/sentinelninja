@@ -25,7 +25,9 @@ Triggers an incident when a device generates 5 or more Medium or High severity a
 
 This content item queries data from the following tables:
 
-- [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | — | — |
 
 ---
 

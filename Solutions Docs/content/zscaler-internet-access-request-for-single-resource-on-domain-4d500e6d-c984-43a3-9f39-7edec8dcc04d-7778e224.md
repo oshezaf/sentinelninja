@@ -19,14 +19,15 @@ This will look for connections to a domain where only a single file is requested
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1102, T1071 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | Zscaler |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Analytic%20Rules/Zscaler-LowVolumeDomainRequests.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Zscaler"` | ✓ | ✓ |
 
 ---
 

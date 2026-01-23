@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Island Enterprise Browser Admin Audit (Polling CCP)](../connectors/island-admin-polling.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Island Enterprise Browser Admin Audit (Polling CCP)](../connectors/island-admin-polling.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Island](../solutions/island.md):**
-- [IslandAdminAuditOverview](../content/island-islandadminauditoverview-f64c0889.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [IslandAdminAuditOverview](../content/island-islandadminauditoverview-f64c0889.md) |  |
 
 ---
 

@@ -25,7 +25,9 @@ Detects attempts to remove a part of the AWS Config Service.The Threat Actor may
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail"` | ✓ | ✓ |
 
 ---
 

@@ -23,7 +23,9 @@ Detect when a removable storage device is plugged in by the end-user.
 
 This content item queries data from the following tables:
 
-- [`secRMM_CL`](../tables/secrmm-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`secRMM_CL`](../tables/secrmm-cl.md) | — | — |
 
 ---
 

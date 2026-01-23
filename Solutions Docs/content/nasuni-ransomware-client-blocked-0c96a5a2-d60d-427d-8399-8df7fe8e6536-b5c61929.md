@@ -25,7 +25,9 @@ Identifies malicious clients blocked by the Ransomware Protection service runnin
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "The Filer has enforced the mitigation policy on volume"` | ✓ | ✓ |
 
 ---
 

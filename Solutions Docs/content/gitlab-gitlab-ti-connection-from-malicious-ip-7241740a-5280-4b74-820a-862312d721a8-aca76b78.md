@@ -25,7 +25,9 @@ This query correlates Threat Intelligence data from Microsoft Sentinel with GitL
 
 This content item queries data from the following tables:
 
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
 
 ---
 

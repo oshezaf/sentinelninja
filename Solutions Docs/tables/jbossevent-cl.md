@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
 
 ---
 

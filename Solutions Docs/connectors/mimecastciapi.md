@@ -22,8 +22,8 @@ The data connector for [Mimecast Cloud Integrated](https://integrations.mimecast
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) | — | — |
 
 ## Permissions

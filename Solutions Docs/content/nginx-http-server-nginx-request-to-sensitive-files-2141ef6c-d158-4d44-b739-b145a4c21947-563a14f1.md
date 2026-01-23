@@ -25,7 +25,9 @@ Detects request to sensitive files.
 
 This content item queries data from the following tables:
 
-- [`NGINX_CL`](../tables/nginx-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NGINX_CL`](../tables/nginx-cl.md) | — | — |
 
 ---
 

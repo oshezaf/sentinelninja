@@ -19,15 +19,15 @@ Identifies when a new Campaign has been detected.  This occurs when multiple Det
 | **Tactics** | LateralMovement, CommandAndControl |
 | **Techniques** | T1021, T1071 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | Vectra Networks |
-| **Event Product** | X Series |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Detect/Analytic%20Rules/VectraDetect-NewCampaign.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID contains "campaign"`<br>`DeviceProduct == "X Series"`<br>`DeviceVendor == "Vectra Networks"` | ✓ | ✓ |
 
 ---
 

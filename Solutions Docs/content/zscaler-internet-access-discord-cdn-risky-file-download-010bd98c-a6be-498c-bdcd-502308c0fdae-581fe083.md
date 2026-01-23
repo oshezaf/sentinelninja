@@ -19,14 +19,15 @@ Identifies callouts to Discord CDN addresses for risky file extensions. This det
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1071.001 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | ZScaler |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Analytic%20Rules/DiscordCDNRiskyDownload.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "ZScaler"` | ✓ | ✓ |
 
 ---
 

@@ -25,7 +25,9 @@ This analytic rule detects when a suspicious PowerShell commandlet is executed o
 
 This content item queries data from the following tables:
 
-- [`DeviceEvents`](../tables/deviceevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
 
 ---
 

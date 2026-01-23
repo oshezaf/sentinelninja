@@ -16,9 +16,11 @@ This playbook will import Threat Map data from Recorded Future and store it in a
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`RecordedFutureThreatMap_CL`](../tables/recordedfuturethreatmap-cl.md) | write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`RecordedFutureThreatMap_CL`](../tables/recordedfuturethreatmap-cl.md) | — | — |
 
 ---
 

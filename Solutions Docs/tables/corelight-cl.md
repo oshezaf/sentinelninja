@@ -17,7 +17,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
 
 ---
 
@@ -26,16 +28,19 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (2)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimDnsCorelightZeek](../asim/asimdnscorelightzeek.md) | Dns |  |
-| [ASimNetworkSessionCorelightZeek](../asim/asimnetworksessioncorelightzeek.md) | NetworkSession |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimDnsCorelightZeek](../asim/asimdnscorelightzeek.md) | Dns | Corelight Zeek |  |
+| [ASimNetworkSessionCorelightZeek](../asim/asimnetworksessioncorelightzeek.md) | NetworkSession | Corelight Zeek |  |
 
 ---
 

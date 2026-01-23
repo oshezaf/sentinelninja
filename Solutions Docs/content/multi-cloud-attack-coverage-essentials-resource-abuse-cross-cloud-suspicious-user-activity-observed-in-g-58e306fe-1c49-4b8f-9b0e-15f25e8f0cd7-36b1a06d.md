@@ -24,8 +24,10 @@
 
 This content item queries data from the following tables:
 
-- [`GCPAuditLogs`](../tables/gcpauditlogs.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

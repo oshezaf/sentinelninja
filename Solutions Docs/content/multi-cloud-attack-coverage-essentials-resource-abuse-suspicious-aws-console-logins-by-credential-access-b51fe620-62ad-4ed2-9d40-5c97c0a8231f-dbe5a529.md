@@ -24,9 +24,11 @@ This query aims to detect instances of successful AWS console logins that align 
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ConsoleLogin"` | ✓ | ✓ |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
 
 ---
 

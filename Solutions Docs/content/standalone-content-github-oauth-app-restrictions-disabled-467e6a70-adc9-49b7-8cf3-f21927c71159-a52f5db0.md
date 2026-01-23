@@ -21,7 +21,9 @@ This hunting query identifies a fork activity against a repository done by a use
 
 This content item queries data from the following tables:
 
-- [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | — | — |
 
 ---
 

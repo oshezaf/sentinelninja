@@ -22,7 +22,9 @@ This query detects terminated suspicious crypto mining payloads/processes. Attac
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"` | ✓ | ✓ |
 
 ---
 

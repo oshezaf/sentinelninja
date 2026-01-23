@@ -22,8 +22,8 @@ The [Cribl](https://cribl.io/accelerate-cloud-migration/) connector allows you t
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CriblAccess_CL`](../tables/criblaccess-cl.md) | — | — |
 | [`CriblAudit_CL`](../tables/criblaudit-cl.md) | — | — |
 | [`CriblInternal_CL`](../tables/criblinternal-cl.md) | — | — |

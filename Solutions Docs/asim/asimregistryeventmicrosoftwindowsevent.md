@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Windows events (event numbers 46
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [WindowsEvent](../tables/windowsevent.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4657,4663"` | ✓ | ✓ |
 
 ## Parameters
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Corelight Zeek DNS logs to the ASIM Dns no
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Corelight_CL](../tables/corelight-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_CL`](../tables/corelight-cl.md) | — | — |
 
 ## Parameters
 

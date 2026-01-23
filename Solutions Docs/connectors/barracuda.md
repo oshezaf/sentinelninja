@@ -18,7 +18,6 @@
 | **Publisher** | Barracuda |
 | **Used in Solutions** | [Barracuda WAF](../solutions/barracuda-waf.md) |
 | **Collection Method** | MMA |
-| **Event Vendor** | Barracuda |
 | **Connector Definition Files** | [template_Barracuda.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20WAF/Data%20Connectors/template_Barracuda.json) |
 
 ## Additional Information
@@ -35,11 +34,11 @@ The Barracuda Web Application Firewall (WAF) connector allows you to easily conn
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`Barracuda_CL`](../tables/barracuda-cl.md) | — | — |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
-| [`barracuda_CL`](../tables/barracuda-cl.md) | — | — |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Barracuda_CL`](../tables/barracuda-cl.md) |  | — | — |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Barracuda"` | ✓ | ✓ |
+| [`barracuda_CL`](../tables/barracuda-cl.md) |  | — | — |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

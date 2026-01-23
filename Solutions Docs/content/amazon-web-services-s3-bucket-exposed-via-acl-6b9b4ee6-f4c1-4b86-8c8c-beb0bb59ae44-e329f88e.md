@@ -25,7 +25,9 @@ Detected S3 bucket publicly exposed via ACL, which could lead for sensitive info
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "PutBucketAcl"` | ✓ | ✓ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Dynatrace Audit Logs](../connectors/dynatraceauditlogs.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Dynatrace Audit Logs](../connectors/dynatraceauditlogs.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Dynatrace](../solutions/dynatrace.md):**
-- [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dynatrace](../content/dynatrace-dynatrace-eddf4fe2.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [DynatraceAuditLogs](../parsers/dynatraceauditlogs.md) | [Dynatrace](../solutions/dynatrace.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DynatraceAuditLogs](../parsers/dynatraceauditlogs.md) | [Dynatrace](../solutions/dynatrace.md) |  |
 
 ---
 

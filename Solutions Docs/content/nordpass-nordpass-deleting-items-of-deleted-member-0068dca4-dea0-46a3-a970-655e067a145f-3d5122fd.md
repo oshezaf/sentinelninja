@@ -24,7 +24,9 @@ This will alert you if the deleted user's items have been removed without being 
 
 This content item queries data from the following tables:
 
-- [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | — |
 
 ---
 

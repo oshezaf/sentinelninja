@@ -22,8 +22,8 @@ The Anvilogic data connector allows you to pull events of interest generated in 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Anvilogic_Alerts_CL`](../tables/anvilogic-alerts-cl.md) | — | — |
 
 ## Permissions

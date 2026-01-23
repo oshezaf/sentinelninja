@@ -23,7 +23,9 @@ The analytic rule creates an incident when an alert is created in Atlassian Beac
 
 This content item queries data from the following tables:
 
-- [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) | — | — |
 
 ---
 

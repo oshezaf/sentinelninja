@@ -22,8 +22,8 @@ The [SailPoint](https://www.sailpoint.com/) IdentityNow data connector provides 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) | — | — |
 | [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) | — | — |
 

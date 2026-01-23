@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) |  |
 
 ---
 

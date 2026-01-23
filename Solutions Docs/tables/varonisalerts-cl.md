@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Varonis SaaS](../connectors/varonissaas.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Varonis SaaS](../connectors/varonissaas.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [VaronisSaaS](../solutions/varonissaas.md):**
-- [VaronisSaaS](../content/varonissaas-varonissaas-5667e619.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VaronisSaaS](../content/varonissaas-varonissaas-5667e619.md) |  |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Syslog](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has_any "AccessRight,Added,AdminGroup,AdminMember,Created Role,DHCPACK,DHCPDISCOVER,DHCPEXPIRE,DHCPINFORM,DHCPOFFER,DHCPRELEASE,Login_Allowed,Login_Denied,Option,Removed,balanced,balancing,bind,delegatedzone,failover,forwardzone,r-l-e"` | ✓ | ✓ |
 
 ---
 

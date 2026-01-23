@@ -22,8 +22,11 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [SummaryRulesWorkbook](../content/-summaryrulesworkbook-7a50535f.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SummaryRulesWorkbook](../content/github-only-summaryrulesworkbook-d89cc3ca.md) |  |
 
 ## Resource Types
 

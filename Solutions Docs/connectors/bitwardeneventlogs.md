@@ -22,8 +22,8 @@ This connector provides insight into activity of your Bitwarden organization suc
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | — | — |
 | [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | — | — |
 | [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | — | — |

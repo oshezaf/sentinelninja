@@ -10,14 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Contrast Protect](../solutions/contrast-protect.md) |
-| **Event Vendor** | Contrast Security |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect/Workbooks/ContrastProtect.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Contrast Security"` | ✓ | ✓ |
 
 ---
 

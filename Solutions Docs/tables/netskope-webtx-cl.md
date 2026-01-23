@@ -19,22 +19,31 @@ This table is used by the following solutions:
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [NetskopeEvents](../content/-netskopeevents-ad85ebb3.md)
-
 **In solution [Netskope](../solutions/netskope.md):**
-- [NetskopeEvents](../content/netskope-netskopeevents-8c0bf08d.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NetskopeEvents](../content/netskope-netskopeevents-8c0bf08d.md) |  |
 
 **In solution [Netskopev2](../solutions/netskopev2.md):**
-- [NetskopeCEDashboard](../content/netskopev2-netskopecedashboard-35668be9.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NetskopeCEDashboard](../content/netskopev2-netskopecedashboard-35668be9.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NetskopeEvents](../content/github-only-netskopeevents-9ea84d68.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [NetskopeCEWebTransactions](../parsers/netskopecewebtransactions.md) | [Netskopev2](../solutions/netskopev2.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [NetskopeCEWebTransactions](../parsers/netskopecewebtransactions.md) | [Netskopev2](../solutions/netskopev2.md) |  |
 
 ---
 

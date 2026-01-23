@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`WsSecurityEvents_CL`](../tables/wssecurityevents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`WsSecurityEvents_CL`](../tables/wssecurityevents-cl.md) | — | — |
 
 ---
 

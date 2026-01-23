@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | — | — |
 
 ---
 

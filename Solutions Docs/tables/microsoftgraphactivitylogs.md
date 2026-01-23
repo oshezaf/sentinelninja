@@ -22,8 +22,11 @@ Reference for MicrosoftGraphActivityLogs table in Azure Monitor Logs.
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [MicrosoftGraphActivityLogs](../content/-microsoftgraphactivitylogs-6317b929.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftGraphActivityLogs](../content/github-only-microsoftgraphactivitylogs-55b4bbfd.md) |  |
 
 ---
 

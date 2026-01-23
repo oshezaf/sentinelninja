@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) |  |
 
 ---
 
@@ -24,8 +26,11 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [VeeamSecurityActivites](../content/-veeamsecurityactivites-1a727f58.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VeeamSecurityActivites](../content/github-only-veeamsecurityactivites-4f8fb3e5.md) |  |
 
 ---
 

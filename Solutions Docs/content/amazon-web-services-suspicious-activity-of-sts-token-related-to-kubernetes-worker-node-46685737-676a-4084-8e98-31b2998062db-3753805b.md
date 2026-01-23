@@ -23,7 +23,9 @@ Suspicious activity of the STS token of an EC2 machine hosted by EKS (for exampl
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ |
 
 ---
 

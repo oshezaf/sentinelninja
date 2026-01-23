@@ -17,7 +17,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) |  |
 
 ---
 
@@ -26,25 +28,34 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md):**
-- [Known Malware Detected](../content/vmware-carbon-black-cloud-known-malware-detected-9f86885f-f31f-4e66-a39d-352771ee789e-b24b2c6a.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Known Malware Detected](../content/vmware-carbon-black-cloud-known-malware-detected-9f86885f-f31f-4e66-a39d-352771ee789e-b24b2c6a.md) |  |
 
 ### Workbooks (2)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 **In solution [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md):**
-- [VMwareCarbonBlack](../content/vmware-carbon-black-cloud-vmwarecarbonblack-d982f4a4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VMwareCarbonBlack](../content/vmware-carbon-black-cloud-vmwarecarbonblack-d982f4a4.md) |  |
 
 ## Parsers Using This Table (3)
 
 ### ASIM Parsers (3)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimFileEventVMwareCarbonBlackCloud](../asim/asimfileeventvmwarecarbonblackcloud.md) | FileEvent |  |
-| [ASimProcessTerminateVMwareCarbonBlackCloud](../asim/asimprocessterminatevmwarecarbonblackcloud.md) | ProcessEvent |  |
-| [ASimRegistryEventVMwareCarbonBlackCloud](../asim/asimregistryeventvmwarecarbonblackcloud.md) | RegistryEvent |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimFileEventVMwareCarbonBlackCloud](../asim/asimfileeventvmwarecarbonblackcloud.md) | FileEvent | VMware Carbon Black Cloud |  |
+| [ASimProcessTerminateVMwareCarbonBlackCloud](../asim/asimprocessterminatevmwarecarbonblackcloud.md) | ProcessEvent | VMware Carbon Black Cloud |  |
+| [ASimRegistryEventVMwareCarbonBlackCloud](../asim/asimregistryeventvmwarecarbonblackcloud.md) | RegistryEvent | VMware Carbon Black Cloud |  |
 
 ---
 

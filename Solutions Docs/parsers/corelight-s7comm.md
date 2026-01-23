@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_s7comm_CL](../tables/corelight-v2-s7comm-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_s7comm_CL`](../tables/corelight-v2-s7comm-cl.md) | — | — |
 
 ---
 

@@ -24,10 +24,12 @@ This query detects attempts to add attacker devices as allowed IDs for active sy
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`Event`](../tables/event.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
+| [`Event`](../tables/event.md) | `Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "1,4688"` | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ |
 
 ---
 

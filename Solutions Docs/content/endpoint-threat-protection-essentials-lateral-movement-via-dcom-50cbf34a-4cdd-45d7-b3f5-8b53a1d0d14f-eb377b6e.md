@@ -25,7 +25,9 @@ This query detects a fairly uncommon attack technique using the Windows Distribu
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID == "1"` | ✓ | ✗ |
 
 ---
 

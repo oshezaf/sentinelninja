@@ -21,7 +21,9 @@ Any Alerts that fired related to a given File during the range of +6h and -3d
 
 This content item queries data from the following tables:
 
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

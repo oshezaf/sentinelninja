@@ -24,8 +24,8 @@ The Authomize Data Connector provides the capability to ingest custom log types 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — |
 
 ## Permissions

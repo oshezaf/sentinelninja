@@ -22,8 +22,8 @@ The Forescout Host Property Monitor connector allows you to connect host/policy/
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) | — | — |
 | [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) | — | — |
 | [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) | — | — |

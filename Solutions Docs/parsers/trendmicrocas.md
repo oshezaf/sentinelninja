@@ -25,7 +25,9 @@
 
 This parser reads from the following tables:
 
-- [TrendMicroCAS_CL](../tables/trendmicrocas-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | — | — |
 
 ---
 

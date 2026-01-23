@@ -23,9 +23,12 @@ This table is used by the following solutions:
 
 ### Analytic Rules (2)
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [AppServices AV Scan Failure](../content/standalone-content-appservices-av-scan-failure-c2da1106-bfe4-4a63-bf14-5ab73130ccd5-d6a02a6e.md)
-- [AppServices AV Scan with Infected Files](../content/standalone-content-appservices-av-scan-with-infected-files-9d0295ee-cb75-4f2c-9952-e5acfbb67036-8bc4532c.md)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AppServices AV Scan Failure](../content/standalone-content-appservices-av-scan-failure-c2da1106-bfe4-4a63-bf14-5ab73130ccd5-d6a02a6e.md) |  |
+| [AppServices AV Scan with Infected Files](../content/standalone-content-appservices-av-scan-with-infected-files-9d0295ee-cb75-4f2c-9952-e5acfbb67036-8bc4532c.md) |  |
 
 ---
 

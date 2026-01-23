@@ -23,9 +23,11 @@ This query shows failed login attempts where username is unknown.
 
 This content item queries data from the following tables:
 
-- [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)
-- [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)
-- [`SlackAudit_CL`](../tables/slackaudit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | — | — |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | — | — |
+| [`SlackAudit_CL`](../tables/slackaudit-cl.md) | — | — |
 
 ---
 

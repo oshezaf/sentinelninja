@@ -16,16 +16,18 @@
 
 This content item queries data from the following tables:
 
-- [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md)
-- [`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md)
-- [`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md)
-- [`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md)
-- [`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md)
-- [`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md)
-- [`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md)
-- [`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md)
-- [`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md)
-- [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TaniumComplyCompliance_CL`](../tables/taniumcomplycompliance-cl.md) | — | — |
+| [`TaniumComplyVulnerabilities_CL`](../tables/taniumcomplyvulnerabilities-cl.md) | — | — |
+| [`TaniumDefenderHealth_CL`](../tables/taniumdefenderhealth-cl.md) | — | — |
+| [`TaniumDiscoverUnmanagedAssets_CL`](../tables/taniumdiscoverunmanagedassets-cl.md) | — | — |
+| [`TaniumHighUptime_CL`](../tables/taniumhighuptime-cl.md) | — | — |
+| [`TaniumPatchCoverageStatus_CL`](../tables/taniumpatchcoveragestatus-cl.md) | — | — |
+| [`TaniumPatchListApplicability_CL`](../tables/taniumpatchlistapplicability-cl.md) | — | — |
+| [`TaniumPatchListCompliance_CL`](../tables/taniumpatchlistcompliance-cl.md) | — | — |
+| [`TaniumSCCMClientHealth_CL`](../tables/taniumsccmclienthealth-cl.md) | — | — |
+| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) | — | — |
 
 ---
 

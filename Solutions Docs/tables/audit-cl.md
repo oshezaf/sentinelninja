@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Mimecast Audit](../connectors/mimecastauditapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Mimecast Audit](../connectors/mimecastauditapi.md) |  |
 
 ---
 
@@ -25,20 +27,26 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast Audit - Logon Authentication Failed](../content/mimecast-mimecast-audit-logon-authentication-failed-f00197ab-491f-41e7-9e22-a7003a4c1e54-34f15bb0.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast Audit - Logon Authentication Failed](../content/mimecast-mimecast-audit-logon-authentication-failed-f00197ab-491f-41e7-9e22-a7003a4c1e54-34f15bb0.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast_Audit_Workbook](../content/mimecast-mimecast-audit-workbook-2c0dd88f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast_Audit_Workbook](../content/mimecast-mimecast-audit-workbook-2c0dd88f.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [MimecastAudit](../parsers/mimecastaudit.md) | [Mimecast](../solutions/mimecast.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [MimecastAudit](../parsers/mimecastaudit.md) | [Mimecast](../solutions/mimecast.md) |  |
 
 ---
 

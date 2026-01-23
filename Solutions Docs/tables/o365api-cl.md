@@ -14,7 +14,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
 ---
 

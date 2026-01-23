@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [CriblUIAccess_CL](../tables/cribluiaccess-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) | — | — |
 
 ---
 

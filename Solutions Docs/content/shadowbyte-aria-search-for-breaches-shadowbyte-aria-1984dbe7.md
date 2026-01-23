@@ -16,9 +16,11 @@ This playbook updates the Incident with the brach details if an account has been
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) | write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) | — | — |
 
 ## Additional Documentation
 

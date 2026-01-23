@@ -24,11 +24,13 @@ This query will determine multiple password resets by user across multiple data 
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`Syslog`](../tables/syslog.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `Facility in "auth,authpriv"`<br>`SyslogMessage matchesregex ".*password changed for.*"` | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4723,4724"` | ✓ | ✓ |
 
 ---
 

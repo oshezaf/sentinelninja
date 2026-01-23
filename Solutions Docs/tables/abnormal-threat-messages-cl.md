@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [AbnormalSecurity ](../connectors/abnormalsecurity.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [AbnormalSecurity ](../connectors/abnormalsecurity.md) |  |
 
 ---
 

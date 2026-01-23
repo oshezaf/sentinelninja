@@ -22,8 +22,8 @@ The [AliCloud](https://www.alibabacloud.com/product/log-service) data connector 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AliCloud_CL`](../tables/alicloud-cl.md) | — | — |
 
 ## Permissions

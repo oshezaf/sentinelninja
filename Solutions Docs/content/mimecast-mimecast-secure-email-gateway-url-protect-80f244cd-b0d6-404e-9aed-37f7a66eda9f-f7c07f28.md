@@ -25,7 +25,9 @@ Detect threat when potentially malicious url found.
 
 This content item queries data from the following tables:
 
-- [`Seg_Cg_CL`](../tables/seg-cg-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | — | — |
 
 ---
 

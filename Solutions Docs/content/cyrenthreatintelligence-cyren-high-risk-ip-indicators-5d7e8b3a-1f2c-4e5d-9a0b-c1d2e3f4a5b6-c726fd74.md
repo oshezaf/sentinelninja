@@ -25,7 +25,9 @@ Detects high-risk IP indicators (risk score >= 80) from Cyren threat intelligenc
 
 This content item queries data from the following tables:
 
-- [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | — | — |
 
 ---
 

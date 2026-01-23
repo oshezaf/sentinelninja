@@ -25,7 +25,9 @@ The policy detects IAM users across your AWS accounts, a practice that should be
 
 This content item queries data from the following tables:
 
-- [`Authomize_v2_CL`](../tables/authomize-v2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — |
 
 ---
 

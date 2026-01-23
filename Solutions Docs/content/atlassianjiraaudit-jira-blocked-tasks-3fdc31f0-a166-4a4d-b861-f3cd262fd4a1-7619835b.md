@@ -23,8 +23,10 @@ Query searches for blocked tasks.
 
 This content item queries data from the following tables:
 
-- [`Jira_Audit_CL`](../tables/jira-audit-cl.md)
-- [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) | — | — |
+| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) | — | — |
 
 ---
 

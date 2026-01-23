@@ -24,8 +24,10 @@ This detection focuses on identifying user-related events involving IAM roles, g
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateRole,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteLoginProfile,DeleteRole,DeleteUser,RemoveUserFromGroup"` | ✓ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
 
 ---
 

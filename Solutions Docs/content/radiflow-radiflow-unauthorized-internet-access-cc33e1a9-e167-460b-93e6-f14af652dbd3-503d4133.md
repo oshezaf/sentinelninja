@@ -19,14 +19,15 @@ Generates an incident when an unauthorized link between the network and the Inte
 | **Tactics** | InitialAccess, Impact |
 | **Techniques** | T0822, T0883, T0882 |
 | **Required Connectors** | [RadiflowIsid](../connectors/radiflowisid.md) |
-| **Event Product** | iSID |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow/Analytic%20Rules/RadiflowUnauthorizedInternetAccess.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "iSID"`<br>`DeviceVendor == "radiflow"` | ✓ | ✓ |
 
 ---
 

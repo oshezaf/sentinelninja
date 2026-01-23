@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`DigitalShadows_CL`](../tables/digitalshadows-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) | — | — |
 
 ---
 

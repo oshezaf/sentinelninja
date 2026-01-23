@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [PDNS_Data_CL](../tables/pdns-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`PDNS_Data_CL`](../tables/pdns-data-cl.md) | — | — |
 
 ---
 

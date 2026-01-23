@@ -22,8 +22,8 @@ The [Armis](https://www.armis.com/) Device connector gives the capability to ing
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Armis_Devices_CL`](../tables/armis-devices-cl.md) | — | — |
 
 ## Permissions

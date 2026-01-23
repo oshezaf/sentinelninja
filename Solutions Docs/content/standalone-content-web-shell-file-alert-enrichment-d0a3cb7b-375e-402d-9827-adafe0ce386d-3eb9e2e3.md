@@ -21,8 +21,10 @@ Extracts MDATP Alert for a web shell being placed on the server and then enriche
 
 This content item queries data from the following tables:
 
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

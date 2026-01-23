@@ -25,7 +25,9 @@ When a Knox device user clicks on URLs or links detected as suspicious (potentia
 
 This content item queries data from the following tables:
 
-- [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) | — | — |
 
 ---
 

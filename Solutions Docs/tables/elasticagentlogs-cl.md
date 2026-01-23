@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Elastic Agent](../connectors/elasticagent.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Elastic Agent](../connectors/elasticagent.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ElasticAgentEvent](../parsers/elasticagentevent.md) | [ElasticAgent](../solutions/elasticagent.md) | Solution ⚠️ |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ElasticAgentEvent](../parsers/elasticagentevent.md) | [ElasticAgent](../solutions/elasticagent.md) ⚠️ |  |
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 

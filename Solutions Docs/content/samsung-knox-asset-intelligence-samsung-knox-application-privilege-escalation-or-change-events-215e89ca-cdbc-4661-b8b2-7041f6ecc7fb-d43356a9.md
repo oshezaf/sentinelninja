@@ -25,7 +25,9 @@ When a Knox mobile app has transitioned from an acceptable uid/esuid/fsuid to a 
 
 This content item queries data from the following tables:
 
-- [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) | — | — |
 
 ---
 

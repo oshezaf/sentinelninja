@@ -22,7 +22,9 @@ This hunting query looks for increases in the number of workspaces queried by a 
 
 This content item queries data from the following tables:
 
-- [`LAQueryLogs`](../tables/laquerylogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LAQueryLogs`](../tables/laquerylogs.md) | ✓ | ✗ |
 
 ---
 

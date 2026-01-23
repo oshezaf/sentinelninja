@@ -16,9 +16,11 @@
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityIncident`](../tables/securityincident.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AuditEvent"`<br>`ResourceType == "VAULTS"` | — | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
 
 ---
 

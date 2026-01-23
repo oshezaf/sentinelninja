@@ -17,7 +17,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Illumio SaaS](../connectors/illumiosaasdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Illumio SaaS](../connectors/illumiosaasdataconnector.md) |  |
 
 ---
 
@@ -26,29 +28,38 @@ This table is ingested by the following connectors:
 ### Analytic Rules (6)
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):**
-- [Illumio Enforcement Change Analytic Rule](../content/illumiosaas-illumio-enforcement-change-analytic-rule-599fdc92-eb6d-4b54-8d79-2a3f740a846a-d2fd3adb.md)
-- [Illumio Firewall Tampering Analytic Rule](../content/illumiosaas-illumio-firewall-tampering-analytic-rule-e9e4e466-3970-4165-bc8d-7721c6ef34a6-c6814f6c.md)
-- [Illumio VEN Clone Detection Rule](../content/illumiosaas-illumio-ven-clone-detection-rule-b3c4b8f4-c12c-471e-9999-023c05852276-5f6d9aa6.md)
-- [Illumio VEN Deactivated Detection Rule](../content/illumiosaas-illumio-ven-deactivated-detection-rule-c18bd8c2-50f0-4aa2-8122-d449243627d7-09d7c76f.md)
-- [Illumio VEN Offline Detection Rule](../content/illumiosaas-illumio-ven-offline-detection-rule-ec07fcd3-724f-426d-9f53-041801ca5f6c-43578bfc.md)
-- [Illumio VEN Suspend Detection Rule](../content/illumiosaas-illumio-ven-suspend-detection-rule-7379f752-18a2-43ca-8b74-70747dd792f8-c5108207.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Illumio Enforcement Change Analytic Rule](../content/illumiosaas-illumio-enforcement-change-analytic-rule-599fdc92-eb6d-4b54-8d79-2a3f740a846a-d2fd3adb.md) |  |
+| [Illumio Firewall Tampering Analytic Rule](../content/illumiosaas-illumio-firewall-tampering-analytic-rule-e9e4e466-3970-4165-bc8d-7721c6ef34a6-c6814f6c.md) |  |
+| [Illumio VEN Clone Detection Rule](../content/illumiosaas-illumio-ven-clone-detection-rule-b3c4b8f4-c12c-471e-9999-023c05852276-5f6d9aa6.md) |  |
+| [Illumio VEN Deactivated Detection Rule](../content/illumiosaas-illumio-ven-deactivated-detection-rule-c18bd8c2-50f0-4aa2-8122-d449243627d7-09d7c76f.md) |  |
+| [Illumio VEN Offline Detection Rule](../content/illumiosaas-illumio-ven-offline-detection-rule-ec07fcd3-724f-426d-9f53-041801ca5f6c-43578bfc.md) |  |
+| [Illumio VEN Suspend Detection Rule](../content/illumiosaas-illumio-ven-suspend-detection-rule-7379f752-18a2-43ca-8b74-70747dd792f8-c5108207.md) |  |
 
 ### Workbooks (2)
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):**
-- [IllumioAuditableEvents](../content/illumiosaas-illumioauditableevents-7d7e85b3.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [IllumioAuditableEvents](../content/illumiosaas-illumioauditableevents-7d7e85b3.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (2)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimAuditEventIllumioSaaSCore](../asim/asimauditeventillumiosaascore.md) | AuditEvent |  |
-| [ASimAuthenticationIllumioSaaSCore](../asim/asimauthenticationillumiosaascore.md) | Authentication |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventIllumioSaaSCore](../asim/asimauditeventillumiosaascore.md) | AuditEvent | Illumio Core |  |
+| [ASimAuthenticationIllumioSaaSCore](../asim/asimauthenticationillumiosaascore.md) | Authentication | Illumio |  |
 
 ---
 

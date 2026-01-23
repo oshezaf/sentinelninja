@@ -22,10 +22,10 @@ Tenable Identity Exposure connector allows Indicators of Exposure, Indicators of
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | — | — |
 | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | — | — |
-| [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | — | — |
 
 ## Permissions
 

@@ -23,8 +23,10 @@ Query shows downloaded data volume per user.
 
 This content item queries data from the following tables:
 
-- [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md)
-- [`BoxEvents_CL`](../tables/boxevents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | — | — |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) | — | — |
 
 ---
 

@@ -24,7 +24,9 @@ Visualises malicious URL clicks that were allowed through Safe Links over time, 
 
 This content item queries data from the following tables:
 
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

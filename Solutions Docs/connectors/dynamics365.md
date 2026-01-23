@@ -22,8 +22,8 @@ The Dynamics 365 Common Data Service (CDS) activities connector provides insight
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) | ✓ | ✗ |
 
 ## Permissions

@@ -19,14 +19,15 @@ Generates an incident when a new asset or MAC is detected either by Radiflow's i
 | **Tactics** | InitialAccess |
 | **Techniques** | T1133, T0848 |
 | **Required Connectors** | [RadiflowIsid](../connectors/radiflowisid.md) |
-| **Event Product** | iSID |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow/Analytic%20Rules/RadiflowNewActivityDetected.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "iSID"`<br>`DeviceVendor == "radiflow"` | ✓ | ✓ |
 
 ---
 

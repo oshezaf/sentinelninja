@@ -22,7 +22,9 @@ This query helps hunt for emails with malicious attachments based on SH256 hash 
 
 This content item queries data from the following tables:
 
-- [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ |
 
 ---
 

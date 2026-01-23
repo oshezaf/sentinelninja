@@ -24,12 +24,14 @@ Malware authors will sometimes hardcode user agent string values when writing th
 
 This content item queries data from the following tables:
 
-- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

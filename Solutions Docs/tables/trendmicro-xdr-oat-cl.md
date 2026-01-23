@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Trend Vision One](../connectors/trendmicroxdr.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Trend Vision One](../connectors/trendmicroxdr.md) |  |
 
 ---
 
@@ -24,16 +26,19 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [Data_Latency_Workbook](../content/-data-latency-workbook-a79ce949.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimRegistryEventTrendMicroVisionOne](../asim/asimregistryeventtrendmicrovisionone.md) | RegistryEvent |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimRegistryEventTrendMicroVisionOne](../asim/asimregistryeventtrendmicrovisionone.md) | RegistryEvent | Trend Micro Vision One |  |
 
 ---
 

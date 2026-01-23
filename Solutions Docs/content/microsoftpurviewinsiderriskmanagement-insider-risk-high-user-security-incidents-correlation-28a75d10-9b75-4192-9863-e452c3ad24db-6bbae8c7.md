@@ -24,7 +24,9 @@
 
 This content item queries data from the following tables:
 
-- [`SecurityIncident`](../tables/securityincident.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
 
 ---
 

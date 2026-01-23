@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Sevco Platform - Devices](../connectors/sevcodevices.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Sevco Platform - Devices](../connectors/sevcodevices.md) |  |
 
 ---
 

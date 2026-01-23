@@ -24,7 +24,9 @@ This rule detects high severity attack surface-based vulnerabilities from CYFIRM
 
 This content item queries data from the following tables:
 
-- [`CyfirmaVulnerabilities_CL`](../tables/cyfirmavulnerabilities-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaVulnerabilities_CL`](../tables/cyfirmavulnerabilities-cl.md) | — | — |
 
 ---
 

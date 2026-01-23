@@ -23,7 +23,9 @@ This detection looks for command line parameters associated with the use of Sysi
 
 This content item queries data from the following tables:
 
-- [`imProcess`](../tables/improcess.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`imProcess`](../tables/improcess.md) | — | — |
 
 ---
 

@@ -22,8 +22,8 @@ Collects alerts from ZeroFox API.
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | — | — |
 
 ## Permissions

@@ -23,7 +23,9 @@ Identifies a set of Azure Virtual Network Subnets for administrative and operati
 
 This content item queries data from the following tables:
 
-- [`AzureActivity`](../tables/azureactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
 
 ---
 

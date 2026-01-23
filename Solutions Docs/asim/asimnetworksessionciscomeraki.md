@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Cisco Meraki logs ingested in 'meraki_CL' 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [meraki_CL](../tables/meraki-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`meraki_CL`](../tables/meraki-cl.md) | — | — |
 
 ## Parameters
 

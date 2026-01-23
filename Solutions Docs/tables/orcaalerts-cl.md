@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Orca Security Alerts](../connectors/orcasecurityalerts.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Orca Security Alerts](../connectors/orcasecurityalerts.md) |  |
 
 ---
 
@@ -24,11 +26,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [OrcaAlerts](../content/-orcaalerts-a9f67b99.md)
-
 **In solution [Orca Security Alerts](../solutions/orca-security-alerts.md):**
-- [OrcaAlerts](../content/orca-security-alerts-orcaalerts-8a812d22.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [OrcaAlerts](../content/orca-security-alerts-orcaalerts-8a812d22.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [OrcaAlerts](../content/github-only-orcaalerts-1d7fde1d.md) |  |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[DEPRECATED] Lookout](../connectors/lookoutapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[DEPRECATED] Lookout](../connectors/lookoutapi.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Lookout](../solutions/lookout.md):**
-- [Lookout - New Threat events found.](../content/lookout-lookout-new-threat-events-found.-7593cc60-e294-402d-9202-279fb3c7d55f-4c60e079.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Lookout - New Threat events found.](../content/lookout-lookout-new-threat-events-found.-7593cc60-e294-402d-9202-279fb3c7d55f-4c60e079.md) |  |
 
 ---
 

@@ -25,9 +25,11 @@ Detects when an HTTP request was made to a domain that was using unicode/punycod
 
 This content item queries data from the following tables:
 
-- [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md)
-- [`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md)
-- [`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_http2_CL`](../tables/corelight-v2-http2-cl.md) | — | — |
+| [`Corelight_v2_http_CL`](../tables/corelight-v2-http-cl.md) | — | — |
+| [`Corelight_v2_http_red_CL`](../tables/corelight-v2-http-red-cl.md) | — | — |
 
 ---
 

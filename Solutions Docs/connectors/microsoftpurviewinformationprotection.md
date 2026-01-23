@@ -28,8 +28,8 @@ Microsoft Purview Information Protection helps you discover, classify, protect, 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | ✓ | ✗ |
 
 ## Permissions

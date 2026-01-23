@@ -31,7 +31,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Entra ID](../connectors/azureactivedirectory.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Entra ID](../connectors/azureactivedirectory.md) |  |
 
 ---
 
@@ -40,36 +42,54 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
-- [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) |  |
 
 ### Workbooks (9)
 
-**In solution [](../solutions/.md):**
-- [AADManagedIdentitySignInLogs](../content/-aadmanagedidentitysigninlogs-2cc8e44f.md)
-- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-- [DSTIMWorkbook](../content/-dstimworkbook-0a68e0ad.md)
-- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
-
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
-- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
-- [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AADManagedIdentitySignInLogs](../content/github-only-aadmanagedidentitysigninlogs-e106dbaf.md) |  |
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimAuthenticationAADManagedIdentitySignInLogs](../asim/asimauthenticationaadmanagedidentitysigninlogs.md) | Authentication |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuthenticationAADManagedIdentitySignInLogs](../asim/asimauthenticationaadmanagedidentitysigninlogs.md) | Authentication | Microsoft Entra ID |  |
 
 ---
 

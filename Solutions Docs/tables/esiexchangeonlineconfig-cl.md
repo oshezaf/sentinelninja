@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) |  |
 
 ---
 
@@ -25,16 +27,19 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md):**
-- [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md)
-- [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Microsoft Exchange Least Privilege with RBAC - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-least-privilege-with-rbac-online-e1522c02.md) |  |
+| [Microsoft Exchange Security Review - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-security-review-online-bf15f919.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [MESCompareDataMRA](../parsers/mescomparedatamra.md) | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [MESCompareDataMRA](../parsers/mescomparedatamra.md) | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |  |
 
 ---
 

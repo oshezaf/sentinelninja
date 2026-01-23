@@ -24,9 +24,11 @@ Identifies a match in EmailUrlInfo table from any Domain IOC from TI.
 
 This content item queries data from the following tables:
 
-- [`EmailEvents`](../tables/emailevents.md)
-- [`EmailUrlInfo`](../tables/emailurlinfo.md)
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 
 ---
 

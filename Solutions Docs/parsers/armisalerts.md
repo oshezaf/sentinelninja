@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Armis_Alerts_CL](../tables/armis-alerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Armis_Alerts_CL`](../tables/armis-alerts-cl.md) | — | — |
 
 ---
 

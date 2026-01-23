@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Entra ID Service Principal sign 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [AADServicePrincipalSignInLogs](../tables/aadserviceprincipalsigninlogs.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | ✓ | ✗ |
 
 ## Parameters
 

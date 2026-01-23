@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Illumio SaaS Core logs to the ASIM Network
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Illumio_Flow_Events_CL](../tables/illumio-flow-events-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | — | — |
 
 ## Parameters
 

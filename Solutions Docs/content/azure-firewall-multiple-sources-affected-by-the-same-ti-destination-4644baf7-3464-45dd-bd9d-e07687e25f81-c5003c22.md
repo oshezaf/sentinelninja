@@ -25,8 +25,10 @@ Identifies multiple machines trying to reach out to the same destination blocked
 
 This content item queries data from the following tables:
 
-- [`AZFWThreatIntel`](../tables/azfwthreatintel.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 
 ---
 

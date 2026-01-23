@@ -22,8 +22,8 @@ The ZeroFox CTI data connectors provide the capability to ingest the different [
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ZeroFox_CTI_C2_CL`](../tables/zerofox-cti-c2-cl.md) | — | — |
 | [`ZeroFox_CTI_advanced_dark_web_CL`](../tables/zerofox-cti-advanced-dark-web-cl.md) | — | — |
 | [`ZeroFox_CTI_botnet_CL`](../tables/zerofox-cti-botnet-cl.md) | — | — |

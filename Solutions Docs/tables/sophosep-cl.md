@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Sophos Endpoint Protection](../connectors/sophosep.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Sophos Endpoint Protection](../connectors/sophosep.md) |  |
 
 ---
 

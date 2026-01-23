@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [CassandraAuditLog_CL](../tables/cassandraauditlog-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CassandraAuditLog_CL`](../tables/cassandraauditlog-cl.md) | — | — |
 
 ---
 

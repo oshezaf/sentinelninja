@@ -40,8 +40,8 @@ For more information, see the [Microsoft Sentinel documentation](https://go.micr
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
 | [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
 | [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |

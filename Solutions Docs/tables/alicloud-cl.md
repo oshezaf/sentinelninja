@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [AliCloud](../connectors/alicloud.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [AliCloud](../connectors/alicloud.md) |  |
 
 ---
 
@@ -24,16 +26,19 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [AliCloudWorkbook](../content/-alicloudworkbook-83017560.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AliCloudWorkbook](../content/github-only-alicloudworkbook-2adacca8.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [AliCloud](../parsers/alicloud.md) | [Alibaba Cloud](../solutions/alibaba-cloud.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AliCloud](../parsers/alicloud.md) | [Alibaba Cloud](../solutions/alibaba-cloud.md) |  |
 
 ---
 

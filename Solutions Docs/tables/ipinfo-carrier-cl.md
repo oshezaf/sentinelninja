@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [IPinfo Carrier Data Connector](../connectors/ipinfocarrierdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [IPinfo Carrier Data Connector](../connectors/ipinfocarrierdataconnector.md) |  |
 
 ---
 

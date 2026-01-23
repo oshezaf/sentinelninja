@@ -22,8 +22,8 @@ This connector uses the [Dynatrace Audit Logs REST API](https://docs.dynatrace.c
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | — | — |
 
 ## Permissions

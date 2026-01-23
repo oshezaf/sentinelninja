@@ -29,17 +29,20 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (3)
 
 ### ASIM Parsers (3)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimAuthenticationMD4IoT](../asim/asimauthenticationmd4iot.md) | Authentication |  |
-| [ASimNetworkSessionMD4IoTAgent](../asim/asimnetworksessionmd4iotagent.md) | NetworkSession |  |
-| [ASimProcessEventMD4IoT](../asim/asimprocesseventmd4iot.md) | ProcessEvent |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuthenticationMD4IoT](../asim/asimauthenticationmd4iot.md) | Authentication | Microsoft Defender for IoT |  |
+| [ASimNetworkSessionMD4IoTAgent](../asim/asimnetworksessionmd4iotagent.md) | NetworkSession | Microsoft Defender for IoT |  |
+| [ASimProcessEventMD4IoT](../asim/asimprocesseventmd4iot.md) | ProcessEvent | Microsoft Defender for IoT |  |
 
 ---
 

@@ -25,7 +25,9 @@ This alert creates an incident when a client generates an excessive amounts of d
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "local0"` | ✓ | ✓ |
 
 ---
 

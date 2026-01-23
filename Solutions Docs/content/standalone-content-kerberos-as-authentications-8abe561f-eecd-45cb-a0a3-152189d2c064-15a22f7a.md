@@ -21,7 +21,9 @@ This query shows attempts to request Kerberos service ticket using the AS servic
 
 This content item queries data from the following tables:
 
-- [`IdentityLogonEvents`](../tables/identitylogonevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | ✓ | ✗ |
 
 ---
 

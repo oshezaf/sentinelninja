@@ -22,8 +22,8 @@ The [BitSight](https://www.BitSight.com/) Data Connector supports evidence-based
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | — | — |
 | [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | — | — |
 | [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | — | — |

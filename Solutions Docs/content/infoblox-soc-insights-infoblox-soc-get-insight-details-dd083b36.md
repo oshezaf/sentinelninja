@@ -16,13 +16,15 @@ Leverages the Infoblox SOC Insights API to enrich a Microsoft Sentinel Incident 
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | write |
-| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | write |
-| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | write |
-| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | write |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | write |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | — | — |
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | — | — |
+| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | — | — |
+| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | — | — |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | — |
 
 ---
 

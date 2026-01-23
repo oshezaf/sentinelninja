@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [CriblAudit_CL](../tables/criblaudit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CriblAudit_CL`](../tables/criblaudit-cl.md) | — | — |
 
 ---
 

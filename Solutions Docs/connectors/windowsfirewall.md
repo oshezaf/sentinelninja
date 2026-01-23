@@ -24,8 +24,8 @@ Windows Firewall is a Microsoft Windows application that filters information com
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`WindowsFirewall`](../tables/windowsfirewall.md) | ✓ | ✗ |
 
 ## Permissions

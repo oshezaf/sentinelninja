@@ -29,12 +29,18 @@ This table is used by the following solutions:
 
 ### Hunting Queries (3)
 
-**In solution [](../solutions/.md):**
-- [Endpoint Agent Health Status Report](../content/-endpoint-agent-health-status-report-64c0f54f-9a8d-4630-95c8-aa2751e5da0c-d29c504e.md)
-- [MD AV Signature and Platform Version](../content/-md-av-signature-and-platform-version-30035880-b7af-4d5e-8617-be7f070a5c1c-c1cd361c.md)
+**Standalone Content:**
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [MDE_DeviceHealth](../content/standalone-content-mde-devicehealth-da4eeb70-c39b-4d8f-a4f0-22e15a745230-d1196843.md)
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MDE_DeviceHealth](../content/standalone-content-mde-devicehealth-da4eeb70-c39b-4d8f-a4f0-22e15a745230-d1196843.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Endpoint Agent Health Status Report](../content/github-only-endpoint-agent-health-status-report-64c0f54f-9a8d-4630-95c8-aa2751e5da0c-7b7ccf5d.md) |  |
+| [MD AV Signature and Platform Version](../content/github-only-md-av-signature-and-platform-version-30035880-b7af-4d5e-8617-be7f070a5c1c-78f9bd77.md) |  |
 
 ---
 

@@ -24,8 +24,8 @@ Connector for [Eset SMC](https://help.eset.com/esmc_admin/72/en-US/) threat even
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`eset_CL`](../tables/eset-cl.md) | — | — |
 
 ## Permissions

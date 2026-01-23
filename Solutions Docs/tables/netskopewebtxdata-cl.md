@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Netskopev2](../solutions/netskopev2.md):**
-- [NetskopeDashboard](../content/netskopev2-netskopedashboard-7f2bb16f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NetskopeDashboard](../content/netskopev2-netskopedashboard-7f2bb16f.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [NetskopeWebTransactions](../parsers/netskopewebtransactions.md) | [Netskopev2](../solutions/netskopev2.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [NetskopeWebTransactions](../parsers/netskopewebtransactions.md) | [Netskopev2](../solutions/netskopev2.md) |  |
 
 ---
 

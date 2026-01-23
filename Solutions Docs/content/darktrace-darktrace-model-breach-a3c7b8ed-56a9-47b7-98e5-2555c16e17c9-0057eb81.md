@@ -16,15 +16,15 @@ This rule creates Microsoft Sentinel Alerts based on Darktrace Model Breaches, f
 | **Severity** | Medium |
 | **Kind** | NRT |
 | **Required Connectors** | [DarktraceRESTConnector](../connectors/darktracerestconnector.md) |
-| **Event Vendor** | Darktrace |
-| **Event Product** | Darktrace DETECT |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace/Analytic%20Rules/CreateAlertFromModelBreach.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) | — | — |
 
 ---
 

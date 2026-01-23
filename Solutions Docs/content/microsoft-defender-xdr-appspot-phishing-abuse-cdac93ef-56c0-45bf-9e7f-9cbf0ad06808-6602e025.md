@@ -22,7 +22,9 @@ This query helps surface phishing campaigns associated with Appspot abuse.
 
 This content item queries data from the following tables:
 
-- [`EmailUrlInfo`](../tables/emailurlinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
 
 ---
 

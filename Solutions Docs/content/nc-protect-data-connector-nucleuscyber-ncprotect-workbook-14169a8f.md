@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md) | — | — |
 
 ---
 

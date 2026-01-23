@@ -23,9 +23,11 @@ This query searches for rare firewall rule changes using netsh utility by compar
 
 This content item queries data from the following tables:
 
-- [`DeviceProcessEvents`](../tables/deviceprocessevents.md)
-- [`Event`](../tables/event.md)
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
+| [`Event`](../tables/event.md) | `Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "1"` | ✓ | ✓ |
 
 ---
 

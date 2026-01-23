@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_known_hosts_CL](../tables/corelight-v2-known-hosts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_known_hosts_CL`](../tables/corelight-v2-known-hosts-cl.md) | — | — |
 
 ---
 

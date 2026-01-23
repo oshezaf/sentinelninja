@@ -24,7 +24,9 @@ This detection focuses on identifying potentially suspicious activities involvin
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ |
 
 ---
 

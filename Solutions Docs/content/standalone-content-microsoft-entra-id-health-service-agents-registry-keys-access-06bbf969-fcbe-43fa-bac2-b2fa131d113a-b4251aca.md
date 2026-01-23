@@ -24,8 +24,10 @@
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4656,4663"` | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ |
 
 ---
 

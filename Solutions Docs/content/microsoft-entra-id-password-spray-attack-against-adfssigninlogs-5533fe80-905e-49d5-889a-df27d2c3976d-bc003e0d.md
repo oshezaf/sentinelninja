@@ -25,7 +25,9 @@ Identifies evidence of password spray activity against Connect Health for AD FS 
 
 This content item queries data from the following tables:
 
-- [`ADFSSignInLogs`](../tables/adfssigninlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | ✓ | ✗ |
 
 ---
 

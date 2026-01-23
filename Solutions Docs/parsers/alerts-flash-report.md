@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [CybleVisionAlerts_CL](../tables/cyblevisionalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | — |
 
 ---
 

@@ -24,8 +24,10 @@ Identifies when the Azure Run Command operation is executed by a UserPrincipalNa
 
 This content item queries data from the following tables:
 
-- [`AzureActivity`](../tables/azureactivity.md)
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
 
 ---
 

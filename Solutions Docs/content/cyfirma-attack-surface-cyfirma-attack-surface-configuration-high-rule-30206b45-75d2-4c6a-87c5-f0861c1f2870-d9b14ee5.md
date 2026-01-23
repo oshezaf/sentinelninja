@@ -25,7 +25,9 @@ This alert is generated when CYFIRMA detects a critical misconfiguration in a pu
 
 This content item queries data from the following tables:
 
-- [`CyfirmaASConfigurationAlerts_CL`](../tables/cyfirmaasconfigurationalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaASConfigurationAlerts_CL`](../tables/cyfirmaasconfigurationalerts-cl.md) | — | — |
 
 ---
 

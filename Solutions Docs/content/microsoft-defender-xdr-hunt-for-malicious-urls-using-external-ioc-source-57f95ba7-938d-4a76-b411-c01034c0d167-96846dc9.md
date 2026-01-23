@@ -22,7 +22,9 @@ This query helps hunt for emails with malicious URLs based on external IOC sourc
 
 This content item queries data from the following tables:
 
-- [`EmailUrlInfo`](../tables/emailurlinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
 
 ---
 

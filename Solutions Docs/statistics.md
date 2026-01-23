@@ -31,7 +31,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | Metric | Count |
 |:-------|------:|
 | Unique Connectors | 384 |
-| Tables Used | 824 |
+| Tables Used | 822 |
 
 ## Connectors
 
@@ -76,9 +76,9 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Count |
 |:-------|------:|
-| **Total Tables Documented** | **1813** |
-| Tables Ingested by Connectors | 824 |
-| Tables Referenced by Content Only | 259 |
+| **Total Tables Documented** | **1771** |
+| Tables Ingested by Connectors | 822 |
+| Tables Referenced by Content Only | 219 |
 | Standalone Reference Tables* | 730 |
 | Defender XDR Only Tables | 31 |
 

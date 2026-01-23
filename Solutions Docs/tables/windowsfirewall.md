@@ -32,7 +32,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Windows Firewall](../connectors/windowsfirewall.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Windows Firewall](../connectors/windowsfirewall.md) |  |
 
 ---
 
@@ -40,36 +42,60 @@ This table is ingested by the following connectors:
 
 ### Analytic Rules (1)
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
 
 ### Workbooks (12)
 
-**In solution [](../solutions/.md):**
-- [DoDZeroTrustWorkbook](../content/-dodzerotrustworkbook-93adac1a.md)
-- [ExchangeCompromiseHunting](../content/-exchangecompromisehunting-4a1075bf.md)
-- [SecurityStatus](../content/-securitystatus-183600b3.md)
-- [UserMap](../content/-usermap-2bfd459f.md)
-- [WindowsFirewall](../content/-windowsfirewall-39ee633b.md)
-- [ZeroTrustStrategyWorkbook](../content/-zerotruststrategyworkbook-e9062fae.md)
-
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
-- [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
-- [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
-- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
-- [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
 **In solution [Windows Firewall](../solutions/windows-firewall.md):**
-- [WindowsFirewall](../content/windows-firewall-windowsfirewall-6cfebfa8.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [WindowsFirewall](../content/windows-firewall-windowsfirewall-6cfebfa8.md) |  |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
-- [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
+| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
+| [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
+| [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Resource Types
 

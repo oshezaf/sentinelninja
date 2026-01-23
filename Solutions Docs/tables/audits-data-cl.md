@@ -17,7 +17,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Vectra XDR](../connectors/vectraxdr.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Vectra XDR](../connectors/vectraxdr.md) |  |
 
 ---
 
@@ -26,25 +28,31 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 **In solution [Vectra XDR](../solutions/vectra-xdr.md):**
-- [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VectraXDR](../content/vectra-xdr-vectraxdr-67eeec96.md) |  |
 
 ## Parsers Using This Table (3)
 
 ### ASIM Parsers (2)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimAuditEventVectraXDRAudit](../asim/asimauditeventvectraxdraudit.md) | AuditEvent |  |
-| [ASimAuthenticationVectraXDRAudit](../asim/asimauthenticationvectraxdraudit.md) | Authentication |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventVectraXDRAudit](../asim/asimauditeventvectraxdraudit.md) | AuditEvent | Vectra |  |
+| [ASimAuthenticationVectraXDRAudit](../asim/asimauthenticationvectraxdraudit.md) | Authentication | Vectra |  |
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [VectraAudits](../parsers/vectraaudits.md) | [Vectra XDR](../solutions/vectra-xdr.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [VectraAudits](../parsers/vectraaudits.md) | [Vectra XDR](../solutions/vectra-xdr.md) |  |
 
 ---
 

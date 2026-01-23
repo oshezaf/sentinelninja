@@ -22,7 +22,9 @@ Malware or data exfiltration can cause network data volume anomalies. This query
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName contains "squid"` | ✓ | ✓ |
 
 ---
 

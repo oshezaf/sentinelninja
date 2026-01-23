@@ -16,11 +16,13 @@
 
 This content item queries data from the following tables:
 
-- [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md)
-- [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md)
-- [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md)
-- [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md)
-- [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | — | — |
+| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | — | — |
+| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | — | — |
+| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | — | — |
+| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | — | — |
 
 ---
 

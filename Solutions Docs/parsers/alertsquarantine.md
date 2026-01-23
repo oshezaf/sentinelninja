@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [alertsquarantinedata_CL](../tables/alertsquarantinedata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) | — | — |
 
 ---
 

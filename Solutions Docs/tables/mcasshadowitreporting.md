@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md) |  |
 
 ---
 
@@ -34,12 +36,18 @@ This table is ingested by the following connectors:
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [M365SecurityPosture](../content/-m365securityposture-5ae85fa7.md)
-- [MicrosoftCloudAppSecurity](../content/-microsoftcloudappsecurity-862f6f68.md)
-
 **In solution [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md):**
-- [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [M365SecurityPosture](../content/github-only-m365securityposture-c0d92b62.md) |  |
+| [MicrosoftCloudAppSecurity](../content/github-only-microsoftcloudappsecurity-2887ca06.md) |  |
 
 ---
 

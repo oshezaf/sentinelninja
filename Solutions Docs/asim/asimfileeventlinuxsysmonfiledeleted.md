@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Sysmon for Linux events 23 and 26, stored 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Syslog](../tables/syslog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "<Provider Name="`<br>`SyslogMessage has_any "<EventID>23</EventID>,<EventID>26</EventID>"` | ✓ | ✓ |
 
 ## Parameters
 

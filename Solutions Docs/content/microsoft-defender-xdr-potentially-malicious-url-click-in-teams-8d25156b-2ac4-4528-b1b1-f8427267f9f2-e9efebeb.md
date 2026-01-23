@@ -24,7 +24,9 @@ This query provides insights on a potentially malicious URL click in Teams
 
 This content item queries data from the following tables:
 
-- [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md) | — | ✗ |
 
 ---
 

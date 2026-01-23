@@ -34,8 +34,8 @@ By combining business-context intelligence with advanced analytics, Pathlock ena
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ |
 | [`Pathlock_TDnR_CL`](../tables/pathlock-tdnr-cl.md) | — | — |
 

@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Entra ID](../connectors/azureactivedirectory.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Entra ID](../connectors/azureactivedirectory.md) |  |
 
 ---
 
@@ -34,10 +36,13 @@ This table is ingested by the following connectors:
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [AzureLogCoverage](../content/-azurelogcoverage-e63c774a.md)
-- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-- [SentinelWorkspaceReconTools](../content/-sentinelworkspacerecontools-3f6cdf50.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ---
 

@@ -25,8 +25,11 @@ This table is used by the following solutions:
 ### Workbooks (2)
 
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
-- [NetworkSessionEssentials](../content/network-session-essentials-networksessionessentials-5de17c97.md)
-- [NetworkSessionEssentialsV2](../content/network-session-essentials-networksessionessentialsv2-9408ac84.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NetworkSessionEssentials](../content/network-session-essentials-networksessionessentials-5de17c97.md) |  |
+| [NetworkSessionEssentialsV2](../content/network-session-essentials-networksessionessentialsv2-9408ac84.md) |  |
 
 ---
 

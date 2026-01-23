@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Sysmon logs ingested in 'Event' table to t
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Event](../tables/event.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID in "11,23,26"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ## Parameters
 

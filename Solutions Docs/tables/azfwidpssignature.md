@@ -27,7 +27,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Azure Firewall](../connectors/azurefirewall.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Azure Firewall](../connectors/azurefirewall.md) |  |
 
 ---
 
@@ -36,16 +38,25 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
-- [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md)
-- [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormal Deny Rate for Source IP](../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.md) |  |
+| [Several deny actions registered](../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.md) |  |
 
 ### Workbooks (2)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
-- [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureFirewallWorkbook-StructuredLogs](../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Resource Types
 

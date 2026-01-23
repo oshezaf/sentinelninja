@@ -16,8 +16,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md)
-- [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) |  |
+| [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) |  |
 
 ---
 

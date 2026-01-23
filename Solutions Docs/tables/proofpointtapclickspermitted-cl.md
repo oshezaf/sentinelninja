@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) |  |
 
 ---
 
@@ -24,17 +26,20 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [ProofPointThreatDashboard](../content/-proofpointthreatdashboard-de722115.md)
-- [ProofpointTAP](../content/-proofpointtap-dc9a889b.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ProofPointThreatDashboard](../content/github-only-proofpointthreatdashboard-cb711596.md) |  |
+| [ProofpointTAP](../content/github-only-proofpointtap-f64c9a5d.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ProofpointTAPEvent](../parsers/proofpointtapevent.md) | [ProofPointTap](../solutions/proofpointtap.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ProofpointTAPEvent](../parsers/proofpointtapevent.md) | [ProofPointTap](../solutions/proofpointtap.md) |  |
 
 ---
 

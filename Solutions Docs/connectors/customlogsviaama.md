@@ -26,8 +26,8 @@ Many applications log information to text or JSON files instead of standard logg
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | — |
 | [`JBossEvent_CL`](../tables/jbossevent-cl.md) | — | — |
 | [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | — | — |

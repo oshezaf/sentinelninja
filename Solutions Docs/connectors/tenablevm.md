@@ -22,8 +22,8 @@ The TVM data connector provides the ability to ingest Asset, Vulnerability, Comp
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | — | — |
 | [`Tenable_VM_Compliance_CL`](../tables/tenable-vm-compliance-cl.md) | — | — |
 | [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | — | — |

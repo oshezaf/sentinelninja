@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Entity_Scoring_Data_CL](../tables/entity-scoring-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | — | — |
 
 ---
 

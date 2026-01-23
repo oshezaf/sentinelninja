@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Gigamon AMX Data Connector](../connectors/gigamondataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Gigamon AMX Data Connector](../connectors/gigamondataconnector.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Gigamon Connector](../solutions/gigamon-connector.md):**
-- [Gigamon](../content/gigamon-connector-gigamon-07ba033c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Gigamon](../content/gigamon-connector-gigamon-07ba033c.md) |  |
 
 ---
 

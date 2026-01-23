@@ -25,7 +25,9 @@ Identifies a match across IOC's related to an actor tracked by Microsoft as Cara
 
 This content item queries data from the following tables:
 
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "4688"` | ✓ | ✓ |
 
 ---
 

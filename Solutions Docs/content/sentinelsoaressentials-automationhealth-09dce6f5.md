@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`SentinelHealth`](../tables/sentinelhealth.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| [`SentinelHealth`](../tables/sentinelhealth.md) | ✓ | ✗ |
 
 ---
 

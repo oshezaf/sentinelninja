@@ -25,7 +25,9 @@ Attackers could update the SAML provider in order to create unauthorized but val
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "UpdateSAMLProvider"` | ✓ | ✓ |
 
 ---
 

@@ -24,7 +24,9 @@ This alert is designed to monitor recommended data tables aligned to the Maturit
 
 This content item queries data from the following tables:
 
-- [`Usage`](../tables/usage.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Usage`](../tables/usage.md) | ✗ | ✗ |
 
 ---
 

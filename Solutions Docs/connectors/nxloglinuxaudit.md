@@ -24,8 +24,8 @@ The [NXLog LinuxAudit](https://docs.nxlog.co/refman/current/im/linuxaudit.html) 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`LinuxAudit_CL`](../tables/linuxaudit-cl.md) | — | — |
 
 ## Permissions

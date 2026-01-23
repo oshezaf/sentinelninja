@@ -24,8 +24,8 @@ This application enables you to ingest your PDNS block data into your SIEM tool
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`PDNSBlockData_CL`](../tables/pdnsblockdata-cl.md) | — | — |
 
 ## Permissions

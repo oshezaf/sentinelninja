@@ -22,12 +22,14 @@ This script identifies password changes or resets across multiple host and cloud
 
 This content item queries data from the following tables:
 
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`Syslog`](../tables/syslog.md)
-- [`WindowsEvent`](../tables/windowsevent.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
 
 ---
 

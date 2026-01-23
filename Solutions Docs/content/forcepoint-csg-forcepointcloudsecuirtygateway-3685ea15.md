@@ -10,15 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Forcepoint CSG](../solutions/forcepoint-csg.md) |
-| **Event Vendor** | Forcepoint CSG |
-| **Event Product** | Email, Web |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20CSG/Workbooks/ForcepointCloudSecuirtyGateway.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "Email,Web"`<br>`DeviceVendor == "Forcepoint CSG"` | ✓ | ✓ |
 
 ---
 

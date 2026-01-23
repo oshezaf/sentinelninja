@@ -19,7 +19,10 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |
 
 ---
 

@@ -16,28 +16,30 @@
 
 This content item queries data from the following tables:
 
-- [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md)
-- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
-- [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
-- [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`AzureActivity`](../tables/azureactivity.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`ConfigurationChange`](../tables/configurationchange.md)
-- [`DeviceEvents`](../tables/deviceevents.md)
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`Event`](../tables/event.md)
-- [`IdentityInfo`](../tables/identityinfo.md)
-- [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityBaseline`](../tables/securitybaseline.md)
-- [`SecurityIncident`](../tables/securityincident.md)
-- [`SecurityRecommendation`](../tables/securityrecommendation.md)
-- [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`Usage`](../tables/usage.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ |
+| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallApplicationRule"` | — | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
+| [`ConfigurationChange`](../tables/configurationchange.md) |  | ✓ | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
+| [`Event`](../tables/event.md) |  | ✓ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | — | — |
+| [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
+| [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) |  | ✓ | ✗ |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`Usage`](../tables/usage.md) |  | ✗ | ✗ |
 
 ---
 

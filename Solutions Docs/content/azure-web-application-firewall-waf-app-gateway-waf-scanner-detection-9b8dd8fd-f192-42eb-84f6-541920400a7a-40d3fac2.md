@@ -25,7 +25,9 @@ Identifies a match for a Scanner detection user agent based attack in the App Ga
 
 This content item queries data from the following tables:
 
-- [`AGWFirewallLogs`](../tables/agwfirewalllogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ |
 
 ---
 

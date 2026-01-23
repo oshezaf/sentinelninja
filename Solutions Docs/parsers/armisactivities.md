@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Armis_Activities_CL](../tables/armis-activities-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Armis_Activities_CL`](../tables/armis-activities-cl.md) | — | — |
 
 ---
 

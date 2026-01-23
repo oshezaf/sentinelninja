@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Halcyon Connector](../connectors/halcyonpush.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Halcyon Connector](../connectors/halcyonpush.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ASimFileEventHalcyon](../parsers/asimfileeventhalcyon.md) | [Halcyon](../solutions/halcyon.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ASimFileEventHalcyon](../parsers/asimfileeventhalcyon.md) | [Halcyon](../solutions/halcyon.md) |  |
 
 ---
 

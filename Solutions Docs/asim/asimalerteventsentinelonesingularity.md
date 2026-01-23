@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the SentinelOne alerts to the ASIM Alert n
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [SentinelOne_CL](../tables/sentinelone-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | — |
 
 ## Parameters
 

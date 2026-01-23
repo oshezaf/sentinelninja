@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [Zoom_CL](../tables/zoom-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Zoom_CL`](../tables/zoom-cl.md) | — | — |
 
 ---
 

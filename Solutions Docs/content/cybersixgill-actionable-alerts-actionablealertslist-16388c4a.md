@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) | — | — |
 
 ---
 

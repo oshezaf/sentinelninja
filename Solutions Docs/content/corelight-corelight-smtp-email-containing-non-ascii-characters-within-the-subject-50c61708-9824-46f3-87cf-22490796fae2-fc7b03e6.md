@@ -25,7 +25,9 @@ Detects where an emails contain non ascii characters within the Subject.
 
 This content item queries data from the following tables:
 
-- [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) | — | — |
 
 ---
 

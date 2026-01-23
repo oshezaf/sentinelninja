@@ -22,8 +22,8 @@ The Illumio Saas Cloud data connector provides the capability to ingest Flow log
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`IllumioFlowEventsV2_CL`](../tables/illumiofloweventsv2-cl.md) | — | — |
 
 ## Permissions

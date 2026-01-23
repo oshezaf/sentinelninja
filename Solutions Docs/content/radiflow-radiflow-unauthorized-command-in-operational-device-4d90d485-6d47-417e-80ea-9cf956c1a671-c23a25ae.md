@@ -19,14 +19,15 @@ Generates an incident when an unauthorized command is detected in the network by
 | **Tactics** | Execution, LateralMovement, InhibitResponseFunction, ImpairProcessControl |
 | **Techniques** | T0858, T0843, T0816, T0857, T0836, T0855 |
 | **Required Connectors** | [RadiflowIsid](../connectors/radiflowisid.md) |
-| **Event Product** | iSID |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow/Analytic%20Rules/RadiflowUnauthorizedCommandinOperationalDevice.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "iSID"`<br>`DeviceVendor == "radiflow"` | ✓ | ✓ |
 
 ---
 

@@ -25,7 +25,9 @@ This rule will monitor access to highly sensitive passwords. Within the Watchlis
 
 This content item queries data from the following tables:
 
-- [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | — |
 
 ---
 

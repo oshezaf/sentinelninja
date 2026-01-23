@@ -22,8 +22,8 @@ The [Corelight](https://corelight.com/) data connector enables incident responde
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Corelight_CL`](../tables/corelight-cl.md) | — | — |
 | [`Corelight_v2_bacnet_CL`](../tables/corelight-v2-bacnet-cl.md) | — | — |
 | [`Corelight_v2_capture_loss_CL`](../tables/corelight-v2-capture-loss-cl.md) | — | — |

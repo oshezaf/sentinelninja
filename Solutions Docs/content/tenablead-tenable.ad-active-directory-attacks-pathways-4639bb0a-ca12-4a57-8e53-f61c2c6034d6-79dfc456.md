@@ -26,8 +26,9 @@ Searches for triggered Indicators of Exposures related to Active Directory attac
 
 This content item queries data from the following tables:
 
-- [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)
-- [`Tenable_ad_CL`](../tables/tenable-ad-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | — | — |
 
 ---
 

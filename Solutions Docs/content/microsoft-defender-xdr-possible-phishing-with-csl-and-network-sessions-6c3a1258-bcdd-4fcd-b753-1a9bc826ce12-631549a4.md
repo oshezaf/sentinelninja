@@ -31,9 +31,11 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`AlertEvidence`](../tables/alertevidence.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`DeviceEvents`](../tables/deviceevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
 
 ---
 

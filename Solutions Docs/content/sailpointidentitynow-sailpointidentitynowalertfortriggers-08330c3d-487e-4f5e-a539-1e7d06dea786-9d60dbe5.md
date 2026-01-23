@@ -25,7 +25,9 @@ Create alerts for SailPoint IdentityNow Event Trigger Service.
 
 This content item queries data from the following tables:
 
-- [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) | — | — |
 
 ---
 

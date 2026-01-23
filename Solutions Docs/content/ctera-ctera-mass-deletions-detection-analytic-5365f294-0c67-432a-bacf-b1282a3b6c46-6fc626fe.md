@@ -25,7 +25,9 @@ This analytic rule detects and alerts when large amount of deletion operations g
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "gw-audit"` | ✓ | ✓ |
 
 ---
 

@@ -23,8 +23,10 @@ Query searches for repetitive DNS resolution failures from single host.
 
 This content item queries data from the following tables:
 
-- [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md)
-- [`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md) | — | — |
+| [`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md) | — | — |
 
 ---
 

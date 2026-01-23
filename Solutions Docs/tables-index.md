@@ -6,33 +6,18 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 ---
 
-**1813 tables** documented (824 ingested by connectors, 259 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
+**1771 tables** documented (822 ingested by connectors, 219 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
 Browse tables alphabetically:
 
-**Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [X](#x) | [Y](#y) | [Z](#z)
-
-## #
-
-| Table | Solutions | Connectors | Content |
-|-------|:---------:|:----------:|:--------|
-| [`'`](tables/'.md) | [1](tables/'.md) | - | Playbooks |
-| [`(`](tables/.md) | [1](tables/.md) | - | Playbooks |
-| [`)`](tables/.md) | [1](tables/.md) | - | Playbooks |
-| [`,`](tables/,.md) | [1](tables/,.md) | - | Playbooks |
-| [`3`](tables/3.md) | [1](tables/3.md) | - | Playbooks |
-| [`5`](tables/5.md) | [1](tables/5.md) | - | Playbooks |
-| [`6`](tables/6.md) | [1](tables/6.md) | - | Playbooks |
-| [`[`](tables/[.md) | [1](tables/[.md) | - | Playbooks |
-| [`]`](tables/].md) | [1](tables/].md) | - | Playbooks |
+**Jump to:** [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [X](#x) | [Z](#z)
 
 ## A
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`A`](tables/a.md) | [1](tables/a.md) | - | Playbooks |
 | [`AACAudit`](tables/aacaudit.md) | - | - | - |
 | [`AACHttpRequest`](tables/aachttprequest.md) | - | - | - |
 | [`AADB2CRequestLogs`](tables/aadb2crequestlogs.md) | - | - | - |
@@ -289,7 +274,7 @@ Browse tables alphabetically:
 | [`AlertInfo`](tables/alertinfo.md) | [2](tables/alertinfo.md) | [1](tables/alertinfo.md) | Analytics, Hunting, Workbooks |
 | [`AliCloudActionTrailLogs_CL`](tables/alicloudactiontraillogs-cl.md) | [1](tables/alicloudactiontraillogs-cl.md) | [1](tables/alicloudactiontraillogs-cl.md) | - |
 | [`AliCloud_CL`](tables/alicloud-cl.md) | [1](tables/alicloud-cl.md) | [1](tables/alicloud-cl.md) | - |
-| [`AlsidForADLog_CL`](tables/alsidforadlog-cl.md) | [1](tables/alsidforadlog-cl.md) | [1](tables/alsidforadlog-cl.md) | - |
+| [`AlsidForADLog_CL`](tables/alsidforadlog-cl.md) | [3](tables/alsidforadlog-cl.md) | [3](tables/alsidforadlog-cl.md) | Analytics, Workbooks |
 | [`AmlComputeClusterEvent`](tables/amlcomputeclusterevent.md) | - | - | - |
 | [`AmlComputeClusterNodeEvent`](tables/amlcomputeclusternodeevent.md) | - | - | - |
 | [`AmlComputeCpuGpuUtilization`](tables/amlcomputecpugpuutilization.md) | - | - | - |
@@ -310,7 +295,7 @@ Browse tables alphabetically:
 | [`AmlRegistryWriteEventsLog`](tables/amlregistrywriteeventslog.md) | - | - | - |
 | [`AmlRunEvent`](tables/amlrunevent.md) | - | - | - |
 | [`AmlRunStatusChangedEvent`](tables/amlrunstatuschangedevent.md) | - | - | - |
-| [`Anomalies`](tables/anomalies.md) | [4](tables/anomalies.md) | - | Analytics, Hunting, Workbooks |
+| [`Anomalies`](tables/anomalies.md) | [11](tables/anomalies.md) | - | Analytics, Hunting, Workbooks |
 | [`Anvilogic_Alerts_CL`](tables/anvilogic-alerts-cl.md) | [1](tables/anvilogic-alerts-cl.md) | [1](tables/anvilogic-alerts-cl.md) | Analytics |
 | [`ApacheHTTPServer_CL`](tables/apachehttpserver-cl.md) | [3](tables/apachehttpserver-cl.md) | [2](tables/apachehttpserver-cl.md) | Analytics, Hunting, Workbooks |
 | [`ApiManagementGatewayLlmLog`](tables/apimanagementgatewayllmlog.md) | - | - | - |
@@ -363,6 +348,7 @@ Browse tables alphabetically:
 | [`Auth0AM_CL`](tables/auth0am-cl.md) | [1](tables/auth0am-cl.md) | [1](tables/auth0am-cl.md) | - |
 | [`Auth0Logs_CL`](tables/auth0logs-cl.md) | [1](tables/auth0logs-cl.md) | [1](tables/auth0logs-cl.md) | - |
 | [`Authomize_v2_CL`](tables/authomize-v2-cl.md) | [1](tables/authomize-v2-cl.md) | [1](tables/authomize-v2-cl.md) | Analytics, Hunting, Workbooks |
+| [`AutoConnectASC_CL`](tables/autoconnectasc-cl.md) | [1](tables/autoconnectasc-cl.md) | - | Playbooks |
 | [`AutoscaleEvaluationsLog`](tables/autoscaleevaluationslog.md) | - | - | - |
 | [`AutoscaleScaleActionsLog`](tables/autoscalescaleactionslog.md) | - | - | - |
 | [`Awareness_Performance_Details_CL`](tables/awareness-performance-details-cl.md) | [1](tables/awareness-performance-details-cl.md) | [1](tables/awareness-performance-details-cl.md) | - |
@@ -381,11 +367,9 @@ Browse tables alphabetically:
 | [`AzureMetrics`](tables/azuremetrics.md) | [2](tables/azuremetrics.md) | [2](tables/azuremetrics.md) | - |
 | [`AzureMetricsV2`](tables/azuremetricsv2.md) | - | - | - |
 | [`AzureNetworkAnalytics_CL`](tables/azurenetworkanalytics-cl.md) | [5](tables/azurenetworkanalytics-cl.md) | - | Analytics, Hunting, Workbooks |
-| [`a`](tables/a.md) | [1](tables/a.md) | - | Playbooks |
 | [`agari_apdpolicy_log_CL`](tables/agari-apdpolicy-log-cl.md) | [1](tables/agari-apdpolicy-log-cl.md) | [1](tables/agari-apdpolicy-log-cl.md) | - |
 | [`agari_apdtc_log_CL`](tables/agari-apdtc-log-cl.md) | [1](tables/agari-apdtc-log-cl.md) | [1](tables/agari-apdtc-log-cl.md) | - |
 | [`agari_bpalerts_log_CL`](tables/agari-bpalerts-log-cl.md) | [1](tables/agari-bpalerts-log-cl.md) | [1](tables/agari-bpalerts-log-cl.md) | - |
-| [`alert`](tables/alert.md) | - | - | - |
 | [`alertscompromisedcredentialdata_CL`](tables/alertscompromisedcredentialdata-cl.md) | [1](tables/alertscompromisedcredentialdata-cl.md) | [1](tables/alertscompromisedcredentialdata-cl.md) | Workbooks |
 | [`alertsctepdata_CL`](tables/alertsctepdata-cl.md) | [1](tables/alertsctepdata-cl.md) | [1](tables/alertsctepdata-cl.md) | Workbooks |
 | [`alertsdlpdata_CL`](tables/alertsdlpdata-cl.md) | [1](tables/alertsdlpdata-cl.md) | [1](tables/alertsdlpdata-cl.md) | Workbooks |
@@ -396,7 +380,6 @@ Browse tables alphabetically:
 | [`alertsremediationdata_CL`](tables/alertsremediationdata-cl.md) | [1](tables/alertsremediationdata-cl.md) | [1](tables/alertsremediationdata-cl.md) | Workbooks |
 | [`alertssecurityassessmentdata_CL`](tables/alertssecurityassessmentdata-cl.md) | [1](tables/alertssecurityassessmentdata-cl.md) | [1](tables/alertssecurityassessmentdata-cl.md) | Workbooks |
 | [`alertsubadata_CL`](tables/alertsubadata-cl.md) | [1](tables/alertsubadata-cl.md) | [1](tables/alertsubadata-cl.md) | Workbooks |
-| [`anomalies`](tables/anomalies.md) | [8](tables/anomalies.md) | - | Analytics, Hunting, Workbooks |
 | [`apifirewall_log_1_CL`](tables/apifirewall-log-1-cl.md) | [1](tables/apifirewall-log-1-cl.md) | [1](tables/apifirewall-log-1-cl.md) | Analytics, Workbooks |
 | [`argsentdc_CL`](tables/argsentdc-cl.md) | [1](tables/argsentdc-cl.md) | [1](tables/argsentdc-cl.md) | - |
 | [`asimParsers`](tables/asimparsers.md) | [1](tables/asimparsers.md) | - | Workbooks |
@@ -442,7 +425,6 @@ Browse tables alphabetically:
 | [`BlockchainProxyLog`](tables/blockchainproxylog.md) | - | - | - |
 | [`BoxEventsV2_CL`](tables/boxeventsv2-cl.md) | [1](tables/boxeventsv2-cl.md) | [2](tables/boxeventsv2-cl.md) | Analytics, Hunting, Workbooks |
 | [`BoxEvents_CL`](tables/boxevents-cl.md) | [1](tables/boxevents-cl.md) | [2](tables/boxevents-cl.md) | Analytics, Hunting, Workbooks |
-| [`b`](tables/b.md) | [1](tables/b.md) | - | Playbooks |
 | [`barracuda_CL`](tables/barracuda-cl.md) | [2](tables/barracuda-cl.md) | [1](tables/barracuda-cl.md) | Workbooks |
 | [`beSECURE_Audit_CL`](tables/besecure-audit-cl.md) | [1](tables/besecure-audit-cl.md) | [1](tables/besecure-audit-cl.md) | - |
 | [`beSECURE_ScanEvent_CL`](tables/besecure-scanevent-cl.md) | [1](tables/besecure-scanevent-cl.md) | [1](tables/besecure-scanevent-cl.md) | - |
@@ -452,7 +434,6 @@ Browse tables alphabetically:
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`C`](tables/c.md) | [1](tables/c.md) | - | Playbooks |
 | [`CBSLog_Azure_1_CL`](tables/cbslog-azure-1-cl.md) | [1](tables/cbslog-azure-1-cl.md) | [1](tables/cbslog-azure-1-cl.md) | Analytics |
 | [`CCFApplicationLogs`](tables/ccfapplicationlogs.md) | - | - | - |
 | [`CDBCassandraRequests`](tables/cdbcassandrarequests.md) | - | - | - |
@@ -470,6 +451,7 @@ Browse tables alphabetically:
 | [`CIEventsOperational`](tables/cieventsoperational.md) | - | - | - |
 | [`CSARequestResponse`](tables/csarequestresponse.md) | - | - | - |
 | [`CampaignInfo`](tables/campaigninfo.md) | - | - | - |
+| [`CanaryTokens_CL`](tables/canarytokens-cl.md) | [1](tables/canarytokens-cl.md) | - | Playbooks |
 | [`CarbonBlackAuditLogs_CL`](tables/carbonblackauditlogs-cl.md) | [2](tables/carbonblackauditlogs-cl.md) | [1](tables/carbonblackauditlogs-cl.md) | Workbooks |
 | [`CarbonBlackEvents_CL`](tables/carbonblackevents-cl.md) | [2](tables/carbonblackevents-cl.md) | [1](tables/carbonblackevents-cl.md) | Analytics, Workbooks |
 | [`CarbonBlackNotifications_CL`](tables/carbonblacknotifications-cl.md) | [2](tables/carbonblacknotifications-cl.md) | [1](tables/carbonblacknotifications-cl.md) | Analytics, Workbooks |
@@ -674,6 +656,7 @@ Browse tables alphabetically:
 | [`CrowdStrike_Registry_Events_CL`](tables/crowdstrike-registry-events-cl.md) | [1](tables/crowdstrike-registry-events-cl.md) | [1](tables/crowdstrike-registry-events-cl.md) | - |
 | [`CrowdStrike_Secondary_Data_CL`](tables/crowdstrike-secondary-data-cl.md) | [1](tables/crowdstrike-secondary-data-cl.md) | [2](tables/crowdstrike-secondary-data-cl.md) | - |
 | [`CrowdStrike_User_Events_CL`](tables/crowdstrike-user-events-cl.md) | [1](tables/crowdstrike-user-events-cl.md) | [1](tables/crowdstrike-user-events-cl.md) | - |
+| [`Crowdstrike_Alerts_CL`](tables/crowdstrike-alerts-cl.md) | [1](tables/crowdstrike-alerts-cl.md) | - | Playbooks |
 | [`CyberArkEPM_CL`](tables/cyberarkepm-cl.md) | [1](tables/cyberarkepm-cl.md) | [1](tables/cyberarkepm-cl.md) | Analytics, Hunting, Workbooks |
 | [`CyberArk_AuditEvents_CL`](tables/cyberark-auditevents-cl.md) | [1](tables/cyberark-auditevents-cl.md) | [1](tables/cyberark-auditevents-cl.md) | Analytics |
 | [`CyberSixgill_Alerts_CL`](tables/cybersixgill-alerts-cl.md) | [1](tables/cybersixgill-alerts-cl.md) | [1](tables/cybersixgill-alerts-cl.md) | Hunting, Workbooks |
@@ -724,13 +707,11 @@ Browse tables alphabetically:
 | [`Cymru_Scout_IP_Data_x509_CL`](tables/cymru-scout-ip-data-x509-cl.md) | [1](tables/cymru-scout-ip-data-x509-cl.md) | [1](tables/cymru-scout-ip-data-x509-cl.md) | - |
 | [`CynerioEvent_CL`](tables/cynerioevent-cl.md) | [1](tables/cynerioevent-cl.md) | [1](tables/cynerioevent-cl.md) | Analytics, Workbooks |
 | [`Cyren_Indicators_CL`](tables/cyren-indicators-cl.md) | [1](tables/cyren-indicators-cl.md) | [1](tables/cyren-indicators-cl.md) | Analytics, Workbooks |
-| [`c`](tables/c.md) | [1](tables/c.md) | - | Playbooks |
 
 ## D
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`D`](tables/d.md) | [1](tables/d.md) | - | Playbooks |
 | [`DCPlanBillingEventLogs`](tables/dcplanbillingeventlogs.md) | - | - | - |
 | [`DCRLogErrors`](tables/dcrlogerrors.md) | - | - | - |
 | [`DFPPurchaseLogs`](tables/dfppurchaselogs.md) | - | - | - |
@@ -795,6 +776,7 @@ Browse tables alphabetically:
 | [`DatabricksWebhookNotifications`](tables/databrickswebhooknotifications.md) | - | - | - |
 | [`DatabricksWorkspace`](tables/databricksworkspace.md) | - | - | - |
 | [`DatabricksWorkspaceFiles`](tables/databricksworkspacefiles.md) | - | - | - |
+| [`Datadog_Events_CL`](tables/datadog-events-cl.md) | [1](tables/datadog-events-cl.md) | - | Playbooks |
 | [`DataminrPulse_Alerts_CL`](tables/dataminrpulse-alerts-cl.md) | [1](tables/dataminrpulse-alerts-cl.md) | [1](tables/dataminrpulse-alerts-cl.md) | Analytics, Workbooks |
 | [`DataverseActivity`](tables/dataverseactivity.md) | [1](tables/dataverseactivity.md) | - | Analytics, Hunting, Workbooks |
 | [`DefenderForSqlAlerts`](tables/defenderforsqlalerts.md) | - | - | - |
@@ -871,7 +853,6 @@ Browse tables alphabetically:
 | [`DynatraceAuditLogs_CL`](tables/dynatraceauditlogs-cl.md) | [1](tables/dynatraceauditlogs-cl.md) | [1](tables/dynatraceauditlogs-cl.md) | Workbooks |
 | [`DynatraceProblems_CL`](tables/dynatraceproblems-cl.md) | [1](tables/dynatraceproblems-cl.md) | [1](tables/dynatraceproblems-cl.md) | Analytics, Workbooks |
 | [`DynatraceSecurityProblems_CL`](tables/dynatracesecurityproblems-cl.md) | [1](tables/dynatracesecurityproblems-cl.md) | [1](tables/dynatracesecurityproblems-cl.md) | Analytics, Workbooks |
-| [`d`](tables/d.md) | [1](tables/d.md) | - | Playbooks |
 | [`darktrace_model_alerts_CL`](tables/darktrace-model-alerts-cl.md) | [1](tables/darktrace-model-alerts-cl.md) | [1](tables/darktrace-model-alerts-cl.md) | Analytics, Workbooks |
 | [`datawizaserveraccess_CL`](tables/datawizaserveraccess-cl.md) | [1](tables/datawizaserveraccess-cl.md) | [1](tables/datawizaserveraccess-cl.md) | - |
 | [`dossier_atp_CL`](tables/dossier-atp-cl.md) | [1](tables/dossier-atp-cl.md) | [1](tables/dossier-atp-cl.md) | Workbooks |
@@ -895,7 +876,6 @@ Browse tables alphabetically:
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`E`](tables/e.md) | [1](tables/e.md) | - | Playbooks |
 | [`EGNFailedHttpDataPlaneOperations`](tables/egnfailedhttpdataplaneoperations.md) | - | - | - |
 | [`EGNFailedMqttConnections`](tables/egnfailedmqttconnections.md) | - | - | - |
 | [`EGNFailedMqttPublishedMessages`](tables/egnfailedmqttpublishedmessages.md) | - | - | - |
@@ -928,9 +908,7 @@ Browse tables alphabetically:
 | [`ExposureGraphEdges`](tables/exposuregraphedges.md) | - | - | - |
 | [`ExposureGraphNodes`](tables/exposuregraphnodes.md) | - | - | - |
 | [`ExtraHop_Detections_CL`](tables/extrahop-detections-cl.md) | [1](tables/extrahop-detections-cl.md) | [1](tables/extrahop-detections-cl.md) | Analytics, Workbooks |
-| [`e`](tables/e.md) | [1](tables/e.md) | - | Playbooks |
 | [`eset_CL`](tables/eset-cl.md) | [1](tables/eset-cl.md) | [1](tables/eset-cl.md) | Analytics, Workbooks |
-| [`event`](tables/event.md) | [1](tables/event.md) | - | Analytics |
 | [`eventsapplicationdata_CL`](tables/eventsapplicationdata-cl.md) | [1](tables/eventsapplicationdata-cl.md) | [1](tables/eventsapplicationdata-cl.md) | Workbooks |
 | [`eventsauditdata_CL`](tables/eventsauditdata-cl.md) | [1](tables/eventsauditdata-cl.md) | [1](tables/eventsauditdata-cl.md) | - |
 | [`eventsconnectiondata_CL`](tables/eventsconnectiondata-cl.md) | [1](tables/eventsconnectiondata-cl.md) | [1](tables/eventsconnectiondata-cl.md) | - |
@@ -942,7 +920,6 @@ Browse tables alphabetically:
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`F`](tables/f.md) | - | - | - |
 | [`F5Telemetry_ASM_CL`](tables/f5telemetry-asm-cl.md) | [1](tables/f5telemetry-asm-cl.md) | [1](tables/f5telemetry-asm-cl.md) | Workbooks |
 | [`F5Telemetry_AVR_CL`](tables/f5telemetry-avr-cl.md) | [1](tables/f5telemetry-avr-cl.md) | - | Workbooks |
 | [`F5Telemetry_LTM_CL`](tables/f5telemetry-ltm-cl.md) | [1](tables/f5telemetry-ltm-cl.md) | [1](tables/f5telemetry-ltm-cl.md) | Workbooks |
@@ -964,7 +941,6 @@ Browse tables alphabetically:
 | [`ForescoutOtAsset_CL`](tables/forescoutotasset-cl.md) | [1](tables/forescoutotasset-cl.md) | [1](tables/forescoutotasset-cl.md) | Workbooks |
 | [`ForescoutPolicyStatus_CL`](tables/forescoutpolicystatus-cl.md) | [1](tables/forescoutpolicystatus-cl.md) | [1](tables/forescoutpolicystatus-cl.md) | Workbooks |
 | [`FunctionAppLogs`](tables/functionapplogs.md) | - | - | - |
-| [`f`](tables/f.md) | [1](tables/f.md) | - | Playbooks |
 | [`feedly_indicators_CL`](tables/feedly-indicators-cl.md) | [1](tables/feedly-indicators-cl.md) | [1](tables/feedly-indicators-cl.md) | - |
 | [`fluentbit_CL`](tables/fluentbit-cl.md) | [1](tables/fluentbit-cl.md) | [1](tables/fluentbit-cl.md) | Analytics, Hunting, Workbooks |
 
@@ -972,7 +948,8 @@ Browse tables alphabetically:
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`G`](tables/g.md) | [1](tables/g.md) | - | Playbooks |
+| [`GCAssets_CL`](tables/gcassets-cl.md) | [1](tables/gcassets-cl.md) | - | Playbooks |
+| [`GCIncidents_CL`](tables/gcincidents-cl.md) | [1](tables/gcincidents-cl.md) | - | Playbooks |
 | [`GCPApigee`](tables/gcpapigee.md) | [1](tables/gcpapigee.md) | [1](tables/gcpapigee.md) | - |
 | [`GCPAuditLogs`](tables/gcpauditlogs.md) | [2](tables/gcpauditlogs.md) | [2](tables/gcpauditlogs.md) | Analytics |
 | [`GCPCDN`](tables/gcpcdn.md) | [1](tables/gcpcdn.md) | [1](tables/gcpcdn.md) | - |
@@ -1051,8 +1028,10 @@ Browse tables alphabetically:
 | [`GoogleWorkspaceReports`](tables/googleworkspacereports.md) | [1](tables/googleworkspacereports.md) | [1](tables/googleworkspacereports.md) | - |
 | [`GoogleWorkspaceReports_CL`](tables/googleworkspacereports-cl.md) | [1](tables/googleworkspacereports-cl.md) | [1](tables/googleworkspacereports-cl.md) | Analytics, Hunting, Workbooks |
 | [`GraphApiAuditEvents`](tables/graphapiauditevents.md) | - | - | - |
+| [`GreyNoiseIPCommunity_CL`](tables/greynoiseipcommunity-cl.md) | [1](tables/greynoiseipcommunity-cl.md) | - | Playbooks |
+| [`GreyNoiseIPContext_CL`](tables/greynoiseipcontext-cl.md) | [1](tables/greynoiseipcontext-cl.md) | - | Playbooks |
+| [`GreyNoiseIPRIOT_CL`](tables/greynoiseipriot-cl.md) | [1](tables/greynoiseipriot-cl.md) | - | Playbooks |
 | [`Guardian_CL`](tables/guardian-cl.md) | [1](tables/guardian-cl.md) | - | Analytics |
-| [`g`](tables/g.md) | [1](tables/g.md) | - | Playbooks |
 | [`githubscanaudit_CL`](tables/githubscanaudit-cl.md) | [1](tables/githubscanaudit-cl.md) | [1](tables/githubscanaudit-cl.md) | Workbooks |
 
 ## H
@@ -1102,15 +1081,12 @@ Browse tables alphabetically:
 | [`Heartbeat`](tables/heartbeat.md) | [11](tables/heartbeat.md) | [1](tables/heartbeat.md) | Analytics, Workbooks |
 | [`Host_Name_Info_CL`](tables/host-name-info-cl.md) | [1](tables/host-name-info-cl.md) | - | Workbooks |
 | [`HuntingBookmark`](tables/huntingbookmark.md) | [1](tables/huntingbookmark.md) | - | Workbooks |
-| [`h`](tables/h.md) | [1](tables/h.md) | - | Playbooks |
-| [`heartbeat`](tables/heartbeat.md) | [1](tables/heartbeat.md) | - | Workbooks |
 | [`http_proxy_oab_CL`](tables/http-proxy-oab-cl.md) | [1](tables/http-proxy-oab-cl.md) | - | Analytics |
 
 ## I
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`I`](tables/i.md) | [1](tables/i.md) | - | Playbooks |
 | [`IP_Space_Info_CL`](tables/ip-space-info-cl.md) | [1](tables/ip-space-info-cl.md) | - | Workbooks |
 | [`IdentityAccountInfo`](tables/identityaccountinfo.md) | - | - | - |
 | [`IdentityDirectoryEvents`](tables/identitydirectoryevents.md) | [3](tables/identitydirectoryevents.md) | [1](tables/identitydirectoryevents.md) | Hunting, Workbooks |
@@ -1133,6 +1109,8 @@ Browse tables alphabetically:
 | [`ImpervaWAFCloud`](tables/impervawafcloud.md) | [1](tables/impervawafcloud.md) | - | Analytics, Hunting, Workbooks |
 | [`ImpervaWAFCloudV2_CL`](tables/impervawafcloudv2-cl.md) | [1](tables/impervawafcloudv2-cl.md) | [2](tables/impervawafcloudv2-cl.md) | - |
 | [`ImpervaWAFCloud_CL`](tables/impervawafcloud-cl.md) | [1](tables/impervawafcloud-cl.md) | [1](tables/impervawafcloud-cl.md) | - |
+| [`IncidentFileActions_CL`](tables/incidentfileactions-cl.md) | - | - | - |
+| [`IncidentProcessActions_CL`](tables/incidentprocessactions-cl.md) | - | - | - |
 | [`InfoSecAnalytics_CL`](tables/infosecanalytics-cl.md) | [1](tables/infosecanalytics-cl.md) | [1](tables/infosecanalytics-cl.md) | Workbooks |
 | [`InfobloxInsightAssets_CL`](tables/infobloxinsightassets-cl.md) | [2](tables/infobloxinsightassets-cl.md) | - | Playbooks, Workbooks |
 | [`InfobloxInsightComments_CL`](tables/infobloxinsightcomments-cl.md) | [2](tables/infobloxinsightcomments-cl.md) | - | Playbooks, Workbooks |
@@ -1167,7 +1145,6 @@ Browse tables alphabetically:
 | [`Ipinfo_WHOIS_POC_CL`](tables/ipinfo-whois-poc-cl.md) | [1](tables/ipinfo-whois-poc-cl.md) | [1](tables/ipinfo-whois-poc-cl.md) | - |
 | [`Island_Admin_CL`](tables/island-admin-cl.md) | [1](tables/island-admin-cl.md) | [1](tables/island-admin-cl.md) | Workbooks |
 | [`Island_User_CL`](tables/island-user-cl.md) | [1](tables/island-user-cl.md) | [1](tables/island-user-cl.md) | Workbooks |
-| [`i`](tables/i.md) | [1](tables/i.md) | - | Playbooks |
 | [`imAuthentication`](asim/imauthentication.md) | [1](asim/imauthentication.md) | - | Analytics |
 | [`imFileEvent`](asim/imfileevent.md) | [5](asim/imfileevent.md) | - | Analytics, Hunting, Workbooks |
 | [`imNetworkSession`](asim/imnetworksession.md) | [2](asim/imnetworksession.md) | - | Hunting, Workbooks |
@@ -1208,13 +1185,11 @@ Browse tables alphabetically:
 | [`KubePVInventory`](tables/kubepvinventory.md) | - | - | - |
 | [`KubePodInventory`](tables/kubepodinventory.md) | - | - | - |
 | [`KubeServices`](tables/kubeservices.md) | - | - | - |
-| [`k`](tables/k.md) | [1](tables/k.md) | - | Playbooks |
 
 ## L
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`L`](tables/l.md) | [1](tables/l.md) | - | Playbooks |
 | [`LAJobLogs`](tables/lajoblogs.md) | - | - | - |
 | [`LAQueryLogs`](tables/laquerylogs.md) | [3](tables/laquerylogs.md) | - | Analytics, Hunting, Workbooks |
 | [`LASummaryLogs`](tables/lasummarylogs.md) | - | - | - |
@@ -1228,14 +1203,13 @@ Browse tables alphabetically:
 | [`LookoutCloudSecurity_CL`](tables/lookoutcloudsecurity-cl.md) | [1](tables/lookoutcloudsecurity-cl.md) | [1](tables/lookoutcloudsecurity-cl.md) | - |
 | [`LookoutMtdV2_CL`](tables/lookoutmtdv2-cl.md) | [1](tables/lookoutmtdv2-cl.md) | [1](tables/lookoutmtdv2-cl.md) | Analytics, Hunting, Workbooks |
 | [`Lookout_CL`](tables/lookout-cl.md) | [1](tables/lookout-cl.md) | [1](tables/lookout-cl.md) | Analytics |
-| [`l`](tables/l.md) | [1](tables/l.md) | - | Playbooks |
 
 ## M
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`M`](tables/m.md) | [1](tables/m.md) | - | Playbooks |
 | [`M365SecureScoreControls_CL`](tables/m365securescorecontrols-cl.md) | [1](tables/m365securescorecontrols-cl.md) | - | Workbooks |
+| [`M365SecureScore_CL`](tables/m365securescore-cl.md) | - | - | - |
 | [`MAApplication`](tables/maapplication.md) | - | - | - |
 | [`MAApplicationHealth`](tables/maapplicationhealth.md) | - | - | - |
 | [`MAApplicationHealthAlternativeVersions`](tables/maapplicationhealthalternativeversions.md) | - | - | - |
@@ -1278,6 +1252,7 @@ Browse tables alphabetically:
 | [`MDPResourceLog`](tables/mdpresourcelog.md) | - | - | - |
 | [`MDfEExposureScore_CL`](tables/mdfeexposurescore-cl.md) | [1](tables/mdfeexposurescore-cl.md) | - | Workbooks |
 | [`MDfERecommendations_CL`](tables/mdferecommendations-cl.md) | [1](tables/mdferecommendations-cl.md) | - | Workbooks |
+| [`MDfESecureScore_CL`](tables/mdfesecurescore-cl.md) | - | - | - |
 | [`MDfEVulnerabilitiesList_CL`](tables/mdfevulnerabilitieslist-cl.md) | [1](tables/mdfevulnerabilitieslist-cl.md) | - | Workbooks |
 | [`MNFDeviceUpdates`](tables/mnfdeviceupdates.md) | - | - | - |
 | [`MNFSystemSessionHistoryUpdates`](tables/mnfsystemsessionhistoryupdates.md) | - | - | - |
@@ -1289,8 +1264,8 @@ Browse tables alphabetically:
 | [`Malware_Data_CL`](tables/malware-data-cl.md) | [1](tables/malware-data-cl.md) | [1](tables/malware-data-cl.md) | Workbooks |
 | [`MarkLogicAudit_CL`](tables/marklogicaudit-cl.md) | [2](tables/marklogicaudit-cl.md) | [2](tables/marklogicaudit-cl.md) | - |
 | [`McasShadowItReporting`](tables/mcasshadowitreporting.md) | [1](tables/mcasshadowitreporting.md) | [1](tables/mcasshadowitreporting.md) | Workbooks |
-| [`MerakiConfigurationChanges_CL`](tables/merakiconfigurationchanges-cl.md) | - | - | - |
-| [`MerakiSecurityEvents_CL`](tables/merakisecurityevents-cl.md) | - | - | - |
+| [`MerakiConfigurationChanges_CL`](tables/merakiconfigurationchanges-cl.md) | [1](tables/merakiconfigurationchanges-cl.md) | - | Playbooks |
+| [`MerakiSecurityEvents_CL`](tables/merakisecurityevents-cl.md) | [1](tables/merakisecurityevents-cl.md) | - | Playbooks |
 | [`MeshControlPlane`](tables/meshcontrolplane.md) | - | - | - |
 | [`MessageEvents`](tables/messageevents.md) | [1](tables/messageevents.md) | - | Hunting |
 | [`MessagePostDeliveryEvents`](tables/messagepostdeliveryevents.md) | [1](tables/messagepostdeliveryevents.md) | - | Hunting |
@@ -1313,11 +1288,11 @@ Browse tables alphabetically:
 | [`MiroContentLogs_CL`](tables/mirocontentlogs-cl.md) | [1](tables/mirocontentlogs-cl.md) | [1](tables/mirocontentlogs-cl.md) | - |
 | [`MongoDBAudit_CL`](tables/mongodbaudit-cl.md) | [2](tables/mongodbaudit-cl.md) | [2](tables/mongodbaudit-cl.md) | - |
 | [`MorphisecAlerts_CL`](tables/morphisecalerts-cl.md) | [1](tables/morphisecalerts-cl.md) | [1](tables/morphisecalerts-cl.md) | Analytics |
+| [`MuleSoftAuditLogs_CL`](tables/mulesoftauditlogs-cl.md) | [1](tables/mulesoftauditlogs-cl.md) | - | Playbooks |
 | [`MuleSoft_Cloudhub_CL`](tables/mulesoft-cloudhub-cl.md) | [1](tables/mulesoft-cloudhub-cl.md) | [1](tables/mulesoft-cloudhub-cl.md) | - |
 | [`MySqlAuditLogs`](tables/mysqlauditlogs.md) | - | - | - |
 | [`MySqlErrorLogs`](tables/mysqlerrorlogs.md) | - | - | - |
 | [`MySqlSlowLogs`](tables/mysqlslowlogs.md) | - | - | - |
-| [`m`](tables/m.md) | [1](tables/m.md) | - | Playbooks |
 | [`maillog_CL`](tables/maillog-cl.md) | [1](tables/maillog-cl.md) | [1](tables/maillog-cl.md) | Analytics, Hunting, Workbooks |
 | [`meraki_CL`](tables/meraki-cl.md) | [3](tables/meraki-cl.md) | [4](tables/meraki-cl.md) | Workbooks |
 | [`message_CL`](tables/message-cl.md) | [1](tables/message-cl.md) | [1](tables/message-cl.md) | Analytics, Hunting, Workbooks |
@@ -1326,7 +1301,6 @@ Browse tables alphabetically:
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`N`](tables/n.md) | [1](tables/n.md) | - | Playbooks |
 | [`NCBMBreakGlassAuditLogs`](tables/ncbmbreakglassauditlogs.md) | - | - | - |
 | [`NCBMSecurityDefenderLogs`](tables/ncbmsecuritydefenderlogs.md) | - | - | - |
 | [`NCBMSecurityLogs`](tables/ncbmsecuritylogs.md) | - | - | - |
@@ -1402,7 +1376,6 @@ Browse tables alphabetically:
 | [`NginxUpstreamUpdateLogs`](tables/nginxupstreamupdatelogs.md) | - | - | - |
 | [`NonameAPISecurityAlert_CL`](tables/nonameapisecurityalert-cl.md) | [1](tables/nonameapisecurityalert-cl.md) | [1](tables/nonameapisecurityalert-cl.md) | - |
 | [`NordPassEventLogs_CL`](tables/nordpasseventlogs-cl.md) | [1](tables/nordpasseventlogs-cl.md) | [1](tables/nordpasseventlogs-cl.md) | Analytics, Workbooks |
-| [`n`](tables/n.md) | [1](tables/n.md) | - | Playbooks |
 | [`net_assets_CL`](tables/net-assets-cl.md) | [1](tables/net-assets-cl.md) | [1](tables/net-assets-cl.md) | - |
 | [`netflow_CL`](tables/netflow-cl.md) | - | - | - |
 
@@ -1410,7 +1383,6 @@ Browse tables alphabetically:
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`O`](tables/o.md) | [1](tables/o.md) | - | Playbooks |
 | [`O365API_CL`](tables/o365api-cl.md) | [1](tables/o365api-cl.md) | - | Playbooks |
 | [`OAuthAppInfo`](tables/oauthappinfo.md) | - | - | - |
 | [`OCI_LogsV2_CL`](tables/oci-logsv2-cl.md) | [1](tables/oci-logsv2-cl.md) | [1](tables/oci-logsv2-cl.md) | Analytics, Hunting, Workbooks |
@@ -1456,14 +1428,11 @@ Browse tables alphabetically:
 | [`OracleCloudDatabase`](tables/oracleclouddatabase.md) | - | - | - |
 | [`OracleWebLogicServer_CL`](tables/oracleweblogicserver-cl.md) | [2](tables/oracleweblogicserver-cl.md) | [2](tables/oracleweblogicserver-cl.md) | Analytics, Hunting, Workbooks |
 | [`OrcaAlerts_CL`](tables/orcaalerts-cl.md) | [1](tables/orcaalerts-cl.md) | [1](tables/orcaalerts-cl.md) | Workbooks |
-| [`o`](tables/o.md) | [1](tables/o.md) | - | Playbooks |
-| [`operation`](tables/operation.md) | [2](tables/operation.md) | - | Hunting, Workbooks |
 
 ## P
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`P`](tables/p.md) | [1](tables/p.md) | - | Playbooks |
 | [`PDNSBlockData_CL`](tables/pdnsblockdata-cl.md) | [1](tables/pdnsblockdata-cl.md) | [1](tables/pdnsblockdata-cl.md) | - |
 | [`PDNS_Data_CL`](tables/pdns-data-cl.md) | [1](tables/pdns-data-cl.md) | - | Workbooks |
 | [`PFTitleAuditLogs`](tables/pftitleauditlogs.md) | - | - | - |
@@ -1504,6 +1473,7 @@ Browse tables alphabetically:
 | [`PowerPlatformConnectorActivity`](tables/powerplatformconnectoractivity.md) | - | - | - |
 | [`PowerPlatformDlpActivity`](tables/powerplatformdlpactivity.md) | - | - | - |
 | [`PrismaCloudCompute_CL`](tables/prismacloudcompute-cl.md) | [1](tables/prismacloudcompute-cl.md) | [2](tables/prismacloudcompute-cl.md) | - |
+| [`Prisma_CL`](tables/prisma-cl.md) | [1](tables/prisma-cl.md) | - | Playbooks |
 | [`ProcessInvestigator`](tables/processinvestigator.md) | - | - | - |
 | [`ProjectActivity`](tables/projectactivity.md) | [1](tables/projectactivity.md) | [1](tables/projectactivity.md) | - |
 | [`ProofPointData_CL`](tables/proofpointdata-cl.md) | [1](tables/proofpointdata-cl.md) | - | Playbooks |
@@ -1524,7 +1494,6 @@ Browse tables alphabetically:
 | [`PurviewDataSensitivityLogs`](tables/purviewdatasensitivitylogs.md) | [2](tables/purviewdatasensitivitylogs.md) | [1](tables/purviewdatasensitivitylogs.md) | Analytics, Workbooks |
 | [`PurviewScanStatusLogs`](tables/purviewscanstatuslogs.md) | - | - | - |
 | [`PurviewSecurityLogs`](tables/purviewsecuritylogs.md) | - | - | - |
-| [`p`](tables/p.md) | [1](tables/p.md) | - | Playbooks |
 | [`prancer_CL`](tables/prancer-cl.md) | [1](tables/prancer-cl.md) | [1](tables/prancer-cl.md) | Analytics, Hunting, Workbooks |
 
 ## Q
@@ -1541,7 +1510,6 @@ Browse tables alphabetically:
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`R`](tables/r.md) | [1](tables/r.md) | - | Playbooks |
 | [`REDConnectionEvents`](tables/redconnectionevents.md) | - | - | - |
 | [`RLTiCloudQuotas_CL`](tables/rlticloudquotas-cl.md) | [1](tables/rlticloudquotas-cl.md) | - | Playbooks, Workbooks |
 | [`RSAIDPlus_AdminLogs_CL`](tables/rsaidplus-adminlogs-cl.md) | [1](tables/rsaidplus-adminlogs-cl.md) | [1](tables/rsaidplus-adminlogs-cl.md) | Analytics |
@@ -1559,13 +1527,11 @@ Browse tables alphabetically:
 | [`Rubrik_Events_Data_CL`](tables/rubrik-events-data-cl.md) | [1](tables/rubrik-events-data-cl.md) | [1](tables/rubrik-events-data-cl.md) | Analytics |
 | [`Rubrik_Ransomware_Data_CL`](tables/rubrik-ransomware-data-cl.md) | [1](tables/rubrik-ransomware-data-cl.md) | [1](tables/rubrik-ransomware-data-cl.md) | - |
 | [`Rubrik_ThreatHunt_Data_CL`](tables/rubrik-threathunt-data-cl.md) | [1](tables/rubrik-threathunt-data-cl.md) | [1](tables/rubrik-threathunt-data-cl.md) | - |
-| [`r`](tables/r.md) | [1](tables/r.md) | - | Playbooks |
 
 ## S
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`S`](tables/s.md) | [1](tables/s.md) | - | Playbooks |
 | [`SAPBTPAuditLog_CL`](tables/sapbtpauditlog-cl.md) | [1](tables/sapbtpauditlog-cl.md) | [1](tables/sapbtpauditlog-cl.md) | Analytics, Workbooks |
 | [`SAPETDAlerts_CL`](tables/sapetdalerts-cl.md) | [1](tables/sapetdalerts-cl.md) | [1](tables/sapetdalerts-cl.md) | Analytics |
 | [`SAPETDInvestigations_CL`](tables/sapetdinvestigations-cl.md) | [1](tables/sapetdinvestigations-cl.md) | [1](tables/sapetdinvestigations-cl.md) | Analytics |
@@ -1635,7 +1601,6 @@ Browse tables alphabetically:
 | [`SfBOnlineAssessmentRecommendation`](tables/sfbonlineassessmentrecommendation.md) | - | - | - |
 | [`ShadowByteAriaForums_CL`](tables/shadowbyteariaforums-cl.md) | [1](tables/shadowbyteariaforums-cl.md) | - | Playbooks |
 | [`SharePointOnlineAssessmentRecommendation`](tables/sharepointonlineassessmentrecommendation.md) | - | - | - |
-| [`SignInLogs`](tables/signinlogs.md) | [1](tables/signinlogs.md) | [1](tables/signinlogs.md) | - |
 | [`SignalRServiceDiagnosticLogs`](tables/signalrservicediagnosticlogs.md) | - | - | - |
 | [`SigninLogs`](tables/signinlogs.md) | [34](tables/signinlogs.md) | [1](tables/signinlogs.md) | Analytics, Hunting, Workbooks |
 | [`SlackAuditNativePoller_CL`](tables/slackauditnativepoller-cl.md) | [1](tables/slackauditnativepoller-cl.md) | [2](tables/slackauditnativepoller-cl.md) | Analytics, Hunting, Workbooks |
@@ -1711,15 +1676,12 @@ Browse tables alphabetically:
 | [`SynapseSqlPoolSqlRequests`](tables/synapsesqlpoolsqlrequests.md) | - | - | - |
 | [`SynapseSqlPoolWaits`](tables/synapsesqlpoolwaits.md) | - | - | - |
 | [`Syslog`](tables/syslog.md) | [54](tables/syslog.md) | [38](tables/syslog.md) | Analytics, Hunting, Workbooks |
-| [`s`](tables/s.md) | [1](tables/s.md) | - | Playbooks |
 | [`secRMM_CL`](tables/secrmm-cl.md) | [1](tables/secrmm-cl.md) | [1](tables/secrmm-cl.md) | Analytics, Workbooks |
-| [`syslog`](tables/syslog.md) | [1](tables/syslog.md) | [1](tables/syslog.md) | - |
 
 ## T
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`T`](tables/t.md) | [1](tables/t.md) | - | Playbooks |
 | [`TOUserAudits`](tables/touseraudits.md) | - | - | - |
 | [`TOUserDiagnostics`](tables/touserdiagnostics.md) | - | - | - |
 | [`TSIIngress`](tables/tsiingress.md) | - | - | - |
@@ -1734,7 +1696,7 @@ Browse tables alphabetically:
 | [`TaniumPatchListCompliance_CL`](tables/taniumpatchlistcompliance-cl.md) | [1](tables/taniumpatchlistcompliance-cl.md) | - | Workbooks |
 | [`TaniumSCCMClientHealth_CL`](tables/taniumsccmclienthealth-cl.md) | [1](tables/taniumsccmclienthealth-cl.md) | - | Workbooks |
 | [`TaniumThreatResponse_CL`](tables/taniumthreatresponse-cl.md) | [1](tables/taniumthreatresponse-cl.md) | - | Analytics, Workbooks |
-| [`Tenable_IE_CL`](tables/tenable-ie-cl.md) | [3](tables/tenable-ie-cl.md) | [3](tables/tenable-ie-cl.md) | Analytics, Workbooks |
+| [`Tenable_IE_CL`](tables/tenable-ie-cl.md) | [1](tables/tenable-ie-cl.md) | [1](tables/tenable-ie-cl.md) | - |
 | [`Tenable_IO_Assets_CL`](tables/tenable-io-assets-cl.md) | [1](tables/tenable-io-assets-cl.md) | [1](tables/tenable-io-assets-cl.md) | Playbooks |
 | [`Tenable_IO_Vuln_CL`](tables/tenable-io-vuln-cl.md) | [1](tables/tenable-io-vuln-cl.md) | [1](tables/tenable-io-vuln-cl.md) | Playbooks |
 | [`Tenable_VM_Asset_CL`](tables/tenable-vm-asset-cl.md) | [1](tables/tenable-vm-asset-cl.md) | [1](tables/tenable-vm-asset-cl.md) | Playbooks |
@@ -1742,9 +1704,10 @@ Browse tables alphabetically:
 | [`Tenable_VM_Vuln_CL`](tables/tenable-vm-vuln-cl.md) | [1](tables/tenable-vm-vuln-cl.md) | [1](tables/tenable-vm-vuln-cl.md) | Playbooks |
 | [`Tenable_WAS_Asset_CL`](tables/tenable-was-asset-cl.md) | [1](tables/tenable-was-asset-cl.md) | [1](tables/tenable-was-asset-cl.md) | - |
 | [`Tenable_WAS_Vuln_CL`](tables/tenable-was-vuln-cl.md) | [1](tables/tenable-was-vuln-cl.md) | [1](tables/tenable-was-vuln-cl.md) | - |
-| [`Tenable_ad_CL`](tables/tenable-ad-cl.md) | [3](tables/tenable-ad-cl.md) | [3](tables/tenable-ad-cl.md) | Analytics, Workbooks |
+| [`Tenable_ad_CL`](tables/tenable-ad-cl.md) | [1](tables/tenable-ad-cl.md) | [1](tables/tenable-ad-cl.md) | - |
 | [`TheHive_CL`](tables/thehive-cl.md) | [1](tables/thehive-cl.md) | [1](tables/thehive-cl.md) | - |
 | [`TheomAlerts_CL`](tables/theomalerts-cl.md) | [1](tables/theomalerts-cl.md) | [1](tables/theomalerts-cl.md) | Analytics, Workbooks |
+| [`Thinkst_Canary_CL`](tables/thinkst-canary-cl.md) | [1](tables/thinkst-canary-cl.md) | - | Playbooks |
 | [`ThreatIntelExportOperation`](tables/threatintelexportoperation.md) | [1](tables/threatintelexportoperation.md) | [1](tables/threatintelexportoperation.md) | - |
 | [`ThreatIntelIndicators`](tables/threatintelindicators.md) | [13](tables/threatintelindicators.md) | [7](tables/threatintelindicators.md) | Analytics, Hunting, Workbooks |
 | [`ThreatIntelObjects`](tables/threatintelobjects.md) | [1](tables/threatintelobjects.md) | [5](tables/threatintelobjects.md) | - |
@@ -1768,7 +1731,6 @@ Browse tables alphabetically:
 | [`Ttp_Attachment_CL`](tables/ttp-attachment-cl.md) | [1](tables/ttp-attachment-cl.md) | [1](tables/ttp-attachment-cl.md) | Analytics, Workbooks |
 | [`Ttp_Impersonation_CL`](tables/ttp-impersonation-cl.md) | [1](tables/ttp-impersonation-cl.md) | [1](tables/ttp-impersonation-cl.md) | Analytics, Workbooks |
 | [`Ttp_Url_CL`](tables/ttp-url-cl.md) | [1](tables/ttp-url-cl.md) | [1](tables/ttp-url-cl.md) | Analytics, Workbooks |
-| [`t`](tables/t.md) | [1](tables/t.md) | - | Playbooks |
 | [`talon_CL`](tables/talon-cl.md) | - | - | - |
 | [`tide_lookup_data_CL`](tables/tide-lookup-data-cl.md) | [1](tables/tide-lookup-data-cl.md) | - | Playbooks, Workbooks |
 
@@ -1776,7 +1738,6 @@ Browse tables alphabetically:
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`U`](tables/u.md) | [1](tables/u.md) | - | Playbooks |
 | [`UAApp`](tables/uaapp.md) | - | - | - |
 | [`UAComputer`](tables/uacomputer.md) | - | - | - |
 | [`UAComputerRank`](tables/uacomputerrank.md) | - | - | - |
@@ -1796,23 +1757,20 @@ Browse tables alphabetically:
 | [`UCDeviceAlert`](tables/ucdevicealert.md) | - | - | - |
 | [`UCServiceUpdateStatus`](tables/ucserviceupdatestatus.md) | - | - | - |
 | [`UCUpdateAlert`](tables/ucupdatealert.md) | - | - | - |
-| [`UPDATE`](tables/update.md) | [1](tables/update.md) | - | Workbooks |
 | [`Ubiquiti_CL`](tables/ubiquiti-cl.md) | [2](tables/ubiquiti-cl.md) | [2](tables/ubiquiti-cl.md) | Analytics, Hunting, Workbooks |
-| [`Update`](tables/update.md) | [2](tables/update.md) | - | Workbooks |
+| [`Update`](tables/update.md) | [3](tables/update.md) | - | Workbooks |
 | [`UpdateRunProgress`](tables/updaterunprogress.md) | - | - | - |
 | [`UpdateSummary`](tables/updatesummary.md) | - | - | - |
 | [`UrlClickEvents`](tables/urlclickevents.md) | [4](tables/urlclickevents.md) | [1](tables/urlclickevents.md) | Analytics, Hunting, Workbooks |
-| [`Usage`](tables/usage.md) | [8](tables/usage.md) | - | Analytics, Hunting, Playbooks, Workbooks |
+| [`Usage`](tables/usage.md) | [9](tables/usage.md) | - | Analytics, Hunting, Playbooks, Workbooks |
 | [`UserAccessAnalytics`](tables/useraccessanalytics.md) | - | - | - |
 | [`UserPeerAnalytics`](tables/userpeeranalytics.md) | - | - | - |
-| [`u`](tables/u.md) | [1](tables/u.md) | - | Playbooks |
-| [`usage`](tables/usage.md) | [1](tables/usage.md) | - | Workbooks |
+| [`Users_CL`](tables/users-cl.md) | - | - | - |
 
 ## V
 
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
-| [`V`](tables/v.md) | [1](tables/v.md) | - | Playbooks |
 | [`VCoreMongoRequests`](tables/vcoremongorequests.md) | - | - | - |
 | [`VIAudit`](tables/viaudit.md) | - | - | - |
 | [`VIIndexing`](tables/viindexing.md) | - | - | - |
@@ -1828,7 +1786,7 @@ Browse tables alphabetically:
 | [`VTDomainReport_CL`](tables/vtdomainreport-cl.md) | [1](tables/vtdomainreport-cl.md) | - | Playbooks |
 | [`VTFileReport_CL`](tables/vtfilereport-cl.md) | [1](tables/vtfilereport-cl.md) | - | Playbooks |
 | [`VTIPReport_CL`](tables/vtipreport-cl.md) | [1](tables/vtipreport-cl.md) | - | Playbooks |
-| [`VTURLReport_CL`](tables/vturlreport-cl.md) | [1](tables/vturlreport-cl.md) | - | Playbooks |
+| [`VTURLReport_CL`](tables/vturlreport-cl.md) | [2](tables/vturlreport-cl.md) | - | Playbooks |
 | [`ValenceAlert_CL`](tables/valencealert-cl.md) | [1](tables/valencealert-cl.md) | [1](tables/valencealert-cl.md) | Analytics, Workbooks |
 | [`VaronisAlerts_CL`](tables/varonisalerts-cl.md) | [1](tables/varonisalerts-cl.md) | [1](tables/varonisalerts-cl.md) | Workbooks |
 | [`VectraStream_CL`](tables/vectrastream-cl.md) | [3](tables/vectrastream-cl.md) | [2](tables/vectrastream-cl.md) | Workbooks |
@@ -1840,7 +1798,7 @@ Browse tables alphabetically:
 | [`VeeamSessions_CL`](tables/veeamsessions-cl.md) | [1](tables/veeamsessions-cl.md) | [1](tables/veeamsessions-cl.md) | Analytics |
 | [`VersasecCmsErrorLogs_CL`](tables/versaseccmserrorlogs-cl.md) | [1](tables/versaseccmserrorlogs-cl.md) | [1](tables/versaseccmserrorlogs-cl.md) | - |
 | [`VersasecCmsSysLogs_CL`](tables/versaseccmssyslogs-cl.md) | [1](tables/versaseccmssyslogs-cl.md) | [1](tables/versaseccmssyslogs-cl.md) | - |
-| [`v`](tables/v.md) | [1](tables/v.md) | - | Playbooks |
+| [`Vulns_AssetID_List_CL`](tables/vulns-assetid-list-cl.md) | [1](tables/vulns-assetid-list-cl.md) | - | Playbooks |
 | [`varonisresources_CL`](tables/varonisresources-cl.md) | [1](tables/varonisresources-cl.md) | [1](tables/varonisresources-cl.md) | - |
 | [`vcenter_CL`](tables/vcenter-cl.md) | [2](tables/vcenter-cl.md) | [2](tables/vcenter-cl.md) | Analytics, Workbooks |
 | [`vectra_beacon_CL`](tables/vectra-beacon-cl.md) | [1](tables/vectra-beacon-cl.md) | [1](tables/vectra-beacon-cl.md) | - |
@@ -1886,7 +1844,7 @@ Browse tables alphabetically:
 | [`WaaSDeploymentStatus`](tables/waasdeploymentstatus.md) | - | - | - |
 | [`WaaSInsiderStatus`](tables/waasinsiderstatus.md) | - | - | - |
 | [`WaaSUpdateStatus`](tables/waasupdatestatus.md) | - | - | - |
-| [`Watchlist`](tables/watchlist.md) | [2](tables/watchlist.md) | - | Analytics, Workbooks |
+| [`Watchlist`](tables/watchlist.md) | [5](tables/watchlist.md) | - | Analytics, Workbooks |
 | [`WebPubSubConnectivity`](tables/webpubsubconnectivity.md) | - | - | - |
 | [`WebPubSubHttpRequest`](tables/webpubsubhttprequest.md) | - | - | - |
 | [`WebPubSubMessaging`](tables/webpubsubmessaging.md) | - | - | - |
@@ -1911,9 +1869,6 @@ Browse tables alphabetically:
 | [`WorkloadMonitoringPerf`](tables/workloadmonitoringperf.md) | - | - | - |
 | [`Workplace_Facebook_CL`](tables/workplace-facebook-cl.md) | [1](tables/workplace-facebook-cl.md) | [1](tables/workplace-facebook-cl.md) | - |
 | [`WsSecurityEvents_CL`](tables/wssecurityevents-cl.md) | [1](tables/wssecurityevents-cl.md) | [1](tables/wssecurityevents-cl.md) | Workbooks |
-| [`w`](tables/w.md) | [1](tables/w.md) | - | Playbooks |
-| [`watchList`](tables/watchlist.md) | - | - | - |
-| [`watchlist`](tables/watchlist.md) | [3](tables/watchlist.md) | - | Analytics, Workbooks |
 | [`web_assets_CL`](tables/web-assets-cl.md) | [1](tables/web-assets-cl.md) | [1](tables/web-assets-cl.md) | - |
 
 ## X
@@ -1921,13 +1876,6 @@ Browse tables alphabetically:
 | Table | Solutions | Connectors | Content |
 |-------|:---------:|:----------:|:--------|
 | [`X509_Data_CL`](tables/x509-data-cl.md) | [1](tables/x509-data-cl.md) | - | Workbooks |
-| [`x`](tables/x.md) | [1](tables/x.md) | - | Playbooks |
-
-## Y
-
-| Table | Solutions | Connectors | Content |
-|-------|:---------:|:----------:|:--------|
-| [`y`](tables/y.md) | [1](tables/y.md) | - | Playbooks |
 
 ## Z
 

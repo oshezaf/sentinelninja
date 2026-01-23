@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Mimecast Awareness Training](../connectors/mimecastatapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Mimecast Awareness Training](../connectors/mimecastatapi.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast_Awareness_Training_Workbook](../content/mimecast-mimecast-awareness-training-workbook-daf0a27a.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast_Awareness_Training_Workbook](../content/mimecast-mimecast-awareness-training-workbook-daf0a27a.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [AwarenessSafeScore](../parsers/awarenesssafescore.md) | [Mimecast](../solutions/mimecast.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [AwarenessSafeScore](../parsers/awarenesssafescore.md) | [Mimecast](../solutions/mimecast.md) |  |
 
 ---
 

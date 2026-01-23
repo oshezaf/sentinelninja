@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [CYFIRMA Digital Risk](../connectors/cyfirmadigitalriskalertsconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [CYFIRMA Digital Risk](../connectors/cyfirmadigitalriskalertsconnector.md) |  |
 
 ---
 
@@ -25,8 +27,11 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md):**
-- [CYFIRMA - Social and Public Exposure - Exposure of PII/CII in Public Domain Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-exposure-of-pii-cii-in-public-domain-rule-52d71822-41e4-4c21-b36f-400294f2b43a-b233ea7b.md)
-- [CYFIRMA - Social and Public Exposure - Exposure of PII/CII in Public Domain Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-exposure-of-pii-cii-in-public-domain-rule-b484f224-687f-4406-af8a-ff019f9f2c24-d3be53cc.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CYFIRMA - Social and Public Exposure - Exposure of PII/CII in Public Domain Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-exposure-of-pii-cii-in-public-domain-rule-52d71822-41e4-4c21-b36f-400294f2b43a-b233ea7b.md) |  |
+| [CYFIRMA - Social and Public Exposure - Exposure of PII/CII in Public Domain Rule](../content/cyfirma-digital-risk-cyfirma-social-and-public-exposure-exposure-of-pii-cii-in-public-domain-rule-b484f224-687f-4406-af8a-ff019f9f2c24-d3be53cc.md) |  |
 
 ---
 

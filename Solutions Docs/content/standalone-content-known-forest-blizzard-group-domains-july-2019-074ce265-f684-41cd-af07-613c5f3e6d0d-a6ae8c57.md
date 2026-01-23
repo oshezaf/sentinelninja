@@ -31,11 +31,13 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`AZFWDnsQuery`](../tables/azfwdnsquery.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`VMConnection`](../tables/vmconnection.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ |
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
 
 ---
 

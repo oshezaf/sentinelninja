@@ -24,7 +24,9 @@ The VMware SD-WAN Edge appliance captured a potentially malicious traffic flow. 
 
 This content item queries data from the following tables:
 
-- [`Syslog`](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "VCF Alert"` | ✓ | ✓ |
 
 ---
 

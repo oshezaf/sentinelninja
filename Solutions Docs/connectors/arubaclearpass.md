@@ -18,8 +18,6 @@
 | **Publisher** | Aruba Networks |
 | **Used in Solutions** | [Aruba ClearPass](../solutions/aruba-clearpass.md) |
 | **Collection Method** | MMA |
-| **Event Vendor** | Aruba Networks |
-| **Event Product** | ClearPass |
 | **Connector Definition Files** | [Connector_Syslog_ArubaClearPass.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass/Data%20Connectors/Connector_Syslog_ArubaClearPass.json) |
 
 The [Aruba ClearPass](https://www.arubanetworks.com/products/security/network-access-control/secure-access/) connector allows you to easily connect your Aruba ClearPass with Microsoft Sentinel, to create custom dashboards, alerts, and improve investigation. This gives you more insight into your organization’s network and improves your security operation capabilities.
@@ -28,9 +26,9 @@ The [Aruba ClearPass](https://www.arubanetworks.com/products/security/network-ac
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Aruba Networks | ClearPass | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "ClearPass"`<br>`DeviceVendor == "Aruba Networks"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

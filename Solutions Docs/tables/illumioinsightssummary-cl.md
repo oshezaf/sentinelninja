@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Illumio Insights Summary](../connectors/illumioinsightssummaryccp.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Illumio Insights Summary](../connectors/illumioinsightssummaryccp.md) |  |
 
 ---
 

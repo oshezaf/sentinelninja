@@ -25,7 +25,9 @@ This query searches for logins with an expired access credential (for example an
 
 This content item queries data from the following tables:
 
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
 
 ---
 

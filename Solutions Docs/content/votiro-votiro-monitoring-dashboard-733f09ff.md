@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Votiro cloud"`<br>`DeviceVendor == "Votiro"` | ✓ | ✓ |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Sophos Cloud Optix](../connectors/sophoscloudoptix.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) |  |
 
 ---
 

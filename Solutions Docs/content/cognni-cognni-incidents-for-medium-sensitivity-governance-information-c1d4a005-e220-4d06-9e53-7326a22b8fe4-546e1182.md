@@ -25,7 +25,9 @@ Display incidents in which medium sensitivity governance information was placed 
 
 This content item queries data from the following tables:
 
-- [`CognniIncidents_CL`](../tables/cognniincidents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | — | — |
 
 ---
 

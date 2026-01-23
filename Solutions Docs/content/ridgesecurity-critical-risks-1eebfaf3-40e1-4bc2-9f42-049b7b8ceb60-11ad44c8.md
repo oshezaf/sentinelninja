@@ -19,14 +19,15 @@ This query searches for all the exploited risks that RidgeBot identified
 | **Tactics** | Execution, InitialAccess, PrivilegeEscalation |
 | **Techniques** | T1189, T1059, T1053, T1548 |
 | **Required Connectors** | [RidgeBotDataConnector](../connectors/ridgebotdataconnector.md), [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | RidgeSecurity |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity/Analytic%20Rules/RidgeSecurity_Risks.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "4001"`<br>`DeviceVendor == "RidgeSecurity"` | ✓ | ✓ |
 
 ---
 

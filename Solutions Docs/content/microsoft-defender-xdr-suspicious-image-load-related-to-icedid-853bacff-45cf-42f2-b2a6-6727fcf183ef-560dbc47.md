@@ -21,7 +21,9 @@ This query searches for suspicious load image events by rundll32.exe or regsvr32
 
 This content item queries data from the following tables:
 
-- [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ |
 
 ---
 

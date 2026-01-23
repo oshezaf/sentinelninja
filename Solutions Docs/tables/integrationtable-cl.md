@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [ESET Protect Platform](../connectors/esetprotectplatform.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [ESET Protect Platform](../connectors/esetprotectplatform.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [ESETProtectPlatform](../parsers/esetprotectplatform.md) | [ESET Protect Platform](../solutions/eset-protect-platform.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [ESETProtectPlatform](../parsers/esetprotectplatform.md) | [ESET Protect Platform](../solutions/eset-protect-platform.md) |  |
 
 ---
 

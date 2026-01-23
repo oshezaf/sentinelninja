@@ -17,14 +17,15 @@ Creates incidents based on behavioral detections from IronDefense.
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Required Connectors** | [IronNetIronDefense](../connectors/ironnetirondefense.md) |
-| **Event Product** | IronDefense |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/Analytic%20Rules/IronDefense_Detection_Query.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "IronDefense"` | ✓ | ✓ |
 
 ---
 

@@ -22,8 +22,8 @@ The [Workplace](https://www.workplace.com/) data connector provides the capabili
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) | — | — |
 
 ## Permissions

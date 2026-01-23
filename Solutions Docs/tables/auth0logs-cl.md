@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Auth0 Logs](../connectors/auth0connectorccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Auth0 Logs](../connectors/auth0connectorccpdefinition.md) |  |
 
 ---
 
@@ -24,16 +26,19 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [Auth0Workbook](../content/-auth0workbook-d2933493.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Auth0Workbook](../content/github-only-auth0workbook-07316f43.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [Auth0AM](../parsers/auth0am.md) | [Auth0](../solutions/auth0.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [Auth0AM](../parsers/auth0am.md) | [Auth0](../solutions/auth0.md) |  |
 
 ---
 

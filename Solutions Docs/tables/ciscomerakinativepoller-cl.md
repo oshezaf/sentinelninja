@@ -16,9 +16,11 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md)
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) |  |
+| [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) |  |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) |  |
 
 ---
 
@@ -27,15 +29,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
-- [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook-efe4feca.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CiscoMerakiWorkbook](../content/ciscomeraki-ciscomerakiworkbook-efe4feca.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [CiscoMeraki](../parsers/ciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CiscoMeraki](../parsers/ciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md) |  |
 
 ---
 

@@ -29,7 +29,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) |  |
 
 ---
 
@@ -38,48 +40,69 @@ This table is ingested by the following connectors:
 ### Analytic Rules (7)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
-- [Detect .NET runtime being loaded in JScript for code execution](../content/falconfriday-detect-.net-runtime-being-loaded-in-jscript-for-code-execution-9f921513-65f3-48a2-ae7d-326c5901c55e-fd9342fe.md)
-- [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Detect .NET runtime being loaded in JScript for code execution](../content/falconfriday-detect-.net-runtime-being-loaded-in-jscript-for-code-execution-9f921513-65f3-48a2-ae7d-326c5901c55e-fd9342fe.md) |  |
+| [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) |  |
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md)
-- [Regsvr32 Rundll32 Image Loads Abnormal Extension](../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-36fbd4e7-5630-4414-aa42-702a7fdded21-4cc759a2.md)
-- [SUNSPOT malware hashes](../content/microsoft-defender-xdr-sunspot-malware-hashes-53e936c6-6c30-4d12-8343-b8a0456e8429-b7f28a72.md)
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md)
-- [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md)
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md) |  |
+| [Regsvr32 Rundll32 Image Loads Abnormal Extension](../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-36fbd4e7-5630-4414-aa42-702a7fdded21-4cc759a2.md) |  |
+| [SUNSPOT malware hashes](../content/microsoft-defender-xdr-sunspot-malware-hashes-53e936c6-6c30-4d12-8343-b8a0456e8429-b7f28a72.md) |  |
+
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
+| [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md) |  |
 
 ### Hunting Queries (16)
 
-**In solution [](../solutions/.md):**
-- [Abuse.ch Recent Threat Feed](../content/-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f76c5da5.md)
-- [Abuse.ch Recent Threat Feed (1)](../content/-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d7f2c638.md)
-- [Detect PowerShell v2 Downgrade](../content/-detect-powershell-v2-downgrade-70c41ff4-b95a-43a3-8fb5-794ed69be100-71285d2e.md)
-- [Rare-process-as-a-service](../content/-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-b4627682.md)
-- [Suspicious Image Load related to IcedId](../content/-suspicious-image-load-related-to-icedid-b64c8a59-94ad-4659-b95e-36238312da5c-1cbc6b56.md)
-- [Suspicious Spoolsv Child Process](../content/-suspicious-spoolsv-child-process-ece67992-9699-44f5-a5c5-f7e5c2d1d5d4-b7e54d2d.md)
-- [Zip-Doc - Creation of JPG Payload File](../content/-zip-doc-creation-of-jpg-payload-file-b760519d-392b-4baf-a2d6-087dc302de1c-91cde56e.md)
-- [check-for-shadowhammer-activity-implant](../content/-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-29a3e39e.md)
-- [fireeye-red-team-tools-HASHs [Nobelium]](../content/-fireeye-red-team-tools-hashs-[nobelium]-3e9ac786-134c-4917-99bd-4a7ce01049ab-68c5d733.md)
-- [locate-dll-loaded-in-memory[Nobelium]](../content/-locate-dll-loaded-in-memory[nobelium]-bfea1fee-aa17-467d-b285-932d5a45ca53-84c503e8.md)
-- [regsvr32-rundll32-abnormal-image-loads](../content/-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-8b10935a.md)
-- [regsvr32-rundll32-image-loads-abnormal-extension](../content/-regsvr32-rundll32-image-loads-abnormal-extension-f24f6403-cba0-4f3c-9f88-28782b9ea39a-cd0832da.md)
-
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.md)
-- [Regsvr32 Rundll32 Image Loads Abnormal Extension](../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-b1f8aac2-766d-47ec-8787-84bc7692ff77-8be87cf1.md)
-- [Suspicious Image Load related to IcedId](../content/microsoft-defender-xdr-suspicious-image-load-related-to-icedid-853bacff-45cf-42f2-b2a6-6727fcf183ef-560dbc47.md)
-- [Suspicious Spoolsv Child Process](../content/microsoft-defender-xdr-suspicious-spoolsv-child-process-084a6349-b3d6-4528-91e4-4de5d52424e5-f5f0ac34.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.md) |  |
+| [Regsvr32 Rundll32 Image Loads Abnormal Extension](../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-b1f8aac2-766d-47ec-8787-84bc7692ff77-8be87cf1.md) |  |
+| [Suspicious Image Load related to IcedId](../content/microsoft-defender-xdr-suspicious-image-load-related-to-icedid-853bacff-45cf-42f2-b2a6-6727fcf183ef-560dbc47.md) |  |
+| [Suspicious Spoolsv Child Process](../content/microsoft-defender-xdr-suspicious-spoolsv-child-process-084a6349-b3d6-4528-91e4-4de5d52424e5-f5f0ac34.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Abuse.ch Recent Threat Feed](../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.md) |  |
+| [Abuse.ch Recent Threat Feed (1)](../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.md) |  |
+| [Detect PowerShell v2 Downgrade](../content/github-only-detect-powershell-v2-downgrade-70c41ff4-b95a-43a3-8fb5-794ed69be100-f267821b.md) |  |
+| [Rare-process-as-a-service](../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.md) |  |
+| [Suspicious Image Load related to IcedId](../content/github-only-suspicious-image-load-related-to-icedid-b64c8a59-94ad-4659-b95e-36238312da5c-ab8f04b9.md) |  |
+| [Suspicious Spoolsv Child Process](../content/github-only-suspicious-spoolsv-child-process-ece67992-9699-44f5-a5c5-f7e5c2d1d5d4-6e87ead2.md) |  |
+| [Zip-Doc - Creation of JPG Payload File](../content/github-only-zip-doc-creation-of-jpg-payload-file-b760519d-392b-4baf-a2d6-087dc302de1c-669b967f.md) |  |
+| [check-for-shadowhammer-activity-implant](../content/github-only-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-da57d533.md) |  |
+| [fireeye-red-team-tools-HASHs [Nobelium]](../content/github-only-fireeye-red-team-tools-hashs-[nobelium]-3e9ac786-134c-4917-99bd-4a7ce01049ab-cc118b80.md) |  |
+| [locate-dll-loaded-in-memory[Nobelium]](../content/github-only-locate-dll-loaded-in-memory[nobelium]-bfea1fee-aa17-467d-b285-932d5a45ca53-34f871d8.md) |  |
+| [regsvr32-rundll32-abnormal-image-loads](../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.md) |  |
+| [regsvr32-rundll32-image-loads-abnormal-extension](../content/github-only-regsvr32-rundll32-image-loads-abnormal-extension-f24f6403-cba0-4f3c-9f88-28782b9ea39a-555df071.md) |  |
 
 ### Workbooks (3)
 
-**In solution [](../solutions/.md):**
-- [MicrosoftDefenderForEndPoint](../content/-microsoftdefenderforendpoint-f98fcc1e.md)
-- [MicrosoftSentinelDeploymentandMigrationTracker](../content/-microsoftsentineldeploymentandmigrationtracker-da237854.md)
-
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
-- [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
 ---
 

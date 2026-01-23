@@ -25,7 +25,9 @@ This detection uses Sysmon telemetry to detect suspicious local connections via 
 
 This content item queries data from the following tables:
 
-- [`Event`](../tables/event.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
 ---
 

@@ -24,8 +24,8 @@ This IPinfo data connector installs an Azure Function app to download WHOIS_MNT 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Ipinfo_WHOIS_MNT_CL`](../tables/ipinfo-whois-mnt-cl.md) | — | — |
 
 ## Permissions

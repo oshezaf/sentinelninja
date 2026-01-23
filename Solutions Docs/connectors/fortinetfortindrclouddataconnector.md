@@ -22,8 +22,8 @@ The Fortinet FortiNDR Cloud data connector provides the capability to ingest [Fo
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) | — | — |
 | [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) | — | — |
 | [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) | — | — |

@@ -25,7 +25,9 @@ Suspicious S3 bucket activity indicating ransomware was detected. An attacker mi
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "GetObject,PutObject"` | ✓ | ✓ |
 
 ---
 

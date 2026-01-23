@@ -28,8 +28,11 @@ This table is used by the following solutions:
 
 ### Hunting Queries (1)
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [MDE_FindDefenderSettingsOnEndpoints](../content/standalone-content-mde-finddefendersettingsonendpoints-f8386a89-20c2-41ab-8ae2-bab88de65f81-97b8b825.md)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MDE_FindDefenderSettingsOnEndpoints](../content/standalone-content-mde-finddefendersettingsonendpoints-f8386a89-20c2-41ab-8ae2-bab88de65f81-97b8b825.md) |  |
 
 ---
 

@@ -24,9 +24,11 @@ This query helps calculate overall efficacy of MDO based on threats blocked pre-
 
 This content item queries data from the following tables:
 
-- [`CloudAppEvents`](../tables/cloudappevents.md)
-- [`EmailEvents`](../tables/emailevents.md)
-- [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | ✓ | ✗ |
 
 ---
 

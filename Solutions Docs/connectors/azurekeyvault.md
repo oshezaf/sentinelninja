@@ -22,8 +22,8 @@ Azure Key Vault is a cloud service for securely storing and accessing secrets. A
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 
 ## Permissions

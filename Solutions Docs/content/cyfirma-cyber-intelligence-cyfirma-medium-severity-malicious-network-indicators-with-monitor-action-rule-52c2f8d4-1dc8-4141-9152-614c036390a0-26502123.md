@@ -24,7 +24,9 @@ This rule detects Network indicators such as IP addresses, domains, and URLs rep
 
 This content item queries data from the following tables:
 
-- [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | — | — |
 
 ---
 

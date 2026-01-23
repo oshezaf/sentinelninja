@@ -28,8 +28,8 @@ The data connector for [Mimecast Secure Email Gateway](https://integrations.mime
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md) | — | — |
 | [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) | — | — |
 

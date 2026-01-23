@@ -16,8 +16,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/paloaltoprismacloudcwpp.md)
-- [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/paloaltoprismacloudcwpp.md) |  |
+| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) |  |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Illumio sign in logs, stored in the Illumi
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Illumio_Auditable_Events_CL](../tables/illumio-auditable-events-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) | — | — |
 
 ## Parameters
 

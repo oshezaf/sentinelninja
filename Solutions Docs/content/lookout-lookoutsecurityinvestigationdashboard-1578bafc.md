@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | — | — |
 
 ---
 

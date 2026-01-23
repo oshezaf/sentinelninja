@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [ImpervaWAFCloudV2_CL](../tables/impervawafcloudv2-cl.md)
-- [ImpervaWAFCloud_CL](../tables/impervawafcloud-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | — | — |
+| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) | — | — |
 
 ---
 

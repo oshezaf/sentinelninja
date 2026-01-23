@@ -25,7 +25,9 @@ Identifies abnormal deny rate for specific source IP to destination IP based on 
 
 This content item queries data from the following tables:
 
-- [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ |
 
 ---
 

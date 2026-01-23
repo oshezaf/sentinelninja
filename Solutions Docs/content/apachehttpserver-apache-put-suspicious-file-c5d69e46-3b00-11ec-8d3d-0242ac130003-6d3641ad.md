@@ -25,7 +25,9 @@ Detects PUT or POST of suspicious file
 
 This content item queries data from the following tables:
 
-- [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | — |
 
 ---
 

@@ -22,8 +22,8 @@ Google Cloud Platform (GCP) Load Balancer logs provide detailed insights into ne
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GCPLoadBalancerLogs_CL`](../tables/gcploadbalancerlogs-cl.md) | — | — |
 
 ## Permissions

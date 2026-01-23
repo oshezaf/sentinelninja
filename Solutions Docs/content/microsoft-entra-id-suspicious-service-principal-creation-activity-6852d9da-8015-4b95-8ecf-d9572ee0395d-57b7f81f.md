@@ -25,8 +25,10 @@ This alert will detect creation of an SPN, permissions granted, credentials crea
 
 This content item queries data from the following tables:
 
-- [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
-- [`AuditLogs`](../tables/auditlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | ✓ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
 
 ---
 

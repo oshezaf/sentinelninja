@@ -25,7 +25,9 @@ Defend has detected a user has clicked a dangerous link in their mailbox.
 
 This content item queries data from the following tables:
 
-- [`EgressDefend_CL`](../tables/egressdefend-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [VMware SD-WAN and SASE Connector](../connectors/vmwaresdwan.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [VMware SD-WAN and SASE Connector](../connectors/vmwaresdwan.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [VMware SASE](../solutions/vmware-sase.md):**
-- [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VMwareSASESOCDashboard](../content/vmware-sase-vmwaresasesocdashboard-36b12705.md) |  |
 
 ---
 

@@ -45,18 +45,18 @@ This union parser includes parsers for the following products:
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ASimProcessCreateLinuxSysmon](../asim/asimprocesscreatelinuxsysmon.md) |
-| [ASimProcessCreateMicrosoftSecurityEvents](../asim/asimprocesscreatemicrosoftsecurityevents.md) |
-| [ASimProcessCreateMicrosoftSysmon](../tables/asimprocesscreatemicrosoftsysmon.md) |
-| [ASimProcessCreateMicrosoftWindowsEvents](../asim/asimprocesscreatemicrosoftwindowsevents.md) |
-| [ASimProcessCreateSentinelOne](../asim/asimprocesscreatesentinelone.md) |
-| [ASimProcessCreateTrendMicroVisionOne](../asim/asimprocesscreatetrendmicrovisionone.md) |
-| [ASimProcessCreateVMwareCarbonBlackCloud](../asim/asimprocesscreatevmwarecarbonblackcloud.md) |
-| [ASimProcessEventMD4IoT](../asim/asimprocesseventmd4iot.md) |
-| [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) |
-| [ASimProcessEventNative](../asim/asimprocesseventnative.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ASimProcessCreateLinuxSysmon`](../asim/asimprocesscreatelinuxsysmon.md) | — | — |
+| [`ASimProcessCreateMicrosoftSecurityEvents`](../asim/asimprocesscreatemicrosoftsecurityevents.md) | — | — |
+| [`ASimProcessCreateMicrosoftSysmon`](../tables/asimprocesscreatemicrosoftsysmon.md) | — | — |
+| [`ASimProcessCreateMicrosoftWindowsEvents`](../asim/asimprocesscreatemicrosoftwindowsevents.md) | — | — |
+| [`ASimProcessCreateSentinelOne`](../asim/asimprocesscreatesentinelone.md) | — | — |
+| [`ASimProcessCreateTrendMicroVisionOne`](../asim/asimprocesscreatetrendmicrovisionone.md) | — | — |
+| [`ASimProcessCreateVMwareCarbonBlackCloud`](../asim/asimprocesscreatevmwarecarbonblackcloud.md) | — | — |
+| [`ASimProcessEventMD4IoT`](../asim/asimprocesseventmd4iot.md) | — | — |
+| [`ASimProcessEventMicrosoft365D`](../asim/asimprocesseventmicrosoft365d.md) | — | — |
+| [`ASimProcessEventNative`](../asim/asimprocesseventnative.md) | — | — |
 
 ## References
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_corelight_metrics_zeek_doctor_CL](../tables/corelight-v2-corelight-metrics-zeek-doctor-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_corelight_metrics_zeek_doctor_CL`](../tables/corelight-v2-corelight-metrics-zeek-doctor-cl.md) | — | — |
 
 ---
 

@@ -25,7 +25,9 @@ Detect application & infrastructure problems in your environment
 
 This content item queries data from the following tables:
 
-- [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | — | — |
 
 ---
 

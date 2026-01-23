@@ -27,7 +27,9 @@ New Hacker Chatter with severity Low found
 
 This content item queries data from the following tables:
 
-- [`CBSLog_Azure_1_CL`](../tables/cbslog-azure-1-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CBSLog_Azure_1_CL`](../tables/cbslog-azure-1-cl.md) | — | — |
 
 ---
 

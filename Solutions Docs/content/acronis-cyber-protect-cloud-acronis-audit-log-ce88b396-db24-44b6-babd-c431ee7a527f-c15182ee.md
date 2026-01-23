@@ -13,14 +13,15 @@ Records user and system operations in the management portal and Cyber Protect co
 | **Type** | Hunting Query |
 | **Solution** | [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md) |
 | **ID** | `ce88b396-db24-44b6-babd-c431ee7a527f` |
-| **Event Vendor** | Acronis audit |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Hunting%20Queries/AcronisAuditLog.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Acronis audit"` | ✓ | ✓ |
 
 ---
 

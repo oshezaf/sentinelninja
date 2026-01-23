@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [VersasecCms](../connectors/versaseccmsccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [VersasecCms](../connectors/versaseccmsccpdefinition.md) |  |
 
 ---
 

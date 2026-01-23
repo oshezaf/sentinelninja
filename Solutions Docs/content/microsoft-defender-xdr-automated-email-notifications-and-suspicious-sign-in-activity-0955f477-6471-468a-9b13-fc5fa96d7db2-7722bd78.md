@@ -22,8 +22,10 @@ This query helps hunting for Automated email notifications and suspicious sign-i
 
 This content item queries data from the following tables:
 
-- [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)
-- [`EmailEvents`](../tables/emailevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
 
 ---
 

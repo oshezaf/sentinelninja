@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Open Systems Data Connector](../connectors/opensystems.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Open Systems Data Connector](../connectors/opensystems.md) |  |
 
 ---
 

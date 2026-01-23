@@ -22,8 +22,8 @@ Azure Activity Log is a subscription log that provides insight into subscription
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
 
 ## Permissions

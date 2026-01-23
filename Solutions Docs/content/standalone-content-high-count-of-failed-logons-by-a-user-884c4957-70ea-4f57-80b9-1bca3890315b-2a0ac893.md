@@ -24,7 +24,9 @@ Identifies when 100 or more failed attempts by a given user in 10 minutes occur 
 
 This content item queries data from the following tables:
 
-- [`W3CIISLog`](../tables/w3ciislog.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

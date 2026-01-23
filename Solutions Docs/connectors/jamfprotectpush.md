@@ -22,8 +22,8 @@ The [Jamf Protect](https://www.jamf.com/products/jamf-protect/) connector provid
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | — | — |
 | [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | — | — |
 | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | — | — |

@@ -23,7 +23,9 @@ Detects Veeam Backup for Microsoft 365 jobs with unusual execution duration.
 
 This content item queries data from the following tables:
 
-- [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | — | — |
 
 ---
 

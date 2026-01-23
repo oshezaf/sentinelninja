@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md) |  |
 
 ---
 

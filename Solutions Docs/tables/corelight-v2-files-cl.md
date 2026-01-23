@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) |  |
 
 ---
 
@@ -25,23 +27,29 @@ This table is ingested by the following connectors:
 ### Hunting Queries (1)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight - Files in logs](../content/corelight-corelight-files-in-logs-0c3ad86f-6b92-4ff5-8d41-86ff7e01d518-360eb7b5.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Corelight - Files in logs](../content/corelight-corelight-files-in-logs-0c3ad86f-6b92-4ff5-8d41-86ff7e01d518-360eb7b5.md) |  |
 
 ### Workbooks (4)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight](../content/corelight-corelight-90dad195.md)
-- [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md)
-- [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md)
-- [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Corelight](../content/corelight-corelight-90dad195.md) |  |
+| [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |
+| [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
+| [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [corelight_files](../parsers/corelight-files.md) | [Corelight](../solutions/corelight.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [corelight_files](../parsers/corelight-files.md) | [Corelight](../solutions/corelight.md) |  |
 
 ---
 

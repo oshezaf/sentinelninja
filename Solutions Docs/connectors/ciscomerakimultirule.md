@@ -32,8 +32,8 @@ The [Cisco Meraki](https://aka.ms/ciscomeraki) connector allows you to easily co
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ |
 | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | ✓ | ✓ |

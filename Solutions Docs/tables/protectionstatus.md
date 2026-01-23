@@ -28,11 +28,17 @@ This table is used by the following solutions:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
-
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
-- [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
 
 ## Resource Types
 

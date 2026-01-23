@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Cloud_Integrated_CL](../tables/cloud-integrated-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) | — | — |
 
 ---
 

@@ -25,7 +25,9 @@ The Section to compare. Default value is "".
 
 This parser reads from the following tables:
 
-- [ESIExchangeConfig_CL](../tables/esiexchangeconfig-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) | — | — |
 
 ---
 

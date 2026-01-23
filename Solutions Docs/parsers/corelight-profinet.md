@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_profinet_CL](../tables/corelight-v2-profinet-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_profinet_CL`](../tables/corelight-v2-profinet-cl.md) | — | — |
 
 ---
 

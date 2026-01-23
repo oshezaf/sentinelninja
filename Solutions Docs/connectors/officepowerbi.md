@@ -22,8 +22,8 @@ Microsoft PowerBI is a collection of software services, apps, and connectors tha
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`PowerBIActivity`](../tables/powerbiactivity.md) | ✓ | ✗ |
 
 ## Permissions

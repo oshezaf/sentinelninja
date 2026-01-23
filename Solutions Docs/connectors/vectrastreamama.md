@@ -22,8 +22,8 @@ The Vectra AI Stream connector allows to send Network Metadata collected by Vect
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`vectra_beacon_CL`](../tables/vectra-beacon-cl.md) | — | — |
 | [`vectra_dcerpc_CL`](../tables/vectra-dcerpc-cl.md) | — | — |
 | [`vectra_dhcp_CL`](../tables/vectra-dhcp-cl.md) | — | — |

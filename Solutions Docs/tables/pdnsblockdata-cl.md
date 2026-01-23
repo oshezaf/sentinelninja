@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [PDNS Block Data Connector](../connectors/pdnsblockdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [PDNS Block Data Connector](../connectors/pdnsblockdataconnector.md) |  |
 
 ---
 

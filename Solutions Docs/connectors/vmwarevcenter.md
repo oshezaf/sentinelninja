@@ -26,8 +26,8 @@ The [vCenter](https://www.vmware.com/in/products/vcenter-server.html) connector 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`vcenter_CL`](../tables/vcenter-cl.md) | — | — |
 
 ## Permissions

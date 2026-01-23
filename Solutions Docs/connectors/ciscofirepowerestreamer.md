@@ -16,8 +16,6 @@
 | **Publisher** | Cisco |
 | **Used in Solutions** | [Cisco Firepower EStreamer](../solutions/cisco-firepower-estreamer.md) |
 | **Collection Method** | MMA |
-| **Event Vendor** | Cisco |
-| **Event Product** | Firepower |
 | **Connector Definition Files** | [CiscoFirepowerEStreamerCollector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Data%20Connectors/CiscoFirepowerEStreamerCollector.json) |
 
 ## Additional Information
@@ -30,9 +28,9 @@ eStreamer is a Client Server API designed for the Cisco Firepower NGFW Solution.
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Cisco | Firepower | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Firepower"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

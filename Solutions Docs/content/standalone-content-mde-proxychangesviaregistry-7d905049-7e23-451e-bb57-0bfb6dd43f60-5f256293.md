@@ -20,7 +20,9 @@ Count of sender's email addresses by subject
 
 This content item queries data from the following tables:
 
-- [`DeviceRegistryEvents`](../tables/deviceregistryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | ✓ | ✗ |
 
 ---
 

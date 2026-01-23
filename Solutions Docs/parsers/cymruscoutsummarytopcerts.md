@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Summary_Details_Top_Certs_Data_CL](../tables/summary-details-top-certs-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md) | — | — |
 
 ---
 

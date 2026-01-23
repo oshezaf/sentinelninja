@@ -16,9 +16,11 @@
 
 This content item queries data from the following tables:
 
-- [`Alert`](../tables/alert.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityIncident`](../tables/securityincident.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Alert`](../tables/alert.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
 
 ---
 

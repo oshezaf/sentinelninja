@@ -19,7 +19,10 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [BloodHound Enterprise](../solutions/bloodhound-enterprise.md):**
-- [BloodHoundFindingTrends](../content/bloodhound-enterprise-bloodhoundfindingtrends-79b8be4d.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BloodHoundFindingTrends](../content/bloodhound-enterprise-bloodhoundfindingtrends-79b8be4d.md) |  |
 
 ---
 

@@ -25,7 +25,9 @@ Rule helps to detect a new alerts generated in BitSight.
 
 This content item queries data from the following tables:
 
-- [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | — | — |
 
 ---
 

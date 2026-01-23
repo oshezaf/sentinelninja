@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [Syslog](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "local6"`<br>`ProcessName in "dhcpd,named"`<br>`ProcessName !in "dhcp,named"` | ✓ | ✓ |
 
 ---
 

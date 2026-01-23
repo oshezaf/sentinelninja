@@ -16,9 +16,11 @@
 
 This content item queries data from the following tables:
 
-- [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`UPDATE`](../tables/update.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | — |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`Update`](../tables/update.md) | ✓ | ✗ |
 
 ---
 

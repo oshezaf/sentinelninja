@@ -22,8 +22,8 @@ The IONIX Security Logs data connector, ingests logs from the IONIX system direc
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) | — | — |
 
 ## Permissions

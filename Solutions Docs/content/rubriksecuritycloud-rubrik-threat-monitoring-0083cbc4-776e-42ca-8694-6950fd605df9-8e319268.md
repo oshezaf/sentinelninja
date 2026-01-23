@@ -25,7 +25,9 @@ Rubrik Threat Monitoring matches Event Name and if match found then generate the
 
 This content item queries data from the following tables:
 
-- [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) | — | — |
 
 ---
 

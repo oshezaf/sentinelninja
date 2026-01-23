@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Bitsight data connector](../connectors/bitsight.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Bitsight data connector](../connectors/bitsight.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [BitSight](../solutions/bitsight.md):**
-- [BitSightWorkbook](../content/bitsight-bitsightworkbook-85beb528.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BitSightWorkbook](../content/bitsight-bitsightworkbook-85beb528.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [BitSightDiligenceHistoricalStatistics](../parsers/bitsightdiligencehistoricalstatistics.md) | [BitSight](../solutions/bitsight.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [BitSightDiligenceHistoricalStatistics](../parsers/bitsightdiligencehistoricalstatistics.md) | [BitSight](../solutions/bitsight.md) |  |
 
 ---
 

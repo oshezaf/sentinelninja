@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`Audit_CL`](../tables/audit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Audit_CL`](../tables/audit-cl.md) | — | — |
 
 ---
 

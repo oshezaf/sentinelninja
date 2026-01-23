@@ -24,7 +24,9 @@ This will alert you when the event reporting token is revoked, posing the risk o
 
 This content item queries data from the following tables:
 
-- [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | — |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_snmp_CL](../tables/corelight-v2-snmp-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_snmp_CL`](../tables/corelight-v2-snmp-cl.md) | — | — |
 
 ---
 

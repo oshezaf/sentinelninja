@@ -24,7 +24,9 @@ Detects threat for data leak when action is notification
 
 This content item queries data from the following tables:
 
-- [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md) | — | — |
 
 ---
 

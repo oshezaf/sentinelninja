@@ -23,7 +23,9 @@ Detected Lambda function throttled. Attacker could use this technique to result 
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName startswith "PutFunctionConcurrency"` | ✓ | ✓ |
 
 ---
 

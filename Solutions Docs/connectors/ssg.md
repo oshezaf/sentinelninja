@@ -24,8 +24,8 @@ The SINEC Security Guard solution for Microsoft Sentinel allows you to ingest se
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SINECSecurityGuard_CL`](../tables/sinecsecurityguard-cl.md) | — | — |
 
 ## Permissions

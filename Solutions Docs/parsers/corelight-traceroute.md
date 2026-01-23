@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_traceroute_CL](../tables/corelight-v2-traceroute-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_traceroute_CL`](../tables/corelight-v2-traceroute-cl.md) | — | — |
 
 ---
 

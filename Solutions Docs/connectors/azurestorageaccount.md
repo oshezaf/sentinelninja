@@ -22,8 +22,8 @@ Azure Storage account is a cloud solution for modern data storage scenarios. It 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AzureMetrics`](../tables/azuremetrics.md) | ✗ | ✗ |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) | ✓ | ✗ |
 | [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ |

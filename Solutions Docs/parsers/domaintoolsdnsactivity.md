@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [DomainToolsDomainEnrichment_CL](../tables/domaintoolsdomainenrichment-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DomainToolsDomainEnrichment_CL`](../tables/domaintoolsdomainenrichment-cl.md) | — | — |
 
 ---
 

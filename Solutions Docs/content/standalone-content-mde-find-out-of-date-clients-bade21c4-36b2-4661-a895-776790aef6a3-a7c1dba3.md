@@ -20,7 +20,9 @@ Find endpoints with out of date Defender clients
 
 This content item queries data from the following tables:
 
-- [`DeviceInfo`](../tables/deviceinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
 
 ---
 

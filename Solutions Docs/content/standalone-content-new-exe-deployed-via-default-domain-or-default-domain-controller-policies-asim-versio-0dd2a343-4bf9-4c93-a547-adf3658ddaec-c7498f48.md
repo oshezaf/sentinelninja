@@ -24,7 +24,9 @@ This detection highlights executables deployed to hosts via either the Default D
 
 This content item queries data from the following tables:
 
-- [`imProcess`](../tables/improcess.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`imProcess`](../tables/improcess.md) | — | — |
 
 ---
 

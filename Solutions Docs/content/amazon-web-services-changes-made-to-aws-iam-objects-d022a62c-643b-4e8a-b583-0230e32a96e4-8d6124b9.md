@@ -23,7 +23,9 @@ Identity and Access Management (IAM) securely manages access to AWS services and
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateUser,DeleteGroup,DeleteUser"` | ✓ | ✓ |
 
 ---
 

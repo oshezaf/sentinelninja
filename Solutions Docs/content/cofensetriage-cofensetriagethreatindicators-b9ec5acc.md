@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`Report_links_data_CL`](../tables/report-links-data-cl.md)
-- [`ThreatIntelIndicators`](../tables/threatintelindicators.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Report_links_data_CL`](../tables/report-links-data-cl.md) | — | — |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
 
 ---
 

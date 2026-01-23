@@ -24,8 +24,8 @@ The Egress Iris connector will allow you to ingest Egress data into Sentinel.
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — |
 | [`EgressEvents_CL`](../tables/egressevents-cl.md) | — | — |
 

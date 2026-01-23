@@ -25,7 +25,9 @@ Identifies changes to user accounts where the network alias was modified to a ne
 
 This content item queries data from the following tables:
 
-- [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | — | — |
 
 ---
 

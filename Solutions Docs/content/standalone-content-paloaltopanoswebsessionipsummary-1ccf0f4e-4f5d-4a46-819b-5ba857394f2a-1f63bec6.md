@@ -14,15 +14,15 @@ This summary rule aggregates web session logs from Palo Alto PAN-OS devices, pro
 | **Solution** | Standalone Content |
 | **ID** | `1ccf0f4e-4f5d-4a46-819b-5ba857394f2a` |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | Palo Alto Networks |
-| **Event Product** | PAN-OS |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Summary rules/WebSession/PaloAltoPANOSWebSessionIPSummary.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "url"`<br>`DeviceProduct == "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
 
 ---
 

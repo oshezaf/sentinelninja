@@ -24,8 +24,8 @@ This IPinfo data connector installs an Azure Function app to download country_as
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Ipinfo_Country_CL`](../tables/ipinfo-country-cl.md) | — | — |
 
 ## Permissions

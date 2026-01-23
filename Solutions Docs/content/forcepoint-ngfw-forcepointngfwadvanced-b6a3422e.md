@@ -10,18 +10,18 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Forcepoint NGFW](../solutions/forcepoint-ngfw.md) |
-| **Event Vendor** | FORCEPOINT, Forcepoint |
-| **Event Product** | Alert, Audit |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW/Workbooks/ForcepointNGFWAdvanced.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`Heartbeat`](../tables/heartbeat.md)
-- [`Perf`](../tables/perf.md)
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "Alert,Audit"`<br>`DeviceVendor in "FORCEPOINT,Forcepoint"` | ✓ | ✓ |
+| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
+| [`Perf`](../tables/perf.md) |  | ✓ | ✗ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ |
 
 ---
 

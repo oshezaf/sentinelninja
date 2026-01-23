@@ -25,7 +25,9 @@ This query detects AWS Security Hub control IAM.4 findings indicating that an AW
 
 This content item queries data from the following tables:
 
-- [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ |
 
 ---
 

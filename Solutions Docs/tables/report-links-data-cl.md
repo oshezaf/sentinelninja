@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [CofenseTriage](../solutions/cofensetriage.md):**
-- [CofenseTriageThreatIndicators](../content/cofensetriage-cofensetriagethreatindicators-b9ec5acc.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CofenseTriageThreatIndicators](../content/cofensetriage-cofensetriagethreatindicators-b9ec5acc.md) |  |
 
 ---
 

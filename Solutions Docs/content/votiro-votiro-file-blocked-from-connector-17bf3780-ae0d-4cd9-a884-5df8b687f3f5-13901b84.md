@@ -24,7 +24,9 @@ The analytic rule is intended to detect when a file is blocked by Votiro Sanitiz
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Votiro cloud"`<br>`DeviceVendor == "Votiro"` | ✓ | ✓ |
 
 ---
 

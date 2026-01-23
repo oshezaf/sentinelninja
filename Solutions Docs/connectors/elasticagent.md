@@ -22,8 +22,8 @@ The [Elastic Agent](https://www.elastic.co/security) data connector provides the
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) | — | — |
 
 ## Permissions

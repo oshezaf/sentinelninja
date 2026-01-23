@@ -24,8 +24,8 @@ The [Armis](https://www.armis.com/) Activities connector gives the capability to
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Armis_Activities_CL`](../tables/armis-activities-cl.md) | — | — |
 
 ## Permissions

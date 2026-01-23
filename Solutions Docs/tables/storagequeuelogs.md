@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Azure Storage Account](../connectors/azurestorageaccount.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Azure Storage Account](../connectors/azurestorageaccount.md) |  |
 
 ---
 
@@ -40,9 +42,9 @@ This table collects data from the following Azure resource types:
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimFileEventAzureQueueStorage](../asim/asimfileeventazurequeuestorage.md) | FileEvent |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimFileEventAzureQueueStorage](../asim/asimfileeventazurequeuestorage.md) | FileEvent | Microsoft Azure Queue Storage |  |
 
 ---
 

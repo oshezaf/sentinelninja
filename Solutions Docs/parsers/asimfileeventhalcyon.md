@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [HalcyonFileActivity_CL](../tables/halcyonfileactivity-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | — |
 
 ---
 

@@ -16,10 +16,12 @@
 
 This content item queries data from the following tables:
 
-- [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)
-- [`IdentityLogonEvents`](../tables/identitylogonevents.md)
-- [`IdentityQueryEvents`](../tables/identityqueryevents.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | ✓ | ✗ |
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | ✓ | ✗ |
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

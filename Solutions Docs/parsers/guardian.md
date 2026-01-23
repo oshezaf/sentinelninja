@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Guardian_CL](../tables/guardian-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Guardian_CL`](../tables/guardian-cl.md) | — | — |
 
 ---
 

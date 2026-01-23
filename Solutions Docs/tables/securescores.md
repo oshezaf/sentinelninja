@@ -24,7 +24,10 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
-- [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
 ---
 

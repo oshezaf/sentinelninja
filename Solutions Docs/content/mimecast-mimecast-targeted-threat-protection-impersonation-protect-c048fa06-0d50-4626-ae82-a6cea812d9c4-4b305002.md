@@ -25,7 +25,9 @@ Detects a maliciously tagged impersonation.
 
 This content item queries data from the following tables:
 
-- [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | — | — |
 
 ---
 

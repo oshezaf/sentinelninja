@@ -25,12 +25,18 @@ This table is used by the following solutions:
 ### Analytic Rules (1)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
-- [Detect presence of uncommon user agents in web requests (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-uncommon-user-agents-in-web-requests-asim-web-session-2d50d937-d7f2-4c05-b151-9af7f9ec747e-f39e98ed.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Detect presence of uncommon user agents in web requests (ASIM Web Session)](../content/web-session-essentials-detect-presence-of-uncommon-user-agents-in-web-requests-asim-web-session-2d50d937-d7f2-4c05-b151-9af7f9ec747e-f39e98ed.md) |  |
 
 ### Workbooks (1)
 
 **In solution [Web Session Essentials](../solutions/web-session-essentials.md):**
-- [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md) |  |
 
 ---
 

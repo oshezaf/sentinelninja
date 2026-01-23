@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Summary_Details_Top_Open_Ports_Data_CL](../tables/summary-details-top-open-ports-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Summary_Details_Top_Open_Ports_Data_CL`](../tables/summary-details-top-open-ports-data-cl.md) | — | — |
 
 ---
 

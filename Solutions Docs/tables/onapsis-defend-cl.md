@@ -16,8 +16,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Onapsis Defend Integration](../connectors/onapsis.md)
-- [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Onapsis Defend Integration](../connectors/onapsis.md) |  |
+| [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md) |  |
 
 ---
 

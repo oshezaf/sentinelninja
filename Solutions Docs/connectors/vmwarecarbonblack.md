@@ -22,8 +22,8 @@ The [VMware Carbon Black Cloud](https://www.vmware.com/products/carbon-black-clo
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) | — | — |
 | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | — | — |
 | [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | — | — |

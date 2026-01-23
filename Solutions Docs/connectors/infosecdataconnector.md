@@ -22,8 +22,8 @@ Use this data connector to integrate with InfoSec Crypto Analytics and get data 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) | — | — |
 
 ## Permissions

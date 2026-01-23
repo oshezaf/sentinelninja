@@ -23,7 +23,9 @@ Query shows list of top sources with blocked connections.
 
 This content item queries data from the following tables:
 
-- [`Ubiquiti_CL`](../tables/ubiquiti-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | — |
 
 ---
 

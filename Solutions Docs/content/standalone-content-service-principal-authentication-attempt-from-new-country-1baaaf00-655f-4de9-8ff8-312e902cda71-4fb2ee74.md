@@ -24,7 +24,9 @@
 
 This content item queries data from the following tables:
 
-- [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | ✓ | ✗ |
 
 ---
 

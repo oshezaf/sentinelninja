@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [InsightVMAssets](../parsers/insightvmassets.md) | [Rapid7InsightVM](../solutions/rapid7insightvm.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [InsightVMAssets](../parsers/insightvmassets.md) | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |  |
 
 ---
 

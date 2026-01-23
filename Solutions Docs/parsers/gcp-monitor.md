@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [GCP_MONITORINGV2_CL](../tables/gcp-monitoringv2-cl.md)
-- [GCP_MONITORING_CL](../tables/gcp-monitoring-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GCP_MONITORINGV2_CL`](../tables/gcp-monitoringv2-cl.md) | — | — |
+| [`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) | — | — |
 
 ---
 

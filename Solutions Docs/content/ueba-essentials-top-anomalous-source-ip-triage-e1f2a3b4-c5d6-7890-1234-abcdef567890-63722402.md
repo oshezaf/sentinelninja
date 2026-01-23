@@ -20,7 +20,9 @@ Identifies the top source IP addresses with multiple distinct anomaly templates 
 
 This content item queries data from the following tables:
 
-- [`Anomalies`](../tables/anomalies.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
 
 ---
 

@@ -24,7 +24,9 @@ This will alert you if the vault has been exported, allowing you to review and e
 
 This content item queries data from the following tables:
 
-- [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | — |
 
 ---
 

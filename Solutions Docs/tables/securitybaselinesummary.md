@@ -22,8 +22,11 @@ Reference for SecurityBaselineSummary table in Azure Monitor Logs.
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [ASC-ComplianceandProtection](../content/-asc-complianceandprotection-5aaee3bd.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
 
 ## Resource Types
 

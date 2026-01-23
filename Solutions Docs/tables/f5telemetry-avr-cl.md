@@ -18,11 +18,17 @@ This table is used by the following solutions:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [F5BIGIPSystemMetrics](../content/-f5bigipsystemmetrics-42ca2db1.md)
-
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
-- [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [F5BIGIPSystemMetrics](../content/github-only-f5bigipsystemmetrics-f6e795e8.md) |  |
 
 ---
 

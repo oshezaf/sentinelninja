@@ -31,12 +31,14 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`EmailEvents`](../tables/emailevents.md)
-- [`EmailUrlInfo`](../tables/emailurlinfo.md)
-- [`VMConnection`](../tables/vmconnection.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
 
 ---
 

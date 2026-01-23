@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [vectra_smbfiles_CL](../tables/vectra-smbfiles-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vectra_smbfiles_CL`](../tables/vectra-smbfiles-cl.md) | — | — |
 
 ---
 

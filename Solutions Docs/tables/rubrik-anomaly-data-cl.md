@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md):**
-- [Rubrik Critical Anomaly](../content/rubriksecuritycloud-rubrik-critical-anomaly-54c70d21-696f-4f03-9238-9d7118d079fe-12070b5e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Rubrik Critical Anomaly](../content/rubriksecuritycloud-rubrik-critical-anomaly-54c70d21-696f-4f03-9238-9d7118d079fe-12070b5e.md) |  |
 
 ---
 

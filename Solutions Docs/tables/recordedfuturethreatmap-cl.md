@@ -25,7 +25,10 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Recorded Future](../solutions/recorded-future.md):**
-- [RecordedFutureThreatActorHunting](../content/recorded-future-recordedfuturethreatactorhunting-26a6d59e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [RecordedFutureThreatActorHunting](../content/recorded-future-recordedfuturethreatactorhunting-26a6d59e.md) |  |
 
 ---
 

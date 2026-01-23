@@ -23,8 +23,10 @@
 
 This parser reads from the following tables:
 
-- [ApigeeXV2_CL](../tables/apigeexv2-cl.md)
-- [ApigeeX_CL](../tables/apigeex-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ApigeeXV2_CL`](../tables/apigeexv2-cl.md) | — | — |
+| [`ApigeeX_CL`](../tables/apigeex-cl.md) | — | — |
 
 ---
 

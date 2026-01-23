@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md):**
-- [InfoSecGlobal](../content/agilesec-analytics-connector-infosecglobal-f1e4d51f.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InfoSecGlobal](../content/agilesec-analytics-connector-infosecglobal-f1e4d51f.md) |  |
 
 ---
 

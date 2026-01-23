@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`F5Telemetry_AVR_CL`](../tables/f5telemetry-avr-cl.md)
-- [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`F5Telemetry_AVR_CL`](../tables/f5telemetry-avr-cl.md) | — | — |
+| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | — | — |
 
 ---
 

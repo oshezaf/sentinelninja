@@ -16,9 +16,11 @@ This Playbook Provides the automation to Push Defender for Endpoint Alerts inclu
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`SecurityAlert`](../tables/securityalert.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

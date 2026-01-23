@@ -24,7 +24,9 @@ The VMware Edge Cloud Orchestrator reported an edge congestion event, where the 
 
 This content item queries data from the following tables:
 
-- [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) | — | — |
 
 ---
 

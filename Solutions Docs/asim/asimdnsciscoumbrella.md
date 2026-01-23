@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Cisco Umbrella DNS logs to the ASIM Dns no
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Cisco_Umbrella_dns_CL](../tables/cisco-umbrella-dns-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) | — | — |
 
 ## Parameters
 

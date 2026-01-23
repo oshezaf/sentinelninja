@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Threat intelligence - TAXII Export (Preview)](../connectors/threatintelligencetaxiiexport.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Threat intelligence - TAXII Export (Preview)](../connectors/threatintelligencetaxiiexport.md) |  |
 
 ---
 

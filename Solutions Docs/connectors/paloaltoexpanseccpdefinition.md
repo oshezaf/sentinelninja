@@ -22,8 +22,8 @@ The Palo Alto Cortex Xpanse data connector ingests alerts data into Microsoft Se
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CortexXpanseAlerts_CL`](../tables/cortexxpansealerts-cl.md) | — | — |
 
 ## Permissions

@@ -22,7 +22,9 @@ User account created and then deleted within 10 minutes across last 14 days
 
 This content item queries data from the following tables:
 
-- [`SecurityEvent`](../tables/securityevent.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4720,4726"` | ✓ | ✓ |
 
 ---
 

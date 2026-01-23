@@ -17,7 +17,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Illumio SaaS](../connectors/illumiosaasdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Illumio SaaS](../connectors/illumiosaasdataconnector.md) |  |
 
 ---
 
@@ -26,18 +28,24 @@ This table is ingested by the following connectors:
 ### Workbooks (2)
 
 **In solution [IllumioSaaS](../solutions/illumiosaas.md):**
-- [IllumioFlowData](../content/illumiosaas-illumioflowdata-b836f8b9.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [IllumioFlowData](../content/illumiosaas-illumioflowdata-b836f8b9.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-- [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
 
-| Parser | Schema | Product |
-|:-------|:-------|:--------|
-| [ASimNetworkSessionIllumioSaaSCore](../asim/asimnetworksessionillumiosaascore.md) | NetworkSession |  |
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimNetworkSessionIllumioSaaSCore](../asim/asimnetworksessionillumiosaascore.md) | NetworkSession | Illumio SaaS Core |  |
 
 ---
 

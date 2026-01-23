@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Sysmon events (event number 12, 
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [WindowsEvent](../tables/windowsevent.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "12,13,14"`<br>`Provider == "Microsoft-Windows-Sysmon"` | ✓ | ✓ |
 
 ## Parameters
 

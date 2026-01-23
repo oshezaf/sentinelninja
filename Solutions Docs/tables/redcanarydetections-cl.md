@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Red Canary Threat Detection](../connectors/redcanarydataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Red Canary](../solutions/red-canary.md):**
-- [Red Canary Threat Detection](../content/red-canary-red-canary-threat-detection-6d263abb-6445-45cc-93e9-c593d3d77b89-44ff5a3e.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Red Canary Threat Detection](../content/red-canary-red-canary-threat-detection-6d263abb-6445-45cc-93e9-c593d3d77b89-44ff5a3e.md) |  |
 
 ---
 

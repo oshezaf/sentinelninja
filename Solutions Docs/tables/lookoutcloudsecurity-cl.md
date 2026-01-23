@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) |  |
 
 ---
 
@@ -24,11 +26,11 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (3)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [LookoutCSActivities](../parsers/lookoutcsactivities.md) | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) | Solution |
-| [LookoutCSAnomalies](../parsers/lookoutcsanomalies.md) | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) | Solution |
-| [LookoutCSViolations](../parsers/lookoutcsviolations.md) | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [LookoutCSActivities](../parsers/lookoutcsactivities.md) | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |  |
+| [LookoutCSAnomalies](../parsers/lookoutcsanomalies.md) | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |  |
+| [LookoutCSViolations](../parsers/lookoutcsviolations.md) | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |  |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing AppGate SDP logs to the ASIM Network Sessi
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Syslog](../tables/syslog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName in "cz-sessiond,cz-vpnd"`<br>`SyslogMessage has_all "[AUDIT]"`<br>`SyslogMessage has_any ":"` | ✓ | ✓ |
 
 ## Parameters
 

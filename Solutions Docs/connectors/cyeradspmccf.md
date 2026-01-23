@@ -24,8 +24,8 @@ The [Cyera DSPM](https://api.cyera.io/) data connector allows you to connect to 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CyeraAssets_CL`](../tables/cyeraassets-cl.md) | — | — |
 | [`CyeraAssets_MS_CL`](../tables/cyeraassets-ms-cl.md) | — | — |
 | [`CyeraClassifications_CL`](../tables/cyeraclassifications-cl.md) | — | — |

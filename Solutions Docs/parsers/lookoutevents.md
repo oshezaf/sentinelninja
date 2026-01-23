@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [LookoutMtdV2_CL](../tables/lookoutmtdv2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | — | — |
 
 ---
 

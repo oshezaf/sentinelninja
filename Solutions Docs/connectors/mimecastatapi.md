@@ -34,8 +34,8 @@ The Mimecast products included within the connector are:
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | — | — |
 | [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | — | — |
 | [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | — | — |

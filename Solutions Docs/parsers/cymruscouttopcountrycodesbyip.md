@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Top_Country_Codes_By_IP_Data_CL](../tables/top-country-codes-by-ip-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Top_Country_Codes_By_IP_Data_CL`](../tables/top-country-codes-by-ip-data-cl.md) | — | — |
 
 ---
 

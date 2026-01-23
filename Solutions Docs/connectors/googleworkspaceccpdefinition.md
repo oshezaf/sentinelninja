@@ -22,8 +22,8 @@ The [Google Workspace](https://workspace.google.com/) Activities data connector 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) | ✓ | ✗ |
 
 ## Permissions

@@ -16,8 +16,10 @@
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`Event`](../tables/event.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✗ |
 
 ---
 

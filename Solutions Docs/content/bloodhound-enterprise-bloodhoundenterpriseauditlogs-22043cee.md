@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`BHEAuditLogsData_CL`](../tables/bheauditlogsdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BHEAuditLogsData_CL`](../tables/bheauditlogsdata-cl.md) | — | — |
 
 ---
 

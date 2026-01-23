@@ -29,9 +29,9 @@ This ASIM parser supports normalizing SentinelOne logs to the ASIM Network Sessi
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [SentinelOne_CL](../tables/sentinelone-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | — |
 
 ## Parameters
 

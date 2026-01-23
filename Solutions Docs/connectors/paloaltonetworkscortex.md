@@ -16,8 +16,6 @@
 | **Publisher** | Palo Alto Networks |
 | **Used in Solutions** | [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) |
 | **Collection Method** | MMA |
-| **Event Vendor** | Palo Alto Networks |
-| **Event Product** | Cortex XDR |
 | **Connector Definition Files** | [Connector_PaloAlto_XDR_CEF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29/Data%20Connectors/Connector_PaloAlto_XDR_CEF.json) |
 
 The Palo Alto Networks Cortex XDR connector gives you an easy way to connect to your Cortex XDR logs with Microsoft Sentinel. This increases the visibility of your endpoint security. It will give you better ability to monitor your resources by creating custom Workbooks, analytics rules, Incident investigation, and evidence gathering.
@@ -26,9 +24,9 @@ The Palo Alto Networks Cortex XDR connector gives you an easy way to connect to 
 
 This connector ingests data into the following tables:
 
-| Table | Event Vendor | Event Product | Transformations | Ingestion API |
-|-------|:-------------|:--------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Palo Alto Networks | Cortex XDR | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Cortex XDR"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

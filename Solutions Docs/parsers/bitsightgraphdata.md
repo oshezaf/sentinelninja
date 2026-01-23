@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [BitsightGraph_data_CL](../tables/bitsightgraph-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | — | — |
 
 ---
 

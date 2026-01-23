@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Agari Phishing Defense and Brand Protection](../connectors/agari.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Agari Phishing Defense and Brand Protection](../connectors/agari.md) |  |
 
 ---
 

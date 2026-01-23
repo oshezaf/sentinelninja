@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [Netskopev2](../solutions/netskopev2.md):**
-- [Netskope - WebTransaction Error Detection](../content/netskopev2-netskope-webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f-9bf88cfb.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Netskope - WebTransaction Error Detection](../content/netskopev2-netskope-webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f-9bf88cfb.md) |  |
 
 ---
 

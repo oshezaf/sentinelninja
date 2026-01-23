@@ -25,7 +25,9 @@ This policy detects when an application or service account gained new access to 
 
 This content item queries data from the following tables:
 
-- [`Authomize_v2_CL`](../tables/authomize-v2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — |
 
 ---
 

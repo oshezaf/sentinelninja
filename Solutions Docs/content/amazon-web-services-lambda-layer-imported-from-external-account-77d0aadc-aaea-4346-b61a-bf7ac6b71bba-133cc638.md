@@ -23,7 +23,9 @@ Detected an external account adding lambda layer, which attackers could use to i
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName startswith "CreateFunction"`<br>`EventName startswith "UpdateFunctionConfiguration"` | ✓ | ✓ |
 
 ---
 

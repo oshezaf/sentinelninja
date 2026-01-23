@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Syslog](../tables/syslog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "RT_FLOW"`<br>`ProcessName in "RT_IDS,sshd"`<br>`ProcessName !in "sshd,RT_IDS,RT_FLOW"` | ✓ | ✓ |
 
 ---
 

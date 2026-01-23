@@ -25,8 +25,10 @@ Detects allowed connections to IP addresses which are in TI list and are known t
 
 This content item queries data from the following tables:
 
-- [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)
-- [`Ubiquiti_CL`](../tables/ubiquiti-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | — |
 
 ---
 

@@ -23,7 +23,9 @@ Query searches for top files recieved via email services.
 
 This content item queries data from the following tables:
 
-- [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | — | — |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [HalcyonProcessEvent_CL](../tables/halcyonprocessevent-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | — | — |
 
 ---
 

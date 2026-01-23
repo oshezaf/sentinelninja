@@ -22,8 +22,8 @@ The [CrowdStrike Data Connector](https://www.crowdstrike.com/) allows ingesting 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | ✓ | ✗ |
 | [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✗ |
 | [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | ✓ | ✗ |

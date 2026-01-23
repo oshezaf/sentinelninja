@@ -22,8 +22,8 @@ The connector provides the capability to poll data from Holm Security Center int
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`net_assets_CL`](../tables/net-assets-cl.md) | — | — |
 | [`web_assets_CL`](../tables/web-assets-cl.md) | — | — |
 

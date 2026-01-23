@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_capture_loss_CL](../tables/corelight-v2-capture-loss-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_capture_loss_CL`](../tables/corelight-v2-capture-loss-cl.md) | — | — |
 
 ---
 

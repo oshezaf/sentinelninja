@@ -23,7 +23,9 @@ Query searches for threats discovered via security risk scans.
 
 This content item queries data from the following tables:
 
-- [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | — | — |
 
 ---
 

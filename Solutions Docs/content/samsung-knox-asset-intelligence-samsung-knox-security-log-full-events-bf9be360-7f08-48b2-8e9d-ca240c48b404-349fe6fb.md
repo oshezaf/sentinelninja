@@ -23,7 +23,9 @@ When the Knox Security Log is full on a device.
 
 This content item queries data from the following tables:
 
-- [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) | — | — |
 
 ---
 

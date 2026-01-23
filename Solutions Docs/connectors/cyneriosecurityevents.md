@@ -22,8 +22,8 @@ The [Cynerio](https://www.cynerio.com/) connector allows you to easily connect y
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) | — | — |
 
 ## Permissions

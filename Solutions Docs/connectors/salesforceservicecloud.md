@@ -30,8 +30,8 @@ The Salesforce Service Cloud data connector provides the capability to ingest in
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | — | — |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | — | — |
 

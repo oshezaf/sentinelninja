@@ -25,7 +25,9 @@ A Security Group acts as a virtual firewall of an instance to control inbound an
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"` | ✓ | ✓ |
 
 ---
 

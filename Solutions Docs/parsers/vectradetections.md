@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Detections_Data_CL](../tables/detections-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | — | — |
 
 ---
 

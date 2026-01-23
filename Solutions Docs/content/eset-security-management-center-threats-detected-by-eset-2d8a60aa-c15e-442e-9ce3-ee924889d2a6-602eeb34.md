@@ -25,7 +25,9 @@ Escalates threats detected by Eset.
 
 This content item queries data from the following tables:
 
-- [`eset_CL`](../tables/eset-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`eset_CL`](../tables/eset-cl.md) | — | — |
 
 ---
 

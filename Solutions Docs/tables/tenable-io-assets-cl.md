@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Tenable.io Vulnerability Management](../connectors/tenableioapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) |  |
 
 ---
 
@@ -26,9 +28,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [TenableIOAssets](../parsers/tenableioassets.md) | [TenableIO](../solutions/tenableio.md) | Solution ⚠️ |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [TenableIOAssets](../parsers/tenableioassets.md) | [TenableIO](../solutions/tenableio.md) ⚠️ |  |
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 

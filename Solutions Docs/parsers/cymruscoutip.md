@@ -23,13 +23,15 @@
 
 This parser reads from the following tables:
 
-- [Cymru_Scout_IP_Data_Details_CL](../tables/cymru-scout-ip-data-details-cl.md)
-- [Cymru_Scout_IP_Data_Foundation_CL](../tables/cymru-scout-ip-data-foundation-cl.md)
-- [Cymru_Scout_IP_Data_Summary_Certs_CL](../tables/cymru-scout-ip-data-summary-certs-cl.md)
-- [Cymru_Scout_IP_Data_Summary_Details_CL](../tables/cymru-scout-ip-data-summary-details-cl.md)
-- [Cymru_Scout_IP_Data_Summary_Fingerprints_CL](../tables/cymru-scout-ip-data-summary-fingerprints-cl.md)
-- [Cymru_Scout_IP_Data_Summary_OpenPorts_CL](../tables/cymru-scout-ip-data-summary-openports-cl.md)
-- [Cymru_Scout_IP_Data_Summary_PDNS_CL](../tables/cymru-scout-ip-data-summary-pdns-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Cymru_Scout_IP_Data_Details_CL`](../tables/cymru-scout-ip-data-details-cl.md) | — | — |
+| [`Cymru_Scout_IP_Data_Foundation_CL`](../tables/cymru-scout-ip-data-foundation-cl.md) | — | — |
+| [`Cymru_Scout_IP_Data_Summary_Certs_CL`](../tables/cymru-scout-ip-data-summary-certs-cl.md) | — | — |
+| [`Cymru_Scout_IP_Data_Summary_Details_CL`](../tables/cymru-scout-ip-data-summary-details-cl.md) | — | — |
+| [`Cymru_Scout_IP_Data_Summary_Fingerprints_CL`](../tables/cymru-scout-ip-data-summary-fingerprints-cl.md) | — | — |
+| [`Cymru_Scout_IP_Data_Summary_OpenPorts_CL`](../tables/cymru-scout-ip-data-summary-openports-cl.md) | — | — |
+| [`Cymru_Scout_IP_Data_Summary_PDNS_CL`](../tables/cymru-scout-ip-data-summary-pdns-cl.md) | — | — |
 
 ---
 

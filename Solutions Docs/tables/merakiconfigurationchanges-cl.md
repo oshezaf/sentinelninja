@@ -6,22 +6,31 @@
 
 ---
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Standalone Content](../solutions/standalone-content.md)
+
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [CiscoMeraki](../content/-ciscomeraki-9eb90b85.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CiscoMeraki](../content/github-only-ciscomeraki-82d0689d.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [MerakiConfigurationChanges](../parsers/merakiconfigurationchanges.md) | *(Legacy)* | Legacy |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [MerakiConfigurationChanges](../parsers/merakiconfigurationchanges.md) | *(Legacy)* |  |
 
 ---
 

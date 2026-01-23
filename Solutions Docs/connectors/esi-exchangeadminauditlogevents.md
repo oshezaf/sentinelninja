@@ -24,8 +24,8 @@ Deprecated, use the 'ESI-Opt' dataconnectors. You can stream all Exchange Audit 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Event`](../tables/event.md) | ✓ | ✗ |
 | [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) | — | — |
 | [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) | — | — |

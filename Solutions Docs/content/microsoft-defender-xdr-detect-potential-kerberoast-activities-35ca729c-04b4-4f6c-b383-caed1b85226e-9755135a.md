@@ -22,7 +22,9 @@ This query aim to detect if someone requests service tickets (where count => max
 
 This content item queries data from the following tables:
 
-- [`IdentityLogonEvents`](../tables/identitylogonevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | ✓ | ✗ |
 
 ---
 

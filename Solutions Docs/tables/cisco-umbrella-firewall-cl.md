@@ -16,8 +16,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md)
-- [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) |  |
+| [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) |  |
 
 ---
 

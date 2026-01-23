@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [alertsmalsitedata_CL](../tables/alertsmalsitedata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`alertsmalsitedata_CL`](../tables/alertsmalsitedata-cl.md) | — | — |
 
 ---
 

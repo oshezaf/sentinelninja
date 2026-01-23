@@ -24,7 +24,9 @@ This query visualizes URL clicks on URLs in Teams messages which were acted by Z
 
 This content item queries data from the following tables:
 
-- [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md) | — | ✗ |
 
 ---
 

@@ -20,7 +20,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) |  |
 
 ---
 

@@ -24,8 +24,8 @@ Use the Squadra Technologies secRMM Data Connector to push USB removable storage
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`secRMM_CL`](../tables/secrmm-cl.md) | — | — |
 
 ## Permissions

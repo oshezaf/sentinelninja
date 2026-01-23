@@ -48,7 +48,7 @@ The following **2 table(s)** are used internally by this solution's content item
 | Table | Used By Content |
 |-------|----------------|
 | [`Anomalies`](../tables/anomalies.md) | Workbooks |
-| [`watchlist`](../tables/watchlist.md) | Workbooks |
+| [`Watchlist`](../tables/watchlist.md) | Workbooks |
 
 ## Content Items
 
@@ -62,7 +62,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Event`](../tables/event.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`watchlist`](../tables/watchlist.md) |
+| [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Event`](../tables/event.md)<br>[`Heartbeat`](../tables/heartbeat.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`Watchlist`](../tables/watchlist.md) |
 
 ## Release Notes
 

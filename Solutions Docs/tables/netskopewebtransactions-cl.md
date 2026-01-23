@@ -19,15 +19,18 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Netskopev2](../solutions/netskopev2.md):**
-- [NetskopeCCFWebtxDashboard](../content/netskopev2-netskopeccfwebtxdashboard-f8af7cbe.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NetskopeCCFWebtxDashboard](../content/netskopev2-netskopeccfwebtxdashboard-f8af7cbe.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [NetskopeCCFWebTransactions](../parsers/netskopeccfwebtransactions.md) | [Netskopev2](../solutions/netskopev2.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [NetskopeCCFWebTransactions](../parsers/netskopeccfwebtransactions.md) | [Netskopev2](../solutions/netskopev2.md) |  |
 
 ---
 

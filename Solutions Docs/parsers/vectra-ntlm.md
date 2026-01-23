@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [vectra_ntlm_CL](../tables/vectra-ntlm-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vectra_ntlm_CL`](../tables/vectra-ntlm-cl.md) | — | — |
 
 ---
 

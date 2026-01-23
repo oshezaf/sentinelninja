@@ -29,9 +29,9 @@ This ASIM parser supports normalizing CrowdStrike Falcon Endpoint Protection log
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [CommonSecurityLog](../tables/commonsecuritylog.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "FirewallMatchEvent,Network Access In A Detection Summary Event"`<br>`DeviceEventClassID has "Network Access In A Detection Summary Event"`<br>`DeviceProduct == "FalconHost"`<br>`DeviceVendor == "CrowdStrike"` | ✓ | ✓ |
 
 ## Parameters
 

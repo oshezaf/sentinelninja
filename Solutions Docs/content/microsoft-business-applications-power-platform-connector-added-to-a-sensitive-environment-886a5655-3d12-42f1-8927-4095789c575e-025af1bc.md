@@ -25,7 +25,9 @@ Identifies occurrences of new API connector creations within Power Platform, spe
 
 This content item queries data from the following tables:
 
-- [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ |
 
 ---
 

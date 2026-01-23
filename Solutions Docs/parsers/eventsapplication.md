@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [eventsapplicationdata_CL](../tables/eventsapplicationdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`eventsapplicationdata_CL`](../tables/eventsapplicationdata-cl.md) | — | — |
 
 ---
 

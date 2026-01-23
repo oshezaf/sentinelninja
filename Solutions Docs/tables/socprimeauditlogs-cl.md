@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [SOC Prime Platform Audit Logs Data Connector](../connectors/socprimeauditlogsdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [SOC Prime Platform Audit Logs Data Connector](../connectors/socprimeauditlogsdataconnector.md) |  |
 
 ---
 

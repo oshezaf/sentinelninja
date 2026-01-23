@@ -16,10 +16,12 @@ This playbook will update the incident timeline by keeping most recent alerts an
 
 ## Tables Used
 
-| Table | Usage |
-|:------|:------|
-| [`SecurityAlert`](../tables/securityalert.md) | read |
-| [`SecurityIncident`](../tables/securityincident.md) | read |
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
 
 ## Additional Documentation
 

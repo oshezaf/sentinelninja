@@ -19,15 +19,18 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [Corelight](../solutions/corelight.md):**
-- [Corelight_Sensor_Overview](../content/corelight-corelight-sensor-overview-71e61142.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Corelight_Sensor_Overview](../content/corelight-corelight-sensor-overview-71e61142.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [corelight_corelight_metrics_zeek_doctor](../parsers/corelight-corelight-metrics-zeek-doctor.md) | [Corelight](../solutions/corelight.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [corelight_corelight_metrics_zeek_doctor](../parsers/corelight-corelight-metrics-zeek-doctor.md) | [Corelight](../solutions/corelight.md) |  |
 
 ---
 

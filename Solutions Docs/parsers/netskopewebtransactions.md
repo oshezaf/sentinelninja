@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [NetskopeWebtxData_CL](../tables/netskopewebtxdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) | — | — |
 
 ---
 

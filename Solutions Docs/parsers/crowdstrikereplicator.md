@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [CrowdstrikeReplicatorLogs_CL](../tables/crowdstrikereplicatorlogs-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CrowdstrikeReplicatorLogs_CL`](../tables/crowdstrikereplicatorlogs-cl.md) | — | — |
 
 ---
 

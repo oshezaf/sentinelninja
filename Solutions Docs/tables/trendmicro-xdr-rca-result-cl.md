@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Trend Vision One](../connectors/trendmicroxdr.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Trend Vision One](../connectors/trendmicroxdr.md) |  |
 
 ---
 

@@ -30,19 +30,21 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`AZFWApplicationRule`](../tables/azfwapplicationrule.md)
-- [`AZFWDnsQuery`](../tables/azfwdnsquery.md)
-- [`AZFWNetworkRule`](../tables/azfwnetworkrule.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`DeviceFileEvents`](../tables/devicefileevents.md)
-- [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md)
-- [`DeviceNetworkEvents`](../tables/devicenetworkevents.md)
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`Event`](../tables/event.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`VMConnection`](../tables/vmconnection.md)
-- [`WindowsFirewall`](../tables/windowsfirewall.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | ✓ | ✗ |
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | ✓ | ✗ |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
+| [`WindowsFirewall`](../tables/windowsfirewall.md) | ✓ | ✗ |
 
 ---
 

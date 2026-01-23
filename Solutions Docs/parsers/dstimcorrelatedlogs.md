@@ -18,9 +18,11 @@
 
 This parser reads from the following tables:
 
-- [DSTIMAccess_CL](../tables/dstimaccess-cl.md)
-- [DSTIMClassification_CL](../tables/dstimclassification-cl.md)
-- [DSTIMSensitivity_CL](../tables/dstimsensitivity-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DSTIMAccess_CL`](../tables/dstimaccess-cl.md) | — | — |
+| [`DSTIMClassification_CL`](../tables/dstimclassification-cl.md) | — | — |
+| [`DSTIMSensitivity_CL`](../tables/dstimsensitivity-cl.md) | — | — |
 
 ---
 

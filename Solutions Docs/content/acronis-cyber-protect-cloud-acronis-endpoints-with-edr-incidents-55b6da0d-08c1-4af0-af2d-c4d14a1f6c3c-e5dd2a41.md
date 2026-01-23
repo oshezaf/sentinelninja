@@ -13,14 +13,15 @@ A high number of endpoints with multiple incidents could indicate an ongoing att
 | **Type** | Hunting Query |
 | **Solution** | [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md) |
 | **ID** | `55b6da0d-08c1-4af0-af2d-c4d14a1f6c3c` |
-| **Event Vendor** | Acronis |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Acronis%20Cyber%20Protect%20Cloud/Hunting%20Queries/AcronisEndpointsWithEDRIncidents.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "EDRIOCDetected,EDRIncidentDetected"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
 
 ---
 

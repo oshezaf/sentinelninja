@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Summary_Details_Top_Fingerprints_Data_CL](../tables/summary-details-top-fingerprints-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Summary_Details_Top_Fingerprints_Data_CL`](../tables/summary-details-top-fingerprints-data-cl.md) | — | — |
 
 ---
 

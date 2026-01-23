@@ -22,22 +22,24 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-- [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)
-- [`AADUserRiskEvents`](../tables/aaduserriskevents.md)
-- [`AuditLogs`](../tables/auditlogs.md)
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
-- [`BehaviorAnalytics`](../tables/behavioranalytics.md)
-- [`LAQueryLogs`](../tables/laquerylogs.md)
-- [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)
-- [`OfficeActivity`](../tables/officeactivity.md)
-- [`Operation`](../tables/operation.md)
-- [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)
-- [`SecurityAlert`](../tables/securityalert.md)
-- [`SecurityEvent`](../tables/securityevent.md)
-- [`SecurityIncident`](../tables/securityincident.md)
-- [`SigninLogs`](../tables/signinlogs.md)
-- [`Syslog`](../tables/syslog.md)
-- [`anomalies`](../tables/anomalies.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ |
+| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ |
+| [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | — | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
+| [`LAQueryLogs`](../tables/laquerylogs.md) |  | ✓ | ✗ |
+| [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) |  | ✓ | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |  | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ |
 
 ---
 

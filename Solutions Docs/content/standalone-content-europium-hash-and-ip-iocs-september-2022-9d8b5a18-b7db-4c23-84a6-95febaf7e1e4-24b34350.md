@@ -24,10 +24,12 @@ Identifies a match across various data feeds for  hashes and IP IOC related to E
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`DnsEvents`](../tables/dnsevents.md)
-- [`Event`](../tables/event.md)
-- [`VMConnection`](../tables/vmconnection.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| [`Event`](../tables/event.md) | ✓ | ✗ |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
 
 ---
 

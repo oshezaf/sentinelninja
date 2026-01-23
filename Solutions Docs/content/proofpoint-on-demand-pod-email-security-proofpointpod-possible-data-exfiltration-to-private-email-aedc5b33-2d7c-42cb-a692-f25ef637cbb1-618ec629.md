@@ -25,12 +25,14 @@ Detects when sender sent email to the non-corporate domain and recipient's usern
 
 This content item queries data from the following tables:
 
-- [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md)
-- [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md)
-- [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md)
-- [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md)
-- [`maillog_CL`](../tables/maillog-cl.md)
-- [`message_CL`](../tables/message-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | — | — |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | — | — |
+| [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) | — | — |
+| [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) | — | — |
+| [`maillog_CL`](../tables/maillog-cl.md) | — | — |
+| [`message_CL`](../tables/message-cl.md) | — | — |
 
 ---
 

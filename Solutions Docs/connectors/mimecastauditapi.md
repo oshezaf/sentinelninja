@@ -28,8 +28,8 @@ Audit
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Audit_CL`](../tables/audit-cl.md) | — | — |
 | [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) | — | — |
 

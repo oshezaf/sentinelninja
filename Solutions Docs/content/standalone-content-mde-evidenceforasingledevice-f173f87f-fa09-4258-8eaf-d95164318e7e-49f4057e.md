@@ -20,7 +20,9 @@ Find all alert evidence for a single endpoint. This is handy for exporting to a 
 
 This content item queries data from the following tables:
 
-- [`AlertEvidence`](../tables/alertevidence.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
 
 ---
 

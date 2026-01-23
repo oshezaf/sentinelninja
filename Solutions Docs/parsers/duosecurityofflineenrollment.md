@@ -18,7 +18,9 @@
 
 This parser reads from the following tables:
 
-- [DuoSecurityOfflineEnrollment_CL](../tables/duosecurityofflineenrollment-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DuoSecurityOfflineEnrollment_CL`](../tables/duosecurityofflineenrollment-cl.md) | — | — |
 
 ---
 

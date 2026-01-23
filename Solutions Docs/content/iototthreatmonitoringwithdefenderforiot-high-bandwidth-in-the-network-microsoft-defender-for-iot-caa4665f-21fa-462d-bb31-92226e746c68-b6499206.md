@@ -25,7 +25,9 @@ This alert leverages Defender for IoT to detect an unusually high bandwidth whic
 
 This content item queries data from the following tables:
 
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

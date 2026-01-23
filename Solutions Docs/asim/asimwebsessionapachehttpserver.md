@@ -29,9 +29,9 @@ This ASIM parser supports filtering and normalizing Apache HTTP Server logs prod
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [ApacheHTTPServer_CL](../tables/apachehttpserver-cl.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | — |
 
 ## Parameters
 

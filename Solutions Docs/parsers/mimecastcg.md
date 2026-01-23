@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Seg_Cg_CL](../tables/seg-cg-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | — | — |
 
 ---
 

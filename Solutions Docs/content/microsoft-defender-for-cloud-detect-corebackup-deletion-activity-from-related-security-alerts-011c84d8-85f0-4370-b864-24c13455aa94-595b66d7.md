@@ -25,8 +25,10 @@ The query identifies any efforts by an attacker to delete backup containers, whi
 
 This content item queries data from the following tables:
 
-- [`CoreAzureBackup`](../tables/coreazurebackup.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CoreAzureBackup`](../tables/coreazurebackup.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

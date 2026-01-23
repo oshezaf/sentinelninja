@@ -22,8 +22,8 @@ SAP Business Technology Platform (SAP BTP) brings together data management, anal
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | — |
 
 ## Permissions

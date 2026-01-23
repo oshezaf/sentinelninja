@@ -24,7 +24,9 @@ Detects threat for data leak when action is notification
 
 This content item queries data from the following tables:
 
-- [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | — | — |
 
 ---
 

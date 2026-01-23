@@ -14,15 +14,15 @@ This summary rule aggregates DNS events from Zscaler Internet Access devices, pr
 | **Solution** | Standalone Content |
 | **ID** | `260f16fc-4734-4635-babd-ba3c860f328b` |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | Zscaler |
-| **Event Product** | NSSDNSlog |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Summary rules/DNS/ZscalarDNSEventsIPSummary.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "NSSDNSlog"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ |
 
 ---
 

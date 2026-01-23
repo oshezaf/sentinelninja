@@ -25,7 +25,9 @@ This is a recommended update to IAM policy on AWS. Review the policy and apply i
 
 This content item queries data from the following tables:
 
-- [`Authomize_v2_CL`](../tables/authomize-v2-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — |
 
 ---
 

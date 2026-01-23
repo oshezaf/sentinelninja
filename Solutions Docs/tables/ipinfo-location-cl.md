@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [IPinfo Iplocation Data Connector](../connectors/ipinfoiplocationdataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [IPinfo Iplocation Data Connector](../connectors/ipinfoiplocationdataconnector.md) |  |
 
 ---
 

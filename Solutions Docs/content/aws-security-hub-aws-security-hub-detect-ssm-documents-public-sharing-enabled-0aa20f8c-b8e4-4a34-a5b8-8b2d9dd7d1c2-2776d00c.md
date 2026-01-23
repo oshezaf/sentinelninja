@@ -25,7 +25,9 @@ This query detects AWS accounts where public sharing is enabled, using AWS Secur
 
 This content item queries data from the following tables:
 
-- [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ |
 
 ---
 

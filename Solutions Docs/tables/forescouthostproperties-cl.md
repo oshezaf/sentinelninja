@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) |  |
 
 ---
 
@@ -25,12 +27,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md):**
-- [Forescout-DNS_Sniff_Event_Monitor](../content/forescouthostpropertymonitor-forescout-dns-sniff-event-monitor-d272e277-f285-4dbc-ae2d-7f65ba64a79e-39ee6063.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Forescout-DNS_Sniff_Event_Monitor](../content/forescouthostpropertymonitor-forescout-dns-sniff-event-monitor-d272e277-f285-4dbc-ae2d-7f65ba64a79e-39ee6063.md) |  |
 
 ### Workbooks (1)
 
 **In solution [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md):**
-- [ForescoutHostPropertyMonitorWorkbook](../content/forescouthostpropertymonitor-forescouthostpropertymonitorworkbook-cbfbbf6d.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ForescoutHostPropertyMonitorWorkbook](../content/forescouthostpropertymonitor-forescouthostpropertymonitorworkbook-cbfbbf6d.md) |  |
 
 ---
 

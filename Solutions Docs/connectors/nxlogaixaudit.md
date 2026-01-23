@@ -24,8 +24,8 @@ The [NXLog AIX Audit](https://docs.nxlog.co/refman/current/im/aixaudit.html) dat
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AIX_Audit_CL`](../tables/aix-audit-cl.md) | — | — |
 
 ## Permissions

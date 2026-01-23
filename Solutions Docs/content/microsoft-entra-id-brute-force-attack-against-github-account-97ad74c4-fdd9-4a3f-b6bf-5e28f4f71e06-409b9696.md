@@ -25,7 +25,9 @@ Attackers who are trying to guess your users' passwords or use brute-force metho
 
 This content item queries data from the following tables:
 
-- [`Anomalies`](../tables/anomalies.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
 
 ---
 

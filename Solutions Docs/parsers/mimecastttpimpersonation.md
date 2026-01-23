@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Ttp_Impersonation_CL](../tables/ttp-impersonation-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | — | — |
 
 ---
 

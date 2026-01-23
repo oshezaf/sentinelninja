@@ -25,7 +25,9 @@ Detected S3 bucket that's publicly exposed, which could lead to sensitive inform
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "PutObjectAcl"` | ✓ | ✓ |
 
 ---
 

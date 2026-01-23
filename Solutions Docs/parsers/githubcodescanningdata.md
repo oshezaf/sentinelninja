@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [githubscanaudit_CL](../tables/githubscanaudit-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | — | — |
 
 ---
 

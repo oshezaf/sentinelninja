@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [vectra_dcerpc](../parsers/vectra-dcerpc.md) | [Vectra AI Stream](../solutions/vectra-ai-stream.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [vectra_dcerpc](../parsers/vectra-dcerpc.md) | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |  |
 
 ---
 

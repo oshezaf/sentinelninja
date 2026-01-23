@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [DragosPullNotificationsToSentinel](../parsers/dragospullnotificationstosentinel.md) | [Dragos](../solutions/dragos.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DragosPullNotificationsToSentinel](../parsers/dragospullnotificationstosentinel.md) | [Dragos](../solutions/dragos.md) |  |
 
 ---
 

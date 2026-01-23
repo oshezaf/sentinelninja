@@ -22,8 +22,8 @@ The Seraphic Web Security data connector provides the capability to ingest [Sera
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`SeraphicWebSecurity_CL`](../tables/seraphicwebsecurity-cl.md) | — | — |
 
 ## Permissions

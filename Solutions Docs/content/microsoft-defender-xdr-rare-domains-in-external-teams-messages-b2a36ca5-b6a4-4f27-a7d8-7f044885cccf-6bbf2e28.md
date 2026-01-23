@@ -24,9 +24,11 @@ Detects rare domains (seen in fewer than 3 Teams messages) appearing in external
 
 This content item queries data from the following tables:
 
-- [`MessageEvents`](../tables/messageevents.md)
-- [`MessageUrlInfo`](../tables/messageurlinfo.md)
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessageEvents`](../tables/messageevents.md) | — | ✗ |
+| [`MessageUrlInfo`](../tables/messageurlinfo.md) | — | ✗ |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

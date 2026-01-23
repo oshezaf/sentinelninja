@@ -24,8 +24,10 @@ This content is utilized to identify instances of successful login by risky user
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
-- [`SigninLogs`](../tables/signinlogs.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct startswith "FireWall"`<br>`DeviceProduct startswith "FortiGate"`<br>`DeviceProduct startswith "NSSWeblog"`<br>`DeviceProduct startswith "PAN"`<br>`DeviceProduct startswith "URL"`<br>`DeviceProduct startswith "VPN"`<br>`DeviceVendor has_any "Check Point,Fortinet,Palo Alto Networks,Zscaler"` | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
 
 ---
 

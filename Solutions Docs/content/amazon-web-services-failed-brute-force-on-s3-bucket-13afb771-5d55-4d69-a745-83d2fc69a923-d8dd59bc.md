@@ -23,7 +23,9 @@ Detected failed brute attempt on S3 bucket. If it is not an anonymous principle,
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "GetObject"` | ✓ | ✓ |
 
 ---
 

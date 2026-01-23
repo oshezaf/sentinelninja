@@ -25,8 +25,10 @@ Detects when high privileged role was added to service account.
 
 This content item queries data from the following tables:
 
-- [`GCPIAM`](../tables/gcpiam.md)
-- [`GCP_IAM_CL`](../tables/gcp-iam-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`GCPIAM`](../tables/gcpiam.md) | ✓ | ✗ |
+| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | — | — |
 
 ---
 

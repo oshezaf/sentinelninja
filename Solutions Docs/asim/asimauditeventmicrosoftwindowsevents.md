@@ -29,10 +29,10 @@ This ASIM parser supports normalizing Microsoft Windows Events audit events (110
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [Operation](../tables/operation.md) |
-| [WindowsEvent](../tables/windowsevent.md) |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `Provider == "Microsoft-Windows-Eventlog"` | ✓ | ✓ |
 
 ## Parameters
 

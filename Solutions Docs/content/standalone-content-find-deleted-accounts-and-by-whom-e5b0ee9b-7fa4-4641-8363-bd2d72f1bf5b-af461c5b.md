@@ -21,7 +21,9 @@ Find accounts that have been deleted and by whom
 
 This content item queries data from the following tables:
 
-- [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | ✓ | ✗ |
 
 ---
 

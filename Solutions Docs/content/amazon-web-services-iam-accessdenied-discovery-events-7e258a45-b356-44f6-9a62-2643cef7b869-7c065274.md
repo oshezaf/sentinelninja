@@ -23,7 +23,9 @@ The following detection identifies excessive AccessDenied events within an hour 
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ |
 
 ---
 

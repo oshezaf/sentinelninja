@@ -22,9 +22,9 @@ You can stream the audit logs from the WebCTRL SQL server hosted on Windows mach
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
-| [`Event`](../tables/event.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`Event`](../tables/event.md) | `Source == "ALCWebCTRL"` | ✓ | ✗ |
 
 ## Permissions
 

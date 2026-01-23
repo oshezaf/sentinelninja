@@ -22,8 +22,8 @@ Dataminr Pulse Alerts Data Connector brings our AI-powered real-time intelligenc
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) | — | — |
 
 ## Permissions

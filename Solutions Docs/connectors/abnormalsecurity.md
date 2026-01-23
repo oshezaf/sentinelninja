@@ -22,8 +22,8 @@ The Abnormal Security data connector provides the capability to ingest threat an
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ABNORMAL_CASES_CL`](../tables/abnormal-cases-cl.md) | — | — |
 | [`ABNORMAL_THREAT_MESSAGES_CL`](../tables/abnormal-threat-messages-cl.md) | — | — |
 

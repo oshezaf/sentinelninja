@@ -24,8 +24,10 @@ Surfaces any Defender Alert for Solorigate Events. In Microsoft Sentinel the Sec
 
 This content item queries data from the following tables:
 
-- [`DeviceInfo`](../tables/deviceinfo.md)
-- [`SecurityAlert`](../tables/securityalert.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
 
 ---
 

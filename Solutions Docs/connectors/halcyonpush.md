@@ -24,8 +24,8 @@ The [Halcyon](https://www.halcyon.ai) connector provides the capability to send 
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | — | — |
 | [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | — | — |
 | [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | — |

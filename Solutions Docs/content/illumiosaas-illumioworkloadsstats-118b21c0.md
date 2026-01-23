@@ -16,7 +16,9 @@
 
 This content item queries data from the following tables:
 
-- [`Illumio_Workloads_Summarized_API_CL`](../tables/illumio-workloads-summarized-api-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Illumio_Workloads_Summarized_API_CL`](../tables/illumio-workloads-summarized-api-cl.md) | — | — |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Mimecast Cloud Integrated](../connectors/mimecastciapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Mimecast Cloud Integrated](../connectors/mimecastciapi.md) |  |
 
 ---
 
@@ -25,15 +27,18 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Mimecast](../solutions/mimecast.md):**
-- [Mimecast_Cloud_Integrated_Workbook](../content/mimecast-mimecast-cloud-integrated-workbook-5bb9e2b3.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast_Cloud_Integrated_Workbook](../content/mimecast-mimecast-cloud-integrated-workbook-5bb9e2b3.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [MimecastCloudIntegrated](../parsers/mimecastcloudintegrated.md) | [Mimecast](../solutions/mimecast.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [MimecastCloudIntegrated](../parsers/mimecastcloudintegrated.md) | [Mimecast](../solutions/mimecast.md) |  |
 
 ---
 

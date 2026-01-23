@@ -24,7 +24,9 @@ This query can be used as a Custom Detection Rule (CDR) to trigger when a potent
 
 This content item queries data from the following tables:
 
-- [`MessageUrlInfo`](../tables/messageurlinfo.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MessageUrlInfo`](../tables/messageurlinfo.md) | — | ✗ |
 
 ---
 

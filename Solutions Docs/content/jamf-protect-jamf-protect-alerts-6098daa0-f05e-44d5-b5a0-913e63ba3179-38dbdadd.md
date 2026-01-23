@@ -23,7 +23,9 @@ Creates an incident based on Jamf Protect Alert data in Microsoft Sentinel
 
 This content item queries data from the following tables:
 
-- [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | — | — |
 
 ---
 

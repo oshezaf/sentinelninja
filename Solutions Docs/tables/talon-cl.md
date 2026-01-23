@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Talon Insights](../connectors/talonlogs.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Talon Insights](../connectors/talonlogs.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Talon](../solutions/talon.md):**
-- [TalonInsights](../content/talon-taloninsights-a46f557d.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TalonInsights](../content/talon-taloninsights-a46f557d.md) |  |
 
 ---
 

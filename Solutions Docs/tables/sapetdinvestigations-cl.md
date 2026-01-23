@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [SAP Enterprise Threat Detection, cloud edition](../connectors/sapetdalerts.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [SAP Enterprise Threat Detection, cloud edition](../connectors/sapetdalerts.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [SAP ETD Cloud](../solutions/sap-etd-cloud.md):**
-- [SAP ETD - Synch investigations](../content/sap-etd-cloud-sap-etd-synch-investigations-5096db53-fad3-4844-a264-246f7b7e6e06-9c9e9b19.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SAP ETD - Synch investigations](../content/sap-etd-cloud-sap-etd-synch-investigations-5096db53-fad3-4844-a264-246f7b7e6e06-9c9e9b19.md) |  |
 
 ---
 

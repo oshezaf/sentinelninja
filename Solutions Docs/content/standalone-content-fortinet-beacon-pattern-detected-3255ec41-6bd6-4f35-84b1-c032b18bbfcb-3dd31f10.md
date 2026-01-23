@@ -18,14 +18,15 @@
 | **Tactics** | CommandAndControl |
 | **Techniques** | T1071, T1571 |
 | **Required Connectors** | [Fortinet](../connectors/fortinet.md) |
-| **Event Vendor** | Fortinet |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/CommonSecurityLog/Fortinet-NetworkBeaconPattern.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Fortinet"` | ✓ | ✓ |
 
 ---
 

@@ -20,7 +20,9 @@ Endpoint Health with AV information
 
 This content item queries data from the following tables:
 
-- [`DeviceTvmSecureConfigurationAssessment`](../tables/devicetvmsecureconfigurationassessment.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`DeviceTvmSecureConfigurationAssessment`](../tables/devicetvmsecureconfigurationassessment.md) | ✓ | ✗ |
 
 ---
 

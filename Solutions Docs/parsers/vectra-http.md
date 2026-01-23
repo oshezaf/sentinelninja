@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [vectra_http_CL](../tables/vectra-http-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`vectra_http_CL`](../tables/vectra-http-cl.md) | — | — |
 
 ---
 

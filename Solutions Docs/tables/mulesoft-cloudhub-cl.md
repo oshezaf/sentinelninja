@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [MuleSoft Cloudhub](../connectors/mulesoft.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [MuleSoft Cloudhub](../connectors/mulesoft.md) |  |
 
 ---
 
@@ -24,9 +26,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [MuleSoftCloudhub](../parsers/mulesoftcloudhub.md) | [Mulesoft](../solutions/mulesoft.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [MuleSoftCloudhub](../parsers/mulesoftcloudhub.md) | [Mulesoft](../solutions/mulesoft.md) |  |
 
 ---
 

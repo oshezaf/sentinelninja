@@ -118,7 +118,7 @@ The following **1 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`watchlist`](../tables/watchlist.md) | - | Analytics, Workbooks |
+| [`Watchlist`](../tables/watchlist.md) | - | Analytics, Workbooks |
 
 ## Content Items
 
@@ -136,13 +136,13 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Dataminr - urgent alerts detected](../content/dataminr-pulse-dataminr-urgent-alerts-detected-64a46029-3236-4d03-b5df-207366a623f1-d65138c6.md) | Medium | Persistence | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) |
+| [Dataminr - urgent alerts detected](../content/dataminr-pulse-dataminr-urgent-alerts-detected-64a46029-3236-4d03-b5df-207366a623f1-d65138c6.md) | Medium | Persistence | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)<br>*Internal use:*<br>[`Watchlist`](../tables/watchlist.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimAuditEvent`](../asim/asimauditevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimDns`](../asim/asimdns.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimNetworkSession`](../asim/asimnetworksession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimProcessEvent`](../asim/asimprocessevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimWebSession`](../asim/asimwebsession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imFileEvent`](../asim/imfileevent.md)<br>[`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-d5436210.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimAuditEvent`](../asim/asimauditevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimDns`](../asim/asimdns.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimNetworkSession`](../asim/asimnetworksession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimProcessEvent`](../asim/asimprocessevent.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`ASimWebSession`](../asim/asimwebsession.md)<br><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`imFileEvent`](../asim/imfileevent.md)<br>[`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md)<br>*Internal use:*<br>[`Watchlist`](../tables/watchlist.md) |
 
 ### Playbooks
 
@@ -154,8 +154,8 @@ This solution includes **10 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197-ce5effab.md) | - | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) *(read)*<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) *(read)* |
-| [DataminrPulseCyberAlerts](../content/dataminr-pulse-dataminrpulsecyberalerts-922c64bb-819b-4e3f-811a-0dfbff8eb667-fff8139f.md) | - | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) *(read)*<br>*Internal use:*<br>[`watchlist`](../tables/watchlist.md) *(read)* |
+| [DataminrPulseAlerts](../content/dataminr-pulse-dataminrpulsealerts-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197-ce5effab.md) | - | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) *(read)*<br>[`watchlist`](../tables/watchlist.md) *(read)* |
+| [DataminrPulseCyberAlerts](../content/dataminr-pulse-dataminrpulsecyberalerts-922c64bb-819b-4e3f-811a-0dfbff8eb667-fff8139f.md) | - | [`DataminrPulse_Alerts_CL`](../tables/dataminrpulse-alerts-cl.md) *(read)*<br>[`watchlist`](../tables/watchlist.md) *(read)* |
 
 ### Watchlists
 

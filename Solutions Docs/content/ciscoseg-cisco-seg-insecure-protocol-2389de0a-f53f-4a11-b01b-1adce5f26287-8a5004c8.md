@@ -23,7 +23,9 @@ Query searches for connections with insecure protocol.
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "ESA_CONSOLIDATED_LOG_EVENT"` | ✓ | ✓ |
 
 ---
 

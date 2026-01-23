@@ -22,8 +22,8 @@ The RSA ID Plus AdminLogs Connector provides the capability to ingest [Cloud Adm
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`RSAIDPlus_AdminLogs_CL`](../tables/rsaidplus-adminlogs-cl.md) | — | — |
 
 ## Permissions

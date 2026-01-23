@@ -23,7 +23,9 @@ An attacker could delete a network ACL and gain access to an instance from anywh
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "DeleteNetworkAclEntry"` | ✓ | ✓ |
 
 ---
 

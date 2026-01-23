@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [MuleSoft_Cloudhub_CL](../tables/mulesoft-cloudhub-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) | — | — |
 
 ---
 

@@ -22,8 +22,8 @@ The [VMware Carbon Black Cloud](https://www.vmware.com/products/carbon-black-clo
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ |
 | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | ✓ | ✓ |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ |

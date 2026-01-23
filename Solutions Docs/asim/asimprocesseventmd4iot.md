@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Defender for IoT events to the A
 
 This parser reads from the following tables:
 
-| Table |
-|:------|
-| [SecurityIoTRawEvent](../tables/securityiotrawevent.md) |
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | ✓ | ✗ |
 
 ## Parameters
 

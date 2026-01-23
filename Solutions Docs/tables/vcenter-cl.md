@@ -17,8 +17,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
-- [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
+| [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) |  |
 
 ---
 
@@ -27,21 +29,27 @@ This table is ingested by the following connectors:
 ### Analytic Rules (2)
 
 **In solution [VMware vCenter](../solutions/vmware-vcenter.md):**
-- [VMware vCenter - Root login](../content/vmware-vcenter-vmware-vcenter-root-login-03e8a895-b5ba-49a0-aed3-f9a997d92fbe-e2c012c8.md)
-- [vCenter - Root impersonation](../content/vmware-vcenter-vcenter-root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c-9fa02551.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VMware vCenter - Root login](../content/vmware-vcenter-vmware-vcenter-root-login-03e8a895-b5ba-49a0-aed3-f9a997d92fbe-e2c012c8.md) |  |
+| [vCenter - Root impersonation](../content/vmware-vcenter-vcenter-root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c-9fa02551.md) |  |
 
 ### Workbooks (1)
 
 **In solution [VMware vCenter](../solutions/vmware-vcenter.md):**
-- [vCenter](../content/vmware-vcenter-vcenter-167665a0.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [vCenter](../content/vmware-vcenter-vcenter-167665a0.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [vCenter](../parsers/vcenter.md) | [VMware vCenter](../solutions/vmware-vcenter.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [vCenter](../parsers/vcenter.md) | [VMware vCenter](../solutions/vmware-vcenter.md) |  |
 
 ---
 

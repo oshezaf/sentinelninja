@@ -24,8 +24,10 @@ This query helps hunting for possible device code Phishing attempts
 
 This content item queries data from the following tables:
 
-- [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md)
-- [`UrlClickEvents`](../tables/urlclickevents.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
 
 ---
 

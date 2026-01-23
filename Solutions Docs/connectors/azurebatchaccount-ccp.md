@@ -22,8 +22,8 @@ Azure Batch Account is a uniquely identified entity within the Batch service. Mo
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ |
 
 ## Permissions

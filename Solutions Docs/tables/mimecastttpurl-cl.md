@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) |  |
 
 ---
 
@@ -25,12 +27,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [MimecastTTP](../solutions/mimecastttp.md):**
-- [Mimecast Targeted Threat Protection - URL Protect](../content/mimecastttp-mimecast-targeted-threat-protection-url-protect-9d5545bd-1450-4086-935c-62f15fc4a4c9-81f30fac.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast Targeted Threat Protection - URL Protect](../content/mimecastttp-mimecast-targeted-threat-protection-url-protect-9d5545bd-1450-4086-935c-62f15fc4a4c9-81f30fac.md) |  |
 
 ### Workbooks (1)
 
 **In solution [MimecastTTP](../solutions/mimecastttp.md):**
-- [MimecastTTPWorkbook](../content/mimecastttp-mimecastttpworkbook-22b40acb.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MimecastTTPWorkbook](../content/mimecastttp-mimecastttpworkbook-22b40acb.md) |  |
 
 ---
 

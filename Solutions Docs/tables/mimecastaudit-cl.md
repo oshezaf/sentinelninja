@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md) |  |
 
 ---
 
@@ -25,12 +27,18 @@ This table is ingested by the following connectors:
 ### Analytic Rules (1)
 
 **In solution [MimecastAudit](../solutions/mimecastaudit.md):**
-- [Mimecast Audit - Logon Authentication Failed](../content/mimecastaudit-mimecast-audit-logon-authentication-failed-9c5dcd76-9f6d-42a3-b984-314b52678f20-1b9e93dc.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Mimecast Audit - Logon Authentication Failed](../content/mimecastaudit-mimecast-audit-logon-authentication-failed-9c5dcd76-9f6d-42a3-b984-314b52678f20-1b9e93dc.md) |  |
 
 ### Workbooks (1)
 
 **In solution [MimecastAudit](../solutions/mimecastaudit.md):**
-- [MimecastAudit](../content/mimecastaudit-mimecastaudit-98d680e6.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MimecastAudit](../content/mimecastaudit-mimecastaudit-98d680e6.md) |  |
 
 ---
 

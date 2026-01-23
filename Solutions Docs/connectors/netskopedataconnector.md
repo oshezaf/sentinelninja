@@ -52,8 +52,8 @@ The [Netskope](https://docs.netskope.com/en/netskope-help/admin-console/rest-api
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Netskope_WebTx_metrics_CL`](../tables/netskope-webtx-metrics-cl.md) | — | — |
 | [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) | — | — |
 | [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) | — | — |

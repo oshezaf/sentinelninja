@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Cisco ETD](../connectors/ciscoetd.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Cisco ETD](../connectors/ciscoetd.md) |  |
 
 ---
 
@@ -25,7 +27,10 @@ This table is ingested by the following connectors:
 ### Workbooks (1)
 
 **In solution [Cisco ETD](../solutions/cisco-etd.md):**
-- [CiscoETD](../content/cisco-etd-ciscoetd-5508b27c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CiscoETD](../content/cisco-etd-ciscoetd-5508b27c.md) |  |
 
 ---
 

@@ -20,7 +20,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) |  |
 
 ---
 
@@ -28,9 +30,9 @@ This table is ingested by the following connectors:
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [GCP_MONITOR](../parsers/gcp-monitor.md) | [Google Cloud Platform Cloud Monitoring](../solutions/google-cloud-platform-cloud-monitoring.md) | Solution |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [GCP_MONITOR](../parsers/gcp-monitor.md) | [Google Cloud Platform Cloud Monitoring](../solutions/google-cloud-platform-cloud-monitoring.md) |  |
 
 ---
 

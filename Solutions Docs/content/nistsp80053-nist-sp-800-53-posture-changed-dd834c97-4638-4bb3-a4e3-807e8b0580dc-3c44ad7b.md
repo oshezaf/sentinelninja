@@ -24,8 +24,10 @@ This alert is desinged to monitor Azure policies aligned with the NIST SP 800-53
 
 This content item queries data from the following tables:
 
-- [`SecurityRecommendation`](../tables/securityrecommendation.md)
-- [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) | ✓ | ✗ |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ |
 
 ---
 

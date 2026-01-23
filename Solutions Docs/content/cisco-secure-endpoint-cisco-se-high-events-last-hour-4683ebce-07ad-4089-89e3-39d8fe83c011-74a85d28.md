@@ -25,7 +25,9 @@ Find events from Cisco Secure Endpoint that are of High severity in the last hou
 
 This content item queries data from the following tables:
 
-- [`CiscoSecureEndpoint_CL`](../tables/ciscosecureendpoint-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CiscoSecureEndpoint_CL`](../tables/ciscosecureendpoint-cl.md) | — | — |
 
 ---
 

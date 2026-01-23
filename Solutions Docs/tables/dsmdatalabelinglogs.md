@@ -22,8 +22,11 @@ Reference for DSMDataLabelingLogs table in Azure Monitor Logs.
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [DSTIMWorkbook](../content/-dstimworkbook-0a68e0ad.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
 
 ---
 

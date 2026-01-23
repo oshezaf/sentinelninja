@@ -26,8 +26,8 @@ Proofpoint On Demand Email Security data connector provides the capability to ge
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | — | — |
 | [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | — | — |
 | [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) | — | — |

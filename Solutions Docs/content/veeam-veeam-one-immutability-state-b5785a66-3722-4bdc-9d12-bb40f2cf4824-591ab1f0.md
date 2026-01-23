@@ -23,7 +23,9 @@ Detects changes in the immutability state of Veeam Backup & Replication reposito
 
 This content item queries data from the following tables:
 
-- [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | — | — |
 
 ---
 

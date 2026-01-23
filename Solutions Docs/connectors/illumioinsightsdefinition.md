@@ -22,8 +22,8 @@ Illumio Insights Connector sends workload and security graph data from Illumio I
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`IllumioInsights_CL`](../tables/illumioinsights-cl.md) | — | — |
 
 ## Permissions

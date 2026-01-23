@@ -22,8 +22,11 @@ Reference for ADXTableDetails table in Azure Monitor Logs.
 
 ### Workbooks (1)
 
-**In solution [](../solutions/.md):**
-- [ADXvsLA](../content/-adxvsla-be03aca4.md)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ADXvsLA](../content/github-only-adxvsla-0ddedeb5.md) |  |
 
 ## Resource Types
 

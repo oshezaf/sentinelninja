@@ -22,8 +22,8 @@ The Rubrik Security Cloud data connector enables security operations teams to in
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) | — | — |
 | [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) | — | — |
 | [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) | — | — |

@@ -21,7 +21,9 @@ Discover all critical ports from a list having rules like 'Any' for sourceIp, wh
 
 This content item queries data from the following tables:
 
-- [`AzureDiagnostics`](../tables/azurediagnostics.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "NetworkSecurityGroupEvent"` | — | ✗ |
 
 ---
 

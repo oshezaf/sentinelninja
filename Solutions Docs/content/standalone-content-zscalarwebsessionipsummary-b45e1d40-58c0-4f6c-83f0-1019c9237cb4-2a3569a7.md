@@ -14,15 +14,15 @@ This summary rule aggregates web session logs from Zscaler Internet Access devic
 | **Solution** | Standalone Content |
 | **ID** | `b45e1d40-58c0-4f6c-83f0-1019c9237cb4` |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
-| **Event Vendor** | Zscaler |
-| **Event Product** | NSSWeblog |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Summary rules/WebSession/ZscalarWebSessionIPSummary.yaml) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ |
 
 ---
 

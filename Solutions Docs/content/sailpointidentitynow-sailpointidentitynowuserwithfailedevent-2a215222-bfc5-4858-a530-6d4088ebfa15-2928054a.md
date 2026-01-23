@@ -25,7 +25,9 @@ Detects any failed event for a particular user.
 
 This content item queries data from the following tables:
 
-- [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) | — | — |
 
 ---
 

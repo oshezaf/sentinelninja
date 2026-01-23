@@ -19,7 +19,10 @@ This table is used by the following solutions:
 ### Workbooks (1)
 
 **In solution [BloodHound Enterprise](../solutions/bloodhound-enterprise.md):**
-- [BloodHoundEnterpriseAttackPathDetails](../content/bloodhound-enterprise-bloodhoundenterpriseattackpathdetails-abb1936c.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BloodHoundEnterpriseAttackPathDetails](../content/bloodhound-enterprise-bloodhoundenterpriseattackpathdetails-abb1936c.md) |  |
 
 ---
 

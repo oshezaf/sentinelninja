@@ -26,7 +26,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) |  |
 
 ---
 

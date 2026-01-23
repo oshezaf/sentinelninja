@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [InfobloxInsightComments_CL](../tables/infobloxinsightcomments-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | — | — |
 
 ---
 

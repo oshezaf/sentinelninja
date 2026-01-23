@@ -24,8 +24,8 @@ The [Armis](https://www.armis.com/) Alerts connector gives the capability to ing
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`Armis_Alerts_CL`](../tables/armis-alerts-cl.md) | — | — |
 
 ## Permissions

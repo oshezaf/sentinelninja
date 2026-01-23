@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [alertsdlpdata_CL](../tables/alertsdlpdata-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`alertsdlpdata_CL`](../tables/alertsdlpdata-cl.md) | — | — |
 
 ---
 

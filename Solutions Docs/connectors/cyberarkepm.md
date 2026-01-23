@@ -24,8 +24,8 @@ The [CyberArk Endpoint Privilege Manager](https://www.cyberark.com/products/endp
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — |
 
 ## Permissions

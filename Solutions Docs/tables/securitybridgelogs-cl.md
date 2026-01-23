@@ -17,8 +17,10 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Custom logs via AMA](../connectors/customlogsviaama.md)
-- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
+| [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) |  |
 
 ---
 

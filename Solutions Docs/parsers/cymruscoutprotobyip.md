@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Proto_By_IP_Data_CL](../tables/proto-by-ip-data-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) | — | — |
 
 ---
 

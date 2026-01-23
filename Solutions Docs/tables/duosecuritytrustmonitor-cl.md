@@ -18,16 +18,19 @@ This table is used by the following solutions:
 
 ### Analytic Rules (1)
 
-**In solution [Standalone Content](../solutions/standalone-content.md):**
-- [Trust Monitor Event](../content/standalone-content-trust-monitor-event-8dcf7238-a7d0-4cfd-8d0c-b230e3cd9182-75684fe5.md)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Trust Monitor Event](../content/standalone-content-trust-monitor-event-8dcf7238-a7d0-4cfd-8d0c-b230e3cd9182-75684fe5.md) |  |
 
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
 
-| Parser | Solution | Location |
-|:-------|:---------|:---------|
-| [DuoSecurityTrustMonitor](../parsers/duosecuritytrustmonitor.md) | *(Legacy)* | Legacy |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [DuoSecurityTrustMonitor](../parsers/duosecuritytrustmonitor.md) | *(Legacy)* |  |
 
 ---
 

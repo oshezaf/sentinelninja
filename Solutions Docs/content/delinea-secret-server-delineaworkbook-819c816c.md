@@ -10,15 +10,15 @@
 |:----------|:------|
 | **Type** | Workbook |
 | **Solution** | [Delinea Secret Server](../solutions/delinea-secret-server.md) |
-| **Event Vendor** | Delinea Software, Thycotic Software |
-| **Event Product** | Secret Server |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server/Workbooks/DelineaWorkbook.json) |
 
 ## Tables Used
 
 This content item queries data from the following tables:
 
-- [`CommonSecurityLog`](../tables/commonsecuritylog.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Secret Server"`<br>`DeviceVendor in "Delinea Software,Thycotic Software"` | ✓ | ✓ |
 
 ---
 

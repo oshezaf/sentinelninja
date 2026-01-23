@@ -25,7 +25,9 @@ Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolate
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"` | ✓ | ✓ |
 
 ---
 

@@ -23,7 +23,9 @@
 
 This parser reads from the following tables:
 
-- [Corelight_v2_corelight_metrics_iface_CL](../tables/corelight-v2-corelight-metrics-iface-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`Corelight_v2_corelight_metrics_iface_CL`](../tables/corelight-v2-corelight-metrics-iface-cl.md) | — | — |
 
 ---
 

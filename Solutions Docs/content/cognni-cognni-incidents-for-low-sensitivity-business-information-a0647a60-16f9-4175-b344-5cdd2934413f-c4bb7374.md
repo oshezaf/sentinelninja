@@ -25,7 +25,9 @@ Display incidents in which low sensitivity business information] was placed at r
 
 This content item queries data from the following tables:
 
-- [`CognniIncidents_CL`](../tables/cognniincidents-cl.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | — | — |
 
 ---
 

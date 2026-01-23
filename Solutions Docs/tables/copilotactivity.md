@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Microsoft Copilot](../connectors/microsoftcopilot.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Copilot](../connectors/microsoftcopilot.md) |  |
 
 ---
 

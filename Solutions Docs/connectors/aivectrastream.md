@@ -22,8 +22,8 @@ The AI Vectra Stream connector allows to send Network Metadata collected by Vect
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`VectraStream_CL`](../tables/vectrastream-cl.md) | — | — |
 
 ## Permissions

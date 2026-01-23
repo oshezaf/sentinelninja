@@ -32,8 +32,8 @@ The GitHub audit log connector provides the capability to ingest GitHub logs int
 
 This connector ingests data into the following tables:
 
-| Table | Supports Transformations | Ingestion API Supported |
-|-------|:------------------------:|:-----------------------:|
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | — | — |
 | [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | — | — |
 | [`ImpactedUser`](../tables/impacteduser.md) | — | — |

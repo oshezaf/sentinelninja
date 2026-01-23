@@ -23,7 +23,9 @@ Several failed "assume role" attempts occurred on existing roles in the account.
 
 This content item queries data from the following tables:
 
-- [`AWSCloudTrail`](../tables/awscloudtrail.md)
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "AssumeRole"` | ✓ | ✓ |
 
 ---
 

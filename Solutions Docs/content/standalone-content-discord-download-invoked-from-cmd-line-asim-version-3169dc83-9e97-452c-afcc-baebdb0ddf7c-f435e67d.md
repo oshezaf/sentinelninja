@@ -21,7 +21,9 @@ This hunting query looks for hosts that have attempted to interact with the Disc
 
 This content item queries data from the following tables:
 
-- [`imProcess`](../tables/improcess.md)
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`imProcess`](../tables/improcess.md) | — | — |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [CITRIX SECURITY ANALYTICS](../connectors/citrix.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) |  |
 
 ---
 
@@ -24,11 +26,17 @@ This table is ingested by the following connectors:
 
 ### Workbooks (2)
 
-**In solution [](../solutions/.md):**
-- [Citrix](../content/-citrix-eb8b38f0.md)
-
 **In solution [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md):**
-- [Citrix](../content/citrix-analytics-for-security-citrix-7f228429.md)
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Citrix](../content/citrix-analytics-for-security-citrix-7f228429.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Citrix](../content/github-only-citrix-c2c704c4.md) |  |
 
 ---
 

@@ -16,7 +16,9 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-- [Ping One (via Codeless Connector Framework)](../connectors/pingoneauditlogsccpdefinition.md)
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Ping One (via Codeless Connector Framework)](../connectors/pingoneauditlogsccpdefinition.md) |  |
 
 ---
 
