@@ -31,7 +31,6 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`Operation`](../tables/operation.md) | ✗ | ✗ |
 | [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
 
 ## Parameters
@@ -39,6 +38,16 @@ This parser reads from the following tables:
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
+
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [WindowsSecurityEvents](../connectors/windowssecurityevents.md) | [Windows Security Events](../solutions/windows-security-events.md) |
+
+**Solutions:** [Windows Security Events](../solutions/windows-security-events.md)
 
 ## References
 

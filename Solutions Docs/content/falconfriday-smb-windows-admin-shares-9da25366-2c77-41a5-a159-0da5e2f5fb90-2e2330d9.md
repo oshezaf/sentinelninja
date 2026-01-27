@@ -25,10 +25,10 @@ This query is based on detecting incoming RPC/TCP on the SCM, followed by the st
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType == "InboundConnectionAccepted"` | ✓ | ✗ |
 
 ---
 

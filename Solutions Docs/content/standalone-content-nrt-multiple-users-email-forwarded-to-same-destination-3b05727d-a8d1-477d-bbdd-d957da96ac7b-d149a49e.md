@@ -24,9 +24,9 @@ Identifies when multiple (more than one) users mailboxes are configured to forwa
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"` | ✓ | ✗ |
 
 ---
 

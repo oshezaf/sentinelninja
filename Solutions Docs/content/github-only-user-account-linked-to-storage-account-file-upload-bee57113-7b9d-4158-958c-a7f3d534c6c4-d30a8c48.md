@@ -22,11 +22,22 @@ This hunting query will try to identify the user account used to perform a file 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) | ✓ | ✗ |
-| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName in "PutBlob,PutRange"` | ✓ | ✗ |
+| [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ |
+| [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [AzureActiveDirectory](../connectors/azureactivedirectory.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+| [AzureStorageAccount](../connectors/azurestorageaccount.md) | [Azure Storage](../solutions/azure-storage.md) |
+
+**Solutions:** [Azure Storage](../solutions/azure-storage.md), [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 
 ---
 

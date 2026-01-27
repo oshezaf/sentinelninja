@@ -32,7 +32,7 @@ This content item queries data from the following tables:
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ |
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
-| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) | `ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"` | ✗ | ✗ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"` | — | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | — | — |
@@ -46,7 +46,7 @@ This content item queries data from the following tables:
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ |
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |  | — | — |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
@@ -57,7 +57,7 @@ This content item queries data from the following tables:
 | [`IntuneDevices`](../tables/intunedevices.md) |  | ✓ | ✗ |
 | [`IntuneOperationalLogs`](../tables/intuneoperationallogs.md) |  | ✓ | ✗ |
 | [`KubeEvents_CL`](../tables/kubeevents-cl.md) |  | — | — |
-| [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`RecordType == "ExchangeAdmin"` | ✓ | ✗ |
 | [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | — | — |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
@@ -65,7 +65,7 @@ This content item queries data from the following tables:
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) |  | ✓ | ✗ |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | ✓ | ✗ |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ |
 | [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ |
 | [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | ✓ | ✓ |

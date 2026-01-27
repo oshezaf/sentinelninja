@@ -25,9 +25,9 @@ Identifies a privileged role being assigned to a user outside of PIM Ref : https
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Add member to role"`<br>`OperationName has "Add member to role outside of PIM"` | ✓ | ✗ |
 
 ---
 

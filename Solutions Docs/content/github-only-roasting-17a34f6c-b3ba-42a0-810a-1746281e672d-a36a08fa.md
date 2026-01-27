@@ -20,10 +20,10 @@ Detect Active Directory LDAP queries that search for Kerberoasting (SPNs) or acc
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
-| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | `ActionType == "LDAP query"` | ✓ | ✗ |
 
 ---
 

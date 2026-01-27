@@ -25,9 +25,9 @@ The attacker sends a spearphishing email to a user. The email contains a link wh
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType contains "Office"` | ✓ | ✗ |
 
 ---
 

@@ -39,6 +39,16 @@ This parser reads from the following tables:
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
 
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [CustomlogsviaAMA](../connectors/customlogsviaama.md) | [CustomLogsAma](../solutions/customlogsama.md) |
+
+**Solutions:** [CustomLogsAma](../solutions/customlogsama.md)
+
 ## References
 
 - [ASIM Web Session Schema](https://aka.ms/ASimWebSessionDoc)

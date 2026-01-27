@@ -21,10 +21,10 @@ Looks for a new MFA method added to an account that was preceded by medium or hi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) |  | — | ✗ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "Update user."` | ✓ | ✗ |
 
 ---
 

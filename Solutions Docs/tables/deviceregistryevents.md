@@ -30,41 +30,43 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) |  |
+**Selection Criteria:** `ActionType == "RegistryValueSet"`
+
+| Connector |
+|:----------|
+| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) |
 
 ---
 
-## Content Items Using This Table (24)
+## Content Items Using This Table (26)
 
 ### Analytic Rules (3)
 
-**In solution [FalconFriday](../solutions/falconfriday.md):**
+**In solution [FalconFriday](../solutions/falconfriday.md):** `ActionType == "RegistryValueSet"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Component Object Model Hijacking - Vault7 trick](../content/falconfriday-component-object-model-hijacking-vault7-trick-1aaff41f-4e18-45b1-bb34-de6eb4943cf2-23d9ec72.md) |  |
+| Content Item |
+|:-------------|
+| [Component Object Model Hijacking - Vault7 trick](../content/falconfriday-component-object-model-hijacking-vault7-trick-1aaff41f-4e18-45b1-bb34-de6eb4943cf2-23d9ec72.md) |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "RegistryValueSet"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-506f4d6b-3864-4bb1-8f75-a13fb066f97a-66639731.md) |  |
+| Content Item |
+|:-------------|
+| [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-506f4d6b-3864-4bb1-8f75-a13fb066f97a-66639731.md) |
 
-**Standalone Content:**
+**Standalone Content:** `ActionType == "RegistryValueSet"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [COM Registry Key Modified to Point to File in Color Profile Folder](../content/standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.md) |  |
+| Content Item |
+|:-------------|
+| [COM Registry Key Modified to Point to File in Color Profile Folder](../content/standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.md) |
 
-### Hunting Queries (17)
+### Hunting Queries (19)
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "RegistryValueSet"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-0efbcea0-1dc0-4844-8a9c-3a1d98fc1697-1d4d4510.md) |  |
+| Content Item |
+|:-------------|
+| [MosaicLoader](../content/microsoft-defender-xdr-mosaicloader-0efbcea0-1dc0-4844-8a9c-3a1d98fc1697-1d4d4510.md) |
 
 **Standalone Content:**
 
@@ -78,17 +80,19 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Accessibility Features](../content/github-only-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-dbe14580.md) |  |
-| [KNOTWEED-COM Registry Key Modified to Point to Color Profile Folder](../content/github-only-knotweed-com-registry-key-modified-to-point-to-color-profile-folder-9c1331df-9bb3-4b52-b7d7-5a6e9e6d97b4-d37a60f6.md) |  |
-| [MosaicLoader](../content/github-only-mosaicloader-625dce50-2fec-4f49-be92-ad4cab98b313-31f04ab2.md) |  |
-| [OceanLotus registry activity](../content/github-only-oceanlotus-registry-activity-3e571521-6f73-423f-9280-aff6170c9d81-1a08b9f1.md) |  |
-| [RunMRU with non-ASCII characters](../content/github-only-runmru-with-non-ascii-characters-6e8ee46f-80ee-46f6-be49-49a66f01edce-e16ca0cd.md) |  |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
+| [KNOTWEED-COM Registry Key Modified to Point to Color Profile Folder](../content/github-only-knotweed-com-registry-key-modified-to-point-to-color-profile-folder-9c1331df-9bb3-4b52-b7d7-5a6e9e6d97b4-d37a60f6.md) | `ActionType == "RegistryValueSet"` |
+| [MosaicLoader](../content/github-only-mosaicloader-625dce50-2fec-4f49-be92-ad4cab98b313-31f04ab2.md) | `ActionType == "RegistryValueSet"` |
+| [OceanLotus registry activity](../content/github-only-oceanlotus-registry-activity-3e571521-6f73-423f-9280-aff6170c9d81-1a08b9f1.md) | `ActionType == "RegistryValueSet"` |
+| [RunMRU with non-ASCII characters](../content/github-only-runmru-with-non-ascii-characters-6e8ee46f-80ee-46f6-be49-49a66f01edce-e16ca0cd.md) | `ActionType == "RegistryValueSet"` |
 | [Services](../content/github-only-services-dd76f1c0-edc9-45cb-aeae-f5142caf583c-adae9da2.md) |  |
 | [Suspicious Registry Keys](../content/github-only-suspicious-registry-keys-fab0fc37-d74a-43b6-9f13-d517b9cbcb14-4ef94be0.md) |  |
 | [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) |  |
-| [qakbot-campaign-registry-edit](../content/github-only-qakbot-campaign-registry-edit-3f305589-cde2-4509-8204-63cb2a00117c-2575a13b.md) |  |
-| [suspicious-base64-encoded-registry-keys](../content/github-only-suspicious-base64-encoded-registry-keys-4751319e-6d20-4c26-893d-baaad90f0747-3b8dcc39.md) |  |
-| [suspicious-command-interpreters-added-to-registry](../content/github-only-suspicious-command-interpreters-added-to-registry-74dd8aa9-996b-44b1-bf36-9ac9ef6d2c02-d9fd92fe.md) |  |
-| [suspicious-keywords-in-registry](../content/github-only-suspicious-keywords-in-registry-749f313e-08b4-48f6-9f9d-ba57c1abbf55-0fb6d342.md) |  |
+| [qakbot-campaign-registry-edit](../content/github-only-qakbot-campaign-registry-edit-3f305589-cde2-4509-8204-63cb2a00117c-2575a13b.md) | `ActionType == "RegistryValueSet"` |
+| [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
+| [suspicious-base64-encoded-registry-keys](../content/github-only-suspicious-base64-encoded-registry-keys-4751319e-6d20-4c26-893d-baaad90f0747-3b8dcc39.md) | `ActionType has_any "RegistryKeyCreated,RegistryValueSet"` |
+| [suspicious-command-interpreters-added-to-registry](../content/github-only-suspicious-command-interpreters-added-to-registry-74dd8aa9-996b-44b1-bf36-9ac9ef6d2c02-d9fd92fe.md) | `ActionType has_any "RegistryKeyCreated,RegistryValueSet"` |
+| [suspicious-keywords-in-registry](../content/github-only-suspicious-keywords-in-registry-749f313e-08b4-48f6-9f9d-ba57c1abbf55-0fb6d342.md) | `ActionType has_any "RegistryKeyCreated,RegistryValueSet"` |
 | [wadhrama-credential-dump](../content/github-only-wadhrama-credential-dump-8348d279-c95f-4dbe-b952-65048dc06559-6f945582.md) |  |
 | [wdigest-caching](../content/github-only-wdigest-caching-05a01ec8-ecab-4f9a-9aae-8d8cc061fe05-30a7e092.md) |  |
 
@@ -115,11 +119,33 @@ This table is ingested by the following connectors:
 
 ## Parsers Using This Table (1)
 
-### ASIM Parsers (1)
+### ASIM Parsers (1) — Selection Criteria: `ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"`
 
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimRegistryEventMicrosoft365D](../asim/asimregistryeventmicrosoft365d.md) | RegistryEvent | Microsoft 365 Defender for Endpoint |  |
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimRegistryEventMicrosoft365D](../asim/asimregistryeventmicrosoft365d.md) | RegistryEvent | Microsoft 365 Defender for Endpoint |
+
+## Selection Criteria Summary (3 criteria, 14 total references)
+
+References by type: 1 connectors, 12 content items, 1 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActionType == "RegistryValueSet"` | 1 | 9 | - | - | **10** |
+| `ActionType has_any "RegistryKeyCreated,RegistryValueSet"` | - | 3 | - | - | **3** |
+| `ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"` | - | - | 1 | - | **1** |
+| **Total** | **1** | **12** | **1** | **0** | **14** |
+
+### ActionType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `RegistryValueSet` | 1 | 9 | 1 | - | **11** |
+| `has_any RegistryKeyCreated` | - | 3 | - | - | **3** |
+| `has_any RegistryValueSet` | - | 3 | - | - | **3** |
+| `RegistryKeyDeleted` | - | - | 1 | - | **1** |
+| `RegistryKeyRenamed` | - | - | 1 | - | **1** |
+| `RegistryValueDeleted` | - | - | 1 | - | **1** |
 
 ---
 

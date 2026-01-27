@@ -39,6 +39,16 @@ This parser reads from the following tables:
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
 
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [AzureStorageAccount](../connectors/azurestorageaccount.md) | [Azure Storage](../solutions/azure-storage.md) |
+
+**Solutions:** [Azure Storage](../solutions/azure-storage.md)
+
 ## References
 
 - [ASIM File Schema](https://aka.ms/ASimFileEventDoc)

@@ -62,19 +62,13 @@ This table is ingested by the following connectors:
 |:-------------|
 | [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) |
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.securityinsights/networksessionnormalized`
-
 ## Parsers Using This Table (2)
 
-### ASIM Parsers (1)
+### ASIM Parsers (1) — Selection Criteria: `EventType in "EndpointNetworkSession,L2NetworkSession"`
 
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimNetworkSessionNative](../asim/asimnetworksessionnative.md) | NetworkSession | Native |  |
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimNetworkSessionNative](../asim/asimnetworksessionnative.md) | NetworkSession | Native |
 
 ### Other Parsers (1)
 
@@ -82,20 +76,34 @@ This table collects data from the following Azure resource types:
 |:-------|:---------|:-------------------|
 | [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
 
-## Selection Criteria Summary (1 criteria, 1 total references)
+## Resource Types
 
-References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
+This table collects data from the following Azure resource types:
+
+- `microsoft.securityinsights/networksessionnormalized`
+
+## Selection Criteria Summary (2 criteria, 2 total references)
+
+References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
-| **Total** | **1** | **0** | **0** | **0** | **1** |
+| `EventType in "EndpointNetworkSession,L2NetworkSession"` | - | - | 1 | - | **1** |
+| **Total** | **1** | **0** | **1** | **0** | **2** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Windows Firewall` |  | 1 | - | - | - | **1** |
+
+### EventType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EndpointNetworkSession` | - | - | 1 | - | **1** |
+| `L2NetworkSession` | - | - | 1 | - | **1** |
 
 ---
 

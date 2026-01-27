@@ -46,7 +46,7 @@ This solution uses ASIM parsers and supports the following products:
 | [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) |
 | [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
 | [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
-| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-(asm)) |
+| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-asm) |
 | [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
 | [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
 | [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
@@ -54,7 +54,7 @@ This solution uses ASIM parsers and supports the following products:
 | [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
 | [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
 | [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) |
-| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-(iis)) |
+| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-iis) |
 | [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
 | [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
 | [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |

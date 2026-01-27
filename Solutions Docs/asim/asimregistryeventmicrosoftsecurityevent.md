@@ -31,6 +31,8 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
+| [`ASIM_GetAccountType`](../tables/asim-getaccounttype.md) |  | — | — |
+| [`ASIM_ParseSecurityEvents`](../tables/asim-parsesecurityevents.md) |  | — | — |
 | [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4657,4663"` | ✓ | ✓ |
 
 ## Parameters
@@ -38,6 +40,18 @@ This parser reads from the following tables:
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
+
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [ESI-Opt34DomainControllersSecurityEventLogs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| [SecurityEvents](../connectors/securityevents.md) | [Windows Security Events](../solutions/windows-security-events.md) |
+| [WindowsSecurityEvents](../connectors/windowssecurityevents.md) | [Windows Security Events](../solutions/windows-security-events.md) |
+
+**Solutions:** [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md), [Windows Security Events](../solutions/windows-security-events.md)
 
 ## References
 

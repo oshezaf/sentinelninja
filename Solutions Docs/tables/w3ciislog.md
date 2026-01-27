@@ -16,7 +16,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog) |
 
-## Solutions (8)
+## Solutions (9)
 
 This table is used by the following solutions:
 
@@ -27,6 +27,7 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 
 ## Connectors (2)
@@ -40,9 +41,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (38)
+## Content Items Using This Table (39)
 
-### Analytic Rules (14)
+### Analytic Rules (15)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -62,6 +63,12 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map IP Entity to W3CIISLog](../content/threat-intelligence-ti-map-ip-entity-to-w3ciislog-5e45930c-09b1-4430-b2d1-cc75ada0dc0f-b8687c20.md) |  |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map IP Entity to W3CIISLog](../content/threat-intelligence-new-ti-map-ip-entity-to-w3ciislog-888c4736-e604-48eb-b2c7-3462356d9510-ad1df7ff.md) |  |
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 
@@ -156,6 +163,14 @@ This table is ingested by the following connectors:
 | [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 | [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
 
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimWebSessionIIS](../asim/asimwebsessioniis.md) | WebSession | Internet Information Services (IIS) |  |
+
 ## Resource Types
 
 This table collects data from the following Azure resource types:
@@ -165,14 +180,6 @@ This table collects data from the following Azure resource types:
 - `microsoft.azurestackhci/virtualmachines`
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
-
-## Parsers Using This Table (1)
-
-### ASIM Parsers (1)
-
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimWebSessionIIS](../asim/asimwebsessioniis.md) | WebSession | Internet Information Services (IIS) |  |
 
 ---
 

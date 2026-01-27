@@ -25,9 +25,9 @@ Identifies accounts that were created or deleted by a defined list of non-approv
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add user,Delete user"` | ✓ | ✗ |
 
 ---
 

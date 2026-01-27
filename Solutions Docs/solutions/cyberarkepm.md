@@ -63,7 +63,7 @@ This solution includes **22 content item(s)**:
 | [CyberArkEPM - Uncommon Windows process started from System folder](../content/cyberarkepm-cyberarkepm-uncommon-windows-process-started-from-system-folder-16b940d2-aaf8-4eaa-a5e1-05df5f5c3d43-515a91a8.md) | Medium | Execution, DefenseEvasion | [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) |
 | [CyberArkEPM - Uncommon process Internet access](../content/cyberarkepm-cyberarkepm-uncommon-process-internet-access-9d0d44ab-54dc-472a-9931-53521e888932-7cd557dd.md) | High | Execution, DefenseEvasion, CommandAndControl | [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) |
 | [CyberArkEPM - Unexpected executable extension](../content/cyberarkepm-cyberarkepm-unexpected-executable-extension-911d5b75-a1ce-4f13-a839-9c2474768696-814c115f.md) | Medium | Execution, DefenseEvasion | [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) |
-| [CyberArkEPM - Unexpected executable location](../content/cyberarkepm-cyberarkepm-unexpected-executable-location-c1fcbbd7-74f8-4f32-8116-0a533ebd3878-f588775e.md) | Medium | Execution, DefenseEvasion | - |
+| [CyberArkEPM - Unexpected executable location](../content/cyberarkepm-cyberarkepm-unexpected-executable-location-c1fcbbd7-74f8-4f32-8116-0a533ebd3878-f588775e.md) | Medium | Execution, DefenseEvasion | [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) |
 
 ### Hunting Queries
 

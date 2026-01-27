@@ -39,6 +39,16 @@ This parser reads from the following tables:
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
 
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [IllumioSaaSDataConnector](../connectors/illumiosaasdataconnector.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
+
+**Solutions:** [IllumioSaaS](../solutions/illumiosaas.md)
+
 ## References
 
 - [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)

@@ -20,9 +20,9 @@ Detect multiple Active Directory LDAP queries made in bin time Replace 10 on lin
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | `ActionType == "LDAP query"` | ✓ | ✗ |
 
 ---
 

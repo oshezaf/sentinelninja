@@ -21,9 +21,9 @@ This query is designed to help troubleshoot connectivity issues to Microsoft Def
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "ConnectionFailed"` | ✓ | ✗ |
 
 ---
 

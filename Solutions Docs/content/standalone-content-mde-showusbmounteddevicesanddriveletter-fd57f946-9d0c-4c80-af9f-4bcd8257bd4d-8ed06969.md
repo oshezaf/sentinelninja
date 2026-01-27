@@ -20,9 +20,9 @@ Show usb mounted devices and drive letters
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType contains "USB"` | ✓ | ✗ |
 
 ---
 

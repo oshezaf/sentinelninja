@@ -20,14 +20,19 @@ Baseline Comparison. Author: miflower. The purpose of this query is to perform a
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
-| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ |
+| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ |
+| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ |
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ |
 
 ---
 

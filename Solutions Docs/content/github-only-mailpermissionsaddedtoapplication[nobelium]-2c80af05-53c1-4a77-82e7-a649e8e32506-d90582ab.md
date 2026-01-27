@@ -21,9 +21,9 @@ This query will find applications that have been granted Mail.Read or Mail.ReadW
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Add delegated permission grant.,Consent to application."` | ✓ | ✗ |
 
 ---
 

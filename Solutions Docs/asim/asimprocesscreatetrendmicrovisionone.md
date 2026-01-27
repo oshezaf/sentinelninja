@@ -25,11 +25,29 @@
 
 This ASIM parser supports normalizing Trend Micro Vision One logs to the ASIM Process Create normalized schema. Trend Micro Vision One events are captured through Trend Vision One data connector which ingests XDR logs into Microsoft Sentinel through the Trend Vision One API.
 
+## Source Tables
+
+This parser reads from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) | — | — |
+
 ## Parameters
 
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
+
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [TrendMicroXDR](../connectors/trendmicroxdr.md) | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
+
+**Solutions:** [Trend Micro Vision One](../solutions/trend-micro-vision-one.md)
 
 ## References
 

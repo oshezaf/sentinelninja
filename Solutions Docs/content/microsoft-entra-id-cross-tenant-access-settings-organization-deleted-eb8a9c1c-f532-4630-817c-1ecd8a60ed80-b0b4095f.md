@@ -25,9 +25,9 @@ Organizations are added in the Cross-tenant Access Settings to control communica
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "Delete partner specific cross-tenant access setting"` | ✓ | ✗ |
 
 ---
 

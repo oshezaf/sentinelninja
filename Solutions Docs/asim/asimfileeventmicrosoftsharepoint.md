@@ -29,10 +29,10 @@ This ASIM parser supports normalizing Sharepoint and OneDrive for business event
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
-| [`Operation`](../tables/operation.md) | ✗ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
 
 ## Parameters
 

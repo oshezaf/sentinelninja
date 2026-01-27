@@ -16,19 +16,20 @@ Reference for Update table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update) |
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [SAP BTP](../solutions/sap-btp.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (7)
 
-### Workbooks (5)
+### Workbooks (7)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -48,11 +49,18 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) |  |
 
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+
 **GitHub Only:**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ## Resource Types

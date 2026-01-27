@@ -21,9 +21,9 @@ The query looks for users or service principals that attached an uncommon creden
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Add service principal credentials.,Update application - Certificates`<br>`secrets management"` | ✓ | ✗ |
 
 ---
 

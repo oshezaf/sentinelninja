@@ -22,12 +22,12 @@ This query helps report daily on total number of emails, total number of emails 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
-| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "AdminSubmission,UserSubmission"`<br>`ActionType contains "ZAP"` | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ |
 
 ---
 

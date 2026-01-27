@@ -24,9 +24,19 @@ Detects when a guest account in a tenant is converted to a member of the tenant.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Update user"` | ✓ | ✗ |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [AzureActiveDirectory](../connectors/azureactivedirectory.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+
+**Solutions:** [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 
 ---
 

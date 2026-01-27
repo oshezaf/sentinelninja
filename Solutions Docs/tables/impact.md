@@ -16,7 +16,7 @@
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| [AcscEssential8](../content/github-only-acscessential8-fa923a42.md) |  |
 
 ---
 

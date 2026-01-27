@@ -20,9 +20,9 @@ Establishes a baseline SystemGuardSecurityLevel and show the devices that are be
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "DeviceBootAttestationInfo"` | ✓ | ✗ |
 
 ---
 

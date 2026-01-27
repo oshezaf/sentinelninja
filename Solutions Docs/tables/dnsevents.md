@@ -16,7 +16,7 @@ Reference for DnsEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dnsevents) |
 
-## Solutions (15)
+## Solutions (16)
 
 This table is used by the following solutions:
 
@@ -31,6 +31,7 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
 - [Windows Server DNS](../solutions/windows-server-dns.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -46,9 +47,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (39)
+## Content Items Using This Table (43)
 
-### Analytic Rules (14)
+### Analytic Rules (16)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -74,6 +75,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI Map IP Entity to DnsEvents](../content/threat-intelligence-ti-map-ip-entity-to-dnsevents-69b7723c-2889-469f-8b55-a2d355ed9c87-bb4a4c77.md) |  |
 | [TI map Domain entity to DnsEvents](../content/threat-intelligence-ti-map-domain-entity-to-dnsevents-85aca4d1-5d15-4001-abd9-acb86ca1786a-1658942e.md) |  |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map IP Entity to DnsEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-dnsevents-6418fd33-92f2-407b-bd61-91c0d4bbcb8a-5cae9331.md) |  |
+| [TI map Domain entity to DnsEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-dnsevents-03a8e294-3fc7-4d65-9da2-cff91fb5b6dc-1b58bbc8.md) |  |
 
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
 
@@ -131,7 +139,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [RareDNSLookupWithDataTransfer](../content/standalone-content-rarednslookupwithdatatransfer-06c52a66-fffe-4d3b-a05a-646ff65b7ec2-5a6c4b85.md) |  |
 
-### Workbooks (15)
+### Workbooks (17)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -161,6 +169,7 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
@@ -187,11 +196,20 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Dns](../content/github-only-dns-ff664046.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 | [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimDnsMicrosoftOMS](../asim/asimdnsmicrosoftoms.md) | Dns | MS DNS Events |  |
 
 ## Resource Types
 
@@ -201,14 +219,6 @@ This table collects data from the following Azure resource types:
 - `microsoft.conenctedvmwarevsphere/virtualmachines`
 - `microsoft.azurestackhci/virtualmachines`
 - `microsoft.scvmm/virtualmachines`
-
-## Parsers Using This Table (1)
-
-### ASIM Parsers (1)
-
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimDnsMicrosoftOMS](../asim/asimdnsmicrosoftoms.md) | Dns | MS DNS Events |  |
 
 ---
 

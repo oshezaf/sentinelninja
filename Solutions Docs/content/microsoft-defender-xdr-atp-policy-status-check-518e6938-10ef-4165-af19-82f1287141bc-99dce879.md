@@ -22,9 +22,9 @@ This query displays the configuration auditing for 'Safe Attachments for SharePo
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "Set-AtpPolicyForO365"` | ✓ | ✗ |
 
 ---
 

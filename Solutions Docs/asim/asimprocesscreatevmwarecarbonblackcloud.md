@@ -40,6 +40,16 @@ This parser reads from the following tables:
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
 
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [VMwareCarbonBlack](../connectors/vmwarecarbonblack.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+
+**Solutions:** [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
+
 ## References
 
 - [ASIM Process Schema](https://aka.ms/ASimProcessEventDoc)

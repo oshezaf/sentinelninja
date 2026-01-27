@@ -28,6 +28,16 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|
 | [`Event`](../tables/event.md) | `EventID in "1,7"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
 
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [MimecastTIRegionalConnectorAzureFunctions](../connectors/mimecasttiregionalconnectorazurefunctions.md) | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
+
+**Solutions:** [MimecastTIRegional](../solutions/mimecasttiregional.md)
+
 ---
 
 **Browse:** [🏠](../readme.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

@@ -16,7 +16,7 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail) |
 
-## Solutions (13)
+## Solutions (15)
 
 This table is used by the following solutions:
 
@@ -29,9 +29,11 @@ This table is used by the following solutions:
 - [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ## Connectors (2)
@@ -45,9 +47,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (129)
+## Content Items Using This Table (132)
 
-### Analytic Rules (75)
+### Analytic Rules (76)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -156,6 +158,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-ti-map-ip-entity-to-awscloudtrail-f110287e-1358-490d-8147-ed804b328514-010bee9c.md) |  |
 
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md) |  |
+
 **Standalone Content:**
 
 | Content Item | Selection Criteria |
@@ -219,7 +227,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
 
-### Workbooks (16)
+### Workbooks (18)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -252,6 +260,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 
 | Content Item | Selection Criteria |
@@ -274,6 +288,7 @@ This table is ingested by the following connectors:
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
 | [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
 

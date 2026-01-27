@@ -14,7 +14,7 @@ Reference for AzureDiagnostics table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics) |
 
-## Solutions (35)
+## Solutions (36)
 
 This table is used by the following solutions:
 
@@ -49,6 +49,7 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -78,9 +79,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (104)
+## Content Items Using This Table (107)
 
-### Analytic Rules (39)
+### Analytic Rules (42)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -148,6 +149,14 @@ This table is ingested by the following connectors:
 | [TI Map IP Entity to Azure SQL Security Audit Events](../content/threat-intelligence-ti-map-ip-entity-to-azure-sql-security-audit-events-d0aa8969-1bbe-4da3-9e76-09e5f67c9d85-cbef7484.md) | `Category == "SQLSecurityAuditEvents"` |
 | [TI map IP entity to Azure Key Vault logs](../content/threat-intelligence-ti-map-ip-entity-to-azure-key-vault-logs-57c7e832-64eb-411f-8928-4133f01f4a25-7c3f7a41.md) | `ResourceType == "VAULTS"` |
 | [TI map IP entity to AzureFirewall](../content/threat-intelligence-ti-map-ip-entity-to-azurefirewall-0b904747-1336-4363-8d84-df2710bfe5e7-30fad35b.md) |  |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map IP Entity to Azure SQL Security Audit Events](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-sql-security-audit-events-239d987e-ee1b-4c49-b146-e88d682930a4-fb7a1cf3.md) | `Category == "SQLSecurityAuditEvents"` |
+| [TI map IP entity to Azure Key Vault logs](../content/threat-intelligence-new-ti-map-ip-entity-to-azure-key-vault-logs-7c8051a7-3d29-4c0d-a340-893423f7b0a5-565bd210.md) | `ResourceType == "VAULTS"` |
+| [TI map IP entity to AzureFirewall](../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.md) |  |
 
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 
@@ -394,14 +403,14 @@ This table is ingested by the following connectors:
 | [AzureFirewallApplicationRule](../parsers/azurefirewallapplicationrule.md) | *(Legacy)* |  |
 | [AzureFirewallNetworkRule](../parsers/azurefirewallnetworkrule.md) | *(Legacy)* | `Category == "AzureFirewallNetworkRule"` |
 
-## Selection Criteria Summary (29 criteria, 67 total references)
+## Selection Criteria Summary (29 criteria, 69 total references)
 
-References by type: 6 connectors, 60 content items, 0 ASIM parsers, 1 other parsers.
+References by type: 6 connectors, 62 content items, 0 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Category == "SQLSecurityAuditEvents"` | - | 19 | - | - | **19** |
-| `ResourceType == "VAULTS"` | - | 6 | - | - | **6** |
+| `Category == "SQLSecurityAuditEvents"` | - | 20 | - | - | **20** |
+| `ResourceType == "VAULTS"` | - | 7 | - | - | **7** |
 | `Category == "FrontDoorWebApplicationFirewallLog"` | - | 4 | - | - | **4** |
 | `Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"` | - | 4 | - | - | **4** |
 | `Category == "kube-audit"` | - | 3 | - | - | **3** |
@@ -412,10 +421,10 @@ References by type: 6 connectors, 60 content items, 0 ASIM parsers, 1 other pars
 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | - | 2 | - | - | **2** |
 | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | - | 2 | - | - | **2** |
 | `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
-| `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
-| `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
 | `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` | 1 | - | - | - | **1** |
 | `ResourceType == "AZUREFIREWALLS"` | 1 | - | - | - | **1** |
+| `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
+| `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
 | `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
 | `Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"` | - | 1 | - | - | **1** |
 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"`<br>`ResourceType == "AZUREFIREWALLS"` | - | 1 | - | - | **1** |
@@ -429,13 +438,13 @@ References by type: 6 connectors, 60 content items, 0 ASIM parsers, 1 other pars
 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"` | - | 1 | - | - | **1** |
 | `ResourceType == "PUBLICIPADDRESSES"` | - | 1 | - | - | **1** |
 | `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | - | 1 | - | - | **1** |
-| **Total** | **6** | **60** | **0** | **1** | **67** |
+| **Total** | **6** | **62** | **0** | **1** | **69** |
 
 ### Category
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `SQLSecurityAuditEvents` | 1 | 22 | - | - | **23** |
+| `SQLSecurityAuditEvents` | 1 | 23 | - | - | **24** |
 | `kube-audit` | 1 | 7 | - | - | **8** |
 | `ApplicationGatewayFirewallLog` | - | 8 | - | - | **8** |
 | `AzureFirewallNetworkRule` | - | 7 | - | 1 | **8** |
@@ -488,7 +497,7 @@ References by type: 6 connectors, 60 content items, 0 ASIM parsers, 1 other pars
 | `APPLICATIONGATEWAYS` | 1 | 7 | - | - | **8** |
 | `AZUREFIREWALLS` | 1 | 7 | - | - | **8** |
 | `PUBLICIPADDRESSES` | 1 | 7 | - | - | **8** |
-| `VAULTS` | - | 7 | - | - | **7** |
+| `VAULTS` | - | 8 | - | - | **8** |
 | `CDNWEBAPPLICATIONFIREWALLPOLICIES` | 1 | 4 | - | - | **5** |
 | `FRONTDOORS` | 1 | 4 | - | - | **5** |
 | `SERVERS/DATABASES` | 1 | 3 | - | - | **4** |

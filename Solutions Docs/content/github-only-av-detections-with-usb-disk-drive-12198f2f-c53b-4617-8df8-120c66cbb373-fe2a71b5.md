@@ -20,9 +20,9 @@ This query make a best-guess detection regarding which removable media device ca
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "AntivirusDetection,PnpDeviceConnected"` | ✓ | ✗ |
 
 ---
 

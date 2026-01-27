@@ -22,9 +22,9 @@ This query visualises top sender email addresses of intra-org emails submitted a
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "UserSubmission"` | ✓ | ✗ |
 
 ---
 

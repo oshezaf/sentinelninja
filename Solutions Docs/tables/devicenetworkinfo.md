@@ -35,7 +35,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (18)
+## Content Items Using This Table (19)
 
 ### Analytic Rules (1)
 
@@ -45,7 +45,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [RDP Nesting](../content/standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.md) |  |
 
-### Hunting Queries (13)
+### Hunting Queries (14)
 
 **Standalone Content:**
 
@@ -58,6 +58,7 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Alert Events from Internal IP Address](../content/github-only-alert-events-from-internal-ip-address-f936ddfa-58e3-4db1-834b-fb50e8bd55c5-0c346d92.md) |  |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
 | [ConnectedNetworkDeviceDiscovery](../content/github-only-connectednetworkdevicediscovery-c7813a5c-ef11-4ee9-8feb-731402f31259-5481412c.md) |  |
 | [Device Logons from Unknown IPs](../content/github-only-device-logons-from-unknown-ips-a6d76204-efb2-4ccd-a068-d5a9e6876236-62ddb799.md) |  |
 | [Devices In Subnet - IPAddressV4](../content/github-only-devices-in-subnet-ipaddressv4-7f4a9010-4948-4e0c-b668-7a2f603c7dc8-a32cecb4.md) |  |

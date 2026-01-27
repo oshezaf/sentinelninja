@@ -39,6 +39,16 @@ This parser reads from the following tables:
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
 
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [TrendMicroXDR](../connectors/trendmicroxdr.md) | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
+
+**Solutions:** [Trend Micro Vision One](../solutions/trend-micro-vision-one.md)
+
 ## References
 
 - [ASIM Registry Schema](https://aka.ms/ASimRegistryEventDoc)

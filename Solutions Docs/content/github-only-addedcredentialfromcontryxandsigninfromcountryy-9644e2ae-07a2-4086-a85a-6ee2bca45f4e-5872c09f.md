@@ -21,10 +21,10 @@ Added credential from country X and Signed-In from country Y in a pecific time w
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AADSpnSignInEventsBeta`](../tables/aadspnsignineventsbeta.md) | — | ✗ |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AADSpnSignInEventsBeta`](../tables/aadspnsignineventsbeta.md) |  | — | ✗ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Add service principal credentials.,Update application - Certificates`<br>`secrets management"` | ✓ | ✗ |
 
 ---
 

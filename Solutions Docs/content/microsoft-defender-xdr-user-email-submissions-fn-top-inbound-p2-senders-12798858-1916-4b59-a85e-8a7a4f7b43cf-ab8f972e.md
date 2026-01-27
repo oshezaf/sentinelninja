@@ -24,9 +24,9 @@ This query visualises top sender email addresses of inbound emails submitted as 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ |
 
 ---
 

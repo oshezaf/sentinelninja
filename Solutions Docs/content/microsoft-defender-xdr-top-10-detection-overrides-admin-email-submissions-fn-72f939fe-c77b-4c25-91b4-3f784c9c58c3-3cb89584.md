@@ -24,9 +24,9 @@ This query visualises emails submitted as false negatives by admins where emails
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "AdminSubmissionSubmitted"` | ✓ | ✗ |
 
 ---
 

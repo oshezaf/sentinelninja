@@ -20,9 +20,9 @@ Find which uncommon Powershell Cmdlets were executed on that machine in a certai
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ |
 
 ---
 

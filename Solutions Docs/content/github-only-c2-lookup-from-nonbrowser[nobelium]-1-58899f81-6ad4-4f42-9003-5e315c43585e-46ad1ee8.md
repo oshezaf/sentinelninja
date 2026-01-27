@@ -21,9 +21,9 @@ This query was originally published in the threat analytics report, Solorigate s
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | `ActionType == "DNS query"` | ✓ | ✗ |
 
 ---
 

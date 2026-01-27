@@ -39,6 +39,16 @@ This parser reads from the following tables:
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
 
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [NXLogDNSLogs](../connectors/nxlogdnslogs.md) | [NXLogDNSLogs](../solutions/nxlogdnslogs.md) |
+
+**Solutions:** [NXLogDNSLogs](../solutions/nxlogdnslogs.md)
+
 ## References
 
 - [ASIM DNS Schema](https://aka.ms/ASimDnsDoc)

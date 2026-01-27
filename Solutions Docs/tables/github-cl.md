@@ -6,18 +6,19 @@
 
 ---
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [GitHub](../solutions/github.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (12)
 
-### Analytic Rules (2)
+### Analytic Rules (3)
 
 **In solution [GitHub](../solutions/github.md):**
 
@@ -30,6 +31,12 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TI map IP entity to GitHub_CL](../content/threat-intelligence-ti-map-ip-entity-to-github-cl-aac495a9-feb1-446d-b08e-a1164a539452-00a98102.md) |  |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI map IP entity to GitHub_CL](../content/threat-intelligence-new-ti-map-ip-entity-to-github-cl-43d6c173-64c8-4416-b32e-636a9f318d15-5872ba25.md) |  |
 
 ### Hunting Queries (8)
 

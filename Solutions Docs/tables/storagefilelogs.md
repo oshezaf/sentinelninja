@@ -66,12 +66,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.storage/storageaccounts`
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -79,6 +73,12 @@ This table collects data from the following Azure resource types:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimFileEventAzureFileStorage](../asim/asimfileeventazurefilestorage.md) | FileEvent | Microsoft Azure File Storage |  |
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.storage/storageaccounts`
 
 ---
 

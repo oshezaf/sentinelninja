@@ -16,7 +16,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent) |
 
-## Solutions (29)
+## Solutions (30)
 
 This table is used by the following solutions:
 
@@ -44,6 +44,7 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
 - [Windows Security Events](../solutions/windows-security-events.md)
@@ -60,14 +61,14 @@ This table is ingested by the following connectors:
 | [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) |  |
 | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) |  |
 | [Security Events via Legacy Agent](../connectors/securityevents.md) |  |
-| [Semperis Directory Services Protector](../connectors/semperisdsp.md) |  |
+| [Semperis Directory Services Protector](../connectors/semperisdsp.md) | `EventID in "9211,9212"` |
 | [Windows Security Events via AMA](../connectors/windowssecurityevents.md) |  |
 
 ---
 
-## Content Items Using This Table (211)
+## Content Items Using This Table (218)
 
-### Analytic Rules (82)
+### Analytic Rules (85)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -142,6 +143,13 @@ This table is ingested by the following connectors:
 | [TI map Email entity to SecurityEvent](../content/threat-intelligence-ti-map-email-entity-to-securityevent-2fc5d810-c9cc-491a-b564-841427ae0e50-9cb621b7.md) |  |
 | [TI map File Hash to Security Event](../content/threat-intelligence-ti-map-file-hash-to-security-event-a7427ed7-04b4-4e3b-b323-08b981b9b4bf-a0646697.md) |  |
 
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.md) |  |
+| [TI map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.md) |  |
+
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):** `EventID in "4663,4688"`
 
 | Content Item |
@@ -211,12 +219,13 @@ This table is ingested by the following connectors:
 | [Security Service Registry ACL Modification](../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md) |  |
 | [Service Principal Name (SPN) Assigned to User Account](../content/standalone-content-service-principal-name-spn-assigned-to-user-account-875d0eb1-883a-4191-bd0e-dbfdeb95a464-6875f39b.md) | `EventID == "5136"` |
 | [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md) |  |
+| [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md) |  |
 | [Unusual identity creation using exchange powershell](../content/standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.md) |  |
 | [User account added to built in domain local or global group](../content/standalone-content-user-account-added-to-built-in-domain-local-or-global-group-a35f2c18-1b97-458f-ad26-e033af18eb99-fb766415.md) |  |
 | [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md) |  |
 | [User account enabled and disabled within 10 mins](../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.md) |  |
 
-### Hunting Queries (89)
+### Hunting Queries (90)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -267,6 +276,12 @@ This table is ingested by the following connectors:
 | Content Item |
 |:-------------|
 | [TI Map File Entity to Security Event](../content/threat-intelligence-ti-map-file-entity-to-security-event-233441b9-cc92-4c9b-87fa-73b855fcd4b8-14557cf7.md) |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):** `EventID in "4648,4673,4688,8002"`
+
+| Content Item |
+|:-------------|
+| [TI Map File Entity to Security Event](../content/threat-intelligence-new-ti-map-file-entity-to-security-event-10f83299-c4e6-4af8-9627-5f9448dee24a-3651af8f.md) |
 
 **In solution [Windows Security Events](../solutions/windows-security-events.md):**
 
@@ -347,7 +362,7 @@ This table is ingested by the following connectors:
 | [Suspicious command line tokens in LolBins or LolScripts](../content/github-only-suspicious-command-line-tokens-in-lolbins-or-lolscripts-4a6030de-c11c-4206-b4ea-cd005ebf80a2-42ab652c.md) | `EventID == "4688"` |
 | [Users Opening and Reading the Local Device Identity Key](../content/github-only-users-opening-and-reading-the-local-device-identity-key-9feddda0-6f46-43b4-a54f-5921e2b136b8-8ee3fb2f.md) |  |
 
-### Workbooks (40)
+### Workbooks (43)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `EventID in "2889,3000,4624,4768,4769,4776"`
 
@@ -413,6 +428,7 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) | `EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"` |
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"`
@@ -469,15 +485,35 @@ This table is ingested by the following connectors:
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `EventID in "3,4663,4688,5136"` |
 | [IdentityAndAccess](../content/github-only-identityandaccess-c7aa136c.md) |  |
 | [InsecureProtocols](../content/github-only-insecureprotocols-bd42e6f8.md) | `EventID in "2889,3000,4624,4768,4769,4776,5827,5828,5829,5830,5831"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"` |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `EventID in "17,18,4624,4662,4670,4688,5145,87"` |
+| [SysmonThreatHunting](../content/github-only-sysmonthreathunting-ea4856c6.md) | `EventID in "1,10,11,12,13,17,18,22,3,4624,4625,4720,4722,4723,4724,4725,4726,4728,4729,4732,4733,4738,4740,4746,4747,4751,4752,4756,4761,4762,4767,4771,4781,7,8"` |
 | [WindowsAuditChecker](../content/github-only-windowsauditchecker-d8c63df2.md) | `EventID in "4624,4625,4768,4769,4771"` |
 | [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) | `EventID in "4624,4625"` |
 | [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) | `EventID in "4624,4625"` |
 | [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+
+## Parsers Using This Table (6)
+
+### ASIM Parsers (5)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventMicrosoftSecurityEvents](../asim/asimauditeventmicrosoftsecurityevents.md) | AuditEvent | Microsoft Windows |  |
+| [ASimFileEventMicrosoftSecurityEvents](../asim/asimfileeventmicrosoftsecurityevents.md) | FileEvent | Microsoft Windows Events | `EventID == "4663"` |
+| [ASimProcessCreateMicrosoftSecurityEvents](../asim/asimprocesscreatemicrosoftsecurityevents.md) | ProcessEvent | Security Events | `EventID == "4688"` |
+| [ASimProcessTerminateMicrosoftSecurityEvents](../asim/asimprocessterminatemicrosoftsecurityevents.md) | ProcessEvent | Security Events | `EventID == "4689"` |
+| [ASimUserManagementMicrosoftSecurityEvent](../asim/asimusermanagementmicrosoftsecurityevent.md) | UserManagement | Microsoft Security Event | `EventID in "4744,4748,4749,4753,4759,4763"` |
+
+### Other Parsers (1) — Selection Criteria: `EventID in "9208,9211,9212"`
+
+| Parser | Solution |
+|:-------|:---------|
+| [dsp_parser](../parsers/dsp-parser.md) | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 
 ## Resource Types
 
@@ -490,27 +526,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Parsers Using This Table (6)
+## Selection Criteria Summary (52 criteria, 123 total references)
 
-### ASIM Parsers (5)
-
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimFileEventMicrosoftSecurityEvents](../asim/asimfileeventmicrosoftsecurityevents.md) | FileEvent | Microsoft Windows Events | `EventID == "4663"` |
-| [ASimProcessCreateMicrosoftSecurityEvents](../asim/asimprocesscreatemicrosoftsecurityevents.md) | ProcessEvent | Security Events | `EventID == "4688"` |
-| [ASimProcessTerminateMicrosoftSecurityEvents](../asim/asimprocessterminatemicrosoftsecurityevents.md) | ProcessEvent | Security Events | `EventID == "4689"` |
-| [ASimRegistryEventMicrosoftSecurityEvent](../asim/asimregistryeventmicrosoftsecurityevent.md) | RegistryEvent | Security Events | `EventID in "4657,4663"` |
-| [ASimUserManagementMicrosoftSecurityEvent](../asim/asimusermanagementmicrosoftsecurityevent.md) | UserManagement | Microsoft Security Event | `EventID in "4744,4748,4749,4753,4759,4763"` |
-
-### Other Parsers (1) — Selection Criteria: `EventID in "9208,9211,9212"`
-
-| Parser | Solution |
-|:-------|:---------|
-| [dsp_parser](../parsers/dsp-parser.md) | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
-
-## Selection Criteria Summary (51 criteria, 121 total references)
-
-References by type: 0 connectors, 115 content items, 5 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 117 content items, 4 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -526,6 +544,8 @@ References by type: 0 connectors, 115 content items, 5 ASIM parsers, 1 other par
 | `EventID in "4624,4625,4634,4647,4648,4675"` | - | 2 | - | - | **2** |
 | `EventID in "4656,4663"` | - | 2 | - | - | **2** |
 | `EventID == "4720"` | - | 2 | - | - | **2** |
+| `EventID in "4648,4673,4688,8002"` | - | 2 | - | - | **2** |
+| `EventID in "9211,9212"` | 1 | - | - | - | **1** |
 | `EventID == "5058"` | - | 1 | - | - | **1** |
 | `EventID == "5059"` | - | 1 | - | - | **1** |
 | `EventID == "4768"` | - | 1 | - | - | **1** |
@@ -543,7 +563,6 @@ References by type: 0 connectors, 115 content items, 5 ASIM parsers, 1 other par
 | `EventID in "1,4688"` | - | 1 | - | - | **1** |
 | `EventID == "501"` | - | 1 | - | - | **1** |
 | `EventID in "4698,4702"` | - | 1 | - | - | **1** |
-| `EventID in "4648,4673,4688,8002"` | - | 1 | - | - | **1** |
 | `EventID in "4727,4728,4731,4732,4754,4756"` | - | 1 | - | - | **1** |
 | `EventID == "4648"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4688"` | - | 1 | - | - | **1** |
@@ -559,43 +578,48 @@ References by type: 0 connectors, 115 content items, 5 ASIM parsers, 1 other par
 | `EventID in "4624,4720,4722,4724,4725,4726,7036"` | - | 1 | - | - | **1** |
 | `EventID in "4723,4724"` | - | 1 | - | - | **1** |
 | `EventID in "20000,20002,20012,9208,9211,9212"` | - | 1 | - | - | **1** |
+| `EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"` | - | 1 | - | - | **1** |
 | `EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"` | - | 1 | - | - | **1** |
 | `EventID in "4656,4657,4658,4660,4661,4663,4664,4670,4671,4673,4674,4690,4691,4698,4699,4700,4701,4702,4715,4719,4817,4902,4904,4905,4906,4907,4908,4912,4985,5031,5039,5051,5140,5142,5143,5144,5148,5149,5150,5151,5154,5155,5156,5157,5158,5159,5168,5888,5889,5890"` | - | 1 | - | - | **1** |
 | `EventID == "4663"` | - | - | 1 | - | **1** |
 | `EventID == "4689"` | - | - | 1 | - | **1** |
-| `EventID in "4657,4663"` | - | - | 1 | - | **1** |
 | `EventID in "4744,4748,4749,4753,4759,4763"` | - | - | 1 | - | **1** |
-| **Total** | **0** | **115** | **5** | **1** | **121** |
+| **Total** | **1** | **117** | **4** | **1** | **123** |
 
 ### EventID
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `4688` | - | 44 | 1 | - | **45** |
-| `4624` | - | 21 | - | - | **21** |
-| `4625` | - | 18 | - | - | **18** |
+| `4688` | - | 46 | 1 | - | **47** |
+| `4624` | - | 22 | - | - | **22** |
+| `4625` | - | 19 | - | - | **19** |
+| `9211` | 1 | 8 | - | 1 | **10** |
+| `9212` | 1 | 8 | - | 1 | **10** |
 | `9208` | - | 8 | - | 1 | **9** |
-| `9211` | - | 8 | - | 1 | **9** |
-| `9212` | - | 8 | - | 1 | **9** |
-| `4663` | - | 5 | 2 | - | **7** |
-| `4657` | - | 6 | 1 | - | **7** |
-| `4720` | - | 6 | - | - | **6** |
+| `4720` | - | 7 | - | - | **7** |
+| `4663` | - | 5 | 1 | - | **6** |
+| `4657` | - | 6 | - | - | **6** |
+| `4648` | - | 5 | - | - | **5** |
 | `4656` | - | 5 | - | - | **5** |
 | `4732` | - | 5 | - | - | **5** |
-| `4648` | - | 4 | - | - | **4** |
 | `5136` | - | 4 | - | - | **4** |
 | `5145` | - | 4 | - | - | **4** |
 | `1` | - | 4 | - | - | **4** |
 | `4728` | - | 4 | - | - | **4** |
 | `4756` | - | 4 | - | - | **4** |
 | `4726` | - | 4 | - | - | **4** |
+| `4768` | - | 3 | - | - | **3** |
 | `4698` | - | 3 | - | - | **3** |
 | `4702` | - | 3 | - | - | **3** |
+| `1102` | - | 3 | - | - | **3** |
+| `4673` | - | 3 | - | - | **3** |
 | `4740` | - | 3 | - | - | **3** |
+| `4776` | - | 3 | - | - | **3** |
+| `4724` | - | 3 | - | - | **3** |
+| `4719` | - | 3 | - | - | **3** |
 | `4634` | - | 2 | - | - | **2** |
 | `4647` | - | 2 | - | - | **2** |
 | `4675` | - | 2 | - | - | **2** |
-| `4768` | - | 2 | - | - | **2** |
 | `5143` | - | 2 | - | - | **2** |
 | `20002` | - | 2 | - | - | **2** |
 | `20012` | - | 2 | - | - | **2** |
@@ -604,16 +628,13 @@ References by type: 0 connectors, 115 content items, 5 ASIM parsers, 1 other par
 | `4699` | - | 2 | - | - | **2** |
 | `4700` | - | 2 | - | - | **2** |
 | `4701` | - | 2 | - | - | **2** |
-| `1102` | - | 2 | - | - | **2** |
-| `4673` | - | 2 | - | - | **2** |
+| `8002` | - | 2 | - | - | **2** |
 | `4754` | - | 2 | - | - | **2** |
 | `4769` | - | 2 | - | - | **2** |
-| `4776` | - | 2 | - | - | **2** |
 | `4985` | - | 2 | - | - | **2** |
-| `4724` | - | 2 | - | - | **2** |
+| `4723` | - | 2 | - | - | **2** |
 | `4660` | - | 2 | - | - | **2** |
 | `4670` | - | 2 | - | - | **2** |
-| `4719` | - | 2 | - | - | **2** |
 | `4907` | - | 2 | - | - | **2** |
 | `5058` | - | 1 | - | - | **1** |
 | `5059` | - | 1 | - | - | **1** |
@@ -621,7 +642,6 @@ References by type: 0 connectors, 115 content items, 5 ASIM parsers, 1 other par
 | `412` | - | 1 | - | - | **1** |
 | `4697` | - | 1 | - | - | **1** |
 | `4662` | - | 1 | - | - | **1** |
-| `8002` | - | 1 | - | - | **1** |
 | `4727` | - | 1 | - | - | **1** |
 | `4731` | - | 1 | - | - | **1** |
 | `4729` | - | 1 | - | - | **1** |
@@ -640,8 +660,8 @@ References by type: 0 connectors, 115 content items, 5 ASIM parsers, 1 other par
 | `4722` | - | 1 | - | - | **1** |
 | `4725` | - | 1 | - | - | **1** |
 | `7036` | - | 1 | - | - | **1** |
-| `4723` | - | 1 | - | - | **1** |
 | `20000` | - | 1 | - | - | **1** |
+| `4771` | - | 1 | - | - | **1** |
 | `1100` | - | 1 | - | - | **1** |
 | `1104` | - | 1 | - | - | **1** |
 | `1240` | - | 1 | - | - | **1** |

@@ -31,11 +31,11 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
 
 ---
 

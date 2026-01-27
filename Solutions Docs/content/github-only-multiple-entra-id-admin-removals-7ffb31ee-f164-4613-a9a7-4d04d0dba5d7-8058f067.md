@@ -21,9 +21,9 @@ Looks for multiple users that had their admin role removed by a single user with
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Remove eligible member from role.,Remove member from role."` | ✓ | ✗ |
 
 ---
 

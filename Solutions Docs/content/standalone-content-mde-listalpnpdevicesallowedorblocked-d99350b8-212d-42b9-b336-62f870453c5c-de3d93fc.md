@@ -20,9 +20,9 @@ List all PnP Devices that have been allowed or blocked
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "PnpDeviceAllowed,PnpDeviceBlocked"` | ✓ | ✗ |
 
 ---
 

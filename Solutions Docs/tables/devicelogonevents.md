@@ -17,13 +17,14 @@ Sign-ins and other authentication events on devices
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicelogonevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicelogonevents-table) |
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [FalconFriday](../solutions/falconfriday.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
@@ -37,7 +38,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (29)
+## Content Items Using This Table (32)
 
 ### Analytic Rules (3)
 
@@ -49,7 +50,7 @@ This table is ingested by the following connectors:
 | [Password Spraying](../content/falconfriday-password-spraying-e00f72ab-fea1-4a31-9ecc-eea6397cd38d-9fc40186.md) |  |
 | [Remote Desktop Protocol - SharpRDP](../content/falconfriday-remote-desktop-protocol-sharprdp-cc46e76c-0d04-40b0-9c8b-929aa40513e7-7ea028f9.md) |  |
 
-### Hunting Queries (19)
+### Hunting Queries (20)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -84,8 +85,9 @@ This table is ingested by the following connectors:
 | [insider-threat-detection-queries (15)](../content/github-only-insider-threat-detection-queries-15-659e686d-850e-4240-a339-b24928f95e90-614419df.md) |  |
 | [insider-threat-detection-queries (19)](../content/github-only-insider-threat-detection-queries-19-a358a812-0e1b-4cbb-a91c-0bb1dbd3ea13-e876eef3.md) |  |
 | [localAdminAccountLogon](../content/github-only-localadminaccountlogon-2211b57b-7d13-435d-89a9-40f333249605-83bc8635.md) |  |
+| [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
 
-### Workbooks (7)
+### Workbooks (9)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -99,6 +101,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
 
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 
 | Content Item | Selection Criteria |
@@ -110,6 +118,7 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |

@@ -25,9 +25,9 @@ Identifies mass download (in the last hour) of files from SharePoint sites confi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "SharePoint"` | ✓ | ✗ |
 
 ---
 

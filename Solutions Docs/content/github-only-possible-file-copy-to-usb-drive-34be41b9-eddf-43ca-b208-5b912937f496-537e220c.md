@@ -21,10 +21,10 @@ This query searches for file copies which occur within a period of time (by defa
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "PnpDeviceConnected"` | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
 
 ---
 

@@ -27,14 +27,14 @@ This table is used by the following solutions:
 - [Microsoft 365](../solutions/microsoft-365.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Standalone Content](../solutions/standalone-content.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ---
 
-## Content Items Using This Table (24)
+## Content Items Using This Table (25)
 
 ### Analytic Rules (1)
 
@@ -53,7 +53,7 @@ This table is used by the following solutions:
 | [Permutations on logon attempts by UserPrincipalNames indicating potential brute force](../content/standalone-content-permutations-on-logon-attempts-by-userprincipalnames-indicating-potential-brute-force-472e83d6-ccec-47b8-b1cd-75500f936981-b5d1e233.md) |  |
 | [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) |  |
 
-### Workbooks (21)
+### Workbooks (22)
 
 **In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
 
@@ -100,17 +100,17 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
@@ -125,6 +125,7 @@ This table is used by the following solutions:
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [ExchangeOnline](../content/github-only-exchangeonline-663577e1.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [Office365](../content/github-only-office365-fa05d9ea.md) |  |
 | [SharePointAndOneDrive](../content/github-only-sharepointandonedrive-a82e2f82.md) |  |
 | [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |

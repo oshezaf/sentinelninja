@@ -25,10 +25,10 @@ This query searches for changes to the local administrators group. Blogpost: htt
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "UserAccountAddedToLocalGroup"`<br>`ActionType contains "UserAccountCreated"`<br>`ActionType contains "UserAccountModified"` | ✓ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
 
 ---
 

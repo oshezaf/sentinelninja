@@ -20,10 +20,10 @@ Query for links opened from mail apps - if a detection occurred right afterwards
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ |
 
 ---
 

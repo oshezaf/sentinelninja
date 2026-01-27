@@ -46,15 +46,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (159)
+## Content Items Using This Table (162)
 
-### Analytic Rules (19)
+### Analytic Rules (20)
 
-**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
+**In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):** `ActionType == "InboundConnectionAccepted"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md) |  |
+| Content Item |
+|:-------------|
+| [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md) |
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 
@@ -71,23 +71,23 @@ This table is ingested by the following connectors:
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md) |  |
 | [Regsvr32 Rundll32 Image Loads Abnormal Extension](../content/microsoft-defender-xdr-regsvr32-rundll32-image-loads-abnormal-extension-36fbd4e7-5630-4414-aa42-702a7fdded21-4cc759a2.md) |  |
 | [Regsvr32 Rundll32 with Anomalous Parent Process](../content/microsoft-defender-xdr-regsvr32-rundll32-with-anomalous-parent-process-2624fc55-0998-4897-bb48-1c6422befce4-d1e3cdd5.md) |  |
-| [SUNBURST network beacons](../content/microsoft-defender-xdr-sunburst-network-beacons-ce1e7025-866c-41f3-9b08-ec170e05e73e-b0c0854f.md) |  |
+| [SUNBURST network beacons](../content/microsoft-defender-xdr-sunburst-network-beacons-ce1e7025-866c-41f3-9b08-ec170e05e73e-b0c0854f.md) | `ActionType == "ConnectionSuccess"` |
 
-**In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
+**In solution [Threat Intelligence](../solutions/threat-intelligence.md):** `ActionType !has "ConnectionFailed"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TI Map Domain Entity to DeviceNetworkEvents](../content/threat-intelligence-ti-map-domain-entity-to-devicenetworkevents-c308b2f3-eebe-4a20-905c-cb8293b062db-1b8b91ec.md) |  |
-| [TI Map IP Entity to DeviceNetworkEvents](../content/threat-intelligence-ti-map-ip-entity-to-devicenetworkevents-b2df4979-d34a-48b3-a7d9-f473a4bf8058-1cf5dff4.md) |  |
-| [TI Map URL Entity to DeviceNetworkEvents](../content/threat-intelligence-ti-map-url-entity-to-devicenetworkevents-6ddbd892-a9be-47be-bab7-521241695bd6-16a87b1d.md) |  |
+| Content Item |
+|:-------------|
+| [TI Map Domain Entity to DeviceNetworkEvents](../content/threat-intelligence-ti-map-domain-entity-to-devicenetworkevents-c308b2f3-eebe-4a20-905c-cb8293b062db-1b8b91ec.md) |
+| [TI Map IP Entity to DeviceNetworkEvents](../content/threat-intelligence-ti-map-ip-entity-to-devicenetworkevents-b2df4979-d34a-48b3-a7d9-f473a4bf8058-1cf5dff4.md) |
+| [TI Map URL Entity to DeviceNetworkEvents](../content/threat-intelligence-ti-map-url-entity-to-devicenetworkevents-6ddbd892-a9be-47be-bab7-521241695bd6-16a87b1d.md) |
 
-**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):** `ActionType !has "ConnectionFailed"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TI Map Domain Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-devicenetworkevents-1546f3b3-de8a-4e62-bfea-815422154981-be5129ac.md) |  |
-| [TI Map IP Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-devicenetworkevents-2474343c-9135-42ec-9c40-a1bace43da5c-3e3eda3e.md) |  |
-| [TI Map URL Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-url-entity-to-devicenetworkevents-4f0356b2-d344-4c19-9375-31b9575d80cb-edd30654.md) |  |
+| Content Item |
+|:-------------|
+| [TI Map Domain Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-devicenetworkevents-1546f3b3-de8a-4e62-bfea-815422154981-be5129ac.md) |
+| [TI Map IP Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-devicenetworkevents-2474343c-9135-42ec-9c40-a1bace43da5c-3e3eda3e.md) |
+| [TI Map URL Entity to DeviceNetworkEvents](../content/threat-intelligence-new-ti-map-url-entity-to-devicenetworkevents-4f0356b2-d344-4c19-9375-31b9575d80cb-edd30654.md) |
 
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 
@@ -100,11 +100,12 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
+| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
 | [IP address of Windows host encoded in web request](../content/standalone-content-ip-address-of-windows-host-encoded-in-web-request-a4ce20ae-a2e4-4d50-b40d-d49f1353b6cc-f6bf2fcd.md) |  |
 | [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
 | [Star Blizzard C2 Domains August 2022](../content/standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md) |  |
 
-### Hunting Queries (130)
+### Hunting Queries (132)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -141,18 +142,18 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MDE_Networktrafficgoingtoport](../content/standalone-content-mde-networktrafficgoingtoport-a7ceb6dc-dd6a-4285-8c37-ae40463a1acf-e3f2bd57.md) |  |
 | [MDE_Networktrafficgoingtoport-DNS](../content/standalone-content-mde-networktrafficgoingtoport-dns-f678ea38-4b93-4816-a33d-0518164fe01f-0b14dab3.md) |  |
-| [MDE_SmartScreenCheck](../content/standalone-content-mde-smartscreencheck-dde77b9b-799c-44c8-adfa-45007f312487-10770797.md) |  |
+| [MDE_SmartScreenCheck](../content/standalone-content-mde-smartscreencheck-dde77b9b-799c-44c8-adfa-45007f312487-10770797.md) | `ActionType in "ExploitGuardNetworkProtectionBlocked,SmartScreenUrlWarning"` |
 
 **GitHub Only:**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
-| [CVE-2022-22965 Network Activity](../content/github-only-cve-2022-22965-network-activity-98b496c6-da2e-4b03-8e38-c038b2e3062d-1a14d783.md) |  |
+| [CVE-2022-22965 Network Activity](../content/github-only-cve-2022-22965-network-activity-98b496c6-da2e-4b03-8e38-c038b2e3062d-1a14d783.md) | `ActionType == "NetworkSignatureInspected"` |
 | [Connection to Rare DNS Hosts](../content/github-only-connection-to-rare-dns-hosts-402b16b9-b41d-477a-9e24-78fc1acdd051-df8eea59.md) |  |
-| [Connectivity Failures by Device](../content/github-only-connectivity-failures-by-device-d2097370-9cfb-4f52-ab1b-8cb07a033d44-b558d71d.md) |  |
-| [Connectivity Failures by Domain](../content/github-only-connectivity-failures-by-domain-a4f7b0f0-93ad-47c9-bcce-dc08d8d04818-85ff7bc9.md) |  |
-| [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) |  |
+| [Connectivity Failures by Device](../content/github-only-connectivity-failures-by-device-d2097370-9cfb-4f52-ab1b-8cb07a033d44-b558d71d.md) | `ActionType == "ConnectionFailed"` |
+| [Connectivity Failures by Domain](../content/github-only-connectivity-failures-by-domain-a4f7b0f0-93ad-47c9-bcce-dc08d8d04818-85ff7bc9.md) | `ActionType == "ConnectionFailed"` |
+| [DNSPattern [Nobelium]](../content/github-only-dnspattern-[nobelium]-6c87bdb8-a44e-452a-b782-542640d985e3-79e5127f.md) | `ActionType in "DNS query,DnsQueryResponse"` |
 | [Defender for Endpoint Telemetry](../content/github-only-defender-for-endpoint-telemetry-676912f9-0e47-4599-889a-7b90a3542382-0dc352d3.md) |  |
 | [Detect Azure RemoteIP](../content/github-only-detect-azure-remoteip-a883cf6b-52dd-480a-8581-4e5774fc9002-22a2d883.md) |  |
 | [DetectTorrentUse](../content/github-only-detecttorrentuse-4011047d-6a0b-4ef0-bf62-d3eda0784e15-6cbb16d4.md) |  |
@@ -161,10 +162,11 @@ This table is ingested by the following connectors:
 | [Discovering potentially tampered devices [Nobelium]](../content/github-only-discovering-potentially-tampered-devices-[nobelium]-ba850be4-2f02-40fb-834d-d0a9ac0672d3-378fbd79.md) |  |
 | [DofoilNameCoinServerTraffic](../content/github-only-dofoilnamecoinservertraffic-4c62c572-8c8b-4a67-bde3-b94e5f09ce99-a544a38a.md) |  |
 | [Download of New File Using Curl](../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.md) |  |
-| [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) |  |
+| [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) | `ActionType in "DNS query,DnsQueryResponse"` |
 | [Excel file download domain pattern](../content/github-only-excel-file-download-domain-pattern-1dd47f50-d42d-4e2f-9c2b-6e6c22147916-ed8cb6fe.md) |  |
-| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) |  |
+| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) | `ActionType in "FileCreated,FileModified"` |
 | [File footprint (1)](../content/github-only-file-footprint-1-1f80f1cf-97e1-4fb8-ad5a-e573fac7b9e3-599349e2.md) |  |
+| [Firewall Policy Design Assistant](../content/github-only-firewall-policy-design-assistant-7323d9ca-ebf9-42da-a57b-015969fbd660-4982c548.md) | `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"` |
 | [Flash-CVE-2018-4848](../content/github-only-flash-cve-2018-4848-8e32bc35-72e6-4bc9-b3bb-2ee346c8acf0-300d8c2d.md) |  |
 | [KNOTWEED-Domain IOCs](../content/github-only-knotweed-domain-iocs-db6fe14a-cbe9-4d01-bbef-60b0f1a6624b-9eae0116.md) |  |
 | [KNOTWEED-Downloading new file using Curl](../content/github-only-knotweed-downloading-new-file-using-curl-fac7874e-00de-4509-85f2-9aa02ea9887f-94273129.md) |  |
@@ -237,7 +239,7 @@ This table is ingested by the following connectors:
 | [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) |  |
 | [RunDLL Suspicious Network Connection](../content/github-only-rundll-suspicious-network-connection-d0831db3-009f-40bb-9f82-c66b1f9674cd-46ab6288.md) |  |
 | [SMB shares discovery](../content/github-only-smb-shares-discovery-a3dc6ecb-d910-467b-844e-a3b87744c4c9-a86d4bee.md) |  |
-| [SolarWinds -CVE-2021-35211](../content/github-only-solarwinds-cve-2021-35211-ff01fb94-9b27-48b9-a304-2e86108b5ca4-b19d7fb2.md) |  |
+| [SolarWinds -CVE-2021-35211](../content/github-only-solarwinds-cve-2021-35211-ff01fb94-9b27-48b9-a304-2e86108b5ca4-b19d7fb2.md) | `ActionType == "ConnectionSuccess"` |
 | [Star Blizzard-Domain IOCs](../content/github-only-star-blizzard-domain-iocs-4b14590a-a1f0-4756-9f3d-baafa696e051-d7385a05.md) |  |
 | [Tor](../content/github-only-tor-a0b19966-3b4d-45de-969c-ee5f1ef8c18a-d936cea1.md) |  |
 | [c2-bluekeep](../content/github-only-c2-bluekeep-6b2d0b6e-ec4a-4d71-b1cc-dbc470d2b99e-c4398705.md) |  |
@@ -246,19 +248,20 @@ This table is ingested by the following connectors:
 | [cve-2019-0808-c2](../content/github-only-cve-2019-0808-c2-0be1295f-b417-477b-95d1-82ce7c43fa03-094fa25a.md) |  |
 | [detect-bluekeep-exploitation-attempts](../content/github-only-detect-bluekeep-exploitation-attempts-e380a30d-03ff-4d20-b2d5-d0683033d813-a1070ea7.md) |  |
 | [detect-cyzfc-activity (1)](../content/github-only-detect-cyzfc-activity-1-c28b23e0-0d6d-45a1-ab81-8268fdff0272-0d76d71e.md) |  |
-| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) |  |
+| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) | `ActionType == "InboundConnectionAccepted"` |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.md) |  |
 | [detect-mailsniper](../content/github-only-detect-mailsniper-726085be-fa36-4b0f-991a-b5bc8fe53d87-3a39373b.md) |  |
 | [detect-steganography-exfiltration](../content/github-only-detect-steganography-exfiltration-e0003bf6-b5f2-4dd1-a130-8651eb0b9f04-5c9b5fd7.md) |  |
-| [detect-suspicious-rdp-connections](../content/github-only-detect-suspicious-rdp-connections-f2458594-5671-493d-9c08-aee4bf783a1d-e5b62958.md) |  |
+| [detect-suspicious-rdp-connections](../content/github-only-detect-suspicious-rdp-connections-f2458594-5671-493d-9c08-aee4bf783a1d-e5b62958.md) | `ActionType == "ConnectionSuccess"` |
 | [insider-threat-detection-queries (11)](../content/github-only-insider-threat-detection-queries-11-de9a2aa6-ad31-4dd1-871a-2577e47ef586-2f3cc264.md) |  |
 | [insider-threat-detection-queries (5)](../content/github-only-insider-threat-detection-queries-5-48b0ff4e-385c-4362-a184-612834a0b8c6-635622db.md) |  |
 | [insider-threat-detection-queries (6)](../content/github-only-insider-threat-detection-queries-6-eb5bf874-a707-4997-8d66-433cbf8b2f26-48ce8e26.md) |  |
 | [insider-threat-detection-queries (9)](../content/github-only-insider-threat-detection-queries-9-b2ac5ab0-52b0-4be5-9f3f-9d19b80bcc9e-ebba1769.md) |  |
 | [oceanlotus-apt32-network](../content/github-only-oceanlotus-apt32-network-8e2c33f5-0c00-4246-b10b-9fb43da56365-c439e0f9.md) |  |
 | [printnightmare-cve-2021-1675 usage detection (1)](../content/github-only-printnightmare-cve-2021-1675-usage-detection-1-ec1e131a-79cb-4f5c-b5e6-3edc5574ac68-f011ba2f.md) |  |
+| [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
 | [recon-with-rundll](../content/github-only-recon-with-rundll-c720f607-7f7b-41c8-bed9-2d9a240d965c-97ed53b5.md) |  |
 | [regsvr32-rundll32-image-loads-abnormal-extension](../content/github-only-regsvr32-rundll32-image-loads-abnormal-extension-f24f6403-cba0-4f3c-9f88-28782b9ea39a-555df071.md) |  |
 | [regsvr32-rundll32-with-anomalous-parent-process](../content/github-only-regsvr32-rundll32-with-anomalous-parent-process-bef2bd1b-885a-40f4-b48f-6f5564cd81f3-e7a12a36.md) |  |
@@ -274,11 +277,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) |  |
 
-**In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
+**In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):** `ActionType == "ConnectionSuccess"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |  |
+| Content Item |
+|:-------------|
+| [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -315,11 +318,47 @@ This table is ingested by the following connectors:
 
 ## Parsers Using This Table (1)
 
-### ASIM Parsers (1)
+### ASIM Parsers (1) — Selection Criteria: `ActionType == "ConnectionFailed"`
 
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimNetworkSessionMicrosoft365Defender](../asim/asimnetworksessionmicrosoft365defender.md) | NetworkSession | M365 Defender for Endpoint |  |
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimNetworkSessionMicrosoft365Defender](../asim/asimnetworksessionmicrosoft365defender.md) | NetworkSession | M365 Defender for Endpoint |
+
+## Selection Criteria Summary (9 criteria, 21 total references)
+
+References by type: 0 connectors, 20 content items, 1 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActionType !has "ConnectionFailed"` | - | 6 | - | - | **6** |
+| `ActionType == "ConnectionSuccess"` | - | 4 | - | - | **4** |
+| `ActionType == "ConnectionFailed"` | - | 2 | 1 | - | **3** |
+| `ActionType == "InboundConnectionAccepted"` | - | 2 | - | - | **2** |
+| `ActionType in "DNS query,DnsQueryResponse"` | - | 2 | - | - | **2** |
+| `ActionType in "ExploitGuardNetworkProtectionBlocked,SmartScreenUrlWarning"` | - | 1 | - | - | **1** |
+| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
+| `ActionType == "NetworkSignatureInspected"` | - | 1 | - | - | **1** |
+| `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **20** | **1** | **0** | **21** |
+
+### ActionType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!has ConnectionFailed` | - | 6 | - | - | **6** |
+| `ConnectionSuccess` | - | 5 | - | - | **5** |
+| `InboundConnectionAccepted` | - | 3 | - | - | **3** |
+| `ConnectionFailed` | - | 2 | 1 | - | **3** |
+| `DNS query` | - | 2 | - | - | **2** |
+| `DnsQueryResponse` | - | 2 | - | - | **2** |
+| `ExploitGuardNetworkProtectionBlocked` | - | 1 | - | - | **1** |
+| `SmartScreenUrlWarning` | - | 1 | - | - | **1** |
+| `FileCreated` | - | 1 | - | - | **1** |
+| `FileModified` | - | 1 | - | - | **1** |
+| `NetworkSignatureInspected` | - | 1 | - | - | **1** |
+| `ConnectionFound` | - | 1 | - | - | **1** |
+| `ConnectionRequest` | - | 1 | - | - | **1** |
+| `ListeningConnectionCreated` | - | 1 | - | - | **1** |
 
 ---
 

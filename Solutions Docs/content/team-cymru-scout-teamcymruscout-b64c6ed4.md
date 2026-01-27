@@ -42,7 +42,6 @@ This content item queries data from the following tables:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ |
-| [`Alert`](../tables/alert.md) |  | ✓ | ✗ |
 | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) |  | — | — |
 | [`AsimParsersData`](../tables/asimparsersdata.md) |  | — | — |
 | [`Audits_Data_CL`](../tables/audits-data-cl.md) |  | — | — |
@@ -82,7 +81,6 @@ This content item queries data from the following tables:
 | [`OktaV2_CL`](../tables/oktav2-cl.md) |  | — | — |
 | [`Okta_CL`](../tables/okta-cl.md) |  | — | — |
 | [`Open_Ports_Data_CL`](../tables/open-ports-data-cl.md) |  | — | — |
-| [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
 | [`PDNS_Data_CL`](../tables/pdns-data-cl.md) |  | — | — |
 | [`PostgreSQL_CL`](../tables/postgresql-cl.md) |  | — | — |
 | [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) |  | — | — |

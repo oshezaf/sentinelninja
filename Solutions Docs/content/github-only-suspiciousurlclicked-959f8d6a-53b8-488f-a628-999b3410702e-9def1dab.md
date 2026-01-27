@@ -21,11 +21,11 @@ This query correlates Microsoft Defender for Office 365 signals and Microsoft En
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
-| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ |
+| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
 
 ---
 

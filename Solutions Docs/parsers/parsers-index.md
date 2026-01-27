@@ -583,7 +583,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
 | [SalesforceServiceCloud](salesforceservicecloud.md) | 📦 [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) | SalesforceServiceCloudV2_CL, SalesforceServiceCloud_CL |
-| [SentinelOne](sentinelone.md) | 📦 [SentinelOne](../solutions/sentinelone.md) | AlertInfo, SentinelOneActivities_CL, ... |
+| [SentinelOne](sentinelone.md) | 📦 [SentinelOne](../solutions/sentinelone.md) | SentinelOneActivities_CL, SentinelOneAgents_CL, ... |
 | [SlackAudit](slackaudit.md) | 📦 [SlackAudit](../solutions/slackaudit.md) | SlackAuditNativePoller_CL, SlackAuditV2_CL, ... |
 | [Snowflake](snowflake.md) | 📦 [Snowflake](../solutions/snowflake.md) | SnowflakeLoad_CL, SnowflakeLogin_CL, ... |
 | [SophosEPEvent](sophosepevent.md) | 📦 [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) | — |

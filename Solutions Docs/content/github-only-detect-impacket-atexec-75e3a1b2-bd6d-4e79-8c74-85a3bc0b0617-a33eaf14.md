@@ -22,10 +22,11 @@ This query looks for signs of impacket atexec module. Should work with others us
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
-| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | ✓ | ✗ |
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ |
 
 ---
 

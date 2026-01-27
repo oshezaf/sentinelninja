@@ -89,12 +89,6 @@ This table is ingested by the following connectors:
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.storage/storageaccounts`
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -102,6 +96,12 @@ This table collects data from the following Azure resource types:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimFileEventAzureBlobStorage](../asim/asimfileeventazureblobstorage.md) | FileEvent | Microsoft Azure Blob Storage |  |
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.storage/storageaccounts`
 
 ---
 

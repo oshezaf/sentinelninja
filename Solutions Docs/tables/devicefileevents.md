@@ -47,15 +47,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (121)
+## Content Items Using This Table (124)
 
-### Analytic Rules (20)
+### Analytic Rules (21)
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [ASR Bypassing Writing Executable Content](../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.md) |  |
+| [ASR Bypassing Writing Executable Content](../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.md) | `ActionType == "FileRenamed"` |
 | [Hijack Execution Flow - DLL Side-Loading](../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.md) |  |
 | [Ingress Tool Transfer - Certutil](../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.md) |  |
 
@@ -106,12 +106,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Azure VM Run Command operations executing a unique PowerShell script](../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.md) |  |
 | [Dev-0530 File Extension Rename](../content/standalone-content-dev-0530-file-extension-rename-d82eb796-d1eb-43c8-a813-325ce3417cef-f293cb3e.md) |  |
+| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
 | [Mass Download & copy to USB device by single user](../content/standalone-content-mass-download-&-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.md) |  |
 | [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
-| [PE file dropped in Color Profile Folder](../content/standalone-content-pe-file-dropped-in-color-profile-folder-f68a5046-b7eb-4f69-9519-1e99708bb9e0-99c9d950.md) |  |
+| [PE file dropped in Color Profile Folder](../content/standalone-content-pe-file-dropped-in-color-profile-folder-f68a5046-b7eb-4f69-9519-1e99708bb9e0-99c9d950.md) | `ActionType == "FileCreated"` |
 | [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md) |  |
 
-### Hunting Queries (90)
+### Hunting Queries (92)
 
 **In solution [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md):**
 
@@ -125,20 +126,20 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Dropping Payload via certutil](../content/microsoft-defender-xdr-dropping-payload-via-certutil-4d11f63f-5b64-416e-8d77-266e4c6d382e-5c641ea8.md) |  |
 | [Files Copied to USB Drives](../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.md) |  |
-| [PrintNightmare CVE-2021-1675 usage Detection](../content/microsoft-defender-xdr-printnightmare-cve-2021-1675-usage-detection-8f404352-c4ff-44d1-8d70-c50ee2fad8f8-b52df162.md) |  |
+| [PrintNightmare CVE-2021-1675 usage Detection](../content/microsoft-defender-xdr-printnightmare-cve-2021-1675-usage-detection-8f404352-c4ff-44d1-8d70-c50ee2fad8f8-b52df162.md) | `ActionType == "FileCreated"` |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.md) |  |
 | [Remote File Creation with PsExec](../content/microsoft-defender-xdr-remote-file-creation-with-psexec-a7214393-9da7-432e-9b41-fb02b4f740bd-db6b196f.md) |  |
 | [Robbinhood Driver](../content/microsoft-defender-xdr-robbinhood-driver-4713d763-122d-419c-bf6f-bdef111cd8e2-6f03bc00.md) |  |
-| [Suspicious DLLs in spool Folder](../content/microsoft-defender-xdr-suspicious-dlls-in-spool-folder-0b5b076b-9a1c-440c-a11f-8471a75f46fd-160d1915.md) |  |
+| [Suspicious DLLs in spool Folder](../content/microsoft-defender-xdr-suspicious-dlls-in-spool-folder-0b5b076b-9a1c-440c-a11f-8471a75f46fd-160d1915.md) | `ActionType in "FileCreated,FileRenamed"` |
 | [Suspicious Files in spool Folder](../content/microsoft-defender-xdr-suspicious-files-in-spool-folder-2d16b6fc-eb63-491c-a2c2-1160e2e41dcf-ac7a0cd6.md) |  |
-| [Windows Print Spooler Service Suspicious File Creation](../content/microsoft-defender-xdr-windows-print-spooler-service-suspicious-file-creation-daa347a4-8251-43a7-9730-32f22aa741ab-21c8edf9.md) |  |
+| [Windows Print Spooler Service Suspicious File Creation](../content/microsoft-defender-xdr-windows-print-spooler-service-suspicious-file-creation-daa347a4-8251-43a7-9730-32f22aa741ab-21c8edf9.md) | `ActionType == "FileCreated"` |
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Exchange IIS Worker Dropping Webshells](../content/web-shells-threat-protection-exchange-iis-worker-dropping-webshells-42e7df5b-80f6-49a5-946a-08026ec24807-918c2a7e.md) |  |
-| [Possible webshell drop](../content/web-shells-threat-protection-possible-webshell-drop-8f2a256f-c9f1-4f0a-941a-a5a131d4bf3b-5ddc946f.md) |  |
+| [Possible webshell drop](../content/web-shells-threat-protection-possible-webshell-drop-8f2a256f-c9f1-4f0a-941a-a5a131d4bf3b-5ddc946f.md) | `ActionType in "FileCreated,FileModified,FileRenamed"` |
 | [UMWorkerProcess Creating Webshell](../content/web-shells-threat-protection-umworkerprocess-creating-webshell-60d15bd4-1fad-4a70-bc3b-094dc1c5e554-5e3339db.md) |  |
 
 **Standalone Content:**
@@ -158,11 +159,12 @@ This table is ingested by the following connectors:
 | [Abuse.ch Recent Threat Feed](../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.md) |  |
 | [Abuse.ch Recent Threat Feed (1)](../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.md) |  |
 | [Abusing settingcontent-ms](../content/github-only-abusing-settingcontent-ms-07a17371-bea3-41e5-91d1-99728cd44955-bb277017.md) |  |
+| [Accessibility Features](../content/github-only-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-dbe14580.md) |  |
 | [AcroRd-Exploits](../content/github-only-acrord-exploits-c87df1a7-fa54-4730-bc90-cbc1f8ac01aa-c43b739b.md) |  |
 | [Azure VM Run Command linked with MDE](../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.md) |  |
-| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) | `ActionType == "PowerShellCommand"` |
 | [Browser Extension Enumeration via DeviceFileEvents](../content/github-only-browser-extension-enumeration-via-devicefileevents-ede058ab-97a8-4494-aa76-b7f5f6d78cba-a2f66fb1.md) |  |
-| [Data copied to other location than C drive](../content/github-only-data-copied-to-other-location-than-c-drive-8899867b-0fd8-4cfd-b6f0-0f04ef37142c-d7d474ee.md) |  |
+| [Data copied to other location than C drive](../content/github-only-data-copied-to-other-location-than-c-drive-8899867b-0fd8-4cfd-b6f0-0f04ef37142c-d7d474ee.md) | `ActionType == "FileCreated"` |
 | [Doc attachment with link to download](../content/github-only-doc-attachment-with-link-to-download-cf259a7a-801a-435a-af3f-3ef998561145-16155f72.md) |  |
 | [Dropbox downloads linked from other site](../content/github-only-dropbox-downloads-linked-from-other-site-de93670b-a1db-4c8c-80aa-5b3146428631-d523e10d.md) |  |
 | [Dropping payload via certutil](../content/github-only-dropping-payload-via-certutil-f5ff5b00-a90e-40b8-b241-9427a8ec5189-47bd6693.md) |  |
@@ -173,7 +175,7 @@ This table is ingested by the following connectors:
 | [HTA Startup Persistence](../content/github-only-hta-startup-persistence-10d275ce-bb52-41b7-b67e-05b974ed1179-9f00709f.md) |  |
 | [IcedId Delivery](../content/github-only-icedid-delivery-b2f3ee1c-f379-465c-a339-412ecf3b1bcb-39a15c94.md) |  |
 | [Identify EUROPIUM IOCs](../content/github-only-identify-europium-iocs-f33abf94-6759-4820-9973-51d2a41749a4-cb611a2a.md) |  |
-| [KNOTWEED-PE File Dropped in Color Profile Folder](../content/github-only-knotweed-pe-file-dropped-in-color-profile-folder-cfdb2ccb-0eb3-47ed-9220-d56795906fdc-aa0e134d.md) |  |
+| [KNOTWEED-PE File Dropped in Color Profile Folder](../content/github-only-knotweed-pe-file-dropped-in-color-profile-folder-cfdb2ccb-0eb3-47ed-9220-d56795906fdc-aa0e134d.md) | `ActionType == "FileCreated"` |
 | [Malicious Excel Delivery](../content/github-only-malicious-excel-delivery-6fa3cf44-517f-4ce5-8727-948b0783b507-d9d7c2fd.md) |  |
 | [Malicious bat file](../content/github-only-malicious-bat-file-c903138d-b948-4975-a660-57495b3f8754-637f496c.md) |  |
 | [Network footprint (3)](../content/github-only-network-footprint-3-44b02f8c-d206-4e1a-9859-6aa06b80c346-72e9d427.md) |  |
@@ -184,11 +186,11 @@ This table is ingested by the following connectors:
 | [Ransomware hits healthcare - Vulnerable Gigabyte drivers](../content/github-only-ransomware-hits-healthcare-vulnerable-gigabyte-drivers-6eade795-7040-48eb-aae7-3f75bf7fad2e-0c90f3d2.md) |  |
 | [Rare-process-as-a-service](../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.md) |  |
 | [SmartScreen URL block ignored by user](../content/github-only-smartscreen-url-block-ignored-by-user-172e5bee-9298-4c59-bd2a-e96d87e8e6d8-a0038d18.md) |  |
-| [Storage File Seen on Endpoint](../content/github-only-storage-file-seen-on-endpoint-c7f03700-8bbe-4838-9e78-4852ef21609b-4254e436.md) |  |
-| [Suspicious DLLs in spool folder](../content/github-only-suspicious-dlls-in-spool-folder-cabb3aa3-cbfa-4359-9464-a3093d8b44f3-0d5ee674.md) |  |
+| [Storage File Seen on Endpoint](../content/github-only-storage-file-seen-on-endpoint-c7f03700-8bbe-4838-9e78-4852ef21609b-4254e436.md) | `ActionType == "FileCreated"` |
+| [Suspicious DLLs in spool folder](../content/github-only-suspicious-dlls-in-spool-folder-cabb3aa3-cbfa-4359-9464-a3093d8b44f3-0d5ee674.md) | `ActionType in "FileCreated,FileRenamed"` |
 | [Suspicious files in spool folder](../content/github-only-suspicious-files-in-spool-folder-664afd0d-c979-4970-affe-fc17f01276fb-73c9a13f.md) |  |
-| [Windows Anitivirus and EDR Elevation of Privilege Vulnerability](../content/github-only-windows-anitivirus-and-edr-elevation-of-privilege-vulnerability-a9eb9b06-4345-47f2-abe6-29f7200ddf83-a74f0b08.md) |  |
-| [Windows Spooler Service Suspicious File Creation](../content/github-only-windows-spooler-service-suspicious-file-creation-67309406-12ad-4591-84db-0cc331634d0c-34e2df90.md) |  |
+| [Windows Anitivirus and EDR Elevation of Privilege Vulnerability](../content/github-only-windows-anitivirus-and-edr-elevation-of-privilege-vulnerability-a9eb9b06-4345-47f2-abe6-29f7200ddf83-a74f0b08.md) | `ActionType == "FileCreated"` |
+| [Windows Spooler Service Suspicious File Creation](../content/github-only-windows-spooler-service-suspicious-file-creation-67309406-12ad-4591-84db-0cc331634d0c-34e2df90.md) | `ActionType == "FileCreated"` |
 | [apt unidentified nov 18 (1)](../content/github-only-apt-unidentified-nov-18-1-9bff1151-227c-4581-946d-643266c346a6-f1793d96.md) |  |
 | [check-for-shadowhammer-activity-implant](../content/github-only-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-da57d533.md) |  |
 | [cve-2019-0808-nufsys-file creation](../content/github-only-cve-2019-0808-nufsys-file-creation-447cdff3-2bfc-4f7a-b718-048d6d0ebd87-e9728721.md) |  |
@@ -216,10 +218,11 @@ This table is ingested by the following connectors:
 | [lsass-credential-dumping](../content/github-only-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-0a5fbccf.md) |  |
 | [oceanlotus-apt32-files](../content/github-only-oceanlotus-apt32-files-d868871c-bdd6-45e9-9e9d-e3c4521654a7-df57d4d6.md) |  |
 | [oracle-webLogic-executing-powershell](../content/github-only-oracle-weblogic-executing-powershell-2397f77e-e33e-4658-9a81-fe9dbafb810d-8e8bbd09.md) |  |
-| [printnightmare-cve-2021-1675 usage detection](../content/github-only-printnightmare-cve-2021-1675-usage-detection-ec1934d5-c591-4ff4-9968-079dba04d28e-3fae6a29.md) |  |
+| [printnightmare-cve-2021-1675 usage detection](../content/github-only-printnightmare-cve-2021-1675-usage-detection-ec1934d5-c591-4ff4-9968-079dba04d28e-3fae6a29.md) | `ActionType == "FileCreated"` |
 | [python-use-by-ransomware-macos](../content/github-only-python-use-by-ransomware-macos-8d52dce6-6143-44e9-8ff5-a62f2df742b2-dd2119b7.md) |  |
 | [qakbot-campaign-outlook](../content/github-only-qakbot-campaign-outlook-221ba640-3727-4b48-b30c-f5bb7398be7b-b74f08a4.md) |  |
 | [ransom-note-creation-macos](../content/github-only-ransom-note-creation-macos-fbe63fdf-142f-4b0a-b73e-8f16aaf46be7-72efc9f8.md) |  |
+| [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
 | [regsvr32-rundll32-abnormal-image-loads](../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.md) |  |
 | [remote-file-creation-with-psexec](../content/github-only-remote-file-creation-with-psexec-8b1d8f83-08f3-44fb-8328-1229521f109c-c59300e9.md) |  |
 | [reverse-shell-ransomware-macos](../content/github-only-reverse-shell-ransomware-macos-936d985d-f44c-4ec7-81ae-7aa1995f940d-5fee050e.md) |  |
@@ -236,11 +239,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+| Content Item |
+|:-------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 
@@ -279,7 +282,7 @@ This table is ingested by the following connectors:
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
 
 ## Parsers Using This Table (1)
 
@@ -288,6 +291,37 @@ This table is ingested by the following connectors:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimFileEventMicrosoft365D](../asim/asimfileeventmicrosoft365d.md) | FileEvent | Microsoft 365 Defender for EndPoint |  |
+
+## Selection Criteria Summary (6 criteria, 15 total references)
+
+References by type: 0 connectors, 15 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ActionType == "FileCreated"` | - | 9 | - | - | **9** |
+| `ActionType in "FileCreated,FileRenamed"` | - | 2 | - | - | **2** |
+| `ActionType == "FileRenamed"` | - | 1 | - | - | **1** |
+| `ActionType in "FileCreated,FileModified,FileRenamed"` | - | 1 | - | - | **1** |
+| `ActionType == "PowerShellCommand"` | - | 1 | - | - | **1** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **15** | **0** | **0** | **15** |
+
+### ActionType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `FileCreated` | - | 12 | - | - | **12** |
+| `FileRenamed` | - | 4 | - | - | **4** |
+| `FileModified` | - | 1 | - | - | **1** |
+| `PowerShellCommand` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 1 | - | - | **1** |
+| `Add user` | - | 1 | - | - | **1** |
+| `InteractiveLogon` | - | 1 | - | - | **1** |
+| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `ResourceAccess` | - | 1 | - | - | **1** |
+| `Sign-in` | - | 1 | - | - | **1** |
+| `Update user` | - | 1 | - | - | **1** |
 
 ---
 

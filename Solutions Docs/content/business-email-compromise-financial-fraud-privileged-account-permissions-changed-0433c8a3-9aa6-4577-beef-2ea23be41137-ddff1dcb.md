@@ -24,10 +24,10 @@ Detects changes to permissions assigned to admin users. Threat actors may try an
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "Add eligible member"` | ✓ | ✗ |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
 
 ---
 

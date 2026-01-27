@@ -32,12 +32,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.storage/storageaccounts`
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -45,6 +39,12 @@ This table collects data from the following Azure resource types:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimFileEventAzureQueueStorage](../asim/asimfileeventazurequeuestorage.md) | FileEvent | Microsoft Azure Queue Storage |  |
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.storage/storageaccounts`
 
 ---
 

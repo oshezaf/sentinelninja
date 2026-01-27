@@ -22,11 +22,21 @@ Finds instances where a file uploaded to blob or file storage and it is seen on 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
-| [`StorageBlobLogs`](../tables/storagebloblogs.md) | ✓ | ✗ |
-| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "FileCreated"` | ✓ | ✗ |
+| [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ |
+| [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [AzureStorageAccount](../connectors/azurestorageaccount.md) | [Azure Storage](../solutions/azure-storage.md) |
+
+**Solutions:** [Azure Storage](../solutions/azure-storage.md)
 
 ---
 

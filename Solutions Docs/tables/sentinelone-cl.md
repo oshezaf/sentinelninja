@@ -74,15 +74,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
-## Parsers Using This Table (9)
+## Parsers Using This Table (11)
 
-### ASIM Parsers (7)
+### ASIM Parsers (9)
 
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAlertEventSentinelOneSingularity](../asim/asimalerteventsentinelonesingularity.md) | AlertEvent | SentinelOne |  |
+| [ASimAuditEventSentinelOne](../asim/asimauditeventsentinelone.md) | AuditEvent | SentinelOne |  |
 | [ASimAuthenticationSentinelOne](../asim/asimauthenticationsentinelone.md) | Authentication | SentinelOne |  |
 | [ASimDnsSentinelOne](../asim/asimdnssentinelone.md) | Dns | SentinelOne |  |
+| [ASimFileEventSentinelOne](../asim/asimfileeventsentinelone.md) | FileEvent | SentinelOne |  |
 | [ASimNetworkSessionSentinelOne](../asim/asimnetworksessionsentinelone.md) | NetworkSession | SentinelOne |  |
 | [ASimProcessCreateSentinelOne](../asim/asimprocesscreatesentinelone.md) | ProcessEvent | SentinelOne |  |
 | [ASimRegistryEventSentinelOne](../asim/asimregistryeventsentinelone.md) | RegistryEvent | SentinelOne |  |

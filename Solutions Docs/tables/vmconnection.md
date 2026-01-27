@@ -16,7 +16,7 @@ Reference for VMConnection table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmconnection) |
 
-## Solutions (10)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -28,14 +28,15 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
 ---
 
-## Content Items Using This Table (21)
+## Content Items Using This Table (23)
 
-### Analytic Rules (9)
+### Analytic Rules (10)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -55,6 +56,12 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [TI Map IP Entity to VMConnection](../content/threat-intelligence-ti-map-ip-entity-to-vmconnection-9713e3c0-1410-468d-b79e-383448434b2d-c87f4032.md) |  |
 
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map IP Entity to VMConnection](../content/threat-intelligence-new-ti-map-ip-entity-to-vmconnection-aed70d71-adb2-4f73-becd-02150b13950b-4964d0d5.md) |  |
+
 **In solution [Zinc Open Source](../solutions/zinc-open-source.md):**
 
 | Content Item | Selection Criteria |
@@ -71,7 +78,7 @@ This table is used by the following solutions:
 | [Star Blizzard C2 Domains August 2022](../content/standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md) |  |
 | [Time series anomaly for data size transferred to public internet](../content/standalone-content-time-series-anomaly-for-data-size-transferred-to-public-internet-f2dd4a3a-ebac-4994-9499-1a859938c947-b66aa17e.md) |  |
 
-### Hunting Queries (5)
+### Hunting Queries (6)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -96,6 +103,12 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-ti-map-file-entity-to-vmconnection-event-172a321b-c46b-4508-87c6-e2691c778107-debef4d0.md) |  |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map File Entity to VMConnection Event](../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.md) |  |
 
 **Standalone Content:**
 
@@ -132,6 +145,14 @@ This table is used by the following solutions:
 | [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
 | [VirtualMachinesInsights](../content/github-only-virtualmachinesinsights-20d3646a.md) |  |
 
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimNetworkSessionVMConnection](../asim/asimnetworksessionvmconnection.md) | NetworkSession | VMConnection |  |
+
 ## Resource Types
 
 This table collects data from the following Azure resource types:
@@ -141,14 +162,6 @@ This table collects data from the following Azure resource types:
 - `microsoft.azurestackhci/virtualmachines`
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
-
-## Parsers Using This Table (1)
-
-### ASIM Parsers (1)
-
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimNetworkSessionVMConnection](../asim/asimnetworksessionvmconnection.md) | NetworkSession | VMConnection |  |
 
 ---
 

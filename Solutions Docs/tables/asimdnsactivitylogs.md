@@ -35,7 +35,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Windows DNS Events via AMA](../connectors/asimdnsactivitylogs.md) | `EventProduct == "DNS Server"`<br>`EventVendor == "Microsoft"` |
+| [Windows DNS Events via AMA](../connectors/asimdnsactivitylogs.md) | `EventProduct == "DNS Server"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) |  |
 
 ---
@@ -56,12 +56,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.securityinsights/dnsnormalized`
-
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (1)
@@ -76,13 +70,19 @@ This table collects data from the following Azure resource types:
 |:-------|:---------|:-------------------|
 | [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
 
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.securityinsights/dnsnormalized`
+
 ## Selection Criteria Summary (1 criteria, 1 total references)
 
 References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventProduct == "DNS Server"`<br>`EventVendor == "Microsoft"` | 1 | - | - | - | **1** |
+| `EventProduct == "DNS Server"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` | 1 | - | - | - | **1** |
 | **Total** | **1** | **0** | **0** | **0** | **1** |
 
 ### EventProduct / EventVendor
@@ -90,6 +90,12 @@ References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parse
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `DNS Server` | `Microsoft` | 1 | - | - | - | **1** |
+
+### EventType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Query` | 1 | - | - | - | **1** |
 
 ---
 

@@ -20,9 +20,9 @@ Query for SmartScreen application blocks on files with "Malicious" reputation, w
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "SmartScreenAppWarning,SmartScreenUserOverride"` | ✓ | ✗ |
 
 ---
 

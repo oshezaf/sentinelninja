@@ -32,12 +32,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
 
-### ASIM Parsers (1)
+### ASIM Parsers (2)
 
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
+| [ASimProcessCreateTrendMicroVisionOne](../asim/asimprocesscreatetrendmicrovisionone.md) | ProcessEvent | Trend Micro Vision One |  |
 | [ASimRegistryEventTrendMicroVisionOne](../asim/asimregistryeventtrendmicrovisionone.md) | RegistryEvent | Trend Micro Vision One |  |
 
 ---

@@ -31,6 +31,8 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
+| [`ASIM_GetAccountType`](../tables/asim-getaccounttype.md) |  | — | — |
+| [`ASIM_ParseWindowsEvents`](../tables/asim-parsewindowsevents.md) |  | — | — |
 | [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4657,4663"` | ✓ | ✓ |
 
 ## Parameters
@@ -38,6 +40,16 @@ This parser reads from the following tables:
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
+
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [WindowsForwardedEvents](../connectors/windowsforwardedevents.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+
+**Solutions:** [Windows Forwarded Events](../solutions/windows-forwarded-events.md)
 
 ## References
 

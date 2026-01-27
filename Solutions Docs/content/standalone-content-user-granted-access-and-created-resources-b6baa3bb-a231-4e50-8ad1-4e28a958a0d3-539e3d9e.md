@@ -22,11 +22,22 @@ Identifies when a new user is granted access and starts creating resources in Az
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
-| [`Operation`](../tables/operation.md) | ✗ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "Create"` | ✓ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [AzureActiveDirectory](../connectors/azureactivedirectory.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+| [AzureActivity](../connectors/azureactivity.md) | [Azure Activity](../solutions/azure-activity.md) |
+
+**Solutions:** [Azure Activity](../solutions/azure-activity.md), [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 
 ---
 

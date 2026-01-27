@@ -25,9 +25,9 @@ Identifies executable files and scripts uploaded to SharePoint sites used for Dy
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "SharePoint"` | ✓ | ✗ |
 
 ---
 

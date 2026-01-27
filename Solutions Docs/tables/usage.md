@@ -32,7 +32,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (33)
+## Content Items Using This Table (35)
 
 ### Analytic Rules (1)
 
@@ -53,7 +53,7 @@ This table is used by the following solutions:
 | [M2131_RecommendedDatatableNotLogged_EL2](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el2-76326a24-1223-4066-88a3-3826e3768932-869d983c.md) |  |
 | [M2131_RecommendedDatatableNotLogged_EL3](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el3-8b415f2d-44c1-4edb-8ca6-ddf7d2d28b20-0cceb968.md) |  |
 
-### Workbooks (26)
+### Workbooks (28)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
@@ -84,6 +84,7 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md) |  |
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 | [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md) |  |
 
 **In solution [SOC-Process-Framework](../solutions/soc-process-framework.md):**
@@ -114,6 +115,7 @@ This table is used by the following solutions:
 | [DCR-Toolkit](../content/github-only-dcr-toolkit-37d84106.md) |  |
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [LogSourcesAndAnalyticRulesCoverage](../content/github-only-logsourcesandanalyticrulescoverage-d4c48df0.md) |  |
 | [MITREAttack](../content/github-only-mitreattack-27c36827.md) |  |
 | [MicrosoftSentinelCostEUR](../content/github-only-microsoftsentinelcosteur-f339a745.md) |  |

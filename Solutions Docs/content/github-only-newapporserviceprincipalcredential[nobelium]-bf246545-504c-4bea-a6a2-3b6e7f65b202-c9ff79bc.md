@@ -21,9 +21,9 @@ This query will find when a new credential is added to an application or service
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Add service principal credentials.,Add service principal.,Update application  Certificates`<br>`secrets management"` | ✓ | ✗ |
 
 ---
 

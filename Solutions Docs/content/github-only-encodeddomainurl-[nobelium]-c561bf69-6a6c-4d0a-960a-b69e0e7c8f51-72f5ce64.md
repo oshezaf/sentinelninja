@@ -21,12 +21,12 @@ Looks for a logon domain in the Microsoft Entra ID logs,  encoded with the same 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ |
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
-| [`IdentityQueryEvents`](../tables/identityqueryevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) |  | — | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType in "DNS query,DnsQueryResponse"` | ✓ | ✗ |
+| [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ |
 
 ---
 

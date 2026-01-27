@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) | `EventID == "13"` | ✓ | ✗ |
+| [`Event`](../tables/event.md) | `EventID == "13"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | ✓ | ✗ |
 
 ---
 

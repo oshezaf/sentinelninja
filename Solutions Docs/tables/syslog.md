@@ -16,7 +16,7 @@ Reference for Syslog table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/syslog) |
 
-## Solutions (54)
+## Solutions (55)
 
 This table is used by the following solutions:
 
@@ -69,6 +69,7 @@ This table is used by the following solutions:
 - [Syslog](../solutions/syslog.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [VMWareESXi](../solutions/vmwareesxi.md)
 - [VMware SASE](../solutions/vmware-sase.md)
 - [Veeam](../solutions/veeam.md)
@@ -122,9 +123,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (381)
+## Content Items Using This Table (386)
 
-### Analytic Rules (239)
+### Analytic Rules (241)
 
 **In solution [CTERA](../solutions/ctera.md):**
 
@@ -338,6 +339,13 @@ This table is ingested by the following connectors:
 | [TI Map URL Entity to Syslog Data](../content/threat-intelligence-ti-map-url-entity-to-syslog-data-b31037ea-6f68-4fbd-bab2-d0d0f44c2fcf-b70131e6.md) |  |
 | [TI map Domain entity to Syslog](../content/threat-intelligence-ti-map-domain-entity-to-syslog-532f62c1-fba6-4baa-bbb6-4a32a4ef32fa-afa2706f.md) |  |
 
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map URL Entity to Syslog Data](../content/threat-intelligence-new-ti-map-url-entity-to-syslog-data-4de24a28-dcd0-4a0d-bf14-96d8483dc05a-607492d9.md) |  |
+| [TI map Domain entity to Syslog](../content/threat-intelligence-new-ti-map-domain-entity-to-syslog-cd19434e-10f2-4e2f-b3c1-ce6f08ac5357-10e0f11d.md) |  |
+
 **In solution [VMWareESXi](../solutions/vmwareesxi.md):** `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"`
 
 | Content Item |
@@ -490,7 +498,7 @@ This table is ingested by the following connectors:
 | [Multiple Password Reset by user](../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.md) | `Facility in "auth,authpriv"`<br>`SyslogMessage matchesregex ".*password changed for.*"` |
 | [PulseConnectSecure - CVE-2021-22893 Possible Pulse Connect Secure RCE Vulnerability Attack](../content/standalone-content-pulseconnectsecure-cve-2021-22893-possible-pulse-connect-secure-rce-vulnerability-att-d0c82b7f-40b2-4180-a4d6-7aa0541b7599-46e4de61.md) |  |
 
-### Hunting Queries (83)
+### Hunting Queries (84)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -613,6 +621,12 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI Map File Entity to Syslog Event](../content/threat-intelligence-ti-map-file-entity-to-syslog-event-18f7de84-de55-4983-aca3-a18bc846b4e0-26e4aa14.md) |  |
 
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map File Entity to Syslog Event](../content/threat-intelligence-new-ti-map-file-entity-to-syslog-event-f624417d-9e4e-462e-93e7-53ab7686a479-b72d3476.md) |  |
+
 **In solution [VMWareESXi](../solutions/vmwareesxi.md):** `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"`
 
 | Content Item |
@@ -635,7 +649,7 @@ This table is ingested by the following connectors:
 | [Disabled accounts using Squid proxy](../content/standalone-content-disabled-accounts-using-squid-proxy-959fe0f0-7ac0-467c-944f-5b8c6fdc9e72-ec4ae627.md) | `ProcessName contains "squid"` |
 | [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
 
-### Workbooks (59)
+### Workbooks (61)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):** `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"`<br>`SyslogMessage has "jndi"`<br>`SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"`
 
@@ -769,6 +783,7 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `SyslogMessage has_any "ALTER TABLE,CREATE TABLE,DROP TABLE,database modified,schema change"`<br>`SyslogMessage has_any "auditd stopped,logging stopped,rsyslog stopped,syslog stopped"`<br>`SyslogMessage has_any "change,config,edit,modified,updated"`<br>`SyslogMessage has_any "change,config,modified,registry,updated"`<br>`SyslogMessage has_any "checksum mismatch,file deleted,file modified,file tamper"`
@@ -830,7 +845,7 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamDataPlatformMonitoring](../content/veeam-veeamdataplatformmonitoring-a61e8871.md) | `SyslogMessage has "instanceId"` |
-| [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "instanceId"` |
+| [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "predefined_alarm_id"` |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
@@ -848,6 +863,7 @@ This table is ingested by the following connectors:
 | [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
 | [InfobloxNIOS](../content/github-only-infobloxnios-714844bb.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [LinuxMachines](../content/github-only-linuxmachines-637c38c6.md) |  |
 | [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) | `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"`<br>`SyslogMessage has "jndi"`<br>`SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"` |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
@@ -866,27 +882,14 @@ This table is ingested by the following connectors:
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 | [syslogoverview](../content/github-only-syslogoverview-74ed5a6a.md) |  |
 
-## Resource Types
+## Parsers Using This Table (94)
 
-This table collects data from the following Azure resource types:
-
-- `microsoft.operationalinsights/workspaces`
-- `microsoft.containerservice/managedclusters`
-- `microsoft.kubernetes/connectedclusters`
-- `microsoft.compute/virtualmachines`
-- `microsoft.conenctedvmwarevsphere/virtualmachines`
-- `microsoft.azurestackhci/virtualmachines`
-- `microsoft.scvmm/virtualmachines`
-- `microsoft.compute/virtualmachinescalesets`
-- `microsoft.hybridcontainerservice/provisionedclusters`
-
-## Parsers Using This Table (93)
-
-### ASIM Parsers (18)
+### ASIM Parsers (19)
 
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuditEventCiscoISE](../asim/asimauditeventciscoise.md) | AuditEvent | Cisco ISE | `ProcessName has_any "CISE,CSCO"` |
+| [ASimAuditEventCiscoMerakiSyslog](../asim/asimauditeventciscomerakisyslog.md) | AuditEvent | Cisco Meraki |  |
 | [ASimAuthenticationCiscoISE](../asim/asimauthenticationciscoise.md) | Authentication | Cisco ISE | `ProcessName has_any "CISE,CSCO"` |
 | [ASimAuthenticationCiscoMerakiSyslog](../asim/asimauthenticationciscomerakisyslog.md) | Authentication | Cisco Meraki |  |
 | [ASimAuthenticationSshd](../asim/asimauthenticationsshd.md) | Authentication | OpenSSH | `ProcessName == "sshd"`<br>`SyslogMessage has "Failed"`<br>`SyslogMessage has "but this does not map back to the address"`<br>`SyslogMessage has "publickey"`<br>`SyslogMessage startswith "Accepted"`<br>`SyslogMessage startswith "Failed"`<br>`SyslogMessage startswith "Invalid user"`<br>`SyslogMessage startswith "Nasty PTR record"`<br>`SyslogMessage startswith "Timeout"`<br>`SyslogMessage startswith "message repeated"`<br>`SyslogMessage startswith "reverse mapping checking getaddrinfo for"` |
@@ -987,6 +990,20 @@ This table collects data from the following Azure resource types:
 
 > ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.operationalinsights/workspaces`
+- `microsoft.containerservice/managedclusters`
+- `microsoft.kubernetes/connectedclusters`
+- `microsoft.compute/virtualmachines`
+- `microsoft.conenctedvmwarevsphere/virtualmachines`
+- `microsoft.azurestackhci/virtualmachines`
+- `microsoft.scvmm/virtualmachines`
+- `microsoft.compute/virtualmachinescalesets`
+- `microsoft.hybridcontainerservice/provisionedclusters`
+
 ## Selection Criteria Summary (91 criteria, 414 total references)
 
 References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other parsers.
@@ -1019,8 +1036,8 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `ProcessName has "sftp"`<br>`SyslogMessage has "bytes read"`<br>`SyslogMessage has "close"`<br>`SyslogMessage has "session opened for"` | - | 2 | - | - | **2** |
 | `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | - | - | - | 2 | **2** |
 | `ProcessName contains "Exabeam"` | - | - | - | 2 | **2** |
-| `ProcessName == "sysmon"` | 1 | - | - | - | **1** |
 | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | 1 | - | - | - | **1** |
+| `ProcessName == "sysmon"` | 1 | - | - | - | **1** |
 | `SyslogMessage contains "found an infected file"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransomware incident detected"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransom Protect mechanism blocked"` | - | 1 | - | - | **1** |
@@ -1046,7 +1063,7 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | - | 1 | - | - | **1** |
 | `Facility in "auth,authpriv"` | - | 1 | - | - | **1** |
 | `SyslogMessage has_any "ALTER TABLE,CREATE TABLE,DROP TABLE,database modified,schema change"`<br>`SyslogMessage has_any "auditd stopped,logging stopped,rsyslog stopped,syslog stopped"`<br>`SyslogMessage has_any "change,config,edit,modified,updated"`<br>`SyslogMessage has_any "change,config,modified,registry,updated"`<br>`SyslogMessage has_any "checksum mismatch,file deleted,file modified,file tamper"` | - | 1 | - | - | **1** |
-| `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "instanceId"` | - | 1 | - | - | **1** |
+| `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "predefined_alarm_id"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "ACTION=VCF"`<br>`SyslogMessage contains "VCF Alert"` | - | 1 | - | - | **1** |
 | `ProcessName == "sshd"`<br>`SyslogMessage has "Failed"`<br>`SyslogMessage has "but this does not map back to the address"`<br>`SyslogMessage has "publickey"`<br>`SyslogMessage startswith "Accepted"`<br>`SyslogMessage startswith "Failed"`<br>`SyslogMessage startswith "Invalid user"`<br>`SyslogMessage startswith "Nasty PTR record"`<br>`SyslogMessage startswith "Timeout"`<br>`SyslogMessage startswith "message repeated"`<br>`SyslogMessage startswith "reverse mapping checking getaddrinfo for"` | - | - | 1 | - | **1** |
 | `ProcessName == "su"`<br>`SyslogMessage has_all "pam_unix(su"`<br>`SyslogMessage startswith "Successful su for"` | - | - | 1 | - | **1** |
@@ -1148,7 +1165,7 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has instanceId` | - | 114 | - | 3 | **117** |
+| `has instanceId` | - | 113 | - | 3 | **116** |
 | `contains <EPOevent>` | - | 25 | - | 1 | **26** |
 | `contains <UpdateEvents>` | - | 25 | - | 1 | **26** |
 | `contains Oracle Unified Audit` | - | 22 | - | 2 | **24** |
@@ -1160,6 +1177,7 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `!has response:` | - | 1 | 1 | 2 | **4** |
 | `has_all client` | - | 1 | 1 | 2 | **4** |
 | `has_all <Provider Name=` | - | - | 4 | - | **4** |
+| `has predefined_alarm_id` | - | 2 | - | 1 | **3** |
 | `has bytes read` | - | 2 | - | - | **2** |
 | `has close` | - | 2 | - | - | **2** |
 | `has session opened for` | - | 2 | - | - | **2** |
@@ -1177,7 +1195,6 @@ References by type: 5 connectors, 334 content items, 16 ASIM parsers, 59 other p
 | `has_any config` | - | 2 | - | - | **2** |
 | `has_any modified` | - | 2 | - | - | **2** |
 | `has_any updated` | - | 2 | - | - | **2** |
-| `has predefined_alarm_id` | - | 1 | - | 1 | **2** |
 | `contains AuditLog` | - | - | - | 2 | **2** |
 | `contains Device,` | - | - | - | 2 | **2** |
 | `contains DeviceControl` | - | - | - | 2 | **2** |

@@ -16,19 +16,18 @@ Reference for Alert table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alert) |
 
-## Solutions (3)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [Corelight](../solutions/corelight.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
-- [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (4)
 
-### Workbooks (5)
+### Workbooks (4)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
@@ -42,12 +41,6 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) |  |
-
-**In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
 **GitHub Only:**
 

@@ -21,9 +21,9 @@ This will show Active Directory Security Token Service (STS) refresh token modif
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "Update StsRefreshTokenValidFrom Timestamp."` | ✓ | ✗ |
 
 ---
 

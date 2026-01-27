@@ -20,9 +20,9 @@ Today MDE Alerts do not show PUA/WDAV ThreatName. This is a demonstration of how
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "AntivirusDetection"` | ✓ | ✗ |
 
 ---
 

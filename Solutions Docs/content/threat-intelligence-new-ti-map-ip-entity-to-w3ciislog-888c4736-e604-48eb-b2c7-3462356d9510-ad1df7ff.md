@@ -27,6 +27,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
 
 ---
 

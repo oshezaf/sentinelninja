@@ -31,7 +31,6 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`Alert`](../tables/alert.md) |  | ✓ | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "ASA"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ |
 
 ## Parameters
@@ -39,6 +38,20 @@ This parser reads from the following tables:
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
+
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [CefAma](../connectors/cefama.md) | [Common Event Format](../solutions/common-event-format.md) |
+| [CiscoASA](../connectors/ciscoasa.md) | [CiscoASA](../solutions/ciscoasa.md) |
+| [VirtualMetricDirectorProxy](../connectors/virtualmetricdirectorproxy.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| [VirtualMetricMSSentinelConnector](../connectors/virtualmetricmssentinelconnector.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| [VirtualMetricMSSentinelDataLakeConnector](../connectors/virtualmetricmssentineldatalakeconnector.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+
+**Solutions:** [CiscoASA](../solutions/ciscoasa.md), [Common Event Format](../solutions/common-event-format.md), [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)
 
 ## References
 

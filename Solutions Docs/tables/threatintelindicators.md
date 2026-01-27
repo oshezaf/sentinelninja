@@ -50,7 +50,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (99)
+## Content Items Using This Table (100)
 
 ### Analytic Rules (67)
 
@@ -183,7 +183,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
 
-### Workbooks (17)
+### Workbooks (18)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
@@ -259,14 +259,9 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [IntsightsIOCWorkbook](../content/github-only-intsightsiocworkbook-88f7baed.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
 | [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
-
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.securityinsights/threatintelligence`
 
 ## Parsers Using This Table (1)
 
@@ -275,6 +270,12 @@ This table collects data from the following Azure resource types:
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [ThreatIntelIndicatorsv2](../parsers/threatintelindicatorsv2.md) | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |  |
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.securityinsights/threatintelligence`
 
 ---
 

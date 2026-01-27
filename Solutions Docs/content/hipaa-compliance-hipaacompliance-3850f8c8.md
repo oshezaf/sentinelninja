@@ -21,7 +21,7 @@ This content item queries data from the following tables:
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallNetworkRule"`<br>`Category == "SQLSecurityAuditEvents"` | — | ✗ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
 | [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "ConnectionSuccess"` | ✓ | ✗ |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |

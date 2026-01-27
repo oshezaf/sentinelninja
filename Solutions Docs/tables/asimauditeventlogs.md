@@ -16,7 +16,7 @@ Reference for ASimAuditEventLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimauditeventlogs) |
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -24,6 +24,7 @@ This table is used by the following solutions:
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Workday](../solutions/workday.md)
 
 ## Connectors (3)
@@ -38,15 +39,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
-### Analytic Rules (1)
+### Analytic Rules (2)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):** `EventVendor == "Workday"`
 
 | Content Item |
 |:-------------|
 | [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-ti-map-ip-entity-to-workday-asimauditeventlogs-a924d317-03d2-4420-a71f-4d347bda4bd8-7032e2e7.md) |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):** `EventVendor == "Workday"`
+
+| Content Item |
+|:-------------|
+| [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-7773b67f.md) |
 
 ### Workbooks (1)
 
@@ -55,12 +62,6 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
-
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.securityinsights/auditeventnormalized`
 
 ## Parsers Using This Table (2)
 
@@ -76,20 +77,26 @@ This table collects data from the following Azure resource types:
 |:-------|:---------|:-------------------|
 | [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
 
-## Selection Criteria Summary (1 criteria, 1 total references)
+## Resource Types
 
-References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+This table collects data from the following Azure resource types:
+
+- `microsoft.securityinsights/auditeventnormalized`
+
+## Selection Criteria Summary (1 criteria, 2 total references)
+
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventVendor == "Workday"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **1** | **0** | **0** | **1** |
+| `EventVendor == "Workday"` | - | 2 | - | - | **2** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-|  | `Workday` | - | 1 | - | - | **1** |
+|  | `Workday` | - | 2 | - | - | **2** |
 
 ---
 

@@ -19,10 +19,10 @@ This query identifies Copilot Studio AI agents that are published but have not b
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AIAgentsInfo`](../tables/aiagentsinfo.md) | — | ✗ |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AIAgentsInfo`](../tables/aiagentsinfo.md) |  | — | ✗ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "CopilotInteraction"` | ✓ | ✗ |
 
 ---
 

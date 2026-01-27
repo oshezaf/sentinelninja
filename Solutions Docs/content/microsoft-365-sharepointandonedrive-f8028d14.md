@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
-| [`Operation`](../tables/operation.md) | ✗ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload in "OneDrive,SharePoint"` | ✓ | ✗ |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
 
 ---
 

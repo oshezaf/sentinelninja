@@ -22,10 +22,10 @@ This query shows information about high confidence phish email that has been rel
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) | `ActionType == "QuarantineReleaseMessage"` | ✓ | ✗ |
 
 ---
 

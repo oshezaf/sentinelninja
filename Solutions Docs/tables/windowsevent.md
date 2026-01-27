@@ -16,7 +16,7 @@ Reference for WindowsEvent table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/windowsevent) |
 
-## Solutions (10)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -28,6 +28,7 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Windows Forwarded Events](../solutions/windows-forwarded-events.md)
 - [Windows Security Events](../solutions/windows-security-events.md)
 
@@ -41,9 +42,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (52)
+## Content Items Using This Table (55)
 
-### Analytic Rules (36)
+### Analytic Rules (39)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -79,6 +80,13 @@ This table is ingested by the following connectors:
 | [TI map Email entity to SecurityEvent](../content/threat-intelligence-ti-map-email-entity-to-securityevent-2fc5d810-c9cc-491a-b564-841427ae0e50-9cb621b7.md) |  |
 | [TI map File Hash to Security Event](../content/threat-intelligence-ti-map-file-hash-to-security-event-a7427ed7-04b4-4e3b-b323-08b981b9b4bf-a0646697.md) |  |
 
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.md) |  |
+| [TI map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.md) |  |
+
 **In solution [Windows Forwarded Events](../solutions/windows-forwarded-events.md):** `EventID == "4688"`
 
 | Content Item |
@@ -112,6 +120,7 @@ This table is ingested by the following connectors:
 | [Rare RDP Connections](../content/standalone-content-rare-rdp-connections-45b903c5-6f56-4969-af10-ae62ac709718-9368c501.md) |  |
 | [Security Service Registry ACL Modification](../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md) | `EventID in "4670,4688"` |
 | [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md) | `EventID == "4688"` |
+| [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md) | `EventID in "17,18,5145"` |
 | [User account added to built in domain local or global group](../content/standalone-content-user-account-added-to-built-in-domain-local-or-global-group-a35f2c18-1b97-458f-ad26-e033af18eb99-fb766415.md) | `EventID in "4728,4732,4756"` |
 | [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md) | `EventID in "4720,4726"` |
 | [User account enabled and disabled within 10 mins](../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.md) | `EventID in "4722,4725"` |
@@ -176,37 +185,38 @@ This table is ingested by the following connectors:
 | [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
+## Parsers Using This Table (12)
+
+### ASIM Parsers (12)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventMicrosoftWindowsEvents](../asim/asimauditeventmicrosoftwindowsevents.md) | AuditEvent | Microsoft Windows | `Provider == "Microsoft-Windows-Eventlog"` |
+| [ASimDnsMicrosoftSysmonWindowsEvent](../asim/asimdnsmicrosoftsysmonwindowsevent.md) | Dns | Microsoft Windows Events Sysmon | `EventID == "22"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
+| [ASimFileEventMicrosoftSysmonWindowsEvent](../asim/asimfileeventmicrosoftsysmonwindowsevent.md) | FileEvent | Windows Sysmon | `EventID in "11,23,26"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
+| [ASimFileEventMicrosoftWindowsEvents](../asim/asimfileeventmicrosoftwindowsevents.md) | FileEvent | Microsoft Windows Events | `EventID == "4663"` |
+| [ASimNetworkSessionMicrosoftSysmonWindowsEvent](../asim/asimnetworksessionmicrosoftsysmonwindowsevent.md) | NetworkSession | Windows Sysmon | `EventID == "3"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
+| [ASimNetworkSessionMicrosoftWindowsEventFirewall](../asim/asimnetworksessionmicrosoftwindowseventfirewall.md) | NetworkSession | Windows Firewall | `EventID in "5154,5155,5156,5158,5159"` |
+| [ASimProcessCreateMicrosoftWindowsEvents](../asim/asimprocesscreatemicrosoftwindowsevents.md) | ProcessEvent | Security Events | `EventID == "4688"` |
+| [ASimProcessEventCreateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventcreatemicrosoftsysmonwindowsevent.md) | ProcessEvent | Sysmon | `EventID == "1"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
+| [ASimProcessEventTerminateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventterminatemicrosoftsysmonwindowsevent.md) | ProcessEvent | Microsoft Windows Events Sysmon | `EventID == "5"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
+| [ASimProcessTerminateMicrosoftWindowsEvents](../asim/asimprocessterminatemicrosoftwindowsevents.md) | ProcessEvent | Security Events | `EventID == "4689"` |
+| [ASimRegistryEventMicrosoftSysmonWindowsEvent](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | RegistryEvent | Microsoft Sysmon | `EventID in "12,13,14"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
+| [ASimUserManagementMicrosoftWindowsEvent](../asim/asimusermanagementmicrosoftwindowsevent.md) | UserManagement | Microsoft Windows Event |  |
+
 ## Resource Types
 
 This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/securityinsights`
 
-## Parsers Using This Table (11)
+## Selection Criteria Summary (29 criteria, 34 total references)
 
-### ASIM Parsers (11)
-
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimAuthenticationMicrosoftWindowsEvent](../asim/asimauthenticationmicrosoftwindowsevent.md) | Authentication | Windows Security Events | `EventID in "4624,4625,4634"`<br>`Provider == "Microsoft-Windows-Security-Auditing"` |
-| [ASimDnsMicrosoftSysmonWindowsEvent](../asim/asimdnsmicrosoftsysmonwindowsevent.md) | Dns | Microsoft Windows Events Sysmon | `EventID == "22"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
-| [ASimFileEventMicrosoftSysmonWindowsEvent](../asim/asimfileeventmicrosoftsysmonwindowsevent.md) | FileEvent | Windows Sysmon | `EventID in "11,23,26"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
-| [ASimFileEventMicrosoftWindowsEvents](../asim/asimfileeventmicrosoftwindowsevents.md) | FileEvent | Microsoft Windows Events | `EventID == "4663"` |
-| [ASimNetworkSessionMicrosoftSysmonWindowsEvent](../asim/asimnetworksessionmicrosoftsysmonwindowsevent.md) | NetworkSession | Windows Sysmon | `EventID == "3"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
-| [ASimNetworkSessionMicrosoftWindowsEventFirewall](../asim/asimnetworksessionmicrosoftwindowseventfirewall.md) | NetworkSession | Windows Firewall | `EventID in "5154,5155,5156,5158,5159"` |
-| [ASimProcessEventCreateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventcreatemicrosoftsysmonwindowsevent.md) | ProcessEvent | Sysmon | `EventID == "1"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
-| [ASimProcessEventTerminateMicrosoftSysmonWindowsEvent](../asim/asimprocesseventterminatemicrosoftsysmonwindowsevent.md) | ProcessEvent | Microsoft Windows Events Sysmon | `EventID == "5"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
-| [ASimRegistryEventMicrosoftSysmonWindowsEvent](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | RegistryEvent | Microsoft Sysmon | `EventID in "12,13,14"`<br>`Provider == "Microsoft-Windows-Sysmon"` |
-| [ASimRegistryEventMicrosoftWindowsEvent](../asim/asimregistryeventmicrosoftwindowsevent.md) | RegistryEvent | Security Events | `EventID in "4657,4663"` |
-| [ASimUserManagementMicrosoftWindowsEvent](../asim/asimusermanagementmicrosoftwindowsevent.md) | UserManagement | Microsoft Windows Event |  |
-
-## Selection Criteria Summary (28 criteria, 32 total references)
-
-References by type: 0 connectors, 22 content items, 10 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 23 content items, 11 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventID == "4688"` | - | 4 | - | - | **4** |
+| `EventID == "4688"` | - | 4 | 1 | - | **5** |
 | `EventID in "12,13,4657"` | - | 2 | - | - | **2** |
 | `EventID == "1102"`<br>`Provider == "Microsoft-Windows-Eventlog"` | - | 1 | - | - | **1** |
 | `EventID in "1,19,20,21,4624,4688"` | - | 1 | - | - | **1** |
@@ -219,12 +229,13 @@ References by type: 0 connectors, 22 content items, 10 ASIM parsers, 0 other par
 | `EventID in "4663,4688"` | - | 1 | - | - | **1** |
 | `EventID == "4769"` | - | 1 | - | - | **1** |
 | `EventID == "4624"` | - | 1 | - | - | **1** |
+| `EventID in "17,18,5145"` | - | 1 | - | - | **1** |
 | `EventID in "4728,4732,4756"` | - | 1 | - | - | **1** |
 | `EventID in "4720,4726"` | - | 1 | - | - | **1** |
 | `EventID in "4722,4725"` | - | 1 | - | - | **1** |
 | `EventID in "4688,87"` | - | 1 | - | - | **1** |
 | `EventID in "1,4688"` | - | 1 | - | - | **1** |
-| `EventID in "4624,4625,4634"`<br>`Provider == "Microsoft-Windows-Security-Auditing"` | - | - | 1 | - | **1** |
+| `Provider == "Microsoft-Windows-Eventlog"` | - | - | 1 | - | **1** |
 | `EventID == "22"`<br>`Provider == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
 | `EventID in "11,23,26"`<br>`Provider == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
 | `EventID == "4663"` | - | - | 1 | - | **1** |
@@ -232,29 +243,29 @@ References by type: 0 connectors, 22 content items, 10 ASIM parsers, 0 other par
 | `EventID in "5154,5155,5156,5158,5159"` | - | - | 1 | - | **1** |
 | `EventID == "1"`<br>`Provider == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
 | `EventID == "5"`<br>`Provider == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
+| `EventID == "4689"` | - | - | 1 | - | **1** |
 | `EventID in "12,13,14"`<br>`Provider == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
-| `EventID in "4657,4663"` | - | - | 1 | - | **1** |
-| **Total** | **0** | **22** | **10** | **0** | **32** |
+| **Total** | **0** | **23** | **11** | **0** | **34** |
 
 ### EventID
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `4688` | - | 9 | - | - | **9** |
-| `4663` | - | 2 | 2 | - | **4** |
+| `4688` | - | 9 | 1 | - | **10** |
 | `1` | - | 2 | 1 | - | **3** |
-| `4624` | - | 2 | 1 | - | **3** |
+| `4663` | - | 2 | 1 | - | **3** |
 | `12` | - | 2 | 1 | - | **3** |
 | `13` | - | 2 | 1 | - | **3** |
-| `4657` | - | 2 | 1 | - | **3** |
-| `4625` | - | 1 | 1 | - | **2** |
+| `4624` | - | 2 | - | - | **2** |
 | `4728` | - | 2 | - | - | **2** |
 | `4732` | - | 2 | - | - | **2** |
 | `4756` | - | 2 | - | - | **2** |
+| `4657` | - | 2 | - | - | **2** |
 | `1102` | - | 1 | - | - | **1** |
 | `19` | - | 1 | - | - | **1** |
 | `20` | - | 1 | - | - | **1** |
 | `21` | - | 1 | - | - | **1** |
+| `4625` | - | 1 | - | - | **1** |
 | `4723` | - | 1 | - | - | **1** |
 | `4724` | - | 1 | - | - | **1** |
 | `4670` | - | 1 | - | - | **1** |
@@ -264,12 +275,14 @@ References by type: 0 connectors, 22 content items, 10 ASIM parsers, 0 other par
 | `4754` | - | 1 | - | - | **1** |
 | `4738` | - | 1 | - | - | **1** |
 | `4769` | - | 1 | - | - | **1** |
+| `17` | - | 1 | - | - | **1** |
+| `18` | - | 1 | - | - | **1** |
+| `5145` | - | 1 | - | - | **1** |
 | `4720` | - | 1 | - | - | **1** |
 | `4726` | - | 1 | - | - | **1** |
 | `4722` | - | 1 | - | - | **1** |
 | `4725` | - | 1 | - | - | **1** |
 | `87` | - | 1 | - | - | **1** |
-| `4634` | - | - | 1 | - | **1** |
 | `22` | - | - | 1 | - | **1** |
 | `11` | - | - | 1 | - | **1** |
 | `23` | - | - | 1 | - | **1** |
@@ -281,6 +294,7 @@ References by type: 0 connectors, 22 content items, 10 ASIM parsers, 0 other par
 | `5158` | - | - | 1 | - | **1** |
 | `5159` | - | - | 1 | - | **1** |
 | `5` | - | - | 1 | - | **1** |
+| `4689` | - | - | 1 | - | **1** |
 | `14` | - | - | 1 | - | **1** |
 
 ### Provider
@@ -288,8 +302,7 @@ References by type: 0 connectors, 22 content items, 10 ASIM parsers, 0 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Microsoft-Windows-Sysmon` | - | - | 6 | - | **6** |
-| `Microsoft-Windows-Eventlog` | - | 1 | - | - | **1** |
-| `Microsoft-Windows-Security-Auditing` | - | - | 1 | - | **1** |
+| `Microsoft-Windows-Eventlog` | - | 1 | 1 | - | **2** |
 
 ---
 

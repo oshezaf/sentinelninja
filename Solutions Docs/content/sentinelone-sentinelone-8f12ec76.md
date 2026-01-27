@@ -18,7 +18,6 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
 | [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | — | — |
 | [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | — | — |
 | [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | — | — |

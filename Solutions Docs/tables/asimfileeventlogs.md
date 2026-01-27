@@ -45,12 +45,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.securityinsights/asimtables`
-
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (1)
@@ -64,6 +58,12 @@ This table collects data from the following Azure resource types:
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.securityinsights/asimtables`
 
 ---
 

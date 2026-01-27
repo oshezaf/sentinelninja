@@ -94,9 +94,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (170)
+## Content Items Using This Table (173)
 
-### Analytic Rules (55)
+### Analytic Rules (56)
 
 **In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
 
@@ -201,6 +201,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI Map URL Entity to SecurityAlert Data](../content/threat-intelligence-new-ti-map-url-entity-to-securityalert-data-3b6bdb38-93c5-452f-ab3a-97a3d1320d16-46a3b027.md) |  |
 | [TI map Domain entity to SecurityAlert](../content/threat-intelligence-new-ti-map-domain-entity-to-securityalert-df88b403-1cb9-49ea-a43d-b6613051cf7f-17792409.md) |  |
+| [TI map Email entity to SecurityAlert](../content/threat-intelligence-new-ti-map-email-entity-to-securityalert-4b451ade-ed28-48e2-8fe7-60ae83ab2fa5-53e6c566.md) |  |
 
 **In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):**
 
@@ -306,7 +307,7 @@ This table is ingested by the following connectors:
 | [Storage Alerts Correlation with CommonSecurityLogs & AuditLogs](../content/github-only-storage-alerts-correlation-with-commonsecuritylogs-&-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-30bd1fb3.md) |  |
 | [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) |  |
 
-### Workbooks (67)
+### Workbooks (69)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -470,6 +471,7 @@ This table is ingested by the following connectors:
 | [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts-8f5f1c6c.md) |  |
 | [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) |  |
 | [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md) |  |
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 | [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md) |  |
 | [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md) |  |
 
@@ -526,6 +528,7 @@ This table is ingested by the following connectors:
 | [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
 | [IOT_Alerts](../content/github-only-iot-alerts-e63618f3.md) |  |
 | [IntsightsIOCWorkbook](../content/github-only-intsightsiocworkbook-88f7baed.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [MITREAttack](../content/github-only-mitreattack-27c36827.md) |  |
 | [MicrosoftCloudAppSecurity](../content/github-only-microsoftcloudappsecurity-2887ca06.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
@@ -540,12 +543,6 @@ This table is ingested by the following connectors:
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 | [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) |  |
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.securityinsights/securityinsights`
-
 ## Parsers Using This Table (2)
 
 ### Other Parsers (2)
@@ -554,6 +551,12 @@ This table collects data from the following Azure resource types:
 |:-------|:---------|:-------------------|
 | [DragosNotificationsToSentinel](../parsers/dragosnotificationstosentinel.md) | [Dragos](../solutions/dragos.md) |  |
 | [DragosPullNotificationsToSentinel](../parsers/dragospullnotificationstosentinel.md) | [Dragos](../solutions/dragos.md) |  |
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.securityinsights/securityinsights`
 
 ---
 

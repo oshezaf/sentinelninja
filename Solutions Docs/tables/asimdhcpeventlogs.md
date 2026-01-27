@@ -34,12 +34,6 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.securityinsights/asimtables`
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -47,6 +41,12 @@ This table collects data from the following Azure resource types:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimDhcpEventNative](../asim/asimdhcpeventnative.md) | DhcpEvent | Native |  |
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.securityinsights/asimtables`
 
 ---
 

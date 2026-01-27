@@ -16,23 +16,30 @@ Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appservicehttplogs) |
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
-### Analytic Rules (1)
+### Analytic Rules (2)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TI map IP entity to AppServiceHTTPLogs](../content/threat-intelligence-ti-map-ip-entity-to-appservicehttplogs-f9949656-473f-4503-bf43-a9d9890f7d08-106c6a94.md) |  |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI map IP entity to AppServiceHTTPLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-7ce08041.md) |  |
 
 ### Workbooks (1)
 

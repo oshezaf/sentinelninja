@@ -25,10 +25,10 @@ Identifies API level access grants, either via the delegated permissions of a Mi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Update application"` | ✓ | ✗ |
+| [`DataverseActivity`](../tables/dataverseactivity.md) |  | ✓ | ✗ |
 
 ---
 

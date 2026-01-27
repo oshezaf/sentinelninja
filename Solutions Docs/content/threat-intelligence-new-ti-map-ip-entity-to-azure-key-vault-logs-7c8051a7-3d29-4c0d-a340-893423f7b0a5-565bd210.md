@@ -26,6 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceType == "VAULTS"` | — | ✗ |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ |
 
 ---

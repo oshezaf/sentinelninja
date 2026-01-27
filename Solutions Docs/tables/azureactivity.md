@@ -16,7 +16,7 @@ Reference for AzureActivity table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity) |
 
-## Solutions (18)
+## Solutions (20)
 
 This table is used by the following solutions:
 
@@ -31,11 +31,13 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
@@ -49,9 +51,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (75)
+## Content Items Using This Table (79)
 
-### Analytic Rules (23)
+### Analytic Rules (25)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -97,6 +99,13 @@ This table is ingested by the following connectors:
 | [TI Map IP Entity to AzureActivity](../content/threat-intelligence-ti-map-ip-entity-to-azureactivity-2441bce9-02e4-407b-8cc7-7d597f38b8b0-eefa9066.md) |  |
 | [TI map Email entity to AzureActivity](../content/threat-intelligence-ti-map-email-entity-to-azureactivity-cca3b4d9-ac39-4109-8b93-65bb284003e6-d3038f92.md) |  |
 
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI Map IP Entity to AzureActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.md) |  |
+| [TI map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.md) |  |
+
 **Standalone Content:**
 
 | Content Item | Selection Criteria |
@@ -121,12 +130,12 @@ This table is ingested by the following connectors:
 | [AzureActivity Administration From VPS Providers](../content/azure-activity-azureactivity-administration-from-vps-providers-1b8779c9-abf2-444f-a21f-437b8f90ac4a-2a957dc6.md) |  |
 | [Common deployed resources](../content/azure-activity-common-deployed-resources-0278e3b8-9899-45c5-8928-700cd80d2d80-cd2dd606.md) |  |
 | [Creation of an anomalous number of resources](../content/azure-activity-creation-of-an-anomalous-number-of-resources-a09e6368-065b-4f1e-a4ce-b1b3a64b493b-70888297.md) |  |
-| [Granting permissions to account](../content/azure-activity-granting-permissions-to-account-860cda84-765b-4273-af44-958b7cca85f7-74a48e32.md) |  |
+| [Granting permissions to account](../content/azure-activity-granting-permissions-to-account-860cda84-765b-4273-af44-958b7cca85f7-74a48e32.md) | `OperationName == "Create role assignment"` |
 | [Microsoft Sentinel Analytics Rules Administrative Operations](../content/azure-activity-microsoft-sentinel-analytics-rules-administrative-operations-ef7ef44e-6129-4d8e-94fe-b5530415d8e5-4b1b530d.md) |  |
 | [Microsoft Sentinel Connectors Administrative Operations](../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.md) |  |
 | [Microsoft Sentinel Workbooks Administrative Operations](../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.md) |  |
 | [Port opened for an Azure Resource](../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.md) |  |
-| [Rare Custom Script Extension](../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.md) |  |
+| [Rare Custom Script Extension](../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.md) | `OperationName == "Create or Update Virtual Machine Extension"` |
 
 **In solution [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md):**
 
@@ -134,11 +143,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.md) |  |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `OperationName contains "delete"`<br>`OperationName contains "remove"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) |  |
+| Content Item |
+|:-------------|
+| [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) |
 
 **Standalone Content:**
 
@@ -155,7 +164,7 @@ This table is ingested by the following connectors:
 | [Azure VM Run Command linked with MDE](../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.md) |  |
 | [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) |  |
 
-### Workbooks (29)
+### Workbooks (31)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
@@ -170,17 +179,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) |  |
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `ResourceProvider == "MICROSOFT.KEYVAULT"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+| Content Item |
+|:-------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
 
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `ResourceProvider == "MICROSOFT.KEYVAULT"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
+| Content Item |
+|:-------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
@@ -194,11 +203,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Content Item |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
@@ -206,11 +215,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+**In solution [NISTSP80053](../solutions/nistsp80053.md):** `ResourceProvider == "MICROSOFT.KEYVAULT"`
+
+| Content Item |
+|:-------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
+
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 
@@ -230,11 +245,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `ResourceProvider == "MICROSOFT.KEYVAULT"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+| Content Item |
+|:-------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
 **GitHub Only:**
 
@@ -246,15 +261,24 @@ This table is ingested by the following connectors:
 | [AzureThreatResearchMatrixWorkbook](../content/github-only-azurethreatresearchmatrixworkbook-50f10e78.md) |  |
 | [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) | `ResourceProvider == "Microsoft.HybridCompute"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [PlaybookHealth](../content/github-only-playbookhealth-6ce06262.md) |  |
-| [SensitiveOperationsinAzureActivityLogReview](../content/github-only-sensitiveoperationsinazureactivitylogreview-eb1864d3.md) |  |
+| [PlaybookHealth](../content/github-only-playbookhealth-6ce06262.md) | `OperationName == "Microsoft.Logic/workflows/workflowRunCompleted"`<br>`OperationName has "Create"`<br>`OperationName has "Delete"`<br>`OperationName has "Disable"`<br>`OperationName has "Enable"`<br>`OperationName has "set"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowAction"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowRun"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowRunCompleted"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowTrigger"`<br>`ResourceProvider == "MICROSOFT.LOGIC"` |
+| [SensitiveOperationsinAzureActivityLogReview](../content/github-only-sensitiveoperationsinazureactivitylogreview-eb1864d3.md) | `OperationName == "Create or Update Virtual Machine Extension"` |
 | [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [WorkspaceAuditing](../content/github-only-workspaceauditing-b4e840dd.md) |  |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+| [WorkspaceAuditing](../content/github-only-workspaceauditing-b4e840dd.md) | `OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"` |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `OperationName !in "Microsoft.SecurityInsights/Incidents/investigations/write,Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action"`<br>`ResourceProvider == "Microsoft.SecurityInsights"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` |
+
+## Parsers Using This Table (1)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventAzureActivity](../asim/asimauditeventazureactivity.md) | AuditEvent | Microsoft Azure |  |
 
 ## Resource Types
 
@@ -388,13 +412,34 @@ This table collects data from the following Azure resource types:
 - `microsoft.network/bastionhosts`
 - `microsoft.healthcareapis/services`
 
-## Parsers Using This Table (1)
+## Selection Criteria Summary (5 criteria, 8 total references)
 
-### ASIM Parsers (1)
+References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.
 
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimAuditEventAzureActivity](../asim/asimauditeventazureactivity.md) | AuditEvent | Microsoft Azure |  |
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ResourceProvider == "MICROSOFT.KEYVAULT"` | - | 4 | - | - | **4** |
+| `OperationName == "Create role assignment"` | - | 1 | - | - | **1** |
+| `OperationName == "Create or Update Virtual Machine Extension"` | - | 1 | - | - | **1** |
+| `OperationName contains "delete"`<br>`OperationName contains "remove"` | - | 1 | - | - | **1** |
+| `ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **8** | **0** | **0** | **8** |
+
+### OperationName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Create role assignment` | - | 1 | - | - | **1** |
+| `Create or Update Virtual Machine Extension` | - | 1 | - | - | **1** |
+| `contains delete` | - | 1 | - | - | **1** |
+| `contains remove` | - | 1 | - | - | **1** |
+
+### ResourceProvider
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `MICROSOFT.KEYVAULT` | - | 5 | - | - | **5** |
+| `MICROSOFT.CONTAINERSERVICE` | - | 1 | - | - | **1** |
 
 ---
 

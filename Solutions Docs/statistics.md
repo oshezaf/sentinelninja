@@ -31,7 +31,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | Metric | Count |
 |:-------|------:|
 | Unique Connectors | 384 |
-| Tables Used | 822 |
+| Tables Used | 821 |
 
 ## Connectors
 
@@ -72,14 +72,31 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 *Active = Published and not deprecated.*
 
+### Collection Methods by Support Tier
+
+Each cell shows: Active / Deprecated / Unpublished / **Total**
+
+| Collection Method | Microsoft | Partner | Community | Unknown |
+|:-----------------|:---------:|:---------:|:---------:|:---------:|
+| Azure Function | 21 / 14 / 1 / **36** | 53 / 4 / 35 / **92** | 1 / 0 / 0 / **1** | - |
+| CCF | 61 / 1 / 2 / **64** | 57 / 0 / 8 / **65** | - | - |
+| MMA | 8 / 57 / 1 / **66** | 4 / 28 / 5 / **37** | 0 / 5 / 0 / **5** | 0 / 0 / 2 / **2** |
+| AMA | 10 / 16 / 0 / **26** | 11 / 15 / 0 / **26** | 4 / 3 / 0 / **7** | - |
+| Unknown (Custom Log) | 1 / 0 / 1 / **2** | 30 / 0 / 8 / **38** | 4 / 0 / 0 / **4** | - |
+| Native | 24 / 0 / 1 / **25** | - | - | - |
+| Azure Diagnostics | 17 / 0 / 0 / **17** | - | - | - |
+| REST API | 1 / 0 / 0 / **1** | 5 / 0 / 8 / **13** | 1 / 0 / 0 / **1** | - |
+| Unknown | 3 / 0 / 0 / **3** | - | - | - |
+| **Total** | 146 / 88 / 6 / **240** | 160 / 47 / 64 / **271** | 10 / 8 / 0 / **18** | 0 / 0 / 2 / **2** |
+
 ## Tables
 
 | Metric | Count |
 |:-------|------:|
 | **Total Tables Documented** | **1771** |
-| Tables Ingested by Connectors | 822 |
-| Tables Referenced by Content Only | 219 |
-| Standalone Reference Tables* | 730 |
+| Tables Ingested by Connectors | 821 |
+| Tables Referenced by Content Only | 222 |
+| Standalone Reference Tables* | 728 |
 | Defender XDR Only Tables | 31 |
 
 *\*Standalone Reference Tables are tables documented in the Azure Monitor or Defender XDR reference that are not currently used by any Sentinel solution, connector, or content item.*
@@ -136,7 +153,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | **Products** | 80 |
 | **Source Parser Pairs*** | 82 |
 | **Schemas Covered** | 11 |
-| **Tables Used** | 71 |
+| **Tables Used** | 73 |
 
 \* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
 

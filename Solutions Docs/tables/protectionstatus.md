@@ -16,17 +16,18 @@ Reference for ProtectionStatus table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/protectionstatus) |
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
+- [SOC Handbook](../solutions/soc-handbook.md)
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (4)
 
-### Workbooks (2)
+### Workbooks (4)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -34,11 +35,18 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
 
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+
 **GitHub Only:**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 
 ## Resource Types
 

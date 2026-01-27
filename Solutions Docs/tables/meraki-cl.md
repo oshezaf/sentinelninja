@@ -43,12 +43,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
-## Parsers Using This Table (3)
+## Parsers Using This Table (4)
 
-### ASIM Parsers (2)
+### ASIM Parsers (3)
 
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
+| [ASimAuditEventCiscoMeraki](../asim/asimauditeventciscomeraki.md) | AuditEvent | Cisco Meraki |  |
 | [ASimAuthenticationCiscoMeraki](../asim/asimauthenticationciscomeraki.md) | Authentication | Cisco Meraki |  |
 | [ASimNetworkSessionCiscoMeraki](../asim/asimnetworksessionciscomeraki.md) | NetworkSession | Cisco Meraki |  |
 

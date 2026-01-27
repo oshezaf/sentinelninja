@@ -39,6 +39,16 @@ This parser reads from the following tables:
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
 
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [VectraXDR](../connectors/vectraxdr.md) | [Vectra XDR](../solutions/vectra-xdr.md) |
+
+**Solutions:** [Vectra XDR](../solutions/vectra-xdr.md)
+
 ## References
 
 - [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)

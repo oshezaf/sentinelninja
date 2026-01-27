@@ -34,12 +34,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Resource Types
-
-This table collects data from the following Azure resource types:
-
-- `microsoft.securityinsights/asimtables`
-
 ## Parsers Using This Table (2)
 
 ### ASIM Parsers (1)
@@ -53,6 +47,12 @@ This table collects data from the following Azure resource types:
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.securityinsights/asimtables`
 
 ---
 

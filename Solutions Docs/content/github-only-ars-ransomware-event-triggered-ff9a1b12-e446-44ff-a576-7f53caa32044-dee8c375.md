@@ -22,9 +22,9 @@ This rule detects when the ASR rule AsrRansomwareBlocked or AsrRansomwareAudited
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType has_any "AsrRansomwareAudited,AsrRansomwareBlocked"` | ✓ | ✗ |
 
 ---
 

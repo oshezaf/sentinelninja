@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) | `EventID == "0"`<br>`Source == "MOVEit DMZ Audit"` | ✓ | ✗ |
+| [`Event`](../tables/event.md) | `EventID == "0"`<br>`EventLog == "Application"`<br>`Source == "MOVEit DMZ Audit"` | ✓ | ✗ |
 
 ---
 

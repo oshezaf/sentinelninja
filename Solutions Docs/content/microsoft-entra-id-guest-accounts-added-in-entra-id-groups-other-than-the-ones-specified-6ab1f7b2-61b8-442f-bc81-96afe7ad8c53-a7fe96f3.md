@@ -25,9 +25,9 @@ Guest Accounts are added in the Organization Tenants to perform various tasks i.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to group,Add owner to group"` | ✓ | ✗ |
 
 ---
 

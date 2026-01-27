@@ -21,11 +21,11 @@ Microsoft Defender for Identity raises alert on suspicious Kerberos ticket, poin
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
-| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API |
+|:------|:-------------|:---------------:|:-------------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "LogonSuccess"` | ✓ | ✗ |
+| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ |
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ |
 
 ---
 

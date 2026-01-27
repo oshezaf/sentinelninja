@@ -10,7 +10,7 @@
 
 📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/azure/network-watcher/traffic-analytics-schema) - NSG flow log schema and data aggregation
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -19,18 +19,25 @@ This table is used by the following solutions:
 - [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
+- [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (8)
 
-### Analytic Rules (1)
+### Analytic Rules (2)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-a4025a76-6490-4e6b-bb69-d02be4b03f07-8964f465.md) |  |
+
+**In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-new-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-929160b7-4449-4307-a3f9-bb742d1b8f01-d566e349.md) |  |
 
 ### Hunting Queries (3)
 
@@ -66,14 +73,6 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 | [AzureNetworkWatcher](../content/github-only-azurenetworkwatcher-c62a6efc.md) |  |
-
-## Parsers Using This Table (1)
-
-### ASIM Parsers (1)
-
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimNetworkSessionAzureNSG](../asim/asimnetworksessionazurensg.md) | NetworkSession | Azure NSG flows |  |
 
 ---
 

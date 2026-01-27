@@ -69,7 +69,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (99)
+## Content Items Using This Table (100)
 
 ### Analytic Rules (72)
 
@@ -202,7 +202,7 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-ti-map-file-entity-to-vmconnection-event-172a321b-c46b-4508-87c6-e2691c778107-debef4d0.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md) |  |
 
-### Workbooks (22)
+### Workbooks (23)
 
 **In solution [CofenseIntelligence](../solutions/cofenseintelligence.md):**
 
@@ -264,6 +264,7 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md) |  |
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 
