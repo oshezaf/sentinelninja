@@ -364,13 +364,13 @@ This table is ingested by the following connectors:
 
 ### Workbooks (9)
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
-| Content Item |
-|:-------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"`
 
 | Content Item |
 |:-------------|
@@ -394,11 +394,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
-| Content Item |
-|:-------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
 **GitHub Only:**
 
@@ -408,19 +408,19 @@ This table is ingested by the following connectors:
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |
 
-## Selection Criteria Summary (6 criteria, 16 total references)
+## Selection Criteria Summary (6 criteria, 14 total references)
 
-References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 14 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"` | - | 4 | - | - | **4** |
 | `ActionType == "QuarantineReleaseMessage"` | - | 4 | - | - | **4** |
-| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 3 | - | - | **3** |
 | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | - | 2 | - | - | **2** |
 | `ActionType == "ClickAllowed"` | - | 2 | - | - | **2** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **16** | **0** | **0** | **16** |
+| `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission"` | - | 1 | - | - | **1** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **14** | **0** | **0** | **14** |
 
 ### ActionType
 
@@ -433,30 +433,16 @@ References by type: 0 connectors, 16 content items, 0 ASIM parsers, 0 other pars
 | `QuarantineReleaseMessage` | - | 4 | - | - | **4** |
 | `AdminSubmissionSubmitted` | - | 3 | - | - | **3** |
 | `Redelivery` | - | 3 | - | - | **3** |
-| `Add member to role` | - | 3 | - | - | **3** |
-| `Add user` | - | 3 | - | - | **3** |
-| `InteractiveLogon` | - | 3 | - | - | **3** |
-| `RemoteInteractiveLogon` | - | 3 | - | - | **3** |
-| `Reset user password` | - | 3 | - | - | **3** |
-| `ResourceAccess` | - | 3 | - | - | **3** |
-| `Sign-in` | - | 3 | - | - | **3** |
-| `Update user` | - | 3 | - | - | **3** |
 | `ClickAllowed` | - | 2 | - | - | **2** |
-| `AttackSimUserSubmission` | - | 1 | - | - | **1** |
-| `ClickBlocked` | - | 1 | - | - | **1** |
 | `Spam ZAP` | - | 1 | - | - | **1** |
-| `Automated Remediation` | - | 1 | - | - | **1** |
-| `contains Submission` | - | 1 | - | - | **1** |
-| `contains UserSubmission` | - | 1 | - | - | **1** |
-| `contains ZAP` | - | 1 | - | - | **1** |
-| `has Malware ZAP` | - | 1 | - | - | **1** |
-| `has Phish ZAP` | - | 1 | - | - | **1** |
-| `has Spam ZAP` | - | 1 | - | - | **1** |
-| `has ZAP` | - | 1 | - | - | **1** |
-| `has_any ClickAllowed` | - | 1 | - | - | **1** |
-| `has_any ClickBlocked` | - | 1 | - | - | **1** |
-| `has_any UrlErrorPage` | - | 1 | - | - | **1** |
-| `has_any UrlScanInProgress` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 1 | - | - | **1** |
+| `Add user` | - | 1 | - | - | **1** |
+| `InteractiveLogon` | - | 1 | - | - | **1** |
+| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `ResourceAccess` | - | 1 | - | - | **1** |
+| `Sign-in` | - | 1 | - | - | **1** |
+| `Update user` | - | 1 | - | - | **1** |
 
 ---
 

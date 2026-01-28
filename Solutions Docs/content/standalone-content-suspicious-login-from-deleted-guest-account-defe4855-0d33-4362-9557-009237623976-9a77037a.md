@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Delete user"` | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Delete user"` | ✓ | ✗ |
 
 ## Associated Connectors
 

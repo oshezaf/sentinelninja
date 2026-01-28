@@ -1,6 +1,4 @@
-# ⚠️ One Identity Safeguard
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# One Identity Safeguard
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OneIdentityCloud.svg" alt="" width="75" height="75">
 

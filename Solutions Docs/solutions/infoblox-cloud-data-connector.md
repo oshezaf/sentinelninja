@@ -1,6 +1,4 @@
-# ⚠️ Infoblox Cloud Data Connector
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Infoblox Cloud Data Connector
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="Infoblox Cloud Data Connector Logo" width="75" height="75">
 

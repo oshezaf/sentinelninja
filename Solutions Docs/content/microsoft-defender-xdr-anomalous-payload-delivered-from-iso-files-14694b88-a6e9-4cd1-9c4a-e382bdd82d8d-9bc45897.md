@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
 
 ---
 

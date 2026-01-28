@@ -1,6 +1,6 @@
 # ⚠️ VersasecCms
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Logos/versasec-logo.svg" alt="" width="75" height="75">
 

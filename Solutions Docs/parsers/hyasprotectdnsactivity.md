@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for all Hyas Protect DNS events |
 | Location | Solution |
-| Solution | [HYAS Protect](../solutions/hyas-protect.md) ⚠️ |
+| Solution | [HYAS Protect](../solutions/hyas-protect.md) |
 | Version | 1.0.0 |
 | Last Updated | 2023-09-26 |
 | Category | HYASProtectParser |

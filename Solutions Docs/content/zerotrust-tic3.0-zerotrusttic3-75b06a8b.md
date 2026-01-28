@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ |
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ |
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
 | [`AzureActivity`](../tables/azureactivity.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` | ✗ | ✗ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | — | ✗ |
@@ -31,7 +31,7 @@ This content item queries data from the following tables:
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ |
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |  | — | — |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |

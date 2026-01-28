@@ -1,6 +1,4 @@
-# ⚠️ Intel471
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Intel471
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/intel471_logo.svg" alt="Intel471 Logo" width="75" height="75">
 

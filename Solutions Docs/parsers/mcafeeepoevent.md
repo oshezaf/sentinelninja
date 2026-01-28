@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for McAfeeEPOEvent |
 | Location | Solution |
-| Solution | [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) ⚠️ |
+| Solution | [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) |
 | Version | 1.0.0 |
 | Last Updated | 2023-08-23 |
 | Category | Microsoft Sentinel Parser |

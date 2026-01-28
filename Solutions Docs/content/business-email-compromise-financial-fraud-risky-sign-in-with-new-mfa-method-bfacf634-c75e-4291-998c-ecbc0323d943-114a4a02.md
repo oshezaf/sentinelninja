@@ -24,10 +24,10 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Update user"` | ✓ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Update user"` | ✓ | ✗ |
 
 ---
 

@@ -69,35 +69,33 @@ This table is ingested by the following connectors:
 
 ### Workbooks (3)
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "LogonFailed,LogonSuccess"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
-| Content Item |
-|:-------------|
-| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |  |
 
 **GitHub Only:**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) | `ActionType in "LogonFailed,LogonSuccess"` |
+| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) |  |
 
-## Selection Criteria Summary (2 criteria, 4 total references)
+## Selection Criteria Summary (1 criteria, 3 total references)
 
-References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "LogonSuccess"` | - | 3 | - | - | **3** |
-| `ActionType in "LogonFailed,LogonSuccess"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **4** | **0** | **0** | **4** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `LogonSuccess` | - | 4 | - | - | **4** |
-| `LogonFailed` | - | 1 | - | - | **1** |
+| `LogonSuccess` | - | 3 | - | - | **3** |
 
 ---
 

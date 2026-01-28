@@ -13,12 +13,13 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | [Parsers](parsers/parsers-index.md) | 538 | Non-ASIM KQL functions |
 | [ASIM Parsers](asim/asim-index.md) | 95 pairs | Normalized schema parsers |
 | [ASIM Products](asim/asim-products-index.md) | 80 | Products with ASIM support |
+| [Statistics](statistics.md) | - | Comprehensive statistics and metrics |
 
 ---
 
 ### Notes
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 

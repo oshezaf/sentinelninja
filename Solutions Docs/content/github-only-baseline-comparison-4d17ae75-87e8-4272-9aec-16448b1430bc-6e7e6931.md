@@ -25,11 +25,11 @@ This content item queries data from the following tables:
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ |
 | [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ |
 | [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ |
 | [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ |

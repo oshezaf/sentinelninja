@@ -1,6 +1,4 @@
-# ⚠️ SINEC Security Guard
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# SINEC Security Guard
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SSG.svg" alt="" width="75" height="75">
 

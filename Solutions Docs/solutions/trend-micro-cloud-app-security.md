@@ -1,6 +1,4 @@
-# ⚠️ Trend Micro Cloud App Security
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Trend Micro Cloud App Security
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Trend_Micro_Logo.svg" alt="Trend Micro Cloud App Security Logo" width="75" height="75">
 

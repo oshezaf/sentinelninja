@@ -1,6 +1,6 @@
 # ⚠️ IPinfo Carrier Data Connector
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ipinfo.svg" alt="" width="75" height="75">
 

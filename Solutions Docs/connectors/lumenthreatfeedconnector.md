@@ -1,6 +1,4 @@
-# ⚠️ Lumen Defender Threat Feed Data Connector
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Lumen Defender Threat Feed Data Connector
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="" width="75" height="75">
 

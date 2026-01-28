@@ -89,7 +89,7 @@ This table is ingested by the following connectors:
 | [fireeye-red-team-tools-HASHs [Nobelium]](../content/github-only-fireeye-red-team-tools-hashs-[nobelium]-3e9ac786-134c-4917-99bd-4a7ce01049ab-cc118b80.md) |  |
 | [locate-dll-loaded-in-memory[Nobelium]](../content/github-only-locate-dll-loaded-in-memory[nobelium]-bfea1fee-aa17-467d-b285-932d5a45ca53-34f871d8.md) |  |
 | [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
-| [regsvr32-rundll32-abnormal-image-loads](../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.md) | `ActionType in "FileCreated,FileRenamed"` |
+| [regsvr32-rundll32-abnormal-image-loads](../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.md) |  |
 | [regsvr32-rundll32-image-loads-abnormal-extension](../content/github-only-regsvr32-rundll32-image-loads-abnormal-extension-f24f6403-cba0-4f3c-9f88-28782b9ea39a-555df071.md) |  |
 
 ### Workbooks (3)
@@ -107,23 +107,21 @@ This table is ingested by the following connectors:
 | [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
-## Selection Criteria Summary (2 criteria, 2 total references)
+## Selection Criteria Summary (1 criteria, 1 total references)
 
-References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,FileRenamed"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **2** | **0** | **0** | **2** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 2 | - | - | **2** |
+| `FileCreated` | - | 1 | - | - | **1** |
 | `FileModified` | - | 1 | - | - | **1** |
-| `FileRenamed` | - | 1 | - | - | **1** |
 
 ---
 

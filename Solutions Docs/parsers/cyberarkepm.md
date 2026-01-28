@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for CyberArkEPM |
 | Location | Solution |
-| Solution | [CyberArkEPM](../solutions/cyberarkepm.md) ⚠️ |
+| Solution | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | Version | 1.0.0 |
 | Last Updated | 2023-08-23 |
 | Category | Microsoft Sentinel Parser |

@@ -128,7 +128,7 @@ This table is ingested by the following connectors:
 | [MFA Rejected by User](../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.md) |  |
 | [MFA Spamming followed by Successful login](../content/microsoft-entra-id-mfa-spamming-followed-by-successful-login-a8cc6d5c-4e7e-4b48-b4ac-d8a116c62a8b-5935aa09.md) |  |
 | [Password spray attack against Microsoft Entra ID Seamless SSO](../content/microsoft-entra-id-password-spray-attack-against-microsoft-entra-id-seamless-sso-fb7ca1c9-e14c-40a3-856e-28f3c14ea1ba-0de0d722.md) |  |
-| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) |  |
+| [Possible SignIn from Azure Backdoor](../content/microsoft-entra-id-possible-signin-from-azure-backdoor-fa00014c-c5f4-4715-8f5b-ba567e19e41e-dd1ac846.md) | `OperationName == "Add unverified domain"` |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
@@ -181,7 +181,7 @@ This table is ingested by the following connectors:
 | [New country signIn with correct password](../content/standalone-content-new-country-signin-with-correct-password-7808c05a-3afd-4d13-998a-a59e2297693f-319c8619.md) |  |
 | [Privileged User Logon from new ASN](../content/standalone-content-privileged-user-logon-from-new-asn-55073036-bb86-47d3-a85a-b113ac3d9396-417005b2.md) |  |
 | [Risky user signin observed in non-Microsoft network device](../content/standalone-content-risky-user-signin-observed-in-non-microsoft-network-device-042f2801-a375-4cfd-bd29-041fc7ed88a0-a75f8abe.md) |  |
-| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) |  |
+| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) | `OperationName == "Delete user"` |
 | [URL Added to Application from Unknown Domain](../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.md) |  |
 
 ### Hunting Queries (60)
@@ -192,7 +192,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Login attempts using Legacy Auth](../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.md) |  |
 | [Microsoft Entra ID signins from new locations](../content/business-email-compromise-financial-fraud-microsoft-entra-id-signins-from-new-locations-41fa6e2d-afe9-4398-9356-cec3a927e44e-6ce1e4de.md) |  |
-| [Risky Sign-in with new MFA method](../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.md) |  |
+| [Risky Sign-in with new MFA method](../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.md) | `OperationName == "Update user"` |
 | [Successful Signin From Non-Compliant Device](../content/business-email-compromise-financial-fraud-successful-signin-from-non-compliant-device-99885ff5-00cf-49e8-9452-6de6aba2a5c7-20eaa2d1.md) |  |
 | [User Accounts - Unusual authentications occurring when countries do not conduct normal business operations.](../content/business-email-compromise-financial-fraud-user-accounts-unusual-authentications-occurring-when-countries-f56b2223-0d4d-4347-9de4-822d195624ee-ea198d62.md) |  |
 | [User Login IP Address Teleportation](../content/business-email-compromise-financial-fraud-user-login-ip-address-teleportation-09a7c5fc-0649-4f7d-a21b-36a754cef6b6-e3c0bf58.md) |  |
@@ -272,7 +272,7 @@ This table is ingested by the following connectors:
 | [Failed Login Attempt by Expired account](../content/standalone-content-failed-login-attempt-by-expired-account-562900b1-39c4-4baf-a050-9cad1641db35-d62dcff7.md) |  |
 | [Failed attempt to access Azure Portal](../content/standalone-content-failed-attempt-to-access-azure-portal-cf83633e-5dfd-4887-993b-c910452439da-614be104.md) |  |
 | [Failed service logon attempt by user account with available AuditData](../content/standalone-content-failed-service-logon-attempt-by-user-account-with-available-auditdata-22f33a4c-e60f-4817-bbfe-9e2ed33cb596-0585369b.md) |  |
-| [Inactive or new account signins](../content/standalone-content-inactive-or-new-account-signins-847c2652-547d-4d5f-9b71-d2f8d81eac62-a5fd3c40.md) |  |
+| [Inactive or new account signins](../content/standalone-content-inactive-or-new-account-signins-847c2652-547d-4d5f-9b71-d2f8d81eac62-a5fd3c40.md) | `OperationName == "Add user"` |
 | [Login attempt by Blocked MFA user](../content/standalone-content-login-attempt-by-blocked-mfa-user-75fd68a2-9ed4-4a1c-8bd7-18efe4c99081-5904d25a.md) |  |
 | [Login spike with increase failure rate](../content/standalone-content-login-spike-with-increase-failure-rate-528c1708-a67e-4e2f-b76d-d5e5e88a22aa-3bf718cc.md) |  |
 | [MFA Spamming](../content/standalone-content-mfa-spamming-7f87c43a-6aff-44fe-907f-651986cbf956-1ec9d2a3.md) |  |
@@ -296,7 +296,7 @@ This table is ingested by the following connectors:
 | [Low & slow password attempts with volatile IP addresses](../content/github-only-low-&-slow-password-attempts-with-volatile-ip-addresses-3d217bb4-9cc2-4aba-838a-48e606e910e6-6761ead7.md) |  |
 | [New Location Sign in with Mail forwarding activity](../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.md) |  |
 | [Privileged Accounts Locked Out](../content/github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.md) |  |
-| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) |  |
+| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) | `OperationName == "Add registered owner to device"` |
 | [Sign-ins from IPs that attempt sign-ins to disabled accounts](../content/github-only-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-53b6d42e-ff74-46a8-abee-ec72181f66ba-e036bce2.md) |  |
 | [Smart Lockouts](../content/github-only-smart-lockouts-02e86bf2-172c-4444-ae8e-e94c5ce2bea3-cf06fb78.md) |  |
 | [Spike in failed sign-in events](../content/github-only-spike-in-failed-sign-in-events-51f4faf9-c3b1-4e9f-9c90-5d6afd191552-ac3569e5.md) |  |
@@ -320,29 +320,29 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md) |  |
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"`
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
-| Content Item |
-|:-------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
 
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `OperationName contains "PIM"`
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
-| Content Item |
-|:-------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
-| Content Item |
-|:-------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
 
-**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):** `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`
+**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 
-| Content Item |
-|:-------------|
-| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
 
 **In solution [Global Secure Access](../solutions/global-secure-access.md):**
 
@@ -368,11 +368,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
-| Content Item |
-|:-------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 
@@ -387,17 +387,17 @@ This table is ingested by the following connectors:
 |:-------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):** `OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
-| Content Item |
-|:-------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):** `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"`
+**In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
-| Content Item |
-|:-------------|
-| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 
 **In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
 
@@ -449,7 +449,7 @@ This table is ingested by the following connectors:
 | [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
 | [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `OperationName in "Add app role assignment grant to user,Add application,Add group,Add member to role,Add member to role completed (PIM activation),Add user,Create access package,Reset user password,Update conditional access policy,Update user,User requests access package assignment"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create access package"`<br>`OperationName contains "permanent"`<br>`OperationName has "User requests access package assignment"`<br>`OperationName has "application"` |
 | [InsecureProtocols](../content/github-only-insecureprotocols-bd42e6f8.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 | [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 | [MicrosoftTeams](../content/github-only-microsoftteams-429824b1.md) |  |
@@ -475,81 +475,61 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (11 criteria, 11 total references)
+## Selection Criteria Summary (9 criteria, 9 total references)
 
-References by type: 0 connectors, 11 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `OperationName == "Add unverified domain"` | - | 1 | - | - | **1** |
+| `OperationName == "Delete user"` | - | 1 | - | - | **1** |
+| `OperationName == "Update user"` | - | 1 | - | - | **1** |
 | `OperationName in "PutBlob,PutRange"` | - | 1 | - | - | **1** |
 | `OperationName == "Sign-in activity"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | - | 1 | - | - | **1** |
-| `OperationName contains "PIM"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | - | 1 | - | - | **1** |
+| `OperationName == "Add user"` | - | 1 | - | - | **1** |
+| `OperationName == "Add registered owner to device"` | - | 1 | - | - | **1** |
 | `OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"` | - | 1 | - | - | **1** |
-| `OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"` | - | 1 | - | - | **1** |
-| `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | - | 1 | - | - | **1** |
 | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **11** | **0** | **0** | **11** |
+| **Total** | **0** | **9** | **0** | **0** | **9** |
 
 ### OperationName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Add member to role` | - | 6 | - | - | **6** |
-| `Add user` | - | 6 | - | - | **6** |
-| `Reset user password` | - | 6 | - | - | **6** |
-| `Update user` | - | 6 | - | - | **6** |
-| `contains PIM` | - | 5 | - | - | **5** |
-| `Sign-in activity` | - | 3 | - | - | **3** |
-| `AzureFirewallIDSLog` | - | 3 | - | - | **3** |
-| `NetworkSecurityGroupEvents` | - | 3 | - | - | **3** |
-| `contains Delete` | - | 3 | - | - | **3** |
-| `Consent to application` | - | 3 | - | - | **3** |
-| `contains delete` | - | 2 | - | - | **2** |
-| `contains remove` | - | 2 | - | - | **2** |
-| `contains Create` | - | 2 | - | - | **2** |
-| `contains Remove` | - | 2 | - | - | **2** |
-| `contains Update` | - | 2 | - | - | **2** |
-| `!= Consent to application` | - | 2 | - | - | **2** |
-| `ApplicationGatewayFirewall` | - | 2 | - | - | **2** |
+| `Update user` | - | 3 | - | - | **3** |
+| `Add user` | - | 3 | - | - | **3** |
+| `Sign-in activity` | - | 2 | - | - | **2** |
+| `Add member to role` | - | 2 | - | - | **2** |
+| `Reset user password` | - | 2 | - | - | **2** |
+| `Add unverified domain` | - | 1 | - | - | **1** |
+| `Delete user` | - | 1 | - | - | **1** |
 | `PutBlob` | - | 1 | - | - | **1** |
 | `PutRange` | - | 1 | - | - | **1** |
-| `contains create` | - | 1 | - | - | **1** |
-| `contains lockbox` | - | 1 | - | - | **1** |
-| `contains update` | - | 1 | - | - | **1** |
-| `contains Add` | - | 1 | - | - | **1** |
-| `contains Audit` | - | 1 | - | - | **1** |
-| `contains Change` | - | 1 | - | - | **1** |
-| `contains Log` | - | 1 | - | - | **1** |
-| `contains Monitor` | - | 1 | - | - | **1** |
-| `contains Write` | - | 1 | - | - | **1** |
-| `contains reset` | - | 1 | - | - | **1** |
-| `!contains external` | - | 1 | - | - | **1** |
-| `!contains invite` | - | 1 | - | - | **1** |
-| `!contains licnense` | - | 1 | - | - | **1** |
-| `contains group` | - | 1 | - | - | **1** |
-| `contains member` | - | 1 | - | - | **1** |
-| `contains principal` | - | 1 | - | - | **1** |
-| `contains role` | - | 1 | - | - | **1** |
-| `contains user` | - | 1 | - | - | **1** |
+| `Add registered owner to device` | - | 1 | - | - | **1** |
+| `Consent to application` | - | 1 | - | - | **1** |
 | `Create Deployment` | - | 1 | - | - | **1** |
 | `Create or Update Virtual Machine` | - | 1 | - | - | **1** |
 | `Create role assignment` | - | 1 | - | - | **1** |
 | `List Storage Account Keys` | - | 1 | - | - | **1** |
 | `Set domain authentication` | - | 1 | - | - | **1** |
 | `Set federation settings on domain` | - | 1 | - | - | **1** |
+| `!= Consent to application` | - | 1 | - | - | **1** |
+| `contains Create` | - | 1 | - | - | **1** |
+| `contains Delete` | - | 1 | - | - | **1** |
+| `contains Update` | - | 1 | - | - | **1** |
 | `contains delet` | - | 1 | - | - | **1** |
+| `contains delete` | - | 1 | - | - | **1** |
+| `contains remove` | - | 1 | - | - | **1** |
 | `has Create` | - | 1 | - | - | **1** |
 | `has_any Create` | - | 1 | - | - | **1** |
 | `has_any Update` | - | 1 | - | - | **1** |
 | `has_any Ip` | - | 1 | - | - | **1** |
 | `has_any Security Rule` | - | 1 | - | - | **1** |
-| `Disable Strong Authentication` | - | 1 | - | - | **1** |
-| `contains password` | - | 1 | - | - | **1** |
+| `ApplicationGatewayFirewall` | - | 1 | - | - | **1** |
+| `AzureFirewallIDSLog` | - | 1 | - | - | **1** |
 | `AzureFirewallThreatIntelLog` | - | 1 | - | - | **1** |
+| `NetworkSecurityGroupEvents` | - | 1 | - | - | **1** |
+| `contains PIM` | - | 1 | - | - | **1** |
 
 ---
 

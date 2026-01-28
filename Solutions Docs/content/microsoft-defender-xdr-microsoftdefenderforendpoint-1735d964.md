@@ -20,11 +20,11 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|
 | [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "AntivirusDetection,PnpDeviceConnected"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` | ✓ | ✗ |
 | [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) |  | ✓ | ✗ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "AntivirusDetection"` | ✓ | ✗ |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ |
-| [`DeviceInfo`](../tables/deviceinfo.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ |
+| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ |

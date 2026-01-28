@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ |
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | ✓ | ✗ |
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ |
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ |
 | [`AWSGuardDuty`](../tables/awsguardduty.md) |  | ✓ | ✓ |
@@ -40,13 +40,13 @@ This content item queries data from the following tables:
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ |
 | [`ConfigurationChange`](../tables/configurationchange.md) |  | ✓ | ✗ |
 | [`ConfigurationData`](../tables/configurationdata.md) |  | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ |
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |  | — | — |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
@@ -65,7 +65,7 @@ This content item queries data from the following tables:
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) |  | ✓ | ✗ |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ |
 | [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ |
 | [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | ✓ | ✓ |

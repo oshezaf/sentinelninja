@@ -23,8 +23,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType in "FileCreated,FileModified"` | ✓ | ✗ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType in "FileCreated,FileModified"` | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
 
 ---
 

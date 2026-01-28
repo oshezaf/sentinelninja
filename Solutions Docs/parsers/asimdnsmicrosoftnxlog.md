@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for ASimDnsMicrosoftNXLog |
 | Location | Solution |
-| Solution | [NXLogDNSLogs](../solutions/nxlogdnslogs.md) ⚠️ |
+| Solution | [NXLogDNSLogs](../solutions/nxlogdnslogs.md) |
 | Version | 1.0.0 |
 | Last Updated | 2023-08-23 |
 | Category | Microsoft Sentinel Parser |

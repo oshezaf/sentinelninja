@@ -1,6 +1,4 @@
-# ⚠️ Barracuda WAF
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Barracuda WAF
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/barracuda_logo.svg" alt="Barracuda WAF Logo" width="75" height="75">
 

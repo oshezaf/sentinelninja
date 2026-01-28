@@ -1,6 +1,4 @@
-# ⚠️ NXLogAixAudit
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# NXLogAixAudit
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="NXLogAixAudit Logo" width="75" height="75">
 

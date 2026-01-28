@@ -26,10 +26,10 @@ This parser reads from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
 | [`ASimAuditEvent`](../asim/asimauditevent.md) |  | — | — |
-| [`ASimAuthentication`](../asim/asimauthentication.md) | `EventVendor !contains "Cymru"` | — | — |
+| [`ASimAuthentication`](../asim/asimauthentication.md) |  | — | — |
 | [`ASimDhcpEvent`](../asim/asimdhcpevent.md) |  | — | — |
 | [`ASimDns`](../asim/asimdns.md) |  | — | — |
-| [`ASimNetworkSession`](../asim/asimnetworksession.md) |  | — | — |
+| [`ASimNetworkSession`](../asim/asimnetworksession.md) | `EventVendor !contains "Cymru"` | — | — |
 | [`ASimWebSession`](../asim/asimwebsession.md) |  | — | — |
 | [`AsimParsersData`](../tables/asimparsersdata.md) |  | — | — |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ |

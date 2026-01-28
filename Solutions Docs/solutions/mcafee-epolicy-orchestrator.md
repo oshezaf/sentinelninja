@@ -1,6 +1,4 @@
-# ⚠️ McAfee ePolicy Orchestrator
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# McAfee ePolicy Orchestrator
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/McAfee%20ePolicy%20Orchestrator/Workbooks/Images/Logo/mcafee_logo.svg" alt="McAfee ePolicy Orchestrator Logo" width="75" height="75">
 

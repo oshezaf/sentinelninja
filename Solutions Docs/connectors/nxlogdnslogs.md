@@ -1,6 +1,4 @@
-# ⚠️ NXLog DNS Logs
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# NXLog DNS Logs
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="75" height="75">
 

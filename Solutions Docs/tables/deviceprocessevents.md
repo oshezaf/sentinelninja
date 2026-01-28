@@ -100,7 +100,7 @@ This table is ingested by the following connectors:
 | [LSASS Credential Dumping with Procdump](../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-c332b840-61e4-462e-a201-0e2d69bad45d-36f7eb44.md) |  |
 | [LaZagne Credential Theft](../content/microsoft-defender-xdr-lazagne-credential-theft-7d0d3050-8dac-4b83-bfae-902f7dc0c21c-2a344765.md) |  |
 | [Office Apps Launching Wscipt](../content/microsoft-defender-xdr-office-apps-launching-wscipt-174de33b-107b-4cd8-a85d-b4025a35453f-49a22465.md) |  |
-| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) | `ActionType in "FileCreated,FileModified"` |
+| [Potential Build Process Compromise - MDE](../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.md) |  |
 | [Qakbot Campaign Self Deletion](../content/microsoft-defender-xdr-qakbot-campaign-self-deletion-47c02e21-3949-4e05-a28e-576cd75ff6f6-a7a7167c.md) |  |
 | [Qakbot Discovery Activies](../content/microsoft-defender-xdr-qakbot-discovery-activies-ba9db6b2-3d05-42ae-8aee-3a15bbe29f27-5676e3c6.md) |  |
 | [Rare Process as a Service](../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.md) |  |
@@ -159,7 +159,7 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Account Creation](../content/microsoft-defender-xdr-account-creation-d0585c34-1b03-473c-938d-11fe73f7e053-4486ca7f.md) |  |
-| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
+| [Anomalous Payload Delivered from ISO files](../content/microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) |  |
 | [Bitsadmin Activity](../content/microsoft-defender-xdr-bitsadmin-activity-bba7bbbe-5aa3-4c08-bd23-dd6cd8ccaf20-7a642ef6.md) |  |
 | [Check for multiple signs of Ransomware Activity](../content/microsoft-defender-xdr-check-for-multiple-signs-of-ransomware-activity-4f669adc-2c00-4bc8-896b-e59f068dcb18-164f406c.md) |  |
 | [Clear System Logs](../content/microsoft-defender-xdr-clear-system-logs-6284b962-ab0d-46d8-a47f-1eb1ac1be463-c8af8f2d.md) |  |
@@ -374,7 +374,7 @@ This table is ingested by the following connectors:
 | [Webserver Executing Suspicious Applications](../content/github-only-webserver-executing-suspicious-applications-1a9dfc1d-6dd2-42e5-81ef-fb90f3d96239-bcc646c8.md) |  |
 | [Zip-Doc - Word Launching MSHTA](../content/github-only-zip-doc-word-launching-mshta-e9924adb-3f5b-4ef2-8672-89ae381226f9-304a3d04.md) |  |
 | [alt-data-streams](../content/github-only-alt-data-streams-7d8692e0-e643-43cb-ac77-6efc5a6b7f4d-95ce681f.md) |  |
-| [anomalous-payload-delivered-from-iso-file](../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
+| [anomalous-payload-delivered-from-iso-file](../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.md) |  |
 | [app-armor-stopped](../content/github-only-app-armor-stopped-a188fa21-dd3a-4cf9-910b-1384711f7dce-d7b5a08f.md) |  |
 | [apt sofacy](../content/github-only-apt-sofacy-36a6028d-f977-455f-be11-669e993a25d6-cc5ef74d.md) |  |
 | [apt sofacy zebrocy](../content/github-only-apt-sofacy-zebrocy-92f02b0b-cd8e-4d49-957c-5ad0ee86da65-f6430eae.md) |  |
@@ -397,9 +397,9 @@ This table is ingested by the following connectors:
 | [detect-cyzfc-activity (3)](../content/github-only-detect-cyzfc-activity-3-5c9c8f5c-01cf-4670-9beb-ee90e0a4ec58-659ab825.md) |  |
 | [detect-doublepulsar-execution](../content/github-only-detect-doublepulsar-execution-10a17179-d143-476d-80cd-c5a6cca66d59-94331698.md) |  |
 | [detect-exploitation-of-cve-2018-8653](../content/github-only-detect-exploitation-of-cve-2018-8653-1f541cc3-2c46-4f2a-9b4b-e082f25ec369-55a4893d.md) |  |
-| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) | `ActionType in "NamedPipeEvent,RegistryKeyCreated"` |
+| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) |  |
 | [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) |  |
-| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) | `ActionType == "FileCreated"` |
+| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
 | [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.md) |  |
@@ -513,33 +513,24 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimProcessEventMicrosoft365D](../asim/asimprocesseventmicrosoft365d.md) | ProcessEvent | Microsoft 365 Defender for endpoint |  |
 
-## Selection Criteria Summary (7 criteria, 8 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType == "BrowserLaunchedToOpenUrl"` | - | 2 | - | - | **2** |
 | `ActionType != "ListeningConnectionCreated"` | - | 1 | - | - | **1** |
 | `ActionType == "LogonSuccess"` | - | 1 | - | - | **1** |
 | `ActionType == "InboundConnectionAccepted"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
-| `ActionType in "NamedPipeEvent,RegistryKeyCreated"` | - | 1 | - | - | **1** |
-| `ActionType == "FileCreated"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **8** | **0** | **0** | **8** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FileCreated` | - | 2 | - | - | **2** |
-| `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
 | `!= ListeningConnectionCreated` | - | 1 | - | - | **1** |
 | `LogonSuccess` | - | 1 | - | - | **1** |
 | `InboundConnectionAccepted` | - | 1 | - | - | **1** |
-| `FileModified` | - | 1 | - | - | **1** |
-| `NamedPipeEvent` | - | 1 | - | - | **1** |
-| `RegistryKeyCreated` | - | 1 | - | - | **1** |
 
 ---
 

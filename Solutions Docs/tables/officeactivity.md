@@ -314,11 +314,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
+| Content Item |
+|:-------------|
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 
@@ -353,7 +353,7 @@ This table is ingested by the following connectors:
 | [MicrosoftTeams](../content/github-only-microsoftteams-429824b1.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` |
 | [Office365](../content/github-only-office365-fa05d9ea.md) | `OfficeWorkload in "Exchange,OneDrive,SharePoint"` |
 | [SharePointAndOneDrive](../content/github-only-sharepointandonedrive-a82e2f82.md) | `OfficeWorkload in "OneDrive,SharePoint"` |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OfficeWorkload == "Exchange"` |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OfficeWorkload == "Exchange"`<br>`OperationName == "Add member to group"`<br>`OperationName in "Set domain authentication,Set federation settings on domain"`<br>`OperationName has_any "Add service principal,Certificates`<br>`secrets management"` |
 | [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (2)
@@ -370,9 +370,9 @@ This table is ingested by the following connectors:
 |:-------|:---------|
 | [MESOfficeActivityLogs](../parsers/mesofficeactivitylogs.md) | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 
-## Selection Criteria Summary (16 criteria, 52 total references)
+## Selection Criteria Summary (17 criteria, 53 total references)
 
-References by type: 1 connectors, 49 content items, 1 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 50 content items, 1 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -392,7 +392,8 @@ References by type: 1 connectors, 49 content items, 1 ASIM parsers, 1 other pars
 | `OfficeWorkload in "Exchange,OneDrive,SharePoint"` | - | 1 | - | - | **1** |
 | `OfficeWorkload in "OneDrive,SharePoint"` | - | 1 | - | - | **1** |
 | `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"` | - | 1 | - | - | **1** |
-| **Total** | **1** | **49** | **1** | **1** | **52** |
+| `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"` | - | 1 | - | - | **1** |
+| **Total** | **1** | **50** | **1** | **1** | **53** |
 
 ### OfficeWorkload
 
@@ -408,6 +409,21 @@ References by type: 1 connectors, 49 content items, 1 ASIM parsers, 1 other pars
 | `has_any Exchange` | - | 2 | - | - | **2** |
 | `SPO/OneDrive` | - | 1 | - | - | **1** |
 | `Teams` | - | 1 | - | - | **1** |
+
+### OperationName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has_any Add directory role member` | - | 1 | - | - | **1** |
+| `has_any Add member to role` | - | 1 | - | - | **1** |
+| `has_any Add user` | - | 1 | - | - | **1** |
+| `has_any Create user` | - | 1 | - | - | **1** |
+| `has_any Role assignment` | - | 1 | - | - | **1** |
+| `has_any Update user` | - | 1 | - | - | **1** |
+| `has_any directory write` | - | 1 | - | - | **1** |
+| `has_any policy update` | - | 1 | - | - | **1** |
+| `has_any role assignment` | - | 1 | - | - | **1** |
+| `has_any role update` | - | 1 | - | - | **1** |
 
 ### RecordType
 

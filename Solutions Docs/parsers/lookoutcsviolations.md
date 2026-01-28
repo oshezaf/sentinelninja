@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for LookoutCSViolations |
 | Location | Solution |
-| Solution | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) ⚠️ |
+| Solution | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
 | Version | 1.0.0 |
 | Last Updated | 2023-08-23 |
 | Category | Microsoft Sentinel Parser |

@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "Create"` | ✓ | ✗ |
-| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationName has "Create"` | ✗ | ✗ |
 | [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
 
 ## Associated Connectors

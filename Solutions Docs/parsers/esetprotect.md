@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for ESETPROTECT |
 | Location | Solution |
-| Solution | [ESETPROTECT](../solutions/esetprotect.md) ⚠️ |
+| Solution | [ESETPROTECT](../solutions/esetprotect.md) |
 | Version | 1.0.0 |
 | Last Updated | 2023-08-23 |
 | Category | Microsoft Sentinel Parser |

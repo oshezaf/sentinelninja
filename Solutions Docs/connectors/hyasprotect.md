@@ -1,6 +1,4 @@
-# ⚠️ HYAS Protect
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# HYAS Protect
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Hyas.svg" alt="" width="75" height="75">
 

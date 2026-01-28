@@ -148,7 +148,7 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) | `ActionType == "PowerShellCommand"` |
 | [CVE-2022-22965 Network Activity](../content/github-only-cve-2022-22965-network-activity-98b496c6-da2e-4b03-8e38-c038b2e3062d-1a14d783.md) | `ActionType == "NetworkSignatureInspected"` |
 | [Connection to Rare DNS Hosts](../content/github-only-connection-to-rare-dns-hosts-402b16b9-b41d-477a-9e24-78fc1acdd051-df8eea59.md) |  |
 | [Connectivity Failures by Device](../content/github-only-connectivity-failures-by-device-d2097370-9cfb-4f52-ab1b-8cb07a033d44-b558d71d.md) | `ActionType == "ConnectionFailed"` |
@@ -164,7 +164,7 @@ This table is ingested by the following connectors:
 | [Download of New File Using Curl](../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.md) |  |
 | [EncodedDomainURL [Nobelium]](../content/github-only-encodeddomainurl-[nobelium]-c561bf69-6a6c-4d0a-960a-b69e0e7c8f51-72f5ce64.md) | `ActionType in "DNS query,DnsQueryResponse"` |
 | [Excel file download domain pattern](../content/github-only-excel-file-download-domain-pattern-1dd47f50-d42d-4e2f-9c2b-6e6c22147916-ed8cb6fe.md) |  |
-| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) | `ActionType in "FileCreated,FileModified"` |
+| [File Copy and Execution](../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.md) |  |
 | [File footprint (1)](../content/github-only-file-footprint-1-1f80f1cf-97e1-4fb8-ad5a-e573fac7b9e3-599349e2.md) |  |
 | [Firewall Policy Design Assistant](../content/github-only-firewall-policy-design-assistant-7323d9ca-ebf9-42da-a57b-015969fbd660-4982c548.md) | `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"` |
 | [Flash-CVE-2018-4848](../content/github-only-flash-cve-2018-4848-8e32bc35-72e6-4bc9-b3bb-2ee346c8acf0-300d8c2d.md) |  |
@@ -236,7 +236,7 @@ This table is ingested by the following connectors:
 | [Remote Management and Monitoring tool - parsec.app - Network Connection](../content/github-only-remote-management-and-monitoring-tool-parsec.app-network-connection-070b55d3-eb84-4312-a116-1af9965cd6e4-b89bf545.md) |  |
 | [Remote Management and Montioring tool - Action1 - Network Connection](../content/github-only-remote-management-and-montioring-tool-action1-network-connection-7da76b41-8c1d-4602-91c6-5d99738d38f4-2b2041fc.md) |  |
 | [Remote Management and Montioring tool - Addigy - Network Connection](../content/github-only-remote-management-and-montioring-tool-addigy-network-connection-4f0b3b8d-bde4-4cce-9ff7-1f0c0a7085af-dd1e9d14.md) |  |
-| [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) |  |
+| [Roasting](../content/github-only-roasting-17a34f6c-b3ba-42a0-810a-1746281e672d-a36a08fa.md) | `ActionType == "LDAP query"` |
 | [RunDLL Suspicious Network Connection](../content/github-only-rundll-suspicious-network-connection-d0831db3-009f-40bb-9f82-c66b1f9674cd-46ab6288.md) |  |
 | [SMB shares discovery](../content/github-only-smb-shares-discovery-a3dc6ecb-d910-467b-844e-a3b87744c4c9-a86d4bee.md) |  |
 | [SolarWinds -CVE-2021-35211](../content/github-only-solarwinds-cve-2021-35211-ff01fb94-9b27-48b9-a304-2e86108b5ca4-b19d7fb2.md) | `ActionType == "ConnectionSuccess"` |
@@ -289,17 +289,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Content Item |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "FileCreated,UsbDriveMounted"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
+| Content Item |
+|:-------------|
+| [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 
@@ -311,10 +311,10 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
-| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `ActionType == "FileCreated"` |
+| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) | `ActionType in "FileCreated,UsbDriveMounted"` |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActionType == "RemoteInteractiveLogon"`<br>`ActionType == "LdapSearch"` |
 
 ## Parsers Using This Table (1)
 
@@ -324,9 +324,9 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimNetworkSessionMicrosoft365Defender](../asim/asimnetworksessionmicrosoft365defender.md) | NetworkSession | M365 Defender for Endpoint |
 
-## Selection Criteria Summary (9 criteria, 21 total references)
+## Selection Criteria Summary (12 criteria, 24 total references)
 
-References by type: 0 connectors, 20 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 23 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -336,10 +336,13 @@ References by type: 0 connectors, 20 content items, 1 ASIM parsers, 0 other pars
 | `ActionType == "InboundConnectionAccepted"` | - | 2 | - | - | **2** |
 | `ActionType in "DNS query,DnsQueryResponse"` | - | 2 | - | - | **2** |
 | `ActionType in "ExploitGuardNetworkProtectionBlocked,SmartScreenUrlWarning"` | - | 1 | - | - | **1** |
-| `ActionType in "FileCreated,FileModified"` | - | 1 | - | - | **1** |
+| `ActionType == "LDAP query"` | - | 1 | - | - | **1** |
 | `ActionType == "NetworkSignatureInspected"` | - | 1 | - | - | **1** |
+| `ActionType == "PowerShellCommand"` | - | 1 | - | - | **1** |
 | `ActionType in "ConnectionFound,ConnectionRequest,ConnectionSuccess,InboundConnectionAccepted,ListeningConnectionCreated"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **20** | **1** | **0** | **21** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| `ActionType in "FileCreated,UsbDriveMounted"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **23** | **1** | **0** | **24** |
 
 ### ActionType
 
@@ -353,12 +356,22 @@ References by type: 0 connectors, 20 content items, 1 ASIM parsers, 0 other pars
 | `DnsQueryResponse` | - | 2 | - | - | **2** |
 | `ExploitGuardNetworkProtectionBlocked` | - | 1 | - | - | **1** |
 | `SmartScreenUrlWarning` | - | 1 | - | - | **1** |
-| `FileCreated` | - | 1 | - | - | **1** |
-| `FileModified` | - | 1 | - | - | **1** |
+| `LDAP query` | - | 1 | - | - | **1** |
 | `NetworkSignatureInspected` | - | 1 | - | - | **1** |
+| `PowerShellCommand` | - | 1 | - | - | **1** |
 | `ConnectionFound` | - | 1 | - | - | **1** |
 | `ConnectionRequest` | - | 1 | - | - | **1** |
 | `ListeningConnectionCreated` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 1 | - | - | **1** |
+| `Add user` | - | 1 | - | - | **1** |
+| `InteractiveLogon` | - | 1 | - | - | **1** |
+| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `ResourceAccess` | - | 1 | - | - | **1** |
+| `Sign-in` | - | 1 | - | - | **1** |
+| `Update user` | - | 1 | - | - | **1** |
+| `FileCreated` | - | 1 | - | - | **1** |
+| `UsbDriveMounted` | - | 1 | - | - | **1** |
 
 ---
 

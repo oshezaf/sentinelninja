@@ -1,6 +1,4 @@
-# ⚠️ SecurityScorecard Issue
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# SecurityScorecard Issue
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SecurityScorecard-Cybersecurity-Ratings.svg" alt="" width="75" height="75">
 

@@ -420,12 +420,12 @@ References by type: 6 connectors, 62 content items, 0 ASIM parsers, 1 other pars
 | `Category == "AzureFirewallNetworkRule"` | - | 1 | - | 1 | **2** |
 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | - | 2 | - | - | **2** |
 | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | - | 2 | - | - | **2** |
-| `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
-| `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
-| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
 | `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
-| `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` | 1 | - | - | - | **1** |
+| `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
+| `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
 | `ResourceType == "AZUREFIREWALLS"` | 1 | - | - | - | **1** |
+| `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` | 1 | - | - | - | **1** |
+| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
 | `Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"` | - | 1 | - | - | **1** |
 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"`<br>`ResourceType == "AZUREFIREWALLS"` | - | 1 | - | - | **1** |
 | `Category == "NetworkSecurityGroupEvent"` | - | 1 | - | - | **1** |
@@ -460,6 +460,12 @@ References by type: 6 connectors, 62 content items, 0 ASIM parsers, 1 other pars
 | `NetworkSecurityGroupRuleCounter` | 1 | 1 | - | - | **2** |
 | `AzureFirewallDnsProxy` | - | 2 | - | - | **2** |
 | `WebApplicationFirewallLogs` | - | 2 | - | - | **2** |
+| `cluster-autoscaler` | 1 | - | - | - | **1** |
+| `guard` | 1 | - | - | - | **1** |
+| `kube-apiserver` | 1 | - | - | - | **1** |
+| `kube-audit-admin` | 1 | - | - | - | **1** |
+| `kube-controller-manager` | 1 | - | - | - | **1** |
+| `kube-scheduler` | 1 | - | - | - | **1** |
 | `AutomaticTuning` | 1 | - | - | - | **1** |
 | `Basic` | 1 | - | - | - | **1** |
 | `Blocks` | 1 | - | - | - | **1** |
@@ -473,12 +479,6 @@ References by type: 6 connectors, 62 content items, 0 ASIM parsers, 1 other pars
 | `Timeouts` | 1 | - | - | - | **1** |
 | `WorkloadManagement` | 1 | - | - | - | **1** |
 | `contains SQLSecurityAuditEvents` | 1 | - | - | - | **1** |
-| `cluster-autoscaler` | 1 | - | - | - | **1** |
-| `guard` | 1 | - | - | - | **1** |
-| `kube-apiserver` | 1 | - | - | - | **1** |
-| `kube-audit-admin` | 1 | - | - | - | **1** |
-| `kube-controller-manager` | 1 | - | - | - | **1** |
-| `kube-scheduler` | 1 | - | - | - | **1** |
 | `DDoSProtectionNotifications` | - | 1 | - | - | **1** |
 | `AuditEvent` | - | 1 | - | - | **1** |
 | `All` | - | 1 | - | - | **1** |
@@ -494,9 +494,9 @@ References by type: 6 connectors, 62 content items, 0 ASIM parsers, 1 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `PUBLICIPADDRESSES` | 1 | 7 | - | - | **8** |
-| `APPLICATIONGATEWAYS` | 1 | 7 | - | - | **8** |
 | `AZUREFIREWALLS` | 1 | 7 | - | - | **8** |
+| `APPLICATIONGATEWAYS` | 1 | 7 | - | - | **8** |
+| `PUBLICIPADDRESSES` | 1 | 7 | - | - | **8** |
 | `VAULTS` | - | 8 | - | - | **8** |
 | `CDNWEBAPPLICATIONFIREWALLPOLICIES` | 1 | 4 | - | - | **5** |
 | `FRONTDOORS` | 1 | 4 | - | - | **5** |

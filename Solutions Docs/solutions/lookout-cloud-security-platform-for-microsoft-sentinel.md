@@ -1,6 +1,4 @@
-# ⚠️ Lookout Cloud Security Platform for Microsoft Sentinel
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Lookout Cloud Security Platform for Microsoft Sentinel
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Lookout Cloud Security Platform for Microsoft Sentinel Logo" width="75" height="75">
 

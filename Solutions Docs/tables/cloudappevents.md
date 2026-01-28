@@ -264,9 +264,9 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) | `ActionType in "Register Microsoft.SecurityCopilot,Write Capacities"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType in "Add member to role,Add service principal.,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ActionType == "Add service principal."` |
 | [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType in "Add member to role,Add service principal.,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ActionType == "Add service principal."` |
 
 ## Selection Criteria Summary (36 criteria, 143 total references)
 

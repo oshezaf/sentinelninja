@@ -1,6 +1,4 @@
-# ⚠️ Semperis Directory Services Protector
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Semperis Directory Services Protector
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Semperis%20Directory%20Services%20Protector/Workbooks/Images/Logo/Semperis.svg" alt="" width="75" height="75">
 

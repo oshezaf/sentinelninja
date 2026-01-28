@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for dsp_parser |
 | Location | Solution |
-| Solution | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) ⚠️ |
+| Solution | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | Version | 1.0.0 |
 | Last Updated | 2024-12-25 |
 | Category | Microsoft Sentinel Parser |

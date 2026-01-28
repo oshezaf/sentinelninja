@@ -14,7 +14,7 @@
 |:----------|:------|
 | Title | Parser for TrendMicroCAS |
 | Location | Solution |
-| Solution | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) ⚠️ |
+| Solution | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | Version | 1.0.0 |
 | Last Updated | 2023-08-23 |
 | Category | Microsoft Sentinel Parser |

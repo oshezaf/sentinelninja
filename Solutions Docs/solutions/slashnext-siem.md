@@ -1,6 +1,4 @@
-# ⚠️ SlashNext SIEM
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# SlashNext SIEM
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlashNext%20SIEM/Playbook/logo/slashnext-logo.svg" alt="SlashNext SIEM Logo" width="75" height="75">
 

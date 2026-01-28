@@ -1,6 +1,4 @@
-# ⚠️ Squadra Technologies SecRmm
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Squadra Technologies SecRmm
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SquadraTechnologiesLogo.svg" alt="Squadra Technologies SecRmm Logo" width="75" height="75">
 

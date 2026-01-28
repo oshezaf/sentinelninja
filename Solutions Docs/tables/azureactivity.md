@@ -155,7 +155,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md) |  |
 | [Azure CloudShell Usage](../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.md) |  |
-| [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) |  |
+| [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) | `OperationName has "Create"` |
 
 **GitHub Only:**
 
@@ -258,7 +258,7 @@ This table is ingested by the following connectors:
 | [AzureActivity](../content/github-only-azureactivity-31e8481e.md) |  |
 | [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 | [AzureServiceHealthWorkbook](../content/github-only-azureservicehealthworkbook-c0a0870d.md) |  |
-| [AzureThreatResearchMatrixWorkbook](../content/github-only-azurethreatresearchmatrixworkbook-50f10e78.md) |  |
+| [AzureThreatResearchMatrixWorkbook](../content/github-only-azurethreatresearchmatrixworkbook-50f10e78.md) | `OperationName in "Add application,Add conditional access policy,Delete conditional access policy,Invite external user,Redeem external user invite,Update application – Certificates`<br>`secrets management,Update conditional access policy"`<br>`OperationName in "Add service principal,Add user,Admin deleted security info,Admin registered security info,Admin updated security info,Register device,Unregister device,User changed default security info,User deleted security info,User registered security info"`<br>`OperationName has "Add app role assignment to service principal"`<br>`OperationName has "Add delegated permission grant"`<br>`OperationName has "Consent to application"`<br>`OperationName has_any "Update user"` |
 | [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
 | [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
 | [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) | `ResourceProvider == "Microsoft.HybridCompute"` |
@@ -412,9 +412,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.network/bastionhosts`
 - `microsoft.healthcareapis/services`
 
-## Selection Criteria Summary (5 criteria, 8 total references)
+## Selection Criteria Summary (6 criteria, 9 total references)
 
-References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -422,8 +422,9 @@ References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parse
 | `OperationName == "Create role assignment"` | - | 1 | - | - | **1** |
 | `OperationName == "Create or Update Virtual Machine Extension"` | - | 1 | - | - | **1** |
 | `OperationName contains "delete"`<br>`OperationName contains "remove"` | - | 1 | - | - | **1** |
+| `OperationName has "Create"` | - | 1 | - | - | **1** |
 | `ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **8** | **0** | **0** | **8** |
+| **Total** | **0** | **9** | **0** | **0** | **9** |
 
 ### OperationName
 
@@ -433,6 +434,7 @@ References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parse
 | `Create or Update Virtual Machine Extension` | - | 1 | - | - | **1** |
 | `contains delete` | - | 1 | - | - | **1** |
 | `contains remove` | - | 1 | - | - | **1** |
+| `has Create` | - | 1 | - | - | **1** |
 
 ### ResourceProvider
 

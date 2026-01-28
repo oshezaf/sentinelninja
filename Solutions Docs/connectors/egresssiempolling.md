@@ -1,6 +1,4 @@
-# ⚠️ Egress Iris Connector
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# Egress Iris Connector
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="" width="75" height="75">
 

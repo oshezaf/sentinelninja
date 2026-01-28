@@ -1,6 +1,4 @@
-# 🚫 ⚠️ 🔍 [Deprecated] McAfee Network Security Platform
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# 🚫 🔍 [Deprecated] McAfee Network Security Platform
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 

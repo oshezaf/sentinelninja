@@ -69,11 +69,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
 | [Identify Microsoft Defender Antivirus detection related to EUROPIUM](../content/github-only-identify-microsoft-defender-antivirus-detection-related-to-europium-d02275d6-45ba-4ddc-be90-8fa260aebe55-44e9cbeb.md) |  |
-| [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) | `ActionType == "LogonSuccess"` |
+| [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) |  |
 | [KNOTWEED-AV Detections](../content/github-only-knotweed-av-detections-24b0f252-08fd-4f70-b387-9015bea1b34c-89938558.md) |  |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) |  |
 | [MDO daily detection summary report](../content/github-only-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-5c96ae0a.md) |  |
-| [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.md) | `ActionType == "BrowserLaunchedToOpenUrl"` |
+| [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.md) |  |
 | [URL click on ZAP email](../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.md) |  |
 | [URL click on ZAP email](../content/github-only-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-2bbd70d9.md) |  |
 | [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.md) |  |
@@ -93,7 +93,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "Automated Remediation"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
 
 | Content Item |
 |:-------------|
@@ -105,18 +105,18 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+| Content Item |
+|:-------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
-**GitHub Only:**
+**GitHub Only:** `ActionType in "Add member to role,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+| Content Item |
+|:-------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |
 
 ## Parsers Using This Table (1)
 
@@ -126,24 +126,49 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAlertEventMicrosoftDefenderXDR](../asim/asimalerteventmicrosoftdefenderxdr.md) | AlertEvent | Microsoft Defender XDR |  |
 
-## Selection Criteria Summary (3 criteria, 4 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ActionType == "BrowserLaunchedToOpenUrl"` | - | 2 | - | - | **2** |
-| `ActionType == "LogonSuccess"` | - | 1 | - | - | **1** |
-| `ActionType == "Automated Remediation"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **4** | **0** | **0** | **4** |
+| `ActionType == "BrowserLaunchedToOpenUrl"` | - | 1 | - | - | **1** |
+| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
+| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `BrowserLaunchedToOpenUrl` | - | 2 | - | - | **2** |
-| `LogonSuccess` | - | 1 | - | - | **1** |
+| `BrowserLaunchedToOpenUrl` | - | 1 | - | - | **1** |
+| `AdminSubmissionSubmitted` | - | 1 | - | - | **1** |
+| `AttackSimUserSubmission` | - | 1 | - | - | **1** |
+| `ClickBlocked` | - | 1 | - | - | **1** |
+| `Malware ZAP` | - | 1 | - | - | **1** |
+| `Phish ZAP` | - | 1 | - | - | **1** |
+| `Spam ZAP` | - | 1 | - | - | **1** |
+| `UserSubmission` | - | 1 | - | - | **1** |
 | `Automated Remediation` | - | 1 | - | - | **1** |
+| `contains Submission` | - | 1 | - | - | **1** |
+| `contains UserSubmission` | - | 1 | - | - | **1** |
+| `contains ZAP` | - | 1 | - | - | **1** |
+| `has Malware ZAP` | - | 1 | - | - | **1** |
+| `has Phish ZAP` | - | 1 | - | - | **1** |
+| `has Spam ZAP` | - | 1 | - | - | **1** |
+| `has ZAP` | - | 1 | - | - | **1** |
+| `has_any ClickAllowed` | - | 1 | - | - | **1** |
+| `has_any ClickBlocked` | - | 1 | - | - | **1** |
+| `has_any UrlErrorPage` | - | 1 | - | - | **1** |
+| `has_any UrlScanInProgress` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 1 | - | - | **1** |
+| `Add user` | - | 1 | - | - | **1** |
+| `InteractiveLogon` | - | 1 | - | - | **1** |
+| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `ResourceAccess` | - | 1 | - | - | **1** |
+| `Sign-in` | - | 1 | - | - | **1** |
+| `Update user` | - | 1 | - | - | **1** |
 
 ---
 

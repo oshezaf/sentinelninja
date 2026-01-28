@@ -23,8 +23,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "LogonSuccess"` | ✓ | ✗ |
-| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ |
+| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ |
+| [`AlertInfo`](../tables/alertinfo.md) | `ActionType == "LogonSuccess"` | ✓ | ✗ |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ |
 
 ---

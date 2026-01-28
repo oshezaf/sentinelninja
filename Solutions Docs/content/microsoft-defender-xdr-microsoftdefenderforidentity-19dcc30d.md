@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |  | ✓ | ✗ |
-| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | `ActionType in "LogonFailed,LogonSuccess"` | ✓ | ✗ |
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | `ActionType in "LogonFailed,LogonSuccess"` | ✓ | ✗ |
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) |  | ✓ | ✗ |
 | [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
 

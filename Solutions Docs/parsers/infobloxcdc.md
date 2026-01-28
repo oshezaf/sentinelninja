@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for InfobloxCDC |
 | Location | Solution |
-| Solution | [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) ⚠️ |
+| Solution | [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md) |
 | Version | 2.0.0 |
 | Last Updated | 2024-02-22 |
 | Category | Microsoft Sentinel Parser |

@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "AntivirusDetection"` | ✓ | ✗ |
+| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
 
 ---
 

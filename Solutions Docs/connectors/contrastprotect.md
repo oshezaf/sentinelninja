@@ -1,6 +1,4 @@
-# 🚫 ⚠️ [Deprecated] Contrast Protect via Legacy Agent
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace.
+# 🚫 [Deprecated] Contrast Protect via Legacy Agent
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
