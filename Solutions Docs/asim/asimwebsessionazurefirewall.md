@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.6 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Azure Firewall |
-| **Parser Version** | 0.1.0 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionAzureFirewall.md)) |
 | **Last Updated** | Dec 3, 2025 |
 | **Unifying Parser** | [ASimWebSession](asimwebsession.md) |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSessionAzureFirewall.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSessionAzureFirewall.yaml) |

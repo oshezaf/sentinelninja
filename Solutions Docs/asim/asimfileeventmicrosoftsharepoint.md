@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft SharePoint |
-| **Parser Version** | 0.3.1 |
+| **Parser Version** | 0.3.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoftSharePoint.md)) |
 | **Last Updated** | Nov 02 2023 |
 | **Unifying Parser** | [ASimFileEvent](asimfileevent.md) |
 | **Source File** | [Parsers\ASimFileEvent\Parsers\ASimFileEventMicrosoftSharePoint.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimFileEvent/Parsers/ASimFileEventMicrosoftSharePoint.yaml) |

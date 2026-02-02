@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | SentinelOne |
-| **Parser Version** | 0.1.0 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateSentinelOne.md)) |
 | **Last Updated** | Sep 18, 2023 |
 | **Unifying Parser** | [ASimProcessEvent](asimprocessevent.md), [ASimProcessEventCreate](asimprocesseventcreate.md) |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\ASimProcessCreateSentinelOne.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/ASimProcessCreateSentinelOne.yaml) |

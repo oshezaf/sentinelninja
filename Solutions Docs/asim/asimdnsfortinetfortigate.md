@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.7 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Fortinet FortiGate |
-| **Parser Version** | 0.1.2 |
+| **Parser Version** | 0.1.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsFortinetFortiGate.md)) |
 | **Last Updated** | Dec 8, 2025 |
 | **Unifying Parser** | [ASimDns](asimdns.md) |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDnsFortinetFortigate.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDnsFortinetFortigate.yaml) |

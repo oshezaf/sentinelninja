@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Sysmon for Linux |
-| **Parser Version** | 0.2.1 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessCreateLinuxSysmon.md)) |
 | **Last Updated** | Feb 23, 2022 |
 | **Unifying Parser** | [ASimProcessEvent](asimprocessevent.md), [ASimProcessEventCreate](asimprocesseventcreate.md) |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\ASimProcessCreateLinuxSysmon.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/ASimProcessCreateLinuxSysmon.yaml) |

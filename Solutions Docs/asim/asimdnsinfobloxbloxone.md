@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.7 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Infoblox BloxOne |
-| **Parser Version** | 0.1.0 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsInfobloxBloxOne.md)) |
 | **Last Updated** | Sep 11, 2024 |
 | **Unifying Parser** | [ASimDns](asimdns.md) |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDnsInfobloxBloxOne.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDnsInfobloxBloxOne.yaml) |

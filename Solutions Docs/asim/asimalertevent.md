@@ -15,7 +15,7 @@
 | **Schema** | AlertEvent |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.0 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md)) |
 | **Last Updated** | Oct 18, 2024 |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEvent.yaml) |
 

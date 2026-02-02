@@ -15,7 +15,7 @@
 | **Schema** | Authentication |
 | **Schema Version** | 0.1.3 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.3.3 |
+| **Parser Version** | 0.3.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md)) |
 | **Last Updated** | Dec 10, 2024 |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\imAuthentication.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/imAuthentication.yaml) |
 

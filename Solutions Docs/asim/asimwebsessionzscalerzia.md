@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.6 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Zscaler ZIA |
-| **Parser Version** | 0.4.1 |
+| **Parser Version** | 0.4.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionZscalerZIA.md)) |
 | **Last Updated** | Nov 3, 2025 |
 | **Unifying Parser** | [ASimWebSession](asimwebsession.md) |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSessionzScalerZIA.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSessionzScalerZIA.yaml) |

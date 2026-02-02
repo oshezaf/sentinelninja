@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.6 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Internet Information Services (IIS) |
-| **Parser Version** | 0.2 |
+| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionIIS.md)) |
 | **Last Updated** | Apr 19, 2023 |
 | **Unifying Parser** | [ASimWebSession](asimwebsession.md) |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSessionIIS.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSessionIIS.yaml) |

@@ -24,9 +24,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (41)
+## Content Items Using This Table (20)
 
-### Hunting Queries (41)
+### Hunting Queries (20)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -52,32 +52,6 @@ This table is used by the following solutions:
 | [Top External malicious Senders](../content/microsoft-defender-xdr-top-external-malicious-senders-74b581fc-e8cb-4b50-9d82-7b91d3a88a08-a3bfa117.md) |  |
 | [Top domains outbound sending Malicious Teams messages inbound](../content/microsoft-defender-xdr-top-domains-outbound-sending-malicious-teams-messages-inbound-ab2f1fd6-1023-425e-a429-ff74db5709be-6fb6bb25.md) |  |
 | [Total number of MDO Teams protection detections daily](../content/microsoft-defender-xdr-total-number-of-mdo-teams-protection-detections-daily-75ade06c-7326-4e0d-9dfb-27e05043525b-3af53022.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Expanding recipients into separate rows](../content/github-only-expanding-recipients-into-separate-rows-70ba5995-866f-4a23-bacc-40b82056893b-5712515b.md) |  |
-| [External malicious Teams messages sent from internal senders](../content/github-only-external-malicious-teams-messages-sent-from-internal-senders-aee866e2-dc92-4563-a387-b9e5710246c0-8f0914c9.md) |  |
-| [Inbound Teams messages by sender domains](../content/github-only-inbound-teams-messages-by-sender-domains-15688e35-9957-427f-a8fb-95b7883120b3-03e22b4c.md) |  |
-| [Malicious Teams messages by URL detection methods](../content/github-only-malicious-teams-messages-by-url-detection-methods-97c8d961-add7-4b58-80ef-75cc40d9d919-1e93e7c4.md) |  |
-| [Malicious Teams messages received from external senders](../content/github-only-malicious-teams-messages-received-from-external-senders-ac842e4d-0c7d-4980-b09d-c761f3de0a79-96ae5af4.md) |  |
-| [Possible partner impersonation in external Team messages](../content/github-only-possible-partner-impersonation-in-external-team-messages-39cf1ec6-d460-4760-8a87-7d10577f6205-c19eb4ea.md) |  |
-| [Rare Domains in External Teams Messages](../content/github-only-rare-domains-in-external-teams-messages-d4dd8c3f-d62b-4078-9dc7-8520c3adf1d5-2a1cecc7.md) |  |
-| [Suspicious Teams Display Name](../content/github-only-suspicious-teams-display-name-97e1c837-2cef-4f43-a87f-11f16e33ee8d-3da96512.md) |  |
-| [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
-| [Teams communication from suspicious external users](../content/github-only-teams-communication-from-suspicious-external-users-1fbd2430-2dfe-421a-82b3-eabec5a0b38e-f12376df.md) |  |
-| [Teams communication to suspicious external users](../content/github-only-teams-communication-to-suspicious-external-users-389ead4a-6dfe-47e1-9236-165eb08f1017-2f2e8091.md) |  |
-| [Teams messages from a specific sender by ThreadType](../content/github-only-teams-messages-from-a-specific-sender-by-threadtype-0bb4d681-5aa5-414e-b512-42a682ce5117-6da91249.md) |  |
-| [Top 10 Attacked user by Phish messages](../content/github-only-top-10-attacked-user-by-phish-messages-e6cbca08-b041-4f5d-9f82-f803319ee050-24a461e2.md) |  |
-| [Top 10 External senders sending Teams phishing messsages](../content/github-only-top-10-external-senders-sending-teams-phishing-messsages-9432f895-763d-4e9b-b9bf-680296ce6c0d-5953e9e2.md) |  |
-| [Top 10 external senders sending Teams messages](../content/github-only-top-10-external-senders-sending-teams-messages-f143639b-24d5-4089-af92-be8eeea02822-43ed5a48.md) |  |
-| [Top External Sender domains - Malware](../content/github-only-top-external-sender-domains-malware-37c0d39b-1eb8-4aa0-bded-d0b058082571-1a7e7351.md) |  |
-| [Top External Sender domains - Phish](../content/github-only-top-external-sender-domains-phish-e4a64b44-ec9a-4787-9f7a-75ff5394b928-c69ab8a8.md) |  |
-| [Top External Sender domains - Spam](../content/github-only-top-external-sender-domains-spam-96ea02b2-7db7-4206-bd7f-c3c579d33fcc-cd13bdfb.md) |  |
-| [Top External malicious Senders](../content/github-only-top-external-malicious-senders-164a77d1-3952-451f-ba30-b4a43804fd8a-516b86e4.md) |  |
-| [Top domains outbound sending Malicious Teams messages inbound](../content/github-only-top-domains-outbound-sending-malicious-teams-messages-inbound-af2b5dbd-4b66-47b4-9936-abfecb246ba1-47111b49.md) |  |
-| [Total number of MDO Teams protection detections daily](../content/github-only-total-number-of-mdo-teams-protection-detections-daily-c7896b13-ae4e-4164-a0a4-fbd43ae85dd4-3317a1c8.md) |  |
 
 ---
 

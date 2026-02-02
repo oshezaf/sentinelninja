@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Security Events |
-| **Parser Version** | 0.2 |
+| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessTerminateMicrosoftWindowsEvents.md)) |
 | **Last Updated** | May 1st 2023 |
 | **Unifying Parser** | [ASimProcessEvent](asimprocessevent.md), [ASimProcessEventTerminate](asimprocesseventterminate.md) |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\ASimProcessTerminateMicrosoftWindowsEvents.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/ASimProcessTerminateMicrosoftWindowsEvents.yaml) |

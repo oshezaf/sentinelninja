@@ -15,7 +15,7 @@
 | **Schema** | WebSession |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.6.2 |
+| **Parser Version** | 0.6.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md)) |
 | **Last Updated** | May 21 2024 |
 | **Source File** | [Parsers\ASimWebSession\Parsers\imWebSession.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/imWebSession.yaml) |
 

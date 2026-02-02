@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | VMware Carbon Black Cloud |
-| **Parser Version** | 0.2.0 |
+| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventVMwareCarbonBlackCloud.md)) |
 | **Last Updated** | Jan 31 2024 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventVMwareCarbonBlackCloud.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventVMwareCarbonBlackCloud.yaml) |

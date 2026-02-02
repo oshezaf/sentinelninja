@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (23)
+## Content Items Using This Table (21)
 
 ### Analytic Rules (10)
 
@@ -58,20 +58,13 @@ This table is ingested by the following connectors:
 | [ProofpointPOD - Senders with large number of corrupted messages](../content/proofpoint-on-demand-pod-email-security-proofpointpod-senders-with-large-number-of-corrupted-messages-af7f133a-5fed-4ebf-8272-4330c884c7ca-4e6469ff.md) |  |
 | [ProofpointPOD - Suspicious file types in attachments](../content/proofpoint-on-demand-pod-email-security-proofpointpod-suspicious-file-types-in-attachments-7b281f4a-6a9a-439f-8b4f-f08eb24f2fb7-e9c4582c.md) |  |
 
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [ProofpointPOD](../content/proofpoint-on-demand-pod-email-security-proofpointpod-14c159d7.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ProofPointThreatDashboard](../content/github-only-proofpointthreatdashboard-cb711596.md) |  |
-| [ProofpointPOD](../content/github-only-proofpointpod-64db84d0.md) |  |
 
 ## Parsers Using This Table (1)
 

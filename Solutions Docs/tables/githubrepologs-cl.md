@@ -6,16 +6,15 @@
 
 ---
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [GitHub](../solutions/github.md)
-- [Standalone Content](../solutions/standalone-content.md)
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (1)
 
 ### Analytic Rules (1)
 
@@ -24,15 +23,6 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [GitHub Security Vulnerability in Repository](../content/github-github-security-vulnerability-in-repository-5436f471-b03d-41cb-b333-65891f887c43-30f5673a.md) |  |
-
-### Hunting Queries (2)
-
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [GitHub OAuth App Restrictions Disabled](../content/standalone-content-github-oauth-app-restrictions-disabled-467e6a70-adc9-49b7-8cf3-f21927c71159-a52f5db0.md) |  |
-| [GitHub Repo Clone - Time Series Anomly](../content/standalone-content-github-repo-clone-time-series-anomly-ccef3c74-4b4f-445b-8109-06d38687e4a4-2314081b.md) |  |
 
 ## Parsers Using This Table (1)
 

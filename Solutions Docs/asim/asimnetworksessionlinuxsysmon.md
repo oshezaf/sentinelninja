@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Sysmon for Linux |
-| **Parser Version** | 0.3.1 |
+| **Parser Version** | 0.3.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionLinuxSysmon.md)) |
 | **Last Updated** | Dec 28 2022 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionMicrosoftLinuxSysmon.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionMicrosoftLinuxSysmon.yaml) |

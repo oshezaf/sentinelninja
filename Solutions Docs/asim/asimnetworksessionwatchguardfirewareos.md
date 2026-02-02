@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | WatchGuard Fireware OS |
-| **Parser Version** | 0.1.4 |
+| **Parser Version** | 0.1.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionWatchGuardFirewareOS.md)) |
 | **Last Updated** | Aug 29th, 2022 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionWatchGuardFirewareOS.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionWatchGuardFirewareOS.yaml) |

@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | SentinelOne |
-| **Parser Version** | 0.1.0 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventSentinelOne.md)) |
 | **Last Updated** | Sep 20, 2023 |
 | **Unifying Parser** | [ASimRegistry](asimregistry.md) |
 | **Source File** | [Parsers\ASimRegistryEvent\Parsers\ASimRegistryEventSentinelOne.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimRegistryEvent/Parsers/ASimRegistryEventSentinelOne.yaml) |

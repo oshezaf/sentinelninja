@@ -51,9 +51,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (79)
+## Content Items Using This Table (54)
 
-### Analytic Rules (25)
+### Analytic Rules (21)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -106,16 +106,7 @@ This table is ingested by the following connectors:
 | [TI Map IP Entity to AzureActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.md) |  |
 | [TI map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.md) |  |
 
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Azure Diagnostic settings removed from a resource](../content/standalone-content-azure-diagnostic-settings-removed-from-a-resource-6e95aef3-a1e0-4063-8e74-cd59aa59f245-652cb0e3.md) |  |
-| [Azure VM Run Command operation executed during suspicious login window](../content/standalone-content-azure-vm-run-command-operation-executed-during-suspicious-login-window-11bda520-a965-4654-9a45-d09f372f71aa-f213ee84.md) |  |
-| [Azure VM Run Command operations executing a unique PowerShell script](../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.md) |  |
-| [Workspace deletion activity from an infected device](../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.md) |  |
-
-### Hunting Queries (22)
+### Hunting Queries (17)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
@@ -149,22 +140,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) |
 
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md) |  |
-| [Azure CloudShell Usage](../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.md) |  |
-| [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) | `OperationName has "Create"` |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Azure VM Run Command linked with MDE](../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.md) |  |
-| [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) |  |
-
-### Workbooks (31)
+### Workbooks (15)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
@@ -251,27 +227,6 @@ This table is ingested by the following connectors:
 |:-------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureActivity](../content/github-only-azureactivity-31e8481e.md) |  |
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [AzureServiceHealthWorkbook](../content/github-only-azureservicehealthworkbook-c0a0870d.md) |  |
-| [AzureThreatResearchMatrixWorkbook](../content/github-only-azurethreatresearchmatrixworkbook-50f10e78.md) | `OperationName in "Add application,Add conditional access policy,Delete conditional access policy,Invite external user,Redeem external user invite,Update application – Certificates`<br>`secrets management,Update conditional access policy"`<br>`OperationName in "Add service principal,Add user,Admin deleted security info,Admin registered security info,Admin updated security info,Register device,Unregister device,User changed default security info,User deleted security info,User registered security info"`<br>`OperationName has "Add app role assignment to service principal"`<br>`OperationName has "Add delegated permission grant"`<br>`OperationName has "Consent to application"`<br>`OperationName has_any "Update user"` |
-| [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) | `ResourceProvider == "Microsoft.HybridCompute"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [PlaybookHealth](../content/github-only-playbookhealth-6ce06262.md) | `OperationName == "Microsoft.Logic/workflows/workflowRunCompleted"`<br>`OperationName has "Create"`<br>`OperationName has "Delete"`<br>`OperationName has "Disable"`<br>`OperationName has "Enable"`<br>`OperationName has "set"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowAction"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowRun"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowRunCompleted"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowTrigger"`<br>`ResourceProvider == "MICROSOFT.LOGIC"` |
-| [SensitiveOperationsinAzureActivityLogReview](../content/github-only-sensitiveoperationsinazureactivitylogreview-eb1864d3.md) | `OperationName == "Create or Update Virtual Machine Extension"` |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [WorkspaceAuditing](../content/github-only-workspaceauditing-b4e840dd.md) | `OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"` |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `OperationName !in "Microsoft.SecurityInsights/Incidents/investigations/write,Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action"`<br>`ResourceProvider == "Microsoft.SecurityInsights"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` |
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -313,6 +268,7 @@ This table collects data from the following Azure resource types:
 - `microsoft.managednetworkfabric/networkdevices`
 - `microsoft.documentdb/cassandraclusters`
 - `microsoft.documentdb/mongoclusters`
+- `microsoft.dashboard/dashboard`
 - `microsoft.networkcloud/baremetalmachines`
 - `microsoft.networkcloud/clustermanagers`
 - `microsoft.networkcloud/clusters`
@@ -322,6 +278,7 @@ This table collects data from the following Azure resource types:
 - `microsoft.recoveryservices/vaults`
 - `microsoft.relay/namespaces`
 - `microsoft.servicebus/namespaces`
+- `microsoft.sql/servers`
 - `microsoft.networkfunction/azuretrafficcollectors`
 - `microsoft.network/networkmanagers`
 - `microsoft.botservice/botservices`
@@ -391,7 +348,6 @@ This table collects data from the following Azure resource types:
 - `microsoft.powerbidedicated/capacities`
 - `microsoft.datashare/accounts`
 - `microsoft.sql/managedinstances`
-- `microsoft.sql/servers`
 - `microsoft.sql/servers/databases`
 - `microsoft.dbformysql/servers`
 - `microsoft.dbforpostgresql/servers`
@@ -412,9 +368,9 @@ This table collects data from the following Azure resource types:
 - `microsoft.network/bastionhosts`
 - `microsoft.healthcareapis/services`
 
-## Selection Criteria Summary (6 criteria, 9 total references)
+## Selection Criteria Summary (5 criteria, 8 total references)
 
-References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 8 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -422,9 +378,8 @@ References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parse
 | `OperationName == "Create role assignment"` | - | 1 | - | - | **1** |
 | `OperationName == "Create or Update Virtual Machine Extension"` | - | 1 | - | - | **1** |
 | `OperationName contains "delete"`<br>`OperationName contains "remove"` | - | 1 | - | - | **1** |
-| `OperationName has "Create"` | - | 1 | - | - | **1** |
 | `ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **9** | **0** | **0** | **9** |
+| **Total** | **0** | **8** | **0** | **0** | **8** |
 
 ### OperationName
 
@@ -434,7 +389,6 @@ References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parse
 | `Create or Update Virtual Machine Extension` | - | 1 | - | - | **1** |
 | `contains delete` | - | 1 | - | - | **1** |
 | `contains remove` | - | 1 | - | - | **1** |
-| `has Create` | - | 1 | - | - | **1** |
 
 ### ResourceProvider
 

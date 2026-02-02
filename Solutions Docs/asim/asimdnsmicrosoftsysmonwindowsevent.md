@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.7 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft Windows Events Sysmon |
-| **Parser Version** | 0.5.1 |
+| **Parser Version** | 0.5.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsMicrosoftSysmonWindowsEvent.md)) |
 | **Last Updated** | Jul 19, 2024 |
 | **Unifying Parser** | [ASimDns](asimdns.md) |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDnsMicrosoftSysmonWindowsEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDnsMicrosoftSysmonWindowsEvent.yaml) |

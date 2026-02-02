@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft Windows Event |
-| **Parser Version** | 0.2.1 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementMicrosoftWindowsEvent.md)) |
 | **Last Updated** | May 29, 2024 |
 | **Unifying Parser** | [ASimUserManagement](asimusermanagement.md) |
 | **Source File** | [Parsers\ASimUserManagement\Parsers\ASimUserManagementMicrosoftWindowsEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimUserManagement/Parsers/ASimUserManagementMicrosoftWindowsEvent.yaml) |

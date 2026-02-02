@@ -16,7 +16,7 @@ Reference for Event table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event) |
 
-## Solutions (19)
+## Solutions (18)
 
 This table is used by the following solutions:
 
@@ -33,7 +33,6 @@ This table is used by the following solutions:
 - [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md)
 - [MimecastTIRegional](../solutions/mimecasttiregional.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Veeam](../solutions/veeam.md)
 - [Windows Forwarded Events](../solutions/windows-forwarded-events.md)
@@ -54,9 +53,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (65)
+## Content Items Using This Table (39)
 
-### Analytic Rules (30)
+### Analytic Rules (18)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):** `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"`
 
@@ -111,24 +110,7 @@ This table is ingested by the following connectors:
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ADFS DKM Master Key Export](../content/standalone-content-adfs-dkm-master-key-export-18e6a87e-9d06-4a4e-8b59-3469cd49552d-b85786be.md) |  |
-| [Audit policy manipulation using auditpol utility](../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.md) | `Source == "Microsoft-Windows-Sysmon"` |
-| [COM Event System Loading New DLL](../content/standalone-content-com-event-system-loading-new-dll-02f6c2e5-219d-4426-a0bf-ad67abc63d53-d3c38f00.md) | `EventID in "1,7"`<br>`Source == "Microsoft-Windows-Sysmon"` |
-| [DSRM Account Abuse](../content/standalone-content-dsrm-account-abuse-979c42dd-533e-4ede-b18b-31a84ba8b3d6-7eba24fb.md) | `EventID == "13"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` |
-| [Email access via active sync](../content/standalone-content-email-access-via-active-sync-2f561e20-d97b-4b13-b02d-18b34af6e87c-db926024.md) | `Source == "Microsoft-Windows-Sysmon"` |
-| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
-| [Gain Code Execution on ADFS Server via Remote WMI Execution](../content/standalone-content-gain-code-execution-on-adfs-server-via-remote-wmi-execution-0bd65651-1404-438b-8f63-eecddcec87b4-d7675a11.md) | `Source == "Microsoft-Windows-Sysmon"` |
-| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
-| [Modification of Accessibility Features](../content/standalone-content-modification-of-accessibility-features-d714ef62-1a56-4779-804f-91c4158e528d-44b1d2cd.md) | `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` |
-| [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md) |  |
-| [Silk Typhoon Suspicious UM Service Error](../content/standalone-content-silk-typhoon-suspicious-um-service-error-0625fcce-6d52-491e-8c68-1d9b801d25b9-6787e2f2.md) | `EventLog == "Application"`<br>`Source startswith "MSExchange"` |
-| [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md) |  |
-
-### Hunting Queries (16)
+### Hunting Queries (11)
 
 **In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
 
@@ -156,22 +138,7 @@ This table is ingested by the following connectors:
 | [Service installation from user writable directory](../content/windows-security-events-service-installation-from-user-writable-directory-5a9ccb48-1316-46e1-89d1-aca0355c305e-81f8a107.md) | `EventID == "7045"`<br>`Source == "Service Control Manager"` |
 | [Windows System Shutdown/Reboot(Sysmon)](../content/windows-security-events-windows-system-shutdown-reboot-sysmon-14fab7a3-cb11-41d6-a19a-b55a4a0ef3b1-e2599fa5.md) | `EventID == "1"`<br>`EventLog has "shutdown.exe"`<br>`Source == "Microsoft-Windows-Sysmon"` |
 
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AD FS Database Local SQL Statements](../content/github-only-ad-fs-database-local-sql-statements-81fab62b-ef92-487a-9c35-a91a116309e6-3d6b6fc8.md) | `EventID == "33205"`<br>`EventLog == "Application"`<br>`Source == "MSSQL$MICROSOFT##WID"` |
-| [Potential Local Exploitation for Privilege Escalation](../content/github-only-potential-local-exploitation-for-privilege-escalation-a78b826e-f2d1-42f9-b21b-20cf3bc2d391-4c7607f3.md) | `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` |
-| [Rare firewall rule changes using netsh](../content/github-only-rare-firewall-rule-changes-using-netsh-3dc5dc8b-160b-407e-9925-24a91e3599df-309055ae.md) | `Source == "Microsoft-Windows-Sysmon"` |
-| [Windows System Shutdown/Reboot(Sysmon)](../content/github-only-windows-system-shutdown-reboot-sysmon-024b3726-add7-4e06-842d-932034ba21f7-a74b2f46.md) | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` |
-
-### Workbooks (19)
+### Workbooks (10)
 
 **In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md):**
 
@@ -228,20 +195,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) |  |
 
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `EventLog == "Application"`<br>`Source == "Microsoft-Windows-Sysmon"`<br>`Source startswith "MSExchange"` |
-| [InsecureProtocols](../content/github-only-insecureprotocols-bd42e6f8.md) | `EventLog == "Microsoft-Windows-SMBServer/Audit"`<br>`EventLog == "System"`<br>`Source == "NETLOGON"` |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `Source == "Microsoft-Windows-Sysmon"`<br>`Source == "Microsoft-Windows-SENSE"` |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `Source == "Microsoft-Windows-Sysmon"`<br>`Source == "Microsoft-Windows-SENSE"` |
-| [SysmonThreatHunting](../content/github-only-sysmonthreathunting-ea4856c6.md) | `Source contains "sysmon"` |
-| [VeeamSecurityActivities](../content/github-only-veeamsecurityactivities-c31c4544.md) |  |
-| [WebApplicationFirewallWAFTypeEvents](../content/github-only-webapplicationfirewallwaftypeevents-96b07e7c.md) |  |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-
 ## Parsers Using This Table (14)
 
 ### ASIM Parsers (7)
@@ -280,33 +233,30 @@ This table collects data from the following Azure resource types:
 - `microsoft.compute/virtualmachinescalesets`
 - `microsoft.azurestackhci/clusters`
 
-## Selection Criteria Summary (31 criteria, 59 total references)
+## Selection Criteria Summary (28 criteria, 48 total references)
 
-References by type: 4 connectors, 42 content items, 6 ASIM parsers, 7 other parsers.
+References by type: 4 connectors, 31 content items, 6 ASIM parsers, 7 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Source == "Microsoft-Windows-Sysmon"` | - | 8 | - | 1 | **9** |
-| `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 6 | - | - | **6** |
 | `EventID in "1,6"`<br>`EventLog == "MSExchange Management"` | - | 5 | - | 1 | **6** |
-| `EventID == "13"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 4 | - | - | **4** |
-| `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 3 | 1 | - | **4** |
+| `Source == "Microsoft-Windows-Sysmon"` | - | 4 | - | 1 | **5** |
+| `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 4 | - | - | **4** |
 | `EventID == "7045"`<br>`Source == "Service Control Manager"` | - | 3 | - | - | **3** |
+| `EventID == "13"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 3 | - | - | **3** |
+| `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 2 | 1 | - | **3** |
 | `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | 1 | - | **2** |
 | `EventID == "0"`<br>`EventLog == "Application"`<br>`Source == "MOVEit DMZ Audit"` | - | 2 | - | - | **2** |
-| `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
-| `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
 | `EventLog == "Application"` | 1 | - | - | - | **1** |
+| `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
 | `Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
+| `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
 | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |
 | `EventID in "18,3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |
-| `EventID in "1,7"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |
-| `EventLog == "Application"`<br>`Source startswith "MSExchange"` | - | 1 | - | - | **1** |
 | `Source == "Microsoft-Windows-SENSE"` | - | 1 | - | - | **1** |
 | `EventID == "1"`<br>`EventLog has "shutdown.exe"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |
-| `EventID == "33205"`<br>`EventLog == "Application"`<br>`Source == "MSSQL$MICROSOFT##WID"` | - | 1 | - | - | **1** |
 | `EventID in "1001,1069,1205"` | - | 1 | - | - | **1** |
 | `EventID == "22"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
 | `EventID in "11,23,26"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | - | 1 | - | **1** |
@@ -317,20 +267,19 @@ References by type: 4 connectors, 42 content items, 6 ASIM parsers, 7 other pars
 | `EventID in "1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,3,4,5,6,7,8,9"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | - | - | 1 | **1** |
 | `EventID in "1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,255,3,4,5,6,7,8,9"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | - | - | 1 | **1** |
 | `EventID in "1,10,11,12,13,14,15,16,17,18,19,2,20,21,3,4,5,6,7,8,9"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | - | - | 1 | **1** |
-| **Total** | **4** | **42** | **6** | **7** | **59** |
+| **Total** | **4** | **31** | **6** | **7** | **48** |
 
 ### EventID
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `1` | - | 16 | 1 | 5 | **22** |
+| `1` | - | 12 | 1 | 5 | **18** |
 | `6` | - | 5 | - | 5 | **10** |
-| `13` | - | 4 | 1 | 4 | **9** |
+| `13` | - | 3 | 1 | 4 | **8** |
 | `3` | - | 2 | 1 | 4 | **7** |
 | `11` | - | 1 | 1 | 4 | **6** |
 | `18` | - | 2 | - | 4 | **6** |
 | `10` | - | 1 | - | 4 | **5** |
-| `7` | - | 1 | - | 4 | **5** |
 | `5` | - | - | 1 | 4 | **5** |
 | `12` | - | - | 1 | 4 | **5** |
 | `14` | - | - | 1 | 4 | **5** |
@@ -343,12 +292,12 @@ References by type: 4 connectors, 42 content items, 6 ASIM parsers, 7 other pars
 | `20` | - | - | - | 4 | **4** |
 | `21` | - | - | - | 4 | **4** |
 | `4` | - | - | - | 4 | **4** |
+| `7` | - | - | - | 4 | **4** |
 | `8` | - | - | - | 4 | **4** |
 | `9` | - | - | - | 4 | **4** |
 | `7045` | - | 3 | - | - | **3** |
 | `23` | - | - | 1 | 2 | **3** |
 | `0` | - | 2 | - | - | **2** |
-| `33205` | - | 1 | - | - | **1** |
 | `1001` | - | 1 | - | - | **1** |
 | `1069` | - | 1 | - | - | **1** |
 | `1205` | - | 1 | - | - | **1** |
@@ -360,9 +309,9 @@ References by type: 4 connectors, 42 content items, 6 ASIM parsers, 7 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Microsoft-Windows-Sysmon/Operational` | - | 12 | - | - | **12** |
+| `Microsoft-Windows-Sysmon/Operational` | - | 9 | - | - | **9** |
 | `MSExchange Management` | 2 | 5 | - | 1 | **8** |
-| `Application` | 2 | 4 | - | - | **6** |
+| `Application` | 2 | 2 | - | - | **4** |
 | `System` | 1 | - | - | - | **1** |
 | `has shutdown.exe` | - | 1 | - | - | **1** |
 
@@ -370,13 +319,11 @@ References by type: 4 connectors, 42 content items, 6 ASIM parsers, 7 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Microsoft-Windows-Sysmon` | - | 16 | 6 | 5 | **27** |
+| `Microsoft-Windows-Sysmon` | - | 10 | 6 | 5 | **21** |
 | `Service Control Manager` | - | 3 | - | - | **3** |
 | `MOVEit DMZ Audit` | - | 2 | - | - | **2** |
 | `ALCWebCTRL` | 1 | - | - | - | **1** |
-| `startswith MSExchange` | - | 1 | - | - | **1** |
 | `Microsoft-Windows-SENSE` | - | 1 | - | - | **1** |
-| `MSSQL$MICROSOFT##WID` | - | 1 | - | - | **1** |
 | `contains MSSQL` | - | - | - | 1 | **1** |
 
 ---

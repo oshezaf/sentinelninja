@@ -15,15 +15,6 @@ This query identifies Copilot Studio AI agents that are published but have not b
 | **ID** | `5e8f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b` |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/AI%20Agents/PublishedDormantAIAgents.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AIAgentsInfo`](../tables/aiagentsinfo.md) |  | — | ✗ |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "CopilotInteraction"` | ✓ | ✗ |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

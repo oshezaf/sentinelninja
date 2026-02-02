@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Native |
-| **Parser Version** | 0.1.0 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventNative.md)) |
 | **Last Updated** | Dec 13, 2024 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventNative.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventNative.yaml) |

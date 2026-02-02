@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | ✓ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ |
@@ -35,7 +35,7 @@ This content item queries data from the following tables:
 | [`SecurityBaselineSummary`](../tables/securitybaselinesummary.md) |  | ✓ | ✗ |
 | [`SecurityEvent`](../tables/securityevent.md) | `EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"` | ✓ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | ✓ | ✗ |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ |
 | [`Update`](../tables/update.md) |  | ✓ | ✗ |

@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.7 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | MS DNS Events |
-| **Parser Version** | 0.5.0 |
+| **Parser Version** | 0.5.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsMicrosoftNXlog.md)) |
 | **Last Updated** | Sep 06 2023 |
 | **Unifying Parser** | [ASimDns](asimdns.md) |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDnsMicrosoftNXlog.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDnsMicrosoftNXlog.yaml) |

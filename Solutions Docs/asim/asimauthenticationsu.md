@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | su |
-| **Parser Version** | 0.2.1 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSu.md)) |
 | **Last Updated** | 21 Jul 2023 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationSu.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationSu.yaml) |

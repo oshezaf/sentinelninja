@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | AppGate SDP |
-| **Parser Version** | 0.2 |
+| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAppGateSDP.md)) |
 | **Last Updated** | Feb 19 2023 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionAppGateSDP.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionAppGateSDP.yaml) |

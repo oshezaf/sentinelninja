@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft Windows |
-| **Parser Version** | 0.2.1 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventMicrosoftEvent.md)) |
 | **Last Updated** | Jun 7, 2024 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventMicrosoftEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventMicrosoftEvent.yaml) |

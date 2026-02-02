@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | AWS |
-| **Parser Version** | 0.2.1 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAWSCloudTrail.md)) |
 | **Last Updated** | 21 Jul 2023 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationAWSCloudTrail.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationAWSCloudTrail.yaml) |

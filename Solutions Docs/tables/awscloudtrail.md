@@ -16,7 +16,7 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awscloudtrail) |
 
-## Solutions (15)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -30,7 +30,6 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -47,9 +46,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (132)
+## Content Items Using This Table (119)
 
-### Analytic Rules (76)
+### Analytic Rules (73)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -164,15 +163,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md) |  |
 
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Failed AWS Console logons but success logon to AzureAD](../content/standalone-content-failed-aws-console-logons-but-success-logon-to-azuread-910124df-913c-47e3-a7cd-29e1643fa55e-c02ad301.md) | `EventName == "ConsoleLogin"` |
-| [Failed AzureAD logons but success logon to AWS Console](../content/standalone-content-failed-azuread-logons-but-success-logon-to-aws-console-643c2025-9604-47c5-833f-7b4b9378a1f5-4ca50ad1.md) | `EventName == "ConsoleLogin"` |
-| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
-
-### Hunting Queries (38)
+### Hunting Queries (37)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -221,13 +212,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md) |  |
 
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
-
-### Workbooks (18)
+### Workbooks (9)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -278,20 +263,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,GetCallerIdentity,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-| [AmazonWebServicesNetworkActivities](../content/github-only-amazonwebservicesnetworkactivities-3fb3ce58.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-| [AmazonWebServicesUserActivities](../content/github-only-amazonwebservicesuseractivities-59b7a9c6.md) | `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"` |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1) — Selection Criteria: `EventName == "ConsoleLogin"`
@@ -300,15 +271,15 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|
 | [ASimAuthenticationAWSCloudTrail](../asim/asimauthenticationawscloudtrail.md) | Authentication | AWS |
 
-## Selection Criteria Summary (57 criteria, 99 total references)
+## Selection Criteria Summary (57 criteria, 97 total references)
 
-References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 95 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | - | 12 | - | - | **12** |
 | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` | - | 11 | - | - | **11** |
-| `EventName == "ConsoleLogin"` | - | 8 | 1 | - | **9** |
+| `EventName == "ConsoleLogin"` | - | 6 | 1 | - | **7** |
 | `EventName == "DescribeImageScanFindings"` | - | 3 | - | - | **3** |
 | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` | - | 3 | - | - | **3** |
 | `EventName == "GetObject"` | - | 3 | - | - | **3** |
@@ -363,7 +334,7 @@ References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other pars
 | `EventName in "DeleteBucketEncryption,PutBucketEncryption"` | - | 1 | - | - | **1** |
 | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` | - | 1 | - | - | **1** |
 | `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"` | - | 1 | - | - | **1** |
-| **Total** | **1** | **97** | **1** | **0** | **99** |
+| **Total** | **1** | **95** | **1** | **0** | **97** |
 
 ### EventName
 
@@ -377,7 +348,7 @@ References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other pars
 | `PutGroupPolicy` | - | 12 | - | - | **12** |
 | `PutUserPolicy` | - | 12 | - | - | **12** |
 | `PutRolePolicy` | - | 11 | - | - | **11** |
-| `ConsoleLogin` | - | 8 | 1 | - | **9** |
+| `ConsoleLogin` | - | 6 | 1 | - | **7** |
 | `CreateAccessKey` | - | 5 | - | - | **5** |
 | `CreateUser` | 1 | 3 | - | - | **4** |
 | `GetObject` | - | 4 | - | - | **4** |

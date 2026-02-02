@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Corelight Zeek |
-| **Parser Version** | 0.2 |
+| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCorelightZeek.md)) |
 | **Last Updated** | Dec 11 2022 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionCorelightZeek.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionCorelightZeek.yaml) |

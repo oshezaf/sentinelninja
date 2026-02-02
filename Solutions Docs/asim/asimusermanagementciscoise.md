@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Cisco ISE |
-| **Parser Version** | 0.1.2 |
+| **Parser Version** | 0.1.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementCiscoISE.md)) |
 | **Last Updated** | Mar 15, 2024 |
 | **Unifying Parser** | [ASimUserManagement](asimusermanagement.md) |
 | **Source File** | [Parsers\ASimUserManagement\Parsers\ASimUserManagementCiscoISE.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimUserManagement/Parsers/ASimUserManagementCiscoISE.yaml) |

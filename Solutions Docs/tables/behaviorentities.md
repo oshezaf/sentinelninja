@@ -6,7 +6,7 @@
 
 ---
 
-Behavior data types in Microsoft Defender for Cloud Apps (not available for GCC)
+Entities (file, process, device, user, and others) that are involved in a behavior in Microsoft Defender for Cloud Apps (not available for GCC) and User and Entity Behavior Analytics (UEBA)
 
 | Attribute | Value |
 |:----------|:------|

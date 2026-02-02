@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Windows Sysmon |
-| **Parser Version** | 0.5.1 |
+| **Parser Version** | 0.5.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoftSysmon.md)) |
 | **Last Updated** | Jul 19, 2024 |
 | **Unifying Parser** | [ASimFileEvent](asimfileevent.md) |
 | **Source File** | [Parsers\ASimFileEvent\Parsers\ASimFileEventMicrosoftSysmon.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimFileEvent/Parsers/ASimFileEventMicrosoftSysmon.yaml) |

@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Security Events |
-| **Parser Version** | 0.3.1 |
+| **Parser Version** | 0.3.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/ASimRegistryEventMicrosoftSecurityEvent.md)) |
 | **Last Updated** | Jun 18, 2024 |
 | **Unifying Parser** | [ASimRegistry](asimregistry.md) |
 | **Source File** | [Parsers\ASimRegistryEvent\Parsers\ASimRegistryEventMicrosoftSecurityEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimRegistryEvent/Parsers/ASimRegistryEventMicrosoftSecurityEvent.yaml) |

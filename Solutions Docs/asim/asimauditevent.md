@@ -15,7 +15,7 @@
 | **Schema** | AuditEvent |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.3 |
+| **Parser Version** | 0.1.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEvent.md)) |
 | **Last Updated** | Dec 13, 2024 |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEvent.yaml) |
 

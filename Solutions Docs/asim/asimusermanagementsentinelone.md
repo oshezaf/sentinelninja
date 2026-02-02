@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | SentinelOne |
-| **Parser Version** | 0.1.1 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementSentinelOne.md)) |
 | **Last Updated** | Nov 07, 2023 |
 | **Unifying Parser** | [ASimUserManagement](asimusermanagement.md) |
 | **Source File** | [Parsers\ASimUserManagement\Parsers\ASimUserManagementSentinelOne.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimUserManagement/Parsers/ASimUserManagementSentinelOne.yaml) |

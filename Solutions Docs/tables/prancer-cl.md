@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (15)
+## Content Items Using This Table (14)
 
 ### Analytic Rules (11)
 
@@ -51,19 +51,13 @@ This table is ingested by the following connectors:
 | [Hunting Query for Failed CSPM Scan Items](../content/prancer-pensuiteai-integration-hunting-query-for-failed-cspm-scan-items-322591e4-5b68-4574-be00-2e1b618eab7c-0f2f8db3.md) |  |
 | [Hunting Query for High Severity PAC findings](../content/prancer-pensuiteai-integration-hunting-query-for-high-severity-pac-findings-37cb2dea-7a62-4a8d-923b-d588c6372608-4b151227.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [PrancerSentinelAnalytics](../content/prancer-pensuiteai-integration-prancersentinelanalytics-90750e32.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [PrancerSentinelAnalytics](../content/github-only-prancersentinelanalytics-43012f16.md) |  |
 
 ---
 

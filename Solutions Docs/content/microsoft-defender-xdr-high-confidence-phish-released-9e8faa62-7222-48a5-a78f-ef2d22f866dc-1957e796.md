@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API |
 |:------|:-------------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | `ActionType == "QuarantineReleaseMessage"` | ✓ | ✗ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "QuarantineReleaseMessage"` | ✓ | ✗ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ |
 
 ---
 

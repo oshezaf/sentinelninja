@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Vectra AI Streams |
-| **Parser Version** | 0.2 |
+| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionVectraAI.md)) |
 | **Last Updated** | Dec 28 2022 |
 | **Unifying Parser** | [ASimWebSession](asimwebsession.md) |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSessionVectraAI.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSessionVectraAI.yaml) |

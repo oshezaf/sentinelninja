@@ -11,7 +11,7 @@ Reference for EdgeActionConsoleLog table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Audit |
-| **Basic Logs Eligible** | ✗ No |
+| **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/edgeactionconsolelog) |

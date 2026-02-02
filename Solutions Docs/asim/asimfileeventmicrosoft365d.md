@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft 365 Defender for EndPoint |
-| **Parser Version** | 0.2.1 |
+| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoft365D.md)) |
 | **Last Updated** | Oct 26 2023 |
 | **Unifying Parser** | [ASimFileEvent](asimfileevent.md) |
 | **Source File** | [Parsers\ASimFileEvent\Parsers\ASimFileEventMicrosoft365D.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimFileEvent/Parsers/ASimFileEventMicrosoft365D.yaml) |

@@ -15,7 +15,7 @@
 | **Schema** | Dns |
 | **Schema Version** | 0.1.7 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.5.2 |
+| **Parser Version** | 0.5.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDns.md)) |
 | **Last Updated** | June 7, 2024 |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDns.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDns.yaml) |
 

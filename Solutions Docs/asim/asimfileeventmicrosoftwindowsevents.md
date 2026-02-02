@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft Windows Events |
-| **Parser Version** | 0.2.0 |
+| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEventMicrosoftWindowsEvents.md)) |
 | **Last Updated** | Jul 23, 2024 |
 | **Unifying Parser** | [ASimFileEvent](asimfileevent.md) |
 | **Source File** | [Parsers\ASimFileEvent\Parsers\ASimFileEventMicrosoftWindowsEvents.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimFileEvent/Parsers/ASimFileEventMicrosoftWindowsEvents.yaml) |

@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | PostgreSQL |
-| **Parser Version** | 0.1.4 |
+| **Parser Version** | 0.1.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPostgreSQL.md)) |
 | **Last Updated** | Apr 17, 2024 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationPostgreSQL.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationPostgreSQL.yaml) |

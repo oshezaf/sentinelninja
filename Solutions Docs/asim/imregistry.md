@@ -15,7 +15,7 @@
 | **Schema** | RegistryEvent |
 | **Schema Version** | 0.1.2 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.4 |
+| **Parser Version** | 0.1.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimRegistryEvent/CHANGELOG/imRegistry.md)) |
 | **Last Updated** | Jun 3, 2024 |
 | **Source File** | [Parsers\ASimRegistryEvent\Parsers\imRegistryEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimRegistryEvent/Parsers/imRegistryEvent.yaml) |
 

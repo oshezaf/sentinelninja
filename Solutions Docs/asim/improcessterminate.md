@@ -15,7 +15,7 @@
 | **Schema** | ProcessEvent |
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.2 |
+| **Parser Version** | 0.1.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/imProcessTerminate.md)) |
 | **Last Updated** | Feb 23, 2022 |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\imProcessTerminate.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/imProcessTerminate.yaml) |
 

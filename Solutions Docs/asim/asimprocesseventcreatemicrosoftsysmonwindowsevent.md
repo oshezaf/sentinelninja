@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Sysmon |
-| **Parser Version** | 0.4.1 |
+| **Parser Version** | 0.4.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreateMicrosoftSysmonWindowsEvent.md)) |
 | **Last Updated** | Jun 18, 2024 |
 | **Unifying Parser** | [ASimProcessEvent](asimprocessevent.md) |
 | **Source File** | [Parsers\ASimProcessEvent\Parsers\ASimProcessCreateMicrosoftSysmonWindowsEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimProcessEvent/Parsers/ASimProcessCreateMicrosoftSysmonWindowsEvent.yaml) |

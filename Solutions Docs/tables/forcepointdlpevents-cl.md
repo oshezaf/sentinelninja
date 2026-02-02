@@ -22,21 +22,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Forcepoint DLP](../solutions/forcepoint-dlp.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [ForcepointDLP](../content/forcepoint-dlp-forcepointdlp-aa61cdb9.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ForcepointDLP](../content/github-only-forcepointdlp-897d7584.md) |  |
 
 ---
 

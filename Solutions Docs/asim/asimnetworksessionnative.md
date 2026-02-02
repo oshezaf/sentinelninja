@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Native |
-| **Parser Version** | 0.3 |
+| **Parser Version** | 0.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionNative.md)) |
 | **Last Updated** | Jan 25 2023 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionNative.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionNative.yaml) |

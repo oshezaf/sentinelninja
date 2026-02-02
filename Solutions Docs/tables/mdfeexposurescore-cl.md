@@ -14,21 +14,15 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [M365SecurityPosture](../content/github-only-m365securityposture-c0d92b62.md) |  |
 
 ---
 

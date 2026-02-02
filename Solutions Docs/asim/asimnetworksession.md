@@ -15,7 +15,7 @@
 | **Schema** | NetworkSession |
 | **Schema Version** | 0.2.0 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.7.1 |
+| **Parser Version** | 0.7.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSession.md)) |
 | **Last Updated** | Jul 19, 2024 |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSession.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSession.yaml) |
 

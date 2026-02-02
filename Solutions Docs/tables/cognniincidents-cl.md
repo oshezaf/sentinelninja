@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (17)
+## Content Items Using This Table (16)
 
 ### Analytic Rules (15)
 
@@ -46,19 +46,13 @@ This table is ingested by the following connectors:
 | [Cognni Incidents for Medium Sensitivity HR Information](../content/cognni-cognni-incidents-for-medium-sensitivity-hr-information-75ff4f7d-0564-4a55-8b25-a75be951cde3-1a7716ac.md) |  |
 | [Cognni Incidents for Medium Sensitivity Legal Information](../content/cognni-cognni-incidents-for-medium-sensitivity-legal-information-db750607-d48f-4aef-b238-085f4a9882f1-180f898f.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Cognni](../solutions/cognni.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [CognniIncidentsWorkbook](../content/cognni-cognniincidentsworkbook-5343764a.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [CognniIncidentsWorkbook](../content/github-only-cognniincidentsworkbook-5f17cd01.md) |  |
 
 ---
 

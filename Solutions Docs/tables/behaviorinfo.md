@@ -6,7 +6,7 @@
 
 ---
 
-Alerts from Microsoft Defender for Cloud Apps (not available for GCC)
+Behaviors from Microsoft Defender for Cloud Apps (not available for GCC) and User and Entity Behavior Analytics (UEBA)
 
 | Attribute | Value |
 |:----------|:------|

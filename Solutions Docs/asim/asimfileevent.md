@@ -15,7 +15,7 @@
 | **Schema** | FileEvent |
 | **Schema Version** | 0.2.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.3 |
+| **Parser Version** | 0.1.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimFileEvent/CHANGELOG/ASimFileEvent.md)) |
 | **Last Updated** | Jun 6, 2024 |
 | **Source File** | [Parsers\ASimFileEvent\Parsers\ASimFileEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimFileEvent/Parsers/ASimFileEvent.yaml) |
 

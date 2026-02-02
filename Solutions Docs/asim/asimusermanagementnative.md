@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Native |
-| **Parser Version** | 0.1.0 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/ASimUserManagementNative.md)) |
 | **Last Updated** | Mar 07 2024 |
 | **Unifying Parser** | [ASimUserManagement](asimusermanagement.md) |
 | **Source File** | [Parsers\ASimUserManagement\Parsers\ASimUserManagementNative.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimUserManagement/Parsers/ASimUserManagementNative.yaml) |

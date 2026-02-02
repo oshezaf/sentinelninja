@@ -15,7 +15,7 @@
 | **Schema** | UserManagement |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.3 |
+| **Parser Version** | 0.1.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimUserManagement/CHANGELOG/imUserManagement.md)) |
 | **Last Updated** | May 30, 2024 |
 | **Source File** | [Parsers\ASimUserManagement\Parsers\imUserManagement.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimUserManagement/Parsers/imUserManagement.yaml) |
 

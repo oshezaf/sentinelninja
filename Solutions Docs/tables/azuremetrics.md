@@ -65,6 +65,7 @@ This table collects data from the following Azure resource types:
 - `microsoft.network/loadbalancers`
 - `microsoft.relay/namespaces`
 - `microsoft.servicebus/namespaces`
+- `microsoft.sql/servers`
 - `microsoft.networkfunction/azuretrafficcollectors`
 - `microsoft.network/networkmanagers`
 - `microsoft.cognitiveservices/accounts`
@@ -115,7 +116,6 @@ This table collects data from the following Azure resource types:
 - `microsoft.powerbidedicated/capacities`
 - `microsoft.datashare/accounts`
 - `microsoft.sql/managedinstances`
-- `microsoft.sql/servers`
 - `microsoft.sql/servers/databases`
 - `microsoft.dbformysql/servers`
 - `microsoft.dbforpostgresql/servers`

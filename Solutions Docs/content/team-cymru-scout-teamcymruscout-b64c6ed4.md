@@ -16,7 +16,9 @@
 
 This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
 
+- [`ASimNetworkSessionMD4IoTSensor`](../asim/asimnetworksessionmd4iotsensor.md)
 - [`_ASim_Authentication_MicrosoftSecurityEvents`](../asim/asim-authentication-microsoftsecurityevents.md)
+- [`_ASim_NetworkSession_MD4IoTSensor`](../asim/asimnetworksessionmd4iotsensor.md)
 
 ## Tables Used
 

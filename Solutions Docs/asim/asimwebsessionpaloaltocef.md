@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.5 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Palo Alto Networks |
-| **Parser Version** | 0.2 |
+| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionPaloAltoCEF.md)) |
 | **Last Updated** | Mar 12 2023 |
 | **Unifying Parser** | [ASimWebSession](asimwebsession.md) |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSessionPaloAltoCEF.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSessionPaloAltoCEF.yaml) |

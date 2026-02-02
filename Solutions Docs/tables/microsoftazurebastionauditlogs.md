@@ -18,16 +18,6 @@ Reference for MicrosoftAzureBastionAuditLogs table in Azure Monitor Logs.
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-
 ## Resource Types
 
 This table collects data from the following Azure resource types:

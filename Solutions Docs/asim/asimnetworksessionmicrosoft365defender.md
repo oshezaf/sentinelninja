@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | M365 Defender for Endpoint |
-| **Parser Version** | 0.4 |
+| **Parser Version** | 0.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionMicrosoft365Defender.md)) |
 | **Last Updated** | May 1st 2023 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionMicrosoft365Defender.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionMicrosoft365Defender.yaml) |

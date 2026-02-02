@@ -1,6 +1,4 @@
-# ⚠️ Microsoft Copilot
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Microsoft Copilot
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Copilot_logo.svg" alt="" width="75" height="75">
 
@@ -26,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | — | — |
+| [`CopilotActivity`](../tables/copilotactivity.md) | ✗ | ✗ |
 
 ## Permissions
 

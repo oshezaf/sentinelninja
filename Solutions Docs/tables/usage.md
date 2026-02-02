@@ -32,7 +32,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (35)
+## Content Items Using This Table (17)
 
 ### Analytic Rules (1)
 
@@ -53,7 +53,7 @@ This table is used by the following solutions:
 | [M2131_RecommendedDatatableNotLogged_EL2](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el2-76326a24-1223-4066-88a3-3826e3768932-869d983c.md) |  |
 | [M2131_RecommendedDatatableNotLogged_EL3](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el3-8b415f2d-44c1-4edb-8ca6-ddf7d2d28b20-0cceb968.md) |  |
 
-### Workbooks (28)
+### Workbooks (10)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
@@ -104,29 +104,6 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) |  |
-| [ArchivingBasicLogsRetention](../content/github-only-archivingbasiclogsretention-2a012287.md) |  |
-| [AzureSentinelCost](../content/github-only-azuresentinelcost-2ae05990.md) |  |
-| [DCR-Toolkit](../content/github-only-dcr-toolkit-37d84106.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [LogSourcesAndAnalyticRulesCoverage](../content/github-only-logsourcesandanalyticrulescoverage-d4c48df0.md) |  |
-| [MITREAttack](../content/github-only-mitreattack-27c36827.md) |  |
-| [MicrosoftSentinelCostEUR](../content/github-only-microsoftsentinelcosteur-f339a745.md) |  |
-| [MicrosoftSentinelCostGBP](../content/github-only-microsoftsentinelcostgbp-451ae793.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
-| [SentinelCosts](../content/github-only-sentinelcosts-07de117e.md) |  |
-| [Sentinel_Central](../content/github-only-sentinel-central-2a36f7ae.md) |  |
-| [VisualizationDemo](../content/github-only-visualizationdemo-12456b23.md) |  |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

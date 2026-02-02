@@ -6,6 +6,16 @@
 
 ---
 
+Reference for CopilotActivity table in Azure Monitor Logs.
+
+| Attribute | Value |
+|:----------|:------|
+| **Category** | Audit, Security |
+| **Basic Logs Eligible** | ✗ No |
+| **Supports Transformations** | ✗ No |
+| **Ingestion API Supported** | ✗ No |
+| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/copilotactivity) |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

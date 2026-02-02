@@ -15,7 +15,7 @@
 | **Schema** | DhcpEvent |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.0 |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/imDhcpEvent.md)) |
 | **Last Updated** | Mar 11 2024 |
 | **Source File** | [Parsers\ASimDhcpEvent\Parsers\imDhcpEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDhcpEvent/Parsers/imDhcpEvent.yaml) |
 
