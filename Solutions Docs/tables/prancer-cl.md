@@ -1,10 +1,15 @@
 # prancer_CL
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
 ---
+
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 
 ## Solutions (1)
 
@@ -22,7 +27,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (14)
+## Content Items Using This Table (15)
 
 ### Analytic Rules (11)
 
@@ -51,7 +56,7 @@ This table is ingested by the following connectors:
 | [Hunting Query for Failed CSPM Scan Items](../content/prancer-pensuiteai-integration-hunting-query-for-failed-cspm-scan-items-322591e4-5b68-4574-be00-2e1b618eab7c-0f2f8db3.md) |  |
 | [Hunting Query for High Severity PAC findings](../content/prancer-pensuiteai-integration-hunting-query-for-high-severity-pac-findings-37cb2dea-7a62-4a8d-923b-d588c6372608-4b151227.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md):**
 
@@ -59,9 +64,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [PrancerSentinelAnalytics](../content/prancer-pensuiteai-integration-prancersentinelanalytics-90750e32.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [PrancerSentinelAnalytics](../content/github-only-prancersentinelanalytics-43012f16.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

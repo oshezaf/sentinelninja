@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `IllumioInsightsDefinition` |
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [Illumio Insight](../solutions/illumio-insight.md) |
-| **Collection Method** | CCF |
+| **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IllumioInsight_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsight_CCP/IllumioInsight_Definition.json) |
 
 Illumio Insights Connector sends workload and security graph data from Illumio Insights into the Azure Microsoft Sentinel Data Lake, providing deep context for threat detection, lateral movement analysis, and real-time investigation.
@@ -59,7 +59,7 @@ Please fill in the required fields below with the credentials obtained from the 
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

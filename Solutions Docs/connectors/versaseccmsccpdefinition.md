@@ -4,7 +4,7 @@
 
 <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Logos/versasec-logo.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -15,7 +15,7 @@
 | **Connector ID** | `VersasecCmsCCPDefinition` |
 | **Publisher** | Versasec AB |
 | **Used in Solutions** | [VersasecCMS](../solutions/versaseccms.md) |
-| **Collection Method** | CCF |
+| **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [VersasecCMS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_ConnectorDefinition.json) |
 
 The VersasecCms data connector allows ingesting logs into Microsoft Sentinel.
@@ -49,7 +49,7 @@ Enter credentials for VersasecCms.
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

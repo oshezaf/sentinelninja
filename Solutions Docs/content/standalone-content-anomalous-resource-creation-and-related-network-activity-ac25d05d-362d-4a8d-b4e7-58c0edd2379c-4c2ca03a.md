@@ -1,6 +1,6 @@
 # Anomalous Resource Creation and related Network Activity
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -18,9 +18,28 @@ Indicates when an anomalous number of resources are created in Azure via AzureAc
 | **Required Connectors** | [AzureActivity](../connectors/azureactivity.md), [AzureNetworkWatcher](../connectors/azurenetworkwatcher.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/MultipleDataSources/AzureResourceCreationWithNetworkActivity.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API |
+|:------|:---------------:|:-------------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | — | — |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [AzureActivity](../connectors/azureactivity.md) | [Azure Activity](../solutions/azure-activity.md) |
+
+**Solutions:** [Azure Activity](../solutions/azure-activity.md)
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Hunting Queries](hunting-queries.md)
 

@@ -1,6 +1,6 @@
 # Samsung_Knox_System_CL
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (5)
 
 ### Analytic Rules (3)
 
@@ -34,7 +34,7 @@ This table is ingested by the following connectors:
 | [Samsung Knox - Peripheral Access  Detection with Camera Events](../content/samsung-knox-asset-intelligence-samsung-knox-peripheral-access-detection-with-camera-events-cd526f4d-dbe9-4149-8a0a-9ec43c3abb16-ad75124d.md) |  |
 | [Samsung Knox - Peripheral Access  Detection with Mic Events](../content/samsung-knox-asset-intelligence-samsung-knox-peripheral-access-detection-with-mic-events-e4032fd2-4d05-4302-b7c0-f3f0380e2313-a1a77675.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
 
@@ -42,9 +42,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence-db535420.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SamsungKnoxAssetIntelligence](../content/github-only-samsungknoxassetintelligence-0d539170.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

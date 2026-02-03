@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,10 +13,16 @@
 | **Connector ID** | `AWS` |
 | **Publisher** | Amazon |
 | **Used in Solutions** | [Amazon Web Services](../solutions/amazon-web-services.md) |
-| **Collection Method** | Native |
+| **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_AWS.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services/Data%20Connectors/template_AWS.json) |
 
 Follow these instructions to connect to AWS and stream your CloudTrail logs into Microsoft Sentinel. For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2218883&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
+
+## Additional Information
+
+- 📖 **Setup Guide:** [Connect Microsoft Sentinel to AWS](https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment) - Configure your AWS environment for Microsoft Sentinel integration
+- 📖 **Related Documentation:** [AWS service logs](https://learn.microsoft.com/azure/sentinel/connect-aws) - Ingest AWS service logs into Microsoft Sentinel
+- 📖 **Related Documentation:** [Enable attack disruption on AWS](https://learn.microsoft.com/azure/sentinel/aws-disruption) - Configure automatic attack disruption for AWS
 
 ## Tables Ingested
 
@@ -52,7 +58,7 @@ The connection necessitates giving Microsoft permissions to access your AWS acco
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

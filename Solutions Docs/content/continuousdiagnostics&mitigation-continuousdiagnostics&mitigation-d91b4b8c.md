@@ -1,6 +1,6 @@
 # ContinuousDiagnostics&Mitigation
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -22,10 +22,10 @@ This content item queries data from the following tables:
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ |
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
-| [`AzureActivity`](../tables/azureactivity.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` | ✗ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |  | ✓ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | — | ✗ |
-| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | — | — |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | — | ✗ |
+| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | — | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ |
 | [`ConfigurationData`](../tables/configurationdata.md) |  | ✓ | ✗ |
 | [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ |
@@ -34,11 +34,11 @@ This content item queries data from the following tables:
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |  | — | — |
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | — | — |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | — | ✗ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | — | — |
 | [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ |
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | — | — |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | — | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
 | [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
@@ -53,7 +53,7 @@ This content item queries data from the following tables:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 

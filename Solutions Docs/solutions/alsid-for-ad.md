@@ -4,7 +4,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Alsid.svg" alt="Alsid For AD Logo" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -33,13 +33,11 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | [Alsid for Active Directory](../connectors/alsidforad.md) | - |
-| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | [Alsid for Active Directory](../connectors/alsidforad.md) | Analytics, Workbooks |
-| [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | [Alsid for Active Directory](../connectors/alsidforad.md) | Analytics, Workbooks |
+| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | [Alsid for Active Directory](../connectors/alsidforad.md) | Analytics, Workbooks |
 
 ## Content Items
 
@@ -55,25 +53,25 @@ This solution includes **15 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Alsid Active Directory attacks pathways](../content/alsid-for-ad-alsid-active-directory-attacks-pathways-9649e203-3cb7-47ff-89a9-42f2a5eefe31-b1b754b8.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid DCShadow](../content/alsid-for-ad-alsid-dcshadow-25e0b2dd-3ad3-4d5b-80dd-720f4ef0f12c-a4a36fc9.md) | High | DefenseEvasion | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid DCSync](../content/alsid-for-ad-alsid-dcsync-d3c658bd-8da9-4372-82e4-aaffa922f428-5a769a8c.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid Golden Ticket](../content/alsid-for-ad-alsid-golden-ticket-21ab3f52-6d79-47e3-97f8-ad65f2cb29fb-1e19d68a.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid Indicators of Attack](../content/alsid-for-ad-alsid-indicators-of-attack-3caa67ef-8ed3-4ab5-baf2-3850d3667f3d-b0aa041c.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid Indicators of Exposures](../content/alsid-for-ad-alsid-indicators-of-exposures-154fde9f-ae00-4422-a8da-ef00b11da3fc-e2965543.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid LSASS Memory](../content/alsid-for-ad-alsid-lsass-memory-3acf5617-7c41-4085-9a79-cc3a425ba83a-0b72e79a.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid Password Guessing](../content/alsid-for-ad-alsid-password-guessing-ba239935-42c2-472d-80ba-689186099ea1-82e46a9e.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid Password Spraying](../content/alsid-for-ad-alsid-password-spraying-9e20eb4e-cc0d-4349-a99d-cad756859dfb-e60e61e5.md) | High | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid Password issues](../content/alsid-for-ad-alsid-password-issues-472b7cf4-bf1a-4061-b9ab-9fe4894e3c17-b8987ae6.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid privileged accounts issues](../content/alsid-for-ad-alsid-privileged-accounts-issues-a5fe9489-cf8b-47ae-a87e-8f3a13e4203e-9372b5a5.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [Alsid user accounts issues](../content/alsid-for-ad-alsid-user-accounts-issues-fb9e0b51-8867-48d7-86f4-6e76f2176bf8-e2d6b044.md) | Low | CredentialAccess | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
+| [Alsid Active Directory attacks pathways](../content/alsid-for-ad-alsid-active-directory-attacks-pathways-9649e203-3cb7-47ff-89a9-42f2a5eefe31-b1b754b8.md) | Low | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid DCShadow](../content/alsid-for-ad-alsid-dcshadow-25e0b2dd-3ad3-4d5b-80dd-720f4ef0f12c-a4a36fc9.md) | High | DefenseEvasion | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid DCSync](../content/alsid-for-ad-alsid-dcsync-d3c658bd-8da9-4372-82e4-aaffa922f428-5a769a8c.md) | High | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid Golden Ticket](../content/alsid-for-ad-alsid-golden-ticket-21ab3f52-6d79-47e3-97f8-ad65f2cb29fb-1e19d68a.md) | High | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid Indicators of Attack](../content/alsid-for-ad-alsid-indicators-of-attack-3caa67ef-8ed3-4ab5-baf2-3850d3667f3d-b0aa041c.md) | Low | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid Indicators of Exposures](../content/alsid-for-ad-alsid-indicators-of-exposures-154fde9f-ae00-4422-a8da-ef00b11da3fc-e2965543.md) | Low | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid LSASS Memory](../content/alsid-for-ad-alsid-lsass-memory-3acf5617-7c41-4085-9a79-cc3a425ba83a-0b72e79a.md) | High | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid Password Guessing](../content/alsid-for-ad-alsid-password-guessing-ba239935-42c2-472d-80ba-689186099ea1-82e46a9e.md) | High | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid Password Spraying](../content/alsid-for-ad-alsid-password-spraying-9e20eb4e-cc0d-4349-a99d-cad756859dfb-e60e61e5.md) | High | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid Password issues](../content/alsid-for-ad-alsid-password-issues-472b7cf4-bf1a-4061-b9ab-9fe4894e3c17-b8987ae6.md) | Low | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid privileged accounts issues](../content/alsid-for-ad-alsid-privileged-accounts-issues-a5fe9489-cf8b-47ae-a87e-8f3a13e4203e-9372b5a5.md) | Low | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [Alsid user accounts issues](../content/alsid-for-ad-alsid-user-accounts-issues-fb9e0b51-8867-48d7-86f4-6e76f2176bf8-e2d6b044.md) | Low | CredentialAccess | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [AlsidIoA](../content/alsid-for-ad-alsidioa-d26d67ed.md) | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
-| [AlsidIoE](../content/alsid-for-ad-alsidioe-984d410f.md) | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md)<br>[`Tenable_ad_CL`](../tables/tenable-ad-cl.md) |
+| [AlsidIoA](../content/alsid-for-ad-alsidioa-d26d67ed.md) | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
+| [AlsidIoE](../content/alsid-for-ad-alsidioe-984d410f.md) | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) |
 
 ### Parsers
 
@@ -85,7 +83,7 @@ This solution includes **15 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

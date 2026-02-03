@@ -4,7 +4,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -15,14 +15,15 @@
 | **Connector ID** | `F5Ama` |
 | **Publisher** | F5 Networks |
 | **Used in Solutions** | [F5 Networks](../solutions/f5-networks.md) |
-| **Collection Method** | AMA |
+| **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_F5NetworksAMA.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks/Data%20Connectors/template_F5NetworksAMA.json) |
+
+The F5 firewall connector allows you to easily connect your F5 logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
 
 ## Additional Information
 
-📖 **Vendor Documentation:** [F5 BIG-IP Event Messages](https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-external-monitoring-implementations-13-0-0/3.html) - Event messages and attack types
-
-The F5 firewall connector allows you to easily connect your F5 logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
+- 📖 **Vendor Documentation:** [F5 BIG-IP Event Messages](https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-external-monitoring-implementations-13-0-0/3.html) - Event messages and attack types
+- 🛠️ **Device Configuration:** Go to [F5 Configuring Application Security Event Logging](https://aka.ms/asi-syslog-f5-forwarding). Set Remote storage type to CEF, Protocol to UDP, IP address to syslog server, port to 514.
 
 ## Tables Ingested
 
@@ -99,7 +100,7 @@ Make sure to configure the machine's security according to your organization's s
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

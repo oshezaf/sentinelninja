@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="Amazon Web Services Logo" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -22,6 +22,13 @@ The Amazon Web Services solution for Microsoft Sentinel allows you to enable Sec
 | **Author** | Microsoft |
 | **First Published** | 2022-05-26 |
 | **Solution Folder** | [Amazon Web Services](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services) |
+
+## Additional Information
+
+- 📖 **Setup Guide:** [Connect Microsoft Sentinel to AWS](https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment) - Configure your AWS environment for Microsoft Sentinel integration
+- 📖 **Related Documentation:** [AWS service logs](https://learn.microsoft.com/azure/sentinel/connect-aws) - Ingest AWS service logs into Microsoft Sentinel
+- 📖 **Related Documentation:** [Enable attack disruption on AWS](https://learn.microsoft.com/azure/sentinel/aws-disruption) - Configure automatic attack disruption for AWS
+- 📖 **Troubleshooting:** [Troubleshoot AWS S3 connector issues](https://learn.microsoft.com/azure/sentinel/aws-s3-troubleshoot) - Resolve common AWS S3 connector problems
 
 ## Data Connectors
 
@@ -184,7 +191,7 @@ This solution includes **100 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 

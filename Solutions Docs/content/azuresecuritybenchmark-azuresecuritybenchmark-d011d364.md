@@ -1,6 +1,6 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> AzureSecurityBenchmark
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -29,12 +29,12 @@ This content item queries data from the following tables:
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | ✓ | ✗ |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
-| [`AzureActivity`](../tables/azureactivity.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` | ✗ | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |  | ✓ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceType == "AZUREFIREWALLS"` | — | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType == "AZUREFIREWALLS"` | — | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
 | [`Event`](../tables/event.md) |  | ✓ | ✗ |
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | — | — |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | — | ✗ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | — | — |
 | [`ProtectionStatus`](../tables/protectionstatus.md) |  | ✓ | ✗ |
@@ -48,7 +48,7 @@ This content item queries data from the following tables:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 

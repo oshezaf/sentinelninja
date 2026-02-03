@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `AwsS3` |
 | **Publisher** | Amazon |
 | **Used in Solutions** | [Amazon Web Services](../solutions/amazon-web-services.md) |
-| **Collection Method** | Native |
+| **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_AwsS3.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services/Data%20Connectors/template_AwsS3.json) |
 
 This connector allows you to ingest AWS service logs, collected in AWS S3 buckets, to Microsoft Sentinel. The currently supported data types are: 
@@ -29,6 +29,12 @@ This connector allows you to ingest AWS service logs, collected in AWS S3 bucket
 
 
 For more information, see the [Microsoft Sentinel documentation](https://go.microsoft.com/fwlink/p/?linkid=2218883&wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci).
+
+## Additional Information
+
+- 📖 **Setup Guide:** [Connect Microsoft Sentinel to AWS](https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment) - Configure your AWS environment for Microsoft Sentinel integration
+- 📖 **Related Documentation:** [AWS service logs](https://learn.microsoft.com/azure/sentinel/connect-aws) - Ingest AWS service logs into Microsoft Sentinel
+- 📖 **Troubleshooting:** [Troubleshoot AWS S3 connector issues](https://learn.microsoft.com/azure/sentinel/aws-s3-troubleshoot) - Resolve common AWS S3 connector problems
 
 ## Tables Ingested
 
@@ -88,7 +94,7 @@ Before running the script, run the aws configure command from your PowerShell co
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

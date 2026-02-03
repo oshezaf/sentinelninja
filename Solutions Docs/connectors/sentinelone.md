@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `SentinelOne` |
 | **Publisher** | SentinelOne |
 | **Used in Solutions** | [SentinelOne](../solutions/sentinelone.md) |
-| **Collection Method** | Azure Function |
+| **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SentinelOne_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Data%20Connectors/SentinelOne_API_FunctionApp.json) |
 
 The [SentinelOne](https://www.sentinelone.com/) data connector provides the capability to ingest common SentinelOne server objects such as Threats, Agents, Applications, Activities, Policies, Groups, and more events into Microsoft Sentinel through the REST API. Refer to API documentation: `https://<SOneInstanceDomain>.sentinelone.net/api-doc/overview` for more information. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
@@ -24,12 +24,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | — | — |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | — | — |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | — | — |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | — | — |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | — | — |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | — |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | — | ✗ |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | — | ✗ |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | — | ✗ |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | — | ✗ |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | — | ✗ |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | ✗ |
 
 ## Permissions
 
@@ -137,7 +137,7 @@ If you're already signed in, go to the next step.
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

@@ -1,6 +1,6 @@
 # Samsung_Knox_User_CL
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (4)
 
 ### Analytic Rules (2)
 
@@ -33,7 +33,7 @@ This table is ingested by the following connectors:
 | [Samsung Knox - Password Lockout Events](../content/samsung-knox-asset-intelligence-samsung-knox-password-lockout-events-fbff0a97-1972-4df8-a78c-254ccb9879ef-066202c7.md) |  |
 | [Samsung Knox - Suspicious URL Accessed Events](../content/samsung-knox-asset-intelligence-samsung-knox-suspicious-url-accessed-events-18d4d4f3-6605-4fd2-968c-82c171409c1c-1eff2715.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
 
@@ -41,9 +41,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence-db535420.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SamsungKnoxAssetIntelligence](../content/github-only-samsungknoxassetintelligence-0d539170.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

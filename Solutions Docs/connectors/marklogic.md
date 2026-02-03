@@ -6,7 +6,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -17,10 +17,14 @@
 | **Connector ID** | `MarkLogic` |
 | **Publisher** | MarkLogic |
 | **Used in Solutions** | [MarkLogicAudit](../solutions/marklogicaudit.md) |
-| **Collection Method** | MMA |
+| **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [Connector_MarkLogicAudit.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MarkLogicAudit/Data%20Connectors/Connector_MarkLogicAudit.json) |
 
 MarkLogic data connector provides the capability to ingest [MarkLogicAudit](https://www.marklogic.com/) logs into Microsoft Sentinel. Refer to [MarkLogic documentation](https://docs.marklogic.com/guide/getting-started) for more information.
+
+## Additional Information
+
+🛠️ **Device Configuration:** Table: `MarkLogicAudit_CL`. Log locations: Windows: `C:\Program Files\MarkLogic\Data\Logs\AuditLog.txt`, Linux: `/var/opt/MarkLogic/Logs/AuditLog.txt`. Enable auditing in MarkLogic Admin interface. See [Custom Logs via AMA configuration](https://learn.microsoft.com/azure/sentinel/unified-connector-custom-device#marklogic-audit) and [MarkLogic auditing docs](https://docs.marklogic.com/guide/admin/auditing).
 
 ## Tables Ingested
 
@@ -28,7 +32,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | — | — |
+| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | — | ✗ |
 
 ## Permissions
 
@@ -106,7 +110,7 @@ It may take upwards of 20 minutes until your logs start to appear in Microsoft S
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

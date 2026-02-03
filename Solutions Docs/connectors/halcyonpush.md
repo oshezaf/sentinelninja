@@ -4,7 +4,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/halcyon.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -15,7 +15,7 @@
 | **Connector ID** | `HalcyonPush` |
 | **Publisher** | Halcyon |
 | **Used in Solutions** | [Halcyon](../solutions/halcyon.md) |
-| **Collection Method** | CCF |
+| **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Halcyon_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon/Data%20Connectors/Halcyon_ccp/Halcyon_connectorDefinition.json) |
 
 The [Halcyon](https://www.halcyon.ai) connector provides the capability to send data from Halcyon to Microsoft Sentinel.
@@ -26,11 +26,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | — | — |
-| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | — | — |
-| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | — |
-| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | — | — |
-| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | — | — |
+| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | — | ✗ |
+| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | — | ✗ |
+| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | ✗ |
+| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | — | ✗ |
+| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | — | ✗ |
 
 ## Permissions
 
@@ -69,7 +69,7 @@ Use the following parameters to configure your integration in the Halcyon Platfo
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

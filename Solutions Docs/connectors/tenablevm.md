@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tenable.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `TenableVM` |
 | **Publisher** | Tenable |
 | **Used in Solutions** | [Tenable App](../solutions/tenable-app.md) |
-| **Collection Method** | Azure Function |
+| **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [TenableVM.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableVM/TenableVM.json) |
 
 The TVM data connector provides the ability to ingest Asset, Vulnerability, Compliance, WAS assets and WAS vulnerabilities data into Microsoft Sentinel using TVM REST APIs. Refer to [API documentation](https://developer.tenable.com/reference) for more information. The connector provides the ability to get data which helps to examine potential security risks, get insight into your computing assets, diagnose configuration problems and more
@@ -24,11 +24,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | — | — |
-| [`Tenable_VM_Compliance_CL`](../tables/tenable-vm-compliance-cl.md) | — | — |
-| [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | — | — |
-| [`Tenable_WAS_Asset_CL`](../tables/tenable-was-asset-cl.md) | — | — |
-| [`Tenable_WAS_Vuln_CL`](../tables/tenable-was-vuln-cl.md) | — | — |
+| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | — | ✗ |
+| [`Tenable_VM_Compliance_CL`](../tables/tenable-vm-compliance-cl.md) | — | ✗ |
+| [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | — | ✗ |
+| [`Tenable_WAS_Asset_CL`](../tables/tenable-was-asset-cl.md) | — | ✗ |
+| [`Tenable_WAS_Vuln_CL`](../tables/tenable-was-vuln-cl.md) | — | ✗ |
 
 ## Permissions
 
@@ -219,7 +219,7 @@ If you're already signed in, go to the next step.
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

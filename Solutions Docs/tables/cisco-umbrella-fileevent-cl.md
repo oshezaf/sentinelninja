@@ -1,10 +1,15 @@
 # Cisco_Umbrella_fileevent_CL
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
 ---
+
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 
 ## Solutions (1)
 
@@ -23,9 +28,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (21)
+## Content Items Using This Table (31)
 
-### Analytic Rules (10)
+### Analytic Rules (20)
 
 **GitHub Only:**
 
@@ -41,6 +46,16 @@ This table is ingested by the following connectors:
 | [Cisco Cloud Security - Request to blocklisted file type](../content/ciscoumbrella-cisco-cloud-security-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-4fbd74eb.md) |  |
 | [Cisco Cloud Security - URI contains IP address](../content/ciscoumbrella-cisco-cloud-security-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-8213dfcd.md) |  |
 | [Cisco Cloud Security - Windows PowerShell User-Agent Detected](../content/ciscoumbrella-cisco-cloud-security-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-9add09cc.md) |  |
+| [Cisco Umbrella - Connection to Unpopular Website Detected](../content/github-only-cisco-umbrella-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-f1ef1f4f.md) |  |
+| [Cisco Umbrella - Connection to non-corporate private network](../content/github-only-cisco-umbrella-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-d0eaf302.md) |  |
+| [Cisco Umbrella - Crypto Miner User-Agent Detected](../content/github-only-cisco-umbrella-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-0f9ddd1e.md) |  |
+| [Cisco Umbrella - Empty User Agent Detected](../content/github-only-cisco-umbrella-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-905ba02a.md) |  |
+| [Cisco Umbrella - Hack Tool User-Agent Detected](../content/github-only-cisco-umbrella-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-e3f1aadd.md) |  |
+| [Cisco Umbrella - Rare User Agent Detected](../content/github-only-cisco-umbrella-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-0e96a6a6.md) |  |
+| [Cisco Umbrella - Request Allowed to harmful/malicious URI category](../content/github-only-cisco-umbrella-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-7f7031e1.md) |  |
+| [Cisco Umbrella - Request to blocklisted file type](../content/github-only-cisco-umbrella-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-098588eb.md) |  |
+| [Cisco Umbrella - URI contains IP address](../content/github-only-cisco-umbrella-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-33d6f7f0.md) |  |
+| [Cisco Umbrella - Windows PowerShell User-Agent Detected](../content/github-only-cisco-umbrella-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-f6bce1e2.md) |  |
 
 ### Hunting Queries (10)
 
@@ -77,7 +92,7 @@ This table is ingested by the following connectors:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

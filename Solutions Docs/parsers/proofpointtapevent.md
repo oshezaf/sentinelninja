@@ -1,6 +1,6 @@
 # ProofpointTAPEvent
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Parsers Index](parsers-index.md)
 
@@ -25,19 +25,19 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md) | — | — |
+| [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md) | — | ✗ |
 | [`ProofPointTAPClicksBlocked_CL`](../tables/proofpointtapclicksblocked-cl.md) | — | — |
-| [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) | — | — |
+| [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) | — | ✗ |
 | [`ProofPointTAPClicksPermitted_CL`](../tables/proofpointtapclickspermitted-cl.md) | — | — |
-| [`ProofPointTAPMessagesBlockedV2_CL`](../tables/proofpointtapmessagesblockedv2-cl.md) | — | — |
+| [`ProofPointTAPMessagesBlockedV2_CL`](../tables/proofpointtapmessagesblockedv2-cl.md) | — | ✗ |
 | [`ProofPointTAPMessagesBlocked_CL`](../tables/proofpointtapmessagesblocked-cl.md) | — | — |
-| [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) | — | — |
+| [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) | — | ✗ |
 | [`ProofPointTAPMessagesDelivered_CL`](../tables/proofpointtapmessagesdelivered-cl.md) | — | — |
 | [`ProofpointTAPNativePoller_CL`](../tables/proofpointtapnativepoller-cl.md) | — | — |
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Parsers Index](parsers-index.md)
 

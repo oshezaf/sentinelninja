@@ -1,6 +1,6 @@
 # secRMM_CL
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
 ### Analytic Rules (1)
 
@@ -32,7 +32,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Removable storage ONLINE event from secRMM](../content/squadra-technologies-secrmm-removable-storage-online-event-from-secrmm-a22b2ecf-1478-4400-877e-07a32e53a897-c1870014.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md):**
 
@@ -40,9 +40,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/squadra-technologies-secrmm-azuresentinelworkbookforremovablestoragesecurityevents-c1ab5ac4.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SquadraTechnologiesSecRMM](../content/github-only-squadratechnologiessecrmm-3e33bcf1.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

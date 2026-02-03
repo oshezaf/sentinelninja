@@ -1,6 +1,6 @@
 # ASimNetworkSessionSonicWallFirewall
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -18,7 +18,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (4)
 
 ### Analytic Rules (1)
 
@@ -36,7 +36,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [Outbound SSH/SCP Connections](../content/sonicwall-firewall-outbound-ssh-scp-connections-dedb8fb9-3caa-4b00-ae88-1898eed78917-0b8386aa.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [SonicWall Firewall](../solutions/sonicwall-firewall.md):**
 
@@ -44,9 +44,15 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [SonicWallFirewall](../content/sonicwall-firewall-sonicwallfirewall-108e460f.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [SonicWallFirewall](../content/github-only-sonicwallfirewall-7b4c1651.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

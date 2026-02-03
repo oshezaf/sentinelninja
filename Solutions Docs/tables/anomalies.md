@@ -1,6 +1,6 @@
 # Anomalies
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -16,7 +16,7 @@ Reference for Anomalies table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/anomalies) |
 
-## Solutions (10)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -28,14 +28,15 @@ This table is used by the following solutions:
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
 - [Web Session Essentials](../solutions/web-session-essentials.md)
 
 ---
 
-## Content Items Using This Table (24)
+## Content Items Using This Table (35)
 
-### Analytic Rules (11)
+### Analytic Rules (13)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 
@@ -73,7 +74,19 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.md) |  |
 
-### Hunting Queries (8)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Time series anomaly for data size transferred to public internet](../content/standalone-content-time-series-anomaly-for-data-size-transferred-to-public-internet-f2dd4a3a-ebac-4994-9499-1a859938c947-b66aa17e.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Unusual Anomaly](../content/github-only-unusual-anomaly-d0255b5f-2a3c-4112-8744-e6757af3283a-77d2d4f7.md) |  |
+
+### Hunting Queries (9)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 
@@ -98,7 +111,13 @@ This table is used by the following solutions:
 | [UEBA Multi-Source Anomalous Activity Overview](../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.md) |  |
 | [User-Centric Anomaly Investigation](../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.md) |  |
 
-### Workbooks (5)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [User Accounts - Successful Sign in Spikes](../content/github-only-user-accounts-successful-sign-in-spikes-3c7fcea1-ec9f-4ea2-a555-156073b2d183-277cd450.md) |  |
+
+### Workbooks (13)
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 
@@ -125,9 +144,22 @@ This table is used by the following solutions:
 | [AnomaliesVisualization](../content/soc-handbook-anomaliesvisualization-8cb75567.md) |  |
 | [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AnomaliesVisualization](../content/github-only-anomaliesvisualization-9d418617.md) |  |
+| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
+| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
+| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [UserEntityBehaviorAnalytics](../content/github-only-userentitybehavioranalytics-2c986bb5.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

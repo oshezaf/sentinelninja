@@ -1,6 +1,6 @@
 # apifirewall_log_1_CL
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (12)
+## Content Items Using This Table (13)
 
 ### Analytic Rules (11)
 
@@ -42,7 +42,7 @@ This table is ingested by the following connectors:
 | [API - Rate limiting](../content/42crunch-api-protection-api-rate-limiting-b808063b-07d5-432c-95d0-8900da61cce9-3103815b.md) |  |
 | [API - Suspicious Login](../content/42crunch-api-protection-api-suspicious-login-7bdc10d6-aa24-4ca9-9a93-802cd8761354-d5428b70.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [42Crunch API Protection](../solutions/42crunch-api-protection.md):**
 
@@ -50,9 +50,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [42CrunchAPIProtectionWorkbook](../content/42crunch-api-protection-42crunchapiprotectionworkbook-5ba91507.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [42CrunchAPIProtectionWorkbook](../content/github-only-42crunchapiprotectionworkbook-70156700.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

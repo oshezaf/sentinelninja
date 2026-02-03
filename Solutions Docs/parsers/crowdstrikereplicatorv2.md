@@ -1,6 +1,6 @@
 # CrowdStrikeReplicatorV2
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Parsers Index](parsers-index.md)
 
@@ -38,12 +38,12 @@ This parser reads from the following tables:
 | [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) |  | — | — |
 | [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) |  | ✓ | ✓ |
 | [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) |  | — | — |
-| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) |  | — | — |
+| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) |  | — | ✗ |
 | [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) |  | — | — |
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · **Parsers** · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Parsers Index](parsers-index.md)
 

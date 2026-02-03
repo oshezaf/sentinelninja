@@ -1,6 +1,6 @@
 # F5Networks
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -18,13 +18,13 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) | — | — |
-| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) | — | — |
-| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | — | — |
+| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) | — | ✗ |
+| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) | — | ✗ |
+| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | — | ✗ |
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to F5 Big-IP](../solutions/f5-big-ip.md)
 

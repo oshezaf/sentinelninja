@@ -1,6 +1,6 @@
 # <img src="../images/asim-badge.png" alt="ASIM" height="32"> GDPRComplianceAndDataSecurity
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ |
 | [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | ✓ | ✗ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | — | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
 | [`LAQueryLogs`](../tables/laquerylogs.md) |  | ✓ | ✗ |
@@ -38,12 +38,12 @@ This content item queries data from the following tables:
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | ✓ | ✗ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ |
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Samsung_Knox_Asset_Intelligence.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `SamsungDCDefinition` |
 | **Publisher** | Samsung |
 | **Used in Solutions** | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
-| **Collection Method** | Unknown (Custom Log) |
+| **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
 | **Connector Definition Files** | [Template_Samsung.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Samsung%20Knox%20Asset%20Intelligence/Data%20Connectors/Template_Samsung.json) |
 
 Samsung Knox Asset Intelligence Data Connector lets you centralize your mobile security events and logs in order to view customized insights using the Workbook template, and identify incidents based on Analytics Rules templates.
@@ -25,7 +25,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
 | [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md) | — | — |
-| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) | — | — |
+| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) | — | ✗ |
 | [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md) | — | — |
 | [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) | — | — |
 | [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) | — | — |
@@ -91,7 +91,7 @@ Ensure the Entra Application created in STEP 1 has permissions to use the DCR cr
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

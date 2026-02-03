@@ -1,6 +1,6 @@
 # ThreatIntelIndicators
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -14,6 +14,7 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
 
 ## Solutions (13)
@@ -50,7 +51,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (95)
+## Content Items Using This Table (100)
 
 ### Analytic Rules (67)
 
@@ -141,7 +142,7 @@ This table is ingested by the following connectors:
 | [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-7773b67f.md) |  |
 | [TI map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.md) |  |
 
-### Hunting Queries (14)
+### Hunting Queries (15)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 
@@ -177,7 +178,13 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-new-ti-map-file-entity-to-wiredata-event-d2fd7661-de21-47ab-a9f9-e6ded983fabe-9e547c28.md) |  |
 
-### Workbooks (14)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
+
+### Workbooks (18)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
@@ -248,6 +255,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ThreatConnectOverview](../content/threatconnect-threatconnectoverview-c70716b8.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [IntsightsIOCWorkbook](../content/github-only-intsightsiocworkbook-88f7baed.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
+| [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
+
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
@@ -264,7 +280,7 @@ This table collects data from the following Azure resource types:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

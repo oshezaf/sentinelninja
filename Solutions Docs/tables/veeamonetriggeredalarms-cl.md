@@ -1,10 +1,15 @@
 # VeeamOneTriggeredAlarms_CL
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
 ---
+
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 
 ## Solutions (1)
 
@@ -22,7 +27,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (19)
+## Content Items Using This Table (21)
 
 ### Analytic Rules (18)
 
@@ -49,7 +54,7 @@ This table is ingested by the following connectors:
 | [Veeam ONE VM with No Replica](../content/veeam-veeam-one-vm-with-no-replica-128ea2a4-1047-4f28-ad55-b1b88357d172-1cdf365f.md) |  |
 | [Veeam ONE VM with No Replica (Hyper-V)](../content/veeam-veeam-one-vm-with-no-replica-hyper-v-6117e317-4b90-4bcc-a71f-0c1f29d82ce3-5e9c3162.md) |  |
 
-### Workbooks (1)
+### Workbooks (3)
 
 **In solution [Veeam](../solutions/veeam.md):**
 
@@ -57,9 +62,16 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [VeeamSecurityActivites](../content/github-only-veeamsecurityactivites-4f8fb3e5.md) |  |
+| [VeeamSecurityActivities](../content/github-only-veeamsecurityactivities-c31c4544.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `VectraXDR` |
 | **Publisher** | Vectra |
 | **Used in Solutions** | [Vectra XDR](../solutions/vectra-xdr.md) |
-| **Collection Method** | Azure Function |
+| **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [VectraXDR_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraDataConnector/VectraXDR_API_FunctionApp.json) |
 
 The [Vectra XDR](https://www.vectra.ai/) connector gives the capability to ingest Vectra Detections, Audits, Entity Scoring, Lockdown, Health and Entities data into Microsoft Sentinel through the Vectra REST API. Refer to the API documentation: `https://support.vectra.ai/s/article/KB-VS-1666` for more information.
@@ -24,12 +24,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | — | — |
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | — | — |
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) | — | — |
-| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | — | — |
-| [`Health_Data_CL`](../tables/health-data-cl.md) | — | — |
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | — | — |
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) | — | ✗ |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | — | ✗ |
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) | — | ✗ |
+| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | — | ✗ |
+| [`Health_Data_CL`](../tables/health-data-cl.md) | — | ✗ |
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | — | ✗ |
 
 ## Permissions
 
@@ -351,7 +351,7 @@ iii. By clicking on the invocation time, you can see all the logs for that run.
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

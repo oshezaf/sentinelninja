@@ -4,7 +4,7 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 
 📚 **Learn more:** [ASIM-based domain solutions for Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions)
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ---
 
@@ -174,7 +174,7 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Solution | Version |
 |:-------|:--------|:---------|:--------|
-| [AzureFirewall](asimdnsazurefirewall.md) | Azure Firewall | [Azure Batch Account](../solutions/azure-batch-account.md)<br>[Azure Cognitive Search](../solutions/azure-cognitive-search.md)<br>[Azure Data Lake Storage Gen1](../solutions/azure-data-lake-storage-gen1.md)<br>[Azure Event Hubs](../solutions/azure-event-hubs.md)<br>[Azure Firewall](../solutions/azure-firewall.md)<br>[Azure Key Vault](../solutions/azure-key-vault.md)<br>[Azure Logic Apps](../solutions/azure-logic-apps.md)<br>[Azure Service Bus](../solutions/azure-service-bus.md)<br>[Azure Stream Analytics](../solutions/azure-stream-analytics.md)<br>[SlashNext](../solutions/slashnext.md) | [0.4.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsAzureFirewall.md) |
+| [AzureFirewall](asimdnsazurefirewall.md) | Azure Firewall | [Azure Firewall](../solutions/azure-firewall.md)<br>[SlashNext](../solutions/slashnext.md) | [0.4.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsAzureFirewall.md) |
 | [CiscoUmbrella](asimdnsciscoumbrella.md) | Cisco Umbrella | [CiscoUmbrella](../solutions/ciscoumbrella.md) | [0.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCiscoUmbrella.md) |
 | [CorelightZeek](asimdnscorelightzeek.md) | Corelight Zeek | [Corelight](../solutions/corelight.md) | [0.5](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCorelightZeek.md) |
 | [FortinetFortiGate](asimdnsfortinetfortigate.md) | Fortinet FortiGate | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsFortinetFortiGate.md) |
@@ -247,7 +247,7 @@ These are the main entry points that combine all source parsers:
 |:-------|:--------|:---------|:--------|
 | [AWSVPC](asimnetworksessionawsvpc.md) | AWS VPC | [AWS VPC Flow Logs](../solutions/aws-vpc-flow-logs.md) | [0.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAWSVPC.md) |
 | [AppGateSDP](asimnetworksessionappgatesdp.md) | AppGate SDP | [Syslog](../solutions/syslog.md) | [0.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAppGateSDP.md) |
-| [AzureFirewall](asimnetworksessionazurefirewall.md) | Azure Firewall | [Azure Batch Account](../solutions/azure-batch-account.md)<br>[Azure Cognitive Search](../solutions/azure-cognitive-search.md)<br>[Azure Data Lake Storage Gen1](../solutions/azure-data-lake-storage-gen1.md)<br>[Azure Event Hubs](../solutions/azure-event-hubs.md)<br>[Azure Key Vault](../solutions/azure-key-vault.md)<br>[Azure Logic Apps](../solutions/azure-logic-apps.md)<br>[Azure Service Bus](../solutions/azure-service-bus.md)<br>[Azure Stream Analytics](../solutions/azure-stream-analytics.md)<br>[MimecastTIRegional](../solutions/mimecasttiregional.md)<br>[SlashNext](../solutions/slashnext.md) | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAzureFirewall.md) |
+| [AzureFirewall](asimnetworksessionazurefirewall.md) | Azure Firewall | [MimecastTIRegional](../solutions/mimecasttiregional.md)<br>[SlashNext](../solutions/slashnext.md) | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAzureFirewall.md) |
 | [AzureNSG](asimnetworksessionazurensg.md) | Azure NSG flows | [MimecastTIRegional](../solutions/mimecasttiregional.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAzureNSG.md) |
 | [BarracudaCEF](asimnetworksessionbarracudacef.md) | Barracuda WAF | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionBarracudaCEF.md) |
 | [BarracudaWAF](asimnetworksessionbarracudawaf.md) | Barracuda WAF |  | [0.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionBarracudaWAF.md) |
@@ -417,5 +417,5 @@ These are the main entry points that combine all source parsers:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · **ASIM Parsers** · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 

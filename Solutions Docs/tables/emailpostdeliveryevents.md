@@ -1,6 +1,6 @@
 # EmailPostDeliveryEvents
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -33,9 +33,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (22)
 
-### Hunting Queries (10)
+### Hunting Queries (20)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -54,10 +54,20 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
+| [Calculate overall MDO efficacy](../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.md) |  |
 | [Email containing malware accessed on a unmanaged device](../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.md) |  |
+| [Email containing malware accessed on a unmanaged device](../content/github-only-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-2e5f8871.md) |  |
+| [MDO Threat Protection Detections trend over time](../content/github-only-mdo-threat-protection-detections-trend-over-time-02698387-5bf0-4111-a6ca-0f592a238a8f-f1170f50.md) |  |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) |  |
+| [MDO daily detection summary report](../content/github-only-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-5c96ae0a.md) |  |
+| [Post Delivery Events by Admin](../content/github-only-post-delivery-events-by-admin-ee4dc300-5eaa-4cc5-b455-e53cb427e215-14d67447.md) |  |
+| [Post Delivery Events by Location](../content/github-only-post-delivery-events-by-location-9b83fc5e-1271-4a5b-af84-e7ebf5436180-8ca89243.md) |  |
+| [Post Delivery Events by ZAP type](../content/github-only-post-delivery-events-by-zap-type-c0efc072-fce7-46c2-83a1-51e8a9e6a1e1-e6a82d26.md) |  |
+| [Post Delivery Events over time](../content/github-only-post-delivery-events-over-time-c10b22a0-6021-46f9-bdaf-05bf2350a554-b2376473.md) |  |
+| [Quarantine releases by Detection Types](../content/github-only-quarantine-releases-by-detection-types-87754d3a-0077-4ff9-b46e-6336b8d02287-c85b108a.md) |  |
+| [Total number of detections by MDO](../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -65,9 +75,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

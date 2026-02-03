@@ -1,12 +1,12 @@
 # imFileEvent
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
 ---
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -14,13 +14,14 @@ This table is used by the following solutions:
 - [Dataminr Pulse](../solutions/dataminr-pulse.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Recorded Future](../solutions/recorded-future.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (11)
 
-### Analytic Rules (3)
+### Analytic Rules (8)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -39,6 +40,16 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Identify SysAid Server web shell creation](../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.md) |  |
+
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Dev-0530 File Extension Rename](../content/standalone-content-dev-0530-file-extension-rename-d82eb796-d1eb-43c8-a813-325ce3417cef-f293cb3e.md) |  |
+| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
+| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
+| [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md) |  |
+| [SUNBURST and SUPERNOVA backdoor hashes (Normalized File Events)](../content/standalone-content-sunburst-and-supernova-backdoor-hashes-normalized-file-events-bc5ffe2a-84d6-48fe-bc7b-1055100469bc-0d1c5f43.md) |  |
 
 ### Hunting Queries (2)
 
@@ -64,7 +75,7 @@ This table is used by the following solutions:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

@@ -1,10 +1,15 @@
 # CognniIncidents_CL
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
 ---
+
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes |
 
 ## Solutions (1)
 
@@ -22,7 +27,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (16)
+## Content Items Using This Table (17)
 
 ### Analytic Rules (15)
 
@@ -46,7 +51,7 @@ This table is ingested by the following connectors:
 | [Cognni Incidents for Medium Sensitivity HR Information](../content/cognni-cognni-incidents-for-medium-sensitivity-hr-information-75ff4f7d-0564-4a55-8b25-a75be951cde3-1a7716ac.md) |  |
 | [Cognni Incidents for Medium Sensitivity Legal Information](../content/cognni-cognni-incidents-for-medium-sensitivity-legal-information-db750607-d48f-4aef-b238-085f4a9882f1-180f898f.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Cognni](../solutions/cognni.md):**
 
@@ -54,9 +59,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [CognniIncidentsWorkbook](../content/cognni-cognniincidentsworkbook-5343764a.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CognniIncidentsWorkbook](../content/github-only-cognniincidentsworkbook-5f17cd01.md) |  |
+
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Tables Index](../tables-index.md)
 

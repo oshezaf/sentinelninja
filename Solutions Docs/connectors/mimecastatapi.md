@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `MimecastATAPI` |
 | **Publisher** | Mimecast |
 | **Used in Solutions** | [Mimecast](../solutions/mimecast.md) |
-| **Collection Method** | Azure Function |
+| **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Mimecast_AT_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast/Data%20Connectors/MimecastAT/Mimecast_AT_FunctionApp.json) |
 
 The data connector for [Mimecast Awareness Training](https://integrations.mimecast.com/tech-partners/microsoft-sentinel/) provides customers with the visibility into security events related to the Targeted Threat Protection inspection technologies within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into email based threats, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities.  
@@ -36,10 +36,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | — | — |
-| [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | — | — |
-| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | — | — |
-| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | — | — |
+| [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | — | ✗ |
+| [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | — | ✗ |
+| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | — | ✗ |
+| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | — | ✗ |
 
 ## Permissions
 
@@ -158,7 +158,7 @@ Use this method for automated deployment of the Mimecast Awareness Training Data
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

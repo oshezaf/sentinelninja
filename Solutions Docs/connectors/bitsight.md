@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BitSight.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `BitSight` |
 | **Publisher** | BitSight Technologies, Inc. |
 | **Used in Solutions** | [BitSight](../solutions/bitsight.md) |
-| **Collection Method** | Azure Function |
+| **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BitSight_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSightDataConnector/BitSight_API_FunctionApp.json) |
 
 The [BitSight](https://www.BitSight.com/) Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data in Microsoft Sentinel.
@@ -24,17 +24,17 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | — | — |
-| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | — | — |
-| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | — | — |
-| [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) | — | — |
-| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | — | — |
-| [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | — | — |
-| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | — | — |
-| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | — | — |
-| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | — | — |
-| [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) | — | — |
-| [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | — | — |
+| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | — | ✗ |
+| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | — | ✗ |
+| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | — | ✗ |
+| [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) | — | ✗ |
+| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | — | ✗ |
+| [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | — | ✗ |
+| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | — | ✗ |
+| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | — | ✗ |
+| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | — | ✗ |
+| [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) | — | ✗ |
+| [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | — | ✗ |
 
 ## Permissions
 
@@ -424,7 +424,7 @@ iii. By clicking on invocation time, you can see all the logs for that run.
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 

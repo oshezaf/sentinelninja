@@ -1,6 +1,6 @@
 # MicrosoftDefenderForEndPoint
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -22,16 +22,16 @@ This content item queries data from the following tables:
 | [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) |  | ✓ | ✗ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ |
-| [`DeviceInfo`](../tables/deviceinfo.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ |
+| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ |
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 

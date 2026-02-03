@@ -1,6 +1,6 @@
 # ZeroTrustTIC3
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Content Index](../content/content-index.md)
 
@@ -22,10 +22,10 @@ This content item queries data from the following tables:
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ |
 | [`AlertEvidence`](../tables/alertevidence.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ |
-| [`AzureActivity`](../tables/azureactivity.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` | ✗ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | — | ✗ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | — | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
-| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | — | — |
+| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | — | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ |
@@ -38,7 +38,7 @@ This content item queries data from the following tables:
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | — | — |
 | [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "MicrosoftTeams"` | ✓ | ✗ |
 | [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | — | — |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | — | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
 | [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
@@ -54,7 +54,7 @@ This content item queries data from the following tables:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Workbooks](workbooks.md) · [Back to ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 

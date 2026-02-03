@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
@@ -13,7 +13,7 @@
 | **Connector ID** | `InfobloxDataConnector` |
 | **Publisher** | Infoblox |
 | **Used in Solutions** | [Infoblox](../solutions/infoblox.md) |
-| **Collection Method** | Azure Function |
+| **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Infoblox_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Data%20Connectors/InfobloxCloudDataConnector/Infoblox_API_FunctionApp.json) |
 
 The Infoblox Data Connector allows you to easily connect your Infoblox TIDE data and Dossier data with Microsoft Sentinel. By connecting your data to Microsoft Sentinel, you can take advantage of search & correlation, alerting, and threat intelligence enrichment for each log.
@@ -24,24 +24,24 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API |
 |:------|:---------------:|:-------------:|
-| [`Failed_Range_To_Ingest_CL`](../tables/failed-range-to-ingest-cl.md) | — | — |
-| [`Infoblox_Failed_Indicators_CL`](../tables/infoblox-failed-indicators-cl.md) | — | — |
-| [`dossier_atp_CL`](../tables/dossier-atp-cl.md) | — | — |
-| [`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md) | — | — |
-| [`dossier_dns_CL`](../tables/dossier-dns-cl.md) | — | — |
-| [`dossier_geo_CL`](../tables/dossier-geo-cl.md) | — | — |
-| [`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md) | — | — |
-| [`dossier_inforank_CL`](../tables/dossier-inforank-cl.md) | — | — |
-| [`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md) | — | — |
-| [`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md) | — | — |
-| [`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md) | — | — |
-| [`dossier_ptr_CL`](../tables/dossier-ptr-cl.md) | — | — |
-| [`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md) | — | — |
-| [`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md) | — | — |
-| [`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md) | — | — |
-| [`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md) | — | — |
-| [`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md) | — | — |
-| [`dossier_whois_CL`](../tables/dossier-whois-cl.md) | — | — |
+| [`Failed_Range_To_Ingest_CL`](../tables/failed-range-to-ingest-cl.md) | — | ✗ |
+| [`Infoblox_Failed_Indicators_CL`](../tables/infoblox-failed-indicators-cl.md) | — | ✗ |
+| [`dossier_atp_CL`](../tables/dossier-atp-cl.md) | — | ✗ |
+| [`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md) | — | ✗ |
+| [`dossier_dns_CL`](../tables/dossier-dns-cl.md) | — | ✗ |
+| [`dossier_geo_CL`](../tables/dossier-geo-cl.md) | — | ✗ |
+| [`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md) | — | ✗ |
+| [`dossier_inforank_CL`](../tables/dossier-inforank-cl.md) | — | ✗ |
+| [`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md) | — | ✗ |
+| [`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md) | — | ✗ |
+| [`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md) | — | ✗ |
+| [`dossier_ptr_CL`](../tables/dossier-ptr-cl.md) | — | ✗ |
+| [`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md) | — | ✗ |
+| [`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md) | — | ✗ |
+| [`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md) | — | ✗ |
+| [`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md) | — | ✗ |
+| [`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md) | — | ✗ |
+| [`dossier_whois_CL`](../tables/dossier-whois-cl.md) | — | ✗ |
 
 ## Permissions
 
@@ -137,7 +137,7 @@ Use this method for automated deployment of the Infoblox Data connector.
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
 ↑ [Back to Connectors Index](../connectors-index.md)
 
