@@ -18,9 +18,9 @@ This playbook updates the Incident with the brach details if an account has been
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) | — | — | — |
 
 ## Additional Documentation
 

@@ -23,9 +23,9 @@ This alert creates an incident when  Privacy Protection PII Policy Violation det
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Guardian_CL`](../tables/guardian-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Guardian_CL`](../tables/guardian-cl.md) | — | — | — |
 
 ---
 

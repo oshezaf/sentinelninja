@@ -30,9 +30,9 @@ PostgreSQL data connector provides the capability to ingest [PostgreSQL](https:/
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

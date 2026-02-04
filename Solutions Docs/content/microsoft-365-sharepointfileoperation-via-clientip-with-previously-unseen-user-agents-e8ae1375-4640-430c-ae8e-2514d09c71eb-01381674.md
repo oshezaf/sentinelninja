@@ -22,9 +22,9 @@ New user agents associated with a clientIP for SharePoint file uploads/downloads
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ | ✓ |
 
 ---
 

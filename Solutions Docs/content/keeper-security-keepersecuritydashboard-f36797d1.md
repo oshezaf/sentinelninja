@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) | — | ✗ | ✓ |
 
 ---
 

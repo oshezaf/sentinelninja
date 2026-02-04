@@ -22,17 +22,17 @@ Netskope Security Alerts and Events
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | — | ✗ |
-| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | — | — |
-| [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | — | — |
-| [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) | — | — |
-| [`NetskopeEventsDLP_CL`](../tables/netskopeeventsdlp-cl.md) | — | — |
-| [`NetskopeEventsEndpoint_CL`](../tables/netskopeeventsendpoint-cl.md) | — | — |
-| [`NetskopeEventsInfrastructure_CL`](../tables/netskopeeventsinfrastructure-cl.md) | — | — |
-| [`NetskopeEventsNetwork_CL`](../tables/netskopeeventsnetwork-cl.md) | — | — |
-| [`NetskopeEventsPage_CL`](../tables/netskopeeventspage-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | — | ✗ | ✓ |
+| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | — | — | — |
+| [`NetskopeEventsAudit_CL`](../tables/netskopeeventsaudit-cl.md) | — | — | — |
+| [`NetskopeEventsConnection_CL`](../tables/netskopeeventsconnection-cl.md) | — | — | — |
+| [`NetskopeEventsDLP_CL`](../tables/netskopeeventsdlp-cl.md) | — | — | — |
+| [`NetskopeEventsEndpoint_CL`](../tables/netskopeeventsendpoint-cl.md) | — | — | — |
+| [`NetskopeEventsInfrastructure_CL`](../tables/netskopeeventsinfrastructure-cl.md) | — | — | — |
+| [`NetskopeEventsNetwork_CL`](../tables/netskopeeventsnetwork-cl.md) | — | — | — |
+| [`NetskopeEventsPage_CL`](../tables/netskopeeventspage-cl.md) | — | — | — |
 
 ## Permissions
 

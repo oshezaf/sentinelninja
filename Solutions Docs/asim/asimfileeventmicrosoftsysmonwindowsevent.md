@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Sysmon logs ingested in 'WindowsEvent' tab
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "11,23,26"`<br>`Provider == "Microsoft-Windows-Sysmon"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "11,23,26"`<br>`Provider == "Microsoft-Windows-Sysmon"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -25,9 +25,9 @@ Detects threat from spam event thread protection logs.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | — | ✗ | ✗ |
 
 ---
 

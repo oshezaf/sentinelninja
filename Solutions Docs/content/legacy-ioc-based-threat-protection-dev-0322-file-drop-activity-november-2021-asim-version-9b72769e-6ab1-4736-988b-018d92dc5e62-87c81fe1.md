@@ -28,10 +28,10 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`imProcess`](../tables/improcess.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`imProcess`](../tables/improcess.md) | — | — | — |
 
 ---
 

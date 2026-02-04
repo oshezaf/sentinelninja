@@ -26,9 +26,9 @@ The Dynamics 365 Finance and Operations data connector ingests Dynamics 365 Fina
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

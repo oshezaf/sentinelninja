@@ -25,9 +25,9 @@ Detects unusual mail domain in authentication requests.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "PingFederate"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "PingFederate"` | ✓ | ✓ | ✓ |
 
 ---
 

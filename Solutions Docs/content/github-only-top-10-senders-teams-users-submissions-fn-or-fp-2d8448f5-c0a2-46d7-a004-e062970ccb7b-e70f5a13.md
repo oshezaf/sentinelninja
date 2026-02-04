@@ -22,9 +22,9 @@ This query visualises Teams messages submitted by user as false negatives or fal
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "UserSubmission"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "UserSubmission"` | ✓ | ✗ | ✓ |
 
 ---
 

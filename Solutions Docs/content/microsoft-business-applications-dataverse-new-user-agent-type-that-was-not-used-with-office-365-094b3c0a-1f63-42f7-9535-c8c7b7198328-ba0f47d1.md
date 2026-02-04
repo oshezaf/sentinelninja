@@ -25,10 +25,10 @@ Identifies users accessing Dynamics with a User Agent that has not been seen in 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
 
 ---
 

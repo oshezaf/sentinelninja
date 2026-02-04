@@ -18,9 +18,9 @@ This playbook will take each URL entity and query VirusTotal for Domain info (ht
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VTDomainReport_CL`](../tables/vtdomainreport-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VTDomainReport_CL`](../tables/vtdomainreport-cl.md) | — | — | — |
 
 ---
 

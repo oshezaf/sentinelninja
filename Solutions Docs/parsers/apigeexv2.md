@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ApigeeXV2_CL`](../tables/apigeexv2-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ApigeeXV2_CL`](../tables/apigeexv2-cl.md) | — | — | — |
 
 ---
 

@@ -22,9 +22,9 @@ The [Zoom](https://zoom.us/) Reports data connector provides the capability to i
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Zoom_CL`](../tables/zoom-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Zoom_CL`](../tables/zoom-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

@@ -23,9 +23,9 @@ Detected deletion of a S3 bucket. An attacker could delete S3 objects for impact
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "DeleteBucket"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "DeleteBucket"` | ✓ | ✓ | ✓ |
 
 ---
 

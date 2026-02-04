@@ -22,11 +22,11 @@ This query hunts for file creation events linked to Dev-0322's compromise of ZOH
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ---
 

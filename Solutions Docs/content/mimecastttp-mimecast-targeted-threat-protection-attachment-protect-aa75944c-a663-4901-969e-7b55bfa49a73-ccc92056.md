@@ -24,9 +24,9 @@ Detects a threat for an unsafe attachment in an email
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | — | ✗ | ✗ |
 
 ---
 

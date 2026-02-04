@@ -22,9 +22,9 @@ This query identifies IAM users in AWS Security Hub findings (control IAM.5) who
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ | ✓ |
 
 ---
 

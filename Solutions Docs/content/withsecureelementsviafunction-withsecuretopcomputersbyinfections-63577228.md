@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`WsSecurityEvents_CL`](../tables/wssecurityevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`WsSecurityEvents_CL`](../tables/wssecurityevents-cl.md) | — | ✗ | ✓ |
 
 ---
 

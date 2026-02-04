@@ -22,10 +22,10 @@ This query searches for lnk file executions from other locations than C: drive, 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ✓ |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | — |
 
 ---
 

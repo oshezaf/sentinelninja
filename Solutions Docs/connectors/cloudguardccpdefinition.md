@@ -22,9 +22,9 @@ The [CloudGuard](https://sc1.checkpoint.com/documents/CloudGuard_Dome9/Documenta
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudGuard_SecurityEvents_CL`](../tables/cloudguard-securityevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CloudGuard_SecurityEvents_CL`](../tables/cloudguard-securityevents-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

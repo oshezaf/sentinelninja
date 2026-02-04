@@ -18,9 +18,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DuoSecurityTrustMonitor_CL`](../tables/duosecuritytrustmonitor-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DuoSecurityTrustMonitor_CL`](../tables/duosecuritytrustmonitor-cl.md) | — | — | — |
 
 ---
 

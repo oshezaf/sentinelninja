@@ -23,9 +23,9 @@ An attacker could use CreateLoginProfile permissions on other users for privileg
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "CreateLoginProfile"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "CreateLoginProfile"` | ✓ | ✓ | ✓ |
 
 ---
 

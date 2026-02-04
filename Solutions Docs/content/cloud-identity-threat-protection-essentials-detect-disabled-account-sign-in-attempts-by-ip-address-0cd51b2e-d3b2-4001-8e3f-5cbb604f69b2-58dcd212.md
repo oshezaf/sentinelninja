@@ -22,9 +22,9 @@ This query searches for failed sign-in attempts to disabled accounts summarized 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

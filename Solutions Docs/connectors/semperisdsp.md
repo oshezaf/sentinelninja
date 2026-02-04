@@ -24,9 +24,9 @@ It provides a data parser to manipulate the Windows event logs more easily. The 
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "9211,9212"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "9211,9212"` | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

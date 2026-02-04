@@ -19,9 +19,9 @@ Multiple endpoints with a high number of failed login attempts could indicate a 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "MiMonitoringFailedLoginAttemptsOverThreshold"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "MiMonitoringFailedLoginAttemptsOverThreshold"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ | ✓ |
 
 ---
 

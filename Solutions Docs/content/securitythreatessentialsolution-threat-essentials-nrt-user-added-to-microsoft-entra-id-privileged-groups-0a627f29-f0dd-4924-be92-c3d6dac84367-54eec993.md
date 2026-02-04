@@ -25,9 +25,9 @@ This will alert when a user is added to any of the Privileged Groups. For furthe
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

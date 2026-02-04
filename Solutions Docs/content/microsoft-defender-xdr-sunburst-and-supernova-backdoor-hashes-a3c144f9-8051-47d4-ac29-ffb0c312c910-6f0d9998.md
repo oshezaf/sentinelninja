@@ -25,9 +25,9 @@ Identifies SolarWinds SUNBURST and SUPERNOVA backdoor file hash IOCs in DeviceFi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |
 
 ---
 

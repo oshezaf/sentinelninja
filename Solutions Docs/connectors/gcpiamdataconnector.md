@@ -34,9 +34,9 @@ The Google Cloud Platform Identity and Access Management (IAM) data connector pr
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | — | — | — |
 
 ## Permissions
 

@@ -25,9 +25,9 @@ This analytic rule will monitor specific IPS event in the data.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
 
 ---
 

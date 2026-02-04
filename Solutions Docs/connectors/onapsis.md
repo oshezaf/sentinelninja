@@ -24,10 +24,10 @@ Onapsis Defend Integration is aimed at forwarding alerts and logs collected and 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ |
-| [`Onapsis_Defend_CL`](../tables/onapsis-defend-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ | ✓ |
+| [`Onapsis_Defend_CL`](../tables/onapsis-defend-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

@@ -25,9 +25,9 @@ Detected network ACL with all the ports open to a specified CIDR. This could lea
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateNetworkAclEntry,ReplaceNetworkAclEntry"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateNetworkAclEntry,ReplaceNetworkAclEntry"` | ✓ | ✓ | ✓ |
 
 ---
 

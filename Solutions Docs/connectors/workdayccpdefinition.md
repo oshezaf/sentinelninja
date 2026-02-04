@@ -22,9 +22,9 @@ The [Workday](https://www.workday.com/) User Activity data connector provides th
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -46,7 +46,7 @@ This connector ingests data into the following tables:
  2) In Workday, access the "Edit Tenant Setup - System" task, verify "User Activity Logging" section, make sure that the "Enable User Activity Logging" check box is ticked. 
  3) In Workday, access the "Register API Client" task.
  4) Define the Client Name, select the "Client Grant Type": "Authorization Code Grant" and then select "Access Token Type": "Bearer"
- 5) Enter the "Redirection URI": https://portal.azure.com/TokenAuthorize/ExtensionName/Microsoft_Azure_Security_Insights 
+ 5) Enter the "Redirection URI" found in the form below 
  6) In section "Scope (Functional Areas)", select "System" and click OK at the bottom 
  7) Copy the Client ID and Client Secret before navigating away from the page, and store it securely. 
  8) In Sentinel, in the connector page - provide required Token, Authorization and User Activity Logs Endpoints, along with Client ID and Client Secret from previous step. Then click "Connect". 

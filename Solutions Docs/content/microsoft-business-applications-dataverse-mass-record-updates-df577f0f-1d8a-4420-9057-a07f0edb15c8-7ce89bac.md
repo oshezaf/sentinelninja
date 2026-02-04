@@ -25,9 +25,9 @@ This query detects mass record update changes in Dataverse and Dynamics 365, exc
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
 
 ---
 

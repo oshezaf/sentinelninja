@@ -20,9 +20,9 @@ Provides a statistical overview of anomaly detections over the past 30 days, gro
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | — |
 
 ---
 

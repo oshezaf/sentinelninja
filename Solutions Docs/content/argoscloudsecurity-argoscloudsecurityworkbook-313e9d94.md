@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ARGOS_CL`](../tables/argos-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ARGOS_CL`](../tables/argos-cl.md) | — | ✗ | ✗ |
 
 ---
 

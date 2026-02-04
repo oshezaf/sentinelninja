@@ -22,9 +22,9 @@ The Infoblox SOC Insight Data Connector allows you to easily connect your Infobl
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

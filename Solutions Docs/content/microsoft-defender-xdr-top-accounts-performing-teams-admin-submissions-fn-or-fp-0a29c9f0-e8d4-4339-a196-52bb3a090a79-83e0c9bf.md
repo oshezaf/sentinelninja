@@ -18,15 +18,13 @@ This query visualises the top admins performing false negative or false positive
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Microsoft%20Teams%20protection/Top%20accounts%20performing%20Teams%20admin%20submissions%20FN%20or%20FP.yaml) |
 
-> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
-
 ## Tables Used
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "AdminSubmissionSubmitted"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "AdminSubmissionSubmitted"` | ✓ | ✗ | ✓ |
 
 ---
 

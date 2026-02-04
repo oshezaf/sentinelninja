@@ -18,15 +18,13 @@ This query provides insights into AIR investigation actions in Microsoft Defende
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Hunting%20Queries/Email%20and%20Collaboration%20Queries/Remediation/AIR%20investigation%20actions%20insight.yaml) |
 
-> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
-
 ## Tables Used
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "AirInvestigationData"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "AirInvestigationData"` | ✓ | ✗ | ✓ |
 
 ---
 

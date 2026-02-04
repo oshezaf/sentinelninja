@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`vectra_radius_CL`](../tables/vectra-radius-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`vectra_radius_CL`](../tables/vectra-radius-cl.md) | — | — | — |
 
 ---
 

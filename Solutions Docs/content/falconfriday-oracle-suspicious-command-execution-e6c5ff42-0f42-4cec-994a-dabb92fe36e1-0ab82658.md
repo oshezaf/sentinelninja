@@ -25,9 +25,9 @@ The query searches process creation events that are indicative of an attacker sp
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
 
 ---
 

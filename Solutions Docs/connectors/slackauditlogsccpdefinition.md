@@ -22,9 +22,9 @@ The SlackAudit data connector provides the capability to ingest [Slack Audit log
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

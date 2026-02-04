@@ -22,17 +22,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
-
-### Workbooks (2)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ProofPointThreatDashboard](../content/github-only-proofpointthreatdashboard-cb711596.md) |  |
-| [ProofpointTAP](../content/github-only-proofpointtap-f64c9a5d.md) |  |
-
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)

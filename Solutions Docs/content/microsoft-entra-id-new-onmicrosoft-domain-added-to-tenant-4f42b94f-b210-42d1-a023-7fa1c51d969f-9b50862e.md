@@ -25,9 +25,9 @@ This detection looks for new onmicrosoft domains being added to a tenant.  An at
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add unverified domain,Add verified domain"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add unverified domain,Add verified domain"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -23,9 +23,9 @@ Detect controller failure and take appropriate response action.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "purity.alert"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "purity.alert"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -24,10 +24,10 @@ This query maps any IP indicators of compromise (IOCs) from threat intelligence 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
-| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ✗ |
 
 ---
 

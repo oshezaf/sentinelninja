@@ -18,9 +18,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MerakiSecurityEvents_CL`](../tables/merakisecurityevents-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MerakiSecurityEvents_CL`](../tables/merakisecurityevents-cl.md) | — | — | — |
 
 ---
 

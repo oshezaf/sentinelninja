@@ -22,9 +22,9 @@ The Red Canary data connector provides the capability to ingest published Detect
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`RedCanaryDetections_CL`](../tables/redcanarydetections-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`RedCanaryDetections_CL`](../tables/redcanarydetections-cl.md) | — | — | — |
 
 ## Permissions
 

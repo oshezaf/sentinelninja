@@ -21,9 +21,9 @@ Alerts on control-plane modifications: safes, permissions, roles, entitlements, 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | — | ✗ | ✓ |
 
 ---
 

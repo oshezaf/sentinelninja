@@ -25,9 +25,9 @@ The policy detects 'AWS policies' attached to IAM users or roles that have not u
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — | — |
 
 ---
 

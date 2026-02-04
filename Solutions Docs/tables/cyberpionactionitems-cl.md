@@ -27,7 +27,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (1)
 
@@ -37,19 +37,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [High Urgency IONIX Action Items](../content/ionix-high-urgency-ionix-action-items-8e0403b1-07f8-4865-b2e9-74d1e83200a4-39544ba2.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [IONIX](../solutions/ionix.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [IONIXOverviewWorkbook](../content/ionix-ionixoverviewworkbook-5e96257f.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [CyberpionOverviewWorkbook](../content/github-only-cyberpionoverviewworkbook-1f91ecaf.md) |  |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Linux authpriv logs delivered using Syslog
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `Facility == "authpriv"`<br>`ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "authpriv"`<br>`ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 
@@ -52,7 +52,7 @@ The following connectors provide data for this parser:
 ## References
 
 - [ASIM User Management Schema](https://aka.ms/ASimUserManagementDoc)
-- [ASIM](https:/aka.ms/AboutASIM)
+- [ASIM](https://aka.ms/AboutASIM)
 - [Ubuntu remote logging](https://manpages.ubuntu.com/manpages/lunar/en/man5/rsyslog.conf.5.html)
 - [gpasswd](https://manpages.ubuntu.com/manpages/lunar/en/man1/gpasswd.1.html)
 - [groupadd](https://manpages.ubuntu.com/manpages/lunar/en/man8/groupadd.8.html)

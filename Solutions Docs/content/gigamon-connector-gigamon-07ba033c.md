@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Gigamon_CL`](../tables/gigamon-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Gigamon_CL`](../tables/gigamon-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | ASIM Process Event Parser for Halcyon |
 | Location | Solution |
-| Solution | [Halcyon](../solutions/halcyon.md) ⚠️ |
+| Solution | [Halcyon](../solutions/halcyon.md) |
 | Version | 1.0.0 |
 | Last Updated | 2025-12-01 |
 | Category | Microsoft Sentinel Parser |
@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | — | ✗ | ✗ |
 
 ---
 

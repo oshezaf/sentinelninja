@@ -22,9 +22,9 @@ The [Sophos Endpoint Protection](https://www.sophos.com/en-us/products/endpoint-
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SophosEP_CL`](../tables/sophosep-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SophosEP_CL`](../tables/sophosep-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

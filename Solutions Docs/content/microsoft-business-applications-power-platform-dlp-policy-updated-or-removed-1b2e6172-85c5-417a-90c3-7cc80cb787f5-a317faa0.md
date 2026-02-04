@@ -25,9 +25,9 @@ Identifies changes to DLP policy, specifically policies which are updated or rem
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ | ✓ |
 
 ---
 

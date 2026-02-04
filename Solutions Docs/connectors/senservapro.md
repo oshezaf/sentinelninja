@@ -22,9 +22,9 @@ The SenservaPro data connector provides a viewing experience for your SenservaPr
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — | — |
 
 ## Permissions
 

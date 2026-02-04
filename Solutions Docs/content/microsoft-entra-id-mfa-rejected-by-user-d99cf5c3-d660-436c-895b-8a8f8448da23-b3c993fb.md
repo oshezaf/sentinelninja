@@ -25,11 +25,11 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | — |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | — |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

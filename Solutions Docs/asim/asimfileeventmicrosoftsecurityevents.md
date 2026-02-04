@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Windows Events (WindowsEvent and
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4663"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4663"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

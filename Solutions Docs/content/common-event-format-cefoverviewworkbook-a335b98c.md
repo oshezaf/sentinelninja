@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "PAN-OS"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "PAN-OS"` | ✓ | ✓ | ✓ |
 
 ---
 

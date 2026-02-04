@@ -22,9 +22,9 @@ Connector used to push Exchange On-Premises Security configuration for Microsoft
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

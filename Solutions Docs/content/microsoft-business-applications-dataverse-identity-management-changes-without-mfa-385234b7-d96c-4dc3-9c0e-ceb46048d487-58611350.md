@@ -14,7 +14,7 @@ This query is used to show privileged identity administration operations in Data
 | **Solution** | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | **ID** | `385234b7-d96c-4dc3-9c0e-ceb46048d487` |
 | **Tactics** | InitialAccess |
-| **Techniques** | T1078, T0819, T1078.004 |
+| **Techniques** | T1078, T1190, T1078.004 |
 | **Required Connectors** | [Dataverse](../connectors/dataverse.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Hunting%20Queries/Dataverse%20-%20Identity%20management%20changes%20without%20MFA.yaml) |
 
@@ -22,10 +22,10 @@ This query is used to show privileged identity administration operations in Data
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

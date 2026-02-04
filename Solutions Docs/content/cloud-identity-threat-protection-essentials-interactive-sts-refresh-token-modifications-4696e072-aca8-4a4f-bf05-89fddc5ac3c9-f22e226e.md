@@ -23,9 +23,9 @@ This query monitors STS refresh token changes by Service Principals/Applications
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "StsRefreshTokenValidFrom"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "StsRefreshTokenValidFrom"` | ✓ | ✗ | ✓ |
 
 ---
 

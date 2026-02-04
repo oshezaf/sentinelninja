@@ -18,9 +18,9 @@ This playbook will run daily and ingest asset records created in Edgescan in the
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`[parameters('PlaybookName')]_CL`](../tables/[parameters-'playbookname'-]-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`[parameters('PlaybookName')]_CL`](../tables/[parameters-'playbookname'-]-cl.md) | — | — | — |
 
 ---
 

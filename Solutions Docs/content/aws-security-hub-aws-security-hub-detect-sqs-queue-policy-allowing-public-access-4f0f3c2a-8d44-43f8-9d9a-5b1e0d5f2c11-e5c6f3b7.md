@@ -25,9 +25,9 @@ This query detects Amazon SQS queues with access policies that allow public (una
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ | ✓ |
 
 ---
 

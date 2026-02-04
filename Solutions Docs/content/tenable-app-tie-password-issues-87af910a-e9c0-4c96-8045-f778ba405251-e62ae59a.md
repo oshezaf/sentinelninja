@@ -24,9 +24,10 @@ Searches for triggered Indicators of Exposures related to password issues.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | — | — | — |
+| [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | — | — | — |
 
 ---
 

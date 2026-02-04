@@ -31,12 +31,12 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | — |
 
 ---
 

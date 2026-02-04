@@ -25,9 +25,9 @@ Identifies when Exchange Online transport rule configured to forward emails. Thi
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"` | ✓ | ✗ | ✓ |
 
 ---
 

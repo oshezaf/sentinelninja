@@ -23,9 +23,9 @@ A policy with excessive permissions detected. Attacker could use that policy to 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "CreatePolicyVersion"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "CreatePolicyVersion"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — |
-| [`BHEAttackPathsTimelineData_CL`](../tables/bheattackpathstimelinedata-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — | — |
+| [`BHEAttackPathsTimelineData_CL`](../tables/bheattackpathstimelinedata-cl.md) | — | — | — |
 
 ---
 

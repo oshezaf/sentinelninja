@@ -29,9 +29,9 @@ This ASIM parser supports normalizing commonly used Cisco Firepower messages col
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "File:500:1,FileMalware:502:1,FireAMP:125:1"`<br>`DeviceEventClassID has "File:500:1"`<br>`DeviceEventClassID has "FileMalware:502:1"`<br>`DeviceProduct == "Firepower"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "File:500:1,FileMalware:502:1,FireAMP:125:1"`<br>`DeviceEventClassID has "File:500:1"`<br>`DeviceEventClassID has "FileMalware:502:1"`<br>`DeviceProduct == "Firepower"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

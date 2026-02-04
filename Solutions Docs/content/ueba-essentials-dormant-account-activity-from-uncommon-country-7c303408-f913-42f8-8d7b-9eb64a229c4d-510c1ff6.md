@@ -20,9 +20,9 @@ Shows dormant accounts (not active in the last 180 days) that connect from a cou
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | — |
 
 ---
 

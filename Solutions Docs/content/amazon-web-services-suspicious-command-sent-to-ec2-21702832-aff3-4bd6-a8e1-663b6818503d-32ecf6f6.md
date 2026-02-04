@@ -25,9 +25,9 @@ An attacker with the necessary permissions could be executing code remotely on a
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateAssociation,PutObject,SendCommand"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateAssociation,PutObject,SendCommand"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -17,7 +17,7 @@
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Native |
 | **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDhcpEvent/CHANGELOG/ASimDhcpEventNative.md)) |
-| **Last Updated** | Mar 12 2024 |
+| **Last Updated** | Mar 12, 2024 |
 | **Unifying Parser** | [ASimDhcpEvent](asimdhcpevent.md) |
 | **Source File** | [Parsers\ASimDhcpEvent\Parsers\ASimDhcpEventNative.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDhcpEvent/Parsers/ASimDhcpEventNative.yaml) |
 
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Dhcp Event table (ASimDhcpEvent
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) | ✓ | ✓ | — |
 
 ## Parameters
 

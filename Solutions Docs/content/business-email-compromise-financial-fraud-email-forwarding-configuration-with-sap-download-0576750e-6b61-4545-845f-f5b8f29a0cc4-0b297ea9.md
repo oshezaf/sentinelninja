@@ -22,10 +22,10 @@ This query detects external email forwarding with SAP download for sensitive fin
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
 
 ---
 

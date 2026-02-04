@@ -24,10 +24,10 @@ This query identifies any Domain indicators of compromise (IOCs) from threat int
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType !has "ConnectionFailed"` | ✓ | ✗ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType !has "ConnectionFailed"` | ✓ | ✗ | — |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ | ✗ |
 
 ---
 

@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`vcenter_CL`](../tables/vcenter-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`vcenter_CL`](../tables/vcenter-cl.md) | — | ✗ | ✓ |
 
 ---
 

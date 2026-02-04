@@ -18,9 +18,9 @@ author: yaniv Shasha and Yehuda Tognder
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VTURLReport_CL`](../tables/vturlreport-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VTURLReport_CL`](../tables/vturlreport-cl.md) | — | — | — |
 
 ---
 

@@ -25,9 +25,9 @@ Organizations are added in the Cross-tenant Access Settings to control communica
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "Add a partner to cross-tenant access setting"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has "Add a partner to cross-tenant access setting"` | ✓ | ✗ | ✓ |
 
 ---
 

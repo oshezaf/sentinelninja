@@ -29,9 +29,9 @@ This ASIM parser supports normalizing user management activity in the Cisco ISE 
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName has_any "CISE,CSCO"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName has_any "CISE,CSCO"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 
@@ -52,7 +52,7 @@ The following connectors provide data for this parser:
 ## References
 
 - [ASIM User Management Schema](https://aka.ms/ASimUserManagementDoc)
-- [ASIM](https:/aka.ms/AboutASIM)
+- [ASIM](https://aka.ms/AboutASIM)
 - [Cisco ISE Security Events](https://www.cisco.com/c/en/us/td/docs/security/ise/3-2/admin_guide/b_ise_admin_3_2/b_ISE_admin_32_maintain_monitor.html#ID58)
 
 ---

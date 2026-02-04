@@ -25,9 +25,9 @@ Identifies evidence of brute force activity against a Windows 365 Cloud PC by hi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

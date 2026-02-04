@@ -22,9 +22,9 @@ Use the Squadra Technologies secRMM Data Connector to push USB removable storage
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`secRMM_CL`](../tables/secrmm-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`secRMM_CL`](../tables/secrmm-cl.md) | — | — | — |
 
 ## Permissions
 
@@ -36,7 +36,7 @@ This connector ingests data into the following tables:
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
-Follow the step-by-step instructions provided in the [Squadra Technologies configuration guide for Azure Sentinel](https://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.11.0.0/secRMMAzureSentinelAdministratorGuide.pdf)
+Follow the step-by-step instructions provided in the [Squadra Technologies configuration guide for Microsoft Sentinel](https://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.11.0.0/secRMMAzureSentinelAdministratorGuide.pdf)
 - **Workspace ID**: `WorkspaceId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Primary Key**: `PrimaryKey`

@@ -28,9 +28,9 @@ LogServ complements the existing SAP application layer threat monitoring and det
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

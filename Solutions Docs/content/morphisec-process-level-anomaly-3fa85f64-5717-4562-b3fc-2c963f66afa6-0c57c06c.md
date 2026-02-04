@@ -25,9 +25,9 @@ Triggers an incident when the same process name appears in 50 or more alerts acr
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | — | — | — |
 
 ---
 

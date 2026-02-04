@@ -24,10 +24,10 @@ Identifies a match in DeviceNetworkEvents Event data from any IP Indicator from 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType !has "ConnectionFailed"` | ✓ | ✗ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType !has "ConnectionFailed"` | ✓ | ✗ | — |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
 
 ---
 

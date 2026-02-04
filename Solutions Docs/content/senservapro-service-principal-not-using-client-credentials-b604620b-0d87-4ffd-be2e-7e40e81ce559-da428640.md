@@ -22,9 +22,9 @@ This query searches for an service principal is not using a client certificate o
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — | — |
 
 ---
 

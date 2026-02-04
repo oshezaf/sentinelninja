@@ -24,10 +24,10 @@ Detects multiple errors to same domain.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCPDNS`](../tables/gcpdns.md) | ✓ | ✗ |
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCPDNS`](../tables/gcpdns.md) | ✓ | ✗ | ✓ |
+| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | — | — | — |
 
 ---
 

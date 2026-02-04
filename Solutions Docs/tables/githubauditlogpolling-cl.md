@@ -37,18 +37,18 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [(Preview) GitHub - A payment method was removed](../content/github-preview-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-07e36ce6.md) |  |
-| [(Preview) GitHub - Oauth application - a client secret was removed](../content/github-preview-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-7a8aae1f.md) |  |
-| [(Preview) GitHub - Repository was created](../content/github-preview-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-8deab692.md) |  |
-| [(Preview) GitHub - Repository was destroyed](../content/github-preview-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-3aa162c0.md) |  |
-| [(Preview) GitHub - User visibility Was changed](../content/github-preview-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-626c4b84.md) |  |
-| [(Preview) GitHub - User was added to the organization](../content/github-preview-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-0ef59510.md) |  |
-| [(Preview) GitHub - User was blocked](../content/github-preview-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-14f65d41.md) |  |
-| [(Preview) GitHub - User was invited to the repository](../content/github-preview-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-b2b4b57d.md) |  |
-| [(Preview) GitHub - pull request was created](../content/github-preview-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-d91061d2.md) |  |
-| [(Preview) GitHub - pull request was merged](../content/github-preview-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-a5d2e4b5.md) |  |
-| [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-042cd40e.md) |  |
-| [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-df6456ca.md) |  |
+| [GitHub - A payment method was removed](../content/github-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-e799ada5.md) |  |
+| [GitHub - Oauth application - a client secret was removed](../content/github-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-3d9031f7.md) |  |
+| [GitHub - Repository was created](../content/github-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-bac13237.md) |  |
+| [GitHub - Repository was destroyed](../content/github-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-96c04043.md) |  |
+| [GitHub - User visibility Was changed](../content/github-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-d51a61fb.md) |  |
+| [GitHub - User was added to the organization](../content/github-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-4e723f97.md) |  |
+| [GitHub - User was blocked](../content/github-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-97304d92.md) |  |
+| [GitHub - User was invited to the repository](../content/github-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-7209ee58.md) |  |
+| [GitHub - pull request was created](../content/github-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-18555696.md) |  |
+| [GitHub - pull request was merged](../content/github-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-76d24a7f.md) |  |
+| [GitHub Activites from a New Country](../content/github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-14943f98.md) |  |
+| [GitHub Two Factor Auth Disable](../content/github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-154f9e3d.md) |  |
 
 ### Hunting Queries (8)
 

@@ -23,9 +23,9 @@ Detects when a job is deleted from Veeam Backup & Replication. This might indica
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "instanceId"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "instanceId"` | ✓ | ✓ | ✓ |
 
 ---
 

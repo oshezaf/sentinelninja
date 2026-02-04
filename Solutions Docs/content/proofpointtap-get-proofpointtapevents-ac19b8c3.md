@@ -18,9 +18,9 @@ This playbook ingests events from ProofPoint TAP to Log Analytics/MicroSoft Sent
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ProofPointData_CL`](../tables/proofpointdata-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ProofPointData_CL`](../tables/proofpointdata-cl.md) | — | — | — |
 
 ## Additional Documentation
 

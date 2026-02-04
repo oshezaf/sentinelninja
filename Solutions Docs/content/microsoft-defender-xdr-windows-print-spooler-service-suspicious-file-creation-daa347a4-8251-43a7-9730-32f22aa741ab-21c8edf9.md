@@ -22,9 +22,9 @@ The query digs in Windows print spooler drivers folder for any file creations. T
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "FileCreated"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "FileCreated"` | ✓ | ✗ | — |
 
 ---
 

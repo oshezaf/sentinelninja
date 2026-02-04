@@ -24,10 +24,10 @@ This detection  identifies potential suspicious activity across multi-cloud envi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSGuardDuty`](../tables/awsguardduty.md) | ✓ | ✓ |
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSGuardDuty`](../tables/awsguardduty.md) | ✓ | ✓ | ✓ |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ✓ |
 
 ---
 

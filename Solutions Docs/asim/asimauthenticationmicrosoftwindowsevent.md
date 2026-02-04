@@ -29,10 +29,10 @@ This ASIM parser supports normalizing Windows Authentication events (4624, 4625,
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4624,4625,4634"`<br>`Provider == "Microsoft-Windows-Security-Auditing"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4624,4625,4634"`<br>`Provider == "Microsoft-Windows-Security-Auditing"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

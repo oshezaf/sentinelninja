@@ -22,9 +22,9 @@ This will check for emails that Defend has identified as dangerous and a user ha
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — | — |
 
 ---
 

@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Vault"`<br>`DeviceVendor == "Cyber-Ark"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Vault"`<br>`DeviceVendor == "Cyber-Ark"` | ✓ | ✓ | ✓ |
 
 ---
 

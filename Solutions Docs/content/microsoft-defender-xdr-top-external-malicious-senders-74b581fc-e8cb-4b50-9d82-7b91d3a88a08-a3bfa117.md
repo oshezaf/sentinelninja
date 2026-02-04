@@ -22,9 +22,9 @@ Top external senders sending malicious inbound Teams messages Spam, Phish, Malwa
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MessageEvents`](../tables/messageevents.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MessageEvents`](../tables/messageevents.md) | — | ✗ | — |
 
 ---
 

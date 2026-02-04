@@ -26,9 +26,9 @@ Triggers Incidents using detection data assembled by Red Canary.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`RedCanaryDetections_CL`](../tables/redcanarydetections-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`RedCanaryDetections_CL`](../tables/redcanarydetections-cl.md) | — | — | — |
 
 ---
 

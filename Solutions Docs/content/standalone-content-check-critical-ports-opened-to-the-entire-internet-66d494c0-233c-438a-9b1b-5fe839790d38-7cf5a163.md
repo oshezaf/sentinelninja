@@ -17,24 +17,6 @@ Discover all critical ports from a list having rules like 'Any' for sourceIp, wh
 | **Required Connectors** | [WAF](../connectors/waf.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/AzureDiagnostics/CriticalPortsOpened.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "NetworkSecurityGroupEvent"` | — | ✗ |
-
-## Associated Connectors
-
-The following connectors provide data for this content item:
-
-| Connector | Solution |
-|:----------|:---------|
-| [SlashNextFunctionApp](../connectors/slashnextfunctionapp.md) | [SlashNext](../solutions/slashnext.md) |
-
-**Solutions:** [SlashNext](../solutions/slashnext.md)
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

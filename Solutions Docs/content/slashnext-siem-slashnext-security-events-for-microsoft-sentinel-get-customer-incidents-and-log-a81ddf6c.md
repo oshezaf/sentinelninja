@@ -18,9 +18,9 @@ The playbook will run after every 3 mintues to get list of events occured to a c
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SlashNext_CL`](../tables/slashnext-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SlashNext_CL`](../tables/slashnext-cl.md) | — | — | — |
 
 ---
 

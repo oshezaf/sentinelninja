@@ -23,9 +23,9 @@ This query searches for devices with high severity event(s).
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Awake Security"`<br>`DeviceVendor == "Arista Networks"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Awake Security"`<br>`DeviceVendor == "Arista Networks"` | ✓ | ✓ | ✓ |
 
 ---
 

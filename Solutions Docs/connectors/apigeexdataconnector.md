@@ -30,9 +30,9 @@ The [Google ApigeeX](https://cloud.google.com/apigee/docs) data connector provid
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ApigeeX_CL`](../tables/apigeex-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ApigeeX_CL`](../tables/apigeex-cl.md) | — | — | — |
 
 ## Permissions
 

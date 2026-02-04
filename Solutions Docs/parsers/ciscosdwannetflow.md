@@ -25,9 +25,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -25,9 +25,9 @@ This query searches for requiring multi-factor authentication (MFA) for all admi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — | — |
 
 ---
 

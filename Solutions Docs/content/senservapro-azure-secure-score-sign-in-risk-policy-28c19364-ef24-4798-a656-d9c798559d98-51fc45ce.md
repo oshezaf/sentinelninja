@@ -22,9 +22,9 @@ This query searches for an active Azure Premium P2 license is required to use an
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — | — |
 
 ---
 

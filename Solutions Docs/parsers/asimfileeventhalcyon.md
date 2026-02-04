@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | ASIM File Activity Parser for Halcyon |
 | Location | Solution |
-| Solution | [Halcyon](../solutions/halcyon.md) ⚠️ |
+| Solution | [Halcyon](../solutions/halcyon.md) |
 | Version | 1.0.0 |
 | Last Updated | 2025-12-01 |
 | Category | Microsoft Sentinel Parser |
@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -22,9 +22,9 @@ The ARGOS Cloud Security integration for Microsoft Sentinel allows you to have a
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ARGOS_CL`](../tables/argos-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ARGOS_CL`](../tables/argos-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

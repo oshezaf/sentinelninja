@@ -24,9 +24,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has_any "Add service principal,Certificates`<br>`secrets management"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName has_any "Add service principal,Certificates`<br>`secrets management"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -22,9 +22,9 @@ Ermes Browser Security Events
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ErmesBrowserSecurityEvents_CL`](../tables/ermesbrowsersecurityevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ErmesBrowserSecurityEvents_CL`](../tables/ermesbrowsersecurityevents-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

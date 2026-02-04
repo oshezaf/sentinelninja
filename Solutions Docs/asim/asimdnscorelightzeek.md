@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Corelight Zeek |
-| **Parser Version** | 0.5 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCorelightZeek.md)) |
+| **Parser Version** | 0.5.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimDns/CHANGELOG/ASimDnsCorelightZeek.md)) |
 | **Last Updated** | Dec 11 2022 |
 | **Unifying Parser** | [ASimDns](asimdns.md) |
 | **Source File** | [Parsers\ASimDns\Parsers\ASimDnsCorelightZeek.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimDns/Parsers/ASimDnsCorelightZeek.yaml) |
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Corelight Zeek DNS logs to the ASIM Dns no
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Corelight_CL`](../tables/corelight-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Corelight_CL`](../tables/corelight-cl.md) | — | — | — |
 
 ## Parameters
 

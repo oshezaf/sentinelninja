@@ -21,9 +21,9 @@ Surfaces suspicious spoolsv.exe behavior likely related to CVE-2021-1675
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ | — |
 
 ---
 

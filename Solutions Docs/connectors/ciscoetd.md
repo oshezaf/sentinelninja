@@ -22,9 +22,9 @@ The connector fetches data from ETD api for threat analysis
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CiscoETD_CL`](../tables/ciscoetd-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CiscoETD_CL`](../tables/ciscoetd-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

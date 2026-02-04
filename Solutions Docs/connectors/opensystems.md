@@ -22,12 +22,12 @@ The Open Systems Logs API Microsoft Sentinel Connector provides the capability t
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) | — | ✗ |
-| [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) | — | ✗ |
-| [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) | — | ✗ |
-| [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) | — | ✗ | ✗ |
+| [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) | — | ✗ | ✗ |
+| [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) | — | ✗ | ✗ |
+| [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

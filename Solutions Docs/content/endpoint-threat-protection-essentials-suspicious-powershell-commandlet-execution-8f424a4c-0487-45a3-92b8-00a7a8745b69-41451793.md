@@ -24,9 +24,9 @@ This query searches for suspicious PowerShell commandlet executions, often used 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuthenticationSudo` |
 | **Built-in Parser** | `_ASim_Authentication_Sudo` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.1.1 |
+| **Schema Version** | 0.1.4 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | sudo |
-| **Parser Version** | 0.1.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSudo.md)) |
-| **Last Updated** | 21 Jul 2023 |
+| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSudo.md)) |
+| **Last Updated** | Jan 29, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationSudo.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationSudo.yaml) |
 
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Syslog sudo sign in logs to the ASIM Authe
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "sudo"`<br>`SyslogMessage has "COMMAND="`<br>`SyslogMessage has "TTY="`<br>`SyslogMessage has "USER="`<br>`SyslogMessage has "incorrect password attempts"`<br>`SyslogMessage has "session closed for user"`<br>`SyslogMessage has "user NOT in sudoers"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "sudo"`<br>`SyslogMessage has "COMMAND="`<br>`SyslogMessage has "TTY="`<br>`SyslogMessage has "USER="`<br>`SyslogMessage has "incorrect password attempts"`<br>`SyslogMessage has "session closed for user"`<br>`SyslogMessage has "user NOT in sudoers"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 
@@ -52,7 +52,7 @@ The following connectors provide data for this parser:
 ## References
 
 - [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)
-- [ASIM](https:/aka.ms/AboutASIM)
+- [ASIM](https://aka.ms/AboutASIM)
 
 ---
 

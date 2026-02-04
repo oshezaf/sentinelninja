@@ -25,9 +25,9 @@ Identifies when a rare Resource and ResourceGroup deployment occurs by a previou
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
 
 ---
 

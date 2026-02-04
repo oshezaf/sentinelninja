@@ -21,9 +21,9 @@ Detects the use of Procdump to dump credentials from LSASS memory.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
 
 ---
 

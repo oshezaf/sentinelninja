@@ -20,9 +20,9 @@ This hunting query searches for public IP addresses that failed to logon to a co
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ | — |
 
 ---
 

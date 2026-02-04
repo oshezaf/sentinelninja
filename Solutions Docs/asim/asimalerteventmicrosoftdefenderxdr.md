@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the Microsoft Defender XDR logs to the ASI
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ | ✓ |
 
 ## Parameters
 

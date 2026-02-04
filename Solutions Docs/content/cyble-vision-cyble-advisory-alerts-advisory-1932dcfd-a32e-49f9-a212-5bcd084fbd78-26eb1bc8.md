@@ -27,9 +27,9 @@ Generates Microsoft Sentinel incidents from Cyble Advisory service alerts. Advis
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | ✗ | ✗ |
 
 ---
 

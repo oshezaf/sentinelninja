@@ -42,14 +42,14 @@ The connector supports integration with Veeam Backup & Replication, Veeam ONE an
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) | — | ✗ |
-| [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) | — | ✗ |
-| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) | — | ✗ |
-| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | — | ✗ |
-| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) | — | ✗ |
-| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) | — | ✗ | ✓ |
+| [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) | — | ✗ | ✓ |
+| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) | — | ✗ | ✓ |
+| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | — | ✗ | ✓ |
+| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) | — | ✗ | ✓ |
+| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

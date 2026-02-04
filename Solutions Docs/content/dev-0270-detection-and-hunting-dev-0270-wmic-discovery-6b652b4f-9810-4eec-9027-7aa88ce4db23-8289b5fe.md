@@ -25,10 +25,10 @@ The query below identifies dllhost.exe using WMIC to discover additional hosts a
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
 
 ---
 

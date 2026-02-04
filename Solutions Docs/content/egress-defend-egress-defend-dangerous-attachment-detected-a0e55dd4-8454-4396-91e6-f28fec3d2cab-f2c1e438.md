@@ -25,9 +25,9 @@ Defend has detected a user has a suspicious file type from a suspicious sender i
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — | — |
 
 ---
 

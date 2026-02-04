@@ -22,10 +22,10 @@ The SAP Enterprise Threat Detection, cloud edition (ETD) data connector enables 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | — | ✗ |
-| [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | — | ✗ | ✓ |
+| [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

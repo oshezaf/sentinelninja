@@ -22,9 +22,9 @@ This hunting query uses Sysmon telemetry to detect System Shutdown/Reboot (MITRE
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) | `EventID == "1"`<br>`EventLog has "shutdown.exe"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Event`](../tables/event.md) | `EventID == "1"`<br>`EventLog has "shutdown.exe"`<br>`Source == "Microsoft-Windows-Sysmon"` | ✓ | ✗ | ✗ |
 
 ---
 

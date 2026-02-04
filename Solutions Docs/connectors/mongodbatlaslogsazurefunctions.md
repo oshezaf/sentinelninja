@@ -22,9 +22,9 @@ The [MongoDBAtlas](https://www.mongodb.com/products/platform/atlas-database) Log
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MDBALogTable_CL`](../tables/mdbalogtable-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MDBALogTable_CL`](../tables/mdbalogtable-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

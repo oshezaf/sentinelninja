@@ -22,9 +22,9 @@ In this detection,we hunt for emails with randomly named attachment names from t
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ | — |
 
 ---
 

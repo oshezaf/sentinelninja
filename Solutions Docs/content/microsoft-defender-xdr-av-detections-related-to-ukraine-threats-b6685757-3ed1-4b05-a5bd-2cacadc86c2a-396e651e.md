@@ -25,9 +25,9 @@ This query looks for Microsoft Defender AV detections for malware observed in re
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ---
 

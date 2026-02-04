@@ -25,10 +25,10 @@ Identifies authentication methods being changed for a privileged account. This c
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | — |
 
 ---
 

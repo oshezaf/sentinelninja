@@ -25,9 +25,9 @@ Identifies SolarWinds TEARDROP memory-only dropper IOCs in Window's defender Exp
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType has "ExploitGuardNonMicrosoftSignedBlocked"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType has "ExploitGuardNonMicrosoftSignedBlocked"` | ✓ | ✗ | ✓ |
 
 ---
 

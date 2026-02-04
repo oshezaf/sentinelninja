@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | — | ✗ | ✗ |
 
 ---
 

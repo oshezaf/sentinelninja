@@ -18,9 +18,9 @@ This playbook is intended to be run on a timmed trigger. It will poll Crowdstrik
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Crowdstrike_Alerts_CL`](../tables/crowdstrike-alerts-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Crowdstrike_Alerts_CL`](../tables/crowdstrike-alerts-cl.md) | — | — | — |
 
 ---
 

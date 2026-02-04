@@ -25,9 +25,9 @@ Monitors Contrast ADR security incidents across all applications and environment
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) | — | ✗ | ✗ |
 
 ---
 

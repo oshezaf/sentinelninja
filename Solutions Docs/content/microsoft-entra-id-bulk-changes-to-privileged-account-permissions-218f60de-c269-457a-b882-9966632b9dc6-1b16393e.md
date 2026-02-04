@@ -25,9 +25,9 @@ Identifies when changes to multiple users permissions are changed at once. Inves
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

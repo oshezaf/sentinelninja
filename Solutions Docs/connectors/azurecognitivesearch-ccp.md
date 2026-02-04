@@ -22,9 +22,9 @@ Azure Cognitive Search is a cloud search service that gives developers infrastru
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.SEARCH"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.SEARCH"` | — | ✗ | ✗ |
 
 ## Permissions
 

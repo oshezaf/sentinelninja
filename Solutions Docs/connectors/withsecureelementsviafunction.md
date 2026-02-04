@@ -42,9 +42,9 @@ For more information visit our website at: [https://www.withsecure.com](https://
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`WsSecurityEvents_CL`](../tables/wssecurityevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`WsSecurityEvents_CL`](../tables/wssecurityevents-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

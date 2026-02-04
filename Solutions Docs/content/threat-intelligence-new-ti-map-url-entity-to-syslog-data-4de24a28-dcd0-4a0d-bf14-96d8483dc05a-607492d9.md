@@ -24,10 +24,10 @@ This query identifies any URL indicators of compromise (IOCs) from threat intell
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
 
 ---
 

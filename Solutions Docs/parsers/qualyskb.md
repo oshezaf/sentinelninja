@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`QualysKB_CL`](../tables/qualyskb-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`QualysKB_CL`](../tables/qualyskb-cl.md) | — | ✗ | ✓ |
 
 ---
 

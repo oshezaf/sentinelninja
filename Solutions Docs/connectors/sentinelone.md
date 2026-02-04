@@ -22,14 +22,14 @@ The [SentinelOne](https://www.sentinelone.com/) data connector provides the capa
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | — | ✗ |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | — | ✗ |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | — | ✗ |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | — | ✗ |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | — | ✗ |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | — | ✗ | ✓ |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | — | ✗ | ✓ |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | — | ✗ | ✓ |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | — | ✗ | ✓ |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | — | ✗ | ✓ |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

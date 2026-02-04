@@ -16,7 +16,23 @@ Reference for SentinelBehaviorInfo table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorinfo) |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [UEBA Essentials](../solutions/ueba-essentials.md)
+
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**In solution [UEBA Essentials](../solutions/ueba-essentials.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [UEBABehaviorsAnalysisWorkbook](../content/ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.md) |  |
 
 ## Resource Types
 

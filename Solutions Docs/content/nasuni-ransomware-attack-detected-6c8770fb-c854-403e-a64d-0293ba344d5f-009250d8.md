@@ -25,9 +25,9 @@ Identifies ransomware attacks detected by the Ransomware Protection service runn
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "The Filer has detected a new ransomware attack"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "The Filer has detected a new ransomware attack"` | ✓ | ✓ | ✓ |
 
 ---
 

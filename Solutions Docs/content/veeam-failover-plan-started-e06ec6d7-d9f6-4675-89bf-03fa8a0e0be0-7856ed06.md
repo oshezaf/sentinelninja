@@ -23,9 +23,9 @@ Detects when a failover plan starts. This might indicate disaster recovery activ
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "instanceId"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "instanceId"` | ✓ | ✓ | ✓ |
 
 ---
 

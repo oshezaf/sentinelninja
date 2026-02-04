@@ -16,15 +16,15 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | — | — |
-| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | — | — |
-| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | — | — |
-| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | — | — |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | — | — | — |
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | — | — | — |
+| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | — | — | — |
+| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | — | — | — |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
 ---
 

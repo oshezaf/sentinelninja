@@ -21,9 +21,9 @@ This hunting query looks Malware Hides Itself Among Windows Defender Exclusions 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType == "RegistryValueSet"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType == "RegistryValueSet"` | ✓ | ✗ | — |
 
 ---
 

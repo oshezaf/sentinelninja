@@ -25,9 +25,9 @@ Amazon Relational Database Service (RDS) is scalable relational database in the 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AuthorizeDBSecurityGroupIngress,CreateDBSecurityGroup,DeleteDBSecurityGroup,RevokeDBSecurityGroupIngress"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AuthorizeDBSecurityGroupIngress,CreateDBSecurityGroup,DeleteDBSecurityGroup,RevokeDBSecurityGroupIngress"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -22,9 +22,9 @@ The Phosphorus Device Connector provides the capability to Phosphorus to ingest 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Phosphorus_CL`](../tables/phosphorus-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Phosphorus_CL`](../tables/phosphorus-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

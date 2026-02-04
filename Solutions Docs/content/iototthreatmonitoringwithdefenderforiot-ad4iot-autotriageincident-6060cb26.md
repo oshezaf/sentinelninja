@@ -18,9 +18,9 @@ SOC and OT engineers can stream their workflows using the playbook, which automa
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ## Additional Documentation
 

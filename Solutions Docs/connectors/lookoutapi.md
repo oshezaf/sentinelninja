@@ -28,9 +28,9 @@ The [Lookout](https://lookout.com) data connector provides the capability to ing
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Lookout_CL`](../tables/lookout-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Lookout_CL`](../tables/lookout-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

@@ -25,10 +25,10 @@ This detection tries to identify all DLLs loaded by "high integrity" processes a
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | `ActionType in "FileCreated,FileModified"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | — |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | `ActionType in "FileCreated,FileModified"` | ✓ | ✗ | — |
 
 ---
 

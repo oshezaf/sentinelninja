@@ -24,9 +24,9 @@ The Forcepoint DLP (Data Loss Prevention) connector allows you to automatically 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

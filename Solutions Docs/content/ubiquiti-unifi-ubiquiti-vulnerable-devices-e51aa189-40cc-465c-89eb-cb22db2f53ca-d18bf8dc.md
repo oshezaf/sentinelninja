@@ -23,9 +23,9 @@ Query shows list of devices (APs) which do not have the latest version of firmwa
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | ✗ | ✓ |
 
 ---
 

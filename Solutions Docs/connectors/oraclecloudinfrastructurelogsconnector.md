@@ -30,9 +30,9 @@ The Oracle Cloud Infrastructure (OCI) data connector provides the capability to 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OCI_Logs_CL`](../tables/oci-logs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OCI_Logs_CL`](../tables/oci-logs-cl.md) | — | — | — |
 
 ## Permissions
 

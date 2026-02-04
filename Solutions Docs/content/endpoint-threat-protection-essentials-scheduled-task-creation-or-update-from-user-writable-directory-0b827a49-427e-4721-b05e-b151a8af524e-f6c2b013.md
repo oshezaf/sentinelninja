@@ -22,9 +22,9 @@ This query triggers when a scheduled task is created or updated and it is going 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4698,4702"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4698,4702"` | ✓ | ✓ | ✓ |
 
 ---
 

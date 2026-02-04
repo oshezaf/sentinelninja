@@ -25,10 +25,10 @@ Detects post requests to unusual extensions.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | — | ✗ |
-| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | — | ✗ | ✓ |
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | — | ✗ | ✓ |
 
 ---
 

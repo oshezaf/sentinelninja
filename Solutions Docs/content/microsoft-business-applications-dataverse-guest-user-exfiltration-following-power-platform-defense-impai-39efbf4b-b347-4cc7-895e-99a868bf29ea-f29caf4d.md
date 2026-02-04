@@ -25,11 +25,11 @@ Identifies a chain of events starting with disablement of Power Platform tenant 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Update user"` | ✓ | ✗ |
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |  | ✓ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Update user"` | ✓ | ✗ | ✓ |
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

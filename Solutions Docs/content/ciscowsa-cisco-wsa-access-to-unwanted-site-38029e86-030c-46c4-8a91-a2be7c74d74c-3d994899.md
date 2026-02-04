@@ -25,9 +25,9 @@ Detects when users attempting to access sites from high risk category.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "cisco_wsa"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "cisco_wsa"` | ✓ | ✓ | ✓ |
 
 ---
 

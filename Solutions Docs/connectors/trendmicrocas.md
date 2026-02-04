@@ -22,9 +22,9 @@ The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/p
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | — | — | — |
 
 ## Permissions
 

@@ -42,9 +42,9 @@ These alerts can be imported into Microsoft Sentinel with this connector, allowi
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

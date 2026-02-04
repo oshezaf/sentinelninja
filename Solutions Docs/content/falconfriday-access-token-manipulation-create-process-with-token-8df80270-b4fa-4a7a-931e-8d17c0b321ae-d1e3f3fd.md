@@ -25,10 +25,10 @@ This query detects the use of the 'runas' command and checks whether the account
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ | — |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
 
 ---
 

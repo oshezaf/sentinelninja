@@ -25,9 +25,9 @@ Detects ZAP connections outside operational hours.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ZPA_CL`](../tables/zpa-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ZPA_CL`](../tables/zpa-cl.md) | — | ✗ | ✓ |
 
 ---
 

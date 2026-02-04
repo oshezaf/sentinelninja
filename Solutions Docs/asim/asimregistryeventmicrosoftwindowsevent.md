@@ -29,11 +29,11 @@ This ASIM parser supports normalizing Microsoft Windows events (event numbers 46
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`ASIM_GetAccountType`](../tables/asim-getaccounttype.md) |  | — | — |
-| [`ASIM_ParseWindowsEvents`](../tables/asim-parsewindowsevents.md) |  | — | — |
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4657,4663"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ASIM_GetAccountType`](../tables/asim-getaccounttype.md) |  | — | — | — |
+| [`ASIM_ParseWindowsEvents`](../tables/asim-parsewindowsevents.md) |  | — | — | — |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4657,4663"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

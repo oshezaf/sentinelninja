@@ -25,9 +25,9 @@ This query looks for the Sdelete process being run recursively after being deplo
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ | ✓ |
 
 ---
 

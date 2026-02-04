@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Windows DNS logs, collected using the Log 
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
 
 ## Parameters
 

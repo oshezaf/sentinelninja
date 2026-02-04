@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`vectra_dhcp_CL`](../tables/vectra-dhcp-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`vectra_dhcp_CL`](../tables/vectra-dhcp-cl.md) | — | — | — |
 
 ---
 

@@ -22,10 +22,10 @@ Identifies users whose single Factor Auth Events in scenarios where it has not b
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | — |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

@@ -24,9 +24,9 @@ The Egress Defend audit connector provides the capability to ingest Egress Defen
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — | — |
 
 ## Permissions
 

@@ -23,10 +23,10 @@
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`IllumioFlowEventsV2_CL`](../tables/illumiofloweventsv2-cl.md) |  | — | — |
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "illumio_pce/collector"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`IllumioFlowEventsV2_CL`](../tables/illumiofloweventsv2-cl.md) |  | — | — | — |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "illumio_pce/collector"` | ✓ | ✓ | ✓ |
 
 ---
 

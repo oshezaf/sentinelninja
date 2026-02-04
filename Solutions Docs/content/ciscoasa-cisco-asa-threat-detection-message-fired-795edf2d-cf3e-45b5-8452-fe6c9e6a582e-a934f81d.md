@@ -25,9 +25,9 @@ Identifies when the Cisco ASA Threat Detection engine fired an alert based on ma
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "733101,733102,733103,733104,733105"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "733101,733102,733103,733104,733105"` | ✓ | ✓ | ✓ |
 
 ---
 

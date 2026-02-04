@@ -22,9 +22,9 @@ This Azure Function enables Commvault users to ingest alerts/events into their M
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

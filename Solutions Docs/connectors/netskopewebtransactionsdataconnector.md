@@ -34,10 +34,10 @@ The [Netskope Web Transactions](https://docs.netskope.com/en/netskope-help/data-
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) | — | ✗ |
-| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) | — | ✗ | ✗ |
+| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

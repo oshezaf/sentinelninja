@@ -22,9 +22,9 @@ This hunting queries identifies files uploaded to SharePoint via a Teams chat an
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ | ✓ |
 
 ---
 

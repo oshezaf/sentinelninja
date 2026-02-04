@@ -25,10 +25,10 @@ DEV-0270 heavily uses powershell to achieve their objective at various stages of
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
 
 ---
 

@@ -22,9 +22,9 @@ The [Garrison ULTRA](https://www.garrison.com/en/garrison-ultra-cloud-platform) 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Garrison_ULTRARemoteLogs_CL`](../tables/garrison-ultraremotelogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Garrison_ULTRARemoteLogs_CL`](../tables/garrison-ultraremotelogs-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

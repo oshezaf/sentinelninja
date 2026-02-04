@@ -25,9 +25,9 @@ Detects Google Cloud projects that have API keys with unrestricted API access us
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ | ✓ |
 
 ---
 

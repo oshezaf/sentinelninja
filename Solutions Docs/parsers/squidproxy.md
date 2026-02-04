@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SquidProxy_CL`](../tables/squidproxy-cl.md) | — | ✗ | ✓ |
 
 ---
 

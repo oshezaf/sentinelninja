@@ -21,10 +21,10 @@ This query finds matches in Security Event data for known FileName Indicators of
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4648,4673,4688,8002"` | ✓ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4648,4673,4688,8002"` | ✓ | ✓ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ | ✗ |
 
 ---
 

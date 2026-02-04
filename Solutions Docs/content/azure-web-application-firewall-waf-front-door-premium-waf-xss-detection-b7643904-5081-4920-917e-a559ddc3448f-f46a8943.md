@@ -25,9 +25,9 @@ Identifies a match for an XSS attack in the Front Door Premium WAF logs. The thr
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "FrontDoorWebApplicationFirewallLog"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "FrontDoorWebApplicationFirewallLog"` | — | ✗ | ✗ |
 
 ---
 

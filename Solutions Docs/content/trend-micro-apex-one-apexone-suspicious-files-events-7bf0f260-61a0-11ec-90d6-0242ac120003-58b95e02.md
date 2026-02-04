@@ -23,9 +23,9 @@ Query searches suspicious files events.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Apex Central"`<br>`DeviceVendor == "Trend Micro"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Apex Central"`<br>`DeviceVendor == "Trend Micro"` | ✓ | ✓ | ✓ |
 
 ---
 

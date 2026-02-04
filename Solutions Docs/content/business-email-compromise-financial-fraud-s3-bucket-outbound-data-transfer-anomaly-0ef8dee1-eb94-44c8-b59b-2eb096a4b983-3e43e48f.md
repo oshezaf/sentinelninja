@@ -21,9 +21,9 @@ Identifies S3 data transfer spikes using GetObject API, BytesTransferredOut, and
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AwsBucketAPILogs_CL`](../tables/awsbucketapilogs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AwsBucketAPILogs_CL`](../tables/awsbucketapilogs-cl.md) | — | — | — |
 
 ---
 

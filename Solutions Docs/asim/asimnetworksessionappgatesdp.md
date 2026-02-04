@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | AppGate SDP |
-| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAppGateSDP.md)) |
+| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAppGateSDP.md)) |
 | **Last Updated** | Feb 19 2023 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionAppGateSDP.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionAppGateSDP.yaml) |
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing AppGate SDP logs to the ASIM Network Sessi
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName in "cz-sessiond,cz-vpnd"`<br>`SyslogMessage has_all "[AUDIT]"`<br>`SyslogMessage has_any ":"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName in "cz-sessiond,cz-vpnd"`<br>`SyslogMessage has_all "[AUDIT]"`<br>`SyslogMessage has_any ":"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

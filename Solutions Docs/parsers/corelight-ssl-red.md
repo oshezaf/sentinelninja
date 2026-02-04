@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Corelight_v2_ssl_red_CL`](../tables/corelight-v2-ssl-red-cl.md) | — | — | — |
 
 ---
 

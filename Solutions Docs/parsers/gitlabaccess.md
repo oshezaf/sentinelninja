@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Access-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Access-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` | ✓ | ✓ | ✓ |
 
 ---
 

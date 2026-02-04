@@ -22,9 +22,9 @@ This query helps reviewing quarantine release trend in Defender for Office 365
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "QuarantineReleaseMessage"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "QuarantineReleaseMessage"` | ✓ | ✗ | ✓ |
 
 ---
 

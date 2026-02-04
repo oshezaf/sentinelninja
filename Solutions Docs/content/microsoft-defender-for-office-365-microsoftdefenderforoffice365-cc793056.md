@@ -16,11 +16,11 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
-| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ | — |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ | — |
 
 ---
 

@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Potential SSH Tunnel to AAD Connect Host
+# Potential SSH Tunnel to AAD Connect Host
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -17,20 +17,6 @@ Azure AD Connect (AAD Connect) is a critical service that handles connections be
 | **Techniques** | T1133 |
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/MultipleDataSources/PotentialSSHTunneltoAADConnectHost.yaml) |
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
-
-- [`_Im_NetworkSession`](../asim/imnetworksession.md)
-
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
 
 ---
 

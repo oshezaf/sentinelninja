@@ -18,9 +18,9 @@ This playbook is intended to run on a schedule and pull MuleSoft Audit Logs into
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MuleSoftAuditLogs_CL`](../tables/mulesoftauditlogs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MuleSoftAuditLogs_CL`](../tables/mulesoftauditlogs-cl.md) | — | — | — |
 
 ---
 

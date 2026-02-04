@@ -30,9 +30,9 @@ OracleWebLogicServer data connector provides the capability to ingest [OracleWeb
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

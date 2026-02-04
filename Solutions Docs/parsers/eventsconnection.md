@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) | — | ✗ | ✗ |
 
 ---
 

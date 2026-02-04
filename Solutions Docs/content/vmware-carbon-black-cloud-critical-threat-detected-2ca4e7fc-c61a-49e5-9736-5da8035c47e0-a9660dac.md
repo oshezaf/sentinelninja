@@ -25,9 +25,9 @@ This creates an incident in the event a critical threat was identified on a Carb
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | — | ✗ | ✗ |
 
 ---
 

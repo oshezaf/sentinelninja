@@ -18,9 +18,9 @@ author: Nathan Swift
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Prisma_CL`](../tables/prisma-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Prisma_CL`](../tables/prisma-cl.md) | — | — | — |
 
 ---
 

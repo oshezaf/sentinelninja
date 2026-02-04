@@ -18,9 +18,9 @@ This playbook is intended to be run on a timmed trigger. It will poll Datadog fo
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Datadog_Events_CL`](../tables/datadog-events-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Datadog_Events_CL`](../tables/datadog-events-cl.md) | — | — | — |
 
 ---
 

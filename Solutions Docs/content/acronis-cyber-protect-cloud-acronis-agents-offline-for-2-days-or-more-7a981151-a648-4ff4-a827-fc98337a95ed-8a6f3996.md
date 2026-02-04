@@ -21,9 +21,9 @@ Query to find agents that have been offline for two days or longer.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "MiniPlanAgentOffline"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "MiniPlanAgentOffline"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -25,9 +25,9 @@ Create an incident when the host entity presents a specific tag. If the tag is p
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) | — | ✗ | ✓ |
 
 ---
 

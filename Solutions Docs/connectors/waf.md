@@ -22,9 +22,9 @@ Connect to the Azure Web Application Firewall (WAF) for Application Gateway, Fro
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` | — | ✗ | ✗ |
 
 ## Permissions
 

@@ -24,9 +24,9 @@ Identifies failed logon attempts from unknown users in Syslog authpriv logs. The
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `Facility == "authpriv"`<br>`SyslogMessage has "authentication failure"`<br>`SyslogMessage has "uid=0"`<br>`SyslogMessage has "user unknown"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "authpriv"`<br>`SyslogMessage has "authentication failure"`<br>`SyslogMessage has "uid=0"`<br>`SyslogMessage has "user unknown"` | ✓ | ✓ | ✓ |
 
 ---
 

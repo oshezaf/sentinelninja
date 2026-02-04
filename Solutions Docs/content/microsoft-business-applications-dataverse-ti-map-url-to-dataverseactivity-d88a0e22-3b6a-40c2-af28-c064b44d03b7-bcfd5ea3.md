@@ -25,10 +25,10 @@ Identifies a match in DataverseActivity from any URL IOC from Microsoft Sentinel
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
 
 ---
 

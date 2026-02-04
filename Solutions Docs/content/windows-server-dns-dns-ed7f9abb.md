@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
-| [`DnsInventory`](../tables/dnsinventory.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
+| [`DnsInventory`](../tables/dnsinventory.md) | ✓ | ✗ | ✓ |
 
 ---
 

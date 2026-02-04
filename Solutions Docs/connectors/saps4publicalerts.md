@@ -22,9 +22,9 @@ The SAP S/4HANA Cloud Public Edition (GROW with SAP) data connector enables inge
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

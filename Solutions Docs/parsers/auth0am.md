@@ -23,10 +23,10 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Auth0AM_CL`](../tables/auth0am-cl.md) | — | ✗ |
-| [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Auth0AM_CL`](../tables/auth0am-cl.md) | — | ✗ | ✗ |
+| [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | — | ✗ | ✓ |
 
 ---
 

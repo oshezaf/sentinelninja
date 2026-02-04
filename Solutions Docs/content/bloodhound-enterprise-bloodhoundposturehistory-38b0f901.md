@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BHEPostureHistoryData_CL`](../tables/bheposturehistorydata-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BHEPostureHistoryData_CL`](../tables/bheposturehistorydata-cl.md) | — | — | — |
 
 ---
 

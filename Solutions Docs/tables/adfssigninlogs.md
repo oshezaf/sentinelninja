@@ -34,7 +34,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (2)
 
@@ -49,16 +49,6 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Password spray attack against ADFSSignInLogs](../content/microsoft-entra-id-password-spray-attack-against-adfssigninlogs-5533fe80-905e-49d5-889a-df27d2c3976d-bc003e0d.md) |  |
-
-### Workbooks (3)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
 
 ---
 

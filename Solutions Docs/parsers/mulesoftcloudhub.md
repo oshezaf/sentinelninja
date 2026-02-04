@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) | — | ✗ | ✗ |
 
 ---
 

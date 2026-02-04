@@ -29,10 +29,10 @@ This ASIM parser supports normalizing Microsoft Windows Firewall Events logs ing
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) |  | ✓ | ✗ |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "5152,5154,5155,5156,5157,5158,5159"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "5152,5154,5155,5156,5157,5158,5159"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -1,4 +1,4 @@
-# GitHub Enterprise Audit Log (via Codeless Connector Framework) (Preview)
+# GitHub Enterprise Audit Log (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GitHub.svg" alt="" width="75" height="75">
 
@@ -26,9 +26,9 @@ The GitHub audit log connector provides the capability to ingest GitHub logs int
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

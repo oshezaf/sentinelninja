@@ -22,10 +22,10 @@ Adversaries with no prior knowledge of legitimate credentials within the system 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | — |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

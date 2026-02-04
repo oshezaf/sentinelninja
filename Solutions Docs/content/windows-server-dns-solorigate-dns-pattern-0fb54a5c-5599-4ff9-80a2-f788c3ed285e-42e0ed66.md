@@ -22,9 +22,9 @@ Looks for the DGA pattern of the domain associated with Solorigate in order to f
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
 
 ---
 

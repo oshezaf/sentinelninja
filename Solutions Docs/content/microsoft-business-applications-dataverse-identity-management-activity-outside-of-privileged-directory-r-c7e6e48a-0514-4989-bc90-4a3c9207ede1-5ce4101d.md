@@ -22,10 +22,10 @@ This query detects identity administration events in Dataverse/Dynamics 365 made
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | — |
 
 ---
 

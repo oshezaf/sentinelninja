@@ -22,11 +22,11 @@ Microsoft Sentinel integrates with TAXII 2.0 and 2.1 data sources to enable moni
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
-| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | ✓ | ✗ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | ✓ | ✗ | — |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
 
 ## Permissions
 

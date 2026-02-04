@@ -22,9 +22,9 @@ The NXLog DNS Logs data connector uses Event Tracing for Windows ([ETW](https://
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | — | — | — |
 
 ## Permissions
 

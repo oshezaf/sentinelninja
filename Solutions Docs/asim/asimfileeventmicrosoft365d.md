@@ -29,9 +29,9 @@ This ASIM parser supports normalizing M365 Defender, stored in the DeviceFileEve
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |
 
 ## Parameters
 

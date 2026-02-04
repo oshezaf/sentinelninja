@@ -25,9 +25,9 @@ Detects multiple client errors from one source in short timeframe
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Tomcat_CL`](../tables/tomcat-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Tomcat_CL`](../tables/tomcat-cl.md) | — | ✗ | ✓ |
 
 ---
 

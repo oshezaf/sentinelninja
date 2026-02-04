@@ -22,9 +22,9 @@ Visualises the top 10 users with click attempts on URLs in emails detected as sp
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | — |
 
 ---
 

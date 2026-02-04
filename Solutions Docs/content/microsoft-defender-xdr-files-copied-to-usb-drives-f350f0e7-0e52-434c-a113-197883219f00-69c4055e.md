@@ -21,10 +21,10 @@ This query lists files copied to USB external drives with USB drive information 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ | ✓ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | — |
 
 ---
 

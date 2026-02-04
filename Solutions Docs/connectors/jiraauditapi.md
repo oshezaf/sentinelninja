@@ -22,10 +22,10 @@ The [Atlassian Jira](https://www.atlassian.com/software/jira) Audit data connect
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) | — | ✗ |
-| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) | — | ✗ | ✗ |
+| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

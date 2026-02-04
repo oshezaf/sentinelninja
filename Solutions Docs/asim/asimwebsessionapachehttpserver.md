@@ -16,7 +16,7 @@
 | **Schema Version** | 0.2.6 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Apache HTTP Server |
-| **Parser Version** | 0.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionApacheHTTPServer.md)) |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionApacheHTTPServer.md)) |
 | **Last Updated** | Jun 19, 2023 |
 | **Unifying Parser** | [ASimWebSession](asimwebsession.md) |
 | **Source File** | [Parsers\ASimWebSession\Parsers\ASimWebSessionApacheHTTPServer.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/ASimWebSessionApacheHTTPServer.yaml) |
@@ -29,9 +29,9 @@ This ASIM parser supports filtering and normalizing Apache HTTP Server logs prod
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | ✗ | ✓ |
 
 ## Parameters
 

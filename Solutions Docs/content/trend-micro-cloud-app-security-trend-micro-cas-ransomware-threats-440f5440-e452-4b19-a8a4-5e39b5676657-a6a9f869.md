@@ -23,9 +23,9 @@ Query searches for ransomware threats.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | — | — | — |
 
 ---
 

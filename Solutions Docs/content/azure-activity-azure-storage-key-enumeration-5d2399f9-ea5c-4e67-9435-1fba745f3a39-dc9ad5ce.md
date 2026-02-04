@@ -22,9 +22,9 @@ Azure's storage key listing can expose secrets, PII, and grant VM access. Monito
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
 
 ---
 

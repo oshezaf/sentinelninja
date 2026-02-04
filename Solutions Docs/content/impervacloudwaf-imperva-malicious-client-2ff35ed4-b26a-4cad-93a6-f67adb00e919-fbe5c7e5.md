@@ -25,9 +25,9 @@ Detects connections from known malicious clients.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | — | — | — |
 
 ---
 

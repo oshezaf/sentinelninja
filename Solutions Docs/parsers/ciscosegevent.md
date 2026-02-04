@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "ESA_CONSOLIDATED_LOG_EVENT"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "ESA_CONSOLIDATED_LOG_EVENT"` | ✓ | ✓ | ✓ |
 
 ---
 

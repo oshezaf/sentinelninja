@@ -1,6 +1,6 @@
 # Analytic Rules - G
 
-**103 analytic rules** starting with 'G'.
+**120 analytic rules** starting with 'G'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -16,6 +16,13 @@
 |:-----|:---------|:-------|
 | [Gain Code Execution on ADFS Server via Remote WMI Execution](standalone-content-gain-code-execution-on-adfs-server-via-remote-wmi-execution-0bd65651-1404-438b-8f63-eecddcec87b4-d7675a11.md) | Medium | 📄 Standalone Content |
 | [Gain Code Execution on ADFS Server via SMB + Remote Service or Scheduled Task](windows-security-events-gain-code-execution-on-adfs-server-via-smb-+-remote-service-or-scheduled-task-12dcea64-bec2-41c9-9df2-9f28461b1295-478b123d.md) | Medium | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
+| [GCP Audit Logs - Data Access Logging Exemption Added for Principal](google-cloud-platform-audit-logs-gcp-audit-logs-data-access-logging-exemption-added-for-principal-b7da45ce-fcc8-43c7-a37c-c08454579d26-e999603f.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
+| [GCP Audit Logs - Detect Bulk VM Snapshot Deletion](google-cloud-platform-audit-logs-gcp-audit-logs-detect-bulk-vm-snapshot-deletion-dfdffdc7-929f-4c7e-8f48-30e5ffddb067-3282e1dc.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
+| [GCP Audit Logs - Detect Organization Policy Deletion or Updation](google-cloud-platform-audit-logs-gcp-audit-logs-detect-organization-policy-deletion-or-updation-205e1c9f-faee-43f1-b3b8-1952ffbbeea4-804699fa.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
+| [GCP Audit Logs - DNSSEC Disabled on Managed DNS Zone](google-cloud-platform-audit-logs-gcp-audit-logs-dnssec-disabled-on-managed-dns-zone-9129a43e-e204-4a9a-969e-d8861ce3437c-ca50f855.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
+| [GCP Audit Logs - Open Firewall Rule Created or Modified](google-cloud-platform-audit-logs-gcp-audit-logs-open-firewall-rule-created-or-modified-8061c611-55f1-4ee5-a8f8-8f19f2c7aab2-cd842d29.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
+| [GCP Audit Logs - Storage Bucket Made Public](google-cloud-platform-audit-logs-gcp-audit-logs-storage-bucket-made-public-3a8d7f9e-4b2c-4e5d-8c6b-9f1a3d5e8c7b-41a0a082.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
+| [GCP Audit Logs - VPC Flow Logs Disabled](google-cloud-platform-audit-logs-gcp-audit-logs-vpc-flow-logs-disabled-8f3e9c2d-5b4a-4d6e-9a7c-2f8b5e1d3c9a-acd074a8.md) | High | 📦 [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
 | [GCP IAM - Disable Data Access Logging](googlecloudplatformiam-gcp-iam-disable-data-access-logging-2530a631-9605-404d-ae58-58ef1f91b17c-b5c24a62.md) | Medium | 📦 [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
 | [GCP IAM - Empty user agent](googlecloudplatformiam-gcp-iam-empty-user-agent-9e0d8632-d33d-4075-979e-c972674f77b3-a16b7078.md) | Medium | 📦 [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
 | [GCP IAM - High privileged role added to service account](googlecloudplatformiam-gcp-iam-high-privileged-role-added-to-service-account-86112c4b-2535-4178-aa0e-ed9e32e3f054-e62bc201.md) | High | 📦 [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
@@ -33,10 +40,20 @@
 | [GCP Security Command Center - Detect Resources with Logging Disabled](google-cloud-platform-security-command-center-gcp-security-command-center-detect-resources-with-logging--d1fe8d30-4852-463a-b6ee-3b459788b75d-dd5c52f3.md) | Medium | 📦 [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
 | [General Settings Updated](veeam-general-settings-updated-14003a45-da0b-47dc-8e20-9711ba7b5112-3bceec94.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Generate alerts based on ExtraHop detections recommended for triage](extrahop-generate-alerts-based-on-extrahop-detections-recommended-for-triage-cd65aebc-7e85-4cbb-9f91-ff0376c5d37d-c70bea70.md) | Medium | 📦 [ExtraHop](../solutions/extrahop.md) |
-| [GitHub Activites from a New Country](github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-042cd40e.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - A payment method was removed](github-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-e799ada5.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - Oauth application - a client secret was removed](github-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-3d9031f7.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - pull request was created](github-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-18555696.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - pull request was merged](github-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-76d24a7f.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - Repository was created](github-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-bac13237.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - Repository was destroyed](github-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-96c04043.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - User visibility Was changed](github-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-d51a61fb.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - User was added to the organization](github-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-4e723f97.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - User was blocked](github-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-97304d92.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub - User was invited to the repository](github-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-7209ee58.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub Activites from a New Country](github-github-activites-from-a-new-country-f041e01d-840d-43da-95c8-4188f6cef546-14943f98.md) | Medium | 📦 [GitHub](../solutions/github.md) |
 | [GitHub Security Vulnerability in Repository](github-github-security-vulnerability-in-repository-5436f471-b03d-41cb-b333-65891f887c43-30f5673a.md) | Informational | 📦 [GitHub](../solutions/github.md) |
 | [GitHub Signin Burst from Multiple Locations](microsoft-entra-id-github-signin-burst-from-multiple-locations-d3980830-dd9d-40a5-911f-76b44dfdce16-ec9e6001.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-| [GitHub Two Factor Auth Disable](github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-df6456ca.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [GitHub Two Factor Auth Disable](github-github-two-factor-auth-disable-3ff0fffb-d963-40c0-b235-3404f915add7-154f9e3d.md) | Medium | 📦 [GitHub](../solutions/github.md) |
 | [GitLab - Abnormal number of repositories deleted](gitlab-gitlab-abnormal-number-of-repositories-deleted-3efd09bd-a582-4410-b7ec-5ff21cfad7bd-e932ffd2.md) | Medium | 📦 [GitLab](../solutions/gitlab.md) |
 | [GitLab - Brute-force Attempts](gitlab-gitlab-brute-force-attempts-2238d13a-cf05-4973-a83f-d12a25dbb153-84a2fd44.md) | Medium | 📦 [GitLab](../solutions/gitlab.md) |
 | [GitLab - External User Added to GitLab](gitlab-gitlab-external-user-added-to-gitlab-c1544d8f-cbbd-4e35-8d32-5b9312279833-0ecac57f.md) | Medium | 📦 [GitLab](../solutions/gitlab.md) |

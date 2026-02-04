@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`vectra_x509_CL`](../tables/vectra-x509-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`vectra_x509_CL`](../tables/vectra-x509-cl.md) | — | — | — |
 
 ---
 

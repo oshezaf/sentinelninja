@@ -22,9 +22,9 @@ The data connector is built on Microsoft Sentinel for Doppel events and alerts a
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DoppelTable_CL`](../tables/doppeltable-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DoppelTable_CL`](../tables/doppeltable-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Microsoft Sentinel DNS table (A
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

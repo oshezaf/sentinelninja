@@ -23,9 +23,9 @@ BloodHound Attack Path Finding - Add Member Privileges on Tier Zero Security Gro
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | — | — | — |
 
 ---
 

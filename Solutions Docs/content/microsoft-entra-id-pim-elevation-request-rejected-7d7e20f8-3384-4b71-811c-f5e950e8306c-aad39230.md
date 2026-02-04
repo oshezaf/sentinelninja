@@ -25,9 +25,9 @@ Identifies when a user is rejected for a privileged role elevation via PIM. Moni
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

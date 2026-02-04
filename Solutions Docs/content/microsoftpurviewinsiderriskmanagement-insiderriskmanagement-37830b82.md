@@ -16,27 +16,27 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ |
-| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ |
-| [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"` | ✓ | ✗ |
-| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ |
-| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ |
-| [`LAQueryLogs`](../tables/laquerylogs.md) |  | ✓ | ✗ |
-| [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) |  | ✓ | ✗ |
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"` | ✓ | ✗ |
-| [`Operation`](../tables/operation.md) |  | ✗ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4723,4724"` | ✓ | ✓ |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
-| [`Syslog`](../tables/syslog.md) | `Facility in "auth,authpriv"` | ✓ | ✓ |
-| [`Update`](../tables/update.md) |  | ✓ | ✗ |
-| [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ✓ |
+| [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ | — |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"` | ✓ | ✗ | ✓ |
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | — |
+| [`EmailEvents`](../tables/emailevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ✓ |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | — |
+| [`LAQueryLogs`](../tables/laquerylogs.md) |  | ✓ | ✗ | — |
+| [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) |  | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"` | ✓ | ✗ | ✓ |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | — |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4723,4724"` | ✓ | ✓ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `Facility in "auth,authpriv"` | ✓ | ✓ | ✓ |
+| [`Update`](../tables/update.md) |  | ✓ | ✗ | — |
+| [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ | — |
 
 ---
 

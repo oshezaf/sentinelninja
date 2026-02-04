@@ -18,9 +18,9 @@ Author: Accelerynt
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCIncidents_CL`](../tables/gcincidents-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCIncidents_CL`](../tables/gcincidents-cl.md) | — | — | — |
 
 ---
 

@@ -22,9 +22,9 @@ Microsoft Project (MSP) is a project management software solution. Depending on 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ProjectActivity`](../tables/projectactivity.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ProjectActivity`](../tables/projectactivity.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

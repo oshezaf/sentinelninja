@@ -25,9 +25,9 @@ This query look for applications that have been granted (Delegated or App/Role) 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

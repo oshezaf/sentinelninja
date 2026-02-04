@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Corelight_v2_dnp3_CL`](../tables/corelight-v2-dnp3-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Corelight_v2_dnp3_CL`](../tables/corelight-v2-dnp3-cl.md) | — | — | — |
 
 ---
 

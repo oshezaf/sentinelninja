@@ -26,9 +26,9 @@ The [Atlassian Confluence](https://www.atlassian.com/software/confluence) Audit 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) | — | — | — |
 
 ## Permissions
 

@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | — | ✗ |
-| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NetskopeAlerts_CL`](../tables/netskopealerts-cl.md) | — | ✗ | ✓ |
+| [`NetskopeEventsApplication_CL`](../tables/netskopeeventsapplication-cl.md) | — | — | — |
 
 ---
 

@@ -22,9 +22,9 @@ The [Island](https://www.island.io) Admin connector provides the capability to i
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Island_Admin_CL`](../tables/island-admin-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Island_Admin_CL`](../tables/island-admin-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

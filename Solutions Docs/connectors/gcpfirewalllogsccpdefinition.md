@@ -22,9 +22,9 @@ The Google Cloud Platform (GCP) firewall logs, enable you to capture network inb
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCPFirewallLogs`](../tables/gcpfirewalllogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCPFirewallLogs`](../tables/gcpfirewalllogs.md) | ✓ | ✗ | — |
 
 ## Permissions
 

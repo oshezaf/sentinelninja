@@ -16,12 +16,12 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
-| [`HuntingBookmark`](../tables/huntingbookmark.md) | ✓ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | — |
+| [`HuntingBookmark`](../tables/huntingbookmark.md) | ✓ | ✗ | — |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
 ---
 

@@ -18,9 +18,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | — | — | — |
 
 ---
 

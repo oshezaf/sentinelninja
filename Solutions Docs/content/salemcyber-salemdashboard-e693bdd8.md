@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SalemAlerts_CL`](../tables/salemalerts-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SalemAlerts_CL`](../tables/salemalerts-cl.md) | — | — | — |
 
 ---
 

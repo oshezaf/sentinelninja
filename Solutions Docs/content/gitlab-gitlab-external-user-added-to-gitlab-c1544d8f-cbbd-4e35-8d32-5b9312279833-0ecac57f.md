@@ -25,9 +25,9 @@ This queries GitLab Application logs to list external user accounts (i.e.: accou
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` | ✓ | ✓ | ✓ |
 
 ---
 

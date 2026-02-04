@@ -27,9 +27,9 @@ High severity network security groups alerts found by Prancer.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`prancer_CL`](../tables/prancer-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`prancer_CL`](../tables/prancer-cl.md) | — | ✗ | ✗ |
 
 ---
 

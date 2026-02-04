@@ -25,9 +25,9 @@ Detects possible attack without response.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "LF"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "LF"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -24,9 +24,9 @@ This will alert when the log ingestion for the OnePasswordEventLogs_CL logs is f
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | — | ✗ | ✓ |
 
 ---
 

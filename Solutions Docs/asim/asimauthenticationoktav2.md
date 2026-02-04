@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Okta sign in logs, stored in OktaV2_CL tab
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — | — |
 
 ## Parameters
 

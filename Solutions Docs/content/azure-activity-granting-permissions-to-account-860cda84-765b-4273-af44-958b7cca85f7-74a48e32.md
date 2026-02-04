@@ -22,9 +22,9 @@ Shows the most prevalent users who grant access to others on Azure resources. Li
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `OperationName == "Create role assignment"` | ✗ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationName == "Create role assignment"` | ✗ | ✗ | ✗ |
 
 ---
 

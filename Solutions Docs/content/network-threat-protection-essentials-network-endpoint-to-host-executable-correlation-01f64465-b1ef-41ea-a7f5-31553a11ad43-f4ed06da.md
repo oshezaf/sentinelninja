@@ -25,11 +25,11 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Trend Micro"` | ✓ | ✓ |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Trend Micro"` | ✓ | ✓ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ | ✓ |
 
 ---
 

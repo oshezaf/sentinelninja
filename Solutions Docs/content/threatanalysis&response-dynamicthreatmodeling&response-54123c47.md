@@ -16,15 +16,15 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceType == "PUBLICIPADDRESSES"` | — | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ |
-| [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ |
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceType == "PUBLICIPADDRESSES"` | — | ✗ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ | — |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ | — |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

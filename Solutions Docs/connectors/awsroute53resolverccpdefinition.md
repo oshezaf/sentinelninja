@@ -26,9 +26,9 @@ This connector enables ingestion of AWS Route 53 DNS logs into Microsoft Sentine
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSRoute53Resolver`](../tables/awsroute53resolver.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSRoute53Resolver`](../tables/awsroute53resolver.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

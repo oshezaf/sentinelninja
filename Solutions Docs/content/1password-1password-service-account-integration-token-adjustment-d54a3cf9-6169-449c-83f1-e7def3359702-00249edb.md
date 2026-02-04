@@ -24,9 +24,9 @@ This will alert when a service account integration token has been created, renam
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | — | ✗ | ✓ |
 
 ---
 

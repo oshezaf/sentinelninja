@@ -18,10 +18,10 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **129** |
-| Active | 120 |
+| Total Connectors | **132** |
+| Active | 124 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 8 |
+| Unpublished ⚠️ | 7 |
 
 ## Connectors Using This Method
 
@@ -58,7 +58,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Cisco Secure Endpoint (via Codeless Connector Framework)](../connectors/ciscosecureendpointlogsccpdefinition.md) | Microsoft | 2 | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md) | Microsoft | 1 | [Cloudflare](../solutions/cloudflare.md) |
 | [Cortex XDR - Incidents](../connectors/cortexxdrincidents.md) | DEFEND Ltd. | 1 | [Cortex XDR](../solutions/cortex-xdr.md) |
-| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiccpdefinition.md) | Microsoft | 5 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | Microsoft | 4 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | Microsoft | 10 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyble Vision Alerts](../connectors/cyblevisionalerts.md) | Cyble | 1 | [Cyble Vision](../solutions/cyble-vision.md) |
 | [Cyera DSPM Microsoft Sentinel Data Connector](../connectors/cyeradspmccf.md) ⚠️ | Cyera Inc | 5 | [CyeraDSPM](../solutions/cyeradspm.md) |
@@ -78,6 +78,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Egress Defend](../connectors/egressdefendpolling.md) ⚠️ | Egress Software Technologies | 1 | [Egress Defend](../solutions/egress-defend.md) |
 | [Egress Iris Connector](../connectors/egresssiempolling.md) | Egress Software Technologies | 2 | [Egress Iris](../solutions/egress-iris.md) |
 | [Ermes Browser Security Events](../connectors/ermesbrowsersecurityevents.md) | Ermes Cyber Security S.p.A. | 1 | [Ermes Browser Security](../solutions/ermes-browser-security.md) |
+| [Flare Push Connector](../connectors/fireworkpush.md) | Flare Systems | 1 | [Flare](../solutions/flare.md) |
 | [GCP Cloud Run (via Codeless Connector Framework)](../connectors/gcpcloudrunlogs-connectordefinition.md) | Microsoft | 1 | [Google Cloud Platform Cloud Run](../solutions/google-cloud-platform-cloud-run.md) |
 | [GCP Cloud SQL (via Codeless Connector Framework)](../connectors/gcpcloudsqlccfdefinition.md) | Microsoft | 1 | [GoogleCloudPlatformSQL](../solutions/googlecloudplatformsql.md) |
 | [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md) ➕ | Microsoft | 1 | [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md) |
@@ -85,7 +86,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [GCP Pub/Sub Firewall Logs](../connectors/gcpfirewalllogsccpdefinition.md) | Microsoft | 1 | [Google Cloud Platform Firewall Logs](../solutions/google-cloud-platform-firewall-logs.md) |
 | [GCP Pub/Sub Load Balancer Logs (via Codeless Connector Platform).](../connectors/gcpfloadbalancerlogsccpdefinition.md) | Microsoft | 1 | [Google Cloud Platform Load Balancer Logs](../solutions/google-cloud-platform-load-balancer-logs.md) |
 | [GCP Pub/Sub VPC Flow Logs (via Codeless Connector Framework)](../connectors/gcpvpcflowlogsccpdefinition.md) | Microsoft | 1 | [Google Cloud Platform VPC Flow Logs](../solutions/google-cloud-platform-vpc-flow-logs.md) |
-| [GitHub Enterprise Audit Log (via Codeless Connector Framework) (Preview)](../connectors/githubauditdefinitionv2.md) | Microsoft | 1 | [GitHub](../solutions/github.md) |
+| [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md) | Microsoft | 1 | [GitHub](../solutions/github.md) |
 | [Google ApigeeX (via Codeless Connector Framework)](../connectors/googleapigeexlogsccpdefinition.md) | Microsoft | 1 | [Google Apigee](../solutions/google-apigee.md) |
 | [Google Cloud Platform CDN (via Codeless Connector Framework)](../connectors/gcpcdnlogsccpdefinition.md) | Microsoft | 1 | [GoogleCloudPlatformCDN](../solutions/googlecloudplatformcdn.md) |
 | [Google Cloud Platform Cloud IDS (via Codeless Connector Framework)](../connectors/gcpcloudidslogsccpdefinition.md) | Microsoft | 1 | [GoogleCloudPlatformIDS](../solutions/googlecloudplatformids.md) |
@@ -97,7 +98,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Google Cloud Platform Resource Manager (via Codeless Connector Framework)](../connectors/gcpresourcemanagerlogsccfdefinition.md) | Microsoft | 1 | [GoogleCloudPlatformResourceManager](../solutions/googlecloudplatformresourcemanager.md) |
 | [Google Kubernetes Engine (via Codeless Connector Framework)](../connectors/gkeccpdefinition.md) | Microsoft | 6 | [Google Kubernetes Engine](../solutions/google-kubernetes-engine.md) |
 | [Google Workspace Activities (via Codeless Connector Framework)](../connectors/googleworkspaceccpdefinition.md) | Microsoft | 1 | [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
-| [Halcyon Connector](../connectors/halcyonpush.md) ⚠️ | Halcyon | 5 | [Halcyon](../solutions/halcyon.md) |
+| [Halcyon Connector](../connectors/halcyonpush.md) | Halcyon | 5 | [Halcyon](../solutions/halcyon.md) |
 | [Illumio Insights](../connectors/illumioinsightsdefinition.md) | Microsoft | 1 | [Illumio Insight](../solutions/illumio-insight.md) |
 | [Illumio Insights Summary](../connectors/illumioinsightssummaryccp.md) | Illumio | 1 | [Illumio Insight](../solutions/illumio-insight.md) |
 | [Illumio Saas](../connectors/illumiosaasccfdefinition.md) | Microsoft | 1 | [IllumioSaaS](../solutions/illumiosaas.md) |
@@ -121,7 +122,8 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Onapsis Defend Integration](../connectors/onapsis.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md) | Microsoft | 2 | [OneLoginIAM](../solutions/oneloginiam.md) |
 | [OneTrust](../connectors/onetrustpush.md) | OneTrust | 1 | [OneTrust](../solutions/onetrust.md) |
-| [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oci-connector-ccp-definition.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
+| [Oracle Cloud Infrastructure (via CCP) – Preview](../connectors/oci-connector-ccp-definition.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
+| [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
 | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | Microsoft | 5 | [Cortex XDR](../solutions/cortex-xdr.md) |
 | [Palo Alto Cortex Xpanse (via Codeless Connector Framework)](../connectors/paloaltoexpanseccpdefinition.md) | Microsoft | 1 | [Palo Alto Cortex Xpanse CCF](../solutions/palo-alto-cortex-xpanse-ccf.md) |
 | [Palo Alto Prisma Cloud CSPM (via Codeless Connector Framework)](../connectors/paloaltoprismacloudcspmccpdefinition.md) | Microsoft | 2 | [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md) |
@@ -131,7 +133,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Ping One (via Codeless Connector Framework)](../connectors/pingoneauditlogsccpdefinition.md) | Microsoft | 1 | [PingOne](../solutions/pingone.md) |
 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) | Proofpoint | 2 | [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |
-| [QscoutAppEventsConnector](../connectors/qscoutappeventsccfdefinition.md) | Quokka | 1 | [Quokka](../solutions/quokka.md) |
+| [QscoutAppEventsConnector (via Codeless Connector Framework)](../connectors/qscoutappeventsccfdefinition.md) | Quokka | 1 | [Quokka](../solutions/quokka.md) |
 | [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md) | Microsoft | 1 | [QualysVM](../solutions/qualysvm.md) |
 | [RSA ID Plus Admin Logs Connector](../connectors/rsaidplus-adminglogs-connector.md) | RSA | 1 | [RSAIDPlus_AdminLogs_Connector](../solutions/rsaidplus-adminlogs-connector.md) |
 | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
@@ -148,11 +150,12 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [SOC Prime Platform Audit Logs Data Connector](../connectors/socprimeauditlogsdataconnector.md) | Microsoft | 1 | [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) | Microsoft | 2 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | [StyxView Alerts (via Codeless Connector Platform)](../connectors/styxviewendpointconnectordefinition.md) ⚠️ | Styx Intelligence | 1 | [Styx Intelligence](../solutions/styx-intelligence.md) |
+| [TacitRed Compromised Credentials](../connectors/tacitredthreatintel.md) ⚠️ | TacitRed | 1 | [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md) |
 | [Tropico Security - Alerts](../connectors/tropicoalertsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Tropico Security - Events](../connectors/tropicoeventsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Tropico Security - Incidents](../connectors/tropicoincidentsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) | Varonis | 1 | [Varonis Purview](../solutions/varonis-purview.md) |
-| [VersasecCms](../connectors/versaseccmsccpdefinition.md) ⚠️ | Versasec AB | 2 | [VersasecCMS](../solutions/versaseccms.md) |
+| [VersasecCms](../connectors/versaseccmsccpdefinition.md) | Versasec AB | 2 | [VersasecCMS](../solutions/versaseccms.md) |
 | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | Microsoft | 7 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | [Workday User Activity](../connectors/workdayccpdefinition.md) | Microsoft | 1 | [Workday](../solutions/workday.md) |
 | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) | Zero Networks | 1 | [ZeroNetworks](../solutions/zeronetworks.md) |

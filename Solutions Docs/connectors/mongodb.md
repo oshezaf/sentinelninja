@@ -30,9 +30,9 @@ MongoDB data connector provides the capability to ingest [MongoDBAudit](https://
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

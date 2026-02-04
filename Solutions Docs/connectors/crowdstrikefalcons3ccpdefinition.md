@@ -22,18 +22,18 @@ The Crowdstrike Falcon Data Replicator (S3) connector provides the capability to
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | — | ✗ |
-| [`CrowdStrike_Audit_Events_CL`](../tables/crowdstrike-audit-events-cl.md) | — | — |
-| [`CrowdStrike_Auth_Events_CL`](../tables/crowdstrike-auth-events-cl.md) | — | — |
-| [`CrowdStrike_DNS_Events_CL`](../tables/crowdstrike-dns-events-cl.md) | — | — |
-| [`CrowdStrike_File_Events_CL`](../tables/crowdstrike-file-events-cl.md) | — | — |
-| [`CrowdStrike_Network_Events_CL`](../tables/crowdstrike-network-events-cl.md) | — | — |
-| [`CrowdStrike_Process_Events_CL`](../tables/crowdstrike-process-events-cl.md) | — | — |
-| [`CrowdStrike_Registry_Events_CL`](../tables/crowdstrike-registry-events-cl.md) | — | — |
-| [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) | — | — |
-| [`CrowdStrike_User_Events_CL`](../tables/crowdstrike-user-events-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | — | ✗ | ✓ |
+| [`CrowdStrike_Audit_Events_CL`](../tables/crowdstrike-audit-events-cl.md) | — | — | — |
+| [`CrowdStrike_Auth_Events_CL`](../tables/crowdstrike-auth-events-cl.md) | — | — | — |
+| [`CrowdStrike_DNS_Events_CL`](../tables/crowdstrike-dns-events-cl.md) | — | — | — |
+| [`CrowdStrike_File_Events_CL`](../tables/crowdstrike-file-events-cl.md) | — | — | — |
+| [`CrowdStrike_Network_Events_CL`](../tables/crowdstrike-network-events-cl.md) | — | — | — |
+| [`CrowdStrike_Process_Events_CL`](../tables/crowdstrike-process-events-cl.md) | — | — | — |
+| [`CrowdStrike_Registry_Events_CL`](../tables/crowdstrike-registry-events-cl.md) | — | — | — |
+| [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) | — | — | — |
+| [`CrowdStrike_User_Events_CL`](../tables/crowdstrike-user-events-cl.md) | — | — | — |
 
 ## Permissions
 

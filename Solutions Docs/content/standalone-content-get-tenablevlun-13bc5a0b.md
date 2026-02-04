@@ -18,9 +18,9 @@ Author: Younes Khaldi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Vulns_AssetID_List_CL`](../tables/vulns-assetid-list-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Vulns_AssetID_List_CL`](../tables/vulns-assetid-list-cl.md) | — | — | — |
 
 ---
 

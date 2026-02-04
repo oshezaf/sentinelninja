@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | OpenSSH |
-| **Parser Version** | 0.2.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSshd.md)) |
-| **Last Updated** | May 29, 2025 |
+| **Parser Version** | 0.3.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSshd.md)) |
+| **Last Updated** | Jan 29, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationSshd.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationSshd.yaml) |
 
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing OpenSSH server (sshd) sign in logs, collec
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "sshd"`<br>`SyslogMessage has "Failed"`<br>`SyslogMessage has "but this does not map back to the address"`<br>`SyslogMessage has "publickey"`<br>`SyslogMessage startswith "Accepted"`<br>`SyslogMessage startswith "Failed"`<br>`SyslogMessage startswith "Invalid user"`<br>`SyslogMessage startswith "Nasty PTR record"`<br>`SyslogMessage startswith "Timeout"`<br>`SyslogMessage startswith "message repeated"`<br>`SyslogMessage startswith "reverse mapping checking getaddrinfo for"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "sshd"`<br>`SyslogMessage has "Failed"`<br>`SyslogMessage has "but this does not map back to the address"`<br>`SyslogMessage has "key RSA"`<br>`SyslogMessage has "publickey"`<br>`SyslogMessage startswith "Accepted"`<br>`SyslogMessage startswith "Failed"`<br>`SyslogMessage startswith "Invalid user"`<br>`SyslogMessage startswith "Nasty PTR record"`<br>`SyslogMessage startswith "Timeout"`<br>`SyslogMessage startswith "message repeated"`<br>`SyslogMessage startswith "reverse mapping checking getaddrinfo for"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

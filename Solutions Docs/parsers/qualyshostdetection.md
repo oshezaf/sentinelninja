@@ -23,11 +23,11 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) | — | — |
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | — | ✗ |
-| [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) | — | — | — |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | — | ✗ | ✓ |
+| [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) | — | — | — |
 
 ---
 

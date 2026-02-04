@@ -26,9 +26,9 @@ You can also get information about the recommendations provided for your IoT hub
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

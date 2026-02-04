@@ -18,16 +18,6 @@ Reference for DSMDataLabelingLogs table in Azure Monitor Logs.
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

@@ -22,9 +22,9 @@ SAP Business Technology Platform (SAP BTP) brings together data management, anal
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 
@@ -55,6 +55,7 @@ When you click the "Add account" button in the portal, a configuration form will
 *Account Details*
 
 - **Subaccount name (e.g. Contoso). This will be projected to the InstanceName column.** (optional): no space or special character allowed!
+- **Subaccount ID (GUID)** (optional): SubaccountId property from the BTP service key JSON
 - **SAP BTP Client ID** (optional): Client ID
 - **SAP BTP Client Secret** (optional): Client Secret
 - **Authorization server URL (UAA server)** (optional): https://your-tenant.authentication.region.hana.ondemand.com
@@ -76,6 +77,8 @@ This section is an interactive interface in the Microsoft Sentinel portal that a
 
 📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
 - **Subaccount Name**
+- **Subaccount ID**
+- **Polling Frequency (minutes)**
 
 ➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
 

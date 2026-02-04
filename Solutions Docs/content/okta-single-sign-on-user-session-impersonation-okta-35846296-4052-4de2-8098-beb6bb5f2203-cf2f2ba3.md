@@ -25,9 +25,9 @@ A user has started a session impersonation, gaining access with the impersonated
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Okta_CL`](../tables/okta-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Okta_CL`](../tables/okta-cl.md) | — | ✗ | ✗ |
 
 ---
 

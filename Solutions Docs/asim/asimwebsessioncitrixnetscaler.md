@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Citrix NetScaler WAF(Web Application Firew
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "APPFW"`<br>`DeviceProduct == "NetScaler"`<br>`DeviceVendor == "Citrix"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "APPFW"`<br>`DeviceProduct == "NetScaler"`<br>`DeviceVendor == "Citrix"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

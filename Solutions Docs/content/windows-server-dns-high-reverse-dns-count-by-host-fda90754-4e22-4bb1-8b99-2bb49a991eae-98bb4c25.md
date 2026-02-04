@@ -22,9 +22,9 @@ Clients with a high reverse DNS count could be carrying out reconnaissance or di
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
 
 ---
 

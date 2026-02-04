@@ -25,10 +25,10 @@ This query searches for successful user logins from different countries within 3
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | — | ✗ |
-| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | — | ✗ | ✓ |
+| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | — | — | — |
 
 ---
 

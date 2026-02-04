@@ -22,9 +22,9 @@ This query helps reviewing zero day threats via URL and file detonations
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
 
 ---
 

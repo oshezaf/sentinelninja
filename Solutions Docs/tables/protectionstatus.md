@@ -25,9 +25,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (2)
 
-### Workbooks (4)
+### Workbooks (2)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -40,13 +40,6 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
 
 ## Resource Types
 

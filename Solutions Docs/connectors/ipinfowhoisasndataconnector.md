@@ -24,9 +24,9 @@ This IPinfo data connector installs an Azure Function app to download WHOIS_ASN 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Ipinfo_WHOIS_ASN_CL`](../tables/ipinfo-whois-asn-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Ipinfo_WHOIS_ASN_CL`](../tables/ipinfo-whois-asn-cl.md) | — | — | — |
 
 ## Permissions
 

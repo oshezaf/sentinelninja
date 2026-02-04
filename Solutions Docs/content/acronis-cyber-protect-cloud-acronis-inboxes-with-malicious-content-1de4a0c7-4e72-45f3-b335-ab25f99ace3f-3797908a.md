@@ -21,9 +21,9 @@ Many inboxes containing malicious content could indicate a potential ongoing phi
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "MaliciousEmailDetectedPerceptionPointWarning,MaliciousURLDetectedInM365MailboxBackup,MalwareDetectedInM365MailboxBackup"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "MaliciousEmailDetectedPerceptionPointWarning,MaliciousURLDetectedInM365MailboxBackup,MalwareDetectedInM365MailboxBackup"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ | ✓ |
 
 ---
 

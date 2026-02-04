@@ -25,9 +25,9 @@ Detected creation of new Lambda policy and usage of one of the attach policy ope
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -24,9 +24,9 @@ CMMC 2.0 Level 1 (Foundational) assessments have deviated from configured thresh
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ | — |
 
 ---
 

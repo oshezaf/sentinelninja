@@ -23,9 +23,9 @@ Amazon GuardDuty is a threat detection service that continuously monitors your A
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSGuardDuty`](../tables/awsguardduty.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSGuardDuty`](../tables/awsguardduty.md) | ✓ | ✓ | ✓ |
 
 ---
 

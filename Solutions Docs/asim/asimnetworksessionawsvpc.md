@@ -29,9 +29,9 @@ This ASIM parser supports normalizing AWS VPC logs produced by the Microsoft Sen
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSVPCFlow`](../tables/awsvpcflow.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

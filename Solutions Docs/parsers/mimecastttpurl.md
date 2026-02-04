@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | — | ✗ | ✗ |
 
 ---
 

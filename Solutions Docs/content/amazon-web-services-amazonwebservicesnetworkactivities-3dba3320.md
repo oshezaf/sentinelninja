@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` | ✓ | ✓ | ✓ |
 
 ---
 

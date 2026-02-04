@@ -1,6 +1,4 @@
-# ⚠️ Halcyon Connector
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Halcyon Connector
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/halcyon.svg" alt="" width="75" height="75">
 
@@ -24,13 +22,13 @@ The [Halcyon](https://www.halcyon.ai) connector provides the capability to send 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | — | ✗ |
-| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | — | ✗ |
-| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | ✗ |
-| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | — | ✗ |
-| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | — | ✗ | ✗ |
+| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | — | ✗ | ✗ |
+| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | ✗ | ✗ |
+| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | — | ✗ | ✗ |
+| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

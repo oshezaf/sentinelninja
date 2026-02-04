@@ -22,9 +22,9 @@ The GCP Cloud SQL data connector provides the capability to ingest Audit logs in
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCPCloudSQL`](../tables/gcpcloudsql.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCPCloudSQL`](../tables/gcpcloudsql.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

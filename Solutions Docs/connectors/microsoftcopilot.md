@@ -22,9 +22,9 @@ The Microsoft Copilot logs connector in Microsoft Sentinel enables the seamless 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CopilotActivity`](../tables/copilotactivity.md) | ✗ | ✗ | ✓ |
 
 ## Permissions
 

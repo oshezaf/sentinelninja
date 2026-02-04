@@ -25,11 +25,11 @@ By default guests have capability to invite more external guest users, guests al
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Invite external user"` | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Invite external user"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

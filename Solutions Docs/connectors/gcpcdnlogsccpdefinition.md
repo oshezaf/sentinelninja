@@ -22,9 +22,9 @@ The Google Cloud Platform CDN data connector provides the capability to ingest C
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCPCDN`](../tables/gcpcdn.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCPCDN`](../tables/gcpcdn.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

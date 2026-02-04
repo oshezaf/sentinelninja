@@ -25,9 +25,9 @@ User explicitly denies MFA push, indicating that login was not expected and the 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ | — |
 
 ---
 

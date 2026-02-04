@@ -21,9 +21,9 @@ This hunting query looks for potentially hollowed processes that may be used to 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | — |
 
 ---
 

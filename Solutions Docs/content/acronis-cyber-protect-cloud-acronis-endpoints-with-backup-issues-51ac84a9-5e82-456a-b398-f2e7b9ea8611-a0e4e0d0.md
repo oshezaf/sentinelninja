@@ -19,9 +19,9 @@ Endpoints experiencing various backup-related issues.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "ArchiveCorrupted,BackupFailed,BackupNotResponding,BackupRecoveryFailed"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "ArchiveCorrupted,BackupFailed,BackupNotResponding,BackupRecoveryFailed"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ | ✓ |
 
 ---
 

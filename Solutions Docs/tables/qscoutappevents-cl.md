@@ -23,7 +23,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [QscoutAppEventsConnector](../connectors/qscoutappeventsccfdefinition.md) |  |
+| [QscoutAppEventsConnector (via Codeless Connector Framework)](../connectors/qscoutappeventsccfdefinition.md) |  |
 
 ---
 

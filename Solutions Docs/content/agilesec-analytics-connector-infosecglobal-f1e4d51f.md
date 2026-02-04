@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) | — | ✗ | ✗ |
 
 ---
 

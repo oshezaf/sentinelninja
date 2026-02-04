@@ -22,25 +22,25 @@ The Vectra AI Stream connector allows to send Network Metadata collected by Vect
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`vectra_beacon_CL`](../tables/vectra-beacon-cl.md) | — | — |
-| [`vectra_dcerpc_CL`](../tables/vectra-dcerpc-cl.md) | — | — |
-| [`vectra_dhcp_CL`](../tables/vectra-dhcp-cl.md) | — | — |
-| [`vectra_dns_CL`](../tables/vectra-dns-cl.md) | — | — |
-| [`vectra_http_CL`](../tables/vectra-http-cl.md) | — | — |
-| [`vectra_isession_CL`](../tables/vectra-isession-cl.md) | — | — |
-| [`vectra_kerberos_CL`](../tables/vectra-kerberos-cl.md) | — | — |
-| [`vectra_ldap_CL`](../tables/vectra-ldap-cl.md) | — | — |
-| [`vectra_ntlm_CL`](../tables/vectra-ntlm-cl.md) | — | — |
-| [`vectra_radius_CL`](../tables/vectra-radius-cl.md) | — | — |
-| [`vectra_rdp_CL`](../tables/vectra-rdp-cl.md) | — | — |
-| [`vectra_smbfiles_CL`](../tables/vectra-smbfiles-cl.md) | — | — |
-| [`vectra_smbmapping_CL`](../tables/vectra-smbmapping-cl.md) | — | — |
-| [`vectra_smtp_CL`](../tables/vectra-smtp-cl.md) | — | — |
-| [`vectra_ssh_CL`](../tables/vectra-ssh-cl.md) | — | — |
-| [`vectra_ssl_CL`](../tables/vectra-ssl-cl.md) | — | — |
-| [`vectra_x509_CL`](../tables/vectra-x509-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`vectra_beacon_CL`](../tables/vectra-beacon-cl.md) | — | — | — |
+| [`vectra_dcerpc_CL`](../tables/vectra-dcerpc-cl.md) | — | — | — |
+| [`vectra_dhcp_CL`](../tables/vectra-dhcp-cl.md) | — | — | — |
+| [`vectra_dns_CL`](../tables/vectra-dns-cl.md) | — | — | — |
+| [`vectra_http_CL`](../tables/vectra-http-cl.md) | — | — | — |
+| [`vectra_isession_CL`](../tables/vectra-isession-cl.md) | — | — | — |
+| [`vectra_kerberos_CL`](../tables/vectra-kerberos-cl.md) | — | — | — |
+| [`vectra_ldap_CL`](../tables/vectra-ldap-cl.md) | — | — | — |
+| [`vectra_ntlm_CL`](../tables/vectra-ntlm-cl.md) | — | — | — |
+| [`vectra_radius_CL`](../tables/vectra-radius-cl.md) | — | — | — |
+| [`vectra_rdp_CL`](../tables/vectra-rdp-cl.md) | — | — | — |
+| [`vectra_smbfiles_CL`](../tables/vectra-smbfiles-cl.md) | — | — | — |
+| [`vectra_smbmapping_CL`](../tables/vectra-smbmapping-cl.md) | — | — | — |
+| [`vectra_smtp_CL`](../tables/vectra-smtp-cl.md) | — | — | — |
+| [`vectra_ssh_CL`](../tables/vectra-ssh-cl.md) | — | — | — |
+| [`vectra_ssl_CL`](../tables/vectra-ssl-cl.md) | — | — | — |
+| [`vectra_x509_CL`](../tables/vectra-x509-cl.md) | — | — | — |
 
 ## Permissions
 

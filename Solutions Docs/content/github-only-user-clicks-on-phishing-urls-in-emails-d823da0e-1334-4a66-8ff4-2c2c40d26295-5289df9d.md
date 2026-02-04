@@ -22,9 +22,9 @@ This query helps in determining clickthroughs when email delivered because of de
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | — |
 
 ---
 

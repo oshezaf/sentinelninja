@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Corelight_v2_smb_files_CL`](../tables/corelight-v2-smb-files-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Corelight_v2_smb_files_CL`](../tables/corelight-v2-smb-files-cl.md) | — | — | — |
 
 ---
 

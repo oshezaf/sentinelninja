@@ -25,10 +25,10 @@ This query identifies Dataverse exfiltration via email by terminated employees.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ---
 

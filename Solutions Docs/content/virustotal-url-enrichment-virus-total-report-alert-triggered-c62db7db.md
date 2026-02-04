@@ -18,9 +18,9 @@ This playbook will take each URL entity and query VirusTotal for info (https://d
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VTURLReport_CL`](../tables/vturlreport-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VTURLReport_CL`](../tables/vturlreport-cl.md) | — | — | — |
 
 ---
 

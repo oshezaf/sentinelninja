@@ -22,9 +22,9 @@ Advanced Hunting has default timezone as UTC time. Filters in Advanced Hunting a
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
 
 ---
 

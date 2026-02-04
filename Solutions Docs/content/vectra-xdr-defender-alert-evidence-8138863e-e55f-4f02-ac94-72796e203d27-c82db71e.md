@@ -25,9 +25,9 @@ This analytic rule is looking for new alert evidence from Microsoft Defender for
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ | ✓ |
 
 ---
 

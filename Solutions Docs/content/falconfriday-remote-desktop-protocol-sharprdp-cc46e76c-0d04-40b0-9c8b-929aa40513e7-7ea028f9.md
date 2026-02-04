@@ -25,10 +25,10 @@ This detection monitors for the behavior that SharpRDP exhibits on the target sy
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType == "LogonSuccess"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | — |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType == "LogonSuccess"` | ✓ | ✗ | — |
 
 ---
 

@@ -25,9 +25,9 @@ The query checks for any file which has been created/written by an Office applic
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "FileRenamed"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "FileRenamed"` | ✓ | ✗ | — |
 
 ---
 

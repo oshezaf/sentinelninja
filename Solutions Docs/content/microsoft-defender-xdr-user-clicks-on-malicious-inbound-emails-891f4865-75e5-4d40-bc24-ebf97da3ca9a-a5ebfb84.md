@@ -22,10 +22,10 @@ This query provides insights on users who clicked on a suspicious URL
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`EmailEvents`](../tables/emailevents.md) | `ActionType == "ClickAllowed"` | ✓ | ✗ |
-| [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `ActionType == "ClickAllowed"` | ✓ | ✗ | ✓ |
+| [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ | — |
 
 ---
 

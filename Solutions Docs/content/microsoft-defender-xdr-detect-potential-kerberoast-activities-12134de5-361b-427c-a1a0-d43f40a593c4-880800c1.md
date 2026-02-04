@@ -25,9 +25,9 @@ This query aim to detect if someone requests service tickets (where count => max
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | `ActionType == "LogonSuccess"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | `ActionType == "LogonSuccess"` | ✓ | ✗ | ✓ |
 
 ---
 

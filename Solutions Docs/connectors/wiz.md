@@ -22,14 +22,14 @@ The Wiz connector allows you to easily send Wiz Issues, Vulnerability Findings, 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) | — | — |
-| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) | — | — |
-| [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) | — | — |
-| [`WizIssues_CL`](../tables/wizissues-cl.md) | — | — |
-| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) | — | — |
-| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) | — | — | — |
+| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) | — | — | — |
+| [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) | — | — | — |
+| [`WizIssues_CL`](../tables/wizissues-cl.md) | — | — | — |
+| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) | — | — | — |
+| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) | — | — | — |
 
 ## Permissions
 

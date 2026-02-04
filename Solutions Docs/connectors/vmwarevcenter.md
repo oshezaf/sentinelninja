@@ -30,9 +30,9 @@ The [vCenter](https://www.vmware.com/in/products/vcenter-server.html) connector 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`vcenter_CL`](../tables/vcenter-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`vcenter_CL`](../tables/vcenter-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

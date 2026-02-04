@@ -22,9 +22,9 @@ Detects mailbox login from Exchange PowerShell. All accounts can use it by defau
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"` | ✓ | ✗ | ✓ |
 
 ---
 

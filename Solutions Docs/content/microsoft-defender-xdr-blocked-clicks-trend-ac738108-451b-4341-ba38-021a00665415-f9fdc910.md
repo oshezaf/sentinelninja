@@ -24,9 +24,9 @@ Visualises the trend of malicious URL clicks that were blocked by Safe Links ove
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | — |
 
 ---
 

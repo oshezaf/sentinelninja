@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Defender for IoT micro agent log
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | ✓ | ✗ | — |
 
 ## Parameters
 

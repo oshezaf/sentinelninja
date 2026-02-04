@@ -23,11 +23,11 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | — | ✗ |
-| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | — | ✗ |
-| [`OneLogin_CL`](../tables/onelogin-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | — | ✗ | ✓ |
+| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | — | ✗ | ✓ |
+| [`OneLogin_CL`](../tables/onelogin-cl.md) | — | — | — |
 
 ---
 

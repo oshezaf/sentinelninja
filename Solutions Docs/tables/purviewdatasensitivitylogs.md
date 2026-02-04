@@ -17,10 +17,11 @@ Reference for PurviewDataSensitivityLogs table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/purviewdatasensitivitylogs) |
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
+- [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [Microsoft Purview](../solutions/microsoft-purview.md)
 
@@ -34,7 +35,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (5)
 
 ### Analytic Rules (2)
 
@@ -45,7 +46,13 @@ This table is ingested by the following connectors:
 | [Sensitive Data Discovered in the Last 24 Hours](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-7ae7e8b0-07e9-43cb-b783-b04082f09060-60c3db5f.md) |  |
 | [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-customized-79f296d9-e6e4-45dc-9ca7-1770955435fa-d7061393.md) |  |
 
-### Workbooks (2)
+### Workbooks (3)
+
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 

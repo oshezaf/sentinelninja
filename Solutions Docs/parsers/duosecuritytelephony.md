@@ -18,9 +18,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DuoSecurityTelephony_CL`](../tables/duosecuritytelephony-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DuoSecurityTelephony_CL`](../tables/duosecuritytelephony-cl.md) | — | — | — |
 
 ---
 

@@ -20,10 +20,10 @@ Shows all users from a given department, which have a high impact on the organiz
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | — |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | — |
 
 ---
 

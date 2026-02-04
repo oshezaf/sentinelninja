@@ -22,10 +22,10 @@ This query hunts for command line activity linked to Dev-0322's compromise of ZO
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`imProcess`](../tables/improcess.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`imProcess`](../tables/improcess.md) | — | — | — |
 
 ---
 

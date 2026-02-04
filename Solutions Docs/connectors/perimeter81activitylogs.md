@@ -22,9 +22,9 @@ The Perimeter 81 Activity Logs connector allows you to easily connect your Perim
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Perimeter81_CL`](../tables/perimeter81-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Perimeter81_CL`](../tables/perimeter81-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

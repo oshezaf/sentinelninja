@@ -22,9 +22,9 @@ The [Island](https://www.island.io) connector provides the capability to ingest 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Island_User_CL`](../tables/island-user-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Island_User_CL`](../tables/island-user-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

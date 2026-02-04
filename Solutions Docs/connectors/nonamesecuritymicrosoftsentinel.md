@@ -22,9 +22,9 @@ Noname Security solution to POST data into a Microsoft Sentinel SIEM workspace v
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NonameAPISecurityAlert_CL`](../tables/nonameapisecurityalert-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NonameAPISecurityAlert_CL`](../tables/nonameapisecurityalert-cl.md) | — | — | — |
 
 ## Permissions
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Azure File Storage events, stored in the S
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`StorageFileLogs`](../tables/storagefilelogs.md) | ✓ | ✗ | ✓ |
 
 ## Parameters
 

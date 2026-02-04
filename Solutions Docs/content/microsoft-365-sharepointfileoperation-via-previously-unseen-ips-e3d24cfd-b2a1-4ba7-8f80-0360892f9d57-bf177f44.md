@@ -22,10 +22,10 @@ Shows SharePoint upload/download volume by IPs with high-risk ASNs. New IPs with
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "SharePointFileOperation"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

@@ -16,11 +16,11 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) | — | ✗ |
-| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) | — | ✗ |
-| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) | — | ✗ | ✗ |
+| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) | — | ✗ | ✗ |
+| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | — | ✗ | ✓ |
 
 ---
 

@@ -6,11 +6,11 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 
 | Resource | Count | Details |
 |:---------|------:|:--------|
-| [Solutions](solutions-index.md) | 487 | 389 with connectors, 388 with content |
-| [Connectors](connectors-index.md) | 531 | Data ingestion methods |
+| [Solutions](solutions-index.md) | 493 | 392 with connectors, 395 with content |
+| [Connectors](connectors-index.md) | 535 | Data ingestion methods |
 | [Methods](methods-index.md) | 9 | Data collection methods |
-| [Tables](tables-index.md) | 1786 | Log Analytics tables |
-| [Content](content/content-index.md) | 6,063 | Analytics, hunting, playbooks, workbooks |
+| [Tables](tables-index.md) | 1778 | Log Analytics tables |
+| [Content](content/content-index.md) | 6,087 | Analytics, hunting, playbooks, workbooks |
 | [Parsers](parsers/parsers-index.md) | 538 | Non-ASIM KQL functions |
 | [ASIM Parsers](asim/asim-index.md) | 95 pairs | Normalized schema parsers |
 | [ASIM Products](asim/asim-products-index.md) | 80 | Products with ASIM support |

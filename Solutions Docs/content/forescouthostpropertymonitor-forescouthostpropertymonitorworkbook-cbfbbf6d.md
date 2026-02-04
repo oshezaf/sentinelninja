@@ -16,11 +16,11 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) | — | — |
-| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) | — | ✗ |
-| [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) | — | — | — |
+| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) | — | ✗ | ✓ |
+| [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) | — | — | — |
 
 ---
 

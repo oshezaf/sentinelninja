@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ | ✗ |
 
 ---
 

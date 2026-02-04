@@ -20,10 +20,10 @@ Author: Hesham Saad
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GIBTIAAttacksDDoS_CL`](../tables/gibtiaattacksddos-cl.md) | — | — |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GIBTIAAttacksDDoS_CL`](../tables/gibtiaattacksddos-cl.md) | — | — | — |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — | — |
 
 ## Additional Documentation
 

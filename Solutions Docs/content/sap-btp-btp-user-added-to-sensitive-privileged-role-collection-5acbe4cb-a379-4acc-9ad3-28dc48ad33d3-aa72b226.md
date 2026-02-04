@@ -25,9 +25,9 @@ Identifies identity management actions whereby a user is added to a set of monit
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | — | ✗ | ✓ |
 
 ---
 

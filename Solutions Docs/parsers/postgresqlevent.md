@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) | — | ✗ | ✓ |
 
 ---
 

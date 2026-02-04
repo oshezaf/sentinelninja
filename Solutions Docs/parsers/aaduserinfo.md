@@ -18,9 +18,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AADUserInfo_CL`](../tables/aaduserinfo-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AADUserInfo_CL`](../tables/aaduserinfo-cl.md) | — | — | — |
 
 ---
 

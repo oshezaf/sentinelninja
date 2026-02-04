@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.0 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Cisco ISE |
-| **Parser Version** | 0.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventCiscoISE.md)) |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventCiscoISE.md)) |
 | **Last Updated** | July 13, 2023 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventCiscoISE.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventCiscoISE.yaml) |
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing administrative activity in the Cisco ISE e
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName has_any "CISE,CSCO"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName has_any "CISE,CSCO"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

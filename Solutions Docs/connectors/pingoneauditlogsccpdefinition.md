@@ -22,9 +22,9 @@ This connector ingests **audit activity logs** from the PingOne Identity platfor
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PingOne_AuditActivitiesV2_CL`](../tables/pingone-auditactivitiesv2-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PingOne_AuditActivitiesV2_CL`](../tables/pingone-auditactivitiesv2-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

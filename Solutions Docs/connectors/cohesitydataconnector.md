@@ -22,9 +22,9 @@ The Cohesity function apps provide the ability to ingest Cohesity Datahawk ranso
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Cohesity_CL`](../tables/cohesity-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Cohesity_CL`](../tables/cohesity-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

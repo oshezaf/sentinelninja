@@ -24,13 +24,13 @@ The **Cyera DSPM Azure Function Connector** enables seamless ingestion of Cyera�
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CyeraAssets_CL`](../tables/cyeraassets-cl.md) | — | — |
-| [`CyeraAssets_MS_CL`](../tables/cyeraassets-ms-cl.md) | — | — |
-| [`CyeraClassifications_CL`](../tables/cyeraclassifications-cl.md) | — | — |
-| [`CyeraIdentities_CL`](../tables/cyeraidentities-cl.md) | — | — |
-| [`CyeraIssues_CL`](../tables/cyeraissues-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyeraAssets_CL`](../tables/cyeraassets-cl.md) | — | — | — |
+| [`CyeraAssets_MS_CL`](../tables/cyeraassets-ms-cl.md) | — | — | — |
+| [`CyeraClassifications_CL`](../tables/cyeraclassifications-cl.md) | — | — | — |
+| [`CyeraIdentities_CL`](../tables/cyeraidentities-cl.md) | — | — | — |
+| [`CyeraIssues_CL`](../tables/cyeraissues-cl.md) | — | — | — |
 
 ## Permissions
 

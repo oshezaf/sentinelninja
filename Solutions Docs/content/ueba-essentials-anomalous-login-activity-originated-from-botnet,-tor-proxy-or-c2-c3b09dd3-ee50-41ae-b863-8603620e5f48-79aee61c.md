@@ -20,9 +20,9 @@ Shows login activity (successful or failed) originated from botnet, Tor proxy or
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | — |
 
 ---
 

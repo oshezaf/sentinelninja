@@ -30,10 +30,10 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
-| [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | — |
+| [`WebSession_Summarized_SrcIP_CL`](../tables/websession-summarized-srcip-cl.md) | — | — | — |
 
 ---
 

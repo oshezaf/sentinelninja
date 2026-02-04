@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Check Point VPN-1 & Firewall-1 logs  comin
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "VPN-1 & FireWall-1"`<br>`DeviceVendor == "CheckPoint"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "VPN-1 & FireWall-1"`<br>`DeviceVendor == "CheckPoint"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -17,10 +17,11 @@ Reference for MicrosoftPurviewInformationProtection table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftpurviewinformationprotection) |
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
+- [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [Microsoft Purview Information Protection](../solutions/microsoft-purview-information-protection.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
@@ -39,6 +40,12 @@ This table is ingested by the following connectors:
 
 ### Workbooks (3)
 
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
+
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 
 | Content Item | Selection Criteria |
@@ -50,12 +57,6 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftPurviewInformationProtection](../content/github-only-microsoftpurviewinformationprotection-87c9682e.md) |  |
 
 ---
 

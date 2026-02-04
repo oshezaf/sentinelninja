@@ -25,10 +25,10 @@ Correlates Contrast ADR incidents with specific high-risk attack patterns includ
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) | — | ✗ |
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) | — | ✗ | ✗ |
+| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ | ✗ |
 
 ---
 

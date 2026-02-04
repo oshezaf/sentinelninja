@@ -25,9 +25,9 @@ Detected S3 bucket publicly exposed via access point, which could lead to sensit
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "PutAccessPointPolicy"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "PutAccessPointPolicy"` | ✓ | ✓ | ✓ |
 
 ---
 

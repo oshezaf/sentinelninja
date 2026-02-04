@@ -22,9 +22,9 @@ The [SOC Prime Audit Logs](https://tdm.socprime.com/login) data connector allows
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SOCPrimeAuditLogs_CL`](../tables/socprimeauditlogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SOCPrimeAuditLogs_CL`](../tables/socprimeauditlogs-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

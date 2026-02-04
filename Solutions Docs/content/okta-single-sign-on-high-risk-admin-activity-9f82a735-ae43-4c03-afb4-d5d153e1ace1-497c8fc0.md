@@ -25,10 +25,10 @@ The Okta risk engine auto-assigns risk levels to each login attempt. This query 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — |
-| [`Okta_CL`](../tables/okta-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — | — |
+| [`Okta_CL`](../tables/okta-cl.md) | — | ✗ | ✗ |
 
 ---
 

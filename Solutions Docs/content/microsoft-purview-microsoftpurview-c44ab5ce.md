@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

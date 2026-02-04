@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | — | ✗ | ✓ |
 
 ---
 

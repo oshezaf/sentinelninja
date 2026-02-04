@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -25,10 +25,10 @@ The query looks for source code files being modified immediately after a build p
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType in "FileCreated,FileModified"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | — |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType in "FileCreated,FileModified"` | ✓ | ✗ | — |
 
 ---
 

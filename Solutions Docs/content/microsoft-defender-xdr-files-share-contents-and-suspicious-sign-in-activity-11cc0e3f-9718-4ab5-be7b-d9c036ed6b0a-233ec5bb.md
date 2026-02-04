@@ -22,10 +22,10 @@ This query helps hunting for Files share contents and suspicious sign-in activit
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ | — |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
 
 ---
 

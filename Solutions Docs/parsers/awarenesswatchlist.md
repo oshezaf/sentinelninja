@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | — | ✗ | ✗ |
 
 ---
 

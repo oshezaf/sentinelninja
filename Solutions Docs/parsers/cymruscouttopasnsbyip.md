@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Top_Asns_By_IP_Data_CL`](../tables/top-asns-by-ip-data-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Top_Asns_By_IP_Data_CL`](../tables/top-asns-by-ip-data-cl.md) | — | — | — |
 
 ---
 

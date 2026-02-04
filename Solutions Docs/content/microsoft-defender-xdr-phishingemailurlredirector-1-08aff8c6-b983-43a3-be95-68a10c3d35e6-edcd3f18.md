@@ -22,9 +22,9 @@ The query helps detect emails associated with the open redirector URL campaign u
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ | — |
 
 ---
 

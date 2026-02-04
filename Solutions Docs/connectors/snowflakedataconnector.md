@@ -30,9 +30,9 @@ The Snowflake data connector provides the capability to ingest Snowflake [login 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Snowflake_CL`](../tables/snowflake-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Snowflake_CL`](../tables/snowflake-cl.md) | — | — | — |
 
 ## Permissions
 

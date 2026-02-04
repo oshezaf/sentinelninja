@@ -22,10 +22,10 @@ The [Sophos Endpoint Protection](https://www.sophos.com/en-us/products/endpoint-
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SophosEPAlerts_CL`](../tables/sophosepalerts-cl.md) | — | — |
-| [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SophosEPAlerts_CL`](../tables/sophosepalerts-cl.md) | — | — | — |
+| [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

@@ -18,13 +18,13 @@ Leverages the Infoblox SOC Insights API to enrich a Microsoft Sentinel Incident 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | — | — |
-| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | — | — |
-| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | — | — |
-| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | — | — |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) | — | — | — |
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) | — | — | — |
+| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) | — | — | — |
+| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) | — | — | — |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ | ✗ |
 
 ## Additional Documentation
 

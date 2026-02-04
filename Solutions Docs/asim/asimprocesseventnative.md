@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Process Event table (ASimProces
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | ✓ | ✓ | — |
 
 ## Parameters
 

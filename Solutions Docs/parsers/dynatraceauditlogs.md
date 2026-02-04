@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | — | ✗ | ✓ |
 
 ---
 

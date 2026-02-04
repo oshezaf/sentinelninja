@@ -25,9 +25,9 @@ Detected usage of AttachUserPolicy/AttachGroupPolicy/AttachRolePolicy on CloudFo
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` | ✓ | ✓ | ✓ |
 
 ---
 

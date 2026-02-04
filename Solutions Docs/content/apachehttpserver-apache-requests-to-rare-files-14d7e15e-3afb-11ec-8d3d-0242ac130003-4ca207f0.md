@@ -25,9 +25,9 @@ Shows requests to rare files
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | ✗ | ✓ |
 
 ---
 

@@ -26,10 +26,10 @@ SecurityBridge enhances SAP security by integrating seamlessly with Microsoft Se
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ |
-| [`SecurityBridge_CL`](../tables/securitybridge-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ | ✓ |
+| [`SecurityBridge_CL`](../tables/securitybridge-cl.md) | — | — | — |
 
 ## Permissions
 

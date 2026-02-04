@@ -16,13 +16,13 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "ACTION=VCF"`<br>`SyslogMessage contains "VCF Alert"` | ✓ | ✓ |
-| [`VMware_CWS_Health_CL`](../tables/vmware-cws-health-cl.md) |  | — | — |
-| [`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md) |  | — | — |
-| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |  | — | — |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ | — |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "ACTION=VCF"`<br>`SyslogMessage contains "VCF Alert"` | ✓ | ✓ | ✓ |
+| [`VMware_CWS_Health_CL`](../tables/vmware-cws-health-cl.md) |  | — | — | — |
+| [`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md) |  | — | — | — |
+| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) |  | — | — | — |
 
 ---
 

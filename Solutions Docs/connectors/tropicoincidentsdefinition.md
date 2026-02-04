@@ -22,9 +22,9 @@ Ingest attacker session incidents from Tropico Security Platform.
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Tropico_Incidents_CL`](../tables/tropico-incidents-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Tropico_Incidents_CL`](../tables/tropico-incidents-cl.md) | — | — | — |
 
 ## Permissions
 

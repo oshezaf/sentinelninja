@@ -22,9 +22,9 @@ Connects the Datawiza DAP logs to Azure Log Analytics via the REST API interface
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

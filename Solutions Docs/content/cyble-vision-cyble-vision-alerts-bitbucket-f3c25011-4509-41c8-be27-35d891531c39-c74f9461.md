@@ -25,9 +25,9 @@ Detects exposed secrets in Bitbucket repositories using the Alerts_bit_bucket pa
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | ✗ | ✗ |
 
 ---
 

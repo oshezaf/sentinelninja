@@ -18,9 +18,9 @@ This Playbook Integrate Thinkst Canary cloud console alerts with Microsoft Senti
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Thinkst_Canary_CL`](../tables/thinkst-canary-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Thinkst_Canary_CL`](../tables/thinkst-canary-cl.md) | — | — | — |
 
 ---
 

@@ -25,9 +25,9 @@ Detects critical smishing (SMS phishing) and phishing alerts from Lookout Mobile
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | — | ✗ | ✓ |
 
 ---
 

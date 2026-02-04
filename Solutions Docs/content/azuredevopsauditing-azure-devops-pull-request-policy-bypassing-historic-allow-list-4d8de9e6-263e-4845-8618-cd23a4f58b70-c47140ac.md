@@ -24,10 +24,10 @@ This detection builds an allow list of historic PR policy bypasses and compares 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | ✗ |
-| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | ✗ | ✓ |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ | — |
 
 ---
 

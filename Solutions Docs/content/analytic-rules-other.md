@@ -1,6 +1,6 @@
 # Analytic Rules - #
 
-**30 analytic rules** starting with '#'.
+**20 analytic rules** starting with '#'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -14,16 +14,6 @@
 
 | Name | Severity | Source |
 |:-----|:---------|:-------|
-| [(Preview) GitHub - A payment method was removed](github-preview-github-a-payment-method-was-removed-6bb50582-caac-4a9b-9afb-3fee766ebbf7-07e36ce6.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - Oauth application - a client secret was removed](github-preview-github-oauth-application-a-client-secret-was-removed-0b85a077-8ba5-4cb5-90f7-1e882afe10c5-7a8aae1f.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - pull request was created](github-preview-github-pull-request-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c7-d91061d2.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - pull request was merged](github-preview-github-pull-request-was-merged-0b85a077-8ba5-4cb5-90f7-1e882afe10c6-a5d2e4b5.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - Repository was created](github-preview-github-repository-was-created-0b85a077-8ba5-4cb5-90f7-1e882afe10c2-8deab692.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - Repository was destroyed](github-preview-github-repository-was-destroyed-0b85a077-8ba5-4cb5-90f7-1e882afe10c3-3aa162c0.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - User visibility Was changed](github-preview-github-user-visibility-was-changed-0b85a077-8ba5-4cb5-90f7-1e882afe20c9-626c4b84.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - User was added to the organization](github-preview-github-user-was-added-to-the-organization-0b85a077-8ba5-4cb5-90f7-1e882afe10c4-0ef59510.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - User was blocked](github-preview-github-user-was-blocked-0b85a077-8ba5-4cb5-90f7-1e882afe10c8-14f65d41.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [(Preview) GitHub - User was invited to the repository](github-preview-github-user-was-invited-to-the-repository-0b85a077-8ba5-4cb5-90f7-1e882afe40c9-b2b4b57d.md) | Medium | 📦 [GitHub](../solutions/github.md) |
 | [1Password - Changes to firewall rules](1password-1password-changes-to-firewall-rules-54e6bb8e-2935-422f-9387-dba1961abfd7-9690ea4a.md) | Medium | 📦 [1Password](../solutions/1password.md) |
 | [1Password - Changes to SSO configuration](1password-1password-changes-to-sso-configuration-9406f5ab-1197-4db9-8042-9f3345be061c-c5a1c84d.md) | Medium | 📦 [1Password](../solutions/1password.md) |
 | [1Password - Disable MFA factor or type for all user accounts](1password-1password-disable-mfa-factor-or-type-for-all-user-accounts-92ab0938-1e7c-4671-9810-392e8b9714da-d13d6a77.md) | High | 📦 [1Password](../solutions/1password.md) |

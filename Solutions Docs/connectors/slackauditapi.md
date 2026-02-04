@@ -26,11 +26,11 @@ The [Slack](https://slack.com) Audit data connector provides the capability to i
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | — | — |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | — | ✗ |
-| [`SlackAudit_CL`](../tables/slackaudit-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | — | — | — |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | — | ✗ | ✓ |
+| [`SlackAudit_CL`](../tables/slackaudit-cl.md) | — | — | — |
 
 ## Permissions
 

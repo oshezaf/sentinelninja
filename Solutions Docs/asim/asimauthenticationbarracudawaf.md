@@ -16,7 +16,7 @@
 | **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Barracuda WAF |
-| **Parser Version** | 0.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationBarracudaWAF.md)) |
+| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationBarracudaWAF.md)) |
 | **Last Updated** | Jun 13 2023 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationBarracudaWAF.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationBarracudaWAF.yaml) |
@@ -29,10 +29,10 @@ This ASIM parser supports normalizing the Barracuda WAF logs to the ASIM authent
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "WAAS,WAF"`<br>`DeviceVendor startswith "Barracuda"` | ✓ | ✓ |
-| [`barracuda_CL`](../tables/barracuda-cl.md) |  | — | — |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "WAAS,WAF"`<br>`DeviceVendor startswith "Barracuda"` | ✓ | ✓ | ✓ |
+| [`barracuda_CL`](../tables/barracuda-cl.md) |  | — | — | — |
 
 ## Parameters
 

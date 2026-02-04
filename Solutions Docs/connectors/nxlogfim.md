@@ -22,9 +22,9 @@ The [NXLog FIM](https://docs.nxlog.co/refman/current/im/fim.html) module allows 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NXLogFIM_CL`](../tables/nxlogfim-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NXLogFIM_CL`](../tables/nxlogfim-cl.md) | — | — | — |
 
 ## Permissions
 

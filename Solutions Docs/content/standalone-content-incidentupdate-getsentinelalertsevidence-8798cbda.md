@@ -18,10 +18,10 @@ This playbook will run on a time schedule base (every hour) and it will check fo
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
 ## Associated Connectors
 

@@ -16,15 +16,15 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) |  | — | ✗ |
-| [`Event`](../tables/event.md) |  | ✓ | ✗ |
-| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ |
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Oracle Unified Audit"` | ✓ | ✓ |
-| [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ | — |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) |  | — | ✗ | ✗ |
+| [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
+| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ | — |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Oracle Unified Audit"` | ✓ | ✓ | ✓ |
+| [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ | — |
 
 ---
 

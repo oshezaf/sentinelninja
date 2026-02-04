@@ -28,9 +28,9 @@ The Sevco Platform - Devices connector allows you to easily connect your Sevco D
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Sevco_Devices_CL`](../tables/sevco-devices-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Sevco_Devices_CL`](../tables/sevco-devices-cl.md) | — | — | — |
 
 ## Permissions
 

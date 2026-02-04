@@ -22,9 +22,9 @@ The Google ApigeeX data connector provides the capability to ingest Audit logs i
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCPApigee`](../tables/gcpapigee.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCPApigee`](../tables/gcpapigee.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

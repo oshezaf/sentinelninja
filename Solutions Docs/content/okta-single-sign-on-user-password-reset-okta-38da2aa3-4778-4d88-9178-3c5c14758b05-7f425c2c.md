@@ -22,10 +22,10 @@ Adversaries often manipulate accounts for access. This query checks for admin at
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — |
-| [`Okta_CL`](../tables/okta-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — | — |
+| [`Okta_CL`](../tables/okta-cl.md) | — | ✗ | ✗ |
 
 ---
 

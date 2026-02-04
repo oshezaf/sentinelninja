@@ -22,9 +22,9 @@ This query detects web shells by analyzing the distribution of commonly-used scr
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ✗ |
 
 ---
 

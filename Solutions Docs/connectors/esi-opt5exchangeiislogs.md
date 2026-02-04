@@ -22,9 +22,9 @@
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ✗ |
 
 ## Permissions
 

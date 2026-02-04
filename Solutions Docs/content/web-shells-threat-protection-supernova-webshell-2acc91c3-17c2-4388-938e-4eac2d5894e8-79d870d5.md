@@ -24,9 +24,9 @@ Identifies SUPERNOVA webshell based on W3CIISLog data.  References:  - https://u
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`W3CIISLog`](../tables/w3ciislog.md) | ✓ | ✗ | ✗ |
 
 ---
 

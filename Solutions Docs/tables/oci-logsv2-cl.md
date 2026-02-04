@@ -17,13 +17,14 @@ This table is used by the following solutions:
 
 - [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oci-connector-ccp-definition.md) |  |
+| [Oracle Cloud Infrastructure (via CCP) – Preview](../connectors/oci-connector-ccp-definition.md) |  |
+| [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) |  |
 
 ---
 

@@ -24,10 +24,10 @@ This query identifies any URL indicators of compromise (IOCs) from threat intell
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType !has "ConnectionFailed"` | ✓ | ✗ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType !has "ConnectionFailed"` | ✓ | ✗ | — |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
 
 ---
 

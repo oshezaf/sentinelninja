@@ -25,9 +25,9 @@ Monitors CTERA platform to detect potential ransomware attacks detected by CTERA
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Ransomware incident detected"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Ransomware incident detected"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -24,9 +24,9 @@ This rule detects medium severity asset-based vulnerabilities from CYFIRMA's vul
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CyfirmaVulnerabilities_CL`](../tables/cyfirmavulnerabilities-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyfirmaVulnerabilities_CL`](../tables/cyfirmavulnerabilities-cl.md) | — | ✗ | ✓ |
 
 ---
 

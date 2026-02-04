@@ -22,9 +22,9 @@ Identify potential new registry key name that is a non-autorun and non-run key i
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
 
 ---
 

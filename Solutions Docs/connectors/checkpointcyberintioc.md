@@ -22,9 +22,9 @@ This is data connector for Check Point Cyberint IOC.
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`iocsent_CL`](../tables/iocsent-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`iocsent_CL`](../tables/iocsent-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

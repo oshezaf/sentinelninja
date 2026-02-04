@@ -18,9 +18,9 @@ Author: Yaniv Shasha This Logic App act as listener for a incident close event i
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
 ## Associated Connectors
 

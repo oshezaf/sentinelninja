@@ -25,9 +25,9 @@ GuardDuty Detector was disabled or suspended, possibly by an attacker trying to 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "DeleteDetector,UpdateDetector"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "DeleteDetector,UpdateDetector"` | ✓ | ✓ | ✓ |
 
 ---
 

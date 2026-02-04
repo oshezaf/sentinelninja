@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | — | ✗ | ✓ |
 
 ---
 

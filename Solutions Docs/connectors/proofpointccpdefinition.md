@@ -22,10 +22,10 @@ Proofpoint On Demand Email Security data connector provides the capability to ge
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | — | ✗ |
-| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | — | ✗ | ✓ |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

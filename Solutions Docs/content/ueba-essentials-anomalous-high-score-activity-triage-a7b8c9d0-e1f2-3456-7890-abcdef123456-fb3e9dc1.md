@@ -20,9 +20,9 @@ Identify the highest-scoring anomalies for rapid triage using Anomalies Table.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | — |
 
 ---
 

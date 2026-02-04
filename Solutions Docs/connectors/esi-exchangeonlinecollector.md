@@ -22,9 +22,9 @@ Connector used to push Exchange Online Security configuration for Microsoft Sent
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

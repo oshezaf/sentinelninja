@@ -25,9 +25,9 @@ Searches for logs of AD Applications without Client Credentials (Key or Secret)
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) | — | — | — |
 
 ---
 

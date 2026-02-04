@@ -25,9 +25,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Event`](../tables/event.md) | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | ✓ | ✗ | ✗ |
 
 ---
 

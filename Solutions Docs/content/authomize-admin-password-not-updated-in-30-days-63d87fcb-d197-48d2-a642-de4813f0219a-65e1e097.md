@@ -25,9 +25,9 @@ The policy detects an administrative account where the password of the account w
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) | — | — | — |
 
 ---
 

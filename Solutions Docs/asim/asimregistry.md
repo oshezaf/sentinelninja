@@ -44,17 +44,17 @@ This union parser includes parsers for the following products:
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimRegistryEventMicrosoft365D`](../asim/asimregistryeventmicrosoft365d.md) | — | — |
-| [`ASimRegistryEventMicrosoftSecurityEvent`](../asim/asimregistryeventmicrosoftsecurityevent.md) | — | — |
-| [`ASimRegistryEventMicrosoftSysmon`](../asim/asimregistryeventmicrosoftsysmon.md) | — | — |
-| [`ASimRegistryEventMicrosoftSysmonWindowsEvent`](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | — | — |
-| [`ASimRegistryEventMicrosoftWindowsEvent`](../asim/asimregistryeventmicrosoftwindowsevent.md) | — | — |
-| [`ASimRegistryEventNative`](../asim/asimregistryeventnative.md) | — | — |
-| [`ASimRegistryEventSentinelOne`](../asim/asimregistryeventsentinelone.md) | — | — |
-| [`ASimRegistryEventTrendMicroVisionOne`](../asim/asimregistryeventtrendmicrovisionone.md) | — | — |
-| [`ASimRegistryEventVMwareCarbonBlackCloud`](../asim/asimregistryeventvmwarecarbonblackcloud.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimRegistryEventMicrosoft365D`](../asim/asimregistryeventmicrosoft365d.md) | — | — | — |
+| [`ASimRegistryEventMicrosoftSecurityEvent`](../asim/asimregistryeventmicrosoftsecurityevent.md) | — | — | — |
+| [`ASimRegistryEventMicrosoftSysmon`](../asim/asimregistryeventmicrosoftsysmon.md) | — | — | — |
+| [`ASimRegistryEventMicrosoftSysmonWindowsEvent`](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | — | — | — |
+| [`ASimRegistryEventMicrosoftWindowsEvent`](../asim/asimregistryeventmicrosoftwindowsevent.md) | — | — | — |
+| [`ASimRegistryEventNative`](../asim/asimregistryeventnative.md) | — | — | — |
+| [`ASimRegistryEventSentinelOne`](../asim/asimregistryeventsentinelone.md) | — | — | — |
+| [`ASimRegistryEventTrendMicroVisionOne`](../asim/asimregistryeventtrendmicrovisionone.md) | — | — | — |
+| [`ASimRegistryEventVMwareCarbonBlackCloud`](../asim/asimregistryeventvmwarecarbonblackcloud.md) | — | — | — |
 
 ## Parameters
 
@@ -65,7 +65,7 @@ This parser reads from the following tables:
 ## References
 
 - [ASIM Registry Schema](https://aka.ms/ASimRegistryEventDoc)
-- [ASIM](https:/aka.ms/AboutASIM)
+- [ASIM](https://aka.ms/AboutASIM)
 
 ---
 

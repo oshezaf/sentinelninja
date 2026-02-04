@@ -22,9 +22,9 @@
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) | `EventLog == "Application"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Event`](../tables/event.md) | `EventLog == "Application"` | ✓ | ✗ | ✗ |
 
 ## Permissions
 

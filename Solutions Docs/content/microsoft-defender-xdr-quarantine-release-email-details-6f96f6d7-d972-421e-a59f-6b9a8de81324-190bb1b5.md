@@ -22,10 +22,10 @@ This query shows information about email that has been released from the Quarant
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "QuarantineReleaseMessage"` | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "QuarantineReleaseMessage"` | ✓ | ✗ | ✓ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

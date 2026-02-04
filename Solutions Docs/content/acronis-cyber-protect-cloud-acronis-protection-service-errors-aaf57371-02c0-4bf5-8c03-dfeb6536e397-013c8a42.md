@@ -19,9 +19,9 @@ Various errors related to Active Protection or CPS malfunctions.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "ActiveProtectionDriverRemediated,ActiveProtectionInvalidNetworkRecoveryPath,ActiveProtectionServiceConflict,ActiveProtectionServiceFailureToApplyPolicy,ActiveProtectionServiceNotAvailable,ActiveProtectionServiceNotRunning,CPSProtectionFailureDetected,ProtectionServiceNotWorking"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "ActiveProtectionDriverRemediated,ActiveProtectionInvalidNetworkRecoveryPath,ActiveProtectionServiceConflict,ActiveProtectionServiceFailureToApplyPolicy,ActiveProtectionServiceNotAvailable,ActiveProtectionServiceNotRunning,CPSProtectionFailureDetected,ProtectionServiceNotWorking"`<br>`DeviceVendor == "Acronis"` | ✓ | ✓ | ✓ |
 
 ---
 

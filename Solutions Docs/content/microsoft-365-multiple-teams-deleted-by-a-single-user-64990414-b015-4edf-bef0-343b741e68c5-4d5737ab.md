@@ -22,9 +22,9 @@ This hunting query identifies where multiple Teams have been deleted by a single
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"` | ✓ | ✗ | ✓ |
 
 ---
 

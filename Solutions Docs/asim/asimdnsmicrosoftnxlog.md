@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft DNS logs, collected using NXlog,
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) | — | — | — |
 
 ## Parameters
 

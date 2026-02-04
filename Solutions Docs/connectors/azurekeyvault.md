@@ -22,9 +22,9 @@ Azure Key Vault is a cloud service for securely storing and accessing secrets. A
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.KEYVAULT"` | — | ✗ | ✗ |
 
 ## Permissions
 

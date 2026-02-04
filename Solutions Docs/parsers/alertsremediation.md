@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md) | — | ✗ | ✗ |
 
 ---
 

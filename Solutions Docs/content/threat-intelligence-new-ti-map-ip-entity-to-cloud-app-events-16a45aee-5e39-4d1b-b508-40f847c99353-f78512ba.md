@@ -24,10 +24,10 @@ Identifies compromises and attacks and detect malicious activities in one's IP e
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | ✓ | ✗ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Security Event logs ingested in 
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

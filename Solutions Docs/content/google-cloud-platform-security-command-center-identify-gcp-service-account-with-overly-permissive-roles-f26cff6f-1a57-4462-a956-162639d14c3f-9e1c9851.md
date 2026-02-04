@@ -22,9 +22,9 @@ This query identifies Google Cloud Platform (GCP) service accounts with admin pr
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ | ✓ |
 
 ---
 

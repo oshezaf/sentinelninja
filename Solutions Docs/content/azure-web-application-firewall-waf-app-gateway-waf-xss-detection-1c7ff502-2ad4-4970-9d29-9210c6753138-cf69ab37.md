@@ -25,9 +25,9 @@ Identifies a match for an XSS attack in the App Gateway WAF logs. The threshold 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ | — |
 
 ---
 

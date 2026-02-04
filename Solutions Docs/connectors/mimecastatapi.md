@@ -34,12 +34,12 @@ The Mimecast products included within the connector are:
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | — | ✗ |
-| [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | — | ✗ |
-| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | — | ✗ |
-| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Awareness_Performance_Details_CL`](../tables/awareness-performance-details-cl.md) | — | ✗ | ✗ |
+| [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | — | ✗ | ✗ |
+| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | — | ✗ | ✗ |
+| [`Awareness_Watchlist_Details_CL`](../tables/awareness-watchlist-details-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

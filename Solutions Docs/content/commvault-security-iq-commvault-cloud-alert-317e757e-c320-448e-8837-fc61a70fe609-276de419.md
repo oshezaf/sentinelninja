@@ -25,9 +25,9 @@ This query identifies Alerts from Commvault Cloud.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Corelight_v2_smtp_links_CL`](../tables/corelight-v2-smtp-links-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Corelight_v2_smtp_links_CL`](../tables/corelight-v2-smtp-links-cl.md) | — | — | — |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Fortinet FortiGate logs ingested in 'Commo
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID endswith "54000"`<br>`DeviceEventClassID endswith "54200"`<br>`DeviceEventClassID endswith "54400"`<br>`DeviceEventClassID endswith "54401"`<br>`DeviceEventClassID endswith "54600"`<br>`DeviceEventClassID endswith "54601"`<br>`DeviceEventClassID endswith "54800"`<br>`DeviceEventClassID endswith "54801"`<br>`DeviceEventClassID endswith "54802"`<br>`DeviceEventClassID endswith "54803"`<br>`DeviceEventClassID endswith "54804"`<br>`DeviceEventClassID endswith "54805"`<br>`DeviceProduct startswith "Fortigate"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID endswith "54000"`<br>`DeviceEventClassID endswith "54200"`<br>`DeviceEventClassID endswith "54400"`<br>`DeviceEventClassID endswith "54401"`<br>`DeviceEventClassID endswith "54600"`<br>`DeviceEventClassID endswith "54601"`<br>`DeviceEventClassID endswith "54800"`<br>`DeviceEventClassID endswith "54801"`<br>`DeviceEventClassID endswith "54802"`<br>`DeviceEventClassID endswith "54803"`<br>`DeviceEventClassID endswith "54804"`<br>`DeviceEventClassID endswith "54805"`<br>`DeviceProduct startswith "Fortigate"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

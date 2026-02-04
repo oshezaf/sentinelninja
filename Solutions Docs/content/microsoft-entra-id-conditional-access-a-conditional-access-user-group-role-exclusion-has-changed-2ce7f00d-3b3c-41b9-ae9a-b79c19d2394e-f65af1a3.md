@@ -24,9 +24,9 @@ A Conditional Access user/group/role exclusion has changed in Azure AD.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Update conditional access policy"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Update conditional access policy"` | ✓ | ✗ | ✓ |
 
 ---
 

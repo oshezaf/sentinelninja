@@ -25,9 +25,9 @@ Creates an incident for each discovered or exposed web application detected by C
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | ✗ | ✗ |
 
 ---
 

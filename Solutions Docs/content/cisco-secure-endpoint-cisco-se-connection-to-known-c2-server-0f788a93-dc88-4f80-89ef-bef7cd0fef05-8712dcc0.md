@@ -25,11 +25,11 @@ This rule is triggered when connection to known C2 is detected from host.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CiscoSecureEndpointAuditLogsV2_CL`](../tables/ciscosecureendpointauditlogsv2-cl.md) | — | ✗ |
-| [`CiscoSecureEndpointEventsV2_CL`](../tables/ciscosecureendpointeventsv2-cl.md) | — | ✗ |
-| [`CiscoSecureEndpoint_CL`](../tables/ciscosecureendpoint-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CiscoSecureEndpointAuditLogsV2_CL`](../tables/ciscosecureendpointauditlogsv2-cl.md) | — | ✗ | ✓ |
+| [`CiscoSecureEndpointEventsV2_CL`](../tables/ciscosecureendpointeventsv2-cl.md) | — | ✗ | ✓ |
+| [`CiscoSecureEndpoint_CL`](../tables/ciscosecureendpoint-cl.md) | — | — | — |
 
 ---
 

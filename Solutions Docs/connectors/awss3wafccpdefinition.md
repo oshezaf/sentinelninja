@@ -27,9 +27,9 @@ This connector allows you to ingest AWS WAF logs, collected in AWS S3 buckets, t
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSWAF`](../tables/awswaf.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSWAF`](../tables/awswaf.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

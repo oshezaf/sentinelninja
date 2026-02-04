@@ -25,11 +25,11 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
-| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | — |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | — |
 
 ---
 

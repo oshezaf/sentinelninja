@@ -22,13 +22,13 @@ The TVM data connector provides the ability to ingest Asset, Vulnerability, Comp
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | — | ✗ |
-| [`Tenable_VM_Compliance_CL`](../tables/tenable-vm-compliance-cl.md) | — | ✗ |
-| [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | — | ✗ |
-| [`Tenable_WAS_Asset_CL`](../tables/tenable-was-asset-cl.md) | — | ✗ |
-| [`Tenable_WAS_Vuln_CL`](../tables/tenable-was-vuln-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | — | ✗ | ✓ |
+| [`Tenable_VM_Compliance_CL`](../tables/tenable-vm-compliance-cl.md) | — | ✗ | ✓ |
+| [`Tenable_VM_Vuln_CL`](../tables/tenable-vm-vuln-cl.md) | — | ✗ | ✓ |
+| [`Tenable_WAS_Asset_CL`](../tables/tenable-was-asset-cl.md) | — | ✗ | ✓ |
+| [`Tenable_WAS_Vuln_CL`](../tables/tenable-was-vuln-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 
@@ -214,7 +214,7 @@ If you're already signed in, go to the next step.
 
 	 t. **PyTenableUAProduct** - Value must be set to **Azure Sentinel**. 
 
-	 u. **PyTenableUABuild** - Value must be set to **0.0.1**.
+	 u. **PyTenableUABuild** - Value must be set to **3.1.0**.
 3. Once all application settings have been entered, click **Save**.
 
 ---

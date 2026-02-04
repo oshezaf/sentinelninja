@@ -24,10 +24,10 @@ This query maps any IP indicators of compromise (IOCs) from threat intelligence 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md) | — | — |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md) | — | — | — |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
 
 ---
 

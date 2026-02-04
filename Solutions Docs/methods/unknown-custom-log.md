@@ -17,8 +17,8 @@ These connectors use custom log tables to store ingested data. The specific coll
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **44** |
-| Active | 40 |
+| Total Connectors | **43** |
+| Active | 39 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 4 |
 
@@ -44,7 +44,6 @@ These connectors use custom log tables to store ingested data. The specific coll
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |
 | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [F5 BIG-IP](../connectors/f5bigip.md) | F5 Networks | 3 | [F5 Big-IP](../solutions/f5-big-ip.md) |
-| [Flare](../connectors/flare.md) | Flare | 1 | [Flare](../solutions/flare.md) |
 | [Forcepoint DLP](../connectors/forcepoint-dlp.md) | Forcepoint | 1 | [Forcepoint DLP](../solutions/forcepoint-dlp.md) |
 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |

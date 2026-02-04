@@ -25,9 +25,9 @@ This query searches for all the vulerabilities that RidgeBot identified
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID startswith "40"`<br>`DeviceVendor == "RidgeSecurity"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID startswith "40"`<br>`DeviceVendor == "RidgeSecurity"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -25,9 +25,9 @@ Detects multiple incidents from user.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"` | ✓ | ✓ | ✓ |
 
 ---
 

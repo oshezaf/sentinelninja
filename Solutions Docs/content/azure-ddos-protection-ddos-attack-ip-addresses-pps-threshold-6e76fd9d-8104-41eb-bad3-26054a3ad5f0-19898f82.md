@@ -25,9 +25,9 @@ Identifies IP addresses that generates maximal traffic rate over 10k PPS during 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "DDoSMitigationFlowLogs"`<br>`ResourceType == "PUBLICIPADDRESSES"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "DDoSMitigationFlowLogs"`<br>`ResourceType == "PUBLICIPADDRESSES"` | — | ✗ | ✗ |
 
 ---
 

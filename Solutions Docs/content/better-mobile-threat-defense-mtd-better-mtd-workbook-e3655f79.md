@@ -16,12 +16,12 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BetterMTDAppLog_CL`](../tables/bettermtdapplog-cl.md) | — | ✗ |
-| [`BetterMTDDeviceLog_CL`](../tables/bettermtddevicelog-cl.md) | — | ✗ |
-| [`BetterMTDIncidentLog_CL`](../tables/bettermtdincidentlog-cl.md) | — | ✗ |
-| [`BetterMTDNetflowLog_CL`](../tables/bettermtdnetflowlog-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BetterMTDAppLog_CL`](../tables/bettermtdapplog-cl.md) | — | ✗ | ✗ |
+| [`BetterMTDDeviceLog_CL`](../tables/bettermtddevicelog-cl.md) | — | ✗ | ✗ |
+| [`BetterMTDIncidentLog_CL`](../tables/bettermtdincidentlog-cl.md) | — | ✗ | ✗ |
+| [`BetterMTDNetflowLog_CL`](../tables/bettermtdnetflowlog-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft 365 Defender for endpoint logs, 
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"` | ✓ | ✗ | — |
 
 ## Parameters
 

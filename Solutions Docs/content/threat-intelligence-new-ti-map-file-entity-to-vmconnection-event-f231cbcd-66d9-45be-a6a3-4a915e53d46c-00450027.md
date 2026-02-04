@@ -21,10 +21,10 @@ This query finds matches in VMConnection Event data for known FileName Indicator
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
-| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | — |
 
 ---
 

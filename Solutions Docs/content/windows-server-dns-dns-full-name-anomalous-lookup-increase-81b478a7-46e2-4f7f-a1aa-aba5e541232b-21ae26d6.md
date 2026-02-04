@@ -22,9 +22,9 @@ Checking for a threefold increase or more in Full Name lookups per Client IP for
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
 
 ---
 

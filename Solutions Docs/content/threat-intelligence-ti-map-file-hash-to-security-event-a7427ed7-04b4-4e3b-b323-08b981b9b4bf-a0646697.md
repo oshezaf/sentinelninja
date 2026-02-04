@@ -24,11 +24,11 @@ Identifies a match in Security Event data from any File Hash IOC from TI
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ |
-| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ✓ |
 
 ---
 

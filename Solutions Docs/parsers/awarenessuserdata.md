@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Awareness_User_Data_CL`](../tables/awareness-user-data-cl.md) | — | ✗ | ✗ |
 
 ---
 

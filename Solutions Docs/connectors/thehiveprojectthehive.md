@@ -22,9 +22,9 @@ The [TheHive](http://thehive-project.org/) data connector provides the capabilit
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`TheHive_CL`](../tables/thehive-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`TheHive_CL`](../tables/thehive-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

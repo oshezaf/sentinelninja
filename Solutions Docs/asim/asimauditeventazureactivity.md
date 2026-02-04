@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuditEventAzureActivity` |
 | **Built-in Parser** | `_ASim_AuditEvent_AzureActivity` |
 | **Schema** | AuditEvent |
-| **Schema Version** | 0.1.0 |
+| **Schema Version** | 0.1.2 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft Azure |
-| **Parser Version** | 0.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventAzureActivity.md)) |
-| **Last Updated** | Feb 19 2022 |
+| **Parser Version** | 0.3.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuditEvent/CHANGELOG/ASimAuditEventAzureActivity.md)) |
+| **Last Updated** | Jan 09, 2026 |
 | **Unifying Parser** | [ASimAuditEvent](asimauditevent.md) |
 | **Source File** | [Parsers\ASimAuditEvent\Parsers\ASimAuditEventAzureAdminActivity.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuditEvent/Parsers/ASimAuditEventAzureAdminActivity.yaml) |
 
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Azure administrative activity in the Azure
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
 
 ## Parameters
 

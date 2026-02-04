@@ -64,9 +64,9 @@ For detailed instructions, refer to the [documentation](https://help.miro.com/hc
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MiroContentLogs_CL`](../tables/mirocontentlogs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MiroContentLogs_CL`](../tables/mirocontentlogs-cl.md) | — | — | — |
 
 ## Permissions
 

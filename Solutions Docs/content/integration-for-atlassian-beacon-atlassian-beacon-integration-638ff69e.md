@@ -18,9 +18,9 @@ This Logic App recieves a webhook from Atlassian Beacon and ingest the payload i
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**816 playbooks** across all Microsoft Sentinel solutions.
+**819 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -386,7 +386,6 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Get-MerakiData-OrgSecurityEvents](standalone-content-get-merakidata-orgsecurityevents-0138a550.md) | 📄 Standalone Content |
 | [Get-NamedLocations](github-only-get-namedlocations-55f4a188.md) | 🔗 GitHub Only |
 | [Get-O365Data](standalone-content-get-o365data-4178da9b.md) | 📄 Standalone Content |
-| [Get-ProofpointTapEvents](proofpointtap-get-proofpointtapevents-ac19b8c3.md) | 📦 [ProofPointTap](../solutions/proofpointtap.md) |
 | [Get-SecureScore-Information](github-only-get-securescore-information-c908bf74.md) | 🔗 GitHub Only |
 | [Get-SentinelAlertsEvidence](standalone-content-get-sentinelalertsevidence-905ed402.md) | 📄 Standalone Content |
 | [Get-SOC-Actions](soc-process-framework-get-soc-actions-287c5e40.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |
@@ -550,6 +549,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Jamf Protect - Remote lock computer with Jamf Pro](jamf-protect-jamf-protect-remote-lock-computer-with-jamf-pro-14be386b.md) | 📦 [Jamf Protect](../solutions/jamf-protect.md) |
 | [Jamf Protect - Set Alert to In Progress](jamf-protect-jamf-protect-set-alert-to-in-progress-81a20419.md) | 📦 [Jamf Protect](../solutions/jamf-protect.md) |
 | [Jamf Protect - Set Alert to Resolved](jamf-protect-jamf-protect-set-alert-to-resolved-1a7def5b.md) | 📦 [Jamf Protect](../solutions/jamf-protect.md) |
+| [JoeSandbox File Analyis](joesandbox-joesandbox-file-analyis-aa5d7e19.md) | 📦 [JoeSandbox](../solutions/joesandbox.md) |
+| [JoeSandbox URL Analyis](joesandbox-joesandbox-url-analyis-9f551431.md) | 📦 [JoeSandbox](../solutions/joesandbox.md) |
 | [Joshua Import To Sentinel](joshua-cyberiskvision-joshua-import-to-sentinel-2c45c449.md) | 📦 [Joshua-Cyberiskvision](../solutions/joshua-cyberiskvision.md) |
 | [Joshua Indicators Processor DOMAIN](joshua-cyberiskvision-joshua-indicators-processor-domain-4ddefe3e.md) | 📦 [Joshua-Cyberiskvision](../solutions/joshua-cyberiskvision.md) |
 | [Joshua Indicators Processor EMAIL](joshua-cyberiskvision-joshua-indicators-processor-email-74762ae3.md) | 📦 [Joshua-Cyberiskvision](../solutions/joshua-cyberiskvision.md) |
@@ -842,6 +843,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 
 | Name | Source |
 |:-----|:-------|
+| [TacitRed to CrowdStrike IOC Automation](tacitred-ioc-crowdstrike-tacitred-to-crowdstrike-ioc-automation-899201f9.md) | 📦 [TacitRed-IOC-CrowdStrike](../solutions/tacitred-ioc-crowdstrike.md) |
+| [TacitRed to SentinelOne IOC Automation](tacitred-sentinelone-tacitred-to-sentinelone-ioc-automation-0d5ed56e.md) | 📦 [TacitRed-SentinelOne](../solutions/tacitred-sentinelone.md) |
 | [Tanium-ComplyFindings](tanium-tanium-complyfindings-1a82f749.md) | 📦 [Tanium](../solutions/tanium.md) |
 | [Tanium-GeneralHostInfo](tanium-tanium-generalhostinfo-b769badf.md) | 📦 [Tanium](../solutions/tanium.md) |
 | [Tanium-ListSecurityPatches](tanium-tanium-listsecuritypatches-cc9f52b3.md) | 📦 [Tanium](../solutions/tanium.md) |

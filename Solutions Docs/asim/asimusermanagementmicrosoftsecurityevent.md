@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Security Event logs ingested in 
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4744,4748,4749,4753,4759,4763"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4744,4748,4749,4753,4759,4763"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

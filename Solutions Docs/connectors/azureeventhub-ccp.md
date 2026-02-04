@@ -22,9 +22,9 @@ Azure Event Hubs is a big data streaming platform and event ingestion service. I
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.EVENTHUB"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.EVENTHUB"` | — | ✗ | ✗ |
 
 ## Permissions
 

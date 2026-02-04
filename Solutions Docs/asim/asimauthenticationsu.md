@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuthenticationSu` |
 | **Built-in Parser** | `_ASim_Authentication_Su` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.1.2 |
+| **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | su |
-| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSu.md)) |
-| **Last Updated** | 21 Jul 2023 |
+| **Parser Version** | 0.3.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSu.md)) |
+| **Last Updated** | Jan 15, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationSu.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationSu.yaml) |
 
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Linux su elevation commands collected usin
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "su"`<br>`SyslogMessage has_all "pam_unix(su"`<br>`SyslogMessage startswith "Successful su for"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "su"`<br>`SyslogMessage has_all "pam_unix(su"`<br>`SyslogMessage startswith "FAILED SU"`<br>`SyslogMessage startswith "Successful su for"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

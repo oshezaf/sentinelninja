@@ -22,9 +22,9 @@ This connector uses a Agari REST API connection to push data into Microsoft Sent
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) | — | — | — |
 
 ## Permissions
 

@@ -33,11 +33,13 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **2 table(s)** from its content items:
+This solution queries **4 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AuditLogs`](../tables/auditlogs.md) | Hunting |
+| [`SentinelBehaviorEntities`](../tables/sentinelbehaviorentities.md) | Workbooks |
+| [`SentinelBehaviorInfo`](../tables/sentinelbehaviorinfo.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Hunting |
 
 ### Internal Tables
@@ -52,18 +54,19 @@ The following **3 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **30 content item(s)**:
+This solution includes **31 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Hunting Queries | 30 |
+| Workbooks | 1 |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
 | [Anomalies on users tagged as VIP](../content/ueba-essentials-anomalies-on-users-tagged-as-vip-028ac38c-f5a4-483b-a58a-aa83d500bf27-67c13b87.md) | - | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
-| [Anomalous AWS Console Login Without MFA from Uncommon Country](../content/ueba-essentials-anomalous-aws-console-login-without-mfa-from-uncommon-country-a1b2c3d4-e5f6-7890-abcd-ef1234567890-e27bf283.md) | InitialAccess, CredentialAccess | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
+| [Anomalous AWS Console Login Without MFA from Uncommon Country](../content/ueba-essentials-anomalous-aws-console-login-without-mfa-from-uncommon-country-a1b2c3d4-e5f6-7890-abcd-ef1234567890-e27bf283.md) | InitialAccess, CredentialAccess | [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
 | [Anomalous Activity Role Assignment](../content/ueba-essentials-anomalous-activity-role-assignment-bd6fda76-c0df-41b0-b8cd-808190e1ded0-f28cc576.md) | PrivilegeEscalation | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
 | [Anomalous Code Execution on a Virtual Machine](../content/ueba-essentials-anomalous-code-execution-on-a-virtual-machine-f8ab176c-1f3f-4cb5-8dc1-f50d30bcae0d-1d294e0d.md) | Execution | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
 | [Anomalous Database Export Activity](../content/ueba-essentials-anomalous-database-export-activity-8cf3c78e-cd10-4bfb-bd69-d62dc7f375f1-547bf5ee.md) | Collection | *Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md) |
@@ -93,10 +96,17 @@ This solution includes **30 content item(s)**:
 | [UEBA Multi-Source Anomalous Activity Overview](../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.md) | InitialAccess, CredentialAccess, Persistence, PrivilegeEscalation | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md) |
 | [User-Centric Anomaly Investigation](../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.md) | - | *Internal use:*<br>[`Anomalies`](../tables/anomalies.md) |
 
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [UEBABehaviorsAnalysisWorkbook](../content/ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.md) | [`SentinelBehaviorEntities`](../tables/sentinelbehaviorentities.md)<br>[`SentinelBehaviorInfo`](../tables/sentinelbehaviorinfo.md) |
+
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                        |
 |-------------|--------------------------------|-------------------------------------------------------------------------------------------|
+| 3.0.4       | 29-01-2026                     | Added new UEBA Behaviors Analysis **Workbook** to solution      |      
 | 3.0.3       | 24-11-2025                     | Added new **Hunting Queries**                                          	               |
 | 3.0.2       | 04-11-2025                     | Enhance UEBA Essentials with multi-cloud detection capabilities        	               |
 | 3.0.1       | 23-09-2024                     | Updated query logic in **Hunting Query** [Anomalous Sign-in Activity]                     |

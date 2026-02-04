@@ -15,7 +15,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (2)
 
@@ -30,14 +30,6 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map IP Entity to Duo Security](../content/threat-intelligence-new-ti-map-ip-entity-to-duo-security-4988c238-a118-442c-80bd-6c689a1b2e97-43e39fdc.md) |  |
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [DuoSecurity](../content/github-only-duosecurity-51a3ff3a.md) |  |
 
 ## Parsers Using This Table (1)
 

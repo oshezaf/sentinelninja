@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Sysmon network session events (event 3) co
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "3"`<br>`Provider == "Microsoft-Windows-Sysmon"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "3"`<br>`Provider == "Microsoft-Windows-Sysmon"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

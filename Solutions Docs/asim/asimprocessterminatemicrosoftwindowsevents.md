@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Windows process terminate events (event 46
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "4689"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "4689"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

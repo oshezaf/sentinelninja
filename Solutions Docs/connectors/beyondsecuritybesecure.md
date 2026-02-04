@@ -26,11 +26,11 @@ The [Beyond Security beSECURE](https://beyondsecurity.com/) connector allows you
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`beSECURE_Audit_CL`](../tables/besecure-audit-cl.md) | — | — |
-| [`beSECURE_ScanEvent_CL`](../tables/besecure-scanevent-cl.md) | — | — |
-| [`beSECURE_ScanResults_CL`](../tables/besecure-scanresults-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`beSECURE_Audit_CL`](../tables/besecure-audit-cl.md) | — | — | — |
+| [`beSECURE_ScanEvent_CL`](../tables/besecure-scanevent-cl.md) | — | — | — |
+| [`beSECURE_ScanResults_CL`](../tables/besecure-scanresults-cl.md) | — | — | — |
 
 ## Permissions
 

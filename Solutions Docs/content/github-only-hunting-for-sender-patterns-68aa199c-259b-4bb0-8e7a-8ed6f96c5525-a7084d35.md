@@ -22,10 +22,10 @@ In this detection approach, we correlate email from non-prevalent senders in the
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ |
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ | — |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
 
 ---
 

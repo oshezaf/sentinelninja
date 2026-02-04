@@ -22,9 +22,9 @@ The [Google Workspace](https://workspace.google.com/) Activities data connector 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 
@@ -52,7 +52,7 @@ This connector ingests data into the following tables:
  5. Go to ***APIs & Services*** -> ***Credentials*** and create OAuth 2.0 Client ID
 	 1. Click on Create Credentials on the top and select Oauth client Id.
 	 2. Select Web Application from the Application Type drop down.
-	 3. Provide a suitable name to the Web App and add https://portal.azure.com/TokenAuthorize/ExtensionName/Microsoft_Azure_Security_Insights as the Authorized redirect URIs.
+	 3. Provide a suitable name to the Web App and add the Redirect URI in the form below as the Authorized redirect URIs.
 	 4. Once you click Create, you will be provided with the Client ID and Client Secret. 
 	Copy these values and use them in the configuration steps below.
 Configure steps for the Google Reports API oauth access. Then, provide the required information below and click on Connect.

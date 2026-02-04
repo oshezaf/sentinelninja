@@ -24,9 +24,9 @@ This IPinfo data connector installs an Azure Function app to download standard_a
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Ipinfo_Abuse_CL`](../tables/ipinfo-abuse-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Ipinfo_Abuse_CL`](../tables/ipinfo-abuse-cl.md) | — | — | — |
 
 ## Permissions
 

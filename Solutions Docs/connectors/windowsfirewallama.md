@@ -34,9 +34,9 @@ For more information, see the following articles:
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | `EventProduct == "Windows Firewall"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | `EventProduct == "Windows Firewall"` | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

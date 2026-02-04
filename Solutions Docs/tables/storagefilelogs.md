@@ -35,7 +35,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (9)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (1)
 
@@ -44,20 +44,6 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Linked Malicious Storage Artifacts](../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d-6de5b72c.md) |  |
-
-### Hunting Queries (7)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Azure Storage File Create and Delete](../content/github-only-azure-storage-file-create-and-delete-276731f6-ae09-4469-9fa0-c0791a5a0d8d-9afbf5e4.md) |  |
-| [Azure Storage File Create, Access, Delete](../content/github-only-azure-storage-file-create,-access,-delete-25568c62-414b-4577-acee-5cba9494c232-3fab8ab2.md) |  |
-| [Azure Storage Mass File Deletion](../content/github-only-azure-storage-mass-file-deletion-85e16874-72aa-4ebe-b36e-e45f8ba50f79-194e0a08.md) |  |
-| [Azure Storage file upload from VPS Providers](../content/github-only-azure-storage-file-upload-from-vps-providers-85e16874-72aa-4ebe-b36e-e45f8ba50f79-c966139b.md) |  |
-| [Storage Alert Correlation with CommonSecurityLogs and StorageLogs](../content/github-only-storage-alert-correlation-with-commonsecuritylogs-and-storagelogs-7098cae1-c632-4b40-b715-86d6b07720d7-78ea9953.md) |  |
-| [Storage File Seen on Endpoint](../content/github-only-storage-file-seen-on-endpoint-c7f03700-8bbe-4838-9e78-4852ef21609b-4254e436.md) |  |
-| [User Account Linked to Storage Account File Upload](../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.md) |  |
 
 ### Workbooks (1)
 

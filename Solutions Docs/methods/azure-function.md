@@ -18,10 +18,10 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **129** |
+| Total Connectors | **131** |
 | Active | 87 |
 | Deprecated 🚫 | 18 |
-| Unpublished ⚠️ | 24 |
+| Unpublished ⚠️ | 26 |
 
 ## Connectors Using This Method
 
@@ -40,6 +40,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Armorblox](../connectors/armorblox.md) | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
 | [Atlassian Jira Audit](../connectors/jiraauditapi.md) | Atlassian | 2 | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Auth0 Access Management](../connectors/auth0.md) | Auth0 | 1 | [Auth0](../solutions/auth0.md) |
+| [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) ⚠️ | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [Bitglass](../connectors/bitglass.md) | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
 | [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | SpecterOps | 1 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
@@ -93,6 +94,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo WHOIS ORG Data Connector](../connectors/ipinfowhoisorgdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
+| [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) ⚠️ | Joe Security LLC | 1 | [JoeSandbox](../solutions/joesandbox.md) |
 | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) | Lookout | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
 | [Lumen Defender Threat Feed Data Connector](../connectors/lumenthreatfeedconnector.md) | Lumen Technologies, Inc. | 1 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [Luminar IOCs and Leaked Credentials](../connectors/cognyteluminar.md) | Cognyte Technologies Israel Ltd | 1 | [CognyteLuminar](../solutions/cognyteluminar.md) |

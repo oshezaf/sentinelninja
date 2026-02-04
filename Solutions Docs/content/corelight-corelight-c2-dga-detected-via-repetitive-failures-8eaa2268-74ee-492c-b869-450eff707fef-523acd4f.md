@@ -25,10 +25,10 @@ Detects large amounts of DNS resolution failures.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md) | — | — |
-| [`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Corelight_v2_dns_CL`](../tables/corelight-v2-dns-cl.md) | — | — | — |
+| [`Corelight_v2_dns_red_CL`](../tables/corelight-v2-dns-red-cl.md) | — | — | — |
 
 ---
 

@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) | — | ✗ | ✗ |
 
 ---
 

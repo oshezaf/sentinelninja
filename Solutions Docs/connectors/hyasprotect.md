@@ -22,9 +22,9 @@ HYAS Protect provide logs based on reputation values - Blocked, Malicious, Permi
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`HYASProtectDnsSecurityLogs_CL`](../tables/hyasprotectdnssecuritylogs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`HYASProtectDnsSecurityLogs_CL`](../tables/hyasprotectdnssecuritylogs-cl.md) | — | — | — |
 
 ## Permissions
 

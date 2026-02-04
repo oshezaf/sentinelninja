@@ -24,9 +24,9 @@ Detects when uncommon windows proccess is started from System folder.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — | — |
 
 ---
 

@@ -22,9 +22,9 @@ This query detects execution of files with one character in the name (e.g, a.exe
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) | `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Event`](../tables/event.md) | `EventID == "1"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | ✓ | ✗ | ✗ |
 
 ---
 

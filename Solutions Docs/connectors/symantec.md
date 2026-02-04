@@ -22,9 +22,9 @@ Symantec ICDx connector allows you to easily connect your Symantec security solu
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SymantecICDx_CL`](../tables/symantecicdx-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SymantecICDx_CL`](../tables/symantecicdx-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

@@ -30,9 +30,9 @@ The [Zscaler Private Access (ZPA)](https://help.zscaler.com/zpa/what-zscaler-pri
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ZPA_CL`](../tables/zpa-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ZPA_CL`](../tables/zpa-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

@@ -22,9 +22,9 @@ This rule creates Microsoft Sentinel Incidents based on Darktrace AI Analyst Inc
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) | — | ✗ | ✓ |
 
 ---
 

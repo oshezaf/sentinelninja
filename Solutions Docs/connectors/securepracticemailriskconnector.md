@@ -22,9 +22,9 @@ The MailRisk by Secure Practice connector allows you to ingest email threat inte
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MailRiskEventEmails_CL`](../tables/mailriskeventemails-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MailRiskEventEmails_CL`](../tables/mailriskeventemails-cl.md) | — | — | — |
 
 ## Permissions
 

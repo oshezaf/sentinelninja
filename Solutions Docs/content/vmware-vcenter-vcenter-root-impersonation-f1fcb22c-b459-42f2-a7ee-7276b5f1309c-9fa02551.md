@@ -25,9 +25,9 @@ Detects when root impersonation occurs.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`vcenter_CL`](../tables/vcenter-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`vcenter_CL`](../tables/vcenter-cl.md) | — | ✗ | ✓ |
 
 ---
 

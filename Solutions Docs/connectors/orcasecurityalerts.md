@@ -22,9 +22,9 @@ The Orca Security Alerts connector allows you to easily export Alerts logs to Mi
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

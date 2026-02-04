@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Salesforce sign in logs, stored in the  Sa
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | — | — | — |
 
 ## Parameters
 

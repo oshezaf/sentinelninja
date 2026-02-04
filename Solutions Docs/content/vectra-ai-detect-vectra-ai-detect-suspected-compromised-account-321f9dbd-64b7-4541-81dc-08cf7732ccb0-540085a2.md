@@ -25,9 +25,9 @@ Create an incident when an Account is suspected to be compromised.  The higher t
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "asc"`<br>`DeviceProduct == "X Series"`<br>`DeviceVendor == "Vectra Networks"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "asc"`<br>`DeviceProduct == "X Series"`<br>`DeviceVendor == "Vectra Networks"` | ✓ | ✓ | ✓ |
 
 ---
 

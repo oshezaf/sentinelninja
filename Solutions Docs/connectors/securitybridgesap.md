@@ -28,9 +28,9 @@ SecurityBridge is the first and only holistic, natively integrated security plat
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

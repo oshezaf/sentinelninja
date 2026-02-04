@@ -24,13 +24,13 @@ This query maps Lumen IP indicators of compromise (IOCs) from threat intelligenc
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | ✓ | ✗ |
-| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ |
-| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | ✓ | ✗ |
-| [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | ✓ | ✗ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | ✓ | ✗ | ✓ |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ | ✓ |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | ✓ | ✗ | ✓ |
+| [`ADFSSignInLogs`](../tables/adfssigninlogs.md) | ✓ | ✗ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
 
 ---
 

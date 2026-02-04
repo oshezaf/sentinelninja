@@ -23,10 +23,10 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | — | ✗ |
-| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | — | ✗ | ✓ |
+| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | — | — | — |
 
 ---
 

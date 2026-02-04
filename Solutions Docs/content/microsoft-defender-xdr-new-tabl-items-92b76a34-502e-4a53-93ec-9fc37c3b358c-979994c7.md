@@ -22,9 +22,9 @@ This query helps identifying when new items being added to the Tenant/Allow Bloc
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "New-TenantAllowBlockListItems"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "New-TenantAllowBlockListItems"` | ✓ | ✗ | ✓ |
 
 ---
 

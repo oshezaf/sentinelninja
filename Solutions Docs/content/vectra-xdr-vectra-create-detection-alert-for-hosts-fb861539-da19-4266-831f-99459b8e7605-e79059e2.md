@@ -25,9 +25,9 @@ This analytic rule is looking for new attacker behaviors observed by the Vectra 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | — | ✗ | ✓ |
 
 ---
 

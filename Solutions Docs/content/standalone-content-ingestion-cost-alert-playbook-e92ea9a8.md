@@ -18,9 +18,9 @@ This playbook sends you an e-mail or Microsoft Teams message alert if a user-def
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Usage`](../tables/usage.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Usage`](../tables/usage.md) | ✗ | ✗ | — |
 
 ---
 

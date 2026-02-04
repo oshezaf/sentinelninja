@@ -21,9 +21,9 @@ LemonDuck is a malware primarily known for its botnet and cryptocurrency mining 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ | ✓ |
 
 ---
 

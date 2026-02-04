@@ -22,9 +22,9 @@ Azure Service Bus is a fully managed enterprise message broker with message queu
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.SERVICEBUS"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.SERVICEBUS"` | — | ✗ | ✗ |
 
 ## Permissions
 

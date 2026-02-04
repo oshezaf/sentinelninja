@@ -25,9 +25,9 @@ Detected creation of new Datapipeline policy and usage of the attach policy oper
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | ✓ | ✓ | ✓ |
 
 ---
 

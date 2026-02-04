@@ -22,11 +22,11 @@ The Fortinet FortiNDR Cloud data connector provides the capability to ingest [Fo
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) | — | ✗ |
-| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) | — | ✗ |
-| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) | — | ✗ | ✗ |
+| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) | — | ✗ | ✗ |
+| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

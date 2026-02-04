@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`_Im_Dns`](../asim/imdns.md) | `EventProduct == "DNS Server"`<br>`EventVendor == "Microsoft"` | — | — |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`_Im_Dns`](../asim/imdns.md) | `EventProduct == "DNS Server"`<br>`EventVendor == "Microsoft"` | — | — | — |
 
 ---
 

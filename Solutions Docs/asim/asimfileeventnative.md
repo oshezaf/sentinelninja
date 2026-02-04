@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native File Event table (ASimFileEvent
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | ✓ | ✓ | — |
 
 ## Parameters
 

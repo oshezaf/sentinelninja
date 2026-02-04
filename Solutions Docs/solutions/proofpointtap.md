@@ -40,11 +40,10 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **9 table(s)**:
+This solution uses **8 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ProofPointData_CL`](../tables/proofpointdata-cl.md) | - | Playbooks (writes) |
 | [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md) | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Workbooks |
 | [`ProofPointTAPClicksBlocked_CL`](../tables/proofpointtapclicksblocked-cl.md) | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
 | [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Analytics, Workbooks |
@@ -56,12 +55,12 @@ This solution uses **9 table(s)**:
 
 ## Content Items
 
-This solution includes **7 content item(s)**:
+This solution includes **6 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Playbooks | 3 |
 | Analytic Rules | 2 |
+| Playbooks | 2 |
 | Workbooks | 1 |
 | Parsers | 1 |
 
@@ -83,7 +82,6 @@ This solution includes **7 content item(s)**:
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [ ProofpointTAP-CheckAccountInVAP](../content/proofpointtap-proofpointtap-checkaccountinvap-58ea7ed4.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
-| [Get-ProofpointTapEvents](../content/proofpointtap-get-proofpointtapevents-ac19b8c3.md) | This playbook ingests events from ProofPoint TAP to Log Analytics/MicroSoft Sentinel. | [`ProofPointData_CL`](../tables/proofpointdata-cl.md) *(write)* |
 | [ProofpointTAP-AddForensicsInfoToIncident](../content/proofpointtap-proofpointtap-addforensicsinfotoincident-f05bb435.md) | Once a new sentinel incident is created, this playbook gets triggered and performs the following act... | - |
 
 ### Parsers
@@ -96,6 +94,7 @@ This solution includes **7 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                           |
 |-------------|--------------------------------|--------------------------------------------------------------|
+| 3.1.2       | 22-01-2026                     | Removed **Playbook** GetProofpointTAPEvents for TAP connector. |
 | 3.1.1       | 03-11-2025                     | Update support url in **SolutionMetadata.json**.|  
 | 3.1.0       | 31-07-2025                     | Updated Support details and publisherId in **SolutionMetadata.json**, updated Author details and Logo in **Solution_ProofTap.json** from Microsoft to Proofpoint.|
 | 3.0.10      | 28-07-2025                     | Removed Deprecated **Data Connector**.							|  

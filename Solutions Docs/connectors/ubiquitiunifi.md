@@ -30,9 +30,9 @@ The [Ubiquiti UniFi](https://www.ui.com/) data connector provides the capability
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

@@ -32,22 +32,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (1)
 
-### Workbooks (3)
+### Workbooks (1)
 
 **In solution [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [M365SecurityPosture](../content/github-only-m365securityposture-c0d92b62.md) |  |
-| [MicrosoftCloudAppSecurity](../content/github-only-microsoftcloudappsecurity-2887ca06.md) |  |
 
 ---
 

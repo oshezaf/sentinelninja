@@ -27,9 +27,9 @@ Domain Infringement
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CBSLog_Azure_1_CL`](../tables/cbslog-azure-1-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CBSLog_Azure_1_CL`](../tables/cbslog-azure-1-cl.md) | — | ✗ | ✗ |
 
 ---
 

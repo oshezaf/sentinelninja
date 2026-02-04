@@ -25,9 +25,9 @@ This file is to parse the data from Contrast ADR platform
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ | ✗ |
 
 ---
 

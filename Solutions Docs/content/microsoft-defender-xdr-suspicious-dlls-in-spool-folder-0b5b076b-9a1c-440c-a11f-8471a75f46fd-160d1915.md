@@ -21,9 +21,9 @@ Look for the creation of suspicious DLL files spawned in the \spool\ folder alon
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType in "FileCreated,FileRenamed"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType in "FileCreated,FileRenamed"` | ✓ | ✗ | — |
 
 ---
 

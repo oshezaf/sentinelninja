@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
-| [`Usage`](../tables/usage.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
+| [`Usage`](../tables/usage.md) | ✗ | ✗ | — |
 
 ---
 

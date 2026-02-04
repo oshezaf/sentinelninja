@@ -25,9 +25,9 @@ Detect threat for mail attachment under the targeted threat protection.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -13,7 +13,7 @@
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 
-## Solutions (31)
+## Solutions (32)
 
 This table is used by the following solutions:
 
@@ -24,6 +24,7 @@ This table is used by the following solutions:
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
+- [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
@@ -60,7 +61,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (64)
+## Content Items Using This Table (45)
 
 ### Analytic Rules (2)
 
@@ -71,7 +72,7 @@ This table is ingested by the following connectors:
 | [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md) |  |
 | [Insider Risk_High User Security Incidents Correlation](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-incidents-correlation-28a75d10-9b75-4192-9863-e452c3ad24db-6bbae8c7.md) |  |
 
-### Workbooks (56)
+### Workbooks (37)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -114,6 +115,12 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) |  |
+
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 
@@ -248,31 +255,6 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
-| [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
-| [AnalyticsEfficiency](../content/github-only-analyticsefficiency-b881d5ae.md) |  |
-| [AnalyticsHealthAudit](../content/github-only-analyticshealthaudit-cb1c8682.md) |  |
-| [AnomaliesVisualization](../content/github-only-anomaliesvisualization-9d418617.md) |  |
-| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
-| [AzureKeyVaultWorkbook](../content/github-only-azurekeyvaultworkbook-81485e59.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [IncidentTasksWorkbook](../content/github-only-incidenttasksworkbook-b100c180.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
-| [SecurityOperationsEfficiency](../content/github-only-securityoperationsefficiency-84293023.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [Sentinel_Central](../content/github-only-sentinel-central-2a36f7ae.md) |  |
-| [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
-| [UserEntityBehaviorAnalytics](../content/github-only-userentitybehavioranalytics-2c986bb5.md) |  |
-| [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

@@ -24,9 +24,9 @@ This alert is designed to monitor assets within the Maturity Model for Event Log
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Heartbeat`](../tables/heartbeat.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Heartbeat`](../tables/heartbeat.md) | ✗ | ✗ | — |
 
 ---
 

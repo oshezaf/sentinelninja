@@ -18,9 +18,9 @@ author: Lior Tamir modifiedby: Nathan Swift
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AutoConnectASC_CL`](../tables/autoconnectasc-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AutoConnectASC_CL`](../tables/autoconnectasc-cl.md) | — | — | — |
 
 ---
 

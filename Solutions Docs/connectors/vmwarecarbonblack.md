@@ -16,17 +16,17 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [VMwareCarbonBlack_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlack_API_FunctionApp.json) |
 
-The [VMware Carbon Black Cloud](https://www.vmware.com/products/carbon-black-cloud.html) connector provides the capability to ingest Carbon Black data into Microsoft Sentinel. The connector provides visibility into Audit, Notification and Event logs in Microsoft Sentinel to view dashboards, create custom alerts, and to improve monitoring and investigation capabilities.
+The [VMware Carbon Black Cloud](https://www.broadcom.com/products/carbon-black/threat-prevention/carbon-black-cloud) connector provides the capability to ingest Carbon Black data into Microsoft Sentinel. The connector provides visibility into Audit, Notification and Event logs in Microsoft Sentinel to view dashboards, create custom alerts, and to improve monitoring and investigation capabilities.
 
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) | — | ✗ |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | — | ✗ |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) | — | ✗ | ✗ |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | — | ✗ | ✗ |
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

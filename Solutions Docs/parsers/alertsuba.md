@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`alertsubadata_CL`](../tables/alertsubadata-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`alertsubadata_CL`](../tables/alertsubadata-cl.md) | — | ✗ | ✗ |
 
 ---
 

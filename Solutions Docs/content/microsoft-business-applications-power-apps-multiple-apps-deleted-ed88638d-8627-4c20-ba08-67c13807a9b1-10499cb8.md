@@ -25,9 +25,9 @@ Identifies mass delete activity where multiple Power Apps are deleted, matching 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ | ✓ |
 
 ---
 

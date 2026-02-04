@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**532 workbooks** across all Microsoft Sentinel solutions.
+**537 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -112,6 +112,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [Barracuda](github-only-barracuda-84e65401.md) | 🔗 GitHub Only |
 | [BETTER_MTD_Workbook](better-mobile-threat-defense-mtd-better-mtd-workbook-e3655f79.md) | 📦 [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [BETTER_MTD_Workbook](github-only-better-mtd-workbook-59bbe47f.md) | 🔗 GitHub Only |
+| [BeyondTrustPMCloud](beyondtrustpmcloud-beyondtrustpmcloud-3d8fe28b.md) | 📦 [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [Bitglass](bitglass-bitglass-1a09746b.md) | 📦 [Bitglass](../solutions/bitglass.md) |
 | [BitSightWorkbook](bitsight-bitsightworkbook-85beb528.md) | 📦 [BitSight](../solutions/bitsight.md) |
 | [BitwardenEventLogsAuthentication](bitwarden-bitwardeneventlogsauthentication-7af40b22.md) | 📦 [Bitwarden](../solutions/bitwarden.md) |
@@ -163,7 +164,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [CofenseTriageThreatIndicators](cofensetriage-cofensetriagethreatindicators-b9ec5acc.md) | 📦 [CofenseTriage](../solutions/cofensetriage.md) |
 | [CognniIncidentsWorkbook](cognni-cognniincidentsworkbook-5343764a.md) | 📦 [Cognni](../solutions/cognni.md) |
 | [CognniIncidentsWorkbook](github-only-cognniincidentsworkbook-5f17cd01.md) | 🔗 GitHub Only |
-| [ConditionalAccessSISM](microsoft-entra-id-conditionalaccesssism-90abe712.md) ⚠️ | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+| [ConditionalAccessSISM](microsoft-entra-id-conditionalaccesssism-90abe712.md) | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [ConditionalAccessTrendsandChanges](github-only-conditionalaccesstrendsandchanges-114c89ab.md) | 🔗 GitHub Only |
 | [connect-module-connections](tanium-connect-module-connections-aa28580e.md) ⚠️ | 📦 [Tanium](../solutions/tanium.md) |
 | [ContinuousDiagnostics&Mitigation](continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) | 📦 [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md) |
@@ -180,6 +181,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [CopilotforSecurityMonitoring](github-only-copilotforsecuritymonitoring-b67b6028.md) | 🔗 GitHub Only |
 | [Corelight](corelight-corelight-90dad195.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Alert_Aggregations](corelight-corelight-alert-aggregations-f385ae6f.md) | 📦 [Corelight](../solutions/corelight.md) |
+| [Corelight_AWS_VPC_Flow](corelight-corelight-aws-vpc-flow-f89e8db1.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Data_Explorer](corelight-corelight-data-explorer-258d9f06.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Security_Workflow](corelight-corelight-security-workflow-7c756761.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Sensor_Overview](corelight-corelight-sensor-overview-71e61142.md) | 📦 [Corelight](../solutions/corelight.md) |
@@ -215,6 +217,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [DoDZeroTrustWorkbook](github-only-dodzerotrustworkbook-844294c8.md) | 🔗 GitHub Only |
 | [Doppel](doppel-doppel-0def4b82.md) | 📦 [Doppel](../solutions/doppel.md) |
 | [DORACompliance](dora-compliance-doracompliance-21bcc12f.md) | 📦 [DORA Compliance](../solutions/dora-compliance.md) |
+| [DPDPCompliance](dpdp-compliance-dpdpcompliance-18571e87.md) | 📦 [DPDP Compliance](../solutions/dpdp-compliance.md) |
 | [DSTIMWorkbook](github-only-dstimworkbook-062fa645.md) | 🔗 GitHub Only |
 | [DuoSecurity](github-only-duosecurity-51a3ff3a.md) | 🔗 GitHub Only |
 | [Dynamics365Activity](microsoft-business-applications-dynamics365activity-1015284f.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
@@ -567,6 +570,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 
 | Name | Source |
 |:-----|:-------|
+| [TacitRedSecOpsWorkbook](tacitredthreatintelligence-tacitredsecopsworkbook-52402f02.md) | 📦 [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md) |
 | [TalonInsights](talon-taloninsights-a46f557d.md) | 📦 [Talon](../solutions/talon.md) |
 | [TalonInsights](github-only-taloninsights-c91cfb4a.md) | 🔗 GitHub Only |
 | [TaniumWorkbook](tanium-taniumworkbook-97052723.md) | 📦 [Tanium](../solutions/tanium.md) |
@@ -596,6 +600,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | Name | Source |
 |:-----|:-------|
 | [Ubiquiti](ubiquiti-unifi-ubiquiti-d31b17b9.md) | 📦 [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md) |
+| [UEBABehaviorsAnalysisWorkbook](ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.md) | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [UnifiSG](github-only-unifisg-96910283.md) | 🔗 GitHub Only |
 | [UnifiSGNetflow](github-only-unifisgnetflow-8a035168.md) | 🔗 GitHub Only |
 | [UpdateSOCMaturityScore](soc-process-framework-updatesocmaturityscore-d96c410d.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |

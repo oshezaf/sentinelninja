@@ -22,9 +22,9 @@ The [Auth0 Access Management](https://auth0.com/access-management) data connecto
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Auth0AM_CL`](../tables/auth0am-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Auth0AM_CL`](../tables/auth0am-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

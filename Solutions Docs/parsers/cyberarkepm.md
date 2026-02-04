@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — | — |
 
 ---
 

@@ -18,10 +18,10 @@ This playbook looks for other alerts with the same IP as the triggered incident.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
 ## Additional Documentation
 

@@ -22,9 +22,9 @@ Detect the aftermath of a successfully delivered and executed maldoc (Microsoft 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
 
 ---
 

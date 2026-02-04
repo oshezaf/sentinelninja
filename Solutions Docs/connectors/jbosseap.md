@@ -30,9 +30,9 @@ The JBoss Enterprise Application Platform data connector provides the capability
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`JBossLogs_CL`](../tables/jbosslogs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`JBossLogs_CL`](../tables/jbosslogs-cl.md) | — | — | — |
 
 ## Permissions
 

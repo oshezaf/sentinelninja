@@ -24,9 +24,9 @@ This will alert you if a user deletes items in bulk, namely, more than 10 items 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | ✗ | ✓ |
 
 ---
 

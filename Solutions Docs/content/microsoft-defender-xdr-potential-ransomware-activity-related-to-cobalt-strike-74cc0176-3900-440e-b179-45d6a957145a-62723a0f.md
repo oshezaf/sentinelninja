@@ -21,9 +21,9 @@ This query searches for alerts related to suspected ransomware and Cobalt Strike
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ | — |
 
 ---
 

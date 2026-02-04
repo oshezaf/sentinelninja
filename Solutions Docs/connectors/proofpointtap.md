@@ -26,12 +26,12 @@ The [Proofpoint Targeted Attack Protection (TAP)](https://www.proofpoint.com/us/
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ProofPointTAPClicksBlocked_CL`](../tables/proofpointtapclicksblocked-cl.md) | — | — |
-| [`ProofPointTAPClicksPermitted_CL`](../tables/proofpointtapclickspermitted-cl.md) | — | — |
-| [`ProofPointTAPMessagesBlocked_CL`](../tables/proofpointtapmessagesblocked-cl.md) | — | — |
-| [`ProofPointTAPMessagesDelivered_CL`](../tables/proofpointtapmessagesdelivered-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ProofPointTAPClicksBlocked_CL`](../tables/proofpointtapclicksblocked-cl.md) | — | — | — |
+| [`ProofPointTAPClicksPermitted_CL`](../tables/proofpointtapclickspermitted-cl.md) | — | — | — |
+| [`ProofPointTAPMessagesBlocked_CL`](../tables/proofpointtapmessagesblocked-cl.md) | — | — | — |
+| [`ProofPointTAPMessagesDelivered_CL`](../tables/proofpointtapmessagesdelivered-cl.md) | — | — | — |
 
 ## Permissions
 

@@ -23,9 +23,9 @@ Valence Security Alerts
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ValenceAlert_CL`](../tables/valencealert-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ValenceAlert_CL`](../tables/valencealert-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -22,9 +22,9 @@ This query will check for data that is shared in the LastPass environment.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | ✗ | ✗ |
 
 ---
 

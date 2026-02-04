@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | — | ✗ | ✓ |
 
 ---
 

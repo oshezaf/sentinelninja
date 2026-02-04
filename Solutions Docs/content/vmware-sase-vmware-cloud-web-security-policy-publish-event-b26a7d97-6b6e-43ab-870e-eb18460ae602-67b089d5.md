@@ -22,9 +22,9 @@ This alert is capturing events when VMware CWS policies were published. During p
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) | — | — | — |
 
 ---
 

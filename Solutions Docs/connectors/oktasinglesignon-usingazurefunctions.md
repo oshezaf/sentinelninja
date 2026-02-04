@@ -24,10 +24,10 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on/) c
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — |
-| [`Okta_CL`](../tables/okta-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — | — |
+| [`Okta_CL`](../tables/okta-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

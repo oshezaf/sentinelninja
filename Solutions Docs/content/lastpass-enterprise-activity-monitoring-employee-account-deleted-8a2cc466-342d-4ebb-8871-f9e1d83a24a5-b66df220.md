@@ -25,9 +25,9 @@ This rule will monitor for any employee accounts being deleted. Deleting an empl
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | ✗ | ✗ |
 
 ---
 

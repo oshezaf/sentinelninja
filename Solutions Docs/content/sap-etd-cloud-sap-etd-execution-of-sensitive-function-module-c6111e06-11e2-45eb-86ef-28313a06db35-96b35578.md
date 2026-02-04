@@ -24,9 +24,9 @@ Identifies execution of a sensitive ABAP Function Module using the watchlists pr
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | — | ✗ | ✓ |
 
 ---
 

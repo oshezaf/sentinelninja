@@ -25,9 +25,9 @@ Identifies if any tampering is done to either auditlog, ATP Safelink, SafeAttach
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "ExchangeAdmin"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "ExchangeAdmin"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -25,9 +25,9 @@ Triggers when monitored domain DNS records change (A, NS, MX, TXT, SOA). DNS rec
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -22,9 +22,9 @@ The Talon Security Logs connector allows you to easily connect your Talon events
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Talon_CL`](../tables/talon-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Talon_CL`](../tables/talon-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

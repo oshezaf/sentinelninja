@@ -23,9 +23,9 @@ This query detects the default service name created by KrbRelayUp. KrbRelayUp is
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) | `EventID == "7045"`<br>`Source == "Service Control Manager"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Event`](../tables/event.md) | `EventID == "7045"`<br>`Source == "Service Control Manager"` | ✓ | ✗ | ✗ |
 
 ---
 

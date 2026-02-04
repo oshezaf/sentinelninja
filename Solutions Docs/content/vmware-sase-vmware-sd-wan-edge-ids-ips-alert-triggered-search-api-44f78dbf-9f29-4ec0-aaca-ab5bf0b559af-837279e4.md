@@ -24,9 +24,9 @@ The VMware SD-WAN Edge appliance captured a potentially malicious traffic flow. 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VMware_SDWAN_FirewallLogs_CL`](../tables/vmware-sdwan-firewalllogs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VMware_SDWAN_FirewallLogs_CL`](../tables/vmware-sdwan-firewalllogs-cl.md) | — | — | — |
 
 ---
 

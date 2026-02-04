@@ -22,9 +22,9 @@ Integrating NordPass with Microsoft Sentinel SIEM via the API will allow you to 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

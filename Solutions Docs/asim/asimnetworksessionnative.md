@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the native Microsoft Sentinel Network Sess
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | `EventType in "EndpointNetworkSession,L2NetworkSession"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | `EventType in "EndpointNetworkSession,L2NetworkSession"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

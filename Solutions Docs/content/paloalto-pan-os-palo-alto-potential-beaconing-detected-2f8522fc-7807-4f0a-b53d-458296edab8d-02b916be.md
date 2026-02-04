@@ -24,10 +24,10 @@ Identifies beaconing patterns from PAN traffic logs based on recurrent timedelta
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
-| [`fluentbit_CL`](../tables/fluentbit-cl.md) |  | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ✓ |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) |  | — | ✗ | ✓ |
 
 ---
 

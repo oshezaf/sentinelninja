@@ -22,9 +22,9 @@ The Digital Shadows data connector provides ingestion of the incidents and alert
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

@@ -23,9 +23,9 @@ Several enumeration API calls were executed by the same identity. This could be 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName startswith "Describe"`<br>`EventName startswith "Get"`<br>`EventName startswith "List"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName startswith "Describe"`<br>`EventName startswith "Get"`<br>`EventName startswith "List"` | ✓ | ✓ | ✓ |
 
 ---
 

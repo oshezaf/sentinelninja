@@ -28,11 +28,11 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
-| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ✓ |
 
 ---
 

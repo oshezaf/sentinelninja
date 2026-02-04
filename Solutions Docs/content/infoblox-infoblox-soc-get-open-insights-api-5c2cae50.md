@@ -18,9 +18,9 @@ Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights a
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) | — | ✗ | ✗ |
 
 ## Additional Documentation
 

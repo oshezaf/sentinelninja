@@ -22,9 +22,9 @@ The [LastPass Enterprise](https://www.lastpass.com/products/enterprise-password-
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

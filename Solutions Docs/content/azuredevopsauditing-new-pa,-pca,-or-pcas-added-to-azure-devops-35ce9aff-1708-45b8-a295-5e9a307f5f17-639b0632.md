@@ -24,10 +24,10 @@ In order for an attacker to be able to conduct many potential attacks against Az
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | ✗ |
-| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | ✗ | ✓ |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ | — |
 
 ---
 

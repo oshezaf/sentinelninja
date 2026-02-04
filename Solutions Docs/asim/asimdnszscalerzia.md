@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Zscaler ZIA DNS logs to the ASIM Dns norma
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "NSSDNSlog"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "NSSDNSlog"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

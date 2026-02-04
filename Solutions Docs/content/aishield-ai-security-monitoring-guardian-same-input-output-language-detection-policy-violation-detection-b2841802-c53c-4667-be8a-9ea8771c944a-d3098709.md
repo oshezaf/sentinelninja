@@ -23,9 +23,9 @@ This alert creates an incident when Same Input/Output Language Detection Policy 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Guardian_CL`](../tables/guardian-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Guardian_CL`](../tables/guardian-cl.md) | — | — | — |
 
 ---
 

@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`fluentbit_CL`](../tables/fluentbit-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) | — | ✗ | ✓ |
 
 ---
 

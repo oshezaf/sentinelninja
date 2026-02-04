@@ -24,9 +24,9 @@ The VMware SD-WAN Edge appliance received packets potentially part of an IP Frag
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "VCF Drop"`<br>`SyslogMessage contains "packet too big"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "VCF Drop"`<br>`SyslogMessage contains "packet too big"` | ✓ | ✓ | ✓ |
 
 ---
 

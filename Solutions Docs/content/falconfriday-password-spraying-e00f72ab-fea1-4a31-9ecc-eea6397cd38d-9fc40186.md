@@ -25,9 +25,9 @@ This query detects a password spraying attack, where a single machine has perfor
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ | — |
 
 ---
 

@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) | — | ✗ | ✗ |
 
 ---
 

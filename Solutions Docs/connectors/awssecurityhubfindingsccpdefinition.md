@@ -26,9 +26,9 @@ This connector enables the ingestion of AWS Security Hub Findings, which are col
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

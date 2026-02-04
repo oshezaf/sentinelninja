@@ -25,9 +25,9 @@ This detection identifies when an external user is added to a Team or Teams chat
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` | ✓ | ✗ | ✓ |
 
 ---
 

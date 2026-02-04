@@ -23,9 +23,9 @@ Identifies a set of Azure NSG administrative and operational detection queries f
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
 
 ---
 

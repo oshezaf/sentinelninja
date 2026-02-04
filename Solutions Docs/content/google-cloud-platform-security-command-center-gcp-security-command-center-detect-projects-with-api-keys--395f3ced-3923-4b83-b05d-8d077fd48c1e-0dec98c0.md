@@ -25,9 +25,9 @@ Detects Google Cloud projects that have API Keys present using Security Command 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ | ✓ |
 
 ---
 

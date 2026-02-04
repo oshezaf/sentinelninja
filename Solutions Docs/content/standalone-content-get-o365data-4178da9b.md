@@ -18,9 +18,9 @@ Author: Pete Bryan
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`O365API_CL`](../tables/o365api-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`O365API_CL`](../tables/o365api-cl.md) | — | — | — |
 
 ---
 

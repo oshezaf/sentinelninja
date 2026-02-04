@@ -24,9 +24,9 @@ The [Slack](https://slack.com) data connector provides the capability to ingest 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | — | — | — |
 
 ## Permissions
 

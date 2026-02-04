@@ -25,9 +25,9 @@ Creates an incident when a Symantec Endpoint Proection agent detects excessive a
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "SymantecServer"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "SymantecServer"` | ✓ | ✓ | ✓ |
 
 ---
 

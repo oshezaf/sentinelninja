@@ -25,9 +25,9 @@ This query detects AWS accounts where the root user does not have multi-factor a
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✗ | ✓ |
 
 ---
 

@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "correlation,vulnerability,wildfire"`<br>`DeviceEventClassID != "file"`<br>`DeviceEventClassID != "url"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "correlation,vulnerability,wildfire"`<br>`DeviceEventClassID != "file"`<br>`DeviceEventClassID != "url"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ✓ |
 
 ---
 

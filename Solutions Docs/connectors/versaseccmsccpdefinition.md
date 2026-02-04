@@ -1,8 +1,6 @@
-# ⚠️ VersasecCms
+# VersasecCms
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
-
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Logos/versasec-logo.svg" alt="" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/versasec-logo.svg" alt="" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -24,10 +22,10 @@ The VersasecCms data connector allows ingesting logs into Microsoft Sentinel.
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VersasecCmsErrorLogs_CL`](../tables/versaseccmserrorlogs-cl.md) | — | — |
-| [`VersasecCmsSysLogs_CL`](../tables/versaseccmssyslogs-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VersasecCmsErrorLogs_CL`](../tables/versaseccmserrorlogs-cl.md) | — | — | — |
+| [`VersasecCmsSysLogs_CL`](../tables/versaseccmssyslogs-cl.md) | — | — | — |
 
 ## Permissions
 

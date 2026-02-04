@@ -18,9 +18,9 @@ This playbook will check your ReversingLabs TitaniumCloud API quota and provide 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md) | — | — | — |
 
 ## Additional Documentation
 

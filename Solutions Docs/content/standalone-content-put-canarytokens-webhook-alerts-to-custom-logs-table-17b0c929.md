@@ -18,9 +18,9 @@ This Logic App connector will act as a Webhook listener, CanaryTokens can then s
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CanaryTokens_CL`](../tables/canarytokens-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CanaryTokens_CL`](../tables/canarytokens-cl.md) | — | — | — |
 
 ---
 

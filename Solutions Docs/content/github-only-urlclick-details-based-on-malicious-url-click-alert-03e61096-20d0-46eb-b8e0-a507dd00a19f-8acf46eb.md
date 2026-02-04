@@ -22,10 +22,10 @@ In this query, we are looking for Url clicks on emails which are generated the a
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ |
-| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AlertEvidence`](../tables/alertevidence.md) | ✓ | ✗ | ✓ |
+| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ | — |
 
 ---
 

@@ -26,9 +26,9 @@ With this solution, you can empower your SOC to leverage Morphisec's powerful th
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | — | — | — |
 
 ## Permissions
 

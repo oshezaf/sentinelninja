@@ -22,9 +22,9 @@ This connector uses the Netclean Webhook (required) and Logic Apps to push data 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) | — | — | — |
 
 ## Permissions
 

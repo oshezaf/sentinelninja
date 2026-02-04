@@ -17,12 +17,11 @@ Reference for AZFWDnsQuery table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwdnsquery) |
 
-## Solutions (3)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [Azure Firewall](../solutions/azure-firewall.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
@@ -35,16 +34,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
-
-### Analytic Rules (2)
-
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Known Forest Blizzard group domains - July 2019](../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.md) |  |
-| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
+## Content Items Using This Table (2)
 
 ### Workbooks (2)
 

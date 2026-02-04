@@ -18,9 +18,9 @@ This playbook will take each File Hash entity and query VirusTotal for file repo
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VTFileReport_CL`](../tables/vtfilereport-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VTFileReport_CL`](../tables/vtfilereport-cl.md) | — | — | — |
 
 ---
 

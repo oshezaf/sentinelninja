@@ -22,9 +22,9 @@
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Firework_CL`](../tables/firework-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Firework_CL`](../tables/firework-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) | — | ✗ | ✗ |
 
 ---
 

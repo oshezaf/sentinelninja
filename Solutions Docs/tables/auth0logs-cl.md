@@ -27,16 +27,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Auth0Workbook](../content/github-only-auth0workbook-07316f43.md) |  |
-
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)

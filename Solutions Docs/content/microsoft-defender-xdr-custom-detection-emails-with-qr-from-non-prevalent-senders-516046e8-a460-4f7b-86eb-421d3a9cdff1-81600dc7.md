@@ -22,10 +22,10 @@ In this detection, we check the sender prevalence over the last 14 days and use 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ |
-| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ | — |
 
 ---
 

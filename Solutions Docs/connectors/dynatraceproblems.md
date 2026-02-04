@@ -22,9 +22,9 @@ This connector uses the [Dynatrace Problem REST API](https://docs.dynatrace.com/
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

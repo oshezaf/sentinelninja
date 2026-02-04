@@ -24,11 +24,11 @@ Identifies a match in SecurityEvent table from any Email IOC from TI
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
-| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
+| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ✓ |
 
 ---
 

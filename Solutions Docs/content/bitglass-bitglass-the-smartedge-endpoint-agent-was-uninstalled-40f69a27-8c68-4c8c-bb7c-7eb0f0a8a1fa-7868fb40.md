@@ -25,9 +25,9 @@ Detects when SmartEdge endpoint agent was uninstalled.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) | — | ✗ | ✗ |
 
 ---
 

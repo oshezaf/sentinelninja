@@ -103,7 +103,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimWebSessionApacheHTTPServer](asimwebsessionapachehttpserver.md)<br>vim: [vimWebSessionApacheHTTPServer](vimwebsessionapachehttpserver.md) | WebSession | [ApacheHTTPServer_CL](../tables/apachehttpserver-cl.md) | 0.1 |
+| ASim: [ASimWebSessionApacheHTTPServer](asimwebsessionapachehttpserver.md)<br>vim: [vimWebSessionApacheHTTPServer](vimwebsessionapachehttpserver.md) | WebSession | [ApacheHTTPServer_CL](../tables/apachehttpserver-cl.md) | 0.1.0 |
 
 ## AppGate SDP
 
@@ -115,7 +115,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimNetworkSessionAppGateSDP](asimnetworksessionappgatesdp.md)<br>vim: [vimNetworkSessionAppGateSDP](vimnetworksessionappgatesdp.md) | NetworkSession | [Syslog](../tables/syslog.md) | 0.2 |
+| ASim: [ASimNetworkSessionAppGateSDP](asimnetworksessionappgatesdp.md)<br>vim: [vimNetworkSessionAppGateSDP](vimnetworksessionappgatesdp.md) | NetworkSession | [Syslog](../tables/syslog.md) | 0.2.0 |
 
 ## AWS
 
@@ -127,7 +127,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationAWSCloudTrail](asimauthenticationawscloudtrail.md)<br>vim: [vimAuthenticationAWSCloudTrail](vimauthenticationawscloudtrail.md) | Authentication | [AWSCloudTrail](../tables/awscloudtrail.md) | 0.2.1 |
+| ASim: [ASimAuthenticationAWSCloudTrail](asimauthenticationawscloudtrail.md)<br>vim: [vimAuthenticationAWSCloudTrail](vimauthenticationawscloudtrail.md) | Authentication | [AWSCloudTrail](../tables/awscloudtrail.md) | 0.2.2 |
 
 ## AWS VPC
 
@@ -177,7 +177,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimNetworkSessionNTANetAnalytics](asimnetworksessionntanetanalytics.md)<br>vim: [vimNetworkSessionNTANetAnalytics](vimnetworksessionntanetanalytics.md) | NetworkSession | [NTANetAnalytics](../tables/ntanetanalytics.md) | 0.1.0 |
+| ASim: [ASimNetworkSessionNTANetAnalytics](asimnetworksessionntanetanalytics.md)<br>vim: [vimNetworkSessionNTANetAnalytics](vimnetworksessionntanetanalytics.md) | NetworkSession | [NTANetAnalytics](../tables/ntanetanalytics.md) | 0.1.1 |
 
 ## Barracuda WAF
 
@@ -191,7 +191,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimAuditEventBarracudaCEF](asimauditeventbarracudacef.md)<br>vim: [vimAuditEventBarracudaCEF](vimauditeventbarracudacef.md) | AuditEvent | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.2.1 |
 | ASim: [ASimAuditEventBarracudaWAF](asimauditeventbarracudawaf.md)<br>vim: [vimAuditEventBarracudaWAF](vimauditeventbarracudawaf.md) | AuditEvent | [barracuda_CL](../tables/barracuda-cl.md) | 0.2.1 |
-| ASim: [ASimAuthenticationBarracudaWAF](asimauthenticationbarracudawaf.md)<br>vim: [vimAuthenticationBarracudaWAF](vimauthenticationbarracudawaf.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md), [barracuda_CL](../tables/barracuda-cl.md) | 0.1 |
+| ASim: [ASimAuthenticationBarracudaWAF](asimauthenticationbarracudawaf.md)<br>vim: [vimAuthenticationBarracudaWAF](vimauthenticationbarracudawaf.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md), [barracuda_CL](../tables/barracuda-cl.md) | 0.1.0 |
 | ASim: [ASimNetworkSessionBarracudaCEF](asimnetworksessionbarracudacef.md)<br>vim: [vimNetworkSessionBarracudaCEF](vimnetworksessionbarracudacef.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.2.1 |
 | ASim: [ASimNetworkSessionBarracudaWAF](asimnetworksessionbarracudawaf.md)<br>vim: [vimNetworkSessionBarracudaWAF](vimnetworksessionbarracudawaf.md) | NetworkSession | [barracuda_CL](../tables/barracuda-cl.md) | 0.2.1 |
 | ASim: [ASimWebSessionBarracudaCEF](asimwebsessionbarracudacef.md)<br>vim: [vimWebSessionBarracudaCEF](vimwebsessionbarracudacef.md) | WebSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.2.1 |
@@ -244,7 +244,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuditEventCiscoISE](asimauditeventciscoise.md)<br>vim: [vimAuditEventCiscoISE](vimauditeventciscoise.md) | AuditEvent | [Syslog](../tables/syslog.md) | 0.1 |
+| ASim: [ASimAuditEventCiscoISE](asimauditeventciscoise.md)<br>vim: [vimAuditEventCiscoISE](vimauditeventciscoise.md) | AuditEvent | [Syslog](../tables/syslog.md) | 0.1.0 |
 | ASim: [ASimAuthenticationCiscoISE](asimauthenticationciscoise.md)<br>vim: [vimAuthenticationCiscoISE](vimauthenticationciscoise.md) | Authentication | [Syslog](../tables/syslog.md) | 0.1.0 |
 | ASim: [ASimNetworkSessionCiscoISE](asimnetworksessionciscoise.md)<br>vim: [vimNetworkSessionCiscoISE](vimnetworksessionciscoise.md) | NetworkSession | [Syslog](../tables/syslog.md) | 1.1.0 |
 | ASim: [ASimUserManagementCiscoISE](asimusermanagementciscoise.md)<br>vim: [vimUserManagementCiscoISE](vimusermanagementciscoise.md) | UserManagement | [Syslog](../tables/syslog.md) | 0.1.2 |
@@ -313,7 +313,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimDnsCorelightZeek](asimdnscorelightzeek.md)<br>vim: [vimDnsCorelightZeek](vimdnscorelightzeek.md) | Dns | [Corelight_CL](../tables/corelight-cl.md) | 0.5 |
+| ASim: [ASimDnsCorelightZeek](asimdnscorelightzeek.md)<br>vim: [vimDnsCorelightZeek](vimdnscorelightzeek.md) | Dns | [Corelight_CL](../tables/corelight-cl.md) | 0.5.0 |
 | ASim: [ASimNetworkSessionCorelightZeek](asimnetworksessioncorelightzeek.md)<br>vim: [vimNetworkSessionCorelightZeek](vimnetworksessioncorelightzeek.md) | NetworkSession | [Corelight_CL](../tables/corelight-cl.md) | 0.2 |
 
 ## CrowdStrike Falcon Endpoint Protection
@@ -327,7 +327,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimAuditEventCrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md)<br>vim: [vimAuditEventCrowdStrikeFalconHost](vimauditeventcrowdstrikefalconhost.md) | AuditEvent | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
-| ASim: [ASimAuthenticationCrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md)<br>vim: [vimAuthenticationCrowdStrikeFalconHost](vimauthenticationcrowdstrikefalconhost.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
+| ASim: [ASimAuthenticationCrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md)<br>vim: [vimAuthenticationCrowdStrikeFalconHost](vimauthenticationcrowdstrikefalconhost.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.2.0 |
 | ASim: [ASimNetworkSessionCrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md)<br>vim: [vimNetworkSessionCrowdStrikeFalconHost](vimnetworksessioncrowdstrikefalconhost.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
 
 ## F5 BIG-IP Application Security Manager (ASM)
@@ -477,7 +477,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationM365Defender](asimauthenticationm365defender.md)<br>vim: [vimAuthenticationM365Defender](vimauthenticationm365defender.md) | Authentication | [DeviceLogonEvents](../tables/devicelogonevents.md) | 0.1.3 |
+| ASim: [ASimAuthenticationM365Defender](asimauthenticationm365defender.md)<br>vim: [vimAuthenticationM365Defender](vimauthenticationm365defender.md) | Authentication | [DeviceLogonEvents](../tables/devicelogonevents.md) | 0.2.0 |
 
 ## M365 Defender for Endpoint
 
@@ -549,7 +549,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuditEventAzureActivity](asimauditeventazureactivity.md)<br>vim: [vimAuditEventAzureActivity](vimauditeventazureactivity.md) | AuditEvent | [AzureActivity](../tables/azureactivity.md) | 0.2 |
+| ASim: [ASimAuditEventAzureActivity](asimauditeventazureactivity.md)<br>vim: [vimAuditEventAzureActivity](vimauditeventazureactivity.md) | AuditEvent | [AzureActivity](../tables/azureactivity.md) | 0.3.0 |
 
 ## Microsoft Azure Blob Storage
 
@@ -803,7 +803,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationSshd](asimauthenticationsshd.md)<br>vim: [vimAuthenticationSshd](vimauthenticationsshd.md) | Authentication | [Syslog](../tables/syslog.md) | 0.2.4 |
+| ASim: [ASimAuthenticationSshd](asimauthenticationsshd.md)<br>vim: [vimAuthenticationSshd](vimauthenticationsshd.md) | Authentication | [Syslog](../tables/syslog.md) | 0.3.1 |
 
 ## Palo Alto Cortex Data Lake
 
@@ -815,7 +815,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationPaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md)<br>vim: [vimAuthenticationPaloAltoCortexDataLake](vimauthenticationpaloaltocortexdatalake.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
+| ASim: [ASimAuthenticationPaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md)<br>vim: [vimAuthenticationPaloAltoCortexDataLake](vimauthenticationpaloaltocortexdatalake.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.2.0 |
 | ASim: [ASimNetworkSessionPaloAltoCortexDataLake](asimnetworksessionpaloaltocortexdatalake.md)<br>vim: [vimNetworkSessionPaloAltoCortexDataLake](vimnetworksessionpaloaltocortexdatalake.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.1 |
 | ASim: [ASimWebSessionPaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md)<br>vim: [vimWebSessionPaloAltoCortexDataLake](vimwebsessionpaloaltocortexdatalake.md) | WebSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.1 |
 
@@ -878,7 +878,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimProcessCreateMicrosoftSecurityEvents](asimprocesscreatemicrosoftsecurityevents.md)<br>vim: [vimProcessCreateMicrosoftSecurityEvents](vimprocesscreatemicrosoftsecurityevents.md) | ProcessEvent | [SecurityEvent](../tables/securityevent.md) | 0.1.1 |
-| ASim: [ASimProcessCreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md)<br>vim: [vimProcessCreateMicrosoftWindowsEvents](vimprocesscreatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.3 |
+| ASim: [ASimProcessCreateMicrosoftWindowsEvents](asimprocesscreatemicrosoftwindowsevents.md)<br>vim: [vimProcessCreateMicrosoftWindowsEvents](vimprocesscreatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.3.0 |
 | ASim: [ASimProcessTerminateMicrosoftSecurityEvents](asimprocessterminatemicrosoftsecurityevents.md)<br>vim: [vimProcessTerminateMicrosoftSecurityEvents](vimprocessterminatemicrosoftsecurityevents.md) | ProcessEvent | [SecurityEvent](../tables/securityevent.md) | 0.2 |
 | ASim: [ASimProcessTerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md)<br>vim: [vimProcessTerminateMicrosoftWindowsEvents](vimprocessterminatemicrosoftwindowsevents.md) | ProcessEvent | [WindowsEvent](../tables/windowsevent.md) | 0.2 |
 | ASim: [ASimRegistryEventMicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md)<br>vim: [vimRegistryEventMicrosoftSecurityEvent](vimregistryeventmicrosoftsecurityevent.md) | RegistryEvent | [ASIM_GetAccountType](../tables/asim-getaccounttype.md), [ASIM_ParseSecurityEvents](../tables/asim-parsesecurityevents.md), [SecurityEvent](../tables/securityevent.md) | 0.3.1 |
@@ -939,7 +939,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationSu](asimauthenticationsu.md)<br>vim: [vimAuthenticationSu](vimauthenticationsu.md) | Authentication | [Syslog](../tables/syslog.md) | 0.2.1 |
+| ASim: [ASimAuthenticationSu](asimauthenticationsu.md)<br>vim: [vimAuthenticationSu](vimauthenticationsu.md) | Authentication | [Syslog](../tables/syslog.md) | 0.3.0 |
 
 ## sudo
 
@@ -951,7 +951,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationSudo](asimauthenticationsudo.md)<br>vim: [vimAuthenticationSudo](vimauthenticationsudo.md) | Authentication | [Syslog](../tables/syslog.md) | 0.1.2 |
+| ASim: [ASimAuthenticationSudo](asimauthenticationsudo.md)<br>vim: [vimAuthenticationSudo](vimauthenticationsudo.md) | Authentication | [Syslog](../tables/syslog.md) | 0.2.0 |
 
 ## Sysmon
 

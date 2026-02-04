@@ -23,9 +23,9 @@ Synch alerts coming in from SAP Enterprise Threat Detection into Microsoft Senti
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | — | ✗ | ✓ |
 
 ---
 

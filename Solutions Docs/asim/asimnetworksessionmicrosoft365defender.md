@@ -29,9 +29,9 @@ This ASIM parser supports normalizing M365 Defender for Endpoint to the ASIM Net
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "ConnectionFailed"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "ConnectionFailed"` | ✓ | ✗ | — |
 
 ## Parameters
 

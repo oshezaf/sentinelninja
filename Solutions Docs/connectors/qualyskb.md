@@ -26,9 +26,9 @@ The [Qualys Vulnerability Management (VM)](https://www.qualys.com/apps/vulnerabi
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`QualysKB_CL`](../tables/qualyskb-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`QualysKB_CL`](../tables/qualyskb-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

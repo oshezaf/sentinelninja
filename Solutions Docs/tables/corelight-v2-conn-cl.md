@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (8)
 
 ### Analytic Rules (2)
 
@@ -41,13 +41,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Corelight - External Facing Services](../content/corelight-corelight-external-facing-services-3e42a796-9a4c-4ebf-a0e0-5282947986b5-c93e035f.md) |  |
 
-### Workbooks (4)
+### Workbooks (5)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight](../content/corelight-corelight-90dad195.md) |  |
+| [Corelight_AWS_VPC_Flow](../content/corelight-corelight-aws-vpc-flow-f89e8db1.md) |  |
 | [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |
 | [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
 | [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |

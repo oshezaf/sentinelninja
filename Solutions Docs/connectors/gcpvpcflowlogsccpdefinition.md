@@ -22,9 +22,9 @@ The Google Cloud Platform (GCP) VPC Flow Logs enable you to capture network traf
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCPVPCFlow`](../tables/gcpvpcflow.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCPVPCFlow`](../tables/gcpvpcflow.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

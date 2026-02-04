@@ -25,9 +25,9 @@ Checks if Sonrai tickets have had their risk accepted.  It uses the action type 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) | — | ✗ | ✗ |
 
 ---
 

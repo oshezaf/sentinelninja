@@ -25,9 +25,9 @@ Detects Unauthorized Logins into Eaton Foreseer
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625,4634,4647,4648,4675"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625,4634,4647,4648,4675"` | ✓ | ✓ | ✓ |
 
 ---
 

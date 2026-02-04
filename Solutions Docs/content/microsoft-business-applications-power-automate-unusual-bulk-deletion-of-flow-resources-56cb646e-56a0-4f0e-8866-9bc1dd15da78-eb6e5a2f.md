@@ -25,9 +25,9 @@ Identifies bulk deletion of Power Automate flows that exceed a predefined thresh
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | ✓ | ✗ | ✓ |
 
 ---
 

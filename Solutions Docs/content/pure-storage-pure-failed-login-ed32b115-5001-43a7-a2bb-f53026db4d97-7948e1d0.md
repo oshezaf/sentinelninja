@@ -23,9 +23,9 @@ Detect failed login attacks and delete user
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "invalid username or password"`<br>`SyslogMessage has "purity.alert"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "invalid username or password"`<br>`SyslogMessage has "purity.alert"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -22,9 +22,9 @@ Azure Data Lake Storage Gen1 is an enterprise-wide hyper-scale repository for bi
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | — | ✗ | ✗ |
 
 ## Permissions
 

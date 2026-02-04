@@ -24,9 +24,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "sshd"`<br>`SyslogMessage contains "Failed password for invalid user"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "sshd"`<br>`SyslogMessage contains "Failed password for invalid user"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -23,10 +23,10 @@ Find users who gained access to the largest number of target assets in the selec
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | — | ✗ |
-| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | — | ✗ | ✗ |
+| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) | — | — | — |
 
 ---
 

@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceProduct == "NSSFWlog"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceProduct == "NSSFWlog"` | ✓ | ✓ | ✓ |
 
 ---
 

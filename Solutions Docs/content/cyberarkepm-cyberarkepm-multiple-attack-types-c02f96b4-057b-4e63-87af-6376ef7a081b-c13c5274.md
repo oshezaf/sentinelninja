@@ -24,9 +24,9 @@ This rule triggers on multiple attack attemts triggered by same user.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) | — | — | — |
 
 ---
 

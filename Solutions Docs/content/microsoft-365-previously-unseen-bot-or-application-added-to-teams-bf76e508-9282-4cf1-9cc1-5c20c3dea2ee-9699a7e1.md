@@ -22,9 +22,9 @@ This hunting query helps identify new, and potentially unapproved applications o
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"` | ✓ | ✗ | ✓ |
 
 ---
 

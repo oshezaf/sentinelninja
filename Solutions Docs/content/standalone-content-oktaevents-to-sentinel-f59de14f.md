@@ -18,9 +18,9 @@ Author: Yaniv Shasha
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Okta_Events_CL`](../tables/okta-events-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Okta_Events_CL`](../tables/okta-events-cl.md) | — | — | — |
 
 ---
 

@@ -25,9 +25,9 @@ Detects when SMB traffic crosses Production and Non-Production Realms. Possible 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "AC"`<br>`DeviceVendor == "vArmour"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "AC"`<br>`DeviceVendor == "vArmour"` | ✓ | ✓ | ✓ |
 
 ---
 

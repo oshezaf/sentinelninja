@@ -14,7 +14,7 @@ This hunting query looks for users conducting Dataverse/Dynamics 365 activity sh
 | **Solution** | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | **ID** | `dafcc598-2987-4aa0-947e-7d0449677689` |
 | **Tactics** | InitialAccess |
-| **Techniques** | T1078, T0819, T1078.004 |
+| **Techniques** | T1078, T1190, T1078.004 |
 | **Required Connectors** | [Dataverse](../connectors/dataverse.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Hunting%20Queries/Dataverse%20-%20Activity%20after%20failed%20logons.yaml) |
 
@@ -22,10 +22,10 @@ This hunting query looks for users conducting Dataverse/Dynamics 365 activity sh
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 
 ---
 

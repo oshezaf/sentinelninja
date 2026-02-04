@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Fingerprints_Data_CL`](../tables/fingerprints-data-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Fingerprints_Data_CL`](../tables/fingerprints-data-cl.md) | — | — | — |
 
 ---
 

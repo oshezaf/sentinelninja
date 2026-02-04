@@ -26,9 +26,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (3)
 
-### Workbooks (7)
+### Workbooks (3)
 
 **In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):**
 
@@ -47,15 +47,6 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Barracuda](../content/github-only-barracuda-84e65401.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) |  |
-| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 
 ## Resource Types
 

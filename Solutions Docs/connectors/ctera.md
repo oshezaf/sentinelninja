@@ -28,9 +28,9 @@ The CTERA Data Connector for Microsoft Sentinel offers monitoring and threat det
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

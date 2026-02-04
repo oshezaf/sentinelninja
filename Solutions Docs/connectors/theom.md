@@ -22,9 +22,9 @@ Theom Data Connector enables organizations to connect their Theom environment to
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

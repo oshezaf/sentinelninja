@@ -38,10 +38,10 @@ By connecting with [Microsoft Defender for Cloud Apps](https://aka.ms/asi-mcas-c
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ | — |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

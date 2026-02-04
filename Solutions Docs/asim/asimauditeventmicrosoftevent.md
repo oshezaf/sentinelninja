@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Microsoft Windows Events audit events (110
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Event`](../tables/event.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
 
 ## Parameters
 

@@ -24,10 +24,10 @@ Detects a match in Workday activity from any IP Indicator of Compromise (IOC) pr
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | `EventVendor == "Workday"` | ✓ | ✓ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | `EventVendor == "Workday"` | ✓ | ✓ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ | ✗ |
 
 ---
 

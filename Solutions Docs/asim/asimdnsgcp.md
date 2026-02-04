@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Google cloud platform (GCP) DNS logs to th
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | — | — | — |
 
 ## Parameters
 

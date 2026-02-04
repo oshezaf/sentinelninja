@@ -25,12 +25,12 @@ This query is looking for rarely seen processes which are launched as a service.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ | — |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | — |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
 
 ---
 

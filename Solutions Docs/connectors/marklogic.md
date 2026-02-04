@@ -30,9 +30,9 @@ MarkLogic data connector provides the capability to ingest [MarkLogicAudit](http
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

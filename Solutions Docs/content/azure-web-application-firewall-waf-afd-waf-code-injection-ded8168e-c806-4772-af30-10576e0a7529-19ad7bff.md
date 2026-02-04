@@ -25,9 +25,9 @@ Identifies a match for a Code Injection based attack in the AFD WAF logs. The th
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "FrontDoorWebApplicationFirewallLog"` | — | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "FrontDoorWebApplicationFirewallLog"` | — | ✗ | ✗ |
 
 ---
 

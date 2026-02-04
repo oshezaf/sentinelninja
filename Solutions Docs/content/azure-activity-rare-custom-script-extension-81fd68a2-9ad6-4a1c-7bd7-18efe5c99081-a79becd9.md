@@ -22,9 +22,9 @@ The Custom Script Extension in Azure executes scripts on VMs, useful for post-de
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `OperationName == "Create or Update Virtual Machine Extension"` | ✗ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationName == "Create or Update Virtual Machine Extension"` | ✗ | ✗ | ✗ |
 
 ---
 

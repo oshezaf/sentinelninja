@@ -22,9 +22,9 @@ Cloud Next-Generation Firewall by Palo Alto Networks - an Azure Native ISV Servi
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`fluentbit_CL`](../tables/fluentbit-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

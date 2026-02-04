@@ -24,10 +24,10 @@ Personal Access Tokens (PATs) are used as an alternate password to authenticate 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | ✗ |
-| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | ✗ | ✓ |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ | — |
 
 ---
 

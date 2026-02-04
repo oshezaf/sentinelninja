@@ -24,9 +24,9 @@ Detects threat when logon authentication failure found in audit
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Audit_CL`](../tables/audit-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Audit_CL`](../tables/audit-cl.md) | — | ✗ | ✓ |
 
 ---
 

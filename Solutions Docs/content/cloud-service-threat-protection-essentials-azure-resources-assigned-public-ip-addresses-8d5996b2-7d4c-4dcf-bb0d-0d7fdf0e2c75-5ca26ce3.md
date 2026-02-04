@@ -22,10 +22,10 @@ This query identifies instances when public IP addresses are assigned to Azure R
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | — | — | — |
 
 ---
 

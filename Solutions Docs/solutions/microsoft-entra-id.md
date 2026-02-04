@@ -157,7 +157,7 @@ This solution includes **87 content item(s)**:
 |:-----|:------------|
 | [AzureActiveDirectoryAuditLogs](../content/microsoft-entra-id-azureactivedirectoryauditlogs-03b0be29.md) | [`AuditLogs`](../tables/auditlogs.md) |
 | [AzureActiveDirectorySignins](../content/microsoft-entra-id-azureactivedirectorysignins-97204667.md) | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
-| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) ⚠️ | [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md)<br>[`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
+| [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) | [`AADRiskyServicePrincipals`](../tables/aadriskyserviceprincipals.md)<br>[`AADServicePrincipalRiskEvents`](../tables/aadserviceprincipalriskevents.md)<br>[`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ### Playbooks
 
@@ -175,13 +175,11 @@ This solution includes **87 content item(s)**:
 | [Revoke Entra ID SignIn Sessions - incident trigger](../content/microsoft-entra-id-revoke-entra-id-signin-sessions-incident-trigger-e0f6ae42.md) | This playbook will revoke all signin sessions for the user using Graph API. It will send an email to... | - |
 | [Revoke-Entra ID SignInSessions alert trigger](../content/microsoft-entra-id-revoke-entra-id-signinsessions-alert-trigger-c72ead46.md) | This playbook will revoke all signin sessions for the user using Graph API. It will send an email to... | - |
 
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
-
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                                                                                         |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 3.3.7       | 04-12-2025                     | Updated Revoke-AADSignInSessions **Playbooks** Instructions |
+| 3.3.7       | 20-01-2026                     | Updated Revoke-AADSignInSessions **Playbooks** Instructions. <br/> Add Conditional Access Insights **Workbook** for Microsoft Entra ID. |
 | 3.3.6       | 23-09-2025                     | Updated  **Analytical Rule** to fix the rule saving issue. <br/> Removed Preview Designation from **Microsoft Entra ID Connector** Data Types.  | 
 | 3.3.5       | 25-07-2025                     | Updated Entra id Conditional Access (prefix) **Analytical Rule** |
 | 3.3.4       | 10-07-2025                     | Updated **Analytical Rule** NRT_UseraddedtoPrivilgedGroups.yaml and UseraddedtoPrivilgedGroups.yaml

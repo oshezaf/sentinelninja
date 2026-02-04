@@ -25,9 +25,9 @@ Detects a threat for an unsafe attachment in an email.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | — | ✗ | ✗ |
 
 ---
 

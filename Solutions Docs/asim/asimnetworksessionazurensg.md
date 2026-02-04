@@ -29,10 +29,10 @@ This ASIM parser supports normalizing Azure Network Security Groups (NSG) flows 
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | — | — |
-| [`Event`](../tables/event.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | — | — | — |
+| [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
 
 ## Parameters
 

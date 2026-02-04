@@ -22,9 +22,9 @@ The Imperva WAF Cloud data connector provides the capability to ingest logs into
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | — | — | — |
 
 ## Permissions
 

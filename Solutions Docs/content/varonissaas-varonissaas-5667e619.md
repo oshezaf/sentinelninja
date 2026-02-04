@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) | — | ✗ | ✗ |
 
 ---
 

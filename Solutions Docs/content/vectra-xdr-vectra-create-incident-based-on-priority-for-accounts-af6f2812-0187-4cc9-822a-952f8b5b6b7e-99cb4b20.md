@@ -25,9 +25,9 @@ Create an incident when an identity is suspected to be compromised. Vectra is us
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) | — | ✗ | ✓ |
 
 ---
 

@@ -37,10 +37,10 @@ This union parser includes parsers for the following products:
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimDhcpEventInfobloxBloxOne`](../asim/asimdhcpeventinfobloxbloxone.md) | — | — |
-| [`ASimDhcpEventNative`](../asim/asimdhcpeventnative.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimDhcpEventInfobloxBloxOne`](../asim/asimdhcpeventinfobloxbloxone.md) | — | — | — |
+| [`ASimDhcpEventNative`](../asim/asimdhcpeventnative.md) | — | — | — |
 
 ## Parameters
 

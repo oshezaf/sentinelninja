@@ -25,10 +25,10 @@ Detects when user logged in as admin.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | — | ✗ |
-| [`BoxEvents_CL`](../tables/boxevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | — | ✗ | ✓ |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) | — | ✗ | ✗ |
 
 ---
 

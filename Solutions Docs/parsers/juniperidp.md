@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | — | ✗ | ✓ |
 
 ---
 

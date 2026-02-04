@@ -24,9 +24,9 @@ This rule generates an incident when there are more than 5 failed login attemts 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) | — | — | — |
 
 ---
 

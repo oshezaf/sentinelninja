@@ -22,9 +22,9 @@ JNLP file extensions are an uncommon file type often used to deliver malware.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ | — |
 
 ---
 

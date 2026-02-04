@@ -15,7 +15,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (1)
 
@@ -32,14 +32,6 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [SolarWinds Inventory](../content/legacy-ioc-based-threat-protection-solarwinds-inventory-278592b5-612b-48a4-bb38-4c01ff8ee2a5-c7f23741.md) |  |
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 
 ---
 

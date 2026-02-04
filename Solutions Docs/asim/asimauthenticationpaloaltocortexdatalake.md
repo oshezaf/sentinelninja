@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuthenticationPaloAltoCortexDataLake` |
 | **Built-in Parser** | `_ASim_Authentication_PaloAltoCortexDataLake` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.2.6 |
+| **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Palo Alto Cortex Data Lake |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoCortexDataLake.md)) |
-| **Last Updated** | Dec 08 2023 |
+| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoCortexDataLake.md)) |
+| **Last Updated** | Jan 08, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationPaloAltoCortexDataLake.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationPaloAltoCortexDataLake.yaml) |
 
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Palo Alto Cortex Data Lake logs to the ASI
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "AUTH"`<br>`DeviceProduct == "LF"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "AUTH"`<br>`DeviceProduct == "LF"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

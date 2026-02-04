@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) | — | — | — |
 
 ---
 

@@ -30,10 +30,10 @@ This content item uses ASIM (Advanced Security Information Model) parsers for no
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4663,4688"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | — |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4663,4688"` | ✓ | ✓ | ✓ |
 
 ---
 

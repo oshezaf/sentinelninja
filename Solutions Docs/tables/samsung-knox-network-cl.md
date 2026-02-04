@@ -22,21 +22,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [SamsungKnoxAssetIntelligence](../content/samsung-knox-asset-intelligence-samsungknoxassetintelligence-db535420.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [SamsungKnoxAssetIntelligence](../content/github-only-samsungknoxassetintelligence-0d539170.md) |  |
 
 ---
 

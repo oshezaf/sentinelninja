@@ -22,9 +22,9 @@ The [Alibaba Cloud ActionTrail](https://www.alibabacloud.com/product/actiontrail
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AliCloudActionTrailLogs_CL`](../tables/alicloudactiontraillogs-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AliCloudActionTrailLogs_CL`](../tables/alicloudactiontraillogs-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

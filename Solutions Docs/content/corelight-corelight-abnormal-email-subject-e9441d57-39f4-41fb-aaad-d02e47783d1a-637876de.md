@@ -23,9 +23,9 @@ Query searches for emails with NON-Ascii characters within the Subject .
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) | — | — | — |
 
 ---
 

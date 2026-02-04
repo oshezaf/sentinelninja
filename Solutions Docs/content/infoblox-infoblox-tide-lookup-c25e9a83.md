@@ -18,9 +18,9 @@ The playbook fetches TIDE lookup data for the provided entity type and value.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) | — | — | — |
 
 ## Additional Documentation
 

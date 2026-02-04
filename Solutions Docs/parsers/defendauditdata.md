@@ -25,9 +25,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | — | — | — |
 
 ---
 

@@ -6,7 +6,7 @@
 
 ---
 
-Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_judgement_panda_gtr19.yml. Questions via Twitter: @janvonkirchheim.
+Original Sigma Rule: https://github.com/SigmaHQ/sigma/blob/master/rules-emerging-threats/2019/TA/APT31/proc_creation_win_apt_apt31_judgement_panda.yml. Questions via Twitter: @janvonkirchheim.
 
 | Attribute | Value |
 |:----------|:------|
@@ -22,9 +22,9 @@ Original Sigma Rule: https://github.com/Neo23x0/sigma/blob/master/rules/apt/apt_
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
 
 ---
 

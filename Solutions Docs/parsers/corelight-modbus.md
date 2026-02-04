@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Corelight_v2_modbus_CL`](../tables/corelight-v2-modbus-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Corelight_v2_modbus_CL`](../tables/corelight-v2-modbus-cl.md) | — | — | — |
 
 ---
 

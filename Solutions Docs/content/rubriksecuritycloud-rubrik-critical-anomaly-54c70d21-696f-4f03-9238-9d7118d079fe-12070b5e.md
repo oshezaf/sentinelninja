@@ -25,9 +25,9 @@ Rubrik Critical Anomaly rule matches Severity and if Critical severity found the
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) | — | ✗ | ✓ |
 
 ---
 

@@ -28,9 +28,9 @@ The Cloudflare data connector provides the capability to ingest [Cloudflare logs
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

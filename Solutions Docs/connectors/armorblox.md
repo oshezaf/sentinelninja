@@ -22,9 +22,9 @@ The [Armorblox](https://www.armorblox.com/) data connector provides the capabili
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Armorblox_CL`](../tables/armorblox-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Armorblox_CL`](../tables/armorblox-cl.md) | — | — | — |
 
 ## Permissions
 

@@ -24,9 +24,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (7)
 
-### Hunting Queries (11)
+### Hunting Queries (7)
 
 **In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
 
@@ -42,12 +42,8 @@ This table is used by the following solutions:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [Hunt for malicious messages using External Threat Intelligence](../content/github-only-hunt-for-malicious-messages-using-external-threat-intelligence-4dcb872f-9b39-4b95-8f30-3664f9f70dc2-9728c854.md) |  |
-| [Rare Domains in External Teams Messages](../content/github-only-rare-domains-in-external-teams-messages-d4dd8c3f-d62b-4078-9dc7-8520c3adf1d5-2a1cecc7.md) |  |
-| [Teams Message with URL listed on OpenPhish](../content/github-only-teams-message-with-url-listed-on-openphish-0d0a865b-7ed4-4e32-8b57-24cbf6b301b9-1080ff94.md) |  |
-| [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
-| [Teams messages with suspicious URL domains](../content/github-only-teams-messages-with-suspicious-url-domains-3dc84945-5805-4807-80ea-b849d1198e7f-c7642c54.md) |  |
-| [Teams users clicking on suspicious URL domains](../content/github-only-teams-users-clicking-on-suspicious-url-domains-0d70619d-b6a5-4958-8721-3f4001dc0472-b14aff9e.md) |  |
+| [Punycode lookalikes](../content/microsoft-defender-xdr-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-13260aaa.md) |  |
+| [Punycode lookalikes](../content/github-only-punycode-lookalikes-9582b09c-a5cd-4da0-8244-52cc952da158-fcc5de42.md) |  |
 
 ---
 

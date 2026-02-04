@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | — | — | — |
 
 ---
 

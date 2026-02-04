@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimAuthenticationAWSCloudTrail` |
 | **Built-in Parser** | `_ASim_Authentication_AWSCloudTrail` |
 | **Schema** | Authentication |
-| **Schema Version** | 0.1.1 |
+| **Schema Version** | 0.1.3 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | AWS |
-| **Parser Version** | 0.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAWSCloudTrail.md)) |
-| **Last Updated** | 21 Jul 2023 |
+| **Parser Version** | 0.2.2 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAWSCloudTrail.md)) |
+| **Last Updated** | Jan 14, 2026 |
 | **Unifying Parser** | [ASimAuthentication](asimauthentication.md) |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthenticationAWSCloudTrail.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationAWSCloudTrail.yaml) |
 
@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Amazon Web Service sign in logs, stored in
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ConsoleLogin"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ConsoleLogin"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 
@@ -52,7 +52,7 @@ The following connectors provide data for this parser:
 ## References
 
 - [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)
-- [ASIM](https:/aka.ms/AboutASIM)
+- [ASIM](https://aka.ms/AboutASIM)
 - [User identity in CloudTrail events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html#cloudtrail-event-reference-user-identity-fields)
 
 ---

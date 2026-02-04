@@ -25,9 +25,9 @@ Detection of KMS keys where action kms:Encrypt is accessible for everyone (also 
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateKey,PutKeyPolicy"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateKey,PutKeyPolicy"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -24,9 +24,9 @@ Detects threats from internal email threat protection
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -26,9 +26,9 @@ The [StyxView Alerts](https://styxintel.com/) data connector enables seamless in
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`StyxViewAlerts_CL`](../tables/styxviewalerts-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`StyxViewAlerts_CL`](../tables/styxviewalerts-cl.md) | — | — | — |
 
 ## Permissions
 

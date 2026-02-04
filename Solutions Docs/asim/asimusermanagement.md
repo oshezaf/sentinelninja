@@ -41,14 +41,14 @@ This union parser includes parsers for the following products:
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimUserManagementCiscoISE`](../asim/asimusermanagementciscoise.md) | — | — |
-| [`ASimUserManagementLinuxAuthpriv`](../asim/asimusermanagementlinuxauthpriv.md) | — | — |
-| [`ASimUserManagementMicrosoftSecurityEvent`](../asim/asimusermanagementmicrosoftsecurityevent.md) | — | — |
-| [`ASimUserManagementMicrosoftWindowsEvent`](../asim/asimusermanagementmicrosoftwindowsevent.md) | — | — |
-| [`ASimUserManagementNative`](../asim/asimusermanagementnative.md) | — | — |
-| [`ASimUserManagementSentinelOne`](../asim/asimusermanagementsentinelone.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimUserManagementCiscoISE`](../asim/asimusermanagementciscoise.md) | — | — | — |
+| [`ASimUserManagementLinuxAuthpriv`](../asim/asimusermanagementlinuxauthpriv.md) | — | — | — |
+| [`ASimUserManagementMicrosoftSecurityEvent`](../asim/asimusermanagementmicrosoftsecurityevent.md) | — | — | — |
+| [`ASimUserManagementMicrosoftWindowsEvent`](../asim/asimusermanagementmicrosoftwindowsevent.md) | — | — | — |
+| [`ASimUserManagementNative`](../asim/asimusermanagementnative.md) | — | — | — |
+| [`ASimUserManagementSentinelOne`](../asim/asimusermanagementsentinelone.md) | — | — | — |
 
 ## Parameters
 

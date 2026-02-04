@@ -27,9 +27,9 @@ This connector allows you to ingest AWS S3 Server Access Logs into Microsoft Sen
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AWSS3ServerAccess`](../tables/awss3serveraccess.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AWSS3ServerAccess`](../tables/awss3serveraccess.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

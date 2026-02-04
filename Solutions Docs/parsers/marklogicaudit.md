@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) | — | ✗ | ✗ |
 
 ---
 

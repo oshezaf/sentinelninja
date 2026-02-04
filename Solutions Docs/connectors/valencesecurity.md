@@ -22,9 +22,9 @@ Connects the Valence SaaS security platform Azure Log Analytics via the REST API
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ValenceAlert_CL`](../tables/valencealert-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ValenceAlert_CL`](../tables/valencealert-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

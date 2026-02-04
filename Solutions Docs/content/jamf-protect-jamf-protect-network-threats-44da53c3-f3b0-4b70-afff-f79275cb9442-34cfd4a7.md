@@ -25,9 +25,9 @@ Creates an incident based based on Jamf Protect's Network Threat Event Stream al
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) | — | — | — |
 
 ---
 

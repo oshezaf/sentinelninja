@@ -22,9 +22,9 @@ This query visualises number of unqiue accounts performing Teams message admin s
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "AdminSubmissionSubmitted"` | ✓ | ✗ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "AdminSubmissionSubmitted"` | ✓ | ✗ | ✓ |
 
 ---
 

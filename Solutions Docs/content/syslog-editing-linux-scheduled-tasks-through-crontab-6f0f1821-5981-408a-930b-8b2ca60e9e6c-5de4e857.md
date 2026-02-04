@@ -22,9 +22,9 @@ This query displays user edits to scheduled tasks via crontab, bucketed into 10-
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `Facility == "cron"`<br>`ProcessName == "crontab"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `Facility == "cron"`<br>`ProcessName == "crontab"` | ✓ | ✓ | ✓ |
 
 ---
 

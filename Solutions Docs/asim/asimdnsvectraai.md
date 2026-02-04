@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Vectra AI Steams logs to the ASIM DNS norm
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) | — | ✗ | ✗ |
 
 ## Parameters
 

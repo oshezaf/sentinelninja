@@ -22,10 +22,10 @@ The [Rapid7 Insight VM](https://www.rapid7.com/products/insightvm/) Report data 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) | — | ✗ |
-| [`NexposeInsightVMCloud_vulnerabilities_CL`](../tables/nexposeinsightvmcloud-vulnerabilities-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NexposeInsightVMCloud_assets_CL`](../tables/nexposeinsightvmcloud-assets-cl.md) | — | ✗ | ✗ |
+| [`NexposeInsightVMCloud_vulnerabilities_CL`](../tables/nexposeinsightvmcloud-vulnerabilities-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 
@@ -77,7 +77,7 @@ This connector ingests data into the following tables:
   Use the following step-by-step instructions to deploy the Rapid7 Insight Vulnerability Management Report data connector manually with Azure Functions (Deployment via Visual Studio Code).
 **Step 1 - Deploy a Function App**
 
-    1. Download the [Azure Function App](https://github.com/averbn/azure_sentinel_data_connectors/raw/main/insight-vm-cloud-azure-sentinel-data-connector/InsightVMCloudAPISentinelConn.zip) file. Extract archive to your local development computer.
+    1. Download the [Azure Function App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Data%20Connectors/InsightVMCloudAPISentinelConn.zip) file. Extract archive to your local development computer.
 2. Follow the [function app manual deployment instructions](https://github.com/Azure/Azure-Sentinel/blob/master/DataConnectors/AzureFunctionsManualDeployment.md#function-app-manual-deployment-instructions) to deploy the Azure Functions app using VSCode.
 3. After successful deployment of the function app, follow next steps for configuring it.
 

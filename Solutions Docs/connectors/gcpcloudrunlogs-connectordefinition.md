@@ -22,9 +22,9 @@ The GCP Cloud Run data connector provides the capability to ingest Cloud Run req
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCPCloudRun`](../tables/gcpcloudrun.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCPCloudRun`](../tables/gcpcloudrun.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

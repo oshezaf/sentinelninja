@@ -24,9 +24,9 @@ The Atlassian Confluence data connector provides the capability to ingest [Atlas
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AtlassianConfluenceNativePoller_CL`](../tables/atlassianconfluencenativepoller-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AtlassianConfluenceNativePoller_CL`](../tables/atlassianconfluencenativepoller-cl.md) | — | — | — |
 
 ## Permissions
 

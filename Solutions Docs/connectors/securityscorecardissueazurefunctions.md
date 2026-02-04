@@ -22,9 +22,9 @@ SecurityScorecard is the leader in cybersecurity risk ratings. The [SecurityScor
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityScorecardIssues_CL`](../tables/securityscorecardissues-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityScorecardIssues_CL`](../tables/securityscorecardissues-cl.md) | — | — | — |
 
 ## Permissions
 

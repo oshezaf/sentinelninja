@@ -23,9 +23,9 @@ This alert creates an incident when Image classification AI Model extraction hig
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AIShield_CL`](../tables/aishield-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AIShield_CL`](../tables/aishield-cl.md) | — | ✗ | ✗ |
 
 ---
 

@@ -25,9 +25,9 @@ Detects when the Cyren threat intelligence feed has not ingested any data for 6 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | — | — | — |
 
 ---
 

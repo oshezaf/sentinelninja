@@ -17,12 +17,13 @@ Reference for AADUserRiskEvents table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aaduserriskevents) |
 
-## Solutions (6)
+## Solutions (7)
 
 This table is used by the following solutions:
 
 - [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md)
 - [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md)
+- [DPDP Compliance](../solutions/dpdp-compliance.md)
 - [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
@@ -38,9 +39,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (6)
 
-### Workbooks (11)
+### Workbooks (6)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -53,6 +54,12 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
 
 **In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
 
@@ -71,17 +78,6 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

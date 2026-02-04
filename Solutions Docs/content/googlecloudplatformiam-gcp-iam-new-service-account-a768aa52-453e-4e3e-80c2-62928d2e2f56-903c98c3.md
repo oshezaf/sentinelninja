@@ -25,10 +25,10 @@ Detects new service account creation.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`GCPIAM`](../tables/gcpiam.md) | ✓ | ✗ |
-| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | — | — |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`GCPIAM`](../tables/gcpiam.md) | ✓ | ✗ | ✓ |
+| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) | — | — | — |
 
 ---
 

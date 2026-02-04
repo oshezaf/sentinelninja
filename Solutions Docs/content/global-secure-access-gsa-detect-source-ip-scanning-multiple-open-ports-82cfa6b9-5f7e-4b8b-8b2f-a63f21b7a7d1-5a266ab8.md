@@ -25,9 +25,9 @@ Identifies a source IP scanning multiple open ports on Global Secure Access Fire
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ | ✓ |
 
 ---
 

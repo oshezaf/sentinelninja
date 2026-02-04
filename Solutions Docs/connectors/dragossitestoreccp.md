@@ -22,9 +22,9 @@ The [Dragos Platform](https://www.dragos.com/) is the leading Industrial Cyber S
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

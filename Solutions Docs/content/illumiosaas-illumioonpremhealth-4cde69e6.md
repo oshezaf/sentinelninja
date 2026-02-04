@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "disk=Policy"`<br>`SyslogMessage has "disk=Traffic"`<br>`SyslogMessage has "illumio_pce/system_health"`<br>`SyslogMessage has "src=collector"`<br>`SyslogMessage has "src=disk_latency"`<br>`SyslogMessage has "src=flow_analytics"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "disk=Policy"`<br>`SyslogMessage has "disk=Traffic"`<br>`SyslogMessage has "illumio_pce/system_health"`<br>`SyslogMessage has "src=collector"`<br>`SyslogMessage has "src=disk_latency"`<br>`SyslogMessage has "src=flow_analytics"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Fortinet FortiGate logs to the ASIM Web Se
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct startswith "FortiGate"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct startswith "FortiGate"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

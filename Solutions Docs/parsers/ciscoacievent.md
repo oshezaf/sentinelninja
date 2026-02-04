@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` | ✓ | ✓ | ✓ |
 
 ---
 

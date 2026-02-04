@@ -24,9 +24,9 @@ The VMware SD-WAN Edge appliance received packets that failed a Reverse Path For
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Reverse path forwarding check fail"`<br>`SyslogMessage contains "VCF Drop"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Reverse path forwarding check fail"`<br>`SyslogMessage contains "VCF Drop"` | ✓ | ✓ | ✓ |
 
 ---
 

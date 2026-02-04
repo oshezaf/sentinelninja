@@ -22,10 +22,10 @@ The ContrastADR data connector provides the capability to ingest Contrast ADR at
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) | — | ✗ |
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) | — | ✗ | ✗ |
+| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

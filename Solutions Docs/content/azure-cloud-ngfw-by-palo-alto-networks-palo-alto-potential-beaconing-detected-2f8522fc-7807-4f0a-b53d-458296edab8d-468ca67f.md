@@ -25,10 +25,10 @@ Identifies beaconing patterns from PAN traffic logs based on recurrent timedelta
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
-| [`fluentbit_CL`](../tables/fluentbit-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) | — | ✗ | ✓ |
 
 ---
 

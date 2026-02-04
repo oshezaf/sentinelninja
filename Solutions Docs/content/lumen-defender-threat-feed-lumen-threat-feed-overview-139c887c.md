@@ -16,26 +16,26 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ |
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | ✓ | ✓ |
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | ✓ | ✓ |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ |
-| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | ✓ | ✓ |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | ✓ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ |
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ |
-| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ |
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ | — |
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) | ✓ | ✓ | ✓ |
+| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | ✓ | ✓ | — |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ | ✓ |
+| [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | ✓ | ✓ | — |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | ✓ | ✓ | — |
+| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ✓ |
+| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | — |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
+| [`DnsEvents`](../tables/dnsevents.md) | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✗ | ✗ |
 
 ---
 

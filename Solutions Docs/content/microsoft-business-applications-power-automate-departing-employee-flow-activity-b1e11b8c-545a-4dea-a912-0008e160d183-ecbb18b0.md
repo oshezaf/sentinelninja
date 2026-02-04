@@ -25,9 +25,9 @@ Identifies instances where an employee who has been notified or is already termi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | ✓ | ✗ | ✓ |
 
 ---
 

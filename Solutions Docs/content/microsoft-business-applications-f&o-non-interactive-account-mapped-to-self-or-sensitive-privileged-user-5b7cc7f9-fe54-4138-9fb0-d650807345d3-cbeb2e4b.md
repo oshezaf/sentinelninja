@@ -25,9 +25,9 @@ Identifies changes to Microsoft Entra client apps registered for Finance & Opera
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | — | ✗ | ✓ |
 
 ---
 

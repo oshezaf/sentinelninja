@@ -25,9 +25,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) | — | ✗ | ✗ |
 
 ---
 

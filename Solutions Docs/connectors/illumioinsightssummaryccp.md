@@ -22,9 +22,9 @@ The Illumio Insights Summary connector Publishes AI-powered threat discovery and
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`IllumioInsightsSummary_CL`](../tables/illumioinsightssummary-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`IllumioInsightsSummary_CL`](../tables/illumioinsightssummary-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

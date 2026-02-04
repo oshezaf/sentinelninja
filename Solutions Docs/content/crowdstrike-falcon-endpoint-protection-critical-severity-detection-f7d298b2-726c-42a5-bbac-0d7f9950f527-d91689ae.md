@@ -23,9 +23,9 @@ Creates an incident when a CrowdStrike Falcon sensor detection is triggered with
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "FalconHost"`<br>`DeviceVendor == "CrowdStrike"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "FalconHost"`<br>`DeviceVendor == "CrowdStrike"` | ✓ | ✓ | ✓ |
 
 ---
 

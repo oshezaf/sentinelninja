@@ -25,9 +25,9 @@ Dynatrace has detected an ongoing attack in your environment.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | — | ✗ | ✗ |
 
 ---
 

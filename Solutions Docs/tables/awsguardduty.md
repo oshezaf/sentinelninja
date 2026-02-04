@@ -35,7 +35,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (5)
 
 ### Analytic Rules (4)
 
@@ -53,19 +53,13 @@ This table is ingested by the following connectors:
 | [Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-unauthorized-credential-access-detecti-122fbc6a-57ab-4aa7-b9a9-51ac4970cac1-bb7f7aa6.md) |  |
 | [Unauthorized user access across AWS and Azure](../content/multi-cloud-attack-coverage-essentials-resource-abuse-unauthorized-user-access-across-aws-and-azure-60f31001-018a-42bf-8045-a92e1f361b7b-6d3ff85e.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) |  |
 
 ---
 

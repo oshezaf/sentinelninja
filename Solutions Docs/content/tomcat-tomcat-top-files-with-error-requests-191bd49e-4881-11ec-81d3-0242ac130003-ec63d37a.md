@@ -23,9 +23,9 @@ Query shows list of files with error requests.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Tomcat_CL`](../tables/tomcat-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Tomcat_CL`](../tables/tomcat-cl.md) | — | ✗ | ✓ |
 
 ---
 

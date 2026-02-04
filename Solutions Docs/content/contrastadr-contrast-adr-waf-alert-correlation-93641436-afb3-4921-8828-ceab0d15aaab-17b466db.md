@@ -25,9 +25,9 @@ Correlates Contrast ADR security alerts with WAF logs to identify confirmed atta
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ | ✗ |
 
 ---
 

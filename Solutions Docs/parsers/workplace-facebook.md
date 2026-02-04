@@ -25,9 +25,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) | — | ✗ | ✗ |
 
 ---
 

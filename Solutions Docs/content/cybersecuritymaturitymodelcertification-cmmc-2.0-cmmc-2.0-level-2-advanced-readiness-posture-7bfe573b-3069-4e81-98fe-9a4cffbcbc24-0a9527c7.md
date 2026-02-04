@@ -24,9 +24,9 @@ CMMC 2.0 Level 2 (Advanced) assessments have deviated from configured threshold 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ | — |
 
 ---
 

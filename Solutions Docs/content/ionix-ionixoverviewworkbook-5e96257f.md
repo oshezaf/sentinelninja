@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) | — | ✗ | ✗ |
 
 ---
 

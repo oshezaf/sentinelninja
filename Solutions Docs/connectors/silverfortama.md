@@ -26,9 +26,9 @@ The [Silverfort](https://silverfort.com) ITDR Admin Console connector solution a
 
 This connector ingests data into the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "NewIncident"`<br>`DeviceProduct == "Admin Console"`<br>`DeviceProduct has "Admin Console"`<br>`DeviceVendor == "Silverfort"`<br>`DeviceVendor has "Silverfort"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "NewIncident"`<br>`DeviceProduct == "Admin Console"`<br>`DeviceProduct has "Admin Console"`<br>`DeviceVendor == "Silverfort"`<br>`DeviceVendor has "Silverfort"` | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

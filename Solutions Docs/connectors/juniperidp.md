@@ -30,9 +30,9 @@ The [Juniper](https://www.juniper.net/) IDP data connector provides the capabili
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) | — | ✗ | ✓ |
 
 ## Permissions
 

@@ -22,9 +22,9 @@ Microsoft Sentinel integrates with TAXII 2.1 servers to enable exporting of your
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ThreatIntelExportOperation`](../tables/threatintelexportoperation.md) | ✗ | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ThreatIntelExportOperation`](../tables/threatintelexportoperation.md) | ✗ | ✗ | — |
 
 ## Permissions
 

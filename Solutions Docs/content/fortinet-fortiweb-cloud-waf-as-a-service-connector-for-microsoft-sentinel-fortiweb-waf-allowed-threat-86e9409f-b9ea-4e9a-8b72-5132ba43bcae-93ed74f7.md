@@ -25,9 +25,9 @@ Detects WAF "Allowed" action on threat events.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -1,4 +1,4 @@
-# QscoutAppEventsConnector
+# QscoutAppEventsConnector (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/quokka_logo.svg" alt="" width="75" height="75">
 
@@ -22,18 +22,18 @@ Ingest Qscout application events into Microsoft Sentinel
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 
 **Resource Provider Permissions:**
-- **Workspace** (Workspace): Read and Write permissions are required
+- **Workspace** (Workspace): Read and Write permissions are required.
 
 **Custom Permissions:**
-- **Qscout organization id**: The API requires your organization ID in Qscout.
-- **Qscout organization API key**: The API requires your organization API key in Qscout.
+- **Qscout Organization ID**: The API requires your organization ID in Qscout.
+- **Qscout Organization API Key**: The API requires your organization API key in Qscout.
 
 ## Setup Instructions
 
@@ -43,7 +43,7 @@ This connector ingests data into the following tables:
 
 Provide the required values below:
 - **Qscout Organization ID**: 123456
-- **Qscout Organization API Key**: abcdxyz
+- **Qscout Organization API Key**: (password field)
 - Click 'Connect' to establish connection
 
 ---

@@ -23,9 +23,9 @@ Query shows list of least used internal destination ports.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | — | ✗ | ✓ |
 
 ---
 

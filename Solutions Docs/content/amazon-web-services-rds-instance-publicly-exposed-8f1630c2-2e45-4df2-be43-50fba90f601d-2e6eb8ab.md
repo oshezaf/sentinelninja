@@ -25,9 +25,9 @@ Detected publicly exposed RDS instance, which could lead to a leakage of sensiti
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateDBInstance,ModifyDBInstance"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateDBInstance,ModifyDBInstance"` | ✓ | ✓ | ✓ |
 
 ---
 

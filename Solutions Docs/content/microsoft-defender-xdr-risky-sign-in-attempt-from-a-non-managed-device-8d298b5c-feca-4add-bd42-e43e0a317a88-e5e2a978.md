@@ -22,9 +22,9 @@ In this detection,we hunt for any sign-in attempt from a non-managed, non-compli
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ | — |
 
 ---
 

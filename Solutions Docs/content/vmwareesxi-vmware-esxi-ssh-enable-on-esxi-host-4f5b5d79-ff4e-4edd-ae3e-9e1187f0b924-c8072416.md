@@ -25,9 +25,9 @@ Detects when vim-cmd is used to enable SSH on an ESXi host
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API |
-|:------|:-------------|:---------------:|:-------------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | ✓ | ✓ |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | ✓ | ✓ | ✓ |
 
 ---
 

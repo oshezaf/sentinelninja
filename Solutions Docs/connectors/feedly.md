@@ -22,9 +22,9 @@ This connector allows you to ingest IoCs from Feedly.
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) | — | ✗ | ✗ |
 
 ## Permissions
 

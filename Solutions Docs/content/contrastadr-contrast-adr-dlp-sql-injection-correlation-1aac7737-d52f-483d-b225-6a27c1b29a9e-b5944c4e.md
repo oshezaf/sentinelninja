@@ -25,9 +25,9 @@ Detects successful SQL injection attacks identified by Contrast ADR and correlat
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API |
-|:------|:---------------:|:-------------:|
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ | ✗ |
 
 ---
 
