@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | ✗ | ✗ | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
 | [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |

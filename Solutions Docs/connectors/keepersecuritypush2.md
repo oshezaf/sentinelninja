@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) | — | ✗ | ✓ |
+| [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

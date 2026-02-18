@@ -24,11 +24,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | — | ✗ | ✗ |
-| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | — | ✗ | ✗ |
-| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | — | ✗ | ✗ |
-| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | — | ✗ | ✗ |
-| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | — | ✗ | ✗ |
+| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | ✗ | ✗ | ✗ |
+| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | ✗ | ✗ | ✗ |
+| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | ✗ | ✗ | ✗ |
+| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | ✗ | ✗ | ✗ |
+| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

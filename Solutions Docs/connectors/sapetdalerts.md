@@ -24,8 +24,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | — | ✗ | ✓ |
-| [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) | — | ✗ | ✓ |
+| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | ✓ | ✗ | ✓ |
+| [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

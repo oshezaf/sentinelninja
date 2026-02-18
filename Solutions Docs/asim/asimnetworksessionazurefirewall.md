@@ -35,7 +35,7 @@ This parser reads from the following tables:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallNetworkRule"` | — | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallNetworkRule"` | ✗ | ✗ | ✗ |
 | [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
 
 ## Parameters

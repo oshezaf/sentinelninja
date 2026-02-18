@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | — | ✗ | ✓ |
+| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | ✓ | ✗ | ✓ |
 
 ---
 

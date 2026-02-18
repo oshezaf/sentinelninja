@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | — | ✗ | ✓ |
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

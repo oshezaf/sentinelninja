@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) | — | ✗ | ✓ |
+| [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) | ✓ | ✗ | ✓ |
 
 ---
 

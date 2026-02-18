@@ -1,6 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> ⚠️ DPDP Compliance
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> DPDP Compliance
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="DPDP Compliance Logo" width="75" height="75">
 
@@ -83,6 +81,12 @@ This solution includes **1 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_WebSession`](../asim/imwebsession.md)<br>[`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md)<br>[`AADUserRiskEvents`](../tables/aaduserriskevents.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`LAQueryLogs`](../tables/laquerylogs.md)<br>[`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>*Internal use:*<br>[`Anomalies`](../tables/anomalies.md)<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 								 |
+|-------------|--------------------------------|-----------------------------------------------------------------------------------------------------|
+| 3.0.0       | 26-01-2026                     | Initial Solution Release						     |
 
 ---
 

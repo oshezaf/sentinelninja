@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ErmesBrowserSecurityEvents_CL`](../tables/ermesbrowsersecurityevents-cl.md) | — | ✗ | ✓ |
+| [`ErmesBrowserSecurityEvents_CL`](../tables/ermesbrowsersecurityevents-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

@@ -30,7 +30,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | — | ✗ | ✓ |
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

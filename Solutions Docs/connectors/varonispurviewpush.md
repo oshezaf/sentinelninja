@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`varonisresources_CL`](../tables/varonisresources-cl.md) | — | ✗ | ✗ |
+| [`varonisresources_CL`](../tables/varonisresources-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

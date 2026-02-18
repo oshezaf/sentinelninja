@@ -54,23 +54,23 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Netskope_WebTx_metrics_CL`](../tables/netskope-webtx-metrics-cl.md) | — | ✗ | ✗ |
-| [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) | — | ✗ | ✗ |
-| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) | — | ✗ | ✗ |
-| [`alertsdlpdata_CL`](../tables/alertsdlpdata-cl.md) | — | ✗ | ✗ |
-| [`alertsmalsitedata_CL`](../tables/alertsmalsitedata-cl.md) | — | ✗ | ✗ |
-| [`alertsmalwaredata_CL`](../tables/alertsmalwaredata-cl.md) | — | ✗ | ✗ |
-| [`alertspolicydata_CL`](../tables/alertspolicydata-cl.md) | — | ✗ | ✗ |
-| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) | — | ✗ | ✗ |
-| [`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md) | — | ✗ | ✗ |
-| [`alertssecurityassessmentdata_CL`](../tables/alertssecurityassessmentdata-cl.md) | — | ✗ | ✗ |
-| [`alertsubadata_CL`](../tables/alertsubadata-cl.md) | — | ✗ | ✗ |
-| [`eventsapplicationdata_CL`](../tables/eventsapplicationdata-cl.md) | — | ✗ | ✗ |
-| [`eventsauditdata_CL`](../tables/eventsauditdata-cl.md) | — | ✗ | ✗ |
-| [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) | — | ✗ | ✗ |
-| [`eventsincidentdata_CL`](../tables/eventsincidentdata-cl.md) | — | ✗ | ✗ |
-| [`eventsnetworkdata_CL`](../tables/eventsnetworkdata-cl.md) | — | ✗ | ✗ |
-| [`eventspagedata_CL`](../tables/eventspagedata-cl.md) | — | ✗ | ✗ |
+| [`Netskope_WebTx_metrics_CL`](../tables/netskope-webtx-metrics-cl.md) | ✗ | ✗ | ✗ |
+| [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertsdlpdata_CL`](../tables/alertsdlpdata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertsmalsitedata_CL`](../tables/alertsmalsitedata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertsmalwaredata_CL`](../tables/alertsmalwaredata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertspolicydata_CL`](../tables/alertspolicydata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertssecurityassessmentdata_CL`](../tables/alertssecurityassessmentdata-cl.md) | ✗ | ✗ | ✗ |
+| [`alertsubadata_CL`](../tables/alertsubadata-cl.md) | ✗ | ✗ | ✗ |
+| [`eventsapplicationdata_CL`](../tables/eventsapplicationdata-cl.md) | ✗ | ✗ | ✗ |
+| [`eventsauditdata_CL`](../tables/eventsauditdata-cl.md) | ✗ | ✗ | ✗ |
+| [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) | ✗ | ✗ | ✗ |
+| [`eventsincidentdata_CL`](../tables/eventsincidentdata-cl.md) | ✗ | ✗ | ✗ |
+| [`eventsnetworkdata_CL`](../tables/eventsnetworkdata-cl.md) | ✗ | ✗ | ✗ |
+| [`eventspagedata_CL`](../tables/eventspagedata-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ConfluenceAuditLogs_CL`](../tables/confluenceauditlogs-cl.md) | — | ✗ | ✓ |
+| [`ConfluenceAuditLogs_CL`](../tables/confluenceauditlogs-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

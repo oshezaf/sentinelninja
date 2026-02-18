@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**819 playbooks** across all Microsoft Sentinel solutions.
+**820 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -844,6 +844,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | Name | Source |
 |:-----|:-------|
 | [TacitRed to CrowdStrike IOC Automation](tacitred-ioc-crowdstrike-tacitred-to-crowdstrike-ioc-automation-899201f9.md) | 📦 [TacitRed-IOC-CrowdStrike](../solutions/tacitred-ioc-crowdstrike.md) |
+| [TacitRed to Defender TI](tacitred-defender-threatintelligence-tacitred-to-defender-ti-00c46953.md) | 📦 [TacitRed-Defender-ThreatIntelligence](../solutions/tacitred-defender-threatintelligence.md) |
 | [TacitRed to SentinelOne IOC Automation](tacitred-sentinelone-tacitred-to-sentinelone-ioc-automation-0d5ed56e.md) | 📦 [TacitRed-SentinelOne](../solutions/tacitred-sentinelone.md) |
 | [Tanium-ComplyFindings](tanium-tanium-complyfindings-1a82f749.md) | 📦 [Tanium](../solutions/tanium.md) |
 | [Tanium-GeneralHostInfo](tanium-tanium-generalhostinfo-b769badf.md) | 📦 [Tanium](../solutions/tanium.md) |

@@ -18,7 +18,7 @@ Files, IP addresses, URLs, users, or devices associated with alerts
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertevidence) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertevidence-table) |
 
-## Solutions (6)
+## Solutions (7)
 
 This table is used by the following solutions:
 
@@ -26,6 +26,7 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Vectra XDR](../solutions/vectra-xdr.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
@@ -39,7 +40,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (10)
+## Content Items Using This Table (21)
 
 ### Analytic Rules (2)
 
@@ -55,17 +56,31 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Defender Alert Evidence](../content/vectra-xdr-defender-alert-evidence-8138863e-e55f-4f02-ac94-72796e203d27-c82db71e.md) |  |
 
-### Hunting Queries (3)
+### Hunting Queries (12)
+
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MDE_Evidenceforasingledevice](../content/standalone-content-mde-evidenceforasingledevice-f173f87f-fa09-4258-8eaf-d95164318e7e-49f4057e.md) |  |
 
 **GitHub Only:**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
+| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
+| [Identify Microsoft Defender Antivirus detection related to EUROPIUM](../content/github-only-identify-microsoft-defender-antivirus-detection-related-to-europium-d02275d6-45ba-4ddc-be90-8fa260aebe55-44e9cbeb.md) |  |
+| [ImpersonatedUserFootprint](../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.md) |  |
+| [KNOTWEED-AV Detections](../content/github-only-knotweed-av-detections-24b0f252-08fd-4f70-b387-9015bea1b34c-89938558.md) |  |
 | [MDO daily detection summary report](../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.md) |  |
+| [MDO daily detection summary report](../content/github-only-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-5c96ae0a.md) |  |
+| [SuspiciousUrlClicked](../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.md) |  |
 | [URL click on ZAP email](../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.md) |  |
+| [URL click on ZAP email](../content/github-only-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-2bbd70d9.md) |  |
 | [URLClick details based on malicious URL click alert](../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.md) |  |
+| [URLClick details based on malicious URL click alert](../content/github-only-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-8acf46eb.md) |  |
 
-### Workbooks (5)
+### Workbooks (7)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -73,13 +88,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
-| Content Item |
-|:-------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"`
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `ActionType == "Automated Remediation"`
 
 | Content Item |
 |:-------------|
@@ -97,6 +112,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -105,49 +127,22 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimAlertEventMicrosoftDefenderXDR](../asim/asimalerteventmicrosoftdefenderxdr.md) | AlertEvent | Microsoft Defender XDR |  |
 
-## Selection Criteria Summary (3 criteria, 3 total references)
+## Selection Criteria Summary (2 criteria, 2 total references)
 
-References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ActionType == "BrowserLaunchedToOpenUrl"` | - | 1 | - | - | **1** |
-| `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | - | 1 | - | - | **1** |
-| `ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"`<br>`ActionType == "Automated Remediation"`<br>`ActionType contains "Submission"`<br>`ActionType contains "UserSubmission"`<br>`ActionType contains "ZAP"`<br>`ActionType has "Malware ZAP"`<br>`ActionType has "Phish ZAP"`<br>`ActionType has "Spam ZAP"`<br>`ActionType has "ZAP"`<br>`ActionType has_any "ClickAllowed"`<br>`ActionType has_any "ClickBlocked"`<br>`ActionType has_any "UrlErrorPage"`<br>`ActionType has_any "UrlScanInProgress"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **3** | **0** | **0** | **3** |
+| `ActionType == "Automated Remediation"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
 
 ### ActionType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `BrowserLaunchedToOpenUrl` | - | 1 | - | - | **1** |
-| `Add member to role` | - | 1 | - | - | **1** |
-| `Add user` | - | 1 | - | - | **1** |
-| `InteractiveLogon` | - | 1 | - | - | **1** |
-| `RemoteInteractiveLogon` | - | 1 | - | - | **1** |
-| `Reset user password` | - | 1 | - | - | **1** |
-| `ResourceAccess` | - | 1 | - | - | **1** |
-| `Sign-in` | - | 1 | - | - | **1** |
-| `Update user` | - | 1 | - | - | **1** |
-| `AdminSubmissionSubmitted` | - | 1 | - | - | **1** |
-| `AttackSimUserSubmission` | - | 1 | - | - | **1** |
-| `ClickBlocked` | - | 1 | - | - | **1** |
-| `Malware ZAP` | - | 1 | - | - | **1** |
-| `Phish ZAP` | - | 1 | - | - | **1** |
-| `Spam ZAP` | - | 1 | - | - | **1** |
-| `UserSubmission` | - | 1 | - | - | **1** |
 | `Automated Remediation` | - | 1 | - | - | **1** |
-| `contains Submission` | - | 1 | - | - | **1** |
-| `contains UserSubmission` | - | 1 | - | - | **1** |
-| `contains ZAP` | - | 1 | - | - | **1** |
-| `has Malware ZAP` | - | 1 | - | - | **1** |
-| `has Phish ZAP` | - | 1 | - | - | **1** |
-| `has Spam ZAP` | - | 1 | - | - | **1** |
-| `has ZAP` | - | 1 | - | - | **1** |
-| `has_any ClickAllowed` | - | 1 | - | - | **1** |
-| `has_any ClickBlocked` | - | 1 | - | - | **1** |
-| `has_any UrlErrorPage` | - | 1 | - | - | **1** |
-| `has_any UrlScanInProgress` | - | 1 | - | - | **1** |
 
 ---
 

@@ -6,7 +6,7 @@
 
 ---
 
-Detects potentially malicious Visual Studio Code (VSCode) extensions installed on a users system, which threat actors might use to control devices and exfiltrate personal information.   Ref: https://blog.checkpoint.com/securing-the-cloud/malicious-vscode-extensions-with-more-than-45k-downloads-steal-pii-and-enable-backdoors/
+Detects observed Visual Studio Code (VS Code) extension installation activity on a user's system within the query time range.  Note: This query does not return a complete per-user inventory of installed extensions and may miss extensions installed outside the telemetry window or via unsupported installation methods.  Ref: https://blog.checkpoint.com/securing-the-cloud/malicious-vscode-extensions-with-more-than-45k-downloads-steal-pii-and-enable-backdoors/
 
 | Attribute | Value |
 |:----------|:------|
@@ -17,6 +17,14 @@ Detects potentially malicious Visual Studio Code (VSCode) extensions installed o
 | **Techniques** | T1547.006 |
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/DeviceProcess/VScodeExtensionofanUser.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
 
 ---
 

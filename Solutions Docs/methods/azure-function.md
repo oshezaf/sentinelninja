@@ -19,9 +19,9 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **131** |
-| Active | 87 |
+| Active | 88 |
 | Deprecated 🚫 | 18 |
-| Unpublished ⚠️ | 26 |
+| Unpublished ⚠️ | 25 |
 
 ## Connectors Using This Method
 
@@ -94,7 +94,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo WHOIS ORG Data Connector](../connectors/ipinfowhoisorgdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) ⚠️ | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) ⚠️ | Joe Security LLC | 1 | [JoeSandbox](../solutions/joesandbox.md) |
+| [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) | Joe Security LLC | 1 | [JoeSandbox](../solutions/joesandbox.md) |
 | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) | Lookout | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
 | [Lumen Defender Threat Feed Data Connector](../connectors/lumenthreatfeedconnector.md) | Lumen Technologies, Inc. | 1 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
 | [Luminar IOCs and Leaked Credentials](../connectors/cognyteluminar.md) | Cognyte Technologies Israel Ltd | 1 | [CognyteLuminar](../solutions/cognyteluminar.md) |

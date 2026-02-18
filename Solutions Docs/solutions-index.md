@@ -10,7 +10,7 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 ---
 
-**493 solutions** with 387 unique connectors and 393 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
+**494 solutions** with 388 unique connectors and 394 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
@@ -91,7 +91,6 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Azure kubernetes Service](solutions/azure-kubernetes-service.md) | 2022-06-01 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureDevOps.svg" alt="" width="40" height="40"> | [AzureDevOpsAuditing](solutions/azuredevopsauditing.md) | 2022-09-20 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [AzureSecurityBenchmark](solutions/azuresecuritybenchmark.md) | 2022-06-17 | Microsoft Corporation |
-|  | [archTIS](solutions/archtis.md) ⚠️ |  |  |
 
 ### B
 
@@ -178,7 +177,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="" width="40" height="40"> | [Cyfirma Digital Risk](solutions/cyfirma-digital-risk.md) | 2025-03-27 | CYFIRMA |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="" width="40" height="40"> | [Cyfirma Vulnerabilities Intel](solutions/cyfirma-vulnerabilities-intel.md) | 2025-05-15 | CYFIRMA |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cynerio.svg" alt="" width="40" height="40"> | [Cynerio](solutions/cynerio.md) | 2023-03-29 | Cynerio |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyren_logo.svg" alt="" width="40" height="40"> | [CyrenThreatIntelligence](solutions/cyrenthreatintelligence.md) ⚠️ | 2025-11-16 | Data443 Risk Mitigation, Inc. |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyren_logo.svg" alt="" width="40" height="40"> | [CyrenThreatIntelligence](solutions/cyrenthreatintelligence.md) | 2025-11-16 | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyware-logo.svg" alt="" width="40" height="40"> | [Cyware](solutions/cyware.md) | 2024-03-18 | Cyware |
 
 ### D
@@ -188,7 +187,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [DEV-0537DetectionandHunting](solutions/dev-0537detectionandhunting.md) | 2022-04-07 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [DNS Essentials](solutions/dns-essentials.md) ➕ | 2023-01-14 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [DORA Compliance](solutions/dora-compliance.md) ⚠️ | 2025-10-08 | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [DPDP Compliance](solutions/dpdp-compliance.md) ⚠️ | 2026-01-26 | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [DPDP Compliance](solutions/dpdp-compliance.md) | 2026-01-26 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Darktrace.svg" alt="" width="40" height="40"> | [Darktrace](solutions/darktrace.md) | 2022-05-02 | Darktrace |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OrangeCyberdefenseLogo.svg" alt="" width="40" height="40"> | [Datalake2Sentinel](solutions/datalake2sentinel.md) | 2024-01-15 | Orange Cyberdefense |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DataminrPulse.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Dataminr Pulse](solutions/dataminr-pulse.md) | 2023-04-12 | Dataminr Support |
@@ -328,7 +327,7 @@ Browse solutions alphabetically:
 |:--:|----------|----------------|----------|
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [JBoss](solutions/jboss.md) | 2021-10-20 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/jamf_logo.svg" alt="" width="40" height="40"> | [Jamf Protect](solutions/jamf-protect.md) | 2022-10-10 | Jamf Software, LLC |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/joesandbox.svg" alt="" width="40" height="40"> | [JoeSandbox](solutions/joesandbox.md) ⚠️ | 2025-09-12 | Stefan Bühlmann |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/joesandbox.svg" alt="" width="40" height="40"> | [JoeSandbox](solutions/joesandbox.md) | 2025-09-12 | Stefan Bühlmann |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Joshua-Cyberiskvision](solutions/joshua-cyberiskvision.md) | 2022-01-10 | Joshua Cyberiskvision |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Juniper SRX](solutions/juniper-srx.md) | 2022-05-02 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [JuniperIDP](solutions/juniperidp.md) | 2021-03-31 | Microsoft Corporation |
@@ -397,6 +396,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Morphisec_Logo.svg" alt="" width="40" height="40"> | [Morphisec](solutions/morphisec.md) | 2022-05-05 | Morphisec |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Mulesoft](solutions/mulesoft.md) | 2022-07-12 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Multi Cloud Attack Coverage Essentials - Resource Abuse](solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) | 2023-11-22 | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/meshcloud.svg" alt="" width="40" height="40"> | [meshStack](solutions/meshstack.md) ⚠️ | 2025-12-15 | meshcloud GmbH |
 
 ### N
 
@@ -550,9 +550,10 @@ Browse solutions alphabetically:
 
 | | Solution | First Published | Publisher |
 |:--:|----------|----------------|----------|
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="" width="40" height="40"> | [TacitRed-IOC-CrowdStrike](solutions/tacitred-ioc-crowdstrike.md) ⚠️ | 2025-11-25 | Data443 Risk Mitigation, Inc. |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="" width="40" height="40"> | [TacitRed-SentinelOne](solutions/tacitred-sentinelone.md) ⚠️ | 2025-12-01 | Data443 Risk Mitigation, Inc. |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="" width="40" height="40"> | [TacitRedThreatIntelligence](solutions/tacitredthreatintelligence.md) ⚠️ | 2025-01-01 | Data443 Risk Mitigation, Inc. |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="" width="40" height="40"> | [TacitRed-Defender-ThreatIntelligence](solutions/tacitred-defender-threatintelligence.md) | 2025-11-10 | Data443 Risk Mitigation, Inc. |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="" width="40" height="40"> | [TacitRed-IOC-CrowdStrike](solutions/tacitred-ioc-crowdstrike.md) | 2025-11-25 | Data443 Risk Mitigation, Inc. |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="" width="40" height="40"> | [TacitRed-SentinelOne](solutions/tacitred-sentinelone.md) | 2025-12-01 | Data443 Risk Mitigation, Inc. |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="" width="40" height="40"> | [TacitRedThreatIntelligence](solutions/tacitredthreatintelligence.md) | 2025-01-01 | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Talon.svg" alt="" width="40" height="40"> | [Talon](solutions/talon.md) | 2023-01-25 | Talon Security |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tanium.svg" alt="" width="40" height="40"> | [Tanium](solutions/tanium.md) | 2022-05-16 | Tanium Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/TeamCymruScout.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Team Cymru Scout](solutions/team-cymru-scout.md) | 2024-07-16 | Team Cymru |

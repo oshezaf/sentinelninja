@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | — | ✗ | ✓ |
+| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | ✓ | ✗ | ✓ |
 
 ---
 

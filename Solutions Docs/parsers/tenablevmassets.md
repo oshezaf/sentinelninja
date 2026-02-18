@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | — | ✗ | ✓ |
+| [`Tenable_VM_Asset_CL`](../tables/tenable-vm-asset-cl.md) | ✓ | ✗ | ✓ |
 
 ---
 

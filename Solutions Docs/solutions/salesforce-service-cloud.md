@@ -24,7 +24,7 @@ The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cl
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.9 |
+| **Version** | 3.0.10 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
 | **Solution Folder** | [Salesforce Service Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud) |

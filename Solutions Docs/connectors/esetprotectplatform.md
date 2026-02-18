@@ -26,8 +26,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`IntegrationTableIncidents_CL`](../tables/integrationtableincidents-cl.md) | — | ✗ | ✓ |
-| [`IntegrationTable_CL`](../tables/integrationtable-cl.md) | — | ✗ | ✓ |
+| [`IntegrationTableIncidents_CL`](../tables/integrationtableincidents-cl.md) | ✓ | ✗ | ✓ |
+| [`IntegrationTable_CL`](../tables/integrationtable-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Phosphorus_CL`](../tables/phosphorus-cl.md) | — | ✗ | ✗ |
+| [`Phosphorus_CL`](../tables/phosphorus-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

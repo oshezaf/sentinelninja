@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | — | ✗ | ✓ |
+| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

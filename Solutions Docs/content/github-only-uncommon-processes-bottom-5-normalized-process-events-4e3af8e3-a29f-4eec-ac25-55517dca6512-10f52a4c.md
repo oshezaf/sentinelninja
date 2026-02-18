@@ -1,4 +1,4 @@
-# Uncommon processes - bottom 5% (Normalized Process Events)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Uncommon processes - bottom 5% (Normalized Process Events)
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -15,6 +15,12 @@
 | **ID** | `4e3af8e3-a29f-4eec-ac25-55517dca6512` |
 | **Tactics** | Execution |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/ASimProcess/imProcess_uncommon_processes.yaml) |
+
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`imProcessCreate`](../asim/improcesscreate.md)
 
 ---
 

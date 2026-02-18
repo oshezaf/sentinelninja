@@ -17,7 +17,7 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
 
-## Solutions (13)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -26,6 +26,7 @@ This table is used by the following solutions:
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
+- [Global Secure Access](../solutions/global-secure-access.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
@@ -51,9 +52,17 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (95)
+## Content Items Using This Table (103)
 
-### Analytic Rules (67)
+### Analytic Rules (70)
+
+**In solution [Global Secure Access](../solutions/global-secure-access.md):**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [GSA - TI Domain Entity](../content/global-secure-access-gsa-ti-domain-entity-4ef07345-5d89-4f5b-9c64-a180d81a6176-c4743d20.md) |  |
+| [GSA - TI IP Entity](../content/global-secure-access-gsa-ti-ip-entity-3ebd25b1-6f54-49f9-b5a5-0246357ce4ca-9601350c.md) |  |
+| [GSA - TI URL Entity](../content/global-secure-access-gsa-ti-url-entity-347c6cb3-33d2-4753-b7f6-eab946a8cd51-ab57a79a.md) |  |
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 
@@ -142,7 +151,7 @@ This table is ingested by the following connectors:
 | [TI map IP entity to Workday(ASimAuditEventLogs)](../content/threat-intelligence-new-ti-map-ip-entity-to-workday-asimauditeventlogs-92e8e945-6e99-4e4b-bef8-468b4c19fc3a-7773b67f.md) |  |
 | [TI map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.md) |  |
 
-### Hunting Queries (14)
+### Hunting Queries (15)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 
@@ -178,7 +187,13 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-new-ti-map-file-entity-to-wiredata-event-d2fd7661-de21-47ab-a9f9-e6ded983fabe-9e547c28.md) |  |
 
-### Workbooks (14)
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
+
+### Workbooks (18)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
@@ -248,6 +263,15 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [ThreatConnectOverview](../content/threatconnect-threatconnectoverview-c70716b8.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [IntsightsIOCWorkbook](../content/github-only-intsightsiocworkbook-88f7baed.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
+| [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
 
 ## Parsers Using This Table (1)
 

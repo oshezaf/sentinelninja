@@ -17,6 +17,14 @@ This will show Active Directory Security Token Service (STS) refresh token modif
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Defense%20evasion/UpdateStsRefreshToken%5BSolorigate%5D.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "Update StsRefreshTokenValidFrom Timestamp."` | ✓ | ✗ | ✓ |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

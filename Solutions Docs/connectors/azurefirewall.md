@@ -33,7 +33,7 @@ This connector ingests data into the following tables:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceType == "AZUREFIREWALLS"` | — | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `ResourceType == "AZUREFIREWALLS"` | ✗ | ✗ | ✗ |
 
 ## Permissions
 

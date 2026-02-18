@@ -30,8 +30,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md) | — | ✗ | ✗ |
-| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) | — | ✗ | ✗ |
+| [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md) | ✗ | ✗ | ✗ |
+| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) | — | ✗ | ✓ |
+| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

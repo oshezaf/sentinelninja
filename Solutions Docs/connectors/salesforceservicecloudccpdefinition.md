@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | — | ✗ | ✓ |
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

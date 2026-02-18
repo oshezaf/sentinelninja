@@ -16,8 +16,8 @@
 | **Schema Version** | 0.1 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Microsoft Defender XDR |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md)) |
-| **Last Updated** | Oct 09, 2024 |
+| **Parser Version** | 0.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md)) |
+| **Last Updated** | Jan 09, 2026 |
 | **Unifying Parser** | [ASimAlertEvent](asimalertevent.md) |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEventMicrosoftDefenderXDR.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEventMicrosoftDefenderXDR.yaml) |
 

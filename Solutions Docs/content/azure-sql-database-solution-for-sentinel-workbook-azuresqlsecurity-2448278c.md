@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | — | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | ✗ | ✗ | ✗ |
 | [`Operation`](../tables/operation.md) |  | ✗ | ✗ | — |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |

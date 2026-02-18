@@ -24,10 +24,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyfirmaCampaigns_CL`](../tables/cyfirmacampaigns-cl.md) | — | ✗ | ✓ |
-| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | — | ✗ | ✓ |
-| [`CyfirmaMalware_CL`](../tables/cyfirmamalware-cl.md) | — | ✗ | ✓ |
-| [`CyfirmaThreatActors_CL`](../tables/cyfirmathreatactors-cl.md) | — | ✗ | ✓ |
+| [`CyfirmaCampaigns_CL`](../tables/cyfirmacampaigns-cl.md) | ✓ | ✗ | ✓ |
+| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | ✓ | ✗ | ✓ |
+| [`CyfirmaMalware_CL`](../tables/cyfirmamalware-cl.md) | ✓ | ✗ | ✓ |
+| [`CyfirmaThreatActors_CL`](../tables/cyfirmathreatactors-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

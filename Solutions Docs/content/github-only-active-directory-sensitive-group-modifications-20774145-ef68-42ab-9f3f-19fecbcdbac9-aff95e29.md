@@ -17,6 +17,14 @@ This query shows all modifications to highly sensitive active directory groups (
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Credential%20Access/Active%20Directory%20Sensitive%20Group%20Modifications.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | `ActionType == "Group Membership changed"` | ✓ | ✗ | — |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

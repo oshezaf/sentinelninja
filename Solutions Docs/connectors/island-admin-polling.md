@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Island_Admin_CL`](../tables/island-admin-cl.md) | — | ✗ | ✓ |
+| [`Island_Admin_CL`](../tables/island-admin-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

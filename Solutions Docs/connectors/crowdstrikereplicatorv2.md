@@ -37,7 +37,7 @@ This connector ingests data into the following tables:
 | [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) | — | — | — |
 | [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) | ✓ | ✓ | — |
 | [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) | — | — | — |
-| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | — | ✗ | ✓ |
+| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | ✓ | ✗ | ✓ |
 | [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) | — | — | — |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

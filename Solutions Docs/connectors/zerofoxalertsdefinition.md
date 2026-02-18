@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | — | ✗ | ✓ |
+| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

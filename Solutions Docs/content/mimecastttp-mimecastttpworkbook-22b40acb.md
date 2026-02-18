@@ -18,9 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | — | ✗ | ✗ |
-| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | — | ✗ | ✗ |
-| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | — | ✗ | ✗ |
+| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | ✗ | ✗ | ✗ |
+| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | ✗ | ✗ | ✗ |
+| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | ✗ | ✗ | ✗ |
 
 ---
 

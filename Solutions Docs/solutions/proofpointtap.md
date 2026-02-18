@@ -24,7 +24,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Support Tier** | Partner |
 | **Support Link** | [https://proofpoint.my.site.com/community/s/](https://proofpoint.my.site.com/community/s/) |
 | **Categories** | domains |
-| **Version** | 3.1.1 |
+| **Version** | 3.1.2 |
 | **Author** | Proofpoint, Inc. - azure-support@proofpoint.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [ProofPointTap](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap) |

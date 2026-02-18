@@ -30,26 +30,11 @@ This table is used by the following solutions:
 
 ## Parsers Using This Table (1)
 
-### Other Parsers (1) — Selection Criteria: `EventVendor !contains "Cymru"`
+### Other Parsers (1)
 
-| Parser | Solution |
-|:-------|:---------|
-| [CymruScoutCorrelate](../parsers/cymruscoutcorrelate.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
-
-## Selection Criteria Summary (1 criteria, 1 total references)
-
-References by type: 0 connectors, 0 content items, 0 ASIM parsers, 1 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventVendor !contains "Cymru"` | - | - | - | 1 | **1** |
-| **Total** | **0** | **0** | **0** | **1** | **1** |
-
-### EventProduct / EventVendor
-
-| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-|  | `!contains Cymru` | - | - | - | 1 | **1** |
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CymruScoutCorrelate](../parsers/cymruscoutcorrelate.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) |  |
 
 ---
 

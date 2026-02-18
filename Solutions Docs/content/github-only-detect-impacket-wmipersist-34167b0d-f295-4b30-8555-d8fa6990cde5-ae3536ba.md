@@ -18,6 +18,14 @@ This query looks for signs of impacket wmipersist usage and should work for othe
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Persistence/detect-impacket-wmipersist.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "WmiBindEventFilterToConsumer"` | ✓ | ✗ | ✓ |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

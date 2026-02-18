@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) | — | ✗ | ✗ |
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

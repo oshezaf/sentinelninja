@@ -24,8 +24,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Armis_Activities_CL`](../tables/armis-activities-cl.md) | — | ✗ | ✗ |
-| [`Armis_Alerts_CL`](../tables/armis-alerts-cl.md) | — | ✗ | ✗ |
+| [`Armis_Activities_CL`](../tables/armis-activities-cl.md) | ✗ | ✗ | ✗ |
+| [`Armis_Alerts_CL`](../tables/armis-alerts-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

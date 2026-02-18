@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`iocsent_CL`](../tables/iocsent-cl.md) | — | ✗ | ✗ |
+| [`iocsent_CL`](../tables/iocsent-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

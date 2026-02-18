@@ -25,9 +25,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (4)
 
-### Workbooks (3)
+### Workbooks (4)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
@@ -41,6 +41,12 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
 
 ---
 

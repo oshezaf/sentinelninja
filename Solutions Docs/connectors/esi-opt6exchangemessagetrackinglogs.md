@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) | — | ✗ | ✓ |
+| [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

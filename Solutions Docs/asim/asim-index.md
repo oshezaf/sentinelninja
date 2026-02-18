@@ -45,7 +45,7 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Solution | Version |
 |:-------|:--------|:---------|:--------|
-| [MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR |  | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md) |
+| [MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR |  | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md) |
 | [SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | SentinelOne | [SentinelOne](../solutions/sentinelone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventSentinelOneSingularity.md) |
 
 ## AuditEvent
@@ -104,9 +104,9 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Product | Solution | Version |
 |:-------|:--------|:---------|:--------|
-| [AADManagedIdentitySignInLogs](asimauthenticationaadmanagedidentitysigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.2.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADManagedIdentitySignInLogs.md) |
-| [AADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.2.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADNonInteractiveUserSignInLogs.md) |
-| [AADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.2.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADServicePrincipalSignInLogs.md) |
+| [AADManagedIdentitySignInLogs](asimauthenticationaadmanagedidentitysigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.2.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADManagedIdentitySignInLogs.md) |
+| [AADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.2.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADNonInteractiveUserSignInLogs.md) |
+| [AADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.2.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAADServicePrincipalSignInLogs.md) |
 | [AWSCloudTrail](asimauthenticationawscloudtrail.md) | AWS | [Amazon Web Services](../solutions/amazon-web-services.md) | [0.2.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationAWSCloudTrail.md) |
 | [BarracudaWAF](asimauthenticationbarracudawaf.md) | Barracuda WAF | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationBarracudaWAF.md) |
 | [CiscoASA](asimauthenticationciscoasa.md) | Cisco Adaptive Security Appliance (ASA) | [CiscoASA](../solutions/ciscoasa.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoASA.md) |
@@ -126,7 +126,7 @@ These are the main entry points that combine all source parsers:
 | [PostgreSQL](asimauthenticationpostgresql.md) | PostgreSQL | [CustomLogsAma](../solutions/customlogsama.md) | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPostgreSQL.md) |
 | [SalesforceSC](asimauthenticationsalesforcesc.md) | Salesforce Service Cloud |  | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md) |
 | [SentinelOne](asimauthenticationsentinelone.md) | SentinelOne | [SentinelOne](../solutions/sentinelone.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSentinelOne.md) |
-| [SigninLogs](asimauthenticationsigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.4.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSigninLogs.md) |
+| [SigninLogs](asimauthenticationsigninlogs.md) | Microsoft Entra ID | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) | [0.4.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSigninLogs.md) |
 | [Sshd](asimauthenticationsshd.md) | OpenSSH | [Syslog](../solutions/syslog.md) | [0.3.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSshd.md) |
 | [Su](asimauthenticationsu.md) | su | [Syslog](../solutions/syslog.md) | [0.3.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSu.md) |
 | [Sudo](asimauthenticationsudo.md) | sudo | [Syslog](../solutions/syslog.md) | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSudo.md) |

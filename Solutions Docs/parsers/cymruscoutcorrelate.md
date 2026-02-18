@@ -27,8 +27,8 @@ This parser reads from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ASimAuditEvent`](../asim/asimauditevent.md) |  | — | — | — |
 | [`ASimAuthentication`](../asim/asimauthentication.md) |  | — | — | — |
-| [`ASimDhcpEvent`](../asim/asimdhcpevent.md) |  | — | — | — |
-| [`ASimDns`](../asim/asimdns.md) | `EventVendor !contains "Cymru"` | — | — | — |
+| [`ASimDhcpEvent`](../asim/asimdhcpevent.md) | `EventVendor !contains "Cymru"` | — | — | — |
+| [`ASimDns`](../asim/asimdns.md) |  | — | — | — |
 | [`ASimNetworkSession`](../asim/asimnetworksession.md) |  | — | — | — |
 | [`ASimWebSession`](../asim/asimwebsession.md) |  | — | — | — |
 | [`AsimParsersData`](../tables/asimparsersdata.md) |  | — | — | — |

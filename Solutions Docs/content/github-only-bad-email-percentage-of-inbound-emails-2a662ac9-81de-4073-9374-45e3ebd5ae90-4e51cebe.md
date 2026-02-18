@@ -18,6 +18,14 @@ This query visualises bad traffic (% of emails with threats) compared to total i
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Email%20and%20Collaboration%20Queries/General/Bad%20email%20percentage%20-%20Inbound%20emails.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

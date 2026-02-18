@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 | [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) |  | — | — | — |
 | [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) |  | — | — | — |
 | [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) |  | — | — | — |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) |  | — | ✗ | ✗ |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) |  | ✗ | ✗ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 | [`Service_Name_Info_CL`](../tables/service-name-info-cl.md) |  | — | — | — |

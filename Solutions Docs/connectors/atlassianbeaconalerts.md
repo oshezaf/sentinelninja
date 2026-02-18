@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) | — | ✗ | ✗ |
+| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

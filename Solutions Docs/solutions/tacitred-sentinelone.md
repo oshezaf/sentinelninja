@@ -1,6 +1,4 @@
-# ⚠️ TacitRed-SentinelOne
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# TacitRed-SentinelOne
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="TacitRed-SentinelOne Logo" width="75" height="75">
 
@@ -20,7 +18,7 @@ The TacitRed SentinelOne IOC Automation solution provides example playbooks that
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.data443.com](https://www.data443.com) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-12-01 |
 | **Last Updated** | 2025-12-10 |

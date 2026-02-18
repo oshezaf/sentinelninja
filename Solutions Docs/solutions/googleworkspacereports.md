@@ -26,7 +26,7 @@ The [Google Workspace](https://workspace.google.com/) solution for Microsoft Sen
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 2.0.6 |
+| **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-24 |
 | **Solution Folder** | [GoogleWorkspaceReports](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleWorkspaceReports) |

@@ -6,7 +6,7 @@
 
 ---
 
-Identifies evidence of password spray activity against Connect Health for AD FS sign-in events by looking for failures from multiple accounts from the same IP address within a time window. Reference: https://adfshelp.microsoft.com/References/ConnectHealthErrorCodeReference
+Identifies evidence of password spray activity against Connect Health for AD FS sign-in events by looking for failures from multiple accounts from the same IP address within a time window. Reference: https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID/ADFSSignInLogsPasswordSpray.md
 
 | Attribute | Value |
 |:----------|:------|

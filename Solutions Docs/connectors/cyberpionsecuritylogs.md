@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) | — | ✗ | ✗ |
+| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

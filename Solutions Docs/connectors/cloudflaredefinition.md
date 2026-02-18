@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | — | ✗ | ✓ |
+| [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

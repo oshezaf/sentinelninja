@@ -24,7 +24,7 @@ The [Google Cloud Platform](https://cloud.google.com/gcp) Cloud Monitoring data 
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-01 |
 | **Solution Folder** | [Google Cloud Platform Cloud Monitoring](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Monitoring) |

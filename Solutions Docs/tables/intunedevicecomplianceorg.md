@@ -18,6 +18,17 @@ Reference for IntuneDeviceComplianceOrg table in Azure Monitor Logs.
 
 ---
 
+## Content Items Using This Table (2)
+
+### Workbooks (2)
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

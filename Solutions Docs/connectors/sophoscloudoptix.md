@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SophosCloudOptix_CL`](../tables/sophoscloudoptix-cl.md) | — | ✗ | ✗ |
+| [`SophosCloudOptix_CL`](../tables/sophoscloudoptix-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

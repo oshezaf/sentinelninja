@@ -18,10 +18,10 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **132** |
-| Active | 124 |
+| Total Connectors | **133** |
+| Active | 126 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 7 |
+| Unpublished ⚠️ | 6 |
 
 ## Connectors Using This Method
 
@@ -58,7 +58,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Cisco Secure Endpoint (via Codeless Connector Framework)](../connectors/ciscosecureendpointlogsccpdefinition.md) | Microsoft | 2 | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md) | Microsoft | 1 | [Cloudflare](../solutions/cloudflare.md) |
 | [Cortex XDR - Incidents](../connectors/cortexxdrincidents.md) | DEFEND Ltd. | 1 | [Cortex XDR](../solutions/cortex-xdr.md) |
-| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | Microsoft | 4 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | Microsoft | 5 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | Microsoft | 10 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyble Vision Alerts](../connectors/cyblevisionalerts.md) | Cyble | 1 | [Cyble Vision](../solutions/cyble-vision.md) |
 | [Cyera DSPM Microsoft Sentinel Data Connector](../connectors/cyeradspmccf.md) ⚠️ | Cyera Inc | 5 | [CyeraDSPM](../solutions/cyeradspm.md) |
@@ -68,7 +68,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [CYFIRMA Cyber Intelligence](../connectors/cyfirmacyberintelligencedc.md) | Microsoft | 4 | [Cyfirma Cyber Intelligence](../solutions/cyfirma-cyber-intelligence.md) |
 | [CYFIRMA Digital Risk](../connectors/cyfirmadigitalriskalertsconnector.md) | Microsoft | 7 | [Cyfirma Digital Risk](../solutions/cyfirma-digital-risk.md) |
 | [CYFIRMA Vulnerabilities Intelligence](../connectors/cyfirmavulnerabilitiesinteldc.md) | Microsoft | 1 | [Cyfirma Vulnerabilities Intel](../solutions/cyfirma-vulnerabilities-intel.md) |
-| [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) ⚠️ | Cyren | 1 | [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md) |
+| [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) | Cyren | 1 | [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md) |
 | [Druva Events Connector](../connectors/druvaeventccpdefinition.md) | Microsoft | 3 | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md) | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Dynatrace Attacks](../connectors/dynatraceattacks.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
@@ -110,6 +110,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) | The Collective Consulting BV | 1 | [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
 | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Microsoft | 1 | [Lookout](../solutions/lookout.md) |
 | [MailRisk by Secure Practice](../connectors/securepracticemailriskconnector.md) | Secure Practice | 1 | [MailRisk](../solutions/mailrisk.md) |
+| [meshStack Event Logs](../connectors/meshstackeventlogsdefinition.md) ⚠️ | meshcloud | 1 | [meshStack](../solutions/meshstack.md) |
 | [Microsoft Copilot](../connectors/microsoftcopilot.md) | Microsoft | 1 | [Microsoft Copilot](../solutions/microsoft-copilot.md) |
 | [Miro Audit Logs (Enterprise Plan)](../connectors/miroauditlogsdataconnector.md) | Miro | 1 | [Miro](../solutions/miro.md) |
 | [Miro Content Logs (Enterprise Plan + Enterprise Guard)](../connectors/mirocontentlogsdataconnector.md) | Miro | 1 | [Miro](../solutions/miro.md) |
@@ -150,7 +151,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [SOC Prime Platform Audit Logs Data Connector](../connectors/socprimeauditlogsdataconnector.md) | Microsoft | 1 | [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) | Microsoft | 2 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | [StyxView Alerts (via Codeless Connector Platform)](../connectors/styxviewendpointconnectordefinition.md) ⚠️ | Styx Intelligence | 1 | [Styx Intelligence](../solutions/styx-intelligence.md) |
-| [TacitRed Compromised Credentials](../connectors/tacitredthreatintel.md) ⚠️ | TacitRed | 1 | [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md) |
+| [TacitRed Compromised Credentials](../connectors/tacitredthreatintel.md) | TacitRed | 1 | [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md) |
 | [Tropico Security - Alerts](../connectors/tropicoalertsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Tropico Security - Events](../connectors/tropicoeventsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Tropico Security - Incidents](../connectors/tropicoincidentsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |

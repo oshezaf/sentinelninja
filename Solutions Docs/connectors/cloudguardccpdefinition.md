@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CloudGuard_SecurityEvents_CL`](../tables/cloudguard-securityevents-cl.md) | — | ✗ | ✓ |
+| [`CloudGuard_SecurityEvents_CL`](../tables/cloudguard-securityevents-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

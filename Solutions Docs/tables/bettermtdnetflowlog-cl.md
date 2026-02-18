@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
 
@@ -27,15 +28,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [BETTER_MTD_Workbook](../content/better-mobile-threat-defense-mtd-better-mtd-workbook-e3655f79.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [BETTER_MTD_Workbook](../content/github-only-better-mtd-workbook-59bbe47f.md) |  |
 
 ---
 

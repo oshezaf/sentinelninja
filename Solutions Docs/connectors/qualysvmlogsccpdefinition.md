@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | — | ✗ | ✓ |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

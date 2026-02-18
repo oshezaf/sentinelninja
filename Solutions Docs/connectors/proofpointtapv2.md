@@ -24,10 +24,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md) | — | ✗ | ✓ |
-| [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) | — | ✗ | ✓ |
-| [`ProofPointTAPMessagesBlockedV2_CL`](../tables/proofpointtapmessagesblockedv2-cl.md) | — | ✗ | ✓ |
-| [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) | — | ✗ | ✓ |
+| [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md) | ✓ | ✗ | ✓ |
+| [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) | ✓ | ✗ | ✓ |
+| [`ProofPointTAPMessagesBlockedV2_CL`](../tables/proofpointtapmessagesblockedv2-cl.md) | ✓ | ✗ | ✓ |
+| [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

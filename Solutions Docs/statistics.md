@@ -28,26 +28,26 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
-| Solutions | **493** | 446 | 47 |
-| With Connectors | **310** | 285 | 25 |
-| With Content | **393** | 363 | 30 |
+| Solutions | **494** | 453 | 41 |
+| With Connectors | **311** | 288 | 23 |
+| With Content | **394** | 370 | 24 |
 
 ### Support Ownership
 
 | Support Tier | Total | Published | Unpublished ⚠️ |
 |:-------------|------:|----------:|------------:|
-| Microsoft | **233** | 226 | 7 |
-| Partner | **236** | 207 | 29 |
+| Microsoft | **233** | 227 | 6 |
+| Partner | **238** | 213 | 25 |
 | Community | **11** | 11 | 0 |
-| Unknown | **13** | 2 | 11 |
-| **Total** | **493** | **446** | **47** |
+| Unknown | **12** | 2 | 10 |
+| **Total** | **494** | **453** | **41** |
 
 ### Other Metrics
 
 | Metric | Count |
 |:-------|------:|
-| Unique Connectors | 387 |
-| Tables Used | 823 |
+| Unique Connectors | 388 |
+| Tables Used | 825 |
 
 ## Connectors
 
@@ -55,26 +55,26 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **387** | 321 | 29 | 37 |
+| In Solutions | **388** | 324 | 29 | 35 |
 | Discovered 🔍 | **148** | 28 | 114 | 6 |
-| **Total** | **535** | **349** | **143** | **43** |
+| **Total** | **536** | **352** | **143** | **41** |
 
 ### Support Ownership
 
 | Support Tier | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
 | Microsoft | **241** | 150 | 88 | 3 |
-| Partner | **274** | 189 | 47 | 38 |
+| Partner | **275** | 192 | 47 | 36 |
 | Community | **18** | 10 | 8 | 0 |
 | Unknown | **2** | 0 | 0 | 2 |
-| **Total** | **535** | **349** | **143** | **43** |
+| **Total** | **536** | **352** | **143** | **41** |
 
 ### Collection Methods
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-----------------|------:|-------:|-----------:|------------:|
-| [CCF](methods/ccf.md) | **132** | 124 | 1 | 7 |
-| [Azure Function](methods/azure-function.md) | **131** | 87 | 18 | 26 |
+| [CCF](methods/ccf.md) | **133** | 126 | 1 | 6 |
+| [Azure Function](methods/azure-function.md) | **131** | 88 | 18 | 25 |
 | [MMA](methods/mma.md) | **110** | 14 | 90 | 6 |
 | [AMA](methods/ama.md) | **59** | 25 | 34 | 0 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **43** | 39 | 0 | 4 |
@@ -82,7 +82,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [REST API](methods/rest-api.md) | **15** | 15 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **3** | 3 | 0 | 0 |
-| **Total** | **535** | **349** | **143** | **43** |
+| **Total** | **536** | **352** | **143** | **41** |
 
 ### Collection Methods by Support Tier
 
@@ -90,8 +90,8 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Collection Method | Microsoft | Partner | Community | Unknown |
 |:-----------------|:---------:|:---------:|:---------:|:---------:|
-| [CCF](methods/ccf.md) | 63 / 1 / 1 / **65** | 61 / 0 / 6 / **67** | - | - |
-| [Azure Function](methods/azure-function.md) | 22 / 14 / 0 / **36** | 64 / 4 / 26 / **94** | 1 / 0 / 0 / **1** | - |
+| [CCF](methods/ccf.md) | 63 / 1 / 1 / **65** | 63 / 0 / 5 / **68** | - | - |
+| [Azure Function](methods/azure-function.md) | 22 / 14 / 0 / **36** | 65 / 4 / 25 / **94** | 1 / 0 / 0 / **1** | - |
 | [MMA](methods/mma.md) | 8 / 57 / 1 / **66** | 6 / 28 / 3 / **37** | 0 / 5 / 0 / **5** | 0 / 0 / 2 / **2** |
 | [AMA](methods/ama.md) | 10 / 16 / 0 / **26** | 11 / 15 / 0 / **26** | 4 / 3 / 0 / **7** | - |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | 1 / 0 / 1 / **2** | 34 / 0 / 3 / **37** | 4 / 0 / 0 / **4** | - |
@@ -99,16 +99,16 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 17 / 0 / 0 / **17** | - | - | - |
 | [REST API](methods/rest-api.md) | 1 / 0 / 0 / **1** | 13 / 0 / 0 / **13** | 1 / 0 / 0 / **1** | - |
 | [Unknown](methods/unknown.md) | 3 / 0 / 0 / **3** | - | - | - |
-| **Total** | 150 / 88 / 3 / **241** | 189 / 47 / 38 / **274** | 10 / 8 / 0 / **18** | 0 / 0 / 2 / **2** |
+| **Total** | 150 / 88 / 3 / **241** | 192 / 47 / 36 / **275** | 10 / 8 / 0 / **18** | 0 / 0 / 2 / **2** |
 
 ## Tables
 
 | Metric | Count |
 |:-------|------:|
-| **Total Tables Documented** | **1778** |
-| Tables Ingested by Connectors | 823 |
-| Tables Referenced by Content Only | 217 |
-| Standalone Reference Tables | 738 |
+| **Total Tables Documented** | **1792** |
+| Tables Ingested by Connectors | 825 |
+| Tables Referenced by Content Only | 225 |
+| Standalone Reference Tables | 742 |
 | Defender XDR Only Tables | 31 |
 
 ## Content
@@ -117,16 +117,16 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Metric | Total | 📦 Published | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-------|------:|-------------:|---------------:|--------------:|---------------:|
-| **Content Items** | **6,601** | 4,732 | 159 | 437 | 1,273 |
+| **Content Items** | **6,606** | 4,749 | 147 | 437 | 1,273 |
 
 ### Content Items by Type
 
 | Type | Total | 📦 Published | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-----|------:|-------------:|---------------:|--------------:|---------------:|
-| Analytic Rules | 2,366 | 2,123 | 73 | 158 | 12 |
+| Analytic Rules | 2,369 | 2,131 | 68 | 158 | 12 |
 | Hunting Queries | 2,292 | 1,166 | 8 | 84 | 1,034 |
-| Playbooks | 819 | 552 | 43 | 188 | 36 |
-| Workbooks | 537 | 329 | 23 | 0 | 185 |
+| Playbooks | 820 | 557 | 39 | 188 | 36 |
+| Workbooks | 538 | 333 | 20 | 0 | 185 |
 | Parsers* | 514 | 502 | 12 | 0 | 0 |
 | Watchlists | 48 | 42 | 0 | 0 | 6 |
 | Summary Rules | 25 | 18 | 0 | 7 | 0 |

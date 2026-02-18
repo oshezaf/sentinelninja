@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | — | ✗ | ✓ |
+| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

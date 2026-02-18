@@ -24,8 +24,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) | — | ✗ | ✗ |
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ | ✗ |
+| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) | ✗ | ✗ | ✗ |
+| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

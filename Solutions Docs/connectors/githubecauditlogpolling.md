@@ -34,8 +34,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | — | ✗ | ✓ |
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | — | ✗ | ✓ |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | ✓ | ✗ | ✓ |
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ✓ | ✗ | ✓ |
 | [`ImpactedUser`](../tables/impacteduser.md) | — | — | — |
 
 ## Permissions

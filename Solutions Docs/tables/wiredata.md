@@ -16,18 +16,19 @@ Reference for WireData table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wiredata) |
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (6)
 
-### Hunting Queries (1)
+### Hunting Queries (2)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -35,13 +36,27 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md) |  |
 
-### Workbooks (1)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Detect beacon like pattern based on repetitive time intervals in Wire Data Traffic](../content/standalone-content-detect-beacon-like-pattern-based-on-repetitive-time-intervals-in-wire-data-traffic-33aa0e01-87e2-43ea-87f9-2f7e3ff1d532-1e25a0ce.md) |  |
+
+### Workbooks (4)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
+| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
+| [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
 
 ## Resource Types
 

@@ -18,7 +18,7 @@ The Google Cloud Platform (GCP) audit logs, ingested from Microsoft Sentinel's c
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-03-29 |
 | **Solution Folder** | [Google Cloud Platform Audit Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Audit%20Logs) |

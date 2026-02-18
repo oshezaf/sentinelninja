@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | ✗ | ✓ |
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

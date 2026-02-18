@@ -24,8 +24,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | — | ✗ | ✓ |
-| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | — | ✗ | ✓ |
+| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | ✓ | ✗ | ✓ |
+| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

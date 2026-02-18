@@ -15,6 +15,14 @@ This query identifies Copilot Studio AI agents that are shared broadly-either wi
 | **ID** | `4a8b2c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d` |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/AI%20Agents/AIAgentsOrganizationWideShared.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AIAgentsInfo`](../tables/aiagentsinfo.md) | — | ✗ | — |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

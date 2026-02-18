@@ -27,7 +27,7 @@ This parser reads from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | — | — | — |
 | [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
-| [`meraki_CL`](../tables/meraki-cl.md) | — | ✗ | ✓ |
+| [`meraki_CL`](../tables/meraki-cl.md) | ✓ | ✗ | ✓ |
 
 ---
 

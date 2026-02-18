@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**537 workbooks** across all Microsoft Sentinel solutions.
+**538 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -281,6 +281,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [GoogleWorkspace](googleworkspacereports-googleworkspace-6948e392.md) | 📦 [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | [GreyNoiseOverview](greynoisethreatintelligence-greynoiseoverview-879c7a2d.md) | 📦 [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
 | [GSAM365EnrichedEvents](global-secure-access-gsam365enrichedevents-b8162378.md) | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
+| [GSAMCPInsights](global-secure-access-gsamcpinsights-87ae8ba3.md) | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GSANetworkTraffic](global-secure-access-gsanetworktraffic-b1c45294.md) | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GuardianDashboard](aishield-ai-security-monitoring-guardiandashboard-2e13e015.md) | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CortexXpanseAlerts_CL`](../tables/cortexxpansealerts-cl.md) | — | ✗ | ✓ |
+| [`CortexXpanseAlerts_CL`](../tables/cortexxpansealerts-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

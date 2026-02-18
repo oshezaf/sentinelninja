@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) | — | ✗ | ✗ |
+| [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

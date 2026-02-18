@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GCPLoadBalancerLogs_CL`](../tables/gcploadbalancerlogs-cl.md) | — | ✗ | ✓ |
+| [`GCPLoadBalancerLogs_CL`](../tables/gcploadbalancerlogs-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

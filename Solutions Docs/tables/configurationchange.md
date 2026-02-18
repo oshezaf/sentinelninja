@@ -27,9 +27,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (5)
 
-### Workbooks (4)
+### Workbooks (5)
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
@@ -54,6 +54,12 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
 
 ## Resource Types
 

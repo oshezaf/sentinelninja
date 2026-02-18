@@ -26,7 +26,7 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.11 |
+| **Version** | 3.0.13 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Microsoft Defender XDR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR) |

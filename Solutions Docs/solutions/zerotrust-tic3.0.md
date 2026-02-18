@@ -20,7 +20,7 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [ZeroTrust(TIC3.0)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroTrust%28TIC3.0%29) |

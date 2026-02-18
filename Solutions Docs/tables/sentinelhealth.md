@@ -24,15 +24,24 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (5)
 
-### Workbooks (1)
+### Workbooks (5)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AutomationHealth](../content/github-only-automationhealth-5e9d0998.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
+| [SentinelHealth](../content/github-only-sentinelhealth-408e260c.md) |  |
 
 ---
 

@@ -20,7 +20,7 @@ The Microsoft Sentinel UEBA content package will provide you with various querie
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.5 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |
 | **Solution Folder** | [UEBA Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/UEBA%20Essentials) |
@@ -106,6 +106,7 @@ This solution includes **31 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                        |
 |-------------|--------------------------------|-------------------------------------------------------------------------------------------|
+| 3.0.5       | 05-02-2026                     | Resolved the UEBA Behaviors Analysis **Workbook** loading issue      |
 | 3.0.4       | 29-01-2026                     | Added new UEBA Behaviors Analysis **Workbook** to solution      |      
 | 3.0.3       | 24-11-2025                     | Added new **Hunting Queries**                                          	               |
 | 3.0.2       | 04-11-2025                     | Enhance UEBA Essentials with multi-cloud detection capabilities        	               |

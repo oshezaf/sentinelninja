@@ -17,7 +17,7 @@ Reference for AADNonInteractiveUserSignInLogs table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadnoninteractiveusersigninlogs) |
 
-## Solutions (12)
+## Solutions (13)
 
 This table is used by the following solutions:
 
@@ -30,6 +30,7 @@ This table is used by the following solutions:
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
 - [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -44,9 +45,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (20)
+## Content Items Using This Table (33)
 
-### Analytic Rules (12)
+### Analytic Rules (14)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -90,7 +91,14 @@ This table is ingested by the following connectors:
 | [TI Map IP Entity to SigninLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-signinlogs-edfc9d8a-6fb3-49e2-80c9-fea15d941799-78ede5a3.md) |  |
 | [TI map Email entity to SigninLogs](../content/threat-intelligence-new-ti-map-email-entity-to-signinlogs-4b5a7f32-899d-4d22-8de2-0ec90b911a72-aaf060bd.md) |  |
 
-### Workbooks (8)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Authentication Attempt from New Country](../content/standalone-content-authentication-attempt-from-new-country-ef895ada-e8e8-4cf0-9313-b1ab67fab69f-340ffa85.md) |  |
+| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
+
+### Workbooks (19)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -139,6 +147,22 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AADNonInteractiveUserSignInLogs](../content/github-only-aadnoninteractiveusersigninlogs-dbe045a9.md) |  |
+| [AzureActiveDirectorySignins](../content/github-only-azureactivedirectorysignins-f7e08e18.md) |  |
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [AzureOpenAIMonitoring](../content/github-only-azureopenaimonitoring-99c696c7.md) |  |
+| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) |  |
+| [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 

@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
 
@@ -27,15 +28,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Talon](../solutions/talon.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TalonInsights](../content/talon-taloninsights-a46f557d.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [TalonInsights](../content/github-only-taloninsights-c91cfb4a.md) |  |
 
 ---
 

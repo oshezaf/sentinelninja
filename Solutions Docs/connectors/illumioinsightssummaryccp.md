@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`IllumioInsightsSummary_CL`](../tables/illumioinsightssummary-cl.md) | — | ✗ | ✗ |
+| [`IllumioInsightsSummary_CL`](../tables/illumioinsightssummary-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

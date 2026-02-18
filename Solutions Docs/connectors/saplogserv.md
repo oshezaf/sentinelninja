@@ -30,7 +30,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | — | ✗ | ✓ |
+| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

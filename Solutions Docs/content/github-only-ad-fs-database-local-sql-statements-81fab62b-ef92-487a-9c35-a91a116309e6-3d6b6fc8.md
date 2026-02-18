@@ -18,6 +18,25 @@
 | **Techniques** | T1005 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/SecurityEvent/ADFSDBLocalSqlStatements.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Event`](../tables/event.md) | `EventID == "33205"`<br>`EventLog == "Application"`<br>`Source == "MSSQL$MICROSOFT##WID"` | ✓ | ✗ | ✗ |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [ESI-Opt2ExchangeServersEventLogs](../connectors/esi-opt2exchangeserverseventlogs.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| [MimecastTIRegionalConnectorAzureFunctions](../connectors/mimecasttiregionalconnectorazurefunctions.md) | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
+
+**Solutions:** [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md), [MimecastTIRegional](../solutions/mimecasttiregional.md)
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

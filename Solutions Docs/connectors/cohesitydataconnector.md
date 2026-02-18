@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Cohesity_CL`](../tables/cohesity-cl.md) | — | ✗ | ✓ |
+| [`Cohesity_CL`](../tables/cohesity-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

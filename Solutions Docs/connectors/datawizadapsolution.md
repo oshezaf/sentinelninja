@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) | — | ✗ | ✗ |
+| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) | — | ✗ | ✓ |
+| [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

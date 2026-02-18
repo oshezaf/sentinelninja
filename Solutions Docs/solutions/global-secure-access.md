@@ -42,24 +42,33 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **5 table(s)** from its content items:
+This solution queries **6 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md) | Workbooks |
+| [`NetworkAccessGenerativeAIInsights`](../tables/networkaccessgenerativeaiinsights.md) | Workbooks |
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | Analytics, Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | Workbooks |
 | [`Operation`](../tables/operation.md) | Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | Workbooks |
 
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's content items:
+
+| Table | Used By Content |
+|-------|----------------|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | Analytics |
+
 ## Content Items
 
-This solution includes **6 content item(s)**:
+This solution includes **10 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Analytic Rules | 4 |
-| Workbooks | 2 |
+| Analytic Rules | 7 |
+| Workbooks | 3 |
 
 ### Analytic Rules
 
@@ -69,18 +78,23 @@ This solution includes **6 content item(s)**:
 | [GSA - Detect Connections Outside Operational Hours](../content/global-secure-access-gsa-detect-connections-outside-operational-hours-4c9f0a9e-44d7-4c9b-b7f0-f6a6e0d8f8fa-4e59bfee.md) | High | InitialAccess | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) |
 | [GSA - Detect Protocol Changes for Destination Ports](../content/global-secure-access-gsa-detect-protocol-changes-for-destination-ports-f6a8d6a5-3e9f-47c8-a8d5-1b2b9d3b7d6a-c17b64bc.md) | Medium | DefenseEvasion, Exfiltration, CommandAndControl | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) |
 | [GSA - Detect Source IP Scanning Multiple Open Ports](../content/global-secure-access-gsa-detect-source-ip-scanning-multiple-open-ports-82cfa6b9-5f7e-4b8b-8b2f-a63f21b7a7d1-5a266ab8.md) | Medium | Discovery | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) |
+| [GSA - TI Domain Entity](../content/global-secure-access-gsa-ti-domain-entity-4ef07345-5d89-4f5b-9c64-a180d81a6176-c4743d20.md) | Medium | CommandAndControl | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [GSA - TI IP Entity](../content/global-secure-access-gsa-ti-ip-entity-3ebd25b1-6f54-49f9-b5a5-0246357ce4ca-9601350c.md) | Medium | CommandAndControl | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [GSA - TI URL Entity](../content/global-secure-access-gsa-ti-url-entity-347c6cb3-33d2-4753-b7f6-eab946a8cd51-ab57a79a.md) | Medium | CommandAndControl | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
 | [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) | [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md)<br>[`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md) |
+| [GSAMCPInsights](../content/global-secure-access-gsamcpinsights-87ae8ba3.md) | [`NetworkAccessGenerativeAIInsights`](../tables/networkaccessgenerativeaiinsights.md) |
 | [GSANetworkTraffic](../content/global-secure-access-gsanetworktraffic-b1c45294.md) | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md)<br>[`SigninLogs`](../tables/signinlogs.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                       |
 |-------------|--------------------------------|------------------------------------------------------------------------------------------|
+| 3.0.2       | 04-02-2026                     | Added new **Analytic Rules** |
 | 3.0.1       | 16-09-2025                     | Made an update to the logic of the Abnormal Port-to-Protocol **Analytic Rule** |
 | 3.0.0       | 01-08-2025                     | Updates to the workbook to improve the clarity and consistency of titles for visualizations |
 

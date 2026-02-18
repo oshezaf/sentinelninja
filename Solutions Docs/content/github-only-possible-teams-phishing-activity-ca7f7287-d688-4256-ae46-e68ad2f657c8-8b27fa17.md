@@ -18,6 +18,14 @@ This query looks for possible Teams phishing activity.
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Email%20and%20Collaboration%20Queries/Microsoft%20Teams%20protection/Possible%20Teams%20phishing%20activity.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | — |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

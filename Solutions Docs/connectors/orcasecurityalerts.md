@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) | — | ✗ | ✓ |
+| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

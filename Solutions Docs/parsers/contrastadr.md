@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | — | ✗ | ✗ |
+| [`ContrastADR_CL`](../tables/contrastadr-cl.md) | ✗ | ✗ | ✗ |
 
 ---
 

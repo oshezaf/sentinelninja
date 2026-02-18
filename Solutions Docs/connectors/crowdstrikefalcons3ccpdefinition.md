@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | — | ✗ | ✓ |
+| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) | ✓ | ✗ | ✓ |
 | [`CrowdStrike_Audit_Events_CL`](../tables/crowdstrike-audit-events-cl.md) | — | — | — |
 | [`CrowdStrike_Auth_Events_CL`](../tables/crowdstrike-auth-events-cl.md) | — | — | — |
 | [`CrowdStrike_DNS_Events_CL`](../tables/crowdstrike-dns-events-cl.md) | — | — | — |

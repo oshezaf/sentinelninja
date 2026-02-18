@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | — | — | — |
-| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) | — | ✗ | ✓ |
+| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) | ✓ | ✗ | ✓ |
 
 ---
 

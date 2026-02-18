@@ -10,19 +10,20 @@
 
 📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/azure/network-watcher/traffic-analytics-schema) - NSG flow log schema and data aggregation
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
 - [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md)
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (8)
 
 ### Analytic Rules (2)
 
@@ -38,7 +39,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [TI map IP entity to AzureNetworkAnalytics_CL (NSG Flow Logs)](../content/threat-intelligence-new-ti-map-ip-entity-to-azurenetworkanalytics-cl-nsg-flow-logs-929160b7-4449-4307-a3f9-bb742d1b8f01-d566e349.md) |  |
 
-### Hunting Queries (2)
+### Hunting Queries (3)
 
 **In solution [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md):**
 
@@ -52,13 +53,26 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [Connection from external IP to OMI related Ports](../content/legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md) |  |
 
-### Workbooks (1)
+**Standalone Content:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md) |  |
+
+### Workbooks (3)
 
 **In solution [Team Cymru Scout](../solutions/team-cymru-scout.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [AzureNetworkWatcher](../content/github-only-azurenetworkwatcher-c62a6efc.md) |  |
 
 ---
 

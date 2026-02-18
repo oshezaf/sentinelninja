@@ -24,17 +24,17 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | ✓ | ✗ | ✓ |
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
-| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) | `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | ✓ | ✗ | ✓ |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ✓ |
 | [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |  | ✓ | ✗ | — |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType == "AZUREFIREWALLS"` | — | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType == "AZUREFIREWALLS"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | — |
 | [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | — | ✗ | ✓ |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | ✓ | ✗ | ✓ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | — |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | — | — | — |
 | [`ProtectionStatus`](../tables/protectionstatus.md) |  | ✓ | ✗ | — |

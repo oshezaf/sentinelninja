@@ -1,4 +1,4 @@
-# Star Blizzard C2 Domains August 2022
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Star Blizzard C2 Domains August 2022
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -19,6 +19,40 @@ Identifies a match across various data feeds for domains related to an actor tra
 | **Techniques** | T1566 |
 | **Required Connectors** | [AzureMonitor(VMInsights)](../connectors/azuremonitor-vminsights.md), [CiscoASA](../connectors/ciscoasa.md), [PaloAltoNetworks](../connectors/paloaltonetworks.md), [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md), [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/MultipleDataSources/StarBlizzardDomainsAugust2022.yaml) |
+
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`_Im_Dns`](../asim/imdns.md)
+- [`_Im_WebSession`](../asim/imwebsession.md)
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | ✗ | ✗ | ✗ |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | — |
+| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ | — |
+| [`VMConnection`](../tables/vmconnection.md) | ✗ | ✗ | — |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [CefAma](../connectors/cefama.md) | [Common Event Format](../solutions/common-event-format.md) |
+| [SlashNextFunctionApp](../connectors/slashnextfunctionapp.md) | [SlashNext](../solutions/slashnext.md) |
+| [VirtualMetricDirectorProxy](../connectors/virtualmetricdirectorproxy.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| [VirtualMetricMSSentinelConnector](../connectors/virtualmetricmssentinelconnector.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| [VirtualMetricMSSentinelDataLakeConnector](../connectors/virtualmetricmssentineldatalakeconnector.md) | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+
+**Solutions:** [Common Event Format](../solutions/common-event-format.md), [SlashNext](../solutions/slashnext.md), [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)
 
 ---
 

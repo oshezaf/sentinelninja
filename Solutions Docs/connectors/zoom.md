@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Zoom_CL`](../tables/zoom-cl.md) | — | ✗ | ✓ |
+| [`Zoom_CL`](../tables/zoom-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

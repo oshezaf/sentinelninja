@@ -6,7 +6,7 @@ Content items are the security artifacts that provide value from the data collec
 
 ---
 
-**6,601 content items** across all Microsoft Sentinel solutions. See [📊 Statistics](../statistics.md) for detailed breakdowns by type and source.
+**6,606 content items** across all Microsoft Sentinel solutions. See [📊 Statistics](../statistics.md) for detailed breakdowns by type and source.
 
 ---
 
@@ -14,10 +14,10 @@ Content is organized by type. Click on a content type below to browse all items 
 
 | Content Type | Count | Description |
 |:-------------|------:|:------------|
-| [Analytic Rules](analytic-rules.md) | 2366 | Detection rules for identifying security threats. [Learn more](https://learn.microsoft.com/azure/sentinel/detect-threats-built-in) |
+| [Analytic Rules](analytic-rules.md) | 2369 | Detection rules for identifying security threats. [Learn more](https://learn.microsoft.com/azure/sentinel/detect-threats-built-in) |
 | [Hunting Queries](hunting-queries.md) | 2292 | Proactive threat hunting queries. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting) |
-| [Playbooks](playbooks.md) | 819 | Automated response and remediation workflows. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks) |
-| [Workbooks](workbooks.md) | 537 | Interactive dashboards and reports. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data) |
+| [Playbooks](playbooks.md) | 820 | Automated response and remediation workflows. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks) |
+| [Workbooks](workbooks.md) | 538 | Interactive dashboards and reports. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data) |
 | [Parsers](../parsers/parsers-index.md) | 514* | Data normalization and transformation functions. [Learn more](https://learn.microsoft.com/azure/sentinel/normalization) |
 | [Watchlists](watchlists.md) | 48 | Reference data lists for enrichment and filtering. [Learn more](https://learn.microsoft.com/azure/sentinel/watchlists) |
 | [Summary Rules](summary-rules.md) | 25 | Rules for aggregating and summarizing data. [Learn more](https://learn.microsoft.com/azure/sentinel/summary-rules) |

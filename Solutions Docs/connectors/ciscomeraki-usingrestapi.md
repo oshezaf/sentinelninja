@@ -34,7 +34,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | — | — | — |
 | [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
-| [`meraki_CL`](../tables/meraki-cl.md) | — | ✗ | ✓ |
+| [`meraki_CL`](../tables/meraki-cl.md) | ✓ | ✗ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

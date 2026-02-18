@@ -31,7 +31,7 @@ This content item queries data from the following tables:
 | [`AZFWFlowTrace`](../tables/azfwflowtrace.md) | ✓ | ✗ | ✓ |
 | [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | ✓ | ✗ | ✓ |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | — | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | ✗ | ✗ | ✗ |
 
 ---
 

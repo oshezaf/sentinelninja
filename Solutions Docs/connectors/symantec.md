@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SymantecICDx_CL`](../tables/symantecicdx-cl.md) | — | ✗ | ✗ |
+| [`SymantecICDx_CL`](../tables/symantecicdx-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

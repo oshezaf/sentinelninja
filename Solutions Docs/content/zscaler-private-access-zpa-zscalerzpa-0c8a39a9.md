@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZPA_CL`](../tables/zpa-cl.md) | — | ✗ | ✓ |
+| [`ZPA_CL`](../tables/zpa-cl.md) | ✓ | ✗ | ✓ |
 
 ---
 

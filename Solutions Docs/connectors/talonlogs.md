@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Talon_CL`](../tables/talon-cl.md) | — | ✗ | ✗ |
+| [`Talon_CL`](../tables/talon-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

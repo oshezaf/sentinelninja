@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
 
@@ -26,6 +27,16 @@ This table is ingested by the following connectors:
 | [Cribl](../connectors/cribl.md) |  |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Content Item | Selection Criteria |
+|:-------------|:-------------------|
+| [CriblWorkbook](../content/github-only-criblworkbook-923de34f.md) |  |
 
 ## Parsers Using This Table (1)
 

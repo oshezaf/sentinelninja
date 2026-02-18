@@ -24,7 +24,7 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
+| **Version** | 3.1.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |
 | **Solution Folder** | [Rapid7InsightVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM) |
@@ -72,6 +72,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
+| 3.1.1       | 05-02-2026                     | Update Az Func packages related to **InsightVMCloudData Connector**            |
 | 3.1.0       | 03-02-2026                     | Update **Data Connector** to use latest 4.x Azure Functions extension bundles  |
 | 3.0.1       | 03-05-2024                     | Fixed Metadata issue for ParserName and ParentId mismatch  |
 | 3.0.0       | 16-01-2024                     | Updated Manual Deployment instructions in **Data Connector** Description  |

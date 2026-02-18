@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Garrison_ULTRARemoteLogs_CL`](../tables/garrison-ultraremotelogs-cl.md) | — | ✗ | ✗ |
+| [`Garrison_ULTRARemoteLogs_CL`](../tables/garrison-ultraremotelogs-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

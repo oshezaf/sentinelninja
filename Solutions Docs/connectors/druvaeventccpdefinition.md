@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`DruvaInsyncEvents_CL`](../tables/druvainsyncevents-cl.md) | — | — | — |
 | [`DruvaPlatformEvents_CL`](../tables/druvaplatformevents-cl.md) | — | — | — |
-| [`DruvaSecurityEvents_CL`](../tables/druvasecurityevents-cl.md) | — | ✗ | ✓ |
+| [`DruvaSecurityEvents_CL`](../tables/druvasecurityevents-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

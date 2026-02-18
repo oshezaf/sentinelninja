@@ -18,11 +18,11 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | — | ✗ | ✓ |
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | — | ✗ | ✓ |
-| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | — | ✗ | ✓ |
-| [`Health_Data_CL`](../tables/health-data-cl.md) | — | ✗ | ✓ |
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | — | ✗ | ✓ |
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) | ✓ | ✗ | ✓ |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ✓ | ✗ | ✓ |
+| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | ✓ | ✗ | ✓ |
+| [`Health_Data_CL`](../tables/health-data-cl.md) | ✓ | ✗ | ✓ |
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | ✓ | ✗ | ✓ |
 
 ---
 

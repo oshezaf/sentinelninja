@@ -288,8 +288,8 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [CriblInternal](criblinternal.md) | 📦 [Cribl](../solutions/cribl.md) | CriblInternal_CL |
 | [CriblUIAccess](cribluiaccess.md) | 📦 [Cribl](../solutions/cribl.md) | CriblUIAccess_CL |
 | [CrowdStrikeFalconEventStream](crowdstrikefalconeventstream.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CommonSecurityLog |
-| [CrowdStrikeReplicator](crowdstrikereplicator.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdstrikeReplicatorLogs_CL |
-| [CrowdStrikeReplicator](crowdstrikereplicator.md) ⚠️ | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdstrikeReplicatorLogs_CL |
+| [CrowdStrikeReplicator](crowdstrikereplicator.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL |
+| [CrowdStrikeReplicator](crowdstrikereplicator.md) ⚠️ | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL |
 | [CrowdStrikeReplicatorV2](crowdstrikereplicatorv2.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | ASimAuditEventLogs, ASimAuthenticationEventLogs, ... |
 | [CyberArkEPM](cyberarkepm.md) | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) | CyberArkEPM_CL |
 | [CylancePROTECT](cylanceprotect.md) | 📦 [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md) | Syslog, syslog |
@@ -483,7 +483,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [MapNetflowUsername](mapnetflowusername.md) ⚠️ | 📦 [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | — |
 | [MarkLogicAudit](marklogicaudit.md) | 📦 [MarkLogicAudit](../solutions/marklogicaudit.md) | MarkLogicAudit_CL |
-| [McAfee Common Security Log Parser](mcafee-common-security-log-parser.md) | 📂 *Legacy* | CommonSecurityLog |
+| [McAfeeCommonSecurityLog](mcafeecommonsecuritylog.md) | 📂 *Legacy* | CommonSecurityLog |
 | [McAfeeEPOEvent](mcafeeepoevent.md) | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) | Syslog |
 | [McAfeeNSPEvent](mcafeenspevent.md) | 📦 [McAfee Network Security Platform](../solutions/mcafee-network-security-platform.md) | Syslog |
 | [MCASActivity](mcasactivity.md) | 📂 *Legacy* | MCASActivity_CL |

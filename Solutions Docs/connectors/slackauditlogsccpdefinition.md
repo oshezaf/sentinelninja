@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | — | ✗ | ✓ |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

@@ -24,7 +24,7 @@ a. [Agent based logs collection from Windows and Linux machines](https://docs.mi
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.corelight.com/](https://support.corelight.com/) |
 | **Categories** | domains |
-| **Version** | 3.2.2 |
+| **Version** | 3.2.3 |
 | **Author** | Corelight - info@corelight.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Corelight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight) |

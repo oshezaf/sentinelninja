@@ -9,10 +9,22 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Crowdstrike |
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
 
 ---
+
+## Parsers Using This Table (2)
+
+### Other Parsers (2)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [CrowdStrikeReplicator](../parsers/crowdstrikereplicator.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
+| [CrowdStrikeReplicator](../parsers/crowdstrikereplicator.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) ⚠️ |  |
+
+> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
 
 ---
 

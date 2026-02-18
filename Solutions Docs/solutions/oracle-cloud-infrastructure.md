@@ -24,7 +24,7 @@ This Solution takes a dependency on the following technologies, and some of thes
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.6 |
+| **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Oracle Cloud Infrastructure](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure) |
@@ -106,6 +106,7 @@ This solution includes **22 content item(s)**:
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                          |
 |-------------|--------------------------------|-----------------------------------------------------------------------------|
 | 3.1.0       | 03-02-2026                     | Add support for group Cursor                                                |
+| 3.0.8       | 05-02-2026                     | fix name in package 3.0.7                                                   |
 | 3.0.7       | 26-01-2026                     | Improve Instructions part of the connector with more InfoMessage.           |
 | 3.0.6       | 09-12-2025                     | Support Multistream + multi partition.       |
 | 3.0.5       | 13-11-2025                     | Updated partition id text box's description with zero-based indexing.       |

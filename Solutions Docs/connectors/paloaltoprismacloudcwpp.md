@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`PrismaCloudCompute_CL`](../tables/prismacloudcompute-cl.md) | — | ✗ | ✓ |
+| [`PrismaCloudCompute_CL`](../tables/prismacloudcompute-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

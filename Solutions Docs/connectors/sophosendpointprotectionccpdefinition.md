@@ -25,7 +25,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SophosEPAlerts_CL`](../tables/sophosepalerts-cl.md) | — | — | — |
-| [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | — | ✗ | ✓ |
+| [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

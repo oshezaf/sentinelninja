@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | — | ✗ | ✗ |
+| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | ✗ | ✗ | ✗ |
 
 ## Permissions
 

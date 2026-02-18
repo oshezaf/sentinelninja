@@ -1,4 +1,4 @@
-# Suspicious enumeration using Adfind tool (Normalized Process Events)
+# <img src="../images/asim-badge.png" alt="ASIM" height="32"> Suspicious enumeration using Adfind tool (Normalized Process Events)
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
@@ -17,6 +17,12 @@ Attackers can use Adfind which is administrative tool to gather information abou
 | **Techniques** | T1059, T1087, T1482, T1201, T1069, T1074 |
 | **Required Connectors** | [SecurityEvents](../connectors/securityevents.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/ASimProcess/imProcess_Suspicious_enumeration_using_adfind.yaml) |
+
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
+
+This content item uses ASIM (Advanced Security Information Model) parsers for normalized data:
+
+- [`imProcessCreate`](../asim/improcesscreate.md)
 
 ---
 

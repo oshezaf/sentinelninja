@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SOCPrimeAuditLogs_CL`](../tables/socprimeauditlogs-cl.md) | — | ✗ | ✓ |
+| [`SOCPrimeAuditLogs_CL`](../tables/socprimeauditlogs-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

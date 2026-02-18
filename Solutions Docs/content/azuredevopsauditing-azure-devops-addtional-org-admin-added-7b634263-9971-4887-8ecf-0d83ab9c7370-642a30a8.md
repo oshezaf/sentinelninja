@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | — | ✗ | ✓ |
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | ✓ | ✗ | ✓ |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ | — |
 
 ---

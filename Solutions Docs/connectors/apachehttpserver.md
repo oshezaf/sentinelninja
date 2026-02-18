@@ -32,7 +32,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | — | ✗ | ✓ |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | ✓ | ✗ | ✓ |
 
 ## Permissions
 

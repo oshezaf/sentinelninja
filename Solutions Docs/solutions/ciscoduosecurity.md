@@ -8,7 +8,7 @@
 
 ---
 
-The [Cisco Duo Security](https://duo.com/) solution allows you to ingest [authentication logs](https://duo.com/docs/adminapi#authentication-logs), [administrator logs](https://duo.com/docs/adminapi#administrator-logs), [telephony logs](https://duo.com/docs/adminapi#telephony-logs), [offline enrolment logs](https://duo.com/docs/adminapi#offline-enrollment-logs) and [Trust Monitor events](https://duo.com/docs/adminapi#trust-monitor) into Microsoft Sentinel using the Cisco Duo Admin API. Refer to [API documentation](https://duo.com/docs/adminapi) for more information.
+The [Cisco Duo Security](https://duo.com/) solution allows you to ingest [authentication logs](https://duo.com/docs/adminapi#authentication-logs), [activity logs](https://duo.com/docs/adminapi#activity-logs), [administrator logs](https://duo.com/docs/adminapi#administrator-logs), [telephony logs](https://duo.com/docs/adminapi#telephony-logs), [offline enrolment logs](https://duo.com/docs/adminapi#offline-enrollment-logs) and [Trust Monitor events](https://duo.com/docs/adminapi#trust-monitor) into Microsoft Sentinel using the Cisco Duo Admin API. Refer to [API documentation](https://duo.com/docs/adminapi) for more information.
   
   **Underlying Microsoft Technologies used:** 
 
@@ -30,8 +30,8 @@ The [Cisco Duo Security](https://duo.com/) solution allows you to ingest [authen
 | **Support Tier** | Partner |
 | **Support Link** | [https://duo.com/support](https://duo.com/support) |
 | **Categories** | domains |
-| **Version** | 3.0.4 |
-| **Author** | Microsoft - support@microsoft.com |
+| **Version** | 3.1.0 |
+| **Author** | CiscoDuoSecurity - support@duosecurity.com |
 | **First Published** | 2022-01-07 |
 | **Solution Folder** | [CiscoDuoSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity) |
 
@@ -106,6 +106,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                     |
 |-------------|--------------------------------|--------------------------------------------------------|
+|  3.1.0      |  03-02-2026                    | Python runtime compatibility fix (breaking for connector deployments running on Python 3.11). Fixed solution installation via Azure portal by deriving deployment **location** from selected workspace (prevents empty location). |
 |  3.0.4      |  26-09-2025                    | Updated support **Microsoft** to **Partner**                   |
 |  3.0.3      |  02-09-2025                    | Added support for new log endpoints                   |
 |  3.0.2      |  16-04-2024                    | Added Deploy to Azure Goverment button for Government portal in **Dataconnector**<br/> Fixed **Parser** issue for Parser name and ParentID mismatch |

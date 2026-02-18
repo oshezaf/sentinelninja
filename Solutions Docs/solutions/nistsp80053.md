@@ -18,7 +18,7 @@ This solution enables Compliance Teams, Architects, SecOps Analysts, and Consult
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-02-24 |
 | **Solution Folder** | [NISTSP80053](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NISTSP80053) |

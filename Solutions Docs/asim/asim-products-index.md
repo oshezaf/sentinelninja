@@ -624,7 +624,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAlertEventMicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md)<br>vim: [vimAlertEventMicrosoftDefenderXDR](vimalerteventmicrosoftdefenderxdr.md) | AlertEvent | [AlertEvidence](../tables/alertevidence.md) | 0.1.0 |
+| ASim: [ASimAlertEventMicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md)<br>vim: [vimAlertEventMicrosoftDefenderXDR](vimalerteventmicrosoftdefenderxdr.md) | AlertEvent | [AlertEvidence](../tables/alertevidence.md) | 0.2.0 |
 
 ## Microsoft Entra ID
 
@@ -636,10 +636,10 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationAADManagedIdentitySignInLogs](asimauthenticationaadmanagedidentitysigninlogs.md)<br>vim: [vimAuthenticationAADManagedIdentitySignInLogs](vimauthenticationaadmanagedidentitysigninlogs.md) | Authentication | [AADManagedIdentitySignInLogs](../tables/aadmanagedidentitysigninlogs.md) | 0.2.2 |
-| ASim: [ASimAuthenticationAADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md)<br>vim: [vimAuthenticationAADNonInteractiveUserSignInLogs](vimauthenticationaadnoninteractiveusersigninlogs.md) | Authentication | [AADNonInteractiveUserSignInLogs](../tables/aadnoninteractiveusersigninlogs.md) | 0.2.2 |
-| ASim: [ASimAuthenticationAADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md)<br>vim: [vimAuthenticationAADServicePrincipalSignInLogs](vimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | [AADServicePrincipalSignInLogs](../tables/aadserviceprincipalsigninlogs.md) | 0.2.2 |
-| ASim: [ASimAuthenticationSigninLogs](asimauthenticationsigninlogs.md)<br>vim: [vimAuthenticationSigninLogs](vimauthenticationsigninlogs.md) | Authentication | [SigninLogs](../tables/signinlogs.md) | 0.4.0 |
+| ASim: [ASimAuthenticationAADManagedIdentitySignInLogs](asimauthenticationaadmanagedidentitysigninlogs.md)<br>vim: [vimAuthenticationAADManagedIdentitySignInLogs](vimauthenticationaadmanagedidentitysigninlogs.md) | Authentication | [AADManagedIdentitySignInLogs](../tables/aadmanagedidentitysigninlogs.md) | 0.2.3 |
+| ASim: [ASimAuthenticationAADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md)<br>vim: [vimAuthenticationAADNonInteractiveUserSignInLogs](vimauthenticationaadnoninteractiveusersigninlogs.md) | Authentication | [AADNonInteractiveUserSignInLogs](../tables/aadnoninteractiveusersigninlogs.md) | 0.2.3 |
+| ASim: [ASimAuthenticationAADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md)<br>vim: [vimAuthenticationAADServicePrincipalSignInLogs](vimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | [AADServicePrincipalSignInLogs](../tables/aadserviceprincipalsigninlogs.md) | 0.2.3 |
+| ASim: [ASimAuthenticationSigninLogs](asimauthenticationsigninlogs.md)<br>vim: [vimAuthenticationSigninLogs](vimauthenticationsigninlogs.md) | Authentication | [SigninLogs](../tables/signinlogs.md) | 0.4.1 |
 
 ## Microsoft Security Event
 
