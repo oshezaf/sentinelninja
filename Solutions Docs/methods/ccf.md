@@ -18,8 +18,8 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **108** |
-| Active | 102 |
+| Total Connectors | **106** |
+| Active | 100 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 6 |
 
@@ -56,7 +56,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Cisco Secure Endpoint (via Codeless Connector Framework)](../connectors/ciscosecureendpointlogsccpdefinition.md) | Microsoft | 2 | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md) | Microsoft | 1 | [Cloudflare](../solutions/cloudflare.md) |
 | [Cortex XDR - Incidents](../connectors/cortexxdrincidents.md) | DEFEND Ltd. | 1 | [Cortex XDR](../solutions/cortex-xdr.md) |
-| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | Microsoft | 4 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | Microsoft | 5 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) | Microsoft | 10 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyble Vision Alerts](../connectors/cyblevisionalerts.md) | Cyble | 1 | [Cyble Vision](../solutions/cyble-vision.md) |
 | [Cyera DSPM Microsoft Sentinel Data Connector](../connectors/cyeradspmccf.md) ⚠️ | Cyera Inc | 5 | [CyeraDSPM](../solutions/cyeradspm.md) |
@@ -69,7 +69,6 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) | Cyren | 1 | [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md) |
 | [Druva Events Connector](../connectors/druvaeventccpdefinition.md) | Microsoft | 3 | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md) | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
-| [Egress Iris Connector](../connectors/egresssiempolling.md) | Egress Software Technologies | 2 | [Egress Iris](../solutions/egress-iris.md) |
 | [Ermes Browser Security Events](../connectors/ermesbrowsersecurityevents.md) | Ermes Cyber Security S.p.A. | 1 | [Ermes Browser Security](../solutions/ermes-browser-security.md) |
 | [GCP Cloud Run (via Codeless Connector Framework)](../connectors/gcpcloudrunlogs-connectordefinition.md) | Microsoft | 1 | [Google Cloud Platform Cloud Run](../solutions/google-cloud-platform-cloud-run.md) |
 | [GCP Cloud SQL (via Codeless Connector Framework)](../connectors/gcpcloudsqlccfdefinition.md) | Microsoft | 1 | [GoogleCloudPlatformSQL](../solutions/googlecloudplatformsql.md) |
@@ -111,7 +110,6 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Palo Alto Cortex Xpanse (via Codeless Connector Framework)](../connectors/paloaltoexpanseccpdefinition.md) | Microsoft | 1 | [Palo Alto Cortex Xpanse CCF](../solutions/palo-alto-cortex-xpanse-ccf.md) |
 | [Palo Alto Prisma Cloud CSPM (via Codeless Connector Framework)](../connectors/paloaltoprismacloudcspmccpdefinition.md) | Microsoft | 2 | [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/paloaltoprismacloudcwpp.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
-| [Phosphorus Devices](../connectors/phosphorus-polling.md) | Phosphorus Inc. | 1 | [Phosphorus](../solutions/phosphorus.md) |
 | [Ping One (via Codeless Connector Framework)](../connectors/pingoneauditlogsccpdefinition.md) | Microsoft | 1 | [PingOne](../solutions/pingone.md) |
 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) | Proofpoint | 2 | [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |

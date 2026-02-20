@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GreyNoiseIPCommunity_CL`](../tables/greynoiseipcommunity-cl.md) | — | — | — |
+| [`GreyNoiseIPCommunity_CL`](../tables/greynoiseipcommunity-cl.md) | ? | ✓ | ? |
 
 ---
 

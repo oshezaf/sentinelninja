@@ -26,11 +26,13 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyeraAssets_CL`](../tables/cyeraassets-cl.md) | — | — | — |
-| [`CyeraAssets_MS_CL`](../tables/cyeraassets-ms-cl.md) | — | — | — |
-| [`CyeraClassifications_CL`](../tables/cyeraclassifications-cl.md) | — | — | — |
-| [`CyeraIdentities_CL`](../tables/cyeraidentities-cl.md) | — | — | — |
-| [`CyeraIssues_CL`](../tables/cyeraissues-cl.md) | — | — | — |
+| [`CyeraAssets_CL`](../tables/cyeraassets-cl.md) | ? | ✓ | ? |
+| [`CyeraAssets_MS_CL`](../tables/cyeraassets-ms-cl.md) | ? | ✓ | ? |
+| [`CyeraClassifications_CL`](../tables/cyeraclassifications-cl.md) | ? | ✓ | ? |
+| [`CyeraIdentities_CL`](../tables/cyeraidentities-cl.md) | ? | ✓ | ? |
+| [`CyeraIssues_CL`](../tables/cyeraissues-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

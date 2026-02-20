@@ -22,8 +22,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GIBTIACompromisedCard_CL`](../tables/gibtiacompromisedcard-cl.md) | — | — | — |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — | — |
+| [`GIBTIACompromisedCard_CL`](../tables/gibtiacompromisedcard-cl.md) | ? | ✓ | ? |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | ? | ✓ | ? |
 
 ## Additional Documentation
 

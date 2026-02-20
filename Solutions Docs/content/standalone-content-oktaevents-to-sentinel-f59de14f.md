@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Okta_Events_CL`](../tables/okta-events-cl.md) | — | — | — |
+| [`Okta_Events_CL`](../tables/okta-events-cl.md) | ? | ✓ | ? |
 
 ---
 

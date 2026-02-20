@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ | — |
+| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ | ? |
 
 ---
 

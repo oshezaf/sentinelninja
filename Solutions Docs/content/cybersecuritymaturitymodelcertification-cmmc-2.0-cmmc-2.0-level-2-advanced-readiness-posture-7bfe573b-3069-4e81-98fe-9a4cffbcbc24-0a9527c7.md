@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ | — |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ | ? |
 
 ---
 

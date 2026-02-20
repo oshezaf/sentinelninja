@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) | — | — | — |
+| [`RecordedFuturePortalAlerts_CL`](../tables/recordedfutureportalalerts-cl.md) | ? | ✓ | ? |
 
 ---
 

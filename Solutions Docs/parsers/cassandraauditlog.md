@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CassandraAuditLog_CL`](../tables/cassandraauditlog-cl.md) | — | — | — |
+| [`CassandraAuditLog_CL`](../tables/cassandraauditlog-cl.md) | ? | ? | ? |
 
 ---
 

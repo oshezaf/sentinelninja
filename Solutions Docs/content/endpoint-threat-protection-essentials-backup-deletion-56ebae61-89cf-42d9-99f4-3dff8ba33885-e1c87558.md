@@ -30,7 +30,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
 | [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ✓ |
 

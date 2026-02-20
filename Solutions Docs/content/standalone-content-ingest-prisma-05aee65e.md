@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Prisma_CL`](../tables/prisma-cl.md) | — | — | — |
+| [`Prisma_CL`](../tables/prisma-cl.md) | ? | ✓ | ? |
 
 ---
 

@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MerakiSecurityEvents_CL`](../tables/merakisecurityevents-cl.md) | — | — | — |
+| [`MerakiSecurityEvents_CL`](../tables/merakisecurityevents-cl.md) | ? | ✓ | ? |
 
 ---
 

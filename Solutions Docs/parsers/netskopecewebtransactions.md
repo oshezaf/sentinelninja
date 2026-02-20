@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) | — | — | — |
+| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) | ? | ✓ | ? |
 
 ---
 

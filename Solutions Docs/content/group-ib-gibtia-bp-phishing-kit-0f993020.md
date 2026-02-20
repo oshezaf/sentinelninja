@@ -22,8 +22,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GIBTIABPPhishingKit_CL`](../tables/gibtiabpphishingkit-cl.md) | — | — | — |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — | — |
+| [`GIBTIABPPhishingKit_CL`](../tables/gibtiabpphishingkit-cl.md) | ? | ✓ | ? |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | ? | ✓ | ? |
 
 ## Additional Documentation
 

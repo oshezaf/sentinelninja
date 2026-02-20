@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MCASActivity_CL`](../tables/mcasactivity-cl.md) | — | — | — |
+| [`MCASActivity_CL`](../tables/mcasactivity-cl.md) | ? | ? | ? |
 
 ---
 

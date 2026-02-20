@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CoreAzureBackup`](../tables/coreazurebackup.md) | ✓ | ✗ | — |
+| [`CoreAzureBackup`](../tables/coreazurebackup.md) | ✓ | ✗ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ---

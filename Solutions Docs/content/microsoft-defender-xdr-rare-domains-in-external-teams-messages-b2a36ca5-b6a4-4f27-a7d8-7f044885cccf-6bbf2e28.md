@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MessageEvents`](../tables/messageevents.md) | — | ✗ | — |
-| [`MessageUrlInfo`](../tables/messageurlinfo.md) | — | ✗ | — |
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | — |
+| [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
+| [`MessageUrlInfo`](../tables/messageurlinfo.md) | ? | ✗ | ? |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | ? |
 
 ---
 

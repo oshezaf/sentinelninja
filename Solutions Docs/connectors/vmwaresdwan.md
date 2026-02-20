@@ -26,10 +26,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VMware_CWS_DLPLogs_CL`](../tables/vmware-cws-dlplogs-cl.md) | — | — | — |
-| [`VMware_CWS_Health_CL`](../tables/vmware-cws-health-cl.md) | — | — | — |
-| [`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md) | — | — | — |
-| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) | — | — | — |
+| [`VMware_CWS_DLPLogs_CL`](../tables/vmware-cws-dlplogs-cl.md) | ? | ✓ | ? |
+| [`VMware_CWS_Health_CL`](../tables/vmware-cws-health-cl.md) | ? | ✓ | ? |
+| [`VMware_CWS_Weblogs_CL`](../tables/vmware-cws-weblogs-cl.md) | ? | ✓ | ? |
+| [`VMware_VECO_EventLogs_CL`](../tables/vmware-veco-eventlogs-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

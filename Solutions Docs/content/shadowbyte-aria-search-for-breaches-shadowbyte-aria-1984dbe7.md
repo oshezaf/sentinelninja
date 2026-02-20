@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) | — | — | — |
+| [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) | ? | ✓ | ? |
 
 ## Additional Documentation
 

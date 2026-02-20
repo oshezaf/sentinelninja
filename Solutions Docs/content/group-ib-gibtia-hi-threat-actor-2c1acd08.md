@@ -22,8 +22,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GIBTIAHIThreatActor_CL`](../tables/gibtiahithreatactor-cl.md) | — | — | — |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — | — |
+| [`GIBTIAHIThreatActor_CL`](../tables/gibtiahithreatactor-cl.md) | ? | ✓ | ? |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | ? | ✓ | ? |
 
 ## Additional Documentation
 

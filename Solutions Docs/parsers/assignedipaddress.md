@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | ✓ | ✗ | — |
+| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) | ✓ | ✗ | ? |
 
 ---
 

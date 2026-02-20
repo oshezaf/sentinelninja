@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) | — | — | — |
+| [`TaniumThreatResponse_CL`](../tables/taniumthreatresponse-cl.md) | ? | ✓ | ? |
 
 ---
 

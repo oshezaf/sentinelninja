@@ -22,8 +22,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GIBTIASuspiciousIPOpenProxy_CL`](../tables/gibtiasuspiciousipopenproxy-cl.md) | — | — | — |
-| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | — | — | — |
+| [`GIBTIASuspiciousIPOpenProxy_CL`](../tables/gibtiasuspiciousipopenproxy-cl.md) | ? | ✓ | ? |
+| [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | ? | ✓ | ? |
 
 ## Additional Documentation
 

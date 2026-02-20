@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`vectra_kerberos_CL`](../tables/vectra-kerberos-cl.md) | — | — | — |
+| [`vectra_kerberos_CL`](../tables/vectra-kerberos-cl.md) | ? | ✓ | ? |
 
 ---
 

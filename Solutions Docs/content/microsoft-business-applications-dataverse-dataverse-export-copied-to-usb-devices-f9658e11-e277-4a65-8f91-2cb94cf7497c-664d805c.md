@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
 | [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
-| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ | — |
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ | ? |
 
 ---
 

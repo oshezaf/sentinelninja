@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | — | — | — |
+| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | ? | ✓ | ? |
 
 ---
 

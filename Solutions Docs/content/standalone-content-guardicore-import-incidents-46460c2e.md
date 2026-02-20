@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GCIncidents_CL`](../tables/gcincidents-cl.md) | — | — | — |
+| [`GCIncidents_CL`](../tables/gcincidents-cl.md) | ? | ✓ | ? |
 
 ---
 

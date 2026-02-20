@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | ✓ | ✗ | ✓ |
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | — |
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ? |
 | [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ✓ |
 
 ---

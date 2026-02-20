@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHub_CL`](../tables/github-cl.md) | — | — | — |
+| [`GitHub_CL`](../tables/github-cl.md) | ? | ✓ | ? |
 
 ---
 

@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Crowdstrike_Alerts_CL`](../tables/crowdstrike-alerts-cl.md) | — | — | — |
+| [`Crowdstrike_Alerts_CL`](../tables/crowdstrike-alerts-cl.md) | ? | ✓ | ? |
 
 ---
 

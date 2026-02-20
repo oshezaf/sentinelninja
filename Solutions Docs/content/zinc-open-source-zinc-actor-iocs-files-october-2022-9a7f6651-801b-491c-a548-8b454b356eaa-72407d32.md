@@ -28,11 +28,11 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | — |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | — |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
 | [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
-| [`Image`](../tables/image.md) | — | — | — |
+| [`Image`](../tables/image.md) | ? | ? | ? |
 | [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ✓ |
 
 ---

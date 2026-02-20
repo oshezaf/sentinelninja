@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | — |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | — |
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ? |
+| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | ? |
 
 ---
 

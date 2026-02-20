@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | — |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | ? |
 
 ---
 

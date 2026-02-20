@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — | — |
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | ? | ✓ | ? |
 
 ## Parameters
 

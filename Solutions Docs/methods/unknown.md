@@ -27,7 +27,7 @@ The collection method for these connectors could not be automatically determined
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [Azure Resource Graph](../connectors/azureresourcegraph.md) | Microsoft | — | [Azure Resource Graph](../solutions/azure-resource-graph.md) |
+| [Azure Resource Graph](../connectors/azureresourcegraph.md) | Microsoft | ? | [Azure Resource Graph](../solutions/azure-resource-graph.md) |
 | [Google Security Command Center](../connectors/googlesccdefinition.md) ➕ | Microsoft | 1 | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) | Microsoft | 3 | [Threat Intelligence](../solutions/threat-intelligence.md) |
 

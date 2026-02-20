@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AADUserInfo_CL`](../tables/aaduserinfo-cl.md) | — | — | — |
+| [`AADUserInfo_CL`](../tables/aaduserinfo-cl.md) | ? | ? | ? |
 
 ---
 

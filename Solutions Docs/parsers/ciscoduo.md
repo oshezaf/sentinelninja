@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) | — | — | — |
+| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) | ? | ✓ | ? |
 
 ---
 

@@ -32,7 +32,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Watchlist`](../tables/watchlist.md) | ✓ | ✗ | — |
+| [`Watchlist`](../tables/watchlist.md) | ✓ | ✗ | ? |
 
 ---
 

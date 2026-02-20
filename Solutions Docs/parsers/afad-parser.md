@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | — | — | — |
+| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | ? | ✓ | ? |
 
 ---
 

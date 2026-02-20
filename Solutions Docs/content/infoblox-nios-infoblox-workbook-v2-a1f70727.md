@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "DHCPINFORM"` | ✓ | ✓ | ✓ |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) | — | — | — |
+| [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) | ? | ✓ | ? |
 
 ---
 

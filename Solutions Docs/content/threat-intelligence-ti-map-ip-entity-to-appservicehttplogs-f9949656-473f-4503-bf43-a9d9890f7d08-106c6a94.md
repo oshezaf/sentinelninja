@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AppServiceHTTPLogs`](../tables/appservicehttplogs.md) | ✓ | ✗ | — |
+| [`AppServiceHTTPLogs`](../tables/appservicehttplogs.md) | ✓ | ✗ | ? |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
 
 ---

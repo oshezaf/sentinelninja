@@ -35,7 +35,7 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Amazon Web Services S3](../connectors/awss3.md) ➕ | Amazon | 4 | [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Dynamics 365](../connectors/dynamics365.md) | Microsoft | 1 | [Dynamics 365](../solutions/dynamics-365.md) |
 | [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) ➕ | Microsoft | 1 | [Microsoft 365](../solutions/microsoft-365.md) |
-| [Microsoft 365 Assets (formerly, Office 365)](../connectors/m365assets.md) | Microsoft | — | [Microsoft 365 Assets](../solutions/microsoft-365-assets.md) |
+| [Microsoft 365 Assets (formerly, Office 365)](../connectors/m365assets.md) | Microsoft | ? | [Microsoft 365 Assets](../solutions/microsoft-365-assets.md) |
 | [Microsoft 365 Insider Risk Management](../connectors/officeirm.md) | Microsoft | 1 | [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
 | [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md) | Microsoft | 2 | [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
 | [Microsoft Defender for Endpoint](../connectors/microsoftdefenderadvancedthreatprotection.md) | Microsoft | 1 | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
@@ -45,7 +45,7 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) | Microsoft | 3 | [Threat Intelligence](../solutions/threat-intelligence.md) |
 | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) ➕ | Microsoft | 22 | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Microsoft Entra ID](../connectors/azureactivedirectory.md) ➕ | Microsoft | 12 | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-| [Microsoft Entra ID Assets](../connectors/entraidassets.md) | Microsoft | — | [Microsoft Entra ID Assets](../solutions/microsoft-entra-id-assets.md) |
+| [Microsoft Entra ID Assets](../connectors/entraidassets.md) | Microsoft | ? | [Microsoft Entra ID Assets](../solutions/microsoft-entra-id-assets.md) |
 | [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) | Microsoft | 1 | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | [Microsoft PowerBI](../connectors/officepowerbi.md) | Microsoft | 1 | [Microsoft PowerBI](../solutions/microsoft-powerbi.md) |
 | [Microsoft Project](../connectors/office365project.md) | Microsoft | 1 | [Microsoft Project](../solutions/microsoft-project.md) |

@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload in "OneDrive,SharePoint"` | ✓ | ✗ | ✓ |
-| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | — |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ? |
 
 ---
 

@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VMware_CWS_DLPLogs_CL`](../tables/vmware-cws-dlplogs-cl.md) | — | — | — |
+| [`VMware_CWS_DLPLogs_CL`](../tables/vmware-cws-dlplogs-cl.md) | ? | ✓ | ? |
 
 ---
 

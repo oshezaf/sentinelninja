@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | — |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | ? |
 
 ---
 

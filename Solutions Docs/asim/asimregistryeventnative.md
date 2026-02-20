@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | ✓ | ✓ | — |
+| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | ✓ | ✓ | ? |
 
 ## Parameters
 

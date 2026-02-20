@@ -19,8 +19,8 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "Alert,Audit"`<br>`DeviceVendor in "FORCEPOINT,Forcepoint"` | ✓ | ✓ | ✓ |
-| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ | — |
-| [`Perf`](../tables/perf.md) |  | ✓ | ✗ | — |
+| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ | ? |
+| [`Perf`](../tables/perf.md) |  | ✓ | ✗ | ? |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
 
 ---

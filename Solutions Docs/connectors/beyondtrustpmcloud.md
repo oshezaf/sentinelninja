@@ -30,8 +30,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) | — | — | — |
-| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) | — | — | — |
+| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) | ? | ✓ | ? |
+| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

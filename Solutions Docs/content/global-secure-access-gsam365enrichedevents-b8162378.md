@@ -18,10 +18,10 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md) |  | ✓ | ✗ | — |
+| [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md) |  | ✓ | ✗ | ? |
 | [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) |  | ✓ | ✗ | ✓ |
 | [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload in "Exchange,OneDrive,SPO/OneDrive,SharePoint,Teams"` | ✓ | ✗ | ✓ |
-| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | — |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ? |
 
 ---
 

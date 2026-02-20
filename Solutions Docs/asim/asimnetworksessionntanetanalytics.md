@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | ✓ | ✗ | — |
+| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | ✓ | ✗ | ? |
 
 ## Parameters
 

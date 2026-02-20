@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CanaryTokens_CL`](../tables/canarytokens-cl.md) | — | — | — |
+| [`CanaryTokens_CL`](../tables/canarytokens-cl.md) | ? | ✓ | ? |
 
 ---
 

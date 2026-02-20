@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`WindowsFirewall`](../tables/windowsfirewall.md) | ✓ | ✗ | — |
+| [`WindowsFirewall`](../tables/windowsfirewall.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

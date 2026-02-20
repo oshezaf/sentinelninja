@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VTFileReport_CL`](../tables/vtfilereport-cl.md) | — | — | — |
+| [`VTFileReport_CL`](../tables/vtfilereport-cl.md) | ? | ✓ | ? |
 
 ---
 

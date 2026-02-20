@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ | — |
+| [`DeviceLogonEvents`](../tables/devicelogonevents.md) | ✓ | ✗ | ? |
 
 ---
 

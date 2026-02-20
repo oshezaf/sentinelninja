@@ -29,8 +29,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | — |
-| [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) | — | — | — |
+| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ? |
+| [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) | ? | ✓ | ? |
 
 ---
 

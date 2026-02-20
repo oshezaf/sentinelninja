@@ -29,8 +29,8 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ✓ |
 | [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |
-| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ | — |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
+| [`DeviceInfo`](../tables/deviceinfo.md) | ✓ | ✗ | ? |
 
 ---
 

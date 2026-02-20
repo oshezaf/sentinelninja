@@ -18,10 +18,10 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | — |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | — |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
 | [`Event`](../tables/event.md) | `EventID in "1001,1069,1205"` | ✓ | ✗ | ✗ |
-| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ | — |
+| [`Heartbeat`](../tables/heartbeat.md) |  | ✗ | ✗ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✗ | ✗ |

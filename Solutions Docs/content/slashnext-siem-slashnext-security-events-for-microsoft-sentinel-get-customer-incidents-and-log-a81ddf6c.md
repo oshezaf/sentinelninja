@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SlashNext_CL`](../tables/slashnext-cl.md) | — | — | — |
+| [`SlashNext_CL`](../tables/slashnext-cl.md) | ? | ✓ | ? |
 
 ---
 

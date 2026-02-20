@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType in "FileCreated,FileModified"` | ✓ | ✗ | — |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | — |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType in "FileCreated,FileModified"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
 
 ---
 

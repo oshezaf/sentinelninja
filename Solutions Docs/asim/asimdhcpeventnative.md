@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) | ✓ | ✓ | — |
+| [`ASimDhcpEventLogs`](../tables/asimdhcpeventlogs.md) | ✓ | ✓ | ? |
 
 ## Parameters
 

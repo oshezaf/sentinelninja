@@ -25,8 +25,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SecurityRecommendation`](../tables/securityrecommendation.md) | ✓ | ✗ | — |
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ | — |
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) | ✓ | ✗ | ? |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) | ✓ | ✗ | ? |
 
 ---
 

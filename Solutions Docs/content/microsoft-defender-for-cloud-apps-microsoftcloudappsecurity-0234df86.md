@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ | — |
+| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 
 ---

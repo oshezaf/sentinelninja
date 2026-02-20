@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"` | ✓ | ✗ | — |
+| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) | `ActionType in "RegistryKeyDeleted,RegistryKeyRenamed,RegistryValueDeleted,RegistryValueSet"` | ✓ | ✗ | ? |
 
 ## Parameters
 

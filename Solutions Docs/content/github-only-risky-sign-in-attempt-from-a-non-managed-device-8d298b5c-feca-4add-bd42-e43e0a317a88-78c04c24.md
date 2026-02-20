@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | — | ✗ | — |
+| [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | ? | ✗ | ? |
 
 ---
 

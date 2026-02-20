@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
 | [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "AdminSubmission,UserSubmission"`<br>`ActionType contains "ZAP"` | ✓ | ✗ | ✓ |
 | [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ✓ |
-| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ | — |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ | ? |
 
 ---
 

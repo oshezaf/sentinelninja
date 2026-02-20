@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Communication_Data_CL`](../tables/communication-data-cl.md) | — | — | — |
+| [`Communication_Data_CL`](../tables/communication-data-cl.md) | ? | ✓ | ? |
 
 ---
 

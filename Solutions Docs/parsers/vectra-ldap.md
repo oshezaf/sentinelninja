@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`vectra_ldap_CL`](../tables/vectra-ldap-cl.md) | — | — | — |
+| [`vectra_ldap_CL`](../tables/vectra-ldap-cl.md) | ? | ✓ | ? |
 
 ---
 

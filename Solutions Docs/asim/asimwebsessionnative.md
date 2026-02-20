@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | `EventType in "EndpointNetworkSession,HTTPSession"` | ✓ | ✓ | — |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | `EventType in "EndpointNetworkSession,HTTPSession"` | ✓ | ✓ | ? |
 
 ## Parameters
 

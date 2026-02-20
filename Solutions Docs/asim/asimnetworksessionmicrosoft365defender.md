@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "ConnectionFailed"` | ✓ | ✗ | — |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "ConnectionFailed"` | ✓ | ✗ | ? |
 
 ## Parameters
 

@@ -20,8 +20,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GreyNoiseIPContext_CL`](../tables/greynoiseipcontext-cl.md) | — | — | — |
-| [`GreyNoiseIPRIOT_CL`](../tables/greynoiseipriot-cl.md) | — | — | — |
+| [`GreyNoiseIPContext_CL`](../tables/greynoiseipcontext-cl.md) | ? | ✓ | ? |
+| [`GreyNoiseIPRIOT_CL`](../tables/greynoiseipriot-cl.md) | ? | ✓ | ? |
 
 ---
 

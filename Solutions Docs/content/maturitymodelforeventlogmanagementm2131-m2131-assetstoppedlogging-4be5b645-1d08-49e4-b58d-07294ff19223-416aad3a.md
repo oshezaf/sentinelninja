@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Heartbeat`](../tables/heartbeat.md) | ✗ | ✗ | — |
+| [`Heartbeat`](../tables/heartbeat.md) | ✗ | ✗ | ? |
 
 ---
 

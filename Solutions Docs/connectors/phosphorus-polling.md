@@ -13,9 +13,9 @@
 | **Connector ID** | `Phosphorus_Polling` |
 | **Publisher** | Phosphorus Inc. |
 | **Used in Solutions** | [Phosphorus](../solutions/phosphorus.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
 | **Connector Definition Files** | [PhosphorusDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus/Data%20Connectors/PhosphorusDataConnector.json) |
-| **CCF Configuration** | [PhosphorusDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus/Data%20Connectors/PhosphorusDataConnector.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 The Phosphorus Device Connector provides the capability to Phosphorus to ingest device data logs into Microsoft Sentinel through the Phosphorus REST API. The Connector provides visibility into the devices enrolled in Phosphorus. This Data Connector pulls devices information along with its corresponding alerts.
 
@@ -25,7 +25,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Phosphorus_CL`](../tables/phosphorus-cl.md) | ? | ✗ | ✗ |
+| [`Phosphorus_CL`](../tables/phosphorus-cl.md) | ✗ | ✓ | ✗ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

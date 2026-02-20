@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md) | — | ✗ | — |
+| [`MessagePostDeliveryEvents`](../tables/messagepostdeliveryevents.md) | ? | ✗ | ? |
 
 ---
 

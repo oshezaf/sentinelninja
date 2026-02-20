@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Alert`](../tables/alert.md) | ✓ | ✗ | — |
+| [`Alert`](../tables/alert.md) | ✓ | ✗ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 

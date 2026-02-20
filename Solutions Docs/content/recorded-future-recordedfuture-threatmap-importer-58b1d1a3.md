@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RecordedFutureThreatMap_CL`](../tables/recordedfuturethreatmap-cl.md) | — | — | — |
+| [`RecordedFutureThreatMap_CL`](../tables/recordedfuturethreatmap-cl.md) | ? | ✓ | ? |
 
 ---
 

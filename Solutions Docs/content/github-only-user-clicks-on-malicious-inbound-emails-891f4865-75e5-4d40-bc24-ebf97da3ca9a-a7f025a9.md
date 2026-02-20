@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`EmailEvents`](../tables/emailevents.md) | `ActionType == "ClickAllowed"` | ✓ | ✗ | ✓ |
-| [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ | — |
+| [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ | ? |
 
 ---
 

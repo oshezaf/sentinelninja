@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | — |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
 | [`Event`](../tables/event.md) | `Source == "Microsoft-Windows-SENSE"` | ✓ | ✗ | ✗ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
 | [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4688,87"` | ✓ | ✓ | ✓ |

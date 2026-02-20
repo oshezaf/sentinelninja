@@ -25,9 +25,9 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | — | — | — |
-| [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | — | — | — |
-| [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | — | — | — |
+| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | ? | ✓ | ? |
+| [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | ? | ✓ | ? |
+| [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | ? | ✓ | ? |
 
 ---
 

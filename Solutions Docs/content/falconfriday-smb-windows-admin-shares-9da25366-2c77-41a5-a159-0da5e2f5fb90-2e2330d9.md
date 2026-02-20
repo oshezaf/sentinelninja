@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | — |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType == "InboundConnectionAccepted"` | ✓ | ✗ | — |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType == "InboundConnectionAccepted"` | ✓ | ✗ | ? |
 
 ---
 

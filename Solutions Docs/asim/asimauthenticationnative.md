@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ | — |
+| [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) | ✓ | ✓ | ? |
 
 ## Parameters
 

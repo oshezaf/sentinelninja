@@ -24,10 +24,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md) | — | — | — |
-| [`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md) | — | — | — |
-| [`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md) | — | — | — |
-| [`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) | — | — | — |
+| [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md) | ? | ✓ | ? |
+| [`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md) | ? | ✓ | ? |
+| [`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md) | ? | ✓ | ? |
+| [`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ThreatIntelExportOperation`](../tables/threatintelexportoperation.md) | ✗ | ✗ | — |
+| [`ThreatIntelExportOperation`](../tables/threatintelexportoperation.md) | ✗ | ✗ | ? |
 
 ## Permissions
 

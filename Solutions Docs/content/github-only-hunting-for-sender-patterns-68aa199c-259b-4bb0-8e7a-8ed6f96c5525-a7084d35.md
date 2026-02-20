@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ | — |
+| [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) | ✓ | ✗ | ? |
 | [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ✓ |
 
 ---

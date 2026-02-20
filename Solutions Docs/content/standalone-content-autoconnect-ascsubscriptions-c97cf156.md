@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AutoConnectASC_CL`](../tables/autoconnectasc-cl.md) | — | — | — |
+| [`AutoConnectASC_CL`](../tables/autoconnectasc-cl.md) | ? | ✓ | ? |
 
 ---
 

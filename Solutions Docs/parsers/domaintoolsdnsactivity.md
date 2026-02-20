@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DomainToolsDomainEnrichment_CL`](../tables/domaintoolsdomainenrichment-cl.md) | — | — | — |
+| [`DomainToolsDomainEnrichment_CL`](../tables/domaintoolsdomainenrichment-cl.md) | ? | ? | ? |
 
 ---
 

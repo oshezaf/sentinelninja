@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | ✓ | ✗ | — |
+| [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) | ✓ | ✗ | ? |
 
 ## Parameters
 

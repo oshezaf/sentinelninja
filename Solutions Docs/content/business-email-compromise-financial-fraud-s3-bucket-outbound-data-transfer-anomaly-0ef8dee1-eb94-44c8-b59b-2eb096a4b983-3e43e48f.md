@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AwsBucketAPILogs_CL`](../tables/awsbucketapilogs-cl.md) | — | — | — |
+| [`AwsBucketAPILogs_CL`](../tables/awsbucketapilogs-cl.md) | ? | ✓ | ? |
 
 ---
 

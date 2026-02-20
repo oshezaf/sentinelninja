@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DuoSecurityTrustMonitor_CL`](../tables/duosecuritytrustmonitor-cl.md) | — | — | — |
+| [`DuoSecurityTrustMonitor_CL`](../tables/duosecuritytrustmonitor-cl.md) | ? | ? | ? |
 
 ---
 

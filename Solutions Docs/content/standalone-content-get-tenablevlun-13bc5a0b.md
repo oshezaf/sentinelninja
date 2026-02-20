@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Vulns_AssetID_List_CL`](../tables/vulns-assetid-list-cl.md) | — | — | — |
+| [`Vulns_AssetID_List_CL`](../tables/vulns-assetid-list-cl.md) | ? | ✓ | ? |
 
 ---
 

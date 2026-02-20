@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_CL`](../tables/corelight-cl.md) | — | — | — |
+| [`Corelight_CL`](../tables/corelight-cl.md) | ? | ✓ | ? |
 
 ## Parameters
 

@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Armorblox_CL`](../tables/armorblox-cl.md) | — | — | — |
+| [`Armorblox_CL`](../tables/armorblox-cl.md) | ? | ✓ | ? |
 
 ---
 

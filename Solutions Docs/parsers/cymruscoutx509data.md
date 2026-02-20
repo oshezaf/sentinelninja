@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`X509_Data_CL`](../tables/x509-data-cl.md) | — | — | — |
+| [`X509_Data_CL`](../tables/x509-data-cl.md) | ? | ✓ | ? |
 
 ---
 

@@ -21,7 +21,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Barracuda"` | ✓ | ✓ | ✓ |
-| [`Perf`](../tables/perf.md) |  | ✓ | ✗ | — |
+| [`Perf`](../tables/perf.md) |  | ✓ | ✗ | ? |
 | [`Syslog`](../tables/syslog.md) | `ProcessName == "box_Firewall_Activity"` | ✓ | ✓ | ✓ |
 
 ---

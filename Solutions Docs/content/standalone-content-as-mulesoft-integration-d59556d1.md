@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MuleSoftAuditLogs_CL`](../tables/mulesoftauditlogs-cl.md) | — | — | — |
+| [`MuleSoftAuditLogs_CL`](../tables/mulesoftauditlogs-cl.md) | ? | ✓ | ? |
 
 ---
 

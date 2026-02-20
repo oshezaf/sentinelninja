@@ -20,9 +20,9 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DSTIMAccess_CL`](../tables/dstimaccess-cl.md) | — | — | — |
-| [`DSTIMClassification_CL`](../tables/dstimclassification-cl.md) | — | — | — |
-| [`DSTIMSensitivity_CL`](../tables/dstimsensitivity-cl.md) | — | — | — |
+| [`DSTIMAccess_CL`](../tables/dstimaccess-cl.md) | ? | ? | ? |
+| [`DSTIMClassification_CL`](../tables/dstimclassification-cl.md) | ? | ? | ? |
+| [`DSTIMSensitivity_CL`](../tables/dstimsensitivity-cl.md) | ? | ? | ? |
 
 ---
 

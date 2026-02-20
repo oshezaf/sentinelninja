@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | — | — | — |
+| [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | ? | ? | ? |
 
 ---
 

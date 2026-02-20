@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`O365API_CL`](../tables/o365api-cl.md) | — | — | — |
+| [`O365API_CL`](../tables/o365api-cl.md) | ? | ✓ | ? |
 
 ---
 

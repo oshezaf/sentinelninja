@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`oneLogin_CL`](../tables/onelogin-cl.md) | — | — | — |
+| [`oneLogin_CL`](../tables/onelogin-cl.md) | ? | ? | ? |
 
 ---
 

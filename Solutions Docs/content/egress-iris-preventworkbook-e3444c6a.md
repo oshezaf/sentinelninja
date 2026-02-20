@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`EgressEvents_CL`](../tables/egressevents-cl.md) | — | — | — |
+| [`EgressEvents_CL`](../tables/egressevents-cl.md) | ? | ✓ | ? |
 
 ---
 

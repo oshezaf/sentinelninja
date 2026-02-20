@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Datadog_Events_CL`](../tables/datadog-events-cl.md) | — | — | — |
+| [`Datadog_Events_CL`](../tables/datadog-events-cl.md) | ? | ✓ | ? |
 
 ---
 

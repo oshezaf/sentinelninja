@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Thinkst_Canary_CL`](../tables/thinkst-canary-cl.md) | — | — | — |
+| [`Thinkst_Canary_CL`](../tables/thinkst-canary-cl.md) | ? | ✓ | ? |
 
 ---
 

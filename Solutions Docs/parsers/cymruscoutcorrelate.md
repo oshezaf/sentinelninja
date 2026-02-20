@@ -25,15 +25,15 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ASimAuditEvent`](../asim/asimauditevent.md) |  | — | — | — |
-| [`ASimAuthentication`](../asim/asimauthentication.md) |  | — | — | — |
-| [`ASimDhcpEvent`](../asim/asimdhcpevent.md) | `EventVendor !contains "Cymru"` | — | — | — |
-| [`ASimDns`](../asim/asimdns.md) |  | — | — | — |
-| [`ASimNetworkSession`](../asim/asimnetworksession.md) |  | — | — | — |
-| [`ASimWebSession`](../asim/asimwebsession.md) |  | — | — | — |
-| [`AsimParsersData`](../tables/asimparsersdata.md) |  | — | — | — |
+| [`ASimAuditEvent`](../asim/asimauditevent.md) |  | ? | ? | ? |
+| [`ASimAuthentication`](../asim/asimauthentication.md) |  | ? | ? | ? |
+| [`ASimDhcpEvent`](../asim/asimdhcpevent.md) | `EventVendor !contains "Cymru"` | ? | ? | ? |
+| [`ASimDns`](../asim/asimdns.md) |  | ? | ? | ? |
+| [`ASimNetworkSession`](../asim/asimnetworksession.md) |  | ? | ? | ? |
+| [`ASimWebSession`](../asim/asimwebsession.md) |  | ? | ? | ? |
+| [`AsimParsersData`](../tables/asimparsersdata.md) |  | ? | ? | ? |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
-| [`asimParsers`](../tables/asimparsers.md) |  | — | — | — |
+| [`asimParsers`](../tables/asimparsers.md) |  | ? | ? | ? |
 
 ---
 
