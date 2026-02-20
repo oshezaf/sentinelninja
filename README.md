@@ -30,17 +30,15 @@ Comprehensive reference documentation for Microsoft Sentinel Solutions, automati
 
 **CSV data files** are also available in the [Solutions Docs](Solutions%20Docs/) directory for programmatic analysis. See the [output file documentation](https://github.com/Azure/Azure-Sentinel/blob/master/Tools/Solutions%20Analyzer/script-docs/map_solutions_connectors_tables.md#output-files) for column descriptions.
 
-| File | Description |
-|------|-------------|
-| [connectors.csv](Solutions%20Docs/connectors.csv) | All data connectors with collection method, CCF capabilities, and filter fields |
-| [solutions.csv](Solutions%20Docs/solutions.csv) | All solutions with marketplace status and content counts |
-| [tables.csv](Solutions%20Docs/tables.csv) | All tables with solution/connector references and feature support |
-| [content_items.csv](Solutions%20Docs/content_items.csv) | All content items (analytics rules, hunting queries, playbooks, etc.) |
-| [parsers.csv](Solutions%20Docs/parsers.csv) | Non-ASIM parsers with source tables and solution references |
-| [asim_parsers.csv](Solutions%20Docs/asim_parsers.csv) | ASIM parsers with schema, source tables, and sub-parser references |
-| [tables_reference.csv](Solutions%20Docs/tables_reference.csv) | Table metadata from Azure Monitor and Sentinel documentation |
-| [content_tables_mapping.csv](Solutions%20Docs/content_tables_mapping.csv) | Mapping of content items to tables with read/write indicators |
-| [solutions_connectors_tables_mapping.csv](Solutions%20Docs/solutions_connectors_tables_mapping.csv) | Full mapping of solutions to connectors to tables |
+- [connectors.csv](Solutions%20Docs/connectors.csv) – All data connectors with collection method, CCF capabilities, and filter fields
+- [solutions.csv](Solutions%20Docs/solutions.csv) – All solutions with marketplace status and content counts
+- [tables.csv](Solutions%20Docs/tables.csv) – All tables with solution/connector references and feature support
+- [content_items.csv](Solutions%20Docs/content_items.csv) – All content items (analytics rules, hunting queries, playbooks, etc.)
+- [parsers.csv](Solutions%20Docs/parsers.csv) – Non-ASIM parsers with source tables and solution references
+- [asim_parsers.csv](Solutions%20Docs/asim_parsers.csv) – ASIM parsers with schema, source tables, and sub-parser references
+- [tables_reference.csv](Solutions%20Docs/tables_reference.csv) – Table metadata from Azure Monitor and Sentinel documentation
+- [content_tables_mapping.csv](Solutions%20Docs/content_tables_mapping.csv) – Mapping of content items to tables with read/write indicators
+- [solutions_connectors_tables_mapping.csv](Solutions%20Docs/solutions_connectors_tables_mapping.csv) – Full mapping of solutions to connectors to tables
 
 ### 📤 [Kusto Uploader](kusto-uploader/README.md)
 
