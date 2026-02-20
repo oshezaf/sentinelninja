@@ -11,7 +11,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Ingestion API Supported** | ✗ No |
+| **Supports Transformations** | ✗ No |
+| **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
 
 ## Solutions (1)

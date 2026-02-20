@@ -6,6 +6,10 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✓ Yes |
+
 ## Additional Information
 
 📖 **Related Documentation:** [Traffic Analytics schema](https://learn.microsoft.com/azure/network-watcher/traffic-analytics-schema) - NSG flow log schema and data aggregation

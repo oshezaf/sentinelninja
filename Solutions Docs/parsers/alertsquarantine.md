@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) | ? | ✗ | ✗ |
+| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

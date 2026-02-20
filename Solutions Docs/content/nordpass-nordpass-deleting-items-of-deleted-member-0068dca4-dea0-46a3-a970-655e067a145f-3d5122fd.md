@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | ? | ✗ | ✓ |
+| [`NordPassEventLogs_CL`](../tables/nordpasseventlogs-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

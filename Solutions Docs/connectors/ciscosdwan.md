@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | ? | ✗ | ✗ |
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | ✗ | ✓ | ✗ |
 | [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

@@ -23,9 +23,9 @@ This content item queries data from the following tables:
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
 | [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"` | ✓ | ✗ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | ? | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
-| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ? | ✗ | ✗ |
+| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ✗ | ✓ | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ✓ |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ | ? |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ | ✓ |
@@ -33,12 +33,12 @@ This content item queries data from the following tables:
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ | ? |
 | [`EmailEvents`](../tables/emailevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ✓ |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ | ? |
-| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |  | ? | ? | ? |
+| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |  | ? | ✓ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
-| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | ? | ? | ? |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | ? | ✓ | ? |
 | [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "MicrosoftTeams"` | ✓ | ✗ | ✓ |
 | [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ? |
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | ? | ✗ | ✓ |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |

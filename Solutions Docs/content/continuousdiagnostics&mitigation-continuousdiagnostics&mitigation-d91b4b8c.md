@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 | [`AuditLogs`](../tables/auditlogs.md) | `OperationName contains "PIM"` | ✓ | ✗ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
 | [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |  | ✓ | ✗ | ? |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | ? | ✗ | ✗ |
-| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ? | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | ✗ | ✗ | ✗ |
+| [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ✗ | ✓ | ✗ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ✓ |
 | [`ConfigurationData`](../tables/configurationdata.md) |  | ✓ | ✗ | ? |
 | [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
@@ -33,12 +33,12 @@ This content item queries data from the following tables:
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ | ✓ |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ | ✗ |
-| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |  | ? | ? | ? |
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | ? | ✗ | ✓ |
+| [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) |  | ? | ✓ | ? |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) |  | ✓ | ✓ | ✓ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
-| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | ? | ? | ? |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | ? | ✓ | ? |
 | [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ | ✓ |
-| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | ? | ✗ | ✓ |
+| [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |

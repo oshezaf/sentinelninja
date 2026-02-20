@@ -26,7 +26,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) | ? | ? | ? |
+| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) | ✗ | ✓ | ✗ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

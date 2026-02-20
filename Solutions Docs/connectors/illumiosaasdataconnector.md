@@ -24,8 +24,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) | ? | ✗ | ✓ |
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | ? | ✗ | ✓ |
+| [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) | ✓ | ✓ | ✓ |
+| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | ✓ | ✓ | ✓ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

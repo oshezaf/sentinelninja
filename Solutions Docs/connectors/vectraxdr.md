@@ -24,12 +24,14 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Audits_Data_CL`](../tables/audits-data-cl.md) | ? | ✗ | ✓ |
-| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ? | ✗ | ✓ |
-| [`Entities_Data_CL`](../tables/entities-data-cl.md) | ? | ✗ | ✓ |
-| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | ? | ✗ | ✓ |
-| [`Health_Data_CL`](../tables/health-data-cl.md) | ? | ✗ | ✓ |
-| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | ? | ✗ | ✓ |
+| [`Audits_Data_CL`](../tables/audits-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Detections_Data_CL`](../tables/detections-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Entities_Data_CL`](../tables/entities-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Health_Data_CL`](../tables/health-data-cl.md) | ✓ | ✓ | ✓ |
+| [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) | ✓ | ✓ | ✓ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

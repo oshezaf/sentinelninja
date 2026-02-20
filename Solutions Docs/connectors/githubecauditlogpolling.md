@@ -35,9 +35,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | ? | ✗ | ✓ |
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ? | ✗ | ✓ |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | ✓ | ✓ | ✓ |
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ✓ | ✓ | ✓ |
 | [`ImpactedUser`](../tables/impacteduser.md) | ? | ? | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

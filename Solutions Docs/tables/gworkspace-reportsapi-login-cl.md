@@ -6,6 +6,10 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✓ Yes |
+
 ## Solutions (2)
 
 This table is used by the following solutions:

@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | ? | ✗ | ✓ |
+| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

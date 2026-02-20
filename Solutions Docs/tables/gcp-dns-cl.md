@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | GCP |
+| **Ingestion API Supported** | ✓ Yes |
 
 ## Solutions (2)
 

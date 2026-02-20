@@ -313,6 +313,7 @@ This table collects data from the following Azure resource types:
 - `microsoft.synapse/workspaces`
 - `microsoft.edge/diagnostics`
 - `microsoft.desktopvirtualization/hostpools`
+- `microsoft.zerotrustsegmentation/segmentationmanagers`
 - `default`
 - `subscription`
 - `resourcegroup`

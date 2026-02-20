@@ -24,10 +24,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CriblAccess_CL`](../tables/criblaccess-cl.md) | ? | ? | ? |
-| [`CriblAudit_CL`](../tables/criblaudit-cl.md) | ? | ? | ? |
-| [`CriblInternal_CL`](../tables/criblinternal-cl.md) | ? | ✗ | ✗ |
-| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) | ? | ? | ? |
+| [`CriblAccess_CL`](../tables/criblaccess-cl.md) | ? | ✓ | ? |
+| [`CriblAudit_CL`](../tables/criblaudit-cl.md) | ? | ✓ | ? |
+| [`CriblInternal_CL`](../tables/criblinternal-cl.md) | ✗ | ✓ | ✗ |
+| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

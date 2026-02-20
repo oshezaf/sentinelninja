@@ -24,9 +24,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) | ? | ✗ | ✗ |
-| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) | ? | ✗ | ✗ |
-| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | ? | ✗ | ✓ |
+| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) | ✗ | ✓ | ✗ |
+| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) | ✗ | ✓ | ✗ |
+| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | ✓ | ✓ | ✓ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

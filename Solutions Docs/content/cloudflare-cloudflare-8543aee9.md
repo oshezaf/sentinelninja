@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | ? | ✗ | ✓ |
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

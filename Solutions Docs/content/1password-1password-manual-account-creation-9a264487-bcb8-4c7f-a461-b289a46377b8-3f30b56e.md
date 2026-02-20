@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | ? | ✗ | ✓ |
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

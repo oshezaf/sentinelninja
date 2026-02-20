@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ✓ |
-| [`fluentbit_CL`](../tables/fluentbit-cl.md) | ? | ✗ | ✓ |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

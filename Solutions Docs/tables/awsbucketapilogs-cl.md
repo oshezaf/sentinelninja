@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
+| **Ingestion API Supported** | ✓ Yes |
 
 ## Solutions (1)
 

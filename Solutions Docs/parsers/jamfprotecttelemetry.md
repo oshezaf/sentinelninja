@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | ? | ✗ | ✓ |
+| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

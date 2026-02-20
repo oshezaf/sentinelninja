@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | ? | ✗ | ✓ |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

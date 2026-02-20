@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) | ? | ✗ | ✗ |
+| [`QscoutAppEvents_CL`](../tables/qscoutappevents-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

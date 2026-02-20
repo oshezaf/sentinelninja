@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | ? | ✗ | ✗ |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

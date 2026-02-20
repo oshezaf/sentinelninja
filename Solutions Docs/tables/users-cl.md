@@ -6,6 +6,10 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✓ Yes |
+
 ---
 
 ## Content Items Using This Table (1)

@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | ? | ✗ | ✗ |
+| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

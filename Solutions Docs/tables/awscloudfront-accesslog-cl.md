@@ -9,7 +9,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
-| **Ingestion API Supported** | ✗ No |
+| **Supports Transformations** | ✓ Yes |
+| **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
 
 ## Solutions (1)

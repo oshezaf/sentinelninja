@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | ? | ✗ | ✗ |
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

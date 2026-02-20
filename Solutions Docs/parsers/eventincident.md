@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`eventsincidentdata_CL`](../tables/eventsincidentdata-cl.md) | ? | ✗ | ✗ |
+| [`eventsincidentdata_CL`](../tables/eventsincidentdata-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

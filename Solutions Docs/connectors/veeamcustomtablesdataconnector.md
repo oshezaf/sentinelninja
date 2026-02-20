@@ -44,12 +44,14 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) | ? | ✗ | ✓ |
-| [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) | ? | ✗ | ✓ |
-| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) | ? | ✗ | ✓ |
-| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | ? | ✗ | ✓ |
-| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) | ? | ✗ | ✓ |
-| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | ? | ✗ | ✓ |
+| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) | ✓ | ✓ | ✓ |
+| [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) | ✓ | ✓ | ✓ |
+| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) | ✓ | ✓ | ✓ |
+| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) | ✓ | ✓ | ✓ |
+| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) | ✓ | ✓ | ✓ |
+| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | ✓ | ✓ | ✓ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

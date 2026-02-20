@@ -41,7 +41,7 @@ This solution provides **4 data connector(s)** (plus 2 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **28 table(s)**:
+This solution uses **29 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -60,6 +60,7 @@ This solution uses **28 table(s)**:
 | [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) | - |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] CrowdStrike Falcon Endpoint Protection via AMA](../connectors/crowdstrikefalconendpointprotectionama.md), [[Deprecated] CrowdStrike Falcon Endpoint Protection via Legacy Agent](../connectors/crowdstrikefalconendpointprotection.md) | Analytics, Workbooks |
 | [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
+| [`CrowdStrikeCases`](../tables/crowdstrikecases.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
 | [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
 | [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |
 | [`CrowdStrikeVulnerabilities`](../tables/crowdstrikevulnerabilities.md) | [CrowdStrike API Data Connector (via Codeless Connector Framework)](../connectors/crowdstrikeapiconnector.md) | - |

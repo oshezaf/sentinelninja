@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | ? | ✗ | ✗ |
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

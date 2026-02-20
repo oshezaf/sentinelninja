@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) |  | ? | ✗ | ✓ |
+| [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) |  | ✓ | ✓ | ✓ |
 | [`Syslog`](../tables/syslog.md) | `SyslogMessage has "illumio_pce/agent"` | ✓ | ✓ | ✓ |
 
 ---

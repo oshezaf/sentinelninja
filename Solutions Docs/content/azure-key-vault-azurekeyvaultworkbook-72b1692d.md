@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AuditEvent"`<br>`ResourceType == "VAULTS"` | ? | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AuditEvent"`<br>`ResourceType == "VAULTS"` | ✗ | ✗ | ✗ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 

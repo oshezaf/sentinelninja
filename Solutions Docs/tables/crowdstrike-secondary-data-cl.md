@@ -9,6 +9,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Crowdstrike |
+| **Ingestion API Supported** | ✓ Yes |
 
 ## Solutions (1)
 

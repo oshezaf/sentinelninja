@@ -6,7 +6,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 ---
 
-**1779 tables** documented (824 ingested by connectors, 218 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
+**1782 tables** documented (825 ingested by connectors, 218 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
@@ -171,6 +171,7 @@ Browse tables alphabetically:
 | [`ASRv2ReplicationExtensions`](tables/asrv2replicationextensions.md) | - | - | - |
 | [`ASRv2ReplicationPolicies`](tables/asrv2replicationpolicies.md) | - | - | - |
 | [`ASRv2ReplicationVaults`](tables/asrv2replicationvaults.md) | - | - | - |
+| [`ASimAlertEventLogs`](tables/asimalerteventlogs.md) | - | - | - |
 | [`ASimAuditEvent`](asim/asimauditevent.md) | [1](asim/asimauditevent.md) | - | Workbooks |
 | [`ASimAuditEventLogs`](tables/asimauditeventlogs.md) | [6](tables/asimauditeventlogs.md) | [3](tables/asimauditeventlogs.md) | Analytics, Workbooks |
 | [`ASimAuthenticationEventLogs`](tables/asimauthenticationeventlogs.md) | [4](tables/asimauthenticationeventlogs.md) | [2](tables/asimauthenticationeventlogs.md) | Workbooks |
@@ -214,6 +215,7 @@ Browse tables alphabetically:
 | [`AWSCloudTrailCCP`](tables/awscloudtrailccp.md) | - | - | - |
 | [`AWSCloudWatch`](tables/awscloudwatch.md) | [1](tables/awscloudwatch.md) | [1](tables/awscloudwatch.md) | - |
 | [`AWSCloudWatchCCP`](tables/awscloudwatchccp.md) | - | - | - |
+| [`AWSEKSLogs`](tables/awsekslogs.md) | - | - | - |
 | [`AWSGuardDuty`](tables/awsguardduty.md) | [3](tables/awsguardduty.md) | [1](tables/awsguardduty.md) | Analytics, Workbooks |
 | [`AWSGuardDutyCCP`](tables/awsguarddutyccp.md) | - | - | - |
 | [`AWSNLBAccessLogs`](tables/awsnlbaccesslogs.md) | - | - | - |
@@ -278,7 +280,7 @@ Browse tables alphabetically:
 | [`AlertInfo`](tables/alertinfo.md) | [1](tables/alertinfo.md) | - | Analytics, Hunting |
 | [`AliCloudActionTrailLogs_CL`](tables/alicloudactiontraillogs-cl.md) | [1](tables/alicloudactiontraillogs-cl.md) | [1](tables/alicloudactiontraillogs-cl.md) | - |
 | [`AliCloud_CL`](tables/alicloud-cl.md) | [1](tables/alicloud-cl.md) | [1](tables/alicloud-cl.md) | - |
-| [`AlsidForADLog_CL`](tables/alsidforadlog-cl.md) | [1](tables/alsidforadlog-cl.md) | [1](tables/alsidforadlog-cl.md) | - |
+| [`AlsidForADLog_CL`](tables/alsidforadlog-cl.md) | [3](tables/alsidforadlog-cl.md) | [3](tables/alsidforadlog-cl.md) | Analytics, Workbooks |
 | [`AmlComputeClusterEvent`](tables/amlcomputeclusterevent.md) | - | - | - |
 | [`AmlComputeClusterNodeEvent`](tables/amlcomputeclusternodeevent.md) | - | - | - |
 | [`AmlComputeCpuGpuUtilization`](tables/amlcomputecpugpuutilization.md) | - | - | - |
@@ -651,6 +653,7 @@ Browse tables alphabetically:
 | [`CriblInternal_CL`](tables/criblinternal-cl.md) | [1](tables/criblinternal-cl.md) | [1](tables/criblinternal-cl.md) | - |
 | [`CriblUIAccess_CL`](tables/cribluiaccess-cl.md) | [1](tables/cribluiaccess-cl.md) | [1](tables/cribluiaccess-cl.md) | - |
 | [`CrowdStrikeAlerts`](tables/crowdstrikealerts.md) | [1](tables/crowdstrikealerts.md) | [1](tables/crowdstrikealerts.md) | - |
+| [`CrowdStrikeCases`](tables/crowdstrikecases.md) | [1](tables/crowdstrikecases.md) | [1](tables/crowdstrikecases.md) | - |
 | [`CrowdStrikeDetections`](tables/crowdstrikedetections.md) | [1](tables/crowdstrikedetections.md) | [1](tables/crowdstrikedetections.md) | - |
 | [`CrowdStrikeHosts`](tables/crowdstrikehosts.md) | [1](tables/crowdstrikehosts.md) | [1](tables/crowdstrikehosts.md) | - |
 | [`CrowdStrikeIncidents`](tables/crowdstrikeincidents.md) | - | - | - |
@@ -1708,7 +1711,7 @@ Browse tables alphabetically:
 | [`TaniumPatchListCompliance_CL`](tables/taniumpatchlistcompliance-cl.md) | [1](tables/taniumpatchlistcompliance-cl.md) | - | Workbooks |
 | [`TaniumSCCMClientHealth_CL`](tables/taniumsccmclienthealth-cl.md) | [1](tables/taniumsccmclienthealth-cl.md) | - | Workbooks |
 | [`TaniumThreatResponse_CL`](tables/taniumthreatresponse-cl.md) | [1](tables/taniumthreatresponse-cl.md) | - | Analytics, Workbooks |
-| [`Tenable_IE_CL`](tables/tenable-ie-cl.md) | [3](tables/tenable-ie-cl.md) | [3](tables/tenable-ie-cl.md) | Analytics, Workbooks |
+| [`Tenable_IE_CL`](tables/tenable-ie-cl.md) | [1](tables/tenable-ie-cl.md) | [1](tables/tenable-ie-cl.md) | - |
 | [`Tenable_IO_Assets_CL`](tables/tenable-io-assets-cl.md) | [1](tables/tenable-io-assets-cl.md) | [1](tables/tenable-io-assets-cl.md) | Playbooks |
 | [`Tenable_IO_Vuln_CL`](tables/tenable-io-vuln-cl.md) | [1](tables/tenable-io-vuln-cl.md) | [1](tables/tenable-io-vuln-cl.md) | Playbooks |
 | [`Tenable_VM_Asset_CL`](tables/tenable-vm-asset-cl.md) | [1](tables/tenable-vm-asset-cl.md) | [1](tables/tenable-vm-asset-cl.md) | Playbooks |
@@ -1716,7 +1719,7 @@ Browse tables alphabetically:
 | [`Tenable_VM_Vuln_CL`](tables/tenable-vm-vuln-cl.md) | [1](tables/tenable-vm-vuln-cl.md) | [1](tables/tenable-vm-vuln-cl.md) | Playbooks |
 | [`Tenable_WAS_Asset_CL`](tables/tenable-was-asset-cl.md) | [1](tables/tenable-was-asset-cl.md) | [1](tables/tenable-was-asset-cl.md) | - |
 | [`Tenable_WAS_Vuln_CL`](tables/tenable-was-vuln-cl.md) | [1](tables/tenable-was-vuln-cl.md) | [1](tables/tenable-was-vuln-cl.md) | - |
-| [`Tenable_ad_CL`](tables/tenable-ad-cl.md) | [3](tables/tenable-ad-cl.md) | [3](tables/tenable-ad-cl.md) | Analytics, Workbooks |
+| [`Tenable_ad_CL`](tables/tenable-ad-cl.md) | [1](tables/tenable-ad-cl.md) | [1](tables/tenable-ad-cl.md) | - |
 | [`TheHive_CL`](tables/thehive-cl.md) | [1](tables/thehive-cl.md) | [1](tables/thehive-cl.md) | - |
 | [`TheomAlerts_CL`](tables/theomalerts-cl.md) | [1](tables/theomalerts-cl.md) | [1](tables/theomalerts-cl.md) | Analytics, Workbooks |
 | [`Thinkst_Canary_CL`](tables/thinkst-canary-cl.md) | [1](tables/thinkst-canary-cl.md) | - | Playbooks |

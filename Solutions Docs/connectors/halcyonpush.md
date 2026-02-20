@@ -26,11 +26,13 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | ? | ✗ | ✗ |
-| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | ? | ✗ | ✗ |
-| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | ? | ✗ | ✗ |
-| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | ? | ✗ | ✗ |
-| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | ? | ✗ | ✗ |
+| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | ✗ | ✓ | ✗ |
+| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | ✗ | ✓ | ✗ |
+| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | ✗ | ✓ | ✗ |
+| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | ✗ | ✓ | ✗ |
+| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | ✗ | ✓ | ✗ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

@@ -24,12 +24,14 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md) | ? | ? | ? |
-| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) | ? | ✗ | ✓ |
-| [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md) | ? | ? | ? |
-| [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) | ? | ? | ? |
-| [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) | ? | ? | ? |
-| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) | ? | ? | ? |
+| [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md) | ? | ✓ | ? |
+| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) | ✓ | ✓ | ✓ |
+| [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md) | ? | ✓ | ? |
+| [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) | ? | ✓ | ? |
+| [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) | ? | ✓ | ? |
+| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | ? | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | ✗ | ✗ | ✗ |
 | [`ContainerInventory`](../tables/containerinventory.md) |  | ✓ | ✗ | ? |
 | [`KubeEvents`](../tables/kubeevents.md) |  | ✓ | ✗ | ? |
 

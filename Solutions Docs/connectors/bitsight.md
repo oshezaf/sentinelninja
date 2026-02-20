@@ -24,17 +24,19 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | ? | ✗ | ✓ |
-| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | ? | ✗ | ✓ |
-| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | ? | ✗ | ✓ |
-| [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) | ? | ✗ | ✓ |
-| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | ? | ✗ | ✓ |
-| [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | ? | ✗ | ✓ |
-| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | ? | ✗ | ✓ |
-| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | ? | ✗ | ✓ |
-| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | ? | ✗ | ✓ |
-| [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) | ? | ✗ | ✓ |
-| [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | ? | ✗ | ✓ |
+| [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) | ✓ | ✓ | ✓ |
+| [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | ✓ | ✓ | ✓ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

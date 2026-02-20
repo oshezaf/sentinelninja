@@ -48,9 +48,9 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
-| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
+| [`meraki_CL`](../tables/meraki-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) | Workbooks |
 
 ### Internal Tables
 

@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) | ? | ✗ | ✗ |
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

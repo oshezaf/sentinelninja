@@ -28,10 +28,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) | ? | ✗ | ✗ |
-| [`TrendMicro_XDR_RCA_Result_CL`](../tables/trendmicro-xdr-rca-result-cl.md) | ? | ✗ | ✗ |
-| [`TrendMicro_XDR_RCA_Task_CL`](../tables/trendmicro-xdr-rca-task-cl.md) | ? | ✗ | ✗ |
-| [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) | ? | ✗ | ✗ |
+| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) | ✗ | ✓ | ✗ |
+| [`TrendMicro_XDR_RCA_Result_CL`](../tables/trendmicro-xdr-rca-result-cl.md) | ✗ | ✓ | ✗ |
+| [`TrendMicro_XDR_RCA_Task_CL`](../tables/trendmicro-xdr-rca-task-cl.md) | ✗ | ✓ | ✗ |
+| [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) | ✗ | ✓ | ✗ |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

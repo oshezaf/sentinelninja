@@ -11,6 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
+| **Ingestion API Supported** | ✓ Yes |
 
 ## Solutions (1)
 
