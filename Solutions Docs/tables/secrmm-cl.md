@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (1)
 
@@ -32,19 +32,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Removable storage ONLINE event from secRMM](../content/squadra-technologies-secrmm-removable-storage-online-event-from-secrmm-a22b2ecf-1478-4400-877e-07a32e53a897-c1870014.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [AzureSentinelWorkbookForRemovableStorageSecurityEvents](../content/squadra-technologies-secrmm-azuresentinelworkbookforremovablestoragesecurityevents-c1ab5ac4.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [SquadraTechnologiesSecRMM](../content/github-only-squadratechnologiessecrmm-3e33bcf1.md) |  |
 
 ---
 

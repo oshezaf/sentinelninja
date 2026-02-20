@@ -13,8 +13,10 @@
 | **Connector ID** | `OnetrustPush` |
 | **Publisher** | OneTrust |
 | **Used in Solutions** | [OneTrust](../solutions/onetrust.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [OneTrustLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust/Data%20Connectors/OneTrustLogs_CCF/OneTrustLogs_connectorDefinition.json) |
+| **CCF Configuration** | [OneTrustLogs_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust/Data%20Connectors/OneTrustLogs_CCF/OneTrustLogs_dataConnector.json) |
+| **CCF Capabilities** | `Push` |
 
 The OneTrust connector for Microsoft Sentinel provides the capability to have near real time visibility into where sensitive data has been located or remediated across across Google Cloud and other OneTrust supported data sources.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OneTrustMetadataV3_CL`](../tables/onetrustmetadatav3-cl.md) | ✓ | ✗ | ✓ |
+| [`OneTrustMetadataV3_CL`](../tables/onetrustmetadatav3-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

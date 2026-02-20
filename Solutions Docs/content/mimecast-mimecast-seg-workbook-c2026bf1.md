@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | ✗ | ✗ | ✗ |
-| [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | ✗ | ✗ | ✗ |
+| [`Seg_Cg_CL`](../tables/seg-cg-cl.md) | ? | ✗ | ✗ |
+| [`Seg_Dlp_CL`](../tables/seg-dlp-cl.md) | ? | ✗ | ✗ |
 
 ---
 

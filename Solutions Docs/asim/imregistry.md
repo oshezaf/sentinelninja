@@ -29,16 +29,15 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser |
 |:--------|:--------------|
-|  | [_Im_RegistryEvent_Empty](im-registryevent-empty.md) |
-|  | [_Im_RegistryEvent_Microsoft365D](im-registryevent-microsoft365d.md) |
-|  | [_Im_RegistryEvent_MicrosoftSecurityEvent](im-registryevent-microsoftsecurityevent.md) |
-|  | [_Im_RegistryEvent_MicrosoftSysmon](im-registryevent-microsoftsysmon.md) |
-|  | [_Im_RegistryEvent_MicrosoftSysmonWindowsEvent](im-registryevent-microsoftsysmonwindowsevent.md) |
-|  | [_Im_RegistryEvent_MicrosoftWindowsEvent](im-registryevent-microsoftwindowsevent.md) |
-|  | [_Im_RegistryEvent_Native](im-registryevent-native.md) |
-|  | [_Im_RegistryEvent_SentinelOne](im-registryevent-sentinelone.md) |
-|  | [_Im_RegistryEvent_TrendMicroVisionOne](im-registryevent-trendmicrovisionone.md) |
-|  | [_Im_RegistryEvent_VMwareCarbonBlackCloud](im-registryevent-vmwarecarbonblackcloud.md) |
+| Microsoft 365 Defender for Endpoint | [_Im_RegistryEvent_Microsoft365D](asimregistryeventmicrosoft365d.md) |
+| Security Events | [_Im_RegistryEvent_MicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md) |
+| Microsoft Sysmon | [_Im_RegistryEvent_MicrosoftSysmon](asimregistryeventmicrosoftsysmon.md) |
+| Microsoft Sysmon | [_Im_RegistryEvent_MicrosoftSysmonWindowsEvent](asimregistryeventmicrosoftsysmonwindowsevent.md) |
+| Security Events | [_Im_RegistryEvent_MicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md) |
+| Native | [_Im_RegistryEvent_Native](asimregistryeventnative.md) |
+| SentinelOne | [_Im_RegistryEvent_SentinelOne](asimregistryeventsentinelone.md) |
+| Trend Micro Vision One | [_Im_RegistryEvent_TrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md) |
+| VMware Carbon Black Cloud | [_Im_RegistryEvent_VMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) |
 
 ## Parameters
 

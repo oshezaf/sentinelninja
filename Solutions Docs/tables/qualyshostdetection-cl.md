@@ -22,7 +22,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (3)
 
 ### Analytic Rules (2)
 
@@ -33,21 +33,13 @@ This table is ingested by the following connectors:
 | [High Number of Urgent Vulnerabilities Detected](../content/qualysvm-high-number-of-urgent-vulnerabilities-detected-3edb7215-250b-40c0-8b46-79093949242d-7adbb1bc.md) |  |
 | [New High Severity Vulnerability Detected Across Multiple Hosts](../content/qualysvm-new-high-severity-vulnerability-detected-across-multiple-hosts-6116dc19-475a-4148-84b2-efe89c073e27-fbfde951.md) |  |
 
-### Workbooks (4)
+### Workbooks (1)
 
 **In solution [QualysVM](../solutions/qualysvm.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [QualysVMv2](../content/qualysvm-qualysvmv2-0981091b.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [QualysVM](../content/github-only-qualysvm-4c30cec1.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 

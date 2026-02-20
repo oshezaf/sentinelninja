@@ -13,8 +13,10 @@
 | **Connector ID** | `FireworkPush` |
 | **Publisher** | Flare Systems |
 | **Used in Solutions** | [Flare](../solutions/flare.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [FlareFireworkEventLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare/Data%20Connectors/FlareFireworkEventLogs_ccp/FlareFireworkEventLogs_connectorDefinition.json) |
+| **CCF Configuration** | [FlareFireworkEventLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare/Data%20Connectors/FlareFireworkEventLogs_ccp/FlareFireworkEventLogs_PollingConfig.json) |
+| **CCF Capabilities** | `Push` |
 
 The [Flare](https://flare.io) connector provides the capability to ingest threat intelligence and exposure data from Flare into Microsoft Sentinel. Flare identifies your company's digital assets made publicly available due to human error or malicious attacks, including leaked credentials, exposed cloud buckets, darkweb mentions, and more.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`FireworkV2_CL`](../tables/fireworkv2-cl.md) | — | — | — |
+| [`FireworkV2_CL`](../tables/fireworkv2-cl.md) | ? | ? | ? |
 
 ## Permissions
 

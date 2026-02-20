@@ -13,8 +13,10 @@
 | **Connector ID** | `KeeperSecurityPush2` |
 | **Publisher** | Keeper Security |
 | **Used in Solutions** | [Keeper Security](../solutions/keeper-security.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [KepperSecurity_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security/Data%20Connectors/KeeperSecurity_ccp/KepperSecurity_Definition.json) |
+| **CCF Configuration** | [KepperSecurity_poller.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security/Data%20Connectors/KeeperSecurity_ccp/KepperSecurity_poller.json) |
+| **CCF Capabilities** | `Push` |
 
 The [Keeper Security](https://keepersecurity.com) connector provides the capability to read raw event data from Keeper Security in Microsoft Sentinel.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) | ✓ | ✗ | ✓ |
+| [`KeeperSecurityEventNewLogs_CL`](../tables/keepersecurityeventnewlogs-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

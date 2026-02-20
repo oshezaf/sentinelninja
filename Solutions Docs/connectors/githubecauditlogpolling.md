@@ -15,8 +15,9 @@
 | **Connector ID** | `GitHubEcAuditLogPolling` |
 | **Publisher** | GitHub |
 | **Used in Solutions** | [GitHub](../solutions/github.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
 | **Connector Definition Files** | [azuredeploy_GitHub_native_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/azuredeploy_GitHub_native_poller_connector.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 The GitHub audit log connector provides the capability to ingest GitHub logs into Microsoft Sentinel. By connecting GitHub audit logs into Microsoft Sentinel, you can view this data in workbooks, use it to create custom alerts, and improve your investigation process. 
 
@@ -34,9 +35,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | ✓ | ✗ | ✓ |
-| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ✓ | ✗ | ✓ |
-| [`ImpactedUser`](../tables/impacteduser.md) | — | — | — |
+| [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | ? | ✗ | ✓ |
+| [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | ? | ✗ | ✓ |
+| [`ImpactedUser`](../tables/impacteduser.md) | ? | ? | ? |
 
 ## Permissions
 

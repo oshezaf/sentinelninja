@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`fluentbit_CL`](../tables/fluentbit-cl.md) | ✓ | ✗ | ✓ |
+| [`fluentbit_CL`](../tables/fluentbit-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

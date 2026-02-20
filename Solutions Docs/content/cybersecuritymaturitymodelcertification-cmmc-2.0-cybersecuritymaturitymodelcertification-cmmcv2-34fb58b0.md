@@ -18,28 +18,28 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"` | ✓ | ✗ | ✓ |
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"` | ✓ | ✗ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallApplicationRule"` | ✗ | ✗ | ✗ |
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | — |
-| [`ConfigurationChange`](../tables/configurationchange.md) |  | ✓ | ✗ | — |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "AzureFirewallApplicationRule"` | ? | ✗ | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
+| [`ConfigurationChange`](../tables/configurationchange.md) |  | ✓ | ✗ | ? |
 | [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | ✓ | ✗ | ✓ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | — |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 | [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
-| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | — |
-| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | — | — | — |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) |  | ? | ? | ? |
 | [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "MicrosoftTeams"` | ✓ | ✗ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
-| [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ | — |
+| [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ | ? |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
-| [`SecurityRecommendation`](../tables/securityrecommendation.md) |  | ✓ | ✗ | — |
-| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ | — |
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) |  | ✓ | ✗ | ? |
+| [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ | ? |
 | [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
-| [`Usage`](../tables/usage.md) |  | ✗ | ✗ | — |
+| [`Usage`](../tables/usage.md) |  | ✗ | ✗ | ? |
 
 ---
 

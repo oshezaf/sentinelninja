@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Check Point Cyberint IOC](../solutions/check-point-cyberint-ioc.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyberintArgosIOCLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC/Data%20Connectors/CyberintArgosIOCLogs_ccp/CyberintArgosIOCLogs_connectorDefinition.json) |
+| **CCF Configuration** | [CyberintArgosIOCLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC/Data%20Connectors/CyberintArgosIOCLogs_ccp/CyberintArgosIOCLogs_PollingConfig.json) |
+| **CCF Capabilities** | `APIKey`, `POST` |
 
 This is data connector for Check Point Cyberint IOC.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`iocsent_CL`](../tables/iocsent-cl.md) | ✗ | ✗ | ✗ |
+| [`iocsent_CL`](../tables/iocsent-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

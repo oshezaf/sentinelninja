@@ -40,6 +40,26 @@ In order to gain the most comprehensive coverage possible customers should deplo
 | **Solution Folder** | [Business Email Compromise - Financial Fraud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud) |
 | **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Okta Single Sign-On](okta-single-sign-on.md) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [Google Workspace](../asim/asim-products-index.md#google-workspace) |
+| [Microsoft 365 Defender for EndPoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
+| [Microsoft Azure Blob Storage](../asim/asim-products-index.md#microsoft-azure-blob-storage) |
+| [Microsoft Azure File Storage](../asim/asim-products-index.md#microsoft-azure-file-storage) |
+| [Microsoft Azure Queue Storage](../asim/asim-products-index.md#microsoft-azure-queue-storage) |
+| [Microsoft Azure Table Storage](../asim/asim-products-index.md#microsoft-azure-table-storage) |
+| [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) |
+| [Microsoft Sysmon for Linux](../asim/asim-products-index.md#microsoft-sysmon-for-linux) |
+| [Microsoft Windows Events](../asim/asim-products-index.md#microsoft-windows-events) |
+| [Native](../asim/asim-products-index.md#native) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+
 ## Data Connectors
 
 **This solution does not include data connectors.**

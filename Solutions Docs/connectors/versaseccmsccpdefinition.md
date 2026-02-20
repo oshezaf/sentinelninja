@@ -15,6 +15,8 @@
 | **Used in Solutions** | [VersasecCMS](../solutions/versaseccms.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [VersasecCMS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_ConnectorDefinition.json) |
+| **CCF Configuration** | [VersasecCMS_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_PollerConfig.json) |
+| **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 
 The VersasecCms data connector allows ingesting logs into Microsoft Sentinel.
 
@@ -24,8 +26,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VersasecCmsErrorLogs_CL`](../tables/versaseccmserrorlogs-cl.md) | ✗ | ✗ | ✗ |
-| [`VersasecCmsSysLogs_CL`](../tables/versaseccmssyslogs-cl.md) | ✗ | ✗ | ✗ |
+| [`VersasecCmsErrorLogs_CL`](../tables/versaseccmserrorlogs-cl.md) | ? | ? | ? |
+| [`VersasecCmsSysLogs_CL`](../tables/versaseccmssyslogs-cl.md) | ? | ? | ? |
 
 ## Permissions
 

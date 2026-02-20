@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Morphisec](../solutions/morphisec.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Morphisec_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec/Data%20Connectors/Morphisec_CCF/Morphisec_ConnectorDefinition.json) |
+| **CCF Configuration** | [Morphisec_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec/Data%20Connectors/Morphisec_CCF/Morphisec_PollerConfig.json) |
+| **CCF Capabilities** | `OAuth2`, `Paging` |
 
 The [Morphisec](https://www.morphisec.com/) solution for Microsoft Sentinel enables you to seamlessly ingest security alerts directly from the Morphisec API. By leveraging Morphisec's proactive breach prevention and moving target defense capabilities, this integration enriches your security operations with high-fidelity, low-noise alerts on evasive threats.
 
@@ -28,7 +30,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | — | — | — |
+| [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) | ? | ? | ? |
 
 ## Permissions
 

@@ -29,24 +29,23 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser |
 |:--------|:--------------|
-|  | [_Im_AuditEvent_AzureActivity](im-auditevent-azureactivity.md) |
-|  | [_Im_AuditEvent_BarracudaCEF](im-auditevent-barracudacef.md) |
-|  | [_Im_AuditEvent_BarracudaWAF](im-auditevent-barracudawaf.md) |
-|  | [_Im_AuditEvent_CiscoISE](im-auditevent-ciscoise.md) |
-|  | [_Im_AuditEvent_CiscoMeraki](im-auditevent-ciscomeraki.md) |
-|  | [_Im_AuditEvent_CiscoMerakiSyslog](im-auditevent-ciscomerakisyslog.md) |
-|  | [_Im_AuditEvent_CrowdStrikeFalconHost](im-auditevent-crowdstrikefalconhost.md) |
-|  | [_Im_AuditEvent_Empty](im-auditevent-empty.md) |
-|  | [_Im_AuditEvent_IllumioSaaSCore](im-auditevent-illumiosaascore.md) |
-|  | [_Im_AuditEvent_InfobloxBloxOne](im-auditevent-infobloxbloxone.md) |
-|  | [_Im_AuditEvent_MicrosoftEvent](im-auditevent-microsoftevent.md) |
-|  | [_Im_AuditEvent_MicrosoftExchangeAdmin365](im-auditevent-microsoftexchangeadmin365.md) |
-|  | [_Im_AuditEvent_MicrosoftSecurityEvents](im-auditevent-microsoftsecurityevents.md) |
-|  | [_Im_AuditEvent_MicrosoftWindowsEvents](im-auditevent-microsoftwindowsevents.md) |
-|  | [_Im_AuditEvent_Native](im-auditevent-native.md) |
-|  | [_Im_AuditEvent_SentinelOne](im-auditevent-sentinelone.md) |
-|  | [_Im_AuditEvent_VMwareCarbonBlackCloud](im-auditevent-vmwarecarbonblackcloud.md) |
-|  | [_Im_AuditEvent_VectraXDRAudit](im-auditevent-vectraxdraudit.md) |
+| Microsoft Azure | [_Im_AuditEvent_AzureActivity](asimauditeventazureactivity.md) |
+| Barracuda WAF | [_Im_AuditEvent_BarracudaCEF](asimauditeventbarracudacef.md) |
+| Barracuda WAF | [_Im_AuditEvent_BarracudaWAF](asimauditeventbarracudawaf.md) |
+| Cisco ISE | [_Im_AuditEvent_CiscoISE](asimauditeventciscoise.md) |
+| Cisco Meraki | [_Im_AuditEvent_CiscoMeraki](asimauditeventciscomeraki.md) |
+| Cisco Meraki | [_Im_AuditEvent_CiscoMerakiSyslog](asimauditeventciscomerakisyslog.md) |
+| CrowdStrike Falcon Endpoint Protection | [_Im_AuditEvent_CrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md) |
+| Illumio Core | [_Im_AuditEvent_IllumioSaaSCore](asimauditeventillumiosaascore.md) |
+| Infoblox BloxOne | [_Im_AuditEvent_InfobloxBloxOne](asimauditeventinfobloxbloxone.md) |
+| Microsoft Windows | [_Im_AuditEvent_MicrosoftEvent](asimauditeventmicrosoftevent.md) |
+| Microsoft SharePoint | [_Im_AuditEvent_MicrosoftExchangeAdmin365](asimauditeventmicrosoftexchangeadmin365.md) |
+| Microsoft Windows | [_Im_AuditEvent_MicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) |
+| Microsoft Windows | [_Im_AuditEvent_MicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) |
+| Native | [_Im_AuditEvent_Native](asimauditeventnative.md) |
+| SentinelOne | [_Im_AuditEvent_SentinelOne](asimauditeventsentinelone.md) |
+| VMware Carbon Black Cloud | [_Im_AuditEvent_VMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md) |
+| Vectra | [_Im_AuditEvent_VectraXDRAudit](asimauditeventvectraxdraudit.md) |
 
 ## Parameters
 

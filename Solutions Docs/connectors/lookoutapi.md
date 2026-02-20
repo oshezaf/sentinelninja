@@ -30,7 +30,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Lookout_CL`](../tables/lookout-cl.md) | ✗ | ✗ | ✗ |
+| [`Lookout_CL`](../tables/lookout-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

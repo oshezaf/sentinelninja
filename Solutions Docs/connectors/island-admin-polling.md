@@ -13,8 +13,9 @@
 | **Connector ID** | `Island_Admin_Polling` |
 | **Publisher** | Island |
 | **Used in Solutions** | [Island](../solutions/island.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
 | **Connector Definition Files** | [IslandAdminAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island/Data%20Connectors/IslandAdminAPIConnector.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 The [Island](https://www.island.io) Admin connector provides the capability to ingest Island Admin Audit logs into Microsoft Sentinel.
 
@@ -24,7 +25,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Island_Admin_CL`](../tables/island-admin-cl.md) | ✓ | ✗ | ✓ |
+| [`Island_Admin_CL`](../tables/island-admin-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

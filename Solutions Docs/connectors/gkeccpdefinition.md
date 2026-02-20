@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Google Kubernetes Engine](../solutions/google-kubernetes-engine.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GoogleKubernetesEngineLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Kubernetes%20Engine/Data%20Connectors/GoogleKubernetesEngineLogs_ccp/GoogleKubernetesEngineLogs_ConnectorDefinition.json) |
+| **CCF Configuration** | [GoogleKubernetesEngineLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Kubernetes%20Engine/Data%20Connectors/GoogleKubernetesEngineLogs_ccp/GoogleKubernetesEngineLogs_PollingConfig.json) |
+| **CCF Capabilities** | `GCP` |
 
 The Google Kubernetes Engine (GKE) Logs enable you to capture cluster activity, workload behavior, and security events, allowing you to monitor Kubernetes workloads, analyze performance, and detect potential threats across GKE clusters.
 
@@ -24,12 +26,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GKEAPIServer`](../tables/gkeapiserver.md) | ✓ | ✗ | — |
-| [`GKEApplication`](../tables/gkeapplication.md) | ✓ | ✗ | — |
+| [`GKEAPIServer`](../tables/gkeapiserver.md) | ✓ | ✗ | ? |
+| [`GKEApplication`](../tables/gkeapplication.md) | ✓ | ✗ | ? |
 | [`GKEAudit`](../tables/gkeaudit.md) | ✓ | ✗ | ✓ |
-| [`GKEControllerManager`](../tables/gkecontrollermanager.md) | ✓ | ✗ | — |
-| [`GKEHPADecision`](../tables/gkehpadecision.md) | ✓ | ✗ | — |
-| [`GKEScheduler`](../tables/gkescheduler.md) | ✓ | ✗ | — |
+| [`GKEControllerManager`](../tables/gkecontrollermanager.md) | ✓ | ✗ | ? |
+| [`GKEHPADecision`](../tables/gkehpadecision.md) | ✓ | ✗ | ? |
+| [`GKEScheduler`](../tables/gkescheduler.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

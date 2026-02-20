@@ -76,6 +76,57 @@ This is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-
 | **Solution Folder** | [Legacy IOC based Threat Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Legacy%20IOC%20based%20Threat%20Protection) |
 | **Dependencies** | [SquidProxy](squidproxy.md), [Windows Server DNS](windows-server-dns.md), [CiscoASA](ciscoasa.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Azure Firewall](azure-firewall.md), [Zscaler Internet Access](zscaler-internet-access.md), [Infoblox NIOS](infoblox-nios.md), [GoogleCloudPlatformDNS](googlecloudplatformdns.md), [NXLogDNSLogs](nxlogdnslogs.md), [CiscoUmbrella](ciscoumbrella.md), [Corelight](corelight.md), [Amazon Web Services](amazon-web-services.md), [Windows Forwarded Events](windows-forwarded-events.md), [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md), [Microsoft 365](microsoft-365.md), [Windows Security Events](windows-security-events.md), [Microsoft Entra ID](microsoft-entra-id.md), [Azure Activity](azure-activity.md), [F5 Big-IP](f5-big-ip.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md), [Common Event Format](common-event-format.md), [Windows Firewall](windows-firewall.md) |
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [Google Workspace](../asim/asim-products-index.md#google-workspace) |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
+| [Microsoft 365 Defender for EndPoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
+| [Microsoft 365 Defender for Endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
+| [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
+| [Microsoft Azure Blob Storage](../asim/asim-products-index.md#microsoft-azure-blob-storage) |
+| [Microsoft Azure File Storage](../asim/asim-products-index.md#microsoft-azure-file-storage) |
+| [Microsoft Azure Queue Storage](../asim/asim-products-index.md#microsoft-azure-queue-storage) |
+| [Microsoft Azure Table Storage](../asim/asim-products-index.md#microsoft-azure-table-storage) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) |
+| [Microsoft Sysmon](../asim/asim-products-index.md#microsoft-sysmon) |
+| [Microsoft Sysmon for Linux](../asim/asim-products-index.md#microsoft-sysmon-for-linux) |
+| [Microsoft Windows Events](../asim/asim-products-index.md#microsoft-windows-events) |
+| [Native](../asim/asim-products-index.md#native) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
+| [Security Events](../asim/asim-products-index.md#security-events) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
+| [Trend Micro Vision One](../asim/asim-products-index.md#trend-micro-vision-one) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+
 ## Data Connectors
 
 **This solution does not include data connectors.**

@@ -15,6 +15,8 @@
 | **Used in Solutions** | [GoogleCloudPlatformResourceManager](../solutions/googlecloudplatformresourcemanager.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPResourceManagerAuditLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformResourceManager/Data%20Connectors/GCPResourceManagerAuditLogs_ccf/GCPResourceManagerAuditLogs_ConnectorDefinition.json) |
+| **CCF Configuration** | [GCPResourceManagerAuditLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformResourceManager/Data%20Connectors/GCPResourceManagerAuditLogs_ccf/GCPResourceManagerAuditLogs_PollingConfig.json) |
+| **CCF Capabilities** | `GCP` |
 
 The Google Cloud Platform Resource Manager data connector provides the capability to ingest Resource Manager [Admin Activity and Data Access Audit logs](https://cloud.google.com/resource-manager/docs/audit-logging) into Microsoft Sentinel using the Cloud Resource Manager API. Refer the [Product overview](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy) document for more details.
 

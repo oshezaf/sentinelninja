@@ -15,6 +15,8 @@
 | **Used in Solutions** | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CrowdStrikeAPI_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/CrowdStrikeAPI_Definition.json) |
+| **CCF Configuration** | [CrowdStrikeAPI_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/CrowdStrikeAPI_PollingConfig.json) |
+| **CCF Capabilities** | `OAuth2`, `Paging`, `POST`, `Nested` |
 
 The [CrowdStrike Data Connector](https://www.crowdstrike.com/) allows ingesting logs from the CrowdStrike API into Microsoft Sentinel. This connector provides the capability to ingest CrowdStrike [Alerts](https://falcon.crowdstrike.com/documentation/84/detection-and-prevention-policies-apis#get-alerts), [Detections](https://falcon.crowdstrike.com/documentation/84/detection-and-prevention-policies-apis#get-detections), [Hosts](https://falcon.crowdstrike.com/documentation/84/host-and-host-group-management-apis#get-hosts), [Cases](https://falcon.crowdstrike.com/documentation/84/cases-apis#get-cases), and [Vulnerabilities](https://falcon.crowdstrike.com/documentation/84/spotlight-apis#get-vulnerabilities) into Microsoft Sentinel. This connector is built on the Microsoft Sentinel Codeless Connector Platform and uses the CrowdStrike API to fetch logs. It supports DCR-based ingestion time transformations so that queries can run more efficiently. Refer to [CrowdStrike API documentation](https://falcon.crowdstrike.com/documentation/page/a2a7fc0e/crowdstrike-oauth2-based-apis) for more information.
 
@@ -25,10 +27,9 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | ✓ | ✗ | ✓ |
-| [`CrowdStrikeCases`](../tables/crowdstrikecases.md) | ✗ | ✗ | — |
-| [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✗ | — |
-| [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | ✓ | ✗ | — |
-| [`CrowdStrikeVulnerabilities`](../tables/crowdstrikevulnerabilities.md) | ✓ | ✗ | — |
+| [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✗ | ? |
+| [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | ✓ | ✗ | ? |
+| [`CrowdStrikeVulnerabilities`](../tables/crowdstrikevulnerabilities.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

@@ -19,9 +19,9 @@ REST API-based connectors use the Azure Monitor Data Collector API or Logs Inges
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **15** |
-| Active | 15 |
+| Active | 14 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 0 |
+| Unpublished ⚠️ | 1 |
 
 ## Connectors Using This Method
 
@@ -32,7 +32,7 @@ REST API-based connectors use the Azure Monitor Data Collector API or Logs Inges
 | [API Protection](../connectors/42crunchapiprotection.md) | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | Orange Cyberdefense | 1 | [Datalake2Sentinel](../solutions/datalake2sentinel.md) |
-| [Datawiza DAP](../connectors/datawizadapsolution.md) | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
+| [Datawiza DAP](../connectors/datawizadapsolution.md) ⚠️ | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
 | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | MISP project & cudeso.be | 1 | [MISP2Sentinel](../solutions/misp2sentinel.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
@@ -46,6 +46,8 @@ REST API-based connectors use the Azure Monitor Data Collector API or Logs Inges
 | [SaaS Security](../connectors/valencesecurity.md) | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 
 ---
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 ---
 

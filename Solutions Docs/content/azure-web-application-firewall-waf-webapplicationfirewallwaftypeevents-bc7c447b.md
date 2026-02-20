@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | ? | ✗ | ✗ |
 | [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
 
 ---

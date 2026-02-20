@@ -17,14 +17,6 @@ This query shows attempts to request Kerberos service ticket using the AS servic
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Credential%20Access/Attempts%20to%20request%20Kerberos%20service%20ticket%20using%20the%20AS%20service.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | ✓ | ✗ | ✓ |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

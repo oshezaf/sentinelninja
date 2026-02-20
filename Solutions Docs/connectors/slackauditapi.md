@@ -28,9 +28,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | — | — | — |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✗ | ✓ |
-| [`SlackAudit_CL`](../tables/slackaudit-cl.md) | — | — | — |
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | ? | ? | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✗ | ✓ |
+| [`SlackAudit_CL`](../tables/slackaudit-cl.md) | ? | ? | ? |
 
 ## Permissions
 

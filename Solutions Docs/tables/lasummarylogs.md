@@ -18,16 +18,6 @@ Reference for LASummaryLogs table in Azure Monitor Logs.
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [SummaryRulesWorkbook](../content/github-only-summaryrulesworkbook-d89cc3ca.md) |  |
-
 ## Resource Types
 
 This table collects data from the following Azure resource types:

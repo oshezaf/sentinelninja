@@ -29,13 +29,12 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser |
 |:--------|:--------------|
-|  | [_Im_UserManagement_CiscoISE](im-usermanagement-ciscoise.md) |
-|  | [_Im_UserManagement_Empty](im-usermanagement-empty.md) |
-|  | [_Im_UserManagement_LinuxAuthpriv](im-usermanagement-linuxauthpriv.md) |
-|  | [_Im_UserManagement_MicrosoftSecurityEvent](im-usermanagement-microsoftsecurityevent.md) |
-|  | [_Im_UserManagement_MicrosoftWindowsEvent](im-usermanagement-microsoftwindowsevent.md) |
-|  | [_Im_UserManagement_Native](im-usermanagement-native.md) |
-|  | [_Im_UserManagement_SentinelOne](im-usermanagement-sentinelone.md) |
+| Cisco ISE | [_Im_UserManagement_CiscoISE](asimusermanagementciscoise.md) |
+| Microsoft | [_Im_UserManagement_LinuxAuthpriv](asimusermanagementlinuxauthpriv.md) |
+| Microsoft Security Event | [_Im_UserManagement_MicrosoftSecurityEvent](asimusermanagementmicrosoftsecurityevent.md) |
+| Microsoft Windows Event | [_Im_UserManagement_MicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md) |
+| Native | [_Im_UserManagement_Native](asimusermanagementnative.md) |
+| SentinelOne | [_Im_UserManagement_SentinelOne](asimusermanagementsentinelone.md) |
 
 ## Parameters
 

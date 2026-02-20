@@ -32,7 +32,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | ✓ | ✗ | ✓ |
+| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

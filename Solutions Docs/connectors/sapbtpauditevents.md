@@ -15,6 +15,8 @@
 | **Used in Solutions** | [SAP BTP](../solutions/sap-btp.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SAPBTP_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP/Data%20Connectors/SAPBTPPollerConnector/SAPBTP_DataConnectorDefinition.json) |
+| **CCF Configuration** | [SAPBTP_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP/Data%20Connectors/SAPBTPPollerConnector/SAPBTP_PollingConfig.json) |
+| **CCF Capabilities** | `OAuth2`, `Paging` |
 
 SAP Business Technology Platform (SAP BTP) brings together data management, analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | ✓ | ✗ | ✓ |
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

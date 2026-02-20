@@ -29,35 +29,34 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser |
 |:--------|:--------------|
-|  | [_Im_Authentication_AADManagedIdentitySignInLogs](im-authentication-aadmanagedidentitysigninlogs.md) |
-|  | [_Im_Authentication_AADNonInteractiveUserSignInLogs](im-authentication-aadnoninteractiveusersigninlogs.md) |
-|  | [_Im_Authentication_AADServicePrincipalSignInLogs](im-authentication-aadserviceprincipalsigninlogs.md) |
-|  | [_Im_Authentication_AWSCloudTrail](im-authentication-awscloudtrail.md) |
-|  | [_Im_Authentication_BarracudaWAF](im-authentication-barracudawaf.md) |
-|  | [_Im_Authentication_CiscoASA](im-authentication-ciscoasa.md) |
-|  | [_Im_Authentication_CiscoISE](im-authentication-ciscoise.md) |
-|  | [_Im_Authentication_CiscoMeraki](im-authentication-ciscomeraki.md) |
-|  | [_Im_Authentication_CiscoMerakiSyslog](im-authentication-ciscomerakisyslog.md) |
-|  | [_Im_Authentication_CrowdStrikeFalconHost](im-authentication-crowdstrikefalconhost.md) |
-|  | [_Im_Authentication_Empty](im-authentication-empty.md) |
-|  | [_Im_Authentication_GoogleWorkspace](im-authentication-googleworkspace.md) |
-|  | [_Im_Authentication_IllumioSaaSCore](im-authentication-illumiosaascore.md) |
-|  | [_Im_Authentication_M365Defender](im-authentication-m365defender.md) |
-|  | [_Im_Authentication_MD4IoT](im-authentication-md4iot.md) |
-|  | [_Im_Authentication_MicrosoftWindowsEvent](im-authentication-microsoftwindowsevent.md) |
-|  | [_Im_Authentication_Native](im-authentication-native.md) |
-|  | [_Im_Authentication_OktaSSO](im-authentication-oktasso.md) |
-|  | [_Im_Authentication_OktaV2](im-authentication-oktav2.md) |
-|  | [_Im_Authentication_PaloAltoCortexDataLake](im-authentication-paloaltocortexdatalake.md) |
-|  | [_Im_Authentication_PostgreSQL](im-authentication-postgresql.md) |
-|  | [_Im_Authentication_SalesforceSC](im-authentication-salesforcesc.md) |
-|  | [_Im_Authentication_SentinelOne](im-authentication-sentinelone.md) |
-|  | [_Im_Authentication_SigninLogs](im-authentication-signinlogs.md) |
-|  | [_Im_Authentication_Sshd](im-authentication-sshd.md) |
-|  | [_Im_Authentication_Su](im-authentication-su.md) |
-|  | [_Im_Authentication_Sudo](im-authentication-sudo.md) |
-|  | [_Im_Authentication_VMwareCarbonBlackCloud](im-authentication-vmwarecarbonblackcloud.md) |
-|  | [_Im_Authentication_VectraXDRAudit](im-authentication-vectraxdraudit.md) |
+| Microsoft Entra ID | [_Im_Authentication_AADManagedIdentitySignInLogs](asimauthenticationaadmanagedidentitysigninlogs.md) |
+| Microsoft Entra ID | [_Im_Authentication_AADNonInteractiveUserSignInLogs](asimauthenticationaadnoninteractiveusersigninlogs.md) |
+| Microsoft Entra ID | [_Im_Authentication_AADServicePrincipalSignInLogs](asimauthenticationaadserviceprincipalsigninlogs.md) |
+| AWS | [_Im_Authentication_AWSCloudTrail](asimauthenticationawscloudtrail.md) |
+| Barracuda WAF | [_Im_Authentication_BarracudaWAF](asimauthenticationbarracudawaf.md) |
+| Cisco Adaptive Security Appliance (ASA) | [_Im_Authentication_CiscoASA](asimauthenticationciscoasa.md) |
+| Cisco ISE | [_Im_Authentication_CiscoISE](asimauthenticationciscoise.md) |
+| Cisco Meraki | [_Im_Authentication_CiscoMeraki](asimauthenticationciscomeraki.md) |
+| Cisco Meraki | [_Im_Authentication_CiscoMerakiSyslog](asimauthenticationciscomerakisyslog.md) |
+| CrowdStrike Falcon Endpoint Protection | [_Im_Authentication_CrowdStrikeFalconHost](asimauthenticationcrowdstrikefalconhost.md) |
+| Google Workspace | [_Im_Authentication_GoogleWorkspace](asimauthenticationgoogleworkspace.md) |
+| Illumio | [_Im_Authentication_IllumioSaaSCore](asimauthenticationillumiosaascore.md) |
+| M365 Defender for EndPoint | [_Im_Authentication_M365Defender](asimauthenticationm365defender.md) |
+| Microsoft Defender for IoT | [_Im_Authentication_MD4IoT](asimauthenticationmd4iot.md) |
+| Windows Security Events | [_Im_Authentication_MicrosoftWindowsEvent](asimauthenticationmicrosoftwindowsevent.md) |
+| Native | [_Im_Authentication_Native](asimauthenticationnative.md) |
+| Okta | [_Im_Authentication_OktaSSO](asimauthenticationoktasso.md) |
+| Okta | [_Im_Authentication_OktaV2](asimauthenticationoktav2.md) |
+| Palo Alto Cortex Data Lake | [_Im_Authentication_PaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md) |
+| PostgreSQL | [_Im_Authentication_PostgreSQL](asimauthenticationpostgresql.md) |
+| Salesforce Service Cloud | [_Im_Authentication_SalesforceSC](asimauthenticationsalesforcesc.md) |
+| SentinelOne | [_Im_Authentication_SentinelOne](asimauthenticationsentinelone.md) |
+| Microsoft Entra ID | [_Im_Authentication_SigninLogs](asimauthenticationsigninlogs.md) |
+| OpenSSH | [_Im_Authentication_Sshd](asimauthenticationsshd.md) |
+| su | [_Im_Authentication_Su](asimauthenticationsu.md) |
+| sudo | [_Im_Authentication_Sudo](asimauthenticationsudo.md) |
+| VMware Carbon Black Cloud | [_Im_Authentication_VMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) |
+| Vectra | [_Im_Authentication_VectraXDRAudit](asimauthenticationvectraxdraudit.md) |
 
 ## Parameters
 

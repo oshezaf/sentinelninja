@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) | ✓ | ✗ | ✓ |
+| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) | ? | ✗ | ✓ |
 
 ---
 

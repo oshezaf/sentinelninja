@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Auth0AM_CL`](../tables/auth0am-cl.md) | ✗ | ✗ | ✗ |
+| [`Auth0AM_CL`](../tables/auth0am-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

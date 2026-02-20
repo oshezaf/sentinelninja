@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Armis_Devices_CL`](../tables/armis-devices-cl.md) | ✗ | ✗ | ✗ |
+| [`Armis_Devices_CL`](../tables/armis-devices-cl.md) | ? | ✗ | ✗ |
 
 ---
 

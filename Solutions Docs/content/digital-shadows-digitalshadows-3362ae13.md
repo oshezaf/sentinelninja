@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) | ✓ | ✗ | ✓ |
+| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) | ? | ✗ | ✓ |
 
 ---
 

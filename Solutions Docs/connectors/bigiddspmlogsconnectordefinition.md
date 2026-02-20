@@ -17,6 +17,8 @@
 | **Used in Solutions** | [BigID](../solutions/bigid.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [BigIDDSPMLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID/Data%20Connectors/BigIDDSPMLogs_ccp/BigIDDSPMLogs_connectorDefinition.json) |
+| **CCF Configuration** | [BigIDDSPMLogs_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID/Data%20Connectors/BigIDDSPMLogs_ccp/BigIDDSPMLogs_PollerConfig.json) |
+| **CCF Capabilities** | `JwtToken`, `Paging`, `MvExpand`, `Nested` |
 
 The [BigID DSPM](https://bigid.com/data-security-posture-management/) data connector provides the capability to ingest BigID DSPM cases with affected objects and datasource information into Microsoft Sentinel.
 
@@ -26,8 +28,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BigIDDSPMAssetStore_CL`](../tables/bigiddspmassetstore-cl.md) | — | — | — |
-| [`BigIDDSPMCatalog_CL`](../tables/bigiddspmcatalog-cl.md) | — | — | — |
+| [`BigIDDSPMAssetStore_CL`](../tables/bigiddspmassetstore-cl.md) | ? | ? | ? |
+| [`BigIDDSPMCatalog_CL`](../tables/bigiddspmcatalog-cl.md) | ? | ? | ? |
 
 ## Permissions
 

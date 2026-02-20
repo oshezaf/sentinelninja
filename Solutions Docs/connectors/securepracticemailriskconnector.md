@@ -15,6 +15,8 @@
 | **Used in Solutions** | [MailRisk](../solutions/mailrisk.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MailRisk_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk/Data%20Connectors/MailRisk_CCP/MailRisk_ConnectorDefinition.json) |
+| **CCF Configuration** | [MailRisk_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk/Data%20Connectors/MailRisk_CCP/MailRisk_PollingConfig.json) |
+| **CCF Capabilities** | `Basic`, `Paging` |
 
 The MailRisk by Secure Practice connector allows you to ingest email threat intelligence data from the MailRisk API into Microsoft Sentinel. This connector provides visibility into reported emails, risk assessments, and security events related to email threats.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MailRiskEventEmails_CL`](../tables/mailriskeventemails-cl.md) | — | — | — |
+| [`MailRiskEventEmails_CL`](../tables/mailriskeventemails-cl.md) | ? | ? | ? |
 
 ## Permissions
 

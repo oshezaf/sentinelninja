@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md) | ✗ | ✗ | ✗ |
+| [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

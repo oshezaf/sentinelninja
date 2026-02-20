@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
 

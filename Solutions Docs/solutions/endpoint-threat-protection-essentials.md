@@ -42,8 +42,10 @@ This solution uses ASIM parsers and supports the following products:
 
 | Product |
 |:--------|
+| [Microsoft 365 Defender for Endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
 | [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
 | [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
+| [Microsoft Sysmon](../asim/asim-products-index.md#microsoft-sysmon) |
 | [Native](../asim/asim-products-index.md#native) |
 | [Security Events](../asim/asim-products-index.md#security-events) |
 | [SentinelOne](../asim/asim-products-index.md#sentinelone) |

@@ -26,8 +26,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZimperiumMitigationLog_CL`](../tables/zimperiummitigationlog-cl.md) | — | — | — |
-| [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) | ✗ | ✗ | ✗ |
+| [`ZimperiumMitigationLog_CL`](../tables/zimperiummitigationlog-cl.md) | ? | ? | ? |
+| [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

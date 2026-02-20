@@ -8,7 +8,6 @@
 
 | Attribute | Value |
 |:----------|:------|
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
 
@@ -27,16 +26,6 @@ This table is ingested by the following connectors:
 | [AliCloud](../connectors/alicloud.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AliCloudWorkbook](../content/github-only-alicloudworkbook-2adacca8.md) |  |
 
 ## Parsers Using This Table (1)
 

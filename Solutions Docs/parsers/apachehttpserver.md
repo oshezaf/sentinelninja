@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | ✓ | ✗ | ✓ |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) | ? | ✗ | ✓ |
 
 ---
 

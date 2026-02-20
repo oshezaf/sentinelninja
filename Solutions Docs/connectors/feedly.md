@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) | ✗ | ✗ | ✗ |
+| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

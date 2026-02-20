@@ -13,8 +13,10 @@
 | **Connector ID** | `HalcyonPush` |
 | **Publisher** | Halcyon |
 | **Used in Solutions** | [Halcyon](../solutions/halcyon.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Halcyon_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon/Data%20Connectors/Halcyon_ccp/Halcyon_connectorDefinition.json) |
+| **CCF Configuration** | [Halcyon_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Halcyon/Data%20Connectors/Halcyon_ccp/Halcyon_dataConnector.json) |
+| **CCF Capabilities** | `Push` |
 
 The [Halcyon](https://www.halcyon.ai) connector provides the capability to send data from Halcyon to Microsoft Sentinel.
 
@@ -24,11 +26,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | ✗ | ✗ | ✗ |
-| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | ✗ | ✗ | ✗ |
-| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | ✗ | ✗ | ✗ |
-| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | ✗ | ✗ | ✗ |
-| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | ✗ | ✗ | ✗ |
+| [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) | ? | ✗ | ✗ |
+| [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) | ? | ✗ | ✗ |
+| [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) | ? | ✗ | ✗ |
+| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | ? | ✗ | ✗ |
+| [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

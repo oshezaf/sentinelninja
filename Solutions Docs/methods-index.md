@@ -12,16 +12,18 @@ Data connectors use different collection methods to ingest data into Microsoft S
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:------------------|------:|-------:|-------------:|---------------:|
-| [CCF](methods/ccf.md) | **133** | 126 | 1 | 6 |
 | [Azure Function](methods/azure-function.md) | **131** | 88 | 18 | 25 |
 | [MMA](methods/mma.md) | **110** | 14 | 90 | 6 |
+| [CCF](methods/ccf.md) | **108** | 102 | 0 | 6 |
 | [AMA](methods/ama.md) | **59** | 25 | 34 | 0 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **43** | 39 | 0 | 4 |
 | [Native](methods/native.md) | **25** | 25 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
-| [REST API](methods/rest-api.md) | **15** | 15 | 0 | 0 |
+| [REST API](methods/rest-api.md) | **15** | 14 | 0 | 1 |
+| [CCF (Legacy)](methods/ccf-legacy.md) | **14** | 12 | 1 | 1 |
+| [CCF Push](methods/ccf-push.md) | **11** | 11 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **3** | 3 | 0 | 0 |
-| **Total** | **536** | **352** | **143** | **41** |
+| **Total** | **536** | **350** | **143** | **43** |
 
 ---
 

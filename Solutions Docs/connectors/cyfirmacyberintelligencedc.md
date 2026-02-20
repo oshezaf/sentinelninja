@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Cyfirma Cyber Intelligence](../solutions/cyfirma-cyber-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyfirmaCyberIntel_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence/Data%20Connectors/CyfirmaCyberIntelligence_ccp/CyfirmaCyberIntel_DataConnectorDefinition.json) |
+| **CCF Configuration** | [CyfirmaCyberIntel_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence/Data%20Connectors/CyfirmaCyberIntelligence_ccp/CyfirmaCyberIntel_PollerConfig.json) |
+| **CCF Capabilities** | `APIKey` |
 
 The CYFIRMA Cyber Intelligence data connector enables seamless log ingestion from the DeCYFIR API into Microsoft Sentinel. Built on the Microsoft Sentinel Codeless Connector Platform, it leverages the DeCYFIR Alerts API to retrieve logs. Additionally, it supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview), which parse security data into a custom table during ingestion. This eliminates the need for query-time parsing, enhancing performance and efficiency.
 
@@ -24,10 +26,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyfirmaCampaigns_CL`](../tables/cyfirmacampaigns-cl.md) | ✓ | ✗ | ✓ |
-| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | ✓ | ✗ | ✓ |
-| [`CyfirmaMalware_CL`](../tables/cyfirmamalware-cl.md) | ✓ | ✗ | ✓ |
-| [`CyfirmaThreatActors_CL`](../tables/cyfirmathreatactors-cl.md) | ✓ | ✗ | ✓ |
+| [`CyfirmaCampaigns_CL`](../tables/cyfirmacampaigns-cl.md) | ? | ✗ | ✓ |
+| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | ? | ✗ | ✓ |
+| [`CyfirmaMalware_CL`](../tables/cyfirmamalware-cl.md) | ? | ✗ | ✓ |
+| [`CyfirmaThreatActors_CL`](../tables/cyfirmathreatactors-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

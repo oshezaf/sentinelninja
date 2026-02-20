@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) | ✗ | ✗ | ✗ |
+| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

@@ -15,6 +15,8 @@
 | **Used in Solutions** | [CyrenThreatIntelligence](../solutions/cyrenthreatintelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Cyren_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/Data%20Connectors/CyrenThreatIntel_CCF/Cyren_ConnectorDefinition.json) |
+| **CCF Configuration** | [Cyren_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/Data%20Connectors/CyrenThreatIntel_CCF/Cyren_PollerConfig.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 Ingest IP reputation and malware URL indicators from Cyren using the Common Connector Framework (CCF).
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | ✗ | ✗ | ✗ |
+| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) | ? | ? | ? |
 
 ## Permissions
 

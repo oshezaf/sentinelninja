@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Cyble Vision](../solutions/cyble-vision.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CybleVisionAlerts_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Data%20Connectors/CybleVisionAlerts_CCF/CybleVisionAlerts_DataConnectorDefinition.json) |
+| **CCF Configuration** | [CybleVision_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Data%20Connectors/CybleVisionAlerts_CCF/CybleVision_PollingConfig.json) |
+| **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 
 The **Cyble Vision Alerts** CCF Data Connector enables Ingestion of Threat Alerts from Cyble Vision into Microsoft Sentinel using the Codeless Connector Framework Connector. It collects alert data via API, normalizes it, and stores it in a custom table for advanced detection, correlation, and response.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | ✗ | ✗ | ✗ |
+| [`CybleVisionAlerts_CL`](../tables/cyblevisionalerts-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

@@ -32,7 +32,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`vcenter_CL`](../tables/vcenter-cl.md) | ✓ | ✗ | ✓ |
+| [`vcenter_CL`](../tables/vcenter-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

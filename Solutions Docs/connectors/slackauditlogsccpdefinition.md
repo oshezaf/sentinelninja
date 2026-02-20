@@ -15,6 +15,8 @@
 | **Used in Solutions** | [SlackAudit](../solutions/slackaudit.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SlackAuditLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Data%20Connectors/SlackAuditLog_CCP/SlackAuditLog_ConnectorDefinition.json) |
+| **CCF Configuration** | [SlackAuditLog_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Data%20Connectors/SlackAuditLog_CCP/SlackAuditLog_PollingConfig.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 The SlackAudit data connector provides the capability to ingest [Slack Audit logs](https://api.slack.com/admins/audit-logs) into Microsoft Sentinel through the REST API. Refer to [API documentation](https://api.slack.com/admins/audit-logs-call) for more information.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✗ | ✓ |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

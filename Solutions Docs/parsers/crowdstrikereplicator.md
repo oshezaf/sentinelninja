@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CrowdStrikeReplicatorV2`](../tables/crowdstrikereplicatorv2.md) | ✗ | ✗ | ✗ |
-| [`CrowdstrikeReplicatorLogs_CL`](../tables/crowdstrikereplicatorlogs-cl.md) | — | — | — |
+| [`CrowdStrikeReplicatorV2`](../tables/crowdstrikereplicatorv2.md) | ? | ✗ | ✗ |
+| [`CrowdstrikeReplicatorLogs_CL`](../tables/crowdstrikereplicatorlogs-cl.md) | ? | ? | ? |
 
 ---
 

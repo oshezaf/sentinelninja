@@ -15,8 +15,10 @@
 | **Connector ID** | `Onapsis` |
 | **Publisher** | Onapsis Platform |
 | **Used in Solutions** | [Onapsis Defend](../solutions/onapsis-defend.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Onapsis.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend/Data%20Connectors/Onapsis.json) |
+| **CCF Configuration** | [Onapsis_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend/Data%20Connectors/Onapsis_PUSH_CCP/Onapsis_PollingConfig.json) |
+| **CCF Capabilities** | `Push` |
 
 Onapsis Defend Integration is aimed at forwarding alerts and logs collected and detected by Onapsis Platform into Microsoft Sentinel SIEM
 
@@ -27,7 +29,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ | ✓ |
-| [`Onapsis_Defend_CL`](../tables/onapsis-defend-cl.md) | ✓ | ✗ | ✓ |
+| [`Onapsis_Defend_CL`](../tables/onapsis-defend-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

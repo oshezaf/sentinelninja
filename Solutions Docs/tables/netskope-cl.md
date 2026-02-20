@@ -22,16 +22,6 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-
 ## Parsers Using This Table (2)
 
 ### Other Parsers (2)

@@ -38,7 +38,6 @@ This union parser includes parsers for the following products:
 | SentinelOne | [_ASim_RegistryEvent_SentinelOne](asimregistryeventsentinelone.md) |
 | Trend Micro Vision One | [_ASim_RegistryEvent_TrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md) |
 | VMware Carbon Black Cloud | [_ASim_RegistryEvent_VMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) |
-|  | [_Im_RegistryEvent_Empty](im-registryevent-empty.md) |
 
 ## Source Tables
 
@@ -46,15 +45,15 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimRegistryEventMicrosoft365D`](../asim/asimregistryeventmicrosoft365d.md) | — | — | — |
-| [`ASimRegistryEventMicrosoftSecurityEvent`](../asim/asimregistryeventmicrosoftsecurityevent.md) | — | — | — |
-| [`ASimRegistryEventMicrosoftSysmon`](../asim/asimregistryeventmicrosoftsysmon.md) | — | — | — |
-| [`ASimRegistryEventMicrosoftSysmonWindowsEvent`](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | — | — | — |
-| [`ASimRegistryEventMicrosoftWindowsEvent`](../asim/asimregistryeventmicrosoftwindowsevent.md) | — | — | — |
-| [`ASimRegistryEventNative`](../asim/asimregistryeventnative.md) | — | — | — |
-| [`ASimRegistryEventSentinelOne`](../asim/asimregistryeventsentinelone.md) | — | — | — |
-| [`ASimRegistryEventTrendMicroVisionOne`](../asim/asimregistryeventtrendmicrovisionone.md) | — | — | — |
-| [`ASimRegistryEventVMwareCarbonBlackCloud`](../asim/asimregistryeventvmwarecarbonblackcloud.md) | — | — | — |
+| [`ASimRegistryEventMicrosoft365D`](../asim/asimregistryeventmicrosoft365d.md) | ? | ? | ? |
+| [`ASimRegistryEventMicrosoftSecurityEvent`](../asim/asimregistryeventmicrosoftsecurityevent.md) | ? | ? | ? |
+| [`ASimRegistryEventMicrosoftSysmon`](../asim/asimregistryeventmicrosoftsysmon.md) | ? | ? | ? |
+| [`ASimRegistryEventMicrosoftSysmonWindowsEvent`](../asim/asimregistryeventmicrosoftsysmonwindowsevent.md) | ? | ? | ? |
+| [`ASimRegistryEventMicrosoftWindowsEvent`](../asim/asimregistryeventmicrosoftwindowsevent.md) | ? | ? | ? |
+| [`ASimRegistryEventNative`](../asim/asimregistryeventnative.md) | ? | ? | ? |
+| [`ASimRegistryEventSentinelOne`](../asim/asimregistryeventsentinelone.md) | ? | ? | ? |
+| [`ASimRegistryEventTrendMicroVisionOne`](../asim/asimregistryeventtrendmicrovisionone.md) | ? | ? | ? |
+| [`ASimRegistryEventVMwareCarbonBlackCloud`](../asim/asimregistryeventvmwarecarbonblackcloud.md) | ? | ? | ? |
 
 ## Parameters
 

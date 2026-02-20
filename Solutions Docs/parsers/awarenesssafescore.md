@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | ✗ | ✗ | ✗ |
+| [`Awareness_SafeScore_Details_CL`](../tables/awareness-safescore-details-cl.md) | ? | ✗ | ✗ |
 
 ---
 

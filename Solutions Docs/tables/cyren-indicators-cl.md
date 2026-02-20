@@ -6,12 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Supports Transformations** | ✗ No |
-| **Ingestion API Supported** | ✗ No |
-| **Lake-Only Ingestion** | ✗ No |
-
 ## Solutions (1)
 
 This table is used by the following solutions:

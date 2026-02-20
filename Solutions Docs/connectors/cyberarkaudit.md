@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | ✓ | ✗ | ✓ |
+| [`CyberArk_AuditEvents_CL`](../tables/cyberark-auditevents-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

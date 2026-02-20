@@ -15,15 +15,6 @@ This query identifies Copilot Studio AI agents that are published and contain ac
 | **ID** | `2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d` |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/AI%20Agents/DormantAuthorAuthenticationAIAgents.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AIAgentsInfo`](../tables/aiagentsinfo.md) |  | — | ✗ | — |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "CopilotInteraction"` | ✓ | ✗ | ✓ |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

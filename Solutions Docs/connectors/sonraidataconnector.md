@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) | ✗ | ✗ | ✗ |
+| [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

@@ -24,9 +24,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) | ✗ | ✗ | ✗ |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | ✗ | ✗ | ✗ |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | ✗ | ✗ | ✗ |
+| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) | ? | ✗ | ✗ |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | ? | ✗ | ✗ |
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

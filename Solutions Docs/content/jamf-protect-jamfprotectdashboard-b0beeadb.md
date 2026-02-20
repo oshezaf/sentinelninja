@@ -18,9 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | ✓ | ✗ | ✓ |
-| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | ✓ | ✗ | ✓ |
-| [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | ✓ | ✗ | ✓ |
+| [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | ? | ✗ | ✓ |
+| [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | ? | ✗ | ✓ |
+| [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | ? | ✗ | ✓ |
 
 ---
 

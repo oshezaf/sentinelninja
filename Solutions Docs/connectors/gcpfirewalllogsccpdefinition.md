@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Google Cloud Platform Firewall Logs](../solutions/google-cloud-platform-firewall-logs.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCP_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Firewall%20Logs/Data%20Connectors/GCPFirewallLogs_ccp/GCP_ConnectorDefinition.json) |
+| **CCF Configuration** | [GCPFirewall_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Firewall%20Logs/Data%20Connectors/GCPFirewallLogs_ccp/GCPFirewall_PollingConfig.json) |
+| **CCF Capabilities** | `GCP` |
 
 The Google Cloud Platform (GCP) firewall logs, enable you to capture network inbound and outbound activity to monitor access and detect potential threats across Google Cloud Platform (GCP) resources.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GCPFirewallLogs`](../tables/gcpfirewalllogs.md) | ✓ | ✗ | — |
+| [`GCPFirewallLogs`](../tables/gcpfirewalllogs.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

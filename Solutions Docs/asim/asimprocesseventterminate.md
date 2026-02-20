@@ -37,7 +37,6 @@ This union parser includes parsers for the following products:
 | Microsoft Windows Events Sysmon | [_ASim_ProcessEvent_TerminateMicrosoftSysmon](asimprocesseventterminatemicrosoftsysmon.md) |
 | Security Events | [_ASim_ProcessEvent_TerminateMicrosoftWindowsEvents](asimprocessterminatemicrosoftwindowsevents.md) |
 |  | [_ASim_ProcessEvent_TerminateVMwareCarbonBlackCloud](asim-processevent-terminatevmwarecarbonblackcloud.md) |
-|  | [_Im_Process_Empty](im-process-empty.md) |
 
 ## Source Tables
 
@@ -45,14 +44,14 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimProcessEventMD4IoT`](../asim/asimprocesseventmd4iot.md) | — | — | — |
-| [`ASimProcessEventMicrosoft365D`](../asim/asimprocesseventmicrosoft365d.md) | — | — | — |
-| [`ASimProcessEventNative`](../asim/asimprocesseventnative.md) | — | — | — |
-| [`ASimProcessTerminateLinuxSysmon`](../asim/asimprocessterminatelinuxsysmon.md) | — | — | — |
-| [`ASimProcessTerminateMicrosoftSecurityEvents`](../asim/asimprocessterminatemicrosoftsecurityevents.md) | — | — | — |
-| [`ASimProcessTerminateMicrosoftSysmon`](../tables/asimprocessterminatemicrosoftsysmon.md) | — | — | — |
-| [`ASimProcessTerminateMicrosoftWindowsEvents`](../asim/asimprocessterminatemicrosoftwindowsevents.md) | — | — | — |
-| [`ASimProcessTerminateVMwareCarbonBlackCloud`](../asim/asimprocessterminatevmwarecarbonblackcloud.md) | — | — | — |
+| [`ASimProcessEventMD4IoT`](../asim/asimprocesseventmd4iot.md) | ? | ? | ? |
+| [`ASimProcessEventMicrosoft365D`](../asim/asimprocesseventmicrosoft365d.md) | ? | ? | ? |
+| [`ASimProcessEventNative`](../asim/asimprocesseventnative.md) | ? | ? | ? |
+| [`ASimProcessTerminateLinuxSysmon`](../asim/asimprocessterminatelinuxsysmon.md) | ? | ? | ? |
+| [`ASimProcessTerminateMicrosoftSecurityEvents`](../asim/asimprocessterminatemicrosoftsecurityevents.md) | ? | ? | ? |
+| [`ASimProcessTerminateMicrosoftSysmon`](../tables/asimprocessterminatemicrosoftsysmon.md) | ? | ? | ? |
+| [`ASimProcessTerminateMicrosoftWindowsEvents`](../asim/asimprocessterminatemicrosoftwindowsevents.md) | ? | ? | ? |
+| [`ASimProcessTerminateVMwareCarbonBlackCloud`](../asim/asimprocessterminatevmwarecarbonblackcloud.md) | ? | ? | ? |
 
 ## References
 

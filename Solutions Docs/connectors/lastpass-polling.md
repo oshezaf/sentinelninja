@@ -13,8 +13,9 @@
 | **Connector ID** | `LastPass_Polling` |
 | **Publisher** | The Collective Consulting BV |
 | **Used in Solutions** | [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
 | **Connector Definition Files** | [LastPassAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/LastPass/Data%20Connectors/LastPassAPIConnector.json) |
+| **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 
 The [LastPass Enterprise](https://www.lastpass.com/products/enterprise-password-management-and-sso) connector provides the capability to LastPass reporting (audit) logs into Microsoft Sentinel. The connector provides visibility into logins and activity within LastPass (such as reading and removing passwords).
 
@@ -24,7 +25,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | ✗ | ✗ | ✗ |
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

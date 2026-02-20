@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | ✓ | ✗ | ✓ |
+| [`SAPLogServ_CL`](../tables/saplogserv-cl.md) | ? | ✗ | ✓ |
 
 ---
 

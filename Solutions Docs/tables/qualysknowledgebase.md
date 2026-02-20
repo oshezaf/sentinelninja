@@ -11,7 +11,7 @@ Reference for QualysKnowledgeBase table in Azure Monitor Logs.
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Security |
-| **Basic Logs Eligible** | ✓ Yes |
+| **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/qualysknowledgebase) |

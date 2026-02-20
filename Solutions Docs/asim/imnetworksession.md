@@ -29,43 +29,42 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser |
 |:--------|:--------------|
-|  | [_Im_NetworkSession_AWSVPC](im-networksession-awsvpc.md) |
-|  | [_Im_NetworkSession_AppGateSDP](im-networksession-appgatesdp.md) |
-|  | [_Im_NetworkSession_AzureFirewall](im-networksession-azurefirewall.md) |
-|  | [_Im_NetworkSession_AzureNSG](im-networksession-azurensg.md) |
-|  | [_Im_NetworkSession_BarracudaCEF](im-networksession-barracudacef.md) |
-|  | [_Im_NetworkSession_BarracudaWAF](im-networksession-barracudawaf.md) |
-|  | [_Im_NetworkSession_CheckPointFirewall](im-networksession-checkpointfirewall.md) |
-|  | [_Im_NetworkSession_CiscoASA](im-networksession-ciscoasa.md) |
-|  | [_Im_NetworkSession_CiscoFirepower](im-networksession-ciscofirepower.md) |
-|  | [_Im_NetworkSession_CiscoISE](im-networksession-ciscoise.md) |
-|  | [_Im_NetworkSession_CiscoMeraki](im-networksession-ciscomeraki.md) |
-|  | [_Im_NetworkSession_CiscoMeraki](im-networksession-ciscomeraki.md) |
-|  | [_Im_NetworkSession_CiscoMerakiSyslog](im-networksession-ciscomerakisyslog.md) |
-|  | [_Im_NetworkSession_CrowdStrikeFalconHost](im-networksession-crowdstrikefalconhost.md) |
-|  | [_Im_NetworkSession_Empty](im-networksession-empty.md) |
-|  | [_Im_NetworkSession_ForcePointFirewall](im-networksession-forcepointfirewall.md) |
-|  | [_Im_NetworkSession_FortinetFortiGate](im-networksession-fortinetfortigate.md) |
-|  | [_Im_NetworkSession_IllumioSaaSCore](im-networksession-illumiosaascore.md) |
-|  | [_Im_NetworkSession_LinuxSysmon](im-networksession-linuxsysmon.md) |
-|  | [_Im_NetworkSession_MD4IoTAgent](im-networksession-md4iotagent.md) |
-|  | [_Im_NetworkSession_MD4IoTSensor](im-networksession-md4iotsensor.md) |
-|  | [_Im_NetworkSession_Microsoft365Defender](im-networksession-microsoft365defender.md) |
-|  | [_Im_NetworkSession_MicrosoftSecurityEventFirewall](im-networksession-microsoftsecurityeventfirewall.md) |
-|  | [_Im_NetworkSession_MicrosoftSysmon](im-networksession-microsoftsysmon.md) |
-|  | [_Im_NetworkSession_MicrosoftSysmonWindowsEvent](im-networksession-microsoftsysmonwindowsevent.md) |
-|  | [_Im_NetworkSession_MicrosoftWindowsEventFirewall](im-networksession-microsoftwindowseventfirewall.md) |
-|  | [_Im_NetworkSession_NTANetAnalytics](im-networksession-ntanetanalytics.md) |
-|  | [_Im_NetworkSession_Native](im-networksession-native.md) |
-|  | [_Im_NetworkSession_PaloAltoCEF](im-networksession-paloaltocef.md) |
-|  | [_Im_NetworkSession_PaloAltoCortexDataLake](im-networksession-paloaltocortexdatalake.md) |
-|  | [_Im_NetworkSession_SentinelOne](im-networksession-sentinelone.md) |
-|  | [_Im_NetworkSession_SonicWallFirewall](im-networksession-sonicwallfirewall.md) |
-|  | [_Im_NetworkSession_VMConnection](im-networksession-vmconnection.md) |
-|  | [_Im_NetworkSession_VMwareCarbonBlackCloud](im-networksession-vmwarecarbonblackcloud.md) |
-|  | [_Im_NetworkSession_VectraAI](im-networksession-vectraai.md) |
-|  | [_Im_NetworkSession_WatchGuardFirewareOS](im-networksession-watchguardfirewareos.md) |
-|  | [_Im_NetworkSession_ZscalerZIA](im-networksession-zscalerzia.md) |
+| AWS VPC | [_Im_NetworkSession_AWSVPC](asimnetworksessionawsvpc.md) |
+| AppGate SDP | [_Im_NetworkSession_AppGateSDP](asimnetworksessionappgatesdp.md) |
+| Azure Firewall | [_Im_NetworkSession_AzureFirewall](asimnetworksessionazurefirewall.md) |
+| Azure NSG flows | [_Im_NetworkSession_AzureNSG](asimnetworksessionazurensg.md) |
+| Barracuda WAF | [_Im_NetworkSession_BarracudaCEF](asimnetworksessionbarracudacef.md) |
+| Barracuda WAF | [_Im_NetworkSession_BarracudaWAF](asimnetworksessionbarracudawaf.md) |
+| CheckPointFirewall | [_Im_NetworkSession_CheckPointFirewall](asimnetworksessioncheckpointfirewall.md) |
+| CiscoASA | [_Im_NetworkSession_CiscoASA](asimnetworksessionciscoasa.md) |
+| Cisco Firepower | [_Im_NetworkSession_CiscoFirepower](asimnetworksessionciscofirepower.md) |
+| Cisco ISE | [_Im_NetworkSession_CiscoISE](asimnetworksessionciscoise.md) |
+| Cisco Meraki | [_Im_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) |
+| Cisco Meraki | [_Im_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) |
+| Cisco Meraki | [_Im_NetworkSession_CiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md) |
+| CrowdStrike Falcon Endpoint Protection | [_Im_NetworkSession_CrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) |
+| ForcePointFirewall | [_Im_NetworkSession_ForcePointFirewall](asimnetworksessionforcepointfirewall.md) |
+| Fortinet FortiGate | [_Im_NetworkSession_FortinetFortiGate](asimnetworksessionfortinetfortigate.md) |
+| Illumio SaaS Core | [_Im_NetworkSession_IllumioSaaSCore](asimnetworksessionillumiosaascore.md) |
+| Sysmon for Linux | [_Im_NetworkSession_LinuxSysmon](asimnetworksessionlinuxsysmon.md) |
+| Microsoft Defender for IoT | [_Im_NetworkSession_MD4IoTAgent](asimnetworksessionmd4iotagent.md) |
+| Microsoft Defender for IoT | [_Im_NetworkSession_MD4IoTSensor](asimnetworksessionmd4iotsensor.md) |
+| M365 Defender for Endpoint | [_Im_NetworkSession_Microsoft365Defender](asimnetworksessionmicrosoft365defender.md) |
+| Windows Firewall | [_Im_NetworkSession_MicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md) |
+| Windows Sysmon | [_Im_NetworkSession_MicrosoftSysmon](asimnetworksessionmicrosoftsysmon.md) |
+| Windows Sysmon | [_Im_NetworkSession_MicrosoftSysmonWindowsEvent](asimnetworksessionmicrosoftsysmonwindowsevent.md) |
+| Windows Firewall | [_Im_NetworkSession_MicrosoftWindowsEventFirewall](asimnetworksessionmicrosoftwindowseventfirewall.md) |
+| Azure NTANetAnalytics | [_Im_NetworkSession_NTANetAnalytics](asimnetworksessionntanetanalytics.md) |
+| Native | [_Im_NetworkSession_Native](asimnetworksessionnative.md) |
+| Palo Alto PanOS | [_Im_NetworkSession_PaloAltoCEF](asimnetworksessionpaloaltocef.md) |
+| Palo Alto Cortex Data Lake | [_Im_NetworkSession_PaloAltoCortexDataLake](asimnetworksessionpaloaltocortexdatalake.md) |
+| SentinelOne | [_Im_NetworkSession_SentinelOne](asimnetworksessionsentinelone.md) |
+| SonicWall | [_Im_NetworkSession_SonicWallFirewall](asimnetworksessionsonicwallfirewall.md) |
+| VMConnection | [_Im_NetworkSession_VMConnection](asimnetworksessionvmconnection.md) |
+| VMware Carbon Black Cloud | [_Im_NetworkSession_VMwareCarbonBlackCloud](asimnetworksessionvmwarecarbonblackcloud.md) |
+| Vectra AI Streams | [_Im_NetworkSession_VectraAI](asimnetworksessionvectraai.md) |
+| WatchGuard Fireware OS | [_Im_NetworkSession_WatchGuardFirewareOS](asimnetworksessionwatchguardfirewareos.md) |
+| Zscaler ZIA Firewall | [_Im_NetworkSession_ZscalerZIA](asimnetworksessionzscalerzia.md) |
 |  | [_im_NetworkSession_CorelightZeek](im-networksession-corelightzeek.md) |
 
 ## Parameters

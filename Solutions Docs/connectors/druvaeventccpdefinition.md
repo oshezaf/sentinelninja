@@ -15,6 +15,8 @@
 | **Used in Solutions** | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Druva_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Data%20Connectors/Druva_ccp/Druva_DataConnectorDefinition.json) |
+| **CCF Configuration** | [Druva_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Data%20Connectors/Druva_ccp/Druva_PollingConfig.json) |
+| **CCF Capabilities** | `OAuth2`, `Paging` |
 
 Provides capability to ingest the Druva events from Druva APIs
 
@@ -24,9 +26,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DruvaInsyncEvents_CL`](../tables/druvainsyncevents-cl.md) | — | — | — |
-| [`DruvaPlatformEvents_CL`](../tables/druvaplatformevents-cl.md) | — | — | — |
-| [`DruvaSecurityEvents_CL`](../tables/druvasecurityevents-cl.md) | ✓ | ✗ | ✓ |
+| [`DruvaInsyncEvents_CL`](../tables/druvainsyncevents-cl.md) | ? | ? | ? |
+| [`DruvaPlatformEvents_CL`](../tables/druvaplatformevents-cl.md) | ? | ? | ? |
+| [`DruvaSecurityEvents_CL`](../tables/druvasecurityevents-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

@@ -13,8 +13,10 @@
 | **Connector ID** | `Pathlock_TDnR` |
 | **Publisher** | Pathlock Inc. |
 | **Used in Solutions** | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Pathlock_TDnR_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR_PUSH_CCP/Pathlock_TDnR_connectorDefinition.json) |
+| **CCF Configuration** | [Pathlock_TDnR_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR_PUSH_CCP/Pathlock_TDnR_PollingConfig.json) |
+| **CCF Capabilities** | `Push` |
 
 The [Pathlock Threat Detection and Response (TD&R)](https://pathlock.com/products/cybersecurity-application-controls/) integration with **Microsoft Sentinel Solution for SAP** delivers unified, real-time visibility into SAP security events, enabling organizations to detect and act on threats across all SAP landscapes. This out-of-the-box integration allows Security Operations Centers (SOCs) to correlate SAP-specific alerts with enterprise-wide telemetry, creating actionable intelligence that connects IT security with business processes.
 
@@ -37,7 +39,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✗ | ✓ |
-| [`Pathlock_TDnR_CL`](../tables/pathlock-tdnr-cl.md) | — | — | — |
+| [`Pathlock_TDnR_CL`](../tables/pathlock-tdnr-cl.md) | ? | ? | ? |
 
 ## Permissions
 

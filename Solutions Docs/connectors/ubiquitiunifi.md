@@ -32,7 +32,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | ✓ | ✗ | ✓ |
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

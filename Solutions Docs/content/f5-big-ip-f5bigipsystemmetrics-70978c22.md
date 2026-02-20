@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`F5Telemetry_AVR_CL`](../tables/f5telemetry-avr-cl.md) | — | — | — |
-| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | ✓ | ✗ | ✓ |
+| [`F5Telemetry_AVR_CL`](../tables/f5telemetry-avr-cl.md) | ? | ? | ? |
+| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | ? | ✗ | ✓ |
 
 ---
 

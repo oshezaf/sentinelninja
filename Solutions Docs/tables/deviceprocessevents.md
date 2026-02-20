@@ -17,7 +17,7 @@ Process creation and related events
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceprocessevents) |
 | **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table) |
 
-## Solutions (13)
+## Solutions (12)
 
 This table is used by the following solutions:
 
@@ -32,7 +32,6 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md)
 - [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
 ## Connectors (1)
@@ -45,9 +44,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (362)
+## Content Items Using This Table (97)
 
-### Analytic Rules (48)
+### Analytic Rules (41)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -115,19 +114,7 @@ This table is ingested by the following connectors:
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Audit policy manipulation using auditpol utility](../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.md) |  |
-| [Dev-0228 File Path Hashes November 2021](../content/standalone-content-dev-0228-file-path-hashes-november-2021-3b443f22-9be9-4c35-ac70-a94757748439-59975a39.md) |  |
-| [Email access via active sync](../content/standalone-content-email-access-via-active-sync-2f561e20-d97b-4b13-b02d-18b34af6e87c-db926024.md) |  |
-| [Identify Mango Sandstorm powershell commands](../content/standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.md) |  |
-| [SUNBURST suspicious SolarWinds child processes](../content/standalone-content-sunburst-suspicious-solarwinds-child-processes-4a3073ac-7383-48a9-90a8-eb6716183a54-79d6bcd9.md) |  |
-| [Security Service Registry ACL Modification](../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md) |  |
-| [Unusual identity creation using exchange powershell](../content/standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.md) |  |
-
-### Hunting Queries (307)
+### Hunting Queries (52)
 
 **In solution [Cyware](../solutions/cyware.md):**
 
@@ -207,271 +194,16 @@ This table is ingested by the following connectors:
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [List all the VScode Extensions which are installed on a user system](../content/standalone-content-list-all-the-vscode-extensions-which-are-installed-on-a-user-system-75830932-794e-4a18-b62f-cc2a010080b5-7d90993c.md) |  |
-| [MDE_FindsPowerShellExecutionEvents](../content/standalone-content-mde-findspowershellexecutionevents-a8767489-6dd5-4173-a49e-7f0365dd6e16-361ac29b.md) |  |
 | [SUNBURST suspicious SolarWinds child processes](../content/microsoftdefenderforendpoint-sunburst-suspicious-solarwinds-child-processes-4a3073ac-7383-48a9-90a8-eb6716183a54-27b732fb.md) |  |
 
 **GitHub Only:**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [7-zip-prep-for-exfiltration](../content/github-only-7-zip-prep-for-exfiltration-66d73c14-f888-4748-a0ae-609577fcb51f-5c78f93d.md) |  |
-| [APT Baby Shark](../content/github-only-apt-baby-shark-26721b80-a9b7-4594-9b0f-ec21e5da1bc2-2d7f9282.md) |  |
-| [APT29 thinktanks](../content/github-only-apt29-thinktanks-40446d6e-745d-4689-a477-6b6a43a15755-c2f9bfde.md) |  |
-| [Abuse.ch Recent Threat Feed](../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.md) |  |
-| [Abuse.ch Recent Threat Feed (1)](../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.md) |  |
-| [Accessibility Features](../content/github-only-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-dbe14580.md) |  |
-| [Add malicious user to Admins and RDP users group via PowerShell](../content/github-only-add-malicious-user-to-admins-and-rdp-users-group-via-powershell-44a201c4-502a-4b75-871e-a2dc7f6d2e98-f49eeb1a.md) |  |
-| [AppLocker Policy Design Assistant](../content/github-only-applocker-policy-design-assistant-7ae72c80-c114-43cd-bd99-46dab7c13338-5b32f24a.md) |  |
-| [Backup deletion](../content/github-only-backup-deletion-fc2c12c1-ee93-45c2-9a1f-f8a143ec3eb1-f98a2e92.md) |  |
-| [Base64 Detector and Decoder](../content/github-only-base64-detector-and-decoder-89fc1421-8387-4c2b-9bcb-75ead57ccb2c-25716cea.md) |  |
-| [Base64encodePEFile](../content/github-only-base64encodepefile-1174ae5b-8ce9-4321-a4e2-99e5f016beed-0c3ad660.md) |  |
-| [Baseline Comparison](../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.md) |  |
-| [Bear Activity GTR 2019](../content/github-only-bear-activity-gtr-2019-376d30db-e3ab-49fb-852a-00d1ade65a54-002c22c8.md) |  |
-| [Bitsadmin Activity](../content/github-only-bitsadmin-activity-2458e226-76e6-458c-8bf7-8766cc993b82-80426643.md) |  |
-| [CVE-2021-36934 usage detection](../content/github-only-cve-2021-36934-usage-detection-ab0afd3c-47fc-4a82-83ad-5c92528bdf08-7a7786df.md) |  |
-| [Check for multiple signs of ransomware activity](../content/github-only-check-for-multiple-signs-of-ransomware-activity-3b0a6901-6149-4856-bc6e-149ca654bc8c-fd676ca9.md) |  |
-| [Clearing of forensic evidence from event logs using wevtutil](../content/github-only-clearing-of-forensic-evidence-from-event-logs-using-wevtutil-4c086156-63ea-469c-bc85-c57e2ed4ac32-3c9fec5f.md) |  |
-| [Cloud Hopper](../content/github-only-cloud-hopper-8c54c0f3-fbd4-426b-8f58-363efbdc09fa-9b001260.md) |  |
-| [Crashing Applications](../content/github-only-crashing-applications-53b250f6-c684-4932-aca9-a06045a962d6-7eb5f0ac.md) |  |
-| [Create account](../content/github-only-create-account-ae177dc6-a3ba-474d-87a9-28ff7efb7b21-15687752.md) |  |
-| [Create new user with known DEV-0270 username and password](../content/github-only-create-new-user-with-known-dev-0270-username-and-password-f2e7c61a-6e29-4ddf-ac2e-97eb7b37d621-2d31c2c7.md) |  |
-| [Critical user management operations followed by disabling of System Restore from admin account](../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.md) |  |
-| [DLLHost.exe WMIC domain discovery](../content/github-only-dllhost.exe-wmic-domain-discovery-dc612ff9-88ac-4968-97c1-6789cd48c5d8-a0ca5c33.md) |  |
-| [DLLHost.exe file creation via PowerShell](../content/github-only-dllhost.exe-file-creation-via-powershell-361aa11c-c7ad-4ef0-99fd-2ef52ddd2ba6-28f19422.md) |  |
-| [DarkSide](../content/github-only-darkside-046d30fc-02b5-4b5f-a244-9c0da92baa5e-df54a8d8.md) |  |
-| [Deletion of data on multiple drives using cipher exe](../content/github-only-deletion-of-data-on-multiple-drives-using-cipher-exe-65d15781-c7bf-447e-8c33-a2a94e727bf4-28532750.md) |  |
-| [Detect Encoded Powershell](../content/github-only-detect-encoded-powershell-f58a7f64-acd3-4cf6-ab6d-be76130cf251-22e3fe7a.md) |  |
 | [Detect Malicious use of MSIExec](../content/microsoft-defender-xdr-detect-malicious-use-of-msiexec-7a5597de-7e99-470d-944f-acb163b9cb14-a76d8af7.md) |  |
-| [Disable Controlled Folders](../content/github-only-disable-controlled-folders-176cd213-94d7-4984-9b3b-b787ed8a1c55-4366eb19.md) |  |
-| [Disabling Services via Registry](../content/github-only-disabling-services-via-registry-3c6038db-c915-42f3-b20e-22ac7ebb1182-fba16639.md) |  |
-| [Discovering potentially tampered devices [Nobelium]](../content/github-only-discovering-potentially-tampered-devices-[nobelium]-ba850be4-2f02-40fb-834d-d0a9ac0672d3-378fbd79.md) |  |
-| [Discovery for highly-privileged accounts](../content/github-only-discovery-for-highly-privileged-accounts-d3123681-8eed-4a6d-b0c0-05d0075e3e69-4520e089.md) |  |
-| [Dopplepaymer In-Memory Malware Implant](../content/github-only-dopplepaymer-in-memory-malware-implant-c7927ab6-63c8-41bc-a5d7-fc15826e2b57-66cd1527.md) |  |
-| [Dragon Fly](../content/github-only-dragon-fly-0132d53e-8457-4ed3-b9be-e3ef5ea7d273-c2198cf3.md) |  |
-| [Electron-CVE-2018-1000006](../content/github-only-electron-cve-2018-1000006-2953f075-035c-4803-9ea2-a9b0771ffc3d-1e8e8e25.md) |  |
-| [Elise backdoor](../content/github-only-elise-backdoor-2a044f6d-a670-4977-9c7b-da556aa6c8d0-afbfaf05.md) |  |
-| [Email data exfiltration via PowerShell](../content/github-only-email-data-exfiltration-via-powershell-1115e499-45a0-470c-b0ec-e2f204831341-1048dcae.md) |  |
-| [EmojiHunt](../content/github-only-emojihunt-3e246f82-6a80-4cd3-8d4c-8afa2b7451d2-de1dd4f4.md) |  |
-| [Enumeration of users & groups for lateral movement](../content/github-only-enumeration-of-users-&-groups-for-lateral-movement-dde6f931-559e-4e21-9409-6286de59771e-844cbb61.md) |  |
-| [Equation Group C2 Communication](../content/github-only-equation-group-c2-communication-4f0fdeab-1d34-4c1e-9121-8ac800988de8-9c6a60fc.md) |  |
-| [Excel Macro Execution](../content/github-only-excel-macro-execution-fa2c1c3a-18f8-4c83-8501-ea110873f99f-9835a497.md) |  |
-| [Excel launching anomalous processes](../content/github-only-excel-launching-anomalous-processes-f387a52b-a1c3-43dc-b4cf-e6cbf895a3da-643b9b5f.md) |  |
-| [ExecuteBase64DecodedPayload](../content/github-only-executebase64decodedpayload-0c068643-049c-4c10-8771-ef3865627aa2-70736120.md) |  |
-| [HostExportingMailboxAndRemovingExport[Solarigate]](../content/github-only-hostexportingmailboxandremovingexport[solarigate]-1a6f998a-b9a4-4030-bd58-6606d66608f9-3cb8218b.md) |  |
-| [Hurricane Panda activity](../content/github-only-hurricane-panda-activity-c8a459ae-cb3e-46c0-82b1-670649dd3e7a-f24f7fba.md) |  |
-| [Identify unusual identity additions related to EUROPIUM](../content/github-only-identify-unusual-identity-additions-related-to-europium-5daf2787-98b1-4c38-8487-107076a97930-10a904d6.md) |  |
-| [Imminent Ransomware](../content/github-only-imminent-ransomware-26534fba-d2bf-449a-af40-c287c2874668-d6835d69.md) |  |
-| [Inhibit recovery by disabling tools and functionality](../content/github-only-inhibit-recovery-by-disabling-tools-and-functionality-8490deec-067e-49d5-a617-a8f8b9ebd8bd-4f71e260.md) |  |
-| [Judgement Panda exfil activity](../content/github-only-judgement-panda-exfil-activity-ae8a5c5d-4cfb-4a59-9adb-eb6c6c219620-ec57df47.md) |  |
 | [LSASS Credential Dumping with Procdump](../content/microsoft-defender-xdr-lsass-credential-dumping-with-procdump-0b985ed8-aacd-41ba-9b17-489be9224159-bfd6b1c4.md) |  |
-| [LaZagne Credential Theft](../content/github-only-lazagne-credential-theft-f699a3e0-598e-4177-a110-c53c1bfeb897-f3af78fe.md) |  |
-| [LemonDuck-competition-killer](../content/github-only-lemonduck-competition-killer-9f6b9f77-0183-4d5b-89a3-761d308cbfad-ff475186.md) |  |
-| [LemonDuck-component-download-structure](../content/github-only-lemonduck-component-download-structure-036bf8d8-954c-467a-8573-76f0fce614ff-3cbc2e53.md) |  |
-| [LemonDuck-component-names](../content/github-only-lemonduck-component-names-bcb5f147-863a-4972-aec9-48f67cc24727-80a0561c.md) |  |
-| [LemonDuck-defender-exclusions](../content/github-only-lemonduck-defender-exclusions-a67288b7-a5e2-4cb8-b792-604f7485bfb1-69af1b16.md) |  |
-| [Linux-DynoRoot-CVE-2018-1111](../content/github-only-linux-dynoroot-cve-2018-1111-445a1251-b7ad-44db-8b86-51d79b34e726-01ef0666.md) |  |
-| [MITRE - Suspicious Events](../content/github-only-mitre-suspicious-events-132beb12-7146-45a5-9132-c82feee53b71-54da484f.md) |  |
-| [MacOceanLotusBackdoor](../content/github-only-macoceanlotusbackdoor-02b7dd9d-397a-4726-9761-1130b663f8cf-632793fa.md) |  |
-| [MacOceanLotusDropper](../content/github-only-macoceanlotusdropper-1b7f5ba1-6712-4d74-ab88-182932b6af0d-6c1d88fc.md) |  |
-| [Make FolderPath Vogon Poetry](../content/github-only-make-folderpath-vogon-poetry-3dbe65c4-c2ba-4139-9d7e-bf551d50d600-0b5969aa.md) |  |
-| [Malware_In_recyclebin](../content/github-only-malware-in-recyclebin-5fa993a8-b9cd-419b-b67a-b783bf7dadbb-dbdf6f0b.md) |  |
-| [Masquerading system executable](../content/github-only-masquerading-system-executable-e1528e63-165f-4810-b2eb-24a181a3011e-fb9138ba.md) |  |
-| [Mass account password change](../content/github-only-mass-account-password-change-4d8285d1-deac-4eb6-8cdf-267ed37ef39e-a1ea37c9.md) |  |
-| [Modifying the registry to add a ransom message notification](../content/github-only-modifying-the-registry-to-add-a-ransom-message-notification-acd4112f-5271-4680-ab2a-f07952d71888-52476027.md) |  |
-| [NTDS theft](../content/github-only-ntds-theft-2a03d94e-991b-44f7-a2b3-e12ce6fd6c57-25792428.md) |  |
-| [PSExec Attrib commands](../content/github-only-psexec-attrib-commands-28f56c18-a66e-4c51-94f6-3c8902cb58af-f76ba752.md) |  |
-| [Password Protected Archive Creation](../content/github-only-password-protected-archive-creation-8ec6abaa-de36-4510-86c2-1a1aeeb004ab-6c569e72.md) |  |
-| [Possible Ransomware Related Destruction Activity](../content/github-only-possible-ransomware-related-destruction-activity-d1b322ed-87bf-491a-9bfe-2f19d84359ed-3a95a305.md) |  |
-| [Possible Teams phishing activity](../content/github-only-possible-teams-phishing-activity-ca7f7287-d688-4256-ae46-e68ad2f657c8-8b27fa17.md) |  |
-| [Possible command injection attempts against Azure Integration Runtimes](../content/github-only-possible-command-injection-attempts-against-azure-integration-runtimes-2d1a3e86-f1a0-49d0-b88a-55789e1d6660-cb9d3e64.md) |  |
-| [PotentialMicrosoftDefenderTampering[Solarigate]](../content/github-only-potentialmicrosoftdefendertampering[solarigate]-3f16e2c2-c0ba-4286-be9a-f22d001d2de7-1bfa7717.md) |  |
-| [PowerShell adding exclusion path for Microsoft Defender of ProgramData](../content/github-only-powershell-adding-exclusion-path-for-microsoft-defender-of-programdata-bd6e909c-dfb1-4f8f-a94a-14d417bbe87b-fd59d62c.md) |  |
-| [PowerShell downloads](../content/github-only-powershell-downloads-c34d1d0e-1cf4-45d0-b628-a2cfde329182-85979262.md) |  |
-| [Qakbot discovery activies](../content/github-only-qakbot-discovery-activies-4c290208-c36d-4e57-8d6d-f7e790dc0d3f-308cfdf3.md) |  |
-| [Qakbot reconnaissance activities](../content/github-only-qakbot-reconnaissance-activities-2faad0ef-63f4-40aa-98e8-b713d9a8b3f7-49785d74.md) |  |
-| [Ransomware hits healthcare - Alternate Data Streams use](../content/github-only-ransomware-hits-healthcare-alternate-data-streams-use-90985951-5998-45d3-831f-8fd3c66ac9f9-afe8f059.md) |  |
-| [Ransomware hits healthcare - Cipher.exe tool deleting data](../content/github-only-ransomware-hits-healthcare-cipher.exe-tool-deleting-data-afef7d05-0618-4bd7-9fbc-2e94ee764245-e7b55f90.md) |  |
-| [Ransomware hits healthcare - Clearing of system logs](../content/github-only-ransomware-hits-healthcare-clearing-of-system-logs-24216c89-0e83-4b53-8eb7-3349e52c3703-e10b9cfd.md) |  |
-| [Ransomware hits healthcare - Robbinhood activity](../content/github-only-ransomware-hits-healthcare-robbinhood-activity-61ca48de-5973-4f9d-8f9c-e24776b6ba45-64c62cf3.md) |  |
-| [Ransomware hits healthcare - Turning off System Restore](../content/github-only-ransomware-hits-healthcare-turning-off-system-restore-c6387bdd-c0ee-4b88-bbc2-3897586ecdda-4825f973.md) |  |
-| [Rare firewall rule changes using netsh](../content/github-only-rare-firewall-rule-changes-using-netsh-3dc5dc8b-160b-407e-9925-24a91e3599df-309055ae.md) |  |
-| [Rare-process-as-a-service](../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.md) |  |
-| [RedMenshen-BPFDoor-backdoor](../content/github-only-redmenshen-bpfdoor-backdoor-bfb8eaed-941c-4866-a2cc-d5d4465bfc2a-737c8d3e.md) |  |
-| [Remote Management and Monitoring tool - AeroAdmin - Create Process](../content/github-only-remote-management-and-monitoring-tool-aeroadmin-create-process-f71acfc6-769e-484e-9918-4fe1b50e51c2-d6c6083c.md) |  |
-| [Remote Management and Monitoring tool - Ammyy - Create Process](../content/github-only-remote-management-and-monitoring-tool-ammyy-create-process-60b5405c-81b6-46b4-91ef-d668e06e727e-50a36273.md) |  |
-| [Remote Management and Monitoring tool - AnyDesk - Create Process](../content/github-only-remote-management-and-monitoring-tool-anydesk-create-process-e9c26766-0fe4-49b6-ae27-c41c41aae094-cc6c7687.md) |  |
-| [Remote Management and Monitoring tool - AnyViewer - Create Process](../content/github-only-remote-management-and-monitoring-tool-anyviewer-create-process-e8b80bd6-79ce-4562-aac0-d3204089675a-7224b5f3.md) |  |
-| [Remote Management and Monitoring tool - Atera - Create Process](../content/github-only-remote-management-and-monitoring-tool-atera-create-process-532c895a-75b9-4c9f-969c-30bb3cfb6ac7-77b5a168.md) |  |
-| [Remote Management and Monitoring tool - AweSun - Create Process](../content/github-only-remote-management-and-monitoring-tool-awesun-create-process-007fcd0d-38c8-44a9-be56-827c4d57b150-0fdac034.md) |  |
-| [Remote Management and Monitoring tool - BarracudaRMM - Create Process](../content/github-only-remote-management-and-monitoring-tool-barracudarmm-create-process-1d86c50f-6a57-447a-b340-583e8099c7b3-9a81902c.md) |  |
-| [Remote Management and Monitoring tool - BeyondTrust - Create Process](../content/github-only-remote-management-and-monitoring-tool-beyondtrust-create-process-ed311c3c-8c3c-440c-b1a4-2b613e0414df-5cee35d6.md) |  |
-| [Remote Management and Monitoring tool - ChromeRDP - Create Process](../content/github-only-remote-management-and-monitoring-tool-chromerdp-create-process-c218f38e-0004-4800-9312-88ebf3e6414a-af3e4fcd.md) |  |
-| [Remote Management and Monitoring tool - ConnectWise - Create Process](../content/github-only-remote-management-and-monitoring-tool-connectwise-create-process-83f7b313-b955-4988-b524-b2da55c67b43-216e2f60.md) |  |
-| [Remote Management and Monitoring tool - DameWare - Create Process](../content/github-only-remote-management-and-monitoring-tool-dameware-create-process-b4b09d6f-bd13-489d-9ccb-2dbc772e7c56-89a39cb2.md) |  |
-| [Remote Management and Monitoring tool - DesktopNow - Create Process](../content/github-only-remote-management-and-monitoring-tool-desktopnow-create-process-5c854b68-79c8-4bd7-abe4-7c670b02c938-de52ffb6.md) |  |
-| [Remote Management and Monitoring tool - DistantDesktop - Create Process](../content/github-only-remote-management-and-monitoring-tool-distantdesktop-create-process-cbc0887e-d1df-4a33-bef6-4794539d8ecb-bbee5a38.md) |  |
-| [Remote Management and Monitoring tool - FleetDeck - Create Process](../content/github-only-remote-management-and-monitoring-tool-fleetdeck-create-process-6783cf8f-00f9-4784-b98d-c53ecd697946-08146460.md) |  |
-| [Remote Management and Monitoring tool - GetScreen - Create Process](../content/github-only-remote-management-and-monitoring-tool-getscreen-create-process-c231063d-dff3-478f-8c5c-95417a111333-3b0faf46.md) |  |
-| [Remote Management and Monitoring tool - ISLOnline - Create Process](../content/github-only-remote-management-and-monitoring-tool-islonline-create-process-dbcc7dcc-fa1e-46fa-84ee-06701c7094b8-df53f0f7.md) |  |
-| [Remote Management and Monitoring tool - IperiusRemote - Create Process](../content/github-only-remote-management-and-monitoring-tool-iperiusremote-create-process-62e701c0-0c0d-4f8c-b6f6-f7428b9b255a-32391794.md) |  |
-| [Remote Management and Monitoring tool - Level - Create Process](../content/github-only-remote-management-and-monitoring-tool-level-create-process-42ee6265-ed2d-42b6-9c69-095092dce2e3-a5577920.md) |  |
-| [Remote Management and Monitoring tool - LiteManager - Create Process](../content/github-only-remote-management-and-monitoring-tool-litemanager-create-process-02481117-1b9e-4afa-8b88-b3b7e9089c91-10d36c80.md) |  |
-| [Remote Management and Monitoring tool - LogMeIn - Create Process](../content/github-only-remote-management-and-monitoring-tool-logmein-create-process-4dae9fe6-6f66-421f-bdbf-979bed59b7c0-fd6d2343.md) |  |
-| [Remote Management and Monitoring tool - MSP360_CloudBerry - Create Process](../content/github-only-remote-management-and-monitoring-tool-msp360-cloudberry-create-process-2ed71614-0c21-4a41-962a-386234d5d000-3cbb3db1.md) |  |
-| [Remote Management and Monitoring tool - MeshCentral - Create Process](../content/github-only-remote-management-and-monitoring-tool-meshcentral-create-process-7306e156-49a7-4ff6-9d8f-d6e6d531e426-f4abe69a.md) |  |
-| [Remote Management and Monitoring tool - NAble - Create Process](../content/github-only-remote-management-and-monitoring-tool-nable-create-process-16adb026-28ae-4b2e-b1b9-bd53f337eb29-42d16aaa.md) |  |
-| [Remote Management and Monitoring tool - Naverisk - Create Process](../content/github-only-remote-management-and-monitoring-tool-naverisk-create-process-3063ab0b-a34c-42f2-bcdd-8c5974cc47fd-d20920f0.md) |  |
-| [Remote Management and Monitoring tool - NetSupport - Create Process](../content/github-only-remote-management-and-monitoring-tool-netsupport-create-process-54ce8c70-403e-4659-88f7-8bd63a10fdca-2b3371f5.md) |  |
-| [Remote Management and Monitoring tool - NinjaRMM - Create Process](../content/github-only-remote-management-and-monitoring-tool-ninjarmm-create-process-a121db5b-c51a-4258-b520-1212824ad24f-eb0623b8.md) |  |
-| [Remote Management and Monitoring tool - OptiTune - Create Process](../content/github-only-remote-management-and-monitoring-tool-optitune-create-process-cd635304-7a01-40a1-8d95-d530cd3f51fe-088b12f9.md) |  |
-| [Remote Management and Monitoring tool - PDQ - Create Process](../content/github-only-remote-management-and-monitoring-tool-pdq-create-process-262e8802-7dd0-4825-830f-3f0a034cc8b4-c81b4c52.md) |  |
-| [Remote Management and Monitoring tool - Panorama9 - Create Process](../content/github-only-remote-management-and-monitoring-tool-panorama9-create-process-277a8a9d-8f33-43ea-8977-0de619772d01-98e0a394.md) |  |
-| [Remote Management and Monitoring tool - PcVisit - Create Process](../content/github-only-remote-management-and-monitoring-tool-pcvisit-create-process-5472e953-c247-4e89-b849-3b16b839aeb5-81a185d7.md) |  |
-| [Remote Management and Monitoring tool - Pulseway - Create Process](../content/github-only-remote-management-and-monitoring-tool-pulseway-create-process-f6f5c4c8-d942-447b-aa61-9d6df846b17f-2d35d665.md) |  |
-| [Remote Management and Monitoring tool - RPort - Create Process](../content/github-only-remote-management-and-monitoring-tool-rport-create-process-c9f414d3-beeb-4837-a5a1-cb5da313e37f-c945db67.md) |  |
-| [Remote Management and Monitoring tool - RealVNC - Create Process](../content/github-only-remote-management-and-monitoring-tool-realvnc-create-process-865f9d1e-a01a-46b9-a909-2f93fbab5331-b48bee2f.md) |  |
-| [Remote Management and Monitoring tool - RemoteDesktopPlus - Create Process](../content/github-only-remote-management-and-monitoring-tool-remotedesktopplus-create-process-6e98184a-6794-4c94-923b-d0ab052ca92e-aae7cec3.md) |  |
-| [Remote Management and Monitoring tool - RemotePC - Create Process](../content/github-only-remote-management-and-monitoring-tool-remotepc-create-process-9d0d3529-3e9d-4a37-9d77-edc30123f392-f6e7afa2.md) |  |
-| [Remote Management and Monitoring tool - RemoteUtilities - Create Process](../content/github-only-remote-management-and-monitoring-tool-remoteutilities-create-process-3d1b2b49-432a-4592-bb9c-ef4b260736bc-9037f211.md) |  |
-| [Remote Management and Monitoring tool - RustDesk - Create Process](../content/github-only-remote-management-and-monitoring-tool-rustdesk-create-process-a06c66b9-35be-4b73-9b9a-4f8710c52c94-45b704c5.md) |  |
-| [Remote Management and Monitoring tool - ScreenMeet - Create Process](../content/github-only-remote-management-and-monitoring-tool-screenmeet-create-process-ed216e3a-ff25-41da-821f-93be217af439-9b9a1088.md) |  |
-| [Remote Management and Monitoring tool - ServerEye - Create Process](../content/github-only-remote-management-and-monitoring-tool-servereye-create-process-620a171b-e35d-43cd-8544-b725421e3364-272baf30.md) |  |
-| [Remote Management and Monitoring tool - ShowMyPC - Create Process](../content/github-only-remote-management-and-monitoring-tool-showmypc-create-process-014b6036-6475-48f3-b859-0c47e48fb469-57fc4019.md) |  |
-| [Remote Management and Monitoring tool - SimpleHelp - Create Process](../content/github-only-remote-management-and-monitoring-tool-simplehelp-create-process-76d5ccb5-d3e0-4081-bced-74adadc26958-93a4d670.md) |  |
-| [Remote Management and Monitoring tool - Splashtop - Create Process](../content/github-only-remote-management-and-monitoring-tool-splashtop-create-process-19a50e60-549c-4708-a504-c25834157705-ce38a8f9.md) |  |
-| [Remote Management and Monitoring tool - SupRemo - Create Process](../content/github-only-remote-management-and-monitoring-tool-supremo-create-process-81c97abb-353e-4643-8321-9e3b1b67fc58-c18c78bc.md) |  |
-| [Remote Management and Monitoring tool - SyncroMSP - Create Process](../content/github-only-remote-management-and-monitoring-tool-syncromsp-create-process-f9919f87-a7ba-4f47-a942-e30c46eb7a7d-32a739f7.md) |  |
-| [Remote Management and Monitoring tool - TacticalRMM - Create Process](../content/github-only-remote-management-and-monitoring-tool-tacticalrmm-create-process-e4b2b90d-bd72-45a0-93b0-b9a2a8bd17c8-0cdf8f90.md) |  |
-| [Remote Management and Monitoring tool - TeamViewer - Create Process](../content/github-only-remote-management-and-monitoring-tool-teamviewer-create-process-715e9eaf-cb93-4455-952f-744125677797-d5b870f6.md) |  |
-| [Remote Management and Monitoring tool - TigerVNC - Create Process](../content/github-only-remote-management-and-monitoring-tool-tigervnc-create-process-e44636e5-dcfa-4ba2-802c-db858c61ffd4-1aaf024f.md) |  |
-| [Remote Management and Monitoring tool - TightVNC - Create Process](../content/github-only-remote-management-and-monitoring-tool-tightvnc-create-process-0170143d-c5b9-49c2-ad03-be86564a7855-dd990512.md) |  |
-| [Remote Management and Monitoring tool - UltraViewer - Create Process](../content/github-only-remote-management-and-monitoring-tool-ultraviewer-create-process-ff759b20-a8c4-4a7d-85cd-3c335a676f09-33e12e0e.md) |  |
-| [Remote Management and Monitoring tool - XMReality - Create Process](../content/github-only-remote-management-and-monitoring-tool-xmreality-create-process-bbb3a927-18e6-471a-a8cc-5d080dd2b108-9ac169a3.md) |  |
-| [Remote Management and Monitoring tool - ZohoAssist - Create Process](../content/github-only-remote-management-and-monitoring-tool-zohoassist-create-process-4a4e44ca-5cfb-40f4-b1d9-03e00aa55f82-74fecf25.md) |  |
-| [Remote Management and Monitoring tool - mRemoteNG - Create Process](../content/github-only-remote-management-and-monitoring-tool-mremoteng-create-process-a2d8dde6-007d-4bea-964d-97bb81006849-cdee76b0.md) |  |
-| [Remote Management and Monitoring tool - parsec.app - Create Process](../content/github-only-remote-management-and-monitoring-tool-parsec.app-create-process-c9634424-f700-45b6-a8ec-c2e3d3e2a82b-9e9020f7.md) |  |
-| [Remote Management and Montioring tool - Action1 - Create Process](../content/github-only-remote-management-and-montioring-tool-action1-create-process-cab70ba2-e9e7-4f38-8b3c-0808fd4756a0-a7810838.md) |  |
-| [Renamed Rclone Exfil](../content/github-only-renamed-rclone-exfil-2b2e8b89-ba54-48f9-a24f-b9ae16a7ef6d-1598b722.md) |  |
-| [Shadow Copy Deletions](../content/github-only-shadow-copy-deletions-ff9a1c12-e448-55ff-a576-7f53caa32044-96f024d8.md) |  |
-| [Spoolsv Spawning Rundll32](../content/github-only-spoolsv-spawning-rundll32-49fb12a4-f0e9-4f18-a468-9722717774c6-0db26f82.md) |  |
-| [Stolen Images Execution](../content/github-only-stolen-images-execution-0e959fe8-f086-4497-b538-60fb0b5d8e37-ee68131b.md) |  |
-| [Stopping multiple processes using taskkill](../content/github-only-stopping-multiple-processes-using-taskkill-f8e4bee5-bc59-45f9-86e5-3b0a1bd1b572-e7f9e21a.md) |  |
-| [Stopping processes using net stop](../content/github-only-stopping-processes-using-net-stop-70c0b10a-3596-4903-baf2-60b5d453bf8c-e1fdb682.md) |  |
-| [StrRAT-AV-Discovery](../content/github-only-strrat-av-discovery-7ea16edd-7acc-4817-a06d-0e845b4a7260-f55d594c.md) |  |
-| [StrRAT-Malware-Persistence](../content/github-only-strrat-malware-persistence-fa9ef60d-4025-490b-94bd-5bff2aa3b4a7-70d428bb.md) |  |
-| [Suspicious Bitlocker Encryption](../content/github-only-suspicious-bitlocker-encryption-476c9326-c53d-495c-8a54-c304a43cb446-bfe8af16.md) |  |
-| [Suspicious JScript staging comment](../content/github-only-suspicious-jscript-staging-comment-8495c33d-0048-447f-b1e5-27fa5e7f7417-310a112f.md) |  |
-| [Suspicious PowerShell curl flags](../content/github-only-suspicious-powershell-curl-flags-9cde2f21-35c9-452b-b149-ebbed3d0c7ae-d42c1e0e.md) |  |
-| [Suspicious Tomcat Confluence Process Launch](../content/github-only-suspicious-tomcat-confluence-process-launch-500e4cf1-9c25-4dfa-88f1-a23d95407e35-164720e5.md) |  |
-| [Suspicious process event creation from VMWare Horizon TomcatService](../content/github-only-suspicious-process-event-creation-from-vmware-horizon-tomcatservice-afa7c7b7-7d1f-4898-9daf-b35500ff8f2f-fb0bc3c7.md) |  |
-| [SuspiciousEnumerationUsingAdfind[Nobelium]](../content/github-only-suspiciousenumerationusingadfind[nobelium]-9df6cf43-679c-4ffe-8da7-7b1174b17e5b-f139ed05.md) |  |
-| [Turning off System Restore](../content/github-only-turning-off-system-restore-5de97d18-b12b-4acf-9c3e-c96a67e80312-a09a6a73.md) |  |
-| [Turning off services using sc exe](../content/github-only-turning-off-services-using-sc-exe-5c446a44-748e-48d3-9b13-fbd7dde5b164-ca85849a.md) |  |
-| [Use of MSBuild as LOLBin](../content/github-only-use-of-msbuild-as-lolbin-166c732a-a02e-4c7a-a441-cb74fe3c3f2d-b34f4050.md) |  |
-| [VMWare-LPE-2022-22960](../content/github-only-vmware-lpe-2022-22960-1d468d49-ffea-4daf-ba6b-72525ec17b61-15888824.md) |  |
-| [WastedLocker Downloader](../content/github-only-wastedlocker-downloader-4a8dec0a-2cfc-40a6-af59-e6657c26d0c1-ff4249a8.md) |  |
-| [Webserver Executing Suspicious Applications](../content/github-only-webserver-executing-suspicious-applications-1a9dfc1d-6dd2-42e5-81ef-fb90f3d96239-bcc646c8.md) |  |
-| [Zip-Doc - Word Launching MSHTA](../content/github-only-zip-doc-word-launching-mshta-e9924adb-3f5b-4ef2-8672-89ae381226f9-304a3d04.md) |  |
-| [alt-data-streams](../content/github-only-alt-data-streams-7d8692e0-e643-43cb-ac77-6efc5a6b7f4d-95ce681f.md) |  |
-| [anomalous-payload-delivered-from-iso-file](../content/github-only-anomalous-payload-delivered-from-iso-file-3539f855-611c-4787-b8a9-e3437f138805-3eb29c28.md) |  |
-| [app-armor-stopped](../content/github-only-app-armor-stopped-a188fa21-dd3a-4cf9-910b-1384711f7dce-d7b5a08f.md) |  |
-| [apt sofacy](../content/github-only-apt-sofacy-36a6028d-f977-455f-be11-669e993a25d6-cc5ef74d.md) |  |
-| [apt sofacy zebrocy](../content/github-only-apt-sofacy-zebrocy-92f02b0b-cd8e-4d49-957c-5ad0ee86da65-f6430eae.md) |  |
-| [apt ta17 293a ps](../content/github-only-apt-ta17-293a-ps-6ee810f8-aeca-45c7-81d8-5646ed558961-3136bb9c.md) |  |
-| [apt tropictrooper](../content/github-only-apt-tropictrooper-f035c5e9-af5f-4ba7-8242-03faf3e096cf-872d7766.md) |  |
-| [apt unidentified nov 18](../content/github-only-apt-unidentified-nov-18-04990281-436c-4dff-aff9-bcd4417d0937-b8ce05ab.md) |  |
-| [check-for-shadowhammer-activity-implant](../content/github-only-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-da57d533.md) |  |
-| [clear-system-logs](../content/github-only-clear-system-logs-5aa2b168-ab4f-44ab-8668-7845c7defcb1-86c8d25b.md) |  |
-| [cobalt-strike-invoked-w-wmi](../content/github-only-cobalt-strike-invoked-w-wmi-a0063a56-668f-4661-a00e-5ea82cd2ed4a-093d11a2.md) |  |
-| [confluence-weblogic-targeted](../content/github-only-confluence-weblogic-targeted-8b8be25f-1bc0-4d57-81a7-76ef97f1d64f-6b0dcc76.md) |  |
-| [cve-2019-0808-set-scheduled-task](../content/github-only-cve-2019-0808-set-scheduled-task-80cb5ddb-baf2-4eb2-9751-8f77c072eb4d-0240f385.md) |  |
-| [cypherpunk-exclusive-commands](../content/github-only-cypherpunk-exclusive-commands-2affa440-24b5-48b2-a377-d5968a499658-1db07105.md) |  |
-| [cypherpunk-remote-exec-w-psexesvc](../content/github-only-cypherpunk-remote-exec-w-psexesvc-6941f6b3-9e08-4f45-ac26-fe4a23d4d613-88e2a42b.md) |  |
-| [deleting-data-w-cipher-tool](../content/github-only-deleting-data-w-cipher-tool-ccf00363-6636-4748-9df5-a22f6cb977bd-1bedad11.md) |  |
-| [detect-anomalous-process-trees](../content/github-only-detect-anomalous-process-trees-a3bbacd9-7e8a-4dbc-a168-d08740f9904e-27eb50c7.md) |  |
-| [detect-cve-2019-0863-AngryPolarBearBug2-exploit](../content/github-only-detect-cve-2019-0863-angrypolarbearbug2-exploit-8cc1b312-46c6-4f41-bc66-f8a12fac7e67-8d64f829.md) |  |
-| [detect-cve-2019-0973-installerbypass-exploit](../content/github-only-detect-cve-2019-0973-installerbypass-exploit-9c721e08-0a1b-4baf-b3ea-262dc1831faa-fc7fa9dc.md) |  |
-| [detect-cve-2019-1129-byebear-exploit](../content/github-only-detect-cve-2019-1129-byebear-exploit-e9ff9991-7e5e-4bd4-8dea-e38db7e0027e-cd061490.md) |  |
-| [detect-cyzfc-activity (2)](../content/github-only-detect-cyzfc-activity-2-cbfd03f0-34c7-4e03-af37-50eae2892b38-5e555132.md) |  |
-| [detect-cyzfc-activity (3)](../content/github-only-detect-cyzfc-activity-3-5c9c8f5c-01cf-4670-9beb-ee90e0a4ec58-659ab825.md) |  |
-| [detect-doublepulsar-execution](../content/github-only-detect-doublepulsar-execution-10a17179-d143-476d-80cd-c5a6cca66d59-94331698.md) |  |
-| [detect-exploitation-of-cve-2018-8653](../content/github-only-detect-exploitation-of-cve-2018-8653-1f541cc3-2c46-4f2a-9b4b-e082f25ec369-55a4893d.md) |  |
-| [detect-impacket-atexec](../content/github-only-detect-impacket-atexec-75e3a1b2-bd6d-4e79-8c74-85a3bc0b0617-a33eaf14.md) |  |
-| [detect-impacket-dcomexec](../content/github-only-detect-impacket-dcomexec-3069ee4c-68a2-4512-9048-4751bc0fbac2-d07da8d4.md) |  |
-| [detect-impacket-psexec-module](../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.md) |  |
-| [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-f0a94abb.md) |  |
-| [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-32647bb7.md) |  |
-| [detect-impacket-wmiexec](../content/github-only-detect-impacket-wmiexec-e5c65f1f-2bf8-4b42-af8b-1f6adfeda0cc-afdcfc01.md) |  |
-| [detect-mailsniper](../content/github-only-detect-mailsniper-726085be-fa36-4b0f-991a-b5bc8fe53d87-3a39373b.md) |  |
-| [detect-malicious-rar-extraction](../content/github-only-detect-malicious-rar-extraction-dac6bcd8-35c9-4937-88e8-3b1c00dcebe2-a606a2c1.md) |  |
-| [detect-malicious-use-of-msiexec](../content/github-only-detect-malicious-use-of-msiexec-7a5597de-7e99-470d-944f-acb163b9cb14-83379a5e.md) |  |
-| [detect-malicious-use-of-msiexec-mimikatz](../content/github-only-detect-malicious-use-of-msiexec-mimikatz-dc75c3e4-ed46-4183-b1c1-c075c2a4a6d5-92db5cc9.md) |  |
-| [detect-malicious-use-of-msiexec-powershell](../content/github-only-detect-malicious-use-of-msiexec-powershell-1189dc7d-6d2a-4aa9-ad5f-bebed51474d9-a77a263b.md) |  |
-| [detect-nbtscan-activity](../content/github-only-detect-nbtscan-activity-28ebbb87-535b-4ba0-80f4-6fbf80b7c55a-2d50bb55.md) |  |
-| [detect-office-applications-spawning-msdt-CVE-2022-30190](../content/github-only-detect-office-applications-spawning-msdt-cve-2022-30190-cd1c9815-1f2c-483e-a875-b81bfcc1489b-e726503c.md) |  |
-| [detect-office-products-spawning-wmic](../content/github-only-detect-office-products-spawning-wmic-2c0a068e-b30c-4e6a-928c-f05b60c43066-62e45e0a.md) |  |
-| [detect-prifou-pua](../content/github-only-detect-prifou-pua-62bc4944-46dd-4c2f-ba04-72837bbfec3f-6e8f169c.md) |  |
-| [detect-steganography-exfiltration](../content/github-only-detect-steganography-exfiltration-e0003bf6-b5f2-4dd1-a130-8651eb0b9f04-5c9b5fd7.md) |  |
-| [detect-suspicious-commands-initiated-by-web-server-processes](../content/github-only-detect-suspicious-commands-initiated-by-web-server-processes-7fdc5f4a-700d-4713-abfc-181f02968726-bf7ed421.md) |  |
-| [detect-suspicious-mshta-usage](../content/github-only-detect-suspicious-mshta-usage-9462573d-09e3-4878-a118-db5c964228e0-6227264f.md) |  |
-| [detect-uac-elevation](../content/github-only-detect-uac-elevation-e1f15a3e.md) |  |
-| [detect-web-server-exploit-doublepulsar](../content/github-only-detect-web-server-exploit-doublepulsar-da3b2b82-74a0-4b0e-8ef7-ac43515b4c70-6db82011.md) |  |
-| [doppelpaymer](../content/github-only-doppelpaymer-34ade758-9e1e-4e65-9adc-1b8d6f081ebf-c10a27a2.md) |  |
-| [doppelpaymer-procdump](../content/github-only-doppelpaymer-procdump-ce3cc53c-14a7-4ee5-95c6-b26cbc01d20b-f51f5671.md) |  |
-| [doppelpaymer-psexec](../content/github-only-doppelpaymer-psexec-82ab54b5-6387-4d84-b04f-165115272fae-dcbd5254.md) |  |
-| [doppelpaymer-stop-services](../content/github-only-doppelpaymer-stop-services-a1c2f319-21a9-4f63-a130-cc1875123fe5-19ebe346.md) |  |
-| [evasive-powershell-executions](../content/github-only-evasive-powershell-executions-33e69a06-206e-4eda-930d-13d2f61f9185-3dec70e4.md) |  |
-| [evasive-powershell-strings](../content/github-only-evasive-powershell-strings-d08b4ce0-3c97-4637-9577-0856f6cdd222-75db9af6.md) |  |
-| [exchange-powershell-snapin-loaded](../content/github-only-exchange-powershell-snapin-loaded-f87ae1b7-ecd1-418f-bb2a-68b4a7658677-08d3c677.md) |  |
-| [hiding-java-class-file](../content/github-only-hiding-java-class-file-c5196191-609a-407f-a623-f37785eca019-3753e6c0.md) |  |
-| [insider-threat-detection-queries (13)](../content/github-only-insider-threat-detection-queries-13-daa0abc7-08e6-45d4-86c3-5fd54aab0837-67df3bc0.md) |  |
-| [insider-threat-detection-queries (14)](../content/github-only-insider-threat-detection-queries-14-81881945-a4e5-44bd-b36f-8b5a90cfb073-51658a32.md) |  |
-| [insider-threat-detection-queries (2)](../content/github-only-insider-threat-detection-queries-2-1cdf6fe8-6232-48ba-bbd8-b9881c30e0e9-8b3f26dc.md) |  |
-| [insider-threat-detection-queries (3)](../content/github-only-insider-threat-detection-queries-3-72e7f2c9-aba5-427e-b2ec-f68c191010ec-a0dafdae.md) |  |
-| [insider-threat-detection-queries (8)](../content/github-only-insider-threat-detection-queries-8-2eb45b94-4848-4e02-9679-ceb10b2445f2-d3a1e6ac.md) |  |
-| [java-executing-cmd-to-run-powershell](../content/github-only-java-executing-cmd-to-run-powershell-99a5a930-9ca6-440e-95f4-dfe23d217157-f57f275b.md) |  |
-| [jse-launched-by-word](../content/github-only-jse-launched-by-word-da127884-b65b-4ccf-b178-320d9cac3e15-997616d5.md) |  |
-| [kinsing-miner-download](../content/github-only-kinsing-miner-download-b7d58293-7cb6-4e39-8788-03447f971f96-5458dc1f.md) |  |
-| [launch-questd-w-osascript](../content/github-only-launch-questd-w-osascript-4e186f05-8cff-4afa-a0c8-4f0f0e7aeb82-8ca89ebc.md) |  |
-| [launching-base64-powershell[Nobelium]](../content/github-only-launching-base64-powershell[nobelium]-fd25665b-9376-4c38-b046-76757eff0e40-b99b9275.md) |  |
-| [launching-cmd-echo[Nobelium]](../content/github-only-launching-cmd-echo[nobelium]-c250fb07-a349-4c2c-a38c-2321e32235ca-1a9aeb03.md) |  |
-| [lazagne](../content/github-only-lazagne-97839232-ff2c-4924-983d-f21d25276e88-7a525651.md) |  |
-| [locate-shlayer-payload-decryption-activity](../content/github-only-locate-shlayer-payload-decryption-activity-d405146b-47a7-4bcf-b2c5-ccf8a2db9a1d-b72a4b1f.md) |  |
-| [locate-shlayer-payload-decrytion-activity](../content/github-only-locate-shlayer-payload-decrytion-activity-7abb6bbb-cb2b-4702-a96d-8d53b7a8e054-9df80a62.md) |  |
-| [locate-surfbuyer-downloader-decoding-activity](../content/github-only-locate-surfbuyer-downloader-decoding-activity-1f60df62-6551-48f6-8e65-64f61ff43def-c8ebac7f.md) |  |
-| [oceanlotus-apt32-files](../content/github-only-oceanlotus-apt32-files-d868871c-bdd6-45e9-9e9d-e3c4521654a7-df57d4d6.md) |  |
-| [office-apps-launching-wscipt](../content/github-only-office-apps-launching-wscipt-1d438d7a-be4b-4bee-a116-fac9a2a621c7-2f0d033b.md) |  |
-| [oracle-webLogic-executing-powershell](../content/github-only-oracle-weblogic-executing-powershell-2397f77e-e33e-4658-9a81-fe9dbafb810d-8e8bbd09.md) |  |
-| [powercat-download](../content/github-only-powercat-download-12793a73-e49d-4b3d-bb87-e4d4a326d610-351e8878.md) |  |
-| [powershell-activity-after-email-from-malicious-sender](../content/github-only-powershell-activity-after-email-from-malicious-sender-0605673c-8363-40b3-bbe2-ac1a2c17d116-17a5b050.md) |  |
-| [powershell-version-2.0-execution](../content/github-only-powershell-version-2.0-execution-76e64c0d-b640-4724-8096-4c4cda0ec6e0-2a33de7b.md) |  |
-| [procdump-lsass-credentials](../content/github-only-procdump-lsass-credentials-0b985ed8-aacd-41ba-9b17-489be9224159-4d59622b.md) |  |
-| [python-based-attacks-on-macos](../content/github-only-python-based-attacks-on-macos-5a227ae6-1f40-499a-a4cc-6f6a0cc4d286-f673d02d.md) |  |
-| [python-use-by-ransomware-macos](../content/github-only-python-use-by-ransomware-macos-8d52dce6-6143-44e9-8ff5-a62f2df742b2-dd2119b7.md) |  |
-| [qakbot-campaign-esentutl](../content/github-only-qakbot-campaign-esentutl-a0784604-ef4d-43b9-8e31-d234c649eeda-fb8e32da.md) |  |
-| [qakbot-campaign-process-injection](../content/github-only-qakbot-campaign-process-injection-c07d24d5-7c97-4ac4-873e-b364695df045-6a03e3ed.md) |  |
-| [qakbot-campaign-self-deletion](../content/github-only-qakbot-campaign-self-deletion-0ec8d8df-2a7f-4cc0-9bd4-64d8f5103e3b-792fdfb8.md) |  |
-| [qakbot-campaign-suspicious-javascript](../content/github-only-qakbot-campaign-suspicious-javascript-1ef38d9a-7d3e-4313-a961-169bb23ff270-7d20d5f8.md) |  |
-| [ransom-note-creation-macos](../content/github-only-ransom-note-creation-macos-fbe63fdf-142f-4b0a-b73e-8f16aaf46be7-72efc9f8.md) |  |
-| [rare_sch_task_with_activity](../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) |  |
-| [rce-on-vulnerable-server](../content/github-only-rce-on-vulnerable-server-ec7ec6bb-c15a-4d2b-9682-a92bf5a22c8e-24434d66.md) |  |
-| [regsvr32-rundll32-with-anomalous-parent-process](../content/github-only-regsvr32-rundll32-with-anomalous-parent-process-bef2bd1b-885a-40f4-b48f-6f5564cd81f3-e7a12a36.md) |  |
-| [reverse-shell-nishang](../content/github-only-reverse-shell-nishang-7490e437-edc2-40b3-87fe-45b736593deb-6e627042.md) |  |
-| [reverse-shell-nishang-base64](../content/github-only-reverse-shell-nishang-base64-5d091733-0e7e-4331-b2f1-127cb36e516e-6eda3485.md) |  |
-| [reverse-shell-ransomware-macos](../content/github-only-reverse-shell-ransomware-macos-936d985d-f44c-4ec7-81ae-7aa1995f940d-5fee050e.md) |  |
-| [robbinhood-evasion](../content/github-only-robbinhood-evasion-75f492b5-b4ab-446e-8a9f-0607fbee2baa-4a767eb5.md) |  |
-| [shimcache-flushed](../content/github-only-shimcache-flushed-cd90d859-0d8f-458e-9d96-7f2945fe87a6-02c815de.md) |  |
-| [sql-server-abuse](../content/github-only-sql-server-abuse-8ff94182-f58f-4377-914c-dca523b8e180-4afedbdd.md) |  |
-| [tomcat-8-executing-powershell](../content/github-only-tomcat-8-executing-powershell-eb5c922d-37f2-4790-9fa2-efd113c0f6d9-860f194b.md) |  |
-| [turn-off-system-restore](../content/github-only-turn-off-system-restore-f4c234fd-2889-41b6-ad4b-df257adf882b-e2d318d8.md) |  |
-| [umworkerprocess-unusual-subprocess-activity](../content/github-only-umworkerprocess-unusual-subprocess-activity-13355269-f755-4b81-8a72-e80c3f4a8016-d4a98cc0.md) |  |
-| [wadhrama-data-destruction](../content/github-only-wadhrama-data-destruction-08502f9f-7a04-4608-b5ad-5cfa129c073b-29523ed8.md) |  |
-| [wadhrama-ransomware](../content/github-only-wadhrama-ransomware-733c3a83-5950-496c-90f0-d66f0efa3c35-87eecddd.md) |  |
-| [wdigest-caching](../content/github-only-wdigest-caching-05a01ec8-ecab-4f9a-9aae-8d8cc061fe05-30a7e092.md) |  |
-| [wifikeys](../content/github-only-wifikeys-ad5c7f75-95e0-4eb9-93e5-b1793ef405d6-88c8943c.md) |  |
 
-### Workbooks (7)
+### Workbooks (4)
 
 **In solution [HIPAA Compliance](../solutions/hipaa-compliance.md):**
 
@@ -496,14 +228,6 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftDefenderForEndPoint](../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftDefenderForEndPoint](../content/github-only-microsoftdefenderforendpoint-ac005534.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
 
 ## Parsers Using This Table (1)
 

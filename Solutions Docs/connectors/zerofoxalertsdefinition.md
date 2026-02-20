@@ -15,6 +15,8 @@
 | **Used in Solutions** | [ZeroFox](../solutions/zerofox.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxAlerts_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/Alerts/ZeroFoxAlerts_ConnectorDefinition.json) |
+| **CCF Configuration** | [ZeroFoxAlerts_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/Alerts/ZeroFoxAlerts_PollerConfig.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 Collects alerts from ZeroFox API.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | ✓ | ✗ | ✓ |
+| [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

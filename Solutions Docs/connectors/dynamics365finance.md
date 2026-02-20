@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DynamicsFinOps_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Data%20Connectors/DynamicsFinOpsPollerConnector/DynamicsFinOps_DataConnectorDefinition.json) |
+| **CCF Configuration** | [DynamicsFinOps_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Data%20Connectors/DynamicsFinOpsPollerConnector/DynamicsFinOps_PollingConfig.json) |
+| **CCF Capabilities** | `OAuth2`, `Paging` |
 
 Dynamics 365 for Finance and Operations is a comprehensive Enterprise Resource Planning (ERP) solution that combines financial and operational capabilities to help businesses manage their day-to-day operations. It offers a range of features that enable businesses to streamline workflows, automate tasks, and gain insights into operational performance.
 
@@ -28,7 +30,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | ✓ | ✗ | ✓ |
+| [`FinanceOperationsActivity_CL`](../tables/financeoperationsactivity-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

@@ -26,14 +26,14 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ✓ |
-| [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ | — |
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | ✗ | ✗ | ✗ |
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | — |
-| [`LAQueryLogs`](../tables/laquerylogs.md) |  | ✓ | ✗ | — |
+| [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | ✓ | ✗ | ✓ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | ? | ✗ | ✗ |
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
+| [`LAQueryLogs`](../tables/laquerylogs.md) |  | ✓ | ✗ | ? |
 | [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) |  | ✓ | ✗ | ✓ |
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"` | ✓ | ✗ | ✓ |
-| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | — |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"` | ✓ | ✗ | ✓ |
+| [`Operation`](../tables/operation.md) |  | ✗ | ✗ | ? |
 | [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |

@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Armis_Devices_CL`](../tables/armis-devices-cl.md) | ✗ | ✗ | ✗ |
+| [`Armis_Devices_CL`](../tables/armis-devices-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

@@ -33,12 +33,12 @@ This union parser includes parsers for the following products:
 |  | [_Im_ProcessCreate_MD4IoT](im-processcreate-md4iot.md) |
 |  | [_Im_ProcessCreate_MicrosoftSecurityEvents](im-processcreate-microsoftsecurityevents.md) |
 |  | [_Im_ProcessCreate_MicrosoftWindowsEvents](im-processcreate-microsoftwindowsevents.md) |
-|  | [_Im_ProcessCreate_SentinelOne](im-processcreate-sentinelone.md) |
+| SentinelOne | [_Im_ProcessCreate_SentinelOne](asimprocesscreatesentinelone.md) |
 |  | [_Im_ProcessCreate_VMwareCarbonBlackCloud](im-processcreate-vmwarecarbonblackcloud.md) |
-|  | [_Im_ProcessEvent_CreateMicrosoftSysmon](im-processevent-createmicrosoftsysmon.md) |
-|  | [_Im_ProcessEvent_CreateMicrosoftSysmonWindowsEvent](im-processevent-createmicrosoftsysmonwindowsevent.md) |
-|  | [_Im_ProcessEvent_Microsoft365D](im-processevent-microsoft365d.md) |
-|  | [_Im_ProcessEvent_Native](im-processevent-native.md) |
+| Sysmon | [_Im_ProcessEvent_CreateMicrosoftSysmon](asimprocesseventcreatemicrosoftsysmon.md) |
+| Sysmon | [_Im_ProcessEvent_CreateMicrosoftSysmonWindowsEvent](asimprocesseventcreatemicrosoftsysmonwindowsevent.md) |
+| Microsoft 365 Defender for endpoint | [_Im_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |
+| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) |
 |  | [_Im_ProcessTerminate_LinuxSysmon](im-processterminate-linuxsysmon.md) |
 |  | [_Im_ProcessTerminate_MD4IoT](im-processterminate-md4iot.md) |
 |  | [_Im_ProcessTerminate_MicrosoftSecurityEvents](im-processterminate-microsoftsecurityevents.md) |
@@ -46,7 +46,6 @@ This union parser includes parsers for the following products:
 |  | [_Im_ProcessTerminate_MicrosoftSysmonWindowsEvent](im-processterminate-microsoftsysmonwindowsevent.md) |
 |  | [_Im_ProcessTerminate_MicrosoftWindowsEvents](im-processterminate-microsoftwindowsevents.md) |
 |  | [_Im_ProcessTerminate_VMwareCarbonBlackCloud](im-processterminate-vmwarecarbonblackcloud.md) |
-|  | [_Im_Process_Empty](im-process-empty.md) |
 
 ## Parameters
 

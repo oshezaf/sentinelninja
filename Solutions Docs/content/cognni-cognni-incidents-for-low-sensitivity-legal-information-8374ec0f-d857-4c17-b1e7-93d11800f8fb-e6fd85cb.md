@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | ✓ | ✗ | ✓ |
+| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | ? | ✗ | ✓ |
 
 ---
 

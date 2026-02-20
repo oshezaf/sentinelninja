@@ -17,7 +17,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | **Lake-Only Ingestion** | ✓ Yes |
 | **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs) |
 
-## Solutions (7)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -26,7 +26,6 @@ This table is used by the following solutions:
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 
 ## Connectors (1)
@@ -39,9 +38,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (14)
+## Content Items Using This Table (7)
 
-### Analytic Rules (3)
+### Analytic Rules (2)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -49,27 +48,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) |  |
 
-**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):** `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"`
-
-| Content Item |
-|:-------------|
-| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |
-
-**Standalone Content:**
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
-| [Service Principal Authentication Attempt from New Country](../content/standalone-content-service-principal-authentication-attempt-from-new-country-1baaaf00-655f-4de9-8ff8-312e902cda71-4fb2ee74.md) |  |
+| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |  |
 
-### Hunting Queries (1)
-
-**GitHub Only:** `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"`
-
-| Content Item |
-|:-------------|
-| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |
-
-### Workbooks (10)
+### Workbooks (5)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -101,16 +86,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TeamCymruScout](../content/team-cymru-scout-teamcymruscout-b64c6ed4.md) |  |
 
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [AADServicePrincipalSignInLogs](../content/github-only-aadserviceprincipalsigninlogs-7f958a93.md) |  |
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -118,25 +93,6 @@ This table is ingested by the following connectors:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAADServicePrincipalSignInLogs](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | Microsoft Entra ID |  |
-
-## Selection Criteria Summary (2 criteria, 2 total references)
-
-References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | - | 1 | - | - | **1** |
-| `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **2** | **0** | **0** | **2** |
-
-### OperationName
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Remove service principal` | - | 1 | - | - | **1** |
-| `has_all Update application` | - | 1 | - | - | **1** |
-| `Add service principal credentials` | - | 1 | - | - | **1** |
-| `Update application - Certificates` | - | 1 | - | - | **1** |
 
 ---
 

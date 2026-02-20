@@ -44,7 +44,6 @@ This union parser includes parsers for the following products:
 | SentinelOne | [_ASim_Dns_SentinelOne](asimdnssentinelone.md) |
 | Vectra AI Streams | [_ASim_Dns_VectraAI](asimdnsvectraai.md) |
 | Zscaler ZIA DNS | [_ASim_Dns_ZscalerZIA](asimdnszscalerzia.md) |
-|  | [_Im_Dns_Empty](im-dns-empty.md) |
 
 ## Source Tables
 
@@ -52,21 +51,21 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimDnsAzureFirewall`](../asim/asimdnsazurefirewall.md) | — | — | — |
-| [`ASimDnsCiscoUmbrella`](../asim/asimdnsciscoumbrella.md) | — | — | — |
-| [`ASimDnsCorelightZeek`](../asim/asimdnscorelightzeek.md) | — | — | — |
-| [`ASimDnsFortinetFortiGate`](../asim/asimdnsfortinetfortigate.md) | — | — | — |
-| [`ASimDnsGcp`](../asim/asimdnsgcp.md) | — | — | — |
-| [`ASimDnsInfobloxBloxOne`](../asim/asimdnsinfobloxbloxone.md) | — | — | — |
-| [`ASimDnsInfobloxNIOS`](../asim/asimdnsinfobloxnios.md) | — | — | — |
-| [`ASimDnsMicrosoftNXlog`](../asim/asimdnsmicrosoftnxlog.md) | — | — | — |
-| [`ASimDnsMicrosoftOMS`](../asim/asimdnsmicrosoftoms.md) | — | — | — |
-| [`ASimDnsMicrosoftSysmon`](../asim/asimdnsmicrosoftsysmon.md) | — | — | — |
-| [`ASimDnsMicrosoftSysmonWindowsEvent`](../asim/asimdnsmicrosoftsysmonwindowsevent.md) | — | — | — |
-| [`ASimDnsNative`](../asim/asimdnsnative.md) | — | — | — |
-| [`ASimDnsSentinelOne`](../asim/asimdnssentinelone.md) | — | — | — |
-| [`ASimDnsVectraAI`](../asim/asimdnsvectraai.md) | — | — | — |
-| [`ASimDnsZscalerZIA`](../asim/asimdnszscalerzia.md) | — | — | — |
+| [`ASimDnsAzureFirewall`](../asim/asimdnsazurefirewall.md) | ? | ? | ? |
+| [`ASimDnsCiscoUmbrella`](../asim/asimdnsciscoumbrella.md) | ? | ? | ? |
+| [`ASimDnsCorelightZeek`](../asim/asimdnscorelightzeek.md) | ? | ? | ? |
+| [`ASimDnsFortinetFortiGate`](../asim/asimdnsfortinetfortigate.md) | ? | ? | ? |
+| [`ASimDnsGcp`](../asim/asimdnsgcp.md) | ? | ? | ? |
+| [`ASimDnsInfobloxBloxOne`](../asim/asimdnsinfobloxbloxone.md) | ? | ? | ? |
+| [`ASimDnsInfobloxNIOS`](../asim/asimdnsinfobloxnios.md) | ? | ? | ? |
+| [`ASimDnsMicrosoftNXlog`](../asim/asimdnsmicrosoftnxlog.md) | ? | ? | ? |
+| [`ASimDnsMicrosoftOMS`](../asim/asimdnsmicrosoftoms.md) | ? | ? | ? |
+| [`ASimDnsMicrosoftSysmon`](../asim/asimdnsmicrosoftsysmon.md) | ? | ? | ? |
+| [`ASimDnsMicrosoftSysmonWindowsEvent`](../asim/asimdnsmicrosoftsysmonwindowsevent.md) | ? | ? | ? |
+| [`ASimDnsNative`](../asim/asimdnsnative.md) | ? | ? | ? |
+| [`ASimDnsSentinelOne`](../asim/asimdnssentinelone.md) | ? | ? | ? |
+| [`ASimDnsVectraAI`](../asim/asimdnsvectraai.md) | ? | ? | ? |
+| [`ASimDnsZscalerZIA`](../asim/asimdnszscalerzia.md) | ? | ? | ? |
 
 ## Parameters
 

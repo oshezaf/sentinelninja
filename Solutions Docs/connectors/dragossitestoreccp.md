@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Dragos](../solutions/dragos.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [dragosSitestoreDataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos/Data%20Connectors/DragosSiteStore_CCP/dragosSitestoreDataConnectorDefinition.json) |
+| **CCF Configuration** | [dataPoller.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos/Data%20Connectors/DragosSiteStore_CCP/dataPoller.json) |
+| **CCF Capabilities** | `Basic`, `Paging` |
 
 The [Dragos Platform](https://www.dragos.com/) is the leading Industrial Cyber Security platform it offers a comprehensive Operational Technology (OT) cyber threat detection built by unrivaled industrial cybersecurity expertise. This solution enables Dragos Platform notification data to be viewed in Microsoft Sentinel so that security analysts are able to triage potential cyber security events occurring in their industrial environments.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | ✓ | ✗ | ✓ |
+| [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

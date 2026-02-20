@@ -38,7 +38,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | ✓ | ✗ | ✓ |
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

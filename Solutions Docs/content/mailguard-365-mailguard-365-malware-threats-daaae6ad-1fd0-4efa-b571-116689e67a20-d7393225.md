@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) | ✗ | ✗ | ✗ |
+| [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) | ? | ✗ | ✗ |
 
 ---
 

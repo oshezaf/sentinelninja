@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Box](../solutions/box.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [BoxEvents_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box/Data%20Connectors/BoxEvents_ccp/BoxEvents_DataConnectorDefinition.json) |
+| **CCF Configuration** | [BoxEvents_DataConnectorPoller.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box/Data%20Connectors/BoxEvents_ccp/BoxEvents_DataConnectorPoller.json) |
+| **CCF Capabilities** | `OAuth2`, `Paging` |
 
 The Box data connector provides the capability to ingest [Box enterprise's events](https://developer.box.com/guides/events/#admin-events) into Microsoft Sentinel using the Box REST API. Refer to [Box  documentation](https://developer.box.com/guides/events/enterprise-events/for-enterprise/) for more information.
 
@@ -24,8 +26,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | ✓ | ✗ | ✓ |
-| [`BoxEvents_CL`](../tables/boxevents-cl.md) | ✗ | ✗ | ✗ |
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | ? | ✗ | ✓ |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Snowflake](../solutions/snowflake.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SnowflakeLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_ConnectorDefinition.json) |
+| **CCF Configuration** | [SnowflakeLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_PollingConfig.json) |
+| **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 
 The Snowflake data connector provides the capability to ingest Snowflake [Login History Logs](https://docs.snowflake.com/en/sql-reference/account-usage/login_history), [Query History Logs](https://docs.snowflake.com/en/sql-reference/account-usage/query_history), [User-Grant Logs](https://docs.snowflake.com/en/sql-reference/account-usage/grants_to_users), [Role-Grant Logs](https://docs.snowflake.com/en/sql-reference/account-usage/grants_to_roles), [Load History Logs](https://docs.snowflake.com/en/sql-reference/account-usage/load_history), [Materialized View Refresh History Logs](https://docs.snowflake.com/en/sql-reference/account-usage/materialized_view_refresh_history), [Roles Logs](https://docs.snowflake.com/en/sql-reference/account-usage/roles), [Tables Logs](https://docs.snowflake.com/en/sql-reference/account-usage/tables), [Table Storage Metrics Logs](https://docs.snowflake.com/en/sql-reference/account-usage/table_storage_metrics), [Users Logs](https://docs.snowflake.com/en/sql-reference/account-usage/users) into Microsoft Sentinel using the Snowflake SQL API. Refer to [Snowflake SQL API documentation](https://docs.snowflake.com/en/developer-guide/sql-api/reference) for more information.
 
@@ -24,16 +26,16 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SnowflakeLoad_CL`](../tables/snowflakeload-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeLogin_CL`](../tables/snowflakelogin-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeMaterializedView_CL`](../tables/snowflakematerializedview-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeQuery_CL`](../tables/snowflakequery-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeRoleGrant_CL`](../tables/snowflakerolegrant-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeRoles_CL`](../tables/snowflakeroles-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeTableStorageMetrics_CL`](../tables/snowflaketablestoragemetrics-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeTables_CL`](../tables/snowflaketables-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeUserGrant_CL`](../tables/snowflakeusergrant-cl.md) | ✓ | ✗ | ✓ |
-| [`SnowflakeUsers_CL`](../tables/snowflakeusers-cl.md) | ✓ | ✗ | ✓ |
+| [`SnowflakeLoad_CL`](../tables/snowflakeload-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeLogin_CL`](../tables/snowflakelogin-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeMaterializedView_CL`](../tables/snowflakematerializedview-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeQuery_CL`](../tables/snowflakequery-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeRoleGrant_CL`](../tables/snowflakerolegrant-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeRoles_CL`](../tables/snowflakeroles-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeTableStorageMetrics_CL`](../tables/snowflaketablestoragemetrics-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeTables_CL`](../tables/snowflaketables-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeUserGrant_CL`](../tables/snowflakeusergrant-cl.md) | ? | ✗ | ✓ |
+| [`SnowflakeUsers_CL`](../tables/snowflakeusers-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

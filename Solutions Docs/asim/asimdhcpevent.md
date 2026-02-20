@@ -31,7 +31,6 @@ This union parser includes parsers for the following products:
 |:--------|:--------------|
 | Infoblox BloxOne | [_ASim_DhcpEvent_InfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) |
 | Native | [_ASim_DhcpEvent_Native](asimdhcpeventnative.md) |
-|  | [_Im_DhcpEvent_Empty](im-dhcpevent-empty.md) |
 
 ## Source Tables
 
@@ -39,8 +38,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimDhcpEventInfobloxBloxOne`](../asim/asimdhcpeventinfobloxbloxone.md) | — | — | — |
-| [`ASimDhcpEventNative`](../asim/asimdhcpeventnative.md) | — | — | — |
+| [`ASimDhcpEventInfobloxBloxOne`](../asim/asimdhcpeventinfobloxbloxone.md) | ? | ? | ? |
+| [`ASimDhcpEventNative`](../asim/asimdhcpeventnative.md) | ? | ? | ? |
 
 ## Parameters
 

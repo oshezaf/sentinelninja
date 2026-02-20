@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | ✓ | ✗ | ✓ |
+| [`CyfirmaIndicators_CL`](../tables/cyfirmaindicators-cl.md) | ? | ✗ | ✓ |
 
 ---
 

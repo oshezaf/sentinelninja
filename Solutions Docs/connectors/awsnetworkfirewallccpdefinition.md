@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Amazon Web Services NetworkFirewall](../solutions/amazon-web-services-networkfirewall.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSNetworkFirewallLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall/Data%20Connectors/AWSNetworkFirewallLogs_CCP/AWSNetworkFirewallLog_ConnectorDefinition.json) |
+| **CCF Configuration** | [AWSNetworkFirewallLog_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall/Data%20Connectors/AWSNetworkFirewallLogs_CCP/AWSNetworkFirewallLog_PollingConfig.json) |
+| **CCF Capabilities** | `AmazonWebServicesS3` |
 
 This data connector allows you to ingest AWS Network Firewall logs into Microsoft Sentinel for advanced threat detection and security monitoring. By leveraging Amazon S3 and Amazon SQS, the connector forwards network traffic logs, intrusion detection alerts, and firewall events to Microsoft Sentinel, enabling real-time analysis and correlation with other security data
 
@@ -28,9 +30,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AWSNetworkFirewallAlert`](../tables/awsnetworkfirewallalert.md) | ✓ | ✗ | — |
+| [`AWSNetworkFirewallAlert`](../tables/awsnetworkfirewallalert.md) | ✓ | ✗ | ? |
 | [`AWSNetworkFirewallFlow`](../tables/awsnetworkfirewallflow.md) | ✓ | ✗ | ✓ |
-| [`AWSNetworkFirewallTls`](../tables/awsnetworkfirewalltls.md) | ✓ | ✗ | — |
+| [`AWSNetworkFirewallTls`](../tables/awsnetworkfirewalltls.md) | ✓ | ✗ | ? |
 
 ## Permissions
 

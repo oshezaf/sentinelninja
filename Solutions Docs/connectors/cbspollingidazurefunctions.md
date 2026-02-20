@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CBSLog_Azure_1_CL`](../tables/cbslog-azure-1-cl.md) | ✗ | ✗ | ✗ |
+| [`CBSLog_Azure_1_CL`](../tables/cbslog-azure-1-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

@@ -13,8 +13,9 @@
 | **Connector ID** | `DynatraceRuntimeVulnerabilities` |
 | **Publisher** | Dynatrace |
 | **Used in Solutions** | [Dynatrace](../solutions/dynatrace.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
 | **Connector Definition Files** | [Connector_Dynatrace_RuntimeVulnerabilities.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/Connector_Dynatrace_RuntimeVulnerabilities.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 This connector uses the [Dynatrace Security Problem REST API](https://docs.dynatrace.com/docs/dynatrace-api/environment-api/application-security/vulnerabilities/get-vulnerabilities) to ingest detected runtime vulnerabilities into Microsoft Sentinel Log Analytics.
 
@@ -24,7 +25,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | ✗ | ✗ | ✗ |
+| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

@@ -25,9 +25,9 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) | ✗ | ✗ | ✗ |
-| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) | ✗ | ✗ | ✗ |
-| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) | ✗ | ✗ | ✗ |
+| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) | ? | ✗ | ✗ |
+| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) | ? | ✗ | ✗ |
+| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) | ? | ✗ | ✗ |
 
 ---
 

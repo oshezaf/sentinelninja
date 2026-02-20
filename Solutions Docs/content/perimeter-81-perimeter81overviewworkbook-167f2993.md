@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Perimeter81_CL`](../tables/perimeter81-cl.md) | ✗ | ✗ | ✗ |
+| [`Perimeter81_CL`](../tables/perimeter81-cl.md) | ? | ✗ | ✗ |
 
 ---
 

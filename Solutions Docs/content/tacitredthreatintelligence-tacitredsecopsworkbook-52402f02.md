@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) | ✗ | ✗ | ✗ |
+| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) | ? | ? | ? |
 
 ---
 

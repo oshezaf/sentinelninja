@@ -36,8 +36,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) | ✗ | ✗ | ✗ |
-| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) | ✗ | ✗ | ✗ |
+| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) | ? | ✗ | ✗ |
+| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

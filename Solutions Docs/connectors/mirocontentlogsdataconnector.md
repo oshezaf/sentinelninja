@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Miro](../solutions/miro.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MiroContentLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroContentLogs_CCF/MiroContentLogs_DataConnectorDefinition.json) |
+| **CCF Configuration** | [MiroContentLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroContentLogs_CCF/MiroContentLogs_PollingConfig.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 The [Miro Content Logs](https://help.miro.com/hc/en-us/articles/17774729839378-Content-Logs-overview) data connector enables you to ingest content activity logs from Miro into Microsoft Sentinel. Part of Miro's Enterprise Guard eDiscovery capabilities, this connector provides content-level visibility for compliance, legal hold, and advanced threat detection.
 
@@ -66,7 +68,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MiroContentLogs_CL`](../tables/mirocontentlogs-cl.md) | — | — | — |
+| [`MiroContentLogs_CL`](../tables/mirocontentlogs-cl.md) | ? | ? | ? |
 
 ## Permissions
 

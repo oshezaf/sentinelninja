@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | ✗ | ✗ | ✗ |
+| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | ? | ✗ | ✗ |
 
 ---
 

@@ -39,7 +39,6 @@ This union parser includes parsers for the following products:
 | Microsoft Defender for IoT | [_ASim_ProcessEvent_MD4IoT](asimprocesseventmd4iot.md) |
 | Microsoft 365 Defender for endpoint | [_ASim_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |
 | Native | [_ASim_ProcessEvent_Native](asimprocesseventnative.md) |
-|  | [_Im_Process_Empty](im-process-empty.md) |
 
 ## Source Tables
 
@@ -47,16 +46,16 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ASimProcessCreateLinuxSysmon`](../asim/asimprocesscreatelinuxsysmon.md) | — | — | — |
-| [`ASimProcessCreateMicrosoftSecurityEvents`](../asim/asimprocesscreatemicrosoftsecurityevents.md) | — | — | — |
-| [`ASimProcessCreateMicrosoftSysmon`](../tables/asimprocesscreatemicrosoftsysmon.md) | — | — | — |
-| [`ASimProcessCreateMicrosoftWindowsEvents`](../asim/asimprocesscreatemicrosoftwindowsevents.md) | — | — | — |
-| [`ASimProcessCreateSentinelOne`](../asim/asimprocesscreatesentinelone.md) | — | — | — |
-| [`ASimProcessCreateTrendMicroVisionOne`](../asim/asimprocesscreatetrendmicrovisionone.md) | — | — | — |
-| [`ASimProcessCreateVMwareCarbonBlackCloud`](../asim/asimprocesscreatevmwarecarbonblackcloud.md) | — | — | — |
-| [`ASimProcessEventMD4IoT`](../asim/asimprocesseventmd4iot.md) | — | — | — |
-| [`ASimProcessEventMicrosoft365D`](../asim/asimprocesseventmicrosoft365d.md) | — | — | — |
-| [`ASimProcessEventNative`](../asim/asimprocesseventnative.md) | — | — | — |
+| [`ASimProcessCreateLinuxSysmon`](../asim/asimprocesscreatelinuxsysmon.md) | ? | ? | ? |
+| [`ASimProcessCreateMicrosoftSecurityEvents`](../asim/asimprocesscreatemicrosoftsecurityevents.md) | ? | ? | ? |
+| [`ASimProcessCreateMicrosoftSysmon`](../tables/asimprocesscreatemicrosoftsysmon.md) | ? | ? | ? |
+| [`ASimProcessCreateMicrosoftWindowsEvents`](../asim/asimprocesscreatemicrosoftwindowsevents.md) | ? | ? | ? |
+| [`ASimProcessCreateSentinelOne`](../asim/asimprocesscreatesentinelone.md) | ? | ? | ? |
+| [`ASimProcessCreateTrendMicroVisionOne`](../asim/asimprocesscreatetrendmicrovisionone.md) | ? | ? | ? |
+| [`ASimProcessCreateVMwareCarbonBlackCloud`](../asim/asimprocesscreatevmwarecarbonblackcloud.md) | ? | ? | ? |
+| [`ASimProcessEventMD4IoT`](../asim/asimprocesseventmd4iot.md) | ? | ? | ? |
+| [`ASimProcessEventMicrosoft365D`](../asim/asimprocesseventmicrosoft365d.md) | ? | ? | ? |
+| [`ASimProcessEventNative`](../asim/asimprocesseventnative.md) | ? | ? | ? |
 
 ## References
 

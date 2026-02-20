@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DoppelTable_CL`](../tables/doppeltable-cl.md) | ✗ | ✗ | ✗ |
+| [`DoppelTable_CL`](../tables/doppeltable-cl.md) | ? | ✗ | ✗ |
 
 ---
 

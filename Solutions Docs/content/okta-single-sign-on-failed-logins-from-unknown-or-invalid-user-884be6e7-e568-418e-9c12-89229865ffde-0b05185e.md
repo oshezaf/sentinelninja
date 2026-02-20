@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | — | — | — |
-| [`Okta_CL`](../tables/okta-cl.md) | ✗ | ✗ | ✗ |
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | ? | ? | ? |
+| [`Okta_CL`](../tables/okta-cl.md) | ? | ✗ | ✗ |
 
 ---
 

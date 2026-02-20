@@ -35,11 +35,10 @@ This union parser includes parsers for the following products:
 |  | [_Im_ProcessCreate_MicrosoftSecurityEvents](im-processcreate-microsoftsecurityevents.md) |
 |  | [_Im_ProcessCreate_MicrosoftSysmon](im-processcreate-microsoftsysmon.md) |
 |  | [_Im_ProcessCreate_MicrosoftWindowsEvents](im-processcreate-microsoftwindowsevents.md) |
-|  | [_Im_ProcessCreate_SentinelOne](im-processcreate-sentinelone.md) |
+| SentinelOne | [_Im_ProcessCreate_SentinelOne](asimprocesscreatesentinelone.md) |
 |  | [_Im_ProcessCreate_VMwareCarbonBlackCloud](im-processcreate-vmwarecarbonblackcloud.md) |
-|  | [_Im_ProcessEvent_Microsoft365D](im-processevent-microsoft365d.md) |
-|  | [_Im_ProcessEvent_Native](im-processevent-native.md) |
-|  | [_Im_Process_Empty](im-process-empty.md) |
+| Microsoft 365 Defender for endpoint | [_Im_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |
+| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) |
 
 ## Parameters
 

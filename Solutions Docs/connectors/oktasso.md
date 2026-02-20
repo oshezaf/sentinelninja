@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Okta_CL`](../tables/okta-cl.md) | ✗ | ✗ | ✗ |
+| [`Okta_CL`](../tables/okta-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

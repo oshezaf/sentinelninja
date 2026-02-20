@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ProofpointPOD_Definaton.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security/Data%20Connectors/ProofPointEmailSecurity_CCP/ProofpointPOD_Definaton.json) |
+| **CCF Configuration** | [ProofpointPOD_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security/Data%20Connectors/ProofPointEmailSecurity_CCP/ProofpointPOD_PollingConfig.json) |
+| **CCF Capabilities** | `WebSocket`, `APIKey` |
 
 Proofpoint On Demand Email Security data connector provides the capability to get Proofpoint on Demand Email Protection data, allows users to check message traceability, monitoring into email activity, threats,and data exfiltration by attackers and malicious insiders. The connector provides ability to review events in your org on an accelerated basis, get event log files in hourly increments for recent activity.
 
@@ -24,8 +26,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | ✓ | ✗ | ✓ |
-| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | ✓ | ✗ | ✓ |
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) | ? | ✗ | ✓ |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

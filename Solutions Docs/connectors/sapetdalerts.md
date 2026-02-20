@@ -15,6 +15,8 @@
 | **Used in Solutions** | [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SAPETD_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20ETD%20Cloud/Data%20Connectors/SAPETD_PUSH_CCP/SAPETD_connectorDefinition.json) |
+| **CCF Configuration** | [SAPETD_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20ETD%20Cloud/Data%20Connectors/SAPETD_PUSH_CCP/SAPETD_PollerConfig.json) |
+| **CCF Capabilities** | `OAuth2`, `Paging` |
 
 The SAP Enterprise Threat Detection, cloud edition (ETD) data connector enables ingestion of security alerts from ETD into Microsoft Sentinel, supporting cross-correlation, alerting, and threat hunting.
 
@@ -24,8 +26,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | ✓ | ✗ | ✓ |
-| [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) | ✓ | ✗ | ✓ |
+| [`SAPETDAlerts_CL`](../tables/sapetdalerts-cl.md) | ? | ✗ | ✓ |
+| [`SAPETDInvestigations_CL`](../tables/sapetdinvestigations-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

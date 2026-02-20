@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | ✗ | ✗ | ✗ |
+| [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) | ? | ✗ | ✗ |
 
 ---
 

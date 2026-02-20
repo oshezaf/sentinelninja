@@ -24,10 +24,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) | ✓ | ✗ | ✓ |
-| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) | ✓ | ✗ | ✓ |
-| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) | ✓ | ✗ | ✓ |
-| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) | ✓ | ✗ | ✓ |
+| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) | ? | ✗ | ✓ |
+| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) | ? | ✗ | ✓ |
+| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) | ? | ✗ | ✓ |
+| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

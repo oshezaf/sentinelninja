@@ -24,8 +24,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`net_assets_CL`](../tables/net-assets-cl.md) | ✗ | ✗ | ✗ |
-| [`web_assets_CL`](../tables/web-assets-cl.md) | ✗ | ✗ | ✗ |
+| [`net_assets_CL`](../tables/net-assets-cl.md) | ? | ✗ | ✗ |
+| [`web_assets_CL`](../tables/web-assets-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

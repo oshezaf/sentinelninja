@@ -51,6 +51,26 @@ It is highly recommended to use the **Summarize Data for DNS Essentials Solution
 - 📖 **Related Documentation:** [ASIM-based domain solutions overview](https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions) - Uses ASIM DNS schema for cross-product threat detection
 - 📖 **Related Documentation:** [ASIM DNS schema reference](https://learn.microsoft.com/azure/sentinel/normalization-schema-dns) - Field definitions for normalized DNS logs
 
+## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+
+This solution uses ASIM parsers and supports the following products:
+
+| Product |
+|:--------|
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
+| [Cisco Umbrella](../asim/asim-products-index.md#cisco-umbrella) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
+| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
+| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
+| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) |
+| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
+| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
+| [Native](../asim/asim-products-index.md#native) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
+| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) |
+
 ## Data Connectors
 
 **This solution does not include data connectors.**

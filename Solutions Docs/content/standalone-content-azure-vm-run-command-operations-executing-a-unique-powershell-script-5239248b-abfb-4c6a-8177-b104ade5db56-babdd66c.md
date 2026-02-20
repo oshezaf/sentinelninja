@@ -20,26 +20,6 @@ Identifies when Azure Run command is used to execute a PowerShell script on a VM
 | **Required Connectors** | [AzureActivity](../connectors/azureactivity.md), [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/AzureActivity/RareRunCommandPowerShellScript.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
-| [`DeviceEvents`](../tables/deviceevents.md) | ✓ | ✗ | ✓ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | — |
-
-## Associated Connectors
-
-The following connectors provide data for this content item:
-
-| Connector | Solution |
-|:----------|:---------|
-| [AzureActivity](../connectors/azureactivity.md) | [Azure Activity](../solutions/azure-activity.md) |
-
-**Solutions:** [Azure Activity](../solutions/azure-activity.md)
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

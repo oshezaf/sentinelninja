@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) | ✗ | ✗ | ✗ |
+| [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

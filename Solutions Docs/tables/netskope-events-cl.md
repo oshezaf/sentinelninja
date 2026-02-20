@@ -15,9 +15,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
-### Workbooks (3)
+### Workbooks (2)
 
 **In solution [Netskope](../solutions/netskope.md):**
 
@@ -30,12 +30,6 @@ This table is used by the following solutions:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [NetskopeCEDashboard](../content/netskopev2-netskopecedashboard-35668be9.md) |  |
-
-**GitHub Only:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [NetskopeEvents](../content/github-only-netskopeevents-9ea84d68.md) |  |
 
 ## Parsers Using This Table (1)
 

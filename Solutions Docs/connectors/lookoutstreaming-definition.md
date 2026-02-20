@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Lookout](../solutions/lookout.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [LookoutStreaming_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_DataConnectorDefinition.json) |
+| **CCF Configuration** | [LookoutStreaming_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_PollingConfig.json) |
+| **CCF Capabilities** | `OAuth2` |
 
 The [Lookout Mobile Threat Detection](https://lookout.com) data connector provides the capability to ingest events related to mobile security risks into Microsoft Sentinel through the Mobile Risk API. Refer to [API documentation](https://esupport.lookout.com/s/article/Mobile-Risk-API-V2-Guide) for more information. This connector helps you examine potential security risks detected in mobile devices.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | ✓ | ✗ | ✓ |
+| [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

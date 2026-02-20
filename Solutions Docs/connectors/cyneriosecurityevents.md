@@ -24,7 +24,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) | ✗ | ✗ | ✗ |
+| [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

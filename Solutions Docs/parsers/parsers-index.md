@@ -112,7 +112,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [AwarenessUserData](awarenessuserdata.md) | 📦 [Mimecast](../solutions/mimecast.md) | Awareness_User_Data_CL |
 | [AwarenessWatchlist](awarenesswatchlist.md) | 📦 [Mimecast](../solutions/mimecast.md) | Awareness_Watchlist_Details_CL |
 | [AzureFirewallApplicationRule](azurefirewallapplicationrule.md) | 📂 *Legacy* | AzureDiagnostics |
-| [AzureFirewallDnsProxy](azurefirewalldnsproxy.md) | 📂 *Legacy* | — |
+| [AzureFirewallDnsProxy](azurefirewalldnsproxy.md) | 📂 *Legacy* | ? |
 | [AzureFirewallNetworkRule](azurefirewallnetworkrule.md) | 📂 *Legacy* | AzureDiagnostics |
 
 ## B
@@ -160,7 +160,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [ConfluenceAudit](confluenceaudit.md) | 📦 [AtlassianConfluenceAudit](../solutions/atlassianconfluenceaudit.md) | Confluence_Audit_CL |
 | [ContrastADR](contrastadr.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADR_CL |
 | [ContrastADR_Incident](contrastadr-incident.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADRIncident_CL |
-| [Corelight](corelight.md) | 📦 [Corelight](../solutions/corelight.md) | — |
+| [Corelight](corelight.md) | 📦 [Corelight](../solutions/corelight.md) | ? |
 | [corelight_anomaly](corelight-anomaly.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_anomaly_CL |
 | [corelight_bacnet](corelight-bacnet.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_bacnet_CL |
 | [corelight_capture_loss](corelight-capture-loss.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_capture_loss_CL |
@@ -325,7 +325,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [DataminrPulseAlerts](dataminrpulsealerts.md) | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) | DataminrPulse_Alerts_CL, watchlist |
 | [DataminrPulseCyberAlerts](dataminrpulsecyberalerts.md) | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) | DataminrPulse_Alerts_CL, watchlist |
-| [DataverseSharePointSites](dataversesharepointsites.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | — |
+| [DataverseSharePointSites](dataversesharepointsites.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
 | [DefendAuditData](defendauditdata.md) ⚠️ | 📦 [Egress Defend](../solutions/egress-defend.md) | EgressDefend_CL |
 | [Devicefromip](devicefromip.md) | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | DeviceNetworkInfo |
 | [DigitalGuardianDLPEvent](digitalguardiandlpevent.md) | 📦 [Digital Guardian Data Loss Prevention](../solutions/digital-guardian-data-loss-prevention.md) | Syslog |
@@ -333,7 +333,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [DragosNotificationsToSentinel](dragosnotificationstosentinel.md) | 📦 [Dragos](../solutions/dragos.md) | SecurityAlert |
 | [DragosPullNotificationsToSentinel](dragospullnotificationstosentinel.md) | 📦 [Dragos](../solutions/dragos.md) | DragosAlerts_CL, SecurityAlert |
 | [DragosPushNotificationsToSentinel](dragospushnotificationstosentinel.md) | 📦 [Dragos](../solutions/dragos.md) | CommonSecurityLog |
-| [DragosSeverityToSentinelSeverity](dragosseveritytosentinelseverity.md) | 📦 [Dragos](../solutions/dragos.md) | — |
+| [DragosSeverityToSentinelSeverity](dragosseveritytosentinelseverity.md) | 📦 [Dragos](../solutions/dragos.md) | ? |
 | [dsp_parser](dsp-parser.md) | 📦 [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) | SecurityEvent |
 | [DSTIMCorrelatedLogs](dstimcorrelatedlogs.md) | 📂 *Legacy* | DSTIMAccess_CL, DSTIMClassification_CL, ... |
 | [DuoSecurityAdministrator](duosecurityadministrator.md) | 📂 *Legacy* | DuoSecurityAdministrator_CL |
@@ -361,10 +361,10 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [EventsPage](eventspage.md) | 📦 [Netskopev2](../solutions/netskopev2.md) | eventspagedata_CL |
 | [ExabeamEvent](exabeamevent.md) | 📦 [Exabeam Advanced Analytics](../solutions/exabeam-advanced-analytics.md) | Syslog |
 | [ExchangeAdminAuditLogs](exchangeadminauditlogs.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | Event |
-| [ExchangeConfiguration](exchangeconfiguration.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | — |
-| [ExchangeConfiguration](exchangeconfiguration.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | — |
-| [ExchangeEnvironmentList](exchangeenvironmentlist.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | — |
-| [ExchangeEnvironmentList](exchangeenvironmentlist.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | — |
+| [ExchangeConfiguration](exchangeconfiguration.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | ? |
+| [ExchangeConfiguration](exchangeconfiguration.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | ? |
+| [ExchangeEnvironmentList](exchangeenvironmentlist.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | ? |
+| [ExchangeEnvironmentList](exchangeenvironmentlist.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | ? |
 | [ExtraHopDetections](extrahopdetections.md) | 📦 [ExtraHop](../solutions/extrahop.md) | ExtraHop_Detections_CL |
 
 ## F
@@ -384,7 +384,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [GCP_IAM](gcp-iam.md) | 📦 [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) | GCPIAM, GCP_IAM_CL |
 | [GCP_MONITOR](gcp-monitor.md) | 📦 [Google Cloud Platform Cloud Monitoring](../solutions/google-cloud-platform-cloud-monitoring.md) | GCP_MONITORINGV2_CL, GCP_MONITORING_CL |
 | [GCPCloudDNS](gcpclouddns.md) | 📦 [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) | GCPDNS, GCP_DNS_CL |
-| [GetClassificationList](getclassificationlist.md) | 📂 *Legacy* | — |
+| [GetClassificationList](getclassificationlist.md) | 📂 *Legacy* | ? |
 | [getForgeRockUsers](getforgerockusers.md) ⚠️ | 📦 [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) | CommonSecurityLog |
 | [GitHubAudit](githubaudit.md) | 📂 *Legacy* | GitHub_CL |
 | [GitHubAuditData](githubauditdata.md) | 📦 [GitHub](../solutions/github.md) | GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL, ... |
@@ -413,11 +413,11 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [IllumioSyslogAuditEvents](illumiosyslogauditevents.md) | 📦 [IllumioSaaS](../solutions/illumiosaas.md) | Syslog |
 | [IllumioSyslogNetworkTrafficEvents](illumiosyslognetworktrafficevents.md) | 📦 [IllumioSaaS](../solutions/illumiosaas.md) | IllumioFlowEventsV2_CL, Syslog |
 | [ImpervaWAFCloud](impervawafcloud.md) | 📦 [ImpervaCloudWAF](../solutions/impervacloudwaf.md) | ImpervaWAFCloudV2_CL, ImpervaWAFCloud_CL |
-| [Infoblox](infoblox.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | — |
+| [Infoblox](infoblox.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | ? |
 | [Infoblox_allotherdhcpdTypes](infoblox-allotherdhcpdtypes.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_allotherdnsTypes](infoblox-allotherdnstypes.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_allotherlogTypes](infoblox-allotherlogtypes.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
-| [Infoblox_dhcp_consolidated](infoblox-dhcp-consolidated.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | — |
+| [Infoblox_dhcp_consolidated](infoblox-dhcp-consolidated.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | ? |
 | [Infoblox_dhcpack](infoblox-dhcpack.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_dhcpadded](infoblox-dhcpadded.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_dhcpbindupdate](infoblox-dhcpbindupdate.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
@@ -431,7 +431,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [Infoblox_dhcpremoved](infoblox-dhcpremoved.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_dhcprequest](infoblox-dhcprequest.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_dhcpsession](infoblox-dhcpsession.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
-| [Infoblox_dns_consolidated](infoblox-dns-consolidated.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | — |
+| [Infoblox_dns_consolidated](infoblox-dns-consolidated.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | ? |
 | [Infoblox_dnsclient](infoblox-dnsclient.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_dnsgss](infoblox-dnsgss.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
 | [Infoblox_dnszone](infoblox-dnszone.md) | 📦 [Infoblox NIOS](../solutions/infoblox-nios.md) | Syslog |
@@ -481,16 +481,16 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
-| [MapNetflowUsername](mapnetflowusername.md) ⚠️ | 📦 [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | — |
+| [MapNetflowUsername](mapnetflowusername.md) ⚠️ | 📦 [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | ? |
 | [MarkLogicAudit](marklogicaudit.md) | 📦 [MarkLogicAudit](../solutions/marklogicaudit.md) | MarkLogicAudit_CL |
-| [McAfeeCommonSecurityLog](mcafeecommonsecuritylog.md) | 📂 *Legacy* | CommonSecurityLog |
+| [McAfee Common Security Log Parser](mcafee-common-security-log-parser.md) | 📂 *Legacy* | CommonSecurityLog |
 | [McAfeeEPOEvent](mcafeeepoevent.md) | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) | Syslog |
 | [McAfeeNSPEvent](mcafeenspevent.md) | 📦 [McAfee Network Security Platform](../solutions/mcafee-network-security-platform.md) | Syslog |
 | [MCASActivity](mcasactivity.md) | 📂 *Legacy* | MCASActivity_CL |
 | [MerakiConfigurationChanges](merakiconfigurationchanges.md) | 📂 *Legacy* | MerakiConfigurationChanges_CL |
 | [MerakiSecurityEvents](merakisecurityevents.md) | 📂 *Legacy* | MerakiSecurityEvents_CL |
-| [MESCheckOnlineVIP](mescheckonlinevip.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | — |
-| [MESCheckVIP](mescheckvip.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | — |
+| [MESCheckOnlineVIP](mescheckonlinevip.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | ? |
+| [MESCheckVIP](mescheckvip.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | ? |
 | [MESCompareDataMRA](mescomparedatamra.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | ESIExchangeOnlineConfig_CL |
 | [MESCompareDataOnPMRA](mescomparedataonpmra.md) | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) | ESIExchangeConfig_CL |
 | [MESOfficeActivityLogs](mesofficeactivitylogs.md) | 📦 [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) | OfficeActivity |
@@ -503,10 +503,10 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [MimecastTTPUrl](mimecastttpurl.md) | 📦 [Mimecast](../solutions/mimecast.md) | Ttp_Url_CL |
 | [MongoDBAudit](mongodbaudit.md) | 📦 [MongoDBAudit](../solutions/mongodbaudit.md) | MongoDBAudit_CL |
 | [Morphisec](morphisec.md) | 📦 [Morphisec](../solutions/morphisec.md) | MorphisecAlerts_CL |
-| [MSBizAppsNetworkAddresses](msbizappsnetworkaddresses.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | — |
-| [MSBizAppsOrgSettings](msbizappsorgsettings.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | — |
-| [MSBizAppsTerminatedEmployees](msbizappsterminatedemployees.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | — |
-| [MSBizAppsVIPUsers](msbizappsvipusers.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | — |
+| [MSBizAppsNetworkAddresses](msbizappsnetworkaddresses.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
+| [MSBizAppsOrgSettings](msbizappsorgsettings.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
+| [MSBizAppsTerminatedEmployees](msbizappsterminatedemployees.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
+| [MSBizAppsVIPUsers](msbizappsvipusers.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
 | [MuleSoftCloudhub](mulesoftcloudhub.md) | 📦 [Mulesoft](../solutions/mulesoft.md) | MuleSoft_Cloudhub_CL |
 
 ## N
@@ -539,7 +539,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [OCILogs](ocilogs.md) | 📦 [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) | OCI_LogsV2_CL, OCI_Logs_CL |
 | [OktaSSO](oktasso.md) | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) | OktaV2_CL, Okta_CL |
-| [OnapsisLookup](onapsislookup.md) | 📦 [Onapsis Platform](../solutions/onapsis-platform.md) | — |
+| [OnapsisLookup](onapsislookup.md) | 📦 [Onapsis Platform](../solutions/onapsis-platform.md) | ? |
 | [OneIdentity_Safeguard](oneidentity-safeguard.md) ⚠️ | 📦 [OneIdentity](../solutions/oneidentity.md) | CommonSecurityLog |
 | [OneLogin](onelogin.md) | 📦 [OneLoginIAM](../solutions/oneloginiam.md) | OneLoginEventsV2_CL, OneLoginUsersV2_CL, ... |
 | [OneLoginEvents](oneloginevents.md) | 📂 *Legacy* | oneLogin_CL |
@@ -586,11 +586,11 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [SentinelOne](sentinelone.md) | 📦 [SentinelOne](../solutions/sentinelone.md) | SentinelOneActivities_CL, SentinelOneAgents_CL, ... |
 | [SlackAudit](slackaudit.md) | 📦 [SlackAudit](../solutions/slackaudit.md) | SlackAuditNativePoller_CL, SlackAuditV2_CL, ... |
 | [Snowflake](snowflake.md) | 📦 [Snowflake](../solutions/snowflake.md) | SnowflakeLoad_CL, SnowflakeLogin_CL, ... |
-| [SophosEPEvent](sophosepevent.md) | 📦 [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) | — |
+| [SophosEPEvent](sophosepevent.md) | 📦 [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) | ? |
 | [SophosXGFirewall](sophosxgfirewall.md) | 📦 [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) | Syslog |
 | [SQLServer_Parser](sqlserver-parser.md) | 📂 *Legacy* | Event |
 | [SquidProxy](squidproxy.md) | 📦 [SquidProxy](../solutions/squidproxy.md) | SquidProxy_CL |
-| [StealthDefend](stealthdefend.md) | 📂 *Legacy* | CommonSecurityLog |
+| [StealthBits StealthDefend Parser](stealthbits-stealthdefend-parser.md) | 📂 *Legacy* | CommonSecurityLog |
 | [StealthwatchEvent](stealthwatchevent.md) | 📦 [Cisco Secure Cloud Analytics](../solutions/cisco-secure-cloud-analytics.md) | Syslog |
 | [SymantecDLP](symantecdlp.md) | 📦 [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md) | CommonSecurityLog |
 | [SymantecEndpointProtection](symantecendpointprotection.md) | 📦 [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) | Syslog |
@@ -652,7 +652,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [vectra_smtp](vectra-smtp.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | vectra_smtp_CL |
 | [vectra_ssh](vectra-ssh.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | vectra_ssh_CL |
 | [vectra_ssl](vectra-ssl.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | vectra_ssl_CL |
-| [vectra_stream](vectra-stream.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | — |
+| [vectra_stream](vectra-stream.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | ? |
 | [vectra_x509](vectra-x509.md) | 📦 [Vectra AI Stream](../solutions/vectra-ai-stream.md) | vectra_x509_CL |
 | [VectraAudits](vectraaudits.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Audits_Data_CL |
 | [VectraDetections](vectradetections.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) | Detections_Data_CL |

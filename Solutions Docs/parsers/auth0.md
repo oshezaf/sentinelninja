@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Auth0AM_CL`](../tables/auth0am-cl.md) | ✗ | ✗ | ✗ |
-| [`Auth0_CL`](../tables/auth0-cl.md) | — | — | — |
+| [`Auth0AM_CL`](../tables/auth0am-cl.md) | ? | ✗ | ✗ |
+| [`Auth0_CL`](../tables/auth0-cl.md) | ? | ? | ? |
 
 ---
 

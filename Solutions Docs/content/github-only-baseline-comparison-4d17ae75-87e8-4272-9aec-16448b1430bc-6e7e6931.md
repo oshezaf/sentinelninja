@@ -16,24 +16,6 @@ Baseline Comparison. Author: miflower. The purpose of this query is to perform a
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/General%20queries/Baseline%20Comparison.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
-| [`AlertInfo`](../tables/alertinfo.md) |  | ✓ | ✗ | — |
-| [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ✓ |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | — |
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | `ActionType == "PowerShellCommand"` | ✓ | ✗ | — |
-| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | — |
-| [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | — |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | — |
-| [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ | — |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | — |
-| [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ | — |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

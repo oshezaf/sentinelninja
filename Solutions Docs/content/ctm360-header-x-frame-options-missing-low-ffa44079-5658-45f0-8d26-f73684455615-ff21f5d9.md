@@ -29,7 +29,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HackerViewLog_Azure_1_CL`](../tables/hackerviewlog-azure-1-cl.md) | ✗ | ✗ | ✗ |
+| [`HackerViewLog_Azure_1_CL`](../tables/hackerviewlog-azure-1-cl.md) | ? | ✗ | ✗ |
 
 ---
 

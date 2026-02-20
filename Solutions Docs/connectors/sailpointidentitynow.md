@@ -24,8 +24,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) | ✓ | ✗ | ✓ |
-| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) | ✗ | ✗ | ✗ |
+| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) | ? | ✗ | ✓ |
+| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

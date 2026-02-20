@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ✓ | ✗ | ✓ |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | ? | ✗ | ✓ |
 
 ## Permissions
 

@@ -20,25 +20,6 @@ Identifies when the Azure Run Command operation is executed by a UserPrincipalNa
 | **Required Connectors** | [AzureActivity](../connectors/azureactivity.md), [BehaviorAnalytics](../connectors/behavioranalytics.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/MultipleDataSources/RunCommandUEBABreach.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ✗ | ✗ | ✗ |
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | — |
-
-## Associated Connectors
-
-The following connectors provide data for this content item:
-
-| Connector | Solution |
-|:----------|:---------|
-| [AzureActivity](../connectors/azureactivity.md) | [Azure Activity](../solutions/azure-activity.md) |
-
-**Solutions:** [Azure Activity](../solutions/azure-activity.md)
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

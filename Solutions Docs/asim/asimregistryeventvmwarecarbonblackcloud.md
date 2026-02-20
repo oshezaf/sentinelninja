@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | ✗ | ✗ | ✗ |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | ? | ✗ | ✗ |
 
 ## Parameters
 

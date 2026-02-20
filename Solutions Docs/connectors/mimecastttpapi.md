@@ -34,12 +34,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | ✗ | ✗ | ✗ |
-| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | ✗ | ✗ | ✗ |
-| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | ✗ | ✗ | ✗ |
-| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | ✗ | ✗ | ✗ |
-| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | ✗ | ✗ | ✗ |
-| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | ✗ | ✗ | ✗ |
+| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | ? | ✗ | ✗ |
+| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | ? | ✗ | ✗ |
+| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | ? | ✗ | ✗ |
+| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | ? | ✗ | ✗ |
+| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | ? | ✗ | ✗ |
+| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

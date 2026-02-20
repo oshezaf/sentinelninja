@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ✓ |
-| [`EmailEvents`](../tables/emailevents.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | ✓ | ✗ | ✓ |
-| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ | — |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"` | ✓ | ✗ | ✓ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ✓ |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ | ? |
 
 ---
 

@@ -29,24 +29,23 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser |
 |:--------|:--------------|
-|  | [_Im_WebSession_ApacheHTTPServer](im-websession-apachehttpserver.md) |
-|  | [_Im_WebSession_AzureFirewall](im-websession-azurefirewall.md) |
-|  | [_Im_WebSession_BarracudaCEF](im-websession-barracudacef.md) |
-|  | [_Im_WebSession_BarracudaWAF](im-websession-barracudawaf.md) |
-|  | [_Im_WebSession_CiscoFirepower](im-websession-ciscofirepower.md) |
-|  | [_Im_WebSession_CiscoMeraki](im-websession-ciscomeraki.md) |
-|  | [_Im_WebSession_CitrixNetScaler](im-websession-citrixnetscaler.md) |
-|  | [_Im_WebSession_F5ASM](im-websession-f5asm.md) |
-|  | [_Im_WebSession_FortinetFortiGate](im-websession-fortinetfortigate.md) |
-|  | [_Im_WebSession_IIS](im-websession-iis.md) |
-|  | [_Im_WebSession_Native](im-websession-native.md) |
-|  | [_Im_WebSession_PaloAltoCEF](im-websession-paloaltocef.md) |
-|  | [_Im_WebSession_PaloAltoCortexDataLake](im-websession-paloaltocortexdatalake.md) |
-|  | [_Im_WebSession_SonicWallFirewall](im-websession-sonicwallfirewall.md) |
-|  | [_Im_WebSession_SquidProxy](im-websession-squidproxy.md) |
-|  | [_Im_WebSession_VectraAI](im-websession-vectraai.md) |
-|  | [_Im_WebSession_ZscalerZIA](im-websession-zscalerzia.md) |
-|  | [_Im_WebSesssion_Empty](im-websesssion-empty.md) |
+| Apache HTTP Server | [_Im_WebSession_ApacheHTTPServer](asimwebsessionapachehttpserver.md) |
+| Azure Firewall | [_Im_WebSession_AzureFirewall](asimwebsessionazurefirewall.md) |
+| Barracuda WAF | [_Im_WebSession_BarracudaCEF](asimwebsessionbarracudacef.md) |
+| Barracuda WAF | [_Im_WebSession_BarracudaWAF](asimwebsessionbarracudawaf.md) |
+| Cisco Firepower | [_Im_WebSession_CiscoFirepower](asimwebsessionciscofirepower.md) |
+| Cisco Meraki | [_Im_WebSession_CiscoMeraki](asimwebsessionciscomeraki.md) |
+| Citrix NetScaler | [_Im_WebSession_CitrixNetScaler](asimwebsessioncitrixnetscaler.md) |
+| F5 BIG-IP Application Security Manager (ASM) | [_Im_WebSession_F5ASM](asimwebsessionf5asm.md) |
+| Fortinet FortiGate | [_Im_WebSession_FortinetFortiGate](asimwebsessionfortinetfortigate.md) |
+| Internet Information Services (IIS) | [_Im_WebSession_IIS](asimwebsessioniis.md) |
+| Native | [_Im_WebSession_Native](asimwebsessionnative.md) |
+| Palo Alto Networks | [_Im_WebSession_PaloAltoCEF](asimwebsessionpaloaltocef.md) |
+| Palo Alto Cortex Data Lake | [_Im_WebSession_PaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md) |
+| SonicWall | [_Im_WebSession_SonicWallFirewall](asimwebsessionsonicwallfirewall.md) |
+| Squid Proxy | [_Im_WebSession_SquidProxy](asimwebsessionsquidproxy.md) |
+| Vectra AI Streams | [_Im_WebSession_VectraAI](asimwebsessionvectraai.md) |
+| Zscaler ZIA | [_Im_WebSession_ZscalerZIA](asimwebsessionzscalerzia.md) |
 
 ## Parameters
 

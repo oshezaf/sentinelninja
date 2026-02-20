@@ -6,9 +6,12 @@
 
 ---
 
+Reference for DnsInventory table in Azure Monitor Logs.
+
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Network |
+| **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
@@ -30,9 +33,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
 
@@ -40,11 +43,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Dns](../content/windows-server-dns-dns-ed7f9abb.md) |  |
 
-**GitHub Only:**
+## Resource Types
 
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Dns](../content/github-only-dns-ff664046.md) |  |
+This table collects data from the following Azure resource types:
+
+- `microsoft.compute/virtualmachines`
+- `microsoft.conenctedvmwarevsphere/virtualmachines`
+- `microsoft.azurestackhci/virtualmachines`
+- `microsoft.scvmm/virtualmachines`
 
 ---
 

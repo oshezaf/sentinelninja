@@ -28,26 +28,26 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
-| Solutions | **494** | 453 | 41 |
-| With Connectors | **311** | 288 | 23 |
-| With Content | **394** | 370 | 24 |
+| Solutions | **495** | 450 | 45 |
+| With Connectors | **311** | 286 | 25 |
+| With Content | **394** | 369 | 25 |
 
 ### Support Ownership
 
 | Support Tier | Total | Published | Unpublished ⚠️ |
 |:-------------|------:|----------:|------------:|
-| Microsoft | **233** | 227 | 6 |
-| Partner | **238** | 213 | 25 |
+| Microsoft | **233** | 226 | 7 |
+| Partner | **238** | 211 | 27 |
 | Community | **11** | 11 | 0 |
-| Unknown | **12** | 2 | 10 |
-| **Total** | **494** | **453** | **41** |
+| Unknown | **13** | 2 | 11 |
+| **Total** | **495** | **450** | **45** |
 
 ### Other Metrics
 
 | Metric | Count |
 |:-------|------:|
 | Unique Connectors | 388 |
-| Tables Used | 825 |
+| Tables Used | 824 |
 
 ## Connectors
 
@@ -55,34 +55,36 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **388** | 324 | 29 | 35 |
+| In Solutions | **388** | 322 | 29 | 37 |
 | Discovered 🔍 | **148** | 28 | 114 | 6 |
-| **Total** | **536** | **352** | **143** | **41** |
+| **Total** | **536** | **350** | **143** | **43** |
 
 ### Support Ownership
 
 | Support Tier | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| Microsoft | **241** | 150 | 88 | 3 |
-| Partner | **275** | 192 | 47 | 36 |
+| Microsoft | **241** | 149 | 88 | 4 |
+| Partner | **275** | 191 | 47 | 37 |
 | Community | **18** | 10 | 8 | 0 |
 | Unknown | **2** | 0 | 0 | 2 |
-| **Total** | **536** | **352** | **143** | **41** |
+| **Total** | **536** | **350** | **143** | **43** |
 
 ### Collection Methods
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-----------------|------:|-------:|-----------:|------------:|
-| [CCF](methods/ccf.md) | **133** | 126 | 1 | 6 |
 | [Azure Function](methods/azure-function.md) | **131** | 88 | 18 | 25 |
 | [MMA](methods/mma.md) | **110** | 14 | 90 | 6 |
+| [CCF](methods/ccf.md) | **108** | 102 | 0 | 6 |
 | [AMA](methods/ama.md) | **59** | 25 | 34 | 0 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **43** | 39 | 0 | 4 |
 | [Native](methods/native.md) | **25** | 25 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
-| [REST API](methods/rest-api.md) | **15** | 15 | 0 | 0 |
+| [REST API](methods/rest-api.md) | **15** | 14 | 0 | 1 |
+| [CCF (Legacy)](methods/ccf-legacy.md) | **14** | 12 | 1 | 1 |
+| [CCF Push](methods/ccf-push.md) | **11** | 11 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **3** | 3 | 0 | 0 |
-| **Total** | **536** | **352** | **143** | **41** |
+| **Total** | **536** | **350** | **143** | **43** |
 
 ### Collection Methods by Support Tier
 
@@ -90,25 +92,73 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Collection Method | Microsoft | Partner | Community | Unknown |
 |:-----------------|:---------:|:---------:|:---------:|:---------:|
-| [CCF](methods/ccf.md) | 63 / 1 / 1 / **65** | 63 / 0 / 5 / **68** | - | - |
 | [Azure Function](methods/azure-function.md) | 22 / 14 / 0 / **36** | 65 / 4 / 25 / **94** | 1 / 0 / 0 / **1** | - |
 | [MMA](methods/mma.md) | 8 / 57 / 1 / **66** | 6 / 28 / 3 / **37** | 0 / 5 / 0 / **5** | 0 / 0 / 2 / **2** |
+| [CCF](methods/ccf.md) | 59 / 0 / 2 / **61** | 43 / 0 / 4 / **47** | - | - |
 | [AMA](methods/ama.md) | 10 / 16 / 0 / **26** | 11 / 15 / 0 / **26** | 4 / 3 / 0 / **7** | - |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | 1 / 0 / 1 / **2** | 34 / 0 / 3 / **37** | 4 / 0 / 0 / **4** | - |
 | [Native](methods/native.md) | 25 / 0 / 0 / **25** | - | - | - |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 17 / 0 / 0 / **17** | - | - | - |
-| [REST API](methods/rest-api.md) | 1 / 0 / 0 / **1** | 13 / 0 / 0 / **13** | 1 / 0 / 0 / **1** | - |
+| [REST API](methods/rest-api.md) | 1 / 0 / 0 / **1** | 12 / 0 / 1 / **13** | 1 / 0 / 0 / **1** | - |
+| [CCF (Legacy)](methods/ccf-legacy.md) | 3 / 1 / 0 / **4** | 9 / 0 / 1 / **10** | - | - |
+| [CCF Push](methods/ccf-push.md) | - | 11 / 0 / 0 / **11** | - | - |
 | [Unknown](methods/unknown.md) | 3 / 0 / 0 / **3** | - | - | - |
-| **Total** | 150 / 88 / 3 / **241** | 192 / 47 / 36 / **275** | 10 / 8 / 0 / **18** | 0 / 0 / 2 / **2** |
+| **Total** | 149 / 88 / 4 / **241** | 191 / 47 / 37 / **275** | 10 / 8 / 0 / **18** | 0 / 0 / 2 / **2** |
+
+### CCF Capabilities
+
+| Metric | Count |
+|:-------|------:|
+| CCF Connectors (polling) | 108 |
+| CCF Push Connectors | 11 |
+| CCF Legacy Connectors | 14 |
+| **Total CCF** | **133** |
+| With config file | 118 |
+| With capabilities detected | 129 |
+
+**Connector Kind** (non-default kinds; REST API polling is the default):
+
+| Kind | Count |
+|:-----|------:|
+| REST API Polling *(default)* | 84 |
+| GCP | 15 |
+| AmazonWebServicesS3 | 11 |
+| Push | 11 |
+| OCI | 2 |
+| Oracle | 2 |
+| AliCloudSlsV1 | 1 |
+| StorageAccountBlobContainer | 1 |
+| PurviewAudit | 1 |
+| WebSocket | 1 |
+
+**Authentication Methods:**
+
+| Auth Type | Count |
+|:----------|------:|
+| APIKey | 52 |
+| OAuth2 | 21 |
+| Basic | 11 |
+| JwtToken | 3 |
+| ServicePrincipal | 1 |
+| *(none detected)* | 41 |
+
+**Request Features:**
+
+| Feature | Count |
+|:--------|------:|
+| Paging | 68 |
+| POST | 14 |
+| Nested | 3 |
+| MvExpand | 1 |
 
 ## Tables
 
 | Metric | Count |
 |:-------|------:|
-| **Total Tables Documented** | **1792** |
-| Tables Ingested by Connectors | 825 |
-| Tables Referenced by Content Only | 225 |
-| Standalone Reference Tables | 742 |
+| **Total Tables Documented** | **1779** |
+| Tables Ingested by Connectors | 824 |
+| Tables Referenced by Content Only | 218 |
+| Standalone Reference Tables | 737 |
 | Defender XDR Only Tables | 31 |
 
 ## Content
@@ -117,14 +167,14 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Metric | Total | 📦 Published | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-------|------:|-------------:|---------------:|--------------:|---------------:|
-| **Content Items** | **6,606** | 4,749 | 147 | 437 | 1,273 |
+| **Content Items** | **6,606** | 4,748 | 148 | 437 | 1,273 |
 
 ### Content Items by Type
 
 | Type | Total | 📦 Published | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-----|------:|-------------:|---------------:|--------------:|---------------:|
 | Analytic Rules | 2,369 | 2,131 | 68 | 158 | 12 |
-| Hunting Queries | 2,292 | 1,166 | 8 | 84 | 1,034 |
+| Hunting Queries | 2,292 | 1,165 | 9 | 84 | 1,034 |
 | Playbooks | 820 | 557 | 39 | 188 | 36 |
 | Workbooks | 538 | 333 | 20 | 0 | 185 |
 | Parsers* | 514 | 502 | 12 | 0 | 0 |

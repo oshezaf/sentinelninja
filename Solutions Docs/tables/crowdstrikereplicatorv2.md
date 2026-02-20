@@ -9,7 +9,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Crowdstrike |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
 

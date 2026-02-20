@@ -13,8 +13,9 @@
 | **Connector ID** | `SeraphicWebSecurity` |
 | **Publisher** | Seraphic |
 | **Used in Solutions** | [SeraphicSecurity](../solutions/seraphicsecurity.md) |
-| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
 | **Connector Definition Files** | [SeraphicSecurityConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity/Data%20Connectors/SeraphicSecurityConnector.json) |
+| **CCF Capabilities** | `APIKey` |
 
 The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
 
@@ -24,7 +25,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SeraphicWebSecurity_CL`](../tables/seraphicwebsecurity-cl.md) | ✗ | ✗ | ✗ |
+| [`SeraphicWebSecurity_CL`](../tables/seraphicwebsecurity-cl.md) | ? | ✗ | ✗ |
 
 ## Permissions
 

@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | ✓ | ✗ | ✓ |
+| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) | ? | ✗ | ✓ |
 
 ---
 

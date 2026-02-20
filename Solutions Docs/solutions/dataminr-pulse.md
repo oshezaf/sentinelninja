@@ -50,6 +50,7 @@ This solution uses ASIM parsers and supports the following products:
 | [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
 | [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
 | [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
+| [Google Workspace](../asim/asim-products-index.md#google-workspace) |
 | [Illumio Core](../asim/asim-products-index.md#illumio-core) |
 | [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
 | [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
@@ -57,11 +58,18 @@ This solution uses ASIM parsers and supports the following products:
 | [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-iis) |
 | [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
 | [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
+| [Microsoft 365 Defender for EndPoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
 | [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
 | [Microsoft Azure](../asim/asim-products-index.md#microsoft-azure) |
+| [Microsoft Azure Blob Storage](../asim/asim-products-index.md#microsoft-azure-blob-storage) |
+| [Microsoft Azure File Storage](../asim/asim-products-index.md#microsoft-azure-file-storage) |
+| [Microsoft Azure Queue Storage](../asim/asim-products-index.md#microsoft-azure-queue-storage) |
+| [Microsoft Azure Table Storage](../asim/asim-products-index.md#microsoft-azure-table-storage) |
 | [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
 | [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) |
+| [Microsoft Sysmon for Linux](../asim/asim-products-index.md#microsoft-sysmon-for-linux) |
 | [Microsoft Windows](../asim/asim-products-index.md#microsoft-windows) |
+| [Microsoft Windows Events](../asim/asim-products-index.md#microsoft-windows-events) |
 | [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
 | [Native](../asim/asim-products-index.md#native) |
 | [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |

@@ -11,7 +11,6 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
-| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
 

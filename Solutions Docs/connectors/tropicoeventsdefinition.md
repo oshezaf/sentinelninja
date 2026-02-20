@@ -15,6 +15,8 @@
 | **Used in Solutions** | [Tropico](../solutions/tropico.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [TropicoEvents_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoEvents_CCF/TropicoEvents_ConnectorDefinition.json) |
+| **CCF Configuration** | [TropicoEvents_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoEvents_CCF/TropicoEvents_PollerConfig.json) |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 Ingest security events from Tropico Security Platform in OCSF Security Finding format.
 
@@ -24,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Tropico_Events_CL`](../tables/tropico-events-cl.md) | — | — | — |
+| [`Tropico_Events_CL`](../tables/tropico-events-cl.md) | ? | ? | ? |
 
 ## Permissions
 
