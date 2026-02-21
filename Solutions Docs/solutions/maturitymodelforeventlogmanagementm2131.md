@@ -25,33 +25,33 @@ This solution is designed to enable Cloud Architects, Security Engineers, and Go
 
 ## Dependencies
 
-This solution depends on **23 other solution(s)**:
+This solution has **23 optional** (ASIM-based) dependencies on other solutions that can provide data through ASIM parsers:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM | ASIM schemas: NetworkSession |
-| [Azure Firewall](azure-firewall.md) | ASIM | ASIM schemas: Dns |
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM | ASIM schemas: NetworkSession |
-| [CiscoASA](ciscoasa.md) | ASIM | ASIM schemas: NetworkSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM | ASIM schemas: NetworkSession |
-| [CiscoUmbrella](ciscoumbrella.md) | ASIM | ASIM schemas: Dns |
-| [Common Event Format](common-event-format.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [Corelight](corelight.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [IllumioSaaS](illumiosaas.md) | ASIM | ASIM schemas: NetworkSession |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: NetworkSession |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [NXLogDNSLogs](nxlogdnslogs.md) | ASIM | ASIM schemas: Dns |
-| [SentinelOne](sentinelone.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [SlashNext](slashnext.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [Syslog](syslog.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM | ASIM schemas: NetworkSession |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [Windows Security Events](windows-security-events.md) | ASIM | ASIM schemas: NetworkSession |
-| [Windows Server DNS](windows-server-dns.md) | ASIM | ASIM schemas: Dns |
+| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Azure Firewall](azure-firewall.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoASA](ciscoasa.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoUmbrella](ciscoumbrella.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [Corelight](corelight.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [IllumioSaaS](illumiosaas.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [NXLogDNSLogs](nxlogdnslogs.md) | ASIM (optional) | ASIM schemas: Dns |
+| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [SlashNext](slashnext.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [Windows Security Events](windows-security-events.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Windows Server DNS](windows-server-dns.md) | ASIM (optional) | ASIM schemas: Dns |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

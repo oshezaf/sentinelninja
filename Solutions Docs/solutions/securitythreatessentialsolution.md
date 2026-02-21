@@ -40,25 +40,25 @@ This solution leverages the following tables:
 
 ## Dependencies
 
-This solution depends on **15 other solution(s)**:
+This solution has **6 required** and **9 optional** (ASIM-based) dependencies on other solutions:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Azure Activity](azure-activity.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivity |
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM | ASIM schemas: WebSession |
-| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM | ASIM schemas: WebSession |
-| [CiscoASA](ciscoasa.md) | explicit | ID: azuresentinel.azure-sentinel-solution-ciscoasa |
-| [CiscoMeraki](ciscomeraki.md) | ASIM | ASIM schemas: WebSession |
-| [Common Event Format](common-event-format.md) | ASIM | ASIM schemas: WebSession |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: WebSession |
-| [Forescout (Legacy)](forescout-legacy.md) | ASIM | ASIM schemas: WebSession |
-| [Microsoft 365](microsoft-365.md) | explicit | ID: azuresentinel.azure-sentinel-solution-office365 |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: WebSession |
-| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | ID: azuresentinel.azure-sentinel-solution-paloaltopanos |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM | ASIM schemas: WebSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: WebSession |
-| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | ID: zscaler1579058425289.zscaler_internet_access_mss |
+| [Azure Activity](azure-activity.md) | explicit | - |
+| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CiscoASA](ciscoasa.md) | explicit | - |
+| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Forescout (Legacy)](forescout-legacy.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Microsoft 365](microsoft-365.md) | explicit | - |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | - |
+| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | - |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

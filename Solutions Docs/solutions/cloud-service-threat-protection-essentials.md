@@ -42,9 +42,9 @@ This solution depends on **3 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Azure Activity](azure-activity.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivity |
-| [Azure Key Vault](azure-key-vault.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azurekeyvault |
-| [Microsoft 365](microsoft-365.md) | explicit | ID: azuresentinel.azure-sentinel-solution-office365 |
+| [Azure Activity](azure-activity.md) | explicit | - |
+| [Azure Key Vault](azure-key-vault.md) | explicit | - |
+| [Microsoft 365](microsoft-365.md) | explicit | - |
 
 ## Data Connectors
 

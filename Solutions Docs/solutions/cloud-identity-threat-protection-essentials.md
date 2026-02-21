@@ -42,9 +42,9 @@ This solution depends on **3 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Amazon Web Services](amazon-web-services.md) | explicit | ID: azuresentinel.azure-sentinel-solution-amazonwebservices |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
-| [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectoryip |
+| [Amazon Web Services](amazon-web-services.md) | explicit | - |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
+| [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) | explicit | - |
 
 ## Data Connectors
 

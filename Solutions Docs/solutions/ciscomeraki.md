@@ -38,7 +38,7 @@ This solution depends on **1 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [CustomLogsAma](customlogsama.md) | explicit | ID: azuresentinel.azure-sentinel-solution-customlogsviaama |
+| [CustomLogsAma](customlogsama.md) | explicit | - |
 
 ## Data Connectors
 

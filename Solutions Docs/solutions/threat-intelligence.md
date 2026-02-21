@@ -25,35 +25,35 @@ The Threat Intelligence solution contains data connectors for import of supporte
 
 ## Dependencies
 
-This solution depends on **25 other solution(s)**:
+This solution has **25 optional** (ASIM-based) dependencies on other solutions that can provide data through ASIM parsers:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM | ASIM schemas: NetworkSession |
-| [Azure Firewall](azure-firewall.md) | ASIM | ASIM schemas: Dns |
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM | ASIM schemas: NetworkSession, WebSession |
-| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM | ASIM schemas: WebSession |
-| [CiscoASA](ciscoasa.md) | ASIM | ASIM schemas: NetworkSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM | ASIM schemas: NetworkSession, WebSession |
-| [CiscoUmbrella](ciscoumbrella.md) | ASIM | ASIM schemas: Dns |
-| [Common Event Format](common-event-format.md) | ASIM | ASIM schemas: Dns, NetworkSession, WebSession |
-| [Corelight](corelight.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: Dns, NetworkSession, WebSession |
-| [Forescout (Legacy)](forescout-legacy.md) | ASIM | ASIM schemas: WebSession |
-| [IllumioSaaS](illumiosaas.md) | ASIM | ASIM schemas: NetworkSession |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: NetworkSession, WebSession |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [NXLogDNSLogs](nxlogdnslogs.md) | ASIM | ASIM schemas: Dns |
-| [SentinelOne](sentinelone.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [SlashNext](slashnext.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [Syslog](syslog.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM | ASIM schemas: NetworkSession |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM | ASIM schemas: Dns, NetworkSession, WebSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: Dns, NetworkSession, WebSession |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM | ASIM schemas: Dns, NetworkSession |
-| [Windows Security Events](windows-security-events.md) | ASIM | ASIM schemas: NetworkSession |
-| [Windows Server DNS](windows-server-dns.md) | ASIM | ASIM schemas: Dns |
+| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Azure Firewall](azure-firewall.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: NetworkSession, WebSession |
+| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CiscoASA](ciscoasa.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: NetworkSession, WebSession |
+| [CiscoUmbrella](ciscoumbrella.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession, WebSession |
+| [Corelight](corelight.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession, WebSession |
+| [Forescout (Legacy)](forescout-legacy.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [IllumioSaaS](illumiosaas.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: NetworkSession, WebSession |
+| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [NXLogDNSLogs](nxlogdnslogs.md) | ASIM (optional) | ASIM schemas: Dns |
+| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [SlashNext](slashnext.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession, WebSession |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession, WebSession |
+| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
+| [Windows Security Events](windows-security-events.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Windows Server DNS](windows-server-dns.md) | ASIM (optional) | ASIM schemas: Dns |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 
@@ -390,15 +390,15 @@ This solution uses **242 table(s)**:
 | [`PostgreSQL_CL`](../tables/postgresql-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`SecurityEvent`](../tables/securityevent.md) | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) (dependency), [Security Events via Legacy Agent](../connectors/securityevents.md) (dependency), [Windows Security Events via AMA](../connectors/windowssecurityevents.md) (dependency), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) (dependency) | Analytics, Hunting |
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency), [Forescout](../connectors/forescout.md) (dependency), [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | Analytics, Hunting |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency), [Forescout](../connectors/forescout.md) (dependency), [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | Analytics, Hunting |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md), [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) (dependency), [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md), [Threat Intelligence Platforms](../connectors/threatintelligence.md), [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md), [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Analytics, Hunting, Workbooks |
 | [`Tomcat_CL`](../tables/tomcat-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |

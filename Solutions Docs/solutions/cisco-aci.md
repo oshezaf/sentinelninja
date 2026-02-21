@@ -34,7 +34,7 @@ This solution depends on **1 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Syslog](syslog.md) | explicit | ID: azuresentinel.azure-sentinel-solution-syslog |
+| [Syslog](syslog.md) | explicit | - |
 
 ## Data Connectors
 

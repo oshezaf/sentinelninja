@@ -35,19 +35,19 @@ Due to the integration of the Power Platform inventory data, in addition to the 
 
 ## Dependencies
 
-This solution depends on **9 other solution(s)**:
+This solution has **9 optional** (ASIM-based) dependencies on other solutions that can provide data through ASIM parsers:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM | ASIM schemas: WebSession |
-| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM | ASIM schemas: WebSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM | ASIM schemas: WebSession |
-| [Common Event Format](common-event-format.md) | ASIM | ASIM schemas: WebSession |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: WebSession |
-| [Forescout (Legacy)](forescout-legacy.md) | ASIM | ASIM schemas: WebSession |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: WebSession |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM | ASIM schemas: WebSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: WebSession |
+| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Forescout (Legacy)](forescout-legacy.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: WebSession |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 
@@ -146,7 +146,7 @@ This solution uses **59 table(s)**:
 | [`SecurityEvent`](../tables/securityevent.md) | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) (dependency), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) (dependency) | - |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency), [Forescout](../connectors/forescout.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency), [Forescout](../connectors/forescout.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 | [`Tomcat_CL`](../tables/tomcat-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |

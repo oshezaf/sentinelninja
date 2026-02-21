@@ -45,22 +45,22 @@ It is highly recommended to use the **SummarizeWebSessionData** logic app playbo
 
 ## Dependencies
 
-This solution depends on **12 other solution(s)**:
+This solution has **4 required** and **8 optional** (ASIM-based) dependencies on other solutions:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM | ASIM schemas: WebSession |
-| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM | ASIM schemas: WebSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM | ASIM schemas: WebSession |
-| [Common Event Format](common-event-format.md) | ASIM | ASIM schemas: WebSession |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: WebSession |
-| [Forescout (Legacy)](forescout-legacy.md) | ASIM | ASIM schemas: WebSession |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: WebSession |
-| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | ID: azuresentinel.azure-sentinel-solution-paloaltopanos |
-| [SquidProxy](squidproxy.md) | explicit | ID: azuresentinel.azure-sentinel-solution-squidproxy |
-| [Vectra AI Stream](vectra-ai-stream.md) | explicit, ASIM | ASIM schemas: WebSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: WebSession |
-| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | ID: zscaler1579058425289.zscaler_internet_access_mss |
+| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Forescout (Legacy)](forescout-legacy.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | - |
+| [SquidProxy](squidproxy.md) | explicit | - |
+| [Vectra AI Stream](vectra-ai-stream.md) | explicit, ASIM (optional) | ASIM schemas: WebSession |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | - |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

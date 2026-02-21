@@ -48,11 +48,11 @@ This solution depends on **5 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Amazon Web Services](amazon-web-services.md) | explicit | ID: azuresentinel.azure-sentinel-solution-amazonwebservices |
-| [Google Cloud Platform Audit Logs](google-cloud-platform-audit-logs.md) | explicit | ID: azuresentinel.azure-sentinel-solution-gcpauditlogs-api |
-| [GoogleCloudPlatformIAM](googlecloudplatformiam.md) | explicit | ID: azuresentinel.azure-sentinel-solution-gcpiam |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | ID: azuresentinel.azure-sentinel-solution-microsoft365defender |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
+| [Amazon Web Services](amazon-web-services.md) | explicit | - |
+| [Google Cloud Platform Audit Logs](google-cloud-platform-audit-logs.md) | explicit | - |
+| [GoogleCloudPlatformIAM](googlecloudplatformiam.md) | explicit | - |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
 
 ## Data Connectors
 

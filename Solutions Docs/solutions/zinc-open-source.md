@@ -62,19 +62,19 @@ This solution depends on **13 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Azure Firewall](azure-firewall.md) | explicit | ID: sentinel4azurefirewall.sentinel4azurefirewall |
-| [Check Point](check-point.md) | explicit | ID: checkpoint.checkpoint-sentinel-solutions |
-| [CiscoASA](ciscoasa.md) | explicit | ID: azuresentinel.azure-sentinel-solution-ciscoasa |
-| [Common Event Format](common-event-format.md) | explicit | ID: azuresentinel.azure-sentinel-solution-commoneventformat |
-| [F5 Big-IP](f5-big-ip.md) | explicit | ID: f5-networks.f5_bigip_mss |
-| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | ID: azuresentinel.azure-sentinel-solution-fortinetfortigate |
-| [Microsoft 365](microsoft-365.md) | explicit | ID: azuresentinel.azure-sentinel-solution-office365 |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | ID: azuresentinel.azure-sentinel-solution-microsoft365defender |
-| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | ID: azuresentinel.azure-sentinel-solution-paloaltopanos |
-| [Windows Firewall](windows-firewall.md) | explicit | ID: azuresentinel.azure-sentinel-solution-windowsfirewall |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | ID: azuresentinel.azure-sentinel-solution-windowsforwardedevents |
-| [Windows Security Events](windows-security-events.md) | explicit | ID: azuresentinel.azure-sentinel-solution-securityevents |
-| [Windows Server DNS](windows-server-dns.md) | explicit | ID: azuresentinel.azure-sentinel-solution-dns |
+| [Azure Firewall](azure-firewall.md) | explicit | - |
+| [Check Point](check-point.md) | explicit | - |
+| [CiscoASA](ciscoasa.md) | explicit | - |
+| [Common Event Format](common-event-format.md) | explicit | - |
+| [F5 Big-IP](f5-big-ip.md) | explicit | - |
+| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | - |
+| [Microsoft 365](microsoft-365.md) | explicit | - |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
+| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | - |
+| [Windows Firewall](windows-firewall.md) | explicit | - |
+| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | - |
+| [Windows Security Events](windows-security-events.md) | explicit | - |
+| [Windows Server DNS](windows-server-dns.md) | explicit | - |
 
 ## Data Connectors
 

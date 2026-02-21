@@ -26,24 +26,24 @@ This workbook helps you track, visualize and monitor GDPR related requirements a
 
 ## Dependencies
 
-This solution depends on **14 other solution(s)**:
+This solution has **5 required** and **9 optional** (ASIM-based) dependencies on other solutions:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM | ASIM schemas: WebSession |
-| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM | ASIM schemas: WebSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM | ASIM schemas: WebSession |
-| [Common Event Format](common-event-format.md) | ASIM | ASIM schemas: WebSession |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: WebSession |
-| [Forescout (Legacy)](forescout-legacy.md) | ASIM | ASIM schemas: WebSession |
-| [Microsoft 365](microsoft-365.md) | explicit | ID: azuresentinel.azure-sentinel-solution-office365 |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | ID: azuresentinel.azure-sentinel-solution-microsoft365defender |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: WebSession |
-| [Microsoft Purview](microsoft-purview.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azurepurview |
-| [Microsoft Purview Information Protection](microsoft-purview-information-protection.md) | explicit | ID: azuresentinel.azure-sentinel-solution-mip |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM | ASIM schemas: WebSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: WebSession |
+| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Forescout (Legacy)](forescout-legacy.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Microsoft 365](microsoft-365.md) | explicit | - |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [Microsoft Purview](microsoft-purview.md) | explicit | - |
+| [Microsoft Purview Information Protection](microsoft-purview-information-protection.md) | explicit | - |
+| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: WebSession |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: WebSession |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

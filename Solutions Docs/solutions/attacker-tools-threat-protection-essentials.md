@@ -41,10 +41,10 @@ This solution depends on **4 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | ID: azuresentinel.azure-sentinel-solution-windowsforwardedevents |
-| [Windows Security Events](windows-security-events.md) | explicit | ID: azuresentinel.azure-sentinel-solution-securityevents |
-| [Windows Server DNS](windows-server-dns.md) | explicit | ID: azuresentinel.azure-sentinel-solution-dns |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
+| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | - |
+| [Windows Security Events](windows-security-events.md) | explicit | - |
+| [Windows Server DNS](windows-server-dns.md) | explicit | - |
 
 ## Data Connectors
 

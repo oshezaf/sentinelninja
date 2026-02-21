@@ -30,9 +30,9 @@ This solution depends on **3 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Azure Activity](azure-activity.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivity |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | ID: azuresentinel.azure-sentinel-solution-microsoft365defender |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
+| [Azure Activity](azure-activity.md) | explicit | - |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
 
 ## Data Connectors
 

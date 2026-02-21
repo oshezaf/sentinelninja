@@ -26,29 +26,29 @@ The [ThreatConnect Threat Intelligence Platform](https://threatconnect.com/) sol
 
 ## Dependencies
 
-This solution depends on **19 other solution(s)**:
+This solution has **19 optional** (ASIM-based) dependencies on other solutions that can provide data through ASIM parsers:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM | ASIM schemas: NetworkSession |
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM | ASIM schemas: NetworkSession |
-| [CiscoASA](ciscoasa.md) | ASIM | ASIM schemas: NetworkSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM | ASIM schemas: NetworkSession |
-| [Common Event Format](common-event-format.md) | ASIM | ASIM schemas: NetworkSession |
-| [Corelight](corelight.md) | ASIM | ASIM schemas: NetworkSession |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM | ASIM schemas: NetworkSession |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: NetworkSession |
-| [IllumioSaaS](illumiosaas.md) | ASIM | ASIM schemas: NetworkSession |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: NetworkSession |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM | ASIM schemas: NetworkSession |
-| [SentinelOne](sentinelone.md) | ASIM | ASIM schemas: NetworkSession |
-| [SlashNext](slashnext.md) | ASIM | ASIM schemas: NetworkSession |
-| [Syslog](syslog.md) | ASIM | ASIM schemas: NetworkSession |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM | ASIM schemas: NetworkSession |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM | ASIM schemas: NetworkSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: NetworkSession |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM | ASIM schemas: NetworkSession |
-| [Windows Security Events](windows-security-events.md) | ASIM | ASIM schemas: NetworkSession |
+| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoASA](ciscoasa.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Corelight](corelight.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [IllumioSaaS](illumiosaas.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [SlashNext](slashnext.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Windows Security Events](windows-security-events.md) | ASIM (optional) | ASIM schemas: NetworkSession |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

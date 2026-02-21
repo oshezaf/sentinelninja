@@ -38,20 +38,20 @@ The **Endpoint Threat Protection Essentials** solution provides content to monit
 
 ## Dependencies
 
-This solution depends on **10 other solution(s)**:
+This solution has **3 required** and **7 optional** (ASIM-based) dependencies on other solutions:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM | ASIM schemas: ProcessEvent, RegistryEvent |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit, ASIM | ASIM schemas: RegistryEvent |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: RegistryEvent |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM | ASIM schemas: ProcessEvent, RegistryEvent |
-| [SentinelOne](sentinelone.md) | ASIM | ASIM schemas: ProcessEvent, RegistryEvent |
-| [Syslog](syslog.md) | ASIM | ASIM schemas: ProcessEvent |
-| [Trend Micro Vision One](trend-micro-vision-one.md) | ASIM | ASIM schemas: ProcessEvent, RegistryEvent |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM | ASIM schemas: ProcessEvent, RegistryEvent |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit, ASIM | ASIM schemas: ProcessEvent, RegistryEvent |
-| [Windows Security Events](windows-security-events.md) | explicit, ASIM | ASIM schemas: ProcessEvent, RegistryEvent |
+| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit, ASIM (optional) | ASIM schemas: RegistryEvent |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: RegistryEvent |
+| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
+| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
+| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: ProcessEvent |
+| [Trend Micro Vision One](trend-micro-vision-one.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
+| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
+| [Windows Forwarded Events](windows-forwarded-events.md) | explicit, ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
+| [Windows Security Events](windows-security-events.md) | explicit, ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

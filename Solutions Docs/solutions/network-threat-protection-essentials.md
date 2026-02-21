@@ -54,15 +54,15 @@ This solution depends on **9 other solution(s)**:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Amazon Web Services](amazon-web-services.md) | explicit | ID: azuresentinel.azure-sentinel-solution-amazonwebservices |
-| [Azure Firewall](azure-firewall.md) | explicit | ID: sentinel4azurefirewall.sentinel4azurefirewall |
-| [Check Point](check-point.md) | explicit | ID: checkpoint.checkpoint-sentinel-solutions |
-| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | ID: azuresentinel.azure-sentinel-solution-fortinetfortigate |
-| [Microsoft 365](microsoft-365.md) | explicit | ID: azuresentinel.azure-sentinel-solution-office365 |
-| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | ID: azuresentinel.azure-sentinel-solution-paloaltopanos |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | ID: azuresentinel.azure-sentinel-solution-windowsforwardedevents |
-| [Windows Server DNS](windows-server-dns.md) | explicit | ID: azuresentinel.azure-sentinel-solution-dns |
-| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | ID: zscaler1579058425289.zscaler_internet_access_mss |
+| [Amazon Web Services](amazon-web-services.md) | explicit | - |
+| [Azure Firewall](azure-firewall.md) | explicit | - |
+| [Check Point](check-point.md) | explicit | - |
+| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | - |
+| [Microsoft 365](microsoft-365.md) | explicit | - |
+| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | - |
+| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | - |
+| [Windows Server DNS](windows-server-dns.md) | explicit | - |
+| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | - |
 
 ## Data Connectors
 

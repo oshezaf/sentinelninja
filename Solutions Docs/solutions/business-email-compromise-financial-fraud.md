@@ -42,23 +42,23 @@ In order to gain the most comprehensive coverage possible customers should deplo
 
 ## Dependencies
 
-This solution depends on **13 other solution(s)**:
+This solution has **5 required** and **8 optional** (ASIM-based) dependencies on other solutions:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Amazon Web Services](amazon-web-services.md) | explicit | ID: azuresentinel.azure-sentinel-solution-amazonwebservices |
-| [Azure Storage](azure-storage.md) | ASIM | ASIM schemas: FileEvent |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM | ASIM schemas: FileEvent |
-| [Microsoft 365](microsoft-365.md) | explicit | ID: azuresentinel.azure-sentinel-solution-office365 |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | ID: azuresentinel.azure-sentinel-solution-microsoft365defender |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM | ASIM schemas: FileEvent |
-| [Okta Single Sign-On](okta-single-sign-on.md) | explicit | ID: azuresentinel.azure-sentinel-solution-okta |
-| [SentinelOne](sentinelone.md) | ASIM | ASIM schemas: FileEvent |
-| [Syslog](syslog.md) | ASIM | ASIM schemas: FileEvent |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM | ASIM schemas: FileEvent |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM | ASIM schemas: FileEvent |
-| [Windows Security Events](windows-security-events.md) | ASIM | ASIM schemas: FileEvent |
+| [Amazon Web Services](amazon-web-services.md) | explicit | - |
+| [Azure Storage](azure-storage.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Microsoft 365](microsoft-365.md) | explicit | - |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
+| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Okta Single Sign-On](okta-single-sign-on.md) | explicit | - |
+| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Windows Security Events](windows-security-events.md) | ASIM (optional) | ASIM schemas: FileEvent |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

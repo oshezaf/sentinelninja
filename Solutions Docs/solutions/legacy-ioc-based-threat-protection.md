@@ -78,50 +78,50 @@ This is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-
 
 ## Dependencies
 
-This solution depends on **40 other solution(s)**:
+This solution has **24 required** and **16 optional** (ASIM-based) dependencies on other solutions:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM | ASIM schemas: NetworkSession |
-| [Amazon Web Services](amazon-web-services.md) | explicit | ID: azuresentinel.azure-sentinel-solution-amazonwebservices |
-| [Azure Activity](azure-activity.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivity |
-| [Azure Firewall](azure-firewall.md) | explicit | ID: sentinel4azurefirewall.sentinel4azurefirewall |
-| [Azure Storage](azure-storage.md) | ASIM | ASIM schemas: FileEvent |
-| [Check Point](check-point.md) | explicit | ID: checkpoint.checkpoint-sentinel-solutions |
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM | ASIM schemas: NetworkSession |
-| [CiscoASA](ciscoasa.md) | explicit, ASIM | ASIM schemas: NetworkSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM | ASIM schemas: NetworkSession |
-| [CiscoUmbrella](ciscoumbrella.md) | explicit | ID: azuresentinel.azure-sentinel-solution-ciscoumbrella |
-| [Common Event Format](common-event-format.md) | explicit, ASIM | ASIM schemas: NetworkSession |
-| [Corelight](corelight.md) | explicit, ASIM | ASIM schemas: NetworkSession |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: NetworkSession |
-| [F5 Big-IP](f5-big-ip.md) | explicit | ID: f5-networks.f5_bigip_mss |
-| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | ID: azuresentinel.azure-sentinel-solution-fortinetfortigate |
-| [GoogleCloudPlatformDNS](googlecloudplatformdns.md) | explicit | ID: azuresentinel.azure-sentinel-solution-gcpdns |
-| [IllumioSaaS](illumiosaas.md) | ASIM | ASIM schemas: NetworkSession |
-| [Infoblox NIOS](infoblox-nios.md) | explicit | ID: azuresentinel.azure-sentinel-solution-infobloxnios |
-| [Microsoft 365](microsoft-365.md) | explicit | ID: azuresentinel.azure-sentinel-solution-office365 |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit, ASIM | ASIM schemas: RegistryEvent |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM | ASIM schemas: NetworkSession, RegistryEvent |
-| [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md) | explicit | ID: azuresentinel.azure-sentinel-solution-sysmonforlinux |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
-| [NXLogDNSLogs](nxlogdnslogs.md) | explicit | ID: nxlogltd1589381969261.nxlog_dns_logs |
-| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | ID: azuresentinel.azure-sentinel-solution-paloaltopanos |
-| [SentinelOne](sentinelone.md) | ASIM | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
-| [SlashNext](slashnext.md) | ASIM | ASIM schemas: NetworkSession |
-| [SquidProxy](squidproxy.md) | explicit | ID: azuresentinel.azure-sentinel-solution-squidproxy |
-| [Syslog](syslog.md) | ASIM | ASIM schemas: FileEvent, NetworkSession, ProcessEvent |
-| [Trend Micro Vision One](trend-micro-vision-one.md) | ASIM | ASIM schemas: ProcessEvent, RegistryEvent |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM | ASIM schemas: NetworkSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: NetworkSession |
-| [Windows Firewall](windows-firewall.md) | explicit | ID: azuresentinel.azure-sentinel-solution-windowsfirewall |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit, ASIM | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
-| [Windows Security Events](windows-security-events.md) | explicit, ASIM | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
-| [Windows Server DNS](windows-server-dns.md) | explicit | ID: azuresentinel.azure-sentinel-solution-dns |
-| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | ID: zscaler1579058425289.zscaler_internet_access_mss |
+| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Amazon Web Services](amazon-web-services.md) | explicit | - |
+| [Azure Activity](azure-activity.md) | explicit | - |
+| [Azure Firewall](azure-firewall.md) | explicit | - |
+| [Azure Storage](azure-storage.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Check Point](check-point.md) | explicit | - |
+| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoASA](ciscoasa.md) | explicit, ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [CiscoUmbrella](ciscoumbrella.md) | explicit | - |
+| [Common Event Format](common-event-format.md) | explicit, ASIM (optional) | ASIM schemas: NetworkSession |
+| [Corelight](corelight.md) | explicit, ASIM (optional) | ASIM schemas: NetworkSession |
+| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [F5 Big-IP](f5-big-ip.md) | explicit | - |
+| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | - |
+| [GoogleCloudPlatformDNS](googlecloudplatformdns.md) | explicit | - |
+| [IllumioSaaS](illumiosaas.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Infoblox NIOS](infoblox-nios.md) | explicit | - |
+| [Microsoft 365](microsoft-365.md) | explicit | - |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit, ASIM (optional) | ASIM schemas: RegistryEvent |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
+| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: NetworkSession, RegistryEvent |
+| [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md) | explicit | - |
+| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
+| [NXLogDNSLogs](nxlogdnslogs.md) | explicit | - |
+| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | - |
+| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
+| [SlashNext](slashnext.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [SquidProxy](squidproxy.md) | explicit | - |
+| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: FileEvent, NetworkSession, ProcessEvent |
+| [Trend Micro Vision One](trend-micro-vision-one.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
+| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
+| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: NetworkSession |
+| [Windows Firewall](windows-firewall.md) | explicit | - |
+| [Windows Forwarded Events](windows-forwarded-events.md) | explicit, ASIM (optional) | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
+| [Windows Security Events](windows-security-events.md) | explicit, ASIM (optional) | ASIM schemas: FileEvent, NetworkSession, ProcessEvent, RegistryEvent |
+| [Windows Server DNS](windows-server-dns.md) | explicit | - |
+| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | - |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

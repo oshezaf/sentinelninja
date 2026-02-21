@@ -42,20 +42,20 @@ The Web Shells Threat Protection solution contains security content that helps p
 
 ## Dependencies
 
-This solution depends on **10 other solution(s)**:
+This solution has **3 required** and **7 optional** (ASIM-based) dependencies on other solutions:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Azure Storage](azure-storage.md) | ASIM | ASIM schemas: FileEvent |
-| [Azure Web Application Firewall (WAF)](azure-web-application-firewall-waf.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azurewebapplicationfirewal |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM | ASIM schemas: FileEvent |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | ID: azuresentinel.azure-sentinel-solution-microsoft365defender |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM | ASIM schemas: FileEvent |
-| [SentinelOne](sentinelone.md) | ASIM | ASIM schemas: FileEvent |
-| [Syslog](syslog.md) | ASIM | ASIM schemas: FileEvent |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM | ASIM schemas: FileEvent |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM | ASIM schemas: FileEvent |
-| [Windows Security Events](windows-security-events.md) | explicit, ASIM | ASIM schemas: FileEvent |
+| [Azure Storage](azure-storage.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Azure Web Application Firewall (WAF)](azure-web-application-firewall-waf.md) | explicit | - |
+| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
+| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| [Windows Security Events](windows-security-events.md) | explicit, ASIM (optional) | ASIM schemas: FileEvent |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 

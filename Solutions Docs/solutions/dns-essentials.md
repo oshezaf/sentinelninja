@@ -53,25 +53,25 @@ It is highly recommended to use the **Summarize Data for DNS Essentials Solution
 
 ## Dependencies
 
-This solution depends on **15 other solution(s)**:
+This solution has **15 optional** (ASIM-based) dependencies on other solutions that can provide data through ASIM parsers:
 
 | Solution | Dependency Type | Details |
 |:---------|:----------------|:--------|
-| [Azure Firewall](azure-firewall.md) | ASIM | ASIM schemas: Dns |
-| [CiscoUmbrella](ciscoumbrella.md) | ASIM | ASIM schemas: Dns |
-| [Common Event Format](common-event-format.md) | ASIM | ASIM schemas: Dns |
-| [Corelight](corelight.md) | ASIM | ASIM schemas: Dns |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM | ASIM schemas: Dns |
-| [CustomLogsAma](customlogsama.md) | ASIM | ASIM schemas: Dns |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM | ASIM schemas: Dns |
-| [NXLogDNSLogs](nxlogdnslogs.md) | ASIM | ASIM schemas: Dns |
-| [SentinelOne](sentinelone.md) | ASIM | ASIM schemas: Dns |
-| [SlashNext](slashnext.md) | ASIM | ASIM schemas: Dns |
-| [Syslog](syslog.md) | ASIM | ASIM schemas: Dns |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM | ASIM schemas: Dns |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM | ASIM schemas: Dns |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM | ASIM schemas: Dns |
-| [Windows Server DNS](windows-server-dns.md) | ASIM | ASIM schemas: Dns |
+| [Azure Firewall](azure-firewall.md) | ASIM (optional) | ASIM schemas: Dns |
+| [CiscoUmbrella](ciscoumbrella.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Corelight](corelight.md) | ASIM (optional) | ASIM schemas: Dns |
+| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: Dns |
+| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: Dns |
+| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: Dns |
+| [NXLogDNSLogs](nxlogdnslogs.md) | ASIM (optional) | ASIM schemas: Dns |
+| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: Dns |
+| [SlashNext](slashnext.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: Dns |
+| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: Dns |
+| [Windows Server DNS](windows-server-dns.md) | ASIM (optional) | ASIM schemas: Dns |
 
 ## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
 
