@@ -28,11 +28,21 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Solution Folder** | [Ivanti Unified Endpoint Management](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ivanti%20Unified%20Endpoint%20Management) |
 | **Dependencies** | [Syslog](syslog.md) |
 
+## Dependencies
+
+This solution depends on **1 other solution(s)**:
+
+| Solution | Dependency Type | Details |
+|:---------|:----------------|:--------|
+| [Syslog](syslog.md) | explicit | ID: azuresentinel.azure-sentinel-solution-syslog |
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
 - [[Deprecated] Ivanti Unified Endpoint Management](../connectors/ivantiuem.md) ⚠️
+- [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
+- [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
@@ -42,7 +52,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Ivanti Unified Endpoint Management](../connectors/ivantiuem.md) | - |
+| [`Syslog`](../tables/syslog.md) | [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Ivanti Unified Endpoint Management](../connectors/ivantiuem.md) | - |
 
 ## Content Items
 

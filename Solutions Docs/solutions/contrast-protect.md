@@ -28,12 +28,22 @@ The [Contrast Protect](https://www.contrastsecurity.com/contrast-protect) soluti
 | **Solution Folder** | [Contrast Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Contrast%20Protect) |
 | **Dependencies** | [Common Event Format](common-event-format.md) |
 
+## Dependencies
+
+This solution depends on **1 other solution(s)**:
+
+| Solution | Dependency Type | Details |
+|:---------|:----------------|:--------|
+| [Common Event Format](common-event-format.md) | explicit | ID: azuresentinel.azure-sentinel-solution-commoneventformat |
+
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
 - [[Deprecated] Contrast Protect via Legacy Agent](../connectors/contrastprotect.md)
 - [[Deprecated] Contrast Protect via AMA](../connectors/contrastprotectama.md)
+- [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
+- [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 
 ## Tables Used
 
@@ -41,7 +51,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Contrast Protect via AMA](../connectors/contrastprotectama.md), [[Deprecated] Contrast Protect via Legacy Agent](../connectors/contrastprotect.md) | Analytics, Workbooks |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Common Event Format (CEF)](../connectors/cef.md) (dependency), [Common Event Format (CEF) via AMA](../connectors/cefama.md) (dependency), [[Deprecated] Contrast Protect via AMA](../connectors/contrastprotectama.md), [[Deprecated] Contrast Protect via Legacy Agent](../connectors/contrastprotect.md) | Analytics, Workbooks |
 
 ## Content Items
 

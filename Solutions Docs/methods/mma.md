@@ -30,7 +30,7 @@ The Microsoft Monitoring Agent (MMA), also known as the Log Analytics agent, is 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
 | [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) | Vectra AI | 1 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
-| [Alsid for Active Directory](../connectors/alsidforad.md) ⚠️ | Alsid | 1 | [Alsid For AD](../solutions/alsid-for-ad.md) |
+| [Alsid for Active Directory](../connectors/alsidforad.md) ⚠️ | Alsid | 3 | [Alsid For AD](../solutions/alsid-for-ad.md) |
 | [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) ➕ | Cisco | 1 | [CiscoASA](../solutions/ciscoasa.md) |
 | [Claroty xDome](../connectors/clarotyxdome.md) | Claroty | 1 | [Claroty xDome](../solutions/claroty-xdome.md) |
 | [Common Event Format (CEF)](../connectors/cef.md) ➕ | Any | 1 | [Common Event Format](../solutions/common-event-format.md) |

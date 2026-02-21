@@ -36,11 +36,25 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Solution Folder** | [Cloud Identity Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Identity%20Threat%20Protection%20Essentials) |
 | **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) |
 
+## Dependencies
+
+This solution depends on **3 other solution(s)**:
+
+| Solution | Dependency Type | Details |
+|:---------|:----------------|:--------|
+| [Amazon Web Services](amazon-web-services.md) | explicit | ID: azuresentinel.azure-sentinel-solution-amazonwebservices |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
+| [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectoryip |
+
 ## Data Connectors
 
-**This solution does not include data connectors.**
+**This solution does not include its own data connectors** but uses connectors from dependency solutions:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Amazon Web Services](../connectors/aws.md) *(dependency on [Amazon Web Services](amazon-web-services.md))*
+- [Amazon Web Services S3](../connectors/awss3.md) *(dependency on [Amazon Web Services](amazon-web-services.md))*
+- [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) *(dependency on [Amazon Web Services](amazon-web-services.md))*
+- [Microsoft Entra ID](../connectors/azureactivedirectory.md) *(dependency on [Microsoft Entra ID](microsoft-entra-id.md))*
+- [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) *(dependency on [Microsoft Entra ID Protection](microsoft-entra-id-protection.md))*
 
 ## Tables Used
 

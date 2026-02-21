@@ -29,11 +29,21 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Solution Folder** | [GitLab](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitLab) |
 | **Dependencies** | [Syslog](syslog.md) |
 
+## Dependencies
+
+This solution depends on **1 other solution(s)**:
+
+| Solution | Dependency Type | Details |
+|:---------|:----------------|:--------|
+| [Syslog](syslog.md) | explicit | ID: azuresentinel.azure-sentinel-solution-syslog |
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
 - [[Deprecated] GitLab](../connectors/gitlab.md) ⚠️
+- [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
+- [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
@@ -44,7 +54,7 @@ This solution uses **4 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] GitLab](../connectors/gitlab.md) | Analytics |
+| [`Syslog`](../tables/syslog.md) | [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] GitLab](../connectors/gitlab.md) | Analytics |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 | [`impersonationStart`](../tables/impersonationstart.md) | - | Analytics |
 

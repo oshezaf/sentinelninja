@@ -42,11 +42,31 @@ This content covers all stages of the attack chain from an initial resource acce
 | **Solution Folder** | [Multi Cloud Attack Coverage Essentials - Resource Abuse](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Multi%20Cloud%20Attack%20Coverage%20Essentials%20-%20Resource%20Abuse) |
 | **Dependencies** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [GoogleCloudPlatformIAM](googlecloudplatformiam.md), [Google Cloud Platform Audit Logs](google-cloud-platform-audit-logs.md) |
 
+## Dependencies
+
+This solution depends on **5 other solution(s)**:
+
+| Solution | Dependency Type | Details |
+|:---------|:----------------|:--------|
+| [Amazon Web Services](amazon-web-services.md) | explicit | ID: azuresentinel.azure-sentinel-solution-amazonwebservices |
+| [Google Cloud Platform Audit Logs](google-cloud-platform-audit-logs.md) | explicit | ID: azuresentinel.azure-sentinel-solution-gcpauditlogs-api |
+| [GoogleCloudPlatformIAM](googlecloudplatformiam.md) | explicit | ID: azuresentinel.azure-sentinel-solution-gcpiam |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | ID: azuresentinel.azure-sentinel-solution-microsoft365defender |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
+
 ## Data Connectors
 
-**This solution does not include data connectors.**
+**This solution does not include its own data connectors** but uses connectors from dependency solutions:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Amazon Web Services](../connectors/aws.md) *(dependency on [Amazon Web Services](amazon-web-services.md))*
+- [Amazon Web Services S3](../connectors/awss3.md) *(dependency on [Amazon Web Services](amazon-web-services.md))*
+- [Amazon Web Services S3 WAF](../connectors/awss3wafccpdefinition.md) *(dependency on [Amazon Web Services](amazon-web-services.md))*
+- [Microsoft Entra ID](../connectors/azureactivedirectory.md) *(dependency on [Microsoft Entra ID](microsoft-entra-id.md))*
+- [GCP Pub/Sub Audit Logs](../connectors/gcpauditlogsdefinition.md) *(dependency on [Google Cloud Platform Audit Logs](google-cloud-platform-audit-logs.md))*
+- [Google Cloud Platform IAM (via Codeless Connector Framework)](../connectors/gcpiamccpdefinition.md) *(dependency on [GoogleCloudPlatformIAM](googlecloudplatformiam.md))*
+- [[DEPRECATED] Google Cloud Platform IAM](../connectors/gcpiamdataconnector.md) *(dependency on [GoogleCloudPlatformIAM](googlecloudplatformiam.md))*
+- [GCP Pub/Sub Audit Logs](../connectors/gcppub-subauditlogs.md) *(dependency on [Google Cloud Platform Audit Logs](google-cloud-platform-audit-logs.md))*
+- [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) *(dependency on [Microsoft Defender XDR](microsoft-defender-xdr.md))*
 
 ## Tables Used
 

@@ -24,11 +24,23 @@ This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Cont
 | **Solution Folder** | [SOX IT Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance) |
 | **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Windows Security Events](windows-security-events.md), [UEBA Essentials](ueba-essentials.md) |
 
+## Dependencies
+
+This solution depends on **3 other solution(s)**:
+
+| Solution | Dependency Type | Details |
+|:---------|:----------------|:--------|
+| [Azure Activity](azure-activity.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivity |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | ID: azuresentinel.azure-sentinel-solution-microsoft365defender |
+| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivedirectory |
+
 ## Data Connectors
 
-**This solution does not include data connectors.**
+**This solution does not include its own data connectors** but uses connectors from dependency solutions:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Microsoft Entra ID](../connectors/azureactivedirectory.md) *(dependency on [Microsoft Entra ID](microsoft-entra-id.md))*
+- [Azure Activity](../connectors/azureactivity.md) *(dependency on [Azure Activity](azure-activity.md))*
+- [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) *(dependency on [Microsoft Defender XDR](microsoft-defender-xdr.md))*
 
 ## Tables Used
 

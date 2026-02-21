@@ -28,11 +28,21 @@ The [Exabeam](https://www.exabeam.com/) Advanced Analytics data connector provid
 | **Solution Folder** | [Exabeam Advanced Analytics](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Exabeam%20Advanced%20Analytics) |
 | **Dependencies** | [Syslog](syslog.md) |
 
+## Dependencies
+
+This solution depends on **1 other solution(s)**:
+
+| Solution | Dependency Type | Details |
+|:---------|:----------------|:--------|
+| [Syslog](syslog.md) | explicit | ID: azuresentinel.azure-sentinel-solution-syslog |
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
 - [[Deprecated] Exabeam Advanced Analytics](../connectors/exabeam.md) ⚠️
+- [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
+- [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
@@ -42,7 +52,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Syslog`](../tables/syslog.md) | [[Deprecated] Exabeam Advanced Analytics](../connectors/exabeam.md) | - |
+| [`Syslog`](../tables/syslog.md) | [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Exabeam Advanced Analytics](../connectors/exabeam.md) | - |
 
 ## Content Items
 

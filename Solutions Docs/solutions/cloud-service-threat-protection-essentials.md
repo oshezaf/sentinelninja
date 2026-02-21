@@ -36,11 +36,23 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Solution Folder** | [Cloud Service Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials) |
 | **Dependencies** | [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure Key Vault](azure-key-vault.md) |
 
+## Dependencies
+
+This solution depends on **3 other solution(s)**:
+
+| Solution | Dependency Type | Details |
+|:---------|:----------------|:--------|
+| [Azure Activity](azure-activity.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azureactivity |
+| [Azure Key Vault](azure-key-vault.md) | explicit | ID: azuresentinel.azure-sentinel-solution-azurekeyvault |
+| [Microsoft 365](microsoft-365.md) | explicit | ID: azuresentinel.azure-sentinel-solution-office365 |
+
 ## Data Connectors
 
-**This solution does not include data connectors.**
+**This solution does not include its own data connectors** but uses connectors from dependency solutions:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Azure Activity](../connectors/azureactivity.md) *(dependency on [Azure Activity](azure-activity.md))*
+- [Azure Key Vault](../connectors/azurekeyvault.md) *(dependency on [Azure Key Vault](azure-key-vault.md))*
+- [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) *(dependency on [Microsoft 365](microsoft-365.md))*
 
 ## Tables Used
 
