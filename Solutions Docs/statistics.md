@@ -6,6 +6,18 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 ---
 
+## Table of Contents
+
+- [Terminology](#terminology)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Tables](#tables)
+- [Content](#content)
+- [Parsers](#parsers)
+- [ASIM Parsers](#asim-parsers)
+- [ASIM Products](#asim-products)
+- [Dependencies](#dependencies)
+
 ## Terminology
 
 | Term | Description |
@@ -231,6 +243,49 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | AlertEvent | 2 |
 | DhcpEvent | 2 |
 | **Total** | **80** |
+
+## Dependencies
+
+### Overview
+
+| Metric | Total | Explicit (required) | ASIM (optional) |
+|:-------|------:|--------------------:|----------------:|
+| Dependency records | **876** | 239 | 637 |
+| Solutions with dependencies | **122** | 109 | 25 |
+| Unique dependency targets | **57** | 42 | 31 |
+
+### ASIM Dependencies by Schema
+
+| ASIM Schema | Solutions Using | Solutions Providing Data |
+|:------------|----------------:|------------------------:|
+| AuditEvent | 1 | 16 |
+| Dns | 7 | 15 |
+| FileEvent | 7 | 8 |
+| NetworkSession | 15 | 19 |
+| ProcessEvent | 5 | 8 |
+| RegistryEvent | 3 | 9 |
+| WebSession | 12 | 9 |
+| **Total unique** | **25** | **31** |
+
+### Most Depended-Upon Solutions
+
+| Solution | Depended On By |
+|:---------|---------------:|
+| [Common Event Format](solutions/common-event-format.md) | 83 |
+| [Syslog](solutions/syslog.md) | 66 |
+| [CustomLogsAma](solutions/customlogsama.md) | 49 |
+| [Windows Forwarded Events](solutions/windows-forwarded-events.md) | 43 |
+| [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) | 38 |
+| [MimecastTIRegional](solutions/mimecasttiregional.md) | 38 |
+| [SentinelOne](solutions/sentinelone.md) | 38 |
+| [Vectra AI Stream](solutions/vectra-ai-stream.md) | 37 |
+| [Windows Security Events](solutions/windows-security-events.md) | 36 |
+| [VirtualMetric DataStream](solutions/virtualmetric-datastream.md) | 35 |
+| [VMware Carbon Black Cloud](solutions/vmware-carbon-black-cloud.md) | 31 |
+| [CiscoMeraki](solutions/ciscomeraki.md) | 30 |
+| [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) | 30 |
+| [Cisco Meraki Events via REST API](solutions/cisco-meraki-events-via-rest-api.md) | 28 |
+| [Corelight](solutions/corelight.md) | 25 |
 
 ---
 
