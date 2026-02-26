@@ -10,6 +10,24 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BitwardenEventLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actingUserId | string |
+| collectionId | string |
+| device | int |
+| eventType | int |
+| groupId | string |
+| installationId | string |
+| ipAddress | string |
+| itemId | string |
+| memberId | string |
+| policyId | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

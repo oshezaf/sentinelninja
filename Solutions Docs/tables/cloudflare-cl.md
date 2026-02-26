@@ -11,6 +11,118 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (104 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cloudflare_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Action_s | string |
+| Application_s | string |
+| BotScore_d | real |
+| BotScoreSrc_s | string |
+| CacheCacheStatus_s | string |
+| CacheResponseBytes_d | real |
+| CacheResponseStatus_d | real |
+| CacheTieredFill_b | bool |
+| ClientASN_d | real |
+| ClientASNDescription_s | string |
+| ClientBytes_d | real |
+| ClientCountry_s | string |
+| ClientDeviceType_s | string |
+| ClientIP_s | string |
+| ClientIPClass_s | string |
+| ClientMatchedIpFirewall_s | string |
+| ClientPort_d | real |
+| ClientProto_s | string |
+| ClientRefererHost_s | string |
+| ClientRefererPath_s | string |
+| ClientRefererQuery_s | string |
+| ClientRefererScheme_s | string |
+| ClientRequestBytes_d | real |
+| ClientRequestHost_s | string |
+| ClientRequestMethod_s | string |
+| ClientRequestPath_s | string |
+| ClientRequestProtocol_s | string |
+| ClientRequestQuery_s | string |
+| ClientRequestReferer_s | string |
+| ClientRequestScheme_s | string |
+| ClientRequestURI_s | string |
+| ClientRequestUserAgent_s | string |
+| ClientSrcPort_d | real |
+| ClientSSLCipher_s | string |
+| ClientSSLProtocol_s | string |
+| ClientTcpRtt_d | real |
+| ClientTlsCipher_s | string |
+| ClientTlsClientHelloServerName_s | string |
+| ClientTlsProtocol_s | string |
+| ClientTlsStatus_s | string |
+| ClientXRequestedWith_s | string |
+| ColoCode_s | string |
+| ConnectTimestamp_t | datetime |
+| Datetime_t | datetime |
+| DisconnectTimestamp_t | datetime |
+| EdgeColoCode_s | string |
+| EdgeColoID_d | real |
+| EdgeEndTimestamp_t | datetime |
+| EdgePathingOp_s | string |
+| EdgePathingSrc_s | string |
+| EdgePathingStatus_s | string |
+| EdgeRateLimitAction_s | string |
+| EdgeRateLimitID_d | real |
+| EdgeRequestHost_s | string |
+| EdgeResponseBytes_d | real |
+| EdgeResponseCompressionRatio_d | real |
+| EdgeResponseContentType_s | string |
+| EdgeResponseStatus_d | real |
+| EdgeServerIP_s | string |
+| EdgeStartTimestamp_t | datetime |
+| Event_s | string |
+| FirewallMatchesActions_s | string |
+| FirewallMatchesRuleIDs_s | string |
+| FirewallMatchesSources_s | string |
+| IpFirewall_b | bool |
+| Kind_s | string |
+| MatchIndex_d | real |
+| OriginatorRayID_s | string |
+| OriginBytes_d | real |
+| OriginIP_s | string |
+| OriginPort_d | real |
+| OriginProto_s | string |
+| OriginResponseBytes_d | real |
+| OriginResponseHTTPExpires_s | string |
+| OriginResponseHTTPLastModified_s | string |
+| OriginResponseStatus_d | real |
+| OriginResponseTime_d | real |
+| OriginSSLProtocol_s | string |
+| OriginTcpRtt_d | real |
+| OriginTlsCipher_s | string |
+| OriginTlsFingerprint_s | string |
+| OriginTlsMode_s | string |
+| OriginTlsProtocol_s | string |
+| OriginTlsStatus_s | string |
+| ParentRayID_s | string |
+| ProxyProtocol_s | string |
+| RayID_s | string |
+| RuleID_s | string |
+| SecurityLevel_s | string |
+| Source_s | string |
+| Status_d | real |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| WAFAction_s | string |
+| WAFFlags_s | string |
+| WAFMatchedVar_s | string |
+| WAFProfile_s | string |
+| WAFRuleID_s | string |
+| WAFRuleMessage_s | string |
+| WorkerCPUTime_d | real |
+| WorkerStatus_s | string |
+| WorkerSubrequest_b | bool |
+| WorkerSubrequestCount_d | real |
+| ZoneID_d | real |
 
 ## Solutions (2)
 

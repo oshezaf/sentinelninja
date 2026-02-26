@@ -10,6 +10,32 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (19 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Service_Name_Info_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| configs_s | string |
+| created_at_t | datetime |
+| desired_state_s | string |
+| destinations_s | string |
+| id_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| name_s | string |
+| pool_id_s | string |
+| RawData | string |
+| service_type_s | string |
+| source_interfaces_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| updated_at_t | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

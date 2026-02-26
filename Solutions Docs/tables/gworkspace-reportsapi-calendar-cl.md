@@ -10,6 +10,46 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (33 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GWorkspace_ReportsAPI_calendar_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actor_callerType_s | string |
+| actor_email_s | string |
+| actor_profileId_s | string |
+| api_kind_s | string |
+| calendar_id_s | string |
+| end_time_s | string |
+| etag_s | string |
+| event_guest_s | string |
+| event_id_s | string |
+| event_name_s | string |
+| event_response_status_s | string |
+| event_title_s | string |
+| event_type_s | string |
+| EventProduct | string |
+| events_s | string |
+| EventVendor | string |
+| id_applicationName_s | string |
+| id_customerId_s | string |
+| id_time_t | datetime |
+| id_uniqueQualifier_s | string |
+| IPAddress | string |
+| kind_s | string |
+| notification_message_id_s | string |
+| notification_method_s | string |
+| notification_type_s | string |
+| old_event_title_s | string |
+| organizer_calendar_id_s | string |
+| ownerDomain_s | string |
+| recipient_email_s | string |
+| start_time_s | string |
+| target_calendar_id_s | string |
+| TimeGenerated | datetime |
+| user_agent_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

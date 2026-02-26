@@ -11,6 +11,52 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (38 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Data%20Connectors/CyberintArgosAlertsLogs_ccp/CyberintArgosAlertsLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| acknowledged_by | dynamic |
+| acknowledged_date | dynamic |
+| alert_data | dynamic |
+| analysis_report | dynamic |
+| attachments | dynamic |
+| category | string |
+| closed_by | dynamic |
+| closure_date | dynamic |
+| closure_reason | dynamic |
+| closure_reason_description | dynamic |
+| confidence | int |
+| created_by | dynamic |
+| created_date | datetime |
+| description | string |
+| environment | string |
+| id | int |
+| impacts | dynamic |
+| indicators | dynamic |
+| iocs | dynamic |
+| mitre | dynamic |
+| modification_date | datetime |
+| publish_date | string |
+| recommendation | string |
+| ref_id | datetime |
+| related_assets | dynamic |
+| related_entities | dynamic |
+| severity | string |
+| source | string |
+| source_category | string |
+| status | string |
+| tags | dynamic |
+| targeted_brands | dynamic |
+| targeted_vectors | dynamic |
+| threat_actor | string |
+| ticket_id | dynamic |
+| title | string |
+| type | string |
+| update_date | datetime |
 
 ## Solutions (1)
 

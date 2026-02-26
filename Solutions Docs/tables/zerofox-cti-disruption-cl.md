@@ -11,6 +11,28 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFox_CTI_disruption_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| asn_d | real |
+| category_s | string |
+| created_at_t | datetime |
+| fqdn_s | string |
+| host_s | string |
+| http_status_d | real |
+| iana_d | real |
+| ip_s | string |
+| network_s | string |
+| registrar_s | string |
+| threat_type_s | string |
+| TimeGenerated | datetime |
+| updated_at_t | datetime |
+| url_s | string |
 
 ## Solutions (1)
 

@@ -10,6 +10,39 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/42CrunchAPIProtection.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| API_ID_g | string |
+| API_Name_s | string |
+| Computer | string |
+| Destination_IP_s | string |
+| Destination_Port_d | real |
+| Error_Message_s | string |
+| Error_Step_s | string |
+| Errors_s | string |
+| Hostname_s | string |
+| Instance_Name_s | string |
+| LogType_d | real |
+| Method_s | string |
+| Non_blocking_mode_b | bool |
+| Protocol_s | string |
+| Query_s | string |
+| RawData | string |
+| Request_Header_s | string |
+| Response_Header_s | string |
+| Source_IP_s | string |
+| Source_Port_d | real |
+| Status_d | real |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| Type | string |
+| URI_Path_s | string |
+| UUID_g | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -14,7 +14,28 @@ Reference for HDInsightGatewayAuditLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightgatewayauditlogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightgatewayauditlogs) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (13 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/hdinsightgatewayauditlogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AccessRequestCount | real | Number of login requests associated with the user. |
+| ClusterDnsName | string | The DNS name of the cluster. |
+| ErrorMessage | string | Any error message associated with the login attempt. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| Status | string | The outcome of the login attempt. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
+| Type | string | The name of the table |
+| UserName | string | The username used for the login attempt. |
 
 ---
 

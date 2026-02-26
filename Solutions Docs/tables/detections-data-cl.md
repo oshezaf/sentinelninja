@@ -11,6 +11,49 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (35 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Detections_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| category | string |
+| certainty | real |
+| Computer | string |
+| d_detection_details | dynamic |
+| d_type_vname | string |
+| detail | dynamic |
+| detection_href | string |
+| detection_id | real |
+| detection_type | string |
+| entity_id | real |
+| entity_name | string |
+| entity_type | string |
+| entity_uid | string |
+| event_timestamp | datetime |
+| grouped_details | dynamic |
+| id | real |
+| is_targeting_key_asset | string |
+| ManagementGroupName | string |
+| MG | string |
+| mitre | dynamic |
+| normal_domains | dynamic |
+| RawData | string |
+| severity | real |
+| SourceSystem | string |
+| src_host | dynamic |
+| src_ip | string |
+| summary | dynamic |
+| tags | dynamic |
+| TenantId | string |
+| threat | real |
+| TimeGenerated | datetime |
+| triaged | bool |
+| Type | string |
+| url | string |
 
 ## Solutions (1)
 

@@ -10,6 +10,28 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Open_Ports_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| as_info_s | string |
+| banner_s | string |
+| banner_sha1_s | string |
+| country_codes_s | string |
+| event_count_d | real |
+| first_seen_s | string |
+| ip_s | string |
+| last_seen_s | string |
+| port_d | real |
+| protocol_d | real |
+| protocol_text_s | string |
+| service_s | string |
+| tags_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -10,6 +10,32 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (19 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_dhcp_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| assigned_addr_s | string |
+| client_addr_s | string |
+| client_fqdn_s | string |
+| client_message_s | string |
+| domain_s | string |
+| duration_d | real |
+| host_name_s | string |
+| lease_time_d | real |
+| mac_s | string |
+| msg_types_s | string |
+| requested_addr_s | string |
+| server_addr_s | string |
+| server_message_s | string |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+| uids_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

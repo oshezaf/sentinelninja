@@ -11,6 +11,45 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (31 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_threat_actor_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| data_actor_description_s | string |
+| data_actor_id_s | string |
+| data_actor_name_s | string |
+| data_customer_first_dns_query_s | string |
+| data_customer_last_dns_query_s | string |
+| data_display_name_s | string |
+| data_external_references_s | string |
+| data_ikb_first_classified_malicious_s | string |
+| data_ikb_submitted_s | string |
+| data_infoblox_references_s | string |
+| data_page_s | string |
+| data_purpose_s | string |
+| data_related_count_s | string |
+| data_ttp_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| params_source_s | string |
+| params_target_s | string |
+| params_type_s | string |
+| RawData | string |
+| SourceSystem | string |
+| status_message_for_dossier_s | string |
+| status_s | string |
+| task_id_g | string |
+| TenantId | string |
+| time_d | real |
+| TimeGenerated | datetime |
+| Type | string |
+| v_s | string |
 
 ## Solutions (1)
 

@@ -10,6 +10,33 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (20 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VMware_CWS_DLPLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| alerted | string |
+| ccl | dynamic |
+| domain | string |
+| dstUrl | string |
+| eventId | string |
+| eventTime | datetime |
+| filename | string |
+| fileType | string |
+| protocol | string |
+| requestType | string |
+| ruleId | string |
+| ruleName | string |
+| sha256 | string |
+| srcUrl | string |
+| status | string |
+| streamName | string |
+| TimeGenerated | datetime |
+| userId | string |
+| userInput | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

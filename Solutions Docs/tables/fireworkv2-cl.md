@@ -10,6 +10,46 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (33 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare/Data%20Connectors/FlareFireworkEventLogs_ccp/FlareFireworkEventLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actor | string |
+| alert_content | string |
+| asset_uuids | dynamic |
+| author_id | string |
+| category_name | string |
+| code | dynamic |
+| content | string |
+| content_preview | dynamic |
+| data | dynamic |
+| event_title | string |
+| event_type | string |
+| external_url | string |
+| first_crawled_at | string |
+| highlights | dynamic |
+| id | string |
+| identifiers | dynamic |
+| keyword | string |
+| materialized_at | string |
+| project_name | string |
+| related | dynamic |
+| risk | dynamic |
+| sha | string |
+| sort | string |
+| source | string |
+| source_name | string |
+| tags | dynamic |
+| timestamp | string |
+| timestamp_formatted | string |
+| uid | string |
+| url | string |
+| user_notes | string |
+| user_risk_score | int |
+| victim_name | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

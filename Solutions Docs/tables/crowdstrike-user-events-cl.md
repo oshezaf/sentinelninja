@@ -11,6 +11,44 @@
 | **Category** | Crowdstrike |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (31 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CrowdStrike_User_Events_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AdditionalFields | dynamic |
+| aid | string |
+| aip | string |
+| BoundingLimitCount | long |
+| BoundingLimitDuration | string |
+| cid | string |
+| ConfigBuild | string |
+| ConfigStateHash | string |
+| ContextProcessId | string |
+| ContextThreadId | string |
+| ContextTimeStamp | real |
+| CrowdStrikeId | string |
+| DomainSid | string |
+| EffectiveTransmissionClass | string |
+| Entitlements | string |
+| event_platform | string |
+| event_simpleName | string |
+| GroupRid | string |
+| InterfaceGuid | string |
+| InterfaceVersion | string |
+| name | string |
+| OciContainerId | string |
+| RpcClientProcessId | string |
+| RpcClientThreadId | string |
+| RpcNestingLevel | string |
+| RpcOpNum | string |
+| TimeGenerated | datetime |
+| timestamp | long |
+| TreeId | string |
+| UserName | string |
+| UserRid | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

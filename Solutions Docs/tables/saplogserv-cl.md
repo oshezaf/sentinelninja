@@ -11,6 +11,28 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (14 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ/Data%20Connectors/SAPLogServ_PUSH_CCP/SAPLogServ_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _raw | string |
+| _time | real |
+| clz_dir | string |
+| clz_subdir | string |
+| cribl_breaker | string |
+| cribl_pipe | string |
+| host | string |
+| index | string |
+| region | string |
+| source | string |
+| sourcetype | string |
+| test | dynamic |
+| test1 | dynamic |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

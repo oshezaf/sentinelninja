@@ -14,7 +14,37 @@ Reference for UADriver table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uadriver) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uadriver) |
+
+## Schema (23 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/uadriver)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| Computer | string |  |
+| ComputerID | string |  |
+| DriverAvailability | string |  |
+| DriverDate | string |  |
+| DriverName | string |  |
+| DriverVendor | string |  |
+| DriverVersion | string |  |
+| Guidance | string |  |
+| HardwareID | string |  |
+| HardwareName | string |  |
+| HardwareType | string |  |
+| Importance | string |  |
+| IsRollup | bool |  |
+| Issue | string |  |
+| RollupLevel | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TimeGenerated | datetime |  |
+| TotalComputers | int |  |
+| Type | string | The name of the table |
+| UpgradeAssessment | string |  |
+| UpgradeDecision | string |  |
 
 ---
 

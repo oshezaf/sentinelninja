@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP/Data%20Connectors/SAPBTPPollerConnector/SAPBTP_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| als_service_id | string |
+| app_or_service_id | string |
+| category | string |
+| format_version | string |
+| message | string |
+| message_uuid | string |
+| org_id | string |
+| space_id | string |
+| SubaccountName | string |
+| tenant | string |
+| time | datetime |
+| user | string |
 
 ## Solutions (1)
 

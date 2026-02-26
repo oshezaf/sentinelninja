@@ -10,6 +10,22 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_local_subnets_dj_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| component_id_d | real |
+| ip_version_d | real |
+| round_d | real |
+| side_s | string |
+| TimeGenerated | datetime |
+| v_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

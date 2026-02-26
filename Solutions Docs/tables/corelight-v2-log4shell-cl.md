@@ -10,6 +10,30 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_log4shell_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| http_uri_s | string |
+| is_orig_b | bool |
+| matched_name_b | bool |
+| matched_value_b | bool |
+| method_s | string |
+| name_s | string |
+| stem_s | string |
+| target_host_s | string |
+| target_port_s | string |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+| uid_s | string |
+| uri_s | string |
+| value_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

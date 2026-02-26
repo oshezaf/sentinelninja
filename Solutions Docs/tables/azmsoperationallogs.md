@@ -14,7 +14,29 @@ Reference for AZMSOperationalLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsoperationallogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsoperationallogs) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (14 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsoperationallogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ActivityId | string | Internal ID, used to identify the specified activity. |
+| Caller | string | The caller of operation (the Azure portal or management client). |
+| EventName | string | The name of management operation which is executed within Service Bus. |
+| EventProperties | dynamic | The operation properties. |
+| Provider | string | Event provider name. Possible values: eventhub, relay, and servicebus. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| Status | string | The operation status. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The log generation time (UTC). |
+| Type | string | The name of the table |
 
 ---
 

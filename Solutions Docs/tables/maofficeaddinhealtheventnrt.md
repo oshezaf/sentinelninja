@@ -14,7 +14,31 @@ Reference for MAOfficeAddinHealthEventNRT table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficeaddinhealtheventnrt) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficeaddinhealtheventnrt) |
+
+## Schema (17 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficeaddinhealtheventnrt)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AddinInstanceId | string |  |
+| DeviceId | string |  |
+| DurationInMicroseconds | int |  |
+| EventType | int |  |
+| EventTypeName | string |  |
+| IsVSTO | bool |  |
+| LoadAttempts | int |  |
+| OfficeApplication | string |  |
+| OfficeAppRelease | string |  |
+| OfficeInterface | string |  |
+| OfficeMethod | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TimeGenerated | datetime |  |
+| Timestamp | datetime |  |
+| Type | string | The name of the table |
 
 ---
 

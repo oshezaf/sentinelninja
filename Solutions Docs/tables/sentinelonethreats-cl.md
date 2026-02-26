@@ -11,6 +11,60 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (46 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneThreats_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AccountId | string |
+| AccountName | string |
+| AgentComputerName | string |
+| AgentDetectionInfo | dynamic |
+| AgentDomain | string |
+| AgentId | string |
+| AgentInfected | bool |
+| AgentIp | string |
+| AgentIsActive | bool |
+| AgentIsDecommissioned | bool |
+| AgentMachineType | string |
+| AgentNetworkStatus | string |
+| AgentOsType | string |
+| AgentRealtimeInfo | dynamic |
+| AgentVersion | string |
+| AutomaticallyResolved | bool |
+| CertId | string |
+| Classification | string |
+| ClassificationSource | string |
+| CloudVerdict | string |
+| CollectionId | string |
+| CreatedAt | datetime |
+| Engines | string |
+| FileContentHash | string |
+| FileDisplayName | string |
+| FileExtensionType | string |
+| FilePath | string |
+| FileSha256 | string |
+| FileVerificationType | string |
+| Id | string |
+| Indicators | string |
+| InitiatedBy | string |
+| InitiatedByDescription | string |
+| InitiatingUserId | string |
+| IsCertValid | bool |
+| MitigationMode | string |
+| MitigationReport | string |
+| MitigationStatus | string |
+| ProcessArguments | string |
+| SiteId | string |
+| SiteName | string |
+| ThreatInfo | dynamic |
+| ThreatName | string |
+| UpdatedAt | datetime |
+| Username | string |
+| WhiteningOptions | string |
 
 ## Solutions (1)
 

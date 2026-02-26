@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Summary_Details_Top_Pdns_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| css_color_s | string |
+| domain_s | string |
+| event_count_d | real |
+| first_seen_s | string |
+| ip_s | string |
+| last_seen_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

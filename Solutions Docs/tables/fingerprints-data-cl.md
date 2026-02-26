@@ -10,6 +10,25 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Fingerprints_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| active_days_d | real |
+| distinct_ips_d | real |
+| event_count_d | real |
+| fingerprint_g | string |
+| fingerprint_s | string |
+| first_seen_s | string |
+| ip_s | string |
+| last_seen_s | string |
+| port_d | real |
+| TimeGenerated | datetime |
+| Type | string |
+| type_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

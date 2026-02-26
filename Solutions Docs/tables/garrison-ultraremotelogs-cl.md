@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Garrison_ULTRARemote_Logs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| deviceEventClassId | int |
+| devicePayloadId | string |
+| dhost | string |
+| name | string |
+| reason | string |
+| request | string |
+| requestContext | string |
+| start | long |
+| suid | string |
+| suser | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

@@ -10,6 +10,22 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (9 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| category | string |
+| context | dynamic |
+| createdAt | string |
+| createdBy | dynamic |
+| details | dynamic |
+| event | string |
+| id | string |
+| object | dynamic |
+| type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

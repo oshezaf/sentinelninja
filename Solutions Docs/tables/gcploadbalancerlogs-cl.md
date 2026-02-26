@@ -12,6 +12,22 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (8 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Load%20Balancer%20Logs/Data%20Connectors/GCPFLoadBalancerLogs_GCP_CCP/GCPFLoadBalancerLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| httpRequest | dynamic |
+| insertId | string |
+| jsonPayload | dynamic |
+| logName | string |
+| receiveTimestamp | datetime |
+| resource | dynamic |
+| severity | string |
+| timestamp | datetime |
 
 ## Solutions (1)
 

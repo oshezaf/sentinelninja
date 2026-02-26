@@ -10,6 +10,20 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (7 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ForescoutPolicyStatus_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| EmIpAddr | string |
+| HostProperties | dynamic |
+| Ipv4Addr | string |
+| Ipv6Addr | dynamic |
+| MacAddr | string |
+| TimeGenerated | datetime |
+| UploadTime | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Data%20Connectors/QualysVMHostLogs_ccp/QualysVMHostLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| DETECTION_LIST | dynamic |
+| DNS | dynamic |
+| ID | string |
+| IP | string |
+| LAST_SCAN_DATETIME | datetime |
+| LAST_VM_AUTH_SCANNED_DATE | datetime |
+| LAST_VM_SCANNED_DATE | datetime |
+| NETBIOS | dynamic |
+| OS | dynamic |
+| QG_HOSTID | dynamic |
+| TRACKING_METHOD | string |
 
 ## Solutions (5)
 

@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SymantecICDx_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| connection_src_ip_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| SourceSystem | string |
+| TenantId | string |
+| threat_id_d | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

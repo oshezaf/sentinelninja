@@ -14,7 +14,61 @@ Reference for Update table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (46 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ApprovalSource | string |  |
+| Approved | bool |  |
+| BulletinID | string |  |
+| BulletinUrl | string |  |
+| Classification | string |  |
+| Computer | string |  |
+| ComputerEnvironment | string |  |
+| CVENumbers | string |  |
+| InstallTimeAvailable | bool |  |
+| InstallTimeDeviationRangeSeconds | real |  |
+| InstallTimePredictionSeconds | real |  |
+| KBID | string |  |
+| ManagementGroupName | string |  |
+| MSRCBulletinID | string |  |
+| MSRCSeverity | string |  |
+| Optional | bool |  |
+| OSFullName | string |  |
+| OSName | string |  |
+| OSType | string |  |
+| OSVersion | string |  |
+| PackageRepository | string |  |
+| PackageSeverity | string |  |
+| Product | string |  |
+| ProductArch | string |  |
+| ProductVersion | string |  |
+| PublishedDate | datetime |  |
+| RebootBehavior | string |  |
+| Resource | string |  |
+| ResourceGroup | string |  |
+| ResourceId | string |  |
+| ResourceProvider | string |  |
+| ResourceType | string |  |
+| RevisionNumber | string |  |
+| SourceComputerId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SubscriptionId | string |  |
+| TimeGenerated | datetime |  |
+| Title | string |  |
+| Type | string | The name of the table |
+| UpdateID | string |  |
+| UpdateState | string |  |
+| VMUUID | string |  |
 
 ## Solutions (4)
 

@@ -10,6 +10,47 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (34 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Samsung_Knox_Process_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Atime | datetime |
+| CmdLine | string |
+| Ctime | datetime |
+| Cwd | string |
+| DeviceImei1 | string |
+| DeviceImei2 | string |
+| DeviceModel | string |
+| DeviceSerialNumber | string |
+| DeviceWifimac | string |
+| Egid | int |
+| Euid | int |
+| EventGuid | long |
+| ExitCode | int |
+| Fsgid | int |
+| Fsuid | int |
+| Gid | int |
+| MitreTtp | dynamic |
+| Mtime | datetime |
+| Name | string |
+| OwnerGid | int |
+| OwnerUid | int |
+| Path | string |
+| Pid | int |
+| Ppid | int |
+| PrimaryImei | string |
+| Profile | string |
+| Severity | string |
+| Sgid | int |
+| Suid | int |
+| Syscall | int |
+| Tid | int |
+| TimeGenerated | datetime |
+| Uid | int |
+| Version | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

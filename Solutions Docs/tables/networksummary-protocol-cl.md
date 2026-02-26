@@ -10,6 +10,22 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetworkSummary_Protocol_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| count_ | int |
+| DstAppName | string |
+| DstPortNumber | int |
+| DvcAction | string |
+| EventTime | datetime |
+| NetworkDirection | string |
+| NetworkProtocol | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

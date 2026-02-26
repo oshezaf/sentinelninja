@@ -10,6 +10,29 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (16 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SINECSecurityGuard_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| destination_ip | string |
+| destination_port | int |
+| detected_at | datetime |
+| evidence | dynamic |
+| protocol | string |
+| sensor_id | string |
+| sensor_name | string |
+| severity | string |
+| signature_category | string |
+| signature_details | string |
+| signature_id | int |
+| signature_name | string |
+| source_ip | string |
+| source_port | int |
+| tenant_id | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

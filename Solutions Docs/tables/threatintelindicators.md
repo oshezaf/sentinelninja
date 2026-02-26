@@ -15,7 +15,42 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (26 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/threatintelindicators)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AdditionalFields | dynamic | The type specifc fields that Sentinel adds. Contains the TLPLevel: white, green, amber, or red. |
+| AzureTenantId | string | The tenant that submitted the indicator. |
+| Confidence | int | The confidence that the creator has in the correctness of their data. The value must be a number in the range of 0-100. |
+| Created | datetime | The date when the indicator was created. |
+| Data | dynamic | All object properties, formatted according to the STIX specification (https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf). |
+| Id | string | A value that uniquely identifies the indicator STIX object. This value is usable with Sentinel APIs. |
+| IsActive | bool | A value that specifies if an indicator is active and valid for detections. |
+| IsDeleted | bool | A value that indicates whether the data was deleted from Sentinel or not. |
+| LastUpdateMethod | string | The component that last updated the indicator. |
+| Modified | datetime | The date when the indicator was modified. |
+| ObservableKey | string | The entire left-hand side of an equality comparison from the pattern. |
+| ObservableValue | string | The entire right-hand side of an equality comparison from the pattern. |
+| Pattern | string | The detection pattern for this indicator MAY be expressed as a STIX pattern. |
+| Revoked | bool | A value that specifies whether the indicator was revoked. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| Tags | string | Sentinel defined tags for the indicator. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The time of indicator ingestion. |
+| Type | string | The name of the table |
+| ValidFrom | datetime | The time from which this indicator is considered a valid indicator of the behaviors it is related or represents. |
+| ValidUntil | datetime | The time at which this indicator should no longer be considered a valid indicator of the bahviors it is related to or represents. |
+| WorkspaceId | string | The workspace that submitted the indicator. |
 
 ## Solutions (14)
 

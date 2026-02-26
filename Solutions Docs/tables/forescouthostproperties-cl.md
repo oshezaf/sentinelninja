@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ForescoutHostProperties_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| EmIpAddr | string |
+| HostProperties | dynamic |
+| HostProperties_DnsniffEvent_s | string |
+| HostProperties_EmIpAddr_s | string |
+| HostProperties_IpAddr_s | string |
+| HostProperties_Ipv4Addr_s | string |
+| HostProperties_Ipv6Addr_s | string |
+| Ipv4Addr | string |
+| Ipv6Addr | dynamic |
+| MacAddr | string |
+| TimeGenerated | datetime |
+| UploadTime | datetime |
 
 ## Solutions (1)
 

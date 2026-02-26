@@ -11,6 +11,45 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (31 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_ztna_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| anti_malware_agents_s | string |
+| app_Connector_group_id_s | string |
+| client_browser_s | string |
+| client_firewall_s | string |
+| client_geo_location_s | string |
+| client_ip_s | string |
+| client_os_s | string |
+| disk_encryption_s | string |
+| duo_device_id_s | string |
+| duo_device_id_string_s | string |
+| headend_type_s | string |
+| hostname_s | string |
+| identity_email_s | string |
+| identity_labels_s | string |
+| identity_type_labels_s | string |
+| posture_id_s | string |
+| private_app_group_id_s | string |
+| private_app_id_s | string |
+| private_resource_group_id_s | string |
+| private_resource_id_s | string |
+| requested_id_fqdn_s | string |
+| resolved_ip_s | string |
+| rule_id_s | string |
+| ruleset_id_s | string |
+| step_up_auth_result_s | string |
+| step_up_auth_token_life_d | real |
+| step_up_auth_type_s | string |
+| system_password_s | string |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| verdict_s | string |
 
 ## Solutions (1)
 

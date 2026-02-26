@@ -10,6 +10,87 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (74 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/PaloAltoPrismaCloudAlert_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| alertRules_s | string |
+| alertTime_s | string |
+| Computer | string |
+| firstSeen_s | string |
+| history_s | string |
+| id_s | string |
+| lastSeen_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| policy_deleted_s | string |
+| policy_description_s | string |
+| policy_labels_s | string |
+| policy_lastModifiedBy_s | string |
+| policy_lastModifiedOn_s | string |
+| policy_name_s | string |
+| policy_policyId_s | string |
+| policy_policyType_s | string |
+| policy_recommendation_s | string |
+| policy_remediable_s | string |
+| policy_remediation_cliScriptTemplate_s | string |
+| policy_remediation_description_s | string |
+| policy_remediation_impact_s | string |
+| policy_severity_s | string |
+| policy_systemDefault_s | string |
+| RawData | string |
+| reason_s | string |
+| resource_account_s | string |
+| resource_accountId_s | string |
+| resource_additionalInfo_accessKeyAge_s | string |
+| resource_additionalInfo_inactiveSinceTs_s | string |
+| resource_cloudAccountGroups_s | string |
+| resource_cloudType_s | string |
+| resource_data_access_key_1_active_s | string |
+| resource_data_access_key_1_last_rotated_s | string |
+| resource_data_access_key_1_last_used_date_s | string |
+| resource_data_access_key_1_last_used_region_s | string |
+| resource_data_access_key_1_last_used_service_s | string |
+| resource_data_access_key_2_active_s | string |
+| resource_data_access_key_2_last_rotated_s | string |
+| resource_data_access_key_2_last_used_date_s | string |
+| resource_data_access_key_2_last_used_region_s | string |
+| resource_data_access_key_2_last_used_service_s | string |
+| resource_data_arn_s | string |
+| resource_data_cert_1_active_s | string |
+| resource_data_cert_1_last_rotated_s | string |
+| resource_data_cert_2_active_s | string |
+| resource_data_cert_2_last_rotated_s | string |
+| resource_data_mfa_active_s | string |
+| resource_data_password_enabled_s | string |
+| resource_data_password_last_changed_s | string |
+| resource_data_password_last_used_s | string |
+| resource_data_password_next_rotation_s | string |
+| resource_data_user_creation_time_s | string |
+| resource_data_user_s | string |
+| resource_id_g | string |
+| resource_id_s | string |
+| resource_name_s | string |
+| resource_region_s | string |
+| resource_regionId_s | string |
+| resource_resourceApiName_s | string |
+| resource_resourceTs_s | string |
+| resource_resourceType_s | string |
+| resource_rrn_s | string |
+| resource_url_s | string |
+| riskDetail_rating_s | string |
+| riskDetail_riskScore_maxScore_s | string |
+| riskDetail_riskScore_score_s | string |
+| riskDetail_score_s | string |
+| SourceSystem | string |
+| status_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

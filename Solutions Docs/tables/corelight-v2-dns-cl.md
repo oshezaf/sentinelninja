@@ -10,6 +10,42 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (29 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_dns_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| AA_b | bool |
+| answers_s | string |
+| id_orig_h_s | string |
+| id_orig_p_d | real |
+| id_resp_h_s | string |
+| id_resp_p_d | real |
+| proto_s | string |
+| qclass_d | real |
+| qclass_name_s | string |
+| qtype_d | real |
+| qtype_name_s | string |
+| query_s | string |
+| RA_b | bool |
+| rcode_d | real |
+| rcode_name_s | string |
+| RD_b | bool |
+| rejected_b | bool |
+| rtt_d | real |
+| sid | string |
+| TC_b | bool |
+| TimeGenerated | datetime |
+| trans_id_d | real |
+| ts_t | datetime |
+| TTLs_s | string |
+| uid_s | string |
+| Z_d | real |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

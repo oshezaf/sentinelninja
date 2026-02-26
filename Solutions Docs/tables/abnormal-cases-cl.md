@@ -11,6 +11,32 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ABNORMAL_CASES_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| affectedEmployee | string |
+| analysis | string |
+| case_status | string |
+| caseId | real |
+| Computer | string |
+| description | string |
+| firstObserved | datetime |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| remediation_status | string |
+| severity | string |
+| SourceSystem | string |
+| TenantId | string |
+| threatIds | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

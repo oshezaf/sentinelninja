@@ -6,6 +6,51 @@
 
 ---
 
+## Schema (38 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ImpervaWAFCloud.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AccountID | string |
+| AccountName | string |
+| BrowserType | string |
+| CaptchaSupport | string |
+| City | string |
+| ClientApp | string |
+| ClientAppSig | string |
+| CookiesSupport | string |
+| Country | string |
+| DstDomainHostname | string |
+| DstIpAddr | string |
+| DstPortNumber | string |
+| DvcAction | string |
+| EventEndTime | string |
+| EventProduct | string |
+| EventSeverity | string |
+| EventStartTime | string |
+| EventType | string |
+| EventVendor | string |
+| HttpRequestMethod | string |
+| HttpRequestXff | string |
+| HttpStatusCode | string |
+| HttpUserAgentOriginal | string |
+| NetworkApplicationProtocol | string |
+| NetworkApplicationProtocoVersion | string |
+| NetworkSessionId | string |
+| PoPName | string |
+| PostBody | string |
+| QueryString | string |
+| RequestId | string |
+| SiteID | string |
+| SrcGeoLatitude | string |
+| SrcGeoLongitude | string |
+| SrcIpAddr | string |
+| SrcPortNumber | string |
+| TimeGenerated | datetime |
+| UrlOriginal | string |
+| VisitorID | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,28 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/F5Telemetry_system_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| client_ip_s | string |
+| Computer | string |
+| geo_location_s | string |
+| hostname_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| probability | real |
+| RawData | string |
+| RawMessage | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

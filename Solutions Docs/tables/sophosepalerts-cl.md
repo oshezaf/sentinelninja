@@ -10,6 +10,27 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (14 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection/Data%20Connectors/SophosEP_ccp/SophosEP_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| created_at | datetime |
+| customer_id | string |
+| data | dynamic |
+| description | string |
+| event_service_event_id | string |
+| id | string |
+| info | dynamic |
+| location | string |
+| severity | string |
+| source | string |
+| threat | string |
+| threat_cleanable | boolean |
+| type | string |
+| when | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

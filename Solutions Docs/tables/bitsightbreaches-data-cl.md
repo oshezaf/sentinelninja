@@ -11,6 +11,27 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (13 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BitsightBreaches_data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| breached_companies | dynamic |
+| company_guid | string |
+| company_name | string |
+| date_created | datetime |
+| dependent_companies | dynamic |
+| event_type | string |
+| event_type_description | string |
+| guid | string |
+| parsed_date | datetime |
+| preview_url | string |
+| severity | real |
+| text | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

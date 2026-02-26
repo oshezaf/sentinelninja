@@ -10,6 +10,49 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (36 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VMware_SDWAN_FirewallLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actionTaken | string |
+| application | string |
+| attackSource | string |
+| attackTarget | string |
+| bytesReceived | int |
+| bytesSent | int |
+| category | string |
+| closeReason | string |
+| destination | string |
+| destinationIp | string |
+| destinationPort | int |
+| domainName | string |
+| edgeLogicalId | string |
+| edgeName | datetime |
+| enterpriseLogicalId | string |
+| extensionHeader | string |
+| firewallPolicyName | string |
+| idsAlert | int |
+| inputInterface | datetime |
+| ipsAlert | int |
+| logType | string |
+| protocol | int |
+| ruleId | string |
+| ruleVersion | int |
+| segmentLogicalId | string |
+| segmentName | string |
+| sessionDurationSecs | int |
+| sessionId | int |
+| severity | int |
+| signature | string |
+| signatureId | int |
+| sourceIp | string |
+| sourcePort | int |
+| TimeGenerated | datetime |
+| timestamp | datetime |
+| verdict | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

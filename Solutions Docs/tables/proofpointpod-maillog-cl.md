@@ -10,6 +10,44 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (31 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ProofpointPOD_maillog_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| data_s | string |
+| event_type_s | string |
+| EventProduct | string |
+| EventVendor | string |
+| id_s | string |
+| metadata_origin_data_agent_s | string |
+| metadata_origin_data_cid_s | string |
+| pps_agent_s | string |
+| pps_cid_s | string |
+| sm_auth_s | string |
+| sm_class_s | string |
+| sm_ctladdr_s | string |
+| sm_daemon_s | string |
+| sm_delay_s | string |
+| sm_dsn_s | string |
+| sm_from_s | string |
+| sm_mailer_s | string |
+| sm_msgid_g | string |
+| sm_msgid_s | string |
+| sm_nrcpts_s | string |
+| sm_pri_s | string |
+| sm_proto_s | string |
+| sm_qid_s | string |
+| sm_relay_s | string |
+| sm_sizeBytes_s | string |
+| sm_stat_s | string |
+| sm_tls_verify_s | string |
+| sm_to_s | string |
+| sm_xdelay_s | string |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

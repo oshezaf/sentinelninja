@@ -10,6 +10,39 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/vectra_rdp_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| client_build | string |
+| client_dig_product_id | string |
+| client_dig_protocol_id | string |
+| client_name | string |
+| cookie | string |
+| desktop_height | int |
+| desktop_width | int |
+| id_ip_ver | string |
+| id_orig_h | string |
+| id_orig_p | int |
+| id_resp_h | string |
+| id_resp_p | int |
+| keyboard_layout | string |
+| local_orig | bool |
+| local_resp | bool |
+| orig_hostname | string |
+| orig_huid | string |
+| orig_sluid | string |
+| resp_hostname | string |
+| resp_huid | string |
+| resp_sluid | string |
+| result | string |
+| sensor_uid | string |
+| TimeGenerated | datetime |
+| ts | datetime |
+| uid | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

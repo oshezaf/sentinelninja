@@ -13,6 +13,27 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WebSession_Summarized_DstIP_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| DestDomain_s | string |
+| DstBytes_d | int |
+| DstHostname_s | string |
+| DstIpAddr_s | string |
+| DstPortNumber_d | int |
+| EventCount_d | int |
+| EventProduct_s | string |
+| EventResult_s | string |
+| EventResultDetails_s | string |
+| EventTime_t | datetime |
+| EventType_s | string |
+| SrcBytes_d | int |
+| SrcIPIsPrivate_b | bool |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

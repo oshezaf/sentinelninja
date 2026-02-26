@@ -10,6 +10,54 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (41 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec/Data%20Connectors/Morphisec_CCF/Morphisec_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| application | string |
+| applicationPath | string |
+| attackModule | string |
+| attackSeverity | string |
+| classification | string |
+| defenderDescription | dynamic |
+| defenderId | string |
+| description | string |
+| detectionDescription | string |
+| detectionEngineVersion | dynamic |
+| detectionName | string |
+| detectionPath | dynamic |
+| engine | string |
+| filePath | string |
+| hostname | string |
+| id | string |
+| kernel | string |
+| metadataProtectorVersion | string |
+| mitreClassification | dynamic |
+| name | string |
+| numberOfAttacks | dynamic |
+| operatingSystem | string |
+| parentProcessCommandLine | string |
+| parentProcessSignature | string |
+| path | dynamic |
+| processCommandLine | string |
+| processCommandLineArgs | dynamic |
+| processSignature | string |
+| protectorId | string |
+| reviewStatus | string |
+| signature | string |
+| subClassification | string |
+| threatMessageArrivalTime | datetime |
+| threatModule | string |
+| threatSubType | string |
+| threatTime | datetime |
+| threatType | string |
+| TimeGenerated | datetime |
+| url | dynamic |
+| user | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

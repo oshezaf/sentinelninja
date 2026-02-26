@@ -11,6 +11,24 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (10 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security/Data%20Connectors/ProofPointEmailSecurity_CCP/ProofpointPOD_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| connection | dynamic |
+| envelope | dynamic |
+| filter | dynamic |
+| guid | string |
+| metadata | dynamic |
+| msg | dynamic |
+| msgParts | dynamic |
+| pps | dynamic |
+| TimeGenerated | datetime |
+| ts | string |
 
 ## Solutions (1)
 

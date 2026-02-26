@@ -10,6 +10,31 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GWorkspace_ReportsAPI_login_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actor_email_s | string |
+| actor_profileId_s | string |
+| etag_s | string |
+| event_name_s | string |
+| event_type_s | string |
+| EventProduct | string |
+| events_s | string |
+| EventVendor | string |
+| id_applicationName_s | string |
+| id_customerId_s | string |
+| id_time_t | datetime |
+| id_uniqueQualifier_s | string |
+| IPAddress | string |
+| kind_s | string |
+| login_challenge_method_s | string |
+| login_challenge_status_s | string |
+| login_type_s | string |
+| TimeGenerated | datetime |
+
 ## Solutions (2)
 
 This table is used by the following solutions:

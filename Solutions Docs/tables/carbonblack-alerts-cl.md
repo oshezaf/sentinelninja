@@ -11,6 +11,79 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (65 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlackCloud_ccp/CarbonBlack_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alert_notes_present | string |
+| alert_url | string |
+| backend_timestamp | string |
+| backend_update_timestamp | string |
+| detection_timestamp | string |
+| determination | string |
+| device_external_ip | string |
+| device_id | string |
+| device_internal_ip | string |
+| device_location | string |
+| device_name | string |
+| device_os | string |
+| device_os_version | string |
+| device_policy | string |
+| device_policy_id | string |
+| device_target_value | string |
+| device_username | string |
+| first_event_timestamp | string |
+| id | string |
+| ioc_hit | string |
+| ioc_id | string |
+| is_updated | string |
+| last_event_timestamp | string |
+| mdr_alert | string |
+| mdr_alert_notes_present | string |
+| ml_classification_final_verdict | string |
+| ml_classification_global_prevalence | string |
+| ml_classification_org_prevalence | string |
+| parent_cmdline | string |
+| parent_effective_reputation | string |
+| parent_guid | string |
+| parent_md5 | string |
+| parent_name | string |
+| parent_pid | string |
+| parent_reputation | string |
+| parent_sha256 | string |
+| parent_username | string |
+| policy_applied | string |
+| primary_event_id | string |
+| process_cmdline | string |
+| process_effective_reputation | string |
+| process_guid | string |
+| process_issuer | string |
+| process_md5 | string |
+| process_name | string |
+| process_pid | string |
+| process_publisher | string |
+| process_reputation | string |
+| process_sha256 | string |
+| process_username | string |
+| reason | string |
+| reason_code | string |
+| report_description | string |
+| report_id | string |
+| report_link | string |
+| report_name | string |
+| report_tags | string |
+| run_state | string |
+| sensor_action | string |
+| severity | string |
+| threat_id | string |
+| type | string |
+| version | string |
+| watchlists | string |
+| workflow | string |
 
 ## Solutions (5)
 

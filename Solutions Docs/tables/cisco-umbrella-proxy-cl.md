@@ -11,6 +11,45 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (31 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_proxy_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AMP_Disposition_s | string |
+| AMP_Malware_Name_s | string |
+| AMP_Score_s | string |
+| AVDetections_s | string |
+| Blocked_Categories_s | string |
+| Categories_s | string |
+| Certificate_Errors_s | string |
+| Content_Type_s | string |
+| Destination_IP_s | string |
+| Destination_List_IDs_s | string |
+| DLP_Status_S | string |
+| EventType_s | string |
+| External_IP_s | string |
+| File_Name_s | string |
+| Identities_s | string |
+| Identity_Type_s | string |
+| Internal_IP_s | string |
+| Policy_Identity_Type_s | string |
+| PolicyIdentity_s | string |
+| Referer_s | string |
+| Request_Method_s | string |
+| requestSize_d | real |
+| responseBodySize_d | real |
+| responseSize_d | real |
+| Rule_ID_s | string |
+| Ruleset_ID_s | string |
+| SHA—SHA256_s | string |
+| statusCode_s | string |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| userAgent_s | string |
 
 ## Solutions (1)
 

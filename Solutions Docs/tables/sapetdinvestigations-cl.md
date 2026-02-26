@@ -11,6 +11,29 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (15 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20ETD%20Cloud/Data%20Connectors/SAPETD_PUSH_CCP/SAPETD_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Actions | dynamic |
+| Alerts | dynamic |
+| CompletionTimestamp | datetime |
+| createdAt | datetime |
+| createdBy | string |
+| CustomerNotification | boolean |
+| Description | string |
+| InvestigationId | int |
+| ManagementVisibility | string |
+| Processor | string |
+| Severity | string |
+| Status | string |
+| Systems | dynamic |
+| Users | dynamic |
+| Version | string |
 
 ## Solutions (1)
 

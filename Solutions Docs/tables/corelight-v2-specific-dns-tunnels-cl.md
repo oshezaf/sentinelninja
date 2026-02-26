@@ -10,6 +10,27 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_specific_dns_tunnels_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| detection_s | string |
+| dns_client_s | string |
+| program_s | string |
+| query_s | string |
+| resolver_s | string |
+| session_id_d | real |
+| sods_id_d | real |
+| TimeGenerated | datetime |
+| trans_id_d | real |
+| ts_t | datetime |
+| uid_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -13,6 +13,27 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WebSession_Summarized_SrcIP_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| DestDomain_s | string |
+| DstBytes_d | int |
+| DstIPIsPrivate_b | bool |
+| EventCount_d | int |
+| EventProduct_s | string |
+| EventResult_s | string |
+| EventResultDetails_s | string |
+| EventTime_t | datetime |
+| EventType_s | string |
+| SrcBytes_d | int |
+| SrcHostname_s | string |
+| SrcIpAddr_s | string |
+| SrcUsername_s | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

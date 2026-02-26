@@ -11,6 +11,36 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (22 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneActivities_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AccountId | string |
+| AccountName | string |
+| ActivityType | real |
+| ActivityUuid | string |
+| AgentId | string |
+| AgentUpdatedVersion | string |
+| Comments | string |
+| CreatedAt | datetime |
+| Data | string |
+| Description | string |
+| GroupId | string |
+| GroupName | string |
+| Hash | string |
+| Id | string |
+| OsFamily | string |
+| PrimaryDescription | string |
+| SecondaryDescription | string |
+| SiteId | string |
+| SiteName | string |
+| ThreatId | string |
+| UpdatedAt | datetime |
+| UserId | string |
 
 ## Solutions (1)
 

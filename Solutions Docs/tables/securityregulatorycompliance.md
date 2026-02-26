@@ -10,6 +10,32 @@
 |:----------|:------|
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SecurityRegulatoryCompliance.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| AssessedResourceId | string |
+| ComplianceControl | string |
+| ComplianceStandard | string |
+| FailedResources | int |
+| IsSnapshot | bool |
+| PassedResources | int |
+| RecommendationId | string |
+| RecommendationLink | string |
+| RecommendationName | string |
+| RegulatoryComplianceSubscriptionId | string |
+| ResourceProviderType | string |
+| SkippedResources | int |
+| SourceSystem | string |
+| State | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (5)
 

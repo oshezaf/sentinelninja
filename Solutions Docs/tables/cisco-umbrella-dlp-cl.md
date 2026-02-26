@@ -11,6 +11,40 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_dlp_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Action_s | string |
+| Application_Category_Name_s | string |
+| Application_s | string |
+| Content_Type_s | string |
+| Data_Classification_s | string |
+| Data_Identifier_s | string |
+| Destination_IP_s | string |
+| Destination_Port_d | real |
+| Destination_Protocol_s | string |
+| Destination_s | string |
+| Event_Type_s | string |
+| File_Label_s | string |
+| File_Size_d | real |
+| Identities_s | string |
+| Name_s | string |
+| Organization_ID_s | string |
+| Owner_s | string |
+| Private_Resource_Group_Name_s | string |
+| Private_Resource_Name_s | string |
+| Rule_Name_s | string |
+| Severity_s | string |
+| SHA256_Hash_s | string |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| Traffic_Direction_s | string |
+| Unique_Event_ID_s | string |
 
 ## Solutions (1)
 

@@ -11,6 +11,42 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (28 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cymru_Scout_IP_Data_Communications_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| end_date | string |
+| event_count | real |
+| first_seen | string |
+| ip | string |
+| last_seen | string |
+| local | dynamic |
+| local_as_info | dynamic |
+| local_country_codes | dynamic |
+| local_ip | string |
+| local_max_port | real |
+| local_min_port | real |
+| local_tags | dynamic |
+| local_top_services | dynamic |
+| local_unique_ports | real |
+| peer | dynamic |
+| peer_as_info | dynamic |
+| peer_country_codes | dynamic |
+| peer_ip | string |
+| peer_max_port | real |
+| peer_min_port | real |
+| peer_tags | dynamic |
+| peer_top_services | dynamic |
+| peer_unique_ports | real |
+| proto | real |
+| proto_text | string |
+| start_date | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

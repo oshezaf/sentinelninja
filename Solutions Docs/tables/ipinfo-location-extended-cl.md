@@ -10,6 +10,26 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (13 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_Location_extended_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| city | string |
+| country | string |
+| country_name | string |
+| geoname_id | string |
+| latitude | string |
+| longitude | string |
+| postal_code | string |
+| radius | string |
+| range | string |
+| region | string |
+| region_name | string |
+| TimeGenerated | datetime |
+| timezone | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

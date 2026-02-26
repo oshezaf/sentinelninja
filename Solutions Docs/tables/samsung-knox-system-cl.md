@@ -10,6 +10,70 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (57 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Samsung_Knox_System_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ArpDevice | string |
+| AvbBootPatchLevel | string |
+| AvbBootState | string |
+| AvbDeviceLocked | string |
+| AvbOsPatchLevel | string |
+| AvbOsVersion | string |
+| AvbVendorPatchLevel | string |
+| AvbVerityMode | string |
+| BLBuildId | string |
+| BLBuildType | string |
+| BLBuildVersion | string |
+| BLEvent | string |
+| BLEventTarget | string |
+| BLMode | string |
+| BLRP | string |
+| CCModeState | string |
+| CustomCount | string |
+| DeviceImei1 | string |
+| DeviceImei2 | string |
+| DeviceModel | string |
+| DeviceSerialNumber | string |
+| DeviceWifimac | string |
+| EDLCount | string |
+| EmFuseHistory | string |
+| EmStatus | string |
+| EmTokens | string |
+| EventGuid | long |
+| FOTACount | string |
+| FrpState | string |
+| ImgStatus | string |
+| KernelBuildId | string |
+| KernelBuildType | string |
+| KernelRP | string |
+| KernelState | string |
+| KGFuse | string |
+| KGState | string |
+| MDMState | string |
+| MitreTtp | dynamic |
+| Name | string |
+| ODINCount | string |
+| PrimaryImei | string |
+| Profile | string |
+| RebootReason | string |
+| RPMBState | string |
+| SecureBoot | string |
+| Severity | string |
+| SystemBuildId0 | string |
+| SystemBuildId1 | string |
+| SystemBuildId2 | string |
+| SystemRP | string |
+| TimeGenerated | datetime |
+| UnlockCount | string |
+| VbMetaType | string |
+| Version | string |
+| WbFuse | string |
+| WbReason | string |
+| WpState | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

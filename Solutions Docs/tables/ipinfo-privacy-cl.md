@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_Privacy_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| hosting | string |
+| proxy | string |
+| range | string |
+| relay | string |
+| service | string |
+| TimeGenerated | datetime |
+| tor | string |
+| vpn | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

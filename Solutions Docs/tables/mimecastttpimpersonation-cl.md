@@ -11,6 +11,32 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MimecastTTPImpersonation_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action_s | string |
+| definition_s | string |
+| eventTime_t | datetime |
+| hits_s | string |
+| id_s | string |
+| identifiers_s | string |
+| impersonationResults_s | string |
+| messageId_s | string |
+| mimecastEventCategory_s | string |
+| mimecastEventId_s | string |
+| recipientAddress_s | string |
+| senderAddress_s | string |
+| senderIpAddress_s | string |
+| subject_s | string |
+| taggedExternal_b | bool |
+| taggedMalicious_b | bool |
+| time_generated | datetime |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

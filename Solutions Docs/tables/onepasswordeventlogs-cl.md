@@ -11,6 +11,42 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (28 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/OnePasswordEventLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| action_Type | string |
+| actor_details | dynamic |
+| actor_uuid | string |
+| aux_details | dynamic |
+| aux_id | int |
+| aux_info | string |
+| aux_uuid | string |
+| category | string |
+| client | dynamic |
+| country | string |
+| details | dynamic |
+| item_uuid | string |
+| location | dynamic |
+| log_source | string |
+| object_details | dynamic |
+| object_Type | string |
+| object_uuid | string |
+| session | dynamic |
+| session_uuid | string |
+| SourceSystem | string |
+| target_user | dynamic |
+| TimeGenerated | datetime |
+| timestamp | datetime |
+| used_version | int |
+| user | dynamic |
+| uuid_s | string |
+| vault_uuid | string |
 
 ## Solutions (1)
 

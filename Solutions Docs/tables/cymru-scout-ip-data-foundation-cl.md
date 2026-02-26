@@ -11,6 +11,31 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cymru_Scout_IP_Data_Foundation_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| as_info | dynamic |
+| country_code | string |
+| identity_as_name | string |
+| identity_net_name | string |
+| identity_org_name | string |
+| identity_reverse_hostnames | string |
+| insights | dynamic |
+| insights_insights | dynamic |
+| insights_overall_rating | string |
+| ip | string |
+| tags | dynamic |
+| tags_id | string |
+| tags_name | string |
+| TimeGenerated | datetime |
+| Type | string |
+| whois_net_name1 | string |
+| whois_org_name1 | string |
 
 ## Solutions (1)
 

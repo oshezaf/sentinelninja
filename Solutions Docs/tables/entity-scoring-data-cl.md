@@ -11,6 +11,42 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (28 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Entity_Scoring_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| active_detection_types | dynamic |
+| attack_rating | real |
+| breadth_contrib | real |
+| category | string |
+| Computer | string |
+| entity_id | real |
+| entity_type | string |
+| event_timestamp | datetime |
+| id | real |
+| importance | real |
+| is_prioritized | bool |
+| last_detection | dynamic |
+| last_detection_id | real |
+| last_detection_type | string |
+| last_detection_url | string |
+| ManagementGroupName | string |
+| MG | string |
+| name | string |
+| RawData | string |
+| severity | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| urgency_score | real |
+| url | string |
+| velocity_contrib | real |
 
 ## Solutions (1)
 

@@ -11,6 +11,28 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ValenceSecurityAlerts.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alertType_defaultSeverity_s | string |
+| alertType_description_s | string |
+| alertType_name_s | string |
+| alertType_platform_s | string |
+| alertType_severity_s | string |
+| alertType_vuid_s | string |
+| connectorUids_s | string |
+| creationTimestamp_d | int |
+| events_s | string |
+| status_s | string |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| Type | string |
+| vuid_s | string |
 
 ## Solutions (1)
 

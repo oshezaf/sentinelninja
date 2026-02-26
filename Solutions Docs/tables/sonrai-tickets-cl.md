@@ -11,6 +11,50 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (36 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Sonrai_Tickets_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action_d | real |
+| actor_s | string |
+| digest_account_s | string |
+| digest_actionClassification_s | string |
+| digest_assignedTo_s | string |
+| digest_createdBy_s | string |
+| digest_createdDate_d | real |
+| digest_criticalResourceName_s | string |
+| digest_criticalResourceSRN_s | string |
+| digest_description_s | string |
+| digest_envidence_path_s | string |
+| digest_evidence_conditions_s | string |
+| digest_evidence_count_d | real |
+| digest_evidence_resourceSet_s | string |
+| digest_evidence_userAgentSet_s | string |
+| digest_lastReopenDate_d | real |
+| digest_lastSeenDate_d | real |
+| digest_org_s | string |
+| digest_resourceLabel_s | string |
+| digest_resourceType_s | string |
+| digest_severity_d | real |
+| digest_severityCategory_s | string |
+| digest_severityNumeric_d | real |
+| digest_status_s | string |
+| digest_swimlanes_s | string |
+| digest_ticketKey_s | string |
+| digest_ticketKeyDescription_s | string |
+| digest_ticketKeyName_s | string |
+| digest_ticketSignature_s | string |
+| digest_ticketSrn_s | string |
+| digest_ticketType_s | string |
+| digest_timestamp_s | string |
+| digest_title_s | string |
+| digest_transitionDate_d | real |
+| digest_transitionedBy_s | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

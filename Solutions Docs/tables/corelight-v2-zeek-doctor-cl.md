@@ -10,6 +10,25 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_zeek_doctor_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| check_s | string |
+| hits_d | real |
+| hits_delta_d | real |
+| node_s | string |
+| percent_d | real |
+| TimeGenerated | datetime |
+| total_d | real |
+| total_delta_d | real |
+| ts_t | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

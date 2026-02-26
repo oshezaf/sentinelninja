@@ -11,6 +11,30 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (16 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Data%20Connectors/PrismaCloudCSPMLog_CCF/PaloAltoPrismaCloudCSPMLog_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alertRules | string |
+| alertTime | real |
+| firstSeen | real |
+| history | string |
+| id | string |
+| investigateOptions | string |
+| lastSeen | real |
+| lastUpdated | real |
+| metadata | dynamic |
+| policy | dynamic |
+| policyId | string |
+| reason | string |
+| resource | dynamic |
+| riskDetail | dynamic |
+| saveSearchId | string |
+| status | string |
 
 ## Solutions (1)
 

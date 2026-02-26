@@ -14,7 +14,45 @@ Reference for UpdateSummary table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/updatesummary) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/updatesummary) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (30 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/updatesummary)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Computer | string |  |
+| ComputerEnvironment | string |  |
+| CriticalUpdatesMissing | int |  |
+| ManagementGroupName | string |  |
+| NETRuntimeVersion | string |  |
+| OldestMissingSecurityUpdateBucket | string |  |
+| OldestMissingSecurityUpdateInDays | int |  |
+| OsVersion | string |  |
+| OtherUpdatesMissing | int |  |
+| Resource | string |  |
+| ResourceGroup | string |  |
+| ResourceId | string |  |
+| ResourceProvider | string |  |
+| ResourceType | string |  |
+| RestartPending | bool |  |
+| SecurityUpdatesMissing | int |  |
+| SourceComputerId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SubscriptionId | string |  |
+| TimeGenerated | datetime |  |
+| TotalUpdatesMissing | int |  |
+| Type | string | The name of the table |
+| VMUUID | string |  |
+| WindowsUpdateAgentVersion | string |  |
+| WindowsUpdateSetting | string |  |
+| WSUSServer | string |  |
 
 ## Solutions (1)
 

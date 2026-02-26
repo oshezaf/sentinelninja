@@ -10,6 +10,22 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_WHOIS_MNT_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| admin_id | string |
+| created | string |
+| name | string |
+| org_id | string |
+| source | string |
+| tech_id | string |
+| TimeGenerated | datetime |
+| updated | string |
+| whois_id | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,27 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (13 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CBSLog_Azure_1_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| brand_s | string |
+| class_s | string |
+| coa_s | string |
+| created_date_s | string |
+| id_s | string |
+| remarks_s | string |
+| severity_s | string |
+| status_s | string |
+| subject_s | string |
+| TenantId | guid |
+| TimeGenerated | datetime |
+| type_s | string |
+| updated_date_s | string |
 
 ## Solutions (1)
 

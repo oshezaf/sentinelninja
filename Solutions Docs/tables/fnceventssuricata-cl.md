@@ -11,6 +11,95 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (81 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/FncEventsSuricata_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alert_category_s | string |
+| alert_rev_d | int |
+| alert_severity_d | int |
+| alert_signature_id_d | int |
+| alert_signature_s | string |
+| customer_id_s | string |
+| dest_ip_s | string |
+| dest_port_d | real |
+| dst_ip_enrichments_annotations_applications_s | string |
+| dst_ip_enrichments_annotations_environments_s | string |
+| dst_ip_enrichments_annotations_locations_s | string |
+| dst_ip_enrichments_annotations_owners_s | string |
+| dst_ip_enrichments_annotations_roles_s | string |
+| dst_ip_enrichments_annotations_tags_s | string |
+| dst_ip_enrichments_asn_asn_d | int |
+| dst_ip_enrichments_asn_asn_org_s | string |
+| dst_ip_enrichments_asn_isp_s | string |
+| dst_ip_enrichments_asn_org_s | string |
+| dst_ip_enrichments_geo_city_s | string |
+| dst_ip_enrichments_geo_country_s | string |
+| dst_ip_enrichments_geo_location_lat_d | real |
+| dst_ip_enrichments_geo_location_lon_d | real |
+| dst_ip_enrichments_geo_subdivision_s | string |
+| dst_ip_enrichments_internal_b | bool |
+| event_type_s | string |
+| geo_distance_d | real |
+| http_hostname_enrichments_domain_enrichments_domain_entropy_d | real |
+| http_hostname_enrichments_ip_enrichments_annotations_applications_s | string |
+| http_hostname_enrichments_ip_enrichments_annotations_environments_s | string |
+| http_hostname_enrichments_ip_enrichments_annotations_locations_s | string |
+| http_hostname_enrichments_ip_enrichments_annotations_owners_s | string |
+| http_hostname_enrichments_ip_enrichments_annotations_roles_s | string |
+| http_hostname_enrichments_ip_enrichments_annotations_tags_s | string |
+| http_hostname_enrichments_ip_enrichments_asn_asn_d | int |
+| http_hostname_enrichments_ip_enrichments_asn_asn_org_s | string |
+| http_hostname_enrichments_ip_enrichments_asn_isp_s | string |
+| http_hostname_enrichments_ip_enrichments_asn_org_s | string |
+| http_hostname_enrichments_ip_enrichments_geo_city_s | string |
+| http_hostname_enrichments_ip_enrichments_geo_country_s | string |
+| http_hostname_enrichments_ip_enrichments_geo_location_lat_d | real |
+| http_hostname_enrichments_ip_enrichments_geo_location_lon_d | real |
+| http_hostname_enrichments_ip_enrichments_geo_subdivision_s | string |
+| http_hostname_enrichments_ip_enrichments_internal_b | bool |
+| http_hostname_s | string |
+| http_http_content_type_s | string |
+| http_http_method_s | string |
+| http_http_refer_s | string |
+| http_http_user_agent_s | string |
+| http_length_d | int |
+| http_protocol_s | string |
+| http_redirect_s | string |
+| http_status_d | int |
+| http_url_s | string |
+| http_xtf_s | string |
+| intel_s | string |
+| payload_s | string |
+| proto_s | string |
+| sensor_id_s | string |
+| source_s | string |
+| src_ip_enrichments_annotations_applications_s | string |
+| src_ip_enrichments_annotations_environments_s | string |
+| src_ip_enrichments_annotations_locations_s | string |
+| src_ip_enrichments_annotations_owners_s | string |
+| src_ip_enrichments_annotations_roles_s | string |
+| src_ip_enrichments_annotations_tags_s | string |
+| src_ip_enrichments_asn_asn_d | int |
+| src_ip_enrichments_asn_asn_org_s | string |
+| src_ip_enrichments_asn_isp_s | string |
+| src_ip_enrichments_asn_org_s | string |
+| src_ip_enrichments_geo_city_s | string |
+| src_ip_enrichments_geo_country_s | string |
+| src_ip_enrichments_geo_location_lat_d | real |
+| src_ip_enrichments_geo_location_lon_d | real |
+| src_ip_enrichments_geo_subdivision_s | string |
+| src_ip_enrichments_internal_b | bool |
+| src_ip_s | string |
+| src_port_d | real |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
+| Type | string |
+| uuid_g | string |
 
 ## Solutions (1)
 

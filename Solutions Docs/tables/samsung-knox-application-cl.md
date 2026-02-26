@@ -10,6 +10,29 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (16 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Samsung_Knox_Application_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AccessibilityApi | string |
+| DeviceImei1 | string |
+| DeviceImei2 | string |
+| DeviceModel | string |
+| DeviceSerialNumber | string |
+| DeviceWifimac | string |
+| EventGuid | long |
+| MitreTtp | dynamic |
+| Name | string |
+| PkgName | string |
+| PrimaryImei | string |
+| Profile | string |
+| RestrictedPerms | dynamic |
+| Severity | string |
+| TimeGenerated | datetime |
+| Version | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

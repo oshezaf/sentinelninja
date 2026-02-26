@@ -11,6 +11,19 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (5 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFox_CTI_email_addresses_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| created_at_t | datetime |
+| domain_s | string |
+| email_s | string |
+| tags_s | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

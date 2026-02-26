@@ -11,6 +11,73 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (59 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Mimecast_Seg_Cg_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| accountId | string |
+| action | string |
+| aggregateId | string |
+| attachments | string |
+| customNameMatch | string |
+| customThreatDictionary | string |
+| delivered | string |
+| deliveryAttempts | string |
+| deliveryErrors | string |
+| destinationIp | string |
+| direction | string |
+| emailSize | string |
+| fileExtension | string |
+| fileName | string |
+| holdReason | string |
+| Hostname | string |
+| internalUserName | string |
+| itemsDetected | string |
+| Logtype | string |
+| md5 | string |
+| messageId | string |
+| mimecastThreatDictionary | string |
+| monitoredDomainSource | string |
+| newDomain | string |
+| numberAttachments | string |
+| offset | real |
+| partition | real |
+| processingId | string |
+| recipients | string |
+| rejectionCode | string |
+| rejectionInfo | string |
+| rejectionType | string |
+| replyMismatch | string |
+| route | string |
+| scanResults | string |
+| senderDomain | string |
+| senderEnvelope | string |
+| senderHeader | string |
+| senderIp | string |
+| sha1 | string |
+| sha256 | string |
+| similarCustomExternalDomain | string |
+| similarDomain | string |
+| similarInternalDomain | string |
+| similarMimecastExternalDomain | string |
+| spamInfo | string |
+| spamProcessingDetail | string |
+| subject | string |
+| subtype | string |
+| taggedExternal | string |
+| taggedMalicious | string |
+| TimeGenerated | datetime |
+| timestamp | real |
+| tlsCipher | string |
+| tlsUsed | string |
+| tlsVersion | string |
+| totalSizeAttachments | string |
+| urlCategory | string |
+| virusFound | string |
 
 ## Solutions (1)
 

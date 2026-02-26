@@ -10,6 +10,88 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (75 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Snowflake_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| BYTES_DELETED_d | real |
+| BYTES_READ_FROM_RESULT_d | real |
+| BYTES_SCANNED_d | real |
+| BYTES_SENT_OVER_THE_NETWORK_d | real |
+| BYTES_SPILLED_TO_LOCAL_STORAGE_d | real |
+| BYTES_SPILLED_TO_REMOTE_STORAGE_d | real |
+| BYTES_WRITTEN_d | real |
+| BYTES_WRITTEN_TO_RESULT_d | real |
+| CLIENT_IP_s | string |
+| CLUSTER_NUMBER_d | real |
+| COMPILATION_TIME_d | real |
+| Computer | string |
+| CREDITS_USED_CLOUD_SERVICES_d | real |
+| DATABASE_ID_d | real |
+| DATABASE_NAME_s | string |
+| END_TIME_t | datetime |
+| ERROR_CODE_s | string |
+| ERROR_MESSAGE_s | string |
+| EVENT_ID_d | real |
+| EVENT_TIMESTAMP_t | datetime |
+| EVENT_TYPE_s | string |
+| EXECUTION_STATUS_s | string |
+| EXECUTION_TIME_s | string |
+| EXTERNAL_FUNCTION_TOTAL_INVOCATIONS_s | string |
+| EXTERNAL_FUNCTION_TOTAL_RECEIVED_BYTES_s | string |
+| EXTERNAL_FUNCTION_TOTAL_RECEIVED_ROWS_s | string |
+| EXTERNAL_FUNCTION_TOTAL_SENT_BYTES_s | string |
+| EXTERNAL_FUNCTION_TOTAL_SENT_ROWS_s | string |
+| FIRST_AUTHENTICATION_FACTOR_s | string |
+| INBOUND_DATA_TRANSFER_BYTES_s | string |
+| IS_CLIENT_GENERATED_STATEMENT_b | bool |
+| IS_SUCCESS_s | string |
+| LIST_EXTERNAL_FILES_TIME_t | datetime |
+| ManagementGroupName | string |
+| MG | string |
+| OUTBOUND_DATA_TRANSFER_BYTES_d | real |
+| PARTITIONS_SCANNED_s | string |
+| PARTITIONS_TOTAL_d | real |
+| PERCENTAGE_SCANNED_FROM_CACHE_d | real |
+| QUERY_ID_g | string |
+| QUERY_LOAD_PERCENT_d | real |
+| QUERY_TAG_s | string |
+| QUERY_TEXT_s | string |
+| QUERY_TYPE_s | string |
+| QUEUED_OVERLOAD_TIME_d | real |
+| QUEUED_PROVISIONING_TIME_d | real |
+| QUEUED_REPAIR_TIME_d | real |
+| RawData | string |
+| RELATED_EVENT_ID_s | string |
+| RELEASE_VERSION_s | string |
+| REPORTED_CLIENT_TYPE_s | string |
+| REPORTED_CLIENT_VERSION_s | string |
+| ROLE_NAME_s | string |
+| ROWS_DELETED_d | real |
+| ROWS_INSERTED_d | real |
+| ROWS_PRODUCED_d | real |
+| ROWS_UNLOADED_s | string |
+| ROWS_UPDATED_s | string |
+| SCHEMA_ID_s | string |
+| SCHEMA_NAME_s | string |
+| SESSION_ID_d | real |
+| source_table_s | string |
+| SourceSystem | string |
+| START_TIME_t | datetime |
+| TenantId | string |
+| TimeGenerated | datetime |
+| TOTAL_ELAPSED_TIME_s | string |
+| TRANSACTION_BLOCKED_TIME_s | string |
+| Type | string |
+| USER_NAME_s | string |
+| WAREHOUSE_ID_s | string |
+| WAREHOUSE_NAME_s | string |
+| WAREHOUSE_SIZE_s | string |
+| WAREHOUSE_TYPE_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

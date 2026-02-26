@@ -10,6 +10,36 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/RedCanaryDetections_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| _SubscriptionId | string |
+| child_process_iocs_s | string |
+| Computer | string |
+| cross_process_iocs_s | string |
+| detection_details_s | string |
+| detection_headline_s | string |
+| detection_id_s | string |
+| detection_severity_s | string |
+| detection_url_s | string |
+| file_modification_iocs_s | string |
+| host_full_name_s | string |
+| host_name_s | string |
+| host_os_family_s | string |
+| host_os_version_s | string |
+| identities_s | string |
+| network_connection_iocs_s | string |
+| process_iocs_s | string |
+| RawData | string |
+| registry_modification_iocs_s | string |
+| tactics_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

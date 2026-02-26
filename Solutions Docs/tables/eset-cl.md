@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/eset_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| event_type_s | string |
+| hostname_s | string |
+| ipv4_s | string |
+| object_uri_s | string |
+| scanner_id_s | string |
+| threat_name_s | string |
+| TimeGenerated | datetime |
+| username_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

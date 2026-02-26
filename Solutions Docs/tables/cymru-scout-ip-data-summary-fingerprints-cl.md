@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cymru_Scout_IP_Data_Summary_Fingerprints_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| count | real |
+| end_date | string |
+| first_seen | string |
+| ip | string |
+| last_seen | string |
+| port | real |
+| signature | string |
+| start_date | string |
+| summary_fingerprint_type | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

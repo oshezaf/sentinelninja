@@ -10,6 +10,39 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_smartpcap_stats_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| byte_drops_d | real |
+| byte_writes_d | real |
+| cap_bytes_d | real |
+| cap_flows_d | real |
+| flow_pauses_d | real |
+| flow_resumes_d | real |
+| flows_buffered_d | real |
+| lever_failures_d | real |
+| lever_triggers_d | real |
+| packet_drops_d | real |
+| packet_writes_d | real |
+| rule_stats_s | string |
+| socket_closes_d | real |
+| socket_connects_d | real |
+| socket_errors_d | real |
+| socket_timeouts_d | real |
+| socket_writes_d | real |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+| uncap_flows_buflimit_d | real |
+| uncap_flows_closed_d | real |
+| unknown_bytes_d | real |
+| unknown_packets_d | real |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

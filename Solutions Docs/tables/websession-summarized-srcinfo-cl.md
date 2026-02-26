@@ -13,6 +13,28 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WebSession_Summarized_SrcInfo_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| DstBytes_d | int |
+| EventCount_d | int |
+| EventProduct_s | string |
+| EventResult_s | string |
+| EventResultDetails_s | string |
+| EventTime_t | datetime |
+| EventType_s | string |
+| EventVendor_s | string |
+| HttpContentType_s | string |
+| HttpRequestMethod_s | string |
+| HttpUserAgent_s | string |
+| NetworkApplicationProtocol_s | string |
+| SrcBytes_d | int |
+| TimeGenerated | datetime |
+| UrlCategory_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

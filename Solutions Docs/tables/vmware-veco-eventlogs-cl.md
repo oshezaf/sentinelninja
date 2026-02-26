@@ -10,6 +10,20 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (7 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VMware_VECO_EventLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| category | string |
+| detail | string |
+| event | string |
+| eventTime | datetime |
+| message | string |
+| severity | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -10,6 +10,24 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumSCCMClientHealth_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Age_s | string |
+| Computer | string |
+| Computer_Name_s | string |
+| Count_s | string |
+| Health_Status_s | string |
+| IP_Address_s | string |
+| OS_Platform_s | string |
+| RawData | string |
+| Reason_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

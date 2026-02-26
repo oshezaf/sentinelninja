@@ -10,6 +10,16 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (3 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID/Data%20Connectors/BigIDDSPMLogs_ccp/BigIDDSPMLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| datasource | dynamic |
+| dspmCase | dynamic |
+| expand | dynamic |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

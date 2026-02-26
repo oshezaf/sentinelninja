@@ -11,6 +11,22 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ApacheHTTPServer_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ItemId | string |
+| _ResourceId | string |
+| Computer | string |
+| ItemId | string |
+| RawData | string |
+| ResourceId | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (3)
 

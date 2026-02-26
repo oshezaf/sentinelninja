@@ -14,7 +14,21 @@ Evidence info about where a specific software was detected on a device
 |:----------|:------|
 | **Category** | MDE |
 | **Ingestion API Supported** | ✗ No |
-| **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwareevidencebeta-table) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwareevidencebeta-table) |
+
+## Schema (7 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareevidencebeta)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| DeviceId | string | Unique identifier for the device in the service |
+| DiskPaths | dynamic | Disk paths where file-level evidence indicating the existence of the software on a device was detected |
+| LastSeenTime | string | Date and time when the device was last seen by this service |
+| RegistryPaths | dynamic | Registry paths where evidence indicating the existence of the software on a device was detected |
+| SoftwareName | string | Name of the software product |
+| SoftwareVendor | string | Name of the software publisher |
+| SoftwareVersion | string | Version number of the software product |
 
 ---
 

@@ -10,6 +10,34 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (21 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_smb_mapping_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _timestamp_s | string |
+| _timestamp_t | datetime |
+| _version_s | string |
+| _write_ts_t | datetime |
+| id_orig_h_s | string |
+| id_orig_l2_addr_s | string |
+| id_orig_l2_vendor_s | string |
+| id_orig_p_d | real |
+| id_resp_h_s | string |
+| id_resp_l2_addr_s | string |
+| id_resp_l2_vendor_s | string |
+| id_resp_p_d | real |
+| native_file_system_s | string |
+| path_s | string |
+| service_s | string |
+| share_type_s | string |
+| sid | string |
+| TimeGenerated | datetime |
+| uid_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

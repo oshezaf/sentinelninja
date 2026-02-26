@@ -10,6 +10,7 @@
 |:----------|:------|
 | **Category** | Normalized |
 | **Ingestion API Supported** | ✓ Yes |
+| **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
 ---
 

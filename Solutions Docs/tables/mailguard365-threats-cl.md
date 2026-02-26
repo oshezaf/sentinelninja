@@ -11,6 +11,46 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (32 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MailGuard365_Threats_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Action_s | string |
+| Attachments_s | string |
+| Category | string |
+| CcHeader_s | string |
+| CustomerTenantId_g | string |
+| Email_s | string |
+| ForefrontAntiSpam_s | string |
+| HasAttachment_b | bool |
+| HasImage_b | bool |
+| HeaderMessageId_s | string |
+| IsInBlackList_b | bool |
+| IsInWhiteList_b | bool |
+| MessageDate_t | datetime |
+| MessageId_s | string |
+| MessageSize_d | real |
+| MicrosoftAntiSpam_s | string |
+| OriginCountry_s | string |
+| ReceivedDateTime_d | real |
+| ReceivedHeaders_s | string |
+| Recipients_s | string |
+| Score_d | real |
+| Sender_Domain_s | datetime |
+| Sender_Email_s | real |
+| SenderHeader_s | string |
+| SourceSystem | string |
+| Subject_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| ToHeader_s | guid |
+| Type | string |
+| UserId_g | string |
+| Virus_b | bool |
 
 ## Solutions (1)
 

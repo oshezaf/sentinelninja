@@ -10,6 +10,23 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (10 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _id | string |
+| boolean_metric_value | string |
+| hostname | string |
+| metric_name | string |
+| metric_true_count | string |
+| metric_type | string |
+| metric_value | string |
+| package_version | string |
+| serial | string |
+| timestamp | int |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -10,6 +10,31 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NetBackupAlerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| auditAttributes_s | string |
+| auditDateTime_d | string |
+| auditDateTime_t [UTC] | datetime |
+| Category | string |
+| Computer | string |
+| ManagementGroupName | string |
+| Message | string |
+| MG | string |
+| operation_s | string |
+| RawData | string |
+| reason_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| tenantId_g | string |
+| TimeGenerated [UTC] | datetime |
+| Type | string |
+| userName_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

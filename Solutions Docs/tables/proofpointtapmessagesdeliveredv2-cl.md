@@ -11,6 +11,43 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (29 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_CCP/ProofpointTAP_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ccAddresses | dynamic |
+| cluster | string |
+| completelyRewritten | boolean |
+| fromAddress | dynamic |
+| GUID | string |
+| headerFrom | string |
+| headerReplyTo | string |
+| id | string |
+| impostorScore | int |
+| malwareScore | int |
+| messageID | string |
+| messageParts | dynamic |
+| messageSize | int |
+| messageTime | datetime |
+| modulesRun | dynamic |
+| phishScore | int |
+| policyRoutes | dynamic |
+| QID | string |
+| quarantineFolder | string |
+| quarantineRule | string |
+| recipient | dynamic |
+| replyToAddress | dynamic |
+| sender | string |
+| senderIP | string |
+| spamScore | int |
+| subject | string |
+| threatsInfoMap | dynamic |
+| toAddresses | dynamic |
+| xmailer | dynamic |
 
 ## Solutions (1)
 

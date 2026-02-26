@@ -14,7 +14,22 @@ Hardware and firmware information of devices as checked by Defender Vulnerabilit
 |:----------|:------|
 | **Category** | MDE |
 | **Ingestion API Supported** | ✗ No |
-| **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmhardwarefirmware-table) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmhardwarefirmware-table) |
+
+## Schema (8 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmhardwarefirmware)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AdditionalFields | dynamic | Additional information about the components in JSON array format |
+| ComponentFamily | string | Component family or class, a grouping of components that have similar features or characteristics as determined by the manufacturer |
+| ComponentName | string | Name of hardware or firmware component |
+| ComponentType | string | Type of hardware or firmware component |
+| ComponentVersion | string | Component version (for example, BIOS version) |
+| DeviceId | string | Unique identifier for the device in the service |
+| DeviceName | string | Fully qualified domain name (FQDN) of the device |
+| Manufacturer | string | Manufacturer of hardware or firmware component |
 
 ---
 

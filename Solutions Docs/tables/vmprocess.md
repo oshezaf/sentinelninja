@@ -14,7 +14,43 @@ Reference for VMProcess table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmprocess) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmprocess) |
+
+## Schema (29 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmprocess)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AgentId | string | Unique ID for the dependency agent installed on the server. |
+| CommandLine | string | The command line |
+| CompanyName | string | The name of the company |
+| Computer | string | The name of the computer. |
+| Description | string | The process description |
+| DisplayName | string | The friendly display name of the process |
+| ExecutableName | string | The name of the process executable |
+| ExecutablePath | string | The path to the executable file |
+| FileVersion | string | The file version |
+| FirstPid | int | The first PID in the process pool |
+| Group | string | The process group name for the process |
+| InternalName | string | The internal name |
+| Machine | string | The machine name of the server. |
+| Process | string | The name of the process. |
+| ProductName | string | The name of the product |
+| ProductVersion | string | The product version |
+| Role | string | The role of the process. |
+| Services | dynamic | A list of services associated with the process. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| StartTime | datetime | The process pool start time |
+| TimeGenerated | datetime | Date and time the record was created. |
+| Type | string | The name of the table |
+| UserDomain | string | The domain under which the process is executing |
+| UserName | string | The account under which the process is executing |
+| WorkingDirectory | string | The working directory |
 
 ## Solutions (1)
 

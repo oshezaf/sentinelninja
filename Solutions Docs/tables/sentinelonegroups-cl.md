@@ -11,6 +11,29 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneGroups_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| CreatedAt | datetime |
+| Creator | string |
+| CreatorId | string |
+| FilterId | string |
+| FilterName | string |
+| GroupType | string |
+| Id | string |
+| Inherits | string |
+| IsDefault | string |
+| Name | string |
+| Rank | real |
+| RegistrationToken | string |
+| SiteId | string |
+| TotalAgents | string |
+| UpdatedAt | datetime |
 
 ## Solutions (1)
 

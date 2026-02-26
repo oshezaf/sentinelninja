@@ -11,6 +11,44 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyberSixgill_Alerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| alert_name | string |
+| alert_type_id | string |
+| assets | string |
+| Category | string |
+| Computer | string |
+| content | string |
+| date | string |
+| id | string |
+| lang | string |
+| langcode | string |
+| ManagementGroupName | string |
+| MG | string |
+| portal_url | string |
+| RawData | string |
+| read | bool |
+| Severity | int |
+| SourceSystem | string |
+| status_name | string |
+| sub_alerts | string |
+| sub_alertsize | real |
+| TenantId | string |
+| threat_actor | string |
+| threat_level | string |
+| threatource | string |
+| threats | string |
+| TimeGenerated | datetime |
+| title | string |
+| Type | string |
+| user_id | string |
 
 ## Solutions (1)
 

@@ -11,6 +11,34 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (20 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TrendMicro_XDR_WORKBENCH_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alertProvider_s | string |
+| alertTriggerTimestamp_t | datetime |
+| createdTime_t | datetime |
+| description_s | string |
+| FileDirectory_s | string |
+| FileName_s | string |
+| impactScope_Summary_s | string |
+| model_s | string |
+| priorityScore_d | int |
+| ProcessCommandLine_s | string |
+| RegistryKey_s | string |
+| RegistryValue_s | string |
+| RegistryValueName_s | string |
+| severity_s | string |
+| TimeGenerated | datetime |
+| UserAccountName_s | string |
+| UserAccountNTDomain_s | string |
+| workbenchId_s | string |
+| workbenchLink_s | string |
+| workbenchName_s | string |
 
 ## Solutions (1)
 

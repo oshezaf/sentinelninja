@@ -10,6 +10,22 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/QualysHostDetectionV2_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Detections_s | dynamic |
+| HostId_s | string |
+| IPAddress | string |
+| NetBios_s | string |
+| QID_s | string |
+| Results_0_s | string |
+| Severity_s | string |
+| Status_s | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

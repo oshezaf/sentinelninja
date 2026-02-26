@@ -10,6 +10,43 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Authomize_v2_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| app_s | string |
+| assigneeId_s | string |
+| availability_Value_d | real |
+| Category | string |
+| compliance_s | string |
+| createdAt_t | datetime |
+| critical_Threshold_d | real |
+| description_s | string |
+| duration_d | real |
+| entities_s | string |
+| ID_g | guid |
+| id_s | string |
+| IsActive_s | string |
+| isResolved_b | bool |
+| measurement_Name_s | string |
+| performance_Value_d | real |
+| policy_id_s | string |
+| policy_name_s | string |
+| policy_templateId_s | string |
+| policyId_s | string |
+| recommendation_s | string |
+| severity_s | string |
+| slot_ID_d | real |
+| status_s | string |
+| tactics_s | string |
+| techniques_s | string |
+| TimeGenerated | datetime |
+| updatedAt_t | datetime |
+| url_s | string |
+| warning_Threshold_d | real |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

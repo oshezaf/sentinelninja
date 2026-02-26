@@ -11,6 +11,37 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Mimecast_Awareness_User_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| clickedIp | string |
+| department | string |
+| email | string |
+| items | string |
+| name | string |
+| numCampaignsClicked | real |
+| numCampaignsClickedScanned | real |
+| numCampaignsScanned | real |
+| numCampaignsSent | real |
+| numCorrectAnswers | real |
+| numIncorrectAnswers | real |
+| numTrainingModulesAssigned | real |
+| reactionTime | real |
+| status | string |
+| templateName | string |
+| timeClicked | datetime |
+| TimeGenerated | datetime |
+| timeOpened | datetime |
+| timeReported | datetime |
+| timeScanned | datetime |
+| timeScheduled | datetime |
+| timeSubmitted | datetime |
+| userState | string |
 
 ## Solutions (1)
 

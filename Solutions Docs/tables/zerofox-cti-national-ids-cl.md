@@ -11,6 +11,23 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFox_CTI_national_ids_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| breach_name_s | string |
+| country_s | string |
+| created_at_t | datetime |
+| first_name_s | string |
+| last_name_s | string |
+| national_identifier_s | string |
+| person_name_s | string |
+| source_s | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

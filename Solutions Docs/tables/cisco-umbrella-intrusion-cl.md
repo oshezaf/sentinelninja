@@ -11,6 +11,38 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (24 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_intrusion_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action_s | string |
+| attack_classification_s | string |
+| AWS_region_s | string |
+| CVEs_s | string |
+| destination_IP_s | string |
+| destination_Port_d | real |
+| direction_s | string |
+| firewall_rule_ID_s | string |
+| generator_id_s | string |
+| identities_s | string |
+| identity_types_s | string |
+| IP_protocol_s | string |
+| IPS_config_type_s | string |
+| operation_mode_s | string |
+| policy_resource_ID_s | string |
+| session_ID_s | string |
+| severity_s | string |
+| signature_ID_s | string |
+| signature_List_ID_s | string |
+| signature_message_s | string |
+| source_IP_s | string |
+| source_port_d | real |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
 
 ## Solutions (1)
 

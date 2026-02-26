@@ -11,6 +11,49 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (35 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Entities_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| account_type | dynamic |
+| assignment | dynamic |
+| assignment_assigned_by | dynamic |
+| assignment_assigned_by_id | real |
+| assignment_assigned_by_username | string |
+| assignment_assigned_to | dynamic |
+| assignment_assigned_to_id | real |
+| assignment_assigned_to_username | string |
+| assignment_date_assigned | datetime |
+| assignment_id | real |
+| attack_profile | string |
+| attack_rating | real |
+| breadth_contrib | real |
+| detection_set | dynamic |
+| entity_type | string |
+| host_type | dynamic |
+| id | real |
+| importance | real |
+| ip | string |
+| is_prioritized | bool |
+| last_detection_timestamp | datetime |
+| last_modified_timestamp | datetime |
+| name | string |
+| notes | dynamic |
+| privilege_category | string |
+| privilege_level | real |
+| sensors | dynamic |
+| severity | string |
+| state | string |
+| tags | dynamic |
+| TimeGenerated | datetime |
+| Type | string |
+| urgency_score | real |
+| url | string |
+| velocity_contrib | real |
 
 ## Solutions (1)
 

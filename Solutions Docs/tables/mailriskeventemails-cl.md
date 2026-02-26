@@ -10,6 +10,19 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (6 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk/Data%20Connectors/MailRisk_CCP/MailRisk_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| company_id | int |
+| created_at | string |
+| email | string |
+| email_id | int |
+| event | string |
+| event_id | int |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -10,6 +10,36 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_datared_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| conn_red_d | real |
+| conn_total_d | real |
+| dns_coal_miss_d | real |
+| dns_red_d | real |
+| dns_total_d | real |
+| files_coal_miss_d | real |
+| files_red_d | real |
+| files_total_d | real |
+| http_red_d | real |
+| http_total_d | real |
+| ssl_coal_miss_d | real |
+| ssl_red_d | real |
+| ssl_total_d | real |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+| weird_red_d | real |
+| weird_total_d | real |
+| x509_coal_miss_d | real |
+| x509_red_d | real |
+| x509_total_d | real |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

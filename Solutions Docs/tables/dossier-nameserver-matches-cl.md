@@ -11,6 +11,33 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (19 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_nameserver_matches_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| domain_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| ns_reputation_confidence_s | string |
+| ns_reputation_label_s | string |
+| ns_reputation_malicious_counts_s | string |
+| ns_reputation_popular_s | string |
+| ns_reputation_rare_s | string |
+| ns_reputation_raw_score_s | string |
+| ns_reputation_score_s | string |
+| ns_reputation_total_counts_s | string |
+| RawData | string |
+| SourceSystem | string |
+| task_id_g | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

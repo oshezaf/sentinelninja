@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_reporter_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| Level | string |
+| location_s | string |
+| Message | string |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

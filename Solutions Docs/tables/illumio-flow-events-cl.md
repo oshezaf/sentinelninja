@@ -11,6 +11,50 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (36 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Illumio_Flow_Events_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ItemId | string |
+| class | string |
+| code | int |
+| ddms | int |
+| dir | string |
+| dst_dbi | int |
+| dst_dbo | int |
+| dst_hostname | string |
+| dst_href | string |
+| dst_ip | string |
+| dst_labels | dynamic |
+| dst_port | int |
+| dst_tbi | int |
+| dst_tbo | int |
+| flow_count | int |
+| icmp_type | int |
+| interval_sec | int |
+| network | string |
+| org_id | int |
+| pce_fqdn | string |
+| pd | int |
+| pd_qualifier | int |
+| pn | string |
+| proto | int |
+| sn | string |
+| src_hostname | string |
+| src_href | string |
+| src_ip | string |
+| src_labels | dynamic |
+| state | string |
+| tdms | int |
+| TenantId | string |
+| TimeGenerated | datetime |
+| type | int |
+| un | string |
+| version | int |
 
 ## Solutions (2)
 

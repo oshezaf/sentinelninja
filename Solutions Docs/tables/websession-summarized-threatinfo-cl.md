@@ -13,6 +13,27 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WebSession_Summarized_ThreatInfo_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| DestDomain_s | string |
+| DstIpAddr_s | string |
+| EventCount_d | string |
+| EventResult_s | string |
+| EventSeverity_s | string |
+| EventTime_t | datetime |
+| SrcIpAddr_s | string |
+| SrcUsername_s | string |
+| ThreatCategory_s | string |
+| ThreatField_s | string |
+| ThreatName_s | string |
+| ThreatOriginalConfidence_d | int |
+| ThreatRiskLevel_d | int |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

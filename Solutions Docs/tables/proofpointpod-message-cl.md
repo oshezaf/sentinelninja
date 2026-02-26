@@ -10,6 +10,123 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (110 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ProofpointPOD_message_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| connection_country_s | string |
+| connection_helo_s | string |
+| connection_host_s | string |
+| connection_ip_s | string |
+| connection_protocol_s | string |
+| connection_resolveStatus_s | string |
+| connection_sid_s | string |
+| connection_tls_inbound_cipher_s | string |
+| connection_tls_inbound_cipherBits_d | real |
+| connection_tls_inbound_version_s | string |
+| envelope_from_s | string |
+| envelope_fromHashed_s | string |
+| envelope_rcpts_s | string |
+| envelope_rcptsHashed_s | string |
+| event_type_s | string |
+| EventProduct | string |
+| EventVendor | string |
+| filter_actions_s | string |
+| filter_disposition_s | string |
+| filter_durationSecs_d | real |
+| filter_modules_av_virusNames_s | string |
+| filter_modules_dkimv_s | string |
+| filter_modules_dmarc_alignment_s | string |
+| filter_modules_dmarc_authResults_s | string |
+| filter_modules_dmarc_filterdResult_s | string |
+| filter_modules_dmarc_records_s | string |
+| filter_modules_dmarc_srvid_s | string |
+| filter_modules_pdr_v2_response_s | string |
+| filter_modules_pdr_v2_rscore_d | real |
+| filter_modules_spam_charsets_s | string |
+| filter_modules_spam_langs_s | string |
+| filter_modules_spam_safeBlockedListMatches_s | string |
+| filter_modules_spam_scores_classifiers_s | string |
+| filter_modules_spam_scores_engine_d | real |
+| filter_modules_spam_scores_overall_d | real |
+| filter_modules_spam_triggeredClassifier_s | string |
+| filter_modules_spam_version_definitions_s | string |
+| filter_modules_spam_version_engine_s | string |
+| filter_modules_spf_domain_s | string |
+| filter_modules_spf_result_s | string |
+| filter_modules_urldefense_counts_noRewriteIsEmail_d | real |
+| filter_modules_urldefense_counts_noRewriteIsExcludedDomain_d | real |
+| filter_modules_urldefense_counts_noRewriteIsLargeMsgPartSize_d | real |
+| filter_modules_urldefense_counts_noRewriteIsMaxLengthExceeded_d | real |
+| filter_modules_urldefense_counts_noRewriteIsSchemeless_d | real |
+| filter_modules_urldefense_counts_noRewriteIsUnsupportedScheme_d | real |
+| filter_modules_urldefense_counts_rewritten_d | real |
+| filter_modules_urldefense_counts_total_d | real |
+| filter_modules_urldefense_counts_unique_d | real |
+| filter_modules_urldefense_version_engine_s | string |
+| filter_modules_zerohour_score_s | string |
+| filter_msgSizeBytes_d | real |
+| filter_origGuid_s | string |
+| filter_qid_s | string |
+| filter_quarantine_folder_s | string |
+| filter_quarantine_rule_s | string |
+| filter_routeDirection_s | string |
+| filter_routes_s | string |
+| filter_startTime_t | datetime |
+| filter_suborgs_rcpts_s | string |
+| filter_suborgs_sender_s | string |
+| filter_throttleIp_s | string |
+| filter_verified_rcpts_s | string |
+| filter_verified_rcptsHashed_s | string |
+| guid_s | string |
+| metadata_origin_data_agent_s | string |
+| metadata_origin_data_cid_s | string |
+| metadata_origin_data_version_s | string |
+| msg_header_cc_s | string |
+| msg_header_ccHashed_s | string |
+| msg_header_from_s | string |
+| msg_header_fromHashed_s | string |
+| msg_header_message_id_s | string |
+| msg_header_reply_to_s | string |
+| msg_header_reply_toHashed_s | string |
+| msg_header_return_path_s | string |
+| msg_header_return_pathHashed_s | string |
+| msg_header_subject_s | string |
+| msg_header_to_s | string |
+| msg_header_toHashed_s | string |
+| msg_header_x_mailer_s | string |
+| msg_header_x_originating_ip_s | string |
+| msg_lang_s | string |
+| msg_normalizedHeader_cc_s | string |
+| msg_normalizedHeader_ccHashed_s | string |
+| msg_normalizedHeader_from_s | string |
+| msg_normalizedHeader_fromHashed_s | string |
+| msg_normalizedHeader_message_id_s | string |
+| msg_normalizedHeader_reply_to_s | string |
+| msg_normalizedHeader_reply_toHashed_s | string |
+| msg_normalizedHeader_return_path_s | string |
+| msg_normalizedHeader_return_pathHashed_s | string |
+| msg_normalizedHeader_subject_s | string |
+| msg_normalizedHeader_to_s | string |
+| msg_normalizedHeader_toHashed_s | string |
+| msg_normalizedHeader_x_mailer_s | string |
+| msg_normalizedHeader_x_originating_ip_s | string |
+| msg_parsedAddresses_cc_s | string |
+| msg_parsedAddresses_ccHashed_s | string |
+| msg_parsedAddresses_from_s | string |
+| msg_parsedAddresses_fromHashed_s | string |
+| msg_parsedAddresses_to_s | string |
+| msg_parsedAddresses_toHashed_s | string |
+| msg_sizeBytes_d | real |
+| msgParts_s | string |
+| pps_agent_s | string |
+| pps_cid_s | string |
+| pps_version_s | string |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

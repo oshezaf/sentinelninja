@@ -11,6 +11,23 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/datawizaserveraccess_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| event | dynamic |
+| host | dynamic |
+| log | dynamic |
+| ls_timestamp | datetime |
+| ls_version | string |
+| message | string |
+| received_at | datetime |
+| Status_d | int |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20ETD%20Cloud/Data%20Connectors/SAPETD_PUSH_CCP/SAPETD_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AlertId | int |
+| CreationTimestamp | datetime |
+| MaxTimestamp | datetime |
+| Measure | int |
+| MinTimestamp | datetime |
+| NormalizedTriggeringEvents | dynamic |
+| PatternDescription | string |
+| PatternName | string |
+| Score | int |
+| Status | string |
+| Threshold | int |
+| Version | string |
 
 ## Solutions (1)
 

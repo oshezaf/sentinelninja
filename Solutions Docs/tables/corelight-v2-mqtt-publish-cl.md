@@ -10,6 +10,30 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_mqtt_publish_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| from_client_b | bool |
+| id_orig_h_s | string |
+| id_orig_p_d | real |
+| id_resp_h_s | string |
+| id_resp_p_d | real |
+| payload_len_d | real |
+| payload_s | string |
+| qos_s | string |
+| retain_b | bool |
+| status_s | string |
+| TimeGenerated | datetime |
+| topic_s | string |
+| ts_t | datetime |
+| uid_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

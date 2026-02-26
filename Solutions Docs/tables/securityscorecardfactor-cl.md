@@ -10,6 +10,36 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SecurityScorecardFactor_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| body_s | string |
+| Computer | string |
+| dateToday_s | string |
+| dateYesterday_s | string |
+| Factor_Name_s | string |
+| Factor_s | string |
+| factorDescription_s | string |
+| industry_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| portfolioId_s | string |
+| portfolioName_s | string |
+| RawData | string |
+| scoreChange_d | real |
+| scoreToday_d | real |
+| scoreYesterday_d | real |
+| severity_s | string |
+| SourceSystem | string |
+| subject_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

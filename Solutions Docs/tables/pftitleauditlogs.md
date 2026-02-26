@@ -14,7 +14,32 @@ Reference for PFTitleAuditLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pftitleauditlogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pftitleauditlogs) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (17 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/pftitleauditlogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Level | string | The severity level of the log, will be one of Informational, Warning, Error, or Critical. |
+| Location | string | The region of the Azure PlayFab Title, generating the log. |
+| ModifiedPlayerId | string | Player ID on which the action taken. |
+| OperationName | string | The operation name combined with operation type represents the action performed for which the log was generated. |
+| OperationType | string | The operation name combined with operation type represents the action performed for which the log was generated. |
+| PlayFabPlayerAccountPoolId | string | ID of Azure PlayFab PlayerAccountPool associated with the Azure PlayFab Title for which the log was generated. |
+| PlayFabTitleId | string | ID of Azure PlayFab Title for which the log was generated. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Timestamp (UTC) when the log was generated. |
+| Type | string | The name of the table |
+| UserId | string | ID of the user who performed the action which generated the log. |
+| UserName | string | Name or Email of the user who performed the action which generated the log. |
 
 ---
 

@@ -15,7 +15,51 @@ Reference for SecurityAlert table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityalert) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityalert) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (35 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityalert)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AlertLink | string |  |
+| AlertName | string |  |
+| AlertSeverity | string |  |
+| AlertType | string |  |
+| CompromisedEntity | string |  |
+| ConfidenceLevel | string |  |
+| ConfidenceScore | real |  |
+| Description | string |  |
+| DisplayName | string |  |
+| EndTime | datetime |  |
+| Entities | string |  |
+| ExtendedLinks | string |  |
+| ExtendedProperties | string |  |
+| IsIncident | bool |  |
+| ProcessingEndTime | datetime |  |
+| ProductComponentName | string |  |
+| ProductName | string |  |
+| ProviderName | string |  |
+| RemediationSteps | string |  |
+| ResourceId | string |  |
+| SourceComputerId | string |  |
+| StartTime | datetime |  |
+| Status | string |  |
+| SubTechniques | string |  |
+| SystemAlertId | string |  |
+| Tactics | string |  |
+| Techniques | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| VendorName | string |  |
+| VendorOriginalId | string |  |
+| WorkspaceResourceGroup | string |  |
+| WorkspaceSubscriptionId | string |  |
 
 ## Additional Information
 

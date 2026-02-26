@@ -10,6 +10,83 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (70 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ForescoutOtAlert_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AlertCategory | dynamic |
+| AlertData | dynamic |
+| AlertId | dynamic |
+| CaseId | dynamic |
+| CaseName | dynamic |
+| CommandCenterIpAddr | string |
+| Desc | dynamic |
+| DownDataLength | dynamic |
+| DstHostName | dynamic |
+| DstIpAddr | string |
+| DstMacAddr | string |
+| DstMacVendor | dynamic |
+| DstNetworkName | dynamic |
+| DstPort | dynamic |
+| EngineName | dynamic |
+| ExpFieldVals | dynamic |
+| ExpStrChars | dynamic |
+| ExpStrEnc | dynamic |
+| ExpStrScripts | dynamic |
+| FeaAlertCount | dynamic |
+| FeaAlertDetailCount | dynamic |
+| FeaDurationSec | dynamic |
+| FeaStartFormatted | dynamic |
+| FeaStartMillisec | dynamic |
+| FeaState | dynamic |
+| FieldPath | dynamic |
+| FieldVal | dynamic |
+| L2Proto | dynamic |
+| L3Proto | dynamic |
+| L4Proto | dynamic |
+| L7Proto | dynamic |
+| Labels | dynamic |
+| MitreTactics | dynamic |
+| MitreTacticsDescription | dynamic |
+| MitreTacticsExternalLink | dynamic |
+| MitreTacticsId | dynamic |
+| MitreTacticsName | dynamic |
+| MitreTacticsTechniques | dynamic |
+| MitreTechniques | dynamic |
+| MitreTechniquesCode | dynamic |
+| MitreTechniquesDescription | dynamic |
+| MitreTechniquesId | dynamic |
+| MitreTechniquesName | dynamic |
+| Name | dynamic |
+| PcapSha1 | dynamic |
+| ProfId | dynamic |
+| ProfModName | dynamic |
+| SdVersion | dynamic |
+| SensorName | dynamic |
+| Severity | dynamic |
+| SeverityNum | dynamic |
+| SrcHostName | dynamic |
+| SrcIpAddr | string |
+| SrcMacAddr | string |
+| SrcMacVendor | dynamic |
+| SrcPort | dynamic |
+| Status | dynamic |
+| StreamDir | dynamic |
+| StrEnc | dynamic |
+| StrScript | dynamic |
+| StrUnusualChars | dynamic |
+| Time | dynamic |
+| TimeGenerated | datetime |
+| TimeStampFormatted | dynamic |
+| TimeStampFormattedRFC5424 | dynamic |
+| TimeStampMillisec | dynamic |
+| TypeId | dynamic |
+| UpDataLength | dynamic |
+| UploadTime | datetime |
+| Vlan | dynamic |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,90 @@
 | **Category** | GCP |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (77 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GCP_IAM_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| insert_id_s | string |
+| log_name_s | string |
+| payload__type_s | string |
+| payload_authenticationInfo_principalEmail_s | string |
+| payload_authenticationInfo_principalSubject_s | string |
+| payload_authorizationInfo_s | string |
+| payload_methodName_s | string |
+| payload_request__type_s | string |
+| payload_request_account_id_s | string |
+| payload_request_full_resource_name_s | string |
+| payload_request_key_types_s | string |
+| payload_request_name_s | string |
+| payload_request_options_requested_policy_version_d | real |
+| payload_request_page_size_d | real |
+| payload_request_page_token_s | string |
+| payload_request_parent_s | string |
+| payload_request_policy_auditConfigs_s | string |
+| payload_request_policy_bindings_s | string |
+| payload_request_policy_etag_s | string |
+| payload_request_private_key_type_d | real |
+| payload_request_remove_deleted_service_accounts_b | bool |
+| payload_request_resource_s | string |
+| payload_request_role_description_s | string |
+| payload_request_role_id_s | string |
+| payload_request_role_included_permissions_s | string |
+| payload_request_role_title_s | string |
+| payload_request_service_account_description_s | string |
+| payload_request_service_account_display_name_s | string |
+| payload_request_show_deleted_b | bool |
+| payload_request_skip_visibility_check_b | bool |
+| payload_request_update_mask_paths_s | string |
+| payload_request_view_d | real |
+| payload_requestMetadata_callerIp_s | string |
+| payload_requestMetadata_callerSuppliedUserAgent_s | string |
+| payload_requestMetadata_requestAttributes_time_s | string |
+| payload_resourceName_s | string |
+| payload_response__type_s | string |
+| payload_response_auditConfigs_s | string |
+| payload_response_bindings_s | string |
+| payload_response_description_s | string |
+| payload_response_display_name_s | string |
+| payload_response_email_s | string |
+| payload_response_etag_s | string |
+| payload_response_group_name_s | string |
+| payload_response_group_title_s | string |
+| payload_response_included_permissions_s | string |
+| payload_response_key_algorithm_d | real |
+| payload_response_key_origin_d | real |
+| payload_response_key_type_d | real |
+| payload_response_name_s | string |
+| payload_response_oauth2_client_id_s | string |
+| payload_response_private_key_type_d | real |
+| payload_response_project_id_s | string |
+| payload_response_title_s | string |
+| payload_response_unique_id_s | string |
+| payload_response_valid_after_time_seconds_d | real |
+| payload_response_valid_before_time_seconds_d | real |
+| payload_serviceData__type_s | string |
+| payload_serviceData_permissionDelta_addedPermissions_s | string |
+| payload_serviceData_permissionDelta_removedPermissions_s | string |
+| payload_serviceData_policyDelta_bindingDeltas_s | string |
+| payload_serviceName_s | string |
+| payload_status_code_d | real |
+| payload_status_message_s | string |
+| resource_labels_email_id_s | string |
+| resource_labels_location_s | string |
+| resource_labels_method_s | string |
+| resource_labels_project_id_s | string |
+| resource_labels_role_name_s | string |
+| resource_labels_service_s | string |
+| resource_labels_topic_id_s | string |
+| resource_labels_unique_id_s | string |
+| resource_labels_version_s | string |
+| resource_type_s | string |
+| severity_s | string |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
+
 ## Solutions (5)
 
 This table is used by the following solutions:

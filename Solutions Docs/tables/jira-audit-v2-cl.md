@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Data%20Connectors/JiraAuditAPISentinelConnector_ccpv2/JiraAudit_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| associatedItems | dynamic |
+| authorAccountId | string |
+| authorKey | string |
+| category | string |
+| changedValues | dynamic |
+| created | datetime |
+| eventSource | string |
+| id | int |
+| objectItem | dynamic |
+| remoteAddress | string |
+| summary | string |
 
 ## Solutions (1)
 

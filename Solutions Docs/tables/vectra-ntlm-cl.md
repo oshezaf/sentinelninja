@@ -10,6 +10,35 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (22 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/vectra_ntlm_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| domain | string |
+| hostname | string |
+| id_ip_ver | string |
+| id_orig_h | string |
+| id_orig_p | int |
+| id_resp_h | string |
+| id_resp_p | int |
+| local_orig | bool |
+| local_resp | bool |
+| orig_hostname | string |
+| orig_huid | string |
+| orig_sluid | string |
+| resp_hostname | string |
+| resp_huid | string |
+| resp_sluid | string |
+| sensor_uid | string |
+| status | string |
+| success | bool |
+| TimeGenerated | datetime |
+| ts | datetime |
+| uid | string |
+| username | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -10,6 +10,43 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Confluence_Audit_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AffectedObjectName | string |
+| AffectedObjectObjectType | string |
+| AssociatedObjects | string |
+| AuthorAccountId | string |
+| AuthorAccountType | string |
+| AuthorDisplayName | string |
+| AuthorExternalCollaborator | bool |
+| AuthorIsExternalCollaborator | bool |
+| AuthorPublicName | string |
+| AuthorType | string |
+| AuthorUserKey | string |
+| AuthorUsername | string |
+| Category | string |
+| ChangedValues | string |
+| CreationDate | real |
+| Description | string |
+| EventCategoryType | string |
+| EventCreationTime | real |
+| EventMessage | string |
+| EventProduct | string |
+| EventVendor | string |
+| RemoteAddress | string |
+| SrcIpAddr | string |
+| Summary | string |
+| SuperAdmin | bool |
+| SysAdmin | bool |
+| TimeGenerated | datetime |
+| UserIdentity | string |
+| UserName | string |
+| UserSid | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -10,6 +10,25 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/agari_apdpolicy_log_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| alert_definition_name_s | string |
+| Computer | string |
+| created_at | datetime |
+| id | dynamic |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

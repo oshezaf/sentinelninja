@@ -14,7 +14,38 @@ Reference for VCoreMongoRequests table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vcoremongorequests) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vcoremongorequests) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (23 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vcoremongorequests)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ActivityId | string | The unique identifier (GUID) for this Mongo (vCore) request. |
+| ClientIp | string | The IP address of the client VM which issued the request. |
+| ClusterName | string | Cluster name. |
+| CollectionName | string | The name of the Cosmos DB container against which this request was issued. |
+| DatabaseName | string | The name of the Cosmos DB database against which this request was issued. |
+| DurationMs | real | The server-side execution time (in ms) for this request. |
+| ErrorCode | int | The error code (if applicable) for this request. |
+| OperationName | string | The Mongo (vCore) operation that was executed. |
+| PiiCommandText | string | Full text query for this Mongo (vCore) request. |
+| RegionName | string | The region against which this request was issued. |
+| RequestLength | real | The payload size (in bytes) of the request. |
+| ResponseLength | real | The payload size (in bytes) of the server response. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Timestamp (in UTC) of the Mongo (vCore) data plane request. |
+| TransportProtocol | string | The transport protocol of the request. |
+| Type | string | The name of the table |
+| UserAgent | string | The user agent suffix associated with the client issuing the request. |
+| UserId | string | The user id associated with the client issuing the request. |
 
 ---
 

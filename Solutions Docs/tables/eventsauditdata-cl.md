@@ -11,6 +11,38 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (24 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/eventsauditdata_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _id_s | string |
+| _ResourceId | string |
+| audit_log_event_s | string |
+| ccl_s | string |
+| Computer | string |
+| count_d | real |
+| details_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| organization_unit_s | string |
+| RawData | string |
+| sAMAccountName_s | string |
+| severity_level_d | real |
+| SourceSystem | string |
+| supporting_data_data_type_s | string |
+| supporting_data_data_values_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| timestamp_d | real |
+| Type | string |
+| type_s | string |
+| ur_normalized_s | string |
+| user_s | string |
+| userPrincipalName_s | string |
 
 ## Solutions (1)
 

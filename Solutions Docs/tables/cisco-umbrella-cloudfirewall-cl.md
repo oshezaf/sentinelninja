@@ -11,6 +11,30 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (16 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_cloudfirewall_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| dataCenter_s | string |
+| destinationIp_s | string |
+| destinationPort_s | string |
+| Direction_s | string |
+| EventType_s | string |
+| Identity_s | string |
+| Identity_Type_s | string |
+| ipProtocol_s | string |
+| originId_s | string |
+| packetSize_s | string |
+| ruleId_s | string |
+| SourceIP | string |
+| sourcePort_s | string |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| verdict_s | string |
 
 ## Solutions (1)
 

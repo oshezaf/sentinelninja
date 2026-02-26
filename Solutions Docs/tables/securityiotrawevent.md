@@ -14,7 +14,30 @@ Reference for SecurityIoTRawEvent table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (15 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AgentVersion | string | The version of the agent. |
+| AssociatedResourceId | string | The associated Azure resource ID. |
+| AzureSubscriptionId | string | The Azure subscription ID. |
+| DeviceId | string | The device ID. |
+| EventDetails | string | Additional raw event details. |
+| IoTRawEventId | string | The internal raw event ID. |
+| IsEmpty | bool | Property identifying if the raw event contains data. |
+| RawEventCategory | string | The category of the raw event - periodic or triggered. |
+| RawEventName | string | The name of the raw event. |
+| RawEventType | string | The type of the raw event - security, operational or diagnostic. |
+| TimeGenerated | datetime | The date and time the raw event was generated. |
+| TimeStamp | datetime | The date and time the raw event was first detected. |
+| Type | string | The name of the table |
 
 ## Solutions (1)
 

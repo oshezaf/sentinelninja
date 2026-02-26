@@ -11,6 +11,69 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (55 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/jamfprotectalerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ActingProcessGuid | string |
+| ActingProcessId | real |
+| ActingProcessName | string |
+| DvcHostname | dynamic |
+| DvcId | dynamic |
+| DvcIpAddr | dynamic |
+| DvcOs | string |
+| DvcOsVersion | dynamic |
+| DvcSerial | dynamic |
+| EventMessage | dynamic |
+| EventOriginalType | dynamic |
+| EventOriginalUid | dynamic |
+| EventProduct | string |
+| EventProductVersion | dynamic |
+| EventResult | string |
+| EventResultMessage | dynamic |
+| EventSeverity | string |
+| EventType | string |
+| EventVendor | string |
+| input | dynamic |
+| ParentProcessGuid | string |
+| ParentProcessId | real |
+| ParentProcessName | dynamic |
+| ProcessEventSubType | string |
+| ProcessEventType | string |
+| SrcDeviceType | string |
+| TargetBinaryFilePath | dynamic |
+| TargetBinarySHA1 | dynamic |
+| TargetBinarySHA256 | dynamic |
+| TargetbinarySignerType | string |
+| TargetBinarySigningAppID | dynamic |
+| TargetBinarySigningInfoMessage | dynamic |
+| TargetBinarySigningTeamID | dynamic |
+| TargetFileExtendedAttributes | dynamic |
+| TargetFileIsAppBundle | bool |
+| TargetFileIsDirectory | bool |
+| TargetFileIsDownload | bool |
+| TargetFileIsScreenshot | bool |
+| TargetFilePath | dynamic |
+| TargetFileSHA1 | dynamic |
+| TargetFileSHA256 | dynamic |
+| TargetFileSignerType | string |
+| TargetFileSigningInfoMessage | dynamic |
+| TargetFileSigningTeamID | dynamic |
+| TargetFileSize | dynamic |
+| TargetHostname | dynamic |
+| TargetProcessCommandLine | dynamic |
+| TargetProcessCurrentDirectory | string |
+| TargetProcessGuid | dynamic |
+| TargetProcessId | dynamic |
+| TargetProcessName | dynamic |
+| TargetProcessSHA1 | string |
+| TargetProcessSHA256 | string |
+| TargetProcessStatusCode | real |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

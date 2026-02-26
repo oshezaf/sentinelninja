@@ -11,6 +11,57 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (43 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Mimecast_TTP_Url_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| actions | dynamic |
+| adminOverride | string |
+| advancedPhishingResult_CredentialTheftBrands | string |
+| advancedPhishingResult_CredentialTheftEvidence | string |
+| advancedPhishingResult_CredentialTheftTags | string |
+| Category | string |
+| creationMethod | string |
+| Date | string |
+| emailPartsDescription | dynamic |
+| fromUserEmailAddress | string |
+| messageId | string |
+| mimecastEventCategory | string |
+| mimecastEventId | string |
+| route | string |
+| scanResult | string |
+| sendingIp | string |
+| subject | string |
+| tagMap_AdvancedPhishing_CredentialTheftEvidence | string |
+| tagMap_AdvancedPhishing_CredentialTheftTags | string |
+| tagMap_AvScanning_ContentCheck_AvSignatureFileExts | string |
+| tagMap_AvScanning_ContentCheck_AvSignatureName | string |
+| tagMap_AvScanning_ContentCheck_UrlFileDownloadFilename | string |
+| tagMap_AvScanning_ScannerInfo_CategoryTrigger | string |
+| tagMap_ContentCheck_DangerousExtsUrlFileDownload | string |
+| tagMap_ContentCheck_DangerousMimetypesUrlFileDownload | string |
+| tagMap_CustomerManagedUrls_Blocklisted | string |
+| tagMap_CustomerManagedUrls_ManagedUrlEntry | string |
+| tagMap_CustomerManagedUrls_Status | string |
+| tagMap_DangerousFileExt_ContentCheck_ContentScannersBlocked | string |
+| tagMap_DangerousFileExt_Inspect_FileExts | string |
+| tagMap_DangerousFileExt_Inspect_MimeTypes | string |
+| tagMap_DangerousFileExt_Status | string |
+| tagMap_UrlReputationScan_Status | string |
+| tagMap_UrlReputationScan_Type | string |
+| tagMap_UrlReputationScan_Url | string |
+| tagMap_UrlReputationScan_UrlBlock | string |
+| TimeGenerated | datetime |
+| ttpDefinition | string |
+| url | string |
+| userAwarenessAction | string |
+| userEmailAddress | string |
+| userOverride | string |
 
 ## Solutions (1)
 

@@ -13,6 +13,51 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (38 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/tide_lookup_data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| class_s | string |
+| Computer | string |
+| confidence_d | real |
+| detected_t | datetime |
+| dga_s | string |
+| domain_s | string |
+| expiration_t | datetime |
+| extended_ais_consent_s | string |
+| extended_attack_chain_s | string |
+| extended_cyberint_guid_g | string |
+| extended_no_whitelist_s | string |
+| extended_notes_s | string |
+| extended_protocol_s | string |
+| extended_reason_s | string |
+| extended_references_s | string |
+| extended_registration_date_s | string |
+| extended_sample_sha256_s | string |
+| hash_s | string |
+| hash_type_s | string |
+| host_s | string |
+| id_g | string |
+| imported_t | datetime |
+| ip_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| profile_s | string |
+| property_s | string |
+| RawData | string |
+| received_t | datetime |
+| SourceSystem | string |
+| TenantId | string |
+| threat_level_d | real |
+| TimeGenerated | datetime |
+| tld_s | string |
+| Type | string |
+| type_s | string |
+| up_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

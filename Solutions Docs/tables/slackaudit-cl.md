@@ -10,6 +10,43 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SlackAudit_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| action_description_s | string |
+| action_s | string |
+| actor_type_s | string |
+| actor_user_email_s | string |
+| actor_user_id_s | string |
+| actor_user_name_s | string |
+| actor_user_team_s | string |
+| Computer | string |
+| context_ip_address_s | string |
+| context_location_domain_s | string |
+| context_location_id_s | string |
+| context_location_name_s | string |
+| context_location_type_s | string |
+| context_session_id_d | real |
+| context_ua_s | string |
+| date_create_d | real |
+| entity_file_filetype_s | string |
+| entity_file_id_s | string |
+| entity_file_name_s | string |
+| entity_file_title_s | string |
+| entity_type_s | string |
+| id_g | string |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

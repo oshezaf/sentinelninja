@@ -11,6 +11,40 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SquidProxy_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| _ResourceId_s | string |
+| Bytes_s | string |
+| Computer | string |
+| ContentType_s | string |
+| Description_s | string |
+| Duration_s | string |
+| EventTime_UTC__s | string |
+| ManagementGroupName | string |
+| MG | string |
+| MG_s | string |
+| PeerHost | string |
+| PeerStatus_s | string |
+| RawData | string |
+| RequstMethod_s | string |
+| ResultCode | string |
+| SourceSystem | string |
+| SrcIpAddr_s | string |
+| StatusCode_s | string |
+| TenantId | string |
+| TenantId_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| Type_s | string |
+| Url_s | string |
+| Username_s | string |
 
 ## Solutions (3)
 

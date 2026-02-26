@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MimecastDLP_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action_s | string |
+| eventTime_d | datetime |
+| messageId_s | string |
+| mimecastEventCategory_s | string |
+| mimecastEventId_s | string |
+| policy_s | string |
+| recipientAddress_s | string |
+| route_s | string |
+| senderAddress_s | string |
+| subject_s | string |
+| time_generated | datetime |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

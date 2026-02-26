@@ -11,6 +11,38 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (24 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureDevOpsAuditing/Data%20Connectors/AzureDevOpsAuditLogs_CCP/AzureDevOpsAuditLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actionId | string |
+| activityId | string |
+| actorClientId | string |
+| actorCUID | string |
+| actorDisplayName | string |
+| actorImageUrl | string |
+| actorUPN | string |
+| actorUserId | string |
+| area | string |
+| authenticationMechanism | string |
+| category | string |
+| categoryDisplayName | string |
+| correlationId | string |
+| data | dynamic |
+| details | string |
+| id | string |
+| ipAddress | string |
+| projectId | string |
+| projectName | string |
+| scopeDisplayName | string |
+| scopeId | string |
+| scopeType | string |
+| timestamp | string |
+| userAgent | string |
 
 ## Solutions (1)
 

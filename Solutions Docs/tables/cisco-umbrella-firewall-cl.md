@@ -11,6 +11,50 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (36 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_firewall_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| App_ID_s | string |
+| AWS_Region_s | string |
+| Bytes_Received_s | string |
+| Bytes_Sent_s | string |
+| CASI_Category_IDs_s | string |
+| Content_Category_IDs_s | string |
+| Content_Category_List_IDs_s | string |
+| dataCenter_s | string |
+| Destination_Country_s | string |
+| Destination_List_IDs_s | string |
+| destinationIp_s | string |
+| destinationPort_s | string |
+| Direction_s | string |
+| EventType_s | string |
+| First_Packet_Timestamp_s | string |
+| FQDNS_s | string |
+| FW_Event_ID_s | string |
+| Identity_s | string |
+| Identity_Type_s | string |
+| ipProtocol_s | string |
+| Last_Packet_Timestamp_s | string |
+| Organization_ID_s | string |
+| originId_s | string |
+| Packets_Received_s | string |
+| Packets_Sent_s | string |
+| packetSize_s | string |
+| Posture_ID_s | string |
+| Private_App_ID_s | string |
+| Private_Flow_s | string |
+| ruleId_s | string |
+| SourceIP | string |
+| sourcePort_s | string |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| Traffic_Source_s | string |
+| verdict_s | string |
 
 ## Solutions (1)
 

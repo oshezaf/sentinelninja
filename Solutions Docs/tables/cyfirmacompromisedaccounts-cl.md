@@ -11,6 +11,40 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (26 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Compromised%20Accounts/Data%20Connectors/CyfirmaCompromisedAccounts_ccp/CyfirmaCompAcc_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| antivirus | string |
+| asset_comment | string |
+| breach_date | string |
+| computer_name | string |
+| cookie_sessions | dynamic |
+| description | string |
+| email | string |
+| first_seen | datetime |
+| impact | string |
+| ip | string |
+| last_seen | datetime |
+| name | string |
+| notes | dynamic |
+| operating_system | string |
+| pass_hash | string |
+| password | string |
+| phone_number | string |
+| recommendations | string |
+| safe_flag_comments | string |
+| source | string |
+| system_info | string |
+| title | string |
+| type | string |
+| uid | string |
+| url | string |
+| user_name | string |
 
 ## Solutions (1)
 

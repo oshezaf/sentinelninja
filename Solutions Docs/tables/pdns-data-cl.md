@@ -10,6 +10,31 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/PDNS_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| active_days_d | real |
+| as_info_s | string |
+| country_codes_s | string |
+| distinct_ips_d | real |
+| domain_created_s | string |
+| domain_expires_s | string |
+| domain_s | string |
+| event_count_d | real |
+| first_seen_s | string |
+| ip_s | string |
+| last_seen_s | string |
+| nameservers_s | string |
+| registrar_s | string |
+| root_s | string |
+| TimeGenerated | datetime |
+| tld_s | string |
+| Type | string |
+| type_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/DoppelTable_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AlertCreated | datetime |
+| AlertID | string |
+| AlertLink | string |
+| Entity | string |
+| EntityState | string |
+| Product | string |
+| QueueState | string |
+| Severity | string |
+| Source | string |
+| TimeGenerated | datetime |
+| Timestamp | datetime |
+| UpdatedBy | string |
 
 ## Solutions (1)
 

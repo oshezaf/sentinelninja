@@ -15,7 +15,100 @@ Reference for GCPDNS table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpdns) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpdns) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (84 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpdns) · [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformDNS/Data%20Connectors/GCPDNSLog_CCP/GCPDNSLog_DCR.json)
+
+| Column Name | Type | Description | Source |
+|:------------|:-----|:------------|:-------|
+| _BilledSize | real | The record size in bytes | Azure Monitor docs |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account | Azure Monitor docs |
+| AuthAnswer | bool | Indicates if the DNS response is authoritative. | Azure Monitor docs |
+| AuthenticationInfoPrincipalEmail | string | Email address of the user or service account performing the action. | Azure Monitor docs |
+| AuthenticationInfoPrincipalSubject | string | The subject identifier for the principal (user or service account). | Azure Monitor docs |
+| AuthorizationInfo | string | Details about the authorization decision for the request. | Azure Monitor docs |
+| DestinationIP | string | Target IP address of the request. | Azure Monitor docs |
+| GCPResourceName | string | Name of the resource being accessed or modified. | Azure Monitor docs |
+| GCPResourceType | string | Type of the resource (e.g., compute instance, DNS record). | Azure Monitor docs |
+| insertId | string | A unique identifier assigned to each log entry. | DCR, Azure Monitor docs |
+| jsonPayload | dynamic |  | DCR |
+| logName | string | The name of the log where this entry is stored. | DCR, Azure Monitor docs |
+| MethodName | string | The API method or operation invoked in the request. | Azure Monitor docs |
+| PayloadType | string | The format or type of the payload in the log entry. | Azure Monitor docs |
+| Protocol | string | Protocol used (e.g., TCP, UDP). | Azure Monitor docs |
+| protoPayload | dynamic |  | DCR |
+| QueryName | string | The domain name queried. | Azure Monitor docs |
+| QueryType | string | DNS query type (RFC 1035 section 4.1.2). | Azure Monitor docs |
+| Rdata | string | DNS answer in presentation format. | Azure Monitor docs |
+| ReqManZoneCloudLogConfigEnableLogging | bool | Indicates whether logging was enabled in the request for the managed zone. | Azure Monitor docs |
+| ReqManZonePrivVisibConfigNetworks | string | List of networks configured for private visibility of the managed zone. | Azure Monitor docs |
+| ReqmetaCallerSuppliedUserAgent | string | User agent String provided by the caller. | Azure Monitor docs |
+| ReqmetaRequestAttributesTime | datetime | Timestamp when the request was initiated. | Azure Monitor docs |
+| RequestAPIType | string | The type of API request being logged. | Azure Monitor docs |
+| RequestChangeAdditions | string | Details of resource additions in the request. | Azure Monitor docs |
+| RequestChangeDeletions | string | Details of resource deletions in the request. | Azure Monitor docs |
+| RequestManagedZone | string | Details of the managed DNS zone in the request. | Azure Monitor docs |
+| RequestManagedZoneDescription | string | Description of the managed DNS zone in the request. | Azure Monitor docs |
+| RequestManagedZoneDnsName | string | The DNS name of the managed zone in the request. | Azure Monitor docs |
+| RequestManagedZoneName | string | The name of the managed DNS zone in the request. | Azure Monitor docs |
+| RequestManagedZoneVisibility | string | The visibility (public or private) of the managed zone in the request. | Azure Monitor docs |
+| RequestMetadataCallerIp | string | IP address of the caller initiating the request. | Azure Monitor docs |
+| RequestName | string | Name of the resource affected by the request. | Azure Monitor docs |
+| RequestProject | string | Google Cloud project associated with the request. | Azure Monitor docs |
+| RequestType | string | Type of the request (e.g., Create, Delete, Update). | Azure Monitor docs |
+| ResManZoneCloudLogConfigEnableLogging | bool | Indicates whether logging was enabled in the response for the managed zone. | Azure Monitor docs |
+| resource | dynamic |  | DCR |
+| ResourceLabelsLocation | string | Location of the resource. | Azure Monitor docs |
+| ResourceLabelsPolicyName | string | Represents the policy name associated with the DNS resource. | Azure Monitor docs |
+| ResourceLabelsProjectId | string | Google Cloud project ID associated with the resource. | Azure Monitor docs |
+| ResourceLabelsSourceType | string | Specifies the source type of the resource being modified | Azure Monitor docs |
+| ResourceLabelsTargetName | string | The target resource name within Google Cloud DNS, such as the managed zone or DNS policy being modified. | Azure Monitor docs |
+| ResourceLabelsTargetType | string | The type of DNS resource being acted upon | Azure Monitor docs |
+| ResourceLabelsZoneName | string | The name of the managed DNS zone related to the operation. | Azure Monitor docs |
+| RespManZonePrivVisibConfigNetworks | string | Lists networks associated with a private managed zone under private visibility configuration. | Azure Monitor docs |
+| ResponseChangeAdditions | string | Represents additions made to DNS records (e.g., new A, AAAA, CNAME, or TXT records). | Azure Monitor docs |
+| ResponseChangeDeletions | string | Details of deletions in the response. | Azure Monitor docs |
+| ResponseChangeId | string | Identifier for the change request in the response. | Azure Monitor docs |
+| ResponseChangeStartTime | datetime | Timestamp indicating when the change operation started. | Azure Monitor docs |
+| ResponseChangeStatus | string | Status of the change operation in the response. | Azure Monitor docs |
+| ResponseCode | string | Response code for the operation. | Azure Monitor docs |
+| ResponseManagedZoneCreationTime | datetime | Timestamp when the managed zone was created. | Azure Monitor docs |
+| ResponseManagedZoneDescription | string | Description of the managed zone returned in the response. | Azure Monitor docs |
+| ResponseManagedZoneDnsName | string | DNS name of the managed zone returned in the response. | Azure Monitor docs |
+| ResponseManagedZoneFingerprint | string | Fingerprint for detecting changes in the managed zone. | Azure Monitor docs |
+| ResponseManagedZoneId | string | Unique identifier for the managed zone. | Azure Monitor docs |
+| ResponseManagedZoneName | string | Name of the managed zone returned in the response. | Azure Monitor docs |
+| ResponseManagedZoneNameServers | string | List of name servers associated with the managed zone. | Azure Monitor docs |
+| ResponseManagedZoneRrsetCount | string | The total number of resource record sets (RRsets) within a managed zone. | Azure Monitor docs |
+| ResponseManagedZoneVisibility | string | Visibility setting (public/private) of the managed zone. | Azure Monitor docs |
+| ResponseOperationId | string | A unique identifier for the DNS operation performed. | Azure Monitor docs |
+| ResponseOperationStartTime | datetime | The timestamp when the DNS operation started. | Azure Monitor docs |
+| ResponseOperationStatus | string | The status of the DNS operation | Azure Monitor docs |
+| ResponseOperationType | string | The type of DNS operation executed (e.g., create, update, delete). | Azure Monitor docs |
+| ResponseOperationUser | string | The user or service account that performed the DNS operation. | Azure Monitor docs |
+| ResponseOpZoneContextNewValue | string | The new value after an operation modifies a DNS managed zone. | Azure Monitor docs |
+| ResponseOpZoneContextOldValue | string | The previous value before an operation modified the DNS managed zone. | Azure Monitor docs |
+| ResponseType | string | Type of response returned from the API. | Azure Monitor docs |
+| ServerLatency | string | Measures the latency of the request to Google Cloud DNS. | Azure Monitor docs |
+| ServiceName | string | Name of the Google Cloud service processing the request. | Azure Monitor docs |
+| severity | string | Log severity level (e.g., INFO, WARNING, ERROR). | DCR, Azure Monitor docs |
+| SourceIP | string | IP address from which the query originated. | Azure Monitor docs |
+| SourceNetwork | string | The originating network of the DNS request. | Azure Monitor docs |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics | Azure Monitor docs |
+| StatusCode | string | HTTP status code returned for the request. | Azure Monitor docs |
+| TenantId | string | The Log Analytics workspace ID | Azure Monitor docs |
+| TimeGenerated | datetime | The timestamp when the log entry was created. | DCR, Azure Monitor docs |
+| timestamp | datetime | Timestamp when the log entry was recorded. | DCR, Azure Monitor docs |
+| Type | string | The name of the table | Azure Monitor docs |
+| VmInstanceId | string | Compute Engine VM instance ID. | Azure Monitor docs |
+| VmInstanceIdString | string | The VM instance ID (if applicable) associated with the request. | Azure Monitor docs |
+| VmInstanceName | string | Compute Engine VM instance name. | Azure Monitor docs |
+| VmProjectId | string | Google Cloud project ID of the network from which the query was sent. | Azure Monitor docs |
+| VmZoneName | string | Name of the VM zone from which the query originated. | Azure Monitor docs |
 
 ## Solutions (1)
 

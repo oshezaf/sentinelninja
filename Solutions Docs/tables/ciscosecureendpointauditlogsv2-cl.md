@@ -11,6 +11,23 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (9 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Data%20Connectors/CiscoSecureEndpointLogs_ccp/CiscoSecureEndpointLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| audit_log_id | string |
+| audit_log_type | string |
+| audit_log_user | string |
+| created_at | datetime |
+| event | string |
+| item | string |
+| message | string |
+| new_attributes | string |
+| old_attributes | string |
 
 ## Solutions (1)
 

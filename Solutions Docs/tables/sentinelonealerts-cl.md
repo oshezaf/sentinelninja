@@ -11,6 +11,22 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneAlerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AgentDetectionInfo | string |
+| AlertInfo | string |
+| ContainerInfo | string |
+| KubernetesInfo | string |
+| RuleInfo | string |
+| SourceParentProcessInfo | string |
+| SourceProcessInfo | string |
+| TargetProcessInfo | string |
 
 ## Solutions (1)
 

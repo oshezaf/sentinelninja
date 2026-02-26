@@ -11,6 +11,43 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (29 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/IntegrationTable_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| category | string |
+| cloudOfficeTenantUuid | string |
+| context | dynamic |
+| detectionUuid | dynamic |
+| deviceDisplayName | string |
+| deviceUuid | string |
+| displayName | string |
+| edrRuleUuid | string |
+| groupSize | int |
+| networkCommunication | dynamic |
+| note | string |
+| objectHashSha1 | string |
+| objectName | string |
+| objectSizeBytes | int |
+| objectTypeName | string |
+| objectUrl | string |
+| occurTime | string |
+| processCommandline | string |
+| processPath | string |
+| processUuid | string |
+| resolved | bool |
+| responses | dynamic |
+| scanUuid | string |
+| severityLevel | string |
+| severityScore | string |
+| TimeGenerated | datetime |
+| triggeringEvent | dynamic |
+| typeName | string |
+| userNameBase | string |
 
 ## Solutions (1)
 

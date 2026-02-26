@@ -10,6 +10,25 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHEAuditLogsData_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| actor_email | string |
+| actor_id | string |
+| actor_name | string |
+| commit_id | string |
+| created_at | datetime |
+| fields | dynamic |
+| id | int |
+| request_id | string |
+| source_ip_address | string |
+| status | string |
+| tenant_url | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

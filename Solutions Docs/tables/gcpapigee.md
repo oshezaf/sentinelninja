@@ -15,7 +15,30 @@ Reference for GCPApigee table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpapigee) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpapigee) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (14 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpapigee)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| GCPResource | dynamic | Describes the resource associated with the log entry, including labels and resource type. |
+| InsertId | string | A unique identifier for the log entry. |
+| LogName | string | The full log name including resource path. |
+| Operation | dynamic | Contains details about the operation being performed, including the operation ID, producer, and status information. |
+| ProtoPayload | dynamic | Holds the structured audit log data, including authentication, method name, resource name, and service-specific information. |
+| ReceiveTimestamp | datetime | Time the log entry was received by Cloud Logging. |
+| Severity | string | Indicates the severity level of the log entry or event |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The timestamp indicating when the log entry was created or received. |
+| Timestamp | datetime | The original timestamp of the event as recorded by the source system. |
+| Type | string | The name of the table |
 
 ## Solutions (1)
 

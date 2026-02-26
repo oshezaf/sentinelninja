@@ -11,6 +11,37 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (23 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RSAIDPlus_AdminLogs_Connector/Data%20Connectors/RSIDPlus_AdminLogs_Connector_CCP/RSAIDPlus_AdminLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| activityCode | int |
+| activityKey | string |
+| adminUserName | string |
+| adminUserRole | string |
+| application | string |
+| customerId | int |
+| customerName | string |
+| eventId | long |
+| eventLogDate | datetime |
+| eventType | string |
+| message | string |
+| reasonKey | string |
+| requiresPublish | boolean |
+| result | string |
+| serverIPAddress | string |
+| serverURL | string |
+| sourceIPAddress | string |
+| targetObject1Id | dynamic |
+| targetObject1Name | dynamic |
+| targetObject1Type | dynamic |
+| targetObject2Id | dynamic |
+| targetObject2Name | dynamic |
+| targetObject2Type | dynamic |
 
 ## Solutions (1)
 

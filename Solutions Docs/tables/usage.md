@@ -14,7 +14,36 @@ Reference for Usage table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/usage) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/usage) |
+
+## Schema (22 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/usage)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AvgLatencyInSeconds | real | Deprecated |
+| BatchesCapped | long | Deprecated |
+| BatchesOutsideSla | long | Deprecated |
+| BatchesWithinSla | long | Deprecated |
+| Computer | string | Deprecated |
+| DataType | string | Table that usage is being reported about. |
+| EndTime | datetime | End time of the one hour aggregation window. |
+| IsBillable | bool | Logical flag to indicate whether we bill for this data record. |
+| LinkedMeterId | string | Deprecated |
+| LinkedResourceUri | string | Deprecated |
+| MeterId | string | GUID of the meter used for billing. |
+| Quantity | real | Size of data in Mbytes. |
+| QuantityUnit | string | Value is alwais Mbytes. |
+| ResourceUri | string | The URI of the workspace. This will be same for all records in this table in workspace. |
+| Solution | string | Solution about which usage is being reported. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| StartTime | datetime | Start time of the 1 hour aggregation window (same as TimeGenerated). |
+| TimeGenerated | datetime | Date and time the record was created. |
+| TotalBatches | long | Deprecated |
+| Type | string | The name of the table |
 
 ## Solutions (9)
 

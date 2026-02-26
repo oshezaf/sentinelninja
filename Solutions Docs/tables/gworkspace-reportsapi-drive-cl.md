@@ -10,6 +10,46 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (33 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GWorkspace_ReportsAPI_drive_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actor_email_s | string |
+| actor_profileId_s | string |
+| destination_folder_id_s | string |
+| destination_folder_title_s | string |
+| doc_id_s | string |
+| doc_title_s | string |
+| doc_type_s | string |
+| etag_s | string |
+| event_name_s | string |
+| event_type_s | string |
+| EventProduct | string |
+| events_s | string |
+| EventVendor | string |
+| id_applicationName_s | string |
+| id_customerId_s | string |
+| id_time_t | datetime |
+| id_uniqueQualifier_s | string |
+| IPAddress | string |
+| ishared_drive_id_s | string |
+| kind_s | string |
+| new_value_s | string |
+| old_value_s | string |
+| old_visibility_s | string |
+| originating_app_id_s | string |
+| owner_s | string |
+| source_folder_id_s | string |
+| source_folder_title_s | string |
+| target_domain_s | string |
+| target_user_s | string |
+| team_drive_id_s | string |
+| TimeGenerated | datetime |
+| visibility_change_s | string |
+| visibility_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

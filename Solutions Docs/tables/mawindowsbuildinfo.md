@@ -14,7 +14,34 @@ Reference for MAWindowsBuildInfo table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mawindowsbuildinfo) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mawindowsbuildinfo) |
+
+## Schema (20 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mawindowsbuildinfo)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AvailabilityDate | datetime |  |
+| BuildId | int |  |
+| BuildVersion | string |  |
+| EOSDate | datetime |  |
+| ExtEOSDate | datetime |  |
+| FeatureCurrencyExtended | string |  |
+| FeatureCurrencyPaid | string |  |
+| FeatureCurrencyStandard | string |  |
+| KB | string |  |
+| KBUrl | string |  |
+| OfferedBuildType | string |  |
+| PaidEOSDate | datetime |  |
+| ReleaseType | string |  |
+| ReleaseVersion | string |  |
+| SecurityCompliance | string |  |
+| ServicingChannel | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
 
 ---
 

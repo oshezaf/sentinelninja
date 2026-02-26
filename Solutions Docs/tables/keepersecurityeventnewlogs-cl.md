@@ -11,6 +11,23 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (9 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security/Data%20Connectors/KeeperSecurity_ccp/KepperSecurity_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| audit_event | string |
+| category | string |
+| client_version | string |
+| data | dynamic |
+| enterprise_id | int |
+| remote_address | string |
+| TimeGenerated | datetime |
+| timestamp | datetime |
+| username | string |
 
 ## Solutions (1)
 

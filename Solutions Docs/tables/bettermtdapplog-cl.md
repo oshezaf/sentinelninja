@@ -11,6 +11,32 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BetterMTDAppLog_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| AppName | string |
+| AppStatus_s | string |
+| BundleId | string |
+| CompanyId | real |
+| Computer | string |
+| DateAdded | datetime |
+| DeviceUDID | string |
+| IsMdm | real |
+| ManagementGroupName | string |
+| MG | string |
+| Platform | string |
+| RawData | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| Version | real |
 
 ## Solutions (1)
 

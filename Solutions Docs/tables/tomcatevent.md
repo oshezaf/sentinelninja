@@ -1,0 +1,41 @@
+# TomcatEvent
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TomcatEvent.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ClassName | string |
+| ClientIdentity | string |
+| DvcAction | string |
+| EventMessage | string |
+| EventProduct | string |
+| EventSeverity | string |
+| EventStartTime | datetime |
+| EventType | string |
+| HttpReferrerOriginal | string |
+| HttpRequestMethod | string |
+| HttpResponseBodyBytes | real |
+| HttpStatusCode | int |
+| HttpUserAgentOriginal | string |
+| HttpVersion | string |
+| SrcIpAddr | string |
+| SrcUserName | string |
+| TimeGenerated | datetime |
+| UrlOriginal | string |
+
+---
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+

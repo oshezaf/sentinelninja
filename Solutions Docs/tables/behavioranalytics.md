@@ -14,7 +14,48 @@ Reference for BehaviorAnalytics table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behavioranalytics) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behavioranalytics) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (33 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/behavioranalytics)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ActionType | string | The specific type of action that triggered the event. |
+| ActivityInsights | dynamic | Activity and behavioral insights. |
+| ActivityType | string | The activity type that triggered the event. |
+| ActorName | string | The name of the user initiating the action that generated the event. |
+| ActorPrincipalName | string | The principal name of the user initiating the action that generated the event. |
+| DestinationDevice | string | The hostname of the destination device. |
+| DestinationIPAddress | string | The destination IP address. |
+| DestinationIPLocation | string | The destination Geo location based on the IP address. |
+| Device | string | The name of the device on which the event occurred or which reported the event, depending on the schema. |
+| DevicesInsights | dynamic | Devices metadata and insights. |
+| EventProductVersion | string | The version of the product generating the event. |
+| EventSource | string | Data source for this event. |
+| EventVendor | string | The vendor of the product generating the event. |
+| InvestigationPriority | int | Investigation priority score. |
+| NativeTableName | string | The original table from which the record was fetched. |
+| SourceDevice | string | The hostname of the source device. |
+| SourceIPAddress | string | The source IP address. |
+| SourceIPLocation | string | The source Geo location based on the IP address. |
+| SourceRecordId | string | The unique Id of the source raw event. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TargetName | string | The name of the target user in the action that generated the event. |
+| TargetPrincipalName | string | The name of the target user in the action that generated the event. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Time when the raw event was generated (UTC). |
+| TimeProcessed | datetime | Time when enrichment processing occurred (UTC). |
+| Type | string | The name of the table |
+| UserName | string | User name of the account. |
+| UserPrincipalName | string | User principal name of the account. |
+| UsersInsights | dynamic | Users metadata and insights. |
 
 ## Solutions (12)
 

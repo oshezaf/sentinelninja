@@ -14,7 +14,33 @@ Reference for DeviceEtw table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceetw) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceetw) |
+
+## Schema (19 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceetw)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| ActivityId | string |  |
+| appName | string |  |
+| Computer | string |  |
+| DeviceType | string |  |
+| EventId | int |  |
+| EventName | string |  |
+| period | int |  |
+| ProcessId | string |  |
+| ProviderId | string |  |
+| SerialNumber | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| status | int |  |
+| tags | string |  |
+| ThreadId | int |  |
+| TimeGenerated | datetime |  |
+| type | int | The name of the table |
+| wakeEnabled | bool |  |
 
 ---
 

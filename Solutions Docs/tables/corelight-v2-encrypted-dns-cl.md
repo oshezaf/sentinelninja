@@ -10,6 +10,24 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_encrypted_dns_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| cert_cn_s | string |
+| cert_sans_s | string |
+| match_s | string |
+| resp_h_s | string |
+| sni_s | string |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+| uid_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

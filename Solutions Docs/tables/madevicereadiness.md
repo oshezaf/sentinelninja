@@ -14,7 +14,42 @@ Reference for MADeviceReadiness table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/madevicereadiness) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/madevicereadiness) |
+
+## Schema (28 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/madevicereadiness)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AppIssues | int |  |
+| ConfigMgrClientID | string |  |
+| DeploymentPlanId | string |  |
+| DeviceId | string |  |
+| DeviceLastSeenDate | datetime |  |
+| DeviceName | string |  |
+| DeviceStatus | int |  |
+| DriverIssues | int |  |
+| InventoryCompleteness | bool |  |
+| MacroIssues | int |  |
+| Manufacturer | string |  |
+| ModelFamily | string |  |
+| OfficeAddInIssues | int |  |
+| OfficeAppIssues | int |  |
+| OfficeBuild | string |  |
+| OfficeUpgradeDecision | string |  |
+| OfficeVersion | string |  |
+| OSBuild | string |  |
+| OSVersion | string |  |
+| PilotDevice | bool |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SysReqIssues | int |  |
+| TimeGenerated | datetime |  |
+| TotalIssues | int |  |
+| Type | string | The name of the table |
+| WindowsUpgradeDecision | string |  |
 
 ---
 

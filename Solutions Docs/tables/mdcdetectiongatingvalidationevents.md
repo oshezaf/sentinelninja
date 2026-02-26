@@ -14,7 +14,32 @@ Reference for MDCDetectionGatingValidationEvents table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mdcdetectiongatingvalidationevents) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mdcdetectiongatingvalidationevents) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (17 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/mdcdetectiongatingvalidationevents)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| Action | string | The validation action that was performed. |
+| AdmissionControlVersions | dynamic | The gating components versions. |
+| AzureResourceId | string | The resource ID of the K8S cluster resource. |
+| EvaluatedResourceDetails | dynamic | The evaluated resource details. |
+| EvaluatedResourceKind | string | The evaluated K8s resource kind. |
+| EvaluatedResourceName | string | The evaluated K8s resource name. |
+| EvaluatedResourceParentKind | string | The evaluated K8s resource's parent kind (Controlled By). |
+| EvaluatedResourceParentName | string | The evaluated K8s resource's parent name (Controlled By). |
+| Namespace | string | The evaluated K8s resource namespace. |
+| Region | string | The region where the K8S cluster is deployed. |
+| RuleProperties | dynamic | The rule properties that was applied during the validation. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The time (UTC) when the monitored entity was created, renamed, modified or deleted. |
+| Type | string | The name of the table |
 
 ---
 

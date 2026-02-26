@@ -15,7 +15,32 @@ Reference for AZFWInternalFqdnResolutionFailure table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwinternalfqdnresolutionfailure) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwinternalfqdnresolutionfailure) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (16 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwinternalfqdnresolutionfailure)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Error | string | Description of the error that caused the failure of the FQDN resolution. |
+| Fqdn | string | The FQDN which the firewall failed to resolve. |
+| Policy | string | Name of the policy in which the rule with the failing FQDN resolution resides. |
+| Rule | string | Name of the rule with the failing FQDN resolution. |
+| RuleCollection | string | Name of the rule collection in which the rule with the failing FQDN resolution resides. |
+| RuleCollectionGroup | string | Name of the rule collection group in which the rule with the failing FQDN resolution resides. |
+| ServerIp | string | DNS Resolver server's IP address. |
+| ServerPort | int | DNS Resolver server's port. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Timestamp (UTC) when the data plane log was created. |
+| Type | string | The name of the table |
 
 ## Solutions (1)
 

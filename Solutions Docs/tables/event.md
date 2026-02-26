@@ -15,7 +15,38 @@ Reference for Event table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (22 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/event)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and collected from Azure storage. |
+| Computer | string | Name of the computer that the event was collected from. |
+| EventCategory | int | Category of the event. |
+| EventData | string | All event data in raw format. |
+| EventID | int | Number of the event. |
+| EventLevel | int | Severity of the event in numeric form. |
+| EventLevelName | string | Severity of the event in text form. |
+| EventLog | string | Name of the event log that the event was collected from. |
+| ManagementGroupName | string | Name of the management group for System Center Operations Manager agents. For other agents this value is AOI-<workspace ID> |
+| Message | string | Event message for the different Languages. The language is defined by the LCID attribute. |
+| ParameterXml | string | Event parameter values in XML format. |
+| RenderedDescription | string | Event description with parameter values. |
+| Role | string | Role of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and collected from Azure storage. |
+| Source | string | Source of the event. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TimeGenerated | datetime | Date and time the record was created. |
+| Type | string | The name of the table |
+| UserName | string | User name of the account that logged the event. |
 
 ## Solutions (18)
 
@@ -248,10 +279,10 @@ References by type: 4 connectors, 31 content items, 6 ASIM parsers, 7 other pars
 | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 2 | 1 | - | **3** |
 | `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | 1 | - | **2** |
 | `EventID == "0"`<br>`EventLog == "Application"`<br>`Source == "MOVEit DMZ Audit"` | - | 2 | - | - | **2** |
-| `EventLog == "Application"` | 1 | - | - | - | **1** |
-| `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
-| `Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
 | `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
+| `Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
+| `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
+| `EventLog == "Application"` | 1 | - | - | - | **1** |
 | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |

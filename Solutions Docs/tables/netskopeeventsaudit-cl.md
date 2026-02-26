@@ -10,6 +10,26 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (13 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeAlertsEvents_RestAPI_CCP/NetskopeAlertsEvents_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _id | string |
+| audit_log_event | string |
+| ccl | string |
+| count | int |
+| organization_unit | string |
+| sAMAccountName | string |
+| severity_level | int |
+| supporting_data | dynamic |
+| timestamp | int |
+| type | string |
+| ur_normalized | string |
+| user | string |
+| userPrincipalName | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -14,7 +14,36 @@ Reference for DHLogonMetrics table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhlogonmetrics) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhlogonmetrics) |
+
+## Schema (22 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhlogonmetrics)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| Computer | string |  |
+| ComputerID | string |  |
+| Country | string |  |
+| Manufacturer | string |  |
+| Model | string |  |
+| ModelFamily | string |  |
+| OSArchitecture | string |  |
+| OSBuildNumber | int |  |
+| OSEdition | string |  |
+| OSRevisionNumber | int |  |
+| OSVersion | string |  |
+| PreferredSignInProviderId | string |  |
+| PreferredSignInProviderName | string |  |
+| ProviderId | string |  |
+| ProviderName | string |  |
+| SignInIndustrySuccessRate | real |  |
+| SignInSuccessRate | real |  |
+| TimeGenerated | datetime |  |
+| TotalDailySignIns | long |  |
+| Type | string | The name of the table |
 
 ---
 

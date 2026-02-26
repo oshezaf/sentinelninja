@@ -15,7 +15,48 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dataverseactivity) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dataverseactivity) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (32 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dataverseactivity)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| ClientIp | string | The IP address of the device that was used when the activity was logged. |
+| CorrelationId | string | A unique value used to associate related rows. |
+| CrmOrganizationUniqueName | string | Unique name of the organization. |
+| EntityId | string | Unique identifier of the entity. |
+| EntityName | string | Name of the entity in the organization. |
+| Fields | dynamic | JSON of Key Value pair reflecting the values that were created or updated. |
+| InstanceUrl | string | URL to the instance. |
+| ItemType | string | The type of object that was accessed or modified. See the ItemType table for details on the types of objects. |
+| ItemUrl | string | URL to the record emitting the log. |
+| Message | string | Name of the message called in the Dynamics 365 SDK. |
+| Operation | string | The name of the operation that the user is performing. |
+| OrganizationId | string | The GUID for your organization's Office 365 tenant. This value will always be the same for your organization. |
+| OriginalObjectId | string | The ObjectId for Dataverse operation or business activity. |
+| Query | string | The query filter parameters used while executing the FetchXML. |
+| QueryResults | dynamic | One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call. |
+| ResultStatus | string | Indicates whether the action (specified in the Operation property) was successful or not. |
+| ServiceContextId | string | The unique id associated with service context. |
+| ServiceContextIdType | string | Application defined token to define context use. |
+| ServiceName | string | Name of the Service generating the log. |
+| SourceRecordId | string | Unique identifier of an audit record. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SystemUserId | string | Unique identifier of the user GUID in the organization. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The date and time in (UTC) when the user performed the activity. |
+| Type | string | The name of the table |
+| UserAgent | string | The user agent. |
+| UserId | string | The Dataverse user ID of the user who performed the action (specified in the Operation property) that resulted in the record being logged. |
+| UserKey | string | An alternative ID for the user identified in the UserId property. |
+| UserType | string | The type of user that performed the operation. See the UserType table in Office 365 management activity api schema documentation for details on the types of users. |
+| UserUpn | string | The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged. |
 
 ## Solutions (1)
 

@@ -15,7 +15,62 @@ Reference for AADManagedIdentitySignInLogs table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadmanagedidentitysigninlogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadmanagedidentitysigninlogs) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (46 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadmanagedidentitysigninlogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AADTenantId | string | The AADTenantId GUID that's associated with the logs |
+| Agent | string | Details of agentic sign-in. |
+| AppId | string | Unique GUID representing the app ID in the Azure Active Directory |
+| AppOwnerTenantId | string | The tenant identifier of the owenr of the application in Azure Active Directory |
+| AuthenticationContextClassReferences | string | The authentication contexts of the sign-in |
+| AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
+| Category | string | Category of the sign-in event |
+| ClientCredentialType | string |  |
+| ConditionalAccessPolicies | string | Details of the conditional access policies being applied for the sign-in |
+| ConditionalAccessStatus | string | Status of all the conditionalAccess policies related to the sign-in |
+| CorrelationId | string | ID to provide sign-in trail |
+| CreatedDateTime | datetime | Datetime of the sign-in activity. |
+| DurationMs | long | The duration of the operation in milliseconds |
+| FederatedCredentialId | string | Th identifier of an application's federated identity credential if a federated identity credential was used to sign in. |
+| Id | string | Unique ID representing the sign-in activity |
+| Identity | string | The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal |
+| IPAddress | string | IP address of the client used to sign in |
+| Level | string | The severity level of the event |
+| Location | string | The region of the resource emitting the event |
+| LocationDetails | string | Details of the sign-in location |
+| ManagedServiceIdentity | string | Details of the Managed Service Identity used to Sign In. |
+| NetworkLocationDetails | string | Provides the details associated with Authentication processor. |
+| OperationName | string | For sign-ins, this value is always Sign-in activity |
+| OperationVersion | string | The REST API version that's requested by the client |
+| ResourceDisplayName | string | Name of the resource that the service principal signed into |
+| ResourceGroup | string | Resource group for the logs |
+| ResourceIdentity | string | ID of the resource that the service principal signed into |
+| ResourceOwnerTenantId | string | The tenant identifier of the owner of the resource referenced in the sign in |
+| ResourceServicePrincipalId | string | Service Principal Id of the resource |
+| ResultDescription | string | Provides the error description for the sign-in operation |
+| ResultSignature | string | Contains the error code, if any, for the sign-in operation |
+| ResultType | string | The result of the sign-in operation can be Success or Failure |
+| ServicePrincipalCredentialKeyId | string | Key id of the service principal that initiated the sign-in |
+| ServicePrincipalCredentialThumbprint | string | Thumbprint of the service principal that initiated the sign-in |
+| ServicePrincipalId | string | ID of the service principal who initiated the sign-in |
+| ServicePrincipalName | string | Service Principal Name of the service principal who initiated the sign-in |
+| SessionId | string | Id of the session that was generated during the signIn. |
+| SourceAppClientId | string | The client ID of the application that initiated the sign-in |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The date and time of the event in UTC |
+| Type | string | The name of the table |
+| UniqueTokenIdentifier | string | Unique token identifier for the request |
+| UserAgent | string | User Agent for the sign-in |
 
 ## Solutions (6)
 

@@ -14,7 +14,27 @@ Reference for MAOfficeCurrencyAssessment table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficecurrencyassessment) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficecurrencyassessment) |
+
+## Schema (13 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficecurrencyassessment)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AssessmentTime | datetime |  |
+| BuildId | int |  |
+| BuildVersion | string |  |
+| DeviceId | string |  |
+| FeatureCurrency | string |  |
+| LastEventTime | datetime |  |
+| ReleaseVersion | string |  |
+| SecurityCompliance | string |  |
+| ServicingChannel | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
 
 ---
 

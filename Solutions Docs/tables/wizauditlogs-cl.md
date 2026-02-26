@@ -10,6 +10,19 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (6 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WizAuditLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| serviceAccount_id_s | string |
+| serviceAccount_name_s | string |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
+| user_id_s | string |
+| user_name_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

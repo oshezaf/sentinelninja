@@ -6,26 +6,143 @@
 
 ---
 
-## Solutions (1)
+## Schema (129 columns)
 
-This table is used by the following solutions:
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/imAuthentication.json)
 
-- [Standalone Content](../solutions/standalone-content.md)
+| Column Name | Type |
+|:------------|:-----|
+| ActingAppId | string |
+| ActingAppName | string |
+| ActingAppType | string |
+| ActorOriginalUserType | string |
+| ActorScopeId | string |
+| ActorSessionId | string |
+| ActorUserId | string |
+| ActorUserIdType | string |
+| ActorUsername | string |
+| ActorUsernameType | string |
+| ActorUserType | string |
+| AdditionalFields | dynamic |
+| Application | string |
+| Dst | string |
+| Dvc | string |
+| DvcAction | string |
+| DvcDescription | string |
+| DvcDomain | string |
+| DvcDomainType | string |
+| DvcFQDN | string |
+| DvcHostname | string |
+| DvcId | string |
+| DvcIdType | string |
+| DvcIpAddr | string |
+| DvcMacAddr | string |
+| DvcOriginalAction | string |
+| DvcOs | string |
+| DvcOsVersion | string |
+| DvcScope | string |
+| DvcScopeOd | string |
+| DvcZone | string |
+| EventCount | int |
+| EventEndTime | datetime |
+| EventMessage | string |
+| EventOriginalResultDetails | string |
+| EventOriginalSeverity | string |
+| EventOriginalSubType | string |
+| EventOriginalType | string |
+| EventOriginalUid | string |
+| EventOwner | string |
+| EventProduct | string |
+| EventProductVersion | string |
+| EventReportUrl | string |
+| EventResult | string |
+| EventResultDetails | string |
+| EventSchema | string |
+| EventSchemaVersion | string |
+| EventSeverity | string |
+| EventStartTime | datetime |
+| EventSubType | string |
+| EventType | string |
+| EventUid | string |
+| EventVendor | string |
+| HttpUserAgent | string |
+| IpAddr | string |
+| LogonMethod | string |
+| LogonProtocol | string |
+| LogonTarget | string |
+| Rule | string |
+| RuleName | string |
+| RuleNumber | int |
+| Src | string |
+| SrcDescription | string |
+| SrcDeviceType | string |
+| SrcDomain | string |
+| SrcDomainType | string |
+| SrcDvcHostnameType | string |
+| SrcDvcId | string |
+| SrcDvcIdType | string |
+| SrcDvcOs | string |
+| SrcDvcScopeId | string |
+| SrcFQDN | string |
+| SrcGeoCity | string |
+| SrcGeoCountry | string |
+| SrcGeoLatitude | real |
+| SrcGeoLongitude | real |
+| SrcGeoRegion | string |
+| SrcHostname | string |
+| SrcIpAddr | string |
+| SrcIsp | string |
+| SrcOriginalRiskLevel | string |
+| SrcPortNumber | string |
+| SrcRiskLevel | int |
+| TargetAppId | string |
+| TargetAppName | string |
+| TargetAppType | string |
+| TargetDescription | string |
+| TargetDeviceType | string |
+| TargetDomain | string |
+| TargetDomainType | string |
+| TargetDvcId | string |
+| TargetDvcIdType | string |
+| TargetDvcOs | string |
+| TargetDvcScope | string |
+| TargetDvcScopeId | string |
+| TargetFQDN | string |
+| TargetGeoCity | string |
+| TargetGeoCountry | string |
+| TargetGeoLatitude | real |
+| TargetGeoLongitude | real |
+| TargetGeoRegion | string |
+| TargetHostname | string |
+| TargetIpAddr | string |
+| TargetOriginalUserType | string |
+| TargetPortNumber | int |
+| TargetSessionId | string |
+| TargetUrl | string |
+| TargetUserId | string |
+| TargetUserIdType | string |
+| TargetUsername | string |
+| TargetUsernameType | string |
+| TargetUserSessionId | string |
+| TargetUserType | string |
+| ThreatCategory | string |
+| ThreatConfidence | int |
+| ThreatField | string |
+| ThreatFirstReportedTime | datetime |
+| ThreatId | string |
+| ThreatIsActive | bool |
+| ThreatLastReportedTime | datetime |
+| ThreatName | string |
+| ThreatOriginalConfidence | string |
+| ThreatOriginalRiskLevel | string |
+| ThreatRiskLevel | string |
+| TimeGenerated | datetime |
+| Type | string |
+| User | string |
+| UserScope | string |
+| UserScopeId | string |
 
 ---
-
-## Content Items Using This Table (4)
-
-### Analytic Rules (4)
-
-**Standalone Content:**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Brute force attack against user credentials (Uses Authentication Normalization)](../content/standalone-content-brute-force-attack-against-user-credentials-uses-authentication-normalization-a6c435a2-b1a0-466d-b730-9f8af69262e8-9ac9e8b8.md) |  |
-| [Potential Password Spray Attack (Uses Authentication Normalization)](../content/standalone-content-potential-password-spray-attack-uses-authentication-normalization-6a2e2ff4-5568-475e-bef2-b95f12b9367b-f6cd0e87.md) |  |
-| [Sign-ins from IPs that attempt sign-ins to disabled accounts (Uses Authentication Normalization)](../content/standalone-content-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-uses-authentication-norm-95002681-4ecb-4da3-9ece-26d7e5feaa33-8955b4a8.md) |  |
-| [User login from different countries within 3 hours (Uses Authentication Normalization)](../content/standalone-content-user-login-from-different-countries-within-3-hours-uses-authentication-normalization-09ec8fa2-b25f-4696-bfae-05a7b85d7b9e-63b22e34.md) |  |
 
 ---
 

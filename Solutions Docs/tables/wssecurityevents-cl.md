@@ -11,6 +11,30 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (16 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WsSecurityEvents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Activity | string |
+| AdditionalExtensions | string |
+| DeviceAction | string |
+| DeviceCustomString1 | string |
+| DeviceCustomString1Label | string |
+| DeviceCustomString2 | string |
+| DeviceCustomString2Label | string |
+| DeviceEventClassID | string |
+| DeviceVendor | string |
+| LogSeverity | int |
+| Message | string |
+| PersistenceTimestamp | datetime |
+| SimplifiedDeviceAction | string |
+| SourceHostName | string |
+| SourceUserName | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

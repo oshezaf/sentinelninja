@@ -10,6 +10,46 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (33 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/secRMM_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| AdditionalProgramInfo_s | string |
+| Computer | string |
+| ConfigurationTarget_s | string |
+| DeviceDescription_s | string |
+| Drive_s | string |
+| Event_s | string |
+| InternalID_s | string |
+| ManagementGroupName | string |
+| Message | string |
+| MG | string |
+| Model_s | string |
+| PreviousPropertyValue_s | string |
+| ProgramName_s | string |
+| ProgramPID_s | string |
+| PropertyAction_s | string |
+| PropertyName_s | string |
+| PropertyOperationStatus_s | string |
+| PropertyValue_s | string |
+| RawData | string |
+| SerialNumber_s | string |
+| SourceFile_s | string |
+| SourceFileLastWrite_s | string |
+| SourceFileSize_s | string |
+| SourceSystem | string |
+| TargetFile_s | string |
+| TenantId | string |
+| Time_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| User_s | string |
+| UserSID_s | string |
+| Volume_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

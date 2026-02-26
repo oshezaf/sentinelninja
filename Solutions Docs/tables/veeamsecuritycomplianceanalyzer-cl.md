@@ -11,6 +11,28 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VeeamSecurityComplianceAnalyzer_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| BestPractice | string |
+| Computer | string |
+| Id | string |
+| ManagementGroupName | string |
+| MG | string |
+| Note | string |
+| RawData | string |
+| SourceSystem | string |
+| Status | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| VbrHostName | string |
 
 ## Solutions (1)
 

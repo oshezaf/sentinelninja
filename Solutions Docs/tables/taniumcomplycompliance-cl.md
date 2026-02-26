@@ -10,6 +10,25 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumComplyCompliance_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Computer | string |
+| Computer_Name_s | string |
+| Operating_System_Generation_s | string |
+| Profile_s | string |
+| RawData | string |
+| Rule_ID_s | string |
+| Rule_s | string |
+| Standard_s | string |
+| Status_Category_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| Version_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

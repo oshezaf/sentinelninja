@@ -10,6 +10,24 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Top_Asns_By_IP_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| data_datasets_s | string |
+| data_dates_s | string |
+| end_date_s | string |
+| ip_s | string |
+| request_id_g | string |
+| size_d | real |
+| start_date_s | string |
+| TimeGenerated | datetime |
+| total_d | real |
+| Type | string |
+| workbook_data_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

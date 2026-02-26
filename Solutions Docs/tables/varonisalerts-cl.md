@@ -11,6 +11,35 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (21 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VaronisAlerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Asset_s | string |
+| AssetContainsFlaggedData_s | string |
+| AssetContainsSensitiveData_s | string |
+| Category | string |
+| DeviceName_s | string |
+| EventUTC_t | datetime |
+| FileServerOrDomain_s | string |
+| ID_g | string |
+| IngestTime_t | datetime |
+| Name_s | string |
+| NumOfAlertedEvents_d | real |
+| Platform_s | string |
+| Query_s | string |
+| SamAccountName_s | string |
+| Severity_s | string |
+| SeverityId_d | real |
+| Status_s | string |
+| StatusId_d | real |
+| Time_t | datetime |
+| TimeGenerated | datetime |
+| UserName_s | string |
 
 ## Solutions (1)
 

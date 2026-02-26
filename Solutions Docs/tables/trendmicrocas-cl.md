@@ -10,6 +10,43 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TrendMicroCAS_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| event_s | string |
+| log_item_id_g | string |
+| message_action_result_s | string |
+| message_action_s | string |
+| message_affected_user_s | string |
+| message_detected_by_s | string |
+| message_detection_time_t | datetime |
+| message_detection_type_s | string |
+| message_file_name_s | string |
+| message_file_sha1_s | string |
+| message_file_sha256_s | string |
+| message_file_upload_time_t | datetime |
+| message_location_s | string |
+| message_mail_message_delivery_time_t | datetime |
+| message_mail_message_file_name_s | string |
+| message_mail_message_id_g | string |
+| message_mail_message_recipient_d | real |
+| message_mail_message_sender_s | string |
+| message_mail_message_subject_s | string |
+| message_mail_message_submit_time_t | datetime |
+| message_ransomware_name_s | string |
+| message_risk_level_s | string |
+| message_scan_type_s | string |
+| message_security_risk_name_s | string |
+| message_triggered_dlp_template_d | real |
+| message_triggered_policy_name_s | string |
+| message_triggered_security_filter_s | string |
+| message_virus_name_s | string |
+| service_s | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

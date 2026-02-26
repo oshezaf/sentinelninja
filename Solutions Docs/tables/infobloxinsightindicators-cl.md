@@ -13,6 +13,42 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (29 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsightIndicators_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| action_s | string |
+| actor_s | string |
+| Computer | string |
+| confidence_s | string |
+| count_d | real |
+| feedName_s | string |
+| id_s | string |
+| indicator_s | string |
+| InfobloxInsightID_g | string |
+| InfobloxInsightLogType_s | string |
+| kind_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| name_g | string |
+| properties_category_s | string |
+| properties_friendlyName_g | string |
+| properties_friendlyName_s | string |
+| properties_malwareName_s | string |
+| properties_objectGuid_g | string |
+| RawData | string |
+| SourceSystem | string |
+| TenantId | string |
+| threatLevelMax_s | string |
+| TimeGenerated | datetime |
+| timeMax_t | datetime |
+| timeMin_t | datetime |
+| Type | string |
+| type_s | string |
+
 ## Solutions (2)
 
 This table is used by the following solutions:

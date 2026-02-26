@@ -11,6 +11,123 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (109 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/prancer_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| act_s | string |
+| cat_s | string |
+| CEF_s | string |
+| collection_s | string |
+| companyName_s | string |
+| Computer | string |
+| data_alert_alert_s | string |
+| data_alert_attack_s | string |
+| data_alert_configId_s | string |
+| data_alert_cvss_cvss_score_d | real |
+| data_alert_cvss_cweid_s | string |
+| data_alert_cvss_message_s | string |
+| data_alert_cvss_mitreId_s | string |
+| data_alert_cvss_name_s | string |
+| data_alert_cvss_severity_s | string |
+| data_alert_cweid_s | string |
+| data_alert_description_s | string |
+| data_alert_evidence_s | string |
+| data_alert_messageId_s | string |
+| data_alert_mitreId_s | string |
+| data_alert_name_s | string |
+| data_alert_other_s | string |
+| data_alert_param_s | string |
+| data_alert_pluginId_s | string |
+| data_alert_reference_s | string |
+| data_alert_references_s | string |
+| data_alert_resultId_s | string |
+| data_alert_risk_s | string |
+| data_alert_solution_s | string |
+| data_alert_sourceid_s | string |
+| data_alert_tags_OWASP_2017_A03_s | string |
+| data_alert_tags_OWASP_2017_A05_s | string |
+| data_alert_tags_OWASP_2021_A01_s | string |
+| data_alert_tags_OWASP_2021_A08_s | string |
+| data_alert_tags_s | string |
+| data_alert_url_s | string |
+| data_alert_wascid_s | string |
+| data_data_alert_s | string |
+| data_data_applicationName_s | string |
+| data_data_applicationType_s | string |
+| data_data_attack_s | string |
+| data_data_authenticationMethod_s | string |
+| data_data_autoRemediate_b | bool |
+| data_data_cloudType_s | string |
+| data_data_compliance_s | string |
+| data_data_configId_s | string |
+| data_data_cookieParams_s | string |
+| data_data_cweid_s | string |
+| data_data_description_s | string |
+| data_data_eval_s | string |
+| data_data_evidence_s | string |
+| data_data_id_s | string |
+| data_data_masterSnapshotId_s | string |
+| data_data_masterTestId_s | string |
+| data_data_message_s | string |
+| data_data_messageId_s | string |
+| data_data_name_s | string |
+| data_data_other_s | string |
+| data_data_param_s | string |
+| data_data_pluginId_s | string |
+| data_data_reference_s | string |
+| data_data_remediation_description_s | string |
+| data_data_remediation_function_s | string |
+| data_data_requestBody_s | string |
+| data_data_requestHeader_s | string |
+| data_data_resourceID_s | string |
+| data_data_responseBody_s | string |
+| data_data_responseHeader_s | string |
+| data_data_result_id_s | string |
+| data_data_result_s | string |
+| data_data_resultId_s | string |
+| data_data_risk_s | string |
+| data_data_riskLevel_s | string |
+| data_data_riskProfit_s | string |
+| data_data_rtt_s | string |
+| data_data_rule_s | string |
+| data_data_severity_s | string |
+| data_data_snapshotId_s | string |
+| data_data_snapshots_s | string |
+| data_data_solution_s | string |
+| data_data_sourceid_s | string |
+| data_data_status_s | string |
+| data_data_tags_OWASP_2017_A03_s | string |
+| data_data_tags_OWASP_2017_A05_s | string |
+| data_data_tags_OWASP_2017_A06_s | string |
+| data_data_tags_OWASP_2021_A01_s | string |
+| data_data_tags_OWASP_2021_A05_s | string |
+| data_data_tags_OWASP_2021_A08_s | string |
+| data_data_tags_s | string |
+| data_data_target_s | string |
+| data_data_timestamp_s | string |
+| data_data_title_s | string |
+| data_data_type_s | string |
+| data_data_url_s | string |
+| data_data_wascid_s | string |
+| deviceProduct_s | string |
+| deviceVendor_s | string |
+| deviceVersion_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| name_s | string |
+| RawData | string |
+| scanType_s | string |
+| severity_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

@@ -10,6 +10,23 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (10 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_Company_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| as_domain | string |
+| as_name | string |
+| as_type | string |
+| asn | string |
+| company_domain | string |
+| company_name | string |
+| company_type | string |
+| country | string |
+| range | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

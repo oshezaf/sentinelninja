@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFox_CTI_irc_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| account_s | string |
+| channel_s | string |
+| hostname_s | string |
+| message_s | string |
+| real_name_s | string |
+| secure_b | bool |
+| sender_s | string |
+| server_info_s | string |
+| server_s | string |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
+| username_s | string |
 
 ## Solutions (1)
 

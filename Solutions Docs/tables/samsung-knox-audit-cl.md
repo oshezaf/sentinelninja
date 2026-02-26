@@ -11,6 +11,34 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (20 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Samsung_Knox_Audit_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Action | string |
+| AdmPkgName | string |
+| AdmUserId | int |
+| DeviceImei1 | string |
+| DeviceImei2 | string |
+| DeviceModel | string |
+| DeviceSerialNumber | string |
+| DeviceWifimac | string |
+| EventGuid | long |
+| FailureReason | string |
+| KeyMask | int |
+| MitreTtp | dynamic |
+| Name | string |
+| PkgName | string |
+| PrimaryImei | string |
+| Profile | string |
+| Severity | string |
+| TimeGenerated | datetime |
+| UserId | int |
+| Version | string |
 
 ## Solutions (1)
 

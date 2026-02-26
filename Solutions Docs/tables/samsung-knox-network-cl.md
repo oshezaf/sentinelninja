@@ -10,6 +10,45 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (32 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Samsung_Knox_Network_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| DeviceImei1 | string |
+| DeviceImei2 | string |
+| DeviceModel | string |
+| DeviceSerialNumber | string |
+| DeviceWifimac | string |
+| EventDetectedTime | datetime |
+| EventGuid | long |
+| ExitCode | int |
+| Family | int |
+| Gid | int |
+| InterfaceName | string |
+| Ja3Fingerprint | string |
+| MitreTtp | dynamic |
+| Name | string |
+| Path | string |
+| Pid | int |
+| PkgName | string |
+| Ppid | int |
+| PrimaryImei | string |
+| Profile | string |
+| Protocol | int |
+| RemoteAddr | string |
+| RemotePort | int |
+| Severity | string |
+| SocketType | int |
+| SourceAddr | string |
+| SourcePort | int |
+| Syscall | int |
+| Tid | int |
+| TimeGenerated | datetime |
+| Uid | int |
+| Version | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

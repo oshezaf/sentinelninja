@@ -11,6 +11,35 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (21 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ESIExchangeConfig_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| EntryDate_s | string |
+| ESIEnvironment_s | string |
+| ExecutionResult_s | string |
+| GenerationInstanceID_g | string |
+| Identity_s | string |
+| IdentityString_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| Name_s | string |
+| PSCmdL_s | string |
+| RawData | string |
+| rawData_s | string |
+| Section_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| WhenChanged_s | string |
+| WhenCreated_s | string |
 
 ## Solutions (1)
 

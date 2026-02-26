@@ -10,6 +10,23 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (10 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ProofPointTAPMessagesDelivered_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| classification | string |
+| filename | string |
+| messageParts_s | dynamic |
+| recipient_s | string |
+| sender_s | string |
+| senderIP_s | string |
+| subject_s | string |
+| threatsInfoMap_s | dynamic |
+| threatType | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

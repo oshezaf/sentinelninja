@@ -10,6 +10,43 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_stats_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| active_dns_requests_d | real |
+| active_files_d | real |
+| active_icmp_conns_d | real |
+| active_tcp_conns_d | real |
+| active_timers_d | real |
+| active_udp_conns_d | real |
+| bytes_recv_d | real |
+| dns_requests_d | real |
+| events_proc_d | real |
+| events_queued_d | real |
+| files_d | real |
+| icmp_conns_d | real |
+| mem_d | real |
+| peer_s | string |
+| pkt_lag_d | real |
+| pkts_dropped_d | real |
+| pkts_link_d | real |
+| pkts_proc_d | real |
+| reassem_file_size_d | real |
+| reassem_frag_size_d | real |
+| reassem_tcp_size_d | real |
+| reassem_unknown_size_d | real |
+| tcp_conns_d | real |
+| TimeGenerated | datetime |
+| timers_d | real |
+| ts_t | datetime |
+| udp_conns_d | real |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

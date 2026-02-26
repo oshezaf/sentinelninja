@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFox_CTI_ransomware_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| created_at_t | datetime |
+| crypto_wallets_s | string |
+| emails_s | string |
+| md5_s | string |
+| note_urls_s | string |
+| ransom_note_s | string |
+| ransomware_name_s | string |
+| sha1_s | string |
+| sha256_s | string |
+| sha512_s | string |
+| tags_s | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

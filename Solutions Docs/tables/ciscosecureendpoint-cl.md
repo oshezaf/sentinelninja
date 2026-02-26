@@ -10,6 +10,99 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (86 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoSecureEndpoint_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| _SubscriptionId | string |
+| audit_log_id_g | string |
+| audit_log_id_s | string |
+| audit_log_type_s | string |
+| audit_log_user_s | string |
+| bp_data_package_manager_pending_version_d | real |
+| bp_data_package_manager_serial_number_d | real |
+| bp_data_sts_d | real |
+| cloud_ioc_description_s | string |
+| cloud_ioc_short_description_s | string |
+| command_line_arguments_s | string |
+| Computer | string |
+| computer_active_b | bool |
+| computer_connector_guid_g | string |
+| computer_external_ip_s | string |
+| computer_hostname_s | string |
+| computer_links_computer_s | string |
+| computer_links_group_s | string |
+| computer_links_trajectory_s | string |
+| computer_network_addresses_s | string |
+| computer_user_s | string |
+| connector_guid_g | string |
+| created_at_t | datetime |
+| date_t | datetime |
+| detection_id_s | string |
+| detection_s | string |
+| error_description_s | string |
+| error_error_code_d | real |
+| event_s | string |
+| event_type_id_d | real |
+| event_type_s | string |
+| file_attack_details_application_s | string |
+| file_attack_details_attacked_module_s | string |
+| file_attack_details_base_address_s | string |
+| file_attack_details_suspicious_files_s | string |
+| file_disposition_s | string |
+| file_file_name_s | string |
+| file_file_path_s | string |
+| file_identity_md5_g | string |
+| file_identity_sha1_s | string |
+| file_identity_sha256_s | string |
+| file_parent_disposition_s | string |
+| file_parent_file_name_s | string |
+| file_parent_identity_md5_g | string |
+| file_parent_identity_sha1_s | string |
+| file_parent_identity_sha256_s | string |
+| file_parent_process_id_d | real |
+| file_parent_process_id_s | string |
+| group_guids_s | string |
+| hostname_s | string |
+| id_d | real |
+| new_attributes_connector_guid_g | string |
+| new_attributes_group_id_d | real |
+| new_attributes_hostname_s | string |
+| new_attributes_ip_external_s | string |
+| new_attributes_name_s | string |
+| new_attributes_operating_system_id_d | real |
+| new_attributes_policy_id_d | real |
+| new_attributes_product_version_id_d | real |
+| new_attributes_status_s | string |
+| old_attributes_hostname_s | string |
+| old_attributes_ip_external_s | string |
+| old_attributes_name_s | string |
+| old_attributes_operating_system_id_d | real |
+| old_attributes_product_version_id_d | real |
+| old_attributes_status_s | string |
+| orbital_old_version_s | string |
+| orbital_version_s | string |
+| RawData | string |
+| scan_clean_b | bool |
+| scan_description_s | string |
+| scan_malicious_detections_d | real |
+| scan_scanned_files_d | real |
+| scan_scanned_paths_d | real |
+| scan_scanned_processes_d | real |
+| severity_s | string |
+| start_date_t | datetime |
+| start_timestamp_d | real |
+| tactics_s | string |
+| techniques_s | string |
+| TimeGenerated | datetime |
+| timestamp_d | real |
+| timestamp_nanoseconds_d | real |
+| Type | string |
+| vulnerabilities_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

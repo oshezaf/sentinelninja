@@ -11,6 +11,35 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (21 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/Data%20Connectors/CyrenThreatIntel_CCF/Cyren_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action_s | string |
+| category_s | string |
+| detection_methods_s | string |
+| detection_ts_t | datetime |
+| domain_s | string |
+| fileHash_s | string |
+| firstSeen_t | datetime |
+| identifier_s | string |
+| ip_s | string |
+| lastSeen_t | datetime |
+| object_type_s | string |
+| payload | dynamic |
+| port_d | int |
+| protocol_s | string |
+| relationships_s | string |
+| risk_d | int |
+| source_s | string |
+| TimeGenerated | datetime |
+| timestamp | datetime |
+| type_s | string |
+| url_s | string |
 
 ## Solutions (1)
 

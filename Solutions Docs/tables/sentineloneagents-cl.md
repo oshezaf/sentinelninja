@@ -11,6 +11,82 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (68 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SentinelOneAgents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AccountId | string |
+| AccountName | string |
+| ActiveDirectory | string |
+| ActiveThreats | real |
+| AgentVersion | string |
+| AllowRemoteShell | bool |
+| AppsVulnerabilityStatus | string |
+| ComputerName | string |
+| ConsoleMigrationStatus | string |
+| CoreCount | real |
+| CpuCount | real |
+| CpuId | string |
+| CreatedAt | datetime |
+| Domain | string |
+| EncryptedApplications | bool |
+| ExternalId | string |
+| ExternalIp | string |
+| FullDiskScanLastUpdatedAt | datetime |
+| GroupId | string |
+| GroupIp | string |
+| GroupName | string |
+| GroupUpdatedAt | datetime |
+| Id | string |
+| Infected | bool |
+| InRemoteShellSession | bool |
+| InstallerType | string |
+| IsActive | bool |
+| IsDecommissioned | bool |
+| IsPendingUninstall | bool |
+| IsUninstalled | bool |
+| IsUpToDate | bool |
+| LastActiveDate | datetime |
+| LastIpToMgmt | string |
+| LastLoggedInUserName | string |
+| LicenseKey | string |
+| Locations | string |
+| LocationType | string |
+| MachineType | string |
+| MissingPermissions | string |
+| MitigationMode | string |
+| MitigationModeSuspicious | string |
+| ModelName | string |
+| NetworkInterfaces | string |
+| NetworkQuarantineEnabled | bool |
+| NetworkStatus | string |
+| OperationalStateExpiration | string |
+| OsArch | string |
+| OsName | string |
+| OsRevision | string |
+| OsStartTime | datetime |
+| OsType | string |
+| OsUsername | string |
+| PolicyUpdatedAt | datetime |
+| RangerStatus | string |
+| RangerVersion | string |
+| RegisteredAt | datetime |
+| RemoteProfilingState | string |
+| ScanAbortedAt | datetime |
+| ScanFinishedAt | datetime |
+| ScanStartedAt | datetime |
+| ScanStatus | string |
+| SiteId | string |
+| SiteName | string |
+| ThreatRebootRequired | bool |
+| TotalMemory | real |
+| UpdatedAt | datetime |
+| UserActionsNeeded | string |
+| Uuid | string |
 
 ## Solutions (1)
 

@@ -11,6 +11,24 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (10 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFox_CTI_credit_cards_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| breach_name_s | string |
+| cc_bin_s | string |
+| cc_num_s | string |
+| created_at_t | datetime |
+| cvv_s | real |
+| issuer_s | string |
+| month_s | string |
+| source_s | string |
+| TimeGenerated | datetime |
+| year_s | string |
 
 ## Solutions (1)
 

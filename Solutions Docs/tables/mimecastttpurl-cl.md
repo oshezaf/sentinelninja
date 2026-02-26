@@ -11,6 +11,39 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (25 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MimecastTTPUrl_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action_s | string |
+| actions_s | string |
+| adminOverride_s | string |
+| advancedPhishingResult_CredentialTheftBrands_s | string |
+| advancedPhishingResult_CredentialTheftEvidence_s | string |
+| advancedPhishingResult_CredentialTheftTags_s | string |
+| category_s | string |
+| creationMethod_s | string |
+| date_t | datetime |
+| emailPartsDescription_s | string |
+| fromUserEmailAddress_s | string |
+| messageId_s | string |
+| mimecastEventCategory_s | string |
+| mimecastEventId_s | string |
+| route_s | string |
+| scanResult_s | string |
+| sendingIp_s | string |
+| subject_s | string |
+| time_generated | datetime |
+| TimeGenerated | datetime |
+| ttpDefinition_s | string |
+| url_s | string |
+| userAwarenessAction_s | string |
+| userEmailAddress_s | string |
+| userOverride_s | string |
 
 ## Solutions (1)
 

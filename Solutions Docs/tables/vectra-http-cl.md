@@ -10,6 +10,49 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (36 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/vectra_http_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| beacon_type | string |
+| beacon_uid | string |
+| duration | long |
+| first_event_time | datetime |
+| id_ip_ver | string |
+| id_orig_h | string |
+| id_orig_p | int |
+| id_resp_h | string |
+| id_resp_p | int |
+| is_proxied | bool |
+| ja3 | string |
+| last_event_time | datetime |
+| local_orig | bool |
+| local_resp | bool |
+| orig_hostname | string |
+| orig_huid | string |
+| orig_ip_bytes | long |
+| orig_pkts | long |
+| orig_sluid | string |
+| proto | int |
+| protoName | string |
+| request_cache_control | string |
+| resp_domains | dynamic |
+| resp_hostname | string |
+| resp_huid | string |
+| resp_ip_bytes | long |
+| resp_pkts | long |
+| resp_sluid | string |
+| response_cache_control | string |
+| response_expires | string |
+| sensor_uid | string |
+| service | string |
+| session_count | long |
+| TimeGenerated | datetime |
+| ts | datetime |
+| uid | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

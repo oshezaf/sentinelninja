@@ -10,6 +10,29 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (16 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHEFindingTrendsData_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| composite_risk | string |
+| display_title | string |
+| display_type | string |
+| domain_name | string |
+| end_date | datetime |
+| environment_id | string |
+| exposure_count | int |
+| finding | string |
+| finding_count_decrease | int |
+| finding_count_end | int |
+| finding_count_increase | int |
+| finding_count_start | int |
+| impact_count | int |
+| start_date | datetime |
+| tenant_url | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

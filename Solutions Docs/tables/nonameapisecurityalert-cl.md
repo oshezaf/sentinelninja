@@ -10,6 +10,30 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NonameAPISecurityAlert_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| data_host_s | string |
+| data_id_s | string |
+| data_method_s | string |
+| data_path_s | string |
+| data_self_s | string |
+| data_ts_t | datetime |
+| data_type_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| type_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

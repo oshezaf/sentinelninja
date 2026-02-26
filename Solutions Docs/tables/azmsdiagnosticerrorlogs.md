@@ -14,7 +14,32 @@ Reference for AZMSDiagnosticErrorLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsdiagnosticerrorlogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsdiagnosticerrorlogs) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (17 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsdiagnosticerrorlogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ActivityId | string | A randomly generated UUID that ensures uniqueness for the audit activity. |
+| ActivityName | string | Operation name. |
+| EntityName | string | Entity name. |
+| EntityType | string | Entity type. |
+| ErrorCount | int | Count of identical errors during the aggregation period of 1 minute. |
+| ErrorMessage | string | Detailed error message. |
+| NamespaceName | string | Namespace name. |
+| OperationResult | string | Type of error (clienterror or serverbusy or quotaexceeded). |
+| Provider | string | Event provider name. Possible values: eventhub, relay, and servicebus. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The event generation time (UTC). |
+| Type | string | The name of the table |
 
 ---
 

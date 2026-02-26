@@ -11,6 +11,27 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (13 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Illumio_Auditable_Events_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ItemId | string |
+| action | dynamic |
+| created_by | dynamic |
+| event_type | string |
+| href | string |
+| notifications | dynamic |
+| pce_fqdn | string |
+| resource_changes | dynamic |
+| severity | string |
+| status | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| version | int |
 
 ## Solutions (2)
 

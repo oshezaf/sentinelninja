@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BitsightCompany_rating_details_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| beta | bool |
+| category | string |
+| category_order | real |
+| Company_name | string |
+| display_url | string |
+| grade | string |
+| grade_color | string |
+| Name | string |
+| order | real |
+| percentile | string |
+| rating | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

@@ -14,7 +14,30 @@ Reference for AHDSDicomAuditLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ahdsdicomauditlogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ahdsdicomauditlogs) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (15 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ahdsdicomauditlogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| CorrelationId | string | An identifier used to group together a set of related events. |
+| Identity | dynamic | Identity of the issuer of the request. |
+| Level | string | The log's severity level. Possible values are Informational, Warning, and Error. |
+| OperationName | string | The operation name for which the log entry was generated. |
+| ResultType | string | Indicates whether the operation started or ended. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| StatusCode | int | Status code returned for the request. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Time (UTC) when the log was created. |
+| Type | string | The name of the table |
+| Uri | string | URI of the request. |
 
 ---
 

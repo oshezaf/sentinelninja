@@ -14,7 +14,20 @@ Defender Vulnerability Management assessment events including configuration and 
 |:----------|:------|
 | **Category** | MDE |
 | **Ingestion API Supported** | ✗ No |
-| **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvminfogathering-table) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvminfogathering-table) |
+
+## Schema (6 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvminfogathering)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AdditionalFields | dynamic | Additional information about the entity or event |
+| DeviceId | string | Unique identifier for the device in the service |
+| DeviceName | string | Fully qualified domain name (FQDN) of the device |
+| LastSeenTime | datetime | Date and time when the service last saw the device |
+| OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
+| Timestamp | datetime | Date and time when the record was generated |
 
 ---
 

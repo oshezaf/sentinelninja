@@ -10,6 +10,51 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (38 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHEAttackPathsData_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Accepted | bool |
+| AcceptedUntil | string |
+| ComboGraphRelationID | int |
+| created_at | string |
+| deleted_at | dynamic |
+| domain_name | string |
+| DomainSID | string |
+| Environment | string |
+| ExposureCount | int |
+| ExposurePercentage | int |
+| Finding | string |
+| id | int |
+| ImpactCount | int |
+| ImpactedPrincipal | string |
+| ImpactedPrincipalEnvironment | string |
+| ImpactedPrincipalEnvironmentID | string |
+| ImpactedPrincipalKind | string |
+| ImpactedPrincipalName | string |
+| ImpactedPrincipalProps | dynamic |
+| ImpactPercentage | int |
+| IsInherited | string |
+| LongRemediation | string |
+| NonTierZeroPrincipal | string |
+| NonTierZeroPrincipalEnvironment | string |
+| NonTierZeroPrincipalEnvironmentID | string |
+| NonTierZeroPrincipalKind | string |
+| NonTierZeroPrincipalName | string |
+| NonTierZeroPrincipalProps | dynamic |
+| PathTitle | string |
+| PrincipalHash | string |
+| RelProps | dynamic |
+| Remediation | string |
+| Severity | string |
+| ShortDescription | string |
+| ShortRemediation | string |
+| tenant_url | string |
+| TimeGenerated | datetime |
+| updated_at | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

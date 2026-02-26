@@ -15,7 +15,34 @@ Reference for AZFWIdpsSignature table in Azure Monitor Logs.
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✓ Yes |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwidpssignature) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwidpssignature) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (18 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwidpssignature)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Action | string | Action taken by the firewall following the IDPS signature hit. |
+| Category | string | Category of the matched IDPS signature. |
+| Description | string | Description of the matched IDPS signature. |
+| DestinationIp | string | Packet's destination IP address. |
+| DestinationPort | int | Packet's destination port. |
+| Protocol | string | Packet's network protocol. For example: UDP, TCP. |
+| Severity | int | Severity of the matched IDPS signature. |
+| SignatureId | string | ID of the matched IDPS signature. |
+| SourceIp | string | Packet's source IP address. |
+| SourcePort | int | Packet's source port. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Timestamp (UTC) when the data plane log was created. |
+| Type | string | The name of the table |
 
 ## Solutions (2)
 

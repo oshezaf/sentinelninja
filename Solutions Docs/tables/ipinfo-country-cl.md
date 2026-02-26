@@ -10,6 +10,22 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_Country_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| as_domain | string |
+| as_name | string |
+| asn | string |
+| continent | string |
+| continent_name | string |
+| country | string |
+| country_name | string |
+| range | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

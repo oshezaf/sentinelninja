@@ -11,6 +11,30 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (16 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_CCP/ProofpointTAP_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| campaignId | string |
+| classification | string |
+| clickIP | string |
+| clickTime | datetime |
+| GUID | string |
+| id | string |
+| messageID | string |
+| recipient | string |
+| sender | string |
+| senderIP | string |
+| threatID | string |
+| threatStatus | string |
+| threatTime | datetime |
+| threatURL | string |
+| url | string |
+| userAgent | string |
 
 ## Solutions (1)
 

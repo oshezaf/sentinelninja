@@ -11,6 +11,31 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyberpionActionItems_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| acknowledged_by_s | string |
+| acknowledged_date_t | datetime |
+| acknowledged_reason_s | string |
+| Category | string |
+| description_s | string |
+| host_s | string |
+| id_s | string |
+| impact_s | string |
+| is_acknowledged_b | bool |
+| is_open_b | bool |
+| opening_datetime_t | datetime |
+| solution_s | string |
+| summary_s | string |
+| technical_details_s | string |
+| TimeGenerated | datetime |
+| title_s | string |
+| urgency_d | real |
 
 ## Solutions (1)
 

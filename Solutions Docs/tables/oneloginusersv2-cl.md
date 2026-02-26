@@ -11,6 +11,23 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (9 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM/Data%20Connectors/OneLoginIAMLogs_ccp/OneLoginIAMLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| created_at | datetime |
+| department | string |
+| email | string |
+| firstname | string |
+| id | real |
+| lastname | string |
+| openid_name | string |
+| title | string |
+| username | string |
 
 ## Solutions (1)
 

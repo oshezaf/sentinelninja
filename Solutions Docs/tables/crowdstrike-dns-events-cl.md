@@ -11,6 +11,49 @@
 | **Category** | Crowdstrike |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (36 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CrowdStrike_DNS_Events_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AdditionalFields | dynamic |
+| aid | string |
+| aip | string |
+| BoundingLimitCount | long |
+| BoundingLimitDuration | string |
+| cid | string |
+| CNAMERecords | string |
+| ConfigBuild | string |
+| ConfigStateHash | string |
+| ContextProcessId | string |
+| ContextThreadId | string |
+| ContextTimeStamp | real |
+| CrowdStrikeId | string |
+| DnsRequestCount | long |
+| DnsResponseType | string |
+| DomainName | string |
+| DualRequest | string |
+| EffectiveTransmissionClass | string |
+| Entitlements | string |
+| event_platform | string |
+| event_simpleName | string |
+| EventOrigin | string |
+| FirstIP4Record | string |
+| FirstIP6Record | string |
+| InterfaceIndex | long |
+| IP4Records | string |
+| IP6Records | string |
+| name | string |
+| OciContainerId | string |
+| QueryStatus | string |
+| RequestType | string |
+| RespondingDnsServer | string |
+| TimeGenerated | datetime |
+| timestamp | long |
+| TreeId | string |
+| UserName | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

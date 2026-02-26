@@ -10,6 +10,35 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (22 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Guardian_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Action_Taken_s | string |
+| App_s | string |
+| Computer | string |
+| Input_Output_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| Mode_s | string |
+| Policy_Violated_Control_Feature_s | string |
+| Policy_Violated_Description_s | string |
+| Policy_Violated_Theme_s | string |
+| Policy_Violated_Threshold_Setting_s | string |
+| Query_s | string |
+| RawData | string |
+| Severity_s | string |
+| SourceIP_s | string |
+| SourceSystem | string |
+| Target_LLM_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| timestamp_s | string |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

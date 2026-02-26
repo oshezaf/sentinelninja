@@ -14,7 +14,35 @@ Reference for OEWAuditLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oewauditlogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oewauditlogs) |
+
+## Schema (21 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oewauditlogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| CallerIpAddress | string | The IP address of the caller. |
+| Category | string | The event category. |
+| CorrelationId | string | The correlation Id of the operation. |
+| DurationMs | int | The duration of the operation in milliseconds. |
+| HttpStatusCode | int | The HTTP status code of the operation. |
+| Identity | dynamic | The identity triggering the operation. |
+| Level | string | The log level. |
+| Location | string | The location of the resource. |
+| OperationName | string | The name of the operation. |
+| ResultDescription | string | The description of the result of the operation. |
+| ResultType | string | The result of the operation. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
+| Type | string | The name of the table |
+| URI | string | The URI of the operation. |
+| WorkspaceId | string | The workspace Id of the online experimentation resource. |
 
 ---
 

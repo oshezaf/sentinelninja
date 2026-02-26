@@ -10,6 +10,30 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SenservaPro_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| CEFLoggingLevel_d | real |
+| ControlId_d | real |
+| ControlName_s | string |
+| Description_s | string |
+| Group_s | string |
+| LogAnalyticsWorkspaceDisplayName_s | string |
+| MitreControls_s | string |
+| NistControls_s | string |
+| ObjectId_g | string |
+| Reference_s | string |
+| ScanId_s | string |
+| ScanTime_t | datetime |
+| Severity | string |
+| TenantDisplayName_s | string |
+| TenantId_s | string |
+| TimeGenerated | datetime |
+| Value_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

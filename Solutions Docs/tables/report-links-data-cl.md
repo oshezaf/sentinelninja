@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Report_links_data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| indicator_id_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| report_link_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| updated_at_t | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,34 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (20 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Rubrik_Ransomware_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| class_s | string |
+| Computer | string |
+| custom_details_clusterId_g | string |
+| custom_details_id_g | string |
+| custom_details_objectId_g | string |
+| custom_details_objectName_s | string |
+| custom_details_objectType_s | string |
+| custom_details_status_s | string |
+| custom_details_type_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| severity_s | string |
+| source_s | string |
+| SourceSystem | string |
+| summary_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

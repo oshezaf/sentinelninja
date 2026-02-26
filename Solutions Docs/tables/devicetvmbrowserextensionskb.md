@@ -14,7 +14,25 @@ Browser extension details and permission information used in the Microsoft Defen
 |:----------|:------|
 | **Category** | MDE |
 | **Ingestion API Supported** | ✗ No |
-| **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmbrowserextensionskb-table) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmbrowserextensionskb-table) |
+
+## Schema (11 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmbrowserextensionskb)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| BrowserName | string | Name of the web browser with the extension |
+| ExtensionDescription | string | Description from the publisher about the extension |
+| ExtensionId | string | Unique identifier for the browser extension |
+| ExtensionName | string | Name of the extension |
+| ExtensionRisk | string | Risk level for the extension based on the permissions it has requested |
+| ExtensionVersion | dynamic | Version number of the extension |
+| IsPermissionRequired | string | Whether the permission is required for the extension to run, or optional |
+| PermissionDescription | string | Explanation of what the permission is supposed to do |
+| PermissionId | string | Unique identifier for the permission |
+| PermissionName | string | Name given to each permission based on what the extension is asking for |
+| PermissionRisk | string | Risk level for the permission based on the type of access it would allow |
 
 ---
 

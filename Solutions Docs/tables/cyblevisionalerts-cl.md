@@ -11,6 +11,83 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (69 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision/Data%20Connectors/CybleVisionAlerts_CCF/CybleVision_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| application_name | string |
+| archive_date | string |
+| article_name | string |
+| asset | string |
+| assignee_id | string |
+| assignment_date | string |
+| breach_date | string |
+| breach_source | string |
+| bucket_id | int |
+| bucket_name | string |
+| category | string |
+| channel_name | string |
+| chat_title | string |
+| company_id | int |
+| compromised_date | string |
+| content_added_on | string |
+| content_updated_on | string |
+| created_at | datetime |
+| created_by | string |
+| cve | string |
+| data | dynamic |
+| data_id | string |
+| deleted_at | string |
+| description | string |
+| discussion_by | string |
+| discussion_date | string |
+| domain | string |
+| entity_id | int |
+| entity_type | int |
+| extension | string |
+| filename | string |
+| first_seen_on | string |
+| host | string |
+| id | string |
+| ioc | string |
+| ip | dynamic |
+| keyword_name | string |
+| last_detected_at | string |
+| last_seen_on | string |
+| llm_explanation | string |
+| llm_processed | boolean |
+| market_source | string |
+| marketplace | string |
+| name | string |
+| new_risk_score | string |
+| old_risk_score | string |
+| owner_name | string |
+| port | int |
+| repository_name | string |
+| risk_score | dynamic |
+| search_engine | string |
+| sentiment | string |
+| server_name | string |
+| service | string |
+| severity | string |
+| source | string |
+| source_name | string |
+| status | string |
+| stealer | string |
+| subdomain | string |
+| tags | dynamic |
+| topic_name | string |
+| true_positive | boolean |
+| type | string |
+| updated_at | datetime |
+| updated_by_id | string |
+| uploaded_at | string |
+| user_severity | string |
+| username | string |
 
 ## Solutions (1)
 

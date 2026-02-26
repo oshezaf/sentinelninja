@@ -11,6 +11,31 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CyberArk_AuditEvents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| actionType | string |
+| applicationCode | string |
+| auditCode | string |
+| auditType | string |
+| command | string |
+| component | string |
+| CyberArkTenantId | string |
+| message | string |
+| serviceName | string |
+| sessionId | string |
+| source | string |
+| target | string |
+| TimeGenerated | datetime |
+| timestamp | int |
+| userId | string |
+| username | string |
 
 ## Solutions (1)
 

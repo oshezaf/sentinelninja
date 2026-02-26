@@ -14,7 +14,40 @@ Reference for ASRv2ProtectedItems table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrv2protecteditems) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrv2protecteditems) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (25 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrv2protecteditems)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Category | string | The category of the log. |
+| CorrelationId | string | The correlation Id of the event. |
+| FabricAgentId | string | The fabric agent Id. |
+| FabricId | string | The fabric Id. |
+| FabricObjectId | string | The fabric object Id. |
+| FabricObjectName | string | The fabric object name. |
+| LastSuccessfulPlannedFailoverTime | datetime | The time of the last successful failover the protected item. |
+| OperationName | string | The name of the operation. |
+| PolicyName | string | The name of the replication policy. |
+| ProtectionState | string | The current protection state. |
+| ProviderId | string | The replication provider Id. |
+| ReplicationExtensionName | string | The name of the replication extension. |
+| ReplicationHealth | string | The health of the protected item. |
+| SourceFabricProviderId | string | The source fabric provider Id. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TargetFabricAgentId | string | The target fabric agent Id. |
+| TargetFabricId | string | The target fabric Id. |
+| TargetFabricProviderId | string | The target fabric provider Id. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The timestamp (UTC) when the log was generated. |
+| Type | string | The name of the table |
 
 ---
 

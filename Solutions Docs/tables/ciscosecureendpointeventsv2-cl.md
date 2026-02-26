@@ -11,6 +11,47 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (33 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Data%20Connectors/CiscoSecureEndpointLogs_ccp/CiscoSecureEndpointLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| bp_data | dynamic |
+| cloud_ioc | dynamic |
+| command_line | dynamic |
+| computer | dynamic |
+| connector_guid | string |
+| date | datetime |
+| detection | string |
+| detection_id | string |
+| device_control | dynamic |
+| endpoint_ioc_scan | dynamic |
+| error | dynamic |
+| event_type | string |
+| event_type_id | real |
+| file | dynamic |
+| forensic_snapshot | dynamic |
+| group_guids | string |
+| hostname | string |
+| id | real |
+| isolation | dynamic |
+| network_info | dynamic |
+| orbital | dynamic |
+| policy | dynamic |
+| product_update | dynamic |
+| scan | dynamic |
+| severity | string |
+| start_date | datetime |
+| start_timestamp | real |
+| tactics | string |
+| techniques | string |
+| threat_hunting | dynamic |
+| timestamp | real |
+| timestamp_nanoseconds | real |
+| vulnerabilities | string |
 
 ## Solutions (1)
 

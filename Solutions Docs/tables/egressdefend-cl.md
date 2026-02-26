@@ -10,6 +10,28 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/EgressDefend_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| email_attachments_s | string |
+| email_firstTimeSender_b | bool |
+| email_linksClicked_d | real |
+| email_mailFrom_s | string |
+| email_messageId_s | string |
+| email_payload_Type_s | string |
+| email_phishType_s | string |
+| email_rcptTo_s | string |
+| email_senderIp_s | string |
+| email_subject_s | string |
+| email_threat_s | string |
+| email_trust_s | string |
+| event_s | string |
+| linkClicked_s | string |
+| TimeGenerated | datetime |
+
 ## Solutions (2)
 
 This table is used by the following solutions:

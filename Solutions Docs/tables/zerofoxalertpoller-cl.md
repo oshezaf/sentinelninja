@@ -11,6 +11,42 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (28 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/Alerts/ZeroFoxAlerts_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alert_type | string |
+| asset | dynamic |
+| asset_term | string |
+| assignee | string |
+| business_network | string |
+| content_created_at | datetime |
+| darkweb_term | string |
+| entered_by | string |
+| entity | dynamic |
+| escalated | boolean |
+| id | int |
+| last_modified | datetime |
+| logs | string |
+| metadata | string |
+| network | string |
+| notes | string |
+| offending_content_url | string |
+| perpetrator | dynamic |
+| protected_locations | string |
+| protected_social_object | string |
+| reviewed | boolean |
+| reviews | string |
+| rule_group_id | int |
+| rule_id | int |
+| rule_name | string |
+| severity | int |
+| status | string |
+| tags | string |
 
 ## Solutions (1)
 

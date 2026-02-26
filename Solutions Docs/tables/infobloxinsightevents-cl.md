@@ -13,6 +13,61 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (48 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsightEvents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| action_s | string |
+| class_s | string |
+| Computer | string |
+| confidenceLevel_s | string |
+| detected_s | string |
+| deviceCountry_s | string |
+| deviceIp_s | string |
+| deviceName_g | string |
+| deviceName_s | string |
+| deviceRegion_s | string |
+| dhcpFingerprint_s | string |
+| dnsView_s | string |
+| feed_s | string |
+| id_s | string |
+| InfobloxInsightfulID_s | string |
+| InfobloxInsightID_g | string |
+| InfobloxInsightLogType_s | string |
+| InsightID_g | string |
+| kind_s | string |
+| macAddress_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| name_g | string |
+| osVersion_s | string |
+| policy_s | string |
+| properties_category_s | string |
+| properties_friendlyName_g | string |
+| properties_friendlyName_s | string |
+| properties_malwareName_s | string |
+| properties_objectGuid_g | string |
+| property_s | string |
+| query_s | string |
+| queryType_s | string |
+| RawData | string |
+| response_s | string |
+| responseCountry_s | string |
+| responseRegion_s | string |
+| source_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| threatFamily_s | string |
+| threatIndicator_s | string |
+| threatLevel_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| type_s | string |
+| user_s | string |
+
 ## Solutions (2)
 
 This table is used by the following solutions:

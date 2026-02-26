@@ -11,6 +11,44 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cymru_Scout_IP_Data_Summary_Details_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| bgp_asn | real |
+| bgp_asname | string |
+| end_date | string |
+| fingerprints | dynamic |
+| geo_ip_cc | string |
+| insights | dynamic |
+| insights_insights | dynamic |
+| insights_overall_rating | string |
+| insights_total | real |
+| ip | string |
+| open_ports | dynamic |
+| open_ports_total | real |
+| open_ports_unique_ports | real |
+| pdns | dynamic |
+| pdns_total | real |
+| reverse_hostnames | dynamic |
+| start_date | string |
+| tag_timeline | dynamic |
+| tag_timeline_data | dynamic |
+| tags | dynamic |
+| tags_id | string |
+| tags_name | string |
+| TimeGenerated | datetime |
+| total | real |
+| Type | string |
+| whois | dynamic |
+| whois_as_name | string |
+| whois_asn | real |
+| whois_net_name | string |
+| whois_org_name | string |
 
 ## Solutions (1)
 

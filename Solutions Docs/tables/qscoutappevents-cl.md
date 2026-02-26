@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Quokka/Data%20Connectors/QuokkaQscoutAppEventsLogs_ccf/QuokkaQscoutAppEventsLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| app_id | string |
+| device_os_build_version | string |
+| mdm_device_id | string |
+| mdm_source | string |
+| org_id | string |
+| package | string |
+| platform | string |
+| received_at | datetime |
+| result_type | string |
+| results | dynamic |
+| version | string |
 
 ## Solutions (1)
 

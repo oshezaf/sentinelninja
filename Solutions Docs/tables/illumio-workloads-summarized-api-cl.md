@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Illumio_Workloads_Summarized_API_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| TimeGenerated | datetime |
+| vens_by_enforcement_mode | dynamic |
+| vens_by_managed | dynamic |
+| vens_by_os | dynamic |
+| vens_by_status | dynamic |
+| vens_by_sync_state | dynamic |
+| vens_by_type | dynamic |
+| vens_by_version | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -14,7 +14,41 @@ Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appservicehttplogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appservicehttplogs) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (26 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appservicehttplogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| CIp | string | IP address of the client |
+| ComputerName | string | The name of the server on which the log file entry was generated. |
+| Cookie | string | Cookie on HTTP request |
+| CsBytes | int | Number of bytes received by server |
+| CsHost | string | Host name header on HTTP request |
+| CsMethod | string | The request HTTP verb |
+| CsUriQuery | string | URI query on HTTP request |
+| CsUriStem | string | The target of the request |
+| CsUsername | string | The name of the authenticated user on HTTP request |
+| Referer | string | The site that the user last visited. This site provided a link to the current site |
+| Result | string | Success / Failure of HTTP request |
+| ScBytes | int | Number of bytes sent by server |
+| ScStatus | int | HTTP status code |
+| ScSubStatus | string | Substatus error code on HTTP request |
+| ScWin32Status | string | Windows status code on HTTP request |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SPort | string | Server port number |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Time when event is generated |
+| TimeTaken | int | Time taken by HTTP request in milliseconds |
+| Type | string | The name of the table |
+| UserAgent | string | User agent on HTTP request |
 
 ## Solutions (2)
 

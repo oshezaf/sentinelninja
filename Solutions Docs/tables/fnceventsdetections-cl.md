@@ -11,6 +11,44 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/FncEventsDetections_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Category | string |
+| confidence_s | string |
+| created_t | datetime |
+| customer_id_s | string |
+| device_ip_s | string |
+| event_type_s | string |
+| first_seen_t | datetime |
+| indicators_s | string |
+| last_seen_t | datetime |
+| muted_b | bool |
+| muted_comment_s | string |
+| muted_rule_b | bool |
+| name_s | string |
+| other_dhcp_machost_pairs_s | string |
+| other_pdns_hostnames_s | string |
+| primary_dhcp_machost_pairs_s | string |
+| primary_pdns_hostnames_s | string |
+| product_s | string |
+| rule_uuid_g | string |
+| sensor_id_s | string |
+| severity_s | string |
+| signal_version_s | string |
+| status_s | string |
+| subject_s | string |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
+| Type | string |
+| updated_t | datetime |
+| uuid_g | string |
+| vendor_s | string |
 
 ## Solutions (1)
 

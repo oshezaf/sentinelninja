@@ -14,7 +14,29 @@ Reference for AZMSVnetConnectionEvents table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsvnetconnectionevents) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsvnetconnectionevents) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (14 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azmsvnetconnectionevents)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Action | string | Action done by the service when evaluating connection requests. Supported actions are accept connection and deny connection. |
+| AddressIp | string | IP address of a client connecting to the Event Hubs or Service Bus service. |
+| Count | int | Number of occurrences for the given action. |
+| Message | string | Provides a reason why the action was done. |
+| NamespaceName | string | Name of Event Hubs or Service Bus namespace. |
+| Provider | string | Event provider name. Possible values: eventhub, relay, and servicebus. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The event generation time (UTC). |
+| Type | string | The name of the table |
 
 ---
 

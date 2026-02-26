@@ -14,6 +14,44 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/atlassian_beacon_alerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| activity_action_s | string |
+| activity_subject_ari_s | string |
+| activity_subject_ati_s | string |
+| activity_subject_containerAri_s | string |
+| activity_time_end_t | datetime |
+| activity_time_start_t | datetime |
+| actor_accountId_s | string |
+| actor_name_s | string |
+| actor_sessions_s | dynamic |
+| actor_url_s | string |
+| alert_created_t | datetime |
+| alert_id_s | string |
+| alert_product_s | string |
+| alert_site_s | string |
+| alert_title_s | string |
+| alert_url_s | string |
+| alertDetailURL_s | string |
+| alertId_s | string |
+| alertTitle_s | string |
+| atlassianAlertType_s | string |
+| atlassianWorkspace_cloudId_g | string |
+| atlassianWorkspace_id_g | string |
+| atlassianWorkspace_orgId_s | string |
+| detectiontime_d | datetime |
+| id_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| timestamp_d | string |
+| Type | string |
 
 ## Solutions (1)
 

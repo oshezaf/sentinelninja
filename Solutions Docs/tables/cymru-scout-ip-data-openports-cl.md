@@ -11,6 +11,31 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cymru_Scout_IP_Data_OpenPorts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| as_info | dynamic |
+| banner | string |
+| banner_sha1 | string |
+| country_codes | dynamic |
+| end_date | string |
+| event_count | real |
+| first_seen | string |
+| ip | string |
+| last_seen | string |
+| port | real |
+| protocol | real |
+| protocol_text | string |
+| service | string |
+| start_date | string |
+| tags | dynamic |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

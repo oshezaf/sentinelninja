@@ -14,7 +14,25 @@ Microsoft Security Exposure Management exposure graph edge information provides 
 |:----------|:------|
 | **Category** | XDR |
 | **Ingestion API Supported** | ✗ No |
-| **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-exposuregraphedges-table) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-exposuregraphedges-table) |
+
+## Schema (11 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/exposuregraphedges)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| EdgeId | string | Unique identifier for the relationship/edge |
+| EdgeLabel | string | The edge label like "routes traffic to" |
+| EdgeProperties | dynamic | Optional data relevant for the relationship between the nodes in JSON format |
+| SourceNodeCategories | dynamic | Categories list of the source node in JSON format |
+| SourceNodeId | string | Node ID of the edge's source |
+| SourceNodeLabel | string | Source node label |
+| SourceNodeName | string | Source node display name |
+| TargetNodeCategories | dynamic | The categories list of the target node in JSON format |
+| TargetNodeId | string | Node ID of the edge's target |
+| TargetNodeLabel | string | Target node label |
+| TargetNodeName | string | Display name of the target node |
 
 ---
 

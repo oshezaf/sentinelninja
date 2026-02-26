@@ -10,6 +10,25 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_suricata_zeek_stats_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| closed_conn_alerts_d | real |
+| matched_conn_alerts_d | real |
+| raised_alerts_d | real |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+| uniq_closed_conns_d | real |
+| uniq_matched_conns_d | real |
+| unmatched_conn_alerts_d | real |
+| unparsed_alerts_d | real |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

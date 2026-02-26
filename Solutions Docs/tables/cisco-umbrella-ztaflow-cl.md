@@ -11,6 +11,42 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (28 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_ztaflow_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| app_connector_group_id_s | string |
+| app_connector_id_s | string |
+| connection_failure_reason_s | string |
+| connection_status_s | string |
+| egress_ip_s | string |
+| egress_port_d | real |
+| enforced_by_s | string |
+| event_type_s | string |
+| ftd_enforcement_id_s | string |
+| ftd_enforcement_name_s | string |
+| headend_type_s | string |
+| hostname_s | string |
+| identity_email_s | string |
+| identity_labels_s | string |
+| identity_type_labels_s | string |
+| msp_organization_id_s | string |
+| nt_group_id_s | string |
+| organization_id_s | string |
+| private_resource_group_id_s | string |
+| private_resource_id_s | string |
+| rule_id_s | string |
+| ruleset_id_s | string |
+| rxbytes_d | real |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| transaction_id_s | string |
+| txbytes_d | real |
+| zta_source_port_d | real |
 
 ## Solutions (1)
 

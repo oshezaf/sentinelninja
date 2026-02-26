@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure/Data%20Connectors/Oracle_Cloud_Infrastructure_CCP/OCI_DataConnector_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| data | dynamic |
+| dataschema | string |
+| EventProduct | string |
+| EventVendor | string |
+| id | string |
+| oracle | dynamic |
+| source | string |
+| specversion | string |
+| stream | string |
+| time | datetime |
+| type | string |
 
 ## Solutions (1)
 

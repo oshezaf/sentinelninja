@@ -11,6 +11,27 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (13 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cymru_Scout_Account_Usage_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ai_insights_usage | dynamic |
+| ai_insights_usage_query_limit | real |
+| ai_insights_usage_remaining_queries | real |
+| ai_insights_usage_used_queries | real |
+| foundation_api_usage | dynamic |
+| foundation_api_usage_query_limit | real |
+| foundation_api_usage_remaining_queries | real |
+| foundation_api_usage_used_queries | real |
+| query_limit | real |
+| remaining_queries | real |
+| TimeGenerated | datetime |
+| Type | string |
+| used_queries | real |
 
 ## Solutions (1)
 

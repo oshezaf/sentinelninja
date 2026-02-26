@@ -11,6 +11,31 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/AIShield_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| asset_id | string |
+| attack_name | string |
+| Computer | string |
+| ManagementGroupName | string |
+| MG | string |
+| probability | real |
+| RawData | string |
+| RawMessage | string |
+| service_name | string |
+| source_name | string |
+| SourceSystem | string |
+| SuspiciousLevel | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| timestamp | datetime |
+| Type | string |
 
 ## Solutions (1)
 

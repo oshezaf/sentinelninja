@@ -11,6 +11,39 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (25 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/jamfprotectunifiedlogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| DvcHostname | dynamic |
+| DvcId | dynamic |
+| DvcIpAddr | dynamic |
+| DvcOs | string |
+| DvcOsVersion | dynamic |
+| DvcSerial | dynamic |
+| EventMessage | dynamic |
+| EventOriginalType | dynamic |
+| EventOriginalUid | dynamic |
+| EventProductVersion | dynamic |
+| EventResult | string |
+| EventResultMessage | dynamic |
+| EventSeverity | string |
+| EventType | string |
+| input | dynamic |
+| ProcessEventSubType | string |
+| ProcessEventType | string |
+| SrcDeviceType | string |
+| TargetHostname | dynamic |
+| TargetProcessCommandLine | dynamic |
+| TargetProcessCurrentDirectory | dynamic |
+| TargetProcessGuid | dynamic |
+| TargetProcessId | dynamic |
+| TargetProcessName | dynamic |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

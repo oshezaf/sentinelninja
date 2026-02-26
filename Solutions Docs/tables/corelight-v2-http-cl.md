@@ -10,6 +10,49 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (36 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_http_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| host_s | string |
+| id_orig_h_s | string |
+| id_orig_p_d | real |
+| id_resp_h_s | string |
+| id_resp_p_d | real |
+| info_code_d | real |
+| info_msg_s | string |
+| method_s | string |
+| orig_filenames_s | string |
+| orig_fuids_s | string |
+| orig_mime_types_s | string |
+| origin_s | string |
+| password_s | string |
+| post_body_s | string |
+| proxied_s | string |
+| referrer_s | string |
+| request_body_len_d | real |
+| resp_filenames_s | string |
+| resp_fuids_s | string |
+| resp_mime_types_s | string |
+| response_body_len_d | real |
+| sid | string |
+| status_code_d | real |
+| status_msg_s | string |
+| tags_s | string |
+| TimeGenerated | datetime |
+| trans_depth_d | real |
+| ts_t | datetime |
+| uid_s | string |
+| uri_s | string |
+| user_agent_s | string |
+| username_s | string |
+| version_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -14,7 +14,34 @@ Reference for MAApplication table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maapplication) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maapplication) |
+
+## Schema (20 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maapplication)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AppCategory | string |  |
+| AppLanguage | string |  |
+| AppName | string |  |
+| AppType | string |  |
+| AppVendor | string |  |
+| AppVersion | string |  |
+| HasSupportStatement | bool |  |
+| Importance | string |  |
+| IsVirtualized | bool |  |
+| MonthlyActiveDevices | int |  |
+| NPId | string |  |
+| ProgramId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TestOwner | string |  |
+| TestPlan | string |  |
+| TimeGenerated | datetime |  |
+| TotalInstalls | int |  |
+| Type | string | The name of the table |
 
 ---
 

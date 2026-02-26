@@ -10,6 +10,31 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/beSECURE_ScanResults_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| cves | string |
+| cvss_score_s | string |
+| destination_host_s | string |
+| destination_port | string |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| risk_name_s | string |
+| risk_value_s | string |
+| scan_name | string |
+| SourceSystem | string |
+| TenantId | string |
+| test_id | string |
+| TimeGenerated | datetime |
+| Type | string |
+| vulnerability_name | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,52 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (38 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Brand%20Intelligence/Data%20Connectors/CyfirmaBIAlerts_ccp/CyfirmaBIAlerts_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| alert_created_date | datetime |
+| alert_object_uid | string |
+| alert_uid | string |
+| asset_comments | string |
+| asset_type | string |
+| asset_value | string |
+| category | string |
+| comments | string |
+| created_date | datetime |
+| description | string |
+| domain | string |
+| dr_domain | string |
+| dr_sub_domain | string |
+| first_seen | datetime |
+| host_provider | string |
+| impact | string |
+| ip_address | string |
+| is_third_party | boolean |
+| last_seen | datetime |
+| mail_server | string |
+| notes | dynamic |
+| recommendation | string |
+| registered_date | string |
+| risk_score | int |
+| safe_flag_comments | string |
+| safe_flag_marked_by | string |
+| safe_flag_marked_date | string |
+| severity | string |
+| signature | string |
+| source | string |
+| source_type | dynamic |
+| status | string |
+| sub_category | string |
+| suspected_threat_actor | dynamic |
+| title | string |
+| uid | string |
+| use_cases | string |
 
 ## Solutions (1)
 

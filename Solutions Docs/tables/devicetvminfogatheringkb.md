@@ -14,7 +14,19 @@ Metadata for assessment events collected in the `DeviceTvmInfogathering` table
 |:----------|:------|
 | **Category** | MDE |
 | **Ingestion API Supported** | ✗ No |
-| **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvminfogatheringkb-table) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvminfogatheringkb-table) |
+
+## Schema (5 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvminfogatheringkb)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| Categories | dynamic | List of categories that the information belongs to, in JSON array format |
+| DataStructure | string | The data structure of the information gathered |
+| Description | string | Description of the information gathered |
+| FieldName | string | Name of the field where this information appears in the AdditionalFields column of the DeviceTvmInfoGathering table |
+| IgId | string | Unique identifier for the piece of information gathered |
 
 ---
 

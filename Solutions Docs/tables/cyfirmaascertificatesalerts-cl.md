@@ -11,6 +11,51 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (37 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Attack%20Surface/Data%20Connectors/CyfirmaASAlerts_ccp/CyfirmaASAlerts_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alert_created_date | datetime |
+| alert_object_uid | string |
+| alert_uid | string |
+| asset_comments | string |
+| attacks | dynamic |
+| category | string |
+| cert_data | string |
+| cert_hash | string |
+| cert_type | string |
+| description | string |
+| first_seen | datetime |
+| is_third_party | boolean |
+| is_vulnerable | boolean |
+| issued_by | string |
+| issued_to | string |
+| issuer_public_hash | string |
+| last_seen | datetime |
+| notes | dynamic |
+| protocols | dynamic |
+| risk_score | int |
+| safe_flag_comments | string |
+| safe_flag_marked_by | string |
+| safe_flag_marked_date | string |
+| self_signed | boolean |
+| serial | string |
+| severity | string |
+| source | string |
+| status | string |
+| sub_category | string |
+| sub_domain | string |
+| title | string |
+| top_domain | string |
+| uid | string |
+| use_cases | string |
+| valid_from | datetime |
+| valid_to | datetime |
+| version | string |
 
 ## Solutions (1)
 

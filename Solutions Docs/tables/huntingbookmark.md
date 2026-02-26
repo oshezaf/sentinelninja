@@ -14,7 +14,39 @@ Reference for HuntingBookmark table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/huntingbookmark) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/huntingbookmark) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (24 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/huntingbookmark)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| BookmarkId | string | Guid - the bookmark ARM resource name |
+| BookmarkName | string | Bookmark name given by the user |
+| BookmarkType | string | Can be used to mark bookmark origin - currently not used |
+| CreatedBy | string | JSON object with the user who created the bookmark, including: ObjectID, email and name |
+| CreatedTime | datetime | The timestamp of bookmark first creation time |
+| Entities | string | A serialized JSON of entities mapped by this bookmark |
+| EventTime | datetime | The timestamp of the original event that is bookmarked |
+| LastUpdatedTime | datetime | The timestamp of bookmark last update time |
+| Notes | string | Notes provided by user |
+| QueryEndTime | datetime | Query time range end time |
+| QueryResultRow | string | JSON object with a single result row of the query |
+| QueryStartTime | datetime | Query time range start time |
+| QueryText | string | Original log analytics query text |
+| SoftDeleted | bool | Was the bookmark deleted by user |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| Tags | string | Comma seperated list of tags provided by user |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The timestamp (UTC) of the log |
+| Type | string |  |
+| UpdatedBy | string | JSON object with the user who last updated the bookmark, including: ObjectID, email and name |
 
 ## Solutions (1)
 

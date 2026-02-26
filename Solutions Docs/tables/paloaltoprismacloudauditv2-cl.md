@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Data%20Connectors/PrismaCloudCSPMLog_CCF/PaloAltoPrismaCloudCSPMLog_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| actionType | string |
+| ipAddress | string |
+| resourceName | string |
+| resourceType | string |
+| result | string |
+| timestamp | real |
+| user | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

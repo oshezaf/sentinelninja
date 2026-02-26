@@ -11,6 +11,43 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (29 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Armis_Alerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| ActivityUUIDs | string |
+| AffectedDevicesCount | real |
+| AlertId | real |
+| AlertType | string |
+| Armis_Alert_Time | datetime |
+| Classification | string |
+| Computer | string |
+| ConnectionIds | string |
+| Description | string |
+| DestinationEndpoints | string |
+| DeviceIds | string |
+| EventProduct | string |
+| EventVendor | string |
+| LastAlertUpdateTime | datetime |
+| ManagementGroupName | string |
+| MG | string |
+| MitreAttackLabels | string |
+| PolicyId | string |
+| PolicyLabels | string |
+| PolicyTitle | string |
+| RawData | string |
+| Severity | string |
+| SourceEndpoints | string |
+| SourceSystem | string |
+| Status | string |
+| StatusChangeTime | datetime |
+| TenantId | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

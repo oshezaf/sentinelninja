@@ -11,6 +11,48 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (34 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BitsightFindings_data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| affects_rating | bool |
+| assets | dynamic |
+| comments | string |
+| company_name | string |
+| details | dynamic |
+| duration | string |
+| evidence_key | string |
+| first_seen | datetime |
+| grace_period_end_date | string |
+| guest_network_end_date | string |
+| impacts_risk_vector_details | string |
+| last_seen | datetime |
+| no_rv_grade_impact_end_date | string |
+| related_findings | dynamic |
+| remaining_decay | real |
+| remediated | string |
+| remediation_history | dynamic |
+| remediation_history_instant_rescan_details | string |
+| remediation_history_last_refresh_reason_code | string |
+| remediation_history_last_refresh_requester | string |
+| remediation_history_last_refresh_status_date | string |
+| remediation_history_last_refresh_status_label | string |
+| remediation_history_last_refresh_status_reason | string |
+| remediation_history_last_requested_refresh_date | string |
+| remediation_history_result_finding_date | string |
+| risk_category | string |
+| risk_vector | string |
+| risk_vector_label | string |
+| rolledup_observation_id | string |
+| severity | real |
+| severity_category | string |
+| tags | dynamic |
+| temporary_id | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

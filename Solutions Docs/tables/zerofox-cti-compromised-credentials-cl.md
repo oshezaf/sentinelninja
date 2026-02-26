@@ -11,6 +11,23 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFox_CTI_compromised_credentials_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| breach_id_s | string |
+| breach_name_s | string |
+| created_at_t | datetime |
+| domain_s | string |
+| email_s | string |
+| impacted_domain_s | string |
+| password_s | string |
+| TimeGenerated | datetime |
+| username_s | string |
 
 ## Solutions (1)
 

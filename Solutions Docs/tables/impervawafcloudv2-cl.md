@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF/Data%20Connectors/ImpervaCloudWAFLogs_ccf/ImpervaCloudWAFLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Field1 | string |
+| Field2 | string |
+| Field3 | string |
+| Field4 | string |
+| Field5 | string |
+| Field6 | string |
+| Field7 | string |
+| Field8 | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

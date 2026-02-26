@@ -11,6 +11,48 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (34 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_ravpnlogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Any_Connect_Version_s | string |
+| asa_syslog_class_s | string |
+| asa_syslog_description_s | string |
+| ASA_Syslog_ID_s | string |
+| asa_syslog_severity_s | string |
+| Assigned_IP_s | string |
+| Assigned_IPv6_s | string |
+| AWS_Region_s | string |
+| Connected_At_t | datetime |
+| DAP_Connection_Type_s | string |
+| DAP_Record_Name_s | string |
+| Device_ID_s | string |
+| Disconnection_Reason_s | string |
+| Event_Type_s | string |
+| Failed_Reasons_s | string |
+| Host_Name_s | string |
+| log_message_s | string |
+| Machine_ID_s | string |
+| MSP_Organization_ID_s | string |
+| Organization_ID_s | string |
+| Origin_IDs_s | string |
+| Origin_Type_s | string |
+| OS_Version_s | string |
+| Public_IP_s | string |
+| Public_IPv6_s | string |
+| Retention_Days_d | real |
+| Security_Group_Tag_s | string |
+| Session_ID_s | string |
+| Session_Type_s | string |
+| Storage_Location_s | string |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| User_ID_s | string |
+| VPN_Profile_s | string |
 
 ## Solutions (1)
 

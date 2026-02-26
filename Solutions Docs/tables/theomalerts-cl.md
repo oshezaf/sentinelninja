@@ -11,6 +11,37 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TheomAlerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| accountId_s | string |
+| customProps_AssetCriticality_s | string |
+| customProps_AssetCriticalityReason_s | string |
+| customProps_AssetDeepLink_s | string |
+| customProps_AssetName_s | string |
+| customProps_AssetNERValue_s | string |
+| customProps_AssetType_s | string |
+| customProps_LastTriggered_s | string |
+| customProps_NumTriggered_s | string |
+| customProps_Region_s | string |
+| customProps_RemediationIds_s | string |
+| customProps_RuleId_s | string |
+| customProps_RulePriority_s | string |
+| customProps_TheomRemoteId_s | string |
+| customProps_TheomRule_s | string |
+| deepLink_s | string |
+| details_s | string |
+| id_s | string |
+| priority_s | string |
+| summary_s | string |
+| tags_s | string |
+| TimeGenerated | datetime |
+| type_s | string |
 
 ## Solutions (1)
 

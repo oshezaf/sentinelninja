@@ -10,6 +10,30 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (17 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM/Data%20Connectors/CyeraDSPM_CCF/CyeraDSPM_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| classificationGroup | string |
+| classificationLevel | string |
+| classificationName | string |
+| collections | dynamic |
+| context | dynamic |
+| customCollections | dynamic |
+| dataCategory | string |
+| dataClassName | string |
+| defaultSensitivity | string |
+| defaultSensitivityDisplayName | string |
+| frameworks | dynamic |
+| learned | boolean |
+| name | string |
+| sensitivity | string |
+| sensitivityDisplayName | string |
+| TimeGenerated | datetime |
+| uid | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

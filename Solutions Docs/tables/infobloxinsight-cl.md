@@ -14,6 +14,44 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsight_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| changer_s | string |
+| Computer | string |
+| DataObservedVia_s | string |
+| dateChanged_t | datetime |
+| eventsBlockedCount_s | string |
+| eventsNotBlockedCount_s | string |
+| feedSource_s | string |
+| hello_s | string |
+| InfobloxInsightID | string |
+| InfobloxInsightLogType_s | string |
+| insightId_g | guid |
+| ManagementGroupName | string |
+| MG | string |
+| mostRecentAt_t | datetime |
+| numEvents_s | string |
+| persistentDate_t | datetime |
+| priorityText_s | string |
+| RawData | string |
+| SourceSystem | string |
+| spreadingDate_t | datetime |
+| startedAt_t | datetime |
+| status_s | string |
+| tClass_s | string |
+| TenantId | string |
+| tFamily_s | string |
+| threatType_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| userComment_s | string |
 
 ## Solutions (2)
 

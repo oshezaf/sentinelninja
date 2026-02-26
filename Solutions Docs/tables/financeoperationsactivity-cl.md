@@ -11,6 +11,33 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (19 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Data%20Connectors/DynamicsFinOpsPollerConnector/DynamicsFinOps_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Data | dynamic |
+| dataAreaId | string |
+| Description | string |
+| FormattedData | string |
+| InstanceName | string |
+| LogCreatedBy | string |
+| LogCreatedDateTime | datetime |
+| LogCreatedTransactionId | string |
+| LogDataAreaId | string |
+| LogPartition | long |
+| LogRecId | long |
+| LogType | string |
+| NewData | string |
+| SequenceNumber | int |
+| TableIdNumber | int |
+| TableName | string |
+| TableRecId | long |
+| TableRecVersion | int |
+| Username | string |
 
 ## Solutions (1)
 

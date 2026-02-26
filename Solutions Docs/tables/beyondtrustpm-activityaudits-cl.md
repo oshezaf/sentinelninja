@@ -10,6 +10,59 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (46 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BeyondTrustPM_ActivityAudits_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| agentDataAuditing | dynamic |
+| apiClientDataAuditing | dynamic |
+| auditType | string |
+| authorizationRequestDataAuditing | dynamic |
+| autoUpdateGroupClientSettingsDataAuditing | dynamic |
+| autoUpdateGroupConfigSettingsDataAuditing | dynamic |
+| autoUpdateGroupMacClientSettingsDataAuditing | dynamic |
+| autoUpdateRateLimitDataAuditing | dynamic |
+| azureADIntegrationDataAuditing | dynamic |
+| changedBy | string |
+| Computer | string |
+| computerDataAuditing | dynamic |
+| computerPolicyDataAuditing | dynamic |
+| created | datetime |
+| details | string |
+| entity | string |
+| entityName | string |
+| groupDataAuditing | dynamic |
+| id | int |
+| identityProviderGroupDataAuditing | dynamic |
+| installationKeyDataAuditing | dynamic |
+| ManagementGroupName | string |
+| managementRuleDataAuditing | dynamic |
+| mapToIdentityProviderGroupAuditing | dynamic |
+| MG | string |
+| mmcRemoteClientDataAuditing | dynamic |
+| openIdConfigDataAuditing | dynamic |
+| permissionGroupDataAuditing | dynamic |
+| policyDataAuditing | dynamic |
+| policyRevisionDataAuditing | dynamic |
+| RawData | string |
+| reputationSettingsDataAuditing | dynamic |
+| securitySettingsDataAuditing | dynamic |
+| settingsDataAuditing | dynamic |
+| siemIntegrationBaseDetailModel | dynamic |
+| siemIntegrationQradarAuditing | dynamic |
+| siemIntegrationS3Auditing | dynamic |
+| siemIntegrationSentinelAuditing | dynamic |
+| siemIntegrationSplunkAuditing | dynamic |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| timeTransmitted | datetime |
+| user | string |
+| userDataAuditing | dynamic |
+| userId | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

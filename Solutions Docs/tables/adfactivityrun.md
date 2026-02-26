@@ -14,7 +14,50 @@ Reference for ADFActivityRun table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfactivityrun) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfactivityrun) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (35 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfactivityrun)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| ActivityIterationCount | int |  |
+| ActivityName | string |  |
+| ActivityRunId | string |  |
+| ActivityType | string |  |
+| Annotations | string |  |
+| Category | string |  |
+| CorrelationId | string |  |
+| EffectiveIntegrationRuntime | string |  |
+| End | datetime |  |
+| Error | string |  |
+| ErrorCode | string |  |
+| ErrorMessage | string |  |
+| EventMessage | string |  |
+| FailureType | string |  |
+| Input | string |  |
+| Level | string |  |
+| LinkedServiceName | string |  |
+| Location | string |  |
+| OperationName | string |  |
+| Output | string |  |
+| PipelineName | string |  |
+| PipelineRunId | string |  |
+| ResourceId | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| Start | datetime |  |
+| Status | string |  |
+| Tags | string |  |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| UserProperties | string |  |
 
 ---
 

@@ -11,6 +11,37 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_fileevent_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| archive_depth_d | real |
+| archive_file_name_s | string |
+| archive_sha_s | string |
+| aws_region_s | string |
+| direction_s | string |
+| disposition_s | string |
+| dlp_status_s | string |
+| enforced_by_s | string |
+| file_action_s | string |
+| file_name_s | string |
+| file_size_d | real |
+| file_static_analysis_s | string |
+| file_type_id_s | string |
+| firewall_event_id_s | string |
+| ftd_enforcement_id_s | string |
+| ftd_enforcement_name_s | string |
+| organization_id_s | string |
+| retention_policy_s | string |
+| sha256_s | string |
+| threat_name_s | string |
+| threat_score_d | real |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
 
 ## Solutions (1)
 

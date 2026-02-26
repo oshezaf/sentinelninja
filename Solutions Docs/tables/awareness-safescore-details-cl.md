@@ -11,6 +11,24 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (10 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Mimecast_Awareness_SafeScore_Details_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| department | string |
+| emailAddress | string |
+| engagement | string |
+| humanError | string |
+| knowledge | string |
+| name | string |
+| risk | string |
+| sentiment | string |
+| TimeGenerated | datetime |
+| userState | string |
 
 ## Solutions (1)
 

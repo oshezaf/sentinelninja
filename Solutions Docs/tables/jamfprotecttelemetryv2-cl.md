@@ -11,6 +11,37 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/jamfprotecttelemetryv2_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | dynamic |
+| DvcHostname | dynamic |
+| DvcId | dynamic |
+| DvcIpAddr | dynamic |
+| DvcOs | string |
+| DvcOsVersion | dynamic |
+| DvcSerial | dynamic |
+| event | dynamic |
+| EventCount | int |
+| EventOriginalType | int |
+| EventOriginalUid | string |
+| EventProduct | dynamic |
+| EventProductVersion | dynamic |
+| EventSchemaVersion | dynamic |
+| EventSeverity | string |
+| EventVendor | dynamic |
+| process | dynamic |
+| SrcDeviceType | string |
+| TargetHostname | dynamic |
+| thread | dynamic |
+| ThreatCategory | string |
+| ThreatName | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

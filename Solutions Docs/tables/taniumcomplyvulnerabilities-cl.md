@@ -10,6 +10,25 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TaniumComplyVulnerabilities_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Computer | string |
+| Computer_Name_s | string |
+| CVE_s | string |
+| CVE_Year_s | string |
+| CVSS_Score_s | string |
+| IP_Address_s | string |
+| Operating_System_Generation_s | string |
+| RawData | string |
+| Severity_s | string |
+| TimeGenerated | datetime |
+| Title_s | string |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -14,7 +14,88 @@ Reference for CoreAzureBackup table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/coreazurebackup) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/coreazurebackup) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (73 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/coreazurebackup)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AgentVersion | string |  |
+| ArchiveTierLatestRecoveryPointLocation | string |  |
+| ArchiveTierLatestRecoveryPointTime | datetime |  |
+| ArchiveTierOldestRecoveryPointLocation | string |  |
+| ArchiveTierOldestRecoveryPointTime | datetime |  |
+| ArchiveTierStorageConsumedInMBs | real |  |
+| ArchiveTierStorageReplicationType | string |  |
+| AzureBackupAgentVersion | string |  |
+| AzureDataCenter | string |  |
+| BackupItemAppVersion | string |  |
+| BackupItemFriendlyName | string |  |
+| BackupItemFrontEndSize | real |  |
+| BackupItemId | string |  |
+| BackupItemName | string |  |
+| BackupItemProtectionState | string |  |
+| BackupItemType | string |  |
+| BackupItemUniqueId | string |  |
+| BackupManagementServerName | string |  |
+| BackupManagementServerOSVersion | string |  |
+| BackupManagementServerType | string |  |
+| BackupManagementServerUniqueId | string |  |
+| BackupManagementServerVersion | string |  |
+| BackupManagementType | string |  |
+| BillingGroupFriendlyName | string |  |
+| BillingGroupUniqueId | string |  |
+| Category | string |  |
+| DatasourceFriendlyName | string |  |
+| DatasourceResourceGroupName | string |  |
+| DatasourceResourceId | string |  |
+| DatasourceSetFriendlyName | string |  |
+| DatasourceSetResourceId | string |  |
+| DatasourceSetType | string |  |
+| DatasourceSubscriptionId | string |  |
+| DatasourceType | string |  |
+| ExtendedProperties | dynamic |  |
+| IsArchiveEnabled | bool |  |
+| LatestRecoveryPointLocation | string |  |
+| LatestRecoveryPointTime | datetime |  |
+| OldestRecoveryPointLocation | string |  |
+| OldestRecoveryPointTime | datetime |  |
+| OperationName | string |  |
+| PolicyId | string |  |
+| PolicyName | string |  |
+| PolicyUniqueId | string |  |
+| ProtectedContainerFriendlyName | string |  |
+| ProtectedContainerLocation | string |  |
+| ProtectedContainerName | string |  |
+| ProtectedContainerOSType | string |  |
+| ProtectedContainerOSVersion | string |  |
+| ProtectedContainerProtectionState | string |  |
+| ProtectedContainerType | string |  |
+| ProtectedContainerUniqueId | string |  |
+| ProtectedContainerWorkloadType | string |  |
+| ProtectionGroupName | string |  |
+| ResourceGroupName | string |  |
+| ResourceId | string |  |
+| SchemaVersion | string |  |
+| SecondaryBackupProtectionState | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| State | string |  |
+| StorageConsumedInMBs | real |  |
+| StorageReplicationType | string |  |
+| SubscriptionId | string |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
+| VaultName | string |  |
+| VaultTags | string |  |
+| VaultType | string |  |
+| VaultUniqueId | string |  |
 
 ## Solutions (1)
 

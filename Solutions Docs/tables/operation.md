@@ -14,7 +14,32 @@ Reference for Operation table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/operation) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/operation) |
+
+## Schema (18 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/operation)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Computer | string | Name of a physical or virtual machine having membership with Log Analytics agent. |
+| CorrelationId | string | GUID that is shared with telemetry belonging to the same uber action. |
+| Detail | string | User friendly string that describes further details about the operation |
+| ErrorId | string | Deprecated. |
+| HelpLink | string | Reference URL for additional contextual information. |
+| ManagementGroupName | string | Name of the Operations Manager management group for System Center Operations Manager agents. |
+| OperationCategory | string | Name of the area that produced the record. |
+| OperationKey | string | Operation ID. Can be a GUID or string. |
+| OperationStatus | string | Operation status description. Ccommon values include Warning Succeeded Failed Error. |
+| Solution | string | Name of the managed solution that produced the record. Can also include other sources such as RestAPI. |
+| SourceComputerId | string | Unique GUID identifier for a computer. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TimeGenerated | datetime | Date and time that the record was created. |
+| Type | string | The name of the table |
 
 ## Solutions (11)
 

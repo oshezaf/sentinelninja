@@ -10,6 +10,28 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_icmp_specific_tunnels_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| duration_d | real |
+| icmp_id_d | real |
+| id_orig_h_s | string |
+| id_orig_p_d | real |
+| id_resp_h_s | string |
+| id_resp_p_d | real |
+| payload_s | string |
+| seq_d | real |
+| start_time_t | datetime |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+| tunnel_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

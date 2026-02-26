@@ -11,6 +11,32 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Jira_Audit_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| associatedItems_s | string |
+| authorAccountId_s | string |
+| authorKey_s | string |
+| Category | string |
+| changedValues_s | string |
+| created_t | datetime |
+| EventProduct | string |
+| eventSource_s | string |
+| EventVendor | string |
+| id_d | real |
+| objectItem_id_s | string |
+| objectItem_name_s | string |
+| objectItem_parentId_s | string |
+| objectItem_parentName_s | string |
+| objectItem_typeName_s | string |
+| remoteAddress_s | string |
+| summary_s | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

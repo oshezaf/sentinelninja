@@ -11,6 +11,43 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (29 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ForcepointDLPEvents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| CreatedAt_t | datetime |
+| Description | real |
+| DestinationCommonName | real |
+| DestinationDomain | string |
+| DestinationHostname | string |
+| DestinationIpV4 | real |
+| ExternalId | string |
+| ForcepointDLPSourceIP | string |
+| GeneratorId | string |
+| Id | string |
+| ManagementGroupName | string |
+| MG | string |
+| PolicyCategoryId | string |
+| Protocol | string |
+| RawData | string |
+| RuleName_1_s | string |
+| Severity_s | string |
+| SourceDomain | string |
+| SourceIpV4_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| Text | real |
+| TimeGenerated | datetime |
+| Title | string |
+| Type | string |
+| UpdatedAt | string |
+| UpdatedBy | string |
 
 ## Solutions (1)
 

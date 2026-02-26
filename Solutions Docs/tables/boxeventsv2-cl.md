@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box/Data%20Connectors/BoxEvents_ccp/BoxEvents_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| accessible_by | dynamic |
+| additional_details | dynamic |
+| created_at | datetime |
+| created_by | dynamic |
+| event_id | string |
+| event_type | string |
+| ip_address | string |
+| recorded_at | datetime |
+| session_id | string |
+| source | dynamic |
+| type | string |
 
 ## Solutions (1)
 

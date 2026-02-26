@@ -11,6 +11,40 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/TrendMicro_XDR_RCA_Task_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| completedTimestamp | real |
+| Computer | string |
+| createdTimestamp | real |
+| criteria_conditions | string |
+| criteria_operator | string |
+| description | string |
+| id | string |
+| id_g | string |
+| lastUpdateTimestamp | real |
+| ManagementGroupName | string |
+| MG | string |
+| name | string |
+| name_s | string |
+| RawData | string |
+| SourceSystem | string |
+| status | string |
+| targets | string |
+| targets_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| workbenchId | string |
+| workbenchId_s | string |
+| xdrCustomerID | string |
+| xdrCustomerID_g | string |
 
 ## Solutions (1)
 

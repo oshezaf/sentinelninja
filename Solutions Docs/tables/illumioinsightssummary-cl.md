@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsSummaryConnector_CCP/IllumioInsightsSummary_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ComparisonEndDate | string |
+| ComparisonStartDate | string |
+| CreatedAt | long |
+| DataSources | dynamic |
+| IllumioTenantId | string |
+| Persona | string |
+| ReportId | string |
+| ReportPayload | string |
+| SummaryEndDate | string |
+| SummaryStartDate | string |
+| Tags | dynamic |
 
 ## Solutions (1)
 

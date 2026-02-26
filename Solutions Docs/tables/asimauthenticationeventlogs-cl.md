@@ -10,6 +10,135 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (122 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ASimAuthenticationEventLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ActingAppId | string |
+| ActingAppName | string |
+| ActingAppType | string |
+| ActorOriginalUserType | string |
+| ActorScope | string |
+| ActorScopeId | string |
+| ActorSessionId | string |
+| ActorUserId | string |
+| ActorUserIdType | string |
+| ActorUsername | string |
+| ActorUsernameType | string |
+| ActorUserType | string |
+| AdditionalFields | dynamic |
+| DvcAction | string |
+| DvcDescription | string |
+| DvcDomain | string |
+| DvcDomainType | string |
+| DvcFQDN | string |
+| DvcHostname | string |
+| DvcId | string |
+| DvcIdType | string |
+| DvcInterface | string |
+| DvcIpAddr | string |
+| DvcMacAddr | string |
+| DvcOriginalAction | string |
+| DvcOs | string |
+| DvcOsVersion | string |
+| DvcScope | string |
+| DvcScopeId | string |
+| DvcZone | string |
+| EventCount | int |
+| EventEndTime | datetime |
+| EventMessage | string |
+| EventOriginalResultDetails | string |
+| EventOriginalSeverity | string |
+| EventOriginalSubType | string |
+| EventOriginalType | string |
+| EventOriginalUid | string |
+| EventOwner | string |
+| EventProduct | string |
+| EventProductVersion | string |
+| EventReportUrl | string |
+| EventResult | string |
+| EventResultDetails | string |
+| EventSchemaVersion | string |
+| EventSeverity | string |
+| EventStartTime | datetime |
+| EventSubType | string |
+| EventType | string |
+| EventVendor | string |
+| HttpUserAgent | string |
+| LogonMethod | string |
+| LogonProtocol | string |
+| RuleName | string |
+| RuleNumber | int |
+| SrcDescription | string |
+| SrcDeviceType | string |
+| SrcDomain | string |
+| SrcDomainType | string |
+| SrcDvcId | string |
+| SrcDvcIdType | string |
+| SrcDvcOs | string |
+| SrcDvcScope | string |
+| SrcDvcScopeId | string |
+| SrcFQDN | string |
+| SrcGeoCity | string |
+| SrcGeoCountry | string |
+| SrcGeoLatitude | real |
+| SrcGeoLongitude | real |
+| SrcGeoRegion | string |
+| SrcHostname | string |
+| SrcIpAddr | string |
+| SrcIsp | string |
+| SrcOriginalRiskLevel | string |
+| SrcPortNumber | int |
+| SrcRiskLevel | int |
+| TargetAppId | string |
+| TargetAppName | string |
+| TargetAppType | string |
+| TargetDescription | string |
+| TargetDeviceType | string |
+| TargetDomain | string |
+| TargetDomainType | string |
+| TargetDvcId | string |
+| TargetDvcIdType | string |
+| TargetDvcOs | string |
+| TargetDvcScope | string |
+| TargetDvcScopeId | string |
+| TargetFQDN | string |
+| TargetGeoCity | string |
+| TargetGeoCountry | string |
+| TargetGeoLatitude | real |
+| TargetGeoLongitude | real |
+| TargetGeoRegion | string |
+| TargetHostname | string |
+| TargetIpAddr | string |
+| TargetOriginalRiskLevel | string |
+| TargetOriginalUserType | string |
+| TargetPortNumber | int |
+| TargetRiskLevel | int |
+| TargetScope | string |
+| TargetScopeId | string |
+| TargetSessionId | string |
+| TargetUrl | string |
+| TargetUserId | string |
+| TargetUserIdType | string |
+| TargetUsername | string |
+| TargetUsernameType | string |
+| TargetUserType | string |
+| ThreatCategory | string |
+| ThreatConfidence | int |
+| ThreatField | string |
+| ThreatFirstReportedTime | datetime |
+| ThreatId | string |
+| ThreatIpAddr | string |
+| ThreatIsActive | bool |
+| ThreatLastReportedTime | datetime |
+| ThreatName | string |
+| ThreatOriginalConfidence | string |
+| ThreatOriginalRiskLevel | string |
+| ThreatRiskLevel | int |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

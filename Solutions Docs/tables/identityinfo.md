@@ -15,7 +15,61 @@ Account information from various sources, including Microsoft Entra ID
 | **Category** | Internal |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Defender XDR Docs** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table) |
+| **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (46 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AccountDisplayName | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname. |
+| AccountDomain* | string | Domain of the account |
+| AccountName | string | User name of the account |
+| AccountObjectId | string | Unique identifier for the account in Microsoft Entra ID |
+| AccountUpn | string | User principal name (UPN) of the account |
+| Address | string | Address of the account user |
+| AssignedRoles* | dynamic | For identities from Microsoft Entra-only, the roles assigned to the account user |
+| BlastRadius** | string | A calculation based on the position of the user in the org tree and the user's Microsoft Entra roles and permissions; possible values: Low, Medium, High |
+| ChangeSource* | string | Identifies which identity provider or process triggered the addition of the new row. For example, theSystem-UserPersistencevalue is used for any rows added by an automated process. |
+| City | string | City where the account user is located |
+| CloudSid | string | Cloud security identifier of the account |
+| CompanyName** | string | Name of the company for which the user works |
+| Country | string | Country/Region where the account user is located |
+| CreatedDateTime* | datetime | Date and time when the account user was created |
+| CriticalityLevel | int | The criticality score of the account |
+| DeletedDateTime** | datetime | Date and time when the user account was deleted |
+| Department | string | Name of the department that the account user belongs to |
+| DistinguishedName* | string | The user'sdistinguished name |
+| EmailAddress | string | SMTP address of the account |
+| EmployeeId** | string | Employee identifier assigned to the user by the organization |
+| GivenName | string | Given name or first name of the account user |
+| GroupMembership** | dynamic | Microsoft Entra ID groups where the user account is a member |
+| IdentityEnvironment | string | Environment where the identity is used; possible values: CloudOnly, Hybrid, On-premises |
+| IsAccountEnabled | boolean | Indicates whether the account is enabled or not |
+| JobTitle | string | Job title of the account user |
+| Manager* | string | The listed manager of the account user |
+| OnPremObjectId | string | Active Directory object ID of the user |
+| OnPremSid | string | On-premises security identifier (SID) of the account |
+| OtherMailAddresses** | dynamic | Additional email addresses of the user account |
+| Phone* | string | The listed phone number of the account user |
+| PrivilegedEntraPimRoles(Preview)*** | dynamic | A snapshot of privileged role assignment schedules and eligibility schedules for the account as maintained by Microsoft Entra Privileged Identity Management (excluding activated assignments) |
+| ReportId* | string | Unique identifier for the event |
+| RiskLevel | string | Microsoft Entra ID risk level of the user account; possible values: Low, Medium, High |
+| RiskLevelDetails | string | Details regarding the Microsoft Entra ID risk level |
+| RiskStatus | string | Status of the user's risk; possible values: None, ConfirmedSafe, Remediated, Dismissed, AtRisk, ConfirmedCompromised, UnknownFutureValue |
+| SipProxyAddress | string | Voice over IP (VOIP) session initiation protocol (SIP) address of the account |
+| SourceProviders | dynamic | Source providers of the accounts for the identity; possible values: ActiveDirectory, EntraID, Okta |
+| SourceSystem* | string | The source system for the record |
+| State** | string | State where the sign-in occurred, if available |
+| Surname | string | Surname, family name, or last name of the account user |
+| Tags* | dynamic | Tags assigned to the account user by Defender for Identity |
+| TenantId | string | Unique identifier representing your organization's instance of Microsoft Entra ID |
+| TenantMembershipType | string | User type in Microsoft Entra ID; possible values: Guest, Member |
+| Timestamp* | datetime | The date and time that the line was written to the database.This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added. |
+| Type* | string | Type of identity; possible values: User, ServiceAccount |
+| UserAccountControl | string | Security attributes of the user account in the Active Directory domain |
 
 ## Solutions (17)
 

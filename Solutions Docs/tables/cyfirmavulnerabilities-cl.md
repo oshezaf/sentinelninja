@@ -11,6 +11,24 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (10 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Vulnerabilities%20Intel/Data%20Connectors/CyfirmaVulnerabilitiesIntel_ccp/CyfirmaVulnerabilitiesIntel_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| confidence | int |
+| created | datetime |
+| description | string |
+| extensions | dynamic |
+| external_references | dynamic |
+| id | string |
+| modified | datetime |
+| name | string |
+| spec_version | string |
+| type | string |
 
 ## Solutions (1)
 

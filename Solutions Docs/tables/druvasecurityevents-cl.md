@@ -11,6 +11,24 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (10 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Data%20Connectors/Druva_ccp/Druva_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| area | string |
+| category | string |
+| details | string |
+| globalCustomerId | string |
+| id | int |
+| occurenceTime | int |
+| syslogFacility | int |
+| syslogSeverity | int |
+| TimeGenerated | datetime |
+| type | string |
 
 ## Solutions (1)
 

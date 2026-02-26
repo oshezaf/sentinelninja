@@ -11,6 +11,37 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/fluentbit_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _BilledSize | string |
+| _IsBillable | string |
+| _ResourceId | string |
+| _SubscriptionId | string |
+| _timestamp_d | real |
+| action | string |
+| Day_s | int |
+| FirewallName_s | string |
+| host_s | string |
+| Hour_s | int |
+| ident_s | string |
+| Message | string |
+| Min_s | int |
+| Month_s | int |
+| pri_s | int |
+| RawData | string |
+| Sec_s | int |
+| SourceSystem | string |
+| TenantId | string |
+| time_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| Year_s | int |
 
 ## Solutions (1)
 

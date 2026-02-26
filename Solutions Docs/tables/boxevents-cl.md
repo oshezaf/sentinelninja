@@ -11,6 +11,86 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (72 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BoxEvents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| accessible_by_id_s | string |
+| accessible_by_login_s | string |
+| accessible_by_name_s | string |
+| accessible_by_type_s | string |
+| action_by_id_s | string |
+| action_by_login_s | string |
+| action_by_name_s | string |
+| action_by_type_s | string |
+| additional_details_access_token_identifier_s | string |
+| additional_details_advancedFolderSettings_newOwnerOnlyInvite_b | bool |
+| additional_details_advancedFolderSettings_oldOwnerOnlyInvite_b | bool |
+| additional_details_annotation_id_d | real |
+| additional_details_collab_id_s | string |
+| additional_details_comment_id_d | real |
+| additional_details_ekm_id_g | string |
+| additional_details_group_id_s | string |
+| additional_details_group_name_s | string |
+| additional_details_is_performed_by_admin_b | bool |
+| additional_details_message_s | string |
+| additional_details_metadata_operationParams_s | string |
+| additional_details_metadata_type_s | string |
+| additional_details_role_s | string |
+| additional_details_service_id_s | string |
+| additional_details_service_name_s | string |
+| additional_details_shared_link_id_s | string |
+| additional_details_size_d | real |
+| additional_details_task_assignment_assigned_to_id_d | real |
+| additional_details_task_assignment_assigned_to_login_s | string |
+| additional_details_task_assignment_message_s | string |
+| additional_details_task_assignment_status_s | string |
+| additional_details_task_created_by_id_d | real |
+| additional_details_task_created_by_login_s | string |
+| additional_details_task_due_at_t | datetime |
+| additional_details_task_id_d | real |
+| additional_details_task_message_s | string |
+| additional_details_type_s | string |
+| additional_details_version_id_s | string |
+| created_at_t | datetime |
+| created_by_id_s | string |
+| created_by_login_s | string |
+| created_by_name_s | string |
+| created_by_type_s | string |
+| event_id_g | string |
+| event_type_s | string |
+| ip_address_s | string |
+| source_file_id_s | string |
+| source_file_name_s | string |
+| source_folder_id_s | string |
+| source_folder_name_s | string |
+| source_id_s | string |
+| source_item_id_s | string |
+| source_item_name_g | string |
+| source_item_name_s | string |
+| source_item_type_s | string |
+| source_login_s | string |
+| source_name_s | string |
+| source_owned_by_id_s | string |
+| source_owned_by_login_s | string |
+| source_owned_by_name_s | string |
+| source_owned_by_type_s | string |
+| source_parent_id_s | string |
+| source_parent_name_g | string |
+| source_parent_name_s | string |
+| source_parent_type_s | string |
+| source_type_s | string |
+| source_user_email_s | string |
+| source_user_id_s | string |
+| source_user_name_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| type_s | string |
 
 ## Solutions (1)
 

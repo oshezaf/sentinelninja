@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Identity_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| as_name_s | string |
+| asn_d | real |
+| ip_s | string |
+| net_name_s | string |
+| org_name_s | string |
+| reverse_hostnames_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

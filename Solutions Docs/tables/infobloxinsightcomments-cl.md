@@ -13,6 +13,28 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/InfobloxInsightComments_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| commentsChanger_s | string |
+| Computer | string |
+| dateChanged_t | datetime |
+| InfobloxInsightID_g | string |
+| InfobloxInsightLogType_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| newComment_s | string |
+| RawData | string |
+| SourceSystem | string |
+| status_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+
 ## Solutions (2)
 
 This table is used by the following solutions:

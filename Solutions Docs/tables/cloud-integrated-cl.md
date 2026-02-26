@@ -11,6 +11,38 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (24 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Mimecast_Cloud_Integrated_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| accountId | string |
+| aggregateId | string |
+| attachments | string |
+| category | string |
+| direction | string |
+| historicalMail | bool |
+| messageId | string |
+| offset | real |
+| partition | real |
+| policiesApplied | string |
+| processingId | string |
+| recipients | string |
+| senderEnvelope | string |
+| senderHeader | string |
+| senderIp | string |
+| source | string |
+| subject | string |
+| subtype | string |
+| tags | string |
+| threatState | string |
+| threatType | string |
+| TimeGenerated | datetime |
+| timestamp | real |
+| type_ | string |
 
 ## Solutions (1)
 

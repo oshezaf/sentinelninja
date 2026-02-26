@@ -11,6 +11,39 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (25 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ARGOS_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| auditLog_s | string |
+| cloud_s | string |
+| Computer | string |
+| connectionId_g | guid |
+| customerId_s | string |
+| exploitable_b | bool |
+| id_s | string |
+| inventoryId_g | guid |
+| inventoryId_s | string |
+| itsmTickets_s | string |
+| ManagementGroupName | string |
+| metadata_id_s | string |
+| MG | string |
+| name_s | string |
+| RawData | string |
+| ResourceGroup | string |
+| ResourceId | string |
+| ruleId_s | string |
+| ruleServiceId_s | string |
+| status_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| type_s | string |
+| url_s | string |
 
 ## Solutions (1)
 

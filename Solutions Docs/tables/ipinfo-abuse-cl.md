@@ -10,6 +10,21 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_Abuse_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| address | string |
+| country | string |
+| email | string |
+| name | string |
+| network | string |
+| phone | string |
+| range | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

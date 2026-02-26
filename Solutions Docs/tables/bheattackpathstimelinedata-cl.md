@@ -10,6 +10,27 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (14 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHEAttackPathsTimelineData_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| CompositeRisk | string |
+| created_at | datetime |
+| deleted_at | dynamic |
+| domain_name | string |
+| DomainSID | string |
+| ExposureCount | int |
+| Finding | string |
+| FindingCount | int |
+| id | int |
+| ImpactCount | int |
+| ImpactedAssetCount | int |
+| path_title | string |
+| tenant_url | string |
+| updated_at | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,26 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (12 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/LastPassNativePoller_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Action_s | string |
+| Computer | string |
+| Data_s | string |
+| IP_Address_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| Time_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| Username_s | string |
 
 ## Solutions (1)
 

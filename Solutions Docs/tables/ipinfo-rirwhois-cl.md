@@ -10,6 +10,34 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (21 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_RIRWHOIS_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| admin | string |
+| as_domain | string |
+| as_name | string |
+| as_type | string |
+| asn | string |
+| country | string |
+| domain | string |
+| geoloc | string |
+| maintainer | string |
+| name | string |
+| org | string |
+| org_address | string |
+| range | string |
+| rdns_domain | string |
+| source | string |
+| status | string |
+| tech | string |
+| TimeGenerated | datetime |
+| updated | string |
+| whois_domain | string |
+| whois_id | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

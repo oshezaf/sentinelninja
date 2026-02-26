@@ -10,6 +10,24 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (11 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoEvents_CCF/TropicoEvents_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ActingProcessName | string |
+| AdditionalData | dynamic |
+| DvcHostname | string |
+| EventProduct | string |
+| EventResult | string |
+| EventSeverity | string |
+| EventType | string |
+| EventVendor | string |
+| SrcIpAddr | string |
+| SrcUsername | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

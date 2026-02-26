@@ -11,6 +11,31 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_rpz_feeds_records_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| class_s | string |
+| Computer | string |
+| detected_t | datetime |
+| expiration_t | datetime |
+| feed_name_s | string |
+| indicator_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| property_s | string |
+| RawData | string |
+| SourceSystem | string |
+| task_id_g | string |
+| TenantId | string |
+| threat_level_d | real |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

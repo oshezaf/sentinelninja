@@ -10,6 +10,19 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (6 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VMware_CWS_Health_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| cws_component | string |
+| healthtest_observed_unit | string |
+| healthtest_observed_value | int |
+| healthtest_status | string |
+| healthtest_timestamp | datetime |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -10,6 +10,22 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (9 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroContentLogs_CCF/MiroContentLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actionTime | string |
+| actionType | string |
+| actor | dynamic |
+| contentId | string |
+| id | string |
+| itemId | string |
+| itemType | string |
+| relationships | dynamic |
+| state | dynamic |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

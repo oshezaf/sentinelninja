@@ -10,6 +10,23 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (10 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoIncidents_CCF/TropicoIncidents_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| AdditionalData | dynamic |
+| Description | string |
+| EndTime | datetime |
+| IncidentName | string |
+| IncidentSeverity | string |
+| ProviderName | string |
+| SrcIpAddr | string |
+| StartTime | datetime |
+| Status | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

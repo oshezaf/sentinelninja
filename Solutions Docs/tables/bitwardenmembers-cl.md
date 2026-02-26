@@ -10,6 +10,18 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (5 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BitwardenMembers_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| email | string |
+| memberId | string |
+| name | string |
+| TimeGenerated | datetime |
+| userId | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

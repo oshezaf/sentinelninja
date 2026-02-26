@@ -11,6 +11,29 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/IntegrationTableIncidents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| assigneeUuid | string |
+| createTime | datetime |
+| description | string |
+| detectionUuids | dynamic |
+| deviceUuids | dynamic |
+| displayName | string |
+| metrics | dynamic |
+| resolveReason | string |
+| severity | string |
+| status | string |
+| tags | dynamic |
+| TimeGenerated | datetime |
+| triageDuration | string |
+| updateTime | datetime |
+| uuid | string |
 
 ## Solutions (1)
 

@@ -10,6 +10,31 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (18 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Data%20Connectors/IllumioSaasLogs_ccf/IllumioSaasLogs_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Bytes | string |
+| Dst | string |
+| DstCloud | string |
+| DstIP | string |
+| DstLabels | string |
+| DstName | string |
+| DstPort | string |
+| DstType | string |
+| EndTime | datetime |
+| Protocol | string |
+| Src | string |
+| SrcCloud | string |
+| SrcIP | string |
+| SrcLabels | string |
+| SrcName | string |
+| SrcType | string |
+| StartTime | datetime |
+| Status | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

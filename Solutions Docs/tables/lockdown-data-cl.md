@@ -11,6 +11,29 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Lockdown_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| certainty | real |
+| entity_id | real |
+| entity_name | string |
+| entity_type | string |
+| id | real |
+| lock_event_timestamp | datetime |
+| locked_by | string |
+| ManagementGroupName | string |
+| MG | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| unlock_event_timestamp | datetime |
 
 ## Solutions (1)
 

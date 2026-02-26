@@ -10,6 +10,20 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (7 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_ASN_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| asn | string |
+| asn_type | string |
+| domain | string |
+| name | string |
+| range | string |
+| route | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

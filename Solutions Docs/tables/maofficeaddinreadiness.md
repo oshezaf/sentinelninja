@@ -14,7 +14,40 @@ Reference for MAOfficeAddinReadiness table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficeaddinreadiness) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficeaddinreadiness) |
+
+## Schema (26 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/maofficeaddinreadiness)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AddinInstanceId | string |  |
+| AddinName | string |  |
+| AddinProducts | string |  |
+| AddinPublisher | string |  |
+| AddinRemarks | string |  |
+| AddinSupportStatementUrl | string |  |
+| AddinSupportStatus | string |  |
+| AddinVersion | string |  |
+| AdoptionStatus | string |  |
+| DeploymentPlanId | string |  |
+| Guidance | string |  |
+| Importance | string |  |
+| Issue | string |  |
+| Remediation | string |  |
+| RiskAssessment | string |  |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TargetOfficeBitness | string |  |
+| TestOwner | string |  |
+| TestPlan | string |  |
+| TestResult | string |  |
+| TimeGenerated | datetime |  |
+| TotalInstalls | int |  |
+| Type | string | The name of the table |
+| UpgradeDecision | string |  |
 
 ---
 

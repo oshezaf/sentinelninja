@@ -11,6 +11,25 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (11 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit/Data%20Connectors/AtlassianConfluenceAuditLogs_CCP/AtlassianConfluenceAudit_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| affectedObject | dynamic |
+| associatedObjects | dynamic |
+| author | dynamic |
+| category | string |
+| changedValues | dynamic |
+| creationDate | long |
+| description | string |
+| remoteAddress | string |
+| summary | string |
+| superAdmin | boolean |
+| sysAdmin | boolean |
 
 ## Solutions (1)
 

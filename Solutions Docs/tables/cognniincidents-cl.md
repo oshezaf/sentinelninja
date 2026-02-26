@@ -11,6 +11,36 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (22 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CognniIncidents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| _SubscriptionId | string |
+| attachmentId_s | string |
+| Computer | string |
+| eventTime_t | datetime |
+| fileName_s | string |
+| informationType_s | string |
+| insights_s | string |
+| internalEventId_g | string |
+| labels_s | string |
+| listId_g | string |
+| listItemUniqueId_g | string |
+| messageId_s | string |
+| name_s | string |
+| orgId_g | string |
+| RawData | string |
+| Severity | int |
+| siteId_g | string |
+| sourceFileExtension_s | string |
+| TimeGenerated | datetime |
+| Type | string |
+| userId_s | string |
 
 ## Solutions (1)
 

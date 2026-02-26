@@ -10,6 +10,19 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (6 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/WizVulnerabilities_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| CVEDescription_s | string |
+| CVSSSeverity_s | string |
+| id_g | guid |
+| name_s | string |
+| portalUrl_s | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

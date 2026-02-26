@@ -11,6 +11,40 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VeeamCovewareFindings_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Artifact | string |
+| Computer | string |
+| Country | string |
+| CovewareHostName | string |
+| EventActivity | string |
+| EventTime | datetime |
+| EventType | string |
+| FirstRunOrAccessed | datetime |
+| Hostname | string |
+| Id | string |
+| MachineId | string |
+| ManagementGroupName | string |
+| Md5Hash | string |
+| MG | string |
+| RawData | string |
+| RiskLevel | string |
+| ScanTime | datetime |
+| Sha1Hash | string |
+| Sha256Hash | string |
+| SourceSystem | string |
+| TechniqueId | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| Username | string |
 
 ## Solutions (1)
 

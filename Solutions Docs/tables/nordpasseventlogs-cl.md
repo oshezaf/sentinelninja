@@ -11,6 +11,23 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NordPassEventLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| event_Type | string |
+| initiator | string |
+| metadata | dynamic |
+| organization_uuid | string |
+| TimeGenerated | datetime |
+| timestamp | long |
+| user_email | string |
+| user_uuid | string |
 
 ## Solutions (1)
 

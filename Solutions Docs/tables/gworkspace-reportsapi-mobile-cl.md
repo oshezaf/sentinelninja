@@ -10,6 +10,44 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (31 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GWorkspace_ReportsAPI_mobile_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ACCOUNT_STATE_s | string |
+| actor_callerType_s | string |
+| actor_email_s | string |
+| actor_profileId_s | string |
+| DEVICE_ID_g | string |
+| DEVICE_ID_s | string |
+| DEVICE_MODEL_s | string |
+| DEVICE_TYPE_s | string |
+| etag_s | string |
+| event_name_s | string |
+| event_type_s | string |
+| EventProduct | string |
+| events_s | string |
+| EventVendor | string |
+| id_applicationName_s | string |
+| id_customerId_s | string |
+| id_time_t | datetime |
+| id_uniqueQualifier_s | string |
+| IOS_VENDOR_ID_g | string |
+| IOS_VENDOR_ID_s | string |
+| kind_s | string |
+| LAST_SYNC_AUDIT_DATE_s | string |
+| NEW_VALUE_s | string |
+| OLD_VALUE_s | string |
+| OS_PROPERTY_s | string |
+| OS_VERSION_s | string |
+| REGISTER_PRIVILEGE_s | string |
+| RESOURCE_ID_s | string |
+| SERIAL_NUMBER_s | string |
+| TimeGenerated | datetime |
+| USER_EMAIL_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

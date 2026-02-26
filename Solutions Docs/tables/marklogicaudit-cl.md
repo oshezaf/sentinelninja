@@ -11,6 +11,44 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (30 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/MarkLogicAudit_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| ActorUsername | string |
+| ClientIdentity | string |
+| Computer | string |
+| Database | string |
+| EventCount | string |
+| EventOriginalResult | string |
+| EventProduct | string |
+| EventResult | string |
+| EventSchemaVersion | string |
+| EventSeverity | string |
+| EventStartTime | datetime |
+| EventSubType | string |
+| EventType | string |
+| EventVendor | string |
+| Expr | string |
+| Function | string |
+| HttpReferrerOriginal | string |
+| HttpRequestMethod | string |
+| HttpResponseBodyBytes | string |
+| HttpStatusCode | string |
+| HttpUserAgentOriginal | string |
+| HttpVersion | string |
+| Roles | string |
+| SourseSystem | string |
+| SrcIpAddr | string |
+| SrcUserName | string |
+| TenanId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| UrlOriginal | string |
 
 ## Solutions (2)
 

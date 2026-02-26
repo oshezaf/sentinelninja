@@ -11,6 +11,41 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (27 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CarbonBlackAuditLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ItemId | string |
+| _ResourceId | string |
+| clientIp | string |
+| clientIp_s | string |
+| Computer | string |
+| description | string |
+| description_s | string |
+| eventId | string |
+| eventId_g | string |
+| eventTime | real |
+| eventTime_d | real |
+| flagged | bool |
+| flagged_b | bool |
+| loginName_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| orgName | string |
+| orgName_s | string |
+| RawData | string |
+| requestUrl | string |
+| requestUrl_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| verbose | bool |
+| verbose_b | bool |
 
 ## Solutions (2)
 

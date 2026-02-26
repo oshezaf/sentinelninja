@@ -11,6 +11,39 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (25 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/VeeamOneTriggeredAlarms_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| AlarmTemplateId | int |
+| ChildAlarmsCount | int |
+| Comment | string |
+| Computer | string |
+| Description | string |
+| ManagementGroupName | string |
+| MG | string |
+| Name | string |
+| ObjectId | int |
+| ObjectName | string |
+| ObjectType | string |
+| PredefinedAlarmId | int |
+| RawData | string |
+| RemediationDescription | string |
+| RemediationMode | string |
+| RepeatCount | int |
+| SourceSystem | string |
+| Status | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| TriggeredAlarmId | int |
+| TriggeredTime | datetime |
+| Type | string |
+| VoneHostName | string |
 
 ## Solutions (1)
 

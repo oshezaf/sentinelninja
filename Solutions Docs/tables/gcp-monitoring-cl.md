@@ -11,6 +11,38 @@
 | **Category** | GCP |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (25 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/GCP_MONITORING_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| interval_endTime_t | datetime |
+| interval_startTime_t | datetime |
+| ManagementGroupName | string |
+| metric_labels_device_name_s | string |
+| metric_labels_device_type_s | string |
+| metric_labels_instance_name_s | string |
+| metric_labels_loadbalanced_s | string |
+| metric_labels_storage_type_s | string |
+| metric_type_s | string |
+| metricKind_s | string |
+| MG | string |
+| RawData | string |
+| resource_labels_instance_id_s | string |
+| resource_labels_project_id_s | string |
+| resource_labels_zone_s | string |
+| resource_type_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| value_doubleValue_d | real |
+| value_int64Value_d | real |
+| valueType_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -10,6 +10,38 @@
 |:----------|:------|
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (24 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/SecurityNestedRecommendation.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| AdditionalData | dynamic |
+| AssessedResourceId | string |
+| Category | string |
+| Cause | string |
+| Description | string |
+| Id | string |
+| Impact | string |
+| IsSnapshot | string |
+| NestedRecommendationId | string |
+| ParentRecommendationId | string |
+| RecommendationName | string |
+| RecommendationSeverity | string |
+| RecommendationState | string |
+| RecommendationSubscriptionId | string |
+| RemediationDescription | string |
+| ResourceDetails | dynamic |
+| ResourceGroup | string |
+| ResourceProviderType | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| Type | string |
+| VulnerabilityId | string |
 
 ## Solutions (3)
 

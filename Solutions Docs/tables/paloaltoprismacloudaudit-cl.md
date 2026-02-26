@@ -10,6 +10,31 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/PaloAltoPrismaCloudAudit_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| action_s | string |
+| Computer | string |
+| IPAddress | string |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| resourceName_g | string |
+| resourceName_s | string |
+| ResourceType | string |
+| result_s | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| timestamp_s | string |
+| Type | string |
+| user_g | string |
+| user_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

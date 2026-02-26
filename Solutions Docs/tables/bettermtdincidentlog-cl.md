@@ -11,6 +11,38 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (24 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BetterMTDIncidentLog_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| CompanyId | real |
+| CompanyName | string |
+| Computer | string |
+| DeviceId | string |
+| DeviceOS | string |
+| DevicePlatform | string |
+| EventTimeStamp | datetime |
+| LogTimeStamp | datetime |
+| ManagementGroupName | string |
+| MG | string |
+| RawData | string |
+| SourceSystem | string |
+| Status | string |
+| TenantId | string |
+| ThreatCategory | string |
+| ThreatDescription | string |
+| ThreatId | real |
+| ThreatSeverity | string |
+| ThreatTitle | string |
+| ThreatType | string |
+| TimeGenerated | datetime |
+| Type | string |
+| UserEmail | string |
 
 ## Solutions (1)
 

@@ -11,6 +11,32 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/dossier_infoblox_web_cat_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| Computer | string |
+| data_results_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| params_source_s | string |
+| params_target_s | string |
+| params_type_s | string |
+| RawData | string |
+| SourceSystem | string |
+| status_message_for_dossier_s | string |
+| status_s | string |
+| task_id_g | string |
+| TenantId | string |
+| time_d | real |
+| TimeGenerated | datetime |
+| Type | string |
+| v_s | string |
 
 ## Solutions (1)
 

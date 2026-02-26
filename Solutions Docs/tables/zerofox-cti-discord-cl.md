@@ -11,6 +11,21 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (7 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZeroFox_CTI_discord_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| author_id_s | string |
+| author_username_s | string |
+| channel_name_s | string |
+| content_s | string |
+| server_name_s | string |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
 
 ## Solutions (1)
 

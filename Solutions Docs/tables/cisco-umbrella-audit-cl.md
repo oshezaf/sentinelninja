@@ -11,6 +11,24 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (10 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cisco_Umbrella_audit_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action_s | string |
+| after_s | string |
+| before_s | string |
+| email_s | string |
+| id_s | string |
+| logged_in_from_s | string |
+| TimeGenerated | datetime |
+| Timestamp_t | datetime |
+| type_s | string |
+| user_s | string |
 
 ## Solutions (1)
 

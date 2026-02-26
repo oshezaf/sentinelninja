@@ -10,6 +10,41 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (28 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Armorblox_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| app_name_s | string |
+| attachment_list_s | string |
+| Computer | string |
+| date_t | datetime |
+| external_senders_s | string |
+| external_users_s | string |
+| folder_categories_s | string |
+| id_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| object_type_s | string |
+| policy_names_s | string |
+| priority_s | string |
+| RawData | string |
+| remediation_actions_s | string |
+| research_status_s | string |
+| resolution_state_s | string |
+| SourceSystem | string |
+| status_counts_done_count_s | string |
+| status_counts_error_count_s | string |
+| status_counts_process_count_s | string |
+| tagged_b | bool |
+| TenantId | string |
+| TimeGenerated | datetime |
+| title_s | string |
+| Type | string |
+| users_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

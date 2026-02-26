@@ -14,7 +14,38 @@ Reference for SecurityRecommendation table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✗ No |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityrecommendation) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityrecommendation) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (23 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityrecommendation)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| AssessedResourceId | string |  |
+| Description | string |  |
+| DeviceId | string |  |
+| DiscoveredTimeUTC | datetime |  |
+| Environment | string |  |
+| FirstEvaluationDate | datetime |  |
+| IsSnapshot | bool |  |
+| PolicyDefinitionId | string |  |
+| Properties | dynamic |  |
+| ProviderName | string |  |
+| RecommendationAdditionalData | dynamic |  |
+| RecommendationDisplayName | string |  |
+| RecommendationId | string |  |
+| RecommendationName | string |  |
+| RecommendationSeverity | string |  |
+| RecommendationState | string |  |
+| ResolvedTimeUTC | datetime |  |
+| ResourceRegion | string |  |
+| StatusChangeDate | datetime |  |
+| TimeGenerated | datetime |  |
+| Type | string | The name of the table |
 
 ## Solutions (6)
 

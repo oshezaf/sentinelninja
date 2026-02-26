@@ -11,6 +11,56 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (42 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Armis_Activities_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| ActivityType | string |
+| ActivityUUID | string |
+| Armis_Activity_Time | datetime |
+| Computer | string |
+| ConnectionIds | string |
+| Content | string |
+| DecisionData | string |
+| DecisionData_AnswerIps | string |
+| DecisionData_ClientOfferedSuites | string |
+| DecisionData_DeviceId | real |
+| DecisionData_Host | string |
+| DecisionData_Method | string |
+| DecisionData_Port | real |
+| DecisionData_QueryType | string |
+| DecisionData_SelectedSuite | string |
+| DecisionData_SelectedSuiteSecurityLevel | string |
+| DecisionData_SrcDeviceId | real |
+| DecisionData_SrcIp | string |
+| DecisionData_SrcMac | string |
+| DecisionData_SslConnectionStatus | string |
+| DecisionData_UserAgent | string |
+| DecisionData_Version | string |
+| DestinationEndpoints | string |
+| DeviceIds | string |
+| EventProduct | string |
+| EventVendor | string |
+| ManagementGroupName | string |
+| MG | string |
+| Protocol | string |
+| RawData | string |
+| Sensor | string |
+| SensorName | string |
+| SensorType | string |
+| Site | string |
+| SiteLocation | string |
+| SiteName | string |
+| Sites | string |
+| SourceEndpoints | string |
+| SourceSystem | string |
+| TenantId | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

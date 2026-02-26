@@ -11,6 +11,40 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Cymru_Scout_Domain_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| as_info | dynamic |
+| comms_enrichment | dynamic |
+| country_codes | dynamic |
+| end_date | string |
+| event_count | real |
+| ip | string |
+| query | string |
+| start_date | string |
+| summary | dynamic |
+| summary_certs | dynamic |
+| summary_comms_total | real |
+| summary_fingerprints | dynamic |
+| summary_last_seen | string |
+| summary_open_ports | dynamic |
+| summary_pdns | dynamic |
+| summary_service_counts | dynamic |
+| summary_top_peers | dynamic |
+| summary_whois_as_name | string |
+| summary_whois_asn | real |
+| summary_whois_net_name | string |
+| summary_whois_org_name | string |
+| tags | dynamic |
+| tags_id | string |
+| tags_name | string |
+| TimeGenerated | datetime |
+| Type | string |
 
 ## Solutions (1)
 

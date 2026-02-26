@@ -14,7 +14,184 @@ Reference for AzureDiagnostics table in Azure Monitor Logs.
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
 | **Lake-Only Ingestion** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics) |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (169 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _ResourceId | String | A unique identifier for the resource that the record is associated with |
+| action_id_s | String |  |
+| action_name_s | String |  |
+| action_s | String |  |
+| ActivityId_g | Guid |  |
+| AdditionalFields |  |  |
+| AdHocOrScheduledJob_s | String |  |
+| application_name_s | String |  |
+| audit_schema_version_d | Double |  |
+| avg_cpu_percent_s | String |  |
+| avg_mean_time_s | String |  |
+| backendHostname_s | String |  |
+| Caller_s | String |  |
+| callerId_s | String |  |
+| CallerIPAddress | String |  |
+| calls_s | String |  |
+| Category | String |  |
+| client_ip_s | String |  |
+| clientInfo_s | String |  |
+| clientIP_s | String |  |
+| clientIpAddress_s | String |  |
+| clientPort_d | Double |  |
+| code_s | String |  |
+| collectionName_s | String |  |
+| conditions_destinationIP_s | String |  |
+| conditions_destinationPortRange_s | String |  |
+| conditions_None_s | String |  |
+| conditions_protocols_s | String |  |
+| conditions_sourceIP_s | String |  |
+| conditions_sourcePortRange_s | String |  |
+| CorrelationId | String |  |
+| count_executions_d | Double |  |
+| cpu_time_d | Double |  |
+| database_name_s | String |  |
+| database_principal_name_s | String |  |
+| DatabaseName_s | String |  |
+| db_id_s | String |  |
+| direction_s | String |  |
+| dop_d | Double |  |
+| duration_d | Double |  |
+| duration_milliseconds_d | Double |  |
+| DurationMs | BigInt |  |
+| ElasticPoolName_s | String |  |
+| endTime_t | DateTime |  |
+| Environment_s | String |  |
+| error_code_s | String |  |
+| error_message_s | String |  |
+| errorLevel_s | String |  |
+| event_class_s | String |  |
+| event_s | String |  |
+| event_subclass_s | String |  |
+| event_time_t | DateTime |  |
+| EventName_s | String |  |
+| execution_type_d | Double |  |
+| executionInfo_endTime_t | DateTime |  |
+| executionInfo_exitCode_d | Double |  |
+| executionInfo_startTime_t | DateTime |  |
+| host_s | String |  |
+| httpMethod_s | String |  |
+| httpStatus_d | Double |  |
+| httpStatusCode_d | Double |  |
+| httpStatusCode_s | String |  |
+| httpVersion_s | String |  |
+| id_s | String |  |
+| identity_claim_appid_g | Guid |  |
+| identity_claim_ipaddr_s | String |  |
+| instanceId_s | String |  |
+| interval_end_time_d | Double |  |
+| interval_start_time_d | Double |  |
+| ip_s | String |  |
+| is_column_permission_s | String |  |
+| isAccessPolicyMatch_b | Bool |  |
+| JobDurationInSecs_s | String |  |
+| JobFailureCode_s | String |  |
+| JobId_g | Guid |  |
+| jobId_s | String |  |
+| JobOperation_s | String |  |
+| JobOperationSubType_s | String |  |
+| JobStartDateTime_s | String |  |
+| JobStatus_s | String |  |
+| JobUniqueId_g | Guid |  |
+| Level | String |  |
+| log_bytes_used_d | Double |  |
+| logical_io_reads_d | Double |  |
+| logical_io_writes_d | Double |  |
+| LogicalServerName_s | String |  |
+| macAddress_s | String |  |
+| matchedConnections_d | Double |  |
+| max_cpu_time_d | Double |  |
+| max_dop_d | Double |  |
+| max_duration_d | Double |  |
+| max_log_bytes_used_d | Double |  |
+| max_logical_io_reads_d | Double |  |
+| max_logical_io_writes_d | Double |  |
+| max_num_physical_io_reads_d | Double |  |
+| max_physical_io_reads_d | Double |  |
+| max_query_max_used_memory_d | Double |  |
+| max_rowcount_d | Double |  |
+| max_time_s | String |  |
+| mean_time_s | String |  |
+| Message | String |  |
+| min_time_s | String |  |
+| msg_s | String |  |
+| num_physical_io_reads_d | Double |  |
+| object_id_d | Double |  |
+| object_name_s | String |  |
+| OperationName | String |  |
+| OperationVersion | String |  |
+| partitionKey_s | String |  |
+| physical_io_reads_d | Double |  |
+| plan_id_d | Double |  |
+| policy_s | String |  |
+| policyMode_s | String |  |
+| primaryIPv4Address_s | String |  |
+| priority_d | Double |  |
+| properties_enabledForDeployment_b | Bool |  |
+| properties_enabledForDiskEncryption_b | Bool |  |
+| properties_enabledForTemplateDeployment_b | Bool |  |
+| properties_s | String |  |
+| properties_sku_Family_s | String |  |
+| properties_sku_Name_s | String |  |
+| properties_tenantId_g | Guid |  |
+| query_hash_s | String |  |
+| query_id_d | Double |  |
+| query_max_used_memory_d | Double |  |
+| query_plan_hash_s | String |  |
+| query_time_d | Double |  |
+| querytext_s | String |  |
+| receivedBytes_d | Double |  |
+| Region_s | String |  |
+| requestCharge_s | String |  |
+| requestQuery_s | String |  |
+| requestResourceId_s | String |  |
+| requestResourceType_s | String |  |
+| requestUri_s | String |  |
+| reserved_storage_mb_s | String |  |
+| Resource | String |  |
+| resource_actionName_s | String |  |
+| resource_location_s | String |  |
+| resource_originRunId_s | String |  |
+| resource_resourceGroupName_s | String |  |
+| resource_runId_s | String |  |
+| resource_subscriptionId_g | Guid |  |
+| resource_triggerName_s | String |  |
+| resource_workflowId_g | Guid |  |
+| resource_workflowName_s | String |  |
+| ResourceGroup | String |  |
+| ResourceProvider | String |  |
+| ResourceType | String |  |
+| response_rows_d | Double |  |
+| resultCode_s | String |  |
+| ResultDescription | String |  |
+| resultDescription_ChildJobs_s | String |  |
+| resultDescription_ErrorJobs_s | String |  |
+| resultMessage_s | String |  |
+| ResultSignature | String |  |
+| ResultType | String |  |
+| rootCauseAnalysis_s | String |  |
+| routingRuleName_s | String |  |
+| rowcount_d | Double |  |
+| ruleName_s | String |  |
+| RunbookName_s | String |  |
+| RunOn_s | String |  |
+| schema_name_s | String |  |
+| sentBytes_d | Double |  |
+| sequence_group_id_g | Guid |  |
+| sequence_number_d | Double |  |
+| server_principal_sid_s | String |  |
+| session_id_d | Double |  |
 
 ## Solutions (36)
 
@@ -380,18 +557,18 @@ References by type: 14 connectors, 60 content items, 0 ASIM parsers, 1 other par
 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"` | - | 2 | - | - | **2** |
 | `Category == "AzureFirewallNetworkRule"` | - | 1 | - | 1 | **2** |
 | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | - | 2 | - | - | **2** |
-| `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.SEARCH"` | 1 | - | - | - | **1** |
 | `ResourceType == "AZUREFIREWALLS"` | 1 | - | - | - | **1** |
-| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.KEYVAULT"` | 1 | - | - | - | **1** |
-| `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.EVENTHUB"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.BATCH"` | 1 | - | - | - | **1** |
-| `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
-| `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.KEYVAULT"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.STREAMANALYTICS"` | 1 | - | - | - | **1** |
+| `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | 1 | - | - | - | **1** |
+| `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
+| `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.SERVICEBUS"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.SEARCH"` | 1 | - | - | - | **1** |
+| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
 | `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
 | `Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"`<br>`ResourceProvider == "MICROSOFT.NETWORK"` | - | 1 | - | - | **1** |
 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"`<br>`ResourceType == "AZUREFIREWALLS"` | - | 1 | - | - | **1** |
@@ -463,12 +640,12 @@ References by type: 14 connectors, 60 content items, 0 ASIM parsers, 1 other par
 | `MICROSOFT.KEYVAULT` | 1 | 5 | - | - | **6** |
 | `MICROSOFT.SQL` | 1 | 2 | - | - | **3** |
 | `MICROSOFT.LOGIC` | 1 | 1 | - | - | **2** |
-| `MICROSOFT.DATALAKESTORE` | 1 | - | - | - | **1** |
-| `MICROSOFT.SEARCH` | 1 | - | - | - | **1** |
 | `MICROSOFT.EVENTHUB` | 1 | - | - | - | **1** |
 | `MICROSOFT.BATCH` | 1 | - | - | - | **1** |
 | `MICROSOFT.STREAMANALYTICS` | 1 | - | - | - | **1** |
+| `MICROSOFT.DATALAKESTORE` | 1 | - | - | - | **1** |
 | `MICROSOFT.SERVICEBUS` | 1 | - | - | - | **1** |
+| `MICROSOFT.SEARCH` | 1 | - | - | - | **1** |
 | `MICROSOFT.NETWORK` | - | 1 | - | - | **1** |
 | `MICROSOFT.CONTAINERSERVICE` | - | 1 | - | - | **1** |
 
@@ -477,8 +654,8 @@ References by type: 14 connectors, 60 content items, 0 ASIM parsers, 1 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `AZUREFIREWALLS` | 1 | 7 | - | - | **8** |
-| `PUBLICIPADDRESSES` | 1 | 7 | - | - | **8** |
 | `APPLICATIONGATEWAYS` | 1 | 7 | - | - | **8** |
+| `PUBLICIPADDRESSES` | 1 | 7 | - | - | **8** |
 | `VAULTS` | - | 8 | - | - | **8** |
 | `CDNWEBAPPLICATIONFIREWALLPOLICIES` | 1 | 4 | - | - | **5** |
 | `FRONTDOORS` | 1 | 4 | - | - | **5** |

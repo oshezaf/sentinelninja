@@ -14,7 +14,28 @@ Reference for NetworkAccessGenerativeAIInsights table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights) |
+
+## Schema (14 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccessgenerativeaiinsights)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| Activity | string | The type of generative AI activity being performed. |
+| Content | string | The content or query associated with the generative AI interaction. |
+| DestinationUrl | string | The URL of the generative AI endpoint accessed. |
+| EventId | string | Unique identifier for the generative AI event. |
+| EventType | string | The type of generative AI event that occurred. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SubActivity | string | The specific type of operation within the activity. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The date and time (UTC) that the event was generated. |
+| TransactionId | string | Unique identifier for the transaction. |
+| Type | string | The name of the table |
+| UserPrincipalName | string | The UPN of the user who performed the activity. |
 
 ## Solutions (1)
 

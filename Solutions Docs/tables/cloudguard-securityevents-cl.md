@@ -11,6 +11,58 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (44 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP/Data%20Connectors/CloudGuard_ccp/CloudGuard_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| acknowledged | boolean |
+| action | string |
+| additionalFields | dynamic |
+| alertType | string |
+| bundleId | int |
+| bundleName | string |
+| category | string |
+| cloudAccountExternalId | string |
+| cloudAccountId | string |
+| cloudAccountType | string |
+| comments | dynamic |
+| createdTime | datetime |
+| description | string |
+| entityDome9Id | string |
+| entityExternalId | string |
+| entityName | string |
+| entityNetwork | dynamic |
+| entityTags | dynamic |
+| entityType | string |
+| entityTypeByEnvironmentType | string |
+| findingKey | string |
+| id | string |
+| isExcluded | boolean |
+| labels | dynamic |
+| lastSeenTime | datetime |
+| magellan | dynamic |
+| occurrences | dynamic |
+| organizationalUnitId | string |
+| organizationalUnitPath | string |
+| origin | string |
+| ownerUserName | dynamic |
+| region | string |
+| remediation | string |
+| remediationActions | dynamic |
+| ruleId | string |
+| ruleLogic | string |
+| ruleName | string |
+| scanId | dynamic |
+| severity | string |
+| status | string |
+| statusReason | string |
+| tag | string |
+| updatedTime | datetime |
+| webhookResponses | dynamic |
 
 ## Solutions (1)
 

@@ -11,6 +11,35 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (21 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/QualysKB_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Category_s | string |
+| Consequence_s | string |
+| CVE_ID_s | string |
+| CVE_URL_s | string |
+| Diagnosis_s | string |
+| Discovery_Additional_Info_s | string |
+| Discovery_Auth_Type_s | string |
+| Discovery_Remote_s | string |
+| Last_Service_Modification_DateTime_s | string |
+| PCI_Flag_s | string |
+| Published_DateTime_s | string |
+| QID_s | string |
+| Severity_Level_s | string |
+| Software_Product_s | string |
+| Software_Vendor_s | string |
+| Solution_s | string |
+| TimeGenerated | datetime |
+| Title_s | string |
+| Vendor_Reference_ID_s | string |
+| Vendor_Reference_URL_s | string |
+| Vuln_Type_s | string |
 
 ## Solutions (1)
 

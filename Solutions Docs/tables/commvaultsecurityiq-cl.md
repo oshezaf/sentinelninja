@@ -11,6 +11,37 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (23 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CommvaultSecurityIQ_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| anomaly_sub_type_s | string |
+| Computer | string |
+| created_files_count_s | string |
+| deleted_files_count_s | string |
+| description_s | string |
+| external_link_s | string |
+| files_list_s | string |
+| job_end_time_s | string |
+| job_id_s | string |
+| job_start_time_s | string |
+| ManagementGroupName | string |
+| MG | guid |
+| originating_client_s | string |
+| RawData | string |
+| scanned_folder_list_s | string |
+| severity_s | string |
+| SourceSystem | string |
+| subclient_id_d | real |
+| TenantId | guid |
+| TimeGenerated | datetime |
+| Type | string |
+| user_id_d | real |
+| username_s | string |
 
 ## Solutions (1)
 

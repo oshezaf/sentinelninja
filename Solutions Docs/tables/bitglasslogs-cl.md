@@ -11,6 +11,89 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (75 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BitglassLogs_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action_s | string |
+| activity_s | string |
+| application_s | string |
+| arguments_s | string |
+| bgcategories_s | string |
+| bgcloudscore_s | string |
+| city_s | string |
+| country_s | string |
+| countrycode_s | string |
+| customcategories_s | string |
+| customlocation_s | string |
+| destinationip_s | string |
+| details_s | string |
+| device_s | string |
+| deviceguid_g | string |
+| deviceguid_s | string |
+| devicehostname_s | string |
+| dlppattern_s | string |
+| docextension_s | string |
+| docmd5_s | string |
+| docsha1_s | string |
+| docsha256_s | string |
+| doctype_s | string |
+| email_s | string |
+| emailbcc_s | string |
+| emailcc_s | string |
+| emailfrom_s | string |
+| emailsenttime_s | string |
+| emailsubject_s | string |
+| emailto_s | string |
+| fileid_g | string |
+| fileid_s | string |
+| filelink_s | string |
+| filename_s | string |
+| firstname_s | string |
+| folder_s | string |
+| indexedtime_s | string |
+| IPAddress | string |
+| keyword_s | string |
+| lastname_s | string |
+| lat_s | string |
+| location_s | string |
+| log_type_s | string |
+| long_s | string |
+| owner_s | string |
+| pagetitle_s | string |
+| patterns_s | string |
+| policyid_s | string |
+| protocol_s | string |
+| referrer_s | string |
+| region_s | string |
+| regioncode_s | string |
+| request_s | string |
+| requestdomain_s | string |
+| requestmethod_s | string |
+| responsecode_d | real |
+| responsecode_s | string |
+| setransactionid_g | string |
+| sharedwith_s | string |
+| size_s | string |
+| status_s | string |
+| syslogheader_s | string |
+| threatindicator_s | string |
+| time_s | string |
+| TimeGenerated | datetime |
+| transactionid_s | string |
+| uploadedbytes_s | string |
+| uri_s | string |
+| url_s | string |
+| user_s | string |
+| useragent_s | string |
+| usergroup_s | string |
+| webcategories_s | string |
+| webcategoryclass_s | string |
+| webreputation_s | string |
 
 ## Solutions (1)
 

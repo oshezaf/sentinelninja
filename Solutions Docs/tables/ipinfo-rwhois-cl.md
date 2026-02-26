@@ -10,6 +10,28 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (15 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Ipinfo_RWHOIS_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| abuse | string |
+| city | string |
+| country | string |
+| domain | string |
+| email | string |
+| host | string |
+| imported | string |
+| name | string |
+| postal | string |
+| range | string |
+| street | string |
+| TimeGenerated | datetime |
+| updated | string |
+| whois_desc | string |
+| whois_id | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

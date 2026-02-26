@@ -13,6 +13,21 @@
 | **Category** | Internal |
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (8 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/DNS_Summarized_Logs_sourceInfo_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| count__d | int |
+| DnsQueryTypeName_s | string |
+| DvcHostname_s | string |
+| EventProduct_s | string |
+| EventSubType_s | string |
+| EventTime_t | datetime |
+| EventType_s | string |
+| TimeGenerated | datetime |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

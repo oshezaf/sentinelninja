@@ -10,6 +10,24 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (11 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Proto_By_IP_Data_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| data_dates_s | string |
+| data_proto_by_date_s | string |
+| data_protocols_s | string |
+| end_date_s | string |
+| ip_s | string |
+| request_id_g | string |
+| size_d | real |
+| start_date_s | string |
+| TimeGenerated | datetime |
+| total_d | real |
+| Type | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

@@ -11,6 +11,56 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (42 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Zoom_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Action | string |
+| CategoryType | string |
+| ClientType | string |
+| CreateTime | datetime |
+| Date | string |
+| Department | string |
+| Dept | string |
+| Email | string |
+| EventCategoryType | string |
+| EventCreationTime | datetime |
+| EventDay | string |
+| EventEndTime | datetime |
+| EventMessage | string |
+| EventName | string |
+| EventOriginalMessage | string |
+| EventProduct | string |
+| EventResult | string |
+| EventType | string |
+| EventVendor | string |
+| FreeUsage | string |
+| Id | string |
+| IpAddress | string |
+| LastClientVersion | string |
+| LastLoginTime | datetime |
+| MeetingMinutes | real |
+| MeetingsCount | real |
+| NewUsersCount | real |
+| OperationDetail | string |
+| Operator | string |
+| ParticipantsCount | real |
+| PlanUsage | string |
+| SrcDvcModelName | string |
+| SrcDvcModelNumber | string |
+| SrcIpAddr | string |
+| Time | datetime |
+| TimeGenerated | datetime |
+| Usage | string |
+| UserEmail | string |
+| UserIdentity | string |
+| UserName | string |
+| UserType | real |
+| Version | string |
 
 ## Solutions (1)
 

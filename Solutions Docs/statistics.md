@@ -165,13 +165,45 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 ## Tables
 
-| Metric | Count |
-|:-------|------:|
-| **Total Tables Documented** | **1782** |
-| Tables Ingested by Connectors | 825 |
-| Tables Referenced by Content Only | 218 |
-| Standalone Reference Tables | 739 |
-| Defender XDR Only Tables | 31 |
+### Overview
+
+**2022 tables** documented across all discovery sources.
+
+### Primary Discovery Source
+
+Each table is assigned a single primary discovery source by priority: Connector > Content > Docs > Schema.
+
+| Primary Source | Tables |
+|:---------------|-------:|
+| Connector | 825 |
+| Content | 223 |
+| Docs | 734 |
+| Schema | 240 |
+| **Total** | **2022** |
+
+### Doc Sources
+
+Tables found in documentation references. A single table may appear in multiple doc sources.
+
+| Doc Source | Tables |
+|:-----------|-------:|
+| Azure Monitor | 781 |
+| Defender XDR | 61 |
+| Sentinel Tables Doc | 478 |
+| Feature Support Doc | 702 |
+| Ingestion API Doc | 51 |
+| *Defender XDR only (not in Azure Monitor)* | *31* |
+
+### Schema Sources
+
+Tables with schema information, by schema source. A single table may have schemas from multiple sources.
+
+| Schema Source | Tables |
+|:-------------|-------:|
+| Azure Monitor docs | 811 |
+| DCR | 151 |
+| KQL validation | 837 |
+| **Total unique tables with schema** | **1780** |
 
 ## Content
 

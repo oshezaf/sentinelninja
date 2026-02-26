@@ -11,6 +11,53 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (39 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CynerioEvent_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| asset_asset_type_code_s | string |
+| asset_id_g | string |
+| asset_id_s | string |
+| asset_ip_s | string |
+| asset_model_s | string |
+| asset_name_s | string |
+| asset_type_code_s | string |
+| asset_type_s | string |
+| browser_s | string |
+| client_ip_s | string |
+| Computer | string |
+| date_t | datetime |
+| details_s | string |
+| dst_ip_s | string |
+| host_s | string |
+| id_g | string |
+| ManagementGroupName | string |
+| MG | string |
+| module_s | string |
+| new_status_s | string |
+| port_d | real |
+| RawData | string |
+| related_risks_s | string |
+| risk_name_s | string |
+| server_ip_s | string |
+| service_s | string |
+| Severity | int |
+| severity_s | string |
+| SourceSystem | string |
+| src_ip_s | string |
+| status_code_s | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| timestamp_d | real |
+| title_s | string |
+| trans_s | string |
+| Type | string |
+| uid_s | string |
 
 ## Solutions (1)
 

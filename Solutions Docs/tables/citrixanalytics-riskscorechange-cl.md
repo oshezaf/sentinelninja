@@ -10,6 +10,23 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (10 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CitrixAnalytics_riskScoreChange_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alert_message_s | string |
+| alert_type_s | string |
+| alert_value_s | string |
+| cur_riskscore_d | real |
+| entity_id_s | string |
+| entity_type_s | string |
+| event_type_s | string |
+| tenant_id_s | string |
+| TimeGenerated | datetime |
+| version_d | real |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

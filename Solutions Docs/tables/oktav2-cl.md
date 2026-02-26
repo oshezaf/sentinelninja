@@ -10,6 +10,30 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (17 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Data%20Connectors/OktaNativePollerConnectorV2/OktaSSOv2_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| actor | dynamic |
+| authenticationContext | dynamic |
+| client | dynamic |
+| debugContext | dynamic |
+| displayMessage | string |
+| DomainName | string |
+| eventType | string |
+| legacyEventType | string |
+| outcome | dynamic |
+| published | datetime |
+| request | dynamic |
+| securityContext | dynamic |
+| severity | string |
+| target | dynamic |
+| transaction | dynamic |
+| uuid | string |
+| version | string |
+
 ## Solutions (2)
 
 This table is used by the following solutions:

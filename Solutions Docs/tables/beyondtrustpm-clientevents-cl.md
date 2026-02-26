@@ -10,6 +10,71 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (58 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BeyondTrustPM_ClientEvents_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| agentId | string |
+| agentVersion | string |
+| Computer | string |
+| destinationData | dynamic |
+| ecsVersion | string |
+| epmConfigurationData | dynamic |
+| epmEventAction | string |
+| epmEventType | string |
+| epmGroupId | string |
+| epmSchemaVersion | string |
+| epmTenantId | string |
+| eventAction | string |
+| eventCategory | string |
+| eventCode | string |
+| eventId | string |
+| eventIngested | datetime |
+| eventKind | string |
+| eventOutcome | string |
+| eventProvider | string |
+| eventReason | string |
+| eventType | string |
+| fileData | dynamic |
+| fileHashMd5 | string |
+| fileHashSha1 | string |
+| fileHashSha256 | string |
+| fileName | string |
+| filePath | string |
+| hostArchitecture | string |
+| hostData | dynamic |
+| hostDomain | string |
+| hostHostname | string |
+| hostId | string |
+| hostIp | string |
+| hostName | string |
+| hostOsName | string |
+| hostOsPlatform | string |
+| hostOsType | string |
+| hostOsVersion | string |
+| ManagementGroupName | string |
+| MG | string |
+| networkData | dynamic |
+| processCommandLine | string |
+| processData | dynamic |
+| processExecutable | string |
+| processPid | int |
+| RawData | string |
+| relatedData | dynamic |
+| sourceData | dynamic |
+| SourceSystem | string |
+| tags | string |
+| TenantId | string |
+| TimeGenerated | datetime |
+| timestamp | datetime |
+| timeTransmitted | datetime |
+| userData | dynamic |
+| userDomain | string |
+| userId | string |
+| userName | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

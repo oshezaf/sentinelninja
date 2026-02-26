@@ -11,6 +11,40 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (26 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/DragosAlerts_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| analyticEventId | string |
+| analyticEventIndex | string |
+| assets | dynamic |
+| collectors | dynamic |
+| content | string |
+| count | int |
+| createdAt | datetime |
+| detectionQuads | dynamic |
+| detectorId | string |
+| firstSeenAt | datetime |
+| id | int |
+| lastSeenAt | datetime |
+| matchedRuleIds | dynamic |
+| notificationType | string |
+| occurredAt | datetime |
+| retained | bool |
+| reviewed | bool |
+| severity | int |
+| source | string |
+| sourceIdField | string |
+| sourceIds | dynamic |
+| sourceIndex | string |
+| state | string |
+| summary | string |
+| threatInfo | dynamic |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

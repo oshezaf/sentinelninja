@@ -11,6 +11,21 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (7 columns)
+
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Data%20Connectors/SlackAuditLog_CCP/SlackAuditLog_DCR.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| action | string |
+| actor | dynamic |
+| context | dynamic |
+| date_create | real |
+| details | dynamic |
+| entity | dynamic |
+| id | string |
 
 ## Solutions (1)
 

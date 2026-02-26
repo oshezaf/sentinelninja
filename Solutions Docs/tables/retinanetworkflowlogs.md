@@ -14,7 +14,50 @@ Reference for RetinaNetworkFlowLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/retinanetworkflowlogs) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/retinanetworkflowlogs) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (35 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/retinanetworkflowlogs)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| AdditionalFlowData | dynamic | Additional flow data. |
+| DestinationClusterName | string | The name of the destination cluster (flow.destination.cluster_name). |
+| DestinationIdentity | int | Security identity number for the destination (flow.destination.identity). |
+| DestinationNamespace | string | The namespace of the destination (flow.destination.namespace). |
+| DestinationPodName | string | The name of the destination pod (flow.destination.pod_name). |
+| DestinationWorkloads | dynamic | Array of workloads associated with the destination, including name and kind (flow.destination.workloads). |
+| DropReason | string | The description of the drop reason if the verdict is DROPPED. (flow.drop_reason_desc). |
+| EventType | dynamic | Event type details (flow.event_type). |
+| FlowType | string | Type of the flow (e.g., L3_L4, L7 SOCK) (flow.Type). |
+| IP | dynamic | The IP values of the flow. Including ip source, ip destination, ip is encrypted and ip version. |
+| Layer4 | dynamic | The layer 4 information of the flow such as the protocol, source port, destination port, and TCP flags. |
+| Layer7 | dynamic | L7 flow type if Flow_Type is L7 (e.g., DNS, HTTP, Kafka) (flow.l7.type). |
+| NodeName | string | Name of the node where the flow was captured (flow.node_name). |
+| PacketsReceived | int | Number of packets sent from the destination to the source since the last update. |
+| PacketsSent | int | Number of packets sent from the source to the destination since the last update. |
+| Policies | dynamic | Combined entry for all policies that allowed or denied ingress/egress (flow.egress_allowed_by, flow.ingress_allowed_by, flow.egress_denied_by, flow.ingress_denied_by). |
+| Reply | bool | Indicates if the flow is a reply (flow.is_reply.value). |
+| Service | dynamic | Service details of the flow. |
+| SourceClusterName | string | The name of the source cluster (flow.source.cluster_name). |
+| SourceIdentity | int | The security identity number for the source (flow.source.identity). |
+| SourceNamespace | string | The namespace of the source (flow.source.namespace). |
+| SourcePodName | string | The name of the source pod (flow.source.pod_name). |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceWorkloads | dynamic | Array of workloads associated with the source, including name and kind (flow.source.workloads). |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The date and time the flow was recorded (flow.time). |
+| TraceObservationPoint | string | Point of observation in the trace (e.g., TO_ENDPOINT) (flow.trace_observation_point). |
+| TrafficDirection | string | Direction of the traffic (e.g., INGRESS, EGRESS) (flow.traffic_direction). |
+| Type | string | The name of the table |
+| UUID | string | The UUID of the flow (flow.uuid). |
+| Verdict | string | The verdict of the flow (e.g., FORWARDED, DROPPED) (flow.verdict). |
 
 ---
 

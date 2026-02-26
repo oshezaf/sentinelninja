@@ -11,6 +11,69 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (55 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/FncEventsObservation_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Category | string |
+| class_s | string |
+| confidence_s | string |
+| context_s | string |
+| customer_id_s | string |
+| description_s | string |
+| dst_ip_enrichments_annotations_applications_s | string |
+| dst_ip_enrichments_annotations_environments_s | string |
+| dst_ip_enrichments_annotations_locations_s | string |
+| dst_ip_enrichments_annotations_owners_s | string |
+| dst_ip_enrichments_annotations_roles_s | string |
+| dst_ip_enrichments_annotations_tags_s | string |
+| dst_ip_enrichments_asn_asn_d | int |
+| dst_ip_enrichments_asn_asn_org_s | string |
+| dst_ip_enrichments_asn_isp_s | string |
+| dst_ip_enrichments_asn_org_s | string |
+| dst_ip_enrichments_geo_city_s | string |
+| dst_ip_enrichments_geo_country_s | string |
+| dst_ip_enrichments_geo_location_lat_d | real |
+| dst_ip_enrichments_geo_location_lon_d | real |
+| dst_ip_enrichments_geo_subdivision_s | string |
+| dst_ip_enrichments_internal_b | bool |
+| dst_ip_s | string |
+| event_type_s | string |
+| evidence_end_timestamp_t | datetime |
+| evidence_iql_s | string |
+| evidence_start_timestamp_t | datetime |
+| geo_distance_d | real |
+| intel_s | string |
+| observation_uuid_g | string |
+| sensor_id_s | string |
+| sensor_ids_s | string |
+| source_s | string |
+| src_ip_enrichments_annotations_applications_s | string |
+| src_ip_enrichments_annotations_environments_s | string |
+| src_ip_enrichments_annotations_locations_s | string |
+| src_ip_enrichments_annotations_owners_s | string |
+| src_ip_enrichments_annotations_roles_s | string |
+| src_ip_enrichments_annotations_tags_s | string |
+| src_ip_enrichments_asn_asn_d | int |
+| src_ip_enrichments_asn_asn_org_s | string |
+| src_ip_enrichments_asn_isp_s | string |
+| src_ip_enrichments_asn_org_s | string |
+| src_ip_enrichments_geo_city_s | string |
+| src_ip_enrichments_geo_country_s | string |
+| src_ip_enrichments_geo_location_lat_d | real |
+| src_ip_enrichments_geo_location_lon_d | real |
+| src_ip_enrichments_geo_subdivision_s | string |
+| src_ip_enrichments_internal_b | bool |
+| src_ip_s | string |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
+| title_s | string |
+| Type | string |
+| uuid_g | string |
 
 ## Solutions (1)
 

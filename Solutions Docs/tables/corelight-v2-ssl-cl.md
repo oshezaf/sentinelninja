@@ -10,6 +10,37 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (24 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Corelight_v2_ssl_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _path_s | string |
+| _system_name_s | string |
+| _write_ts_t | datetime |
+| cert_chain_fps_s | string |
+| cipher_s | string |
+| client_cert_chain_fps_s | string |
+| curve_s | string |
+| established_b | bool |
+| id_orig_h_s | string |
+| id_orig_p_d | real |
+| id_resp_h_s | string |
+| id_resp_p_d | real |
+| last_alert_s | string |
+| next_protocol_s | string |
+| resumed_b | bool |
+| server_name_s | string |
+| sid | string |
+| sni_matches_cert_b | bool |
+| ssl_history_s | string |
+| TimeGenerated | datetime |
+| ts_t | datetime |
+| uid_s | string |
+| validation_status_s | string |
+| version_s | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:

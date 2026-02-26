@@ -11,6 +11,27 @@
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✓ Yes |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (13 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BitsightFindings_summary_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| Company | string |
+| confidence | string |
+| description | string |
+| end_date | datetime |
+| event_count | real |
+| first_seen | datetime |
+| host_count | real |
+| id | string |
+| Name | string |
+| severity | string |
+| severity_category | string |
+| start_date | datetime |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 

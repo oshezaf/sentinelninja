@@ -11,6 +11,32 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (18 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ContrastADRIncident_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| alertReason_s | string |
+| alertType_s | string |
+| createdTime_t | datetime |
+| eventType_s | string |
+| incidentId_s | string |
+| incidentName_s | string |
+| organizationUuid_g | string |
+| recommendedActions_s | string |
+| recommendedRunbooks_s | string |
+| relatedRules_s | string |
+| score_d | real |
+| severity_s | string |
+| source_s | string |
+| status_s | string |
+| summary_s | string |
+| TimeGenerated | datetime |
+| timestamp_t | datetime |
+| url_s | string |
 
 ## Solutions (1)
 

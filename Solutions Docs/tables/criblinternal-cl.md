@@ -11,6 +11,35 @@
 | **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
 | **Lake-Only Ingestion** | ✗ No |
+| **Sentinel Tables and Connectors Reference** | [View Documentation](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) |
+
+## Schema (21 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CriblInternal_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _raw_s | string |
+| accountId_s | string |
+| channel_s | string |
+| cid_s | string |
+| cribl_breaker_s | string |
+| data_source_s | string |
+| dataset_s | string |
+| deployment_s | string |
+| fleet_s | string |
+| instance_s | string |
+| level_s | string |
+| message_s | string |
+| provider_s | string |
+| reason_s | string |
+| saas_domain_s | string |
+| service_s | string |
+| source_s | string |
+| tenantId_s | string |
+| TimeGenerated_i | datetime |
+| user_s | string |
+| workspace_s | string |
 
 ## Solutions (1)
 

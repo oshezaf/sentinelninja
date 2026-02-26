@@ -14,7 +14,30 @@ Reference for ACRConnectedClientList table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes |
 | **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
-| **Azure Monitor Docs** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acrconnectedclientlist) |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acrconnectedclientlist) |
+| **Azure Monitor Tables Feature Support** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) |
+
+## Schema (15 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acrconnectedclientlist)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| CacheName | string | The name of the Azure Cache for Redis instance. |
+| ClientCount | int | The number of Redis client connections from the associated IP address. |
+| ClientIp | string | The Redis client IP address. |
+| Location | string | The location (region) the Azure Cache for Redis instance was accessed in. |
+| OperationName | string | The Redis operation associated with the log record. |
+| PrivateLinkIpv6 | string | The Redis client private link IPv6 address (if applicable). |
+| RoleInstance | string | The role instance which logged the client list. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The timestamp of when the log was generated in UTC. |
+| Type | string | The name of the table |
 
 ---
 

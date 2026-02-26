@@ -10,6 +10,30 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Schema (17 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/ZimperiumMitigationLog_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| _ResourceId | string |
+| account_id | string |
+| Computer | string |
+| detection_app_instance_id | string |
+| device_os_s | string |
+| event_id_s | string |
+| event_timestamp_s | string |
+| ManagementGroupName | string |
+| MG | string |
+| mitigated | bool |
+| RawData | string |
+| SourceSystem | string |
+| TenantId | string |
+| threat_uuid | string |
+| TimeGenerated | datetime |
+| Type | string |
+| zdevice_id | string |
+
 ## Solutions (1)
 
 This table is used by the following solutions:
