@@ -366,7 +366,7 @@ This solution uses **229 table(s)**:
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) | [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) (dependency) | - |
 | [`Tomcat_CL`](../tables/tomcat-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) | [Trend Vision One](../connectors/trendmicroxdr.md) (dependency) | - |

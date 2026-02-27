@@ -4,13 +4,11 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 📚 **Learn more:** [Deploy Microsoft Sentinel solutions](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-deploy)
 
-> **Note:** This index covers connectors managed through Solutions in the Azure-Sentinel GitHub repository. A small number of connectors (such as Microsoft Dataverse, Microsoft Power Automate, Microsoft Power Platform Admin, and SAP connectors) are not managed via Solutions and are therefore not included here.
-
 **Browse:** [🏠](README.md) · **Solutions** · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md)
 
 ---
 
-**495 solutions** with 388 unique connectors and 394 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
+**495 solutions** with 392 unique connectors and 394 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
@@ -364,7 +362,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/McAfee%20ePolicy%20Orchestrator/Workbooks/Images/Logo/mcafee_logo.svg" alt="" width="40" height="40"> | [McAfee ePolicy Orchestrator](solutions/mcafee-epolicy-orchestrator.md) | 2021-03-25 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/office365_logo.svg" alt="" width="40" height="40"> | [Microsoft 365](solutions/microsoft-365.md) | 2022-05-23 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/office365_logo.svg" alt="" width="40" height="40"> | [Microsoft 365 Assets](solutions/microsoft-365-assets.md) | 2025-06-20 | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Microsoft Business Applications](solutions/microsoft-business-applications.md) | 2023-04-19 | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Microsoft Business Applications](solutions/microsoft-business-applications.md) ➕ | 2023-04-19 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Copilot_logo.svg" alt="" width="40" height="40"> | [Microsoft Copilot](solutions/microsoft-copilot.md) ⚠️ | 2025-10-01 | Microsoft |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Microsoft Defender Threat Intelligence](solutions/microsoft-defender-threat-intelligence.md) | 2023-03-23 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | <img src="images/asim-logo-small.png" alt="ASIM" height="16"> [Microsoft Defender XDR](solutions/microsoft-defender-xdr.md) ➕ | 2022-05-02 | Microsoft Corporation |

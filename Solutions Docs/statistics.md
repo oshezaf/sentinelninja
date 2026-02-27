@@ -41,7 +41,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
 | Solutions | **495** | 450 | 45 |
-| With Connectors | **311** | 286 | 25 |
+| With Connectors | **312** | 286 | 26 |
 | With Content | **394** | 369 | 25 |
 
 ### Support Ownership
@@ -58,8 +58,8 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Count |
 |:-------|------:|
-| Unique Connectors | 388 |
-| Tables Used | 825 |
+| Unique Connectors | 392 |
+| Tables Used | 830 |
 
 ## Connectors
 
@@ -67,19 +67,19 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **388** | 322 | 29 | 37 |
+| In Solutions | **392** | 325 | 29 | 38 |
 | Discovered 🔍 | **148** | 28 | 114 | 6 |
-| **Total** | **536** | **350** | **143** | **43** |
+| **Total** | **540** | **353** | **143** | **44** |
 
 ### Support Ownership
 
 | Support Tier | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| Microsoft | **241** | 149 | 88 | 4 |
+| Microsoft | **244** | 152 | 88 | 4 |
 | Partner | **275** | 191 | 47 | 37 |
 | Community | **18** | 10 | 8 | 0 |
-| Unknown | **2** | 0 | 0 | 2 |
-| **Total** | **536** | **350** | **143** | **43** |
+| Unknown | **3** | 0 | 0 | 3 |
+| **Total** | **540** | **353** | **143** | **44** |
 
 ### Collection Methods
 
@@ -95,8 +95,8 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | [CCF (Legacy)](methods/ccf-legacy.md) | **16** | 14 | 1 | 1 |
 | [REST API](methods/rest-api.md) | **15** | 14 | 0 | 1 |
 | [CCF Push](methods/ccf-push.md) | **11** | 11 | 0 | 0 |
-| [Unknown](methods/unknown.md) | **3** | 3 | 0 | 0 |
-| **Total** | **536** | **350** | **143** | **43** |
+| [Unknown](methods/unknown.md) | **7** | 6 | 0 | 1 |
+| **Total** | **540** | **353** | **143** | **44** |
 
 ### Collection Methods by Support Tier
 
@@ -114,8 +114,8 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | [CCF (Legacy)](methods/ccf-legacy.md) | 3 / 1 / 0 / **4** | 11 / 0 / 1 / **12** | - | - |
 | [REST API](methods/rest-api.md) | 1 / 0 / 0 / **1** | 12 / 0 / 1 / **13** | 1 / 0 / 0 / **1** | - |
 | [CCF Push](methods/ccf-push.md) | - | 11 / 0 / 0 / **11** | - | - |
-| [Unknown](methods/unknown.md) | 3 / 0 / 0 / **3** | - | - | - |
-| **Total** | 149 / 88 / 4 / **241** | 191 / 47 / 37 / **275** | 10 / 8 / 0 / **18** | 0 / 0 / 2 / **2** |
+| [Unknown](methods/unknown.md) | 6 / 0 / 0 / **6** | - | - | 0 / 0 / 1 / **1** |
+| **Total** | 152 / 88 / 4 / **244** | 191 / 47 / 37 / **275** | 10 / 8 / 0 / **18** | 0 / 0 / 3 / **3** |
 
 ### CCF Capabilities
 
@@ -163,36 +163,52 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | Nested | 3 |
 | MvExpand | 1 |
 
+### Ingestion API
+
+API-based connectors use one of two APIs to send data to the workspace:
+
+| Ingestion API | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
+|:-------------|------:|-------:|-----------:|------------:|
+| [Log Ingestion API](methods/log-ingestion-api.md) | **161** | 133 | 1 | 27 |
+| [HTTP Data Collector API](methods/http-data-collector-api.md) | **144** | 116 | 18 | 10 |
+| [Both](methods/both.md) | **11** | 11 | 0 | 0 |
+| **Total** | **316** | **260** | **19** | **37** |
+
+**By Collection Method:**
+
+| Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Both](methods/both.md) | **Total** |
+|:-----------------|------:|------:|------:|------:|
+| [Azure Function](methods/azure-function.md) | 28 | 89 | 11 | **128** |
+| [CCF](methods/ccf.md) | 106 | - | - | **106** |
+| [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 42 | - | **42** |
+| [CCF (Legacy)](methods/ccf-legacy.md) | 16 | - | - | **16** |
+| [REST API](methods/rest-api.md) | - | 13 | - | **13** |
+| [CCF Push](methods/ccf-push.md) | 11 | - | - | **11** |
+| **Total** | **161** | **144** | **11** | **316** |
+
 ## Tables
 
 ### Overview
 
-**2022 tables** documented across all discovery sources.
+**2024 tables** documented across all discovery sources. **1780 tables** have schema information.
 
-### Primary Discovery Source
+### Discovery Sources
 
-Each table is assigned a single primary discovery source by priority: Connector > Content > Docs > Schema.
+Each table is assigned a single discovery source ("Discovered Via") by priority: Connector > Content > Docs > Schema. Within doc sources, priority is: Azure Monitor > Defender XDR > Sentinel Tables > Feature Support > Ingestion API. The "Total" column shows how many tables have each source regardless of priority, since a table can appear in multiple sources.
 
-| Primary Source | Tables |
-|:---------------|-------:|
-| Connector | 825 |
-| Content | 223 |
-| Docs | 734 |
-| Schema | 240 |
-| **Total** | **2022** |
+| Discovery Source | Discovered Via | Total |
+|:-----------------|---------------:|------:|
+| Connector | 830 | 830 |
+| Content | 220 | 757 |
+| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 617 | 781 |
+| [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 26 | 61 |
+| [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 12 | 478 |
+| [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 78 | 702 |
+| [Azure Monitor Logs Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) | 1 | 51 |
+| Schema | 240 | 1780 |
+| **Total** | **2024** | |
 
-### Doc Sources
-
-Tables found in documentation references. A single table may appear in multiple doc sources.
-
-| Doc Source | Tables |
-|:-----------|-------:|
-| Azure Monitor | 781 |
-| Defender XDR | 61 |
-| Sentinel Tables Doc | 478 |
-| Feature Support Doc | 702 |
-| Ingestion API Doc | 51 |
-| *Defender XDR only (not in Azure Monitor)* | *31* |
+*31 tables are available in Defender XDR but not in Azure Monitor Log Analytics.*
 
 ### Schema Sources
 

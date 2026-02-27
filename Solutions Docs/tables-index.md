@@ -6,7 +6,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 ---
 
-**2022 tables** documented (825 ingested by connectors, 223 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
+**2024 tables** documented (830 ingested by connectors, 220 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 The **Discovered Via** column shows how each table was identified. When a table appears in multiple sources, the highest-priority source is shown:
 
@@ -56,8 +56,10 @@ Browse tables alphabetically:
 | [AADUserInfo_CL](tables/aaduserinfo-cl.md) 📖 | Schema | - | - | - |
 | [AADUserRiskEvents](tables/aaduserriskevents.md) 📖 | Connector | [7](tables/aaduserriskevents.md) | [1](tables/aaduserriskevents.md) | Workbooks |
 | [ABAPAuditLog](tables/abapauditlog.md) 📖 | Connector | [4](tables/abapauditlog.md) | [4](tables/abapauditlog.md) | - |
+| [ABAPAuditLog_CL](tables/abapauditlog-cl.md) ➕ | Connector | [1](tables/abapauditlog-cl.md) | [1](tables/abapauditlog-cl.md) | - |
 | [ABAPAuthorizationDetails](tables/abapauthorizationdetails.md) 📖 | Docs | - | - | - |
 | [ABAPChangeDocsLog](tables/abapchangedocslog.md) 📖 | Docs | - | - | - |
+| [ABAPChangeDocsLog_CL](tables/abapchangedocslog-cl.md) ➕ | Connector | [1](tables/abapchangedocslog-cl.md) | [1](tables/abapchangedocslog-cl.md) | - |
 | [ABAPTableDataLog](tables/abaptabledatalog.md) 📖 | Docs | - | - | - |
 | [ABAPUserDetails](tables/abapuserdetails.md) 📖 | Docs | - | - | - |
 | [ABNORMAL_CASES_CL](tables/abnormal-cases-cl.md) 📖 | Connector | [1](tables/abnormal-cases-cl.md) | [1](tables/abnormal-cases-cl.md) | - |
@@ -874,7 +876,7 @@ Browse tables alphabetically:
 | [DataminrPulse_Alerts_vuln_prod_CL](tables/dataminrpulse-alerts-vuln-prod-cl.md) 📖 | Schema | - | - | - |
 | [DataminrPulse_Alerts_vuln_prod_relAlert_CL](tables/dataminrpulse-alerts-vuln-prod-relalert-cl.md) 📖 | Schema | - | - | - |
 | [DataminrPulse_relAlerts_CL](tables/dataminrpulse-relalerts-cl.md) 📖 | Schema | - | - | - |
-| [DataverseActivity](tables/dataverseactivity.md) 📖 | Content | [1](tables/dataverseactivity.md) | - | Analytics, Hunting, Workbooks |
+| [DataverseActivity](tables/dataverseactivity.md) 📖 ➕ | Connector | [1](tables/dataverseactivity.md) | [1](tables/dataverseactivity.md) | Analytics, Hunting, Workbooks |
 | [DefendAuditData](tables/defendauditdata.md) 📖 | Schema | - | - | - |
 | [DefenderForSqlAlerts](tables/defenderforsqlalerts.md) | Docs | - | - | - |
 | [DefenderForSqlTelemetry](tables/defenderforsqltelemetry.md) | Docs | - | - | - |
@@ -1657,11 +1659,11 @@ Browse tables alphabetically:
 | [PostgreSQLEvent](tables/postgresqlevent.md) 📖 | Schema | - | - | - |
 | [PostgreSQL_CL](tables/postgresql-cl.md) 📖 | Connector | [3](tables/postgresql-cl.md) | [2](tables/postgresql-cl.md) | Workbooks |
 | [PowerAppsActivity](tables/powerappsactivity.md) 📖 | Docs | - | - | - |
-| [PowerAutomateActivity](tables/powerautomateactivity.md) 📖 | Content | [1](tables/powerautomateactivity.md) | - | Analytics |
+| [PowerAutomateActivity](tables/powerautomateactivity.md) 📖 ➕ | Connector | [1](tables/powerautomateactivity.md) | [1](tables/powerautomateactivity.md) | Analytics |
 | [PowerBIActivity](tables/powerbiactivity.md) 📖 | Connector | [1](tables/powerbiactivity.md) | [1](tables/powerbiactivity.md) | Workbooks |
 | [PowerBIDatasetsTenant](tables/powerbidatasetstenant.md) 📖 | Docs | - | - | - |
 | [PowerBIDatasetsWorkspace](tables/powerbidatasetsworkspace.md) 📖 | Docs | - | - | - |
-| [PowerPlatformAdminActivity](tables/powerplatformadminactivity.md) 📖 | Content | [1](tables/powerplatformadminactivity.md) | - | Analytics, Hunting |
+| [PowerPlatformAdminActivity](tables/powerplatformadminactivity.md) 📖 ➕ | Connector | [1](tables/powerplatformadminactivity.md) | [1](tables/powerplatformadminactivity.md) | Analytics, Hunting |
 | [PowerPlatformConnectorActivity](tables/powerplatformconnectoractivity.md) 📖 | Docs | - | - | - |
 | [PowerPlatformDlpActivity](tables/powerplatformdlpactivity.md) 📖 | Docs | - | - | - |
 | [PrismaCloudCompute_CL](tables/prismacloudcompute-cl.md) | Connector | [1](tables/prismacloudcompute-cl.md) | [2](tables/prismacloudcompute-cl.md) | - |

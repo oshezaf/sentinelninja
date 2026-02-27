@@ -18,9 +18,18 @@
 
 ## Data Connectors
 
-**This solution does not include data connectors.**
+This solution provides **1 data connector(s)**:
 
-This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
+- [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md)
+
+## Tables Used
+
+This solution uses **2 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ABAPAuditLog_CL`](../tables/abapauditlog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) | - |
+| [`ABAPChangeDocsLog_CL`](../tables/abapchangedocslog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) | - |
 
 ## Content Items
 

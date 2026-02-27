@@ -33,6 +33,12 @@ Due to the integration of the Power Platform inventory data, in addition to the 
 | **First Published** | 2023-04-19 |
 | **Solution Folder** | [Microsoft Business Applications](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications) |
 
+## Additional Information
+
+- 📖 **Solution Overview:** [Microsoft Business Apps solution](https://learn.microsoft.com/azure/sentinel/business-applications/power-platform-solution-overview) - Monitor and protect Power Platform and Dynamics 365 Customer Engagement environments
+- 📖 **Deployment Guide:** [Deploy Power Platform connectors](https://learn.microsoft.com/azure/sentinel/business-applications/deploy-power-platform-solution) - Deploy and configure data connectors for Dataverse and Power Platform
+- 📖 **Security Content:** [Security content reference](https://learn.microsoft.com/azure/sentinel/business-applications/power-platform-solution-security-content) - Built-in analytics rules and hunting queries for Power Platform
+
 ## Dependencies
 
 This solution has **9 optional** (ASIM-based) dependencies on other solutions that can provide data through ASIM parsers:
@@ -74,9 +80,12 @@ This solution uses ASIM parsers and supports the following products:
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **4 data connector(s)**:
 
 - [Dynamics 365 Finance and Operations](../connectors/dynamics365finance.md)
+- [Microsoft Dataverse](../connectors/microsoftdataverse.md)
+- [Microsoft Power Automate](../connectors/microsoftpowerautomate.md)
+- [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md)
 - [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) *(dependency on [Vectra AI Stream](vectra-ai-stream.md))*
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
@@ -122,7 +131,7 @@ This solution uses **59 table(s)**:
 | [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
 | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency) | - |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Common Event Format (CEF)](../connectors/cef.md) (dependency), [Common Event Format (CEF) via AMA](../connectors/cefama.md) (dependency), [VirtualMetric DataStream for Microsoft Sentinel](../connectors/virtualmetricmssentinelconnector.md) (dependency), [VirtualMetric DataStream for Microsoft Sentinel data lake](../connectors/virtualmetricmssentineldatalakeconnector.md) (dependency), [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md) (dependency) | - |
-| [`DataverseActivity`](../tables/dataverseactivity.md) | - | Analytics, Hunting, Workbooks |
+| [`DataverseActivity`](../tables/dataverseactivity.md) | [Microsoft Dataverse](../connectors/microsoftdataverse.md) | Analytics, Hunting, Workbooks |
 | [`DeviceEvents`](../tables/deviceevents.md) | - | Analytics, Hunting |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | - | Analytics |
 | [`DeviceInfo`](../tables/deviceinfo.md) | - | Analytics, Hunting |
@@ -140,13 +149,13 @@ This solution uses **59 table(s)**:
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics |
 | [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`PostgreSQL_CL`](../tables/postgresql-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | - | Analytics |
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | - | Analytics, Hunting |
+| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | [Microsoft Power Automate](../connectors/microsoftpowerautomate.md) | Analytics |
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md) | Analytics, Hunting |
 | [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`SecurityEvent`](../tables/securityevent.md) | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) (dependency), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) (dependency) | - |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency), [Forescout](../connectors/forescout.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency), [Forescout](../connectors/forescout.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 | [`Tomcat_CL`](../tables/tomcat-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |

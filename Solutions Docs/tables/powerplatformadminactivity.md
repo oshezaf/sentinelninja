@@ -45,11 +45,23 @@ Reference for PowerPlatformAdminActivity table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | Workload | string | The Office 365 service where the activity occurred. |
 
+## Additional Information
+
+📖 **Related Documentation:** [Power Platform administrative logs](https://learn.microsoft.com/power-platform/admin/logging-powerapps) - View Power Platform administrative logs using auditing solutions
+
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md) |  |
 
 ---
 

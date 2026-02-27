@@ -1,28 +1,38 @@
-# Infoblox-Workbook-V2
+# ABAPAuditLog_CL
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Content Index](../content/content-index.md)
+↑ [Back to Tables Index](../tables-index.md)
 
 ---
 
 | Attribute | Value |
 |:----------|:------|
-| **Type** | Workbook |
-| **Solution** | [Infoblox NIOS](../solutions/infoblox-nios.md) |
-| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox%20NIOS/Workbooks/Infoblox-Workbook-V2.json) |
+| **Ingestion API Supported** | ✓ Yes |
 
-## Tables Used
+## Additional Information
 
-This content item queries data from the following tables:
+📖 **Related Documentation:** [SAP log and table reference](https://learn.microsoft.com/azure/sentinel/sap/sap-solution-log-reference) - SAP security audit log collected by the Microsoft Sentinel data connector
 
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage startswith "DHCPACK"` | ✓ | ✓ | ✓ |
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [SAP](../solutions/sap.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) |  |
+
+---
 
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
 
-↑ [Back to Workbooks](workbooks.md) · [Back to Infoblox NIOS](../solutions/infoblox-nios.md)
+↑ [Back to Tables Index](../tables-index.md)
 

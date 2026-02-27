@@ -58,11 +58,23 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 | UserType | string | The type of user that performed the operation. See the UserType table in Office 365 management activity api schema documentation for details on the types of users. |
 | UserUpn | string | The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged. |
 
+## Additional Information
+
+📖 **Related Documentation:** [Microsoft Dataverse activity logging](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing) - Enable and configure Dataverse auditing
+
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Dataverse](../connectors/microsoftdataverse.md) |  |
 
 ---
 

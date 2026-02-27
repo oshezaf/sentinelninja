@@ -50,11 +50,23 @@ Reference for PowerAutomateActivity table in Azure Monitor Logs.
 | UserUpn | string | Unique ID of the user. Always equivalent to UserKey. |
 | Workload | string | The Office 365 service where the activity occurred. |
 
+## Additional Information
+
+📖 **Related Documentation:** [Power Automate activity logs](https://learn.microsoft.com/azure/sentinel/business-applications/deploy-power-platform-solution#verify-log-ingestion-to-microsoft-sentinel) - Verify Power Automate log ingestion to Microsoft Sentinel
+
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Microsoft Power Automate](../connectors/microsoftpowerautomate.md) |  |
 
 ---
 

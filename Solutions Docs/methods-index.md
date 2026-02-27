@@ -22,14 +22,30 @@ Data connectors use different collection methods to ingest data into Microsoft S
 | [CCF (Legacy)](methods/ccf-legacy.md) | **16** | 14 | 1 | 1 |
 | [REST API](methods/rest-api.md) | **15** | 14 | 0 | 1 |
 | [CCF Push](methods/ccf-push.md) | **11** | 11 | 0 | 0 |
-| [Unknown](methods/unknown.md) | **3** | 3 | 0 | 0 |
-| **Total** | **536** | **350** | **143** | **43** |
+| [Unknown](methods/unknown.md) | **7** | 6 | 0 | 1 |
+| **Total** | **540** | **353** | **143** | **44** |
 
 ---
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+
+---
+
+## Ingestion API by Collection Method
+
+API-based connectors (CCF, CCF Push, CCF Legacy, Azure Function, REST API, and Custom Log) use one of two APIs to send data to the Log Analytics workspace. This table shows the distribution of ingestion APIs across collection methods.
+
+| Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Both](methods/both.md) | **Total** |
+|:-----------------|------:|------:|------:|------:|
+| [Azure Function](methods/azure-function.md) | 28 | 89 | 11 | **128** |
+| [CCF](methods/ccf.md) | 106 | - | - | **106** |
+| [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 42 | - | **42** |
+| [CCF (Legacy)](methods/ccf-legacy.md) | 16 | - | - | **16** |
+| [REST API](methods/rest-api.md) | - | 13 | - | **13** |
+| [CCF Push](methods/ccf-push.md) | 11 | - | - | **11** |
+| **Total** | **161** | **144** | **11** | **316** |
 
 ---
 
