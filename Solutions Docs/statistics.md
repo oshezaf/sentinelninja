@@ -169,22 +169,20 @@ API-based connectors use one of two APIs to send data to the workspace:
 
 | Ingestion API | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| [Log Ingestion API](methods/log-ingestion-api.md) | **161** | 133 | 1 | 27 |
+| [Log Ingestion API](methods/log-ingestion-api.md) | **46** | 26 | 0 | 20 |
 | [HTTP Data Collector API](methods/http-data-collector-api.md) | **144** | 116 | 18 | 10 |
-| [Both](methods/both.md) | **11** | 11 | 0 | 0 |
-| **Total** | **316** | **260** | **19** | **37** |
+| [Undetermined](methods/undetermined.md) | **4** | 4 | 0 | 0 |
+| **Total** | **194** | **146** | **18** | **30** |
 
 **By Collection Method:**
 
-| Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Both](methods/both.md) | **Total** |
+| Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Undetermined](methods/undetermined.md) | **Total** |
 |:-----------------|------:|------:|------:|------:|
-| [Azure Function](methods/azure-function.md) | 28 | 89 | 11 | **128** |
-| [CCF](methods/ccf.md) | 106 | - | - | **106** |
+| [Azure Function](methods/azure-function.md) | 35 | 89 | 4 | **128** |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 42 | - | **42** |
-| [CCF (Legacy)](methods/ccf-legacy.md) | 16 | - | - | **16** |
 | [REST API](methods/rest-api.md) | - | 13 | - | **13** |
 | [CCF Push](methods/ccf-push.md) | 11 | - | - | **11** |
-| **Total** | **161** | **144** | **11** | **316** |
+| **Total** | **46** | **144** | **4** | **194** |
 
 ## Tables
 
