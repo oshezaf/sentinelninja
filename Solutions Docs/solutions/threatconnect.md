@@ -39,7 +39,7 @@ This solution uses the [`_Im_NetworkSession`](../asim/imnetworksession.md) [ASIM
 |:--------|:--------------------|
 | [AWS VPC](../asim/asim-products-index.md#aws-vpc) | [AWS VPC Flow Logs](aws-vpc-flow-logs.md) |
 | [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) | [Syslog](syslog.md) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | - |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | [Azure Firewall](azure-firewall.md) |
 | [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) | - |
 | [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) | - |
 | [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
@@ -75,6 +75,7 @@ This solution uses the [`_Im_NetworkSession`](../asim/imnetworksession.md) [ASIM
 
 - [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) *(dependency on [Vectra AI Stream](vectra-ai-stream.md))*
 - [Amazon Web Services S3 VPC Flow Logs](../connectors/awss3vpcflowlogsparquetdefinition.md) *(dependency on [AWS VPC Flow Logs](aws-vpc-flow-logs.md))*
+- [Azure Firewall](../connectors/azurefirewall.md) *(dependency on [Azure Firewall](azure-firewall.md))*
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) *(dependency on [CiscoASA](ciscoasa.md))*

@@ -227,8 +227,8 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
 | Connector | 830 | 830 |
-| Content | 220 | 758 |
-| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 617 | 781 |
+| Content | 219 | 757 |
+| [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 618 | 781 |
 | [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 26 | 61 |
 | [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 12 | 478 |
 | [Azure Monitor Tables Feature Support](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support) | 78 | 702 |
@@ -341,7 +341,7 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Metric | Total | Explicit (required) | ASIM (optional) |
 |:-------|------:|--------------------:|----------------:|
-| Dependency records | **816** | 239 | 577 |
+| Dependency records | **831** | 239 | 592 |
 | Solutions with dependencies | **122** | 109 | 25 |
 | Unique dependency targets | **55** | 42 | 29 |
 
@@ -352,7 +352,7 @@ Tables with schema information, by schema source. A single table may have schema
 | AuditEvent | 1 | 15 |
 | Dns | 7 | 13 |
 | FileEvent | 7 | 7 |
-| NetworkSession | 15 | 17 |
+| NetworkSession | 15 | 18 |
 | ProcessEvent | 5 | 7 |
 | RegistryEvent | 3 | 8 |
 | WebSession | 12 | 9 |
@@ -374,9 +374,9 @@ Tables with schema information, by schema source. A single table may have schema
 | [VMware Carbon Black Cloud](solutions/vmware-carbon-black-cloud.md) | 31 |
 | [CiscoMeraki](solutions/ciscomeraki.md) | 30 |
 | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) | 30 |
+| [Azure Firewall](solutions/azure-firewall.md) | 28 |
 | [Cisco Meraki Events via REST API](solutions/cisco-meraki-events-via-rest-api.md) | 28 |
 | [Corelight](solutions/corelight.md) | 25 |
-| [CiscoASA](solutions/ciscoasa.md) | 21 |
 
 ---
 

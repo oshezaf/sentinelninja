@@ -16,8 +16,8 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [AppGate SDP](#appgate-sdp) | 1 | 1 | 1 |
 | [AWS](#aws) | 1 | 1 | 1 |
 | [AWS VPC](#aws-vpc) | 1 | 1 | 1 |
-| [Azure Firewall](#azure-firewall) | 3 | 3 | 8 |
-| [Azure NSG flows](#azure-nsg-flows) | 1 | 1 | 2 |
+| [Azure Firewall](#azure-firewall) | 3 | 3 | 7 |
+| [Azure NSG flows](#azure-nsg-flows) | 1 | 1 | 1 |
 | [Azure NTANetAnalytics](#azure-ntanetanalytics) | 1 | 1 | 1 |
 | [Barracuda WAF](#barracuda-waf) | 7 | 4 | 2 |
 | [CheckPointFirewall](#checkpointfirewall) | 1 | 1 | 1 |
@@ -145,27 +145,27 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 **Schemas:** Dns, NetworkSession, WebSession
 
-**Tables:** [AZFWApplicationRule](../tables/azfwapplicationrule.md), [AZFWDnsQuery](../tables/azfwdnsquery.md), [AZFWIdpsSignature](../tables/azfwidpssignature.md), [AZFWNatRule](../tables/azfwnatrule.md), [AZFWNetworkRule](../tables/azfwnetworkrule.md), [AZFWThreatIntel](../tables/azfwthreatintel.md), [AzureDiagnostics](../tables/azurediagnostics.md), [Event](../tables/event.md)
+**Tables:** [AZFWApplicationRule](../tables/azfwapplicationrule.md), [AZFWDnsQuery](../tables/azfwdnsquery.md), [AZFWIdpsSignature](../tables/azfwidpssignature.md), [AZFWNatRule](../tables/azfwnatrule.md), [AZFWNetworkRule](../tables/azfwnetworkrule.md), [AZFWThreatIntel](../tables/azfwthreatintel.md), [AzureDiagnostics](../tables/azurediagnostics.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimDnsAzureFirewall](asimdnsazurefirewall.md)<br>vim: [vimDnsAzureFirewall](vimdnsazurefirewall.md) | Dns | [AZFWDnsQuery](../tables/azfwdnsquery.md), [AzureDiagnostics](../tables/azurediagnostics.md) | 0.4.0 |
-| ASim: [ASimNetworkSessionAzureFirewall](asimnetworksessionazurefirewall.md)<br>vim: [vimNetworkSessionAzureFirewall](vimnetworksessionazurefirewall.md) | NetworkSession | [AZFWIdpsSignature](../tables/azfwidpssignature.md), [AZFWNatRule](../tables/azfwnatrule.md), [AZFWNetworkRule](../tables/azfwnetworkrule.md), [AZFWThreatIntel](../tables/azfwthreatintel.md), [AzureDiagnostics](../tables/azurediagnostics.md), [Event](../tables/event.md) | 0.2.0 |
+| ASim: [ASimNetworkSessionAzureFirewall](asimnetworksessionazurefirewall.md)<br>vim: [vimNetworkSessionAzureFirewall](vimnetworksessionazurefirewall.md) | NetworkSession | [AZFWIdpsSignature](../tables/azfwidpssignature.md), [AZFWNatRule](../tables/azfwnatrule.md), [AZFWNetworkRule](../tables/azfwnetworkrule.md), [AZFWThreatIntel](../tables/azfwthreatintel.md), [AzureDiagnostics](../tables/azurediagnostics.md) | 0.2.0 |
 | ASim: [ASimWebSessionAzureFirewall](asimwebsessionazurefirewall.md)<br>vim: [vimWebSessionAzureFirewall](vimwebsessionazurefirewall.md) | WebSession | [AZFWApplicationRule](../tables/azfwapplicationrule.md) | 0.1.0 |
 
 ## Azure NSG flows
 
 **Schemas:** NetworkSession
 
-**Tables:** [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md), [Event](../tables/event.md)
+**Tables:** [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md)<br>vim: [vimNetworkSessionAzureNSG](vimnetworksessionazurensg.md) | NetworkSession | [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md), [Event](../tables/event.md) | 0.1.1 |
+| ASim: [ASimNetworkSessionAzureNSG](asimnetworksessionazurensg.md)<br>vim: [vimNetworkSessionAzureNSG](vimnetworksessionazurensg.md) | NetworkSession | [AzureNetworkAnalytics_CL](../tables/azurenetworkanalytics-cl.md) | 0.1.1 |
 
 ## Azure NTANetAnalytics
 

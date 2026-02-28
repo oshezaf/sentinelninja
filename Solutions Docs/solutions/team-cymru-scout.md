@@ -39,6 +39,7 @@ This solution uses [ASIM (Advanced Security Information Model)](https://learn.mi
 |:--------|:--------------------|
 | [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) | - |
 | - | [AWS VPC Flow Logs](aws-vpc-flow-logs.md) |
+| - | [Azure Firewall](azure-firewall.md) |
 | - | [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) |
 | - | [CiscoASA](ciscoasa.md) |
 | - | [CiscoMeraki](ciscomeraki.md) |
@@ -66,6 +67,7 @@ Connectors from dependency solutions:
 
 - [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) � *(dependency on [Vectra AI Stream](vectra-ai-stream.md))*
 - [Amazon Web Services S3 VPC Flow Logs](../connectors/awss3vpcflowlogsparquetdefinition.md) *(dependency on [AWS VPC Flow Logs](aws-vpc-flow-logs.md))*
+- [Azure Firewall](../connectors/azurefirewall.md) � *(dependency on [Azure Firewall](azure-firewall.md))*
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) *(dependency on [CiscoASA](ciscoasa.md))*
@@ -110,7 +112,7 @@ Connectors from dependency solutions:
 
 ## Tables Used
 
-This solution uses **263 table(s)**:
+This solution uses **266 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -135,17 +137,20 @@ This solution uses **263 table(s)**:
 | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) (dependency) | Workbooks |
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | - | Workbooks |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | [Amazon Web Services S3 VPC Flow Logs](../connectors/awss3vpcflowlogsparquetdefinition.md) (dependency) | Workbooks |
-| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | - | Workbooks |
-| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | - | Workbooks |
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | - | Workbooks |
-| [`AZFWNatRule`](../tables/azfwnatrule.md) | - | Workbooks |
-| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | - | Workbooks |
-| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | - | Workbooks |
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | Workbooks |
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | Workbooks |
+| [`AZFWFatFlow`](../tables/azfwfatflow.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | Workbooks |
+| [`AZFWInternalFqdnResolutionFailure`](../tables/azfwinternalfqdnresolutionfailure.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | Workbooks |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | Workbooks |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | Workbooks |
 | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | Workbooks |
 | [`AsimParsersData`](../tables/asimparsersdata.md) | - | Workbooks |
 | [`Audits_Data_CL`](../tables/audits-data-cl.md) | - | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | - | Workbooks |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | - | Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | Workbooks |
 | [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) � | - | Workbooks |
 | [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) � | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) (dependency) | Workbooks |
 | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) � | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) (dependency) | Workbooks |
@@ -341,7 +346,7 @@ This solution uses **263 table(s)**:
 | [`Summary_Details_Top_Fingerprints_Data_CL`](../tables/summary-details-top-fingerprints-data-cl.md) � | - | Workbooks |
 | [`Summary_Details_Top_Open_Ports_Data_CL`](../tables/summary-details-top-open-ports-data-cl.md) � | - | Workbooks |
 | [`Summary_Details_Top_Pdns_Data_CL`](../tables/summary-details-top-pdns-data-cl.md) � | - | Workbooks |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | Workbooks |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Workbooks |
 | [`Tomcat_CL`](../tables/tomcat-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`Top_Asns_By_IP_Data_CL`](../tables/top-asns-by-ip-data-cl.md) � | - | Workbooks |

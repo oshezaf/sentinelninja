@@ -6,7 +6,7 @@ Tables in Microsoft Sentinel store the security data ingested by data connectors
 
 ---
 
-**2024 tables** documented (830 ingested by connectors, 220 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
+**2024 tables** documented (830 ingested by connectors, 219 referenced by content only). See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 The **Discovered Via** column shows how each table was identified. When a table appears in multiple sources, the highest-priority source is shown:
 
@@ -188,7 +188,7 @@ Browse tables alphabetically:
 | [AKSAuditAdmin](tables/aksauditadmin.md) 📖 | Docs | - | - | - |
 | [AKSControlPlane](tables/akscontrolplane.md) 📖 | Docs | - | - | - |
 | [ALBHealthEvent](tables/albhealthevent.md) 📖 | Docs | - | - | - |
-| [Alert](tables/alert.md) 📖 | Content | [2](tables/alert.md) | - | Workbooks |
+| [Alert](tables/alert.md) 📖 | Docs | - | - | - |
 | [AlertEvidence](tables/alertevidence.md) 📖 | Connector | [6](tables/alertevidence.md) | [1](tables/alertevidence.md) | Analytics, Hunting, Workbooks |
 | [AlertHistory](tables/alerthistory.md) 📖 | Docs | - | - | - |
 | [AlertInfo](tables/alertinfo.md) 📖 | Content | [1](tables/alertinfo.md) | - | Analytics, Hunting |

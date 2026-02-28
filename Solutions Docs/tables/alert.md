@@ -97,31 +97,7 @@ Reference for Alert table in Azure Monitor Logs.
 | ValueFlags | int |  |
 | ValueFlagsDescription | string |  |
 
-## Solutions (2)
-
-This table is used by the following solutions:
-
-- [Corelight](../solutions/corelight.md)
-- [SOC Handbook](../solutions/soc-handbook.md)
-
 ---
-
-## Content Items Using This Table (3)
-
-### Workbooks (3)
-
-**In solution [Corelight](../solutions/corelight.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [Corelight](../content/corelight-corelight-90dad195.md) |  |
-| [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
-
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
-
-| Content Item | Selection Criteria |
-|:-------------|:-------------------|
-| [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) |  |
 
 ---
 

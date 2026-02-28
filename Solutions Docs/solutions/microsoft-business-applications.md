@@ -143,7 +143,7 @@ This solution uses **59 table(s)**:
 | [`SecurityEvent`](../tables/securityevent.md) | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) (dependency), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) (dependency) | - |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency), [Forescout](../connectors/forescout.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Software Defined WAN](../connectors/ciscosdwan.md) (dependency), [Forescout](../connectors/forescout.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 | [`Tomcat_CL`](../tables/tomcat-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |

@@ -50,7 +50,7 @@ This solution uses the [`_ASim_ProcessEvent`](../asim/asimprocessevent.md) and [
 |:--------|:--------------------|
 | [AWS VPC](../asim/asim-products-index.md#aws-vpc) | [AWS VPC Flow Logs](aws-vpc-flow-logs.md) |
 | [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) | [Syslog](syslog.md) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | - |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | [Azure Firewall](azure-firewall.md) |
 | [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) | - |
 | [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) | - |
 | [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
@@ -95,6 +95,7 @@ Connectors from dependency solutions:
 
 - [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) � *(dependency on [Vectra AI Stream](vectra-ai-stream.md))*
 - [Amazon Web Services S3 VPC Flow Logs](../connectors/awss3vpcflowlogsparquetdefinition.md) *(dependency on [AWS VPC Flow Logs](aws-vpc-flow-logs.md))*
+- [Azure Firewall](../connectors/azurefirewall.md) � *(dependency on [Azure Firewall](azure-firewall.md))*
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) *(dependency on [CiscoASA](ciscoasa.md))*
@@ -140,7 +141,7 @@ Connectors from dependency solutions:
 
 ## Tables Used
 
-This solution uses **226 table(s)**:
+This solution uses **236 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -160,7 +161,17 @@ This solution uses **226 table(s)**:
 | [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) � | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) (dependency) | - |
 | [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) (dependency) | - |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) | [Amazon Web Services S3 VPC Flow Logs](../connectors/awss3vpcflowlogsparquetdefinition.md) (dependency) | - |
+| [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWDnsQuery`](../tables/azfwdnsquery.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWFatFlow`](../tables/azfwfatflow.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWInternalFqdnResolutionFailure`](../tables/azfwinternalfqdnresolutionfailure.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWNatRule`](../tables/azfwnatrule.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
+| [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
 | [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | [Azure Firewall](../connectors/azurefirewall.md) (dependency) | - |
 | [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) � | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) (dependency) | - |
 | [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) � | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) (dependency) | - |
 | [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) � | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) (dependency) | - |
@@ -339,7 +350,7 @@ This solution uses **226 table(s)**:
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) � | [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
+| [`Syslog`](../tables/syslog.md) | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) (dependency), [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) (dependency), [Syslog via AMA](../connectors/syslogama.md) (dependency), [Syslog via Legacy Agent](../connectors/syslog.md) (dependency), [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) (dependency) | - |
 | [`Tomcat_CL`](../tables/tomcat-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) � | [Trend Vision One](../connectors/trendmicroxdr.md) (dependency) | - |
 | [`TrendMicro_XDR_RCA_Result_CL`](../tables/trendmicro-xdr-rca-result-cl.md) � | [Trend Vision One](../connectors/trendmicroxdr.md) (dependency) | - |

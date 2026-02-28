@@ -49,7 +49,7 @@ This solution depends on **17 other solution(s)**:
 | Solution | Details |
 |:---------|:--------|
 | [Amazon Web Services](amazon-web-services.md) | - |
-| [Azure Firewall](azure-firewall.md) | - |
+| [Azure Firewall](azure-firewall.md) | Also provides ASIM schemas: NetworkSession |
 | [Azure Network Security Groups](azure-network-security-groups.md) | - |
 | [Check Point](check-point.md) | - |
 | [CiscoASA](ciscoasa.md) | Also provides ASIM schemas: NetworkSession |
@@ -76,7 +76,7 @@ This solution uses the [`_Im_NetworkSession`](../asim/imnetworksession.md) [ASIM
 |:--------|:--------------------|
 | [AWS VPC](../asim/asim-products-index.md#aws-vpc) | [AWS VPC Flow Logs](aws-vpc-flow-logs.md) |
 | [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) | [Syslog](syslog.md) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | - |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | [Azure Firewall](azure-firewall.md) |
 | [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) | - |
 | [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) | - |
 | [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |

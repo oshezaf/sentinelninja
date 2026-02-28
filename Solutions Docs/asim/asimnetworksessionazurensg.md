@@ -32,7 +32,6 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) � | ? | ✓ | ? |
-| [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
 
 ## Parameters
 

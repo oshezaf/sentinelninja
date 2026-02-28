@@ -37,12 +37,11 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Tables Used
 
-This solution queries **27 table(s)** from its content items:
+This solution queries **26 table(s)** from its content items:
 
 | Table | Used By Content |
 |-------|----------------|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | Workbooks |
-| [`Alert`](../tables/alert.md) | Workbooks |
 | [`AuditLogs`](../tables/auditlogs.md) | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | Workbooks |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) | Workbooks |
@@ -99,7 +98,7 @@ This solution includes **13 content item(s)**:
 | [AttackSurfaceReduction](../content/soc-handbook-attacksurfacereduction-52743d4b.md) | [`DeviceEvents`](../tables/deviceevents.md) |
 | [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md) | [`AzureDiagnostics`](../tables/azurediagnostics.md)<br>[`Usage`](../tables/usage.md) |
 | [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts-8f5f1c6c.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
-| [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) | [`Alert`](../tables/alert.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) | [`AWSCloudTrail`](../tables/awscloudtrail.md)<br>[`AuditLogs`](../tables/auditlogs.md)<br>[`AzureActivity`](../tables/azureactivity.md)<br>[`CommonSecurityLog`](../tables/commonsecuritylog.md)<br>[`DeviceLogonEvents`](../tables/devicelogonevents.md)<br>[`DnsEvents`](../tables/dnsevents.md)<br>[`HuntingBookmark`](../tables/huntingbookmark.md)<br>[`OfficeActivity`](../tables/officeactivity.md)<br>[`Operation`](../tables/operation.md)<br>[`ProtectionStatus`](../tables/protectionstatus.md)<br>[`SecurityBaseline`](../tables/securitybaseline.md)<br>[`SecurityBaselineSummary`](../tables/securitybaselinesummary.md)<br>[`SecurityEvent`](../tables/securityevent.md)<br>[`SigninLogs`](../tables/signinlogs.md)<br>[`Syslog`](../tables/syslog.md)<br>[`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>[`Update`](../tables/update.md)<br>[`UpdateSummary`](../tables/updatesummary.md)<br>[`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`BehaviorAnalytics`](../tables/behavioranalytics.md)<br>[`IdentityInfo`](../tables/identityinfo.md)<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
 | [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md) | [`Usage`](../tables/usage.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) |

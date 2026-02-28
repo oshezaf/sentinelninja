@@ -36,13 +36,22 @@ This parser reads from the following tables:
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) � | `Category == "AzureFirewallNetworkRule"` | ✗ | ✗ | ✗ |
-| [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
 
 ## Parameters
 
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
+
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [AzureFirewall](../connectors/azurefirewall.md) | [Azure Firewall](../solutions/azure-firewall.md) |
+
+**Solutions:** [Azure Firewall](../solutions/azure-firewall.md)
 
 ## References
 

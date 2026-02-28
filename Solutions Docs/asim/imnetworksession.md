@@ -31,7 +31,7 @@ This union parser includes parsers for the following products:
 |:--------|:--------------|:----------|
 | AWS VPC | [_Im_NetworkSession_AWSVPC](asimnetworksessionawsvpc.md) | [AWS VPC Flow Logs](../solutions/aws-vpc-flow-logs.md) |
 | AppGate SDP | [_Im_NetworkSession_AppGateSDP](asimnetworksessionappgatesdp.md) | [Syslog](../solutions/syslog.md) |
-| Azure Firewall | [_Im_NetworkSession_AzureFirewall](asimnetworksessionazurefirewall.md) |  |
+| Azure Firewall | [_Im_NetworkSession_AzureFirewall](asimnetworksessionazurefirewall.md) | [Azure Firewall](../solutions/azure-firewall.md) |
 | Azure NSG flows | [_Im_NetworkSession_AzureNSG](asimnetworksessionazurensg.md) |  |
 | Barracuda WAF | [_Im_NetworkSession_BarracudaCEF](asimnetworksessionbarracudacef.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Barracuda WAF | [_Im_NetworkSession_BarracudaWAF](asimnetworksessionbarracudawaf.md) |  |
