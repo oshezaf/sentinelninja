@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) 🔶 | ? | ✓ | ? |
+| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) � | ? | ✓ | ? |
 
 ---
 

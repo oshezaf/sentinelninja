@@ -8,16 +8,6 @@
 
 ---
 
-The [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender) solution for Microsoft Sentinel enables you to ingest security alerts from the Defender for Office 365 platform, providing visibility into threats within email messages, links (URLs) and collaboration tools.
-
-**Underlying Microsoft Technologies used:**
-
-This solution  is dependent on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Codeless Connector Platform/Native Microsoft Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,20 @@ a. [Codeless Connector Platform/Native Microsoft Sentinel Polling](https://docs.
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-17 |
 | **Solution Folder** | [Microsoft Defender for Office 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365) |
+
+The [Microsoft Defender for Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender) solution for Microsoft Sentinel enables you to ingest security alerts from the Defender for Office 365 platform, providing visibility into threats within email messages, links (URLs) and collaboration tools.
+
+**Underlying Microsoft Technologies used:**
+
+This solution  is dependent on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Codeless Connector Platform/Native Microsoft Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

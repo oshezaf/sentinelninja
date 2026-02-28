@@ -19,7 +19,7 @@
 | **Used in Solutions** | [PostgreSQL](../solutions/postgresql.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [Connector_PostgreSQL.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PostgreSQL/Data%20Connectors/Connector_PostgreSQL.json) |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 PostgreSQL data connector provides the capability to ingest [PostgreSQL](https://www.postgresql.org/) events into Microsoft Sentinel. Refer to [PostgreSQL documentation](https://www.postgresql.org/docs/current/index.html) for more information.
 
@@ -33,7 +33,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) � | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

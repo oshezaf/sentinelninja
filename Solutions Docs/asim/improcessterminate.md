@@ -27,15 +27,15 @@ This ASIM parser supports normalizing process terminate event logs from all supp
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) |
-|  | [_Im_ProcessTerminate_LinuxSysmon](im-processterminate-linuxsysmon.md) |
-|  | [_Im_ProcessTerminate_MD4IoT](im-processterminate-md4iot.md) |
-|  | [_Im_ProcessTerminate_MicrosoftSecurityEvents](im-processterminate-microsoftsecurityevents.md) |
-|  | [_Im_ProcessTerminate_MicrosoftSysmon](im-processterminate-microsoftsysmon.md) |
-|  | [_Im_ProcessTerminate_MicrosoftWindowsEvents](im-processterminate-microsoftwindowsevents.md) |
-|  | [_Im_ProcessTerminate_VMwareCarbonBlackCloud](im-processterminate-vmwarecarbonblackcloud.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+|  | [_Im_ProcessTerminate_LinuxSysmon](im-processterminate-linuxsysmon.md) |  |
+|  | [_Im_ProcessTerminate_MD4IoT](im-processterminate-md4iot.md) |  |
+|  | [_Im_ProcessTerminate_MicrosoftSecurityEvents](im-processterminate-microsoftsecurityevents.md) |  |
+|  | [_Im_ProcessTerminate_MicrosoftSysmon](im-processterminate-microsoftsysmon.md) |  |
+|  | [_Im_ProcessTerminate_MicrosoftWindowsEvents](im-processterminate-microsoftwindowsevents.md) |  |
+|  | [_Im_ProcessTerminate_VMwareCarbonBlackCloud](im-processterminate-vmwarecarbonblackcloud.md) |  |
 
 ## Parameters
 

@@ -8,10 +8,6 @@
 
 ---
 
-The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Microsoft Sentinel provides a simple way to ingest Indicators of Compromise from your Feedly streams into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Feedly Inc |
@@ -23,13 +19,15 @@ The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Micro
 | **First Published** | 2023-08-01 |
 | **Solution Folder** | [Feedly](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly) |
 
+The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Microsoft Sentinel provides a simple way to ingest Indicators of Compromise from your Feedly streams into Microsoft Sentinel.
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Feedly](../connectors/feedly.md) 🔶
+- [Feedly](../connectors/feedly.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +35,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) 🔶 | [Feedly](../connectors/feedly.md) | - |
+| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) � | [Feedly](../connectors/feedly.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                              |

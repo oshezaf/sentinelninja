@@ -8,16 +8,6 @@
 
 ---
 
-The Cisco Secure Endpoint (formerly AMP for Endpoints) data connector provides the capability to ingest Cisco Secure Endpoint [audit logs](https://developer.cisco.com/docs/secure-endpoint/auditlog/) and [events](https://developer.cisco.com/docs/secure-endpoint/v1-api-reference-event/) into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
- • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -30,16 +20,30 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Last Updated** | 2022-02-02 |
 | **Solution Folder** | [Cisco Secure Endpoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint) |
 
+The Cisco Secure Endpoint (formerly AMP for Endpoints) data connector provides the capability to ingest Cisco Secure Endpoint [audit logs](https://developer.cisco.com/docs/secure-endpoint/auditlog/) and [events](https://developer.cisco.com/docs/secure-endpoint/v1-api-reference-event/) into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Cisco Secure Endpoint (AMP)](../connectors/ciscosecureendpoint.md) ⚠️ 🔶
+- [[DEPRECATED] Cisco Secure Endpoint (AMP)](../connectors/ciscosecureendpoint.md) ⚠️ �
 - [Cisco Secure Endpoint (via Codeless Connector Framework)](../connectors/ciscosecureendpointlogsccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +53,10 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`CiscoSecureEndpointAuditLogsV2_CL`](../tables/ciscosecureendpointauditlogsv2-cl.md) | [Cisco Secure Endpoint (via Codeless Connector Framework)](../connectors/ciscosecureendpointlogsccpdefinition.md) | Analytics, Hunting, Workbooks |
 | [`CiscoSecureEndpointEventsV2_CL`](../tables/ciscosecureendpointeventsv2-cl.md) | [Cisco Secure Endpoint (via Codeless Connector Framework)](../connectors/ciscosecureendpointlogsccpdefinition.md) | Analytics, Hunting, Workbooks |
-| [`CiscoSecureEndpoint_CL`](../tables/ciscosecureendpoint-cl.md) 🔶 | [[DEPRECATED] Cisco Secure Endpoint (AMP)](../connectors/ciscosecureendpoint.md) | Analytics, Hunting, Workbooks |
+| [`CiscoSecureEndpoint_CL`](../tables/ciscosecureendpoint-cl.md) � | [[DEPRECATED] Cisco Secure Endpoint (AMP)](../connectors/ciscosecureendpoint.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **23 content item(s)**:

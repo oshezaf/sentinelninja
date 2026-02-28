@@ -8,16 +8,6 @@
 
 ---
 
-The [Fortinet FortiWeb Cloud WAF-as-a-Service connector](https://www.fortinet.com/products/web-application-firewall/fortiweb) solution for Microsoft Sentinel provides an automated approach for SecOps analysts to remediate attacks at application level by blocking suspicious IP and URL and also empowers to gather threat intelligence data for malicious IP activity. By leveraging the FortiWeb API, the connector can automate these security operations, tasks using Microsoft Sentinel Playbooks which can dramatically reduce the window that attackers can take advantage of.
-
- For questions about [FortiWeb Cloud](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortinet_waas?tab=Overview), please contact Fortinet at [azuresales@fortinet.com](mailto:azuresales@fortinet.com).
-
-1. **Fortinet FortiWeb Cloud WAF via AMA** - This data connector helps in ingesting Fortinet FortiWeb Cloud WAF logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). **Microsoft recommends using this Data Connector**.
-
-**NOTE:** Microsoft recommends installation of Fortinet FortiWeb Cloud WAF via AMA Connector.Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.**. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,20 @@ The [Fortinet FortiWeb Cloud WAF-as-a-Service connector](https://www.fortinet.co
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel) |
+
+The [Fortinet FortiWeb Cloud WAF-as-a-Service connector](https://www.fortinet.com/products/web-application-firewall/fortiweb) solution for Microsoft Sentinel provides an automated approach for SecOps analysts to remediate attacks at application level by blocking suspicious IP and URL and also empowers to gather threat intelligence data for malicious IP activity. By leveraging the FortiWeb API, the connector can automate these security operations, tasks using Microsoft Sentinel Playbooks which can dramatically reduce the window that attackers can take advantage of.
+
+ For questions about [FortiWeb Cloud](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortinet_waas?tab=Overview), please contact Fortinet at [azuresales@fortinet.com](mailto:azuresales@fortinet.com).
+
+1. **Fortinet FortiWeb Cloud WAF via AMA** - This data connector helps in ingesting Fortinet FortiWeb Cloud WAF logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). **Microsoft recommends using this Data Connector**.
+
+**NOTE:** Microsoft recommends installation of Fortinet FortiWeb Cloud WAF via AMA Connector.Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.**. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

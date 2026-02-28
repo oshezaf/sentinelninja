@@ -8,14 +8,6 @@
 
 ---
 
-The [Symantec Endpoint Protection (SEP)](https://www.broadcom.com/products/cyber-security/endpoint/end-user/enterprise) solution allows you to easily connect your SEP logs with Microsoft Sentinel.
-
-This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. 
-
- **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -26,25 +18,41 @@ This solution is dependent on the Syslog solution containing the Syslog via AMA 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-01 |
 | **Solution Folder** | [Symantec Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Endpoint%20Protection) |
-| **Dependencies** | [Syslog](syslog.md) |
+| **Pre-requisites** | [Syslog](syslog.md) |
 
-## Additional Information
+The [Symantec Endpoint Protection (SEP)](https://www.broadcom.com/products/cyber-security/endpoint/end-user/enterprise) solution allows you to easily connect your SEP logs with Microsoft Sentinel.
+
+This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. 
+
+ **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
+**Additional Information**
 
 📖 **Vendor Documentation:** [Symantec SEPM Log Types](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Monitoring-Reporting-and-Enforcing-Compliance/viewing-logs-v7522439-d37e464/about-the-types-of-logs-v8156418-d37e6.html) - Log types including Risk, Scan, System, Audit, and Application Control
 
-## Dependencies
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Syslog](syslog.md) | explicit | - |
+| Solution |
+|:---------|
+| [Syslog](syslog.md) |
 
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
 - [[Deprecated] Symantec Endpoint Protection](../connectors/symantecendpointprotection.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 

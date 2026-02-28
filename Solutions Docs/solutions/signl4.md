@@ -8,18 +8,6 @@
 
 ---
 
-The SIGNL4 Mobile Alerting solution provides the capability to read security alerts into Microsoft Sentinel using the Microsoft Graph Security API. It adds real-time mobile alerting to your services, systems, and processes in no time. SIGNL4 notifies through persistent mobile push, SMS text and voice calls with acknowledgement, tracking and escalation. Refer to [SIGNL4 documentation](https://www.signl4.com/) for more information. 
-
- ** Underlying Microsoft Technologies used: ** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
- a. [Azure Monitor HTTP Data Collector](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
-
- b. [API Microsoft Security Graph API](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-1.0)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Derdack |
@@ -32,13 +20,29 @@ The SIGNL4 Mobile Alerting solution provides the capability to read security ale
 | **Last Updated** | 2021-12-10 |
 | **Solution Folder** | [SIGNL4](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4) |
 
+The SIGNL4 Mobile Alerting solution provides the capability to read security alerts into Microsoft Sentinel using the Microsoft Graph Security API. It adds real-time mobile alerting to your services, systems, and processes in no time. SIGNL4 notifies through persistent mobile push, SMS text and voice calls with acknowledgement, tracking and escalation. Refer to [SIGNL4 documentation](https://www.signl4.com/) for more information. 
+
+ ** Underlying Microsoft Technologies used: ** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor HTTP Data Collector](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+
+ b. [API Microsoft Security Graph API](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶
+- [Derdack SIGNL4](../connectors/derdacksignl4.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,7 +50,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SIGNL4_CL`](../tables/signl4-cl.md) 🔶 | [Derdack SIGNL4](../connectors/derdacksignl4.md) | - |
+| [`SIGNL4_CL`](../tables/signl4-cl.md) � | [Derdack SIGNL4](../connectors/derdacksignl4.md) | - |
 
 ### Internal Tables
 
@@ -57,7 +61,7 @@ The following **1 table(s)** are used internally by this solution's content item
 | [`SecurityIncident`](../tables/securityincident.md) | [Derdack SIGNL4](../connectors/derdacksignl4.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

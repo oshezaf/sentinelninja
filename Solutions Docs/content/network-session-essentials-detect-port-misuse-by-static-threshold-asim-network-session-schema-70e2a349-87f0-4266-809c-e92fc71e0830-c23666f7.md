@@ -30,7 +30,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) 🔶 | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) � | ? | ✓ | ? |
 | [`NetworkSummary_Protocol_CL`](../tables/networksummary-protocol-cl.md) | ? | ✓ | ? |
 
 ---

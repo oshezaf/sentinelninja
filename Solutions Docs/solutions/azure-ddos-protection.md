@@ -8,18 +8,6 @@
 
 ---
 
-The [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Solution for Microsoft Sentinel enables you to easily ingest Azure DDoS Protection Standard logs to Microsoft Sentinel. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
-
- To enable automated response to threats detected, consider deploying the [Remediation-IP Playbook](https://github.com/Azure/Azure-Sentinel/tree/master/MasterPlaybooks/Remediation-IP). 
-
-**Underlying Microsoft Technologies used:**
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
- a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings) 
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -31,13 +19,29 @@ The [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddo
 | **First Published** | 2022-05-13 |
 | **Solution Folder** | [Azure DDoS Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20DDoS%20Protection) |
 
+The [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Solution for Microsoft Sentinel enables you to easily ingest Azure DDoS Protection Standard logs to Microsoft Sentinel. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
+
+ To enable automated response to threats detected, consider deploying the [Remediation-IP Playbook](https://github.com/Azure/Azure-Sentinel/tree/master/MasterPlaybooks/Remediation-IP). 
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings) 
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Azure DDoS Protection](../connectors/ddos.md) 🔶
+- [Azure DDoS Protection](../connectors/ddos.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,10 +49,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure DDoS Protection](../connectors/ddos.md) | Analytics, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | [Azure DDoS Protection](../connectors/ddos.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:

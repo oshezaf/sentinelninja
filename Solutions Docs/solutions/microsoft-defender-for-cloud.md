@@ -8,16 +8,6 @@
 
 ---
 
-The [Microsoft Defender for Cloud](https://docs.microsoft.com/azure/defender-for-cloud/) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Defender for Cloud on assessing your hybrid cloud workload's security posture. 
-
-**Underlying Microsoft Technologies used:**
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,9 +19,23 @@ The [Microsoft Defender for Cloud](https://docs.microsoft.com/azure/defender-for
 | **First Published** | 2022-05-17 |
 | **Solution Folder** | [Microsoft Defender for Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud) |
 
-## Additional Information
+The [Microsoft Defender for Cloud](https://docs.microsoft.com/azure/defender-for-cloud/) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Defender for Cloud on assessing your hybrid cloud workload's security posture. 
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+**Additional Information**
 
 📖 **Setup Guide:** [Microsoft Defender for Cloud connector](https://learn.microsoft.com/azure/sentinel/connect-defender-for-cloud) - Connect Defender for Cloud alerts to Microsoft Sentinel
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

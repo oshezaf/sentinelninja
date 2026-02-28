@@ -8,10 +8,6 @@
 
 ---
 
-Amazon Web Services Route 53 Solution for Microsoft Sentinel provides data connector to ingest AWS Route 53 DNS logs into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,7 +19,9 @@ Amazon Web Services Route 53 Solution for Microsoft Sentinel provides data conne
 | **First Published** | 2025-03-21 |
 | **Solution Folder** | [Amazon Web Services Route 53](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20Route%2053) |
 
-## Additional Information
+Amazon Web Services Route 53 Solution for Microsoft Sentinel provides data connector to ingest AWS Route 53 DNS logs into Microsoft Sentinel.
+
+**Additional Information**
 
 📖 **Setup Guide:** [Connect Microsoft Sentinel to AWS](https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment) - Configure your AWS environment for Microsoft Sentinel integration
 

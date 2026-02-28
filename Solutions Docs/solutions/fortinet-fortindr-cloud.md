@@ -8,10 +8,6 @@
 
 ---
 
-The [Fortinet FortiNDR Cloud](https://docs.fortinet.com/product/fortindr-cloud) solution for Microsoft Sentinel provides the capability to ingest Fortinet FortiNDR Cloud events into Microsoft Sentinel. For questions about Fortinet FortiNDR Cloud, please contact Fortinet at [fnc-sentinel@fortinet.com](mailto:fnc-sentinel@fortinet.com).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Fortinet |
@@ -23,13 +19,21 @@ The [Fortinet FortiNDR Cloud](https://docs.fortinet.com/product/fortindr-cloud) 
 | **First Published** | 2024-01-15 |
 | **Solution Folder** | [Fortinet FortiNDR Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud) |
 
+The [Fortinet FortiNDR Cloud](https://docs.fortinet.com/product/fortindr-cloud) solution for Microsoft Sentinel provides the capability to ingest Fortinet FortiNDR Cloud events into Microsoft Sentinel. For questions about Fortinet FortiNDR Cloud, please contact Fortinet at [fnc-sentinel@fortinet.com](mailto:fnc-sentinel@fortinet.com).
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶
+- [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,12 +41,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) 🔶 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
-| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) 🔶 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
-| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) 🔶 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
+| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) � | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
+| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) � | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
+| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) � | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

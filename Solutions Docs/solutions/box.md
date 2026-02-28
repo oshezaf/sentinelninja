@@ -8,18 +8,6 @@
 
 ---
 
-The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterprise/) solution connector provides the capability to ingest [Box enterprise's events](https://developer.box.com/guides/events/#admin-events) into Microsoft Sentinel using the Box REST API 
- 
- **Underlying Microsoft Technologies used:** 
- 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
- 
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
- 
- b. [Azure Functions ](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -31,14 +19,30 @@ The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterpri
 | **First Published** | 2022-05-20 |
 | **Solution Folder** | [Box](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box) |
 
+The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterprise/) solution connector provides the capability to ingest [Box enterprise's events](https://developer.box.com/guides/events/#admin-events) into Microsoft Sentinel using the Box REST API 
+ 
+ **Underlying Microsoft Technologies used:** 
+ 
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+ 
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+ 
+ b. [Azure Functions ](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [Box](../connectors/boxdataconnector.md) 🔶
-- [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) 🔶
+- [Box](../connectors/boxdataconnector.md) �
+- [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,11 +50,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) 🔶 | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
-| [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) � | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) � | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

@@ -8,42 +8,6 @@
 
 ---
 
-Microsoft security research teams have detected a wide range of social engineering campaigns using weaponized legitimate open-source software by an actor tracked as ZINC.  ZINC employed traditional social engineering tactics by initially connecting with individuals on LinkedIn, followed by communication over WhatsApp, which acted as the means of delivery for their malicious payloads. ZINC was found weaponizing a wide range of open-source software including PuTTY, KiTTY, TightVNC, Sumatra PDF Reader etc. For more technical and in-depth information about the attack, please read the [Microsoft Security blog post](https://www.microsoft.com/security/blog/2022/09/29/zinc-weaponizing-open-source-software/).This solution provides content to detect and investigate signals related to the attack in Microsoft Sentinel.
-
-**Pre-requisites:**
-
-This is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution.
-
-  1.Windows Security Events
-
-  2.Microsoft Defender XDR
-
-  3.Windows Server DNS
-
-  4.F5 Advanced WAF
-
-  5.Cisco ASA
-
-  6.Palo Alto Networks
-
-  7.Common Event Format
-
-  8.Fortinet FortiGate
-
-  9.Check Point
-
-  10.Microsoft 365
-
-  11.Azure Firewall
-
-  12.Microsoft Windows Firewall
-
-  13.Windows Forwarded Events
-
-**Keywords:** Zinc, Open Source, ZetaNile , Putty, Kitty, TightVNC , EventHorizon, FoggyBrass, PhantomStar, threat actor, Adversary.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -54,27 +18,40 @@ This is a [domain solution](https://learn.microsoft.com/azure/sentinel/sentinel-
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-10-03 |
 | **Solution Folder** | [Zinc Open Source](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zinc%20Open%20Source) |
-| **Dependencies** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Server DNS](windows-server-dns.md), [F5 Big-IP](f5-big-ip.md), [CiscoASA](ciscoasa.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Common Event Format](common-event-format.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md), [Microsoft 365](microsoft-365.md), [Azure Firewall](azure-firewall.md), [Windows Firewall](windows-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md) |
+| **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Server DNS](windows-server-dns.md), [F5 Big-IP](f5-big-ip.md), [CiscoASA](ciscoasa.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Common Event Format](common-event-format.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md), [Microsoft 365](microsoft-365.md), [Azure Firewall](azure-firewall.md), [Windows Firewall](windows-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md) |
 
-## Dependencies
+Microsoft security research teams have detected a wide range of social engineering campaigns using weaponized legitimate open-source software by an actor tracked as ZINC.  ZINC employed traditional social engineering tactics by initially connecting with individuals on LinkedIn, followed by communication over WhatsApp, which acted as the means of delivery for their malicious payloads. ZINC was found weaponizing a wide range of open-source software including PuTTY, KiTTY, TightVNC, Sumatra PDF Reader etc. For more technical and in-depth information about the attack, please read the [Microsoft Security blog post](https://www.microsoft.com/security/blog/2022/09/29/zinc-weaponizing-open-source-software/).This solution provides content to detect and investigate signals related to the attack in Microsoft Sentinel.
+
+For details on the required solutions, see the [Pre-requisites](#pre-requisites) section below.
+
+**Keywords:** Zinc, Open Source, ZetaNile , Putty, Kitty, TightVNC , EventHorizon, FoggyBrass, PhantomStar, threat actor, Adversary.
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **13 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Azure Firewall](azure-firewall.md) | explicit | - |
-| [Check Point](check-point.md) | explicit | - |
-| [CiscoASA](ciscoasa.md) | explicit | - |
-| [Common Event Format](common-event-format.md) | explicit | - |
-| [F5 Big-IP](f5-big-ip.md) | explicit | - |
-| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | - |
-| [Microsoft 365](microsoft-365.md) | explicit | - |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
-| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | - |
-| [Windows Firewall](windows-firewall.md) | explicit | - |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | - |
-| [Windows Security Events](windows-security-events.md) | explicit | - |
-| [Windows Server DNS](windows-server-dns.md) | explicit | - |
+| Solution |
+|:---------|
+| [Azure Firewall](azure-firewall.md) |
+| [Check Point](check-point.md) |
+| [CiscoASA](ciscoasa.md) |
+| [Common Event Format](common-event-format.md) |
+| [F5 Big-IP](f5-big-ip.md) |
+| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
+| [Microsoft 365](microsoft-365.md) |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) |
+| [PaloAlto-PAN-OS](paloalto-pan-os.md) |
+| [Windows Firewall](windows-firewall.md) |
+| [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Windows Security Events](windows-security-events.md) |
+| [Windows Server DNS](windows-server-dns.md) |
 
 ## Data Connectors
 

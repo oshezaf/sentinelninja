@@ -8,16 +8,6 @@
 
 ---
 
-[TheHive](http://thehive-project.org/) solution provides the capability to ingest common The Hive events into Microsoft Sentinel through Webhooks. The Hive can notify external system of modification events (case creation, alert update, task assignment) in real time. When a change occurs in The Hive, an HTTPS POST request with event information is sent to a callback data connector URL.  Refer to [Webhooks documentation](https://docs.thehive-project.org/thehive/legacy/thehive3/admin/webhooks/) for more information.
- 
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
- 
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) b. [Azure Functions ](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,13 +19,27 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2021-10-23 |
 | **Solution Folder** | [TheHive](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive) |
 
+[TheHive](http://thehive-project.org/) solution provides the capability to ingest common The Hive events into Microsoft Sentinel through Webhooks. The Hive can notify external system of modification events (case creation, alert update, task assignment) in real time. When a change occurs in The Hive, an HTTPS POST request with event information is sent to a callback data connector URL.  Refer to [Webhooks documentation](https://docs.thehive-project.org/thehive/legacy/thehive3/admin/webhooks/) for more information.
+ 
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+ 
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) b. [Azure Functions ](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) 🔶
+- [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,10 +47,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TheHive_CL`](../tables/thehive-cl.md) 🔶 | [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) | - |
+| [`TheHive_CL`](../tables/thehive-cl.md) � | [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

@@ -48,7 +48,7 @@ Reference for Event table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserName | string | User name of the account that logged the event. |
 
-## Solutions (18)
+## Solutions (17)
 
 This table is used by the following solutions:
 
@@ -63,7 +63,6 @@ This table is used by the following solutions:
 - [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md)
 - [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
 - [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md)
-- [MimecastTIRegional](../solutions/mimecasttiregional.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [Team Cymru Scout](../solutions/team-cymru-scout.md)
 - [Veeam](../solutions/veeam.md)
@@ -71,7 +70,7 @@ This table is used by the following solutions:
 - [Windows Security Events](../solutions/windows-security-events.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
-## Connectors (5)
+## Connectors (4)
 
 This table is ingested by the following connectors:
 
@@ -81,7 +80,6 @@ This table is ingested by the following connectors:
 | [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | `EventLog in "Application,MSExchange Management,System"` |
 | [Microsoft Exchange Admin Audit Logs by Event Logs](../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md) | `EventLog == "MSExchange Management"` |
 | [Microsoft Exchange Logs and Events](../connectors/esi-opt2exchangeserverseventlogs.md) | `EventLog == "Application"` |
-| [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) |  |
 
 ---
 
@@ -279,10 +277,10 @@ References by type: 4 connectors, 31 content items, 6 ASIM parsers, 7 other pars
 | `EventID == "1"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 2 | 1 | - | **3** |
 | `EventID == "3"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | 1 | - | **2** |
 | `EventID == "0"`<br>`EventLog == "Application"`<br>`Source == "MOVEit DMZ Audit"` | - | 2 | - | - | **2** |
-| `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
 | `EventLog == "Application"` | 1 | - | - | - | **1** |
 | `EventLog == "MSExchange Management"` | 1 | - | - | - | **1** |
 | `Source == "ALCWebCTRL"` | 1 | - | - | - | **1** |
+| `EventLog in "Application,MSExchange Management,System"` | 1 | - | - | - | **1** |
 | `EventID == "11"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "10"`<br>`EventLog == "Microsoft-Windows-Sysmon/Operational"` | - | 1 | - | - | **1** |
 | `EventID == "18"`<br>`Source == "Microsoft-Windows-Sysmon"` | - | 1 | - | - | **1** |

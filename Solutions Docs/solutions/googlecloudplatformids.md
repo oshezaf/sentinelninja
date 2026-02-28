@@ -8,16 +8,6 @@
 
 ---
 
-The Google Cloud Platform IDS solution provides the capability to ingest [Cloud IDS Audit logs](https://cloud.google.com/intrusion-detection-system/docs/audit-logging), [Cloud IDS Threat logs](https://cloud.google.com/intrusion-detection-system/docs/logging) and [Cloud IDS Traffic logs](https://cloud.google.com/intrusion-detection-system/docs/logging) into Microsoft Sentinel using the GCP IDS API.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
-
- a. [Codeless Connector Framework(CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,14 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-07 |
 | **Solution Folder** | [GoogleCloudPlatformIDS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIDS) |
+
+The Google Cloud Platform IDS solution provides the capability to ingest [Cloud IDS Audit logs](https://cloud.google.com/intrusion-detection-system/docs/audit-logging), [Cloud IDS Threat logs](https://cloud.google.com/intrusion-detection-system/docs/logging) and [Cloud IDS Traffic logs](https://cloud.google.com/intrusion-detection-system/docs/logging) into Microsoft Sentinel using the GCP IDS API.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
+
+ a. [Codeless Connector Framework(CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
 
 ## Data Connectors
 

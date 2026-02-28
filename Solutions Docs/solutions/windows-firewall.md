@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 3.0.3 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2022-05-02 |
+| **Solution Folder** | [Windows Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Firewall) |
+
 The Windows Firewall solution for Microsoft Sentinel allows you to ingest Windows Firewall Events into Microsoft Sentinel using the Log Analytics agent for Windows.
 
 Installing this solution will deploy two data connectors,
@@ -23,18 +34,11 @@ This solution takes a dependency on the following technologies, and some of thes
 
 a. [Agent based logs collection from Windows and Linux machines](https://learn.microsoft.com/azure/azure-monitor/agents/data-sources-custom-logs?WT.mc_id=Portal-fx)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 3.0.3 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2022-05-02 |
-| **Solution Folder** | [Windows Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Firewall) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

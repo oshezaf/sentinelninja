@@ -27,45 +27,45 @@ This ASIM parser supports normalizing Network Session logs from all supported so
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| AWS VPC | [_ASim_NetworkSession_AWSVPC](asimnetworksessionawsvpc.md) |
-| AppGate SDP | [_ASim_NetworkSession_AppGateSDP](asimnetworksessionappgatesdp.md) |
-| Azure Firewall | [_ASim_NetworkSession_AzureFirewall](asimnetworksessionazurefirewall.md) |
-| Azure NSG flows | [_ASim_NetworkSession_AzureNSG](asimnetworksessionazurensg.md) |
-| Barracuda WAF | [_ASim_NetworkSession_BarracudaCEF](asimnetworksessionbarracudacef.md) |
-| Barracuda WAF | [_ASim_NetworkSession_BarracudaWAF](asimnetworksessionbarracudawaf.md) |
-| CheckPointFirewall | [_ASim_NetworkSession_CheckPointFirewall](asimnetworksessioncheckpointfirewall.md) |
-| CiscoASA | [_ASim_NetworkSession_CiscoASA](asimnetworksessionciscoasa.md) |
-| Cisco Firepower | [_ASim_NetworkSession_CiscoFirepower](asimnetworksessionciscofirepower.md) |
-| Cisco ISE | [_ASim_NetworkSession_CiscoISE](asimnetworksessionciscoise.md) |
-| Cisco Meraki | [_ASim_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) |
-| Cisco Meraki | [_ASim_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) |
-| Cisco Meraki | [_ASim_NetworkSession_CiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md) |
-| Corelight Zeek | [_ASim_NetworkSession_CorelightZeek](asimnetworksessioncorelightzeek.md) |
-| CrowdStrike Falcon Endpoint Protection | [_ASim_NetworkSession_CrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) |
-| ForcePointFirewall | [_ASim_NetworkSession_ForcePointFirewall](asimnetworksessionforcepointfirewall.md) |
-| Fortinet FortiGate | [_ASim_NetworkSession_FortinetFortiGate](asimnetworksessionfortinetfortigate.md) |
-| Illumio SaaS Core | [_ASim_NetworkSession_IllumioSaaSCore](asimnetworksessionillumiosaascore.md) |
-| Sysmon for Linux | [_ASim_NetworkSession_LinuxSysmon](asimnetworksessionlinuxsysmon.md) |
-| Microsoft Defender for IoT | [_ASim_NetworkSession_MD4IoTAgent](asimnetworksessionmd4iotagent.md) |
-| Microsoft Defender for IoT | [_ASim_NetworkSession_MD4IoTSensor](asimnetworksessionmd4iotsensor.md) |
-| M365 Defender for Endpoint | [_ASim_NetworkSession_Microsoft365Defender](asimnetworksessionmicrosoft365defender.md) |
-| Windows Firewall | [_ASim_NetworkSession_MicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md) |
-| Windows Sysmon | [_ASim_NetworkSession_MicrosoftSysmon](asimnetworksessionmicrosoftsysmon.md) |
-| Windows Sysmon | [_ASim_NetworkSession_MicrosoftSysmonWindowsEvent](asimnetworksessionmicrosoftsysmonwindowsevent.md) |
-| Windows Firewall | [_ASim_NetworkSession_MicrosoftWindowsEventFirewall](asimnetworksessionmicrosoftwindowseventfirewall.md) |
-| Azure NTANetAnalytics | [_ASim_NetworkSession_NTANetAnalytics](asimnetworksessionntanetanalytics.md) |
-| Native | [_ASim_NetworkSession_Native](asimnetworksessionnative.md) |
-| Palo Alto PanOS | [_ASim_NetworkSession_PaloAltoCEF](asimnetworksessionpaloaltocef.md) |
-| Palo Alto Cortex Data Lake | [_ASim_NetworkSession_PaloAltoCortexDataLake](asimnetworksessionpaloaltocortexdatalake.md) |
-| SentinelOne | [_ASim_NetworkSession_SentinelOne](asimnetworksessionsentinelone.md) |
-| SonicWall | [_ASim_NetworkSession_SonicWallFirewall](asimnetworksessionsonicwallfirewall.md) |
-| VMConnection | [_ASim_NetworkSession_VMConnection](asimnetworksessionvmconnection.md) |
-| VMware Carbon Black Cloud | [_ASim_NetworkSession_VMwareCarbonBlackCloud](asimnetworksessionvmwarecarbonblackcloud.md) |
-| Vectra AI Streams | [_ASim_NetworkSession_VectraAI](asimnetworksessionvectraai.md) |
-| WatchGuard Fireware OS | [_ASim_NetworkSession_WatchGuardFirewareOS](asimnetworksessionwatchguardfirewareos.md) |
-| Zscaler ZIA Firewall | [_ASim_NetworkSession_ZscalerZIA](asimnetworksessionzscalerzia.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| AWS VPC | [_ASim_NetworkSession_AWSVPC](asimnetworksessionawsvpc.md) | [AWS VPC Flow Logs](../solutions/aws-vpc-flow-logs.md) |
+| AppGate SDP | [_ASim_NetworkSession_AppGateSDP](asimnetworksessionappgatesdp.md) | [Syslog](../solutions/syslog.md) |
+| Azure Firewall | [_ASim_NetworkSession_AzureFirewall](asimnetworksessionazurefirewall.md) |  |
+| Azure NSG flows | [_ASim_NetworkSession_AzureNSG](asimnetworksessionazurensg.md) |  |
+| Barracuda WAF | [_ASim_NetworkSession_BarracudaCEF](asimnetworksessionbarracudacef.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Barracuda WAF | [_ASim_NetworkSession_BarracudaWAF](asimnetworksessionbarracudawaf.md) |  |
+| CheckPointFirewall | [_ASim_NetworkSession_CheckPointFirewall](asimnetworksessioncheckpointfirewall.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| CiscoASA | [_ASim_NetworkSession_CiscoASA](asimnetworksessionciscoasa.md) | [CiscoASA](../solutions/ciscoasa.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Cisco Firepower | [_ASim_NetworkSession_CiscoFirepower](asimnetworksessionciscofirepower.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Cisco ISE | [_ASim_NetworkSession_CiscoISE](asimnetworksessionciscoise.md) | [Syslog](../solutions/syslog.md) |
+| Cisco Meraki | [_ASim_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md)<br>[CustomLogsAma](../solutions/customlogsama.md) |
+| Cisco Meraki | [_ASim_NetworkSession_CiscoMeraki](asimnetworksessionciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md)<br>[CustomLogsAma](../solutions/customlogsama.md) |
+| Cisco Meraki | [_ASim_NetworkSession_CiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md) | [Syslog](../solutions/syslog.md) |
+| Corelight Zeek | [_ASim_NetworkSession_CorelightZeek](asimnetworksessioncorelightzeek.md) | [Corelight](../solutions/corelight.md) |
+| CrowdStrike Falcon Endpoint Protection | [_ASim_NetworkSession_CrowdStrikeFalconHost](asimnetworksessioncrowdstrikefalconhost.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| ForcePointFirewall | [_ASim_NetworkSession_ForcePointFirewall](asimnetworksessionforcepointfirewall.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Fortinet FortiGate | [_ASim_NetworkSession_FortinetFortiGate](asimnetworksessionfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Illumio SaaS Core | [_ASim_NetworkSession_IllumioSaaSCore](asimnetworksessionillumiosaascore.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
+| Sysmon for Linux | [_ASim_NetworkSession_LinuxSysmon](asimnetworksessionlinuxsysmon.md) | [Syslog](../solutions/syslog.md) |
+| Microsoft Defender for IoT | [_ASim_NetworkSession_MD4IoTAgent](asimnetworksessionmd4iotagent.md) |  |
+| Microsoft Defender for IoT | [_ASim_NetworkSession_MD4IoTSensor](asimnetworksessionmd4iotsensor.md) |  |
+| M365 Defender for Endpoint | [_ASim_NetworkSession_Microsoft365Defender](asimnetworksessionmicrosoft365defender.md) |  |
+| Windows Firewall | [_ASim_NetworkSession_MicrosoftSecurityEventFirewall](asimnetworksessionmicrosoftsecurityeventfirewall.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)<br>[Windows Security Events](../solutions/windows-security-events.md) |
+| Windows Sysmon | [_ASim_NetworkSession_MicrosoftSysmon](asimnetworksessionmicrosoftsysmon.md) |  |
+| Windows Sysmon | [_ASim_NetworkSession_MicrosoftSysmonWindowsEvent](asimnetworksessionmicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Windows Firewall | [_ASim_NetworkSession_MicrosoftWindowsEventFirewall](asimnetworksessionmicrosoftwindowseventfirewall.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Azure NTANetAnalytics | [_ASim_NetworkSession_NTANetAnalytics](asimnetworksessionntanetanalytics.md) |  |
+| Native | [_ASim_NetworkSession_Native](asimnetworksessionnative.md) | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)<br>[CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Palo Alto PanOS | [_ASim_NetworkSession_PaloAltoCEF](asimnetworksessionpaloaltocef.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Palo Alto Cortex Data Lake | [_ASim_NetworkSession_PaloAltoCortexDataLake](asimnetworksessionpaloaltocortexdatalake.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| SentinelOne | [_ASim_NetworkSession_SentinelOne](asimnetworksessionsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+| SonicWall | [_ASim_NetworkSession_SonicWallFirewall](asimnetworksessionsonicwallfirewall.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| VMConnection | [_ASim_NetworkSession_VMConnection](asimnetworksessionvmconnection.md) |  |
+| VMware Carbon Black Cloud | [_ASim_NetworkSession_VMwareCarbonBlackCloud](asimnetworksessionvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Vectra AI Streams | [_ASim_NetworkSession_VectraAI](asimnetworksessionvectraai.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[Vectra AI Stream](../solutions/vectra-ai-stream.md) |
+| WatchGuard Fireware OS | [_ASim_NetworkSession_WatchGuardFirewareOS](asimnetworksessionwatchguardfirewareos.md) | [Syslog](../solutions/syslog.md) |
+| Zscaler ZIA Firewall | [_ASim_NetworkSession_ZscalerZIA](asimnetworksessionzscalerzia.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 
 ## Source Tables
 

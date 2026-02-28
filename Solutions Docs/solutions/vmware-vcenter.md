@@ -8,14 +8,6 @@
 
 ---
 
-The [VMware vCenter Server](https://www.vmware.com/products/vcenter-server.html) solution allows you ingest logs from your vCenter platform using Syslog into Microsoft Sentinel.
-
- This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation.
-
- **NOTE**: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -26,26 +18,42 @@ The [VMware vCenter Server](https://www.vmware.com/products/vcenter-server.html)
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |
 | **Solution Folder** | [VMware vCenter](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter) |
-| **Dependencies** | [CustomLogsAma](customlogsama.md) |
+| **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
-## Dependencies
+The [VMware vCenter Server](https://www.vmware.com/products/vcenter-server.html) solution allows you ingest logs from your vCenter platform using Syslog into Microsoft Sentinel.
+
+ This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation.
+
+ **NOTE**: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [CustomLogsAma](customlogsama.md) | explicit | - |
+| Solution |
+|:---------|
+| [CustomLogsAma](customlogsama.md) |
 
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) ⚠️ 🔶
-- [Custom logs via AMA](../connectors/customlogsviaama.md) 🔶 *(dependency on [CustomLogsAma](customlogsama.md))*
+- [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) ⚠️ �
+
+Connectors from dependency solutions:
+
+- [Custom logs via AMA](../connectors/customlogsviaama.md) � *(dependency on [CustomLogsAma](customlogsama.md))*
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -53,25 +61,25 @@ This solution uses **16 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`JBossEvent_CL`](../tables/jbossevent-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`NGINX_CL`](../tables/nginx-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Tomcat_CL`](../tables/tomcat-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`ZPA_CL`](../tables/zpa-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`meraki_CL`](../tables/meraki-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
-| [`vcenter_CL`](../tables/vcenter-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency), [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) | Analytics, Workbooks |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`JBossEvent_CL`](../tables/jbossevent-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`MarkLogicAudit_CL`](../tables/marklogicaudit-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`MongoDBAudit_CL`](../tables/mongodbaudit-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`NGINX_CL`](../tables/nginx-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`SquidProxy_CL`](../tables/squidproxy-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`Tomcat_CL`](../tables/tomcat-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`ZPA_CL`](../tables/zpa-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`meraki_CL`](../tables/meraki-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
+| [`vcenter_CL`](../tables/vcenter-cl.md) � | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency), [[Deprecated] VMware vCenter](../connectors/vmwarevcenter.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

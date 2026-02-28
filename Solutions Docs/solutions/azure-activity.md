@@ -8,10 +8,6 @@
 
 ---
 
-The [Azure Activity](https://docs.microsoft.com/azure/azure-monitor/essentials/activity-log) solution for Microsoft Sentinel enables you to ingest Azure Activity Administrative, Security, Service Health, Alert, Recommendation, Policy, Autoscale and Resource Health [logs](https://docs.microsoft.com/azure/azure-monitor/reference/tables/azureactivity) using Diagnostic Settings into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,14 @@ The [Azure Activity](https://docs.microsoft.com/azure/azure-monitor/essentials/a
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-04-18 |
 | **Solution Folder** | [Azure Activity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity) |
+
+The [Azure Activity](https://docs.microsoft.com/azure/azure-monitor/essentials/activity-log) solution for Microsoft Sentinel enables you to ingest Azure Activity Administrative, Security, Service Health, Alert, Recommendation, Policy, Autoscale and Resource Health [logs](https://docs.microsoft.com/azure/azure-monitor/reference/tables/azureactivity) using Diagnostic Settings into Microsoft Sentinel.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

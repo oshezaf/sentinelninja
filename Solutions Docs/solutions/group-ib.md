@@ -8,13 +8,17 @@
 
 ---
 
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
 | **Solution Folder** | [Group-IB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB) |
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

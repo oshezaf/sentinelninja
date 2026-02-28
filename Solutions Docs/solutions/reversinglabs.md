@@ -8,10 +8,6 @@
 
 ---
 
-The ReversingLabs Content Pack solution for Microsoft Sentinel includes a number of Microsoft Sentinel resources designed to automate your security operations using the power of Spectra Intelligence (formerly TitaniumCloud) and Spectra Analyze (formerly A1000) APIs.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | ReversingLabs |
@@ -24,13 +20,21 @@ The ReversingLabs Content Pack solution for Microsoft Sentinel includes a number
 | **Last Updated** | 2024-07-17 |
 | **Solution Folder** | [ReversingLabs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs) |
 
+The ReversingLabs Content Pack solution for Microsoft Sentinel includes a number of Microsoft Sentinel resources designed to automate your security operations using the power of Spectra Intelligence (formerly TitaniumCloud) and Spectra Analyze (formerly A1000) APIs.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Internal Tables](#internal-tables)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 **This solution does not include data connectors.**
 
 This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
-### Internal Tables
+## Internal Tables
 
 The following **4 table(s)** are used internally by this solution's content items:
 

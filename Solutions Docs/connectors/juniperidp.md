@@ -19,7 +19,7 @@
 | **Used in Solutions** | [JuniperIDP](../solutions/juniperidp.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [Connector_LogAnalytics_agent_JuniperIDP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JuniperIDP/Data%20Connectors/Connector_LogAnalytics_agent_JuniperIDP.json) |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 The [Juniper](https://www.juniper.net/) IDP data connector provides the capability to ingest [Juniper IDP](https://www.juniper.net/documentation/us/en/software/junos/idp-policy/topics/topic-map/security-idp-overview.html) events into Microsoft Sentinel.
 
@@ -33,7 +33,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`JuniperIDP_CL`](../tables/juniperidp-cl.md) � | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

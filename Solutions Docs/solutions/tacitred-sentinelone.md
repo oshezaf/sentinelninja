@@ -8,10 +8,6 @@
 
 ---
 
-The TacitRed SentinelOne IOC Automation solution provides example playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and prepare indicators for ingestion into SentinelOne.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Data443 Risk Mitigation, Inc. |
@@ -23,6 +19,14 @@ The TacitRed SentinelOne IOC Automation solution provides example playbooks that
 | **First Published** | 2025-12-01 |
 | **Last Updated** | 2025-12-10 |
 | **Solution Folder** | [TacitRed-SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-SentinelOne) |
+
+The TacitRed SentinelOne IOC Automation solution provides example playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and prepare indicators for ingestion into SentinelOne.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

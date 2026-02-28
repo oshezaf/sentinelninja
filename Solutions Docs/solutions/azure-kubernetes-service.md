@@ -8,16 +8,6 @@
 
 ---
 
-The [Azure Kubernetes Services (AKS)](https://docs.microsoft.com/azure/aks/?WT.mc_id=Portal-fx) solution allows you to ingest AKS activity logs using Diagnostic Setting into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
- a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,13 +19,27 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Azure kubernetes Service](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20kubernetes%20Service) |
 
+The [Azure Kubernetes Services (AKS)](https://docs.microsoft.com/azure/aks/?WT.mc_id=Portal-fx) solution allows you to ingest AKS activity logs using Diagnostic Setting into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) 🔶
+- [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,7 +47,7 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) | Hunting, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) | Hunting, Workbooks |
 | [`ContainerInventory`](../tables/containerinventory.md) | [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) | - |
 | [`KubeEvents`](../tables/kubeevents.md) | [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) | - |
 | [`image`](../tables/image.md) | - | Workbooks |
@@ -57,7 +61,7 @@ The following **1 table(s)** are used internally by this solution's content item
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:

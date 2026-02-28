@@ -10,10 +10,6 @@
 
 ---
 
-The [StyxView Alerts](https://styxintel.com/) data connector provides the capability to ingest StyxView alerts into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Styx Intelligence |
@@ -24,6 +20,8 @@ The [StyxView Alerts](https://styxintel.com/) data connector provides the capabi
 | **Author** | Styx Intelligence - support.team@styxintel.com |
 | **First Published** | 2025-02-07 |
 | **Solution Folder** | [Styx Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Styx%20Intelligence) |
+
+The [StyxView Alerts](https://styxintel.com/) data connector provides the capability to ingest StyxView alerts into Microsoft Sentinel.
 
 ## Data Connectors
 

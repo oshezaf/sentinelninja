@@ -8,12 +8,6 @@
 
 ---
 
-This Solution provides Playbooks for Cyble Vision Threat Intelligence ingestion and IOC enrichment, integrating Cyble APIs.
-
- This Solution also includes a CCF Conenctor which enables Alerts ingestion from Cyble Platform to Microsoft Sentinel Workspace.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cyble Support |
@@ -24,6 +18,16 @@ This Solution provides Playbooks for Cyble Vision Threat Intelligence ingestion 
 | **Author** | Cyble Inc |
 | **First Published** | 2025-05-05 |
 | **Solution Folder** | [Cyble Vision](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyble%20Vision) |
+
+This Solution provides Playbooks for Cyble Vision Threat Intelligence ingestion and IOC enrichment, integrating Cyble APIs.
+
+ This Solution also includes a CCF Conenctor which enables Alerts ingestion from Cyble Platform to Microsoft Sentinel Workspace.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

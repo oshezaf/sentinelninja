@@ -8,26 +8,6 @@
 
 ---
 
-The Web Shells Threat Protection solution contains security content that helps proactive and reactive detection of Web Shells used by attackers. Web Shells are malicious scripts that attackers use to compromise internet facing servers. These are commonly used as a backdoor into the targeted web applications and servers. Microsoft Security Research has highlighted the threat, usage and detection of Web Shells in an enterprise environment in the following blogs: 
-
- - [Web shell attacks continue to rise](https://www.microsoft.com/en-us/security/blog/2021/02/11/web-shell-attacks-continue-to-rise/) 
-
- - [Analyzing attacks taking advantage of the Exchange Server vulnerabilities](https://www.microsoft.com/en-us/security/blog/2021/03/25/analyzing-attacks-taking-advantage-of-the-exchange-server-vulnerabilities/)
-
-**Pre-requisites:**
-
- This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution. 
- 
- 1. Microsoft Defender XDR 
-
- 2. Windows Security Events 
-
- 3. Azure Web Application Firewall
-
-**Keywords:** WebDAV, SysAid, Mercury, CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, CVE-2021-27065, SUPERNOVA, SpringShell, CVE-2022-22965
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -38,44 +18,57 @@ The Web Shells Threat Protection solution contains security content that helps p
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-22 |
 | **Solution Folder** | [Web Shells Threat Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection) |
-| **Dependencies** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Security Events](windows-security-events.md), [Azure Web Application Firewall (WAF)](azure-web-application-firewall-waf.md) |
+| **Pre-requisites** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Security Events](windows-security-events.md), [Azure Web Application Firewall (WAF)](azure-web-application-firewall-waf.md) |
 
-## Dependencies
+The Web Shells Threat Protection solution contains security content that helps proactive and reactive detection of Web Shells used by attackers. Web Shells are malicious scripts that attackers use to compromise internet facing servers. These are commonly used as a backdoor into the targeted web applications and servers. Microsoft Security Research has highlighted the threat, usage and detection of Web Shells in an enterprise environment in the following blogs: 
 
-This solution has **3 required** and **7 optional** (ASIM-based) dependencies on other solutions:
+ - [Web shell attacks continue to rise](https://www.microsoft.com/en-us/security/blog/2021/02/11/web-shell-attacks-continue-to-rise/) 
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Azure Storage](azure-storage.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Azure Web Application Firewall (WAF)](azure-web-application-firewall-waf.md) | explicit | - |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Windows Security Events](windows-security-events.md) | explicit, ASIM (optional) | ASIM schemas: FileEvent |
+ - [Analyzing attacks taking advantage of the Exchange Server vulnerabilities](https://www.microsoft.com/en-us/security/blog/2021/03/25/analyzing-attacks-taking-advantage-of-the-exchange-server-vulnerabilities/)
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+For details on the data sources and ASIM parsers supported by this solution, see the [ASIM Pre-requisites](#asim-pre-requisites) section below.
 
-This solution uses ASIM parsers and supports the following products:
+**Keywords:** WebDAV, SysAid, Mercury, CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, CVE-2021-27065, SUPERNOVA, SpringShell, CVE-2022-22965
 
-| Product |
-|:--------|
-| [Google Workspace](../asim/asim-products-index.md#google-workspace) |
-| [Microsoft 365 Defender for EndPoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
-| [Microsoft Azure Blob Storage](../asim/asim-products-index.md#microsoft-azure-blob-storage) |
-| [Microsoft Azure File Storage](../asim/asim-products-index.md#microsoft-azure-file-storage) |
-| [Microsoft Azure Queue Storage](../asim/asim-products-index.md#microsoft-azure-queue-storage) |
-| [Microsoft Azure Table Storage](../asim/asim-products-index.md#microsoft-azure-table-storage) |
-| [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) |
-| [Microsoft Sysmon for Linux](../asim/asim-products-index.md#microsoft-sysmon-for-linux) |
-| [Microsoft Windows Events](../asim/asim-products-index.md#microsoft-windows-events) |
-| [Native](../asim/asim-products-index.md#native) |
-| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
-| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
-| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [ASIM Pre-requisites](#asim-pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
+
+This solution depends on **3 other solution(s)**:
+
+| Solution | Details |
+|:---------|:--------|
+| [Azure Web Application Firewall (WAF)](azure-web-application-firewall-waf.md) | - |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | - |
+| [Windows Security Events](windows-security-events.md) | Also provides ASIM schemas: FileEvent |
+
+## <a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites
+
+This solution uses the [`imFileEvent`](../asim/imfileevent.md) [ASIM (Advanced Security Information Model)](https://learn.microsoft.com/azure/sentinel/normalization) parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.
+
+### Supported Products
+
+| Product | Dependency Solution |
+|:--------|:--------------------|
+| [Google Workspace](../asim/asim-products-index.md#google-workspace) | - |
+| [Microsoft 365 Defender for EndPoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) | - |
+| [Microsoft Azure Blob Storage](../asim/asim-products-index.md#microsoft-azure-blob-storage) | [Azure Storage](azure-storage.md) |
+| [Microsoft Azure File Storage](../asim/asim-products-index.md#microsoft-azure-file-storage) | [Azure Storage](azure-storage.md) |
+| [Microsoft Azure Queue Storage](../asim/asim-products-index.md#microsoft-azure-queue-storage) | [Azure Storage](azure-storage.md) |
+| [Microsoft Azure Table Storage](../asim/asim-products-index.md#microsoft-azure-table-storage) | [Azure Storage](azure-storage.md) |
+| [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) | - |
+| [Microsoft Sysmon for Linux](../asim/asim-products-index.md#microsoft-sysmon-for-linux) | [Syslog](syslog.md) |
+| [Microsoft Windows Events](../asim/asim-products-index.md#microsoft-windows-events) | [Windows Forwarded Events](windows-forwarded-events.md)<br>[Windows Security Events](windows-security-events.md) |
+| [Native](../asim/asim-products-index.md#native) | [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) | [SentinelOne](sentinelone.md) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) | [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) | [Windows Forwarded Events](windows-forwarded-events.md) |
 
 ## Data Connectors
 
@@ -89,7 +82,6 @@ This solution uses ASIM parsers and supports the following products:
 - [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) *(dependency on [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md))*
 - [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) *(dependency on [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md))*
 - [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) *(dependency on [Microsoft Defender XDR](microsoft-defender-xdr.md))*
-- [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) *(dependency on [MimecastTIRegional](mimecasttiregional.md))*
 - [Security Events via Legacy Agent](../connectors/securityevents.md) *(dependency on [Windows Security Events](windows-security-events.md))*
 - [SentinelOne](../connectors/sentinelone.md) *(dependency on [SentinelOne](sentinelone.md))*
 - [SentinelOne](../connectors/sentineloneccp.md) *(dependency on [SentinelOne](sentinelone.md))*
@@ -100,14 +92,6 @@ This solution uses ASIM parsers and supports the following products:
 - [Windows Forwarded Events](../connectors/windowsforwardedevents.md) *(dependency on [Windows Forwarded Events](windows-forwarded-events.md))*
 - [Windows Security Events via AMA](../connectors/windowssecurityevents.md) *(dependency on [Windows Security Events](windows-security-events.md))*
 - [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) *(dependency on [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md))*
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This solution uses **1 ASIM parser(s)** for normalized data:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`imFileEvent`](../asim/imfileevent.md) | Analytics |
 
 ## Tables Used
 

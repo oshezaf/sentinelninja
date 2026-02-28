@@ -27,14 +27,14 @@ This ASIM parser supports normalizing User Management logs from all supported so
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Cisco ISE | [_ASim_UserManagement_CiscoISE](asimusermanagementciscoise.md) |
-| Microsoft | [_ASim_UserManagement_LinuxAuthpriv](asimusermanagementlinuxauthpriv.md) |
-| Microsoft Security Event | [_ASim_UserManagement_MicrosoftSecurityEvent](asimusermanagementmicrosoftsecurityevent.md) |
-| Microsoft Windows Event | [_ASim_UserManagement_MicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md) |
-| Native | [_ASim_UserManagement_Native](asimusermanagementnative.md) |
-| SentinelOne | [_ASim_UserManagement_SentinelOne](asimusermanagementsentinelone.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Cisco ISE | [_ASim_UserManagement_CiscoISE](asimusermanagementciscoise.md) | [Syslog](../solutions/syslog.md) |
+| Microsoft | [_ASim_UserManagement_LinuxAuthpriv](asimusermanagementlinuxauthpriv.md) | [Syslog](../solutions/syslog.md) |
+| Microsoft Security Event | [_ASim_UserManagement_MicrosoftSecurityEvent](asimusermanagementmicrosoftsecurityevent.md) | [Windows Security Events](../solutions/windows-security-events.md) |
+| Microsoft Windows Event | [_ASim_UserManagement_MicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Native | [_ASim_UserManagement_Native](asimusermanagementnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| SentinelOne | [_ASim_UserManagement_SentinelOne](asimusermanagementsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
 
 ## Source Tables
 

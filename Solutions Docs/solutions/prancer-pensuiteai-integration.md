@@ -6,8 +6,6 @@
 
 ---
 
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Prancer PenSuiteAI Integration |
@@ -17,15 +15,21 @@
 | **First Published** | 2023-08-02 |
 | **Solution Folder** | [Prancer PenSuiteAI Integration](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration) |
 
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Prancer Data Connector](../connectors/prancerlogdata.md) ⚠️ 🔶
+- [Prancer Data Connector](../connectors/prancerlogdata.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -33,10 +37,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`prancer_CL`](../tables/prancer-cl.md) 🔶 | [Prancer Data Connector](../connectors/prancerlogdata.md) | Analytics, Hunting, Workbooks |
+| [`prancer_CL`](../tables/prancer-cl.md) � | [Prancer Data Connector](../connectors/prancerlogdata.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **14 content item(s)**:

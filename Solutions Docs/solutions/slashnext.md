@@ -8,10 +8,6 @@
 
 ---
 
-SlashNext URL Investigation Connector is based upon its Real-time Phishing Defense (RPD) APIs which are connected to SlashNext real-time threat intelligence database, continuously updated with the latest phishing threats. SlashNext RPD APIs are designed to be very fast and give accurate binary verdict on each enrichment request to ease its integration in any phishing Incident Response (IR) or SOAR environment.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | SlashNext |
@@ -24,13 +20,21 @@ SlashNext URL Investigation Connector is based upon its Real-time Phishing Defen
 | **Last Updated** | 2022-08-12 |
 | **Solution Folder** | [SlashNext](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext) |
 
+SlashNext URL Investigation Connector is based upon its Real-time Phishing Defense (RPD) APIs which are connected to SlashNext real-time threat intelligence database, continuously updated with the latest phishing threats. SlashNext RPD APIs are designed to be very fast and give accurate binary verdict on each enrichment request to ease its integration in any phishing Incident Response (IR) or SOAR environment.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [SlashNext Function App](../connectors/slashnextfunctionapp.md) 🔶
+- [SlashNext Function App](../connectors/slashnextfunctionapp.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -38,11 +42,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [SlashNext Function App](../connectors/slashnextfunctionapp.md) | - |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | [SlashNext Function App](../connectors/slashnextfunctionapp.md) | - |
 | [`AzureMetrics`](../tables/azuremetrics.md) | [SlashNext Function App](../connectors/slashnextfunctionapp.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

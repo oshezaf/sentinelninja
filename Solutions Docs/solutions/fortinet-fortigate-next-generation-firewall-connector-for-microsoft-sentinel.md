@@ -8,18 +8,6 @@
 
 ---
 
-Gain insight into your organization's network and improve your security operation capabilities with the [Fortinet FortiGate Next-generation Firewall](https://www.fortinet.com/products/next-generation-firewall) Solution for Microsoft Sentinel. It allows you to easily connect your FortiGate logs with Microsoft Sentinel. This enables you to view dashboards, create custom alerts, and improve investigation. 
-
- Playbooks are included to help in automated remediation 
-
- For questions about [FortiGate](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortinet_fortigate-vm_v5?tab=Overview), please contact Fortinet at [azuresales@fortinet.com](mailto:azuresales@fortinet.com).
-
- This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -30,15 +18,32 @@ Gain insight into your organization's network and improve your security operatio
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-08-13 |
 | **Solution Folder** | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+Gain insight into your organization's network and improve your security operation capabilities with the [Fortinet FortiGate Next-generation Firewall](https://www.fortinet.com/products/next-generation-firewall) Solution for Microsoft Sentinel. It allows you to easily connect your FortiGate logs with Microsoft Sentinel. This enables you to view dashboards, create custom alerts, and improve investigation. 
+
+ Playbooks are included to help in automated remediation 
+
+ For questions about [FortiGate](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortinet_fortigate-vm_v5?tab=Overview), please contact Fortinet at [azuresales@fortinet.com](mailto:azuresales@fortinet.com).
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -46,6 +51,9 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 - [[Deprecated] Fortinet via Legacy Agent](../connectors/fortinet.md) ⚠️
 - [[Deprecated] Fortinet via AMA](../connectors/fortinetama.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

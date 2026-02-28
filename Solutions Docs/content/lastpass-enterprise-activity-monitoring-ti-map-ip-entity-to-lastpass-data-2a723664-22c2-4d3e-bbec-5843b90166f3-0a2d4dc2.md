@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) � | ✗ | ✓ | ✗ |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
 
 ---

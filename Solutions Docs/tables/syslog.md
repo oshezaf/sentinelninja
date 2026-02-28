@@ -863,7 +863,7 @@ This table is ingested by the following connectors:
 | Content Item | Selection Criteria |
 |:-------------|:-------------------|
 | [VeeamDataPlatformMonitoring](../content/veeam-veeamdataplatformmonitoring-a61e8871.md) | `SyslogMessage has "instanceId"` |
-| [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "predefined_alarm_id"` |
+| [VeeamSecurityActivities](../content/veeam-veeamsecurityactivities-f559a349.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "instanceId"` |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
@@ -1051,7 +1051,7 @@ References by type: 5 connectors, 332 content items, 16 ASIM parsers, 59 other p
 | `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | - | 1 | - | - | **1** |
 | `Facility in "auth,authpriv"` | - | 1 | - | - | **1** |
 | `SyslogMessage has_any "ALTER TABLE,CREATE TABLE,DROP TABLE,database modified,schema change"`<br>`SyslogMessage has_any "auditd stopped,logging stopped,rsyslog stopped,syslog stopped"`<br>`SyslogMessage has_any "change,config,edit,modified,updated"`<br>`SyslogMessage has_any "change,config,modified,registry,updated"`<br>`SyslogMessage has_any "checksum mismatch,file deleted,file modified,file tamper"` | - | 1 | - | - | **1** |
-| `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "predefined_alarm_id"` | - | 1 | - | - | **1** |
+| `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "instanceId"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "ACTION=VCF"`<br>`SyslogMessage contains "VCF Alert"` | - | 1 | - | - | **1** |
 | `ProcessName == "sshd"`<br>`SyslogMessage has "Failed"`<br>`SyslogMessage has "but this does not map back to the address"`<br>`SyslogMessage has "key RSA"`<br>`SyslogMessage has "publickey"`<br>`SyslogMessage startswith "Accepted"`<br>`SyslogMessage startswith "Failed"`<br>`SyslogMessage startswith "Invalid user"`<br>`SyslogMessage startswith "Nasty PTR record"`<br>`SyslogMessage startswith "Timeout"`<br>`SyslogMessage startswith "message repeated"`<br>`SyslogMessage startswith "reverse mapping checking getaddrinfo for"` | - | - | 1 | - | **1** |
 | `ProcessName == "su"`<br>`SyslogMessage has_all "pam_unix(su"`<br>`SyslogMessage startswith "FAILED SU"`<br>`SyslogMessage startswith "Successful su for"` | - | - | 1 | - | **1** |
@@ -1150,7 +1150,7 @@ References by type: 5 connectors, 332 content items, 16 ASIM parsers, 59 other p
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has instanceId` | - | 113 | - | 3 | **116** |
+| `has instanceId` | - | 114 | - | 3 | **117** |
 | `contains <EPOevent>` | - | 25 | - | 1 | **26** |
 | `contains <UpdateEvents>` | - | 25 | - | 1 | **26** |
 | `contains Oracle Unified Audit` | - | 22 | - | 2 | **24** |
@@ -1162,7 +1162,6 @@ References by type: 5 connectors, 332 content items, 16 ASIM parsers, 59 other p
 | `!has response:` | - | 1 | 1 | 2 | **4** |
 | `has_all client` | - | 1 | 1 | 2 | **4** |
 | `has_all <Provider Name=` | - | - | 4 | - | **4** |
-| `has predefined_alarm_id` | - | 2 | - | 1 | **3** |
 | `has bytes read` | - | 2 | - | - | **2** |
 | `has close` | - | 2 | - | - | **2** |
 | `has session opened for` | - | 2 | - | - | **2** |
@@ -1182,6 +1181,7 @@ References by type: 5 connectors, 332 content items, 16 ASIM parsers, 59 other p
 | `has_any config` | - | 2 | - | - | **2** |
 | `has_any modified` | - | 2 | - | - | **2** |
 | `has_any updated` | - | 2 | - | - | **2** |
+| `has predefined_alarm_id` | - | 1 | - | 1 | **2** |
 | `contains AuditLog` | - | - | - | 2 | **2** |
 | `contains Device,` | - | - | - | 2 | **2** |
 | `contains DeviceControl` | - | - | - | 2 | **2** |

@@ -8,10 +8,6 @@
 
 ---
 
-The [TacitRed Compromised Credentials](https://data443.com/tacitred-attack-surface-intelligence/) solution integrates TacitRed's compromised credential and identity threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). The solution deploys a REST API poller connector, a custom log table (TacitRed_Findings_CL), analytics rule, and visualization workbook to help security teams detect and investigate credential compromise.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Data443 Risk Mitigation, Inc. |
@@ -22,6 +18,15 @@ The [TacitRed Compromised Credentials](https://data443.com/tacitred-attack-surfa
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-01-01 |
 | **Solution Folder** | [TacitRedThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence) |
+
+The [TacitRed Compromised Credentials](https://data443.com/tacitred-attack-surface-intelligence/) solution integrates TacitRed's compromised credential and identity threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). The solution deploys a REST API poller connector, a custom log table (TacitRed_Findings_CL), analytics rule, and visualization workbook to help security teams detect and investigate credential compromise.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

@@ -8,10 +8,6 @@
 
 ---
 
-The [Tanium](https://www.tanium.com/) solution for Microsoft Sentinel enables you to ingest Tanium Threat Response alerts as Microsoft Sentinel incidents as well as incorporate Tanium's real-time endpoint data.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Tanium Inc. |
@@ -23,6 +19,15 @@ The [Tanium](https://www.tanium.com/) solution for Microsoft Sentinel enables yo
 | **First Published** | 2022-05-16 |
 | **Last Updated** | 2025-07-03 |
 | **Solution Folder** | [Tanium](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium) |
+
+The [Tanium](https://www.tanium.com/) solution for Microsoft Sentinel enables you to ingest Tanium Threat Response alerts as Microsoft Sentinel incidents as well as incorporate Tanium's real-time endpoint data.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

@@ -8,10 +8,6 @@
 
 ---
 
-The Azure Web Application Firewall (WAF) solution for Microsoft Sentinel allows you to ingest Diagnostic Metrics from Application Gateway, Front Door and CDN into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,13 +19,21 @@ The Azure Web Application Firewall (WAF) solution for Microsoft Sentinel allows 
 | **First Published** | 2022-05-18 |
 | **Solution Folder** | [Azure Web Application Firewall (WAF)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Web%20Application%20Firewall%20%28WAF%29) |
 
+The Azure Web Application Firewall (WAF) solution for Microsoft Sentinel allows you to ingest Diagnostic Metrics from Application Gateway, Front Door and CDN into Microsoft Sentinel.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Web Application Firewall (WAF)](../connectors/waf.md) 🔶
+- [Azure Web Application Firewall (WAF)](../connectors/waf.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -39,11 +43,11 @@ This solution uses **4 table(s)**:
 |-------|-------------------|----------------|
 | [`AGWAccessLogs`](../tables/agwaccesslogs.md) | - | Analytics |
 | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | - | Analytics |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure Web Application Firewall (WAF)](../connectors/waf.md) | Analytics, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | [Azure Web Application Firewall (WAF)](../connectors/waf.md) | Analytics, Workbooks |
 | [`Event`](../tables/event.md) | - | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **14 content item(s)**:

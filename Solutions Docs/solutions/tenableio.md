@@ -8,18 +8,6 @@
 
 ---
 
-The [Tenableio](https://www.tenable.com/products/tenable-io) solution provides the capability to ingest Asset and Vulnerability data into Microsoft Sentinel through the REST API from the Tenable.io platform (Managed in the cloud). Refer to [API documentation](https://developer.tenable.com/reference/navigate) for more information.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Tenable |
@@ -31,13 +19,29 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [TenableIO](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO) |
 
+The [Tenableio](https://www.tenable.com/products/tenable-io) solution provides the capability to ingest Asset and Vulnerability data into Microsoft Sentinel through the REST API from the Tenable.io platform (Managed in the cloud). Refer to [API documentation](https://developer.tenable.com/reference/navigate) for more information.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶
+- [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,11 +49,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) 🔶 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
-| [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) 🔶 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
+| [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) � | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
+| [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) � | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:

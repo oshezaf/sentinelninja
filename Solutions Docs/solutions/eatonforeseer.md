@@ -8,10 +8,6 @@
 
 ---
 
-[Eaton Foreseer](https://www.eaton.com/in/en-us/catalog/services/foreseer.html) OT application generates logs into Microsoft Sentinel using MMA or AMA, use the Analytics template for creating Analytic Rules on unauthorized login attempts into the application and gain insights into login activity using the provided workbooks.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,14 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [EatonForeseer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EatonForeseer) |
+
+[Eaton Foreseer](https://www.eaton.com/in/en-us/catalog/services/foreseer.html) OT application generates logs into Microsoft Sentinel using MMA or AMA, use the Analytics template for creating Analytic Rules on unauthorized login attempts into the application and gain insights into login activity using the provided workbooks.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

@@ -8,12 +8,6 @@
 
 ---
 
-The CTERA solution allows you to ingest and analyze events from CTERA Edge Filers and Portal to Microsoft Sentinel. It detects ransomware incidents and potentially attacking users, abnormal user and excessive deletions  .
-
-[Learn more about Microsoft Sentinel](https://aka.ms/azuresentinel) | [Learn more about Solutions](https://aka.ms/azuresentinelsolutionsdoc)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | CTERA |
@@ -24,6 +18,16 @@ The CTERA solution allows you to ingest and analyze events from CTERA Edge Filer
 | **Author** | CTERA Networks - support@ctera.com |
 | **First Published** | 2024-07-28 |
 | **Solution Folder** | [CTERA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTERA) |
+
+The CTERA solution allows you to ingest and analyze events from CTERA Edge Filers and Portal to Microsoft Sentinel. It detects ransomware incidents and potentially attacking users, abnormal user and excessive deletions  .
+
+[Learn more about Microsoft Sentinel](https://aka.ms/azuresentinel) | [Learn more about Solutions](https://aka.ms/azuresentinelsolutionsdoc)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

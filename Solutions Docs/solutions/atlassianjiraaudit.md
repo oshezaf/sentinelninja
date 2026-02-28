@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 3.0.4 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2022-01-10 |
+| **Solution Folder** | [AtlassianJiraAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit) |
+
 The [Atlassian Jira](https://www.atlassian.com/software/jira) Audit solution provides the capability to ingest [Jira Audit Records](https://support.atlassian.com/jira-cloud-administration/docs/audit-activities-in-jira-applications/) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-audit-records/) for more information.
 
 **Underlying Microsoft Technologies used:**
@@ -20,27 +31,20 @@ This solution takes a dependency on the following technologies, and some of thes
 
  c.[Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector#connect-with-the-codeless-connector-platform)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 3.0.4 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2022-01-10 |
-| **Solution Folder** | [AtlassianJiraAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [Atlassian Jira Audit](../connectors/jiraauditapi.md) 🔶
-- [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) 🔶
+- [Atlassian Jira Audit](../connectors/jiraauditapi.md) �
+- [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -48,11 +52,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) 🔶 | [Atlassian Jira Audit](../connectors/jiraauditapi.md) | Analytics, Hunting, Workbooks |
-| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) 🔶 | [Atlassian Jira Audit](../connectors/jiraauditapi.md), [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) � | [Atlassian Jira Audit](../connectors/jiraauditapi.md) | Analytics, Hunting, Workbooks |
+| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) � | [Atlassian Jira Audit](../connectors/jiraauditapi.md), [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **29 content item(s)**:

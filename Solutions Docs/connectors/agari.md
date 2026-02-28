@@ -18,7 +18,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Agari_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_API_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 This connector uses a Agari REST API connection to push data into Azure Sentinel Log Analytics.
 
@@ -28,9 +28,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`agari_apdpolicy_log_CL`](../tables/agari-apdpolicy-log-cl.md) 🔶 | ? | ✓ | ? |
-| [`agari_apdtc_log_CL`](../tables/agari-apdtc-log-cl.md) 🔶 | ? | ✓ | ? |
-| [`agari_bpalerts_log_CL`](../tables/agari-bpalerts-log-cl.md) 🔶 | ? | ✓ | ? |
+| [`agari_apdpolicy_log_CL`](../tables/agari-apdpolicy-log-cl.md) � | ? | ✓ | ? |
+| [`agari_apdtc_log_CL`](../tables/agari-apdtc-log-cl.md) � | ? | ✓ | ? |
+| [`agari_bpalerts_log_CL`](../tables/agari-bpalerts-log-cl.md) � | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

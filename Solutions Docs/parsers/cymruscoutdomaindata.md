@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Domain_Data_CL`](../tables/domain-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Domain_Data_CL`](../tables/domain-data-cl.md) � | ? | ✓ | ? |
 
 ---
 

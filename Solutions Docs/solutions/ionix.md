@@ -8,16 +8,6 @@
 
 ---
 
-The [IONIX](https://ionix.io/) solution for Microsoft Sentinel enables you to ingest vulnerability logs from the IONIX platform into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution is dependent on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Codeless Connector Platform/Native Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | IONIX |
@@ -29,13 +19,27 @@ a. [Codeless Connector Platform/Native Sentinel Polling](https://docs.microsoft.
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [IONIX](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IONIX) |
 
+The [IONIX](https://ionix.io/) solution for Microsoft Sentinel enables you to ingest vulnerability logs from the IONIX platform into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution is dependent on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Codeless Connector Platform/Native Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) 🔶
+- [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,10 +47,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) 🔶 | [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) | Analytics, Workbooks |
+| [`CyberpionActionItems_CL`](../tables/cyberpionactionitems-cl.md) � | [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

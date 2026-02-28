@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) 🔶 | ? | ✓ | ? |
+| [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) � | ? | ✓ | ? |
 
 ---
 

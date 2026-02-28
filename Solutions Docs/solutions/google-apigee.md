@@ -8,16 +8,6 @@
 
 ---
 
-The [Google ApigeeX](https://cloud.google.com/apigee/docs) solution provides the capability to ingest ApigeeX audit logs into Microsoft Sentinel using the GCP Logging API or PubSub architecture. Refer to [GCP Logging API documentation](https://cloud.google.com/logging/docs/reference/v2/rest) for more information on the Azure Function connector and the [Microsoft Sentinel documentation](https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs) for the basics on PubSub based ingestion.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
- • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,16 +19,30 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2021-10-28 |
 | **Solution Folder** | [Google Apigee](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Apigee) |
 
+The [Google ApigeeX](https://cloud.google.com/apigee/docs) solution provides the capability to ingest ApigeeX audit logs into Microsoft Sentinel using the GCP Logging API or PubSub architecture. Refer to [GCP Logging API documentation](https://cloud.google.com/logging/docs/reference/v2/rest) for more information on the Azure Function connector and the [Microsoft Sentinel documentation](https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs) for the basics on PubSub based ingestion.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) ⚠️ 🔶
+- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) ⚠️ �
 - [Google ApigeeX (via Codeless Connector Framework)](../connectors/googleapigeexlogsccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,11 +50,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ApigeeX_CL`](../tables/apigeex-cl.md) 🔶 | [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) | - |
+| [`ApigeeX_CL`](../tables/apigeex-cl.md) � | [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) | - |
 | [`GCPApigee`](../tables/gcpapigee.md) | [Google ApigeeX (via Codeless Connector Framework)](../connectors/googleapigeexlogsccpdefinition.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:

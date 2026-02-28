@@ -8,10 +8,6 @@
 
 ---
 
-This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Controls, including access governance, privileged activity, configuration changes, data integrity, and log monitoring. It consolidates data from Microsoft Entra ID, Defender for Identity, Microsoft 365, Azure Activity, SQL auditing, and Windows/Linux system logs.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,17 +18,26 @@ This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Cont
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-12-11 |
 | **Solution Folder** | [SOX IT Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance) |
-| **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Windows Security Events](windows-security-events.md), [UEBA Essentials](ueba-essentials.md) |
+| **Pre-requisites** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Windows Security Events](windows-security-events.md), [UEBA Essentials](ueba-essentials.md) |
 
-## Dependencies
+This workbook helps organizations monitor SOX (Sarbanes–Oxley) IT General Controls, including access governance, privileged activity, configuration changes, data integrity, and log monitoring. It consolidates data from Microsoft Entra ID, Defender for Identity, Microsoft 365, Azure Activity, SQL auditing, and Windows/Linux system logs.
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **3 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Azure Activity](azure-activity.md) | explicit | - |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
+| Solution |
+|:---------|
+| [Azure Activity](azure-activity.md) |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) |
+| [Microsoft Entra ID](microsoft-entra-id.md) |
 
 ## Data Connectors
 

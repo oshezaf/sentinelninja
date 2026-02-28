@@ -8,10 +8,6 @@
 
 ---
 
-This solution is designed to enable Cloud Architects, Security Engineers, and Governance Risk Compliance Professionals to increase visibility before, during, and after a cybersecurity incident. The solution includes (1) workbook, (4) hunting queries, (8) analytics rules, and (3) playbooks providing a comprehensive approach to design, build, monitoring, and response in logging architectures. Information from logs on information systems1 (for both on-premises systems and connections hosted by third parties, such as cloud services providers (CSPs) is invaluable in the detection, investigation, and remediation of cyber threats. Executive Order 14028, Improving the Nation's Cybersecurity, directs decisive action to improve the Federal Government’s investigative and remediation capabilities. This memorandum was developed in accordance with and addresses the requirements in section 8 of the Executive Order for logging, log retention, and log management, with a focus on ensuring centralized access and visibility for the highest-level enterprise security operations center (SOC) of each agency. In addition, this memorandum establishes requirements for agencies3 to increase the sharing of such information, as needed and appropriate, to accelerate incident response efforts and to enable more effective defense of Federal information and executive branch departments and agencies. For more information, see (💡[Improving the Federal Government’s Investigative and Remediation Capabilities Related to Cybersecurity Incidents (M-21-31)](https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf)).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,80 +19,62 @@ This solution is designed to enable Cloud Architects, Security Engineers, and Go
 | **First Published** | 2021-12-05 |
 | **Solution Folder** | [MaturityModelForEventLogManagementM2131](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MaturityModelForEventLogManagementM2131) |
 
-## Dependencies
+This solution is designed to enable Cloud Architects, Security Engineers, and Governance Risk Compliance Professionals to increase visibility before, during, and after a cybersecurity incident. The solution includes (1) workbook, (4) hunting queries, (8) analytics rules, and (3) playbooks providing a comprehensive approach to design, build, monitoring, and response in logging architectures. Information from logs on information systems1 (for both on-premises systems and connections hosted by third parties, such as cloud services providers (CSPs) is invaluable in the detection, investigation, and remediation of cyber threats. Executive Order 14028, Improving the Nation's Cybersecurity, directs decisive action to improve the Federal Government’s investigative and remediation capabilities. This memorandum was developed in accordance with and addresses the requirements in section 8 of the Executive Order for logging, log retention, and log management, with a focus on ensuring centralized access and visibility for the highest-level enterprise security operations center (SOC) of each agency. In addition, this memorandum establishes requirements for agencies3 to increase the sharing of such information, as needed and appropriate, to accelerate incident response efforts and to enable more effective defense of Federal information and executive branch departments and agencies. For more information, see (💡[Improving the Federal Government’s Investigative and Remediation Capabilities Related to Cybersecurity Incidents (M-21-31)](https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf)).
 
-This solution has **23 optional** (ASIM-based) dependencies on other solutions that can provide data through ASIM parsers:
+## Contents
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Azure Firewall](azure-firewall.md) | ASIM (optional) | ASIM schemas: Dns |
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [CiscoASA](ciscoasa.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [CiscoUmbrella](ciscoumbrella.md) | ASIM (optional) | ASIM schemas: Dns |
-| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [Corelight](corelight.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [IllumioSaaS](illumiosaas.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [NXLogDNSLogs](nxlogdnslogs.md) | ASIM (optional) | ASIM schemas: Dns |
-| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [SlashNext](slashnext.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: Dns, NetworkSession |
-| [Windows Security Events](windows-security-events.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Windows Server DNS](windows-server-dns.md) | ASIM (optional) | ASIM schemas: Dns |
+- [ASIM Pre-requisites](#asim-pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+## <a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites
 
-This solution uses ASIM parsers and supports the following products:
+This solution uses the [`_Im_Dns`](../asim/imdns.md) and [`_Im_NetworkSession`](../asim/imnetworksession.md) [ASIM (Advanced Security Information Model)](https://learn.microsoft.com/azure/sentinel/normalization) parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.
 
-| Product |
-|:--------|
-| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
-| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
-| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
-| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
-| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
-| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
-| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
-| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
-| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
-| [Cisco Umbrella](../asim/asim-products-index.md#cisco-umbrella) |
-| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
-| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
-| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
-| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
-| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
-| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
-| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
-| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
-| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) |
-| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
-| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
-| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
-| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
-| [Native](../asim/asim-products-index.md#native) |
-| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
-| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
-| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
-| [SonicWall](../asim/asim-products-index.md#sonicwall) |
-| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
-| [VMConnection](../asim/asim-products-index.md#vmconnection) |
-| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
-| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
-| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
-| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
-| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
-| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) |
-| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+### Supported Products
+
+| Product | Dependency Solution |
+|:--------|:--------------------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) | [AWS VPC Flow Logs](aws-vpc-flow-logs.md) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) | [Syslog](syslog.md) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | [Azure Firewall](azure-firewall.md) |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) | - |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) | - |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) | [Syslog](syslog.md) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) | [CiscoMeraki](ciscomeraki.md)<br>[CustomLogsAma](customlogsama.md)<br>[Syslog](syslog.md) |
+| [Cisco Umbrella](../asim/asim-products-index.md#cisco-umbrella) | [CiscoUmbrella](ciscoumbrella.md) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) | [CiscoASA](ciscoasa.md)<br>[Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) | [Corelight](corelight.md) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) | - |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) | [IllumioSaaS](illumiosaas.md) |
+| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) | [Syslog](syslog.md) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) | - |
+| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) | [NXLogDNSLogs](nxlogdnslogs.md)<br>[Windows Server DNS](windows-server-dns.md) |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) | - |
+| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) | [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Native](../asim/asim-products-index.md#native) | [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md)<br>[CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) | [SentinelOne](sentinelone.md) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) | [Syslog](syslog.md) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) | - |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) | [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) | [CustomLogsAma](customlogsama.md)<br>[Vectra AI Stream](vectra-ai-stream.md) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) | [Syslog](syslog.md) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) | [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md)<br>[Windows Forwarded Events](windows-forwarded-events.md)<br>[Windows Security Events](windows-security-events.md) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) | [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
 
 ## Data Connectors
 
@@ -135,12 +113,10 @@ This solution uses ASIM parsers and supports the following products:
 - [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) *(dependency on [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md))*
 - [Illumio SaaS](../connectors/illumiosaasdataconnector.md) *(dependency on [IllumioSaaS](illumiosaas.md))*
 - [Illumio Saas](../connectors/illumiosaasccfdefinition.md) *(dependency on [IllumioSaaS](illumiosaas.md))*
-- [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) *(dependency on [MimecastTIRegional](mimecasttiregional.md))*
 - [NXLog DNS Logs](../connectors/nxlogdnslogs.md) *(dependency on [NXLogDNSLogs](nxlogdnslogs.md))*
 - [Security Events via Legacy Agent](../connectors/securityevents.md) *(dependency on [Windows Security Events](windows-security-events.md))*
 - [SentinelOne](../connectors/sentinelone.md) *(dependency on [SentinelOne](sentinelone.md))*
 - [SentinelOne](../connectors/sentineloneccp.md) *(dependency on [SentinelOne](sentinelone.md))*
-- [SlashNext Function App](../connectors/slashnextfunctionapp.md) *(dependency on [SlashNext](slashnext.md))*
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 - [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) *(dependency on [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md))*
@@ -151,15 +127,6 @@ This solution uses ASIM parsers and supports the following products:
 - [Windows Forwarded Events](../connectors/windowsforwardedevents.md) *(dependency on [Windows Forwarded Events](windows-forwarded-events.md))*
 - [Windows Security Events via AMA](../connectors/windowssecurityevents.md) *(dependency on [Windows Security Events](windows-security-events.md))*
 - [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) *(dependency on [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md))*
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This solution uses **2 ASIM parser(s)** for normalized data:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`_Im_Dns`](../asim/imdns.md) | Workbooks |
-| [`_Im_NetworkSession`](../asim/imnetworksession.md) | Workbooks |
 
 ## Tables Used
 

@@ -8,18 +8,6 @@
 
 ---
 
-The [DNS](https://docs.microsoft.com/windows-server/networking/dns/dns-top) solution for Microsoft Sentinel allows you to ingest DNS analytic and audit logs into Microsoft Sentinel. The DNS logs are collected only from Windows agents.
-
-Installing this solution will deploy two data connectors,
-
-1. DNS via AMA - This data connector helps in ingesting Windows DNS logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/en-us/azure/sentinel/connect-dns-ama). Microsoft recommends using this Data Connector.
-
-2. DNS via Legacy Agent - This data connector helps in ingesting Windows DNS logs into your Log Analytics Workspace using the legacy Log Analytics agent.
-
-<P style="color:red">**NOTE**: Microsoft recommends Installation of DNS via AMA. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -30,6 +18,22 @@ Installing this solution will deploy two data connectors,
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-11 |
 | **Solution Folder** | [Windows Server DNS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS) |
+
+The [DNS](https://docs.microsoft.com/windows-server/networking/dns/dns-top) solution for Microsoft Sentinel allows you to ingest DNS analytic and audit logs into Microsoft Sentinel. The DNS logs are collected only from Windows agents.
+
+Installing this solution will deploy two data connectors,
+
+1. DNS via AMA - This data connector helps in ingesting Windows DNS logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/en-us/azure/sentinel/connect-dns-ama). Microsoft recommends using this Data Connector.
+
+2. DNS via Legacy Agent - This data connector helps in ingesting Windows DNS logs into your Log Analytics Workspace using the legacy Log Analytics agent.
+
+<P style="color:red">**NOTE**: Microsoft recommends Installation of DNS via AMA. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

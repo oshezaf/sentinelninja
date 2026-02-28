@@ -8,16 +8,6 @@
 
 ---
 
-The [Microsoft Defender for IoT](https://azure.microsoft.com/services/iot-defender/) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Defender for IoT on assessing your Internet of Things (IoT)/Operational Technology (OT) infrastructure. 
-
- ** Underlying Microsoft Technologies used: ** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:  
-
- a. [Codeless Connector Platform/Native Microsoft Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,13 +19,28 @@ The [Microsoft Defender for IoT](https://azure.microsoft.com/services/iot-defend
 | **First Published** | 2021-10-26 |
 | **Solution Folder** | [IoTOTThreatMonitoringwithDefenderforIoT](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IoTOTThreatMonitoringwithDefenderforIoT) |
 
+The [Microsoft Defender for IoT](https://azure.microsoft.com/services/iot-defender/) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Defender for IoT on assessing your Internet of Things (IoT)/Operational Technology (OT) infrastructure. 
+
+ ** Underlying Microsoft Technologies used: ** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:  
+
+ a. [Codeless Connector Platform/Native Microsoft Sentinel Polling](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Internal Tables](#internal-tables)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
 - [Microsoft Defender for IoT](../connectors/iot.md)
 
-### Internal Tables
+## Internal Tables
 
 The following **2 table(s)** are used internally by this solution's content items:
 

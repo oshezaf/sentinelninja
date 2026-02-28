@@ -6,8 +6,6 @@
 
 ---
 
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | MailGuard 365 |
@@ -18,15 +16,21 @@
 | **Last Updated** | 2023-06-08 |
 | **Solution Folder** | [MailGuard 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365) |
 
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [MailGuard 365](../connectors/mailguard365.md) ⚠️ 🔶
+- [MailGuard 365](../connectors/mailguard365.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -34,10 +38,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) 🔶 | [MailGuard 365](../connectors/mailguard365.md) | Hunting, Workbooks |
+| [`MailGuard365_Threats_CL`](../tables/mailguard365-threats-cl.md) � | [MailGuard 365](../connectors/mailguard365.md) | Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

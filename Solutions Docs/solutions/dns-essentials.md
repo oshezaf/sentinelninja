@@ -8,33 +8,6 @@
 
 ---
 
-This is a [domain solution](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&reserved=0) and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
-
-**Prerequisite :-**
-
- Install one or more of the listed solutions, or develop your custom ASIM parsers to unlock the value provided by this solution.
- 1. Windows Server DNS 
- 2. Azure Firewall 
- 3. Cisco Umbrella 
- 4. Corelight Zeek 
- 5. Google Cloud Platform DNS 
- 6. Infoblox NIOS 
- 7. ISC Bind 
- 8. Vectra AI 
- 9. Zscaler Internet Access 
-
-**Underlying Microsoft Technologies used:** 
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs: 
- 1. Product solutions as described above 
- 2. Logic app for data summarization
-
-**Recommendation :-**
-
-It is highly recommended to use the **Summarize Data for DNS Essentials Solution** logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules & Hunting queries.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -46,52 +19,47 @@ It is highly recommended to use the **Summarize Data for DNS Essentials Solution
 | **First Published** | 2023-01-14 |
 | **Solution Folder** | [DNS Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials) |
 
-## Additional Information
+This is a [domain solution](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&reserved=0) and does not include any data connectors. The content in this solution requires one of the product solutions below, as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
+
+For details on the data sources and ASIM parsers supported by this solution, see the [ASIM Pre-requisites](#asim-pre-requisites) section below.
+
+**Recommendation :-**
+
+It is highly recommended to use the **Summarize Data for DNS Essentials Solution** logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules & Hunting queries.
+
+**Additional Information**
 
 - 📖 **Related Documentation:** [ASIM-based domain solutions overview](https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions) - Uses ASIM DNS schema for cross-product threat detection
 - 📖 **Related Documentation:** [ASIM DNS schema reference](https://learn.microsoft.com/azure/sentinel/normalization-schema-dns) - Field definitions for normalized DNS logs
 
-## Dependencies
+## Contents
 
-This solution has **15 optional** (ASIM-based) dependencies on other solutions that can provide data through ASIM parsers:
+- [ASIM Pre-requisites](#asim-pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Internal Tables](#internal-tables)
+- [Content Items](#content-items)
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Azure Firewall](azure-firewall.md) | ASIM (optional) | ASIM schemas: Dns |
-| [CiscoUmbrella](ciscoumbrella.md) | ASIM (optional) | ASIM schemas: Dns |
-| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: Dns |
-| [Corelight](corelight.md) | ASIM (optional) | ASIM schemas: Dns |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: Dns |
-| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: Dns |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: Dns |
-| [NXLogDNSLogs](nxlogdnslogs.md) | ASIM (optional) | ASIM schemas: Dns |
-| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: Dns |
-| [SlashNext](slashnext.md) | ASIM (optional) | ASIM schemas: Dns |
-| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: Dns |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: Dns |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: Dns |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: Dns |
-| [Windows Server DNS](windows-server-dns.md) | ASIM (optional) | ASIM schemas: Dns |
+## <a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+This solution uses the [`_Im_Dns`](../asim/imdns.md) [ASIM (Advanced Security Information Model)](https://learn.microsoft.com/azure/sentinel/normalization) parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.
 
-This solution uses ASIM parsers and supports the following products:
+### Supported Products
 
-| Product |
-|:--------|
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
-| [Cisco Umbrella](../asim/asim-products-index.md#cisco-umbrella) |
-| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) |
-| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
-| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) |
-| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) |
-| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) |
-| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) |
-| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) |
-| [Native](../asim/asim-products-index.md#native) |
-| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
-| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
-| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) |
+| Product | Dependency Solution |
+|:--------|:--------------------|
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | [Azure Firewall](azure-firewall.md) |
+| [Cisco Umbrella](../asim/asim-products-index.md#cisco-umbrella) | [CiscoUmbrella](ciscoumbrella.md) |
+| [Corelight Zeek](../asim/asim-products-index.md#corelight-zeek) | [Corelight](corelight.md) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [GCP Cloud DNS](../asim/asim-products-index.md#gcp-cloud-dns) | - |
+| [Infoblox BloxOne](../asim/asim-products-index.md#infoblox-bloxone) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Infoblox NIOS](../asim/asim-products-index.md#infoblox-nios) | [Syslog](syslog.md) |
+| [MS DNS Events](../asim/asim-products-index.md#ms-dns-events) | [NXLogDNSLogs](nxlogdnslogs.md)<br>[Windows Server DNS](windows-server-dns.md) |
+| [Microsoft Windows Events Sysmon](../asim/asim-products-index.md#microsoft-windows-events-sysmon) | [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Native](../asim/asim-products-index.md#native) | [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) | [SentinelOne](sentinelone.md) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) | [CustomLogsAma](customlogsama.md)<br>[Vectra AI Stream](vectra-ai-stream.md) |
+| [Zscaler ZIA DNS](../asim/asim-products-index.md#zscaler-zia-dns) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
 
 ## Data Connectors
 
@@ -113,11 +81,9 @@ This solution uses ASIM parsers and supports the following products:
 - [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) *(dependency on [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md))*
 - [Custom logs via AMA](../connectors/customlogsviaama.md) *(dependency on [CustomLogsAma](customlogsama.md))*
 - [DNS](../connectors/dns.md) *(dependency on [Windows Server DNS](windows-server-dns.md))*
-- [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) *(dependency on [MimecastTIRegional](mimecasttiregional.md))*
 - [NXLog DNS Logs](../connectors/nxlogdnslogs.md) *(dependency on [NXLogDNSLogs](nxlogdnslogs.md))*
 - [SentinelOne](../connectors/sentinelone.md) *(dependency on [SentinelOne](sentinelone.md))*
 - [SentinelOne](../connectors/sentineloneccp.md) *(dependency on [SentinelOne](sentinelone.md))*
-- [SlashNext Function App](../connectors/slashnextfunctionapp.md) *(dependency on [SlashNext](slashnext.md))*
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 - [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) *(dependency on [Vectra AI Stream](vectra-ai-stream.md))*
@@ -126,15 +92,7 @@ This solution uses ASIM parsers and supports the following products:
 - [VirtualMetric DataStream for Microsoft Sentinel data lake](../connectors/virtualmetricmssentineldatalakeconnector.md) *(dependency on [VirtualMetric DataStream](virtualmetric-datastream.md))*
 - [Windows Forwarded Events](../connectors/windowsforwardedevents.md) *(dependency on [Windows Forwarded Events](windows-forwarded-events.md))*
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This solution uses **1 ASIM parser(s)** for normalized data:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`_Im_Dns`](../asim/imdns.md) | Analytics, Hunting, Playbooks, Workbooks |
-
-### Internal Tables
+## Internal Tables
 
 The following **5 table(s)** are used internally by this solution's content items:
 

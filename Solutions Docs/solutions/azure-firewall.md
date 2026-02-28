@@ -8,16 +8,6 @@
 
 ---
 
-The [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) solution for Microsoft Sentinel enables ingestion of DNS Proxy, Application Rule and Network Rule [logs](https://docs.microsoft.com/azure/firewall/logs-and-metrics) from Azure Firewalls.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
- a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,13 +19,27 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Azure Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall) |
 
+The [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) solution for Microsoft Sentinel enables ingestion of DNS Proxy, Application Rule and Network Rule [logs](https://docs.microsoft.com/azure/firewall/logs-and-metrics) from Azure Firewalls.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Firewall](../connectors/azurefirewall.md) 🔶
+- [Azure Firewall](../connectors/azurefirewall.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -52,10 +56,10 @@ This solution uses **10 table(s)**:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Workbooks |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **18 content item(s)**:

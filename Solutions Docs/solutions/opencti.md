@@ -8,12 +8,6 @@
 
 ---
 
-The [OpenCTI](https://www.filigran.io/en/products/opencti/) solution for Microsoft Sentinel enables you to ingest threat intelligence data from OpenCTI platform into Microsoft Sentinel. This solution includes SOAR Connector and Playbooks which leverage OpenCTI indicators data to not only enrich Microsoft Sentinel incidents but also add indicators to OpenCTI.
-
- 
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -25,6 +19,10 @@ The [OpenCTI](https://www.filigran.io/en/products/opencti/) solution for Microso
 | **First Published** | 2022-09-22 |
 | **Last Updated** | 2022-09-22 |
 | **Solution Folder** | [OpenCTI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI) |
+
+The [OpenCTI](https://www.filigran.io/en/products/opencti/) solution for Microsoft Sentinel enables you to ingest threat intelligence data from OpenCTI platform into Microsoft Sentinel. This solution includes SOAR Connector and Playbooks which leverage OpenCTI indicators data to not only enrich Microsoft Sentinel incidents but also add indicators to OpenCTI.
+
+ 
 
 ## Data Connectors
 

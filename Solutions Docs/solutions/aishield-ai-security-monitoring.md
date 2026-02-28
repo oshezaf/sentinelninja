@@ -8,16 +8,6 @@
 
 ---
 
-The [AIShield AI Security Monitoring](https://www.boschaishield.com/) solution allows users to connect with AIShield custom defense mechanism logs with Microsoft Sentinel. It gives users more insight into their organization's AI assets security posturing and improves their AI systems security operation capabilities. AIShield.GuArdIan analyzes the LLM generated content to identify and mitigate harmful content, safeguarding against legal, policy, role based, and usage based violations.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | AIShield |
@@ -30,13 +20,27 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 | **Last Updated** | 2025-03-06 |
 | **Solution Folder** | [AIShield AI Security Monitoring](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AIShield%20AI%20Security%20Monitoring) |
 
+The [AIShield AI Security Monitoring](https://www.boschaishield.com/) solution allows users to connect with AIShield custom defense mechanism logs with Microsoft Sentinel. It gives users more insight into their organization's AI assets security posturing and improves their AI systems security operation capabilities. AIShield.GuArdIan analyzes the LLM generated content to identify and mitigate harmful content, safeguarding against legal, policy, role based, and usage based violations.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [AIShield](../connectors/boschaishield.md) 🔶
+- [AIShield](../connectors/boschaishield.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -44,11 +48,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AIShield_CL`](../tables/aishield-cl.md) 🔶 | [AIShield](../connectors/boschaishield.md) | Analytics, Workbooks |
-| [`Guardian_CL`](../tables/guardian-cl.md) 🔶 | - | Analytics |
+| [`AIShield_CL`](../tables/aishield-cl.md) � | [AIShield](../connectors/boschaishield.md) | Analytics, Workbooks |
+| [`Guardian_CL`](../tables/guardian-cl.md) � | - | Analytics |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **42 content item(s)**:

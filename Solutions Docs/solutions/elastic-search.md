@@ -10,11 +10,6 @@
 
 ---
 
-[Elasticsearch](https://www.elastic.co/elasticsearch/) is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease. 
- This Sentinel Solution contain playbooks to help enriching sentinel incident by querying elastic search ondemand or as and when incident occurs 
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -25,6 +20,9 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-30 |
 | **Solution Folder** | [Elastic Search](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Elastic%20Search) |
+
+[Elasticsearch](https://www.elastic.co/elasticsearch/) is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease. 
+ This Sentinel Solution contain playbooks to help enriching sentinel incident by querying elastic search ondemand or as and when incident occurs 
 
 ## Data Connectors
 

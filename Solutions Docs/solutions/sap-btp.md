@@ -8,12 +8,6 @@
 
 ---
 
-SAP® Business Technology Platform (BTP) is an infrastructure that allows SAP® customers to build no-code/low-code custom apps integrating to SAP® and third-party applications and datasets in order to achieve better business value by streamlining user's activities and interactions with the organization's business applications.
-
-The BTP Solution for Microsoft Sentinel will collect audits and activity logs from the BTP infrastructure and BTP based apps, and will detect threats, suspicious activities, illegitimate activities, and more.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -24,6 +18,16 @@ The BTP Solution for Microsoft Sentinel will collect audits and activity logs fr
 | **Author** | Microsoft |
 | **First Published** | 2023-04-04 |
 | **Solution Folder** | [SAP BTP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP) |
+
+SAP® Business Technology Platform (BTP) is an infrastructure that allows SAP® customers to build no-code/low-code custom apps integrating to SAP® and third-party applications and datasets in order to achieve better business value by streamlining user's activities and interactions with the organization's business applications.
+
+The BTP Solution for Microsoft Sentinel will collect audits and activity logs from the BTP infrastructure and BTP based apps, and will detect threats, suspicious activities, illegitimate activities, and more.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

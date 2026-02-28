@@ -8,10 +8,6 @@
 
 ---
 
-Luminar IOCs and Leaked Credentials connector allows integration of intelligence-based IOC data and customer-related leaked records identified by Luminar.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cognyte Luminar |
@@ -22,6 +18,8 @@ Luminar IOCs and Leaked Credentials connector allows integration of intelligence
 | **Author** | Cognyte |
 | **First Published** | 2023-09-15 |
 | **Solution Folder** | [CognyteLuminar](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar) |
+
+Luminar IOCs and Leaked Credentials connector allows integration of intelligence-based IOC data and customer-related leaked records identified by Luminar.
 
 ## Data Connectors
 

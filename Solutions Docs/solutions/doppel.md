@@ -8,12 +8,6 @@
 
 ---
 
-The Doppel Integration for Microsoft Sentinel streamlines the ingestion of Doppel security events and alerts through a custom data connector, converting raw event logs into a compatible format for use in Workbooks. This enhances digital risk visibility by enabling users to monitor threats, analyze alerts by category, and gain actionable insights.
-
-
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Doppel |
@@ -25,13 +19,23 @@ The Doppel Integration for Microsoft Sentinel streamlines the ingestion of Doppe
 | **First Published** | 2024-11-20 |
 | **Solution Folder** | [Doppel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Doppel) |
 
+The Doppel Integration for Microsoft Sentinel streamlines the ingestion of Doppel security events and alerts through a custom data connector, converting raw event logs into a compatible format for use in Workbooks. This enhances digital risk visibility by enabling users to monitor threats, analyze alerts by category, and gain actionable insights.
+
+
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Doppel Data Connector](../connectors/doppel-dataconnector.md) 🔶
+- [Doppel Data Connector](../connectors/doppel-dataconnector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -39,10 +43,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`DoppelTable_CL`](../tables/doppeltable-cl.md) 🔶 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | Workbooks |
+| [`DoppelTable_CL`](../tables/doppeltable-cl.md) � | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

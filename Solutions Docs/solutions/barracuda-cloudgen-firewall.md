@@ -8,14 +8,6 @@
 
 ---
 
-The [Barracuda CloudGen Firewall ](https://www.barracuda.com/products/cloudgenfirewall) (CGFW) Solution for Microsoft Sentinel allows you to easily connect your Barracuda CGFW syslogs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
-
- This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation.
-
- **NOTE**: Microsoft recommends installation of Syslog via AMA Connector.Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Community |
@@ -26,21 +18,37 @@ The [Barracuda CloudGen Firewall ](https://www.barracuda.com/products/cloudgenfi
 | **Author** | Barracuda |
 | **First Published** | 2021-05-02 |
 | **Solution Folder** | [Barracuda CloudGen Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20CloudGen%20Firewall) |
-| **Dependencies** | [Syslog](syslog.md) |
+| **Pre-requisites** | [Syslog](syslog.md) |
 
-## Dependencies
+The [Barracuda CloudGen Firewall ](https://www.barracuda.com/products/cloudgenfirewall) (CGFW) Solution for Microsoft Sentinel allows you to easily connect your Barracuda CGFW syslogs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
+
+ This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation.
+
+ **NOTE**: Microsoft recommends installation of Syslog via AMA Connector.Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Syslog](syslog.md) | explicit | - |
+| Solution |
+|:---------|
+| [Syslog](syslog.md) |
 
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
 - [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 

@@ -10,10 +10,6 @@
 
 ---
 
-The IPinfo data connectors installs Azure Function app to download different datasets like standard_location, standard_privacy and standard_company and insert them into custom log tables in Microsoft Sentinel
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | IPinfo |
@@ -24,6 +20,8 @@ The IPinfo data connectors installs Azure Function app to download different dat
 | **Author** | IPinfo |
 | **First Published** | 2024-05-02 |
 | **Solution Folder** | [IPinfo](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo) |
+
+The IPinfo data connectors installs Azure Function app to download different datasets like standard_location, standard_privacy and standard_company and insert them into custom log tables in Microsoft Sentinel
 
 ## Data Connectors
 

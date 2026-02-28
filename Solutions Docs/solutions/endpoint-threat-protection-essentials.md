@@ -8,22 +8,6 @@
 
 ---
 
-The **Endpoint Threat Protection Essentials** solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.  
- 
- **Pre-requisites:** 
- 
- This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution. 
- 
- 1. Windows Security Events 
-
- 2. Microsoft Defender XDR 
-
- 3. Windows Forwarded Events 
-
- **Keywords:** LOLBins, PowerShell, Registry, Lsass, Commandline, scheduled tasks, Malware. 
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -34,42 +18,51 @@ The **Endpoint Threat Protection Essentials** solution provides content to monit
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [Endpoint Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials) |
-| **Dependencies** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Forwarded Events](windows-forwarded-events.md) |
+| **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Windows Forwarded Events](windows-forwarded-events.md) |
 
-## Dependencies
+The **Endpoint Threat Protection Essentials** solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.  
+ 
+ For details on the data sources and ASIM parsers supported by this solution, see the [ASIM Pre-requisites](#asim-pre-requisites) section below.
 
-This solution has **3 required** and **7 optional** (ASIM-based) dependencies on other solutions:
+**Keywords:** LOLBins, PowerShell, Registry, Lsass, Commandline, scheduled tasks, Malware.
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit, ASIM (optional) | ASIM schemas: RegistryEvent |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: RegistryEvent |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
-| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
-| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: ProcessEvent |
-| [Trend Micro Vision One](trend-micro-vision-one.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit, ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
-| [Windows Security Events](windows-security-events.md) | explicit, ASIM (optional) | ASIM schemas: ProcessEvent, RegistryEvent |
+## Contents
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+- [Pre-requisites](#pre-requisites)
+- [ASIM Pre-requisites](#asim-pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
-This solution uses ASIM parsers and supports the following products:
+## Pre-requisites
 
-| Product |
-|:--------|
-| [Microsoft 365 Defender for Endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
-| [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
-| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
-| [Microsoft Sysmon](../asim/asim-products-index.md#microsoft-sysmon) |
-| [Native](../asim/asim-products-index.md#native) |
-| [Security Events](../asim/asim-products-index.md#security-events) |
-| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
-| [Sysmon](../asim/asim-products-index.md#sysmon) |
-| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
-| [Trend Micro Vision One](../asim/asim-products-index.md#trend-micro-vision-one) |
-| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
+This solution depends on **3 other solution(s)**:
+
+| Solution | Details |
+|:---------|:--------|
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) | Also provides ASIM schemas: RegistryEvent |
+| [Windows Forwarded Events](windows-forwarded-events.md) | Also provides ASIM schemas: ProcessEvent, RegistryEvent |
+| [Windows Security Events](windows-security-events.md) | Also provides ASIM schemas: ProcessEvent, RegistryEvent |
+
+## <a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites
+
+This solution uses the [`_ASim_ProcessEvent_Create`](../asim/asimprocesseventcreate.md), [`imProcessCreate`](../asim/improcesscreate.md), and [`imRegistry`](../asim/imregistry.md) [ASIM (Advanced Security Information Model)](https://learn.microsoft.com/azure/sentinel/normalization) parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.
+
+### Supported Products
+
+| Product | Dependency Solution |
+|:--------|:--------------------|
+| [Microsoft 365 Defender for Endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) | [Microsoft Defender XDR](microsoft-defender-xdr.md) |
+| [Microsoft 365 Defender for endpoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) | - |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) | - |
+| [Microsoft Sysmon](../asim/asim-products-index.md#microsoft-sysmon) | [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Native](../asim/asim-products-index.md#native) | [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [Security Events](../asim/asim-products-index.md#security-events) | [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md)<br>[Windows Forwarded Events](windows-forwarded-events.md)<br>[Windows Security Events](windows-security-events.md) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) | [SentinelOne](sentinelone.md) |
+| [Sysmon](../asim/asim-products-index.md#sysmon) | [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) | [Syslog](syslog.md) |
+| [Trend Micro Vision One](../asim/asim-products-index.md#trend-micro-vision-one) | [Trend Micro Vision One](trend-micro-vision-one.md) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) | [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
 
 ## Data Connectors
 
@@ -90,7 +83,6 @@ This solution uses ASIM parsers and supports the following products:
 - [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) *(dependency on [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md))*
 - [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) *(dependency on [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md))*
 - [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) *(dependency on [Microsoft Defender XDR](microsoft-defender-xdr.md))*
-- [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) *(dependency on [MimecastTIRegional](mimecasttiregional.md))*
 - [Security Events via Legacy Agent](../connectors/securityevents.md) *(dependency on [Windows Security Events](windows-security-events.md))*
 - [SentinelOne](../connectors/sentinelone.md) *(dependency on [SentinelOne](sentinelone.md))*
 - [SentinelOne](../connectors/sentineloneccp.md) *(dependency on [SentinelOne](sentinelone.md))*
@@ -101,16 +93,6 @@ This solution uses ASIM parsers and supports the following products:
 - [Windows Forwarded Events](../connectors/windowsforwardedevents.md) *(dependency on [Windows Forwarded Events](windows-forwarded-events.md))*
 - [Windows Security Events via AMA](../connectors/windowssecurityevents.md) *(dependency on [Windows Security Events](windows-security-events.md))*
 - [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) *(dependency on [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md))*
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This solution uses **3 ASIM parser(s)** for normalized data:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`_ASim_ProcessEvent_Create`](../asim/asimprocesseventcreate.md) | Hunting |
-| [`imProcessCreate`](../asim/improcesscreate.md) | Hunting |
-| [`imRegistry`](../asim/imregistry.md) | Hunting |
 
 ## Tables Used
 

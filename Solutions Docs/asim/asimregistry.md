@@ -27,17 +27,17 @@ This ASIM parser supports normalizing Registry Event logs from all supported sou
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Microsoft 365 Defender for Endpoint | [_ASim_RegistryEvent_Microsoft365D](asimregistryeventmicrosoft365d.md) |
-| Security Events | [_ASim_RegistryEvent_MicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md) |
-| Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmon](asimregistryeventmicrosoftsysmon.md) |
-| Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmonWindowsEvent](asimregistryeventmicrosoftsysmonwindowsevent.md) |
-| Security Events | [_ASim_RegistryEvent_MicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md) |
-| Native | [_ASim_RegistryEvent_Native](asimregistryeventnative.md) |
-| SentinelOne | [_ASim_RegistryEvent_SentinelOne](asimregistryeventsentinelone.md) |
-| Trend Micro Vision One | [_ASim_RegistryEvent_TrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md) |
-| VMware Carbon Black Cloud | [_ASim_RegistryEvent_VMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Microsoft 365 Defender for Endpoint | [_ASim_RegistryEvent_Microsoft365D](asimregistryeventmicrosoft365d.md) | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| Security Events | [_ASim_RegistryEvent_MicrosoftSecurityEvent](asimregistryeventmicrosoftsecurityevent.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)<br>[Windows Security Events](../solutions/windows-security-events.md) |
+| Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmon](asimregistryeventmicrosoftsysmon.md) |  |
+| Microsoft Sysmon | [_ASim_RegistryEvent_MicrosoftSysmonWindowsEvent](asimregistryeventmicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Security Events | [_ASim_RegistryEvent_MicrosoftWindowsEvent](asimregistryeventmicrosoftwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Native | [_ASim_RegistryEvent_Native](asimregistryeventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| SentinelOne | [_ASim_RegistryEvent_SentinelOne](asimregistryeventsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+| Trend Micro Vision One | [_ASim_RegistryEvent_TrendMicroVisionOne](asimregistryeventtrendmicrovisionone.md) | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
+| VMware Carbon Black Cloud | [_ASim_RegistryEvent_VMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 
 ## Source Tables
 

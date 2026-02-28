@@ -10,12 +10,6 @@
 
 ---
 
-The [Eset Security Management](https://help.eset.com/eol/?ug=esmc70) solution for Microsoft Sentinel enables you to ingest the threat events, audit logs, firewall events and web site filter events reported in the Eset SMC platform into Microsoft Sentinel. /n/n**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:/n/na. [Agent-based log collection (Syslog) ](https://docs.microsoft.com/azure/sentinel/connect-syslog)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Eset |
@@ -27,13 +21,23 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2022-05-11 |
 | **Solution Folder** | [Eset Security Management Center](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center) |
 
+The [Eset Security Management](https://help.eset.com/eol/?ug=esmc70) solution for Microsoft Sentinel enables you to ingest the threat events, audit logs, firewall events and web site filter events reported in the Eset SMC platform into Microsoft Sentinel. /n/n**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:/n/na. [Agent-based log collection (Syslog) ](https://docs.microsoft.com/azure/sentinel/connect-syslog)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Eset Security Management Center](../connectors/esetsmc.md) 🔶
+- [Eset Security Management Center](../connectors/esetsmc.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,10 +45,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`eset_CL`](../tables/eset-cl.md) 🔶 | [Eset Security Management Center](../connectors/esetsmc.md) | Analytics, Workbooks |
+| [`eset_CL`](../tables/eset-cl.md) � | [Eset Security Management Center](../connectors/esetsmc.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:

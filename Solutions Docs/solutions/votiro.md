@@ -10,14 +10,6 @@
 
 ---
 
-Threat related information will be sent from Votiro Sanitization Engine to Microsoft Sentinel, allowing customers to better mitigate cyber attack, do effective threat hunting and enrich cyber security alerts. 
-
- This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Votiro |
@@ -27,21 +19,37 @@ Threat related information will be sent from Votiro Sanitization Engine to Micro
 | **Version** | 3.0.1 |
 | **Author** | Votiro - support@votiro.com |
 | **Solution Folder** | [Votiro](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+Threat related information will be sent from Votiro Sanitization Engine to Microsoft Sentinel, allowing customers to better mitigate cyber attack, do effective threat hunting and enrich cyber security alerts. 
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
 - [[Deprecated] Votiro Sanitization Engine Logs](../connectors/votiro.md)
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

@@ -10,10 +10,6 @@
 
 ---
 
-The Imperva WAF Gateway[https://www.imperva.com/products/web-application-firewall-waf/] solution for Microsoft Sentinel enables you to quickly connect your Imperva WAF Gateway alerts to Microsoft Sentinel. This provides you additional insight into your organization's WAF traffic and improves your security operation capabilities.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Imperva |
@@ -24,6 +20,8 @@ The Imperva WAF Gateway[https://www.imperva.com/products/web-application-firewal
 | **Author** | Imperva |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Imperva WAF Gateway](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Imperva%20WAF%20Gateway) |
+
+The Imperva WAF Gateway[https://www.imperva.com/products/web-application-firewall-waf/] solution for Microsoft Sentinel enables you to quickly connect your Imperva WAF Gateway alerts to Microsoft Sentinel. This provides you additional insight into your organization's WAF traffic and improves your security operation capabilities.
 
 ## Data Connectors
 

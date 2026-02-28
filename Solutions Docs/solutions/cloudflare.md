@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Cloudflare |
+| **Support Tier** | Partner |
+| **Support Link** | [https://support.cloudflare.com](https://support.cloudflare.com) |
+| **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2021-10-20 |
+| **Solution Folder** | [Cloudflare](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare) |
+
 The [Cloudflare](https://www.cloudflare.com/) solution provides the capability to ingest [Cloudflare logs](https://developers.cloudflare.com/logs/) into Microsoft Sentinel using the Cloudflare Logpush and Azure Blob Storage. Refer to [Cloudflare documentation](https://developers.cloudflare.com/logs/about/) for more information.
  
   **Underlying Microsoft Technologies used:** 
@@ -24,27 +35,20 @@ The [Cloudflare](https://www.cloudflare.com/) solution provides the capability t
 
 <p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data..</p>
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Cloudflare |
-| **Support Tier** | Partner |
-| **Support Link** | [https://support.cloudflare.com](https://support.cloudflare.com) |
-| **Categories** | domains |
-| **Version** | 3.0.1 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2021-10-20 |
-| **Solution Folder** | [Cloudflare](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) 🔶
+- [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) �
 - [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md)
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -53,10 +57,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md) | Analytics, Hunting |
-| [`Cloudflare_CL`](../tables/cloudflare-cl.md) 🔶 | [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) | Analytics, Hunting, Workbooks |
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) � | [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

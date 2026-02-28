@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md) 🔶 | ? | ✓ | ? |
-| [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v2_x509_CL`](../tables/corelight-v2-x509-cl.md) � | ? | ✓ | ? |
+| [`Corelight_v2_x509_red_CL`](../tables/corelight-v2-x509-red-cl.md) � | ? | ✓ | ? |
 
 ---
 

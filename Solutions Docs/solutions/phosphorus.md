@@ -8,16 +8,6 @@
 
 ---
 
-Phosphorus Microsoft Sentinel Solution is a data connector used to ingest device data logs into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
-
- a. [Codeless Connector Platform](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Phosphorus Inc. |
@@ -29,6 +19,20 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2024-08-13 |
 | **Last Updated** | 2024-08-13 |
 | **Solution Folder** | [Phosphorus](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus) |
+
+Phosphorus Microsoft Sentinel Solution is a data connector used to ingest device data logs into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
+
+ a. [Codeless Connector Platform](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

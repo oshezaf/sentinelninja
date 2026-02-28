@@ -8,10 +8,6 @@
 
 ---
 
-ServiceNow's Threat Intelligence Security Center (TISC) is an advanced security intelligence platform, and this solution integrates with Microsoft Sentinel to provide comprehensive threat detection, analysis, and response capabilities. This integration enables organizations to aggregate threat intelligence from multiple sources, automate security workflows, and enhance their overall security posture. The solution facilitates bi-directional data exchange between TISC and Microsoft Sentinel, allowing security teams to seamlessly share threat indicators and observables across both platforms. The integration supports incident enrichment workflows, enabling security analysts to make more informed decisions based on consolidated threat intelligence. Through custom connectors and playbooks, the solution streamlines security operations by automating threat data correlation, reducing manual effort, and accelerating incident response times.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | ServiceNow |
@@ -23,6 +19,14 @@ ServiceNow's Threat Intelligence Security Center (TISC) is an advanced security 
 | **First Published** | 2025-01-15 |
 | **Last Updated** | 2025-01-15 |
 | **Solution Folder** | [ServiceNow TISC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ServiceNow%20TISC) |
+
+ServiceNow's Threat Intelligence Security Center (TISC) is an advanced security intelligence platform, and this solution integrates with Microsoft Sentinel to provide comprehensive threat detection, analysis, and response capabilities. This integration enables organizations to aggregate threat intelligence from multiple sources, automate security workflows, and enhance their overall security posture. The solution facilitates bi-directional data exchange between TISC and Microsoft Sentinel, allowing security teams to seamlessly share threat indicators and observables across both platforms. The integration supports incident enrichment workflows, enabling security analysts to make more informed decisions based on consolidated threat intelligence. Through custom connectors and playbooks, the solution streamlines security operations by automating threat data correlation, reducing manual effort, and accelerating incident response times.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

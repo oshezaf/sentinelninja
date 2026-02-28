@@ -8,22 +8,6 @@
 
 ---
 
-As cloud services increase in popularity, the volume of attacks against them is also increasing. Broad visibility, context and timely detection of these attacks are important for organization as they move more workloads to the cloud. The **Cloud Service Threat Protection Essentials** contains security content that is relevant for detection of attacks against various cloud services like key vault, storage, compute etc.
- 
-**Pre-requisites:**
- 
-This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution.
- 
- 1.Microsoft 365
- 
- 2.Azure Activity
- 
- 3.Azure Key Vault
- 
-**Keywords:** Storage, Key Vault, Compute, Office, Mail tampering, Azure, resources
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -34,17 +18,30 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [Cloud Service Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Service%20Threat%20Protection%20Essentials) |
-| **Dependencies** | [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure Key Vault](azure-key-vault.md) |
+| **Pre-requisites** | [Microsoft 365](microsoft-365.md), [Azure Activity](azure-activity.md), [Azure Key Vault](azure-key-vault.md) |
 
-## Dependencies
+As cloud services increase in popularity, the volume of attacks against them is also increasing. Broad visibility, context and timely detection of these attacks are important for organization as they move more workloads to the cloud. The **Cloud Service Threat Protection Essentials** contains security content that is relevant for detection of attacks against various cloud services like key vault, storage, compute etc.
+ 
+For details on the required solutions, see the [Pre-requisites](#pre-requisites) section below.
+
+**Keywords:** Storage, Key Vault, Compute, Office, Mail tampering, Azure, resources
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **3 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Azure Activity](azure-activity.md) | explicit | - |
-| [Azure Key Vault](azure-key-vault.md) | explicit | - |
-| [Microsoft 365](microsoft-365.md) | explicit | - |
+| Solution |
+|:---------|
+| [Azure Activity](azure-activity.md) |
+| [Azure Key Vault](azure-key-vault.md) |
+| [Microsoft 365](microsoft-365.md) |
 
 ## Data Connectors
 

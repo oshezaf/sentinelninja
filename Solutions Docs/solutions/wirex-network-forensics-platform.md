@@ -8,14 +8,6 @@
 
 ---
 
-The [WireX Systems](https://wirexsystems.com/) solution allows custom dashboards and workflows during forensic investigation integrated with Microsoft Sentinel.
-
- This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | WireX Systems |
@@ -26,15 +18,27 @@ The [WireX Systems](https://wirexsystems.com/) solution allows custom dashboards
 | **Author** | WireX Systems - info@wirexsystems.com |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [WireX Network Forensics Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+The [WireX Systems](https://wirexsystems.com/) solution allows custom dashboards and workflows during forensic investigation integrated with Microsoft Sentinel.
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -42,6 +46,9 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [[Deprecated] WireX Network Forensics Platform via Legacy Agent](../connectors/wirex-systems-nfp.md) ⚠️
 - [[Deprecated] WireX Network Forensics Platform via AMA](../connectors/wirex-systems-nfpama.md)
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

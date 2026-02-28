@@ -10,10 +10,6 @@
 
 ---
 
-Send Datawiza Access Proxy access and MFA logs to Microsoft Sentinel for real-time security insights and analytics. Improve visibility, accelerate investigations, and meet audit/compliance requirements.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Datawiza Technology Inc. |
@@ -25,13 +21,15 @@ Send Datawiza Access Proxy access and MFA logs to Microsoft Sentinel for real-ti
 | **First Published** | 2025-11-10 |
 | **Solution Folder** | [Datawiza](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza) |
 
+Send Datawiza Access Proxy access and MFA logs to Microsoft Sentinel for real-time security insights and analytics. Improve visibility, accelerate investigations, and meet audit/compliance requirements.
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶
+- [Datawiza DAP](../connectors/datawizadapsolution.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -39,10 +37,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) 🔶 | [Datawiza DAP](../connectors/datawizadapsolution.md) | - |
+| [`datawizaserveraccess_CL`](../tables/datawizaserveraccess-cl.md) � | [Datawiza DAP](../connectors/datawizadapsolution.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                     |

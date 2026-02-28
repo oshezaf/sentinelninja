@@ -8,10 +8,6 @@
 
 ---
 
-The BitSight solution enables security operations teams to integrate insights from BitSight’s Data Observability services into Microsoft Sentinel. The insights include Security Ratings, Count of Observations by Risk Vector, Compromised Systems, Infections, Count of Diligence Observations and Vulnerabilities for companies in your portfolio.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | BitSight Support |
@@ -23,6 +19,14 @@ The BitSight solution enables security operations teams to integrate insights fr
 | **First Published** | 2023-02-20 |
 | **Last Updated** | 2024-02-20 |
 | **Solution Folder** | [BitSight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight) |
+
+The BitSight solution enables security operations teams to integrate insights from BitSight’s Data Observability services into Microsoft Sentinel. The insights include Security Ratings, Count of Observations by Risk Vector, Compromised Systems, Infections, Count of Diligence Observations and Vulnerabilities for companies in your portfolio.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

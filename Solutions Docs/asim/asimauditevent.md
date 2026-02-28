@@ -27,25 +27,25 @@ This ASIM parser supports normalizing audit events from all supported sources to
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Microsoft Azure | [_ASim_AuditEvent_AzureActivity](asimauditeventazureactivity.md) |
-| Barracuda WAF | [_ASim_AuditEvent_BarracudaCEF](asimauditeventbarracudacef.md) |
-| Barracuda WAF | [_ASim_AuditEvent_BarracudaWAF](asimauditeventbarracudawaf.md) |
-| Cisco ISE | [_ASim_AuditEvent_CiscoISE](asimauditeventciscoise.md) |
-| Cisco Meraki | [_ASim_AuditEvent_CiscoMeraki](asimauditeventciscomeraki.md) |
-| Cisco Meraki | [_ASim_AuditEvent_CiscoMerakiSyslog](asimauditeventciscomerakisyslog.md) |
-| CrowdStrike Falcon Endpoint Protection | [_ASim_AuditEvent_CrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md) |
-| Illumio Core | [_ASim_AuditEvent_IllumioSaaSCore](asimauditeventillumiosaascore.md) |
-| Infoblox BloxOne | [_ASim_AuditEvent_InfobloxBloxOne](asimauditeventinfobloxbloxone.md) |
-| Microsoft Windows | [_ASim_AuditEvent_MicrosoftEvent](asimauditeventmicrosoftevent.md) |
-| Microsoft SharePoint | [_ASim_AuditEvent_MicrosoftExchangeAdmin365](asimauditeventmicrosoftexchangeadmin365.md) |
-| Microsoft Windows | [_ASim_AuditEvent_MicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) |
-| Microsoft Windows | [_ASim_AuditEvent_MicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) |
-| Native | [_ASim_AuditEvent_Native](asimauditeventnative.md) |
-| SentinelOne | [_ASim_AuditEvent_SentinelOne](asimauditeventsentinelone.md) |
-| VMware Carbon Black Cloud | [_ASim_AuditEvent_VMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md) |
-| Vectra | [_ASim_AuditEvent_VectraXDRAudit](asimauditeventvectraxdraudit.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Microsoft Azure | [_ASim_AuditEvent_AzureActivity](asimauditeventazureactivity.md) | [Azure Activity](../solutions/azure-activity.md) |
+| Barracuda WAF | [_ASim_AuditEvent_BarracudaCEF](asimauditeventbarracudacef.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Barracuda WAF | [_ASim_AuditEvent_BarracudaWAF](asimauditeventbarracudawaf.md) |  |
+| Cisco ISE | [_ASim_AuditEvent_CiscoISE](asimauditeventciscoise.md) | [Syslog](../solutions/syslog.md) |
+| Cisco Meraki | [_ASim_AuditEvent_CiscoMeraki](asimauditeventciscomeraki.md) | [CiscoMeraki](../solutions/ciscomeraki.md)<br>[CustomLogsAma](../solutions/customlogsama.md) |
+| Cisco Meraki | [_ASim_AuditEvent_CiscoMerakiSyslog](asimauditeventciscomerakisyslog.md) | [Syslog](../solutions/syslog.md) |
+| CrowdStrike Falcon Endpoint Protection | [_ASim_AuditEvent_CrowdStrikeFalconHost](asimauditeventcrowdstrikefalconhost.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Illumio Core | [_ASim_AuditEvent_IllumioSaaSCore](asimauditeventillumiosaascore.md) | [IllumioSaaS](../solutions/illumiosaas.md) |
+| Infoblox BloxOne | [_ASim_AuditEvent_InfobloxBloxOne](asimauditeventinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Microsoft Windows | [_ASim_AuditEvent_MicrosoftEvent](asimauditeventmicrosoftevent.md) |  |
+| Microsoft SharePoint | [_ASim_AuditEvent_MicrosoftExchangeAdmin365](asimauditeventmicrosoftexchangeadmin365.md) |  |
+| Microsoft Windows | [_ASim_AuditEvent_MicrosoftSecurityEvents](asimauditeventmicrosoftsecurityevents.md) | [Windows Security Events](../solutions/windows-security-events.md) |
+| Microsoft Windows | [_ASim_AuditEvent_MicrosoftWindowsEvents](asimauditeventmicrosoftwindowsevents.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Native | [_ASim_AuditEvent_Native](asimauditeventnative.md) | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)<br>[CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[Workday](../solutions/workday.md) |
+| SentinelOne | [_ASim_AuditEvent_SentinelOne](asimauditeventsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+| VMware Carbon Black Cloud | [_ASim_AuditEvent_VMwareCarbonBlackCloud](asimauditeventvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Vectra | [_ASim_AuditEvent_VectraXDRAudit](asimauditeventvectraxdraudit.md) | [Vectra XDR](../solutions/vectra-xdr.md) |
 
 ## Source Tables
 

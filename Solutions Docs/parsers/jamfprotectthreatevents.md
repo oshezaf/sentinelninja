@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) 🔶 | ? | ✓ | ? |
+| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) � | ? | ✓ | ? |
 
 ---
 

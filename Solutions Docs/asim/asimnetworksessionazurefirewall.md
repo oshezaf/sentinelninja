@@ -35,7 +35,7 @@ This parser reads from the following tables:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallNetworkRule"` | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | `Category == "AzureFirewallNetworkRule"` | ✗ | ✗ | ✗ |
 | [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
 
 ## Parameters
@@ -43,17 +43,6 @@ This parser reads from the following tables:
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
-
-## Associated Connectors
-
-The following connectors provide data for this parser:
-
-| Connector | Solution |
-|:----------|:---------|
-| [MimecastTIRegionalConnectorAzureFunctions](../connectors/mimecasttiregionalconnectorazurefunctions.md) | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
-| [SlashNextFunctionApp](../connectors/slashnextfunctionapp.md) | [SlashNext](../solutions/slashnext.md) |
-
-**Solutions:** [MimecastTIRegional](../solutions/mimecasttiregional.md), [SlashNext](../solutions/slashnext.md)
 
 ## References
 

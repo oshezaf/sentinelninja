@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | NetClean |
+| **Support Tier** | Partner |
+| **Support Link** | [https://www.netclean.com/contact](https://www.netclean.com/contact) |
+| **Categories** | domains |
+| **Version** | 3.0.2 |
+| **Author** | NetClean Technologies AB |
+| **First Published** | 2022-06-30 |
+| **Solution Folder** | [NetClean ProActive](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetClean%20ProActive) |
+
 The [NetClean](https://www.netclean.com/) ProActive for Microsoft Sentinel solution gives you the ability to connect the [NetClean ProActive](https://www.netclean.com/proactive/) Incident logs with Microsoft Sentinel to view dashboards, create custom alerts, and improve investigation.
 
 **Underlying Microsoft Technologies used:**
@@ -22,26 +33,19 @@ This solution might take a dependency on the other technologies, and some of the
 
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | NetClean |
-| **Support Tier** | Partner |
-| **Support Link** | [https://www.netclean.com/contact](https://www.netclean.com/contact) |
-| **Categories** | domains |
-| **Version** | 3.0.2 |
-| **Author** | NetClean Technologies AB |
-| **First Published** | 2022-06-30 |
-| **Solution Folder** | [NetClean ProActive](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetClean%20ProActive) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) 🔶
+- [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +53,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) 🔶 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) | Analytics, Workbooks |
+| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) � | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

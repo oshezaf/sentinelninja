@@ -8,10 +8,6 @@
 
 ---
 
-The Lumen Defender Threat Feed for Microsoft Sentinel solution delivers high-confidence threat intelligence indicators of compromise directly into your Sentinel workspace.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Lumen Technologies, Inc. |
@@ -23,6 +19,15 @@ The Lumen Defender Threat Feed for Microsoft Sentinel solution delivers high-con
 | **First Published** | 2025-09-12 |
 | **Last Updated** | 2025-09-12 |
 | **Solution Folder** | [Lumen Defender Threat Feed](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed) |
+
+The Lumen Defender Threat Feed for Microsoft Sentinel solution delivers high-confidence threat intelligence indicators of compromise directly into your Sentinel workspace.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

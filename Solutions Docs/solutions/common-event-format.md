@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2022-05-30 |
+| **Solution Folder** | [Common Event Format](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Common%20Event%20Format) |
+
 The Common Event Format (CEF) solution for Microsoft Sentinel allows you to ingest logs from any product and/or appliance that can send logs in the [Common Event Format (CEF) over Syslog messages](https://docs.microsoft.com/azure/sentinel/connect-common-event-format). 
 
 Installing this solution will deploy two data connectors,
@@ -23,18 +34,11 @@ Installing this solution will deploy two data connectors,
 
  a. [Agent-based log collection (CEF over Syslog)](https://docs.microsoft.com/azure/sentinel/connect-common-event-format)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 3.0.5 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2022-05-30 |
-| **Solution Folder** | [Common Event Format](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Common%20Event%20Format) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

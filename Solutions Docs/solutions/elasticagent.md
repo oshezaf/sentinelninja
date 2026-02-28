@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 2.0.0 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2021-11-12 |
+| **Solution Folder** | [ElasticAgent](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent) |
+
 The [Elastic Agent](https://www.elastic.co/security) solution provides the capability to ingest Elastic Agent logs, metrics, and security data into Microsoft Sentinel.
   
   **Underlying Microsoft Technologies used:** 
@@ -19,18 +30,11 @@ The [Elastic Agent](https://www.elastic.co/security) solution provides the capab
 
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 2.0.0 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2021-11-12 |
-| **Solution Folder** | [ElasticAgent](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

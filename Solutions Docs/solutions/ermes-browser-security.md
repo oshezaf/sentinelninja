@@ -8,10 +8,6 @@
 
 ---
 
-The [Ermes Browser Security](https://www.ermes.company) Solution for Microsoft Sentinel provides a simple way to ingest Security and Audit events from Ermes into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Ermes Cyber Security S.p.A. |
@@ -22,6 +18,8 @@ The [Ermes Browser Security](https://www.ermes.company) Solution for Microsoft S
 | **Author** | dev@ermes.company |
 | **First Published** | 2023-09-29 |
 | **Solution Folder** | [Ermes Browser Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ermes%20Browser%20Security) |
+
+The [Ermes Browser Security](https://www.ermes.company) Solution for Microsoft Sentinel provides a simple way to ingest Security and Audit events from Ermes into Microsoft Sentinel.
 
 ## Data Connectors
 

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Lookout_CL`](../tables/lookout-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`Lookout_CL`](../tables/lookout-cl.md) � | ✗ | ✓ | ✗ |
 
 ---
 

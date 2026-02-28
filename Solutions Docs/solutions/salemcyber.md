@@ -10,6 +10,18 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Salem Cyber |
+| **Support Tier** | Partner |
+| **Support Link** | [https://www.salemcyber.com/contact](https://www.salemcyber.com/contact) |
+| **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Salem Cyber - support@salemcyber.com |
+| **First Published** | 2023-07-21 |
+| **Last Updated** | 2023-07-21 |
+| **Solution Folder** | [SalemCyber](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber) |
+
 Salem, [AI Cyber analyst](https://salemcyber.com), **automatically investigates** Microsoft Sentinel alerts and escalates validated threats that require your attention. 
 
 This Microsoft Sentinel integration allows you to send new Microsoft Sentinel alerts to Salem for analysis and reporting.
@@ -26,19 +38,11 @@ Salem's AI learns from your team and customizes its analysis to your cyber relev
 
 You can find and install Salem, AI cyber analyst in the [Azure Marketplace](https%3A%2F%2Fazuremarketplace.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%2Fsaleminc1627928803559.salemcyber%3Ftab%3DOverview)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Salem Cyber |
-| **Support Tier** | Partner |
-| **Support Link** | [https://www.salemcyber.com/contact](https://www.salemcyber.com/contact) |
-| **Categories** | domains |
-| **Version** | 3.0.0 |
-| **Author** | Salem Cyber - support@salemcyber.com |
-| **First Published** | 2023-07-21 |
-| **Last Updated** | 2023-07-21 |
-| **Solution Folder** | [SalemCyber](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

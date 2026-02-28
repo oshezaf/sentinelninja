@@ -8,16 +8,6 @@
 
 ---
 
-The [Microsoft Project](https://www.microsoft.com/en-us/microsoft-365/project/project-management-software) solution allows you to stream your Microsoft Project audit logs into Microsoft Sentinel in order to track your project activities.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-- [Office Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft |
@@ -28,6 +18,14 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Microsoft |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Microsoft Project](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Project) |
+
+The [Microsoft Project](https://www.microsoft.com/en-us/microsoft-365/project/project-management-software) solution allows you to stream your Microsoft Project audit logs into Microsoft Sentinel in order to track your project activities.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+- [Office Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
 
 ## Data Connectors
 

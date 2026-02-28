@@ -8,10 +8,6 @@
 
 ---
 
-The [Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)  solution for Microsoft Sentinel enables you to ingest Microsoft Entra ID [Audit](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs), [Sign-in](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins), [Provisioning](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs), [Risk Events and Risky User/Service Principal](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk#risky-users) logs using Diagnostic Settings into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,9 +19,17 @@ The [Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/funda
 | **First Published** | 2022-05-16 |
 | **Solution Folder** | [Microsoft Entra ID](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID) |
 
-## Additional Information
+The [Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)  solution for Microsoft Sentinel enables you to ingest Microsoft Entra ID [Audit](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs), [Sign-in](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins), [Provisioning](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs), [Risk Events and Risky User/Service Principal](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk#risky-users) logs using Diagnostic Settings into Microsoft Sentinel.
+
+**Additional Information**
 
 📖 **Setup Guide:** [Microsoft Entra connector](https://learn.microsoft.com/azure/sentinel/connect-azure-active-directory) - Connect Microsoft Entra ID logs to Microsoft Sentinel
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

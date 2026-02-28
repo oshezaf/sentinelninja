@@ -8,34 +8,6 @@
 
 ---
 
-The **Network Threat Protection Essentials** solution contain queries that identifies suspicious network behavior based on various data sources ingested in Sentinel. The solution contains queries to detect common network-based attacks - things like malicious user agents, mining pools, Base64 encoded IPv4 address in request URL etc. The solution will be constantly updated to add more detection/hunting query as well as other sentinel content.
- 
-**Pre-requisites:**
- 
-This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution.
- 
- 1. Microsoft 365 
- 
- 2. Amazon Web Services 
- 
- 3. Windows Server DNS 
- 
- 4. Azure Firewall 
- 
- 5. Windows Forwarded Events 
- 
- 6. ZScaler Internet Access 
- 
- 7. Palo Alto Networks 
- 
- 8. Fortinet FortiGate 
- 
- 9. Check Point
- 
-**Keywords:** Malicious IP/User agent, DNS, TOR, mining
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -46,23 +18,36 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [Network Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Threat%20Protection%20Essentials) |
-| **Dependencies** | [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Windows Server DNS](windows-server-dns.md), [Azure Firewall](azure-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md), [Zscaler Internet Access](zscaler-internet-access.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md) |
+| **Pre-requisites** | [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Windows Server DNS](windows-server-dns.md), [Azure Firewall](azure-firewall.md), [Windows Forwarded Events](windows-forwarded-events.md), [Zscaler Internet Access](zscaler-internet-access.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [Check Point](check-point.md) |
 
-## Dependencies
+The **Network Threat Protection Essentials** solution contain queries that identifies suspicious network behavior based on various data sources ingested in Sentinel. The solution contains queries to detect common network-based attacks - things like malicious user agents, mining pools, Base64 encoded IPv4 address in request URL etc. The solution will be constantly updated to add more detection/hunting query as well as other sentinel content.
+ 
+For details on the required solutions, see the [Pre-requisites](#pre-requisites) section below.
+
+**Keywords:** Malicious IP/User agent, DNS, TOR, mining
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **9 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Amazon Web Services](amazon-web-services.md) | explicit | - |
-| [Azure Firewall](azure-firewall.md) | explicit | - |
-| [Check Point](check-point.md) | explicit | - |
-| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | - |
-| [Microsoft 365](microsoft-365.md) | explicit | - |
-| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | - |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | - |
-| [Windows Server DNS](windows-server-dns.md) | explicit | - |
-| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | - |
+| Solution |
+|:---------|
+| [Amazon Web Services](amazon-web-services.md) |
+| [Azure Firewall](azure-firewall.md) |
+| [Check Point](check-point.md) |
+| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
+| [Microsoft 365](microsoft-365.md) |
+| [PaloAlto-PAN-OS](paloalto-pan-os.md) |
+| [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Windows Server DNS](windows-server-dns.md) |
+| [Zscaler Internet Access](zscaler-internet-access.md) |
 
 ## Data Connectors
 

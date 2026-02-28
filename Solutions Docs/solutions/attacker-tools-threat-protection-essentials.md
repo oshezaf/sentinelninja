@@ -8,21 +8,6 @@
 
 ---
 
-The **Attacker Tools Threat Protection Essentials** solution contains security content that is relevant for detection of tools commonly used by attackers in various campaigns. These tools can be commercial, open-source, built-in or publicly available and have historically been seen used by adversaries in different phases of the ATTACK kill chain.  
- 
- **Pre-requisites:** 
- 
- This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution. 
- 
- 1. Windows Security Events 
- 2. Windows Server DNS 
- 3. Windows Forwarded Events 
- 4. Microsoft Entra ID 
-
-**Keywords:** attack tools, penetration testing, Impacket, Powercat, Nishang, Cobalt Strike, ADFind, Credential Dumping, PowerShell Empire  
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -33,18 +18,31 @@ The **Attacker Tools Threat Protection Essentials** solution contains security c
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [Attacker Tools Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Attacker%20Tools%20Threat%20Protection%20Essentials) |
-| **Dependencies** | [Windows Security Events](windows-security-events.md), [Windows Server DNS](windows-server-dns.md), [Windows Forwarded Events](windows-forwarded-events.md), [Microsoft Entra ID](microsoft-entra-id.md) |
+| **Pre-requisites** | [Windows Security Events](windows-security-events.md), [Windows Server DNS](windows-server-dns.md), [Windows Forwarded Events](windows-forwarded-events.md), [Microsoft Entra ID](microsoft-entra-id.md) |
 
-## Dependencies
+The **Attacker Tools Threat Protection Essentials** solution contains security content that is relevant for detection of tools commonly used by attackers in various campaigns. These tools can be commercial, open-source, built-in or publicly available and have historically been seen used by adversaries in different phases of the ATTACK kill chain.  
+ 
+ For details on the required solutions, see the [Pre-requisites](#pre-requisites) section below.
+
+**Keywords:** attack tools, penetration testing, Impacket, Powercat, Nishang, Cobalt Strike, ADFind, Credential Dumping, PowerShell Empire
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **4 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
-| [Windows Forwarded Events](windows-forwarded-events.md) | explicit | - |
-| [Windows Security Events](windows-security-events.md) | explicit | - |
-| [Windows Server DNS](windows-server-dns.md) | explicit | - |
+| Solution |
+|:---------|
+| [Microsoft Entra ID](microsoft-entra-id.md) |
+| [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Windows Security Events](windows-security-events.md) |
+| [Windows Server DNS](windows-server-dns.md) |
 
 ## Data Connectors
 

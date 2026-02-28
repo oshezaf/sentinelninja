@@ -8,16 +8,6 @@
 
 ---
 
-The [Dynamics 365](https://dynamics.microsoft.com) continuous Threat Monitoring Solution for Microsoft Sentinel provides you with ability to collect Dynamics 365 CRM logs, gain visibility of activities within Dynamics 365 and analyze them to detect threats and malicious activities. You can view admin, user and support activities, as well as Microsoft Social Engagement logging events data in workbooks, use it to create custom alerts, and improve your investigation process.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
- a. [Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,14 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-01-17 |
 | **Solution Folder** | [Dynamics 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynamics%20365) |
+
+The [Dynamics 365](https://dynamics.microsoft.com) continuous Threat Monitoring Solution for Microsoft Sentinel provides you with ability to collect Dynamics 365 CRM logs, gain visibility of activities within Dynamics 365 and analyze them to detect threats and malicious activities. You can view admin, user and support activities, as well as Microsoft Social Engagement logging events data in workbooks, use it to create custom alerts, and improve your investigation process.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ a. [Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
 
 ## Data Connectors
 

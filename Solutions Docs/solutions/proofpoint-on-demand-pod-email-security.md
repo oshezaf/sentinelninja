@@ -8,16 +8,6 @@
 
 ---
 
-The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products/email-security-and-protection/email-protection) solution for Microsoft Sentinel enables you to ingest Proofpoint on Demand Email Protection data and activity logs for monitoring email activity, events and threats in your organization.
-  
-  **Underlying Microsoft Technologies used:** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Proofpoint, Inc. |
@@ -29,16 +19,30 @@ The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products
 | **First Published** | 2021-03-31 |
 | **Solution Folder** | [Proofpoint On demand(POD) Email Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Proofpoint%20On%20demand%28POD%29%20Email%20Security) |
 
+The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products/email-security-and-protection/email-protection) solution for Microsoft Sentinel enables you to ingest Proofpoint on Demand Email Protection data and activity logs for monitoring email activity, events and threats in your organization.
+  
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) 🔶
-- [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) ⚠️ 🔶
+- [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) �
+- [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,16 +50,16 @@ This solution uses **7 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) 🔶 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) 🔶 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) � | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) � | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) � | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) � | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
-| [`maillog_CL`](../tables/maillog-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`message_CL`](../tables/message-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`maillog_CL`](../tables/maillog-cl.md) � | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`message_CL`](../tables/message-cl.md) � | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

@@ -27,25 +27,25 @@ This ASIM parser supports normalizing Web Session logs from all supported source
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Apache HTTP Server | [_ASim_WebSession_ApacheHTTPServer](asimwebsessionapachehttpserver.md) |
-| Azure Firewall | [_ASim_WebSession_AzureFirewall](asimwebsessionazurefirewall.md) |
-| Barracuda WAF | [_ASim_WebSession_BarracudaCEF](asimwebsessionbarracudacef.md) |
-| Barracuda WAF | [_ASim_WebSession_BarracudaWAF](asimwebsessionbarracudawaf.md) |
-| Cisco Firepower | [_ASim_WebSession_CiscoFirepower](asimwebsessionciscofirepower.md) |
-| Cisco Meraki | [_ASim_WebSession_CiscoMeraki](asimwebsessionciscomeraki.md) |
-| Citrix NetScaler | [_ASim_WebSession_CitrixNetScaler](asimwebsessioncitrixnetscaler.md) |
-| F5 BIG-IP Application Security Manager (ASM) | [_ASim_WebSession_F5ASM](asimwebsessionf5asm.md) |
-| Fortinet FortiGate | [_ASim_WebSession_FortinetFortiGate](asimwebsessionfortinetfortigate.md) |
-| Internet Information Services (IIS) | [_ASim_WebSession_IIS](asimwebsessioniis.md) |
-| Native | [_ASim_WebSession_Native](asimwebsessionnative.md) |
-| Palo Alto Networks | [_ASim_WebSession_PaloAltoCEF](asimwebsessionpaloaltocef.md) |
-| Palo Alto Cortex Data Lake | [_ASim_WebSession_PaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md) |
-| SonicWall | [_ASim_WebSession_SonicWallFirewall](asimwebsessionsonicwallfirewall.md) |
-| Squid Proxy | [_ASim_WebSession_SquidProxy](asimwebsessionsquidproxy.md) |
-| Vectra AI Streams | [_ASim_WebSession_VectraAI](asimwebsessionvectraai.md) |
-| Zscaler ZIA | [_ASim_WebSession_ZscalerZIA](asimwebsessionzscalerzia.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Apache HTTP Server | [_ASim_WebSession_ApacheHTTPServer](asimwebsessionapachehttpserver.md) | [CustomLogsAma](../solutions/customlogsama.md) |
+| Azure Firewall | [_ASim_WebSession_AzureFirewall](asimwebsessionazurefirewall.md) |  |
+| Barracuda WAF | [_ASim_WebSession_BarracudaCEF](asimwebsessionbarracudacef.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Barracuda WAF | [_ASim_WebSession_BarracudaWAF](asimwebsessionbarracudawaf.md) |  |
+| Cisco Firepower | [_ASim_WebSession_CiscoFirepower](asimwebsessionciscofirepower.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Cisco Meraki | [_ASim_WebSession_CiscoMeraki](asimwebsessionciscomeraki.md) | [Cisco SD-WAN](../solutions/cisco-sd-wan.md)<br>[CiscoMeraki](../solutions/ciscomeraki.md)<br>[CustomLogsAma](../solutions/customlogsama.md)<br>[Forescout (Legacy)](../solutions/forescout-legacy.md) |
+| Citrix NetScaler | [_ASim_WebSession_CitrixNetScaler](asimwebsessioncitrixnetscaler.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| F5 BIG-IP Application Security Manager (ASM) | [_ASim_WebSession_F5ASM](asimwebsessionf5asm.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Fortinet FortiGate | [_ASim_WebSession_FortinetFortiGate](asimwebsessionfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Internet Information Services (IIS) | [_ASim_WebSession_IIS](asimwebsessioniis.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| Native | [_ASim_WebSession_Native](asimwebsessionnative.md) | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md) |
+| Palo Alto Networks | [_ASim_WebSession_PaloAltoCEF](asimwebsessionpaloaltocef.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Palo Alto Cortex Data Lake | [_ASim_WebSession_PaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| SonicWall | [_ASim_WebSession_SonicWallFirewall](asimwebsessionsonicwallfirewall.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Squid Proxy | [_ASim_WebSession_SquidProxy](asimwebsessionsquidproxy.md) | [CustomLogsAma](../solutions/customlogsama.md) |
+| Vectra AI Streams | [_ASim_WebSession_VectraAI](asimwebsessionvectraai.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[Vectra AI Stream](../solutions/vectra-ai-stream.md) |
+| Zscaler ZIA | [_ASim_WebSession_ZscalerZIA](asimwebsessionzscalerzia.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 
 ## Source Tables
 

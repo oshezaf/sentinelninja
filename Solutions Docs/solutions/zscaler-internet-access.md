@@ -8,16 +8,6 @@
 
 ---
 
-The [Zscaler Internet Access](https://www.zscaler.com/products/zscaler-internet-access) Solution for Microsoft Sentinel enables you to easily connect your Zscaler Internet Access (ZIA) logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. Using Zscaler on Microsoft Sentinel will provide you more insights into your organization’s Internet usage and will enhance its security operation capabilities. 
- 
- For more details about this solution refer to [https://help.zscaler.com/zia/zscaler-microsoft-azure-sentinel-deployment-guide](https://help.zscaler.com/zia/zscaler-microsoft-azure-sentinel-deployment-guide) 
-
- This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Zscaler |
@@ -28,15 +18,30 @@ The [Zscaler Internet Access](https://www.zscaler.com/products/zscaler-internet-
 | **Author** | Zscaler |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [Zscaler Internet Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+The [Zscaler Internet Access](https://www.zscaler.com/products/zscaler-internet-access) Solution for Microsoft Sentinel enables you to easily connect your Zscaler Internet Access (ZIA) logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. Using Zscaler on Microsoft Sentinel will provide you more insights into your organization’s Internet usage and will enhance its security operation capabilities. 
+ 
+ For more details about this solution refer to [https://help.zscaler.com/zia/zscaler-microsoft-azure-sentinel-deployment-guide](https://help.zscaler.com/zia/zscaler-microsoft-azure-sentinel-deployment-guide) 
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. 
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -44,6 +49,9 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 - [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md) ⚠️
 - [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

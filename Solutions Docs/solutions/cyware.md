@@ -8,10 +8,6 @@
 
 ---
 
-The Cyware solution for Microsoft Sentinel allows users to integrate Cyware and Microsoft Sentinel. Users can send events from Microsoft Sentinel to Cyware for further analysis. This solution also enables users to implement hunting queries that match events that are sent to Microsoft Sentinel from Cyware's Intel Exchange.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cyware |
@@ -22,6 +18,14 @@ The Cyware solution for Microsoft Sentinel allows users to integrate Cyware and 
 | **First Published** | 2024-03-18 |
 | **Last Updated** | 2024-03-18 |
 | **Solution Folder** | [Cyware](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware) |
+
+The Cyware solution for Microsoft Sentinel allows users to integrate Cyware and Microsoft Sentinel. Users can send events from Microsoft Sentinel to Cyware for further analysis. This solution also enables users to implement hunting queries that match events that are sent to Microsoft Sentinel from Cyware's Intel Exchange.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

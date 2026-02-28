@@ -10,10 +10,6 @@
 
 ---
 
-The meshStack solution for Microsoft Sentinel enables you to ingest meshStack Event Logs into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | meshcloud GmbH |
@@ -24,6 +20,14 @@ The meshStack solution for Microsoft Sentinel enables you to ingest meshStack Ev
 | **Author** | meshcloud - support@meshcloud.io |
 | **First Published** | 2025-12-15 |
 | **Solution Folder** | [meshStack](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack) |
+
+The meshStack solution for Microsoft Sentinel enables you to ingest meshStack Event Logs into Microsoft Sentinel.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

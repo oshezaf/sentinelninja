@@ -10,12 +10,6 @@
 
 ---
 
-The Sevco Platform - Devices connector allows you to easily connect your Sevco Device Assets with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization’s assets and improves your security operation capabilities.
-
-[For more information >​](https://docs.sev.co/docs/microsoft-sentinel-inventory)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -27,13 +21,17 @@ The Sevco Platform - Devices connector allows you to easily connect your Sevco D
 | **First Published** | 2023-05-01 |
 | **Solution Folder** | [SevcoSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SevcoSecurity) |
 
+The Sevco Platform - Devices connector allows you to easily connect your Sevco Device Assets with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization’s assets and improves your security operation capabilities.
+
+[For more information >​](https://docs.sev.co/docs/microsoft-sentinel-inventory)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Sevco Platform - Devices](../connectors/sevcodevices.md) 🔶
+- [Sevco Platform - Devices](../connectors/sevcodevices.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,10 +39,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Sevco_Devices_CL`](../tables/sevco-devices-cl.md) 🔶 | [Sevco Platform - Devices](../connectors/sevcodevices.md) | - |
+| [`Sevco_Devices_CL`](../tables/sevco-devices-cl.md) � | [Sevco Platform - Devices](../connectors/sevcodevices.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |

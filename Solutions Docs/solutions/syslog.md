@@ -8,18 +8,6 @@
 
 ---
 
-The Syslog solution allows you to ingest events from applications or appliances that generate and can forward logs in the Syslog format to a Syslog Forwarder. The Agent for Linux is then able to forward these logs to the Log Analytics/Microsoft Sentinel workspace.
-
-Installing this solution will deploy two data connectors,
-
-1. **Syslog via AMA** - This data connector helps in ingesting syslog messages into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/data-collection-syslog). Microsoft recommends using this Data Connector.
-
-2. **Syslog via Legacy Agent** - This data connector helps in ingesting syslog messages into your Log Analytics Workspace using the legacy Log Analytics agent.
-
-<P>**NOTE**: After the solution is installed, Microsoft recommends configuring and leveraging the Syslog via AMA connector for log ingestion. Legacy connector uses the Log Analytics agent, which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.</p>
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -30,6 +18,22 @@ Installing this solution will deploy two data connectors,
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Syslog](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Syslog) |
+
+The Syslog solution allows you to ingest events from applications or appliances that generate and can forward logs in the Syslog format to a Syslog Forwarder. The Agent for Linux is then able to forward these logs to the Log Analytics/Microsoft Sentinel workspace.
+
+Installing this solution will deploy two data connectors,
+
+1. **Syslog via AMA** - This data connector helps in ingesting syslog messages into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/data-collection-syslog). Microsoft recommends using this Data Connector.
+
+2. **Syslog via Legacy Agent** - This data connector helps in ingesting syslog messages into your Log Analytics Workspace using the legacy Log Analytics agent.
+
+<P>**NOTE**: After the solution is installed, Microsoft recommends configuring and leveraging the Syslog via AMA connector for log ingestion. Legacy connector uses the Log Analytics agent, which is about to be deprecated by **Aug 31, 2024,** and thus should only be installed where AMA is not supported.</p>
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

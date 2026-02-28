@@ -27,10 +27,10 @@ This ASIM parser supports filtering and normalizing Dhcp event logs from all sup
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Infoblox BloxOne | [_Im_DhcpEvent_InfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) |
-| Native | [_Im_DhcpEvent_Native](asimdhcpeventnative.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Infoblox BloxOne | [_Im_DhcpEvent_InfobloxBloxOne](asimdhcpeventinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Native | [_Im_DhcpEvent_Native](asimdhcpeventnative.md) |  |
 
 ## Parameters
 

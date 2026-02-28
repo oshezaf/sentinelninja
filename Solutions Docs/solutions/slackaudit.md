@@ -8,16 +8,6 @@
 
 ---
 
-The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capability to ingest [Slack Audit Records](https://api.slack.com/admins/audit-logs) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://api.slack.com/admins/audit-logs-call) for more information.
- 
- **Underlying Microsoft Technologies used:** 
- 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
- 
-  • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,17 +19,31 @@ The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capabilit
 | **First Published** | 2021-03-24 |
 | **Solution Folder** | [SlackAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit) |
 
+The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capability to ingest [Slack Audit Records](https://api.slack.com/admins/audit-logs) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://api.slack.com/admins/audit-logs-call) for more information.
+ 
+ **Underlying Microsoft Technologies used:** 
+ 
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+ 
+  • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
-- [Slack](../connectors/slackaudit.md) ⚠️ 🔶
-- [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) ⚠️ 🔶
-- [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md) 🔶
+- [Slack](../connectors/slackaudit.md) ⚠️ �
+- [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) ⚠️ �
+- [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md) �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,12 +51,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | [Slack](../connectors/slackaudit.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) 🔶 | [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
-| [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) � | [Slack](../connectors/slackaudit.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) � | [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
+| [`SlackAudit_CL`](../tables/slackaudit-cl.md) � | [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **21 content item(s)**:

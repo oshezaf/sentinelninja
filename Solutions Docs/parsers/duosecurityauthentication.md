@@ -20,7 +20,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md) 🔶 | ? | ✓ | ? |
+| [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md) � | ? | ✓ | ? |
 
 ---
 

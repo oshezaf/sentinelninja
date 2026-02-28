@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) 🔶 | ? | ✓ | ? |
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) � | ? | ✓ | ? |
 
 ---
 

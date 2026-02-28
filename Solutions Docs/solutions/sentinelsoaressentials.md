@@ -8,10 +8,6 @@
 
 ---
 
-The Microsoft Sentinel SOAR Essentials solution for Microsoft Sentinel contains Playbooks that can help you get started with basic notification and orchestration scenarios for common use cases. These include Playbooks for sending notifications over email and/or collaboration platforms such as MS Teams, Slack, etc.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,14 @@ The Microsoft Sentinel SOAR Essentials solution for Microsoft Sentinel contains 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-27 |
 | **Solution Folder** | [SentinelSOARessentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials) |
+
+The Microsoft Sentinel SOAR Essentials solution for Microsoft Sentinel contains Playbooks that can help you get started with basic notification and orchestration scenarios for common use cases. These include Playbooks for sending notifications over email and/or collaboration platforms such as MS Teams, Slack, etc.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

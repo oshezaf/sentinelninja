@@ -8,10 +8,6 @@
 
 ---
 
-The [ThreatX](https://www.threatx.com/products/) solution for Microsoft Sentinel provides an automated approach for analysts to remediate the attacks happening at application level by blocking the suspicious ip and url and also empowers them to gather the threat intelligence data for the malicious ip activity. This solution includes SOAR Connector and Playbooks by which the analyst can automate the security operations tasks
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,6 +19,8 @@ The [ThreatX](https://www.threatx.com/products/) solution for Microsoft Sentinel
 | **First Published** | 2022-09-23 |
 | **Last Updated** | 2022-09-23 |
 | **Solution Folder** | [ThreatXCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud) |
+
+The [ThreatX](https://www.threatx.com/products/) solution for Microsoft Sentinel provides an automated approach for analysts to remediate the attacks happening at application level by blocking the suspicious ip and url and also empowers them to gather the threat intelligence data for the malicious ip activity. This solution includes SOAR Connector and Playbooks by which the analyst can automate the security operations tasks
 
 ## Data Connectors
 

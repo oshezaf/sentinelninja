@@ -8,16 +8,6 @@
 
 ---
 
-The [Azure Storage account](https://docs.microsoft.com/azure/storage/common/storage-account-overview) Solution for Microsoft Sentinel enables you to stream Azure Storage accounts diagnostics logs into your Microsoft Sentinel workspace, allowing you to continuously monitor activity in all your instances, and detect malicious activity in your organization. 
-
-**Underlying Microsoft Technologies used:**
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
- a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,14 @@ The [Azure Storage account](https://docs.microsoft.com/azure/storage/common/stor
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-12 |
 | **Solution Folder** | [Azure Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Storage) |
+
+The [Azure Storage account](https://docs.microsoft.com/azure/storage/common/storage-account-overview) Solution for Microsoft Sentinel enables you to stream Azure Storage accounts diagnostics logs into your Microsoft Sentinel workspace, allowing you to continuously monitor activity in all your instances, and detect malicious activity in your organization. 
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor Resource Diagnostics](https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings)
 
 ## Data Connectors
 

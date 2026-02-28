@@ -8,14 +8,6 @@
 
 ---
 
-The [Palo Alto Networks (Firewall)](https://www.paloaltonetworks.com/network-security/next-generation-firewall) Solution for Microsoft Sentinel allows you to easily connect your Palo Alto Networks Firewall logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities. This solution also contains playbooks to help in automated remediation.
-
-This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -27,15 +19,28 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **First Published** | 2021-08-09 |
 | **Last Updated** | 2021-09-20 |
 | **Solution Folder** | [PaloAlto-PAN-OS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+The [Palo Alto Networks (Firewall)](https://www.paloaltonetworks.com/network-security/next-generation-firewall) Solution for Microsoft Sentinel allows you to easily connect your Palo Alto Networks Firewall logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities. This solution also contains playbooks to help in automated remediation.
+
+This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024**.
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -43,6 +48,9 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 - [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md) ⚠️
 - [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

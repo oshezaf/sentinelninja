@@ -8,10 +8,6 @@
 
 ---
 
-The Obsidian Datasharing solution for Microsoft Sentinel enables you to ingest Obsidian events into your Microsoft Sentinel Analytics Workspace.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Obsidian Security |
@@ -22,6 +18,8 @@ The Obsidian Datasharing solution for Microsoft Sentinel enables you to ingest O
 | **Author** | Timothy Zhou - tzhou@obsidiansecurity.com |
 | **First Published** | 2024-01-01 |
 | **Solution Folder** | [Obsidian Datasharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing) |
+
+The Obsidian Datasharing solution for Microsoft Sentinel enables you to ingest Obsidian events into your Microsoft Sentinel Analytics Workspace.
 
 ## Data Connectors
 

@@ -8,18 +8,6 @@
 
 ---
 
-The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/products/user-protection/sps/email-and-collaboration/cloud-app-security.html) data connector provides the capability to retrieve security event logs of the services that Cloud App Security protects and more events into Microsoft Sentinel through the Log Retrieval API. Refer to API [documentation](https://docs.trendmicro.com/enterprise/cloud-app-security-integration-api-online-help/supported-cloud-app-/log-retrieval-api/get-security-logs.aspx) for more information. The connector provides the ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.  
- 
- **Underlying Microsoft Technologies used:** 
- 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
- 
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
- 
- b. [Azure Functions ](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -31,13 +19,29 @@ The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/p
 | **First Published** | 2021-09-28 |
 | **Solution Folder** | [Trend Micro Cloud App Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security) |
 
+The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/products/user-protection/sps/email-and-collaboration/cloud-app-security.html) data connector provides the capability to retrieve security event logs of the services that Cloud App Security protects and more events into Microsoft Sentinel through the Log Retrieval API. Refer to API [documentation](https://docs.trendmicro.com/enterprise/cloud-app-security-integration-api-online-help/supported-cloud-app-/log-retrieval-api/get-security-logs.aspx) for more information. The connector provides the ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.  
+ 
+ **Underlying Microsoft Technologies used:** 
+ 
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+ 
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+ 
+ b. [Azure Functions ](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶
+- [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,10 +49,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) | Analytics, Hunting, Workbooks |
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) � | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

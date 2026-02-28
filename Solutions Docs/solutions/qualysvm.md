@@ -8,16 +8,6 @@
 
 ---
 
-The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management-detection-response/) solution for Microsoft Sentinel enables you to ingest host vulnerability detection data into Microsoft Sentinel.
-
-  **Underlying Microsoft Technologies used:** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -30,16 +20,30 @@ The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-
 | **Last Updated** | 2025-11-18 |
 | **Solution Folder** | [QualysVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM) |
 
+The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management-detection-response/) solution for Microsoft Sentinel enables you to ingest host vulnerability detection data into Microsoft Sentinel.
+
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md)
-- [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) ⚠️ 🔶
+- [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,12 +51,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) 🔶 | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Analytics, Workbooks |
+| [`QualysHostDetectionV2_CL`](../tables/qualyshostdetectionv2-cl.md) � | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Analytics, Workbooks |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) | [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md) | Analytics, Workbooks |
-| [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) 🔶 | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Analytics, Workbooks |
+| [`QualysHostDetection_CL`](../tables/qualyshostdetection-cl.md) � | [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **8 content item(s)**:

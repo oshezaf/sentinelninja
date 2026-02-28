@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
+| **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2021-07-07 |
+| **Solution Folder** | [Sophos Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection) |
+
 The [Sophos Endpoint Protection](https://www.sophos.com/products/endpoint-antivirus.aspx) solution provides the capability to ingest to ingest [Sophos events](https://developer.sophos.com/docs/siem-v1/1/routes/events/get) and [Sophos alerts](https://developer.sophos.com/docs/siem-v1/1/routes/alerts/get) into Microsoft Sentinel. Refer to [Sophos Central documentation](https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/Logs.html) for more information.
 
 **Underlying Microsoft Technologies used:**
@@ -20,27 +31,20 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 c. [Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector#connect-with-the-codeless-connector-platform)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
-| **Version** | 3.0.5 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2021-07-07 |
-| **Solution Folder** | [Sophos Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [Sophos Endpoint Protection](../connectors/sophosep.md) 🔶
+- [Sophos Endpoint Protection](../connectors/sophosep.md) �
 - [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md)
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,10 +54,10 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`SophosEPAlerts_CL`](../tables/sophosepalerts-cl.md) | [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) | - |
 | [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) | - |
-| [`SophosEP_CL`](../tables/sophosep-cl.md) 🔶 | [Sophos Endpoint Protection](../connectors/sophosep.md) | - |
+| [`SophosEP_CL`](../tables/sophosep-cl.md) � | [Sophos Endpoint Protection](../connectors/sophosep.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

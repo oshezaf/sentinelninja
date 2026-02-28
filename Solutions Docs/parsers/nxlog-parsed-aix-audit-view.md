@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AIX_Audit_CL`](../tables/aix-audit-cl.md) 🔶 | ? | ✓ | ? |
+| [`AIX_Audit_CL`](../tables/aix-audit-cl.md) � | ? | ✓ | ? |
 
 ---
 

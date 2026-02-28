@@ -8,10 +8,6 @@
 
 ---
 
-Microsoft centralizes numerous data sets into a single platform, Microsoft Defender Threat Intelligence [(MDTI)](https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti), making it easier for Microsoft’s community and customers to conduct infrastructure analysis. Microsoft’s primary focus is to provide as much data as possible about Internet infrastructure to support a variety of security use cases and enabling automation for Incident management in Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,14 @@ Microsoft centralizes numerous data sets into a single platform, Microsoft Defen
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-03-23 |
 | **Solution Folder** | [Microsoft Defender Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence) |
+
+Microsoft centralizes numerous data sets into a single platform, Microsoft Defender Threat Intelligence [(MDTI)](https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti), making it easier for Microsoft’s community and customers to conduct infrastructure analysis. Microsoft’s primary focus is to provide as much data as possible about Internet infrastructure to support a variety of security use cases and enabling automation for Incident management in Microsoft Sentinel.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

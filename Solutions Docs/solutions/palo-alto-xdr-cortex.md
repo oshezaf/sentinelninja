@@ -8,13 +8,17 @@
 
 ---
 
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
 | **Solution Folder** | [Palo Alto - XDR (Cortex)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20-%20XDR%20%28Cortex%29) |
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

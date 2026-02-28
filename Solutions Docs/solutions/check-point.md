@@ -8,16 +8,6 @@
 
 ---
 
-The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-firewall/) for Microsoft Sentinel enables you to ingest [Check Point firewall logs](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk122323) into Microsoft Sentinel.  
-
- ** Underlying Microsoft Technologies used:  ** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:  
-
- a. [Agent-based log collection (CEF over Syslog)](https://learn.microsoft.com/azure/sentinel/connect-common-event-format)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Check Point |
@@ -29,9 +19,24 @@ The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-fir
 | **First Published** | 2021-08-13 |
 | **Solution Folder** | [Check Point](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point) |
 
-## Additional Information
+The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-firewall/) for Microsoft Sentinel enables you to ingest [Check Point firewall logs](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk122323) into Microsoft Sentinel.  
+
+ ** Underlying Microsoft Technologies used:  ** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:  
+
+ a. [Agent-based log collection (CEF over Syslog)](https://learn.microsoft.com/azure/sentinel/connect-common-event-format)
+
+**Additional Information**
 
 📖 **Vendor Documentation:** [Check Point Log Fields Description](https://support.checkpoint.com/results/sk/sk144192) - Log field definitions and descriptions
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

@@ -8,10 +8,6 @@
 
 ---
 
-The TacitRed Defender Threat Intelligence solution integrates TacitRed's threat intelligence feed with Microsoft Sentinel. It automatically retrieves compromised credentials and other threat indicators from TacitRed and ingests them into Microsoft Sentinel using the Upload API for enhanced threat detection.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Data443 Risk Mitigation, Inc. |
@@ -22,6 +18,14 @@ The TacitRed Defender Threat Intelligence solution integrates TacitRed's threat 
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-11-10 |
 | **Solution Folder** | [TacitRed-Defender-ThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-Defender-ThreatIntelligence) |
+
+The TacitRed Defender Threat Intelligence solution integrates TacitRed's threat intelligence feed with Microsoft Sentinel. It automatically retrieves compromised credentials and other threat indicators from TacitRed and ingests them into Microsoft Sentinel using the Upload API for enhanced threat detection.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

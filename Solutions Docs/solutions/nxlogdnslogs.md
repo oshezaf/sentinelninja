@@ -8,16 +8,6 @@
 
 ---
 
-The [NXLog DNSLogs](https://docs.nxlog.co/refman/current/im/etw.html) solution for Microsoft Sentinel enables you to ingest DNS server events. NXLog DNSLogs uses Event Tracing for Windows [(ETW)](https://docs.microsoft.com/windows/apps/trace-processing/overview?WT.mc_id=Portal-fx) for collecting both Audit and Analytical DNS server events.[The NXLog im_etw module](https://docs.nxlog.co/refman/current/im/etw.html) reads event tracing data directly for maximum efficiency, without the need to capture the event trace into an .etl file. 
- 
- **Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | NXLog |
@@ -29,13 +19,27 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2022-05-24 |
 | **Solution Folder** | [NXLogDnsLogs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NXLogDnsLogs) |
 
+The [NXLog DNSLogs](https://docs.nxlog.co/refman/current/im/etw.html) solution for Microsoft Sentinel enables you to ingest DNS server events. NXLog DNSLogs uses Event Tracing for Windows [(ETW)](https://docs.microsoft.com/windows/apps/trace-processing/overview?WT.mc_id=Portal-fx) for collecting both Audit and Analytical DNS server events.[The NXLog im_etw module](https://docs.nxlog.co/refman/current/im/etw.html) reads event tracing data directly for maximum efficiency, without the need to capture the event trace into an .etl file. 
+ 
+ **Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [NXLog DNS Logs](../connectors/nxlogdnslogs.md) 🔶
+- [NXLog DNS Logs](../connectors/nxlogdnslogs.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,10 +47,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) 🔶 | [NXLog DNS Logs](../connectors/nxlogdnslogs.md) | - |
+| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) � | [NXLog DNS Logs](../connectors/nxlogdnslogs.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

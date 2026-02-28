@@ -8,10 +8,6 @@
 
 ---
 
-The [NC Protect Data Connector (archtis.com)](https://info.archtis.com/get-started-with-nc-protect-sentinel-data-connector) provides the capability to ingest user activity logs and events into Microsoft Sentinel. The connector provides visibility into NC Protect user activity logs and events in Microsoft Sentinel to improve monitoring and investigation capabilities 
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | archTIS |
@@ -23,13 +19,21 @@ The [NC Protect Data Connector (archtis.com)](https://info.archtis.com/get-start
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [NC Protect Data Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector) |
 
+The [NC Protect Data Connector (archtis.com)](https://info.archtis.com/get-started-with-nc-protect-sentinel-data-connector) provides the capability to ingest user activity logs and events into Microsoft Sentinel. The connector provides visibility into NC Protect user activity logs and events in Microsoft Sentinel to improve monitoring and investigation capabilities 
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [NC Protect](../connectors/nucleuscyberncprotect.md) 🔶
+- [NC Protect](../connectors/nucleuscyberncprotect.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md) 🔶 | [NC Protect](../connectors/nucleuscyberncprotect.md) | Workbooks |
+| [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md) � | [NC Protect](../connectors/nucleuscyberncprotect.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

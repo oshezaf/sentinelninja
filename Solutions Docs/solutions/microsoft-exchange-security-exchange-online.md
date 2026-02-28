@@ -8,16 +8,6 @@
 
 ---
 
-The Exchange Security Audit and Configuration Insight solution analyze Exchange Online configuration and logs from a security lens to provide insights and alerts.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-collector-api?tabs=powershell)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Community |
@@ -29,13 +19,28 @@ a. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.c
 | **First Published** | 2022-12-21 |
 | **Solution Folder** | [Microsoft Exchange Security - Exchange Online](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online) |
 
+The Exchange Security Audit and Configuration Insight solution analyze Exchange Online configuration and logs from a security lens to provide insights and alerts.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-collector-api?tabs=powershell)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) 🔶
+- [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,12 +48,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) | Workbooks |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) � | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) | Workbooks |
 | [`Event`](../tables/event.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **10 content item(s)**:

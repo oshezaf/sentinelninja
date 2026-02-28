@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) � | ✗ | ✓ | ✗ |
 
 ---
 

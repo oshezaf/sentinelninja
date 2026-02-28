@@ -8,10 +8,6 @@
 
 ---
 
-The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Seraphic Security |
@@ -23,6 +19,8 @@ The Seraphic Web Security data connector provides the capability to ingest [Sera
 | **First Published** | 2023-07-31 |
 | **Last Updated** | 2023-07-31 |
 | **Solution Folder** | [SeraphicSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity) |
+
+The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
 
 ## Data Connectors
 

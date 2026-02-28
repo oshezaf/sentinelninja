@@ -8,10 +8,6 @@
 
 ---
 
-This workbook helps you track, visualize and monitor GDPR related requirements across your enterprise. It consolidates data from Defender XDR, Microsoft Purview, Azure SQL Databases, Microsoft 365, UEBA and Entra ID solution.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,51 +18,54 @@ This workbook helps you track, visualize and monitor GDPR related requirements a
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-10-08 |
 | **Solution Folder** | [GDPR Compliance & Data Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GDPR%20Compliance%20%26%20Data%20Security) |
-| **Dependencies** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft Purview](microsoft-purview.md), [Microsoft Purview Information Protection](microsoft-purview-information-protection.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Microsoft 365](microsoft-365.md), [Microsoft Entra ID](microsoft-entra-id.md) |
+| **Pre-requisites** | [Microsoft Defender XDR](microsoft-defender-xdr.md), [Microsoft Purview](microsoft-purview.md), [Microsoft Purview Information Protection](microsoft-purview-information-protection.md), [Azure SQL Database solution for sentinel](azure-sql-database-solution-for-sentinel.md), [Microsoft 365](microsoft-365.md), [Microsoft Entra ID](microsoft-entra-id.md) |
 
-## Dependencies
+This workbook helps you track, visualize and monitor GDPR related requirements across your enterprise. It consolidates data from Defender XDR, Microsoft Purview, Azure SQL Databases, Microsoft 365, UEBA and Entra ID solution.
 
-This solution has **5 required** and **9 optional** (ASIM-based) dependencies on other solutions:
+## Contents
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: WebSession |
-| [Cisco SD-WAN](cisco-sd-wan.md) | ASIM (optional) | ASIM schemas: WebSession |
-| [CiscoMeraki](ciscomeraki.md) | ASIM (optional) | ASIM schemas: WebSession |
-| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: WebSession |
-| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: WebSession |
-| [Forescout (Legacy)](forescout-legacy.md) | ASIM (optional) | ASIM schemas: WebSession |
-| [Microsoft 365](microsoft-365.md) | explicit | - |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: WebSession |
-| [Microsoft Purview](microsoft-purview.md) | explicit | - |
-| [Microsoft Purview Information Protection](microsoft-purview-information-protection.md) | explicit | - |
-| [Vectra AI Stream](vectra-ai-stream.md) | ASIM (optional) | ASIM schemas: WebSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: WebSession |
+- [Pre-requisites](#pre-requisites)
+- [ASIM Pre-requisites](#asim-pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+## Pre-requisites
 
-This solution uses ASIM parsers and supports the following products:
+This solution depends on **5 other solution(s)**:
 
-| Product |
-|:--------|
-| [Apache HTTP Server](../asim/asim-products-index.md#apache-http-server) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
-| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
-| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
-| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
-| [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) |
-| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-asm) |
-| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
-| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-iis) |
-| [Native](../asim/asim-products-index.md#native) |
-| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
-| [Palo Alto Networks](../asim/asim-products-index.md#palo-alto-networks) |
-| [SonicWall](../asim/asim-products-index.md#sonicwall) |
-| [Squid Proxy](../asim/asim-products-index.md#squid-proxy) |
-| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
-| [Zscaler ZIA](../asim/asim-products-index.md#zscaler-zia) |
+| Solution |
+|:---------|
+| [Microsoft 365](microsoft-365.md) |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) |
+| [Microsoft Entra ID](microsoft-entra-id.md) |
+| [Microsoft Purview](microsoft-purview.md) |
+| [Microsoft Purview Information Protection](microsoft-purview-information-protection.md) |
+
+## <a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites
+
+This solution uses the [`_Im_WebSession`](../asim/imwebsession.md) [ASIM (Advanced Security Information Model)](https://learn.microsoft.com/azure/sentinel/normalization) parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.
+
+### Supported Products
+
+| Product | Dependency Solution |
+|:--------|:--------------------|
+| [Apache HTTP Server](../asim/asim-products-index.md#apache-http-server) | [CustomLogsAma](customlogsama.md) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | - |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) | [Cisco SD-WAN](cisco-sd-wan.md)<br>[CiscoMeraki](ciscomeraki.md)<br>[CustomLogsAma](customlogsama.md)<br>[Forescout (Legacy)](forescout-legacy.md) |
+| [Citrix NetScaler](../asim/asim-products-index.md#citrix-netscaler) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [F5 BIG-IP Application Security Manager (ASM)](../asim/asim-products-index.md#f5-big-ip-application-security-manager-asm) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Internet Information Services (IIS)](../asim/asim-products-index.md#internet-information-services-iis) | [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) |
+| [Native](../asim/asim-products-index.md#native) | [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Palo Alto Networks](../asim/asim-products-index.md#palo-alto-networks) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Squid Proxy](../asim/asim-products-index.md#squid-proxy) | [CustomLogsAma](customlogsama.md) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) | [CustomLogsAma](customlogsama.md)<br>[Vectra AI Stream](vectra-ai-stream.md) |
+| [Zscaler ZIA](../asim/asim-products-index.md#zscaler-zia) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
 
 ## Data Connectors
 
@@ -99,14 +98,6 @@ This solution uses ASIM parsers and supports the following products:
 - [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md) *(dependency on [VirtualMetric DataStream](virtualmetric-datastream.md))*
 - [VirtualMetric DataStream for Microsoft Sentinel](../connectors/virtualmetricmssentinelconnector.md) *(dependency on [VirtualMetric DataStream](virtualmetric-datastream.md))*
 - [VirtualMetric DataStream for Microsoft Sentinel data lake](../connectors/virtualmetricmssentineldatalakeconnector.md) *(dependency on [VirtualMetric DataStream](virtualmetric-datastream.md))*
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This solution uses **1 ASIM parser(s)** for normalized data:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`_Im_WebSession`](../asim/imwebsession.md) | Workbooks |
 
 ## Tables Used
 

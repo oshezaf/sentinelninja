@@ -8,12 +8,6 @@
 
 ---
 
-The [Radiflow](https://www.radiflow.com/) solution for Microsoft Sentinel enables ingestion of [iSID](https://www.radiflow.com/products/ot-visibility-and-anomaly-detection/) events into Microsoft Sentinel.
-
-1. **Radiflow iSID via AMA** - This data connector helps in ingesting Radiflow logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). **Microsoft recommends using this Data Connector**.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Radiflow |
@@ -24,6 +18,16 @@ The [Radiflow](https://www.radiflow.com/) solution for Microsoft Sentinel enable
 | **Author** | Radiflow - support@radiflow.com |
 | **First Published** | 2024-06-26 |
 | **Solution Folder** | [Radiflow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Radiflow) |
+
+The [Radiflow](https://www.radiflow.com/) solution for Microsoft Sentinel enables ingestion of [iSID](https://www.radiflow.com/products/ot-visibility-and-anomaly-detection/) events into Microsoft Sentinel.
+
+1. **Radiflow iSID via AMA** - This data connector helps in ingesting Radiflow logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). **Microsoft recommends using this Data Connector**.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

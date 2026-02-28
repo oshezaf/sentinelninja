@@ -10,6 +10,18 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Cofense Support |
+| **Support Tier** | Partner |
+| **Support Link** | [https://cofense.com/contact-support/](https://cofense.com/contact-support/) |
+| **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Cofense - support@cofense.com |
+| **First Published** | 2023-05-26 |
+| **Last Updated** | 2024-05-26 |
+| **Solution Folder** | [CofenseIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence) |
+
 The Cofense-Intelligence solution provides the capability to ingest Threat Indicators from the Cofense Intelligence platform to Threat Intelligence Indicators in Microsoft Sentinel and Cofense Intelligence Threat Intelligence Indicators from Microsoft Sentinel Threat Intelligence to Microsoft Defender for Endpoints. 
 
 **Underlying Microsoft Technologies used:**
@@ -26,27 +38,19 @@ b.[Azure Functions](https://azure.microsoft.com/products/functions/#overview)
 
 c.[Microsoft Threat Intelligence Indicator API](https://learn.microsoft.com/en-us/rest/api/securityinsights/preview/threat-intelligence-indicator)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Cofense Support |
-| **Support Tier** | Partner |
-| **Support Link** | [https://cofense.com/contact-support/](https://cofense.com/contact-support/) |
-| **Categories** | domains |
-| **Version** | 3.0.0 |
-| **Author** | Cofense - support@cofense.com |
-| **First Published** | 2023-05-26 |
-| **Last Updated** | 2024-05-26 |
-| **Solution Folder** | [CofenseIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) 🔶
+- [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -54,11 +58,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Malware_Data_CL`](../tables/malware-data-cl.md) 🔶 | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) | Workbooks |
+| [`Malware_Data_CL`](../tables/malware-data-cl.md) � | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

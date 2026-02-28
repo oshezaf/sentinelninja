@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallNetworkRule"`<br>`Category == "SQLSecurityAuditEvents"` | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | `Category == "AzureFirewallNetworkRule"`<br>`Category == "SQLSecurityAuditEvents"` | ✗ | ✗ | ✗ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "ConnectionSuccess"` | ✓ | ✗ | ? |

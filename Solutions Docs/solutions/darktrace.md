@@ -8,18 +8,6 @@
 
 ---
 
-The [Darktrace](https://darktrace.com/) Sentinel Solution lets users connect Darktrace AI-based alerting in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. Microsoft Sentinel's enhanced visibility into Darktrace logs enables monitoring and mitigation of security threats. 
-
-**Underlying Microsoft Technologies used:**
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
-a. [Microsoft Sentinel Data Collector API](https://docs.microsoft.com/azure/sentinel/connect-rest-api-template)
-
- For more details about this solution refer to https://www.darktrace.com/microsoft/sentinel/
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Darktrace |
@@ -31,13 +19,29 @@ a. [Microsoft Sentinel Data Collector API](https://docs.microsoft.com/azure/sent
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Darktrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Darktrace) |
 
+The [Darktrace](https://darktrace.com/) Sentinel Solution lets users connect Darktrace AI-based alerting in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. Microsoft Sentinel's enhanced visibility into Darktrace logs enables monitoring and mitigation of security threats. 
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+a. [Microsoft Sentinel Data Collector API](https://docs.microsoft.com/azure/sentinel/connect-rest-api-template)
+
+ For more details about this solution refer to https://www.darktrace.com/microsoft/sentinel/
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) 🔶
+- [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,10 +49,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) 🔶 | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) | Analytics, Workbooks |
+| [`darktrace_model_alerts_CL`](../tables/darktrace-model-alerts-cl.md) � | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

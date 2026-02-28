@@ -8,16 +8,6 @@
 
 ---
 
-The [Cisco SD-WAN](https://www.cisco.com/c/en_in/solutions/enterprise-networks/sd-wan/index.html) solution for Microsoft Sentinel enables you to ingest Syslog and Netflow logs into Microsoft Sentinel, providing insight into network threats and vulnerabilities.
- 
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Agent-based log collection (Syslog) ](https://learn.microsoft.com/azure/sentinel/forward-syslog-monitor-agent)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cisco Systems |
@@ -30,13 +20,27 @@ a. [Agent-based log collection (Syslog) ](https://learn.microsoft.com/azure/sent
 | **Last Updated** | 2024-06-01 |
 | **Solution Folder** | [Cisco SD-WAN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN) |
 
+The [Cisco SD-WAN](https://www.cisco.com/c/en_in/solutions/enterprise-networks/sd-wan/index.html) solution for Microsoft Sentinel enables you to ingest Syslog and Netflow logs into Microsoft Sentinel, providing insight into network threats and vulnerabilities.
+ 
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Agent-based log collection (Syslog) ](https://learn.microsoft.com/azure/sentinel/forward-syslog-monitor-agent)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Cisco Software Defined WAN](../connectors/ciscosdwan.md) 🔶
+- [Cisco Software Defined WAN](../connectors/ciscosdwan.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -44,11 +48,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) 🔶 | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) � | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
 | [`Syslog`](../tables/syslog.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

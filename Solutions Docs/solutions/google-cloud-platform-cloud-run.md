@@ -8,16 +8,6 @@
 
 ---
 
-The GCP Cloud Run solution provides the capability to ingest [GCP Run logs](https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions) into Microsoft Sentinel using the GCP Logging API. Refer to [GCP Cloud Run API documentation](https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions) for more information.
-  
-  **Underlying Microsoft Technologies used:** 
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
- • [Codeless Connector Framework(CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,14 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-30 |
 | **Solution Folder** | [Google Cloud Platform Cloud Run](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Run) |
+
+The GCP Cloud Run solution provides the capability to ingest [GCP Run logs](https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions) into Microsoft Sentinel using the GCP Logging API. Refer to [GCP Cloud Run API documentation](https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions) for more information.
+  
+  **Underlying Microsoft Technologies used:** 
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ • [Codeless Connector Framework(CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
 
 ## Data Connectors
 

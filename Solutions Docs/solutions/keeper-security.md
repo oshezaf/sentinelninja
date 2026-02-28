@@ -8,10 +8,6 @@
 
 ---
 
-The [Keeper Security](https://keepersecurity.com/) solution for Microsoft Sentinel enables you to ingest [Keeper Security](https://keepersecurity.com/) forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Keeper Security |
@@ -23,6 +19,14 @@ The [Keeper Security](https://keepersecurity.com/) solution for Microsoft Sentin
 | **First Published** | 2025-06-03 |
 | **Last Updated** | 2025-06-03 |
 | **Solution Folder** | [Keeper Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Keeper%20Security) |
+
+The [Keeper Security](https://keepersecurity.com/) solution for Microsoft Sentinel enables you to ingest [Keeper Security](https://keepersecurity.com/) forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

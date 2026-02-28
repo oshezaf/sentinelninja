@@ -8,16 +8,6 @@
 
 ---
 
-The [Miro](https://miro.com/) solution for Microsoft Sentinel provides the capability to ingest audit logs and content activity logs from [Miro REST APIs](https://developers.miro.com/reference) into Microsoft Sentinel using the Codeless Connector Framework (CCF). This connector enables organizations to monitor and analyze activities within their Miro workspaces. For detailed instructions, refer to the [documentation](https://help.miro.com/hc/en-us/articles/31325908249362).
-
-**Underlying Microsoft technology used:**
-
-This solution is dependent on the following technology and this dependency may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-• [Codeless Connector Framework (CCF)](https://learn.microsoft.com/azure/sentinel/create-codeless-connector)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Miro |
@@ -27,6 +17,20 @@ This solution is dependent on the following technology and this dependency may b
 | **Version** | 3.0.0 |
 | **Author** | Miro - enterprise_integrations@miro.com |
 | **Solution Folder** | [Miro](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro) |
+
+The [Miro](https://miro.com/) solution for Microsoft Sentinel provides the capability to ingest audit logs and content activity logs from [Miro REST APIs](https://developers.miro.com/reference) into Microsoft Sentinel using the Codeless Connector Framework (CCF). This connector enables organizations to monitor and analyze activities within their Miro workspaces. For detailed instructions, refer to the [documentation](https://help.miro.com/hc/en-us/articles/31325908249362).
+
+**Underlying Microsoft technology used:**
+
+This solution is dependent on the following technology and this dependency may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+• [Codeless Connector Framework (CCF)](https://learn.microsoft.com/azure/sentinel/create-codeless-connector)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

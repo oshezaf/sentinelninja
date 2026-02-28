@@ -8,13 +8,18 @@
 
 ---
 
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
 | **Solution Folder** | [SAP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP) |
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

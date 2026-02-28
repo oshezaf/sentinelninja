@@ -8,10 +8,6 @@
 
 ---
 
-The [Microsoft Purview](https://learn.microsoft.com/purview/purview) Solution enables data sensitivity enrichment of Microsoft Sentinel. Data classification and sensitivity label logs from Microsoft Purview scans are ingested and visualized through workbooks, analytical rules, and more.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,9 +19,17 @@ The [Microsoft Purview](https://learn.microsoft.com/purview/purview) Solution en
 | **First Published** | 2021-11-23 |
 | **Solution Folder** | [Microsoft Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview) |
 
-## Additional Information
+The [Microsoft Purview](https://learn.microsoft.com/purview/purview) Solution enables data sensitivity enrichment of Microsoft Sentinel. Data classification and sensitivity label logs from Microsoft Purview scans are ingested and visualized through workbooks, analytical rules, and more.
+
+**Additional Information**
 
 📖 **Setup Guide:** [Integrate Microsoft Purview](https://learn.microsoft.com/azure/sentinel/purview-solution) - Integrate Microsoft Purview with Microsoft Sentinel
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

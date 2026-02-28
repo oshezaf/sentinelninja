@@ -6,8 +6,6 @@
 
 ---
 
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Red Canary |
@@ -18,15 +16,21 @@
 | **Last Updated** | 2022-03-04 |
 | **Solution Folder** | [Red Canary](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary) |
 
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ 🔶
+- [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -34,10 +38,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`RedCanaryDetections_CL`](../tables/redcanarydetections-cl.md) 🔶 | [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) | Analytics |
+| [`RedCanaryDetections_CL`](../tables/redcanarydetections-cl.md) � | [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) | Analytics |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

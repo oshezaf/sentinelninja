@@ -8,14 +8,6 @@
 
 ---
 
-The [F5 Networks](https://www.f5.com/) solution for Microsoft Sentinel enables you to ingest F5 Network firewall logs into Microsoft Sentinel, using the Common Event Format (CEF) for Security Monitoring.
-
- This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | F5 |
@@ -26,15 +18,27 @@ The [F5 Networks](https://www.f5.com/) solution for Microsoft Sentinel enables y
 | **Author** | F5 |
 | **First Published** | 2022-05-12 |
 | **Solution Folder** | [F5 Networks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+The [F5 Networks](https://www.f5.com/) solution for Microsoft Sentinel enables you to ingest F5 Network firewall logs into Microsoft Sentinel, using the Common Event Format (CEF) for Security Monitoring.
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -42,6 +46,9 @@ This solution provides **2 data connector(s)**:
 
 - [[Deprecated] F5 Networks via Legacy Agent](../connectors/f5.md)
 - [[Deprecated] F5 Networks via AMA](../connectors/f5ama.md)
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

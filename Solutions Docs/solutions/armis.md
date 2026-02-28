@@ -8,10 +8,6 @@
 
 ---
 
-The [Armis](https://www.armis.com/) Solution gives the capability to ingest Armis Devices, Alerts and device Activities into Microsoft Sentinel through the Armis REST API.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Armis Corporation |
@@ -23,6 +19,14 @@ The [Armis](https://www.armis.com/) Solution gives the capability to ingest Armi
 | **First Published** | 2022-08-02 |
 | **Last Updated** | 2024-08-23 |
 | **Solution Folder** | [Armis](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis) |
+
+The [Armis](https://www.armis.com/) Solution gives the capability to ingest Armis Devices, Alerts and device Activities into Microsoft Sentinel through the Armis REST API.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

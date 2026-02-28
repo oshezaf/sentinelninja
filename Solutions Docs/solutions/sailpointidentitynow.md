@@ -8,18 +8,6 @@
 
 ---
 
-The [SailPoint Integration](https://www.sailpoint.com/) solution provides the capability to ingest SailPoint IdentityNow search events into Microsoft Sentinel through the REST API. 
-
- ** Underlying Microsoft Technologies used: ** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
-
- b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | SailPoint |
@@ -30,13 +18,29 @@ The [SailPoint Integration](https://www.sailpoint.com/) solution provides the ca
 | **First Published** | 2021-10-26 |
 | **Solution Folder** | [SailPointIdentityNow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow) |
 
+The [SailPoint Integration](https://www.sailpoint.com/) solution provides the capability to ingest SailPoint IdentityNow search events into Microsoft Sentinel through the REST API. 
+
+ ** Underlying Microsoft Technologies used: ** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+
+ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) 🔶
+- [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -44,11 +48,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) 🔶 | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) | Analytics |
-| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) 🔶 | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) | Analytics |
+| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) � | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) | Analytics |
+| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) � | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) | Analytics |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **6 content item(s)**:

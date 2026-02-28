@@ -10,10 +10,6 @@
 
 ---
 
-Forescout eyeInspect is a cybersecurity platform designed for Operational Technology (OT) and Industrial Control Systems (ICS) environments. It provides visibility into network devices, threat detection, and risk management for critical infrastructure like power grids and manufacturing plants. eyeInspect uses deep packet inspection of OT/ICS protocols to establish a baseline of network behavior and identify potential threats and vulnerabilities.  Forescout eyeInspect helps OT/ICS industry customers to achieve end-to-end cyber resiliency of OT/ICS network with a comprehensive asset risk framework and threat detection through deep packet inspection of all industrial network protocols. Forescout eyeInspect defends customers’ most critical infrastructure, with thousands of OT-specific threat indicators and powerful anomaly detection through a platform that enables organizations across the globe to act on identified risks and detect cyber threats before they lead to operational downtime.  This solution integrates Forescout eyeInspect with Microsoft Sentinel. This integration facilitates comprehensive view of OT Asset data and Alerts, and helps with enhanced security analysis with Microsoft Sentinel tools.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Forescout Technologies |
@@ -25,15 +21,23 @@ Forescout eyeInspect is a cybersecurity platform designed for Operational Tech
 | **First Published** | 2025-07-10 |
 | **Solution Folder** | [Forescout eyeInspect for OT Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20eyeInspect%20for%20OT%20Security) |
 
+Forescout eyeInspect is a cybersecurity platform designed for Operational Technology (OT) and Industrial Control Systems (ICS) environments. It provides visibility into network devices, threat detection, and risk management for critical infrastructure like power grids and manufacturing plants. eyeInspect uses deep packet inspection of OT/ICS protocols to establish a baseline of network behavior and identify potential threats and vulnerabilities.  Forescout eyeInspect helps OT/ICS industry customers to achieve end-to-end cyber resiliency of OT/ICS network with a comprehensive asset risk framework and threat detection through deep packet inspection of all industrial network protocols. Forescout eyeInspect defends customers’ most critical infrastructure, with thousands of OT-specific threat indicators and powerful anomaly detection through a platform that enables organizations across the globe to act on identified risks and detect cyber threats before they lead to operational downtime.  This solution integrates Forescout eyeInspect with Microsoft Sentinel. This integration facilitates comprehensive view of OT Asset data and Alerts, and helps with enhanced security analysis with Microsoft Sentinel tools.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ 🔶
+- [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,11 +45,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md) 🔶 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
-| [`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) 🔶 | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
+| [`ForescoutOtAlert_CL`](../tables/forescoutotalert-cl.md) � | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
+| [`ForescoutOtAsset_CL`](../tables/forescoutotasset-cl.md) � | [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

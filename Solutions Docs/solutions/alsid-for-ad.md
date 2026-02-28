@@ -10,10 +10,6 @@
 
 ---
 
-Alsid for Active Directory connector allows to export Alsid Indicators of Exposures, trailflow and Indicators of Attacks logs to Microsoft Sentinel in real time.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Alsid |
@@ -24,6 +20,14 @@ Alsid for Active Directory connector allows to export Alsid Indicators of Exposu
 | **Author** | Alsid |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [Alsid For AD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alsid%20For%20AD) |
+
+Alsid for Active Directory connector allows to export Alsid Indicators of Exposures, trailflow and Indicators of Attacks logs to Microsoft Sentinel in real time.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

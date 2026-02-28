@@ -10,10 +10,6 @@
 
 ---
 
-Amazon Web Services S3 VPC Flow Logs Solution for Microsoft Sentinel provides data connector to ingest AWS VPC Flow Logs into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -25,10 +21,18 @@ Amazon Web Services S3 VPC Flow Logs Solution for Microsoft Sentinel provides da
 | **First Published** | 2025-07-30 |
 | **Solution Folder** | [AWS VPC Flow Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs) |
 
-## Additional Information
+Amazon Web Services S3 VPC Flow Logs Solution for Microsoft Sentinel provides data connector to ingest AWS VPC Flow Logs into Microsoft Sentinel.
+
+**Additional Information**
 
 - 📖 **Setup Guide:** [Connect Microsoft Sentinel to AWS](https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment) - Configure your AWS environment for Microsoft Sentinel integration
 - 📖 **Troubleshooting:** [Troubleshoot AWS S3 connector issues](https://learn.microsoft.com/azure/sentinel/aws-s3-troubleshoot) - Resolve common AWS S3 connector problems
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

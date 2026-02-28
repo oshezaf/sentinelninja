@@ -8,10 +8,6 @@
 
 ---
 
-The Lookout Cloud Security solution for Microsoft Sentinel enables enterprises to search for Lookout cloud security threats and compliance violations, create custom dashboards and create alerts in Microsoft Sentinel SIEM.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Lookout |
@@ -23,13 +19,21 @@ The Lookout Cloud Security solution for Microsoft Sentinel enables enterprises t
 | **First Published** | 2023-02-17 |
 | **Solution Folder** | [Lookout Cloud Security Platform for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout%20Cloud%20Security%20Platform%20for%20Microsoft%20Sentinel) |
 
+The Lookout Cloud Security solution for Microsoft Sentinel enables enterprises to search for Lookout cloud security threats and compliance violations, create custom dashboards and create alerts in Microsoft Sentinel SIEM.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) 🔶
+- [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) 🔶 | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) | - |
+| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) � | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:

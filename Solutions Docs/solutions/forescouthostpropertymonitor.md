@@ -8,10 +8,6 @@
 
 ---
 
-Forescout Host Property Monitor offers host property analysis, incident generation and action dispatching for hosts managed by Forescout Continuum platform.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Forescout Technologies |
@@ -23,13 +19,21 @@ Forescout Host Property Monitor offers host property analysis, incident generati
 | **First Published** | 2022-06-28 |
 | **Solution Folder** | [ForescoutHostPropertyMonitor](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor) |
 
+Forescout Host Property Monitor offers host property analysis, incident generation and action dispatching for hosts managed by Forescout Continuum platform.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) 🔶
+- [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,12 +41,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) 🔶 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
-| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) 🔶 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Analytics, Workbooks |
-| [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) 🔶 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
+| [`ForescoutComplianceStatus_CL`](../tables/forescoutcompliancestatus-cl.md) � | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
+| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) � | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Analytics, Workbooks |
+| [`ForescoutPolicyStatus_CL`](../tables/forescoutpolicystatus-cl.md) � | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:

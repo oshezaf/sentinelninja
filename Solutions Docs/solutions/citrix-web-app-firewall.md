@@ -8,14 +8,6 @@
 
 ---
 
-[Citrix Web App Firewall (WAF)](https://www.citrix.com/products/citrix-web-app-firewall/) Solution for Microsoft Sentinel enables ingestion of Common Event Format (CEF) logs into Microsoft Sentinel to enable you to take advantage of search & correlation, alerting, and threat intelligence enrichment for each log.
-
- This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
-
-**NOTE: **Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024.**
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Citrix Systems |
@@ -26,15 +18,28 @@
 | **Author** | Citrix Systems |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [Citrix Web App Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Web%20App%20Firewall) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+[Citrix Web App Firewall (WAF)](https://www.citrix.com/products/citrix-web-app-firewall/) Solution for Microsoft Sentinel enables ingestion of Common Event Format (CEF) logs into Microsoft Sentinel to enable you to take advantage of search & correlation, alerting, and threat intelligence enrichment for each log.
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE: **Microsoft recommends installation of CEF via AMA Connector. The existing connectors were deprecated on **Aug 31, 2024.**
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -42,6 +47,9 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 - [[Deprecated] Citrix WAF (Web App Firewall) via Legacy Agent](../connectors/citrixwaf.md) ⚠️
 - [[Deprecated] Citrix WAF (Web App Firewall) via AMA](../connectors/citrixwafama.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

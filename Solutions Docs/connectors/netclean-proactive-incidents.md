@@ -16,7 +16,7 @@
 | **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [Connector_NetClean.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetClean%20ProActive/Data%20Connectors/Connector_NetClean.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 This connector uses the Netclean Webhook (required) and Logic Apps to push data into Microsoft Sentinel Log Analytics
 
@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) 🔶 | ? | ✓ | ? |
+| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) � | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

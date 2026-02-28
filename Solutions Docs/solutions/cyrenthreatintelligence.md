@@ -8,10 +8,6 @@
 
 ---
 
-The [Cyren Threat Intelligence](https://data443.com/cyren-threat-intelligence/) solution provides the capability to ingest Cyren IP reputation and malware URL threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution deploys REST API poller connectors, a custom log table, data collection rules, analytics rules, and visualization workbook to help security teams detect and investigate network-based threats.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Data443 Risk Mitigation, Inc. |
@@ -23,13 +19,22 @@ The [Cyren Threat Intelligence](https://data443.com/cyren-threat-intelligence/) 
 | **First Published** | 2025-11-16 |
 | **Solution Folder** | [CyrenThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence) |
 
+The [Cyren Threat Intelligence](https://data443.com/cyren-threat-intelligence/) solution provides the capability to ingest Cyren IP reputation and malware URL threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution deploys REST API poller connectors, a custom log table, data collection rules, analytics rules, and visualization workbook to help security teams detect and investigate network-based threats.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) 🔶
+- [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +42,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) 🔶 | [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) | Analytics, Workbooks |
+| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) � | [Cyren Threat Intelligence](../connectors/cyrenthreatintel.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

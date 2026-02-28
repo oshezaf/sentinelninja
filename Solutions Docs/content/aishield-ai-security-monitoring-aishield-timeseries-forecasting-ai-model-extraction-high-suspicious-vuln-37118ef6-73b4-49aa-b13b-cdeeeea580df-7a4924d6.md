@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AIShield_CL`](../tables/aishield-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`AIShield_CL`](../tables/aishield-cl.md) � | ✗ | ✓ | ✗ |
 
 ---
 

@@ -16,7 +16,7 @@
 | **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [F5BigIp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20BIG-IP/Data%20Connectors/F5BigIp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 The F5 firewall connector allows you to easily connect your F5 logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
 
@@ -26,9 +26,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) � | ✗ | ✓ | ✗ |
+| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) � | ✗ | ✓ | ✗ |
+| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) � | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

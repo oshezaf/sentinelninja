@@ -8,10 +8,6 @@
 
 ---
 
-The [Tropico](https://www.tropicosecurity.com/) solution for Microsoft Sentinel enables you to ingest Tropico Security Events, Alerts and Incidents to the Microsoft Sentinel platform.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | TROPICO Security |
@@ -22,6 +18,8 @@ The [Tropico](https://www.tropicosecurity.com/) solution for Microsoft Sentinel 
 | **Author** | Tropico Security - dev@tropicosecurity.com |
 | **First Published** | 2025-12-02 |
 | **Solution Folder** | [Tropico](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico) |
+
+The [Tropico](https://www.tropicosecurity.com/) solution for Microsoft Sentinel enables you to ingest Tropico Security Events, Alerts and Incidents to the Microsoft Sentinel platform.
 
 ## Data Connectors
 

@@ -16,7 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [OpenSystems.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems/Data%20Connectors/OpenSystems.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 The Open Systems Logs API Microsoft Sentinel Connector provides the capability to ingest Open Systems logs into Microsoft Sentinel using Open Systems Logs API.
 
@@ -26,10 +26,10 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) � | ✗ | ✓ | ✗ |
+| [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) � | ✗ | ✓ | ✗ |
+| [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) � | ✗ | ✓ | ✗ |
+| [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) � | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

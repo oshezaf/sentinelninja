@@ -8,10 +8,6 @@
 
 ---
 
-The [Shadowbytes ARIA Threat Intelligence](https://shadowbyte.com/products/aria/) solution allows you to easily connect your Shadowbytes ARIA Threat Intelligence logs with Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Shadowbyte |
@@ -22,6 +18,14 @@ The [Shadowbytes ARIA Threat Intelligence](https://shadowbyte.com/products/aria/
 | **Author** | Shadowbyte |
 | **First Published** | 2021-12-24 |
 | **Solution Folder** | [ShadowByte Aria](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria) |
+
+The [Shadowbytes ARIA Threat Intelligence](https://shadowbyte.com/products/aria/) solution allows you to easily connect your Shadowbytes ARIA Threat Intelligence logs with Microsoft Sentinel.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

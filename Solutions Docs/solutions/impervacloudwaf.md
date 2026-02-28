@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 2.0.2 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2021-09-28 |
+| **Solution Folder** | [ImpervaCloudWAF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF) |
+
 [Imperva Cloud WAF](https://www.imperva.com/resources/resource-library/datasheets/imperva-cloud-waf/) offers the industry's leading web application security firewall, providing enterprise-class protection against the most sophisticated security threats. As a cloud-based WAF, it ensures that your website is always protected against any type of application layer hacking attempt. Imperva Cloud WAF is a key component of Imperva's market-leading, full stack application security solution which brings defence-in-depth to a new level.
 
 **Underlying Microsoft Technologies used:**
@@ -20,27 +31,20 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 c. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 2.0.2 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2021-09-28 |
-| **Solution Folder** | [ImpervaCloudWAF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) 🔶
-- [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶
+- [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) �
+- [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,11 +53,11 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | - | Analytics, Hunting, Workbooks |
-| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) 🔶 | [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md), [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
-| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) � | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) | - |
+| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) � | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

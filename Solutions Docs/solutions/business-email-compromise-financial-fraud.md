@@ -8,6 +8,18 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
+| **Categories** | domains |
+| **Version** | 3.0.10 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2023-08-04 |
+| **Solution Folder** | [Business Email Compromise - Financial Fraud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud) |
+| **Pre-requisites** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Okta Single Sign-On](okta-single-sign-on.md) |
+
 [Business Email Compromise (BEC)](https://www.microsoft.com/en-in/security/business/security-101/what-is-business-email-compromise-bec?rtc=1) attacks often aim to commit financial fraud by locating sensitive payment or invoice details and using these to hijack legitimate transactions. This solution, in combination with other solutions listed below, provide a range of content to help detect and investigate BEC attacks at different stages of the attack cycle, and across multiple data sources including AWS, SAP, Okta, Dynamics 365, Microsoft Entra ID, Microsoft 365 and network logs.
 
 This content covers all stages of the attack chain from an initial phishing attack vector, establishing persistence to an environment, locating and collecting sensitive financial information from data stores, and then perpetrating and hiding their fraud. This range of content complements the coverage [Microsoft Defender XDR provides across Microsoft Defender products](https://learn.microsoft.com/microsoft-365/security/defender/automatic-attack-disruption).
@@ -26,59 +38,47 @@ In order to gain the most comprehensive coverage possible customers should deplo
 
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
-| **Version** | 3.0.10 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2023-08-04 |
-| **Solution Folder** | [Business Email Compromise - Financial Fraud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Business%20Email%20Compromise%20-%20Financial%20Fraud) |
-| **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Microsoft 365](microsoft-365.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Defender XDR](microsoft-defender-xdr.md), [Okta Single Sign-On](okta-single-sign-on.md) |
+- [Pre-requisites](#pre-requisites)
+- [ASIM Pre-requisites](#asim-pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
-## Dependencies
+## Pre-requisites
 
-This solution has **5 required** and **8 optional** (ASIM-based) dependencies on other solutions:
+This solution depends on **5 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Amazon Web Services](amazon-web-services.md) | explicit | - |
-| [Azure Storage](azure-storage.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Microsoft 365](microsoft-365.md) | explicit | - |
-| [Microsoft Defender XDR](microsoft-defender-xdr.md) | explicit | - |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Okta Single Sign-On](okta-single-sign-on.md) | explicit | - |
-| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: FileEvent |
-| [Windows Security Events](windows-security-events.md) | ASIM (optional) | ASIM schemas: FileEvent |
+| Solution |
+|:---------|
+| [Amazon Web Services](amazon-web-services.md) |
+| [Microsoft 365](microsoft-365.md) |
+| [Microsoft Defender XDR](microsoft-defender-xdr.md) |
+| [Microsoft Entra ID](microsoft-entra-id.md) |
+| [Okta Single Sign-On](okta-single-sign-on.md) |
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+## <a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites
 
-This solution uses ASIM parsers and supports the following products:
+This solution uses the [`imFileEvent`](../asim/imfileevent.md) [ASIM (Advanced Security Information Model)](https://learn.microsoft.com/azure/sentinel/normalization) parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.
 
-| Product |
-|:--------|
-| [Google Workspace](../asim/asim-products-index.md#google-workspace) |
-| [Microsoft 365 Defender for EndPoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) |
-| [Microsoft Azure Blob Storage](../asim/asim-products-index.md#microsoft-azure-blob-storage) |
-| [Microsoft Azure File Storage](../asim/asim-products-index.md#microsoft-azure-file-storage) |
-| [Microsoft Azure Queue Storage](../asim/asim-products-index.md#microsoft-azure-queue-storage) |
-| [Microsoft Azure Table Storage](../asim/asim-products-index.md#microsoft-azure-table-storage) |
-| [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) |
-| [Microsoft Sysmon for Linux](../asim/asim-products-index.md#microsoft-sysmon-for-linux) |
-| [Microsoft Windows Events](../asim/asim-products-index.md#microsoft-windows-events) |
-| [Native](../asim/asim-products-index.md#native) |
-| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
-| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
-| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
+### Supported Products
+
+| Product | Dependency Solution |
+|:--------|:--------------------|
+| [Google Workspace](../asim/asim-products-index.md#google-workspace) | - |
+| [Microsoft 365 Defender for EndPoint](../asim/asim-products-index.md#microsoft-365-defender-for-endpoint) | - |
+| [Microsoft Azure Blob Storage](../asim/asim-products-index.md#microsoft-azure-blob-storage) | [Azure Storage](azure-storage.md) |
+| [Microsoft Azure File Storage](../asim/asim-products-index.md#microsoft-azure-file-storage) | [Azure Storage](azure-storage.md) |
+| [Microsoft Azure Queue Storage](../asim/asim-products-index.md#microsoft-azure-queue-storage) | [Azure Storage](azure-storage.md) |
+| [Microsoft Azure Table Storage](../asim/asim-products-index.md#microsoft-azure-table-storage) | [Azure Storage](azure-storage.md) |
+| [Microsoft SharePoint](../asim/asim-products-index.md#microsoft-sharepoint) | - |
+| [Microsoft Sysmon for Linux](../asim/asim-products-index.md#microsoft-sysmon-for-linux) | [Syslog](syslog.md) |
+| [Microsoft Windows Events](../asim/asim-products-index.md#microsoft-windows-events) | [Windows Forwarded Events](windows-forwarded-events.md)<br>[Windows Security Events](windows-security-events.md) |
+| [Native](../asim/asim-products-index.md#native) | [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) | [SentinelOne](sentinelone.md) |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) | [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) | [Windows Forwarded Events](windows-forwarded-events.md) |
 
 ## Data Connectors
 
@@ -96,7 +96,6 @@ This solution uses ASIM parsers and supports the following products:
 - [CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)](../connectors/crowdstrikefalcons3ccpdefinition.md) *(dependency on [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md))*
 - [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3)](../connectors/crowdstrikereplicatorv2.md) *(dependency on [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md))*
 - [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) *(dependency on [Microsoft Defender XDR](microsoft-defender-xdr.md))*
-- [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) *(dependency on [MimecastTIRegional](mimecasttiregional.md))*
 - [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) *(dependency on [Microsoft 365](microsoft-365.md))*
 - [Okta Single Sign-On](../connectors/oktasso.md) *(dependency on [Okta Single Sign-On](okta-single-sign-on.md))*
 - [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) *(dependency on [Okta Single Sign-On](okta-single-sign-on.md))*
@@ -111,14 +110,6 @@ This solution uses ASIM parsers and supports the following products:
 - [Windows Forwarded Events](../connectors/windowsforwardedevents.md) *(dependency on [Windows Forwarded Events](windows-forwarded-events.md))*
 - [Windows Security Events via AMA](../connectors/windowssecurityevents.md) *(dependency on [Windows Security Events](windows-security-events.md))*
 - [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) *(dependency on [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md))*
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This solution uses **1 ASIM parser(s)** for normalized data:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`imFileEvent`](../asim/imfileevent.md) | Analytics |
 
 ## Tables Used
 

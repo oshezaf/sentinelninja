@@ -8,10 +8,6 @@
 
 ---
 
-[FalconFriday](https://github.com/FalconForceTeam/FalconFriday/blob/master/README.md) is a blog post series by FalconForce providing the community with free detection content for various attacks seen and executed in the wild by FalconForce.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | FalconForce |
@@ -22,6 +18,14 @@
 | **Author** | FalconForce - info@falconforce.nl |
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [FalconFriday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/FalconFriday) |
+
+[FalconFriday](https://github.com/FalconForceTeam/FalconFriday/blob/master/README.md) is a blog post series by FalconForce providing the community with free detection content for various attacks seen and executed in the wild by FalconForce.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

@@ -10,10 +10,6 @@
 
 ---
 
-The [Authomize Solution](https://authomize.com) integrates Authomize with Microsoft Sentinel to monitor and analyze security events from Authomize.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Authomize |
@@ -25,13 +21,21 @@ The [Authomize Solution](https://authomize.com) integrates Authomize with Micros
 | **First Published** | 2023-06-15 |
 | **Solution Folder** | [Authomize](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Authomize) |
 
+The [Authomize Solution](https://authomize.com) integrates Authomize with Microsoft Sentinel to monitor and analyze security events from Authomize.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Authomize Data Connector](../connectors/authomize.md) 🔶
+- [Authomize Data Connector](../connectors/authomize.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -39,10 +43,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) 🔶 | [Authomize Data Connector](../connectors/authomize.md) | Analytics, Hunting, Workbooks |
+| [`Authomize_v2_CL`](../tables/authomize-v2-cl.md) � | [Authomize Data Connector](../connectors/authomize.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **28 content item(s)**:

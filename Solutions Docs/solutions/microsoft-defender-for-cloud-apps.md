@@ -8,10 +8,6 @@
 
 ---
 
-The [Microsoft Defender for Cloud Apps](https://docs.microsoft.com/defender-cloud-apps/) solution for Microsoft Sentinel enables you to ingest security alerts and discovery logs from the Defender for Cloud Apps platform, providing visibility into threats in your cloud app environment, including coverage for shadow IT, impossible travel, ransomware, and data exfiltration use cases.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,14 @@ The [Microsoft Defender for Cloud Apps](https://docs.microsoft.com/defender-clou
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Microsoft Defender for Cloud Apps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud%20Apps) |
+
+The [Microsoft Defender for Cloud Apps](https://docs.microsoft.com/defender-cloud-apps/) solution for Microsoft Sentinel enables you to ingest security alerts and discovery logs from the Defender for Cloud Apps platform, providing visibility into threats in your cloud app environment, including coverage for shadow IT, impossible travel, ransomware, and data exfiltration use cases.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

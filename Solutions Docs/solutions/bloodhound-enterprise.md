@@ -8,10 +8,6 @@
 
 ---
 
-The BloodHound Enterprise Microsoft Sentinel solution ingests your BloodHound Enterprise posture and attack paths into Microsoft Sentinel. Use the dashboards to track the Active Directory and Azure attack paths of your environment. Create alerts to detect when new attack paths emerge or new the exposure increases.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | SpecterOps |
@@ -24,13 +20,21 @@ The BloodHound Enterprise Microsoft Sentinel solution ingests your BloodHound En
 | **Last Updated** | 2021-05-04 |
 | **Solution Folder** | [BloodHound Enterprise](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise) |
 
+The BloodHound Enterprise Microsoft Sentinel solution ingests your BloodHound Enterprise posture and attack paths into Microsoft Sentinel. Use the dashboards to track the Active Directory and Azure attack paths of your environment. Create alerts to detect when new attack paths emerge or new the exposure increases.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) 🔶
+- [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -38,7 +42,7 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) 🔶 | [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | Analytics, Workbooks |
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) � | [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | Analytics, Workbooks |
 | [`BHEAttackPathsTimelineData_CL`](../tables/bheattackpathstimelinedata-cl.md) | - | Workbooks |
 | [`BHEAuditLogsData_CL`](../tables/bheauditlogsdata-cl.md) | - | Workbooks |
 | [`BHEFindingTrendsData_CL`](../tables/bhefindingtrendsdata-cl.md) | - | Workbooks |
@@ -46,7 +50,7 @@ This solution uses **6 table(s)**:
 | [`BHETierZeroAssetsData_CL`](../tables/bhetierzeroassetsdata-cl.md) | - | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **108 content item(s)**:

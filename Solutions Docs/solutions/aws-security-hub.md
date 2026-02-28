@@ -8,10 +8,6 @@
 
 ---
 
-AWS Security Hub Solution for Microsoft Sentinel provides data connector to ingest AWS Security Hub findings into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -24,9 +20,17 @@ AWS Security Hub Solution for Microsoft Sentinel provides data connector to inge
 | **Last Updated** | 2025-03-12 |
 | **Solution Folder** | [AWS Security Hub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Security%20Hub) |
 
-## Additional Information
+AWS Security Hub Solution for Microsoft Sentinel provides data connector to ingest AWS Security Hub findings into Microsoft Sentinel.
+
+**Additional Information**
 
 📖 **Setup Guide:** [Connect Microsoft Sentinel to AWS](https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment) - Configure your AWS environment for Microsoft Sentinel integration
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

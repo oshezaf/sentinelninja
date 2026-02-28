@@ -8,10 +8,6 @@
 
 ---
 
-The [Contrast Security](https://www.contrastsecurity.com/contrast-adr) solution for Microsoft Sentinel enables you to ingest [Contrast Security events] generated using the Contrast Webhook ,
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Contrast Security |
@@ -24,13 +20,21 @@ The [Contrast Security](https://www.contrastsecurity.com/contrast-adr) solution 
 | **Last Updated** | 2025-01-18 |
 | **Solution Folder** | [ContrastADR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR) |
 
+The [Contrast Security](https://www.contrastsecurity.com/contrast-adr) solution for Microsoft Sentinel enables you to ingest [Contrast Security events] generated using the Contrast Webhook ,
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [ContrastADR](../connectors/contrastadr.md) 🔶
+- [ContrastADR](../connectors/contrastadr.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -38,11 +42,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) 🔶 | [ContrastADR](../connectors/contrastadr.md) | Analytics |
-| [`ContrastADR_CL`](../tables/contrastadr-cl.md) 🔶 | [ContrastADR](../connectors/contrastadr.md) | Analytics |
+| [`ContrastADRIncident_CL`](../tables/contrastadrincident-cl.md) � | [ContrastADR](../connectors/contrastadr.md) | Analytics |
+| [`ContrastADR_CL`](../tables/contrastadr-cl.md) � | [ContrastADR](../connectors/contrastadr.md) | Analytics |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **17 content item(s)**:

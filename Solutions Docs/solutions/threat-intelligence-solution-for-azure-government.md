@@ -10,10 +10,6 @@
 
 ---
 
-The Threat Intelligence solution contains data connectors for import of threat indicators into Microsoft Sentinel, analytic rules for matching TI data with event data, workbook, and hunting queries. Threat indicators can be malicious IP's, URL's, filehashes, domains, email addresses etc.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -24,6 +20,8 @@ The Threat Intelligence solution contains data connectors for import of threat i
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-03-06 |
 | **Solution Folder** | [Threat Intelligence Solution for Azure Government](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence%20Solution%20for%20Azure%20Government) |
+
+The Threat Intelligence solution contains data connectors for import of threat indicators into Microsoft Sentinel, analytic rules for matching TI data with event data, workbook, and hunting queries. Threat indicators can be malicious IP's, URL's, filehashes, domains, email addresses etc.
 
 ## Data Connectors
 

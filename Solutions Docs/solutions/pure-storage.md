@@ -8,10 +8,6 @@
 
 ---
 
-Solution for Microsoft Sentinel to ingest logs from PureStorage arrays
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | purestoragemarketplaceadmin |
@@ -22,6 +18,14 @@ Solution for Microsoft Sentinel to ingest logs from PureStorage arrays
 | **Author** | Pure Storage - support@purestorage.com |
 | **First Published** | 2024-02-05 |
 | **Solution Folder** | [Pure Storage](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage) |
+
+Solution for Microsoft Sentinel to ingest logs from PureStorage arrays
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

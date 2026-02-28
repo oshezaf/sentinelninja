@@ -8,10 +8,6 @@
 
 ---
 
-This Microsoft Sentinel integration enables Commvault users to ingest alerts and other data into their Microsoft Sentinel instance. With Analytic Rules, Microsoft Sentinel can automatically create Microsoft Sentinel incidents.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Commvault |
@@ -23,13 +19,22 @@ This Microsoft Sentinel integration enables Commvault users to ingest alerts and
 | **First Published** | 2023-08-17 |
 | **Solution Folder** | [Commvault Security IQ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ) |
 
+This Microsoft Sentinel integration enables Commvault users to ingest alerts and other data into their Microsoft Sentinel instance. With Analytic Rules, Microsoft Sentinel can automatically create Microsoft Sentinel incidents.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) 🔶
+- [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +42,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) 🔶 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Analytics |
+| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) � | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Analytics |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SpyCloudBreachDataWatchlist_CL`](../tables/spycloudbreachdatawatchlist-cl.md) 🔶 | ? | ✓ | ? |
+| [`SpyCloudBreachDataWatchlist_CL`](../tables/spycloudbreachdatawatchlist-cl.md) � | ? | ✓ | ? |
 
 ---
 

@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 3.1.3 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2021-10-18 |
+| **Solution Folder** | [GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub) |
+
 The [GitHub](https://github.com/) Solution for Microsoft Sentinel enables you to easily ingest events and logs from GitHub to Microsoft Sentinel using GitHub audit log API and  webhooks. This enables you to view and analyze this data in your workbooks, query it to create custom alerts, and incorporate it to improve your investigation process, giving you more insight into your platform security.
  
  **Underlying Microsoft Technologies used:** 
@@ -22,18 +33,11 @@ The [GitHub](https://github.com/) Solution for Microsoft Sentinel enables you to
 
 <p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data..</p>
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 3.1.3 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2021-10-18 |
-| **Solution Folder** | [GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
@@ -41,9 +45,9 @@ This solution provides **3 data connector(s)**:
 
 - [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md)
 - [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md)
-- [GitHub (using Webhooks)](../connectors/githubwebhook.md) 🔶
+- [GitHub (using Webhooks)](../connectors/githubwebhook.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -56,10 +60,10 @@ This solution uses **6 table(s)**:
 | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | - | Analytics |
 | [`GitHub_CL`](../tables/github-cl.md) | - | Analytics |
 | [`ImpactedUser`](../tables/impacteduser.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) 🔶 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) � | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **28 content item(s)**:

@@ -8,16 +8,6 @@
 
 ---
 
-The Google Cloud Platform Compute Engine solution provides the capability to ingest [Compute Engine Audit logs](https://cloud.google.com/compute/docs/logging/audit-logging) into Microsoft Sentinel using the Compute Engine API.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
-
- • [Codeless Connector Framework(CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,14 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-07 |
 | **Solution Folder** | [Google Cloud Platform Compute Engine](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Compute%20Engine) |
+
+The Google Cloud Platform Compute Engine solution provides the capability to ingest [Compute Engine Audit logs](https://cloud.google.com/compute/docs/logging/audit-logging) into Microsoft Sentinel using the Compute Engine API.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
+
+ • [Codeless Connector Framework(CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
 
 ## Data Connectors
 

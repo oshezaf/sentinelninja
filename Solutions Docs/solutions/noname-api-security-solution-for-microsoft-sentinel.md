@@ -8,10 +8,6 @@
 
 ---
 
-The [Noname Security](https://nonamesecurity.com) solution for Microsoft Sentinel enables the integration of machine learning API threat intelligence alerts via the Azure Monitor API.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Noname Security |
@@ -23,13 +19,15 @@ The [Noname Security](https://nonamesecurity.com) solution for Microsoft Sentine
 | **First Published** | 2022-12-01 |
 | **Solution Folder** | [NonameSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NonameSecurity) |
 
+The [Noname Security](https://nonamesecurity.com) solution for Microsoft Sentinel enables the integration of machine learning API threat intelligence alerts via the Azure Monitor API.
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) 🔶
+- [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +35,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`NonameAPISecurityAlert_CL`](../tables/nonameapisecurityalert-cl.md) 🔶 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) | - |
+| [`NonameAPISecurityAlert_CL`](../tables/nonameapisecurityalert-cl.md) � | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

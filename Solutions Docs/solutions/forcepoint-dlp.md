@@ -8,18 +8,6 @@
 
 ---
 
-The [Forcepoint DLP (Data Loss Prevention)](https://www.forcepoint.com/product/dlp-data-loss-prevention) Solution for Microsoft Sentinel allows you to automatically export DLP incident data from Forcepoint DLP into Microsoft Sentinel in real-time. This enriches visibility into user activities and data loss incidents, enables further correlation with data from Azure workloads and other feeds, and improves monitoring capability with Workbooks inside Microsoft Sentinel.
-
-For more details about this solution refer to [integration documentation](https://forcepoint.github.io/docs/dlp_and_azure_sentinel/)
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
-- [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Community |
@@ -31,15 +19,31 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2022-05-09 |
 | **Solution Folder** | [Forcepoint DLP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20DLP) |
 
+The [Forcepoint DLP (Data Loss Prevention)](https://www.forcepoint.com/product/dlp-data-loss-prevention) Solution for Microsoft Sentinel allows you to automatically export DLP incident data from Forcepoint DLP into Microsoft Sentinel in real-time. This enriches visibility into user activities and data loss incidents, enables further correlation with data from Azure workloads and other feeds, and improves monitoring capability with Workbooks inside Microsoft Sentinel.
+
+For more details about this solution refer to [integration documentation](https://forcepoint.github.io/docs/dlp_and_azure_sentinel/)
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+- [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Forcepoint DLP](../connectors/forcepoint-dlp.md) ⚠️ 🔶
+- [Forcepoint DLP](../connectors/forcepoint-dlp.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,10 +51,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) 🔶 | [Forcepoint DLP](../connectors/forcepoint-dlp.md) | Workbooks |
+| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) � | [Forcepoint DLP](../connectors/forcepoint-dlp.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

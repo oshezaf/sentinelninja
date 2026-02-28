@@ -8,10 +8,6 @@
 
 ---
 
-The Amazon Web Services solution for Microsoft Sentinel allows you to enable Security monitoring of AWS services by allowing ingestion of logs from the AWS CloudTrail platform, VPC Flow Logs, AWS GuardDuty and AWS CloudWatch. 
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,12 +19,20 @@ The Amazon Web Services solution for Microsoft Sentinel allows you to enable Sec
 | **First Published** | 2022-05-26 |
 | **Solution Folder** | [Amazon Web Services](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services) |
 
-## Additional Information
+The Amazon Web Services solution for Microsoft Sentinel allows you to enable Security monitoring of AWS services by allowing ingestion of logs from the AWS CloudTrail platform, VPC Flow Logs, AWS GuardDuty and AWS CloudWatch. 
+
+**Additional Information**
 
 - 📖 **Setup Guide:** [Connect Microsoft Sentinel to AWS](https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment) - Configure your AWS environment for Microsoft Sentinel integration
 - 📖 **Related Documentation:** [AWS service logs](https://learn.microsoft.com/azure/sentinel/connect-aws) - Ingest AWS service logs into Microsoft Sentinel
 - 📖 **Related Documentation:** [Enable attack disruption on AWS](https://learn.microsoft.com/azure/sentinel/aws-disruption) - Configure automatic attack disruption for AWS
 - 📖 **Troubleshooting:** [Troubleshoot AWS S3 connector issues](https://learn.microsoft.com/azure/sentinel/aws-s3-troubleshoot) - Resolve common AWS S3 connector problems
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

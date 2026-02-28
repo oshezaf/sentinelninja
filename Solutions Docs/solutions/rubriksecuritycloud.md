@@ -8,18 +8,6 @@
 
 ---
 
-The [Rubrik Security Cloud](https://www.rubrik.com/) solution enables security operations teams to integrate insights from Rubrik’s Data Observability services into Microsoft Sentinel. 
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Azure Monitor HTTP Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-b. [Azure Functions](https://azure.microsoft.com/products/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Rubrik |
@@ -32,13 +20,29 @@ b. [Azure Functions](https://azure.microsoft.com/products/functions/#overview)
 | **Last Updated** | 2025-07-25 |
 | **Solution Folder** | [RubrikSecurityCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud) |
 
+The [Rubrik Security Cloud](https://www.rubrik.com/) solution enables security operations teams to integrate insights from Rubrik’s Data Observability services into Microsoft Sentinel. 
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Azure Functions](https://azure.microsoft.com/products/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) 🔶
+- [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,13 +50,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) 🔶 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | Analytics |
-| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) 🔶 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | Analytics |
-| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) 🔶 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | - |
-| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) 🔶 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | - |
+| [`Rubrik_Anomaly_Data_CL`](../tables/rubrik-anomaly-data-cl.md) � | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | Analytics |
+| [`Rubrik_Events_Data_CL`](../tables/rubrik-events-data-cl.md) � | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | Analytics |
+| [`Rubrik_Ransomware_Data_CL`](../tables/rubrik-ransomware-data-cl.md) � | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | - |
+| [`Rubrik_ThreatHunt_Data_CL`](../tables/rubrik-threathunt-data-cl.md) � | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **19 content item(s)**:

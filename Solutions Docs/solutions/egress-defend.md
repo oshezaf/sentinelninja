@@ -10,10 +10,6 @@
 
 ---
 
-Egress Defend for Microsoft Sentinel provides details of processed emails, including the type of phishing attack, payload type and information to show if the user interacted with the email in a positive (clicking on banners or submitting the phish sample) or negative (clicking on an unsafe URL) manner.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | egress1589289169584 |
@@ -25,13 +21,21 @@ Egress Defend for Microsoft Sentinel provides details of processed emails, inclu
 | **First Published** | 2023-07-27 |
 | **Solution Folder** | [Egress Defend](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Defend) |
 
+Egress Defend for Microsoft Sentinel provides details of processed emails, including the type of phishing attack, payload type and information to show if the user interacted with the email in a positive (clicking on banners or submitting the phish sample) or negative (clicking on an unsafe URL) manner.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Egress Defend](../connectors/egressdefendpolling.md) 🔶
+- [Egress Defend](../connectors/egressdefendpolling.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -39,10 +43,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) 🔶 | [Egress Defend](../connectors/egressdefendpolling.md) | Analytics, Hunting, Workbooks |
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) � | [Egress Defend](../connectors/egressdefendpolling.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:

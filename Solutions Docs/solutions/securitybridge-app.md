@@ -8,14 +8,6 @@
 
 ---
 
-The [SecurityBridge App](https://securitybridge.com/) solution provides the capability to ingest SecurityBridge Threat Detection events from all on-premise and cloud based SAP instances into Microsoft Sentinel.
-
-This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation. 
-
- **NOTE**: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/azure/sentinel/ama-migrate?WT.mc_id=Portal-fx).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | SecurityBridge |
@@ -27,16 +19,29 @@ This solution is dependent on the Custom logs via AMA connector to collect the l
 | **First Published** | 2022-02-17 |
 | **Solution Folder** | [SecurityBridge App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App) |
 
+The [SecurityBridge App](https://securitybridge.com/) solution provides the capability to ingest SecurityBridge Threat Detection events from all on-premise and cloud based SAP instances into Microsoft Sentinel.
+
+This solution is dependent on the Custom logs via AMA connector to collect the logs. The Custom logs solution will be installed as part of this solution installation. 
+
+ **NOTE**: Microsoft recommends installation of Custom logs via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/azure/sentinel/ama-migrate?WT.mc_id=Portal-fx).
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [SecurityBridge Solution for SAP](../connectors/securitybridge.md)
-- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ⚠️ 🔶
+- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,11 +50,11 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | - |
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) 🔶 | [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) | - |
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) � | [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) | - |
 | [`SecurityBridge_CL`](../tables/securitybridge-cl.md) | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

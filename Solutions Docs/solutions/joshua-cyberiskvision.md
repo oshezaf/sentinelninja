@@ -8,10 +8,6 @@
 
 ---
 
-[Joshua Cyberiskvision](https://www.cyberiskvision.com/) enables organizations to define, monitor, analyze, and improve their level of Global Cybersecurity following a predictive and context-aware approach that uses a broad spectrum cyber intelligence-driven logic. The Joshua Solution automates the ingest of Joshua Cyberiskvision threat indicators into the ThreatIntelligenceIndicator table of Microsoft Sentinel workspace.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Joshua Cyberiskvision |
@@ -23,6 +19,8 @@
 | **First Published** | 2022-01-10 |
 | **Last Updated** | 2022-01-10 |
 | **Solution Folder** | [Joshua-Cyberiskvision](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Joshua-Cyberiskvision) |
+
+[Joshua Cyberiskvision](https://www.cyberiskvision.com/) enables organizations to define, monitor, analyze, and improve their level of Global Cybersecurity following a predictive and context-aware approach that uses a broad spectrum cyber intelligence-driven logic. The Joshua Solution automates the ingest of Joshua Cyberiskvision threat indicators into the ThreatIntelligenceIndicator table of Microsoft Sentinel workspace.
 
 ## Data Connectors
 

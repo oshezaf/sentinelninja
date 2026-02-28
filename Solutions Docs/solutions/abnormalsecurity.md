@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Abnormal Security |
+| **Support Tier** | Partner |
+| **Support Link** | [https://abnormalsecurity.com/contact](https://abnormalsecurity.com/contact) |
+| **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | AbnormalSecurity - support@abnormalsecurity.com |
+| **First Published** | 2021-10-20 |
+| **Solution Folder** | [AbnormalSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity) |
+
 The Abnormal Security Events solution provides the capability to ingest threat and case logs into Microsoft Sentinel using the [Abnormal Security Rest API](https://app.swaggerhub.com/apis/abnormal-security/abx/).
  
  
@@ -26,26 +37,13 @@ The Abnormal Security Events solution provides the capability to ingest threat a
  
  b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
-## Solution Information
-
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Abnormal Security |
-| **Support Tier** | Partner |
-| **Support Link** | [https://abnormalsecurity.com/contact](https://abnormalsecurity.com/contact) |
-| **Categories** | domains |
-| **Version** | 3.0.1 |
-| **Author** | AbnormalSecurity - support@abnormalsecurity.com |
-| **First Published** | 2021-10-20 |
-| **Solution Folder** | [AbnormalSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity) |
-
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [AbnormalSecurity ](../connectors/abnormalsecurity.md) 🔶
+- [AbnormalSecurity ](../connectors/abnormalsecurity.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -53,11 +51,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ABNORMAL_CASES_CL`](../tables/abnormal-cases-cl.md) 🔶 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
-| [`ABNORMAL_THREAT_MESSAGES_CL`](../tables/abnormal-threat-messages-cl.md) 🔶 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
+| [`ABNORMAL_CASES_CL`](../tables/abnormal-cases-cl.md) � | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
+| [`ABNORMAL_THREAT_MESSAGES_CL`](../tables/abnormal-threat-messages-cl.md) � | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |

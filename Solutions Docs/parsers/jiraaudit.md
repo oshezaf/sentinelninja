@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) � | ✗ | ✓ | ✗ |
+| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) � | ✓ | ✓ | ✓ |
 
 ---
 

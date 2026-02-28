@@ -8,16 +8,6 @@
 
 ---
 
-The [Trend Vision One](https://www.trendmicro.com/en_us/business/products/detection-response/xdr.html) solution for Microsoft Sentinel enables you to ingest security alerts and detection data reported in the Trend Vision One platform into Microsoft Sentinel.
-  
-  **Underlying Microsoft Technologies used:** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/sentinel/connect-syslog)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Trend Micro |
@@ -30,13 +20,27 @@ The [Trend Vision One](https://www.trendmicro.com/en_us/business/products/detect
 | **Last Updated** | 2024-07-16 |
 | **Solution Folder** | [Trend Micro Vision One](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Vision%20One) |
 
+The [Trend Vision One](https://www.trendmicro.com/en_us/business/products/detection-response/xdr.html) solution for Microsoft Sentinel enables you to ingest security alerts and detection data reported in the Trend Vision One platform into Microsoft Sentinel.
+  
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/sentinel/connect-syslog)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Trend Vision One](../connectors/trendmicroxdr.md) 🔶
+- [Trend Vision One](../connectors/trendmicroxdr.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -44,13 +48,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) 🔶 | [Trend Vision One](../connectors/trendmicroxdr.md) | - |
-| [`TrendMicro_XDR_RCA_Result_CL`](../tables/trendmicro-xdr-rca-result-cl.md) 🔶 | [Trend Vision One](../connectors/trendmicroxdr.md) | - |
-| [`TrendMicro_XDR_RCA_Task_CL`](../tables/trendmicro-xdr-rca-task-cl.md) 🔶 | [Trend Vision One](../connectors/trendmicroxdr.md) | - |
-| [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) 🔶 | [Trend Vision One](../connectors/trendmicroxdr.md) | Analytics, Workbooks |
+| [`TrendMicro_XDR_OAT_CL`](../tables/trendmicro-xdr-oat-cl.md) � | [Trend Vision One](../connectors/trendmicroxdr.md) | - |
+| [`TrendMicro_XDR_RCA_Result_CL`](../tables/trendmicro-xdr-rca-result-cl.md) � | [Trend Vision One](../connectors/trendmicroxdr.md) | - |
+| [`TrendMicro_XDR_RCA_Task_CL`](../tables/trendmicro-xdr-rca-task-cl.md) � | [Trend Vision One](../connectors/trendmicroxdr.md) | - |
+| [`TrendMicro_XDR_WORKBENCH_CL`](../tables/trendmicro-xdr-workbench-cl.md) � | [Trend Vision One](../connectors/trendmicroxdr.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

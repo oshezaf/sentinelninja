@@ -17,7 +17,7 @@
 | **Connector Definition Files** | [Cyren_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/Data%20Connectors/CyrenThreatIntel_CCF/Cyren_ConnectorDefinition.json) |
 | **CCF Configuration** | [Cyren_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/Data%20Connectors/CyrenThreatIntel_CCF/Cyren_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 Ingest IP reputation and malware URL indicators from Cyren using the Common Connector Framework (CCF).
 
@@ -27,7 +27,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`Cyren_Indicators_CL`](../tables/cyren-indicators-cl.md) � | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

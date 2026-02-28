@@ -8,10 +8,6 @@
 
 ---
 
-The [MailRisk by Secure Practice](https://securepractice.co/) solution for Microsoft Sentinel enables you to ingest email reported with the MailRisk plugin into Microsoft Sentinel Log Analytics using the Codeless Connector Framework (CCF) with REST API Polling.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Secure Practice |
@@ -23,6 +19,8 @@ The [MailRisk by Secure Practice](https://securepractice.co/) solution for Micro
 | **First Published** | 2023-03-16 |
 | **Last Updated** | 2025-10-27 |
 | **Solution Folder** | [MailRisk](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailRisk) |
+
+The [MailRisk by Secure Practice](https://securepractice.co/) solution for Microsoft Sentinel enables you to ingest email reported with the MailRisk plugin into Microsoft Sentinel Log Analytics using the Codeless Connector Framework (CCF) with REST API Polling.
 
 ## Data Connectors
 

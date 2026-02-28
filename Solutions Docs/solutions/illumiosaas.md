@@ -8,16 +8,6 @@
 
 ---
 
-**1. Azure Function App: **
-
-[IllumioSaaS](https://www.illumio.com/) solution provides ability to ingest auditable and flow events from AWS S3 bucket. 
-
- **2. Codeless Connector Framework (CCF): ** 
-
- [IllumioSaaS](https://www.illumio.com/) CCF solution provides ability to ingest flow events from AWS S3 bucket.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Illumio |
@@ -28,6 +18,20 @@
 | **Author** | app-integrations@illumio.com |
 | **First Published** | 2024-05-13 |
 | **Solution Folder** | [IllumioSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS) |
+
+**1. Azure Function App: **
+
+[IllumioSaaS](https://www.illumio.com/) solution provides ability to ingest auditable and flow events from AWS S3 bucket. 
+
+ **2. Codeless Connector Framework (CCF): ** 
+
+ [IllumioSaaS](https://www.illumio.com/) CCF solution provides ability to ingest flow events from AWS S3 bucket.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

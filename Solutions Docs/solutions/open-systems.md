@@ -6,8 +6,6 @@
 
 ---
 
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Open Systems |
@@ -17,15 +15,21 @@
 | **First Published** | 2025-05-12 |
 | **Solution Folder** | [Open Systems](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems) |
 
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Open Systems Data Connector](../connectors/opensystems.md) ⚠️ 🔶
+- [Open Systems Data Connector](../connectors/opensystems.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -33,13 +37,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) 🔶 | [Open Systems Data Connector](../connectors/opensystems.md) | - |
-| [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) 🔶 | [Open Systems Data Connector](../connectors/opensystems.md) | - |
-| [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) 🔶 | [Open Systems Data Connector](../connectors/opensystems.md) | - |
-| [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) 🔶 | [Open Systems Data Connector](../connectors/opensystems.md) | - |
+| [`OpenSystemsAuthenticationLogs_CL`](../tables/opensystemsauthenticationlogs-cl.md) � | [Open Systems Data Connector](../connectors/opensystems.md) | - |
+| [`OpenSystemsFirewallLogs_CL`](../tables/opensystemsfirewalllogs-cl.md) � | [Open Systems Data Connector](../connectors/opensystems.md) | - |
+| [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) � | [Open Systems Data Connector](../connectors/opensystems.md) | - |
+| [`OpenSystemsZtnaLogs_CL`](../tables/opensystemsztnalogs-cl.md) � | [Open Systems Data Connector](../connectors/opensystems.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:

@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
+| **Categories** | domains |
+| **Version** | 2.0.2 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2022-09-19 |
+| **Solution Folder** | [Servicenow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow) |
+
 The ServiceNow ITSM solution for Microsoft Sentinel makes it easy to synchronize incidents between Microsoft Sentinel and [ServiceNow IT Service Management (ITSM)](https://www.servicenow.com/products/itsm.html). This can be achieved by either one of the following two options - 
 
 **Option 1 (Recommended)**: Bi-directional incident sync using app hosted on ServiceNow store. This option includes the following key features:
@@ -27,19 +38,6 @@ The ServiceNow ITSM solution for Microsoft Sentinel makes it easy to synchronize
 Please note that this option doesn't require installation of content hub solution and will need to be installed and managed from ServiceNow store. Refer to [ServiceNow Store](https://aka.ms/sentinel-servicenow-appstore) for details on how to use this option.
 
 **Option 2**: Unidirectional sync from Microsoft Sentinel to ServiceNow. Install this solution that includes Microsoft Sentinel playbooks to help create, update (incident comments) and close incidents in ServiceNow when a corresponding incident is created, updated or closed in Microsoft Sentinel.
-
-## Solution Information
-
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
-| **Version** | 2.0.2 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2022-09-19 |
-| **Solution Folder** | [Servicenow](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Servicenow) |
 
 ## Data Connectors
 

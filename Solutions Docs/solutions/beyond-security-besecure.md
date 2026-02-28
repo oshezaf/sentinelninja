@@ -10,16 +10,6 @@
 
 ---
 
-The [Beyond Security beSECURE](https://www.beyondsecurity.com/) Solution for Microsoft Sentinel allows you to easily connect your Beyond Security beSECURE scan events, scan results and audit trail with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
-
-**Underlying Microsoft Technologies used: **
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:  
-
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Beyond Security |
@@ -31,15 +21,23 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Beyond Security beSECURE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Beyond%20Security%20beSECURE) |
 
+The [Beyond Security beSECURE](https://www.beyondsecurity.com/) Solution for Microsoft Sentinel allows you to easily connect your Beyond Security beSECURE scan events, scan results and audit trail with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
+
+**Underlying Microsoft Technologies used: **
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:  
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶
+- [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,12 +45,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`beSECURE_Audit_CL`](../tables/besecure-audit-cl.md) 🔶 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) | - |
-| [`beSECURE_ScanEvent_CL`](../tables/besecure-scanevent-cl.md) 🔶 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) | - |
-| [`beSECURE_ScanResults_CL`](../tables/besecure-scanresults-cl.md) 🔶 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) | - |
+| [`beSECURE_Audit_CL`](../tables/besecure-audit-cl.md) � | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) | - |
+| [`beSECURE_ScanEvent_CL`](../tables/besecure-scanevent-cl.md) � | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) | - |
+| [`beSECURE_ScanResults_CL`](../tables/besecure-scanresults-cl.md) � | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

@@ -8,18 +8,6 @@
 
 ---
 
-The [Tenable App](https://www.tenable.com/products/vulnerability-management) solution provides the capability to ingest Asset and Vulnerability data into Microsoft Sentinel through the REST API from the Tenable platform (Managed in the cloud). Refer to [API documentation](https://developer.tenable.com/reference/navigate) for more information.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Tenable |
@@ -31,6 +19,22 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **First Published** | 2024-06-06 |
 | **Last Updated** | 2025-06-19 |
 | **Solution Folder** | [Tenable App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App) |
+
+The [Tenable App](https://www.tenable.com/products/vulnerability-management) solution provides the capability to ingest Asset and Vulnerability data into Microsoft Sentinel through the REST API from the Tenable platform (Managed in the cloud). Refer to [API documentation](https://developer.tenable.com/reference/navigate) for more information.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

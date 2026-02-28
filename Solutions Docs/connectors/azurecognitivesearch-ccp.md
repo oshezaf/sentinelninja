@@ -15,7 +15,7 @@
 | **Used in Solutions** | [Azure Cognitive Search](../solutions/azure-cognitive-search.md) |
 | **Collection Method** | [Azure Diagnostics](../methods/azure-diagnostics.md) |
 | **Connector Definition Files** | [AzureCognitiveSearch_CCP.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Cognitive%20Search/Data%20Connectors/AzureCognitiveSearch_CCP.JSON) |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 Azure Cognitive Search is a cloud search service that gives developers infrastructure, APIs, and tools for building a rich search experience over private, heterogeneous content in web, mobile, and enterprise applications. This connector lets you stream your Azure Cognitive Search diagnostics logs into Microsoft Sentinel, allowing you to continuously monitor activity. 
 
@@ -25,7 +25,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `ResourceProvider == "MICROSOFT.SEARCH"` | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | `ResourceProvider == "MICROSOFT.SEARCH"` | ✗ | ✗ | ✗ |
 
 ## Permissions
 

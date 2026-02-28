@@ -8,10 +8,6 @@
 
 ---
 
-Intel 471 Threat Intelligence integration ingests malware indicators into Log Analytics workspace.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Intel 471 |
@@ -22,6 +18,8 @@ Intel 471 Threat Intelligence integration ingests malware indicators into Log An
 | **Author** | Intel 471 Inc. |
 | **First Published** | 2023-06-21 |
 | **Solution Folder** | [Intel471](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Intel471) |
+
+Intel 471 Threat Intelligence integration ingests malware indicators into Log Analytics workspace.
 
 ## Data Connectors
 

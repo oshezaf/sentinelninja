@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 3.1.2 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2022-03-24 |
+| **Solution Folder** | [Okta Single Sign-On](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On) |
+
 The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) solution for Microsoft Sentinel provides the capability to ingest [audit and event logs](https://www.okta.com/integrate/documentation/isv-syslog-references/) into Microsoft Sentinel using the Okta API.
   
   **Underlying Microsoft Technologies used:** 
@@ -24,31 +35,24 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) so
 
  c. [Codeless Connector Platform (CCP)](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 3.1.2 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2022-03-24 |
-| **Solution Folder** | [Okta Single Sign-On](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **2 data connector(s)** (plus 2 discovered⚠️):
 
-- [Okta Single Sign-On](../connectors/oktasso.md) 🔶
+- [Okta Single Sign-On](../connectors/oktasso.md) �
 - [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) ⚠️
-- [Okta Single Sign-On](../connectors/oktassov2.md) 🔶
-- [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) ⚠️ 🔶
+- [Okta Single Sign-On](../connectors/oktassov2.md) �
+- [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) ⚠️ �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -58,10 +62,10 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`OktaNativePoller_CL`](../tables/oktanativepoller-cl.md) | [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) | - |
 | [`OktaV2_CL`](../tables/oktav2-cl.md) | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) | Analytics, Hunting, Workbooks |
-| [`Okta_CL`](../tables/okta-cl.md) 🔶 | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) | Analytics, Hunting, Workbooks |
+| [`Okta_CL`](../tables/okta-cl.md) � | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **24 content item(s)**:

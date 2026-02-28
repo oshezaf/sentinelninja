@@ -8,18 +8,6 @@
 
 ---
 
-The [ZeroFox](https://www.zerofox.com/) solution for Microsoft Sentinel enables you to ingest [ZeroFox Alerts](https://www.zerofox.com/platform/) and [ZeroFox CTI events](https://www.zerofox.com/threat-intelligence/) into Microsoft Sentinel using the ZeroFox API. 
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | ZeroFox |
@@ -31,14 +19,30 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **First Published** | 2023-07-28 |
 | **Solution Folder** | [ZeroFox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox) |
 
+The [ZeroFox](https://www.zerofox.com/) solution for Microsoft Sentinel enables you to ingest [ZeroFox Alerts](https://www.zerofox.com/platform/) and [ZeroFox CTI events](https://www.zerofox.com/threat-intelligence/) into Microsoft Sentinel using the ZeroFox API. 
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
 - [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md)
-- [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) 🔶
+- [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,29 +51,29 @@ This solution uses **21 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ZeroFoxAlertPoller_CL`](../tables/zerofoxalertpoller-cl.md) | [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) | Analytics |
-| [`ZeroFox_CTI_C2_CL`](../tables/zerofox-cti-c2-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_advanced_dark_web_CL`](../tables/zerofox-cti-advanced-dark-web-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_botnet_CL`](../tables/zerofox-cti-botnet-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_breaches_CL`](../tables/zerofox-cti-breaches-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_compromised_credentials_CL`](../tables/zerofox-cti-compromised-credentials-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_credit_cards_CL`](../tables/zerofox-cti-credit-cards-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_dark_web_CL`](../tables/zerofox-cti-dark-web-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_discord_CL`](../tables/zerofox-cti-discord-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_disruption_CL`](../tables/zerofox-cti-disruption-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_email_addresses_CL`](../tables/zerofox-cti-email-addresses-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_exploits_CL`](../tables/zerofox-cti-exploits-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_irc_CL`](../tables/zerofox-cti-irc-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_malware_CL`](../tables/zerofox-cti-malware-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_national_ids_CL`](../tables/zerofox-cti-national-ids-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_phishing_CL`](../tables/zerofox-cti-phishing-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_phone_numbers_CL`](../tables/zerofox-cti-phone-numbers-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_ransomware_CL`](../tables/zerofox-cti-ransomware-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_telegram_CL`](../tables/zerofox-cti-telegram-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_threat_actors_CL`](../tables/zerofox-cti-threat-actors-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
-| [`ZeroFox_CTI_vulnerabilities_CL`](../tables/zerofox-cti-vulnerabilities-cl.md) 🔶 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_C2_CL`](../tables/zerofox-cti-c2-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_advanced_dark_web_CL`](../tables/zerofox-cti-advanced-dark-web-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_botnet_CL`](../tables/zerofox-cti-botnet-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_breaches_CL`](../tables/zerofox-cti-breaches-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_compromised_credentials_CL`](../tables/zerofox-cti-compromised-credentials-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_credit_cards_CL`](../tables/zerofox-cti-credit-cards-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_dark_web_CL`](../tables/zerofox-cti-dark-web-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_discord_CL`](../tables/zerofox-cti-discord-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_disruption_CL`](../tables/zerofox-cti-disruption-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_email_addresses_CL`](../tables/zerofox-cti-email-addresses-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_exploits_CL`](../tables/zerofox-cti-exploits-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_irc_CL`](../tables/zerofox-cti-irc-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_malware_CL`](../tables/zerofox-cti-malware-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_national_ids_CL`](../tables/zerofox-cti-national-ids-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_phishing_CL`](../tables/zerofox-cti-phishing-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_phone_numbers_CL`](../tables/zerofox-cti-phone-numbers-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_ransomware_CL`](../tables/zerofox-cti-ransomware-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_telegram_CL`](../tables/zerofox-cti-telegram-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_threat_actors_CL`](../tables/zerofox-cti-threat-actors-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
+| [`ZeroFox_CTI_vulnerabilities_CL`](../tables/zerofox-cti-vulnerabilities-cl.md) � | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

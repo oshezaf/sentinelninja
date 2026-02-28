@@ -8,10 +8,6 @@
 
 ---
 
-The [42Crunch](https://42crunch.com/) API Protection solution protects APIs by installing a microfirewall inline with the API server. Access logs from the microfirewall are emitted to Microsoft Sentinel allowing analysis and investigation of attacks.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | 42Crunch API Protection |
@@ -23,13 +19,21 @@ The [42Crunch](https://42crunch.com/) API Protection solution protects APIs by i
 | **First Published** | 2022-09-21 |
 | **Solution Folder** | [42Crunch API Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection) |
 
+The [42Crunch](https://42crunch.com/) API Protection solution protects APIs by installing a microfirewall inline with the API server. Access logs from the microfirewall are emitted to Microsoft Sentinel allowing analysis and investigation of attacks.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [API Protection](../connectors/42crunchapiprotection.md) 🔶
+- [API Protection](../connectors/42crunchapiprotection.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) 🔶 | [API Protection](../connectors/42crunchapiprotection.md) | Analytics, Workbooks |
+| [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) � | [API Protection](../connectors/42crunchapiprotection.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

@@ -10,18 +10,6 @@
 
 ---
 
-The BeyondTrust PM Cloud solution provides a data connector to ingest activity audit logs and client event logs from BeyondTrust Privilege Management Cloud into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Azure Monitor Logs Ingestion API](https://docs.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview)
-
-b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | BeyondTrust |
@@ -33,13 +21,30 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **First Published** | 2025-10-31 |
 | **Solution Folder** | [BeyondTrustPMCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud) |
 
+The BeyondTrust PM Cloud solution provides a data connector to ingest activity audit logs and client event logs from BeyondTrust Privilege Management Cloud into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor Logs Ingestion API](https://docs.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview)
+
+b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) 🔶
+- [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,11 +52,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) 🔶 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | Workbooks |
-| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) 🔶 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | Workbooks |
+| [`BeyondTrustPM_ActivityAudits_CL`](../tables/beyondtrustpm-activityaudits-cl.md) � | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | Workbooks |
+| [`BeyondTrustPM_ClientEvents_CL`](../tables/beyondtrustpm-clientevents-cl.md) � | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

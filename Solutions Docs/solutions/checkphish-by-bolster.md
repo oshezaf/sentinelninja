@@ -8,12 +8,6 @@
 
 ---
 
-The [Bolster’s](https://bolster.ai/checkphish) phishing and scam protection service provides accurate detection and takedown of phishing and scam sites.
-
-This sentinel solution contains playbooks which help to identify phishing sites which helps analysts faster investigation by enriching sentinel incident.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -24,6 +18,10 @@ This sentinel solution contains playbooks which help to identify phishing sites 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-10-12 |
 | **Solution Folder** | [CheckPhish by Bolster](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster) |
+
+The [Bolster’s](https://bolster.ai/checkphish) phishing and scam protection service provides accurate detection and takedown of phishing and scam sites.
+
+This sentinel solution contains playbooks which help to identify phishing sites which helps analysts faster investigation by enriching sentinel incident.
 
 ## Data Connectors
 

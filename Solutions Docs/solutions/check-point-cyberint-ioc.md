@@ -8,10 +8,6 @@
 
 ---
 
-Cyberint, a Check Point company, provides Microsoft Sentinel integration to streamline critical IOC and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. This simplifies the process of tracking the status of tickets with automatic sync updates across systems. Using this new integration for Microsoft Sentinel, existing Cyberint and Microsoft Sentinel customers can easily pull logs based on Cyberint's findings into Microsoft Sentinel platform.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cyberint |
@@ -22,6 +18,8 @@ Cyberint, a Check Point company, provides Microsoft Sentinel integration to stre
 | **Author** | Cyberint - support@checkpoint.com |
 | **First Published** | 2025-04-29 |
 | **Solution Folder** | [Check Point Cyberint IOC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC) |
+
+Cyberint, a Check Point company, provides Microsoft Sentinel integration to streamline critical IOC and bring enriched threat intelligence from the Infinity External Risk Management solution into Microsoft Sentinel. This simplifies the process of tracking the status of tickets with automatic sync updates across systems. Using this new integration for Microsoft Sentinel, existing Cyberint and Microsoft Sentinel customers can easily pull logs based on Cyberint's findings into Microsoft Sentinel platform.
 
 ## Data Connectors
 

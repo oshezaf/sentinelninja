@@ -18,9 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SecurityScorecardFactor_CL`](../tables/securityscorecardfactor-cl.md) 🔶 | ? | ✓ | ? |
-| [`SecurityScorecardIssues_CL`](../tables/securityscorecardissues-cl.md) 🔶 | ? | ✓ | ? |
-| [`SecurityScorecardRatings_CL`](../tables/securityscorecardratings-cl.md) 🔶 | ? | ✓ | ? |
+| [`SecurityScorecardFactor_CL`](../tables/securityscorecardfactor-cl.md) � | ? | ✓ | ? |
+| [`SecurityScorecardIssues_CL`](../tables/securityscorecardissues-cl.md) � | ? | ✓ | ? |
+| [`SecurityScorecardRatings_CL`](../tables/securityscorecardratings-cl.md) � | ? | ✓ | ? |
 
 ---
 

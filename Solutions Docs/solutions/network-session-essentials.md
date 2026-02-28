@@ -8,40 +8,6 @@
 
 ---
 
-[Network Session Essentials](https://aka.ms/NetworkSessionEssential) is a [domain solution](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&reserved=0) and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
-
-**Prerequisite :-**
-
- Install one or more of the listed solutions, or develop your custom ASIM parsers to unlock the value provided by this solution.
- 1. Amazon Web Services 
- 2. Azure Firewall 
- 3. Azure Network Security Groups 
- 4. Check Point 
- 5. Cisco ASA 
- 6. Cisco Meraki Security Events 
- 7. Corelight 
- 8. Fortinet FortiGate 
- 9. Microsoft Defender for IoT 
- 10. Microsoft Defender for Cloud  
- 11. Microsoft Sysmon For Linux 
- 12. Windows Firewall 
- 13. Palo Alto PANOS 
- 14. Vectra AI Stream 
- 15. WatchGuard Firebox 
- 16. Zscaler Internet Access 
-
-**Underlying Microsoft Technologies used:** 
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs: 
- 1. Product solutions as described above 
- 2. Logic app for data summarization
-
-**Recommendation :-**
-
-It is highly recommended to use the **Summarize data** logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules & Hunting queries.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -53,87 +19,92 @@ It is highly recommended to use the **Summarize data** logic app playbook provid
 | **First Published** | 2022-11-11 |
 | **Last Updated** | 2022-11-11 |
 | **Solution Folder** | [Network Session Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Session%20Essentials) |
-| **Dependencies** | [Amazon Web Services](amazon-web-services.md), [Azure Firewall](azure-firewall.md), [Azure Network Security Groups](azure-network-security-groups.md), [Check Point](check-point.md), [CiscoASA](ciscoasa.md), [CiscoMeraki](ciscomeraki.md), [Corelight](corelight.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md), [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md), [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md), [Windows Firewall](windows-firewall.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Vectra AI Stream](vectra-ai-stream.md), [Watchguard Firebox](watchguard-firebox.md), [Zscaler Internet Access](zscaler-internet-access.md), [IllumioSaaS](illumiosaas.md) |
+| **Pre-requisites** | [Amazon Web Services](amazon-web-services.md), [Azure Firewall](azure-firewall.md), [Azure Network Security Groups](azure-network-security-groups.md), [Check Point](check-point.md), [CiscoASA](ciscoasa.md), [CiscoMeraki](ciscomeraki.md), [Corelight](corelight.md), [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md), [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md), [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md), [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md), [Windows Firewall](windows-firewall.md), [PaloAlto-PAN-OS](paloalto-pan-os.md), [Vectra AI Stream](vectra-ai-stream.md), [Watchguard Firebox](watchguard-firebox.md), [Zscaler Internet Access](zscaler-internet-access.md), [IllumioSaaS](illumiosaas.md) |
 
-## Additional Information
+[Network Session Essentials](https://aka.ms/NetworkSessionEssential) is a [domain solution](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fsentinel%2Fsentinel-solutions-catalog%23domain-solutions&data=05%7C01%7Ckavishbakshi%40microsoft.com%7Cbe2a496082b24caa4b8c08da9cefacca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637994850502413731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OJegu%2B2EqD7rmYmK9pm9QniD6YWp5ooloZ6tHzcwVi0%3D&reserved=0) and does not include any data connectors. The content in this solution requires one of the product solutions below , as well as any other connector or data source normalized to the [ASIM](https://aka.ms/AboutASIM).
+
+For details on the data sources and ASIM parsers supported by this solution, see the [ASIM Pre-requisites](#asim-pre-requisites) section below.
+
+**Recommendation :-**
+
+It is highly recommended to use the **Summarize data** logic app playbook provided with this solution as it will significantly improve the performance of the Workbook, Analytic rules & Hunting queries.
+
+**Additional Information**
 
 - 📖 **Related Documentation:** [ASIM-based domain solutions overview](https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions) - Uses ASIM Network Session schema for cross-product threat detection
 - 📖 **Related Documentation:** [ASIM Network Session schema reference](https://learn.microsoft.com/azure/sentinel/normalization-schema-network) - Field definitions for normalized network logs
 
-## Dependencies
+## Contents
 
-This solution has **17 required** and **14 optional** (ASIM-based) dependencies on other solutions:
+- [Pre-requisites](#pre-requisites)
+- [ASIM Pre-requisites](#asim-pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [AWS VPC Flow Logs](aws-vpc-flow-logs.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Amazon Web Services](amazon-web-services.md) | explicit | - |
-| [Azure Firewall](azure-firewall.md) | explicit | - |
-| [Azure Network Security Groups](azure-network-security-groups.md) | explicit | - |
-| [Check Point](check-point.md) | explicit | - |
-| [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [CiscoASA](ciscoasa.md) | explicit, ASIM (optional) | ASIM schemas: NetworkSession |
-| [CiscoMeraki](ciscomeraki.md) | explicit, ASIM (optional) | ASIM schemas: NetworkSession |
-| [Common Event Format](common-event-format.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Corelight](corelight.md) | explicit, ASIM (optional) | ASIM schemas: NetworkSession |
-| [CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [CustomLogsAma](customlogsama.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | explicit | - |
-| [IllumioSaaS](illumiosaas.md) | explicit, ASIM (optional) | ASIM schemas: NetworkSession |
-| [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md) | explicit | - |
-| [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md) | explicit | - |
-| [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md) | explicit | - |
-| [MimecastTIRegional](mimecasttiregional.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [PaloAlto-PAN-OS](paloalto-pan-os.md) | explicit | - |
-| [SentinelOne](sentinelone.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [SlashNext](slashnext.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Syslog](syslog.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Vectra AI Stream](vectra-ai-stream.md) | explicit, ASIM (optional) | ASIM schemas: NetworkSession |
-| [VirtualMetric DataStream](virtualmetric-datastream.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Watchguard Firebox](watchguard-firebox.md) | explicit | - |
-| [Windows Firewall](windows-firewall.md) | explicit | - |
-| [Windows Forwarded Events](windows-forwarded-events.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Windows Security Events](windows-security-events.md) | ASIM (optional) | ASIM schemas: NetworkSession |
-| [Zscaler Internet Access](zscaler-internet-access.md) | explicit | - |
+## Pre-requisites
 
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> Supported Products
+This solution depends on **17 other solution(s)**:
 
-This solution uses ASIM parsers and supports the following products:
+| Solution | Details |
+|:---------|:--------|
+| [Amazon Web Services](amazon-web-services.md) | - |
+| [Azure Firewall](azure-firewall.md) | - |
+| [Azure Network Security Groups](azure-network-security-groups.md) | - |
+| [Check Point](check-point.md) | - |
+| [CiscoASA](ciscoasa.md) | Also provides ASIM schemas: NetworkSession |
+| [CiscoMeraki](ciscomeraki.md) | Also provides ASIM schemas: NetworkSession |
+| [Corelight](corelight.md) | Also provides ASIM schemas: NetworkSession |
+| [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) | - |
+| [IllumioSaaS](illumiosaas.md) | Also provides ASIM schemas: NetworkSession |
+| [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md) | - |
+| [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md) | - |
+| [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md) | - |
+| [PaloAlto-PAN-OS](paloalto-pan-os.md) | - |
+| [Vectra AI Stream](vectra-ai-stream.md) | Also provides ASIM schemas: NetworkSession |
+| [Watchguard Firebox](watchguard-firebox.md) | - |
+| [Windows Firewall](windows-firewall.md) | - |
+| [Zscaler Internet Access](zscaler-internet-access.md) | - |
 
-| Product |
-|:--------|
-| [AWS VPC](../asim/asim-products-index.md#aws-vpc) |
-| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) |
-| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) |
-| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) |
-| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) |
-| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) |
-| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) |
-| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) |
-| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) |
-| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) |
-| [CiscoASA](../asim/asim-products-index.md#ciscoasa) |
-| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) |
-| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) |
-| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) |
-| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) |
-| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) |
-| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) |
-| [Native](../asim/asim-products-index.md#native) |
-| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) |
-| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) |
-| [SentinelOne](../asim/asim-products-index.md#sentinelone) |
-| [SonicWall](../asim/asim-products-index.md#sonicwall) |
-| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) |
-| [VMConnection](../asim/asim-products-index.md#vmconnection) |
-| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) |
-| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) |
-| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) |
-| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) |
-| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) |
-| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) |
+## <a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites
+
+This solution uses the [`_Im_NetworkSession`](../asim/imnetworksession.md) [ASIM (Advanced Security Information Model)](https://learn.microsoft.com/azure/sentinel/normalization) parser to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.
+
+### Supported Products
+
+| Product | Dependency Solution |
+|:--------|:--------------------|
+| [AWS VPC](../asim/asim-products-index.md#aws-vpc) | [AWS VPC Flow Logs](aws-vpc-flow-logs.md) |
+| [AppGate SDP](../asim/asim-products-index.md#appgate-sdp) | [Syslog](syslog.md) |
+| [Azure Firewall](../asim/asim-products-index.md#azure-firewall) | - |
+| [Azure NSG flows](../asim/asim-products-index.md#azure-nsg-flows) | - |
+| [Azure NTANetAnalytics](../asim/asim-products-index.md#azure-ntanetanalytics) | - |
+| [Barracuda WAF](../asim/asim-products-index.md#barracuda-waf) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [CheckPointFirewall](../asim/asim-products-index.md#checkpointfirewall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Cisco Firepower](../asim/asim-products-index.md#cisco-firepower) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Cisco ISE](../asim/asim-products-index.md#cisco-ise) | [Syslog](syslog.md) |
+| [Cisco Meraki](../asim/asim-products-index.md#cisco-meraki) | [CiscoMeraki](ciscomeraki.md)<br>[CustomLogsAma](customlogsama.md)<br>[Syslog](syslog.md) |
+| [CiscoASA](../asim/asim-products-index.md#ciscoasa) | [CiscoASA](ciscoasa.md)<br>[Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [CrowdStrike Falcon Endpoint Protection](../asim/asim-products-index.md#crowdstrike-falcon-endpoint-protection) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [ForcePointFirewall](../asim/asim-products-index.md#forcepointfirewall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Fortinet FortiGate](../asim/asim-products-index.md#fortinet-fortigate) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Illumio SaaS Core](../asim/asim-products-index.md#illumio-saas-core) | [IllumioSaaS](illumiosaas.md) |
+| [M365 Defender for Endpoint](../asim/asim-products-index.md#m365-defender-for-endpoint) | - |
+| [Microsoft Defender for IoT](../asim/asim-products-index.md#microsoft-defender-for-iot) | - |
+| [Native](../asim/asim-products-index.md#native) | [Cisco Meraki Events via REST API](cisco-meraki-events-via-rest-api.md)<br>[CrowdStrike Falcon Endpoint Protection](crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [Palo Alto Cortex Data Lake](../asim/asim-products-index.md#palo-alto-cortex-data-lake) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Palo Alto PanOS](../asim/asim-products-index.md#palo-alto-panos) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [SentinelOne](../asim/asim-products-index.md#sentinelone) | [SentinelOne](sentinelone.md) |
+| [SonicWall](../asim/asim-products-index.md#sonicwall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| [Sysmon for Linux](../asim/asim-products-index.md#sysmon-for-linux) | [Syslog](syslog.md) |
+| [VMConnection](../asim/asim-products-index.md#vmconnection) | - |
+| [VMware Carbon Black Cloud](../asim/asim-products-index.md#vmware-carbon-black-cloud) | [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md) |
+| [Vectra AI Streams](../asim/asim-products-index.md#vectra-ai-streams) | [CustomLogsAma](customlogsama.md)<br>[Vectra AI Stream](vectra-ai-stream.md) |
+| [WatchGuard Fireware OS](../asim/asim-products-index.md#watchguard-fireware-os) | [Syslog](syslog.md) |
+| [Windows Firewall](../asim/asim-products-index.md#windows-firewall) | [Microsoft Exchange Security - Exchange On-Premises](microsoft-exchange-security-exchange-on-premises.md)<br>[Windows Forwarded Events](windows-forwarded-events.md)<br>[Windows Security Events](windows-security-events.md) |
+| [Windows Sysmon](../asim/asim-products-index.md#windows-sysmon) | [Windows Forwarded Events](windows-forwarded-events.md) |
+| [Zscaler ZIA Firewall](../asim/asim-products-index.md#zscaler-zia-firewall) | [Common Event Format](common-event-format.md)<br>[VirtualMetric DataStream](virtualmetric-datastream.md) |
+| - | [Corelight](corelight.md) |
 
 ## Data Connectors
 
@@ -178,13 +149,11 @@ This solution uses ASIM parsers and supports the following products:
 - [Microsoft Defender for IoT](../connectors/iot.md) *(dependency on [IoTOTThreatMonitoringwithDefenderforIoT](iototthreatmonitoringwithdefenderforiot.md))*
 - [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) *(dependency on [Microsoft Defender for Cloud](microsoft-defender-for-cloud.md))*
 - [[Deprecated] Microsoft Sysmon For Linux](../connectors/microsoftsysmonforlinux.md) *(dependency on [Microsoft Sysmon For Linux](microsoft-sysmon-for-linux.md))*
-- [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) *(dependency on [MimecastTIRegional](mimecasttiregional.md))*
 - [[Deprecated] Palo Alto Networks (Firewall) via Legacy Agent](../connectors/paloaltonetworks.md) *(dependency on [PaloAlto-PAN-OS](paloalto-pan-os.md))*
 - [[Deprecated] Palo Alto Networks (Firewall) via AMA](../connectors/paloaltonetworksama.md) *(dependency on [PaloAlto-PAN-OS](paloalto-pan-os.md))*
 - [Security Events via Legacy Agent](../connectors/securityevents.md) *(dependency on [Windows Security Events](windows-security-events.md))*
 - [SentinelOne](../connectors/sentinelone.md) *(dependency on [SentinelOne](sentinelone.md))*
 - [SentinelOne](../connectors/sentineloneccp.md) *(dependency on [SentinelOne](sentinelone.md))*
-- [SlashNext Function App](../connectors/slashnextfunctionapp.md) *(dependency on [SlashNext](slashnext.md))*
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 - [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) *(dependency on [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md))*
@@ -200,32 +169,6 @@ This solution uses ASIM parsers and supports the following products:
 - [[Deprecated] Zscaler via Legacy Agent](../connectors/zscaler.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
 - [[Deprecated] Zscaler via AMA](../connectors/zscalerama.md) *(dependency on [Zscaler Internet Access](zscaler-internet-access.md))*
 - [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) *(dependency on [VMware Carbon Black Cloud](vmware-carbon-black-cloud.md))*
-
-## <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Parsers Used
-
-This solution uses **19 ASIM parser(s)** for normalized data:
-
-| Table | Used By Content |
-|-------|----------------|
-| [`_Im_NetworkSession`](../asim/imnetworksession.md) | Analytics, Hunting, Playbooks, Workbooks |
-| [`_Im_NetworkSession_AWSVPCV03`](../asim/asimnetworksessionawsvpc.md) | Summary Rule |
-| [`_Im_NetworkSession_AppGateSDPV02`](../asim/asimnetworksessionappgatesdp.md) | Summary Rule |
-| [`_Im_NetworkSession_CheckPointFirewallV11`](../asim/asimnetworksessioncheckpointfirewall.md) | Summary Rule |
-| [`_Im_NetworkSession_CiscoASAV10`](../asim/asimnetworksessionciscoasa.md) | Summary Rule |
-| [`_Im_NetworkSession_CiscoFirepowerV01`](../asim/asimnetworksessionciscofirepower.md) | Summary Rule |
-| [`_Im_NetworkSession_CiscoISEV11`](../asim/asimnetworksessionciscoise.md) | Summary Rule |
-| [`_Im_NetworkSession_EmptyV03`](../asim/im-networksession-emptyv03.md) | Summary Rule |
-| [`_Im_NetworkSession_ForcePointFirewallV01`](../asim/asimnetworksessionforcepointfirewall.md) | Summary Rule |
-| [`_Im_NetworkSession_FortinetFortiGateV04`](../asim/asimnetworksessionfortinetfortigate.md) | Summary Rule |
-| [`_Im_NetworkSession_LinuxSysmonV04`](../asim/asimnetworksessionlinuxsysmon.md) | Summary Rule |
-| [`_Im_NetworkSession_Microsoft365DefenderV04`](../asim/asimnetworksessionmicrosoft365defender.md) | Summary Rule |
-| [`_Im_NetworkSession_MicrosoftWindowsEventFirewallV04`](../asim/asimnetworksessionmicrosoftwindowseventfirewall.md) | Summary Rule |
-| [`_Im_NetworkSession_NativeV03`](../asim/asimnetworksessionnative.md) | Summary Rule |
-| [`_Im_NetworkSession_PaloAltoCEFV07`](../asim/asimnetworksessionpaloaltocef.md) | Summary Rule |
-| [`_Im_NetworkSession_SonicWallFirewallV01`](../asim/asimnetworksessionsonicwallfirewall.md) | Summary Rule |
-| [`_Im_NetworkSession_VMConnectionV02`](../asim/asimnetworksessionvmconnection.md) | Summary Rule |
-| [`_Im_NetworkSession_WatchGuardFirewareOSV01`](../asim/asimnetworksessionwatchguardfirewareos.md) | Summary Rule |
-| [`_Im_NetworkSession_ZscalerZIAV04`](../asim/asimnetworksessionzscalerzia.md) | Summary Rule |
 
 ## Tables Used
 

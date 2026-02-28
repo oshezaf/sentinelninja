@@ -8,10 +8,6 @@
 
 ---
 
-The [Microsoft Information Protection](https://learn.microsoft.com/microsoft-365/compliance/information-protection) Solution for Microsoft Sentinel integrates Microsoft Purview Information Protection logs for security monitoring in Microsoft Sentinel. Customers can stream auditing events generated from Microsoft Purview Information Protection unified labeling clients and scanners and emitted to M365 audit log for central reporting in Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,7 +19,9 @@ The [Microsoft Information Protection](https://learn.microsoft.com/microsoft-365
 | **First Published** | 2023-01-06 |
 | **Solution Folder** | [Microsoft Purview Information Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview%20Information%20Protection) |
 
-## Additional Information
+The [Microsoft Information Protection](https://learn.microsoft.com/microsoft-365/compliance/information-protection) Solution for Microsoft Sentinel integrates Microsoft Purview Information Protection logs for security monitoring in Microsoft Sentinel. Customers can stream auditing events generated from Microsoft Purview Information Protection unified labeling clients and scanners and emitted to M365 audit log for central reporting in Sentinel.
+
+**Additional Information**
 
 📖 **Setup Guide:** [Microsoft Purview Information Protection](https://learn.microsoft.com/azure/sentinel/connect-microsoft-purview) - Connect Purview Information Protection data to Microsoft Sentinel
 

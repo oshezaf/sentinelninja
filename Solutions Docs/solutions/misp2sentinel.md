@@ -8,12 +8,6 @@
 
 ---
 
-The MISP2Sentinel solution allows you to automatically push threat indicators from [MISP](https://www.misp-project.org/) to Microsoft Sentinel via the Upload Indicators REST API.
-
-
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Community |
@@ -25,6 +19,16 @@ The MISP2Sentinel solution allows you to automatically push threat indicators fr
 | **First Published** | 2023-07-29 |
 | **Last Updated** | 2023-07-29 |
 | **Solution Folder** | [MISP2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel) |
+
+The MISP2Sentinel solution allows you to automatically push threat indicators from [MISP](https://www.misp-project.org/) to Microsoft Sentinel via the Upload Indicators REST API.
+
+
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

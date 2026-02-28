@@ -8,10 +8,6 @@
 
 ---
 
-This product integrates Cohesity Helios with Microsoft Sentinel to stay updated with the security events from your Cohesity environment and immediately respond to a ransomware attack or an anomaly
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cohesity |
@@ -23,13 +19,22 @@ This product integrates Cohesity Helios with Microsoft Sentinel to stay updated 
 | **First Published** | 2022-10-10 |
 | **Solution Folder** | [CohesitySecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity) |
 
+This product integrates Cohesity Helios with Microsoft Sentinel to stay updated with the security events from your Cohesity environment and immediately respond to a ransomware attack or an anomaly
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Cohesity](../connectors/cohesitydataconnector.md) 🔶
+- [Cohesity](../connectors/cohesitydataconnector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +42,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Cohesity_CL`](../tables/cohesity-cl.md) 🔶 | [Cohesity](../connectors/cohesitydataconnector.md) | - |
+| [`Cohesity_CL`](../tables/cohesity-cl.md) � | [Cohesity](../connectors/cohesitydataconnector.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:

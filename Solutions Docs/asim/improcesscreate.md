@@ -27,18 +27,18 @@ This ASIM parser supports normalizing process create event logs from all support
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-|  | [_Im_ProcessCreateTrendMicroVisionOne](im-processcreatetrendmicrovisionone.md) |
-|  | [_Im_ProcessCreate_LinuxSysmon](im-processcreate-linuxsysmon.md) |
-|  | [_Im_ProcessCreate_MD4IoT](im-processcreate-md4iot.md) |
-|  | [_Im_ProcessCreate_MicrosoftSecurityEvents](im-processcreate-microsoftsecurityevents.md) |
-|  | [_Im_ProcessCreate_MicrosoftSysmon](im-processcreate-microsoftsysmon.md) |
-|  | [_Im_ProcessCreate_MicrosoftWindowsEvents](im-processcreate-microsoftwindowsevents.md) |
-| SentinelOne | [_Im_ProcessCreate_SentinelOne](asimprocesscreatesentinelone.md) |
-|  | [_Im_ProcessCreate_VMwareCarbonBlackCloud](im-processcreate-vmwarecarbonblackcloud.md) |
-| Microsoft 365 Defender for endpoint | [_Im_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |
-| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+|  | [_Im_ProcessCreateTrendMicroVisionOne](im-processcreatetrendmicrovisionone.md) |  |
+|  | [_Im_ProcessCreate_LinuxSysmon](im-processcreate-linuxsysmon.md) |  |
+|  | [_Im_ProcessCreate_MD4IoT](im-processcreate-md4iot.md) |  |
+|  | [_Im_ProcessCreate_MicrosoftSecurityEvents](im-processcreate-microsoftsecurityevents.md) |  |
+|  | [_Im_ProcessCreate_MicrosoftSysmon](im-processcreate-microsoftsysmon.md) |  |
+|  | [_Im_ProcessCreate_MicrosoftWindowsEvents](im-processcreate-microsoftwindowsevents.md) |  |
+| SentinelOne | [_Im_ProcessCreate_SentinelOne](asimprocesscreatesentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+|  | [_Im_ProcessCreate_VMwareCarbonBlackCloud](im-processcreate-vmwarecarbonblackcloud.md) |  |
+| Microsoft 365 Defender for endpoint | [_Im_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |  |
+| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 
 ## Parameters
 

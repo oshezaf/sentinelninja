@@ -8,10 +8,6 @@
 
 ---
 
-Endpoint Privilege Manager, a critical and foundational endpoint control addresses the underlying weaknesses of endpoint defenses against a privileged attacker and helps enterprises defend against these attacks.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | CyberArk Support |
@@ -23,13 +19,21 @@ Endpoint Privilege Manager, a critical and foundational endpoint control address
 | **First Published** | 2022-04-10 |
 | **Solution Folder** | [CyberArkEPM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM) |
 
+Endpoint Privilege Manager, a critical and foundational endpoint control addresses the underlying weaknesses of endpoint defenses against a privileged attacker and helps enterprises defend against these attacks.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [CyberArkEPM](../connectors/cyberarkepm.md) 🔶
+- [CyberArkEPM](../connectors/cyberarkepm.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) 🔶 | [CyberArkEPM](../connectors/cyberarkepm.md) | Analytics, Hunting, Workbooks |
+| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) � | [CyberArkEPM](../connectors/cyberarkepm.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

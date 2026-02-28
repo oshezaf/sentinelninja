@@ -8,10 +8,6 @@
 
 ---
 
-The Microsoft Sentinel solution for Alibaba Cloud ActionTrail Logs enables seamless integration of Alibaba Cloud audit data into Sentinel. It empowers security teams to monitor user activity, detect threats, and investigate incidents across Alibaba Cloud environments—enhancing visibility and security posture in multi-cloud deployments.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,8 @@ The Microsoft Sentinel solution for Alibaba Cloud ActionTrail Logs enables seaml
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-07-03 |
 | **Solution Folder** | [Alibaba Cloud ActionTrail](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail) |
+
+The Microsoft Sentinel solution for Alibaba Cloud ActionTrail Logs enables seamless integration of Alibaba Cloud audit data into Sentinel. It empowers security teams to monitor user activity, detect threats, and investigate incidents across Alibaba Cloud environments—enhancing visibility and security posture in multi-cloud deployments.
 
 ## Data Connectors
 

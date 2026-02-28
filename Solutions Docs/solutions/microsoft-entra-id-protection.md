@@ -8,10 +8,6 @@
 
 ---
 
-The [Microsoft Entra ID Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Entra ID Protection for risky users and events in Microsoft Entra ID.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,13 +19,21 @@ The [Microsoft Entra ID Protection](https://docs.microsoft.com/azure/active-dire
 | **First Published** | 2022-05-18 |
 | **Solution Folder** | [Microsoft Entra ID Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection) |
 
+The [Microsoft Entra ID Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) solution for Microsoft Sentinel allows you to ingest Security alerts reported in Microsoft Entra ID Protection for risky users and events in Microsoft Entra ID.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Internal Tables](#internal-tables)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
 - [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md)
 
-### Internal Tables
+## Internal Tables
 
 The following **2 table(s)** are used internally by this solution's content items:
 

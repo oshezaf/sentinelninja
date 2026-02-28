@@ -8,16 +8,6 @@
 
 ---
 
-The [Atlassian Confluence Audit](https://www.atlassian.com/software/confluence) solution provides the capability to ingest [Confluence Audit Records](https://support.atlassian.com/confluence-cloud/docs/view-the-audit-log/) into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,17 +19,31 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2022-01-24 |
 | **Solution Folder** | [AtlassianConfluenceAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit) |
 
+The [Atlassian Confluence Audit](https://www.atlassian.com/software/confluence) solution provides the capability to ingest [Confluence Audit Records](https://support.atlassian.com/confluence-cloud/docs/view-the-audit-log/) into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+• [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
 - [Atlassian Confluence](../connectors/atlassianconfluence.md) ⚠️
-- [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) ⚠️ 🔶
+- [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) ⚠️ �
 - [ Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/confluenceauditccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +53,10 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`AtlassianConfluenceNativePoller_CL`](../tables/atlassianconfluencenativepoller-cl.md) | [Atlassian Confluence](../connectors/atlassianconfluence.md) | - |
 | [`ConfluenceAuditLogs_CL`](../tables/confluenceauditlogs-cl.md) | [ Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/confluenceauditccpdefinition.md) | - |
-| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) 🔶 | [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) | - |
+| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) � | [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access](https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access) |
+| **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2024-04-08 |
+| **Solution Folder** | [Global Secure Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Global%20Secure%20Access) |
+
 [Global Secure Access](https://aka.ms/GlobalSecureAccess) is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution requires one of the product solutions below.
 
 **Prerequisite:**
@@ -21,18 +32,11 @@ This solution depends on the following technologies, and some of these dependenc
 1. Product solutions as described above
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access](https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access) |
-| **Categories** | domains |
-| **Version** | 3.0.1 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2024-04-08 |
-| **Solution Folder** | [Global Secure Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Global%20Secure%20Access) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

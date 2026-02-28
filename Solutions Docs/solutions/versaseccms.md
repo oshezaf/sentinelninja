@@ -8,10 +8,6 @@
 
 ---
 
-Ingests Versasec Cms system logs into Microsoft Sentinel using a REST API poller (CCF).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Versasec Support |
@@ -21,6 +17,14 @@ Ingests Versasec Cms system logs into Microsoft Sentinel using a REST API poller
 | **Version** | 1.0.0 |
 | **Author** | Versasec AB - info@versasec.com |
 | **Solution Folder** | [VersasecCMS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS) |
+
+Ingests Versasec Cms system logs into Microsoft Sentinel using a REST API poller (CCF).
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

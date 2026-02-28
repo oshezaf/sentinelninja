@@ -8,17 +8,6 @@
 
 ---
 
-The data connector for [Mimecast Secure Email Gateway](https://integrations.mimecast.com/tech-partners/microsoft-sentinel/) allows easy log collection from the Secure Email Gateway to surface email insight and user activity within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into email based threats, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities. Mimecast products and features required: 
-- Mimecast Secure Email Gateway 
-- Mimecast Data Leak Prevention
- 
-
-Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sentinel content like data connectors, workbooks, analytics, and automations in your workspace with a single deployment step.
-
-**NOTE: This integration is considered deprecated and has been replaced by the unified [Mimecast integration](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecast?tab=Overview), which uses Mimecast's API 2.0 gateway. Please avoid using this version, and if already using it, migrate to the new integration. No further updates will be performed, and this version will be removed at a future date. For additional information, including the unified integration setup steps, go [here](https://integrations.mimecast.com/tech-partners/microsoft-sentinel).**
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Mimecast |
@@ -31,13 +20,28 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 | **Last Updated** | 2022-02-24 |
 | **Solution Folder** | [MimecastSEG](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastSEG) |
 
+The data connector for [Mimecast Secure Email Gateway](https://integrations.mimecast.com/tech-partners/microsoft-sentinel/) allows easy log collection from the Secure Email Gateway to surface email insight and user activity within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into email based threats, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities. Mimecast products and features required: 
+- Mimecast Secure Email Gateway 
+- Mimecast Data Leak Prevention
+ 
+
+Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sentinel content like data connectors, workbooks, analytics, and automations in your workspace with a single deployment step.
+
+**NOTE: This integration is considered deprecated and has been replaced by the unified [Mimecast integration](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecast?tab=Overview), which uses Mimecast's API 2.0 gateway. Please avoid using this version, and if already using it, migrate to the new integration. No further updates will be performed, and this version will be removed at a future date. For additional information, including the unified integration setup steps, go [here](https://integrations.mimecast.com/tech-partners/microsoft-sentinel).**
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) 🔶
+- [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,11 +49,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md) 🔶 | [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Analytics |
-| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) 🔶 | [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Analytics, Workbooks |
+| [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md) � | [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Analytics |
+| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) � | [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **10 content item(s)**:

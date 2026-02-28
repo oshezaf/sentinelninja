@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`secRMM_CL`](../tables/secrmm-cl.md) 🔶 | ? | ✓ | ? |
+| [`secRMM_CL`](../tables/secrmm-cl.md) � | ? | ✓ | ? |
 
 ---
 

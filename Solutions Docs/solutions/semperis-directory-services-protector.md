@@ -8,16 +8,6 @@
 
 ---
 
-The [Semperis Directory Services Protector](https://www.semperis.com/ds-protector/) solution provides the capability to ingest Windows event logs (i.e., Indicators of Exposure and Indicators of Compromise) into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Agent based logs collection from Windows and Linux machines](https://docs.microsoft.com/azure/azure-monitor/agents/data-sources-custom-logs)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Semperis |
@@ -28,6 +18,20 @@ a. [Agent based logs collection from Windows and Linux machines](https://docs.mi
 | **Author** | Semperis |
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [Semperis Directory Services Protector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector) |
+
+The [Semperis Directory Services Protector](https://www.semperis.com/ds-protector/) solution provides the capability to ingest Windows event logs (i.e., Indicators of Exposure and Indicators of Compromise) into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Agent based logs collection from Windows and Linux machines](https://docs.microsoft.com/azure/azure-monitor/agents/data-sources-custom-logs)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

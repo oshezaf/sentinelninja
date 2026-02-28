@@ -8,18 +8,6 @@
 
 ---
 
-The [Digital Shadows](https://www.digitalshadows.com/) Solution provides ingestion of the incidents and alerts from Digital Shadows Searchlight into the Microsoft Sentinel using the REST API. 
-
-  **Underlying Microsoft Technologies used:** 
- 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
-
- b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Digital Shadows |
@@ -30,13 +18,29 @@ The [Digital Shadows](https://www.digitalshadows.com/) Solution provides ingesti
 | **Author** | Digital Shadows - support@digitalshadows.com |
 | **Solution Folder** | [Digital Shadows](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows) |
 
+The [Digital Shadows](https://www.digitalshadows.com/) Solution provides ingestion of the incidents and alerts from Digital Shadows Searchlight into the Microsoft Sentinel using the REST API. 
+
+  **Underlying Microsoft Technologies used:** 
+ 
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+
+ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶
+- [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -44,10 +48,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) 🔶 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) | Analytics, Workbooks |
+| [`DigitalShadows_CL`](../tables/digitalshadows-cl.md) � | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

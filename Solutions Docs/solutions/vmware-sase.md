@@ -10,6 +10,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | VMware by Broadcom |
+| **Support Tier** | Partner |
+| **Support Link** | [https://developer.vmware.com/](https://developer.vmware.com/) |
+| **Categories** | domains |
+| **Version** | 1.0.0 |
+| **Author** | VMware by Broadcom |
+| **First Published** | 2023-12-31 |
+| **Solution Folder** | [VMware SD-WAN and SASE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20SD-WAN%20and%20SASE) |
+
 The [VMware SASE](https://sase.vmware.com/) solution provides the capability to ingest telemetry and event data from your VMware SD-WAN fabric and Cloud Web Security service into Microsoft Sentinel through Syslog and the Orchestrator REST API.
   
   **Underlying Microsoft Technologies used:** 
@@ -28,18 +39,11 @@ This solution takes a dependency on the following technologies, and some of thes
 
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | VMware by Broadcom |
-| **Support Tier** | Partner |
-| **Support Link** | [https://developer.vmware.com/](https://developer.vmware.com/) |
-| **Categories** | domains |
-| **Version** | 1.0.0 |
-| **Author** | VMware by Broadcom |
-| **First Published** | 2023-12-31 |
-| **Solution Folder** | [VMware SD-WAN and SASE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20SD-WAN%20and%20SASE) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

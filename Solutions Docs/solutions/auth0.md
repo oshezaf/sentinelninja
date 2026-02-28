@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 3.1.1 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2022-08-18 |
+| **Solution Folder** | [Auth0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0) |
+
 The [Auth0 Access Management](https://auth0.com/access-management) solution for Microsoft Sentinel provides the capability to ingest [Auth0 log events](https://auth0.com/docs/api/management/v2/#!/Logs/get_logs) into your Microsoft Sentinel workspace.
   
   **Underlying Microsoft Technologies used:** 
@@ -20,27 +31,21 @@ The [Auth0 Access Management](https://auth0.com/access-management) solution for 
 
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 3.1.1 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2022-08-18 |
-| **Solution Folder** | [Auth0](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [Auth0 Access Management](../connectors/auth0.md) 🔶
+- [Auth0 Access Management](../connectors/auth0.md) �
 - [Auth0 Logs](../connectors/auth0connectorccpdefinition.md)
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -48,11 +53,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Auth0AM_CL`](../tables/auth0am-cl.md) 🔶 | [Auth0 Access Management](../connectors/auth0.md) | - |
+| [`Auth0AM_CL`](../tables/auth0am-cl.md) � | [Auth0 Access Management](../connectors/auth0.md) | - |
 | [`Auth0Logs_CL`](../tables/auth0logs-cl.md) | [Auth0 Logs](../connectors/auth0connectorccpdefinition.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

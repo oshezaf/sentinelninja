@@ -8,10 +8,6 @@
 
 ---
 
-The [Morphisec](https://www.morphisec.com/) solution for Microsoft Sentinel enables you to integrate vital insights from your security products with the Morphisec Data Connector for Microsoft Sentinel and expand your analytical capabilities with search and correlation, threat intelligence, and customized alerts. With a single, cross-product view, you can make real-time, data-backed decisions to protect your most important assets.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Morphisec |
@@ -22,6 +18,14 @@ The [Morphisec](https://www.morphisec.com/) solution for Microsoft Sentinel enab
 | **Author** | Morphisec |
 | **First Published** | 2022-05-05 |
 | **Solution Folder** | [Morphisec](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Morphisec) |
+
+The [Morphisec](https://www.morphisec.com/) solution for Microsoft Sentinel enables you to integrate vital insights from your security products with the Morphisec Data Connector for Microsoft Sentinel and expand your analytical capabilities with search and correlation, threat intelligence, and customized alerts. With a single, cross-product view, you can make real-time, data-backed decisions to protect your most important assets.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

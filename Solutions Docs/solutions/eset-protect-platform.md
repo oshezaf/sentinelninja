@@ -10,6 +10,18 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | ESET Enterprise Integrations |
+| **Support Tier** | Partner |
+| **Support Link** | [https://help.eset.com/eset_connect/en-US/integrations.html](https://help.eset.com/eset_connect/en-US/integrations.html) |
+| **Categories** | domains |
+| **Version** | 3.2.0 |
+| **Author** | ESET |
+| **First Published** | 2024-10-29 |
+| **Last Updated** | 2025-06-17 |
+| **Solution Folder** | [ESET Protect Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform) |
+
 ESET Protect Platform solution for Microsoft Sentinel ingests detections from [ESET Protect Platform](https://www.eset.com/int/business/protect-platform/) using the provided [Integration REST API](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform/Data%20Connectors). 
 
 **Underlying Microsoft Technologies used:**
@@ -22,19 +34,11 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | ESET Enterprise Integrations |
-| **Support Tier** | Partner |
-| **Support Link** | [https://help.eset.com/eset_connect/en-US/integrations.html](https://help.eset.com/eset_connect/en-US/integrations.html) |
-| **Categories** | domains |
-| **Version** | 3.2.0 |
-| **Author** | ESET |
-| **First Published** | 2024-10-29 |
-| **Last Updated** | 2025-06-17 |
-| **Solution Folder** | [ESET Protect Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Protect%20Platform) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

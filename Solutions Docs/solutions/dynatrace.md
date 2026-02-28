@@ -8,6 +8,18 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Dynatrace |
+| **Support Tier** | Partner |
+| **Support Link** | [https://www.dynatrace.com/services-support/](https://www.dynatrace.com/services-support/) |
+| **Categories** | domains |
+| **Version** | 3.0.2 |
+| **Author** | Dynatrace - microsoftalliances@dynatrace.com |
+| **First Published** | 2022-10-18 |
+| **Last Updated** | 2023-10-16 |
+| **Solution Folder** | [Dynatrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace) |
+
 - Review the solution [Release Notes](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/ReleaseNotes.md)
 
 Dynatrace is a leading observability platform that provides automatic and intelligent observability at scale for cloud-native and enterprise workloads; with Dynatrace Application Security, your DevSecOps teams can resolve security issues faster, accelerating software delivery.
@@ -22,19 +34,11 @@ Microsoft Sentinel data connectors poll Dynatrace for new [attacks, vulnerabilit
 
 [Learn More about Dynatrace](https://www.dynatrace.com/) | [Dynatrace Docs](https://docs.dynatrace.com/docs)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Dynatrace |
-| **Support Tier** | Partner |
-| **Support Link** | [https://www.dynatrace.com/services-support/](https://www.dynatrace.com/services-support/) |
-| **Categories** | domains |
-| **Version** | 3.0.2 |
-| **Author** | Dynatrace - microsoftalliances@dynatrace.com |
-| **First Published** | 2022-10-18 |
-| **Last Updated** | 2023-10-16 |
-| **Solution Folder** | [Dynatrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) � | ✗ | ✓ | ✗ |
 
 ---
 

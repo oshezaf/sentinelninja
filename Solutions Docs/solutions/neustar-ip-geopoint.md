@@ -8,10 +8,6 @@
 
 ---
 
-The [Neustar IP GeoPoint](https://www.home.neustar/fraud-solutions/ip-geopoint) Solution for Microsoft Sentinel contains playbook which allows easy IP address lookup to enrich Microsoft Sentinel's incident and helps auto remediation scenarios
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,6 +19,8 @@ The [Neustar IP GeoPoint](https://www.home.neustar/fraud-solutions/ip-geopoint) 
 | **First Published** | 2022-09-30 |
 | **Last Updated** | 2022-09-30 |
 | **Solution Folder** | [Neustar IP GeoPoint](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint) |
+
+The [Neustar IP GeoPoint](https://www.home.neustar/fraud-solutions/ip-geopoint) Solution for Microsoft Sentinel contains playbook which allows easy IP address lookup to enrich Microsoft Sentinel's incident and helps auto remediation scenarios
 
 ## Data Connectors
 

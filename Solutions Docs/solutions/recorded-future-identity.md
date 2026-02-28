@@ -8,6 +8,18 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Recorded Future Support Team |
+| **Support Tier** | Partner |
+| **Support Link** | [https://support.recordedfuture.com/](https://support.recordedfuture.com/) |
+| **Categories** | domains |
+| **Version** | 3.1.2 |
+| **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
+| **First Published** | 2022-09-06 |
+| **Last Updated** | 2025-04-02 |
+| **Solution Folder** | [Recorded Future Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity) |
+
 [Recorded Future](https://www.recordedfuture.com/) Identity Intelligence enables security and IT teams to detect identity compromises, for both employees and customers. To do this, Recorded Future automates the collection, analysis, and production of identity intelligence from a vast range of sources. Organizations can incorporate identity intelligence into automated workflows that regularly monitor for compromised credentials and take immediate action with applications such as Entra ID and Microsoft Sentinel.
 There are many ways organizations can utilize Recorded Future Identity Intelligence; the playbooks in this Solution are just a quick introduction to some of those ways. In particular, these playbooks include several actions that can be coordinated, or used separately. They include:
 1. searches for compromised workforce or external customer users
@@ -31,19 +43,11 @@ This solution depends on underlying Microsoft technologies. Some of these depend
 * [Logic apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing)
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Recorded Future Support Team |
-| **Support Tier** | Partner |
-| **Support Link** | [https://support.recordedfuture.com/](https://support.recordedfuture.com/) |
-| **Categories** | domains |
-| **Version** | 3.1.2 |
-| **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
-| **First Published** | 2022-09-06 |
-| **Last Updated** | 2025-04-02 |
-| **Solution Folder** | [Recorded Future Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity) |
+- [Data Connectors](#data-connectors)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

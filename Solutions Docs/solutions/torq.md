@@ -8,10 +8,6 @@
 
 ---
 
-[Torq](https://www.recordedfuture.com/) is the AI-Driven Hyperautomation Platform that helps security teams automate more faster
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Torq Support Team |
@@ -22,6 +18,8 @@
 | **Author** | Torq - support@torq.io |
 | **First Published** | 2024-12-24 |
 | **Solution Folder** | [Torq](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq) |
+
+[Torq](https://www.recordedfuture.com/) is the AI-Driven Hyperautomation Platform that helps security teams automate more faster
 
 ## Data Connectors
 

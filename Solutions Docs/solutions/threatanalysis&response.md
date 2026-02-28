@@ -8,10 +8,6 @@
 
 ---
 
-MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community. The MITRE ATT&CK Cloud Matrix provides tactics and techniques representing the MITRE ATT&CK® Matrix for Enterprise covering cloud-based techniques. The Matrix contains information for the following platforms: Microsoft Entra ID, Office 365, SaaS, IaaS. For more information, see the 💡 [MITRE ATT&CK: Cloud Matrix](https://attack.mitre.org/matrices/enterprise/cloud/)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,15 @@ MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and 
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [ThreatAnalysis&Response](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatAnalysis%26Response) |
+
+MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community. The MITRE ATT&CK Cloud Matrix provides tactics and techniques representing the MITRE ATT&CK® Matrix for Enterprise covering cloud-based techniques. The Matrix contains information for the following platforms: Microsoft Entra ID, Office 365, SaaS, IaaS. For more information, see the 💡 [MITRE ATT&CK: Cloud Matrix](https://attack.mitre.org/matrices/enterprise/cloud/)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

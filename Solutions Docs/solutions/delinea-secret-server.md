@@ -8,14 +8,6 @@
 
 ---
 
-The [Delinea](https://delinea.com/) Secret Server Microsoft Sentinel Data Solution enables delivery of Delinea Secret Server log messages to your Microsoft Sentinel Workspace.
-
- This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Delinea |
@@ -26,15 +18,28 @@ The [Delinea](https://delinea.com/) Secret Server Microsoft Sentinel Data Soluti
 | **Author** | Delinea |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [Delinea Secret Server](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+The [Delinea](https://delinea.com/) Secret Server Microsoft Sentinel Data Solution enables delivery of Delinea Secret Server log messages to your Microsoft Sentinel Workspace.
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -42,6 +47,9 @@ This solution provides **2 data connector(s)**:
 
 - [[Deprecated] Delinea Secret Server via AMA](../connectors/delineasecretserverama.md)
 - [[Deprecated] Delinea Secret Server via Legacy Agent](../connectors/delineasecretserver-cef.md)
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

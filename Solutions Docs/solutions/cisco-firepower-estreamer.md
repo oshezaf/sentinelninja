@@ -8,15 +8,6 @@
 
 ---
 
-The [Cisco Firepower](https://www.cisco.com/site/in/en/products/security/firewalls/index.html) eStreamer Solution for Microsoft Sentinel works with [Cisco Event Streamer](https://github.com/CiscoSecurity/fp-05-microsoft-sentinel-connector) (also known as eStreamer) and allows you to stream System intrusion, discovery and connection data from Firepower Management Center (FMC) or managed device to Microsoft Sentinel 
- eStreamer is a Client Server API designed for the Cisco Firepower NGFW Solution. The eStreamer client requests detailed event data on behalf of the SIEM or logging solution in the Common Event Format (CEF).
-
- This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
-
-**NOTE: **Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by Aug 31, 2024.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cisco |
@@ -27,19 +18,33 @@ The [Cisco Firepower](https://www.cisco.com/site/in/en/products/security/firewal
 | **Author** | Cisco |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [Cisco Firepower EStreamer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Additional Information
+The [Cisco Firepower](https://www.cisco.com/site/in/en/products/security/firewalls/index.html) eStreamer Solution for Microsoft Sentinel works with [Cisco Event Streamer](https://github.com/CiscoSecurity/fp-05-microsoft-sentinel-connector) (also known as eStreamer) and allows you to stream System intrusion, discovery and connection data from Firepower Management Center (FMC) or managed device to Microsoft Sentinel 
+ eStreamer is a Client Server API designed for the Cisco Firepower NGFW Solution. The eStreamer client requests detailed event data on behalf of the SIEM or logging solution in the Common Event Format (CEF).
+
+ This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE: **Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by Aug 31, 2024.
+
+**Additional Information**
 
 📖 **Setup Guide:** [Cisco firewalls connector](https://learn.microsoft.com/azure/sentinel/cisco-ftd-firewall) - Connect Cisco ASA and Firepower firewalls to Microsoft Sentinel
 
-## Dependencies
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -47,6 +52,9 @@ This solution provides **2 data connector(s)**:
 
 - [[Deprecated] Cisco Firepower eStreamer via Legacy Agent](../connectors/ciscofirepowerestreamer.md)
 - [[Deprecated] Cisco Firepower eStreamer via AMA](../connectors/ciscofirepowerestreamerama.md)
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

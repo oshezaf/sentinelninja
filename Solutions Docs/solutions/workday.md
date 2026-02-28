@@ -8,16 +8,6 @@
 
 ---
 
-The [Workday](https://www.workday.com/) solution for Microsoft Sentinel enables you to ingest User Activity Logs from Workday into Microsoft Sentinel using [Workday's API](https://community.workday.com/sites/default/files/file-hosting/restapi/index.html#privacy/v1/get-/activityLogging). 
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs:
-
-a. [Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector#connect-with-the-codeless-connector-platform).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,14 @@ a. [Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/s
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-02-15 |
 | **Solution Folder** | [Workday](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Workday) |
+
+The [Workday](https://www.workday.com/) solution for Microsoft Sentinel enables you to ingest User Activity Logs from Workday into Microsoft Sentinel using [Workday's API](https://community.workday.com/sites/default/files/file-hosting/restapi/index.html#privacy/v1/get-/activityLogging). 
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs:
+
+a. [Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector#connect-with-the-codeless-connector-platform).
 
 ## Data Connectors
 

@@ -8,16 +8,6 @@
 
 ---
 
-The [Anvilogic](https://www.anvilogic.com/) solution for Microsoft Sentinel enables you to ingest Anvilogic Alerts into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs:
-
-a. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Anvilogic |
@@ -28,6 +18,20 @@ a. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/
 | **Author** | Anvilogic |
 | **First Published** | 2025-06-20 |
 | **Solution Folder** | [Anvilogic](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic) |
+
+The [Anvilogic](https://www.anvilogic.com/) solution for Microsoft Sentinel enables you to ingest Anvilogic Alerts into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in Preview state or might result in additional ingestion or operational costs:
+
+a. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

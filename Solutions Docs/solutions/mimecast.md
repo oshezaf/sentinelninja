@@ -8,10 +8,6 @@
 
 ---
 
-An Azure app to enable Mimecast data to be viewed using analytical tables and charts which are brought into Azure.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Mimecast |
@@ -24,17 +20,25 @@ An Azure app to enable Mimecast data to be viewed using analytical tables and ch
 | **Last Updated** | 2024-09-10 |
 | **Solution Folder** | [Mimecast](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast) |
 
+An Azure app to enable Mimecast data to be viewed using analytical tables and charts which are brought into Azure.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **5 data connector(s)**:
 
 - [Mimecast Awareness Training](../connectors/mimecastatapi.md)
-- [Mimecast Audit](../connectors/mimecastauditapi.md) 🔶
+- [Mimecast Audit](../connectors/mimecastauditapi.md) �
 - [Mimecast Cloud Integrated](../connectors/mimecastciapi.md)
 - [Mimecast Secure Email Gateway](../connectors/mimecastsegapi.md)
-- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) 🔶
+- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 

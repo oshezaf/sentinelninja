@@ -8,14 +8,6 @@
 
 ---
 
-This custom data connector uses a Function App to pull MongoDB Atlas log files (MDBA) data from the MongoDB Atlas Administation API and uploads into the selected Log Analytics workspace via the Azure Log Ingestion API.
-
-**Note:** _There may be [known issues](https://aka.ms/sentinelsolutionsknownissues) pertaining to this Solution, please refer to them before installing._
-
-[Link to product website](https://www.mongodb.com/)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | MongoDB |
@@ -26,6 +18,18 @@ This custom data connector uses a Function App to pull MongoDB Atlas log files (
 | **Author** | steve.lord@improving.com |
 | **First Published** | 2025-08-22 |
 | **Solution Folder** | [MongoDBAtlas](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas) |
+
+This custom data connector uses a Function App to pull MongoDB Atlas log files (MDBA) data from the MongoDB Atlas Administation API and uploads into the selected Log Analytics workspace via the Azure Log Ingestion API.
+
+**Note:** _There may be [known issues](https://aka.ms/sentinelsolutionsknownissues) pertaining to this Solution, please refer to them before installing._
+
+[Link to product website](https://www.mongodb.com/)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

@@ -8,16 +8,6 @@
 
 ---
 
-The [Microsoft PowerBI](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) solution enables you to track user activities in your PowerBI environment. You can filter the audit data by date range, user, dashboard, report, dataset, and activity type.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Office Management API ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,20 @@ a. [Office Management API ](https://docs.microsoft.com/office/office-365-managem
 | **Author** | Microsoft |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Microsoft PowerBI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20PowerBI) |
+
+The [Microsoft PowerBI](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) solution enables you to track user activities in your PowerBI environment. You can filter the audit data by date range, user, dashboard, report, dataset, and activity type.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Office Management API ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

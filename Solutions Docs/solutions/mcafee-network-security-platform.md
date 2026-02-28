@@ -8,14 +8,6 @@
 
 ---
 
-The [McAfee Network Security Platform](https://www.trellix.com/en-us/products/intrusion-prevention-system.html) data connector provides the capability to ingest [McAfee Network Security Platform events](https://docs.trellix.com/bundle/network-security-platform-10.1.x-integration-guide-unmanaged/page/GUID-8C706BE9-6AC9-4641-8A53-8910B51207D8.html) into Microsoft Sentinel. Refer to [McAfee Network Security Platform](https://docs.trellix.com/bundle/network-security-platform-10.1.x-integration-guide-unmanaged/page/GUID-F7D281EC-1CC9-4962-A7A3-5A9D9584670E.html) for more information.
-
- This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. 
-
- **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -26,21 +18,37 @@ The [McAfee Network Security Platform](https://www.trellix.com/en-us/products/in
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-06-29 |
 | **Solution Folder** | [McAfee Network Security Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/McAfee%20Network%20Security%20Platform) |
-| **Dependencies** | [Syslog](syslog.md) |
+| **Pre-requisites** | [Syslog](syslog.md) |
 
-## Dependencies
+The [McAfee Network Security Platform](https://www.trellix.com/en-us/products/intrusion-prevention-system.html) data connector provides the capability to ingest [McAfee Network Security Platform events](https://docs.trellix.com/bundle/network-security-platform-10.1.x-integration-guide-unmanaged/page/GUID-8C706BE9-6AC9-4641-8A53-8910B51207D8.html) into Microsoft Sentinel. Refer to [McAfee Network Security Platform](https://docs.trellix.com/bundle/network-security-platform-10.1.x-integration-guide-unmanaged/page/GUID-F7D281EC-1CC9-4962-A7A3-5A9D9584670E.html) for more information.
+
+ This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. 
+
+ **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Syslog](syslog.md) | explicit | - |
+| Solution |
+|:---------|
+| [Syslog](syslog.md) |
 
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
 - [[Deprecated] McAfee Network Security Platform](../connectors/mcafeensp.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 

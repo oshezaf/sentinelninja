@@ -8,16 +8,6 @@
 
 ---
 
-The Google Cloud Platform DNS solution  provides the capability to ingest [Cloud DNS query logs](https://cloud.google.com/dns/docs/monitoring#using_logging) and [Cloud DNS audit logs](https://cloud.google.com/dns/docs/audit-logging) into Microsoft Sentinel using the [GCP Logging](https://cloud.google.com/logging/docs/api) API. Refer to GCP Logging [API documentation](https://cloud.google.com/logging/docs/api) for more information.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
-
- • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,20 +19,34 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2022-07-07 |
 | **Solution Folder** | [GoogleCloudPlatformDNS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformDNS) |
 
-## Additional Information
+The Google Cloud Platform DNS solution  provides the capability to ingest [Cloud DNS query logs](https://cloud.google.com/dns/docs/monitoring#using_logging) and [Cloud DNS audit logs](https://cloud.google.com/dns/docs/audit-logging) into Microsoft Sentinel using the [GCP Logging](https://cloud.google.com/logging/docs/api) API. Refer to GCP Logging [API documentation](https://cloud.google.com/logging/docs/api) for more information.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
+
+ • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+**Additional Information**
 
 📖 **Setup Guide:** [Google Cloud Platform connectors](https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform) - Connect GCP logs to Microsoft Sentinel
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) ⚠️ 🔶
+- [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) ⚠️ �
 - [Google Cloud Platform DNS (via Codeless Connector Framework)](../connectors/gcpdnslogsccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -51,10 +55,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`GCPDNS`](../tables/gcpdns.md) | [Google Cloud Platform DNS (via Codeless Connector Framework)](../connectors/gcpdnslogsccpdefinition.md) | Analytics, Hunting, Workbooks |
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) 🔶 | [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | Analytics, Hunting, Workbooks |
+| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) � | [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **23 content item(s)**:

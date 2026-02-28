@@ -8,14 +8,6 @@
 
 ---
 
-The Akamai Security Solution for Microsoft Sentinel enables ingestion of [Akamai Security Solutions](https://www.akamai.com/solutions/security) events using the Common Event Format (CEF) into Microsoft Sentinel for Security Monitoring. 
-
-This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
-
-**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -26,15 +18,28 @@ This solution is dependent on the Common Event Format solution containing the CE
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-03-23 |
 | **Solution Folder** | [Akamai Security Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Security%20Events) |
-| **Dependencies** | [Common Event Format](common-event-format.md) |
+| **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
-## Dependencies
+The Akamai Security Solution for Microsoft Sentinel enables ingestion of [Akamai Security Solutions](https://www.akamai.com/solutions/security) events using the Common Event Format (CEF) into Microsoft Sentinel for Security Monitoring. 
+
+This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.
+
+**NOTE:** Microsoft recommends installation of CEF via AMA Connector. The existing connectors are about to be deprecated by **Aug 31, 2024.**
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Common Event Format](common-event-format.md) | explicit | - |
+| Solution |
+|:---------|
+| [Common Event Format](common-event-format.md) |
 
 ## Data Connectors
 
@@ -42,6 +47,9 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 - [[Deprecated] Akamai Security Events via Legacy Agent](../connectors/akamaisecurityevents.md) ⚠️
 - [[Deprecated] Akamai Security Events via AMA](../connectors/akamaisecurityeventsama.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 

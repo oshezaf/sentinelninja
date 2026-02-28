@@ -8,10 +8,6 @@
 
 ---
 
-The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboard SOC Actions for their Analysts to follow that snap to the SOC Process Framework Workbook.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,15 @@ The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboa
 | **Author** | Rin Ure - rin.ure@microsoft.com |
 | **First Published** | 2022-04-08 |
 | **Solution Folder** | [SOC-Process-Framework](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework) |
+
+The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboard SOC Actions for their Analysts to follow that snap to the SOC Process Framework Workbook.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

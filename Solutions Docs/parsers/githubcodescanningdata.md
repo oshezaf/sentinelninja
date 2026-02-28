@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) � | ✓ | ✓ | ✓ |
 
 ---
 

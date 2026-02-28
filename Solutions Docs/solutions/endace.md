@@ -10,14 +10,6 @@
 
 ---
 
-The Endace (https://www.endace.com) solution for Microsoft Sentinel enables you to create Pivot-to-Vision URL links from alerts in your CEF logs.
-
- Pivot-to-Vision links take you directly from an alert to viewing the related packets of interest in EndaceVision, Endace's traffic analysis application. In EndaceVision, you can further analyze the incident and zoom in to inspect decoded, full packet data.
-
- The KQL in this example can be easily adapted to be used for other advanced features associated with threat hunting, such as in tickets, workbooks, and wherever KQL can be leveraged.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Endace |
@@ -28,7 +20,19 @@ The Endace (https://www.endace.com) solution for Microsoft Sentinel enables you 
 | **Author** | Endace - support@endace.com |
 | **First Published** | 2025-03-24 |
 | **Solution Folder** | [Endace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endace) |
-| **Dependencies** | endace-usa-limited.azure-sentinel-solution-commoneventformat |
+| **Pre-requisites** | endace-usa-limited.azure-sentinel-solution-commoneventformat |
+
+The Endace (https://www.endace.com) solution for Microsoft Sentinel enables you to create Pivot-to-Vision URL links from alerts in your CEF logs.
+
+ Pivot-to-Vision links take you directly from an alert to viewing the related packets of interest in EndaceVision, Endace's traffic analysis application. In EndaceVision, you can further analyze the incident and zoom in to inspect decoded, full packet data.
+
+ The KQL in this example can be easily adapted to be used for other advanced features associated with threat hunting, such as in tickets, workbooks, and wherever KQL can be leveraged.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

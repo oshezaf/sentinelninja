@@ -8,16 +8,6 @@
 
 ---
 
-The Microsoft 365 solution for Microsoft Sentinel enables you to ingest operational logs from Microsoft 365 (formerly, Office 365) to gain insights into user and admin activity across your collaboration platforms such as Teams, SharePoint and Exchange.
-  
-  **Underlying Microsoft Technologies used:**
-
-  This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -28,6 +18,20 @@ The Microsoft 365 solution for Microsoft Sentinel enables you to ingest operatio
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Microsoft 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365) |
+
+The Microsoft 365 solution for Microsoft Sentinel enables you to ingest operational logs from Microsoft 365 (formerly, Office 365) to gain insights into user and admin activity across your collaboration platforms such as Teams, SharePoint and Exchange.
+  
+  **Underlying Microsoft Technologies used:**
+
+  This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+  a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

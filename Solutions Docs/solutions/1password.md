@@ -8,16 +8,6 @@
 
 ---
 
-The [1Password](https://www.1password.com) solution for Microsoft Sentinel enables you to ingest sign-in attempts, item usage, and audit events from your 1Password Business account using the [1Password Events Reporting API](https://developer.1password.com/docs/events-api). This allows you to monitor and investigate events in 1Password in Microsoft Sentinel along with the other applications and services your organization uses.
-
-**Underlying Microsoft Technologies used:**
-
-This solution depends on the following technologies, and some of which may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or may incur additional ingestion or operational costs:
-
-a.  [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | 1Password |
@@ -28,6 +18,21 @@ a.  [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **Author** | Rogier Dijkman (SecureHats) |
 | **First Published** | 2023-12-01 |
 | **Solution Folder** | [1Password](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password) |
+
+The [1Password](https://www.1password.com) solution for Microsoft Sentinel enables you to ingest sign-in attempts, item usage, and audit events from your 1Password Business account using the [1Password Events Reporting API](https://developer.1password.com/docs/events-api). This allows you to monitor and investigate events in 1Password in Microsoft Sentinel along with the other applications and services your organization uses.
+
+**Underlying Microsoft Technologies used:**
+
+This solution depends on the following technologies, and some of which may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or may incur additional ingestion or operational costs:
+
+a.  [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 
@@ -45,7 +50,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | [1Password](../connectors/1password.md), [1Password (Serverless)](../connectors/1passwordccpdefinition.md), [1Password (Serverless)](../connectors/1password-serverless.md) | Analytics, Workbooks |
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | [1Password](../connectors/1password.md), [1Password (Serverless)](../connectors/1password-serverless.md), [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | Analytics, Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Workbooks |
 
 ## Content Items

@@ -8,12 +8,6 @@
 
 ---
 
-The SOC Handbook solution for Microsoft Sentinel provides a collection of resources that enable and empower SOC Analysts to get better visibility and understanding of point-in-time security posture of organizational resources.
-
- All content packaged in this solution is built and supported by the Microsoft Sentinel community. For any support, please create an [issue](https://github.com/Azure/Azure-Sentinel/issues) on the Microsoft Sentinel GitHub repository.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Community |
@@ -24,6 +18,16 @@ The SOC Handbook solution for Microsoft Sentinel provides a collection of resour
 | **Author** | Community |
 | **First Published** | 2022-11-30 |
 | **Solution Folder** | [SOC Handbook](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Handbook) |
+
+The SOC Handbook solution for Microsoft Sentinel provides a collection of resources that enable and empower SOC Analysts to get better visibility and understanding of point-in-time security posture of organizational resources.
+
+ All content packaged in this solution is built and supported by the Microsoft Sentinel community. For any support, please create an [issue](https://github.com/Azure/Azure-Sentinel/issues) on the Microsoft Sentinel GitHub repository.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

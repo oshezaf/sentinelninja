@@ -8,10 +8,6 @@
 
 ---
 
-The TacitRed CrowdStrike IOC Automation solution provides example playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and prepare indicators for ingestion into CrowdStrike.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Data443 Risk Mitigation, Inc. |
@@ -22,6 +18,14 @@ The TacitRed CrowdStrike IOC Automation solution provides example playbooks that
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-11-25 |
 | **Solution Folder** | [TacitRed-IOC-CrowdStrike](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-IOC-CrowdStrike) |
+
+The TacitRed CrowdStrike IOC Automation solution provides example playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and prepare indicators for ingestion into CrowdStrike.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

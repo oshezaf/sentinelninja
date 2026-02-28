@@ -17,7 +17,7 @@
 | **Used in Solutions** | [Barracuda WAF](../solutions/barracuda-waf.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
 | **Connector Definition Files** | [template_Barracuda.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20WAF/Data%20Connectors/template_Barracuda.json) |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 The Barracuda Web Application Firewall (WAF) connector allows you to easily connect your Barracuda logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization’s network and improves your security operation capabilities.
 
@@ -35,9 +35,9 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Barracuda_CL`](../tables/barracuda-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Barracuda_CL`](../tables/barracuda-cl.md) � |  | ? | ✓ | ? |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Barracuda"` | ✓ | ✓ | ✓ |
-| [`barracuda_CL`](../tables/barracuda-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`barracuda_CL`](../tables/barracuda-cl.md) � |  | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

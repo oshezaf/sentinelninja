@@ -8,18 +8,6 @@
 
 ---
 
-The [VMware Carbon Black Cloud](https://www.broadcom.com/products/carbon-black/threat-prevention/carbon-black-cloud) solution for Microsoft Sentinel allows ingesting Carbon Black [Audit](https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#audit-log-events), [Notification](https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#notifications) and [Event](https://developer.carbonblack.com/reference/carbon-black-cloud/platform/deprecated/data-forwarder-config-api/) logs into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft |
@@ -31,14 +19,30 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [VMware Carbon Black Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud) |
 
+The [VMware Carbon Black Cloud](https://www.broadcom.com/products/carbon-black/threat-prevention/carbon-black-cloud) solution for Microsoft Sentinel allows ingesting Carbon Black [Audit](https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#audit-log-events), [Notification](https://developer.carbonblack.com/reference/carbon-black-cloud/cb-defense/latest/rest-api/#notifications) and [Event](https://developer.carbonblack.com/reference/carbon-black-cloud/platform/deprecated/data-forwarder-config-api/) logs into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) 🔶
+- [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) �
 - [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md)
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -51,14 +55,14 @@ This solution uses **10 table(s)**:
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
-| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) 🔶 | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | - |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics, Workbooks |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) 🔶 | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics |
+| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) � | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | - |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) � | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics, Workbooks |
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) � | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 | [`CarbonBlack_Watchlist_CL`](../tables/carbonblack-watchlist-cl.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **6 content item(s)**:

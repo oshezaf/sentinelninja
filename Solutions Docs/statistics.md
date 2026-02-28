@@ -16,7 +16,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 - [Parsers](#parsers)
 - [ASIM Parsers](#asim-parsers)
 - [ASIM Products](#asim-products)
-- [Dependencies](#dependencies)
+- [Pre-requisites](#pre-requisites)
 
 ## Terminology
 
@@ -181,6 +181,39 @@ API-based connectors use one of two APIs to send data to the workspace:
 | [CCF Push](methods/ccf-push.md) | 11 | - | - | **11** |
 | **Total** | **47** | **144** | **4** | **195** |
 
+### Custom Log V1 (CLv1) �
+
+Connectors that use at least one Custom Log V1 table (identified by type-suffixed columns or `_CL` suffix with compatible collection method).
+
+| Metric | Count |
+|:-------|------:|
+| CLv1 Connectors | **197** |
+| Active | 152 |
+| Deprecated 🚫 | 33 |
+| Unpublished ⚠️ | 12 |
+
+**By Collection Method:**
+
+| Collection Method | CLv1 Connectors |
+|:-----------------|----------------:|
+| [Azure Function](methods/azure-function.md) | 86 |
+| [REST API](methods/rest-api.md) | 55 |
+| [MMA](methods/mma.md) | 18 |
+| [CCF](methods/ccf.md) | 16 |
+| [Azure Diagnostics](methods/azure-diagnostics.md) | 14 |
+| [CCF (Legacy)](methods/ccf-legacy.md) | 5 |
+| [AMA](methods/ama.md) | 3 |
+| **Total** | **197** |
+
+**By Ingestion API:**
+
+| Ingestion API | CLv1 Connectors |
+|:-------------|----------------:|
+| [Log Ingestion API](methods/log-ingestion-api.md) | 3 |
+| [HTTP Data Collector API](methods/http-data-collector-api.md) | 138 |
+| *(no API)* | 56 |
+| **Total** | **197** |
+
 ## Tables
 
 ### Overview
@@ -215,6 +248,21 @@ Tables with schema information, by schema source. A single table may have schema
 | DCR | 151 |
 | KQL validation | 837 |
 | **Total unique tables with schema** | **1780** |
+
+### Custom Log V1 (CLv1) �
+
+**515** of 2024 tables are Custom Log V1 tables, identified by type-suffixed columns or `_CL` suffix with compatible collection method.
+
+**By Table Category:**
+
+| Category | CLv1 Tables |
+|:---------|------------:|
+| Uncategorized | 493 |
+| Internal | 14 |
+| GCP | 5 |
+| Crowdstrike | 2 |
+| Various | 1 |
+| **Total** | **515** |
 
 ## Content
 
@@ -287,28 +335,28 @@ Tables with schema information, by schema source. A single table may have schema
 | DhcpEvent | 2 |
 | **Total** | **80** |
 
-## Dependencies
+## Pre-requisites
 
 ### Overview
 
 | Metric | Total | Explicit (required) | ASIM (optional) |
 |:-------|------:|--------------------:|----------------:|
-| Dependency records | **876** | 239 | 637 |
+| Dependency records | **816** | 239 | 577 |
 | Solutions with dependencies | **122** | 109 | 25 |
-| Unique dependency targets | **57** | 42 | 31 |
+| Unique dependency targets | **55** | 42 | 29 |
 
-### ASIM Dependencies by Schema
+### ASIM Pre-requisites by Schema
 
 | ASIM Schema | Solutions Using | Solutions Providing Data |
 |:------------|----------------:|------------------------:|
-| AuditEvent | 1 | 16 |
-| Dns | 7 | 15 |
-| FileEvent | 7 | 8 |
-| NetworkSession | 15 | 19 |
-| ProcessEvent | 5 | 8 |
-| RegistryEvent | 3 | 9 |
+| AuditEvent | 1 | 15 |
+| Dns | 7 | 13 |
+| FileEvent | 7 | 7 |
+| NetworkSession | 15 | 17 |
+| ProcessEvent | 5 | 7 |
+| RegistryEvent | 3 | 8 |
 | WebSession | 12 | 9 |
-| **Total unique** | **25** | **31** |
+| **Total unique** | **25** | **29** |
 
 ### Most Depended-Upon Solutions
 
@@ -319,7 +367,6 @@ Tables with schema information, by schema source. A single table may have schema
 | [CustomLogsAma](solutions/customlogsama.md) | 49 |
 | [Windows Forwarded Events](solutions/windows-forwarded-events.md) | 43 |
 | [CrowdStrike Falcon Endpoint Protection](solutions/crowdstrike-falcon-endpoint-protection.md) | 38 |
-| [MimecastTIRegional](solutions/mimecasttiregional.md) | 38 |
 | [SentinelOne](solutions/sentinelone.md) | 38 |
 | [Vectra AI Stream](solutions/vectra-ai-stream.md) | 37 |
 | [Windows Security Events](solutions/windows-security-events.md) | 36 |
@@ -329,6 +376,7 @@ Tables with schema information, by schema source. A single table may have schema
 | [Microsoft Exchange Security - Exchange On-Premises](solutions/microsoft-exchange-security-exchange-on-premises.md) | 30 |
 | [Cisco Meraki Events via REST API](solutions/cisco-meraki-events-via-rest-api.md) | 28 |
 | [Corelight](solutions/corelight.md) | 25 |
+| [CiscoASA](solutions/ciscoasa.md) | 21 |
 
 ---
 

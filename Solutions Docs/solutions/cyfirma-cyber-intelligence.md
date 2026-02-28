@@ -8,10 +8,6 @@
 
 ---
 
-The CYFIRMA Cyber Intelligence solution integrates with Microsoft Sentinel to provide actionable intelligence on IOCs, threat actors, malicious campaigns, and malware. This integration enables security teams to detect, analyze, and respond to emerging threats by correlating external threat data with internal telemetry. By ingesting enriched threat intelligence into Sentinel, organizations gain visibility into malicious activity, track threat actor tactics, and automate defense mechanisms to mitigate risks proactively.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | CYFIRMA |
@@ -22,6 +18,14 @@ The CYFIRMA Cyber Intelligence solution integrates with Microsoft Sentinel to pr
 | **Author** | Microsoft |
 | **First Published** | 2025-05-15 |
 | **Solution Folder** | [Cyfirma Cyber Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence) |
+
+The CYFIRMA Cyber Intelligence solution integrates with Microsoft Sentinel to provide actionable intelligence on IOCs, threat actors, malicious campaigns, and malware. This integration enables security teams to detect, analyze, and respond to emerging threats by correlating external threat data with internal telemetry. By ingesting enriched threat intelligence into Sentinel, organizations gain visibility into malicious activity, track threat actor tactics, and automate defense mechanisms to mitigate risks proactively.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

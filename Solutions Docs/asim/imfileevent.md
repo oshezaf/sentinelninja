@@ -27,24 +27,24 @@ This ASIM parser supports normalizing File activity logs from all supported sour
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Microsoft Azure Blob Storage | [_Im_FileEvent_AzureBlobStorage](asimfileeventazureblobstorage.md) |
-| Microsoft Azure File Storage | [_Im_FileEvent_AzureFileStorage](asimfileeventazurefilestorage.md) |
-| Microsoft Azure Queue Storage | [_Im_FileEvent_AzureQueueStorage](asimfileeventazurequeuestorage.md) |
-| Microsoft Azure Table Storage | [_Im_FileEvent_AzureTableStorage](asimfileeventazuretablestorage.md) |
-| Google Workspace | [_Im_FileEvent_GoogleWorkspace](asimfileeventgoogleworkspace.md) |
-| Microsoft Sysmon for Linux | [_Im_FileEvent_LinuxSysmonFileCreated](asimfileeventlinuxsysmonfilecreated.md) |
-| Microsoft Sysmon for Linux | [_Im_FileEvent_LinuxSysmonFileDeleted](asimfileeventlinuxsysmonfiledeleted.md) |
-| Microsoft 365 Defender for EndPoint | [_Im_FileEvent_Microsoft365D](asimfileeventmicrosoft365d.md) |
-| Microsoft Windows Events | [_Im_FileEvent_MicrosoftSecurityEvents](asimfileeventmicrosoftsecurityevents.md) |
-| Microsoft SharePoint | [_Im_FileEvent_MicrosoftSharePoint](asimfileeventmicrosoftsharepoint.md) |
-| Windows Sysmon | [_Im_FileEvent_MicrosoftSysmon](asimfileeventmicrosoftsysmon.md) |
-| Windows Sysmon | [_Im_FileEvent_MicrosoftSysmonWindowsEvent](asimfileeventmicrosoftsysmonwindowsevent.md) |
-| Microsoft Windows Events | [_Im_FileEvent_MicrosoftWindowsEvents](asimfileeventmicrosoftwindowsevents.md) |
-| Native | [_Im_FileEvent_Native](asimfileeventnative.md) |
-| SentinelOne | [_Im_FileEvent_SentinelOne](asimfileeventsentinelone.md) |
-| VMware Carbon Black Cloud | [_Im_FileEvent_VMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Microsoft Azure Blob Storage | [_Im_FileEvent_AzureBlobStorage](asimfileeventazureblobstorage.md) | [Azure Storage](../solutions/azure-storage.md) |
+| Microsoft Azure File Storage | [_Im_FileEvent_AzureFileStorage](asimfileeventazurefilestorage.md) | [Azure Storage](../solutions/azure-storage.md) |
+| Microsoft Azure Queue Storage | [_Im_FileEvent_AzureQueueStorage](asimfileeventazurequeuestorage.md) | [Azure Storage](../solutions/azure-storage.md) |
+| Microsoft Azure Table Storage | [_Im_FileEvent_AzureTableStorage](asimfileeventazuretablestorage.md) | [Azure Storage](../solutions/azure-storage.md) |
+| Google Workspace | [_Im_FileEvent_GoogleWorkspace](asimfileeventgoogleworkspace.md) |  |
+| Microsoft Sysmon for Linux | [_Im_FileEvent_LinuxSysmonFileCreated](asimfileeventlinuxsysmonfilecreated.md) | [Syslog](../solutions/syslog.md) |
+| Microsoft Sysmon for Linux | [_Im_FileEvent_LinuxSysmonFileDeleted](asimfileeventlinuxsysmonfiledeleted.md) | [Syslog](../solutions/syslog.md) |
+| Microsoft 365 Defender for EndPoint | [_Im_FileEvent_Microsoft365D](asimfileeventmicrosoft365d.md) |  |
+| Microsoft Windows Events | [_Im_FileEvent_MicrosoftSecurityEvents](asimfileeventmicrosoftsecurityevents.md) | [Windows Security Events](../solutions/windows-security-events.md) |
+| Microsoft SharePoint | [_Im_FileEvent_MicrosoftSharePoint](asimfileeventmicrosoftsharepoint.md) |  |
+| Windows Sysmon | [_Im_FileEvent_MicrosoftSysmon](asimfileeventmicrosoftsysmon.md) |  |
+| Windows Sysmon | [_Im_FileEvent_MicrosoftSysmonWindowsEvent](asimfileeventmicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Microsoft Windows Events | [_Im_FileEvent_MicrosoftWindowsEvents](asimfileeventmicrosoftwindowsevents.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Native | [_Im_FileEvent_Native](asimfileeventnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| SentinelOne | [_Im_FileEvent_SentinelOne](asimfileeventsentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+| VMware Carbon Black Cloud | [_Im_FileEvent_VMwareCarbonBlackCloud](asimfileeventvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 
 ## Parameters
 

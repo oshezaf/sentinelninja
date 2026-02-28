@@ -8,18 +8,6 @@
 
 ---
 
-The [Zero Networks Segment](https://zeronetworks.com/product) solution for Microsoft Sentinel allows monitoring Zero Networks Segment Audit activity. Audit log data is ingested in Microsoft Sentinel using REST API.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
-
- a. [Azure Monitor HTTP Data Collector API ](https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
- b. [Azure Functions](https://azure.microsoft.com/products/functions/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Zero Networks |
@@ -31,6 +19,22 @@ This solution takes a dependency on the following technologies, and some of thes
 | **First Published** | 2022-06-06 |
 | **Last Updated** | 2025-09-17 |
 | **Solution Folder** | [ZeroNetworks](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks) |
+
+The [Zero Networks Segment](https://zeronetworks.com/product) solution for Microsoft Sentinel allows monitoring Zero Networks Segment Audit activity. Audit log data is ingested in Microsoft Sentinel using REST API.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
+
+ a. [Azure Monitor HTTP Data Collector API ](https://learn.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+ b. [Azure Functions](https://azure.microsoft.com/products/functions/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
@@ -45,10 +49,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) | Analytics, Hunting, Workbooks |
-| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) 🔶 | - | Analytics, Hunting, Workbooks |
+| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) � | - | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

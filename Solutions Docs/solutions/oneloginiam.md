@@ -8,16 +8,6 @@
 
 ---
 
-The [OneLogin](https://www.onelogin.com/) solution for Microsoft Sentinel provides the capability to ingest common OneLogin IAM Platform events into Microsoft Sentinel.
-  
-  **Underlying Microsoft Technologies used:** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
- • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -29,16 +19,30 @@ The [OneLogin](https://www.onelogin.com/) solution for Microsoft Sentinel provid
 | **First Published** | 2022-08-18 |
 | **Solution Folder** | [OneLoginIAM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneLoginIAM) |
 
+The [OneLogin](https://www.onelogin.com/) solution for Microsoft Sentinel provides the capability to ingest common OneLogin IAM Platform events into Microsoft Sentinel.
+  
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ • [Microsoft Sentinel Codeless Connector Framework](https://aka.ms/Sentinel-CCP_Platform)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) ⚠️ 🔶
-- [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md) 🔶
+- [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) ⚠️ �
+- [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md) �
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,12 +50,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) 🔶 | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
-| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) 🔶 | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
-| [`OneLogin_CL`](../tables/onelogin-cl.md) 🔶 | [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
+| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) � | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
+| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) � | [OneLogin IAM Platform (via Codeless Connector Framework)](../connectors/oneloginiamlogsccpdefinition.md), [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
+| [`OneLogin_CL`](../tables/onelogin-cl.md) � | [[DEPRECATED] OneLogin IAM Platform](../connectors/onelogin.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

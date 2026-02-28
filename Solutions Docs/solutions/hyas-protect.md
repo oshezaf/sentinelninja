@@ -8,10 +8,6 @@
 
 ---
 
-Built on the underpinning technology of HYAS Insight threat intelligence, HYAS Protect is a protective DNS solution that combines authoritative knowledge of attacker infrastructure and unrivaled domain-based intelligence to proactively enforce security and block the command and control (C2) communication used by malware, ransomware, phishing, and other forms of cyber attacks.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | HYAS |
@@ -23,13 +19,21 @@ Built on the underpinning technology of HYAS Insight threat intelligence, HYAS P
 | **First Published** | 2023-09-26 |
 | **Solution Folder** | [HYAS Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS%20Protect) |
 
+Built on the underpinning technology of HYAS Insight threat intelligence, HYAS Protect is a protective DNS solution that combines authoritative knowledge of attacker infrastructure and unrivaled domain-based intelligence to proactively enforce security and block the command and control (C2) communication used by malware, ransomware, phishing, and other forms of cyber attacks.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [HYAS Protect](../connectors/hyasprotect.md) 🔶
+- [HYAS Protect](../connectors/hyasprotect.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`HYASProtectDnsSecurityLogs_CL`](../tables/hyasprotectdnssecuritylogs-cl.md) 🔶 | [HYAS Protect](../connectors/hyasprotect.md) | - |
+| [`HYASProtectDnsSecurityLogs_CL`](../tables/hyasprotectdnssecuritylogs-cl.md) � | [HYAS Protect](../connectors/hyasprotect.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

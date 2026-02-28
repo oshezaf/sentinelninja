@@ -8,14 +8,6 @@
 
 ---
 
-The [Citrix ADC](https://www.citrix.com/products/citrix-adc/) (formerly NetScaler) enables you to ingest Citrix ADC logs into Microsoft Sentinel. Refer the [Citrix ADC log collection guide](https://support.citrix.com/article/CTX227560) for more details.
-
- This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog solution will be installed as part of this solution installation.
-
- **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -26,21 +18,37 @@ The [Citrix ADC](https://www.citrix.com/products/citrix-adc/) (formerly NetScale
 | **Author** | Microsoft-support@microsoft.com |
 | **First Published** | 2022-06-02 |
 | **Solution Folder** | [Citrix ADC](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC) |
-| **Dependencies** | [Syslog](syslog.md) |
+| **Pre-requisites** | [Syslog](syslog.md) |
 
-## Dependencies
+The [Citrix ADC](https://www.citrix.com/products/citrix-adc/) (formerly NetScaler) enables you to ingest Citrix ADC logs into Microsoft Sentinel. Refer the [Citrix ADC log collection guide](https://support.citrix.com/article/CTX227560) for more details.
+
+ This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog solution will be installed as part of this solution installation.
+
+ **NOTE**: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on **Aug 31, 2024.** Using MMA and AMA on same machine can cause log duplication and extra ingestion cost [more details](https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate).
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **1 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Syslog](syslog.md) | explicit | - |
+| Solution |
+|:---------|
+| [Syslog](syslog.md) |
 
 ## Data Connectors
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
 - [[Deprecated] Citrix ADC (former NetScaler)](../connectors/citrixadc.md) ⚠️
+
+Connectors from dependency solutions:
+
 - [Syslog via Legacy Agent](../connectors/syslog.md) *(dependency on [Syslog](syslog.md))*
 - [Syslog via AMA](../connectors/syslogama.md) *(dependency on [Syslog](syslog.md))*
 

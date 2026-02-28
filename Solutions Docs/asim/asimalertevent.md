@@ -27,10 +27,10 @@ This ASIM parser supports normalizing Alert logs from all supported sources to t
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Microsoft Defender XDR | [_ASim_AlertEvent_MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) |
-| SentinelOne | [_ASim_AlertEvent_SentinelOneSingularity](asimalerteventsentinelonesingularity.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Microsoft Defender XDR | [_ASim_AlertEvent_MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) |  |
+| SentinelOne | [_ASim_AlertEvent_SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | [SentinelOne](../solutions/sentinelone.md) |
 
 ## Source Tables
 

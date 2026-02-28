@@ -8,16 +8,6 @@
 
 ---
 
-The [Sonrai Security](https://sonraisecurity.com/) solution provides the capability to ingest Sonrai tickets into Microsoft Sentinel through the REST API.
- 
- **Underlying Microsoft Technologies used:** 
- 
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
- 
- 1. [Codeless Connector Platform (CCP) (used in GitHub Enterprise Audit Log data connector)](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Sonrai |
@@ -28,13 +18,27 @@ The [Sonrai Security](https://sonraisecurity.com/) solution provides the capabil
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [SonraiSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity) |
 
+The [Sonrai Security](https://sonraisecurity.com/) solution provides the capability to ingest Sonrai tickets into Microsoft Sentinel through the REST API.
+ 
+ **Underlying Microsoft Technologies used:** 
+ 
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+ 
+ 1. [Codeless Connector Platform (CCP) (used in GitHub Enterprise Audit Log data connector)](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Sonrai Data Connector](../connectors/sonraidataconnector.md) 🔶
+- [Sonrai Data Connector](../connectors/sonraidataconnector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,10 +46,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) 🔶 | [Sonrai Data Connector](../connectors/sonraidataconnector.md) | Analytics, Workbooks |
+| [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) � | [Sonrai Data Connector](../connectors/sonraidataconnector.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **10 content item(s)**:

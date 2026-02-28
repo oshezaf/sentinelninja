@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Cisco Systems |
+| **Support Tier** | Partner |
+| **Support Link** | [https://duo.com/support](https://duo.com/support) |
+| **Categories** | domains |
+| **Version** | 3.1.0 |
+| **Author** | CiscoDuoSecurity - support@duosecurity.com |
+| **First Published** | 2022-01-07 |
+| **Solution Folder** | [CiscoDuoSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity) |
+
 The [Cisco Duo Security](https://duo.com/) solution allows you to ingest [authentication logs](https://duo.com/docs/adminapi#authentication-logs), [activity logs](https://duo.com/docs/adminapi#activity-logs), [administrator logs](https://duo.com/docs/adminapi#administrator-logs), [telephony logs](https://duo.com/docs/adminapi#telephony-logs), [offline enrolment logs](https://duo.com/docs/adminapi#offline-enrollment-logs) and [Trust Monitor events](https://duo.com/docs/adminapi#trust-monitor) into Microsoft Sentinel using the Cisco Duo Admin API. Refer to [API documentation](https://duo.com/docs/adminapi) for more information.
   
   **Underlying Microsoft Technologies used:** 
@@ -22,26 +33,19 @@ The [Cisco Duo Security](https://duo.com/) solution allows you to ingest [authen
 
 
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Cisco Systems |
-| **Support Tier** | Partner |
-| **Support Link** | [https://duo.com/support](https://duo.com/support) |
-| **Categories** | domains |
-| **Version** | 3.1.0 |
-| **Author** | CiscoDuoSecurity - support@duosecurity.com |
-| **First Published** | 2022-01-07 |
-| **Solution Folder** | [CiscoDuoSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoDuoSecurity) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶
+- [Cisco Duo Security](../connectors/ciscoduosecurity.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +53,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) 🔶 | [Cisco Duo Security](../connectors/ciscoduosecurity.md) | Analytics, Hunting, Workbooks |
+| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) � | [Cisco Duo Security](../connectors/ciscoduosecurity.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

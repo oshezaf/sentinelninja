@@ -10,10 +10,6 @@
 
 ---
 
-This Solution enables Microsoft Sentinel users to harness the power of their SIEM to assist in meeting DORA requirements. This Solution comes with pre-defined dashboards, visualizations, and reports, providing users with immediate insights in their DORA environment.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -24,6 +20,14 @@ This Solution enables Microsoft Sentinel users to harness the power of their SIE
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-10-08 |
 | **Solution Folder** | [DORA Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DORA%20Compliance) |
+
+This Solution enables Microsoft Sentinel users to harness the power of their SIEM to assist in meeting DORA requirements. This Solution comes with pre-defined dashboards, visualizations, and reports, providing users with immediate insights in their DORA environment.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

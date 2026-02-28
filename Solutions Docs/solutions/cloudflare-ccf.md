@@ -8,16 +8,6 @@
 
 ---
 
-The [Cloudflare](https://www.cloudflare.com/) solution provides the capability to ingest [Cloudflare logs](https://developers.cloudflare.com/logs/) into Microsoft Sentinel using the Codeless Connector Framework (CCF) and Azure Blob Storage. Refer to [Cloudflare documentation](https://developers.cloudflare.com/logs/about/) for more information.
-
-**Underlying Microsoft Technologies used:**
-
-  a. [Codeless Connector Framework](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
-
-  b. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) (for reference, legacy support)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cloudflare |
@@ -28,6 +18,20 @@ The [Cloudflare](https://www.cloudflare.com/) solution provides the capability t
 | **Author** | Cloudflare - support@cloudflare.com |
 | **First Published** | 2025-09-30 |
 | **Solution Folder** | [Cloudflare CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%20CCF) |
+
+The [Cloudflare](https://www.cloudflare.com/) solution provides the capability to ingest [Cloudflare logs](https://developers.cloudflare.com/logs/) into Microsoft Sentinel using the Codeless Connector Framework (CCF) and Azure Blob Storage. Refer to [Cloudflare documentation](https://developers.cloudflare.com/logs/about/) for more information.
+
+**Underlying Microsoft Technologies used:**
+
+  a. [Codeless Connector Framework](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
+
+  b. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) (for reference, legacy support)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
@@ -42,10 +46,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md) | Analytics, Hunting, Workbooks |
-| [`Cloudflare_CL`](../tables/cloudflare-cl.md) 🔶 | - | Analytics, Hunting, Workbooks |
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) � | - | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

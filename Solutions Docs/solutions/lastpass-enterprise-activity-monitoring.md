@@ -8,16 +8,6 @@
 
 ---
 
-[Lastpass Enterprise Activity Monitoring ](https://www.lastpass.com/en/products/business) is a cloud password manager used by organizations to securely save and share passwords.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
-
- a. [Codeless Connector Platform/Native Sentinel Polling ](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | The Collective Consulting |
@@ -30,13 +20,27 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Last Updated** | 2022-01-12 |
 | **Solution Folder** | [LastPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/LastPass) |
 
+[Lastpass Enterprise Activity Monitoring ](https://www.lastpass.com/en/products/business) is a cloud password manager used by organizations to securely save and share passwords.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs
+
+ a. [Codeless Connector Platform/Native Sentinel Polling ](https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) 🔶
+- [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -44,12 +48,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) 🔶 | [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) | Analytics, Hunting, Workbooks |
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) � | [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) | Analytics, Hunting, Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting, Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **10 content item(s)**:

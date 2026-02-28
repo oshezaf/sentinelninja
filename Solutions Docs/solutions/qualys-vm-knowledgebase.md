@@ -8,10 +8,6 @@
 
 ---
 
-The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management/) KB solution for Microsoft Sentinel enables you to ingest Qualys VM KB logs into Microsoft Sentinel.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -23,13 +19,21 @@ The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-
 | **First Published** | 2022-05-17 |
 | **Solution Folder** | [Qualys VM Knowledgebase](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase) |
 
+The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-management/) KB solution for Microsoft Sentinel enables you to ingest Qualys VM KB logs into Microsoft Sentinel.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Qualys VM KnowledgeBase](../connectors/qualyskb.md) 🔶
+- [Qualys VM KnowledgeBase](../connectors/qualyskb.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`QualysKB_CL`](../tables/qualyskb-cl.md) 🔶 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) | - |
+| [`QualysKB_CL`](../tables/qualyskb-cl.md) � | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

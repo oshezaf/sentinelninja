@@ -8,6 +8,18 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Lookout |
+| **Support Tier** | Partner |
+| **Support Link** | [https://www.lookout.com/support](https://www.lookout.com/support) |
+| **Categories** | domains |
+| **Version** | 3.0.1 |
+| **Author** | Lookout |
+| **First Published** | 2021-10-18 |
+| **Last Updated** | 2025-12-18 |
+| **Solution Folder** | [Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
+
 The [Lookout](https://lookout.com) solution provides the capability to ingest [Lookout events](https://www.lookout.com/products/mobile-endpoint-security) into Microsoft Sentinel through the Mobile Risk API. It can get events which helps to examine potential security risks and more. Refer to [API documentation](https://www.lookout.com/products/mobile-endpoint-security) for more information.
 
 **Underlying Microsoft Technologies used:**
@@ -22,28 +34,21 @@ b. [Microsoft Sentinel Codeless Connector Platform](https://aka.ms/Sentinel-CCP_
 
 <p><span style='color:red; font-weight:bold;'>Important</span>: While the updated connector(s) can coexist with their legacy versions, running them together will result in duplicated data ingestion. You can disable the older versions of these connectors to avoid duplication of data.</p>
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Lookout |
-| **Support Tier** | Partner |
-| **Support Link** | [https://www.lookout.com/support](https://www.lookout.com/support) |
-| **Categories** | domains |
-| **Version** | 3.0.1 |
-| **Author** | Lookout |
-| **First Published** | 2021-10-18 |
-| **Last Updated** | 2025-12-18 |
-| **Solution Folder** | [Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [[DEPRECATED] Lookout](../connectors/lookoutapi.md) 🔶
+- [[DEPRECATED] Lookout](../connectors/lookoutapi.md) �
 - [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md)
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -52,10 +57,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Analytics, Hunting, Workbooks |
-| [`Lookout_CL`](../tables/lookout-cl.md) 🔶 | [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | Analytics |
+| [`Lookout_CL`](../tables/lookout-cl.md) � | [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | Analytics |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

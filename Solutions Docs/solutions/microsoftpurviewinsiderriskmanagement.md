@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2021-10-20 |
+| **Solution Folder** | [MicrosoftPurviewInsiderRiskManagement](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement) |
+
 This solution enables insider risk management teams to investigate risk-based behavior across 25+ Microsoft products. This solution is a better-together story between Microsoft Sentinel and Microsoft Purview Insider Risk Management. The solution includes the Insider Risk Management Workbook, (5) Hunting Queries, (1) Data Connector, (5) Analytics Rules, (1) Playbook automation and the Microsoft Purview Insider Risk Management connector. While only Microsoft Sentinel is required to get started, the solution is enhanced with numerous Microsoft offerings, including, but not limited to:
 
 - [Microsoft Purview Insider Risk Management](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-solution-overview?view=o365-worldwide)
@@ -27,18 +38,12 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 
 [Learn more about Microsoft Sentinel](https://aka.ms/azuresentinel) | [Learn more about Solutions](https://aka.ms/azuresentinelsolutionsdoc)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 3.0.5 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2021-10-20 |
-| **Solution Folder** | [MicrosoftPurviewInsiderRiskManagement](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 
@@ -57,7 +62,7 @@ This solution uses **14 table(s)**:
 | [`AuditLogs`](../tables/auditlogs.md) | - | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | - | Hunting, Workbooks |
 | [`EmailEvents`](../tables/emailevents.md) | - | Workbooks |
-| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 | - | Analytics, Hunting |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) � | - | Analytics, Hunting |
 | [`LAQueryLogs`](../tables/laquerylogs.md) | - | Workbooks |
 | [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
@@ -81,7 +86,7 @@ The following **6 table(s)** are used internally by this solution's content item
 | [`Watchlist`](../tables/watchlist.md) | - | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

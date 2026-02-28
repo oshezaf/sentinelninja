@@ -8,10 +8,6 @@
 
 ---
 
-The Google Cloud Platform Load Balancer solution for Microsoft Sentinel allows you to monitor your GCP Load Balancer in Microsoft Sentinel. This solution includes a data connector and enables ingestion of the GCP Load Balancer Logs into Microsoft Sentinel. The logs ingested also enable monitoring GCP Cloud Armour/GCP WAF logs.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,8 @@ The Google Cloud Platform Load Balancer solution for Microsoft Sentinel allows y
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-02-12 |
 | **Solution Folder** | [Google Cloud Platform Load Balancer Logs](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Load%20Balancer%20Logs) |
+
+The Google Cloud Platform Load Balancer solution for Microsoft Sentinel allows you to monitor your GCP Load Balancer in Microsoft Sentinel. This solution includes a data connector and enables ingestion of the GCP Load Balancer Logs into Microsoft Sentinel. The logs ingested also enable monitoring GCP Cloud Armour/GCP WAF logs.
 
 ## Data Connectors
 

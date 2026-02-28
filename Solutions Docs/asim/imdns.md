@@ -27,23 +27,23 @@ This ASIM parser supports filtering and normalizing DNS activity logs from all s
 
 This union parser includes parsers for the following products:
 
-| Product | Source Parser |
-|:--------|:--------------|
-| Azure Firewall | [_Im_Dns_AzureFirewall](asimdnsazurefirewall.md) |
-| Cisco Umbrella | [_Im_Dns_CiscoUmbrella](asimdnsciscoumbrella.md) |
-| Corelight Zeek | [_Im_Dns_CorelightZeek](asimdnscorelightzeek.md) |
-| Fortinet FortiGate | [_Im_Dns_FortinetFortiGate](asimdnsfortinetfortigate.md) |
-| GCP Cloud DNS | [_Im_Dns_Gcp](asimdnsgcp.md) |
-| Infoblox BloxOne | [_Im_Dns_InfobloxBloxOne](asimdnsinfobloxbloxone.md) |
-| Infoblox NIOS | [_Im_Dns_InfobloxNIOS](asimdnsinfobloxnios.md) |
-| MS DNS Events | [_Im_Dns_MicrosoftNXlog](asimdnsmicrosoftnxlog.md) |
-| MS DNS Events | [_Im_Dns_MicrosoftOMS](asimdnsmicrosoftoms.md) |
-| Microsoft Windows Events Sysmon | [_Im_Dns_MicrosoftSysmon](asimdnsmicrosoftsysmon.md) |
-| Microsoft Windows Events Sysmon | [_Im_Dns_MicrosoftSysmonWindowsEvent](asimdnsmicrosoftsysmonwindowsevent.md) |
-| Native | [_Im_Dns_Native](asimdnsnative.md) |
-| SentinelOne | [_Im_Dns_SentinelOne](asimdnssentinelone.md) |
-| Vectra AI Streams | [_Im_Dns_VectraAI](asimdnsvectraai.md) |
-| Zscaler ZIA DNS | [_Im_Dns_ZscalerZIA](asimdnszscalerzia.md) |
+| Product | Source Parser | Solutions |
+|:--------|:--------------|:----------|
+| Azure Firewall | [_Im_Dns_AzureFirewall](asimdnsazurefirewall.md) | [Azure Firewall](../solutions/azure-firewall.md) |
+| Cisco Umbrella | [_Im_Dns_CiscoUmbrella](asimdnsciscoumbrella.md) | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
+| Corelight Zeek | [_Im_Dns_CorelightZeek](asimdnscorelightzeek.md) | [Corelight](../solutions/corelight.md) |
+| Fortinet FortiGate | [_Im_Dns_FortinetFortiGate](asimdnsfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| GCP Cloud DNS | [_Im_Dns_Gcp](asimdnsgcp.md) |  |
+| Infoblox BloxOne | [_Im_Dns_InfobloxBloxOne](asimdnsinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Infoblox NIOS | [_Im_Dns_InfobloxNIOS](asimdnsinfobloxnios.md) | [Syslog](../solutions/syslog.md) |
+| MS DNS Events | [_Im_Dns_MicrosoftNXlog](asimdnsmicrosoftnxlog.md) | [NXLogDNSLogs](../solutions/nxlogdnslogs.md) |
+| MS DNS Events | [_Im_Dns_MicrosoftOMS](asimdnsmicrosoftoms.md) | [Windows Server DNS](../solutions/windows-server-dns.md) |
+| Microsoft Windows Events Sysmon | [_Im_Dns_MicrosoftSysmon](asimdnsmicrosoftsysmon.md) |  |
+| Microsoft Windows Events Sysmon | [_Im_Dns_MicrosoftSysmonWindowsEvent](asimdnsmicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
+| Native | [_Im_Dns_Native](asimdnsnative.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| SentinelOne | [_Im_Dns_SentinelOne](asimdnssentinelone.md) | [SentinelOne](../solutions/sentinelone.md) |
+| Vectra AI Streams | [_Im_Dns_VectraAI](asimdnsvectraai.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[Vectra AI Stream](../solutions/vectra-ai-stream.md) |
+| Zscaler ZIA DNS | [_Im_Dns_ZscalerZIA](asimdnszscalerzia.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 
 ## Parameters
 

@@ -8,10 +8,6 @@
 
 ---
 
-The [VirusTotal](https://www.virustotal.com/gui/) solution for Microsoft Sentinel contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from VirusTotal. Enriched information can help drive focused investigations in Security Operations.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,14 @@ The [VirusTotal](https://www.virustotal.com/gui/) solution for Microsoft Sentine
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-31 |
 | **Solution Folder** | [VirusTotal](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirusTotal) |
+
+The [VirusTotal](https://www.virustotal.com/gui/) solution for Microsoft Sentinel contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from VirusTotal. Enriched information can help drive focused investigations in Security Operations.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

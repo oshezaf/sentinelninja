@@ -8,10 +8,6 @@
 
 ---
 
-The Slashnext SIEM logic app retrieves incidents associated with a customer from various sources such as SMS, mobile devices, web extensions, and emails. These incidents are then presented and recorded within the Log Analytic Workspace.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | SlashNext |
@@ -23,6 +19,14 @@ The Slashnext SIEM logic app retrieves incidents associated with a customer from
 | **First Published** | 2023-05-26 |
 | **Last Updated** | 2023-06-16 |
 | **Solution Folder** | [SlashNext SIEM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext%20SIEM) |
+
+The Slashnext SIEM logic app retrieves incidents associated with a customer from various sources such as SMS, mobile devices, web extensions, and emails. These incidents are then presented and recorded within the Log Analytic Workspace.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
+| **Categories** | domains |
+| **Version** | 3.0.7 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2024-11-26 |
+| **Solution Folder** | [SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne) |
+
 The [SentinelOne](https://www.sentinelone.com/) solution provides ability to bring SentinelOne events to your Microsoft Sentinel Workspace to inform and to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more. 
  
  
@@ -26,27 +37,20 @@ The [SentinelOne](https://www.sentinelone.com/) solution provides ability to bri
  
  b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
-## Solution Information
+## Contents
 
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
-| **Version** | 3.0.7 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2024-11-26 |
-| **Solution Folder** | [SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne) |
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
 This solution provides **2 data connector(s)**:
 
-- [SentinelOne](../connectors/sentinelone.md) 🔶
-- [SentinelOne](../connectors/sentineloneccp.md) 🔶
+- [SentinelOne](../connectors/sentinelone.md) �
+- [SentinelOne](../connectors/sentineloneccp.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -54,15 +58,15 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) � | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) � | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) � | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) � | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) � | [SentinelOne](../connectors/sentineloneccp.md), [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) � | [SentinelOne](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **23 content item(s)**:

@@ -16,7 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CiscoUmbrella_API_FunctionApp_elasticpremium.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Data%20Connectors/CiscoUmbrella_API_FunctionApp_elasticpremium.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
 
 The Cisco Umbrella data connector provides the capability to ingest [Cisco Umbrella](https://docs.umbrella.com/) events stored in Amazon S3 into Microsoft Sentinel using the Amazon S3 REST API. Refer to [Cisco Umbrella log management documentation](https://docs.umbrella.com/deployment-umbrella/docs/log-management) for more information.
 
@@ -30,18 +30,18 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Cisco_Umbrella_audit_CL`](../tables/cisco-umbrella-audit-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Cisco_Umbrella_cloudfirewall_CL`](../tables/cisco-umbrella-cloudfirewall-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Cisco_Umbrella_dlp_CL`](../tables/cisco-umbrella-dlp-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Cisco_Umbrella_fileevent_CL`](../tables/cisco-umbrella-fileevent-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Cisco_Umbrella_firewall_CL`](../tables/cisco-umbrella-firewall-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Cisco_Umbrella_intrusion_CL`](../tables/cisco-umbrella-intrusion-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Cisco_Umbrella_ip_CL`](../tables/cisco-umbrella-ip-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Cisco_Umbrella_proxy_CL`](../tables/cisco-umbrella-proxy-cl.md) 🔶 | ✓ | ✓ | ✓ |
-| [`Cisco_Umbrella_ravpnlogs_CL`](../tables/cisco-umbrella-ravpnlogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Cisco_Umbrella_ztaflow_CL`](../tables/cisco-umbrella-ztaflow-cl.md) 🔶 | ✗ | ✓ | ✗ |
-| [`Cisco_Umbrella_ztna_CL`](../tables/cisco-umbrella-ztna-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_audit_CL`](../tables/cisco-umbrella-audit-cl.md) � | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_cloudfirewall_CL`](../tables/cisco-umbrella-cloudfirewall-cl.md) � | ✓ | ✓ | ✓ |
+| [`Cisco_Umbrella_dlp_CL`](../tables/cisco-umbrella-dlp-cl.md) � | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) � | ✓ | ✓ | ✓ |
+| [`Cisco_Umbrella_fileevent_CL`](../tables/cisco-umbrella-fileevent-cl.md) � | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_firewall_CL`](../tables/cisco-umbrella-firewall-cl.md) � | ✓ | ✓ | ✓ |
+| [`Cisco_Umbrella_intrusion_CL`](../tables/cisco-umbrella-intrusion-cl.md) � | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_ip_CL`](../tables/cisco-umbrella-ip-cl.md) � | ✓ | ✓ | ✓ |
+| [`Cisco_Umbrella_proxy_CL`](../tables/cisco-umbrella-proxy-cl.md) � | ✓ | ✓ | ✓ |
+| [`Cisco_Umbrella_ravpnlogs_CL`](../tables/cisco-umbrella-ravpnlogs-cl.md) � | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_ztaflow_CL`](../tables/cisco-umbrella-ztaflow-cl.md) � | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_ztna_CL`](../tables/cisco-umbrella-ztna-cl.md) � | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

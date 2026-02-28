@@ -8,10 +8,6 @@
 
 ---
 
-The CYFIRMA Compromised Accounts solution integrates with Microsoft Sentinel to provide timely intelligence on user accounts exposed through data breaches, stealer logs, and dark web forums. It helps organizations identify compromised credentials linked to corporate domains, reducing the risk of account takeover and unauthorized access. Enriched account breach data is ingested into Sentinel, enabling security teams to correlate with internal activity, trigger alerts, and automate remediation actions such as password resets and access revocation.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | CYFIRMA |
@@ -22,6 +18,14 @@ The CYFIRMA Compromised Accounts solution integrates with Microsoft Sentinel to 
 | **Author** | Microsoft |
 | **First Published** | 2025-05-15 |
 | **Solution Folder** | [Cyfirma Compromised Accounts](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Compromised%20Accounts) |
+
+The CYFIRMA Compromised Accounts solution integrates with Microsoft Sentinel to provide timely intelligence on user accounts exposed through data breaches, stealer logs, and dark web forums. It helps organizations identify compromised credentials linked to corporate domains, reducing the risk of account takeover and unauthorized access. Enriched account breach data is ingested into Sentinel, enabling security teams to correlate with internal activity, trigger alerts, and automate remediation actions such as password resets and access revocation.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

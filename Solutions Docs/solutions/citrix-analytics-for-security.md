@@ -8,16 +8,6 @@
 
 ---
 
-[Citrix Analytics (Security)](https://www.citrix.com/solutions/analytics/) Solution for Microsoft Sentinel helps you to export data analyzed for risky events from Citrix Analytics (Security) into Microsoft Sentinel environment. You can create custom dashboards, analyze data from other sources along with that from Citrix Analytics (Security) and create custom workflows using Logic Apps to monitor and mitigate security events. 
-For more details about this solution refer to https://docs.citrix.com/en-us/security-analytics/siem-integration/azure-sentinel-integration.html 
-
-**Underlying Microsoft Technologies used:**
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
- a.[Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Citrix Systems |
@@ -29,13 +19,27 @@ For more details about this solution refer to https://docs.citrix.com/en-us/secu
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [Citrix Analytics for Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20Analytics%20for%20Security) |
 
+[Citrix Analytics (Security)](https://www.citrix.com/solutions/analytics/) Solution for Microsoft Sentinel helps you to export data analyzed for risky events from Citrix Analytics (Security) into Microsoft Sentinel environment. You can create custom dashboards, analyze data from other sources along with that from Citrix Analytics (Security) and create custom workflows using Logic Apps to monitor and mitigate security events. 
+For more details about this solution refer to https://docs.citrix.com/en-us/security-analytics/siem-integration/azure-sentinel-integration.html 
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+ a.[Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) 🔶
+- [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,13 +47,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md) 🔶 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
-| [`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md) 🔶 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
-| [`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md) 🔶 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
-| [`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) 🔶 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
+| [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md) � | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
+| [`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md) � | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
+| [`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md) � | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
+| [`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) � | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

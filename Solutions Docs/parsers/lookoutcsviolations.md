@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) 🔶 | ? | ✓ | ? |
+| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) � | ? | ✓ | ? |
 
 ---
 

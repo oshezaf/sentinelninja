@@ -8,10 +8,6 @@
 
 ---
 
-This solution allows affiliated organizations to share cyber threat intelligence with the Dutch National Cyber Security Center (NCSC-NL) through the National Detection Network (NDN). This solution contains a playbook that can be used to get indicators or sightings from Microsoft Sentinel and convert them into STIX bundles to be posted to the NDN TAXII 2.1 server as a collaborating party. This solution is only available to organizations that participate in the NDN community, for which credentials can be requested through the MijnNCSC serviceportaal. If you like to know more about connecting and collaborating with the NCSC by exchanging threat intelligence, please consult [Aansluiten bij het NDN ](https://www.ncsc.nl/aansluiten-en-samenwerken/aansluiting-bij-het-ndn). For more information, please contact info@ncsc.nl or consult [Aansluiten en samenwerken ](https://www.ncsc.nl/aansluiten-en-samenwerken).
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,14 @@ This solution allows affiliated organizations to share cyber threat intelligence
 | **Author** | NCSC-NL - info@ncsc.nl |
 | **First Published** | 2025-05-19 |
 | **Solution Folder** | [NCSC-NL NDN Cyber Threat Intelligence Sharing](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing) |
+
+This solution allows affiliated organizations to share cyber threat intelligence with the Dutch National Cyber Security Center (NCSC-NL) through the National Detection Network (NDN). This solution contains a playbook that can be used to get indicators or sightings from Microsoft Sentinel and convert them into STIX bundles to be posted to the NDN TAXII 2.1 server as a collaborating party. This solution is only available to organizations that participate in the NDN community, for which credentials can be requested through the MijnNCSC serviceportaal. If you like to know more about connecting and collaborating with the NCSC by exchanging threat intelligence, please consult [Aansluiten bij het NDN ](https://www.ncsc.nl/aansluiten-en-samenwerken/aansluiting-bij-het-ndn). For more information, please contact info@ncsc.nl or consult [Aansluiten en samenwerken ](https://www.ncsc.nl/aansluiten-en-samenwerken).
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

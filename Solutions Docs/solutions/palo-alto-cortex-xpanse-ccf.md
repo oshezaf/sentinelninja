@@ -8,10 +8,6 @@
 
 ---
 
-The [Palo Alto Cortex Xpanse ](https://www.paloaltonetworks.com/cortex/cortex-xpanse) data connector allows ingesting logs from the Palo Alto Cortex Xpanse API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Framework. It uses the Palo Alto Cortex Xpanse API to fetch alerts logs and it supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parses the received security data into a custom table, thus resulting in better performance.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -22,6 +18,8 @@ The [Palo Alto Cortex Xpanse ](https://www.paloaltonetworks.com/cortex/cortex-xp
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-12-07 |
 | **Solution Folder** | [Palo Alto Cortex Xpanse CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF) |
+
+The [Palo Alto Cortex Xpanse ](https://www.paloaltonetworks.com/cortex/cortex-xpanse) data connector allows ingesting logs from the Palo Alto Cortex Xpanse API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Framework. It uses the Palo Alto Cortex Xpanse API to fetch alerts logs and it supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parses the received security data into a custom table, thus resulting in better performance.
 
 ## Data Connectors
 

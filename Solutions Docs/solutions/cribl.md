@@ -8,10 +8,6 @@
 
 ---
 
-Cribl is a vendor neutral, purpose-built processing engine for data security and IT operations focused on centralized parsing and processing of event data.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Cribl |
@@ -24,13 +20,21 @@ Cribl is a vendor neutral, purpose-built processing engine for data security and
 | **Last Updated** | 2024-09-05 |
 | **Solution Folder** | [Cribl](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cribl) |
 
+Cribl is a vendor neutral, purpose-built processing engine for data security and IT operations focused on centralized parsing and processing of event data.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Cribl](../connectors/cribl.md) 🔶
+- [Cribl](../connectors/cribl.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -38,13 +42,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CriblAccess_CL`](../tables/criblaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
-| [`CriblAudit_CL`](../tables/criblaudit-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
-| [`CriblInternal_CL`](../tables/criblinternal-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
-| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
+| [`CriblAccess_CL`](../tables/criblaccess-cl.md) � | [Cribl](../connectors/cribl.md) | - |
+| [`CriblAudit_CL`](../tables/criblaudit-cl.md) � | [Cribl](../connectors/cribl.md) | - |
+| [`CriblInternal_CL`](../tables/criblinternal-cl.md) � | [Cribl](../connectors/cribl.md) | - |
+| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) � | [Cribl](../connectors/cribl.md) | - |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

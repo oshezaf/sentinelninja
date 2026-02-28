@@ -8,10 +8,6 @@
 
 ---
 
-[Valence Security](https://valencesecurity.com/) SaaS security platform: Valence is the first SaaS security company to combine SSPM and advanced remediation with business user collaboration to find and fix SaaS security risks. SaaS applications are becoming decentrally managed and more complex, which is introducing misconfiguration, identity, data, and SaaS-to-SaaS integration risks. The Valence SaaS Security Platform provides visibility and remediation capabilities for business-critical SaaS applications such as Microsoft 365, Google Workspace, Salesforce, GitHub and Slack. With Valence, security teams can empower their business to securely adopt SaaS.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Valence Security |
@@ -23,13 +19,21 @@
 | **First Published** | 2023-11-20 |
 | **Solution Folder** | [Valence Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Valence%20Security) |
 
+[Valence Security](https://valencesecurity.com/) SaaS security platform: Valence is the first SaaS security company to combine SSPM and advanced remediation with business user collaboration to find and fix SaaS security risks. SaaS applications are becoming decentrally managed and more complex, which is introducing misconfiguration, identity, data, and SaaS-to-SaaS integration risks. The Valence SaaS Security Platform provides visibility and remediation capabilities for business-critical SaaS applications such as Microsoft 365, Google Workspace, Salesforce, GitHub and Slack. With Valence, security teams can empower their business to securely adopt SaaS.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [SaaS Security](../connectors/valencesecurity.md) 🔶
+- [SaaS Security](../connectors/valencesecurity.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ValenceAlert_CL`](../tables/valencealert-cl.md) 🔶 | [SaaS Security](../connectors/valencesecurity.md) | Analytics, Workbooks |
+| [`ValenceAlert_CL`](../tables/valencealert-cl.md) � | [SaaS Security](../connectors/valencesecurity.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

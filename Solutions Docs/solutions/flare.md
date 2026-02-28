@@ -8,16 +8,6 @@
 
 ---
 
-The Flare Systems [Firework](https://flare.io/platform/) solution allows you to receive data and intelligence from Firework on Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs. 
-
- a .[Azure Monitor HTTP Data Collector API ](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Flare |
@@ -28,6 +18,20 @@ This solution takes a dependency on the following technologies, and some of thes
 | **Author** | Flare - support@flare.io |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [Flare](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Flare) |
+
+The Flare Systems [Firework](https://flare.io/platform/) solution allows you to receive data and intelligence from Firework on Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs. 
+
+ a .[Azure Monitor HTTP Data Collector API ](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

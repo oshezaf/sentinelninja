@@ -8,10 +8,6 @@
 
 ---
 
-The [Jamf Protect](https://www.jamf.com/solutions/threat-prevention-remediation/) solution for Microsoft Sentinel enables you to ingest [Jamf Protect events](https://docs.jamf.com/jamf-protect/documentation/Data_Forwarding_to_a_Third_Party_Storage_Solution.html#task-4227) forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Jamf Software, LLC |
@@ -23,6 +19,14 @@ The [Jamf Protect](https://www.jamf.com/solutions/threat-prevention-remediation/
 | **First Published** | 2022-10-10 |
 | **Last Updated** | 2025-09-02 |
 | **Solution Folder** | [Jamf Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect) |
+
+The [Jamf Protect](https://www.jamf.com/solutions/threat-prevention-remediation/) solution for Microsoft Sentinel enables you to ingest [Jamf Protect events](https://docs.jamf.com/jamf-protect/documentation/Data_Forwarding_to_a_Third_Party_Storage_Solution.html#task-4227) forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 
@@ -36,13 +40,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) 🔶 | - | Analytics |
+| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) � | - | Analytics |
 | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
 | [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Workbooks |
 | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

@@ -8,10 +8,6 @@
 
 ---
 
-NordPass for Microsoft Sentinel enables you to automatically transfer Activity Log data from NordPass to Microsoft Sentinel and get real-time insights such as item activity, all login attempts, and security notifications. This allows you to stay informed by setting any needed alerts by your organization to monitor these security events.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | NordPass |
@@ -22,6 +18,15 @@ NordPass for Microsoft Sentinel enables you to automatically transfer Activity L
 | **Author** | Nord Security Inc. |
 | **First Published** | 2025-04-22 |
 | **Solution Folder** | [NordPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass) |
+
+NordPass for Microsoft Sentinel enables you to automatically transfer Activity Log data from NordPass to Microsoft Sentinel and get real-time insights such as item activity, all login attempts, and security notifications. This allows you to stay informed by setting any needed alerts by your organization to monitor these security events.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

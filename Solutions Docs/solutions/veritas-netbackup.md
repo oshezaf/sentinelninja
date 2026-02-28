@@ -8,10 +8,6 @@
 
 ---
 
-The [Veritas](https://www.veritas.com/) solution for Microsoft Sentinel allows you to analyze NetBackup audit events. The solution uses analytics rules to automatically generate incidents when an abnormal user activity is detected in NetBackup.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Veritas Technologies LLC |
@@ -22,6 +18,15 @@ The [Veritas](https://www.veritas.com/) solution for Microsoft Sentinel allows y
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-09-25 |
 | **Solution Folder** | [Veritas NetBackup](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veritas%20NetBackup) |
+
+The [Veritas](https://www.veritas.com/) solution for Microsoft Sentinel allows you to analyze NetBackup audit events. The solution uses analytics rules to automatically generate incidents when an abnormal user activity is detected in NetBackup.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

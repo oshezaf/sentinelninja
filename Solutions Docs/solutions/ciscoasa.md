@@ -8,6 +8,17 @@
 
 ---
 
+| Attribute | Value |
+|:------------------------|:------|
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
+| **Categories** | domains |
+| **Version** | 3.0.5 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2022-05-23 |
+| **Solution Folder** | [CiscoASA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA) |
+
 The [Cisco ASA](https://www.cisco.com/c/en_in/products/security/adaptive-security-appliance-asa-software/index.html) solution for Microsoft Sentinel enables you to ingest [Cisco ASA logs](https://www.cisco.com/c/en/us/td/docs/security/asa/syslog/b_syslog/messages-listed-by-severity-level.html) into Microsoft Sentinel. 
 
 **Cisco ASA/FTD via AMA** - This data connector helps in ingesting Cisco ASA logs into your Log Analytics Workspace using the new Azure Monitor Agent. Learn more about ingesting using the new Azure Monitor Agent [here](https://learn.microsoft.com/azure/sentinel/connect-cef-ama). 
@@ -20,22 +31,15 @@ This solution takes a dependency on the following technologies, and some of thes
 
  a. [Agent-based log collection (Syslog)](https://docs.microsoft.com/azure/sentinel/connect-syslog)
 
-## Solution Information
-
-| Attribute | Value |
-|:------------------------|:------|
-| **Publisher** | Microsoft Corporation |
-| **Support Tier** | Microsoft |
-| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
-| **Version** | 3.0.5 |
-| **Author** | Microsoft - support@microsoft.com |
-| **First Published** | 2022-05-23 |
-| **Solution Folder** | [CiscoASA](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA) |
-
-## Additional Information
+**Additional Information**
 
 📖 **Setup Guide:** [Cisco firewalls connector](https://learn.microsoft.com/azure/sentinel/cisco-ftd-firewall) - Connect Cisco ASA and Firepower firewalls to Microsoft Sentinel
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
 
 ## Data Connectors
 

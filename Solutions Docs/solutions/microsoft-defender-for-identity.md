@@ -8,17 +8,6 @@
 
 ---
 
-The [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is) solution for Microsoft Sentinel allows you to ingest [security alerts](https://docs.microsoft.com/defender-for-identity/suspicious-activity-guide) reported in the Microsoft Defender for Identity platform to get better insights into the identity posture of your organization’s Active Directory environment.
-
-
-  **Underlying Microsoft Technologies used:** 
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
- a.  [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -30,13 +19,22 @@ The [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-id
 | **First Published** | 2022-04-20 |
 | **Solution Folder** | [Microsoft Defender For Identity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20For%20Identity) |
 
+The [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is) solution for Microsoft Sentinel allows you to ingest [security alerts](https://docs.microsoft.com/defender-for-identity/suspicious-activity-guide) reported in the Microsoft Defender for Identity platform to get better insights into the identity posture of your organization’s Active Directory environment.
+
+
+  **Underlying Microsoft Technologies used:** 
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+ a.  [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
 - [Microsoft Defender for Identity](../connectors/azureadvancedthreatprotection.md)
 
-### Internal Tables
+## Internal Tables
 
 The following **1 table(s)** are used internally by this solution's content items:
 

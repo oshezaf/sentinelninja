@@ -8,10 +8,6 @@
 
 ---
 
-IPQualityScore (IPQS) provides enterprise grade fraud prevention, risk analysis, and threat detection directly in Azure. Analyze IP addresses, phone numbers, email addresses, and URLs or domains to identify sophisticated bad actors and high risk behavior.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | IPQS Plugins Team |
@@ -22,6 +18,8 @@ IPQualityScore (IPQS) provides enterprise grade fraud prevention, risk analysis,
 | **Author** | IPQualityScore (IPQS) - integrations@ipqualityscore.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [IPQualityScore](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPQualityScore) |
+
+IPQualityScore (IPQS) provides enterprise grade fraud prevention, risk analysis, and threat detection directly in Azure. Analyze IP addresses, phone numbers, email addresses, and URLs or domains to identify sophisticated bad actors and high risk behavior.
 
 ## Data Connectors
 

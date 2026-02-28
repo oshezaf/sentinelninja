@@ -8,10 +8,6 @@
 
 ---
 
-The [SOC Prime Audit Logs](https://tdm.socprime.com/login) data connector allows ingesting logs from the SOC Prime Platform API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Platform. It uses the SOC Prime Platform API to fetch SOC Prime platform audit logs and it supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parses the received security data into a custom table, thus resulting in better performance.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | SOC Prime |
@@ -22,6 +18,8 @@ The [SOC Prime Audit Logs](https://tdm.socprime.com/login) data connector allows
 | **Author** | SOC Prime - support@socprime.com |
 | **First Published** | 2025-09-25 |
 | **Solution Folder** | [SOC Prime CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC%20Prime%20CCF) |
+
+The [SOC Prime Audit Logs](https://tdm.socprime.com/login) data connector allows ingesting logs from the SOC Prime Platform API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Platform. It uses the SOC Prime Platform API to fetch SOC Prime platform audit logs and it supports DCR-based [ingestion time transformations](https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview) that parses the received security data into a custom table, thus resulting in better performance.
 
 ## Data Connectors
 

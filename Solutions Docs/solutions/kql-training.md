@@ -8,12 +8,6 @@
 
 ---
 
-The KQL Training solution for Microsoft Sentinel contains resources that can help up – skill on understanding the fundamentals and using KQL in advanced scenarios like authoring effective and optimized queries used in Microsoft Sentinel Analytics, Hunting Queries, Workbooks, etc. 
-
-All content packaged in this solution is built and supported by the Microsoft Sentinel community. For any support, please create an [issue](https://github.com/Azure/Azure-Sentinel/issues) on the Microsoft Sentinel GitHub repository.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Community |
@@ -24,6 +18,10 @@ All content packaged in this solution is built and supported by the Microsoft Se
 | **Author** | Community |
 | **First Published** | 2022-11-30 |
 | **Solution Folder** | [KQL Training](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/KQL%20Training) |
+
+The KQL Training solution for Microsoft Sentinel contains resources that can help up – skill on understanding the fundamentals and using KQL in advanced scenarios like authoring effective and optimized queries used in Microsoft Sentinel Analytics, Hunting Queries, Workbooks, etc. 
+
+All content packaged in this solution is built and supported by the Microsoft Sentinel community. For any support, please create an [issue](https://github.com/Azure/Azure-Sentinel/issues) on the Microsoft Sentinel GitHub repository.
 
 ## Data Connectors
 

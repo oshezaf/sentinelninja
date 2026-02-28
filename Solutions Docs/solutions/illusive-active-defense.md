@@ -8,13 +8,17 @@
 
 ---
 
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
 | **Solution Folder** | [Illusive Active Defense](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense) |
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Content Items](#content-items)
+- [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
 

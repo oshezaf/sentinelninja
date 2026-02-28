@@ -44,19 +44,19 @@ This content item queries data from the following tables:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) |  | ✓ | ✗ | ✓ |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) |  | ✓ | ✗ | ✓ |
-| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`ApacheHTTPServer_CL`](../tables/apachehttpserver-cl.md) � |  | ✓ | ✓ | ✓ |
 | [`AsimParsersData`](../tables/asimparsersdata.md) |  | ? | ? | ? |
 | [`Audits_Data_CL`](../tables/audits-data-cl.md) |  | ✓ | ✓ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) |  | ✗ | ✗ | ✗ |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 |  | ✗ | ✗ | ✗ |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
-| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) � |  | ✗ | ✗ | ✗ |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) � |  | ? | ✓ | ? |
+| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) � |  | ✗ | ✓ | ✗ |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) � |  | ✗ | ✓ | ✗ |
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) � |  | ✗ | ✓ | ✗ |
+| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) � |  | ✓ | ✓ | ✓ |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ✓ |
-| [`Communication_Data_CL`](../tables/communication-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Corelight_CL`](../tables/corelight-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Communication_Data_CL`](../tables/communication-data-cl.md) � |  | ? | ✓ | ? |
+| [`Corelight_CL`](../tables/corelight-cl.md) � |  | ? | ✓ | ? |
 | [`Cymru_Scout_Account_Usage_Data_CL`](../tables/cymru-scout-account-usage-data-cl.md) |  | ✗ | ✓ | ✗ |
 | [`Cymru_Scout_Domain_Data_CL`](../tables/cymru-scout-domain-data-cl.md) |  | ✗ | ✓ | ✗ |
 | [`Cymru_Scout_IP_Data_Details_CL`](../tables/cymru-scout-ip-data-details-cl.md) |  | ✗ | ✓ | ✗ |
@@ -69,49 +69,49 @@ This content item queries data from the following tables:
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ | ✓ |
-| [`Domain_Data_CL`](../tables/domain-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Domain_Data_CL`](../tables/domain-data-cl.md) � |  | ? | ✓ | ? |
 | [`Event`](../tables/event.md) |  | ✓ | ✗ | ✗ |
-| [`Fingerprints_Data_CL`](../tables/fingerprints-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`GWorkspace_ReportsAPI_login_CL`](../tables/gworkspace-reportsapi-login-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Identity_Data_CL`](../tables/identity-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Fingerprints_Data_CL`](../tables/fingerprints-data-cl.md) � |  | ? | ✓ | ? |
+| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) � |  | ? | ✓ | ? |
+| [`GWorkspace_ReportsAPI_login_CL`](../tables/gworkspace-reportsapi-login-cl.md) � |  | ? | ✓ | ? |
+| [`Identity_Data_CL`](../tables/identity-data-cl.md) � |  | ? | ✓ | ? |
 | [`Illumio_Auditable_Events_CL`](../tables/illumio-auditable-events-cl.md) |  | ✓ | ✓ | ✓ |
 | [`Illumio_Flow_Events_CL`](../tables/illumio-flow-events-cl.md) |  | ✓ | ✓ | ✓ |
 | [`NTANetAnalytics`](../tables/ntanetanalytics.md) |  | ✓ | ✗ | ? |
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) � |  | ? | ✓ | ? |
 | [`OfficeActivity`](../tables/officeactivity.md) |  | ✓ | ✗ | ✓ |
 | [`OktaV2_CL`](../tables/oktav2-cl.md) |  | ? | ✓ | ? |
-| [`Okta_CL`](../tables/okta-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
-| [`Open_Ports_Data_CL`](../tables/open-ports-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`PDNS_Data_CL`](../tables/pdns-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`PostgreSQL_CL`](../tables/postgresql-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
-| [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Okta_CL`](../tables/okta-cl.md) � |  | ✗ | ✓ | ✗ |
+| [`Open_Ports_Data_CL`](../tables/open-ports-data-cl.md) � |  | ? | ✓ | ? |
+| [`PDNS_Data_CL`](../tables/pdns-data-cl.md) � |  | ? | ✓ | ? |
+| [`PostgreSQL_CL`](../tables/postgresql-cl.md) � |  | ✓ | ✓ | ✓ |
+| [`Proto_By_IP_Data_CL`](../tables/proto-by-ip-data-cl.md) � |  | ? | ✓ | ? |
+| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) � |  | ? | ✓ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityIoTRawEvent`](../tables/securityiotrawevent.md) |  | ✓ | ✗ | ? |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) � |  | ✓ | ✓ | ✓ |
 | [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
-| [`Summary_Details_CL`](../tables/summary-details-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Summary_Details_Top_Fingerprints_Data_CL`](../tables/summary-details-top-fingerprints-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Summary_Details_Top_Open_Ports_Data_CL`](../tables/summary-details-top-open-ports-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Summary_Details_Top_Pdns_Data_CL`](../tables/summary-details-top-pdns-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`SquidProxy_CL`](../tables/squidproxy-cl.md) � |  | ✓ | ✓ | ✓ |
+| [`Summary_Details_CL`](../tables/summary-details-cl.md) � |  | ? | ✓ | ? |
+| [`Summary_Details_Top_Certs_Data_CL`](../tables/summary-details-top-certs-data-cl.md) � |  | ? | ✓ | ? |
+| [`Summary_Details_Top_Fingerprints_Data_CL`](../tables/summary-details-top-fingerprints-data-cl.md) � |  | ? | ✓ | ? |
+| [`Summary_Details_Top_Open_Ports_Data_CL`](../tables/summary-details-top-open-ports-data-cl.md) � |  | ? | ✓ | ? |
+| [`Summary_Details_Top_Pdns_Data_CL`](../tables/summary-details-top-pdns-data-cl.md) � |  | ? | ✓ | ? |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ✓ |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✗ | ✗ |
-| [`Top_Asns_By_IP_Data_CL`](../tables/top-asns-by-ip-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Top_Country_Codes_By_IP_Data_CL`](../tables/top-country-codes-by-ip-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Top_Services_By_IP_Data_CL`](../tables/top-services-by-ip-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`Top_Tags_By_IP_Data_CL`](../tables/top-tags-by-ip-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Top_Asns_By_IP_Data_CL`](../tables/top-asns-by-ip-data-cl.md) � |  | ? | ✓ | ? |
+| [`Top_Country_Codes_By_IP_Data_CL`](../tables/top-country-codes-by-ip-data-cl.md) � |  | ? | ✓ | ? |
+| [`Top_Services_By_IP_Data_CL`](../tables/top-services-by-ip-data-cl.md) � |  | ? | ✓ | ? |
+| [`Top_Tags_By_IP_Data_CL`](../tables/top-tags-by-ip-data-cl.md) � |  | ? | ✓ | ? |
 | [`VMConnection`](../tables/vmconnection.md) |  | ✗ | ✗ | ? |
-| [`VectraStream_CL`](../tables/vectrastream-cl.md) 🔶 |  | ✗ | ✓ | ✗ |
+| [`VectraStream_CL`](../tables/vectrastream-cl.md) � |  | ✗ | ✓ | ✗ |
 | [`W3CIISLog`](../tables/w3ciislog.md) |  | ✓ | ✗ | ✗ |
-| [`Whois_Data_CL`](../tables/whois-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Whois_Data_CL`](../tables/whois-data-cl.md) � |  | ? | ✓ | ? |
 | [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ | ✓ |
-| [`X509_Data_CL`](../tables/x509-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`X509_Data_CL`](../tables/x509-data-cl.md) � |  | ? | ✓ | ? |
 | [`asimParsers`](../tables/asimparsers.md) |  | ? | ? | ? |
-| [`barracuda_CL`](../tables/barracuda-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`meraki_CL`](../tables/meraki-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
+| [`barracuda_CL`](../tables/barracuda-cl.md) � |  | ? | ✓ | ? |
+| [`meraki_CL`](../tables/meraki-cl.md) � |  | ✓ | ✓ | ✓ |
 
 ---
 

@@ -8,22 +8,6 @@
 
 ---
 
-As more and more companies move to the cloud - attacks to the cloud identity system are becoming more commonplace. The **Cloud Identity Threat Protection Essentials** solution looks for most common cloud focused identity attacks such as Suspicious Sign-ins, privilege grants, MFA disable etc. Rapid detection of these attacks can enable organizations to respond faster and stop them from progressing further.
- 
-**Pre-requisites:**
- 
-This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions) and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution.
- 
- 1. Microsoft Entra ID
- 
- 2. Amazon Web Services
- 
- 3. Microsoft Entra ID Identity Protection
- 
-**Keywords:** MFA, Nord VPN, VPS, Disabled Account, Suspicious Sign-in, Service principal
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | Microsoft Corporation |
@@ -34,17 +18,30 @@ This is a [domain solution](https://learn.microsoft.com/en-us/azure/sentinel/sen
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-16 |
 | **Solution Folder** | [Cloud Identity Threat Protection Essentials](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloud%20Identity%20Threat%20Protection%20Essentials) |
-| **Dependencies** | [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) |
+| **Pre-requisites** | [Microsoft Entra ID](microsoft-entra-id.md), [Amazon Web Services](amazon-web-services.md), [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) |
 
-## Dependencies
+As more and more companies move to the cloud - attacks to the cloud identity system are becoming more commonplace. The **Cloud Identity Threat Protection Essentials** solution looks for most common cloud focused identity attacks such as Suspicious Sign-ins, privilege grants, MFA disable etc. Rapid detection of these attacks can enable organizations to respond faster and stop them from progressing further.
+ 
+For details on the required solutions, see the [Pre-requisites](#pre-requisites) section below.
+
+**Keywords:** MFA, Nord VPN, VPS, Disabled Account, Suspicious Sign-in, Service principal
+
+## Contents
+
+- [Pre-requisites](#pre-requisites)
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
+## Pre-requisites
 
 This solution depends on **3 other solution(s)**:
 
-| Solution | Dependency Type | Details |
-|:---------|:----------------|:--------|
-| [Amazon Web Services](amazon-web-services.md) | explicit | - |
-| [Microsoft Entra ID](microsoft-entra-id.md) | explicit | - |
-| [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) | explicit | - |
+| Solution |
+|:---------|
+| [Amazon Web Services](amazon-web-services.md) |
+| [Microsoft Entra ID](microsoft-entra-id.md) |
+| [Microsoft Entra ID Protection](microsoft-entra-id-protection.md) |
 
 ## Data Connectors
 

@@ -25,9 +25,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md) 🔶 | ? | ✓ | ? |
-| [`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md) 🔶 | ? | ✓ | ? |
-| [`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md) 🔶 | ? | ✓ | ? |
+| [`Corelight_v2_conn_CL`](../tables/corelight-v2-conn-cl.md) � | ? | ✓ | ? |
+| [`Corelight_v2_conn_long_CL`](../tables/corelight-v2-conn-long-cl.md) � | ? | ✓ | ? |
+| [`Corelight_v2_conn_red_CL`](../tables/corelight-v2-conn-red-cl.md) � | ? | ✓ | ? |
 
 ---
 

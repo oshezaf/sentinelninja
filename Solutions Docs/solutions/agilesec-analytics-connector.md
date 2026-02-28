@@ -8,16 +8,6 @@
 
 ---
 
-The AgileSec Analytics Connector solution provides the capability to ingest AgileSec Analytics Connector events into Microsoft Sentinel. 
-
-**Underlying Microsoft Technologies used:**
-
- This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
-
- a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | InfoSecGlobal |
@@ -28,13 +18,27 @@ The AgileSec Analytics Connector solution provides the capability to ingest Agil
 | **Author** | InfoSecGlobal |
 | **Solution Folder** | [AgileSec Analytics Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AgileSec%20Analytics%20Connector) |
 
+The AgileSec Analytics Connector solution provides the capability to ingest AgileSec Analytics Connector events into Microsoft Sentinel. 
+
+**Underlying Microsoft Technologies used:**
+
+ This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs: 
+
+ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) 🔶
+- [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,10 +46,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) 🔶 | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) | Workbooks |
+| [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) � | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

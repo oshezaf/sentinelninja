@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) 🔶 | ? | ✓ | ? |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) � | ? | ✓ | ? |
 | [`Event`](../tables/event.md) | ✓ | ✗ | ✗ |
 
 ## Parameters
@@ -39,16 +39,6 @@ This parser reads from the following tables:
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
-
-## Associated Connectors
-
-The following connectors provide data for this parser:
-
-| Connector | Solution |
-|:----------|:---------|
-| [MimecastTIRegionalConnectorAzureFunctions](../connectors/mimecasttiregionalconnectorazurefunctions.md) | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
-
-**Solutions:** [MimecastTIRegional](../solutions/mimecasttiregional.md)
 
 ## References
 

@@ -8,10 +8,6 @@
 
 ---
 
-Configure the ExtraHop Detection Data Connector to send ExtraHop detection data to the Microsoft Sentinel. An ExtraHop workbook and analytic rules available from the Microsoft Sentinel Workspace enable you to gain insight into detections and generate detection alerts.
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | ExtraHop Support |
@@ -24,13 +20,21 @@ Configure the ExtraHop Detection Data Connector to send ExtraHop detection data 
 | **Last Updated** | 2025-06-04 |
 | **Solution Folder** | [ExtraHop](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ExtraHop) |
 
+Configure the ExtraHop Detection Data Connector to send ExtraHop detection data to the Microsoft Sentinel. An ExtraHop workbook and analytic rules available from the Microsoft Sentinel Workspace enable you to gain insight into detections and generate detection alerts.
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Tables Used](#tables-used)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [ExtraHop Detections Data Connector](../connectors/extrahop.md) 🔶
+- [ExtraHop Detections Data Connector](../connectors/extrahop.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -38,7 +42,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) 🔶 | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | Analytics, Workbooks |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) � | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | Analytics, Workbooks |
 
 ### Internal Tables
 
@@ -49,7 +53,7 @@ The following **1 table(s)** are used internally by this solution's content item
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:

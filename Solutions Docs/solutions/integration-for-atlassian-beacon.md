@@ -8,18 +8,6 @@
 
 ---
 
-The [Atlassian Beacon](https://www.atlassian.com/software/beacon) solution provides the capability to ingest Atlassian Beacon Alerts into Microsoft Sentinel.
-
-**Underlying Microsoft Technologies used:**
-
-This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
-
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
-
-b. [Azure Logic Apps](https://azure.microsoft.com/products/logic-apps/#overview)
-
-## Solution Information
-
 | Attribute | Value |
 |:------------------------|:------|
 | **Publisher** | DEFEND Ltd. |
@@ -31,24 +19,40 @@ b. [Azure Logic Apps](https://azure.microsoft.com/products/logic-apps/#overview)
 | **First Published** | 2023-09-22 |
 | **Solution Folder** | [Integration for Atlassian Beacon](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Integration%20for%20Atlassian%20Beacon) |
 
+The [Atlassian Beacon](https://www.atlassian.com/software/beacon) solution provides the capability to ingest Atlassian Beacon Alerts into Microsoft Sentinel.
+
+**Underlying Microsoft Technologies used:**
+
+This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+b. [Azure Logic Apps](https://azure.microsoft.com/products/logic-apps/#overview)
+
+## Contents
+
+- [Data Connectors](#data-connectors)
+- [Internal Tables](#internal-tables)
+- [Content Items](#content-items)
+
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
-- [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶
+- [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) �
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
-### Internal Tables
+## Internal Tables
 
 The following **1 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) 🔶 | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) | Analytics, Playbooks (writes) |
+| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) � | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) | Analytics, Playbooks (writes) |
 
 
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:
