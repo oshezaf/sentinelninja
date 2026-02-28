@@ -17,7 +17,6 @@
 | **Connector Definition Files** | [MiroAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_DataConnectorDefinition.json) |
 | **CCF Configuration** | [MiroAuditLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF connectors use DCR-based Log Ingestion API* |
 
 The [Miro Audit Logs](https://help.miro.com/hc/en-us/articles/360017571434-Audit-logs) data connector enables you to ingest organization-wide audit events from Miro into Microsoft Sentinel. Monitor user activities, security events, content access, team changes, and administrative actions to enhance your security operations and compliance capabilities.
 

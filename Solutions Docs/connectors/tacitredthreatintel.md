@@ -17,7 +17,6 @@
 | **Connector Definition Files** | [TacitRed_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence/Data%20Connectors/TacitRed_CCF/TacitRed_ConnectorDefinition.json) |
 | **CCF Configuration** | [TacitRed_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence/Data%20Connectors/TacitRed_CCF/TacitRed_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF connectors use DCR-based Log Ingestion API* |
 
 Ingest compromised credential findings from TacitRed using the Common Connector Framework (CCF).
 

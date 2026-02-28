@@ -17,7 +17,6 @@
 | **Connector Definition Files** | [GCPComputeEngineLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Compute%20Engine/Data%20Connectors/GCPComputeEngineLog_CCP/GCPComputeEngineLog_ConnectorDefinition.json) |
 | **CCF Configuration** | [GCPComputeEngineLog_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Compute%20Engine/Data%20Connectors/GCPComputeEngineLog_CCP/GCPComputeEngineLog_PollerConfig.json) |
 | **CCF Capabilities** | `GCP` |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF connectors use DCR-based Log Ingestion API* |
 
 The Google Cloud Platform Compute Engine data connector provides the capability to ingest Compute Engine Audit logs into Microsoft Sentinel using the Google Cloud Compute Engine API. Refer to [Cloud Compute Engine API](https://cloud.google.com/compute/docs/reference/rest/v1) documentation for more information.
 

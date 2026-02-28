@@ -17,7 +17,6 @@
 | **Connector Definition Files** | [VersasecCMS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_ConnectorDefinition.json) |
 | **CCF Configuration** | [VersasecCMS_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF connectors use DCR-based Log Ingestion API* |
 
 The VersasecCms data connector allows ingesting logs into Microsoft Sentinel.
 
