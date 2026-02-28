@@ -15,6 +15,7 @@
 | **Used in Solutions** | [BitSight](../solutions/bitsight.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BitSight_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Data%20Connectors/BitSightDataConnector/BitSight_API_FunctionApp.json) |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns* |
 
 The [BitSight](https://www.BitSight.com/) Data Connector supports evidence-based cyber risk monitoring by bringing BitSight data in Microsoft Sentinel.
 

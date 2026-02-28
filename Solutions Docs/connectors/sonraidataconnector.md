@@ -15,6 +15,7 @@
 | **Used in Solutions** | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
 | **Connector Definition Files** | [Connector_REST_API_Sonrai.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity/Data%20Connectors/Connector_REST_API_Sonrai.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 
 Use this data connector to integrate with Sonrai Security and get Sonrai tickets sent directly to Microsoft Sentinel.
 

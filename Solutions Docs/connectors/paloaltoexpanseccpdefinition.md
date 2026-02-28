@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [CortexXpanse_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF/Data%20Connectors/CortexXpanse_ccp/CortexXpanse_ConnectorDefinition.json) |
 | **CCF Configuration** | [CortexXpanse_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF/Data%20Connectors/CortexXpanse_ccp/CortexXpanse_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF connectors use DCR-based Log Ingestion API* |
 
 The Palo Alto Cortex Xpanse data connector ingests alerts data into Microsoft Sentinel.
 

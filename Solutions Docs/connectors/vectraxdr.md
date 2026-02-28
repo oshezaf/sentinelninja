@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [VectraXDR_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Data%20Connectors/VectraDataConnector/VectraXDR_API_FunctionApp.json) |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns* |
 
 The [Vectra XDR](https://www.vectra.ai/) connector gives the capability to ingest Vectra Detections, Audits, Entity Scoring, Lockdown, Health and Entities data into Microsoft Sentinel through the Vectra REST API. Refer to the API documentation: `https://support.vectra.ai/s/article/KB-VS-1666` for more information.
 

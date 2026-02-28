@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Armorblox](../solutions/armorblox.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Armorblox_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox/Data%20Connectors/Armorblox_API_FunctionApp.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
 
 The [Armorblox](https://www.armorblox.com/) data connector provides the capability to ingest incidents from your Armorblox instance into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, and more.
 

@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [Connector_RESTAPI_NonameSecurity.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NonameSecurity/Data%20Connectors/Connector_RESTAPI_NonameSecurity.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 
 Noname Security solution to POST data into a Microsoft Sentinel SIEM workspace via the Azure Monitor REST API
 

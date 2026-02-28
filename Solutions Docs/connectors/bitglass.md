@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Bitglass](../solutions/bitglass.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Bitglass_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitglass/Data%20Connectors/Bitglass_API_FunctionApp.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
 
 The [Bitglass](https://www.bitglass.com/) data connector provides the capability to retrieve security event logs of the Bitglass services and more events into Microsoft Sentinel through the REST API. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
 

@@ -15,6 +15,7 @@
 | **Used in Solutions** | [CTM360](../solutions/ctm360.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CTM360_HV_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/HackerView/CTM360_HV_API_FunctionApp.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
 
 Through the API integration, you have the capability to retrieve all the issues related to your HackerView organizations via a RESTful interface.
 

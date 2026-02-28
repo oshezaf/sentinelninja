@@ -15,6 +15,7 @@
 | **Used in Solutions** | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
 | **Connector Definition Files** | [Connector_NetClean.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetClean%20ProActive/Data%20Connectors/Connector_NetClean.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 
 This connector uses the Netclean Webhook (required) and Logic Apps to push data into Microsoft Sentinel Log Analytics
 

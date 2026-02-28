@@ -15,6 +15,7 @@
 | **Used in Solutions** | [SlashNext](../solutions/slashnext.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SlashNext_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Data%20Connectors/SlashNext_FunctionApp.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Inferred from table column naming patterns (type suffixes)* |
 
 The SlashNext function app utilizes python to perform the analysis of the raw logs and returns URLs present in the logs.
 

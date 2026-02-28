@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Red Canary](../solutions/red-canary.md) |
 | **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [RedCanaryDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary/Data%20Connectors/RedCanaryDataConnector.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 
 The Red Canary data connector provides the capability to ingest published Detections into Microsoft Sentinel using the Data Collector REST API.
 

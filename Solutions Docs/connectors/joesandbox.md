@@ -15,6 +15,7 @@
 | **Used in Solutions** | [JoeSandbox](../solutions/joesandbox.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [JoeSandboxThreatIntelligence_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Data%20Connectors/JoeSandboxThreatIntelligence_FunctionApp.json) |
+| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 
 JoeSandboxThreatIntelligence connector automatically generates and feeds threat intelligence for all submissions to JoeSandbox, improving threat detection and incident response in Sentinel. This seamless integration empowers teams to proactively address emerging threats.
 
