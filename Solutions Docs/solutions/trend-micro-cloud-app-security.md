@@ -35,7 +35,9 @@ The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/p
 
 This solution provides **1 data connector(s)**:
 
-- [Trend Micro Cloud App Security](../connectors/trendmicrocas.md)
+- [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,8 +45,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) | Analytics, Hunting, Workbooks |
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

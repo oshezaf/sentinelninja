@@ -13,9 +13,10 @@
 | **Connector ID** | `Doppel_DataConnector` |
 | **Publisher** | Doppel |
 | **Used in Solutions** | [Doppel](../solutions/doppel.md) |
-| **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
+| **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [Template_Doppel.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Doppel/Data%20Connectors/Template_Doppel.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The data connector is built on Microsoft Sentinel for Doppel events and alerts and supports DCR-based [ingestion time transformations](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/ingestion-time-transformations) that parses the received security event data into a custom columns so that queries don't need to parse it again, thus resulting in better performance.
 
@@ -25,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`DoppelTable_CL`](../tables/doppeltable-cl.md) | ✗ | ✓ | ✗ |
+| [`DoppelTable_CL`](../tables/doppeltable-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

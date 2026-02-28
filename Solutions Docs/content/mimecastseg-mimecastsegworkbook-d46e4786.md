@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) | ✗ | ✓ | ✗ |
+| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

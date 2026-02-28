@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) | ? | ✓ | ? |
+| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
 

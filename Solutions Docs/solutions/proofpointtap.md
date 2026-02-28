@@ -33,10 +33,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) ⚠️
+- [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) ⚠️ 🔶
 - [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,14 +47,16 @@ This solution uses **8 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ProofPointTAPClicksBlockedV2_CL`](../tables/proofpointtapclicksblockedv2-cl.md) | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Workbooks |
-| [`ProofPointTAPClicksBlocked_CL`](../tables/proofpointtapclicksblocked-cl.md) | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
+| [`ProofPointTAPClicksBlocked_CL`](../tables/proofpointtapclicksblocked-cl.md) 🔶 | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
 | [`ProofPointTAPClicksPermittedV2_CL`](../tables/proofpointtapclickspermittedv2-cl.md) | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Analytics, Workbooks |
-| [`ProofPointTAPClicksPermitted_CL`](../tables/proofpointtapclickspermitted-cl.md) | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
+| [`ProofPointTAPClicksPermitted_CL`](../tables/proofpointtapclickspermitted-cl.md) 🔶 | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
 | [`ProofPointTAPMessagesBlockedV2_CL`](../tables/proofpointtapmessagesblockedv2-cl.md) | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Workbooks |
-| [`ProofPointTAPMessagesBlocked_CL`](../tables/proofpointtapmessagesblocked-cl.md) | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
+| [`ProofPointTAPMessagesBlocked_CL`](../tables/proofpointtapmessagesblocked-cl.md) 🔶 | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
 | [`ProofPointTAPMessagesDeliveredV2_CL`](../tables/proofpointtapmessagesdeliveredv2-cl.md) | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Analytics, Workbooks |
-| [`ProofPointTAPMessagesDelivered_CL`](../tables/proofpointtapmessagesdelivered-cl.md) | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
+| [`ProofPointTAPMessagesDelivered_CL`](../tables/proofpointtapmessagesdelivered-cl.md) 🔶 | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **6 content item(s)**:

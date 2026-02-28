@@ -33,7 +33,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Firewall](../connectors/azurefirewall.md)
+- [Azure Firewall](../connectors/azurefirewall.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,8 +52,10 @@ This solution uses **10 table(s)**:
 | [`AZFWNatRule`](../tables/azfwnatrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Workbooks |
 | [`AZFWNetworkRule`](../tables/azfwnetworkrule.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
 | [`AZFWThreatIntel`](../tables/azfwthreatintel.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Workbooks |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure Firewall](../connectors/azurefirewall.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **18 content item(s)**:

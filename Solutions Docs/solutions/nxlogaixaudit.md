@@ -33,7 +33,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [NXLog AIX Audit](../connectors/nxlogaixaudit.md)
+- [NXLog AIX Audit](../connectors/nxlogaixaudit.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,8 +43,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AIX_Audit_CL`](../tables/aix-audit-cl.md) | [NXLog AIX Audit](../connectors/nxlogaixaudit.md) | - |
+| [`AIX_Audit_CL`](../tables/aix-audit-cl.md) 🔶 | [NXLog AIX Audit](../connectors/nxlogaixaudit.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

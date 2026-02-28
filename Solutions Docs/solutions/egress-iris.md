@@ -27,7 +27,9 @@ Egress SIEM Connector for Microsoft Sentinel
 
 This solution provides **1 data connector(s)**:
 
-- [Egress Iris Connector](../connectors/egresssiempolling.md)
+- [Egress Iris Connector](../connectors/egresssiempolling.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -35,9 +37,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | [Egress Iris Connector](../connectors/egresssiempolling.md) | - |
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) 🔶 | [Egress Iris Connector](../connectors/egresssiempolling.md) | - |
 | [`EgressEvents_CL`](../tables/egressevents-cl.md) | [Egress Iris Connector](../connectors/egresssiempolling.md) | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

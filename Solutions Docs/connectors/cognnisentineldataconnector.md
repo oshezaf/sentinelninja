@@ -13,9 +13,10 @@
 | **Connector ID** | `CognniSentinelDataConnector` |
 | **Publisher** | Cognni |
 | **Used in Solutions** | [Cognni](../solutions/cognni.md) |
-| **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
+| **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [CognniSentinelConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cognni/Data%20Connectors/CognniSentinelConnector.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The Cognni connector offers a quick and simple integration with Microsoft Sentinel. You can use Cognni to autonomously map your previously unclassified important information and detect related incidents. This allows you to recognize risks to your important information, understand the severity of the incidents, and investigate the details you need to remediate, fast enough to make a difference.
 
@@ -25,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) | ✓ | ✓ | ✓ |
+| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

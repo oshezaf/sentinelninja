@@ -32,7 +32,7 @@ This parser reads from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "WAAS,WAF"`<br>`DeviceVendor startswith "Barracuda"` | ✓ | ✓ | ✓ |
-| [`barracuda_CL`](../tables/barracuda-cl.md) |  | ? | ✓ | ? |
+| [`barracuda_CL`](../tables/barracuda-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ## Parameters
 

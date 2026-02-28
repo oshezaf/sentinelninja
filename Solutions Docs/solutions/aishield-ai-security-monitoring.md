@@ -34,7 +34,9 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 This solution provides **1 data connector(s)**:
 
-- [AIShield](../connectors/boschaishield.md)
+- [AIShield](../connectors/boschaishield.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,9 +44,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AIShield_CL`](../tables/aishield-cl.md) | [AIShield](../connectors/boschaishield.md) | Analytics, Workbooks |
-| [`Guardian_CL`](../tables/guardian-cl.md) | - | Analytics |
+| [`AIShield_CL`](../tables/aishield-cl.md) 🔶 | [AIShield](../connectors/boschaishield.md) | Analytics, Workbooks |
+| [`Guardian_CL`](../tables/guardian-cl.md) 🔶 | - | Analytics |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **42 content item(s)**:

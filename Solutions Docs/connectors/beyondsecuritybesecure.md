@@ -17,9 +17,10 @@
 | **Connector ID** | `BeyondSecuritybeSECURE` |
 | **Publisher** | Beyond Security |
 | **Used in Solutions** | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
-| **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
+| **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [Beyond%20Security%20beSECURE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Beyond%20Security%20beSECURE/Data%20Connectors/Beyond%20Security%20beSECURE.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The [Beyond Security beSECURE](https://beyondsecurity.com/) connector allows you to easily connect your Beyond Security beSECURE scan events, scan results and audit trail with Azure Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization's network and improves your security operation capabilities.
 
@@ -29,9 +30,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`beSECURE_Audit_CL`](../tables/besecure-audit-cl.md) | ? | ✓ | ? |
-| [`beSECURE_ScanEvent_CL`](../tables/besecure-scanevent-cl.md) | ? | ✓ | ? |
-| [`beSECURE_ScanResults_CL`](../tables/besecure-scanresults-cl.md) | ? | ✓ | ? |
+| [`beSECURE_Audit_CL`](../tables/besecure-audit-cl.md) 🔶 | ? | ✓ | ? |
+| [`beSECURE_ScanEvent_CL`](../tables/besecure-scanevent-cl.md) 🔶 | ? | ✓ | ? |
+| [`beSECURE_ScanResults_CL`](../tables/besecure-scanresults-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

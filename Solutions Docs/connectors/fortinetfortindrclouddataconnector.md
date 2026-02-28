@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [FortinetFortiNdrCloud_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiNDR%20Cloud/Data%20Connectors/FortinetFortiNdrCloud_API_AzureFunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The Fortinet FortiNDR Cloud data connector provides the capability to ingest [Fortinet FortiNDR Cloud](https://docs.fortinet.com/product/fortindr-cloud) data into Microsoft Sentinel using the FortiNDR Cloud API
 
@@ -25,9 +26,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) | ✗ | ✓ | ✗ |
-| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) | ✗ | ✓ | ✗ |
-| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) | ✗ | ✓ | ✗ |
+| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

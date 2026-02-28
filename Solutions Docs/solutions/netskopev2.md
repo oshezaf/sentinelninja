@@ -29,8 +29,10 @@ Netskope solution for Microsoft Sentinel enables you to ingest Netskope alerts a
 This solution provides **3 data connector(s)**:
 
 - [Netskope Alerts and Events](../connectors/netskopealertsevents.md)
-- [Netskope Data Connector](../connectors/netskopedataconnector.md)
-- [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md)
+- [Netskope Data Connector](../connectors/netskopedataconnector.md) 🔶
+- [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -48,29 +50,31 @@ This solution uses **32 table(s)**:
 | [`NetskopeEventsNetwork_CL`](../tables/netskopeeventsnetwork-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
 | [`NetskopeEventsPage_CL`](../tables/netskopeeventspage-cl.md) | [Netskope Alerts and Events](../connectors/netskopealertsevents.md) | - |
 | [`NetskopeWebTransactions_CL`](../tables/netskopewebtransactions-cl.md) | - | Workbooks |
-| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) | Workbooks |
-| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) | Analytics |
-| [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) | - | Workbooks |
-| [`Netskope_Events_CL`](../tables/netskope-events-cl.md) | - | Workbooks |
-| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) | - | Workbooks |
-| [`Netskope_WebTx_metrics_CL`](../tables/netskope-webtx-metrics-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
-| [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertsdlpdata_CL`](../tables/alertsdlpdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertsmalsitedata_CL`](../tables/alertsmalsitedata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertsmalwaredata_CL`](../tables/alertsmalwaredata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertspolicydata_CL`](../tables/alertspolicydata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertssecurityassessmentdata_CL`](../tables/alertssecurityassessmentdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`alertsubadata_CL`](../tables/alertsubadata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`eventsapplicationdata_CL`](../tables/eventsapplicationdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
-| [`eventsauditdata_CL`](../tables/eventsauditdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
-| [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
-| [`eventsincidentdata_CL`](../tables/eventsincidentdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
-| [`eventsnetworkdata_CL`](../tables/eventsnetworkdata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
-| [`eventspagedata_CL`](../tables/eventspagedata-cl.md) | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
+| [`NetskopeWebtxData_CL`](../tables/netskopewebtxdata-cl.md) 🔶 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) | Workbooks |
+| [`NetskopeWebtxErrors_CL`](../tables/netskopewebtxerrors-cl.md) 🔶 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) | Analytics |
+| [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) 🔶 | - | Workbooks |
+| [`Netskope_Events_CL`](../tables/netskope-events-cl.md) 🔶 | - | Workbooks |
+| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) 🔶 | - | Workbooks |
+| [`Netskope_WebTx_metrics_CL`](../tables/netskope-webtx-metrics-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
+| [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertsdlpdata_CL`](../tables/alertsdlpdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertsmalsitedata_CL`](../tables/alertsmalsitedata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertsmalwaredata_CL`](../tables/alertsmalwaredata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertspolicydata_CL`](../tables/alertspolicydata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertssecurityassessmentdata_CL`](../tables/alertssecurityassessmentdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`alertsubadata_CL`](../tables/alertsubadata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`eventsapplicationdata_CL`](../tables/eventsapplicationdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | Workbooks |
+| [`eventsauditdata_CL`](../tables/eventsauditdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
+| [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
+| [`eventsincidentdata_CL`](../tables/eventsincidentdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
+| [`eventsnetworkdata_CL`](../tables/eventsnetworkdata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
+| [`eventspagedata_CL`](../tables/eventspagedata-cl.md) 🔶 | [Netskope Data Connector](../connectors/netskopedataconnector.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **37 content item(s)**:

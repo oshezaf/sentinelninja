@@ -29,21 +29,21 @@ The Microsoft Monitoring Agent (MMA), also known as the Log Analytics agent, is 
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) | Vectra AI | 1 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
-| [Alsid for Active Directory](../connectors/alsidforad.md) ⚠️ | Alsid | 1 | [Alsid For AD](../solutions/alsid-for-ad.md) |
+| [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) 🔶 | Vectra AI | 1 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
+| [Alsid for Active Directory](../connectors/alsidforad.md) ⚠️ | Alsid | 3 | [Alsid For AD](../solutions/alsid-for-ad.md) |
 | [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) ➕ | Cisco | 1 | [CiscoASA](../solutions/ciscoasa.md) |
 | [Claroty xDome](../connectors/clarotyxdome.md) | Claroty | 1 | [Claroty xDome](../solutions/claroty-xdome.md) |
 | [Common Event Format (CEF)](../connectors/cef.md) ➕ | Any | 1 | [Common Event Format](../solutions/common-event-format.md) |
 | [DNS](../connectors/dns.md) | Microsoft | 2 | [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [Elastic Agent](../connectors/elasticagent.md) | Elastic | 1 | [ElasticAgent](../solutions/elasticagent.md) |
-| [Eset Security Management Center](../connectors/esetsmc.md) ⚠️ | Eset | 1 | [Eset Security Management Center](../solutions/eset-security-management-center.md) |
+| [Eset Security Management Center](../connectors/esetsmc.md) ⚠️ 🔶 | Eset | 1 | [Eset Security Management Center](../solutions/eset-security-management-center.md) |
 | [Forescout](../connectors/forescout.md) | Forescout | 1 | [Forescout (Legacy)](../solutions/forescout-legacy.md) |
 | [Imperva WAF Gateway](../connectors/impervawafgateway.md) ⚠️ | Imperva | 1 | [Imperva WAF Gateway](../solutions/imperva-waf-gateway.md) |
 | [IronNet IronDefense](../connectors/ironnetirondefense.md) ⚠️ | IronNet | 1 | [IronNet IronDefense](../solutions/ironnet-irondefense.md) |
 | [One Identity Safeguard](../connectors/oneidentity.md) | One Identity LLC. | 1 | [OneIdentity](../solutions/oneidentity.md) |
 | [Palo Alto Networks Cortex XDR](../connectors/paloaltonetworkscortex.md) ⚠️ | Palo Alto Networks | 1 | [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) |
 | [Security Events via Legacy Agent](../connectors/securityevents.md) ➕ | Microsoft | 1 | [Windows Security Events](../solutions/windows-security-events.md) |
-| [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ➕ | SecurityBridge | 1 | [SecurityBridge App](../solutions/securitybridge-app.md) |
+| [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ➕ 🔶 | SecurityBridge | 1 | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | [Semperis Directory Services Protector](../connectors/semperisdsp.md) | SEMPERIS | 1 | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | [Syslog via Legacy Agent](../connectors/syslog.md) | Microsoft | 1 | [Syslog](../solutions/syslog.md) |
 | [Tenable Identity Exposure](../connectors/tenableie.md) | Tenable | 2 | [Tenable App](../solutions/tenable-app.md) |

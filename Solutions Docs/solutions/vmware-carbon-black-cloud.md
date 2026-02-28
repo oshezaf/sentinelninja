@@ -35,8 +35,10 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 This solution provides **2 data connector(s)**:
 
-- [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md)
+- [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) 🔶
 - [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md)
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,12 +51,14 @@ This solution uses **10 table(s)**:
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
-| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | - |
-| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics, Workbooks |
-| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics |
+| [`CarbonBlackAuditLogs_CL`](../tables/carbonblackauditlogs-cl.md) 🔶 | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | - |
+| [`CarbonBlackEvents_CL`](../tables/carbonblackevents-cl.md) 🔶 | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics, Workbooks |
+| [`CarbonBlackNotifications_CL`](../tables/carbonblacknotifications-cl.md) 🔶 | [VMware Carbon Black Cloud](../connectors/vmwarecarbonblack.md) | Analytics |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 | [`CarbonBlack_Watchlist_CL`](../tables/carbonblack-watchlist-cl.md) | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **6 content item(s)**:

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) | ✓ | ✓ | ✓ |
+| [`OracleWebLogicServer_CL`](../tables/oracleweblogicserver-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ---
 

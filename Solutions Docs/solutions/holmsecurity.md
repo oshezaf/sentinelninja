@@ -37,7 +37,9 @@ The [Holm Security](https://www.holmsecurity.com/) solution provides the capabil
 
 This solution provides **1 data connector(s)**:
 
-- [Holm Security Asset Data](../connectors/holmsecurityassets.md)
+- [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,9 +47,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`net_assets_CL`](../tables/net-assets-cl.md) | [Holm Security Asset Data](../connectors/holmsecurityassets.md) | - |
-| [`web_assets_CL`](../tables/web-assets-cl.md) | [Holm Security Asset Data](../connectors/holmsecurityassets.md) | - |
+| [`net_assets_CL`](../tables/net-assets-cl.md) 🔶 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) | - |
+| [`web_assets_CL`](../tables/web-assets-cl.md) 🔶 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |

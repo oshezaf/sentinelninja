@@ -33,7 +33,9 @@ The [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/) soluti
 
 This solution provides **1 data connector(s)**:
 
-- [Azure SQL Databases](../connectors/azuresql.md)
+- [Azure SQL Databases](../connectors/azuresql.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,7 +44,7 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AzureActivity`](../tables/azureactivity.md) | - | Workbooks |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure SQL Databases](../connectors/azuresql.md) | Analytics, Hunting, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure SQL Databases](../connectors/azuresql.md) | Analytics, Hunting, Workbooks |
 | [`Operation`](../tables/operation.md) | - | Workbooks |
 
 ### Internal Tables
@@ -54,6 +56,8 @@ The following **2 table(s)** are used internally by this solution's content item
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **19 content item(s)**:

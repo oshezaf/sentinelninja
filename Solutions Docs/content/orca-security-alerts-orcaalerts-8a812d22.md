@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) | ✓ | ✓ | ✓ |
+| [`OrcaAlerts_CL`](../tables/orcaalerts-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ---
 

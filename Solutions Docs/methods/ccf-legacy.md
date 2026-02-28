@@ -28,17 +28,17 @@ Legacy CCF connectors embed their polling configuration directly in the connecto
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ➕ | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
+| [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) 🔶 | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ➕ 🔶 | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [Dynatrace Attacks](../connectors/dynatraceattacks.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Audit Logs](../connectors/dynatraceauditlogs.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Problems](../connectors/dynatraceproblems.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
 | [Dynatrace Runtime Vulnerabilities](../connectors/dynatraceruntimevulnerabilities.md) | Dynatrace | 1 | [Dynatrace](../solutions/dynatrace.md) |
-| [Egress Defend](../connectors/egressdefendpolling.md) ⚠️ | Egress Software Technologies | 1 | [Egress Defend](../solutions/egress-defend.md) |
-| [Egress Iris Connector](../connectors/egresssiempolling.md) | Egress Software Technologies | 2 | [Egress Iris](../solutions/egress-iris.md) |
+| [Egress Defend](../connectors/egressdefendpolling.md) ⚠️ 🔶 | Egress Software Technologies | 1 | [Egress Defend](../solutions/egress-defend.md) |
+| [Egress Iris Connector](../connectors/egresssiempolling.md) 🔶 | Egress Software Technologies | 2 | [Egress Iris](../solutions/egress-iris.md) |
 | [Island Enterprise Browser Admin Audit (Polling CCP)](../connectors/island-admin-polling.md) | Island | 1 | [Island](../solutions/island.md) |
 | [Island Enterprise Browser User Activity (Polling CCP)](../connectors/island-user-polling.md) | Island | 1 | [Island](../solutions/island.md) |
-| [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) | The Collective Consulting BV | 1 | [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
+| [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) 🔶 | The Collective Consulting BV | 1 | [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
 | [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) | Okta | 1 | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | [Phosphorus Devices](../connectors/phosphorus-polling.md) | Phosphorus Inc. | 1 | [Phosphorus](../solutions/phosphorus.md) |
 | [Seraphic Web Security](../connectors/seraphicwebsecurity.md) | Seraphic | 1 | [SeraphicSecurity](../solutions/seraphicsecurity.md) |

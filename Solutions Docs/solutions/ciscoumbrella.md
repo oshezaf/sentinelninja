@@ -31,8 +31,10 @@ The Cisco Cloud Security solution for Microsoft Sentinel enables you to ingest [
 
 This solution provides **2 data connector(s)**:
 
-- [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md)
-- [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md)
+- [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) 🔶
+- [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -40,19 +42,21 @@ This solution uses **12 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Cisco_Umbrella_audit_CL`](../tables/cisco-umbrella-audit-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_cloudfirewall_CL`](../tables/cisco-umbrella-cloudfirewall-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_dlp_CL`](../tables/cisco-umbrella-dlp-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_fileevent_CL`](../tables/cisco-umbrella-fileevent-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_firewall_CL`](../tables/cisco-umbrella-firewall-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | - |
-| [`Cisco_Umbrella_intrusion_CL`](../tables/cisco-umbrella-intrusion-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_ip_CL`](../tables/cisco-umbrella-ip-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_proxy_CL`](../tables/cisco-umbrella-proxy-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_ravpnlogs_CL`](../tables/cisco-umbrella-ravpnlogs-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_ztaflow_CL`](../tables/cisco-umbrella-ztaflow-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
-| [`Cisco_Umbrella_ztna_CL`](../tables/cisco-umbrella-ztna-cl.md) | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_audit_CL`](../tables/cisco-umbrella-audit-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_cloudfirewall_CL`](../tables/cisco-umbrella-cloudfirewall-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_dlp_CL`](../tables/cisco-umbrella-dlp-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_dns_CL`](../tables/cisco-umbrella-dns-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_fileevent_CL`](../tables/cisco-umbrella-fileevent-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_firewall_CL`](../tables/cisco-umbrella-firewall-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | - |
+| [`Cisco_Umbrella_intrusion_CL`](../tables/cisco-umbrella-intrusion-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_ip_CL`](../tables/cisco-umbrella-ip-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_proxy_CL`](../tables/cisco-umbrella-proxy-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_ravpnlogs_CL`](../tables/cisco-umbrella-ravpnlogs-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_ztaflow_CL`](../tables/cisco-umbrella-ztaflow-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
+| [`Cisco_Umbrella_ztna_CL`](../tables/cisco-umbrella-ztna-cl.md) 🔶 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md), [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **26 content item(s)**:

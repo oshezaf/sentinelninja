@@ -37,10 +37,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) ⚠️
+- [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) ⚠️ 🔶
 - [Google Cloud Platform DNS (via Codeless Connector Framework)](../connectors/gcpdnslogsccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,8 +51,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`GCPDNS`](../tables/gcpdns.md) | [Google Cloud Platform DNS (via Codeless Connector Framework)](../connectors/gcpdnslogsccpdefinition.md) | Analytics, Hunting, Workbooks |
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | Analytics, Hunting, Workbooks |
+| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) 🔶 | [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **23 content item(s)**:

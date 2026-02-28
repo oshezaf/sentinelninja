@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | ✓ | ✓ | ✓ |
-| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | ✓ | ✓ | ✓ |
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ---
 

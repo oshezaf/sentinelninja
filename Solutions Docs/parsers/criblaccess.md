@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CriblAccess_CL`](../tables/criblaccess-cl.md) | ? | ✓ | ? |
+| [`CriblAccess_CL`](../tables/criblaccess-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

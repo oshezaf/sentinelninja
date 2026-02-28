@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`GCPDNS`](../tables/gcpdns.md) | ✓ | ✗ | ✓ |
-| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) | ? | ✓ | ? |
+| [`GCP_DNS_CL`](../tables/gcp-dns-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

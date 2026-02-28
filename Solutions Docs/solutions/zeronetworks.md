@@ -45,8 +45,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) | Analytics, Hunting, Workbooks |
-| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) | - | Analytics, Hunting, Workbooks |
+| [`ZNSegmentAudit_CL`](../tables/znsegmentaudit-cl.md) 🔶 | - | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

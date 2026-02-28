@@ -13,9 +13,10 @@
 | **Connector ID** | `Perimeter81ActivityLogs` |
 | **Publisher** | Perimeter 81 |
 | **Used in Solutions** | [Perimeter 81](../solutions/perimeter-81.md) |
-| **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
+| **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [Perimeter81ActivityLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Perimeter%2081/Data%20Connectors/Perimeter81ActivityLogs.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The Perimeter 81 Activity Logs connector allows you to easily connect your Perimeter 81 activity logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation.
 
@@ -25,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Perimeter81_CL`](../tables/perimeter81-cl.md) | ✗ | ✓ | ✗ |
+| [`Perimeter81_CL`](../tables/perimeter81-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -41,8 +41,10 @@ The [Cloudflare](https://www.cloudflare.com/) solution provides the capability t
 
 This solution provides **2 data connector(s)**:
 
-- [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md)
+- [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) 🔶
 - [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md)
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -51,8 +53,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md) | Analytics, Hunting |
-| [`Cloudflare_CL`](../tables/cloudflare-cl.md) | [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) | Analytics, Hunting, Workbooks |
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) 🔶 | [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

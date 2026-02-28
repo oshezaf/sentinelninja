@@ -27,7 +27,9 @@ The [42Crunch](https://42crunch.com/) API Protection solution protects APIs by i
 
 This solution provides **1 data connector(s)**:
 
-- [API Protection](../connectors/42crunchapiprotection.md)
+- [API Protection](../connectors/42crunchapiprotection.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -35,8 +37,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) | [API Protection](../connectors/42crunchapiprotection.md) | Analytics, Workbooks |
+| [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) 🔶 | [API Protection](../connectors/42crunchapiprotection.md) | Analytics, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

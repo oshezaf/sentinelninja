@@ -37,7 +37,9 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 
 This solution provides **1 data connector(s)**:
 
-- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md)
+- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,10 +47,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
-| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
-| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
+| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) 🔶 | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
+| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) 🔶 | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
+| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) 🔶 | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

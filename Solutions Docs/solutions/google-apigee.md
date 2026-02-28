@@ -33,10 +33,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) ⚠️
+- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) ⚠️ 🔶
 - [Google ApigeeX (via Codeless Connector Framework)](../connectors/googleapigeexlogsccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -44,9 +46,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ApigeeX_CL`](../tables/apigeex-cl.md) | [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) | - |
+| [`ApigeeX_CL`](../tables/apigeex-cl.md) 🔶 | [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) | - |
 | [`GCPApigee`](../tables/gcpapigee.md) | [Google ApigeeX (via Codeless Connector Framework)](../connectors/googleapigeexlogsccpdefinition.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:

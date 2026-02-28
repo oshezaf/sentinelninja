@@ -13,9 +13,10 @@
 | **Connector ID** | `DerdackSIGNL4` |
 | **Publisher** | Derdack |
 | **Used in Solutions** | [SIGNL4](../solutions/signl4.md) |
-| **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
+| **Collection Method** | [REST API](../methods/rest-api.md) |
 | **Connector Definition Files** | [DerdackSIGNL4.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Data%20Connectors/DerdackSIGNL4.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 When critical systems fail or security incidents happen, SIGNL4 bridges the ‘last mile’ to your staff, engineers, IT admins and workers in the field. It adds real-time mobile alerting to your services, systems, and processes in no time. SIGNL4 notifies through persistent mobile push, SMS text and voice calls with acknowledgement, tracking and escalation. Integrated duty and shift scheduling ensure the right people are alerted at the right time.
 
@@ -29,7 +30,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SIGNL4_CL`](../tables/signl4-cl.md) | ? | ✓ | ? |
+| [`SIGNL4_CL`](../tables/signl4-cl.md) 🔶 | ? | ✓ | ? |
 | [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

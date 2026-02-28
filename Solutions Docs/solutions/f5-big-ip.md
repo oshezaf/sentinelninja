@@ -39,7 +39,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [F5 BIG-IP](../connectors/f5bigip.md)
+- [F5 BIG-IP](../connectors/f5bigip.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,11 +49,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) | [F5 BIG-IP](../connectors/f5bigip.md) | Workbooks |
+| [`F5Telemetry_ASM_CL`](../tables/f5telemetry-asm-cl.md) 🔶 | [F5 BIG-IP](../connectors/f5bigip.md) | Workbooks |
 | [`F5Telemetry_AVR_CL`](../tables/f5telemetry-avr-cl.md) | - | Workbooks |
-| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) | [F5 BIG-IP](../connectors/f5bigip.md) | Workbooks |
-| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) | [F5 BIG-IP](../connectors/f5bigip.md) | Workbooks |
+| [`F5Telemetry_LTM_CL`](../tables/f5telemetry-ltm-cl.md) 🔶 | [F5 BIG-IP](../connectors/f5bigip.md) | Workbooks |
+| [`F5Telemetry_system_CL`](../tables/f5telemetry-system-cl.md) 🔶 | [F5 BIG-IP](../connectors/f5bigip.md) | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

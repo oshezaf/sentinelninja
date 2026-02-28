@@ -28,9 +28,11 @@ This package includes three data connectors and an associated workbook for the S
 
 This solution provides **3 data connector(s)**:
 
-- [SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md)
-- [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md)
-- [SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md)
+- [SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) 🔶
+- [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) 🔶
+- [SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -38,10 +40,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SecurityScorecardFactor_CL`](../tables/securityscorecardfactor-cl.md) | [SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) | Workbooks |
-| [`SecurityScorecardIssues_CL`](../tables/securityscorecardissues-cl.md) | [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) | Workbooks |
-| [`SecurityScorecardRatings_CL`](../tables/securityscorecardratings-cl.md) | [SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md) | Workbooks |
+| [`SecurityScorecardFactor_CL`](../tables/securityscorecardfactor-cl.md) 🔶 | [SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) | Workbooks |
+| [`SecurityScorecardIssues_CL`](../tables/securityscorecardissues-cl.md) 🔶 | [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) | Workbooks |
+| [`SecurityScorecardRatings_CL`](../tables/securityscorecardratings-cl.md) 🔶 | [SecurityScorecard Cybersecurity Ratings](../connectors/securityscorecardratingsazurefunctions.md) | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

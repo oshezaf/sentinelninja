@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) | ? | ✓ | ? |
+| [`Corelight_v2_smtp_CL`](../tables/corelight-v2-smtp-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

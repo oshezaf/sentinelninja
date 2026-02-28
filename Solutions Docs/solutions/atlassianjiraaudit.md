@@ -37,8 +37,10 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **2 data connector(s)**:
 
-- [Atlassian Jira Audit](../connectors/jiraauditapi.md)
-- [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md)
+- [Atlassian Jira Audit](../connectors/jiraauditapi.md) 🔶
+- [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,9 +48,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) | [Atlassian Jira Audit](../connectors/jiraauditapi.md) | Analytics, Hunting, Workbooks |
-| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) | [Atlassian Jira Audit](../connectors/jiraauditapi.md), [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`Jira_Audit_CL`](../tables/jira-audit-cl.md) 🔶 | [Atlassian Jira Audit](../connectors/jiraauditapi.md) | Analytics, Hunting, Workbooks |
+| [`Jira_Audit_v2_CL`](../tables/jira-audit-v2-cl.md) 🔶 | [Atlassian Jira Audit](../connectors/jiraauditapi.md), [Atlassian Jira Audit (using REST API)](../connectors/jiraauditccpdefinition.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **29 content item(s)**:

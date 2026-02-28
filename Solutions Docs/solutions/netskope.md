@@ -35,7 +35,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Netskope](../connectors/netskope.md)
+- [Netskope](../connectors/netskope.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,11 +45,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) | - | Workbooks |
-| [`Netskope_CL`](../tables/netskope-cl.md) | [Netskope](../connectors/netskope.md) | - |
-| [`Netskope_Events_CL`](../tables/netskope-events-cl.md) | - | Workbooks |
-| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) | - | Workbooks |
+| [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) 🔶 | - | Workbooks |
+| [`Netskope_CL`](../tables/netskope-cl.md) 🔶 | [Netskope](../connectors/netskope.md) | - |
+| [`Netskope_Events_CL`](../tables/netskope-events-cl.md) 🔶 | - | Workbooks |
+| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) 🔶 | - | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

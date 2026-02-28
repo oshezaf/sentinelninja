@@ -35,7 +35,9 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 This solution provides **1 data connector(s)**:
 
-- [Tenable.io Vulnerability Management](../connectors/tenableioapi.md)
+- [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,9 +45,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
-| [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
+| [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) 🔶 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
+| [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) 🔶 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:

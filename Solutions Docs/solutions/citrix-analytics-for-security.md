@@ -33,7 +33,9 @@ For more details about this solution refer to https://docs.citrix.com/en-us/secu
 
 This solution provides **1 data connector(s)**:
 
-- [CITRIX SECURITY ANALYTICS](../connectors/citrix.md)
+- [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,11 +43,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md) | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
-| [`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md) | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
-| [`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md) | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
-| [`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
+| [`CitrixAnalytics_indicatorEventDetails_CL`](../tables/citrixanalytics-indicatoreventdetails-cl.md) 🔶 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
+| [`CitrixAnalytics_indicatorSummary_CL`](../tables/citrixanalytics-indicatorsummary-cl.md) 🔶 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
+| [`CitrixAnalytics_riskScoreChange_CL`](../tables/citrixanalytics-riskscorechange-cl.md) 🔶 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
+| [`CitrixAnalytics_userProfile_CL`](../tables/citrixanalytics-userprofile-cl.md) 🔶 | [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

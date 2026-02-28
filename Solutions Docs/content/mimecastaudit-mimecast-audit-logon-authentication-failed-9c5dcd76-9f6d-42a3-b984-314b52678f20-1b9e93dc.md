@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) | ✗ | ✓ | ✗ |
+| [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

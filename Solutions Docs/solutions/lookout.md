@@ -40,8 +40,10 @@ b. [Microsoft Sentinel Codeless Connector Platform](https://aka.ms/Sentinel-CCP_
 
 This solution provides **2 data connector(s)**:
 
-- [[DEPRECATED] Lookout](../connectors/lookoutapi.md)
+- [[DEPRECATED] Lookout](../connectors/lookoutapi.md) 🔶
 - [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md)
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,8 +52,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Analytics, Hunting, Workbooks |
-| [`Lookout_CL`](../tables/lookout-cl.md) | [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | Analytics |
+| [`Lookout_CL`](../tables/lookout-cl.md) 🔶 | [[DEPRECATED] Lookout](../connectors/lookoutapi.md) | Analytics |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

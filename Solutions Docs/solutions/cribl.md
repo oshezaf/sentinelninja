@@ -28,7 +28,9 @@ Cribl is a vendor neutral, purpose-built processing engine for data security and
 
 This solution provides **1 data connector(s)**:
 
-- [Cribl](../connectors/cribl.md)
+- [Cribl](../connectors/cribl.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -36,11 +38,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CriblAccess_CL`](../tables/criblaccess-cl.md) | [Cribl](../connectors/cribl.md) | - |
-| [`CriblAudit_CL`](../tables/criblaudit-cl.md) | [Cribl](../connectors/cribl.md) | - |
-| [`CriblInternal_CL`](../tables/criblinternal-cl.md) | [Cribl](../connectors/cribl.md) | - |
-| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) | [Cribl](../connectors/cribl.md) | - |
+| [`CriblAccess_CL`](../tables/criblaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
+| [`CriblAudit_CL`](../tables/criblaudit-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
+| [`CriblInternal_CL`](../tables/criblinternal-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
+| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

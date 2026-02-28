@@ -27,7 +27,9 @@
 
 This solution provides **1 data connector(s)**:
 
-- [SaaS Security](../connectors/valencesecurity.md)
+- [SaaS Security](../connectors/valencesecurity.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -35,8 +37,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ValenceAlert_CL`](../tables/valencealert-cl.md) | [SaaS Security](../connectors/valencesecurity.md) | Analytics, Workbooks |
+| [`ValenceAlert_CL`](../tables/valencealert-cl.md) 🔶 | [SaaS Security](../connectors/valencesecurity.md) | Analytics, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

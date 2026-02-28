@@ -27,7 +27,9 @@ This Microsoft Sentinel integration enables Commvault users to ingest alerts and
 
 This solution provides **1 data connector(s)**:
 
-- [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md)
+- [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -35,8 +37,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Analytics |
+| [`CommvaultSecurityIQ_CL`](../tables/commvaultsecurityiq-cl.md) 🔶 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Analytics |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:

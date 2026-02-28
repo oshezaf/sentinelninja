@@ -31,7 +31,9 @@ The Sevco Platform - Devices connector allows you to easily connect your Sevco D
 
 This solution provides **1 data connector(s)**:
 
-- [Sevco Platform - Devices](../connectors/sevcodevices.md)
+- [Sevco Platform - Devices](../connectors/sevcodevices.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -39,8 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Sevco_Devices_CL`](../tables/sevco-devices-cl.md) | [Sevco Platform - Devices](../connectors/sevcodevices.md) | - |
+| [`Sevco_Devices_CL`](../tables/sevco-devices-cl.md) 🔶 | [Sevco Platform - Devices](../connectors/sevcodevices.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |

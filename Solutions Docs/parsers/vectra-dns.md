@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`vectra_dns_CL`](../tables/vectra-dns-cl.md) | ? | ✓ | ? |
+| [`vectra_dns_CL`](../tables/vectra-dns-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

@@ -35,7 +35,9 @@ b. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/#overview)
 
 This solution provides **1 data connector(s)**:
 
-- [Wiz](../connectors/wiz.md)
+- [Wiz](../connectors/wiz.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,13 +45,15 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizIssues_CL`](../tables/wizissues-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
-| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizIssues_CL`](../tables/wizissues-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
+| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) 🔶 | [Wiz](../connectors/wiz.md) | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

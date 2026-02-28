@@ -33,7 +33,9 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 This solution provides **1 data connector(s)**:
 
-- [Theom](../connectors/theom.md)
+- [Theom](../connectors/theom.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,8 +43,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) | [Theom](../connectors/theom.md) | Analytics, Workbooks |
+| [`TheomAlerts_CL`](../tables/theomalerts-cl.md) 🔶 | [Theom](../connectors/theom.md) | Analytics, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **21 content item(s)**:

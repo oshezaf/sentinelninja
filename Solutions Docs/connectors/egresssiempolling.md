@@ -16,6 +16,7 @@
 | **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
 | **Connector Definition Files** | [EgressDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Egress%20Iris/Data%20Connectors/EgressDataConnector.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The Egress Iris connector will allow you to ingest Egress data into Sentinel.
 
@@ -25,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`EgressDefend_CL`](../tables/egressdefend-cl.md) | ? | ✓ | ? |
+| [`EgressDefend_CL`](../tables/egressdefend-cl.md) 🔶 | ? | ✓ | ? |
 | [`EgressEvents_CL`](../tables/egressevents-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

@@ -33,11 +33,13 @@ The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capabilit
 
 This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
-- [Slack](../connectors/slackaudit.md) ⚠️
-- [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) ⚠️
-- [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md)
+- [Slack](../connectors/slackaudit.md) ⚠️ 🔶
+- [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) ⚠️ 🔶
+- [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md) 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,10 +47,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) | [Slack](../connectors/slackaudit.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
-| [`SlackAudit_CL`](../tables/slackaudit-cl.md) | [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | [Slack](../connectors/slackaudit.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) 🔶 | [SlackAudit (via Codeless Connector Framework)](../connectors/slackauditlogsccpdefinition.md), [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
+| [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **21 content item(s)**:

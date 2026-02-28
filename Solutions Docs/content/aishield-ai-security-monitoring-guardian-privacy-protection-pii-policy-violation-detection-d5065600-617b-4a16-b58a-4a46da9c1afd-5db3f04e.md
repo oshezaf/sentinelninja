@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Guardian_CL`](../tables/guardian-cl.md) | ? | ✓ | ? |
+| [`Guardian_CL`](../tables/guardian-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

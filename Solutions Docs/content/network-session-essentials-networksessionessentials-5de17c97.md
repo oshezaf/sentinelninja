@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | [`NetworkCustomAnalytics_CL`](../tables/networkcustomanalytics-cl.md) | ? | ✓ | ? |
 | [`NetworkCustomAnalytics_country_CL`](../tables/networkcustomanalytics-country-cl.md) | ? | ✓ | ? |
 | [`NetworkCustomAnalytics_ip_CL`](../tables/networkcustomanalytics-ip-cl.md) | ? | ✓ | ? |
-| [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) | ? | ✓ | ? |
+| [`NetworkCustomAnalytics_protocol_CL`](../tables/networkcustomanalytics-protocol-cl.md) 🔶 | ? | ✓ | ? |
 | [`NetworkCustomAnalytics_rule_CL`](../tables/networkcustomanalytics-rule-cl.md) | ? | ✓ | ? |
 | [`NetworkCustomAnalytics_sourceInfo_CL`](../tables/networkcustomanalytics-sourceinfo-cl.md) | ? | ✓ | ? |
 | [`NetworkCustomAnalytics_source_port_CL`](../tables/networkcustomanalytics-source-port-cl.md) | ? | ✓ | ? |

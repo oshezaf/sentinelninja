@@ -11,6 +11,7 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | Internal |
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Schema (7 columns)

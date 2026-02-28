@@ -33,10 +33,12 @@ The Snowflake CCF data connector provides the capability to ingest Snowflake [Lo
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) ⚠️
+- [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) ⚠️ 🔶
 - [Snowflake (via Codeless Connector Framework)](../connectors/snowflakelogsccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -54,8 +56,10 @@ This solution uses **11 table(s)**:
 | [`SnowflakeTables_CL`](../tables/snowflaketables-cl.md) | [Snowflake (via Codeless Connector Framework)](../connectors/snowflakelogsccpdefinition.md) | Analytics, Hunting, Workbooks |
 | [`SnowflakeUserGrant_CL`](../tables/snowflakeusergrant-cl.md) | [Snowflake (via Codeless Connector Framework)](../connectors/snowflakelogsccpdefinition.md) | Analytics, Hunting, Workbooks |
 | [`SnowflakeUsers_CL`](../tables/snowflakeusers-cl.md) | [Snowflake (via Codeless Connector Framework)](../connectors/snowflakelogsccpdefinition.md) | Analytics, Hunting, Workbooks |
-| [`Snowflake_CL`](../tables/snowflake-cl.md) | [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | Analytics, Hunting, Workbooks |
+| [`Snowflake_CL`](../tables/snowflake-cl.md) 🔶 | [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:

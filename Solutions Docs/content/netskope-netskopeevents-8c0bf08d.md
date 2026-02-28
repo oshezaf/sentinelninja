@@ -18,9 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) | ? | ✓ | ? |
-| [`Netskope_Events_CL`](../tables/netskope-events-cl.md) | ? | ✓ | ? |
-| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) | ? | ✓ | ? |
+| [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) 🔶 | ? | ✓ | ? |
+| [`Netskope_Events_CL`](../tables/netskope-events-cl.md) 🔶 | ? | ✓ | ? |
+| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

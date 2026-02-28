@@ -57,7 +57,7 @@ This solution uses **14 table(s)**:
 | [`AuditLogs`](../tables/auditlogs.md) | - | Workbooks |
 | [`AzureActivity`](../tables/azureactivity.md) | - | Hunting, Workbooks |
 | [`EmailEvents`](../tables/emailevents.md) | - | Workbooks |
-| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) | - | Analytics, Hunting |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 | - | Analytics, Hunting |
 | [`LAQueryLogs`](../tables/laquerylogs.md) | - | Workbooks |
 | [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
@@ -80,6 +80,8 @@ The following **6 table(s)** are used internally by this solution's content item
 | [`SecurityIncident`](../tables/securityincident.md) | - | Analytics, Workbooks |
 | [`Watchlist`](../tables/watchlist.md) | - | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:

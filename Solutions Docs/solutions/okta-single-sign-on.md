@@ -41,12 +41,14 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) so
 
 This solution provides **2 data connector(s)** (plus 2 discovered⚠️):
 
-- [Okta Single Sign-On](../connectors/oktasso.md)
+- [Okta Single Sign-On](../connectors/oktasso.md) 🔶
 - [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) ⚠️
-- [Okta Single Sign-On](../connectors/oktassov2.md)
-- [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) ⚠️
+- [Okta Single Sign-On](../connectors/oktassov2.md) 🔶
+- [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) ⚠️ 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -56,8 +58,10 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`OktaNativePoller_CL`](../tables/oktanativepoller-cl.md) | [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) | - |
 | [`OktaV2_CL`](../tables/oktav2-cl.md) | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) | Analytics, Hunting, Workbooks |
-| [`Okta_CL`](../tables/okta-cl.md) | [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) | Analytics, Hunting, Workbooks |
+| [`Okta_CL`](../tables/okta-cl.md) 🔶 | [Okta Single Sign-On](../connectors/oktassov2.md), [Okta Single Sign-On](../connectors/oktasso.md), [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **24 content item(s)**:

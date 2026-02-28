@@ -35,9 +35,11 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Forcepoint DLP](../connectors/forcepoint-dlp.md) ⚠️
+- [Forcepoint DLP](../connectors/forcepoint-dlp.md) ⚠️ 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -45,8 +47,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) | [Forcepoint DLP](../connectors/forcepoint-dlp.md) | Workbooks |
+| [`ForcepointDLPEvents_CL`](../tables/forcepointdlpevents-cl.md) 🔶 | [Forcepoint DLP](../connectors/forcepoint-dlp.md) | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

@@ -28,7 +28,9 @@ The [Transmit Security] data connector provides the capability to ingest common 
 
 This solution provides **1 data connector(s)**:
 
-- [Transmit Security Connector](../connectors/transmitsecurity.md)
+- [Transmit Security Connector](../connectors/transmitsecurity.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -36,8 +38,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TransmitSecurityActivity_CL`](../tables/transmitsecurityactivity-cl.md) | [Transmit Security Connector](../connectors/transmitsecurity.md) | - |
+| [`TransmitSecurityActivity_CL`](../tables/transmitsecurityactivity-cl.md) 🔶 | [Transmit Security Connector](../connectors/transmitsecurity.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** |                 **Change History**                  |

@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✗ | ✗ |
-| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) | ✓ | ✓ | ✓ |
+| [`Ubiquiti_CL`](../tables/ubiquiti-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ---
 

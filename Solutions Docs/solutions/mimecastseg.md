@@ -35,7 +35,9 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 
 This solution provides **1 data connector(s)**:
 
-- [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md)
+- [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,9 +45,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md) | [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Analytics |
-| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) | [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Analytics, Workbooks |
+| [`MimecastDLP_CL`](../tables/mimecastdlp-cl.md) 🔶 | [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Analytics |
+| [`MimecastSIEM_CL`](../tables/mimecastsiem-cl.md) 🔶 | [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Analytics, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **10 content item(s)**:

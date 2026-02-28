@@ -27,7 +27,9 @@
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Key Vault](../connectors/azurekeyvault.md)
+- [Azure Key Vault](../connectors/azurekeyvault.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -35,7 +37,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Key Vault](../connectors/azurekeyvault.md) | Analytics, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure Key Vault](../connectors/azurekeyvault.md) | Analytics, Workbooks |
 
 ### Internal Tables
 
@@ -46,6 +48,8 @@ The following **2 table(s)** are used internally by this solution's content item
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:

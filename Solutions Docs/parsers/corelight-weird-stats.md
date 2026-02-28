@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_weird_stats_CL`](../tables/corelight-v2-weird-stats-cl.md) | ? | ✓ | ? |
+| [`Corelight_v2_weird_stats_CL`](../tables/corelight-v2-weird-stats-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

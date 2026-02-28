@@ -33,7 +33,9 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 This solution provides **1 data connector(s)**:
 
-- [SenservaPro (Preview)](../connectors/senservapro.md)
+- [SenservaPro (Preview)](../connectors/senservapro.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,8 +43,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SenservaPro_CL`](../tables/senservapro-cl.md) | [SenservaPro (Preview)](../connectors/senservapro.md) | Analytics, Hunting, Workbooks |
+| [`SenservaPro_CL`](../tables/senservapro-cl.md) 🔶 | [SenservaPro (Preview)](../connectors/senservapro.md) | Analytics, Hunting, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **33 content item(s)**:

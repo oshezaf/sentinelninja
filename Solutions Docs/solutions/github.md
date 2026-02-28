@@ -41,7 +41,9 @@ This solution provides **3 data connector(s)**:
 
 - [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md)
 - [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md)
-- [GitHub (using Webhooks)](../connectors/githubwebhook.md)
+- [GitHub (using Webhooks)](../connectors/githubwebhook.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -54,8 +56,10 @@ This solution uses **6 table(s)**:
 | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | - | Analytics |
 | [`GitHub_CL`](../tables/github-cl.md) | - | Analytics |
 | [`ImpactedUser`](../tables/impacteduser.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) 🔶 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **28 content item(s)**:

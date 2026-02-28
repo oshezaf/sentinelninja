@@ -43,7 +43,9 @@ The Abnormal Security Events solution provides the capability to ingest threat a
 
 This solution provides **1 data connector(s)**:
 
-- [AbnormalSecurity ](../connectors/abnormalsecurity.md)
+- [AbnormalSecurity ](../connectors/abnormalsecurity.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -51,9 +53,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ABNORMAL_CASES_CL`](../tables/abnormal-cases-cl.md) | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
-| [`ABNORMAL_THREAT_MESSAGES_CL`](../tables/abnormal-threat-messages-cl.md) | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
+| [`ABNORMAL_CASES_CL`](../tables/abnormal-cases-cl.md) 🔶 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
+| [`ABNORMAL_THREAT_MESSAGES_CL`](../tables/abnormal-threat-messages-cl.md) 🔶 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |

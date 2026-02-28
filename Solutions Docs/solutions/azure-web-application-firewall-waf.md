@@ -27,7 +27,9 @@ The Azure Web Application Firewall (WAF) solution for Microsoft Sentinel allows 
 
 This solution provides **1 data connector(s)**:
 
-- [Azure Web Application Firewall (WAF)](../connectors/waf.md)
+- [Azure Web Application Firewall (WAF)](../connectors/waf.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,9 +39,11 @@ This solution uses **4 table(s)**:
 |-------|-------------------|----------------|
 | [`AGWAccessLogs`](../tables/agwaccesslogs.md) | - | Analytics |
 | [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | - | Analytics |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) | [Azure Web Application Firewall (WAF)](../connectors/waf.md) | Analytics, Workbooks |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | [Azure Web Application Firewall (WAF)](../connectors/waf.md) | Analytics, Workbooks |
 | [`Event`](../tables/event.md) | - | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **14 content item(s)**:

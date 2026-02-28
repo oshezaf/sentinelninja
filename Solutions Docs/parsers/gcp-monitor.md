@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`GCP_MONITORINGV2_CL`](../tables/gcp-monitoringv2-cl.md) | ? | ? | ? |
-| [`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) | ? | ✓ | ? |
+| [`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

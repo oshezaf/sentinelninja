@@ -27,7 +27,9 @@ The [NXLog LinuxAudit](https://docs.nxlog.co/refman/current/im/linuxaudit.html) 
 
 This solution provides **1 data connector(s)**:
 
-- [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md)
+- [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -35,8 +37,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`LinuxAudit_CL`](../tables/linuxaudit-cl.md) | [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md) | - |
+| [`LinuxAudit_CL`](../tables/linuxaudit-cl.md) 🔶 | [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md) | - |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

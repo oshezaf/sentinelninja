@@ -34,7 +34,9 @@ The [SailPoint Integration](https://www.sailpoint.com/) solution provides the ca
 
 This solution provides **1 data connector(s)**:
 
-- [SailPoint IdentityNow](../connectors/sailpointidentitynow.md)
+- [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,9 +44,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) | Analytics |
-| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) | Analytics |
+| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) 🔶 | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) | Analytics |
+| [`SailPointIDN_Triggers_CL`](../tables/sailpointidn-triggers-cl.md) 🔶 | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) | Analytics |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **6 content item(s)**:

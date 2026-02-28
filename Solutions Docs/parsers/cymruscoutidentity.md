@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Identity_Data_CL`](../tables/identity-data-cl.md) | ? | ✓ | ? |
+| [`Identity_Data_CL`](../tables/identity-data-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

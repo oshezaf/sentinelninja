@@ -29,7 +29,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md)
+- [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -37,8 +39,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Perimeter81_CL`](../tables/perimeter81-cl.md) | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) | Workbooks |
+| [`Perimeter81_CL`](../tables/perimeter81-cl.md) 🔶 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) | Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

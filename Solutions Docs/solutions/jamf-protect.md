@@ -36,11 +36,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) | - | Analytics |
+| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) 🔶 | - | Analytics |
 | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
 | [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Workbooks |
 | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
 
+
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:
