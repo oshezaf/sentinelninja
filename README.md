@@ -46,17 +46,6 @@ Comprehensive reference documentation for Microsoft Sentinel Solutions, automati
 - [solution_dependencies.csv](Solutions%20Docs/solution_dependencies.csv) – Dependencies between solutions (explicit and ASIM-based)
 - [solutions_connectors_tables_issues_and_exceptions_report.csv](Solutions%20Docs/solutions_connectors_tables_issues_and_exceptions_report.csv) – Issues and exceptions found during analysis
 
-### 📤 [Kusto Uploader](kusto-uploader/README.md)
-
-A utility to upload CSV files to Azure Data Explorer (Kusto) clusters. Can upload any CSV file or download the latest **[Solution Analyzer](https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Solutions%20Analyzer)** data directly from GitHub and upload it to your Kusto cluster for querying.
-
-**Features:**
-- Upload any CSV file to Kusto
-- Download and upload Solution Analyzer data from GitHub with `--solution-analyzer`
-- Automatic schema detection
-- Azure CLI authentication
-- Dry run mode for previewing operations
-
 ## Related Resources
 
 - [Azure-Sentinel GitHub Repository](https://github.com/Azure/Azure-Sentinel) – Cloud-native SIEM for intelligent security analytics
