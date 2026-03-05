@@ -39,9 +39,9 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 This solution provides **1 data connector(s)**:
 
-- [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) �
+- [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,11 +49,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) � | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
-| [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) � | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
+| [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) 🔶 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
+| [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) 🔶 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) | Playbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:
@@ -75,8 +75,8 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TenableIOAssets](../content/tenableio-tenableioassets-6c5ef8f1-8bb3-4444-921d-2d9ac007f469-b2865919.md) ⚠️ | - | [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) *(read)* |
-| [TenableIOVulnerabilities](../content/tenableio-tenableiovulnerabilities-4099e6de-30d4-4d7a-85df-caafe8f858fe-eb4323cc.md) ⚠️ | - | [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) *(read)* |
+| [TenableIOAssets](../parsers/tenableioassets.md) ⚠️ | - | [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) *(read)* |
+| [TenableIOVulnerabilities](../parsers/tenableiovulnerabilities.md) ⚠️ | - | [`Tenable_IO_Vuln_CL`](../tables/tenable-io-vuln-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

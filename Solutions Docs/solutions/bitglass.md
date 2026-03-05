@@ -39,9 +39,9 @@ The [Bitglass](https://www.forcepoint.com/bitglass) solution provides the capabi
 
 This solution provides **1 data connector(s)**:
 
-- [Bitglass](../connectors/bitglass.md) �
+- [Bitglass](../connectors/bitglass.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +49,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) � | [Bitglass](../connectors/bitglass.md) | Analytics, Hunting, Workbooks |
+| [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) 🔶 | [Bitglass](../connectors/bitglass.md) | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -104,7 +104,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Bitglass](../content/bitglass-bitglass-db22f541-d2fe-4874-973b-7955e0a66e86-4f757f43.md) | - | [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) *(read)* |
+| [Bitglass](../parsers/bitglass.md) | - | [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) *(read)* |
 
 ## Release Notes
 

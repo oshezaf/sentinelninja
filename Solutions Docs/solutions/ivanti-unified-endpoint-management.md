@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IvantiUEMEvent](../content/ivanti-unified-endpoint-management-ivantiuemevent-0a1bef4b-5f78-4b1a-927d-e4383e0f741e-30b98c5e.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [IvantiUEMEvent](../parsers/ivantiuemevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

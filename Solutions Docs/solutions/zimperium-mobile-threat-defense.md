@@ -37,11 +37,11 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
 
-- [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) ⚠️ �
+- [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) ⚠️ 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,11 +49,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ZimperiumMitigationLog_CL`](../tables/zimperiummitigationlog-cl.md) � | [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) | - |
-| [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) � | [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) | Workbooks |
+| [`ZimperiumMitigationLog_CL`](../tables/zimperiummitigationlog-cl.md) 🔶 | [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) | - |
+| [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) 🔶 | [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

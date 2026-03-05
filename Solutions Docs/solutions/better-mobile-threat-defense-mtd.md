@@ -39,9 +39,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) �
+- [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,13 +49,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BetterMTDAppLog_CL`](../tables/bettermtdapplog-cl.md) � | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) | Workbooks |
-| [`BetterMTDDeviceLog_CL`](../tables/bettermtddevicelog-cl.md) � | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) | Workbooks |
-| [`BetterMTDIncidentLog_CL`](../tables/bettermtdincidentlog-cl.md) � | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) | Workbooks |
-| [`BetterMTDNetflowLog_CL`](../tables/bettermtdnetflowlog-cl.md) � | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) | Workbooks |
+| [`BetterMTDAppLog_CL`](../tables/bettermtdapplog-cl.md) 🔶 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) | Workbooks |
+| [`BetterMTDDeviceLog_CL`](../tables/bettermtddevicelog-cl.md) 🔶 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) | Workbooks |
+| [`BetterMTDIncidentLog_CL`](../tables/bettermtdincidentlog-cl.md) 🔶 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) | Workbooks |
+| [`BetterMTDNetflowLog_CL`](../tables/bettermtdnetflowlog-cl.md) 🔶 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

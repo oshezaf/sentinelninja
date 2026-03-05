@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`eset_CL`](../tables/eset-cl.md) � | ? | ✓ | ? |
+| [`eset_CL`](../tables/eset-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

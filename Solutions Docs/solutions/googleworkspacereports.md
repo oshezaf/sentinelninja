@@ -40,11 +40,11 @@ The [Google Workspace](https://workspace.google.com/) solution for Microsoft Sen
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [Google Workspace Activities (via Codeless Connector Framework)](../connectors/googleworkspaceccpdefinition.md)
-- [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) ⚠️ �
+- [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) ⚠️ 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -52,32 +52,32 @@ This solution uses **23 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GWorkspace_ReportsAPI_access_transparency_CL`](../tables/gworkspace-reportsapi-access-transparency-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_admin_CL`](../tables/gworkspace-reportsapi-admin-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_calendar_CL`](../tables/gworkspace-reportsapi-calendar-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_chat_CL`](../tables/gworkspace-reportsapi-chat-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_chrome_CL`](../tables/gworkspace-reportsapi-chrome-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_context_aware_access_CL`](../tables/gworkspace-reportsapi-context-aware-access-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_data_studio_CL`](../tables/gworkspace-reportsapi-data-studio-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_drive_CL`](../tables/gworkspace-reportsapi-drive-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_gcp_CL`](../tables/gworkspace-reportsapi-gcp-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_gplus_CL`](../tables/gworkspace-reportsapi-gplus-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_groups_CL`](../tables/gworkspace-reportsapi-groups-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_groups_enterprise_CL`](../tables/gworkspace-reportsapi-groups-enterprise-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_jamboard_CL`](../tables/gworkspace-reportsapi-jamboard-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_keep_CL`](../tables/gworkspace-reportsapi-keep-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_login_CL`](../tables/gworkspace-reportsapi-login-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_meet_CL`](../tables/gworkspace-reportsapi-meet-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_mobile_CL`](../tables/gworkspace-reportsapi-mobile-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_rules_CL`](../tables/gworkspace-reportsapi-rules-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_saml_CL`](../tables/gworkspace-reportsapi-saml-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_token_CL`](../tables/gworkspace-reportsapi-token-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
-| [`GWorkspace_ReportsAPI_user_accounts_CL`](../tables/gworkspace-reportsapi-user-accounts-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_access_transparency_CL`](../tables/gworkspace-reportsapi-access-transparency-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_admin_CL`](../tables/gworkspace-reportsapi-admin-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_calendar_CL`](../tables/gworkspace-reportsapi-calendar-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_chat_CL`](../tables/gworkspace-reportsapi-chat-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_chrome_CL`](../tables/gworkspace-reportsapi-chrome-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_context_aware_access_CL`](../tables/gworkspace-reportsapi-context-aware-access-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_data_studio_CL`](../tables/gworkspace-reportsapi-data-studio-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_drive_CL`](../tables/gworkspace-reportsapi-drive-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_gcp_CL`](../tables/gworkspace-reportsapi-gcp-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_gplus_CL`](../tables/gworkspace-reportsapi-gplus-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_groups_CL`](../tables/gworkspace-reportsapi-groups-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_groups_enterprise_CL`](../tables/gworkspace-reportsapi-groups-enterprise-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_jamboard_CL`](../tables/gworkspace-reportsapi-jamboard-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_keep_CL`](../tables/gworkspace-reportsapi-keep-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_login_CL`](../tables/gworkspace-reportsapi-login-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_meet_CL`](../tables/gworkspace-reportsapi-meet-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_mobile_CL`](../tables/gworkspace-reportsapi-mobile-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_rules_CL`](../tables/gworkspace-reportsapi-rules-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_saml_CL`](../tables/gworkspace-reportsapi-saml-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_token_CL`](../tables/gworkspace-reportsapi-token-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GWorkspace_ReportsAPI_user_accounts_CL`](../tables/gworkspace-reportsapi-user-accounts-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
 | [`GoogleWorkspaceReports`](../tables/googleworkspacereports.md) | [Google Workspace Activities (via Codeless Connector Framework)](../connectors/googleworkspaceccpdefinition.md) | - |
-| [`GoogleWorkspaceReports_CL`](../tables/googleworkspacereports-cl.md) � | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
+| [`GoogleWorkspaceReports_CL`](../tables/googleworkspacereports-cl.md) 🔶 | [[DEPRECATED] Google Workspace (G Suite)](../connectors/googleworkspacereportsapi.md) | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **26 content item(s)**:
@@ -133,7 +133,7 @@ This solution includes **26 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GWorkspaceActivityReports](../content/googleworkspacereports-gworkspaceactivityreports-6670f6fc-ab2c-4ae4-a3ac-812dd9d4d3c3-308f41db.md) | - | [`GWorkspace_ReportsAPI_access_transparency_CL`](../tables/gworkspace-reportsapi-access-transparency-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_admin_CL`](../tables/gworkspace-reportsapi-admin-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_calendar_CL`](../tables/gworkspace-reportsapi-calendar-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_chat_CL`](../tables/gworkspace-reportsapi-chat-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_chrome_CL`](../tables/gworkspace-reportsapi-chrome-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_context_aware_access_CL`](../tables/gworkspace-reportsapi-context-aware-access-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_data_studio_CL`](../tables/gworkspace-reportsapi-data-studio-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_drive_CL`](../tables/gworkspace-reportsapi-drive-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_gcp_CL`](../tables/gworkspace-reportsapi-gcp-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_gplus_CL`](../tables/gworkspace-reportsapi-gplus-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_groups_CL`](../tables/gworkspace-reportsapi-groups-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_groups_enterprise_CL`](../tables/gworkspace-reportsapi-groups-enterprise-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_jamboard_CL`](../tables/gworkspace-reportsapi-jamboard-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_keep_CL`](../tables/gworkspace-reportsapi-keep-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_login_CL`](../tables/gworkspace-reportsapi-login-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_meet_CL`](../tables/gworkspace-reportsapi-meet-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_mobile_CL`](../tables/gworkspace-reportsapi-mobile-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_rules_CL`](../tables/gworkspace-reportsapi-rules-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_saml_CL`](../tables/gworkspace-reportsapi-saml-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_token_CL`](../tables/gworkspace-reportsapi-token-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_user_accounts_CL`](../tables/gworkspace-reportsapi-user-accounts-cl.md) *(read)*<br>[`GoogleWorkspaceReports_CL`](../tables/googleworkspacereports-cl.md) *(read)* |
+| [GWorkspaceActivityReports](../parsers/gworkspaceactivityreports.md) | - | [`GWorkspace_ReportsAPI_access_transparency_CL`](../tables/gworkspace-reportsapi-access-transparency-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_admin_CL`](../tables/gworkspace-reportsapi-admin-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_calendar_CL`](../tables/gworkspace-reportsapi-calendar-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_chat_CL`](../tables/gworkspace-reportsapi-chat-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_chrome_CL`](../tables/gworkspace-reportsapi-chrome-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_context_aware_access_CL`](../tables/gworkspace-reportsapi-context-aware-access-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_data_studio_CL`](../tables/gworkspace-reportsapi-data-studio-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_drive_CL`](../tables/gworkspace-reportsapi-drive-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_gcp_CL`](../tables/gworkspace-reportsapi-gcp-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_gplus_CL`](../tables/gworkspace-reportsapi-gplus-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_groups_CL`](../tables/gworkspace-reportsapi-groups-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_groups_enterprise_CL`](../tables/gworkspace-reportsapi-groups-enterprise-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_jamboard_CL`](../tables/gworkspace-reportsapi-jamboard-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_keep_CL`](../tables/gworkspace-reportsapi-keep-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_login_CL`](../tables/gworkspace-reportsapi-login-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_meet_CL`](../tables/gworkspace-reportsapi-meet-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_mobile_CL`](../tables/gworkspace-reportsapi-mobile-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_rules_CL`](../tables/gworkspace-reportsapi-rules-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_saml_CL`](../tables/gworkspace-reportsapi-saml-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_token_CL`](../tables/gworkspace-reportsapi-token-cl.md) *(read)*<br>[`GWorkspace_ReportsAPI_user_accounts_CL`](../tables/gworkspace-reportsapi-user-accounts-cl.md) *(read)*<br>[`GoogleWorkspaceReports_CL`](../tables/googleworkspacereports-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

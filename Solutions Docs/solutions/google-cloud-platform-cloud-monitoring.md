@@ -42,11 +42,11 @@ The [Google Cloud Platform](https://cloud.google.com/gcp) Cloud Monitoring data 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [Google Cloud Platform Cloud Monitoring (via Codeless Connector Framework)](../connectors/gcpmonitorccpdefinition.md)
-- [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) ⚠️ �
+- [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) ⚠️ 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -55,10 +55,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`GCPMonitoring`](../tables/gcpmonitoring.md) | [Google Cloud Platform Cloud Monitoring (via Codeless Connector Framework)](../connectors/gcpmonitorccpdefinition.md) | - |
-| [`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) � | [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) | - |
+| [`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) 🔶 | [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -71,7 +71,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GCP_MONITOR](../content/google-cloud-platform-cloud-monitoring-gcp-monitor-d2972be4-978f-41fb-88e7-e0c10569a49f-419e4a1b.md) | - | [`GCP_MONITORINGV2_CL`](../tables/gcp-monitoringv2-cl.md) *(read)*<br>[`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) *(read)* |
+| [GCP_MONITOR](../parsers/gcp-monitor.md) | - | [`GCP_MONITORINGV2_CL`](../tables/gcp-monitoringv2-cl.md) *(read)*<br>[`GCP_MONITORING_CL`](../tables/gcp-monitoring-cl.md) *(read)* |
 
 ## Release Notes
 

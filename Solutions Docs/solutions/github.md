@@ -45,9 +45,9 @@ This solution provides **3 data connector(s)**:
 
 - [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md)
 - [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md)
-- [GitHub (using Webhooks)](../connectors/githubwebhook.md) �
+- [GitHub (using Webhooks)](../connectors/githubwebhook.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -60,10 +60,10 @@ This solution uses **6 table(s)**:
 | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | - | Analytics |
 | [`GitHub_CL`](../tables/github-cl.md) | - | Analytics |
 | [`ImpactedUser`](../tables/impacteduser.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
-| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) � | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
+| [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) 🔶 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **28 content item(s)**:
@@ -118,10 +118,10 @@ This solution includes **28 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GitHubAuditData](../content/github-githubauditdata-32d7c900-875f-43d6-9e48-987fd5df3762-0a905c13.md) | - | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) *(read)*<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) *(read)*<br>[`ImpactedUser`](../tables/impacteduser.md) *(read)* |
-| [GitHubCodeScanningData](../content/github-githubcodescanningdata-090a125e-1e28-4f56-96be-bf9a2e51042b-5e7bd872.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
-| [GitHubDependabotData](../content/github-githubdependabotdata-96de3515-a65e-4edc-8b1a-90c780221bb2-77adf576.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
-| [GitHubSecretScanningData](../content/github-githubsecretscanningdata-2bcbf832-074f-4bd3-b043-f2c7873f5630-db1aedc9.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
+| [GitHubAuditData](../parsers/githubauditdata.md) | - | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) *(read)*<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) *(read)*<br>[`ImpactedUser`](../tables/impacteduser.md) *(read)* |
+| [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
+| [GitHubDependabotData](../parsers/githubdependabotdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
+| [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
 
 ## Release Notes
 

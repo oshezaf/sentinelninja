@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) � | ? | ✓ | ? |
+| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
 

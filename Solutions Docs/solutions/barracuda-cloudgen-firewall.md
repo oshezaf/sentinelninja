@@ -83,7 +83,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CGFWFirewallActivity](../content/barracuda-cloudgen-firewall-cgfwfirewallactivity-07ff282b-3a46-43a4-80e8-27ea5dcd3192-64ddbe7d.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [CGFWFirewallActivity](../parsers/cgfwfirewallactivity.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

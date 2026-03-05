@@ -75,7 +75,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecDLP](../content/broadcom-symantecdlp-symantecdlp-bea87dea-1c01-461b-9649-6619dc2d989c-3ce31b2f.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [SymantecDLP](../parsers/symantecdlp.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

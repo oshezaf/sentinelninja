@@ -31,9 +31,9 @@ Endpoint Privilege Manager, a critical and foundational endpoint control address
 
 This solution provides **1 data connector(s)**:
 
-- [CyberArkEPM](../connectors/cyberarkepm.md) �
+- [CyberArkEPM](../connectors/cyberarkepm.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) � | [CyberArkEPM](../connectors/cyberarkepm.md) | Analytics, Hunting, Workbooks |
+| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) 🔶 | [CyberArkEPM](../connectors/cyberarkepm.md) | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -96,7 +96,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CyberArkEPM](../content/cyberarkepm-cyberarkepm-40a61269-9d21-41ac-b5ae-d741e4a4ecde-f8c0e3b1.md) | - | [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) *(read)* |
+| [CyberArkEPM](../parsers/cyberarkepm.md) | - | [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) *(read)* |
 
 ## Release Notes
 

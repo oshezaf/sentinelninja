@@ -32,9 +32,9 @@ Cribl is a vendor neutral, purpose-built processing engine for data security and
 
 This solution provides **1 data connector(s)**:
 
-- [Cribl](../connectors/cribl.md) �
+- [Cribl](../connectors/cribl.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,13 +42,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CriblAccess_CL`](../tables/criblaccess-cl.md) � | [Cribl](../connectors/cribl.md) | - |
-| [`CriblAudit_CL`](../tables/criblaudit-cl.md) � | [Cribl](../connectors/cribl.md) | - |
-| [`CriblInternal_CL`](../tables/criblinternal-cl.md) � | [Cribl](../connectors/cribl.md) | - |
-| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) � | [Cribl](../connectors/cribl.md) | - |
+| [`CriblAccess_CL`](../tables/criblaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
+| [`CriblAudit_CL`](../tables/criblaudit-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
+| [`CriblInternal_CL`](../tables/criblinternal-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
+| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:
@@ -61,10 +61,10 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CriblAccess](../content/cribl-criblaccess-eb7323cf-8cad-42bd-921b-5e18b907002a-f8b653a0.md) | - | [`CriblAccess_CL`](../tables/criblaccess-cl.md) *(read)* |
-| [CriblAudit](../content/cribl-criblaudit-f5e93f79-9e3c-4505-a52e-e634988a8bdb-13f30e88.md) | - | [`CriblAudit_CL`](../tables/criblaudit-cl.md) *(read)* |
-| [CriblInternal](../content/cribl-criblinternal-b934592c-d6b6-48f3-949e-415658687c8e-3430f139.md) | - | [`CriblInternal_CL`](../tables/criblinternal-cl.md) *(read)* |
-| [CriblUIAccess](../content/cribl-cribluiaccess-8bc08089-197d-452e-bb5b-3bdf4b8a95b0-aadb1b5a.md) | - | [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) *(read)* |
+| [CriblAccess](../parsers/criblaccess.md) | - | [`CriblAccess_CL`](../tables/criblaccess-cl.md) *(read)* |
+| [CriblAudit](../parsers/criblaudit.md) | - | [`CriblAudit_CL`](../tables/criblaudit-cl.md) *(read)* |
+| [CriblInternal](../parsers/criblinternal.md) | - | [`CriblInternal_CL`](../tables/criblinternal-cl.md) *(read)* |
+| [CriblUIAccess](../parsers/cribluiaccess.md) | - | [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) *(read)* |
 
 ## Release Notes
 

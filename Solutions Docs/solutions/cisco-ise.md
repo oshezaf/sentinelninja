@@ -122,7 +122,7 @@ This solution includes **25 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoISEEvent](../content/cisco-ise-ciscoiseevent-6c27521f-47f0-42b5-8be6-1503b8e42c65-d60b053f.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [CiscoISEEvent](../parsers/ciscoiseevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

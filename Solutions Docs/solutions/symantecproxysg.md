@@ -89,7 +89,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecProxySG](../content/symantecproxysg-symantecproxysg-58b3074c-519b-4812-b784-e8bd7712089a-5c90419b.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [SymantecProxySG](../parsers/symantecproxysg.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

@@ -39,11 +39,11 @@ This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
 - [Oracle Cloud Infrastructure (via CCP) – Preview](../connectors/oci-connector-ccp-definition.md) ⚠️
 - [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md)
-- [[DEPRECATED] Oracle Cloud Infrastructure](../connectors/oraclecloudinfrastructurelogsconnector.md) ⚠️ �
+- [[DEPRECATED] Oracle Cloud Infrastructure](../connectors/oraclecloudinfrastructurelogsconnector.md) ⚠️ 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -52,10 +52,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) | [Oracle Cloud Infrastructure (via CCP) – Preview](../connectors/oci-connector-ccp-definition.md), [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) | Analytics, Hunting, Workbooks |
-| [`OCI_Logs_CL`](../tables/oci-logs-cl.md) � | [[DEPRECATED] Oracle Cloud Infrastructure](../connectors/oraclecloudinfrastructurelogsconnector.md) | Analytics, Hunting, Workbooks |
+| [`OCI_Logs_CL`](../tables/oci-logs-cl.md) 🔶 | [[DEPRECATED] Oracle Cloud Infrastructure](../connectors/oraclecloudinfrastructurelogsconnector.md) | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -107,7 +107,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OCILogs](../content/oracle-cloud-infrastructure-ocilogs-8be45447-4a81-4731-8a87-0f2cbb5aa5b8-49e11145.md) | - | [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) *(read)*<br>[`OCI_Logs_CL`](../tables/oci-logs-cl.md) *(read)* |
+| [OCILogs](../parsers/ocilogs.md) | - | [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) *(read)*<br>[`OCI_Logs_CL`](../tables/oci-logs-cl.md) *(read)* |
 
 ## Release Notes
 

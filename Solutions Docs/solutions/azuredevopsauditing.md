@@ -110,7 +110,7 @@ This solution includes **37 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ADOAuditLogs](../content/azuredevopsauditing-adoauditlogs-dea70aa0-cd14-4e7f-bac4-a73d9d57eae1-151d7762.md) | | | [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) *(read)*<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) *(read)* |
+| [ADOAuditLogs](../parsers/adoauditlogs.md) | | | [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) *(read)*<br>[`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) *(read)* |
 
 ## Release Notes
 

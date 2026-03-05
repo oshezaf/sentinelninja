@@ -25,9 +25,9 @@ The [Feedly](https://feedly.com/i/landing/threatIntelligence) Solution for Micro
 
 This solution provides **1 data connector(s)**:
 
-- [Feedly](../connectors/feedly.md) �
+- [Feedly](../connectors/feedly.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -35,10 +35,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) � | [Feedly](../connectors/feedly.md) | - |
+| [`feedly_indicators_CL`](../tables/feedly-indicators-cl.md) 🔶 | [Feedly](../connectors/feedly.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                              |

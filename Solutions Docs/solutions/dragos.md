@@ -85,10 +85,10 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DragosNotificationsToSentinel](../content/dragos-dragosnotificationstosentinel-b5237116-c40a-4cbe-bac6-c35564a0c578-13e95999.md) | - | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
-| [DragosPullNotificationsToSentinel](../content/dragos-dragospullnotificationstosentinel-b5237116-c40a-4cbe-bac6-c35564a0c578-f61550b0.md) | - | [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) *(read)*<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
-| [DragosPushNotificationsToSentinel](../content/dragos-dragospushnotificationstosentinel-90305294-242b-4568-8878-8fc65204f47a-40779fe8.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
-| [DragosSeverityToSentinelSeverity](../content/dragos-dragosseveritytosentinelseverity-0a51be06-1211-4d3b-8683-a4e44f069b7d-ff1b8b2f.md) | - | - |
+| [DragosNotificationsToSentinel](../parsers/dragosnotificationstosentinel.md) | - | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
+| [DragosPullNotificationsToSentinel](../parsers/dragospullnotificationstosentinel.md) | - | [`DragosAlerts_CL`](../tables/dragosalerts-cl.md) *(read)*<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
+| [DragosPushNotificationsToSentinel](../parsers/dragospushnotificationstosentinel.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [DragosSeverityToSentinelSeverity](../parsers/dragosseveritytosentinelseverity.md) | - | - |
 
 ## Release Notes
 

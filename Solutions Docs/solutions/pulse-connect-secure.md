@@ -89,7 +89,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PulseConnectSecure](../content/pulse-connect-secure-pulseconnectsecure-7a608d43-10b5-4113-8d74-6478f05f2595-233f88ba.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [PulseConnectSecure](../parsers/pulseconnectsecure.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

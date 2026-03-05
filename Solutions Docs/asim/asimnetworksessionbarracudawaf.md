@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`barracuda_CL`](../tables/barracuda-cl.md) � | ? | ✓ | ? |
+| [`barracuda_CL`](../tables/barracuda-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Parameters
 

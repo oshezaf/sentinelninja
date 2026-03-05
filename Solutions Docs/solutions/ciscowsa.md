@@ -114,7 +114,7 @@ This solution includes **23 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoWSAEvent](../content/ciscowsa-ciscowsaevent-32aa549f-5c46-4bd0-acd1-81f0d862da32-e0f65045.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [CiscoWSAEvent](../parsers/ciscowsaevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

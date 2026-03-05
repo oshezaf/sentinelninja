@@ -89,7 +89,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecVIP](../content/symantec-vip-symantecvip-ed8a116c-07b4-441c-b74b-395937c264a1-ded005b1.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [SymantecVIP](../parsers/symantecvip.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

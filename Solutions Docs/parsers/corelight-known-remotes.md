@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_known_remotes_CL`](../tables/corelight-v2-known-remotes-cl.md) � | ? | ✓ | ? |
+| [`Corelight_v2_known_remotes_CL`](../tables/corelight-v2-known-remotes-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

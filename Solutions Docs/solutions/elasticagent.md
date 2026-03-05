@@ -62,7 +62,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ElasticAgentEvent](../content/elasticagent-elasticagentevent-abc32ce9-079e-49d6-a216-c17775f2aa4b-432c6b65.md) ⚠️ | - | [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) *(read)* |
+| [ElasticAgentEvent](../parsers/elasticagentevent.md) ⚠️ | - | [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

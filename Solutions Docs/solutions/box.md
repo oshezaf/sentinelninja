@@ -39,10 +39,10 @@ The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterpri
 
 This solution provides **2 data connector(s)**:
 
-- [Box](../connectors/boxdataconnector.md) �
-- [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) �
+- [Box](../connectors/boxdataconnector.md) 🔶
+- [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,11 +50,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) � | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
-| [`BoxEvents_CL`](../tables/boxevents-cl.md) � | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) 🔶 | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | [Box](../connectors/boxdataconnector.md), [Box Events (CCP)](../connectors/boxeventsccpdefinition.md) | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -106,7 +106,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [BoxEvents](../content/box-boxevents-231a04da-9a8d-4cd6-8a20-2da7ded173ba-dc778668.md) | - | [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) *(read)*<br>[`BoxEvents_CL`](../tables/boxevents-cl.md) *(read)* |
+| [BoxEvents](../parsers/boxevents.md) | - | [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) *(read)*<br>[`BoxEvents_CL`](../tables/boxevents-cl.md) *(read)* |
 
 ## Release Notes
 

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) � | ? | ✓ | ? |
+| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

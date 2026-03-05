@@ -93,7 +93,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SymantecEndpointProtection](../content/symantec-endpoint-protection-symantecendpointprotection-7da088aa-00de-4804-973e-3304d0840ab2-216a4ffb.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [SymantecEndpointProtection](../parsers/symantecendpointprotection.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

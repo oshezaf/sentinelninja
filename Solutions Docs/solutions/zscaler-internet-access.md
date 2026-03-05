@@ -104,8 +104,8 @@ This solution includes **11 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ZScalerFW_Parser](../content/zscaler-internet-access-zscalerfw-parser-a4d32d94-2fb5-41f6-b871-47c71ffff167-b6c1cb0b.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
-| [ZScalerWeb_Parser](../content/zscaler-internet-access-zscalerweb-parser-fda3f601-8321-492e-ae77-e2ed6829be60-9f0b927a.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [ZScalerFW_Parser](../parsers/zscalerfw-parser.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [ZScalerWeb_Parser](../parsers/zscalerweb-parser.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

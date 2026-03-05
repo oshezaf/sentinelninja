@@ -115,7 +115,7 @@ This solution includes **21 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [InfobloxCDC](../content/infoblox-cloud-data-connector-infobloxcdc-3815f65b-5c24-49ea-ac06-c24b4223a5b6-dbe6720d.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [InfobloxCDC](../parsers/infobloxcdc.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

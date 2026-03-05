@@ -39,9 +39,9 @@ b. [Azure Logic Apps](https://azure.microsoft.com/products/logic-apps/#overview)
 
 This solution provides **1 data connector(s)**:
 
-- [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) �
+- [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Internal Tables
 
@@ -49,10 +49,10 @@ The following **1 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) � | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) | Analytics, Playbooks (writes) |
+| [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) 🔶 | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) | Analytics, Playbooks (writes) |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) � | ? | ✓ | ? |
+| [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

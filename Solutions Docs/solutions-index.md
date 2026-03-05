@@ -18,6 +18,8 @@ Browse solutions alphabetically:
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
+> 🚫 **Deprecated:** This solution has been deprecated and replaced by a newer integration.
+
 > <img src="images/asim-logo-small.png" alt="ASIM" height="16"> **Uses ASIM:** This icon indicates the solution uses ASIM parsers for normalized data.
 
 > ➕ **Additional Info:** This item has extra documentation, setup guides, or troubleshooting resources.
@@ -384,10 +386,10 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [MicrosoftDefenderForEndpoint](solutions/microsoftdefenderforendpoint.md) | 2022-01-31 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [MicrosoftPurviewInsiderRiskManagement](solutions/microsoftpurviewinsiderriskmanagement.md) | 2021-10-20 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [Mimecast](solutions/mimecast.md) | 2024-09-10 | Mimecast |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastAudit](solutions/mimecastaudit.md) | 2022-02-24 | Mimecast |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastSEG](solutions/mimecastseg.md) | 2022-02-24 | Mimecast |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastTIRegional](solutions/mimecasttiregional.md) | 2023-08-23 | Mimecast |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastTTP](solutions/mimecastttp.md) | 2022-02-24 | Mimecast |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastAudit](solutions/mimecastaudit.md) 🚫 | 2022-02-24 | Mimecast |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastSEG](solutions/mimecastseg.md) 🚫 | 2022-02-24 | Mimecast |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastTIRegional](solutions/mimecasttiregional.md) 🚫 | 2023-08-23 | Mimecast |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastTTP](solutions/mimecastttp.md) 🚫 | 2022-02-24 | Mimecast |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Minemeld](solutions/minemeld.md) | 2022-10-11 | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Miro.svg" alt="" width="40" height="40"> | [Miro](solutions/miro.md) |  | Miro |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/misp-logo.svg" alt="" width="40" height="40"> | [MISP2Sentinel](solutions/misp2sentinel.md) | 2023-07-29 | Community |

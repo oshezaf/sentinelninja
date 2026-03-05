@@ -40,16 +40,16 @@ b. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.c
 
 This solution provides **8 data connector(s)**:
 
-- [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) �
-- [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) �
+- [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) 🔶
+- [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶
 - [Microsoft Exchange Admin Audit Logs by Event Logs](../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md)
 - [Microsoft Exchange Logs and Events](../connectors/esi-opt2exchangeserverseventlogs.md)
 - [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md)
 - [IIS Logs of Microsoft Exchange Servers](../connectors/esi-opt5exchangeiislogs.md)
-- [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) �
-- [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) �
+- [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) 🔶
+- [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -57,15 +57,15 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) � | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) | Workbooks |
+| [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) 🔶 | [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) | Workbooks |
 | [`Event`](../tables/event.md) | [Microsoft Exchange Admin Audit Logs by Event Logs](../connectors/esi-opt1exchangeadminauditlogsbyeventlogs.md), [Microsoft Exchange Logs and Events](../connectors/esi-opt2exchangeserverseventlogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | Analytics, Workbooks |
-| [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) � | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
-| [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) � | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
+| [`ExchangeHttpProxy_CL`](../tables/exchangehttpproxy-cl.md) 🔶 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
+| [`MessageTrackingLog_CL`](../tables/messagetrackinglog-cl.md) 🔶 | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | - |
 | [`SecurityEvent`](../tables/securityevent.md) | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | Workbooks |
 | [`W3CIISLog`](../tables/w3ciislog.md) | [IIS Logs of Microsoft Exchange Servers](../connectors/esi-opt5exchangeiislogs.md), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **13 content item(s)**:
@@ -97,11 +97,11 @@ This solution includes **13 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeAdminAuditLogs](../content/microsoft-exchange-security-exchange-on-premises-exchangeadminauditlogs-f79a3a19-bb9f-4f06-a109-3e3ac2001be9-f57cf0cf.md) | - | [`Event`](../tables/event.md) *(read)* |
-| [ExchangeConfiguration](../content/microsoft-exchange-security-exchange-on-premises-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620-9b72b1b2.md) | The list of section to query. Default is all. | - |
-| [ExchangeEnvironmentList](../content/microsoft-exchange-security-exchange-on-premises-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a-9abc248f.md) | The target environment to query. Valid values are "On-Premises" or "Online". Default is "On-Premises... | - |
-| [MESCheckVIP](../content/microsoft-exchange-security-exchange-on-premises-mescheckvip-9f0e2122-f511-4e51-83a0-51fbd86d3121-9828634d.md) | The user to verifiy if is a VIP or not. Default value is "all". | - |
-| [MESCompareDataOnPMRA](../content/microsoft-exchange-security-exchange-on-premises-mescomparedataonpmra-0a0f4ea0-6b94-4420-892e-41ca985f2f01-77766893.md) | The Section to compare. Default value is "". | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) *(read)* |
+| [ExchangeAdminAuditLogs](../parsers/exchangeadminauditlogs.md) | - | [`Event`](../tables/event.md) *(read)* |
+| [ExchangeConfiguration](../parsers/exchangeconfiguration.md) | The list of section to query. Default is all. | - |
+| [ExchangeEnvironmentList](../parsers/exchangeenvironmentlist.md) | The target environment to query. Valid values are "On-Premises" or "Online". Default is "On-Premises... | - |
+| [MESCheckVIP](../parsers/mescheckvip.md) | The user to verifiy if is a VIP or not. Default value is "all". | - |
+| [MESCompareDataOnPMRA](../parsers/mescomparedataonpmra.md) | The Section to compare. Default value is "". | [`ESIExchangeConfig_CL`](../tables/esiexchangeconfig-cl.md) *(read)* |
 
 ### Watchlists
 

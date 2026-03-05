@@ -38,9 +38,9 @@ a. [Agent-based log collection (Syslog) ](https://learn.microsoft.com/azure/sent
 
 This solution provides **1 data connector(s)**:
 
-- [Cisco Software Defined WAN](../connectors/ciscosdwan.md) �
+- [Cisco Software Defined WAN](../connectors/ciscosdwan.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -48,11 +48,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) � | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
+| [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) 🔶 | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
 | [`Syslog`](../tables/syslog.md) | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) | Analytics, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:
@@ -91,10 +91,10 @@ This solution includes **12 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoSDWANNetflow](../content/cisco-sd-wan-ciscosdwannetflow-f648b6fb-b2ac-46c9-9df3-21d6e3d68fae-c66b5493.md) ⚠️ | - | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) *(read)* |
-| [CiscoSyslogFW6LogSummary](../content/cisco-sd-wan-ciscosyslogfw6logsummary-73a498e2-9559-403f-9a83-479220e4711b-c50bec1a.md) ⚠️ | - | [`Syslog`](../tables/syslog.md) *(read)* |
-| [CiscoSyslogUTD](../content/cisco-sd-wan-ciscosyslogutd-d68167dc-3161-487f-bccc-981fe71907e1-aba55f17.md) ⚠️ | - | [`Syslog`](../tables/syslog.md) *(read)* |
-| [MapNetflowUsername](../content/cisco-sd-wan-mapnetflowusername-24741b08-e357-4d4f-a873-f55afc59786f-bc8c2353.md) ⚠️ | - | - |
+| [CiscoSDWANNetflow](../parsers/ciscosdwannetflow.md) ⚠️ | - | [`CiscoSDWANNetflow_CL`](../tables/ciscosdwannetflow-cl.md) *(read)* |
+| [CiscoSyslogFW6LogSummary](../parsers/ciscosyslogfw6logsummary.md) ⚠️ | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [CiscoSyslogUTD](../parsers/ciscosyslogutd.md) ⚠️ | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [MapNetflowUsername](../parsers/mapnetflowusername.md) ⚠️ | - | - |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

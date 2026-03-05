@@ -16,7 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Netskope_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2/Data%20Connectors/NetskopeDataConnector/Netskope_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
-| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The [Netskope](https://docs.netskope.com/en/netskope-help/admin-console/rest-api/rest-api-v2-overview-312207/) data connector provides the following capabilities: 
 
@@ -56,23 +56,23 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Netskope_WebTx_metrics_CL`](../tables/netskope-webtx-metrics-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertsdlpdata_CL`](../tables/alertsdlpdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertsmalsitedata_CL`](../tables/alertsmalsitedata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertsmalwaredata_CL`](../tables/alertsmalwaredata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertspolicydata_CL`](../tables/alertspolicydata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertssecurityassessmentdata_CL`](../tables/alertssecurityassessmentdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`alertsubadata_CL`](../tables/alertsubadata-cl.md) � | ✗ | ✓ | ✗ |
-| [`eventsapplicationdata_CL`](../tables/eventsapplicationdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`eventsauditdata_CL`](../tables/eventsauditdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) � | ✗ | ✓ | ✗ |
-| [`eventsincidentdata_CL`](../tables/eventsincidentdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`eventsnetworkdata_CL`](../tables/eventsnetworkdata-cl.md) � | ✗ | ✓ | ✗ |
-| [`eventspagedata_CL`](../tables/eventspagedata-cl.md) � | ✗ | ✓ | ✗ |
+| [`Netskope_WebTx_metrics_CL`](../tables/netskope-webtx-metrics-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertscompromisedcredentialdata_CL`](../tables/alertscompromisedcredentialdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertsctepdata_CL`](../tables/alertsctepdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertsdlpdata_CL`](../tables/alertsdlpdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertsmalsitedata_CL`](../tables/alertsmalsitedata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertsmalwaredata_CL`](../tables/alertsmalwaredata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertspolicydata_CL`](../tables/alertspolicydata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertsquarantinedata_CL`](../tables/alertsquarantinedata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertsremediationdata_CL`](../tables/alertsremediationdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertssecurityassessmentdata_CL`](../tables/alertssecurityassessmentdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`alertsubadata_CL`](../tables/alertsubadata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`eventsapplicationdata_CL`](../tables/eventsapplicationdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`eventsauditdata_CL`](../tables/eventsauditdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`eventsconnectiondata_CL`](../tables/eventsconnectiondata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`eventsincidentdata_CL`](../tables/eventsincidentdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`eventsnetworkdata_CL`](../tables/eventsnetworkdata-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`eventspagedata_CL`](../tables/eventspagedata-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -39,9 +39,9 @@ The [Alibaba Cloud](https://www.alibabacloud.com/product/log-service) solution p
 
 This solution provides **1 data connector(s)**:
 
-- [AliCloud](../connectors/alicloud.md) �
+- [AliCloud](../connectors/alicloud.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +49,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AliCloud_CL`](../tables/alicloud-cl.md) � | [AliCloud](../connectors/alicloud.md) | - |
+| [`AliCloud_CL`](../tables/alicloud-cl.md) 🔶 | [AliCloud](../connectors/alicloud.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -65,7 +65,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AliCloud](../content/alibaba-cloud-alicloud-e310f050-75af-4059-b0ff-0ae7c7db8120-fb2ca7da.md) | - | [`AliCloud_CL`](../tables/alicloud-cl.md) *(read)* |
+| [AliCloud](../parsers/alicloud.md) | - | [`AliCloud_CL`](../tables/alicloud-cl.md) *(read)* |
 
 ## Release Notes
 

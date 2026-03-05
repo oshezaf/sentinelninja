@@ -37,12 +37,12 @@ The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cl
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) ⚠️ �
-- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) �
+- [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) ⚠️ 🔶
+- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,8 +50,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) � | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
-| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) � | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) 🔶 | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
+| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 
 ### Internal Tables
 
@@ -62,7 +62,7 @@ The following **1 table(s)** are used internally by this solution's content item
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | - | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:
@@ -91,7 +91,7 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SalesforceServiceCloud](../content/salesforce-service-cloud-salesforceservicecloud-0e8b5f17-c0a3-4b5e-af4d-f55231283fff-dd3b03e4.md) | - | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) *(read)*<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) *(read)* |
+| [SalesforceServiceCloud](../parsers/salesforceservicecloud.md) | - | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) *(read)*<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) *(read)* |
 
 ## Release Notes
 

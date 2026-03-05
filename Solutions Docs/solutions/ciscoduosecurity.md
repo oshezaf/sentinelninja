@@ -43,9 +43,9 @@ The [Cisco Duo Security](https://duo.com/) solution allows you to ingest [authen
 
 This solution provides **1 data connector(s)**:
 
-- [Cisco Duo Security](../connectors/ciscoduosecurity.md) �
+- [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -53,10 +53,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) � | [Cisco Duo Security](../connectors/ciscoduosecurity.md) | Analytics, Hunting, Workbooks |
+| [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) 🔶 | [Cisco Duo Security](../connectors/ciscoduosecurity.md) | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -108,7 +108,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoDuo](../content/ciscoduosecurity-ciscoduo-a4ce5d43-3bca-4eb4-8302-b868e45c6dc4-60f3c122.md) | - | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) *(read)* |
+| [CiscoDuo](../parsers/ciscoduo.md) | - | [`CiscoDuo_CL`](../tables/ciscoduo-cl.md) *(read)* |
 
 ## Release Notes
 

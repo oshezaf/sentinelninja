@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_bacnet_CL`](../tables/corelight-v2-bacnet-cl.md) � | ? | ✓ | ? |
+| [`Corelight_v2_bacnet_CL`](../tables/corelight-v2-bacnet-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

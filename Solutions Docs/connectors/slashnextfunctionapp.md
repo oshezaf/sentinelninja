@@ -16,7 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SlashNext_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Data%20Connectors/SlashNext_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Inferred from table column naming patterns (type suffixes)* |
-| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The SlashNext function app utilizes python to perform the analysis of the raw logs and returns URLs present in the logs.
 
@@ -26,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | `Resource == "SlashnextFunctionApp"` | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Resource == "SlashnextFunctionApp"` | ✗ | ✗ | ✗ |
 | [`AzureMetrics`](../tables/azuremetrics.md) |  | ✗ | ✗ | ✗ |
 
 ## Permissions

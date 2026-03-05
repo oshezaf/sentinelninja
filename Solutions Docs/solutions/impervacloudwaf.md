@@ -41,10 +41,10 @@ c. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/en-us/azure/
 
 This solution provides **2 data connector(s)**:
 
-- [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) �
-- [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) �
+- [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md) 🔶
+- [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -53,11 +53,11 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | - | Analytics, Hunting, Workbooks |
-| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) � | [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md), [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
-| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) � | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
+| [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) 🔶 | [Imperva Cloud WAF](../connectors/impervacloudwaflogsccfdefinition.md), [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
+| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -109,7 +109,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ImpervaWAFCloud](../content/impervacloudwaf-impervawafcloud-ebd38cc1-5c07-4d25-8ae5-7b40cdc6fa6e-dec50d88.md) | - | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) *(read)*<br>[`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) *(read)* |
+| [ImpervaWAFCloud](../parsers/impervawafcloud.md) | - | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) *(read)*<br>[`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) *(read)* |
 
 ## Release Notes
 

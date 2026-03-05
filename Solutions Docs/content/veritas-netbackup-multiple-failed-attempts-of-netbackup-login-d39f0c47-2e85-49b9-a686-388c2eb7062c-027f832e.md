@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) � | ? | ✓ | ? |
+| [`NetBackupAlerts_CL`](../tables/netbackupalerts-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

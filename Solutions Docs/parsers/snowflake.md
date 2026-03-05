@@ -35,7 +35,7 @@ This parser reads from the following tables:
 | [`SnowflakeTables_CL`](../tables/snowflaketables-cl.md) | ✓ | ✓ | ✓ |
 | [`SnowflakeUserGrant_CL`](../tables/snowflakeusergrant-cl.md) | ✓ | ✓ | ✓ |
 | [`SnowflakeUsers_CL`](../tables/snowflakeusers-cl.md) | ✓ | ✓ | ✓ |
-| [`Snowflake_CL`](../tables/snowflake-cl.md) � | ? | ✓ | ? |
+| [`Snowflake_CL`](../tables/snowflake-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

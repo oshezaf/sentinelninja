@@ -66,7 +66,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OneIdentity_Safeguard](../content/oneidentity-oneidentity-safeguard-e1818ade-7a4e-4bdb-9bf6-f0e980c6eb77-4e74382c.md) ⚠️ | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [OneIdentity_Safeguard](../parsers/oneidentity-safeguard.md) ⚠️ | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

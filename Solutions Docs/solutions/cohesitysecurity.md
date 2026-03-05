@@ -32,9 +32,9 @@ This product integrates Cohesity Helios with Microsoft Sentinel to stay updated 
 
 This solution provides **1 data connector(s)**:
 
-- [Cohesity](../connectors/cohesitydataconnector.md) �
+- [Cohesity](../connectors/cohesitydataconnector.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,10 +42,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Cohesity_CL`](../tables/cohesity-cl.md) � | [Cohesity](../connectors/cohesitydataconnector.md) | - |
+| [`Cohesity_CL`](../tables/cohesity-cl.md) 🔶 | [Cohesity](../connectors/cohesitydataconnector.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:

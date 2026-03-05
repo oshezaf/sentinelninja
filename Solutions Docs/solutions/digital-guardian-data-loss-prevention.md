@@ -113,7 +113,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DigitalGuardianDLPEvent](../content/digital-guardian-data-loss-prevention-digitalguardiandlpevent-93e0affa-35d8-4fe3-8af3-e8a8e1084483-905f7a39.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [DigitalGuardianDLPEvent](../parsers/digitalguardiandlpevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

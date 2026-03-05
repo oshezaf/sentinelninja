@@ -38,9 +38,9 @@ a. [Custom logs ingestion via Data Collector REST API](https://learn.microsoft.c
 
 This solution provides **1 data connector(s)**:
 
-- [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) �
+- [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -48,12 +48,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) � | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) | Workbooks |
+| [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) 🔶 | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) | Workbooks |
 | [`Event`](../tables/event.md) | - | Workbooks |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **10 content item(s)**:
@@ -77,11 +77,11 @@ This solution includes **10 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExchangeConfiguration](../content/microsoft-exchange-security-exchange-online-exchangeconfiguration-f2ae482d-999c-452e-b108-31880aa99620-0563d5d5.md) | The list of section to query. Default is all. | - |
-| [ExchangeEnvironmentList](../content/microsoft-exchange-security-exchange-online-exchangeenvironmentlist-fa748dc3-00ee-41cb-b54e-8acd56041b2a-852d1447.md) | The target environment to query. Valid values are "On-Premises" or "Online". Default is "On-Premises... | - |
-| [MESCheckOnlineVIP](../content/microsoft-exchange-security-exchange-online-mescheckonlinevip-9b864a03-5db6-4cf0-aef1-17ac0cc34195-78b91c0a.md) | The user to verifiy if is a VIP or not. Default value is "all". | - |
-| [MESCompareDataMRA](../content/microsoft-exchange-security-exchange-online-mescomparedatamra-39f51672-8c63-4600-882a-5db8275f798f-41c76693.md) | The Section to compare. Default value is "". | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) *(read)* |
-| [MESOfficeActivityLogs](../content/microsoft-exchange-security-exchange-online-mesofficeactivitylogs-2be516a9-f8fd-4357-a839-cafcb5a6d73a-a47fdf2d.md) | - | [`OfficeActivity`](../tables/officeactivity.md) *(read)* |
+| [ExchangeConfiguration](../parsers/exchangeconfiguration.md) | The list of section to query. Default is all. | - |
+| [ExchangeEnvironmentList](../parsers/exchangeenvironmentlist.md) | The target environment to query. Valid values are "On-Premises" or "Online". Default is "On-Premises... | - |
+| [MESCheckOnlineVIP](../parsers/mescheckonlinevip.md) | The user to verifiy if is a VIP or not. Default value is "all". | - |
+| [MESCompareDataMRA](../parsers/mescomparedatamra.md) | The Section to compare. Default value is "". | [`ESIExchangeOnlineConfig_CL`](../tables/esiexchangeonlineconfig-cl.md) *(read)* |
+| [MESOfficeActivityLogs](../parsers/mesofficeactivitylogs.md) | - | [`OfficeActivity`](../tables/officeactivity.md) *(read)* |
 
 ### Watchlists
 

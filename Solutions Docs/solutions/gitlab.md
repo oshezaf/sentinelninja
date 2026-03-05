@@ -93,9 +93,9 @@ This solution includes **12 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [GitLabAccess](../content/gitlab-gitlabaccess-4ddd33c3-87a5-430f-9241-3736853aa5fb-125eb1c9.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
-| [GitLabApp](../content/gitlab-gitlabapp-ccc66347-5850-4549-aa31-c621499d26d8-fecc825c.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
-| [GitLabAudit](../content/gitlab-gitlabaudit-a0ea016a-471a-4e49-a938-fecc9180d148-7bbefce0.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [GitLabAccess](../parsers/gitlabaccess.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [GitLabApp](../parsers/gitlabapp.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [GitLabAudit](../parsers/gitlabaudit.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

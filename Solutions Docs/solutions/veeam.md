@@ -49,9 +49,9 @@ g. [Azure Log Analytics](https://learn.microsoft.com/azure/azure-monitor/logs/lo
 
 This solution provides **1 data connector(s)**:
 
-- [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) �
+- [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -61,15 +61,15 @@ This solution uses **8 table(s)**:
 |-------|-------------------|----------------|
 | [`Event`](../tables/event.md) | - | Workbooks |
 | [`Syslog`](../tables/syslog.md) | - | Analytics, Workbooks |
-| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) � | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Workbooks |
-| [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) � | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | - |
-| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) � | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
-| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) � | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
-| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) � | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
-| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) � | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics |
+| [`VeeamAuthorizationEvents_CL`](../tables/veeamauthorizationevents-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Workbooks |
+| [`VeeamCovewareFindings_CL`](../tables/veeamcovewarefindings-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | - |
+| [`VeeamMalwareEvents_CL`](../tables/veeammalwareevents-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamOneTriggeredAlarms_CL`](../tables/veeamonetriggeredalarms-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamSecurityComplianceAnalyzer_CL`](../tables/veeamsecuritycomplianceanalyzer-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics, Workbooks |
+| [`VeeamSessions_CL`](../tables/veeamsessions-cl.md) 🔶 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Analytics |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **164 content item(s)**:
@@ -250,10 +250,10 @@ This solution includes **164 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Veeam_GetFinishedConfigurationBackupSessions](../content/veeam-veeam-getfinishedconfigurationbackupsessions-a8ff1c42-9fa3-4712-98bd-ff12b98e81e3-4029887f.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
-| [Veeam_GetJobFinished](../content/veeam-veeam-getjobfinished-600bfa89-575d-4397-b4b4-c0784a43580d-5d2e5aad.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
-| [Veeam_GetSecurityEvents](../content/veeam-veeam-getsecurityevents-ce32b7f7-27b4-4d77-8a40-4a21acc0be46-8f680874.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
-| [Veeam_GetVeeamONEAlarms](../content/veeam-veeam-getveeamonealarms-9de9f7e2-d0f2-4226-a128-a2583f3d2806-4fec57c1.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [Veeam_GetFinishedConfigurationBackupSessions](../parsers/veeam-getfinishedconfigurationbackupsessions.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [Veeam_GetJobFinished](../parsers/veeam-getjobfinished.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [Veeam_GetSecurityEvents](../parsers/veeam-getsecurityevents.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [Veeam_GetVeeamONEAlarms](../parsers/veeam-getveeamonealarms.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ### Watchlists
 

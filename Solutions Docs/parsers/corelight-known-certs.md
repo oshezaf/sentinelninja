@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Corelight_v2_known_certs_CL`](../tables/corelight-v2-known-certs-cl.md) � | ? | ✓ | ? |
+| [`Corelight_v2_known_certs_CL`](../tables/corelight-v2-known-certs-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

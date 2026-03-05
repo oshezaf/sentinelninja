@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) � | ✗ | ✓ | ✗ |
+| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

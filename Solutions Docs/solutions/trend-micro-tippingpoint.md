@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TrendMicroTippingPoint](../content/trend-micro-tippingpoint-trendmicrotippingpoint-8859cdc3-75ee-4491-875d-5ef1181f4e8c-aa324beb.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [TrendMicroTippingPoint](../parsers/trendmicrotippingpoint.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

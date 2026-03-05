@@ -31,9 +31,9 @@ The Lookout Cloud Security solution for Microsoft Sentinel enables enterprises t
 
 This solution provides **1 data connector(s)**:
 
-- [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) �
+- [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) � | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) | - |
+| [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) 🔶 | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:
@@ -57,9 +57,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [LookoutCSActivities](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsactivities-ecaf0d02-9547-4e2d-b4fd-48112442430e-1f450e47.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
-| [LookoutCSAnomalies](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsanomalies-411d9caf-088b-42d7-b1d0-7db898efc1b4-e3e9a60c.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
-| [LookoutCSViolations](../content/lookout-cloud-security-platform-for-microsoft-sentinel-lookoutcsviolations-3394b060-0e55-4ecc-828e-a5671e3275cd-d0207f9f.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
+| [LookoutCSActivities](../parsers/lookoutcsactivities.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
+| [LookoutCSAnomalies](../parsers/lookoutcsanomalies.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
+| [LookoutCSViolations](../parsers/lookoutcsviolations.md) | - | [`LookoutCloudSecurity_CL`](../tables/lookoutcloudsecurity-cl.md) *(read)* |
 
 ## Release Notes
 

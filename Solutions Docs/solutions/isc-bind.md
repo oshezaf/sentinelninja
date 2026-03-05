@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ISCBind](../content/isc-bind-iscbind-9b39b1e9-4136-4e8c-b792-3e5cf19caaf8-5e648260.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [ISCBind](../parsers/iscbind.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

@@ -30,8 +30,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | `Category == "AzureFirewallNetworkRule"` | ✗ | ✗ | ✗ |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) � |  | ? | ✓ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallNetworkRule"` | ✗ | ✗ | ✗ |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`VMConnection`](../tables/vmconnection.md) |  | ✗ | ✗ | ? |
 
 ---

@@ -55,7 +55,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ForescoutEvent](../content/forescout-legacy-forescoutevent-ee50cfb3-9d10-4705-931e-77f8c4db8678-b7a885fa.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [ForescoutEvent](../parsers/forescoutevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

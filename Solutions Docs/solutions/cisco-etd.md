@@ -30,9 +30,9 @@ Cisco ETD Solution for Microsoft Microsoft Sentinel makes it easy to connect cis
 
 This solution provides **1 data connector(s)**:
 
-- [Cisco ETD](../connectors/ciscoetd.md) �
+- [Cisco ETD](../connectors/ciscoetd.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -40,10 +40,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoETD_CL`](../tables/ciscoetd-cl.md) � | [Cisco ETD](../connectors/ciscoetd.md) | Workbooks |
+| [`CiscoETD_CL`](../tables/ciscoetd-cl.md) 🔶 | [Cisco ETD](../connectors/ciscoetd.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

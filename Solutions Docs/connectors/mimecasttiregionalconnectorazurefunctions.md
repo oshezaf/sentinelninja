@@ -1,4 +1,6 @@
-# Mimecast Intelligence for Microsoft - Microsoft Sentinel
+# 🚫 Mimecast Intelligence for Microsoft - Microsoft Sentinel
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="75" height="75">
 

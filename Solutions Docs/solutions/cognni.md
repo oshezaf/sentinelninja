@@ -37,9 +37,9 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 This solution provides **1 data connector(s)**:
 
-- [Cognni](../connectors/cognnisentineldataconnector.md) �
+- [Cognni](../connectors/cognnisentineldataconnector.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,10 +47,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) � | [Cognni](../connectors/cognnisentineldataconnector.md) | Analytics, Workbooks |
+| [`CognniIncidents_CL`](../tables/cognniincidents-cl.md) 🔶 | [Cognni](../connectors/cognnisentineldataconnector.md) | Analytics, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **16 content item(s)**:

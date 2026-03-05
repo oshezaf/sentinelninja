@@ -83,7 +83,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TrendMicroDeepSecurity](../content/trend-micro-deep-security-trendmicrodeepsecurity-b376272c-ca00-435d-9879-e7d64da7dd24-d7d017c5.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [TrendMicroDeepSecurity](../parsers/trendmicrodeepsecurity.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

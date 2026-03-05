@@ -33,12 +33,12 @@ An Azure app to enable Mimecast data to be viewed using analytical tables and ch
 This solution provides **5 data connector(s)**:
 
 - [Mimecast Awareness Training](../connectors/mimecastatapi.md)
-- [Mimecast Audit](../connectors/mimecastauditapi.md) �
+- [Mimecast Audit](../connectors/mimecastauditapi.md) 🔶
 - [Mimecast Cloud Integrated](../connectors/mimecastciapi.md)
 - [Mimecast Secure Email Gateway](../connectors/mimecastsegapi.md)
-- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) �
+- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -107,17 +107,17 @@ This solution includes **30 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Mimecast_AT_Performane_Detail](../content/mimecast-mimecast-at-performane-detail-c6376b96-24ca-4113-932f-a069f1c62479-468dab79.md) | - | - |
-| [Mimecast_AT_Safe_Score](../content/mimecast-mimecast-at-safe-score-06c97d41-652a-4ff0-9bf5-dca775126fff-8d134cc6.md) | - | - |
-| [Mimecast_AT_User_Data](../content/mimecast-mimecast-at-user-data-bf754aad-692b-46cd-b5b4-6f044bd105a4-4bc9f72f.md) | - | - |
-| [Mimecast_AT_Watchlist](../content/mimecast-mimecast-at-watchlist-7afbe4ec-9fa1-429d-9a25-6c3f0519330e-5b3ed804.md) | - | - |
-| [Mimecast_Audit](../content/mimecast-mimecast-audit-679b2b50-2611-4358-9686-5948587cbb47-ec34ce97.md) | - | - |
-| [Mimecast_Cloud_Integrated](../content/mimecast-mimecast-cloud-integrated-c78aaea4-8a16-4e8b-9722-073e7181efd1-1522d097.md) | - | - |
-| [Mimecast_SEG_CG](../content/mimecast-mimecast-seg-cg-91267889-770d-451b-9ed8-d3ed260c48e3-83ae04ed.md) | - | - |
-| [Mimecast_SEG_DLP](../content/mimecast-mimecast-seg-dlp-1cdd670a-dec9-4d15-97a1-75043a1e631a-32f8e794.md) | - | - |
-| [Mimecast_TTP_Attachment](../content/mimecast-mimecast-ttp-attachment-aea16729-fdd1-43aa-84bd-9127c0c53d03-086874e6.md) | - | - |
-| [Mimecast_TTP_Impersonation](../content/mimecast-mimecast-ttp-impersonation-50371940-df79-4db6-8bd9-267379ae0e31-04300eaa.md) | - | - |
-| [Mimecast_TTP_Url](../content/mimecast-mimecast-ttp-url-275bacf7-edef-4436-9e5c-beee419aeb1a-91a17052.md) | - | - |
+| [Mimecast_AT_Performane_Detail](../parsers/mimecast-at-performane-detail.md) | - | - |
+| [Mimecast_AT_Safe_Score](../parsers/mimecast-at-safe-score.md) | - | - |
+| [Mimecast_AT_User_Data](../parsers/mimecast-at-user-data.md) | - | - |
+| [Mimecast_AT_Watchlist](../parsers/mimecast-at-watchlist.md) | - | - |
+| [Mimecast_Audit](../parsers/mimecast-audit.md) | - | - |
+| [Mimecast_Cloud_Integrated](../parsers/mimecast-cloud-integrated.md) | - | - |
+| [Mimecast_SEG_CG](../parsers/mimecast-seg-cg.md) | - | - |
+| [Mimecast_SEG_DLP](../parsers/mimecast-seg-dlp.md) | - | - |
+| [Mimecast_TTP_Attachment](../parsers/mimecast-ttp-attachment.md) | - | - |
+| [Mimecast_TTP_Impersonation](../parsers/mimecast-ttp-impersonation.md) | - | - |
+| [Mimecast_TTP_Url](../parsers/mimecast-ttp-url.md) | - | - |
 
 ## Release Notes
 

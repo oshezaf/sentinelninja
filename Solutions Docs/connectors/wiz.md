@@ -16,7 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [template_WIZ.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Wiz/Data%20Connectors/template_WIZ.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
-| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The Wiz connector allows you to easily send Wiz Issues, Vulnerability Findings, and Audit logs to Microsoft Sentinel.
 
@@ -26,12 +26,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) � | ? | ✓ | ? |
-| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) � | ? | ✓ | ? |
-| [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) � | ? | ✓ | ? |
-| [`WizIssues_CL`](../tables/wizissues-cl.md) � | ? | ✓ | ? |
-| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) � | ? | ✓ | ? |
-| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) � | ? | ✓ | ? |
+| [`WizAuditLogsV2_CL`](../tables/wizauditlogsv2-cl.md) 🔶 | ? | ✓ | ? |
+| [`WizAuditLogs_CL`](../tables/wizauditlogs-cl.md) 🔶 | ? | ✓ | ? |
+| [`WizIssuesV2_CL`](../tables/wizissuesv2-cl.md) 🔶 | ? | ✓ | ? |
+| [`WizIssues_CL`](../tables/wizissues-cl.md) 🔶 | ? | ✓ | ? |
+| [`WizVulnerabilitiesV2_CL`](../tables/wizvulnerabilitiesv2-cl.md) 🔶 | ? | ✓ | ? |
+| [`WizVulnerabilities_CL`](../tables/wizvulnerabilities-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

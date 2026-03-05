@@ -32,9 +32,9 @@ The [Cynerio](https://www.cynerio.com/) solution for Microsoft Sentinel enables 
 
 This solution provides **1 data connector(s)**:
 
-- [Cynerio Security Events](../connectors/cyneriosecurityevents.md) �
+- [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,10 +42,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) � | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) | Analytics, Workbooks |
+| [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) 🔶 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) | Analytics, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **8 content item(s)**:
@@ -76,8 +76,8 @@ This solution includes **8 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CynerioEvent_Authentication](../content/cynerio-cynerioevent-authentication-fcd546b8-7f59-45d6-bcc8-2f705f97f5c6-2062a9e7.md) ⚠️ | - | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) *(read)* |
-| [CynerioEvent_NetworkSession](../content/cynerio-cynerioevent-networksession-7e7530f5-00e7-4663-90c3-7965937e0ce5-e8888e40.md) ⚠️ | - | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) *(read)* |
+| [CynerioEvent_Authentication](../parsers/cynerioevent-authentication.md) ⚠️ | - | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) *(read)* |
+| [CynerioEvent_NetworkSession](../parsers/cynerioevent-networksession.md) ⚠️ | - | [`CynerioEvent_CL`](../tables/cynerioevent-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

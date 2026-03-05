@@ -115,7 +115,7 @@ This solution includes **23 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoSEGEvent](../content/ciscoseg-ciscosegevent-90ff11ee-9bb2-410d-a25f-728a889e7ccc-bb048a59.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [CiscoSEGEvent](../parsers/ciscosegevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

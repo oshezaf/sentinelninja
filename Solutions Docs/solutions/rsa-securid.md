@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [RSASecurIDAMEvent](../content/rsa-securid-rsasecuridamevent-328fc289-10cf-40dd-84b6-cf136085c30a-7023936c.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [RSASecurIDAMEvent](../parsers/rsasecuridamevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

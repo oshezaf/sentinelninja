@@ -87,7 +87,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ESETPROTECT](../content/esetprotect-esetprotect-f54b254b-6ec6-4509-be49-e1df76e323c1-61d909fc.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [ESETPROTECT](../parsers/esetprotect.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

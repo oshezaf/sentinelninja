@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) � | ✓ | ✓ | ✓ |
+| [`ForescoutHostProperties_CL`](../tables/forescouthostproperties-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ---
 

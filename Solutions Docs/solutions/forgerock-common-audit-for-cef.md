@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ForgeRockParser](../content/forgerock-common-audit-for-cef-forgerockparser-78809fa1-a294-44c2-bab1-ba38fae0f0d0-9dba9bf7.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [ForgeRockParser](../parsers/forgerockparser.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

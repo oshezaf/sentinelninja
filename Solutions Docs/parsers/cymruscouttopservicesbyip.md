@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Top_Services_By_IP_Data_CL`](../tables/top-services-by-ip-data-cl.md) � | ? | ✓ | ? |
+| [`Top_Services_By_IP_Data_CL`](../tables/top-services-by-ip-data-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

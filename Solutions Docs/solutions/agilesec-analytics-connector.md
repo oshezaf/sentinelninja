@@ -36,9 +36,9 @@ The AgileSec Analytics Connector solution provides the capability to ingest Agil
 
 This solution provides **1 data connector(s)**:
 
-- [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) �
+- [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,10 +46,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) � | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) | Workbooks |
+| [`InfoSecAnalytics_CL`](../tables/infosecanalytics-cl.md) 🔶 | [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

@@ -92,7 +92,7 @@ This solution includes **7 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Fortiweb](../content/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-b24da091-25e9-40ee-a6da-091eef3517e8-b14d646e.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [Fortiweb](../parsers/fortiweb.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

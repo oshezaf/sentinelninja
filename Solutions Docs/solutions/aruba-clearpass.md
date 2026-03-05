@@ -75,7 +75,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ArubaClearPass](../content/aruba-clearpass-arubaclearpass-7dabe04d-66c5-4d47-8e3c-7580e807be88-f108a393.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [ArubaClearPass](../parsers/arubaclearpass.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

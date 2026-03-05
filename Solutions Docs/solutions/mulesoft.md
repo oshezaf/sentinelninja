@@ -43,9 +43,9 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 This solution provides **1 data connector(s)**:
 
-- [MuleSoft Cloudhub](../connectors/mulesoft.md) �
+- [MuleSoft Cloudhub](../connectors/mulesoft.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -53,10 +53,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) � | [MuleSoft Cloudhub](../connectors/mulesoft.md) | - |
+| [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) 🔶 | [MuleSoft Cloudhub](../connectors/mulesoft.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -69,7 +69,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [MuleSoftCloudhub](../content/mulesoft-mulesoftcloudhub-b2b66a07-3c23-458b-89bc-f004848e2b10-52c26c00.md) | - | [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) *(read)* |
+| [MuleSoftCloudhub](../parsers/mulesoftcloudhub.md) | - | [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) *(read)* |
 
 ## Release Notes
 

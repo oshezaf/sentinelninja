@@ -31,9 +31,9 @@ The Knox Asset Intelligence for Microsoft Sentinel solution enables enterprise I
 
 This solution provides **1 data connector(s)**:
 
-- [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) �
+- [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,15 +41,15 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md) � | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Workbooks |
-| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) � | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
-| [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md) � | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Workbooks |
-| [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) � | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
-| [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) � | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
-| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) � | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
+| [`Samsung_Knox_Application_CL`](../tables/samsung-knox-application-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Workbooks |
+| [`Samsung_Knox_Audit_CL`](../tables/samsung-knox-audit-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
+| [`Samsung_Knox_Network_CL`](../tables/samsung-knox-network-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Workbooks |
+| [`Samsung_Knox_Process_CL`](../tables/samsung-knox-process-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
+| [`Samsung_Knox_System_CL`](../tables/samsung-knox-system-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
+| [`Samsung_Knox_User_CL`](../tables/samsung-knox-user-cl.md) 🔶 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Analytics, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **8 content item(s)**:

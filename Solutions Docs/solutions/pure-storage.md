@@ -72,8 +72,8 @@ This solution includes **9 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PureStorageFlashArrayParser](../content/pure-storage-purestorageflasharrayparser-008b25eb-aeec-4751-9a42-3a0102e9774b-1902bf2e.md) | - | - |
-| [PureStorageFlashBladeParser](../content/pure-storage-purestorageflashbladeparser-c76dff08-ca13-467d-a143-c33cc226585c-0bf3302c.md) | - | - |
+| [PureStorageFlashArrayParser](../parsers/purestorageflasharrayparser.md) | - | - |
+| [PureStorageFlashBladeParser](../parsers/purestorageflashbladeparser.md) | - | - |
 
 ## Release Notes
 

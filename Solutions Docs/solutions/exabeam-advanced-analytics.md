@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExabeamEvent](../content/exabeam-advanced-analytics-exabeamevent-5447ecc5-6e87-4812-a5a1-8e0d366597c2-65295d63.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [ExabeamEvent](../parsers/exabeamevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

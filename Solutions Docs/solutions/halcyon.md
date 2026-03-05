@@ -58,11 +58,11 @@ This solution includes **5 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ASimAuthenticationHalcyon](../content/halcyon-asimauthenticationhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde1-12c13dee.md) | - | [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) *(read)* |
-| [ASimDnsHalcyon](../content/halcyon-asimdnshalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde2-5abc0b5e.md) | - | [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) *(read)* |
-| [ASimFileEventHalcyon](../content/halcyon-asimfileeventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde3-432f7dbb.md) | - | [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) *(read)* |
-| [ASimNetworkSessionHalcyon](../content/halcyon-asimnetworksessionhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde4-20ce998d.md) | - | [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) *(read)* |
-| [ASimProcessEventHalcyon](../content/halcyon-asimprocesseventhalcyon-a1b2c3d4-e5f6-7890-1234-567890abcde5-a5e3e8be.md) | - | [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) *(read)* |
+| [ASimAuthenticationHalcyon](../parsers/asimauthenticationhalcyon.md) | - | [`HalcyonAuthenticationEvents_CL`](../tables/halcyonauthenticationevents-cl.md) *(read)* |
+| [ASimDnsHalcyon](../parsers/asimdnshalcyon.md) | - | [`HalcyonDnsActivity_CL`](../tables/halcyondnsactivity-cl.md) *(read)* |
+| [ASimFileEventHalcyon](../parsers/asimfileeventhalcyon.md) | - | [`HalcyonFileActivity_CL`](../tables/halcyonfileactivity-cl.md) *(read)* |
+| [ASimNetworkSessionHalcyon](../parsers/asimnetworksessionhalcyon.md) | - | [`HalcyonNetworkSession_CL`](../tables/halcyonnetworksession-cl.md) *(read)* |
+| [ASimProcessEventHalcyon](../parsers/asimprocesseventhalcyon.md) | - | [`HalcyonProcessEvent_CL`](../tables/halcyonprocessevent-cl.md) *(read)* |
 
 ## Release Notes
 

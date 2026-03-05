@@ -114,8 +114,8 @@ This solution includes **27 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AssignedIPAddress](../content/microsoftdefenderforendpoint-assignedipaddress-a06da838-8c56-4eed-ac1a-097bdfab5e9b-560dac13.md) | - | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) *(read)* |
-| [Devicefromip](../content/microsoftdefenderforendpoint-devicefromip-788c6182-85d9-4747-8096-6a971f0e9476-ee70820e.md) | - | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) *(read)* |
+| [AssignedIPAddress](../parsers/assignedipaddress.md) | - | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) *(read)* |
+| [Devicefromip](../parsers/devicefromip.md) | - | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) *(read)* |
 
 ## Release Notes
 

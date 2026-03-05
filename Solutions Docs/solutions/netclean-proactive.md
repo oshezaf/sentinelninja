@@ -43,9 +43,9 @@ This solution might take a dependency on the other technologies, and some of the
 
 This solution provides **1 data connector(s)**:
 
-- [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) �
+- [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -53,10 +53,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) � | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) | Analytics, Workbooks |
+| [`Netclean_Incidents_CL`](../tables/netclean-incidents-cl.md) 🔶 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) | Analytics, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

@@ -46,10 +46,10 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) | [Cloudflare (Using Blob Container) (via Codeless Connector Framework)](../connectors/cloudflaredefinition.md) | Analytics, Hunting, Workbooks |
-| [`Cloudflare_CL`](../tables/cloudflare-cl.md) � | - | Analytics, Hunting, Workbooks |
+| [`Cloudflare_CL`](../tables/cloudflare-cl.md) 🔶 | - | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -101,7 +101,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Cloudflare](../content/cloudflare-ccf-cloudflare-fa3baaab-10b6-452c-9d07-76aa3f1c592e-0126a93f.md) | - | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) *(read)*<br>[`Cloudflare_CL`](../tables/cloudflare-cl.md) *(read)* |
+| [Cloudflare](../parsers/cloudflare.md) | - | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md) *(read)*<br>[`Cloudflare_CL`](../tables/cloudflare-cl.md) *(read)* |
 
 ## Release Notes
 

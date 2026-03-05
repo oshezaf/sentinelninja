@@ -37,11 +37,11 @@ This solution is dependent on the Custom logs via AMA connector to collect the l
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [SecurityBridge Solution for SAP](../connectors/securitybridge.md)
-- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ⚠️ �
+- [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ⚠️ 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,11 +50,11 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ABAPAuditLog`](../tables/abapauditlog.md) | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | - |
-| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) � | [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) | - |
+| [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) 🔶 | [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) | - |
 | [`SecurityBridge_CL`](../tables/securitybridge-cl.md) | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

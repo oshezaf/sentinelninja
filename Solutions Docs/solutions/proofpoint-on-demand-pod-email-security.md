@@ -37,12 +37,12 @@ The [Proofpoint on Demand Email Security](https://www.proofpoint.com/us/products
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) �
-- [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) ⚠️ �
+- [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) 🔶
+- [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) ⚠️ 🔶
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,16 +50,16 @@ This solution uses **7 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) � | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) � | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) � | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) � | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) 🔶 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) 🔶 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md), [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
-| [`maillog_CL`](../tables/maillog-cl.md) � | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
-| [`message_CL`](../tables/message-cl.md) � | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`maillog_CL`](../tables/maillog-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
+| [`message_CL`](../tables/message-cl.md) 🔶 | [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -111,7 +111,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ProofpointPOD](../content/proofpoint-on-demand-pod-email-security-proofpointpod-634600b4-d931-4a58-a21f-1de3dd35df23-5e33a3b3.md) | - | [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) *(read)*<br>[`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) *(read)*<br>[`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) *(read)*<br>[`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) *(read)*<br>[`maillog_CL`](../tables/maillog-cl.md) *(read)*<br>[`message_CL`](../tables/message-cl.md) *(read)* |
+| [ProofpointPOD](../parsers/proofpointpod.md) | - | [`ProofpointPODMailLog_CL`](../tables/proofpointpodmaillog-cl.md) *(read)*<br>[`ProofpointPODMessage_CL`](../tables/proofpointpodmessage-cl.md) *(read)*<br>[`ProofpointPOD_maillog_CL`](../tables/proofpointpod-maillog-cl.md) *(read)*<br>[`ProofpointPOD_message_CL`](../tables/proofpointpod-message-cl.md) *(read)*<br>[`maillog_CL`](../tables/maillog-cl.md) *(read)*<br>[`message_CL`](../tables/message-cl.md) *(read)* |
 
 ## Release Notes
 

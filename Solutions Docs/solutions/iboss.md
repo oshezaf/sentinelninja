@@ -83,7 +83,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ibossUrlEvent](../content/iboss-ibossurlevent-0902cd9b-3b2b-4ad4-a480-e5e960b6a77d-2c14b8b6.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [ibossUrlEvent](../parsers/ibossurlevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

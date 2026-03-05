@@ -31,9 +31,9 @@ Built on the underpinning technology of HYAS Insight threat intelligence, HYAS P
 
 This solution provides **1 data connector(s)**:
 
-- [HYAS Protect](../connectors/hyasprotect.md) �
+- [HYAS Protect](../connectors/hyasprotect.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`HYASProtectDnsSecurityLogs_CL`](../tables/hyasprotectdnssecuritylogs-cl.md) � | [HYAS Protect](../connectors/hyasprotect.md) | - |
+| [`HYASProtectDnsSecurityLogs_CL`](../tables/hyasprotectdnssecuritylogs-cl.md) 🔶 | [HYAS Protect](../connectors/hyasprotect.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -57,7 +57,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [HYASProtectDNS](../content/hyas-protect-hyasprotectdns-6e70b2c1-202d-4805-bddc-f0e08ef0fc4d-2acd62c4.md) | - | - |
+| [HYASProtectDNS](../parsers/hyasprotectdns.md) | - | - |
 
 ## Release Notes
 

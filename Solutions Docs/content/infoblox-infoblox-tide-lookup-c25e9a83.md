@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) � | ? | ✓ | ? |
+| [`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) 🔶 | ? | ✓ | ? |
 
 ## Additional Documentation
 

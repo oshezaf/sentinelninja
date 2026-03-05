@@ -40,9 +40,9 @@ The [Zoom](https://zoom.us/) Reports solution enables you to ingest Zoom Reports
 
 This solution provides **1 data connector(s)**:
 
-- [Zoom Reports](../connectors/zoom.md) �
+- [Zoom Reports](../connectors/zoom.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,10 +50,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Zoom_CL`](../tables/zoom-cl.md) � | [Zoom Reports](../connectors/zoom.md) | Workbooks |
+| [`Zoom_CL`](../tables/zoom-cl.md) 🔶 | [Zoom Reports](../connectors/zoom.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:
@@ -73,7 +73,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Zoom](../content/zoomreports-zoom-249f522d-995b-439f-910a-12741f7c0d8b-88c20063.md) | - | [`Zoom_CL`](../tables/zoom-cl.md) *(read)* |
+| [Zoom](../parsers/zoom.md) | - | [`Zoom_CL`](../tables/zoom-cl.md) *(read)* |
 
 ## Additional Documentation
 

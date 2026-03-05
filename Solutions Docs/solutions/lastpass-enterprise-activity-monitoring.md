@@ -38,9 +38,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) �
+- [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -48,12 +48,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) � | [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) | Analytics, Hunting, Workbooks |
+| [`LastPassNativePoller_CL`](../tables/lastpassnativepoller-cl.md) 🔶 | [LastPass Enterprise - Reporting (Polling CCP)](../connectors/lastpass-polling.md) | Analytics, Hunting, Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Hunting, Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **10 content item(s)**:

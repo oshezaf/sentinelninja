@@ -86,7 +86,7 @@ This solution includes **15 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [dsp_parser](../content/semperis-directory-services-protector-dsp-parser-5ea4c8c2-a6e9-4321-8402-39635ffcfbe4-3bb2922c.md) | - | [`SecurityEvent`](../tables/securityevent.md) *(read)* |
+| [dsp_parser](../parsers/dsp-parser.md) | - | [`SecurityEvent`](../tables/securityevent.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

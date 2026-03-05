@@ -31,9 +31,9 @@ The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-
 
 This solution provides **1 data connector(s)**:
 
-- [Qualys VM KnowledgeBase](../connectors/qualyskb.md) �
+- [Qualys VM KnowledgeBase](../connectors/qualyskb.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,10 +41,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`QualysKB_CL`](../tables/qualyskb-cl.md) � | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) | - |
+| [`QualysKB_CL`](../tables/qualyskb-cl.md) 🔶 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -57,7 +57,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [QualysKB](../content/qualys-vm-knowledgebase-qualyskb-d2cf5018-d863-4bc5-90f9-5c6ccde08e7d-6f2521e6.md) | - | [`QualysKB_CL`](../tables/qualyskb-cl.md) *(read)* |
+| [QualysKB](../parsers/qualyskb.md) | - | [`QualysKB_CL`](../tables/qualyskb-cl.md) *(read)* |
 
 ## Release Notes
 

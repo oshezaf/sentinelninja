@@ -39,9 +39,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Netskope](../connectors/netskope.md) �
+- [Netskope](../connectors/netskope.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,13 +49,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) � | - | Workbooks |
-| [`Netskope_CL`](../tables/netskope-cl.md) � | [Netskope](../connectors/netskope.md) | - |
-| [`Netskope_Events_CL`](../tables/netskope-events-cl.md) � | - | Workbooks |
-| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) � | - | Workbooks |
+| [`Netskope_Alerts_CL`](../tables/netskope-alerts-cl.md) 🔶 | - | Workbooks |
+| [`Netskope_CL`](../tables/netskope-cl.md) 🔶 | [Netskope](../connectors/netskope.md) | - |
+| [`Netskope_Events_CL`](../tables/netskope-events-cl.md) 🔶 | - | Workbooks |
+| [`Netskope_WebTX_CL`](../tables/netskope-webtx-cl.md) 🔶 | - | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:
@@ -75,7 +75,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Netskope](../content/netskope-netskope-9b3be3d9-99e1-43fa-8d82-3e90f8df7f42-9393ce81.md) ⚠️ | - | [`Netskope_CL`](../tables/netskope-cl.md) *(read)* |
+| [Netskope](../parsers/netskope.md) ⚠️ | - | [`Netskope_CL`](../tables/netskope-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

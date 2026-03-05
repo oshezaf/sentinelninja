@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [JuniperSRX](../content/juniper-srx-junipersrx-9be772a3-57ee-44b6-9c57-4f8742ec1c3c-a784c91d.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [JuniperSRX](../parsers/junipersrx.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

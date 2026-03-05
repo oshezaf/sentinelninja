@@ -115,7 +115,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TMApexOneEvent](../content/trend-micro-apex-one-tmapexoneevent-9d6d5723-1769-43e2-8938-f5f0db89ccf7-fd47af22.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [TMApexOneEvent](../parsers/tmapexoneevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

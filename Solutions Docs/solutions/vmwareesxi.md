@@ -117,7 +117,7 @@ This solution includes **26 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [VMwareESXi](../content/vmwareesxi-vmwareesxi-b4f52ff7-daaa-455c-91d9-00ab4976242a-59c5383d.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [VMwareESXi](../parsers/vmwareesxi.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) � | ✗ | ✓ | ✗ |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

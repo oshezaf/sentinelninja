@@ -117,7 +117,7 @@ This solution includes **26 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [McAfeeEPOEvent](../content/mcafee-epolicy-orchestrator-mcafeeepoevent-b1038960-6b62-4d55-aed0-c55acb1ae408-8f7dd723.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [McAfeeEPOEvent](../parsers/mcafeeepoevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

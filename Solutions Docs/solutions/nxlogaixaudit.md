@@ -37,9 +37,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [NXLog AIX Audit](../connectors/nxlogaixaudit.md) �
+- [NXLog AIX Audit](../connectors/nxlogaixaudit.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,10 +47,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AIX_Audit_CL`](../tables/aix-audit-cl.md) � | [NXLog AIX Audit](../connectors/nxlogaixaudit.md) | - |
+| [`AIX_Audit_CL`](../tables/aix-audit-cl.md) 🔶 | [NXLog AIX Audit](../connectors/nxlogaixaudit.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -63,7 +63,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [NXLog_parsed_AIX_Audit_view](../content/nxlogaixaudit-nxlog-parsed-aix-audit-view-1bae8e14-6819-4d26-b91d-019b078a80a9-75e181f4.md) ⚠️ | - | [`AIX_Audit_CL`](../tables/aix-audit-cl.md) *(read)* |
+| [NXLog_parsed_AIX_Audit_view](../parsers/nxlog-parsed-aix-audit-view.md) ⚠️ | - | [`AIX_Audit_CL`](../tables/aix-audit-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

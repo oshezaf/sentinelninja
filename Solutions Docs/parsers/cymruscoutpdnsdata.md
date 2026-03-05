@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`PDNS_Data_CL`](../tables/pdns-data-cl.md) � | ? | ✓ | ? |
+| [`PDNS_Data_CL`](../tables/pdns-data-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

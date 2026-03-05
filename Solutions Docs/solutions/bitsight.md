@@ -83,17 +83,17 @@ This solution includes **18 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [BitSightAlerts](../content/bitsight-bitsightalerts-ce09d0fb-6816-496d-822e-198a56187a30-66d8fc5d.md) | - | [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) *(read)* |
-| [BitSightBreaches](../content/bitsight-bitsightbreaches-43e914e1-3b7b-4824-bb16-90e5dedad176-6891951c.md) | - | [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) *(read)* |
-| [BitSightCompanyDetails](../content/bitsight-bitsightcompanydetails-25fcb934-4665-48c3-a4ce-2dd6c0874beb-30257bc4.md) | - | [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) *(read)* |
-| [BitSightCompanyRatings](../content/bitsight-bitsightcompanyratings-1280e2d5-9d9a-4455-8aec-3e340a3ffeb2-6190c9b9.md) | - | [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) *(read)* |
-| [BitSightDiligenceHistoricalStatistics](../content/bitsight-bitsightdiligencehistoricalstatistics-a1d7d1c7-5677-4abe-a717-60cdf261e0c7-4dc5717d.md) | - | [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) *(read)* |
-| [BitSightDiligenceStatistics](../content/bitsight-bitsightdiligencestatistics-3900f610-56b5-4f8f-84f4-291d9b41dfe2-2d67b4ce.md) | - | [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) *(read)* |
-| [BitSightFindingsData](../content/bitsight-bitsightfindingsdata-4bb0ba56-5a8c-4b74-88c5-237037eaa3ee-381bfc2c.md) | - | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) *(read)* |
-| [BitSightFindingsSummary](../content/bitsight-bitsightfindingssummary-39844fcb-d451-4050-ae41-23c8f27b611c-4ea22d67.md) | - | [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) *(read)* |
-| [BitSightGraphData](../content/bitsight-bitsightgraphdata-6495f5c6-12ac-4416-8060-94e3cfad695b-e914fabf.md) | - | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) *(read)* |
-| [BitSightIndustrialStatistics](../content/bitsight-bitsightindustrialstatistics-44c51bc8-1c06-46ca-ba25-0422d0af4015-4027f794.md) | - | [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) *(read)* |
-| [BitSightObservationStatistics](../content/bitsight-bitsightobservationstatistics-144a9fa0-98a3-40f7-b39e-9c7ff0229290-c33969b2.md) | - | [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) *(read)* |
+| [BitSightAlerts](../parsers/bitsightalerts.md) | - | [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) *(read)* |
+| [BitSightBreaches](../parsers/bitsightbreaches.md) | - | [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) *(read)* |
+| [BitSightCompanyDetails](../parsers/bitsightcompanydetails.md) | - | [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) *(read)* |
+| [BitSightCompanyRatings](../parsers/bitsightcompanyratings.md) | - | [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) *(read)* |
+| [BitSightDiligenceHistoricalStatistics](../parsers/bitsightdiligencehistoricalstatistics.md) | - | [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) *(read)* |
+| [BitSightDiligenceStatistics](../parsers/bitsightdiligencestatistics.md) | - | [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) *(read)* |
+| [BitSightFindingsData](../parsers/bitsightfindingsdata.md) | - | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) *(read)* |
+| [BitSightFindingsSummary](../parsers/bitsightfindingssummary.md) | - | [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) *(read)* |
+| [BitSightGraphData](../parsers/bitsightgraphdata.md) | - | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) *(read)* |
+| [BitSightIndustrialStatistics](../parsers/bitsightindustrialstatistics.md) | - | [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) *(read)* |
+| [BitSightObservationStatistics](../parsers/bitsightobservationstatistics.md) | - | [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) *(read)* |
 
 ## Release Notes
 

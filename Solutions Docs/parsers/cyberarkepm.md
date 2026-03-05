@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) � | ? | ✓ | ? |
+| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

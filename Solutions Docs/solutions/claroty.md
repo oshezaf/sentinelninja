@@ -114,7 +114,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ClarotyEvent](../content/claroty-clarotyevent-c90f5245-c214-47ea-9436-f7bbe38b2d8b-52b57754.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [ClarotyEvent](../parsers/clarotyevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

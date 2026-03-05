@@ -31,10 +31,10 @@ The [Palo Alto Networks](https://www.paloaltonetworks.com/) Cortex XDR Microsoft
 
 This solution provides **2 data connector(s)**:
 
-- [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) �
-- [Cortex XDR - Incidents](../connectors/cortexxdrincidents.md) �
+- [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) 🔶
+- [Cortex XDR - Incidents](../connectors/cortexxdrincidents.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -46,10 +46,10 @@ This solution uses **5 table(s)**:
 | [`PaloAltoCortexXDR_Audit_Agent_CL`](../tables/paloaltocortexxdr-audit-agent-cl.md) | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | - |
 | [`PaloAltoCortexXDR_Audit_Management_CL`](../tables/paloaltocortexxdr-audit-management-cl.md) | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | - |
 | [`PaloAltoCortexXDR_Endpoints_CL`](../tables/paloaltocortexxdr-endpoints-cl.md) | [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | - |
-| [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) � | [Cortex XDR - Incidents](../connectors/cortexxdrincidents.md), [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | Analytics |
+| [`PaloAltoCortexXDR_Incidents_CL`](../tables/paloaltocortexxdr-incidents-cl.md) 🔶 | [Cortex XDR - Incidents](../connectors/cortexxdrincidents.md), [Palo Alto Cortex XDR](../connectors/cortexxdrdataconnector.md) | Analytics |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **4 content item(s)**:
@@ -71,7 +71,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PaloAltoCortexXDR](../content/cortex-xdr-paloaltocortexxdr-d846f2f3-f691-4baf-a19f-82ce22e9c366-807e5792.md) | - | - |
+| [PaloAltoCortexXDR](../parsers/paloaltocortexxdr.md) | - | - |
 
 ## Release Notes
 

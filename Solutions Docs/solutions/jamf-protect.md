@@ -40,13 +40,13 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) � | - | Analytics |
+| [`jamfprotect_CL`](../tables/jamfprotect-cl.md) 🔶 | - | Analytics |
 | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
 | [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Workbooks |
 | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Analytics, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:
@@ -84,11 +84,11 @@ This solution includes **12 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [JamfProtectAlerts](../content/jamf-protect-jamfprotectalerts-b1044d58-6384-454e-b51d-5750fda0698c-cd2b688f.md) | - | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) *(read)* |
-| [JamfProtectNetworkTraffic](../content/jamf-protect-jamfprotectnetworktraffic-374cd4de-269c-465e-93ac-b9ade4af4f28-b5e90150.md) | - | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) *(read)* |
-| [JamfProtectTelemetry](../content/jamf-protect-jamfprotecttelemetry-d941b837-88fa-4c77-a4d8-76af0044cac0-17d14a57.md) | - | [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) *(read)* |
-| [JamfProtectThreatEvents](../content/jamf-protect-jamfprotectthreatevents-7950cddf-e280-423c-a2cd-a790ec54c085-861c2937.md) | - | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) *(read)* |
-| [JamfProtectUnifiedLogs](../content/jamf-protect-jamfprotectunifiedlogs-a848f8db-4cf8-4a64-9bbc-58f4183f2bb1-c9bfd19c.md) | - | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) *(read)* |
+| [JamfProtectAlerts](../parsers/jamfprotectalerts.md) | - | [`jamfprotectalerts_CL`](../tables/jamfprotectalerts-cl.md) *(read)* |
+| [JamfProtectNetworkTraffic](../parsers/jamfprotectnetworktraffic.md) | - | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) *(read)* |
+| [JamfProtectTelemetry](../parsers/jamfprotecttelemetry.md) | - | [`jamfprotecttelemetryv2_CL`](../tables/jamfprotecttelemetryv2-cl.md) *(read)* |
+| [JamfProtectThreatEvents](../parsers/jamfprotectthreatevents.md) | - | [`jamfprotect_CL`](../tables/jamfprotect-cl.md) *(read)* |
+| [JamfProtectUnifiedLogs](../parsers/jamfprotectunifiedlogs.md) | - | [`jamfprotectunifiedlogs_CL`](../tables/jamfprotectunifiedlogs-cl.md) *(read)* |
 
 ## Release Notes
 

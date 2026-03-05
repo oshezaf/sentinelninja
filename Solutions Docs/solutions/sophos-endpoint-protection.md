@@ -41,10 +41,10 @@ c. [Codeless Connector Platform (CCP)](https://learn.microsoft.com/en-us/azure/s
 
 This solution provides **2 data connector(s)**:
 
-- [Sophos Endpoint Protection](../connectors/sophosep.md) �
+- [Sophos Endpoint Protection](../connectors/sophosep.md) 🔶
 - [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md)
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -54,10 +54,10 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`SophosEPAlerts_CL`](../tables/sophosepalerts-cl.md) | [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) | - |
 | [`SophosEPEvents_CL`](../tables/sophosepevents-cl.md) | [Sophos Endpoint Protection (using REST API)](../connectors/sophosendpointprotectionccpdefinition.md) | - |
-| [`SophosEP_CL`](../tables/sophosep-cl.md) � | [Sophos Endpoint Protection](../connectors/sophosep.md) | - |
+| [`SophosEP_CL`](../tables/sophosep-cl.md) 🔶 | [Sophos Endpoint Protection](../connectors/sophosep.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -70,7 +70,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SophosEPEvent](../content/sophos-endpoint-protection-sophosepevent-4ed36a9b-accd-491d-b22b-2454c137d90d-30d66816.md) | - | - |
+| [SophosEPEvent](../parsers/sophosepevent.md) | - | - |
 
 ## Release Notes
 

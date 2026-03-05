@@ -119,11 +119,11 @@ This solution includes **33 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [VectraAudits](../content/vectra-xdr-vectraaudits-974718ae-c0a5-4d4a-bb42-63a0f394d66f-d9837989.md) | - | [`Audits_Data_CL`](../tables/audits-data-cl.md) *(read)* |
-| [VectraDetections](../content/vectra-xdr-vectradetections-de724888-764f-4cfb-9882-804269dea40b-b1463bd6.md) | - | [`Detections_Data_CL`](../tables/detections-data-cl.md) *(read)* |
-| [VectraEntityScoring](../content/vectra-xdr-vectraentityscoring-1175ffec-960e-48f8-b646-8292745c9524-023d942a.md) | - | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) *(read)* |
-| [VectraHealth](../content/vectra-xdr-vectrahealth-08da90ff-4a71-48d8-85ca-de273e98b402-b7427062.md) | - | [`Health_Data_CL`](../tables/health-data-cl.md) *(read)* |
-| [VectraLockdown](../content/vectra-xdr-vectralockdown-128c8f20-4bb8-45b6-a531-82401c0e4f33-456d306a.md) | - | [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) *(read)* |
+| [VectraAudits](../parsers/vectraaudits.md) | - | [`Audits_Data_CL`](../tables/audits-data-cl.md) *(read)* |
+| [VectraDetections](../parsers/vectradetections.md) | - | [`Detections_Data_CL`](../tables/detections-data-cl.md) *(read)* |
+| [VectraEntityScoring](../parsers/vectraentityscoring.md) | - | [`Entity_Scoring_Data_CL`](../tables/entity-scoring-data-cl.md) *(read)* |
+| [VectraHealth](../parsers/vectrahealth.md) | - | [`Health_Data_CL`](../tables/health-data-cl.md) *(read)* |
+| [VectraLockdown](../parsers/vectralockdown.md) | - | [`Lockdown_Data_CL`](../tables/lockdown-data-cl.md) *(read)* |
 
 ## Release Notes
 

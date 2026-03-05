@@ -75,7 +75,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [FireEyeNXEvent](../content/fireeye-network-security-fireeyenxevent-742dcaba-a8fc-428c-b9f9-1ad2cf5c7b20-cedc5103.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [FireEyeNXEvent](../parsers/fireeyenxevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

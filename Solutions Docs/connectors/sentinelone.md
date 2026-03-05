@@ -16,7 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SentinelOne_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne/Data%20Connectors/SentinelOne_API_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
-| **Custom Log V1 Tables** | Yes � — ingests into tables with type-suffixed columns |
+| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
 The [SentinelOne](https://www.sentinelone.com/) data connector provides the capability to ingest common SentinelOne server objects such as Threats, Agents, Applications, Activities, Policies, Groups, and more events into Microsoft Sentinel through the REST API. Refer to API documentation: `https://<SOneInstanceDomain>.sentinelone.net/api-doc/overview` for more information. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
 
@@ -26,12 +26,12 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) � | ✓ | ✓ | ✓ |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) � | ✓ | ✓ | ✓ |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) � | ✓ | ✓ | ✓ |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) � | ✓ | ✓ | ✓ |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) � | ✓ | ✓ | ✓ |
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) � | ✓ | ✓ | ✓ |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) 🔶 | ✓ | ✓ | ✓ |
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

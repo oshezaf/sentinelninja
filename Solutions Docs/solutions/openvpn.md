@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OpenVpnEvent](../content/openvpn-openvpnevent-f9d1ce4b-4c49-47f7-8902-6458106de1c0-1f1c15d5.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [OpenVpnEvent](../parsers/openvpnevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

@@ -37,9 +37,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [NXLog DNS Logs](../connectors/nxlogdnslogs.md) �
+- [NXLog DNS Logs](../connectors/nxlogdnslogs.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -47,10 +47,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) � | [NXLog DNS Logs](../connectors/nxlogdnslogs.md) | - |
+| [`NXLog_DNS_Server_CL`](../tables/nxlog-dns-server-cl.md) 🔶 | [NXLog DNS Logs](../connectors/nxlogdnslogs.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -63,7 +63,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [ASimDnsMicrosoftNXLog](../content/nxlogdnslogs-asimdnsmicrosoftnxlog-274a2fc6-eda0-430d-9e02-7a7c0850eb0e-d0a2aace.md) | - | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md) *(read)* |
+| <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [ASimDnsMicrosoftNXLog](../parsers/asimdnsmicrosoftnxlog.md) | - | <img src="../images/asim-logo-small.png" alt="ASIM" height="16"> [`_Im_Dns`](../asim/imdns.md) *(read)* |
 
 ---
 

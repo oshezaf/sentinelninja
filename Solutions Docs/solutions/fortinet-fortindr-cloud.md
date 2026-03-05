@@ -31,9 +31,9 @@ The [Fortinet FortiNDR Cloud](https://docs.fortinet.com/product/fortindr-cloud) 
 
 This solution provides **1 data connector(s)**:
 
-- [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) �
+- [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -41,12 +41,12 @@ This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) � | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
-| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) � | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
-| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) � | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
+| [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) 🔶 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
+| [`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) 🔶 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
+| [`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) 🔶 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:
@@ -66,7 +66,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Fortinet_FortiNDR_Cloud](../content/fortinet-fortindr-cloud-fortinet-fortindr-cloud-4c846775-c295-421f-9275-ded657b190d6-53498416.md) | - | [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) *(read)*<br>[`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) *(read)*<br>[`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) *(read)* |
+| [Fortinet_FortiNDR_Cloud](../parsers/fortinet-fortindr-cloud.md) | - | [`FncEventsDetections_CL`](../tables/fnceventsdetections-cl.md) *(read)*<br>[`FncEventsObservation_CL`](../tables/fnceventsobservation-cl.md) *(read)*<br>[`FncEventsSuricata_CL`](../tables/fnceventssuricata-cl.md) *(read)* |
 
 ## Release Notes
 

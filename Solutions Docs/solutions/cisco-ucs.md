@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [CiscoUCS](../content/cisco-ucs-ciscoucs-363f8744-f75c-4500-be8d-92e4e5b0c1bf-ec56fe47.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [CiscoUCS](../parsers/ciscoucs.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

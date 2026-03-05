@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SINECSecurityGuard_CL`](../tables/sinecsecurityguard-cl.md) � | ? | ✓ | ? |
+| [`SINECSecurityGuard_CL`](../tables/sinecsecurityguard-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

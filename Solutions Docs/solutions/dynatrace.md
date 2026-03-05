@@ -110,10 +110,10 @@ This solution includes **16 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DynatraceAttacks](../content/dynatrace-dynatraceattacks-fc6d1ab7-a088-4b9e-8ea1-b95584172c33-4e0a52f2.md) | - | [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) *(read)* |
-| [DynatraceAuditLogs](../content/dynatrace-dynatraceauditlogs-b157a58b-39ce-44c2-8a2f-7f2a8eff104a-a3553084.md) | - | [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) *(read)* |
-| [DynatraceProblems](../content/dynatrace-dynatraceproblems-ca4646fe-4278-4dcb-9be7-f0e2d53bbaa1-f94c6095.md) | - | [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) *(read)* |
-| [DynatraceSecurityProblems](../content/dynatrace-dynatracesecurityproblems-09c9ae71-329c-4343-815d-b755206d9f32-9678c2d5.md) | - | [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) *(read)* |
+| [DynatraceAttacks](../parsers/dynatraceattacks.md) | - | [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) *(read)* |
+| [DynatraceAuditLogs](../parsers/dynatraceauditlogs.md) | - | [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) *(read)* |
+| [DynatraceProblems](../parsers/dynatraceproblems.md) | - | [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) *(read)* |
+| [DynatraceSecurityProblems](../parsers/dynatracesecurityproblems.md) | - | [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) *(read)* |
 
 ## Release Notes
 

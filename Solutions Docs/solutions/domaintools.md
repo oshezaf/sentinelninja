@@ -53,7 +53,7 @@ This solution includes **9 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [DomainToolsDNS](../content/domaintools-domaintoolsdns-fe76a307-f652-4590-b60d-b4a86a483c8c-8dd3e68c.md) | - | - |
+| [DomainToolsDNS](../parsers/domaintoolsdns.md) | - | - |
 
 ## Release Notes
 

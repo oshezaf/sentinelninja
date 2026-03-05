@@ -29,63 +29,63 @@ REST API-based connectors use the Azure Monitor Data Collector API or Logs Inges
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [AIShield](../connectors/boschaishield.md) � | Bosch | 1 | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
-| [API Protection](../connectors/42crunchapiprotection.md) � | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
-| [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) � | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
-| [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) � | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
-| [Authomize Data Connector](../connectors/authomize.md) ⚠️ � | Authomize | 1 | [Authomize](../solutions/authomize.md) |
-| [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) � | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
-| [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) � | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
-| [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ � | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
-| [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) � | CITRIX | 4 | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
-| [Cognni](../connectors/cognnisentineldataconnector.md) � | Cognni | 1 | [Cognni](../solutions/cognni.md) |
-| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) � | Corelight | 108 | [Corelight](../solutions/corelight.md) |
-| [Cribl](../connectors/cribl.md) � | Cribl | 4 | [Cribl](../solutions/cribl.md) |
-| [Cynerio Security Events](../connectors/cyneriosecurityevents.md) � | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
-| [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) � | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
+| [AIShield](../connectors/boschaishield.md) 🔶 | Bosch | 1 | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [API Protection](../connectors/42crunchapiprotection.md) 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
+| [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
+| [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
+| [Authomize Data Connector](../connectors/authomize.md) ⚠️ 🔶 | Authomize | 1 | [Authomize](../solutions/authomize.md) |
+| [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) 🔶 | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
+| [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
+| [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶 | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
+| [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) 🔶 | CITRIX | 4 | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
+| [Cognni](../connectors/cognnisentineldataconnector.md) 🔶 | Cognni | 1 | [Cognni](../solutions/cognni.md) |
+| [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | Corelight | 108 | [Corelight](../solutions/corelight.md) |
+| [Cribl](../connectors/cribl.md) 🔶 | Cribl | 4 | [Cribl](../solutions/cribl.md) |
+| [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
+| [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) 🔶 | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | Orange Cyberdefense | 1 | [Datalake2Sentinel](../solutions/datalake2sentinel.md) |
-| [Datawiza DAP](../connectors/datawizadapsolution.md) ⚠️ � | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
-| [Derdack SIGNL4](../connectors/derdacksignl4.md) � | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
-| [Doppel Data Connector](../connectors/doppel-dataconnector.md) � | Doppel | 1 | [Doppel](../solutions/doppel.md) |
-| [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) � | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
-| [F5 BIG-IP](../connectors/f5bigip.md) � | F5 Networks | 3 | [F5 Big-IP](../solutions/f5-big-ip.md) |
-| [Forcepoint DLP](../connectors/forcepoint-dlp.md) � | Forcepoint | 1 | [Forcepoint DLP](../solutions/forcepoint-dlp.md) |
-| [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ � | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
-| [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) � | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
-| [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md) � | Garrison | 1 | [Garrison ULTRA](../solutions/garrison-ultra.md) |
-| [Gigamon AMX Data Connector](../connectors/gigamondataconnector.md) � | Gigamon | 1 | [Gigamon Connector](../solutions/gigamon-connector.md) |
-| [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) � | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
-| [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) � | InfoSecGlobal | 1 | [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
-| [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) � | IONIX | 1 | [IONIX](../solutions/ionix.md) |
-| [MailGuard 365](../connectors/mailguard365.md) � | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
-| [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) � | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
-| [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) � | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| [Datawiza DAP](../connectors/datawizadapsolution.md) ⚠️ 🔶 | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
+| [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
+| [Doppel Data Connector](../connectors/doppel-dataconnector.md) 🔶 | Doppel | 1 | [Doppel](../solutions/doppel.md) |
+| [Exchange Security Insights On-Premises Collector](../connectors/esi-exchangeonpremisescollector.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| [F5 BIG-IP](../connectors/f5bigip.md) 🔶 | F5 Networks | 3 | [F5 Big-IP](../solutions/f5-big-ip.md) |
+| [Forcepoint DLP](../connectors/forcepoint-dlp.md) 🔶 | Forcepoint | 1 | [Forcepoint DLP](../solutions/forcepoint-dlp.md) |
+| [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️ 🔶 | Forescout | 2 | [Forescout eyeInspect for OT Security](../solutions/forescout-eyeinspect-for-ot-security.md) |
+| [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) 🔶 | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
+| [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md) 🔶 | Garrison | 1 | [Garrison ULTRA](../solutions/garrison-ultra.md) |
+| [Gigamon AMX Data Connector](../connectors/gigamondataconnector.md) 🔶 | Gigamon | 1 | [Gigamon Connector](../solutions/gigamon-connector.md) |
+| [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) 🔶 | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
+| [InfoSecGlobal Data Connector](../connectors/infosecdataconnector.md) 🔶 | InfoSecGlobal | 1 | [AgileSec Analytics Connector](../solutions/agilesec-analytics-connector.md) |
+| [IONIX Security Logs](../connectors/cyberpionsecuritylogs.md) 🔶 | IONIX | 1 | [IONIX](../solutions/ionix.md) |
+| [MailGuard 365](../connectors/mailguard365.md) 🔶 | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
+| [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
+| [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | MISP project & cudeso.be | 1 | [MISP2Sentinel](../solutions/misp2sentinel.md) |
-| [NC Protect](../connectors/nucleuscyberncprotect.md) � | archTIS | 1 | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
-| [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) � | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
-| [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) � | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
-| [NXLog AIX Audit](../connectors/nxlogaixaudit.md) � | NXLog | 1 | [NXLogAixAudit](../solutions/nxlogaixaudit.md) |
-| [NXLog BSM macOS](../connectors/nxlogbsmmacos.md) � | NXLog | 1 | [NXLog BSM macOS](../solutions/nxlog-bsm-macos.md) |
-| [NXLog DNS Logs](../connectors/nxlogdnslogs.md) � | NXLog | 1 | [NXLogDNSLogs](../solutions/nxlogdnslogs.md) |
-| [NXLog FIM](../connectors/nxlogfim.md) � | NXLog | 1 | [NXLog FIM](../solutions/nxlog-fim.md) |
-| [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md) � | NXLog | 1 | [NXLog LinuxAudit](../solutions/nxlog-linuxaudit.md) |
-| [Orca Security Alerts](../connectors/orcasecurityalerts.md) � | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
-| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) � | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
-| [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) � | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
-| [Prancer Data Connector](../connectors/prancerlogdata.md) � | Prancer | 1 | [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
-| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) � | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
-| [SaaS Security](../connectors/valencesecurity.md) � | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
-| [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) � | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
-| [SenservaPro (Preview)](../connectors/senservapro.md) � | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |
-| [Sevco Platform - Devices](../connectors/sevcodevices.md) ⚠️ � | Sevco Security | 1 | [SevcoSecurity](../solutions/sevcosecurity.md) |
-| [SINEC Security Guard](../connectors/ssg.md) � | Siemens AG | 1 | [SINEC Security Guard](../solutions/sinec-security-guard.md) |
-| [Sonrai Data Connector](../connectors/sonraidataconnector.md) � | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
-| [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) � | Sophos | 1 | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
-| [Squadra Technologies secRMM](../connectors/squadratechnologiessecrmm.md) � | Squadra Technologies | 1 | [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
-| [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) � | Symantec | 1 | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
-| [Talon Insights](../connectors/talonlogs.md) � | Talon Security | 1 | [Talon](../solutions/talon.md) |
-| [Theom](../connectors/theom.md) � | Theom | 1 | [Theom](../solutions/theom.md) |
-| [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) � | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
+| [NC Protect](../connectors/nucleuscyberncprotect.md) 🔶 | archTIS | 1 | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
+| [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
+| [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
+| [NXLog AIX Audit](../connectors/nxlogaixaudit.md) 🔶 | NXLog | 1 | [NXLogAixAudit](../solutions/nxlogaixaudit.md) |
+| [NXLog BSM macOS](../connectors/nxlogbsmmacos.md) 🔶 | NXLog | 1 | [NXLog BSM macOS](../solutions/nxlog-bsm-macos.md) |
+| [NXLog DNS Logs](../connectors/nxlogdnslogs.md) 🔶 | NXLog | 1 | [NXLogDNSLogs](../solutions/nxlogdnslogs.md) |
+| [NXLog FIM](../connectors/nxlogfim.md) 🔶 | NXLog | 1 | [NXLog FIM](../solutions/nxlog-fim.md) |
+| [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md) 🔶 | NXLog | 1 | [NXLog LinuxAudit](../solutions/nxlog-linuxaudit.md) |
+| [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
+| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
+| [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
+| [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
+| [SaaS Security](../connectors/valencesecurity.md) 🔶 | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
+| [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) 🔶 | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
+| [SenservaPro (Preview)](../connectors/senservapro.md) 🔶 | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |
+| [Sevco Platform - Devices](../connectors/sevcodevices.md) ⚠️ 🔶 | Sevco Security | 1 | [SevcoSecurity](../solutions/sevcosecurity.md) |
+| [SINEC Security Guard](../connectors/ssg.md) 🔶 | Siemens AG | 1 | [SINEC Security Guard](../solutions/sinec-security-guard.md) |
+| [Sonrai Data Connector](../connectors/sonraidataconnector.md) 🔶 | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
+| [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) 🔶 | Sophos | 1 | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
+| [Squadra Technologies secRMM](../connectors/squadratechnologiessecrmm.md) 🔶 | Squadra Technologies | 1 | [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
+| [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) 🔶 | Symantec | 1 | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
+| [Talon Insights](../connectors/talonlogs.md) 🔶 | Talon Security | 1 | [Talon](../solutions/talon.md) |
+| [Theom](../connectors/theom.md) 🔶 | Theom | 1 | [Theom](../solutions/theom.md) |
+| [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) 🔶 | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 
 ---
 

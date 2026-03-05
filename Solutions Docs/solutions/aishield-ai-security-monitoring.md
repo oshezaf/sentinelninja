@@ -38,9 +38,9 @@ a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azur
 
 This solution provides **1 data connector(s)**:
 
-- [AIShield](../connectors/boschaishield.md) �
+- [AIShield](../connectors/boschaishield.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -48,11 +48,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AIShield_CL`](../tables/aishield-cl.md) � | [AIShield](../connectors/boschaishield.md) | Analytics, Workbooks |
-| [`Guardian_CL`](../tables/guardian-cl.md) � | - | Analytics |
+| [`AIShield_CL`](../tables/aishield-cl.md) 🔶 | [AIShield](../connectors/boschaishield.md) | Analytics, Workbooks |
+| [`Guardian_CL`](../tables/guardian-cl.md) 🔶 | - | Analytics |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **42 content item(s)**:
@@ -117,8 +117,8 @@ This solution includes **42 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [AIShield](../content/aishield-ai-security-monitoring-aishield-574a5c4d-051c-41c8-83a9-f06962e14d85-02427cb1.md) | - | [`AIShield_CL`](../tables/aishield-cl.md) *(read)* |
-| [Guardian](../content/aishield-ai-security-monitoring-guardian-8f225af4-b1f6-4598-9cff-e85a0ee8a909-b6128f25.md) | - | [`Guardian_CL`](../tables/guardian-cl.md) *(read)* |
+| [AIShield](../parsers/aishield.md) | - | [`AIShield_CL`](../tables/aishield-cl.md) *(read)* |
+| [Guardian](../parsers/guardian.md) | - | [`Guardian_CL`](../tables/guardian-cl.md) *(read)* |
 
 ## Release Notes
 

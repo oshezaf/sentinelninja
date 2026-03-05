@@ -74,7 +74,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [StealthwatchEvent](../content/cisco-secure-cloud-analytics-stealthwatchevent-faa3e37d-abb7-402b-b00c-9ded95d3bd13-47a736ca.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [StealthwatchEvent](../parsers/stealthwatchevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

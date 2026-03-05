@@ -114,7 +114,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PaloAltoCDLEvent](../content/paloaltocdl-paloaltocdlevent-51643a38-679c-4989-9341-2c01a2bf478c-e16bd5b6.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [PaloAltoCDLEvent](../parsers/paloaltocdlevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

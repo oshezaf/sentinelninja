@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) � | `ResourceProvider == "MICROSOFT.LOGIC"` | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `ResourceProvider == "MICROSOFT.LOGIC"` | ✗ | ✗ | ✗ |
 | [`SentinelHealth`](../tables/sentinelhealth.md) |  | ✓ | ✗ | ? |
 
 ---

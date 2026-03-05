@@ -31,22 +31,22 @@ Azure Diagnostics Settings enable native log collection from Azure resources dir
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
 | [Azure Activity](../connectors/azureactivity.md) | Microsoft | 1 | [Azure Activity](../solutions/azure-activity.md) |
-| [Azure Batch Account](../connectors/azurebatchaccount-ccp.md) � | Microsoft | 1 | [Azure Batch Account](../solutions/azure-batch-account.md) |
-| [Azure Cognitive Search](../connectors/azurecognitivesearch-ccp.md) � | Microsoft | 1 | [Azure Cognitive Search](../solutions/azure-cognitive-search.md) |
-| [Azure Data Lake Storage Gen1](../connectors/azuredatalakestoragegen1-ccp.md) � | Microsoft | 1 | [Azure Data Lake Storage Gen1](../solutions/azure-data-lake-storage-gen1.md) |
-| [Azure DDoS Protection](../connectors/ddos.md) � | Microsoft | 1 | [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
-| [Azure Event Hub](../connectors/azureeventhub-ccp.md) � | Microsoft | 1 | [Azure Event Hubs](../solutions/azure-event-hubs.md) |
-| [Azure Firewall](../connectors/azurefirewall.md) � | Microsoft | 10 | [Azure Firewall](../solutions/azure-firewall.md) |
-| [Azure Key Vault](../connectors/azurekeyvault.md) � | Microsoft | 1 | [Azure Key Vault](../solutions/azure-key-vault.md) |
-| [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) � | Microsoft | 3 | [Azure kubernetes Service](../solutions/azure-kubernetes-service.md) |
-| [Azure Logic Apps](../connectors/azurelogicapps-ccp.md) � | Microsoft | 1 | [Azure Logic Apps](../solutions/azure-logic-apps.md) |
-| [Azure Service Bus](../connectors/azureservicebus-ccp.md) � | Microsoft | 1 | [Azure Service Bus](../solutions/azure-service-bus.md) |
-| [Azure SQL Databases](../connectors/azuresql.md) � | Microsoft | 1 | [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
+| [Azure Batch Account](../connectors/azurebatchaccount-ccp.md) 🔶 | Microsoft | 1 | [Azure Batch Account](../solutions/azure-batch-account.md) |
+| [Azure Cognitive Search](../connectors/azurecognitivesearch-ccp.md) 🔶 | Microsoft | 1 | [Azure Cognitive Search](../solutions/azure-cognitive-search.md) |
+| [Azure Data Lake Storage Gen1](../connectors/azuredatalakestoragegen1-ccp.md) 🔶 | Microsoft | 1 | [Azure Data Lake Storage Gen1](../solutions/azure-data-lake-storage-gen1.md) |
+| [Azure DDoS Protection](../connectors/ddos.md) 🔶 | Microsoft | 1 | [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
+| [Azure Event Hub](../connectors/azureeventhub-ccp.md) 🔶 | Microsoft | 1 | [Azure Event Hubs](../solutions/azure-event-hubs.md) |
+| [Azure Firewall](../connectors/azurefirewall.md) 🔶 | Microsoft | 10 | [Azure Firewall](../solutions/azure-firewall.md) |
+| [Azure Key Vault](../connectors/azurekeyvault.md) 🔶 | Microsoft | 1 | [Azure Key Vault](../solutions/azure-key-vault.md) |
+| [Azure Kubernetes Service (AKS)](../connectors/azurekubernetes.md) 🔶 | Microsoft | 3 | [Azure kubernetes Service](../solutions/azure-kubernetes-service.md) |
+| [Azure Logic Apps](../connectors/azurelogicapps-ccp.md) 🔶 | Microsoft | 1 | [Azure Logic Apps](../solutions/azure-logic-apps.md) |
+| [Azure Service Bus](../connectors/azureservicebus-ccp.md) 🔶 | Microsoft | 1 | [Azure Service Bus](../solutions/azure-service-bus.md) |
+| [Azure SQL Databases](../connectors/azuresql.md) 🔶 | Microsoft | 1 | [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Azure Storage Account](../connectors/azurestorageaccount.md) | Microsoft | 5 | [Azure Storage](../solutions/azure-storage.md) |
-| [Azure Stream Analytics](../connectors/azurestreamanalytics-ccp.md) � | Microsoft | 1 | [Azure Stream Analytics](../solutions/azure-stream-analytics.md) |
-| [Azure Web Application Firewall (WAF)](../connectors/waf.md) � | Microsoft | 1 | [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
+| [Azure Stream Analytics](../connectors/azurestreamanalytics-ccp.md) 🔶 | Microsoft | 1 | [Azure Stream Analytics](../solutions/azure-stream-analytics.md) |
+| [Azure Web Application Firewall (WAF)](../connectors/waf.md) 🔶 | Microsoft | 1 | [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
 | [Microsoft Purview](../connectors/microsoftazurepurview.md) ➕ | Microsoft | 1 | [Microsoft Purview](../solutions/microsoft-purview.md) |
-| [Network Security Groups](../connectors/azurensg.md) � | Microsoft | 1 | [Azure Network Security Groups](../solutions/azure-network-security-groups.md) |
+| [Network Security Groups](../connectors/azurensg.md) 🔶 | Microsoft | 1 | [Azure Network Security Groups](../solutions/azure-network-security-groups.md) |
 
 ---
 

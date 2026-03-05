@@ -69,7 +69,7 @@ This solution includes **9 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [RadiflowEvent](../content/radiflow-radiflowevent-7594ae30-cfd5-42c5-894d-2c6196857a4c-96199f4a.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [RadiflowEvent](../parsers/radiflowevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

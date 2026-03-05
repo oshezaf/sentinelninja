@@ -95,8 +95,8 @@ This solution includes **15 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IllumioSyslogAuditEvents](../content/illumiosaas-illumiosyslogauditevents-b455e6af-bf95-4712-bd4c-d40090e82105-03808065.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
-| [IllumioSyslogNetworkTrafficEvents](../content/illumiosaas-illumiosyslognetworktrafficevents-a1569c0d-0826-4f87-b139-0853203f6b9c-bfec4293.md) | - | [`IllumioFlowEventsV2_CL`](../tables/illumiofloweventsv2-cl.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)* |
+| [IllumioSyslogAuditEvents](../parsers/illumiosyslogauditevents.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [IllumioSyslogNetworkTrafficEvents](../parsers/illumiosyslognetworktrafficevents.md) | - | [`IllumioFlowEventsV2_CL`](../tables/illumiofloweventsv2-cl.md) *(read)*<br>[`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

@@ -1,4 +1,6 @@
-# MimecastAudit
+# 🚫 MimecastAudit
+
+> 🚫 **Deprecated:** This solution has been deprecated and replaced by a newer integration.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="MimecastAudit Logo" width="75" height="75">
 
@@ -39,9 +41,9 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 
 This solution provides **1 data connector(s)**:
 
-- [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md) �
+- [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +51,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) � | [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md) | Analytics, Workbooks |
+| [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) 🔶 | [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md) | Analytics, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **2 content item(s)**:

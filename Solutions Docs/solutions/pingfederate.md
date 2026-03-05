@@ -115,7 +115,7 @@ This solution includes **23 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [PingFederateEvent](../content/pingfederate-pingfederateevent-9d4e2cac-3380-4549-a87d-84b4bdaa5538-f4c5f534.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [PingFederateEvent](../parsers/pingfederateevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

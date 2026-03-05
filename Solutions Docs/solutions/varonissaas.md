@@ -33,9 +33,9 @@ The Varonis SaaS integration allows you to retrieve Varonis DatAlert alerts, cre
 
 This solution provides **1 data connector(s)**:
 
-- [Varonis SaaS](../connectors/varonissaas.md) �
+- [Varonis SaaS](../connectors/varonissaas.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -43,10 +43,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) � | [Varonis SaaS](../connectors/varonissaas.md) | Workbooks |
+| [`VaronisAlerts_CL`](../tables/varonisalerts-cl.md) 🔶 | [Varonis SaaS](../connectors/varonissaas.md) | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:

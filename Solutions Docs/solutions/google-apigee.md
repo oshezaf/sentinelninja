@@ -37,12 +37,12 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) ⚠️ �
+- [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) ⚠️ 🔶
 - [Google ApigeeX (via Codeless Connector Framework)](../connectors/googleapigeexlogsccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -50,11 +50,11 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ApigeeX_CL`](../tables/apigeex-cl.md) � | [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) | - |
+| [`ApigeeX_CL`](../tables/apigeex-cl.md) 🔶 | [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) | - |
 | [`GCPApigee`](../tables/gcpapigee.md) | [Google ApigeeX (via Codeless Connector Framework)](../connectors/googleapigeexlogsccpdefinition.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:
@@ -67,9 +67,9 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ApigeeX](../content/google-apigee-apigeex-d597b0df-ea3d-479f-97ea-8c90922437a1-7eaf19c0.md) | - | [`ApigeeX_CL`](../tables/apigeex-cl.md) *(read)*<br>[`GoogleApigeeXV2_CL`](../tables/googleapigeexv2-cl.md) *(read)* |
-| [ApigeeXV2](../content/google-apigee-apigeexv2-f44281ae-62a7-4043-b27a-aa6e438f3e1a-6924bb32.md) | - | - |
-| [Unified_ApigeeX](../content/google-apigee-unified-apigeex-6eae941d-8cdb-45c7-9896-aab2a6082dfb-96a25c59.md) | - | [`ApigeeXV2_CL`](../tables/apigeexv2-cl.md) *(read)*<br>[`ApigeeX_CL`](../tables/apigeex-cl.md) *(read)* |
+| [ApigeeX](../parsers/apigeex.md) | - | [`ApigeeX_CL`](../tables/apigeex-cl.md) *(read)*<br>[`GoogleApigeeXV2_CL`](../tables/googleapigeexv2-cl.md) *(read)* |
+| [ApigeeXV2](../parsers/apigeexv2.md) | - | - |
+| [Unified_ApigeeX](../parsers/unified-apigeex.md) | - | [`ApigeeXV2_CL`](../tables/apigeexv2-cl.md) *(read)*<br>[`ApigeeX_CL`](../tables/apigeex-cl.md) *(read)* |
 
 ## Release Notes
 

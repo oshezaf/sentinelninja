@@ -25,7 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) � | ✗ | ✓ | ✗ |
+| [`BitglassLogs_CL`](../tables/bitglasslogs-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

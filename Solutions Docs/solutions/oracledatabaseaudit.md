@@ -113,7 +113,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OracleDatabaseAuditEvent](../content/oracledatabaseaudit-oracledatabaseauditevent-fb193d04-3051-4fc8-ae13-cc087d4c9f15-6b7a5d65.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [OracleDatabaseAuditEvent](../parsers/oracledatabaseauditevent.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

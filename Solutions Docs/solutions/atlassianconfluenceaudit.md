@@ -38,12 +38,12 @@ This solution takes a dependency on the following technologies, and some of thes
 This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
 - [Atlassian Confluence](../connectors/atlassianconfluence.md) ⚠️
-- [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) ⚠️ �
+- [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) ⚠️ 🔶
 - [ Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/confluenceauditccpdefinition.md)
 
 *⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -53,10 +53,10 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`AtlassianConfluenceNativePoller_CL`](../tables/atlassianconfluencenativepoller-cl.md) | [Atlassian Confluence](../connectors/atlassianconfluence.md) | - |
 | [`ConfluenceAuditLogs_CL`](../tables/confluenceauditlogs-cl.md) | [ Atlassian Confluence Audit (via Codeless Connector Framework)](../connectors/confluenceauditccpdefinition.md) | - |
-| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) � | [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) | - |
+| [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) 🔶 | [[Deprecated] Atlassian Confluence Audit](../connectors/confluenceauditapi.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -69,7 +69,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ConfluenceAudit](../content/atlassianconfluenceaudit-confluenceaudit-91a64f79-c926-4b7f-a77e-b202f79fe4bf-d342acac.md) | - | [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) *(read)* |
+| [ConfluenceAudit](../parsers/confluenceaudit.md) | - | [`Confluence_Audit_CL`](../tables/confluence-audit-cl.md) *(read)* |
 
 ## Release Notes
 

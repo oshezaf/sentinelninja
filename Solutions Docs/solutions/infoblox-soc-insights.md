@@ -48,7 +48,7 @@ This solution depends on **1 other solution(s)**:
 This solution provides **3 data connector(s)**:
 
 - [[Deprecated] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md)
-- [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) �
+- [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) 🔶
 - [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md)
 
 Connectors from dependency solutions:
@@ -56,7 +56,7 @@ Connectors from dependency solutions:
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -72,16 +72,16 @@ The following **7 table(s)** are used internally by this solution's content item
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) � | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) � | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) � | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) � | - | Playbooks (writes), Workbooks |
-| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) � | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Analytics, Playbooks (writes), Workbooks |
+| [`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
+| [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) 🔶 | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Analytics, Playbooks (writes), Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **12 content item(s)**:
@@ -118,12 +118,12 @@ This solution includes **12 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [InfobloxCDC_SOCInsights](../content/infoblox-soc-insights-infobloxcdc-socinsights-bf7ad23f-4f9e-4a00-bb1a-363b950405b6-c2df7037.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
-| [InfobloxInsight](../content/infoblox-soc-insights-infobloxinsight-3fa2808e-1d5d-4421-9d24-6b1a948b3f90-de87c83f.md) | - | *Internal use:*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(read)* |
-| [InfobloxInsightAssets](../content/infoblox-soc-insights-infobloxinsightassets-588bb0e4-16b2-4f80-9f00-c95d9df9fc64-01154fd8.md) | - | *Internal use:*<br>[`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) *(read)* |
-| [InfobloxInsightComments](../content/infoblox-soc-insights-infobloxinsightcomments-b38a195f-55e9-45c4-a7f5-88ba9478e585-2c79c8b8.md) | - | *Internal use:*<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) *(read)* |
-| [InfobloxInsightEvents](../content/infoblox-soc-insights-infobloxinsightevents-8e8f2f2c-3351-41e8-b883-5b30d92109e9-8cc19e65.md) | - | *Internal use:*<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) *(read)* |
-| [InfobloxInsightIndicators](../content/infoblox-soc-insights-infobloxinsightindicators-18a21543-f954-4eb4-8601-d1717610a57f-68f51f2d.md) | - | *Internal use:*<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) *(read)* |
+| [InfobloxCDC_SOCInsights](../parsers/infobloxcdc-socinsights.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [InfobloxInsight](../parsers/infobloxinsight.md) | - | *Internal use:*<br>[`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) *(read)* |
+| [InfobloxInsightAssets](../parsers/infobloxinsightassets.md) | - | *Internal use:*<br>[`InfobloxInsightAssets_CL`](../tables/infobloxinsightassets-cl.md) *(read)* |
+| [InfobloxInsightComments](../parsers/infobloxinsightcomments.md) | - | *Internal use:*<br>[`InfobloxInsightComments_CL`](../tables/infobloxinsightcomments-cl.md) *(read)* |
+| [InfobloxInsightEvents](../parsers/infobloxinsightevents.md) | - | *Internal use:*<br>[`InfobloxInsightEvents_CL`](../tables/infobloxinsightevents-cl.md) *(read)* |
+| [InfobloxInsightIndicators](../parsers/infobloxinsightindicators.md) | - | *Internal use:*<br>[`InfobloxInsightIndicators_CL`](../tables/infobloxinsightindicators-cl.md) *(read)* |
 
 ## Release Notes
 

@@ -89,7 +89,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SophosXGFirewall](../content/sophos-xg-firewall-sophosxgfirewall-8fa865c8-c62e-49f3-bc9a-6c6aeb8db133-b14d256a.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
+| [SophosXGFirewall](../parsers/sophosxgfirewall.md) | - | [`Syslog`](../tables/syslog.md) *(read)* |
 
 ## Release Notes
 

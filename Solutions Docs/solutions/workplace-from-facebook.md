@@ -39,9 +39,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 This solution provides **1 data connector(s)**:
 
-- [Workplace from Facebook](../connectors/workplacefacebook.md) �
+- [Workplace from Facebook](../connectors/workplacefacebook.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +49,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) � | [Workplace from Facebook](../connectors/workplacefacebook.md) | - |
+| [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) 🔶 | [Workplace from Facebook](../connectors/workplacefacebook.md) | - |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **1 content item(s)**:
@@ -65,7 +65,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Workplace_Facebook](../content/workplace-from-facebook-workplace-facebook-77fb2f63-7160-426b-8842-67520c4eddfd-44a321ac.md) ⚠️ | - | [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) *(read)* |
+| [Workplace_Facebook](../parsers/workplace-facebook.md) ⚠️ | - | [`Workplace_Facebook_CL`](../tables/workplace-facebook-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

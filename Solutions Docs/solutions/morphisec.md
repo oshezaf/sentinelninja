@@ -62,7 +62,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Morphisec](../content/morphisec-morphisec-a68a352c-7f90-49ca-b5a0-36178788f43c-0256b13f.md) | - | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) *(read)* |
+| [Morphisec](../parsers/morphisec.md) | - | [`MorphisecAlerts_CL`](../tables/morphisecalerts-cl.md) *(read)* |
 
 ## Release Notes
 

@@ -81,7 +81,7 @@ This solution includes **2 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [OnapsisLookup](../content/onapsis-platform-onapsislookup-ef14e847-84c7-4f8a-8bb4-a26ec3b09af8-1c959e87.md) | - | - |
+| [OnapsisLookup](../parsers/onapsislookup.md) | - | - |
 
 ## Release Notes
 

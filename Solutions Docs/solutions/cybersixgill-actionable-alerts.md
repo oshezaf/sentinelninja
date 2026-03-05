@@ -32,9 +32,9 @@ Cybersixgill Actionable Alerts provides a premium automated customized threat i
 
 This solution provides **1 data connector(s)**:
 
-- [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) �
+- [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,10 +42,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) � | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Hunting, Workbooks |
+| [`CyberSixgill_Alerts_CL`](../tables/cybersixgill-alerts-cl.md) 🔶 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **5 content item(s)**:

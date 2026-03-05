@@ -75,7 +75,7 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [IllumioCoreEvent](../content/illumio-core-illumiocoreevent-1c0eafd3-9b95-4bad-bf1c-28a0d0145e42-e6b88baf.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
+| [IllumioCoreEvent](../parsers/illumiocoreevent.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
 
 ## Release Notes
 

@@ -39,9 +39,9 @@ The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/p
 
 This solution provides **1 data connector(s)**:
 
-- [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) �
+- [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -49,10 +49,10 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) � | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) | Analytics, Hunting, Workbooks |
+| [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) 🔶 | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) | Analytics, Hunting, Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **22 content item(s)**:
@@ -104,7 +104,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [TrendMicroCAS](../content/trend-micro-cloud-app-security-trendmicrocas-399d4ecf-aea4-4be0-ae28-9f4106f68808-a55a600a.md) ⚠️ | - | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) *(read)* |
+| [TrendMicroCAS](../parsers/trendmicrocas.md) ⚠️ | - | [`TrendMicroCAS_CL`](../tables/trendmicrocas-cl.md) *(read)* |
 
 > ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
 

@@ -65,7 +65,7 @@ This solution includes **4 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [BitwardenEventLogs](../content/bitwarden-bitwardeneventlogs-515d95cb-90f9-49b6-9056-327b2df08d37-830fa29f.md) | - | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) *(read)*<br>[`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) *(read)*<br>[`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) *(read)* |
+| [BitwardenEventLogs](../parsers/bitwardeneventlogs.md) | - | [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) *(read)*<br>[`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) *(read)*<br>[`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) *(read)* |
 
 ## Release Notes
 

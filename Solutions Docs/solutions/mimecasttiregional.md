@@ -1,4 +1,6 @@
-# MimecastTIRegional
+# 🚫 MimecastTIRegional
+
+> 🚫 **Deprecated:** This solution has been deprecated and replaced by a newer integration.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="MimecastTIRegional Logo" width="75" height="75">
 

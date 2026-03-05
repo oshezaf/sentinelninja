@@ -32,9 +32,9 @@ Configure the ExtraHop Detection Data Connector to send ExtraHop detection data 
 
 This solution provides **1 data connector(s)**:
 
-- [ExtraHop Detections Data Connector](../connectors/extrahop.md) �
+- [ExtraHop Detections Data Connector](../connectors/extrahop.md) 🔶
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 
 ## Tables Used
 
@@ -42,7 +42,7 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) � | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | Analytics, Workbooks |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) 🔶 | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | Analytics, Workbooks |
 
 ### Internal Tables
 
@@ -53,7 +53,7 @@ The following **1 table(s)** are used internally by this solution's content item
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 
 
-> � **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
+> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`).
 ## Content Items
 
 This solution includes **3 content item(s)**:
@@ -80,7 +80,7 @@ This solution includes **3 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ExtraHopDetections](../content/extrahop-extrahopdetections-a4fddd3e-9993-4c86-b5e8-8e36d8ce1197-29a8546c.md) | - | [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) *(read)* |
+| [ExtraHopDetections](../parsers/extrahopdetections.md) | - | [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) *(read)* |
 
 ## Release Notes
 
