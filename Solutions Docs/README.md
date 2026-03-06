@@ -2,6 +2,8 @@
 
 This documentation provides comprehensive information about Microsoft Sentinel Solutions, including data connectors, log tables, content items, parsers, and ASIM parsers.
 
+**Browse:** **🏠** · [Solutions](solutions-index.md) · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md) · [🔍](index.html)
+
 ## Overview
 
 | Resource | Count | Details |
@@ -15,6 +17,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | [ASIM Parsers](asim/asim-index.md) | 95 pairs | Normalized schema parsers |
 | [ASIM Products](asim/asim-products-index.md) | 80 | Products with ASIM support |
 | [Statistics](statistics.md) | - | Comprehensive statistics and metrics |
+| [Interactive Index](index.html) | - | Sortable/filterable HTML view |
 
 ---
 
@@ -39,10 +42,11 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 ├── parsers/                # Non-ASIM parser documentation
 │   ├── parsers-index.md    # Parsers listing
 │   └── *.md                # Individual parser pages
-└── asim/                   # ASIM parser documentation
-    ├── asim-index.md       # ASIM parsers index by schema
-    ├── asim-products-index.md  # ASIM parsers index by product
-    └── *.md                # Individual parser pages
+├── asim/                   # ASIM parser documentation
+│   ├── asim-index.md       # ASIM parsers index by schema
+│   ├── asim-products-index.md  # ASIM parsers index by product
+│   └── *.md                # Individual parser pages
+└── index.html              # Interactive index (sortable/filterable)
 ```
 
 ## Source

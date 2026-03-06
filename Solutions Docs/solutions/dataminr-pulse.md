@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DataminrPulse.svg" alt="Dataminr Pulse Logo" width="75" height="75">
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md) · [🔍](../index.html)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
@@ -369,11 +369,11 @@ This solution uses **239 table(s)**:
 | [`PostgreSQL_CL`](../tables/postgresql-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`SecurityBridgeLogs_CL`](../tables/securitybridgelogs-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`SecurityEvent`](../tables/securityevent.md) | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) (dependency), [Security Events via Legacy Agent](../connectors/securityevents.md) (dependency), [Windows Security Events via AMA](../connectors/windowssecurityevents.md) (dependency), [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) (dependency) | - |
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) 🔶 | [SentinelOne](../connectors/sentineloneccp.md) (dependency), [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) 🔶 | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) 🔶 | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) 🔶 | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) 🔶 | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) 🔶 | [SentinelOne](../connectors/sentinelone.md) (dependency), [SentinelOne](../connectors/sentineloneccp.md) (dependency) | - |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | [SentinelOne](../connectors/sentinelone.md) (dependency) | - |
 | [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 | [Custom logs via AMA](../connectors/customlogsviaama.md) (dependency) | - |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) | [Azure Storage Account](../connectors/azurestorageaccount.md) (dependency) | - |
@@ -482,7 +482,7 @@ This solution includes **10 content item(s)**:
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md) · [🔍](../index.html)
 
 ↑ [Back to Solutions Index](../solutions-index.md)
 
