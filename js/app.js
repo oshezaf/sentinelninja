@@ -10,7 +10,7 @@ $(document).ready(function() {
         deferRender: true,
         stateSave: false,
         orderCellsTop: true,
-        dom: '<"row"<"col-sm-6"l><"col-sm-6"f>>rtip',
+        dom: '<"row"<"col-sm-6"li><"col-sm-6"f>>rtip',
         language: {
             search: "Quick filter:",
             lengthMenu: "Show _MENU_ rows",
@@ -139,7 +139,9 @@ $(document).ready(function() {
     });
 
     // Click-to-filter: clicking a cell value filters that column
-    $(document).on('click', 'table.dataTable tbody td', function() {
+    // Skip if the click target is a link (let it navigate normally)
+    $(document).on('click', 'table.dataTable tbody td', function(e) {
+        if ($(e.target).closest('a').length) return;
         var table = $(this).closest('table').DataTable();
         var colIdx = table.cell(this).index().column;
         // Get the text content (strip HTML tags)

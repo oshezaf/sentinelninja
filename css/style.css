@@ -194,6 +194,15 @@ table.dataTable a:hover {
     border-color: var(--ms-blue);
 }
 
+/* Top info (record count next to length menu) */
+.col-sm-6 .dataTables_info {
+    display: inline-block;
+    margin-left: 1.2em;
+    font-size: 0.85rem;
+    color: #666;
+    padding-top: 0;
+}
+
 /* Clear all filters bar */
 .clear-filters-bar {
     display: none;
