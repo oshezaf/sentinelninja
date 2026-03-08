@@ -2,7 +2,7 @@
 
 This documentation provides comprehensive information about Microsoft Sentinel Solutions, including data connectors, log tables, content items, parsers, and ASIM parsers.
 
-**Browse:** **🏠** · [Solutions](solutions-index.md) · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md) · [🔍](index.html)
+**Browse:** **🏠** · [Solutions](solutions-index.md) · [Connectors](connectors-index.md) · [Methods](methods-index.md) · [Tables](tables-index.md) · [Content](content/content-index.md) · [Parsers](parsers/parsers-index.md) · [ASIM Parsers](asim/asim-index.md) · [ASIM Products](asim/asim-products-index.md) · [📊](statistics.md) · [🔍](https://oshezaf.github.io/sentinelninja/index.html)
 
 ## Overview
 
@@ -17,7 +17,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | [ASIM Parsers](asim/asim-index.md) | 95 pairs | Normalized schema parsers |
 | [ASIM Products](asim/asim-products-index.md) | 80 | Products with ASIM support |
 | [Statistics](statistics.md) | - | Comprehensive statistics and metrics |
-| [Interactive Index](index.html) | - | Sortable/filterable HTML view |
+| [Interactive Index](https://oshezaf.github.io/sentinelninja/index.html) | - | Sortable/filterable HTML view |
 
 ---
 
@@ -46,7 +46,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 │   ├── asim-index.md       # ASIM parsers index by schema
 │   ├── asim-products-index.md  # ASIM parsers index by product
 │   └── *.md                # Individual parser pages
-└── index.html              # Interactive index (sortable/filterable)
+└── index.html              # Interactive index (on GitHub Pages)
 ```
 
 ## Source

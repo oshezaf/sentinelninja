@@ -1,6 +1,6 @@
 # Syslog
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md) · [🔍](../index.html)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md) · [🔍](https://oshezaf.github.io/sentinelninja/index.html)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
@@ -1027,8 +1027,8 @@ References by type: 5 connectors, 332 content items, 16 ASIM parsers, 59 other p
 | `SyslogMessage startswith "DHCPACK"` | - | 1 | - | 1 | **2** |
 | `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | - | - | - | 2 | **2** |
 | `ProcessName contains "Exabeam"` | - | - | - | 2 | **2** |
-| `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | 1 | - | - | - | **1** |
 | `ProcessName == "sysmon"` | 1 | - | - | - | **1** |
+| `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | 1 | - | - | - | **1** |
 | `SyslogMessage contains "found an infected file"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransomware incident detected"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransom Protect mechanism blocked"` | - | 1 | - | - | **1** |
@@ -1312,7 +1312,7 @@ References by type: 5 connectors, 332 content items, 16 ASIM parsers, 59 other p
 
 ---
 
-**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md) · [🔍](../index.html)
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md) · [🔍](https://oshezaf.github.io/sentinelninja/index.html)
 
 ↑ [Back to Tables Index](../tables-index.md)
 
