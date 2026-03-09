@@ -75,3 +75,29 @@ img { max-width: 100%; height: auto; }
     table { font-size: 0.82rem; }
     th, td { padding: 5px 8px; }
 }
+
+/* DataTable overrides for schema tables */
+table.dataTable thead th {
+    background: var(--ms-light);
+    font-weight: 600;
+    white-space: nowrap;
+}
+table.dataTable thead tr.filters th {
+    background: #fff;
+    padding: 4px 6px;
+}
+table.dataTable thead tr.filters input {
+    width: 100%;
+    padding: 2px 6px;
+    font-size: 0.82rem;
+    border: 1px solid var(--ms-border);
+    border-radius: 3px;
+}
+table.dataTable thead tr.filters input:focus {
+    outline: none;
+    border-color: var(--ms-blue);
+}
+table.dataTable tbody tr:hover {
+    background: #e8f4fd !important;
+}
+.dataTables_filter { margin-bottom: 6px; }
