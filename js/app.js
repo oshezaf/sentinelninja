@@ -136,7 +136,20 @@ $(document).ready(function() {
     $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function(e) {
         // Adjust DataTable columns on tab show (fixes width issues)
         $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+        // Update URL hash to reflect active tab
+        var id = $(e.target).attr('id');  // e.g. 'connectors-tab'
+        if (id) history.replaceState(null, '', '#' + id.replace('-tab', ''));
     });
+
+    // Activate tab from URL hash on page load (e.g. index.html#connectors)
+    var hash = window.location.hash.replace('#', '');
+    if (hash) {
+        var tabBtn = $('#' + hash + '-tab');
+        if (tabBtn.length) {
+            var bsTab = new bootstrap.Tab(tabBtn[0]);
+            bsTab.show();
+        }
+    }
 
     // Click-to-filter: clicking a cell value filters that column
     // Skip if the click target is a link (let it navigate normally)
