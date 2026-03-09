@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>🚫 [Deprecated] GitHub Enterprise Audit Log</h1>
+<h1 id="deprecated-github-enterprise-audit-log">🚫 [Deprecated] GitHub Enterprise Audit Log</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
 </blockquote>
@@ -61,7 +61,7 @@
 <p><strong>Note:</strong> If you intended to ingest GitHub subscribed events into Microsoft Sentinel, please refer to GitHub (using Webhooks) Connector from "<strong>Data Connectors</strong>" gallery.</p>
 <p><span style='color:red; font-weight:bold;'>NOTE</span>: This data connector has been deprecated, consider moving to the CCF data connector available in the solution which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>.</p>
 
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -96,13 +96,13 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>GitHub API personal access token</strong>: You need a GitHub personal access token to enable polling for the organization audit log. You may use either a classic token with 'read:org' scope OR a fine-grained token with 'Administration: Read-only' scope.
 - <strong>GitHub Enterprise type</strong>: This connector will only function with GitHub Enterprise Cloud; it will not support GitHub Enterprise Server.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>

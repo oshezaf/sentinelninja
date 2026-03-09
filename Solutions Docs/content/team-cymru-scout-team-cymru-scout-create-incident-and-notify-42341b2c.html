@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Team Cymru Scout Create Incident And Notify</h1>
+<h1 id="team-cymru-scout-create-incident-and-notify">Team Cymru Scout Create Incident And Notify</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,17 +42,17 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutCreateIncidentAndNotify/readme.md">TeamCymruScoutCreateIncidentAndNotify/readme.md</a></em></p>
 </blockquote>
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>This playbook will create an incident for suspicious or malicious ip and notify to pre-defined or user customizable email id.</p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>User should have an outlook mail account in order to use this playbook.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:
@@ -61,8 +61,8 @@
   * WorkspaceName: Enter workspace name in which you want to create an incidents.</li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeam%20Cymru%20Scout%2FPlaybooks%2FTeamCymruScoutCreateIncidentAndNotify%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeam%20Cymru%20Scout%2FPlaybooks%2FTeamCymruScoutCreateIncidentAndNotify%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.
 1. Go to your logic app → API connections → Select outlook connection resource
 2. Go to General → Edit API connection.
@@ -70,7 +70,7 @@
 5. Sign in.
 6. Click Save.
 7. Repeat steps for other connections.</p>
-<h4>b. Assign Role to add a comment in the incident</h4>
+<h4 id="b-assign-role-to-add-a-comment-in-the-incident">b. Assign Role to add a comment in the incident</h4>
 <p>After authorizing each connection, assign a role to this playbook.
 1. Go to Log Analytics Workspace → <em>your workspace</em> → Access Control → Add
 2. Add role assignment

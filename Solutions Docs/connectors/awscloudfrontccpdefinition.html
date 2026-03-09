@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)</h1>
+<h1 id="amazon-web-services-cloudfront-via-codeless-connector-framework-preview">Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
@@ -59,9 +59,9 @@
 </tbody>
 </table>
 <p>This data connector enables the integration of AWS CloudFront logs with Microsoft Sentinel to support advanced threat detection, investigation, and security monitoring. By utilizing Amazon S3 for log storage and Amazon SQS for message queuing, the connector reliably ingests CloudFront access logs into Microsoft Sentinel</p>
-<h2>Additional Information</h2>
+<h2 id="additional-information">Additional Information</h2>
 <p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment">Connect Microsoft Sentinel to AWS</a> - Configure your AWS environment for Microsoft Sentinel integration</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -84,15 +84,15 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Ingesting AWS CloudFront logs in Microsoft Sentinel</strong></p>
-<h3>List of Resources Required:</h3>
+<h3 id="list-of-resources-required">List of Resources Required:</h3>
 <ul>
 <li>Open ID Connect (OIDC) web identity provider</li>
 <li>IAM Role</li>
@@ -100,7 +100,7 @@
 <li>Amazon SQS</li>
 <li>AWS CloudFront configuration</li>
 </ul>
-<h4>1. AWS CloudFormation Deployment</h4>
+<h4 id="1-aws-cloudformation-deployment">1. AWS CloudFormation Deployment</h4>
 <p>To configure access on AWS, two templates has been generated to set up the AWS environment to send logs from an S3 bucket to your Log Analytics Workspace.
  #### For each template, create Stack in AWS: 
  1. Go to <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation Stacks</a>. 
@@ -112,7 +112,7 @@
 - <strong>Template 2: AWSCloudFront resources deployment</strong>: <code>AWSCloudFront</code>
 <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<h4>2. Connect new collectors</h4>
+<h4 id="2-connect-new-collectors">2. Connect new collectors</h4>
 <p>To enable AWS S3 for Microsoft Sentinel, click the Add new collector button, fill the required information in the context pane and click on Connect.
 <strong>Connector Management Interface</strong></p>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
@@ -135,20 +135,20 @@
 <blockquote>
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
 </blockquote>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS CloudFront\Data Connectors\README.md">AWS CloudFront\Data Connectors\README.md</a></em></p>
 </blockquote>
-<h1>AWS CloudFront Logs Integration with Microsoft Sentinel</h1>
-<h2>Overview</h2>
+<h1 id="aws-cloudfront-logs-integration-with-microsoft-sentinel">AWS CloudFront Logs Integration with Microsoft Sentinel</h1>
+<h2 id="overview">Overview</h2>
 <p>This guide explains how to integrate AWS CloudFront logs with Microsoft Sentinel using an AWS CloudFormation template. The template automates the deployment of necessary AWS resources to collect, process, and forward CloudFront access logs to Sentinel via S3 and SQS.</p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>Before deploying, ensure you have:
 - An AWS account with permissions to deploy CloudFormation stacks.
 - An active Microsoft Sentinel Log Analytics Workspace ID.
 - An existing CloudFront distribution with logging enabled or to be enabled.
 - Required IAM permissions to configure AWS services (IAM, S3, SQS, CloudFront).</p>
-<h2>CloudFormation Template</h2>
+<h2 id="cloudformation-template">CloudFormation Template</h2>
 <p>Download Both the CloudFormation templates(Template 1: OpenID connect authentication deployment,Template 2: AWSCloudFront resources deployment) from connector UI page and deploy in your AWS environment.
 1. OIDC Web Identity Provider</p>
 <p>The OIDC (OpenID Connect) Web Identity Provider allows AWS services to securely authenticate using an external identity provider without managing long-term credentials. The CloudFormation template configures OIDC as a trusted identity provider in AWS, enabling secure role-based access for forwarding AWS CloudFront logs to Microsoft Sentinel.</p>
@@ -158,9 +158,9 @@
 <p>The AWS CloudFront Configuration template sets up logging for AWS CloudFront by creating an S3 bucket, SQS queues, and event notifications. This ensures logs are captured and forwarded to Microsoft Sentinel for monitoring and threat detection.</p>
 </li>
 </ol>
-<h2>CloudFormation Deployment</h2>
-<h3>Deploying the Stack</h3>
-<h4>OIDC Web Identity</h4>
+<h2 id="cloudformation-deployment">CloudFormation Deployment</h2>
+<h3 id="deploying-the-stack">Deploying the Stack</h3>
+<h4 id="oidc-web-identity">OIDC Web Identity</h4>
 <blockquote>
 <p><strong>Note:</strong><br />
 If you have already deployed the <strong>OIDC Web Identity Provider</strong> for another AWS data connector in Microsoft Sentinel (e.g., VPC Flow Logs, GuardDuty, etc.), you do <strong>not</strong> need to deploy it again. You can safely skip this step and continue with the CloudFront configuration.
@@ -171,7 +171,7 @@ If you have already deployed the <strong>OIDC Web Identity Provider</strong> for
 - Provide the stack name and select next
 - Submit the stack</p>
 </blockquote>
-<h4>AWS CloudFront Configuration</h4>
+<h4 id="aws-cloudfront-configuration">AWS CloudFront Configuration</h4>
 <ul>
 <li>Navigate to the <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation console</a></li>
 <li>Choose create stack</li>
@@ -186,7 +186,7 @@ If you have already deployed the <strong>OIDC Web Identity Provider</strong> for
 <li>Deploy the stack and wait for completion.</li>
 <li>Go to Outputs Tab in the stacks and save the output for future purpose</li>
 </ul>
-<h3>Resources Created</h3>
+<h3 id="resources-created">Resources Created</h3>
 <p>The CloudFormation template will create:</p>
 <ul>
 <li><strong>One S3 bucket</strong> to store AWS CloudFront logs.</li>
@@ -194,7 +194,7 @@ If you have already deployed the <strong>OIDC Web Identity Provider</strong> for
 <li><strong>S3 Event Notification</strong> to trigger messages to SQS on new log arrival.</li>
 <li><strong>IAM Role &amp; Policy</strong> granting Microsoft Sentinel access to the S3 bucket and SQS queue.</li>
 </ul>
-<h2>Configuring CloudFront Logging</h2>
+<h2 id="configuring-cloudfront-logging">Configuring CloudFront Logging</h2>
 <p>To enable logging for your CloudFront distribution and route logs to the S3 bucket created by the CloudFormation stack:
 - Go to the <strong>AWS CloudFront Console</strong>.
 - Select the relevant <strong>CloudFront distribution</strong>.
@@ -208,7 +208,7 @@ If you have already deployed the <strong>OIDC Web Identity Provider</strong> for
 <blockquote>
 <p>📌 This ensures that CloudFront logs are written to the correct S3 bucket and in a format compatible with Microsoft Sentinel ingestion.</p>
 </blockquote>
-<h2>Configuring Microsoft Sentinel</h2>
+<h2 id="configuring-microsoft-sentinel">Configuring Microsoft Sentinel</h2>
 <ul>
 <li>Go to <strong>Microsoft Sentinel</strong> in the Azure Portal</li>
 <li>Navigate to <strong>Content Hub &gt; Amazon Web Services CloudFront</strong> data connector</li>
@@ -218,7 +218,7 @@ If you have already deployed the <strong>OIDC Web Identity Provider</strong> for
 <li><strong>SQS Queue URL</strong> (from the stack output)</li>
 <li>Complete the setup</li>
 </ul>
-<h2>Verifying Logs in Sentinel</h2>
+<h2 id="verifying-logs-in-sentinel">Verifying Logs in Sentinel</h2>
 <ul>
 <li>Go to <strong>Microsoft Sentinel &gt; Logs</strong></li>
 <li>Run the following Kusto Query Language (KQL) query:

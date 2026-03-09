@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Google Cloud Platform BigQuery - Enrich Incident with BigQuery Table Data</h1>
+<h1 id="google-cloud-platform-bigquery-enrich-incident-with-bigquery-table-data">Google Cloud Platform BigQuery - Enrich Incident with BigQuery Table Data</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,12 +42,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks/GCPBigQuery-EnrichEntity-With-BigQueryTableData/readme.md">GCPBigQueryPlaybooks/GCPBigQuery-EnrichEntity-With-BigQueryTableData/readme.md</a></em></p>
 </blockquote>
-<h1>GCPBigQuery-EnrichEntity-With-BigQueryTableData</h1>
-<h2>Summary</h2>
+<h1 id="gcpbigquery-enrichentity-with-bigquerytabledata">GCPBigQuery-EnrichEntity-With-BigQueryTableData</h1>
+<h2 id="summary">Summary</h2>
 <p>This playbook can be run from incident context manually or from automation rule to query the GCP BigQuery table and enrich the incident with query results. Query result is filtered based on provided entities. The playbook performs following actions:</p>
 <ol>
 <li>Gets all the entities from the incident.</li>
@@ -58,12 +58,12 @@
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks%5CGCPBigQuery-EnrichEntity-With-BigQueryTableData/images/GCPBigQuery-EnrichEntity-With-BigQueryTableData_light.jpg" width="50%"/><br>
 <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks%5CGCPBigQuery-EnrichEntity-With-BigQueryTableData/images/GCPBigQuery-EnrichEntity-With-BigQueryTableDataOutput_light.jpg" width="50%"/><br></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Prior to the deployment of this playbook, <a href="../../CustomConnector/GCPBigQueryCustomConnector/azuredeploy.json">GCPBigQuery Logic App Custom Connector</a> needs to be deployed under the same subscription.</li>
 <li>Refer to <a href="../../CustomConnector/GCPBigQueryCustomConnector/readme.html">GCPBigQuery Logic App Custom Connector</a> documentation for deployment instructions.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -76,8 +76,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGoogle%2520Cloud%2520Platform%2520BigQuery%2FPlaybooks%2FGCPBigQueryPlaybooks%2FGCPBigQuery-EnrichEntity-With-BigQueryTableData%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGoogle%2520Cloud%2520Platform%2520BigQuery%2FPlaybooks%2FGCPBigQueryPlaybooks%2FGCPBigQuery-EnrichEntity-With-BigQueryTableData%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Select the Microsoft Sentinel connection resource</li>
@@ -86,11 +86,11 @@
 <li>Click Save</li>
 <li>Repeat these steps for other connections</li>
 </ol>
-<h4>b. Configurations in Sentinel</h4>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel, configure the automation rule/analytical rule to trigger the playbook. Check the <a href="https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook">documentation</a> to learn more about automation rules.</li>
 </ol>
-<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -103,7 +103,7 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save</li>
 </ol>
-<h1>References</h1>
+<h1 id="references">References</h1>
 <ul>
 <li><a href="https://cloud.google.com/bigquery/docs/reference/rest">BigQuery API Quick Reference</a></li>
 <li><a href="https://cloud.google.com/bigquery/docs">BigQuery Documentation</a></li>

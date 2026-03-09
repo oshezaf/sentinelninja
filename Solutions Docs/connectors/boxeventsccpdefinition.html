@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Box Events (CCP)</h1>
+<h1 id="box-events-ccp">Box Events (CCP)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Box/Workbooks/Images/Logo/box.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
@@ -63,7 +63,7 @@
 </tbody>
 </table>
 <p>The Box data connector provides the capability to ingest <a href="https://developer.box.com/guides/events/#admin-events">Box enterprise's events</a> into Microsoft Sentinel using the Box REST API. Refer to <a href="https://developer.box.com/guides/events/enterprise-events/for-enterprise/">Box  documentation</a> for more information.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -92,13 +92,13 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Box API credentials</strong>: Box API requires a Box App client ID and client secret to authenticate. <a href="https://developer.box.com/guides/authentication/client-credentials/client-credentials-setup/">See the documentation to learn more about Client Credentials grant</a>
 - <strong>Box Enterprise ID</strong>: Box Enterprise ID is required to make the connection. See documentation to <a href="https://developer.box.com/platform/appendix/locating-values/">find Enterprise ID</a></p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector uses Codeless Connecor Platform (CCP) to connect to the Box REST API to pull logs into Microsoft Sentinel.</p>

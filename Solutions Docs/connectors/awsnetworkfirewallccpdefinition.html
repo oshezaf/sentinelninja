@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Amazon Web Services NetworkFirewall (via Codeless Connector Framework)</h1>
+<h1 id="amazon-web-services-networkfirewall-via-codeless-connector-framework">Amazon Web Services NetworkFirewall (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
@@ -59,9 +59,9 @@
 </tbody>
 </table>
 <p>This data connector allows you to ingest AWS Network Firewall logs into Microsoft Sentinel for advanced threat detection and security monitoring. By leveraging Amazon S3 and Amazon SQS, the connector forwards network traffic logs, intrusion detection alerts, and firewall events to Microsoft Sentinel, enabling real-time analysis and correlation with other security data</p>
-<h2>Additional Information</h2>
+<h2 id="additional-information">Additional Information</h2>
 <p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment">Connect Microsoft Sentinel to AWS</a> - Configure your AWS environment for Microsoft Sentinel integration</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -93,15 +93,15 @@
 </tr>
 </tbody>
 </table>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Ingesting AWS NetworkFirewall logs in Microsoft Sentinel</strong></p>
-<h3>List of Resources Required:</h3>
+<h3 id="list-of-resources-required">List of Resources Required:</h3>
 <ul>
 <li>Open ID Connect (OIDC) web identity provider</li>
 <li>IAM Role</li>
@@ -110,7 +110,7 @@
 <li>AWSNetworkFirewall configuration</li>
 <li>Follow this instructions for <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon%20Web%20Services%20NetworkFirewall/Data%20Connectors/readme.md">AWS NetworkFirewall Data connector</a> configuration</li>
 </ul>
-<h4>1. AWS CloudFormation Deployment</h4>
+<h4 id="1-aws-cloudformation-deployment">1. AWS CloudFormation Deployment</h4>
 <p>To configure access on AWS, two templates has been generated to set up the AWS environment to send logs from an S3 bucket to your Log Analytics Workspace.
  #### For each template, create Stack in AWS: 
  1. Go to <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation Stacks</a>. 
@@ -122,7 +122,7 @@
 - <strong>Template 2: AWSNetworkFirewall resources deployment</strong>: <code>AWSNetworkFirewall</code>
 <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<h4>2. Connect new collectors</h4>
+<h4 id="2-connect-new-collectors">2. Connect new collectors</h4>
 <p>To enable AWS S3 for Microsoft Sentinel, click the Add new collector button, fill the required information in the context pane and click on Connect.
 <strong>Connector Management Interface</strong></p>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
@@ -150,19 +150,19 @@
 <blockquote>
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
 </blockquote>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Amazon Web Services NetworkFirewall\Data Connectors\readme.md">Amazon Web Services NetworkFirewall\Data Connectors\readme.md</a></em></p>
 </blockquote>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>This guide explains how to integrate AWS Network Firewall logs with Microsoft Sentinel using an AWS CloudFormation template. The template automates the deployment of necessary resources to collect, process, and forward logs to Sentinel.</p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>Before deploying, ensure you have:
 - An AWS account with permissions to deploy CloudFormation stacks.
 - An existing AWS Network Firewall setup.
 - An active Microsoft Sentinel Log Analytics Workspace ID.
 - Required IAM permissions to configure AWS services.</p>
-<h2>CloudFormation Templates</h2>
+<h2 id="cloudformation-templates">CloudFormation Templates</h2>
 <p>Download Both the CloudFormation templates(Template 1: OpenID connect authentication deployment,Template 2: AWS Network Firewall Configuration) from connector UI page and deploy in your AWS environment.</p>
 <ol>
 <li>OpenID Connect</li>
@@ -174,9 +174,9 @@
 <p>The AWS Network Firewall Configuration template sets up logging for AWS Network Firewall by creating an S3 bucket, SQS queues, and event notifications. This ensures logs are captured and forwarded to Microsoft Sentinel for monitoring and threat detection.</p>
 </li>
 </ol>
-<h2>CloudFormation Deployment</h2>
-<h3>Deploying the Stack</h3>
-<h4>ODIC Web Identity</h4>
+<h2 id="cloudformation-deployment">CloudFormation Deployment</h2>
+<h3 id="deploying-the-stack">Deploying the Stack</h3>
+<h4 id="odic-web-identity">ODIC Web Identity</h4>
 <ul>
 <li>Navigate to the <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation console</a></li>
 <li>Choose create stack</li>
@@ -185,7 +185,7 @@
 <li>Provide the stack name and select next</li>
 <li>Submit the stack</li>
 </ul>
-<h4>AWS Network Firewall Configuration</h4>
+<h4 id="aws-network-firewall-configuration">AWS Network Firewall Configuration</h4>
 <ul>
 <li>Navigate to the <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation console</a></li>
 <li>Choose create stack</li>
@@ -199,7 +199,7 @@
 <li>Deploy the stack and wait for completion.</li>
 <li>Go to Outputs Tab in the stacks and save the output for future purpose</li>
 </ul>
-<h3>Resources Created</h3>
+<h3 id="resources-created">Resources Created</h3>
 <p>The CloudFormation template will create:</p>
 <ul>
 <li>One S3 bucket to store AWS Network Firewall logs.</li>
@@ -207,12 +207,12 @@
 <li>S3 Event Notifications to trigger log forwarding.</li>
 <li>IAM Roles &amp; Policies with the necessary permissions.</li>
 </ul>
-<h3>Configuring AWS Network Firewall Logs</h3>
+<h3 id="configuring-aws-network-firewall-logs">Configuring AWS Network Firewall Logs</h3>
 <ul>
 <li>Go to the Firewall Service, navigate to the Logging tab, and enable the log types: FLOW, ALERT, and TLS.</li>
 <li>Select S3 as the log destination and enter the S3 bucket name created by the CloudFormation stack.</li>
 </ul>
-<h3>Configuring Microsoft Sentinel</h3>
+<h3 id="configuring-microsoft-sentinel">Configuring Microsoft Sentinel</h3>
 <ul>
 <li>Navigate to microsoft sentinel</li>
 <li>Go to Amazon Web Services NetworkFirewall data connector</li>
@@ -220,7 +220,7 @@
 <li>Provide the Required Details - Role ARN, Queue URL, Datatype</li>
 <li>Ensure that the ARN remains the same for all data types (Alert, Flow, and TLS), while each data type has its respective Queue URL.</li>
 </ul>
-<h2>Verifying Logs in Sentinel</h2>
+<h2 id="verifying-logs-in-sentinel">Verifying Logs in Sentinel</h2>
 <ul>
 <li>Go to Log Analytics in Microsoft Sentinel.</li>
 <li>Run the following Kusto Query Language (KQL) query:</li>
@@ -235,7 +235,7 @@
     | where TimeGenerated &gt; ago(1h)</code></li>
 <li>Ensure logs appear correctly.</li>
 </ul>
-<h2>Troubleshooting</h2>
+<h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
 <li>No logs in Sentinel? Check Event Notifications in S3 Bucket to ensure the Prefix path matches the S3 bucket logs path.</li>
 <li>

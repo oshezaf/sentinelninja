@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>🚫 🔍 [DEPRECATED] Oracle Cloud Infrastructure</h1>
+<h1 id="deprecated-oracle-cloud-infrastructure">🚫 🔍 [DEPRECATED] Oracle Cloud Infrastructure</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
@@ -65,7 +65,7 @@
 <p>The Oracle Cloud Infrastructure (OCI) data connector provides the capability to ingest OCI Logs from <a href="https://docs.oracle.com/iaas/Content/Streaming/Concepts/streamingoverview.htm">OCI Stream</a> into Microsoft Sentinel using the <a href="https://docs.oracle.com/iaas/api/#/streaming/streaming/20180418">OCI Streaming REST API</a>.</p>
 <p><span style='color:red; font-weight:bold;'>NOTE</span>: This data connector has been deprecated, consider moving to the CCF data connector available in the solution which replaces ingestion via the <a href='https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate' style='color:#1890F1;'>deprecated HTTP Data Collector API</a>.</p>
 
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -88,14 +88,14 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>OCI API Credentials</strong>:  <strong>API Key Configuration File</strong> and <strong>Private Key</strong> are required for OCI API connection. See the documentation to learn more about <a href="https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm">creating keys for API access</a></p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector can go over the 500 column limit of log Analytics. When this happens some logs will be dropped. For this reason the connector can be unrealiable depending on the logs that are being generated and collected.</p>

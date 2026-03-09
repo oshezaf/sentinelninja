@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>TacitRed-IOC-CrowdStrike</h1>
+<h1 id="tacitred-ioc-crowdstrike">TacitRed-IOC-CrowdStrike</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="TacitRed-IOC-CrowdStrike Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
@@ -63,16 +63,16 @@
 </tbody>
 </table>
 <p>The TacitRed CrowdStrike IOC Automation solution provides example playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and prepare indicators for ingestion into CrowdStrike.</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p><strong>This solution does not include data connectors.</strong></p>
 <p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>1 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -88,7 +88,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Playbooks</h3>
+<h3 id="playbooks">Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -105,13 +105,13 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-IOC-CrowdStrike/README.md">TacitRed-IOC-CrowdStrike/README.md</a></em></p>
 </blockquote>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>The TacitRed CrowdStrike IOC Automation solution provides playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and push indicators of compromise (IOCs) to CrowdStrike Falcon for automated threat response.</p>
-<h2>Solution Components</h2>
+<h2 id="solution-components">Solution Components</h2>
 <table>
 <thead>
 <tr>
@@ -126,14 +126,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>Microsoft Sentinel workspace</li>
 <li>TacitRed API Key</li>
 <li>CrowdStrike Falcon console access with API credentials (Client ID and Client Secret)</li>
 <li>Appropriate RBAC permissions to deploy Logic Apps</li>
 </ul>
-<h2>Deployment</h2>
+<h2 id="deployment">Deployment</h2>
 <ol>
 <li>Navigate to Microsoft Sentinel Content Hub</li>
 <li>Search for "TacitRed CrowdStrike"</li>
@@ -144,26 +144,26 @@
    - <strong>CrowdStrike Client Secret</strong>: Your CrowdStrike API Client Secret
    - <strong>CrowdStrike Base URL</strong>: Your CrowdStrike API URL (e.g., https://api.crowdstrike.com)</li>
 </ol>
-<h2>How It Works</h2>
+<h2 id="how-it-works">How It Works</h2>
 <ol>
 <li>The playbook runs on a scheduled trigger</li>
 <li>It queries TacitRed for recent compromised credential findings</li>
 <li>For each finding, it creates a custom IOC entry in CrowdStrike Falcon</li>
 <li>CrowdStrike can then use these IOCs for detection and response</li>
 </ol>
-<h2>Support</h2>
+<h2 id="support">Support</h2>
 <ul>
 <li><strong>Provider</strong>: Data443 Risk Mitigation, Inc.</li>
 <li><strong>Email</strong>: support@data443.com</li>
 <li><strong>Website</strong>: https://www.data443.com</li>
 </ul>
-<h2>Learn More</h2>
+<h2 id="learn-more">Learn More</h2>
 <ul>
 <li><a href="https://learn.microsoft.com/azure/sentinel/">Microsoft Sentinel Documentation</a></li>
 <li><a href="https://data443.com/tacitred-attack-surface-intelligence/">TacitRed Platform</a></li>
 <li><a href="https://www.crowdstrike.com/resources/">CrowdStrike Falcon Documentation</a></li>
 </ul>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

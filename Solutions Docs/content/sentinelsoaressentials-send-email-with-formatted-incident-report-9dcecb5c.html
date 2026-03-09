@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Send email with formatted incident report</h1>
+<h1 id="send-email-with-formatted-incident-report">Send email with formatted incident report</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,20 +42,20 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-email-with-formatted-incident-report/readme.md">Send-email-with-formatted-incident-report/readme.md</a></em></p>
 </blockquote>
-<h1>Send-email-with-formatted-incident-report</h1>
+<h1 id="send-email-with-formatted-incident-report_1">Send-email-with-formatted-incident-report</h1>
 <p>author: Benjamin Kovacevic</p>
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>This playbook sends an email with a formatted incident report (including incident title, severity, tactics, link, and more) in HTML format when an incident is created in Microsoft Sentinel.</p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>A Microsoft 365 (M365) account to send email notifications (the user account will be used in the O365 connector for sending emails).</li>
 <li>A link to your company logo (no formatting needed, as size is defined in the playbook). Example: https://azure.microsoft.com/svghandler/azure-sentinel</li>
 </ul>
-<h2>Deployment instructions</h2>
+<h2 id="deployment-instructions">Deployment instructions</h2>
 <ol>
 <li>To deploy the playbook, click the Deploy to Azure button below. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -69,8 +69,8 @@
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-email-with-formatted-incident-report%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-email-with-formatted-incident-report%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
 <br><br></p>
-<h2>Post-deployment Instructions</h2>
-<h3>a. Authorize connections</h3>
+<h2 id="post-deployment-instructions">Post-deployment Instructions</h2>
+<h3 id="a-authorize-connections">a. Authorize connections</h3>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Open the Logic App in the Azure portal.</li>
@@ -84,13 +84,13 @@
 <blockquote>
 <p>Note: The email will be sent from the user who creates the connection.</p>
 </blockquote>
-<h3>b. Attach the playbook</h3>
+<h3 id="b-attach-the-playbook">b. Attach the playbook</h3>
 <ol>
 <li>In Microsoft Sentinel, configure an automation rule to trigger this playbook when an incident is created.
    - <a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a></li>
 <li>Enable the playbook if it is disabled by default before assigning it to the automation rule.</li>
 </ol>
-<h2>Screenshots</h2>
+<h2 id="screenshots">Screenshots</h2>
 <p><strong>Playbook</strong><br>
 <img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-email-with-formatted-incident-report/images/LightPlaybook_Send-email-with-formatted-incident-report.png" />
 <img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-email-with-formatted-incident-report/images/DarkPlaybook_Send-email-with-formatted-incident-report.png" /></p>

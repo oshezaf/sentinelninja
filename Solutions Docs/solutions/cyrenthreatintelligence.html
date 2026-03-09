@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>CyrenThreatIntelligence</h1>
+<h1 id="cyrenthreatintelligence">CyrenThreatIntelligence</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyren_logo.svg" alt="CyrenThreatIntelligence Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
@@ -63,14 +63,14 @@
 </tbody>
 </table>
 <p>The <a href="https://data443.com/cyren-threat-intelligence/">Cyren Threat Intelligence</a> solution provides the capability to ingest Cyren IP reputation and malware URL threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution deploys REST API poller connectors, a custom log table, data collection rules, analytics rules, and visualization workbook to help security teams detect and investigate network-based threats.</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/cyrenthreatintel.html">Cyren Threat Intelligence</a> 🔶</li>
@@ -78,7 +78,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
 </blockquote>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -99,7 +99,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
 </blockquote>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>4 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -119,7 +119,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Analytic Rules</h3>
+<h3 id="analytic-rules">Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -150,7 +150,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks</h3>
+<h3 id="workbooks">Workbooks</h3>
 <table>
 <thead>
 <tr>
@@ -165,24 +165,24 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence/README.md">CyrenThreatIntelligence/README.md</a></em></p>
 </blockquote>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>The <strong>Cyren Threat Intelligence</strong> solution provides real-time IP reputation and malware URL feeds to detect and block malicious infrastructure. This solution deploys CCF (Codeless Connector Framework) data connectors and visualization workbooks to help security teams identify and respond to network-based threats.</p>
-<h2>What's Included</h2>
-<h3>Data Connectors (2)</h3>
+<h2 id="whats-included">What's Included</h2>
+<h3 id="data-connectors-2">Data Connectors (2)</h3>
 <ul>
 <li><strong>Cyren IP Reputation</strong> - RestApiPoller connector for IP threat intelligence</li>
 <li><strong>Cyren Malware URLs</strong> - RestApiPoller connector for malicious URL intelligence</li>
 </ul>
-<h3>Workbooks (2)</h3>
+<h3 id="workbooks-2">Workbooks (2)</h3>
 <ul>
 <li><strong>Cyren Threat Intelligence</strong> - Overview dashboard with key metrics</li>
 <li><strong>Cyren Threat Intelligence (Enhanced)</strong> - Advanced analytics and threat hunting views</li>
 </ul>
-<h3>Infrastructure</h3>
+<h3 id="infrastructure">Infrastructure</h3>
 <ul>
 <li>Data Collection Endpoint (DCE)</li>
 <li>Data Collection Rules (DCRs) for both feeds</li>
@@ -190,7 +190,7 @@
 <li>User-Assigned Managed Identity for secure authentication</li>
 <li>Optional Azure Key Vault integration for JWT token storage</li>
 </ul>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>Before deploying this solution, ensure you have:</p>
 <ol>
 <li>
@@ -211,8 +211,8 @@
    - Permission to assign RBAC roles</p>
 </li>
 </ol>
-<h2>Deployment</h2>
-<h3>Option 1: Azure Portal (Recommended)</h3>
+<h2 id="deployment">Deployment</h2>
+<h3 id="option-1-azure-portal-recommended">Option 1: Azure Portal (Recommended)</h3>
 <ol>
 <li>Navigate to <strong>Microsoft Sentinel</strong> → <strong>Content Hub</strong></li>
 <li>Search for <strong>"Cyren Threat Intelligence"</strong></li>
@@ -228,7 +228,7 @@
 <p>Click <strong>Review + Create</strong> → <strong>Create</strong></p>
 </li>
 </ol>
-<h3>Option 2: ARM Template Deployment</h3>
+<h3 id="option-2-arm-template-deployment">Option 2: ARM Template Deployment</h3>
 <pre><code class="language-powershell"># Set your parameters
 $subscriptionId = &quot;your-subscription-id&quot;
 $resourceGroupName = &quot;your-resource-group&quot;
@@ -247,9 +247,9 @@ az deployment group create \
                deployConnectors=true \
                deployWorkbooks=true
 </code></pre>
-<h3>Option 3: Automated PowerShell Script (DEPLOY-Cyren-CCF-Clean.ps1)</h3>
+<h3 id="option-3-automated-powershell-script-deploy-cyren-ccf-cleanps1">Option 3: Automated PowerShell Script (DEPLOY-Cyren-CCF-Clean.ps1)</h3>
 <p><em>[Content truncated...]</em></p>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <p><strong>Version</strong> | <strong>Date Modified (DD-MM-YYYY)</strong>| <strong>ChangeHistory</strong>
 |------------|-------------------------------|-------------------------------------------------------------------------------------------|
 | 3.0.1      | 27-01-2026                    | Cost optimization: Changed from offset-based paging to time-based filtering (startTime/endTime) to prevent historical data re-ingestion. Updated queryWindowInMin to 120 minutes per MS reviewer recommendation. |

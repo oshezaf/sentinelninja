@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Google Cloud Platform Audit Logs</h1>
+<h1 id="google-cloud-platform-audit-logs">Google Cloud Platform Audit Logs</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Google%20Cloud%20Platform%20Audit%20Logs/logo/Google-Cloud-Branding.png" alt="Google Cloud Platform Audit Logs Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
@@ -65,21 +65,21 @@
 <p>The Google Cloud Platform (GCP) audit logs, ingested from Microsoft Sentinel's connector, enables you to capture and track all activity that occurs in your GCP environment. These audit logs provide valuable insights for monitoring user activity, troubleshooting issues, and ensuring compliance with security regulations. They serve as a record of events that practitioners can utilize to monitor access and identify potential threats across GCP resources.</p>
 <p><strong>Additional Information</strong></p>
 <p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform">Google Cloud Platform connectors</a> - Connect GCP logs to Microsoft Sentinel</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
 <li><a href="../connectors/gcpauditlogsdefinition.html">GCP Pub/Sub Audit Logs</a></li>
 <li><a href="../connectors/gcppub-subauditlogs.html">GCP Pub/Sub Audit Logs</a> ⚠️</li>
 </ul>
 <p><em>⚠️ Discovered connector - found in solution folder but not listed in Solution JSON definition.</em></p>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -97,7 +97,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>12 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -117,7 +117,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Analytic Rules</h3>
+<h3 id="analytic-rules">Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -172,7 +172,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Hunting Queries</h3>
+<h3 id="hunting-queries">Hunting Queries</h3>
 <table>
 <thead>
 <tr>
@@ -209,13 +209,13 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Audit%20Logs/README.md">Google Cloud Platform Audit Logs/README.md</a></em></p>
 </blockquote>
-<h1>GCP Audit logs configuration</h1>
+<h1 id="gcp-audit-logs-configuration">GCP Audit logs configuration</h1>
 <p>The following are the steps for GCP Audit logs configuration.</p>
-<h2>Configure GCP project.</h2>
+<h2 id="configure-gcp-project">Configure GCP project.</h2>
 <p>There are two things you need to set up in your GCP environment:</p>
 <p>Set up Microsoft Sentinel authentication in GCP by creating the following resources in the GCP IAM service:</p>
 <p>Workload identity pool
@@ -235,14 +235,14 @@ Subscription for the topic</p>
 </li>
 </ol>
 <p>In order to create fresh projects and GCP PUB/Sub service ,subscription,please follow below steps</p>
-<h3>GCP Authentication Setup</h3>
+<h3 id="gcp-authentication-setup">GCP Authentication Setup</h3>
 <p>Please follow terraform script steps mentioned in below link as may miss some steps in GCP while adding manually
 * https://learn.microsoft.com/en-us/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs#tabpanel_1_terraform</p>
 <p>if you don't want to perform above steps please use the below link for manual set up</p>
 <ul>
 <li>https://learn.microsoft.com/en-us/azure/sentinel/connect-google-cloud-platform?tabs=manual%2Cauditlogs#tabpanel_2_manual</li>
 </ul>
-<h3>GCP Audit Logs Setup</h3>
+<h3 id="gcp-audit-logs-setup">GCP Audit Logs Setup</h3>
 <p>Please follow terraform script steps mentioned in below link to set up GCP audit logs</p>
 <ul>
 <li>https://learn.microsoft.com/en-us/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs#tabpanel_2_terraform</li>
@@ -251,11 +251,11 @@ Subscription for the topic</p>
 <ul>
 <li>https://learn.microsoft.com/en-us/azure/sentinel/connect-google-cloud-platform?tabs=manual%2Cauditlogs#tabpanel_2_manual</li>
 </ul>
-<h1>Note</h1>
+<h1 id="note">Note</h1>
 <ul>
 <li>if want to  use existing project/account details need to modify the above scripts accordingly and run in GCP cloud console.</li>
 </ul>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

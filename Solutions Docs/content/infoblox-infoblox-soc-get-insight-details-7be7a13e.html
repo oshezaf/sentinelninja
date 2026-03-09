@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Infoblox-SOC-Get-Insight-Details</h1>
+<h1 id="infoblox-soc-get-insight-details">Infoblox-SOC-Get-Insight-Details</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,7 +42,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This content item queries data from the following tables:</p>
 <table>
 <thead>
@@ -86,23 +86,23 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Get%20Insight%20Details/readme.md">Infoblox SOC Get Insight Details/readme.md</a></em></p>
 </blockquote>
-<h1>Infoblox SOC Get Insight Details</h1>
+<h1 id="infoblox-soc-get-insight-details_1">Infoblox SOC Get Insight Details</h1>
 <ul>
 <li><a href="#Summary">Summary</a></li>
 <li><a href="#Prerequisites">Prerequisites</a></li>
 <li><a href="#Deployment-instructions">Deployment instructions</a></li>
 <li><a href="#Post-Deployment-instructions">Post-Deployment instructions</a></li>
 </ul>
-<h2>Summary<a name="Summary"></a></h2>
+<h2 id="summary">Summary<a name="Summary"></a></h2>
 <p>This playbook uses the Infoblox SOC Insights API to <strong>get all the details</strong> about an SOC Insight Incident. These Incidents are triggered by the <strong>Infoblox - SOC Insight Detected</strong> analytic queries packaged as part of this solution. These queries will read your data for insights and create an Incident when one is found, hereby known as a <strong>SOC Insight Incident</strong>.</p>
 <p>Then, you can run this playbook on those incidents to <strong>ingest many details about the Insight</strong>, placed in several custom tables prefixed with <code>InfobloxInsight</code>. This data also builds the <strong>Infoblox SOC Insight Workbook</strong> you can use to richly visualize and drilldown your Insights.</p>
 <p>It will also add <strong>several tags</strong> to the SOC Insight Incident.</p>
 <p>This playbook can be configured to run automatically when a SOC Insight Incident occurs or run on demand.</p>
-<h3>Prerequisites<a name="Prerequisites"></a></h3>
+<h3 id="prerequisites">Prerequisites<a name="Prerequisites"></a></h3>
 <ol>
 <li>User must have a valid Infoblox API Key.</li>
 <li>User must have a valid Workspace ID.</li>
@@ -122,7 +122,7 @@
 </ul>
 </li>
 </ol>
-<h3>Deployment instructions<a name="Deployment-instructions"></a></h3>
+<h3 id="deployment-instructions">Deployment instructions<a name="Deployment-instructions"></a></h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -136,8 +136,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Get%20Insight%20Details%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Get%20Insight%20Details%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3>Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Go to your logic app -&gt; API connections -&gt; Select azuremonitorlogs connection resource</li>
@@ -147,7 +147,7 @@
 <li>Click Save</li>
 <li>Repeat steps for other connections</li>
 </ol>
-<h4>b. Assign Role to Update in incident</h4>
+<h4 id="b-assign-role-to-update-in-incident">b. Assign Role to Update in incident</h4>
 <p>Assign role to this playbook</p>
 <ol>
 <li>Go to Log Analytics Workspace → <em>select your workspace</em> → Access Control → Add</li>

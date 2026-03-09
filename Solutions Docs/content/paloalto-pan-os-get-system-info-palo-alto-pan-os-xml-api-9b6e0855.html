@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Get System Info - Palo Alto PAN-OS XML API</h1>
+<h1 id="get-system-info-palo-alto-pan-os-xml-api">Get System Info - Palo Alto PAN-OS XML API</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,11 +42,11 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetSystemInfo/readme.md">PaloAltoPlaybooks/PaloAlto-PAN-OS-GetSystemInfo/readme.md</a></em></p>
 </blockquote>
-<h1>PaloAlto-PAN-OS-GetSYstemInfo</h1>
+<h1 id="paloalto-pan-os-getsysteminfo">PaloAlto-PAN-OS-GetSYstemInfo</h1>
 <p>## Summary</p>
 <p>This playbook allows us to get System Info of a Palo Alto device for a Microsoft Sentinel alert. </p>
 <p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions:</p>
@@ -61,13 +61,13 @@
 <p>Creates a Sentinel Incident and updates it with the system info.</p>
 </li>
 </ol>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>PaloAlto connector needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the connector doc page.</li>
 <li>Generate an API key.<a href="https://docs.paloaltonetworks.com/pan-os/10-1/pan-os-panorama-api/get-started-with-the-pan-os-xml-api/get-your-api-key">Refer this link on how to generate the API Key</a></li>
 <li>This playbook only works for Palo Alto incidents. </li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
@@ -79,8 +79,8 @@
 </ul>
 </li>
 </ol>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
@@ -88,12 +88,12 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for other connections such as Blob Store connection and PAN-OS API connection (For authorizing the PAN-OS API connection, API Key needs to be provided)</p>
-<h4>b. Configurations in Sentinel</h4>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky IP</li>
 <li>Configure the automation rules to trigger this playbook</li>
 </ol>
-<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -106,20 +106,20 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save (It takes 3-5 minutes to show the added role.)</li>
 </ol>
-<h2>Playbook steps explained</h2>
-<h3>When Microsoft Sentinel incident creation rule is triggered</h3>
+<h2 id="playbook-steps-explained">Playbook steps explained</h2>
+<h3 id="when-microsoft-sentinel-incident-creation-rule-is-triggered">When Microsoft Sentinel incident creation rule is triggered</h3>
 <p>Microsoft Sentinel incident is created. The playbook receives the incident as the input.</p>
-<h3>Run Query and List Results</h3>
+<h3 id="run-query-and-list-results">Run Query and List Results</h3>
 <p>Get the logs from the incident.</p>
-<h3>For Each</h3>
+<h3 id="for-each">For Each</h3>
 <p>Iterates on each result and performs the following:</p>
-<h4>If alert is Palo Alto alert</h4>
+<h4 id="if-alert-is-palo-alto-alert">If alert is Palo Alto alert</h4>
 <p>Checks if the alert is a Palo Alto alert. Required when logs from various devices are present</p>
-<h5>Query XML API</h5>
+<h5 id="query-xml-api">Query XML API</h5>
 <p>Sets the device name, and queries the device's XML API to retrieve the system info for the device</p>
-<h6>Alert - Get Incident</h6>
+<h6 id="alert-get-incident">Alert - Get Incident</h6>
 <p>Creates Incident for the alert</p>
-<h6>Add Comment to Incident (V3)</h6>
+<h6 id="add-comment-to-incident-v3">Add Comment to Incident (V3)</h6>
 <p>Adds a comment containing the system info to the incident</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>

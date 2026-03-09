@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>AWS Security Hub Findings (via Codeless Connector Framework)</h1>
+<h1 id="aws-security-hub-findings-via-codeless-connector-framework">AWS Security Hub Findings (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
@@ -59,9 +59,9 @@
 </tbody>
 </table>
 <p>This connector enables the ingestion of AWS Security Hub Findings, which are collected in AWS S3 buckets, into Microsoft Sentinel. It helps streamline the process of monitoring and managing security alerts by integrating AWS Security Hub Findings with Microsoft Sentinel's advanced threat detection and response capabilities.</p>
-<h2>Additional Information</h2>
+<h2 id="additional-information">Additional Information</h2>
 <p>📖 <strong>Setup Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/connect-aws-configure-environment">Connect Microsoft Sentinel to AWS</a> - Configure your AWS environment for Microsoft Sentinel integration</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -81,19 +81,19 @@
 </tr>
 </tbody>
 </table>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.
 - <strong>Keys</strong> (Workspace): Read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a></p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Environment</strong>: You must have the following AWS resources defined and configured: AWS Security Hub, Amazon Data Firehose, Amazon EventBridge, S3 Bucket, Simple Queue Service (SQS), IAM roles and permissions policies.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<h3>1. AWS CloudFormation Deployment</h3>
+<h3 id="1-aws-cloudformation-deployment">1. AWS CloudFormation Deployment</h3>
 <p>Use the provided CloudFormation templates to configure the AWS environment for sending logs from AWS Security Hub to your Log Analytics Workspace.</p>
-<h4>Deploy CloudFormation Templates in AWS:</h4>
+<h4 id="deploy-cloudformation-templates-in-aws">Deploy CloudFormation Templates in AWS:</h4>
 <ol>
 <li>Navigate to the <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation Stacks</a>.</li>
 <li>Click <strong>Create stack</strong> and select <strong>With new resources</strong>.</li>
@@ -111,7 +111,7 @@
 </blockquote>
 </li>
 </ul>
-<h3>2. Connect new collectors</h3>
+<h3 id="2-connect-new-collectors">2. Connect new collectors</h3>
 <p>To enable AWS Security Hub Connector for Microsoft Sentinel, click the Add new collector button, fill the required information in the context pane and click on Connect.
 <strong>Connector Management Interface</strong></p>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>

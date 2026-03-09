@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Phosphorus</h1>
+<h1 id="phosphorus">Phosphorus</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Phosphorus.svg" alt="Phosphorus Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
@@ -70,18 +70,18 @@
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs</p>
 <p>a. <a href="https://docs.microsoft.com/azure/sentinel/create-codeless-connector?tabs=deploy-via-arm-template%2Cconnect-via-the-azure-portal">Codeless Connector Platform</a></p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/phosphorus-polling.html">Phosphorus Devices</a></li>
 </ul>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -99,7 +99,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus/README.md">Phosphorus/README.md</a></em></p>
 </blockquote>
@@ -108,11 +108,11 @@ The Phosphorus Solution is built in order to easily integrate Phosphorus with Az
 <p>By deploying this solution, you'll be able to ingest device data from Phosphorus into Microsoft Sentinel</p>
 <p>The solution consists out of the following resources:
 - A codeless API connector to ingest data into Sentinel.</p>
-<h2>Data Connector Deployment</h2>
+<h2 id="data-connector-deployment">Data Connector Deployment</h2>
 <p>The data connector will retrieve the Phosphorus device data through the Phosphorus REST API.</p>
 <p>This is a codeless API connector. After the deployment of the ARM template, the connector will be available in the Data Connectors list to connect.</p>
 <p>Input the Phosphorus Instance Domain name, Integration Name, API key , click Connect button and Microsoft Sentinel will start to pull in device data.</p>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

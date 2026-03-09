@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Cisco ASA - Create or remove access rules on an interface for IP Addresses</h1>
+<h1 id="cisco-asa-create-or-remove-access-rules-on-an-interface-for-ip-addresses">Cisco ASA - Create or remove access rules on an interface for IP Addresses</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,11 +42,11 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateACEInACL/readme.md">CiscoASA-CreateACEInACL/readme.md</a></em></p>
 </blockquote>
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>This playbook allows blocking/unblocking of IPs in Cisco ASA, using <strong>Access Control Entries</strong> which will be created in an access control list.</p>
 <p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions
 1. For the IPs we check if they are already directly blocked by an access control entry in the access control list
@@ -58,13 +58,13 @@
 <img alt="playbook overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateACEInACL/images/CreateACEInACL-CiscoASA.png" /></p>
 <p><strong>Playbook overview:</strong></p>
 <p><img alt="playbook overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateACEInACL/images/CreateACEInACL-LogicApp.png" /></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li><strong>This playbook template is based on Microsoft Sentinel Incident Trigger which is currently in Private Preview (Automation Rules).</strong> You can change the trigger to the Sentinel Alert trigger in cases you are not part of the Private Preview.</li>
 <li>Cisco ASA custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found in the connector doc page.</li>
 <li>Cisco ASA needs to have an extended Access Control List configured. Create a new ACL or retrieve the name of an existing ACL. To use Cisco ASDM to configure Extended ACLs, see <a href="https://www.cisco.com/c/en/us/td/docs/security/asa/asa914/asdm714/firewall/asdm-714-firewall-config/access-acls.html#ID-2069-0000016d">Configure Extended ACLs</a></li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Depoly to Azure" button. This will take you to deplyoing an ARM Template wizard.</li>
 </ol>
@@ -82,8 +82,8 @@
 </ul>
 </li>
 </ol>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
@@ -91,14 +91,14 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for other connections such as Teams and Cisco ASA (For authorizing the Cisco ASA API connection, the username and password needs to be provided)</p>
-<h4>b. Select Teams channel</h4>
+<h4 id="b-select-teams-channel">b. Select Teams channel</h4>
 <p>The Teams channel to which the adaptive card will be posted will need to be configured.
 1. Click the Azure Logic app resource
 2. Edit the Logic App
 3. Find the 'PostToTeams' action
 4. Select a Team and Channel
 5. Save the Logic App</p>
-<h4>c. Configurations in Sentinel</h4>
+<h4 id="c-configurations-in-sentinel">c. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel analytical rules should be configured to trigger an incident with IP Entity.</li>
 <li>Configure the automation rules to trigger this playbook</li>

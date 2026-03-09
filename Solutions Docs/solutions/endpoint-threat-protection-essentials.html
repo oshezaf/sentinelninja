@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1><img src="../images/asim-badge.png" alt="ASIM" height="32"> Endpoint Threat Protection Essentials</h1>
+<h1 id="endpoint-threat-protection-essentials"><img src="../images/asim-badge.png" alt="ASIM" height="32"> Endpoint Threat Protection Essentials</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Endpoint Threat Protection Essentials Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
@@ -69,7 +69,7 @@
 <p>The <strong>Endpoint Threat Protection Essentials</strong> solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.  </p>
 <p>For details on the data sources and ASIM parsers supported by this solution, see the <a href="#asim-pre-requisites">ASIM Pre-requisites</a> section below.</p>
 <p><strong>Keywords:</strong> LOLBins, PowerShell, Registry, Lsass, Commandline, scheduled tasks, Malware.</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#asim-pre-requisites">ASIM Pre-requisites</a></li>
@@ -77,7 +77,7 @@
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
-<h2>Pre-requisites</h2>
+<h2 id="pre-requisites">Pre-requisites</h2>
 <p>This solution depends on <strong>3 other solution(s)</strong>:</p>
 <table>
 <thead>
@@ -101,9 +101,9 @@
 </tr>
 </tbody>
 </table>
-<h2><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
+<h2 id="asim-pre-requisites"><a id="asim-pre-requisites"></a><img src="../images/asim-logo-small.png" alt="ASIM" height="16"> ASIM Pre-requisites</h2>
 <p>This solution uses the <a href="../asim/asimprocesseventcreate.html"><code>_ASim_ProcessEvent_Create</code></a>, <a href="../asim/improcesscreate.html"><code>imProcessCreate</code></a>, and <a href="../asim/imregistry.html"><code>imRegistry</code></a> <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM (Advanced Security Information Model)</a> parsers to provide normalized, source-agnostic data access, expanding detection coverage without modifying queries.</p>
-<h3>Supported Products</h3>
+<h3 id="supported-products">Supported Products</h3>
 <table>
 <thead>
 <tr>
@@ -158,7 +158,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p><strong>This solution does not include its own data connectors</strong> but uses connectors from dependency solutions:</p>
 <ul>
 <li><a href="../connectors/crowdstrikeapiconnector.html">CrowdStrike API Data Connector (via Codeless Connector Framework)</a> <em>(dependency on <a href="crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a>)</em></li>
@@ -187,7 +187,7 @@
 <li><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a> <em>(dependency on <a href="windows-security-events.html">Windows Security Events</a>)</em></li>
 <li><a href="../connectors/carbonblackawss3.html">VMware Carbon Black Cloud via AWS S3</a> <em>(dependency on <a href="vmware-carbon-black-cloud.html">VMware Carbon Black Cloud</a>)</em></li>
 </ul>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution queries <strong>6 table(s)</strong> from its content items:</p>
 <table>
 <thead>
@@ -223,7 +223,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>29 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -243,7 +243,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Analytic Rules</h3>
+<h3 id="analytic-rules">Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -340,7 +340,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Hunting Queries</h3>
+<h3 id="hunting-queries">Hunting Queries</h3>
 <table>
 <thead>
 <tr>
@@ -427,7 +427,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

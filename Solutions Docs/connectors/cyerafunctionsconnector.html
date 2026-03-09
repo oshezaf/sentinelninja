@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>⚠️ Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</h1>
+<h1 id="cyera-dspm-azure-functions-microsoft-sentinel-data-connector">⚠️ Cyera DSPM Azure Functions Microsoft Sentinel Data Connector</h1>
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
@@ -58,7 +58,7 @@
 </tbody>
 </table>
 <p>The <strong>Cyera DSPM Azure Function Connector</strong> enables seamless ingestion of Cyera’s <strong>Data Security Posture Management (DSPM)</strong> telemetry — <em>Assets</em>, <em>Identities</em>, <em>Issues</em>, and <em>Classifications</em> — into <strong>Microsoft Sentinel</strong>.\n\nThis connector uses an <strong>Azure Function App</strong> to call Cyera’s REST API on a schedule, fetch the latest DSPM telemetry, and send it to Microsoft Sentinel through the <strong>Azure Monitor Logs Ingestion API</strong> via a <strong>Data Collection Endpoint (DCE)</strong> and <strong>Data Collection Rule (DCR, kind: Direct)</strong> — no agents required.\n\n<strong>Tables created/used</strong>\n\n| Entity | Table | Purpose |\n|---|---|---|\n| Assets | <code>CyeraAssets_CL</code> | Raw asset metadata and data-store context |\n| Identities | <code>CyeraIdentities_CL</code> | Identity definitions and sensitivity context |\n| Issues | <code>CyeraIssues_CL</code> | Findings and remediation details |\n| Classifications | <code>CyeraClassifications_CL</code> | Data class &amp; sensitivity definitions |\n| MS View | <code>CyeraAssets_MS_CL</code> | Normalized asset view for dashboards |\n\n&gt; <strong>Note:</strong> This v7 connector supersedes the earlier CCF-based approach and aligns with Microsoft’s recommended Direct ingestion path for Microsoft Sentinel.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -105,10 +105,10 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -156,30 +156,30 @@
 </ol>
 <p><strong>6. Option 2 — Manual Deployment</strong></p>
 <p>Follow the <a href="{{userguide-url}}.\n\n1">install pack’s step-by-step guide</a> Create/update the 5 custom tables, data collection rule with format <code>sentinel-dce-&lt;functuion_name&gt;</code>, and data collection endpoint with format <code>sentinel-dcr-&lt;functuion_name&gt;</code> using the scripts in <a href="{{deployment-script-zip-url}}">install-pack-v0_7_0/scripts</a>.\n2) Deploy the Azure Function from the repo<code>s Function folder (Timer-trigger; schedule typically 5–15 minutes).\n3) Configure Function App settings:\n   -</code>CyeraBaseUrl<code>— Cyera API Base URL\n   -</code>CyeraClientId<code>— Client ID (PAT)\n   -</code>CyeraSecret<code>— Client Secret (PAT)\n   -</code>DCR_IMMUTABLE_ID<code>— DCR immutable ID\n   -</code>DCE_ENDPOINT<code>— Logs ingestion endpoint URL\n   -</code>STREAM_ASSETS<code>=</code>Custom-CyeraAssets<code>,</code>STREAM_IDENTITIES<code>=</code>Custom-CyeraIdentities<code>,</code>STREAM_ISSUES<code>=</code>Custom-CyeraIssues<code>,</code>STREAM_CLASSIFICATIONS<code>=</code>Custom-CyeraClassifications`\n4) Save and Start the Function App.</p>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM\Data Connectors\CyeraDSPM_Functions\INSTALL.md">CyeraDSPM\Data Connectors\CyeraDSPM_Functions\INSTALL.md</a></em></p>
 </blockquote>
-<h1>Cyera DSPM for Microsoft Sentinel — v5 Install Pack</h1>
+<h1 id="cyera-dspm-for-microsoft-sentinel-v5-install-pack">Cyera DSPM for Microsoft Sentinel — v5 Install Pack</h1>
 <p>This pack deploys the v5 integration using <strong>DCE + DCR (Direct)</strong> and custom <strong>Log Analytics tables</strong>.</p>
-<h2>Prereqs</h2>
+<h2 id="prereqs">Prereqs</h2>
 <ul>
 <li>Azure CLI (<code>az</code>) logged in</li>
 <li><code>jq</code> installed</li>
 <li>Existing Log Analytics Workspace</li>
 </ul>
-<h2>1) Configure env</h2>
+<h2 id="1-configure-env">1) Configure env</h2>
 <pre><code class="language-bash">cd scripts
 cp 00_env.sample 00_env.sh &amp;&amp; $EDITOR 00_env.sh
 . ./00_env.sh
 </code></pre>
-<h2>2) Create/Update tables</h2>
+<h2 id="2-createupdate-tables">2) Create/Update tables</h2>
 <pre><code class="language-bash">./10_put_tables.sh
 </code></pre>
-<h2>3) Create/Update DCR (Direct)</h2>
+<h2 id="3-createupdate-dcr-direct">3) Create/Update DCR (Direct)</h2>
 <pre><code class="language-bash">./20_put_dcr.sh
 </code></pre>
-<h2>4) Verify resources</h2>
+<h2 id="4-verify-resources">4) Verify resources</h2>
 <pre><code class="language-bash">./30_show_resources.sh
 </code></pre>
 <p>Ensure:
@@ -189,10 +189,10 @@ cp 00_env.sample 00_env.sh &amp;&amp; $EDITOR 00_env.sh
 <p>Optionally export the immutableId for seeding:</p>
 <pre><code class="language-bash">export DCR_IMMUTABLE_ID=$(az monitor data-collection rule show -g &quot;$RG&quot; -n &quot;$DCR_NAME&quot; --query properties.immutableId -o tsv)
 </code></pre>
-<h2>5) (Optional) Seed sample data</h2>
+<h2 id="5-optional-seed-sample-data">5) (Optional) Seed sample data</h2>
 <pre><code class="language-bash">./40_seed_samples.sh
 </code></pre>
-<h2>6) Validate in Logs</h2>
+<h2 id="6-validate-in-logs">6) Validate in Logs</h2>
 <p>Open <code>scripts/50_verify.kql</code> and run the queries in the Logs blade.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>

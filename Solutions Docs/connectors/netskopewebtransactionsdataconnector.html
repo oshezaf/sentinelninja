@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Netskope Web Transactions Data Connector</h1>
+<h1 id="netskope-web-transactions-data-connector">Netskope Web Transactions Data Connector</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Netskope.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
@@ -66,7 +66,7 @@
 <blockquote>
 <p>https://docs.netskope.com/en/netskope-help/data-security/transaction-events/netskope-transaction-events/ </p>
 </blockquote>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -95,7 +95,7 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
@@ -104,7 +104,7 @@
 - <strong>Microsoft.Compute permissions</strong>: Read and write permissions to Azure VMs is required. <a href="https://learn.microsoft.com/azure/virtual-machines/overview">See the documentation to learn more about Azure VMs</a>.
 - <strong>TransactionEvents Credentials and Permissions</strong>: <strong>Netskope Tenant</strong> and <strong>Netskope API Token</strong> is required. <a href="https://docs.netskope.com/en/netskope-help/data-security/transaction-events/netskope-transaction-events/">See the documentation to learn more about Transaction Events.</a>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector provides the functionality of ingesting Netskope Web Transactions data using a docker image to be deployed on a virtual machine (Either Azure VM/On Premise VM). Check the <a href="https://azure.microsoft.com/pricing/details/virtual-machines/linux">Azure VM pricing page</a> for details.</p>

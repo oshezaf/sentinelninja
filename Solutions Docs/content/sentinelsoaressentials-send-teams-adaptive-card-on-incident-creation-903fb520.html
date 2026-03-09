@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Send Teams Adaptive Card on incident creation</h1>
+<h1 id="send-teams-adaptive-card-on-incident-creation">Send Teams Adaptive Card on incident creation</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,28 +42,28 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Teams-adaptive-card-on-incident-creation/readme.md">Send-Teams-adaptive-card-on-incident-creation/readme.md</a></em></p>
 </blockquote>
-<h1>Send-Teams-adaptive-card-on-incident-creation</h1>
+<h1 id="send-teams-adaptive-card-on-incident-creation_1">Send-Teams-adaptive-card-on-incident-creation</h1>
 <p>Author: Benjamin Kovacevic</p>
 <p>This playbook will send Microsoft Teams Adaptive Card on incident creation, with the option to change the incident's severity and/or status.</p>
-<h1>Prerequisites</h1>
+<h1 id="prerequisites">Prerequisites</h1>
 <ol>
 <li>Get Teams Group ID and Teams Channel ID. (instructions available on - https://www.linkedin.com/pulse/3-ways-locate-microsoft-team-id-christopher-barber-/). It is possible to choose Teams group and channel after deployment as well.</li>
 </ol>
-<h1>Quick Deployment</h1>
+<h1 id="quick-deployment">Quick Deployment</h1>
 <p><strong>Deploy with incident trigger</strong></p>
 <p>After deployment, attach this playbook to an <strong>automation rule</strong> so it runs when the incident is created.</p>
 <p><a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a></p>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-Teams-adaptive-card-on-incident-creation%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-Teams-adaptive-card-on-incident-creation%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h1>Post-deployment</h1>
+<h1 id="post-deployment">Post-deployment</h1>
 <ol>
 <li>Assign Microsoft Sentinel Responder role to the Playbook's Managed Identity</li>
 <li>Authorize Microsoft Teams connector</li>
 </ol>
-<h2>Screenshots</h2>
+<h2 id="screenshots">Screenshots</h2>
 <p><strong>Incident Trigger</strong>
 <img alt="Incident Trigger" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/incidentTrigger-light.png" /></p>
 <p><img alt="Incident Trigger" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/incidentTrigger-dark.png" /></p>

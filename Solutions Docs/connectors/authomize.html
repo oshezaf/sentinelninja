@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>⚠️ Authomize Data Connector</h1>
+<h1 id="authomize-data-connector">⚠️ Authomize Data Connector</h1>
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
@@ -62,7 +62,7 @@
 </tbody>
 </table>
 <p>The Authomize Data Connector provides the capability to ingest custom log types from Authomize into Microsoft Sentinel.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -85,13 +85,13 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Include custom pre-requisites if the connectivity requires - else delete customs</strong>: Description for any custom pre-requisite</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -101,17 +101,17 @@
 <p>Follow the Instructions on <a href="https://github.com/authomize/Open-ITDR/blob/main/Open-Connectors/Platform/Azure-Sentinel/Data%20Connectors/readme.md">deploying the data connector to ingest data from Authomize</a>.</p>
 <p><strong>3. Finalize your setup</strong></p>
 <p>Validate that your script is running. Simple instructions are located under the <a href="https://github.com/authomize/Open-ITDR/blob/main/Open-Connectors/Platform/Azure-Sentinel/Data%20Connectors/readme.md">Authomize Data Connector area</a>.</p>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Authomize\Data Connectors\readme.md">Authomize\Data Connectors\readme.md</a></em></p>
 </blockquote>
-<h2>Instructions for Quick Deployment</h2>
+<h2 id="instructions-for-quick-deployment">Instructions for Quick Deployment</h2>
 <p>You will need the following before you start this installation:
 - Access to a keyvault with the ability to deploy secrets, note that we suggest authomize as the name, but you can use an existing vault or create a new one with a different name.
 - Access to App Registration under AAD (For more secure method you can optionally setup an ID for the function you deploy)
 - Access to be able to create azure app functions from your azure portal
 - Access to an azure storage account - by default this applocation will create a small table using AzureWebJobsStorage connection string</p>
-<h3>Get the Tokens to be stored in Secrets</h3>
+<h3 id="get-the-tokens-to-be-stored-in-secrets">Get the Tokens to be stored in Secrets</h3>
 <ol>
 <li>Get an Authomize Token from your tenant<ul>
 <li><code>authomizeToken</code> - this is the Token generated in your Authomize tenant. Go to the configurations page, click API Tokens and select a Platform Token. Save this token in a safe place to be used later, ensure you save it as pure text with no formatting.</li>
@@ -123,7 +123,7 @@
 </ul>
 </li>
 </ol>
-<h3>Creating Secrets</h3>
+<h3 id="creating-secrets">Creating Secrets</h3>
 <ol>
 <li>
 <p>You will now create the secrets that the Authomize connector for Azure Sentinel will use.</p>
@@ -152,7 +152,7 @@
 <p>At this point, please get your vault URI, it will be needed later in the configuration of the application. You can find it under overview within the keyvault that you created. Here is an example <code>https://authomizexxx.vaultxxx.azure.net/</code></p>
 </li>
 </ol>
-<h3>Creating your Application within Azure AD</h3>
+<h3 id="creating-your-application-within-azure-ad">Creating your Application within Azure AD</h3>
 <ol>
 <li>Go to Microsoft Azure Default Directory and Create an App Registration<ul>
 <li>On the left menu click on App registrations</li>
@@ -166,7 +166,7 @@
 </ul>
 </li>
 </ol>
-<h3>Ensure new principal has access to Kay Vauly Secrets</h3>
+<h3 id="ensure-new-principal-has-access-to-kay-vauly-secrets">Ensure new principal has access to Kay Vauly Secrets</h3>
 <ol>
 <li>Go to the Key Vault you created previously with the secrets<ul>
 <li>Once you have access click on the left <code>Access policies</code></li>
@@ -177,7 +177,7 @@
 </ul>
 </li>
 </ol>
-<h3>Deploy the Azure Function app</h3>
+<h3 id="deploy-the-azure-function-app">Deploy the Azure Function app</h3>
 <ol>
 <li>
 <p>We will do this through the cli, you will need access to the authomizeconnector.zip file and authorization to deploy</p>
@@ -233,7 +233,7 @@
 </ul>
 </li>
 </ol>
-<h2>Care and Feeding</h2>
+<h2 id="care-and-feeding">Care and Feeding</h2>
 <ol>
 <li>
 <p>Monitoring the application and expected behavior</p>

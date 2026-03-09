@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Vectra Static Resolve Assignment</h1>
+<h1 id="vectra-static-resolve-assignment">Vectra Static Resolve Assignment</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,13 +42,13 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraStaticResolveAssignment/readme.md">VectraStaticResolveAssignment/readme.md</a></em></p>
 </blockquote>
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>This playbook resolves the assignment for an entity in Vectra and adds a note for the assignment when the status of an incident is changed to 'closed', and also it triages all active detections associated with the entity while applying the Microsoft Sentinel incident ID as the triage label.</p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>The Vectra XDR data connector should be configured to create alerts and generate an incident based on entity data in Microsoft Sentinel.</li>
 <li>Obtain the key vault name and tenantId where client credentials are stored using which access token will be generated.
@@ -62,7 +62,7 @@
    * Copy the text of groupId parameter from the link to use as groupId.</li>
 <li>Ensure that VectraGenerateAccessToken playbook is deployed before deploying VectraStaticResolveAssignment playbook.</li>
 </ol>
-<h3>Deployment Instructions</h3>
+<h3 id="deployment-instructions">Deployment Instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:
@@ -76,8 +76,8 @@
    * EntityNote: Enter a note you want to add in Vectra Entity for assignment.</li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraStaticResolveAssignment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraStaticResolveAssignment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3>Post-Deployment Instructions</h3>
-<h4>a. Authorize Connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize Connections</h4>
 <p>Once deployment is complete, authorize each connection.
 1. Go to your logic app → API connections → Select keyvault connection resource.
 2. Go to General → Edit API connection.
@@ -85,7 +85,7 @@
 4. Sign in.
 5. Click Save.
 6. Repeat steps for other connections.</p>
-<h4>b. Add Access Policy in Key Vault</h4>
+<h4 id="b-add-access-policy-in-key-vault">b. Add Access Policy in Key Vault</h4>
 <p>Add access policy for the playbook's managed identity and authorized user to read and write secrets of key vault.
 1. Go to logic app → <em>your Logic App</em> → identity → System assigned Managed identity and copy Object (principal) ID.
 2. Go to key vaults → <em>your Key Vault</em> → Access policies → create.
@@ -93,7 +93,7 @@
 4. In the principal section, search by copied object ID. Click next.
 5. Click review + create.
 6. Repeat the above steps 2 to 5 to add access policy for the user account using which connection is authorized.</p>
-<h4>c. Configurations in Microsoft Sentinel</h4>
+<h4 id="c-configurations-in-microsoft-sentinel">c. Configurations in Microsoft Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel, analytical rule should be configured to trigger an incident based on data ingested from Vectra. Incident should have Entity mapping.</li>
 <li>In Microsoft Sentinel, Configure the automation rules to trigger the playbook:

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Microsoft Power Platform Admin Activity</h1>
+<h1 id="microsoft-power-platform-admin-activity">Microsoft Power Platform Admin Activity</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PowerPlatform.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
@@ -51,13 +51,13 @@
 </tbody>
 </table>
 <p>Microsoft Power Platform is a low-code/no-code suite empowering both citizen and pro developers to streamline business processes by enabling the creation of custom apps, automation of workflows, and data analysis with minimal coding. The Power Platform Admin data connector provides the capability to ingest Power Platform administrator activity logs from the Microsoft Purview Audit log into Microsoft Sentinel.</p>
-<h2>Additional Information</h2>
+<h2 id="additional-information">Additional Information</h2>
 <ul>
 <li>📖 <strong>Solution Overview:</strong> <a href="https://learn.microsoft.com/azure/sentinel/business-applications/power-platform-solution-overview">Microsoft Business Apps solution</a> - Monitor and protect Power Platform and Dynamics 365 environments</li>
 <li>📖 <strong>Deployment Guide:</strong> <a href="https://learn.microsoft.com/azure/sentinel/business-applications/deploy-power-platform-solution">Deploy Power Platform connectors</a> - Prerequisites and setup for Power Platform admin activity logging</li>
 <li>📖 <strong>Security Content:</strong> <a href="https://learn.microsoft.com/azure/sentinel/business-applications/power-platform-solution-security-content">Power Platform security content reference</a> - Analytics rules for Power Platform admin activity monitoring</li>
 </ul>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -77,14 +77,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.
 - <strong>Keys</strong> (Workspace): Read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a></p>
 <p><strong>Custom Permissions:</strong>
 - <strong>Tenant Permissions</strong>: 'Security Administrator' or 'Global Administrator' on the workspace's tenant.
 - <strong>Micorosft Purview Audit</strong>: Microsoft Purview Audit (Standard or Premium) must be activated.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>

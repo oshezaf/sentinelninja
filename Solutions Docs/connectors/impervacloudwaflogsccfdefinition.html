@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Imperva Cloud WAF</h1>
+<h1 id="imperva-cloud-waf">Imperva Cloud WAF</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Imperva_DarkGrey_final_75x75.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
@@ -63,7 +63,7 @@
 </tbody>
 </table>
 <p>The Imperva WAF Cloud data connector provides the capability to ingest logs into Microsoft Sentinel using the Imperva Log Integration through AWS S3 Bucket. Refer to <a href="https://docs.imperva.com/bundle/cloud-application-security/page/settings/log-integration.htm">Imperva WAF Cloud Log Integration</a> for more information.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -86,10 +86,10 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
@@ -98,9 +98,9 @@
 <p><strong>NOTE:</strong> This connector fetches the Imperva Cloud WAF logs from AWS S3 bucket
 To gather data from Imperva, you need to configure the following resources</p>
 </blockquote>
-<h4>1. AWS Role ARN</h4>
+<h4 id="1-aws-role-arn">1. AWS Role ARN</h4>
 <p>To gather data from Imperva, you'll need AWS Role ARN.</p>
-<h4>2. AWS SQS Queue URL</h4>
+<h4 id="2-aws-sqs-queue-url">2. AWS SQS Queue URL</h4>
 <p>To gather data from Imperva, you'll need AWS SQS Queue URL.</p>
 <p>For detailed steps to retrieve the AWS Role ARN, SQS Queue URL, and configure Imperva log forwarding to the Amazon S3 bucket, refer to the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF/Data%20Connectors/Readme.md">Connector Setup Guide</a>.
 <strong>Connector Management Interface</strong></p>

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>O365 - Block Spam Domain</h1>
+<h1 id="o365-block-spam-domain">O365 - Block Spam Domain</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,23 +42,23 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks/o365-BlockSpamDomain/readme.md">O365DefenderPlaybooks/o365-BlockSpamDomain/readme.md</a></em></p>
 </blockquote>
-<h1>o365-BlockSpamDomain Info Playbook</h1>
+<h1 id="o365-blockspamdomain-info-playbook">o365-BlockSpamDomain Info Playbook</h1>
 <p>## Summary
  When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. Fetches the list of earlier blocked upnsuffix/domain .
  2. Fetches the new upnsuffix/domain from incidents and compare them with existing one and update the blacklist .</p>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSpamDomain/images/o365-BlockSpamDomain_light.jpg" width="50%"/><br>
 <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSpamDomain/images/o365-BlockSpamDomain_incidentcomment.jpg" width="50%"/><br></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Defender for office 365 function app custom connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
 <li>Custom connector <a href="../../CustomConnector/O365_Defender_FunctionAppConnector/readme.html">readme.md</a> file should be followed properly before using any of the Defender for office 365 playbooks.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
@@ -75,8 +75,8 @@
 </ul>
 </li>
 </ol>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections (Perform this action if needed)</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections-perform-this-action-if-needed">a. Authorize connections (Perform this action if needed)</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
@@ -84,14 +84,14 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for all connections</p>
-<h4>b. Configurations in Sentinel</h4>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky Account.</li>
 <li>Configure the automation rules to trigger this playbook, mapping of Account is necessary</li>
 <li>Refer to Screenshot below</li>
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks%5Co365-BlockSpamDomain/images/o365-BlockSpamDomain_entityMapping.jpg" width="50%"/><br></p>
-<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -104,7 +104,7 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save (It takes 3-5 minutes to show the added role.)</li>
 </ol>
-<h4>d. Assign access policy on key vault for Playbook to fetch the secret key</h4>
+<h4 id="d-assign-access-policy-on-key-vault-for-playbook-to-fetch-the-secret-key">d. Assign access policy on key vault for Playbook to fetch the secret key</h4>
 <ol>
 <li>Select the Keyvault resource where you have stored the secret</li>
 <li>Click on Access policies Blade</li>

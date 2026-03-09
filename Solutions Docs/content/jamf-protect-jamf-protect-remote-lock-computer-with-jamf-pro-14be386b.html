@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Jamf Protect - Remote lock computer with Jamf Pro</h1>
+<h1 id="jamf-protect-remote-lock-computer-with-jamf-pro">Jamf Protect - Remote lock computer with Jamf Pro</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,20 +42,20 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_LockComputer_with_JamfPro/readme.md">JamfProtect_LockComputer_with_JamfPro/readme.md</a></em></p>
 </blockquote>
-<h1>JamfProtect_LockComputer_with_JamfPro</h1>
+<h1 id="jamfprotect_lockcomputer_with_jamfpro">JamfProtect_LockComputer_with_JamfPro</h1>
 <p>## Summary
 This Playbook can be used manually or in a Automation Rule to send an remote MDM command with Jamf Pro to lock the computer with an randomised 6 digit passcode.</p>
 <p><img alt="JamfProtect_LockComputer_with_JamfPro" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/images/designerOverviewCollapsedLight.png" /></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Generate API Client in Jamf Pro and take note of the CLientID and Secret. <a href="https://learn.jamf.com/search?bundle=jamf-pro-documentation-current&amp;q=api%20client">learn how</a>.</li>
 <li>Use the ClientID and Password during the deployment of this Playbook.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 <li>
@@ -69,20 +69,20 @@ This Playbook can be used manually or in a Automation Rule to send an remote MDM
 </li>
 </ol>
 <p><a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/azuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/azuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h2>Playbook steps explained</h2>
-<h3>Microsoft Sentinel Incident</h3>
+<h2 id="playbook-steps-explained">Playbook steps explained</h2>
+<h3 id="microsoft-sentinel-incident">Microsoft Sentinel Incident</h3>
 <p>When an Incident is being created and we have an Automation Rule in place to rule this trigger we can use the Incident details.</p>
-<h3>Generate Access Token using API Client</h3>
+<h3 id="generate-access-token-using-api-client">Generate Access Token using API Client</h3>
 <p>This HTTP Action will generate an Access Token using the defined parameters.</p>
-<h3>Parse JSON Response from Access Token</h3>
+<h3 id="parse-json-response-from-access-token">Parse JSON Response from Access Token</h3>
 <p>This action parses the response from the previous HTTP action in a format so we can use it further in the Playbook.</p>
-<h3>Set accessToken as variable</h3>
+<h3 id="set-accesstoken-as-variable">Set accessToken as variable</h3>
 <p>This action parses the response from the previous HTTP action in a format so we can use it further in the Playbook.</p>
-<h3>Parse JSON Entities from the Incident</h3>
+<h3 id="parse-json-entities-from-the-incident">Parse JSON Entities from the Incident</h3>
 <p>This actions parses the Host Entity array from the incident.</p>
-<h3>Filter array for the entity kind Host</h3>
+<h3 id="filter-array-for-the-entity-kind-host">Filter array for the entity kind Host</h3>
 <p>This action filters the array Hosts from the incident so we can use it in the Playbook.</p>
-<h3>For each host send DeviceLock Command</h3>
+<h3 id="for-each-host-send-devicelock-command">For each host send DeviceLock Command</h3>
 <p>Runs a set of actions for each host</p>
 <pre><code>### Get JSSID for given computer in Jamf Pro
 This HTTP action will get the JSSID for the given Host.

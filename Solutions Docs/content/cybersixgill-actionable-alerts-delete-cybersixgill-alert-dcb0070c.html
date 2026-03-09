@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Delete-Cybersixgill-Alert</h1>
+<h1 id="delete-cybersixgill-alert">Delete-Cybersixgill-Alert</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,14 +42,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/readme.md">DeleteCybersixgillAlert/readme.md</a></em></p>
 </blockquote>
-<h1>DeleteCybersixgillAlert</h1>
+<h1 id="deletecybersixgillalert">DeleteCybersixgillAlert</h1>
 <p>author: Loginsoft</p>
 <p>This playbook will delete Actionable alerts in Cybersixgill Portal. When incident is deleted in Microsoft Sentinel, playbook will run and delete Actionable alerts from Portal </p>
-<h1>Prerequisites</h1>
+<h1 id="prerequisites">Prerequisites</h1>
 <p>We will need the following data to do one time setup</p>
 <ol>
 <li>Cybersixgill Client ID (client_id)</li>
@@ -63,7 +63,7 @@
 * All other fields can be left to default.
 * Once done click on Create the app.
 * Copy Client ID, Client Secret and Organization ID.</p>
-<h1>Deployment instructions</h1>
+<h1 id="deployment-instructions">Deployment instructions</h1>
 <ol>
 <li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
@@ -79,15 +79,15 @@
 </ul>
 </li>
 </ol>
-<h1>Post-deployment</h1>
-<h4>a. Authorize connections (Perform this action if needed)</h4>
+<h1 id="post-deployment">Post-deployment</h1>
+<h4 id="a-authorize-connections-perform-this-action-if-needed">a. Authorize connections (Perform this action if needed)</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microsoft Sentinel connection resource
 2.  Click edit API connection
 3.  Click Authorize
 4.  Sign in
 5.  Click Save</p>
-<h4>b. Configurations in Sentinel</h4>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>Create new automation rule, ex: CybersixgillAlertDeleteAutomationRule
    * Trigger = Incident is Updated
@@ -96,7 +96,7 @@
 <img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/images/AutomationRuleExampleDark.PNG" />
 <img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/images/AutomationRuleExampleLight.PNG" /></li>
 </ol>
-<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -109,7 +109,7 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save (It takes 3-5 minutes to show the added role.)</li>
 </ol>
-<h4>d. Assign access policy on key vault for Playbook to fetch the secret key</h4>
+<h4 id="d-assign-access-policy-on-key-vault-for-playbook-to-fetch-the-secret-key">d. Assign access policy on key vault for Playbook to fetch the secret key</h4>
 <ol>
 <li>Select the Keyvault resource where you have stored the secret</li>
 <li>Click on Access policies Blade</li>

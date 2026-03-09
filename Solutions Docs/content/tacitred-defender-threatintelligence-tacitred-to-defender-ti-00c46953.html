@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>TacitRed to Defender TI</h1>
+<h1 id="tacitred-to-defender-ti">TacitRed to Defender TI</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,14 +42,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-Defender-ThreatIntelligence/Playbooks/TacitRedToDefenderTI/readme.md">TacitRedToDefenderTI/readme.md</a></em></p>
 </blockquote>
-<h1>TacitRed to Defender Threat Intelligence Playbook</h1>
-<h2>Overview</h2>
+<h1 id="tacitred-to-defender-threat-intelligence-playbook">TacitRed to Defender Threat Intelligence Playbook</h1>
+<h2 id="overview">Overview</h2>
 <p>This playbook automatically synchronizes threat intelligence from TacitRed to Microsoft Defender Threat Intelligence. It retrieves compromised credentials and other threat indicators from TacitRed's API and uploads them to Microsoft Sentinel using the ARM-based createIndicator API.</p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <ol>
 <li><strong>Microsoft Sentinel workspace</strong> - Must be onboarded to Microsoft Sentinel</li>
 <li><strong>TacitRed API Key</strong> - Obtain from your TacitRed account</li>
@@ -58,9 +58,9 @@
    - Reader role on the workspace
    - Microsoft Sentinel Contributor role on the workspace</li>
 </ol>
-<h2>Deployment</h2>
+<h2 id="deployment">Deployment</h2>
 <p>This playbook is deployed automatically as part of the TacitRed Defender Threat Intelligence solution from Microsoft Sentinel Content Hub.</p>
-<h3>Manual Deployment</h3>
+<h3 id="manual-deployment">Manual Deployment</h3>
 <ol>
 <li>Click the <strong>Deploy to Azure</strong> button below</li>
 <li>Fill in the required parameters:
@@ -71,7 +71,7 @@
    - <strong>FunctionAppName</strong>: Prefix used when deploying the TacitRed Defender TI Function App (before uniqueString is applied)</li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTacitRed-Defender-ThreatIntelligence%2FPlaybooks%2FTacitRedToDefenderTI%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
-<h2>How It Works</h2>
+<h2 id="how-it-works">How It Works</h2>
 <ol>
 <li><strong>Scheduled Trigger</strong>: The Logic App runs on a configurable schedule (default: every 4 hours)</li>
 <li><strong>Fetch Findings</strong>: Calls TacitRed API to retrieve compromised credentials from the last 30 days</li>
@@ -79,7 +79,7 @@
 <li><strong>Upload to Sentinel</strong>: Indicators are uploaded via the ARM-based createIndicator API</li>
 <li><strong>Logging</strong>: All operations are logged to Application Insights</li>
 </ol>
-<h2>Architecture</h2>
+<h2 id="architecture">Architecture</h2>
 <pre><code>-----------------     -----------------     -----------------
 |   Logic App     | --&gt; |  Function App   | --&gt; | Microsoft       |
 |   (Scheduler)   |     |  (Processing)   |     | Sentinel TI     |
@@ -91,7 +91,7 @@
 |   API           |     |  Insights       |
 -----------------     -----------------
 </code></pre>
-<h2>Configuration</h2>
+<h2 id="configuration">Configuration</h2>
 <table>
 <thead>
 <tr>
@@ -123,27 +123,27 @@
 </tr>
 </tbody>
 </table>
-<h2>Troubleshooting</h2>
-<h3>No indicators appearing in Defender TI</h3>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="no-indicators-appearing-in-defender-ti">No indicators appearing in Defender TI</h3>
 <ol>
 <li>Verify the Logic App is running (check Run History)</li>
 <li>Check Application Insights for Function App errors</li>
 <li>Verify the workspace is onboarded to Microsoft Sentinel</li>
 <li>Confirm the Function App MSI has the required roles</li>
 </ol>
-<h3>500 errors from Sentinel API</h3>
+<h3 id="500-errors-from-sentinel-api">500 errors from Sentinel API</h3>
 <ol>
 <li>Ensure the workspace is onboarded to Microsoft Sentinel</li>
 <li>Verify the Function App is using the ARM-based createIndicator API</li>
 <li>Check that the indicator format is correct</li>
 </ol>
-<h2>Support</h2>
+<h2 id="support">Support</h2>
 <ul>
 <li><strong>Provider</strong>: Data443 Risk Mitigation, Inc.</li>
 <li><strong>Email</strong>: support@data443.com</li>
 <li><strong>Website</strong>: https://www.data443.com</li>
 </ul>
-<h2>Version History</h2>
+<h2 id="version-history">Version History</h2>
 <table>
 <thead>
 <tr>

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Fetch Threat Intel from fortiwebcloud</h1>
+<h1 id="fetch-threat-intel-from-fortiwebcloud">Fetch Threat Intel from fortiwebcloud</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,23 +42,23 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Playbooks/FortiWebPlaybooks/FortiWeb-enrichment/readme.md">FortiWebPlaybooks/FortiWeb-enrichment/readme.md</a></em></p>
 </blockquote>
-<h1>FortiWeb-enrichment Info Playbook</h1>
+<h1 id="fortiweb-enrichment-info-playbook">FortiWeb-enrichment Info Playbook</h1>
 <p>## Summary
  When a new Microosft Sentinel incident is created, this playbook gets triggered and performs below actions
  1. Fetches the list of Ip's from incident entites .
  2. Make the APi call to get the latest threat information/details from cloud console and update the same incidents comments with result.
  <img alt="image" src="https://user-images.githubusercontent.com/97503740/184323073-d3d7e6eb-f40e-42e1-8d2b-ef7f9550e646.png" />
 <img alt="image" src="https://user-images.githubusercontent.com/97503740/184323351-310a1d97-a541-4204-aa65-06069e5decbe.png" /></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>FortiWeb Cloud Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
 <li>API key. To get API Key, login into your FortiWeb cloud instance dashboard and navigate to Global --&gt; system settings --&gt; API Key.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>
 <p>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.
@@ -73,8 +73,8 @@
 </ul>
 </li>
 </ol>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, you will need to authorize each connection.
 1.  Click the Microosft Sentinel connection resource
 2.  Click edit API connection
@@ -82,7 +82,7 @@
 4.  Sign in
 5.  Click Save
 6.  Repeat steps for Fortiweb Api  Connection (For authorizing the Fortiweb API connection, API Key needs to be provided)</p>
-<h4>b. Configurations in Sentinel</h4>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>In Microosft Sentinel analytical rules should be configured to trigger an incident with risky URL or IP Address. </li>
 <li>Configure the automation rules to trigger this playbook , mapping of IP and URL entities is necessary</li>

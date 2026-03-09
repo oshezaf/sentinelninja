@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Microsoft Sysmon For Linux</h1>
+<h1 id="microsoft-sysmon-for-linux">Microsoft Sysmon For Linux</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Sysmon For Linux Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
@@ -69,13 +69,13 @@
 <p><a href="https://github.com/Sysinternals/SysmonForLinux">Sysmon for Linux</a> provides detailed information about process creations, network connections and other system events. The Sysmon for Linux connector uses <a href="https://docs.microsoft.com/azure/sentinel/connect-syslog">Syslog</a> as its data ingestion method. This solution depends on ASIM to work as expected. <a href="https://github.com/Azure/Azure-Sentinel/tree/master/ASIM">Deploy ASIM</a> to get the full value from the solution.</p>
 <p>This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. </p>
 <p><strong>NOTE</strong>: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by <strong>Aug 31, 2024</strong>. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#pre-requisites">Pre-requisites</a></li>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 </ul>
-<h2>Pre-requisites</h2>
+<h2 id="pre-requisites">Pre-requisites</h2>
 <p>This solution depends on <strong>1 other solution(s)</strong>:</p>
 <table>
 <thead>
@@ -89,7 +89,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/microsoftsysmonforlinux.html">[Deprecated] Microsoft Sysmon For Linux</a></li>
@@ -99,7 +99,7 @@
 <li><a href="../connectors/syslog.html">Syslog via Legacy Agent</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
 <li><a href="../connectors/syslogama.html">Syslog via AMA</a> <em>(dependency on <a href="syslog.html">Syslog</a>)</em></li>
 </ul>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -117,7 +117,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

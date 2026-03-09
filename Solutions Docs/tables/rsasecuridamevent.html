@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RSASecurIDAMEvent &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar">
@@ -17,13 +15,13 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>RSASecurIDAMEvent</h1>
+<h1 id="rsasecuridamevent">RSASecurIDAMEvent</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
 <hr />
-<h2>Schema (69 columns)</h2>
+<h2 id="schema-69-columns">Schema (69 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/RSASecurIDAMEvent.json">KQL validation test schema</a></p>
-<table id="schema-table">
+<table>
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
@@ -314,30 +312,6 @@
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
 </div>
-<script>
-$(function() {
-    var t = $('#schema-table');
-    if (!t.length) return;
-    // Add filter row to thead
-    var hdr = t.find('thead');
-    var cols = hdr.find('tr:first th').length;
-    var fr = $('<tr class="filters"></tr>');
-    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
-    hdr.append(fr);
-    // Init DataTable
-    var dt = t.DataTable({
-        paging: false,
-        info: true,
-        orderCellsTop: true,
-        dom: 'frti',
-    });
-    // Per-column filter
-    hdr.find('tr.filters input').each(function(i) {
-        $(this).on('keyup change', function() {
-            dt.column(i).search(this.value).draw();
-        });
-    });
-});
-</script>
+
 </body>
 </html>

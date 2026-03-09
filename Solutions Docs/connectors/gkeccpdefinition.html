@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Google Kubernetes Engine (via Codeless Connector Framework)</h1>
+<h1 id="google-kubernetes-engine-via-codeless-connector-framework">Google Kubernetes Engine (via Codeless Connector Framework)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../connectors-index.html">Back to Connectors Index</a></p>
@@ -59,7 +59,7 @@
 </tbody>
 </table>
 <p>The Google Kubernetes Engine (GKE) Logs enable you to capture cluster activity, workload behavior, and security events, allowing you to monitor Kubernetes workloads, analyze performance, and detect potential threats across GKE clusters.</p>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -109,14 +109,14 @@
 </tr>
 </tbody>
 </table>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
-<h4>1. Set up your GCP environment</h4>
+<h4 id="1-set-up-your-gcp-environment">1. Set up your GCP environment</h4>
 <p>You must have the following GCP resources defined and configured: topic, subscription for the topic, workload identity pool, workload identity provider, and service account with permissions to get and consume from the subscription.</p>
 <p>To configure this data connector, execute the following Terraform scripts:</p>
 <ol>
@@ -127,9 +127,9 @@
 </blockquote>
 </li>
 </ol>
-<h4>2. Enable Kubernetes Engine Logging</h4>
+<h4 id="2-enable-kubernetes-engine-logging">2. Enable Kubernetes Engine Logging</h4>
 <p>In your GCP account, navigate to the Kubernetes Engine section. Enable Cloud Logging for your clusters. Within Cloud Logging, ensure that the specific logs you want to ingest—such as API server, scheduler, controller manager, HPA decision, and application logs—are enabled for effective monitoring and security analysis.</p>
-<h4>3. Connect new collectors</h4>
+<h4 id="3-connect-new-collectors">3. Connect new collectors</h4>
 <p>To enable GKE Logs for Microsoft Sentinel, click the <strong>Add new collector</strong> button, fill in the required information in the context pane, and click <strong>Connect</strong>.
 <strong>GCP Collector Management</strong></p>
 <p>📊 <strong>View GCP Collectors</strong>: A management interface displays your configured Google Cloud Platform data collectors.</p>

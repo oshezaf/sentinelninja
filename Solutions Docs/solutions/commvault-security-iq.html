@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Commvault Security IQ</h1>
+<h1 id="commvault-security-iq">Commvault Security IQ</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Commvault-Logo.svg" alt="Commvault Security IQ Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
@@ -63,14 +63,14 @@
 </tbody>
 </table>
 <p>This Microsoft Sentinel integration enables Commvault users to ingest alerts and other data into their Microsoft Sentinel instance. With Analytic Rules, Microsoft Sentinel can automatically create Microsoft Sentinel incidents.</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/commvaultsecurityiq-cl.html">CommvaultSecurityIQ</a> 🔶</li>
@@ -78,7 +78,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
 </blockquote>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -99,7 +99,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
 </blockquote>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>4 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -119,7 +119,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Analytic Rules</h3>
+<h3 id="analytic-rules">Analytic Rules</h3>
 <table>
 <thead>
 <tr>
@@ -138,7 +138,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Playbooks</h3>
+<h3 id="playbooks">Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -165,25 +165,25 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/README.md">Commvault Security IQ/README.md</a></em></p>
 </blockquote>
-<h1>Commvault Cloud - Microsoft Sentinel Integration</h1>
+<h1 id="commvault-cloud-microsoft-sentinel-integration">Commvault Cloud - Microsoft Sentinel Integration</h1>
 <p>This SOAR integration connects Commvault Cloud with Microsoft Sentinel to enable automated incident creation and response through Analytic Rules and Playbooks.</p>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>This solution provides:
 - <strong>Data Ingestion</strong>: Automated collection of Commvault security events and anomalies
 - <strong>Incident Creation</strong>: Automatic creation of Sentinel incidents based on Commvault security events
 - <strong>Incident Response</strong>: Playbooks for automated remediation actions (disable users, disable data aging, etc.)</p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>Before beginning the installation, ensure you have:</p>
-<h3>Commvault Requirements</h3>
+<h3 id="commvault-requirements">Commvault Requirements</h3>
 <ul>
 <li><strong>Administrative Access</strong>: Admin or Tenant Admin privileges in Commvault Cloud/Metallic</li>
 <li><strong>API Access</strong>: Ability to generate access tokens for API integration</li>
 </ul>
-<h3>Azure Requirements</h3>
+<h3 id="azure-requirements">Azure Requirements</h3>
 <ul>
 <li><strong>Subscription Access</strong>: Contributor or Owner permissions on the Azure subscription</li>
 <li><strong>Resource Group Access</strong>: Ability to create and manage resources in the target resource group</li>
@@ -191,9 +191,9 @@
 <li><strong>Log Analytics Workspace</strong>: A Log Analytics workspace associated with your Sentinel instance</li>
 <li><strong>Azure Cloud Shell</strong>: Access to Azure Cloud Shell with PowerShell support</li>
 </ul>
-<h2>Required Azure Resources</h2>
+<h2 id="required-azure-resources">Required Azure Resources</h2>
 <p>The following Azure resources will be created or configured during this installation:</p>
-<h3>Key Vault</h3>
+<h3 id="key-vault">Key Vault</h3>
 <ul>
 <li><strong>Purpose</strong>: Securely stores Commvault credentials and API endpoints</li>
 <li><strong>Required Secrets</strong>:</li>
@@ -201,7 +201,7 @@
 <li><code>environment-endpoint-url</code>: Your Commvault Cloud API endpoint URL (Commvault/Metallic endpoint URL : https://<code>hostname</code>/commandcenter/api )</li>
 <li><code>refresh-token</code>: Your Commvault Cloud refresh token</li>
 </ul>
-<h2>Installation</h2>
+<h2 id="installation">Installation</h2>
 <p><strong>1. Create Access Token in Commvault:</strong></p>
 <ul>
 <li>Follow the instructions in <a href="https://documentation.commvault.com/2024e/essential/creating_access_token.html">Creating an Access Token / Refresh Token</a>.</li>
@@ -229,7 +229,7 @@
 <li>Commvault Cloud -&gt; CommvaultSecurityIQ (using Azure Functions) -&gt; Open connector page -&gt; Deploy to Azure -&gt; Fill details -&gt; Create.</li>
 </ul>
 <p><em>[Content truncated...]</em></p>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

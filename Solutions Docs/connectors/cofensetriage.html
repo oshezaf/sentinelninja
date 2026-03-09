@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>⚠️ Cofense Triage Threat Indicators Ingestion</h1>
+<h1 id="cofense-triage-threat-indicators-ingestion">⚠️ Cofense Triage Threat Indicators Ingestion</h1>
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
@@ -118,7 +118,7 @@
 <blockquote>
 <p>https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicator?view=o365-worldwide</p>
 </blockquote>
-<h2>Tables Ingested</h2>
+<h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
@@ -153,7 +153,7 @@
 <blockquote>
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong>
 - <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
 - <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
@@ -162,7 +162,7 @@
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>REST API Credentials/permissions</strong>: <strong>Cofense Client ID</strong> and <strong>Client Secret</strong> is required.  See the documentation to learn more about API on the <code>https://&lt;your-cofense-instance-name&gt;/docs/api/v2/index.html</code>
 - <strong>Microsoft Defender for Endpoints</strong>: <strong>Microsoft Defender for Endpoints License</strong> is required for IndicatorCreatorToDefender function.</p>
-<h2>Setup Instructions</h2>
+<h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Cofense APIs to pull its Threat Indicators and create Threat Intelligence Indicators into Microsoft Sentinel Threat Intelligence and pulls Non-Cofense Threat Intelligence Indicators from Microsoft Sentinel and create/update Threat Indicators in Cofense. Likewise, it also creates/updates Cofense Based Threat Indicators in Microsoft Defender for Endpoints. All this might result in additional indicator and data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
@@ -313,11 +313,11 @@ If you're already signed in, go to the next step.</li>
  - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: <code>https://&lt;CustomerId&gt;.ods.opinsights.azure.us</code>.</li>
 <li>Once all application settings have been entered, click <strong>Save</strong>.</li>
 </ol>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseTriage\Data Connectors\CofenseTriageDataConnector\README.md">CofenseTriage\Data Connectors\CofenseTriageDataConnector\README.md</a></em></p>
 </blockquote>
-<h1>Cofense Triage Data Connector</h1>
+<h1 id="cofense-triage-data-connector">Cofense Triage Data Connector</h1>
 <ul>
 <li><a href="#Introduction">Introduction</a></li>
 <li><a href="#Prerequisites">Prerequisites</a></li>
@@ -325,7 +325,7 @@ If you're already signed in, go to the next step.</li>
 <li><a href="#Configuration">Configuration</a></li>
 <li><a href="#Deployment">Deployment</a></li>
 </ul>
-<h2>Introduction<a name="Introduction"></a></h2>
+<h2 id="introduction">Introduction<a name="Introduction"></a></h2>
 <p>The Cofense-Triage data connector provides the following capabilities:</p>
 <ol>
 <li>CofenseBasedIndicatorCreator:
@@ -345,7 +345,7 @@ Get Cofense Triage Threat Intelligence Indicators from Microsoft Sentinel Threat
 <li>Microsoft Defender for Endpoints Indicator documentation:
 https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicator?view=o365-worldwide</li>
 </ol>
-<h2>Prerequisites<a name="Prerequisites"></a></h2>
+<h2 id="prerequisites">Prerequisites<a name="Prerequisites"></a></h2>
 <p>To integrate with Cofense Triage make sure you have:
 1. <strong>Azure Subscription:</strong>  Azure Subscription with owner role is required to register an application in azure active directory(AAD) and assign role of contributor to AAD application in resource group.
 2. <strong>Workspace:</strong> read and write permissions on the workspace are required.
@@ -353,7 +353,7 @@ https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicato
 4. <strong>Microsoft.Web/sites permissions:</strong> Read and write permissions to Azure Functions to create a Function App is required.<a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 5. <strong>REST API Credentials/permissions:</strong> <strong>Cofense Client ID</strong> and <strong>Client Secret</strong> is required. See the documentation to learn more about API on the <code>https://&lt;your-cofense-instance-name&gt;/docs/api/v2/index.html</code>.
 6. <strong>Microsoft Defender for Endpoints:</strong> <strong>Microsoft Defender for Endpoints License</strong> is required for IndicatorCreatorToDefender function.</p>
-<h2>Folders<a name="Folders"></a></h2>
+<h2 id="folders">Folders<a name="Folders"></a></h2>
 <ol>
 <li>
 <p><code>CofenseDataConnector/</code> - This contains the package, requirements, ARM JSON file, connector page template JSON, and other dependencies.</p>
@@ -371,12 +371,12 @@ https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicato
 <p><code>SharedCode</code> - This contains the common source code for the execution of both <code>CofenseBasedIndicatorCreator</code> and <code>NonCofenseBasedIndicatorCreatorToCofense</code> Azure functions.</p>
 </li>
 </ol>
-<h2>Configuration<a name="Configuration"></a></h2>
+<h2 id="configuration">Configuration<a name="Configuration"></a></h2>
 <blockquote>
 <p><strong>NOTE</strong>: This connector uses Azure Functions to connect to the Cofense APIs to pull its Threat Indicators and create Threat Intelligence Indicators into Microsoft Sentinel Threat Intelligence and pulls Non-Cofense Threat Intelligence Indicators from Microsoft Sentinel and create/update Threat Indicators in Cofense. Likewise, it also creates/updates Cofense Based Threat Indicators in Microsoft Defender for Endpoints. All this might result in additional indicator and data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
 <p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
 </blockquote>
-<h3>STEP 1 - Registration steps for the Microsoft Azure Active Directory Application</h3>
+<h3 id="step-1-registration-steps-for-the-microsoft-azure-active-directory-application">STEP 1 - Registration steps for the Microsoft Azure Active Directory Application</h3>
 <p>This integration requires an App registration in the Azure portal. Follow the steps in this section to create a new Azure Active Directory application:</p>
 <ol>
 <li>Sign in to the <a href="https://portal.azure.com/">Azure portal</a>.</li>
@@ -389,7 +389,7 @@ https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicato
 <blockquote>
 <p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app</a></p>
 </blockquote>
-<h3>STEP 2 - Add a client secret for Microsoft Azure Active Directory Application</h3>
+<h3 id="step-2-add-a-client-secret-for-microsoft-azure-active-directory-application">STEP 2 - Add a client secret for Microsoft Azure Active Directory Application</h3>
 <p>Sometimes called an application password, a client secret is a string value required for the execution of CofenseTriage Data Connector. Follow the steps in this section to create a new Client Secret:</p>
 <ol>
 <li>In the Azure portal, in <strong>App registrations</strong>, select your application.</li>
@@ -402,7 +402,7 @@ https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicato
 <blockquote>
 <p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret">https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret</a>"</p>
 </blockquote>
-<h3>STEP 3 - Assign role of Contributor to Microsoft Azure Active Directory Application</h3>
+<h3 id="step-3-assign-role-of-contributor-to-microsoft-azure-active-directory-application">STEP 3 - Assign role of Contributor to Microsoft Azure Active Directory Application</h3>
 <p>Follow the steps in this section to assign the role:</p>
 <ol>
 <li>In the Azure portal, Go to <strong>Resource Group</strong> and select your resource group.</li>
@@ -416,7 +416,7 @@ https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicato
 <blockquote>
 <p><strong>Reference link:</strong> <a href="https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal">https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal</a></p>
 </blockquote>
-<h3>STEP 4 - Assign Defender Threat Indicator permissions to Microsoft Azure Active Directory Application</h3>
+<h3 id="step-4-assign-defender-threat-indicator-permissions-to-microsoft-azure-active-directory-application">STEP 4 - Assign Defender Threat Indicator permissions to Microsoft Azure Active Directory Application</h3>
 <p>Follow the steps in this section to assign the permissions:</p>
 <ol>
 <li>In the Azure portal, in <strong>App registrations</strong>, select <strong>your application</strong>.</li>
@@ -427,19 +427,19 @@ https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicato
 <blockquote>
 <p><strong>Reference link:</strong> <a href="https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp?view=o365-worldwide">https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp?view=o365-worldwide</a></p>
 </blockquote>
-<h3>STEP 5 - Configuration steps for the Cofense Client ID and Client Secret</h3>
+<h3 id="step-5-configuration-steps-for-the-cofense-client-id-and-client-secret">STEP 5 - Configuration steps for the Cofense Client ID and Client Secret</h3>
 <p>Follow the steps in this section to create/get <strong>Cofense Client ID</strong> and <strong>Client Secret</strong>:</p>
 <ol>
 <li>Go to <strong>Administration &gt; API Management &gt; Version 2 tab &gt; Applications</strong></li>
 <li>Click on <strong>New Application</strong></li>
 <li>Add the required information and click on <strong>submit</strong>."</li>
 </ol>
-<h2>Deployment<a name="Deployment"></a></h2>
+<h2 id="deployment">Deployment<a name="Deployment"></a></h2>
 <p><strong>Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function:</strong></p>
 <blockquote>
 <p><strong>IMPORTANT:</strong> Before deploying the Cofense Threat Indicators data connector, have the  Workspace ID and Workspace Primary Key.</p>
 </blockquote>
-<h4>Option 1 - Azure Resource Manager (ARM) Template</h4>
+<h4 id="option-1-azure-resource-manager-arm-template">Option 1 - Azure Resource Manager (ARM) Template</h4>
 <p>Use this method for automated deployment of the Cofense connector.</p>
 <ol>
 <li>Go to Microsoft Sentinel -&gt; Data Connectors.</li>
@@ -471,7 +471,7 @@ https://learn.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicato
 <li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</li>
 <li>Click <strong>Purchase</strong> to deploy.</li>
 </ol>
-<h4>Option 2 - Manual Deployment of Azure Functions</h4>
+<h4 id="option-2-manual-deployment-of-azure-functions">Option 2 - Manual Deployment of Azure Functions</h4>
 <p>Use the following step-by-step instructions to deploy the Cofense Threat Indicators data connector manually with Azure Functions (Deployment via Visual Studio Code).</p>
 <p><strong>1. Deploy a Function App</strong></p>
 <blockquote>

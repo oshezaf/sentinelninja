@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>AWS Systems Manager - Stop Managed EC2 Instances</h1>
+<h1 id="aws-systems-manager-stop-managed-ec2-instances">AWS Systems Manager - Stop Managed EC2 Instances</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,12 +42,12 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks/AWS-SSM-StopManagedInstance/readme.md">AWSSystemsManagerPlaybooks/AWS-SSM-StopManagedInstance/readme.md</a></em></p>
 </blockquote>
-<h1>AWS-SSM-StopManagedInstance</h1>
-<h2>Summary</h2>
+<h1 id="aws-ssm-stopmanagedinstance">AWS-SSM-StopManagedInstance</h1>
+<h2 id="summary">Summary</h2>
 <p>This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. This playbook uses AWS Systems Manager API to stop the EC2 instances. The playbook can be triggered from an incident in Microsoft Sentinel. The playbook takes the Hostnames and Private IP addresses from the incident entities and stops the EC2 instances using the Instance IDs. The playbook also adds a comment to the incident with the list of instances that were stopped.</p>
 <p>Playbook performs the following actions:</p>
 <ol>
@@ -58,12 +58,12 @@
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-StopManagedInstance/images/AWS-SSM-StopManagedInstance_light.jpg" width="50%"/><br>
 <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks%5CAWS-SSM-StopManagedInstance/images/AWS-SSM-StopManagedInstance_IncidentComment.jpg" width="50%"/><br></p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Prior to the deployment of this playbook, <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/">AWS Systems Manager API Function App Connector</a> needs to be deployed under the same subscription.</li>
 <li>Refer to <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/readme.html">AWS Systems Manager API Function App Connector</a> documentation to obtain AWS Access Key ID, Secret Access Key and Region. </li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -73,8 +73,8 @@
 </li>
 </ol>
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS%2520Systems%2520Manager%2FPlaybooks%2FAWSSystemsManagerPlaybooks%2FAWS-SSM-StopManagedInstance%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS%2520Systems%2520Manager%2FPlaybooks%2FAWSSystemsManagerPlaybooks%2FAWS-SSM-StopManagedInstance%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<h3>Post-Deployment instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Click the Microsoft Sentinel connection resource</li>
@@ -84,12 +84,12 @@
 <li>Click Save</li>
 <li>Repeat steps for other connections</li>
 </ol>
-<h4>b. Configure Playbook in Microsoft Sentinel</h4>
+<h4 id="b-configure-playbook-in-microsoft-sentinel">b. Configure Playbook in Microsoft Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel, analytical rules should be configured to trigger an incident that contains IP Addresses or Hostnames. In the <em>Entity mapping</em> section of the analytics rule creation workflow, IP Address should be mapped to <strong>Address</strong> identifier of the <strong>IP</strong> entity type and Hostname should be mapped to <strong>Hostname</strong> identifier of the <strong>Host</strong> entity type. Check the <a href="https://docs.microsoft.com/azure/sentinel/map-data-fields-to-entities">documentation</a> to learn more about mapping entities.</li>
 <li>Configure the automation rules to trigger the playbook. Check the <a href="https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook">documentation</a> to learn more about automation rules.</li>
 </ol>
-<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -102,9 +102,9 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save</li>
 </ol>
-<h4>d. Function App Settings Update Instructions</h4>
+<h4 id="d-function-app-settings-update-instructions">d. Function App Settings Update Instructions</h4>
 <p>Refer to <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/readme.html">AWS Systems Manager API Function App Connector</a> documentation for Function App <strong>Application Settings (Access Key ID, Secret Access Key and Region)</strong> update instruction.</p>
-<h1>References</h1>
+<h1 id="references">References</h1>
 <ul>
 <li><a href="https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeleteDocument.html">AWS Systems Manager API Documentation</a></li>
 <li><a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html">AWS Systems Manager User Guide</a></li>

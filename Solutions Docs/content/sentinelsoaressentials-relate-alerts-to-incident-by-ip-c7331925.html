@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Relate alerts to incident by IP</h1>
+<h1 id="relate-alerts-to-incident-by-ip">Relate alerts to incident by IP</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,7 +42,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This content item queries data from the following tables:</p>
 <table>
 <thead>
@@ -68,18 +68,18 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/relateAlertsToIncident-basedOnIP/readme.md">relateAlertsToIncident-basedOnIP/readme.md</a></em></p>
 </blockquote>
-<h1>relateAlertsToIncident-basedOnIP</h1>
-<h2>Summary</h2>
+<h1 id="relatealertstoincident-basedonip">relateAlertsToIncident-basedOnIP</h1>
+<h2 id="summary">Summary</h2>
 <p>This playbook identifies other alerts sharing the same IP address as the triggered Microsoft Sentinel incident. It adds each alert to the incident if it is not already related to another incident, helping to consolidate related security events for more effective investigation.</p>
-<h3>Prerequisites</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Microsoft Sentinel Workspace Name.</li>
 </ol>
-<h3>Deployment instructions</h3>
+<h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
@@ -91,8 +91,8 @@
 <p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FrelateAlertsToIncident-basedOnIP%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FrelateAlertsToIncident-basedOnIP%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" /></a>
 <br><br></p>
-<h3>Post-Deployment Instructions</h3>
-<h4>a. Authorize connections</h4>
+<h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
 <ol>
 <li>Click the Microsoft Sentinel connection resource</li>
@@ -102,7 +102,7 @@
 <li>Click Save</li>
 <li>Repeat steps for other connections</li>
 </ol>
-<h4>b. Configure Playbook in Microsoft Sentinel</h4>
+<h4 id="b-configure-playbook-in-microsoft-sentinel">b. Configure Playbook in Microsoft Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel, analytical rules should be configured to trigger an incident that contains IP Addresses or Hostnames. In the <em>Entity mapping</em> section of the analytics rule creation workflow, IP Address should be mapped to <strong>Address</strong> identifier of the <strong>IP</strong> entity type. Check the <a href="https://docs.microsoft.com/azure/sentinel/map-data-fields-to-entities">documentation</a> to learn more about mapping entities.</li>
 <li>
@@ -112,7 +112,7 @@
 <p>Check the <a href="https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook">documentation</a> to learn more about automation rules.</p>
 </li>
 </ol>
-<h4>c. Assign Playbook Microsoft Sentinel Responder Role</h4>
+<h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
 <li>Select the Playbook (Logic App) resource</li>
 <li>Click on Identity Blade</li>
@@ -125,7 +125,7 @@
 <li>Select Role - Microsoft Sentinel Responder</li>
 <li>Click Save (It takes 3-5 minutes to show the added role.)</li>
 </ol>
-<h2>Screenshots</h2>
+<h2 id="screenshots">Screenshots</h2>
 <p><strong>Incident Trigger</strong><br>
 <img alt="Incident Trigger" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/relateAlertsToIncident-basedOnIP/images/IncidentTriggerDark.png" />
 <img alt="Incident Trigger light" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/relateAlertsToIncident-basedOnIP/images/IncidentTriggerLight.png" /></p>

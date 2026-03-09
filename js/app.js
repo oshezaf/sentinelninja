@@ -141,15 +141,24 @@ $(document).ready(function() {
         if (id) history.replaceState(null, '', '#' + id.replace('-tab', ''));
     });
 
-    // Activate tab from URL hash on page load (e.g. index.html#connectors)
-    var hash = window.location.hash.replace('#', '');
-    if (hash) {
-        var tabBtn = $('#' + hash + '-tab');
-        if (tabBtn.length) {
-            var bsTab = new bootstrap.Tab(tabBtn[0]);
-            bsTab.show();
+    // Activate tab from URL hash
+    function activateTabFromHash() {
+        var hash = window.location.hash.replace('#', '');
+        if (hash) {
+            var tabBtn = document.getElementById(hash + '-tab');
+            if (tabBtn) {
+                bootstrap.Tab.getOrCreateInstance(tabBtn).show();
+            }
         }
     }
+    // On initial page load
+    activateTabFromHash();
+    // On hash change (same-page navigation)
+    $(window).on('hashchange', activateTabFromHash);
+    // On bfcache restoration (back/forward navigation)
+    window.addEventListener('pageshow', function(e) {
+        if (e.persisted) activateTabFromHash();
+    });
 
     // Click-to-filter: clicking a cell value filters that column
     // Skip if the click target is a link (let it navigate normally)

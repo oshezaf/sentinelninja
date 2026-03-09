@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>CohesitySecurity</h1>
+<h1 id="cohesitysecurity">CohesitySecurity</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cohesity-Logo.svg" alt="CohesitySecurity Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../solutions-index.html">Back to Solutions Index</a></p>
@@ -63,14 +63,14 @@
 </tbody>
 </table>
 <p>This product integrates Cohesity Helios with Microsoft Sentinel to stay updated with the security events from your Cohesity environment and immediately respond to a ransomware attack or an anomaly</p>
-<h2>Contents</h2>
+<h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
 <li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
-<h2>Data Connectors</h2>
+<h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/cohesitydataconnector.html">Cohesity</a> 🔶</li>
@@ -78,7 +78,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
 </blockquote>
-<h2>Tables Used</h2>
+<h2 id="tables-used">Tables Used</h2>
 <p>This solution uses <strong>1 table(s)</strong>:</p>
 <table>
 <thead>
@@ -99,7 +99,7 @@
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>).</p>
 </blockquote>
-<h2>Content Items</h2>
+<h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>5 content item(s)</strong>:</p>
 <table>
 <thead>
@@ -115,7 +115,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Playbooks</h3>
+<h3 id="playbooks">Playbooks</h3>
 <table>
 <thead>
 <tr>
@@ -152,11 +152,11 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/README.md">CohesitySecurity/README.md</a></em></p>
 </blockquote>
-<h1>Cohesity Data Cloud Integration with Microsoft Sentinel</h1>
+<h1 id="cohesity-data-cloud-integration-with-microsoft-sentinel">Cohesity Data Cloud Integration with Microsoft Sentinel</h1>
 <p>You can integrate Cohesity Data Cloud with Microsoft Sentinel to provide security operators and IT operation teams with the automation and operational simplicity to respond to threats and recover from ransomware incidents through Microsoft Sentinel. This integration allows you to:</p>
 <ul>
 <li>Send ransomware alerts into Microsoft Sentinel.</li>
@@ -165,13 +165,13 @@
 <li>Initiate recovery of clean snapshot.</li>
 <li>Closed loop integration resolves alerts in Cohesity Data Cloud.</li>
 </ul>
-<h2>Package Building and Validation Instructions</h2>
+<h2 id="package-building-and-validation-instructions">Package Building and Validation Instructions</h2>
 <p><strong>Disclaimer:</strong> You can skip these steps and use one of the pre-built packages from <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/CohesitySecurity/Package">this directory</a>. These steps are required only if you want to rebuild the package.
 1. Follow this <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/README.md">readme.md</a> to set up the build prerequisites.
 2. Edit <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/cohesity.json">cohesity.json</a> to add the required values. <strong>Note:</strong> The dummy values are provided to protect Personal Identifiable Information (PII) information.
 3. Run <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/build.ps1">build.ps1</a> to build the package.
 4. Follow <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/README.md">readme.md</a> for post-build manual validation.</p>
-<h2>Deployment</h2>
+<h2 id="deployment">Deployment</h2>
 <p>This package contains the following Azure functions to communicate with Microsoft Sentinel and Cohesity Data Cloud, and playbooks to automate workflows.</p>
 <p>The package consists of the following Azure functions:
 * <em>IncidentProducer</em> to retrieve Cohesity Data Cloud alerts through REST API. For more information, see <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Data%20Connectors/Helios2Sentinel/IncidentProducer/readme.md">IncidentProducer</a>.
@@ -182,7 +182,7 @@
 <li><em>Cohesity Send Incident Email</em> allows you to send an email to the recipient with the incident details. For more information, see <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Send_Incident_Email#readme.md">Cohesity Send Incident Email</a>.</li>
 </ul>
 <p><em>[Content truncated...]</em></p>
-<h2>Release Notes</h2>
+<h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
 <tr>

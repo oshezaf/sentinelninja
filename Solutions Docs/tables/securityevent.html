@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SecurityEvent &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar">
@@ -17,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>SecurityEvent</h1>
+<h1 id="securityevent">SecurityEvent</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
 <hr />
@@ -68,9 +66,9 @@
 </tr>
 </tbody>
 </table>
-<h2>Schema (228 columns)</h2>
+<h2 id="schema-228-columns">Schema (228 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityevent">Azure Monitor documentation</a></p>
-<table id="schema-table">
+<table>
 <thead>
 <tr>
 <th style="text-align: left;">Column Name</th>
@@ -1221,7 +1219,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Solutions (30)</h2>
+<h2 id="solutions-30">Solutions (30)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
@@ -1255,7 +1253,7 @@
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 <li><a href="../solutions/zinc-open-source.html">Zinc Open Source</a></li>
 </ul>
-<h2>Connectors (6)</h2>
+<h2 id="connectors-6">Connectors (6)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -1292,8 +1290,8 @@
 </tbody>
 </table>
 <hr />
-<h2>Content Items Using This Table (146)</h2>
-<h3>Analytic Rules (50)</h3>
+<h2 id="content-items-using-this-table-146">Content Items Using This Table (146)</h2>
+<h3 id="analytic-rules-50">Analytic Rules (50)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -1633,7 +1631,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Hunting Queries (73)</h3>
+<h3 id="hunting-queries-73">Hunting Queries (73)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -2008,7 +2006,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Workbooks (23)</h3>
+<h3 id="workbooks-23">Workbooks (23)</h3>
 <p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>EventID in "2889,3000,4624,4768,4769,4776"</code></p>
 <table>
 <thead>
@@ -2285,8 +2283,8 @@
 </tr>
 </tbody>
 </table>
-<h2>Parsers Using This Table (6)</h2>
-<h3>ASIM Parsers (5)</h3>
+<h2 id="parsers-using-this-table-6">Parsers Using This Table (6)</h2>
+<h3 id="asim-parsers-5">ASIM Parsers (5)</h3>
 <table>
 <thead>
 <tr>
@@ -2329,7 +2327,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Other Parsers (1) — Selection Criteria: <code>EventID in "9208,9211,9212"</code></h3>
+<h3 id="other-parsers-1-selection-criteria-eventid-in-920892119212">Other Parsers (1) — Selection Criteria: <code>EventID in "9208,9211,9212"</code></h3>
 <table>
 <thead>
 <tr>
@@ -2344,7 +2342,7 @@
 </tr>
 </tbody>
 </table>
-<h2>Resource Types</h2>
+<h2 id="resource-types">Resource Types</h2>
 <p>This table collects data from the following Azure resource types:</p>
 <ul>
 <li><code>microsoft.securityinsights/securityinsights</code></li>
@@ -2354,7 +2352,7 @@
 <li><code>microsoft.scvmm/virtualmachines</code></li>
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 </ul>
-<h2>Selection Criteria Summary (46 criteria, 102 total references)</h2>
+<h2 id="selection-criteria-summary-46-criteria-102-total-references">Selection Criteria Summary (46 criteria, 102 total references)</h2>
 <p>References by type: 1 connectors, 96 content items, 4 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
@@ -2746,7 +2744,7 @@
 </tr>
 </tbody>
 </table>
-<h3>EventID</h3>
+<h3 id="eventid">EventID</h3>
 <table>
 <thead>
 <tr>
@@ -3709,30 +3707,6 @@
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../tables-index.html">Back to Tables Index</a></p>
 </div>
-<script>
-$(function() {
-    var t = $('#schema-table');
-    if (!t.length) return;
-    // Add filter row to thead
-    var hdr = t.find('thead');
-    var cols = hdr.find('tr:first th').length;
-    var fr = $('<tr class="filters"></tr>');
-    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
-    hdr.append(fr);
-    // Init DataTable
-    var dt = t.DataTable({
-        paging: false,
-        info: true,
-        orderCellsTop: true,
-        dom: 'frti',
-    });
-    // Per-column filter
-    hdr.find('tr.filters input').each(function(i) {
-        $(this).on('keyup change', function() {
-            dt.column(i).search(this.value).draw();
-        });
-    });
-});
-</script>
+
 </body>
 </html>

@@ -15,7 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1>Send Microsoft Sentinel Incident To Cyware Orchestrate</h1>
+<h1 id="send-microsoft-sentinel-incident-to-cyware-orchestrate">Send Microsoft Sentinel Incident To Cyware Orchestrate</h1>
 <p><strong>Browse:</strong> <a href="../README.html">🏠</a> · <a href="../solutions-index.html">Solutions</a> · <a href="../connectors-index.html">Connectors</a> · <a href="../methods-index.html">Methods</a> · <a href="../tables-index.html">Tables</a> · <a href="../content/content-index.html">Content</a> · <a href="../parsers/parsers-index.html">Parsers</a> · <a href="../asim/asim-index.html">ASIM Parsers</a> · <a href="../asim/asim-products-index.html">ASIM Products</a> · <a href="../statistics.html">📊</a> · <a href="https://oshezaf.github.io/sentinelninja/index.html">🔍</a></p>
 <p>↑ <a href="../content/content-index.html">Back to Content Index</a></p>
 <hr />
@@ -42,22 +42,22 @@
 </tr>
 </tbody>
 </table>
-<h2>Additional Documentation</h2>
+<h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware/Playbooks/Send_Incident_To_Cyware_Orchestrate/readme.md">Send_Incident_To_Cyware_Orchestrate/readme.md</a></em></p>
 </blockquote>
-<h1>Send Incident to Cyware Orchestrate</h1>
+<h1 id="send-incident-to-cyware-orchestrate">Send Incident to Cyware Orchestrate</h1>
 <p>This Azure Logic App template is designed to integrate Microsoft Sentinel incidents with Cyware Orchestrate, enabling automated incident response actions. When an Microsoft Sentinel alert triggers, this Logic App automatically sends the incident details to Cyware Orchestrate.</p>
-<h2>Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>Before deploying this template, you should have:</p>
 <ol>
 <li>An Azure account with active subscriptions.</li>
 <li>Microsoft Sentinel setup in your Azure environment.</li>
 <li>Access to Cyware Orchestrate and a configured Webhook URL for incident intake.</li>
 </ol>
-<h2>Deployment Guide</h2>
+<h2 id="deployment-guide">Deployment Guide</h2>
 <p>This guide provides instructions on manually deploying the Logic App using Azure Portal and via Azure CLI.</p>
-<h3>Azure Portal</h3>
+<h3 id="azure-portal">Azure Portal</h3>
 <ol>
 <li><strong>Download Templates:</strong> Download the <code>azuredeploy.json</code> and <code>azuredeploy.parameters.json</code> files from this repository.</li>
 <li><strong>Open Azure Portal:</strong> Log in to your Azure Portal.</li>
@@ -66,12 +66,12 @@
 <li><strong>Customize Parameters:</strong> Fill in the parameters accordingly. The <code>azuredeploy.parameters.json</code> file can help provide the structure required.</li>
 <li><strong>Review + create:</strong> After validating the template and parameters, proceed to create the Logic App.</li>
 </ol>
-<h3>Azure CLI</h3>
+<h3 id="azure-cli">Azure CLI</h3>
 <p>To deploy using Azure CLI, ensure you have Azure CLI installed and configured. Then run the following command:</p>
 <pre><code class="language-bash">az deployment group create --resource-group &lt;YourResourceGroupName&gt; --template-file ./azuredeploy.json --parameters @azuredeploy.parameters.json
 </code></pre>
 <p>Replace <code>&lt;YourResourceGroupName&gt;</code> with the name of your Azure resource group.</p>
-<h2>Configuration</h2>
+<h2 id="configuration">Configuration</h2>
 <p>After deployment, ensure to configure the following parameters appropriately:</p>
 <ul>
 <li><code>LogicAppLocation</code>: The location of your Logic App instance.</li>
@@ -79,24 +79,24 @@
 <li><code>connections_azuresentinel_connectionId</code>: The connection string for Microsoft Sentinel. This requires creating a connection resource in your Azure environment.</li>
 </ul>
 <p>Refer to the <code>azuredeploy.parameters.json</code> as an example. Ensure to replace the placeholders with actual values relevant to your setup.</p>
-<h2>Usage</h2>
+<h2 id="usage">Usage</h2>
 <p>Once deployed and configured, the Logic App listens for Microsoft Sentinel alerts based on the triggers defined in the <code>azuredeploy.json</code>. When an alert triggers, it automatically sends the incident details to the specified Cyware Orchestrate Webhook URL for further action.</p>
-<h2>Internal Workings</h2>
+<h2 id="internal-workings">Internal Workings</h2>
 <p>This logic app is designed to trigger on Microsoft Sentinel Incident Creation.</p>
 <p>Once the rule is triggered, the logic app begins to restructure the payload  body to enable easy actioning on Cyware Orchestrate.</p>
 <p><img alt="Data Reformatting" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware/Playbooks/Send_Incident_To_Cyware_Orchestrate/images/Microsoft%2520Sentinel%2520-%2520Configure%2520Data%2520Transformations.png%20%22Data%20Reformatting%22" /></p>
 <p>This reformatted payload is forwarded to the Cyware Orchestrate Webhook URL, that is taken from the variable defined</p>
 <p><img alt="Send to Cyware Orchestrate" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware/Playbooks/Send_Incident_To_Cyware_Orchestrate/images/Microsoft%2520Sentinel%2520-%2520Send%2520Data%2520To%2520Cyware%2520Orcehstrate.png%20%22Send%20to%20Cyware%20Orchestrate%22" /></p>
-<h2>Customization</h2>
+<h2 id="customization">Customization</h2>
 <p>You can customize the Logic App workflow by editing the <code>azuredeploy.json</code> definition, tailoring actions, and triggers to specific needs.</p>
-<h2>Troubleshooting</h2>
+<h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
 <li>Ensure all connections are authenticated and accessible by the Logic App.</li>
 <li>Verify that the Webhook URL from Cyware Orchestrate is correct and accepting requests.</li>
 </ul>
-<h2>Contributing</h2>
+<h2 id="contributing">Contributing</h2>
 <p>If you have suggestions or improvements, feel free to fork this repository and submit a pull request!</p>
-<h2>License</h2>
+<h2 id="license">License</h2>
 <p>MIT LICENSE</p>
 <p>Copyright (c) &lt;2024&gt; <Cyware Labs, inc.></p>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
